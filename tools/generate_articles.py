@@ -1,0 +1,765 @@
+#!/usr/bin/env python3
+"""Generates the SEO article pages for GetMacros.net.
+
+Run from anywhere: python3 tools/generate_articles.py
+Regenerates every file listed in ARTICLES into the site root, using the
+same header/nav/footer markup and css/js as the hand-written pages.
+To add another article, add an entry to ARTICLES and re-run.
+"""
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+NAV = '''<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">Get<span>Macros</span>.net</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="protein.html">Protein</a></li>
+      <li><a href="fats.html">Fat</a></li>
+      <li><a href="carbs.html">Carbs</a></li>
+      <li><a href="calculators.html">Calculators</a></li>
+      <li><a href="articles.html" aria-current="page">Articles</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+</header>'''
+
+FOOTER = '''<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>GetMacros.net</h4>
+      <p class="disclaimer">Educational content only — not medical advice. See <a href="sources.html">Sources</a> for citations.</p>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="protein.html">Protein</a></li>
+        <li><a href="fats.html">Fat</a></li>
+        <li><a href="carbs.html">Carbohydrates</a></li>
+        <li><a href="articles.html">All articles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <ul>
+        <li><a href="calculators.html">Macro calculator</a></li>
+        <li><a href="sources.html">Sources &amp; citations</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 GetMacros.net</div>
+</footer>'''
+
+HERO_STYLE = {
+    "protein": "background: linear-gradient(rgba(90,20,15,.72),rgba(90,20,15,.82))",
+    "fat": "background: linear-gradient(rgba(110,75,10,.72),rgba(110,75,10,.82))",
+    "carbs": "background: linear-gradient(rgba(10,60,35,.72),rgba(10,60,35,.82))",
+    "general": "background:var(--color-primary-dark); color:#fff;",
+}
+
+
+def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
+    hero_class = "hero page-hero" if category != "general" else "page-hero"
+    related_links = " &middot; ".join(
+        f'<a href="{href}">{label}</a>' for href, label in related
+    )
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title} | GetMacros.net</title>
+<meta name="description" content="{meta}">
+<link rel="canonical" href="https://getmacros.net/{slug}.html">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+</head>
+<body>
+{NAV}
+
+<main>
+  <section class="{hero_class}" style="{HERO_STYLE[category]}">
+    <div class="container">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{h1}</h1>
+      <p>{intro}</p>
+    </div>
+  </section>
+
+{body}
+
+  <section class="tight">
+    <div class="container">
+      <p class="section-intro"><strong>Keep reading:</strong> {related_links}</p>
+    </div>
+  </section>
+</main>
+
+{FOOTER}
+
+<script src="js/main.js"></script>
+</body>
+</html>
+'''
+
+
+def sec(inner, bg=None, tight=False):
+    cls = "tight" if tight else ""
+    style = f' style="background:{bg}"' if bg else ""
+    cls_attr = f' class="{cls}"' if cls else ""
+    return f'  <section{cls_attr}{style}>\n    <div class="container">\n{inner}\n    </div>\n  </section>\n'
+
+
+ARTICLES = []
+
+
+def add(slug, title, meta, category, eyebrow, h1, intro, body, related):
+    ARTICLES.append(dict(slug=slug, title=title, meta=meta, category=category,
+                          eyebrow=eyebrow, h1=h1, intro=intro, body=body, related=related))
+
+
+# ---------------------------------------------------------------- PROTEIN --
+
+add(
+    "how-much-protein-per-day",
+    "How Much Protein Do You Need Per Day?",
+    "How much protein you actually need per day for baseline health, general fitness, and muscle building, based on RDA and sports nutrition research.",
+    "protein", "Protein Guide", "How much protein do you need per day?",
+    "The right number depends heavily on your activity level and goals — the government minimum and the amount that supports muscle building are very different numbers.",
+    sec('''      <h2>The short answer</h2>
+      <table class="data-table">
+        <tr><th>Who you are</th><th>Grams per kg body weight</th><th>Example at 70kg (154lb)</th></tr>
+        <tr><td>Sedentary adult (RDA minimum)</td><td>0.8 g/kg</td><td>56 g/day</td></tr>
+        <tr><td>Generally active</td><td>1.2–1.6 g/kg</td><td>84–112 g/day</td></tr>
+        <tr><td>Building muscle / in a calorie deficit</td><td>1.6–2.2 g/kg</td><td>112–154 g/day</td></tr>
+      </table>
+      <p>The 0.8 g/kg figure is the Recommended Dietary Allowance — the minimum intake shown to prevent deficiency in a mostly sedentary adult. It is not an optimal target if you exercise regularly.<sup class="ref"><a href="sources.html#p3">[1]</a></sup> The International Society of Sports Nutrition instead recommends 1.4–2.0 g/kg/day for people who train, to maximize muscle protein balance.<sup class="ref"><a href="sources.html#p2">[2]</a></sup></p>''') +
+    sec('''      <h2>Why the RDA understates most people's needs</h2>
+      <p>The RDA was calculated to answer one question: what's the minimum amount that keeps a sedentary person from becoming deficient? It wasn't designed to answer "what's optimal for building or preserving muscle," which is a different question entirely. Resistance training increases the rate at which your body breaks down and rebuilds muscle protein, so more raw material (amino acids) is needed to support that turnover.</p>
+      <div class="panel">
+        <h3>Rule of thumb</h3>
+        <p>If you strength train several times a week, aim for roughly <strong>0.7–1.0 grams of protein per pound of body weight</strong> (about 1.6–2.2 g/kg). Above that range, additional protein generally doesn't add extra muscle-building benefit.</p>
+      </div>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p>Want an exact number instead of a range? Our calculator factors in your weight, activity level, and goal automatically.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Calculate my protein target →</a></p>'''),
+    [("protein.html", "What protein actually does"), ("protein-for-muscle-growth.html", "Protein for muscle growth"), ("high-protein-foods-list.html", "High-protein foods list")]
+)
+
+add(
+    "protein-for-muscle-growth",
+    "Protein for Muscle Growth: How Much, When, and Why",
+    "How dietary protein drives muscle protein synthesis after training, how much you need, and whether meal timing actually matters.",
+    "protein", "Protein Guide", "Protein for muscle growth: how much, when, and why",
+    "Muscle isn't built in the gym — it's built afterward, from amino acids, and only if enough of them are available.",
+    sec('''      <h2>The mechanism: muscle protein synthesis</h2>
+      <p>Resistance training damages muscle fibers at a microscopic level and triggers <strong>muscle protein synthesis (MPS)</strong> — the process your body uses to repair and build new muscle tissue. Both exercise and protein intake independently stimulate MPS, and the two together are more powerful than either alone. After a resistance training session, MPS can stay elevated for up to 48 hours as your body remodels the trained muscle.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> Without enough dietary protein available during that window, the repair process is incomplete.</p>''') +
+    sec('''      <h2>How much, and how often</h2>
+      <ul class="checklist">
+        <li><strong>Daily total: 1.6–2.2 g/kg body weight</strong> for most people actively training for muscle growth</li>
+        <li><strong>Per-meal target: roughly 0.4 g/kg</strong>, spread across 3–4 meals — this appears to maximize MPS response better than getting most of your protein in one large meal</li>
+        <li><strong>Consistency matters more than precision</strong> — hitting your daily total most days beats hitting an exact number occasionally</li>
+      </ul>''') +
+    sec('''      <div class="panel warn">
+        <h3>Does the "anabolic window" matter?</h3>
+        <p>The idea that you must eat protein within 30–60 minutes of training to avoid "missing the window" is largely overstated. Total daily protein intake and consistent spacing across the day matter far more than precise post-workout timing for most people. See our <a href="protein-timing.html">full breakdown of protein timing research</a>.</p>
+      </div>'''),
+    [("protein-timing.html", "Does protein timing matter?"), ("how-much-protein-per-day.html", "How much protein per day"), ("macros-for-muscle-gain.html", "Macros for building muscle")]
+)
+
+add(
+    "protein-deficiency-symptoms",
+    "10 Warning Signs You're Not Eating Enough Protein",
+    "The early warning signs of low protein intake, from slow wound healing to hair thinning, and when they signal a real deficiency.",
+    "protein", "Protein Guide", "10 warning signs you're not eating enough protein",
+    "Severe protein deficiency (kwashiorkor) is rare in well-fed populations — but eating below your personal needs is common, and it shows up in ways people rarely connect back to diet.",
+    sec('''      <ul class="checklist">
+        <li><strong>Constant fatigue</strong> — protein is needed to make the enzymes and transport proteins involved in energy metabolism</li>
+        <li><strong>Slow-healing cuts and bruises</strong> — tissue repair depends directly on amino acid availability</li>
+        <li><strong>Thinning hair or hair loss</strong> — hair is largely made of a protein called keratin</li>
+        <li><strong>Brittle, ridged, or slow-growing nails</strong> — same underlying cause as hair changes</li>
+        <li><strong>Getting sick often</strong> — antibodies are proteins; low intake can blunt immune response</li>
+        <li><strong>Unexplained swelling (edema)</strong>, especially in the belly or legs — a hallmark of severe deficiency, caused by low blood protein levels affecting fluid balance<sup class="ref"><a href="sources.html#p4">[1]</a></sup></li>
+        <li><strong>Losing muscle despite training</strong> — without enough amino acids, your body can't fully repair and build muscle tissue</li>
+        <li><strong>Constant hunger, especially cravings</strong> — protein is the most satiating macronutrient; low intake often shows up as never feeling full</li>
+        <li><strong>Mood changes or brain fog</strong> — several neurotransmitters are synthesized from amino acids</li>
+        <li><strong>Skin changes</strong> — dryness, rashes, or slow-fading marks</li>
+      </ul>''') +
+    sec('''      <p>Most of these signs have other possible causes too, so they're not a diagnosis on their own — but if several apply and your diet is genuinely low in protein sources, it's worth checking your actual intake against your target.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Check your protein target →</a></p>''', bg="var(--color-protein-bg)", tight=True),
+    [("protein.html", "What protein actually does"), ("high-protein-foods-list.html", "High-protein foods list"), ("how-much-protein-per-day.html", "How much protein you need")]
+)
+
+add(
+    "high-protein-foods-list",
+    "25 High-Protein Foods and How Much Protein They Contain",
+    "A reference list of high-protein animal and plant foods with approximate grams of protein per 100g, for building meals around your target.",
+    "protein", "Protein Guide", "25 high-protein foods and how much protein they contain",
+    "Approximate protein content per 100 grams unless noted — actual values vary by cut, brand, and preparation.",
+    sec('''      <h2>Animal sources</h2>
+      <table class="data-table">
+        <tr><th>Food</th><th>Protein (per 100g)</th></tr>
+        <tr><td>Chicken breast, cooked</td><td>~31 g</td></tr>
+        <tr><td>Turkey breast, cooked</td><td>~29 g</td></tr>
+        <tr><td>Tuna, canned</td><td>~30 g</td></tr>
+        <tr><td>Lean beef, cooked</td><td>~26 g</td></tr>
+        <tr><td>Salmon, cooked</td><td>~25 g</td></tr>
+        <tr><td>Shrimp, cooked</td><td>~24 g</td></tr>
+        <tr><td>Pork loin, cooked</td><td>~26 g</td></tr>
+        <tr><td>Cottage cheese</td><td>~11 g</td></tr>
+        <tr><td>Greek yogurt, plain</td><td>~10 g</td></tr>
+        <tr><td>Eggs (whole)</td><td>~13 g (~6g per large egg)</td></tr>
+        <tr><td>Milk</td><td>~3.4 g</td></tr>
+        <tr><td>Whey protein powder</td><td>~75–85 g (per 100g powder)</td></tr>
+      </table>''') +
+    sec('''      <h2>Plant sources</h2>
+      <table class="data-table">
+        <tr><th>Food</th><th>Protein (per 100g, cooked unless noted)</th></tr>
+        <tr><td>Tempeh</td><td>~19 g</td></tr>
+        <tr><td>Edamame</td><td>~11 g</td></tr>
+        <tr><td>Lentils</td><td>~9 g</td></tr>
+        <tr><td>Black beans</td><td>~9 g</td></tr>
+        <tr><td>Chickpeas</td><td>~9 g</td></tr>
+        <tr><td>Tofu, firm</td><td>~8 g</td></tr>
+        <tr><td>Quinoa</td><td>~4.5 g</td></tr>
+        <tr><td>Peanut butter</td><td>~25 g</td></tr>
+        <tr><td>Almonds</td><td>~21 g</td></tr>
+        <tr><td>Pumpkin seeds</td><td>~19 g</td></tr>
+        <tr><td>Chia seeds</td><td>~17 g</td></tr>
+        <tr><td>Hemp seeds</td><td>~31 g</td></tr>
+        <tr><td>Oats, dry</td><td>~13 g</td></tr>
+      </table>
+      <p class="section-intro">See <a href="sources.html#p5">MyPlate's Protein Foods Group</a> for the full USDA reference list.</p>'''),
+    [("protein.html", "What protein actually does"), ("plant-based-protein-sources.html", "Best plant-based protein sources"), ("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein")]
+)
+
+add(
+    "complete-vs-incomplete-protein",
+    "Complete vs. Incomplete Protein: What Actually Matters",
+    "The real difference between complete and incomplete protein sources, why 'protein combining' at every meal is a myth, and what actually matters for muscle and health.",
+    "protein", "Protein Guide", "Complete vs. incomplete protein: what actually matters",
+    "Your body needs 9 essential amino acids from food. \"Complete\" and \"incomplete\" just describe whether a single food supplies all 9 in meaningful amounts.",
+    sec('''      <h2>What makes a protein "complete"</h2>
+      <p>Of the 20 amino acids that make up protein, 9 are essential — your body can't synthesize them, so they must come from food. A <strong>complete protein</strong> supplies all 9 essential amino acids in reasonably sufficient amounts. Nearly all animal proteins (meat, fish, eggs, dairy) are complete. Among plant foods, soy, quinoa, and buckwheat are complete proteins too — the exception rather than the rule.</p>
+      <p>An <strong>incomplete protein</strong> is low in one or more essential amino acids. Most individual plant proteins — beans, rice, nuts, most grains — fall into this category.</p>''') +
+    sec('''      <h2>The "protein combining" myth</h2>
+      <p>You may have heard you need to eat complementary plant proteins (like rice and beans) <em>at the same meal</em> to get a complete amino acid profile. This isn't accurate — your body maintains a pool of amino acids and can combine what you eat across an entire day, not just a single meal. As long as your overall diet includes a reasonable variety of protein sources, hitting your total daily protein target matters far more than pairing specific foods together.<sup class="ref"><a href="sources.html#p1">[1]</a></sup></p>
+      <div class="panel">
+        <h3>Practical takeaway</h3>
+        <p>Eat a variety of protein sources across the day (which most omnivore and vegetarian diets do naturally), hit your total gram target, and don't stress about combining specific foods at specific meals.</p>
+      </div>''', bg="var(--color-protein-bg)", tight=True),
+    [("plant-based-protein-sources.html", "Best plant-based protein sources"), ("high-protein-foods-list.html", "High-protein foods list"), ("protein.html", "What protein actually does")]
+)
+
+add(
+    "plant-based-protein-sources",
+    "Best Plant-Based Protein Sources for Vegans and Vegetarians",
+    "The most protein-dense plant foods for vegans and vegetarians, with approximate grams per serving and tips for hitting your daily target.",
+    "protein", "Protein Guide", "Best plant-based protein sources for vegans and vegetarians",
+    "Getting enough protein on a plant-based diet is straightforward once you know which foods to build meals around.",
+    sec('''      <table class="data-table">
+        <tr><th>Food</th><th>Protein per typical serving</th></tr>
+        <tr><td>Tofu (½ cup, ~124g)</td><td>~10 g</td></tr>
+        <tr><td>Tempeh (½ cup, ~83g)</td><td>~16 g</td></tr>
+        <tr><td>Edamame (1 cup)</td><td>~17 g</td></tr>
+        <tr><td>Lentils (1 cup cooked)</td><td>~18 g</td></tr>
+        <tr><td>Black beans (1 cup cooked)</td><td>~15 g</td></tr>
+        <tr><td>Chickpeas (1 cup cooked)</td><td>~15 g</td></tr>
+        <tr><td>Seitan (100g)</td><td>~25 g</td></tr>
+        <tr><td>Quinoa (1 cup cooked)</td><td>~8 g</td></tr>
+        <tr><td>Peanut butter (2 tbsp)</td><td>~7 g</td></tr>
+        <tr><td>Hemp seeds (3 tbsp)</td><td>~10 g</td></tr>
+        <tr><td>Pea protein powder (1 scoop)</td><td>~20–25 g</td></tr>
+      </table>''') +
+    sec('''      <h2>Tips for hitting your target on a plant-based diet</h2>
+      <ul class="checklist">
+        <li><strong>Build meals around a protein-dense staple</strong> — tofu, tempeh, seitan, or legumes — rather than treating protein as an afterthought</li>
+        <li><strong>Use variety, not one "hero" food</strong> — different plant proteins have different amino acid strengths</li>
+        <li><strong>Don't fear plant protein powders</strong> — pea, soy, or blended plant proteins are an easy way to close a gap without much food volume</li>
+        <li><strong>Track for a week</strong> if you're unsure — plant-based eaters often underestimate their protein intake until they actually log it</li>
+      </ul>''', bg="var(--color-protein-bg)", tight=True),
+    [("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein"), ("high-protein-foods-list.html", "Full high-protein foods list"), ("calculators.html", "Calculate your protein target")]
+)
+
+add(
+    "protein-timing",
+    "Does Protein Timing Really Matter? What the Research Shows",
+    "Whether the post-workout 'anabolic window' is real, how often you should eat protein, and what the sports nutrition research actually supports.",
+    "protein", "Protein Guide", "Does protein timing really matter?",
+    "For years, lifters were told to chug a shake within 30 minutes of finishing a workout or lose their gains. The research tells a more relaxed story.",
+    sec('''      <h2>The "anabolic window" is wider than you think</h2>
+      <p>Muscle protein synthesis stays elevated for up to 48 hours after resistance training, not 30 minutes.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> That means the practical "window" to get protein in after a workout is measured in hours, not minutes — eating a normal meal within a few hours of training is more than adequate for the vast majority of people.</p>''') +
+    sec('''      <h2>What actually seems to matter</h2>
+      <ul class="checklist">
+        <li><strong>Total daily protein</strong> is the single biggest driver of muscle protein synthesis over time — timing is a second-order effect at best</li>
+        <li><strong>Distribution across the day</strong> — spreading protein across 3–4 meals (roughly 0.4 g/kg per meal) appears to modestly outperform getting most of it in one sitting</li>
+        <li><strong>Not training fasted for extended periods</strong> without eventually eating matters more than exact pre/post-workout timing</li>
+      </ul>
+      <div class="panel">
+        <h3>Bottom line</h3>
+        <p>If a post-workout shake fits your routine, keep doing it — it's convenient. But don't stress if you eat your post-workout meal an hour or two later; the science doesn't support a strict cutoff.</p>
+      </div>'''),
+    [("protein-for-muscle-growth.html", "Protein for muscle growth"), ("how-much-protein-per-day.html", "How much protein per day"), ("protein.html", "What protein actually does")]
+)
+
+# -------------------------------------------------------------------- FAT --
+
+add(
+    "how-much-fat-per-day",
+    "How Much Fat Should You Eat Per Day? (20–35% Explained)",
+    "The recommended daily fat intake range (20-35% of calories), what it looks like in grams at different calorie levels, and why the range exists.",
+    "fat", "Fat Guide", "How much fat should you eat per day?",
+    "The Acceptable Macronutrient Distribution Range for fat is 20-35% of total calories for adults — here's what that looks like in real grams.",
+    sec('''      <table class="data-table">
+        <tr><th>Daily calories</th><th>20% (lower bound)</th><th>27.5% (typical)</th><th>35% (upper bound)</th></tr>
+        <tr><td>1,800</td><td>40 g</td><td>55 g</td><td>70 g</td></tr>
+        <tr><td>2,200</td><td>49 g</td><td>67 g</td><td>86 g</td></tr>
+        <tr><td>2,600</td><td>58 g</td><td>79 g</td><td>101 g</td></tr>
+        <tr><td>3,000</td><td>67 g</td><td>92 g</td><td>117 g</td></tr>
+      </table>
+      <p>This range comes from the Dietary Reference Intakes' Acceptable Macronutrient Distribution Range (AMDR) for fat.<sup class="ref"><a href="sources.html#f4">[1]</a></sup> Below 20%, it becomes difficult to get enough essential fatty acids and to properly absorb vitamins A, D, E, and K, which require dietary fat. Consistently well above 35% usually means protein or carbohydrate intake is being squeezed out.</p>''') +
+    sec('''      <p>Enter your own calorie target for an exact gram range, or use the full macro calculator for a complete breakdown.</p>
+      <p><a href="calculators.html#fat-calculator" class="btn btn-primary">Calculate my fat range →</a></p>''', bg="var(--color-fat-bg)", tight=True),
+    [("fats.html", "What fat actually does"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")]
+)
+
+add(
+    "saturated-vs-unsaturated-fat",
+    "Saturated vs. Unsaturated Fat: What's Actually the Difference",
+    "The chemical difference between saturated and unsaturated fat, how each affects health, and which foods contain them.",
+    "fat", "Fat Guide", "Saturated vs. unsaturated fat: what's actually the difference",
+    "Not all fat behaves the same way in your body — the difference comes down to a detail in the fat molecule's chemical structure.",
+    sec('''      <h2>The chemistry, briefly</h2>
+      <p>Fat molecules are chains of carbon atoms. In <strong>saturated fat</strong>, every carbon is bonded to as many hydrogen atoms as possible — no double bonds — which makes the molecule straight and lets it pack tightly (this is why saturated fats like butter are solid at room temperature). <strong>Unsaturated fats</strong> have one or more double bonds, which kinks the chain and keeps it liquid at room temperature — like olive oil.</p>''') +
+    sec('''      <h2>Health associations and food sources</h2>
+      <div class="two-col">
+        <div class="panel">
+          <h3>Saturated fat</h3>
+          <p>Found in butter, fatty cuts of meat, cheese, and coconut oil. Research reviewed by Harvard's Nutrition Source associates replacing saturated fat with unsaturated fat with improved blood cholesterol profiles.<sup class="ref"><a href="sources.html#f2">[1]</a></sup> Most guidelines suggest keeping saturated fat intake moderate rather than eliminating it.</p>
+        </div>
+        <div class="panel">
+          <h3>Unsaturated fat</h3>
+          <p>Found in olive oil, avocado, nuts, seeds, and fatty fish. Includes both monounsaturated fats (olive oil, avocado) and polyunsaturated fats (fish, walnuts, sunflower oil) — the latter includes the essential omega-3 and omega-6 fatty acids.</p>
+        </div>
+      </div>''') +
+    sec('''      <p>There's a third category worth knowing: industrially-produced trans fat, which behaves differently from both and is best minimized. <a href="trans-fat-explained.html">Read what trans fat is and why it was banned</a>.</p>''', bg="var(--color-fat-bg)", tight=True),
+    [("healthy-high-fat-foods.html", "Healthy high-fat foods"), ("trans-fat-explained.html", "What is trans fat?"), ("fats.html", "What fat actually does")]
+)
+
+add(
+    "omega-3-vs-omega-6",
+    "Omega-3 vs Omega-6 Fatty Acids: Why Balance Matters",
+    "The difference between omega-3 and omega-6 essential fatty acids, why most modern diets are skewed, and how to add more omega-3 sources.",
+    "fat", "Fat Guide", "Omega-3 vs omega-6: why balance matters",
+    "Both are essential fatty acids your body can't make on its own — but most modern diets get far more omega-6 than omega-3.",
+    sec('''      <h2>Both are essential, but the ratio has shifted</h2>
+      <p>Omega-3 and omega-6 fatty acids are both classified as essential — your body cannot synthesize them, so they must come from food.<sup class="ref"><a href="sources.html#f3">[1]</a></sup> Omega-6 is abundant in vegetable oils (corn, soybean, sunflower) widely used in processed food, while omega-3 is concentrated in fewer everyday foods — fatty fish, walnuts, flaxseed, and chia seeds. As a result, the typical modern diet supplies far more omega-6 than omega-3, a shift from the more balanced ratio humans evolved eating.</p>''') +
+    sec('''      <h2>Practical ways to add more omega-3</h2>
+      <ul class="checklist">
+        <li><strong>Fatty fish</strong> (salmon, mackerel, sardines) 1–2 times per week</li>
+        <li><strong>Walnuts</strong> as a snack or salad topping</li>
+        <li><strong>Ground flaxseed or chia seeds</strong> stirred into oatmeal or yogurt</li>
+        <li><strong>Algae-based omega-3 supplements</strong> for those who don't eat fish</li>
+      </ul>
+      <p>You don't need to eliminate omega-6 — it's essential too — just make a deliberate effort to add more omega-3-rich foods rather than relying entirely on whatever oil happens to be in packaged food.</p>''', bg="var(--color-fat-bg)", tight=True),
+    [("healthy-high-fat-foods.html", "Healthy high-fat foods"), ("fats.html", "What fat actually does"), ("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat")]
+)
+
+add(
+    "low-fat-diet-risks",
+    "The Hidden Risks of Very Low-Fat Diets",
+    "What can go wrong when fat intake drops too low for too long — hormone production, vitamin absorption, and diet adherence.",
+    "fat", "Fat Guide", "The hidden risks of very low-fat diets",
+    "Cutting fat too aggressively doesn't just make food taste worse — it can quietly undercut hormone production and vitamin absorption.",
+    sec('''      <ul class="checklist">
+        <li><strong>Reduced hormone production</strong> — steroid hormones like testosterone and estrogen are synthesized from cholesterol, and a meta-analysis of intervention studies found men on low-fat diets (~20% of calories) had measurably lower testosterone than men on higher-fat diets (~40%).<sup class="ref"><a href="sources.html#f6">[1]</a></sup></li>
+        <li><strong>Poor absorption of vitamins A, D, E, and K</strong> — these fat-soluble vitamins require dietary fat to be absorbed, regardless of how much you're eating in your food.<sup class="ref"><a href="sources.html#f5">[2]</a></sup></li>
+        <li><strong>Essential fatty acid shortfalls</strong> — omega-3 and omega-6 fats can't be made by your body and must come from food<sup class="ref"><a href="sources.html#f3">[3]</a></sup></li>
+        <li><strong>Menstrual irregularities</strong> — very low fat and low overall energy intake are linked with disrupted cycles</li>
+        <li><strong>Poor diet adherence</strong> — fat slows digestion and increases satiety; very low-fat diets are often harder to stick to long-term</li>
+      </ul>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <p>The fix isn't complicated: stay within the recommended 20–35% of calories from fat rather than pushing dramatically lower.</p>
+      <p><a href="how-much-fat-per-day.html" class="btn btn-primary">See recommended fat intake by calorie level →</a></p>'''),
+    [("fats.html", "What fat actually does"), ("how-much-fat-per-day.html", "How much fat per day"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")]
+)
+
+add(
+    "healthy-high-fat-foods",
+    "15 Healthy High-Fat Foods to Add to Your Diet",
+    "A list of nutrient-dense high-fat foods — avocado, olive oil, fatty fish, nuts, and more — with approximate fat content per serving.",
+    "fat", "Fat Guide", "15 healthy high-fat foods to add to your diet",
+    "High-fat doesn't mean unhealthy — these foods pack fat alongside real nutritional value.",
+    sec('''      <table class="data-table">
+        <tr><th>Food</th><th>Fat per serving</th><th>Notes</th></tr>
+        <tr><td>Avocado (½ medium)</td><td>~15 g</td><td>Mostly monounsaturated</td></tr>
+        <tr><td>Olive oil (1 tbsp)</td><td>~14 g</td><td>Mostly monounsaturated</td></tr>
+        <tr><td>Salmon (100g)</td><td>~13 g</td><td>Rich in omega-3</td></tr>
+        <tr><td>Mackerel (100g)</td><td>~14 g</td><td>Rich in omega-3</td></tr>
+        <tr><td>Walnuts (28g)</td><td>~18 g</td><td>Plant omega-3 source</td></tr>
+        <tr><td>Almonds (28g)</td><td>~14 g</td><td>Also high in vitamin E</td></tr>
+        <tr><td>Chia seeds (28g)</td><td>~9 g</td><td>Plus fiber &amp; omega-3</td></tr>
+        <tr><td>Flaxseed, ground (2 tbsp)</td><td>~8 g</td><td>Plant omega-3 source</td></tr>
+        <tr><td>Eggs (1 large)</td><td>~5 g</td><td>Also a complete protein</td></tr>
+        <tr><td>Dark chocolate, 70%+ (28g)</td><td>~12 g</td><td>In moderation</td></tr>
+        <tr><td>Cheese (28g)</td><td>~9 g</td><td>Mostly saturated</td></tr>
+        <tr><td>Peanut butter (2 tbsp)</td><td>~16 g</td><td>Also a protein source</td></tr>
+        <tr><td>Sardines (100g)</td><td>~11 g</td><td>Rich in omega-3</td></tr>
+        <tr><td>Coconut oil (1 tbsp)</td><td>~14 g</td><td>Mostly saturated — use in moderation</td></tr>
+        <tr><td>Pumpkin seeds (28g)</td><td>~13 g</td><td>Also high in protein</td></tr>
+      </table>'''),
+    [("fats.html", "What fat actually does"), ("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("omega-3-vs-omega-6.html", "Omega-3 vs omega-6")]
+)
+
+add(
+    "trans-fat-explained",
+    "What Is Trans Fat, and Why Was It Banned?",
+    "What trans fat is, how partially hydrogenated oils are made, and why regulators moved to eliminate them from the food supply.",
+    "fat", "Fat Guide", "What is trans fat, and why was it banned?",
+    "Unlike saturated and unsaturated fat, trans fat isn't really a natural dietary staple — most of it came from a manufacturing shortcut.",
+    sec('''      <h2>Where trans fat came from</h2>
+      <p>Most artificial trans fat is created through <strong>partial hydrogenation</strong> — pumping hydrogen into liquid vegetable oil to make it more solid and shelf-stable, historically used in margarine, shortening, and baked goods. The process changes the fat's molecular shape in a way that behaves differently in the body than naturally occurring fats.</p>''') +
+    sec('''      <h2>Why regulators acted</h2>
+      <p>Research linking artificial trans fat to negative changes in cholesterol (raising LDL while lowering HDL) led U.S. regulators to determine that partially hydrogenated oils were no longer "generally recognized as safe" as a food additive, with final compliance for removing them from the food supply completed in 2018. Many other countries have taken similar regulatory action.</p>
+      <div class="panel">
+        <h3>Where trans fat still shows up</h3>
+        <p>Since the ban targeted partially hydrogenated oils specifically, trace amounts of trans fat can still occur naturally in small quantities in some dairy and meat products, and in some imported or shelf-stable packaged foods. Checking labels for "partially hydrogenated oil" in the ingredients list is still a reasonable habit.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("fats.html", "What fat actually does"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")]
+)
+
+# ------------------------------------------------------------------ CARBS --
+
+add(
+    "how-many-carbs-per-day",
+    "How Many Carbs Should You Eat Per Day?",
+    "The recommended daily carbohydrate range (45-65% of calories), what it looks like in grams, and when lower or higher intakes make sense.",
+    "carbs", "Carbohydrate Guide", "How many carbs should you eat per day?",
+    "The Acceptable Macronutrient Distribution Range for carbohydrates is 45-65% of total calories for most adults.",
+    sec('''      <table class="data-table">
+        <tr><th>Daily calories</th><th>45% (lower bound)</th><th>55% (typical)</th><th>65% (upper bound)</th></tr>
+        <tr><td>1,800</td><td>203 g</td><td>248 g</td><td>293 g</td></tr>
+        <tr><td>2,200</td><td>248 g</td><td>303 g</td><td>358 g</td></tr>
+        <tr><td>2,600</td><td>293 g</td><td>358 g</td><td>423 g</td></tr>
+        <tr><td>3,000</td><td>338 g</td><td>413 g</td><td>488 g</td></tr>
+      </table>
+      <p>This range is the Acceptable Macronutrient Distribution Range (AMDR) for carbohydrates.<sup class="ref"><a href="sources.html#c4">[1]</a></sup> Endurance athletes with heavy training volumes often sit at the higher end (or above it) to keep glycogen stores full,<sup class="ref"><a href="sources.html#c2">[2]</a></sup> while some people deliberately use lower-carb approaches for specific medical or performance goals — see our breakdown of <a href="low-carb-diet-effects.html">what actually happens on a low-carb diet</a>.</p>''') +
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Get your personalized carb target →</a></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("carbs.html", "What carbohydrates actually do"), ("what-is-glycogen.html", "What is glycogen?"), ("low-carb-diet-effects.html", "What happens on a low-carb diet")]
+)
+
+add(
+    "what-is-glycogen",
+    "What Is Glycogen? How Your Body Stores Carbs for Energy",
+    "How glycogen works as your body's short-term carbohydrate storage in muscle and liver, and how much you can actually store.",
+    "carbs", "Carbohydrate Guide", "What is glycogen?",
+    "Every gram of carbohydrate you eat and don't use immediately gets bundled into glycogen — your body's rechargeable energy battery.",
+    sec('''      <h2>How it works</h2>
+      <p>After digestion, carbohydrates become glucose in your bloodstream. Glucose not needed right away is linked together into a branched storage molecule called <strong>glycogen</strong> and stored mainly in two places: your <strong>muscles</strong> (used locally by that muscle during activity) and your <strong>liver</strong> (which can release glucose back into the bloodstream to keep blood sugar stable, including fueling your brain between meals).</p>
+      <p>Combined muscle and liver glycogen typically stores somewhere in the range of 400–500 grams of carbohydrate in an average adult, though this varies with body size, muscle mass, and training status.</p>''') +
+    sec('''      <h2>Depletion and refilling</h2>
+      <p>During prolonged or intense exercise, glycogen stores gradually empty, which is a major contributor to fatigue and declining performance late in a workout or endurance event.<sup class="ref"><a href="sources.html#c2">[1]</a></sup> Refilling glycogen happens through eating carbohydrates — athletes with heavy training schedules sometimes deliberately "carb load" before long events to maximize stores. See our <a href="carb-loading-for-athletes.html">carb loading guide</a> for the details.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("carbs.html", "What carbohydrates actually do"), ("carb-loading-for-athletes.html", "Carb loading for athletes"), ("how-many-carbs-per-day.html", "How many carbs per day")]
+)
+
+add(
+    "low-carb-diet-effects",
+    "What Happens to Your Body on a Low-Carb Diet",
+    "The physiological changes that happen when carbohydrate intake drops sharply, including glycogen depletion, ketosis, and 'keto flu' symptoms.",
+    "carbs", "Carbohydrate Guide", "What happens to your body on a low-carb diet",
+    "Cutting carbs sharply forces your body to switch fuel sources — and that transition comes with a predictable set of effects.",
+    sec('''      <h2>The adaptation period</h2>
+      <p>When carbohydrate intake drops sharply, glycogen stores empty out within a few days, and your body increasingly relies on fat (producing ketones) and protein (via a process called gluconeogenesis) for fuel. This transition period is sometimes called "keto flu" and can include fatigue, headaches, irritability, and brain fog as your body adapts.<sup class="ref"><a href="sources.html#c6">[1]</a></sup></p>''') +
+    sec('''      <h2>Effects to know about</h2>
+      <ul class="checklist">
+        <li><strong>Reduced high-intensity exercise performance</strong> — glycogen is the primary fuel for fast, powerful efforts, so low-carb intake can blunt performance in that specific type of activity</li>
+        <li><strong>Increased muscle protein breakdown risk</strong> — with glycogen low, the body relies more on amino acids for energy, which can work against muscle-building goals unless protein intake is raised to compensate</li>
+        <li><strong>Reduced fiber intake</strong> — cutting carbs often means cutting fiber-rich foods (whole grains, fruit, legumes) too, unless you deliberately replace that fiber elsewhere</li>
+        <li><strong>Initial water weight loss</strong> — glycogen is stored with water, so early weight loss on a low-carb diet is partly water, not fat</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>None of this means low-carb diets don't work for some people and some goals — it just means the early effects are largely predictable physiology, not a sign something is wrong. Anyone on blood-sugar-lowering medication should talk to a doctor before cutting carbs significantly.</p>'''),
+    [("what-is-glycogen.html", "What is glycogen?"), ("carbs.html", "What carbohydrates actually do"), ("simple-vs-complex-carbs.html", "Simple vs. complex carbs")]
+)
+
+add(
+    "simple-vs-complex-carbs",
+    "Simple vs. Complex Carbohydrates Explained",
+    "The structural difference between simple and complex carbohydrates, how each affects blood sugar and digestion, and food examples of both.",
+    "carbs", "Carbohydrate Guide", "Simple vs. complex carbohydrates explained",
+    "The difference comes down to molecular size — and it affects how fast a carbohydrate hits your bloodstream.",
+    sec('''      <h2>The structural difference</h2>
+      <div class="two-col">
+        <div class="panel">
+          <h3>Simple carbohydrates</h3>
+          <p>One or two sugar units (mono- or disaccharides) — table sugar, honey, fruit juice, candy. Digested and absorbed quickly, causing a faster rise in blood sugar.</p>
+        </div>
+        <div class="panel">
+          <h3>Complex carbohydrates</h3>
+          <p>Long chains of sugar units (polysaccharides) — whole grains, legumes, starchy vegetables. Take longer to digest, generally producing a slower, more moderate blood sugar response, especially when they retain their natural fiber.</p>
+        </div>
+      </div>''') +
+    sec('''      <p>This isn't a strict "good vs. bad" split — whole fruit is technically a simple-carb source but comes packaged with fiber, water, and micronutrients that slow its digestion and add nutritional value. Highly processed simple carbs (soda, candy, refined white bread) are the ones most worth limiting, not simple carbs as a category. In general, building most of your carbohydrate intake around complex, minimally processed sources — and pairing carbs with protein, fat, or fiber — supports more stable blood sugar and better satiety.<sup class="ref"><a href="sources.html#c1">[1]</a></sup></p>
+      <p>Curious how this connects to blood sugar response specifically? Read our <a href="glycemic-index-explained.html">explainer on the glycemic index</a>.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("glycemic-index-explained.html", "What is the glycemic index?"), ("carbs.html", "What carbohydrates actually do"), ("fiber-benefits.html", "Why fiber matters")]
+)
+
+add(
+    "carb-loading-for-athletes",
+    "Carb Loading: How Athletes Maximize Glycogen Stores",
+    "How carb loading works, the modern protocol most athletes actually use, and who genuinely benefits from it.",
+    "carbs", "Carbohydrate Guide", "Carb loading: how athletes maximize glycogen stores",
+    "Carb loading isn't just eating a huge plate of pasta the night before a race — done properly, it's a deliberate glycogen-maximizing strategy.",
+    sec('''      <h2>The idea behind it</h2>
+      <p>Since depleted glycogen is a major driver of fatigue during prolonged exercise,<sup class="ref"><a href="sources.html#c2">[1]</a></sup> endurance athletes sometimes deliberately increase carbohydrate intake in the days before a long event to maximize how much glycogen their muscles and liver can store going in. The modern approach typically involves raising carbohydrate intake to roughly 8–12 g/kg body weight per day for 1–3 days beforehand, while also reducing training volume so the body isn't burning through the extra carbs as fast as they're consumed.</p>''') +
+    sec('''      <h2>Who actually benefits</h2>
+      <ul class="checklist">
+        <li><strong>Endurance events lasting 90+ minutes</strong> — marathons, long cycling events, triathlons — where glycogen depletion is a realistic limiter</li>
+        <li><strong>Not necessary for shorter workouts</strong> — a normal daily diet already provides enough glycogen for training sessions under about an hour</li>
+        <li><strong>Not a weight-loss strategy</strong> — the extra stored glycogen comes with extra stored water, which shows up as temporary weight gain on the scale, not fat</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True),
+    [("what-is-glycogen.html", "What is glycogen?"), ("how-many-carbs-per-day.html", "How many carbs per day"), ("carbs.html", "What carbohydrates actually do")]
+)
+
+add(
+    "fiber-benefits",
+    "Why Fiber Matters: Benefits of a High-Fiber Diet",
+    "The health benefits of dietary fiber, the difference between soluble and insoluble fiber, and how much you actually need per day.",
+    "carbs", "Carbohydrate Guide", "Why fiber matters: benefits of a high-fiber diet",
+    "Fiber is a carbohydrate your body can't fully digest — and that's exactly what makes it useful.",
+    sec('''      <h2>Soluble vs. insoluble fiber</h2>
+      <div class="two-col">
+        <div class="panel">
+          <h3>Soluble fiber</h3>
+          <p>Dissolves in water and forms a gel-like substance in digestion. Found in oats, beans, apples, and citrus fruit. Associated with improved cholesterol and more stable blood sugar.</p>
+        </div>
+        <div class="panel">
+          <h3>Insoluble fiber</h3>
+          <p>Doesn't dissolve, and adds bulk that helps move food through the digestive tract. Found in whole wheat, nuts, and vegetable skins. Associated with regularity and digestive health.</p>
+        </div>
+      </div>''') +
+    sec('''      <h2>Why it matters</h2>
+      <ul class="checklist">
+        <li><strong>Digestive regularity</strong> — adds bulk to stool and supports normal bowel function</li>
+        <li><strong>Cholesterol and blood sugar</strong> — soluble fiber in particular is linked to improved cholesterol levels and more gradual blood sugar rises</li>
+        <li><strong>Satiety</strong> — high-fiber foods tend to be more filling per calorie, which can support weight management</li>
+        <li><strong>Gut microbiome health</strong> — fiber feeds beneficial gut bacteria</li>
+      </ul>
+      <p>Most adults need roughly <strong>25 grams/day (women) to 38 grams/day (men)</strong> under age 50 — and most people fall short of that target.<sup class="ref"><a href="sources.html#c5">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("carbs.html", "What carbohydrates actually do"), ("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("how-many-carbs-per-day.html", "How many carbs per day")]
+)
+
+add(
+    "glycemic-index-explained",
+    "What Is the Glycemic Index and Does It Matter?",
+    "How the glycemic index measures a food's effect on blood sugar, what raises or lowers it, and how to use it practically.",
+    "carbs", "Carbohydrate Guide", "What is the glycemic index, and does it matter?",
+    "The glycemic index (GI) ranks how quickly a carbohydrate-containing food raises blood sugar compared to pure glucose.",
+    sec('''      <h2>How it works</h2>
+      <p>Foods are scored on a 0–100 scale: high-GI foods (white bread, white rice, most sugary drinks) cause a fast, sharp rise in blood sugar, while low-GI foods (most legumes, oats, non-starchy vegetables) produce a slower, more gradual rise.<sup class="ref"><a href="sources.html#c1">[1]</a></sup> Several factors affect a food's GI beyond the carb itself: fiber content, how processed or ripe it is, and what it's eaten alongside.</p>''') +
+    sec('''      <h2>The practical takeaway</h2>
+      <ul class="checklist">
+        <li><strong>Pairing carbs with protein, fat, or fiber</strong> lowers the effective glycemic response of a meal, even if an individual ingredient has a high GI on its own</li>
+        <li><strong>GI isn't the whole picture</strong> — glycemic load (which factors in portion size) and overall diet quality matter at least as much as a single food's GI ranking</li>
+        <li><strong>It's most useful as a general pattern</strong> — favoring minimally processed, fiber-rich carb sources most of the time — rather than a strict food-by-food rulebook</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True),
+    [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("carbs.html", "What carbohydrates actually do"), ("fiber-benefits.html", "Why fiber matters")]
+)
+
+# --------------------------------------------------------------- GENERAL --
+
+add(
+    "tdee-vs-bmr",
+    "BMR vs. TDEE: What's the Difference and Why It Matters",
+    "The difference between Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE), and how the Mifflin-St Jeor equation estimates both.",
+    "general", "Calculator Guide", "BMR vs. TDEE: what's the difference?",
+    "These two numbers are the foundation of every calorie and macro target on this site — here's what each one actually measures.",
+    sec('''      <h2>BMR: energy at complete rest</h2>
+      <p>Basal Metabolic Rate is the number of calories your body burns just to stay alive — breathing, circulating blood, maintaining body temperature — if you did nothing but lie still for 24 hours. Our calculator estimates it using the <strong>Mifflin-St Jeor equation</strong>, a widely used, research-validated formula:<sup class="ref"><a href="sources.html#cal1">[1]</a></sup></p>
+      <div class="panel">
+        <p><strong>Men:</strong> BMR = 10 × weight(kg) + 6.25 × height(cm) − 5 × age + 5<br>
+        <strong>Women:</strong> BMR = 10 × weight(kg) + 6.25 × height(cm) − 5 × age − 161</p>
+      </div>''') +
+    sec('''      <h2>TDEE: your real daily number</h2>
+      <p>Total Daily Energy Expenditure adds everything else on top of BMR: digesting food, daily movement, and exercise. It's estimated by multiplying BMR by an activity multiplier, ranging from about 1.2 (sedentary) to 1.9 (very high activity, physical job plus training).<sup class="ref"><a href="sources.html#cal2">[2]</a></sup> TDEE — not BMR — is the number that represents "maintenance calories," and it's the starting point for setting a deficit (fat loss) or surplus (muscle gain) goal.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Calculate my BMR and TDEE →</a></p>''', bg="var(--color-fat-bg)", tight=True),
+    [("calculators.html", "Full macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle")]
+)
+
+add(
+    "macros-for-weight-loss",
+    "How to Set Your Macros for Fat Loss",
+    "A practical framework for setting protein, fat, and carb targets during a fat-loss phase, including why protein should go up, not down.",
+    "general", "Calculator Guide", "How to set your macros for fat loss",
+    "Fat loss ultimately requires a calorie deficit — but how you fill that deficit changes whether you lose fat, or lose muscle along with it.",
+    sec('''      <ul class="checklist">
+        <li><strong>Set a moderate deficit</strong> — roughly 15–25% below your TDEE (maintenance calories) is sustainable for most people; more aggressive cuts are harder to stick to and increase muscle loss risk</li>
+        <li><strong>Raise protein, don't cut it</strong> — aim for the higher end of the normal range, around 1.8 g/kg body weight, to help preserve muscle while in a deficit<sup class="ref"><a href="sources.html#p2">[1]</a></sup></li>
+        <li><strong>Keep fat at least at the AMDR floor</strong> — don't drop below roughly 20% of calories, to protect hormone production and vitamin absorption</li>
+        <li><strong>Let carbs fill the rest</strong> — after protein and fat are set, remaining calories go to carbohydrates, which support training performance and daily energy</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>Our calculator applies exactly this logic automatically when you select "Lose fat" as your goal — it raises your protein target and sets a moderate deficit for you.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Set my fat-loss macros →</a></p>'''),
+    [("calculators.html", "Full macro calculator"), ("how-much-protein-per-day.html", "How much protein per day"), ("tdee-vs-bmr.html", "BMR vs. TDEE")]
+)
+
+add(
+    "macros-for-muscle-gain",
+    "How to Set Your Macros for Building Muscle (Bulking)",
+    "A practical framework for setting protein, fat, and carb targets to build muscle while minimizing unnecessary fat gain.",
+    "general", "Calculator Guide", "How to set your macros for building muscle",
+    "Building muscle requires a calorie surplus and enough protein — but 'more is better' isn't the right mindset for either one.",
+    sec('''      <ul class="checklist">
+        <li><strong>Use a modest surplus</strong> — a large calorie surplus doesn't build muscle faster, it mostly adds fat faster. A moderate surplus of roughly 10–15% above TDEE is a reasonable starting point.</li>
+        <li><strong>Protein: 1.6–2.2 g/kg</strong> — this range supports maximal muscle protein synthesis; going higher generally doesn't add extra benefit<sup class="ref"><a href="sources.html#p2">[1]</a></sup></li>
+        <li><strong>Don't skimp on carbs</strong> — adequate carbohydrate intake keeps glycogen stores full, which directly supports training performance and recovery<sup class="ref"><a href="sources.html#c2">[2]</a></sup></li>
+        <li><strong>Keep fat in the normal range</strong> — 20–35% of calories supports hormone production, which matters for muscle building<sup class="ref"><a href="sources.html#f6">[3]</a></sup></li>
+        <li><strong>Track your rate of gain</strong> — if the scale is climbing quickly, the surplus is probably larger than it needs to be</li>
+      </ul>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p>Selecting "Build muscle" in our calculator applies a modest surplus and a higher protein target automatically.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Set my muscle-building macros →</a></p>'''),
+    [("calculators.html", "Full macro calculator"), ("protein-for-muscle-growth.html", "Protein for muscle growth"), ("what-is-glycogen.html", "What is glycogen?")]
+)
+
+add(
+    "iifym-flexible-dieting",
+    "IIFYM: What Is Flexible Dieting and Does It Work?",
+    "What 'If It Fits Your Macros' (IIFYM) means, its real pros and cons, and a practical middle-ground approach.",
+    "general", "Calculator Guide", "IIFYM: what is flexible dieting, and does it work?",
+    "\"If It Fits Your Macros\" (IIFYM) is the idea that as long as you hit your protein, fat, and carb targets, the specific foods you eat them from don't matter.",
+    sec('''      <h2>The case for it</h2>
+      <p>IIFYM's biggest strength is adherence: no foods are strictly off-limits, which makes it easier for many people to sustain over the long term compared to highly restrictive diets. If your macro targets are set appropriately for your goal, hitting them consistently — regardless of exact food choices — genuinely does drive most of the physical outcome (fat loss, muscle gain, maintenance).</p>''') +
+    sec('''      <h2>Where it falls short</h2>
+      <ul class="checklist">
+        <li><strong>Micronutrients aren't tracked</strong> — hitting your macros with candy and processed food technically "fits," but won't supply the vitamins, minerals, and fiber whole foods provide</li>
+        <li><strong>Fiber and satiety often suffer</strong> — highly processed foods tend to be less filling per calorie, which can make the diet harder to sustain, not easier</li>
+        <li><strong>It's a framework, not a food-quality guarantee</strong> — the macros can be "right" while the diet is still nutritionally poor</li>
+      </ul>
+      <div class="panel">
+        <h3>A practical middle ground</h3>
+        <p>Build the majority of your diet — most nutrition coaches suggest roughly 80–90% — from whole, minimally processed foods that naturally hit your macro and fiber targets, and use the remaining room flexibly for foods you enjoy. You get the adherence benefits of flexibility without giving up nutritional quality.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("calculators.html", "Full macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle")]
+)
+
+
+CATEGORY_LABEL = {
+    "protein": "Protein",
+    "fat": "Fat",
+    "carbs": "Carbohydrates",
+    "general": "Calculators &amp; Planning",
+}
+CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "general": "carbs"}
+
+
+def build_hub():
+    by_cat = {}
+    for a in ARTICLES:
+        by_cat.setdefault(a["category"], []).append(a)
+
+    sections = ""
+    order = ["protein", "fat", "carbs", "general"]
+    bg = {"protein": "var(--color-protein-bg)", "fat": "var(--color-fat-bg)", "carbs": "var(--color-carbs-bg)", "general": None}
+    for cat in order:
+        items = by_cat.get(cat, [])
+        if not items:
+            continue
+        cards = "\n".join(
+            f'        <a href="{a["slug"]}.html" class="card {CATEGORY_PILL[cat]}"><h3>{a["h1"]}</h3><p>{a["meta"]}</p></a>'
+            for a in items
+        )
+        style = f' style="background:{bg[cat]}"' if bg[cat] else ""
+        sections += f'''  <section{style}>
+    <div class="container">
+      <h2><span class="pill {CATEGORY_PILL[cat]}">{CATEGORY_LABEL[cat]}</span></h2>
+      <div class="card-grid">
+{cards}
+      </div>
+    </div>
+  </section>
+'''
+
+    html = f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Articles | GetMacros.net</title>
+<meta name="description" content="Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, food lists, and calculator explainers.">
+<link rel="canonical" href="https://getmacros.net/articles.html">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+</head>
+<body>
+{NAV}
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow">Library</p>
+      <h1>All articles</h1>
+      <p>Every guide on GetMacros.net, organized by topic. Start with the core pages if you're new — <a href="protein.html" style="color:#fff;text-decoration:underline;">Protein</a>, <a href="fats.html" style="color:#fff;text-decoration:underline;">Fat</a>, <a href="carbs.html" style="color:#fff;text-decoration:underline;">Carbohydrates</a> — or dive into a specific question below.</p>
+    </div>
+  </section>
+
+{sections}
+</main>
+
+{FOOTER}
+
+<script src="js/main.js"></script>
+</body>
+</html>
+'''
+    path = os.path.join(ROOT, "articles.html")
+    with open(path, "w") as f:
+        f.write(html)
+    print("wrote", path)
+
+
+CORE_PAGES = [
+    ("", "1.0"),  # homepage
+    ("protein.html", "0.9"),
+    ("fats.html", "0.9"),
+    ("carbs.html", "0.9"),
+    ("calculators.html", "0.9"),
+    ("articles.html", "0.8"),
+    ("sources.html", "0.5"),
+]
+
+
+def build_sitemap():
+    domain = "https://getmacros.net"
+    urls = [f"{domain}/{p}" for p, _ in CORE_PAGES]
+    priorities = {p: pr for p, pr in CORE_PAGES}
+    entries = []
+    for path, priority in CORE_PAGES:
+        entries.append(f"  <url>\n    <loc>{domain}/{path}</loc>\n    <priority>{priority}</priority>\n  </url>")
+    for a in ARTICLES:
+        entries.append(f'  <url>\n    <loc>{domain}/{a["slug"]}.html</loc>\n    <priority>0.7</priority>\n  </url>')
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n"
+    with open(os.path.join(ROOT, "sitemap.xml"), "w") as f:
+        f.write(xml)
+    print("wrote", os.path.join(ROOT, "sitemap.xml"), f"({len(CORE_PAGES) + len(ARTICLES)} urls)")
+
+    robots = "User-agent: *\nAllow: /\nSitemap: https://getmacros.net/sitemap.xml\n"
+    with open(os.path.join(ROOT, "robots.txt"), "w") as f:
+        f.write(robots)
+    print("wrote", os.path.join(ROOT, "robots.txt"))
+
+
+def main():
+    for a in ARTICLES:
+        html = page(a["slug"], a["title"], a["meta"], a["category"],
+                    a["eyebrow"], a["h1"], a["intro"], a["body"], a["related"])
+        path = os.path.join(ROOT, f'{a["slug"]}.html')
+        with open(path, "w") as f:
+            f.write(html)
+        print("wrote", path)
+    print(f"\n{len(ARTICLES)} articles generated.")
+    build_hub()
+    build_sitemap()
+    return ARTICLES
+
+
+if __name__ == "__main__":
+    main()

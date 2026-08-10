@@ -86,7 +86,7 @@
       var weightRaw = parseFloat(macroForm.elements["weight"].value);
       var activityKey = macroForm.elements["activity"].value;
       var goalKey = macroForm.elements["goal"].value;
-      var fatPercent = parseFloat(macroForm.elements["fatpercent"].value) / 100;
+      var fatPercent = 0.3; // AMDR midpoint (20-35% of calories); adjust with the quick fat calculator below
 
       var heightCm;
       if (heightUnit === "cm") {
@@ -118,7 +118,7 @@
       var carbCals = totalCals - proteinCals - fatCals;
 
       if (carbCals < 0) {
-        errorBox.textContent = "At this fat percentage and calorie level, protein alone exceeds your target calories. Try lowering the fat percentage.";
+        errorBox.textContent = "Your protein target alone exceeds your calorie target at this weight and goal. This is rare — double-check your weight and activity level.";
         errorBox.hidden = false;
         return;
       }
