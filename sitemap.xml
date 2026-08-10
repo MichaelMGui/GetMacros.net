@@ -109,6 +109,66 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getmacros.net/micronutrients-vs-macronutrients.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/how-to-read-a-nutrition-label.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/vegan-macros-guide.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/intermittent-fasting-and-macros.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/cutting-bulking-maintenance-explained.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/protein-powder-101.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/sugar-vs-starch.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/ketogenic-diet-explained.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/high-protein-breakfast-ideas.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/meal-frequency-and-metabolism.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/body-recomposition-explained.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/alcohol-and-macros.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/cholesterol-explained.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/water-weight-vs-fat-loss.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/macros-for-endurance-vs-strength-athletes.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://getmacros.net/tdee-vs-bmr.html</loc>
     <priority>0.7</priority>
   </url>
@@ -123,5 +183,33 @@
   <url>
     <loc>https://getmacros.net/iifym-flexible-dieting.html</loc>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/play.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/protein-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/fat-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/carbs-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/macro-master-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/macro-memory-game.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/build-a-plate-game.html</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>

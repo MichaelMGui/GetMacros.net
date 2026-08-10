@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macro Master Quiz: The Hardest One | GetMacros.net</title>
+<meta name="description" content="A 10-question mixed quiz covering protein, fat, carbs, and calculator concepts — for people who've read most of the site.">
+<link rel="canonical" href="https://getmacros.net/macro-master-quiz.html">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">Get<span>Macros</span>.net</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="protein.html">Protein</a></li>
+      <li><a href="fats.html">Fat</a></li>
+      <li><a href="carbs.html">Carbs</a></li>
+      <li><a href="calculators.html">Calculators</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="play.html" aria-current="page">Play</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow">Master Quiz</p>
+      <h1>The Macro Master Quiz</h1>
+      <p>10 mixed, harder questions pulling from every corner of the site. Good luck.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div id="quiz-root" style="max-width:640px;margin:0 auto;"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>GetMacros.net</h4>
+      <p class="disclaimer">Educational content only — not medical advice. See <a href="sources.html">Sources</a> for citations.</p>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="protein.html">Protein</a></li>
+        <li><a href="fats.html">Fat</a></li>
+        <li><a href="carbs.html">Carbohydrates</a></li>
+        <li><a href="articles.html">All articles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <ul>
+        <li><a href="calculators.html">Macro calculator</a></li>
+        <li><a href="play.html">Quizzes &amp; games</a></li>
+        <li><a href="sources.html">Sources &amp; citations</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 GetMacros.net</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/quiz.js"></script>
+<script>
+  renderQuiz('quiz-root', [{"q": "Which macronutrient provides the most calories per gram?", "options": ["Protein", "Fat", "Carbohydrates", "They're all equal"], "correct": 1, "explain": "Fat provides 9 calories per gram, versus 4 for protein and carbs.", "link": {"href": "fats.html", "label": "What fat actually does"}}, {"q": "BMR measures:", "options": ["Calories burned during exercise", "Calories burned at complete rest", "Calories from digestion only", "Total daily calories including activity"], "correct": 1, "explain": "Basal Metabolic Rate is what your body burns just to stay alive at complete rest \u2014 TDEE adds activity on top.", "link": {"href": "tdee-vs-bmr.html", "label": "BMR vs. TDEE"}}, {"q": "The Mifflin-St Jeor equation estimates:", "options": ["Body fat percentage", "Basal Metabolic Rate", "VO2 max", "Glycogen storage capacity"], "correct": 1, "explain": "It's a widely used, research-validated formula for estimating BMR from weight, height, age, and sex.", "link": {"href": "tdee-vs-bmr.html", "label": "BMR vs. TDEE"}}, {"q": "During a fat-loss phase, sports nutrition guidance suggests you should generally:", "options": ["Lower protein intake", "Raise protein intake", "Eliminate carbs completely", "Eliminate fat completely"], "correct": 1, "explain": "Higher protein (around 1.8 g/kg) helps preserve muscle while you're in a calorie deficit.", "link": {"href": "macros-for-weight-loss.html", "label": "Macros for fat loss"}}, {"q": "Roughly how much water does each gram of stored glycogen hold alongside it?", "options": ["None at all", "~1 gram", "~3 grams", "~10 grams"], "correct": 2, "explain": "That's why cutting carbs sharply causes a fast multi-pound drop that's mostly water, not fat.", "link": {"href": "water-weight-vs-fat-loss.html", "label": "Water weight vs. fat loss"}}, {"q": "IIFYM stands for:", "options": ["\"It Is Fine, You're Missing it\"", "\"If It Fits Your Macros\"", "\"Improve If Following Your Meals\"", "It's not a real acronym"], "correct": 1, "explain": "IIFYM is the idea that as long as you hit your macro targets, specific food choices are flexible.", "link": {"href": "iifym-flexible-dieting.html", "label": "IIFYM explained"}}, {"q": "Alcohol provides roughly how many calories per gram?", "options": ["0", "4", "7", "9"], "correct": 2, "explain": "Alcohol provides about 7 calories per gram \u2014 between carbs/protein (4) and fat (9) \u2014 despite not being a macronutrient.", "link": {"href": "alcohol-and-macros.html", "label": "Alcohol and macros"}}, {"q": "A standard ketogenic diet typically limits carbs to roughly:", "options": ["Under 50g/day", "100-150g/day", "200-250g/day", "300g/day or more"], "correct": 0, "explain": "Standard keto usually keeps carbs under about 50g/day to maintain ketosis.", "link": {"href": "ketogenic-diet-explained.html", "label": "The ketogenic diet explained"}}, {"q": "Body recomposition (building muscle and losing fat at once) works best for:", "options": ["Advanced lifters only", "Beginners, or people returning after a break", "Only endurance athletes", "It never actually works"], "correct": 1, "explain": "New lifters and people regaining lost muscle have a rare window where both can happen simultaneously.", "link": {"href": "body-recomposition-explained.html", "label": "Body recomposition explained"}}, {"q": "Which of these is NOT one of the three macronutrients?", "options": ["Protein", "Fiber", "Fat", "Carbohydrate"], "correct": 1, "explain": "Fiber is a subtype of carbohydrate, not a fourth macronutrient \u2014 protein, fat, and carbs are the three.", "link": {"href": "micronutrients-vs-macronutrients.html", "label": "Micronutrients vs. macronutrients"}}], {
+    title: "Macro Master Quiz",
+    tiers: [{"min": 90, "msg": "Macro Master \u2014 you could write these articles yourself."}, {"min": 70, "msg": "Very strong. A couple of edge cases tripped you up."}, {"min": 40, "msg": "Decent foundation \u2014 worth another lap through the site."}, {"min": 0, "msg": "Tough quiz on purpose. Start with the pillar pages and come back."}],
+        moreHref: 'play.html'
+  });
+</script>
+</body>
+</html>

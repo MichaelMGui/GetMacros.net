@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macro Memory Match | GetMacros.net</title>
+<meta name="description" content="A memory match game — flip cards to pair foods and learn which macronutrient each one is dominant in.">
+<link rel="canonical" href="https://getmacros.net/macro-memory-game.html">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">Get<span>Macros</span>.net</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="protein.html">Protein</a></li>
+      <li><a href="fats.html">Fat</a></li>
+      <li><a href="carbs.html">Carbs</a></li>
+      <li><a href="calculators.html">Calculators</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="play.html" aria-current="page">Play</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow">Game</p>
+      <h1>Macro Memory Match</h1>
+      <p>Flip two cards at a time. Find all 6 matching pairs and learn each food's dominant macro along the way.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div id="game-root"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>GetMacros.net</h4>
+      <p class="disclaimer">Educational content only — not medical advice. See <a href="sources.html">Sources</a> for citations.</p>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="protein.html">Protein</a></li>
+        <li><a href="fats.html">Fat</a></li>
+        <li><a href="carbs.html">Carbohydrates</a></li>
+        <li><a href="articles.html">All articles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <ul>
+        <li><a href="calculators.html">Macro calculator</a></li>
+        <li><a href="play.html">Quizzes &amp; games</a></li>
+        <li><a href="sources.html">Sources &amp; citations</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 GetMacros.net</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/games.js"></script>
+<script>
+initMemoryGame('game-root', [{"emoji": "\ud83c\udf57", "name": "Chicken Breast", "macro": "protein"}, {"emoji": "\ud83d\udc1f", "name": "Salmon", "macro": "fat"}, {"emoji": "\ud83e\udd51", "name": "Avocado", "macro": "fat"}, {"emoji": "\ud83c\udf5a", "name": "Brown Rice", "macro": "carbs"}, {"emoji": "\ud83e\udd63", "name": "Greek Yogurt", "macro": "protein"}, {"emoji": "\ud83c\udf4c", "name": "Banana", "macro": "carbs"}]);
+</script>
+</body>
+</html>

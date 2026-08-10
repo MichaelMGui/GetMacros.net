@@ -46,6 +46,39 @@
     return Math.round(n).toLocaleString();
   }
 
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function animateCount(el, target, suffix) {
+    if (reduceMotion || !el) {
+      if (el) el.textContent = fmt(target) + (suffix || "");
+      return;
+    }
+    var start = performance.now();
+    var duration = 700;
+    function step(now) {
+      var p = Math.min((now - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * eased) + (suffix || "");
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function animateBars(container) {
+    if (reduceMotion) return;
+    var bars = container.querySelectorAll("[data-target-width]");
+    bars.forEach(function (b) {
+      b.style.width = "0%";
+    });
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        bars.forEach(function (b) {
+          b.style.width = b.getAttribute("data-target-width") + "%";
+        });
+      });
+    });
+  }
+
   // ---------- Main macro calculator ----------
   var macroForm = document.getElementById("macro-form");
   if (macroForm) {
@@ -146,23 +179,29 @@
 
       results.innerHTML =
         '<div class="result-total">' +
-          '<div class="num">' + fmt(r.totalCals) + '</div>' +
+          '<div class="num" data-count="' + r.totalCals + '">' + fmt(r.totalCals) + '</div>' +
           '<div class="label">calories / day &middot; BMR ' + fmt(r.bmr) + ' &middot; TDEE ' + fmt(r.tdee) + '</div>' +
         '</div>' +
         '<div class="macro-bar" aria-hidden="true">' +
-          '<span class="protein" style="width:' + pPct + '%"></span>' +
-          '<span class="fat" style="width:' + fPct + '%"></span>' +
-          '<span class="carbs" style="width:' + cPct + '%"></span>' +
+          '<span class="protein" data-target-width="' + pPct + '" style="width:0%"></span>' +
+          '<span class="fat" data-target-width="' + fPct + '" style="width:0%"></span>' +
+          '<span class="carbs" data-target-width="' + cPct + '" style="width:0%"></span>' +
         '</div>' +
         macroRow("protein", "Protein", r.proteinG, r.proteinCals, pPct) +
         macroRow("fat", "Fat", r.fatG, r.fatCals, fPct) +
         macroRow("carbs", "Carbohydrate", r.carbG, r.carbCals, cPct);
+
+      animateCount(results.querySelector(".num"), r.totalCals);
+      results.querySelectorAll(".grams").forEach(function (el) {
+        animateCount(el, parseFloat(el.getAttribute("data-count")), " g");
+      });
+      animateBars(results);
     }
 
     function macroRow(cls, label, grams, cals, pct) {
       return '<div class="macro-result-row">' +
         '<span><span class="dot ' + cls + '"></span>' + label + ' (' + pct + '%)</span>' +
-        '<span class="amounts"><span class="grams">' + fmt(grams) + ' g</span><br>' +
+        '<span class="amounts"><span class="grams" data-count="' + grams + '">' + fmt(grams) + ' g</span><br>' +
         '<span class="cals">' + fmt(cals) + ' cal</span></span>' +
         '</div>';
     }

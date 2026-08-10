@@ -10,7 +10,11 @@ import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-NAV = '''<header class="site-header">
+def nav_html(current="articles"):
+    def cur(name):
+        return ' aria-current="page"' if name == current else ""
+
+    return f'''<header class="site-header">
   <nav class="nav">
     <a href="index.html" class="nav-brand">Get<span>Macros</span>.net</a>
     <button class="nav-toggle" aria-label="Toggle menu">☰</button>
@@ -20,11 +24,15 @@ NAV = '''<header class="site-header">
       <li><a href="fats.html">Fat</a></li>
       <li><a href="carbs.html">Carbs</a></li>
       <li><a href="calculators.html">Calculators</a></li>
-      <li><a href="articles.html" aria-current="page">Articles</a></li>
+      <li><a href="articles.html"{cur("articles")}>Articles</a></li>
+      <li><a href="play.html"{cur("play")}>Play</a></li>
       <li><a href="sources.html">Sources</a></li>
     </ul>
   </nav>
 </header>'''
+
+
+NAV = nav_html("articles")
 
 FOOTER = '''<footer class="site-footer">
   <div class="container">
@@ -45,6 +53,7 @@ FOOTER = '''<footer class="site-footer">
       <h4>Tools</h4>
       <ul>
         <li><a href="calculators.html">Macro calculator</a></li>
+        <li><a href="play.html">Quizzes &amp; games</a></li>
         <li><a href="sources.html">Sources &amp; citations</a></li>
       </ul>
     </div>
@@ -100,6 +109,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
 {FOOTER}
 
 <script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
 </body>
 </html>
 '''
@@ -565,6 +575,260 @@ add(
     [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("carbs.html", "What carbohydrates actually do"), ("fiber-benefits.html", "Why fiber matters")]
 )
 
+add(
+    "micronutrients-vs-macronutrients",
+    "Micronutrients vs. Macronutrients: What's the Difference",
+    "The difference between macronutrients (protein, fat, carbs) and micronutrients (vitamins, minerals), and why hitting your macros doesn't guarantee good nutrition.",
+    "general", "Nutrition Basics", "Micronutrients vs. macronutrients: what's the difference",
+    "Macros give you energy and building blocks. Micros keep the machinery running — and you need both.",
+    sec('''      <h2>Two different jobs</h2>
+      <p><strong>Macronutrients</strong> — protein, fat, and carbohydrates — are needed in large amounts and supply calories (energy). <strong>Micronutrients</strong> — vitamins and minerals like vitamin D, iron, calcium, and potassium — are needed in much smaller amounts and don't supply calories, but are essential for things like immune function, bone health, oxygen transport, and hundreds of enzyme reactions.</p>''') +
+    sec('''      <div class="panel warn">
+        <h3>Why "hitting your macros" isn't the whole story</h3>
+        <p>It's entirely possible to hit a protein/fat/carb target using foods with almost no micronutrient value — and it's equally possible to hit the same targets with foods that are also rich in vitamins, minerals, and fiber. The macro number is the same either way, but the health outcome isn't. That's why food quality still matters even once your macros are dialed in.</p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("carbs.html", "What carbohydrates actually do"), ("fiber-benefits.html", "Why fiber matters"), ("iifym-flexible-dieting.html", "IIFYM: does flexible dieting work?")]
+)
+
+add(
+    "how-to-read-a-nutrition-label",
+    "How to Read a Nutrition Label (Macros Edition)",
+    "How to quickly find protein, fat, and carbohydrate info on a nutrition label, and the common mistakes people make reading serving sizes.",
+    "general", "Nutrition Basics", "How to read a nutrition label (macros edition)",
+    "The label has everything you need to track macros — if you know where to look and what the serving size actually means.",
+    sec('''      <h2>Where to look</h2>
+      <ul class="checklist">
+        <li><strong>Serving size first</strong> — every number on the label is per serving, not per package. A bag that "looks like one serving" is often 2–3</li>
+        <li><strong>Total Carbohydrate</strong> includes fiber and sugar — the "Dietary Fiber" sub-line is already counted inside the total, not extra</li>
+        <li><strong>Total Fat</strong> includes the saturated and trans fat sub-lines, same logic — they're a breakdown, not additional grams</li>
+        <li><strong>Protein</strong> is usually the simplest line, listed directly in grams per serving</li>
+      </ul>''') +
+    sec('''      <div class="panel">
+        <h3>Common mistake</h3>
+        <p>Multiplying by the wrong number of servings is the single biggest source of tracking error. Before logging a food, check how many servings you're actually eating and multiply every number on the label accordingly — not just the calories.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("high-protein-foods-list.html", "High-protein foods list"), ("calculators.html", "Macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss")]
+)
+
+add(
+    "vegan-macros-guide",
+    "Vegan Macros: Hitting Your Targets Without Meat or Dairy",
+    "A practical guide to hitting protein, fat, and carb targets on a fully plant-based diet.",
+    "general", "Nutrition Basics", "Vegan macros: hitting your targets without meat or dairy",
+    "Every macro target on this site is achievable on a vegan diet — it just takes knowing which plant foods to lean on.",
+    sec('''      <div class="two-col">
+        <div class="panel">
+          <h3>Protein</h3>
+          <p>Lean on tofu, tempeh, seitan, legumes, and a plant protein powder to hit the higher end of your protein range without huge food volume. See our <a href="plant-based-protein-sources.html">full plant-based protein list</a>.</p>
+        </div>
+        <div class="panel">
+          <h3>Fat</h3>
+          <p>Olive oil, avocado, nuts, seeds, and nut butters cover fat easily — pay attention to getting enough omega-3 specifically, since fish is off the table (walnuts, flax, chia, or an algae-based supplement).</p>
+        </div>
+      </div>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p>Carbs are usually the easiest target to hit on a vegan diet — whole grains, fruit, and legumes cover it naturally, and often add useful fiber alongside. The main planning challenge is protein density per calorie, since most whole plant proteins carry more carbs alongside them than animal protein does — which is a feature, not a bug, as long as it fits your total macro plan.</p>'''),
+    [("plant-based-protein-sources.html", "Plant-based protein sources"), ("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein"), ("calculators.html", "Calculate your macros")]
+)
+
+add(
+    "intermittent-fasting-and-macros",
+    "Intermittent Fasting and Macros: Does Timing Matter?",
+    "How intermittent fasting interacts with your macro targets, and whether meal timing itself changes results independent of what you eat.",
+    "general", "Nutrition Basics", "Intermittent fasting and macros: does timing matter?",
+    "Fasting changes when you eat. It doesn't change the math of what you eat — your daily macro totals still do the heavy lifting.",
+    sec('''      <p>Intermittent fasting (commonly a 16:8 or similar eating-window schedule) restricts <em>when</em> you eat, not what your protein, fat, and carb totals add up to across the day. For most outcomes — fat loss, muscle maintenance — total daily macros and calories appear to matter far more than the specific hours they're eaten in.</p>''') +
+    sec('''      <ul class="checklist">
+        <li><strong>Fewer, larger meals</strong> — fasting naturally compresses eating into fewer meals, so each one needs to carry more protein to still hit your daily distribution target</li>
+        <li><strong>Practical benefit for some people</strong> — a shorter eating window can make calorie counting simpler and curb late-night snacking, independent of any special metabolic effect</li>
+        <li><strong>Not automatically better for muscle building</strong> — spreading protein across more meals may have a slight edge for muscle protein synthesis, so heavy fasting windows are a tradeoff to be aware of for that specific goal</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True),
+    [("protein-timing.html", "Does protein timing matter?"), ("calculators.html", "Calculate your macros"), ("macros-for-muscle-gain.html", "Macros for building muscle")]
+)
+
+add(
+    "cutting-bulking-maintenance-explained",
+    "Cutting vs. Bulking vs. Maintenance: Which Phase Are You In?",
+    "What the terms cutting, bulking, and maintenance actually mean in terms of calories and macros, and how to tell which one you should be doing.",
+    "general", "Nutrition Basics", "Cutting vs. bulking vs. maintenance: which phase are you in?",
+    "Three phases, three different calorie targets — and each one calls for a different macro emphasis.",
+    sec('''      <table class="data-table">
+        <tr><th>Phase</th><th>Calories</th><th>Main macro priority</th></tr>
+        <tr><td>Cutting</td><td>Deficit (~15–25% below TDEE)</td><td>Protein up (~1.8 g/kg) to protect muscle</td></tr>
+        <tr><td>Maintenance</td><td>At TDEE</td><td>Standard ranges across all three</td></tr>
+        <tr><td>Bulking</td><td>Surplus (~10–15% above TDEE)</td><td>Adequate carbs for training performance</td></tr>
+      </table>
+      <p>None of these are permanent — most people cycle between phases over months or years depending on their current goal, body composition, and how their training is going.</p>''') +
+    sec('''      <p><a href="macros-for-weight-loss.html">Read the full cutting macro breakdown</a> or <a href="macros-for-muscle-gain.html">the full bulking macro breakdown</a>.</p>''', bg="var(--color-fat-bg)", tight=True),
+    [("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle"), ("tdee-vs-bmr.html", "BMR vs. TDEE")]
+)
+
+add(
+    "protein-powder-101",
+    "Protein Powder 101: Whey, Casein, and Plant Blends Explained",
+    "The practical differences between whey, casein, and plant-based protein powders, and how to choose between them.",
+    "protein", "Protein Guide", "Protein powder 101: whey, casein, and plant blends",
+    "Protein powder is just a convenient, concentrated food — the type mostly affects digestion speed and dietary fit, not whether it \"works.\"",
+    sec('''      <div class="two-col">
+        <div class="panel">
+          <h3>Whey protein</h3>
+          <p>A complete, fast-digesting milk-derived protein. The most researched protein supplement and a convenient way to hit a daily protein target, especially post-workout. Not suitable for those avoiding dairy.</p>
+        </div>
+        <div class="panel">
+          <h3>Casein protein</h3>
+          <p>Also milk-derived, but digests much more slowly, releasing amino acids gradually. Often used before bed for a slow overnight supply, though total daily intake still matters more than this specific timing choice.</p>
+        </div>
+      </div>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <h2>Plant-based blends</h2>
+      <p>Usually a mix of pea, rice, and/or hemp protein, combined specifically because blending sources compensates for any single plant protein's weaker amino acids — a practical example of variety solving what one plant protein alone doesn't.<sup class="ref"><a href="sources.html#p1">[1]</a></sup> A good plant blend performs comparably to whey for most practical purposes.</p>
+      <p>Bottom line: pick whichever type fits your diet and stomach best — the protein content is what matters most, not the source.</p>'''),
+    [("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein"), ("plant-based-protein-sources.html", "Plant-based protein sources"), ("protein-timing.html", "Does protein timing matter?")]
+)
+
+add(
+    "sugar-vs-starch",
+    "Sugar vs. Starch: Are All Carbs Created Equal?",
+    "The difference between sugar and starch as types of carbohydrate, how your body processes each, and what it means for your diet.",
+    "carbs", "Carbohydrate Guide", "Sugar vs. starch: are all carbs created equal?",
+    "Both break down to glucose eventually — but the path they take there is very different.",
+    sec('''      <p><strong>Sugars</strong> are simple carbohydrates — one or two linked sugar units — found naturally in fruit and dairy, or added to food as table sugar, syrup, or honey. They're absorbed quickly. <strong>Starches</strong> are long chains of glucose units (a complex carbohydrate) found in grains, potatoes, and legumes, and take longer to break down during digestion, generally producing a more gradual rise in blood sugar.</p>''') +
+    sec('''      <div class="panel warn">
+        <h3>The nuance</h3>
+        <p>Naturally occurring sugar in whole fruit comes packaged with fiber and water that slow its absorption, unlike the same amount of sugar in a soda. And highly refined starches (white bread, white rice) can behave more like sugar in terms of blood sugar response than a whole-grain starch would. The <strong>form</strong> of the carbohydrate — whole and fiber-intact vs. refined — often matters as much as whether it's technically a "sugar" or a "starch."</p>
+      </div>'''),
+    [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("glycemic-index-explained.html", "What is the glycemic index?"), ("fiber-benefits.html", "Why fiber matters")]
+)
+
+add(
+    "ketogenic-diet-explained",
+    "The Ketogenic Diet Explained: Macros, Benefits, and Risks",
+    "How the ketogenic diet's macro split works, what ketosis actually is, and who should be cautious about trying it.",
+    "carbs", "Carbohydrate Guide", "The ketogenic diet explained: macros, benefits, and risks",
+    "Keto isn't just \"low carb\" — it's a specific macro ratio designed to push your body into a distinct metabolic state.",
+    sec('''      <h2>The macro split</h2>
+      <p>A standard ketogenic diet typically targets roughly <strong>70–80% of calories from fat, 15–25% from protein, and only about 5–10% from carbohydrate</strong> — often under 50g of carbs per day. That's dramatically below the standard 45–65% AMDR for carbs.<sup class="ref"><a href="sources.html#c4">[1]</a></sup> At that level, glycogen stores empty out and the body shifts to producing ketones from fat as its primary fuel source — the metabolic state called ketosis.</p>''') +
+    sec('''      <h2>What to know before trying it</h2>
+      <ul class="checklist">
+        <li><strong>The adaptation period</strong> can include fatigue, headaches, and irritability ("keto flu") as the body shifts fuel sources — see our <a href="low-carb-diet-effects.html">full breakdown of low-carb diet effects</a></li>
+        <li><strong>High-intensity performance can suffer</strong>, since glycogen is the preferred fuel for fast, powerful efforts</li>
+        <li><strong>Not automatically appropriate for everyone</strong> — anyone on blood-sugar-lowering or blood-pressure medication should talk to a doctor before attempting it, since the diet can significantly affect both</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True),
+    [("low-carb-diet-effects.html", "What happens on a low-carb diet"), ("what-is-glycogen.html", "What is glycogen?"), ("how-many-carbs-per-day.html", "How many carbs per day")]
+)
+
+add(
+    "high-protein-breakfast-ideas",
+    "High-Protein Breakfast Ideas That Actually Fill You Up",
+    "Practical high-protein breakfast combinations and roughly how much protein each provides.",
+    "protein", "Protein Guide", "High-protein breakfast ideas that actually fill you up",
+    "Breakfast is the meal most people under-eat protein at — small swaps close the gap fast.",
+    sec('''      <table class="data-table">
+        <tr><th>Breakfast</th><th>Approx. protein</th></tr>
+        <tr><td>3 eggs + 1 cup cottage cheese</td><td>~40 g</td></tr>
+        <tr><td>Greek yogurt (1 cup) + handful of almonds</td><td>~25 g</td></tr>
+        <tr><td>Protein smoothie (1 scoop powder + milk + fruit)</td><td>~30 g</td></tr>
+        <tr><td>Oats made with milk + scoop of protein powder</td><td>~30 g</td></tr>
+        <tr><td>Tofu scramble (200g) + vegetables</td><td>~16 g</td></tr>
+        <tr><td>2 eggs + 2 turkey sausage links + toast</td><td>~28 g</td></tr>
+      </table>
+      <p>A simple pattern: pick one protein-dense anchor (eggs, Greek yogurt, cottage cheese, tofu, or a protein powder) and build the rest of the meal around it, rather than treating protein as an afterthought.</p>'''),
+    [("high-protein-foods-list.html", "Full high-protein foods list"), ("how-much-protein-per-day.html", "How much protein per day"), ("protein-timing.html", "Does protein timing matter?")]
+)
+
+add(
+    "meal-frequency-and-metabolism",
+    "Does Meal Frequency Matter for Macros and Metabolism?",
+    "Whether eating more or fewer meals per day changes metabolism or macro results, according to the research.",
+    "general", "Nutrition Basics", "Does meal frequency matter for macros and metabolism?",
+    "Three meals, six meals, one meal — does the number actually change anything, or just how you get to the same daily total?",
+    sec('''      <p>The idea that eating more frequently "stokes your metabolism" isn't well supported — total daily calories and macros appear to matter far more than how many meals they're split across. Digesting food does burn a small number of calories (the thermic effect of food), but that's roughly proportional to total food eaten, not the number of separate meals.</p>''') +
+    sec('''      <div class="panel">
+        <h3>Where meal frequency does matter</h3>
+        <p>Practical factors, not metabolic ones: more frequent smaller meals may help some people manage hunger and adherence, while fewer larger meals may suit others' schedules and appetite better. For muscle building specifically, spreading protein across 3–4 meals (rather than one large dose) appears to modestly support muscle protein synthesis better.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> Pick the pattern you can sustain — it's a bigger lever than the theoretical metabolic difference.</p>
+      </div>''', bg="var(--color-protein-bg)", tight=True),
+    [("protein-timing.html", "Does protein timing matter?"), ("intermittent-fasting-and-macros.html", "Intermittent fasting and macros"), ("calculators.html", "Calculate your macros")]
+)
+
+add(
+    "body-recomposition-explained",
+    "Body Recomposition: Building Muscle and Losing Fat at Once",
+    "What body recomposition means, who it actually works for, and how to set macros for it.",
+    "general", "Nutrition Basics", "Body recomposition: building muscle and losing fat at once",
+    "Losing fat and building muscle simultaneously is possible — but it's slower than doing either one at a time, and works best for specific people.",
+    sec('''      <h2>Who it works best for</h2>
+      <ul class="checklist">
+        <li><strong>Beginners to resistance training</strong> — new lifters can often build muscle and lose fat at the same time, a rare window that shrinks with training experience</li>
+        <li><strong>People returning after a break</strong> — "muscle memory" allows relatively fast muscle regain even in a calorie deficit</li>
+        <li><strong>People with more body fat to lose</strong> — extra stored energy (fat) can help offset the calorie cost of building new muscle</li>
+      </ul>''') +
+    sec('''      <h2>Setting macros for recomposition</h2>
+      <p>Calories are typically set at or very close to maintenance (TDEE), rather than a clear deficit or surplus. Protein is kept high — similar to a cutting phase, around 1.8–2.2 g/kg — since it's doing double duty: supporting muscle growth and protecting existing muscle. Progress is usually slower and harder to see on the scale than a dedicated cut or bulk, so tracking measurements or photos matters more than the number on the scale.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("macros-for-muscle-gain.html", "Macros for building muscle"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("cutting-bulking-maintenance-explained.html", "Cutting vs. bulking vs. maintenance")]
+)
+
+add(
+    "alcohol-and-macros",
+    "Alcohol and Macros: How Drinking Fits Into Your Targets",
+    "How alcohol interacts with your calorie and macro targets, since it doesn't cleanly fit into protein, fat, or carbs.",
+    "general", "Nutrition Basics", "Alcohol and macros: how drinking fits into your targets",
+    "Alcohol supplies calories — about 7 per gram, between fat and carbs — but it isn't a macronutrient, which makes it easy to under-account for.",
+    sec('''      <p>Alcohol provides roughly <strong>7 calories per gram</strong>, more than protein or carbs (4) and just under fat (9), but it isn't classified as a macronutrient because it isn't required for any bodily function. Those calories still count toward your daily total even though they don't show up on a "protein/fat/carb" macro split — a standard drink can easily add 100–200 calories that are easy to forget when tracking.</p>''') +
+    sec('''      <div class="panel warn">
+        <h3>Practical approach</h3>
+        <p>Most people who track macros simply subtract alcohol calories from their remaining daily calorie budget for the day (often treated as "extra fat calories" for simplicity, since it's not far off gram-for-gram). It's also worth knowing that alcohol can temporarily reduce fat burning while it's being processed, and mixed drinks often carry substantial hidden carbs from sugary mixers.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("calculators.html", "Calculate your macros"), ("macros-for-weight-loss.html", "Macros for fat loss")]
+)
+
+add(
+    "cholesterol-explained",
+    "Cholesterol Explained: Dietary vs. Blood Cholesterol",
+    "The difference between the cholesterol you eat and the cholesterol measured in your blood, and why they aren't the same thing.",
+    "fat", "Fat Guide", "Cholesterol explained: dietary vs. blood cholesterol",
+    "Eating cholesterol and having high blood cholesterol are related, but not in the direct one-to-one way many people assume.",
+    sec('''      <p><strong>Dietary cholesterol</strong> is the cholesterol found in food — eggs, shellfish, organ meats. <strong>Blood cholesterol</strong> is what's measured in a lipid panel (LDL, HDL, triglycerides) and is influenced by many factors, with your liver producing most of your body's cholesterol regardless of diet. For most people, dietary cholesterol has a smaller effect on blood cholesterol than saturated and trans fat intake does.<sup class="ref"><a href="sources.html#f2">[1]</a></sup></p>''') +
+    sec('''      <div class="panel">
+        <h3>Why this matters for fat intake</h3>
+        <p>Cholesterol is also the raw material your body uses to build steroid hormones like testosterone and estrogen — one more reason very low-fat diets can backfire on hormone production. See our piece on <a href="low-fat-diet-risks.html">the hidden risks of very low-fat diets</a> for the full picture.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("fats.html", "What fat actually does")]
+)
+
+add(
+    "water-weight-vs-fat-loss",
+    "Water Weight vs. Fat Loss: Why the Scale Lies",
+    "Why the scale can jump or drop several pounds overnight that have nothing to do with actual fat loss or gain, and what's really going on.",
+    "general", "Nutrition Basics", "Water weight vs. fat loss: why the scale lies",
+    "A pound of fat doesn't appear or disappear overnight — but a pound of water absolutely can.",
+    sec('''      <ul class="checklist">
+        <li><strong>Carbohydrate changes</strong> — every gram of stored glycogen holds roughly 3 grams of water alongside it, so cutting carbs sharply can drop several pounds of water weight in days, and eating more carbs can add it right back<sup class="ref"><a href="sources.html#c2">[1]</a></sup></li>
+        <li><strong>Sodium intake</strong> — a high-sodium meal can cause temporary water retention that shows up on the scale the next morning</li>
+        <li><strong>Hormonal fluctuations</strong> — water retention around the menstrual cycle is common and normal</li>
+        <li><strong>Hard training sessions</strong> — muscles can hold extra water temporarily during recovery and repair</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>None of this means the scale is useless — it just means single-day readings are noisy. A weekly average, taken under similar conditions (same time of day, similar hydration), is a far more reliable signal of actual fat loss or gain than any individual day's number.</p>'''),
+    [("what-is-glycogen.html", "What is glycogen?"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("low-carb-diet-effects.html", "What happens on a low-carb diet")]
+)
+
+add(
+    "macros-for-endurance-vs-strength-athletes",
+    "Macros for Endurance Athletes vs. Strength Athletes",
+    "How macro priorities differ between endurance athletes and strength athletes, and why one-size-fits-all macro advice doesn't work for both.",
+    "general", "Nutrition Basics", "Macros for endurance athletes vs. strength athletes",
+    "A marathoner and a powerlifter both train hard — but their fuel needs point in different directions.",
+    sec('''      <div class="two-col">
+        <div class="panel">
+          <h3>Endurance athletes</h3>
+          <p>Carbohydrate needs are often at or above the top of the standard AMDR range — sometimes 8–12 g/kg on heavy training days — since glycogen availability directly limits performance in long events.<sup class="ref"><a href="sources.html#c2">[1]</a></sup> Protein needs are still elevated versus sedentary baselines, but generally lower than a strength athlete's, around 1.2–1.6 g/kg.</p>
+        </div>
+        <div class="panel">
+          <h3>Strength &amp; physique athletes</h3>
+          <p>Protein needs sit at the higher end, 1.6–2.2 g/kg, to support muscle repair and growth from resistance training.<sup class="ref"><a href="sources.html#p2">[2]</a></sup> Carbohydrate needs are typically more moderate than an endurance athlete's, since training sessions are shorter and less glycogen-depleting overall.</p>
+        </div>
+      </div>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>Fat generally stays in the standard 20–35% range for both groups. The takeaway: your sport's energy demands should shape your macro split, not a single generic ratio applied to everyone.</p>'''),
+    [("how-many-carbs-per-day.html", "How many carbs per day"), ("how-much-protein-per-day.html", "How much protein per day"), ("carb-loading-for-athletes.html", "Carb loading for athletes")]
+)
+
 # --------------------------------------------------------------- GENERAL --
 
 add(
@@ -707,6 +971,7 @@ def build_hub():
 {FOOTER}
 
 <script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
 </body>
 </html>
 '''

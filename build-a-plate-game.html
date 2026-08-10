@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build-a-Plate | GetMacros.net</title>
+<meta name="description" content="Build a plate of real foods to hit a randomly assigned protein, fat, and carb target as closely as possible.">
+<link rel="canonical" href="https://getmacros.net/build-a-plate-game.html">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">Get<span>Macros</span>.net</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="protein.html">Protein</a></li>
+      <li><a href="fats.html">Fat</a></li>
+      <li><a href="carbs.html">Carbs</a></li>
+      <li><a href="calculators.html">Calculators</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="play.html" aria-current="page">Play</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow">Game</p>
+      <h1>Build-a-Plate</h1>
+      <p>You'll get a randomly assigned macro target. Click foods to add servings, watch your totals fill in live, then submit for a grade.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div id="game-root"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>GetMacros.net</h4>
+      <p class="disclaimer">Educational content only — not medical advice. See <a href="sources.html">Sources</a> for citations.</p>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="protein.html">Protein</a></li>
+        <li><a href="fats.html">Fat</a></li>
+        <li><a href="carbs.html">Carbohydrates</a></li>
+        <li><a href="articles.html">All articles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <ul>
+        <li><a href="calculators.html">Macro calculator</a></li>
+        <li><a href="play.html">Quizzes &amp; games</a></li>
+        <li><a href="sources.html">Sources &amp; citations</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 GetMacros.net</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/games.js"></script>
+<script>
+initPlateGame('game-root', [{"id": "chicken", "emoji": "\ud83c\udf57", "name": "Chicken Breast (150g)", "protein": 46, "fat": 5, "carb": 0}, {"id": "salmon", "emoji": "\ud83d\udc1f", "name": "Salmon (150g)", "protein": 37, "fat": 20, "carb": 0}, {"id": "egg", "emoji": "\ud83e\udd5a", "name": "Egg (1 large)", "protein": 6, "fat": 5, "carb": 0.5}, {"id": "yogurt", "emoji": "\ud83e\udd63", "name": "Greek Yogurt (1 cup)", "protein": 17, "fat": 0, "carb": 6}, {"id": "avocado", "emoji": "\ud83e\udd51", "name": "Avocado (half)", "protein": 2, "fat": 15, "carb": 9}, {"id": "oliveoil", "emoji": "\ud83e\uded2", "name": "Olive Oil (1 tbsp)", "protein": 0, "fat": 14, "carb": 0}, {"id": "almonds", "emoji": "\ud83e\udd5c", "name": "Almonds (30g)", "protein": 6, "fat": 14, "carb": 6}, {"id": "rice", "emoji": "\ud83c\udf5a", "name": "Brown Rice (1 cup)", "protein": 5, "fat": 2, "carb": 45}, {"id": "oats", "emoji": "\ud83c\udf3e", "name": "Oats (40g)", "protein": 5, "fat": 3, "carb": 27}, {"id": "banana", "emoji": "\ud83c\udf4c", "name": "Banana (1 medium)", "protein": 1, "fat": 0, "carb": 27}, {"id": "broccoli", "emoji": "\ud83e\udd66", "name": "Broccoli (1 cup)", "protein": 3, "fat": 0, "carb": 6}, {"id": "beans", "emoji": "\ud83e\uded8", "name": "Black Beans (1 cup)", "protein": 15, "fat": 1, "carb": 41}, {"id": "pb", "emoji": "\ud83e\udd5c", "name": "Peanut Butter (2 tbsp)", "protein": 7, "fat": 16, "carb": 6}, {"id": "sweetpotato", "emoji": "\ud83c\udf60", "name": "Sweet Potato (1 medium)", "protein": 2, "fat": 0, "carb": 24}], [{"name": "High-Protein Lunch", "desc": "~565 calories, built around lean protein.", "protein": 50, "fat": 20, "carb": 45}, {"name": "Balanced Dinner", "desc": "~665 calories, an even split across all three.", "protein": 40, "fat": 25, "carb": 60}, {"name": "Post-Workout Recovery", "desc": "~625 calories, carb-forward for glycogen refill.", "protein": 45, "fat": 15, "carb": 70}]);
+</script>
+</body>
+</html>
