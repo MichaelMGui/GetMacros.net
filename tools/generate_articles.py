@@ -10,13 +10,16 @@ import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+with open(os.path.join(ROOT, "icon-sprite.svg")) as _f:
+    ICON_SPRITE = _f.read().strip()
+
 def nav_html(current="articles"):
     def cur(name):
         return ' aria-current="page"' if name == current else ""
 
     return f'''<header class="site-header">
   <nav class="nav">
-    <a href="index.html" class="nav-brand">Get<span>Macros</span>.net</a>
+    <a href="index.html" class="nav-brand"><svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"/></svg>Get<span>Macros</span>.net</a>
     <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -25,7 +28,8 @@ def nav_html(current="articles"):
       <li><a href="carbs.html">Carbs</a></li>
       <li><a href="calculators.html">Calculators</a></li>
       <li><a href="articles.html"{cur("articles")}>Articles</a></li>
-      <li><a href="play.html"{cur("play")}>Play</a></li>
+      <li><a href="glossary.html"{cur("glossary")}>Glossary</a></li>
+      <li><a href="quiz.html"{cur("quiz")}>Quiz</a></li>
       <li><a href="sources.html">Sources</a></li>
     </ul>
   </nav>
@@ -47,13 +51,14 @@ FOOTER = '''<footer class="site-footer">
         <li><a href="fats.html">Fat</a></li>
         <li><a href="carbs.html">Carbohydrates</a></li>
         <li><a href="articles.html">All articles</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
       </ul>
     </div>
     <div>
       <h4>Tools</h4>
       <ul>
         <li><a href="calculators.html">Macro calculator</a></li>
-        <li><a href="play.html">Quizzes &amp; games</a></li>
+        <li><a href="quiz.html">Quizzes &amp; games</a></li>
         <li><a href="sources.html">Sources &amp; citations</a></li>
       </ul>
     </div>
@@ -86,6 +91,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
 <script src="js/img-fallback.js"></script>
 </head>
 <body>
+{ICON_SPRITE}
 {NAV}
 
 <main>
@@ -954,6 +960,7 @@ def build_hub():
 <script src="js/img-fallback.js"></script>
 </head>
 <body>
+{ICON_SPRITE}
 {NAV}
 
 <main>
@@ -1010,6 +1017,228 @@ def build_sitemap():
     with open(os.path.join(ROOT, "robots.txt"), "w") as f:
         f.write(robots)
     print("wrote", os.path.join(ROOT, "robots.txt"))
+
+
+# --------------------------------------------------------- FOR STUDENTS --
+
+add(
+    "nitrogen-balance-explained",
+    "Nitrogen Balance Explained: Why It Matters for Muscle",
+    "What nitrogen balance measures, how it relates to protein intake, and why it's used to assess whether the body is gaining or losing muscle.",
+    "protein", "For Students", "Nitrogen balance explained",
+    "Protein is roughly 16% nitrogen by weight, which makes nitrogen a convenient marker for tracking whether your body is building or breaking down protein tissue overall.",
+    sec('''      <h2>What it measures</h2>
+      <p>Nitrogen balance compares nitrogen intake (from dietary protein) to nitrogen losses (mainly through urine, with smaller amounts through skin and feces). The result falls into one of three states:</p>
+      <ul class="checklist">
+        <li><strong>Positive balance</strong> — intake exceeds losses; the body is building more protein tissue than it's breaking down (growth, pregnancy, muscle building, recovery from illness)</li>
+        <li><strong>Negative balance</strong> — losses exceed intake; the body is breaking down more protein than it's replacing (inadequate protein intake, illness, severe calorie restriction)</li>
+        <li><strong>Equilibrium</strong> — intake matches losses; typical for a healthy, weight-stable adult eating adequate protein</li>
+      </ul>''') +
+    sec('''      <p>For athletes and people building muscle, staying in positive or neutral nitrogen balance by eating enough protein is a practical way to support muscle protein synthesis and avoid unwanted muscle breakdown, especially during a calorie deficit.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> Research labs measure nitrogen balance directly, but for practical purposes, hitting your daily protein target is the everyday equivalent.</p>''', bg="var(--color-protein-bg)", tight=True),
+    [("protein.html", "What protein actually does"), ("how-much-protein-per-day.html", "How much protein per day"), ("catabolism-vs-anabolism.html", "Catabolism vs. anabolism")]
+)
+
+add(
+    "catabolism-vs-anabolism",
+    "Catabolism vs. Anabolism: The Basics of Metabolism",
+    "The difference between catabolic and anabolic processes, and how they relate to muscle building, fat loss, and everyday metabolism.",
+    "general", "For Students", "Catabolism vs. anabolism: the basics of metabolism",
+    "Your metabolism runs on two opposing processes happening simultaneously, all day, every day.",
+    sec('''      <div class="two-col">
+        <div class="panel">
+          <h3>Catabolism</h3>
+          <p>Breaking larger molecules into smaller ones, releasing energy in the process. Digesting food, breaking down glycogen into glucose, and breaking down muscle protein into amino acids for fuel are all catabolic.</p>
+        </div>
+        <div class="panel">
+          <h3>Anabolism</h3>
+          <p>Building larger molecules from smaller ones, using energy in the process. Building muscle protein from amino acids and storing glucose as glycogen are both anabolic.</p>
+        </div>
+      </div>''') +
+    sec('''      <p>Both are happening constantly — the practical question for body composition is which one dominates over time. A calorie surplus with resistance training and adequate protein tends to favor net anabolism (muscle building); a calorie deficit tends to favor net catabolism (fat and, without enough protein and training stimulus, muscle breakdown). "Anabolic" and "catabolic" aren't good or bad on their own — they're just the two directions metabolism can run.</p>'''),
+    [("body-recomposition-explained.html", "Body recomposition explained"), ("nitrogen-balance-explained.html", "Nitrogen balance explained"), ("what-is-glycogen.html", "What is glycogen?")]
+)
+
+add(
+    "how-to-calculate-macros-by-hand",
+    "How to Calculate Your Macros by Hand (Step-by-Step)",
+    "A step-by-step walkthrough of the exact math behind a macro calculator — useful for nutrition students who need to show their work.",
+    "general", "For Students", "How to calculate your macros by hand",
+    "Same math our calculator runs automatically — worked out step by step, in case you need to show your work.",
+    sec('''      <h2>Step 1: Estimate BMR (Mifflin-St Jeor)</h2>
+      <div class="panel">
+        <p><strong>Men:</strong> BMR = 10 × weight(kg) + 6.25 × height(cm) − 5 × age + 5<br>
+        <strong>Women:</strong> BMR = 10 × weight(kg) + 6.25 × height(cm) − 5 × age − 161</p>
+      </div>
+      <h2>Step 2: Multiply by activity to get TDEE</h2>
+      <p>Multiply BMR by a Physical Activity Level factor: 1.2 (sedentary) up to 1.9 (very active).<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>
+      <h2>Step 3: Adjust for goal</h2>
+      <p>Multiply TDEE by ~0.8 for a fat-loss deficit, 1.0 to maintain, or ~1.1-1.15 for a muscle-building surplus.</p>''') +
+    sec('''      <h2>Step 4: Set protein (grams), then convert to calories</h2>
+      <p>Multiply body weight (kg) by a target g/kg (commonly 1.6-2.2 for active individuals), then multiply grams by 4 to get protein calories.</p>
+      <h2>Step 5: Set fat (% of total calories), then convert to grams</h2>
+      <p>Multiply total calories by a fat percentage (20-35%) to get fat calories, then divide by 9 to get grams.</p>
+      <h2>Step 6: Remainder goes to carbs</h2>
+      <p>Subtract protein and fat calories from total calories, then divide the remainder by 4 to get carb grams.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Skip the math — use the calculator →</a></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("tdee-vs-bmr.html", "BMR vs. TDEE"), ("calculators.html", "Full macro calculator"), ("how-much-protein-per-day.html", "How much protein per day")]
+)
+
+add(
+    "rda-vs-dri-vs-amdr",
+    "RDA vs. DRI vs. AMDR: What's the Difference?",
+    "A plain-language breakdown of the nutrition reference terms students mix up most often: RDA, DRI, and AMDR.",
+    "general", "For Students", "RDA vs. DRI vs. AMDR: what's the difference?",
+    "These three acronyms show up constantly in nutrition coursework and are easy to confuse — here's how they actually relate to each other.",
+    sec('''      <table class="data-table">
+        <tr><th>Term</th><th>What it is</th></tr>
+        <tr><td>DRI (Dietary Reference Intakes)</td><td>The umbrella term for the whole set of nutrient reference values published by the U.S. National Academies — RDA and AMDR are both types of DRI.</td></tr>
+        <tr><td>RDA (Recommended Dietary Allowance)</td><td>A specific daily intake target (usually for vitamins, minerals, and protein) sufficient to meet the needs of nearly all healthy people in a group.</td></tr>
+        <tr><td>AMDR (Acceptable Macronutrient Distribution Range)</td><td>A percentage-of-calories range (not a single number) for protein, fat, and carbohydrate associated with reduced chronic disease risk while meeting nutrient needs.</td></tr>
+      </table>
+      <p>In short: DRI is the category, RDA is a single-number target used mainly for micronutrients and protein, and AMDR is a range used specifically for the three macronutrients.<sup class="ref"><a href="sources.html#p3">[1]</a></sup></p>'''),
+    [("how-much-protein-per-day.html", "How much protein per day"), ("how-many-carbs-per-day.html", "How many carbs per day"), ("glossary.html", "Full glossary")]
+)
+
+add(
+    "nutrient-density-explained",
+    "Nutrient Density Explained: Getting More From Your Calories",
+    "What nutrient density means, why it matters even when your macros are on target, and how to eat more nutrient-dense meals.",
+    "general", "For Students", "Nutrient density explained",
+    "Two foods with identical calories and macros can deliver very different amounts of actual nutrition.",
+    sec('''      <p><strong>Nutrient density</strong> describes how much nutritional value (vitamins, minerals, fiber, protein quality) a food provides relative to its calorie content. A food can be "energy dense" (lots of calories) without being nutrient dense, or vice versa — steamed broccoli and a candy bar can have wildly different nutrient density despite both containing carbohydrate calories.</p>''') +
+    sec('''      <div class="panel">
+        <h3>Why it matters even if your macros are perfect</h3>
+        <p>Hitting a protein/fat/carb target doesn't guarantee adequate vitamin, mineral, or fiber intake — that's the core limitation of pure macro tracking discussed in our <a href="iifym-flexible-dieting.html">IIFYM article</a>. Prioritizing nutrient-dense foods (vegetables, fruit, lean proteins, whole grains, legumes) within your calorie and macro targets is how you get both numbers right and genuinely well-nourished.</p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients"), ("iifym-flexible-dieting.html", "IIFYM explained"), ("fiber-benefits.html", "Why fiber matters")]
+)
+
+add(
+    "muscle-fiber-types-and-nutrition",
+    "Muscle Fiber Types and Nutrition: Fast-Twitch vs. Slow-Twitch",
+    "How fast-twitch and slow-twitch muscle fibers differ in fuel use, and what that means for carbohydrate and protein needs by sport.",
+    "carbs", "For Students", "Muscle fiber types and nutrition",
+    "Not all muscle fibers burn fuel the same way — and that has real implications for how different athletes should eat.",
+    sec('''      <div class="two-col">
+        <div class="panel">
+          <h3>Slow-twitch (Type I)</h3>
+          <p>Fatigue-resistant fibers that rely heavily on oxygen and fat oxidation for fuel, well-suited to prolonged, lower-intensity effort like distance running.</p>
+        </div>
+        <div class="panel">
+          <h3>Fast-twitch (Type II)</h3>
+          <p>Fibers built for short, powerful efforts that rely heavily on stored glycogen and produce force quickly, but fatigue faster — used in sprinting and heavy lifting.</p>
+        </div>
+      </div>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>This split helps explain why endurance athletes (more reliant on sustained aerobic, fat- and glycogen-fueled effort) often need very high carbohydrate intakes to keep glycogen topped up,<sup class="ref"><a href="sources.html#c2">[1]</a></sup> while strength and power athletes (more reliant on fast-twitch, glycogen-dependent bursts) tend to prioritize protein for muscle repair alongside adequate — but not necessarily extreme — carbohydrate intake. See our full breakdown in <a href="macros-for-endurance-vs-strength-athletes.html">macros for endurance vs. strength athletes</a>.</p>'''),
+    [("macros-for-endurance-vs-strength-athletes.html", "Macros for endurance vs. strength athletes"), ("what-is-glycogen.html", "What is glycogen?"), ("carb-loading-for-athletes.html", "Carb loading for athletes")]
+)
+
+add(
+    "how-digestion-works",
+    "How Digestion Works: From Bite to Absorption",
+    "A step-by-step overview of how protein, fat, and carbohydrates are broken down and absorbed during digestion.",
+    "general", "For Students", "How digestion works: from bite to absorption",
+    "Every macronutrient takes a different path through digestion before it can actually be used by your body.",
+    sec('''      <table class="data-table">
+        <tr><th>Stage</th><th>What happens</th></tr>
+        <tr><td>Mouth</td><td>Chewing and salivary enzymes begin breaking down starches</td></tr>
+        <tr><td>Stomach</td><td>Acid and enzymes (like pepsin) begin breaking proteins into smaller peptides</td></tr>
+        <tr><td>Small intestine</td><td>The main site of digestion and absorption: pancreatic enzymes finish breaking down protein into amino acids, fat into fatty acids (with help from bile), and carbs into simple sugars — all absorbed into the bloodstream here</td></tr>
+        <tr><td>Large intestine</td><td>Water is absorbed, and fiber that wasn't digested is fermented by gut bacteria</td></tr>
+      </table>''') +
+    sec('''      <p>The speed of this process varies by macronutrient and food: simple sugars are absorbed fastest, protein and fiber-rich complex carbs take longer, and fat slows digestion of everything eaten alongside it — one reason meals with a mix of macronutrients tend to produce a more gradual, sustained energy release than any single macronutrient eaten alone.</p>'''),
+    [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("fiber-benefits.html", "Why fiber matters"), ("glycemic-index-explained.html", "What is the glycemic index?")]
+)
+
+add(
+    "protein-quality-scores-pdcaas-diaas",
+    "Protein Quality Scores: PDCAAS and DIAAS Explained",
+    "What PDCAAS and DIAAS scores measure, how they're calculated, and why they matter for comparing protein sources.",
+    "protein", "For Students", "Protein quality scores: PDCAAS and DIAAS explained",
+    "Not all protein sources are scored equally — these two methods are how nutrition science formally measures protein quality.",
+    sec('''      <p><strong>PDCAAS</strong> (Protein Digestibility-Corrected Amino Acid Score) and its successor <strong>DIAAS</strong> (Digestible Indispensable Amino Acid Score) are methods for scoring how well a protein source meets essential amino acid needs, adjusted for how digestible it actually is. Both compare a food's essential amino acid profile against a reference pattern of human requirements.</p>''') +
+    sec('''      <ul class="checklist">
+        <li><strong>Whey, egg, and milk protein</strong> score at or near the maximum on both scales — highly digestible, complete amino acid profiles</li>
+        <li><strong>Soy protein</strong> scores well, among the highest of common plant proteins</li>
+        <li><strong>Most other plant proteins</strong> (wheat, rice, beans individually) score lower, usually due to being relatively low in one or more essential amino acids — which is why <a href="plant-based-protein-sources.html">combining varied plant protein sources</a> across the day matters more on a plant-based diet</li>
+      </ul>
+      <p>DIAAS is generally considered the more accurate, updated method, but PDCAAS still appears widely in food labeling and older research.</p>''', bg="var(--color-protein-bg)", tight=True),
+    [("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein"), ("plant-based-protein-sources.html", "Plant-based protein sources"), ("protein-powder-101.html", "Protein powder 101")]
+)
+
+add(
+    "common-nutrition-myths-debunked",
+    "Common Nutrition Myths Debunked",
+    "A quick fact-check of persistent nutrition myths about carbs at night, eating frequency, detoxing, and more.",
+    "general", "For Students", "Common nutrition myths, debunked",
+    "A handful of nutrition claims keep resurfacing despite not holding up — here's what the evidence actually says.",
+    sec('''      <ul class="checklist">
+        <li><strong>"Carbs after 6pm turn to fat"</strong> — total daily intake matters far more than the clock; there's no special metabolic penalty for carbohydrates eaten in the evening for most people</li>
+        <li><strong>"Eating more meals speeds up your metabolism"</strong> — meal frequency has minimal independent effect on metabolic rate; see our <a href="meal-frequency-and-metabolism.html">full breakdown</a></li>
+        <li><strong>"You need to detox your body with juice cleanses"</strong> — the liver and kidneys already handle this continuously in a healthy person; no food or supplement "detoxes" you faster</li>
+        <li><strong>"Fat makes you fat"</strong> — dietary fat and body fat are not the same thing; excess calories from any macronutrient, not fat specifically, drive fat gain</li>
+        <li><strong>"Natural sugar and added sugar are metabolically different"</strong> — glucose and fructose are processed the same way regardless of source, though whole foods bring fiber and nutrients that pure added sugar doesn't</li>
+        <li><strong>"You must eat protein immediately post-workout or lose gains"</strong> — the real window is much wider than assumed; see <a href="protein-timing.html">does protein timing matter?</a></li>
+      </ul>''', bg="var(--color-fat-bg)", tight=True),
+    [("meal-frequency-and-metabolism.html", "Does meal frequency matter?"), ("protein-timing.html", "Does protein timing matter?"), ("sugar-vs-starch.html", "Sugar vs. starch")]
+)
+
+add(
+    "how-to-read-a-nutrition-study",
+    "How to Read a Nutrition Study: A Student's Guide",
+    "A practical guide for nutrition students on evaluating study design, sample size, and funding when reading nutrition research.",
+    "general", "For Students", "How to read a nutrition study",
+    "Nutrition headlines rarely tell you what the underlying study actually measured — here's what to check before trusting a claim.",
+    sec('''      <ul class="checklist">
+        <li><strong>Study design</strong> — a randomized controlled trial is stronger evidence than an observational study, which is stronger than a case report; headlines rarely specify which one you're reading about</li>
+        <li><strong>Sample size and duration</strong> — a 12-person, 2-week study can't tell you much about long-term outcomes in the general population</li>
+        <li><strong>Human vs. animal/cell studies</strong> — a striking result in mice doesn't automatically translate to humans</li>
+        <li><strong>Association vs. causation</strong> — observational studies can show two things are correlated without proving one causes the other</li>
+        <li><strong>Funding and conflicts of interest</strong> — industry-funded research isn't automatically wrong, but it's worth checking who paid for it</li>
+        <li><strong>Has it been replicated?</strong> — a single study is a data point, not a verdict; look for whether other research supports the same conclusion</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>This is exactly why every claim on this site links back to its original source on the <a href="sources.html">Sources page</a> — so you can evaluate the underlying research yourself rather than taking a summary on faith.</p>'''),
+    [("sources.html", "Sources & citations"), ("common-nutrition-myths-debunked.html", "Common nutrition myths debunked")]
+)
+
+add(
+    "units-and-conversions-cheat-sheet",
+    "Units and Conversions Cheat Sheet for Nutrition Students",
+    "A quick-reference conversion sheet for calories, kilojoules, grams, ounces, and macronutrient calorie values.",
+    "general", "For Students", "Units and conversions cheat sheet",
+    "The conversions that come up constantly in nutrition coursework and macro tracking, in one place.",
+    sec('''      <table class="data-table">
+        <tr><th>Conversion</th><th>Value</th></tr>
+        <tr><td>1 gram protein</td><td>4 calories</td></tr>
+        <tr><td>1 gram carbohydrate</td><td>4 calories</td></tr>
+        <tr><td>1 gram fat</td><td>9 calories</td></tr>
+        <tr><td>1 gram alcohol</td><td>~7 calories</td></tr>
+        <tr><td>1 kilocalorie (kcal / Calorie)</td><td>4.184 kilojoules (kJ)</td></tr>
+        <tr><td>1 kilogram</td><td>2.2046 pounds</td></tr>
+        <tr><td>1 pound</td><td>16 ounces / 0.4536 kg</td></tr>
+        <tr><td>1 ounce</td><td>~28.35 grams</td></tr>
+        <tr><td>1 inch</td><td>2.54 centimeters</td></tr>
+      </table>
+      <p>Bookmark this page — it comes in handy for homework, lab calculations, and double-checking food labels against research reported in different units.</p>'''),
+    [("how-to-calculate-macros-by-hand.html", "How to calculate macros by hand"), ("calculators.html", "Macro calculator"), ("glossary.html", "Full glossary")]
+)
+
+add(
+    "thermic-effect-of-food-explained",
+    "The Thermic Effect of Food Explained",
+    "What the thermic effect of food (TEF) is, why protein has the highest TEF of the three macronutrients, and how much it actually affects calorie burn.",
+    "protein", "For Students", "The thermic effect of food explained",
+    "Digesting food isn't free — it costs your body calories, and that cost depends on what you're eating.",
+    sec('''      <p>The <strong>Thermic Effect of Food (TEF)</strong>, also called diet-induced thermogenesis, is the energy your body spends digesting, absorbing, and metabolizing what you eat. It's a real (if modest) component of total daily energy expenditure, and it varies significantly by macronutrient:</p>
+      <table class="data-table">
+        <tr><th>Macronutrient</th><th>Approximate TEF</th></tr>
+        <tr><td>Protein</td><td>20-30% of its calories</td></tr>
+        <tr><td>Carbohydrate</td><td>5-10% of its calories</td></tr>
+        <tr><td>Fat</td><td>0-3% of its calories</td></tr>
+      </table>''') +
+    sec('''      <p>In practice, this means a higher-protein diet burns modestly more calories through digestion alone than an equal-calorie lower-protein diet — one small piece of why higher protein intakes are often recommended during a fat-loss phase, alongside protein's larger effects on satiety and muscle preservation.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup> TEF is a real effect, but it's a modest slice of total daily expenditure — not a substitute for an appropriate overall calorie target.</p>''', bg="var(--color-protein-bg)", tight=True),
+    [("tdee-vs-bmr.html", "BMR vs. TDEE"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("how-much-protein-per-day.html", "How much protein per day")]
+)
 
 
 def main():

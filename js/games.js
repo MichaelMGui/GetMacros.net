@@ -8,8 +8,8 @@ function initMemoryGame(rootId, pairs) {
 
   var deck = [];
   pairs.forEach(function (p, i) {
-    deck.push({ pairId: i, emoji: p.emoji, name: p.name, macro: p.macro });
-    deck.push({ pairId: i, emoji: p.emoji, name: p.name, macro: p.macro });
+    deck.push({ pairId: i, icon: p.icon, name: p.name, macro: p.macro });
+    deck.push({ pairId: i, icon: p.icon, name: p.name, macro: p.macro });
   });
 
   var moves = 0;
@@ -52,8 +52,8 @@ function initMemoryGame(rootId, pairs) {
     deck.forEach(function (card, i) {
       html +=
         '<div class="memory-card" data-i="' + i + '"><div class="flip-inner">' +
-        '<div class="face face-back">?</div>' +
-        '<div class="face face-front"><span class="emoji">' + card.emoji + "</span><span>" + card.name +
+        '<div class="face face-back"><svg class="icon" aria-hidden="true"><use href="#icon-quiz"/></svg></div>' +
+        '<div class="face face-front"><svg class="icon food-icon" aria-hidden="true"><use href="#' + card.icon + '"/></svg><span>' + card.name +
         '</span><span class="pill ' + card.macro + '" style="margin:0;">' + card.macro + "</span></div>" +
         "</div></div>";
     });
@@ -104,11 +104,11 @@ function initMemoryGame(rootId, pairs) {
   function showWin() {
     root.innerHTML =
       '<div class="quiz-result">' +
-      '<div class="score-badge" style="--pct:100"><span class="score-num">🎉</span><span class="score-den">Solved!</span></div>' +
+      '<div class="score-badge" style="--pct:100"><span class="score-num"><svg class="icon" style="width:2rem;height:2rem;color:var(--color-accent)" aria-hidden="true"><use href="#icon-trophy"/></svg></span><span class="score-den">Solved!</span></div>' +
       "<h2>Nice work</h2>" +
       '<p class="verdict">' + matches + " pairs matched in " + moves + " moves and " + seconds + " seconds.</p>" +
       '<div class="btn-row"><button type="button" class="btn btn-primary" id="mm-retry">Play again</button>' +
-      '<a href="play.html" class="btn btn-outline" style="border-color:var(--color-primary-dark);color:var(--color-primary-dark);">More games</a></div>' +
+      '<a href="quiz.html" class="btn btn-outline" style="border-color:var(--color-primary-dark);color:var(--color-primary-dark);">More games</a></div>' +
       "</div>";
     document.getElementById("mm-retry").addEventListener("click", reset);
     if (typeof launchConfetti === "function") launchConfetti();
@@ -182,7 +182,7 @@ function initPlateGame(rootId, foods, targets) {
       chip.type = "button";
       chip.className = "food-chip";
       chip.innerHTML =
-        '<span class="emoji">' + f.emoji + "</span>" + f.name +
+        '<svg class="icon food-icon" aria-hidden="true"><use href="#' + f.icon + '"/></svg>' + f.name +
         '<span class="count" id="pg-count-' + f.id + '"></span>';
       chip.addEventListener("click", function () {
         counts[f.id] = (counts[f.id] || 0) + 1;
@@ -254,7 +254,7 @@ function initPlateGame(rootId, foods, targets) {
       '<p class="verdict">Protein ' + Math.round(t.protein) + "g / " + target.protein + "g &middot; Fat " +
       Math.round(t.fat) + "g / " + target.fat + "g &middot; Carb " + Math.round(t.carb) + "g / " + target.carb + "g</p>" +
       '<div class="btn-row"><button type="button" class="btn btn-primary" id="pg-retry">New target</button>' +
-      '<a href="play.html" class="btn btn-outline" style="border-color:var(--color-primary-dark);color:var(--color-primary-dark);">More games</a></div>' +
+      '<a href="quiz.html" class="btn btn-outline" style="border-color:var(--color-primary-dark);color:var(--color-primary-dark);">More games</a></div>' +
       "</div>";
     document.getElementById("pg-retry").addEventListener("click", reset);
     if (accuracy >= 75 && typeof launchConfetti === "function") launchConfetti();

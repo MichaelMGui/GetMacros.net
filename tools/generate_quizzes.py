@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE  # noqa: E402
 
 QUIZZES = []
 
@@ -214,7 +214,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <script src="js/img-fallback.js"></script>
 </head>
 <body>
-{nav_html("play")}
+{ICON_SPRITE}
+{nav_html("quiz")}
 
 <main>
   <section class="{hero_class}" style="{HERO_STYLE[category]}">
@@ -240,7 +241,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <script>
   renderQuiz('quiz-root', {json.dumps(questions)}, {{
     title: {json.dumps(title.split(":")[0])},
-    {tiers_js}moreHref: 'play.html'
+    {tiers_js}moreHref: 'quiz.html'
   }});
 </script>
 </body>
@@ -251,7 +252,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 def main():
     for qz in QUIZZES:
         html = page(qz["slug"], qz["title"], qz["meta"], qz["category"], qz["eyebrow"],
-                    qz["h1"], qz["intro"], qz["questions"], "play.html", qz["tiers"])
+                    qz["h1"], qz["intro"], qz["questions"], "quiz.html", qz["tiers"])
         path = os.path.join(ROOT, f'{qz["slug"]}.html')
         with open(path, "w") as f:
             f.write(html)
