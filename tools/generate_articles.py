@@ -6,12 +6,41 @@ Regenerates every file listed in ARTICLES into the site root, using the
 same header/nav/footer markup and css/js as the hand-written pages.
 To add another article, add an entry to ARTICLES and re-run.
 """
+import json
 import os
+from html import escape as esc_html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 with open(os.path.join(ROOT, "icon-sprite.svg")) as _f:
     ICON_SPRITE = _f.read().strip()
+
+
+def seo_meta(title, description, url, og_type="article"):
+    t = esc_html(f"{title} | GetMacros.net")
+    d = esc_html(description)
+    return f'''<meta property="og:type" content="{og_type}">
+<meta property="og:site_name" content="GetMacros.net">
+<meta property="og:title" content="{t}">
+<meta property="og:description" content="{d}">
+<meta property="og:url" content="{url}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{t}">
+<meta name="twitter:description" content="{d}">'''
+
+
+def article_jsonld(title, description, url, kind="Article"):
+    data = {
+        "@context": "https://schema.org",
+        "@type": kind,
+        "headline": title,
+        "description": description,
+        "url": url,
+        "publisher": {"@type": "Organization", "name": "GetMacros.net", "url": "https://getmacros.net/"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
 
 def nav_html(current="articles"):
     def cur(name):
@@ -98,6 +127,7 @@ HERO_STYLE = {
     "protein": "background: linear-gradient(rgba(90,20,15,.72),rgba(90,20,15,.82))",
     "fat": "background: linear-gradient(rgba(110,75,10,.72),rgba(110,75,10,.82))",
     "carbs": "background: linear-gradient(rgba(10,60,35,.72),rgba(10,60,35,.82))",
+    "athletes": "background: linear-gradient(rgba(10,60,68,.78),rgba(15,90,100,.82))",
     "general": "background:var(--color-primary-dark); color:#fff;",
 }
 
@@ -117,6 +147,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
+{seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
+{article_jsonld(title, meta, f"https://getmacros.net/{slug}.html")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -950,9 +982,10 @@ CATEGORY_LABEL = {
     "protein": "Protein",
     "fat": "Fat",
     "carbs": "Carbohydrates",
+    "athletes": "Athletes &amp; Sports Nutrition",
     "general": "Calculators &amp; Planning",
 }
-CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "general": "carbs"}
+CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "athletes": "athletes", "general": "carbs"}
 
 
 def build_hub():
@@ -961,14 +994,14 @@ def build_hub():
         by_cat.setdefault(a["category"], []).append(a)
 
     sections = ""
-    order = ["protein", "fat", "carbs", "general"]
-    bg = {"protein": "var(--color-protein-bg)", "fat": "var(--color-fat-bg)", "carbs": "var(--color-carbs-bg)", "general": None}
+    order = ["protein", "fat", "carbs", "athletes", "general"]
+    bg = {"protein": "var(--color-protein-bg)", "fat": "var(--color-fat-bg)", "carbs": "var(--color-carbs-bg)", "athletes": "var(--color-pop2-bg)", "general": None}
     for cat in order:
         items = by_cat.get(cat, [])
         if not items:
             continue
         badge_class = CATEGORY_PILL[cat] if cat != "general" else "neutral"
-        badge_icon = {"protein": "icon-protein", "fat": "icon-fat", "carbs": "icon-carbs", "general": "icon-article"}[cat]
+        badge_icon = {"protein": "icon-protein", "fat": "icon-fat", "carbs": "icon-carbs", "athletes": "icon-medal", "general": "icon-article"}[cat]
         cards = "\n".join(
             f'        <a href="{a["slug"]}.html" class="card {CATEGORY_PILL[cat]}"><span class="icon-badge {badge_class}"><svg class="icon" aria-hidden="true"><use href="#{badge_icon}"/></svg></span><h3>{a["h1"]}</h3><p>{a["meta"]}</p></a>'
             for a in items
@@ -994,6 +1027,7 @@ def build_hub():
 <title>Articles | GetMacros.net</title>
 <meta name="description" content="Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, food lists, and calculator explainers.">
 <link rel="canonical" href="https://getmacros.net/articles.html">
+{seo_meta("All Articles", "Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, food lists, and calculator explainers.", "https://getmacros.net/articles.html", og_type="website")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -1280,6 +1314,132 @@ add(
       </table>''') +
     sec('''      <p>In practice, this means a higher-protein diet burns modestly more calories through digestion alone than an equal-calorie lower-protein diet — one small piece of why higher protein intakes are often recommended during a fat-loss phase, alongside protein's larger effects on satiety and muscle preservation.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup> TEF is a real effect, but it's a modest slice of total daily expenditure — not a substitute for an appropriate overall calorie target.</p>''', bg="var(--color-protein-bg)", tight=True),
     [("tdee-vs-bmr.html", "BMR vs. TDEE"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("how-much-protein-per-day.html", "How much protein per day")]
+)
+
+
+# ----------------------------------------------------------------- ATHLETES --
+
+add(
+    "world-cup-2026-team-nutrition",
+    "What World Cup 2026 Teams Are Actually Eating",
+    "Why Norway flew in over 1,000kg of salmon and cheese and Argentina brought 500kg of beef to the 2026 World Cup — the real sports-nutrition logic behind elite teams' food strategy.",
+    "athletes", "Athletes &amp; Sports", "What World Cup 2026 teams are actually eating",
+    "For elite national teams, food isn't an afterthought during a tournament — it's logistics, planned months ahead, with a chef and a shipping manifest.",
+    sec('''      <h2>Norway's 1,000kg of imported food</h2>
+      <p>Norway's men's national team transported more than 1,000 kilograms of food from Norway to their training base for the 2026 World Cup, including hundreds of kilos of Atlantic salmon and white fish, over 100kg of brunost (traditional Norwegian brown cheese), and roughly 6,000 oranges. Aaron Espeland, who has cooked for the national team for 35 years, traveled with a full culinary staff to prepare every meal.<sup class="ref"><a href="sources.html#ath1">[1]</a></sup></p>''') +
+    sec('''      <h2>Argentina's 500kg of beef and the post-win asado</h2>
+      <p>Argentina brought nearly 500kg of beef from home for the same tournament, prepared by longtime team chef Diego Iacovone. The squad's traditional asado (barbecue) is treated as part of team identity — reserved as a reward the coaching staff allows the players to step outside their strict routine and enjoy after important wins.<sup class="ref"><a href="sources.html#ath2">[2]</a></sup></p>''') +
+    sec('''      <h2>Why do this at all?</h2>
+      <p>It isn't about comfort food or homesickness. Both teams describe it as a performance decision: a World Cup is a high-stress, condensed schedule where a single case of food-related illness or gut discomfort can end a player's tournament. Sudden changes in diet can disrupt digestion, sleep, and concentration — all things that affect performance directly — so elite squads try to eliminate that variable entirely by controlling every ingredient down to where it was sourced.<sup class="ref"><a href="sources.html#ath2">[2]</a></sup> It's the same principle sports dietitians give any athlete: never try something new on game day.</p>''', bg="var(--color-pop2-bg)", tight=True),
+    [("famous-athlete-diets-fact-checked.html", "6 famous athlete diets, fact-checked"), ("macros-for-endurance-vs-strength-athletes.html", "Macros for endurance vs. strength athletes"), ("calculators.html", "Macro calculator")]
+)
+
+add(
+    "famous-athlete-diets-fact-checked",
+    "6 Famous Athlete Diets, Fact-Checked",
+    "What Messi, Ronaldo, Michael Phelps, Usain Bolt, Novak Djokovic, and Simone Biles actually eat — and which viral claims about their diets are true, exaggerated, or unproven.",
+    "athletes", "Athletes &amp; Sports", "6 famous athlete diets, fact-checked",
+    "Elite athletes' diets get turned into internet legend fast. Here's what's actually documented, sourced back to the original reporting.",
+    sec('''      <h2>Lionel Messi: cutting sugar and refined flour</h2>
+      <p>Since 2014, Messi has worked with Italian sports physician Giuliano Poser, who had him cut refined sugar, limit refined flour and certain dairy, and build meals around water, extra-virgin olive oil, whole grains, fish, vegetables, fruit, nuts, and seeds. Messi reportedly lost about 3.5kg and had fewer digestion-related issues after the change.<sup class="ref"><a href="sources.html#ath3">[3]</a></sup></p>
+      <h2>Cristiano Ronaldo: six small meals a day</h2>
+      <p>Ronaldo eats roughly six small meals every 2-4 hours built around lean protein (chicken, sea bass, swordfish, tuna), fruit, vegetables, whole grains, and consistent hydration, while avoiding refined sugar, dairy, and processed food. The stated goal is steady energy and blood sugar rather than large infrequent meals.<sup class="ref"><a href="sources.html#ath4">[4]</a></sup></p>''') +
+    sec('''      <h2>Michael Phelps: the 12,000-calorie diet that wasn't</h2>
+      <p>The famous claim that Phelps ate 12,000 calories a day is false — it came from a reporter's back-of-envelope math on a casually described meal plan. Phelps has said in his own autobiography the real number was closer to 8,000-10,000 calories on his heaviest training days, still enormous, but roughly 25% less than the myth.<sup class="ref"><a href="sources.html#ath5">[5]</a></sup></p>
+      <h2>Usain Bolt: 1,000 chicken nuggets in Beijing</h2>
+      <p>This one is true. At the 2008 Beijing Olympics, Bolt ate almost nothing but McDonald's chicken nuggets — about 100 a day for 10 days — after a local meal upset his stomach and he decided not to risk anything unfamiliar before his races. He still broke three world records that Games. By the time he returned to Beijing in 2015, food options had improved and he didn't need to repeat it.<sup class="ref"><a href="sources.html#ath6">[6]</a></sup></p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <h2>Novak Djokovic: gluten-free and plant-based</h2>
+      <p>Djokovic went gluten-free in 2010 after a Serbian nutritionist diagnosed a gluten sensitivity, and later moved to a fully plant-based diet built around vegetables, fruit, nuts, seeds, and legumes. He credits the change with his run of Grand Slam success, though the specific health claims (like curing his allergies) are self-reported and haven't been independently verified.<sup class="ref"><a href="sources.html#ath7">[7]</a></sup> See our <a href="do-elimination-diets-improve-performance.html">deep dive on elimination diets and performance</a> for what controlled research actually finds.</p>
+      <h2>Simone Biles: no strict tracking</h2>
+      <p>Biles deliberately avoids rigid meal tracking, calling it a risk factor for disordered eating given how much time she spends in the gym. She eats intuitively — oatmeal or eggs for breakfast, anything from pizza to salmon for lunch, fish with vegetables and rice for dinner, and a protein shake post-workout.<sup class="ref"><a href="sources.html#ath8">[8]</a></sup></p>''') +
+    sec('''      <p>The pattern across all six: what works is highly individual, and a diet succeeding alongside an elite athlete doesn't prove the diet caused the success — genetics, training volume, and years of development matter enormously too. Use these as examples of different valid approaches, not templates to copy exactly.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Find your own numbers instead →</a></p>''', tight=True),
+    [("world-cup-2026-team-nutrition.html", "What World Cup 2026 teams are actually eating"), ("do-elimination-diets-improve-performance.html", "Do elimination diets improve performance?"), ("protein-timing.html", "Does protein timing matter?")]
+)
+
+add(
+    "do-elimination-diets-improve-performance",
+    "Do Gluten-Free and Elimination Diets Actually Improve Athletic Performance?",
+    "What controlled research finds when non-celiac athletes go gluten-free or try other elimination diets for performance — and why some still swear by the results.",
+    "athletes", "Athletes &amp; Sports", "Do elimination diets actually improve performance?",
+    "High-profile athletes like Novak Djokovic have made gluten-free and elimination diets look like a performance secret. Controlled research tells a more boring story.",
+    sec('''      <h2>What the research actually shows</h2>
+      <p>In athletes without celiac disease or a diagnosed gluten sensitivity, controlled trials have found that a short-term gluten-free diet produces no measurable change in performance, gastrointestinal symptoms, or inflammatory markers compared to a normal mixed diet.<sup class="ref"><a href="sources.html#ath9">[9]</a></sup> That holds despite gluten-free eating being popular among endurance athletes specifically for perceived performance and gut-comfort benefits.</p>''') +
+    sec('''      <h2>So why do some athletes swear by it?</h2>
+      <p>A few likely explanations that don't require gluten itself being the problem: cutting gluten usually means cutting a lot of processed food, refined sugar, and low-fiber packaged carbs at the same time — the same changes that show up in a lot of "clean eating" diets that improve digestion and energy regardless of gluten. There's also a real placebo effect in sports performance, and undiagnosed non-celiac gastrointestinal sensitivity does exist in a minority of people, even without full celiac disease.</p>''', bg="var(--color-pop2-bg)", tight=True) +
+    sec('''      <h2>The actual risk</h2>
+      <p>Going gluten-free (or removing any other whole food group) without medical guidance can crowd out fiber, B vitamins, and iron that are otherwise easy to get from whole grains and fortified foods — see our <a href="fiber-benefits.html">fiber benefits guide</a> and <a href="micronutrients-vs-macronutrients.html">micronutrients vs. macronutrients</a> for what's actually at stake. If you suspect a real gluten or food sensitivity, that's worth testing for directly rather than guessing with a self-imposed elimination diet.</p>'''),
+    [("famous-athlete-diets-fact-checked.html", "6 famous athlete diets, fact-checked"), ("fiber-benefits.html", "Fiber benefits"), ("common-nutrition-myths-debunked.html", "Common nutrition myths debunked")]
+)
+
+# --------------------------------------------------------- GENERAL / ADVANCED --
+
+add(
+    "creatine-explained",
+    "Creatine Explained: What It Does and Who Actually Needs It",
+    "What creatine monohydrate actually does in the body, what the safety research says, and the simple, effective way to take it based on the ISSN position stand.",
+    "general", "For Students", "Creatine explained: what it does and who needs it",
+    "Creatine is one of the most researched supplements in sports nutrition, and also one of the most misunderstood.",
+    sec('''      <h2>What creatine actually does</h2>
+      <p>Creatine increases the amount of phosphocreatine stored in muscle, which your body uses to rapidly regenerate ATP — the direct energy source for short, high-intensity effort like sprinting or a heavy lift. More available phosphocreatine means slightly more capacity for that kind of effort, which over weeks of training translates into more total work done and more muscle and strength gained. The International Society of Sports Nutrition calls it the most effective legal ergogenic supplement currently available for increasing high-intensity exercise capacity and lean body mass.<sup class="ref"><a href="sources.html#ath11">[11]</a></sup></p>''') +
+    sec('''      <h2>Is it safe?</h2>
+      <p>Yes, for healthy people. Studies covering doses up to 30g/day for as long as 5 years report it as safe and well-tolerated, and it does not appear to harm kidney function in people with normal kidneys — the "creatine damages your kidneys" claim is a myth that keeps circulating despite the position-stand evidence. Some studies even found creatine use associated with less muscle cramping and fewer injuries during training, not more.<sup class="ref"><a href="sources.html#ath11">[11]</a></sup></p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <h2>How much to take</h2>
+      <table class="data-table">
+        <tr><th>Approach</th><th>Dose</th><th>Time to full saturation</th></tr>
+        <tr><td>Maintenance only</td><td>3-5g/day</td><td>~3-4 weeks</td></tr>
+        <tr><td>Loading phase (optional)</td><td>20g/day (split into 4 doses) for 5-7 days, then 3-5g/day</td><td>~1 week</td></tr>
+      </table>
+      <p>Timing relative to your workout doesn't meaningfully matter — see our piece on the <a href="post-workout-anabolic-window.html">post-workout anabolic window</a> for why timing windows in general are smaller than supplement marketing suggests. Consistency day to day is what actually saturates your muscle stores.</p>'''),
+    [("post-workout-anabolic-window.html", "The post-workout anabolic window"), ("protein-timing.html", "Does protein timing matter?"), ("how-much-protein-per-day.html", "How much protein do you need per day?")]
+)
+
+add(
+    "carb-cycling-explained",
+    "Carb Cycling Explained",
+    "What carb cycling actually is, how the high-day/low-day approach works, and what the (limited) research says about whether it beats a steady daily carb intake.",
+    "carbs", "For Students", "Carb cycling explained",
+    "Carb cycling has a devoted following in bodybuilding circles. The evidence for it is a lot thinner than the hype.",
+    sec('''      <h2>What carb cycling is</h2>
+      <p>Carb cycling means deliberately alternating your daily carbohydrate intake — typically higher carbs on hard training days, to fuel the session and refill muscle glycogen, and lower carbs on rest days, when your body needs less immediate fuel. The rest of your macros and total weekly calories usually stay roughly consistent; only the carb-to-fat ratio shifts day to day.<sup class="ref"><a href="sources.html#ath13">[13]</a></sup></p>''') +
+    sec('''      <h2>What the evidence actually shows</h2>
+      <p>Most of the research behind carb manipulation was done on endurance athletes managing glycogen for long events, not on bodybuilders or general lifters trying to lose fat and keep muscle. For that more common goal, the evidence for carb cycling specifically — beyond just hitting an appropriate weekly average — is thin, and there are very few controlled trials on it at all.<sup class="ref"><a href="sources.html#ath13">[13]</a></sup> Your body cares far more about your total calorie and macro intake over days and weeks than about which specific day each gram of carbohydrate landed on.</p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>If you like the structure of eating more around your hardest training days, there's nothing wrong with it — just don't expect it to outperform a steady, well-calculated daily target. <a href="calculators.html#carb-calculator" class="btn btn-primary">Calculate your daily carb target →</a></p>'''),
+    [("how-many-carbs-per-day.html", "How many carbs do you need per day?"), ("what-is-glycogen.html", "What is glycogen?"), ("iifym-flexible-dieting.html", "IIFYM / flexible dieting")]
+)
+
+add(
+    "post-workout-anabolic-window",
+    "The Post-Workout Anabolic Window: Myth or Real?",
+    "What the research actually says about the 30-minute post-workout anabolic window — and why total daily protein intake matters far more than exact timing.",
+    "general", "For Students", "The post-workout anabolic window: myth or real?",
+    "\"You have to get protein in within 30 minutes or you lose your gains\" is one of the most repeated claims in the gym. It's mostly wrong.",
+    sec('''      <h2>The 30-minute myth</h2>
+      <p>The classic \"anabolic window\" theory claimed there's a narrow 30-60 minute period after training where nutrient timing matters enormously for muscle growth. A meta-analysis of 23 randomized trials on the topic found that studies claiming a timing benefit had a hidden confound: the group told to eat protein right after training was also eating about 25% more total protein per day than the control group. Once total daily protein intake was statistically matched between groups, the timing effect on muscle growth and strength disappeared entirely.<sup class="ref"><a href="sources.html#ath10">[10]</a></sup></p>''') +
+    sec('''      <h2>What actually matters</h2>
+      <p>The anabolic effect of a normal mixed meal lasts several hours, not minutes — so if you ate a meal with protein 2-4 hours before training, your muscles are still actively using those amino acids well into your post-workout period, and there's no urgent countdown clock once you finish. What actually predicts results is your total protein intake across the whole day, spread reasonably across meals.<sup class="ref"><a href="sources.html#ath10">[10]</a></sup></p>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p>Eating protein soon after training is still a perfectly good habit — it's just not the make-or-break window it's often marketed as. See our page on <a href="protein-timing.html">protein timing</a> for the fuller picture, or hit your daily number directly.</p>
+      <p><a href="calculators.html#protein-calculator" class="btn btn-primary">Calculate my protein target →</a></p>''', tight=True),
+    [("protein-timing.html", "Does protein timing matter?"), ("creatine-explained.html", "Creatine explained"), ("muscle-fiber-types-and-nutrition.html", "Muscle fiber types and nutrition")]
+)
+
+add(
+    "sports-drinks-vs-water",
+    "Sports Drinks vs. Water: When You Actually Need Electrolytes",
+    "When plain water is enough during exercise and when a carbohydrate-electrolyte sports drink actually helps, based on ACSM hydration guidance.",
+    "carbs", "For Students", "Sports drinks vs. water: when you actually need electrolytes",
+    "Sports drink marketing implies you need electrolytes for any workout. For most people, most of the time, that's not true.",
+    sec('''      <h2>When water is enough</h2>
+      <p>For moderate exercise under about an hour, plain water is sufficient for the vast majority of people — you simply haven't sweated out enough sodium or burned through enough glycogen for a carbohydrate-electrolyte drink to meaningfully help, according to American College of Sports Medicine hydration guidance.<sup class="ref"><a href="sources.html#ath12">[12]</a></sup></p>''') +
+    sec('''      <h2>When you actually need electrolytes</h2>
+      <p>Past about 60-90 minutes of continuous exercise, ACSM guidance recommends 30-60g of carbohydrate per hour to maintain performance, delivered via a 6-8% carbohydrate-electrolyte drink taken in small amounts every 10-20 minutes. Sodium becomes especially important once exercise stretches past 2-3 hours or involves heavy sweating in heat, since sodium helps your body actually absorb and retain the fluid you're drinking rather than just passing through.<sup class="ref"><a href="sources.html#ath12">[12]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <table class="data-table">
+        <tr><th>Situation</th><th>What to drink</th></tr>
+        <tr><td>Under 60 minutes, moderate effort</td><td>Plain water</td></tr>
+        <tr><td>60-90+ minutes, or heavy sweat/heat</td><td>Carb-electrolyte sports drink, small sips every 10-20 min</td></tr>
+        <tr><td>2-3+ hours (endurance events)</td><td>Higher-sodium endurance drink</td></tr>
+      </table>'''),
+    [("how-many-carbs-per-day.html", "How many carbs do you need per day?"), ("carb-loading-for-athletes.html", "Carb loading for athletes"), ("water-weight-vs-fat-loss.html", "Water weight vs. fat loss")]
 )
 
 

@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld  # noqa: E402
 from generate_quizzes import QUIZZES  # noqa: E402
 
 MEMORY_PAIRS = [
@@ -89,6 +89,8 @@ def game_page(slug, title, icon, meta, intro, body_script):
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
+{seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
+{article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Game")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -150,8 +152,9 @@ def build_quiz_hub():
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Quiz Yourself | GetMacros.net</title>
-<meta name="description" content="Test what you know about protein, fat, and carbs with interactive quizzes, or learn hands-on with a nutrition game — Macro Memory Match and Build-a-Plate.">
+<meta name="description" content="Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game — Macro Memory Match, Build-a-Plate, and Macro Sprint.">
 <link rel="canonical" href="https://getmacros.net/quiz.html">
+{seo_meta("Quiz Yourself", "Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game.", "https://getmacros.net/quiz.html", og_type="website")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}

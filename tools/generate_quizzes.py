@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld  # noqa: E402
 
 QUIZZES = []
 
@@ -198,6 +198,47 @@ add(
     ],
 )
 
+add(
+    "athlete-diets-quiz", "Athlete Diets Quiz: Fact or Fiction?",
+    "An 8-question quiz on real athlete and World Cup team nutrition stories — Messi, Ronaldo, Phelps, Bolt, Djokovic, Biles, and more, fact-checked.",
+    "athletes", "Athletes Quiz", "Athlete diets: fact or fiction?",
+    "8 questions on real, sourced athlete and team nutrition stories — see how many myths you can spot.",
+    [
+        q("Roughly how much food did Norway's team fly in from home for the 2026 World Cup?",
+          ["About 10 kg", "About 100 kg", "Over 1,000 kg", "It was all sourced locally"], 2,
+          "Norway transported over 1,000kg of food, including salmon, white fish, brunost cheese, and about 6,000 oranges.",
+          "world-cup-2026-team-nutrition.html", "What World Cup 2026 teams are actually eating"),
+        q("What did Argentina bring roughly 500kg of to the 2026 World Cup?",
+          ["Beef", "Pasta", "Olive oil", "Mate tea"], 0,
+          "Argentina brought nearly 500kg of beef, prepared in part for the team's traditional post-win asado.",
+          "world-cup-2026-team-nutrition.html", "What World Cup 2026 teams are actually eating"),
+        q("Did Michael Phelps really eat 12,000 calories a day, as widely reported?",
+          ["Yes, confirmed by his coach", "No — it was closer to 8,000-10,000 on his heaviest days", "No, he ate a normal 2,500 calories", "The claim was about a different swimmer"], 1,
+          "The 12,000-calorie figure came from exaggerated reporter math; Phelps himself said the real number was 8,000-10,000 on intense days.",
+          "famous-athlete-diets-fact-checked.html", "6 famous athlete diets, fact-checked"),
+        q("What did Usain Bolt reportedly eat almost exclusively during the 2008 Beijing Olympics?",
+          ["Rice and fish", "Chicken nuggets", "Protein shakes only", "Local Chinese cuisine"], 1,
+          "Bolt ate roughly 100 McDonald's chicken nuggets a day for 10 days after a local meal upset his stomach — and still broke 3 world records.",
+          "famous-athlete-diets-fact-checked.html", "6 famous athlete diets, fact-checked"),
+        q("What kind of diet does Novak Djokovic follow?",
+          ["High-carb, dairy-heavy", "Gluten-free and plant-based", "Ketogenic", "Carnivore"], 1,
+          "Djokovic went gluten-free in 2010 and later moved to a fully plant-based diet.",
+          "famous-athlete-diets-fact-checked.html", "6 famous athlete diets, fact-checked"),
+        q("What does controlled research find when non-celiac athletes try a gluten-free diet?",
+          ["Large performance gains", "No measurable performance change", "Immediate weight gain", "Increased injury risk"], 1,
+          "Controlled trials find no measurable difference in performance or GI symptoms in non-celiac athletes on a gluten-free diet.",
+          "do-elimination-diets-improve-performance.html", "Do elimination diets improve performance?"),
+        q("According to research, what actually explains the old \"30-minute anabolic window\" studies?",
+          ["The window is real and exact", "Groups eating sooner also ate more total protein per day", "Muscle stops growing after 10 minutes", "It only applies to beginners"], 1,
+          "A meta-analysis found the timing groups simply ate ~25% more total daily protein — once matched, the timing effect disappeared.",
+          "post-workout-anabolic-window.html", "The post-workout anabolic window"),
+        q("Per ACSM guidance, when do carbohydrate-electrolyte sports drinks start to help more than plain water?",
+          ["Any workout, even 10 minutes", "Past about 60-90 minutes of exercise", "Only during weightlifting", "Never — water is always enough"], 1,
+          "Under about an hour, plain water is enough for most people; past 60-90 minutes, a carb-electrolyte drink helps maintain performance.",
+          "sports-drinks-vs-water.html", "Sports drinks vs. water"),
+    ],
+)
+
 
 def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, tiers=None):
     hero_class = "hero page-hero" if category != "general" else "page-hero"
@@ -212,6 +253,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
+{seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
+{article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Quiz")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
