@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT  # noqa: E402
 
 QUIZZES = []
 
@@ -207,13 +207,14 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
 </head>
 <body>
 {ICON_SPRITE}
@@ -235,6 +236,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
   </section>
 </main>
 
+{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js"></script>

@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT  # noqa: E402
 from generate_quizzes import QUIZZES  # noqa: E402
 
 MEMORY_PAIRS = [
@@ -56,13 +56,14 @@ def game_page(slug, title, icon, meta, intro, body_script):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
 </head>
 <body>
 {ICON_SPRITE}
@@ -84,6 +85,7 @@ def game_page(slug, title, icon, meta, intro, body_script):
   </section>
 </main>
 
+{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js"></script>
@@ -115,13 +117,14 @@ def build_quiz_hub():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Quiz Yourself | GetMacros.net</title>
 <meta name="description" content="Test what you know about protein, fat, and carbs with interactive quizzes, or learn hands-on with a nutrition game — Macro Memory Match and Build-a-Plate.">
 <link rel="canonical" href="https://getmacros.net/quiz.html">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
 </head>
 <body>
 {ICON_SPRITE}
@@ -157,6 +160,7 @@ def build_quiz_hub():
   </section>
 </main>
 
+{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js"></script>

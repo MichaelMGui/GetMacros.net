@@ -66,6 +66,34 @@ FOOTER = '''<footer class="site-footer">
   <div class="footer-bottom">© 2026 GetMacros.net</div>
 </footer>'''
 
+# --- Ads (Google AdSense) -------------------------------------------------
+# TODO: replace with your real AdSense values once your account is approved:
+#   1. ADSENSE_CLIENT -> your Publisher ID from adsense.google.com (ca-pub-...)
+#   2. The data-ad-slot value below -> an ad unit ID from your AdSense dashboard
+#      (the same responsive display unit can be reused on every page).
+# Until both are real, AdSense simply won't render anything in this slot --
+# nothing breaks, the site just shows no ad.
+ADSENSE_CLIENT = "ca-pub-XXXXXXXXXXXXXXXX"
+
+ADSENSE_LOADER = (
+    f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" '
+    'crossorigin="anonymous"></script>'
+)
+
+AD_SLOT = f'''  <section class="tight ad-slot">
+    <div class="container">
+      <p class="ad-label">Advertisement</p>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="{ADSENSE_CLIENT}"
+           data-ad-slot="0000000000"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+    </div>
+  </section>
+'''
+
 HERO_STYLE = {
     "protein": "background: linear-gradient(rgba(90,20,15,.72),rgba(90,20,15,.82))",
     "fat": "background: linear-gradient(rgba(110,75,10,.72),rgba(110,75,10,.82))",
@@ -84,13 +112,14 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
 </head>
 <body>
 {ICON_SPRITE}
@@ -114,6 +143,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
   </section>
 </main>
 
+{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js"></script>
@@ -955,13 +985,14 @@ def build_hub():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Articles | GetMacros.net</title>
 <meta name="description" content="Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, food lists, and calculator explainers.">
 <link rel="canonical" href="https://getmacros.net/articles.html">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
 </head>
 <body>
 {ICON_SPRITE}
@@ -979,6 +1010,7 @@ def build_hub():
 {sections}
 </main>
 
+{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js"></script>

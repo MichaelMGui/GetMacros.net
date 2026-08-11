@@ -4,7 +4,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ICON_SPRITE  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT  # noqa: E402
 
 TERMS = [
     ("Acceptable Macronutrient Distribution Range (AMDR)", "The range of intake for a macronutrient associated with reduced risk of chronic disease while providing adequate intake of essential nutrients — 10-35% of calories from protein, 20-35% from fat, 45-65% from carbohydrate.", "how-many-carbs-per-day.html"),
@@ -93,13 +93,14 @@ def build():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Nutrition Glossary: A-Z Terms for Students | GetMacros.net</title>
 <meta name="description" content="An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.">
 <link rel="canonical" href="https://getmacros.net/glossary.html">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
 </head>
 <body>
 {ICON_SPRITE}
@@ -125,6 +126,7 @@ def build():
 {sections}
 </main>
 
+{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js"></script>
