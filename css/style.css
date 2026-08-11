@@ -882,6 +882,25 @@ sup.ref a {
 
 #confetti-canvas { position: fixed; inset: 0; pointer-events: none; z-index: 999; }
 
+/* ---------- Game 3: Macro Sprint ---------- */
+
+.sprint-game { text-align: center; }
+.sprint-stats { display: flex; justify-content: center; align-items: center; gap: 1.6rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 1.4rem; font-size: .95rem; }
+.sprint-lives { display: inline-flex; gap: .25rem; }
+.sprint-lives .icon { width: 1.05rem; height: 1.05rem; color: var(--color-protein); }
+.sprint-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 2.6rem 1.5rem; max-width: 360px; margin: 0 auto 1.7rem; }
+.sprint-card .icon { width: 3.4rem; height: 3.4rem; color: var(--color-accent-dark); margin-bottom: .9rem; }
+.sprint-card p { font-size: 1.28rem; font-weight: 700; margin: 0; font-family: var(--font-heading); }
+.sprint-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; max-width: 560px; margin: 0 auto; }
+.sprint-btn { border: none; border-radius: var(--radius-sm); padding: 1.1rem .6rem; font-weight: 700; font-size: .95rem; cursor: pointer; color: #fff; box-shadow: 0 0 0 0 transparent; transition: transform .12s ease, box-shadow .18s ease; }
+.sprint-btn:hover { transform: translateY(-2px); }
+.sprint-btn.protein { background: var(--color-protein); }
+.sprint-btn.fat { background: var(--color-fat); }
+.sprint-btn.carbs { background: var(--color-carbs); }
+.sprint-btn.correct-flash { box-shadow: 0 0 0 4px rgba(23,138,90,0.45); }
+.sprint-btn.wrong-flash { box-shadow: 0 0 0 4px rgba(224,71,59,0.45); }
+@media (max-width: 480px) { .sprint-buttons { grid-template-columns: 1fr; } }
+
 /* ---------- Glossary ---------- */
 
 .glossary-jump { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1.5rem 0; }

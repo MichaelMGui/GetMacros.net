@@ -31,6 +31,7 @@ TERMS = [
     ("Hydrogenation", "An industrial process that adds hydrogen to liquid vegetable oil to make it more solid; partial hydrogenation is the main source of artificial trans fat.", "trans-fat-explained.html"),
     ("IIFYM", "\"If It Fits Your Macros\" — a flexible dieting approach where food choices are unrestricted as long as daily macro targets are met.", "iifym-flexible-dieting.html"),
     ("Insulin", "A hormone that lowers blood sugar by helping cells absorb glucose from the bloodstream.", "glycemic-index-explained.html"),
+    ("Joule", "The SI unit of energy; 1 dietary Calorie (kilocalorie) equals about 4,184 joules. Used alongside Calories on some nutrition labels outside the US.", "tdee-vs-bmr.html"),
     ("Ketosis", "A metabolic state where the body burns fat and produces ketones for fuel instead of relying primarily on glucose, typically triggered by very low carbohydrate intake.", "ketogenic-diet-explained.html"),
     ("Kwashiorkor", "A severe form of malnutrition caused by inadequate protein intake, causing swelling, a swollen liver, and impaired growth.", "protein-deficiency-symptoms.html"),
     ("Lipid", "The broader scientific term for fats and fat-like substances, including triglycerides and cholesterol.", "fats.html"),
@@ -59,7 +60,12 @@ TERMS = [
     ("Trans fat", "An unsaturated fat that has been chemically altered (usually via partial hydrogenation) to behave more like a saturated fat; linked to negative cardiovascular effects.", "trans-fat-explained.html"),
     ("Triglyceride", "The main form of fat stored in the body and found in food — three fatty acid chains attached to a glycerol backbone.", "fats.html"),
     ("Unsaturated fat", "A fat containing one or more double bonds in its structure, keeping it liquid at room temperature. Found in oils, nuts, and fish.", "saturated-vs-unsaturated-fat.html"),
+    ("Vegan diet", "An eating pattern that excludes all animal products, including meat, dairy, eggs, and honey; requires deliberate planning to combine plant proteins for a complete amino acid profile.", "vegan-macros-guide.html"),
+    ("Visceral fat", "Body fat stored deep around the abdominal organs, as opposed to just under the skin; elevated levels are linked to greater metabolic and cardiovascular risk.", "water-weight-vs-fat-loss.html"),
+    ("VLDL (Very-Low-Density Lipoprotein)", "A lipoprotein made by the liver that carries triglycerides through the bloodstream to tissues; elevated VLDL is associated with higher cardiovascular risk.", "cholesterol-explained.html"),
     ("Whey protein", "A fast-digesting, complete protein derived from milk during cheesemaking; a common protein supplement.", "protein-powder-101.html"),
+    ("Yo-yo dieting", "A repeating cycle of weight loss followed by weight regain, often from unsustainable calorie deficits; also called weight cycling.", "cutting-bulking-maintenance-explained.html"),
+    ("Zone diet", "A dieting approach that targets a fixed 40/30/30 percent split of calories from carbohydrate, protein, and fat at every meal.", "how-to-calculate-macros-by-hand.html"),
 ]
 
 

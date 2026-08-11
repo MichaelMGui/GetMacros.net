@@ -40,6 +40,31 @@ PLATE_TARGETS = [
     {"name": "Post-Workout Recovery", "desc": "~625 calories, carb-forward for glycogen refill.", "protein": 45, "fat": 15, "carb": 70},
 ]
 
+SPRINT_FOODS = [
+    {"name": "Chicken Breast", "icon": "icon-chicken", "macro": "protein"},
+    {"name": "Turkey Breast", "icon": "icon-chicken", "macro": "protein"},
+    {"name": "Egg Whites", "icon": "icon-egg", "macro": "protein"},
+    {"name": "Greek Yogurt", "icon": "icon-yogurt", "macro": "protein"},
+    {"name": "Cottage Cheese", "icon": "icon-yogurt", "macro": "protein"},
+    {"name": "Tuna (canned in water)", "icon": "icon-fish", "macro": "protein"},
+    {"name": "Whey Protein Powder", "icon": "icon-protein", "macro": "protein"},
+    {"name": "Tofu", "icon": "icon-legume", "macro": "protein"},
+    {"name": "Avocado", "icon": "icon-avocado", "macro": "fat"},
+    {"name": "Olive Oil", "icon": "icon-oil-bottle", "macro": "fat"},
+    {"name": "Almonds", "icon": "icon-nut", "macro": "fat"},
+    {"name": "Walnuts", "icon": "icon-nut", "macro": "fat"},
+    {"name": "Peanut Butter", "icon": "icon-nut", "macro": "fat"},
+    {"name": "Butter", "icon": "icon-fat", "macro": "fat"},
+    {"name": "Coconut Oil", "icon": "icon-fat", "macro": "fat"},
+    {"name": "Brown Rice", "icon": "icon-rice-bowl", "macro": "carbs"},
+    {"name": "Oats", "icon": "icon-grain", "macro": "carbs"},
+    {"name": "White Bread", "icon": "icon-grain", "macro": "carbs"},
+    {"name": "Banana", "icon": "icon-veggie", "macro": "carbs"},
+    {"name": "Sweet Potato", "icon": "icon-veggie", "macro": "carbs"},
+    {"name": "Quinoa", "icon": "icon-rice-bowl", "macro": "carbs"},
+    {"name": "Broccoli", "icon": "icon-veggie", "macro": "carbs"},
+]
+
 GAMES_META = [
     {"slug": "macro-memory-game", "title": "Macro Memory Match", "icon": "icon-game", "cardcls": "carbs",
      "meta": "A memory match game — flip cards to pair foods and learn which macronutrient each one is dominant in.",
@@ -47,6 +72,9 @@ GAMES_META = [
     {"slug": "build-a-plate-game", "title": "Build-a-Plate", "icon": "icon-target", "cardcls": "fat",
      "meta": "Build a plate of real foods to hit a randomly assigned protein, fat, and carb target as closely as possible.",
      "intro": "You'll get a randomly assigned macro target. Click foods to add servings, watch your totals fill in live, then submit for a grade."},
+    {"slug": "macro-sprint-game", "title": "Macro Sprint", "icon": "icon-flame", "cardcls": "protein",
+     "meta": "A fast-paced sorting game — see a food and click its dominant macronutrient before your lives run out.",
+     "intro": "You'll see one food at a time. Click Protein, Fat, or Carbs as fast as you can — three wrong answers and it's game over. Beat your high score."},
 ]
 
 
@@ -187,6 +215,13 @@ def main():
     with open(path, "w") as f:
         f.write(game_page("build-a-plate-game", GAMES_META[1]["title"], GAMES_META[1]["icon"],
                            GAMES_META[1]["meta"], GAMES_META[1]["intro"], plate_script))
+    print("wrote", path)
+
+    sprint_script = "initSprintGame('game-root', " + json.dumps(SPRINT_FOODS) + ");"
+    path = os.path.join(ROOT, "macro-sprint-game.html")
+    with open(path, "w") as f:
+        f.write(game_page("macro-sprint-game", GAMES_META[2]["title"], GAMES_META[2]["icon"],
+                           GAMES_META[2]["meta"], GAMES_META[2]["intro"], sprint_script))
     print("wrote", path)
 
     build_quiz_hub()

@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Quiz Yourself | GetMacros.net</title>
-<meta name="description" content="Test what you know about protein, fat, and carbs with interactive quizzes, or learn hands-on with a nutrition game — Macro Memory Match and Build-a-Plate.">
-<link rel="canonical" href="https://getmacros.net/quiz.html">
+<title>Macro Sprint | GetMacros.net</title>
+<meta name="description" content="A fast-paced sorting game — see a food and click its dominant macronutrient before your lives run out.">
+<link rel="canonical" href="https://getmacros.net/macro-sprint-game.html">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
@@ -244,50 +244,17 @@
 </header>
 
 <main>
-  <section class="hero page-hero" style="background: linear-gradient(160deg, rgba(224,71,59,.85), rgba(221,154,31,.75) 55%, rgba(23,138,90,.85))">
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
-      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"/></svg> Study tools</p>
-      <h1>Quiz yourself</h1>
-      <p>Built for students who need the material to actually stick. Every question and every game is sourced straight from the articles on this site — get it wrong, and we'll point you right to the explanation.</p>
+      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-flame"/></svg> Game</p>
+      <h1>Macro Sprint</h1>
+      <p>You'll see one food at a time. Click Protein, Fat, or Carbs as fast as you can — three wrong answers and it's game over. Beat your high score.</p>
     </div>
   </section>
 
   <section>
     <div class="container">
-      <h2><svg class="icon" aria-hidden="true" style="color:var(--color-protein)"><use href="#icon-quiz"/></svg> Quizzes</h2>
-      <p class="section-intro">Short, focused, and immediately followed by an explanation — right or wrong.</p>
-      <div class="card-grid">
-        <a href="protein-quiz.html" class="card protein">
-          <span class="icon-badge protein"><svg class="icon" aria-hidden="true"><use href="#icon-quiz"/></svg></span>
-          <h3>How much do you really know about protein?</h3><p>8 questions, straight from the articles on this site.</p></a>
-        <a href="fat-quiz.html" class="card fat">
-          <span class="icon-badge fat"><svg class="icon" aria-hidden="true"><use href="#icon-quiz"/></svg></span>
-          <h3>How much do you really know about dietary fat?</h3><p>8 questions, straight from the articles on this site.</p></a>
-        <a href="carbs-quiz.html" class="card carbs">
-          <span class="icon-badge carbs"><svg class="icon" aria-hidden="true"><use href="#icon-quiz"/></svg></span>
-          <h3>How much do you really know about carbohydrates?</h3><p>8 questions, straight from the articles on this site.</p></a>
-        <a href="macro-master-quiz.html" class="card carbs">
-          <span class="icon-badge carbs"><svg class="icon" aria-hidden="true"><use href="#icon-quiz"/></svg></span>
-          <h3>The Macro Master Quiz</h3><p>10 mixed, harder questions pulling from every corner of the site. Good luck.</p></a>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:var(--color-carbs-bg)">
-    <div class="container">
-      <h2><svg class="icon" aria-hidden="true" style="color:var(--color-carbs)"><use href="#icon-game"/></svg> Games</h2>
-      <p class="section-intro">Learn by doing, not just reading.</p>
-      <div class="card-grid">
-        <a href="macro-memory-game.html" class="card carbs">
-          <span class="icon-badge carbs"><svg class="icon" aria-hidden="true"><use href="#icon-game"/></svg></span>
-          <h3>Macro Memory Match</h3><p>Flip two cards at a time. Find all 6 matching pairs and learn each food's dominant macro along the way.</p></a>
-        <a href="build-a-plate-game.html" class="card fat">
-          <span class="icon-badge fat"><svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg></span>
-          <h3>Build-a-Plate</h3><p>You'll get a randomly assigned macro target. Click foods to add servings, watch your totals fill in live, then submit for a grade.</p></a>
-        <a href="macro-sprint-game.html" class="card protein">
-          <span class="icon-badge protein"><svg class="icon" aria-hidden="true"><use href="#icon-flame"/></svg></span>
-          <h3>Macro Sprint</h3><p>You'll see one food at a time. Click Protein, Fat, or Carbs as fast as you can — three wrong answers and it's game over. Beat your high score.</p></a>
-      </div>
+      <div id="game-root"></div>
     </div>
   </section>
 </main>
@@ -334,6 +301,10 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script src="js/reveal.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/games.js"></script>
+<script>
+initSprintGame('game-root', [{"name": "Chicken Breast", "icon": "icon-chicken", "macro": "protein"}, {"name": "Turkey Breast", "icon": "icon-chicken", "macro": "protein"}, {"name": "Egg Whites", "icon": "icon-egg", "macro": "protein"}, {"name": "Greek Yogurt", "icon": "icon-yogurt", "macro": "protein"}, {"name": "Cottage Cheese", "icon": "icon-yogurt", "macro": "protein"}, {"name": "Tuna (canned in water)", "icon": "icon-fish", "macro": "protein"}, {"name": "Whey Protein Powder", "icon": "icon-protein", "macro": "protein"}, {"name": "Tofu", "icon": "icon-legume", "macro": "protein"}, {"name": "Avocado", "icon": "icon-avocado", "macro": "fat"}, {"name": "Olive Oil", "icon": "icon-oil-bottle", "macro": "fat"}, {"name": "Almonds", "icon": "icon-nut", "macro": "fat"}, {"name": "Walnuts", "icon": "icon-nut", "macro": "fat"}, {"name": "Peanut Butter", "icon": "icon-nut", "macro": "fat"}, {"name": "Butter", "icon": "icon-fat", "macro": "fat"}, {"name": "Coconut Oil", "icon": "icon-fat", "macro": "fat"}, {"name": "Brown Rice", "icon": "icon-rice-bowl", "macro": "carbs"}, {"name": "Oats", "icon": "icon-grain", "macro": "carbs"}, {"name": "White Bread", "icon": "icon-grain", "macro": "carbs"}, {"name": "Banana", "icon": "icon-veggie", "macro": "carbs"}, {"name": "Sweet Potato", "icon": "icon-veggie", "macro": "carbs"}, {"name": "Quinoa", "icon": "icon-rice-bowl", "macro": "carbs"}, {"name": "Broccoli", "icon": "icon-veggie", "macro": "carbs"}]);
+</script>
 </body>
 </html>
