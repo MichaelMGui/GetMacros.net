@@ -965,8 +965,10 @@ def build_hub():
         items = by_cat.get(cat, [])
         if not items:
             continue
+        badge_class = CATEGORY_PILL[cat] if cat != "general" else "neutral"
+        badge_icon = {"protein": "icon-protein", "fat": "icon-fat", "carbs": "icon-carbs", "general": "icon-article"}[cat]
         cards = "\n".join(
-            f'        <a href="{a["slug"]}.html" class="card {CATEGORY_PILL[cat]}"><h3>{a["h1"]}</h3><p>{a["meta"]}</p></a>'
+            f'        <a href="{a["slug"]}.html" class="card {CATEGORY_PILL[cat]}"><span class="icon-badge {badge_class}"><svg class="icon" aria-hidden="true"><use href="#{badge_icon}"/></svg></span><h3>{a["h1"]}</h3><p>{a["meta"]}</p></a>'
             for a in items
         )
         style = f' style="background:{bg[cat]}"' if bg[cat] else ""
