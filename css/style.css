@@ -489,6 +489,25 @@ table.data-table tr:nth-child(even) td { background: #f7f2e8; }
 .food-gallery figcaption { padding: 0.7rem 0.85rem; }
 .food-gallery figcaption strong { display: block; color: var(--color-text); font-size: 0.92rem; }
 
+/* ---------- Illustrations (hand-drawn SVG in place of stock photos) ---------- */
+
+.illustration {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+.illustration .icon { width: 42%; height: 42%; }
+.illustration.tint-protein { background: linear-gradient(135deg, var(--color-protein-bg), #fff); color: var(--color-protein); }
+.illustration.tint-fat { background: linear-gradient(135deg, var(--color-fat-bg), #fff); color: var(--color-fat); }
+.illustration.tint-carbs { background: linear-gradient(135deg, var(--color-carbs-bg), #fff); color: var(--color-carbs); }
+.media .illustration { min-height: 280px; border-radius: var(--radius); box-shadow: var(--shadow-lg); aspect-ratio: auto; }
+.media .illustration .icon { width: 32%; height: 32%; }
+.plate-illustration { background: linear-gradient(135deg, #f7f2e8, #fff); }
+.plate-svg { width: 62%; height: 62%; filter: drop-shadow(0 10px 18px rgba(36,28,21,0.14)); }
+
 /* ---------- Calculator ---------- */
 
 .calc-wrap {
