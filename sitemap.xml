@@ -260,4 +260,44 @@
     <loc>https://getmacros.net/sports-drinks-vs-water.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://getmacros.net/glossary.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/quiz.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/protein-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/fat-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/carbs-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/macro-master-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/athlete-diets-quiz.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/macro-memory-game.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/build-a-plate-game.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/macro-sprint-game.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
