@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Macro &amp; Fat Calculators | GetMacros.net</title>
 <meta name="description" content="Calculate your daily calories, protein, fat, and carb targets based on your weight, activity level, and goal.">
 <link rel="canonical" href="https://getmacros.net/calculators.html">
@@ -232,21 +234,72 @@
     </div>
   </section>
 
-  <section id="fat-calculator" class="tight" style="background:var(--color-fat-bg)">
+  <section id="single-macro-calculators" style="background:var(--color-bg)">
     <div class="container">
-      <h2>Quick fat calculator</h2>
-      <p class="section-intro">Already know your daily calorie target? Get a recommended fat range (20–35% of calories) directly.</p>
-      <div class="calc-wrap">
-        <form class="calc-form" id="fat-form">
-          <div class="field">
-            <label for="calories">Daily calorie target</label>
-            <input type="number" id="calories" name="calories" min="800" max="8000" step="10" value="2200" required>
+      <h2><svg class="icon" aria-hidden="true" style="color:var(--color-accent)"><use href="#icon-target"/></svg> Single-macro calculators</h2>
+      <p class="section-intro">Already know your numbers, or just want one macro dialed in? Each of these uses the same reference ranges as the full calculator above — see the <a href="sources.html">Sources page</a> for citations.</p>
+
+      <div class="card-grid" style="align-items:start;">
+        <div class="panel">
+          <span class="icon-badge protein"><svg class="icon" aria-hidden="true"><use href="#icon-protein"/></svg></span>
+          <h3 id="protein-calculator">Protein calculator</h3>
+          <form id="protein-calc-form">
+            <div class="units-toggle">
+              <button type="button" class="active" data-pc-unit="lb">lb</button>
+              <button type="button" data-pc-unit="kg">kg</button>
+            </div>
+            <div class="field">
+              <label for="protein-weight">Body weight (<span id="protein-weight-unit">lb</span>)</label>
+              <input type="number" id="protein-weight" min="1" step="0.1" value="170" required>
+            </div>
+            <div class="field">
+              <label for="protein-goal">Goal</label>
+              <select id="protein-goal">
+                <option value="sedentary">General health (sedentary)</option>
+                <option value="active" selected>Recreationally active</option>
+                <option value="muscle">Building or preserving muscle</option>
+              </select>
+            </div>
+            <div id="protein-calc-error" class="error-msg" hidden></div>
+            <button type="submit" class="calc-submit">Calculate</button>
+          </form>
+          <div class="results empty" id="protein-calc-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
+            Enter your weight to see your protein target.
           </div>
-          <div id="fat-error" class="error-msg" hidden></div>
-          <button type="submit" class="calc-submit">Calculate my fat range</button>
-        </form>
-        <div class="results empty" id="fat-results">
-          Enter your daily calories to see your recommended fat intake.
+        </div>
+
+        <div class="panel">
+          <span class="icon-badge fat"><svg class="icon" aria-hidden="true"><use href="#icon-fat"/></svg></span>
+          <h3 id="fat-calculator">Fat calculator</h3>
+          <form id="fat-form">
+            <div class="field">
+              <label for="calories">Daily calorie target</label>
+              <input type="number" id="calories" name="calories" min="800" max="8000" step="10" value="2200" required>
+            </div>
+            <p class="hint">Don't know your calorie target? Use the full calculator above, or the <a href="tdee-vs-bmr.html">BMR vs. TDEE guide</a>.</p>
+            <div id="fat-error" class="error-msg" hidden></div>
+            <button type="submit" class="calc-submit">Calculate</button>
+          </form>
+          <div class="results empty" id="fat-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
+            Enter your daily calories to see your recommended fat intake.
+          </div>
+        </div>
+
+        <div class="panel">
+          <span class="icon-badge carbs"><svg class="icon" aria-hidden="true"><use href="#icon-carbs"/></svg></span>
+          <h3 id="carb-calculator">Carbohydrate calculator</h3>
+          <form id="carb-calc-form">
+            <div class="field">
+              <label for="carb-calories">Daily calorie target</label>
+              <input type="number" id="carb-calories" min="800" max="8000" step="10" value="2200" required>
+            </div>
+            <p class="hint">For a target based on what's left after protein and fat, use the full calculator above.</p>
+            <div id="carb-calc-error" class="error-msg" hidden></div>
+            <button type="submit" class="calc-submit">Calculate</button>
+          </form>
+          <div class="results empty" id="carb-calc-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
+            Enter your daily calories to see your recommended carb intake.
+          </div>
         </div>
       </div>
     </div>

@@ -236,4 +236,96 @@
         '<div class="macro-result-row"><span>Upper bound (35%)</span><span class="amounts"><span class="grams">' + fmt(high) + ' g</span><br><span class="cals">' + fmt(cals * 0.35) + ' cal</span></span></div>';
     });
   }
+
+  // ---------- Standalone protein calculator ----------
+  // Ranges match the reference table on how-much-protein-per-day.html:
+  // RDA baseline 0.8 g/kg, generally active 1.2-1.6 g/kg (ISSN),
+  // building/preserving muscle 1.6-2.2 g/kg.
+  var pcForm = document.getElementById("protein-calc-form");
+  if (pcForm) {
+    var pcUnit = "lb";
+    pcForm.querySelectorAll("[data-pc-unit]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        pcForm.querySelectorAll("[data-pc-unit]").forEach(function (b) {
+          b.classList.remove("active");
+        });
+        btn.classList.add("active");
+        pcUnit = btn.getAttribute("data-pc-unit");
+        document.getElementById("protein-weight-unit").textContent = pcUnit;
+      });
+    });
+
+    var PROTEIN_RANGES = {
+      sedentary: [0.8, 0.8],
+      active: [1.2, 1.6],
+      muscle: [1.6, 2.2],
+    };
+
+    pcForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var errorBox = document.getElementById("protein-calc-error");
+      errorBox.hidden = true;
+      var out = document.getElementById("protein-calc-results");
+
+      var weightRaw = parseFloat(document.getElementById("protein-weight").value);
+      var weightKg = toKg(weightRaw, pcUnit);
+      if (!weightKg || weightKg < 30 || weightKg > 300) {
+        errorBox.textContent = "Enter a weight between " + (pcUnit === "lb" ? "66 and 660 lb" : "30 and 300 kg") + ".";
+        errorBox.hidden = false;
+        return;
+      }
+
+      var goal = document.getElementById("protein-goal").value;
+      var r = PROTEIN_RANGES[goal];
+      var lowG = r[0] * weightKg;
+      var highG = r[1] * weightKg;
+
+      out.classList.remove("empty");
+      if (Math.abs(lowG - highG) < 0.5) {
+        out.innerHTML =
+          '<div class="result-total">' +
+          '<div class="num">' + fmt(lowG) + " g</div>" +
+          '<div class="label">protein / day &middot; ' + fmt(lowG * 4) + " cal</div>" +
+          "</div>";
+      } else {
+        out.innerHTML =
+          '<div class="result-total">' +
+          '<div class="num">' + fmt(lowG) + "&ndash;" + fmt(highG) + " g</div>" +
+          '<div class="label">protein / day &middot; ' + fmt(lowG * 4) + "&ndash;" + fmt(highG * 4) + " cal</div>" +
+          "</div>";
+      }
+    });
+  }
+
+  // ---------- Standalone carbohydrate calculator ----------
+  // AMDR for carbohydrate: 45-65% of total calories.
+  var ccForm = document.getElementById("carb-calc-form");
+  if (ccForm) {
+    ccForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var errorBox = document.getElementById("carb-calc-error");
+      errorBox.hidden = true;
+      var out = document.getElementById("carb-calc-results");
+
+      var cals = parseFloat(document.getElementById("carb-calories").value);
+      if (!cals || cals < 800 || cals > 8000) {
+        errorBox.textContent = "Enter a daily calorie target between 800 and 8,000.";
+        errorBox.hidden = false;
+        return;
+      }
+
+      var low = (cals * 0.45) / 4;
+      var mid = (cals * 0.55) / 4;
+      var high = (cals * 0.65) / 4;
+      out.classList.remove("empty");
+      out.innerHTML =
+        '<div class="result-total">' +
+        '<div class="num">' + fmt(low) + "&ndash;" + fmt(high) + " g</div>" +
+        '<div class="label">recommended carbs per day (45&ndash;65% of calories)</div>' +
+        "</div>" +
+        '<div class="macro-result-row"><span>Lower bound (45%)</span><span class="amounts"><span class="grams">' + fmt(low) + ' g</span><br><span class="cals">' + fmt(cals * 0.45) + ' cal</span></span></div>' +
+        '<div class="macro-result-row"><span>Typical (55%)</span><span class="amounts"><span class="grams">' + fmt(mid) + ' g</span><br><span class="cals">' + fmt(cals * 0.55) + ' cal</span></span></div>' +
+        '<div class="macro-result-row"><span>Upper bound (65%)</span><span class="amounts"><span class="grams">' + fmt(high) + ' g</span><br><span class="cals">' + fmt(cals * 0.65) + ' cal</span></span></div>';
+    });
+  }
 })();

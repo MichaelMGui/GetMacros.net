@@ -78,10 +78,14 @@ def build():
             f'''        <div class="glossary-term"><dt>{term}</dt><dd>{definition} <a href="{link}">Read more →</a></dd></div>'''
             for term, definition, link in by_letter[l]
         )
-        sections += f'''      <h2 class="glossary-letter" id="letter-{l}">{l}</h2>
+        sections += f'''  <section class="tight">
+    <div class="container">
+      <h2 class="glossary-letter" id="letter-{l}">{l}</h2>
       <dl>
 {items}
       </dl>
+    </div>
+  </section>
 '''
 
     html = f'''<!doctype html>
@@ -89,6 +93,8 @@ def build():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Nutrition Glossary: A-Z Terms for Students | GetMacros.net</title>
 <meta name="description" content="An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.">
 <link rel="canonical" href="https://getmacros.net/glossary.html">
@@ -116,11 +122,7 @@ def build():
     </div>
   </section>
 
-  <section>
-    <div class="container">
 {sections}
-    </div>
-  </section>
 </main>
 
 {FOOTER}
