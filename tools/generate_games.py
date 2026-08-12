@@ -65,6 +65,31 @@ SPRINT_FOODS = [
     {"name": "Broccoli", "icon": "icon-veggie", "macro": "carbs"},
 ]
 
+DIET_FOODS = [
+    {"name": "Broccoli", "icon": "icon-veggie", "diet": "vegan"},
+    {"name": "Lentils", "icon": "icon-legume", "diet": "vegan"},
+    {"name": "Tofu", "icon": "icon-legume", "diet": "vegan"},
+    {"name": "Almonds", "icon": "icon-nut", "diet": "vegan"},
+    {"name": "Brown Rice", "icon": "icon-rice-bowl", "diet": "vegan"},
+    {"name": "Avocado", "icon": "icon-avocado", "diet": "vegan"},
+    {"name": "Chickpeas", "icon": "icon-legume", "diet": "vegan"},
+    {"name": "Oats", "icon": "icon-grain", "diet": "vegan"},
+    {"name": "Apple", "icon": "icon-veggie", "diet": "vegan"},
+    {"name": "Peanut Butter", "icon": "icon-nut", "diet": "vegan"},
+    {"name": "Eggs", "icon": "icon-egg", "diet": "vegetarian"},
+    {"name": "Greek Yogurt", "icon": "icon-yogurt", "diet": "vegetarian"},
+    {"name": "Cheese", "icon": "icon-yogurt", "diet": "vegetarian"},
+    {"name": "Honey", "icon": "icon-oil-bottle", "diet": "vegetarian"},
+    {"name": "Milk", "icon": "icon-yogurt", "diet": "vegetarian"},
+    {"name": "Butter", "icon": "icon-fat", "diet": "vegetarian"},
+    {"name": "Chicken Breast", "icon": "icon-chicken", "diet": "neither"},
+    {"name": "Salmon", "icon": "icon-fish", "diet": "neither"},
+    {"name": "Bacon", "icon": "icon-chicken", "diet": "neither"},
+    {"name": "Shrimp", "icon": "icon-fish", "diet": "neither"},
+    {"name": "Beef", "icon": "icon-chicken", "diet": "neither"},
+    {"name": "Turkey", "icon": "icon-chicken", "diet": "neither"},
+]
+
 GAMES_META = [
     {"slug": "macro-memory-game", "title": "Macro Memory Match", "icon": "icon-game", "cardcls": "carbs",
      "meta": "A memory match game — flip cards to pair foods and learn which macronutrient each one is dominant in.",
@@ -75,6 +100,9 @@ GAMES_META = [
     {"slug": "macro-sprint-game", "title": "Macro Sprint", "icon": "icon-flame", "cardcls": "protein",
      "meta": "A fast-paced sorting game — see a food and click its dominant macronutrient before your lives run out.",
      "intro": "You'll see one food at a time. Click Protein, Fat, or Carbs as fast as you can — three wrong answers and it's game over. Beat your high score."},
+    {"slug": "diet-sorter-game", "title": "Diet Sorter", "icon": "icon-leaf", "cardcls": "diets",
+     "meta": "A fast-paced sorting game — see a food and click whether it's Vegan, Vegetarian, or Neither before your lives run out.",
+     "intro": "You'll see one food at a time. Click Vegan, Vegetarian, or Neither as fast as you can — three wrong answers and it's game over. Beat your high score."},
 ]
 
 
@@ -86,6 +114,8 @@ def game_page(slug, title, icon, meta, intro, body_script):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
@@ -152,6 +182,8 @@ def build_quiz_hub():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>Quiz Yourself | GetMacros.net</title>
 <meta name="description" content="Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game — Macro Memory Match, Build-a-Plate, and Macro Sprint.">
 <link rel="canonical" href="https://getmacros.net/quiz.html">
@@ -230,6 +262,13 @@ def main():
     with open(path, "w") as f:
         f.write(game_page("macro-sprint-game", GAMES_META[2]["title"], GAMES_META[2]["icon"],
                            GAMES_META[2]["meta"], GAMES_META[2]["intro"], sprint_script))
+    print("wrote", path)
+
+    diet_script = "initDietSortGame('game-root', " + json.dumps(DIET_FOODS) + ");"
+    path = os.path.join(ROOT, "diet-sorter-game.html")
+    with open(path, "w") as f:
+        f.write(game_page("diet-sorter-game", GAMES_META[3]["title"], GAMES_META[3]["icon"],
+                           GAMES_META[3]["meta"], GAMES_META[3]["intro"], diet_script))
     print("wrote", path)
 
     build_quiz_hub()

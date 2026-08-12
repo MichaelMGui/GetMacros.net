@@ -55,6 +55,22 @@ def breadcrumb_jsonld(title, url, hub_name="Articles", hub_url="https://getmacro
     return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
 
 
+def faq_jsonld(qa_pairs):
+    data = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {"@type": "Answer", "text": a},
+            }
+            for q, a in qa_pairs
+        ],
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
 def nav_html(current="articles"):
     def cur(name):
         return ' aria-current="page"' if name == current else ""
@@ -141,11 +157,12 @@ HERO_STYLE = {
     "fat": "background: linear-gradient(rgba(110,75,10,.72),rgba(110,75,10,.82))",
     "carbs": "background: linear-gradient(rgba(10,60,35,.72),rgba(10,60,35,.82))",
     "athletes": "background: linear-gradient(rgba(10,60,68,.78),rgba(15,90,100,.82))",
+    "diets": "background: linear-gradient(rgba(60,35,90,.8),rgba(80,50,110,.82))",
     "general": "background:var(--color-primary-dark); color:#fff;",
 }
 
 
-def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
+def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_head=""):
     hero_class = "hero page-hero" if category != "general" else "page-hero"
     related_links = " &middot; ".join(
         f'<a href="{href}">{label}</a>' for href, label in related
@@ -157,12 +174,15 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html")}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html")}
+{extra_head}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -211,9 +231,9 @@ def sec(inner, bg=None, tight=False):
 ARTICLES = []
 
 
-def add(slug, title, meta, category, eyebrow, h1, intro, body, related):
+def add(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_head=""):
     ARTICLES.append(dict(slug=slug, title=title, meta=meta, category=category,
-                          eyebrow=eyebrow, h1=h1, intro=intro, body=body, related=related))
+                          eyebrow=eyebrow, h1=h1, intro=intro, body=body, related=related, extra_head=extra_head))
 
 
 # ---------------------------------------------------------------- PROTEIN --
@@ -997,9 +1017,10 @@ CATEGORY_LABEL = {
     "fat": "Fat",
     "carbs": "Carbohydrates",
     "athletes": "Athletes &amp; Sports Nutrition",
+    "diets": "Diets",
     "general": "Calculators &amp; Planning",
 }
-CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "athletes": "athletes", "general": "carbs"}
+CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "athletes": "athletes", "diets": "diets", "general": "carbs"}
 
 
 def build_hub():
@@ -1008,14 +1029,14 @@ def build_hub():
         by_cat.setdefault(a["category"], []).append(a)
 
     sections = ""
-    order = ["protein", "fat", "carbs", "athletes", "general"]
-    bg = {"protein": "var(--color-protein-bg)", "fat": "var(--color-fat-bg)", "carbs": "var(--color-carbs-bg)", "athletes": "var(--color-pop2-bg)", "general": None}
+    order = ["protein", "fat", "carbs", "diets", "athletes", "general"]
+    bg = {"protein": "var(--color-protein-bg)", "fat": "var(--color-fat-bg)", "carbs": "var(--color-carbs-bg)", "athletes": "var(--color-pop2-bg)", "diets": "var(--color-pop3-bg)", "general": None}
     for cat in order:
         items = by_cat.get(cat, [])
         if not items:
             continue
         badge_class = CATEGORY_PILL[cat] if cat != "general" else "neutral"
-        badge_icon = {"protein": "icon-protein", "fat": "icon-fat", "carbs": "icon-carbs", "athletes": "icon-medal", "general": "icon-article"}[cat]
+        badge_icon = {"protein": "icon-protein", "fat": "icon-fat", "carbs": "icon-carbs", "athletes": "icon-medal", "diets": "icon-leaf", "general": "icon-article"}[cat]
         cards = "\n".join(
             f'        <a href="{a["slug"]}.html" class="card {CATEGORY_PILL[cat]}"><span class="icon-badge {badge_class}"><svg class="icon" aria-hidden="true"><use href="#{badge_icon}"/></svg></span><h3>{a["h1"]}</h3><p>{a["meta"]}</p></a>'
             for a in items
@@ -1038,6 +1059,8 @@ def build_hub():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>Articles | GetMacros.net</title>
 <meta name="description" content="Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, food lists, and calculator explainers.">
 <link rel="canonical" href="https://getmacros.net/articles.html">
@@ -1089,6 +1112,8 @@ def build_404():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
 <meta name="robots" content="noindex, follow">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
@@ -1670,10 +1695,207 @@ add(
 )
 
 
+# ------------------------------------------------------------------ DIETS --
+
+_DIETS_FAQ = [
+    ("What is an animal-based diet?", "An animal-based diet emphasizes meat, organs, fish, eggs, and dairy, with limited plant foods — typically fruit, honey, and some low-toxin vegetables. It's more flexible than carnivore but far more restrictive than a standard omnivorous diet."),
+    ("What is a plant-based diet?", "Plant-based means the majority of calories come from plant foods, but unlike vegan, it doesn't necessarily exclude all animal products entirely — it's a spectrum, not a strict rule."),
+    ("What is a vegan diet?", "A vegan diet excludes all animal products, including meat, dairy, eggs, and honey, relying entirely on plant foods for every nutrient, including protein."),
+    ("What is the paleo diet?", "The paleo diet is based on foods presumed available to Paleolithic humans — meat, fish, fruit, vegetables, nuts, and seeds — while excluding grains, legumes, dairy, and refined sugar."),
+    ("What is the carnivore diet?", "The carnivore diet consists exclusively of animal products — meat, fish, eggs, and sometimes dairy — excluding all plant foods, including fruits and vegetables."),
+    ("What is a vegetarian diet?", "A vegetarian diet excludes meat, poultry, and fish, but typically still includes eggs and dairy, making it easier to hit protein targets than a fully vegan diet."),
+    ("What is a pescatarian diet?", "A pescatarian diet excludes meat and poultry but includes fish and seafood, along with eggs, dairy, and plant foods — often described as vegetarian plus fish."),
+]
+
+add(
+    "diets-explained",
+    "Diets Explained: Animal-Based, Plant-Based, Vegan, Paleo, Carnivore, Vegetarian & Pescatarian",
+    "A clear, sourced overview of the major dietary patterns — animal-based, plant-based, vegan, paleo, carnivore, vegetarian, and pescatarian — what each one actually restricts, and what the evidence says.",
+    "diets", "Diets", "Diets",
+    "Every diet you've heard of is really just a different rule about which foods are in or out. Here's what each one actually means, side by side.",
+    sec('''      <h2>Animal-based</h2>
+      <p>An animal-based diet centers on meat, organs, fish, eggs, and dairy, while still allowing a limited amount of plant food — typically fruit, honey, and squash, chosen for being relatively low in the plant compounds ("antinutrients") some animal-based proponents try to avoid. It's meaningfully more flexible than carnivore, since it doesn't ban fruit outright, but far more restrictive than a standard diet. It's a newer, less clinically studied eating pattern than the others on this list, so treat specific health claims about it with more caution.</p>
+      <h2>Plant-based</h2>
+      <p>"Plant-based" describes a spectrum rather than one strict rule: the majority of calories come from plants, but it doesn't necessarily mean zero animal products the way vegan does. Someone eating plant-based might still have eggs or fish occasionally — the emphasis is on proportion, not a hard exclusion list.</p>
+      <h2>Vegan</h2>
+      <p>Vegan excludes all animal products — meat, dairy, eggs, and honey — with 100% of nutrients, including all essential amino acids, coming from plant sources.<sup class="ref"><a href="sources.html#p1">[1]</a></sup> Because no single common plant food supplies complete protein the way meat, eggs, or dairy do, vegan diets require more deliberate food combining. See our full <a href="vegan-macros-guide.html">vegan macros guide</a>.</p>''') +
+    sec('''      <h2>Paleo</h2>
+      <p>The paleo diet is built around foods presumed available to Paleolithic humans — lean meat, fish, fruit, vegetables, nuts, and seeds — while excluding grains, legumes, dairy, refined sugar, and processed food. It's typically high protein (19-35% of calories), moderate fat (28-58%), and relatively low carb (22-40%).<sup class="ref"><a href="sources.html#gen3">[2]</a></sup></p>
+      <h2>Carnivore</h2>
+      <p>Carnivore is the strictest pattern here: animal products only — meat, fish, eggs, sometimes dairy — with zero plant foods, including fruits and vegetables. Cutting out entire food groups removes fiber and several plant-derived compounds linked to lower chronic disease risk, and clinicians caution that long-term nutrient deficiencies (vitamin C, magnesium, calcium) are a real risk without careful planning.<sup class="ref"><a href="sources.html#gen4">[3]</a></sup> See our full <a href="do-elimination-diets-improve-performance.html">breakdown of elimination diets and performance</a> for the broader evidence on restrictive eating patterns.</p>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <h2>Vegetarian</h2>
+      <p>Vegetarian excludes meat, poultry, and fish but usually keeps eggs and dairy, which makes hitting protein targets considerably more straightforward than fully vegan, since eggs and dairy are already complete proteins. See our full <a href="macros-for-vegetarians.html">vegetarian macros guide</a>.</p>
+      <h2>Pescatarian</h2>
+      <p>Pescatarian excludes meat and poultry but includes fish and seafood alongside eggs, dairy, and plant foods — essentially vegetarian plus fish. Research associates regular seafood intake with meaningfully lower cardiovascular risk, largely via omega-3 fatty acids.<sup class="ref"><a href="sources.html#gen5">[4]</a></sup></p>''') +
+    sec('''      <h2>Which one is "best"?</h2>
+      <p>None of these is universally optimal — each is a different set of food-group restrictions, and the research consistently points to total calories, protein adequacy, and diet quality (whole foods vs. processed) mattering more for most health outcomes than which specific pattern you follow. The right one is the one that hits your protein target, fits your life, and you can sustain.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Calculate your macros on any diet →</a></p>'''),
+    [("vegan-macros-guide.html", "Vegan macros guide"), ("macros-for-vegetarians.html", "Macros for vegetarians"), ("plant-based-protein-sources.html", "Plant-based protein sources")],
+    extra_head=faq_jsonld(_DIETS_FAQ),
+)
+
+add(
+    "paleo-diet-explained",
+    "The Paleo Diet Explained: Food List, Macros & What the Evidence Says",
+    "What the paleo diet includes and excludes, its typical macronutrient split, and what the research actually says about its health claims.",
+    "diets", "Diets", "The paleo diet explained",
+    "Paleo is built on a simple pitch: eat like humans did before agriculture. The actual food list and evidence are more nuanced than that pitch suggests.",
+    sec('''      <h2>What's in and what's out</h2>
+      <p>Paleo includes lean meat (especially grass-fed or wild game), fish, fruit, vegetables, nuts, and seeds — foods that could plausibly be hunted or gathered. It excludes grains, legumes, dairy, refined sugar, and most processed food. Macronutrient-wise, it typically runs high protein (19-35% of calories), moderate fat (28-58%), and relatively low carbohydrate (22-40%) compared to a standard diet.<sup class="ref"><a href="sources.html#gen3">[1]</a></sup></p>''') +
+    sec('''      <h2>What the evidence actually shows</h2>
+      <p>Paleo tends to produce weight loss and improved blood markers in short-term studies, largely because it cuts refined sugar and ultra-processed food — changes that would help on almost any eating pattern, not something unique to "eating like a caveman." Excluding whole grains and legumes also cuts out significant, well-established sources of fiber and micronutrients, so a poorly planned paleo diet can fall short there.<sup class="ref"><a href="sources.html#c5">[2]</a></sup></p>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Calculate your macros on paleo →</a></p>'''),
+    [("diets-explained.html", "Diets explained: every major pattern"), ("carnivore-diet-explained.html", "The carnivore diet explained"), ("net-carbs-vs-total-carbs.html", "Net carbs vs. total carbs")]
+)
+
+add(
+    "carnivore-diet-explained",
+    "The Carnivore Diet Explained: What It Is and the Real Risks",
+    "What the carnivore diet actually restricts, why some people report short-term benefits, and the nutrient-deficiency risks clinicians flag with long-term use.",
+    "diets", "Diets", "The carnivore diet explained",
+    "Carnivore is the strictest common elimination diet — animal products only, nothing else. That simplicity is also its biggest risk.",
+    sec('''      <h2>What it is</h2>
+      <p>Carnivore means animal products exclusively — meat, fish, eggs, and sometimes dairy — with zero plant foods of any kind, including fruits, vegetables, grains, and legumes. Some short-term reports describe improved energy or digestive symptoms, plausibly from cutting processed food and added sugar entirely, similar to other elimination diets.</p>''') +
+    sec('''      <h2>The real risks</h2>
+      <p>Removing every plant food removes fiber, carotenoids, and polyphenols entirely — compounds linked to lower risk of chronic disease. Clinicians report deficiencies in vitamin C, magnesium, calcium, and thiamin among long-term carnivore dieters, and caution the diet should be avoided by anyone with high blood pressure, high cholesterol, or cardiovascular disease.<sup class="ref"><a href="sources.html#gen4">[1]</a></sup> Short-term experimentation is one thing; long-term adherence without medical supervision carries real, documented risk.</p>''', bg="var(--color-pop3-bg)", tight=True),
+    [("diets-explained.html", "Diets explained: every major pattern"), ("do-elimination-diets-improve-performance.html", "Do elimination diets improve performance?"), ("animal-based-diet-explained.html", "The animal-based diet explained")]
+)
+
+add(
+    "animal-based-diet-explained",
+    "The Animal-Based Diet Explained: How It Differs From Carnivore",
+    "What an animal-based diet actually allows compared to strict carnivore, and why the distinction matters if you're considering either.",
+    "diets", "Diets", "The animal-based diet explained",
+    "Animal-based and carnivore get used interchangeably online. They're not the same diet.",
+    sec('''      <h2>How it differs from carnivore</h2>
+      <p>An animal-based diet centers on meat, organs, fish, eggs, and dairy — but unlike strict carnivore, it allows a limited amount of plant food, typically fruit, honey, and squash, chosen for being relatively low in plant compounds some proponents try to minimize. It's low-carb but not necessarily ketogenic, since fruit and honey add meaningful carbohydrate on top of the animal-product base.</p>''') +
+    sec('''      <h2>Where the evidence stands</h2>
+      <p>This is a newer, less clinically studied pattern than paleo, vegan, or vegetarian, and much of its popularity traces to individual influencers and anecdotal reports rather than controlled research. The same general caution that applies to carnivore applies here in a milder form: cutting most plant foods reduces fiber and phytonutrient intake, so if you try it, doing so with some awareness of what you're giving up is worth it.<sup class="ref"><a href="sources.html#gen4">[1]</a></sup></p>''', bg="var(--color-pop3-bg)", tight=True),
+    [("diets-explained.html", "Diets explained: every major pattern"), ("carnivore-diet-explained.html", "The carnivore diet explained"), ("paleo-diet-explained.html", "The paleo diet explained")]
+)
+
+add(
+    "pescatarian-diet-explained",
+    "The Pescatarian Diet Explained: Benefits and How to Hit Your Macros",
+    "What a pescatarian diet includes, the cardiovascular research behind it, and how to structure protein, fat, and carbs on it.",
+    "diets", "Diets", "The pescatarian diet explained",
+    "Pescatarian is often described as \"vegetarian plus fish\" — and that one addition changes the nutrition picture meaningfully.",
+    sec('''      <h2>What it includes</h2>
+      <p>Pescatarian excludes meat and poultry but keeps fish and seafood, alongside eggs, dairy, vegetables, fruit, grains, legumes, nuts, and seeds. That combination makes it one of the easier restrictive diets to hit both protein and omega-3 targets on, since fatty fish delivers complete protein and EPA/DHA in one food.<sup class="ref"><a href="sources.html#gen5">[1]</a></sup></p>''') +
+    sec('''      <h2>The cardiovascular research</h2>
+      <p>Regular seafood intake is linked to meaningfully lower cardiovascular risk — one widely cited analysis found roughly a 36% lower risk of death from heart disease associated with eating about 8 ounces of seafood per week, largely attributed to omega-3 fatty acids.<sup class="ref"><a href="sources.html#gen5">[1]</a></sup> Avoiding red and processed meat specifically (rather than all animal products) is also associated with lower rates of certain cancers and type 2 diabetes.</p>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Calculate your macros on pescatarian →</a></p>'''),
+    [("diets-explained.html", "Diets explained: every major pattern"), ("omega-3-foods-list.html", "15 foods high in omega-3"), ("macros-for-vegetarians.html", "Macros for vegetarians")]
+)
+
+add(
+    "plant-based-vs-vegan-diet",
+    "Plant-Based vs. Vegan: What's Actually the Difference?",
+    "Plant-based and vegan get used as synonyms constantly. They're not the same thing — here's the real distinction and why it matters for tracking macros.",
+    "diets", "Diets", "Plant-based vs. vegan: what's actually the difference?",
+    "\"Plant-based\" and \"vegan\" show up interchangeably in headlines, but they describe different rules — one is a strict exclusion list, the other is a loose emphasis.",
+    sec('''      <h2>The actual difference</h2>
+      <p>Vegan is a hard rule: zero animal products, full stop — no meat, dairy, eggs, or honey, in any amount, for any reason.<sup class="ref"><a href="sources.html#p1">[1]</a></sup> Plant-based is a spectrum: the majority of the diet is plant foods, but it doesn't necessarily mean zero animal products — someone eating "plant-based" might still have occasional eggs, fish, or dairy. Every vegan diet is plant-based; not every plant-based diet is vegan.</p>''') +
+    sec('''      <h2>Why the distinction matters for macros</h2>
+      <p>If you're tracking macros, this distinction changes your protein strategy considerably. A plant-based diet that still includes eggs or dairy has easy access to complete protein; a strict vegan diet needs deliberate combining of plant proteins (legumes, grains, soy) across the day to cover all 9 essential amino acids reliably.<sup class="ref"><a href="sources.html#p1">[1]</a></sup> Know which one you're actually doing before you plan your protein sources.</p>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html#protein-calculator" class="btn btn-primary">Calculate your protein target →</a></p>'''),
+    [("vegan-macros-guide.html", "Vegan macros guide"), ("diets-explained.html", "Diets explained: every major pattern"), ("plant-based-protein-sources.html", "Plant-based protein sources")]
+)
+
+# ------------------------------------------------------------- MORE PAGES --
+
+add(
+    "cheat-days-do-they-help-or-hurt",
+    "Cheat Days: Do They Actually Help or Hurt Your Progress?",
+    "What a cheat day does to your metabolism and progress, whether it helps adherence, and how it compares to more moderate approaches like flexible dieting.",
+    "general", "For Students", "Cheat days: do they actually help or hurt?",
+    "One high-calorie day a week isn't going to undo your progress — but it's also not the metabolism-boosting hack it's sometimes marketed as.",
+    sec('''      <h2>What a cheat day actually does</h2>
+      <p>A single high-calorie day causes a small, temporary bump in metabolic rate and can refill glycogen stores (with some accompanying water weight), but it does not meaningfully "reset" a slowed metabolism the way it's sometimes marketed — metabolic adaptation to dieting is a gradual process that one day doesn't reverse.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup> The main practical effect of a cheat day is psychological: for some people, having a planned release valve improves adherence to the rest of the week.</p>''') +
+    sec('''      <h2>Cheat day vs. flexible dieting</h2>
+      <p>The risk with a dedicated "cheat day" is that it can turn into a large enough calorie surplus to offset several days of a deficit, especially if it isn't planned with any structure. A more moderate alternative many people find easier to sustain is flexible dieting (IIFYM) — working treats into your regular daily targets in moderate amounts, rather than saving everything for one unrestricted day.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("iifym-flexible-dieting.html", "IIFYM explained"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("cutting-bulking-maintenance-explained.html", "Cutting, bulking, and maintenance"),]
+)
+
+add(
+    "sugar-addiction-is-it-real",
+    "Is Sugar Addiction Real? What the Research Actually Shows",
+    "Whether sugar is addictive in the same sense as drugs, what brain-reward research actually finds, and why cravings feel so strong anyway.",
+    "carbs", "For Students", "Is sugar addiction real?",
+    "\"Sugar is as addictive as cocaine\" is one of the most repeated claims in diet culture. The actual research is a lot more measured.",
+    sec('''      <h2>What the research actually shows</h2>
+      <p>Sugar does activate the brain's dopamine reward pathway, the same general system involved in drug addiction — but most of the striking findings behind the "sugar is addictive" claim come from animal studies using intermittent access to large amounts of sugar, a very different setup from normal human eating.<sup class="ref"><a href="sources.html#c3">[1]</a></sup> In humans, sugar doesn't reliably produce the tolerance, withdrawal, and compulsive use pattern that defines addiction in the clinical sense — most researchers describe strong sugar cravings as closer to a learned, highly palatable-food-driven habit than a true substance addiction.</p>''') +
+    sec('''      <h2>Why cravings still feel so strong</h2>
+      <p>Highly processed foods that combine sugar, fat, and salt are engineered to be intensely palatable, and irregular eating patterns (skipping meals, chronic dieting) amplify cravings by leaving you under-fueled. Neither of those requires an "addiction" framework to explain — consistent meals with adequate protein and fiber, and not treating any food as fully off-limits, reliably reduces the intensity of cravings for most people.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("common-nutrition-myths-debunked.html", "Common nutrition myths debunked"), ("sugar-vs-starch.html", "Sugar vs. starch"), ("iifym-flexible-dieting.html", "IIFYM explained")]
+)
+
+add(
+    "best-time-to-eat-carbs",
+    "Is There a Best Time to Eat Carbs?",
+    "Whether eating carbs at a specific time of day (morning, evening, around workouts) actually matters for fat loss or performance.",
+    "carbs", "For Students", "Is there a best time to eat carbs?",
+    "\"Don't eat carbs after 6pm\" is one of the most persistent diet rules with almost nothing behind it.",
+    sec('''      <h2>What actually matters: total intake, not timing</h2>
+      <p>For fat loss and general health, total daily carbohydrate and calorie intake predicts outcomes far more reliably than what time of day you eat them. Studies comparing carb-heavy-morning vs. carb-heavy-evening eating patterns with matched total calories generally find no meaningful difference in weight or fat loss.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''') +
+    sec('''      <h2>Where timing has a real, smaller effect</h2>
+      <p>The one place timing has a genuine, evidence-backed role is around exercise: eating carbs before and after a hard training session supports performance and glycogen replenishment more directly than eating the same carbs at a random time of day.<sup class="ref"><a href="sources.html#c2">[2]</a></sup> That's a performance optimization, though — not a fat-loss requirement.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("carb-loading-for-athletes.html", "Carb loading for athletes"), ("post-workout-anabolic-window.html", "The post-workout anabolic window"), ("meal-frequency-and-metabolism.html", "Meal frequency and metabolism")]
+)
+
+add(
+    "are-protein-bars-actually-healthy",
+    "Are Protein Bars Actually Healthy?",
+    "What's really in most protein bars, how to read the label past the marketing, and when a protein bar is a genuinely good choice.",
+    "protein", "For Students", "Are protein bars actually healthy?",
+    "A protein bar can be a solid convenience food or barely-better-than-candy — the front-of-package marketing won't tell you which.",
+    sec('''      <h2>What to actually check on the label</h2>
+      <p>Skip the front-of-package claims and look at three numbers: protein per calorie (aim for a bar where protein makes up a meaningful share of total calories, not just a few grams padded with sugar and fat), added sugar (many bars carry 15-20g, more than a candy bar), and fiber/sugar alcohols (which can cause digestive discomfort in large amounts).<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''') +
+    sec('''      <h2>When a protein bar is genuinely a good choice</h2>
+      <p>A protein bar is a legitimately good option when whole food isn't practical — traveling, between meetings, post-workout when you need something quickly. It's a worse choice as a routine meal replacement, since whole foods generally deliver more fiber, micronutrients, and satiety per calorie than a processed bar.</p>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p><a href="high-protein-foods-list.html" class="btn btn-primary">See whole-food high-protein options →</a></p>'''),
+    [("high-protein-foods-list.html", "High-protein foods list"), ("protein-powder-101.html", "Protein powder 101"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label")]
+)
+
+add(
+    "bulking-without-gaining-fat",
+    "How to Bulk Without Gaining Excess Fat",
+    "How to run a calorie surplus for muscle gain while minimizing fat gain — surplus size, protein intake, and how to know when to stop.",
+    "general", "For Students", "How to bulk without gaining excess fat",
+    "Building muscle requires a calorie surplus — but a bigger surplus doesn't build muscle faster, it just adds more fat along the way.",
+    sec('''      <h2>Keep the surplus small</h2>
+      <p>Muscle growth has a biological ceiling on how fast it can happen (a large surplus can't force it faster), so a modest surplus of roughly 10-20% above maintenance calories is generally recommended over an aggressive one — it supports muscle growth while minimizing the fat gained alongside it.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup> A larger surplus mostly just means more of the weight gained ends up being fat rather than muscle.</p>''') +
+    sec('''      <h2>Protein and monitoring matter more than the exact number</h2>
+      <p>Keeping protein in the 1.6-2.2 g/kg range supports muscle gain specifically (rather than just generic weight gain), and tracking your rate of weight gain — aiming for roughly 0.25-0.5% of body weight per week — lets you adjust the surplus up or down before it drifts into excess fat gain.<sup class="ref"><a href="sources.html#p2">[2]</a></sup></p>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Calculate your bulking calories and macros →</a></p>'''),
+    [("macros-for-muscle-gain.html", "Macros for muscle gain"), ("cutting-bulking-maintenance-explained.html", "Cutting, bulking, and maintenance"), ("body-recomposition-explained.html", "Body recomposition explained")]
+)
+
+add(
+    "portion-sizes-without-a-scale",
+    "How to Estimate Portion Sizes Without a Food Scale",
+    "Practical hand-based and household-object portion estimation methods for when you can't or don't want to weigh your food.",
+    "general", "For Students", "How to estimate portion sizes without a food scale",
+    "A food scale is the most accurate way to track macros — but it's not the only way, and it's not required to eat consistently.",
+    sec('''      <h2>Hand-based estimates</h2>
+      <table class="data-table">
+        <tr><th>Food type</th><th>Rough portion</th></tr>
+        <tr><td>Protein (meat, fish, tofu)</td><td>Palm-sized, palm-thick</td></tr>
+        <tr><td>Carbs (rice, pasta, potato)</td><td>Cupped hand</td></tr>
+        <tr><td>Fat (oils, nut butter, cheese)</td><td>Thumb-sized</td></tr>
+        <tr><td>Vegetables</td><td>Fist-sized or more</td></tr>
+      </table>
+      <p>Hand-based portions scale naturally with body size (bigger hands tend to belong to people with higher calorie needs), which is part of why they work reasonably well as a rough guide without a scale.</p>''') +
+    sec('''      <h2>How accurate this actually is</h2>
+      <p>Hand and household-object estimates are noticeably less precise than a food scale — expect meaningful day-to-day variance rather than gram-level accuracy. That's a fair trade-off for many people: it's far more sustainable long-term than weighing every meal, and "roughly consistent" beats "perfectly accurate for two weeks, then abandoned."<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("how-to-calculate-macros-by-hand.html", "How to calculate macros by hand"), ("iifym-flexible-dieting.html", "IIFYM explained"), ("units-and-conversions-cheat-sheet.html", "Units and conversions cheat sheet")]
+)
+
+
 def main():
     for a in ARTICLES:
         html = page(a["slug"], a["title"], a["meta"], a["category"],
-                    a["eyebrow"], a["h1"], a["intro"], a["body"], a["related"])
+                    a["eyebrow"], a["h1"], a["intro"], a["body"], a["related"], extra_head=a["extra_head"])
         path = os.path.join(ROOT, f'{a["slug"]}.html')
         with open(path, "w") as f:
             f.write(html)

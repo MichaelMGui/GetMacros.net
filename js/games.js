@@ -384,3 +384,120 @@ function initSprintGame(rootId, foods) {
 
   reset();
 }
+
+// ---------------------------------------------------------------------
+// Game 4: Diet Sorter — a food appears one at a time; click whether it
+// fits Vegan, Vegetarian (not vegan), or Neither.
+// ---------------------------------------------------------------------
+function initDietSortGame(rootId, foods) {
+  var root = document.getElementById(rootId);
+  if (!root) return;
+
+  var CATEGORIES = [
+    { key: "vegan", label: "Vegan" },
+    { key: "vegetarian", label: "Vegetarian" },
+    { key: "neither", label: "Neither" },
+  ];
+  var BEST_KEY = "dietSorterBest";
+
+  var deck = [];
+  var pos = 0;
+  var score = 0;
+  var lives = 3;
+  var best = parseInt(localStorage.getItem(BEST_KEY) || "0", 10);
+  var locked = false;
+
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = arr[i];
+      arr[i] = arr[j];
+      arr[j] = t;
+    }
+    return arr;
+  }
+
+  function nextFood() {
+    if (pos >= deck.length) {
+      deck = shuffle(foods.slice());
+      pos = 0;
+    }
+    return deck[pos++];
+  }
+
+  function livesMarkup() {
+    var out = "";
+    for (var i = 0; i < 3; i++) {
+      out +=
+        '<svg class="icon" aria-hidden="true" style="opacity:' + (i < lives ? "1" : ".22") + '"><use href="#icon-heart"/></svg>';
+    }
+    return out;
+  }
+
+  function render(food) {
+    root.innerHTML =
+      '<div class="sprint-game">' +
+      '<div class="sprint-stats"><span>Score: ' + score + "</span><span>Best: " + best +
+      '</span><span class="sprint-lives">' + livesMarkup() + "</span></div>" +
+      '<div class="sprint-card"><svg class="icon" aria-hidden="true"><use href="#' + food.icon + '"/></svg><p>' +
+      food.name + "</p></div>" +
+      '<div class="sprint-buttons">' +
+      CATEGORIES.map(function (c) {
+        return '<button type="button" class="sprint-btn diet-' + c.key + '" data-cat="' + c.key + '">' + c.label + "</button>";
+      }).join("") +
+      "</div></div>";
+
+    Array.prototype.forEach.call(root.querySelectorAll(".sprint-btn"), function (btn) {
+      btn.addEventListener("click", function () {
+        if (locked) return;
+        locked = true;
+        var correct = btn.getAttribute("data-cat") === food.diet;
+        if (correct) {
+          score++;
+          btn.classList.add("correct-flash");
+        } else {
+          lives--;
+          btn.classList.add("wrong-flash");
+        }
+        setTimeout(function () {
+          locked = false;
+          if (lives <= 0) {
+            endGame();
+          } else {
+            render(nextFood());
+          }
+        }, 320);
+      });
+    });
+  }
+
+  function endGame() {
+    var isNewBest = score > best;
+    if (isNewBest) {
+      best = score;
+      localStorage.setItem(BEST_KEY, String(best));
+    }
+    root.innerHTML =
+      '<div class="quiz-result">' +
+      '<div class="score-badge" style="--pct:100"><span class="score-num">' + score +
+      '</span><span class="score-den">score</span></div>' +
+      "<h2>" + (isNewBest ? "New high score!" : "Game over") + "</h2>" +
+      '<p class="verdict">Best: ' + best + "</p>" +
+      '<div class="btn-row"><button type="button" class="btn btn-primary" id="diet-retry">Play again</button>' +
+      '<a href="quiz.html" class="btn btn-outline" style="border-color:var(--color-primary-dark);color:var(--color-primary-dark);">More games</a></div>' +
+      "</div>";
+    document.getElementById("diet-retry").addEventListener("click", reset);
+    if (isNewBest && typeof launchConfetti === "function") launchConfetti();
+  }
+
+  function reset() {
+    score = 0;
+    lives = 3;
+    deck = [];
+    pos = 0;
+    locked = false;
+    render(nextFood());
+  }
+
+  reset();
+}

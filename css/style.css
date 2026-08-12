@@ -79,6 +79,7 @@
   --color-pop2: #17b8c4;
   --color-pop2-bg: #e2f7f9;
   --color-pop3: #9b5de5;
+  --color-pop3-bg: #f1e9fb;
 
   --radius: 14px;
   --radius-sm: 9px;
@@ -139,6 +140,7 @@ a:hover { color: var(--color-primary); }
 .icon-badge.fat { background: var(--color-fat-bg); color: var(--color-fat); }
 .icon-badge.carbs { background: var(--color-carbs-bg); color: var(--color-carbs); }
 .icon-badge.athletes { background: var(--color-pop2-bg); color: var(--color-pop2); }
+.icon-badge.diets { background: var(--color-pop3-bg); color: var(--color-pop3); }
 .icon-badge.neutral { background: rgba(255,255,255,0.95); color: var(--color-primary-dark); }
 .icon-badge.lg { width: 62px; height: 62px; border-radius: 16px; font-size: 2rem; }
 
@@ -375,6 +377,7 @@ h3 { font-weight: 600; font-size: 1.28rem; }
 .card.fat:hover { box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-fat) inset; }
 .card.carbs:hover { box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-carbs) inset; }
 .card.athletes:hover { box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-pop2) inset; }
+.card.diets:hover { box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-pop3) inset; }
 
 .macro-icon {
   display: inline-flex;
@@ -402,6 +405,7 @@ h3 { font-weight: 600; font-size: 1.28rem; }
 .pill.fat { background: var(--color-fat-bg); color: var(--color-fat); }
 .pill.carbs { background: var(--color-carbs-bg); color: var(--color-carbs); }
 .pill.athletes { background: var(--color-pop2-bg); color: var(--color-pop2); }
+.pill.diets { background: var(--color-pop3-bg); color: var(--color-pop3); }
 
 /* ---------- Content layout ---------- */
 
@@ -901,6 +905,9 @@ sup.ref a {
 .sprint-btn.protein { background: var(--color-protein); }
 .sprint-btn.fat { background: var(--color-fat); }
 .sprint-btn.carbs { background: var(--color-carbs); }
+.sprint-btn.diet-vegan { background: var(--color-carbs); }
+.sprint-btn.diet-vegetarian { background: var(--color-pop3); }
+.sprint-btn.diet-neither { background: var(--color-protein); }
 .sprint-btn.correct-flash { box-shadow: 0 0 0 4px rgba(23,138,90,0.45); }
 .sprint-btn.wrong-flash { box-shadow: 0 0 0 4px rgba(224,71,59,0.45); }
 @media (max-width: 480px) { .sprint-buttons { grid-template-columns: 1fr; } }

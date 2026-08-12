@@ -239,6 +239,47 @@ add(
     ],
 )
 
+add(
+    "diets-quiz", "Diets Quiz: Animal-Based, Vegan, Paleo & More",
+    "An 8-question quiz testing what you know about animal-based, plant-based, vegan, paleo, carnivore, vegetarian, and pescatarian diets.",
+    "diets", "Diets Quiz", "How well do you know the major diets?",
+    "8 questions on what each major diet actually restricts — and what the evidence says about each one.",
+    [
+        q("What's the key difference between a vegan diet and a plant-based diet?",
+          ["They're identical", "Vegan excludes all animal products; plant-based just emphasizes plants", "Plant-based excludes more foods than vegan", "Plant-based always includes meat"], 1,
+          "Vegan is a strict zero-animal-product rule. Plant-based is a spectrum — mostly plants, but not necessarily zero animal products.",
+          "plant-based-vs-vegan-diet.html", "Plant-based vs. vegan: what's actually the difference?"),
+        q("What foods does an animal-based diet typically still allow, unlike strict carnivore?",
+          ["Grains and legumes", "Fruit and honey", "Refined sugar", "Nothing — they're the same diet"], 1,
+          "Animal-based diets allow some low-\"antinutrient\" plant foods like fruit and honey, unlike strict carnivore, which excludes all plant foods.",
+          "animal-based-diet-explained.html", "The animal-based diet explained"),
+        q("What is the paleo diet's typical macronutrient split?",
+          ["Very high carb, low protein", "High protein, moderate fat, relatively low carb", "Zero fat", "Identical to a standard diet"], 1,
+          "Paleo typically runs 19-35% protein, 28-58% fat, and 22-40% carbohydrate — higher protein and lower carb than a standard diet.",
+          "paleo-diet-explained.html", "The paleo diet explained"),
+        q("What nutrient deficiencies do clinicians most often flag with long-term carnivore diets?",
+          ["Protein and fat", "Vitamin C, magnesium, and calcium", "Sodium only", "None — carnivore has no risks"], 1,
+          "Removing all plant foods removes common sources of vitamin C, magnesium, and calcium, which clinicians flag as a real long-term risk.",
+          "carnivore-diet-explained.html", "The carnivore diet explained"),
+        q("What does a vegetarian diet typically still include that makes protein easier than vegan?",
+          ["Meat", "Eggs and dairy", "Fish", "Nothing — it's identical to vegan"], 1,
+          "Vegetarian excludes meat, poultry, and fish, but usually keeps eggs and dairy — both complete proteins.",
+          "macros-for-vegetarians.html", "Macros for vegetarians"),
+        q("A pescatarian diet is often described as:",
+          ["Vegan plus dairy", "Vegetarian plus fish", "Carnivore plus vegetables", "Paleo plus grains"], 1,
+          "Pescatarian excludes meat and poultry but includes fish and seafood alongside eggs, dairy, and plant foods.",
+          "pescatarian-diet-explained.html", "The pescatarian diet explained"),
+        q("Regular seafood intake (about 8oz/week) is linked to roughly how much lower risk of cardiovascular death, per one widely cited analysis?",
+          ["No measurable difference", "~10%", "~36%", "~90%"], 2,
+          "One widely cited analysis found roughly a 36% lower risk of death from heart disease associated with eating about 8oz of seafood per week.",
+          "pescatarian-diet-explained.html", "The pescatarian diet explained"),
+        q("Across paleo, carnivore, vegan, and every other diet, what does the evidence say matters most for health outcomes?",
+          ["The specific diet label you use", "Total calories, protein adequacy, and overall diet quality", "Eating only foods from before 10,000 BC", "Avoiding all carbohydrates"], 1,
+          "No diet pattern is universally optimal — total calories, protein adequacy, and whole-food quality matter more than which specific label you follow.",
+          "diets-explained.html", "Diets explained: every major pattern"),
+    ],
+)
+
 
 def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, tiers=None):
     hero_class = "hero page-hero" if category != "general" else "page-hero"
@@ -250,6 +291,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
