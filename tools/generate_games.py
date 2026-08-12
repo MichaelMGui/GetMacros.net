@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, SITEMAP_LASTMOD  # noqa: E402
 from generate_quizzes import QUIZZES  # noqa: E402
 
 MEMORY_PAIRS = [
@@ -91,6 +91,7 @@ def game_page(slug, title, icon, meta, intro, body_script):
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Game")}
+{breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -239,15 +240,15 @@ def build_full_sitemap():
     domain = "https://getmacros.net"
     entries = []
     for path, priority in CORE_PAGES:
-        entries.append(f"  <url>\n    <loc>{domain}/{path}</loc>\n    <priority>{priority}</priority>\n  </url>")
+        entries.append(f"  <url>\n    <loc>{domain}/{path}</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>{priority}</priority>\n  </url>")
     for a in ARTICLES:
-        entries.append(f'  <url>\n    <loc>{domain}/{a["slug"]}.html</loc>\n    <priority>0.7</priority>\n  </url>')
-    entries.append(f"  <url>\n    <loc>{domain}/glossary.html</loc>\n    <priority>0.7</priority>\n  </url>")
-    entries.append(f"  <url>\n    <loc>{domain}/quiz.html</loc>\n    <priority>0.8</priority>\n  </url>")
+        entries.append(f'  <url>\n    <loc>{domain}/{a["slug"]}.html</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>0.7</priority>\n  </url>')
+    entries.append(f"  <url>\n    <loc>{domain}/glossary.html</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>0.7</priority>\n  </url>")
+    entries.append(f"  <url>\n    <loc>{domain}/quiz.html</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>0.8</priority>\n  </url>")
     for qz in QUIZZES:
-        entries.append(f'  <url>\n    <loc>{domain}/{qz["slug"]}.html</loc>\n    <priority>0.6</priority>\n  </url>')
+        entries.append(f'  <url>\n    <loc>{domain}/{qz["slug"]}.html</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>0.6</priority>\n  </url>')
     for g in GAMES_META:
-        entries.append(f'  <url>\n    <loc>{domain}/{g["slug"]}.html</loc>\n    <priority>0.6</priority>\n  </url>')
+        entries.append(f'  <url>\n    <loc>{domain}/{g["slug"]}.html</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>0.6</priority>\n  </url>')
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n"
     path = os.path.join(ROOT, "sitemap.xml")
     with open(path, "w") as f:

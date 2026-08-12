@@ -42,6 +42,19 @@ def article_jsonld(title, description, url, kind="Article"):
     return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
 
 
+def breadcrumb_jsonld(title, url, hub_name="Articles", hub_url="https://getmacros.net/articles.html"):
+    data = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getmacros.net/"},
+            {"@type": "ListItem", "position": 2, "name": hub_name, "item": hub_url},
+            {"@type": "ListItem", "position": 3, "name": title, "item": url},
+        ],
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
 def nav_html(current="articles"):
     def cur(name):
         return ' aria-current="page"' if name == current else ""
@@ -149,6 +162,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related):
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html")}
+{breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -1064,6 +1078,68 @@ def build_hub():
     print("wrote", path)
 
 
+def build_404():
+    title = "Page Not Found"
+    meta = "The page you're looking for doesn't exist. Find protein, fat, and carbohydrate guides, calculators, quizzes, and the full glossary on GetMacros.net."
+    url = "https://getmacros.net/404.html"
+    html = f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex, follow">
+<title>{title} | GetMacros.net</title>
+<meta name="description" content="{meta}">
+{seo_meta(title, meta, url, og_type="website")}
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
+</head>
+<body>
+{ICON_SPRITE}
+{NAV}
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff; text-align:center;">
+    <div class="container">
+      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg> 404</p>
+      <h1>We couldn't find that page</h1>
+      <p>The link might be broken, or the page may have moved. Here's where you probably wanted to go:</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="card-grid">
+        <a href="index.html" class="card"><span class="icon-badge neutral"><svg class="icon" aria-hidden="true"><use href="#icon-molecule"/></svg></span><h3>Home</h3><p>The three macronutrients, explained properly.</p></a>
+        <a href="calculators.html" class="card"><span class="icon-badge neutral"><svg class="icon" aria-hidden="true"><use href="#icon-calculator"/></svg></span><h3>Calculators</h3><p>Get your personal protein, fat, and carb targets.</p></a>
+        <a href="articles.html" class="card"><span class="icon-badge neutral"><svg class="icon" aria-hidden="true"><use href="#icon-article"/></svg></span><h3>All articles</h3><p>Every guide on the site, organized by topic.</p></a>
+        <a href="quiz.html" class="card"><span class="icon-badge neutral"><svg class="icon" aria-hidden="true"><use href="#icon-quiz"/></svg></span><h3>Quiz &amp; games</h3><p>Test what you know, or learn hands-on.</p></a>
+        <a href="glossary.html" class="card"><span class="icon-badge neutral"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span><h3>Glossary</h3><p>Every nutrition term, from A to Z.</p></a>
+        <a href="sources.html" class="card"><span class="icon-badge neutral"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg></span><h3>Sources</h3><p>Every citation used across the site.</p></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{AD_SLOT}
+{FOOTER}
+
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/ads-config.js"></script>
+<script src="js/ads.js"></script>
+</body>
+</html>
+'''
+    path = os.path.join(ROOT, "404.html")
+    with open(path, "w") as f:
+        f.write(html)
+    print("wrote", path)
+
+
 CORE_PAGES = [
     ("", "1.0"),  # homepage
     ("protein.html", "0.9"),
@@ -1075,15 +1151,18 @@ CORE_PAGES = [
 ]
 
 
+SITEMAP_LASTMOD = "2026-08-12"
+
+
 def build_sitemap():
     domain = "https://getmacros.net"
     urls = [f"{domain}/{p}" for p, _ in CORE_PAGES]
     priorities = {p: pr for p, pr in CORE_PAGES}
     entries = []
     for path, priority in CORE_PAGES:
-        entries.append(f"  <url>\n    <loc>{domain}/{path}</loc>\n    <priority>{priority}</priority>\n  </url>")
+        entries.append(f"  <url>\n    <loc>{domain}/{path}</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>{priority}</priority>\n  </url>")
     for a in ARTICLES:
-        entries.append(f'  <url>\n    <loc>{domain}/{a["slug"]}.html</loc>\n    <priority>0.7</priority>\n  </url>')
+        entries.append(f'  <url>\n    <loc>{domain}/{a["slug"]}.html</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>0.7</priority>\n  </url>')
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n"
     with open(os.path.join(ROOT, "sitemap.xml"), "w") as f:
         f.write(xml)
@@ -1443,6 +1522,154 @@ add(
 )
 
 
+# --------------------------------------------------------- MORE SEO PAGES --
+
+add(
+    "net-carbs-vs-total-carbs",
+    "Net Carbs vs. Total Carbs: What's the Difference?",
+    "What \"net carbs\" actually means, how to calculate it, and why the number on a low-carb product's label can be misleading.",
+    "carbs", "For Students", "Net carbs vs. total carbs: what's the difference?",
+    "\"Net carbs\" shows up on every keto-marketed food label. It isn't an official nutrition term, and calculating it wrong can throw off your whole day.",
+    sec('''      <h2>What "net carbs" means</h2>
+      <p>Net carbs is calculated as total carbohydrate minus fiber (and sometimes minus sugar alcohols), based on the idea that fiber isn't digested and absorbed the way other carbs are, so it shouldn't count toward the carb total that affects blood sugar.<sup class="ref"><a href="sources.html#c5">[1]</a></sup> For example, a food with 20g total carbs and 8g fiber would be marketed as "12g net carbs."</p>''') +
+    sec('''      <h2>Why it's not perfectly standardized</h2>
+      <p>Unlike "Calories" or "grams of protein," net carbs is not an FDA-regulated term with one fixed formula — different brands calculate it differently, and some sugar alcohols (like maltitol) are only partially unabsorbed, so subtracting them in full can understate the real carb impact.<sup class="ref"><a href="sources.html#c1">[2]</a></sup> If you're tracking macros for a medical reason (like diabetes) rather than general dieting, total carbohydrate — not the marketing number — is what your calculations should be based on.</p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>For everyday macro tracking, total carbs is simpler and more consistent. Use net carbs only as a rough guide on packaged low-carb products, not as your primary tracking number.</p>
+      <p><a href="calculators.html#carb-calculator" class="btn btn-primary">Calculate your daily carb target →</a></p>'''),
+    [("fiber-benefits.html", "Fiber benefits"), ("ketogenic-diet-explained.html", "The ketogenic diet explained"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label")]
+)
+
+add(
+    "protein-intake-for-women",
+    "How Much Protein Do Women Actually Need?",
+    "Protein targets for women specifically — why the same g/kg guidance applies regardless of sex, and where the numbers actually differ in practice.",
+    "protein", "For Students", "How much protein do women actually need?",
+    "Protein recommendations are given per kilogram of body weight, not by sex — but average body weight differences mean the absolute gram targets often look different for women in practice.",
+    sec('''      <h2>The RDA and training targets are the same formula</h2>
+      <p>The protein RDA of 0.8 g/kg and the higher 1.4-2.0 g/kg range for people who train apply the same way regardless of sex — there's no separate "women's protein RDA" in the research.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> What differs is that average body weight is lower for women than men, so the same per-kilogram target produces a lower absolute gram number — that's a body-weight effect, not a different requirement.</p>''') +
+    sec('''      <h2>Where it matters in practice</h2>
+      <p>Two things are worth knowing specifically: pregnancy and breastfeeding meaningfully raise protein needs above baseline, and women in a calorie deficit trying to preserve muscle benefit from the same higher end of the 1.6-2.2 g/kg range recommended for anyone dieting while training.<sup class="ref"><a href="sources.html#p3">[2]</a></sup> Neither of those is about sex directly — they're about a higher physiological demand, the same way a larger training volume raises requirements for anyone.</p>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p>Rather than using a generic "women's" number, calculate your own target from your actual body weight and goal.</p>
+      <p><a href="calculators.html#protein-calculator" class="btn btn-primary">Calculate my protein target →</a></p>'''),
+    [("how-much-protein-per-day.html", "How much protein do you need per day?"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("high-protein-foods-list.html", "High-protein foods list")]
+)
+
+add(
+    "does-eating-fat-make-you-fat",
+    "Does Eating Fat Make You Fat?",
+    "Why dietary fat and body fat are not the same thing, and what actually determines weight gain — with the research on total calories vs. fat specifically.",
+    "fat", "For Students", "Does eating fat make you fat?",
+    "It's an intuitive-sounding idea: eat fat, gain fat. The actual mechanism of weight gain doesn't work that way.",
+    sec('''      <h2>Weight gain is a calorie story, not a macronutrient story</h2>
+      <p>Body fat is gained when you consistently eat more total calories than you burn — regardless of whether those extra calories came from fat, carbs, protein, or alcohol.<sup class="ref"><a href="sources.html#f1">[1]</a></sup> Fat does have more calories per gram (9 versus 4 for protein and carbs), which makes it easier to overeat calorically without noticing, but that's a calorie-density issue, not evidence that fat itself is uniquely fattening.</p>''') +
+    sec('''      <h2>Where the confusion comes from</h2>
+      <p>The low-fat diet trend of the 1980s-90s conflated "dietary fat" with "body fat" partly because of the shared word, and partly because fat is calorie-dense and satiating in ways that made it an easy target. Research since then has found that low-fat and low-carb diets produce similar weight loss when calories and protein are matched — the macronutrient split matters far less than total intake for weight change specifically.<sup class="ref"><a href="sources.html#cal2">[2]</a></sup></p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <p>Fat is not the enemy — it's essential for hormone production and vitamin absorption. What determines weight change is your total calorie balance. <a href="calculators.html" class="btn btn-primary">Calculate my calorie and macro targets →</a></p>'''),
+    [("fats.html", "What fat actually does"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("macros-for-weight-loss.html", "Macros for fat loss")]
+)
+
+add(
+    "keto-flu-explained",
+    "Keto Flu Explained: Why It Happens and How to Fix It",
+    "What causes \"keto flu\" symptoms in the first days of a ketogenic diet, why electrolytes are the main culprit, and how to actually fix it.",
+    "carbs", "For Students", "Keto flu explained: why it happens and how to fix it",
+    "The fatigue, headaches, and brain fog some people get starting keto aren't really about ketones — they're mostly about sodium and water.",
+    sec('''      <h2>What causes it</h2>
+      <p>Cutting carbs sharply depletes glycogen, and each gram of stored glycogen is bound to roughly 3 grams of water — so in the first few days of a very low-carb diet, you lose a real amount of water weight fast. That water carries sodium and potassium out with it, and low-carb eating also naturally cuts many of the foods (fruit, grains, legumes) that are typical sources of potassium and magnesium.<sup class="ref"><a href="sources.html#gen2">[1]</a></sup> The resulting electrolyte drop is what produces the classic fatigue, headache, irritability, and brain fog cluster often called "keto flu," usually appearing 2-7 days in.<sup class="ref"><a href="sources.html#gen2">[1]</a></sup></p>''') +
+    sec('''      <h2>How to actually fix it</h2>
+      <p>Deliberately replacing sodium (bouillon, broth, or adding salt to food), and getting enough potassium and magnesium (leafy greens, avocado, nuts — all carb-light), resolves most symptoms within 24-48 hours. Staying well-hydrated matters too, since the water loss itself is part of the mechanism.<sup class="ref"><a href="sources.html#gen2">[1]</a></sup> If symptoms persist past a week or two, that's a signal to reassess whether a very low-carb approach is the right fit for you rather than pushing through indefinitely.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("ketogenic-diet-explained.html", "The ketogenic diet explained"), ("water-weight-vs-fat-loss.html", "Water weight vs. fat loss"), ("sports-drinks-vs-water.html", "Sports drinks vs. water")]
+)
+
+add(
+    "omega-3-foods-list",
+    "15 Foods High in Omega-3 Fatty Acids",
+    "A list of real food sources of omega-3 fatty acids, from fatty fish to plant-based ALA sources, with approximate amounts per serving.",
+    "fat", "For Students", "15 foods high in omega-3 fatty acids",
+    "Omega-3s are essential — your body can't make them — so getting enough depends entirely on what's on your plate.",
+    sec('''      <h2>Marine sources (EPA + DHA)</h2>
+      <table class="data-table">
+        <tr><th>Food</th><th>Approx. omega-3 per serving</th></tr>
+        <tr><td>Salmon (100g)</td><td>~2.2g</td></tr>
+        <tr><td>Mackerel (100g)</td><td>~2.5g</td></tr>
+        <tr><td>Sardines (100g)</td><td>~1.5g</td></tr>
+        <tr><td>Anchovies (100g)</td><td>~1.4g</td></tr>
+        <tr><td>Trout (100g)</td><td>~1.0g</td></tr>
+        <tr><td>Oysters (100g)</td><td>~0.7g</td></tr>
+      </table>
+      <p>Marine sources provide EPA and DHA directly — the two omega-3 forms most directly used by the body, particularly for reducing inflammation and supporting brain and cardiovascular health.<sup class="ref"><a href="sources.html#f3">[1]</a></sup></p>''') +
+    sec('''      <h2>Plant sources (ALA)</h2>
+      <table class="data-table">
+        <tr><th>Food</th><th>Approx. omega-3 per serving</th></tr>
+        <tr><td>Flaxseed, ground (1 tbsp)</td><td>~2.4g</td></tr>
+        <tr><td>Chia seeds (1 tbsp)</td><td>~2.5g</td></tr>
+        <tr><td>Walnuts (30g)</td><td>~2.6g</td></tr>
+        <tr><td>Hemp seeds (1 tbsp)</td><td>~1.0g</td></tr>
+        <tr><td>Edamame (1 cup)</td><td>~1.0g</td></tr>
+        <tr><td>Brussels sprouts (1 cup)</td><td>~0.2g</td></tr>
+      </table>
+      <p>Plant sources provide ALA, a precursor the body can convert to EPA and DHA — but only inefficiently (often under 10%), which is why relying on plant sources alone generally means eating considerably more of them, or using an algae-based EPA/DHA supplement.<sup class="ref"><a href="sources.html#f3">[1]</a></sup></p>''', bg="var(--color-fat-bg)", tight=True),
+    [("omega-3-vs-omega-6.html", "Omega-3 vs. omega-6"), ("healthy-high-fat-foods.html", "Healthy high-fat foods"), ("vegan-macros-guide.html", "Vegan macros guide")]
+)
+
+add(
+    "how-much-water-should-you-drink-per-day",
+    "How Much Water Should You Actually Drink Per Day?",
+    "Real daily water intake guidance from the National Academies, why \"8 glasses a day\" is a rough rule of thumb rather than a hard number, and how activity changes it.",
+    "general", "For Students", "How much water should you actually drink per day?",
+    "\"Drink 8 glasses a day\" isn't wrong exactly — it's just not based on your actual body, activity level, or climate.",
+    sec('''      <h2>The actual guideline</h2>
+      <p>The U.S. National Academies' adequate intake for total water (from all beverages and food combined) is about 3.7 liters/day (~15.5 cups) for men and 2.7 liters/day (~11.5 cups) for women in a temperate climate. Roughly 20% of that typically comes from food, so beverage intake alone is somewhat lower than those totals.<sup class="ref"><a href="sources.html#gen1">[1]</a></sup></p>''') +
+    sec('''      <h2>What changes the number</h2>
+      <p>Exercise, hot or humid climates, higher body size, pregnancy/breastfeeding, and high-sodium diets all raise fluid needs above the baseline. Thirst is a reasonably reliable guide for most healthy people day-to-day; pale yellow urine is a simple practical check for adequate hydration.<sup class="ref"><a href="sources.html#gen1">[1]</a></sup> For guidance specific to exercise duration and electrolyte needs during a workout, see our dedicated breakdown.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("sports-drinks-vs-water.html", "Sports drinks vs. water"), ("water-weight-vs-fat-loss.html", "Water weight vs. fat loss"), ("tdee-vs-bmr.html", "BMR vs. TDEE")]
+)
+
+add(
+    "macros-for-vegetarians",
+    "Macros for Vegetarians: Hitting Your Targets Without Meat",
+    "How to hit protein, fat, and carb targets on a vegetarian diet — complete protein combining, common gaps, and the best vegetarian protein sources.",
+    "general", "For Students", "Macros for vegetarians: hitting your targets without meat",
+    "Vegetarian (unlike vegan) diets still include eggs and dairy, which makes hitting protein targets considerably more straightforward — but it still takes some planning.",
+    sec('''      <h2>Complete protein is easier than you'd think</h2>
+      <p>Eggs, Greek yogurt, cottage cheese, and milk are all complete proteins supplying all 9 essential amino acids, the same as meat.<sup class="ref"><a href="sources.html#p1">[1]</a></sup> Combined with plant sources like lentils, quinoa, tofu, and tempeh, hitting a full protein target on a vegetarian diet is very achievable without needing to carefully combine plant proteins the way a fully vegan diet often requires.</p>''') +
+    sec('''      <h2>Common gaps to watch</h2>
+      <p>The main risk on a vegetarian diet isn't protein quantity — it's under-eating protein-dense foods relative to overall calories, since vegetables and grains are less calorie- and protein-dense than meat. Iron (non-heme iron from plants absorbs less efficiently than heme iron from meat) and vitamin B12 (found almost exclusively in animal products, though eggs and dairy cover this for vegetarians) are worth being deliberate about.<sup class="ref"><a href="sources.html#p2">[2]</a></sup></p>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html#protein-calculator" class="btn btn-primary">Calculate your protein target →</a></p>'''),
+    [("vegan-macros-guide.html", "Vegan macros guide"), ("plant-based-protein-sources.html", "Plant-based protein sources"), ("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein")]
+)
+
+add(
+    "high-fiber-foods-list",
+    "15 High-Fiber Foods to Add to Your Diet",
+    "A list of real high-fiber foods — legumes, whole grains, fruit, and vegetables — with approximate fiber content per serving, to help you hit your daily target.",
+    "carbs", "For Students", "15 high-fiber foods to add to your diet",
+    "Most adults fall well short of the recommended daily fiber intake. Here's what actually moves the number.",
+    sec('''      <h2>Legumes and grains</h2>
+      <table class="data-table">
+        <tr><th>Food</th><th>Approx. fiber per serving</th></tr>
+        <tr><td>Lentils, cooked (1 cup)</td><td>~15.6g</td></tr>
+        <tr><td>Black beans, cooked (1 cup)</td><td>~15g</td></tr>
+        <tr><td>Chickpeas, cooked (1 cup)</td><td>~12.5g</td></tr>
+        <tr><td>Oats, dry (1 cup)</td><td>~8.2g</td></tr>
+        <tr><td>Quinoa, cooked (1 cup)</td><td>~5.2g</td></tr>
+        <tr><td>Whole wheat bread (2 slices)</td><td>~3.8g</td></tr>
+      </table>''') +
+    sec('''      <h2>Fruits and vegetables</h2>
+      <table class="data-table">
+        <tr><th>Food</th><th>Approx. fiber per serving</th></tr>
+        <tr><td>Raspberries (1 cup)</td><td>~8g</td></tr>
+        <tr><td>Avocado (1 whole)</td><td>~10g</td></tr>
+        <tr><td>Pear, with skin (1 medium)</td><td>~5.5g</td></tr>
+        <tr><td>Broccoli, cooked (1 cup)</td><td>~5.1g</td></tr>
+        <tr><td>Apple, with skin (1 medium)</td><td>~4.4g</td></tr>
+        <tr><td>Brussels sprouts, cooked (1 cup)</td><td>~4g</td></tr>
+      </table>
+      <p>Most adults need roughly 25g/day (women) to 38g/day (men) under age 50, and most people fall short of that target.<sup class="ref"><a href="sources.html#c5">[1]</a></sup> Increase fiber gradually and drink enough water alongside it — a fast jump in fiber intake without enough fluid commonly causes bloating and digestive discomfort.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("fiber-benefits.html", "Fiber benefits"), ("net-carbs-vs-total-carbs.html", "Net carbs vs. total carbs"), ("simple-vs-complex-carbs.html", "Simple vs. complex carbs")]
+)
+
+
 def main():
     for a in ARTICLES:
         html = page(a["slug"], a["title"], a["meta"], a["category"],
@@ -1453,6 +1680,7 @@ def main():
         print("wrote", path)
     print(f"\n{len(ARTICLES)} articles generated.")
     build_hub()
+    build_404()
     build_sitemap()
     return ARTICLES
 
