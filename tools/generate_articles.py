@@ -1356,6 +1356,8 @@ CORE_PAGES = [
     ("sources.html", "0.5"),
     ("about.html", "0.4"),
     ("privacy.html", "0.2"),
+    ("es/", "0.6"),
+    ("fr/", "0.6"),
 ]
 
 
@@ -2252,6 +2254,118 @@ add(
     sec('''      <h2>Where timing has smaller, real effects</h2>
       <p>Eating very close to bedtime can affect sleep quality or digestive comfort for some people, and irregular, very late eating patterns are associated with worse diet quality overall in observational studies — but neither of those is the same as "late calories are stored differently." Total daily intake is still what predicts weight change.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
     [("meal-frequency-and-metabolism.html", "Meal frequency and metabolism"), ("best-time-to-eat-carbs.html", "Is there a best time to eat carbs?"), ("intermittent-fasting-and-macros.html", "Intermittent fasting and macros")]
+)
+
+
+# --------------------------------------------------------- FINAL BATCH --
+
+add(
+    "bcaas-explained",
+    "BCAAs Explained: Are They Actually Worth Taking?",
+    "What branched-chain amino acids actually do, why isolated BCAA supplements underperform whole protein, and when they might still make sense.",
+    "protein", "For Students", "BCAAs explained: are they actually worth taking?",
+    "BCAA supplements were huge before people realized whole protein already contains them — and does more.",
+    sec('''      <h2>What they actually do</h2>
+      <p>BCAAs (leucine, isoleucine, valine) can trigger the molecular signaling that starts muscle protein synthesis, mainly through leucine. But signaling alone isn't enough — building new muscle protein needs a full supply of all 9 essential amino acids as raw material, not just the three BCAAs.<sup class="ref"><a href="sources.html#gen12">[1]</a></sup></p>''') +
+    sec('''      <h2>Why whole protein still wins</h2>
+      <p>In direct comparisons, 5.6g of isolated BCAAs after resistance training produced roughly half the muscle protein synthesis response of an equivalent dose of complete protein — because the BCAA-only dose runs out of the other essential amino acids needed to keep building. Interestingly, "topping up" a suboptimal whey dose with extra leucine can match a full whey dose's effect, but that's a leucine-boosting strategy, not evidence for BCAAs as a standalone product.<sup class="ref"><a href="sources.html#gen12">[1]</a></sup></p>''', bg="var(--color-protein-bg)", tight=True) +
+    sec('''      <p>If you're already hitting your daily protein target from whole food or a complete protein powder, isolated BCAAs add little. They may have a narrow use case for people training fasted or restricting calories heavily, but for most people, the money is better spent on more complete protein.</p>
+      <p><a href="protein-powder-101.html" class="btn btn-primary">Read protein powder 101 →</a></p>'''),
+    [("protein-powder-101.html", "Protein powder 101"), ("whey-vs-casein-protein.html", "Whey vs. casein protein"), ("how-much-protein-per-day.html", "How much protein do you need per day?")]
+)
+
+add(
+    "whey-vs-casein-protein",
+    "Whey vs. Casein Protein: What's the Real Difference?",
+    "How whey and casein protein actually differ in digestion speed and amino acid profile, and when each one makes more practical sense.",
+    "protein", "For Students", "Whey vs. casein protein: what's the real difference?",
+    "Both are complete milk proteins — the real difference is digestion speed, not quality.",
+    sec('''      <h2>The actual difference</h2>
+      <p>Whey and casein are both complete proteins derived from milk, supplying all 9 essential amino acids. The practical difference is digestion speed: whey is absorbed quickly, producing a fast spike in blood amino acids, while casein forms a gel in the stomach and releases amino acids slowly over several hours.<sup class="ref"><a href="sources.html#p2">[1]</a></sup></p>''') +
+    sec('''      <h2>When each makes more sense</h2>
+      <p>Whey's fast absorption fits post-workout or any time you want protein quickly. Casein's slow release fits before a long gap without food — before bed being the most common use case, to keep amino acids available overnight. Neither is inherently superior for muscle building; given our earlier point on the <a href="post-workout-anabolic-window.html">post-workout anabolic window</a>, total daily protein intake matters far more than which type you use when.</p>''', bg="var(--color-protein-bg)", tight=True),
+    [("bcaas-explained.html", "BCAAs explained"), ("protein-powder-101.html", "Protein powder 101"), ("protein-timing.html", "Does protein timing matter?")]
+)
+
+add(
+    "fasted-cardio-fat-loss",
+    "Does Fasted Cardio Actually Burn More Fat?",
+    "What controlled research finds when comparing fasted vs. fed cardio for fat loss, and why acute fat-burning differences don't translate to better long-term results.",
+    "general", "For Students", "Does fasted cardio actually burn more fat?",
+    "Fasted cardio does burn a higher percentage of fat during the session itself. That doesn't mean it burns more fat overall.",
+    sec('''      <h2>What happens during the session</h2>
+      <p>Exercising in a fasted state does shift your body toward burning a higher proportion of fat for fuel during that session — one study found fat oxidation increased by roughly 73% during fasted cycling compared to the same session fed.</p>''') +
+    sec('''      <h2>Why it doesn't add up to more fat loss</h2>
+      <p>Despite that acute difference, controlled trials comparing fasted and fed cardio with matched total calories and protein find no significant difference in fat loss over time — in one 4-week trial, both groups lost the same amount of body fat.<sup class="ref"><a href="sources.html#gen11">[1]</a></sup> The body appears to compensate over the full day: burning more fat in one session doesn't change your total calorie balance, which is what actually determines fat loss over weeks.</p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <p>Fasted cardio is a fine choice if it fits your schedule or preference — it's just not a fat-loss advantage on its own.</p>'''),
+    [("intermittent-fasting-and-macros.html", "Intermittent fasting and macros"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("meal-frequency-and-metabolism.html", "Meal frequency and metabolism")]
+)
+
+add(
+    "egg-yolks-cholesterol-myth",
+    "Are Egg Yolks Bad for Your Cholesterol?",
+    "What Harvard's long-term research actually found about egg consumption and heart disease risk, and why dietary cholesterol matters less than saturated fat.",
+    "fat", "For Students", "Are egg yolks bad for your cholesterol?",
+    "Eggs spent decades as a cholesterol villain. Large long-term studies tell a more forgiving story for most people.",
+    sec('''      <h2>What the research actually found</h2>
+      <p>Large, long-term Harvard cohort studies found no significant overall association between egg consumption and risk of coronary heart disease or stroke in the general population, with up to about 7 eggs per week considered compatible with a healthy diet for most people.<sup class="ref"><a href="sources.html#gen10">[1]</a></sup></p>''') +
+    sec('''      <h2>Why dietary cholesterol matters less than expected</h2>
+      <p>Most blood cholesterol is produced by your liver, and the liver is stimulated to make more cholesterol primarily by dietary saturated and trans fat — not the cholesterol in food itself. Eggs are relatively low in saturated fat and contain no trans fat, which is a large part of why egg intake doesn't move blood cholesterol as much as it was long assumed to. One notable exception: some research links higher egg intake with increased cardiovascular risk specifically in men with diabetes, so individual risk factors still matter.<sup class="ref"><a href="sources.html#gen10">[1]</a></sup></p>''', bg="var(--color-fat-bg)", tight=True),
+    [("cholesterol-explained.html", "Cholesterol explained"), ("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("high-protein-breakfast-ideas.html", "High-protein breakfast ideas")]
+)
+
+add(
+    "metabolic-damage-is-it-real",
+    "Is \"Metabolic Damage\" From Dieting Real?",
+    "What actually happens to metabolism during prolonged dieting, whether it can be permanently \"damaged,\" and what the research on adaptive thermogenesis shows.",
+    "general", "For Students", "Is \"metabolic damage\" from dieting real?",
+    "\"My metabolism is broken from dieting\" is common online. The real phenomenon behind it is real, but far less permanent than the phrase implies.",
+    sec('''      <h2>What actually happens</h2>
+      <p>Extended dieting does reduce metabolic rate below what body weight alone would predict — a real, measured phenomenon called adaptive thermogenesis, partly from losing body mass (which burns calories) and partly from hormonal and neurological adaptations that increase energy efficiency during a prolonged deficit.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''') +
+    sec('''      <h2>Why "damaged" is the wrong word</h2>
+      <p>This adaptation is a normal, reversible survival response, not permanent damage to your metabolism — most of the drop recovers over weeks to months once calorie intake returns to maintenance, especially alongside resistance training to rebuild any lost muscle. What actually helps: reverse dieting (raising calories gradually rather than all at once) and prioritizing protein and strength training through and after a diet phase to preserve muscle mass, which is the biggest driver of metabolic rate you actually control.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("tdee-vs-bmr.html", "BMR vs. TDEE"), ("cutting-bulking-maintenance-explained.html", "Cutting, bulking, and maintenance"), ("macros-for-weight-loss.html", "Macros for fat loss")]
+)
+
+add(
+    "refeed-days-explained",
+    "Refeed Days Explained: Do They Actually Help a Diet?",
+    "What a refeed day actually does physiologically during a calorie deficit, and how it differs from an unplanned cheat day.",
+    "general", "For Students", "Refeed days explained: do they actually help a diet?",
+    "A refeed day is a deliberate, planned tool — not just a nicer name for a cheat day.",
+    sec('''      <h2>What a refeed actually does</h2>
+      <p>A refeed day means deliberately raising calories — usually via carbohydrate — back up to roughly maintenance for a day or two during an extended deficit. This partially restores depleted glycogen stores, can modestly and temporarily support hormones affected by sustained dieting (like leptin), and gives a mental break from restriction.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''') +
+    sec('''      <h2>How it differs from a cheat day</h2>
+      <p>Unlike an unplanned <a href="cheat-days-do-they-help-or-hurt.html">cheat day</a>, a refeed is calculated — raising calories to a specific target (often via carbs specifically, keeping protein and fat closer to normal) rather than eating without a plan. It's most useful for people in a long, aggressive deficit (physique competitors, extended cuts) rather than someone in a short, moderate deficit, where the physiological benefit is smaller relative to the risk of it turning into an unplanned surplus.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("cheat-days-do-they-help-or-hurt.html", "Cheat days: do they help or hurt?"), ("metabolic-damage-is-it-real.html", "Is metabolic damage real?"), ("macros-for-weight-loss.html", "Macros for fat loss")]
+)
+
+add(
+    "zone-diet-explained",
+    "The Zone Diet Explained: The 40/30/30 Approach",
+    "What the Zone diet's fixed 40/30/30 macro split actually means, where it came from, and what the evidence says about a fixed ratio approach.",
+    "diets", "Diets", "The Zone diet explained: the 40/30/30 approach",
+    "The Zone diet popularized something novel for its time: a fixed macro percentage instead of a food list.",
+    sec('''      <h2>What it actually is</h2>
+      <p>The Zone diet targets a fixed 40% of calories from carbohydrate, 30% from protein, and 30% from fat at every meal, developed in the 1990s around the idea of controlling insulin response and inflammation through consistent macro ratios rather than a food-inclusion/exclusion list the way paleo or keto work.</p>''') +
+    sec('''      <h2>What the evidence says</h2>
+      <p>The specific 40/30/30 ratio itself hasn't been shown to be uniquely superior to other reasonable macro splits for fat loss or health when calories and protein are held constant — its real contribution was popularizing macro-percentage thinking rather than a magic ratio.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup> A moderate-carb, higher-protein split like this is a perfectly reasonable target — it's just not meaningfully better than a well-calculated target based on your own numbers.</p>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Calculate your own macro split →</a></p>'''),
+    [("diets-explained.html", "Diets explained: every major pattern"), ("iifym-flexible-dieting.html", "IIFYM explained"), ("how-to-calculate-macros-by-hand.html", "How to calculate macros by hand")]
+)
+
+add(
+    "body-types-somatotypes-macros",
+    "Do Body Types (Ectomorph, Mesomorph, Endomorph) Actually Determine Your Macros?",
+    "Where the ectomorph/mesomorph/endomorph body type system actually came from, why it isn't a validated way to set macros, and what actually should drive your targets.",
+    "general", "For Students", "Do body types actually determine your macros?",
+    "\"Ectomorph,\" \"mesomorph,\" and \"endomorph\" get treated as science-backed categories for setting macros. The original research behind them was never about diet at all.",
+    sec('''      <h2>Where the idea actually came from</h2>
+      <p>The somatotype system was developed in the 1940s by psychologist William Sheldon, who used it to try to correlate body shape with personality and temperament — a theory that has since been discredited as pseudoscience. It was never a validated framework for nutrition or exercise prescription; fitness culture adopted the three body-type labels decades later and retrofitted diet advice onto them.</p>''') +
+    sec('''      <h2>What actually should set your macros</h2>
+      <p>Your protein, fat, and carb targets should come from your actual body weight, activity level, and goal — not a body-shape label. Someone who identifies as an "ectomorph" and someone who identifies as an "endomorph" at the same weight, activity level, and goal need essentially the same macro targets; individual differences in metabolism and training response are real, but they're not reliably predicted by a 1940s personality typology.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Calculate your macros from your actual numbers →</a></p>'''),
+    [("how-to-calculate-macros-by-hand.html", "How to calculate macros by hand"), ("common-nutrition-myths-debunked.html", "Common nutrition myths debunked"), ("macros-for-muscle-gain.html", "Macros for muscle gain")]
 )
 
 

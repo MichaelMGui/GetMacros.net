@@ -46,6 +46,16 @@
     <priority>0.2</priority>
   </url>
   <url>
+    <loc>https://getmacros.net/es/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/fr/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://getmacros.net/how-much-protein-per-day.html</loc>
     <lastmod>2026-08-12</lastmod>
     <priority>0.7</priority>
@@ -472,6 +482,46 @@
   </url>
   <url>
     <loc>https://getmacros.net/eating-late-at-night-weight-gain.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/bcaas-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/whey-vs-casein-protein.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/fasted-cardio-fat-loss.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/egg-yolks-cholesterol-myth.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/metabolic-damage-is-it-real.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/refeed-days-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/zone-diet-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/body-types-somatotypes-macros.html</loc>
     <lastmod>2026-08-12</lastmod>
     <priority>0.7</priority>
   </url>

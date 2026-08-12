@@ -13,7 +13,7 @@
     // popup, popunder, or top-level redirect the ad script tries to trigger,
     // regardless of what the ad network's script attempts.
     iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
-    iframe.src = 'ad-frame.html?key=' + encodeURIComponent(unit.key) + '&w=' + unit.width + '&h=' + unit.height;
+    iframe.src = '/ad-frame.html?key=' + encodeURIComponent(unit.key) + '&w=' + unit.width + '&h=' + unit.height;
     container.appendChild(iframe);
   }
 
