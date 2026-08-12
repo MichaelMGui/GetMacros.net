@@ -120,6 +120,13 @@ FOOTER = '''<footer class="site-footer">
         <li><a href="sources.html">Sources &amp; citations</a></li>
       </ul>
     </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer-bottom">© 2026 GetMacros.net</div>
 </footer>'''
@@ -1101,6 +1108,179 @@ def build_hub():
     print("wrote", path)
 
 
+def build_about():
+    title = "About GetMacros.net"
+    meta = "What GetMacros.net is, who it's built for, and the editorial and sourcing standards behind every article, calculator, and citation on the site."
+    url = "https://getmacros.net/about.html"
+    html = f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
+<title>{title}</title>
+<meta name="description" content="{meta}">
+<link rel="canonical" href="{url}">
+{seo_meta(title, meta, url, og_type="website")}
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
+</head>
+<body>
+{ICON_SPRITE}
+{NAV}
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"/></svg> About</p>
+      <h1>About GetMacros.net</h1>
+      <p>A reference site built for nutrition students and anyone who wants the real biology behind protein, fat, and carbohydrates — not the diet-culture version.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>What this site is</h2>
+      <p>GetMacros.net explains what protein, fat, and carbohydrates actually do in the body, how much of each you need, and what happens when you don't get enough — backed by calculators, a glossary, quizzes, and games for anyone studying or applying sports and nutrition science.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-carbs-bg)">
+    <div class="container">
+      <h2>How articles are sourced</h2>
+      <p>Every factual claim on this site is cited to a peer-reviewed study, a government or academic health agency (Harvard T.H. Chan School of Public Health, the National Academies, NIH, Mayo Clinic, Cleveland Clinic), or — for athlete and team nutrition stories specifically — established news reporting. Every citation used across the site is listed with a direct link on the <a href="sources.html">Sources &amp; citations page</a>, so any claim can be checked against its original source.</p>
+      <p>Calculators use published, research-validated formulas (the Mifflin-St Jeor equation for BMR, Dietary Reference Intake activity multipliers for TDEE) rather than proprietary or unverifiable estimates — also documented on the Sources page.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>What this site is not</h2>
+      <p>This is educational content, not medical advice. Nothing here should replace guidance from a doctor or registered dietitian, especially if you have a medical condition or are making a major change to your diet.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-protein-bg)">
+    <div class="container">
+      <h2>Questions or corrections</h2>
+      <p>If you find a claim that looks wrong or a citation that's out of date, the fastest way to verify it yourself is the <a href="sources.html">Sources page</a> — every reference links directly to its original source.</p>
+    </div>
+  </section>
+</main>
+
+{AD_SLOT}
+{FOOTER}
+
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/ads-config.js"></script>
+<script src="js/ads.js"></script>
+</body>
+</html>
+'''
+    path = os.path.join(ROOT, "about.html")
+    with open(path, "w") as f:
+        f.write(html)
+    print("wrote", path)
+
+
+def build_privacy():
+    title = "Privacy Policy"
+    meta = "GetMacros.net's privacy policy — what data is and isn't collected, how localStorage is used for quizzes and games, and how third-party ad networks use cookies."
+    url = "https://getmacros.net/privacy.html"
+    html = f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
+<title>{title}</title>
+<meta name="description" content="{meta}">
+<link rel="canonical" href="{url}">
+{seo_meta(title, meta, url, og_type="website")}
+<link rel="stylesheet" href="css/style.css">
+<script src="js/img-fallback.js"></script>
+{ADSENSE_LOADER}
+</head>
+<body>
+{ICON_SPRITE}
+{NAV}
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg> Privacy</p>
+      <h1>Privacy policy</h1>
+      <p>Last updated August 2026. This page explains what data GetMacros.net does and doesn't collect.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>What we don't collect</h2>
+      <p>GetMacros.net has no user accounts, no sign-up forms, and no server-side database. We don't collect names, emails, or any personal information you type in, because there's nowhere on the site that asks you to.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-carbs-bg)">
+    <div class="container">
+      <h2>What's stored in your browser</h2>
+      <p>The calculators, quizzes, and games use your browser's <code>localStorage</code> to remember things like your quiz high scores and whether you've dismissed a corner ad — entirely on your device. This data is never sent to us; we have no way to see it, and clearing your browser data removes it completely.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Hosting and basic logs</h2>
+      <p>This site is hosted on GitHub Pages, behind Cloudflare. Like virtually any website, the hosting provider's servers log standard technical information (IP address, browser type, pages requested) for security and performance purposes — we don't have access to personally identify visitors from this.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-fat-bg)">
+    <div class="container">
+      <h2>Advertising</h2>
+      <p>This site displays ads served by Google AdSense and Adsterra. These networks may use cookies and similar technologies to serve ads based on your visits to this and other sites. We don't control what these networks collect — see <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising policy</a> for how Google's ad products work, including how to opt out of personalized advertising via <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Children's privacy</h2>
+      <p>This site is not directed at children under 13 and we do not knowingly collect any information from them.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-protein-bg)">
+    <div class="container">
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the update will be reflected on this page with a new "last updated" date above.</p>
+    </div>
+  </section>
+</main>
+
+{AD_SLOT}
+{FOOTER}
+
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/ads-config.js"></script>
+<script src="js/ads.js"></script>
+</body>
+</html>
+'''
+    path = os.path.join(ROOT, "privacy.html")
+    with open(path, "w") as f:
+        f.write(html)
+    print("wrote", path)
+
+
 def build_404():
     title = "Page Not Found"
     meta = "The page you're looking for doesn't exist. Find protein, fat, and carbohydrate guides, calculators, quizzes, and the full glossary on GetMacros.net."
@@ -1173,6 +1353,8 @@ CORE_PAGES = [
     ("calculators.html", "0.9"),
     ("articles.html", "0.8"),
     ("sources.html", "0.5"),
+    ("about.html", "0.4"),
+    ("privacy.html", "0.2"),
 ]
 
 
@@ -1892,6 +2074,126 @@ add(
 )
 
 
+# ------------------------------------------------------- MORE DIETS + PAGES --
+
+add(
+    "mediterranean-diet-explained",
+    "The Mediterranean Diet Explained: What the Evidence Actually Shows",
+    "What the Mediterranean diet includes, why it's one of the most rigorously studied eating patterns, and what the landmark PREDIMED trial found.",
+    "diets", "Diets", "The Mediterranean diet explained",
+    "Unlike most diet trends, the Mediterranean diet has decades of high-quality research behind it — including one of nutrition science's most cited randomized trials.",
+    sec('''      <h2>What it actually includes</h2>
+      <p>The Mediterranean diet centers on vegetables, fruit, whole grains, legumes, nuts, and olive oil as the principal fat, with fish and seafood regularly, poultry and dairy in moderation, red meat rarely, and optional moderate wine. It's less a strict macro ratio than a pattern of food choices — higher total fat than a typical low-fat diet, but overwhelmingly unsaturated fat from olive oil, nuts, and fish rather than saturated fat.<sup class="ref"><a href="sources.html#gen6">[1]</a></sup></p>''') +
+    sec('''      <h2>The evidence behind it</h2>
+      <p>The landmark PREDIMED trial randomly assigned thousands of people at high cardiovascular risk to a Mediterranean diet (enriched with either extra-virgin olive oil or nuts) versus a low-fat control diet, and found roughly a 30% lower rate of major cardiovascular events — heart attack, stroke, cardiovascular death — in the Mediterranean diet groups.<sup class="ref"><a href="sources.html#gen6">[1]</a></sup> That's a considerably stronger evidence base than most named diets have, which is part of why it's consistently recommended by major health organizations rather than treated as a trend.</p>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Calculate your macros on any diet →</a></p>'''),
+    [("diets-explained.html", "Diets explained: every major pattern"), ("dash-diet-explained.html", "The DASH diet explained"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")]
+)
+
+add(
+    "dash-diet-explained",
+    "The DASH Diet Explained: Eating to Lower Blood Pressure",
+    "What the DASH diet is, how it differs from Mediterranean, and the sodium and potassium targets behind why it works for blood pressure.",
+    "diets", "Diets", "The DASH diet explained",
+    "DASH stands for Dietary Approaches to Stop Hypertension — and unlike most diets, it was designed and tested specifically for that one outcome.",
+    sec('''      <h2>What it includes</h2>
+      <p>DASH emphasizes vegetables, fruit, whole grains, low-fat dairy, and lean protein, while limiting sodium, red meat, added sugar, and saturated fat. It supplies a balanced macronutrient mix — complex carbohydrates from whole grains and legumes, lean protein, and modest fat — developed and clinically tested by the National Heart, Lung, and Blood Institute specifically to lower blood pressure.<sup class="ref"><a href="sources.html#gen7">[1]</a></sup></p>''') +
+    sec('''      <h2>How it differs from Mediterranean</h2>
+      <p>DASH and Mediterranean overlap heavily — both emphasize whole foods, vegetables, and limiting red meat — but DASH is more explicitly sodium-restricted and dairy-inclusive, built around clinical blood pressure trials, while Mediterranean is built around cardiovascular outcomes more broadly and includes more olive oil and moderate wine. Both are considered strong, evidence-backed patterns rather than restrictive trends.<sup class="ref"><a href="sources.html#gen7">[1]</a></sup></p>''', bg="var(--color-pop3-bg)", tight=True),
+    [("mediterranean-diet-explained.html", "The Mediterranean diet explained"), ("sodium-how-much-do-you-need.html", "Sodium: how much do you actually need?"), ("diets-explained.html", "Diets explained: every major pattern")]
+)
+
+add(
+    "intuitive-eating-explained",
+    "Intuitive Eating Explained: Is It Right for You?",
+    "What intuitive eating actually means as a structured approach, how it differs from just \"not tracking,\" and who it tends to work well for.",
+    "general", "For Students", "Intuitive eating explained: is it right for you?",
+    "Intuitive eating gets dismissed as \"no rules\" — it's actually a structured framework, and it's not the right fit for every goal.",
+    sec('''      <h2>What it actually is</h2>
+      <p>Intuitive eating is a framework built around recognizing internal hunger and fullness cues, rejecting a strict "good food/bad food" mentality, and decoupling eating from external rules like meal timing windows or macro targets. It's a defined approach with real structure, not simply "eat whatever, whenever" — as we noted in our <a href="famous-athlete-diets-fact-checked.html">athlete diets piece</a>, Simone Biles has spoken about using this approach deliberately rather than as an absence of a plan.</p>''') +
+    sec('''      <h2>Who it tends to work well for</h2>
+      <p>It tends to suit people with a history of restrictive dieting or disordered eating patterns, where rigid tracking itself becomes a source of stress, and people whose goal is general health maintenance rather than a specific body-composition target. It's a harder fit for anyone with a precise physique or performance goal (a physique competition prep, a specific strength-to-weight target), where hitting numeric macro targets consistently really does matter more than it does for general health.</p>''', bg="var(--color-protein-bg)", tight=True),
+    [("famous-athlete-diets-fact-checked.html", "6 famous athlete diets, fact-checked"), ("iifym-flexible-dieting.html", "IIFYM explained"), ("portion-sizes-without-a-scale.html", "Estimating portions without a scale")]
+)
+
+add(
+    "electrolytes-explained",
+    "Electrolytes Explained: Sodium, Potassium, and Magnesium",
+    "What electrolytes actually do in the body, the sodium, potassium, and magnesium targets from the American Heart Association, and when you actually need more.",
+    "general", "For Students", "Electrolytes explained: sodium, potassium, and magnesium",
+    "\"Electrolytes\" gets used as sports-drink marketing shorthand — the actual minerals involved have specific, individual jobs and targets.",
+    sec('''      <h2>What each one actually does</h2>
+      <p>Sodium regulates fluid balance and blood volume; potassium supports muscle contraction (including your heart) and helps counteract sodium's effect on blood pressure; magnesium is involved in hundreds of enzymatic reactions including energy production and muscle function. Americans on average get far more sodium than recommended and far less potassium and magnesium than recommended — the opposite imbalance of what most electrolyte marketing implies.<sup class="ref"><a href="sources.html#gen9">[2]</a></sup></p>''') +
+    sec('''      <h2>The actual daily targets</h2>
+      <table class="data-table">
+        <tr><th>Electrolyte</th><th>AHA recommendation</th></tr>
+        <tr><td>Sodium</td><td>Under 2,300mg/day (ideally under 1,500mg for most adults)</td></tr>
+        <tr><td>Potassium</td><td>~4,700mg/day (varies by DRI: 3,400mg men / 2,600mg women)</td></tr>
+        <tr><td>Magnesium</td><td>400-420mg (men) / 310-320mg (women)</td></tr>
+      </table>
+      <p>For most people eating a varied diet, these targets are best met through food — fruits, vegetables, legumes, and dairy — rather than supplements, since most people are already over on sodium and under on the other two.<sup class="ref"><a href="sources.html#gen9">[2]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("sodium-how-much-do-you-need.html", "Sodium: how much do you actually need?"), ("sports-drinks-vs-water.html", "Sports drinks vs. water"), ("dash-diet-explained.html", "The DASH diet explained")]
+)
+
+add(
+    "sodium-how-much-do-you-need",
+    "Sodium: How Much Do You Actually Need?",
+    "The real American Heart Association sodium targets, why most people eat far more than recommended, and where most dietary sodium actually comes from.",
+    "general", "For Students", "Sodium: how much do you actually need?",
+    "Most sodium in the average diet isn't coming from the salt shaker — which is exactly why cutting back is harder than it sounds.",
+    sec('''      <h2>The actual target</h2>
+      <p>The American Heart Association recommends no more than 2,300mg of sodium per day for most adults, with an ideal limit closer to 1,500mg — yet average intake in the U.S. runs over 3,100mg/day, more than double the ideal target.<sup class="ref"><a href="sources.html#gen8">[1]</a></sup></p>''') +
+    sec('''      <h2>Where it actually comes from</h2>
+      <p>The majority of dietary sodium comes from processed and restaurant food — bread, deli meat, canned soup, sauces, and packaged snacks — not the salt added at the table. That's why simply not adding extra salt to home-cooked meals often makes a much smaller dent than people expect; reading labels on packaged and restaurant food matters more for most people's actual sodium intake.<sup class="ref"><a href="sources.html#gen8">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p><a href="how-to-read-a-nutrition-label.html" class="btn btn-primary">Learn to read a nutrition label →</a></p>'''),
+    [("electrolytes-explained.html", "Electrolytes explained"), ("dash-diet-explained.html", "The DASH diet explained"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label")]
+)
+
+add(
+    "added-sugar-vs-natural-sugar",
+    "Added Sugar vs. Natural Sugar: Does the Difference Matter?",
+    "Whether added sugar and naturally occurring sugar (like the sugar in fruit) actually behave differently in the body, and why food matrix matters.",
+    "carbs", "For Students", "Added sugar vs. natural sugar: does the difference matter?",
+    "Chemically, table sugar in a can of soda and the sugar in an apple are extremely similar. Nutritionally, they're not treated the same — for good reason.",
+    sec('''      <h2>The actual difference</h2>
+      <p>Added sugar (in soda, candy, baked goods) and naturally occurring sugar (in fruit, dairy) can be chemically near-identical — but whole fruit delivers that sugar packaged with fiber, water, and micronutrients that slow digestion and absorption, producing a gentler blood sugar response than the same amount of sugar consumed on its own.<sup class="ref"><a href="sources.html#c1">[1]</a></sup> This is often called the "food matrix" effect — the surrounding food structure changes how a nutrient is absorbed, not just what the nutrient itself is.</p>''') +
+    sec('''      <h2>Why nutrition labels separate them</h2>
+      <p>U.S. nutrition labels now list "Added Sugars" separately from total sugar specifically because added sugar is the component linked most directly to excess calorie intake and health risk in observational research — someone eating an orange isn't at meaningful risk of "too much sugar" the way someone drinking multiple sodas a day is, even though both contain sugar.<sup class="ref"><a href="sources.html#c1">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("sugar-vs-starch.html", "Sugar vs. starch"), ("sugar-addiction-is-it-real.html", "Is sugar addiction real?"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label")]
+)
+
+add(
+    "best-breakfast-for-muscle-gain",
+    "What's the Best Breakfast for Muscle Gain?",
+    "What actually matters in a muscle-building breakfast — protein content and total daily intake — versus what's mostly marketing.",
+    "protein", "For Students", "What's the best breakfast for muscle gain?",
+    "There's no magic breakfast that builds muscle by itself — but a poorly built one can make hitting your daily protein target considerably harder.",
+    sec('''      <h2>What actually matters</h2>
+      <p>The main thing a good muscle-building breakfast does is contribute meaningfully to your daily protein target — aiming for roughly 25-40g of protein at breakfast (eggs, Greek yogurt, cottage cheese, a protein shake) makes the rest of the day's target easier to hit than starting with a protein-light meal like cereal or a plain bagel.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> There's no special muscle-building property to eating specifically in the morning — it's the same principle as any other meal, just easier to underweight if breakfast defaults to mostly carbs.</p>''') +
+    sec('''      <h2>A simple template</h2>
+      <table class="data-table">
+        <tr><th>Component</th><th>Example</th></tr>
+        <tr><td>Protein (25-40g)</td><td>3-4 eggs, Greek yogurt, or a protein shake</td></tr>
+        <tr><td>Carbs</td><td>Oats, whole grain toast, or fruit</td></tr>
+        <tr><td>Fat</td><td>Avocado, nut butter, or the fat naturally in eggs/yogurt</td></tr>
+      </table>'''),
+    [("high-protein-breakfast-ideas.html", "High-protein breakfast ideas"), ("macros-for-muscle-gain.html", "Macros for muscle gain"), ("bulking-without-gaining-fat.html", "Bulking without gaining excess fat")]
+)
+
+add(
+    "eating-late-at-night-weight-gain",
+    "Does Eating Late at Night Cause Weight Gain?",
+    "Whether eating close to bedtime actually causes weight gain independent of total calories, and what the research on meal timing actually shows.",
+    "general", "For Students", "Does eating late at night cause weight gain?",
+    "\"Don't eat after 8pm\" is repeated constantly. The mechanism behind it is weaker than the rule itself suggests.",
+    sec('''      <h2>What the research actually shows</h2>
+      <p>When total daily calories are matched, eating later in the day hasn't been shown to independently cause more fat gain than eating the same food earlier — your body doesn't store calories differently after a specific clock time.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup> The real association between late-night eating and weight gain is more indirect: late-night eating is often additional, unplanned eating on top of a day's normal intake (mindless snacking while watching TV), rather than a like-for-like swap.</p>''') +
+    sec('''      <h2>Where timing has smaller, real effects</h2>
+      <p>Eating very close to bedtime can affect sleep quality or digestive comfort for some people, and irregular, very late eating patterns are associated with worse diet quality overall in observational studies — but neither of those is the same as "late calories are stored differently." Total daily intake is still what predicts weight change.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("meal-frequency-and-metabolism.html", "Meal frequency and metabolism"), ("best-time-to-eat-carbs.html", "Is there a best time to eat carbs?"), ("intermittent-fasting-and-macros.html", "Intermittent fasting and macros")]
+)
+
+
 def main():
     for a in ARTICLES:
         html = page(a["slug"], a["title"], a["meta"], a["category"],
@@ -1903,6 +2205,8 @@ def main():
     print(f"\n{len(ARTICLES)} articles generated.")
     build_hub()
     build_404()
+    build_about()
+    build_privacy()
     build_sitemap()
     return ARTICLES
 

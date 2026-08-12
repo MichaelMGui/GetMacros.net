@@ -99,7 +99,12 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--color-text);
-  background: var(--color-bg);
+  background:
+    radial-gradient(ellipse 900px 650px at -5% -10%, rgba(224,71,59,0.05), transparent 60%),
+    radial-gradient(ellipse 800px 600px at 105% 10%, rgba(221,154,31,0.06), transparent 60%),
+    radial-gradient(ellipse 1000px 750px at 50% 105%, rgba(23,138,90,0.05), transparent 55%),
+    var(--color-bg);
+  background-attachment: fixed;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -297,6 +302,39 @@ a:hover { color: var(--color-primary); }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
 }
 .hero .container, .page-hero .container { position: relative; z-index: 1; }
+
+/* ---------- Daily fact widget ---------- */
+
+.daily-fact {
+  max-width: 720px;
+  margin: -2.2rem auto 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 1.6rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.daily-fact-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(120deg, var(--color-gold), var(--color-accent));
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 0.8rem;
+}
+.daily-fact-badge .icon { width: 0.85rem; height: 0.85rem; }
+.daily-fact .fact-text { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; color: var(--color-text); margin: 0 0 0.7rem; line-height: 1.4; }
+.daily-fact .fact-link { font-weight: 700; font-size: 0.92rem; }
+@media (max-width: 640px) { .daily-fact { margin-top: -1.5rem; padding: 1.3rem 1.3rem; } .daily-fact .fact-text { font-size: 1.08rem; } }
 
 /* ---------- Buttons ---------- */
 
@@ -997,7 +1035,7 @@ sup.ref a {
 .site-footer .container {
   padding: 3rem 1.5rem 2rem;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 @media (max-width: 700px) { .site-footer .container { grid-template-columns: 1fr; } }
