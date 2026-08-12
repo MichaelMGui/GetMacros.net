@@ -928,6 +928,28 @@ sup.ref a {
 
 #confetti-canvas { position: fixed; inset: 0; pointer-events: none; z-index: 999; }
 
+/* ---------- Diet comparison tool ---------- */
+
+.diet-compare-picker { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.2rem 0 1.6rem; }
+.diet-chip {
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: .88rem;
+  padding: .5rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform .12s ease, border-color .15s ease, background .15s ease, color .15s ease;
+}
+.diet-chip:hover { transform: translateY(-2px); border-color: var(--color-pop3); }
+.diet-chip.active { background: var(--color-pop3); border-color: var(--color-pop3); color: #fff; }
+.diet-compare-empty { color: var(--color-text-muted); font-style: italic; }
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.diet-compare-table { min-width: 100%; }
+.diet-compare-table th, .diet-compare-table td { white-space: normal; min-width: 180px; vertical-align: top; }
+.diet-compare-table th:first-child, .diet-compare-table td:first-child { min-width: 110px; background: #f7f2e8; }
+
 /* ---------- Game 3: Macro Sprint ---------- */
 
 .sprint-game { text-align: center; }

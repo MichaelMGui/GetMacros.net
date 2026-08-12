@@ -85,6 +85,7 @@ def nav_html(current="articles"):
       <li><a href="fats.html">Fat</a></li>
       <li><a href="carbs.html">Carbs</a></li>
       <li><a href="calculators.html">Calculators</a></li>
+      <li><a href="diets-explained.html"{cur("diets")}>Diets</a></li>
       <li><a href="articles.html"{cur("articles")}>Articles</a></li>
       <li><a href="glossary.html"{cur("glossary")}>Glossary</a></li>
       <li><a href="quiz.html"{cur("quiz")}>Quiz</a></li>
@@ -1887,14 +1888,70 @@ _DIETS_FAQ = [
     ("What is the carnivore diet?", "The carnivore diet consists exclusively of animal products — meat, fish, eggs, and sometimes dairy — excluding all plant foods, including fruits and vegetables."),
     ("What is a vegetarian diet?", "A vegetarian diet excludes meat, poultry, and fish, but typically still includes eggs and dairy, making it easier to hit protein targets than a fully vegan diet."),
     ("What is a pescatarian diet?", "A pescatarian diet excludes meat and poultry but includes fish and seafood, along with eggs, dairy, and plant foods — often described as vegetarian plus fish."),
+    ("What is the keto diet?", "The ketogenic diet keeps carbs very low (usually under 50g/day) and fat very high (roughly 70-80% of calories) to shift the body into ketosis, burning fat and ketones for fuel instead of glucose."),
+    ("What is the Mediterranean diet?", "The Mediterranean diet emphasizes vegetables, fruit, whole grains, legumes, olive oil, and fish, with red meat and processed food kept minimal — it has one of the strongest research bases of any named diet, including the landmark PREDIMED cardiovascular trial."),
 ]
+
+_DIET_COMPARE_DATA = [
+    {"id": "animal", "name": "Animal-based", "macros": "High protein, high fat, low-moderate carb", "includes": "Meat, organs, fish, eggs, dairy, some fruit &amp; honey", "excludes": "Most plants, grains, refined sugar", "evidence": "Newer trend, not clinically established"},
+    {"id": "plant", "name": "Plant-based", "macros": "Varies — typically higher carb, moderate protein", "includes": "Vegetables, fruit, grains, legumes; may include some animal foods", "excludes": "Nothing strictly — it's a spectrum, not a hard rule", "evidence": "Broadly supported for heart health"},
+    {"id": "vegan", "name": "Vegan", "macros": "Moderate protein (needs combining), higher carb", "includes": "All plant foods", "excludes": "All animal products: meat, dairy, eggs, honey", "evidence": "Well-studied; plan B12 and iron"},
+    {"id": "paleo", "name": "Paleo", "macros": "High protein (19-35%), moderate fat (28-58%), low-moderate carb (22-40%)", "includes": "Meat, fish, fruit, vegetables, nuts, seeds", "excludes": "Grains, legumes, dairy, refined sugar", "evidence": "Short-term gains mostly from cutting processed food"},
+    {"id": "carnivore", "name": "Carnivore", "macros": "Very high protein &amp; fat, ~0% carb", "includes": "Meat, fish, eggs, sometimes dairy", "excludes": "All plant foods", "evidence": "Real long-term deficiency risk (vitamin C, magnesium, calcium)"},
+    {"id": "vegetarian", "name": "Vegetarian", "macros": "Moderate-high protein, moderate fat, moderate-high carb", "includes": "Vegetables, fruit, grains, legumes, eggs, dairy", "excludes": "Meat, poultry, fish", "evidence": "Well-studied; easier protein than vegan"},
+    {"id": "pescatarian", "name": "Pescatarian", "macros": "High protein, moderate omega-3-rich fat, moderate carb", "includes": "Fish, seafood, eggs, dairy, plant foods", "excludes": "Meat, poultry", "evidence": "Strong cardiovascular evidence"},
+    {"id": "keto", "name": "Keto", "macros": "Moderate protein, very high fat (70-80%), very low carb (&lt;50g/day)", "includes": "Meat, fish, eggs, high-fat dairy, low-carb vegetables, oils", "excludes": "Grains, sugar, most fruit, starchy vegetables", "evidence": "Effective short-term; long-term data limited"},
+    {"id": "mediterranean", "name": "Mediterranean", "macros": "Moderate protein, moderate-high unsaturated fat, moderate carb", "includes": "Vegetables, fruit, whole grains, legumes, olive oil, fish", "excludes": "Little red meat, minimal processed food", "evidence": "Strongest evidence base (PREDIMED trial)"},
+]
+
+_DIET_COMPARE_TOOL = '''      <h2>Compare diets side by side</h2>
+      <p class="section-intro">Select two or more diets to see their macro split, what's typically included, what's excluded, and how strong the evidence is — side by side.</p>
+      <div class="diet-compare-picker" id="diet-compare-picker"></div>
+      <div id="diet-compare-table"><p class="diet-compare-empty">Select 2 or more diets above to compare them.</p></div>
+      <script>
+      (function () {
+        var DIETS = ''' + json.dumps(_DIET_COMPARE_DATA) + ''';
+        var picker = document.getElementById("diet-compare-picker");
+        var out = document.getElementById("diet-compare-table");
+        var selected = {};
+        DIETS.forEach(function (d) {
+          var chip = document.createElement("button");
+          chip.type = "button";
+          chip.className = "diet-chip";
+          chip.textContent = d.name;
+          chip.addEventListener("click", function () {
+            selected[d.id] = !selected[d.id];
+            chip.classList.toggle("active", !!selected[d.id]);
+            render();
+          });
+          picker.appendChild(chip);
+        });
+        function render() {
+          var chosen = DIETS.filter(function (d) { return selected[d.id]; });
+          if (chosen.length < 2) {
+            out.innerHTML = '<p class="diet-compare-empty">Select 2 or more diets above to compare them.</p>';
+            return;
+          }
+          var rows = [["Macro split", "macros"], ["Typically includes", "includes"], ["Typically excludes", "excludes"], ["Evidence strength", "evidence"]];
+          var html = '<div class="table-scroll"><table class="data-table diet-compare-table"><tr><th></th>' +
+            chosen.map(function (d) { return "<th>" + d.name + "</th>"; }).join("") + "</tr>";
+          rows.forEach(function (r) {
+            html += "<tr><td><strong>" + r[0] + "</strong></td>" +
+              chosen.map(function (d) { return "<td>" + d[r[1]] + "</td>"; }).join("") + "</tr>";
+          });
+          html += "</table></div>";
+          out.innerHTML = html;
+        }
+      })();
+      </script>'''
 
 add(
     "diets-explained",
-    "Diets Explained: Animal-Based, Plant-Based, Vegan, Paleo, Carnivore, Vegetarian & Pescatarian",
-    "A clear, sourced overview of the major dietary patterns — animal-based, plant-based, vegan, paleo, carnivore, vegetarian, and pescatarian — what each one actually restricts, and what the evidence says.",
+    "Diets Explained: Animal-Based, Vegan, Paleo, Keto, Carnivore, Mediterranean & More",
+    "A clear, sourced overview and comparison tool for the major dietary patterns — animal-based, plant-based, vegan, paleo, carnivore, vegetarian, pescatarian, keto, and Mediterranean.",
     "diets", "Diets", "Diets",
-    "Every diet you've heard of is really just a different rule about which foods are in or out. Here's what each one actually means, side by side.",
+    "Every diet you've heard of is really just a different rule about which foods are in or out. Pick any two below to compare them, or read the full breakdown of each.",
+    sec(_DIET_COMPARE_TOOL, bg="var(--color-pop3-bg)", tight=True) +
     sec('''      <h2>Animal-based</h2>
       <p>An animal-based diet centers on meat, organs, fish, eggs, and dairy, while still allowing a limited amount of plant food — typically fruit, honey, and squash, chosen for being relatively low in the plant compounds ("antinutrients") some animal-based proponents try to avoid. It's meaningfully more flexible than carnivore, since it doesn't ban fruit outright, but far more restrictive than a standard diet. It's a newer, less clinically studied eating pattern than the others on this list, so treat specific health claims about it with more caution.</p>
       <h2>Plant-based</h2>
@@ -1902,17 +1959,21 @@ add(
       <h2>Vegan</h2>
       <p>Vegan excludes all animal products — meat, dairy, eggs, and honey — with 100% of nutrients, including all essential amino acids, coming from plant sources.<sup class="ref"><a href="sources.html#p1">[1]</a></sup> Because no single common plant food supplies complete protein the way meat, eggs, or dairy do, vegan diets require more deliberate food combining. See our full <a href="vegan-macros-guide.html">vegan macros guide</a>.</p>''') +
     sec('''      <h2>Paleo</h2>
-      <p>The paleo diet is built around foods presumed available to Paleolithic humans — lean meat, fish, fruit, vegetables, nuts, and seeds — while excluding grains, legumes, dairy, refined sugar, and processed food. It's typically high protein (19-35% of calories), moderate fat (28-58%), and relatively low carb (22-40%).<sup class="ref"><a href="sources.html#gen3">[2]</a></sup></p>
+      <p>The paleo diet is built around foods presumed available to Paleolithic humans — lean meat, fish, fruit, vegetables, nuts, and seeds — while excluding grains, legumes, dairy, refined sugar, and processed food. It's typically high protein (19-35% of calories), moderate fat (28-58%), and relatively low carb (22-40%).<sup class="ref"><a href="sources.html#gen3">[2]</a></sup> See our full <a href="paleo-diet-explained.html">paleo diet guide</a>.</p>
       <h2>Carnivore</h2>
-      <p>Carnivore is the strictest pattern here: animal products only — meat, fish, eggs, sometimes dairy — with zero plant foods, including fruits and vegetables. Cutting out entire food groups removes fiber and several plant-derived compounds linked to lower chronic disease risk, and clinicians caution that long-term nutrient deficiencies (vitamin C, magnesium, calcium) are a real risk without careful planning.<sup class="ref"><a href="sources.html#gen4">[3]</a></sup> See our full <a href="do-elimination-diets-improve-performance.html">breakdown of elimination diets and performance</a> for the broader evidence on restrictive eating patterns.</p>''', bg="var(--color-pop3-bg)", tight=True) +
+      <p>Carnivore is the strictest pattern here: animal products only — meat, fish, eggs, sometimes dairy — with zero plant foods, including fruits and vegetables. Cutting out entire food groups removes fiber and several plant-derived compounds linked to lower chronic disease risk, and clinicians caution that long-term nutrient deficiencies (vitamin C, magnesium, calcium) are a real risk without careful planning.<sup class="ref"><a href="sources.html#gen4">[3]</a></sup> See our full <a href="carnivore-diet-explained.html">carnivore diet guide</a>.</p>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <h2>Keto</h2>
+      <p>The ketogenic diet keeps carbs very low — usually under 50g/day, roughly 5-10% of calories — and fat very high (70-80%), with moderate protein, to push the body into ketosis and rely on fat and ketones for fuel instead of glucose. See our full <a href="ketogenic-diet-explained.html">keto diet guide</a>. Common early side effects ("keto flu") come from rapid sodium and water loss, not the ketones themselves — see our <a href="keto-flu-explained.html">keto flu explainer</a>.</p>
+      <h2>Mediterranean</h2>
+      <p>The Mediterranean diet emphasizes vegetables, fruit, whole grains, legumes, and olive oil as the principal fat, with fish regularly and red meat rarely. It has one of the strongest research bases of any named diet — the landmark PREDIMED trial found roughly 30% fewer major cardiovascular events in people following it.<sup class="ref"><a href="sources.html#gen6">[4]</a></sup> See our full <a href="mediterranean-diet-explained.html">Mediterranean diet guide</a>.</p>''') +
     sec('''      <h2>Vegetarian</h2>
       <p>Vegetarian excludes meat, poultry, and fish but usually keeps eggs and dairy, which makes hitting protein targets considerably more straightforward than fully vegan, since eggs and dairy are already complete proteins. See our full <a href="macros-for-vegetarians.html">vegetarian macros guide</a>.</p>
       <h2>Pescatarian</h2>
-      <p>Pescatarian excludes meat and poultry but includes fish and seafood alongside eggs, dairy, and plant foods — essentially vegetarian plus fish. Research associates regular seafood intake with meaningfully lower cardiovascular risk, largely via omega-3 fatty acids.<sup class="ref"><a href="sources.html#gen5">[4]</a></sup></p>''') +
+      <p>Pescatarian excludes meat and poultry but includes fish and seafood alongside eggs, dairy, and plant foods — essentially vegetarian plus fish. Research associates regular seafood intake with meaningfully lower cardiovascular risk, largely via omega-3 fatty acids.<sup class="ref"><a href="sources.html#gen5">[5]</a></sup> See our full <a href="pescatarian-diet-explained.html">pescatarian diet guide</a>.</p>''', bg="var(--color-pop3-bg)", tight=True) +
     sec('''      <h2>Which one is "best"?</h2>
       <p>None of these is universally optimal — each is a different set of food-group restrictions, and the research consistently points to total calories, protein adequacy, and diet quality (whole foods vs. processed) mattering more for most health outcomes than which specific pattern you follow. The right one is the one that hits your protein target, fits your life, and you can sustain.</p>
       <p><a href="calculators.html" class="btn btn-primary">Calculate your macros on any diet →</a></p>'''),
-    [("vegan-macros-guide.html", "Vegan macros guide"), ("macros-for-vegetarians.html", "Macros for vegetarians"), ("plant-based-protein-sources.html", "Plant-based protein sources")],
+    [("mediterranean-diet-explained.html", "The Mediterranean diet explained"), ("ketogenic-diet-explained.html", "The ketogenic diet explained"), ("vegan-macros-guide.html", "Vegan macros guide")],
     extra_head=faq_jsonld(_DIETS_FAQ),
 )
 
