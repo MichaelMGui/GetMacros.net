@@ -1895,55 +1895,82 @@ _DIETS_FAQ = [
 ]
 
 _DIET_COMPARE_DATA = [
-    {"id": "animal", "name": "Animal-based", "macros": "High protein, high fat, low-moderate carb", "includes": "Meat, organs, fish, eggs, dairy, some fruit &amp; honey", "excludes": "Most plants, grains, refined sugar", "evidence": "Newer trend, not clinically established"},
-    {"id": "plant", "name": "Plant-based", "macros": "Varies — typically higher carb, moderate protein", "includes": "Vegetables, fruit, grains, legumes; may include some animal foods", "excludes": "Nothing strictly — it's a spectrum, not a hard rule", "evidence": "Broadly supported for heart health"},
-    {"id": "vegan", "name": "Vegan", "macros": "Moderate protein (needs combining), higher carb", "includes": "All plant foods", "excludes": "All animal products: meat, dairy, eggs, honey", "evidence": "Well-studied; plan B12 and iron"},
-    {"id": "paleo", "name": "Paleo", "macros": "High protein (19-35%), moderate fat (28-58%), low-moderate carb (22-40%)", "includes": "Meat, fish, fruit, vegetables, nuts, seeds", "excludes": "Grains, legumes, dairy, refined sugar", "evidence": "Short-term gains mostly from cutting processed food"},
-    {"id": "carnivore", "name": "Carnivore", "macros": "Very high protein &amp; fat, ~0% carb", "includes": "Meat, fish, eggs, sometimes dairy", "excludes": "All plant foods", "evidence": "Real long-term deficiency risk (vitamin C, magnesium, calcium)"},
-    {"id": "vegetarian", "name": "Vegetarian", "macros": "Moderate-high protein, moderate fat, moderate-high carb", "includes": "Vegetables, fruit, grains, legumes, eggs, dairy", "excludes": "Meat, poultry, fish", "evidence": "Well-studied; easier protein than vegan"},
-    {"id": "pescatarian", "name": "Pescatarian", "macros": "High protein, moderate omega-3-rich fat, moderate carb", "includes": "Fish, seafood, eggs, dairy, plant foods", "excludes": "Meat, poultry", "evidence": "Strong cardiovascular evidence"},
-    {"id": "keto", "name": "Keto", "macros": "Moderate protein, very high fat (70-80%), very low carb (&lt;50g/day)", "includes": "Meat, fish, eggs, high-fat dairy, low-carb vegetables, oils", "excludes": "Grains, sugar, most fruit, starchy vegetables", "evidence": "Effective short-term; long-term data limited"},
-    {"id": "mediterranean", "name": "Mediterranean", "macros": "Moderate protein, moderate-high unsaturated fat, moderate carb", "includes": "Vegetables, fruit, whole grains, legumes, olive oil, fish", "excludes": "Little red meat, minimal processed food", "evidence": "Strongest evidence base (PREDIMED trial)"},
+    {"id": "animal", "name": "Animal-based", "p": 35, "f": 55, "c": 10, "macros": "High protein, high fat, low-moderate carb", "includes": "Meat, organs, fish, eggs, dairy, some fruit &amp; honey", "excludes": "Most plants, grains, refined sugar", "evidence": "Newer trend, not clinically established"},
+    {"id": "plant", "name": "Plant-based", "p": 15, "f": 25, "c": 60, "macros": "Varies — typically higher carb, moderate protein", "includes": "Vegetables, fruit, grains, legumes; may include some animal foods", "excludes": "Nothing strictly — it's a spectrum, not a hard rule", "evidence": "Broadly supported for heart health"},
+    {"id": "vegan", "name": "Vegan", "p": 15, "f": 25, "c": 60, "macros": "Moderate protein (needs combining), higher carb", "includes": "All plant foods", "excludes": "All animal products: meat, dairy, eggs, honey", "evidence": "Well-studied; plan B12 and iron"},
+    {"id": "paleo", "name": "Paleo", "p": 27, "f": 43, "c": 30, "macros": "High protein (19-35%), moderate fat (28-58%), low-moderate carb (22-40%)", "includes": "Meat, fish, fruit, vegetables, nuts, seeds", "excludes": "Grains, legumes, dairy, refined sugar", "evidence": "Short-term gains mostly from cutting processed food"},
+    {"id": "carnivore", "name": "Carnivore", "p": 40, "f": 60, "c": 0, "macros": "Very high protein &amp; fat, ~0% carb", "includes": "Meat, fish, eggs, sometimes dairy", "excludes": "All plant foods", "evidence": "Real long-term deficiency risk (vitamin C, magnesium, calcium)"},
+    {"id": "vegetarian", "name": "Vegetarian", "p": 20, "f": 30, "c": 50, "macros": "Moderate-high protein, moderate fat, moderate-high carb", "includes": "Vegetables, fruit, grains, legumes, eggs, dairy", "excludes": "Meat, poultry, fish", "evidence": "Well-studied; easier protein than vegan"},
+    {"id": "pescatarian", "name": "Pescatarian", "p": 30, "f": 35, "c": 35, "macros": "High protein, moderate omega-3-rich fat, moderate carb", "includes": "Fish, seafood, eggs, dairy, plant foods", "excludes": "Meat, poultry", "evidence": "Strong cardiovascular evidence"},
+    {"id": "keto", "name": "Keto", "p": 20, "f": 75, "c": 5, "macros": "Moderate protein, very high fat (70-80%), very low carb (&lt;50g/day)", "includes": "Meat, fish, eggs, high-fat dairy, low-carb vegetables, oils", "excludes": "Grains, sugar, most fruit, starchy vegetables", "evidence": "Effective short-term; long-term data limited"},
+    {"id": "mediterranean", "name": "Mediterranean", "p": 18, "f": 37, "c": 45, "macros": "Moderate protein, moderate-high unsaturated fat, moderate carb", "includes": "Vegetables, fruit, whole grains, legumes, olive oil, fish", "excludes": "Little red meat, minimal processed food", "evidence": "Strongest evidence base (PREDIMED trial)"},
 ]
 
 _DIET_COMPARE_TOOL = '''      <h2>Compare diets side by side</h2>
-      <p class="section-intro">Select two or more diets to see their macro split, what's typically included, what's excluded, and how strong the evidence is — side by side.</p>
-      <div class="diet-compare-picker" id="diet-compare-picker"></div>
-      <div id="diet-compare-table"><p class="diet-compare-empty">Select 2 or more diets above to compare them.</p></div>
+      <p class="section-intro">Pick two diets to see their macro split charted out, plus what's typically included, excluded, and how strong the evidence is.</p>
+      <div class="diet-compare-selects">
+        <div class="diet-select-wrap">
+          <label for="diet-select-a">Diet A</label>
+          <select id="diet-select-a" class="diet-select"></select>
+        </div>
+        <span class="diet-vs-label">vs</span>
+        <div class="diet-select-wrap">
+          <label for="diet-select-b">Diet B</label>
+          <select id="diet-select-b" class="diet-select"></select>
+        </div>
+      </div>
+      <div id="diet-compare-chart"></div>
+      <div id="diet-compare-table"></div>
       <script>
       (function () {
         var DIETS = ''' + json.dumps(_DIET_COMPARE_DATA) + ''';
-        var picker = document.getElementById("diet-compare-picker");
+        var selA = document.getElementById("diet-select-a");
+        var selB = document.getElementById("diet-select-b");
+        var chart = document.getElementById("diet-compare-chart");
         var out = document.getElementById("diet-compare-table");
-        var selected = {};
-        DIETS.forEach(function (d) {
-          var chip = document.createElement("button");
-          chip.type = "button";
-          chip.className = "diet-chip";
-          chip.textContent = d.name;
-          chip.addEventListener("click", function () {
-            selected[d.id] = !selected[d.id];
-            chip.classList.toggle("active", !!selected[d.id]);
-            render();
-          });
-          picker.appendChild(chip);
+        DIETS.forEach(function (d, i) {
+          var optA = document.createElement("option");
+          optA.value = d.id; optA.textContent = d.name;
+          selA.appendChild(optA);
+          var optB = document.createElement("option");
+          optB.value = d.id; optB.textContent = d.name;
+          selB.appendChild(optB);
         });
+        selA.value = "vegan";
+        selB.value = "keto";
+
+        function chartCard(d) {
+          return '<div class="diet-chart-card">' +
+            '<h3>' + d.name + '</h3>' +
+            '<div class="diet-chart-bar">' +
+              '<span class="seg protein" style="width:' + d.p + '%" title="Protein ' + d.p + '%"></span>' +
+              '<span class="seg fat" style="width:' + d.f + '%" title="Fat ' + d.f + '%"></span>' +
+              '<span class="seg carbs" style="width:' + d.c + '%" title="Carbs ' + d.c + '%"></span>' +
+            '</div>' +
+            '<div class="diet-chart-legend">' +
+              '<span><i class="dot protein"></i>Protein ' + d.p + '%</span>' +
+              '<span><i class="dot fat"></i>Fat ' + d.f + '%</span>' +
+              '<span><i class="dot carbs"></i>Carbs ' + d.c + '%</span>' +
+            '</div></div>';
+        }
+
         function render() {
-          var chosen = DIETS.filter(function (d) { return selected[d.id]; });
-          if (chosen.length < 2) {
-            out.innerHTML = '<p class="diet-compare-empty">Select 2 or more diets above to compare them.</p>';
-            return;
-          }
-          var rows = [["Macro split", "macros"], ["Typically includes", "includes"], ["Typically excludes", "excludes"], ["Evidence strength", "evidence"]];
-          var html = '<div class="table-scroll"><table class="data-table diet-compare-table"><tr><th></th>' +
-            chosen.map(function (d) { return "<th>" + d.name + "</th>"; }).join("") + "</tr>";
+          var a = DIETS.filter(function (d) { return d.id === selA.value; })[0];
+          var b = DIETS.filter(function (d) { return d.id === selB.value; })[0];
+          if (!a || !b) return;
+          chart.innerHTML = '<div class="diet-chart">' + chartCard(a) + chartCard(b) + '</div>';
+          var rows = [["Typically includes", "includes"], ["Typically excludes", "excludes"], ["Evidence strength", "evidence"]];
+          var html = '<div class="table-scroll"><table class="data-table diet-compare-table"><tr><th></th><th>' +
+            a.name + '</th><th>' + b.name + '</th></tr>';
           rows.forEach(function (r) {
-            html += "<tr><td><strong>" + r[0] + "</strong></td>" +
-              chosen.map(function (d) { return "<td>" + d[r[1]] + "</td>"; }).join("") + "</tr>";
+            html += "<tr><td><strong>" + r[0] + "</strong></td><td>" + a[r[1]] + "</td><td>" + b[r[1]] + "</td></tr>";
           });
           html += "</table></div>";
           out.innerHTML = html;
         }
+        selA.addEventListener("change", render);
+        selB.addEventListener("change", render);
+        render();
       })();
       </script>'''
 

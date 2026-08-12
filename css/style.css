@@ -944,20 +944,61 @@ sup.ref a {
 
 /* ---------- Diet comparison tool ---------- */
 
-.diet-compare-picker { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.2rem 0 1.6rem; }
-.diet-chip {
-  border: 1.5px solid var(--color-border);
-  background: var(--color-surface);
-  color: var(--color-text);
-  font-weight: 600;
-  font-size: .88rem;
-  padding: .5rem 1.1rem;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: transform .12s ease, border-color .15s ease, background .15s ease, color .15s ease;
+.diet-compare-selects {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 1.2rem 0 1.6rem;
 }
-.diet-chip:hover { transform: translateY(-2px); border-color: var(--color-pop3); }
-.diet-chip.active { background: var(--color-pop3); border-color: var(--color-pop3); color: #fff; }
+.diet-select-wrap { display: flex; flex-direction: column; gap: .35rem; flex: 1 1 220px; }
+.diet-select-wrap label { font-weight: 700; font-size: .82rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: .03em; }
+.diet-select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-surface);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%239b5de5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: .75rem 2.6rem .75rem 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.diet-select:hover, .diet-select:focus { border-color: var(--color-pop3); outline: none; box-shadow: 0 0 0 3px var(--color-pop3-bg); }
+.diet-vs-label { font-weight: 800; font-size: .95rem; color: var(--color-pop3); padding-bottom: .8rem; }
+
+.diet-chart { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.6rem; }
+@media (max-width: 700px) { .diet-chart { grid-template-columns: 1fr; } }
+.diet-chart-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+}
+.diet-chart-card h3 { margin: 0 0 .8rem; font-size: 1.1rem; }
+.diet-chart-bar {
+  display: flex;
+  width: 100%;
+  height: 22px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #eee6d6;
+}
+.diet-chart-bar .seg { display: block; height: 100%; transition: width .3s ease; }
+.diet-chart-bar .seg.protein { background: var(--color-protein); }
+.diet-chart-bar .seg.fat { background: var(--color-fat); }
+.diet-chart-bar .seg.carbs { background: var(--color-carbs); }
+.diet-chart-legend { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: .7rem; font-size: .85rem; font-weight: 600; }
+.diet-chart-legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 999px; margin-right: .35rem; }
+.diet-chart-legend .dot.protein { background: var(--color-protein); }
+.diet-chart-legend .dot.fat { background: var(--color-fat); }
+.diet-chart-legend .dot.carbs { background: var(--color-carbs); }
+
 .diet-compare-empty { color: var(--color-text-muted); font-style: italic; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .diet-compare-table { min-width: 100%; }
