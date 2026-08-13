@@ -17,6 +17,17 @@
 
   var toggle = document.querySelector(".nav-toggle");
   var links = document.querySelector(".nav-links");
+
+  // Keep search reachable from every page, including older hand-written templates.
+  if (links && !links.querySelector('a[href$="search.html"]')) {
+    var searchItem = document.createElement("li");
+    var searchLink = document.createElement("a");
+    searchLink.href = "/search.html";
+    searchLink.textContent = "Search";
+    searchItem.appendChild(searchLink);
+    var contactItem = links.querySelector(".nav-cta");
+    links.insertBefore(searchItem, contactItem ? contactItem.closest("li") : null);
+  }
   if (toggle && links) {
     if (!links.id) links.id = "site-navigation";
     toggle.setAttribute("aria-controls", links.id);
