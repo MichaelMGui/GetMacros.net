@@ -384,12 +384,12 @@
           document.querySelectorAll("#diet-picker-b-menu .diet-picker-option").forEach(function (o) { o.classList.toggle("selected", o.dataset.id === state.b); });
           chart.innerHTML = '<div class="diet-chart">' + chartCard(a) + chartCard(b) + '</div>';
           var rows = [["Typically includes", "includes"], ["Typically excludes", "excludes"], ["Evidence strength", "evidence"]];
-          var html = '<div class="table-scroll"><table class="data-table diet-compare-table"><tr><th></th><th>' +
-            a.name + '</th><th>' + b.name + '</th></tr>';
+          var html = '<div class="diet-info-card"><div class="diet-info-head"><span></span><span>' +
+            a.name + '</span><span>' + b.name + '</span></div>';
           rows.forEach(function (r) {
-            html += "<tr><td><strong>" + r[0] + "</strong></td><td>" + a[r[1]] + "</td><td>" + b[r[1]] + "</td></tr>";
+            html += '<div class="diet-info-row"><span class="diet-info-key">' + r[0] + '</span><span>' + a[r[1]] + '</span><span>' + b[r[1]] + '</span></div>';
           });
-          html += "</table></div>";
+          html += "</div>";
           out.innerHTML = html;
         }
         render();

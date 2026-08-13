@@ -1071,11 +1071,33 @@ sup.ref a {
 .diet-chart-legend .dot.fat { background: var(--color-fat); }
 .diet-chart-legend .dot.carbs { background: var(--color-carbs); }
 
-.diet-compare-empty { color: var(--color-text-muted); font-style: italic; }
-.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.diet-compare-table { min-width: 100%; }
-.diet-compare-table th, .diet-compare-table td { white-space: normal; min-width: 180px; vertical-align: top; }
-.diet-compare-table th:first-child, .diet-compare-table td:first-child { min-width: 110px; background: #f7f2e8; }
+.diet-info-card {
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+  background: var(--color-surface);
+}
+.diet-info-head, .diet-info-row {
+  display: grid;
+  grid-template-columns: minmax(90px, 130px) 1fr 1fr;
+  gap: .75rem;
+}
+.diet-info-head {
+  background: var(--color-pop3);
+  color: #fff;
+  font-weight: 700;
+  padding: .85rem 1.1rem;
+  font-size: .95rem;
+}
+.diet-info-head span:first-child { opacity: 0; }
+.diet-info-row { padding: .85rem 1.1rem; border-top: 1px solid var(--color-border); font-size: .92rem; line-height: 1.4; }
+.diet-info-row:nth-child(even) { background: var(--color-pop3-bg); }
+.diet-info-key { font-weight: 700; color: var(--color-text-muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; align-self: start; }
+@media (max-width: 600px) {
+  .diet-info-head, .diet-info-row { grid-template-columns: 1fr 1fr 1fr; gap: .5rem; padding: .7rem .75rem; font-size: .82rem; }
+  .diet-info-key { font-size: .68rem; }
+}
 
 /* ---------- Game 3: Macro Sprint ---------- */
 
