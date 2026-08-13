@@ -646,6 +646,81 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getmacros.net/glycolysis-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/krebs-cycle-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/electron-transport-chain-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/atp-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/enzymes-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/enzyme-kinetics-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/protein-structure-levels.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/insulin-and-glucagon.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/homeostasis-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/cell-membrane-transport.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/muscle-contraction-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/energy-systems-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/kidney-function-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/beta-oxidation-explained.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/b-vitamins-and-metabolism.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://getmacros.net/glossary.html</loc>
     <lastmod>2026-08-12</lastmod>
     <priority>0.7</priority>
@@ -682,6 +757,31 @@
   </url>
   <url>
     <loc>https://getmacros.net/diets-quiz.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/biochemistry-quiz.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/physiology-quiz.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/cell-biology-quiz.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/digestion-quiz.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getmacros.net/exercise-physiology-quiz.html</loc>
     <lastmod>2026-08-12</lastmod>
     <priority>0.6</priority>
   </url>

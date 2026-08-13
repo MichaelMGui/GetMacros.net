@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260813"
+ASSET_VERSION = "20260813b"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -33,6 +33,7 @@ OG_IMAGE = {
     "carbs": "og-carbs.png",
     "diets": "og-diets.png",
     "athletes": "og-athletes.png",
+    "science": "og-science.png",
     "general": "og-default.png",
 }
 
@@ -231,6 +232,7 @@ HERO_STYLE = {
     "carbs": "background: linear-gradient(rgba(10,60,35,.72),rgba(10,60,35,.82))",
     "athletes": "background: linear-gradient(rgba(10,60,68,.78),rgba(15,90,100,.82))",
     "diets": "background: linear-gradient(rgba(60,35,90,.8),rgba(80,50,110,.82))",
+    "science": "background: linear-gradient(rgba(18,40,86,.82),rgba(30,62,124,.84))",
     "general": "background:var(--color-primary-dark); color:#fff;",
 }
 
@@ -1121,9 +1123,10 @@ CATEGORY_LABEL = {
     "carbs": "Carbohydrates",
     "athletes": "Athletes &amp; Sports Nutrition",
     "diets": "Diets",
+    "science": "Nutrition Science &amp; Physiology",
     "general": "Calculators &amp; Planning",
 }
-CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "athletes": "athletes", "diets": "diets", "general": "carbs"}
+CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "athletes": "athletes", "diets": "diets", "science": "science", "general": "carbs"}
 
 
 def build_hub():
@@ -1132,14 +1135,14 @@ def build_hub():
         by_cat.setdefault(a["category"], []).append(a)
 
     sections = ""
-    order = ["protein", "fat", "carbs", "diets", "athletes", "general"]
-    bg = {"protein": "var(--color-protein-bg)", "fat": "var(--color-fat-bg)", "carbs": "var(--color-carbs-bg)", "athletes": "var(--color-pop2-bg)", "diets": "var(--color-pop3-bg)", "general": None}
+    order = ["protein", "fat", "carbs", "diets", "athletes", "science", "general"]
+    bg = {"protein": "var(--color-protein-bg)", "fat": "var(--color-fat-bg)", "carbs": "var(--color-carbs-bg)", "athletes": "var(--color-pop2-bg)", "diets": "var(--color-pop3-bg)", "science": "var(--color-pop4-bg)", "general": None}
     for cat in order:
         items = by_cat.get(cat, [])
         if not items:
             continue
         badge_class = CATEGORY_PILL[cat] if cat != "general" else "neutral"
-        badge_icon = {"protein": "icon-protein", "fat": "icon-fat", "carbs": "icon-carbs", "athletes": "icon-medal", "diets": "icon-leaf", "general": "icon-article"}[cat]
+        badge_icon = {"protein": "icon-protein", "fat": "icon-fat", "carbs": "icon-carbs", "athletes": "icon-medal", "diets": "icon-leaf", "science": "icon-book", "general": "icon-article"}[cat]
         cards = "\n".join(
             f'        <a href="{a["slug"]}.html" class="card {CATEGORY_PILL[cat]}"><span class="icon-badge {badge_class}"><svg class="icon" aria-hidden="true"><use href="#{badge_icon}"/></svg></span><h3>{a["h1"]}</h3><p>{a["meta"]}</p></a>'
             for a in items
@@ -3165,6 +3168,581 @@ add(
         ("Do older adults need more protein?", "The evidence increasingly supports intakes above the 0.8 g/kg RDA for healthy older adults, often around 1.0-1.2 g/kg per day, because ageing muscle responds less strongly to a given dose of protein."),
         ("What is anabolic resistance?", "Anabolic resistance describes the blunted muscle protein synthesis response to protein intake that develops with age. A protein dose that maximally stimulates synthesis in a young adult produces a smaller response in an older adult."),
         ("Is protein enough to prevent muscle loss?", "No. Resistance training provides the mechanical signal that drives muscle retention, and protein supplies the raw material. Combining the two is substantially more effective than either alone."),
+    ],
+)
+
+# ------------------------------- NUTRITION SCIENCE & PHYSIOLOGY (REVISION) --
+
+add(
+    "glycolysis-explained",
+    "Glycolysis Explained: Steps, ATP Yield, Control",
+    "A revision walkthrough of glycolysis — the investment and payoff phases, net ATP and NADH yield, regulation, and what happens to pyruvate.",
+    "science", "Metabolism", "Glycolysis explained: steps, ATP yield and control",
+    "Glycolysis is the entry point for carbohydrate metabolism and one of the most reliably examined pathways in any biochemistry course.",
+    sec('''      <h2>The overview equation</h2>
+      <p>Glycolysis splits one 6-carbon glucose molecule into two 3-carbon pyruvate molecules in the cytosol. It requires no oxygen, which is why it functions in both aerobic and anaerobic conditions.</p>
+      <div class="panel">
+        <h3>Net reaction</h3>
+        <p>Glucose + 2 NAD<sup>+</sup> + 2 ADP + 2 P<sub>i</sub> → 2 pyruvate + 2 NADH + 2 H<sup>+</sup> + <strong>2 ATP</strong> + 2 H<sub>2</sub>O</p>
+      </div>
+      <h2>Two phases</h2>
+      <p>The pathway divides cleanly into an energy <em>investment</em> phase and an energy <em>payoff</em> phase — a distinction worth memorizing, because it explains why the gross and net ATP figures differ.</p>
+      <table class="data-table">
+        <tr><th>Phase</th><th>Steps</th><th>ATP</th><th>Key point</th></tr>
+        <tr><td>Investment</td><td>1–5</td><td>−2 ATP</td><td>Glucose is phosphorylated twice, then split into two 3-carbon molecules</td></tr>
+        <tr><td>Payoff</td><td>6–10</td><td>+4 ATP, +2 NADH</td><td>Everything happens twice, once per 3-carbon molecule</td></tr>
+      </table>
+      <p>Gross yield is 4 ATP; net yield is <strong>2 ATP</strong> because two were spent up front.</p>''') +
+    sec('''      <h2>The three regulated steps</h2>
+      <p>Exam questions frequently target regulation. Three steps are effectively irreversible and therefore serve as control points:</p>
+      <ul class="checklist">
+        <li><strong>Hexokinase</strong> (step 1) — traps glucose in the cell as glucose-6-phosphate; inhibited by its own product.</li>
+        <li><strong>Phosphofructokinase-1 (PFK-1)</strong> (step 3) — the <em>rate-limiting</em> step and the main control point. Inhibited by ATP and citrate (signals of energy abundance), activated by AMP and fructose-2,6-bisphosphate (signals of energy demand).</li>
+        <li><strong>Pyruvate kinase</strong> (step 10) — the final ATP-generating step, inhibited by ATP.</li>
+      </ul>
+      <div class="panel warn">
+        <h3>Common exam trap</h3>
+        <p>If asked for the rate-limiting enzyme of glycolysis, the answer is <strong>PFK-1</strong>, not hexokinase. Hexokinase is the first step, which is not the same thing.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>What happens to pyruvate</h2>
+      <ul class="checklist">
+        <li><strong>With oxygen</strong> — pyruvate enters the mitochondrion, is converted to acetyl-CoA, and feeds the <a href="krebs-cycle-explained.html">Krebs cycle</a>.</li>
+        <li><strong>Without sufficient oxygen</strong> — pyruvate is reduced to lactate, regenerating the NAD<sup>+</sup> that glycolysis needs to keep running. This is why glycolysis can continue briefly during intense exercise.</li>
+      </ul>
+      <p>That NAD<sup>+</sup> regeneration is the entire point of lactate production — a detail often missed when lactate is framed simply as a "waste product." See <a href="energy-systems-explained.html">the three energy systems</a> for how this plays out during exercise.</p>'''),
+    [("krebs-cycle-explained.html", "The Krebs cycle explained"), ("energy-systems-explained.html", "The three energy systems"), ("what-is-glycogen.html", "What is glycogen?")],
+    faq=[
+        ("What is the net ATP yield of glycolysis?", "Glycolysis produces a gross yield of 4 ATP but consumes 2 ATP in the investment phase, giving a net yield of 2 ATP per glucose molecule, along with 2 NADH and 2 pyruvate."),
+        ("What is the rate-limiting enzyme of glycolysis?", "Phosphofructokinase-1 (PFK-1) is the rate-limiting enzyme. It is inhibited by ATP and citrate, and activated by AMP and fructose-2,6-bisphosphate."),
+        ("Does glycolysis require oxygen?", "No. Glycolysis occurs in the cytosol and does not require oxygen, which is why it functions under both aerobic and anaerobic conditions. Oxygen availability determines what happens to pyruvate afterwards."),
+    ],
+)
+
+add(
+    "krebs-cycle-explained",
+    "Krebs Cycle Explained: Steps and ATP Yield",
+    "A revision guide to the citric acid cycle — the eight steps, per-turn yields of NADH, FADH2 and GTP, regulation, and where it sits in respiration.",
+    "science", "Metabolism", "The Krebs cycle explained",
+    "Also called the citric acid cycle or TCA cycle, this is the metabolic hub where carbohydrate, fat, and protein breakdown all converge.",
+    sec('''      <h2>Where it happens and what enters</h2>
+      <p>The cycle runs in the <strong>mitochondrial matrix</strong>. Its input is acetyl-CoA — a 2-carbon unit produced from pyruvate (via pyruvate dehydrogenase), from fatty acids (via <a href="beta-oxidation-explained.html">beta-oxidation</a>), and from certain amino acids.</p>
+      <div class="panel">
+        <h3>Yield per turn</h3>
+        <p><strong>3 NADH · 1 FADH<sub>2</sub> · 1 GTP (or ATP) · 2 CO<sub>2</sub></strong></p>
+        <p>One glucose produces two acetyl-CoA, so it drives <em>two</em> turns: 6 NADH, 2 FADH<sub>2</sub>, 2 GTP.</p>
+      </div>
+      <h2>The cycle in brief</h2>
+      <table class="data-table">
+        <tr><th>Step</th><th>Conversion</th><th>Produces</th></tr>
+        <tr><td>1</td><td>Acetyl-CoA + oxaloacetate → citrate</td><td>—</td></tr>
+        <tr><td>2</td><td>Citrate → isocitrate</td><td>—</td></tr>
+        <tr><td>3</td><td>Isocitrate → α-ketoglutarate</td><td>NADH, CO<sub>2</sub></td></tr>
+        <tr><td>4</td><td>α-ketoglutarate → succinyl-CoA</td><td>NADH, CO<sub>2</sub></td></tr>
+        <tr><td>5</td><td>Succinyl-CoA → succinate</td><td>GTP</td></tr>
+        <tr><td>6</td><td>Succinate → fumarate</td><td>FADH<sub>2</sub></td></tr>
+        <tr><td>7</td><td>Fumarate → malate</td><td>—</td></tr>
+        <tr><td>8</td><td>Malate → oxaloacetate</td><td>NADH</td></tr>
+      </table>''') +
+    sec('''      <h2>What the cycle is actually for</h2>
+      <p>A frequent misconception is that the Krebs cycle "makes ATP." It makes very little directly — just one GTP per turn. Its real function is to <strong>strip electrons</strong> from fuel molecules and load them onto the carriers NADH and FADH<sub>2</sub>, which then deliver them to the <a href="electron-transport-chain-explained.html">electron transport chain</a>, where the great majority of ATP is actually generated.</p>
+      <h2>Regulation</h2>
+      <ul class="checklist">
+        <li><strong>Citrate synthase</strong> — inhibited by ATP, NADH, and succinyl-CoA</li>
+        <li><strong>Isocitrate dehydrogenase</strong> — the main control point; activated by ADP, inhibited by ATP and NADH</li>
+        <li><strong>α-ketoglutarate dehydrogenase</strong> — inhibited by its products and by NADH</li>
+      </ul>
+      <p>The pattern is consistent across all three: high energy charge slows the cycle, low energy charge accelerates it.</p>''', bg="var(--color-pop4-bg)", tight=True),
+    [("glycolysis-explained.html", "Glycolysis explained"), ("electron-transport-chain-explained.html", "The electron transport chain"), ("beta-oxidation-explained.html", "Beta-oxidation explained")],
+    faq=[
+        ("What does one turn of the Krebs cycle produce?", "One turn produces 3 NADH, 1 FADH2, 1 GTP (or ATP), and 2 CO2. Because each glucose molecule yields two acetyl-CoA, one glucose drives two turns of the cycle."),
+        ("Where does the Krebs cycle take place?", "In the mitochondrial matrix. This is distinct from glycolysis, which occurs in the cytosol, and from the electron transport chain, which is embedded in the inner mitochondrial membrane."),
+        ("Why does the Krebs cycle make so little ATP directly?", "Its purpose is to strip electrons from fuel molecules onto NADH and FADH2 rather than to make ATP itself. Those carriers then feed the electron transport chain, where most ATP is generated."),
+    ],
+)
+
+add(
+    "electron-transport-chain-explained",
+    "Electron Transport Chain and ATP Synthase",
+    "How the electron transport chain and chemiosmosis generate most of your ATP — complexes I-IV, the proton gradient, and total aerobic yield.",
+    "science", "Metabolism", "The electron transport chain explained",
+    "This is where the overwhelming majority of ATP is produced, and where the NADH and FADH2 from earlier pathways finally get spent.",
+    sec('''      <h2>Location and components</h2>
+      <p>The chain sits in the <strong>inner mitochondrial membrane</strong>, arranged in four complexes plus ATP synthase.</p>
+      <table class="data-table">
+        <tr><th>Complex</th><th>Role</th><th>Pumps H<sup>+</sup>?</th></tr>
+        <tr><td>I (NADH dehydrogenase)</td><td>Accepts electrons from NADH</td><td>Yes</td></tr>
+        <tr><td>II (succinate dehydrogenase)</td><td>Accepts electrons from FADH<sub>2</sub></td><td><strong>No</strong></td></tr>
+        <tr><td>III (cytochrome bc<sub>1</sub>)</td><td>Passes electrons to cytochrome c</td><td>Yes</td></tr>
+        <tr><td>IV (cytochrome c oxidase)</td><td>Transfers electrons to O<sub>2</sub>, forming water</td><td>Yes</td></tr>
+      </table>
+      <p>Because FADH<sub>2</sub> enters at complex II and bypasses complex I, it drives fewer protons across the membrane — which is exactly why it yields less ATP than NADH (roughly 1.5 vs 2.5).</p>''') +
+    sec('''      <h2>Chemiosmosis</h2>
+      <p>As electrons move down the chain, complexes I, III, and IV pump protons from the matrix into the intermembrane space. This builds an electrochemical gradient — the <strong>proton-motive force</strong>. Protons then flow back into the matrix through <strong>ATP synthase</strong>, and that flow drives the rotation that phosphorylates ADP into ATP. Peter Mitchell's chemiosmotic theory describing this won the 1978 Nobel Prize in Chemistry.</p>
+      <div class="panel warn">
+        <h3>Why oxygen matters</h3>
+        <p>Oxygen is the <em>final electron acceptor</em> at complex IV. Without it, electrons back up, the carriers stay reduced, NAD<sup>+</sup> is not regenerated, and the Krebs cycle halts. This is the precise reason aerobic respiration requires oxygen — not because oxygen is consumed to "burn" fuel directly.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Total aerobic yield</h2>
+      <table class="data-table">
+        <tr><th>Stage</th><th>Direct ATP</th><th>Carriers</th></tr>
+        <tr><td>Glycolysis</td><td>2</td><td>2 NADH</td></tr>
+        <tr><td>Pyruvate → acetyl-CoA</td><td>0</td><td>2 NADH</td></tr>
+        <tr><td>Krebs cycle (×2)</td><td>2</td><td>6 NADH, 2 FADH<sub>2</sub></td></tr>
+      </table>
+      <p>Using the modern estimates of ~2.5 ATP per NADH and ~1.5 per FADH<sub>2</sub>, one glucose yields roughly <strong>30–32 ATP</strong>. Older textbooks state 36–38; the figure was revised downward once the cost of transporting cytosolic NADH into the mitochondrion was accounted for. If an exam expects the older number, it will usually say so.</p>'''),
+    [("krebs-cycle-explained.html", "The Krebs cycle explained"), ("glycolysis-explained.html", "Glycolysis explained"), ("atp-explained.html", "What is ATP?")],
+    faq=[
+        ("How much ATP does one glucose molecule produce?", "Modern estimates give roughly 30-32 ATP per glucose, using about 2.5 ATP per NADH and 1.5 per FADH2. Older textbooks cite 36-38, a figure revised downward once the cost of shuttling cytosolic NADH into the mitochondrion was included."),
+        ("Why does FADH2 yield less ATP than NADH?", "FADH2 donates its electrons at complex II, bypassing complex I. Because one fewer proton-pumping complex is involved, it contributes less to the proton gradient and therefore drives less ATP synthesis."),
+        ("What is the role of oxygen in the electron transport chain?", "Oxygen is the final electron acceptor at complex IV, where it combines with electrons and protons to form water. Without it, electrons back up, NAD+ is not regenerated, and the Krebs cycle stops."),
+    ],
+)
+
+add(
+    "atp-explained",
+    "What Is ATP? Structure, Hydrolysis and Function",
+    "Why ATP is the cell's energy currency — its structure, why hydrolysis releases usable energy, and how quickly it is recycled.",
+    "science", "Metabolism", "What is ATP?",
+    "Every energy-requiring process in your body ultimately draws on the same molecule, and your body recycles roughly its own body weight of it each day.",
+    sec('''      <h2>Structure</h2>
+      <p>Adenosine triphosphate has three components: the nitrogenous base <strong>adenine</strong>, the 5-carbon sugar <strong>ribose</strong>, and a chain of <strong>three phosphate groups</strong>. Adenine plus ribose together form adenosine; adding the phosphates gives AMP, ADP, and ATP respectively.</p>
+      <h2>Why hydrolysis releases energy</h2>
+      <p>The three phosphate groups each carry negative charge and are held close together, so they repel one another — the molecule is under electrostatic strain. Breaking the terminal phosphate bond relieves that strain, and the products (ADP and inorganic phosphate) are more stable and better solvated than the reactant.</p>
+      <div class="panel warn">
+        <h3>The "high-energy bond" misconception</h3>
+        <p>ATP's terminal bonds are often called "high-energy bonds," which misleads students into thinking the bond itself stores energy. Breaking any bond <em>requires</em> energy. The net energy release comes from the products being substantially more stable than the reactants — not from the bond containing energy.</p>
+      </div>''') +
+    sec('''      <h2>How it is regenerated</h2>
+      <p>ATP is not a storage molecule — cells hold only a few seconds' worth. It is continuously regenerated from ADP by three routes:</p>
+      <ul class="checklist">
+        <li><strong>Substrate-level phosphorylation</strong> — direct transfer of a phosphate group from a substrate, as in <a href="glycolysis-explained.html">glycolysis</a> and the Krebs cycle. Fast, small yield.</li>
+        <li><strong>Oxidative phosphorylation</strong> — via the <a href="electron-transport-chain-explained.html">electron transport chain</a> and ATP synthase. Slower, by far the largest yield.</li>
+        <li><strong>The phosphocreatine system</strong> — creatine phosphate donates a phosphate to ADP for immediate resynthesis during very short, intense effort. See <a href="creatine-explained.html">creatine explained</a>.</li>
+      </ul>
+      <p>How these three are prioritized during exercise is covered in <a href="energy-systems-explained.html">the three energy systems</a>.</p>''', bg="var(--color-pop4-bg)", tight=True),
+    [("energy-systems-explained.html", "The three energy systems"), ("electron-transport-chain-explained.html", "The electron transport chain"), ("creatine-explained.html", "Creatine explained")],
+    faq=[
+        ("What does ATP stand for?", "Adenosine triphosphate. It consists of the base adenine, the sugar ribose, and a chain of three phosphate groups."),
+        ("Why does breaking down ATP release energy?", "The negatively charged phosphate groups repel each other, putting the molecule under electrostatic strain. Hydrolysis relieves that strain and yields products that are more stable and better solvated, so energy is released overall."),
+        ("How much ATP does the body use per day?", "Cells hold only seconds' worth at any moment but recycle it constantly. Total turnover across a day is on the order of a person's own body weight in ATP."),
+    ],
+)
+
+add(
+    "enzymes-explained",
+    "Enzymes: Function, Cofactors and Inhibition",
+    "How enzymes lower activation energy, the induced-fit model, what cofactors and coenzymes do, and how competitive and non-competitive inhibition differ.",
+    "science", "Biochemistry", "Enzymes: function, cofactors and inhibition",
+    "Almost every reaction keeping you alive would be far too slow at body temperature without a catalyst to speed it up.",
+    sec('''      <h2>What enzymes actually do</h2>
+      <p>Enzymes are biological catalysts, nearly all of them proteins. They work by <strong>lowering the activation energy</strong> of a reaction — the energy barrier reactants must overcome. Critically, they do <em>not</em> change the reaction's equilibrium position or its overall free energy change; they only change how fast equilibrium is reached.</p>
+      <h2>Lock-and-key vs. induced fit</h2>
+      <p>The older lock-and-key model pictured a rigid active site precisely complementary to the substrate. The accepted <strong>induced-fit model</strong> holds that the active site is flexible and changes shape slightly on substrate binding, tightening around it and straining the bonds to be broken.</p>''') +
+    sec('''      <h2>Cofactors and coenzymes</h2>
+      <p>Many enzymes need a non-protein helper to function:</p>
+      <ul class="checklist">
+        <li><strong>Cofactors</strong> — usually inorganic ions such as Mg<sup>2+</sup>, Zn<sup>2+</sup>, or Fe<sup>2+</sup>. See <a href="magnesium-explained.html">magnesium</a> and <a href="zinc-explained.html">zinc</a>.</li>
+        <li><strong>Coenzymes</strong> — organic molecules, very often derived from <strong>B vitamins</strong>: NAD<sup>+</sup> from niacin (B3), FAD from riboflavin (B2), coenzyme A from pantothenic acid (B5).</li>
+      </ul>
+      <p>That link is the reason B-vitamin deficiencies produce such broad, systemic symptoms — they disable enzymes across many pathways at once, rather than one specific function.</p>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Inhibition</h2>
+      <table class="data-table">
+        <tr><th>Type</th><th>Binds to</th><th>Effect on V<sub>max</sub></th><th>Effect on K<sub>m</sub></th></tr>
+        <tr><td>Competitive</td><td>Active site</td><td>Unchanged</td><td>Increases</td></tr>
+        <tr><td>Non-competitive</td><td>Allosteric site</td><td>Decreases</td><td>Unchanged</td></tr>
+      </table>
+      <p>The logic: a competitive inhibitor can be outcompeted by adding more substrate, so maximum velocity is still reachable — it just takes more substrate, which reads as a higher K<sub>m</sub>. A non-competitive inhibitor changes the enzyme's shape regardless of substrate concentration, so V<sub>max</sub> falls and no amount of extra substrate restores it. See <a href="enzyme-kinetics-explained.html">enzyme kinetics</a> for the graphs.</p>
+      <h2>What denatures enzymes</h2>
+      <p>Temperature and pH extremes disrupt the hydrogen bonds and ionic interactions holding the tertiary structure together. Once the active site's shape is lost, the enzyme cannot bind substrate — and above a certain point, denaturation is irreversible.</p>'''),
+    [("enzyme-kinetics-explained.html", "Enzyme kinetics explained"), ("protein-structure-levels.html", "Levels of protein structure"), ("b-vitamins-and-metabolism.html", "B vitamins and metabolism")],
+    faq=[
+        ("How do enzymes speed up reactions?", "They lower the activation energy required for a reaction to proceed. They do not change the equilibrium position or the overall free energy change, only the rate at which equilibrium is reached."),
+        ("What is the difference between a cofactor and a coenzyme?", "Cofactors are typically inorganic ions such as magnesium, zinc, or iron. Coenzymes are organic molecules, often derived from B vitamins, such as NAD+ from niacin and FAD from riboflavin."),
+        ("How do competitive and non-competitive inhibitors differ?", "A competitive inhibitor binds the active site, raising Km while leaving Vmax unchanged, and can be overcome with more substrate. A non-competitive inhibitor binds an allosteric site, lowering Vmax while leaving Km unchanged, and cannot be outcompeted."),
+    ],
+)
+
+add(
+    "enzyme-kinetics-explained",
+    "Enzyme Kinetics: Km, Vmax and Michaelis-Menten",
+    "What Km and Vmax actually mean, how to read a Michaelis-Menten curve and a Lineweaver-Burk plot, and how inhibitors shift them.",
+    "science", "Biochemistry", "Enzyme kinetics: Km, Vmax and Michaelis-Menten",
+    "Two constants describe most of what you need to know about how an enzyme behaves — and students routinely mix up what they mean.",
+    sec('''      <h2>The Michaelis-Menten equation</h2>
+      <div class="panel">
+        <h3>v = (V<sub>max</sub> × [S]) / (K<sub>m</sub> + [S])</h3>
+        <p>Where <strong>v</strong> is reaction velocity and <strong>[S]</strong> is substrate concentration.</p>
+      </div>
+      <h2>What the two constants mean</h2>
+      <ul class="checklist">
+        <li><strong>V<sub>max</sub></strong> — the maximum rate, reached when every enzyme active site is saturated with substrate. Adding more substrate beyond this point does nothing.</li>
+        <li><strong>K<sub>m</sub></strong> — the substrate concentration at which the reaction runs at <em>half</em> V<sub>max</sub>. It is an inverse measure of <strong>affinity</strong>: a <em>low</em> K<sub>m</sub> means high affinity, because little substrate is needed to reach half-maximal rate.</li>
+      </ul>
+      <div class="panel warn">
+        <h3>The most common mistake</h3>
+        <p>K<sub>m</sub> is not a rate and not a measure of enzyme speed. It has units of concentration. Low K<sub>m</sub> = high affinity is the relationship to memorize, and the inversion trips up more students than any other part of this topic.</p>
+      </div>''') +
+    sec('''      <h2>Reading the curves</h2>
+      <p>The Michaelis-Menten plot (v against [S]) is a hyperbola: steep at low substrate concentration, flattening toward a plateau at V<sub>max</sub>. Because that plateau is approached asymptotically, reading V<sub>max</sub> accurately off it is difficult.</p>
+      <p>The <strong>Lineweaver-Burk plot</strong> solves this by plotting 1/v against 1/[S], producing a straight line:</p>
+      <ul class="checklist">
+        <li><strong>y-intercept</strong> = 1/V<sub>max</sub></li>
+        <li><strong>x-intercept</strong> = −1/K<sub>m</sub></li>
+        <li><strong>slope</strong> = K<sub>m</sub>/V<sub>max</sub></li>
+      </ul>
+      <h2>How inhibitors change the plot</h2>
+      <table class="data-table">
+        <tr><th>Inhibitor</th><th>K<sub>m</sub></th><th>V<sub>max</sub></th><th>Lineweaver-Burk</th></tr>
+        <tr><td>Competitive</td><td>Increases</td><td>Unchanged</td><td>Same y-intercept, steeper slope</td></tr>
+        <tr><td>Non-competitive</td><td>Unchanged</td><td>Decreases</td><td>Same x-intercept, higher y-intercept</td></tr>
+      </table>
+      <p>A quick way to identify the type from a plot: if the lines meet on the <em>y</em>-axis it is competitive; if they meet on the <em>x</em>-axis it is non-competitive.</p>''', bg="var(--color-pop4-bg)", tight=True),
+    [("enzymes-explained.html", "Enzymes explained"), ("protein-structure-levels.html", "Levels of protein structure"), ("glycolysis-explained.html", "Glycolysis explained")],
+    faq=[
+        ("What does Km tell you about an enzyme?", "Km is the substrate concentration at which the reaction proceeds at half of Vmax. It is an inverse measure of affinity: a low Km means high affinity, because little substrate is needed to reach half-maximal velocity."),
+        ("What is Vmax?", "Vmax is the maximum reaction velocity, reached when all enzyme active sites are saturated with substrate. Beyond that point, adding more substrate does not increase the rate."),
+        ("Why use a Lineweaver-Burk plot?", "Plotting 1/v against 1/[S] linearises the hyperbolic Michaelis-Menten curve, making Vmax and Km much easier to read accurately from the intercepts than from the asymptotic plateau."),
+    ],
+)
+
+add(
+    "protein-structure-levels",
+    "The Four Levels of Protein Structure",
+    "Primary, secondary, tertiary and quaternary structure — the bonds holding each together, and what happens during denaturation.",
+    "science", "Biochemistry", "The four levels of protein structure",
+    "A protein's function is dictated entirely by its shape, and that shape is built up in four describable stages.",
+    sec('''      <h2>The four levels</h2>
+      <table class="data-table">
+        <tr><th>Level</th><th>What it is</th><th>Held together by</th></tr>
+        <tr><td>Primary</td><td>The linear sequence of amino acids</td><td>Peptide (covalent) bonds</td></tr>
+        <tr><td>Secondary</td><td>Local folding: α-helices and β-pleated sheets</td><td>Hydrogen bonds along the backbone</td></tr>
+        <tr><td>Tertiary</td><td>The overall 3D shape of one polypeptide</td><td>R-group interactions: hydrophobic, hydrogen, ionic, disulfide bridges</td></tr>
+        <tr><td>Quaternary</td><td>Two or more polypeptide subunits assembled together</td><td>Same interactions as tertiary, between subunits</td></tr>
+      </table>
+      <p>Not every protein has quaternary structure — it exists only in multi-subunit proteins. Haemoglobin, with four subunits, is the standard example; myoglobin, with one, has no quaternary structure at all.</p>''') +
+    sec('''      <h2>Why primary structure determines everything</h2>
+      <p>The sequence of amino acids dictates where hydrophobic residues sit, where disulfide bridges can form, and where charges attract or repel. Change one amino acid and the folding can change. In sickle cell anaemia, a single substitution — valine for glutamic acid at position 6 of the β-globin chain — changes a charged residue to a hydrophobic one, causing haemoglobin to polymerize and distort the red blood cell.</p>
+      <div class="panel">
+        <h3>Bond strength, ranked</h3>
+        <p>Disulfide bridges (covalent) are strongest, followed by ionic bonds, then hydrogen bonds, then hydrophobic interactions. But there are so many weak interactions that collectively they dominate the folded structure.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Denaturation</h2>
+      <p>Heat, pH extremes, heavy metals, and organic solvents disrupt the weak interactions maintaining secondary, tertiary and quaternary structure. The <strong>primary structure survives</strong> — peptide bonds are covalent and are not broken by denaturation. This is exactly why a cooked egg white turns solid and opaque but is still protein, and still <a href="complete-vs-incomplete-protein.html">nutritionally complete</a>.</p>
+      <p>Denaturation in the stomach is a normal, useful part of digestion: stomach acid unfolds dietary protein so that proteases can reach the peptide bonds. See <a href="how-digestion-works.html">how digestion works</a>.</p>'''),
+    [("enzymes-explained.html", "Enzymes explained"), ("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein"), ("how-digestion-works.html", "How digestion works")],
+    faq=[
+        ("What are the four levels of protein structure?", "Primary is the amino acid sequence held by peptide bonds; secondary is local folding into alpha-helices and beta-sheets held by backbone hydrogen bonds; tertiary is the overall 3D shape of one polypeptide; quaternary is the assembly of multiple subunits."),
+        ("Does denaturation break the primary structure?", "No. Denaturation disrupts the weak interactions maintaining secondary, tertiary and quaternary structure, but peptide bonds are covalent and remain intact, so the amino acid sequence is preserved."),
+        ("Do all proteins have quaternary structure?", "No. Quaternary structure exists only in proteins made of two or more polypeptide subunits. Haemoglobin has four subunits and therefore has quaternary structure; single-chain myoglobin does not."),
+    ],
+)
+
+add(
+    "insulin-and-glucagon",
+    "Insulin and Glucagon: Blood Glucose Control",
+    "How insulin and glucagon act as opposing hormones to keep blood glucose stable, their target tissues, and what goes wrong in diabetes.",
+    "science", "Physiology", "Insulin and glucagon: blood glucose control",
+    "This is the textbook example of negative feedback, and one of the clearest antagonistic hormone pairs in human physiology.",
+    sec('''      <h2>The two hormones</h2>
+      <table class="data-table">
+        <tr><th></th><th>Insulin</th><th>Glucagon</th></tr>
+        <tr><td>Secreted by</td><td>Beta cells of the pancreas</td><td>Alpha cells of the pancreas</td></tr>
+        <tr><td>Trigger</td><td>High blood glucose</td><td>Low blood glucose</td></tr>
+        <tr><td>Overall effect</td><td>Lowers blood glucose</td><td>Raises blood glucose</td></tr>
+        <tr><td>Metabolic mode</td><td>Anabolic (storage)</td><td>Catabolic (mobilization)</td></tr>
+      </table>
+      <p>Both are produced in the islets of Langerhans — an easy detail to lose marks on, since alpha and beta cells are frequently swapped in exam answers. Mnemonic: <strong>I</strong>nsulin comes from <strong>b</strong>eta cells and moves glucose <strong>i</strong>n.</p>''') +
+    sec('''      <h2>What insulin does</h2>
+      <ul class="checklist">
+        <li>Triggers GLUT4 transporters to move to the cell membrane in muscle and fat tissue, allowing glucose uptake</li>
+        <li>Stimulates <strong>glycogenesis</strong> — storing glucose as <a href="what-is-glycogen.html">glycogen</a> in liver and muscle</li>
+        <li>Stimulates lipogenesis and inhibits fat breakdown</li>
+        <li>Promotes amino acid uptake and protein synthesis</li>
+      </ul>
+      <h2>What glucagon does</h2>
+      <ul class="checklist">
+        <li>Stimulates <strong>glycogenolysis</strong> — breaking liver glycogen back down into glucose</li>
+        <li>Stimulates <strong>gluconeogenesis</strong> — making new glucose from amino acids, lactate and glycerol</li>
+        <li>Promotes lipolysis, releasing fatty acids for fuel</li>
+      </ul>
+      <div class="panel warn">
+        <h3>Liver vs. muscle glycogen</h3>
+        <p>Only the <em>liver</em> can release glucose back into the bloodstream, because muscle lacks the enzyme glucose-6-phosphatase. Muscle glycogen fuels the muscle that stores it and cannot raise blood glucose for the rest of the body.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>When the system fails</h2>
+      <p>In <strong>type 1 diabetes</strong>, autoimmune destruction of beta cells means little or no insulin is produced. In <strong>type 2 diabetes</strong>, insulin is produced but target tissues respond poorly to it — insulin resistance — and beta-cell function may decline over time. In both, glucose accumulates in the blood because it cannot be moved into cells efficiently.</p>'''),
+    [("what-is-glycogen.html", "What is glycogen?"), ("homeostasis-explained.html", "Homeostasis explained"), ("glycemic-index-explained.html", "The glycemic index")],
+    faq=[
+        ("Which pancreatic cells make insulin and glucagon?", "Beta cells in the islets of Langerhans secrete insulin in response to high blood glucose. Alpha cells secrete glucagon in response to low blood glucose."),
+        ("Why can't muscle glycogen raise blood sugar?", "Muscle lacks glucose-6-phosphatase, the enzyme needed to release free glucose into the bloodstream. Only liver glycogen can be broken down and exported to raise blood glucose for the rest of the body."),
+        ("What is the difference between type 1 and type 2 diabetes?", "In type 1, autoimmune destruction of pancreatic beta cells means little or no insulin is produced. In type 2, insulin is produced but tissues respond poorly to it, and beta-cell function may decline over time."),
+    ],
+)
+
+add(
+    "homeostasis-explained",
+    "Homeostasis and Negative Feedback Explained",
+    "How negative feedback loops keep internal conditions stable, the receptor-control centre-effector model, and how positive feedback differs.",
+    "science", "Physiology", "Homeostasis and negative feedback",
+    "Homeostasis is the organizing principle of physiology — once you can see the loop, most regulatory systems in the body follow the same shape.",
+    sec('''      <h2>The components of a feedback loop</h2>
+      <p>Every homeostatic system has the same four parts, and exam answers earn marks for naming them explicitly:</p>
+      <ul class="checklist">
+        <li><strong>Stimulus</strong> — a change in the variable being regulated</li>
+        <li><strong>Receptor / sensor</strong> — detects the change</li>
+        <li><strong>Control centre</strong> — compares the value against a set point (often the hypothalamus)</li>
+        <li><strong>Effector</strong> — produces the response that opposes the change</li>
+      </ul>
+      <h2>Negative feedback</h2>
+      <p>In negative feedback the response <em>opposes</em> the original stimulus, returning the variable toward its set point. It's the mechanism behind blood glucose control, thermoregulation, blood pressure, blood pH, and osmoregulation. The variable oscillates gently around the set point rather than sitting perfectly still.</p>''') +
+    sec('''      <h2>Worked example: thermoregulation</h2>
+      <table class="data-table">
+        <tr><th></th><th>Too hot</th><th>Too cold</th></tr>
+        <tr><td>Blood vessels</td><td>Vasodilation — more heat lost at skin</td><td>Vasoconstriction — heat conserved</td></tr>
+        <tr><td>Sweat glands</td><td>Increased sweating, evaporative cooling</td><td>Sweating stops</td></tr>
+        <tr><td>Muscle</td><td>—</td><td>Shivering generates heat</td></tr>
+        <tr><td>Metabolic rate</td><td>—</td><td>Increases (thyroid, adrenaline)</td></tr>
+      </table>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Positive feedback</h2>
+      <p>Positive feedback <em>amplifies</em> the stimulus rather than opposing it, driving the system further from its starting point. It is much rarer, and used where a process needs to run rapidly to completion:</p>
+      <ul class="checklist">
+        <li><strong>Blood clotting</strong> — activated platelets recruit more platelets</li>
+        <li><strong>Childbirth</strong> — oxytocin strengthens contractions, which triggers more oxytocin</li>
+        <li><strong>Action potentials</strong> — sodium influx opens further sodium channels</li>
+      </ul>
+      <div class="panel warn">
+        <h3>Frequently confused</h3>
+        <p>"Positive" and "negative" describe the <em>direction of the response relative to the stimulus</em>, not whether the outcome is good or bad. Positive feedback is not "beneficial feedback" — uncontrolled positive feedback is often dangerous.</p>
+      </div>''', tight=True),
+    [("insulin-and-glucagon.html", "Insulin and glucagon"), ("kidney-function-explained.html", "Kidney function explained"), ("electrolytes-explained.html", "Electrolytes explained")],
+    faq=[
+        ("What are the four components of a feedback loop?", "A stimulus, a receptor that detects the change, a control centre that compares the value against a set point, and an effector that produces the response."),
+        ("What is the difference between negative and positive feedback?", "Negative feedback opposes the original stimulus and returns a variable toward its set point. Positive feedback amplifies the stimulus, driving the system further from its starting point, as in blood clotting and childbirth."),
+        ("Is positive feedback harmful?", "Not inherently. The terms describe the direction of the response relative to the stimulus, not whether the outcome is desirable. Positive feedback is used where a process must run quickly to completion, though uncontrolled positive feedback can be dangerous."),
+    ],
+)
+
+add(
+    "cell-membrane-transport",
+    "Cell Membrane Transport: Passive and Active",
+    "Simple and facilitated diffusion, osmosis, primary and secondary active transport, and endocytosis — with the key distinctions exams test.",
+    "science", "Cell Biology", "Cell membrane transport: passive and active",
+    "The membrane is selectively permeable, and how a substance crosses it depends on its size, charge, and whether the cell is willing to spend ATP.",
+    sec('''      <h2>Passive transport — no ATP required</h2>
+      <ul class="checklist">
+        <li><strong>Simple diffusion</strong> — small, non-polar molecules (O<sub>2</sub>, CO<sub>2</sub>, steroid hormones) pass straight through the phospholipid bilayer, down their concentration gradient.</li>
+        <li><strong>Facilitated diffusion</strong> — larger or charged particles (glucose, ions) move down their gradient <em>through a protein</em>. Still passive, still no ATP — the protein provides a route, not a push.</li>
+        <li><strong>Osmosis</strong> — the movement of <em>water</em> across a semi-permeable membrane, from higher to lower water potential.</li>
+      </ul>
+      <div class="panel warn">
+        <h3>Facilitated diffusion is not active transport</h3>
+        <p>Involving a protein does not make transport active. The distinction is direction and energy: passive transport always moves down a gradient and costs no ATP, regardless of whether a protein is involved.</p>
+      </div>''') +
+    sec('''      <h2>Active transport — ATP required</h2>
+      <ul class="checklist">
+        <li><strong>Primary active transport</strong> — directly uses ATP to move substances <em>against</em> their gradient. The sodium-potassium pump is the standard example: 3 Na<sup>+</sup> out, 2 K<sup>+</sup> in, per ATP.</li>
+        <li><strong>Secondary active transport (co-transport)</strong> — uses the gradient built by primary active transport rather than ATP directly. Glucose absorption in the small intestine works this way, riding the sodium gradient inward via SGLT1.</li>
+      </ul>
+      <h2>Bulk transport</h2>
+      <p><strong>Endocytosis</strong> brings large material into the cell in a vesicle (phagocytosis for solids, pinocytosis for fluids); <strong>exocytosis</strong> releases material out. Both require ATP.</p>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Tonicity, quickly</h2>
+      <table class="data-table">
+        <tr><th>Solution</th><th>Relative solute</th><th>Effect on an animal cell</th></tr>
+        <tr><td>Hypotonic</td><td>Lower outside</td><td>Water enters; cell swells and may lyse</td></tr>
+        <tr><td>Isotonic</td><td>Equal</td><td>No net movement</td></tr>
+        <tr><td>Hypertonic</td><td>Higher outside</td><td>Water leaves; cell shrinks (crenation)</td></tr>
+      </table>
+      <p>This is why intravenous fluids must be isotonic, and it underlies <a href="hydration-and-performance.html">fluid balance during exercise</a> — including why overdrinking dilutes blood sodium.</p>'''),
+    [("kidney-function-explained.html", "Kidney function explained"), ("how-digestion-works.html", "How digestion works"), ("electrolytes-explained.html", "Electrolytes explained")],
+    faq=[
+        ("Is facilitated diffusion active or passive?", "Passive. It moves substances down their concentration gradient and requires no ATP. The involvement of a transport protein does not make it active; only movement against a gradient using energy does."),
+        ("How does the sodium-potassium pump work?", "It is primary active transport, using one ATP to move three sodium ions out of the cell and two potassium ions in, against their concentration gradients."),
+        ("What happens to a cell in a hypotonic solution?", "Water moves into the cell because solute concentration is lower outside. An animal cell swells and may burst, a process called lysis."),
+    ],
+)
+
+add(
+    "muscle-contraction-explained",
+    "Muscle Contraction: The Sliding Filament Theory",
+    "Sarcomere anatomy, the cross-bridge cycle, the role of calcium and ATP, and why rigor mortis happens — a revision guide.",
+    "science", "Physiology", "Muscle contraction: the sliding filament theory",
+    "Muscles don't shorten because the filaments shorten — they shorten because the filaments slide past one another. That distinction is the whole theory.",
+    sec('''      <h2>Sarcomere anatomy</h2>
+      <p>The sarcomere is the functional unit of a muscle fibre, running from one Z-line to the next.</p>
+      <table class="data-table">
+        <tr><th>Region</th><th>Contains</th><th>During contraction</th></tr>
+        <tr><td>Z-line</td><td>Anchors thin filaments</td><td>Z-lines move closer together</td></tr>
+        <tr><td>I band</td><td>Thin (actin) only</td><td><strong>Shortens</strong></td></tr>
+        <tr><td>A band</td><td>Full thick (myosin) length</td><td><strong>Stays the same</strong></td></tr>
+        <tr><td>H zone</td><td>Thick only, no overlap</td><td><strong>Shortens</strong></td></tr>
+      </table>
+      <div class="panel warn">
+        <h3>The classic exam question</h3>
+        <p>Which band does <em>not</em> change length during contraction? The <strong>A band</strong>. It corresponds to the full length of the myosin filament, and myosin does not shorten — the actin simply slides further over it.</p>
+      </div>''') +
+    sec('''      <h2>The cross-bridge cycle</h2>
+      <ol>
+        <li>A nerve impulse triggers <strong>calcium release</strong> from the sarcoplasmic reticulum.</li>
+        <li>Ca<sup>2+</sup> binds <strong>troponin</strong>, which shifts <strong>tropomyosin</strong> off the myosin-binding sites on actin.</li>
+        <li>The myosin head binds actin, forming a <strong>cross-bridge</strong>.</li>
+        <li>The <strong>power stroke</strong>: the head pivots, pulling actin inward, and ADP + P<sub>i</sub> are released.</li>
+        <li>A new <strong>ATP</strong> binds myosin, causing it to <em>detach</em> from actin.</li>
+        <li>ATP is hydrolysed, re-cocking the head, and the cycle repeats while calcium remains elevated.</li>
+      </ol>
+      <div class="panel">
+        <h3>ATP has two separate jobs here</h3>
+        <p>ATP binding causes <em>detachment</em>; ATP hydrolysis <em>re-cocks</em> the head. This is why rigor mortis occurs — with no ATP after death, myosin heads cannot detach from actin, and the muscle locks in place.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Fibre types</h2>
+      <p>Which fibres a muscle recruits shapes its fuel demands — slow-twitch fibres rely heavily on oxidative metabolism, fast-twitch fibres on <a href="glycolysis-explained.html">glycolysis</a> and phosphocreatine. See <a href="muscle-fiber-types-and-nutrition.html">muscle fibre types and nutrition</a> and <a href="energy-systems-explained.html">the three energy systems</a>.</p>'''),
+    [("muscle-fiber-types-and-nutrition.html", "Muscle fibre types"), ("energy-systems-explained.html", "The three energy systems"), ("atp-explained.html", "What is ATP?")],
+    faq=[
+        ("Which sarcomere band stays the same length during contraction?", "The A band. It corresponds to the full length of the myosin filament, which does not shorten. The I band and H zone both shorten as actin slides over myosin."),
+        ("What is the role of calcium in muscle contraction?", "Calcium binds troponin, which moves tropomyosin away from the myosin-binding sites on actin, allowing cross-bridges to form. Without calcium, those binding sites remain blocked."),
+        ("Why does rigor mortis occur?", "ATP is required for myosin heads to detach from actin. After death, ATP production stops, so cross-bridges cannot release and the muscle remains locked in a contracted state."),
+    ],
+)
+
+add(
+    "energy-systems-explained",
+    "The Three Energy Systems Explained",
+    "The phosphagen, glycolytic and oxidative systems — their fuel, duration, power output, and how they overlap during exercise.",
+    "science", "Physiology", "The three energy systems",
+    "All three systems run at once. What changes with exercise intensity and duration is which one dominates.",
+    sec('''      <h2>Side by side</h2>
+      <table class="data-table">
+        <tr><th>System</th><th>Fuel</th><th>Duration</th><th>Power</th><th>Oxygen?</th></tr>
+        <tr><td>Phosphagen (ATP-PC)</td><td>Stored ATP, creatine phosphate</td><td>~0–10 s</td><td>Highest</td><td>No</td></tr>
+        <tr><td>Glycolytic (anaerobic)</td><td>Glucose, muscle glycogen</td><td>~10 s–2 min</td><td>High</td><td>No</td></tr>
+        <tr><td>Oxidative (aerobic)</td><td>Carbohydrate, fat, some protein</td><td>2 min onward</td><td>Lowest</td><td>Yes</td></tr>
+      </table>
+      <p>The trade-off is consistent: the faster a system can produce ATP, the shorter it can sustain that output.</p>''') +
+    sec('''      <h2>How each works</h2>
+      <ul class="checklist">
+        <li><strong>Phosphagen</strong> — creatine phosphate donates a phosphate to ADP, regenerating ATP almost instantly. This is the system <a href="creatine-explained.html">creatine supplementation</a> targets, and it powers a maximal sprint or a heavy set.</li>
+        <li><strong>Glycolytic</strong> — <a href="glycolysis-explained.html">glycolysis</a> breaks glucose down to pyruvate, which becomes lactate when demand outpaces oxygen delivery. Fast, but limited.</li>
+        <li><strong>Oxidative</strong> — pyruvate and fatty acids enter the <a href="krebs-cycle-explained.html">Krebs cycle</a> and <a href="electron-transport-chain-explained.html">electron transport chain</a>. Far slower to ramp up, but its capacity is enormous.</li>
+      </ul>
+      <div class="panel warn">
+        <h3>Lactate is not the cause of soreness</h3>
+        <p>Lactate clears within roughly an hour of exercise, whereas delayed-onset muscle soreness peaks 24–48 hours later. DOMS is associated with mechanical damage and inflammation, not lingering lactate. Lactate is also a usable fuel — the heart and liver take it up readily.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Why fat can't fuel sprinting</h2>
+      <p>Fat carries more energy per gram than carbohydrate, but oxidizing it requires more oxygen per unit of ATP and proceeds through more steps. It cannot deliver ATP fast enough for high-intensity effort. This is the physiological reason carbohydrate availability limits high-intensity performance, and why <a href="carb-loading-for-athletes.html">carb loading</a> matters for endurance events.</p>'''),
+    [("glycolysis-explained.html", "Glycolysis explained"), ("carb-loading-for-athletes.html", "Carb loading for athletes"), ("creatine-explained.html", "Creatine explained")],
+    faq=[
+        ("What are the three energy systems?", "The phosphagen (ATP-PC) system for efforts up to about 10 seconds, the glycolytic system for roughly 10 seconds to 2 minutes, and the oxidative (aerobic) system for sustained effort beyond about 2 minutes."),
+        ("Does lactic acid cause muscle soreness?", "No. Lactate clears within about an hour of exercise, while delayed-onset muscle soreness peaks 24 to 48 hours later. DOMS is associated with mechanical damage and inflammation rather than lactate."),
+        ("Why can't fat fuel high-intensity exercise?", "Oxidising fat requires more oxygen per unit of ATP and involves more metabolic steps than using carbohydrate, so it cannot supply ATP quickly enough to sustain high-intensity effort."),
+    ],
+)
+
+add(
+    "kidney-function-explained",
+    "Kidney Function: The Nephron Explained",
+    "Filtration, reabsorption and secretion in the nephron, how ADH and aldosterone regulate water and sodium, and how urine is concentrated.",
+    "science", "Physiology", "Kidney function: the nephron explained",
+    "The kidneys filter your entire blood volume many times a day, then reclaim almost everything they filtered — the reabsorption is the impressive part.",
+    sec('''      <h2>Three processes</h2>
+      <ul class="checklist">
+        <li><strong>Filtration</strong> — at the glomerulus, pressure forces water and small solutes into Bowman's capsule. Blood cells and most proteins are too large to pass, so their presence in urine is a sign of damage.</li>
+        <li><strong>Reabsorption</strong> — useful substances are returned to the blood. Around 180 litres are filtered per day but only 1–2 litres leave as urine, meaning over 99% of filtrate is reabsorbed.</li>
+        <li><strong>Secretion</strong> — additional wastes, drugs, and excess H<sup>+</sup> or K<sup>+</sup> are actively added to the filtrate.</li>
+      </ul>
+      <h2>Along the nephron</h2>
+      <table class="data-table">
+        <tr><th>Segment</th><th>Main job</th></tr>
+        <tr><td>Proximal convoluted tubule</td><td>Bulk reabsorption — all glucose and amino acids, most Na<sup>+</sup> and water</td></tr>
+        <tr><td>Descending loop of Henle</td><td>Permeable to water only — water leaves, filtrate concentrates</td></tr>
+        <tr><td>Ascending loop of Henle</td><td>Impermeable to water — Na<sup>+</sup>/K<sup>+</sup>/Cl<sup>−</sup> pumped out, building the medullary gradient</td></tr>
+        <tr><td>Distal convoluted tubule</td><td>Fine-tuning of Na<sup>+</sup>, K<sup>+</sup> and pH, under hormonal control</td></tr>
+        <tr><td>Collecting duct</td><td>Final water reabsorption, controlled by ADH</td></tr>
+      </table>''') +
+    sec('''      <h2>Hormonal control</h2>
+      <ul class="checklist">
+        <li><strong>ADH (vasopressin)</strong> — released when blood is too concentrated. It inserts aquaporins into the collecting duct, increasing water reabsorption, producing smaller volumes of more concentrated urine. Alcohol suppresses ADH, which is why it is a diuretic — see <a href="alcohol-and-macros.html">alcohol and macros</a>.</li>
+        <li><strong>Aldosterone</strong> — released via the renin-angiotensin system when blood pressure or sodium falls. It increases Na<sup>+</sup> reabsorption in the distal tubule, and water follows osmotically.</li>
+      </ul>
+      <div class="panel">
+        <h3>Countercurrent multiplication</h3>
+        <p>The loop of Henle establishes a salt gradient in the medulla, becoming saltier with depth. The collecting duct passes back down through that gradient, so water can be drawn out along its whole length. Animals needing highly concentrated urine have notably longer loops.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <p>These mechanisms are what make <a href="electrolytes-explained.html">electrolyte balance</a> and <a href="hydration-and-performance.html">hydration</a> physiologically self-correcting for most people under normal conditions.</p>'''),
+    [("electrolytes-explained.html", "Electrolytes explained"), ("hydration-and-performance.html", "Hydration and performance"), ("homeostasis-explained.html", "Homeostasis explained")],
+    faq=[
+        ("What are the three main processes of the nephron?", "Filtration at the glomerulus, reabsorption of useful substances back into the blood, and secretion of additional wastes into the filtrate."),
+        ("How much filtrate is reabsorbed?", "Around 180 litres are filtered per day but only 1 to 2 litres are excreted as urine, meaning over 99% of the filtrate is reabsorbed."),
+        ("What does ADH do?", "Antidiuretic hormone inserts aquaporins into the collecting duct, increasing water reabsorption and producing a smaller volume of more concentrated urine. Alcohol suppresses ADH, which is why it acts as a diuretic."),
+    ],
+)
+
+add(
+    "beta-oxidation-explained",
+    "Beta-Oxidation: How Fat Is Burned for Energy",
+    "How fatty acids are broken down into acetyl-CoA — activation, carnitine shuttle, the four repeating steps, and why fat yields more ATP than glucose.",
+    "science", "Metabolism", "Beta-oxidation: how fat is burned for energy",
+    "Fat is the body's largest energy store, and beta-oxidation is the pathway that converts it into something the Krebs cycle can use.",
+    sec('''      <h2>Getting the fatty acid into the mitochondrion</h2>
+      <ol>
+        <li><strong>Activation</strong> — in the cytosol, the fatty acid is joined to coenzyme A to form fatty acyl-CoA. This costs the equivalent of 2 ATP.</li>
+        <li><strong>The carnitine shuttle</strong> — long-chain fatty acyl-CoA cannot cross the inner mitochondrial membrane directly. Carnitine palmitoyltransferase I (CPT-1) transfers it to carnitine for transport, and it is reassembled inside.</li>
+      </ol>
+      <div class="panel">
+        <h3>Why CPT-1 matters</h3>
+        <p>CPT-1 is the rate-limiting step of fat oxidation, and it is inhibited by malonyl-CoA — a molecule produced when fatty acid <em>synthesis</em> is active. That reciprocal control prevents the cell from building and breaking down fat simultaneously.</p>
+      </div>''') +
+    sec('''      <h2>The four repeating steps</h2>
+      <p>Each cycle removes two carbons from the fatty acid chain, in the same order every time:</p>
+      <ol>
+        <li><strong>Oxidation</strong> — produces FADH<sub>2</sub></li>
+        <li><strong>Hydration</strong> — water is added across the double bond</li>
+        <li><strong>Oxidation</strong> — produces NADH</li>
+        <li><strong>Thiolysis</strong> — the chain is cleaved, releasing acetyl-CoA</li>
+      </ol>
+      <p>A mnemonic that holds: <strong>oxidise, hydrate, oxidise, cleave</strong>. The cycle repeats until the chain is fully converted to acetyl-CoA, which feeds the <a href="krebs-cycle-explained.html">Krebs cycle</a>.</p>
+      <h2>Why fat yields more energy</h2>
+      <p>Palmitate (16 carbons) undergoes 7 cycles, producing 8 acetyl-CoA, 7 FADH<sub>2</sub>, and 7 NADH — roughly <strong>106 net ATP</strong>, versus about 30–32 for glucose. Fatty acids are far more reduced (more C-H bonds, less oxygen) than carbohydrate, so there are simply more electrons to harvest. That's the same reason fat supplies 9 kcal/g against carbohydrate's 4.</p>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Where ketones come in</h2>
+      <p>When carbohydrate is scarce, oxaloacetate is diverted toward gluconeogenesis, so acetyl-CoA cannot all enter the Krebs cycle. The liver converts the excess into ketone bodies, which other tissues — including the brain — can use. This is the biochemistry underlying <a href="ketogenic-diet-explained.html">the ketogenic diet</a>.</p>'''),
+    [("krebs-cycle-explained.html", "The Krebs cycle explained"), ("ketogenic-diet-explained.html", "The ketogenic diet"), ("fats.html", "What fat actually does")],
+    faq=[
+        ("What are the four steps of beta-oxidation?", "Oxidation producing FADH2, hydration, a second oxidation producing NADH, and thiolysis which cleaves off acetyl-CoA. The cycle repeats until the fatty acid chain is fully converted."),
+        ("What is the rate-limiting step of fat oxidation?", "Carnitine palmitoyltransferase I (CPT-1), which transfers long-chain fatty acyl-CoA onto carnitine for transport into the mitochondrion. It is inhibited by malonyl-CoA."),
+        ("Why does fat provide more energy than carbohydrate?", "Fatty acids are more reduced, with more carbon-hydrogen bonds and less oxygen, so more electrons can be harvested per gram. This is why fat supplies about 9 kcal/g compared with 4 kcal/g for carbohydrate."),
+    ],
+)
+
+add(
+    "b-vitamins-and-metabolism",
+    "B Vitamins as Coenzymes in Metabolism",
+    "How each B vitamin functions as a coenzyme in energy metabolism, which pathway it serves, and what deficiency causes.",
+    "science", "Biochemistry", "B vitamins as coenzymes in metabolism",
+    "B vitamins don't provide energy themselves — they're the coenzymes without which the pathways that release energy cannot run.",
+    sec('''      <h2>The coenzyme map</h2>
+      <table class="data-table">
+        <tr><th>Vitamin</th><th>Coenzyme form</th><th>Role</th><th>Deficiency disease</th></tr>
+        <tr><td>B1 (thiamine)</td><td>TPP</td><td>Pyruvate → acetyl-CoA; α-ketoglutarate step</td><td>Beriberi; Wernicke-Korsakoff</td></tr>
+        <tr><td>B2 (riboflavin)</td><td>FAD, FMN</td><td>Electron carrier in Krebs and beta-oxidation</td><td>Ariboflavinosis</td></tr>
+        <tr><td>B3 (niacin)</td><td>NAD<sup>+</sup>, NADP<sup>+</sup></td><td>Principal electron carrier across metabolism</td><td>Pellagra</td></tr>
+        <tr><td>B5 (pantothenic acid)</td><td>Coenzyme A</td><td>Carries acyl groups; forms acetyl-CoA</td><td>Rare</td></tr>
+        <tr><td>B6 (pyridoxine)</td><td>PLP</td><td>Amino acid transamination</td><td>Anaemia, neuropathy</td></tr>
+        <tr><td>B7 (biotin)</td><td>Biotin</td><td>Carboxylation reactions</td><td>Rare</td></tr>
+        <tr><td>B9 (folate)</td><td>THF</td><td>One-carbon transfer; DNA synthesis</td><td>Megaloblastic anaemia; neural tube defects</td></tr>
+        <tr><td>B12 (cobalamin)</td><td>Methylcobalamin</td><td>Works with folate; myelin maintenance</td><td>Megaloblastic anaemia; nerve damage</td></tr>
+      </table>''') +
+    sec('''      <h2>Why deficiency symptoms are so broad</h2>
+      <p>Because these coenzymes serve many enzymes across many pathways at once, deficiency rarely produces one isolated symptom. Fatigue is near-universal, since energy metabolism itself is impaired. Neurological symptoms are also common — nervous tissue has high metabolic demand and little capacity to compensate.</p>
+      <div class="panel warn">
+        <h3>The folate and B12 trap</h3>
+        <p>High folate intake can correct the anaemia of B12 deficiency while the neurological damage continues unchecked — the blood picture normalizes, but nerve damage progresses and can become irreversible. This is why B12 status matters independently, particularly on a <a href="vitamin-b12-and-vegan-diets.html">vegan diet</a>.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Water-soluble, with a caveat</h2>
+      <p>Most B vitamins are water-soluble and excess is excreted, so toxicity is uncommon — but not impossible. High-dose B6 supplementation over long periods can cause peripheral neuropathy, and B12 is stored in the liver for years, which is why deficiency there develops slowly. See <a href="fat-soluble-vitamins-explained.html">fat-soluble vitamins</a> for the contrast.</p>'''),
+    [("enzymes-explained.html", "Enzymes explained"), ("vitamin-b12-and-vegan-diets.html", "B12 on a vegan diet"), ("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients")],
+    faq=[
+        ("Do B vitamins give you energy?", "Not directly. They contain no calories. They act as coenzymes that allow the pathways releasing energy from carbohydrate, fat, and protein to function, so deficiency causes fatigue but supplementation does not add energy when status is already adequate."),
+        ("Which B vitamin becomes NAD+?", "Niacin (vitamin B3) forms NAD+ and NADP+, the principal electron carriers used throughout glycolysis, the Krebs cycle, and beta-oxidation."),
+        ("Why is taking folate without B12 a problem?", "Folate can correct the megaloblastic anaemia caused by B12 deficiency while the neurological damage continues undetected. Masking the blood abnormality allows nerve damage to progress and potentially become irreversible."),
     ],
 )
 

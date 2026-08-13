@@ -80,6 +80,8 @@
   --color-pop2-bg: #e2f7f9;
   --color-pop3: #9b5de5;
   --color-pop3-bg: #f1e9fb;
+  --color-pop4: #2f62c4;
+  --color-pop4-bg: #e8effb;
 
   --radius: 14px;
   --radius-sm: 9px;
@@ -146,6 +148,7 @@ a:hover { color: var(--color-primary); }
 .icon-badge.carbs { background: var(--color-carbs-bg); color: var(--color-carbs); }
 .icon-badge.athletes { background: var(--color-pop2-bg); color: var(--color-pop2); }
 .icon-badge.diets { background: var(--color-pop3-bg); color: var(--color-pop3); }
+.icon-badge.science { background: var(--color-pop4-bg); color: var(--color-pop4); }
 .icon-badge.neutral { background: rgba(255,255,255,0.95); color: var(--color-primary-dark); }
 .icon-badge.lg { width: 62px; height: 62px; border-radius: 16px; font-size: 2rem; }
 
@@ -1266,3 +1269,8 @@ sup.ref a {
 }
 .faq-item[open] summary::after { content: "\2212"; }
 .faq-item p { margin: 0 0 1rem; color: var(--color-text-muted); }
+
+/* ---------- Science category ---------- */
+
+.pill.science { background: var(--color-pop4-bg); color: var(--color-pop4); }
+.card.science:hover { box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-pop4) inset; }
