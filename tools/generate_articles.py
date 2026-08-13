@@ -244,6 +244,10 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
@@ -693,7 +697,7 @@ add(
 add(
     "carb-loading-for-athletes",
     "Carb Loading for Athletes: How It Works",
-    "How carb loading works, the modern protocol most athletes actually use, and who genuinely benefits from it.",
+    "How carb loading works, the modern protocol most athletes actually use, and who benefits from it.",
     "carbs", "Carbohydrate Guide", "Carb loading: how athletes maximize glycogen stores",
     "Carb loading isn't just eating a huge plate of pasta the night before a race — done properly, it's a deliberate glycogen-maximizing strategy.",
     sec('''      <h2>The idea behind it</h2>
@@ -1068,7 +1072,7 @@ add(
     "general", "Calculator Guide", "IIFYM: what is flexible dieting, and does it work?",
     "\"If It Fits Your Macros\" (IIFYM) is the idea that as long as you hit your protein, fat, and carb targets, the specific foods you eat them from don't matter.",
     sec('''      <h2>The case for it</h2>
-      <p>IIFYM's biggest strength is adherence: no foods are strictly off-limits, which makes it easier for many people to sustain over the long term compared to highly restrictive diets. If your macro targets are set appropriately for your goal, hitting them consistently — regardless of exact food choices — genuinely does drive most of the physical outcome (fat loss, muscle gain, maintenance).</p>''') +
+      <p>IIFYM's biggest strength is adherence: no foods are strictly off-limits, which makes it easier for many people to sustain over the long term compared to highly restrictive diets. If your macro targets are set appropriately for your goal, hitting them consistently — regardless of exact food choices — drives most of the physical outcome (fat loss, muscle gain, maintenance).</p>''') +
     sec('''      <h2>Where it falls short</h2>
       <ul class="checklist">
         <li><strong>Micronutrients aren't tracked</strong> — hitting your macros with candy and processed food technically "fits," but won't supply the vitamins, minerals, and fiber whole foods provide</li>
@@ -1130,6 +1134,10 @@ def build_hub():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>All Nutrition Articles | GetMacros.net</title>
@@ -1203,6 +1211,10 @@ def build_about():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title}</title>
@@ -1285,6 +1297,10 @@ def build_privacy():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title}</title>
@@ -1379,6 +1395,10 @@ def build_404():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <meta name="robots" content="noindex, follow">
@@ -1559,7 +1579,7 @@ add(
     sec('''      <p><strong>Nutrient density</strong> describes how much nutritional value (vitamins, minerals, fiber, protein quality) a food provides relative to its calorie content. A food can be "energy dense" (lots of calories) without being nutrient dense, or vice versa — steamed broccoli and a candy bar can have wildly different nutrient density despite both containing carbohydrate calories.</p>''') +
     sec('''      <div class="panel">
         <h3>Why it matters even if your macros are perfect</h3>
-        <p>Hitting a protein/fat/carb target doesn't guarantee adequate vitamin, mineral, or fiber intake — that's the core limitation of pure macro tracking discussed in our <a href="iifym-flexible-dieting.html">IIFYM article</a>. Prioritizing nutrient-dense foods (vegetables, fruit, lean proteins, whole grains, legumes) within your calorie and macro targets is how you get both numbers right and genuinely well-nourished.</p>
+        <p>Hitting a protein/fat/carb target doesn't guarantee adequate vitamin, mineral, or fiber intake — that's the core limitation of pure macro tracking discussed in our <a href="iifym-flexible-dieting.html">IIFYM article</a>. Prioritizing nutrient-dense foods (vegetables, fruit, lean proteins, whole grains, legumes) within your calorie and macro targets is how you get both numbers right and stay well-nourished.</p>
       </div>''', bg="var(--color-carbs-bg)", tight=True),
     [("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients"), ("iifym-flexible-dieting.html", "IIFYM explained"), ("fiber-benefits.html", "Why fiber matters")]
 )
@@ -1580,7 +1600,7 @@ add(
           <p>Fibers built for short, powerful efforts that rely heavily on stored glycogen and produce force quickly, but fatigue faster — used in sprinting and heavy lifting.</p>
         </div>
       </div>''', bg="var(--color-carbs-bg)", tight=True) +
-    sec('''      <p>This split helps explain why endurance athletes (more reliant on sustained aerobic, fat- and glycogen-fueled effort) often need very high carbohydrate intakes to keep glycogen topped up,<sup class="ref"><a href="sources.html#c2">[1]</a></sup> while strength and power athletes (more reliant on fast-twitch, glycogen-dependent bursts) tend to prioritize protein for muscle repair alongside adequate — but not necessarily extreme — carbohydrate intake. See our full breakdown in <a href="macros-for-endurance-vs-strength-athletes.html">macros for endurance vs. strength athletes</a>.</p>'''),
+    sec('''      <p>This split explains a lot about how the two groups eat. Endurance athletes rely on sustained aerobic effort fueled by fat and glycogen, so they often need very high carbohydrate intakes to keep glycogen topped up.<sup class="ref"><a href="sources.html#c2">[1]</a></sup> Strength and power athletes rely more on fast-twitch, glycogen-dependent bursts, so they tend to prioritize protein for muscle repair alongside adequate — but not extreme — carbohydrate. See our full breakdown in <a href="macros-for-endurance-vs-strength-athletes.html">macros for endurance vs. strength athletes</a>.</p>'''),
     [("macros-for-endurance-vs-strength-athletes.html", "Macros for endurance vs. strength athletes"), ("what-is-glycogen.html", "What is glycogen?"), ("carb-loading-for-athletes.html", "Carb loading for athletes")]
 )
 
@@ -1597,7 +1617,7 @@ add(
         <tr><td>Small intestine</td><td>The main site of digestion and absorption: pancreatic enzymes finish breaking down protein into amino acids, fat into fatty acids (with help from bile), and carbs into simple sugars — all absorbed into the bloodstream here</td></tr>
         <tr><td>Large intestine</td><td>Water is absorbed, and fiber that wasn't digested is fermented by gut bacteria</td></tr>
       </table>''') +
-    sec('''      <p>The speed of this process varies by macronutrient and food: simple sugars are absorbed fastest, protein and fiber-rich complex carbs take longer, and fat slows digestion of everything eaten alongside it — one reason meals with a mix of macronutrients tend to produce a more gradual, sustained energy release than any single macronutrient eaten alone.</p>'''),
+    sec('''      <p>How fast this happens depends on the food. Simple sugars are absorbed fastest, protein and fiber-rich complex carbs take longer, and fat slows the digestion of everything eaten alongside it. That's one reason a mixed meal gives a more gradual, sustained energy release than any single macronutrient eaten on its own.</p>'''),
     [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("fiber-benefits.html", "Why fiber matters"), ("glycemic-index-explained.html", "What is the glycemic index?")]
 )
 
@@ -1741,7 +1761,7 @@ add(
     sec('''      <h2>What the research actually shows</h2>
       <p>In athletes without celiac disease or a diagnosed gluten sensitivity, controlled trials have found that a short-term gluten-free diet produces no measurable change in performance, gastrointestinal symptoms, or inflammatory markers compared to a normal mixed diet.<sup class="ref"><a href="sources.html#ath9">[9]</a></sup> That holds despite gluten-free eating being popular among endurance athletes specifically for perceived performance and gut-comfort benefits.</p>''') +
     sec('''      <h2>So why do some athletes swear by it?</h2>
-      <p>A few likely explanations that don't require gluten itself being the problem: cutting gluten usually means cutting a lot of processed food, refined sugar, and low-fiber packaged carbs at the same time — the same changes that show up in a lot of "clean eating" diets that improve digestion and energy regardless of gluten. There's also a real placebo effect in sports performance, and undiagnosed non-celiac gastrointestinal sensitivity does exist in a minority of people, even without full celiac disease.</p>''', bg="var(--color-pop2-bg)", tight=True) +
+      <p>There are simpler explanations that don't require gluten itself to be the culprit. Cutting gluten usually means cutting processed food, refined sugar, and low-fiber packaged carbs at the same time — the same changes behind most "clean eating" results. Placebo effects on perceived performance are also well documented. And non-celiac sensitivity is real in a minority of people, even without full celiac disease.</p>''', bg="var(--color-pop2-bg)", tight=True) +
     sec('''      <h2>The actual risk</h2>
       <p>Going gluten-free (or removing any other whole food group) without medical guidance can crowd out fiber, B vitamins, and iron that are otherwise easy to get from whole grains and fortified foods — see our <a href="fiber-benefits.html">fiber benefits guide</a> and <a href="micronutrients-vs-macronutrients.html">micronutrients vs. macronutrients</a> for what's actually at stake. If you suspect a real gluten or food sensitivity, that's worth testing for directly rather than guessing with a self-imposed elimination diet.</p>'''),
     [("famous-athlete-diets-fact-checked.html", "6 famous athlete diets, fact-checked"), ("fiber-benefits.html", "Fiber benefits"), ("common-nutrition-myths-debunked.html", "Common nutrition myths debunked")]
@@ -2151,7 +2171,7 @@ add(
     sec('''      <h2>What's in and what's out</h2>
       <p>Paleo includes lean meat (especially grass-fed or wild game), fish, fruit, vegetables, nuts, and seeds — foods that could plausibly be hunted or gathered. It excludes grains, legumes, dairy, refined sugar, and most processed food. Macronutrient-wise, it typically runs high protein (19-35% of calories), moderate fat (28-58%), and relatively low carbohydrate (22-40%) compared to a standard diet.<sup class="ref"><a href="sources.html#gen3">[1]</a></sup></p>''') +
     sec('''      <h2>What the evidence actually shows</h2>
-      <p>Paleo tends to produce weight loss and improved blood markers in short-term studies, largely because it cuts refined sugar and ultra-processed food — changes that would help on almost any eating pattern, not something unique to "eating like a caveman." Excluding whole grains and legumes also cuts out significant, well-established sources of fiber and micronutrients, so a poorly planned paleo diet can fall short there.<sup class="ref"><a href="sources.html#c5">[2]</a></sup></p>''', bg="var(--color-pop3-bg)", tight=True) +
+      <p>Paleo does tend to produce weight loss and better blood markers in short-term studies. But that's largely because it cuts refined sugar and ultra-processed food — changes that help on almost any eating pattern, not something unique to eating "like a caveman." There's a trade-off too: excluding whole grains and legumes removes well-established sources of fiber and micronutrients, so a poorly planned paleo diet can fall short there.<sup class="ref"><a href="sources.html#c5">[2]</a></sup></p>''', bg="var(--color-pop3-bg)", tight=True) +
     sec('''      <p><a href="calculators.html" class="btn btn-primary">Calculate your macros on paleo →</a></p>'''),
     [("diets-explained.html", "Diets explained: every major pattern"), ("carnivore-diet-explained.html", "The carnivore diet explained"), ("net-carbs-vs-total-carbs.html", "Net carbs vs. total carbs")]
 )
@@ -2254,12 +2274,12 @@ add(
 add(
     "are-protein-bars-actually-healthy",
     "Are Protein Bars Actually Healthy?",
-    "What's really in most protein bars, how to read the label past the marketing, and when a protein bar is a genuinely good choice.",
+    "What's really in most protein bars, how to read the label past the marketing, and when a protein bar is a good choice.",
     "protein", "For Students", "Are protein bars actually healthy?",
     "A protein bar can be a solid convenience food or barely-better-than-candy — the front-of-package marketing won't tell you which.",
     sec('''      <h2>What to actually check on the label</h2>
-      <p>Skip the front-of-package claims and look at three numbers: protein per calorie (aim for a bar where protein makes up a meaningful share of total calories, not just a few grams padded with sugar and fat), added sugar (many bars carry 15-20g, more than a candy bar), and fiber/sugar alcohols (which can cause digestive discomfort in large amounts).<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''') +
-    sec('''      <h2>When a protein bar is genuinely a good choice</h2>
+      <p>Skip the front-of-package claims and check three numbers on the back. <strong>Protein per calorie</strong> — protein should make up a real share of the total, not a few grams padded out with sugar and fat. <strong>Added sugar</strong> — many bars carry 15-20g, more than a candy bar. <strong>Fiber and sugar alcohols</strong> — useful in moderation, but a common cause of digestive discomfort in large amounts.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''') +
+    sec('''      <h2>When a protein bar is a good choice</h2>
       <p>A protein bar is a legitimately good option when whole food isn't practical — traveling, between meetings, post-workout when you need something quickly. It's a worse choice as a routine meal replacement, since whole foods generally deliver more fiber, micronutrients, and satiety per calorie than a processed bar.</p>''', bg="var(--color-protein-bg)", tight=True) +
     sec('''      <p><a href="high-protein-foods-list.html" class="btn btn-primary">See whole-food high-protein options →</a></p>'''),
     [("high-protein-foods-list.html", "High-protein foods list"), ("protein-powder-101.html", "Protein powder 101"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label")]
@@ -2384,7 +2404,7 @@ add(
     sec('''      <h2>The actual difference</h2>
       <p>Added sugar (in soda, candy, baked goods) and naturally occurring sugar (in fruit, dairy) can be chemically near-identical — but whole fruit delivers that sugar packaged with fiber, water, and micronutrients that slow digestion and absorption, producing a gentler blood sugar response than the same amount of sugar consumed on its own.<sup class="ref"><a href="sources.html#c1">[1]</a></sup> This is often called the "food matrix" effect — the surrounding food structure changes how a nutrient is absorbed, not just what the nutrient itself is.</p>''') +
     sec('''      <h2>Why nutrition labels separate them</h2>
-      <p>U.S. nutrition labels now list "Added Sugars" separately from total sugar specifically because added sugar is the component linked most directly to excess calorie intake and health risk in observational research — someone eating an orange isn't at meaningful risk of "too much sugar" the way someone drinking multiple sodas a day is, even though both contain sugar.<sup class="ref"><a href="sources.html#c1">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+      <p>U.S. nutrition labels now list "Added Sugars" separately from total sugar. That's because added sugar is the component most directly linked to excess calorie intake and health risk in observational research. Someone eating an orange isn't at meaningful risk of "too much sugar" the way someone drinking several sodas a day is — even though both contain sugar.<sup class="ref"><a href="sources.html#c1">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
     [("sugar-vs-starch.html", "Sugar vs. starch"), ("sugar-addiction-is-it-real.html", "Is sugar addiction real?"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label")]
 )
 
@@ -2395,7 +2415,7 @@ add(
     "protein", "For Students", "What's the best breakfast for muscle gain?",
     "There's no magic breakfast that builds muscle by itself — but a poorly built one can make hitting your daily protein target considerably harder.",
     sec('''      <h2>What actually matters</h2>
-      <p>The main thing a good muscle-building breakfast does is contribute meaningfully to your daily protein target — aiming for roughly 25-40g of protein at breakfast (eggs, Greek yogurt, cottage cheese, a protein shake) makes the rest of the day's target easier to hit than starting with a protein-light meal like cereal or a plain bagel.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> There's no special muscle-building property to eating specifically in the morning — it's the same principle as any other meal, just easier to underweight if breakfast defaults to mostly carbs.</p>''') +
+      <p>A good muscle-building breakfast does one main thing: it puts a real dent in your daily protein target. Aim for roughly 25-40g — eggs, Greek yogurt, cottage cheese, or a protein shake. Starting there makes the rest of the day far easier than opening with a protein-light meal like cereal or a plain bagel.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> There's no special muscle-building property to eating specifically in the morning — it's the same principle as any other meal, just easier to underweight if breakfast defaults to mostly carbs.</p>''') +
     sec('''      <h2>A simple template</h2>
       <table class="data-table">
         <tr><th>Component</th><th>Example</th></tr>
@@ -2415,7 +2435,7 @@ add(
     sec('''      <h2>What the research actually shows</h2>
       <p>When total daily calories are matched, eating later in the day hasn't been shown to independently cause more fat gain than eating the same food earlier — your body doesn't store calories differently after a specific clock time.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup> The real association between late-night eating and weight gain is more indirect: late-night eating is often additional, unplanned eating on top of a day's normal intake (mindless snacking while watching TV), rather than a like-for-like swap.</p>''') +
     sec('''      <h2>Where timing has smaller, real effects</h2>
-      <p>Eating very close to bedtime can affect sleep quality or digestive comfort for some people, and irregular, very late eating patterns are associated with worse diet quality overall in observational studies — but neither of those is the same as "late calories are stored differently." Total daily intake is still what predicts weight change.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
+      <p>Eating very close to bedtime can affect sleep or digestive comfort for some people. And in observational studies, irregular late-night eating patterns do track with worse overall diet quality. Neither of those, though, means late calories are stored differently. Total daily intake is still what predicts weight change.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
     [("meal-frequency-and-metabolism.html", "Meal frequency and metabolism"), ("best-time-to-eat-carbs.html", "Is there a best time to eat carbs?"), ("intermittent-fasting-and-macros.html", "Intermittent fasting and macros")]
 )
 
@@ -2582,7 +2602,7 @@ add(
         <li><strong>Heme iron</strong> — found in meat, poultry, and fish. Absorbed far more efficiently and less affected by other things in the meal.</li>
         <li><strong>Non-heme iron</strong> — found in plants, eggs, and fortified foods. Absorbed less efficiently, and inhibited by tea, coffee, and phytates in whole grains and legumes.</li>
       </ul>
-      <p>Vitamin C markedly improves non-heme absorption, which is why pairing plant iron sources with citrus, peppers, or tomatoes is a genuinely useful habit — and why <a href="vegan-macros-guide.html">vegan</a> and <a href="macros-for-vegetarians.html">vegetarian</a> athletes need to plan iron more deliberately.<sup class="ref"><a href="sources.html#mic2">[1]</a></sup></p>''', bg="var(--color-pop2-bg)", tight=True) +
+      <p>Vitamin C markedly improves non-heme absorption, which is why pairing plant iron sources with citrus, peppers, or tomatoes is a useful habit — and why <a href="vegan-macros-guide.html">vegan</a> and <a href="macros-for-vegetarians.html">vegetarian</a> athletes need to plan iron more deliberately.<sup class="ref"><a href="sources.html#mic2">[1]</a></sup></p>''', bg="var(--color-pop2-bg)", tight=True) +
     sec('''      <div class="panel warn">
         <h3>Don't self-supplement blindly</h3>
         <p>Iron is one of the few nutrients where excess is genuinely harmful, and the symptoms of low iron overlap with plenty of other causes. Low iron should be confirmed with a blood test (ferritin plus a full blood count) before supplementing, not guessed at.</p>
@@ -2677,7 +2697,7 @@ add(
       <p>Two practical consequences follow from dissolving in fat rather than water:</p>
       <ul class="checklist">
         <li><strong>You need dietary fat to absorb them.</strong> Eating a carrot with no fat at all means absorbing much less of its beta-carotene. This is one of the concrete downsides of very low-fat diets.<sup class="ref"><a href="sources.html#mic6">[1]</a></sup></li>
-        <li><strong>Excess is stored, not excreted.</strong> Water-soluble vitamins are largely flushed out in urine when you overshoot. Fat-soluble ones accumulate in the liver and fat tissue, so high-dose supplementation — particularly vitamin A — can build to genuinely toxic levels over time.<sup class="ref"><a href="sources.html#mic6">[1]</a></sup></li>
+        <li><strong>Excess is stored, not excreted.</strong> Water-soluble vitamins are largely flushed out in urine when you overshoot. Fat-soluble ones accumulate in the liver and fat tissue, so high-dose supplementation — particularly vitamin A — can build to toxic levels over time.<sup class="ref"><a href="sources.html#mic6">[1]</a></sup></li>
       </ul>
       <div class="panel warn">
         <h3>Preformed vitamin A vs. beta-carotene</h3>
@@ -2761,7 +2781,7 @@ add(
       <p>The effect is real but should be kept in proportion. Pre-sleep protein is best understood as <em>a convenient way to hit your daily total and spread intake evenly</em>, not a separate magic window. If you're already eating 1.6–2.2 g/kg spread across the day, adding a night-time serving on top adds much less than the headline suggests.<sup class="ref"><a href="sources.html#p2">[2]</a></sup></p>
       <div class="panel">
         <h3>Practical version</h3>
-        <p>If you struggle to reach your protein target, moving a serving to before bed is a genuinely useful place to put it. Good options: cottage cheese, Greek yogurt, milk, or a casein shake — all slow-digesting. See <a href="whey-vs-casein-protein.html">whey vs. casein</a> for the difference.</p>
+        <p>If you struggle to reach your protein target, moving a serving to before bed is a useful place to put it. Good options: cottage cheese, Greek yogurt, milk, or a casein shake — all slow-digesting. See <a href="whey-vs-casein-protein.html">whey vs. casein</a> for the difference.</p>
       </div>''', bg="var(--color-protein-bg)", tight=True),
     [("whey-vs-casein-protein.html", "Whey vs. casein protein"), ("protein-timing.html", "Does protein timing matter?"), ("protein-for-muscle-growth.html", "Protein for muscle growth")]
 )
