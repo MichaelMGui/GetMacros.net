@@ -181,7 +181,6 @@ def build():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>

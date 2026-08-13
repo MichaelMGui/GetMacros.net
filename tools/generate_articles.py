@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260814b"
+ASSET_VERSION = "20260814c"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -317,7 +317,6 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1219,7 +1218,6 @@ def build_hub():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1325,7 +1323,6 @@ def build_about():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1426,7 +1423,6 @@ def build_privacy():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1524,7 +1520,6 @@ def build_contact():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1625,7 +1620,6 @@ def build_terms():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1695,7 +1689,6 @@ def build_404():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>

@@ -579,7 +579,6 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/confetti.js?v={ASSET_VERSION}"></script>
 <script src="js/quiz.js?v={ASSET_VERSION}"></script>
 <script>

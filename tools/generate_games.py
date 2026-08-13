@@ -177,7 +177,6 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/confetti.js?v={ASSET_VERSION}"></script>
 <script src="js/games.js?v={ASSET_VERSION}"></script>
 <script>
@@ -265,7 +264,6 @@ def build_quiz_hub():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
-<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
