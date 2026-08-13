@@ -105,6 +105,27 @@ GAMES_META = [
      "intro": "You'll see one food at a time. Click Vegan, Vegetarian, or Neither as fast as you can — three wrong answers and it's game over. Beat your high score."},
 ]
 
+def quiz_hub_jsonld():
+    """CollectionPage + ItemList covering both quizzes and games on the hub page."""
+    items = (
+        [{"@type": "ListItem", "position": i + 1, "name": qz["title"], "url": f"https://getmacros.net/{qz['slug']}.html"}
+         for i, qz in enumerate(QUIZZES)]
+        + [{"@type": "ListItem", "position": len(QUIZZES) + i + 1, "name": g["title"], "url": f"https://getmacros.net/{g['slug']}.html"}
+           for i, g in enumerate(GAMES_META)]
+    )
+    data = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Quiz Yourself",
+        "url": "https://getmacros.net/quiz.html",
+        "inLanguage": "en",
+        "isPartOf": {"@type": "WebSite", "name": "GetMacros.net", "url": "https://getmacros.net/"},
+        "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items},
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
+
 
 def game_page(slug, title, icon, meta, intro, body_script, category="general"):
     return f'''<!doctype html>
@@ -197,10 +218,11 @@ def build_quiz_hub():
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>Quiz Yourself | GetMacros.net</title>
-<meta name="description" content="Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game — Macro Memory Match, Build-a-Plate, and Macro Sprint.">
+<meta name="description" content="Test what you know about protein, fat, carbs, and sports nutrition with interactive quizzes and hands-on nutrition games.">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/quiz.html">
-{seo_meta("Quiz Yourself", "Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game.", "https://getmacros.net/quiz.html", og_type="website")}
+{seo_meta("Quiz Yourself", "Test what you know about protein, fat, carbs, and sports nutrition with interactive quizzes and hands-on nutrition games.", "https://getmacros.net/quiz.html", og_type="website")}
+{quiz_hub_jsonld()}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}

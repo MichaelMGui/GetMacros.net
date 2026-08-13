@@ -98,6 +98,19 @@ def breadcrumb_jsonld(title, url, hub_name="Articles", hub_url="https://getmacro
     return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
 
 
+def webpage_jsonld(title, description, url):
+    data = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": title,
+        "url": url,
+        "inLanguage": "en",
+        "description": description,
+        "isPartOf": {"@type": "WebSite", "name": "GetMacros.net", "url": f"{SITE}/"},
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
 def hub_jsonld():
     """CollectionPage + ItemList for the articles hub, so search engines see the
     full index of articles rather than guessing at the page's purpose."""
@@ -1343,11 +1356,12 @@ def build_privacy():
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
-<title>{title}</title>
+<title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
+{webpage_jsonld(title, meta, url)}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
@@ -1546,6 +1560,7 @@ def build_terms():
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
+{webpage_jsonld(title, meta, url)}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
@@ -3955,6 +3970,258 @@ add(
         ("Do B vitamins give you energy?", "Not directly. They contain no calories. They act as coenzymes that allow the pathways releasing energy from carbohydrate, fat, and protein to function, so deficiency causes fatigue but supplementation does not add energy when status is already adequate."),
         ("Which B vitamin becomes NAD+?", "Niacin (vitamin B3) forms NAD+ and NADP+, the principal electron carriers used throughout glycolysis, the Krebs cycle, and beta-oxidation."),
         ("Why is taking folate without B12 a problem?", "Folate can correct the megaloblastic anaemia caused by B12 deficiency while the neurological damage continues undetected. Masking the blood abnormality allows nerve damage to progress and potentially become irreversible."),
+    ],
+)
+
+# --------------------------------------------------------- HEALTH LITERACY BATCH --
+
+add(
+    "antioxidants-and-free-radicals",
+    "Antioxidants and Free Radicals Explained",
+    "What free radicals and oxidative stress are, how antioxidants work, and why antioxidant supplements haven't lived up to the food-based evidence.",
+    "science", "Biochemistry", "Antioxidants and free radicals explained",
+    "Antioxidants get marketed like a superpower. The biochemistry behind them is real — the supplement claims built on top of it mostly aren't.",
+    sec('''      <h2>What a free radical actually is</h2>
+      <p>A free radical is a molecule with an unpaired electron, which makes it unstable and reactive. To stabilize itself, it steals an electron from a nearby molecule — DNA, a protein, a cell membrane lipid — which creates a new free radical and can trigger a damaging chain reaction. This process is called oxidative stress when it outpaces the body's ability to neutralize it.</p>
+      <p>Free radicals aren't purely a problem to eliminate: your immune cells deliberately generate them to destroy pathogens, and cell signaling relies on them in small amounts. The issue is <em>excess</em>, from sources like UV exposure, air pollution, smoking, and normal metabolic byproducts.</p>''') +
+    sec('''      <h2>How antioxidants work</h2>
+      <p>An antioxidant is a molecule that can donate an electron to a free radical without becoming unstable itself, ending the chain reaction. Vitamin C, vitamin E, beta-carotene, and selenium are the best-studied dietary antioxidants, alongside plant compounds like flavonoids and polyphenols found in berries, tea, and colorful vegetables.<sup class="ref"><a href="sources.html#health1">[1]</a></sup></p>
+      <div class="panel warn">
+        <h3>Why supplement trials disappointed</h3>
+        <p>Despite strong observational links between antioxidant-rich <em>diets</em> and lower disease risk, large randomized trials of concentrated antioxidant <em>supplements</em> (particularly high-dose beta-carotene and vitamin E) have repeatedly failed to reduce disease risk, and in a few cases showed harm. The leading explanation: food-based antioxidants arrive alongside fiber, hundreds of other plant compounds, and a different absorption pattern than an isolated, concentrated pill — the whole-food package appears to matter, not just the isolated molecule.<sup class="ref"><a href="sources.html#health1">[1]</a></sup></p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <p>The practical takeaway most researchers converge on: get antioxidants from a varied diet of fruits, vegetables, nuts, and tea rather than from high-dose isolated supplements. See <a href="vitamin-c-and-immunity.html">vitamin C</a> and <a href="fat-soluble-vitamins-explained.html">vitamin E's fat-soluble relatives</a> for the individual nutrients.</p>'''),
+    [("vitamin-c-and-immunity.html", "Vitamin C and immunity"), ("fiber-and-gut-microbiome.html", "Fiber and your gut microbiome"), ("ultra-processed-foods-explained.html", "Ultra-processed foods")],
+    faq=[
+        ("Do antioxidant supplements prevent disease?", "Large randomized trials of concentrated antioxidant supplements, particularly high-dose beta-carotene and vitamin E, have generally failed to reduce disease risk despite strong observational links between antioxidant-rich diets and lower risk."),
+        ("What is oxidative stress?", "Oxidative stress occurs when free radicals — reactive molecules with an unpaired electron — outpace the body's ability to neutralize them, potentially damaging DNA, proteins, and cell membranes."),
+        ("Are free radicals always bad?", "No. Immune cells deliberately produce free radicals to destroy pathogens, and they play a role in normal cell signaling. Problems arise from excess, driven by sources like UV exposure, pollution, and smoking."),
+    ],
+)
+
+add(
+    "probiotics-and-gut-health",
+    "Probiotics Explained: What the Evidence Supports",
+    "What probiotics are, which strains have real evidence behind them, and where the science is still too new to justify strong claims.",
+    "science", "Physiology", "Probiotics explained: what the evidence supports",
+    "\"Probiotic\" is a broad label covering everything from clinically tested strains to yogurt cups with a marketing sticker.",
+    sec('''      <h2>What counts as a probiotic</h2>
+      <p>A probiotic is a live microorganism that, administered in adequate amounts, confers a health benefit. That definition is strain-specific — evidence for one strain of <em>Lactobacillus</em> doesn't automatically apply to a different strain, even within the same species. This is the single most misunderstood part of probiotic marketing.<sup class="ref"><a href="sources.html#health2">[1]</a></sup></p>
+      <h2>Where the evidence is strongest</h2>
+      <ul class="checklist">
+        <li><strong>Antibiotic-associated diarrhea</strong> — certain strains modestly reduce incidence when taken alongside antibiotics</li>
+        <li><strong>Some forms of infectious diarrhea</strong>, particularly in children — moderate evidence for reduced duration</li>
+        <li><strong>Certain IBS symptom patterns</strong> — mixed but promising for specific strains</li>
+      </ul>''') +
+    sec('''      <h2>Where the evidence is weaker</h2>
+      <p>Broad claims about "boosting immunity" or "detoxing" outrun what strain-specific trials actually show. Effects tend to be modest, strain-specific, and often don't replicate cleanly across studies — a common pattern in a young and fast-moving research area.<sup class="ref"><a href="sources.html#health2">[1]</a></sup></p>
+      <div class="panel">
+        <h3>Food sources vs. supplements</h3>
+        <p>Fermented foods — yogurt with live cultures, kefir, sauerkraut, kimchi, miso — deliver live bacteria alongside genuine nutritional value, though the specific strains and doses are far less standardized than in a clinical supplement. Both are reasonable; neither is a cure-all.</p>
+      </div>
+      <p>Feeding the bacteria you already have — via fiber — has a stronger and broader evidence base than adding new ones. See <a href="fiber-and-gut-microbiome.html">fiber and your gut microbiome</a>.</p>''', bg="var(--color-pop4-bg)", tight=True),
+    [("fiber-and-gut-microbiome.html", "Fiber and your gut microbiome"), ("how-digestion-works.html", "How digestion works"), ("ultra-processed-foods-explained.html", "Ultra-processed foods")],
+    faq=[
+        ("Are all probiotics the same?", "No. Evidence is strain-specific — a benefit shown for one strain doesn't automatically apply to a different strain, even within the same bacterial species. This is the most commonly overlooked detail in probiotic marketing."),
+        ("What health benefits do probiotics have the strongest evidence for?", "The best-supported uses are reducing antibiotic-associated diarrhea and shortening some forms of infectious diarrhea, particularly in children. Broader immunity claims have much weaker support."),
+        ("Are fermented foods as good as probiotic supplements?", "Fermented foods like yogurt, kefir, and sauerkraut deliver live bacteria along with real nutritional value, but strains and doses are far less standardized than in a clinical-grade supplement. Both are reasonable choices."),
+    ],
+)
+
+add(
+    "understanding-a-lipid-panel",
+    "Understanding a Lipid Panel",
+    "What a cholesterol blood test actually measures, what the numbers mean, and how diet realistically moves each one.",
+    "general", "Health Literacy", "Understanding a lipid panel",
+    "A standard lipid panel reports four numbers. Knowing what each one represents makes the results far less mysterious.",
+    sec('''      <h2>The four numbers</h2>
+      <table class="data-table">
+        <tr><th>Marker</th><th>What it is</th><th>General target</th></tr>
+        <tr><td>Total cholesterol</td><td>Sum of all cholesterol carried in the blood</td><td>Below 200 mg/dL</td></tr>
+        <tr><td>LDL ("bad")</td><td>Low-density lipoprotein — deposits cholesterol into artery walls</td><td>Below 100 mg/dL</td></tr>
+        <tr><td>HDL ("good")</td><td>High-density lipoprotein — carries cholesterol back to the liver for removal</td><td>Above 40 mg/dL (men), 50 mg/dL (women)</td></tr>
+        <tr><td>Triglycerides</td><td>The main storage form of fat in blood, from excess calories of any kind</td><td>Below 150 mg/dL</td></tr>
+      </table>
+      <p>These are general reference ranges from the American Heart Association; your own targets should come from your doctor, since risk depends on more than a single number.<sup class="ref"><a href="sources.html#health4">[1]</a></sup></p>''') +
+    sec('''      <h2>Why "LDL" and "HDL" aren't literally cholesterol types</h2>
+      <p>Cholesterol itself is one molecule — LDL and HDL are the <em>carriers</em> that transport it through the bloodstream, since cholesterol doesn't dissolve in blood on its own. LDL tends to deposit cholesterol into artery walls, contributing to plaque buildup; HDL tends to remove it. That's the biological basis for calling one "bad" and the other "good," though the full picture involves particle size and number too.</p>
+      <div class="panel">
+        <h3>What actually moves each number</h3>
+        <ul class="checklist">
+          <li><strong>LDL</strong> — most reduced by lowering saturated fat and replacing it with unsaturated fat; see <a href="saturated-vs-unsaturated-fat.html">saturated vs. unsaturated fat</a></li>
+          <li><strong>HDL</strong> — modestly raised by regular aerobic exercise and unsaturated fat; lowered by smoking</li>
+          <li><strong>Triglycerides</strong> — most responsive to excess calories, added sugar, and alcohol, more than dietary fat specifically</li>
+        </ul>
+      </div>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <p>Dietary cholesterol itself (from eggs, shellfish) has a smaller effect on blood cholesterol for most people than once believed — see <a href="egg-yolks-cholesterol-myth.html">the egg yolks and cholesterol myth</a> and <a href="cholesterol-explained.html">dietary vs. blood cholesterol</a> for the full distinction.</p>'''),
+    [("cholesterol-explained.html", "Dietary vs. blood cholesterol"), ("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("egg-yolks-cholesterol-myth.html", "Egg yolks and cholesterol")],
+    faq=[
+        ("What is a good LDL level?", "The American Heart Association generally targets LDL below 100 mg/dL, though individual targets vary based on overall cardiovascular risk and should be set with a doctor."),
+        ("What's the difference between LDL and HDL?", "Both are carriers that transport cholesterol through the blood. LDL tends to deposit cholesterol into artery walls, contributing to plaque; HDL tends to carry it back to the liver for removal — the basis for calling them 'bad' and 'good' cholesterol."),
+        ("What raises triglycerides the most?", "Triglycerides respond most strongly to excess calories, added sugar, and alcohol — more than to dietary fat specifically."),
+    ],
+)
+
+add(
+    "nutrition-during-pregnancy",
+    "Nutrition During Pregnancy: Key Nutrients",
+    "How calorie and nutrient needs shift during pregnancy, which nutrients need the most deliberate attention, and what changes by trimester.",
+    "general", "Health Literacy", "Nutrition during pregnancy",
+    "Pregnancy doesn't mean \"eating for two\" in the literal sense — the actual changes are more specific and, for some nutrients, much larger than a simple calorie bump.",
+    sec('''      <h2>Calories: a smaller increase than people expect</h2>
+      <p>Additional calorie needs are modest and trimester-specific: roughly none in the first trimester, about 340 extra calories/day in the second, and about 450 extra/day in the third, for someone starting at a healthy weight.<sup class="ref"><a href="sources.html#health5">[1]</a></sup> "Eating for two" as a doubling of intake overstates the real requirement substantially.</p>
+      <h2>The nutrients that matter most</h2>
+      <table class="data-table">
+        <tr><th>Nutrient</th><th>Why it matters more now</th></tr>
+        <tr><td>Folate</td><td>Reduces neural tube defect risk; needs are highest very early, often before pregnancy is confirmed</td></tr>
+        <tr><td>Iron</td><td>Blood volume expands substantially; requirement roughly triples to 27 mg/day</td></tr>
+        <tr><td>Protein</td><td>Supports fetal tissue growth and expanding maternal blood volume</td></tr>
+        <tr><td>Choline</td><td>Supports fetal brain development; commonly under-consumed even outside pregnancy</td></tr>
+        <tr><td>DHA (omega-3)</td><td>Structural fat in fetal brain and eye development</td></tr>
+      </table>''') +
+    sec('''      <div class="panel warn">
+        <h3>Why folate timing matters so much</h3>
+        <p>The neural tube forms in the first 3-4 weeks after conception — often before a person knows they're pregnant. This is why folic acid supplementation is recommended for anyone who could become pregnant, not just after a positive test.<sup class="ref"><a href="sources.html#health6">[1]</a></sup></p>
+      </div>
+      <h2>What to avoid or limit</h2>
+      <ul class="checklist">
+        <li><strong>Alcohol</strong> — no amount has been established as safe during pregnancy</li>
+        <li><strong>High-mercury fish</strong> — shark, swordfish, king mackerel; lower-mercury fish like salmon are still recommended for their DHA</li>
+        <li><strong>Unpasteurized dairy and undercooked meat/eggs</strong> — listeria and other foodborne illness risk is higher during pregnancy</li>
+      </ul>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <p>This is general education, not individualized guidance — prenatal nutrition should be discussed with an OB-GYN or midwife, who can account for your specific health history.</p>'''),
+    [("iron-deficiency-and-athletes.html", "Iron deficiency"), ("b-vitamins-and-metabolism.html", "B vitamins as coenzymes"), ("protein-intake-for-women.html", "Protein intake for women")],
+    faq=[
+        ("How many extra calories do you need during pregnancy?", "Roughly none in the first trimester, about 340 extra per day in the second, and about 450 extra per day in the third, for someone starting at a healthy weight — far less than 'eating for two' implies."),
+        ("Why is folate so important early in pregnancy?", "The neural tube forms in the first 3-4 weeks after conception, often before pregnancy is confirmed, which is why folic acid is recommended for anyone who could become pregnant, not just after a positive test."),
+        ("How much does iron need increase during pregnancy?", "The RDA roughly triples, from 18 mg/day to 27 mg/day, to support the substantial expansion in blood volume during pregnancy."),
+    ],
+)
+
+add(
+    "nutrition-for-children-and-teens",
+    "Nutrition for Children and Teens",
+    "How nutrient needs for children and teenagers differ from adults, why growth spurts change requirements, and common gaps to watch for.",
+    "general", "Health Literacy", "Nutrition for children and teens",
+    "Kids aren't small adults nutritionally — growth itself creates demands that don't exist once growth has finished.",
+    sec('''      <h2>Why growth changes the math</h2>
+      <p>Children and teens are building new tissue, not just maintaining existing tissue, which raises requirements for protein, calcium, iron, and calories relative to body size — particularly during growth spurts. Needs also shift noticeably at puberty, with the increase generally larger and later for boys than girls due to differing growth timelines.<sup class="ref"><a href="sources.html#health7">[1]</a></sup></p>
+      <h2>Nutrients commonly falling short</h2>
+      <table class="data-table">
+        <tr><th>Nutrient</th><th>Why gaps are common</th></tr>
+        <tr><td>Calcium</td><td>Peak bone mass is built by the end of adolescence; low intake here has lifelong effects</td></tr>
+        <tr><td>Iron</td><td>Growth demand plus, after menarche, menstrual losses in girls</td></tr>
+        <tr><td>Fiber</td><td>Diets skew toward refined, low-fiber packaged foods</td></tr>
+        <tr><td>Vitamin D</td><td>Same risk factors as adults — limited sun exposure, few dietary sources</td></tr>
+      </table>''') +
+    sec('''      <h2>What actually helps, practically</h2>
+      <ul class="checklist">
+        <li><strong>Regular meals and snacks</strong> — smaller stomach capacity relative to needs means kids often need to eat more frequently than adults to meet requirements</li>
+        <li><strong>Modeling, not lecturing</strong> — children's food preferences form substantially through repeated exposure and watching what adults around them eat</li>
+        <li><strong>Limiting sugary drinks specifically</strong> — one of the highest-leverage single changes, given how much added sugar in kids' diets comes from beverages</li>
+      </ul>
+      <div class="panel">
+        <h3>Growth charts, not adult BMI categories</h3>
+        <p>Pediatric growth is tracked against age- and sex-specific percentile charts, not adult BMI cutoffs, because normal, healthy growth trajectories vary considerably by age and stage of development.</p>
+      </div>''', bg="var(--color-protein-bg)", tight=True),
+    [("calcium-and-bone-health.html", "Calcium and bone health"), ("added-sugar-vs-natural-sugar.html", "Added vs. natural sugar"), ("iron-deficiency-and-athletes.html", "Iron deficiency")],
+    faq=[
+        ("Do children need more protein relative to their size than adults?", "Yes, relative to body weight, because they're actively building new tissue rather than just maintaining it. Requirements also rise further during growth spurts and puberty."),
+        ("Why is calcium intake so important in childhood and adolescence?", "Peak bone mass is built by the end of adolescence, and low calcium intake during these years can have effects on bone density that persist for life."),
+        ("What's the single highest-leverage dietary change for kids?", "Limiting sugary drinks specifically, since they contribute a disproportionate share of added sugar in children's diets and are one of the more straightforward things to change."),
+    ],
+)
+
+add(
+    "extended-fasting-and-omad",
+    "Extended Fasting and OMAD: What the Evidence Says",
+    "How extended fasts and one-meal-a-day eating differ from standard intermittent fasting, what the research supports, and the real risks.",
+    "diets", "Diets", "Extended fasting and OMAD explained",
+    "Compressing all your food into one meal or going days without eating is a different proposition than a 16-hour overnight fast — the evidence base is thinner, and the risks are real.",
+    sec('''      <h2>Where this differs from standard intermittent fasting</h2>
+      <p>Common <a href="intermittent-fasting-and-macros.html">intermittent fasting</a> protocols (16:8, for instance) mostly compress eating into a shorter window without necessarily reducing total food eaten. <strong>OMAD</strong> (one meal a day) and <strong>extended fasting</strong> (24+ hours without food) go further — and the evidence quality drops accordingly, with far fewer controlled human trials than for standard time-restricted eating.</p>
+      <h2>What OMAD tends to do</h2>
+      <ul class="checklist">
+        <li><strong>Makes hitting protein and micronutrient targets harder</strong> — fitting 100g+ of protein and a full day's micronutrients into one sitting is a real practical challenge</li>
+        <li><strong>Often reduces total calories</strong> — simply through the difficulty of eating a full day's calories in one meal, which is frequently the actual mechanism behind any weight loss, not something metabolically special about meal frequency</li>
+        <li><strong>Can affect blood sugar regulation</strong> — a very large single meal produces a bigger glucose and insulin response than the same calories spread across the day</li>
+      </ul>''') +
+    sec('''      <h2>Extended fasting (24+ hours)</h2>
+      <p>Multi-day fasting shows some evidence for short-term metabolic markers in small studies, but longer fasts carry real risks: electrolyte imbalances, gallstones (from prolonged periods without gallbladder stimulation), and — critically — muscle loss, since the body draws on protein for gluconeogenesis once glycogen is depleted.<sup class="ref"><a href="sources.html#health8">[1]</a></sup></p>
+      <div class="panel warn">
+        <h3>Who should avoid this entirely</h3>
+        <p>People who are pregnant or breastfeeding, have a history of disordered eating, are underweight, have diabetes on medication, or have any condition requiring regular food intake should not attempt extended fasting without direct medical supervision.<sup class="ref"><a href="sources.html#health8">[1]</a></sup></p>
+      </div>''', bg="var(--color-pop3-bg)", tight=True) +
+    sec('''      <p>For most people pursuing fat loss or metabolic health, standard time-restricted eating has a stronger evidence base and a much lower risk profile than OMAD or multi-day fasting. See <a href="intermittent-fasting-and-macros.html">intermittent fasting and macros</a>.</p>'''),
+    [("intermittent-fasting-and-macros.html", "Intermittent fasting and macros"), ("metabolic-damage-is-it-real.html", "Is metabolic damage real?"), ("how-to-track-your-macros.html", "How to track your macros")],
+    faq=[
+        ("Is OMAD better than spreading meals across the day?", "Not inherently. Any weight loss from OMAD is generally attributed to eating fewer total calories, since fitting a full day's food into one meal is difficult — not to a special metabolic effect of meal frequency."),
+        ("What are the risks of extended fasting?", "Multi-day fasts carry risks including electrolyte imbalances, gallstones, and muscle loss, since the body turns to protein for gluconeogenesis once glycogen stores are depleted."),
+        ("Who should avoid extended fasting?", "People who are pregnant or breastfeeding, have a history of disordered eating, are underweight, take diabetes medication, or have conditions requiring regular food intake should not attempt extended fasting without medical supervision."),
+    ],
+)
+
+add(
+    "supplement-label-terms-explained",
+    "Supplement Label Terms: What They Actually Mean",
+    "What terms like proprietary blend, %DV, and third-party tested actually mean on a supplement label, and which ones matter.",
+    "general", "Health Literacy", "Supplement label terms explained",
+    "Supplement labels use precise regulatory language that reads like marketing. Knowing what each term legally requires changes how you read the label.",
+    sec('''      <h2>Terms with real regulatory meaning</h2>
+      <ul class="checklist">
+        <li><strong>%DV (% Daily Value)</strong> — the percentage of a standardized reference intake in one serving. Useful for comparison, though the reference values are general population targets, not individualized.</li>
+        <li><strong>USP Verified / NSF Certified</strong> — third-party testing marks confirming the product contains what the label claims, in the stated amount, without specific contaminants. These are the most meaningful quality signals on a supplement label, because supplements themselves aren't FDA-approved for efficacy before sale.<sup class="ref"><a href="sources.html#health9">[1]</a></sup></li>
+        <li><strong>"This statement has not been evaluated by the FDA..."</strong> — required by law on structure/function claims (e.g., "supports immune health"). It signals the claim hasn't been independently verified, not that the product is necessarily ineffective.</li>
+      </ul>''') +
+    sec('''      <h2>The term worth watching closely</h2>
+      <div class="panel warn">
+        <h3>"Proprietary blend"</h3>
+        <p>This lets a manufacturer list a combined weight for several ingredients without disclosing how much of <em>each individual</em> ingredient is included. A blend might contain a clinically studied dose of one ingredient and a token amount of another, and there's no way to tell from the label alone. Products that list each ingredient's exact individual amount are more transparent by definition.<sup class="ref"><a href="sources.html#health9">[1]</a></sup></p>
+      </div>
+      <h2>What "natural" and "clinically proven" don't guarantee</h2>
+      <p>Neither term has a strict, enforced legal definition on supplement labels the way "USP Verified" does. "Natural" says nothing about dose, safety, or effectiveness — plenty of natural substances are potent or harmful in the wrong amount. "Clinically proven" can refer to a single small trial, not a robust evidence base.</p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <p>For specific supplements with genuine evidence behind them, see <a href="creatine-explained.html">creatine</a> and <a href="caffeine-and-athletic-performance.html">caffeine</a> — two of the few with strong, consistent research support.</p>'''),
+    [("creatine-explained.html", "Creatine explained"), ("collagen-supplements-explained.html", "Do collagen supplements work?"), ("caffeine-and-athletic-performance.html", "Caffeine and performance")],
+    faq=[
+        ("What does a 'proprietary blend' hide on a supplement label?", "It lets a manufacturer list a combined weight for several ingredients without disclosing how much of each individual ingredient is included, making it impossible to know if a key ingredient is present in a meaningful dose."),
+        ("What do USP Verified or NSF Certified marks mean?", "They indicate third-party testing confirmed the product contains what the label claims in the stated amount, without specified contaminants — among the most meaningful quality signals available, since supplements aren't FDA-approved for efficacy before sale."),
+        ("Does 'natural' mean a supplement is safe?", "No. The term has no strict legal definition on supplement labels and says nothing about dose, safety, or effectiveness. Many natural substances are potent or harmful in the wrong amount."),
+    ],
+)
+
+add(
+    "metabolic-syndrome-explained",
+    "Metabolic Syndrome: The Five Risk Factors",
+    "What metabolic syndrome is, the five diagnostic criteria, and which dietary changes have the strongest evidence for reversing it.",
+    "general", "Health Literacy", "Metabolic syndrome: the five risk factors",
+    "Metabolic syndrome isn't one disease — it's a cluster of risk factors that, together, substantially raise the risk of heart disease and type 2 diabetes.",
+    sec('''      <h2>The five criteria</h2>
+      <p>Metabolic syndrome is diagnosed when a person has three or more of the following:<sup class="ref"><a href="sources.html#health10">[1]</a></sup></p>
+      <table class="data-table">
+        <tr><th>Factor</th><th>Threshold</th></tr>
+        <tr><td>Waist circumference</td><td>≥40 in (men), ≥35 in (women)</td></tr>
+        <tr><td>Triglycerides</td><td>≥150 mg/dL (or on medication for it)</td></tr>
+        <tr><td>HDL cholesterol</td><td>&lt;40 mg/dL (men), &lt;50 mg/dL (women)</td></tr>
+        <tr><td>Blood pressure</td><td>≥130/85 mmHg (or on medication for it)</td></tr>
+        <tr><td>Fasting blood glucose</td><td>≥100 mg/dL (or on medication for it)</td></tr>
+      </table>
+      <p>Each factor individually raises risk; having several together raises it more than the sum of the parts would suggest, which is exactly why they're tracked as a cluster.</p>''') +
+    sec('''      <h2>What drives it</h2>
+      <p>Insulin resistance sits at the center of most cases — cells respond less efficiently to insulin, so the pancreas produces more to compensate, which contributes to several of the five factors simultaneously. Excess visceral fat (the fat around abdominal organs, reflected in waist circumference) is both a cause and a consequence of that resistance.<sup class="ref"><a href="sources.html#health10">[1]</a></sup> See <a href="insulin-and-glucagon.html">insulin and glucagon</a> for the underlying physiology.</p>
+      <div class="panel">
+        <h3>What has the strongest evidence for reversing it</h3>
+        <ul class="checklist">
+          <li><strong>Modest weight loss</strong> — even 5-10% of body weight measurably improves multiple factors at once</li>
+          <li><strong>Regular physical activity</strong> — improves insulin sensitivity independent of weight change</li>
+          <li><strong>A <a href="mediterranean-diet-explained.html">Mediterranean-style diet</a></strong> — the dietary pattern with the strongest trial evidence for this specific cluster</li>
+          <li><strong>Reducing added sugar and refined carbohydrate</strong> — most directly targets triglycerides and blood glucose</li>
+        </ul>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("insulin-and-glucagon.html", "Insulin and glucagon"), ("understanding-a-lipid-panel.html", "Understanding a lipid panel"), ("mediterranean-diet-explained.html", "The Mediterranean diet")],
+    faq=[
+        ("How many risk factors are needed to diagnose metabolic syndrome?", "Three or more of five: elevated waist circumference, high triglycerides, low HDL cholesterol, high blood pressure, and elevated fasting blood glucose."),
+        ("What causes metabolic syndrome?", "Insulin resistance sits at the center of most cases, often accompanied by excess visceral fat around the abdominal organs, which is both a cause and consequence of that resistance."),
+        ("What's most effective for reversing metabolic syndrome?", "Modest weight loss of 5-10% of body weight, regular physical activity, a Mediterranean-style dietary pattern, and reducing added sugar and refined carbohydrate all have strong supporting evidence."),
     ],
 )
 
