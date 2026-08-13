@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Generates glossary.html — an A-Z nutrition terms reference for students."""
+import json
 import os
 import sys
 
@@ -69,6 +70,40 @@ TERMS = [
 ]
 
 
+def term_slug(term):
+    """Stable anchor id for a glossary term (also used by the JSON-LD term URLs)."""
+    out = "".join(c.lower() if c.isalnum() else "-" for c in term)
+    while "--" in out:
+        out = out.replace("--", "-")
+    return out.strip("-")
+
+
+def glossary_jsonld():
+    """DefinedTermSet marks this up as a real glossary rather than a generic page,
+    which is what lets each entry be understood as a standalone definition."""
+    url = "https://getmacros.net/glossary.html"
+    data = {
+        "@context": "https://schema.org",
+        "@type": "DefinedTermSet",
+        "name": "Nutrition Glossary",
+        "url": url,
+        "inLanguage": "en",
+        "description": "An A-Z glossary of macronutrient and nutrition science terms for students.",
+        "hasDefinedTerm": [
+            {
+                "@type": "DefinedTerm",
+                "name": term,
+                "description": definition,
+                "inDefinedTermSet": url,
+                "url": f"{url}#{term_slug(term)}",
+            }
+            for term, definition, _ in TERMS
+        ],
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
+
 def build():
     by_letter = {}
     for term, definition, link in TERMS:
@@ -81,7 +116,7 @@ def build():
     sections = ""
     for l in letters:
         items = "\n".join(
-            f'''        <div class="glossary-term"><dt>{term}</dt><dd>{definition} <a href="{link}">Read more →</a></dd></div>'''
+            f'''        <div class="glossary-term" id="{term_slug(term)}"><dt>{term}</dt><dd>{definition} <a href="{link}">Read more →</a></dd></div>'''
             for term, definition, link in by_letter[l]
         )
         sections += f'''  <section class="tight">
@@ -107,6 +142,7 @@ def build():
 <meta name="description" content="An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/glossary.html">
+{glossary_jsonld()}
 {seo_meta("Nutrition Glossary: A-Z Terms for Students", "An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.", "https://getmacros.net/glossary.html", og_type="website")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>

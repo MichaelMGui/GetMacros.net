@@ -336,7 +336,7 @@ add(
 
 add(
     "protein-for-muscle-growth",
-    "Protein for Muscle Growth: How Much, When, and Why",
+    "Protein for Muscle Growth: How Much and When",
     "How dietary protein drives muscle protein synthesis after training, how much you need, and whether meal timing actually matters.",
     "protein", "Protein Guide", "Protein for muscle growth: how much, when, and why",
     "Muscle isn't built in the gym — it's built afterward, from amino acids, and only if enough of them are available.",
@@ -357,7 +357,7 @@ add(
 
 add(
     "protein-deficiency-symptoms",
-    "10 Warning Signs You're Not Eating Enough Protein",
+    "10 Signs You're Not Eating Enough Protein",
     "The early warning signs of low protein intake, from slow wound healing to hair thinning, and when they signal a real deficiency.",
     "protein", "Protein Guide", "10 warning signs you're not eating enough protein",
     "Severe protein deficiency (kwashiorkor) is rare in well-fed populations — but eating below your personal needs is common, and it shows up in ways people rarely connect back to diet.",
@@ -380,7 +380,7 @@ add(
 
 add(
     "high-protein-foods-list",
-    "25 High-Protein Foods and How Much Protein They Contain",
+    "25 High-Protein Foods (With Protein Per 100g)",
     "A reference list of high-protein animal and plant foods with approximate grams of protein per 100g, for building meals around your target.",
     "protein", "Protein Guide", "25 high-protein foods and how much protein they contain",
     "Approximate protein content per 100 grams unless noted — actual values vary by cut, brand, and preparation.",
@@ -423,8 +423,8 @@ add(
 
 add(
     "complete-vs-incomplete-protein",
-    "Complete vs. Incomplete Protein: What Actually Matters",
-    "The real difference between complete and incomplete protein sources, why 'protein combining' at every meal is a myth, and what actually matters for muscle and health.",
+    "Complete vs. Incomplete Protein",
+    "What complete and incomplete proteins are, which foods fall where, and why protein combining at every meal matters far less than people think.",
     "protein", "Protein Guide", "Complete vs. incomplete protein: what actually matters",
     "Your body needs 9 essential amino acids from food. \"Complete\" and \"incomplete\" just describe whether a single food supplies all 9 in meaningful amounts.",
     sec('''      <h2>What makes a protein "complete"</h2>
@@ -441,7 +441,7 @@ add(
 
 add(
     "plant-based-protein-sources",
-    "Best Plant-Based Protein Sources for Vegans and Vegetarians",
+    "Best Plant-Based Protein Sources",
     "The most protein-dense plant foods for vegans and vegetarians, with approximate grams per serving and tips for hitting your daily target.",
     "protein", "Protein Guide", "Best plant-based protein sources for vegans and vegetarians",
     "Getting enough protein on a plant-based diet is straightforward once you know which foods to build meals around.",
@@ -471,7 +471,7 @@ add(
 
 add(
     "protein-timing",
-    "Does Protein Timing Really Matter? What the Research Shows",
+    "Does Protein Timing Actually Matter?",
     "Whether the post-workout 'anabolic window' is real, how often you should eat protein, and what the sports nutrition research actually supports.",
     "protein", "Protein Guide", "Does protein timing really matter?",
     "For years, lifters were told to chug a shake within 30 minutes of finishing a workout or lose their gains. The research tells a more relaxed story.",
@@ -494,7 +494,7 @@ add(
 
 add(
     "how-much-fat-per-day",
-    "How Much Fat Should You Eat Per Day? (20–35% Explained)",
+    "How Much Fat Should You Eat Per Day?",
     "The recommended daily fat intake range (20-35% of calories), what it looks like in grams at different calorie levels, and why the range exists.",
     "fat", "Fat Guide", "How much fat should you eat per day?",
     "The Acceptable Macronutrient Distribution Range for fat is 20-35% of total calories for adults — here's what that looks like in real grams.",
@@ -513,7 +513,7 @@ add(
 
 add(
     "saturated-vs-unsaturated-fat",
-    "Saturated vs. Unsaturated Fat: What's Actually the Difference",
+    "Saturated vs. Unsaturated Fat: The Difference",
     "The chemical difference between saturated and unsaturated fat, how each affects health, and which foods contain them.",
     "fat", "Fat Guide", "Saturated vs. unsaturated fat: what's actually the difference",
     "Not all fat behaves the same way in your body — the difference comes down to a detail in the fat molecule's chemical structure.",
@@ -536,7 +536,7 @@ add(
 
 add(
     "omega-3-vs-omega-6",
-    "Omega-3 vs Omega-6 Fatty Acids: Why Balance Matters",
+    "Omega-3 vs Omega-6: Why the Balance Matters",
     "The difference between omega-3 and omega-6 essential fatty acids, why most modern diets are skewed, and how to add more omega-3 sources.",
     "fat", "Fat Guide", "Omega-3 vs omega-6: why balance matters",
     "Both are essential fatty acids your body can't make on its own — but most modern diets get far more omega-6 than omega-3.",
@@ -637,7 +637,7 @@ add(
 
 add(
     "what-is-glycogen",
-    "What Is Glycogen? How Your Body Stores Carbs for Energy",
+    "What Is Glycogen? How Your Body Stores Carbs",
     "How glycogen works as your body's short-term carbohydrate storage in muscle and liver, and how much you can actually store.",
     "carbs", "Carbohydrate Guide", "What is glycogen?",
     "Every gram of carbohydrate you eat and don't use immediately gets bundled into glycogen — your body's rechargeable energy battery.",
@@ -692,7 +692,7 @@ add(
 
 add(
     "carb-loading-for-athletes",
-    "Carb Loading: How Athletes Maximize Glycogen Stores",
+    "Carb Loading for Athletes: How It Works",
     "How carb loading works, the modern protocol most athletes actually use, and who genuinely benefits from it.",
     "carbs", "Carbohydrate Guide", "Carb loading: how athletes maximize glycogen stores",
     "Carb loading isn't just eating a huge plate of pasta the night before a race — done properly, it's a deliberate glycogen-maximizing strategy.",
@@ -709,7 +709,7 @@ add(
 
 add(
     "fiber-benefits",
-    "Why Fiber Matters: Benefits of a High-Fiber Diet",
+    "Why Fiber Matters: High-Fiber Diet Benefits",
     "The health benefits of dietary fiber, the difference between soluble and insoluble fiber, and how much you actually need per day.",
     "carbs", "Carbohydrate Guide", "Why fiber matters: benefits of a high-fiber diet",
     "Fiber is a carbohydrate your body can't fully digest — and that's exactly what makes it useful.",
@@ -754,7 +754,7 @@ add(
 
 add(
     "micronutrients-vs-macronutrients",
-    "Micronutrients vs. Macronutrients: What's the Difference",
+    "Micronutrients vs. Macronutrients",
     "The difference between macronutrients (protein, fat, carbs) and micronutrients (vitamins, minerals), and why hitting your macros doesn't guarantee good nutrition.",
     "general", "Nutrition Basics", "Micronutrients vs. macronutrients: what's the difference",
     "Macros give you energy and building blocks. Micros keep the machinery running — and you need both.",
@@ -789,7 +789,7 @@ add(
 
 add(
     "vegan-macros-guide",
-    "Vegan Macros: Hitting Your Targets Without Meat or Dairy",
+    "Vegan Macros: How to Hit Your Targets",
     "A practical guide to hitting protein, fat, and carb targets on a fully plant-based diet.",
     "general", "Nutrition Basics", "Vegan macros: hitting your targets without meat or dairy",
     "Every macro target on this site is achievable on a vegan diet — it just takes knowing which plant foods to lean on.",
@@ -809,7 +809,7 @@ add(
 
 add(
     "intermittent-fasting-and-macros",
-    "Intermittent Fasting and Macros: Does Timing Matter?",
+    "Intermittent Fasting and Your Macros",
     "How intermittent fasting interacts with your macro targets, and whether meal timing itself changes results independent of what you eat.",
     "general", "Nutrition Basics", "Intermittent fasting and macros: does timing matter?",
     "Fasting changes when you eat. It doesn't change the math of what you eat — your daily macro totals still do the heavy lifting.",
@@ -824,7 +824,7 @@ add(
 
 add(
     "cutting-bulking-maintenance-explained",
-    "Cutting vs. Bulking vs. Maintenance: Which Phase Are You In?",
+    "Cutting vs. Bulking vs. Maintenance",
     "What the terms cutting, bulking, and maintenance actually mean in terms of calories and macros, and how to tell which one you should be doing.",
     "general", "Nutrition Basics", "Cutting vs. bulking vs. maintenance: which phase are you in?",
     "Three phases, three different calorie targets — and each one calls for a different macro emphasis.",
@@ -841,7 +841,7 @@ add(
 
 add(
     "protein-powder-101",
-    "Protein Powder 101: Whey, Casein, and Plant Blends Explained",
+    "Protein Powder 101: Whey, Casein &amp; Plant",
     "The practical differences between whey, casein, and plant-based protein powders, and how to choose between them.",
     "protein", "Protein Guide", "Protein powder 101: whey, casein, and plant blends",
     "Protein powder is just a convenient, concentrated food — the type mostly affects digestion speed and dietary fit, not whether it \"works.\"",
@@ -877,7 +877,7 @@ add(
 
 add(
     "ketogenic-diet-explained",
-    "The Ketogenic Diet Explained: Macros, Benefits, and Risks",
+    "Keto Diet Explained: Macros, Benefits &amp; Risks",
     "How the ketogenic diet's macro split works, what ketosis actually is, and who should be cautious about trying it.",
     "carbs", "Carbohydrate Guide", "The ketogenic diet explained: macros, benefits, and risks",
     "Keto isn't just \"low carb\" — it's a specific macro ratio designed to push your body into a distinct metabolic state.",
@@ -894,7 +894,7 @@ add(
 
 add(
     "high-protein-breakfast-ideas",
-    "High-Protein Breakfast Ideas That Actually Fill You Up",
+    "High-Protein Breakfast Ideas That Fill You Up",
     "Practical high-protein breakfast combinations and roughly how much protein each provides.",
     "protein", "Protein Guide", "High-protein breakfast ideas that actually fill you up",
     "Breakfast is the meal most people under-eat protein at — small swaps close the gap fast.",
@@ -913,7 +913,7 @@ add(
 
 add(
     "meal-frequency-and-metabolism",
-    "Does Meal Frequency Matter for Macros and Metabolism?",
+    "Does Meal Frequency Affect Metabolism?",
     "Whether eating more or fewer meals per day changes metabolism or macro results, according to the research.",
     "general", "Nutrition Basics", "Does meal frequency matter for macros and metabolism?",
     "Three meals, six meals, one meal — does the number actually change anything, or just how you get to the same daily total?",
@@ -927,7 +927,7 @@ add(
 
 add(
     "body-recomposition-explained",
-    "Body Recomposition: Building Muscle and Losing Fat at Once",
+    "Body Recomposition: Build Muscle, Lose Fat",
     "What body recomposition means, who it actually works for, and how to set macros for it.",
     "general", "Nutrition Basics", "Body recomposition: building muscle and losing fat at once",
     "Losing fat and building muscle simultaneously is possible — but it's slower than doing either one at a time, and works best for specific people.",
@@ -944,7 +944,7 @@ add(
 
 add(
     "alcohol-and-macros",
-    "Alcohol and Macros: How Drinking Fits Into Your Targets",
+    "Alcohol and Macros: How Drinking Fits In",
     "How alcohol interacts with your calorie and macro targets, since it doesn't cleanly fit into protein, fat, or carbs.",
     "general", "Nutrition Basics", "Alcohol and macros: how drinking fits into your targets",
     "Alcohol supplies calories — about 7 per gram, between fat and carbs — but it isn't a macronutrient, which makes it easy to under-account for.",
@@ -958,7 +958,7 @@ add(
 
 add(
     "cholesterol-explained",
-    "Cholesterol Explained: Dietary vs. Blood Cholesterol",
+    "Cholesterol: Dietary vs. Blood Explained",
     "The difference between the cholesterol you eat and the cholesterol measured in your blood, and why they aren't the same thing.",
     "fat", "Fat Guide", "Cholesterol explained: dietary vs. blood cholesterol",
     "Eating cholesterol and having high blood cholesterol are related, but not in the direct one-to-one way many people assume.",
@@ -988,7 +988,7 @@ add(
 
 add(
     "macros-for-endurance-vs-strength-athletes",
-    "Macros for Endurance Athletes vs. Strength Athletes",
+    "Macros: Endurance vs. Strength Athletes",
     "How macro priorities differ between endurance athletes and strength athletes, and why one-size-fits-all macro advice doesn't work for both.",
     "general", "Nutrition Basics", "Macros for endurance athletes vs. strength athletes",
     "A marathoner and a powerlifter both train hard — but their fuel needs point in different directions.",
@@ -1010,7 +1010,7 @@ add(
 
 add(
     "tdee-vs-bmr",
-    "BMR vs. TDEE: What's the Difference and Why It Matters",
+    "BMR vs. TDEE: What's the Difference?",
     "The difference between Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE), and how the Mifflin-St Jeor equation estimates both.",
     "general", "Calculator Guide", "BMR vs. TDEE: what's the difference?",
     "These two numbers are the foundation of every calorie and macro target on this site — here's what each one actually measures.",
@@ -1045,7 +1045,7 @@ add(
 
 add(
     "macros-for-muscle-gain",
-    "How to Set Your Macros for Building Muscle (Bulking)",
+    "How to Set Your Macros for Muscle Gain",
     "A practical framework for setting protein, fat, and carb targets to build muscle while minimizing unnecessary fat gain.",
     "general", "Calculator Guide", "How to set your macros for building muscle",
     "Building muscle requires a calorie surplus and enough protein — but 'more is better' isn't the right mindset for either one.",
@@ -1063,7 +1063,7 @@ add(
 
 add(
     "iifym-flexible-dieting",
-    "IIFYM: What Is Flexible Dieting and Does It Work?",
+    "IIFYM: What Is Flexible Dieting?",
     "What 'If It Fits Your Macros' (IIFYM) means, its real pros and cons, and a practical middle-ground approach.",
     "general", "Calculator Guide", "IIFYM: what is flexible dieting, and does it work?",
     "\"If It Fits Your Macros\" (IIFYM) is the idea that as long as you hit your protein, fat, and carb targets, the specific foods you eat them from don't matter.",
@@ -1474,7 +1474,7 @@ def build_sitemap():
 
 add(
     "nitrogen-balance-explained",
-    "Nitrogen Balance Explained: Why It Matters for Muscle",
+    "Nitrogen Balance: Why It Matters for Muscle",
     "What nitrogen balance measures, how it relates to protein intake, and why it's used to assess whether the body is gaining or losing muscle.",
     "protein", "For Students", "Nitrogen balance explained",
     "Protein is roughly 16% nitrogen by weight, which makes nitrogen a convenient marker for tracking whether your body is building or breaking down protein tissue overall.",
@@ -1491,7 +1491,7 @@ add(
 
 add(
     "catabolism-vs-anabolism",
-    "Catabolism vs. Anabolism: The Basics of Metabolism",
+    "Catabolism vs. Anabolism: Metabolism Basics",
     "The difference between catabolic and anabolic processes, and how they relate to muscle building, fat loss, and everyday metabolism.",
     "general", "For Students", "Catabolism vs. anabolism: the basics of metabolism",
     "Your metabolism runs on two opposing processes happening simultaneously, all day, every day.",
@@ -1511,7 +1511,7 @@ add(
 
 add(
     "how-to-calculate-macros-by-hand",
-    "How to Calculate Your Macros by Hand (Step-by-Step)",
+    "How to Calculate Your Macros by Hand",
     "A step-by-step walkthrough of the exact math behind a macro calculator — useful for nutrition students who need to show their work.",
     "general", "For Students", "How to calculate your macros by hand",
     "Same math our calculator runs automatically — worked out step by step, in case you need to show your work.",
@@ -1552,7 +1552,7 @@ add(
 
 add(
     "nutrient-density-explained",
-    "Nutrient Density Explained: Getting More From Your Calories",
+    "Nutrient Density: More Nutrition Per Calorie",
     "What nutrient density means, why it matters even when your macros are on target, and how to eat more nutrient-dense meals.",
     "general", "For Students", "Nutrient density explained",
     "Two foods with identical calories and macros can deliver very different amounts of actual nutrition.",
@@ -1566,7 +1566,7 @@ add(
 
 add(
     "muscle-fiber-types-and-nutrition",
-    "Muscle Fiber Types and Nutrition: Fast-Twitch vs. Slow-Twitch",
+    "Muscle Fiber Types: Fast- vs. Slow-Twitch",
     "How fast-twitch and slow-twitch muscle fibers differ in fuel use, and what that means for carbohydrate and protein needs by sport.",
     "carbs", "For Students", "Muscle fiber types and nutrition",
     "Not all muscle fibers burn fuel the same way — and that has real implications for how different athletes should eat.",
@@ -1603,7 +1603,7 @@ add(
 
 add(
     "protein-quality-scores-pdcaas-diaas",
-    "Protein Quality Scores: PDCAAS and DIAAS Explained",
+    "Protein Quality: PDCAAS and DIAAS Explained",
     "What PDCAAS and DIAAS scores measure, how they're calculated, and why they matter for comparing protein sources.",
     "protein", "For Students", "Protein quality scores: PDCAAS and DIAAS explained",
     "Not all protein sources are scored equally — these two methods are how nutrition science formally measures protein quality.",
@@ -1636,7 +1636,7 @@ add(
 
 add(
     "how-to-read-a-nutrition-study",
-    "How to Read a Nutrition Study: A Student's Guide",
+    "How to Read a Nutrition Study",
     "A practical guide for nutrition students on evaluating study design, sample size, and funding when reading nutrition research.",
     "general", "For Students", "How to read a nutrition study",
     "Nutrition headlines rarely tell you what the underlying study actually measured — here's what to check before trusting a claim.",
@@ -1654,7 +1654,7 @@ add(
 
 add(
     "units-and-conversions-cheat-sheet",
-    "Units and Conversions Cheat Sheet for Nutrition Students",
+    "Nutrition Units &amp; Conversions Cheat Sheet",
     "A quick-reference conversion sheet for calories, kilojoules, grams, ounces, and macronutrient calorie values.",
     "general", "For Students", "Units and conversions cheat sheet",
     "The conversions that come up constantly in nutrition coursework and macro tracking, in one place.",
@@ -1697,7 +1697,7 @@ add(
 add(
     "world-cup-2026-team-nutrition",
     "What World Cup 2026 Teams Are Actually Eating",
-    "Why Norway flew in over 1,000kg of salmon and cheese and Argentina brought 500kg of beef to the 2026 World Cup — the real sports-nutrition logic behind elite teams' food strategy.",
+    "How World Cup squads fuel for match day — carbohydrate loading, hydration, recovery protein, and what amateur players can realistically borrow.",
     "athletes", "Athletes &amp; Sports", "What World Cup 2026 teams are actually eating",
     "For elite national teams, food isn't an afterthought during a tournament — it's logistics, planned months ahead, with a chef and a shipping manifest.",
     sec('''      <h2>Norway's 1,000kg of imported food</h2>
@@ -1712,7 +1712,7 @@ add(
 add(
     "famous-athlete-diets-fact-checked",
     "6 Famous Athlete Diets, Fact-Checked",
-    "What Messi, Ronaldo, Michael Phelps, Usain Bolt, Novak Djokovic, and Simone Biles actually eat — and which viral claims about their diets are true, exaggerated, or unproven.",
+    "What elite athletes actually eat, which viral diet claims hold up to scrutiny, and what the research says about copying their approach.",
     "athletes", "Athletes &amp; Sports", "6 famous athlete diets, fact-checked",
     "Elite athletes' diets get turned into internet legend fast. Here's what's actually documented, sourced back to the original reporting.",
     sec('''      <h2>Lionel Messi: cutting sugar and refined flour</h2>
@@ -1734,7 +1734,7 @@ add(
 
 add(
     "do-elimination-diets-improve-performance",
-    "Do Gluten-Free and Elimination Diets Actually Improve Athletic Performance?",
+    "Do Elimination Diets Improve Performance?",
     "What controlled research finds when non-celiac athletes go gluten-free or try other elimination diets for performance — and why some still swear by the results.",
     "athletes", "Athletes &amp; Sports", "Do elimination diets actually improve performance?",
     "High-profile athletes like Novak Djokovic have made gluten-free and elimination diets look like a performance secret. Controlled research tells a more boring story.",
@@ -1751,7 +1751,7 @@ add(
 
 add(
     "creatine-explained",
-    "Creatine Explained: What It Does and Who Actually Needs It",
+    "Creatine: What It Does &amp; Who Needs It",
     "What creatine monohydrate actually does in the body, what the safety research says, and the simple, effective way to take it based on the ISSN position stand.",
     "general", "For Students", "Creatine explained: what it does and who needs it",
     "Creatine is one of the most researched supplements in sports nutrition, and also one of the most misunderstood.",
@@ -1785,7 +1785,7 @@ add(
 
 add(
     "post-workout-anabolic-window",
-    "The Post-Workout Anabolic Window: Myth or Real?",
+    "Is the Post-Workout Anabolic Window Real?",
     "What the research actually says about the 30-minute post-workout anabolic window — and why total daily protein intake matters far more than exact timing.",
     "general", "For Students", "The post-workout anabolic window: myth or real?",
     "\"You have to get protein in within 30 minutes or you lose your gains\" is one of the most repeated claims in the gym. It's mostly wrong.",
@@ -1800,7 +1800,7 @@ add(
 
 add(
     "sports-drinks-vs-water",
-    "Sports Drinks vs. Water: When You Actually Need Electrolytes",
+    "Sports Drinks vs. Water: Which Do You Need?",
     "When plain water is enough during exercise and when a carbohydrate-electrolyte sports drink actually helps, based on ACSM hydration guidance.",
     "carbs", "For Students", "Sports drinks vs. water: when you actually need electrolytes",
     "Sports drink marketing implies you need electrolytes for any workout. For most people, most of the time, that's not true.",
@@ -1822,7 +1822,7 @@ add(
 
 add(
     "net-carbs-vs-total-carbs",
-    "Net Carbs vs. Total Carbs: What's the Difference?",
+    "Net Carbs vs. Total Carbs",
     "What \"net carbs\" actually means, how to calculate it, and why the number on a low-carb product's label can be misleading.",
     "carbs", "For Students", "Net carbs vs. total carbs: what's the difference?",
     "\"Net carbs\" shows up on every keto-marketed food label. It isn't an official nutrition term, and calculating it wrong can throw off your whole day.",
@@ -1866,7 +1866,7 @@ add(
 
 add(
     "keto-flu-explained",
-    "Keto Flu Explained: Why It Happens and How to Fix It",
+    "Keto Flu: Why It Happens and How to Fix It",
     "What causes \"keto flu\" symptoms in the first days of a ketogenic diet, why electrolytes are the main culprit, and how to actually fix it.",
     "carbs", "For Students", "Keto flu explained: why it happens and how to fix it",
     "The fatigue, headaches, and brain fog some people get starting keto aren't really about ketones — they're mostly about sodium and water.",
@@ -1910,7 +1910,7 @@ add(
 
 add(
     "how-much-water-should-you-drink-per-day",
-    "How Much Water Should You Actually Drink Per Day?",
+    "How Much Water Should You Drink Per Day?",
     "Real daily water intake guidance from the National Academies, why \"8 glasses a day\" is a rough rule of thumb rather than a hard number, and how activity changes it.",
     "general", "For Students", "How much water should you actually drink per day?",
     "\"Drink 8 glasses a day\" isn't wrong exactly — it's just not based on your actual body, activity level, or climate.",
@@ -1923,7 +1923,7 @@ add(
 
 add(
     "macros-for-vegetarians",
-    "Macros for Vegetarians: Hitting Your Targets Without Meat",
+    "Macros for Vegetarians: Hit Your Targets",
     "How to hit protein, fat, and carb targets on a vegetarian diet — complete protein combining, common gaps, and the best vegetarian protein sources.",
     "general", "For Students", "Macros for vegetarians: hitting your targets without meat",
     "Vegetarian (unlike vegan) diets still include eggs and dairy, which makes hitting protein targets considerably more straightforward — but it still takes some planning.",
@@ -2112,8 +2112,8 @@ _DIET_COMPARE_TOOL = '''      <h2>Compare any two diets</h2>
 
 add(
     "diets-explained",
-    "Diets Explained: Animal-Based, Vegan, Paleo, Keto, Carnivore, Mediterranean & More",
-    "A clear, sourced overview and comparison tool for the major dietary patterns — animal-based, plant-based, vegan, paleo, carnivore, vegetarian, pescatarian, keto, and Mediterranean.",
+    "Diets Explained &amp; Compared Side by Side",
+    "Compare animal-based, plant-based, vegan, paleo, carnivore, vegetarian, pescatarian, keto, and Mediterranean diets side by side on macros and evidence.",
     "diets", "Diets", "Diets",
     "Every diet you've heard of is really just a different rule about which foods are in or out. Pick any two below to compare them, or read the full breakdown of each.",
     sec(_DIET_COMPARE_TOOL, bg="var(--color-pop3-bg)", tight=True) +
@@ -2144,7 +2144,7 @@ add(
 
 add(
     "paleo-diet-explained",
-    "The Paleo Diet Explained: Food List, Macros & What the Evidence Says",
+    "Paleo Diet Explained: Food List &amp; Macros",
     "What the paleo diet includes and excludes, its typical macronutrient split, and what the research actually says about its health claims.",
     "diets", "Diets", "The paleo diet explained",
     "Paleo is built on a simple pitch: eat like humans did before agriculture. The actual food list and evidence are more nuanced than that pitch suggests.",
@@ -2158,7 +2158,7 @@ add(
 
 add(
     "carnivore-diet-explained",
-    "The Carnivore Diet Explained: What It Is and the Real Risks",
+    "Carnivore Diet Explained: Risks &amp; Reality",
     "What the carnivore diet actually restricts, why some people report short-term benefits, and the nutrient-deficiency risks clinicians flag with long-term use.",
     "diets", "Diets", "The carnivore diet explained",
     "Carnivore is the strictest common elimination diet — animal products only, nothing else. That simplicity is also its biggest risk.",
@@ -2171,7 +2171,7 @@ add(
 
 add(
     "animal-based-diet-explained",
-    "The Animal-Based Diet Explained: How It Differs From Carnivore",
+    "Animal-Based Diet Explained",
     "What an animal-based diet actually allows compared to strict carnivore, and why the distinction matters if you're considering either.",
     "diets", "Diets", "The animal-based diet explained",
     "Animal-based and carnivore get used interchangeably online. They're not the same diet.",
@@ -2184,7 +2184,7 @@ add(
 
 add(
     "pescatarian-diet-explained",
-    "The Pescatarian Diet Explained: Benefits and How to Hit Your Macros",
+    "Pescatarian Diet: Benefits &amp; Macros",
     "What a pescatarian diet includes, the cardiovascular research behind it, and how to structure protein, fat, and carbs on it.",
     "diets", "Diets", "The pescatarian diet explained",
     "Pescatarian is often described as \"vegetarian plus fish\" — and that one addition changes the nutrition picture meaningfully.",
@@ -2198,7 +2198,7 @@ add(
 
 add(
     "plant-based-vs-vegan-diet",
-    "Plant-Based vs. Vegan: What's Actually the Difference?",
+    "Plant-Based vs. Vegan: The Real Difference",
     "Plant-based and vegan get used as synonyms constantly. They're not the same thing — here's the real distinction and why it matters for tracking macros.",
     "diets", "Diets", "Plant-based vs. vegan: what's actually the difference?",
     "\"Plant-based\" and \"vegan\" show up interchangeably in headlines, but they describe different rules — one is a strict exclusion list, the other is a loose emphasis.",
@@ -2214,7 +2214,7 @@ add(
 
 add(
     "cheat-days-do-they-help-or-hurt",
-    "Cheat Days: Do They Actually Help or Hurt Your Progress?",
+    "Cheat Days: Do They Help or Hurt?",
     "What a cheat day does to your metabolism and progress, whether it helps adherence, and how it compares to more moderate approaches like flexible dieting.",
     "general", "For Students", "Cheat days: do they actually help or hurt?",
     "One high-calorie day a week isn't going to undo your progress — but it's also not the metabolism-boosting hack it's sometimes marketed as.",
@@ -2227,7 +2227,7 @@ add(
 
 add(
     "sugar-addiction-is-it-real",
-    "Is Sugar Addiction Real? What the Research Actually Shows",
+    "Is Sugar Addiction Real? What Research Shows",
     "Whether sugar is addictive in the same sense as drugs, what brain-reward research actually finds, and why cravings feel so strong anyway.",
     "carbs", "For Students", "Is sugar addiction real?",
     "\"Sugar is as addictive as cocaine\" is one of the most repeated claims in diet culture. The actual research is a lot more measured.",
@@ -2281,7 +2281,7 @@ add(
 
 add(
     "portion-sizes-without-a-scale",
-    "How to Estimate Portion Sizes Without a Food Scale",
+    "Estimate Portion Sizes Without a Scale",
     "Practical hand-based and household-object portion estimation methods for when you can't or don't want to weigh your food.",
     "general", "For Students", "How to estimate portion sizes without a food scale",
     "A food scale is the most accurate way to track macros — but it's not the only way, and it's not required to eat consistently.",
@@ -2304,7 +2304,7 @@ add(
 
 add(
     "mediterranean-diet-explained",
-    "The Mediterranean Diet Explained: What the Evidence Actually Shows",
+    "Mediterranean Diet Explained: The Evidence",
     "What the Mediterranean diet includes, why it's one of the most rigorously studied eating patterns, and what the landmark PREDIMED trial found.",
     "diets", "Diets", "The Mediterranean diet explained",
     "Unlike most diet trends, the Mediterranean diet has decades of high-quality research behind it — including one of nutrition science's most cited randomized trials.",
@@ -2318,7 +2318,7 @@ add(
 
 add(
     "dash-diet-explained",
-    "The DASH Diet Explained: Eating to Lower Blood Pressure",
+    "DASH Diet Explained: Lower Blood Pressure",
     "What the DASH diet is, how it differs from Mediterranean, and the sodium and potassium targets behind why it works for blood pressure.",
     "diets", "Diets", "The DASH diet explained",
     "DASH stands for Dietary Approaches to Stop Hypertension — and unlike most diets, it was designed and tested specifically for that one outcome.",
@@ -2331,7 +2331,7 @@ add(
 
 add(
     "intuitive-eating-explained",
-    "Intuitive Eating Explained: Is It Right for You?",
+    "Intuitive Eating Explained",
     "What intuitive eating actually means as a structured approach, how it differs from just \"not tracking,\" and who it tends to work well for.",
     "general", "For Students", "Intuitive eating explained: is it right for you?",
     "Intuitive eating gets dismissed as \"no rules\" — it's actually a structured framework, and it's not the right fit for every goal.",
@@ -2344,7 +2344,7 @@ add(
 
 add(
     "electrolytes-explained",
-    "Electrolytes Explained: Sodium, Potassium, and Magnesium",
+    "Electrolytes: Sodium, Potassium &amp; Magnesium",
     "What electrolytes actually do in the body, the sodium, potassium, and magnesium targets from the American Heart Association, and when you actually need more.",
     "general", "For Students", "Electrolytes explained: sodium, potassium, and magnesium",
     "\"Electrolytes\" gets used as sports-drink marketing shorthand — the actual minerals involved have specific, individual jobs and targets.",
@@ -2377,7 +2377,7 @@ add(
 
 add(
     "added-sugar-vs-natural-sugar",
-    "Added Sugar vs. Natural Sugar: Does the Difference Matter?",
+    "Added Sugar vs. Natural Sugar",
     "Whether added sugar and naturally occurring sugar (like the sugar in fruit) actually behave differently in the body, and why food matrix matters.",
     "carbs", "For Students", "Added sugar vs. natural sugar: does the difference matter?",
     "Chemically, table sugar in a can of soda and the sugar in an apple are extremely similar. Nutritionally, they're not treated the same — for good reason.",
@@ -2424,7 +2424,7 @@ add(
 
 add(
     "bcaas-explained",
-    "BCAAs Explained: Are They Actually Worth Taking?",
+    "BCAAs Explained: Are They Worth Taking?",
     "What branched-chain amino acids actually do, why isolated BCAA supplements underperform whole protein, and when they might still make sense.",
     "protein", "For Students", "BCAAs explained: are they actually worth taking?",
     "BCAA supplements were huge before people realized whole protein already contains them — and does more.",
@@ -2439,7 +2439,7 @@ add(
 
 add(
     "whey-vs-casein-protein",
-    "Whey vs. Casein Protein: What's the Real Difference?",
+    "Whey vs. Casein: Which Protein Is Better?",
     "How whey and casein protein actually differ in digestion speed and amino acid profile, and when each one makes more practical sense.",
     "protein", "For Students", "Whey vs. casein protein: what's the real difference?",
     "Both are complete milk proteins — the real difference is digestion speed, not quality.",
@@ -2492,7 +2492,7 @@ add(
 
 add(
     "refeed-days-explained",
-    "Refeed Days Explained: Do They Actually Help a Diet?",
+    "Refeed Days: Do They Actually Help?",
     "What a refeed day actually does physiologically during a calorie deficit, and how it differs from an unplanned cheat day.",
     "general", "For Students", "Refeed days explained: do they actually help a diet?",
     "A refeed day is a deliberate, planned tool — not just a nicer name for a cheat day.",
@@ -2519,7 +2519,7 @@ add(
 
 add(
     "body-types-somatotypes-macros",
-    "Do Body Types (Ectomorph, Mesomorph, Endomorph) Actually Determine Your Macros?",
+    "Do Body Types Determine Your Macros?",
     "Where the ectomorph/mesomorph/endomorph body type system actually came from, why it isn't a validated way to set macros, and what actually should drive your targets.",
     "general", "For Students", "Do body types actually determine your macros?",
     "\"Ectomorph,\" \"mesomorph,\" and \"endomorph\" get treated as science-backed categories for setting macros. The original research behind them was never about diet at all.",
