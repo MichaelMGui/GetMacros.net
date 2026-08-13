@@ -32,6 +32,8 @@ class PageParser(HTMLParser):
         self._json_depth = 0
         self._json_parts: list[str] = []
         self.result_cards: list[str] = []
+        self.main_ids: list[str] = []
+        self.skip_links = 0
 
     @staticmethod
     def attrs(values) -> dict[str, str]:
@@ -48,6 +50,10 @@ class PageParser(HTMLParser):
             self.metas.append(a)
         elif tag == "a" and a.get("href"):
             self.links.append(a["href"])
+            if a["href"] == "#main-content":
+                self.skip_links += 1
+        elif tag == "main":
+            self.main_ids.append(a.get("id", ""))
         elif tag == "img" and "alt" not in a:
             self.images_without_alt += 1
         elif tag == "link" and "canonical" in a.get("rel", "").lower().split():
@@ -144,6 +150,19 @@ def main() -> int:
                 errors.append(f"{path}: canonical {parser.canonicals[0]!r} != {canonical_for(path)!r}")
             else:
                 canonicals.setdefault(parser.canonicals[0], []).append(path)
+            if parser.main_ids != ["main-content"]:
+                errors.append(f"{path}: expected one <main id=\'main-content\'> landmark")
+            if parser.skip_links != 1:
+                errors.append(f"{path}: expected one skip link to #main-content")
+            og_titles = [m for m in parser.metas if m.get("property", "").lower() == "og:title"]
+            og_urls = [m.get("content", "") for m in parser.metas if m.get("property", "").lower() == "og:url"]
+            twitter_cards = [m for m in parser.metas if m.get("name", "").lower() == "twitter:card"]
+            if len(og_titles) != 1:
+                errors.append(f"{path}: expected one Open Graph title")
+            if og_urls != [canonical_for(path)]:
+                errors.append(f"{path}: Open Graph URL must match canonical")
+            if len(twitter_cards) != 1:
+                errors.append(f"{path}: expected one Twitter card declaration")
 
         for raw in parser.jsonld:
             try:
