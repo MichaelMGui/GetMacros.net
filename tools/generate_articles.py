@@ -221,7 +221,7 @@ FOOTER = '''<footer class="site-footer">
 #      (the same responsive display unit can be reused on every page).
 # Until both are real, AdSense simply won't render anything in this slot --
 # nothing breaks, the site just shows no ad.
-ADSENSE_CLIENT = "ca-pub-XXXXXXXXXXXXXXXX"
+ADSENSE_CLIENT = "ca-pub-2316153877942502"
 
 ADSENSE_LOADER = (
     f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" '
