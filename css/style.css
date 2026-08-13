@@ -1383,8 +1383,7 @@ p { text-wrap:pretty; }
 .nav-links a[aria-current="page"] { background:var(--color-primary); color:#fff; }
 .nav-cta { background:var(--color-accent)!important; color:#fff!important; box-shadow:none!important; }
 .hero { position:relative; overflow:hidden; min-height:720px; display:grid; align-items:center; background:
- linear-gradient(120deg,rgba(10,72,51,.97),rgba(23,107,77,.88) 58%,rgba(212,156,50,.74)),
- url('/images/healthy-foods.jpg') center/cover; }
+ linear-gradient(120deg,rgba(10,72,51,.97),rgba(23,107,77,.88) 58%,rgba(212,156,50,.74)); }
 .hero::after { content:""; position:absolute; width:420px; height:420px; right:-100px; bottom:-160px; border:70px solid rgba(255,255,255,.08); border-radius:50%; }
 .hero .container { position:relative; z-index:1; max-width:1040px; text-align:left; }
 .hero h1 { max-width:900px; color:#fff; }
