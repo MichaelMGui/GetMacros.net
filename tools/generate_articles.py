@@ -2532,6 +2532,330 @@ add(
 )
 
 
+# ------------------------------------- MICRONUTRIENTS & SUPPLEMENTS BATCH --
+
+add(
+    "vitamin-d-explained",
+    "Vitamin D: How Much You Need and Why",
+    "What vitamin D does, how much you need per day, why deficiency is so common, and which foods and sources actually raise your levels.",
+    "general", "Micronutrients", "Vitamin D: how much you need and why",
+    "Vitamin D behaves more like a hormone than a typical vitamin, and it's one of the few nutrients most people genuinely struggle to get enough of.",
+    sec('''      <h2>What it does</h2>
+      <p>Vitamin D's best-known job is helping your gut absorb calcium — without enough of it, you can eat plenty of calcium and still absorb only a fraction of it. It also supports bone mineralization, normal muscle function, and immune signalling. Severe, prolonged deficiency causes rickets in children and osteomalacia (soft bones) in adults.<sup class="ref"><a href="sources.html#mic1">[1]</a></sup></p>
+      <h2>How much you need</h2>
+      <table class="data-table">
+        <tr><th>Group</th><th>RDA</th><th>Upper limit</th></tr>
+        <tr><td>Adults 19–70</td><td>600 IU (15 mcg)</td><td>4,000 IU (100 mcg)</td></tr>
+        <tr><td>Adults 71+</td><td>800 IU (20 mcg)</td><td>4,000 IU (100 mcg)</td></tr>
+      </table>
+      <p>These are the U.S. Dietary Reference Intake values, set assuming minimal sun exposure.<sup class="ref"><a href="sources.html#mic1">[1]</a></sup></p>''') +
+    sec('''      <h2>Why deficiency is common</h2>
+      <p>Very few foods naturally contain meaningful vitamin D. The reliable ones are fatty fish (salmon, mackerel, sardines), cod liver oil, egg yolks in smaller amounts, and fortified foods — most notably milk and some cereals and plant milks. Your skin also makes vitamin D from UVB sunlight, but that production drops sharply with higher latitude, winter months, darker skin pigmentation, sunscreen use, and time spent indoors.<sup class="ref"><a href="sources.html#mic1">[1]</a></sup></p>
+      <div class="panel">
+        <h3>Worth knowing</h3>
+        <p>Vitamin D is fat-soluble, so it's stored in body tissue rather than flushed out daily. That's exactly why the upper limit matters — unlike water-soluble vitamins, it's genuinely possible to take too much over time.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <p>Because it's fat-soluble, vitamin D is absorbed better when eaten alongside a meal containing some fat. See our guide to <a href="fat-soluble-vitamins-explained.html">fat-soluble vitamins</a> for the full picture.</p>'''),
+    [("fat-soluble-vitamins-explained.html", "Fat-soluble vitamins explained"), ("calcium-and-bone-health.html", "Calcium and bone health"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")]
+)
+
+add(
+    "iron-deficiency-and-athletes",
+    "Iron Deficiency in Athletes: Signs and Fixes",
+    "Why endurance athletes and menstruating women are at higher risk of low iron, what the symptoms look like, and how heme and non-heme iron differ.",
+    "athletes", "Sports Nutrition", "Iron deficiency in athletes: signs and fixes",
+    "Iron deficiency is the most common nutrient deficiency worldwide, and athletes — especially female endurance athletes — sit squarely in the highest-risk group.",
+    sec('''      <h2>Why iron matters for performance</h2>
+      <p>Iron is the core of hemoglobin, the protein that carries oxygen in your blood, and of myoglobin, which stores oxygen in muscle. Low iron means less oxygen delivered per heartbeat, which shows up directly as fatigue, breathlessness, and a drop in endurance capacity long before it becomes clinical anemia.<sup class="ref"><a href="sources.html#mic2">[1]</a></sup></p>
+      <h2>How much you need</h2>
+      <table class="data-table">
+        <tr><th>Group</th><th>RDA</th></tr>
+        <tr><td>Men 19+</td><td>8 mg/day</td></tr>
+        <tr><td>Women 19–50</td><td>18 mg/day</td></tr>
+        <tr><td>Women 51+</td><td>8 mg/day</td></tr>
+        <tr><td>Pregnancy</td><td>27 mg/day</td></tr>
+      </table>
+      <p>Menstruation is the main reason the requirement for women aged 19–50 is more than double that of men.<sup class="ref"><a href="sources.html#mic2">[1]</a></sup></p>''') +
+    sec('''      <h2>Heme vs. non-heme iron</h2>
+      <p>Iron comes in two forms, and they are not absorbed equally:</p>
+      <ul class="checklist">
+        <li><strong>Heme iron</strong> — found in meat, poultry, and fish. Absorbed far more efficiently and less affected by other things in the meal.</li>
+        <li><strong>Non-heme iron</strong> — found in plants, eggs, and fortified foods. Absorbed less efficiently, and inhibited by tea, coffee, and phytates in whole grains and legumes.</li>
+      </ul>
+      <p>Vitamin C markedly improves non-heme absorption, which is why pairing plant iron sources with citrus, peppers, or tomatoes is a genuinely useful habit — and why <a href="vegan-macros-guide.html">vegan</a> and <a href="macros-for-vegetarians.html">vegetarian</a> athletes need to plan iron more deliberately.<sup class="ref"><a href="sources.html#mic2">[1]</a></sup></p>''', bg="var(--color-pop2-bg)", tight=True) +
+    sec('''      <div class="panel warn">
+        <h3>Don't self-supplement blindly</h3>
+        <p>Iron is one of the few nutrients where excess is genuinely harmful, and the symptoms of low iron overlap with plenty of other causes. Low iron should be confirmed with a blood test (ferritin plus a full blood count) before supplementing, not guessed at.</p>
+      </div>'''),
+    [("plant-based-protein-sources.html", "Plant-based protein sources"), ("macros-for-endurance-vs-strength-athletes.html", "Endurance vs. strength macros"), ("protein-intake-for-women.html", "Protein intake for women")]
+)
+
+add(
+    "magnesium-explained",
+    "Magnesium: What It Does and Where to Get It",
+    "What magnesium does in the body, how much you need per day, the best food sources, and whether supplementing actually helps most people.",
+    "general", "Micronutrients", "Magnesium: what it does and where to get it",
+    "Magnesium is involved in hundreds of enzyme reactions, and intakes below the recommended amount are common — but that's not the same as deficiency.",
+    sec('''      <h2>What it does</h2>
+      <p>Magnesium acts as a cofactor in more than 300 enzyme systems, including those governing protein synthesis, muscle and nerve function, blood glucose control, and blood pressure regulation. It's also required for the production and use of ATP, your cells' immediate energy currency.<sup class="ref"><a href="sources.html#mic3">[1]</a></sup></p>
+      <h2>How much you need</h2>
+      <table class="data-table">
+        <tr><th>Group</th><th>RDA</th></tr>
+        <tr><td>Men 19–30</td><td>400 mg/day</td></tr>
+        <tr><td>Men 31+</td><td>420 mg/day</td></tr>
+        <tr><td>Women 19–30</td><td>310 mg/day</td></tr>
+        <tr><td>Women 31+</td><td>320 mg/day</td></tr>
+      </table>''') +
+    sec('''      <h2>Where to get it</h2>
+      <p>Magnesium is concentrated in plant foods built around chlorophyll and in seeds: pumpkin seeds, chia seeds, almonds, cashews, spinach, black beans, edamame, peanut butter, and whole grains are all strong sources. Refining grains strips most of the magnesium out, which is a large part of why intakes fall short on heavily processed diets.<sup class="ref"><a href="sources.html#mic3">[1]</a></sup></p>
+      <div class="panel">
+        <h3>Low intake vs. real deficiency</h3>
+        <p>Many people eat less than the RDA, but genuine symptomatic magnesium deficiency is uncommon in otherwise healthy people, because the kidneys limit how much is excreted when intake is low. Persistently low intake is still worth correcting — ideally through food first.<sup class="ref"><a href="sources.html#mic3">[1]</a></sup></p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("electrolytes-explained.html", "Electrolytes explained"), ("high-fiber-foods-list.html", "High-fiber foods list"), ("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients")]
+)
+
+add(
+    "vitamin-b12-and-vegan-diets",
+    "Vitamin B12 on a Vegan Diet: What to Know",
+    "Why vitamin B12 is the one nutrient vegans genuinely cannot get from unfortified plant foods, and how to cover it reliably.",
+    "diets", "Diets", "Vitamin B12 on a vegan diet: what to know",
+    "Most nutrition debates have two reasonable sides. B12 on a fully plant-based diet isn't one of them — this one has a clear answer.",
+    sec('''      <h2>Why B12 is different</h2>
+      <p>Vitamin B12 is required to make red blood cells, synthesize DNA, and maintain the myelin sheath around nerves. Deficiency causes megaloblastic anemia and, if prolonged, nerve damage that can become permanent.<sup class="ref"><a href="sources.html#mic4">[1]</a></sup></p>
+      <p>The catch is where it comes from. B12 is produced by bacteria, not by plants or animals — animals accumulate it through their own gut bacteria and their food. That means no unfortified plant food is a reliable B12 source. Not spirulina, not nutritional yeast unless it's explicitly fortified, not fermented soy.<sup class="ref"><a href="sources.html#mic4">[1]</a></sup></p>
+      <h2>How much you need</h2>
+      <p>The adult RDA is <strong>2.4 mcg/day</strong>, rising to 2.6 mcg in pregnancy and 2.8 mcg while breastfeeding.<sup class="ref"><a href="sources.html#mic4">[1]</a></sup></p>''') +
+    sec('''      <h2>How vegans should cover it</h2>
+      <ul class="checklist">
+        <li><strong>Fortified foods</strong> — many plant milks, breakfast cereals, and nutritional yeast products are fortified. Check the label; fortification is not universal.</li>
+        <li><strong>A B12 supplement</strong> — the simplest and most reliable route, and widely recommended for anyone eating fully plant-based.</li>
+        <li><strong>Don't rely on stores</strong> — the liver can hold years' worth of B12, which is exactly why deficiency creeps up slowly and is often missed until symptoms appear.</li>
+      </ul>
+      <p>Vegetarians who eat dairy and eggs are in a much easier position, since both contain B12 — see our <a href="macros-for-vegetarians.html">vegetarian macros guide</a>.</p>''', bg="var(--color-pop3-bg)", tight=True),
+    [("vegan-macros-guide.html", "Vegan macros guide"), ("plant-based-vs-vegan-diet.html", "Plant-based vs. vegan"), ("plant-based-protein-sources.html", "Plant-based protein sources")]
+)
+
+add(
+    "calcium-and-bone-health",
+    "Calcium and Bone Health: How Much You Need",
+    "How much calcium you need at each age, the best dietary sources, and why calcium without vitamin D and resistance training does less than you'd think.",
+    "general", "Micronutrients", "Calcium and bone health: how much you need",
+    "Bone isn't inert scaffolding — it's living tissue that's constantly broken down and rebuilt, and calcium is the raw material for the rebuilding half.",
+    sec('''      <h2>How much you need</h2>
+      <table class="data-table">
+        <tr><th>Group</th><th>RDA</th></tr>
+        <tr><td>Adults 19–50</td><td>1,000 mg/day</td></tr>
+        <tr><td>Women 51–70</td><td>1,200 mg/day</td></tr>
+        <tr><td>Adults 71+</td><td>1,200 mg/day</td></tr>
+      </table>
+      <p>Requirements rise later in life because absorption efficiency falls and, after menopause, bone loss accelerates.<sup class="ref"><a href="sources.html#mic5">[1]</a></sup></p>
+      <h2>Where to get it</h2>
+      <p>Dairy is the most concentrated common source, but it's far from the only one: canned sardines and salmon (with the bones), tofu set with calcium salts, fortified plant milks, kale, bok choy, and broccoli all contribute meaningfully. Spinach contains calcium but binds much of it in oxalates, making it poorly absorbed — a good example of why the number on a label isn't the whole story.<sup class="ref"><a href="sources.html#mic5">[1]</a></sup></p>''') +
+    sec('''      <div class="panel">
+        <h3>Calcium doesn't work alone</h3>
+        <p>Absorbing calcium depends on adequate <a href="vitamin-d-explained.html">vitamin D</a>, and the signal that tells your body to deposit calcium into bone is mechanical loading — resistance training and weight-bearing activity. Calcium intake alone, without those two, is the least effective version of a bone-health strategy.<sup class="ref"><a href="sources.html#mic1">[2]</a></sup></p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("vitamin-d-explained.html", "Vitamin D explained"), ("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients"), ("protein-intake-for-women.html", "Protein intake for women")]
+)
+
+add(
+    "fat-soluble-vitamins-explained",
+    "Fat-Soluble Vitamins: A, D, E and K",
+    "How vitamins A, D, E, and K differ from water-soluble vitamins, why they need dietary fat to absorb, and why upper limits matter more for them.",
+    "fat", "Fat Guide", "Fat-soluble vitamins: A, D, E and K",
+    "Four vitamins dissolve in fat rather than water — and that single property changes how you absorb them, how you store them, and how easy they are to overdo.",
+    sec('''      <h2>The four, and what they do</h2>
+      <table class="data-table">
+        <tr><th>Vitamin</th><th>Main roles</th><th>Good sources</th></tr>
+        <tr><td>A</td><td>Vision, immune function, cell growth</td><td>Liver, eggs, dairy; beta-carotene in orange and dark green vegetables</td></tr>
+        <tr><td>D</td><td>Calcium absorption, bone and muscle function</td><td>Fatty fish, fortified milk, sunlight exposure</td></tr>
+        <tr><td>E</td><td>Antioxidant protecting cell membranes</td><td>Nuts, seeds, vegetable oils</td></tr>
+        <tr><td>K</td><td>Blood clotting, bone metabolism</td><td>Leafy greens, some fermented foods</td></tr>
+      </table>''') +
+    sec('''      <h2>Why "fat-soluble" actually matters</h2>
+      <p>Two practical consequences follow from dissolving in fat rather than water:</p>
+      <ul class="checklist">
+        <li><strong>You need dietary fat to absorb them.</strong> Eating a carrot with no fat at all means absorbing much less of its beta-carotene. This is one of the concrete downsides of very low-fat diets.<sup class="ref"><a href="sources.html#mic6">[1]</a></sup></li>
+        <li><strong>Excess is stored, not excreted.</strong> Water-soluble vitamins are largely flushed out in urine when you overshoot. Fat-soluble ones accumulate in the liver and fat tissue, so high-dose supplementation — particularly vitamin A — can build to genuinely toxic levels over time.<sup class="ref"><a href="sources.html#mic6">[1]</a></sup></li>
+      </ul>
+      <div class="panel warn">
+        <h3>Preformed vitamin A vs. beta-carotene</h3>
+        <p>These aren't interchangeable in terms of risk. Preformed vitamin A (retinol, from animal foods and supplements) can reach toxic levels. Beta-carotene from plants is converted as needed and doesn't carry the same toxicity risk.<sup class="ref"><a href="sources.html#mic6">[1]</a></sup></p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("vitamin-d-explained.html", "Vitamin D explained"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")]
+)
+
+add(
+    "caffeine-and-athletic-performance",
+    "Caffeine and Athletic Performance: The Evidence",
+    "How much caffeine actually improves performance, when to take it, who responds least, and where the evidence is strongest.",
+    "athletes", "Sports Nutrition", "Caffeine and athletic performance: the evidence",
+    "Caffeine is one of the very few supplements with genuinely strong, consistent evidence behind it — and one of the easiest to get wrong by overdoing.",
+    sec('''      <h2>How much, and when</h2>
+      <p>The International Society of Sports Nutrition's position stand concludes that caffeine improves performance across endurance, high-intensity, and strength-based activities at doses of roughly <strong>3–6 mg per kg of body weight</strong>, taken about 60 minutes before exercise. For a 70 kg athlete that's around 210–420 mg — roughly two to four cups of coffee.<sup class="ref"><a href="sources.html#mic7">[1]</a></sup></p>
+      <p>Higher doses (9 mg/kg and above) do not reliably improve performance further, and markedly increase side effects: jitteriness, elevated heart rate, GI upset, and disrupted sleep.<sup class="ref"><a href="sources.html#mic7">[1]</a></sup></p>''') +
+    sec('''      <h2>What it actually does</h2>
+      <p>The main mechanism isn't extra energy — caffeine has no calories. It blocks adenosine receptors in the brain, which reduces your perception of effort and fatigue, so a given workload feels easier. That's why the effect shows up most clearly in endurance events and in sustained high-intensity work.<sup class="ref"><a href="sources.html#mic7">[1]</a></sup></p>
+      <div class="panel">
+        <h3>Individual response varies a lot</h3>
+        <p>Genetic differences in caffeine metabolism, plus habitual intake, mean the same dose affects people very differently. Response is worth testing in training rather than on competition day.<sup class="ref"><a href="sources.html#mic7">[1]</a></sup></p>
+      </div>
+      <p>Caffeine's effect on sleep is the most common way athletes undermine themselves with it — and sleep loss degrades recovery and performance more than the caffeine helped.</p>''', bg="var(--color-pop2-bg)", tight=True),
+    [("creatine-explained.html", "Creatine explained"), ("sports-drinks-vs-water.html", "Sports drinks vs. water"), ("carb-loading-for-athletes.html", "Carb loading for athletes")]
+)
+
+add(
+    "collagen-supplements-explained",
+    "Do Collagen Supplements Actually Work?",
+    "What collagen supplements are, what happens to them during digestion, and how strong the evidence really is for skin and joint claims.",
+    "protein", "Protein Guide", "Do collagen supplements actually work?",
+    "Collagen is the most abundant protein in your body. Whether swallowing more of it does what the marketing promises is a separate question.",
+    sec('''      <h2>What happens when you eat it</h2>
+      <p>Collagen supplements are usually hydrolyzed collagen — collagen broken into shorter peptides. Like any protein, it's digested into amino acids and short peptides before absorption. Your body does not route ingested collagen preferentially to your skin or joints; those amino acids enter the same general pool every other protein feeds.</p>
+      <p>Collagen is also an incomplete protein: it's very low in tryptophan and not well balanced in essential amino acids, which makes it a poor choice as a primary protein source compared to <a href="whey-vs-casein-protein.html">whey or casein</a>.<sup class="ref"><a href="sources.html#p1">[1]</a></sup></p>''') +
+    sec('''      <h2>What the evidence supports</h2>
+      <ul class="checklist">
+        <li><strong>Joint discomfort</strong> — some trials report modest improvements in activity-related joint pain, though study sizes are small and industry funding is common.<sup class="ref"><a href="sources.html#mic12">[2]</a></sup></li>
+        <li><strong>Skin elasticity</strong> — several trials report small improvements, again mostly small and often manufacturer-funded.</li>
+        <li><strong>Muscle building</strong> — not supported. For muscle protein synthesis, a complete protein with adequate leucine outperforms collagen clearly.<sup class="ref"><a href="sources.html#p2">[3]</a></sup></li>
+      </ul>
+      <div class="panel warn">
+        <h3>The honest summary</h3>
+        <p>Collagen is not useless, but it's nowhere near as well-supported as creatine or caffeine. If your total protein intake is already adequate, collagen is a low-priority addition — and if it isn't adequate, a complete protein source is the better fix.</p>
+      </div>''', bg="var(--color-protein-bg)", tight=True),
+    [("protein-powder-101.html", "Protein powder 101"), ("creatine-explained.html", "Creatine explained"), ("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein")]
+)
+
+add(
+    "soy-and-testosterone",
+    "Does Soy Lower Testosterone? What Research Says",
+    "Where the soy and testosterone myth came from, what meta-analyses of clinical trials actually found, and what soy does offer nutritionally.",
+    "protein", "Protein Guide", "Does soy lower testosterone?",
+    "Few nutrition claims have been tested as directly as this one — and few myths have survived the results as stubbornly.",
+    sec('''      <h2>Where the claim came from</h2>
+      <p>Soy contains isoflavones, plant compounds classed as phytoestrogens because they can bind weakly to estrogen receptors. The reasoning went: estrogen-like compound in, testosterone down. A handful of widely-shared case reports involving extreme intakes added fuel.</p>
+      <h2>What the research found</h2>
+      <p>An expanded meta-analysis pooling clinical studies in men found that neither soy protein nor isoflavone intake significantly altered testosterone, free testosterone, or estradiol levels.<sup class="ref"><a href="sources.html#mic9">[1]</a></sup> Phytoestrogens bind estrogen receptors far more weakly than human estrogen does, and the binding is selective — the effect simply isn't equivalent.</p>''') +
+    sec('''      <h2>What soy actually offers</h2>
+      <ul class="checklist">
+        <li><strong>A complete protein</strong> — soy is one of the few plant foods supplying all nine essential amino acids in useful amounts, which is why it scores well on <a href="protein-quality-scores-pdcaas-diaas.html">PDCAAS and DIAAS</a>.<sup class="ref"><a href="sources.html#p1">[2]</a></sup></li>
+        <li><strong>Useful for plant-based diets</strong> — tofu, tempeh, edamame, and soy milk are among the most efficient protein sources available to <a href="vegan-macros-guide.html">vegans</a>.</li>
+        <li><strong>Calcium, when set with calcium salts</strong> — check the label on tofu; it varies by brand.</li>
+      </ul>
+      <p>As with any food, the sensible caveat is dose and variety: soy as one protein source among several is well-supported. Extremely high intakes of any single food are a different question, and one nobody has strong data on.</p>''', bg="var(--color-protein-bg)", tight=True),
+    [("plant-based-protein-sources.html", "Plant-based protein sources"), ("common-nutrition-myths-debunked.html", "Common nutrition myths"), ("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein")]
+)
+
+add(
+    "protein-before-bed",
+    "Protein Before Bed: Does It Help Muscle Growth?",
+    "What happens to muscle protein synthesis overnight, what pre-sleep protein research found, and whether it matters if your daily total is already met.",
+    "protein", "Protein Guide", "Protein before bed: does it help muscle growth?",
+    "You spend roughly a third of your life in an overnight fast. That window turns out to be more interesting than it sounds.",
+    sec('''      <h2>The overnight problem</h2>
+      <p>Muscle protein synthesis needs amino acids available in the bloodstream. During a normal 7–9 hour sleep, no protein is coming in, so rates of synthesis decline over the course of the night while breakdown continues. The question researchers asked was simple: does adding protein right before sleep change that?</p>
+      <h2>What the research found</h2>
+      <p>In a controlled trial, participants who consumed roughly 40 g of casein protein before sleep after an evening resistance training session showed improved whole-body protein balance and higher overnight muscle protein synthesis rates than those given a placebo.<sup class="ref"><a href="sources.html#mic10">[1]</a></sup> Casein is the usual choice because it digests slowly, releasing amino acids gradually across several hours.</p>''') +
+    sec('''      <h2>How much this actually matters</h2>
+      <p>The effect is real but should be kept in proportion. Pre-sleep protein is best understood as <em>a convenient way to hit your daily total and spread intake evenly</em>, not a separate magic window. If you're already eating 1.6–2.2 g/kg spread across the day, adding a night-time serving on top adds much less than the headline suggests.<sup class="ref"><a href="sources.html#p2">[2]</a></sup></p>
+      <div class="panel">
+        <h3>Practical version</h3>
+        <p>If you struggle to reach your protein target, moving a serving to before bed is a genuinely useful place to put it. Good options: cottage cheese, Greek yogurt, milk, or a casein shake — all slow-digesting. See <a href="whey-vs-casein-protein.html">whey vs. casein</a> for the difference.</p>
+      </div>''', bg="var(--color-protein-bg)", tight=True),
+    [("whey-vs-casein-protein.html", "Whey vs. casein protein"), ("protein-timing.html", "Does protein timing matter?"), ("protein-for-muscle-growth.html", "Protein for muscle growth")]
+)
+
+add(
+    "seed-oils-explained",
+    "Are Seed Oils Bad for You? The Evidence",
+    "What seed oils are, why linoleic acid became controversial, and what controlled trials and major reviews actually conclude about replacing saturated fat.",
+    "fat", "Fat Guide", "Are seed oils bad for you?",
+    "Few foods have swung from health-recommended to internet-villain as fast as seed oils. The underlying evidence has moved much less than the discourse.",
+    sec('''      <h2>What they are</h2>
+      <p>"Seed oils" usually refers to soybean, canola (rapeseed), sunflower, safflower, corn, cottonseed, grapeseed, and rice bran oil. What they share is being high in polyunsaturated fat, particularly the omega-6 fatty acid <strong>linoleic acid</strong>.</p>
+      <h2>The argument against them</h2>
+      <p>The common claim runs: omega-6 fats are pro-inflammatory, modern diets contain far more omega-6 than our ancestors ate, therefore seed oils drive chronic disease. The <a href="omega-3-vs-omega-6.html">omega-6 to omega-3 ratio</a> has genuinely shifted in modern diets — that part is accurate.</p>''') +
+    sec('''      <h2>What the evidence actually shows</h2>
+      <p>The American Heart Association's presidential advisory reviewed the randomized controlled trials and pooled analyses and concluded that <strong>replacing saturated fat with polyunsaturated vegetable oil lowers cardiovascular disease risk</strong> — by about 30% in the pooled trial data, an effect comparable to statin treatment.<sup class="ref"><a href="sources.html#mic11">[1]</a></sup></p>
+      <p>The proposed inflammation mechanism has also not held up well: controlled feeding trials increasing linoleic acid intake have generally not shown corresponding increases in inflammatory markers in humans.<sup class="ref"><a href="sources.html#mic11">[1]</a></sup></p>
+      <div class="panel">
+        <h3>The reasonable middle</h3>
+        <p>A fair reading is that seed oils are not the problem — but the foods they most often arrive in might be. Most seed oil in a typical diet comes packaged inside fried and ultra-processed food, and that association is easy to mistake for causation by the oil itself. Getting more <a href="omega-3-foods-list.html">omega-3</a> is better supported than fearing omega-6.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("omega-3-vs-omega-6.html", "Omega-3 vs omega-6"), ("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("common-nutrition-myths-debunked.html", "Common nutrition myths")]
+)
+
+add(
+    "artificial-sweeteners-explained",
+    "Artificial Sweeteners: What the Evidence Says",
+    "How non-sugar sweeteners work, what the WHO's 2023 guideline concluded about using them for weight control, and how to read the evidence sensibly.",
+    "carbs", "Carbohydrate Guide", "Artificial sweeteners: what the evidence says",
+    "Sweeteners let you have the taste of sugar without the calories. Whether that translates into better health outcomes is a more complicated story.",
+    sec('''      <h2>What they are</h2>
+      <p>Non-sugar sweeteners include aspartame, sucralose, saccharin, acesulfame-K, stevia, and monk fruit extract. They're intensely sweet — often hundreds of times sweeter than sucrose — so the quantity used contributes negligible calories and, in most cases, no meaningful effect on blood glucose. That makes them useful in principle for people managing <a href="glycemic-index-explained.html">blood sugar</a> or total calories.</p>''') +
+    sec('''      <h2>What the WHO concluded</h2>
+      <p>In 2023 the World Health Organization issued a conditional recommendation <strong>against using non-sugar sweeteners as a means of achieving weight control or reducing the risk of noncommunicable diseases</strong>. The reasoning: while short-term trials show modest weight reduction, longer-term observational data did not show sustained benefit, and suggested possible associations with type 2 diabetes and cardiovascular disease.<sup class="ref"><a href="sources.html#mic8">[1]</a></sup></p>
+      <div class="panel warn">
+        <h3>Read that carefully</h3>
+        <p>The WHO explicitly labelled this a <em>conditional</em> recommendation based on low-certainty evidence, and noted the observational associations may reflect reverse causation — people already at higher risk are more likely to switch to sweeteners in the first place. It is not a finding that sweeteners are toxic, and it is not a safety warning about approved intake levels.<sup class="ref"><a href="sources.html#mic8">[1]</a></sup></p>
+      </div>
+      <p>The practical takeaway most researchers converge on: swapping sugary drinks for sweetened ones is likely an improvement over doing nothing, but neither is as good as shifting toward water and whole foods.</p>''', bg="var(--color-carbs-bg)", tight=True),
+    [("added-sugar-vs-natural-sugar.html", "Added vs. natural sugar"), ("sugar-addiction-is-it-real.html", "Is sugar addiction real?"), ("net-carbs-vs-total-carbs.html", "Net carbs vs. total carbs")]
+)
+
+add(
+    "fiber-and-gut-microbiome",
+    "Fiber and Your Gut Microbiome Explained",
+    "How gut bacteria ferment dietary fiber into short-chain fatty acids, why that matters for health, and which foods feed your microbiome best.",
+    "carbs", "Carbohydrate Guide", "Fiber and your gut microbiome",
+    "You don't digest fiber. The trillions of bacteria in your large intestine do — and what they produce from it is the interesting part.",
+    sec('''      <h2>What fermentation actually produces</h2>
+      <p>Fiber passes through the small intestine largely intact. In the colon, gut bacteria ferment the soluble, fermentable fraction of it and produce <strong>short-chain fatty acids</strong> — mainly acetate, propionate, and butyrate. Butyrate is the preferred fuel of the cells lining your colon, which is a striking arrangement: you feed the bacteria, and the bacteria feed your gut lining.<sup class="ref"><a href="sources.html#mic13">[1]</a></sup></p>
+      <h2>Soluble vs. insoluble</h2>
+      <table class="data-table">
+        <tr><th>Type</th><th>What it does</th><th>Found in</th></tr>
+        <tr><td>Soluble</td><td>Forms a gel, feeds gut bacteria, slows glucose absorption, binds cholesterol</td><td>Oats, barley, beans, apples, citrus, psyllium</td></tr>
+        <tr><td>Insoluble</td><td>Adds bulk, speeds transit through the gut</td><td>Wheat bran, whole grains, nuts, vegetable skins</td></tr>
+      </table>''') +
+    sec('''      <h2>Feeding a diverse microbiome</h2>
+      <p>The single most consistent finding in this area is that <strong>plant diversity matters more than any one "superfood."</strong> Different bacterial species ferment different fibers, so a diet drawing on a wide range of plants supports a wider range of species than a diet built on one high-fiber food.</p>
+      <ul class="checklist">
+        <li>Legumes — beans, lentils, chickpeas</li>
+        <li>Whole grains — oats, barley, rye</li>
+        <li>A varied mix of vegetables, fruit, nuts, and seeds</li>
+        <li>Fermented foods, which add live bacteria alongside the fiber that feeds them</li>
+      </ul>
+      <div class="panel">
+        <h3>Increase it gradually</h3>
+        <p>Jumping from a low-fiber diet to a very high-fiber one in a few days reliably produces gas and bloating while your microbiome adjusts. Increase over a few weeks and raise water intake alongside it.</p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("fiber-benefits.html", "Why fiber matters"), ("high-fiber-foods-list.html", "High-fiber foods list"), ("how-digestion-works.html", "How digestion works")]
+)
+
+add(
+    "how-to-track-your-macros",
+    "How to Track Your Macros: A Beginner's Guide",
+    "A practical walkthrough of tracking macros — setting targets, weighing versus estimating, handling recipes and eating out, and when to stop tracking.",
+    "general", "Practical Guides", "How to track your macros: a beginner's guide",
+    "Tracking is a measurement tool, not a lifestyle. Used well it teaches you what's in your food; used badly it becomes an anxiety generator.",
+    sec('''      <h2>Step 1: set your targets</h2>
+      <p>Start with total calories based on your <a href="tdee-vs-bmr.html">TDEE</a> and goal, then set protein first (1.6–2.2 g/kg if you train), fat next (at minimum 20% of calories to support hormone production and <a href="fat-soluble-vitamins-explained.html">fat-soluble vitamin absorption</a>), and let carbohydrate fill the remainder.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> Our <a href="calculators.html">macro calculator</a> does this arithmetic for you, or you can <a href="how-to-calculate-macros-by-hand.html">work it out by hand</a>.</p>
+      <h2>Step 2: weigh, at first</h2>
+      <p>For the first two or three weeks, weigh food in grams rather than using cups or eyeballing. Not forever — the point is calibration. Most people substantially underestimate portions of calorie-dense foods (oil, nut butter, cheese, rice) and overestimate protein portions. Once you've seen what 150 g of chicken actually looks like, you can <a href="portion-sizes-without-a-scale.html">estimate without a scale</a> reasonably well.</p>''') +
+    sec('''      <h2>Step 3: handle the awkward cases</h2>
+      <ul class="checklist">
+        <li><strong>Recipes</strong> — log the raw ingredients once, save the recipe, then log portions of it. Weigh the finished dish so you can divide it accurately.</li>
+        <li><strong>Eating out</strong> — pick the closest reasonable database match and move on. Precision here is impossible, and chasing it is the fastest route to giving up.</li>
+        <li><strong>Cooked vs. raw</strong> — weights differ substantially as food loses or absorbs water. Pick one convention and stay consistent.</li>
+        <li><strong>Alcohol</strong> — contributes 7 kcal/g and fits no macro category cleanly. See <a href="alcohol-and-macros.html">alcohol and macros</a>.</li>
+      </ul>''', bg="var(--color-pop2-bg)", tight=True) +
+    sec('''      <h2>Step 4: know when to stop</h2>
+      <p>Tracking has done its job when you can look at a plate and estimate its macros within a reasonable margin. Many people track for a few months, then move to tracking only protein, or only occasionally to recalibrate. If tracking starts driving anxiety around food, that's a signal to stop and consider a less rigid approach such as <a href="intuitive-eating-explained.html">intuitive eating</a> — a tool that makes eating worse isn't working.</p>
+      <p><a href="calculators.html" class="btn btn-primary">Set your macro targets →</a></p>'''),
+    [("calculators.html", "Macro calculator"), ("how-to-calculate-macros-by-hand.html", "Calculate macros by hand"), ("iifym-flexible-dieting.html", "IIFYM and flexible dieting")]
+)
+
 def main():
     for a in ARTICLES:
         html = page(a["slug"], a["title"], a["meta"], a["category"],
