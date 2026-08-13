@@ -1906,17 +1906,27 @@ _DIET_COMPARE_DATA = [
     {"id": "mediterranean", "name": "Mediterranean", "p": 18, "f": 37, "c": 45, "macros": "Moderate protein, moderate-high unsaturated fat, moderate carb", "includes": "Vegetables, fruit, whole grains, legumes, olive oil, fish", "excludes": "Little red meat, minimal processed food", "evidence": "Strongest evidence base (PREDIMED trial)"},
 ]
 
-_DIET_COMPARE_TOOL = '''      <h2>Compare diets side by side</h2>
-      <p class="section-intro">Pick two diets to see their macro split charted out, plus what's typically included, excluded, and how strong the evidence is.</p>
-      <div class="diet-compare-selects">
-        <div class="diet-select-wrap">
-          <label for="diet-select-a">Diet A</label>
-          <select id="diet-select-a" class="diet-select"></select>
+_DIET_COMPARE_TOOL = '''      <h2>Compare any two diets</h2>
+      <p class="section-intro">Pick two diets below and see exactly how they differ — macros, what's included, what's excluded, and how strong the evidence is.</p>
+      <div class="diet-picker-row">
+        <div class="diet-picker" id="diet-picker-a">
+          <span class="diet-picker-label">First diet</span>
+          <button type="button" class="diet-picker-btn" id="diet-picker-a-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="diet-picker-current"></span>
+            <svg class="chev" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="diet-picker-menu" id="diet-picker-a-menu" role="listbox"></div>
         </div>
-        <span class="diet-vs-label">vs</span>
-        <div class="diet-select-wrap">
-          <label for="diet-select-b">Diet B</label>
-          <select id="diet-select-b" class="diet-select"></select>
+        <button type="button" class="diet-swap-btn" id="diet-swap-btn" aria-label="Swap diets" title="Swap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 4l-4 4 4 4M3 8h13M17 12l4 4-4 4M21 16H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="diet-picker" id="diet-picker-b">
+          <span class="diet-picker-label">Second diet</span>
+          <button type="button" class="diet-picker-btn" id="diet-picker-b-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="diet-picker-current"></span>
+            <svg class="chev" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="diet-picker-menu" id="diet-picker-b-menu" role="listbox"></div>
         </div>
       </div>
       <div id="diet-compare-chart"></div>
@@ -1924,20 +1934,60 @@ _DIET_COMPARE_TOOL = '''      <h2>Compare diets side by side</h2>
       <script>
       (function () {
         var DIETS = ''' + json.dumps(_DIET_COMPARE_DATA) + ''';
-        var selA = document.getElementById("diet-select-a");
-        var selB = document.getElementById("diet-select-b");
         var chart = document.getElementById("diet-compare-chart");
         var out = document.getElementById("diet-compare-table");
-        DIETS.forEach(function (d, i) {
-          var optA = document.createElement("option");
-          optA.value = d.id; optA.textContent = d.name;
-          selA.appendChild(optA);
-          var optB = document.createElement("option");
-          optB.value = d.id; optB.textContent = d.name;
-          selB.appendChild(optB);
+        var state = { a: "vegan", b: "keto" };
+
+        function dietById(id) { return DIETS.filter(function (d) { return d.id === id; })[0]; }
+        function dominant(d) {
+          if (d.p >= d.f && d.p >= d.c) return "protein";
+          if (d.f >= d.p && d.f >= d.c) return "fat";
+          return "carbs";
+        }
+
+        function closeAll() {
+          document.querySelectorAll(".diet-picker-menu.open").forEach(function (m) { m.classList.remove("open"); });
+          document.querySelectorAll(".diet-picker-btn.open").forEach(function (b) { b.classList.remove("open"); b.setAttribute("aria-expanded", "false"); });
+        }
+        document.addEventListener("click", closeAll);
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeAll(); });
+
+        function buildPicker(key) {
+          var btn = document.getElementById("diet-picker-" + key + "-btn");
+          var menu = document.getElementById("diet-picker-" + key + "-menu");
+          DIETS.forEach(function (d) {
+            var opt = document.createElement("div");
+            opt.className = "diet-picker-option";
+            opt.setAttribute("role", "option");
+            opt.dataset.id = d.id;
+            opt.innerHTML = '<i class="dot ' + dominant(d) + '"></i><span>' + d.name + '</span><span class="check">\\u2713</span>';
+            opt.addEventListener("click", function (e) {
+              e.stopPropagation();
+              state[key] = d.id;
+              closeAll();
+              render();
+            });
+            menu.appendChild(opt);
+          });
+          btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            var isOpen = menu.classList.contains("open");
+            closeAll();
+            if (!isOpen) {
+              menu.classList.add("open");
+              btn.classList.add("open");
+              btn.setAttribute("aria-expanded", "true");
+            }
+          });
+        }
+        buildPicker("a");
+        buildPicker("b");
+
+        document.getElementById("diet-swap-btn").addEventListener("click", function (e) {
+          e.stopPropagation();
+          var tmp = state.a; state.a = state.b; state.b = tmp;
+          render();
         });
-        selA.value = "vegan";
-        selB.value = "keto";
 
         function chartCard(d) {
           return '<div class="diet-chart-card">' +
@@ -1955,9 +2005,11 @@ _DIET_COMPARE_TOOL = '''      <h2>Compare diets side by side</h2>
         }
 
         function render() {
-          var a = DIETS.filter(function (d) { return d.id === selA.value; })[0];
-          var b = DIETS.filter(function (d) { return d.id === selB.value; })[0];
-          if (!a || !b) return;
+          var a = dietById(state.a), b = dietById(state.b);
+          document.querySelector("#diet-picker-a-btn .diet-picker-current").textContent = a.name;
+          document.querySelector("#diet-picker-b-btn .diet-picker-current").textContent = b.name;
+          document.querySelectorAll("#diet-picker-a-menu .diet-picker-option").forEach(function (o) { o.classList.toggle("selected", o.dataset.id === state.a); });
+          document.querySelectorAll("#diet-picker-b-menu .diet-picker-option").forEach(function (o) { o.classList.toggle("selected", o.dataset.id === state.b); });
           chart.innerHTML = '<div class="diet-chart">' + chartCard(a) + chartCard(b) + '</div>';
           var rows = [["Typically includes", "includes"], ["Typically excludes", "excludes"], ["Evidence strength", "evidence"]];
           var html = '<div class="table-scroll"><table class="data-table diet-compare-table"><tr><th></th><th>' +
@@ -1968,8 +2020,6 @@ _DIET_COMPARE_TOOL = '''      <h2>Compare diets side by side</h2>
           html += "</table></div>";
           out.innerHTML = html;
         }
-        selA.addEventListener("change", render);
-        selB.addEventListener("change", render);
         render();
       })();
       </script>'''

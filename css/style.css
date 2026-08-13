@@ -944,41 +944,113 @@ sup.ref a {
 
 /* ---------- Diet comparison tool ---------- */
 
-.diet-compare-selects {
+.diet-picker-row {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  margin: 1.2rem 0 1.6rem;
+  gap: 1rem;
+  margin: 1.4rem 0 1.8rem;
 }
-.diet-select-wrap { display: flex; flex-direction: column; gap: .35rem; flex: 1 1 220px; }
-.diet-select-wrap label { font-weight: 700; font-size: .82rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: .03em; }
-.diet-select {
-  appearance: none;
-  -webkit-appearance: none;
+.diet-picker { position: relative; flex: 1 1 240px; min-width: 0; }
+.diet-picker-label {
+  display: block;
+  font-weight: 800;
+  font-size: .72rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: .4rem;
+}
+.diet-picker-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  background: var(--color-surface);
   border: 1.5px solid var(--color-border);
-  background-color: var(--color-surface);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%239b5de5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
+  border-radius: 16px;
+  padding: .85rem 1.1rem;
   color: var(--color-text);
   font-weight: 700;
-  font-size: 1rem;
-  padding: .75rem 2.6rem .75rem 1.1rem;
-  border-radius: 12px;
+  font-size: 1.05rem;
+  font-family: inherit;
   cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
   transition: border-color .15s ease, box-shadow .15s ease;
 }
-.diet-select:hover, .diet-select:focus { border-color: var(--color-pop3); outline: none; box-shadow: 0 0 0 3px var(--color-pop3-bg); }
-.diet-vs-label { font-weight: 800; font-size: .95rem; color: var(--color-pop3); padding-bottom: .8rem; }
+.diet-picker-btn:hover { border-color: var(--color-pop3); }
+.diet-picker-btn.open, .diet-picker-btn:focus-visible {
+  border-color: var(--color-pop3);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-pop3-bg);
+}
+.diet-picker-btn .chev { flex-shrink: 0; color: var(--color-pop3); transition: transform .18s ease; }
+.diet-picker-btn.open .chev { transform: rotate(180deg); }
+
+.diet-picker-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: 0 14px 32px rgba(30, 20, 10, .16);
+  padding: .4rem;
+  max-height: 300px;
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity .15s ease, transform .15s ease;
+}
+.diet-picker-menu.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.diet-picker-option {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .65rem .75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .95rem;
+  color: var(--color-text);
+}
+.diet-picker-option:hover { background: var(--color-pop3-bg); }
+.diet-picker-option .dot { width: 9px; height: 9px; border-radius: 999px; flex-shrink: 0; margin: 0; }
+.diet-picker-option .check { margin-left: auto; opacity: 0; color: var(--color-pop3); font-weight: 800; }
+.diet-picker-option.selected { background: var(--color-pop3-bg); }
+.diet-picker-option.selected .check { opacity: 1; }
+
+.diet-swap-btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-pop3);
+  cursor: pointer;
+  transition: transform .18s ease, border-color .15s ease, background .15s ease;
+  align-self: flex-end;
+  margin-bottom: 1px;
+}
+.diet-swap-btn:hover { border-color: var(--color-pop3); background: var(--color-pop3-bg); transform: rotate(180deg); }
+@media (max-width: 640px) { .diet-swap-btn { align-self: center; } }
 
 .diet-chart { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.6rem; }
 @media (max-width: 700px) { .diet-chart { grid-template-columns: 1fr; } }
 .diet-chart-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 1.2rem 1.3rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
 }
 .diet-chart-card h3 { margin: 0 0 .8rem; font-size: 1.1rem; }
 .diet-chart-bar {
