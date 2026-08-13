@@ -1,11 +1,11 @@
 {
   "name": "GetMacros.net",
   "short_name": "GetMacros",
-  "description": "Nutrition education explaining protein, fat, and carbohydrates with cited research.",
+  "description": "Evidence-aware nutrition guides, calculators, games, and learning tools with sources you can open.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fbf7f0",
-  "theme_color": "#1b6b4a",
+  "theme_color": "#176b4d",
   "icons": [
     { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
