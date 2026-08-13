@@ -601,6 +601,7 @@ table.data-table tr:nth-child(even) td { background: #f7f2e8; }
   margin-bottom: 0.3rem;
 }
 .field .hint { font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.25rem; }
+.hint { font-size: 0.85rem; color: var(--color-text-muted); }
 
 .field input[type="number"],
 .field select {
@@ -1274,3 +1275,37 @@ sup.ref a {
 
 .pill.science { background: var(--color-pop4-bg); color: var(--color-pop4); }
 .card.science:hover { box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-pop4) inset; }
+
+/* ---------- Cookie notice ---------- */
+
+#cookie-notice {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background: var(--color-primary-dark);
+  color: #fff;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, .18);
+  transform: translateY(100%);
+  transition: transform .3s ease;
+}
+#cookie-notice.show { transform: translateY(0); }
+.cookie-notice-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+#cookie-notice p { margin: 0; font-size: .88rem; line-height: 1.5; color: rgba(255, 255, 255, .92); flex: 1 1 420px; }
+#cookie-notice a { color: #fff; text-decoration: underline; }
+.cookie-notice-actions { flex-shrink: 0; }
+.cookie-notice-ok { padding: .6rem 1.4rem; box-shadow: none; }
+@media (max-width: 600px) {
+  .cookie-notice-inner { flex-direction: column; align-items: stretch; text-align: center; }
+  .cookie-notice-actions { display: flex; justify-content: center; }
+}

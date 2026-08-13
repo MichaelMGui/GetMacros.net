@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260813b"
+ASSET_VERSION = "20260814"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -191,7 +191,9 @@ FOOTER = '''<footer class="site-footer">
       <h4>Company</h4>
       <ul>
         <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
       </ul>
     </div>
   </div>
@@ -301,6 +303,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1201,6 +1204,7 @@ def build_hub():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1296,7 +1300,7 @@ def build_about():
   <section style="background:var(--color-protein-bg)">
     <div class="container">
       <h2>Questions or corrections</h2>
-      <p>If you find a claim that looks wrong or a citation that's out of date, the fastest way to verify it yourself is the <a href="sources.html">Sources page</a> — every reference links directly to its original source.</p>
+      <p>If you find a claim that looks wrong or a citation that's out of date, the fastest way to verify it yourself is the <a href="sources.html">Sources page</a> — every reference links directly to its original source. To report it directly, see our <a href="contact.html">Contact page</a>.</p>
     </div>
   </section>
 </main>
@@ -1305,6 +1309,7 @@ def build_about():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1403,6 +1408,7 @@ def build_privacy():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1410,6 +1416,202 @@ def build_privacy():
 </html>
 '''
     path = os.path.join(ROOT, "privacy.html")
+    with open(path, "w") as f:
+        f.write(html)
+    print("wrote", path)
+
+
+def contact_jsonld(url):
+    data = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "url": url,
+        "inLanguage": "en",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "GetMacros.net",
+            "url": f"{SITE}/",
+            "email": "getmacros.net@outlook.com",
+        },
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
+def build_contact():
+    title = "Contact GetMacros.net"
+    meta = "How to reach GetMacros.net with corrections, content questions, or advertising inquiries."
+    url = "https://getmacros.net/contact.html"
+    html = f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b6b4a">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
+<title>{title} | GetMacros.net</title>
+<meta name="description" content="{meta}">
+<meta name="author" content="{AUTHOR_NAME}">
+<link rel="canonical" href="{url}">
+{seo_meta(title, meta, url, og_type="website")}
+{contact_jsonld(url)}
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
+{ADSENSE_LOADER}
+</head>
+<body>
+{ICON_SPRITE}
+{NAV}
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg> Contact</p>
+      <h1>Contact GetMacros.net</h1>
+      <p>Spotted an error, have a source to suggest, or a business inquiry? Here's how to reach us.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Email</h2>
+      <p>The fastest way to reach us for anything — corrections, questions about a citation, content suggestions, or advertising and partnership inquiries.</p>
+      <p><a class="btn btn-primary" href="mailto:getmacros.net@outlook.com">getmacros.net@outlook.com</a></p>
+      <p class="hint">This is a small, independently run reference site — we read every message but can't guarantee a response time.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-carbs-bg)">
+    <div class="container">
+      <h2>Found an error?</h2>
+      <p>If a number, claim, or citation looks wrong, email us the article URL and what looks off. We'd rather fix it than leave it — every factual claim on this site is meant to trace back to a real source on the <a href="sources.html">Sources page</a>, and we take it seriously when that breaks down.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>What we can't help with</h2>
+      <p>This site is educational, not a medical or dietetics practice — we can't answer personal health questions or give individualized advice. For that, see a doctor or registered dietitian. See our <a href="about.html">About page</a> for more on what the site is and isn't.</p>
+    </div>
+  </section>
+</main>
+
+{AD_SLOT}
+{FOOTER}
+
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
+</body>
+</html>
+'''
+    path = os.path.join(ROOT, "contact.html")
+    with open(path, "w") as f:
+        f.write(html)
+    print("wrote", path)
+
+
+def build_terms():
+    title = "Terms of Use"
+    meta = "The terms governing use of GetMacros.net — educational content only, not medical advice, third-party ads, and intellectual property."
+    url = "https://getmacros.net/terms.html"
+    html = f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b6b4a">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://www.highperformanceformat.com">
+<title>{title} | GetMacros.net</title>
+<meta name="description" content="{meta}">
+<meta name="author" content="{AUTHOR_NAME}">
+<link rel="canonical" href="{url}">
+{seo_meta(title, meta, url, og_type="website")}
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
+{ADSENSE_LOADER}
+</head>
+<body>
+{ICON_SPRITE}
+{NAV}
+
+<main>
+  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
+    <div class="container">
+      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-document"/></svg> Terms</p>
+      <h1>Terms of use</h1>
+      <p>Last updated August 2026. Plain-language terms for using GetMacros.net.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Acceptance of these terms</h2>
+      <p>By using GetMacros.net, you agree to these terms. If you don't agree with them, the only enforceable request we can make is that you stop using the site.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-carbs-bg)">
+    <div class="container">
+      <h2>Educational content, not advice</h2>
+      <p>Everything on this site — articles, calculators, quizzes, glossary — is for general education, not personalized medical, dietetic, or health advice. Calculator results are estimates based on published formulas, not a prescription. Talk to a doctor or registered dietitian before making significant changes to your diet, especially if you have a medical condition.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Intellectual property</h2>
+      <p>The text, design, and original graphics on this site are owned by GetMacros.net unless otherwise credited. You're welcome to link to any page. Please don't republish or scrape substantial portions of the content elsewhere without permission — email us at <a href="mailto:getmacros.net@outlook.com">getmacros.net@outlook.com</a> if you'd like to use something. Cited facts and figures themselves aren't ours to own — see the <a href="sources.html">Sources page</a> for the original research behind them.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-fat-bg)">
+    <div class="container">
+      <h2>Third-party links and advertising</h2>
+      <p>This site displays ads from Google AdSense and Adsterra, and links out to external sources for citations. We don't control the content, availability, or practices of external sites and aren't responsible for them. See our <a href="privacy.html">Privacy policy</a> for how advertising cookies work.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>No warranty</h2>
+      <p>This site is provided "as is." We work to keep facts accurate and citations current, but we don't guarantee the content is complete, error-free, or suitable for any particular purpose. Use of any information here is at your own discretion.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-protein-bg)">
+    <div class="container">
+      <h2>Changes to these terms</h2>
+      <p>If these terms change, the update will be reflected on this page with a new "last updated" date above. Continued use of the site after a change means you accept the updated terms.</p>
+    </div>
+  </section>
+</main>
+
+{AD_SLOT}
+{FOOTER}
+
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
+</body>
+</html>
+'''
+    path = os.path.join(ROOT, "terms.html")
     with open(path, "w") as f:
         f.write(html)
     print("wrote", path)
@@ -1471,6 +1673,7 @@ def build_404():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/cookie-notice.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 <script src="js/ads-config.js?v={ASSET_VERSION}"></script>
 <script src="js/ads.js?v={ASSET_VERSION}"></script>
@@ -1492,7 +1695,9 @@ CORE_PAGES = [
     ("articles.html", "0.8"),
     ("sources.html", "0.5"),
     ("about.html", "0.4"),
+    ("contact.html", "0.3"),
     ("privacy.html", "0.2"),
+    ("terms.html", "0.2"),
     ("es/", "0.6"),
     ("fr/", "0.6"),
 ]
@@ -3759,6 +3964,8 @@ def main():
     build_404()
     build_about()
     build_privacy()
+    build_contact()
+    build_terms()
     build_sitemap()
     return ARTICLES
 
