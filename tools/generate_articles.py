@@ -1916,12 +1916,22 @@ add(
         <li><strong>Study design</strong> — a randomized controlled trial is stronger evidence than an observational study, which is stronger than a case report; headlines rarely specify which one you're reading about</li>
         <li><strong>Sample size and duration</strong> — a 12-person, 2-week study can't tell you much about long-term outcomes in the general population</li>
         <li><strong>Human vs. animal/cell studies</strong> — a striking result in mice doesn't automatically translate to humans</li>
-        <li><strong>Association vs. causation</strong> — observational studies can show two things are correlated without proving one causes the other</li>
-        <li><strong>Funding and conflicts of interest</strong> — industry-funded research isn't automatically wrong, but it's worth checking who paid for it</li>
-        <li><strong>Has it been replicated?</strong> — a single study is a data point, not a verdict; look for whether other research supports the same conclusion</li>
+        <li><strong>Association vs. causation</strong> — observational studies can show two things are correlated without proving one causes the other; see <a href="correlation-vs-causation-in-nutrition.html">correlation vs. causation in nutrition science</a></li>
+        <li><strong>Relative vs. absolute risk</strong> — a "50% higher risk" headline can describe a tiny real-world effect; see <a href="relative-risk-vs-absolute-risk.html">relative risk vs. absolute risk explained</a></li>
+        <li><strong>Funding and conflicts of interest</strong> — industry-funded research isn't automatically wrong, but it's worth checking who paid for it; see <a href="how-industry-funding-shapes-nutrition-research.html">how industry funding shaped decades of nutrition advice</a></li>
+        <li><strong>Has it been replicated?</strong> — a single study is a data point, not a verdict; look for whether other research supports the same conclusion, including in <a href="how-to-read-a-meta-analysis.html">meta-analyses and systematic reviews</a></li>
       </ul>''', bg="var(--color-carbs-bg)", tight=True) +
-    sec('''      <p>This is exactly why every claim on this site links back to its original source on the <a href="sources.html">Sources page</a> — so you can evaluate the underlying research yourself rather than taking a summary on faith.</p>'''),
-    [("sources.html", "Sources & citations"), ("common-nutrition-myths-debunked.html", "Common nutrition myths debunked")]
+    sec('''      <h2>Go deeper: the Research Literacy series</h2>
+      <p>Each checklist item above has a full explainer, with worked examples and a real historical case study, in our Research Literacy series:</p>
+      <ul class="checklist">
+        <li><a href="correlation-vs-causation-in-nutrition.html">Correlation vs. causation in nutrition science</a></li>
+        <li><a href="relative-risk-vs-absolute-risk.html">Relative risk vs. absolute risk explained</a></li>
+        <li><a href="how-industry-funding-shapes-nutrition-research.html">How industry funding shaped decades of nutrition advice</a></li>
+        <li><a href="how-to-read-a-meta-analysis.html">How to read a meta-analysis without being misled</a></li>
+        <li><a href="why-nutrition-studies-contradict-each-other.html">Why nutrition studies keep contradicting each other</a></li>
+      </ul>
+      <p>This is exactly why every claim on this site links back to its original source on the <a href="sources.html">Sources page</a> — so you can evaluate the underlying research yourself rather than taking a summary on faith.</p>'''),
+    [("why-nutrition-studies-contradict-each-other.html", "Why nutrition studies contradict each other"), ("sources.html", "Sources & citations"), ("common-nutrition-myths-debunked.html", "Common nutrition myths debunked")]
 )
 
 add(
@@ -4216,6 +4226,156 @@ add(
         ("How many risk factors are needed to diagnose metabolic syndrome?", "Three or more of five: elevated waist circumference, high triglycerides, low HDL cholesterol, high blood pressure, and elevated fasting blood glucose."),
         ("What causes metabolic syndrome?", "Insulin resistance sits at the center of most cases, often accompanied by excess visceral fat around the abdominal organs, which is both a cause and consequence of that resistance."),
         ("What's most effective for reversing metabolic syndrome?", "Modest weight loss of 5-10% of body weight, regular physical activity, a Mediterranean-style dietary pattern, and reducing added sugar and refined carbohydrate all have strong supporting evidence."),
+    ],
+)
+
+# ------------------------------------------ RESEARCH LITERACY BATCH --
+
+add(
+    "correlation-vs-causation-in-nutrition",
+    "Correlation vs. Causation in Nutrition Science",
+    "Why two things moving together in a nutrition study doesn't mean one causes the other, with real confounders like healthy-user bias and reverse causation.",
+    "science", "Research Literacy", "Correlation vs. causation in nutrition science",
+    "\"People who eat X live longer\" and \"X makes you live longer\" are different claims. Most nutrition headlines quietly swap one for the other.",
+    sec('''      <h2>The classic illustration</h2>
+      <p>Ice cream sales and drowning deaths rise and fall together across the year. Nobody thinks ice cream causes drowning — both are driven by a third factor, hot weather, that increases swimming <em>and</em> ice cream sales at the same time. That third factor is called a <strong>confounding variable</strong>: something linked to both the exposure and the outcome that creates an association between them without either one causing the other.</p>
+      <p>Nutrition research runs into this constantly, because unlike a drug trial, you usually can't randomly assign people to eat a certain way for 20 years and just watch what happens. Most of what we know about long-term diet and disease comes from <strong>observational studies</strong> — watching what people already choose to eat and tracking outcomes — and observational data is exactly where confounders hide.</p>''') +
+    sec('''      <h2>Healthy-user bias: nutrition's most common confounder</h2>
+      <p>People who take daily multivitamins, or who eat a lot of a specific "health food," also tend to exercise more, smoke less, see a doctor more regularly, and have higher incomes on average than people who don't. When a study finds that multivitamin users have lower rates of some disease, it's genuinely difficult to know how much of that gap is the vitamin and how much is everything else about being a person who proactively buys and takes a daily vitamin.</p>
+      <div class="panel warn">
+        <h3>Reverse causation</h3>
+        <p>Sometimes the arrow points the other way entirely. People in the early, undiagnosed stages of an illness often lose weight or change their eating habits <em>because</em> they're getting sick — not the other way around. A study that finds "low body weight is associated with higher mortality" can be partly capturing this: illness caused the weight change, not the reverse.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Why randomized trials fix this — and why nutrition often can't use them</h2>
+      <p>A randomized controlled trial (RCT) solves the confounding problem by design: if you flip a coin to decide who gets the intervention, then on average the two groups start out identical on everything else — smoking rates, income, exercise habits, genetics. Any difference in outcomes is much more confidently attributable to the intervention itself.</p>
+      <p>The catch is that most interesting nutrition questions are hard or unethical to test this way. You can randomize people to take a pill for 6 weeks. You generally can't randomize people to eat a high-processed-food diet for 20 years and see who develops heart disease. That's why so much nutrition evidence stays observational — and why a single observational study, no matter how large, deserves more caution than its headline usually gets.</p>
+      <p>See <a href="how-to-read-a-nutrition-study.html">how to read a nutrition study</a> for the broader checklist this fits into, and <a href="how-industry-funding-shapes-nutrition-research.html">how industry funding shapes nutrition research</a> for a real historical case where this exact confusion was exploited deliberately.</p>'''),
+    [("how-to-read-a-nutrition-study.html", "How to read a nutrition study"), ("relative-risk-vs-absolute-risk.html", "Relative risk vs. absolute risk"), ("why-nutrition-studies-contradict-each-other.html", "Why nutrition studies contradict each other")],
+    faq=[
+        ("What is a confounding variable?", "A confounding variable is a third factor linked to both the exposure and the outcome being studied, which can create an association between them even though neither one causes the other — like hot weather driving both ice cream sales and drowning rates."),
+        ("What is healthy-user bias?", "Healthy-user bias occurs when people who adopt one healthy behavior, like taking a daily vitamin, also tend to have other healthy habits — more exercise, less smoking, more regular healthcare — making it hard to isolate the effect of the one behavior being studied."),
+        ("Why can't more nutrition questions be tested with randomized trials?", "Randomizing people to eat a specific way for years or decades is often impractical, expensive, or unethical, so most evidence linking long-term diet to disease comes from observational studies, which are more vulnerable to confounding and reverse causation."),
+    ],
+)
+
+add(
+    "relative-risk-vs-absolute-risk",
+    "Relative Risk vs. Absolute Risk Explained",
+    "Why a '50% higher risk' headline can describe a real but tiny effect, with a worked numeric example showing how relative risk and absolute risk diverge.",
+    "science", "Research Literacy", "Relative risk vs. absolute risk explained",
+    "\"Doubles your risk\" sounds alarming regardless of what it's a risk of. The missing number is almost always the one that tells you whether to care.",
+    sec('''      <h2>A worked example</h2>
+      <p>Suppose a rare condition affects <strong>2 people out of 1,000</strong> over ten years. A study finds that eating a certain food is associated with double that risk — <strong>4 people out of 1,000</strong>.</p>
+      <table class="data-table">
+        <tr><th></th><th>Affected</th><th>Not affected</th><th>Risk</th></tr>
+        <tr><td>Without the food</td><td>2 / 1,000</td><td>998 / 1,000</td><td>0.2%</td></tr>
+        <tr><td>With the food</td><td>4 / 1,000</td><td>996 / 1,000</td><td>0.4%</td></tr>
+      </table>
+      <p>Reported as <strong>relative risk</strong>, that's a "100% increase" or "doubles your risk" — technically accurate, and exactly the kind of number that ends up in a headline. Reported as <strong>absolute risk</strong>, it's an increase from 0.2% to 0.4% — two additional cases per 1,000 people. Both numbers describe the identical result. Only one of them tells you how much it should actually change your behavior.<sup class="ref"><a href="sources.html#meth2">[1]</a></sup></p>''') +
+    sec('''      <h2>Why relative risk dominates headlines</h2>
+      <p>Relative risk numbers are almost always larger and more dramatic-sounding than absolute risk numbers, especially for rare outcomes — which makes them better headlines, not better information. Neither number is "the wrong one" in a technical sense; they answer different questions. Relative risk is useful for comparing the strength of different exposures. Absolute risk is what actually matters for deciding whether a personal behavior change is worth it.</p>
+      <div class="panel">
+        <h3>The question to ask</h3>
+        <p>When you see a relative risk figure ("40% higher risk," "doubles your chance of..."), ask: <em>what was the baseline risk this is relative to?</em> If the baseline is already high — say, a common condition affecting 20% of people — a 40% relative increase is a large, meaningful absolute change. If the baseline is 1 in 10,000, the same 40% relative increase might mean almost nothing in absolute terms.</p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec('''      <h2>Number needed to harm (or treat)</h2>
+      <p>One practical way researchers translate this into something usable: "number needed to treat/harm" — how many people would need the exposure or intervention for one additional case to occur. In the worked example above, roughly 500 people would need to eat the food (at that exposure level) for one additional case to appear, compared to none eating it. Numbers like this make absolute impact much more concrete than a bare percentage.<sup class="ref"><a href="sources.html#meth2">[1]</a></sup></p>
+      <p>This same distinction is exactly why "50% increased risk" and "0.2 percentage points" can both be true about the same study — see <a href="how-to-read-a-nutrition-study.html">how to read a nutrition study</a> for the fuller checklist.</p>'''),
+    [("how-to-read-a-nutrition-study.html", "How to read a nutrition study"), ("correlation-vs-causation-in-nutrition.html", "Correlation vs. causation"), ("understanding-a-lipid-panel.html", "Understanding a lipid panel")],
+    faq=[
+        ("What is the difference between relative risk and absolute risk?", "Relative risk compares how much more or less likely an outcome is between two groups, as a ratio or percentage. Absolute risk is the actual probability of the outcome occurring. A food that 'doubles' a risk from 0.2% to 0.4% has a large relative risk increase (100%) but a small absolute risk increase (0.2 percentage points)."),
+        ("Why do headlines usually report relative risk?", "Relative risk numbers are almost always larger and more attention-grabbing than absolute risk numbers, particularly for rare outcomes, which makes them more compelling headlines even when the real-world impact is small."),
+        ("What is number needed to harm?", "Number needed to harm estimates how many people would need to be exposed to something for one additional case of an outcome to occur, translating a risk ratio into a more concrete, real-world figure."),
+    ],
+)
+
+add(
+    "how-industry-funding-shapes-nutrition-research",
+    "How Industry Funding Shaped Nutrition Advice",
+    "The real history of how the sugar industry funded research in the 1960s to shift blame for heart disease onto dietary fat, documented from internal industry papers.",
+    "science", "Research Literacy", "How industry funding shaped nutrition advice",
+    "This isn't a hypothetical about bias. It's a documented case, from the industry's own internal files, of how funding shaped what got studied and published.",
+    sec('''      <h2>What the internal documents showed</h2>
+      <p>In 2016, researchers published a historical analysis of internal Sugar Research Foundation (SRF) documents recovered from archives, showing that in 1965 the SRF — the sugar industry's own trade group — sponsored a research program specifically to review the evidence on diet and coronary heart disease. The internal correspondence showed the industry selected the researchers and shaped the project; the resulting 1967 review, published in a major medical journal, minimized the evidence linking sugar to heart disease while emphasizing saturated fat as the primary dietary culprit. The sugar industry's funding and role were not disclosed in the published paper — a disclosure standard that didn't yet exist at the time, but one that meant the funding relationship was invisible to anyone reading the paper itself.<sup class="ref"><a href="sources.html#meth1">[1]</a></sup></p>
+      <div class="panel warn">
+        <h3>Why this matters beyond one old paper</h3>
+        <p>That 1967 review became a building block of dietary advice for decades afterward, contributing to a public health focus on cutting fat that arguably undersold sugar's role. The documents don't show one dishonest paper — they show industry funding shaping <em>which questions got asked</em> and <em>which evidence got emphasized</em>, which is a far more durable kind of influence than any single fabricated result.<sup class="ref"><a href="sources.html#meth1">[1]</a></sup></p>
+        </div>''') +
+    sec('''      <h2>How funding bias actually works</h2>
+      <p>The lesson isn't "industry-funded research is fake." Outright fabrication is rare and gets caught. The more common and harder-to-spot mechanisms are subtler:</p>
+      <ul class="checklist">
+        <li><strong>Choosing the research question</strong> — funding a review of "does fat cause heart disease" rather than "does sugar cause heart disease" shapes the conclusion before a single data point is collected</li>
+        <li><strong>Choosing the comparison</strong> — testing a product against an unusually bad comparator makes it look better than it would against a fair baseline</li>
+        <li><strong>Selective publication</strong> — running several studies and publishing only the favorable ones (the industry-research equivalent of publication bias, covered in <a href="why-nutrition-studies-contradict-each-other.html">why nutrition studies contradict each other</a>)</li>
+        <li><strong>Framing in the discussion section</strong> — the same data can be described very differently depending on which uncertainties are emphasized</li>
+      </ul>''', bg="var(--color-fat-bg)", tight=True) +
+    sec('''      <h2>A practical checklist, not a blanket dismissal</h2>
+      <p>Funding disclosures are now required by essentially every reputable journal — a direct result of cases like this one. When reading a study: check who funded it, check whether the researchers are independent of the funder, and be moderately more skeptical of results that happen to align neatly with the funder's commercial interest. None of that means automatically dismissing industry-funded research; plenty of it is rigorous. It means treating funding as one input into how much weight a single study deserves, alongside study design and replication — see the full <a href="how-to-read-a-nutrition-study.html">how to read a nutrition study</a> checklist.</p>'''),
+    [("how-to-read-a-nutrition-study.html", "How to read a nutrition study"), ("why-nutrition-studies-contradict-each-other.html", "Why nutrition studies contradict each other"), ("added-sugar-vs-natural-sugar.html", "Added vs. natural sugar")],
+    faq=[
+        ("Did the sugar industry really fund research to blame fat instead of sugar?", "Yes. A 2016 historical analysis of internal Sugar Research Foundation documents found the industry sponsored a 1965 research program that led to a 1967 published review minimizing sugar's link to heart disease while emphasizing saturated fat, without disclosing the industry funding."),
+        ("Does industry funding automatically make research untrustworthy?", "No. Funding bias more commonly works through which research questions get asked, which comparisons are chosen, and which results get published, rather than outright fabrication. Funding is one factor to weigh alongside study design and independent replication, not an automatic disqualifier."),
+        ("Why are funding disclosures required in journals today?", "Cases like the sugar industry's undisclosed funding of heart disease research contributed directly to modern journal requirements that authors disclose funding sources and conflicts of interest, so readers can weigh that context themselves."),
+    ],
+)
+
+add(
+    "how-to-read-a-meta-analysis",
+    "How to Read a Meta-Analysis Without Being Misled",
+    "What a meta-analysis actually combines, why heterogeneity and publication bias can undermine one, and how to judge whether 'a meta-analysis found' settles the question.",
+    "science", "Research Literacy", "How to read a meta-analysis",
+    "\"A meta-analysis found...\" gets treated as the end of an argument. Whether it should be depends entirely on what went into it.",
+    sec('''      <h2>What a meta-analysis actually is</h2>
+      <p>A meta-analysis statistically combines results from multiple separate studies into one pooled estimate, usually as part of a systematic review that first searches for and screens all the relevant studies on a question. The appeal is straightforward: a single small study might be noise, but if fifteen studies point the same direction, that's a much stronger signal — in principle.</p>
+      <p>In practice, a meta-analysis is only as good as the studies that go into it. Pooling fifteen weak, biased, or poorly designed studies doesn't produce one strong conclusion — it produces a more precisely wrong number.</p>''') +
+    sec('''      <h2>Heterogeneity: were the studies even measuring the same thing?</h2>
+      <p>If the included studies used different doses, different populations, different follow-up lengths, or different outcome definitions, averaging their results together can obscure more than it reveals. Meta-analyses report a heterogeneity statistic for exactly this reason — high heterogeneity is a signal to read the individual studies rather than trust the pooled number at face value.<sup class="ref"><a href="sources.html#meth5">[1]</a></sup></p>
+      <div class="panel warn">
+        <h3>Publication bias distorts meta-analyses too</h3>
+        <p>If studies with null or unflattering results are less likely to get published — a well-documented pattern — then a meta-analysis built only from published studies will systematically overstate the effect, no matter how careful the statistical pooling is. Researchers check for this with a <strong>funnel plot</strong>, which should look roughly symmetric if publication bias isn't distorting the picture; a lopsided funnel plot is a red flag.<sup class="ref"><a href="sources.html#meth5">[1]</a></sup></p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <h2>Questions worth asking before trusting the headline number</h2>
+      <ul class="checklist">
+        <li><strong>How many studies, and how large?</strong> — a meta-analysis of five small trials is much weaker than one of thirty large ones</li>
+        <li><strong>Were the included studies mostly observational or mostly randomized?</strong> — pooling observational studies can pool their shared confounders too, not cancel them out</li>
+        <li><strong>Was heterogeneity high?</strong> — if so, the single pooled number may be hiding real disagreement between studies</li>
+        <li><strong>Who funded the included studies, and who funded the meta-analysis?</strong> — the same funding-bias questions from <a href="how-industry-funding-shapes-nutrition-research.html">industry-funded research</a> apply here, potentially multiplied across every study included</li>
+      </ul>
+      <p>None of this means meta-analyses are untrustworthy — a well-conducted one is still generally stronger evidence than any single study. It means the phrase "a meta-analysis found" is a starting point for evaluation, not a substitute for it.</p>'''),
+    [("why-nutrition-studies-contradict-each-other.html", "Why nutrition studies contradict each other"), ("how-to-read-a-nutrition-study.html", "How to read a nutrition study"), ("how-industry-funding-shapes-nutrition-research.html", "How industry funding shapes research")],
+    faq=[
+        ("Is a meta-analysis always stronger evidence than a single study?", "Generally yes, but only if the underlying studies are sound. Pooling many weak or biased studies produces a more precise-looking but still biased result, so the quality of the included studies matters more than the number of them."),
+        ("What is heterogeneity in a meta-analysis?", "Heterogeneity measures how much the results of the included studies vary beyond what would be expected by chance. High heterogeneity suggests the studies may not be measuring comparable things closely enough to be meaningfully averaged together."),
+        ("How do researchers check for publication bias in a meta-analysis?", "One common method is a funnel plot, which plots study effect size against study size. A roughly symmetric funnel suggests publication bias is unlikely; a lopsided one suggests smaller unfavorable studies may be missing from the published record."),
+    ],
+)
+
+add(
+    "why-nutrition-studies-contradict-each-other",
+    "Why Nutrition Studies Keep Contradicting Each Other",
+    "The structural reasons nutrition headlines seem to flip-flop — small effect sizes, publication bias, observational data, and the incentives of media coverage.",
+    "science", "Research Literacy", "Why nutrition studies contradict each other",
+    "Eggs are bad, then fine, then good again. This isn't a sign that nutrition science is broken — it's what you'd expect given how the field's evidence is actually generated and reported.",
+    sec('''      <h2>Four structural reasons, stacked on top of each other</h2>
+      <p>No single explanation accounts for the whiplash. It's the combination of several real, well-documented issues:</p>
+      <ul class="checklist">
+        <li><strong>Most evidence is observational</strong>, which means <a href="correlation-vs-causation-in-nutrition.html">confounding and reverse causation</a> are a constant risk, not an occasional edge case</li>
+        <li><strong>Effect sizes are usually small</strong>, so studies sit close to the statistical noise floor — small changes in analysis choices can flip a result from significant to not, a phenomenon formally documented as "researcher degrees of freedom"<sup class="ref"><a href="sources.html#meth4">[1]</a></sup></li>
+        <li><strong>Publication bias favors novel, positive findings</strong> — a study confirming existing consensus is far less likely to make it into a high-profile journal, or into the news, than one that overturns it<sup class="ref"><a href="sources.html#meth3">[2]</a></sup></li>
+        <li><strong>Media coverage rewards the most dramatic interpretation</strong> — a nuanced "modest association, more research needed" doesn't generate headlines the way "scientists discover X causes Y" does</li>
+      </ul>''') +
+    sec('''      <h2>The statistical reality behind "flip-flopping"</h2>
+      <p>A landmark 2005 paper argued that, across much of biomedical research, most published findings with statistical significance are likely to be false positives once you account for how many hypotheses get tested, how small typical effect sizes are, and how much flexibility researchers have in how they analyze their data.<sup class="ref"><a href="sources.html#meth3">[2]</a></sup> That flexibility — choosing which subgroups to report, which covariates to adjust for, when to stop collecting data — was later shown experimentally to dramatically inflate false-positive rates even when every individual researcher believes they're being rigorous.<sup class="ref"><a href="sources.html#meth4">[1]</a></sup> None of this is unique to nutrition, but nutrition research combines small effects, hard-to-control confounders, and enormous public interest in a way that makes the pattern especially visible.</p>
+      <div class="panel">
+        <h3>What actually resolves a contradiction</h3>
+        <p>Not one more single study — a wider evidence base, assessed together. Look for <a href="how-to-read-a-meta-analysis.html">meta-analyses and systematic reviews</a> pooling many studies, look for consistency across different study designs (does the observational data and the RCT data point the same direction?), and give more weight to results that have replicated in independent research groups than to any single striking headline.</p>
+      </div>''', bg="var(--color-pop4-bg)", tight=True) +
+    sec('''      <p>This is exactly why every claim on GetMacros.net links to its original source on the <a href="sources.html">Sources page</a>, and why claims here are framed with the actual strength of evidence behind them rather than as settled fact. See the full <a href="how-to-read-a-nutrition-study.html">how to read a nutrition study</a> checklist for a practical, step-by-step version of everything in this Research Literacy series.</p>'''),
+    [("correlation-vs-causation-in-nutrition.html", "Correlation vs. causation"), ("how-to-read-a-meta-analysis.html", "How to read a meta-analysis"), ("how-industry-funding-shapes-nutrition-research.html", "How industry funding shapes research")],
+    faq=[
+        ("Why do nutrition headlines seem to contradict each other so often?", "It's a combination of factors: most evidence is observational and prone to confounding, effect sizes are typically small and close to statistical noise, publication bias favors novel findings over confirmations, and media coverage rewards dramatic interpretations over cautious ones."),
+        ("Are most published nutrition findings actually false?", "A widely cited 2005 analysis argued that across much of biomedical research, a large share of statistically significant findings are likely false positives once study power, effect sizes, and analytical flexibility are accounted for — a pattern nutrition research is particularly susceptible to given typically small effect sizes."),
+        ("How should you resolve a nutrition science contradiction?", "Look at the wider evidence base rather than any single study — meta-analyses and systematic reviews, consistency across different study designs, and results that have been independently replicated carry far more weight than one striking headline."),
     ],
 )
 
