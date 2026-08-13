@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, SITEMAP_LASTMOD  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, SITEMAP_LASTMOD, AUTHOR_NAME  # noqa: E402
 from generate_quizzes import QUIZZES  # noqa: E402
 
 MEMORY_PAIRS = [
@@ -106,7 +106,7 @@ GAMES_META = [
 ]
 
 
-def game_page(slug, title, icon, meta, intro, body_script):
+def game_page(slug, title, icon, meta, intro, body_script, category="general"):
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -118,9 +118,10 @@ def game_page(slug, title, icon, meta, intro, body_script):
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
+<meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
-{seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
-{article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Game")}
+{seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
+{article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Game", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
@@ -186,6 +187,7 @@ def build_quiz_hub():
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>Quiz Yourself | GetMacros.net</title>
 <meta name="description" content="Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game — Macro Memory Match, Build-a-Plate, and Macro Sprint.">
+<meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/quiz.html">
 {seo_meta("Quiz Yourself", "Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game.", "https://getmacros.net/quiz.html", og_type="website")}
 <link rel="stylesheet" href="css/style.css">

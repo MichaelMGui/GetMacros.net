@@ -4,7 +4,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, AUTHOR_NAME  # noqa: E402
 
 TERMS = [
     ("Acceptable Macronutrient Distribution Range (AMDR)", "The range of intake for a macronutrient associated with reduced risk of chronic disease while providing adequate intake of essential nutrients — 10-35% of calories from protein, 20-35% from fat, 45-65% from carbohydrate.", "how-many-carbs-per-day.html"),
@@ -105,6 +105,7 @@ def build():
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>Nutrition Glossary: A-Z Terms for Students | GetMacros.net</title>
 <meta name="description" content="An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.">
+<meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/glossary.html">
 {seo_meta("Nutrition Glossary: A-Z Terms for Students", "An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.", "https://getmacros.net/glossary.html", og_type="website")}
 <link rel="stylesheet" href="css/style.css">

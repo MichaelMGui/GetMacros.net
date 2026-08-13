@@ -16,27 +16,66 @@ with open(os.path.join(ROOT, "icon-sprite.svg")) as _f:
     ICON_SPRITE = _f.read().strip()
 
 
-def seo_meta(title, description, url, og_type="article"):
+SITE = "https://getmacros.net"
+AUTHOR_NAME = "The GetMacros.net editorial team"
+# Every page on the site was written and published during this build window.
+# dateModified tracks the most recent sitewide content pass.
+DATE_PUBLISHED = "2026-08-10"
+DATE_MODIFIED = "2026-08-13"
+
+# Social share cards, one per content category (1200x630).
+OG_IMAGE = {
+    "protein": "og-protein.png",
+    "fat": "og-fat.png",
+    "carbs": "og-carbs.png",
+    "diets": "og-diets.png",
+    "athletes": "og-athletes.png",
+    "general": "og-default.png",
+}
+
+
+def og_image_url(category="general"):
+    return f"{SITE}/images/{OG_IMAGE.get(category, 'og-default.png')}"
+
+
+def seo_meta(title, description, url, og_type="article", category="general"):
     t = esc_html(f"{title} | GetMacros.net")
     d = esc_html(description)
+    img = og_image_url(category)
     return f'''<meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="GetMacros.net">
 <meta property="og:title" content="{t}">
 <meta property="og:description" content="{d}">
 <meta property="og:url" content="{url}">
-<meta name="twitter:card" content="summary">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="{img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GetMacros.net — nutrition explained with cited research">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{t}">
-<meta name="twitter:description" content="{d}">'''
+<meta name="twitter:description" content="{d}">
+<meta name="twitter:image" content="{img}">'''
 
 
-def article_jsonld(title, description, url, kind="Article"):
+def article_jsonld(title, description, url, kind="Article", category="general"):
     data = {
         "@context": "https://schema.org",
         "@type": kind,
         "headline": title,
         "description": description,
         "url": url,
-        "publisher": {"@type": "Organization", "name": "GetMacros.net", "url": "https://getmacros.net/"},
+        "image": og_image_url(category),
+        "datePublished": DATE_PUBLISHED,
+        "dateModified": DATE_MODIFIED,
+        "inLanguage": "en",
+        "author": {"@type": "Organization", "name": AUTHOR_NAME, "url": f"{SITE}/about.html"},
+        "publisher": {
+            "@type": "Organization",
+            "name": "GetMacros.net",
+            "url": f"{SITE}/",
+            "logo": {"@type": "ImageObject", "url": f"{SITE}/images/og-default.png"},
+        },
         "mainEntityOfPage": {"@type": "WebPage", "@id": url},
     }
     return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
@@ -51,6 +90,29 @@ def breadcrumb_jsonld(title, url, hub_name="Articles", hub_url="https://getmacro
             {"@type": "ListItem", "position": 2, "name": hub_name, "item": hub_url},
             {"@type": "ListItem", "position": 3, "name": title, "item": url},
         ],
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
+def hub_jsonld():
+    """CollectionPage + ItemList for the articles hub, so search engines see the
+    full index of articles rather than guessing at the page's purpose."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "All Nutrition Articles",
+        "url": f"{SITE}/articles.html",
+        "inLanguage": "en",
+        "isPartOf": {"@type": "WebSite", "name": "GetMacros.net", "url": f"{SITE}/"},
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(ARTICLES),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i + 1, "name": a["h1"],
+                 "url": f'{SITE}/{a["slug"]}.html'}
+                for i, a in enumerate(ARTICLES)
+            ],
+        },
     }
     return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
 
@@ -186,9 +248,10 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
+<meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
-{seo_meta(title, meta, f"https://getmacros.net/{slug}.html")}
-{article_jsonld(title, meta, f"https://getmacros.net/{slug}.html")}
+{seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
+{article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html")}
 {extra_head}
 <link rel="stylesheet" href="css/style.css">
@@ -1069,10 +1132,12 @@ def build_hub():
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <link rel="preconnect" href="https://www.highperformanceformat.com">
-<title>Articles | GetMacros.net</title>
-<meta name="description" content="Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, food lists, and calculator explainers.">
+<title>All Nutrition Articles | GetMacros.net</title>
+<meta name="description" content="Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, diet breakdowns, food lists, and calculator explainers.">
+<meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/articles.html">
-{seo_meta("All Articles", "Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, food lists, and calculator explainers.", "https://getmacros.net/articles.html", og_type="website")}
+{seo_meta("All Nutrition Articles", "Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, diet breakdowns, food lists, and calculator explainers.", "https://getmacros.net/articles.html", og_type="website")}
+{hub_jsonld()}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -1109,6 +1174,24 @@ def build_hub():
     print("wrote", path)
 
 
+def about_jsonld(url):
+    data = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "url": url,
+        "inLanguage": "en",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "GetMacros.net",
+            "url": f"{SITE}/",
+            "logo": {"@type": "ImageObject", "url": f"{SITE}/images/og-default.png"},
+            "description": "A free nutrition education resource explaining protein, fat, and "
+                           "carbohydrates with citations to primary research.",
+        },
+    }
+    return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
 def build_about():
     title = "About GetMacros.net"
     meta = "What GetMacros.net is, who it's built for, and the editorial and sourcing standards behind every article, calculator, and citation on the site."
@@ -1124,8 +1207,10 @@ def build_about():
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title}</title>
 <meta name="description" content="{meta}">
+<meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
+{about_jsonld(url)}
 <link rel="stylesheet" href="css/style.css">
 <script src="js/img-fallback.js"></script>
 {ADSENSE_LOADER}
@@ -1204,6 +1289,7 @@ def build_privacy():
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title}</title>
 <meta name="description" content="{meta}">
+<meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
 <link rel="stylesheet" href="css/style.css">
