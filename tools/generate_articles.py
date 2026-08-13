@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260814d"
+ASSET_VERSION = "20260815"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -274,7 +274,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 <link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
-<meta name="author" content="{AUTHOR_NAME}">
+<meta name="author" content="{AUTHOR_NAME}">\n<meta name="google-adsense-account" content="{ADSENSE_CLIENT}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
