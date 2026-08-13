@@ -1214,3 +1214,55 @@ sup.ref a {
   color: #a9c9b4;
   max-width: 500px;
 }
+
+/* ---------- Breadcrumb ---------- */
+
+.breadcrumb {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  font-size: .85rem;
+  padding: .7rem 0;
+}
+.breadcrumb .container { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+.breadcrumb a { color: var(--color-text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--color-primary); text-decoration: underline; }
+.breadcrumb span[aria-hidden] { color: var(--color-border); }
+.breadcrumb span[aria-current] {
+  color: var(--color-text);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* ---------- FAQ accordion ---------- */
+
+.faq-list { display: flex; flex-direction: column; gap: .6rem; margin-top: 1.1rem; }
+.faq-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0 1.1rem;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: .95rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--color-primary);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.faq-item[open] summary::after { content: "\2212"; }
+.faq-item p { margin: 0 0 1rem; color: var(--color-text-muted); }

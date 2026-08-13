@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, SITEMAP_LASTMOD, AUTHOR_NAME  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, SITEMAP_LASTMOD, AUTHOR_NAME, ASSET_VERSION  # noqa: E402
 from generate_quizzes import QUIZZES  # noqa: E402
 
 MEMORY_PAIRS = [
@@ -127,8 +127,8 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Game", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -154,14 +154,14 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/confetti.js"></script>
-<script src="js/games.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/confetti.js?v={ASSET_VERSION}"></script>
+<script src="js/games.js?v={ASSET_VERSION}"></script>
 <script>
 {body_script}
 </script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -198,8 +198,8 @@ def build_quiz_hub():
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/quiz.html">
 {seo_meta("Quiz Yourself", "Test what you know about protein, fat, carbs, and athlete nutrition with interactive quizzes, or learn hands-on with a nutrition game.", "https://getmacros.net/quiz.html", og_type="website")}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -239,10 +239,10 @@ def build_quiz_hub():
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''

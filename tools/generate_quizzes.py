@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, AUTHOR_NAME  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, AUTHOR_NAME, ASSET_VERSION  # noqa: E402
 
 QUIZZES = []
 
@@ -304,8 +304,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Quiz", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -331,17 +331,17 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/confetti.js"></script>
-<script src="js/quiz.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/confetti.js?v={ASSET_VERSION}"></script>
+<script src="js/quiz.js?v={ASSET_VERSION}"></script>
 <script>
   renderQuiz('quiz-root', {json.dumps(questions)}, {{
     title: {json.dumps(title.split(":")[0])},
     {tiers_js}moreHref: 'quiz.html'
   }});
 </script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''

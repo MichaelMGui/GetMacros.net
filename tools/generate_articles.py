@@ -22,6 +22,9 @@ AUTHOR_NAME = "The GetMacros.net editorial team"
 # dateModified tracks the most recent sitewide content pass.
 DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
+# Bumped whenever css/js changes, so browsers fetch the new file instead of
+# pairing fresh HTML with a stale cached stylesheet.
+ASSET_VERSION = "20260813"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -258,8 +261,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html")}
 {extra_head}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -275,6 +278,14 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
     </div>
   </section>
 
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a> <span aria-hidden="true">›</span>
+      <a href="articles.html">Articles</a> <span aria-hidden="true">›</span>
+      <span aria-current="page">{h1}</span>
+    </div>
+  </nav>
+
 {body}
 
   <section class="tight">
@@ -287,10 +298,10 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -306,7 +317,24 @@ def sec(inner, bg=None, tight=False):
 ARTICLES = []
 
 
-def add(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_head=""):
+def faq_section(qa_pairs):
+    """Renders the FAQ visibly. Google only honours FAQPage markup when the same
+    questions and answers appear on the page, so the two always ship together."""
+    items = "\n".join(
+        '        <details class="faq-item">\n'
+        '          <summary>' + q + '</summary>\n'
+        '          <p>' + a + '</p>\n'
+        '        </details>'
+        for q, a in qa_pairs
+    )
+    return ('      <h2>Frequently asked questions</h2>\n'
+            '      <div class="faq-list">\n' + items + '\n      </div>')
+
+
+def add(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_head="", faq=None):
+    if faq:
+        body = body + sec(faq_section(faq), tight=True)
+        extra_head = extra_head + faq_jsonld(faq)
     ARTICLES.append(dict(slug=slug, title=title, meta=meta, category=category,
                           eyebrow=eyebrow, h1=h1, intro=intro, body=body, related=related, extra_head=extra_head))
 
@@ -1146,8 +1174,8 @@ def build_hub():
 <link rel="canonical" href="https://getmacros.net/articles.html">
 {seo_meta("All Nutrition Articles", "Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, diet breakdowns, food lists, and calculator explainers.", "https://getmacros.net/articles.html", og_type="website")}
 {hub_jsonld()}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -1169,10 +1197,10 @@ def build_hub():
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1223,8 +1251,8 @@ def build_about():
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
 {about_jsonld(url)}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -1273,10 +1301,10 @@ def build_about():
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1308,8 +1336,8 @@ def build_privacy():
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -1371,10 +1399,10 @@ def build_privacy():
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1405,8 +1433,8 @@ def build_404():
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 {seo_meta(title, meta, url, og_type="website")}
-<link rel="stylesheet" href="css/style.css">
-<script src="js/img-fallback.js"></script>
+<link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
 <body>
@@ -1439,10 +1467,10 @@ def build_404():
 {AD_SLOT}
 {FOOTER}
 
-<script src="js/main.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/ads-config.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/reveal.js?v={ASSET_VERSION}"></script>
+<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
+<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -2874,6 +2902,270 @@ add(
       <p>Tracking has done its job when you can look at a plate and estimate its macros within a reasonable margin. Many people track for a few months, then move to tracking only protein, or only occasionally to recalibrate. If tracking starts driving anxiety around food, that's a signal to stop and consider a less rigid approach such as <a href="intuitive-eating-explained.html">intuitive eating</a> — a tool that makes eating worse isn't working.</p>
       <p><a href="calculators.html" class="btn btn-primary">Set your macro targets →</a></p>'''),
     [("calculators.html", "Macro calculator"), ("how-to-calculate-macros-by-hand.html", "Calculate macros by hand"), ("iifym-flexible-dieting.html", "IIFYM and flexible dieting")]
+)
+
+# ------------------------------------------ HEALTH & PRACTICAL BATCH ------
+
+add(
+    "protein-and-kidney-health",
+    "Does High Protein Damage Your Kidneys?",
+    "Where the high-protein kidney myth came from, what controlled trials show in healthy people, and who genuinely does need to limit protein.",
+    "protein", "Protein Guide", "Does high protein damage your kidneys?",
+    "This is probably the most repeated concern about high-protein diets — and one where the evidence for healthy people is much clearer than the rumour suggests.",
+    sec('''      <h2>Where the concern came from</h2>
+      <p>Protein metabolism produces nitrogen waste, which the kidneys filter out. In people who <em>already</em> have chronic kidney disease, reducing protein intake can slow the decline in kidney function. That clinical finding — real and well-established in kidney patients — got generalized into a warning for everyone.<sup class="ref"><a href="sources.html#p3">[1]</a></sup></p>
+      <h2>What happens in healthy kidneys</h2>
+      <p>Higher protein intake does increase glomerular filtration rate, the rate at which kidneys filter blood. But that's a normal functional adaptation to a higher workload, not damage — in the same way that muscles adapt to heavier training. Controlled trials in healthy adults consuming high-protein diets have not shown deterioration in kidney function.<sup class="ref"><a href="sources.html#p2">[2]</a></sup></p>''') +
+    sec('''      <div class="panel warn">
+        <h3>Who should actually limit protein</h3>
+        <p>People with diagnosed chronic kidney disease, reduced kidney function, or a single kidney should follow protein targets set by their doctor or renal dietitian — not general fitness guidance. The point isn't that protein is harmless for everyone; it's that healthy kidneys and impaired kidneys are different situations.</p>
+      </div>
+      <p>If you have any reason to suspect reduced kidney function, that's a blood test question, not an internet question.</p>''', bg="var(--color-protein-bg)", tight=True),
+    [("how-much-protein-per-day.html", "How much protein per day"), ("common-nutrition-myths-debunked.html", "Common nutrition myths"), ("protein-for-muscle-growth.html", "Protein for muscle growth")],
+    faq=[
+        ("Does high protein damage healthy kidneys?", "In people with healthy kidneys, controlled trials have not shown that high protein intake causes kidney damage. The increase in filtration rate seen on higher-protein diets is a normal functional adaptation rather than injury."),
+        ("Who does need to limit protein?", "People with diagnosed chronic kidney disease or reduced kidney function should follow protein targets set by their doctor or renal dietitian, since lowering protein can slow the decline in kidney function in that group."),
+        ("How much protein is too much?", "For healthy adults there is no well-established intake at which protein becomes harmful. Most benefit plateaus around 1.6-2.2 g/kg of body weight per day for people who train, so higher intakes mainly displace other nutrients rather than adding benefit."),
+    ],
+)
+
+add(
+    "how-to-build-a-balanced-meal",
+    "How to Build a Balanced Meal (Simple Method)",
+    "A practical plate framework for putting together meals that hit protein, fiber, and calorie targets without weighing every ingredient.",
+    "general", "Practical Guides", "How to build a balanced meal",
+    "You don't need a spreadsheet to eat well. You need a repeatable structure you can apply to whatever's in the fridge.",
+    sec('''      <h2>The four-part plate</h2>
+      <ul class="checklist">
+        <li><strong>Protein first (a palm-sized portion, 25-40g)</strong> — meat, fish, eggs, dairy, tofu, tempeh, or legumes. Building the plate around protein is the single highest-leverage habit, because it's the macro people most often fall short on.<sup class="ref"><a href="sources.html#p2">[1]</a></sup></li>
+        <li><strong>Vegetables (half the plate)</strong> — volume, fiber, and micronutrients for very few calories. This is what makes a meal filling without making it calorie-dense.</li>
+        <li><strong>A carbohydrate source (a cupped-hand portion)</strong> — rice, potatoes, pasta, bread, oats. Scale this up on training days and down on rest days if you're managing calories.</li>
+        <li><strong>A fat source (a thumb-sized portion)</strong> — olive oil, nuts, avocado, cheese. Small by volume, but the most calorie-dense part of the plate, so this is where portions drift most easily.</li>
+      </ul>''') +
+    sec('''      <h2>Why this works without tracking</h2>
+      <p>Hand-based portions scale with body size automatically — bigger people have bigger hands and generally need more food. It's imprecise, but the error is small compared to the error most people make when eyeballing with no framework at all. See <a href="portion-sizes-without-a-scale.html">estimating portions without a scale</a> for the full method.</p>
+      <div class="panel">
+        <h3>The adjustment dial</h3>
+        <p>If you're losing weight too fast, add carbs. Too slow, reduce the fat portion first (it's the densest). Hungry between meals, add protein and vegetables rather than snacks. One variable at a time.</p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("portion-sizes-without-a-scale.html", "Portion sizes without a scale"), ("how-to-track-your-macros.html", "How to track your macros"), ("nutrient-density-explained.html", "Nutrient density explained")],
+    faq=[
+        ("How much protein should be on each plate?", "A palm-sized portion, roughly 25-40g of protein, works for most people. Spreading protein across three or four meals this way supports muscle protein synthesis better than getting most of your protein in one large meal."),
+        ("Do I need to weigh food to eat balanced meals?", "No. Hand-based portions scale with body size and are accurate enough for most goals. Weighing food for two or three weeks is useful for calibration, after which visual estimates become reliable."),
+        ("Should carbs change on rest days?", "Optionally. Some people scale carbohydrate up on training days and down on rest days to match energy demand, but total weekly intake matters more than daily distribution for most goals."),
+    ],
+)
+
+add(
+    "sleep-and-nutrition",
+    "How Sleep Affects Appetite and Body Composition",
+    "What short sleep does to hunger hormones, cravings, and muscle retention while dieting, and why sleep is a nutrition variable.",
+    "general", "Practical Guides", "How sleep affects appetite and body composition",
+    "You can do everything right with food and still stall — because sleep quietly moves several of the levers you're trying to control.",
+    sec('''      <h2>What short sleep does to appetite</h2>
+      <p>Sleep restriction shifts the hormones governing hunger: ghrelin (which stimulates appetite) tends to rise and leptin (which signals fullness) tends to fall. The practical result is that under-slept people report more hunger and stronger cravings for calorie-dense, high-carbohydrate food — while their actual energy needs haven't changed.</p>
+      <h2>What it does to body composition</h2>
+      <p>The more striking finding concerns <em>what</em> you lose while dieting. In controlled calorie-restriction studies, participants sleeping around 5.5 hours lost a substantially greater proportion of their weight as lean mass rather than fat, compared with the same deficit at around 8.5 hours. Same calories, worse outcome.</p>''') +
+    sec('''      <h2>Treating sleep as a nutrition variable</h2>
+      <ul class="checklist">
+        <li><strong>Caffeine timing</strong> — caffeine has a half-life of roughly 5-6 hours, so an afternoon coffee is still meaningfully active at bedtime. See <a href="caffeine-and-athletic-performance.html">caffeine and performance</a>.</li>
+        <li><strong>Alcohol</strong> — it shortens time to sleep onset but degrades sleep quality, particularly REM. See <a href="alcohol-and-macros.html">alcohol and macros</a>.</li>
+        <li><strong>Very large late meals</strong> — can cause discomfort and disrupt sleep for some people, though total intake still drives weight change more than timing does.</li>
+        <li><strong>Protein before bed</strong> — a slow-digesting protein source is a reasonable way to use the overnight window. See <a href="protein-before-bed.html">protein before bed</a>.</li>
+      </ul>''', bg="var(--color-pop2-bg)", tight=True),
+    [("protein-before-bed.html", "Protein before bed"), ("eating-late-at-night-weight-gain.html", "Eating late at night"), ("body-recomposition-explained.html", "Body recomposition")],
+    faq=[
+        ("Does poor sleep make you hungrier?", "Yes. Sleep restriction tends to raise ghrelin, which stimulates appetite, and lower leptin, which signals fullness. Under-slept people typically report more hunger and stronger cravings for calorie-dense foods."),
+        ("Can bad sleep stop fat loss?", "It does not stop fat loss, but it changes its composition. In controlled studies at the same calorie deficit, people sleeping around 5.5 hours lost a greater share of weight as lean mass than those sleeping around 8.5 hours."),
+        ("How late can I drink coffee?", "Caffeine has a half-life of roughly 5-6 hours, so a mid-afternoon coffee is still meaningfully active at bedtime for many people. Shifting caffeine earlier is one of the simplest sleep improvements available."),
+    ],
+)
+
+add(
+    "food-labels-serving-size-traps",
+    "Nutrition Label Traps: Serving Sizes Explained",
+    "How serving sizes, rounding rules, and per-100g versus per-serving figures make packaged food look better than it is.",
+    "general", "Practical Guides", "Nutrition label traps: serving sizes explained",
+    "The numbers on a label are accurate. What they're attached to is where the room for interpretation lives.",
+    sec('''      <h2>Trap 1: the serving is not the package</h2>
+      <p>A bottle of soda or a bag of chips frequently contains two or three servings. All the figures on the panel — calories, sugar, sodium — describe one of them. Nothing is false, but reading the panel without checking "servings per container" understates what you actually consumed by a factor of two or three.</p>
+      <h2>Trap 2: rounding to zero</h2>
+      <p>Labelling rules allow amounts below a threshold to be declared as zero. A product with a small amount of trans fat per serving can legally be listed as "0g trans fat" — and if the serving is small enough, several servings still add up. Checking the ingredients list for "partially hydrogenated oil" is more reliable than trusting the zero.<sup class="ref"><a href="sources.html#f4">[1]</a></sup></p>''') +
+    sec('''      <h2>Trap 3: per 100g vs per serving</h2>
+      <p>Comparing two products is only meaningful on the same basis. Per-100g figures are the fair comparison between brands; per-serving figures tell you what you'll actually eat. Manufacturers may choose flattering serving sizes, so use per-100g to compare and per-serving to plan.</p>
+      <div class="panel">
+        <h3>Fast label check</h3>
+        <p>Servings per container → calories per serving → protein → added sugar → ingredients list. The ingredients list is ordered by weight, so if sugar (under any of its many names) appears in the first three, the product is largely sugar regardless of front-of-pack claims. See <a href="how-to-read-a-nutrition-label.html">how to read a nutrition label</a>.</p>
+      </div>''', bg="var(--color-fat-bg)", tight=True),
+    [("how-to-read-a-nutrition-label.html", "How to read a nutrition label"), ("added-sugar-vs-natural-sugar.html", "Added vs. natural sugar"), ("trans-fat-explained.html", "Trans fat explained")],
+    faq=[
+        ("Why do labels show more than one serving?", "Serving sizes are standardized reference amounts, not a recommendation of how much to eat. A package often contains two or three servings, so the panel figures must be multiplied by servings per container to describe the whole package."),
+        ("Can a product labelled 0g trans fat contain trans fat?", "Yes. Labelling rules permit amounts below a threshold to be rounded to zero per serving. Checking the ingredients list for partially hydrogenated oil is a more reliable indicator than the declared figure."),
+        ("Should I compare foods per serving or per 100g?", "Use per-100g figures to compare brands fairly, since serving sizes differ between products, and per-serving figures to plan what you will actually eat."),
+    ],
+)
+
+add(
+    "meal-prep-for-macros",
+    "Meal Prep for Macros: A Practical System",
+    "How to batch-cook around macro targets, which foods hold up over several days, and how to keep prepped meals from getting boring.",
+    "general", "Practical Guides", "Meal prep for macros: a practical system",
+    "Most diets fail on a Tuesday evening when there's nothing ready and everything is easy to order. Prep is insurance against that moment.",
+    sec('''      <h2>Prep components, not complete meals</h2>
+      <p>Cooking five identical portions of one dish is the fastest route to abandoning meal prep. Preparing <em>components</em> — a protein, a starch, a vegetable, a sauce — lets you assemble different combinations from the same batch cook, which keeps variety high for the same effort.</p>
+      <ul class="checklist">
+        <li><strong>Proteins that reheat well</strong> — chicken thighs, beef mince, lentils, baked tofu, hard-boiled eggs. Chicken breast dries out; thighs are more forgiving.</li>
+        <li><strong>Starches that hold</strong> — rice, potatoes, pasta, quinoa. Cooled and reheated starches also form some resistant starch, which acts more like fiber.</li>
+        <li><strong>Vegetables that survive</strong> — roasted root vegetables, peppers, broccoli. Leafy greens are best added fresh at serving.</li>
+        <li><strong>Sauces</strong> — the cheapest way to make the same components taste like different meals.</li>
+      </ul>''') +
+    sec('''      <h2>Weigh once, at the batch level</h2>
+      <p>Weigh ingredients raw as you cook, note the total, then divide the finished batch into equal portions. That gives you accurate per-portion macros without weighing anything at mealtime — the practical version of <a href="how-to-track-your-macros.html">macro tracking</a>.</p>
+      <div class="panel warn">
+        <h3>Food safety, briefly</h3>
+        <p>Cool cooked food quickly and refrigerate within about two hours. Most prepped meals keep three to four days refrigerated; freeze anything beyond that. Reheat to steaming hot rather than just warm.</p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("how-to-track-your-macros.html", "How to track your macros"), ("how-to-build-a-balanced-meal.html", "Build a balanced meal"), ("high-protein-foods-list.html", "High-protein foods list")],
+    faq=[
+        ("How long do prepped meals last?", "Most cooked meals keep three to four days refrigerated. Cool them quickly and refrigerate within about two hours of cooking, and freeze anything you will not eat within that window."),
+        ("How do I get accurate macros from a batch cook?", "Weigh the ingredients raw as you cook and record the totals, then divide the finished batch into equal portions. Each portion carries a known share of the total, so no mealtime weighing is needed."),
+        ("How do I stop meal prep getting boring?", "Prepare components rather than complete meals. A batch of protein, starch, vegetables, and two or three sauces can be assembled into several different-tasting meals from one cooking session."),
+    ],
+)
+
+add(
+    "ultra-processed-foods-explained",
+    "Ultra-Processed Foods: What the Evidence Shows",
+    "What ultra-processed actually means under the NOVA classification, what the controlled feeding research found, and why the category is debated.",
+    "general", "Practical Guides", "Ultra-processed foods: what the evidence shows",
+    "\"Processed\" covers everything from bagged spinach to a frozen pizza, which is exactly why the term causes so much confusion.",
+    sec('''      <h2>What the term actually means</h2>
+      <p>The NOVA system sorts food by degree of processing rather than by nutrient content. Group 1 is unprocessed or minimally processed food; Group 2 is culinary ingredients like oil and salt; Group 3 is processed food such as bread and cheese; Group 4 is <strong>ultra-processed</strong> — industrial formulations typically containing ingredients not used in home cooking, such as protein isolates, emulsifiers, and modified starches.</p>
+      <h2>The key experiment</h2>
+      <p>A tightly controlled inpatient trial fed participants either ultra-processed or minimally processed diets matched for calories, sugar, fat, fiber, and sodium, and let them eat as much as they wanted. On the ultra-processed diet people ate roughly 500 more calories per day and gained weight; on the minimally processed diet they lost it. Because the diets were nutrient-matched, something about the processing itself — not just the nutrient profile — was driving intake.<sup class="ref"><a href="sources.html#upf1">[1]</a></sup></p>''') +
+    sec('''      <h2>The honest caveats</h2>
+      <ul class="checklist">
+        <li><strong>The category is broad.</strong> Wholegrain bread, flavoured yogurt, and a candy bar can all land in Group 4, which limits how useful a blanket warning is.</li>
+        <li><strong>Mechanism isn't settled.</strong> Energy density, softer texture and faster eating rate, and lower satiety per calorie are all plausible contributors.</li>
+        <li><strong>Cost and access matter.</strong> Ultra-processed food is often cheaper, shelf-stable, and requires no cooking, so "just avoid it" is not equally actionable for everyone.</li>
+      </ul>
+      <p>A more workable framing than avoidance: build meals around whole foods where you can, and treat a high share of ultra-processed food as something to shift gradually rather than eliminate overnight.</p>''', bg="var(--color-pop3-bg)", tight=True),
+    [("nutrient-density-explained.html", "Nutrient density explained"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label"), ("added-sugar-vs-natural-sugar.html", "Added vs. natural sugar")],
+    faq=[
+        ("What counts as ultra-processed food?", "Under the NOVA classification, ultra-processed foods are industrial formulations that typically include ingredients not used in home cooking, such as protein isolates, emulsifiers, and modified starches. Soft drinks, packaged snacks, and many ready meals fall in this group."),
+        ("Do ultra-processed foods cause weight gain?", "A controlled inpatient trial matching diets for calories, sugar, fat, fiber, and sodium found people ate around 500 more calories per day on the ultra-processed diet and gained weight, suggesting processing itself influences intake beyond nutrient content."),
+        ("Are all processed foods bad?", "No. Processing covers a wide range, from bagged salad and canned beans to industrially formulated snacks. Many processed foods such as wholegrain bread, yogurt, and frozen vegetables are nutritionally useful."),
+    ],
+)
+
+add(
+    "hydration-and-performance",
+    "Dehydration and Performance: What Matters",
+    "How much fluid loss actually impairs performance, how to estimate your sweat rate, and why drinking to thirst works for most people.",
+    "athletes", "Sports Nutrition", "Dehydration and performance: what matters",
+    "Hydration advice swings between \"you're chronically dehydrated\" and \"just drink to thirst.\" The research supports something closer to the second, with conditions.",
+    sec('''      <h2>Where performance actually declines</h2>
+      <p>Meaningful decrements in endurance performance generally appear once fluid loss exceeds roughly <strong>2% of body mass</strong> — about 1.5 kg for a 75 kg athlete. Below that threshold, effects on performance are small and inconsistent. Above it, and particularly in heat, cardiovascular strain rises and performance falls measurably.<sup class="ref"><a href="sources.html#ath3">[1]</a></sup></p>
+      <h2>Estimating your sweat rate</h2>
+      <p>Weigh yourself before and after an hour of training, in minimal clothing, accounting for any fluid consumed. The difference approximates your hourly sweat loss. Rates vary enormously between individuals and conditions — from under 0.5 L/hour to over 2 L/hour — which is exactly why blanket fluid recommendations fit almost nobody well.</p>''') +
+    sec('''      <h2>What to drink, and when</h2>
+      <ul class="checklist">
+        <li><strong>Under 60 minutes</strong> — water is sufficient for the overwhelming majority of sessions. See <a href="sports-drinks-vs-water.html">sports drinks vs. water</a>.</li>
+        <li><strong>Over 60-90 minutes, or heavy sweating in heat</strong> — a drink containing sodium and carbohydrate becomes useful for both fluid retention and fuel.</li>
+        <li><strong>Drinking to thirst</strong> — for most recreational athletes this self-regulates adequately without any calculation.</li>
+      </ul>
+      <div class="panel warn">
+        <h3>Overdrinking is a real risk too</h3>
+        <p>Drinking far beyond sweat losses during long events can dilute blood sodium, causing exercise-associated hyponatremia — a genuinely dangerous condition. More fluid is not automatically better; matching intake roughly to losses is.<sup class="ref"><a href="sources.html#ath3">[1]</a></sup></p>
+      </div>''', bg="var(--color-pop2-bg)", tight=True),
+    [("sports-drinks-vs-water.html", "Sports drinks vs. water"), ("electrolytes-explained.html", "Electrolytes explained"), ("how-much-water-should-you-drink-per-day.html", "How much water per day")],
+    faq=[
+        ("At what point does dehydration hurt performance?", "Endurance performance generally declines once fluid loss exceeds roughly 2% of body mass, which is about 1.5 kg for a 75 kg athlete. Below that level, effects are small and inconsistent."),
+        ("How do I work out my sweat rate?", "Weigh yourself before and after an hour of training in minimal clothing, adjusting for any fluid you drank. The weight difference approximates your hourly sweat loss."),
+        ("Can you drink too much water during exercise?", "Yes. Drinking well beyond sweat losses during prolonged events can dilute blood sodium and cause exercise-associated hyponatremia, which is dangerous. Matching intake roughly to losses is safer than maximising intake."),
+    ],
+)
+
+add(
+    "vitamin-c-and-immunity",
+    "Vitamin C and Immunity: What It Really Does",
+    "How much vitamin C you need, whether supplements shorten colds, and why the megadose claims outran the evidence.",
+    "general", "Micronutrients", "Vitamin C and immunity: what it really does",
+    "Vitamin C is the nutrient most associated with immunity in the public mind, and the gap between that reputation and the trial data is instructive.",
+    sec('''      <h2>What it does</h2>
+      <p>Vitamin C is required to synthesize collagen, which is why severe deficiency causes scurvy — poor wound healing, bleeding gums, and connective tissue breakdown. It also functions as an antioxidant and supports several immune cell functions, and it markedly improves absorption of non-heme iron from plant foods.<sup class="ref"><a href="sources.html#mic14">[1]</a></sup></p>
+      <h2>How much you need</h2>
+      <table class="data-table">
+        <tr><th>Group</th><th>RDA</th><th>Upper limit</th></tr>
+        <tr><td>Men 19+</td><td>90 mg/day</td><td>2,000 mg/day</td></tr>
+        <tr><td>Women 19+</td><td>75 mg/day</td><td>2,000 mg/day</td></tr>
+        <tr><td>Smokers</td><td>+35 mg/day</td><td>2,000 mg/day</td></tr>
+      </table>
+      <p>A single medium orange supplies roughly 70 mg; a cup of raw red pepper supplies more than a day's requirement.<sup class="ref"><a href="sources.html#mic14">[1]</a></sup></p>''') +
+    sec('''      <h2>Does it prevent colds?</h2>
+      <p>Regular supplementation does not appear to reduce the likelihood of catching a cold in the general population. It has been associated with a modest reduction in cold <em>duration</em>, and the picture differs for people under heavy physical stress such as marathon runners, where supplementation has shown a larger effect on incidence.<sup class="ref"><a href="sources.html#mic14">[1]</a></sup></p>
+      <div class="panel">
+        <h3>Why megadoses do little</h3>
+        <p>Absorption efficiency falls sharply as intake rises, and the excess — being water-soluble — is excreted. Beyond roughly 400 mg/day, plasma levels plateau regardless of how much more you take.<sup class="ref"><a href="sources.html#mic14">[1]</a></sup></p>
+      </div>''', bg="var(--color-carbs-bg)", tight=True),
+    [("iron-deficiency-and-athletes.html", "Iron deficiency in athletes"), ("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients"), ("vitamin-d-explained.html", "Vitamin D explained")],
+    faq=[
+        ("Does vitamin C prevent colds?", "Regular vitamin C supplementation does not appear to reduce how often people in the general population catch colds, though it has been linked to a modest reduction in duration. People under heavy physical stress, such as marathon runners, show larger effects."),
+        ("How much vitamin C do I need per day?", "The RDA is 90 mg per day for adult men and 75 mg for adult women, with an additional 35 mg for smokers. The tolerable upper limit is 2,000 mg per day."),
+        ("Do high-dose vitamin C supplements work better?", "Not meaningfully. Absorption efficiency falls as intake rises and the excess is excreted in urine, so plasma levels plateau beyond roughly 400 mg per day."),
+    ],
+)
+
+add(
+    "zinc-explained",
+    "Zinc: Immune Function, Sources and Limits",
+    "What zinc does for immune function and protein synthesis, how much you need, and why plant-based diets need more of it.",
+    "general", "Micronutrients", "Zinc: immune function, sources and limits",
+    "Zinc turns up in hundreds of enzymes and is one of the minerals most affected by what kind of diet you eat.",
+    sec('''      <h2>What it does</h2>
+      <p>Zinc is a component of hundreds of enzymes and is required for protein synthesis, DNA synthesis, wound healing, normal growth, and immune cell development. Deficiency impairs immune function and slows wound healing, and severe deficiency stunts growth in children.<sup class="ref"><a href="sources.html#mic15">[1]</a></sup></p>
+      <h2>How much you need</h2>
+      <table class="data-table">
+        <tr><th>Group</th><th>RDA</th><th>Upper limit</th></tr>
+        <tr><td>Men 19+</td><td>11 mg/day</td><td>40 mg/day</td></tr>
+        <tr><td>Women 19+</td><td>8 mg/day</td><td>40 mg/day</td></tr>
+      </table>''') +
+    sec('''      <h2>Why plant-based diets need more</h2>
+      <p>Oysters are by far the richest source, followed by red meat, poultry, beans, nuts, and whole grains. But phytates in legumes and whole grains bind zinc and reduce its absorption, so the Institute of Medicine notes that vegetarians may require as much as <strong>50% more</strong> zinc than the RDA.<sup class="ref"><a href="sources.html#mic15">[1]</a></sup> Soaking, sprouting, and leavening bread all reduce phytate content and improve absorption.</p>
+      <div class="panel warn">
+        <h3>The upper limit matters here</h3>
+        <p>Chronic high-dose zinc supplementation interferes with copper absorption and can cause copper deficiency. The 40 mg/day upper limit is not a formality — lozenges and supplements can push past it easily if taken continuously.<sup class="ref"><a href="sources.html#mic15">[1]</a></sup></p>
+      </div>''', bg="var(--color-protein-bg)", tight=True),
+    [("vegan-macros-guide.html", "Vegan macros guide"), ("iron-deficiency-and-athletes.html", "Iron deficiency in athletes"), ("plant-based-protein-sources.html", "Plant-based protein sources")],
+    faq=[
+        ("How much zinc do I need daily?", "The RDA is 11 mg per day for adult men and 8 mg for adult women, with a tolerable upper limit of 40 mg per day for adults."),
+        ("Do vegetarians need more zinc?", "Yes. Phytates in legumes and whole grains bind zinc and reduce absorption, and vegetarians may require up to 50% more zinc than the RDA. Soaking, sprouting, and leavening reduce phytate content."),
+        ("Can you take too much zinc?", "Yes. Chronic intakes above the 40 mg per day upper limit interfere with copper absorption and can cause copper deficiency, so continuous high-dose supplementation should be avoided."),
+    ],
+)
+
+add(
+    "protein-for-older-adults",
+    "Protein for Older Adults: Preventing Muscle Loss",
+    "Why protein needs rise with age, what anabolic resistance means, and how much protein helps preserve muscle after 50.",
+    "protein", "Protein Guide", "Protein for older adults: preventing muscle loss",
+    "The RDA was set from nitrogen balance studies in younger adults. For older adults, the evidence increasingly says it's too low.",
+    sec('''      <h2>Sarcopenia and anabolic resistance</h2>
+      <p>Adults progressively lose muscle mass and strength from around the fourth decade onward — a process called <strong>sarcopenia</strong>. Part of the cause is <em>anabolic resistance</em>: ageing muscle responds less strongly to a given dose of protein than younger muscle does. The same 20g of protein that maximally stimulates muscle protein synthesis in a 25-year-old produces a blunted response in a 70-year-old.<sup class="ref"><a href="sources.html#p2">[1]</a></sup></p>
+      <h2>What that means for intake</h2>
+      <p>Because the response is blunted, the practical answer is a larger dose per meal rather than the same amount spread thinner. Research groups working on healthy ageing commonly recommend intakes above the 0.8 g/kg RDA — often in the region of <strong>1.0-1.2 g/kg/day</strong> for healthy older adults, and higher still with illness or during rehabilitation.<sup class="ref"><a href="sources.html#p3">[2]</a></sup></p>''') +
+    sec('''      <h2>Protein alone isn't enough</h2>
+      <p>The strongest signal for muscle retention is mechanical: resistance training. Protein supplies the raw material, but without a stimulus telling the body to build, the material is largely redirected. Combining resistance training with adequate protein is far more effective for preserving muscle than either alone.<sup class="ref"><a href="sources.html#p2">[1]</a></sup></p>
+      <div class="panel">
+        <h3>Practical targets</h3>
+        <p>Aim for a meaningful protein serving (roughly 25-40g) at each main meal rather than one protein-heavy dinner. Appetite often declines with age, so protein-dense choices — dairy, eggs, fish, meat, legumes — matter more when total food volume is lower.</p>
+      </div>''', bg="var(--color-protein-bg)", tight=True),
+    [("how-much-protein-per-day.html", "How much protein per day"), ("protein-for-muscle-growth.html", "Protein for muscle growth"), ("catabolism-vs-anabolism.html", "Catabolism vs. anabolism")],
+    faq=[
+        ("Do older adults need more protein?", "The evidence increasingly supports intakes above the 0.8 g/kg RDA for healthy older adults, often around 1.0-1.2 g/kg per day, because ageing muscle responds less strongly to a given dose of protein."),
+        ("What is anabolic resistance?", "Anabolic resistance describes the blunted muscle protein synthesis response to protein intake that develops with age. A protein dose that maximally stimulates synthesis in a young adult produces a smaller response in an older adult."),
+        ("Is protein enough to prevent muscle loss?", "No. Resistance training provides the mechanical signal that drives muscle retention, and protein supplies the raw material. Combining the two is substantially more effective than either alone."),
+    ],
 )
 
 def main():
