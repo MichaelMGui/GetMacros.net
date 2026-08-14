@@ -155,7 +155,6 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -164,14 +163,16 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Game", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {nav_html("quiz")}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#{icon}"/></svg> Game</p>
@@ -185,9 +186,8 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
       <div id="game-root"></div>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
@@ -196,8 +196,6 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 <script>
 {body_script}
 </script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -229,7 +227,6 @@ def build_quiz_hub():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>Quiz Yourself | GetMacros.net</title>
 <meta name="description" content="Test what you know about protein, fat, carbs, and sports nutrition with interactive quizzes and hands-on nutrition games.">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -237,14 +234,16 @@ def build_quiz_hub():
 {seo_meta("Quiz Yourself", "Test what you know about protein, fat, carbs, and sports nutrition with interactive quizzes and hands-on nutrition games.", "https://getmacros.net/quiz.html", og_type="website")}
 {quiz_hub_jsonld()}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {nav_html("quiz")}
 
-<main>
+<main id="main-content">
   <section class="hero page-hero" style="background: linear-gradient(160deg, rgba(224,71,59,.85), rgba(221,154,31,.75) 55%, rgba(23,138,90,.85))">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"/></svg> Study tools</p>
@@ -272,15 +271,12 @@ def build_quiz_hub():
       </div>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''

@@ -142,7 +142,6 @@ def build():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>Nutrition Glossary: A-Z Terms for Students | GetMacros.net</title>
 <meta name="description" content="An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -150,14 +149,16 @@ def build():
 {glossary_jsonld()}
 {seo_meta("Nutrition Glossary: A-Z Terms for Students", "An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.", "https://getmacros.net/glossary.html", og_type="website")}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {nav_html("glossary")}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg> For students</p>
@@ -175,15 +176,12 @@ def build():
   </section>
 
 {sections}
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''

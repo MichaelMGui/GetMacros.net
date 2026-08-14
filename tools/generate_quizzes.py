@@ -543,7 +543,6 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -552,14 +551,16 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Quiz", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {nav_html("quiz")}
 
-<main>
+<main id="main-content">
   <section class="{hero_class}" style="{HERO_STYLE[category]}">
     <div class="container">
       <p class="eyebrow">{eyebrow}</p>
@@ -573,9 +574,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
       <div id="quiz-root" style="max-width:640px;margin:0 auto;"></div>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
@@ -587,8 +587,6 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
     {tiers_js}moreHref: 'quiz.html'
   }});
 </script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''

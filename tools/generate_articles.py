@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260816g"
+ASSET_VERSION = "20260816i"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -154,65 +154,54 @@ def nav_html(current="articles"):
     def cur(name):
         return ' aria-current="page"' if name == current else ""
 
-    return f'''<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="nav-brand"><svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"/></svg>Get<span>Macros</span>.net</a>
-    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="protein.html">Protein</a></li>
-      <li><a href="fats.html">Fat</a></li>
-      <li><a href="carbs.html">Carbs</a></li>
-      <li><a href="calculators.html">Calculators</a></li>
-      <li><a href="diets-explained.html"{cur("diets")}>Diets</a></li>
-      <li><a href="articles.html"{cur("articles")}>Articles</a></li>
-      <li><a href="glossary.html"{cur("glossary")}>Glossary</a></li>
-      <li><a href="quiz.html"{cur("quiz")}>Quiz</a></li>
-      <li><a href="sources.html">Sources</a></li>
-      <li><a href="contact.html" class="nav-cta">Contact</a></li>
-    </ul>
+    return f'''<header class="site-header modern-header">
+  <nav class="full-nav" aria-label="Main navigation">
+    <a class="modern-brand" href="index.html" aria-label="GetMacros.net home"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a>
+    <div class="full-nav-links">
+      <a href="index.html">Home</a>
+      <a href="articles.html"{cur("articles")}>Articles</a>
+      <a href="calculators.html">Calculators</a>
+      <a href="quiz.html"{cur("quiz")}>Quizzes &amp; Games</a>
+      <a href="healthy-fast-food.html">Healthy Fast Food</a>
+      <a href="glossary.html"{cur("glossary")}>Glossary</a>
+      <a href="sources.html">Sources</a>
+      <a href="search.html">Search</a>
+      <a href="contact.html">Contact</a>
+    </div>
     <div class="lang-switch"><a href="index.html" aria-current="page">EN</a><a href="es/">ES</a><a href="fr/">FR</a></div>
+    <a class="nav-action" href="restaurant-meal-finder.html">Find my meal</a>
   </nav>
 </header>'''
 
 
 NAV = nav_html("articles")
 
-FOOTER = '''<footer class="site-footer">
-  <div class="container">
-    <div>
-      <h4>GetMacros.net</h4>
-      <p class="disclaimer">Educational content only — not medical advice. See <a href="sources.html">Sources</a> for citations.</p>
-    </div>
-    <div>
-      <h4>Learn</h4>
-      <ul>
-        <li><a href="protein.html">Protein</a></li>
-        <li><a href="fats.html">Fat</a></li>
-        <li><a href="carbs.html">Carbohydrates</a></li>
-        <li><a href="articles.html">All articles</a></li>
-        <li><a href="glossary.html">Glossary</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Tools</h4>
-      <ul>
-        <li><a href="calculators.html">Macro calculator</a></li>
-        <li><a href="quiz.html">Quizzes &amp; games</a></li>
-        <li><a href="sources.html">Sources &amp; citations</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy policy</a></li>
-        <li><a href="terms.html">Terms of use</a></li>
-      </ul>
-    </div>
+FOOTER = '''<footer class="modern-footer">
+  <div>
+    <a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a>
+    <p>Clear nutrition tools for real decisions. Independent, evidence-led and judgment-free.</p>
   </div>
-  <div class="footer-bottom">© 2026 GetMacros.net</div>
+  <div>
+    <strong>Explore</strong>
+    <a href="healthy-fast-food.html">Healthy fast food</a>
+    <a href="calculators.html">Calculators</a>
+    <a href="articles.html">Articles</a>
+    <a href="quiz.html">Quizzes &amp; games</a>
+  </div>
+  <div>
+    <strong>Reference</strong>
+    <a href="glossary.html">Glossary</a>
+    <a href="sources.html">Sources</a>
+    <a href="editorial-policy.html">Editorial policy</a>
+  </div>
+  <div>
+    <strong>Company</strong>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms of use</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <small>© 2026 GetMacros.net · Educational information, not individualized medical advice.</small>
 </footer>'''
 
 # --- Ads (Google AdSense) -------------------------------------------------
@@ -229,19 +218,9 @@ ADSENSE_LOADER = (
     'crossorigin="anonymous"></script>'
 )
 
-AD_SLOT = f'''  <section class="tight ad-slot">
-    <div class="container">
-      <p class="ad-label">Advertisement</p>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="{ADSENSE_CLIENT}"
-           data-ad-slot="0000000000"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
-    </div>
-  </section>
-'''
+# Auto Ads placement anchor. Google fills this from the dashboard, so no
+# per-page slot IDs are needed and no placeholder unit ships to production.
+AD_SLOT = '  <div class="ad-auto-anchor" aria-hidden="true"></div>\n'
 
 HERO_STYLE = {
     "protein": "background: linear-gradient(rgba(90,20,15,.72),rgba(90,20,15,.82))",
@@ -272,7 +251,6 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">\n<meta name="google-adsense-account" content="{ADSENSE_CLIENT}">
@@ -282,14 +260,16 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html")}
 {extra_head}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {NAV}
 
-<main>
+<main id="main-content">
   <section class="{hero_class}" style="{HERO_STYLE[category]}">
     <div class="container">
       <p class="eyebrow">{eyebrow}</p>
@@ -313,15 +293,12 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
       <p class="section-intro"><strong>Keep reading:</strong> {related_links}</p>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1189,7 +1166,6 @@ def build_hub():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>All Nutrition Articles | GetMacros.net</title>
 <meta name="description" content="Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, diet breakdowns, food lists, and calculator explainers.">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -1197,14 +1173,16 @@ def build_hub():
 {seo_meta("All Nutrition Articles", "Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, diet breakdowns, food lists, and calculator explainers.", "https://getmacros.net/articles.html", og_type="website")}
 {hub_jsonld()}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {NAV}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow">Library</p>
@@ -1214,15 +1192,12 @@ def build_hub():
   </section>
 
 {sections}
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1267,7 +1242,6 @@ def build_about():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title}</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -1275,14 +1249,16 @@ def build_about():
 {seo_meta(title, meta, url, og_type="website")}
 {about_jsonld(url)}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {NAV}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"/></svg> About</p>
@@ -1319,15 +1295,12 @@ def build_about():
       <p>If you find a claim that looks wrong or a citation that's out of date, the fastest way to verify it yourself is the <a href="sources.html">Sources page</a> — every reference links directly to its original source. To report it directly, see our <a href="contact.html">Contact page</a>.</p>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1354,7 +1327,6 @@ def build_privacy():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -1362,14 +1334,16 @@ def build_privacy():
 {seo_meta(title, meta, url, og_type="website")}
 {webpage_jsonld(title, meta, url)}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {NAV}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg> Privacy</p>
@@ -1419,15 +1393,12 @@ def build_privacy():
       <p>If this policy changes, the update will be reflected on this page with a new "last updated" date above.</p>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1470,7 +1441,6 @@ def build_contact():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -1478,14 +1448,16 @@ def build_contact():
 {seo_meta(title, meta, url, og_type="website")}
 {contact_jsonld(url)}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {NAV}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg> Contact</p>
@@ -1516,15 +1488,12 @@ def build_contact():
       <p>This site is educational, not a medical or dietetics practice — we can't answer personal health questions or give individualized advice. For that, see a doctor or registered dietitian. See our <a href="about.html">About page</a> for more on what the site is and isn't.</p>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1551,7 +1520,6 @@ def build_terms():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 <meta name="author" content="{AUTHOR_NAME}">
@@ -1559,14 +1527,16 @@ def build_terms():
 {seo_meta(title, meta, url, og_type="website")}
 {webpage_jsonld(title, meta, url)}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {NAV}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-document"/></svg> Terms</p>
@@ -1616,15 +1586,12 @@ def build_terms():
       <p>If these terms change, the update will be reflected on this page with a new "last updated" date above. Continued use of the site after a change means you accept the updated terms.</p>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
@@ -1651,20 +1618,21 @@ def build_404():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<link rel="preconnect" href="https://www.highperformanceformat.com">
 <meta name="robots" content="noindex, follow">
 <title>{title} | GetMacros.net</title>
 <meta name="description" content="{meta}">
 {seo_meta(title, meta, url, og_type="website")}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
 {ADSENSE_LOADER}
 </head>
-<body>
+<body class="site-v3 article-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 {ICON_SPRITE}
 {NAV}
 
-<main>
+<main id="main-content">
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff; text-align:center;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg> 404</p>
@@ -1685,15 +1653,12 @@ def build_404():
       </div>
     </div>
   </section>
-</main>
+{AD_SLOT}</main>
 
-{AD_SLOT}
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
-<script src="js/ads-config.js?v={ASSET_VERSION}"></script>
-<script src="js/ads.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 '''
