@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260815"
+ASSET_VERSION = "20260816g"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -171,6 +171,7 @@ def nav_html(current="articles"):
       <li><a href="sources.html">Sources</a></li>
       <li><a href="contact.html" class="nav-cta">Contact</a></li>
     </ul>
+    <div class="lang-switch"><a href="index.html" aria-current="page">EN</a><a href="es/">ES</a><a href="fr/">FR</a></div>
   </nav>
 </header>'''
 

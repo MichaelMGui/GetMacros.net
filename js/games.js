@@ -182,7 +182,7 @@ function initPlateGame(rootId, foods, targets) {
       chip.type = "button";
       chip.className = "food-chip";
       chip.innerHTML =
-        '<svg class="icon food-icon" aria-hidden="true"><use href="#' + f.icon + '"/></svg>' + f.name +
+        '<span class="food-chip-icon"><svg class="icon" aria-hidden="true"><use href="#' + f.icon + '"/></svg></span>' + f.name +
         '<span class="count" id="pg-count-' + f.id + '"></span>';
       chip.addEventListener("click", function () {
         counts[f.id] = (counts[f.id] || 0) + 1;
