@@ -33,8 +33,8 @@
 <link rel="stylesheet" href="css/style.css?v=20260814d">
 <script src="js/img-fallback.js?v=20260814d"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2316153877942502" crossorigin="anonymous"></script>
-</head>
-<body>
+<link rel="stylesheet" href="css/unified-pages.css?v=20260816a"></head>
+<body class="unified-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
   <symbol id="logo-mark" viewBox="0 0 24 24">
@@ -255,270 +255,6 @@
   <symbol id="icon-medal" viewBox="0 0 24 24">
     <path d="M8 2H16L13.4 8.6C15.7 9.3 17.4 11.5 17.4 14C17.4 17.1 14.9 19.6 11.8 19.6C8.7 19.6 6.2 17.1 6.2 14C6.2 11.5 7.9 9.3 10.2 8.6L8 2Z"/>
     <circle cx="11.8" cy="14" r="3.4" fill="#fff" opacity="0.85"/>
-    <path d="M11.8 11.8L12.5 13.3L14.1 13.5L12.9 14.5L13.3 16.1L11.8 15.2L10.3 16.1L10.7 14.5L9.5 13.5L11.1 13.3Z"/>
-  </symbol>
-</svg>
-<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="nav-brand"><svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"/></svg>Get<span>Macros</span>.net</a>
-    <button class="nav-toggle" aria-label="Toggle menu">â˜°</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="protein.html">Protein</a></li>
-      <li><a href="fats.html">Fat</a></li>
-      <li><a href="carbs.html">Carbs</a></li>
-      <li><a href="calculators.html" aria-current="page">Calculators</a></li>
-      <li><a href="diets-explained.html">Diets</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="glossary.html">Glossary</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="sources.html">Sources</a></li>
-      <li><a href="contact.html" class="nav-cta">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main id="main-content">
-  <section class="tight" style="background:linear-gradient(135deg,#edf8f2,#fff9e9)">
-    <div class="container"><p class="eyebrow">New practical tools</p><h2>Plan recipes and compare grocery value</h2><div class="card-grid"><a class="card carbs" href="recipe-macro-scaler.html"><h3>Recipe Macro Scaler</h3><p>Resize a recipe and recalculate calories, protein, carbohydrates, and fat per new serving.</p></a><a class="card protein" href="protein-value-calculator.html"><h3>Protein Value Calculator</h3><p>Compare package prices by cost per 25 grams of protein, with the limits stated clearly.</p></a></div></div>
-  </section>
-
-
-  <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
-    <div class="container">
-      <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-calculator"/></svg> Tools</p>
-      <h1>Macro &amp; fat calculators</h1>
-      <p>Enter your stats to get a daily calorie target and a protein / fat / carb breakdown in grams. These use the Mifflin-St Jeor equation for resting metabolic rate and standard activity multipliers â€” see <a href="sources.html" style="color:#fff;text-decoration:underline;">Sources</a> for the exact formulas.</p>
-    </div>
-  </section>
-
-  <section id="macro-calculator">
-    <div class="container">
-      <h2>Full macro calculator</h2>
-      <p class="section-intro">Estimates your calorie needs (BMR â†’ TDEE), then splits them into protein, fat, and carb gram targets based on your goal.</p>
-
-      <div class="calc-wrap">
-        <form class="calc-form" id="macro-form">
-          <fieldset>
-            <legend>About you</legend>
-            <div class="field">
-              <label>Sex</label>
-              <div class="radio-row">
-                <label><input type="radio" name="sex" value="male" checked> Male</label>
-                <label><input type="radio" name="sex" value="female"> Female</label>
-              </div>
-              <p class="hint">Used only because the Mifflin-St Jeor equation applies a different constant by sex â€” it's a resting-metabolism estimate, not a statement about who you are.</p>
-            </div>
-            <div class="field">
-              <label for="age">Age (years)</label>
-              <input type="number" id="age" name="age" min="14" max="100" value="30" required>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Weight</legend>
-            <div class="units-toggle">
-              <button type="button" class="active" data-weight-unit="lb">lb</button>
-              <button type="button" data-weight-unit="kg">kg</button>
-            </div>
-            <div class="field">
-              <label for="weight">Weight (<span id="weight-unit-label">lb</span>)</label>
-              <input type="number" id="weight" name="weight" min="1" step="0.1" value="170" required>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Height</legend>
-            <div class="units-toggle">
-              <button type="button" class="active" data-height-unit="ftin">ft/in</button>
-              <button type="button" data-height-unit="cm">cm</button>
-            </div>
-            <div class="field" id="height-ftin-field">
-              <label>Height</label>
-              <div class="radio-row">
-                <input type="number" id="height-ft" name="height_ft" min="3" max="8" value="5" style="width:80px" required> ft
-                <input type="number" id="height-in" name="height_in" min="0" max="11" value="9" style="width:80px"> in
-              </div>
-            </div>
-            <div class="field" id="height-cm-field" hidden>
-              <label for="height-cm">Height (cm)</label>
-              <input type="number" id="height-cm" name="height_cm" min="120" max="230" value="175">
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Activity &amp; goal</legend>
-            <div class="field">
-              <label for="activity">Activity level</label>
-              <select id="activity" name="activity">
-                <option value="sedentary">Sedentary (little or no exercise)</option>
-                <option value="light">Lightly active (1â€“3 days/week)</option>
-                <option value="moderate" selected>Moderately active (3â€“5 days/week)</option>
-                <option value="active">Very active (6â€“7 days/week)</option>
-                <option value="athlete">Athlete (2x/day or physical job + training)</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="goal">Goal</label>
-              <select id="goal" name="goal">
-                <option value="lose">Lose fat</option>
-                <option value="maintain" selected>Maintain weight</option>
-                <option value="gain">Build muscle</option>
-              </select>
-              <p class="hint">Fat is set to 30% of calories (the middle of the recommended 20â€“35% range) automatically. Want a different fat target? Use the <a href="#fat-calculator">quick fat calculator</a> below.</p>
-            </div>
-          </fieldset>
-
-          <div id="macro-error" class="error-msg" hidden></div>
-          <button type="submit" class="calc-submit">Calculate my macros</button>
-        </form>
-
-        <div class="results empty" id="macro-results">
-          Fill in the form and press "Calculate my macros" to see your results.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="single-macro-calculators" style="background:var(--color-bg)">
-    <div class="container">
-      <h2><svg class="icon" aria-hidden="true" style="color:var(--color-accent)"><use href="#icon-target"/></svg> Single-macro calculators</h2>
-      <p class="section-intro">Already know your numbers, or just want one macro dialed in? Each of these uses the same reference ranges as the full calculator above â€” see the <a href="sources.html">Sources page</a> for citations.</p>
-
-      <div class="card-grid" style="align-items:start;">
-        <div class="panel">
-          <span class="icon-badge protein"><svg class="icon" aria-hidden="true"><use href="#icon-protein"/></svg></span>
-          <h3 id="protein-calculator">Protein calculator</h3>
-          <form id="protein-calc-form">
-            <div class="units-toggle">
-              <button type="button" class="active" data-pc-unit="lb">lb</button>
-              <button type="button" data-pc-unit="kg">kg</button>
-            </div>
-            <div class="field">
-              <label for="protein-weight">Body weight (<span id="protein-weight-unit">lb</span>)</label>
-              <input type="number" id="protein-weight" min="1" step="0.1" value="170" required>
-            </div>
-            <div class="field">
-              <label for="protein-goal">Goal</label>
-              <select id="protein-goal">
-                <option value="sedentary">General health (sedentary)</option>
-                <option value="active" selected>Recreationally active</option>
-                <option value="muscle">Building or preserving muscle</option>
-              </select>
-            </div>
-            <div id="protein-calc-error" class="error-msg" hidden></div>
-            <button type="submit" class="calc-submit">Calculate</button>
-          </form>
-          <div class="results empty" id="protein-calc-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
-            Enter your weight to see your protein target.
-          </div>
-        </div>
-
-        <div class="panel">
-          <span class="icon-badge fat"><svg class="icon" aria-hidden="true"><use href="#icon-fat"/></svg></span>
-          <h3 id="fat-calculator">Fat calculator</h3>
-          <form id="fat-form">
-            <div class="field">
-              <label for="calories">Daily calorie target</label>
-              <input type="number" id="calories" name="calories" min="800" max="8000" step="10" value="2200" required>
-            </div>
-            <p class="hint">Don't know your calorie target? Use the full calculator above, or the <a href="tdee-vs-bmr.html">BMR vs. TDEE guide</a>.</p>
-            <div id="fat-error" class="error-msg" hidden></div>
-            <button type="submit" class="calc-submit">Calculate</button>
-          </form>
-          <div class="results empty" id="fat-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
-            Enter your daily calories to see your recommended fat intake.
-          </div>
-        </div>
-
-        <div class="panel">
-          <span class="icon-badge carbs"><svg class="icon" aria-hidden="true"><use href="#icon-carbs"/></svg></span>
-          <h3 id="carb-calculator">Carbohydrate calculator</h3>
-          <form id="carb-calc-form">
-            <div class="field">
-              <label for="carb-calories">Daily calorie target</label>
-              <input type="number" id="carb-calories" min="800" max="8000" step="10" value="2200" required>
-            </div>
-            <p class="hint">For a target based on what's left after protein and fat, use the full calculator above.</p>
-            <div id="carb-calc-error" class="error-msg" hidden></div>
-            <button type="submit" class="calc-submit">Calculate</button>
-          </form>
-          <div class="results empty" id="carb-calc-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
-            Enter your daily calories to see your recommended carb intake.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="tight">
-    <div class="container">
-      <p class="section-intro">These calculators provide estimates for healthy adults and are not a substitute for individualized advice from a doctor or registered dietitian, especially if you're pregnant, have a medical condition, or have a history of disordered eating.</p>
-    </div>
-  </section>
-<section class="tight" style="background:linear-gradient(135deg,#edf8f2,#f7f3e8)"><div class="container content-grid"><div><p class="eyebrow">New comparison tool</p><h2>Compare two Nutrition Facts labels fairly</h2><p>See values per listed serving and per 100 calories, plus Daily Value context for fiber, added sugar, and sodiumâ€”without a simplistic food score.</p></div><div><a class="btn btn-primary" href="nutrition-label-comparison-tool.html">Compare two labels</a></div></div></section>
-<section class="tight"><div class="container content-grid"><div><p class="eyebrow">New searchable reference</p><h2>Find vitamins and minerals by function or food</h2><p>The micronutrient finder connects 26 nutrient cards to evidence-aware guides without recommending a supplement dose.</p></div><div><a class="btn btn-primary" href="micronutrient-finder.html">Search micronutrients</a></div></div></section>
-<section class="tight"><div class="container"><p><strong>Need a different resource?</strong> <a href="search.html?type=tools">Search all tools</a> or browse every article, collection, and game.</p></div></section>
-<section class="tight" style="background:#eef5f1"><div class="container content-grid"><div><p class="eyebrow">New caregiver-friendly tool</p><h2>Older adult meal support planner</h2><p>Turn selected appetite, access, cooking, chewing, swallowing, hydration, isolation, or weight barriers into a focused printable plan.</p></div><div><a class="btn btn-primary" href="older-adult-meal-support-planner.html">Build a support plan</a></div></div></section>
-<section class="tight" style="background:#eef5f1"><div class="container content-grid"><div><p class="eyebrow">New pantry tool</p><h2>Build meals from what is already available</h2><p>Select proteins, bases, produce, and flavor ingredients to generate flexible combinations and the smallest useful grocery gap.</p></div><div><a class="btn btn-primary" href="budget-meal-builder.html">Open budget meal builder</a></div></div></section><section class="tight" style="background:linear-gradient(135deg,#e7f5f3,#eef7ef)"><div class="container content-grid"><div><p class="eyebrow">New transparent field tool</p><h2>Estimate observed sweat rate</h2><p>Combine before-and-after body mass, drink volume, urine, and time. The result shows its math and stays honest about what it cannot prescribe.</p></div><div><a class="btn btn-primary" href="sweat-rate-calculator.html">Open sweat-rate calculator</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#f2eef6,#eaf4ef)"><div class="container content-grid"><div><p class="eyebrow">New family planning tool</p><h2>Build a school lunch that can survive the school day</h2><p>Choose familiar components, see the roles they cover, and create a checklist for access, cold storage, learning foods, and allergy rules.</p></div><div><a class="btn btn-primary" href="school-lunch-builder.html">Open school lunch builder</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#f6eee7,#eaf5ef)"><div class="container content-grid"><div><p class="eyebrow">New private worksheet</p><h2>Turn scattered digestive symptoms into a useful visit summary</h2><p>Record timing, severity, bowel pattern, food, medicines, sleep, stress, and red flags. Entries stay only in the open page.</p></div><div><a class="btn btn-primary" href="digestive-pattern-worksheet.html">Open digestive worksheet</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#edf1f6,#eaf5ef)"><div class="container content-grid"><div><p class="eyebrow">New scenario-based safety helper</p><h2>Apply the correct storage rule</h2><p>Choose counter time, refrigerated leftovers, thawing, or a power outage. The helper explains the relevant rule without pretending smell can replace missing history.</p></div><div><a class="btn btn-primary" href="food-storage-decision-helper.html">Open storage decision helper</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#f7eee8,#e9f5ef)"><div class="container content-grid"><div><p class="eyebrow">New private prenatal worksheet</p><h2>Turn a supplement label into better questions</h2><p>Check what the panel lists, flag serving-size uncertainty and organize topics for prenatal care.</p></div><div><a class="btn btn-primary" href="prenatal-supplement-label-checker.html">Open label checker</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#f4ece8,#e8f4ef)"><div class="container content-grid"><div><p class="eyebrow">New label tool</p><h2>Compare the sodium in your actual portions</h2><p>Normalize two products by servings eaten and see their share of the general FDA Daily Value.</p></div><div><a class="btn btn-primary" href="sodium-label-comparison-tool.html">Compare sodium labels</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#f5edf4,#e9f5ef)"><div class="container content-grid"><div><p class="eyebrow">New private visit planner</p><h2>Turn midlife nutrition concerns into focused questions</h2><p>Organize symptoms, bone, muscle, supplement and cardiometabolic topics without storing your entries.</p></div><div><a class="btn btn-primary" href="midlife-nutrition-visit-planner.html">Build a visit list</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#eef5f8,#edf5eb)"><div class="container content-grid"><div><p class="eyebrow">New private label tool</p><h2>Calculate carbohydrate in the portion you will eat</h2><p>Multiply total carbohydrate by servings without suggesting insulin or personal targets.</p></div><div><a class="btn btn-primary" href="carbohydrate-label-portion-tool.html">Open carbohydrate tool</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#edf4f6,#f2f3e8)"><div class="container content-grid"><div><p class="eyebrow">New private renal label organizer</p><h2>Turn sodium, potassium and phosphate clues into questions</h2><p>Organize a package label without assigning a personal limit or food-safety score.</p></div><div><a class="btn btn-primary" href="renal-label-question-builder.html">Build renal label questions</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#f5eee7,#eef5e9)"><div class="container content-grid"><div><p class="eyebrow">New private visit planner</p><h2>Organize liver tests, products and nutrition questions</h2><p>Create a focused appointment list without diagnosing a cause.</p></div><div><a class="btn btn-primary" href="liver-health-visit-question-builder.html">Build liver-health questions</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#f7eeee,#f4f0e8)"><div class="container content-grid"><div><p class="eyebrow">New private iron planner</p><h2>Organize labels, test results and blood-loss questions</h2><p>Build an appointment list without assigning a diagnosis or dose.</p></div><div><a class="btn btn-primary" href="iron-label-and-test-question-builder.html">Build iron questions</a></div></div></section>
-<section class="tight" style="background:linear-gradient(135deg,#eef1f7,#f0f5ea)"><div class="container content-grid"><div><p class="eyebrow">New private thyroid routine planner</p><h2>Organize medication timing and interaction questions</h2><p>Review coffee, calcium, iron, biotin and routine changes without altering a dose.</p></div><div><a class="btn btn-primary" href="thyroid-medication-routine-question-builder.html">Build thyroid questions</a></div></div></section>
-<section class="tight"><div class="container"><h2>PCOS visit question builder</h2><p>Privately organize diagnosis, screening, medicine, supplement and fertility questions before an appointment.</p><a class="btn btn-primary" href="pcos-visit-question-builder.html">Build a visit note</a></div></section>
-<section class="tight"><div class="container"><h2>Endometriosis visit question builder</h2><p>Privately organize symptoms, imaging, treatment, fertility, bowel and nutrition questions.</p><a class="btn btn-primary" href="endometriosis-visit-question-builder.html">Build a visit note</a></div></section>
-<section class="tight"><div class="container"><h2>Bone-health visit planner</h2><p>Organize DXA, fracture, calcium, vitamin D, medicine, dental and fall-risk questions.</p><a class="btn btn-primary" href="bone-health-visit-planner.html">Build a visit note</a></div></section>
-<section class="tight"><div class="container"><h2>Migraine pattern diary</h2><p>Organize symptoms, meals, fluids, caffeine and treatment response privately.</p><a class="btn btn-primary" href="migraine-pattern-diary.html">Build a pattern summary</a></div></section>
-<section class="tight"><div class="container"><h2>Restaurant meal finder</h2><p>Filter current macro snapshots by chain and dietary priority.</p><a class="btn btn-primary" href="restaurant-meal-finder.html">Find a restaurant meal</a></div></section>
-</main>
-
-  <footer class="site-footer">
-  <div class="container">
-    <div>
-      <h4>GetMacros.net</h4>
-      <p class="disclaimer">Educational content only â€” not medical advice. See <a href="sources.html">Sources</a> for citations.</p>
-    </div>
-    <div>
-      <h4>Learn</h4>
-      <ul>
-        <li><a href="protein.html">Protein</a></li>
-        <li><a href="fats.html">Fat</a></li>
-        <li><a href="carbs.html">Carbohydrates</a></li>
-      <li><a href="articles.html">All articles</a></li>
-        <li><a href="glossary.html">Glossary</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Tools</h4>
-      <ul>
-        <li><a href="calculators.html">Macro calculator</a></li>
-        <li><a href="quiz.html">Quizzes &amp; games</a></li>
-        <li><a href="sources.html">Sources &amp; citations</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy policy</a></li>
-        <li><a href="terms.html">Terms of use</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">Â© 2026 GetMacros.net</div>
-</footer>
-
-<script src="js/main.js?v=20260814d"></script>
-<script src="js/reveal.js?v=20260814d"></script>
-<script src="js/calculators.js?v=20260814d"></script>
-<script src="js/ads.js?v=20260814d"></script>
-</body>
-</html>
+    <path d="M11.8 11.8L12.5 13.3L14.1 13.5L12.9 14.5L13.3 16.1L11.8 15.2L10.3×Þ´¶‰žËkºwµçQ½ÈˆùÅÕ¥¬™…Ð…±Õ±…Ñ½Èð½„ø‰•±½Ü¸ð½Àø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€ð½™¥•±‘Í•Ðø((€€€€€€€€€€ñ‘¥Ø¥ô‰µ…É¼µ•ÉÉ½Èˆ±…ÍÌô‰•ÉÉ½ÈµµÍœˆ¡¥‘‘•¸øð½‘¥Øø(€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ±…ÍÌô‰…±ŒµÍÕ‰µ¥Ðˆù…±Õ±…Ñ”µäµ…É½Ìð½‰ÕÑÑ½¸ø(€€€€€€€€ð½™½É´ø((€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•ÍÕ±ÑÌ•µÁÑäˆ¥ô‰µ…É¼µÉ•ÍÕ±ÑÌˆø(€€€€€€€€€¥±°¥¸Ñ¡”™½É´…¹ÁÉ•ÍÌ€‰…±Õ±…Ñ”µäµ…É½ÌˆÑ¼Í•”å½ÕÈÉ•ÍÕ±ÑÌ¸(€€€€€€€€ð½‘¥Øø(€€€€€€ð½‘¥Øø(€€€€ð½‘¥Øø(€€ð½Í•Ñ¥½¸ø((€€ñÍ•Ñ¥½¸¥ô‰Í¥¹±”µµ…É¼µ…±Õ±…Ñ½ÉÌˆÍÑå±”ô‰‰…­É½Õ¹éÙ…È ´µ½±½Èµ‰œ¤ˆø(€€€€ñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•Èˆø(€€€€€€ñ ÈøñÍÙœ±…ÍÌô‰¥½¸ˆ…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆÍÑå±”ô‰½±½ÈéÙ…È ´µ½±½Èµ…•¹Ð¤ˆøñÕÍ”¡É•˜ôˆ¥½¸µÑ…É•Ðˆ¼øð½ÍÙœøM¥¹±”µµ…É¼…±Õ±…Ñ½ÉÌð½ Èø(€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¥¹ÑÉ¼ˆù±É•…‘ä­¹½Üå½ÕÈ¹Õµ‰•ÉÌ°½È©ÕÍÐÝ…¹Ð½¹”µ…É¼‘¥…±•¥¸ü… ½˜Ñ¡•Í”ÕÍ•ÌÑ¡”Í…µ”É•™•É•¹”É…¹•Ì…ÌÑ¡”™Õ±°…±Õ±…Ñ½È…‰½Ù”ƒŠPÍ•”Ñ¡”€ñ„¡É•˜ô‰Í½ÕÉ•Ì¹¡Ñµ°ˆùM½ÕÉ•ÌÁ…”ð½„ø™½È¥Ñ…Ñ¥½¹Ì¸ð½Àø((€€€€€€ñ‘¥Ø±…ÍÌô‰…ÉµÉ¥ˆÍÑå±”ô‰…±¥¸µ¥Ñ•µÌéÍÑ…ÉÐìˆø(€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á…¹•°ˆø(€€€€€€€€€€ñÍÁ…¸±…ÍÌô‰¥½¸µ‰…‘”ÁÉ½Ñ•¥¸ˆøñÍÙœ±…ÍÌô‰¥½¸ˆ…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆøñÕÍ”¡É•˜ôˆ¥½¸µÁÉ½Ñ•¥¸ˆ¼øð½ÍÙœøð½ÍÁ…¸ø(€€€€€€€€€€ñ Ì¥ô‰ÁÉ½Ñ•¥¸µ…±Õ±…Ñ½ÈˆùAÉ½Ñ•¥¸…±Õ±…Ñ½Èð½ Ìø(€€€€€€€€€€ñ™½É´¥ô‰ÁÉ½Ñ•¥¸µ…±Œµ™½É´ˆø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰Õ¹¥ÑÌµÑ½±”ˆø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ±…ÍÌô‰…Ñ¥Ù”ˆ‘…Ñ„µÁŒµÕ¹¥Ðô‰±ˆˆù±ˆð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ‘…Ñ„µÁŒµÕ¹¥Ðô‰­œˆù­œð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰™¥•±ˆø(€€€€€€€€€€€€€€ñ±…‰•°™½Èô‰ÁÉ½Ñ•¥¸µÝ•¥¡Ðˆù	½‘äÝ•¥¡Ð€ ñÍÁ…¸¥ô‰ÁÉ½Ñ•¥¸µÝ•¥¡ÐµÕ¹¥Ðˆù±ˆð½ÍÁ…¸ø¤ð½±…‰•°ø(€€€€€€€€€€€€€€ñ¥¹ÁÕÐÑåÁ”ô‰¹Õµ‰•Èˆ¥ô‰ÁÉ½Ñ•¥¸µÝ•¥¡Ðˆµ¥¸ôˆÄˆÍÑ•ÀôˆÀ¸ÄˆÙ…±Õ”ôˆÄÜÀˆÉ•ÅÕ¥É•ø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰™¥•±ˆø(€€€€€€€€€€€€€€ñ±…‰•°™½Èô‰ÁÉ½Ñ•¥¸µ½…°ˆù½…°ð½±…‰•°ø(€€€€€€€€€€€€€€ñÍ•±•Ð¥ô‰ÁÉ½Ñ•¥¸µ½…°ˆø(€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰Í•‘•¹Ñ…Éäˆù•¹•É…°¡•…±Ñ €¡Í•‘•¹Ñ…Éä¤ð½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰…Ñ¥Ù”ˆÍ•±•Ñ•ùI•É•…Ñ¥½¹…±±ä…Ñ¥Ù”ð½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰µÕÍ±”ˆù	Õ¥±‘¥¹œ½ÈÁÉ•Í•ÉÙ¥¹œµÕÍ±”ð½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€ð½Í•±•Ðø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€ñ‘¥Ø¥ô‰ÁÉ½Ñ•¥¸µ…±Œµ•ÉÉ½Èˆ±…ÍÌô‰•ÉÉ½ÈµµÍœˆ¡¥‘‘•¸øð½‘¥Øø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ±…ÍÌô‰…±ŒµÍÕ‰µ¥Ðˆù…±Õ±…Ñ”ð½‰ÕÑÑ½¸ø(€€€€€€€€€€ð½™½É´ø(€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•ÍÕ±ÑÌ•µÁÑäˆ¥ô‰ÁÉ½Ñ•¥¸µ…±ŒµÉ•ÍÕ±ÑÌˆÍÑå±”ô‰µ…É¥¸µÑ½ÀèÅÉ•´íµ¥¸µ¡•¥¡Ðé…ÕÑ¼íÁ…‘‘¥¹œèÄ¸ÈÕÉ•´ìˆø(€€€€€€€€€€€¹Ñ•Èå½ÕÈÝ•¥¡ÐÑ¼Í•”å½ÕÈÁÉ½Ñ•¥¸Ñ…É•Ð¸(€€€€€€€€€€ð½‘¥Øø(€€€€€€€€ð½‘¥Øø((€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á…¹•°ˆø(€€€€€€€€€€ñÍÁ…¸±…ÍÌô‰¥½¸µ‰…‘”™…ÐˆøñÍÙœ±…ÍÌô‰¥½¸ˆ…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆøñÕÍ”¡É•˜ôˆ¥½¸µ™…Ðˆ¼øð½ÍÙœøð½ÍÁ…¸ø(€€€€€€€€€€ñ Ì¥ô‰™…Ðµ…±Õ±…Ñ½Èˆù…Ð…±Õ±…Ñ½Èð½ Ìø(€€€€€€€€€€ñ™½É´¥ô‰™…Ðµ™½É´ˆø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰™¥•±ˆø(€€€€€€€€€€€€€€ñ±…‰•°™½Èô‰…±½É¥•Ìˆù…¥±ä…±½É¥”Ñ…É•Ðð½±…‰•°ø(€€€€€€€€€€€€€€ñ¥¹ÁÕÐÑåÁ”ô‰¹Õµ‰•Èˆ¥ô‰…±½É¥•Ìˆ¹…µ”ô‰…±½É¥•Ìˆµ¥¸ôˆàÀÀˆµ…àôˆàÀÀÀˆÍÑ•ÀôˆÄÀˆÙ…±Õ”ôˆÈÈÀÀˆÉ•ÅÕ¥É•ø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€ñÀ±…ÍÌô‰¡¥¹Ðˆù½¸Ð­¹½Üå½ÕÈ…±½É¥”Ñ…É•ÐüUÍ”Ñ¡”™Õ±°…±Õ±…Ñ½È…‰½Ù”°½ÈÑ¡”€ñ„¡É•˜ô‰Ñ‘•”µÙÌµ‰µÈ¹¡Ñµ°ˆù	5HÙÌ¸QÕ¥‘”ð½„ø¸ð½Àø(€€€€€€€€€€€€ñ‘¥Ø¥ô‰™…Ðµ•ÉÉ½Èˆ±…ÍÌô‰•ÉÉ½ÈµµÍœˆ¡¥‘‘•¸øð½‘¥Øø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ±…ÍÌô‰…±ŒµÍÕ‰µ¥Ðˆù…±Õ±…Ñ”ð½‰ÕÑÑ½¸ø(€€€€€€€€€€ð½™½É´ø(€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•ÍÕ±ÑÌ•µÁÑäˆ¥ô‰™…ÐµÉ•ÍÕ±ÑÌˆÍÑå±”ô‰µ…É¥¸µÑ½ÀèÅÉ•´íµ¥¸µ¡•¥¡Ðé…ÕÑ¼íÁ…‘‘¥¹œèÄ¸ÈÕÉ•´ìˆø(€€€€€€€€€€€¹Ñ•Èå½ÕÈ‘…¥±ä…±½É¥•ÌÑ¼Í•”å½ÕÈÉ•½µµ•¹‘•™…Ð¥¹Ñ…­”¸(€€€€€€€€€€ð½‘¥Øø(€€€€€€€€ð½‘¥Øø((€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á…¹•°ˆø(€€€€€€€€€€ñÍÁ…¸±…ÍÌô‰¥½¸µ‰…‘”…É‰ÌˆøñÍÙœ±…ÍÌô‰¥½¸ˆ…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆøñÕÍ”¡É•˜ôˆ¥½¸µ…É‰Ìˆ¼øð½ÍÙœøð½ÍÁ…¸ø(€€€€€€€€€€ñ Ì¥ô‰…Éˆµ…±Õ±…Ñ½Èˆù…É‰½¡å‘É…Ñ”…±Õ±…Ñ½Èð½ Ìø(€€€€€€€€€€ñ™½É´¥ô‰…Éˆµ…±Œµ™½É´ˆø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰™¥•±ˆø(€€€€€€€€€€€€€€ñ±…‰•°™½Èô‰…Éˆµ…±½É¥•Ìˆù…¥±ä…±½É¥”Ñ…É•Ðð½±…‰•°ø(€€€€€€€€€€€€€€ñ¥¹ÁÕÐÑåÁ”ô‰¹Õµ‰•Èˆ¥ô‰…Éˆµ…±½É¥•Ìˆµ¥¸ôˆàÀÀˆµ…àôˆàÀÀÀˆÍÑ•ÀôˆÄÀˆÙ…±Õ”ôˆÈÈÀÀˆÉ•ÅÕ¥É•ø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€ñÀ±…ÍÌô‰¡¥¹Ðˆù½È„Ñ…É•Ð‰…Í•½¸Ý¡…ÐÌ±•™Ð…™Ñ•ÈÁÉ½Ñ•¥¸…¹™…Ð°ÕÍ”Ñ¡”™Õ±°…±Õ±…Ñ½È…‰½Ù”¸ð½Àø(€€€€€€€€€€€€ñ‘¥Ø¥ô‰…Éˆµ…±Œµ•ÉÉ½Èˆ±…ÍÌô‰•ÉÉ½ÈµµÍœˆ¡¥‘‘•¸øð½‘¥Øø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ±…ÍÌô‰…±ŒµÍÕ‰µ¥Ðˆù…±Õ±…Ñ”ð½‰ÕÑÑ½¸ø(€€€€€€€€€€ð½™½É´ø(€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•ÍÕ±ÑÌ•µÁÑäˆ¥ô‰…Éˆµ…±ŒµÉ•ÍÕ±ÑÌˆÍÑå±”ô‰µ…É¥¸µÑ½ÀèÅÉ•´íµ¥¸µ¡•¥¡Ðé…ÕÑ¼íÁ…‘‘¥¹œèÄ¸ÈÕÉ•´ìˆø(€€€€€€€€€€€¹Ñ•Èå½ÕÈ‘…¥±ä…±½É¥•ÌÑ¼Í•”å½ÕÈÉ•½µµ•¹‘•…Éˆ¥¹Ñ…­”¸(€€€€€€€€€€ð½‘¥Øø(€€€€€€€€ð½‘¥Øø(€€€€€€ð½‘¥Øø(€€€€ð½‘¥Øø(€€ð½Í•Ñ¥½¸ø((€€ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆø(€€€€ñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•Èˆø(€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¥¹ÑÉ¼ˆùQ¡•Í”…±Õ±…Ñ½ÉÌÁÉ½Ù¥‘”•ÍÑ¥µ…Ñ•Ì™½È¡•…±Ñ¡ä…‘Õ±ÑÌ…¹…É”¹½Ð„ÍÕ‰ÍÑ¥ÑÕÑ”™½È¥¹‘¥Ù¥‘Õ…±¥é•…‘Ù¥”™É½´„‘½Ñ½È½ÈÉ•¥ÍÑ•É•‘¥•Ñ¥Ñ¥…¸°•ÍÁ•¥…±±ä¥˜å½ÔÉ”ÁÉ•¹…¹Ð°¡…Ù”„µ•‘¥…°½¹‘¥Ñ¥½¸°½È¡…Ù”„¡¥ÍÑ½Éä½˜‘¥Í½É‘•É••…Ñ¥¹œ¸ð½Àø(€€€€ð½‘¥Øø(€€ð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°•‘˜á˜È°˜Ý˜Í”à¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•Ü½µÁ…É¥Í½¸Ñ½½°ð½Àøñ Èù½µÁ…É”ÑÝ¼9ÕÑÉ¥Ñ¥½¸…ÑÌ±…‰•±Ì™…¥É±äð½ ÈøñÀùM•”Ù…±Õ•ÌÁ•È±¥ÍÑ•Í•ÉÙ¥¹œ…¹Á•È€ÄÀÀ…±½É¥•Ì°Á±ÕÌ…¥±äY…±Õ”½¹Ñ•áÐ™½È™¥‰•È°…‘‘•ÍÕ…È°…¹Í½‘¥Õ·ŠQÝ¥Ñ¡½ÕÐ„Í¥µÁ±¥ÍÑ¥Œ™½½Í½É”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰¹ÕÑÉ¥Ñ¥½¸µ±…‰•°µ½µÁ…É¥Í½¸µÑ½½°¹¡Ñµ°ˆù½µÁ…É”ÑÝ¼±…‰•±Ìð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÍ•…É¡…‰±”É•™•É•¹”ð½Àøñ Èù¥¹Ù¥Ñ…µ¥¹Ì…¹µ¥¹•É…±Ì‰ä™Õ¹Ñ¥½¸½È™½½ð½ ÈøñÀùQ¡”µ¥É½¹ÕÑÉ¥•¹Ð™¥¹‘•È½¹¹•ÑÌ€ÈØ¹ÕÑÉ¥•¹Ð…É‘ÌÑ¼•Ù¥‘•¹”µ…Ý…É”Õ¥‘•ÌÝ¥Ñ¡½ÕÐÉ•½µµ•¹‘¥¹œ„ÍÕÁÁ±•µ•¹Ð‘½Í”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰µ¥É½¹ÕÑÉ¥•¹Ðµ™¥¹‘•È¹¡Ñµ°ˆùM•…É µ¥É½¹ÕÑÉ¥•¹ÑÌð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•ÈˆøñÀøñÍÑÉ½¹œù9••„‘¥™™•É•¹ÐÉ•Í½ÕÉ”üð½ÍÑÉ½¹œø€ñ„¡É•˜ô‰Í•…É ¹¡Ñµ°ýÑåÁ”õÑ½½±ÌˆùM•…É …±°Ñ½½±Ìð½„ø½È‰É½ÝÍ”•Ù•Éä…ÉÑ¥±”°½±±•Ñ¥½¸°…¹…µ”¸ð½Àøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹è••˜Õ˜Äˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•Ü…É•¥Ù•Èµ™É¥•¹‘±äÑ½½°ð½Àøñ Èù=±‘•È…‘Õ±Ðµ•…°ÍÕÁÁ½ÉÐÁ±…¹¹•Èð½ ÈøñÀùQÕÉ¸Í•±•Ñ•…ÁÁ•Ñ¥Ñ”°…•ÍÌ°½½­¥¹œ°¡•Ý¥¹œ°ÍÝ…±±½Ý¥¹œ°¡å‘É…Ñ¥½¸°¥Í½±…Ñ¥½¸°½ÈÝ•¥¡Ð‰…ÉÉ¥•ÉÌ¥¹Ñ¼„™½ÕÍ•ÁÉ¥¹Ñ…‰±”Á±…¸¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰½±‘•Èµ…‘Õ±Ðµµ•…°µÍÕÁÁ½ÉÐµÁ±…¹¹•È¹¡Ñµ°ˆù	Õ¥±„ÍÕÁÁ½ÉÐÁ±…¸ð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹è••˜Õ˜Äˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁ…¹ÑÉäÑ½½°ð½Àøñ Èù	Õ¥±µ•…±Ì™É½´Ý¡…Ð¥Ì…±É•…‘ä…Ù…¥±…‰±”ð½ ÈøñÀùM•±•ÐÁÉ½Ñ•¥¹Ì°‰…Í•Ì°ÁÉ½‘Õ”°…¹™±…Ù½È¥¹É•‘¥•¹ÑÌÑ¼•¹•É…Ñ”™±•á¥‰±”½µ‰¥¹…Ñ¥½¹Ì…¹Ñ¡”Íµ…±±•ÍÐÕÍ•™Õ°É½•Éä…À¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰‰Õ‘•Ðµµ•…°µ‰Õ¥±‘•È¹¡Ñµ°ˆù=Á•¸‰Õ‘•Ðµ•…°‰Õ¥±‘•Èð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸øñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°”Ý˜Õ˜Ì°••˜Ý•˜¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÑÉ…¹ÍÁ…É•¹Ð™¥•±Ñ½½°ð½Àøñ ÈùÍÑ¥µ…Ñ”½‰Í•ÉÙ•ÍÝ•…ÐÉ…Ñ”ð½ ÈøñÀù½µ‰¥¹”‰•™½É”µ…¹µ…™Ñ•È‰½‘äµ…ÍÌ°‘É¥¹¬Ù½±Õµ”°ÕÉ¥¹”°…¹Ñ¥µ”¸Q¡”É•ÍÕ±ÐÍ¡½ÝÌ¥ÑÌµ…Ñ …¹ÍÑ…åÌ¡½¹•ÍÐ…‰½ÕÐÝ¡…Ð¥Ð…¹¹½ÐÁÉ•ÍÉ¥‰”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰ÍÝ•…ÐµÉ…Ñ”µ…±Õ±…Ñ½È¹¡Ñµ°ˆù=Á•¸ÍÝ•…ÐµÉ…Ñ”…±Õ±…Ñ½Èð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°˜É••˜Ø°•…˜Ñ•˜¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•Ü™…µ¥±äÁ±…¹¹¥¹œÑ½½°ð½Àøñ Èù	Õ¥±„Í¡½½°±Õ¹ Ñ¡…Ð…¸ÍÕÉÙ¥Ù”Ñ¡”Í¡½½°‘…äð½ ÈøñÀù¡½½Í”™…µ¥±¥…È½µÁ½¹•¹ÑÌ°Í•”Ñ¡”É½±•ÌÑ¡•ä½Ù•È°…¹É•…Ñ”„¡•­±¥ÍÐ™½È…•ÍÌ°½±ÍÑ½É…”°±•…É¹¥¹œ™½½‘Ì°…¹…±±•ÉäÉÕ±•Ì¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰Í¡½½°µ±Õ¹ µ‰Õ¥±‘•È¹¡Ñµ°ˆù=Á•¸Í¡½½°±Õ¹ ‰Õ¥±‘•Èð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°˜Ù••”Ü°•…˜Õ•˜¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”Ý½É­Í¡••Ðð½Àøñ ÈùQÕÉ¸Í…ÑÑ•É•‘¥•ÍÑ¥Ù”ÍåµÁÑ½µÌ¥¹Ñ¼„ÕÍ•™Õ°Ù¥Í¥ÐÍÕµµ…Éäð½ ÈøñÀùI•½ÉÑ¥µ¥¹œ°Í•Ù•É¥Ñä°‰½Ý•°Á…ÑÑ•É¸°™½½°µ•‘¥¥¹•Ì°Í±••À°ÍÑÉ•ÍÌ°…¹É•™±…Ì¸¹ÑÉ¥•ÌÍÑ…ä½¹±ä¥¸Ñ¡”½Á•¸Á…”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰‘¥•ÍÑ¥Ù”µÁ…ÑÑ•É¸µÝ½É­Í¡••Ð¹¡Ñµ°ˆù=Á•¸‘¥•ÍÑ¥Ù”Ý½É­Í¡••Ðð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°•‘˜Å˜Ø°•…˜Õ•˜¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÍ•¹…É¥¼µ‰…Í•Í…™•Ñä¡•±Á•Èð½Àøñ ÈùÁÁ±äÑ¡”½ÉÉ•ÐÍÑ½É…”ÉÕ±”ð½ ÈøñÀù¡½½Í”½Õ¹Ñ•ÈÑ¥µ”°É•™É¥•É…Ñ•±•™Ñ½Ù•ÉÌ°Ñ¡…Ý¥¹œ°½È„Á½Ý•È½ÕÑ…”¸Q¡”¡•±Á•È•áÁ±…¥¹ÌÑ¡”É•±•Ù…¹ÐÉÕ±”Ý¥Ñ¡½ÕÐÁÉ•Ñ•¹‘¥¹œÍµ•±°…¸É•Á±…”µ¥ÍÍ¥¹œ¡¥ÍÑ½Éä¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰™½½µÍÑ½É…”µ‘•¥Í¥½¸µ¡•±Á•È¹¡Ñµ°ˆù=Á•¸ÍÑ½É…”‘•¥Í¥½¸¡•±Á•Èð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°˜Ý••”à°”å˜Õ•˜¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”ÁÉ•¹…Ñ…°Ý½É­Í¡••Ðð½Àøñ ÈùQÕÉ¸„ÍÕÁÁ±•µ•¹Ð±…‰•°¥¹Ñ¼‰•ÑÑ•ÈÅÕ•ÍÑ¥½¹Ìð½ ÈøñÀù¡•¬Ý¡…ÐÑ¡”Á…¹•°±¥ÍÑÌ°™±…œÍ•ÉÙ¥¹œµÍ¥é”Õ¹•ÉÑ…¥¹Ñä…¹½É…¹¥é”Ñ½Á¥Ì™½ÈÁÉ•¹…Ñ…°…É”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰ÁÉ•¹…Ñ…°µÍÕÁÁ±•µ•¹Ðµ±…‰•°µ¡•­•È¹¡Ñµ°ˆù=Á•¸±…‰•°¡•­•Èð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°˜Ñ•”à°”á˜Ñ•˜¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•Ü±…‰•°Ñ½½°ð½Àøñ Èù½µÁ…É”Ñ¡”Í½‘¥Õ´¥¸å½ÕÈ…ÑÕ…°Á½ÉÑ¥½¹Ìð½ ÈøñÀù9½Éµ…±¥é”ÑÝ¼ÁÉ½‘ÕÑÌ‰äÍ•ÉÙ¥¹Ì•…Ñ•¸…¹Í•”Ñ¡•¥ÈÍ¡…É”½˜Ñ¡”•¹•É…°…¥±äY…±Õ”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰Í½‘¥Õ´µ±…‰•°µ½µÁ…É¥Í½¸µÑ½½°¹¡Ñµ°ˆù½µÁ…É”Í½‘¥Õ´±…‰•±Ìð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°˜Õ•‘˜Ð°”å˜Õ•˜¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”Ù¥Í¥ÐÁ±…¹¹•Èð½Àøñ ÈùQÕÉ¸µ¥‘±¥™”¹ÕÑÉ¥Ñ¥½¸½¹•É¹Ì¥¹Ñ¼™½ÕÍ•ÅÕ•ÍÑ¥½¹Ìð½ ÈøñÀù=É…¹¥é”ÍåµÁÑ½µÌ°‰½¹”°µÕÍ±”°ÍÕÁÁ±•µ•¹Ð…¹…É‘¥½µ•Ñ…‰½±¥ŒÑ½Á¥ÌÝ¥Ñ¡½ÕÐÍÑ½É¥¹œå½ÕÈ•¹ÑÉ¥•Ì¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰µ¥‘±¥™”µ¹ÕÑÉ¥Ñ¥½¸µÙ¥Í¥ÐµÁ±…¹¹•È¹¡Ñµ°ˆù	Õ¥±„Ù¥Í¥Ð±¥ÍÐð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°••˜Õ˜à°•‘˜Õ•ˆ¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”±…‰•°Ñ½½°ð½Àøñ Èù…±Õ±…Ñ”…É‰½¡å‘É…Ñ”¥¸Ñ¡”Á½ÉÑ¥½¸å½ÔÝ¥±°•…Ðð½ ÈøñÀù5Õ±Ñ¥Á±äÑ½Ñ…°…É‰½¡å‘É…Ñ”‰äÍ•ÉÙ¥¹ÌÝ¥Ñ¡½ÕÐÍÕ•ÍÑ¥¹œ¥¹ÍÕ±¥¸½ÈÁ•ÉÍ½¹…°Ñ…É•ÑÌ¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰…É‰½¡å‘É…Ñ”µ±…‰•°µÁ½ÉÑ¥½¸µÑ½½°¹¡Ñµ°ˆù=Á•¸…É‰½¡å‘É…Ñ”Ñ½½°ð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°•‘˜Ñ˜Ø°˜É˜Í”à¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”É•¹…°±…‰•°½É…¹¥é•Èð½Àøñ ÈùQÕÉ¸Í½‘¥Õ´°Á½Ñ…ÍÍ¥Õ´…¹Á¡½ÍÁ¡…Ñ”±Õ•Ì¥¹Ñ¼ÅÕ•ÍÑ¥½¹Ìð½ ÈøñÀù=É…¹¥é”„Á…­…”±…‰•°Ý¥Ñ¡½ÕÐ…ÍÍ¥¹¥¹œ„Á•ÉÍ½¹…°±¥µ¥Ð½È™½½µÍ…™•ÑäÍ½É”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰É•¹…°µ±…‰•°µÅÕ•ÍÑ¥½¸µ‰Õ¥±‘•È¹¡Ñµ°ˆù	Õ¥±É•¹…°±…‰•°ÅÕ•ÍÑ¥½¹Ìð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°˜Õ••”Ü°••˜Õ”ä¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”Ù¥Í¥ÐÁ±…¹¹•Èð½Àøñ Èù=É…¹¥é”±¥Ù•ÈÑ•ÍÑÌ°ÁÉ½‘ÕÑÌ…¹¹ÕÑÉ¥Ñ¥½¸ÅÕ•ÍÑ¥½¹Ìð½ ÈøñÀùÉ•…Ñ”„™½ÕÍ•…ÁÁ½¥¹Ñµ•¹Ð±¥ÍÐÝ¥Ñ¡½ÕÐ‘¥…¹½Í¥¹œ„…ÕÍ”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰±¥Ù•Èµ¡•…±Ñ µÙ¥Í¥ÐµÅÕ•ÍÑ¥½¸µ‰Õ¥±‘•È¹¡Ñµ°ˆù	Õ¥±±¥Ù•Èµ¡•…±Ñ ÅÕ•ÍÑ¥½¹Ìð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°˜Ý•••”°˜Ñ˜Á”à¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”¥É½¸Á±…¹¹•Èð½Àøñ Èù=É…¹¥é”±…‰•±Ì°Ñ•ÍÐÉ•ÍÕ±ÑÌ…¹‰±½½µ±½ÍÌÅÕ•ÍÑ¥½¹Ìð½ ÈøñÀù	Õ¥±…¸…ÁÁ½¥¹Ñµ•¹Ð±¥ÍÐÝ¥Ñ¡½ÕÐ…ÍÍ¥¹¥¹œ„‘¥…¹½Í¥Ì½È‘½Í”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰¥É½¸µ±…‰•°µ…¹µÑ•ÍÐµÅÕ•ÍÑ¥½¸µ‰Õ¥±‘•È¹¡Ñµ°ˆù	Õ¥±¥É½¸ÅÕ•ÍÑ¥½¹Ìð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡ÐˆÍÑå±”ô‰‰…­É½Õ¹é±¥¹•…ÈµÉ…‘¥•¹Ð ÄÌÕ‘•œ°••˜Å˜Ü°˜Á˜Õ•„¤ˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•È½¹Ñ•¹ÐµÉ¥ˆøñ‘¥ØøñÀ±…ÍÌô‰•å•‰É½Üˆù9•ÜÁÉ¥Ù…Ñ”Ñ¡åÉ½¥É½ÕÑ¥¹”Á±…¹¹•Èð½Àøñ Èù=É…¹¥é”µ•‘¥…Ñ¥½¸Ñ¥µ¥¹œ…¹¥¹Ñ•É…Ñ¥½¸ÅÕ•ÍÑ¥½¹Ìð½ ÈøñÀùI•Ù¥•Ü½™™•”°…±¥Õ´°¥É½¸°‰¥½Ñ¥¸…¹É½ÕÑ¥¹”¡…¹•ÌÝ¥Ñ¡½ÕÐ…±Ñ•É¥¹œ„‘½Í”¸ð½Àøð½‘¥Øøñ‘¥Øøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰Ñ¡åÉ½¥µµ•‘¥…Ñ¥½¸µÉ½ÕÑ¥¹”µÅÕ•ÍÑ¥½¸µ‰Õ¥±‘•È¹¡Ñµ°ˆù	Õ¥±Ñ¡åÉ½¥ÅÕ•ÍÑ¥½¹Ìð½„øð½‘¥Øøð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•Èˆøñ ÈùA=LÙ¥Í¥ÐÅÕ•ÍÑ¥½¸‰Õ¥±‘•Èð½ ÈøñÀùAÉ¥Ù…Ñ•±ä½É…¹¥é”‘¥…¹½Í¥Ì°ÍÉ••¹¥¹œ°µ•‘¥¥¹”°ÍÕÁÁ±•µ•¹Ð…¹™•ÉÑ¥±¥ÑäÅÕ•ÍÑ¥½¹Ì‰•™½É”…¸…ÁÁ½¥¹Ñµ•¹Ð¸ð½Àøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰Á½ÌµÙ¥Í¥ÐµÅÕ•ÍÑ¥½¸µ‰Õ¥±‘•È¹¡Ñµ°ˆù	Õ¥±„Ù¥Í¥Ð¹½Ñ”ð½„øð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•Èˆøñ Èù¹‘½µ•ÑÉ¥½Í¥ÌÙ¥Í¥ÐÅÕ•ÍÑ¥½¸‰Õ¥±‘•Èð½ ÈøñÀùAÉ¥Ù…Ñ•±ä½É…¹¥é”ÍåµÁÑ½µÌ°¥µ…¥¹œ°ÑÉ•…Ñµ•¹Ð°™•ÉÑ¥±¥Ñä°‰½Ý•°…¹¹ÕÑÉ¥Ñ¥½¸ÅÕ•ÍÑ¥½¹Ì¸ð½Àøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰•¹‘½µ•ÑÉ¥½Í¥ÌµÙ¥Í¥ÐµÅÕ•ÍÑ¥½¸µ‰Õ¥±‘•È¹¡Ñµ°ˆù	Õ¥±„Ù¥Í¥Ð¹½Ñ”ð½„øð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•Èˆøñ Èù	½¹”µ¡•…±Ñ Ù¥Í¥ÐÁ±…¹¹•Èð½ ÈøñÀù=É…¹¥é”a°™É…ÑÕÉ”°…±¥Õ´°Ù¥Ñ…µ¥¸°µ•‘¥¥¹”°‘•¹Ñ…°…¹™…±°µÉ¥Í¬ÅÕ•ÍÑ¥½¹Ì¸ð½Àøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰‰½¹”µ¡•…±Ñ µÙ¥Í¥ÐµÁ±…¹¹•È¹¡Ñµ°ˆù	Õ¥±„Ù¥Í¥Ð¹½Ñ”ð½„øð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•Èˆøñ Èù5¥É…¥¹”Á…ÑÑ•É¸‘¥…Éäð½ ÈøñÀù=É…¹¥é”ÍåµÁÑ½µÌ°µ•…±Ì°™±Õ¥‘Ì°…™™•¥¹”…¹ÑÉ•…Ñµ•¹ÐÉ•ÍÁ½¹Í”ÁÉ¥Ù…Ñ•±ä¸ð½Àøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰µ¥É…¥¹”µÁ…ÑÑ•É¸µ‘¥…Éä¹¡Ñµ°ˆù	Õ¥±„Á…ÑÑ•É¸ÍÕµµ…Éäð½„øð½‘¥Øøð½Í•Ñ¥½¸ø(ñÍ•Ñ¥½¸±…ÍÌô‰Ñ¥¡Ðˆøñ‘¥Ø±…ÍÌô‰½¹Ñ…¥¹•Èˆøñ ÈùI•ÍÑ…ÕÉ…¹Ðµ•…°™¥¹‘•Èð½ ÈøñÀù¥±Ñ•ÈÕÉÉ•¹Ðµ…É¼Í¹…ÁÍ¡½ÑÌ‰ä¡…¥¸…¹‘¥•Ñ…ÉäÁÉ¥½É¥Ñä¸ð½Àøñ„±…ÍÌô‰‰Ñ¸‰Ñ¸µÁÉ¥µ…Éäˆ¡É•˜ô‰É•ÍÑ…ÕÉ…¹Ðµµ•…°µ™¥¹‘•È¹¡Ñµ°ˆù¥¹„É•ÍÑ…ÕÉ…¹Ðµ•…°ð½„øð½‘¥Øøð½Í•Ñ¥½¸ø(ð½µ…¥¸ø((€€ñ™½½Ñ•È±…ÍÌô‰µ½‘•É¸µ™½½Ñ•Èˆøñ‘¥Øøñ„±…ÍÌô‰µ½‘•É¸µ‰É…¹™½½Ñ•Èµ‰É…¹ˆ¡É•˜ô‰¥¹‘•à¹¡Ñµ°ˆøñÍÁ…¸±…ÍÌô‰‰É…¹µµ…É¬ˆ…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆùð½ÍÁ…¸øñÍÁ…¸ù•Ñ5…É½ÌñÍÁ…¸±…ÍÌô‰‰É…¹µ‘½Ðˆø¸ð½ÍÁ…¸øð½ÍÁ…¸øð½„øñÀù±•…È¹ÕÑÉ¥Ñ¥½¸Ñ½½±Ì™½ÈÉ•…°‘•¥Í¥½¹Ì¸%¹‘•Á•¹‘•¹Ð°•Ù¥‘•¹”µ±•…¹©Õ‘µ•¹Ðµ™É•”¸ð½Àøð½‘¥Øøñ‘¥ØøñÍÑÉ½¹œùáÁ±½É”ð½ÍÑÉ½¹œøñ„¡É•˜ô‰¡•…±Ñ¡äµ™…ÍÐµ™½½¹¡Ñµ°ˆù!•…±Ñ¡ä™…ÍÐ™½½ð½„øñ„¡É•˜ô‰…±Õ±…Ñ½ÉÌ¹¡Ñµ°ˆù…±Õ±…Ñ½ÉÌð½„øñ„¡É•˜ô‰…ÉÑ¥±•Ì¹¡Ñµ°ˆùÉÑ¥±•Ìð½„øñ„¡É•˜ô‰ÅÕ¥è¹¡Ñµ°ˆùEÕ¥éé•Ì€™…µÀì…µ•Ìð½„øð½‘¥Øøñ‘¥ØøñÍÑÉ½¹œùI•™•É•¹”ð½ÍÑÉ½¹œøñ„¡É•˜ô‰±½ÍÍ…Éä¹¡Ñµ°ˆù±½ÍÍ…Éäð½„øñ„¡É•˜ô‰Í½ÕÉ•Ì¹¡Ñµ°ˆùM½ÕÉ•Ìð½„øñ„¡É•˜ô‰•‘¥Ñ½É¥…°µÁ½±¥ä¹¡Ñµ°ˆù‘¥Ñ½É¥…°Á½±¥äð½„øð½‘¥Øøñ‘¥ØøñÍÑÉ½¹œù½µÁ…¹äð½ÍÑÉ½¹œøñ„¡É•˜ô‰…‰½ÕÐ¹¡Ñµ°ˆù‰½ÕÐð½„øñ„¡É•˜ô‰ÁÉ¥Ù…ä¹¡Ñµ°ˆùAÉ¥Ù…äð½„øñ„¡É•˜ô‰½¹Ñ…Ð¹¡Ñµ°ˆù½¹Ñ…Ðð½„øð½‘¥ØøñÍµ…±°û
+¤€ÈÀÈØ•Ñ5…É½Ì¹¹•Ðƒ
+Ü‘Õ…Ñ¥½¹…°¥¹™½Éµ…Ñ¥½¸°¹½Ð¥¹‘¥Ù¥‘Õ…±¥é•µ•‘¥…°…‘Ù¥”¸ð½Íµ…±°øð½™½½Ñ•Èø((ñÍÉ¥ÁÐÍÉŒô‰©Ì½µ…¥¸¹©ÌýØôÈÀÈØÀàÄÑˆøð½ÍÉ¥ÁÐø(ñÍÉ¥ÁÐÍÉŒô‰©Ì½É•Ù•…°¹©ÌýØôÈÀÈØÀàÄÑˆøð½ÍÉ¥ÁÐø(ñÍÉ¥ÁÐÍÉŒô‰©Ì½…±Õ±…Ñ½ÉÌ¹©ÌýØôÈÀÈØÀàÄÑˆøð½ÍÉ¥ÁÐø(ñÍÉ¥ÁÐÍÉŒô‰©Ì½…‘Ì¹©ÌýØôÈÀÈØÀàÄÑˆøð½ÍÉ¥ÁÐø(ð½‰½‘äø(ð½¡Ñµ°ø(
