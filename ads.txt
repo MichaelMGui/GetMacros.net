@@ -1,7 +1,5 @@
 # ads.txt — Authorized Digital Sellers
 # https://iabtechlab.com/ads-txt/
 #
-# Replace pub-2316153877942502 below with the real AdSense Publisher ID
-# from adsense.google.com once the account is approved (same ID used in
-# tools/generate_articles.py -> ADSENSE_CLIENT).
+# Google AdSense publisher account for GetMacros.net.
 google.com, pub-2316153877942502, DIRECT, f08c47fec0942fa0
