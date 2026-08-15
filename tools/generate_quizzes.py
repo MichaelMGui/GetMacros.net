@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generates the quiz pages for GetMacros.net. Run: python3 tools/generate_quizzes.py"""
 import json
+from html import escape as esc_html
 import os
 import sys
 
@@ -543,8 +544,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{title} | GetMacros.net</title>
-<meta name="description" content="{meta}">
+<title>{esc_html(title)} | GetMacros.net</title>
+<meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
@@ -579,6 +580,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/confetti.js?v={ASSET_VERSION}"></script>
 <script src="js/quiz.js?v={ASSET_VERSION}"></script>
 <script>

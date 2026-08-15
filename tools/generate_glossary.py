@@ -181,6 +181,7 @@ def build():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>

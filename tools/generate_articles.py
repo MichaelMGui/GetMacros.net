@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260816i"
+ASSET_VERSION = "20260817b"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -251,8 +251,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{title} | GetMacros.net</title>
-<meta name="description" content="{meta}">
+<title>{esc_html(title)} | GetMacros.net</title>
+<meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">\n<meta name="google-adsense-account" content="{ADSENSE_CLIENT}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
@@ -298,6 +298,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -784,7 +785,7 @@ add(
 add(
     "micronutrients-vs-macronutrients",
     "Micronutrients vs. Macronutrients",
-    "The difference between macronutrients (protein, fat, carbs) and micronutrients (vitamins, minerals), and why hitting your macros doesn't guarantee good nutrition.",
+    "The difference between macronutrients (protein, fat, carbs) and micronutrients (vitamins, minerals), and why hitting macros is not the whole picture.",
     "general", "Nutrition Basics", "Micronutrients vs. macronutrients: what's the difference",
     "Macros give you energy and building blocks. Micros keep the machinery running — and you need both.",
     sec('''      <h2>Two different jobs</h2>
@@ -906,7 +907,7 @@ add(
 
 add(
     "ketogenic-diet-explained",
-    "Keto Diet Explained: Macros, Benefits &amp; Risks",
+    "Keto Diet Explained",
     "How the ketogenic diet's macro split works, what ketosis actually is, and who should be cautious about trying it.",
     "carbs", "Carbohydrate Guide", "The ketogenic diet explained: macros, benefits, and risks",
     "Keto isn't just \"low carb\" — it's a specific macro ratio designed to push your body into a distinct metabolic state.",
@@ -1197,6 +1198,7 @@ def build_hub():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -1243,7 +1245,7 @@ def build_about():
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <title>{title}</title>
-<meta name="description" content="{meta}">
+<meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
@@ -1300,6 +1302,7 @@ def build_about():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -1327,8 +1330,8 @@ def build_privacy():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{title} | GetMacros.net</title>
-<meta name="description" content="{meta}">
+<title>{esc_html(title)} | GetMacros.net</title>
+<meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
@@ -1398,6 +1401,7 @@ def build_privacy():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -1441,8 +1445,8 @@ def build_contact():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{title} | GetMacros.net</title>
-<meta name="description" content="{meta}">
+<title>{esc_html(title)} | GetMacros.net</title>
+<meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
@@ -1493,6 +1497,7 @@ def build_contact():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -1520,8 +1525,8 @@ def build_terms():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{title} | GetMacros.net</title>
-<meta name="description" content="{meta}">
+<title>{esc_html(title)} | GetMacros.net</title>
+<meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
@@ -1591,6 +1596,7 @@ def build_terms():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -1619,8 +1625,8 @@ def build_404():
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <meta name="robots" content="noindex, follow">
-<title>{title} | GetMacros.net</title>
-<meta name="description" content="{meta}">
+<title>{esc_html(title)} | GetMacros.net</title>
+<meta name="description" content="{esc_html(meta)}">
 {seo_meta(title, meta, url, og_type="website")}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
@@ -1658,6 +1664,7 @@ def build_404():
 {FOOTER}
 
 <script src="js/main.js?v={ASSET_VERSION}"></script>
+<script src="js/lang.js?v={ASSET_VERSION}"></script>
 <script src="js/reveal.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -1689,18 +1696,42 @@ SITEMAP_LASTMOD = "2026-08-12"
 
 
 def build_sitemap():
+    """Enumerate every indexable page on disk.
+
+    Many pages are authored outside this generator, so listing only CORE_PAGES
+    and ARTICLES would silently drop them from the sitemap.
+    """
+    import glob as _glob
+
     domain = "https://getmacros.net"
-    urls = [f"{domain}/{p}" for p, _ in CORE_PAGES]
     priorities = {p: pr for p, pr in CORE_PAGES}
+    skip = {"404.html"}
+
+    paths = ["", "es/", "fr/"]
+    for p in sorted(_glob.glob(os.path.join(ROOT, "*.html"))):
+        name = os.path.basename(p)
+        if name in skip or name == "index.html":
+            continue
+        with open(p, encoding="utf-8") as fh:
+            head = fh.read(4000)
+        if "noindex" in head:
+            continue
+        paths.append(name)
+
     entries = []
-    for path, priority in CORE_PAGES:
-        entries.append(f"  <url>\n    <loc>{domain}/{path}</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>{priority}</priority>\n  </url>")
-    for a in ARTICLES:
-        entries.append(f'  <url>\n    <loc>{domain}/{a["slug"]}.html</loc>\n    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n    <priority>0.7</priority>\n  </url>')
-    xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n"
+    for path in paths:
+        pr = priorities.get(path, "0.7")
+        entries.append(
+            f"  <url>\n    <loc>{domain}/{path}</loc>\n"
+            f"    <lastmod>{SITEMAP_LASTMOD}</lastmod>\n"
+            f"    <priority>{pr}</priority>\n  </url>"
+        )
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+           + "\n".join(entries) + "\n</urlset>\n")
     with open(os.path.join(ROOT, "sitemap.xml"), "w") as f:
         f.write(xml)
-    print("wrote", os.path.join(ROOT, "sitemap.xml"), f"({len(CORE_PAGES) + len(ARTICLES)} urls)")
+    print("wrote", os.path.join(ROOT, "sitemap.xml"), f"({len(entries)} urls)")
 
     robots = "User-agent: *\nAllow: /\nSitemap: https://getmacros.net/sitemap.xml\n"
     with open(os.path.join(ROOT, "robots.txt"), "w") as f:
@@ -2159,7 +2190,7 @@ add(
 add(
     "how-much-water-should-you-drink-per-day",
     "How Much Water Should You Drink Per Day?",
-    "Real daily water intake guidance from the National Academies, why \"8 glasses a day\" is a rough rule of thumb rather than a hard number, and how activity changes it.",
+    "Real daily water intake guidance from the National Academies, why \"8 glasses a day\" is a rough rule of thumb, and how activity changes it.",
     "general", "For Students", "How much water should you actually drink per day?",
     "\"Drink 8 glasses a day\" isn't wrong exactly — it's just not based on your actual body, activity level, or climate.",
     sec('''      <h2>The actual guideline</h2>
@@ -2592,7 +2623,7 @@ add(
 
 add(
     "electrolytes-explained",
-    "Electrolytes: Sodium, Potassium &amp; Magnesium",
+    "Electrolytes Explained",
     "What electrolytes actually do in the body, the sodium, potassium, and magnesium targets from the American Heart Association, and when you actually need more.",
     "general", "For Students", "Electrolytes explained: sodium, potassium, and magnesium",
     "\"Electrolytes\" gets used as sports-drink marketing shorthand — the actual minerals involved have specific, individual jobs and targets.",
@@ -2701,7 +2732,7 @@ add(
 add(
     "fasted-cardio-fat-loss",
     "Does Fasted Cardio Actually Burn More Fat?",
-    "What controlled research finds when comparing fasted vs. fed cardio for fat loss, and why acute fat-burning differences don't translate to better long-term results.",
+    "What controlled research finds comparing fasted and fed cardio for fat loss, and why acute fat-burning differences do not mean better long-term results.",
     "general", "For Students", "Does fasted cardio actually burn more fat?",
     "Fasted cardio does burn a higher percentage of fat during the session itself. That doesn't mean it burns more fat overall.",
     sec('''      <h2>What happens during the session</h2>
@@ -2768,7 +2799,7 @@ add(
 add(
     "body-types-somatotypes-macros",
     "Do Body Types Determine Your Macros?",
-    "Where the ectomorph/mesomorph/endomorph body type system actually came from, why it isn't a validated way to set macros, and what actually should drive your targets.",
+    "Where the ectomorph/mesomorph/endomorph system came from, why it is not a validated way to set macros, and what should actually drive your targets.",
     "general", "For Students", "Do body types actually determine your macros?",
     "\"Ectomorph,\" \"mesomorph,\" and \"endomorph\" get treated as science-backed categories for setting macros. The original research behind them was never about diet at all.",
     sec('''      <h2>Where the idea actually came from</h2>
@@ -2936,7 +2967,7 @@ add(
 
 add(
     "caffeine-and-athletic-performance",
-    "Caffeine and Athletic Performance: The Evidence",
+    "Caffeine and Athletic Performance",
     "How much caffeine actually improves performance, when to take it, who responds least, and where the evidence is strongest.",
     "athletes", "Sports Nutrition", "Caffeine and athletic performance: the evidence",
     "Caffeine is one of the very few supplements with genuinely strong, consistent evidence behind it — and one of the easiest to get wrong by overdoing.",
@@ -2977,7 +3008,7 @@ add(
 
 add(
     "soy-and-testosterone",
-    "Does Soy Lower Testosterone? What Research Says",
+    "Does Soy Lower Testosterone?",
     "Where the soy and testosterone myth came from, what meta-analyses of clinical trials actually found, and what soy does offer nutritionally.",
     "protein", "Protein Guide", "Does soy lower testosterone?",
     "Few nutrition claims have been tested as directly as this one — and few myths have survived the results as stubbornly.",
@@ -2997,7 +3028,7 @@ add(
 
 add(
     "protein-before-bed",
-    "Protein Before Bed: Does It Help Muscle Growth?",
+    "Protein Before Bed",
     "What happens to muscle protein synthesis overnight, what pre-sleep protein research found, and whether it matters if your daily total is already met.",
     "protein", "Protein Guide", "Protein before bed: does it help muscle growth?",
     "You spend roughly a third of your life in an overnight fast. That window turns out to be more interesting than it sounds.",
@@ -3158,7 +3189,7 @@ add(
 
 add(
     "sleep-and-nutrition",
-    "How Sleep Affects Appetite and Body Composition",
+    "How Sleep Affects Appetite",
     "What short sleep does to hunger hormones, cravings, and muscle retention while dieting, and why sleep is a nutrition variable.",
     "general", "Practical Guides", "How sleep affects appetite and body composition",
     "You can do everything right with food and still stall — because sleep quietly moves several of the levers you're trying to control.",
@@ -3346,7 +3377,7 @@ add(
 
 add(
     "protein-for-older-adults",
-    "Protein for Older Adults: Preventing Muscle Loss",
+    "Protein for Older Adults",
     "Why protein needs rise with age, what anabolic resistance means, and how much protein helps preserve muscle after 50.",
     "protein", "Protein Guide", "Protein for older adults: preventing muscle loss",
     "The RDA was set from nitrogen balance studies in younger adults. For older adults, the evidence increasingly says it's too low.",
@@ -3372,7 +3403,7 @@ add(
 
 add(
     "glycolysis-explained",
-    "Glycolysis Explained: Steps, ATP Yield, Control",
+    "Glycolysis Explained",
     "A revision walkthrough of glycolysis — the investment and payoff phases, net ATP and NADH yield, regulation, and what happens to pyruvate.",
     "science", "Metabolism", "Glycolysis explained: steps, ATP yield and control",
     "Glycolysis is the entry point for carbohydrate metabolism and one of the most reliably examined pathways in any biochemistry course.",
@@ -3497,7 +3528,7 @@ add(
 
 add(
     "atp-explained",
-    "What Is ATP? Structure, Hydrolysis and Function",
+    "What Is ATP? Structure and Function",
     "Why ATP is the cell's energy currency — its structure, why hydrolysis releases usable energy, and how quickly it is recycled.",
     "science", "Metabolism", "What is ATP?",
     "Every energy-requiring process in your body ultimately draws on the same molecule, and your body recycles roughly its own body weight of it each day.",
@@ -3760,7 +3791,7 @@ add(
 
 add(
     "muscle-contraction-explained",
-    "Muscle Contraction: The Sliding Filament Theory",
+    "Muscle Contraction Explained",
     "Sarcomere anatomy, the cross-bridge cycle, the role of calcium and ATP, and why rigor mortis happens — a revision guide.",
     "science", "Physiology", "Muscle contraction: the sliding filament theory",
     "Muscles don't shorten because the filaments shorten — they shorten because the filaments slide past one another. That distinction is the whole theory.",
@@ -3971,7 +4002,7 @@ add(
 
 add(
     "probiotics-and-gut-health",
-    "Probiotics Explained: What the Evidence Supports",
+    "Probiotics Explained",
     "What probiotics are, which strains have real evidence behind them, and where the science is still too new to justify strong claims.",
     "science", "Physiology", "Probiotics explained: what the evidence supports",
     "\"Probiotic\" is a broad label covering everything from clinically tested strains to yogurt cups with a marketing sticker.",
@@ -4104,7 +4135,7 @@ add(
 
 add(
     "extended-fasting-and-omad",
-    "Extended Fasting and OMAD: What the Evidence Says",
+    "Extended Fasting and OMAD",
     "How extended fasts and one-meal-a-day eating differ from standard intermittent fasting, what the research supports, and the real risks.",
     "diets", "Diets", "Extended fasting and OMAD explained",
     "Compressing all your food into one meal or going days without eating is a different proposition than a 16-hour overnight fast — the evidence base is thinner, and the risks are real.",
@@ -4133,7 +4164,7 @@ add(
 
 add(
     "supplement-label-terms-explained",
-    "Supplement Label Terms: What They Actually Mean",
+    "Supplement Label Terms Explained",
     "What terms like proprietary blend, %DV, and third-party tested actually mean on a supplement label, and which ones matter.",
     "general", "Health Literacy", "Supplement label terms explained",
     "Supplement labels use precise regulatory language that reads like marketing. Knowing what each term legally requires changes how you read the label.",
@@ -4258,7 +4289,7 @@ add(
 add(
     "how-industry-funding-shapes-nutrition-research",
     "How Industry Funding Shaped Nutrition Advice",
-    "The real history of how the sugar industry funded research in the 1960s to shift blame for heart disease onto dietary fat, documented from internal industry papers.",
+    "How the sugar industry funded research in the 1960s to shift blame for heart disease onto dietary fat, documented from internal industry papers.",
     "science", "Research Literacy", "How industry funding shaped nutrition advice",
     "This isn't a hypothetical about bias. It's a documented case, from the industry's own internal files, of how funding shaped what got studied and published.",
     sec('''      <h2>What the internal documents showed</h2>
@@ -4287,8 +4318,8 @@ add(
 
 add(
     "how-to-read-a-meta-analysis",
-    "How to Read a Meta-Analysis Without Being Misled",
-    "What a meta-analysis actually combines, why heterogeneity and publication bias can undermine one, and how to judge whether 'a meta-analysis found' settles the question.",
+    "How to Read a Meta-Analysis",
+    "What a meta-analysis combines, how heterogeneity and publication bias undermine one, and how to judge whether 'a meta-analysis found' settles anything.",
     "science", "Research Literacy", "How to read a meta-analysis",
     "\"A meta-analysis found...\" gets treated as the end of an argument. Whether it should be depends entirely on what went into it.",
     sec('''      <h2>What a meta-analysis actually is</h2>
@@ -4318,7 +4349,7 @@ add(
 
 add(
     "why-nutrition-studies-contradict-each-other",
-    "Why Nutrition Studies Keep Contradicting Each Other",
+    "Why Nutrition Studies Contradict",
     "The structural reasons nutrition headlines seem to flip-flop — small effect sizes, publication bias, observational data, and the incentives of media coverage.",
     "science", "Research Literacy", "Why nutrition studies contradict each other",
     "Eggs are bad, then fine, then good again. This isn't a sign that nutrition science is broken — it's what you'd expect given how the field's evidence is actually generated and reported.",
