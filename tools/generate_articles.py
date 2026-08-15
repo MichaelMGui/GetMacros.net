@@ -1379,7 +1379,7 @@ def build_privacy():
   <section style="background:var(--color-fat-bg)">
     <div class="container">
       <h2>Advertising</h2>
-      <p>This site displays ads served by Google AdSense and Adsterra. These networks may use cookies and similar technologies to serve ads based on your visits to this and other sites. We don't control what these networks collect — see <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising policy</a> for how Google's ad products work, including how to opt out of personalized advertising via <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
+      <p>This site displays ads served by Google AdSense. Google may use cookies and similar technologies to serve ads based on your visits to this and other sites. We don't control what Google collects — see <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising policy</a> for how Google's ad products work, including how to opt out of personalized advertising via <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
     </div>
   </section>
 
@@ -1574,7 +1574,7 @@ def build_terms():
   <section style="background:var(--color-fat-bg)">
     <div class="container">
       <h2>Third-party links and advertising</h2>
-      <p>This site displays ads from Google AdSense and Adsterra, and links out to external sources for citations. We don't control the content, availability, or practices of external sites and aren't responsible for them. See our <a href="privacy.html">Privacy policy</a> for how advertising cookies work.</p>
+      <p>This site displays ads from Google AdSense, and links out to external sources for citations. We don't control the content, availability, or practices of external sites and aren't responsible for them. See our <a href="privacy.html">Privacy policy</a> for how advertising cookies work.</p>
     </div>
   </section>
 
