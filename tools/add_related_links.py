@@ -28,7 +28,7 @@ def hub_of(c):
     if not m:
         return None, None
     links = re.findall(r'<a href="([^"]+\.html)"[^>]*>(.*?)</a>', m.group(0), re.S)
-    links = [(h, H.unescape(re.sub(r"<[^>]+>", "", t)).strip()) for h, t in links]
+    links = [(h, re.sub(r"\s+", " ", H.unescape(re.sub(r"<[^>]+>", " ", t))).strip()) for h, t in links]
     links = [(h, t) for h, t in links if h != "index.html"]
     if not links:
         return None, None
@@ -39,7 +39,7 @@ def title_of(c, fallback):
     m = re.search(r"<h1[^>]*>(.*?)</h1>", c, re.S) or re.search(r"<title>(.*?)</title>", c, re.S)
     if not m:
         return fallback
-    t = re.sub(r"<[^>]+>", "", m.group(1))
+    t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(1)))
     return H.unescape(t).replace(" | GetMacros.net", "").strip()
 
 

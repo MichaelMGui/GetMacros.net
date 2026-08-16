@@ -544,7 +544,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{esc_html(title)} | GetMacros.net</title>
+<title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">

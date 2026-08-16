@@ -19,9 +19,9 @@
 
   var STORE = "gm-lang";
   var LABEL = {
-    en: { name: "English", none: "This page is not available in English yet" },
-    es: { name: "Espanol", none: "Esta pagina aun no esta disponible en espanol" },
-    fr: { name: "Francais", none: "Cette page n'est pas encore disponible en francais" }
+    en: { name: "English", none: "This page is not available in English yet", home: "Go to the English home page" },
+    es: { name: "Espanol", none: "Esta pagina aun no esta disponible en espanol", home: "Ir a la portada en espanol" },
+    fr: { name: "Francais", none: "Cette page n'est pas encore disponible en francais", home: "Aller a l'accueil en francais" }
   };
 
   function readPref() {
@@ -84,6 +84,28 @@
   }
 
   if (current !== "en") writePref(current);
+
+  // If the visitor chose a language and this page has no translation, say so
+  // rather than leaving a dead control that looks broken.
+  var chosen = readPref();
+  if (chosen && chosen !== "en" && chosen !== current && !hasTranslation(chosen, page)) {
+    var header = document.querySelector(".site-header");
+    if (header && !document.querySelector(".lang-notice")) {
+      var note = document.createElement("div");
+      note.className = "lang-notice";
+      note.setAttribute("role", "status");
+      note.innerHTML =
+        "<span>" + LABEL[chosen].none + ".</span>" +
+        ' <a href="' + urlFor(chosen, "index.html") + '">' +
+        LABEL[chosen].home + "</a>" +
+        ' <button type="button" class="lang-notice-close" aria-label="Dismiss">&times;</button>';
+      header.parentNode.insertBefore(note, header.nextSibling);
+      note.querySelector(".lang-notice-close").addEventListener("click", function () {
+        note.remove();
+        writePref("en");
+      });
+    }
+  }
 
   // Keep the remembered language when the visitor heads back to the homepage.
   var pref = readPref();

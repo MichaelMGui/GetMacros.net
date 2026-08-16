@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260817b"
+ASSET_VERSION = "20260817c"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -43,7 +43,7 @@ def og_image_url(category="general"):
 
 
 def seo_meta(title, description, url, og_type="article", category="general"):
-    t = esc_html(f"{title} | GetMacros.net")
+    t = esc_html(title)
     d = esc_html(description)
     img = og_image_url(category)
     return f'''<meta property="og:type" content="{og_type}">
@@ -251,7 +251,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{esc_html(title)} | GetMacros.net</title>
+<title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">\n<meta name="google-adsense-account" content="{ADSENSE_CLIENT}">
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
@@ -871,7 +871,7 @@ add(
 
 add(
     "protein-powder-101",
-    "Protein Powder 101: Whey, Casein &amp; Plant",
+    "Protein Powder 101: Whey, Casein & Plant",
     "The practical differences between whey, casein, and plant-based protein powders, and how to choose between them.",
     "protein", "Protein Guide", "Protein powder 101: whey, casein, and plant blends",
     "Protein powder is just a convenient, concentrated food — the type mostly affects digestion speed and dietary fit, not whether it \"works.\"",
@@ -907,7 +907,7 @@ add(
 
 add(
     "ketogenic-diet-explained",
-    "Keto Diet Explained",
+    "Keto Diet Explained: Macros, Benefits and Risks",
     "How the ketogenic diet's macro split works, what ketosis actually is, and who should be cautious about trying it.",
     "carbs", "Carbohydrate Guide", "The ketogenic diet explained: macros, benefits, and risks",
     "Keto isn't just \"low carb\" — it's a specific macro ratio designed to push your body into a distinct metabolic state.",
@@ -1117,10 +1117,10 @@ CATEGORY_LABEL = {
     "protein": "Protein",
     "fat": "Fat",
     "carbs": "Carbohydrates",
-    "athletes": "Athletes &amp; Sports Nutrition",
+    "athletes": "Athletes & Sports Nutrition",
     "diets": "Diets",
-    "science": "Nutrition Science &amp; Physiology",
-    "general": "Calculators &amp; Planning",
+    "science": "Nutrition Science & Physiology",
+    "general": "Calculators & Planning",
 }
 CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "athletes": "athletes", "diets": "diets", "science": "science", "general": "carbs"}
 
@@ -1330,7 +1330,7 @@ def build_privacy():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{esc_html(title)} | GetMacros.net</title>
+<title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
@@ -1445,7 +1445,7 @@ def build_contact():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{esc_html(title)} | GetMacros.net</title>
+<title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
@@ -1525,7 +1525,7 @@ def build_terms():
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-<title>{esc_html(title)} | GetMacros.net</title>
+<title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
 <meta name="author" content="{AUTHOR_NAME}">
 <link rel="canonical" href="{url}">
@@ -1625,7 +1625,7 @@ def build_404():
 <meta name="theme-color" content="#1b6b4a">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <meta name="robots" content="noindex, follow">
-<title>{esc_html(title)} | GetMacros.net</title>
+<title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
 {seo_meta(title, meta, url, og_type="website")}
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
@@ -1933,7 +1933,7 @@ add(
 
 add(
     "units-and-conversions-cheat-sheet",
-    "Nutrition Units &amp; Conversions Cheat Sheet",
+    "Nutrition Units & Conversions Cheat Sheet",
     "A quick-reference conversion sheet for calories, kilojoules, grams, ounces, and macronutrient calorie values.",
     "general", "For Students", "Units and conversions cheat sheet",
     "The conversions that come up constantly in nutrition coursework and macro tracking, in one place.",
@@ -2030,7 +2030,7 @@ add(
 
 add(
     "creatine-explained",
-    "Creatine: What It Does &amp; Who Needs It",
+    "Creatine: What It Does & Who Needs It",
     "What creatine monohydrate actually does in the body, what the safety research says, and the simple, effective way to take it based on the ISSN position stand.",
     "general", "For Students", "Creatine explained: what it does and who needs it",
     "Creatine is one of the most researched supplements in sports nutrition, and also one of the most misunderstood.",
@@ -2391,7 +2391,7 @@ _DIET_COMPARE_TOOL = '''      <h2>Compare any two diets</h2>
 
 add(
     "diets-explained",
-    "Diets Explained &amp; Compared Side by Side",
+    "Diets Explained & Compared Side by Side",
     "Compare animal-based, plant-based, vegan, paleo, carnivore, vegetarian, pescatarian, keto, and Mediterranean diets side by side on macros and evidence.",
     "diets", "Diets", "Diets",
     "Every diet you've heard of is really just a different rule about which foods are in or out. Pick any two below to compare them, or read the full breakdown of each.",
@@ -2423,7 +2423,7 @@ add(
 
 add(
     "paleo-diet-explained",
-    "Paleo Diet Explained: Food List &amp; Macros",
+    "Paleo Diet Explained: Food List & Macros",
     "What the paleo diet includes and excludes, its typical macronutrient split, and what the research actually says about its health claims.",
     "diets", "Diets", "The paleo diet explained",
     "Paleo is built on a simple pitch: eat like humans did before agriculture. The actual food list and evidence are more nuanced than that pitch suggests.",
@@ -2437,7 +2437,7 @@ add(
 
 add(
     "carnivore-diet-explained",
-    "Carnivore Diet Explained: Risks &amp; Reality",
+    "Carnivore Diet Explained: Risks & Reality",
     "What the carnivore diet actually restricts, why some people report short-term benefits, and the nutrient-deficiency risks clinicians flag with long-term use.",
     "diets", "Diets", "The carnivore diet explained",
     "Carnivore is the strictest common elimination diet — animal products only, nothing else. That simplicity is also its biggest risk.",
@@ -2463,7 +2463,7 @@ add(
 
 add(
     "pescatarian-diet-explained",
-    "Pescatarian Diet: Benefits &amp; Macros",
+    "Pescatarian Diet: Benefits & Macros",
     "What a pescatarian diet includes, the cardiovascular research behind it, and how to structure protein, fat, and carbs on it.",
     "diets", "Diets", "The pescatarian diet explained",
     "Pescatarian is often described as \"vegetarian plus fish\" — and that one addition changes the nutrition picture meaningfully.",
@@ -2623,7 +2623,7 @@ add(
 
 add(
     "electrolytes-explained",
-    "Electrolytes Explained",
+    "Electrolytes: Sodium, Potassium and Magnesium",
     "What electrolytes actually do in the body, the sodium, potassium, and magnesium targets from the American Heart Association, and when you actually need more.",
     "general", "For Students", "Electrolytes explained: sodium, potassium, and magnesium",
     "\"Electrolytes\" gets used as sports-drink marketing shorthand — the actual minerals involved have specific, individual jobs and targets.",
@@ -2967,7 +2967,7 @@ add(
 
 add(
     "caffeine-and-athletic-performance",
-    "Caffeine and Athletic Performance",
+    "Caffeine and Athletic Performance: The Evidence",
     "How much caffeine actually improves performance, when to take it, who responds least, and where the evidence is strongest.",
     "athletes", "Sports Nutrition", "Caffeine and athletic performance: the evidence",
     "Caffeine is one of the very few supplements with genuinely strong, consistent evidence behind it — and one of the easiest to get wrong by overdoing.",
@@ -3008,7 +3008,7 @@ add(
 
 add(
     "soy-and-testosterone",
-    "Does Soy Lower Testosterone?",
+    "Does Soy Lower Testosterone? What Research Says",
     "Where the soy and testosterone myth came from, what meta-analyses of clinical trials actually found, and what soy does offer nutritionally.",
     "protein", "Protein Guide", "Does soy lower testosterone?",
     "Few nutrition claims have been tested as directly as this one — and few myths have survived the results as stubbornly.",
@@ -3028,7 +3028,7 @@ add(
 
 add(
     "protein-before-bed",
-    "Protein Before Bed",
+    "Protein Before Bed: Does It Help Muscle Growth?",
     "What happens to muscle protein synthesis overnight, what pre-sleep protein research found, and whether it matters if your daily total is already met.",
     "protein", "Protein Guide", "Protein before bed: does it help muscle growth?",
     "You spend roughly a third of your life in an overnight fast. That window turns out to be more interesting than it sounds.",
@@ -3189,7 +3189,7 @@ add(
 
 add(
     "sleep-and-nutrition",
-    "How Sleep Affects Appetite",
+    "How Sleep Affects Appetite and Body Composition",
     "What short sleep does to hunger hormones, cravings, and muscle retention while dieting, and why sleep is a nutrition variable.",
     "general", "Practical Guides", "How sleep affects appetite and body composition",
     "You can do everything right with food and still stall — because sleep quietly moves several of the levers you're trying to control.",
@@ -3377,7 +3377,7 @@ add(
 
 add(
     "protein-for-older-adults",
-    "Protein for Older Adults",
+    "Protein for Older Adults: Preventing Muscle Loss",
     "Why protein needs rise with age, what anabolic resistance means, and how much protein helps preserve muscle after 50.",
     "protein", "Protein Guide", "Protein for older adults: preventing muscle loss",
     "The RDA was set from nitrogen balance studies in younger adults. For older adults, the evidence increasingly says it's too low.",
@@ -3403,7 +3403,7 @@ add(
 
 add(
     "glycolysis-explained",
-    "Glycolysis Explained",
+    "Glycolysis Explained: Steps, ATP Yield, Control",
     "A revision walkthrough of glycolysis — the investment and payoff phases, net ATP and NADH yield, regulation, and what happens to pyruvate.",
     "science", "Metabolism", "Glycolysis explained: steps, ATP yield and control",
     "Glycolysis is the entry point for carbohydrate metabolism and one of the most reliably examined pathways in any biochemistry course.",
@@ -3528,7 +3528,7 @@ add(
 
 add(
     "atp-explained",
-    "What Is ATP? Structure and Function",
+    "What Is ATP? Structure, Hydrolysis and Function",
     "Why ATP is the cell's energy currency — its structure, why hydrolysis releases usable energy, and how quickly it is recycled.",
     "science", "Metabolism", "What is ATP?",
     "Every energy-requiring process in your body ultimately draws on the same molecule, and your body recycles roughly its own body weight of it each day.",
@@ -3791,7 +3791,7 @@ add(
 
 add(
     "muscle-contraction-explained",
-    "Muscle Contraction Explained",
+    "Muscle Contraction: The Sliding Filament Theory",
     "Sarcomere anatomy, the cross-bridge cycle, the role of calcium and ATP, and why rigor mortis happens — a revision guide.",
     "science", "Physiology", "Muscle contraction: the sliding filament theory",
     "Muscles don't shorten because the filaments shorten — they shorten because the filaments slide past one another. That distinction is the whole theory.",
@@ -4002,7 +4002,7 @@ add(
 
 add(
     "probiotics-and-gut-health",
-    "Probiotics Explained",
+    "Probiotics Explained: What the Evidence Supports",
     "What probiotics are, which strains have real evidence behind them, and where the science is still too new to justify strong claims.",
     "science", "Physiology", "Probiotics explained: what the evidence supports",
     "\"Probiotic\" is a broad label covering everything from clinically tested strains to yogurt cups with a marketing sticker.",
@@ -4135,7 +4135,7 @@ add(
 
 add(
     "extended-fasting-and-omad",
-    "Extended Fasting and OMAD",
+    "Extended Fasting and OMAD: What the Evidence Says",
     "How extended fasts and one-meal-a-day eating differ from standard intermittent fasting, what the research supports, and the real risks.",
     "diets", "Diets", "Extended fasting and OMAD explained",
     "Compressing all your food into one meal or going days without eating is a different proposition than a 16-hour overnight fast — the evidence base is thinner, and the risks are real.",
@@ -4164,7 +4164,7 @@ add(
 
 add(
     "supplement-label-terms-explained",
-    "Supplement Label Terms Explained",
+    "Supplement Label Terms: What They Actually Mean",
     "What terms like proprietary blend, %DV, and third-party tested actually mean on a supplement label, and which ones matter.",
     "general", "Health Literacy", "Supplement label terms explained",
     "Supplement labels use precise regulatory language that reads like marketing. Knowing what each term legally requires changes how you read the label.",
@@ -4318,7 +4318,7 @@ add(
 
 add(
     "how-to-read-a-meta-analysis",
-    "How to Read a Meta-Analysis",
+    "How to Read a Meta-Analysis Without Being Misled",
     "What a meta-analysis combines, how heterogeneity and publication bias undermine one, and how to judge whether 'a meta-analysis found' settles anything.",
     "science", "Research Literacy", "How to read a meta-analysis",
     "\"A meta-analysis found...\" gets treated as the end of an argument. Whether it should be depends entirely on what went into it.",
@@ -4349,7 +4349,7 @@ add(
 
 add(
     "why-nutrition-studies-contradict-each-other",
-    "Why Nutrition Studies Contradict",
+    "Why Nutrition Studies Keep Contradicting Each Other",
     "The structural reasons nutrition headlines seem to flip-flop — small effect sizes, publication bias, observational data, and the incentives of media coverage.",
     "science", "Research Literacy", "Why nutrition studies contradict each other",
     "Eggs are bad, then fine, then good again. This isn't a sign that nutrition science is broken — it's what you'd expect given how the field's evidence is actually generated and reported.",

@@ -30,7 +30,7 @@ def title_of(path):
     m = re.search(r"<h1[^>]*>(.*?)</h1>", c, re.S)
     if not m:
         m = re.search(r"<title>(.*?)</title>", c, re.S)
-    t = re.sub(r"<[^>]+>", "", m.group(1)) if m else path
+    t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(1))) if m else path
     return H.unescape(t).replace(" | GetMacros.net", "").strip()
 
 
