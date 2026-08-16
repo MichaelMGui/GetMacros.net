@@ -16,6 +16,35 @@ def add(slug, title, meta, category, eyebrow, h1, intro, questions, tiers=None):
                          eyebrow=eyebrow, h1=h1, intro=intro, questions=questions, tiers=tiers))
 
 
+
+def study_section(questions):
+    """Crawlable summary of a quiz: topics covered plus the reading behind them.
+
+    Quiz pages render entirely in JavaScript, so without this a crawler sees
+    about 30 words. Listing the question stems (never the answers) keeps the
+    page honest and unique while giving it real indexable content.
+    """
+    topics = "".join("<li>" + q["q"] + "</li>" for q in questions)
+    seen, reading = set(), []
+    for q in questions:
+        href = q["link"]["href"]
+        if href in seen:
+            continue
+        seen.add(href)
+        reading.append('<li><a href="' + href + '">' + q["link"]["label"] + "</a></li>")
+    return f'''  <section class="tight">
+    <div class="container">
+      <h2>What this quiz covers</h2>
+      <p>{len(questions)} questions, each with an explanation of why the answer is right rather than a bare score. You can retake it as often as you like &mdash; nothing is recorded and there is no sign-up.</p>
+      <ul class="checklist">{topics}</ul>
+      <h2>Read these first</h2>
+      <p>Each question links to the guide it came from. If you want to study before you start, these are the pages behind the answers.</p>
+      <ul class="checklist">{"".join(reading)}</ul>
+    </div>
+  </section>
+'''
+
+
 def q(question, options, correct, explain, link_href, link_label):
     return {"q": question, "options": options, "correct": correct, "explain": explain,
             "link": {"href": link_href, "label": link_label}}
@@ -529,6 +558,7 @@ add(
 
 
 def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, tiers=None):
+    study_html = study_section(questions)
     hero_class = "hero page-hero" if category != "general" else "page-hero"
     tiers_js = ("tiers: " + json.dumps(tiers) + ",\n        ") if tiers else ""
     return f'''<!doctype html>
@@ -577,6 +607,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
       <div id="quiz-root" style="max-width:640px;margin:0 auto;"></div>
     </div>
   </section>
+
+{study_html}
 {AD_SLOT}</main>
 
 {FOOTER}

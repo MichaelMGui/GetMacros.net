@@ -55,6 +55,28 @@ PLATE_TARGETS = [
     {"name": "Bulking Dinner", "desc": "~910 calories, for higher-calorie muscle-building days.", "protein": 60, "fat": 32, "carb": 95},
 ]
 
+
+def howto_section(slug):
+    """Crawlable how-to-play and takeaways for a game page.
+
+    Games render entirely in JavaScript, so the page would otherwise be about
+    30 words to a crawler. Written per game so no two pages are alike.
+    """
+    entry = GAME_HOWTO.get(slug)
+    if not entry:
+        return ""
+    h1, steps, h2, gains = entry
+    return ('  <section class="tight">\n    <div class="container">\n'
+            + "      <h2>" + h1 + "</h2>\n      <ol class=\"checklist\">"
+            + "".join("<li>" + s + "</li>" for s in steps)
+            + "</ol>\n      <h2>" + h2 + "</h2>\n      <ul class=\"checklist\">"
+            + "".join("<li>" + g + "</li>" for g in gains)
+            + "</ul>\n      <p>Free, no sign-up, and nothing is saved. "
+              "Prefer reading? Browse the <a href=\"articles.html\">full guide library</a> "
+              "or test yourself with a <a href=\"quiz.html\">quiz</a>.</p>\n"
+            + "    </div>\n  </section>\n")
+
+
 SPRINT_FOODS = [
     {"name": "Chicken Breast", "icon": "icon-chicken", "macro": "protein"},
     {"name": "Turkey Breast", "icon": "icon-chicken", "macro": "protein"},
@@ -105,6 +127,8 @@ DIET_FOODS = [
     {"name": "Turkey", "icon": "icon-chicken", "diet": "neither"},
 ]
 
+GAME_HOWTO = {'macro-memory-game': ('How to play', ['Flip any two cards to reveal the food underneath.', 'Match a pair and it stays face up, with the macronutrient it is dominant in.', 'Mismatched cards flip back &mdash; remembering positions is the game.', 'Clear all six pairs to finish; your moves and time are shown at the end.'], 'What you will pick up', ["Which foods are protein-dominant rather than simply 'high in protein'.", 'That most foods carry all three macros, with one usually leading.', 'Faster recognition of everyday foods by their main macronutrient.']), 'build-a-plate-game': ('How to play', ['You are given a macro target &mdash; protein, fat and carbohydrate in grams.', 'Click foods to add servings; the bars fill as you go.', 'Overshooting counts against you, so portion size matters as much as choice.', 'Submit to see how close you landed and where you drifted.'], 'What you will pick up', ['How quickly fat calories accumulate compared with protein.', 'Why hitting three targets at once needs planning, not one perfect food.', 'A feel for realistic serving sizes across 24 common foods.']), 'macro-sprint-game': ('How to play', ['A food appears; sort it into protein, fat or carbohydrate before the timer runs out.', 'Correct answers build a streak; wrong answers cost a life.', 'The pace increases as you go.', 'Three mistakes ends the run.'], 'What you will pick up', ["Instant recognition of a food's dominant macronutrient.", 'The foods people most often misclassify, such as nuts and legumes.', 'Speed at the mental sorting that makes tracking meals easier.']), 'diet-sorter-game': ('How to play', ['A food or rule appears alongside a named eating pattern.', 'Decide whether it belongs to that diet or not.', 'Each answer explains the reasoning, not just right or wrong.', 'Work through the set to see how well you know the patterns.'], 'What you will pick up', ['What actually separates keto, paleo, Mediterranean and the rest.', 'Which foods sit in more than one pattern.', 'Where popular diets agree, which is more often than the internet suggests.'])}
+
 GAMES_META = [
     {"slug": "macro-memory-game", "title": "Macro Memory Match", "icon": "icon-game", "cardcls": "carbs",
      "meta": "A memory match game — flip cards to pair foods and learn which macronutrient each one is dominant in.",
@@ -143,6 +167,7 @@ def quiz_hub_jsonld():
 
 
 def game_page(slug, title, icon, meta, intro, body_script, category="general"):
+    howto_html = howto_section(slug)
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -189,6 +214,8 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
       <div id="game-root"></div>
     </div>
   </section>
+
+{howto_html}
 {AD_SLOT}</main>
 
 {FOOTER}
