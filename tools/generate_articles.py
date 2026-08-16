@@ -537,8 +537,34 @@ add(
       </table>
       <p>This range comes from the Dietary Reference Intakes' Acceptable Macronutrient Distribution Range (AMDR) for fat.<sup class="ref"><a href="sources.html#f4">[1]</a></sup> Below 20%, it becomes difficult to get enough essential fatty acids and to properly absorb vitamins A, D, E, and K, which require dietary fat. Consistently well above 35% usually means protein or carbohydrate intake is being squeezed out.</p>''') +
     sec('''      <p>Enter your own calorie target for an exact gram range, or use the full macro calculator for a complete breakdown.</p>
-      <p><a href="calculators.html#fat-calculator" class="btn btn-primary">Calculate my fat range →</a></p>''', bg="var(--color-fat-bg)", tight=True),
-    [("fats.html", "What fat actually does"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")]
+      <p><a href="calculators.html#fat-calculator" class="btn btn-primary">Calculate my fat range →</a></p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec("""      <h2>Why a fat floor matters more than a fat ceiling</h2>
+      <p>Most fat advice is about not eating too much. The more common practical problem, especially for people cutting calories aggressively, is eating too little. Dietary fat carries the fat-soluble vitamins A, D, E and K, and absorbing them requires fat in the same meal &mdash; which is why a fat-free dressing on a salad can quietly reduce what you get out of the vegetables.</p>
+      <p>Very low fat intakes sustained over time are also associated with reductions in testosterone in men.<sup class="ref"><a href="sources.html#f3">[1]</a></sup> The effect sizes are modest and the research base is limited, but the direction is consistent enough that dropping fat to the floor to make room for other macros is a poor trade.</p>
+      <div class="panel">
+        <h3>A practical minimum</h3>
+        <p>Keeping fat at roughly <strong>0.5&ndash;1.0 g per kg of body weight</strong>, or about <strong>20% of calories</strong>, covers essential fatty acid needs and vitamin absorption for most people. Below that, you are trading something real for a number on a tracker.</p>
+      </div>""") +
+    sec("""      <h2>Type matters more than total</h2>
+      <p>Once you are inside the 20&ndash;35% range, the composition of that fat carries more weight than the exact percentage.</p>
+      <table class="data-table">
+        <tr><th>Type</th><th>Mainly found in</th><th>Practical stance</th></tr>
+        <tr><td>Monounsaturated</td><td>Olive oil, avocado, most nuts</td><td>Make this the base</td></tr>
+        <tr><td>Polyunsaturated (incl. omega-3)</td><td>Oily fish, walnuts, flax, seed oils</td><td>Include deliberately; most people under-eat omega-3</td></tr>
+        <tr><td>Saturated</td><td>Fatty meat, butter, coconut, dairy fat</td><td>Fits in a mixed diet; not something to build the diet around</td></tr>
+        <tr><td>Industrial trans fat</td><td>Partially hydrogenated oils</td><td>No useful intake; largely removed from the food supply</td></tr>
+      </table>
+      <p>The saturated fat conversation is genuinely more contested than either side's headlines suggest. What is not contested: replacing saturated fat with <em>refined carbohydrate</em> does not improve cardiovascular outcomes, while replacing it with unsaturated fat does. The replacement is the variable that matters, which is exactly the nuance that gets lost in "is butter bad" coverage.</p>""") +
+    sec("""      <h2>Fat and satiety: the part tracking apps miss</h2>
+      <p>Fat is calorie-dense at 9 calories per gram, so it is easy to overshoot by eyeballing. It is also slow to leave the stomach, which is why higher-fat meals tend to feel more filling for longer than the same calories from refined carbohydrate. If you are constantly hungry on a deficit, the answer is sometimes redistributing fat toward the meals where hunger actually bites rather than cutting it further.</p>
+      <p>Measuring matters here more than with other macros: the difference between a level and a heaped tablespoon of oil is roughly 60 calories, repeated at every meal. See <a href="weighing-cooking-oils-and-sauces.html">how to measure cooking oils and sauces accurately</a>.</p>""", bg="var(--color-fat-bg)", tight=True),
+    [("fats.html", "What fat actually does"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("healthy-high-fat-foods.html", "Healthy high-fat foods")],
+    faq=[
+        ('How many grams of fat per day should I eat?', 'For a 2,000-calorie intake the 20-35% AMDR works out to roughly 44-78 grams per day. Active people building meals around whole foods usually land in the middle of that range without much effort.'),
+        ('Is a low-fat diet healthy?', 'Low-fat eating can be perfectly healthy if it stays above roughly 20% of calories and includes sources of essential fatty acids. Very low intakes risk poor fat-soluble vitamin absorption and, in men, modest reductions in testosterone.'),
+        ('Does eating fat make you fat?', 'No. A sustained calorie surplus does. Fat is more calorie-dense than protein or carbohydrate, so portions are easier to misjudge, but the macronutrient itself is not uniquely fattening.'),
+        ('What is the healthiest fat to cook with?', 'For everyday cooking, olive oil is a well-supported default: mostly monounsaturated, stable at normal cooking temperatures, and consistently associated with good cardiovascular outcomes in dietary pattern research.'),
+    ]
 )
 
 add(
@@ -661,8 +687,42 @@ add(
         <tr><td>3,000</td><td>338 g</td><td>413 g</td><td>488 g</td></tr>
       </table>
       <p>This range is the Acceptable Macronutrient Distribution Range (AMDR) for carbohydrates.<sup class="ref"><a href="sources.html#c4">[1]</a></sup> Endurance athletes with heavy training volumes often sit at the higher end (or above it) to keep glycogen stores full,<sup class="ref"><a href="sources.html#c2">[2]</a></sup> while some people deliberately use lower-carb approaches for specific medical or performance goals — see our breakdown of <a href="low-carb-diet-effects.html">what actually happens on a low-carb diet</a>.</p>''') +
-    sec('''      <p><a href="calculators.html" class="btn btn-primary">Get your personalized carb target →</a></p>''', bg="var(--color-carbs-bg)", tight=True),
-    [("carbs.html", "What carbohydrates actually do"), ("what-is-glycogen.html", "What is glycogen?"), ("low-carb-diet-effects.html", "What happens on a low-carb diet")]
+    sec('''      <p><a href="calculators.html" class="btn btn-primary">Get your personalized carb target →</a></p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>Grams per kilogram: a more useful lens for active people</h2>
+      <p>Percentage ranges are fine for general health, but they move whenever your calories move. If you train, carbohydrate needs track your <em>training load</em> far more closely than your calorie total, so sports nutrition guidance is usually written per kilogram of body weight.</p>
+      <table class="data-table">
+        <tr><th>Training pattern</th><th>Carbohydrate per kg body weight</th><th>Example at 70 kg</th></tr>
+        <tr><td>Mostly sedentary</td><td>3&ndash;4 g/kg</td><td>210&ndash;280 g</td></tr>
+        <tr><td>Moderate: about 1 hour most days</td><td>5&ndash;7 g/kg</td><td>350&ndash;490 g</td></tr>
+        <tr><td>Endurance: 1&ndash;3 hours most days</td><td>6&ndash;10 g/kg</td><td>420&ndash;700 g</td></tr>
+      </table>
+      <p>The pattern that matters: the person doing an hour of moderate training does not need an athlete's carbohydrate intake, and the endurance athlete cannot run on a general-health number. Match intake to the work you are actually doing this week, not the training block you hope to start.</p>""") +
+    sec("""      <h2>Signs your carbohydrate intake is too low for your training</h2>
+      <ul class="checklist">
+        <li><strong>Sessions fall apart in the back half.</strong> Glycogen depletion shows up late in a workout, not at the start.</li>
+        <li><strong>Heavy legs that rest does not fix.</strong> Chronic under-fuelling reads like permanent fatigue.</li>
+        <li><strong>Sleep gets worse, not better.</strong> Very low intakes can disrupt sleep in some people.</li>
+        <li><strong>Constant preoccupation with food.</strong> Often an energy-availability signal rather than a willpower problem.</li>
+      </ul>
+      <p>None of these prove a carbohydrate problem on their own &mdash; illness, poor sleep and simple overtraining produce the same picture. They are worth checking against your intake before you add more training.</p>""", bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>When lower-carbohydrate intakes make sense</h2>
+      <p>Lower intakes are a legitimate tool, not a moral failing or a magic trick. They tend to suit people who prefer the appetite pattern, who are managing blood glucose under clinical guidance, or whose training is mostly low-intensity. They tend to suit high-intensity and endurance athletes poorly, because those efforts depend on glycogen that dietary fat cannot replace quickly.</p>
+      <p>Two practical cautions. First, the first week or two of a sharp reduction often brings fatigue and headaches as your body adapts &mdash; see <a href="keto-flu-explained.html">what causes keto flu</a>. Second, cutting carbohydrates usually cuts fibre at the same time unless you deliberately replace it, and fibre intake is already below recommendations for most adults.</p>""") +
+    sec("""      <h2>How to actually land on your number</h2>
+      <ol class="checklist">
+        <li><strong>Start from calories, not carbohydrates.</strong> Set energy intake for your goal first.</li>
+        <li><strong>Set protein next.</strong> It is the macro with the clearest per-kilogram evidence.</li>
+        <li><strong>Set fat to a floor</strong> &mdash; roughly 20% of calories &mdash; to protect hormone production and fat-soluble vitamin absorption.</li>
+        <li><strong>Carbohydrate takes the remainder.</strong> This is why the carb number moves most when goals change.</li>
+      </ol>
+      <p>That ordering is why two people on identical calories can have very different carbohydrate targets, and why copying someone else's macros rarely transfers.</p>"""),
+    [("carbs.html", "What carbohydrates actually do"), ("what-is-glycogen.html", "What is glycogen?"), ("low-carb-diet-effects.html", "What happens on a low-carb diet")],
+    faq=[
+        ('How many carbs per day to lose weight?', 'There is no weight-loss-specific carbohydrate number. Fat loss follows an overall calorie deficit, and reviews comparing low-carbohydrate with higher-carbohydrate diets at matched calories and protein find similar results. Choose the intake you can sustain while hitting your protein target and keeping training quality.'),
+        ('Is 100 grams of carbs a day low?', "For most adults, yes. It sits well below the 45-65% AMDR at typical calorie intakes and below the 130 g/day Recommended Dietary Allowance set to cover the brain's glucose needs. That does not make it unsafe for everyone, but it is a deliberate low-carbohydrate intake rather than a moderate one."),
+        ('Do carbs make you gain weight?', 'No single macronutrient causes weight gain on its own; a sustained calorie surplus does. Carbohydrate-rich foods are often energy-dense and easy to overeat, which is a food-environment problem rather than a property of the macronutrient.'),
+        ('Should I eat carbs at night?', 'Total daily intake matters far more than timing for body composition. Some people sleep better with an evening carbohydrate-containing meal. See our breakdown of when to eat carbs for what the timing research does and does not show.'),
+    ]
 )
 
 add(
@@ -761,8 +821,36 @@ add(
         <li><strong>Satiety</strong> — high-fiber foods tend to be more filling per calorie, which can support weight management</li>
         <li><strong>Gut microbiome health</strong> — fiber feeds beneficial gut bacteria</li>
       </ul>
-      <p>Most adults need roughly <strong>25 grams/day (women) to 38 grams/day (men)</strong> under age 50 — and most people fall short of that target.<sup class="ref"><a href="sources.html#c5">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True),
-    [("carbs.html", "What carbohydrates actually do"), ("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("how-many-carbs-per-day.html", "How many carbs per day")]
+      <p>Most adults need roughly <strong>25 grams/day (women) to 38 grams/day (men)</strong> under age 50 — and most people fall short of that target.<sup class="ref"><a href="sources.html#c5">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>Two kinds of fibre, two different jobs</h2>
+      <table class="data-table">
+        <tr><th></th><th>Soluble</th><th>Insoluble</th></tr>
+        <tr><td>Behaviour in water</td><td>Dissolves into a gel</td><td>Stays intact</td></tr>
+        <tr><td>Main effects</td><td>Slows digestion, lowers LDL, blunts glucose rise</td><td>Adds bulk, speeds transit</td></tr>
+        <tr><td>Good sources</td><td>Oats, barley, beans, psyllium, apples, citrus</td><td>Wheat bran, wholegrains, nuts, vegetable skins</td></tr>
+      </table>
+      <p>Most fibre-containing foods supply both, in different ratios, which is why "eat a variety" beats chasing one type. The gel-forming soluble fraction is what does the cholesterol and blood-glucose work; the insoluble fraction is what most people mean when they say fibre helps regularity.</p>""") +
+    sec("""      <h2>How much, and how far off most people are</h2>
+      <p>Recommended intakes are roughly <strong>25 g a day for women and 38 g for men</strong>, or about 14 g per 1,000 calories.<sup class="ref"><a href="sources.html#c5">[1]</a></sup> Average intakes in most Western countries sit near half that. This is one of the few places where the gap between typical and recommended intake is large enough that closing it is likely to matter on its own.</p>
+      <ul class="checklist">
+        <li><strong>Beans and lentils</strong> &mdash; roughly 15 g per cooked cup, the single most efficient upgrade available</li>
+        <li><strong>Raspberries and blackberries</strong> &mdash; around 8 g per cup</li>
+        <li><strong>Wholegrain over refined</strong> &mdash; a swap that costs nothing and adds several grams per meal</li>
+        <li><strong>Skins on</strong> &mdash; potato, apple and pear skins carry a meaningful share of the fibre</li>
+      </ul>""") +
+    sec("""      <h2>Increase it gradually, and drink more water</h2>
+      <p>Going from 12 g to 35 g overnight reliably produces gas, bloating and discomfort. Your gut bacteria adapt to a higher load, but they need a couple of weeks to do it. Add roughly 5 g a week, and increase fluids at the same time &mdash; fibre pulls water into the gut, and adding bulk without fluid can make constipation worse rather than better.</p>
+      <div class="panel warn">
+        <h3>When more fibre is not the answer</h3>
+        <p>During a flare of inflammatory bowel disease, with certain strictures, or while following a clinically supervised low-FODMAP elimination, higher fibre can worsen symptoms. Those situations need individual guidance rather than general advice.</p>
+      </div>""", bg="var(--color-carbs-bg)", tight=True),
+    [("carbs.html", "What carbohydrates actually do"), ("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("how-many-carbs-per-day.html", "How many carbs per day")],
+    faq=[
+        ('How much fiber should I eat per day?', 'About 25 grams a day for women and 38 grams for men, or roughly 14 grams per 1,000 calories. Average intakes are close to half that, so most people have real room to improve.'),
+        ('What foods are highest in fiber?', 'Legumes lead by a wide margin: a cooked cup of lentils or black beans supplies around 15 grams. Berries, wholegrains, nuts, seeds and vegetables eaten with their skins follow.'),
+        ('Does fiber help you lose weight?', 'Indirectly. High-fibre foods tend to be more filling per calorie and slow digestion, which makes a calorie deficit easier to hold. Fibre does not burn fat by itself.'),
+        ('Why does more fiber make me bloated?', 'Gut bacteria ferment fibre and produce gas, and they need time to adapt to a bigger load. Increasing by about 5 grams a week, with more fluid, usually avoids the worst of it.'),
+    ]
 )
 
 add(
@@ -778,8 +866,34 @@ add(
         <li><strong>Pairing carbs with protein, fat, or fiber</strong> lowers the effective glycemic response of a meal, even if an individual ingredient has a high GI on its own</li>
         <li><strong>GI isn't the whole picture</strong> — glycemic load (which factors in portion size) and overall diet quality matter at least as much as a single food's GI ranking</li>
         <li><strong>It's most useful as a general pattern</strong> — favoring minimally processed, fiber-rich carb sources most of the time — rather than a strict food-by-food rulebook</li>
-      </ul>''', bg="var(--color-carbs-bg)", tight=True),
-    [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("carbs.html", "What carbohydrates actually do"), ("fiber-benefits.html", "Why fiber matters")]
+      </ul>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>Glycaemic index versus glycaemic load</h2>
+      <p>Glycaemic index ranks a food by how sharply it raises blood glucose, using a fixed 50 g of available carbohydrate as the test portion. That fixed portion is the catch: it ignores how much of the food you would actually eat.</p>
+      <p>Watermelon is the standard example. Its GI is high, around 72, but a serving contains so little carbohydrate that its effect on blood glucose is small. <strong>Glycaemic load</strong> corrects for this by accounting for the real portion, which is why it is the more useful number in practice.</p>
+      <table class="data-table">
+        <tr><th>Food</th><th>GI (approx.)</th><th>GL per typical serving</th><th>Reading</th></tr>
+        <tr><td>Watermelon</td><td>72 (high)</td><td>~4 (low)</td><td>High GI, small real impact</td></tr>
+        <tr><td>White bread</td><td>75 (high)</td><td>~11 (moderate)</td><td>Both meaningful</td></tr>
+        <tr><td>Lentils</td><td>32 (low)</td><td>~5 (low)</td><td>Low either way</td></tr>
+        <tr><td>Baked potato</td><td>85 (high)</td><td>~26 (high)</td><td>High on both counts</td></tr>
+      </table>""") +
+    sec("""      <h2>What changes a food's glycaemic response</h2>
+      <ul class="checklist">
+        <li><strong>Ripeness.</strong> A green banana behaves very differently from a spotted one.</li>
+        <li><strong>Processing.</strong> Finer milling means faster digestion; steel-cut oats and instant oats are not equivalent.</li>
+        <li><strong>Cooking and cooling.</strong> Cooking raises the response; cooling cooked potato, rice or pasta forms resistant starch that lowers it.</li>
+        <li><strong>What else is on the plate.</strong> Fat, protein and fibre in the same meal all slow gastric emptying and flatten the curve.</li>
+      </ul>
+      <p>That last point matters most, because almost nobody eats a carbohydrate alone. GI values are measured on isolated foods in fasted people; a slice of bread eaten with eggs and avocado does not behave like the tested slice.</p>""") +
+    sec("""      <h2>Who should actually pay attention to it</h2>
+      <p>GI is genuinely useful for people managing diabetes or insulin resistance, where the shape of the glucose curve has direct clinical consequences, and for endurance athletes timing fuel around sessions. For general health it is a weak lens: it rates ice cream more favourably than a baked potato, because fat slows absorption. Fibre content, degree of processing and overall dietary pattern predict health outcomes far better.</p>""", bg="var(--color-carbs-bg)", tight=True),
+    [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("carbs.html", "What carbohydrates actually do"), ("fiber-benefits.html", "Why fiber matters")],
+    faq=[
+        ('What is a low glycemic index food?', 'A GI of 55 or below is considered low, 56-69 medium and 70 or above high. Most legumes, non-starchy vegetables, nuts and intact wholegrains fall in the low band.'),
+        ('Is glycemic index or glycemic load more useful?', 'Glycaemic load, in most cases. GI uses a fixed 50 g carbohydrate portion regardless of how much you would really eat, while glycaemic load accounts for the actual serving.'),
+        ('Does eating low GI help with weight loss?', 'The evidence is mixed and effects are small once calories and protein are matched. Low-GI foods are often high in fibre and filling, which helps adherence, but the GI value itself is not the active ingredient.'),
+        ('Does cooling rice or potatoes lower the glycemic index?', 'Yes, modestly. Cooling cooked starch forms resistant starch, which digests more slowly and lowers the glucose response, and some of that persists even after reheating.'),
+    ]
 )
 
 add(
@@ -865,8 +979,40 @@ add(
         <tr><td>Bulking</td><td>Surplus (~10–15% above TDEE)</td><td>Adequate carbs for training performance</td></tr>
       </table>
       <p>None of these are permanent — most people cycle between phases over months or years depending on their current goal, body composition, and how their training is going.</p>''') +
-    sec('''      <p><a href="macros-for-weight-loss.html">Read the full cutting macro breakdown</a> or <a href="macros-for-muscle-gain.html">the full bulking macro breakdown</a>.</p>''', bg="var(--color-fat-bg)", tight=True),
-    [("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle"), ("tdee-vs-bmr.html", "BMR vs. TDEE")]
+    sec('''      <p><a href="macros-for-weight-loss.html">Read the full cutting macro breakdown</a> or <a href="macros-for-muscle-gain.html">the full bulking macro breakdown</a>.</p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec("""      <h2>The three phases, and what each is actually for</h2>
+      <table class="data-table">
+        <tr><th>Phase</th><th>Energy balance</th><th>Typical rate</th><th>Main job</th></tr>
+        <tr><td>Cutting</td><td>Deficit, ~10&ndash;20% below maintenance</td><td>0.5&ndash;1% of body weight per week</td><td>Lose fat while keeping muscle</td></tr>
+        <tr><td>Maintenance</td><td>At maintenance</td><td>Weight stable</td><td>Recover, stabilise, live normally</td></tr>
+        <tr><td>Bulking</td><td>Surplus, ~5&ndash;15% above maintenance</td><td>0.25&ndash;0.5% of body weight per week</td><td>Build muscle with limited fat gain</td></tr>
+      </table>
+      <p>The asymmetry in those rates is the part most people get wrong. You can lose fat considerably faster than you can build muscle. A pound a week of fat loss is realistic; a pound a week of muscle gain is not, at any training age past the first few months.</p>""") +
+    sec("""      <h2>What protects muscle during a cut</h2>
+      <ul class="checklist">
+        <li><strong>Keep protein high</strong> &mdash; toward 1.6&ndash;2.2 g/kg, sometimes higher in an aggressive deficit.</li>
+        <li><strong>Keep lifting heavy.</strong> Cutting training intensity signals that the muscle is not needed. Reduce volume before you reduce load.</li>
+        <li><strong>Do not rush the deficit.</strong> Very large deficits accelerate muscle loss and rarely survive contact with real life.</li>
+        <li><strong>Sleep.</strong> Short sleep during a deficit shifts more of the loss toward lean tissue.</li>
+      </ul>""", bg="var(--color-protein-bg)", tight=True) +
+    sec("""      <h2>Why maintenance is the phase people skip</h2>
+      <p>Most people bounce between cutting and bulking with no time in between, which is why progress often feels circular. Maintenance is where you let appetite hormones normalise after a deficit, where training performance rebounds, and where the weight you reached becomes the weight your habits actually support. It also breaks the pattern of ending every diet by rebounding straight into an unplanned surplus.</p>
+      <p>A practical default: after a cut of 8&ndash;16 weeks, spend several weeks at maintenance before deciding what comes next.</p>""") +
+    sec("""      <h2>Choosing which phase you are in</h2>
+      <p>Pick based on where you are now, not on which phase sounds more appealing.</p>
+      <ul class="checklist">
+        <li><strong>Higher body fat and want to see definition?</strong> Cut first. Adding a surplus on top mostly adds fat.</li>
+        <li><strong>Lean but small, with training in place?</strong> A modest surplus is the honest path. Muscle needs energy to build.</li>
+        <li><strong>New to lifting?</strong> You can often gain muscle and lose fat at once for a while &mdash; see <a href="body-recomposition-explained.html">body recomposition</a>. Stay near maintenance and let it happen.</li>
+        <li><strong>Tired, under-slept, stressed?</strong> Maintenance. Neither direction works well from a depleted baseline.</li>
+      </ul>"""),
+    [("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle"), ("tdee-vs-bmr.html", "BMR vs. TDEE")],
+    faq=[
+        ('How long should a cut last?', 'Most people do well with 8-16 weeks, then a period at maintenance. Longer continuous deficits tend to bring falling training performance, rising hunger and worse adherence, which usually costs more than the extra weeks gain.'),
+        ('Can you build muscle and lose fat at the same time?', 'Yes, in specific situations: beginners, people returning after a break, and people with higher body fat. It is called body recomposition and it becomes much harder with training experience.'),
+        ('How much of a surplus should I eat to bulk?', 'Roughly 5-15% above maintenance, aiming for about 0.25-0.5% of body weight gained per week. Larger surpluses add fat faster without adding muscle faster, because muscle growth has a ceiling that food cannot raise.'),
+        ('Should I cut or bulk first?', 'If you are carrying enough fat that you would not be happy adding more, cut first. If you are already lean and training consistently, a modest surplus is the more productive direction.'),
+    ]
 )
 
 add(
@@ -996,8 +1142,39 @@ add(
     sec('''      <div class="panel">
         <h3>Why this matters for fat intake</h3>
         <p>Cholesterol is also the raw material your body uses to build steroid hormones like testosterone and estrogen — one more reason very low-fat diets can backfire on hormone production. See our piece on <a href="low-fat-diet-risks.html">the hidden risks of very low-fat diets</a> for the full picture.</p>
-      </div>''', bg="var(--color-fat-bg)", tight=True),
-    [("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("fats.html", "What fat actually does")]
+      </div>''', bg="var(--color-fat-bg)", tight=True) +
+    sec("""      <h2>What the numbers on a lipid panel mean</h2>
+      <table class="data-table">
+        <tr><th>Marker</th><th>What it measures</th><th>Why it matters</th></tr>
+        <tr><td>LDL cholesterol</td><td>Cholesterol carried in low-density lipoproteins</td><td>The particle that deposits cholesterol in artery walls; the main treatment target</td></tr>
+        <tr><td>HDL cholesterol</td><td>Cholesterol carried in high-density lipoproteins</td><td>Involved in transport back to the liver; higher is generally favourable but raising it with drugs has not improved outcomes</td></tr>
+        <tr><td>Triglycerides</td><td>Circulating fat</td><td>Responds strongly to alcohol, added sugar and excess calories</td></tr>
+        <tr><td>Total cholesterol</td><td>A sum, not a separate thing</td><td>Least useful on its own; a high value can come from high HDL</td></tr>
+        <tr><td>Non-HDL cholesterol</td><td>Total minus HDL</td><td>Captures all the atherogenic particles in one number</td></tr>
+      </table>
+      <p>This is why a single "cholesterol number" tells you very little. Two people with identical total cholesterol can have completely different risk depending on how it splits.</p>""") +
+    sec("""      <h2>Dietary cholesterol is not the main lever</h2>
+      <p>For decades the advice was to limit dietary cholesterol directly, which is why eggs and shellfish acquired their reputation. The evidence did not hold up for most people: the liver produces the large majority of circulating cholesterol and compensates when intake rises. Dietary guidelines in the U.S. dropped the specific numerical limit accordingly.</p>
+      <p>What moves blood lipids more reliably is the <em>pattern</em>: saturated and trans fat intake, soluble fibre, alcohol, added sugar, body composition and physical activity. A minority of people are genuine hyper-responders whose LDL climbs noticeably with dietary cholesterol &mdash; which is an argument for testing rather than for universal restriction. See <a href="egg-yolks-cholesterol-myth.html">the egg yolk question</a> in detail.</p>""") +
+    sec("""      <h2>What actually shifts the numbers</h2>
+      <ul class="checklist">
+        <li><strong>Replace saturated with unsaturated fat.</strong> The single best-supported dietary change for LDL.</li>
+        <li><strong>Add soluble fibre.</strong> Oats, barley, beans, psyllium and apples bind bile acids and modestly lower LDL.</li>
+        <li><strong>Cut alcohol and added sugar</strong> if triglycerides are the problem. These respond fast, often within weeks.</li>
+        <li><strong>Move regularly.</strong> Aerobic activity mainly improves triglycerides and HDL.</li>
+        <li><strong>Address body composition</strong> where relevant, which tends to improve every marker at once.</li>
+      </ul>
+      <div class="panel warn">
+        <h3>Genetics set the starting line</h3>
+        <p>Familial hypercholesterolaemia affects roughly 1 in 250 people and produces very high LDL from birth regardless of diet. If your LDL is markedly high, if it barely moves with sustained dietary change, or if close relatives had early heart disease, that is a conversation for a clinician, not a diet tweak.</p>
+      </div>""", bg="var(--color-fat-bg)", tight=True),
+    [("saturated-vs-unsaturated-fat.html", "Saturated vs. unsaturated fat"), ("low-fat-diet-risks.html", "Risks of very low-fat diets"), ("fats.html", "What fat actually does")],
+    faq=[
+        ('What is a normal cholesterol level?', 'Targets depend on your overall cardiovascular risk rather than one universal cut-off. Broadly, LDL below about 100 mg/dL (2.6 mmol/L) is considered desirable for most adults, with lower targets for people who already have cardiovascular disease. Interpret any result with a clinician who knows your full risk picture.'),
+        ('Do eggs raise cholesterol?', 'For most people, only modestly. The liver makes most of your circulating cholesterol and compensates when dietary intake rises. A minority are hyper-responders whose LDL does climb, which is a reason to test rather than to avoid eggs universally.'),
+        ('How can I lower cholesterol quickly?', 'Triglycerides respond fastest, often within weeks of cutting alcohol and added sugar. LDL moves more slowly and responds mainly to replacing saturated fat with unsaturated fat and increasing soluble fibre. Genuinely high LDL often needs medication alongside diet.'),
+        ('Is high HDL always good?', 'Not necessarily. HDL is associated with lower risk in observational data, but trials that raised HDL pharmacologically did not reduce cardiovascular events, so it is better read as a marker than a target.'),
+    ]
 )
 
 add(
@@ -1052,8 +1229,33 @@ add(
       </div>''') +
     sec('''      <h2>TDEE: your real daily number</h2>
       <p>Total Daily Energy Expenditure adds everything else on top of BMR: digesting food, daily movement, and exercise. It's estimated by multiplying BMR by an activity multiplier, ranging from about 1.2 (sedentary) to 1.9 (very high activity, physical job plus training).<sup class="ref"><a href="sources.html#cal2">[2]</a></sup> TDEE — not BMR — is the number that represents "maintenance calories," and it's the starting point for setting a deficit (fat loss) or surplus (muscle gain) goal.</p>
-      <p><a href="calculators.html" class="btn btn-primary">Calculate my BMR and TDEE →</a></p>''', bg="var(--color-fat-bg)", tight=True),
-    [("calculators.html", "Full macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle")]
+      <p><a href="calculators.html" class="btn btn-primary">Calculate my BMR and TDEE →</a></p>''', bg="var(--color-fat-bg)", tight=True) +
+    sec("""      <h2>The four parts of your daily burn</h2>
+      <table class="data-table">
+        <tr><th>Component</th><th>Share of TDEE</th><th>What it is</th></tr>
+        <tr><td>BMR</td><td>~60&ndash;70%</td><td>Keeping you alive at complete rest</td></tr>
+        <tr><td>NEAT</td><td>~15&ndash;30%</td><td>Walking, fidgeting, standing, everything unplanned</td></tr>
+        <tr><td>TEF</td><td>~10%</td><td>Energy spent digesting food</td></tr>
+        <tr><td>EAT</td><td>~5&ndash;10%</td><td>Deliberate exercise</td></tr>
+      </table>
+      <p>The surprise for most people is the bottom row. Deliberate exercise is usually the smallest component, while NEAT &mdash; the movement you never think about &mdash; varies more between individuals than exercise does. Two people of identical size can differ by hundreds of calories a day purely in NEAT.</p>""") +
+    sec("""      <h2>Why your calculated number is an estimate, not a measurement</h2>
+      <p>Predictive equations like Mifflin&ndash;St Jeor were built from population averages. For any individual they typically land within about 10% of measured BMR, which on a 2,400-calorie maintenance is a spread of roughly 240 calories &mdash; easily the difference between slow loss and slow gain.</p>
+      <p>They also lose accuracy at the extremes: very muscular people, people with obesity, and older adults are all predicted less well, because the equations infer lean mass from height and weight rather than measuring it.</p>
+      <div class="panel">
+        <h3>Use the calculator as a starting point</h3>
+        <p>Take the estimate, eat at it consistently for two to three weeks, and track weight and waist. Your real maintenance is whatever intake holds your weight steady &mdash; that measured answer beats any equation.</p>
+      </div>""") +
+    sec("""      <h2>Why TDEE moves as you diet</h2>
+      <p>Energy expenditure is not fixed. As you lose weight, BMR falls simply because there is less tissue to maintain. On top of that, NEAT tends to decline &mdash; people move less, often without noticing &mdash; and this adaptive component is a genuine driver of plateaus rather than an excuse.</p>
+      <p>Practically, this means the TDEE you calculated at the start of a cut is wrong by the middle of it. Recalculating every 4&ndash;6 kg of change, or simply adjusting when progress stalls for two to three weeks, keeps the target honest. See <a href="metabolic-damage-is-it-real.html">what metabolic adaptation actually is</a> for where this gets overstated.</p>""", bg="var(--color-carbs-bg)", tight=True),
+    [("calculators.html", "Full macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle")],
+    faq=[
+        ('What is the difference between BMR and TDEE?', 'BMR is the energy you burn at complete rest, keeping basic functions running. TDEE is your whole day: BMR plus digestion, deliberate exercise and all incidental movement. TDEE is the number to eat around; BMR is one input to it.'),
+        ('Should I eat below my BMR to lose weight?', 'Generally no. Eating below BMR usually means a very aggressive deficit that costs muscle, energy and adherence without speeding sustainable fat loss. Set the deficit against TDEE instead.'),
+        ('How accurate are TDEE calculators?', 'They are estimates from population equations and typically land within about 10% for an individual, which can be several hundred calories. Use the estimate as a start, then adjust based on two to three weeks of real weight data.'),
+        ('Why did my weight loss stall even though I did not change anything?', 'A smaller body burns less at rest, and incidental daily movement tends to fall during a deficit. Both shrink your TDEE over time, so an intake that once produced a deficit eventually becomes maintenance.'),
+    ]
 )
 
 add(
@@ -1069,8 +1271,40 @@ add(
         <li><strong>Let carbs fill the rest</strong> — after protein and fat are set, remaining calories go to carbohydrates, which support training performance and daily energy</li>
       </ul>''', bg="var(--color-carbs-bg)", tight=True) +
     sec('''      <p>Our calculator applies exactly this logic automatically when you select "Lose fat" as your goal — it raises your protein target and sets a moderate deficit for you.</p>
-      <p><a href="calculators.html" class="btn btn-primary">Set my fat-loss macros →</a></p>'''),
-    [("calculators.html", "Full macro calculator"), ("how-much-protein-per-day.html", "How much protein per day"), ("tdee-vs-bmr.html", "BMR vs. TDEE")]
+      <p><a href="calculators.html" class="btn btn-primary">Set my fat-loss macros →</a></p>''') +
+    sec("""      <h2>The order of operations</h2>
+      <p>Macros only matter inside a calorie deficit &mdash; but the split determines how much of the loss is fat rather than muscle, and how tolerable the whole thing is.</p>
+      <ol class="checklist">
+        <li><strong>Set the deficit.</strong> Roughly 10&ndash;20% below maintenance, targeting 0.5&ndash;1% of body weight per week.</li>
+        <li><strong>Set protein high.</strong> 1.6&ndash;2.2 g/kg, and toward the top of that range the leaner you get.</li>
+        <li><strong>Set a fat floor.</strong> About 20% of calories, or 0.5&ndash;1 g/kg.</li>
+        <li><strong>Carbohydrate takes the rest</strong>, tuned to how much you train.</li>
+      </ol>""") +
+    sec("""      <h2>Why protein does the heavy lifting</h2>
+      <p>Three separate mechanisms make protein the macro that changes outcomes in a deficit rather than just the numbers on a tracker.</p>
+      <ul class="checklist">
+        <li><strong>It protects muscle.</strong> In a deficit your body will break down tissue for amino acids; adequate intake plus resistance training is what steers loss toward fat.</li>
+        <li><strong>It is the most satiating macro</strong> per calorie, which reduces how much willpower the deficit costs.</li>
+        <li><strong>It has the highest thermic effect</strong> &mdash; roughly 20&ndash;30% of protein calories are spent digesting it, against about 5&ndash;10% for carbohydrate and 0&ndash;3% for fat.</li>
+      </ul>
+      <p>None of these make protein magic. They make it the macro to get right first when calories are limited.</p>""", bg="var(--color-protein-bg)", tight=True) +
+    sec("""      <h2>What the split does not decide</h2>
+      <p>Head-to-head trials of low-carbohydrate versus low-fat diets, with calories and protein matched, consistently find similar fat loss. The diet that works is the one you can run for months without it running your life. If you like bread, a very low-carbohydrate plan is a bad bet regardless of what it does in a twelve-week study.</p>
+      <p>Where splits do differ is in the experience: higher carbohydrate tends to preserve training performance, higher fat suits people who prefer fewer, larger meals. Pick for adherence, not for a metabolic edge that the data does not support.</p>""") +
+    sec("""      <h2>Common ways this goes wrong</h2>
+      <ul class="checklist">
+        <li><strong>Deficit too aggressive.</strong> Fast early loss, then muscle loss, hunger and a rebound.</li>
+        <li><strong>Protein set as a percentage.</strong> As calories fall, a fixed percentage cuts protein exactly when you need it most. Set it per kilogram.</li>
+        <li><strong>Fat cut to almost nothing</strong> to make room for carbohydrate, costing vitamin absorption and satiety.</li>
+        <li><strong>No maintenance phase planned.</strong> The end of a cut is where most regain happens.</li>
+      </ul>"""),
+    [("calculators.html", "Full macro calculator"), ("how-much-protein-per-day.html", "How much protein per day"), ("tdee-vs-bmr.html", "BMR vs. TDEE")],
+    faq=[
+        ('What is the best macro split for weight loss?', 'There is no single best split. Set a calorie deficit, put protein at 1.6-2.2 g/kg, keep fat at or above roughly 20% of calories, and let carbohydrate fill the rest. Within those guardrails, choose what you can sustain.'),
+        ('How much protein should I eat to lose weight?', 'Roughly 1.6-2.2 grams per kilogram of body weight, toward the higher end the leaner you are or the steeper the deficit. Protein protects muscle, satisfies hunger and costs the most energy to digest.'),
+        ('Is low carb better than low fat for fat loss?', 'Not when calories and protein are matched. Controlled trials find similar results, so the better choice is whichever you can stick to.'),
+        ('Why am I not losing weight in a calorie deficit?', 'The most common reasons are underestimating intake, a TDEE that has fallen as you lost weight, and normal water-weight fluctuation masking fat loss. Track a two to three week average rather than day-to-day readings before changing anything.'),
+    ]
 )
 
 add(
@@ -1829,8 +2063,35 @@ add(
     sec('''      <div class="panel">
         <h3>Why it matters even if your macros are perfect</h3>
         <p>Hitting a protein/fat/carb target doesn't guarantee adequate vitamin, mineral, or fiber intake — that's the core limitation of pure macro tracking discussed in our <a href="iifym-flexible-dieting.html">IIFYM article</a>. Prioritizing nutrient-dense foods (vegetables, fruit, lean proteins, whole grains, legumes) within your calorie and macro targets is how you get both numbers right and stay well-nourished.</p>
-      </div>''', bg="var(--color-carbs-bg)", tight=True),
-    [("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients"), ("iifym-flexible-dieting.html", "IIFYM explained"), ("fiber-benefits.html", "Why fiber matters")]
+      </div>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>Nutrient density is a ratio, not a badge</h2>
+      <p>The useful definition is simple: how many nutrients a food delivers relative to the calories it costs you. That framing matters because it makes the concept <em>relative to your intake</em> rather than a fixed property of the food. A person eating 3,200 calories to support heavy training has room for foods a person eating 1,500 calories does not.</p>
+      <table class="data-table">
+        <tr><th>Food</th><th>Approx. calories</th><th>Notable nutrients delivered</th></tr>
+        <tr><td>Spinach, 100 g</td><td>23</td><td>Vitamin K, folate, vitamin A, magnesium</td></tr>
+        <tr><td>Eggs, 2 large</td><td>140</td><td>Complete protein, choline, B12, selenium</td></tr>
+        <tr><td>Lentils, 1 cup cooked</td><td>230</td><td>Protein, fibre, folate, iron</td></tr>
+        <tr><td>Salmon, 100 g</td><td>~200</td><td>Protein, omega-3, vitamin D, B12</td></tr>
+        <tr><td>Soft drink, 330 ml</td><td>~140</td><td>None</td></tr>
+      </table>""") +
+    sec("""      <h2>Where the concept gets misused</h2>
+      <p>Three failure modes are worth naming, because most "superfood" content depends on them.</p>
+      <ul class="checklist">
+        <li><strong>Density per gram instead of per calorie.</strong> Spices top these lists because nobody eats 100 g of oregano.</li>
+        <li><strong>Ignoring the amount you actually eat.</strong> A nutrient-dense food eaten in trivial quantities contributes trivially.</li>
+        <li><strong>Ignoring bioavailability.</strong> Spinach is high in iron and calcium, but oxalates limit how much you absorb. Non-heme iron from plants absorbs far less readily than heme iron from meat &mdash; though vitamin C in the same meal helps considerably.</li>
+      </ul>
+      <p>The last point is why "highest in iron" lists mislead. What reaches your bloodstream matters more than what the label reports.</p>""") +
+    sec("""      <h2>Using it without turning food into a scoring system</h2>
+      <p>The practical version is boring and effective: build most meals from foods that bring nutrients along with their calories, and let the rest be whatever you enjoy. Energy-dense foods are not contraband &mdash; they are useful for athletes, for people with small appetites, and for people who are ill or recovering, where getting enough calories at all is the actual problem.</p>
+      <p>Nutrient density is a lens for allocating the calories you have. It stops being useful the moment it becomes a hierarchy of virtuous and forbidden foods.</p>""", bg="var(--color-carbs-bg)", tight=True),
+    [("micronutrients-vs-macronutrients.html", "Micronutrients vs. macronutrients"), ("iifym-flexible-dieting.html", "IIFYM explained"), ("fiber-benefits.html", "Why fiber matters")],
+    faq=[
+        ('What are the most nutrient-dense foods?', 'Consistently well-ranked options include leafy greens, organ meats such as liver, oily fish, eggs, legumes, cruciferous vegetables and shellfish. Any ranked list depends heavily on which nutrients are counted and whether density is measured per calorie or per gram.'),
+        ('Is nutrient density the same as low calorie?', 'No. It is a ratio of nutrients to calories, so calorie-dense foods like salmon, nuts and eggs can be highly nutrient-dense. Low calorie content alone says nothing about nutrients.'),
+        ('Are superfoods real?', 'Superfood is a marketing term, not a scientific category. The foods it labels are usually genuinely nutritious, but no single food meaningfully changes health outcomes on its own; overall dietary pattern does.'),
+        ('How do I eat more nutrient-dense foods?', 'Anchor each meal on a protein source, add a vegetable or fruit, and choose a minimally processed carbohydrate. That structure raises nutrient density without any tracking or scoring.'),
+    ]
 )
 
 add(
@@ -2196,8 +2457,36 @@ add(
     sec('''      <h2>The actual guideline</h2>
       <p>The U.S. National Academies' adequate intake for total water (from all beverages and food combined) is about 3.7 liters/day (~15.5 cups) for men and 2.7 liters/day (~11.5 cups) for women in a temperate climate. Roughly 20% of that typically comes from food, so beverage intake alone is somewhat lower than those totals.<sup class="ref"><a href="sources.html#gen1">[1]</a></sup></p>''') +
     sec('''      <h2>What changes the number</h2>
-      <p>Exercise, hot or humid climates, higher body size, pregnancy/breastfeeding, and high-sodium diets all raise fluid needs above the baseline. Thirst is a reasonably reliable guide for most healthy people day-to-day; pale yellow urine is a simple practical check for adequate hydration.<sup class="ref"><a href="sources.html#gen1">[1]</a></sup> For guidance specific to exercise duration and electrolyte needs during a workout, see our dedicated breakdown.</p>''', bg="var(--color-carbs-bg)", tight=True),
-    [("sports-drinks-vs-water.html", "Sports drinks vs. water"), ("water-weight-vs-fat-loss.html", "Water weight vs. fat loss"), ("tdee-vs-bmr.html", "BMR vs. TDEE")]
+      <p>Exercise, hot or humid climates, higher body size, pregnancy/breastfeeding, and high-sodium diets all raise fluid needs above the baseline. Thirst is a reasonably reliable guide for most healthy people day-to-day; pale yellow urine is a simple practical check for adequate hydration.<sup class="ref"><a href="sources.html#gen1">[1]</a></sup> For guidance specific to exercise duration and electrolyte needs during a workout, see our dedicated breakdown.</p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>Where the eight-glasses rule came from</h2>
+      <p>The "eight glasses a day" figure has no clear origin in the research literature. The most-cited candidate is a 1945 U.S. Food and Nutrition Board recommendation of about 2.5 litres daily &mdash; which included the sentence, usually dropped in retelling, that most of that quantity comes from prepared food.</p>
+      <p>The National Academies figures replaced it with something more useful: roughly <strong>3.7 litres of total water per day for men and 2.7 litres for women</strong>, where <em>total water</em> means everything &mdash; drinks, food moisture, and water produced by metabolism. Food typically supplies around 20% of that, so the amount you actually need to drink is meaningfully lower than the headline number.</p>""") +
+    sec("""      <h2>What actually changes your needs</h2>
+      <table class="data-table">
+        <tr><th>Factor</th><th>Direction</th><th>Why</th></tr>
+        <tr><td>Exercise</td><td>Up</td><td>Sweat losses vary enormously between people</td></tr>
+        <tr><td>Heat and humidity</td><td>Up</td><td>Humidity limits evaporative cooling, raising sweat rate</td></tr>
+        <tr><td>Altitude</td><td>Up</td><td>Increased breathing rate and urine output</td></tr>
+        <tr><td>Fever, vomiting, diarrhoea</td><td>Up</td><td>Direct fluid loss</td></tr>
+        <tr><td>High-fibre or high-protein intake</td><td>Slightly up</td><td>Both increase water demand for digestion and urea excretion</td></tr>
+        <tr><td>Some medical conditions and medicines</td><td>Varies</td><td>Certain heart, kidney and liver conditions require deliberate limits</td></tr>
+      </table>
+      <p>That last row is why blanket targets are a poor idea. If a clinician has given you a fluid restriction, it overrides every general guideline including this page.</p>""") +
+    sec("""      <h2>Reading your own signals</h2>
+      <p>For healthy adults with normal kidney function, thirst is a reasonably good guide, and urine colour is a rough second check &mdash; pale straw suggests adequate hydration, consistently dark suggests topping up. Both have real limits: thirst blunts with age, and B-vitamin supplements turn urine bright yellow regardless of hydration. See <a href="urine-color-thirst-hydration.html">what urine colour and thirst can and cannot tell you</a>.</p>
+      <div class="panel warn">
+        <h3>Overhydration is a real, if uncommon, risk</h3>
+        <p>Drinking far beyond your needs, particularly during long endurance events, can dilute blood sodium to dangerous levels &mdash; exercise-associated hyponatraemia. It is rarer than dehydration but more acutely dangerous. Drinking to thirst rather than to a schedule is the standard guard against it.</p>
+      </div>""", bg="var(--color-pop2-bg)", tight=True) +
+    sec("""      <h2>Do coffee and tea count?</h2>
+      <p>Yes. The idea that caffeinated drinks dehydrate you does not survive contact with the evidence: at habitual intakes the mild diuretic effect is outweighed by the fluid in the drink, so a cup of coffee makes a net positive contribution. The same holds for tea. Alcohol is the genuine exception &mdash; it suppresses vasopressin and produces a net fluid loss.</p>"""),
+    [("sports-drinks-vs-water.html", "Sports drinks vs. water"), ("water-weight-vs-fat-loss.html", "Water weight vs. fat loss"), ("tdee-vs-bmr.html", "BMR vs. TDEE")],
+    faq=[
+        ('Do I really need 8 glasses of water a day?', 'No. The National Academies set total water intake at about 3.7 litres a day for men and 2.7 for women, and roughly 20% of that comes from food. For most healthy adults, drinking to thirst across the day covers it.'),
+        ('Does coffee count toward water intake?', "Yes. At habitual intakes the fluid in coffee more than offsets caffeine's mild diuretic effect, so it makes a net positive contribution to hydration."),
+        ('What are the signs of dehydration?', 'Thirst, dark urine, headache, fatigue, dizziness on standing and reduced urine output. Confusion, fainting or a very high heart rate are signs of severe dehydration and need urgent medical attention.'),
+        ('Can you drink too much water?', 'Yes. Drinking far beyond need, especially during prolonged endurance exercise, can dilute blood sodium and cause exercise-associated hyponatraemia, which can be life-threatening. Drinking to thirst rather than on a fixed schedule is the usual safeguard.'),
+    ]
 )
 
 add(
@@ -2725,8 +3014,36 @@ add(
     sec('''      <h2>The actual difference</h2>
       <p>Whey and casein are both complete proteins derived from milk, supplying all 9 essential amino acids. The practical difference is digestion speed: whey is absorbed quickly, producing a fast spike in blood amino acids, while casein forms a gel in the stomach and releases amino acids slowly over several hours.<sup class="ref"><a href="sources.html#p2">[1]</a></sup></p>''') +
     sec('''      <h2>When each makes more sense</h2>
-      <p>Whey's fast absorption fits post-workout or any time you want protein quickly. Casein's slow release fits before a long gap without food — before bed being the most common use case, to keep amino acids available overnight. Neither is inherently superior for muscle building; given our earlier point on the <a href="post-workout-anabolic-window.html">post-workout anabolic window</a>, total daily protein intake matters far more than which type you use when.</p>''', bg="var(--color-protein-bg)", tight=True),
-    [("bcaas-explained.html", "BCAAs explained"), ("protein-powder-101.html", "Protein powder 101"), ("protein-timing.html", "Does protein timing matter?")]
+      <p>Whey's fast absorption fits post-workout or any time you want protein quickly. Casein's slow release fits before a long gap without food — before bed being the most common use case, to keep amino acids available overnight. Neither is inherently superior for muscle building; given our earlier point on the <a href="post-workout-anabolic-window.html">post-workout anabolic window</a>, total daily protein intake matters far more than which type you use when.</p>''', bg="var(--color-protein-bg)", tight=True) +
+    sec("""      <h2>Why they behave differently in the gut</h2>
+      <p>Whey and casein are both milk proteins, separated during cheesemaking. The difference that matters is what they do in stomach acid: casein forms a gel, so it empties slowly and releases amino acids over several hours. Whey stays soluble, empties fast, and produces a sharp rise in blood amino acids within roughly 30&ndash;60 minutes.</p>
+      <table class="data-table">
+        <tr><th></th><th>Whey</th><th>Casein</th></tr>
+        <tr><td>Share of milk protein</td><td>~20%</td><td>~80%</td></tr>
+        <tr><td>Digestion speed</td><td>Fast</td><td>Slow</td></tr>
+        <tr><td>Amino acid pattern</td><td>Very high leucine</td><td>High, but lower leucine per gram</td></tr>
+        <tr><td>Peak in blood</td><td>~30&ndash;60 minutes</td><td>Gradual over ~4&ndash;7 hours</td></tr>
+        <tr><td>Texture in liquid</td><td>Thin</td><td>Thick, pudding-like</td></tr>
+      </table>""") +
+    sec("""      <h2>Does the speed difference change results?</h2>
+      <p>Less than the marketing implies. Whey produces a larger acute spike in muscle protein synthesis, largely because of its leucine content. But studies running for weeks to months, with total daily protein matched, generally find small or no differences in muscle and strength gains between the two.</p>
+      <p>The reason is straightforward: muscle is built over months from your <em>total</em> daily protein intake, not from the height of any single post-workout peak. Once you are hitting roughly 1.6&ndash;2.2 g/kg spread across the day, which powder you chose is a detail.</p>""") +
+    sec("""      <h2>Practical picks</h2>
+      <ul class="checklist">
+        <li><strong>Around training:</strong> whey, mostly because it mixes thin and sits lightly, not because the timing is critical.</li>
+        <li><strong>Before a long gap without food, including overnight:</strong> casein, for the slower release and because it is more filling.</li>
+        <li><strong>Managing hunger on a deficit:</strong> casein's thickness and slow digestion make it more satiating per calorie.</li>
+        <li><strong>Lactose intolerance:</strong> whey isolate is filtered to very little lactose; whey concentrate retains more.</li>
+        <li><strong>Dairy-free:</strong> a soy or pea-rice blend, since single plant proteins are lower in specific essential amino acids.</li>
+      </ul>
+      <p>Whole food does the same job. A cup of Greek yoghurt or cottage cheese is naturally casein-dominant; milk is both, in roughly the 80/20 split above. Powder is convenience, not a different category of nutrition. See <a href="protein-powder-101.html">how the powder types compare</a>.</p>""", bg="var(--color-protein-bg)", tight=True),
+    [("bcaas-explained.html", "BCAAs explained"), ("protein-powder-101.html", "Protein powder 101"), ("protein-timing.html", "Does protein timing matter?")],
+    faq=[
+        ('Is whey or casein better for building muscle?', 'Over weeks and months with total daily protein matched, studies generally show small or no difference. Whey produces a bigger acute rise in muscle protein synthesis, but total daily intake matters far more than which powder supplied it.'),
+        ('Should I take casein before bed?', 'It is a reasonable choice: casein digests slowly and keeps amino acids available overnight, and pre-sleep protein has been shown to support overnight muscle protein synthesis. The benefit comes largely from adding the protein at all rather than from casein specifically.'),
+        ('Can you mix whey and casein?', 'Yes, and many blends do exactly that to combine a fast rise with a longer tail. Milk is a naturally occurring version of the same blend.'),
+        ('Is whey protein bad for your kidneys?', 'In people with healthy kidneys there is no good evidence that higher protein intakes cause damage. People with existing kidney disease do need individualised protein guidance from a clinician.'),
+    ]
 )
 
 add(
