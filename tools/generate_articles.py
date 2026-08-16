@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260817c"
+ASSET_VERSION = "20260818f"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -259,6 +259,8 @@ def page(slug, title, meta, category, eyebrow, h1, intro, body, related, extra_h
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html")}
 {extra_head}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
@@ -1407,6 +1409,8 @@ def build_hub():
 <link rel="canonical" href="https://getmacros.net/articles.html">
 {seo_meta("All Nutrition Articles", "Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, diet breakdowns, food lists, and calculator explainers.", "https://getmacros.net/articles.html", og_type="website")}
 {hub_jsonld()}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
@@ -1484,6 +1488,8 @@ def build_about():
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
 {about_jsonld(url)}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
@@ -1570,6 +1576,8 @@ def build_privacy():
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
 {webpage_jsonld(title, meta, url)}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
@@ -1685,6 +1693,8 @@ def build_contact():
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
 {contact_jsonld(url)}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
@@ -1765,6 +1775,8 @@ def build_terms():
 <link rel="canonical" href="{url}">
 {seo_meta(title, meta, url, og_type="website")}
 {webpage_jsonld(title, meta, url)}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
@@ -1862,6 +1874,8 @@ def build_404():
 <title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
 {seo_meta(title, meta, url, og_type="website")}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>

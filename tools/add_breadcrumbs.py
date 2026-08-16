@@ -55,6 +55,9 @@ def main():
                     break
         if not hub:
             hub = "topics.html" if f.endswith("-guides.html") else "articles.html"
+        if hub == f:
+            # A hub is its own fallback; fall back again rather than repeating it.
+            hub = "topics.html" if f != "topics.html" else "articles.html"
 
         for p in (hub, f):
             if p not in names:

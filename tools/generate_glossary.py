@@ -148,6 +148,8 @@ def build():
 <link rel="canonical" href="https://getmacros.net/glossary.html">
 {glossary_jsonld()}
 {seo_meta("Nutrition Glossary: A-Z Terms for Students", "An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.", "https://getmacros.net/glossary.html", og_type="website")}
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
