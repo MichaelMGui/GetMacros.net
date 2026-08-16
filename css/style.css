@@ -3,57 +3,57 @@
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/fraunces-latin-400-normal.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
+  font-weight: 400; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/fraunces-latin-500-normal.woff2") format("woff2");
-  font-weight: 500; font-style: normal; font-display: swap;
+  font-weight: 500; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/fraunces-latin-600-normal.woff2") format("woff2");
-  font-weight: 600; font-style: normal; font-display: swap;
+  font-weight: 600; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/fraunces-latin-600-italic.woff2") format("woff2");
-  font-weight: 600; font-style: italic; font-display: swap;
+  font-weight: 600; font-style: italic; font-display: optional;
 }
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/fraunces-latin-700-normal.woff2") format("woff2");
-  font-weight: 700; font-style: normal; font-display: swap;
+  font-weight: 700; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/fraunces-latin-900-normal.woff2") format("woff2");
-  font-weight: 900; font-style: normal; font-display: swap;
+  font-weight: 900; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Inter";
   src: url("/fonts/inter-latin-400-normal.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
+  font-weight: 400; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Inter";
   src: url("/fonts/inter-latin-500-normal.woff2") format("woff2");
-  font-weight: 500; font-style: normal; font-display: swap;
+  font-weight: 500; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Inter";
   src: url("/fonts/inter-latin-600-normal.woff2") format("woff2");
-  font-weight: 600; font-style: normal; font-display: swap;
+  font-weight: 600; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Inter";
   src: url("/fonts/inter-latin-700-normal.woff2") format("woff2");
-  font-weight: 700; font-style: normal; font-display: swap;
+  font-weight: 700; font-style: normal; font-display: optional;
 }
 @font-face {
   font-family: "Inter";
   src: url("/fonts/inter-latin-800-normal.woff2") format("woff2");
-  font-weight: 800; font-style: normal; font-display: swap;
+  font-weight: 800; font-style: normal; font-display: optional;
 }
 
 /* Fallback faces tuned to the web fonts' metrics so the swap causes no reflow. */
@@ -81,8 +81,8 @@
   --color-text-muted: #607168;
   --color-border: #dce5de;
 
-  --color-protein: #e0473b;
-  --color-protein-bg: #fdeae7;
+  --color-protein: #8c2b23;
+  --color-protein-bg: #f7e8e6;
   --color-fat: #6f6040;
   --color-fat-bg: #f1eee4;
   --color-carbs: #178a5a;
@@ -175,7 +175,7 @@ a:hover { color: var(--color-primary); }
 /* ---------- Header / Nav ---------- */
 
 .site-header {
-  background: rgba(251, 247, 240, 0.86);
+  background: rgba(247, 248, 243, 0.9);
   backdrop-filter: blur(10px) saturate(1.4);
   -webkit-backdrop-filter: blur(10px) saturate(1.4);
   border-bottom: 1px solid var(--color-border);

@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260818f"
+ASSET_VERSION = "20260818i"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
