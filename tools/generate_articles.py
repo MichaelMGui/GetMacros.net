@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260818i"
+ASSET_VERSION = "20260818j"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -929,8 +929,45 @@ add(
     sec('''      <div class="panel">
         <h3>Common mistake</h3>
         <p>Multiplying by the wrong number of servings is the single biggest source of tracking error. Before logging a food, check how many servings you're actually eating and multiply every number on the label accordingly — not just the calories.</p>
-      </div>''', bg="var(--color-fat-bg)", tight=True),
-    [("high-protein-foods-list.html", "High-protein foods list"), ("calculators.html", "Macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss")]
+      </div>''', bg="var(--color-fat-bg)", tight=True) +
+    sec("""      <h2>Read it in this order</h2>
+      <p>Most people read a label top to bottom and get misled by line three. This order surfaces the things that actually change a decision.</p>
+      <ol class="checklist">
+        <li><strong>Serving size first, always.</strong> Every number below it is per serving, not per package. A bag with 2.5 servings quietly multiplies everything by 2.5.</li>
+        <li><strong>Calories, adjusted for what you will really eat.</strong> Not what the manufacturer decided a portion is.</li>
+        <li><strong>The nutrients you are actually managing.</strong> Protein and fibre if you want more; saturated fat, sodium and added sugar if you want less.</li>
+        <li><strong>The ingredient list.</strong> Ordered by weight, so the first three tell you most of what the food is.</li>
+        <li><strong>Front-of-pack claims last, if at all.</strong> They are marketing, and they are chosen precisely to distract from the panel.</li>
+      </ol>""") +
+    sec("""      <h2>Where labels are legally allowed to mislead you</h2>
+      <table class="data-table">
+        <tr><th>What it says</th><th>What it can actually mean</th></tr>
+        <tr><td>0 g trans fat</td><td>Up to 0.5 g per serving, roundable to zero. Check the ingredients for partially hydrogenated oil.</td></tr>
+        <tr><td>Calorie free</td><td>Under 5 calories per serving</td></tr>
+        <tr><td>Sugar free</td><td>Under 0.5 g of sugar per serving &mdash; sugar alcohols and starches still count as carbohydrate</td></tr>
+        <tr><td>Made with whole grain</td><td>Any amount at all, even if refined flour dominates</td></tr>
+        <tr><td>Natural</td><td>Very little in most jurisdictions; not the same as organic or minimally processed</td></tr>
+        <tr><td>Light / lite</td><td>Reduced against the brand's own regular version, which may still be high</td></tr>
+      </table>
+      <p>None of these are lies. They are legal definitions that do not mean what shoppers assume, which is exactly why the panel beats the front of the box.</p>""", bg="var(--color-fat-bg)", tight=True) +
+    sec("""      <h2>The %DV shortcut worth knowing</h2>
+      <p>Percent Daily Value is calculated against a 2,000-calorie reference, so it will not match your intake exactly. It is still useful as a quick sort: <strong>5% or less is a little, 20% or more is a lot</strong>. That single heuristic turns the right-hand column from noise into a fast read.</p>
+      <p>Two caveats. Protein usually has no %DV listed in the U.S. unless a claim is made, so judge it in grams. And %DV for added sugar is worth watching specifically, because it is separated from naturally occurring sugar for a reason.</p>""") +
+    sec("""      <h2>What the ingredient list gives away</h2>
+      <ul class="checklist">
+        <li><strong>Order is by weight.</strong> If a sweetener is second, the food is largely sweetener.</li>
+        <li><strong>Sugar wears many names.</strong> Cane juice, dextrose, maltose, syrup, concentrate. Splitting one sweetener across several names pushes each further down the list.</li>
+        <li><strong>Short lists are not automatically better.</strong> Some long entries are added vitamins; some short ones are refined starch and oil.</li>
+        <li><strong>Allergens are bolded or in a Contains line</strong> in most markets, and cross-contact warnings are voluntary rather than standardised.</li>
+      </ul>
+      <p>For the fuller picture on portion traps specifically, see <a href="food-labels-serving-size-traps.html">serving size traps</a>.</p>"""),
+    [("high-protein-foods-list.html", "High-protein foods list"), ("calculators.html", "Macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss")],
+    faq=[
+        ('What should I look at first on a nutrition label?', 'The serving size. Every other number on the panel is expressed per serving, so if the package holds two or three servings the calories, sugar and sodium you actually consume are two or three times what the panel shows.'),
+        ('What does %DV mean on a food label?', 'Percent Daily Value compares one serving against a 2,000-calorie reference diet. The quick rule: 5% or less of a nutrient is a little, 20% or more is a lot.'),
+        ('Can a label say 0g trans fat and still contain trans fat?', 'Yes. Amounts under 0.5 g per serving can legally be rounded to zero. If the ingredient list names partially hydrogenated oil, the product contains some.'),
+        ('Does the ingredient order matter?', 'Yes, ingredients are listed by weight, so the first few make up most of the product. Watch for one sweetener split across several names, which pushes each individual entry further down the list.'),
+    ]
 )
 
 add(
@@ -1323,8 +1360,41 @@ add(
         <li><strong>Track your rate of gain</strong> — if the scale is climbing quickly, the surplus is probably larger than it needs to be</li>
       </ul>''', bg="var(--color-protein-bg)", tight=True) +
     sec('''      <p>Selecting "Build muscle" in our calculator applies a modest surplus and a higher protein target automatically.</p>
-      <p><a href="calculators.html" class="btn btn-primary">Set my muscle-building macros →</a></p>'''),
-    [("calculators.html", "Full macro calculator"), ("protein-for-muscle-growth.html", "Protein for muscle growth"), ("what-is-glycogen.html", "What is glycogen?")]
+      <p><a href="calculators.html" class="btn btn-primary">Set my muscle-building macros →</a></p>''') +
+    sec("""      <h2>Set the surplus before the split</h2>
+      <p>Muscle needs a small energy surplus, training that gives it a reason to grow, and enough protein to build from. The order matters, because a perfect macro split in a calorie deficit still will not build much.</p>
+      <table class="data-table">
+        <tr><th>Input</th><th>Target</th><th>Why</th></tr>
+        <tr><td>Calories</td><td>5&ndash;15% above maintenance</td><td>Bigger surpluses add fat, not muscle faster</td></tr>
+        <tr><td>Protein</td><td>1.6&ndash;2.2 g/kg</td><td>Above this the extra adds little for most people</td></tr>
+        <tr><td>Fat</td><td>0.8&ndash;1.2 g/kg</td><td>Supports hormone production; keeps the diet palatable</td></tr>
+        <tr><td>Carbohydrate</td><td>The remainder</td><td>Fuels the training that drives the growth signal</td></tr>
+        <tr><td>Rate of gain</td><td>0.25&ndash;0.5% body weight per week</td><td>Faster is mostly fat past the beginner stage</td></tr>
+      </table>""") +
+    sec("""      <h2>Why carbohydrate matters more here than people expect</h2>
+      <p>Protein gets the attention, but carbohydrate is what lets you train hard enough to need the protein. Glycogen fuels the sets that create the growth stimulus, and training quality declines quickly on very low intakes. Carbohydrate is also protein-sparing: with enough of it, dietary protein goes toward building tissue rather than being used for energy.</p>
+      <p>This is why very low-carbohydrate bulks tend to underperform. They are not impossible, but they make the hard part harder for no clear return.</p>""", bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>How fast can you realistically gain?</h2>
+      <ul class="checklist">
+        <li><strong>First year of serious training:</strong> roughly 0.5&ndash;1 kg of muscle per month is achievable.</li>
+        <li><strong>Second to third year:</strong> perhaps half that.</li>
+        <li><strong>Beyond that:</strong> measured in a few kilograms a year, not a month.</li>
+      </ul>
+      <p>These are averages, and genetics, sleep, age and training history all move them. The practical implication is the same either way: if the scale is climbing faster than about 0.5% of body weight per week, the extra is very unlikely to be muscle. Slowing down loses nothing and saves a longer cut later.</p>""") +
+    sec("""      <h2>Common mistakes</h2>
+      <ul class="checklist">
+        <li><strong>Dirty bulking.</strong> A large surplus does not accelerate muscle growth; it accelerates fat gain, which shortens the productive part of the bulk.</li>
+        <li><strong>Protein far above 2.2 g/kg.</strong> Well-tolerated, but the extra grams displace carbohydrate that would have fuelled training.</li>
+        <li><strong>Chasing the anabolic window</strong> while missing the daily total. Timing is a rounding error next to consistency &mdash; see <a href="post-workout-anabolic-window.html">the anabolic window in detail</a>.</li>
+        <li><strong>Not progressing the training.</strong> Food permits growth; the training is what asks for it.</li>
+      </ul>"""),
+    [("calculators.html", "Full macro calculator"), ("protein-for-muscle-growth.html", "Protein for muscle growth"), ("what-is-glycogen.html", "What is glycogen?")],
+    faq=[
+        ('How many calories should I eat to build muscle?', 'Roughly 5-15% above maintenance, aiming for about 0.25-0.5% of body weight gained per week. For most people that is a surplus of a few hundred calories rather than a thousand.'),
+        ('How much protein do I need to build muscle?', 'About 1.6-2.2 grams per kilogram of body weight per day. Studies consistently show little additional benefit above roughly 2.2 g/kg once training and calories are adequate.'),
+        ('Can you build muscle without a calorie surplus?', 'Sometimes. Beginners, people returning after a break and those with higher body fat can gain muscle at or near maintenance. With training experience it becomes much harder.'),
+        ('How long does it take to build noticeable muscle?', 'Most people see visible change in 8-12 weeks of consistent training and adequate eating. First-year gains are the fastest you will ever have; progress slows substantially after that.'),
+    ]
 )
 
 add(
@@ -2829,8 +2899,35 @@ add(
     sec('''      <h2>What actually matters: total intake, not timing</h2>
       <p>For fat loss and general health, total daily carbohydrate and calorie intake predicts outcomes far more reliably than what time of day you eat them. Studies comparing carb-heavy-morning vs. carb-heavy-evening eating patterns with matched total calories generally find no meaningful difference in weight or fat loss.<sup class="ref"><a href="sources.html#cal2">[1]</a></sup></p>''') +
     sec('''      <h2>Where timing has a real, smaller effect</h2>
-      <p>The one place timing has a genuine, evidence-backed role is around exercise: eating carbs before and after a hard training session supports performance and glycogen replenishment more directly than eating the same carbs at a random time of day.<sup class="ref"><a href="sources.html#c2">[2]</a></sup> That's a performance optimization, though — not a fat-loss requirement.</p>''', bg="var(--color-carbs-bg)", tight=True),
-    [("carb-loading-for-athletes.html", "Carb loading for athletes"), ("post-workout-anabolic-window.html", "The post-workout anabolic window"), ("meal-frequency-and-metabolism.html", "Meal frequency and metabolism")]
+      <p>The one place timing has a genuine, evidence-backed role is around exercise: eating carbs before and after a hard training session supports performance and glycogen replenishment more directly than eating the same carbs at a random time of day.<sup class="ref"><a href="sources.html#c2">[2]</a></sup> That's a performance optimization, though — not a fat-loss requirement.</p>''', bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>What timing actually changes</h2>
+      <p>For body composition, total daily intake does the overwhelming majority of the work. Timing moves the needle in narrower situations, and it is worth being precise about which.</p>
+      <table class="data-table">
+        <tr><th>Situation</th><th>Does timing matter?</th></tr>
+        <tr><td>General fat loss or maintenance</td><td>Barely. Eat carbohydrate when it suits your appetite and routine.</td></tr>
+        <tr><td>Two hard sessions in one day</td><td>Yes. Refilling glycogen between them measurably affects the second session.</td></tr>
+        <tr><td>Endurance events over ~90 minutes</td><td>Yes. Intake during the event is a genuine performance variable.</td></tr>
+        <tr><td>Sleep quality</td><td>Possibly. Some people sleep better with an evening carbohydrate-containing meal.</td></tr>
+        <tr><td>Appetite control</td><td>Individual. Front-loading suits some; saving more for the evening suits others.</td></tr>
+      </table>""") +
+    sec("""      <h2>The night-time carbohydrate myth</h2>
+      <p>The idea that carbohydrate eaten after some cut-off is stored as fat does not hold up. Your body does not switch metabolic mode at a clock time; it responds to total energy balance across days. Studies that hold calories constant and shift carbohydrate later in the day do not show worse fat loss &mdash; and some find the evening group reports better satiety and sleep.</p>
+      <p>Where the myth gets its plausibility: late eating often means unplanned snacking on top of a full day's intake, which is a calorie problem wearing a timing costume.</p>""", bg="var(--color-carbs-bg)", tight=True) +
+    sec("""      <h2>If you do want to time it</h2>
+      <ul class="checklist">
+        <li><strong>Before training:</strong> 1&ndash;4 hours out, a mixed meal with carbohydrate tops up glycogen and steadies energy.</li>
+        <li><strong>During training:</strong> only relevant beyond about 90 minutes of sustained effort.</li>
+        <li><strong>After training:</strong> useful when the next hard session is within roughly 8 hours; otherwise the day's total is what matters.</li>
+        <li><strong>Evening:</strong> a reasonable default if it helps you sleep or stops late snacking.</li>
+      </ul>
+      <p>The honest summary: hit your daily carbohydrate target consistently, then use timing to solve a specific problem &mdash; a flat session, poor sleep, evening hunger &mdash; rather than as a rule to obey.</p>"""),
+    [("carb-loading-for-athletes.html", "Carb loading for athletes"), ("post-workout-anabolic-window.html", "The post-workout anabolic window"), ("meal-frequency-and-metabolism.html", "Meal frequency and metabolism")],
+    faq=[
+        ('Is it bad to eat carbs at night?', 'No. Studies holding calories constant find no fat-loss penalty for eating carbohydrate later in the day, and some report better sleep and satiety. Late-night eating causes problems when it adds calories on top of a full day, not because of the hour.'),
+        ('Should I eat carbs before or after a workout?', 'Both work. A mixed meal one to four hours before training supports the session; eating afterwards matters most when another hard session is coming within about eight hours. Otherwise the daily total is what counts.'),
+        ('Do carbs before bed cause weight gain?', 'Not by themselves. Weight gain follows a sustained calorie surplus regardless of when those calories are eaten.'),
+        ('When should endurance athletes eat carbs?', 'Before and during efforts lasting beyond roughly 90 minutes, and again soon afterwards when the next session is within about eight hours. This is the one context where timing is a genuine performance variable.'),
+    ]
 )
 
 add(

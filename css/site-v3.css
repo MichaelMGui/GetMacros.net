@@ -11,3 +11,8 @@
 @media(max-width:1120px){.full-nav{min-height:120px}}@media(max-width:650px){.full-nav{min-height:112px}}
 .site-v3 .breadcrumb>.container,.site-v3 .breadcrumb{white-space:nowrap}.site-v3 .breadcrumb>.container{overflow-x:auto;overflow-y:hidden;scrollbar-width:none}.site-v3 .breadcrumb>.container::-webkit-scrollbar{display:none}
 .site-v3 .wg-headline{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:22px 0}.site-v3 .wg-headline>div{background:var(--v3-mint);border:1px solid var(--v3-line);border-radius:18px;padding:18px 20px}.site-v3 .wg-headline span{display:block;font-size:.74rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--v3-muted)}.site-v3 .wg-headline strong{display:block;font-size:1.9rem;line-height:1.15;margin:4px 0 2px;color:var(--v3-ink)}.site-v3 .wg-headline small{color:var(--v3-muted);font-size:.8rem}.site-v3 .wg-summary{font-size:1.02rem;margin:6px 0 22px}
+/* Language switcher parked. Only the three homepages are translated, so on
+   446 of 449 pages the control promised something the site cannot deliver.
+   /es/ and /fr/ stay live and their hreflang tags stay valid; delete this one
+   rule to bring the switcher back once there is translated content behind it. */
+.lang-switch{display:none}
