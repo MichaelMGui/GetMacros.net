@@ -293,6 +293,11 @@ def localize(src, loc):
 
     # 2. Language metadata.
     html = html.replace('<html lang="en">', f'<html lang="{LOCALES[loc]["lang"]}">')
+    # index.html carries its own hreflang cluster. Drop it before rewriting
+    # self-referencing URLs, otherwise the blanket getmacros.net/ substitution
+    # below turns the "en" and "x-default" alternates into this locale and the
+    # page ships two conflicting clusters.
+    html = re.sub(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*"\s*/?>', "", html)
     html = html.replace('href="https://getmacros.net/"', f'href="https://getmacros.net/{loc}/"')
     html = html.replace('content="https://getmacros.net/"', f'content="https://getmacros.net/{loc}/"')
     html = html.replace('"url":"https://getmacros.net/"', f'"url":"https://getmacros.net/{loc}/"')

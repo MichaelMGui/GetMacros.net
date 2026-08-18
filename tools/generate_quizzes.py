@@ -6,7 +6,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, AUTHOR_NAME, ASSET_VERSION  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, HERO_STYLE, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, breadcrumb_trail, AUTHOR_NAME, ASSET_VERSION  # noqa: E402
 
 QUIZZES = []
 
@@ -580,7 +580,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Quiz", category=category)}
-{breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
+{breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quizzes & games", hub_url="https://getmacros.net/quiz.html")}
 <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
@@ -593,7 +593,7 @@ def page(slug, title, meta, category, eyebrow, h1, intro, questions, moreHref, t
 {ICON_SPRITE}
 {nav_html("quiz")}
 
-<main id="main-content">
+<main id="main-content">{breadcrumb_trail(title, hub_name="Quizzes & games", hub_href="quiz.html")}
   <section class="{hero_class}" style="{HERO_STYLE[category]}">
     <div class="container">
       <p class="eyebrow">{eyebrow}</p>

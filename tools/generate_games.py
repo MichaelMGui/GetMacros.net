@@ -6,7 +6,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, SITEMAP_LASTMOD, AUTHOR_NAME, ASSET_VERSION  # noqa: E402
+from generate_articles import ROOT, nav_html, FOOTER, ARTICLES, CORE_PAGES, ICON_SPRITE, ADSENSE_LOADER, AD_SLOT, seo_meta, article_jsonld, breadcrumb_jsonld, breadcrumb_trail, SITEMAP_LASTMOD, AUTHOR_NAME, ASSET_VERSION  # noqa: E402
 from generate_quizzes import QUIZZES  # noqa: E402
 
 MEMORY_PAIRS = [
@@ -187,7 +187,7 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 <link rel="canonical" href="https://getmacros.net/{slug}.html">
 {seo_meta(title, meta, f"https://getmacros.net/{slug}.html", category=category)}
 {article_jsonld(title, meta, f"https://getmacros.net/{slug}.html", kind="Game", category=category)}
-{breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quiz", hub_url="https://getmacros.net/quiz.html")}
+{breadcrumb_jsonld(title, f"https://getmacros.net/{slug}.html", hub_name="Quizzes & games", hub_url="https://getmacros.net/quiz.html")}
 <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
@@ -200,7 +200,7 @@ def game_page(slug, title, icon, meta, intro, body_script, category="general"):
 {ICON_SPRITE}
 {nav_html("quiz")}
 
-<main id="main-content">
+<main id="main-content">{breadcrumb_trail(title, hub_name="Quizzes & games", hub_href="quiz.html")}
   <section class="page-hero" style="background:var(--color-primary-dark); color:#fff;">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#{icon}"/></svg> Game</p>
@@ -277,7 +277,7 @@ def build_quiz_hub():
 {nav_html("quiz")}
 
 <main id="main-content">
-  <section class="hero page-hero" style="background: linear-gradient(160deg, rgba(224,71,59,.85), rgba(221,154,31,.75) 55%, rgba(23,138,90,.85))">
+  <section class="hero page-hero" style="background: linear-gradient(160deg, rgba(27,107,74,.92), rgba(75,158,105,.82) 55%, rgba(23,138,90,.9))">
     <div class="container">
       <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"/></svg> Study tools</p>
       <h1>Quiz yourself</h1>

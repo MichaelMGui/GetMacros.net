@@ -16,6 +16,10 @@ from collections import defaultdict
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 PER_PAGE = 6
 MARK = "related-explore"
+# Regenerate existing blocks instead of leaving them alone. Hub labels and
+# titles change; a block written on an earlier run would otherwise keep
+# quoting text that no longer appears anywhere on the site.
+REBUILD = True
 
 
 def hub_of(c):
@@ -78,7 +82,7 @@ def main():
             continue
         for i, f in enumerate(members):
             c = cache[f]
-            if MARK in c:
+            if MARK in c and not REBUILD:
                 continue
             # rotate the window so every sibling gets linked a similar number of times
             picks = [members[(i + 1 + k) % n] for k in range(min(PER_PAGE, n - 1))]

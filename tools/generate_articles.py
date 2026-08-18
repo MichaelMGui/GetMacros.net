@@ -24,7 +24,7 @@ DATE_PUBLISHED = "2026-08-10"
 DATE_MODIFIED = "2026-08-13"
 # Bumped whenever css/js changes, so browsers fetch the new file instead of
 # pairing fresh HTML with a stale cached stylesheet.
-ASSET_VERSION = "20260818j"
+ASSET_VERSION = "20260818k"
 
 # Social share cards, one per content category (1200x630).
 OG_IMAGE = {
@@ -96,6 +96,22 @@ def breadcrumb_jsonld(title, url, hub_name="Articles", hub_url="https://getmacro
         ],
     }
     return '<script type="application/ld+json">' + json.dumps(data).replace("</", "<\\/") + "</script>"
+
+
+def breadcrumb_trail(title, hub_name="Articles", hub_href="articles.html"):
+    """Visible counterpart to breadcrumb_jsonld.
+
+    Structured data should describe what the page actually shows, so any page
+    emitting a BreadcrumbList renders this trail too.
+    """
+    return (
+        '<nav class="breadcrumb" aria-label="Breadcrumb"><div class="container">'
+        '<a href="index.html">Home</a> <span aria-hidden="true">&rsaquo;</span> '
+        f'<a href="{hub_href}">{esc_html(hub_name)}</a> '
+        '<span aria-hidden="true">&rsaquo;</span> '
+        f'<span aria-current="page">{esc_html(title)}</span>'
+        '</div></nav>'
+    )
 
 
 def webpage_jsonld(title, description, url):
