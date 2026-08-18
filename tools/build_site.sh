@@ -11,6 +11,7 @@ python3 tools/generate_glossary.py
 # Post-passes over the hand-authored pages the generators do not own.
 python3 tools/build_localized_homepages.py
 python3 tools/migrate_to_v3.py
+python3 tools/build_meal_finder.py
 python3 tools/add_breadcrumbs.py
 python3 tools/fix_breadcrumb_labels.py
 python3 tools/add_related_links.py
