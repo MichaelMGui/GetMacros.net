@@ -1,419 +1,140 @@
-/* Guided fast-food meal quiz.
- *
- * Four questions, each with one job:
- *
- *   1. occasion    - breakfast or a main meal. This is when you are eating,
- *                    which is why it is its own question. An earlier version
- *                    listed "breakfast" among vegetarian and gluten-aware,
- *                    filing a time of day as something people cannot eat.
- *   2. restriction - the only answers that actually remove meals, because a
- *                    wrong result here is not a compromise, it is a meal
- *                    someone cannot order.
- *   3. priority    - what you want out of it. Multi-select and additive: these
- *                    reorder the list rather than cutting it down, so a fourth
- *                    answer sharpens the ranking instead of emptying the page.
- *   4. place       - where you are. Skippable, and skipping is the default.
- *
- * Option labels carry the actual thresholds ("25 g or more"), read from
- * GM_THRESHOLDS, which is the same source the tags are derived from. A label
- * cannot promise a number the data does not apply.
- */
+/* Goal-first restaurant meal finder. */
 (function () {
   "use strict";
-
   var meals = window.GM_MEALS || [];
-  var T = window.GM_THRESHOLDS || {};
+  var T = window.GM_THRESHOLDS || { protein: 25, energy: 600, light: 400, fibre: 8, sodium: 600 };
   var root = document.getElementById("meal-quiz");
   if (!root || !meals.length) return;
 
   var chains = [];
   meals.forEach(function (m) { if (chains.indexOf(m.chain) === -1) chains.push(m.chain); });
   chains.sort();
-
   var STEPS = [
-    {
-      key: "meal", single: true,
-      title: "What meal is this?",
-      hint: "Breakfast menus are a different set of items at most chains.",
-      options: [
-        ["main", "Lunch or dinner", "The main menu"],
-        ["breakfast", "Breakfast", "Breakfast menu only"]
-      ],
-      none: "Either is fine"
-    },
-    {
-      key: "diet",
-      title: "Anything you don't eat?",
-      hint: "These are the only answers that rule meals out. Everything else just changes the order.",
-      options: [
-        ["vegetarian", "No meat or fish", "Vegetarian"],
-        ["plant", "No animal products", "Plant-based"],
-        ["gluten", "No gluten", "No gluten ingredient in the standard build"]
-      ],
-      none: "Nothing to avoid"
-    },
-    {
-      key: "goal",
-      title: "What do you want out of it?",
-      hint: "Pick as many as apply. These rank the list rather than cut it down.",
-      options: [
-        ["protein", "High protein", T.protein + " g or more"],
-        ["energy", "A big meal", T.energy + " kcal or more"],
-        ["light", "Something light", T.light + " kcal or less"],
-        ["fibre", "Filling", T.fibre + " g fibre or more"],
-        ["lowsodium", "Lower sodium", T.sodium + " mg or less"],
-        ["balanced", "Nothing extreme", "A normal-sized meal with real protein"]
-      ],
-      none: "No preference"
-    },
-    {
-      key: "chain",
-      title: "Where are you eating?",
-      hint: "Skip this and we look across all " + chains.length + " chains.",
-      options: chains.map(function (c) { return [c, c, ""]; }),
-      none: "Anywhere"
-    }
+    { key: "goal", title: "What are you working toward?", multiple: true,
+      hint: "Choose every goal that matters today. We rank for the combination, so high protein + bulking works together.",
+      options: [["energy", "Bulking", T.energy + "+ calories", "↗"], ["light", "Cutting", T.light + " calories or fewer", "↘"], ["protein", "High protein", T.protein + "g protein or more", "P"], ["fibre", "High fibre", T.fibre + "g fibre or more", "F"], ["lowsodium", "Lower sodium", T.sodium + "mg sodium or fewer", "S"], ["balanced", "Balanced", "A practical middle-ground meal", "◎"]], none: "No specific goal" },
+    { key: "size", title: "How much food do you want?", single: true,
+      hint: "This adjusts the ranking. It never hides an otherwise strong match.",
+      options: [["small", "Small", "Snack or light appetite", "S"], ["medium", "Medium", "A regular meal", "M"], ["large", "Large", "Hungry or higher-calorie day", "L"]], none: "Any portion size" },
+    { key: "diet", title: "Any dietary needs?", multiple: true,
+      hint: "These are strict filters. Select more than one only when every choice must apply.",
+      options: [["vegetarian", "Vegetarian", "No meat or fish in the standard build", "V"], ["plant", "Plant-based", "No animal products in the standard build", "◆"], ["gluten", "Gluten-aware", "No gluten ingredient listed in the standard build", "G"]], none: "No dietary filter" },
+    { key: "meal", title: "When are you ordering?", single: true,
+      hint: "Breakfast menus are separated because availability changes by time of day.",
+      options: [["main", "Lunch or dinner", "Use the main menu", "☀"], ["breakfast", "Breakfast", "Use breakfast items only", "◒"]], none: "Any time of day" },
+    { key: "chain", title: "Where can you eat?", multiple: true, chainStep: true,
+      hint: "Pick one or several restaurants, or search all " + chains.length + " chains.",
+      options: chains.map(function (c) { return [c, c, "", c.charAt(0)]; }), none: "Search every restaurant" }
   ];
+  var state = { goal: [], size: [], diet: [], meal: [], chain: [] };
+  var step = 0, includeIncomplete = false, SAVED_KEY = "getmacros-saved-meals-v1", saved = readSaved();
+  var GOAL_LABEL = { energy: "bulking", light: "cutting", protein: "high protein", fibre: "high fibre", lowsodium: "lower sodium", balanced: "balanced" };
+  var DIET_LABEL = { vegetarian: "vegetarian", plant: "plant-based", gluten: "gluten-aware" };
 
-  // Answers that cannot both be satisfied by one meal.
-  var CONFLICTS = [
-    ["light", "energy", "A meal cannot be both under " + T.light + " kcal and over " +
-      T.energy + ". We will show the best of each rather than pretend."]
-  ];
-
-  var GOAL_LABEL = {
-    protein: "high protein", energy: "a big meal", light: "something light",
-    fibre: "something filling", lowsodium: "lower sodium", balanced: "nothing extreme"
-  };
-  var DIET_LABEL = { vegetarian: "vegetarian", plant: "plant-based", gluten: "gluten-free" };
-
-  var state = { meal: [], diet: [], goal: [], chain: [] };
-  var step = 0;
-  var SAVED_KEY = "getmacros-saved-meals-v1";
-  var saved = readSaved();
-
-  function readSaved() {
-    try {
-      var value = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
-      return Array.isArray(value) ? value.filter(function (item) {
-        return typeof item === "string";
-      }) : [];
-    } catch (error) {
-      return [];
-    }
-  }
-
-  function mealKey(m) { return m.chain + "||" + m.name; }
-  function isSaved(key) { return saved.indexOf(key) !== -1; }
-  function toggleSaved(key) {
-    var i = saved.indexOf(key);
-    if (i === -1) saved.push(key); else saved.splice(i, 1);
-    try { localStorage.setItem(SAVED_KEY, JSON.stringify(saved)); } catch (error) { /* private mode */ }
-    updateSavedUi();
-  }
-
-  function updateSavedUi() {
-    root.querySelectorAll("[data-save]").forEach(function (button) {
-      var active = isSaved(button.dataset.save);
-      button.setAttribute("aria-pressed", String(active));
-      button.textContent = active ? "Saved ✓" : "Save for later";
-    });
-    var count = root.querySelector("[data-saved-count]");
-    if (count) count.textContent = saved.length
-      ? saved.length + (saved.length === 1 ? " meal saved on this device" : " meals saved on this device")
-      : "Saved meals stay marked on this device";
-  }
-
-  var qs = new URLSearchParams(location.search);
-  var deepLinked = false;
-  STEPS.forEach(function (s) {
-    var allowed = s.options.map(function (o) { return o[0]; });
-    qs.getAll(s.key).forEach(function (v) {
-      if (allowed.indexOf(v) !== -1 && state[s.key].indexOf(v) === -1) {
-        state[s.key].push(v);
-        deepLinked = true;
-      }
-    });
-  });
-
-  function esc(s) {
-    return String(s).replace(/[&<>"]/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
-    });
-  }
+  function esc(value) { return String(value).replace(/[&<>\"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;" }[c]; }); }
+  function list(items) { return items.length < 2 ? (items[0] || "") : items.slice(0, -1).join(", ") + " and " + items[items.length - 1]; }
   function has(m, tag) { return m.t.indexOf(tag) !== -1; }
-  function list(a) {
-    return a.length < 2 ? (a[0] || "") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1];
-  }
+  function complete(m) { return m.cal !== null && m.p !== null && m.f !== null && m.na !== null; }
+  function mealKey(m) { return m.chain + "||" + m.name; }
+  function readSaved() { try { var value = JSON.parse(localStorage.getItem("getmacros-saved-meals-v1") || "[]"); return Array.isArray(value) ? value : []; } catch (error) { return []; } }
+  function toggleSaved(key) { var i = saved.indexOf(key); if (i === -1) saved.push(key); else saved.splice(i, 1); try { localStorage.setItem(SAVED_KEY, JSON.stringify(saved)); } catch (error) {} updateSavedUi(); }
+  function updateSavedUi() { root.querySelectorAll("[data-save]").forEach(function (button) { var active = saved.indexOf(button.dataset.save) !== -1; button.setAttribute("aria-pressed", String(active)); button.textContent = active ? "Saved ✓" : "Save meal"; }); }
 
-  /* Only restrictions, occasion and place remove anything. */
+  var qs = new URLSearchParams(location.search), deepLinked = false;
+  STEPS.forEach(function (s) { var allowed = s.options.map(function (o) { return o[0]; }); qs.getAll(s.key).forEach(function (v) { if (allowed.indexOf(v) !== -1 && state[s.key].indexOf(v) === -1) { state[s.key].push(v); deepLinked = true; } }); });
+  includeIncomplete = qs.get("complete") === "0";
+
   function eligible(m) {
+    if (!includeIncomplete && !complete(m)) return false;
     if (state.meal.length && state.meal.indexOf(m.meal) === -1) return false;
-    if (state.diet.length && !state.diet.every(function (d) {
-      return m.diet.indexOf(d) !== -1;
-    })) return false;
+    if (state.diet.length && !state.diet.every(function (d) { return m.diet.indexOf(d) !== -1; })) return false;
     if (state.chain.length && state.chain.indexOf(m.chain) === -1) return false;
     return true;
   }
-
   function score(m) {
-    var s = 0;
-    state.goal.forEach(function (g) { if (has(m, g)) s += 50; });
-    if (m.p !== null) s += Math.min(m.p, 50) / 2;
-    if (m.f !== null) s += Math.min(m.f, 15);
-    if (m.p !== null && m.cal) s += (m.p / m.cal) * 120;
-    if (m.na === null || m.p === null) s -= 6;
-    return s;
+    var value = state.size.length && m.size === state.size[0] ? 28 : 0;
+    state.goal.forEach(function (g) { if (has(m, g)) value += 65; });
+    if (m.p !== null) value += Math.min(m.p, 50) * 0.5;
+    if (m.f !== null) value += Math.min(m.f, 15) * 0.5;
+    if (m.p !== null && m.cal) value += (m.p / m.cal) * 100;
+    if (!complete(m)) value -= 40;
+    return value;
   }
-
-  function metRatio(m) {
-    if (!state.goal.length) return 1;
-    var met = state.goal.filter(function (g) { return has(m, g); }).length;
-    return met / state.goal.length;
-  }
-
-  /* Say what this meal delivers, and say plainly what it misses. */
+  function matchCount(m) { return state.goal.filter(function (g) { return has(m, g); }).length; }
   function why(m) {
-    var met = [], missed = [];
+    if (!state.goal.length) return m.why;
+    var hits = [], misses = [];
     state.goal.forEach(function (g) {
       if (has(m, g)) {
-        if (g === "protein" && m.p !== null) met.push(m.p + " g protein");
-        else if (g === "energy" && m.cal !== null) met.push(m.cal + " kcal");
-        else if (g === "light" && m.cal !== null) met.push("just " + m.cal + " kcal");
-        else if (g === "fibre" && m.f !== null) met.push(m.f + " g fibre");
-        else if (g === "lowsodium" && m.na !== null) met.push(m.na.toLocaleString() + " mg sodium");
-        else met.push(GOAL_LABEL[g]);
-      } else {
-        missed.push(GOAL_LABEL[g]);
-      }
+        if (g === "protein" && m.p !== null) hits.push(m.p + "g protein");
+        else if ((g === "energy" || g === "light") && m.cal !== null) hits.push(m.cal + " calories");
+        else if (g === "fibre" && m.f !== null) hits.push(m.f + "g fibre");
+        else if (g === "lowsodium" && m.na !== null) hits.push(m.na.toLocaleString() + "mg sodium");
+        else hits.push(GOAL_LABEL[g]);
+      } else misses.push(GOAL_LABEL[g]);
     });
-    if (!met.length && !missed.length) return m.why;
-
-    var s = met.length ? "Gives you " + list(met) + "." : "";
-    if (missed.length) {
-      s += (s ? " " : "") + "Does not hit " + list(missed) + ".";
-    }
-    return s || m.why;
+    var text = hits.length ? "Matches: " + list(hits) + "." : "";
+    if (misses.length) text += (text ? " " : "") + "Trade-off: it does not meet " + list(misses) + ".";
+    return text || m.why;
   }
-
-  function activeConflicts() {
-    return CONFLICTS.filter(function (c) {
-      return state.goal.indexOf(c[0]) !== -1 && state.goal.indexOf(c[1]) !== -1;
-    });
-  }
-
-  function summary(n, relaxed) {
-    var bits = [];
-    if (state.meal.length === 1) bits.push(state.meal[0] === "breakfast" ? "breakfast" : "a main meal");
-    if (state.diet.length) bits.push(list(state.diet.map(function (d) { return DIET_LABEL[d]; })));
-    if (state.goal.length) bits.push(list(state.goal.map(function (g) { return GOAL_LABEL[g]; })));
-    if (state.chain.length) bits.push("at " + list(state.chain));
-
-    if (!bits.length) return "No answers given. All " + n + " meals, best first.";
-    var head = "You asked for " + list(bits) + ".";
-    if (relaxed) return head + " Nothing hits that, so here is the closest we have.";
-    return head + " " + n + (n === 1 ? " meal fits" : " meals fit") + ".";
-  }
-
-  function stat(v, unit, label) {
-    return "<span><b>" + (v === null ? "&mdash;" : v.toLocaleString() + unit) +
-      "</b>" + label + "</span>";
-  }
-
+  function metric(value, unit, label) { var shown = value === null ? "Not published" : value.toLocaleString() + unit; return '<span class="meal-metric' + (value === null ? " is-missing" : "") + '"><b>' + shown + "</b><small>" + label + "</small></span>"; }
   function card(m, top) {
-    var ratio = metRatio(m);
-    var key = mealKey(m);
-    var badge = !state.goal.length ? ""
-      : ratio === 1 ? '<span class="meal-rank is-full">Matches everything</span>'
-      : '<span class="meal-rank is-part">Matches ' +
-        state.goal.filter(function (g) { return has(m, g); }).length +
-        " of " + state.goal.length + "</span>";
-    return '<article class="meal-card' + (top ? " top-match" : "") + '">' +
-      '<div class="meal-card-top"><span class="meal-chain">' + esc(m.chain) + "</span>" +
-      badge + "</div><h3>" + esc(m.name) + "</h3>" +
-      '<div class="meal-stats">' + stat(m.cal, "", "kcal") + stat(m.p, "g", "protein") +
-        stat(m.f, "g", "fibre") + stat(m.na, "mg", "sodium") + "</div>" +
-      "<p>" + esc(why(m)) + "</p>" +
-      '<div class="meal-card-actions"><a class="meal-link" href="' + esc(m.url) + '">' +
-      esc(m.chain) + ' guide &rarr;</a><button class="meal-save" type="button" data-save="' +
-      esc(key) + '" aria-pressed="' + String(isSaved(key)) + '">' +
-      (isSaved(key) ? "Saved ✓" : "Save for later") + "</button></div></article>";
+    var key = mealKey(m), matches = matchCount(m);
+    var badge = !state.goal.length ? "Good starting point" : matches === state.goal.length ? "Matches every goal" : "Matches " + matches + " of " + state.goal.length;
+    return '<article class="meal-card' + (top ? " top-match" : "") + '"><div class="meal-card-top"><span class="meal-chain">' + esc(m.chain) + '</span><span class="meal-rank">' + badge + '</span></div><h3>' + esc(m.name) + '</h3><div class="meal-stats">' + metric(m.cal, "", "calories") + metric(m.p, "g", "protein") + metric(m.f, "g", "fibre") + metric(m.na, "mg", "sodium") + '</div><p class="meal-reason">' + esc(why(m)) + '</p><div class="meal-card-actions"><a class="meal-link" href="' + esc(m.url) + '">View restaurant guide →</a><button class="meal-save" type="button" data-save="' + esc(key) + '" aria-pressed="' + (saved.indexOf(key) !== -1) + '">' + (saved.indexOf(key) !== -1 ? "Saved ✓" : "Save meal") + '</button></div></article>';
   }
-
-  function shareResults(button) {
-    var share = {
-      title: "My GetMacros fast-food matches",
-      text: "These restaurant meals match the goals and preferences I selected.",
-      url: location.href
-    };
-    if (navigator.share) {
-      navigator.share(share).catch(function () { /* sharing was cancelled */ });
-      return;
-    }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(share.url).then(function () {
-        button.textContent = "Link copied ✓";
-      }).catch(function () {
-        button.textContent = "Copy the page address to share";
-      });
-      return;
-    }
-    button.textContent = "Copy the page address to share";
-  }
-
   function optionMarkup(s) {
     var type = s.single ? "radio" : "checkbox";
-    return '<div class="quiz-chips">' + s.options.map(function (o) {
-      return '<label class="quiz-chip"><input type="' + type + '" name="q-' + s.key +
-        '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' +
-        (state[s.key].indexOf(o[0]) !== -1 ? " checked" : "") +
-        '><span><b>' + esc(o[1]) + "</b>" +
-        (o[2] ? "<small>" + esc(o[2]) + "</small>" : "") + "</span></label>";
-    }).join("") + "</div>" +
-    '<button type="button" class="quiz-skip" data-clear="' + s.key + '">' +
-      esc(s.none) + "</button>";
+    return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + s.options.map(function (o) {
+      var checked = state[s.key].indexOf(o[0]) !== -1 ? " checked" : "";
+      return '<label class="quiz-option"><input type="' + type + '" name="q-' + s.key + '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' + checked + '><span class="option-icon" aria-hidden="true">' + esc(o[3] || o[1].charAt(0)) + '</span><span class="option-copy"><b>' + esc(o[1]) + '</b>' + (o[2] ? '<small>' + esc(o[2]) + '</small>' : '') + '</span><span class="option-check" aria-hidden="true">✓</span></label>';
+    }).join("") + '</div><button type="button" class="quiz-skip" data-clear="' + s.key + '">' + esc(s.none) + ' →</button>';
   }
-
   function renderStep() {
-    var s = STEPS[step];
-    var warn = s.key === "goal" ? activeConflicts() : [];
-    root.innerHTML =
-      '<div class="quiz-card">' +
-        '<div class="quiz-progress"><div class="quiz-bar" style="width:' +
-          ((step + 1) / STEPS.length * 100) + '%"></div></div>' +
-        '<p class="quiz-count">Question ' + (step + 1) + " of " + STEPS.length + "</p>" +
-        "<h2>" + esc(s.title) + "</h2>" +
-        '<p class="quiz-hint">' + esc(s.hint) + "</p>" +
-        optionMarkup(s) +
-        (warn.length ? '<p class="quiz-warn">' + esc(warn[0][2]) + "</p>" : "") +
-        '<div class="quiz-nav">' +
-          (step > 0 ? '<button type="button" class="btn btn-ghost" data-go="-1">Back</button>' : "") +
-          '<button type="button" class="btn btn-primary" data-go="1">' +
-            (step === STEPS.length - 1 ? "See my meals" : "Next") + "</button>" +
-        "</div></div>";
-    focusHeading();
+    var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
+    root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + '</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost" data-go="-1">Back</button>' : '<span></span>') + '<button type="button" class="btn btn-primary" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
+    root.querySelector("h2").focus({ preventScroll: true });
   }
-
-  function focusHeading() {
-    var h = root.querySelector("h2");
-    if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+  function summary(count) {
+    var bits = [];
+    if (state.goal.length) bits.push(list(state.goal.map(function (g) { return GOAL_LABEL[g]; })));
+    if (state.size.length) bits.push(state.size[0] + " portion");
+    if (state.diet.length) bits.push(list(state.diet.map(function (d) { return DIET_LABEL[d]; })));
+    if (state.meal.length) bits.push(state.meal[0] === "breakfast" ? "breakfast" : "lunch or dinner");
+    if (state.chain.length) bits.push(list(state.chain));
+    return (bits.length ? "Best matches for " + list(bits) : "Best overall starting points") + ". " + count + " meals available.";
   }
-
   function renderResults() {
-    var all = meals.filter(eligible);
-    all.sort(function (a, b) { return score(b) - score(a); });
-
-    if (!all.length) {
-      root.innerHTML =
-        '<div class="quiz-card"><h2>Nothing matches all of that.</h2>' +
-        '<p class="quiz-hint">The answers to the first two questions have to all be ' +
-        'met at once, and that combination runs out quickly on a fast-food menu. ' +
-        'Loosening one usually opens it back up.</p>' +
-        '<div class="quiz-nav"><button type="button" class="btn btn-primary" ' +
-        'data-restart="1">Change my answers</button></div></div>';
-      focusHeading();
-      syncUrl();
-      return;
+    var results = meals.filter(eligible).sort(function (a, b) { return score(b) - score(a); });
+    var incompleteCount = meals.filter(function (m) { return !complete(m); }).length;
+    if (!results.length) {
+      root.innerHTML = '<div class="quiz-card empty-results"><span class="result-symbol">↺</span><h2 tabindex="-1">That combination is too narrow.</h2><p>Remove one restaurant or dietary filter and we can give you useful choices instead of filler.</p><button type="button" class="btn btn-primary" data-restart="1">Change my answers</button></div>';
+      root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); return;
     }
-
-    // A meal that satisfies none of the stated priorities is not a result, it
-    // is filler. Keep only meals that hit at least one, and fall back to the
-    // full eligible list only when nothing hits anything.
-    var hits = all.filter(function (m) { return metRatio(m) > 0; });
-    var relaxed = state.goal.length > 0 && hits.length === 0;
-    var results = state.goal.length && hits.length ? hits : all;
-
-    // Say so plainly when no single meal satisfies every priority at once.
-    var perfect = results.filter(function (m) { return metRatio(m) === 1; });
-    var note = "";
-    if (state.goal.length && !perfect.length) {
-      note = '<p class="quiz-warn">' + (state.goal.length === 1
-        ? "Nothing on this list reaches " + esc(GOAL_LABEL[state.goal[0]]) +
-          ". These are the closest, and each card says what it misses."
-        : "No single meal hits all " + state.goal.length +
-          " at once. These come closest, and each card says what it misses.") +
-        "</p>";
-    }
-
-    var shown = results.slice(0, 6);
-    root.innerHTML =
-      '<div class="quiz-results"><h2>Here is what fits.</h2>' +
-        '<p class="quiz-summary">' + esc(summary(results.length, relaxed)) + "</p>" + note +
-        '<div class="results-grid">' +
-          card(shown[0], true) +
-          shown.slice(1).map(function (m) { return card(m, false); }).join("") +
-        "</div>" +
-        (results.length > 6
-          ? '<button type="button" class="btn btn-ghost" data-more="1">Show the other ' +
-            (results.length - 6) + "</button>"
-          : "") +
-        '<div class="quiz-nav quiz-nav-end">' +
-          '<button type="button" class="btn btn-ghost" data-restart="1">Change my answers</button>' +
-        '</div><div class="quiz-result-tools"><button type="button" class="btn btn-ghost" data-share="1">Share these results</button><span data-saved-count></span></div></div>';
-    focusHeading();
-    root._rest = results.slice(6);
-    syncUrl();
-    updateSavedUi();
+    var shown = results.slice(0, 8);
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your shortlist</p><h2 tabindex="-1">Meals that fit your day</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="data-quality"><span aria-hidden="true">✓</span><p><b>Complete nutrition is shown first.</b> By default, every result has calories, protein, fibre and sodium filled in.</p></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">Show ' + (results.length - shown.length) + ' more complete matches</button>' : '') + '<div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded by default because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></div>';
+    root._rest = results.slice(8); root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); updateSavedUi();
   }
-
-  function syncUrl() {
-    var url = new URL(location.href);
-    url.search = "";
-    STEPS.forEach(function (s) {
-      state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); });
-    });
-    history.replaceState(null, "", url);
-  }
-
-  function advance(delta) {
-    step += delta;
-    if (step >= STEPS.length) renderResults();
-    else renderStep();
-  }
+  function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }
+  function shareResults(button) { var data = { title: "My GetMacros meal matches", text: "Fast-food options matched to my goals and preferences.", url: location.href }; if (navigator.share) { navigator.share(data).catch(function () {}); return; } if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(function () { button.textContent = "Link copied ✓"; }); }
 
   root.addEventListener("change", function (e) {
     var el = e.target;
-    if (!el.dataset || !el.dataset.facet) return;
+    if (el.dataset.incomplete) { includeIncomplete = el.checked; renderResults(); return; }
+    if (!el.dataset.facet) return;
     var key = el.dataset.facet;
-    if (el.type === "radio") {
-      state[key] = el.checked ? [el.value] : [];
-    } else {
-      var arr = state[key], i = arr.indexOf(el.value);
-      if (el.checked && i === -1) arr.push(el.value);
-      if (!el.checked && i !== -1) arr.splice(i, 1);
-    }
-    // Re-render the step only where the answer changes what the step shows.
-    if (key === "goal") {
-      var warn = root.querySelector(".quiz-warn");
-      var conflict = activeConflicts();
-      if (conflict.length && !warn) renderStep();
-      else if (!conflict.length && warn) warn.remove();
-    }
+    if (el.type === "radio") state[key] = el.checked ? [el.value] : [];
+    else { var i = state[key].indexOf(el.value); if (el.checked && i === -1) state[key].push(el.value); if (!el.checked && i !== -1) state[key].splice(i, 1); }
+    if (key === "goal") renderStep();
   });
-
   root.addEventListener("click", function (e) {
-    var t = e.target.closest("[data-go],[data-clear],[data-restart],[data-more],[data-save],[data-share]");
-    if (!t) return;
-    if (t.dataset.save) {
-      toggleSaved(t.dataset.save);
-    } else if (t.dataset.share) {
-      shareResults(t);
-    } else if (t.dataset.clear) {
-      state[t.dataset.clear] = [];
-      root.querySelectorAll('input[data-facet="' + t.dataset.clear + '"]')
-        .forEach(function (c) { c.checked = false; });
-      advance(1);
-    } else if (t.dataset.go) {
-      advance(Number(t.dataset.go));
-    } else if (t.dataset.restart) {
-      step = 0;
-      renderStep();
-    } else if (t.dataset.more) {
-      root.querySelector(".results-grid").insertAdjacentHTML("beforeend",
-        (root._rest || []).map(function (m) { return card(m, false); }).join(""));
-      t.remove();
-    }
+    var t = e.target.closest("[data-go],[data-clear],[data-restart],[data-more],[data-save],[data-share]"); if (!t) return;
+    if (t.dataset.save) toggleSaved(t.dataset.save);
+    else if (t.dataset.share) shareResults(t);
+    else if (t.dataset.clear) { state[t.dataset.clear] = []; step += 1; step >= STEPS.length ? renderResults() : renderStep(); }
+    else if (t.dataset.go) { step += Number(t.dataset.go); step >= STEPS.length ? renderResults() : renderStep(); }
+    else if (t.dataset.restart) { step = 0; renderStep(); }
+    else if (t.dataset.more) { root.querySelector(".results-grid").insertAdjacentHTML("beforeend", root._rest.map(function (m) { return card(m, false); }).join("")); t.remove(); updateSavedUi(); }
   });
-
-  if (deepLinked) renderResults(); else renderStep();
+  deepLinked ? renderResults() : renderStep();
 })();
