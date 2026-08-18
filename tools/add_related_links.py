@@ -82,8 +82,12 @@ def main():
             continue
         for i, f in enumerate(members):
             c = cache[f]
-            if MARK in c and not REBUILD:
-                continue
+            if MARK in c:
+                if not REBUILD:
+                    continue
+                # Drop the previous block so the new one replaces it rather
+                # than stacking a second "Continue exploring" onto the page.
+                c = re.sub(rf'<section class="{MARK}".*?</section>', "", c, flags=re.S)
             # rotate the window so every sibling gets linked a similar number of times
             picks = [members[(i + 1 + k) % n] for k in range(min(PER_PAGE, n - 1))]
             cards = "".join(
