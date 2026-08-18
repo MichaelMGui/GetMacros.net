@@ -89,6 +89,40 @@
 
   var state = { meal: [], diet: [], goal: [], chain: [] };
   var step = 0;
+  var SAVED_KEY = "getmacros-saved-meals-v1";
+  var saved = readSaved();
+
+  function readSaved() {
+    try {
+      var value = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
+      return Array.isArray(value) ? value.filter(function (item) {
+        return typeof item === "string";
+      }) : [];
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function mealKey(m) { return m.chain + "||" + m.name; }
+  function isSaved(key) { return saved.indexOf(key) !== -1; }
+  function toggleSaved(key) {
+    var i = saved.indexOf(key);
+    if (i === -1) saved.push(key); else saved.splice(i, 1);
+    try { localStorage.setItem(SAVED_KEY, JSON.stringify(saved)); } catch (error) { /* private mode */ }
+    updateSavedUi();
+  }
+
+  function updateSavedUi() {
+    root.querySelectorAll("[data-save]").forEach(function (button) {
+      var active = isSaved(button.dataset.save);
+      button.setAttribute("aria-pressed", String(active));
+      button.textContent = active ? "Saved ✓" : "Save for later";
+    });
+    var count = root.querySelector("[data-saved-count]");
+    if (count) count.textContent = saved.length
+      ? saved.length + (saved.length === 1 ? " meal saved on this device" : " meals saved on this device")
+      : "Saved meals stay marked on this device";
+  }
 
   var qs = new URLSearchParams(location.search);
   var deepLinked = false;
@@ -188,6 +222,7 @@
 
   function card(m, top) {
     var ratio = metRatio(m);
+    var key = mealKey(m);
     var badge = !state.goal.length ? ""
       : ratio === 1 ? '<span class="meal-rank is-full">Matches everything</span>'
       : '<span class="meal-rank is-part">Matches ' +
@@ -199,8 +234,31 @@
       '<div class="meal-stats">' + stat(m.cal, "", "kcal") + stat(m.p, "g", "protein") +
         stat(m.f, "g", "fibre") + stat(m.na, "mg", "sodium") + "</div>" +
       "<p>" + esc(why(m)) + "</p>" +
-      '<a class="meal-link" href="' + esc(m.url) + '">' + esc(m.chain) +
-      " guide &rarr;</a></article>";
+      '<div class="meal-card-actions"><a class="meal-link" href="' + esc(m.url) + '">' +
+      esc(m.chain) + ' guide &rarr;</a><button class="meal-save" type="button" data-save="' +
+      esc(key) + '" aria-pressed="' + String(isSaved(key)) + '">' +
+      (isSaved(key) ? "Saved ✓" : "Save for later") + "</button></div></article>";
+  }
+
+  function shareResults(button) {
+    var share = {
+      title: "My GetMacros fast-food matches",
+      text: "These restaurant meals match the goals and preferences I selected.",
+      url: location.href
+    };
+    if (navigator.share) {
+      navigator.share(share).catch(function () { /* sharing was cancelled */ });
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(share.url).then(function () {
+        button.textContent = "Link copied ✓";
+      }).catch(function () {
+        button.textContent = "Copy the page address to share";
+      });
+      return;
+    }
+    button.textContent = "Copy the page address to share";
   }
 
   function optionMarkup(s) {
@@ -291,10 +349,11 @@
           : "") +
         '<div class="quiz-nav quiz-nav-end">' +
           '<button type="button" class="btn btn-ghost" data-restart="1">Change my answers</button>' +
-        "</div></div>";
+        '</div><div class="quiz-result-tools"><button type="button" class="btn btn-ghost" data-share="1">Share these results</button><span data-saved-count></span></div></div>';
     focusHeading();
     root._rest = results.slice(6);
     syncUrl();
+    updateSavedUi();
   }
 
   function syncUrl() {
@@ -333,9 +392,13 @@
   });
 
   root.addEventListener("click", function (e) {
-    var t = e.target.closest("[data-go],[data-clear],[data-restart],[data-more]");
+    var t = e.target.closest("[data-go],[data-clear],[data-restart],[data-more],[data-save],[data-share]");
     if (!t) return;
-    if (t.dataset.clear) {
+    if (t.dataset.save) {
+      toggleSaved(t.dataset.save);
+    } else if (t.dataset.share) {
+      shareResults(t);
+    } else if (t.dataset.clear) {
       state[t.dataset.clear] = [];
       root.querySelectorAll('input[data-facet="' + t.dataset.clear + '"]')
         .forEach(function (c) { c.checked = false; });

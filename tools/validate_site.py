@@ -176,7 +176,7 @@ def main() -> int:
             errors.append(f"{path}: advertising placeholder remains")
         if "highperformanceformat.com" in text or "ads-config.js" in text:
             errors.append(f"{path}: obsolete third-party ad code remains")
-        if "pagead2.googlesyndication.com" in text and PUBLISHER not in text:
+        if re.search(r"pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js", text) and PUBLISHER not in text:
             errors.append(f"{path}: Google ad loader lacks the verified publisher ID")
 
     for title, paths in titles.items():

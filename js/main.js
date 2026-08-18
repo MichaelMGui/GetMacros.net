@@ -10,13 +10,18 @@
     siteTheme.href = "css/site-v3.css?v=20260816a";
     document.head.appendChild(siteTheme);
   }
-  if (!document.querySelector('meta[name="google-adsense-account"]')) {
+  var robotsMeta = document.querySelector('meta[name="robots"]');
+  var pageBody = document.body;
+  var adsAllowed = !(pageBody && pageBody.dataset.ads === "off") &&
+    !(robotsMeta && /(?:^|,)\s*noindex\b/i.test(robotsMeta.content || ""));
+
+  if (adsAllowed && !document.querySelector('meta[name="google-adsense-account"]')) {
     var adsAccount = document.createElement("meta");
     adsAccount.name = "google-adsense-account";
     adsAccount.content = "ca-pub-2316153877942502";
     document.head.appendChild(adsAccount);
   }
-  if (!document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) {
+  if (adsAllowed && !document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) {
     var adsLoader = document.createElement("script");
     adsLoader.async = true;
     adsLoader.crossOrigin = "anonymous";
