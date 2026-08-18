@@ -100,13 +100,26 @@
         document.getElementById("weight-unit-label").textContent = weightUnit === "lb" ? "lb" : "kg";
       });
     });
-    heightUnitButtons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        heightUnit = setUnitGroup(heightUnitButtons, btn.dataset.heightUnit);
-        document.getElementById("height-cm-field").hidden = heightUnit !== "cm";
-        document.getElementById("height-ftin-field").hidden = heightUnit !== "ftin";
+    function setHeightUnit(unit) {
+      heightUnit = setUnitGroup(heightUnitButtons, unit);
+      var cmField = document.getElementById("height-cm-field");
+      var feetField = document.getElementById("height-ftin-field");
+      var useCm = heightUnit === "cm";
+      cmField.hidden = !useCm;
+      feetField.hidden = useCm;
+      document.getElementById("height-cm").disabled = !useCm;
+      document.getElementById("height-cm").required = useCm;
+      document.getElementById("height-ft").disabled = useCm;
+      document.getElementById("height-ft").required = !useCm;
+      document.getElementById("height-in").disabled = useCm;
+      heightUnitButtons.forEach(function (button) {
+        button.setAttribute("aria-pressed", String(button.dataset.heightUnit === heightUnit));
       });
+    }
+    heightUnitButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () { setHeightUnit(btn.dataset.heightUnit); });
     });
+    setHeightUnit("ftin");
 
     macroForm.addEventListener("submit", function (e) {
       e.preventDefault();
