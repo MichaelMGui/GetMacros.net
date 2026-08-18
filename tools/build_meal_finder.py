@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
-"""Render the full meal list into restaurant-meal-finder.html as static HTML.
+"""Derive goal tags for the meal data, and build the finder page's reference section.
 
-The quiz above it is JavaScript, so without this the page has almost no text a
-crawler can read and the 74 meals are invisible to search. Generating the list
-from js/meal-data.js keeps the two from drifting: the quiz and the printed
-table are the same 74 rows.
+Two jobs, both driven off js/meal-data.js so nothing can disagree with itself:
 
-Writes between two markers so it can run on every build.
+1. Goal tags (high protein, lighter, ...) are computed from each meal's own
+   numbers and written back into the `t` array. They used to be hand-assigned
+   and had drifted badly: 41 meals carried a "high protein" tag while only 36
+   reached the 25 g the label claimed, and 16 were tagged higher-calorie when
+   only 10 reached 600 kcal. A threshold that a page states out loud has to be
+   the threshold the page actually applies.
+
+2. The reference section under the quiz. Chain-by-chain tables were the wrong
+   shape for this page: every chain guide already publishes its own menu, so
+   repeating it here duplicated content and read as an appendix. What no single
+   guide can offer is the view across all of them, which is also what people
+   search for. So the section is a set of ranked cross-chain lists.
 """
 import html
 import json
@@ -20,85 +28,204 @@ DATA = os.path.join(ROOT, "js", "meal-data.js")
 START = "<!--MEALS:START-->"
 END = "<!--MEALS:END-->"
 
-TAG_LABEL = {
-    "protein": "high protein", "light": "lighter", "energy": "higher calorie",
-    "fibre": "high fibre", "lowsodium": "lower sodium", "balanced": "balanced",
-    "vegetarian": "vegetarian", "plant": "plant-based",
-    "gluten": "gluten-aware", "breakfast": "breakfast",
-}
+# Every threshold the site states in words. Change them here and the tags, the
+# quiz labels generated from them, and the lists below all move together.
+PROTEIN_G = 25
+ENERGY_KCAL = 600
+LIGHT_KCAL = 400
+FIBRE_G = 5
+SODIUM_MG = 600
 
 
-def parse_meals():
-    """Read the object literals out of meal-data.js.
+def goal_tags(m):
+    """The goal tags a meal earns from its own published numbers."""
+    t = []
+    if m["p"] is not None and m["p"] >= PROTEIN_G:
+        t.append("protein")
+    if m["cal"] is not None and m["cal"] >= ENERGY_KCAL:
+        t.append("energy")
+    if m["cal"] is not None and m["cal"] <= LIGHT_KCAL:
+        t.append("light")
+    if m["f"] is not None and m["f"] >= FIBRE_G:
+        t.append("fibre")
+    if m["na"] is not None and m["na"] <= SODIUM_MG:
+        t.append("lowsodium")
+    # Balanced means nothing is at an extreme: a real meal's worth of calories
+    # carrying a real meal's worth of protein.
+    if (m["cal"] is not None and LIGHT_KCAL < m["cal"] < ENERGY_KCAL
+            and m["p"] is not None and m["p"] >= 20):
+        t.append("balanced")
+    return t
 
-    The file is hand-maintained JS rather than JSON, so each record is
-    converted to JSON before parsing instead of being eval'd.
-    """
-    src = open(DATA, encoding="utf-8").read()
+
+def parse_meals(src):
     meals = []
     for raw in re.findall(r"\{chain:.*?\}(?=,\n|\n\];|\n\])", src, re.S):
-        obj = raw
-        obj = re.sub(r"(\{|,)\s*([a-zA-Z_]\w*)\s*:", r'\1"\2":', obj)
-        obj = re.sub(r"'((?:[^'\\]|\\.)*)'", lambda m: json.dumps(m.group(1).replace("\\'", "'")), obj)
-        meals.append(json.loads(obj))
+        o = re.sub(r"(\{|,)\s*([a-zA-Z_]\w*)\s*:", r'\1"\2":', raw)
+        o = re.sub(r"'((?:[^'\\]|\\.)*)'",
+                   lambda m: json.dumps(m.group(1).replace("\\'", "'")), o)
+        meals.append(json.loads(o))
     return meals
+
+
+def write_tags(src, meals):
+    """Write each meal's derived `t` array back into meal-data.js."""
+    out, i = src, 0
+    chunks = re.split(r"(\{chain:.*?\}(?=,\n|\n\];|\n\]))", src, flags=re.S)
+    for k, chunk in enumerate(chunks):
+        if not chunk.startswith("{chain:"):
+            continue
+        tags = ",".join("'%s'" % t for t in goal_tags(meals[i]))
+        # Substitute inside the existing slot rather than removing and
+        # reinserting it, which left a stray comma behind. The lookbehind keeps
+        # this off the "t:[" inside "diet:[".
+        body, n = re.subn(r"(?<![a-zA-Z])t:\[[^\]]*\]", "t:[%s]" % tags, chunk, count=1)
+        assert n == 1, f"no t:[] slot in record {i}"
+        chunks[k] = body
+        i += 1
+    assert i == len(meals), f"rewrote {i} of {len(meals)}"
+    return "".join(chunks)
 
 
 def num(v, unit=""):
     return "&mdash;" if v is None else f"{v:,}{unit}"
 
 
-def render(meals):
-    by_chain = {}
-    for m in meals:
-        by_chain.setdefault(m["chain"], []).append(m)
+def ranked(meals, key, reverse=True, limit=12, where=None):
+    pool = [m for m in meals if m[key] is not None and (where is None or where(m))]
+    pool.sort(key=lambda m: m[key], reverse=reverse)
+    return pool[:limit]
 
-    out = [
-        START,
-        '<section class="meal-index"><div class="container">',
-        f"<h2>Every meal we track, by restaurant</h2>",
-        f"<p>All {len(meals)} items the finder draws on, across "
-        f"{len(by_chain)} chains. Figures are standard published builds; a dash "
-        "means the chain does not publish that value.</p>",
+
+def table(rows, highlight):
+    """One ranked list. `highlight` is the column the ranking is by."""
+    cols = [("cal", "Calories", ""), ("p", "Protein", " g"),
+            ("f", "Fibre", " g"), ("na", "Sodium", " mg")]
+    out = ['<div class="table-scroll"><table class="meal-table"><thead><tr>'
+           '<th scope="col">Meal</th><th scope="col">Restaurant</th>']
+    for k, label, _ in cols:
+        cls = ' class="is-key"' if k == highlight else ""
+        out.append(f'<th scope="col"{cls}>{label}</th>')
+    out.append("</tr></thead><tbody>")
+    for m in rows:
+        out.append(f'<tr><th scope="row"><a href="{html.escape(m["url"])}">'
+                   f'{html.escape(m["name"])}</a></th>'
+                   f'<td>{html.escape(m["chain"])}</td>')
+        for k, _, unit in cols:
+            cls = ' class="is-key"' if k == highlight else ""
+            out.append(f"<td{cls}>{num(m[k], unit)}</td>")
+        out.append("</tr>")
+    out.append("</tbody></table></div>")
+    return "".join(out)
+
+
+def render(meals):
+    n = len(meals)
+    chains = sorted({m["chain"] for m in meals})
+
+    sections = [
+        ("highest-protein-fast-food", "Highest-protein fast food meals",
+         f"Ranked across all {len(chains)} chains. Everything here clears "
+         f"{PROTEIN_G} g, and the leaders roughly double it.",
+         ranked(meals, "p"), "p"),
+        ("fast-food-under-400-calories", f"Fast food under {LIGHT_KCAL} calories",
+         "Sorted lightest first. Several are sides rather than full meals, which "
+         "is worth knowing before you order one on its own.",
+         ranked(meals, "cal", reverse=False, where=lambda m: m["cal"] <= LIGHT_KCAL), "cal"),
+        ("highest-fibre-fast-food", "Fast food with the most fibre",
+         "Fibre is the number most fast-food menus are thin on, and the one that "
+         "most changes whether a meal holds you until the next one.",
+         ranked(meals, "f"), "f"),
+        ("lowest-sodium-fast-food", "Lowest-sodium options",
+         "Only meals where the chain publishes a sodium figure. A missing number "
+         "is not a low one, so nothing unpublished is ranked here.",
+         ranked(meals, "na", reverse=False), "na"),
+        ("vegetarian-fast-food", "Every vegetarian option we track",
+         "No meat or fish in the standard build. Ordered by protein, because that "
+         "is the number these meals most often give up.",
+         ranked(meals, "p", where=lambda m: "vegetarian" in m["diet"], limit=99), "p"),
+        ("plant-based-fast-food", "Every plant-based option we track",
+         "No animal products in the standard build. Check preparation locally: "
+         "shared fryers and dairy-based sauces are the usual surprises.",
+         ranked(meals, "p", where=lambda m: "plant" in m["diet"], limit=99), "p"),
+        ("healthy-fast-food-breakfast", "Breakfast items worth ordering",
+         "Served on the breakfast menu. Ordered by protein, since that is what "
+         "decides whether a breakfast lasts past mid-morning.",
+         ranked(meals, "p", where=lambda m: m["meal"] == "breakfast", limit=99), "p"),
     ]
-    for chain in sorted(by_chain):
-        rows = sorted(by_chain[chain], key=lambda m: m["name"])
-        guide = rows[0]["url"]
-        out.append(f'<h3>{html.escape(chain)}</h3>')
-        out.append('<div class="table-scroll"><table class="meal-table">')
-        out.append("<thead><tr><th>Meal</th><th>Calories</th><th>Protein</th>"
-                   "<th>Fibre</th><th>Sodium</th><th>Best for</th></tr></thead><tbody>")
-        for m in rows:
-            tags = ", ".join(TAG_LABEL.get(t, t) for t in m["t"]) or "&mdash;"
-            out.append(
-                f'<tr><th scope="row">{html.escape(m["name"])}</th>'
-                f'<td>{num(m["cal"])}</td><td>{num(m["p"], " g")}</td>'
-                f'<td>{num(m["f"], " g")}</td><td>{num(m["na"], " mg")}</td>'
-                f"<td>{tags}</td></tr>"
-            )
-        out.append("</tbody></table></div>")
-        out.append(f'<p class="meal-index-link">'
-                   f'<a href="{html.escape(guide)}">Full {html.escape(chain)} guide &rarr;</a></p>')
+
+    out = [START,
+           '<section class="meal-index"><div class="container">',
+           "<h2>The same meals, ranked across every chain</h2>",
+           f"<p class=\"meal-index-intro\">The quiz answers one question at a time. "
+           f"These are the standing lists behind it: all {n} meals from "
+           f"{len(chains)} chains, sorted the ways people actually ask for them. "
+           f"Every figure is the chain's published standard build.</p>",
+           '<nav class="meal-jump" aria-label="Jump to a list"><ul>']
+    for slug, title, _, _, _ in sections:
+        out.append(f'<li><a href="#{slug}">{html.escape(title)}</a></li>')
+    out.append("</ul></nav>")
+
+    for slug, title, blurb, rows, key in sections:
+        if not rows:
+            continue
+        out.append(f'<section class="meal-list" id="{slug}">')
+        out.append(f"<h3>{html.escape(title)}</h3>")
+        out.append(f'<p class="meal-list-note">{blurb} <b>{len(rows)}</b> '
+                   f'{"item" if len(rows) == 1 else "items"}.</p>')
+        out.append(table(rows, key))
+        out.append("</section>")
+
+    out.append('<p class="meal-index-foot">Looking for one restaurant rather than a '
+               'ranking? Each chain has its own guide: ')
+    out.append(", ".join(
+        f'<a href="{html.escape(next(m["url"] for m in meals if m["chain"] == c))}">'
+        f'{html.escape(c)}</a>' for c in chains))
+    out.append(".</p>")
     out.append("</div></section>")
     out.append(END)
     return "\n".join(out)
 
 
 def main():
-    meals = parse_meals()
+    src = open(DATA, encoding="utf-8").read()
+    meals = parse_meals(src)
     if len(meals) < 2:
-        print(f"ERROR: parsed only {len(meals)} meals from meal-data.js", file=sys.stderr)
+        print(f"ERROR: parsed only {len(meals)} meals", file=sys.stderr)
         return 1
 
+    for m in meals:
+        m["t"] = goal_tags(m)
+
+    # Render before writing anything. A failure here used to leave meal-data.js
+    # half-rewritten, with the old tags already stripped and the new ones never
+    # added.
     c = open(PAGE, encoding="utf-8").read()
     block = render(meals)
+
+    tagged = write_tags(src, meals)
+    # Publish the thresholds so the quiz can label its own options from them.
+    # The numbers a question promises and the numbers the tags apply are then
+    # the same numbers, by construction.
+    line = ("window.GM_THRESHOLDS = {protein:%d,energy:%d,light:%d,fibre:%d,sodium:%d};\n"
+            % (PROTEIN_G, ENERGY_KCAL, LIGHT_KCAL, FIBRE_G, SODIUM_MG))
+    if "window.GM_THRESHOLDS" in tagged:
+        tagged = re.sub(r"window\.GM_THRESHOLDS = \{[^}]*\};\n", line, tagged)
+    else:
+        tagged = tagged.replace("window.GM_MEALS = [", line + "\nwindow.GM_MEALS = [", 1)
+    if tagged != src:
+        open(DATA, "w", encoding="utf-8").write(tagged)
     if START in c and END in c:
         c = re.sub(re.escape(START) + r".*?" + re.escape(END), lambda _: block, c, flags=re.S)
     else:
         c = c.replace("</main>", block + "</main>", 1)
     open(PAGE, "w", encoding="utf-8").write(c)
-    print(f"meal index: {len(meals)} meals across "
-          f"{len(set(m['chain'] for m in meals))} chains")
+
+    counts = {}
+    for m in meals:
+        for t in m["t"]:
+            counts[t] = counts.get(t, 0) + 1
+    print(f"meal data: {len(meals)} meals, derived tags {counts}")
     return 0
 
 
