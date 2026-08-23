@@ -98,13 +98,13 @@
   }
   function optionMarkup(s) {
     var type = s.single ? "radio" : "checkbox";
+    var none = s.none;
+    var noPreference = '<label class="quiz-option quiz-option-any"><input type="' + type + '" name="q-' + s.key + '" data-any="' + s.key + '" value=""' + (!state[s.key].length ? ' checked' : '') + '><span class="option-icon">' + iconSvg(none[2], none[0]) + '</span><span class="option-copy"><b>' + esc(none[0]) + '</b><small>' + esc(none[1]) + '</small></span><span class="option-check" aria-hidden="true">✓</span></label>';
     var choices = s.options.map(function (o) {
       var checked = state[s.key].indexOf(o[0]) !== -1 ? " checked" : "";
       return '<label class="quiz-option"><input type="' + type + '" name="q-' + s.key + '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' + checked + '><span class="option-icon">' + iconSvg(o[3], o[1]) + '</span><span class="option-copy"><b>' + esc(o[1]) + '</b>' + (o[2] ? '<small>' + esc(o[2]) + '</small>' : '') + '</span><span class="option-check" aria-hidden="true">✓</span></label>';
     }).join("");
-    var none = s.none;
-    choices += '<label class="quiz-option quiz-option-any"><input type="' + type + '" name="q-' + s.key + '" data-any="' + s.key + '" value=""' + (!state[s.key].length ? ' checked' : '') + '><span class="option-icon">' + iconSvg(none[2], none[0]) + '</span><span class="option-copy"><b>' + esc(none[0]) + '</b><small>' + esc(none[1]) + '</small></span><span class="option-check" aria-hidden="true">✓</span></label>';
-    return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + choices + '</div>';
+    return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + noPreference + choices + '</div>';
   }
   function renderStep() {
     var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;

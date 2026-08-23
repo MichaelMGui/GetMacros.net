@@ -1,7 +1,7 @@
 /* Site-wide legibility polish. Layout and page purpose remain unchanged. */
 .site-v3 {
   --v3-muted: #4d6359;
-  font-size: 16px;
+  font-size: 17px;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
 }
@@ -12,8 +12,8 @@
 .site-v3 :is(h1,h2,h3) { font-family: Inter,"Inter Fallback",system-ui,-apple-system,"Segoe UI",sans-serif; font-weight: 800; }
 .site-v3 p { line-height: 1.72; }
 
-.full-nav-links a { font-size: .82rem; }
-.nav-action { font-size: .84rem; }
+.full-nav-links a { font-size: .88rem; }
+.nav-action { font-size: .88rem; }
 .modern-footer p,
 .modern-footer a { color: #c4d2ca!important; font-size: .9rem; }
 .modern-footer small { color: #adbbb3; }
@@ -26,15 +26,30 @@
 .site-v3 select,
 .site-v3 textarea { min-height: 48px; color: #10231b; border-color: #bdcec4; }
 .site-v3 select {
+  min-height: 52px;
+  padding: .78rem 3rem .78rem .95rem;
+  border: 2px solid #9fb4a8;
+  border-radius: 14px;
+  color: #10231b;
+  font-weight: 650;
+  line-height: 1.25;
+  box-shadow: 0 1px 2px rgba(16,35,27,.06), inset 0 1px 0 rgba(255,255,255,.8);
   appearance: none;
   -webkit-appearance: none;
-  padding-right: 2.75rem;
   background-color: #fff;
-  background-image: linear-gradient(45deg,transparent 50%,#285844 50%),linear-gradient(135deg,#285844 50%,transparent 50%);
-  background-position: calc(100% - 19px) 21px,calc(100% - 13px) 21px;
-  background-size: 6px 6px,6px 6px;
+  background-image: linear-gradient(45deg,transparent 50%,#173f2f 50%),linear-gradient(135deg,#173f2f 50%,transparent 50%),linear-gradient(to left,#edf4f0,#edf4f0);
+  background-position: calc(100% - 19px) 22px,calc(100% - 13px) 22px,100% 0;
+  background-size: 6px 6px,6px 6px,44px 100%;
   background-repeat: no-repeat;
 }
+.site-v3 select:hover { border-color:#668f7a; box-shadow:0 4px 12px rgba(16,35,27,.09); }
+.site-v3 select:focus { border-color:#246848; box-shadow:0 0 0 4px rgba(36,104,72,.14); }
+.site-v3 select option { color:#10231b; background:#fff; font-weight:500; }
+.site-v3 input::placeholder,.site-v3 textarea::placeholder { color:#60756a; opacity:1; }
+.site-v3 :is(.hint,.meta,.quiz-hint,.quiz-summary,.calc-fineprint) { color:#3e574b; }
+.site-v3 main a { color:#155f3d; text-decoration-thickness:1px; }
+.site-v3 :is(.eyebrow,.soft-label) { font-weight:850; }
+.site-v3 :is(button,.btn) { min-height:46px; }
 .site-v3 :is(input,select,textarea,button,a):focus-visible { outline: 3px solid #72a98f; outline-offset: 3px; }
 
 .site-v3 main a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -42,6 +57,8 @@
 .site-v3 main :is(.btn,.button) { font-weight: 800; }
 
 @media(max-width:650px) {
-  .full-nav-links a { font-size: .79rem; }
+  .full-nav-links a { font-size: .84rem; }
   .site-v3 p { line-height: 1.67; }
+  .site-v3 { font-size:16.5px; }
+  .site-v3 select { min-height:54px; }
 }

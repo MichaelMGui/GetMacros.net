@@ -16,7 +16,10 @@
 .sex-choice-row label { position:relative; display:grid; grid-template-columns:42px 1fr; gap:.7rem; align-items:center; min-height:62px; padding:.6rem .8rem; border:1.5px solid #bdcec4; border-radius:15px; background:#fff; font-size:1rem; }
 .sex-choice-row input[type="radio"] { position:absolute!important; width:1px!important; height:1px!important; overflow:hidden; opacity:0; pointer-events:none; }
 .sex-choice-icon { display:grid; place-items:center; width:42px; height:42px; border-radius:12px; background:#edf5f0; color:#176a4b; }
-.sex-choice-icon .icon { width:23px; height:23px; fill:currentColor; }
+.sex-choice-icon .icon { display:none; }
+.sex-choice-icon::before { font-size:1rem; font-weight:900; line-height:1; }
+.sex-choice-row label:first-child .sex-choice-icon::before { content:"M"; }
+.sex-choice-row label:last-child .sex-choice-icon::before { content:"F"; }
 .sex-choice-row label:has(input:checked) { border-color:#123f2d; background:#123f2d; color:#fff; box-shadow:0 0 0 3px rgba(18,63,45,.12); }
 .sex-choice-row label:has(input:checked) .sex-choice-icon { background:var(--calc-lime); color:#123f2d; }
 .sex-choice-row label:has(input:focus-visible) { outline:3px solid #77ae94; outline-offset:2px; }
