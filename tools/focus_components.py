@@ -6,7 +6,7 @@ import json
 
 SITE = "https://getmacros.net"
 PUBLISHER = "ca-pub-2316153877942502"
-ASSET_VERSION = "20260823a"
+ASSET_VERSION = "20260823f"
 
 CSP = (
     "default-src 'self'; script-src 'self' 'unsafe-inline' "

@@ -52,12 +52,21 @@ def rank_list(meals: list[dict], metric: str, *, reverse=True, limit=4,
     return "".join(rows)
 
 
+def substantial_meal(meal: dict) -> bool:
+    """A meaningful entrée for rankings, not merely a technically listed item."""
+    return (
+        item_type(meal) not in {"Side", "Side / snack"}
+        and (meal.get("cal") or 0) >= 250
+        and (meal.get("p") or 0) >= 15
+    )
+
+
 def build_home(meals: list[dict]) -> None:
     count, chains = len(meals), len({m["chain"] for m in meals})
     example = max((m for m in meals if m.get("p") is not None and item_type(m) != "Side"),
                   key=lambda m: m["p"])
     title = "Healthy Fast Food & Macro Calculator | GetMacros"
-    meta = (f"Find healthy fast-food options across {chains} chains by calories, protein, fibre and sodium, "
+    meta = (f"Find healthy fast-food options across {chains} chains by calories, protein, fiber and sodium, "
             "then calculate daily macro targets with transparent tools.")
     schema = [
         {"@context": "https://schema.org", "@type": "WebSite", "name": "GetMacros.net",
@@ -73,9 +82,9 @@ def build_home(meals: list[dict]) -> None:
         ("↓", "Lower calorie", "Find substantial entrées—not tiny sides presented as meals."),
         ("◎", "Cutting", "Balance a lower energy target with useful protein and satisfaction."),
         ("＋", "Bulking", "Compare higher-energy meals that still provide meaningful protein."),
-        ("◇", "Higher fibre", "Find bowls, beans, grains and vegetables where fibre is published."),
+        ("◇", "Higher fiber", "Find bowls, beans, grains and vegetables where fiber is published."),
         ("○", "Lower sodium", "Compare only published sodium values; missing never means zero."),
-        ("葉", "Vegetarian", "Filter standard builds without meat or fish."),
+        ("♧", "Vegetarian", "Filter standard builds without meat or fish."),
     ]
     goal_html = "".join(
         f'<a class="goal-card" href="restaurant-meal-finder.html"><span aria-hidden="true">{icon}</span><h3>{label}</h3><p>{desc}</p></a>'
@@ -87,6 +96,10 @@ def build_home(meals: list[dict]) -> None:
         ("nutrition-label-comparison-tool.html", "Compare nutrition labels", "Put two foods on equal footing by serving and calories."),
         ("protein-value-calculator.html", "Protein Cost per Gram Calculator", "Compare the price of one gram of protein in two foods."),
         ("budget-meal-builder.html", "Budget meal builder", "Build a practical meal around food and cost constraints."),
+        ("sodium-label-comparison-tool.html", "Sodium per Portion Calculator", "Compare sodium using the portion you actually eat."),
+        ("carbohydrate-label-portion-tool.html", "Carbs per Portion Calculator", "Convert label carbohydrates to your real portion."),
+        ("weight-goal-timeline-calculator.html", "Weight Goal Timeline Calculator", "Estimate a realistic range from a daily calorie change."),
+        ("sweat-rate-calculator.html", "Sweat Rate Calculator", "Estimate observed fluid loss from a training session."),
     ]
     tool_html = "".join(f'<a class="tool-card" href="{p}"><span aria-hidden="true">{i+1:02d}</span><h3>{h}</h3><p>{d}</p></a>' for i, (p,h,d) in enumerate(tools))
     guides = [
@@ -102,18 +115,18 @@ def build_home(meals: list[dict]) -> None:
 <body class="site-v3 modern-site recovery-page">{nav()}
 <main id="main-content"><section class="focus-hero"><div class="container hero-grid"><div>
 <p class="eyebrow">Fast-food nutrition for real goals</p><h1>Healthy fast food that fits your macros</h1>
-<p>Compare complete restaurant orders by calories, protein, fibre and sodium. Find a meal for cutting, bulking or everyday eating—then use focused tools to understand the numbers.</p>
+<p>Compare complete restaurant orders by calories, protein, fiber and sodium. Find a meal for cutting, bulking or everyday eating—then use focused tools to understand the numbers.</p>
 <div class="focus-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Find a fast-food meal</a><a class="btn btn-outline" href="calculators.html">Calculate my macros</a></div>
-<div class="proof-strip"><span><strong>{count}</strong>tracked menu options</span><span><strong>{chains}</strong>restaurant chains</span><span><strong>Official</strong>chain nutrition sources</span></div></div>
+<div class="proof-strip"><span><strong>{count}</strong> tracked menu options</span><span><strong>{chains}</strong> restaurant chains</span><span><strong>Official</strong> chain nutrition sources</span></div></div>
 <aside class="sample-card"><span class="sample-label">A real tracked example</span><h2>{html.escape(example["name"])}</h2><p>{html.escape(example["chain"])} &middot; {html.escape(example["why"])}</p>
-<div class="sample-macros"><span><b>{example["cal"]:g}</b>calories</span><span><b>{example["p"]:g} g</b>protein</span><span><b>{"—" if example.get("f") is None else f'{example["f"]:g} g'}</b>fibre</span></div></aside>
+<div class="sample-macros"><span><b>{example["cal"]:g}</b>calories</span><span><b>{example["p"]:g} g</b>protein</span><span><b>{"—" if example.get("f") is None else f'{example["f"]:g} g'}</b>fiber</span></div></aside>
 </div></section>
 <section><div class="container"><div class="section-head"><p class="eyebrow">Start with your goal</p><h2>Find an order for the job it needs to do</h2><p>No food is universally best. Combine goals in the finder and see the complete nutrition before choosing.</p></div><div class="goal-grid">{goal_html}</div></div></section>
 <section class="data-section"><div class="container"><div class="section-head"><p class="eyebrow">Across every chain</p><h2>What the menu data shows</h2><p>Static comparisons give the page value before any interaction. These rankings are calculated from the same central records used by the finder.</p></div>
 <div class="ranking-grid"><article class="ranking-card"><h3>Highest protein</h3><ol class="ranking-list">{rank_list(meals,"p",unit=" g")}</ol></article>
-<article class="ranking-card"><h3>Lower-calorie substantial options</h3><ol class="ranking-list">{rank_list(meals,"cal",reverse=False,unit=" cal",where=lambda m:item_type(m) not in {"Side","Side / snack"} and ((m.get("p") or 0)>=15 or (m.get("cal") or 0)>=250))}</ol></article>
-<article class="ranking-card"><h3>Highest fibre</h3><ol class="ranking-list">{rank_list(meals,"f",unit=" g")}</ol></article>
-<article class="ranking-card"><h3>Lower published sodium</h3><ol class="ranking-list">{rank_list(meals,"na",reverse=False,unit=" mg")}</ol></article></div>
+<article class="ranking-card"><h3>Lower-calorie substantial options</h3><ol class="ranking-list">{rank_list(meals,"cal",reverse=False,unit=" cal",where=substantial_meal)}</ol></article>
+<article class="ranking-card"><h3>Highest fiber</h3><ol class="ranking-list">{rank_list(meals,"f",unit=" g")}</ol></article>
+<article class="ranking-card"><h3>Lower-sodium meals and entrées</h3><ol class="ranking-list">{rank_list(meals,"na",reverse=False,unit=" mg",where=substantial_meal)}</ol></article></div>
 <div class="focus-actions"><a class="btn btn-primary" href="healthy-fast-food.html">Explore healthy fast food</a><a class="btn" href="restaurant-meal-finder.html">Rank meals for my goals</a></div></div></section>
 <section><div class="container"><div class="section-head"><p class="eyebrow">15 restaurant guides</p><h2>Choose a chain</h2><p>Each guide exposes every worthwhile option we track, a full comparison table, derived protein efficiency, and chain-specific ordering advice.</p></div><div class="chain-grid">{chain_cards(meals)}</div></div></section>
 <section class="compact-calc"><div class="container home-calculator"><div class="calculator-copy"><p class="eyebrow">Your daily targets</p><h2>Quick macro calculator</h2><p>Estimate calories, protein, fat and carbohydrates using the Mifflin–St Jeor equation and transparent activity assumptions.</p><ul><li>Feet/inches and metric controls on the full calculator</li><li>BMR and estimated TDEE context</li><li>Educational estimates, not a medical prescription</li></ul><a class="text-link light-link" href="calculators.html">Open the full macro calculator &rarr;</a></div>
@@ -129,7 +142,7 @@ def build_home(meals: list[dict]) -> None:
 def build_fast_food(meals: list[dict]) -> None:
     count, chains = len(meals), len({m["chain"] for m in meals})
     title = "Healthy Fast Food: High-Protein & Lower-Calorie Orders | GetMacros"
-    meta = (f"Compare {count} fast-food options across {chains} chains by calories, protein, fibre and sodium. "
+    meta = (f"Compare {count} fast-food options across {chains} chains by calories, protein, fiber and sodium. "
             "Find meals for cutting, bulking, high protein and vegetarian goals.")
     visible = sorted([m for m in meals if m.get("p") is not None], key=lambda m:m["p"], reverse=True)[:10]
     schema = [
@@ -142,7 +155,7 @@ def build_fast_food(meals: list[dict]) -> None:
         ("High protein","Prioritizes 25 g or more while showing calories and sodium."),
         ("Cutting","Highlights substantial lower-calorie options with useful protein."),
         ("Bulking","Surfaces higher-energy meals that still provide meaningful protein."),
-        ("Higher fibre","Finds meals publishing at least 5 g fibre."),
+        ("Higher fiber","Finds meals publishing at least 5 g fiber."),
         ("Lower sodium","Uses published sodium only; missing data never qualifies."),
         ("Vegetarian / plant based","Filters standard builds and keeps cross-contact caveats visible."),
     ])
@@ -150,27 +163,27 @@ def build_fast_food(meals: list[dict]) -> None:
 <main id="main-content">{breadcrumbs([("Home","index.html"),("Healthy Fast Food",None)])}
 <section class="focus-page-hero"><div class="container"><p class="eyebrow">The GetMacros restaurant database</p><h1>Healthy fast food for cutting, bulking and high protein</h1>
 <p>Compare complete tracked orders—not just low-calorie sides—across {chains} chains. Use the static rankings below or combine several preferences in the meal finder.</p>
-<div class="stat-row"><span>{count} tracked options</span><span>{chains} restaurant chains</span><span>Official sources checked August 2026</span></div>
+<div class="stat-row"><span>{count} tracked menu options</span><span>{chains} restaurant chains</span><span>Official sources checked August 2026</span></div>
 <div class="focus-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Find my best meal</a><a class="btn btn-outline" href="#rankings">See the comparisons</a></div></div></section>
 <section><div class="container"><div class="section-head"><p class="eyebrow">Combine goals</p><h2>What matters for this order?</h2><p>High protein and bulking can coexist. So can vegetarian and lower calorie. The finder ranks compatible records without pretending one meal is best for everyone.</p></div><div class="goal-grid">{goal_links}</div></div></section>
 <section id="rankings" class="data-section"><div class="container"><div class="section-head"><p class="eyebrow">Cross-chain comparisons</p><h2>Healthy fast-food options by the metric you care about</h2><p>Every number below comes from the central dataset. Small sides are excluded from the substantial lower-calorie list.</p></div><div class="ranking-grid">
 <article class="ranking-card"><h3>Highest-protein fast food</h3><ol class="ranking-list">{rank_list(meals,"p",limit=8,unit=" g")}</ol></article>
-<article class="ranking-card"><h3>Lower-calorie meals and entrées</h3><ol class="ranking-list">{rank_list(meals,"cal",reverse=False,limit=8,unit=" cal",where=lambda m:item_type(m) not in {"Side","Side / snack"} and ((m.get("p") or 0)>=15 or (m.get("cal") or 0)>=250))}</ol></article>
+<article class="ranking-card"><h3>Lower-calorie meals and entrées</h3><ol class="ranking-list">{rank_list(meals,"cal",reverse=False,limit=8,unit=" cal",where=substantial_meal)}</ol></article>
 <article class="ranking-card"><h3>Higher-energy meals for bulking</h3><ol class="ranking-list">{rank_list(meals,"cal",limit=8,unit=" cal",where=lambda m:item_type(m) not in {"Side","Side / snack"} and (m.get("p") or 0)>=20)}</ol></article>
-<article class="ranking-card"><h3>Highest-fibre options</h3><ol class="ranking-list">{rank_list(meals,"f",limit=8,unit=" g")}</ol></article>
-<article class="ranking-card"><h3>Lower published sodium</h3><ol class="ranking-list">{rank_list(meals,"na",reverse=False,limit=8,unit=" mg")}</ol></article>
+<article class="ranking-card"><h3>Highest-fiber options</h3><ol class="ranking-list">{rank_list(meals,"f",limit=8,unit=" g")}</ol></article>
+<article class="ranking-card"><h3>Lower-sodium meals and entrées</h3><p class="ranking-note">Only substantial tracked items with published sodium qualify. Missing sodium is never treated as zero.</p><ol class="ranking-list">{rank_list(meals,"na",reverse=False,limit=8,unit=" mg",where=substantial_meal)}</ol></article>
 <article class="ranking-card"><h3>Higher-protein vegetarian options</h3><ol class="ranking-list">{rank_list(meals,"p",limit=8,unit=" g",where=lambda m:"vegetarian" in m.get("diet",[]))}</ol></article>
 <article class="ranking-card"><h3>Plant-based menu options</h3><ol class="ranking-list">{rank_list(meals,"p",limit=8,unit=" g",where=lambda m:"plant" in m.get("diet",[]))}</ol></article>
 <article class="ranking-card"><h3>High-protein fast-food breakfasts</h3><ol class="ranking-list">{rank_list(meals,"p",limit=8,unit=" g",where=lambda m:m.get("meal")=="breakfast")}</ol></article></div></div></section>
 <section><div class="container"><div class="section-head"><p class="eyebrow">Restaurant directory</p><h2>Healthy options by restaurant</h2><p>Every chain page now exposes all tracked options, protein-per-calorie, goal-based picks, unique ordering advice, an official source and a real checked date.</p></div><div class="chain-grid">{chain_cards(meals)}</div></div></section>
-<section class="data-section"><div class="container method-band"><div><p class="eyebrow">Methodology</p><h2>What “healthy” means here</h2><p>It means useful information for a specific goal—not a universal label. Rankings keep calories, protein, fibre and sodium visible together.</p></div><div><h3>Important limits</h3><ul><li>Standard U.S. menu builds, not every customization</li><li>Entrées, sides and snacks are classified separately</li><li>Missing values remain blank, never zero</li><li>Diet tags do not imply allergy safety</li><li>Menus and recipes change; confirm the official source</li></ul><a class="btn btn-outline" href="restaurant-nutrition-information.html">Read the data method</a></div></div></section>
+<section class="data-section"><div class="container method-band"><div><p class="eyebrow">Methodology</p><h2>What “healthy” means here</h2><p>It means useful information for a specific goal—not a universal label. Rankings keep calories, protein, fiber and sodium visible together.</p></div><div><h3>Important limits</h3><ul><li>Standard U.S. menu builds, not every customization</li><li>Entrées, sides and snacks are classified separately</li><li>Missing values remain blank, never zero</li><li>Diet tags do not imply allergy safety</li><li>Menus and recipes change; confirm the official source</li></ul><a class="btn btn-outline" href="restaurant-nutrition-information.html">Read the data method</a></div></div></section>
 <div class="ad-auto-anchor" aria-hidden="true"></div></main>{footer()}</body></html>'''
     (ROOT/"healthy-fast-food.html").write_text(body,encoding="utf-8")
 
 
 def build_restaurant_directory(meals: list[dict]) -> None:
     title="Healthy Fast-Food Restaurants & Menu Guides | GetMacros"
-    meta=f"Browse nutrition guides for {len({m['chain'] for m in meals})} fast-food and fast-casual chains, with calories, protein, fibre, sodium and official source links."
+    meta=f"Browse nutrition guides for {len({m['chain'] for m in meals})} fast-food and fast-casual chains, with calories, protein, fiber, sodium and official source links."
     body=f'''{head("restaurant-meal-guides.html",title,meta)}<body class="site-v3 recovery-page">{nav("fastfood")}<main id="main-content">
 {breadcrumbs([("Home","index.html"),("Healthy Fast Food","healthy-fast-food.html"),("Restaurant Guides",None)])}
 <section class="focus-page-hero"><div class="container"><p class="eyebrow">Chain-by-chain nutrition</p><h1>Healthy fast-food restaurant guides</h1><p>Choose a chain to compare every menu option in the GetMacros dataset and see goal-based picks, protein efficiency, official sources and checked dates.</p></div></section>
@@ -205,7 +218,14 @@ def build_articles() -> None:
 def build_about(meals: list[dict]) -> None:
     title="About GetMacros: Data, Tools & Editorial Standards"
     meta="Learn who GetMacros is for, how restaurant nutrition data and macro tools are built, how sources are checked, and how to report corrections."
-    body=f'''{head("about.html",title,meta)}<body class="site-v3 recovery-page">{nav("about")}<main id="main-content">
+    schema=[
+        {"@context":"https://schema.org","@type":"AboutPage","name":"About GetMacros",
+         "url":f"{SITE}/about.html","description":meta},
+        {"@context":"https://schema.org","@type":"Organization","name":"GetMacros.net",
+         "url":f"{SITE}/","email":"getmacros.net@outlook.com",
+         "publishingPrinciples":f"{SITE}/editorial-policy.html"},
+    ]
+    body=f'''{head("about.html",title,meta,schema=schema)}<body class="site-v3 recovery-page">{nav("about")}<main id="main-content">
 {breadcrumbs([("Home","index.html"),("About",None)])}<section class="focus-page-hero"><div class="container"><p class="eyebrow">About GetMacros</p><h1>Practical nutrition tools for real food decisions</h1><p>GetMacros helps people compare fast-food meals by calories, protein and other published nutrients, calculate macro targets, and understand the numbers without moralizing food.</p></div></section>
 <section><div class="container content-list"><h2>What GetMacros publishes</h2><p>The focused product contains {len(meals)} tracked menu options across {len({m['chain'] for m in meals})} chains, a goal-based meal finder, macro and food calculators, and a curated library of supporting guides.</p><p>GetMacros is independent. Restaurant names and menu information belong to their respective owners; no chain sponsors or endorses these guides.</p>
 <h2>How restaurant data is handled</h2><ul><li>Values are tied to official restaurant nutrition sources.</li><li>Each chain guide shows its source and the real month the data was checked.</li><li>Missing values remain missing instead of being converted to zero.</li><li>Derived metrics show their formula and are not presented as health scores.</li><li>Menus change, so users are directed to confirm current official information.</li></ul>
@@ -222,6 +242,28 @@ def patch_existing_hubs() -> None:
         s=s.replace("<title>Macro Calculator: Calories, Protein, Carbs &amp; Fat</title>","<title>Macro Calculator &amp; Nutrition Tools | GetMacros</title>")
         s=s.replace("<h1>Turn your goal into useful numbers.</h1>","<h1>Macro calculator and practical nutrition tools</h1>")
         s=s.replace("This page now keeps only tools that calculate, compare or transform nutrition numbers. General worksheets and appointment organizers have been removed from this hub.","This focused library keeps only tools that calculate, compare or transform nutrition numbers for macros, food labels, recipes, budgets, hydration and restaurant choices.")
+        s=re.sub(r'<meta name="theme-color" content="[^"]+">',
+                 '<meta name="theme-color" content="#123f2d">', s, count=1)
+        s=s.replace('<meta property="og:locale" content="en_US">\n', '')
+        s=re.sub(r'<meta property="og:image:alt" content="[^"]*">',
+                 '<meta property="og:image:alt" content="GetMacros.net practical nutrition tools">', s, count=1)
+        s=re.sub(
+            r'<nav class="breadcrumb" aria-label="Breadcrumb"><div class="container">.*?</div></nav>',
+            breadcrumbs([("Home", "index.html"), ("Macro Calculator", None)]),
+            s, count=1, flags=re.S,
+        )
+        calculator_breadcrumb = {
+            "@context": "https://schema.org", "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
+                {"@type": "ListItem", "position": 2, "name": "Macro Calculator", "item": f"{SITE}/calculators.html"},
+            ],
+        }
+        s=re.sub(
+            r'<script type="application/ld\+json">\{"@context": "https://schema.org", "@type": "BreadcrumbList".*?</script>',
+            f'<script type="application/ld+json">{json.dumps(calculator_breadcrumb)}</script>',
+            s, count=1, flags=re.S,
+        )
         if "calculators-polish.css" not in s:
             s=re.sub(r'(<link\s+rel="stylesheet"\s+href="css/calculator-height-v2\.css[^>]*>)',
                      r'\1<link rel="stylesheet" href="css/calculators-polish.css?v=20260823b">', s, count=1)

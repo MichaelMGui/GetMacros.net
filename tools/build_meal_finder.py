@@ -37,6 +37,19 @@ FIBRE_G = 5
 SODIUM_MG = 600
 
 
+def substantial(m):
+    """Require enough energy and protein to function as a meaningful entrée."""
+    name = m.get("name", "").lower()
+    looks_like_side = any(word in name for word in ("side", "apple slices", "coleslaw", "green beans"))
+    snack_size = m.get("size") == "small" and (m.get("p") or 0) < 10
+    return (
+        not looks_like_side
+        and not snack_size
+        and (m.get("cal") or 0) >= 250
+        and (m.get("p") or 0) >= 15
+    )
+
+
 def goal_tags(m):
     """The goal tags a meal earns from its own published numbers."""
     t = []
@@ -44,11 +57,11 @@ def goal_tags(m):
         t.append("protein")
     if m["cal"] is not None and m["cal"] >= ENERGY_KCAL:
         t.append("energy")
-    if m["cal"] is not None and m["cal"] <= LIGHT_KCAL:
+    if substantial(m) and m["cal"] <= LIGHT_KCAL:
         t.append("light")
     if m["f"] is not None and m["f"] >= FIBRE_G:
         t.append("fibre")
-    if m["na"] is not None and m["na"] <= SODIUM_MG:
+    if substantial(m) and m["na"] is not None and m["na"] <= SODIUM_MG:
         t.append("lowsodium")
     # Balanced means nothing is at an extreme: a real meal's worth of calories
     # carrying a real meal's worth of protein.
@@ -100,7 +113,7 @@ def ranked(meals, key, reverse=True, limit=12, where=None):
 def table(rows, highlight):
     """One ranked list. `highlight` is the column the ranking is by."""
     cols = [("cal", "Calories", ""), ("p", "Protein", " g"),
-            ("f", "Fibre", " g"), ("na", "Sodium", " mg")]
+            ("f", "Fiber", " g"), ("na", "Sodium", " mg")]
     out = ['<div class="table-scroll"><table class="meal-table"><thead><tr>'
            '<th scope="col">Meal</th><th scope="col">Restaurant</th>']
     for k, label, _ in cols:
@@ -133,17 +146,17 @@ def render(meals):
          "Combined orders name every item included; drinks and unlisted sauces are excluded.",
          ranked(meals, "cal", where=lambda m: m["cal"] >= 1000), "cal"),
         ("fast-food-under-400-calories", f"Fast food under {LIGHT_KCAL} calories",
-         "Sorted lightest first. Several are sides rather than full meals, which "
-         "is worth knowing before you order one on its own.",
-         ranked(meals, "cal", reverse=False, where=lambda m: m["cal"] <= LIGHT_KCAL), "cal"),
-        ("highest-fibre-fast-food", "Fast food with the most fibre",
-         "Fibre is the number most fast-food menus are thin on, and the one that "
+         "Substantial entrées and meal components only: at least 250 calories and 15 g protein. "
+         "Tiny sides and snack portions are excluded.",
+         ranked(meals, "cal", reverse=False, where=lambda m: substantial(m) and m["cal"] <= LIGHT_KCAL), "cal"),
+        ("highest-fibre-fast-food", "Fast food with the most fiber",
+         "Fiber is the number most fast-food menus are thin on, and the one that "
          "most changes whether a meal holds you until the next one.",
          ranked(meals, "f"), "f"),
-        ("lowest-sodium-fast-food", "Lowest-sodium options",
-         "Only meals where the chain publishes a sodium figure. A missing number "
-         "is not a low one, so nothing unpublished is ranked here.",
-         ranked(meals, "na", reverse=False), "na"),
+        ("lowest-sodium-fast-food", "Lower-sodium meals and entrées",
+         "Only substantial items with at least 250 calories, 15 g protein and a published sodium figure qualify. "
+         "A missing number is not a low one, so nothing unpublished is ranked here.",
+         ranked(meals, "na", reverse=False, where=substantial), "na"),
         ("vegetarian-fast-food", "Every vegetarian option we track",
          "No meat or fish in the standard build. Ordered by protein, because that "
          "is the number these meals most often give up.",
@@ -162,7 +175,7 @@ def render(meals):
            '<section class="meal-index"><div class="container">',
            "<h2>The same meals, ranked across every chain</h2>",
            f"<p class=\"meal-index-intro\">The quiz answers one question at a time. "
-           f"These are the standing lists behind it: all {n} meals from "
+           f"These are the standing lists behind it: all {n} tracked menu options from "
            f"{len(chains)} chains, sorted the ways people actually ask for them. "
            f"Every figure is the chain's published standard build.</p>",
            '<nav class="meal-jump" aria-label="Jump to a list"><ul>']
@@ -207,8 +220,8 @@ def main():
     c = open(PAGE, encoding="utf-8").read()
     complete_count = sum(1 for m in meals if all(m.get(k) is not None for k in ("cal", "p", "f", "na")))
     c = re.sub(r"css/meal-finder-v2\.css\?v=[^\"']+", "css/meal-finder-v2.css?v=20260823b", c)
-    c = re.sub(r"Five clear questions rank \d+ real menu items from \d+ restaurants\.",
-               f"Five clear questions rank {len(meals)} real menu items from {len({m['chain'] for m in meals})} restaurants.", c)
+    c = re.sub(r"Five clear questions rank \d+ (?:real menu items|tracked menu options) from \d+ restaurants\.",
+               f"Five clear questions rank {len(meals)} tracked menu options from {len({m['chain'] for m in meals})} restaurants.", c)
     c = re.sub(r"<span>\d+ complete nutrition profiles</span>",
                f"<span>{complete_count} complete nutrition profiles</span>", c)
     c = re.sub(r'<div class="visual-card one"><b>\d+ choices</b>',

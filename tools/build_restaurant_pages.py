@@ -19,9 +19,15 @@ CHAIN_CONFIG = {
         "intro": "Chipotle is unusually flexible: protein, rice, beans, vegetables and toppings can be adjusted independently. Compare the complete builds we track, then use the official calculator for your exact custom bowl.",
         "source": "https://www.chipotle.com/nutrition-calculator",
         "source_label": "Chipotle nutrition calculator",
+        "additional_sources": [
+            ("https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+             "Chipotle High Protein Menu announcement"),
+            ("https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+             "Chipotle U.S. ingredient nutrition table"),
+        ],
         "advice": [
             "Choose the protein first; doubling it changes both calories and cost, so check the live builder.",
-            "Rice and beans are not interchangeable: beans add fibre and protein, while rice mainly raises carbohydrate and energy.",
+            "Rice and beans are not interchangeable: beans add fiber and protein, while rice mainly raises carbohydrate and energy.",
             "Cheese, sour cream, guacamole and vinaigrette can make a bowl substantially larger. That may suit bulking, but it should be intentional.",
         ],
     },
@@ -34,7 +40,7 @@ CHAIN_CONFIG = {
         "advice": [
             "A salad name does not determine its calorie total; grains, nuts, cheese, avocado and dressing matter more.",
             "For a meal rather than a side salad, check that the bowl contains a meaningful protein source and enough food for your appetite.",
-            "Plant-based bowls can be high in fibre but lower in protein. Add tofu or another listed protein if that is your priority.",
+            "Plant-based bowls can be high in fiber but lower in protein. Add tofu or another listed protein if that is your priority.",
         ],
     },
     "CAVA": {
@@ -128,7 +134,7 @@ CHAIN_CONFIG = {
         "source": "https://www.tacobell.com/nutrition/info",
         "source_label": "Taco Bell nutrition information",
         "advice": [
-            "Beans can add fibre and protein to vegetarian orders; removing meat without replacing it can leave a smaller meal.",
+            "Beans can add fiber and protein to vegetarian orders; removing meat without replacing it can leave a smaller meal.",
             "Bowls make ingredients easier to adjust, but cheese, sour cream and sauces still count.",
             "Ordering several small items can exceed one substantial entrée, so compare the full order rather than each item alone.",
         ],
@@ -238,7 +244,7 @@ def table(meals: list[dict]) -> str:
 <td>{"&mdash;" if eff is None else f"{eff:.1f} g"}</td></tr>''')
     return '''<div class="table-wrap"><table class="comparison-table"><thead><tr>
 <th scope="col">Tracked standard item</th><th scope="col">Type</th><th scope="col">Calories</th>
-<th scope="col">Protein</th><th scope="col">Carbs</th><th scope="col">Fibre</th>
+<th scope="col">Protein</th><th scope="col">Carbs</th><th scope="col">Fiber</th>
 <th scope="col">Sodium</th><th scope="col">Protein / 100 cal</th></tr></thead><tbody>''' + "".join(rows) + "</tbody></table></div>"
 
 
@@ -248,7 +254,7 @@ def pick_cards(meals: list[dict], label: str) -> str:
         out.append(f'''<article class="pick-card"><span class="rank">{html.escape(label)} #{i}</span>
 <h3>{html.escape(m["name"])}</h3><p>{html.escape(m["why"])}</p><div class="pick-metrics">
 <span>{n(m.get("cal"))} calories</span><span>{n(m.get("p"), " g")} protein</span>
-<span>{n(m.get("f"), " g")} fibre</span><span>{n(m.get("na"), " mg")} sodium</span></div></article>''')
+<span>{n(m.get("f"), " g")} fiber</span><span>{n(m.get("na"), " mg")} sodium</span></div></article>''')
     return "".join(out)
 
 
@@ -256,7 +262,7 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
     cfg = CHAIN_CONFIG[chain]
     path = meals[0]["url"]
     title, h1 = cfg["title"], cfg["h1"]
-    meta = (f"Compare {chain} options by calories, protein, carbs, fibre and sodium. "
+    meta = (f"Compare {chain} options by calories, protein, carbs, fiber and sodium. "
             "See high-protein, lower-calorie and goal-based picks from verified menu data.")
     ranked_protein = sorted([m for m in meals if m.get("p") is not None], key=lambda m: m["p"], reverse=True)[:3]
     substantial = [m for m in meals if item_type(m) not in {"Side", "Side / snack"}
@@ -278,6 +284,14 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
         ]},
     ]
     advice = "".join(f"<li>{html.escape(text)}</li>" for text in cfg["advice"])
+    additional_sources = "".join(
+        f'<li><a href="{html.escape(url, quote=True)}">{html.escape(label)}</a></li>'
+        for url, label in cfg.get("additional_sources", [])
+    )
+    additional_sources = (
+        f'<p>Build-specific source details:</p><ul>{additional_sources}</ul>'
+        if additional_sources else ""
+    )
     veg = ""
     if vegetarian:
         veg = f'''<section><div class="container"><div class="section-head"><p class="eyebrow">Dietary pattern</p>
@@ -295,7 +309,7 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
 <h2>Compare every {html.escape(chain)} option we track</h2><p>These are standard U.S. menu builds from the central GetMacros dataset. Dashes mean the value was not available in a form we could verify—not zero.</p></div>
 {table(meals)}<p class="metric-note"><strong>Protein per 100 calories</strong> = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score.</p></div></section>
 <section class="data-section"><div class="container"><div class="section-head"><p class="eyebrow">High protein</p><h2>Highest-protein {html.escape(chain)} picks</h2>
-<p>Ranked only by published protein. Calories, fibre and sodium stay visible so one number does not make the whole decision.</p></div><div class="pick-grid">{pick_cards(ranked_protein, "Protein")}</div></div></section>
+<p>Ranked only by published protein. Calories, fiber and sodium stay visible so one number does not make the whole decision.</p></div><div class="pick-grid">{pick_cards(ranked_protein, "Protein")}</div></div></section>
 <section><div class="container"><div class="section-head"><p class="eyebrow">Lower calorie, still substantial</p>
 <h2>Lighter entrées and meals</h2><p>Tiny sides and low-calorie add-ons are excluded from this list. These are the lightest tracked options that still function as an entrée or meaningful meal component.</p></div>
 <div class="pick-grid">{pick_cards(lighter, "Lighter")}</div></div></section>
@@ -308,11 +322,12 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
 <li><strong>Cutting:</strong> start with the lighter substantial list, then choose a portion that keeps you satisfied.</li>
 <li><strong>Bulking:</strong> use the higher-energy list and favour options with meaningful protein.</li>
 <li><strong>High protein:</strong> compare grams of protein and protein per 100 calories; neither replaces total meal context.</li>
-<li><strong>Higher fibre:</strong> favour beans, vegetables, whole grains or other items where fibre is actually published.</li>
+<li><strong>Higher fiber:</strong> favor beans, vegetables, whole grains or other items where fiber is actually published.</li>
 </ul></article></div></section>
 <section><div class="container"><div class="source-box"><h2>Official source and data freshness</h2>
 <p><strong>Nutrition data checked: August 2026.</strong> Values reflect tracked standard U.S. menu builds and can change with recipes, portions, locations and customization.</p>
 <p><a href="{html.escape(cfg["source"], quote=True)}">Open the official {html.escape(cfg["source_label"])}</a>. Confirm current nutrition and allergen information with {html.escape(chain)} when accuracy is important.</p>
+{additional_sources}
 <p>GetMacros is independent and is not sponsored or endorsed by {html.escape(chain)}.</p></div></div></section>
 <section class="data-section"><div class="container"><div class="section-head"><h2>Compare another restaurant</h2>
 <p>Use the finder to rank all {len(parse_meals())} tracked options, or return to the chain directory.</p></div><div class="focus-actions">

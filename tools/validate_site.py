@@ -12,7 +12,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from build_restaurant_pages import CHAIN_CONFIG, parse_meals
+from build_restaurant_pages import CHAIN_CONFIG, item_type, parse_meals
 from site_scope import KEEP_ROOT_HTML
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -308,6 +308,12 @@ def main() -> int:
         if re.search(pattern, key_text, re.I):
             errors.append(label)
 
+    for path, (text, _) in pages.items():
+        visible_text = re.sub(r"<(?:script|style)\b.*?</(?:script|style)>", " ", text, flags=re.I | re.S)
+        visible_text = re.sub(r"<[^>]+>", " ", visible_text)
+        if re.search(r"\bfibre\b", visible_text, re.I):
+            errors.append(f"{path}: visible copy must use the U.S. spelling 'fiber'")
+
     meals = parse_meals()
     chains = {m["chain"] for m in meals}
     if len(meals) != 83 or len(chains) != 15:
@@ -321,6 +327,22 @@ def main() -> int:
             value = meal.get(field)
             if value is not None and (not isinstance(value, (int, float)) or value < 0):
                 errors.append(f"restaurant data: invalid {field} for {meal['chain']} / {meal['name']}")
+        tags = set(meal.get("t", []))
+        substantial = item_type(meal) not in {"Side", "Side / snack"} and (meal.get("cal") or 0) >= 250 and (meal.get("p") or 0) >= 15
+        if "light" in tags and not (substantial and meal.get("cal", 0) <= 400):
+            errors.append(f"restaurant data: light tag is not a substantial meal: {meal['chain']} / {meal['name']}")
+        if "lowsodium" in tags and not (substantial and meal.get("na") is not None and meal["na"] <= 600):
+            errors.append(f"restaurant data: low-sodium tag is not a substantial meal: {meal['chain']} / {meal['name']}")
+
+    count_claims = {
+        "index.html": r"<strong>83</strong>\s*tracked menu options",
+        "about.html": r"83 tracked menu options",
+        "healthy-fast-food.html": r"83 tracked menu options",
+        "restaurant-meal-finder.html": r"83 tracked menu options",
+    }
+    for path, claim in count_claims.items():
+        if not re.search(claim, pages.get(path, ("", PageParser()))[0]):
+            errors.append(f"{path}: current restaurant-option count claim missing")
     finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
     quiz_text = (ROOT / "js" / "meal-quiz.js").read_text(encoding="utf-8")
     if "quiz-skip" in quiz_text or "data-clear" in quiz_text:
@@ -355,6 +377,14 @@ def main() -> int:
         errors.append("calculators.html: stale related-content dump remains")
     if "calculators-polish.css" not in calc_text or "sex-choice-icon" not in calc_text:
         errors.append("calculators.html: calculator readability controls missing")
+    if '<meta name="theme-color" content="#123f2d">' not in calc_text:
+        errors.append("calculators.html: site theme color is inconsistent")
+    if 'property="og:locale"' in calc_text or 'content="GetMacros.net logo"' in calc_text:
+        errors.append("calculators.html: stale social metadata remains")
+    if '"name": "Articles"' in calc_text or "Home › Articles ›" in calc_text:
+        errors.append("calculators.html: stale Articles breadcrumb remains")
+    if '"name": "Macro Calculator"' not in calc_text or not re.search(r'Home</a>\s*<span[^>]*>&rsaquo;</span>\s*<span[^>]*>Macro Calculator</span>', calc_text):
+        errors.append("calculators.html: calculator breadcrumb hierarchy is missing")
 
     try:
         ET.parse(ROOT / "feed.xml")
