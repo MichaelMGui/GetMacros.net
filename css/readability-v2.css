@@ -1,0 +1,47 @@
+/* Site-wide legibility polish. Layout and page purpose remain unchanged. */
+.site-v3 {
+  --v3-muted: #4d6359;
+  font-size: 16px;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.site-v3 p,
+.site-v3 li { color: inherit; }
+.site-v3 :is(p,li,small,label,input,select,button) { letter-spacing: normal; }
+.site-v3 :is(h1,h2,h3) { font-family: Inter,"Inter Fallback",system-ui,-apple-system,"Segoe UI",sans-serif; font-weight: 800; }
+.site-v3 p { line-height: 1.72; }
+
+.full-nav-links a { font-size: .82rem; }
+.nav-action { font-size: .84rem; }
+.modern-footer p,
+.modern-footer a { color: #c4d2ca!important; font-size: .9rem; }
+.modern-footer small { color: #adbbb3; }
+
+.site-v3 input,
+.site-v3 select,
+.site-v3 textarea,
+.site-v3 button { font: inherit; }
+.site-v3 input,
+.site-v3 select,
+.site-v3 textarea { min-height: 48px; color: #10231b; border-color: #bdcec4; }
+.site-v3 select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2.75rem;
+  background-color: #fff;
+  background-image: linear-gradient(45deg,transparent 50%,#285844 50%),linear-gradient(135deg,#285844 50%,transparent 50%);
+  background-position: calc(100% - 19px) 21px,calc(100% - 13px) 21px;
+  background-size: 6px 6px,6px 6px;
+  background-repeat: no-repeat;
+}
+.site-v3 :is(input,select,textarea,button,a):focus-visible { outline: 3px solid #72a98f; outline-offset: 3px; }
+
+.site-v3 main a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.site-v3 main :is(.btn,.button,.card,.goal-card,.guide-card,.tool-card,.chain-card,.explore-card,.meal-jump a,.tool-links a,.calc-nav a) { text-decoration: none!important; }
+.site-v3 main :is(.btn,.button) { font-weight: 800; }
+
+@media(max-width:650px) {
+  .full-nav-links a { font-size: .79rem; }
+  .site-v3 p { line-height: 1.67; }
+}

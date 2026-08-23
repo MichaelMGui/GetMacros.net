@@ -197,7 +197,7 @@ def build_articles() -> None:
     meta="Browse focused GetMacros guides about protein, carbs, fat, macro goals, meal building, food labels, eating out and practical sports nutrition."
     schema={"@context":"https://schema.org","@type":"CollectionPage","name":"GetMacros Nutrition Guides","url":f"{SITE}/articles.html","description":meta,"numberOfItems":visible_count}
     body=f'''{head("articles.html",title,meta,schema=schema)}<body class="site-v3 recovery-page">{nav("guides")}<main id="main-content">
-{breadcrumbs([("Home","index.html"),("Nutrition Guides",None)])}<section class="guide-hub-hero"><div class="container"><p class="eyebrow">Focused, practical education</p><h1>Nutrition guides for the numbers you use</h1><p>Learn how protein, carbs, fat, portions and food labels connect to macro goals and real restaurant decisions. The library is curated around the GetMacros product—not every possible health topic.</p></div></section>{''.join(cards)}
+{breadcrumbs([("Home","index.html"),("Nutrition Guides",None)])}<section class="guide-hub-hero"><div class="container"><p class="eyebrow">Focused, practical education</p><h1>Nutrition guides for the numbers you use</h1><p>Learn how protein, carbs, fat, portions and food labels connect to macro goals and real restaurant decisions. The library is curated around the GetMacros product—not every possible health topic.</p></div><figure class="editorial-figure"><img src="images/editorial-recipe-portions.webp" width="1536" height="1024" alt="Grilled chicken and vegetables divided into practical meal-prep portions" loading="lazy"><figcaption>Good nutrition guidance should lead to food decisions you can actually repeat.</figcaption></figure></section>{''.join(cards)}
 <div class="ad-auto-anchor" aria-hidden="true"></div></main>{footer()}</body></html>'''
     (ROOT/"articles.html").write_text(body,encoding="utf-8")
 
@@ -222,8 +222,14 @@ def patch_existing_hubs() -> None:
         s=s.replace("<title>Macro Calculator: Calories, Protein, Carbs &amp; Fat</title>","<title>Macro Calculator &amp; Nutrition Tools | GetMacros</title>")
         s=s.replace("<h1>Turn your goal into useful numbers.</h1>","<h1>Macro calculator and practical nutrition tools</h1>")
         s=s.replace("This page now keeps only tools that calculate, compare or transform nutrition numbers. General worksheets and appointment organizers have been removed from this hub.","This focused library keeps only tools that calculate, compare or transform nutrition numbers for macros, food labels, recipes, budgets, hydration and restaurant choices.")
-        s=s.replace('<a href="protein-value-calculator.html">Protein value calculator <span>→</span></a>', '<a href="protein-value-calculator.html">Protein value calculator <span>→</span></a><a href="budget-meal-builder.html">Budget meal builder <span>→</span></a>')
-        s=re.sub(r'<p class="calc-disclaimer"><strong>Why fewer tools\?</strong>.*?</p>', '<p class="calc-disclaimer"><strong>Why fewer tools?</strong> Specialized medical-condition planners were removed so every tool here supports the GetMacros product and a clear nutrition task.</p>', s, flags=re.S)
+        if "calculators-polish.css" not in s:
+            s=re.sub(r'(<link\s+rel="stylesheet"\s+href="css/calculator-height-v2\.css[^>]*>)',
+                     r'\1<link rel="stylesheet" href="css/calculators-polish.css?v=20260823b">', s, count=1)
+        focused_library='''<section class="tool-library" id="tool-library"><div class="container"><div class="tool-library-head"><p class="eyebrow">Focused calculator library</p><h2>Seven tools for real nutrition decisions</h2><p>Each tool calculates, compares or transforms a number you can use. No duplicate links, generic worksheets or medical-condition planners.</p></div><div class="tool-groups">
+<article class="tool-group" id="food-tools"><div class="tool-group-head"><span class="tool-group-icon" aria-hidden="true">01</span><div><h3>Food, recipe and label math</h3><p>Scale a recipe or compare the foods you are actually choosing.</p></div></div><div class="tool-links"><a href="recipe-macro-scaler.html">Recipe macro scaler <span>→</span></a><a href="nutrition-label-comparison-tool.html">Compare two nutrition labels <span>→</span></a><a href="protein-value-calculator.html">Protein value calculator <span>→</span></a><a href="budget-meal-builder.html">Budget meal builder <span>→</span></a><a href="sodium-label-comparison-tool.html">Sodium label comparison <span>→</span></a><a href="carbohydrate-label-portion-tool.html">Carbohydrate portion calculator <span>→</span></a></div></article>
+<article class="tool-group" id="goal-tools"><div class="tool-group-head"><span class="tool-group-icon" aria-hidden="true">02</span><div><h3>Goals, training and eating out</h3><p>Estimate a timeline, measure observed sweat loss or compare restaurant meals.</p></div></div><div class="tool-links"><a href="weight-goal-timeline-calculator.html">Weight goal timeline <span>→</span></a><a href="sweat-rate-calculator.html">Sweat-rate calculator <span>→</span></a><a href="restaurant-meal-finder.html">Healthy fast-food finder <span>→</span></a></div></article>
+</div><p class="calc-disclaimer"><strong>Why this list is short:</strong> it keeps the calculator hub useful and trustworthy. Every linked tool has a distinct job and visible methodology.</p></div></section><div class="ad-auto-anchor" aria-hidden="true"></div>'''
+        s=re.sub(r'<section class="tool-library".*?</section><div class="ad-auto-anchor"[^>]*></div>(?:<section class="related-explore".*?</section>)?', focused_library, s, count=1, flags=re.S)
         calc.write_text(s,encoding="utf-8")
     finder=ROOT/"restaurant-meal-finder.html"
     if finder.exists():
@@ -235,7 +241,7 @@ def patch_existing_hubs() -> None:
 
 def main() -> int:
     meals=parse_meals()
-    if len(meals)!=74 or len({m["chain"] for m in meals})!=15:
+    if len(meals)!=77 or len({m["chain"] for m in meals})!=15:
         raise SystemExit("Unexpected restaurant dataset size; refusing to publish hard-coded claims")
     build_home(meals)
     build_fast_food(meals)

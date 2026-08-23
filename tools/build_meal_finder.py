@@ -201,6 +201,12 @@ def main():
     # half-rewritten, with the old tags already stripped and the new ones never
     # added.
     c = open(PAGE, encoding="utf-8").read()
+    complete_count = sum(1 for m in meals if all(m.get(k) is not None for k in ("cal", "p", "f", "na")))
+    c = c.replace("css/meal-finder-v2.css?v=20260818m", "css/meal-finder-v2.css?v=20260823b")
+    c = re.sub(r"Five clear questions rank \d+ real menu items from \d+ restaurants\.",
+               f"Five clear questions rank {len(meals)} real menu items from {len({m['chain'] for m in meals})} restaurants.", c)
+    c = re.sub(r"<span>\d+ complete nutrition profiles</span>",
+               f"<span>{complete_count} complete nutrition profiles</span>", c)
     block = render(meals)
 
     tagged = write_tags(src, meals)

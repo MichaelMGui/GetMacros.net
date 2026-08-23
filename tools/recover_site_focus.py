@@ -130,6 +130,8 @@ def common_shell(path: str, text: str) -> str:
     text = re.sub(r'<link\b[^>]*hreflang=[^>]*>\s*', "", text, flags=re.I)
     if "google-adsense-account" not in text:
         text = re.sub(r"</head>", f'<meta name="google-adsense-account" content="{PUBLISHER}"></head>', text, count=1, flags=re.I)
+    if "readability-v2.css" not in text:
+        text = re.sub(r"</head>", '<link rel="stylesheet" href="css/readability-v2.css?v=20260823b"></head>', text, count=1, flags=re.I)
     page_title = match_text(text, r"<title[^>]*>(.*?)</title>")
     page_desc = match_text(text, r'<meta\s+name=["\']description["\'][^>]*content=["\'](.*?)["\']')
     social = (
@@ -210,7 +212,12 @@ def write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
     content = handle.getvalue()
     if path.exists() and path.read_text(encoding="utf-8-sig").replace("\r\n", "\n") == content.replace("\r\n", "\n"):
         return
-    path.write_text("\ufeff" + content, encoding="utf-8")
+    try:
+        path.write_text("\ufeff" + content, encoding="utf-8")
+    except PermissionError:
+        # Spreadsheet apps on Windows may hold an audit CSV open. That report
+        # must not prevent the site, sitemap and validation work from finishing.
+        print(f"WARNING: skipped locked report file: {path.name}")
 
 
 def primary_intent(path: str, title: str) -> str:

@@ -304,8 +304,8 @@ def main() -> int:
 
     meals = parse_meals()
     chains = {m["chain"] for m in meals}
-    if len(meals) != 74 or len(chains) != 15:
-        errors.append(f"restaurant data: expected 74 options across 15 chains, found {len(meals)} across {len(chains)}")
+    if len(meals) != 77 or len(chains) != 15:
+        errors.append(f"restaurant data: expected 77 options across 15 chains, found {len(meals)} across {len(chains)}")
     meal_keys = Counter((m["chain"].casefold(), m["name"].casefold()) for m in meals)
     for key, count in meal_keys.items():
         if count > 1:
@@ -316,6 +316,11 @@ def main() -> int:
             if value is not None and (not isinstance(value, (int, float)) or value < 0):
                 errors.append(f"restaurant data: invalid {field} for {meal['chain']} / {meal['name']}")
     finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
+    quiz_text = (ROOT / "js" / "meal-quiz.js").read_text(encoding="utf-8")
+    if "quiz-skip" in quiz_text or "data-clear" in quiz_text:
+        errors.append("meal quiz: small skip-link interaction returned")
+    if "quiz-option-any" not in quiz_text or "data-any" not in quiz_text:
+        errors.append("meal quiz: full-size any/no-preference options missing")
     static_meal_count = sum(1 for meal in meals if meal["name"] in finder_text)
     if static_meal_count < 35:
         errors.append(f"restaurant-meal-finder.html: only {static_meal_count} tracked options appear in static HTML")
@@ -334,6 +339,14 @@ def main() -> int:
         for meal in chain_meals:
             if meal["name"] not in page_text:
                 errors.append(f"{page_path}: tracked item missing from visible HTML: {meal['name']}")
+
+    calc_text = pages.get("calculators.html", ("", PageParser()))[0]
+    if calc_text.count('href="budget-meal-builder.html"') != 1:
+        errors.append("calculators.html: Budget meal builder must appear exactly once")
+    if "related-explore" in calc_text:
+        errors.append("calculators.html: stale related-content dump remains")
+    if "calculators-polish.css" not in calc_text or "sex-choice-icon" not in calc_text:
+        errors.append("calculators.html: calculator readability controls missing")
 
     try:
         ET.parse(ROOT / "feed.xml")

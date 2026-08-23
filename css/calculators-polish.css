@@ -1,0 +1,29 @@
+/* Focused readability and control polish for the calculator hub. */
+.calculators-v2 { --calc-muted:#425e52; font-size:17px; }
+.calc-hub-hero p { color:#f0f7f3; font-size:clamp(1.05rem,1.7vw,1.22rem); line-height:1.7; }
+.calc-photo-card { position:relative; margin:0; overflow:hidden; border:1px solid rgba(255,255,255,.24); border-radius:30px; background:#fff; box-shadow:0 28px 70px rgba(0,0,0,.24); }
+.calc-photo-card img { display:block; width:100%; height:390px; object-fit:cover; }
+.calc-photo-card figcaption { position:absolute; right:18px; bottom:18px; left:18px; padding:.85rem 1rem; border-radius:14px; background:rgba(10,43,32,.9); color:#fff; font-size:.88rem; line-height:1.45; backdrop-filter:blur(8px); }
+.calc-nav a { min-height:64px; text-decoration:none; font-size:.96rem; }
+.calc-nav-icon .icon { width:22px; height:22px; fill:currentColor; }
+.calculators-v2 .calc-form { padding:clamp(1.25rem,3vw,2rem); }
+.calculators-v2 .calc-form legend { font-family:Inter,"Inter Fallback",system-ui,sans-serif; font-size:1.1rem; letter-spacing:-.015em; }
+.calculators-v2 .field label,.calculators-v2 .field-label { color:#17372a; font-size:.95rem; }
+.calculators-v2 .hint,.calculators-v2 .field .hint { color:var(--calc-muted); font-size:.88rem; line-height:1.55; }
+.calculators-v2 .field input[type="number"],.calculators-v2 .field select { min-height:52px; border-color:#bdcec4; border-radius:14px; background-color:#fff; color:#10251c; font-size:1rem; }
+.calculators-v2 .field select { background-image:linear-gradient(45deg,transparent 50%,#285844 50%),linear-gradient(135deg,#285844 50%,transparent 50%); background-position:calc(100% - 19px) 22px,calc(100% - 13px) 22px; background-size:6px 6px,6px 6px; background-repeat:no-repeat; }
+.sex-choice-row { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
+.sex-choice-row label { position:relative; display:grid; grid-template-columns:42px 1fr; gap:.7rem; align-items:center; min-height:62px; padding:.6rem .8rem; border:1.5px solid #bdcec4; border-radius:15px; background:#fff; font-size:1rem; }
+.sex-choice-row input[type="radio"] { position:absolute!important; width:1px!important; height:1px!important; overflow:hidden; opacity:0; pointer-events:none; }
+.sex-choice-icon { display:grid; place-items:center; width:42px; height:42px; border-radius:12px; background:#edf5f0; color:#176a4b; }
+.sex-choice-icon .icon { width:23px; height:23px; fill:currentColor; }
+.sex-choice-row label:has(input:checked) { border-color:#123f2d; background:#123f2d; color:#fff; box-shadow:0 0 0 3px rgba(18,63,45,.12); }
+.sex-choice-row label:has(input:checked) .sex-choice-icon { background:var(--calc-lime); color:#123f2d; }
+.sex-choice-row label:has(input:focus-visible) { outline:3px solid #77ae94; outline-offset:2px; }
+.calculators-v2 .units-toggle { padding:.32rem; border-color:#c6d5cc; border-radius:14px; background:#eef4f0; }
+.calculators-v2 .units-toggle button { min-height:42px; border-radius:10px; font-size:.9rem; }
+.calculators-v2 .tool-group-head p,.calculators-v2 .tool-library-head p,.calculators-v2 .calc-disclaimer { color:var(--calc-muted); font-size:.96rem; line-height:1.65; }
+.calculators-v2 .tool-links a { color:#173f2f; text-decoration:none; font-size:.92rem; }
+.calculators-v2 .tool-links a:hover { text-decoration:none; box-shadow:inset 0 0 0 1px #7eaa94; }
+@media(max-width:850px){.calc-photo-card{max-width:620px}.calc-photo-card img{height:330px}}
+@media(max-width:560px){.calc-photo-card{display:block}.calc-photo-card img{height:240px}.calc-photo-card figcaption{font-size:.8rem}.sex-choice-row{grid-template-columns:1fr}.calculators-v2{font-size:16px}}
