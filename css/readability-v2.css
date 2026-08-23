@@ -1,6 +1,8 @@
 /* Site-wide legibility polish. Layout and page purpose remain unchanged. */
 .site-v3 {
-  --v3-muted: #4d6359;
+  --v3-muted: #40564b;
+  color: #172d23;
+  background: #f8f9f7;
   font-size: 17px;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
@@ -45,9 +47,9 @@
 .site-v3 select:hover { border-color:#668f7a; box-shadow:0 4px 12px rgba(16,35,27,.09); }
 .site-v3 select:focus { border-color:#246848; box-shadow:0 0 0 4px rgba(36,104,72,.14); }
 .site-v3 select option { color:#10231b; background:#fff; font-weight:500; }
-.site-v3 input::placeholder,.site-v3 textarea::placeholder { color:#60756a; opacity:1; }
-.site-v3 :is(.hint,.meta,.quiz-hint,.quiz-summary,.calc-fineprint) { color:#3e574b; }
-.site-v3 main a { color:#155f3d; text-decoration-thickness:1px; }
+.site-v3 input::placeholder,.site-v3 textarea::placeholder { color:#52695e; opacity:1; }
+.site-v3 :is(.hint,.meta,.quiz-hint,.quiz-summary,.calc-fineprint) { color:#334d41; }
+.site-v3 main a { color:#0b5d3d; text-decoration-thickness:1px; }
 .site-v3 :is(.eyebrow,.soft-label) { font-weight:850; }
 .site-v3 :is(button,.btn) { min-height:46px; }
 
@@ -58,14 +60,20 @@
 .site-v3 main :is(.card,.panel,.toolbox,.quiz-card,.quiz-results,.tool-group,.tool-card,.explore-card,.meal-card,.result,.callout,.editorial-note) :is(p,li,small,.meta,.hint,.note) {
   color:#334d41;
 }
+.site-v3 main :is(.section-head,.content-list,.source-box,.advice-card,.pick-card,.ranking-card,.search-result,.result-card) :is(p,li,small,.metric-note,.ranking-note) {
+  color:#354f43;
+}
 .site-v3 :is(.hero,.page-hero,.article-hero,.guide-hero,.focus-page-hero,.finder-hero,.calc-hub-hero,.tool-hero,.fast-hero) :is(p,li,small,.meta,.hint,.note) {
   color:#e3eee8!important;
 }
 .site-v3 :is(.hero,.page-hero,.article-hero,.guide-hero,.focus-page-hero,.finder-hero,.calc-hub-hero,.tool-hero,.fast-hero) :is(.eyebrow,.soft-label) {
   color:#e3f56d!important;
 }
-.site-v3 .breadcrumb { color:#42584d; }
-.site-v3 .breadcrumb a { color:#1d6544; }
+.site-v3 :is(.method-band,.compact-calc,.modern-footer) :is(p,li,small,.meta,.hint,.note) {
+  color:#dbe8e0!important;
+}
+.site-v3 .breadcrumb { color:#344a3f; }
+.site-v3 .breadcrumb a { color:#0b5d3d; }
 .site-v3 :is(input,select,textarea,button,a):focus-visible { outline: 3px solid #72a98f; outline-offset: 3px; }
 
 .site-v3 main a { text-decoration-thickness: 1px; text-underline-offset: 3px; }

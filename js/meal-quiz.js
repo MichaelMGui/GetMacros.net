@@ -27,6 +27,7 @@
       options: chains.map(function (c) { return [c, c, "", "chain"]; }), none: ["Search every restaurant", "Compare all " + chains.length + " restaurants", "map"] }
   ];
   var state = { goal: [], size: [], diet: [], meal: [], chain: [] };
+  var noPreference = { goal: false, size: false, diet: false, meal: false, chain: false };
   var step = 0, includeIncomplete = false, SAVED_KEY = "getmacros-saved-meals-v1", saved = readSaved();
   var GOAL_LABEL = { energy: "bulking", light: "cutting", protein: "high protein", fibre: "high fiber", lowsodium: "lower sodium", balanced: "balanced" };
   var DIET_LABEL = { vegetarian: "vegetarian", plant: "plant-based", gluten: "gluten-aware" };
@@ -99,12 +100,12 @@
   function optionMarkup(s) {
     var type = s.single ? "radio" : "checkbox";
     var none = s.none;
-    var noPreference = '<label class="quiz-option quiz-option-any"><input type="' + type + '" name="q-' + s.key + '" data-any="' + s.key + '" value=""' + (!state[s.key].length ? ' checked' : '') + '><span class="option-icon">' + iconSvg(none[2], none[0]) + '</span><span class="option-copy"><b>' + esc(none[0]) + '</b><small>' + esc(none[1]) + '</small></span><span class="option-check" aria-hidden="true">✓</span></label>';
+    var noPreferenceOption = '<label class="quiz-option quiz-option-any"><input type="' + type + '" name="q-' + s.key + '" data-any="' + s.key + '" value=""' + (noPreference[s.key] ? ' checked' : '') + '><span class="option-icon">' + iconSvg(none[2], none[0]) + '</span><span class="option-copy"><b>' + esc(none[0]) + '</b><small>' + esc(none[1]) + '</small></span><span class="option-check" aria-hidden="true">✓</span></label>';
     var choices = s.options.map(function (o) {
       var checked = state[s.key].indexOf(o[0]) !== -1 ? " checked" : "";
       return '<label class="quiz-option"><input type="' + type + '" name="q-' + s.key + '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' + checked + '><span class="option-icon">' + iconSvg(o[3], o[1]) + '</span><span class="option-copy"><b>' + esc(o[1]) + '</b>' + (o[2] ? '<small>' + esc(o[2]) + '</small>' : '') + '</span><span class="option-check" aria-hidden="true">✓</span></label>';
     }).join("");
-    return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + noPreference + choices + '</div>';
+    return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + noPreferenceOption + choices + '</div>';
   }
   function renderStep() {
     var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
@@ -128,7 +129,7 @@
       root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); return;
     }
     var shown = results.slice(0, 5);
-    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your five best matches</p><h2 tabindex="-1">Meals that fit your day</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="data-quality"><span aria-hidden="true">✓</span><p><b>Complete nutrition is shown first.</b> By default, every result has calories, protein, fiber and sodium filled in.</p></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + '<div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded by default because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></div>';
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your five best matches</p><h2 tabindex="-1">Meals that fit your day</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="data-quality"><span aria-hidden="true">✓</span><p><b>Complete nutrition only by default.</b> Every result shown has calories, protein, fiber and sodium filled in.</p></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + '<div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded by default because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></div>';
     root._rest = results.slice(5); root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); updateSavedUi();
   }
   function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }
@@ -137,12 +138,18 @@
   root.addEventListener("change", function (e) {
     var el = e.target;
     if (el.dataset.incomplete) { includeIncomplete = el.checked; renderResults(); return; }
-    if (el.dataset.any) { state[el.dataset.any] = []; renderStep(); return; }
+    if (el.dataset.any) {
+      state[el.dataset.any] = [];
+      noPreference[el.dataset.any] = el.checked;
+      renderStep();
+      return;
+    }
     if (!el.dataset.facet) return;
     var key = el.dataset.facet;
+    noPreference[key] = false;
     if (el.type === "radio") state[key] = el.checked ? [el.value] : [];
     else { var i = state[key].indexOf(el.value); if (el.checked && i === -1) state[key].push(el.value); if (!el.checked && i !== -1) state[key].splice(i, 1); }
-    var any = root.querySelector('[data-any="' + key + '"]'); if (any) any.checked = !state[key].length;
+    var any = root.querySelector('[data-any="' + key + '"]'); if (any) any.checked = false;
     if (key === "goal") renderStep();
   });
   root.addEventListener("click", function (e) {

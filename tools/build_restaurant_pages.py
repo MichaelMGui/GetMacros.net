@@ -19,6 +19,7 @@ CHAIN_CONFIG = {
         "intro": "Chipotle is unusually flexible: protein, rice, beans, vegetables and toppings can be adjusted independently. Compare the complete builds we track, then use the official calculator for your exact custom bowl.",
         "source": "https://www.chipotle.com/nutrition-calculator",
         "source_label": "Chipotle nutrition calculator",
+        "data_note": "Every tracked Chipotle build names each included ingredient. For the two current High Protein Menu items, Chipotle publishes the complete build, calories, protein and fiber; carbs and sodium are summed from the official ingredient table. The other four builds use the same ingredient-by-ingredient method.",
         "additional_sources": [
             ("https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
              "Chipotle High Protein Menu announcement"),
@@ -225,7 +226,10 @@ def item_type(meal: dict) -> str:
 
 
 def n(value, unit="") -> str:
-    return "&mdash;" if value is None else f"{value:g}{unit}"
+    if value is None:
+        return "&mdash;"
+    shown = f"{value:,.0f}" if float(value).is_integer() and abs(value) >= 1000 else f"{value:g}"
+    return f"{shown}{unit}"
 
 
 def efficiency(meal: dict) -> float | None:
@@ -292,6 +296,10 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
         f'<p>Build-specific source details:</p><ul>{additional_sources}</ul>'
         if additional_sources else ""
     )
+    data_note = cfg.get(
+        "data_note",
+        "These are standard U.S. menu builds from the central GetMacros dataset. Dashes mean the value was not available in a form we could verify—not zero.",
+    )
     veg = ""
     if vegetarian:
         veg = f'''<section><div class="container"><div class="section-head"><p class="eyebrow">Dietary pattern</p>
@@ -306,7 +314,7 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
 <div class="focus-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Find my best match</a>
 <a class="btn btn-outline" href="#menu-comparison">Compare the menu</a></div></div></section>
 <section id="menu-comparison"><div class="container"><div class="section-head"><p class="eyebrow">Complete tracked menu</p>
-<h2>Compare every {html.escape(chain)} option we track</h2><p>These are standard U.S. menu builds from the central GetMacros dataset. Dashes mean the value was not available in a form we could verify—not zero.</p></div>
+<h2>Compare every {html.escape(chain)} option we track</h2><p>{html.escape(data_note)}</p></div>
 {table(meals)}<p class="metric-note"><strong>Protein per 100 calories</strong> = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score.</p></div></section>
 <section class="data-section"><div class="container"><div class="section-head"><p class="eyebrow">High protein</p><h2>Highest-protein {html.escape(chain)} picks</h2>
 <p>Ranked only by published protein. Calories, fiber and sodium stay visible so one number does not make the whole decision.</p></div><div class="pick-grid">{pick_cards(ranked_protein, "Protein")}</div></div></section>

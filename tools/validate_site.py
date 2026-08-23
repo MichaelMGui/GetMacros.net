@@ -334,6 +334,11 @@ def main() -> int:
         if "lowsodium" in tags and not (substantial and meal.get("na") is not None and meal["na"] <= 600):
             errors.append(f"restaurant data: low-sodium tag is not a substantial meal: {meal['chain']} / {meal['name']}")
 
+    chipotle_meals = [meal for meal in meals if meal["chain"] == "Chipotle"]
+    for meal in chipotle_meals:
+        if meal.get("na") is None:
+            errors.append(f"restaurant data: Chipotle sodium is missing for {meal['name']}")
+
     count_claims = {
         "index.html": r"<strong>83</strong>\s*tracked menu options",
         "about.html": r"83 tracked menu options",
@@ -349,8 +354,15 @@ def main() -> int:
         errors.append("meal quiz: small skip-link interaction returned")
     if "quiz-option-any" not in quiz_text or "data-any" not in quiz_text:
         errors.append("meal quiz: full-size any/no-preference options missing")
+    if "!state[s.key].length ? ' checked'" in quiz_text or "any.checked = !state[key].length" in quiz_text:
+        errors.append("meal quiz: no-preference option must not be selected automatically")
+    if "var noPreference =" not in quiz_text:
+        errors.append("meal quiz: explicit no-preference state is missing")
     if "results.slice(0, 5)" not in quiz_text or "root._rest.splice(0, 3)" not in quiz_text:
         errors.append("meal quiz: expected five initial results and three-at-a-time reveal")
+    finder_css = (ROOT / "css" / "meal-finder-v2.css").read_text(encoding="utf-8")
+    if re.search(r"\.quiz-option-any:has\(input:checked\)[^{]*\{[^}]*background:var\(--ink\)", finder_css, re.S):
+        errors.append("meal quiz: no-preference selected state must not use the old black card")
     static_meal_count = sum(1 for meal in meals if meal["name"] in finder_text)
     if static_meal_count < 35:
         errors.append(f"restaurant-meal-finder.html: only {static_meal_count} tracked options appear in static HTML")

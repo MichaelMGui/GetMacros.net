@@ -26,7 +26,7 @@ window.GM_MEALS = [
 {chain:'Chipotle',name:'High Protein-High Fiber Bowl',cal:540,p:46,c:66,f:14,na:1645,
  t:['protein','fibre','balanced'],diet:['gluten'],meal:'main',size:'medium',
  url:'chipotle-healthy-meals-macros.html',
- why:'Adobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine. Sodium is calculated from Chipotle\'s published ingredient values.'},
+ why:'Adobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine. Carbs and sodium are calculated from Chipotle\'s published ingredient values.'},
 /* Current official build: chicken, Supergreens, fajita vegetables, fresh
  * tomato salsa and guacamole. Carbs and sodium are summed from the same
  * current ingredient table; Chipotle publishes calories/protein/fiber. */
@@ -34,22 +34,25 @@ window.GM_MEALS = [
  t:['protein','fibre','balanced'],diet:['gluten'],meal:'main',size:'medium',
  url:'chipotle-healthy-meals-macros.html',
  why:'Adobo chicken, Supergreens, fajita vegetables, fresh tomato salsa and guacamole. Carbs and sodium are calculated from Chipotle\'s published ingredient values.'},
-{chain:'Chipotle',name:'Chicken Burrito Bowl with rice and beans',cal:700,p:45,c:74,f:13,na:null,
+/* The four builds below use exact ingredient combinations so every displayed
+ * nutrient, including sodium, can be summed from Chipotle's U.S. ingredient
+ * nutrition table instead of relying on an undefined "standard bowl." */
+{chain:'Chipotle',name:'Chicken Bowl with white rice and black beans',cal:650,p:48,c:88,f:14,na:1900,
  t:['protein','energy','fibre'],diet:['gluten'],meal:'main',size:'large',
  url:'chipotle-healthy-meals-macros.html',
- why:'The standard bowl most people order. A solid higher-calorie option around training.'},
-{chain:'Chipotle',name:'Sofritas Bowl',cal:620,p:23,c:76,f:15,na:null,
+ why:'Adobo chicken, white rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine. Values are summed from Chipotle\'s published ingredient table.'},
+{chain:'Chipotle',name:'Sofritas Bowl with brown rice and black beans',cal:620,p:24,c:93,f:18,na:1990,
  t:['energy','fibre'],diet:['vegetarian','plant','gluten'],meal:'main',size:'large',
  url:'chipotle-healthy-meals-macros.html',
- why:'Braised tofu with rice and beans. One of the better plant-based fast-food options for fiber.'},
-{chain:'Chipotle',name:'Veggie Bowl with guacamole',cal:640,p:15,c:78,f:16,na:null,
+ why:'Sofritas, brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine. Values are summed from Chipotle\'s published ingredient table.'},
+{chain:'Chipotle',name:'Veggie Bowl with brown rice, black beans and guacamole',cal:620,p:15,c:76,f:18,na:1470,
  t:['energy','fibre'],diet:['vegetarian','plant','gluten'],meal:'main',size:'large',
  url:'chipotle-healthy-meals-macros.html',
- why:'Guacamole counts as your fat source here. High fiber, lower protein than it looks.'},
-{chain:'Chipotle',name:'Steak Salad, no rice',cal:405,p:32,c:18,f:9,na:null,
- t:['protein','fibre','balanced'],diet:['gluten'],meal:'main',size:'medium',
+ why:'Brown rice, black beans, fajita vegetables, tomato salsa, guacamole and romaine. Values are summed from Chipotle\'s published ingredient table.'},
+{chain:'Chipotle',name:'Steak Salad with black beans, no rice',cal:345,p:31,c:36,f:13,na:1255,
+ t:['protein','light','fibre'],diet:['gluten'],meal:'main',size:'medium',
  url:'chipotle-healthy-meals-macros.html',
- why:'A lighter build that still clears 30 g protein.'},
+ why:'Steak, Supergreens, black beans, fajita vegetables, tomato salsa and romaine. Values are summed from Chipotle\'s published ingredient table.'},
 {chain:'Sweetgreen',name:'Chicken Pesto Parm',cal:525,p:35,c:44,f:null,na:null,
  t:['protein','balanced'],diet:[],meal:'main',size:'medium',
  url:'sweetgreen-healthy-meals-macros.html',
