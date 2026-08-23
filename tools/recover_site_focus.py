@@ -100,6 +100,11 @@ def remove_stale_links(text: str) -> str:
         href = match.group(2)
         target = normalize_path(href)
         if target and target.endswith(".html") and target not in KEEP_ROOT_HTML:
+            # Card links are structural containers. Keeping only their inner
+            # markup creates orphan headings and descriptions at page bottoms.
+            full_anchor = match.group(0)
+            if re.search(r'class=["\'][^"\']*\b(?:explore-card|explore-all)\b', full_anchor, re.I):
+                return ""
             return match.group(3)
         return match.group(0)
     return re.sub(r'<a\b([^>]*?)href=(["\'])(.*?)\2([^>]*)>(.*?)</a>',

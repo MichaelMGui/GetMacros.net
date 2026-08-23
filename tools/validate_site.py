@@ -231,6 +231,12 @@ def main() -> int:
             errors.append(f"{path}: obsolete third-party ad code remains")
         if re.search(r"pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js", text) and PUBLISHER not in text:
             errors.append(f"{path}: Google ad loader lacks the verified publisher ID")
+        for section in re.findall(r'<section class="related-explore"[^>]*>.*?</section>', text, re.I | re.S):
+            grid = re.search(r'<div class="explore-grid">(.*?)</div>', section, re.I | re.S)
+            if not grid or not re.search(r'<a class="explore-card"', grid.group(1), re.I):
+                errors.append(f"{path}: empty related-content block")
+            elif re.search(r'<div class="explore-grid">\s*<(?:strong|span)\b', section, re.I):
+                errors.append(f"{path}: orphaned related-content text")
 
     for title, paths in titles.items():
         if len(paths) > 1:
@@ -304,8 +310,8 @@ def main() -> int:
 
     meals = parse_meals()
     chains = {m["chain"] for m in meals}
-    if len(meals) != 77 or len(chains) != 15:
-        errors.append(f"restaurant data: expected 77 options across 15 chains, found {len(meals)} across {len(chains)}")
+    if len(meals) != 83 or len(chains) != 15:
+        errors.append(f"restaurant data: expected 83 options across 15 chains, found {len(meals)} across {len(chains)}")
     meal_keys = Counter((m["chain"].casefold(), m["name"].casefold()) for m in meals)
     for key, count in meal_keys.items():
         if count > 1:
@@ -321,6 +327,8 @@ def main() -> int:
         errors.append("meal quiz: small skip-link interaction returned")
     if "quiz-option-any" not in quiz_text or "data-any" not in quiz_text:
         errors.append("meal quiz: full-size any/no-preference options missing")
+    if "results.slice(0, 5)" not in quiz_text or "root._rest.splice(0, 3)" not in quiz_text:
+        errors.append("meal quiz: expected five initial results and three-at-a-time reveal")
     static_meal_count = sum(1 for meal in meals if meal["name"] in finder_text)
     if static_meal_count < 35:
         errors.append(f"restaurant-meal-finder.html: only {static_meal_count} tracked options appear in static HTML")

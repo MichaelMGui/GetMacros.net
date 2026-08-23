@@ -128,6 +128,10 @@ def render(meals):
          f"Ranked across all {len(chains)} chains. Everything here clears "
          f"{PROTEIN_G} g, and the leaders roughly double it.",
          ranked(meals, "p"), "p"),
+        ("high-calorie-fast-food", "High-calorie fast food meals for bulking",
+         "Complete orders at 1,000 calories or more, ranked largest first. "
+         "Combined orders name every item included; drinks and unlisted sauces are excluded.",
+         ranked(meals, "cal", where=lambda m: m["cal"] >= 1000), "cal"),
         ("fast-food-under-400-calories", f"Fast food under {LIGHT_KCAL} calories",
          "Sorted lightest first. Several are sides rather than full meals, which "
          "is worth knowing before you order one on its own.",
@@ -202,11 +206,13 @@ def main():
     # added.
     c = open(PAGE, encoding="utf-8").read()
     complete_count = sum(1 for m in meals if all(m.get(k) is not None for k in ("cal", "p", "f", "na")))
-    c = c.replace("css/meal-finder-v2.css?v=20260818m", "css/meal-finder-v2.css?v=20260823b")
+    c = re.sub(r"css/meal-finder-v2\.css\?v=[^\"']+", "css/meal-finder-v2.css?v=20260823b", c)
     c = re.sub(r"Five clear questions rank \d+ real menu items from \d+ restaurants\.",
                f"Five clear questions rank {len(meals)} real menu items from {len({m['chain'] for m in meals})} restaurants.", c)
     c = re.sub(r"<span>\d+ complete nutrition profiles</span>",
                f"<span>{complete_count} complete nutrition profiles</span>", c)
+    c = re.sub(r'<div class="visual-card one"><b>\d+ choices</b>',
+               f'<div class="visual-card one"><b>{len(meals)} choices</b>', c)
     block = render(meals)
 
     tagged = write_tags(src, meals)

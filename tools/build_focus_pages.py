@@ -241,7 +241,7 @@ def patch_existing_hubs() -> None:
 
 def main() -> int:
     meals=parse_meals()
-    if len(meals)!=77 or len({m["chain"] for m in meals})!=15:
+    if len(meals)!=83 or len({m["chain"] for m in meals})!=15:
         raise SystemExit("Unexpected restaurant dataset size; refusing to publish hard-coded claims")
     build_home(meals)
     build_fast_food(meals)

@@ -127,9 +127,9 @@
       root.innerHTML = '<div class="quiz-card empty-results"><span class="result-symbol">↺</span><h2 tabindex="-1">That combination is too narrow.</h2><p>Remove one restaurant or dietary filter and we can give you useful choices instead of filler.</p><button type="button" class="btn btn-primary" data-restart="1">Change my answers</button></div>';
       root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); return;
     }
-    var shown = results.slice(0, 8);
-    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your shortlist</p><h2 tabindex="-1">Meals that fit your day</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="data-quality"><span aria-hidden="true">✓</span><p><b>Complete nutrition is shown first.</b> By default, every result has calories, protein, fibre and sodium filled in.</p></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">Show ' + (results.length - shown.length) + ' more complete matches</button>' : '') + '<div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded by default because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></div>';
-    root._rest = results.slice(8); root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); updateSavedUi();
+    var shown = results.slice(0, 5);
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your five best matches</p><h2 tabindex="-1">Meals that fit your day</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="data-quality"><span aria-hidden="true">✓</span><p><b>Complete nutrition is shown first.</b> By default, every result has calories, protein, fibre and sodium filled in.</p></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + '<div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded by default because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></div>';
+    root._rest = results.slice(5); root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); updateSavedUi();
   }
   function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }
   function shareResults(button) { var data = { title: "My GetMacros meal matches", text: "Fast-food options matched to my goals and preferences.", url: location.href }; if (navigator.share) { navigator.share(data).catch(function () {}); return; } if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(function () { button.textContent = "Link copied ✓"; }); }
@@ -151,7 +151,13 @@
     else if (t.dataset.share) shareResults(t);
     else if (t.dataset.go) { step += Number(t.dataset.go); step >= STEPS.length ? renderResults() : renderStep(); }
     else if (t.dataset.restart) { step = 0; renderStep(); }
-    else if (t.dataset.more) { root.querySelector(".results-grid").insertAdjacentHTML("beforeend", root._rest.map(function (m) { return card(m, false); }).join("")); t.remove(); updateSavedUi(); }
+    else if (t.dataset.more) {
+      var next = root._rest.splice(0, 3);
+      root.querySelector(".results-grid").insertAdjacentHTML("beforeend", next.map(function (m) { return card(m, false); }).join(""));
+      if (!root._rest.length) t.remove();
+      else t.textContent = "See " + Math.min(3, root._rest.length) + " more meal" + (root._rest.length === 1 ? "" : "s");
+      updateSavedUi();
+    }
   });
   deepLinked ? renderResults() : renderStep();
 })();
