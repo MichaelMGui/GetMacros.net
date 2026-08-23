@@ -71,7 +71,7 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/recovery.css?v={ASSET_VERSION}">
-<link rel="stylesheet" href="css/readability-v2.css?v=20260823b">
+<link rel="stylesheet" href="css/readability-v2.css?v=20260823d">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUBLISHER}" crossorigin="anonymous"></script>
 {jsonld}
 <meta http-equiv="Content-Security-Policy" content="{CSP}">

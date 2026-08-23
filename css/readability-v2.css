@@ -50,6 +50,22 @@
 .site-v3 main a { color:#155f3d; text-decoration-thickness:1px; }
 .site-v3 :is(.eyebrow,.soft-label) { font-weight:850; }
 .site-v3 :is(button,.btn) { min-height:46px; }
+
+/* Keep supporting copy readable on every recurring surface. */
+.site-v3 main :is(.card,.panel,.toolbox,.quiz-card,.quiz-results,.tool-group,.tool-card,.explore-card,.meal-card,.result,.callout,.editorial-note) {
+  color:#172d23;
+}
+.site-v3 main :is(.card,.panel,.toolbox,.quiz-card,.quiz-results,.tool-group,.tool-card,.explore-card,.meal-card,.result,.callout,.editorial-note) :is(p,li,small,.meta,.hint,.note) {
+  color:#334d41;
+}
+.site-v3 :is(.hero,.page-hero,.article-hero,.guide-hero,.focus-page-hero,.finder-hero,.calc-hub-hero,.tool-hero,.fast-hero) :is(p,li,small,.meta,.hint,.note) {
+  color:#e3eee8!important;
+}
+.site-v3 :is(.hero,.page-hero,.article-hero,.guide-hero,.focus-page-hero,.finder-hero,.calc-hub-hero,.tool-hero,.fast-hero) :is(.eyebrow,.soft-label) {
+  color:#e3f56d!important;
+}
+.site-v3 .breadcrumb { color:#42584d; }
+.site-v3 .breadcrumb a { color:#1d6544; }
 .site-v3 :is(input,select,textarea,button,a):focus-visible { outline: 3px solid #72a98f; outline-offset: 3px; }
 
 .site-v3 main a { text-decoration-thickness: 1px; text-underline-offset: 3px; }

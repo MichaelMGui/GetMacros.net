@@ -131,7 +131,7 @@ def common_shell(path: str, text: str) -> str:
     if "google-adsense-account" not in text:
         text = re.sub(r"</head>", f'<meta name="google-adsense-account" content="{PUBLISHER}"></head>', text, count=1, flags=re.I)
     if "readability-v2.css" not in text:
-        text = re.sub(r"</head>", '<link rel="stylesheet" href="css/readability-v2.css?v=20260823b"></head>', text, count=1, flags=re.I)
+        text = re.sub(r"</head>", '<link rel="stylesheet" href="css/readability-v2.css?v=20260823d"></head>', text, count=1, flags=re.I)
     page_title = match_text(text, r"<title[^>]*>(.*?)</title>")
     page_desc = match_text(text, r'<meta\s+name=["\']description["\'][^>]*content=["\'](.*?)["\']')
     social = (
