@@ -16,7 +16,7 @@
     { text: "A standard ketogenic diet keeps carbs under about 50g per day to maintain ketosis.", href: "ketogenic-diet-explained.html", label: "The ketogenic diet explained" },
     { text: "Most adults need 25g (women) to 38g (men) of fiber per day — and most people fall short.", href: "fiber-benefits.html", label: "Fiber benefits" },
     { text: "“Keto flu” isn't about ketones at all — it's mostly caused by rapid sodium and water loss.", href: "keto-flu-explained.html", label: "Keto flu explained" },
-    { text: "The RDA of 0.8g protein/kg is the minimum to prevent deficiency — not an optimal target for anyone who trains.", href: "how-much-protein-per-day.html", label: "How much protein do you need per day?" },
+    { text: "The RDA of 0.8g protein/kg is the minimum to prevent deficiency — not an optimal target for anyone who trains.", href: "how-much-protein-per-day.html", label: "How much protein do I need?" },
     { text: "“Net carbs” isn't an FDA-regulated term — different brands calculate it differently.", href: "net-carbs-vs-total-carbs.html", label: "Net carbs vs. total carbs" },
     { text: "Regular seafood intake (about 8oz/week) is linked to roughly 36% lower risk of death from heart disease.", href: "pescatarian-diet-explained.html", label: "The pescatarian diet explained" },
     { text: "The carnivore diet's biggest documented risk is deficiency in vitamin C, magnesium, and calcium — all normally sourced from plants.", href: "carnivore-diet-explained.html", label: "The carnivore diet explained" },

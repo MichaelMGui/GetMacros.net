@@ -1528,7 +1528,7 @@ def build_hub():
 </html>
 '''
     path = os.path.join(ROOT, "articles.html")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", path)
 
@@ -1634,7 +1634,7 @@ def build_about():
 </html>
 '''
     path = os.path.join(ROOT, "about.html")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", path)
 
@@ -1735,7 +1735,7 @@ def build_privacy():
 </html>
 '''
     path = os.path.join(ROOT, "privacy.html")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", path)
 
@@ -1833,7 +1833,7 @@ def build_contact():
 </html>
 '''
     path = os.path.join(ROOT, "contact.html")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", path)
 
@@ -1934,7 +1934,7 @@ def build_terms():
 </html>
 '''
     path = os.path.join(ROOT, "terms.html")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", path)
 
@@ -2004,7 +2004,7 @@ def build_404():
 </html>
 '''
     path = os.path.join(ROOT, "404.html")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", path)
 
@@ -2063,14 +2063,20 @@ def build_sitemap():
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
            + "\n".join(entries) + "\n</urlset>\n")
-    with open(os.path.join(ROOT, "sitemap.xml"), "w") as f:
+    with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(xml)
     print("wrote", os.path.join(ROOT, "sitemap.xml"), f"({len(entries)} urls)")
 
     robots = "User-agent: *\nAllow: /\nSitemap: https://getmacros.net/sitemap.xml\n"
-    with open(os.path.join(ROOT, "robots.txt"), "w") as f:
-        f.write(robots)
-    print("wrote", os.path.join(ROOT, "robots.txt"))
+    robots_path = os.path.join(ROOT, "robots.txt")
+    existing_robots = ""
+    if os.path.exists(robots_path):
+        with open(robots_path, encoding="utf-8") as f:
+            existing_robots = f.read()
+    if existing_robots != robots:
+        with open(robots_path, "w", encoding="utf-8") as f:
+            f.write(robots)
+        print("wrote", robots_path)
 
 
 # --------------------------------------------------------- FOR STUDENTS --
@@ -4821,11 +4827,16 @@ add(
 )
 
 def main():
+    # The source catalogue is intentionally larger than the live editorial scope.
+    # Only publish guides that support the focused healthy-fast-food and macro-tools
+    # product; otherwise a routine build would recreate pages removed in recovery.
+    from site_scope import GUIDE_PAGES
+    ARTICLES[:] = [article for article in ARTICLES if f'{article["slug"]}.html' in GUIDE_PAGES]
     for a in ARTICLES:
         html = page(a["slug"], a["title"], a["meta"], a["category"],
                     a["eyebrow"], a["h1"], a["intro"], a["body"], a["related"], extra_head=a["extra_head"])
         path = os.path.join(ROOT, f'{a["slug"]}.html')
-        with open(path, "w") as f:
+        with open(path, "w", encoding="utf-8") as f:
             f.write(html)
         print("wrote", path)
     print(f"\n{len(ARTICLES)} articles generated.")

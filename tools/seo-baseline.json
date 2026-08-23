@@ -1,0 +1,710 @@
+[
+  {
+    "path": "404.html",
+    "title": "Page Not Found",
+    "h1": "We couldn't find that page",
+    "meta": "The page you're looking for doesn't exist. Find protein, fat, and carbohydrate guides, calculators, quizzes, and the full glossary on GetMacros.net."
+  },
+  {
+    "path": "about.html",
+    "title": "About GetMacros.net",
+    "h1": "About GetMacros.net",
+    "meta": "What GetMacros.net is, who it's built for, and the editorial and sourcing standards behind every article, calculator, and citation on the site."
+  },
+  {
+    "path": "accessibility.html",
+    "title": "Accessibility Statement",
+    "h1": "Accessibility statement",
+    "meta": "GetMacros.net’s accessibility commitments, implemented keyboard and responsive features, known limitations, testing approach, and contact route for barriers."
+  },
+  {
+    "path": "are-protein-bars-actually-healthy.html",
+    "title": "Are Protein Bars Actually Healthy?",
+    "h1": "Are protein bars actually healthy?",
+    "meta": "What's really in most protein bars, how to read the label past the marketing, and when a protein bar is a good choice."
+  },
+  {
+    "path": "articles.html",
+    "title": "All Nutrition Articles | GetMacros.net",
+    "h1": "All articles",
+    "meta": "Every GetMacros.net article in one place — protein, fat, and carbohydrate guides, diet breakdowns, food lists, and calculator explainers."
+  },
+  {
+    "path": "balanced-breakfast-formula.html",
+    "title": "A balanced breakfast formula that works with sweet or",
+    "h1": "A balanced breakfast formula that works with sweet or savory food",
+    "meta": "Build breakfast from protein, carbohydrate, produce, and optional fat using familiar foods, leftovers, or convenience items."
+  },
+  {
+    "path": "balanced-vegetarian-meal-formula.html",
+    "title": "How to build a balanced vegetarian meal",
+    "h1": "How to build a balanced vegetarian meal",
+    "meta": "Combine legumes, soy foods, eggs or dairy when used, grains, vegetables, fats, and fortified foods into satisfying vegetarian meals."
+  },
+  {
+    "path": "batch-cooking-on-a-budget.html",
+    "title": "Batch cooking on a budget without eating the same meal all",
+    "h1": "Batch cooking on a budget without eating the same meal all week",
+    "meta": "Plan batch components, calculate realistic portions, cool food safely, freeze strategically, and vary flavors without buying a second pantry."
+  },
+  {
+    "path": "best-time-to-eat-carbs.html",
+    "title": "Is There a Best Time to Eat Carbs?",
+    "h1": "Is there a best time to eat carbs?",
+    "meta": "Whether eating carbs at a specific time of day (morning, evening, around workouts) actually matters for fat loss or performance."
+  },
+  {
+    "path": "body-recomposition-explained.html",
+    "title": "Body Recomposition: Build Muscle, Lose Fat",
+    "h1": "Body recomposition: building muscle and losing fat at once",
+    "meta": "What body recomposition means, who it actually works for, and how to set macros for it."
+  },
+  {
+    "path": "budget-friendly-fruit-vegetables.html",
+    "title": "Budget-friendly fruits and vegetables",
+    "h1": "Budget-friendly fruits and vegetables: fresh, frozen, canned, and dried",
+    "meta": "Compare produce forms by unit price, edible yield, season, storage, sodium, added sugar, preparation, and the likelihood your household will use them."
+  },
+  {
+    "path": "budget-meal-builder.html",
+    "title": "Budget Meal Builder | Make Meals From Pantry Ingredients",
+    "h1": "Budget meal builder",
+    "meta": "Select pantry proteins, grains, produce, and flavor ingredients to generate flexible budget meal ideas, substitutions, and a short grocery gap list."
+  },
+  {
+    "path": "bulking-without-gaining-fat.html",
+    "title": "How to Bulk Without Gaining Excess Fat",
+    "h1": "How to bulk without gaining excess fat",
+    "meta": "How to run a calorie surplus for muscle gain while minimizing fat gain — surplus size, protein intake, and how to know when to stop."
+  },
+  {
+    "path": "caffeine-and-athletic-performance.html",
+    "title": "Caffeine and Athletic Performance: The Evidence",
+    "h1": "Caffeine and athletic performance: the evidence",
+    "meta": "How much caffeine actually improves performance, when to take it, who responds least, and where the evidence is strongest."
+  },
+  {
+    "path": "calculators.html",
+    "title": "Macro & Fat Calculators",
+    "h1": "Macro & fat calculators",
+    "meta": "Calculate your daily calories, protein, fat, and carb targets based on your weight, activity level, and goal."
+  },
+  {
+    "path": "carb-loading-for-athletes.html",
+    "title": "Carb Loading for Athletes: How It Works",
+    "h1": "Carb loading: how athletes maximize glycogen stores",
+    "meta": "How carb loading works, the modern protocol most athletes actually use, and who benefits from it."
+  },
+  {
+    "path": "carbohydrate-label-portion-tool.html",
+    "title": "Carbohydrate Label Portion Tool",
+    "h1": "Carbohydrate label portion tool",
+    "meta": "Multiply total carbohydrate by the servings you plan to eat, with clear limits around insulin and individualized targets."
+  },
+  {
+    "path": "carbohydrate-quality-guide.html",
+    "title": "Carbohydrate quality: a better question than “good or bad?”",
+    "h1": "Carbohydrate quality: a better question than “good or bad?”",
+    "meta": "Compare carbohydrate foods using fiber, nutrient density, processing, added sugar, enjoyment, and the role the food plays in the meal."
+  },
+  {
+    "path": "carbohydrates-for-strength-training.html",
+    "title": "Carbohydrates for strength training",
+    "h1": "Carbohydrates for strength training: fuel, volume, and context",
+    "meta": "Learn when carbohydrate supports lifting performance and recovery, and why needs differ between brief sessions and high-volume programs."
+  },
+  {
+    "path": "carbs.html",
+    "title": "Carbohydrates: Glycogen, Energy & Brain Fuel",
+    "h1": "Carbohydrates: Your Body's Preferred Fuel",
+    "meta": "How carbohydrates fuel your body and brain, how glycogen storage works, and what happens on very low-carb diets — with cited sources."
+  },
+  {
+    "path": "cava-healthy-meals-macros.html",
+    "title": "CAVA Balanced Meals and Macros",
+    "h1": "CAVA Balanced Meals and Macros",
+    "meta": "Compare CAVA bowls, salads and plant-based builds with honest limits around calories, protein, allergens and customization."
+  },
+  {
+    "path": "chick-fil-a-healthy-meals-macros.html",
+    "title": "Chick-fil-A Balanced Meals and Macros",
+    "h1": "Chick-fil-A Balanced Meals and Macros",
+    "meta": "Compare grilled nuggets and salads, then account for sides, dressings, sauces, sodium and allergy needs."
+  },
+  {
+    "path": "chipotle-healthy-meals-macros.html",
+    "title": "Chipotle Balanced Meals and Macros",
+    "h1": "Chipotle Balanced Meals and Macros",
+    "meta": "Compare current Chipotle bowls and salads for protein, fibre, plant-based and lower-energy priorities."
+  },
+  {
+    "path": "choosing-food-database-entry.html",
+    "title": "How to choose the right food database entry",
+    "h1": "How to choose the right food database entry",
+    "meta": "Choose a defensible nutrition database match by checking food state, data source, portion units, brand, date, and edible portion."
+  },
+  {
+    "path": "complete-vs-incomplete-protein.html",
+    "title": "Complete vs. Incomplete Protein",
+    "h1": "Complete vs. incomplete protein: what actually matters",
+    "meta": "What complete and incomplete proteins are, which foods fall where, and why protein combining at every meal matters far less than people think."
+  },
+  {
+    "path": "contact.html",
+    "title": "Contact GetMacros.net",
+    "h1": "Contact GetMacros.net",
+    "meta": "How to reach GetMacros.net with corrections, content questions, or advertising inquiries."
+  },
+  {
+    "path": "cooking-fats-guide.html",
+    "title": "Cooking fats: choosing oil, butter, or another fat",
+    "h1": "Cooking fats: choosing oil, butter, or another fat",
+    "meta": "Choose cooking fats by flavor, heat, nutrition, cost, and cultural fit instead of relying on one universal “best oil.”"
+  },
+  {
+    "path": "corrections.html",
+    "title": "Corrections Policy and Public Change Log",
+    "h1": "Corrections policy and public change log",
+    "meta": "How GetMacros.net receives, evaluates, publishes, and records factual corrections to nutrition articles, calculators, and interactive resources."
+  },
+  {
+    "path": "creatine-explained.html",
+    "title": "Creatine: What It Does & Who Needs It",
+    "h1": "Creatine explained: what it does and who needs it",
+    "meta": "What creatine monohydrate actually does in the body, what the safety research says, and the simple, effective way to take it based on the ISSN position stand."
+  },
+  {
+    "path": "cutting-bulking-maintenance-explained.html",
+    "title": "Cutting vs. Bulking vs. Maintenance",
+    "h1": "Cutting vs. bulking vs. maintenance: which phase are you in?",
+    "meta": "What the terms cutting, bulking, and maintenance actually mean in terms of calories and macros, and how to tell which one you should be doing."
+  },
+  {
+    "path": "dunkin-healthy-breakfast-macros.html",
+    "title": "Dunkin’ Balanced Breakfast and Macros",
+    "h1": "Dunkin’ Balanced Breakfast and Macros",
+    "meta": "Compare current Dunkin’ wraps and sandwiches while counting the drink, added sugar, sodium and portion size."
+  },
+  {
+    "path": "editorial-policy.html",
+    "title": "Editorial Standards and Content Methodology",
+    "h1": "Editorial standards and content methodology",
+    "meta": "How GetMacros.net selects sources, writes and updates nutrition content, handles medical boundaries, discloses authorship, and corrects material errors."
+  },
+  {
+    "path": "emergency-pantry-meals.html",
+    "title": "Emergency pantry meals for low-energy, low-budget days",
+    "h1": "Emergency pantry meals when time, money, or equipment is limited",
+    "meta": "Build flexible pantry meals for low-energy days, delayed paychecks and power outages, and separate everyday backup plans from disaster preparation."
+  },
+  {
+    "path": "fats.html",
+    "title": "Dietary Fat: Hormones, Vitamins & Deficiency",
+    "h1": "Fat: Hormones, Vitamins & Cell Structure",
+    "meta": "What dietary fat does for hormones, cell membranes, and vitamin absorption, how much you need, and the signs of getting too little — with cited sources."
+  },
+  {
+    "path": "fiber-benefits.html",
+    "title": "Why Fiber Matters: High-Fiber Diet Benefits",
+    "h1": "Why fiber matters: benefits of a high-fiber diet",
+    "meta": "The health benefits of dietary fiber, the difference between soluble and insoluble fiber, and how much you actually need per day."
+  },
+  {
+    "path": "food-labels-serving-size-traps.html",
+    "title": "Nutrition Label Traps: Serving Sizes Explained",
+    "h1": "Nutrition label traps: serving sizes explained",
+    "meta": "How serving sizes, rounding rules, and per-100g versus per-serving figures make packaged food look better than it is."
+  },
+  {
+    "path": "grocery-list-for-balanced-meals.html",
+    "title": "A flexible grocery list for balanced meals",
+    "h1": "A flexible grocery list for balanced meals",
+    "meta": "Use a modular grocery list that turns a small set of foods into breakfasts, lunches, dinners, and backup meals."
+  },
+  {
+    "path": "healthy-fast-food.html",
+    "title": "Healthy Fast Food: Best Orders by Goal and Diet",
+    "h1": "Fast food that fits your actual goal.",
+    "meta": "Find healthier fast-food orders with calories, protein, sodium and fibre for weight goals, high protein, vegetarian, plant-based and gluten-aware eating."
+  },
+  {
+    "path": "healthy-high-fat-foods.html",
+    "title": "15 Healthy High-Fat Foods to Add to Your Diet",
+    "h1": "15 healthy high-fat foods to add to your diet",
+    "meta": "A list of nutrient-dense high-fat foods — avocado, olive oil, fatty fish, nuts, and more — with approximate fat content per serving."
+  },
+  {
+    "path": "high-fiber-foods-list.html",
+    "title": "15 High-Fiber Foods to Add to Your Diet",
+    "h1": "15 high-fiber foods to add to your diet",
+    "meta": "A list of real high-fiber foods — legumes, whole grains, fruit, and vegetables — with approximate fiber content per serving, to help you hit your daily target."
+  },
+  {
+    "path": "high-protein-breakfast-ideas.html",
+    "title": "High-Protein Breakfast Ideas That Fill You Up",
+    "h1": "High-protein breakfast ideas that actually fill you up",
+    "meta": "Practical high-protein breakfast combinations and roughly how much protein each provides."
+  },
+  {
+    "path": "high-protein-foods-list.html",
+    "title": "25 High-Protein Foods (With Protein Per 100g)",
+    "h1": "25 high-protein foods and how much protein they contain",
+    "meta": "A reference list of high-protein animal and plant foods with approximate grams of protein per 100g, for building meals around your target."
+  },
+  {
+    "path": "high-protein-snacks-real-food.html",
+    "title": "High-protein snacks from ordinary food",
+    "h1": "High-protein snacks from ordinary food",
+    "meta": "Use yogurt, milk, soy foods, eggs, fish, legumes, nuts, seeds, and leftovers to build protein-containing snacks without relying on powders."
+  },
+  {
+    "path": "how-many-carbs-per-day.html",
+    "title": "How Many Carbs Should You Eat Per Day?",
+    "h1": "How many carbs should you eat per day?",
+    "meta": "The recommended daily carbohydrate range (45-65% of calories), what it looks like in grams, and when lower or higher intakes make sense."
+  },
+  {
+    "path": "how-much-fat-per-day.html",
+    "title": "How Much Fat Should You Eat Per Day?",
+    "h1": "How much fat should you eat per day?",
+    "meta": "The recommended daily fat intake range (20-35% of calories), what it looks like in grams at different calorie levels, and why the range exists."
+  },
+  {
+    "path": "how-much-protein-per-day.html",
+    "title": "How Much Protein Do You Need Per Day?",
+    "h1": "How much protein do you need per day?",
+    "meta": "How much protein you actually need per day for baseline health, general fitness, and muscle building, based on RDA and sports nutrition research."
+  },
+  {
+    "path": "how-to-build-a-balanced-meal.html",
+    "title": "How to Build a Balanced Meal (Simple Method)",
+    "h1": "How to build a balanced meal",
+    "meta": "A practical plate framework for putting together meals that hit protein, fiber, and calorie targets without weighing every ingredient."
+  },
+  {
+    "path": "how-to-calculate-macros-by-hand.html",
+    "title": "How to Calculate Your Macros by Hand",
+    "h1": "How to calculate your macros by hand",
+    "meta": "A step-by-step walkthrough of the exact math behind a macro calculator — useful for nutrition students who need to show their work."
+  },
+  {
+    "path": "how-to-calculate-recipe-nutrition.html",
+    "title": "How to calculate nutrition for a homemade recipe",
+    "h1": "How to calculate nutrition for a homemade recipe",
+    "meta": "Calculate calories and macros for a homemade recipe using ingredient totals, cooked yield, and portion weight without confusing raw and cooked entries."
+  },
+  {
+    "path": "how-to-compare-grocery-unit-prices.html",
+    "title": "How to compare grocery unit prices without buying more than",
+    "h1": "How to compare grocery unit prices without buying more than you can use",
+    "meta": "Compare grocery prices by ounce, pound, gram, serving, and edible amount while accounting for waste, preparation, storage, and realistic household use."
+  },
+  {
+    "path": "how-to-measure-sweat-rate.html",
+    "title": "How to Measure Your Sweat Rate",
+    "h1": "How to Measure Your Sweat Rate",
+    "meta": "A careful step-by-step sweat-rate test, the calculation, common errors, and why one workout cannot become a permanent hydration prescription."
+  },
+  {
+    "path": "how-to-read-a-nutrition-label.html",
+    "title": "How to Read a Nutrition Label (Macros Edition)",
+    "h1": "How to read a nutrition label (macros edition)",
+    "meta": "How to quickly find protein, fat, and carbohydrate info on a nutrition label, and the common mistakes people make reading serving sizes."
+  },
+  {
+    "path": "how-to-track-your-macros.html",
+    "title": "How to Track Your Macros: A Beginner's Guide",
+    "h1": "How to track your macros: a beginner's guide",
+    "meta": "A practical walkthrough of tracking macros — setting targets, weighing versus estimating, handling recipes and eating out, and when to stop tracking."
+  },
+  {
+    "path": "hydration-and-performance.html",
+    "title": "Dehydration and Performance: What Matters",
+    "h1": "Dehydration and performance: what matters",
+    "meta": "How much fluid loss actually impairs performance, how to estimate your sweat rate, and why drinking to thirst works for most people."
+  },
+  {
+    "path": "index.html",
+    "title": "GetMacros — Nutrition That Fits Real Life | GetMacros.net",
+    "h1": "Eat with more clarity. Live with less math.",
+    "meta": "Practical nutrition tools, macro guides, healthy fast-food picks and clear explainers built for real decisions."
+  },
+  {
+    "path": "intermittent-fasting-and-macros.html",
+    "title": "Intermittent Fasting and Your Macros",
+    "h1": "Intermittent fasting and macros: does timing matter?",
+    "meta": "How intermittent fasting interacts with your macro targets, and whether meal timing itself changes results independent of what you eat."
+  },
+  {
+    "path": "jersey-mikes-healthy-subs-macros.html",
+    "title": "Jersey Mike’s Balanced Subs and Macros",
+    "h1": "Jersey Mike’s Balanced Subs and Macros",
+    "meta": "Use Jersey Mike’s live nutrition builder to compare size, bread, oil, cheese and Sub in a Tub options without guesswork."
+  },
+  {
+    "path": "kfc-healthy-meals-macros.html",
+    "title": "KFC Balanced Meals and Macros",
+    "h1": "KFC Balanced Meals and Macros",
+    "meta": "Compare KFC chicken portions and sides with practical guidance for protein, sodium, plant-based limits and complete meals."
+  },
+  {
+    "path": "low-fat-diet-risks.html",
+    "title": "The Hidden Risks of Very Low-Fat Diets",
+    "h1": "The hidden risks of very low-fat diets",
+    "meta": "What can go wrong when fat intake drops too low for too long — hormone production, vitamin absorption, and diet adherence."
+  },
+  {
+    "path": "macros-for-endurance-vs-strength-athletes.html",
+    "title": "Macros: Endurance vs. Strength Athletes",
+    "h1": "Macros for endurance athletes vs. strength athletes",
+    "meta": "How macro priorities differ between endurance athletes and strength athletes, and why one-size-fits-all macro advice doesn't work for both."
+  },
+  {
+    "path": "macros-for-muscle-gain.html",
+    "title": "How to Set Your Macros for Muscle Gain",
+    "h1": "How to set your macros for building muscle",
+    "meta": "A practical framework for setting protein, fat, and carb targets to build muscle while minimizing unnecessary fat gain."
+  },
+  {
+    "path": "macros-for-vegetarians.html",
+    "title": "Macros for Vegetarians: Hit Your Targets",
+    "h1": "Macros for vegetarians: hitting your targets without meat",
+    "meta": "How to hit protein, fat, and carb targets on a vegetarian diet — complete protein combining, common gaps, and the best vegetarian protein sources."
+  },
+  {
+    "path": "macros-for-weight-loss.html",
+    "title": "How to Set Your Macros for Fat Loss",
+    "h1": "How to set your macros for fat loss",
+    "meta": "A practical framework for setting protein, fat, and carb targets during a fat-loss phase, including why protein should go up, not down."
+  },
+  {
+    "path": "macros-without-tracking.html",
+    "title": "How to balance macros without tracking every gram",
+    "h1": "How to balance macros without tracking every gram",
+    "meta": "Use a repeatable plate pattern to balance protein, carbohydrates, and fats without weighing food or logging every bite."
+  },
+  {
+    "path": "mcdonalds-healthy-meals-macros.html",
+    "title": "McDonald’s Balanced Meals and Macros",
+    "h1": "McDonald’s Balanced Meals and Macros",
+    "meta": "Use McDonald’s nutrition data to assemble portions for protein, energy, sodium and dietary preferences."
+  },
+  {
+    "path": "meal-frequency-and-metabolism.html",
+    "title": "Does Meal Frequency Affect Metabolism?",
+    "h1": "Does meal frequency matter for macros and metabolism?",
+    "meta": "Whether eating more or fewer meals per day changes metabolism or macro results, according to the research."
+  },
+  {
+    "path": "meal-prep-for-macros.html",
+    "title": "Meal Prep for Macros: A Practical System",
+    "h1": "Meal prep for macros: a practical system",
+    "meta": "How to batch-cook around macro targets, which foods hold up over several days, and how to keep prepped meals from getting boring."
+  },
+  {
+    "path": "net-carbs-vs-total-carbs.html",
+    "title": "Net Carbs vs. Total Carbs",
+    "h1": "Net carbs vs. total carbs: what's the difference?",
+    "meta": "What \"net carbs\" actually means, how to calculate it, and why the number on a low-carb product's label can be misleading."
+  },
+  {
+    "path": "nutrition-label-comparison-tool.html",
+    "title": "Nutrition Label Comparison Tool | Compare Two Foods",
+    "h1": "Nutrition label comparison tool",
+    "meta": "Compare two Nutrition Facts labels side by side by serving and per 100 calories. Review protein, fiber, added sugar, sodium, and serving-size context."
+  },
+  {
+    "path": "nutrition-label-rounding-explained.html",
+    "title": "Nutrition label rounding",
+    "h1": "Nutrition label rounding: why the macros may not add up exactly",
+    "meta": "Learn why label calories and macronutrients can differ slightly, what rounding means, and how to avoid treating small discrepancies as deception."
+  },
+  {
+    "path": "panda-express-healthy-meals-macros.html",
+    "title": "Panda Express Balanced Meals and Macros",
+    "h1": "Panda Express Balanced Meals and Macros",
+    "meta": "Build Panda Express meals from an entrée and side while comparing protein, vegetables, sodium and sauces."
+  },
+  {
+    "path": "panera-healthy-meals-macros.html",
+    "title": "Panera Balanced Meals and Macros",
+    "h1": "Panera Balanced Meals and Macros",
+    "meta": "Compare current Panera salads, bowls and half portions while accounting for dressing, bread and sodium."
+  },
+  {
+    "path": "plant-based-protein-sources.html",
+    "title": "Best Plant-Based Protein Sources",
+    "h1": "Best plant-based protein sources for vegans and vegetarians",
+    "meta": "The most protein-dense plant foods for vegans and vegetarians, with approximate grams per serving and tips for hitting your daily target."
+  },
+  {
+    "path": "popeyes-healthy-meals-macros.html",
+    "title": "Popeyes Balanced Meals and Macros",
+    "h1": "Popeyes Balanced Meals and Macros",
+    "meta": "Compare Popeyes chicken, tenders and sides with an honest look at protein, sodium, plant-based limits and portion math."
+  },
+  {
+    "path": "portion-sizes-without-a-scale.html",
+    "title": "Estimate Portion Sizes Without a Scale",
+    "h1": "How to estimate portion sizes without a food scale",
+    "meta": "Practical hand-based and household-object portion estimation methods for when you can't or don't want to weigh your food."
+  },
+  {
+    "path": "post-workout-meal-guide.html",
+    "title": "Post-workout meals: recovery without an “anabolic panic”",
+    "h1": "Post-workout meals: recovery without an “anabolic panic”",
+    "meta": "Build a useful recovery meal with protein, carbohydrate, fluid, and enough total energy—without treating a narrow window as an emergency."
+  },
+  {
+    "path": "pre-workout-meal-timing.html",
+    "title": "Pre-workout meals: timing, size, and what to eat",
+    "h1": "Pre-workout meals: timing, size, and what to eat",
+    "meta": "Plan food before training using time available, session demands, digestion, and personal tolerance rather than one universal rule."
+  },
+  {
+    "path": "privacy.html",
+    "title": "Privacy Policy",
+    "h1": "Privacy policy",
+    "meta": "GetMacros.net's privacy policy — what data is and isn't collected, how localStorage is used for quizzes and games, and how third-party ad networks use cookies."
+  },
+  {
+    "path": "protein-before-bed.html",
+    "title": "Protein Before Bed: Does It Help Muscle Growth?",
+    "h1": "Protein before bed: does it help muscle growth?",
+    "meta": "What happens to muscle protein synthesis overnight, what pre-sleep protein research found, and whether it matters if your daily total is already met."
+  },
+  {
+    "path": "protein-for-muscle-growth.html",
+    "title": "Protein for Muscle Growth: How Much and When",
+    "h1": "Protein for muscle growth: how much, when, and why",
+    "meta": "How dietary protein drives muscle protein synthesis after training, how much you need, and whether meal timing actually matters."
+  },
+  {
+    "path": "protein-on-a-budget.html",
+    "title": "Protein on a budget: foods that stretch further",
+    "h1": "Protein on a budget: foods that stretch further",
+    "meta": "Build affordable protein-rich meals with beans, lentils, eggs, canned fish, dairy, soy foods, and practical shopping habits."
+  },
+  {
+    "path": "protein-per-meal-guide.html",
+    "title": "Protein per meal: a calmer way to plan your day",
+    "h1": "Protein per meal: a calmer way to plan your day",
+    "meta": "A practical, evidence-aware guide to spreading protein across meals without turning every plate into a math problem."
+  },
+  {
+    "path": "protein-powder-101.html",
+    "title": "Protein Powder 101: Whey, Casein & Plant",
+    "h1": "Protein powder 101: whey, casein, and plant blends",
+    "meta": "The practical differences between whey, casein, and plant-based protein powders, and how to choose between them."
+  },
+  {
+    "path": "protein-quality-scores-pdcaas-diaas.html",
+    "title": "Protein Quality: PDCAAS and DIAAS Explained",
+    "h1": "Protein quality scores: PDCAAS and DIAAS explained",
+    "meta": "What PDCAAS and DIAAS scores measure, how they're calculated, and why they matter for comparing protein sources."
+  },
+  {
+    "path": "protein-timing.html",
+    "title": "Does Protein Timing Actually Matter?",
+    "h1": "Does protein timing really matter?",
+    "meta": "Whether the post-workout 'anabolic window' is real, how often you should eat protein, and what the sports nutrition research actually supports."
+  },
+  {
+    "path": "protein-value-calculator.html",
+    "title": "Protein Value Calculator",
+    "h1": "Protein Value Calculator",
+    "meta": "Compare two foods by package price and calculate cost per 25 grams of protein while keeping nutrition quality and food waste in context."
+  },
+  {
+    "path": "protein.html",
+    "title": "Protein: Muscle Building, Repair & Deficiency",
+    "h1": "Protein: The Body's Building Block",
+    "meta": "What protein does in the body, how much you need for muscle building and repair, and the signs of protein deficiency — with cited sources."
+  },
+  {
+    "path": "recipe-macro-scaler.html",
+    "title": "Recipe Macro Scaler",
+    "h1": "Recipe Macro Scaler",
+    "meta": "Scale recipe ingredients and calculate calories, protein, carbohydrates, and fat per new serving with a free browser-based calculator."
+  },
+  {
+    "path": "reduce-food-waste-meal-planning.html",
+    "title": "Reduce food waste with a use-first meal plan",
+    "h1": "Reduce food waste with a use-first meal plan",
+    "meta": "Use a simple inventory, use-first zone, ingredient overlap, realistic leftover plan, and freezer routine to reduce wasted food without rigid weekly menus."
+  },
+  {
+    "path": "restaurant-food-allergy-communication.html",
+    "title": "Restaurant food-allergy communication",
+    "h1": "Restaurant food-allergy communication: questions before ordering",
+    "meta": "Use a clear restaurant communication routine covering ingredients, shared equipment, substitutions, staff handoffs, emergency readiness, and when to leave."
+  },
+  {
+    "path": "restaurant-meal-finder.html",
+    "title": "Healthy Fast Food Finder: Answer 4 Questions, Get Your Meal",
+    "h1": "Find a fast-food meal that fits",
+    "meta": "Answer four quick questions and get ranked fast-food meals from 15 chains, with the calories, protein, fibre and sodium for each and why it fits what you asked for."
+  },
+  {
+    "path": "restaurant-meal-guides.html",
+    "title": "Fast-Food Nutrition Guides by Restaurant",
+    "h1": "Choose a restaurant. See the useful details.",
+    "meta": "Open practical macro and dietary guides for 15 popular U.S. restaurant chains, or use the healthy fast-food meal matcher."
+  },
+  {
+    "path": "restaurant-meals-every-diet-guide.html",
+    "title": "Restaurant Meals for Different Diets",
+    "h1": "Restaurant Meals for Different Diets",
+    "meta": "Use a flexible decision system for vegan, vegetarian, gluten-aware, higher-protein, lower-sodium and lower-carbohydrate restaurant meals."
+  },
+  {
+    "path": "restaurant-nutrition-information.html",
+    "title": "How to use restaurant nutrition information without false",
+    "h1": "How to use restaurant nutrition information without false precision",
+    "meta": "Interpret menu calories and nutrients as planning estimates, compare similar meals, and keep one restaurant visit in the context of the whole pattern."
+  },
+  {
+    "path": "saturated-vs-unsaturated-fat.html",
+    "title": "Saturated vs. Unsaturated Fat: The Difference",
+    "h1": "Saturated vs. unsaturated fat: what's actually the difference",
+    "meta": "The chemical difference between saturated and unsaturated fat, how each affects health, and which foods contain them."
+  },
+  {
+    "path": "search.html",
+    "title": "Search Nutrition Articles, Tools and Games",
+    "h1": "Search GetMacros.net",
+    "meta": "Search the complete GetMacros.net library of evidence-aware nutrition articles, practical guides, calculators, quizzes, games, and site resources."
+  },
+  {
+    "path": "serving-size-vs-portion-size.html",
+    "title": "Serving size vs. portion size",
+    "h1": "Serving size vs. portion size: the difference that changes the math",
+    "meta": "Learn why a label serving is not a recommended portion, how to scale nutrients to the amount you eat, and when dual-column labels help."
+  },
+  {
+    "path": "shelf-stable-balanced-pantry.html",
+    "title": "How to build a shelf-stable pantry for balanced meals",
+    "h1": "How to build a shelf-stable pantry for balanced meals",
+    "meta": "Build a flexible pantry with shelf-stable proteins, grains, vegetables, fruits, fats, seasonings, and backup foods that match your budget and equipment."
+  },
+  {
+    "path": "simple-vs-complex-carbs.html",
+    "title": "Simple vs. Complex Carbohydrates Explained",
+    "h1": "Simple vs. complex carbohydrates explained",
+    "meta": "The structural difference between simple and complex carbohydrates, how each affects blood sugar and digestion, and food examples of both."
+  },
+  {
+    "path": "sodium-label-comparison-tool.html",
+    "title": "Sodium Label Comparison Tool",
+    "h1": "Sodium label comparison tool",
+    "meta": "Compare sodium in the portions you actually eat and see the share of the general FDA Daily Value."
+  },
+  {
+    "path": "soluble-vs-insoluble-fiber.html",
+    "title": "Soluble vs. insoluble fiber: a practical food guide",
+    "h1": "Soluble vs. insoluble fiber: a practical food guide",
+    "meta": "Learn how soluble and insoluble fibers behave, which foods contain them, and why eating a varied mix matters more than memorizing categories."
+  },
+  {
+    "path": "sources.html",
+    "title": "Sources & Citations",
+    "h1": "Sources & citations",
+    "meta": "Full list of sources cited across GetMacros.net, including research on protein, fat, carbohydrates, and the formulas used in the calculators."
+  },
+  {
+    "path": "sports-drinks-vs-water.html",
+    "title": "Sports Drinks vs. Water: Which Do You Need?",
+    "h1": "Sports drinks vs. water: when you actually need electrolytes",
+    "meta": "When plain water is enough during exercise and when a carbohydrate-electrolyte sports drink actually helps, based on ACSM hydration guidance."
+  },
+  {
+    "path": "starbucks-healthy-food-meals-macros.html",
+    "title": "Starbucks Balanced Food and Macros",
+    "h1": "Starbucks Balanced Food and Macros",
+    "meta": "Compare protein boxes and build a more complete Starbucks meal without ignoring beverages or allergens."
+  },
+  {
+    "path": "subway-healthy-meals-macros.html",
+    "title": "Subway Balanced Meals and Macros",
+    "h1": "Subway Balanced Meals and Macros",
+    "meta": "Compare current Subway sandwiches and protein pockets while accounting for bread, cheese, sauce and sodium."
+  },
+  {
+    "path": "sweat-rate-calculator.html",
+    "title": "Sweat Rate Calculator | Estimate Exercise Fluid Loss",
+    "h1": "Sweat-rate calculator",
+    "meta": "Estimate observed sweat rate from before-and-after body mass, drink volume, urine loss, and exercise time. Includes transparent math and safety limits."
+  },
+  {
+    "path": "sweetgreen-healthy-meals-macros.html",
+    "title": "Sweetgreen Balanced Bowls and Macros",
+    "h1": "Sweetgreen Balanced Bowls and Macros",
+    "meta": "Compare current Sweetgreen salads and bowls for protein, energy, plant-based eating and practical customization."
+  },
+  {
+    "path": "taco-bell-healthy-meals-macros.html",
+    "title": "Taco Bell Balanced Meals and Macros",
+    "h1": "Taco Bell Balanced Meals and Macros",
+    "meta": "Compare Taco Bell bowls and customization strategies for vegetarian, higher-protein and lower-sodium priorities."
+  },
+  {
+    "path": "tdee-vs-bmr.html",
+    "title": "BMR vs. TDEE: What's the Difference?",
+    "h1": "BMR vs. TDEE: what's the difference?",
+    "meta": "The difference between Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE), and how the Mifflin-St Jeor equation estimates both."
+  },
+  {
+    "path": "terms.html",
+    "title": "Terms of Use",
+    "h1": "Terms of use",
+    "meta": "The terms governing use of GetMacros.net — educational content only, not medical advice, third-party ads, and intellectual property."
+  },
+  {
+    "path": "thermic-effect-of-food-explained.html",
+    "title": "The Thermic Effect of Food Explained",
+    "h1": "The thermic effect of food explained",
+    "meta": "What the thermic effect of food (TEF) is, why protein has the highest TEF of the three macronutrients, and how much it actually affects calorie burn."
+  },
+  {
+    "path": "units-and-conversions-cheat-sheet.html",
+    "title": "Nutrition Units & Conversions Cheat Sheet",
+    "h1": "Units and conversions cheat sheet",
+    "meta": "A quick-reference conversion sheet for calories, kilojoules, grams, ounces, and macronutrient calorie values."
+  },
+  {
+    "path": "water-weight-vs-fat-loss.html",
+    "title": "Water Weight vs. Fat Loss: Why the Scale Lies",
+    "h1": "Water weight vs. fat loss: why the scale lies",
+    "meta": "Why the scale can jump or drop several pounds overnight that have nothing to do with actual fat loss or gain, and what's really going on."
+  },
+  {
+    "path": "weighing-cooking-oils-and-sauces.html",
+    "title": "How to measure cooking oils and sauces accurately",
+    "h1": "How to measure cooking oils, dressings, and sauces without guessing",
+    "meta": "Use before-and-after weights, batch totals, and realistic leftovers to estimate oils, dressings, marinades, and sauces more consistently."
+  },
+  {
+    "path": "weight-goal-timeline-calculator.html",
+    "title": "Weight Goal Timeline Calculator: How Long Will It Take?",
+    "h1": "How long will it take to reach my goal weight?",
+    "meta": "Enter your current weight and goal weight to estimate how long it will take at a safe rate, the daily calorie deficit or surplus needed, and how to actually get there."
+  },
+  {
+    "path": "wendys-healthy-meals-macros.html",
+    "title": "Wendy’s Balanced Meals and Macros",
+    "h1": "Wendy’s Balanced Meals and Macros",
+    "meta": "Compare Wendy’s salads, baked potatoes and higher-protein choices without assuming a salad is automatically light."
+  },
+  {
+    "path": "when-do-you-need-electrolytes.html",
+    "title": "When Do You Actually Need Electrolytes?",
+    "h1": "When Do You Actually Need Electrolytes?",
+    "meta": "Use duration, sweat, heat, meals, illness, and medical context to decide when water is enough and when electrolyte replacement deserves attention."
+  },
+  {
+    "path": "whey-vs-casein-protein.html",
+    "title": "Whey vs. Casein: Which Protein Is Better?",
+    "h1": "Whey vs. casein protein: what's the real difference?",
+    "meta": "How whey and casein protein actually differ in digestion speed and amino acid profile, and when each one makes more practical sense."
+  }
+]

@@ -12,6 +12,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
+from build_restaurant_pages import CHAIN_CONFIG, parse_meals
+from site_scope import KEEP_ROOT_HTML
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://getmacros.net/"
 PUBLISHER = "ca-pub-2316153877942502"
@@ -24,8 +27,11 @@ class PageParser(HTMLParser):
         self.title_parts: list[str] = []
         self.in_title = False
         self.h1_count = 0
+        self.in_h1 = False
+        self.h1_parts: list[str] = []
         self.metas: list[dict[str, str]] = []
         self.links: list[str] = []
+        self.resources: list[str] = []
         self.images_without_alt = 0
         self.canonicals: list[str] = []
         self.jsonld: list[str] = []
@@ -46,6 +52,7 @@ class PageParser(HTMLParser):
             self.in_title = True
         elif tag == "h1":
             self.h1_count += 1
+            self.in_h1 = True
         elif tag == "meta":
             self.metas.append(a)
         elif tag == "a" and a.get("href"):
@@ -56,17 +63,24 @@ class PageParser(HTMLParser):
             self.main_ids.append(a.get("id", ""))
         elif tag == "img" and "alt" not in a:
             self.images_without_alt += 1
-        elif tag == "link" and "canonical" in a.get("rel", "").lower().split():
-            self.canonicals.append(a.get("href", ""))
-        elif tag == "script" and a.get("type", "").lower() == "application/ld+json":
+        if tag in {"img", "script"} and a.get("src"):
+            self.resources.append(a["src"])
+        if tag == "link":
+            if a.get("href"):
+                self.resources.append(a["href"])
+            if "canonical" in a.get("rel", "").lower().split():
+                self.canonicals.append(a.get("href", ""))
+        if tag == "script" and a.get("type", "").lower() == "application/ld+json":
             self._json_depth = 1
             self._json_parts = []
-        elif tag == "article" and "result-card" in a.get("class", "").split():
+        if tag == "article" and "result-card" in a.get("class", "").split():
             self.result_cards.append("")
 
     def handle_endtag(self, tag: str) -> None:
         if tag.lower() == "title":
             self.in_title = False
+        elif tag.lower() == "h1":
+            self.in_h1 = False
         elif tag.lower() == "script" and self._json_depth:
             self.jsonld.append("".join(self._json_parts).strip())
             self._json_depth = 0
@@ -75,6 +89,8 @@ class PageParser(HTMLParser):
     def handle_data(self, data: str) -> None:
         if self.in_title:
             self.title_parts.append(data)
+        if self.in_h1:
+            self.h1_parts.append(data)
         if self._json_depth:
             self._json_parts.append(data)
 
@@ -114,6 +130,8 @@ def main() -> int:
     html_paths = sorted(p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*.html"))
     pages: dict[str, tuple[str, PageParser]] = {}
     titles: dict[str, list[str]] = {}
+    descriptions_seen: dict[str, list[str]] = {}
+    h1s_seen: dict[str, list[str]] = {}
     canonicals: dict[str, list[str]] = {}
     indexable: set[str] = set()
 
@@ -140,10 +158,18 @@ def main() -> int:
         descriptions = [m.get("content", "").strip() for m in parser.metas if m.get("name", "").lower() == "description"]
         if not noindex and not any(descriptions):
             errors.append(f"{path}: missing non-empty meta description")
+        elif not noindex:
+            descriptions_seen.setdefault(descriptions[0].casefold(), []).append(path)
 
         if not noindex:
             if parser.h1_count != 1:
                 errors.append(f"{path}: expected exactly one H1, found {parser.h1_count}")
+            else:
+                h1 = " ".join("".join(parser.h1_parts).split())
+                if not h1:
+                    errors.append(f"{path}: empty H1")
+                else:
+                    h1s_seen.setdefault(h1.casefold(), []).append(path)
             if len(parser.canonicals) != 1:
                 errors.append(f"{path}: expected one canonical, found {len(parser.canonicals)}")
             elif parser.canonicals[0] != canonical_for(path):
@@ -155,14 +181,41 @@ def main() -> int:
             if parser.skip_links != 1:
                 errors.append(f"{path}: expected one skip link to #main-content")
             og_titles = [m for m in parser.metas if m.get("property", "").lower() == "og:title"]
+            og_descriptions = [m.get("content", "") for m in parser.metas if m.get("property", "").lower() == "og:description"]
             og_urls = [m.get("content", "") for m in parser.metas if m.get("property", "").lower() == "og:url"]
             twitter_cards = [m for m in parser.metas if m.get("name", "").lower() == "twitter:card"]
+            twitter_titles = [m.get("content", "") for m in parser.metas if m.get("name", "").lower() == "twitter:title"]
+            twitter_descriptions = [m.get("content", "") for m in parser.metas if m.get("name", "").lower() == "twitter:description"]
             if len(og_titles) != 1:
                 errors.append(f"{path}: expected one Open Graph title")
+            elif og_titles[0].get("content", "") != title:
+                errors.append(f"{path}: Open Graph title must match page title")
+            if og_descriptions != [descriptions[0]]:
+                errors.append(f"{path}: Open Graph description must match meta description")
             if og_urls != [canonical_for(path)]:
                 errors.append(f"{path}: Open Graph URL must match canonical")
             if len(twitter_cards) != 1:
                 errors.append(f"{path}: expected one Twitter card declaration")
+            if twitter_titles != [title]:
+                errors.append(f"{path}: Twitter title must match page title")
+            if twitter_descriptions != [descriptions[0]]:
+                errors.append(f"{path}: Twitter description must match meta description")
+            adsense_accounts = [m.get("content", "") for m in parser.metas if m.get("name", "").lower() == "google-adsense-account"]
+            if adsense_accounts != [PUBLISHER]:
+                errors.append(f"{path}: expected one verified AdSense account meta tag")
+            if f"adsbygoogle.js?client={PUBLISHER}" not in text:
+                errors.append(f"{path}: verified AdSense loader missing")
+            required_nav = (
+                ("healthy-fast-food.html", "Healthy Fast Food"),
+                ("restaurant-meal-finder.html", "Meal Finder"),
+                ("calculators.html", "Macro Calculator"),
+                ("articles.html", "Nutrition Guides"),
+                ("about.html", "About"),
+            )
+            for nav_href, nav_label in required_nav:
+                pattern = rf'<a\b[^>]*href=["\']{re.escape(nav_href)}["\'][^>]*>\s*{re.escape(nav_label)}\s*</a>'
+                if not re.search(pattern, text, re.I):
+                    errors.append(f"{path}: focused primary navigation link missing: {nav_label}")
 
         for raw in parser.jsonld:
             try:
@@ -185,6 +238,19 @@ def main() -> int:
     for canonical, paths in canonicals.items():
         if len(paths) > 1:
             errors.append(f"duplicate canonical {canonical}: " + ", ".join(paths))
+    for description, paths in descriptions_seen.items():
+        if len(paths) > 1:
+            errors.append("duplicate meta description: " + ", ".join(paths))
+    for h1, paths in h1s_seen.items():
+        if len(paths) > 1:
+            warnings.append("duplicate H1 wording: " + ", ".join(paths))
+
+    root_html = {Path(p).name for p in html_paths if "/" not in p}
+    if root_html != KEEP_ROOT_HTML:
+        for path in sorted(KEEP_ROOT_HTML - root_html):
+            errors.append(f"focused allowlist: missing {path}")
+        for path in sorted(root_html - KEEP_ROOT_HTML):
+            errors.append(f"focused allowlist: unexpected HTML page {path}")
 
     all_files = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if p.is_file()}
     for path, (_, parser) in pages.items():
@@ -192,6 +258,10 @@ def main() -> int:
             target = local_target(path, href)
             if target is not None and target not in all_files:
                 errors.append(f"{path}: broken internal link {href!r} -> {target!r}")
+        for source in parser.resources:
+            target = local_target(path, source)
+            if target is not None and target not in all_files:
+                errors.append(f"{path}: missing local asset {source!r} -> {target!r}")
 
     sitemap_path = ROOT / "sitemap.xml"
     try:
@@ -221,6 +291,49 @@ def main() -> int:
     ads_text = (ROOT / "ads.txt").read_text(encoding="utf-8")
     if f"google.com, pub-{PUBLISHER.removeprefix('ca-pub-')}, DIRECT" not in ads_text:
         errors.append("ads.txt: verified Google publisher record missing")
+
+    key_text = "\n".join(pages[p][0] for p in ("index.html", "articles.html", "calculators.html", "healthy-fast-food.html", "restaurant-meal-finder.html"))
+    stale_patterns = {
+        r"340\s+(?:focused\s+)?guides": "stale 340-guides claim",
+        r"Quizzes\s*&(?:amp;)?\s*Games": "quizzes/games remain in primary product pages",
+        r'href=["\'](?:es/|fr/)': "partial-language link remains",
+    }
+    for pattern, label in stale_patterns.items():
+        if re.search(pattern, key_text, re.I):
+            errors.append(label)
+
+    meals = parse_meals()
+    chains = {m["chain"] for m in meals}
+    if len(meals) != 74 or len(chains) != 15:
+        errors.append(f"restaurant data: expected 74 options across 15 chains, found {len(meals)} across {len(chains)}")
+    meal_keys = Counter((m["chain"].casefold(), m["name"].casefold()) for m in meals)
+    for key, count in meal_keys.items():
+        if count > 1:
+            errors.append(f"restaurant data: duplicate record {key[0]} / {key[1]}")
+    for meal in meals:
+        for field in ("cal", "p", "c", "f", "na"):
+            value = meal.get(field)
+            if value is not None and (not isinstance(value, (int, float)) or value < 0):
+                errors.append(f"restaurant data: invalid {field} for {meal['chain']} / {meal['name']}")
+    finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
+    static_meal_count = sum(1 for meal in meals if meal["name"] in finder_text)
+    if static_meal_count < 35:
+        errors.append(f"restaurant-meal-finder.html: only {static_meal_count} tracked options appear in static HTML")
+    for chain in chains:
+        if chain not in finder_text:
+            errors.append(f"restaurant-meal-finder.html: restaurant coverage missing from static HTML: {chain}")
+    for chain, config in CHAIN_CONFIG.items():
+        chain_meals = [m for m in meals if m["chain"] == chain]
+        if not chain_meals:
+            errors.append(f"restaurant data: no records for {chain}")
+            continue
+        page_path = chain_meals[0]["url"]
+        page_text = pages.get(page_path, ("", PageParser()))[0]
+        if config["source"] not in page_text:
+            errors.append(f"{page_path}: official {chain} source missing")
+        for meal in chain_meals:
+            if meal["name"] not in page_text:
+                errors.append(f"{page_path}: tracked item missing from visible HTML: {meal['name']}")
 
     try:
         ET.parse(ROOT / "feed.xml")

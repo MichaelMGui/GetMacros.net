@@ -1,0 +1,3145 @@
+[
+  {
+    "path": "404.html",
+    "title": "Page Not Found",
+    "h1": "We couldn't find that page",
+    "meta": "The page you're looking for doesn't exist. Find protein, fat, and carbohydrate guides, calculators, quizzes, and the full glossary on GetMacros.net.",
+    "indexable": false
+  },
+  {
+    "path": "a1c-cgm-food-patterns-context.html",
+    "title": "A1C, CGM and Food Patterns: Use Data Without Blame",
+    "h1": "A1C, CGM and Food Patterns: Use Data Without Blame",
+    "meta": "Understand what A1C and continuous glucose data can and cannot say about meals, health and personal responsibility.",
+    "indexable": true
+  },
+  {
+    "path": "about.html",
+    "title": "About GetMacros: Data, Tools & Editorial Standards",
+    "h1": "Practical nutrition tools for real food decisions",
+    "meta": "Learn who GetMacros is for, how restaurant nutrition data and macro tools are built, how sources are checked, and how to report corrections.",
+    "indexable": true
+  },
+  {
+    "path": "accessibility.html",
+    "title": "Accessibility Statement",
+    "h1": "Accessibility statement",
+    "meta": "GetMacros.net’s accessibility commitments, implemented keyboard and responsive features, known limitations, testing approach, and contact route for barriers.",
+    "indexable": true
+  },
+  {
+    "path": "added-sugar-vs-natural-sugar.html",
+    "title": "Added Sugar vs. Natural Sugar",
+    "h1": "Added sugar vs. natural sugar: does the difference matter?",
+    "meta": "Whether added sugar and naturally occurring sugar (like the sugar in fruit) actually behave differently in the body, and why food matrix matters.",
+    "indexable": true
+  },
+  {
+    "path": "alcohol-and-macros.html",
+    "title": "Alcohol and Macros: How Drinking Fits In",
+    "h1": "Alcohol and macros: how drinking fits into your targets",
+    "meta": "How alcohol interacts with your calorie and macro targets, since it doesn't cleanly fit into protein, fat, or carbs.",
+    "indexable": true
+  },
+  {
+    "path": "alcohol-associated-liver-disease-nutrition.html",
+    "title": "Alcohol-Associated Liver Disease and Nutrition",
+    "h1": "Alcohol-Associated Liver Disease and Nutrition",
+    "meta": "Nutrition, abstinence support, withdrawal safety and malnutrition considerations in alcohol-associated liver disease.",
+    "indexable": true
+  },
+  {
+    "path": "allergen-cross-contact-explained.html",
+    "title": "Allergen cross-contact: how it happens and how to avoid it",
+    "h1": "Allergen cross-contact: kitchens, factories, utensils, and shared food",
+    "meta": "Understand how unintended allergen transfer occurs, why tiny residues matter, and how cleaning, storage, preparation order, and communication reduce risk.",
+    "indexable": true
+  },
+  {
+    "path": "allergen-label-practice-game.html",
+    "title": "Allergen Label Practice Game | Read Labels and",
+    "h1": "Allergen label practice",
+    "meta": "Practice eight U.S. food-allergy label and cross-contact scenarios with instant explanations covering sesame, milk, gluten-free claims and restaurants.",
+    "indexable": true
+  },
+  {
+    "path": "animal-based-diet-explained.html",
+    "title": "Animal-Based Diet Explained",
+    "h1": "The animal-based diet explained",
+    "meta": "What an animal-based diet actually allows compared to strict carnivore, and why the distinction matters if you're considering either.",
+    "indexable": true
+  },
+  {
+    "path": "antioxidants-and-free-radicals.html",
+    "title": "Antioxidants and Free Radicals Explained",
+    "h1": "Antioxidants and free radicals explained",
+    "meta": "What free radicals and oxidative stress are, how antioxidants work, and why antioxidant supplements haven't lived up to the food-based evidence.",
+    "indexable": true
+  },
+  {
+    "path": "appetite-changes-in-older-adults.html",
+    "title": "Appetite changes in older adults",
+    "h1": "Appetite changes in older adults: practical ways to make eating easier",
+    "meta": "Understand common reasons appetite changes with age, practical meal strategies, and signs that deserve medical or dietitian assessment.",
+    "indexable": true
+  },
+  {
+    "path": "are-protein-bars-actually-healthy.html",
+    "title": "Are Protein Bars Actually Healthy?",
+    "h1": "Are protein bars actually healthy?",
+    "meta": "What's really in most protein bars, how to read the label past the marketing, and when a protein bar is a good choice.",
+    "indexable": true
+  },
+  {
+    "path": "articles.html",
+    "title": "Nutrition Guides for Macros, Meals & Eating Out | GetMacros",
+    "h1": "Nutrition guides for the numbers you use",
+    "meta": "Browse focused GetMacros guides about protein, carbs, fat, macro goals, meal building, food labels, eating out and practical sports nutrition.",
+    "indexable": true
+  },
+  {
+    "path": "artificial-sweeteners-explained.html",
+    "title": "Artificial Sweeteners: What the Evidence Says",
+    "h1": "Artificial sweeteners: what the evidence says",
+    "meta": "How non-sugar sweeteners work, what the WHO's 2023 guideline concluded about using them for weight control, and how to read the evidence sensibly.",
+    "indexable": true
+  },
+  {
+    "path": "athlete-diets-quiz.html",
+    "title": "Athlete Diets Quiz: Fact or Fiction?",
+    "h1": "Athlete diets: fact or fiction?",
+    "meta": "An 8-question quiz on real athlete and World Cup team nutrition stories — Messi, Ronaldo, Phelps, Bolt, Djokovic, Biles, and more, fact-checked.",
+    "indexable": true
+  },
+  {
+    "path": "atp-explained.html",
+    "title": "What Is ATP? Structure, Hydrolysis and Function",
+    "h1": "What is ATP?",
+    "meta": "Why ATP is the cell's energy currency — its structure, why hydrolysis releases usable energy, and how quickly it is recycled.",
+    "indexable": true
+  },
+  {
+    "path": "b-vitamins-and-metabolism.html",
+    "title": "B Vitamins as Coenzymes in Metabolism",
+    "h1": "B vitamins as coenzymes in metabolism",
+    "meta": "How each B vitamin functions as a coenzyme in energy metabolism, which pathway it serves, and what deficiency causes.",
+    "indexable": true
+  },
+  {
+    "path": "balanced-breakfast-formula.html",
+    "title": "A balanced breakfast formula that works with sweet or",
+    "h1": "A balanced breakfast formula that works with sweet or savory food",
+    "meta": "Build breakfast from protein, carbohydrate, produce, and optional fat using familiar foods, leftovers, or convenience items.",
+    "indexable": true
+  },
+  {
+    "path": "balanced-meals-for-growing-kids.html",
+    "title": "Balanced Meals for Growing Kids and Teens",
+    "h1": "Balanced Meals for Growing Kids and Teens",
+    "meta": "A flexible meal framework for children and teenagers using familiar foods, appetite trust, variety, and realistic family routines.",
+    "indexable": true
+  },
+  {
+    "path": "balanced-vegetarian-meal-formula.html",
+    "title": "How to build a balanced vegetarian meal",
+    "h1": "How to build a balanced vegetarian meal",
+    "meta": "Combine legumes, soy foods, eggs or dairy when used, grains, vegetables, fats, and fortified foods into satisfying vegetarian meals.",
+    "indexable": true
+  },
+  {
+    "path": "batch-cooking-on-a-budget.html",
+    "title": "Batch cooking on a budget without eating the same meal all",
+    "h1": "Batch cooking on a budget without eating the same meal all week",
+    "meta": "Plan batch components, calculate realistic portions, cool food safely, freeze strategically, and vary flavors without buying a second pantry.",
+    "indexable": true
+  },
+  {
+    "path": "bcaas-explained.html",
+    "title": "BCAAs Explained: Are They Worth Taking?",
+    "h1": "BCAAs explained: are they actually worth taking?",
+    "meta": "What branched-chain amino acids actually do, why isolated BCAA supplements underperform whole protein, and when they might still make sense.",
+    "indexable": true
+  },
+  {
+    "path": "best-breakfast-for-muscle-gain.html",
+    "title": "What's the Best Breakfast for Muscle Gain?",
+    "h1": "What's the best breakfast for muscle gain?",
+    "meta": "What actually matters in a muscle-building breakfast — protein content and total daily intake — versus what's mostly marketing.",
+    "indexable": true
+  },
+  {
+    "path": "best-time-to-eat-carbs.html",
+    "title": "Is There a Best Time to Eat Carbs?",
+    "h1": "Is there a best time to eat carbs?",
+    "meta": "Whether eating carbs at a specific time of day (morning, evening, around workouts) actually matters for fat loss or performance.",
+    "indexable": true
+  },
+  {
+    "path": "beta-oxidation-explained.html",
+    "title": "Beta-Oxidation: How Fat Is Burned for Energy",
+    "h1": "Beta-oxidation: how fat is burned for energy",
+    "meta": "How fatty acids are broken down into acetyl-CoA — activation, carnitine shuttle, the four repeating steps, and why fat yields more ATP than glucose.",
+    "indexable": true
+  },
+  {
+    "path": "biochemistry-quiz.html",
+    "title": "Biochemistry Quiz: Metabolism Revision",
+    "h1": "Metabolism revision quiz",
+    "meta": "A 10-question revision quiz on glycolysis, the Krebs cycle, the electron transport chain, and ATP yields.",
+    "indexable": true
+  },
+  {
+    "path": "biotin-foods-lab-test-interference.html",
+    "title": "Biotin: food sources, hair claims",
+    "h1": "Biotin: food sources, hair claims, and the lab-test interference risk",
+    "meta": "Learn what biotin does, where it is found, why deficiency is rare, what hair and nail claims miss, and how supplements can distort lab tests.",
+    "indexable": true
+  },
+  {
+    "path": "biotin-thyroid-tests-supplement-interference.html",
+    "title": "Biotin and Thyroid Tests: Supplement Interference",
+    "h1": "Biotin and Thyroid Tests: Supplement Interference",
+    "meta": "Why hair-and-nail supplements can distort thyroid results and how to disclose biotin before laboratory testing.",
+    "indexable": true
+  },
+  {
+    "path": "bloating-and-gas-food-guide.html",
+    "title": "Bloating and Gas: A Practical Food and Symptom Guide",
+    "h1": "Bloating and Gas: A Practical Food and Symptom Guide",
+    "meta": "Learn why gas is normal, what increases symptoms, how to test patterns without banning food groups, and which changes need medical evaluation.",
+    "indexable": true
+  },
+  {
+    "path": "blood-sugar-safety-scenario-game.html",
+    "title": "Blood-Sugar Safety Scenario Game",
+    "h1": "Blood-sugar safety scenario game",
+    "meta": "Practice eight diabetes meal, carbohydrate-label, hypoglycemia, exercise, CGM and emergency decisions.",
+    "indexable": true
+  },
+  {
+    "path": "body-recomposition-explained.html",
+    "title": "Body Recomposition: Build Muscle, Lose Fat",
+    "h1": "Body recomposition: building muscle and losing fat at once",
+    "meta": "What body recomposition means, who it actually works for, and how to set macros for it.",
+    "indexable": true
+  },
+  {
+    "path": "body-types-somatotypes-macros.html",
+    "title": "Do Body Types Determine Your Macros?",
+    "h1": "Do body types actually determine your macros?",
+    "meta": "Where the ectomorph/mesomorph/endomorph system came from, why it is not a validated way to set macros, and what should actually drive your targets.",
+    "indexable": true
+  },
+  {
+    "path": "bone-health-visit-planner.html",
+    "title": "Bone-Health Visit Planner",
+    "h1": "Bone-Health Visit Planner",
+    "meta": "Privately organize fracture, DXA, calcium, vitamin D, medicine, dental and fall-risk questions.",
+    "indexable": true
+  },
+  {
+    "path": "breastfeeding-nutrition-hydration-guide.html",
+    "title": "Breastfeeding Nutrition and Hydration Guide",
+    "h1": "Breastfeeding Nutrition and Hydration Guide",
+    "meta": "A practical breastfeeding nutrition guide covering regular meals, hydration, caffeine, alcohol, nutrients, elimination diets and milk-supply myths.",
+    "indexable": true
+  },
+  {
+    "path": "budget-friendly-fruit-vegetables.html",
+    "title": "Budget-friendly fruits and vegetables",
+    "h1": "Budget-friendly fruits and vegetables: fresh, frozen, canned, and dried",
+    "meta": "Compare produce forms by unit price, edible yield, season, storage, sodium, added sugar, preparation, and the likelihood your household will use them.",
+    "indexable": true
+  },
+  {
+    "path": "budget-meal-builder.html",
+    "title": "Budget Meal Builder | Make Meals From Pantry Ingredients",
+    "h1": "Budget meal builder",
+    "meta": "Select pantry proteins, grains, produce, and flavor ingredients to generate flexible budget meal ideas, substitutions, and a short grocery gap list.",
+    "indexable": true
+  },
+  {
+    "path": "budget-pantry-guides.html",
+    "title": "Food Budget and Pantry Guides | Shop, Store, Cook and Save",
+    "h1": "Food budget and pantry guides",
+    "meta": "Practical guides to unit prices, balanced pantry meals, reducing food waste, affordable produce, batch cooking, freezer meals, and emergency food planning.",
+    "indexable": true
+  },
+  {
+    "path": "build-a-plate-game.html",
+    "title": "Build-a-Plate",
+    "h1": "Build-a-Plate",
+    "meta": "Build a plate of real foods to hit a randomly assigned protein, fat, and carb target as closely as possible.",
+    "indexable": true
+  },
+  {
+    "path": "bulking-without-gaining-fat.html",
+    "title": "How to Bulk Without Gaining Excess Fat",
+    "h1": "How to bulk without gaining excess fat",
+    "meta": "How to run a calorie surplus for muscle gain while minimizing fat gain — surplus size, protein intake, and how to know when to stop.",
+    "indexable": true
+  },
+  {
+    "path": "caffeine-and-athletic-performance.html",
+    "title": "Caffeine and Athletic Performance: The Evidence",
+    "h1": "Caffeine and athletic performance: the evidence",
+    "meta": "How much caffeine actually improves performance, when to take it, who responds least, and where the evidence is strongest.",
+    "indexable": true
+  },
+  {
+    "path": "caffeine-cutoff-before-bed.html",
+    "title": "Caffeine before bed: how late is too late?",
+    "h1": "Caffeine before bed: half-life, timing, and a personal cutoff",
+    "meta": "Understand caffeine’s long and variable half-life, how late intake can affect sleep, and how to test a cutoff that fits your sensitivity.",
+    "indexable": true
+  },
+  {
+    "path": "calcium-and-bone-health.html",
+    "title": "Calcium and Bone Health: How Much You Need",
+    "h1": "Calcium and bone health: how much you need",
+    "meta": "How much calcium you need at each age, the best dietary sources, and why calcium without vitamin D and resistance training does less than you'd think.",
+    "indexable": true
+  },
+  {
+    "path": "calcium-vitamin-d-for-teens.html",
+    "title": "Calcium and Vitamin D for Teens: A Food-First Bone Guide",
+    "h1": "Calcium and Vitamin D for Teens: A Food-First Bone Guide",
+    "meta": "Practical ways for teenagers to get calcium and vitamin D from dairy or fortified alternatives, plus supplement and label-reading cautions.",
+    "indexable": true
+  },
+  {
+    "path": "calculators.html",
+    "title": "Macro Calculator & Nutrition Tools | GetMacros",
+    "h1": "Macro calculator and practical nutrition tools",
+    "meta": "Estimate daily calories, protein, carbohydrates and fat using weight, activity and goal. Enter height in feet and inches or centimeters.",
+    "indexable": true
+  },
+  {
+    "path": "carb-cycling-explained.html",
+    "title": "Carb Cycling Explained",
+    "h1": "Carb cycling explained",
+    "meta": "What carb cycling actually is, how the high-day/low-day approach works, and what the (limited) research says about whether it beats a steady daily carb intake.",
+    "indexable": true
+  },
+  {
+    "path": "carb-loading-for-athletes.html",
+    "title": "Carb Loading for Athletes: How It Works",
+    "h1": "Carb loading: how athletes maximize glycogen stores",
+    "meta": "How carb loading works, the modern protocol most athletes actually use, and who benefits from it.",
+    "indexable": true
+  },
+  {
+    "path": "carbohydrate-counting-food-labels-diabetes.html",
+    "title": "Carbohydrate Counting and Food Labels",
+    "h1": "Carbohydrate Counting and Food Labels",
+    "meta": "Read total carbohydrate, serving size, fibre and added sugars while keeping insulin and personal targets with the diabetes team.",
+    "indexable": true
+  },
+  {
+    "path": "carbohydrate-label-portion-tool.html",
+    "title": "Carbohydrate Label Portion Tool",
+    "h1": "Carbohydrate label portion tool",
+    "meta": "Multiply total carbohydrate by the servings you plan to eat, with clear limits around insulin and individualized targets.",
+    "indexable": true
+  },
+  {
+    "path": "carbohydrate-quality-guide.html",
+    "title": "Carbohydrate quality: a better question than “good or bad?”",
+    "h1": "Carbohydrate quality: a better question than “good or bad?”",
+    "meta": "Compare carbohydrate foods using fiber, nutrient density, processing, added sugar, enjoyment, and the role the food plays in the meal.",
+    "indexable": true
+  },
+  {
+    "path": "carbohydrates-for-strength-training.html",
+    "title": "Carbohydrates for strength training",
+    "h1": "Carbohydrates for strength training: fuel, volume, and context",
+    "meta": "Learn when carbohydrate supports lifting performance and recovery, and why needs differ between brief sessions and high-volume programs.",
+    "indexable": true
+  },
+  {
+    "path": "carbs-quiz.html",
+    "title": "Carbs Quiz: Test Your Knowledge",
+    "h1": "How much do you really know about carbohydrates?",
+    "meta": "An 8-question quiz testing what you know about carbohydrates, glycogen, and fiber.",
+    "indexable": true
+  },
+  {
+    "path": "carbs.html",
+    "title": "Carbohydrates: Glycogen, Energy & Brain Fuel",
+    "h1": "Carbohydrates: Your Body's Preferred Fuel",
+    "meta": "How carbohydrates fuel your body and brain, how glycogen storage works, and what happens on very low-carb diets — with cited sources.",
+    "indexable": true
+  },
+  {
+    "path": "carnivore-diet-explained.html",
+    "title": "Carnivore Diet Explained: Risks & Reality",
+    "h1": "The carnivore diet explained",
+    "meta": "What the carnivore diet actually restricts, why some people report short-term benefits, and the nutrient-deficiency risks clinicians flag with long-term use.",
+    "indexable": true
+  },
+  {
+    "path": "catabolism-vs-anabolism.html",
+    "title": "Catabolism vs. Anabolism: Metabolism Basics",
+    "h1": "Catabolism vs. anabolism: the basics of metabolism",
+    "meta": "The difference between catabolic and anabolic processes, and how they relate to muscle building, fat loss, and everyday metabolism.",
+    "indexable": true
+  },
+  {
+    "path": "cava-healthy-meals-macros.html",
+    "title": "Healthy CAVA Orders: Bowls, Calories & Protein | GetMacros",
+    "h1": "Healthy CAVA bowls and orders",
+    "meta": "Compare CAVA options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "cell-biology-quiz.html",
+    "title": "Cell Biology Quiz: Transport and Enzymes",
+    "h1": "Cell biology revision quiz",
+    "meta": "A 10-question revision quiz on membrane transport, osmosis, enzyme function, and protein structure.",
+    "indexable": true
+  },
+  {
+    "path": "cell-membrane-transport.html",
+    "title": "Cell Membrane Transport: Passive and Active",
+    "h1": "Cell membrane transport: passive and active",
+    "meta": "Simple and facilitated diffusion, osmosis, primary and secondary active transport, and endocytosis — with the key distinctions exams test.",
+    "indexable": true
+  },
+  {
+    "path": "cheat-days-do-they-help-or-hurt.html",
+    "title": "Cheat Days: Do They Help or Hurt?",
+    "h1": "Cheat days: do they actually help or hurt?",
+    "meta": "What a cheat day does to your metabolism and progress, whether it helps adherence, and how it compares to more moderate approaches like flexible dieting.",
+    "indexable": true
+  },
+  {
+    "path": "chewing-swallowing-barriers-nutrition.html",
+    "title": "Chewing and swallowing barriers",
+    "h1": "Chewing and swallowing barriers: making meals safer and more nourishing",
+    "meta": "Recognize when chewing or swallowing problems need assessment and use safer, individualized strategies without improvising a medical texture prescription.",
+    "indexable": true
+  },
+  {
+    "path": "chick-fil-a-healthy-meals-macros.html",
+    "title": "Healthy Chick-fil-A Options: High-Protein Meals | GetMacros",
+    "h1": "Healthy Chick-fil-A options and macros",
+    "meta": "Compare Chick-fil-A options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "children-teen-nutrition-guides.html",
+    "title": "Children and Teen Nutrition Guides",
+    "h1": "Nutrition for children and teenagers",
+    "meta": "Practical nutrition guides for children, teenagers, caregivers, and young athletes covering meals, breakfast, snacks, iron, calcium, picky eating, and RED-S.",
+    "indexable": true
+  },
+  {
+    "path": "chipotle-healthy-meals-macros.html",
+    "title": "Healthy Chipotle Orders: Calories, Protein & Macros | GetMacros",
+    "h1": "Healthy Chipotle orders by calories and protein",
+    "meta": "Compare Chipotle options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "cholesterol-explained.html",
+    "title": "Cholesterol: Dietary vs. Blood Explained",
+    "h1": "Cholesterol explained: dietary vs. blood cholesterol",
+    "meta": "The difference between the cholesterol you eat and the cholesterol measured in your blood, and why they aren't the same thing.",
+    "indexable": true
+  },
+  {
+    "path": "choline-foods-and-functions.html",
+    "title": "Choline: what it does and where to find it",
+    "h1": "Choline: what it does and where to find it",
+    "meta": "Learn how choline supports cell membranes, neurotransmitter production, and liver function, with practical food sources and reference values.",
+    "indexable": true
+  },
+  {
+    "path": "choosing-food-database-entry.html",
+    "title": "How to choose the right food database entry",
+    "h1": "How to choose the right food database entry",
+    "meta": "Choose a defensible nutrition database match by checking food state, data source, portion units, brand, date, and edible portion.",
+    "indexable": true
+  },
+  {
+    "path": "chromium-foods-supplements-evidence.html",
+    "title": "Chromium: what the supplement claims actually show",
+    "h1": "Chromium: foods, supplements, and what the evidence no longer assumes",
+    "meta": "Food chromium, chromium III versus toxic chromium VI, intake references, and why weight-loss and blood-sugar supplement claims remain uncertain.",
+    "indexable": true
+  },
+  {
+    "path": "chronic-kidney-disease-nutrition-basics.html",
+    "title": "Chronic Kidney Disease Nutrition Basics",
+    "h1": "Chronic Kidney Disease Nutrition Basics",
+    "meta": "Why CKD food plans vary by stage, laboratory results, medicines, appetite and dialysis status.",
+    "indexable": true
+  },
+  {
+    "path": "cirrhosis-protein-meals-malnutrition.html",
+    "title": "Cirrhosis, Protein, Meals and Malnutrition",
+    "h1": "Cirrhosis, Protein, Meals and Malnutrition",
+    "meta": "Why cirrhosis often requires adequate protein, frequent eating and careful food safety rather than protein avoidance.",
+    "indexable": true
+  },
+  {
+    "path": "cirrhosis-sodium-ascites-fluid-guide.html",
+    "title": "Cirrhosis Sodium, Ascites and Fluid Guide",
+    "h1": "Cirrhosis Sodium, Ascites and Fluid Guide",
+    "meta": "How sodium, abdominal fluid, diuretics and fluid plans interact—and why daily changes belong with the liver team.",
+    "indexable": true
+  },
+  {
+    "path": "ckd-phosphorus-additives-labels-binders.html",
+    "title": "CKD Phosphorus Additives, Labels and Binders",
+    "h1": "CKD Phosphorus Additives, Labels and Binders",
+    "meta": "How to find phosphate additives, understand natural versus added phosphorus and use binders only as prescribed.",
+    "indexable": true
+  },
+  {
+    "path": "ckd-potassium-foods-labs-medicines.html",
+    "title": "CKD Potassium: Foods, Labs and Medicines",
+    "h1": "CKD Potassium: Foods, Labs and Medicines",
+    "meta": "Why potassium restrictions depend on blood results, medicines and treatment rather than generic high-potassium lists.",
+    "indexable": true
+  },
+  {
+    "path": "ckd-sodium-fluid-swelling-guide.html",
+    "title": "CKD Sodium, Fluid and Swelling Guide",
+    "h1": "CKD Sodium, Fluid and Swelling Guide",
+    "meta": "Understand sodium labels, thirst, edema and why fluid limits must be prescribed rather than guessed.",
+    "indexable": true
+  },
+  {
+    "path": "collagen-supplements-explained.html",
+    "title": "Do Collagen Supplements Actually Work?",
+    "h1": "Do collagen supplements actually work?",
+    "meta": "What collagen supplements are, what happens to them during digestion, and how strong the evidence really is for skin and joint claims.",
+    "indexable": true
+  },
+  {
+    "path": "common-nutrition-myths-debunked.html",
+    "title": "Common Nutrition Myths Debunked",
+    "h1": "Common nutrition myths, debunked",
+    "meta": "A quick fact-check of persistent nutrition myths about carbs at night, eating frequency, detoxing, and more.",
+    "indexable": true
+  },
+  {
+    "path": "complete-vs-incomplete-protein.html",
+    "title": "Complete vs. Incomplete Protein",
+    "h1": "Complete vs. incomplete protein: what actually matters",
+    "meta": "What complete and incomplete proteins are, which foods fall where, and why protein combining at every meal matters far less than people think.",
+    "indexable": true
+  },
+  {
+    "path": "constipation-food-and-routine-guide.html",
+    "title": "Constipation: A Food and Routine Guide",
+    "h1": "Constipation: A Food and Routine Guide",
+    "meta": "A practical constipation guide covering gradual fibre, fluid, movement, toilet routines, medication review, and symptoms that need assessment.",
+    "indexable": true
+  },
+  {
+    "path": "contact.html",
+    "title": "Contact GetMacros.net",
+    "h1": "Contact GetMacros.net",
+    "meta": "How to reach GetMacros.net with corrections, content questions, or advertising inquiries.",
+    "indexable": true
+  },
+  {
+    "path": "cooking-fats-guide.html",
+    "title": "Cooking fats: choosing oil, butter, or another fat",
+    "h1": "Cooking fats: choosing oil, butter, or another fat",
+    "meta": "Choose cooking fats by flavor, heat, nutrition, cost, and cultural fit instead of relying on one universal “best oil.”",
+    "indexable": true
+  },
+  {
+    "path": "copper-foods-and-functions.html",
+    "title": "Copper: iron metabolism, connective tissue, and food sources",
+    "h1": "Copper: iron metabolism, connective tissue, and food sources",
+    "meta": "Learn what copper does, which foods supply it, and how high zinc intake can interfere with copper status.",
+    "indexable": true
+  },
+  {
+    "path": "corrections.html",
+    "title": "Corrections Policy and Public Change Log",
+    "h1": "Corrections policy and public change log",
+    "meta": "How GetMacros.net receives, evaluates, publishes, and records factual corrections to nutrition articles, calculators, and interactive resources.",
+    "indexable": true
+  },
+  {
+    "path": "correlation-vs-causation-in-nutrition.html",
+    "title": "Correlation vs. Causation in Nutrition Science",
+    "h1": "Correlation vs. causation in nutrition science",
+    "meta": "Why two things moving together in a nutrition study doesn't mean one causes the other, with real confounders like healthy-user bias and reverse causation.",
+    "indexable": true
+  },
+  {
+    "path": "creatine-explained.html",
+    "title": "Creatine: What It Does & Who Needs It",
+    "h1": "Creatine explained: what it does and who needs it",
+    "meta": "What creatine monohydrate actually does in the body, what the safety research says, and the simple, effective way to take it based on the ISSN position stand.",
+    "indexable": true
+  },
+  {
+    "path": "cutting-bulking-maintenance-explained.html",
+    "title": "Cutting vs. Bulking vs. Maintenance",
+    "h1": "Cutting vs. bulking vs. maintenance: which phase are you in?",
+    "meta": "What the terms cutting, bulking, and maintenance actually mean in terms of calories and macros, and how to tell which one you should be doing.",
+    "indexable": true
+  },
+  {
+    "path": "dairy-free-calcium-foods.html",
+    "title": "Dairy-free calcium foods and how to compare them",
+    "h1": "Dairy-free calcium foods and how to compare them",
+    "meta": "Find calcium in fortified plant beverages, calcium-set tofu, canned fish with bones, and selected greens while checking labels and serving sizes.",
+    "indexable": true
+  },
+  {
+    "path": "dash-diet-explained.html",
+    "title": "DASH Diet Explained: Lower Blood Pressure",
+    "h1": "The DASH diet explained",
+    "meta": "What the DASH diet is, how it differs from Mediterranean, and the sodium and potassium targets behind why it works for blood pressure.",
+    "indexable": true
+  },
+  {
+    "path": "dash-diet-practical-beginners-guide.html",
+    "title": "The DASH Eating Plan: A Practical Beginner’s Guide",
+    "h1": "The DASH Eating Plan: A Practical Beginner’s Guide",
+    "meta": "How to apply the evidence-based DASH eating pattern with ordinary meals, gradual changes and realistic sodium choices.",
+    "indexable": true
+  },
+  {
+    "path": "diabetes-alcohol-exercise-meal-timing.html",
+    "title": "Diabetes, Alcohol, Exercise and Meal Timing",
+    "h1": "Diabetes, Alcohol, Exercise and Meal Timing",
+    "meta": "How activity, alcohol, medicines and meal timing can interact with glucose, with practical preparation and safety boundaries.",
+    "indexable": true
+  },
+  {
+    "path": "diabetes-blood-sugar-nutrition-guides.html",
+    "title": "Diabetes and Blood-Sugar Nutrition Guides",
+    "h1": "Diabetes and blood-sugar nutrition guides",
+    "meta": "Evidence-aware guides to diabetes meals, carbohydrate labels, prediabetes, hypoglycemia, exercise, alcohol, A1C and CGM.",
+    "indexable": true
+  },
+  {
+    "path": "diabetes-plate-method-practical-guide.html",
+    "title": "The Diabetes Plate Method: A Practical Guide",
+    "h1": "The Diabetes Plate Method: A Practical Guide",
+    "meta": "Build balanced meals with nonstarchy vegetables, protein and carbohydrate foods without banning cultural staples.",
+    "indexable": true
+  },
+  {
+    "path": "dialysis-nutrition-protein-fluid-basics.html",
+    "title": "Dialysis Nutrition: Protein, Fluid and Mineral Basics",
+    "h1": "Dialysis Nutrition: Protein, Fluid and Mineral Basics",
+    "meta": "Why nutrition needs change on hemodialysis or peritoneal dialysis and which questions belong with the renal team.",
+    "indexable": true
+  },
+  {
+    "path": "diarrhea-foods-hydration-recovery.html",
+    "title": "Diarrhea Recovery: Fluids, Food, and When to Get Help",
+    "h1": "Diarrhea Recovery: Fluids, Food, and When to Get Help",
+    "meta": "Practical guidance on replacing fluid and electrolytes, returning to normal food, avoiding unnecessary fasting, and recognizing dehydration or bleeding.",
+    "indexable": true
+  },
+  {
+    "path": "diet-sorter-game.html",
+    "title": "Diet Sorter",
+    "h1": "Diet Sorter",
+    "meta": "A fast-paced sorting game — see a food and click whether it's Vegan, Vegetarian, or Neither before your lives run out.",
+    "indexable": true
+  },
+  {
+    "path": "diets-explained.html",
+    "title": "Diets Explained & Compared Side by Side",
+    "h1": "Diets",
+    "meta": "Compare animal-based, plant-based, vegan, paleo, carnivore, vegetarian, pescatarian, keto, and Mediterranean diets side by side on macros and evidence.",
+    "indexable": true
+  },
+  {
+    "path": "diets-quiz.html",
+    "title": "Diets Quiz: Animal-Based, Vegan, Paleo & More",
+    "h1": "How well do you know the major diets?",
+    "meta": "An 8-question quiz testing what you know about animal-based, plant-based, vegan, paleo, carnivore, vegetarian, and pescatarian diets.",
+    "indexable": true
+  },
+  {
+    "path": "digestion-quiz.html",
+    "title": "Digestion Quiz: Enzymes and Absorption",
+    "h1": "Digestion revision quiz",
+    "meta": "A 10-question revision quiz on digestive anatomy, enzymes, absorption sites, and accessory organs.",
+    "indexable": true
+  },
+  {
+    "path": "digestive-health-guides.html",
+    "title": "Digestive Health and Gut-Literacy Guides",
+    "h1": "Digestive health and gut literacy",
+    "meta": "Source-backed guides to constipation, bloating, gas, fibre, probiotics, fermented foods, low FODMAP, microbiome myths and digestive red flags.",
+    "indexable": true
+  },
+  {
+    "path": "digestive-pattern-worksheet.html",
+    "title": "Digestive Pattern Worksheet | Private Symptom and Food Log",
+    "h1": "Digestive pattern worksheet",
+    "meta": "Record digestive symptoms, stool pattern, food timing, medicines, sleep, stress, and context privately in your browser, then copy a visit-ready summary.",
+    "indexable": true
+  },
+  {
+    "path": "digestive-symptoms-red-flags.html",
+    "title": "Digestive Symptoms: Red Flags That Should Not Become a Food",
+    "h1": "Digestive Symptoms: Red Flags That Should Not Become a Food Experiment",
+    "meta": "Know which combinations of pain, bleeding, dehydration, weight change, fever, vomiting, swallowing trouble, or bowel changes need medical attention.",
+    "indexable": true
+  },
+  {
+    "path": "do-elimination-diets-improve-performance.html",
+    "title": "Do Elimination Diets Improve Performance?",
+    "h1": "Do elimination diets actually improve performance?",
+    "meta": "What controlled research finds when non-celiac athletes go gluten-free or try other elimination diets for performance — and why some still swear by the results.",
+    "indexable": true
+  },
+  {
+    "path": "does-caffeine-dehydrate-you.html",
+    "title": "Does Caffeine Dehydrate You? A Practical Answer",
+    "h1": "Does Caffeine Dehydrate You? A Practical Answer",
+    "meta": "Coffee and tea count toward fluid intake for most habitual users; learn where caffeine, heat, sleep, and high-dose products change the decision.",
+    "indexable": true
+  },
+  {
+    "path": "does-eating-fat-make-you-fat.html",
+    "title": "Does Eating Fat Make You Fat?",
+    "h1": "Does eating fat make you fat?",
+    "meta": "Why dietary fat and body fat are not the same thing, and what actually determines weight gain — with the research on total calories vs. fat specifically.",
+    "indexable": true
+  },
+  {
+    "path": "dunkin-healthy-breakfast-macros.html",
+    "title": "Healthy Dunkin' Breakfast: Calories & Protein | GetMacros",
+    "h1": "Healthy Dunkin' breakfast options and macros",
+    "meta": "Compare Dunkin’ options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "eating-late-at-night-weight-gain.html",
+    "title": "Does Eating Late at Night Cause Weight Gain?",
+    "h1": "Does eating late at night cause weight gain?",
+    "meta": "Whether eating close to bedtime actually causes weight gain independent of total calories, and what the research on meal timing actually shows.",
+    "indexable": true
+  },
+  {
+    "path": "editorial-policy.html",
+    "title": "Editorial Standards and Content Methodology",
+    "h1": "Editorial standards and content methodology",
+    "meta": "How GetMacros.net selects sources, writes and updates nutrition content, handles medical boundaries, discloses authorship, and corrects material errors.",
+    "indexable": true
+  },
+  {
+    "path": "egg-yolks-cholesterol-myth.html",
+    "title": "Are Egg Yolks Bad for Your Cholesterol?",
+    "h1": "Are egg yolks bad for your cholesterol?",
+    "meta": "What Harvard's long-term research actually found about egg consumption and heart disease risk, and why dietary cholesterol matters less than saturated fat.",
+    "indexable": true
+  },
+  {
+    "path": "electrolytes-explained.html",
+    "title": "Electrolytes: Sodium, Potassium and Magnesium",
+    "h1": "Electrolytes explained: sodium, potassium, and magnesium",
+    "meta": "What electrolytes actually do in the body, the sodium, potassium, and magnesium targets from the American Heart Association, and when you actually need more.",
+    "indexable": true
+  },
+  {
+    "path": "electron-transport-chain-explained.html",
+    "title": "Electron Transport Chain and ATP Synthase",
+    "h1": "The electron transport chain explained",
+    "meta": "How the electron transport chain and chemiosmosis generate most of your ATP — complexes I-IV, the proton gradient, and total aerobic yield.",
+    "indexable": true
+  },
+  {
+    "path": "emergency-pantry-meals.html",
+    "title": "Emergency pantry meals for low-energy, low-budget days",
+    "h1": "Emergency pantry meals when time, money, or equipment is limited",
+    "meta": "Build flexible pantry meals for low-energy days, delayed paychecks and power outages, and separate everyday backup plans from disaster preparation.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-bloating-bowel-symptoms-low-fodmap.html",
+    "title": "Endometriosis, Bloating, Bowel Symptoms and Low FODMAP",
+    "h1": "Endometriosis, Bloating, Bowel Symptoms and Low FODMAP",
+    "meta": "A careful approach to bloating, constipation, diarrhea and low-FODMAP trials without assuming every symptom is food intolerance.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-diet-evidence-balanced-eating.html",
+    "title": "Endometriosis Diet Evidence and Balanced Eating",
+    "h1": "Endometriosis Diet Evidence and Balanced Eating",
+    "meta": "What food may support, what research cannot yet prove, and how to avoid restrictive endometriosis cure claims.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-fertility-pregnancy-nutrition.html",
+    "title": "Endometriosis, Fertility and Pregnancy Nutrition",
+    "h1": "Endometriosis, Fertility and Pregnancy Nutrition",
+    "meta": "Preconception nutrition, medication review, fertility referral and pregnancy safety without miracle-food promises.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-heavy-periods-iron-anemia.html",
+    "title": "Endometriosis, Heavy Periods, Iron and Anemia",
+    "h1": "Endometriosis, Heavy Periods, Iron and Anemia",
+    "meta": "Recognize blood-loss risk, understand ferritin and CBC testing, and use food without treating ongoing bleeding as a nutrition problem.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-nutrition-guides.html",
+    "title": "Endometriosis Nutrition Guides",
+    "h1": "Endometriosis Nutrition Guides",
+    "meta": "Evidence-aware guides to food, bowel symptoms, iron, fertility, supplements and painful flares without cure claims.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-nutrition-myth-game.html",
+    "title": "Endometriosis Nutrition Myth Game",
+    "h1": "Endometriosis Nutrition Myth Game",
+    "meta": "Test eight endometriosis diet, diagnosis, supplement, iron and urgent-care claims with clear explanations.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-pain-flare-nausea-low-appetite-foods.html",
+    "title": "Endometriosis Pain Flares, Nausea and Low Appetite",
+    "h1": "Endometriosis Pain Flares, Nausea and Low Appetite",
+    "meta": "Flexible food strategies for painful days that protect hydration and nourishment without presenting food as pain treatment.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-supplements-estrogen-detox-myths.html",
+    "title": "Endometriosis Supplements and Estrogen Detox Myths",
+    "h1": "Endometriosis Supplements and Estrogen Detox Myths",
+    "meta": "Evaluate DIM, NAC, curcumin, omega-3 and hormone-detox marketing without confusing biological plausibility with clinical proof.",
+    "indexable": true
+  },
+  {
+    "path": "endometriosis-visit-question-builder.html",
+    "title": "Endometriosis Visit Question Builder",
+    "h1": "Endometriosis Visit Question Builder",
+    "meta": "Privately organize symptom, imaging, treatment, fertility, bowel and nutrition questions for an endometriosis visit.",
+    "indexable": true
+  },
+  {
+    "path": "energy-systems-explained.html",
+    "title": "The Three Energy Systems Explained",
+    "h1": "The three energy systems",
+    "meta": "The phosphagen, glycolytic and oxidative systems — their fuel, duration, power output, and how they overlap during exercise.",
+    "indexable": true
+  },
+  {
+    "path": "enzyme-kinetics-explained.html",
+    "title": "Enzyme Kinetics: Km, Vmax and Michaelis-Menten",
+    "h1": "Enzyme kinetics: Km, Vmax and Michaelis-Menten",
+    "meta": "What Km and Vmax actually mean, how to read a Michaelis-Menten curve and a Lineweaver-Burk plot, and how inhibitors shift them.",
+    "indexable": true
+  },
+  {
+    "path": "enzymes-explained.html",
+    "title": "Enzymes: Function, Cofactors and Inhibition",
+    "h1": "Enzymes: function, cofactors and inhibition",
+    "meta": "How enzymes lower activation energy, the induced-fit model, what cofactors and coenzymes do, and how competitive and non-competitive inhibition differ.",
+    "indexable": true
+  },
+  {
+    "path": "es/index.html",
+    "title": "GetMacros — Nutrición que encaja en la vida real | GetMacros.net",
+    "h1": "Come con más claridad. Vive con menos cálculos.",
+    "meta": "Herramientas prácticas de nutrición, guías de macros, opciones saludables de comida rápida y explicaciones claras para decisiones reales.",
+    "indexable": true
+  },
+  {
+    "path": "everyday-nutrition-guides.html",
+    "title": "Everyday Nutrition Guides",
+    "h1": "Everyday nutrition, built for real life",
+    "meta": "Practical, sourced guides for affordable meals, flexible macro balance, fiber, cooking fats, sports recovery, family meals, and grocery planning.",
+    "indexable": true
+  },
+  {
+    "path": "exercise-physiology-quiz.html",
+    "title": "Exercise Physiology Quiz: Energy and Fuel",
+    "h1": "Exercise physiology revision quiz",
+    "meta": "A 10-question revision quiz on energy systems, fuel use, lactate, VO2 max concepts, and training adaptations.",
+    "indexable": true
+  },
+  {
+    "path": "extended-fasting-and-omad.html",
+    "title": "Extended Fasting and OMAD: What the Evidence Says",
+    "h1": "Extended fasting and OMAD explained",
+    "meta": "How extended fasts and one-meal-a-day eating differ from standard intermittent fasting, what the research supports, and the real risks.",
+    "indexable": true
+  },
+  {
+    "path": "family-meal-planning.html",
+    "title": "Family meal planning without making separate dinners",
+    "h1": "Family meal planning without making separate dinners",
+    "meta": "Build flexible family meals with mix-and-match components so different ages, appetites, cultures, and preferences can share the table.",
+    "indexable": true
+  },
+  {
+    "path": "famous-athlete-diets-fact-checked.html",
+    "title": "6 Famous Athlete Diets, Fact-Checked",
+    "h1": "6 famous athlete diets, fact-checked",
+    "meta": "What elite athletes actually eat, which viral diet claims hold up to scrutiny, and what the research says about copying their approach.",
+    "indexable": true
+  },
+  {
+    "path": "fasted-cardio-fat-loss.html",
+    "title": "Does Fasted Cardio Actually Burn More Fat?",
+    "h1": "Does fasted cardio actually burn more fat?",
+    "meta": "What controlled research finds comparing fasted and fed cardio for fat loss, and why acute fat-burning differences do not mean better long-term results.",
+    "indexable": true
+  },
+  {
+    "path": "fat-quiz.html",
+    "title": "Fat Quiz: Test Your Knowledge",
+    "h1": "How much do you really know about dietary fat?",
+    "meta": "An 8-question quiz testing what you know about dietary fat, hormones, and essential fatty acids.",
+    "indexable": true
+  },
+  {
+    "path": "fat-soluble-vitamins-explained.html",
+    "title": "Fat-Soluble Vitamins: A, D, E and K",
+    "h1": "Fat-soluble vitamins: A, D, E and K",
+    "meta": "How vitamins A, D, E, and K differ from water-soluble vitamins, why they need dietary fat to absorb, and why upper limits matter more for them.",
+    "indexable": true
+  },
+  {
+    "path": "fats.html",
+    "title": "Dietary Fat: Hormones, Vitamins & Deficiency",
+    "h1": "Fat: Hormones, Vitamins & Cell Structure",
+    "meta": "What dietary fat does for hormones, cell membranes, and vitamin absorption, how much you need, and the signs of getting too little — with cited sources.",
+    "indexable": true
+  },
+  {
+    "path": "fermented-foods-prebiotics-probiotics.html",
+    "title": "Fermented Foods, Prebiotics, and Probiotics Are Not the Same",
+    "h1": "Fermented Foods, Prebiotics, and Probiotics Are Not the Same",
+    "meta": "Separate fermented foods, live cultures, probiotic strains, prebiotic substrates, and marketing claims before choosing a food or supplement.",
+    "indexable": true
+  },
+  {
+    "path": "fiber-and-gut-microbiome.html",
+    "title": "Fiber and Your Gut Microbiome Explained",
+    "h1": "Fiber and your gut microbiome",
+    "meta": "How gut bacteria ferment dietary fiber into short-chain fatty acids, why that matters for health, and which foods feed your microbiome best.",
+    "indexable": true
+  },
+  {
+    "path": "fiber-benefits.html",
+    "title": "Why Fiber Matters: High-Fiber Diet Benefits",
+    "h1": "Why fiber matters: benefits of a high-fiber diet",
+    "meta": "The health benefits of dietary fiber, the difference between soluble and insoluble fiber, and how much you actually need per day.",
+    "indexable": true
+  },
+  {
+    "path": "fiber-without-the-hype.html",
+    "title": "Fiber without the hype: how to add more comfortably",
+    "h1": "Fiber without the hype: how to add more comfortably",
+    "meta": "Learn how much fiber adults generally need, what foods count, and how to increase it without making digestion miserable.",
+    "indexable": true
+  },
+  {
+    "path": "fish-mercury-pregnancy-breastfeeding.html",
+    "title": "Fish, Mercury, Pregnancy and Breastfeeding",
+    "h1": "Fish, Mercury, Pregnancy and Breastfeeding",
+    "meta": "How to use FDA and EPA fish categories, identify tuna types, understand serving guidance and balance omega-3 benefits with mercury risk.",
+    "indexable": true
+  },
+  {
+    "path": "folate-vs-folic-acid.html",
+    "title": "Folate vs. folic acid: forms, food sources",
+    "h1": "Folate vs. folic acid: forms, food sources, and pregnancy context",
+    "meta": "Learn the difference between food folate and folic acid, what they do, and why pregnancy guidance deserves special attention.",
+    "indexable": true
+  },
+  {
+    "path": "food-allergy-label-safety-guides.html",
+    "title": "Food Allergy and Label Safety Guides",
+    "h1": "Food allergy and label safety",
+    "meta": "Learn U.S. allergen labels, cross-contact, milk allergy versus lactose intolerance, gluten-free claims, restaurant communication, and school planning.",
+    "indexable": true
+  },
+  {
+    "path": "food-date-labels-safety-quality.html",
+    "title": "Food Date Labels: Safety, Quality, Sell-By, Use-By",
+    "h1": "Food Date Labels: Safety, Quality, Sell-By, Use-By, and Best-By",
+    "meta": "Understand U.S. date-label phrases, the infant-formula exception, storage history, spoilage, and how to reduce waste without taking unsafe risks.",
+    "indexable": true
+  },
+  {
+    "path": "food-labels-serving-size-traps.html",
+    "title": "Nutrition Label Traps: Serving Sizes Explained",
+    "h1": "Nutrition label traps: serving sizes explained",
+    "meta": "How serving sizes, rounding rules, and per-100g versus per-serving figures make packaged food look better than it is.",
+    "indexable": true
+  },
+  {
+    "path": "food-literacy-guides.html",
+    "title": "Food Literacy Guides: Labels, Storage, Travel and More",
+    "h1": "Food literacy guides",
+    "meta": "Practical guides to food labels, fresh and frozen foods, leftovers, meal prep, restaurant information, travel nutrition, and shift-work eating.",
+    "indexable": true
+  },
+  {
+    "path": "food-measurement-guides.html",
+    "title": "Food Measurement and Meal Math Guides",
+    "h1": "Food measurement and meal math",
+    "meta": "Understand serving sizes, raw and cooked weights, label rounding, recipe nutrition, cooking oils, and food database entries with practical examples.",
+    "indexable": true
+  },
+  {
+    "path": "food-safety-for-older-adults.html",
+    "title": "Food safety for older adults",
+    "h1": "Food safety for older adults: choices, temperatures, and leftovers",
+    "meta": "Learn why foodborne illness can be more serious after 65 and use practical USDA steps for shopping, cooking, chilling, and safer food choices.",
+    "indexable": true
+  },
+  {
+    "path": "food-safety-storage-guides.html",
+    "title": "Food Safety and Storage Guides",
+    "h1": "Food safety and storage",
+    "meta": "Practical USDA and FDA-backed guides to refrigeration, freezing, thawing, cooking temperatures, leftovers, date labels and higher-risk groups.",
+    "indexable": true
+  },
+  {
+    "path": "food-storage-decision-helper.html",
+    "title": "Food Storage Decision Helper | Time and Temperature Rules",
+    "h1": "Food storage decision helper",
+    "meta": "Choose a leftover, counter-time, thawing, or power-outage scenario and apply the relevant USDA or FDA food-safety time-and-temperature rule.",
+    "indexable": true
+  },
+  {
+    "path": "fr/index.html",
+    "title": "GetMacros — La nutrition adaptée à la vraie vie | GetMacros.net",
+    "h1": "Mangez plus clairement. Vivez avec moins de calculs.",
+    "meta": "Des outils de nutrition pratiques, des guides de macros, des choix de restauration rapide plus sains et des explications claires pour de vraies décisions.",
+    "indexable": true
+  },
+  {
+    "path": "freezer-meals-balanced-nutrition.html",
+    "title": "Freezer meals: balanced nutrition for low-energy days",
+    "h1": "Freezer meals: balanced nutrition for low-energy days",
+    "meta": "Stock a freezer with complete meals and modular components that reduce waste and make eating easier during busy or difficult weeks.",
+    "indexable": true
+  },
+  {
+    "path": "freezer-safety-and-refreezing.html",
+    "title": "Freezer Safety and Refreezing",
+    "h1": "Freezer Safety and Refreezing: What Is Safe and What Is Quality",
+    "meta": "Understand 0°F storage, freezer quality limits, ice crystals, safe refreezing, freezer burn, packaging, and thawing history.",
+    "indexable": true
+  },
+  {
+    "path": "fresh-vs-frozen-vs-canned.html",
+    "title": "Fresh vs. frozen vs. canned: which is healthier?",
+    "h1": "Fresh vs. frozen vs. canned: which is healthier?",
+    "meta": "Compare fresh, frozen, and canned foods by nutrients, sodium, added sugar, cost, convenience, and waste instead of assuming fresh is always best.",
+    "indexable": true
+  },
+  {
+    "path": "front-of-package-food-claims.html",
+    "title": "Front-of-package food claims",
+    "h1": "Front-of-package food claims: what “natural,” “high protein,” and “light” mean",
+    "meta": "Decode common package claims without letting marketing replace the Nutrition Facts, ingredient list, serving size, or the role of the food.",
+    "indexable": true
+  },
+  {
+    "path": "glossary.html",
+    "title": "Nutrition Glossary: A-Z Terms for Students | GetMacros.net",
+    "h1": "Nutrition glossary",
+    "meta": "An A-Z glossary of macronutrient and nutrition science terms — amino acids, glycogen, AMDR, ketosis, TDEE, and more — built for nutrition students.",
+    "indexable": true
+  },
+  {
+    "path": "gluten-free-labels-celiac-disease.html",
+    "title": "Gluten-free labels and celiac disease",
+    "h1": "Gluten-free labels and celiac disease: what the FDA claim means",
+    "meta": "What gluten-free means on U.S. labels, which grains contain gluten, why wheat-free is different, and how cross-contact complicates restaurant choices.",
+    "indexable": true
+  },
+  {
+    "path": "glycemic-index-explained.html",
+    "title": "What Is the Glycemic Index and Does It Matter?",
+    "h1": "What is the glycemic index, and does it matter?",
+    "meta": "How the glycemic index measures a food's effect on blood sugar, what raises or lowers it, and how to use it practically.",
+    "indexable": true
+  },
+  {
+    "path": "glycolysis-explained.html",
+    "title": "Glycolysis Explained: Steps, ATP Yield, Control",
+    "h1": "Glycolysis explained: steps, ATP yield and control",
+    "meta": "A revision walkthrough of glycolysis — the investment and payoff phases, net ATP and NADH yield, regulation, and what happens to pyruvate.",
+    "indexable": true
+  },
+  {
+    "path": "grocery-list-for-balanced-meals.html",
+    "title": "A flexible grocery list for balanced meals",
+    "h1": "A flexible grocery list for balanced meals",
+    "meta": "Use a modular grocery list that turns a small set of foods into breakfasts, lunches, dinners, and backup meals.",
+    "indexable": true
+  },
+  {
+    "path": "gut-health-myth-game.html",
+    "title": "Gut Health Myth Game: Can You Spot the Hype?",
+    "h1": "Gut-health myth game",
+    "meta": "Challenge eight digestive-health myths about gas, detoxes, probiotics, stool tests, fibre, low FODMAP, diarrhea recovery, and urgent warning signs.",
+    "indexable": true
+  },
+  {
+    "path": "gut-microbiome-myths.html",
+    "title": "Gut Microbiome Myths: What Tests Cannot Tell You",
+    "h1": "Gut Microbiome Myths: What a Test, Detox, or Supplement Cannot Promise",
+    "meta": "Fact-check microbiome diversity scores, detoxes, stool tests, “bad bacteria,” personalized foods, and claims to repair a damaged gut.",
+    "indexable": true
+  },
+  {
+    "path": "hashimotos-diet-gluten-selenium-myths.html",
+    "title": "Hashimoto’s Diet: Gluten, Selenium and Common Myths",
+    "h1": "Hashimoto’s Diet: Gluten, Selenium and Common Myths",
+    "meta": "Separate celiac testing, selenium evidence and balanced nutrition from restrictive autoimmune-diet promises.",
+    "indexable": true
+  },
+  {
+    "path": "healthy-aging-nutrition-guides.html",
+    "title": "Healthy Aging Nutrition Guides for Older Adults and",
+    "h1": "Healthy-aging nutrition guides",
+    "meta": "Practical, source-backed guides to appetite, hydration, protein, B12, food safety, unintended weight loss, and swallowing barriers in older adults.",
+    "indexable": true
+  },
+  {
+    "path": "healthy-breakfasts-for-teens.html",
+    "title": "Healthy Breakfasts for Teens Who Are Short on Time",
+    "h1": "Healthy Breakfasts for Teens Who Are Short on Time",
+    "meta": "Fast breakfast formulas for teenagers who wake up late, commute early, train before school, or simply are not hungry first thing.",
+    "indexable": true
+  },
+  {
+    "path": "healthy-fast-food.html",
+    "title": "Healthy Fast Food: High-Protein & Lower-Calorie Orders | GetMacros",
+    "h1": "Healthy fast food for cutting, bulking and high protein",
+    "meta": "Compare 74 fast-food options across 15 chains by calories, protein, fibre and sodium. Find meals for cutting, bulking, high protein and vegetarian goals.",
+    "indexable": true
+  },
+  {
+    "path": "healthy-high-fat-foods.html",
+    "title": "15 Healthy High-Fat Foods to Add to Your Diet",
+    "h1": "15 healthy high-fat foods to add to your diet",
+    "meta": "A list of nutrient-dense high-fat foods — avocado, olive oil, fatty fish, nuts, and more — with approximate fat content per serving.",
+    "indexable": true
+  },
+  {
+    "path": "healthy-packed-lunch-ideas.html",
+    "title": "Packed lunches: a mix-and-match guide for work or school",
+    "h1": "Packed lunches: a mix-and-match guide for work or school",
+    "meta": "Build portable lunches with a protein food, carbohydrate base, produce, flavor, and safe temperature control.",
+    "indexable": true
+  },
+  {
+    "path": "heart-health-food-myth-game.html",
+    "title": "Heart-Health Food Myth Game",
+    "h1": "Heart-health food myth game",
+    "meta": "Test eight practical decisions about DASH, sodium, potassium, fats, fibre, triglycerides and urgent symptoms.",
+    "indexable": true
+  },
+  {
+    "path": "heart-health-nutrition-guides.html",
+    "title": "Heart-Health Nutrition Guides",
+    "h1": "Heart-health nutrition guides",
+    "meta": "Evidence-aware guides to DASH, blood pressure, sodium, potassium, fat quality, soluble fibre, cholesterol and triglycerides.",
+    "indexable": true
+  },
+  {
+    "path": "heavy-periods-blood-loss-iron-deficiency.html",
+    "title": "Heavy Periods, Blood Loss and Iron Deficiency",
+    "h1": "Heavy Periods, Blood Loss and Iron Deficiency",
+    "meta": "Recognize when menstrual or gastrointestinal blood loss needs assessment rather than food advice alone.",
+    "indexable": true
+  },
+  {
+    "path": "high-fiber-foods-list.html",
+    "title": "15 High-Fiber Foods to Add to Your Diet",
+    "h1": "15 high-fiber foods to add to your diet",
+    "meta": "A list of real high-fiber foods — legumes, whole grains, fruit, and vegetables — with approximate fiber content per serving, to help you hit your daily target.",
+    "indexable": true
+  },
+  {
+    "path": "high-protein-breakfast-ideas.html",
+    "title": "High-Protein Breakfast Ideas That Fill You Up",
+    "h1": "High-protein breakfast ideas that actually fill you up",
+    "meta": "Practical high-protein breakfast combinations and roughly how much protein each provides.",
+    "indexable": true
+  },
+  {
+    "path": "high-protein-foods-list.html",
+    "title": "25 High-Protein Foods (With Protein Per 100g)",
+    "h1": "25 high-protein foods and how much protein they contain",
+    "meta": "A reference list of high-protein animal and plant foods with approximate grams of protein per 100g, for building meals around your target.",
+    "indexable": true
+  },
+  {
+    "path": "high-protein-snacks-real-food.html",
+    "title": "High-protein snacks from ordinary food",
+    "h1": "High-protein snacks from ordinary food",
+    "meta": "Use yogurt, milk, soy foods, eggs, fish, legumes, nuts, seeds, and leftovers to build protein-containing snacks without relying on powders.",
+    "indexable": true
+  },
+  {
+    "path": "homeostasis-explained.html",
+    "title": "Homeostasis and Negative Feedback Explained",
+    "h1": "Homeostasis and negative feedback",
+    "meta": "How negative feedback loops keep internal conditions stable, the receptor-control centre-effector model, and how positive feedback differs.",
+    "indexable": true
+  },
+  {
+    "path": "hot-flashes-food-caffeine-alcohol-triggers.html",
+    "title": "Hot Flashes, Food, Caffeine and Alcohol",
+    "h1": "Hot Flashes, Food, Caffeine and Alcohol",
+    "meta": "How to investigate possible hot-flash triggers without unnecessary restriction or promises that food can cure vasomotor symptoms.",
+    "indexable": true
+  },
+  {
+    "path": "hot-weather-exercise-fueling.html",
+    "title": "Hot-weather exercise: hydration, sodium, and fueling",
+    "h1": "Hot-weather exercise: hydration, sodium, and fueling",
+    "meta": "Plan training in heat using acclimatization, fluid access, sweat loss, sodium context, and carbohydrate needs without promoting forced overdrinking.",
+    "indexable": true
+  },
+  {
+    "path": "how-digestion-works.html",
+    "title": "How Digestion Works: From Bite to Absorption",
+    "h1": "How digestion works: from bite to absorption",
+    "meta": "A step-by-step overview of how protein, fat, and carbohydrates are broken down and absorbed during digestion.",
+    "indexable": true
+  },
+  {
+    "path": "how-industry-funding-shapes-nutrition-research.html",
+    "title": "How Industry Funding Shaped Nutrition Advice",
+    "h1": "How industry funding shaped nutrition advice",
+    "meta": "How the sugar industry funded research in the 1960s to shift blame for heart disease onto dietary fat, documented from internal industry papers.",
+    "indexable": true
+  },
+  {
+    "path": "how-many-carbs-per-day.html",
+    "title": "How Many Carbs Should You Eat Per Day?",
+    "h1": "How many carbs should you eat per day?",
+    "meta": "The recommended daily carbohydrate range (45-65% of calories), what it looks like in grams, and when lower or higher intakes make sense.",
+    "indexable": true
+  },
+  {
+    "path": "how-much-fat-per-day.html",
+    "title": "How Much Fat Should You Eat Per Day?",
+    "h1": "How much fat should you eat per day?",
+    "meta": "The recommended daily fat intake range (20-35% of calories), what it looks like in grams at different calorie levels, and why the range exists.",
+    "indexable": true
+  },
+  {
+    "path": "how-much-protein-per-day.html",
+    "title": "How Much Protein Do You Need Per Day?",
+    "h1": "How much protein do you need per day?",
+    "meta": "How much protein you actually need per day for baseline health, general fitness, and muscle building, based on RDA and sports nutrition research.",
+    "indexable": true
+  },
+  {
+    "path": "how-much-water-should-you-drink-per-day.html",
+    "title": "How Much Water Should You Drink Per Day?",
+    "h1": "How much water should you actually drink per day?",
+    "meta": "Real daily water intake guidance from the National Academies, why \"8 glasses a day\" is a rough rule of thumb, and how activity changes it.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-build-a-balanced-meal.html",
+    "title": "How to Build a Balanced Meal (Simple Method)",
+    "h1": "How to build a balanced meal",
+    "meta": "A practical plate framework for putting together meals that hit protein, fiber, and calorie targets without weighing every ingredient.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-calculate-macros-by-hand.html",
+    "title": "How to Calculate Your Macros by Hand",
+    "h1": "How to calculate your macros by hand",
+    "meta": "A step-by-step walkthrough of the exact math behind a macro calculator — useful for nutrition students who need to show their work.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-calculate-recipe-nutrition.html",
+    "title": "How to calculate nutrition for a homemade recipe",
+    "h1": "How to calculate nutrition for a homemade recipe",
+    "meta": "Calculate calories and macros for a homemade recipe using ingredient totals, cooked yield, and portion weight without confusing raw and cooked entries.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-compare-grocery-unit-prices.html",
+    "title": "How to compare grocery unit prices without buying more than",
+    "h1": "How to compare grocery unit prices without buying more than you can use",
+    "meta": "Compare grocery prices by ounce, pound, gram, serving, and edible amount while accounting for waste, preparation, storage, and realistic household use.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-measure-sweat-rate.html",
+    "title": "How to Measure Your Sweat Rate",
+    "h1": "How to Measure Your Sweat Rate",
+    "meta": "A careful step-by-step sweat-rate test, the calculation, common errors, and why one workout cannot become a permanent hydration prescription.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-read-a-meta-analysis.html",
+    "title": "How to Read a Meta-Analysis Without Being Misled",
+    "h1": "How to read a meta-analysis",
+    "meta": "What a meta-analysis combines, how heterogeneity and publication bias undermine one, and how to judge whether 'a meta-analysis found' settles anything.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-read-a-nutrition-label.html",
+    "title": "How to Read a Nutrition Label (Macros Edition)",
+    "h1": "How to read a nutrition label (macros edition)",
+    "meta": "How to quickly find protein, fat, and carbohydrate info on a nutrition label, and the common mistakes people make reading serving sizes.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-read-a-nutrition-study.html",
+    "title": "How to Read a Nutrition Study",
+    "h1": "How to read a nutrition study",
+    "meta": "A practical guide for nutrition students on evaluating study design, sample size, and funding when reading nutrition research.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-read-food-allergen-labels.html",
+    "title": "How to read food-allergen labels in the United States",
+    "h1": "How to read food-allergen labels in the United States",
+    "meta": "Learn where major allergens appear on U.S. packaged-food labels, what a Contains statement does, why recipes change, and which products follow different rules.",
+    "indexable": true
+  },
+  {
+    "path": "how-to-track-your-macros.html",
+    "title": "How to Track Your Macros: A Beginner's Guide",
+    "h1": "How to track your macros: a beginner's guide",
+    "meta": "A practical walkthrough of tracking macros — setting targets, weighing versus estimating, handling recipes and eating out, and when to stop tracking.",
+    "indexable": true
+  },
+  {
+    "path": "hunger-fullness-and-satiety.html",
+    "title": "Hunger, fullness, and satiety: what each signal means",
+    "h1": "Hunger, fullness, and satiety: what each signal means",
+    "meta": "Understand the difference between hunger, fullness, appetite, and satiety—and why sleep, stress, food composition, and routine affect them.",
+    "indexable": true
+  },
+  {
+    "path": "hydration-and-performance.html",
+    "title": "Dehydration and Performance: What Matters",
+    "h1": "Dehydration and performance: what matters",
+    "meta": "How much fluid loss actually impairs performance, how to estimate your sweat rate, and why drinking to thirst works for most people.",
+    "indexable": true
+  },
+  {
+    "path": "hydration-electrolyte-guides.html",
+    "title": "Hydration and Electrolyte Guides",
+    "h1": "Hydration and electrolytes",
+    "meta": "Practical, source-backed guides to daily hydration, sweat rate, hot-weather safety, electrolytes, sports drinks, urine color, caffeine, and overhydration.",
+    "indexable": true
+  },
+  {
+    "path": "hydration-for-older-adults.html",
+    "title": "Hydration for older adults",
+    "h1": "Hydration for older adults: routines, cues, and medical exceptions",
+    "meta": "Build practical hydration routines for older adults while recognizing thirst changes, medication effects, heat, illness, and fluid-restriction exceptions.",
+    "indexable": true
+  },
+  {
+    "path": "hydration-in-hot-weather.html",
+    "title": "Hydration in Hot Weather: A Practical Safety Plan",
+    "h1": "Hydration in Hot Weather: A Practical Safety Plan",
+    "meta": "Build a hot-weather hydration plan around timing, cooling, acclimatization, symptoms, and realistic drink access—not water alone.",
+    "indexable": true
+  },
+  {
+    "path": "hydration-needs-not-eight-glasses.html",
+    "title": "Hydration is personal—not an eight-glass rule",
+    "h1": "Hydration is personal—not an eight-glass rule",
+    "meta": "Understand total water intake, thirst, exercise, heat, and why hydration needs change from day to day.",
+    "indexable": true
+  },
+  {
+    "path": "hydration-scenario-game.html",
+    "title": "Hydration Scenario Game: Water or Electrolytes?",
+    "h1": "Hydration scenario game",
+    "meta": "Practice eight hydration decisions about short workouts, long hot sessions, sweat rate, caffeine, urine color, overdrinking, and heat emergencies.",
+    "indexable": true
+  },
+  {
+    "path": "hyperthyroidism-nutrition-weight-bone-health.html",
+    "title": "Hyperthyroidism Nutrition, Weight and Bone Health",
+    "h1": "Hyperthyroidism Nutrition, Weight and Bone Health",
+    "meta": "Support adequate energy, protein and bone nutrients while antithyroid treatment addresses excess hormone.",
+    "indexable": true
+  },
+  {
+    "path": "hypoglycemia-food-treatment-safety.html",
+    "title": "Hypoglycemia: Food Treatment and Safety",
+    "h1": "Hypoglycemia: Food Treatment and Safety",
+    "meta": "Recognize low blood glucose, understand fast-acting carbohydrate and know when another person needs emergency help.",
+    "indexable": true
+  },
+  {
+    "path": "hypothyroidism-food-nutrition-basics.html",
+    "title": "Hypothyroidism Food and Nutrition Basics",
+    "h1": "Hypothyroidism Food and Nutrition Basics",
+    "meta": "What food can support, what it cannot treat, and why thyroid tests and prescribed hormone remain central.",
+    "indexable": true
+  },
+  {
+    "path": "iifym-flexible-dieting.html",
+    "title": "IIFYM: What Is Flexible Dieting?",
+    "h1": "IIFYM: what is flexible dieting, and does it work?",
+    "meta": "What 'If It Fits Your Macros' (IIFYM) means, its real pros and cons, and a practical middle-ground approach.",
+    "indexable": true
+  },
+  {
+    "path": "index.html",
+    "title": "Healthy Fast Food & Macro Calculator | GetMacros",
+    "h1": "Healthy fast food that fits your macros",
+    "meta": "Find healthy fast-food options across 15 chains by calories, protein, fibre and sodium, then calculate daily macro targets with transparent tools.",
+    "indexable": true
+  },
+  {
+    "path": "ingredient-list-order.html",
+    "title": "How ingredient lists work—and what they cannot tell you",
+    "h1": "How ingredient lists work—and what they cannot tell you",
+    "meta": "Why ingredients appear by weight, how compound ingredients and multiple sugars complicate reading, and why the list is only one part of the label.",
+    "indexable": true
+  },
+  {
+    "path": "insulin-and-glucagon.html",
+    "title": "Insulin and Glucagon: Blood Glucose Control",
+    "h1": "Insulin and glucagon: blood glucose control",
+    "meta": "How insulin and glucagon act as opposing hormones to keep blood glucose stable, their target tissues, and what goes wrong in diabetes.",
+    "indexable": true
+  },
+  {
+    "path": "intermittent-fasting-and-macros.html",
+    "title": "Intermittent Fasting and Your Macros",
+    "h1": "Intermittent fasting and macros: does timing matter?",
+    "meta": "How intermittent fasting interacts with your macro targets, and whether meal timing itself changes results independent of what you eat.",
+    "indexable": true
+  },
+  {
+    "path": "intuitive-eating-explained.html",
+    "title": "Intuitive Eating Explained",
+    "h1": "Intuitive eating explained: is it right for you?",
+    "meta": "What intuitive eating actually means as a structured approach, how it differs from just \"not tracking,\" and who it tends to work well for.",
+    "indexable": true
+  },
+  {
+    "path": "iodine-thyroid-and-food-sources.html",
+    "title": "Iodine: thyroid function, iodized salt, and food sources",
+    "h1": "Iodine: thyroid function, iodized salt, and food sources",
+    "meta": "Understand iodine’s role in thyroid hormone production, where it appears in food, and why both too little and too much can cause problems.",
+    "indexable": true
+  },
+  {
+    "path": "iron-absorption-vitamin-c-tea-calcium.html",
+    "title": "Iron Absorption: Vitamin C, Tea and Calcium",
+    "h1": "Iron Absorption: Vitamin C, Tea and Calcium",
+    "meta": "Use meal timing and food pairing to support iron absorption without turning every meal into a chemistry experiment.",
+    "indexable": true
+  },
+  {
+    "path": "iron-anemia-nutrition-guides.html",
+    "title": "Iron and Anemia Nutrition Guides",
+    "h1": "Iron and anemia nutrition guides",
+    "meta": "Evidence-aware guides to iron tests, foods, absorption, supplements, blood loss and iron overload.",
+    "indexable": true
+  },
+  {
+    "path": "iron-anemia-safety-game.html",
+    "title": "Iron and Anemia Safety Game",
+    "h1": "Iron and anemia safety game",
+    "meta": "Practice eight decisions about ferritin, food, supplements, bleeding, overdose and iron overload.",
+    "indexable": true
+  },
+  {
+    "path": "iron-deficiency-and-athletes.html",
+    "title": "Iron Deficiency in Athletes: Signs and Fixes",
+    "h1": "Iron deficiency in athletes: signs and fixes",
+    "meta": "Why endurance athletes and menstruating women are at higher risk of low iron, what the symptoms look like, and how heme and non-heme iron differ.",
+    "indexable": true
+  },
+  {
+    "path": "iron-deficiency-anemia-tests-ferritin-guide.html",
+    "title": "Iron-Deficiency Anemia Tests and Ferritin Guide",
+    "h1": "Iron-Deficiency Anemia Tests and Ferritin Guide",
+    "meta": "Understand CBC, hemoglobin, MCV, ferritin and transferrin tests without diagnosing deficiency from one number.",
+    "indexable": true
+  },
+  {
+    "path": "iron-for-teenagers.html",
+    "title": "Iron for Teenagers: Food Sources and Absorption",
+    "h1": "Iron for Teenagers: Food Sources, Absorption, and When to Test",
+    "meta": "Understand why teenage iron needs differ, how to combine plant and animal sources, what symptoms can mean, and why supplements require care.",
+    "indexable": true
+  },
+  {
+    "path": "iron-label-and-test-question-builder.html",
+    "title": "Iron Label and Test Question Builder",
+    "h1": "Iron label and test question builder",
+    "meta": "Organize supplement labels, ferritin questions and bleeding context for a clinician without diagnosing iron deficiency.",
+    "indexable": true
+  },
+  {
+    "path": "iron-overload-hemochromatosis-food-supplements.html",
+    "title": "Iron Overload and Hemochromatosis: Food and Supplements",
+    "h1": "Iron Overload and Hemochromatosis: Food and Supplements",
+    "meta": "Why high ferritin is not automatically dietary iron excess and how hemochromatosis care differs from deficiency treatment.",
+    "indexable": true
+  },
+  {
+    "path": "iron-rich-foods-heme-nonheme-guide.html",
+    "title": "Iron-Rich Foods: Heme and Nonheme Sources",
+    "h1": "Iron-Rich Foods: Heme and Nonheme Sources",
+    "meta": "Build iron-containing meals from meat, seafood, beans, tofu, fortified grains and vegetables without relying on one superfood.",
+    "indexable": true
+  },
+  {
+    "path": "iron-supplements-elemental-iron-safety.html",
+    "title": "Iron Supplements: Elemental Iron and Safety",
+    "h1": "Iron Supplements: Elemental Iron and Safety",
+    "meta": "Read elemental iron, understand common side effects, avoid stacking and know why diagnosis must come before treatment.",
+    "indexable": true
+  },
+  {
+    "path": "jersey-mikes-healthy-subs-macros.html",
+    "title": "Healthy Jersey Mike's Subs: Calories & Protein | GetMacros",
+    "h1": "Healthy Jersey Mike's subs and macros",
+    "meta": "Compare Jersey Mike’s options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "keto-flu-explained.html",
+    "title": "Keto Flu: Why It Happens and How to Fix It",
+    "h1": "Keto flu explained: why it happens and how to fix it",
+    "meta": "What causes \"keto flu\" symptoms in the first days of a ketogenic diet, why electrolytes are the main culprit, and how to actually fix it.",
+    "indexable": true
+  },
+  {
+    "path": "ketogenic-diet-explained.html",
+    "title": "Keto Diet Explained: Macros, Benefits and Risks",
+    "h1": "The ketogenic diet explained: macros, benefits, and risks",
+    "meta": "How the ketogenic diet's macro split works, what ketosis actually is, and who should be cautious about trying it.",
+    "indexable": true
+  },
+  {
+    "path": "kfc-healthy-meals-macros.html",
+    "title": "Healthy KFC Options: Calories & Protein | GetMacros",
+    "h1": "Healthy KFC options and macros",
+    "meta": "Compare KFC options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "kidney-function-explained.html",
+    "title": "Kidney Function: The Nephron Explained",
+    "h1": "Kidney function: the nephron explained",
+    "meta": "Filtration, reabsorption and secretion in the nephron, how ADH and aldosterone regulate water and sodium, and how urine is concentrated.",
+    "indexable": true
+  },
+  {
+    "path": "kidney-health-nutrition-guides.html",
+    "title": "Kidney-Health Nutrition Guides",
+    "h1": "Kidney-health nutrition guides",
+    "meta": "Evidence-aware CKD, dialysis and kidney-stone nutrition guides with stage-specific safety boundaries.",
+    "indexable": true
+  },
+  {
+    "path": "kidney-nutrition-safety-game.html",
+    "title": "Kidney Nutrition Safety Game",
+    "h1": "Kidney nutrition safety game",
+    "meta": "Practice eight CKD, dialysis, stone, potassium, phosphorus, fluid and medication decisions.",
+    "indexable": true
+  },
+  {
+    "path": "kidney-stone-food-fluid-guide.html",
+    "title": "Kidney Stone Food and Fluid Guide",
+    "h1": "Kidney Stone Food and Fluid Guide",
+    "meta": "Why stone type matters and how fluids, sodium, calcium, oxalate and animal protein fit prevention planning.",
+    "indexable": true
+  },
+  {
+    "path": "kitchen-food-safety-game.html",
+    "title": "Kitchen Food Safety Game | Storage, Thawing and Temperatures",
+    "h1": "Kitchen food-safety game",
+    "meta": "Solve eight kitchen food-safety scenarios about refrigerator storage, leftovers, thawing, thermometer use, date labels, cross-contamination, and power outages.",
+    "indexable": true
+  },
+  {
+    "path": "krebs-cycle-explained.html",
+    "title": "Krebs Cycle Explained: Steps and ATP Yield",
+    "h1": "The Krebs cycle explained",
+    "meta": "A revision guide to the citric acid cycle — the eight steps, per-turn yields of NADH, FADH2 and GTP, regulation, and where it sits in respiration.",
+    "indexable": true
+  },
+  {
+    "path": "leftover-safety-two-hour-four-day-rule.html",
+    "title": "Leftover Safety: The Two-Hour and Four-Day Rules Explained",
+    "h1": "Leftover Safety: The Two-Hour and Four-Day Rules Explained",
+    "meta": "Learn when to refrigerate, how to cool large portions, why most leftovers get three to four refrigerated days, and how to reheat safely.",
+    "indexable": true
+  },
+  {
+    "path": "leftovers-food-safety-and-nutrition.html",
+    "title": "Leftovers: food safety, storage, reheating, and nutrition",
+    "h1": "Leftovers: food safety, storage, reheating, and nutrition",
+    "meta": "Use leftovers safely by cooling promptly, storing at safe temperatures, reheating appropriately, and knowing when uncertainty means throwing food away.",
+    "indexable": true
+  },
+  {
+    "path": "levothyroxine-food-coffee-calcium-iron-timing.html",
+    "title": "Levothyroxine Timing: Food, Coffee, Calcium and Iron",
+    "h1": "Levothyroxine Timing: Food, Coffee, Calcium and Iron",
+    "meta": "Build a consistent thyroid-medication routine and identify common absorption interactions without changing the prescribed dose.",
+    "indexable": true
+  },
+  {
+    "path": "liver-detox-myth-safety-game.html",
+    "title": "Liver Detox Myth and Safety Game",
+    "h1": "Liver detox myth and safety game",
+    "meta": "Practice eight decisions about MASLD, liver tests, alcohol withdrawal, cirrhosis, supplements and emergencies.",
+    "indexable": true
+  },
+  {
+    "path": "liver-detox-supplements-herbal-injury.html",
+    "title": "Liver Detox Supplements and Herbal Injury",
+    "h1": "Liver Detox Supplements and Herbal Injury",
+    "meta": "Why detox products cannot cleanse the liver and how herbs, bodybuilding aids and weight-loss supplements can cause injury.",
+    "indexable": true
+  },
+  {
+    "path": "liver-enzymes-food-and-test-context.html",
+    "title": "Liver Enzymes, Food and Test Context",
+    "h1": "Liver Enzymes, Food and Test Context",
+    "meta": "What ALT, AST and other liver tests can and cannot show—and why no food can normalize a diagnosis overnight.",
+    "indexable": true
+  },
+  {
+    "path": "liver-health-nutrition-guides.html",
+    "title": "Liver-Health Nutrition Guides",
+    "h1": "Liver-health nutrition guides",
+    "meta": "Evidence-aware guides to MASLD, liver tests, alcohol-associated disease, cirrhosis nutrition, ascites and supplement injury.",
+    "indexable": true
+  },
+  {
+    "path": "liver-health-visit-question-builder.html",
+    "title": "Liver-Health Visit Question Builder",
+    "h1": "Liver-health visit question builder",
+    "meta": "Create a private question list about liver tests, medicines, supplements, alcohol and nutrition without diagnosing disease.",
+    "indexable": true
+  },
+  {
+    "path": "low-carb-diet-effects.html",
+    "title": "What Happens to Your Body on a Low-Carb Diet",
+    "h1": "What happens to your body on a low-carb diet",
+    "meta": "The physiological changes that happen when carbohydrate intake drops sharply, including glycogen depletion, ketosis, and 'keto flu' symptoms.",
+    "indexable": true
+  },
+  {
+    "path": "low-fat-diet-risks.html",
+    "title": "The Hidden Risks of Very Low-Fat Diets",
+    "h1": "The hidden risks of very low-fat diets",
+    "meta": "What can go wrong when fat intake drops too low for too long — hormone production, vitamin absorption, and diet adherence.",
+    "indexable": true
+  },
+  {
+    "path": "low-fodmap-diet-three-steps.html",
+    "title": "The Low-FODMAP Diet: Three Steps, Not a Forever Restriction",
+    "h1": "The Low-FODMAP Diet: Three Steps, Not a Forever Restriction",
+    "meta": "Understand the short substitution phase, structured reintroduction, personalization, and why IBS assessment and dietitian guidance matter.",
+    "indexable": true
+  },
+  {
+    "path": "macro-master-quiz.html",
+    "title": "Macro Master Quiz: The Hardest One",
+    "h1": "The Macro Master Quiz",
+    "meta": "A 10-question mixed quiz covering protein, fat, carbs, and calculator concepts — for people who've read most of the site.",
+    "indexable": true
+  },
+  {
+    "path": "macro-memory-game.html",
+    "title": "Macro Memory Match",
+    "h1": "Macro Memory Match",
+    "meta": "A memory match game — flip cards to pair foods and learn which macronutrient each one is dominant in.",
+    "indexable": true
+  },
+  {
+    "path": "macro-sprint-game.html",
+    "title": "Macro Sprint",
+    "h1": "Macro Sprint",
+    "meta": "A fast-paced sorting game — see a food and click its dominant macronutrient before your lives run out.",
+    "indexable": true
+  },
+  {
+    "path": "macros-for-endurance-vs-strength-athletes.html",
+    "title": "Macros: Endurance vs. Strength Athletes",
+    "h1": "Macros for endurance athletes vs. strength athletes",
+    "meta": "How macro priorities differ between endurance athletes and strength athletes, and why one-size-fits-all macro advice doesn't work for both.",
+    "indexable": true
+  },
+  {
+    "path": "macros-for-muscle-gain.html",
+    "title": "How to Set Your Macros for Muscle Gain",
+    "h1": "How to set your macros for building muscle",
+    "meta": "A practical framework for setting protein, fat, and carb targets to build muscle while minimizing unnecessary fat gain.",
+    "indexable": true
+  },
+  {
+    "path": "macros-for-vegetarians.html",
+    "title": "Macros for Vegetarians: Hit Your Targets",
+    "h1": "Macros for vegetarians: hitting your targets without meat",
+    "meta": "How to hit protein, fat, and carb targets on a vegetarian diet — complete protein combining, common gaps, and the best vegetarian protein sources.",
+    "indexable": true
+  },
+  {
+    "path": "macros-for-weight-loss.html",
+    "title": "How to Set Your Macros for Fat Loss",
+    "h1": "How to set your macros for fat loss",
+    "meta": "A practical framework for setting protein, fat, and carb targets during a fat-loss phase, including why protein should go up, not down.",
+    "indexable": true
+  },
+  {
+    "path": "macros-without-tracking.html",
+    "title": "How to balance macros without tracking every gram",
+    "h1": "How to balance macros without tracking every gram",
+    "meta": "Use a repeatable plate pattern to balance protein, carbohydrates, and fats without weighing food or logging every bite.",
+    "indexable": true
+  },
+  {
+    "path": "magnesium-explained.html",
+    "title": "Magnesium: What It Does and Where to Get It",
+    "h1": "Magnesium: what it does and where to get it",
+    "meta": "What magnesium does in the body, how much you need per day, the best food sources, and whether supplementing actually helps most people.",
+    "indexable": true
+  },
+  {
+    "path": "manganese-foods-functions-safety.html",
+    "title": "Manganese: food sources, body functions",
+    "h1": "Manganese: food sources, body functions, and supplement safety",
+    "meta": "Learn how manganese supports metabolism and bone formation, which foods provide it, why deficiency is rare, and how excess exposure can harm the nervous system.",
+    "indexable": true
+  },
+  {
+    "path": "masld-fatty-liver-food-pattern-guide.html",
+    "title": "MASLD and Fatty Liver: A Food-Pattern Guide",
+    "h1": "MASLD and Fatty Liver: A Food-Pattern Guide",
+    "meta": "A practical approach to metabolic fatty liver that focuses on overall patterns, cardiometabolic health and sustainable change.",
+    "indexable": true
+  },
+  {
+    "path": "mcdonalds-healthy-meals-macros.html",
+    "title": "Healthy McDonald's Options: Calories & Protein | GetMacros",
+    "h1": "Healthy McDonald's options and macros",
+    "meta": "Compare McDonald’s options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "meal-building-guides.html",
+    "title": "Meal-Building Guides: Breakfast, Lunch, Snacks and More",
+    "h1": "Meal-building guides",
+    "meta": "Build balanced breakfasts, snacks, lunches, vegetarian meals, dairy-free calcium choices, salads, and freezer meals with flexible formulas.",
+    "indexable": true
+  },
+  {
+    "path": "meal-frequency-and-metabolism.html",
+    "title": "Does Meal Frequency Affect Metabolism?",
+    "h1": "Does meal frequency matter for macros and metabolism?",
+    "meta": "Whether eating more or fewer meals per day changes metabolism or macro results, according to the research.",
+    "indexable": true
+  },
+  {
+    "path": "meal-math-challenge.html",
+    "title": "Meal Math Challenge: Nutrition Measurement Game",
+    "h1": "Meal Math Challenge",
+    "meta": "Practice serving-size math, recipe yield, raw versus cooked weights, label rounding, and database matching in an eight-question nutrition game.",
+    "indexable": true
+  },
+  {
+    "path": "meal-prep-food-storage-guide.html",
+    "title": "Meal-prep storage: plan portions without sacrificing food",
+    "h1": "Meal-prep storage: plan portions without sacrificing food safety",
+    "meta": "Design a meal-prep routine around cooling, refrigerator capacity, freezer use, texture, and realistic eating schedules.",
+    "indexable": true
+  },
+  {
+    "path": "meal-prep-for-macros.html",
+    "title": "Meal Prep for Macros: A Practical System",
+    "h1": "Meal prep for macros: a practical system",
+    "meta": "How to batch-cook around macro targets, which foods hold up over several days, and how to keep prepped meals from getting boring.",
+    "indexable": true
+  },
+  {
+    "path": "mediterranean-diet-explained.html",
+    "title": "Mediterranean Diet Explained: The Evidence",
+    "h1": "The Mediterranean diet explained",
+    "meta": "What the Mediterranean diet includes, why it's one of the most rigorously studied eating patterns, and what the landmark PREDIMED trial found.",
+    "indexable": true
+  },
+  {
+    "path": "menopause-calcium-vitamin-d-bone-health.html",
+    "title": "Menopause, Calcium, Vitamin D and Bone Health",
+    "h1": "Menopause, Calcium, Vitamin D and Bone Health",
+    "meta": "Food sources, supplement questions, screening context and why bone health requires more than a calcium pill.",
+    "indexable": true
+  },
+  {
+    "path": "menopause-nutrition-guides.html",
+    "title": "Menopause Nutrition Guides",
+    "h1": "Menopause nutrition guides",
+    "meta": "Evidence-aware guides to perimenopause and menopause nutrition, bone, muscle, symptoms, body composition and supplements.",
+    "indexable": true
+  },
+  {
+    "path": "menopause-nutrition-myth-game.html",
+    "title": "Menopause Nutrition Myth Game",
+    "h1": "Menopause nutrition myth game",
+    "meta": "Test eight practical menopause nutrition decisions about bone, muscle, hot flashes, body changes and supplements.",
+    "indexable": true
+  },
+  {
+    "path": "menopause-protein-strength-muscle-guide.html",
+    "title": "Protein, Strength and Muscle During Menopause",
+    "h1": "Protein, Strength and Muscle During Menopause",
+    "meta": "How regular protein foods and progressive resistance training support muscle in midlife without extreme targets or powders.",
+    "indexable": true
+  },
+  {
+    "path": "menopause-supplements-phytoestrogens-safety.html",
+    "title": "Menopause Supplements and Phytoestrogens: Safety First",
+    "h1": "Menopause Supplements and Phytoestrogens: Safety First",
+    "meta": "How to evaluate soy, isoflavones, black cohosh and hormone-balancing supplement claims without assuming natural means safe.",
+    "indexable": true
+  },
+  {
+    "path": "menopause-weight-body-composition-without-crash-diets.html",
+    "title": "Menopause Weight and Body Composition Without Crash Diets",
+    "h1": "Menopause Weight and Body Composition Without Crash Diets",
+    "meta": "A weight-neutral, muscle-aware approach to midlife changes in appetite, activity, sleep and body composition.",
+    "indexable": true
+  },
+  {
+    "path": "metabolic-damage-is-it-real.html",
+    "title": "Is \"Metabolic Damage\" From Dieting Real?",
+    "h1": "Is \"metabolic damage\" from dieting real?",
+    "meta": "What actually happens to metabolism during prolonged dieting, whether it can be permanently \"damaged,\" and what the research on adaptive thermogenesis shows.",
+    "indexable": true
+  },
+  {
+    "path": "metabolic-syndrome-explained.html",
+    "title": "Metabolic Syndrome: The Five Risk Factors",
+    "h1": "Metabolic syndrome: the five risk factors",
+    "meta": "What metabolic syndrome is, the five diagnostic criteria, and which dietary changes have the strongest evidence for reversing it.",
+    "indexable": true
+  },
+  {
+    "path": "micronutrient-finder.html",
+    "title": "Micronutrient Finder: Look Up Vitamins by Food",
+    "h1": "Micronutrient finder",
+    "meta": "Search vitamins and minerals by name, body function, or food source, then open evidence-aware guides with NIH references and supplement safety context.",
+    "indexable": true
+  },
+  {
+    "path": "micronutrient-guides.html",
+    "title": "Micronutrient Guides: Vitamins and Minerals",
+    "h1": "Micronutrient guides",
+    "meta": "Explore 25 sourced guides to vitamins and minerals, including food sources, body functions, intake references, interactions, and supplement safety.",
+    "indexable": true
+  },
+  {
+    "path": "micronutrients-vs-macronutrients.html",
+    "title": "Micronutrients vs. Macronutrients",
+    "h1": "Micronutrients vs. macronutrients: what's the difference",
+    "meta": "The difference between macronutrients (protein, fat, carbs) and micronutrients (vitamins, minerals), and why hitting macros is not the whole picture.",
+    "indexable": true
+  },
+  {
+    "path": "midlife-nutrition-visit-planner.html",
+    "title": "Midlife Nutrition Visit Planner",
+    "h1": "Midlife nutrition visit planner",
+    "meta": "Create a private appointment question list for menopause nutrition, symptoms, bone, muscle and supplements.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-caffeine-coffee-withdrawal-guide.html",
+    "title": "Migraine, Caffeine, Coffee and Withdrawal",
+    "h1": "Migraine, Caffeine, Coffee and Withdrawal",
+    "meta": "Understand why caffeine can relieve, trigger or perpetuate headaches and how to change intake gradually.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-diet-balanced-meals-guide.html",
+    "title": "Migraine Diet and Balanced Meals",
+    "h1": "Migraine Diet and Balanced Meals",
+    "meta": "Build regular, adequate meals without a universal trigger list, fear-based restriction or migraine-cure claims.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-food-trigger-diary-elimination-diets.html",
+    "title": "Migraine Food Triggers, Diaries and Elimination Diets",
+    "h1": "Migraine Food Triggers, Diaries and Elimination Diets",
+    "meta": "Test suspected food patterns one at a time without turning a headache diary into permanent restriction.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-hydration-electrolytes-guide.html",
+    "title": "Migraine Hydration and Electrolytes",
+    "h1": "Migraine Hydration and Electrolytes",
+    "meta": "Use thirst, routine and context to support hydration without forcing water or turning electrolytes into a migraine cure.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-magnesium-riboflavin-coq10-supplements.html",
+    "title": "Migraine Supplements: Magnesium, Riboflavin and CoQ10",
+    "h1": "Migraine Supplements: Magnesium, Riboflavin and CoQ10",
+    "meta": "Evaluate preventive supplement evidence, doses, side effects, interactions and product quality without calling natural risk-free.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-nausea-vomiting-flare-foods.html",
+    "title": "Migraine Nausea, Vomiting and Flare-Day Food",
+    "h1": "Migraine Nausea, Vomiting and Flare-Day Food",
+    "meta": "Protect fluids and nourishment during attacks while recognizing when vomiting or neurological symptoms need urgent care.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-nutrition-guides.html",
+    "title": "Migraine Nutrition Guides",
+    "h1": "Migraine Nutrition Guides",
+    "meta": "Evidence-aware guides to meals, triggers, caffeine, hydration, supplements and attack-day nourishment.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-pattern-diary.html",
+    "title": "Migraine Pattern Diary",
+    "h1": "Migraine Pattern Diary",
+    "meta": "Privately organize migraine timing, symptoms, meals, hydration, caffeine and treatment response for a visit.",
+    "indexable": true
+  },
+  {
+    "path": "migraine-trigger-myth-game.html",
+    "title": "Migraine Trigger Myth Game",
+    "h1": "Migraine Trigger Myth Game",
+    "meta": "Test eight migraine food, caffeine, hydration, supplement and emergency claims.",
+    "indexable": true
+  },
+  {
+    "path": "milk-allergy-vs-lactose-intolerance.html",
+    "title": "Milk allergy vs. lactose intolerance",
+    "h1": "Milk allergy vs. lactose intolerance: different causes, risks, and labels",
+    "meta": "The difference between an immune reaction to milk protein and trouble digesting lactose, including labels, substitutes, nutrition and emergency risk.",
+    "indexable": true
+  },
+  {
+    "path": "muscle-contraction-explained.html",
+    "title": "Muscle Contraction: The Sliding Filament Theory",
+    "h1": "Muscle contraction: the sliding filament theory",
+    "meta": "Sarcomere anatomy, the cross-bridge cycle, the role of calcium and ATP, and why rigor mortis happens — a revision guide.",
+    "indexable": true
+  },
+  {
+    "path": "muscle-fiber-types-and-nutrition.html",
+    "title": "Muscle Fiber Types: Fast- vs. Slow-Twitch",
+    "h1": "Muscle fiber types and nutrition",
+    "meta": "How fast-twitch and slow-twitch muscle fibers differ in fuel use, and what that means for carbohydrate and protein needs by sport.",
+    "indexable": true
+  },
+  {
+    "path": "muscle-soreness-and-recovery-nutrition.html",
+    "title": "Muscle soreness and recovery nutrition: what actually helps",
+    "h1": "Muscle soreness and recovery nutrition: what actually helps",
+    "meta": "Separate useful recovery basics from supplements that promise to erase delayed-onset muscle soreness overnight.",
+    "indexable": true
+  },
+  {
+    "path": "nausea-vomiting-pregnancy-food-strategies.html",
+    "title": "Pregnancy Nausea: Food and Hydration Strategies",
+    "h1": "Pregnancy Nausea: Food and Hydration Strategies",
+    "meta": "Practical eating and drinking ideas for pregnancy nausea, plus supplement timing, caffeine caution and signs that need urgent clinical help.",
+    "indexable": true
+  },
+  {
+    "path": "net-carbs-vs-total-carbs.html",
+    "title": "Net Carbs vs. Total Carbs",
+    "h1": "Net carbs vs. total carbs: what's the difference?",
+    "meta": "What \"net carbs\" actually means, how to calculate it, and why the number on a low-carb product's label can be misleading.",
+    "indexable": true
+  },
+  {
+    "path": "niacin-vitamin-b3-foods-functions.html",
+    "title": "Niacin (vitamin B3): foods, function and flushing",
+    "h1": "Niacin (vitamin B3): food sources, equivalents, flushing, and safety",
+    "meta": "Learn how niacin supports metabolism, what niacin equivalents mean, which foods provide B3, and why high-dose supplements are not ordinary nutrition.",
+    "indexable": true
+  },
+  {
+    "path": "nitrogen-balance-explained.html",
+    "title": "Nitrogen Balance: Why It Matters for Muscle",
+    "h1": "Nitrogen balance explained",
+    "meta": "What nitrogen balance measures, how it relates to protein intake, and why it's used to assess whether the body is gaining or losing muscle.",
+    "indexable": true
+  },
+  {
+    "path": "nutrient-dense-meals-for-smaller-appetites.html",
+    "title": "Nutrient-dense meals for smaller appetites",
+    "h1": "Nutrient-dense meals for smaller appetites",
+    "meta": "Build smaller meals that still provide protein, energy, fiber, and micronutrients using flexible textures, fortified foods, and convenient ingredients.",
+    "indexable": true
+  },
+  {
+    "path": "nutrient-density-explained.html",
+    "title": "Nutrient Density: More Nutrition Per Calorie",
+    "h1": "Nutrient density explained",
+    "meta": "What nutrient density means, why it matters even when your macros are on target, and how to eat more nutrient-dense meals.",
+    "indexable": true
+  },
+  {
+    "path": "nutrition-during-pregnancy.html",
+    "title": "Nutrition During Pregnancy: Key Nutrients",
+    "h1": "Nutrition during pregnancy",
+    "meta": "How calorie and nutrient needs shift during pregnancy, which nutrients need the most deliberate attention, and what changes by trimester.",
+    "indexable": true
+  },
+  {
+    "path": "nutrition-for-children-and-teens.html",
+    "title": "Nutrition for Children and Teens",
+    "h1": "Nutrition for children and teens",
+    "meta": "How nutrient needs for children and teenagers differ from adults, why growth spurts change requirements, and common gaps to watch for.",
+    "indexable": true
+  },
+  {
+    "path": "nutrition-label-comparison-tool.html",
+    "title": "Compare Nutrition Labels Side by Side | GetMacros",
+    "h1": "Compare nutrition labels side by side",
+    "meta": "Compare two Nutrition Facts labels side by side by serving and per 100 calories, including protein, fiber, added sugar, sodium and serving size.",
+    "indexable": true
+  },
+  {
+    "path": "nutrition-label-detective-game.html",
+    "title": "Nutrition Label Detective",
+    "h1": "Nutrition Label Detective",
+    "meta": "Practice reading serving sizes, fiber, sodium, added sugar, Daily Value, and ingredient lists in a free interactive nutrition label game.",
+    "indexable": true
+  },
+  {
+    "path": "nutrition-label-rounding-explained.html",
+    "title": "Nutrition label rounding",
+    "h1": "Nutrition label rounding: why the macros may not add up exactly",
+    "meta": "Learn why label calories and macronutrients can differ slightly, what rounding means, and how to avoid treating small discrepancies as deception.",
+    "indexable": true
+  },
+  {
+    "path": "nutrition-myth-or-context-game.html",
+    "title": "Nutrition Myth or Context?",
+    "h1": "Nutrition Myth or Context?",
+    "meta": "Challenge ten common nutrition claims and learn why context beats absolute rules in this free evidence-aware game.",
+    "indexable": true
+  },
+  {
+    "path": "nutrition-while-traveling.html",
+    "title": "Nutrition while traveling",
+    "h1": "Nutrition while traveling: flexible meals, hydration, and food safety",
+    "meta": "Build a travel eating strategy using portable backups, regular meals, hydration, and local food without trying to recreate home perfectly.",
+    "indexable": true
+  },
+  {
+    "path": "older-adult-meal-support-planner.html",
+    "title": "Older Adult Meal Support Planner | Practical Caregiver Tool",
+    "h1": "Older adult meal support planner",
+    "meta": "Select appetite, access, cooking, chewing, swallowing, hydration, isolation, or weight concerns to build a printable non-diagnostic meal support plan.",
+    "indexable": true
+  },
+  {
+    "path": "omega-3-foods-list.html",
+    "title": "15 Foods High in Omega-3 Fatty Acids",
+    "h1": "15 foods high in omega-3 fatty acids",
+    "meta": "A list of real food sources of omega-3 fatty acids, from fatty fish to plant-based ALA sources, with approximate amounts per serving.",
+    "indexable": true
+  },
+  {
+    "path": "omega-3-vs-omega-6.html",
+    "title": "Omega-3 vs Omega-6: Why the Balance Matters",
+    "h1": "Omega-3 vs omega-6: why balance matters",
+    "meta": "The difference between omega-3 and omega-6 essential fatty acids, why most modern diets are skewed, and how to add more omega-3 sources.",
+    "indexable": true
+  },
+  {
+    "path": "osteoporosis-bone-health-guides.html",
+    "title": "Osteoporosis and Bone-Health Guides",
+    "h1": "Osteoporosis and Bone-Health Guides",
+    "meta": "Evidence-aware guides to DXA, calcium, vitamin D, protein, falls, medicines and secondary osteoporosis.",
+    "indexable": true
+  },
+  {
+    "path": "osteoporosis-calcium-food-supplement-guide.html",
+    "title": "Osteoporosis Calcium: Food, Supplements and Labels",
+    "h1": "Osteoporosis Calcium: Food, Supplements and Labels",
+    "meta": "Estimate calcium from food, compare supplement forms, avoid stacking, and coordinate calcium with medicines.",
+    "indexable": true
+  },
+  {
+    "path": "osteoporosis-medications-food-timing-dental-care.html",
+    "title": "Osteoporosis Medicines, Food Timing and Dental Care",
+    "h1": "Osteoporosis Medicines, Food Timing and Dental Care",
+    "meta": "Organize bisphosphonate timing, injections, calcium spacing, dental questions and side-effect monitoring safely.",
+    "indexable": true
+  },
+  {
+    "path": "osteoporosis-myth-safety-game.html",
+    "title": "Osteoporosis Myth and Safety Game",
+    "h1": "Osteoporosis Myth and Safety Game",
+    "meta": "Test eight osteoporosis screening, calcium, vitamin D, medication and fall-prevention claims.",
+    "indexable": true
+  },
+  {
+    "path": "osteoporosis-protein-strength-balance-fall-prevention.html",
+    "title": "Osteoporosis Protein, Strength, Balance and Fall Prevention",
+    "h1": "Osteoporosis Protein, Strength, Balance and Fall Prevention",
+    "meta": "Support muscle and bone with adequate protein, progressive activity, balance practice and practical fall-risk reduction.",
+    "indexable": true
+  },
+  {
+    "path": "osteoporosis-screening-dxa-t-score-guide.html",
+    "title": "Osteoporosis Screening, DXA and T-Scores",
+    "h1": "Osteoporosis Screening, DXA and T-Scores",
+    "meta": "Understand who is commonly screened, what a central DXA measures, and why a T-score is only part of fracture risk.",
+    "indexable": true
+  },
+  {
+    "path": "osteoporosis-vitamin-d-testing-supplements.html",
+    "title": "Osteoporosis Vitamin D: Testing and Supplements",
+    "h1": "Osteoporosis Vitamin D: Testing and Supplements",
+    "meta": "Separate vitamin D adequacy from megadose claims, understand testing context, and avoid unsafe supplement stacking.",
+    "indexable": true
+  },
+  {
+    "path": "overhydration-and-hyponatremia.html",
+    "title": "Overhydration and Hyponatremia: When More Water Is Not Safer",
+    "h1": "Overhydration and Hyponatremia: When More Water Is Not Safer",
+    "meta": "Learn how drinking beyond losses can dilute blood sodium, which warning signs matter, and how to avoid the dangerous “more is always better” rule.",
+    "indexable": true
+  },
+  {
+    "path": "paleo-diet-explained.html",
+    "title": "Paleo Diet Explained: Food List & Macros",
+    "h1": "The paleo diet explained",
+    "meta": "What the paleo diet includes and excludes, its typical macronutrient split, and what the research actually says about its health claims.",
+    "indexable": true
+  },
+  {
+    "path": "panda-express-healthy-meals-macros.html",
+    "title": "Healthy Panda Express Orders: Calories & Protein | GetMacros",
+    "h1": "Healthy Panda Express orders and macros",
+    "meta": "Compare Panda Express options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "panera-healthy-meals-macros.html",
+    "title": "Healthy Panera Orders: Calories & Protein | GetMacros",
+    "h1": "Healthy Panera orders by calories and protein",
+    "meta": "Compare Panera options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "pantothenic-acid-vitamin-b5-foods.html",
+    "title": "Pantothenic acid (vitamin B5): why deficiency is rare",
+    "h1": "Pantothenic acid (vitamin B5): why deficiency is rare",
+    "meta": "Learn what pantothenic acid does, its food sources and adult intake reference, why deficiency is rare, and what supplement claims exaggerate.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-fertility-pregnancy-nutrition.html",
+    "title": "PCOS Fertility and Pregnancy Nutrition",
+    "h1": "PCOS Fertility and Pregnancy Nutrition",
+    "meta": "Preconception nutrition, folic acid, medication review and pregnancy-risk planning for people with PCOS.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-inositol-berberine-supplement-safety.html",
+    "title": "PCOS Supplements: Inositol, Berberine and Safety",
+    "h1": "PCOS Supplements: Inositol, Berberine and Safety",
+    "meta": "What current guidance says about inositol, why berberine needs caution, and how to check PCOS supplement claims.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-insulin-resistance-carbohydrates-guide.html",
+    "title": "PCOS, Insulin Resistance and Carbohydrates",
+    "h1": "PCOS, Insulin Resistance and Carbohydrates",
+    "meta": "How glucose screening, fibre, meal pairing and sustainable carbohydrate choices fit into PCOS care.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-metformin-b12-food-timing.html",
+    "title": "PCOS, Metformin, Vitamin B12 and Food Timing",
+    "h1": "PCOS, Metformin, Vitamin B12 and Food Timing",
+    "meta": "Practical metformin routines, gastrointestinal side effects, vitamin B12 questions and safety boundaries in PCOS.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-nutrition-balanced-meals-guide.html",
+    "title": "PCOS Nutrition: A Balanced Meals Guide",
+    "h1": "PCOS Nutrition: A Balanced Meals Guide",
+    "meta": "A practical, weight-inclusive PCOS meal framework without rigid hormone-balancing rules or unnecessary food bans.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-nutrition-guides.html",
+    "title": "PCOS Nutrition Guides",
+    "h1": "PCOS Nutrition Guides",
+    "meta": "Evidence-aware PCOS food, insulin resistance, fertility, medication and supplement guides without diet-culture promises.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-nutrition-myth-game.html",
+    "title": "PCOS Nutrition Myth Game",
+    "h1": "PCOS Nutrition Myth Game",
+    "meta": "Test eight PCOS food, insulin resistance, supplement and screening claims with evidence-aware explanations.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-visit-question-builder.html",
+    "title": "PCOS Visit Question Builder",
+    "h1": "PCOS Visit Question Builder",
+    "meta": "Create a private PCOS appointment agenda covering diagnosis, metabolic screening, periods, medicines and supplements.",
+    "indexable": true
+  },
+  {
+    "path": "pcos-weight-stigma-body-image-eating-disorders.html",
+    "title": "PCOS, Weight Stigma, Body Image and Eating Disorders",
+    "h1": "PCOS, Weight Stigma, Body Image and Eating Disorders",
+    "meta": "A safer guide to nutrition conversations, disordered eating warning signs and weight-inclusive PCOS support.",
+    "indexable": true
+  },
+  {
+    "path": "performance-recovery-guides.html",
+    "title": "Performance and Recovery Nutrition Guides",
+    "h1": "Performance and recovery nutrition",
+    "meta": "Sourced guides to workout meals, endurance protein, strength-training carbs, caffeine and sleep, soreness, appetite, and hot-weather fueling.",
+    "indexable": true
+  },
+  {
+    "path": "perimenopause-menopause-nutrition-guide.html",
+    "title": "Perimenopause and Menopause Nutrition Guide",
+    "h1": "Perimenopause and Menopause Nutrition Guide",
+    "meta": "A practical food-first guide to midlife nutrition, bone, muscle, heart health and changing symptoms without restrictive rules.",
+    "indexable": true
+  },
+  {
+    "path": "pescatarian-diet-explained.html",
+    "title": "Pescatarian Diet: Benefits & Macros",
+    "h1": "The pescatarian diet explained",
+    "meta": "What a pescatarian diet includes, the cardiovascular research behind it, and how to structure protein, fat, and carbs on it.",
+    "indexable": true
+  },
+  {
+    "path": "phosphorus-foods-and-kidney-health.html",
+    "title": "Phosphorus: bones, ATP, food sources, and kidney context",
+    "h1": "Phosphorus: bones, ATP, food sources, and kidney context",
+    "meta": "Understand phosphorus in bones, cell membranes, and ATP, plus the difference between natural food phosphorus and phosphate additives.",
+    "indexable": true
+  },
+  {
+    "path": "physiology-quiz.html",
+    "title": "Physiology Quiz: Homeostasis and Organs",
+    "h1": "Physiology revision quiz",
+    "meta": "A 10-question revision quiz on homeostasis, hormones, kidney function, and muscle contraction.",
+    "indexable": true
+  },
+  {
+    "path": "picky-eating-without-pressure.html",
+    "title": "Picky Eating Without Pressure",
+    "h1": "Picky Eating Without Pressure: Practical Family Strategies and Red Flags",
+    "meta": "Reduce mealtime conflict with repeated exposure, predictable structure, familiar foods, sensory respect, and clear signs that professional help is needed.",
+    "indexable": true
+  },
+  {
+    "path": "plant-based-protein-sources.html",
+    "title": "Best Plant-Based Protein Sources",
+    "h1": "Best plant-based protein sources for vegans and vegetarians",
+    "meta": "The most protein-dense plant foods for vegans and vegetarians, with approximate grams per serving and tips for hitting your daily target.",
+    "indexable": true
+  },
+  {
+    "path": "plant-based-vs-vegan-diet.html",
+    "title": "Plant-Based vs. Vegan: The Real Difference",
+    "h1": "Plant-based vs. vegan: what's actually the difference?",
+    "meta": "Plant-based and vegan get used as synonyms constantly. They're not the same thing — here's the real distinction and why it matters for tracking macros.",
+    "indexable": true
+  },
+  {
+    "path": "plant-milk-comparison-guide.html",
+    "title": "Plant milks compared: protein, calcium and sugar",
+    "h1": "Plant milks compared: protein, calcium, sugar, and culinary use",
+    "meta": "Compare soy, oat, almond, pea, coconut, and other plant beverages by fortification, protein, added sugar, flavor, and intended use.",
+    "indexable": true
+  },
+  {
+    "path": "popeyes-healthy-meals-macros.html",
+    "title": "Healthy Popeyes Options: Calories & Protein | GetMacros",
+    "h1": "Healthy Popeyes options and macros",
+    "meta": "Compare Popeyes options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "portion-estimation-game.html",
+    "title": "Portion Estimation Lab",
+    "h1": "Portion Estimation Lab",
+    "meta": "Test practical portion-estimation skills using servings, household measures, visual references, and realistic restaurant situations.",
+    "indexable": true
+  },
+  {
+    "path": "portion-sizes-without-a-scale.html",
+    "title": "Estimate Portion Sizes Without a Scale",
+    "h1": "How to estimate portion sizes without a food scale",
+    "meta": "Practical hand-based and household-object portion estimation methods for when you can't or don't want to weigh your food.",
+    "indexable": true
+  },
+  {
+    "path": "post-workout-anabolic-window.html",
+    "title": "Is the Post-Workout Anabolic Window Real?",
+    "h1": "The post-workout anabolic window: myth or real?",
+    "meta": "What the research actually says about the 30-minute post-workout anabolic window — and why total daily protein intake matters far more than exact timing.",
+    "indexable": true
+  },
+  {
+    "path": "post-workout-meal-guide.html",
+    "title": "Post-workout meals: recovery without an “anabolic panic”",
+    "h1": "Post-workout meals: recovery without an “anabolic panic”",
+    "meta": "Build a useful recovery meal with protein, carbohydrate, fluid, and enough total energy—without treating a narrow window as an emergency.",
+    "indexable": true
+  },
+  {
+    "path": "potassium-blood-pressure-kidney-caution.html",
+    "title": "Potassium, Blood Pressure and Kidney Caution",
+    "h1": "Potassium, Blood Pressure and Kidney Caution",
+    "meta": "Food sources of potassium, how DASH uses them, and why supplements and potassium salt substitutes require caution.",
+    "indexable": true
+  },
+  {
+    "path": "potassium-foods-and-functions.html",
+    "title": "Potassium: foods, functions, and when caution matters",
+    "h1": "Potassium: foods, functions, and when caution matters",
+    "meta": "Potassium supports cell function, nerve signaling and muscle contraction. Food sources, reference values, and why supplements need caution.",
+    "indexable": true
+  },
+  {
+    "path": "power-outage-refrigerator-freezer-food-safety.html",
+    "title": "Power Outage Food Safety: Refrigerator and Freezer Decisions",
+    "h1": "Power Outage Food Safety: Refrigerator and Freezer Decisions",
+    "meta": "Use appliance temperatures, outage duration, ice crystals, door discipline, and discard rules to decide what can be kept after lost power.",
+    "indexable": true
+  },
+  {
+    "path": "pre-workout-meal-timing.html",
+    "title": "Pre-workout meals: timing, size, and what to eat",
+    "h1": "Pre-workout meals: timing, size, and what to eat",
+    "meta": "Plan food before training using time available, session demands, digestion, and personal tolerance rather than one universal rule.",
+    "indexable": true
+  },
+  {
+    "path": "prediabetes-food-changes-without-extremes.html",
+    "title": "Prediabetes Food Changes Without Extremes",
+    "h1": "Prediabetes Food Changes Without Extremes",
+    "meta": "Practical, sustainable food changes for prediabetes that avoid detoxes, shame and automatic elimination of carbohydrate.",
+    "indexable": true
+  },
+  {
+    "path": "pregnancy-breastfeeding-nutrition-guides.html",
+    "title": "Pregnancy and Breastfeeding Nutrition Guides",
+    "h1": "Pregnancy and breastfeeding nutrition",
+    "meta": "Evidence-aware pregnancy and breastfeeding guides, safety resources and interactive tools for everyday decisions.",
+    "indexable": true
+  },
+  {
+    "path": "pregnancy-food-safety-listeria.html",
+    "title": "Pregnancy Food Safety: A Practical Listeria Guide",
+    "h1": "Pregnancy Food Safety: A Practical Listeria Guide",
+    "meta": "Safer food choices during pregnancy, including pasteurization, deli foods, reheating, refrigeration, recalls and symptoms that need medical advice.",
+    "indexable": true
+  },
+  {
+    "path": "pregnancy-nutrition-safety-game.html",
+    "title": "Pregnancy Nutrition Safety Game",
+    "h1": "Pregnancy nutrition safety game",
+    "meta": "Practice eight pregnancy and breastfeeding nutrition decisions about labels, fish, food safety, nausea and lactation.",
+    "indexable": true
+  },
+  {
+    "path": "prenatal-supplement-label-checker.html",
+    "title": "Prenatal Supplement Label Checker",
+    "h1": "Prenatal supplement label checker",
+    "meta": "A private worksheet that turns a prenatal Supplement Facts panel into organized questions for a clinician or pharmacist.",
+    "indexable": true
+  },
+  {
+    "path": "prenatal-vitamins-folate-iron-iodine-choline.html",
+    "title": "Prenatal Vitamins: Folate, Iron, Iodine & Choline",
+    "h1": "How to read a prenatal vitamin label",
+    "meta": "A practical, evidence-aware guide to reading prenatal vitamin labels for folate, iron, iodine, choline, vitamin A and supplement overlap.",
+    "indexable": true
+  },
+  {
+    "path": "privacy.html",
+    "title": "Privacy Policy",
+    "h1": "Privacy policy",
+    "meta": "GetMacros.net's privacy policy — what data is and isn't collected, how localStorage is used for quizzes and games, and how third-party ad networks use cookies.",
+    "indexable": true
+  },
+  {
+    "path": "probiotics-and-gut-health.html",
+    "title": "Probiotics Explained: What the Evidence Supports",
+    "h1": "Probiotics explained: what the evidence supports",
+    "meta": "What probiotics are, which strains have real evidence behind them, and where the science is still too new to justify strong claims.",
+    "indexable": true
+  },
+  {
+    "path": "protein-and-kidney-health.html",
+    "title": "Does High Protein Damage Your Kidneys?",
+    "h1": "Does high protein damage your kidneys?",
+    "meta": "Where the high-protein kidney myth came from, what controlled trials show in healthy people, and who genuinely does need to limit protein.",
+    "indexable": true
+  },
+  {
+    "path": "protein-before-bed.html",
+    "title": "Protein Before Bed: Does It Help Muscle Growth?",
+    "h1": "Protein before bed: does it help muscle growth?",
+    "meta": "What happens to muscle protein synthesis overnight, what pre-sleep protein research found, and whether it matters if your daily total is already met.",
+    "indexable": true
+  },
+  {
+    "path": "protein-deficiency-symptoms.html",
+    "title": "10 Signs You're Not Eating Enough Protein",
+    "h1": "10 warning signs you're not eating enough protein",
+    "meta": "The early warning signs of low protein intake, from slow wound healing to hair thinning, and when they signal a real deficiency.",
+    "indexable": true
+  },
+  {
+    "path": "protein-for-endurance-athletes.html",
+    "title": "Protein for endurance athletes: more than muscle size",
+    "h1": "Protein for endurance athletes: more than muscle size",
+    "meta": "Understand how endurance training affects protein turnover, recovery, and practical food planning across heavy training weeks.",
+    "indexable": true
+  },
+  {
+    "path": "protein-for-muscle-growth.html",
+    "title": "Protein for Muscle Growth: How Much and When",
+    "h1": "Protein for muscle growth: how much, when, and why",
+    "meta": "How dietary protein drives muscle protein synthesis after training, how much you need, and whether meal timing actually matters.",
+    "indexable": true
+  },
+  {
+    "path": "protein-for-older-adults.html",
+    "title": "Protein for Older Adults: Preventing Muscle Loss",
+    "h1": "Protein for older adults: preventing muscle loss",
+    "meta": "Why protein needs rise with age, what anabolic resistance means, and how much protein helps preserve muscle after 50.",
+    "indexable": true
+  },
+  {
+    "path": "protein-intake-for-women.html",
+    "title": "How Much Protein Do Women Actually Need?",
+    "h1": "How much protein do women actually need?",
+    "meta": "Protein targets for women specifically — why the same g/kg guidance applies regardless of sex, and where the numbers actually differ in practice.",
+    "indexable": true
+  },
+  {
+    "path": "protein-on-a-budget.html",
+    "title": "Protein on a budget: foods that stretch further",
+    "h1": "Protein on a budget: foods that stretch further",
+    "meta": "Build affordable protein-rich meals with beans, lentils, eggs, canned fish, dairy, soy foods, and practical shopping habits.",
+    "indexable": true
+  },
+  {
+    "path": "protein-per-meal-guide.html",
+    "title": "Protein per meal: a calmer way to plan your day",
+    "h1": "Protein per meal: a calmer way to plan your day",
+    "meta": "A practical, evidence-aware guide to spreading protein across meals without turning every plate into a math problem.",
+    "indexable": true
+  },
+  {
+    "path": "protein-powder-101.html",
+    "title": "Protein Powder 101: Whey, Casein & Plant",
+    "h1": "Protein powder 101: whey, casein, and plant blends",
+    "meta": "The practical differences between whey, casein, and plant-based protein powders, and how to choose between them.",
+    "indexable": true
+  },
+  {
+    "path": "protein-quality-scores-pdcaas-diaas.html",
+    "title": "Protein Quality: PDCAAS and DIAAS Explained",
+    "h1": "Protein quality scores: PDCAAS and DIAAS explained",
+    "meta": "What PDCAAS and DIAAS scores measure, how they're calculated, and why they matter for comparing protein sources.",
+    "indexable": true
+  },
+  {
+    "path": "protein-quiz.html",
+    "title": "Protein Quiz: Test Your Knowledge",
+    "h1": "How much do you really know about protein?",
+    "meta": "An 8-question quiz testing what you know about protein, muscle building, and deficiency.",
+    "indexable": true
+  },
+  {
+    "path": "protein-structure-levels.html",
+    "title": "The Four Levels of Protein Structure",
+    "h1": "The four levels of protein structure",
+    "meta": "Primary, secondary, tertiary and quaternary structure — the bonds holding each together, and what happens during denaturation.",
+    "indexable": true
+  },
+  {
+    "path": "protein-timing.html",
+    "title": "Does Protein Timing Actually Matter?",
+    "h1": "Does protein timing really matter?",
+    "meta": "Whether the post-workout 'anabolic window' is real, how often you should eat protein, and what the sports nutrition research actually supports.",
+    "indexable": true
+  },
+  {
+    "path": "protein-value-calculator.html",
+    "title": "Protein Value Calculator",
+    "h1": "Protein Value Calculator",
+    "meta": "Compare two foods by package price and calculate cost per 25 grams of protein while keeping nutrition quality and food waste in context.",
+    "indexable": true
+  },
+  {
+    "path": "protein.html",
+    "title": "Protein: Muscle Building, Repair & Deficiency",
+    "h1": "Protein: The Body's Building Block",
+    "meta": "What protein does in the body, how much you need for muscle building and repair, and the signs of protein deficiency — with cited sources.",
+    "indexable": true
+  },
+  {
+    "path": "quiz.html",
+    "title": "Nutrition Quizzes & Games: Macros, Diets and Science",
+    "h1": "Nutrition knowledge you can actually use.",
+    "meta": "Test your nutrition knowledge with 12 interactive quizzes and 4 games covering macros, diets, metabolism, digestion and real-world food decisions.",
+    "indexable": true
+  },
+  {
+    "path": "raw-vs-cooked-food-weight.html",
+    "title": "Raw vs. cooked food weight",
+    "h1": "Raw vs. cooked food weight: why the nutrition numbers seem to change",
+    "meta": "Understand how water gain and loss change food weight, how to match foods to database entries, and how to track a cooked batch consistently.",
+    "indexable": true
+  },
+  {
+    "path": "rda-vs-dri-vs-amdr.html",
+    "title": "RDA vs. DRI vs. AMDR: What's the Difference?",
+    "h1": "RDA vs. DRI vs. AMDR: what's the difference?",
+    "meta": "A plain-language breakdown of the nutrition reference terms students mix up most often: RDA, DRI, and AMDR.",
+    "indexable": true
+  },
+  {
+    "path": "recipe-macro-scaler.html",
+    "title": "Recipe Macro Calculator: Calories Per Serving | GetMacros",
+    "h1": "Recipe macro calculator",
+    "meta": "Calculate calories and macros per serving when you scale a recipe up or down. Adjust the portions and get updated protein, carbs and fat.",
+    "indexable": true
+  },
+  {
+    "path": "reduce-food-waste-meal-planning.html",
+    "title": "Reduce food waste with a use-first meal plan",
+    "h1": "Reduce food waste with a use-first meal plan",
+    "meta": "Use a simple inventory, use-first zone, ingredient overlap, realistic leftover plan, and freezer routine to reduce wasted food without rigid weekly menus.",
+    "indexable": true
+  },
+  {
+    "path": "refeed-days-explained.html",
+    "title": "Refeed Days: Do They Actually Help?",
+    "h1": "Refeed days explained: do they actually help a diet?",
+    "meta": "What a refeed day actually does physiologically during a calorie deficit, and how it differs from an unplanned cheat day.",
+    "indexable": true
+  },
+  {
+    "path": "refrigerator-organization-food-safety.html",
+    "title": "How to Organize a Refrigerator for Food Safety",
+    "h1": "How to Organize a Refrigerator for Food Safety",
+    "meta": "Set refrigerator temperature, separate raw foods, cool leftovers quickly, understand door and shelf zones, and create a usable first-in-first-out routine.",
+    "indexable": true
+  },
+  {
+    "path": "relative-risk-vs-absolute-risk.html",
+    "title": "Relative Risk vs. Absolute Risk Explained",
+    "h1": "Relative risk vs. absolute risk explained",
+    "meta": "Why a '50% higher risk' headline can describe a real but tiny effect, with a worked numeric example showing how relative risk and absolute risk diverge.",
+    "indexable": true
+  },
+  {
+    "path": "renal-label-question-builder.html",
+    "title": "Renal Label Question Builder",
+    "h1": "Renal label question builder",
+    "meta": "Organize sodium, potassium and phosphate-additive label information for a renal dietitian without assigning personal targets.",
+    "indexable": true
+  },
+  {
+    "path": "resistant-starch-explained.html",
+    "title": "Resistant starch explained",
+    "h1": "Resistant starch explained: cooled rice, oats, beans, and more",
+    "meta": "Learn what resistant starch is, where it appears in food, and what cooling cooked starch can—and cannot—change.",
+    "indexable": true
+  },
+  {
+    "path": "rest-day-nutrition.html",
+    "title": "Rest-day nutrition: should your macros change?",
+    "h1": "Rest-day nutrition: should your macros change?",
+    "meta": "Learn what to keep consistent on rest days and when adjusting carbohydrates or total energy may make sense.",
+    "indexable": true
+  },
+  {
+    "path": "restaurant-food-allergy-communication.html",
+    "title": "Restaurant food-allergy communication",
+    "h1": "Restaurant food-allergy communication: questions before ordering",
+    "meta": "Use a clear restaurant communication routine covering ingredients, shared equipment, substitutions, staff handoffs, emergency readiness, and when to leave.",
+    "indexable": true
+  },
+  {
+    "path": "restaurant-meal-finder.html",
+    "title": "Healthy Fast-Food Meal Finder | GetMacros",
+    "h1": "Healthy fast-food meal finder",
+    "meta": "Choose cutting, bulking, high protein and dietary goals to get ranked fast-food meals from 15 chains, with complete calories, protein, fibre and sodium.",
+    "indexable": true
+  },
+  {
+    "path": "restaurant-meal-guides.html",
+    "title": "Healthy Fast-Food Restaurants & Menu Guides | GetMacros",
+    "h1": "Healthy fast-food restaurant guides",
+    "meta": "Browse nutrition guides for 15 fast-food and fast-casual chains, with calories, protein, fibre, sodium and official source links.",
+    "indexable": true
+  },
+  {
+    "path": "restaurant-meals-every-diet-guide.html",
+    "title": "Restaurant Meals for Different Diets",
+    "h1": "Restaurant Meals for Different Diets",
+    "meta": "Use a flexible decision system for vegan, vegetarian, gluten-aware, higher-protein, lower-sodium and lower-carbohydrate restaurant meals.",
+    "indexable": true
+  },
+  {
+    "path": "restaurant-nutrition-information.html",
+    "title": "How to use restaurant nutrition information without false",
+    "h1": "How to use restaurant nutrition information without false precision",
+    "meta": "Interpret menu calories and nutrients as planning estimates, compare similar meals, and keep one restaurant visit in the context of the whole pattern.",
+    "indexable": true
+  },
+  {
+    "path": "riboflavin-vitamin-b2-foods-functions.html",
+    "title": "Riboflavin (vitamin B2): foods and functions",
+    "h1": "Riboflavin (vitamin B2): foods, functions, and the bright-yellow clue",
+    "meta": "Understand riboflavin’s role in energy metabolism, food sources, intake references, deficiency risk, supplements, and harmless urine color changes.",
+    "indexable": true
+  },
+  {
+    "path": "safe-cooking-temperatures-guide.html",
+    "title": "Safe Cooking Temperatures",
+    "h1": "Safe Cooking Temperatures: Where and How to Use a Food Thermometer",
+    "meta": "Learn minimum internal temperatures for poultry, ground meat, whole cuts, fish, eggs, leftovers, and casseroles—with correct thermometer placement.",
+    "indexable": true
+  },
+  {
+    "path": "safe-thawing-methods.html",
+    "title": "Safe Thawing Methods: 4 Ways That Actually Work",
+    "h1": "Safe Thawing Methods: Refrigerator, Cold Water, Microwave, or Cooking Frozen",
+    "meta": "Compare the four safe routes for thawing food, when immediate cooking is required, and why the counter is not a controlled method.",
+    "indexable": true
+  },
+  {
+    "path": "satisfying-salad-formula.html",
+    "title": "How to make a salad satisfying enough to be a meal",
+    "h1": "How to make a salad satisfying enough to be a meal",
+    "meta": "Turn a bowl of vegetables into a complete meal by adding protein, carbohydrate, fat, flavor, and enough total food.",
+    "indexable": true
+  },
+  {
+    "path": "saturated-unsaturated-fat-heart-health.html",
+    "title": "Saturated and Unsaturated Fat for Heart Health",
+    "h1": "Saturated and Unsaturated Fat for Heart Health",
+    "meta": "Understand fat quality, food sources and practical swaps that support LDL cholesterol without eliminating all fat.",
+    "indexable": true
+  },
+  {
+    "path": "saturated-vs-unsaturated-fat.html",
+    "title": "Saturated vs. Unsaturated Fat: The Difference",
+    "h1": "Saturated vs. unsaturated fat: what's actually the difference",
+    "meta": "The chemical difference between saturated and unsaturated fat, how each affects health, and which foods contain them.",
+    "indexable": true
+  },
+  {
+    "path": "school-food-allergy-planning.html",
+    "title": "School food-allergy planning for families and staff",
+    "h1": "School food-allergy planning for families and staff",
+    "meta": "Build a school food-allergy plan covering records, prevention, meals, field trips, staff training, emergency medicine and student inclusion.",
+    "indexable": true
+  },
+  {
+    "path": "school-lunch-builder.html",
+    "title": "School Lunch Builder | Mix Familiar, Balanced Components",
+    "h1": "School lunch builder",
+    "meta": "Build a practical school lunch from familiar foods, see which meal roles it covers, and generate an allergy-aware packing and food-safety checklist.",
+    "indexable": true
+  },
+  {
+    "path": "search.html",
+    "title": "Search Nutrition Articles, Tools and Games",
+    "h1": "Search GetMacros.net",
+    "meta": "Search the complete GetMacros.net library of evidence-aware nutrition articles, practical guides, calculators, quizzes, games, and site resources.",
+    "indexable": true
+  },
+  {
+    "path": "secondary-osteoporosis-nutrition-eating-disorders-steroids.html",
+    "title": "Secondary Osteoporosis: Nutrition",
+    "h1": "Secondary Osteoporosis: Nutrition, Eating Disorders and Steroids",
+    "meta": "Understand how under-fueling, malabsorption, endocrine conditions and glucocorticoids can change bone-health evaluation.",
+    "indexable": true
+  },
+  {
+    "path": "seed-oils-explained.html",
+    "title": "Are Seed Oils Bad for You? The Evidence",
+    "h1": "Are seed oils bad for you?",
+    "meta": "What seed oils are, why linoleic acid became controversial, and what controlled trials and major reviews actually conclude about replacing saturated fat.",
+    "indexable": true
+  },
+  {
+    "path": "selenium-foods-and-upper-limit.html",
+    "title": "Selenium: thyroid enzymes, food sources, and the upper limit",
+    "h1": "Selenium: thyroid enzymes, food sources, and the upper limit",
+    "meta": "Learn why selenium is essential in small amounts, where it appears in food, and how supplements can exceed safe limits.",
+    "indexable": true
+  },
+  {
+    "path": "serving-size-vs-portion-size.html",
+    "title": "Serving size vs. portion size",
+    "h1": "Serving size vs. portion size: the difference that changes the math",
+    "meta": "Learn why a label serving is not a recommended portion, how to scale nutrients to the amount you eat, and when dual-column labels help.",
+    "indexable": true
+  },
+  {
+    "path": "shelf-stable-balanced-pantry.html",
+    "title": "How to build a shelf-stable pantry for balanced meals",
+    "h1": "How to build a shelf-stable pantry for balanced meals",
+    "meta": "Build a flexible pantry with shelf-stable proteins, grains, vegetables, fruits, fats, seasonings, and backup foods that match your budget and equipment.",
+    "indexable": true
+  },
+  {
+    "path": "shift-work-meal-timing.html",
+    "title": "Shift-work nutrition: meal timing when the clock is upside",
+    "h1": "Shift-work nutrition: meal timing when the clock is upside down",
+    "meta": "Plan meals and caffeine around night shifts using regularity, digestion, sleep protection, and workplace access rather than forcing a daytime schedule.",
+    "indexable": true
+  },
+  {
+    "path": "simple-vs-complex-carbs.html",
+    "title": "Simple vs. Complex Carbohydrates Explained",
+    "h1": "Simple vs. complex carbohydrates explained",
+    "meta": "The structural difference between simple and complex carbohydrates, how each affects blood sugar and digestion, and food examples of both.",
+    "indexable": true
+  },
+  {
+    "path": "sleep-and-nutrition.html",
+    "title": "How Sleep Affects Appetite and Body Composition",
+    "h1": "How sleep affects appetite and body composition",
+    "meta": "What short sleep does to hunger hormones, cravings, and muscle retention while dieting, and why sleep is a nutrition variable.",
+    "indexable": true
+  },
+  {
+    "path": "sleep-loss-hunger-and-food-choices.html",
+    "title": "Sleep loss, hunger, and food choices",
+    "h1": "Sleep loss, hunger, and food choices",
+    "meta": "Learn how short sleep can influence appetite, cravings, decision-making, and training recovery without reducing eating behavior to willpower.",
+    "indexable": true
+  },
+  {
+    "path": "smart-snacks-for-kids-and-teens.html",
+    "title": "Smart Snacks for Kids and Teens",
+    "h1": "Smart Snacks for Kids and Teens: More Than a Treat or Mini Meal",
+    "meta": "Use snacks to bridge hunger, support growth, and fill nutrient gaps without turning them into rewards or endless grazing.",
+    "indexable": true
+  },
+  {
+    "path": "sodium-food-label-blood-pressure-guide.html",
+    "title": "Sodium, Food Labels and Blood Pressure",
+    "h1": "Sodium, Food Labels and Blood Pressure",
+    "meta": "Use serving size, milligrams and percent Daily Value to compare sodium without being misled by package claims.",
+    "indexable": true
+  },
+  {
+    "path": "sodium-how-much-do-you-need.html",
+    "title": "Sodium: How Much Do You Actually Need?",
+    "h1": "Sodium: how much do you actually need?",
+    "meta": "The real American Heart Association sodium targets, why most people eat far more than recommended, and where most dietary sodium actually comes from.",
+    "indexable": true
+  },
+  {
+    "path": "sodium-label-comparison-tool.html",
+    "title": "Sodium Label Comparison Tool",
+    "h1": "Sodium label comparison tool",
+    "meta": "Compare sodium in the portions you actually eat and see the share of the general FDA Daily Value.",
+    "indexable": true
+  },
+  {
+    "path": "soluble-fiber-foods-ldl-cholesterol.html",
+    "title": "Soluble Fibre Foods and LDL Cholesterol",
+    "h1": "Soluble Fibre Foods and LDL Cholesterol",
+    "meta": "How oats, barley, beans, lentils, fruit and psyllium can support LDL reduction, with gradual-use and medication cautions.",
+    "indexable": true
+  },
+  {
+    "path": "soluble-vs-insoluble-fiber.html",
+    "title": "Soluble vs. insoluble fiber: a practical food guide",
+    "h1": "Soluble vs. insoluble fiber: a practical food guide",
+    "meta": "Learn how soluble and insoluble fibers behave, which foods contain them, and why eating a varied mix matters more than memorizing categories.",
+    "indexable": true
+  },
+  {
+    "path": "sources.html",
+    "title": "Sources & Citations",
+    "h1": "Sources & citations",
+    "meta": "Full list of sources cited across GetMacros.net, including research on protein, fat, carbohydrates, and the formulas used in the calculators.",
+    "indexable": true
+  },
+  {
+    "path": "soy-and-testosterone.html",
+    "title": "Does Soy Lower Testosterone? What Research Says",
+    "h1": "Does soy lower testosterone?",
+    "meta": "Where the soy and testosterone myth came from, what meta-analyses of clinical trials actually found, and what soy does offer nutritionally.",
+    "indexable": true
+  },
+  {
+    "path": "sports-drinks-vs-water.html",
+    "title": "Sports Drinks vs. Water: Which Do You Need?",
+    "h1": "Sports drinks vs. water: when you actually need electrolytes",
+    "meta": "When plain water is enough during exercise and when a carbohydrate-electrolyte sports drink actually helps, based on ACSM hydration guidance.",
+    "indexable": true
+  },
+  {
+    "path": "starbucks-healthy-food-meals-macros.html",
+    "title": "Healthy Starbucks Food: Calories & Protein | GetMacros",
+    "h1": "Healthy Starbucks food and breakfast options",
+    "meta": "Compare Starbucks options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "subway-healthy-meals-macros.html",
+    "title": "Healthy Subway Orders: Calories, Protein & Macros | GetMacros",
+    "h1": "Healthy Subway orders by calories and protein",
+    "meta": "Compare Subway options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "sugar-addiction-is-it-real.html",
+    "title": "Is Sugar Addiction Real? What Research Shows",
+    "h1": "Is sugar addiction real?",
+    "meta": "Whether sugar is addictive in the same sense as drugs, what brain-reward research actually finds, and why cravings feel so strong anyway.",
+    "indexable": true
+  },
+  {
+    "path": "sugar-vs-starch.html",
+    "title": "Sugar vs. Starch: Are All Carbs Created Equal?",
+    "h1": "Sugar vs. starch: are all carbs created equal?",
+    "meta": "The difference between sugar and starch as types of carbohydrate, how your body processes each, and what it means for your diet.",
+    "indexable": true
+  },
+  {
+    "path": "supplement-label-terms-explained.html",
+    "title": "Supplement Label Terms: What They Actually Mean",
+    "h1": "Supplement label terms explained",
+    "meta": "What terms like proprietary blend, %DV, and third-party tested actually mean on a supplement label, and which ones matter.",
+    "indexable": true
+  },
+  {
+    "path": "sweat-rate-calculator.html",
+    "title": "Sweat Rate Calculator | Estimate Exercise Fluid Loss",
+    "h1": "Sweat-rate calculator",
+    "meta": "Estimate observed sweat rate from before-and-after body mass, drink volume, urine loss, and exercise time. Includes transparent math and safety limits.",
+    "indexable": true
+  },
+  {
+    "path": "sweetgreen-healthy-meals-macros.html",
+    "title": "Healthy Sweetgreen Bowls: Calories & Protein | GetMacros",
+    "h1": "Healthy Sweetgreen bowls by calories and protein",
+    "meta": "Compare Sweetgreen options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "taco-bell-healthy-meals-macros.html",
+    "title": "Healthy Taco Bell Options: Calories & Protein | GetMacros",
+    "h1": "Healthy Taco Bell options and macros",
+    "meta": "Compare Taco Bell options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "takeout-macro-challenge.html",
+    "title": "Healthy Fast Food Quiz: 8 Real Menu Decisions | GetMacros",
+    "h1": "Can you read the whole order?",
+    "meta": "Test eight realistic fast-food decisions using published calories, protein, fibre and sodium, plus appetite, dietary needs, customization and allergy safety.",
+    "indexable": true
+  },
+  {
+    "path": "tdee-vs-bmr.html",
+    "title": "BMR vs. TDEE: What's the Difference?",
+    "h1": "BMR vs. TDEE: what's the difference?",
+    "meta": "The difference between Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE), and how the Mifflin-St Jeor equation estimates both.",
+    "indexable": true
+  },
+  {
+    "path": "terms.html",
+    "title": "Terms of Use",
+    "h1": "Terms of use",
+    "meta": "The terms governing use of GetMacros.net — educational content only, not medical advice, third-party ads, and intellectual property.",
+    "indexable": true
+  },
+  {
+    "path": "thermic-effect-of-food-explained.html",
+    "title": "The Thermic Effect of Food Explained",
+    "h1": "The thermic effect of food explained",
+    "meta": "What the thermic effect of food (TEF) is, why protein has the highest TEF of the three macronutrients, and how much it actually affects calorie burn.",
+    "indexable": true
+  },
+  {
+    "path": "thiamin-vitamin-b1-foods-functions.html",
+    "title": "Thiamin (vitamin B1): foods and why it matters",
+    "h1": "Thiamin (vitamin B1): food sources, functions, and deficiency context",
+    "meta": "Learn what thiamin does, where vitamin B1 is found, adult intake references, who is vulnerable to deficiency, and why supplements are not energy boosters.",
+    "indexable": true
+  },
+  {
+    "path": "thyroid-medication-routine-question-builder.html",
+    "title": "Thyroid Medication Routine Question Builder",
+    "h1": "Thyroid medication routine question builder",
+    "meta": "Organize levothyroxine timing, supplements, coffee and lab-test questions without changing medication.",
+    "indexable": true
+  },
+  {
+    "path": "thyroid-nutrition-guides.html",
+    "title": "Thyroid Nutrition Guides",
+    "h1": "Thyroid nutrition guides",
+    "meta": "Evidence-aware guides to hypothyroidism, levothyroxine timing, Hashimoto’s claims, hyperthyroidism, biotin and supplements.",
+    "indexable": true
+  },
+  {
+    "path": "thyroid-nutrition-myth-game.html",
+    "title": "Thyroid Nutrition Myth Game",
+    "h1": "Thyroid nutrition myth game",
+    "meta": "Practice eight decisions about thyroid medicine, iodine, gluten, biotin, supplements and emergencies.",
+    "indexable": true
+  },
+  {
+    "path": "thyroid-support-supplements-kelp-glandular-safety.html",
+    "title": "Thyroid Support Supplements, Kelp and Glandular Safety",
+    "h1": "Thyroid Support Supplements, Kelp and Glandular Safety",
+    "meta": "Evaluate iodine, kelp, glandular and metabolism products without assuming natural means hormone-free.",
+    "indexable": true
+  },
+  {
+    "path": "topics.html",
+    "title": "Nutrition Topics, Guides, Tools and Games",
+    "h1": "Explore nutrition by topic",
+    "meta": "Explore GetMacros.net by topic: macro basics, meal building, micronutrients, food literacy, performance, nutrition science, calculators, and games.",
+    "indexable": true
+  },
+  {
+    "path": "trans-fat-explained.html",
+    "title": "What Is Trans Fat, and Why Was It Banned?",
+    "h1": "What is trans fat, and why was it banned?",
+    "meta": "What trans fat is, how partially hydrogenated oils are made, and why regulators moved to eliminate them from the food supply.",
+    "indexable": true
+  },
+  {
+    "path": "triglycerides-food-alcohol-added-sugar.html",
+    "title": "Triglycerides: Food, Alcohol and Added Sugar",
+    "h1": "Triglycerides: Food, Alcohol and Added Sugar",
+    "meta": "What triglycerides measure, why fasting context matters, and practical changes involving alcohol, sugar, fats and activity.",
+    "indexable": true
+  },
+  {
+    "path": "ultra-processed-foods-explained.html",
+    "title": "Ultra-Processed Foods: What the Evidence Shows",
+    "h1": "Ultra-processed foods: what the evidence shows",
+    "meta": "What ultra-processed actually means under the NOVA classification, what the controlled feeding research found, and why the category is debated.",
+    "indexable": true
+  },
+  {
+    "path": "understanding-a-lipid-panel.html",
+    "title": "Understanding a Lipid Panel",
+    "h1": "Understanding a lipid panel",
+    "meta": "What a cholesterol blood test actually measures, what the numbers mean, and how diet realistically moves each one.",
+    "indexable": true
+  },
+  {
+    "path": "unintentional-weight-loss-older-adults.html",
+    "title": "Unintentional weight loss in older adults",
+    "h1": "Unintentional weight loss in older adults: why it deserves attention",
+    "meta": "Understand why unexplained weight loss in an older adult is not a routine dieting success and how to document changes for timely clinical assessment.",
+    "indexable": true
+  },
+  {
+    "path": "units-and-conversions-cheat-sheet.html",
+    "title": "Nutrition Units & Conversions Cheat Sheet",
+    "h1": "Units and conversions cheat sheet",
+    "meta": "A quick-reference conversion sheet for calories, kilojoules, grams, ounces, and macronutrient calorie values.",
+    "indexable": true
+  },
+  {
+    "path": "urine-color-thirst-hydration.html",
+    "title": "Urine Color, Thirst, and Hydration",
+    "h1": "Urine Color, Thirst, and Hydration: What the Signals Can—and Cannot—Tell You",
+    "meta": "Use urine color, thirst, body mass, and context as clues without mistaking any single signal for a medical-grade hydration test.",
+    "indexable": true
+  },
+  {
+    "path": "vegan-macros-guide.html",
+    "title": "Vegan Macros: How to Hit Your Targets",
+    "h1": "Vegan macros: hitting your targets without meat or dairy",
+    "meta": "A practical guide to hitting protein, fat, and carb targets on a fully plant-based diet.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-a-foods-and-safety.html",
+    "title": "Vitamin A: food sources, vision and supplement safety",
+    "h1": "Vitamin A: food sources, vision, immunity, and supplement safety",
+    "meta": "Understand preformed vitamin A, provitamin A carotenoids, food sources, and why high-dose supplements require caution.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-b12-after-age-50.html",
+    "title": "Vitamin B12 after age 50",
+    "h1": "Vitamin B12 after age 50: food, fortified sources, absorption, and testing",
+    "meta": "Learn why vitamin B12 absorption can change with age, which sources bypass the food-protein step, and why symptoms and supplements need clinical context.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-b12-and-vegan-diets.html",
+    "title": "Vitamin B12 on a Vegan Diet: What to Know",
+    "h1": "Vitamin B12 on a vegan diet: what to know",
+    "meta": "Why vitamin B12 is the one nutrient vegans genuinely cannot get from unfortified plant foods, and how to cover it reliably.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-b6-foods-functions-safety.html",
+    "title": "Vitamin B6: foods, function and why dose matters",
+    "h1": "Vitamin B6: food sources, functions, and why supplement dose matters",
+    "meta": "Learn what vitamin B6 does, where it is found, adult intake references, deficiency context, and how chronic high-dose supplements can damage nerves.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-c-and-immunity.html",
+    "title": "Vitamin C and Immunity: What It Really Does",
+    "h1": "Vitamin C and immunity: what it really does",
+    "meta": "How much vitamin C you need, whether supplements shorten colds, and why the megadose claims outran the evidence.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-d-explained.html",
+    "title": "Vitamin D: How Much You Need and Why",
+    "h1": "Vitamin D: how much you need and why",
+    "meta": "What vitamin D does, how much you need per day, why deficiency is so common, and which foods and sources actually raise your levels.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-e-foods-and-functions.html",
+    "title": "Vitamin E: antioxidant function and food sources",
+    "h1": "Vitamin E: antioxidant function and food sources",
+    "meta": "Learn what vitamin E does, which foods provide it, and why supplements have not replaced a varied eating pattern.",
+    "indexable": true
+  },
+  {
+    "path": "vitamin-k-foods-and-medications.html",
+    "title": "Vitamin K: foods, clotting and medication interactions",
+    "h1": "Vitamin K: clotting, bone proteins, foods, and medication interactions",
+    "meta": "Understand vitamin K forms, food sources, and why consistency matters for people taking warfarin.",
+    "indexable": true
+  },
+  {
+    "path": "water-weight-vs-fat-loss.html",
+    "title": "Water Weight vs. Fat Loss: Why the Scale Lies",
+    "h1": "Water weight vs. fat loss: why the scale lies",
+    "meta": "Why the scale can jump or drop several pounds overnight that have nothing to do with actual fat loss or gain, and what's really going on.",
+    "indexable": true
+  },
+  {
+    "path": "weighing-cooking-oils-and-sauces.html",
+    "title": "How to measure cooking oils and sauces accurately",
+    "h1": "How to measure cooking oils, dressings, and sauces without guessing",
+    "meta": "Use before-and-after weights, batch totals, and realistic leftovers to estimate oils, dressings, marinades, and sauces more consistently.",
+    "indexable": true
+  },
+  {
+    "path": "weight-goal-timeline-calculator.html",
+    "title": "Weight Goal Timeline Calculator: How Long Will It Take?",
+    "h1": "How long will it take to reach my goal weight?",
+    "meta": "Enter your current weight and goal weight to estimate how long it will take at a safe rate, the daily calorie deficit or surplus needed, and how to actually get there.",
+    "indexable": true
+  },
+  {
+    "path": "wendys-healthy-meals-macros.html",
+    "title": "Healthy Wendy's Options: Calories & Protein | GetMacros",
+    "h1": "Healthy Wendy's options and macros",
+    "meta": "Compare Wendy’s options by calories, protein, carbs, fibre and sodium. See high-protein, lower-calorie and goal-based picks from verified menu data.",
+    "indexable": true
+  },
+  {
+    "path": "what-is-glycogen.html",
+    "title": "What Is Glycogen? How Your Body Stores Carbs",
+    "h1": "What is glycogen?",
+    "meta": "How glycogen works as your body's short-term carbohydrate storage in muscle and liver, and how much you can actually store.",
+    "indexable": true
+  },
+  {
+    "path": "when-do-you-need-electrolytes.html",
+    "title": "When Do You Actually Need Electrolytes?",
+    "h1": "When Do You Actually Need Electrolytes?",
+    "meta": "Use duration, sweat, heat, meals, illness, and medical context to decide when water is enough and when electrolyte replacement deserves attention.",
+    "indexable": true
+  },
+  {
+    "path": "whey-vs-casein-protein.html",
+    "title": "Whey vs. Casein: Which Protein Is Better?",
+    "h1": "Whey vs. casein protein: what's the real difference?",
+    "meta": "How whey and casein protein actually differ in digestion speed and amino acid profile, and when each one makes more practical sense.",
+    "indexable": true
+  },
+  {
+    "path": "why-nutrition-studies-contradict-each-other.html",
+    "title": "Why Nutrition Studies Keep Contradicting Each Other",
+    "h1": "Why nutrition studies contradict each other",
+    "meta": "The structural reasons nutrition headlines seem to flip-flop — small effect sizes, publication bias, observational data, and the incentives of media coverage.",
+    "indexable": true
+  },
+  {
+    "path": "world-cup-2026-team-nutrition.html",
+    "title": "What World Cup 2026 Teams Are Actually Eating",
+    "h1": "What World Cup 2026 teams are actually eating",
+    "meta": "How World Cup squads fuel for match day — carbohydrate loading, hydration, recovery protein, and what amateur players can realistically borrow.",
+    "indexable": true
+  },
+  {
+    "path": "young-athlete-fueling-safety.html",
+    "title": "Young Athlete Fueling: Performance, Growth, and RED-S Safety",
+    "h1": "Young Athlete Fueling: Performance, Growth, and RED-S Safety",
+    "meta": "A food-first guide to meals, snacks, hydration, recovery, supplement skepticism, and recognizing under-fueling in young athletes.",
+    "indexable": true
+  },
+  {
+    "path": "youth-nutrition-scenario-game.html",
+    "title": "Youth Nutrition Scenario Game | Family Food Decisions",
+    "h1": "Youth nutrition scenario game",
+    "meta": "Practice eight respectful family nutrition decisions about breakfast, snacks, picky eating, iron, calcium, school lunches, sport fueling, and RED-S.",
+    "indexable": true
+  },
+  {
+    "path": "zinc-explained.html",
+    "title": "Zinc: Immune Function, Sources and Limits",
+    "h1": "Zinc: immune function, sources and limits",
+    "meta": "What zinc does for immune function and protein synthesis, how much you need, and why plant-based diets need more of it.",
+    "indexable": true
+  },
+  {
+    "path": "zone-diet-explained.html",
+    "title": "The Zone Diet Explained: The 40/30/30 Approach",
+    "h1": "The Zone diet explained: the 40/30/30 approach",
+    "meta": "What the Zone diet's fixed 40/30/30 macro split actually means, where it came from, and what the evidence says about a fixed ratio approach.",
+    "indexable": true
+  }
+]

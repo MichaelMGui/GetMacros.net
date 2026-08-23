@@ -1,7 +1,7 @@
 {
   "name": "GetMacros.net",
   "short_name": "GetMacros",
-  "description": "Evidence-aware nutrition guides, calculators, games, and learning tools with sources you can open.",
+  "description": "Healthy fast-food comparisons, macro calculators and focused nutrition guides with transparent sources.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fbf7f0",
