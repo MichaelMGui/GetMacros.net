@@ -725,7 +725,7 @@ add(
       <p>None of these prove a carbohydrate problem on their own &mdash; illness, poor sleep and simple overtraining produce the same picture. They are worth checking against your intake before you add more training.</p>""", bg="var(--color-carbs-bg)", tight=True) +
     sec("""      <h2>When lower-carbohydrate intakes make sense</h2>
       <p>Lower intakes are a legitimate tool, not a moral failing or a magic trick. They tend to suit people who prefer the appetite pattern, who are managing blood glucose under clinical guidance, or whose training is mostly low-intensity. They tend to suit high-intensity and endurance athletes poorly, because those efforts depend on glycogen that dietary fat cannot replace quickly.</p>
-      <p>Two practical cautions. First, the first week or two of a sharp reduction often brings fatigue and headaches as your body adapts &mdash; see <a href="keto-flu-explained.html">what causes keto flu</a>. Second, cutting carbohydrates usually cuts fibre at the same time unless you deliberately replace it, and fibre intake is already below recommendations for most adults.</p>""") +
+      <p>Two practical cautions. First, the first week or two of a sharp reduction often brings fatigue and headaches as your body adapts &mdash; see <a href="keto-flu-explained.html">what causes keto flu</a>. Second, cutting carbohydrates usually cuts fiber at the same time unless you deliberately replace it, and fiber intake is already below recommendations for most adults.</p>""") +
     sec("""      <h2>How to actually land on your number</h2>
       <ol class="checklist">
         <li><strong>Start from calories, not carbohydrates.</strong> Set energy intake for your goal first.</li>
@@ -840,34 +840,34 @@ add(
         <li><strong>Gut microbiome health</strong> — fiber feeds beneficial gut bacteria</li>
       </ul>
       <p>Most adults need roughly <strong>25 grams/day (women) to 38 grams/day (men)</strong> under age 50 — and most people fall short of that target.<sup class="ref"><a href="sources.html#c5">[1]</a></sup></p>''', bg="var(--color-carbs-bg)", tight=True) +
-    sec("""      <h2>Two kinds of fibre, two different jobs</h2>
+    sec("""      <h2>Two kinds of fiber, two different jobs</h2>
       <table class="data-table">
         <tr><th></th><th>Soluble</th><th>Insoluble</th></tr>
         <tr><td>Behaviour in water</td><td>Dissolves into a gel</td><td>Stays intact</td></tr>
         <tr><td>Main effects</td><td>Slows digestion, lowers LDL, blunts glucose rise</td><td>Adds bulk, speeds transit</td></tr>
         <tr><td>Good sources</td><td>Oats, barley, beans, psyllium, apples, citrus</td><td>Wheat bran, wholegrains, nuts, vegetable skins</td></tr>
       </table>
-      <p>Most fibre-containing foods supply both, in different ratios, which is why "eat a variety" beats chasing one type. The gel-forming soluble fraction is what does the cholesterol and blood-glucose work; the insoluble fraction is what most people mean when they say fibre helps regularity.</p>""") +
+      <p>Most fiber-containing foods supply both, in different ratios, which is why "eat a variety" beats chasing one type. The gel-forming soluble fraction is what does the cholesterol and blood-glucose work; the insoluble fraction is what most people mean when they say fiber helps regularity.</p>""") +
     sec("""      <h2>How much, and how far off most people are</h2>
       <p>Recommended intakes are roughly <strong>25 g a day for women and 38 g for men</strong>, or about 14 g per 1,000 calories.<sup class="ref"><a href="sources.html#c5">[1]</a></sup> Average intakes in most Western countries sit near half that. This is one of the few places where the gap between typical and recommended intake is large enough that closing it is likely to matter on its own.</p>
       <ul class="checklist">
         <li><strong>Beans and lentils</strong> &mdash; roughly 15 g per cooked cup, the single most efficient upgrade available</li>
         <li><strong>Raspberries and blackberries</strong> &mdash; around 8 g per cup</li>
         <li><strong>Wholegrain over refined</strong> &mdash; a swap that costs nothing and adds several grams per meal</li>
-        <li><strong>Skins on</strong> &mdash; potato, apple and pear skins carry a meaningful share of the fibre</li>
+        <li><strong>Skins on</strong> &mdash; potato, apple and pear skins carry a meaningful share of the fiber</li>
       </ul>""") +
     sec("""      <h2>Increase it gradually, and drink more water</h2>
-      <p>Going from 12 g to 35 g overnight reliably produces gas, bloating and discomfort. Your gut bacteria adapt to a higher load, but they need a couple of weeks to do it. Add roughly 5 g a week, and increase fluids at the same time &mdash; fibre pulls water into the gut, and adding bulk without fluid can make constipation worse rather than better.</p>
+      <p>Going from 12 g to 35 g overnight reliably produces gas, bloating and discomfort. Your gut bacteria adapt to a higher load, but they need a couple of weeks to do it. Add roughly 5 g a week, and increase fluids at the same time &mdash; fiber pulls water into the gut, and adding bulk without fluid can make constipation worse rather than better.</p>
       <div class="panel warn">
-        <h3>When more fibre is not the answer</h3>
-        <p>During a flare of inflammatory bowel disease, with certain strictures, or while following a clinically supervised low-FODMAP elimination, higher fibre can worsen symptoms. Those situations need individual guidance rather than general advice.</p>
+        <h3>When more fiber is not the answer</h3>
+        <p>During a flare of inflammatory bowel disease, with certain strictures, or while following a clinically supervised low-FODMAP elimination, higher fiber can worsen symptoms. Those situations need individual guidance rather than general advice.</p>
       </div>""", bg="var(--color-carbs-bg)", tight=True),
     [("carbs.html", "What carbohydrates actually do"), ("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("how-many-carbs-per-day.html", "How many carbs per day")],
     faq=[
         ('How much fiber should I eat per day?', 'About 25 grams a day for women and 38 grams for men, or roughly 14 grams per 1,000 calories. Average intakes are close to half that, so most people have real room to improve.'),
         ('What foods are highest in fiber?', 'Legumes lead by a wide margin: a cooked cup of lentils or black beans supplies around 15 grams. Berries, wholegrains, nuts, seeds and vegetables eaten with their skins follow.'),
-        ('Does fiber help you lose weight?', 'Indirectly. High-fibre foods tend to be more filling per calorie and slow digestion, which makes a calorie deficit easier to hold. Fibre does not burn fat by itself.'),
-        ('Why does more fiber make me bloated?', 'Gut bacteria ferment fibre and produce gas, and they need time to adapt to a bigger load. Increasing by about 5 grams a week, with more fluid, usually avoids the worst of it.'),
+        ('Does fiber help you lose weight?', 'Indirectly. High-fiber foods tend to be more filling per calorie and slow digestion, which makes a calorie deficit easier to hold. Fiber does not burn fat by itself.'),
+        ('Why does more fiber make me bloated?', 'Gut bacteria ferment fiber and produce gas, and they need time to adapt to a bigger load. Increasing by about 5 grams a week, with more fluid, usually avoids the worst of it.'),
     ]
 )
 
@@ -900,16 +900,16 @@ add(
         <li><strong>Ripeness.</strong> A green banana behaves very differently from a spotted one.</li>
         <li><strong>Processing.</strong> Finer milling means faster digestion; steel-cut oats and instant oats are not equivalent.</li>
         <li><strong>Cooking and cooling.</strong> Cooking raises the response; cooling cooked potato, rice or pasta forms resistant starch that lowers it.</li>
-        <li><strong>What else is on the plate.</strong> Fat, protein and fibre in the same meal all slow gastric emptying and flatten the curve.</li>
+        <li><strong>What else is on the plate.</strong> Fat, protein and fiber in the same meal all slow gastric emptying and flatten the curve.</li>
       </ul>
       <p>That last point matters most, because almost nobody eats a carbohydrate alone. GI values are measured on isolated foods in fasted people; a slice of bread eaten with eggs and avocado does not behave like the tested slice.</p>""") +
     sec("""      <h2>Who should actually pay attention to it</h2>
-      <p>GI is genuinely useful for people managing diabetes or insulin resistance, where the shape of the glucose curve has direct clinical consequences, and for endurance athletes timing fuel around sessions. For general health it is a weak lens: it rates ice cream more favourably than a baked potato, because fat slows absorption. Fibre content, degree of processing and overall dietary pattern predict health outcomes far better.</p>""", bg="var(--color-carbs-bg)", tight=True),
+      <p>GI is genuinely useful for people managing diabetes or insulin resistance, where the shape of the glucose curve has direct clinical consequences, and for endurance athletes timing fuel around sessions. For general health it is a weak lens: it rates ice cream more favourably than a baked potato, because fat slows absorption. Fiber content, degree of processing and overall dietary pattern predict health outcomes far better.</p>""", bg="var(--color-carbs-bg)", tight=True),
     [("simple-vs-complex-carbs.html", "Simple vs. complex carbs"), ("carbs.html", "What carbohydrates actually do"), ("fiber-benefits.html", "Why fiber matters")],
     faq=[
         ('What is a low glycemic index food?', 'A GI of 55 or below is considered low, 56-69 medium and 70 or above high. Most legumes, non-starchy vegetables, nuts and intact wholegrains fall in the low band.'),
         ('Is glycemic index or glycemic load more useful?', 'Glycaemic load, in most cases. GI uses a fixed 50 g carbohydrate portion regardless of how much you would really eat, while glycaemic load accounts for the actual serving.'),
-        ('Does eating low GI help with weight loss?', 'The evidence is mixed and effects are small once calories and protein are matched. Low-GI foods are often high in fibre and filling, which helps adherence, but the GI value itself is not the active ingredient.'),
+        ('Does eating low GI help with weight loss?', 'The evidence is mixed and effects are small once calories and protein are matched. Low-GI foods are often high in fiber and filling, which helps adherence, but the GI value itself is not the active ingredient.'),
         ('Does cooling rice or potatoes lower the glycemic index?', 'Yes, modestly. Cooling cooked starch forms resistant starch, which digests more slowly and lowers the glucose response, and some of that persists even after reheating.'),
     ]
 )
@@ -951,7 +951,7 @@ add(
       <ol class="checklist">
         <li><strong>Serving size first, always.</strong> Every number below it is per serving, not per package. A bag with 2.5 servings quietly multiplies everything by 2.5.</li>
         <li><strong>Calories, adjusted for what you will really eat.</strong> Not what the manufacturer decided a portion is.</li>
-        <li><strong>The nutrients you are actually managing.</strong> Protein and fibre if you want more; saturated fat, sodium and added sugar if you want less.</li>
+        <li><strong>The nutrients you are actually managing.</strong> Protein and fiber if you want more; saturated fat, sodium and added sugar if you want less.</li>
         <li><strong>The ingredient list.</strong> Ordered by weight, so the first three tell you most of what the food is.</li>
         <li><strong>Front-of-pack claims last, if at all.</strong> They are marketing, and they are chosen precisely to distract from the panel.</li>
       </ol>""") +
@@ -1210,11 +1210,11 @@ add(
       <p>This is why a single "cholesterol number" tells you very little. Two people with identical total cholesterol can have completely different risk depending on how it splits.</p>""") +
     sec("""      <h2>Dietary cholesterol is not the main lever</h2>
       <p>For decades the advice was to limit dietary cholesterol directly, which is why eggs and shellfish acquired their reputation. The evidence did not hold up for most people: the liver produces the large majority of circulating cholesterol and compensates when intake rises. Dietary guidelines in the U.S. dropped the specific numerical limit accordingly.</p>
-      <p>What moves blood lipids more reliably is the <em>pattern</em>: saturated and trans fat intake, soluble fibre, alcohol, added sugar, body composition and physical activity. A minority of people are genuine hyper-responders whose LDL climbs noticeably with dietary cholesterol &mdash; which is an argument for testing rather than for universal restriction. See <a href="egg-yolks-cholesterol-myth.html">the egg yolk question</a> in detail.</p>""") +
+      <p>What moves blood lipids more reliably is the <em>pattern</em>: saturated and trans fat intake, soluble fiber, alcohol, added sugar, body composition and physical activity. A minority of people are genuine hyper-responders whose LDL climbs noticeably with dietary cholesterol &mdash; which is an argument for testing rather than for universal restriction. See <a href="egg-yolks-cholesterol-myth.html">the egg yolk question</a> in detail.</p>""") +
     sec("""      <h2>What actually shifts the numbers</h2>
       <ul class="checklist">
         <li><strong>Replace saturated with unsaturated fat.</strong> The single best-supported dietary change for LDL.</li>
-        <li><strong>Add soluble fibre.</strong> Oats, barley, beans, psyllium and apples bind bile acids and modestly lower LDL.</li>
+        <li><strong>Add soluble fiber.</strong> Oats, barley, beans, psyllium and apples bind bile acids and modestly lower LDL.</li>
         <li><strong>Cut alcohol and added sugar</strong> if triglycerides are the problem. These respond fast, often within weeks.</li>
         <li><strong>Move regularly.</strong> Aerobic activity mainly improves triglycerides and HDL.</li>
         <li><strong>Address body composition</strong> where relevant, which tends to improve every marker at once.</li>
@@ -1227,7 +1227,7 @@ add(
     faq=[
         ('What is a normal cholesterol level?', 'Targets depend on your overall cardiovascular risk rather than one universal cut-off. Broadly, LDL below about 100 mg/dL (2.6 mmol/L) is considered desirable for most adults, with lower targets for people who already have cardiovascular disease. Interpret any result with a clinician who knows your full risk picture.'),
         ('Do eggs raise cholesterol?', 'For most people, only modestly. The liver makes most of your circulating cholesterol and compensates when dietary intake rises. A minority are hyper-responders whose LDL does climb, which is a reason to test rather than to avoid eggs universally.'),
-        ('How can I lower cholesterol quickly?', 'Triglycerides respond fastest, often within weeks of cutting alcohol and added sugar. LDL moves more slowly and responds mainly to replacing saturated fat with unsaturated fat and increasing soluble fibre. Genuinely high LDL often needs medication alongside diet.'),
+        ('How can I lower cholesterol quickly?', 'Triglycerides respond fastest, often within weeks of cutting alcohol and added sugar. LDL moves more slowly and responds mainly to replacing saturated fat with unsaturated fat and increasing soluble fiber. Genuinely high LDL often needs medication alongside diet.'),
         ('Is high HDL always good?', 'Not necessarily. HDL is associated with lower risk in observational data, but trials that raised HDL pharmacologically did not reduce cardiovascular events, so it is better read as a marker than a target.'),
     ]
 )
@@ -2176,7 +2176,7 @@ add(
         <tr><th>Food</th><th>Approx. calories</th><th>Notable nutrients delivered</th></tr>
         <tr><td>Spinach, 100 g</td><td>23</td><td>Vitamin K, folate, vitamin A, magnesium</td></tr>
         <tr><td>Eggs, 2 large</td><td>140</td><td>Complete protein, choline, B12, selenium</td></tr>
-        <tr><td>Lentils, 1 cup cooked</td><td>230</td><td>Protein, fibre, folate, iron</td></tr>
+        <tr><td>Lentils, 1 cup cooked</td><td>230</td><td>Protein, fiber, folate, iron</td></tr>
         <tr><td>Salmon, 100 g</td><td>~200</td><td>Protein, omega-3, vitamin D, B12</td></tr>
         <tr><td>Soft drink, 330 ml</td><td>~140</td><td>None</td></tr>
       </table>""") +
@@ -2574,7 +2574,7 @@ add(
         <tr><td>Heat and humidity</td><td>Up</td><td>Humidity limits evaporative cooling, raising sweat rate</td></tr>
         <tr><td>Altitude</td><td>Up</td><td>Increased breathing rate and urine output</td></tr>
         <tr><td>Fever, vomiting, diarrhoea</td><td>Up</td><td>Direct fluid loss</td></tr>
-        <tr><td>High-fibre or high-protein intake</td><td>Slightly up</td><td>Both increase water demand for digestion and urea excretion</td></tr>
+        <tr><td>High-fiber or high-protein intake</td><td>Slightly up</td><td>Both increase water demand for digestion and urea excretion</td></tr>
         <tr><td>Some medical conditions and medicines</td><td>Varies</td><td>Certain heart, kidney and liver conditions require deliberate limits</td></tr>
       </table>
       <p>That last row is why blanket targets are a poor idea. If a clinician has given you a fluid restriction, it overrides every general guideline including this page.</p>""") +
@@ -4246,7 +4246,7 @@ add(
     "science", "Physiology", "Muscle contraction: the sliding filament theory",
     "Muscles don't shorten because the filaments shorten — they shorten because the filaments slide past one another. That distinction is the whole theory.",
     sec('''      <h2>Sarcomere anatomy</h2>
-      <p>The sarcomere is the functional unit of a muscle fibre, running from one Z-line to the next.</p>
+      <p>The sarcomere is the functional unit of a muscle fiber, running from one Z-line to the next.</p>
       <table class="data-table">
         <tr><th>Region</th><th>Contains</th><th>During contraction</th></tr>
         <tr><td>Z-line</td><td>Anchors thin filaments</td><td>Z-lines move closer together</td></tr>
@@ -4271,9 +4271,9 @@ add(
         <h3>ATP has two separate jobs here</h3>
         <p>ATP binding causes <em>detachment</em>; ATP hydrolysis <em>re-cocks</em> the head. This is why rigor mortis occurs — with no ATP after death, myosin heads cannot detach from actin, and the muscle locks in place.</p>
       </div>''', bg="var(--color-pop4-bg)", tight=True) +
-    sec('''      <h2>Fibre types</h2>
-      <p>Which fibres a muscle recruits shapes its fuel demands — slow-twitch fibres rely heavily on oxidative metabolism, fast-twitch fibres on <a href="glycolysis-explained.html">glycolysis</a> and phosphocreatine. See <a href="muscle-fiber-types-and-nutrition.html">muscle fibre types and nutrition</a> and <a href="energy-systems-explained.html">the three energy systems</a>.</p>'''),
-    [("muscle-fiber-types-and-nutrition.html", "Muscle fibre types"), ("energy-systems-explained.html", "The three energy systems"), ("atp-explained.html", "What is ATP?")],
+    sec('''      <h2>Fiber types</h2>
+      <p>Which fibres a muscle recruits shapes its fuel demands — slow-twitch fibres rely heavily on oxidative metabolism, fast-twitch fibres on <a href="glycolysis-explained.html">glycolysis</a> and phosphocreatine. See <a href="muscle-fiber-types-and-nutrition.html">muscle fiber types and nutrition</a> and <a href="energy-systems-explained.html">the three energy systems</a>.</p>'''),
+    [("muscle-fiber-types-and-nutrition.html", "Muscle fiber types"), ("energy-systems-explained.html", "The three energy systems"), ("atp-explained.html", "What is ATP?")],
     faq=[
         ("Which sarcomere band stays the same length during contraction?", "The A band. It corresponds to the full length of the myosin filament, which does not shorten. The I band and H zone both shorten as actin slides over myosin."),
         ("What is the role of calcium in muscle contraction?", "Calcium binds troponin, which moves tropomyosin away from the myosin-binding sites on actin, allowing cross-bridges to form. Without calcium, those binding sites remain blocked."),
