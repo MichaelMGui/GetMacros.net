@@ -428,45 +428,72 @@ add(
 
 add(
     "high-protein-foods-list",
-    "25 High-Protein Foods (With Protein Per 100g)",
-    "A reference list of high-protein animal and plant foods with approximate grams of protein per 100g, for building meals around your target.",
-    "protein", "Protein Guide", "25 high-protein foods and how much protein they contain",
-    "Approximate protein content per 100 grams unless noted — actual values vary by cut, brand, and preparation.",
-    sec('''      <h2>Animal sources</h2>
-      <table class="data-table">
-        <tr><th>Food</th><th>Protein (per 100g)</th></tr>
-        <tr><td>Chicken breast, cooked</td><td>~31 g</td></tr>
-        <tr><td>Turkey breast, cooked</td><td>~29 g</td></tr>
-        <tr><td>Tuna, canned</td><td>~30 g</td></tr>
-        <tr><td>Lean beef, cooked</td><td>~26 g</td></tr>
-        <tr><td>Salmon, cooked</td><td>~25 g</td></tr>
-        <tr><td>Shrimp, cooked</td><td>~24 g</td></tr>
-        <tr><td>Pork loin, cooked</td><td>~26 g</td></tr>
-        <tr><td>Cottage cheese</td><td>~11 g</td></tr>
-        <tr><td>Greek yogurt, plain</td><td>~10 g</td></tr>
-        <tr><td>Eggs (whole)</td><td>~13 g (~6g per large egg)</td></tr>
-        <tr><td>Milk</td><td>~3.4 g</td></tr>
-        <tr><td>Whey protein powder</td><td>~75–85 g (per 100g powder)</td></tr>
-      </table>''') +
-    sec('''      <h2>Plant sources</h2>
-      <table class="data-table">
-        <tr><th>Food</th><th>Protein (per 100g, cooked unless noted)</th></tr>
-        <tr><td>Tempeh</td><td>~19 g</td></tr>
-        <tr><td>Edamame</td><td>~11 g</td></tr>
-        <tr><td>Lentils</td><td>~9 g</td></tr>
-        <tr><td>Black beans</td><td>~9 g</td></tr>
-        <tr><td>Chickpeas</td><td>~9 g</td></tr>
-        <tr><td>Tofu, firm</td><td>~8 g</td></tr>
-        <tr><td>Quinoa</td><td>~4.5 g</td></tr>
-        <tr><td>Peanut butter</td><td>~25 g</td></tr>
-        <tr><td>Almonds</td><td>~21 g</td></tr>
-        <tr><td>Pumpkin seeds</td><td>~19 g</td></tr>
-        <tr><td>Chia seeds</td><td>~17 g</td></tr>
-        <tr><td>Hemp seeds</td><td>~31 g</td></tr>
-        <tr><td>Oats, dry</td><td>~13 g</td></tr>
-      </table>
-      <p class="section-intro">See <a href="sources.html#p5">MyPlate's Protein Foods Group</a> for the full USDA reference list.</p>'''),
-    [("protein.html", "What protein actually does"), ("plant-based-protein-sources.html", "Best plant-based protein sources"), ("complete-vs-incomplete-protein.html", "Complete vs. incomplete protein")]
+    "High-Protein Foods Ranked by Protein Per Calorie",
+    "25 high-protein foods with protein per 100 g, protein per 100 calories, and the protein in a realistic serving — so you can compare them the way you actually eat them.",
+    "protein", "Protein Guide", "25 high-protein foods, ranked by protein per calorie",
+    "Ranked by protein per calorie rather than per 100 grams, with what a realistic serving of each actually delivers.",
+    sec('''      <h2>Why per-100-gram lists mislead you</h2>
+      <p>Almost every high-protein food list ranks by protein per 100 grams, and that quietly
+      rewards foods nobody eats 100 grams of. Peanut butter looks strong at 25 g of protein per
+      100 g — but 100 g of peanut butter is about 590 calories, roughly six tablespoons. A hundred
+      grams of cooked chicken breast is an ordinary portion at 165 calories.</p>
+      <p>If you are hitting a protein target inside a calorie budget, the number that settles the
+      question is <strong>protein per calorie</strong>. Both tables below give it, along with what a
+      realistic serving delivers.</p>
+      <p>A working threshold: above roughly <strong>15 g of protein per 100 calories</strong>, a
+      food moves your daily total without crowding out everything else. Below about 5 g per 100
+      calories you are mostly buying fat or starch that happens to contain protein.</p>''') +
+    sec('''      <h2>Animal-source protein foods</h2>
+      <p>Sorted by protein per calorie. Figures shift with cut, trimming, brand and cooking method;
+      a fattier cut of the same animal can halve the protein-per-calorie number.</p>
+      %s
+      <p>Canned tuna, shrimp, turkey and chicken breast lead because they are close to pure lean
+      tissue. Eggs rank lower here than their reputation suggests — about 8 g per 100 calories,
+      because roughly two-thirds of an egg's calories come from the fat in the yolk. That is not an
+      argument against eggs, only against relying on them as your main protein lever when calories
+      are tight.</p>''' % '<div class="table-scroll"><table class="data-table"><thead><tr><th scope="col">Food</th><th scope="col">Protein per 100 g</th><th scope="col">Calories per 100 g</th><th scope="col">Protein per 100 kcal</th><th scope="col">Typical serving</th><th scope="col">Protein per serving</th></tr></thead><tbody><tr><th scope="row">Chicken breast, cooked</th><td>31 g</td><td>165</td><td>19 g</td><td>4 oz (113 g)</td><td>35 g</td></tr><tr><th scope="row">Tuna, canned in water</th><td>30 g</td><td>130</td><td>23 g</td><td>1 can, drained (120 g)</td><td>36 g</td></tr><tr><th scope="row">Turkey breast, cooked</th><td>29 g</td><td>135</td><td>21 g</td><td>4 oz (113 g)</td><td>33 g</td></tr><tr><th scope="row">Shrimp, cooked</th><td>24 g</td><td>99</td><td>24 g</td><td>4 oz (113 g)</td><td>27 g</td></tr><tr><th scope="row">Greek yogurt, plain non-fat</th><td>10 g</td><td>59</td><td>17 g</td><td>1 container (170 g)</td><td>17 g</td></tr><tr><th scope="row">Cottage cheese, low-fat</th><td>11 g</td><td>72</td><td>15 g</td><td>1 cup (226 g)</td><td>25 g</td></tr><tr><th scope="row">Salmon, cooked</th><td>25 g</td><td>208</td><td>12 g</td><td>4 oz (113 g)</td><td>28 g</td></tr><tr><th scope="row">Pork loin, cooked</th><td>26 g</td><td>242</td><td>11 g</td><td>4 oz (113 g)</td><td>29 g</td></tr><tr><th scope="row">Lean beef, cooked</th><td>26 g</td><td>250</td><td>10 g</td><td>4 oz (113 g)</td><td>29 g</td></tr><tr><th scope="row">Eggs, whole</th><td>13 g</td><td>155</td><td>8 g</td><td>2 large (100 g)</td><td>13 g</td></tr><tr><th scope="row">Milk, 2%</th><td>3.4 g</td><td>50</td><td>7 g</td><td>1 cup (244 g)</td><td>8 g</td></tr><tr><th scope="row">Whey protein powder</th><td>80 g</td><td>400</td><td>20 g</td><td>1 scoop (30 g)</td><td>24 g</td></tr></tbody></table></div>') +
+    sec('''      <h2>Plant-source protein foods</h2>
+      <p>The gap between the tables is mostly about what comes with the protein. Legumes and soy
+      carry starch; nuts and seeds carry fat.</p>
+      %s
+      <p>Nuts and seeds look impressive per 100 grams and fall away per calorie for the same reason
+      peanut butter does. Hemp seeds carry 31 g per 100 g — more than chicken breast — but only
+      about 6 g per 100 calories, because 100 g of hemp seeds is 553 calories. Tempeh, edamame,
+      lentils and tofu are the plant foods that hold up when compared the way you eat them.</p>''' % '<div class="table-scroll"><table class="data-table"><thead><tr><th scope="col">Food</th><th scope="col">Protein per 100 g</th><th scope="col">Calories per 100 g</th><th scope="col">Protein per 100 kcal</th><th scope="col">Typical serving</th><th scope="col">Protein per serving</th></tr></thead><tbody><tr><th scope="row">Tempeh</th><td>19 g</td><td>192</td><td>10 g</td><td>3 oz (85 g)</td><td>16 g</td></tr><tr><th scope="row">Edamame, shelled</th><td>11 g</td><td>121</td><td>9 g</td><td>1 cup (155 g)</td><td>17 g</td></tr><tr><th scope="row">Lentils, cooked</th><td>9 g</td><td>116</td><td>8 g</td><td>1 cup (198 g)</td><td>18 g</td></tr><tr><th scope="row">Black beans, cooked</th><td>9 g</td><td>132</td><td>7 g</td><td>1 cup (172 g)</td><td>15 g</td></tr><tr><th scope="row">Tofu, firm</th><td>8 g</td><td>144</td><td>6 g</td><td>&frac12; block (126 g)</td><td>10 g</td></tr><tr><th scope="row">Hemp seeds</th><td>31 g</td><td>553</td><td>6 g</td><td>3 tbsp (30 g)</td><td>9 g</td></tr><tr><th scope="row">Chickpeas, cooked</th><td>9 g</td><td>164</td><td>5 g</td><td>1 cup (164 g)</td><td>15 g</td></tr><tr><th scope="row">Peanut butter</th><td>25 g</td><td>588</td><td>4 g</td><td>2 tbsp (32 g)</td><td>8 g</td></tr><tr><th scope="row">Chia seeds</th><td>17 g</td><td>486</td><td>4 g</td><td>2 tbsp (24 g)</td><td>4 g</td></tr><tr><th scope="row">Quinoa, cooked</th><td>4.5 g</td><td>120</td><td>4 g</td><td>1 cup (185 g)</td><td>8 g</td></tr><tr><th scope="row">Almonds</th><td>21 g</td><td>579</td><td>4 g</td><td>1 oz (28 g)</td><td>6 g</td></tr><tr><th scope="row">Pumpkin seeds</th><td>19 g</td><td>559</td><td>3 g</td><td>1 oz (28 g)</td><td>5 g</td></tr><tr><th scope="row">Oats, dry</th><td>13 g</td><td>389</td><td>3 g</td><td>&frac12; cup (40 g)</td><td>5 g</td></tr></tbody></table></div>') +
+    sec('''      <h2>What this means for a daily target</h2>
+      <p>A common target for someone training to build or keep muscle is 1.6–2.2 g of protein per
+      kilogram of body weight. For a 70 kg (154 lb) person that is roughly 110–155 g a day. Read
+      against the serving column, that is not an unusual amount of food:</p>
+      <ul>
+        <li>Greek yogurt at breakfast — <strong>17 g</strong></li>
+        <li>A can of tuna at lunch — <strong>36 g</strong></li>
+        <li>4 oz of chicken at dinner — <strong>35 g</strong></li>
+        <li>A cup of lentils alongside it — <strong>18 g</strong></li>
+        <li>Two tablespoons of peanut butter as a snack — <strong>8 g</strong></li>
+      </ul>
+      <p>That is 114 g without a shake. People usually miss the target not for lack of
+      protein-dense food but because breakfast and snacks contribute almost nothing. Fixing the two
+      smallest meals closes the gap faster than adding a second chicken breast to dinner.</p>
+      <p>Needs are not identical for everyone. Older adults generally need more protein per kilogram
+      to get the same muscle response, and anyone with kidney disease should take a target from
+      their own clinician rather than a general guide.</p>''') +
+    sec('''      <h2>How to read these numbers honestly</h2>
+      <p>Every figure here is a rounded central estimate, not a specification. Four things move them
+      more than people expect:</p>
+      <ul>
+        <li><strong>Cooking changes the denominator.</strong> Protein per 100 g rises as meat loses
+        water, so raw and cooked figures for the same chicken breast differ by roughly a third.
+        These are cooked.</li>
+        <li><strong>Cut and trim dominate.</strong> "Lean beef" covers a range wide enough to change
+        protein per calorie by half.</li>
+        <li><strong>Brands differ.</strong> Greek yogurts run from about 6 to 17 g of protein per
+        100 g depending on straining and added sugar.</li>
+        <li><strong>Labels round.</strong> Packaged foods may round to the nearest gram, and small
+        servings compound that error.</li>
+      </ul>
+      <p>For the authoritative reference, see MyPlate's Protein Foods Group and the USDA FoodData
+      Central database behind it.</p>''', tight=True),
+    [("protein.html", "What protein actually does"), ("plant-based-protein-sources.html", "Best plant-based protein sources"), ("how-much-protein-per-day.html", "How much protein you need")]
 )
 
 add(
