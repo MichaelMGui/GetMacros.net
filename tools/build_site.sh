@@ -11,6 +11,7 @@ python3 tools/migrate_to_v3.py
 python3 tools/build_meal_finder.py
 python3 tools/build_restaurant_pages.py
 python3 tools/build_focus_pages.py
+python3 tools/expand_articles.py
 python3 tools/retitle.py
 python3 tools/recover_site_focus.py
 
