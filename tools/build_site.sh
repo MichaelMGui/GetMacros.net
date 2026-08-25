@@ -14,4 +14,5 @@ python3 tools/build_focus_pages.py
 python3 tools/retitle.py
 python3 tools/recover_site_focus.py
 
+python3 tools/inject_assets.py
 python3 tools/validate_site.py
