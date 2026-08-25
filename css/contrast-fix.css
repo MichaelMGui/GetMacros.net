@@ -180,3 +180,39 @@ body .dash-meal small { color: #4a5c53 !important; }
 /* 19. Breadcrumb links measured 23px, a pixel under the comfortable floor. */
 .site-v3 .breadcrumb a,
 .site-v3 .explore-all { display: inline-flex; align-items: center; min-height: 24px; }
+
+/* 20. Long citation URLs pushed the sources page 142px wider than the phone
+ *     viewport. A URL has no spaces to wrap at, so it needs an explicit break. */
+.site-v3 main a { overflow-wrap: anywhere; }
+.site-v3 main :is(.cite, .cite-org, .source-box) a { word-break: break-word; }
+
+/* 21. Mobile overflow, two causes.
+ *
+ *     Data tables are wider than a 390px viewport and had no scroll container,
+ *     so they pushed the whole document sideways. Scrolling the table inside
+ *     its own box keeps the page still.
+ *
+ *     "Keep reading" link rows were laid out without wrapping, so the second
+ *     and third links ran off the edge. */
+@media (max-width: 720px) {
+  .site-v3 main table:not(.meal-table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.site-v3 main :is(.related, .keep-reading, .article-related, .related-links) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+.site-v3 main :is(.result, .results, .calc-result) { max-width: 100%; }
+
+/* 22. The protein-value calculator lays its results out in fixed columns that
+ *     do not fit a 390px screen. One column on a phone. */
+@media (max-width: 560px) {
+  .site-v3 main .results { grid-template-columns: 1fr !important; }
+  .site-v3 main .result { min-width: 0; max-width: 100%; }
+  .site-v3 main .result :is(strong, b) { overflow-wrap: anywhere; }
+}

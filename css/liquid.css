@@ -42,3 +42,78 @@
   .liquid-blob,.liquid-sheen::after,.mm-num,.fitbar-fill,.fitbar-over{animation:none!important}
   .liquid-blobs{opacity:.4}
 }
+
+/* ============================================================
+ * Liquid motion, extended sitewide.
+ *
+ * Everything below animates only transform, opacity and filter, which the
+ * compositor handles off the main thread. Nothing here can move layout, so
+ * none of it can cost CLS. All of it stops under prefers-reduced-motion.
+ * ============================================================ */
+
+/* Page heroes get the same drifting body of colour as the finder. Sized in
+   percentages so one rule covers every hero regardless of height. */
+.liquid-surface{position:relative;overflow:hidden;isolation:isolate}
+.liquid-surface>.container{position:relative;z-index:1}
+.liquid-surface::before,.liquid-surface::after{content:"";position:absolute;border-radius:50%;
+  pointer-events:none;z-index:0;filter:blur(46px);opacity:.42;will-change:transform}
+.liquid-surface::before{width:52%;padding-bottom:52%;left:-8%;top:-18%;
+  background:radial-gradient(circle at 35% 35%,#5cc088,#12603f);animation:drift-a 21s ease-in-out infinite}
+.liquid-surface::after{width:42%;padding-bottom:42%;right:-6%;bottom:-22%;
+  background:radial-gradient(circle at 60% 40%,#a8dcbb,#178a5a);animation:drift-b 26s ease-in-out infinite}
+
+/* Cards lift on a spring curve rather than a linear ease, so the movement
+   settles instead of stopping dead. */
+.site-v3 :is(.meal-card,.goal-card,.tool-card,.guide-card,.chain-card,.pick-card,.explore-card){
+  transition:transform .32s cubic-bezier(.22,1,.36,1),box-shadow .32s cubic-bezier(.22,1,.36,1),border-color .2s}
+.site-v3 :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card):hover{
+  transform:translate3d(0,-5px,0)}
+
+/* A liquid underline that fills from the left on hover. */
+.site-v3 main a.meal-link,.site-v3 main .explore-all,.site-v3 main .meal-index-link a{
+  position:relative;text-decoration:none}
+.site-v3 main a.meal-link::after,.site-v3 main .explore-all::after,.site-v3 main .meal-index-link a::after{
+  content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;
+  background:currentColor;transform:scaleX(0);transform-origin:left;
+  transition:transform .34s cubic-bezier(.22,1,.36,1)}
+.site-v3 main a.meal-link:hover::after,.site-v3 main .explore-all:hover::after,
+.site-v3 main .meal-index-link a:hover::after{transform:scaleX(1)}
+
+/* Chips and quiz answers depress slightly when chosen, so selection has
+   weight rather than just changing colour. */
+.site-v3 .quiz-chip span,.site-v3 .mm-chip{transition:transform .18s cubic-bezier(.22,1,.36,1),
+  background .16s,border-color .16s,color .16s}
+.site-v3 .quiz-chip input:checked+span,.site-v3 .mm-chip.is-on{transform:translate3d(0,1px,0) scale(.985)}
+
+/* The progress bar advances on the same spring as everything else. */
+.site-v3 .quiz-bar{transition:width .42s cubic-bezier(.22,1,.36,1)}
+
+/* Buttons ripple outward from the centre on press. */
+.site-v3 main .btn{position:relative;overflow:hidden;
+  transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s}
+.site-v3 main .btn:active{transform:translate3d(0,1px,0) scale(.99)}
+.site-v3 main .btn::after{content:"";position:absolute;top:50%;left:50%;width:8px;height:8px;
+  border-radius:50%;background:currentColor;opacity:0;transform:translate(-50%,-50%) scale(1);
+  pointer-events:none}
+.site-v3 main .btn:active::after{animation:ripple .5s ease-out}
+@keyframes ripple{
+  from{opacity:.28;transform:translate(-50%,-50%) scale(1)}
+  to{opacity:0;transform:translate(-50%,-50%) scale(26)}}
+
+/* Result cards arrive in sequence instead of all at once. */
+.site-v3 .results-grid>.meal-card{animation:rise .44s cubic-bezier(.22,1,.36,1) both}
+.site-v3 .results-grid>.meal-card:nth-child(2){animation-delay:.05s}
+.site-v3 .results-grid>.meal-card:nth-child(3){animation-delay:.1s}
+.site-v3 .results-grid>.meal-card:nth-child(4){animation-delay:.15s}
+.site-v3 .results-grid>.meal-card:nth-child(5){animation-delay:.2s}
+.site-v3 .results-grid>.meal-card:nth-child(6){animation-delay:.25s}
+.site-v3 .results-grid>.meal-card:nth-child(n+7){animation-delay:.3s}
+
+@media (prefers-reduced-motion: reduce){
+  .liquid-surface::before,.liquid-surface::after,
+  .site-v3 .results-grid>.meal-card,.site-v3 main .btn::after{animation:none!important}
+  .site-v3 :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card):hover,
+  .site-v3 main .btn:active,.site-v3 .quiz-chip input:checked+span,
+  .site-v3 .mm-chip.is-on{transform:none!important}
+  .site-v3 main a.meal-link::after,.site-v3 main .explore-all::after{transition:none}
+}

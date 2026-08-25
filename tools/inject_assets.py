@@ -38,7 +38,32 @@ def main():
         open(f, "w", encoding="utf-8").write(c.replace("</head>", add + "</head>", 1))
         touched += 1
     print(f"asset links ensured on {touched} page(s)")
+    print(f"liquid-surface applied to {liquid_heroes()} hero(es)")
     return 0
+
+
+def liquid_heroes():
+    """Mark every page hero as a liquid surface.
+
+    The drifting background is a ::before/::after pair, so it needs no markup
+    beyond the class. Heroes that already carry the explicit blob markup are
+    left alone rather than getting two sets of moving colour.
+    """
+    n = 0
+    for f in sorted(glob.glob("*.html")) + sorted(glob.glob("*/*.html")):
+        c = open(f, encoding="utf-8").read()
+        if "liquid-blobs" in c:
+            continue
+        out = re.sub(
+            r'<section class="((?:[^"]*\b)?(?:hero|page-hero|focus-hero|calc-hub-hero|'
+            r'fast-hero-new|library-hero|learning-hero|guide-hub-hero|tool-hero|finder-hero)[^"]*)"',
+            lambda m: (m.group(0) if "liquid-surface" in m.group(1)
+                       else f'<section class="{m.group(1)} liquid-surface"'),
+            c)
+        if out != c:
+            open(f, "w", encoding="utf-8").write(out)
+            n += 1
+    return n
 
 
 if __name__ == "__main__":
