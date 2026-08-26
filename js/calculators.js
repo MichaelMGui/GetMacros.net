@@ -9,6 +9,7 @@
 //  - Carbohydrate target: remaining calories after protein and fat
 
 (function () {
+  var MacroMath = window.GMMacroMath;
   var LB_PER_KG = 2.2046226218;
   var IN_PER_CM = 0.3937007874;
 
@@ -27,9 +28,10 @@
   };
 
   function toKg(value, unit) {
-    return unit === "lb" ? value / LB_PER_KG : value;
+    return MacroMath ? MacroMath.toKg(value, unit) : (unit === "lb" ? value / LB_PER_KG : value);
   }
   function toCm(value, unit, inches) {
+    if (MacroMath) return MacroMath.toCm(value, unit, inches);
     if (unit === "ftin") {
       var totalIn = value * 12 + (inches || 0);
       return totalIn / IN_PER_CM;
@@ -38,6 +40,7 @@
   }
 
   function mifflinStJeor(sex, weightKg, heightCm, age) {
+    if (MacroMath) return MacroMath.mifflinStJeor(sex, weightKg, heightCm, age);
     var base = 10 * weightKg + 6.25 * heightCm - 5 * age;
     return sex === "male" ? base + 5 : base - 161;
   }
@@ -152,23 +155,28 @@
         return;
       }
 
-      var bmr = mifflinStJeor(sex, weightKg, heightCm, age);
-      var tdee = bmr * ACTIVITY[activityKey].mult;
       var goal = GOALS[goalKey];
-      var totalCals = tdee * (1 + goal.calAdj);
-
-      var proteinG = goal.proteinPerKg * weightKg;
-      var proteinCals = proteinG * 4;
-      var fatCals = totalCals * fatPercent;
-      var fatG = fatCals / 9;
-      var carbCals = totalCals - proteinCals - fatCals;
+      var calculated = MacroMath ? MacroMath.calculate({
+        sex: sex, age: age, weightKg: weightKg, heightCm: heightCm,
+        activityMultiplier: ACTIVITY[activityKey].mult,
+        calorieAdjustment: goal.calAdj, proteinPerKg: goal.proteinPerKg,
+        fatPercent: fatPercent
+      }) : null;
+      var bmr = calculated ? calculated.bmr : mifflinStJeor(sex, weightKg, heightCm, age);
+      var tdee = calculated ? calculated.tdee : bmr * ACTIVITY[activityKey].mult;
+      var totalCals = calculated ? calculated.totalCals : tdee * (1 + goal.calAdj);
+      var proteinG = calculated ? calculated.proteinG : goal.proteinPerKg * weightKg;
+      var proteinCals = calculated ? calculated.proteinCals : proteinG * 4;
+      var fatCals = calculated ? calculated.fatCals : totalCals * fatPercent;
+      var fatG = calculated ? calculated.fatG : fatCals / 9;
+      var carbCals = calculated ? calculated.carbCals : totalCals - proteinCals - fatCals;
 
       if (carbCals < 0) {
         errorBox.textContent = "Your protein target alone exceeds your calorie target at this weight and goal. This is rare — double-check your weight and activity level.";
         errorBox.hidden = false;
         return;
       }
-      var carbG = carbCals / 4;
+      var carbG = calculated ? calculated.carbG : carbCals / 4;
 
       renderMacroResults({
         bmr: bmr,

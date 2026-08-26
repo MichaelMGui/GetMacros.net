@@ -6,7 +6,7 @@ import json
 
 SITE = "https://getmacros.net"
 PUBLISHER = "ca-pub-2316153877942502"
-ASSET_VERSION = "20260823f"
+ASSET_VERSION = "20260826a"
 
 CSP = (
     "default-src 'self'; script-src 'self' 'unsafe-inline' "
@@ -72,6 +72,7 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/recovery.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/readability-v2.css?v=20260823d">
+<link rel="stylesheet" href="css/premium-v4.css?v={ASSET_VERSION}">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUBLISHER}" crossorigin="anonymous"></script>
 {jsonld}
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
@@ -107,7 +108,7 @@ def footer() -> str:
 <div><strong>Trust</strong><a href="about.html">About</a><a href="editorial-policy.html">Editorial policy</a><a href="sources.html">Sources</a><a href="corrections.html">Corrections</a></div>
 <div><strong>Legal &amp; contact</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a><a href="contact.html">Contact</a></div>
 <small>&copy; 2026 GetMacros.net &middot; Educational information, not individualized medical advice.</small>
-</footer>'''
+</footer><script src="js/site-motion.js?v=20260826a"></script>'''
 
 
 def breadcrumbs(items: list[tuple[str, str | None]]) -> str:

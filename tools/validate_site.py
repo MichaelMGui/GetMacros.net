@@ -227,6 +227,10 @@ def main() -> int:
             errors.append(f"{path}: {parser.images_without_alt} image(s) missing alt attributes")
         if "ca-pub-XXXXXXXXXXXXXXXX" in text or 'data-ad-slot="0000000000"' in text:
             errors.append(f"{path}: advertising placeholder remains")
+        if "css/premium-v4.css?v=20260826a" not in text:
+            errors.append(f"{path}: shared premium visual system is missing")
+        if "js/site-motion.js?v=20260826a" not in text:
+            errors.append(f"{path}: shared motion layer is missing")
         if "highperformanceformat.com" in text or "ads-config.js" in text:
             errors.append(f"{path}: obsolete third-party ad code remains")
         if re.search(r"pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js", text) and PUBLISHER not in text:
@@ -383,6 +387,9 @@ def main() -> int:
                 errors.append(f"{page_path}: tracked item missing from visible HTML: {meal['name']}")
 
     calc_text = pages.get("calculators.html", ("", PageParser()))[0]
+    home_text = pages.get("index.html", ("", PageParser()))[0]
+    if "js/macro-math.js?v=20260826a" not in calc_text or "js/macro-math.js?v=20260826a" not in home_text:
+        errors.append("macro calculator: shared calculation engine is missing from a calculator entry point")
     if calc_text.count('href="budget-meal-builder.html"') != 1:
         errors.append("calculators.html: Budget meal builder must appear exactly once")
     if "related-explore" in calc_text:

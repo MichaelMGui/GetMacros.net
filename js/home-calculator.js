@@ -1,1 +1,42 @@
-(()=>{const form=document.querySelector('#home-macro-form');if(!form)return;const round=n=>Math.round(n);const t=(k,d)=>form.dataset[k]||d;form.addEventListener('submit',e=>{e.preventDefault();const v=Object.fromEntries(new FormData(form));const age=+v.age,kg=+v.weight*.45359237,cm=+v.height*2.54,activity=+v.activity,error=document.querySelector('#hc-error');if(age<14||age>100||kg<30||kg>300||cm<120||cm>230){error.textContent=t('errText','Please check the age, weight and height entries.');error.hidden=false;return}error.hidden=true;const bmr=10*kg+6.25*cm-5*age+(v.sex==='male'?5:-161),tdee=bmr*activity,settings={lose:{adjust:.8,protein:1.8,label:t('goalLose','gradual fat loss')},maintain:{adjust:1,protein:1.6,label:t('goalMaintain','maintenance')},gain:{adjust:1.12,protein:2,label:t('goalGain','muscle gain')}}[v.goal],cal=tdee*settings.adjust,protein=kg*settings.protein,fat=cal*.3/9,carbs=Math.max(0,(cal-protein*4-fat*9)/4);document.querySelector('#hc-calories').textContent=round(cal).toLocaleString();document.querySelector('#hc-protein').textContent=round(protein)+'g';document.querySelector('#hc-carbs').textContent=round(carbs)+'g';document.querySelector('#hc-fat').textContent=round(fat)+'g';document.querySelector('#hc-context').textContent=t('bmrLabel','BMR')+' '+round(bmr).toLocaleString()+' kcal · '+t('tdeeLabel','estimated TDEE')+' '+round(tdee).toLocaleString()+' kcal · '+settings.label+'.';document.querySelector('#hc-results').hidden=false;document.querySelector('#hc-results').scrollIntoView({behavior:'smooth',block:'nearest'})})})();
+(function () {
+  "use strict";
+  var form = document.querySelector("#home-macro-form");
+  var math = window.GMMacroMath;
+  if (!form || !math) return;
+  function round(value) { return Math.round(value); }
+  function text(key, fallback) { return form.dataset[key] || fallback; }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var values = Object.fromEntries(new FormData(form));
+    var age = Number(values.age);
+    var kg = math.toKg(Number(values.weight), "lb");
+    var cm = math.toCm(Number(values.height), "in");
+    var activity = Number(values.activity);
+    var error = document.querySelector("#hc-error");
+    if (age < 14 || age > 100 || kg < 30 || kg > 300 || cm < 120 || cm > 230) {
+      error.textContent = text("errText", "Please check the age, weight and height entries.");
+      error.hidden = false;
+      return;
+    }
+    error.hidden = true;
+    var settings = {
+      lose: { adjustment: -.2, protein: 1.8, label: text("goalLose", "gradual fat loss") },
+      maintain: { adjustment: 0, protein: 1.6, label: text("goalMaintain", "maintenance") },
+      gain: { adjustment: .12, protein: 2, label: text("goalGain", "muscle gain") }
+    }[values.goal];
+    var result = math.calculate({ sex: values.sex, age: age, weightKg: kg, heightCm: cm,
+      activityMultiplier: activity, calorieAdjustment: settings.adjustment,
+      proteinPerKg: settings.protein, fatPercent: .3 });
+    document.querySelector("#hc-calories").textContent = round(result.totalCals).toLocaleString();
+    document.querySelector("#hc-protein").textContent = round(result.proteinG) + "g";
+    document.querySelector("#hc-carbs").textContent = round(result.carbG) + "g";
+    document.querySelector("#hc-fat").textContent = round(result.fatG) + "g";
+    document.querySelector("#hc-context").textContent = text("bmrLabel", "BMR") + " " +
+      round(result.bmr).toLocaleString() + " kcal · " + text("tdeeLabel", "estimated TDEE") + " " +
+      round(result.tdee).toLocaleString() + " kcal · " + settings.label + ".";
+    var output = document.querySelector("#hc-results");
+    output.hidden = false;
+    output.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+}());
