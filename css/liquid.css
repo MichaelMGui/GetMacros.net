@@ -1,0 +1,119 @@
+/* Liquid motion.
+ *
+ * Two blurred blobs drifting behind the hero, merged by an SVG gooey filter so
+ * they read as one moving body of colour rather than two circles. Everything
+ * is transform and opacity only, which the compositor handles off the main
+ * thread, so the animation cannot cost layout stability.
+ *
+ * The whole system stops under prefers-reduced-motion. Motion sickness and
+ * vestibular disorders are real, and a decorative background is never worth
+ * making someone ill.
+ */
+.liquid-hero{position:relative;overflow:hidden;isolation:isolate}
+.liquid-blobs{position:absolute;inset:-18%;z-index:-1;filter:url(#gooey);opacity:.55;pointer-events:none}
+.liquid-blob{position:absolute;border-radius:50%;will-change:transform}
+.liquid-blob.b1{width:46%;padding-bottom:46%;left:2%;top:6%;background:radial-gradient(circle at 35% 35%,#4b9e69,#1b6b4a);animation:drift-a 19s ease-in-out infinite}
+.liquid-blob.b2{width:38%;padding-bottom:38%;right:6%;top:22%;background:radial-gradient(circle at 60% 40%,#7fc79a,#178a5a);animation:drift-b 23s ease-in-out infinite}
+.liquid-blob.b3{width:30%;padding-bottom:30%;left:38%;bottom:-6%;background:radial-gradient(circle at 50% 50%,#a8dcbb,#2f8a5c);animation:drift-c 27s ease-in-out infinite}
+@keyframes drift-a{0%,100%{transform:translate3d(0,0,0) scale(1)}33%{transform:translate3d(14%,10%,0) scale(1.12)}66%{transform:translate3d(-8%,16%,0) scale(.94)}}
+@keyframes drift-b{0%,100%{transform:translate3d(0,0,0) scale(1)}30%{transform:translate3d(-16%,12%,0) scale(1.08)}70%{transform:translate3d(10%,-10%,0) scale(.9)}}
+@keyframes drift-c{0%,100%{transform:translate3d(0,0,0) scale(1)}40%{transform:translate3d(12%,-14%,0) scale(1.15)}75%{transform:translate3d(-14%,-4%,0) scale(.92)}}
+
+/* A slow sheen crossing the primary action, so the main call to action has the
+   same liquid quality as the background without moving or resizing. */
+.liquid-sheen{position:relative;overflow:hidden}
+.liquid-sheen::after{content:"";position:absolute;top:-60%;bottom:-60%;width:38%;left:-45%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.42),transparent);
+  transform:skewX(-18deg);animation:sheen 4.6s ease-in-out infinite}
+@keyframes sheen{0%{left:-45%}55%{left:118%}100%{left:118%}}
+
+/* The macro numbers rise and settle once, rather than appearing abruptly. */
+.mm-num{animation:rise .5s cubic-bezier(.22,1,.36,1) both}
+.mm-num:nth-child(2){animation-delay:.06s}
+.mm-num:nth-child(3){animation-delay:.12s}
+.mm-num:nth-child(4){animation-delay:.18s}
+@keyframes rise{from{opacity:0;transform:translate3d(0,10px,0)}to{opacity:1;transform:none}}
+
+/* Fill bars fill from empty, so you watch the meal land against your budget. */
+.fitbar-fill,.fitbar-over{animation:fill .62s cubic-bezier(.22,1,.36,1) both}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+@media (prefers-reduced-motion: reduce){
+  .liquid-blob,.liquid-sheen::after,.mm-num,.fitbar-fill,.fitbar-over{animation:none!important}
+  .liquid-blobs{opacity:.4}
+}
+
+/* ============================================================
+ * Liquid motion, extended sitewide.
+ *
+ * Everything below animates only transform, opacity and filter, which the
+ * compositor handles off the main thread. Nothing here can move layout, so
+ * none of it can cost CLS. All of it stops under prefers-reduced-motion.
+ * ============================================================ */
+
+/* Page heroes get the same drifting body of colour as the finder. Sized in
+   percentages so one rule covers every hero regardless of height. */
+.liquid-surface{position:relative;overflow:hidden;isolation:isolate}
+.liquid-surface>.container{position:relative;z-index:1}
+.liquid-surface::before,.liquid-surface::after{content:"";position:absolute;border-radius:50%;
+  pointer-events:none;z-index:0;filter:blur(46px);opacity:.42;will-change:transform}
+.liquid-surface::before{width:52%;padding-bottom:52%;left:-8%;top:-18%;
+  background:radial-gradient(circle at 35% 35%,#5cc088,#12603f);animation:drift-a 21s ease-in-out infinite}
+.liquid-surface::after{width:42%;padding-bottom:42%;right:-6%;bottom:-22%;
+  background:radial-gradient(circle at 60% 40%,#a8dcbb,#178a5a);animation:drift-b 26s ease-in-out infinite}
+
+/* Cards lift on a spring curve rather than a linear ease, so the movement
+   settles instead of stopping dead. */
+.site-v3 :is(.meal-card,.goal-card,.tool-card,.guide-card,.chain-card,.pick-card,.explore-card){
+  transition:transform .32s cubic-bezier(.22,1,.36,1),box-shadow .32s cubic-bezier(.22,1,.36,1),border-color .2s}
+.site-v3 :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card):hover{
+  transform:translate3d(0,-5px,0)}
+
+/* A liquid underline that fills from the left on hover. */
+.site-v3 main a.meal-link,.site-v3 main .explore-all,.site-v3 main .meal-index-link a{
+  position:relative;text-decoration:none}
+.site-v3 main a.meal-link::after,.site-v3 main .explore-all::after,.site-v3 main .meal-index-link a::after{
+  content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;
+  background:currentColor;transform:scaleX(0);transform-origin:left;
+  transition:transform .34s cubic-bezier(.22,1,.36,1)}
+.site-v3 main a.meal-link:hover::after,.site-v3 main .explore-all:hover::after,
+.site-v3 main .meal-index-link a:hover::after{transform:scaleX(1)}
+
+/* Chips and quiz answers depress slightly when chosen, so selection has
+   weight rather than just changing colour. */
+.site-v3 .quiz-chip span,.site-v3 .mm-chip{transition:transform .18s cubic-bezier(.22,1,.36,1),
+  background .16s,border-color .16s,color .16s}
+.site-v3 .quiz-chip input:checked+span,.site-v3 .mm-chip.is-on{transform:translate3d(0,1px,0) scale(.985)}
+
+/* The progress bar advances on the same spring as everything else. */
+.site-v3 .quiz-bar{transition:width .42s cubic-bezier(.22,1,.36,1)}
+
+/* Buttons ripple outward from the centre on press. */
+.site-v3 main .btn{position:relative;overflow:hidden;
+  transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s}
+.site-v3 main .btn:active{transform:translate3d(0,1px,0) scale(.99)}
+.site-v3 main .btn::after{content:"";position:absolute;top:50%;left:50%;width:8px;height:8px;
+  border-radius:50%;background:currentColor;opacity:0;transform:translate(-50%,-50%) scale(1);
+  pointer-events:none}
+.site-v3 main .btn:active::after{animation:ripple .5s ease-out}
+@keyframes ripple{
+  from{opacity:.28;transform:translate(-50%,-50%) scale(1)}
+  to{opacity:0;transform:translate(-50%,-50%) scale(26)}}
+
+/* Result cards arrive in sequence instead of all at once. */
+.site-v3 .results-grid>.meal-card{animation:rise .44s cubic-bezier(.22,1,.36,1) both}
+.site-v3 .results-grid>.meal-card:nth-child(2){animation-delay:.05s}
+.site-v3 .results-grid>.meal-card:nth-child(3){animation-delay:.1s}
+.site-v3 .results-grid>.meal-card:nth-child(4){animation-delay:.15s}
+.site-v3 .results-grid>.meal-card:nth-child(5){animation-delay:.2s}
+.site-v3 .results-grid>.meal-card:nth-child(6){animation-delay:.25s}
+.site-v3 .results-grid>.meal-card:nth-child(n+7){animation-delay:.3s}
+
+@media (prefers-reduced-motion: reduce){
+  .liquid-surface::before,.liquid-surface::after,
+  .site-v3 .results-grid>.meal-card,.site-v3 main .btn::after{animation:none!important}
+  .site-v3 :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card):hover,
+  .site-v3 main .btn:active,.site-v3 .quiz-chip input:checked+span,
+  .site-v3 .mm-chip.is-on{transform:none!important}
+  .site-v3 main a.meal-link::after,.site-v3 main .explore-all::after{transition:none}
+}

@@ -388,7 +388,9 @@ def main() -> int:
 
     calc_text = pages.get("calculators.html", ("", PageParser()))[0]
     home_text = pages.get("index.html", ("", PageParser()))[0]
-    if "js/macro-math.js?v=20260826a" not in calc_text or "js/macro-math.js?v=20260826a" not in home_text:
+    if ("js/macro-math.js?v=20260826a" not in calc_text
+            or "js/macro-math.js?v=20260826a" not in home_text
+            or "js/macro-math.js?v=20260826a" not in finder_text):
         errors.append("macro calculator: shared calculation engine is missing from a calculator entry point")
     if calc_text.count('href="budget-meal-builder.html"') != 1:
         errors.append("calculators.html: Budget meal builder must appear exactly once")

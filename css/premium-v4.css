@@ -37,18 +37,6 @@ body::before {
     var(--premium-paper);
 }
 
-.site-progress {
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 1000;
-  height: 3px;
-  transform: scaleX(0);
-  transform-origin: left;
-  background: linear-gradient(90deg, var(--premium-lime), #79df9e);
-  box-shadow: 0 0 16px rgba(223, 255, 118, .45);
-  pointer-events: none;
-}
-
 .container { width: min(1180px, calc(100% - 40px)); }
 
 .site-header {
@@ -156,14 +144,14 @@ p, li { text-wrap: pretty; }
 .btn-primary { background: var(--premium-lime) !important; color: var(--premium-forest-deep) !important; }
 .btn-outline, .btn-ghost { border-color: rgba(255, 255, 255, .34) !important; }
 
-.liquid-hero {
+.premium-liquid {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   background-color: var(--premium-forest-deep) !important;
 }
-.liquid-hero::before,
-.liquid-hero::after {
+.premium-liquid::before,
+.premium-liquid::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -171,7 +159,7 @@ p, li { text-wrap: pretty; }
   filter: saturate(1.05);
   will-change: transform, border-radius;
 }
-.liquid-hero::before {
+.premium-liquid::before {
   width: min(54vw, 720px);
   aspect-ratio: 1;
   right: -11%;
@@ -181,7 +169,7 @@ p, li { text-wrap: pretty; }
   transform: translate3d(0, calc(var(--liquid-shift, 0) * 1px), 0);
   animation: liquidMorph 18s ease-in-out infinite alternate;
 }
-.liquid-hero::after {
+.premium-liquid::after {
   width: min(34vw, 460px);
   aspect-ratio: 1;
   left: -12%;
@@ -190,7 +178,7 @@ p, li { text-wrap: pretty; }
   background: radial-gradient(circle, rgba(189, 238, 207, .18), transparent 68%);
   animation: liquidDrift 22s ease-in-out infinite alternate;
 }
-.liquid-hero > * { position: relative; z-index: 1; }
+.premium-liquid > * { position: relative; z-index: 1; }
 @keyframes liquidMorph {
   0% { border-radius: 43% 57% 64% 36% / 45% 35% 65% 55%; transform: translate3d(0, 0, 0) rotate(0); }
   50% { border-radius: 59% 41% 38% 62% / 57% 63% 37% 43%; transform: translate3d(-2%, 4%, 0) rotate(6deg); }
@@ -202,14 +190,12 @@ p, li { text-wrap: pretty; }
 }
 
 .sample-card, .finder-photo, .calc-photo-card {
-  transform: perspective(1100px) rotateX(calc(var(--tilt-y, 0) * 1deg)) rotateY(calc(var(--tilt-x, 0) * 1deg));
-  transform-style: preserve-3d;
-  transition: transform .28s ease, box-shadow .28s ease;
+  transition: box-shadow .28s ease;
   box-shadow: var(--premium-shadow) !important;
 }
 .sample-card h2 { color: var(--premium-ink) !important; }
 .sample-card p { color: #52685d !important; }
-.liquid-hero figcaption { color: #eef6f1 !important; }
+.calc-hub-hero figcaption, .finder-hero figcaption { color: #eef6f1 !important; }
 .result-meal-link { display: inline-block; margin-top: 10px; color: #e9ff9d !important; font-weight: 800; }
 
 .goal-card, .tool-card, .guide-card, .chain-card, .ranking-card, .pick-card,
@@ -277,14 +263,6 @@ td, th { border-color: #dce5df !important; }
 .modern-footer a { text-underline-offset: 4px; }
 .modern-footer a:hover { color: var(--premium-lime) !important; }
 
-html.motion-enabled .reveal-item {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .62s ease, transform .62s cubic-bezier(.2,.8,.2,1);
-  transition-delay: min(calc(var(--reveal-index, 0) * 45ms), 260ms);
-}
-html.motion-enabled .reveal-item.is-visible { opacity: 1; transform: translateY(0); }
-
 @media (max-width: 900px) {
   .container { width: min(100% - 28px, 1180px); }
   .full-nav { min-height: 66px; }
@@ -316,14 +294,13 @@ html.motion-enabled .reveal-item.is-visible { opacity: 1; transform: translateY(
   .nav-action { min-height: 42px; }
   .focus-hero h1, .focus-page-hero h1, .finder-hero h1, .calc-hub-hero h1,
   .guide-hub-hero h1, .search-hero h1, .article-hero h1 { font-size: clamp(2.35rem, 12vw, 3.45rem) !important; }
-  .liquid-hero::before { width: 110vw; right: -60%; top: -20%; opacity: .72; }
-  .liquid-hero::after { width: 80vw; left: -44%; bottom: -32%; }
+  .premium-liquid::before { width: 110vw; right: -60%; top: -20%; opacity: .72; }
+  .premium-liquid::after { width: 80vw; left: -44%; bottom: -32%; }
   .btn, .button, button[type="submit"], .calc-submit { min-height: 50px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  html.motion-enabled .reveal-item { opacity: 1; transform: none; }
   .sample-card, .finder-photo, .calc-photo-card { transform: none !important; }
 }

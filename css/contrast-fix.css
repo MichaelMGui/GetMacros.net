@@ -1,0 +1,237 @@
+/* Contrast and legibility repairs.
+ *
+ * Found by an automated pass over every page at 390px and 1280px, measuring
+ * WCAG contrast for each text node against its real painted background. Seven
+ * distinct colour pairs were failing, several of them at ratios so low the text
+ * was effectively invisible. Loads last so it wins without needing !important
+ * except where it has to beat an existing !important.
+ */
+
+/* 1. White text on the lime button. 1.13:1.
+ *    site-v3.css forces `main a.btn-primary` to #fff for the dark-green button,
+ *    and four page stylesheets repaint that same class lime. Whoever wins, the
+ *    pair is wrong. Colour has to travel with the background.
+ *
+ *    site-v3.css uses `.site-v3 main a.btn-primary` (0,2,2). A rule of lower
+ *    specificity loses even with !important, so these selectors are written to
+ *    outrank it rather than to read tidily. */
+.site-v3 main .focus-actions a.btn-primary,
+.site-v3 main .calc-hero-actions a.btn-primary,
+.site-v3 main .fast-actions a.btn-primary,
+.site-v3 main .library-actions a.btn-primary,
+.site-v3 main .learning-actions a.btn-primary,
+.site-v3 main .hero-actions a.btn-primary,
+body main .focus-actions a.btn-primary,
+body main .fast-actions a.btn-primary,
+body main .calc-hero-actions a.btn-primary { color: #10231b !important; }
+
+/* 2. A white card nested inside a dark hero. 1.00:1 on the heading.
+ *    .focus-hero sets color:#fff for the whole section; .sample-card paints
+ *    itself white but its heading and paragraph inherit the hero's white. */
+body section[class*="hero"] .sample-card,
+body section[class*="hero"] .sample-card h2,
+body section[class*="hero"] .sample-card h3,
+body section[class*="hero"] .sample-card strong,
+body section[class*="hero"] .sample-card b,
+body .sample-card, body .sample-card h2,
+body .sample-card h3 { color: #10231b !important; }
+body section[class*="hero"] .sample-card p,
+body section[class*="hero"] .sample-card small,
+body .sample-card p, body .sample-card small,
+body .sample-card .sample-macros span { color: #4a5c53 !important; }
+body .sample-card .sample-label { color: #2c6647 !important; }
+
+/* 3. The calculator's fine print. 1.18:1.
+ *    .home-calc-form is a light panel inside the dark .home-calculator band,
+ *    so text coloured for the dark side lands on the light panel. */
+.home-calc-form .calc-fineprint,
+.home-calc-form .home-calc-results p,
+.home-calc-form .result-head small,
+.home-calc-form .result-head span { color: #4a5c53 !important; }
+
+/* 4. Macro labels in the results panel. 4.27:1, just under the 4.5 floor. */
+.result-macros span,
+.home-calc-results .result-macros span { color: #55665d !important; }
+
+/* 5. Outline buttons on dark bands rendered in the dark ink colour. 1.00:1. */
+.method-band .btn-outline,
+.trust-box .btn-outline,
+.compact-calc .btn-outline,
+.method-band .btn,
+.trust-box .btn { color: #fff !important; border-color: rgba(255,255,255,.65) !important; }
+
+/* 6. Minimum text size. 366 nodes rendered at 11.52px (0.72rem), below the
+ *    12px floor where small type stops being comfortably readable on a phone. */
+.pick-metrics span,
+.dash-macros span,
+.sample-macros span,
+.result-macros span,
+.result-head span,
+.calc-fineprint,
+.metric-note,
+.pick-card .rank,
+.meal-tag,
+.meal-chain { font-size: max(0.75rem, 12px); }
+
+/* 7. Line length. Body copy was running to 128-175 characters on a wide
+ *    screen; comfortable reading is roughly 50-75. Cap the measure without
+ *    touching layout elements that are meant to be full width.
+ *
+ *    Selected by container rather than by absence of a class: js/polish.js
+ *    adds .reveal-item to these paragraphs, which silently defeated an
+ *    earlier `p:not([class])` rule and let 78 paragraphs run long again. */
+main section > .container > p,
+main section > .container > ul > li,
+main section > .container > ol > li,
+main .expanded p,
+main .expanded li,
+.meal-list-note,
+.mm-stage-lead,
+.section-head p { max-width: 68ch; }
+
+/* 8. Muted body colour landing on a dark band (#40564b on #173d2f, 1.9:1) and
+ *    on the protein tint (#607168 on #f7e8e6). Both need the light/dark
+ *    decision made explicitly rather than inherited. */
+body .trust-box p, body .trust-box li, body .trust-box small,
+body .method-band p, body .method-band li,
+body .lane-label span, body .lane-label strong,
+body .path-card.featured p { color: #d7e7df !important; }
+body [style*="f7e8e6"] p, body .callout p { color: #4a5c53; }
+
+/* 9. Any remaining light-on-light inside a white card. The pattern is always
+ *    the same: a card paints itself white inside a dark section and the
+ *    section's text colour leaks into children that set no colour of their
+ *    own. */
+body .dash-meal, body .dash-meal strong, body .dash-meal small,
+body .calc-visual-row span, body .pick-card p, body .pick-card h3 { color: #193a2d !important; }
+body .dash-meal small { color: #4a5c53 !important; }
+
+/* 10. A light panel nested inside a dark band.
+ *
+ *     readability-v2.css lightens all text inside .compact-calc, .method-band
+ *     and .modern-footer, which is right for those dark bands. But
+ *     .home-calc-form is a #f7f8f3 panel sitting inside .compact-calc, so the
+ *     light text lands on a light panel at 1.18:1. That rule computes to
+ *     (0,3,0) via :is(), so the exception has to reach (0,4,0) to win.
+ *
+ *     Stated as what it is: inside the dark band, the form is an island that
+ *     keeps dark text. */
+.site-v3 .compact-calc .home-calc-form :is(p, li, small, span, .meta, .hint, .note, .calc-fineprint),
+.site-v3 .method-band .home-calc-form :is(p, li, small, span, .calc-fineprint) {
+  color: #4a5c53 !important;
+}
+.site-v3 .compact-calc .home-calc-form :is(b, strong, h2, h3, label) {
+  color: #10231b !important;
+}
+
+/* 11. Meal-index table headers rendered in the muted grey on the dark band
+ *     behind them (1.52:1). Headers on a dark ground need light text. */
+.site-v3 .meal-index .meal-table thead th,
+.site-v3 .meal-index .meal-table th[scope="col"] { color: #dbe8e0 !important; }
+.site-v3 .meal-index .meal-table th.is-key,
+.site-v3 .meal-index .meal-table td.is-key { color: #10231b !important; }
+
+/* 12. The muted grey sits at 4.35-4.46:1 on the warm tints, just under the
+ *     4.5 floor. Darkened only where it lands on those backgrounds rather
+ *     than changing the token everywhere. */
+.site-v3 .cite-org,
+.site-v3 .metric-note,
+.site-v3 .meal-index-intro { color: #4a5c53 !important; }
+/*     figcaption is scoped away from dark sections: an earlier version of this
+ *     rule darkened every caption and put 2.14:1 text on the calculators hero. */
+.site-v3 figcaption { color: #4a5c53; }
+.site-v3 :is([class*="hero"], .method-band, .compact-calc, .trust-box, .lane-label) figcaption {
+  color: #d7e7df !important;
+}
+
+
+/* 13. Text below the 12px floor. The chain names and rank labels rendered at
+ *     11.2px (0.7rem), small enough to strain on a phone. */
+.site-v3 :is(.chain-card small, .chain-links a, .dash-live, .pick-card header span,
+  .stats-ribbon span, .lane-label span, .sample-label, .rank, .eyebrow) {
+  font-size: max(0.75rem, 12px);
+}
+
+/* 14. Headings clipped on narrow screens. Long single words in a heading
+ *     cannot wrap without help, so the heading overflows its container. */
+.site-v3 main :is(h1, h2, h3) { overflow-wrap: break-word; hyphens: auto; }
+@media (max-width: 560px) {
+  .site-v3 main h1 { font-size: clamp(1.6rem, 7vw, 2.4rem); line-height: 1.15; }
+  .site-v3 main h2 { font-size: clamp(1.35rem, 5.5vw, 1.9rem); }
+}
+
+/* 15. Tap targets. Links in dense lists were as short as 16px; the practical
+ *     floor for a finger is around 24px, and 44px where the link is a primary
+ *     action rather than one of many in running text. */
+.site-v3 main :is(.chain-links a, .tool-links a, .link-stack a, .meal-jump a,
+  .quiz-skip, .link-btn) { min-height: 32px; display: flex; align-items: center; }
+.site-v3 main .btn { min-height: 44px; }
+
+/* 16. Chain names on the homepage rendered at 11.2px. */
+.site-v3 main .chain-card span,
+.site-v3 main .chain-card b { font-size: max(0.75rem, 12px); }
+
+/* 17. Table headers and calculator labels at 11.84px. */
+.site-v3 .meal-table thead th,
+.site-v3 .data-table thead th,
+.site-v3 .comparison-table thead th,
+.site-v3 .wg-label,
+.site-v3 .result-head span { font-size: max(0.75rem, 12px); }
+
+/* 18. Two paragraphs on the finder still ran to 163-182 characters. */
+.site-v3 .meal-index-intro,
+.site-v3 .mm-stage-lead,
+.site-v3 .calc-fineprint,
+.site-v3 .meal-list-note { max-width: 72ch; }
+
+/* 19. Breadcrumb links measured 23px, a pixel under the comfortable floor. */
+.site-v3 .breadcrumb a,
+.site-v3 .explore-all { display: inline-flex; align-items: center; min-height: 24px; }
+
+/* 20. Long citation URLs pushed the sources page 142px wider than the phone
+ *     viewport. A URL has no spaces to wrap at, so it needs an explicit break. */
+.site-v3 main a { overflow-wrap: anywhere; }
+.site-v3 main :is(.cite, .cite-org, .source-box) a { word-break: break-word; }
+
+/* 21. Mobile overflow, two causes.
+ *
+ *     Data tables are wider than a 390px viewport and had no scroll container,
+ *     so they pushed the whole document sideways. Scrolling the table inside
+ *     its own box keeps the page still.
+ *
+ *     "Keep reading" link rows were laid out without wrapping, so the second
+ *     and third links ran off the edge. */
+@media (max-width: 720px) {
+  .site-v3 main table:not(.meal-table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.site-v3 main :is(.related, .keep-reading, .article-related, .related-links) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+.site-v3 main :is(.result, .results, .calc-result) { max-width: 100%; }
+
+/* 22. The protein-value calculator lays its results out in fixed columns that
+ *     do not fit a 390px screen. One column on a phone. */
+@media (max-width: 560px) {
+  .site-v3 main .results { grid-template-columns: 1fr !important; }
+  .site-v3 main .result { min-width: 0; max-width: 100%; }
+  .site-v3 main .result :is(strong, b) { overflow-wrap: anywhere; }
+}
+
+/* 23. Prose nested one level deeper than rule 7 reaches: panels, cards and
+ *     callouts inside a container. Capping the measure on the block rather
+ *     than enumerating every wrapper, since new wrappers keep appearing. */
+.site-v3 main :is(.panel, .callout, .source-box, .advice-card, .expanded) :is(p, li) {
+  max-width: 68ch;
+}
+.site-v3 main section > .container > :is(div, article) > :is(p, li) { max-width: 68ch; }
+
+/* 24. FAQ answers sit two wrappers deep and were the last block still running
+ *     to 124 characters a line. */
+.site-v3 main :is(.faq-item, .faq-list, details) :is(p, li) { max-width: 68ch; }

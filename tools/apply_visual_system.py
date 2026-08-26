@@ -11,9 +11,10 @@ ROOT = Path(__file__).resolve().parents[1]
 VERSION = "20260826a"
 CSS = f'<link rel="stylesheet" href="css/premium-v4.css?v={VERSION}">'
 JS = f'<script src="js/site-motion.js?v={VERSION}"></script>'
+MATH = f'<script src="js/macro-math.js?v={VERSION}"></script>'
 
 
-def upsert(text: str) -> str:
+def upsert(text: str, name: str) -> str:
     text = re.sub(
         r'<link rel="stylesheet" href="css/premium-v4\.css\?v=[^"]+">',
         CSS,
@@ -31,6 +32,18 @@ def upsert(text: str) -> str:
     )
     if JS not in text:
         text = text.replace("</body>", f"{JS}</body>", 1)
+    if name == "index.html" and "js/macro-math.js" not in text:
+        text = text.replace('<script src="js/home-calculator.js', MATH + '<script src="js/home-calculator.js', 1)
+    if name == "calculators.html" and "js/macro-math.js" not in text:
+        text = text.replace('<script src="js/calculators.js', MATH + '<script src="js/calculators.js', 1)
+    if name == "restaurant-meal-finder.html" and "js/macro-math.js" not in text:
+        text = text.replace('<script src="js/macro-meals.js', MATH + '<script src="js/macro-meals.js', 1)
+    if name == "index.html":
+        text = re.sub(r'js/home-calculator\.js\?v=[^"\']+', f'js/home-calculator.js?v={VERSION}', text, count=1)
+    if name == "calculators.html":
+        text = re.sub(r'js/calculators\.js\?v=[^"\']+', f'js/calculators.js?v={VERSION}', text, count=1)
+    if name == "restaurant-meal-finder.html":
+        text = re.sub(r'js/macro-meals\.js\?v=[^"\']+', f'js/macro-meals.js?v={VERSION}', text, count=1)
     return text
 
 
@@ -41,7 +54,7 @@ def main() -> None:
         if not path.exists():
             continue
         before = path.read_text(encoding="utf-8")
-        after = upsert(before)
+        after = upsert(before, name)
         if after != before:
             path.write_text(after, encoding="utf-8")
             changed += 1
