@@ -75,9 +75,16 @@ body .sample-card .sample-label { color: #2c6647 !important; }
 
 /* 7. Line length. Body copy was running to 128-175 characters on a wide
  *    screen; comfortable reading is roughly 50-75. Cap the measure without
- *    touching layout elements that are meant to be full width. */
-main p:not([class]),
-main li:not([class]),
+ *    touching layout elements that are meant to be full width.
+ *
+ *    Selected by container rather than by absence of a class: js/polish.js
+ *    adds .reveal-item to these paragraphs, which silently defeated an
+ *    earlier `p:not([class])` rule and let 78 paragraphs run long again. */
+main section > .container > p,
+main section > .container > ul > li,
+main section > .container > ol > li,
+main .expanded p,
+main .expanded li,
 .meal-list-note,
 .mm-stage-lead,
 .section-head p { max-width: 68ch; }
@@ -216,3 +223,15 @@ body .dash-meal small { color: #4a5c53 !important; }
   .site-v3 main .result { min-width: 0; max-width: 100%; }
   .site-v3 main .result :is(strong, b) { overflow-wrap: anywhere; }
 }
+
+/* 23. Prose nested one level deeper than rule 7 reaches: panels, cards and
+ *     callouts inside a container. Capping the measure on the block rather
+ *     than enumerating every wrapper, since new wrappers keep appearing. */
+.site-v3 main :is(.panel, .callout, .source-box, .advice-card, .expanded) :is(p, li) {
+  max-width: 68ch;
+}
+.site-v3 main section > .container > :is(div, article) > :is(p, li) { max-width: 68ch; }
+
+/* 24. FAQ answers sit two wrappers deep and were the last block still running
+ *     to 124 characters a line. */
+.site-v3 main :is(.faq-item, .faq-list, details) :is(p, li) { max-width: 68ch; }
