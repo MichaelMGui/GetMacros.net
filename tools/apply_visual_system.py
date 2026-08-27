@@ -9,9 +9,10 @@ from site_scope import KEEP_ROOT_HTML
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = "20260826b"
+CALC_VERSION = "20260826c"
 CSS = f'<link rel="stylesheet" href="css/premium-v4.css?v={VERSION}">'
 JS = f'<script src="js/site-motion.js?v={VERSION}"></script>'
-MATH = f'<script src="js/macro-math.js?v={VERSION}"></script>'
+MATH = f'<script src="js/macro-math.js?v={CALC_VERSION}"></script>'
 
 
 def upsert(text: str, name: str) -> str:
@@ -36,7 +37,7 @@ def upsert(text: str, name: str) -> str:
     text = text.replace("</body>", f"{JS}</body>", 1)
     text = re.sub(
         r'js/macro-math\.js\?v=[^"\']+',
-        f'js/macro-math.js?v={VERSION}',
+        f'js/macro-math.js?v={CALC_VERSION}',
         text,
     )
     if name == "index.html" and "js/macro-math.js" not in text:
@@ -46,11 +47,11 @@ def upsert(text: str, name: str) -> str:
     if name == "restaurant-meal-finder.html" and "js/macro-math.js" not in text:
         text = text.replace('<script src="js/macro-meals.js', MATH + '<script src="js/macro-meals.js', 1)
     if name == "index.html":
-        text = re.sub(r'js/home-calculator\.js\?v=[^"\']+', f'js/home-calculator.js?v={VERSION}', text, count=1)
+        text = re.sub(r'js/home-calculator\.js\?v=[^"\']+', f'js/home-calculator.js?v={CALC_VERSION}', text, count=1)
     if name == "calculators.html":
-        text = re.sub(r'js/calculators\.js\?v=[^"\']+', f'js/calculators.js?v={VERSION}', text, count=1)
+        text = re.sub(r'js/calculators\.js\?v=[^"\']+', f'js/calculators.js?v={CALC_VERSION}', text, count=1)
     if name == "restaurant-meal-finder.html":
-        text = re.sub(r'js/macro-meals\.js\?v=[^"\']+', f'js/macro-meals.js?v={VERSION}', text, count=1)
+        text = re.sub(r'js/macro-meals\.js\?v=[^"\']+', f'js/macro-meals.js?v={CALC_VERSION}', text, count=1)
     return text
 
 

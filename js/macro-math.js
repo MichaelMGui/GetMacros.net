@@ -6,6 +6,12 @@
   "use strict";
   var LB_PER_KG = 2.2046226218;
   var IN_PER_CM = 0.3937007874;
+  var GOALS = {
+    lose: { calorieAdjustment: -.20, proteinPerKg: 1.8, label: "weight loss" },
+    recomp: { calorieAdjustment: -.10, proteinPerKg: 2.0, label: "losing fat while building muscle" },
+    maintain: { calorieAdjustment: 0, proteinPerKg: 1.6, label: "weight maintenance" },
+    gain: { calorieAdjustment: .12, proteinPerKg: 2.0, label: "gaining weight while building muscle" }
+  };
 
   function toKg(value, unit) { return unit === "lb" ? value / LB_PER_KG : value; }
   function toCm(value, unit, inches) {
@@ -30,5 +36,5 @@
       proteinCals: proteinCals, fatG: fatG, fatCals: fatCals,
       carbG: carbCals / 4, carbCals: carbCals };
   }
-  return { toKg: toKg, toCm: toCm, mifflinStJeor: mifflinStJeor, calculate: calculate };
+  return { GOALS: GOALS, toKg: toKg, toCm: toCm, mifflinStJeor: mifflinStJeor, calculate: calculate };
 }));

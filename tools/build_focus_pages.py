@@ -141,6 +141,11 @@ def build_home(meals: list[dict]) -> None:
         '<option value="male">Male</option><option value="female">Female</option>',
         1,
     )
+    body = body.replace(
+        '<option value="lose">Gradual fat loss</option><option value="maintain" selected>Maintain weight</option><option value="gain">Build muscle</option>',
+        '<option value="lose">Lose weight</option><option value="recomp">Lose fat + build muscle</option><option value="maintain" selected>Maintain weight</option><option value="gain">Gain weight + build muscle</option>',
+        1,
+    )
     (ROOT / "index.html").write_text(body, encoding="utf-8")
 
 

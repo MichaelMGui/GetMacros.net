@@ -21,7 +21,13 @@ const cut = math.calculate({ sex: "male", age: 30, weightKg: kg, heightCm: cm,
   activityMultiplier: 1.55, calorieAdjustment: -.2, proteinPerKg: 1.8, fatPercent: .3 });
 const bulk = math.calculate({ sex: "male", age: 30, weightKg: kg, heightCm: cm,
   activityMultiplier: 1.55, calorieAdjustment: .12, proteinPerKg: 2, fatPercent: .3 });
+const recomp = math.calculate({ sex: "male", age: 30, weightKg: kg, heightCm: cm,
+  activityMultiplier: 1.55, calorieAdjustment: math.GOALS.recomp.calorieAdjustment,
+  proteinPerKg: math.GOALS.recomp.proteinPerKg, fatPercent: .3 });
 close(cut.totalCals, result.tdee * .8, .0001, "cut target");
 close(bulk.totalCals, result.tdee * 1.12, .0001, "bulk target");
-assert.ok(cut.carbCals >= 0 && bulk.carbCals >= 0, "valid example has non-negative carbohydrate remainder");
+close(recomp.totalCals, result.tdee * .9, .0001, "recomposition target");
+assert.equal(math.GOALS.gain.label, "gaining weight while building muscle");
+assert.ok(cut.carbCals >= 0 && recomp.carbCals >= 0 && bulk.carbCals >= 0,
+  "valid example has non-negative carbohydrate remainder");
 console.log("PASS: conversions, BMR, TDEE, goal adjustments and macro energy balance.");

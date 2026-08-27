@@ -392,10 +392,23 @@ def main() -> int:
 
     calc_text = pages.get("calculators.html", ("", PageParser()))[0]
     home_text = pages.get("index.html", ("", PageParser()))[0]
-    if ("js/macro-math.js?v=20260826b" not in calc_text
-            or "js/macro-math.js?v=20260826b" not in home_text
-            or "js/macro-math.js?v=20260826b" not in finder_text):
+    if ("js/macro-math.js?v=20260826c" not in calc_text
+            or "js/macro-math.js?v=20260826c" not in home_text
+            or "js/macro-math.js?v=20260826c" not in finder_text):
         errors.append("macro calculator: shared calculation engine is missing from a calculator entry point")
+    for goal_value, goal_label in (
+        ("lose", "Lose weight"),
+        ("recomp", "Lose fat + build muscle"),
+        ("maintain", "Maintain weight"),
+        ("gain", "Gain weight + build muscle"),
+    ):
+        option = f'<option value="{goal_value}"'
+        if option not in calc_text or goal_label not in calc_text:
+            errors.append(f"calculators.html: goal option missing: {goal_label}")
+        if option not in home_text or goal_label not in home_text:
+            errors.append(f"index.html: goal option missing: {goal_label}")
+        if option not in (ROOT / "js" / "macro-meals.js").read_text(encoding="utf-8") or goal_label not in (ROOT / "js" / "macro-meals.js").read_text(encoding="utf-8"):
+            errors.append(f"meal finder macro calculator: goal option missing: {goal_label}")
     if calc_text.count('href="budget-meal-builder.html"') != 1:
         errors.append("calculators.html: Budget meal builder must appear exactly once")
     if "related-explore" in calc_text:

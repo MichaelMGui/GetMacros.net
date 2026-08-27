@@ -21,10 +21,11 @@
     athlete: { mult: 1.9, label: "Athlete (2x/day or physical job + training)" }
   };
 
-  var GOALS = {
-    lose: { calAdj: -0.2, proteinPerKg: 1.8, label: "Lose fat" },
-    maintain: { calAdj: 0, proteinPerKg: 1.6, label: "Maintain weight" },
-    gain: { calAdj: 0.12, proteinPerKg: 2.0, label: "Build muscle" }
+  var GOALS = MacroMath && MacroMath.GOALS ? MacroMath.GOALS : {
+    lose: { calorieAdjustment: -.20, proteinPerKg: 1.8, label: "weight loss" },
+    recomp: { calorieAdjustment: -.10, proteinPerKg: 2.0, label: "losing fat while building muscle" },
+    maintain: { calorieAdjustment: 0, proteinPerKg: 1.6, label: "weight maintenance" },
+    gain: { calorieAdjustment: .12, proteinPerKg: 2.0, label: "gaining weight while building muscle" }
   };
 
   function toKg(value, unit) {
@@ -159,12 +160,12 @@
       var calculated = MacroMath ? MacroMath.calculate({
         sex: sex, age: age, weightKg: weightKg, heightCm: heightCm,
         activityMultiplier: ACTIVITY[activityKey].mult,
-        calorieAdjustment: goal.calAdj, proteinPerKg: goal.proteinPerKg,
+        calorieAdjustment: goal.calorieAdjustment, proteinPerKg: goal.proteinPerKg,
         fatPercent: fatPercent
       }) : null;
       var bmr = calculated ? calculated.bmr : mifflinStJeor(sex, weightKg, heightCm, age);
       var tdee = calculated ? calculated.tdee : bmr * ACTIVITY[activityKey].mult;
-      var totalCals = calculated ? calculated.totalCals : tdee * (1 + goal.calAdj);
+      var totalCals = calculated ? calculated.totalCals : tdee * (1 + goal.calorieAdjustment);
       var proteinG = calculated ? calculated.proteinG : goal.proteinPerKg * weightKg;
       var proteinCals = calculated ? calculated.proteinCals : proteinG * 4;
       var fatCals = calculated ? calculated.fatCals : totalCals * fatPercent;

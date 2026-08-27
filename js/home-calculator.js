@@ -20,14 +20,10 @@
       return;
     }
     error.hidden = true;
-    var settings = {
-      lose: { adjustment: -.2, protein: 1.8, label: text("goalLose", "gradual fat loss") },
-      maintain: { adjustment: 0, protein: 1.6, label: text("goalMaintain", "maintenance") },
-      gain: { adjustment: .12, protein: 2, label: text("goalGain", "muscle gain") }
-    }[values.goal];
+    var settings = math.GOALS[values.goal];
     var result = math.calculate({ sex: values.sex, age: age, weightKg: kg, heightCm: cm,
-      activityMultiplier: activity, calorieAdjustment: settings.adjustment,
-      proteinPerKg: settings.protein, fatPercent: .3 });
+      activityMultiplier: activity, calorieAdjustment: settings.calorieAdjustment,
+      proteinPerKg: settings.proteinPerKg, fatPercent: .3 });
     document.querySelector("#hc-calories").textContent = round(result.totalCals).toLocaleString();
     document.querySelector("#hc-protein").textContent = round(result.proteinG) + "g";
     document.querySelector("#hc-carbs").textContent = round(result.carbG) + "g";

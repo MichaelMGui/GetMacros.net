@@ -17,10 +17,11 @@
   var root = document.getElementById("macro-meals");
   if (!root || !meals.length) return;
 
-  var GOALS = {
-    lose:     { adjust: 0.80, protein: 1.8, label: "gradual fat loss" },
-    maintain: { adjust: 1.00, protein: 1.6, label: "maintenance" },
-    gain:     { adjust: 1.12, protein: 2.0, label: "muscle gain" }
+  var GOALS = math && math.GOALS ? math.GOALS : {
+    lose: { calorieAdjustment: -.20, proteinPerKg: 1.8, label: "weight loss" },
+    recomp: { calorieAdjustment: -.10, proteinPerKg: 2.0, label: "losing fat while building muscle" },
+    maintain: { calorieAdjustment: 0, proteinPerKg: 1.6, label: "weight maintenance" },
+    gain: { calorieAdjustment: .12, proteinPerKg: 2.0, label: "gaining weight while building muscle" }
   };
 
   var state = { targets: null, meal: "lunch", diet: [], chain: [], filtersOpen: false };
@@ -50,13 +51,13 @@
     var g = GOALS[v.goal];
     var result = math ? math.calculate({
       sex: v.sex, age: v.age, weightKg: kg, heightCm: cm,
-      activityMultiplier: v.activity, calorieAdjustment: g.adjust - 1,
-      proteinPerKg: g.protein, fatPercent: .3
+      activityMultiplier: v.activity, calorieAdjustment: g.calorieAdjustment,
+      proteinPerKg: g.proteinPerKg, fatPercent: .3
     }) : null;
     var bmr = result ? result.bmr : 10 * kg + 6.25 * cm - 5 * v.age + (v.sex === "male" ? 5 : -161);
     var tdee = result ? result.tdee : bmr * v.activity;
-    var cal = result ? result.totalCals : tdee * g.adjust;
-    var protein = result ? result.proteinG : kg * g.protein;
+    var cal = result ? result.totalCals : tdee * (1 + g.calorieAdjustment);
+    var protein = result ? result.proteinG : kg * g.proteinPerKg;
     var fat = result ? result.fatG : cal * 0.3 / 9;
     var carbs = result ? Math.max(0, result.carbG) : Math.max(0, (cal - protein * 4 - fat * 9) / 4);
     return {
@@ -161,9 +162,10 @@
             '<option value="1.725">Hard, 6&ndash;7 days</option>' +
             '<option value="1.9">Very hard, or a physical job</option></select></label>' +
           '<label>Goal<select name="goal">' +
-            '<option value="lose">Gradual fat loss</option>' +
-            '<option value="maintain" selected>Maintain</option>' +
-            '<option value="gain">Build muscle</option></select></label>' +
+            '<option value="lose">Lose weight</option>' +
+            '<option value="recomp">Lose fat + build muscle</option>' +
+            '<option value="maintain" selected>Maintain weight</option>' +
+            '<option value="gain">Gain weight + build muscle</option></select></label>' +
         "</div>" +
         (err ? '<p class="mm-err" role="alert">' + esc(err) + "</p>" : "") +
         '<button class="btn btn-primary mm-go" type="submit">Get my macros</button>' +
