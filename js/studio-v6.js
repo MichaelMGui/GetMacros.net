@@ -57,7 +57,7 @@
       });
     }, { threshold: .08, rootMargin: "0px 0px -7%" });
     items.forEach(function (item, index) {
-      item.style.setProperty("--reveal-delay", (index % 4) * 55 + "ms");
+      item.style.setProperty("--reveal-delay", (index % 4) * 38 + "ms");
       observer.observe(item);
     });
   }
@@ -66,24 +66,32 @@
     if (reduced || !finePointer) return;
     document.querySelectorAll("[data-spotlight]").forEach(function (surface) {
       var frame = 0;
+      var targetX = .7;
+      var targetY = .2;
+      var currentX = targetX;
+      var currentY = targetY;
+      function animate() {
+        currentX += (targetX - currentX) * .13;
+        currentY += (targetY - currentY) * .13;
+        surface.style.setProperty("--spot-x", (currentX * 100).toFixed(2) + "%");
+        surface.style.setProperty("--spot-y", (currentY * 100).toFixed(2) + "%");
+        if (surface.classList.contains("gm6-decision-panel")) {
+          surface.style.setProperty("--tilt-x", ((currentX - .5) * 3).toFixed(3) + "deg");
+          surface.style.setProperty("--tilt-y", ((.5 - currentY) * 2.2).toFixed(3) + "deg");
+        }
+        if (Math.abs(targetX - currentX) > .001 || Math.abs(targetY - currentY) > .001) frame = requestAnimationFrame(animate);
+        else frame = 0;
+      }
       surface.addEventListener("pointermove", function (event) {
-        if (frame) return;
-        frame = requestAnimationFrame(function () {
-          var rect = surface.getBoundingClientRect();
-          var x = (event.clientX - rect.left) / rect.width;
-          var y = (event.clientY - rect.top) / rect.height;
-          surface.style.setProperty("--spot-x", (x * 100).toFixed(1) + "%");
-          surface.style.setProperty("--spot-y", (y * 100).toFixed(1) + "%");
-          if (surface.classList.contains("gm6-decision-panel")) {
-            surface.style.setProperty("--tilt-x", ((x - .5) * 4).toFixed(2) + "deg");
-            surface.style.setProperty("--tilt-y", ((.5 - y) * 3).toFixed(2) + "deg");
-          }
-          frame = 0;
-        });
+        var rect = surface.getBoundingClientRect();
+        targetX = (event.clientX - rect.left) / rect.width;
+        targetY = (event.clientY - rect.top) / rect.height;
+        if (!frame) frame = requestAnimationFrame(animate);
       }, { passive: true });
       surface.addEventListener("pointerleave", function () {
-        surface.style.removeProperty("--tilt-x");
-        surface.style.removeProperty("--tilt-y");
+        targetX = .7;
+        targetY = .2;
+        if (!frame) frame = requestAnimationFrame(animate);
       });
     });
   }
@@ -95,18 +103,27 @@
     var title = visual.querySelector("[data-story-title]");
     var copy = visual.querySelector("[data-story-copy]");
     var number = visual.querySelector("[data-story-number]");
-    function activate(step) {
+    var activeStep = null;
+    var switchTimer = 0;
+    function activate(step, immediate) {
+      if (activeStep === step) return;
+      activeStep = step;
       steps.forEach(function (item) { item.classList.toggle("is-active", item === step); });
-      if (title) title.textContent = step.dataset.title;
-      if (copy) copy.textContent = step.dataset.copy;
-      if (number) number.textContent = step.dataset.number;
       visual.style.setProperty("--story-width", step.dataset.width || "70%");
+      window.clearTimeout(switchTimer);
+      if (!immediate) visual.classList.add("is-switching");
+      switchTimer = window.setTimeout(function () {
+        if (title) title.textContent = step.dataset.title;
+        if (copy) copy.textContent = step.dataset.copy;
+        if (number) number.textContent = step.dataset.number;
+        requestAnimationFrame(function () { visual.classList.remove("is-switching"); });
+      }, immediate ? 0 : 120);
     }
-    activate(steps[0]);
+    activate(steps[0], true);
     if (reduced || !("IntersectionObserver" in window)) return;
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) activate(entry.target);
+        if (entry.isIntersecting) activate(entry.target, false);
       });
     }, { rootMargin: "-35% 0px -45%", threshold: 0 });
     steps.forEach(function (step) { observer.observe(step); });
