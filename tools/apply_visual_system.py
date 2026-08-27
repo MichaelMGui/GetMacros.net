@@ -8,7 +8,7 @@ from pathlib import Path
 from site_scope import KEEP_ROOT_HTML
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "20260826a"
+VERSION = "20260826b"
 CSS = f'<link rel="stylesheet" href="css/premium-v4.css?v={VERSION}">'
 JS = f'<script src="js/site-motion.js?v={VERSION}"></script>'
 MATH = f'<script src="js/macro-math.js?v={VERSION}"></script>'
@@ -17,21 +17,28 @@ MATH = f'<script src="js/macro-math.js?v={VERSION}"></script>'
 def upsert(text: str, name: str) -> str:
     text = re.sub(
         r'<link rel="stylesheet" href="css/premium-v4\.css\?v=[^"]+">',
-        CSS,
+        "",
         text,
         flags=re.I,
     )
-    if CSS not in text:
+    liquid = re.search(r'<link rel="stylesheet" href="css/liquid\.css\?v=[^"]+">', text, re.I)
+    if liquid:
+        text = text[:liquid.start()] + CSS + text[liquid.start():]
+    else:
         text = text.replace("</head>", f"{CSS}\n</head>", 1)
 
     text = re.sub(
         r'<script src="js/site-motion\.js\?v=[^"]+"></script>',
-        JS,
+        "",
         text,
         flags=re.I,
     )
-    if JS not in text:
-        text = text.replace("</body>", f"{JS}</body>", 1)
+    text = text.replace("</body>", f"{JS}</body>", 1)
+    text = re.sub(
+        r'js/macro-math\.js\?v=[^"\']+',
+        f'js/macro-math.js?v={VERSION}',
+        text,
+    )
     if name == "index.html" and "js/macro-math.js" not in text:
         text = text.replace('<script src="js/home-calculator.js', MATH + '<script src="js/home-calculator.js', 1)
     if name == "calculators.html" and "js/macro-math.js" not in text:

@@ -16,6 +16,7 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 SHEETS = ["css/liquid.css", "css/contrast-fix.css", "css/polish.css"]
 SCRIPTS = ["js/polish.js"]
+ASSET_VERSION = "20260826b"
 
 # Legacy scroll-reveal. It sets opacity:0 on `main > section` and relies
 # entirely on an IntersectionObserver callback to put it back, with no
@@ -34,23 +35,39 @@ def main():
         c = open(f, encoding="utf-8").read()
         if "</head>" not in c:
             continue
-        m = re.search(r"\?v=([0-9a-z]+)", c)
-        v = m.group(1) if m else "1"
-        prefix = "../" if "/" in f else ""
-        add = ""
+        v = ASSET_VERSION
+        # Normalize the late cascade instead of merely appending missing files.
+        # contrast-fix intentionally comes before effects-only polish.css, while
+        # premium-v4 is inserted immediately before this group by the visual
+        # system pass.
         for sheet in SHEETS:
-            if os.path.basename(sheet) in c:
-                continue
-            add += f'<link rel="stylesheet" href="{prefix}{sheet}?v={v}">'
-        out = c.replace("</head>", add + "</head>", 1) if add else c
+            c = re.sub(
+                rf'<link rel=["\']stylesheet["\'] href=["\'][^"\']*(?<![A-Za-z0-9_-]){re.escape(os.path.basename(sheet))}(?:\?[^"\']*)?["\']>',
+                "",
+                c,
+                flags=re.I,
+            )
+        prefix = "../" if "/" in f else ""
+        if not re.search(r'<link\b[^>]*rel=["\'][^"\']*\bicon\b', c, re.I):
+            c = c.replace(
+                "</head>",
+                f'<link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml"></head>',
+                1,
+            )
+        add = "".join(f'<link rel="stylesheet" href="{prefix}{sheet}?v={v}">' for sheet in SHEETS)
+        out = c.replace("</head>", add + "</head>", 1)
 
         # Behaviour scripts load deferred at the end of body: they only enhance
         # what is already rendered, so blocking parse for them would trade a
         # slower first paint for nothing.
         tail = ""
         for script in SCRIPTS:
-            if os.path.basename(script) in out:
-                continue
+            out = re.sub(
+                rf'<script[^>]*src=["\'][^"\']*(?<![A-Za-z0-9_-]){re.escape(os.path.basename(script))}(?:\?[^"\']*)?["\'][^>]*>\s*</script>',
+                "",
+                out,
+                flags=re.I,
+            )
             tail += f'<script src="{prefix}{script}?v={v}" defer></script>'
         if tail and "</body>" in out:
             out = out.replace("</body>", tail + "</body>", 1)

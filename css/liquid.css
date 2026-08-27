@@ -55,12 +55,22 @@
    percentages so one rule covers every hero regardless of height. */
 .liquid-surface{position:relative;overflow:hidden;isolation:isolate}
 .liquid-surface>.container{position:relative;z-index:1}
-.liquid-surface::before,.liquid-surface::after{content:"";position:absolute;border-radius:50%;
+.liquid-surface::before,.liquid-surface::after{content:"";position:absolute;
   pointer-events:none;z-index:0;filter:blur(46px);opacity:.42;will-change:transform}
 .liquid-surface::before{width:52%;padding-bottom:52%;left:-8%;top:-18%;
-  background:radial-gradient(circle at 35% 35%,#5cc088,#12603f);animation:drift-a 21s ease-in-out infinite}
+  border-radius:42% 58% 63% 37% / 52% 36% 64% 48%;
+  background:radial-gradient(circle at 35% 35%,#75d39d,#12603f 72%);animation:surface-flow-a 21s ease-in-out infinite}
 .liquid-surface::after{width:42%;padding-bottom:42%;right:-6%;bottom:-22%;
-  background:radial-gradient(circle at 60% 40%,#a8dcbb,#178a5a);animation:drift-b 26s ease-in-out infinite}
+  border-radius:61% 39% 35% 65% / 46% 62% 38% 54%;
+  background:radial-gradient(circle at 60% 40%,#dfff69,#178a5a 72%);animation:surface-flow-b 27s ease-in-out infinite}
+@keyframes surface-flow-a{
+  0%,100%{border-radius:42% 58% 63% 37% / 52% 36% 64% 48%;transform:translate3d(0,0,0) rotate(0) scale(1)}
+  45%{border-radius:63% 37% 42% 58% / 38% 59% 41% 62%;transform:translate3d(13%,8%,0) rotate(7deg) scale(1.09)}
+  75%{border-radius:37% 63% 58% 42% / 62% 42% 58% 38%;transform:translate3d(-5%,15%,0) rotate(-4deg) scale(.96)}}
+@keyframes surface-flow-b{
+  0%,100%{border-radius:61% 39% 35% 65% / 46% 62% 38% 54%;transform:translate3d(0,0,0) rotate(0) scale(1)}
+  38%{border-radius:39% 61% 66% 34% / 58% 39% 61% 42%;transform:translate3d(-15%,-7%,0) rotate(-8deg) scale(1.07)}
+  72%{border-radius:54% 46% 41% 59% / 35% 56% 44% 65%;transform:translate3d(7%,-12%,0) rotate(4deg) scale(.94)}}
 
 /* Cards lift on a spring curve rather than a linear ease, so the movement
    settles instead of stopping dead. */

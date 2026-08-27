@@ -18,3 +18,4 @@ python3 tools/recover_site_focus.py
 python3 tools/inject_assets.py
 python3 tools/apply_visual_system.py
 python3 tools/validate_site.py
+python3 tools/audit_visual_contract.py
