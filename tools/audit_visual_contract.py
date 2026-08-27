@@ -143,7 +143,7 @@ def main() -> int:
             errors.append(f"{rel}: favicon declaration is missing")
 
     home = (ROOT / "index.html").read_text(encoding="utf-8")
-    for required in ("bento-grid", "bento-tools", "chain-rail", "macro-ring", "story-band"):
+    for required in ("gm6-tool-bento", "gm6-finder-shell", "gm6-rail", "gm6-macro-score", "gm6-goal-story"):
         if required not in home:
             errors.append(f"index.html: premium homepage component is missing: {required}")
 

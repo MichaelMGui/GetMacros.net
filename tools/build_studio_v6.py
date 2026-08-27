@@ -1,73 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<script>if(self!==top){try{top.location=self.location;}catch(e){document.documentElement.style.display="none";}}</script>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Healthy Fast Food Finder &amp; Macro Calculator | GetMacros</title>
-<meta name="description" content="Find healthy fast-food options across 15 chains by calories, protein, fiber and sodium, then calculate daily macro targets with transparent tools.">
-<meta name="author" content="The GetMacros.net editorial team">
-<meta name="google-adsense-account" content="ca-pub-2316153877942502">
-<link rel="canonical" href="https://getmacros.net/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="GetMacros.net">
-<meta property="og:title" content="Healthy Fast Food Finder &amp; Macro Calculator | GetMacros">
-<meta property="og:description" content="Find healthy fast-food options across 15 chains by calories, protein, fiber and sodium, then calculate daily macro targets with transparent tools.">
-<meta property="og:url" content="https://getmacros.net/">
-<meta property="og:image" content="https://getmacros.net/images/og-default.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="GetMacros.net practical nutrition tools">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Healthy Fast Food Finder &amp; Macro Calculator | GetMacros">
-<meta name="twitter:description" content="Find healthy fast-food options across 15 chains by calories, protein, fiber and sodium, then calculate daily macro targets with transparent tools.">
-<meta name="twitter:image" content="https://getmacros.net/images/og-default.png">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#073426">
-<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=20260826a">
-<link rel="stylesheet" href="css/site-v3.css?v=20260826a">
-<link rel="stylesheet" href="css/recovery.css?v=20260826a">
-<link rel="stylesheet" href="css/readability-v2.css?v=20260823d">
+"""Apply the Studio v6 product system and rebuild the homepage hierarchy."""
+from pathlib import Path
+import re
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2316153877942502" crossorigin="anonymous"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "GetMacros.net", "url": "https://getmacros.net/", "description": "Find healthy fast-food options across 15 chains by calories, protein, fiber and sodium, then calculate daily macro targets with transparent tools.", "potentialAction": {"@type": "SearchAction", "target": "https://getmacros.net/search.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "GetMacros.net", "url": "https://getmacros.net/", "email": "getmacros.net@outlook.com", "publishingPrinciples": "https://getmacros.net/editorial-policy.html"}</script>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com https://*.adtrafficquality.google https://*.gstatic.com https://*.googleapis.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com https://*.adtrafficquality.google; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google https://*.googleapis.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="stylesheet" href="css/modern.css?v=20260823a">
-<link rel="stylesheet" href="css/premium-v4.css?v=20260826b"><link rel="stylesheet" href="css/liquid.css?v=20260826b"><link rel="stylesheet" href="css/contrast-fix.css?v=20260826b"><link rel="stylesheet" href="css/polish.css?v=20260826b"><link rel="stylesheet" href="css/atelier-v5.css?v=20260827b"><link rel="stylesheet" href="css/studio-v6.css?v=20260827b"></head>
-<body class="site-v3 modern-site recovery-page home-studio">
+ROOT = Path(__file__).resolve().parents[1]
+VERSION = "20260827b"
 
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header modern-header"><nav class="full-nav" aria-label="Main navigation">
-<a class="modern-brand" href="index.html" aria-label="GetMacros.net home"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a>
-<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open site menu</span><span class="nav-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span></button>
-<div class="full-nav-links" id="primary-navigation">
-<div class="nav-group"><button class="nav-group-trigger" type="button" aria-expanded="false">Eat Out</button><div class="nav-popover">
-<a href="healthy-fast-food.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-rice-bowl"></use></svg><strong>Healthy Fast Food</strong><small>Browse practical chain picks</small></a>
-<a href="restaurant-meal-finder.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-target"></use></svg><strong>Meal Finder</strong><small>Match meals to your goals</small></a>
-<a href="restaurant-meal-guides.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-document"></use></svg><strong>Restaurant Guides</strong><small>Compare all tracked chains</small></a>
-</div></div>
-<div class="nav-group"><button class="nav-group-trigger" type="button" aria-expanded="false">Tools</button><div class="nav-popover">
-<a href="calculators.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg><strong>Free Macro Calculator</strong><small>Estimate calories and macros</small></a>
-<a href="recipe-macro-scaler.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-carbs"></use></svg><strong>Recipe Macro Scaler</strong><small>Recalculate portions</small></a>
-<a href="nutrition-label-comparison-tool.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-document"></use></svg><strong>Compare Labels</strong><small>See foods side by side</small></a>
-</div></div>
-<div class="nav-group"><button class="nav-group-trigger" type="button" aria-expanded="false">Learn</button><div class="nav-popover">
-<a href="articles.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-book"></use></svg><strong>Nutrition Guides</strong><small>Clear, practical explainers</small></a>
-<a href="blog.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-article"></use></svg><strong>The GetMacros Journal</strong><small>New evidence and ideas</small></a>
-<a href="high-protein-foods-list.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-protein"></use></svg><strong>High-Protein Foods</strong><small>Compare useful choices</small></a>
-</div></div>
-<a class="nav-direct" href="about.html">About</a>
-<a class="nav-mobile-search" href="search.html">Search GetMacros</a>
-</div>
-<a class="nav-action" href="search.html" aria-label="Search GetMacros">Search</a>
-</nav></header>
-<main id="main-content">
+LIBRARY_CONTROLS = '''<section class="gm6-library-controls"><div class="container gm6-library-search"><label for="article-library-search">Find a useful guide<input id="article-library-search" type="search" placeholder="Try protein, weight loss, labels or meal prep" autocomplete="off"></label><p id="library-search-status" aria-live="polite">Showing a curated selection from each topic.</p></div></section>'''
+
+HOME_MAIN = r'''<main id="main-content">
 <section class="gm6-hero" data-spotlight>
   <div class="container gm6-hero-grid">
     <div class="gm6-hero-copy">
@@ -261,11 +201,75 @@
 <section class="gm6-final">
   <div class="container studio-reveal"><p class="eyebrow">Ready when the menu is</p><h2>Find the meal that fits today.</h2><p>Choose your goals, appetite, dietary needs and available restaurants. Get a shortlist you can actually order.</p><div class="gm6-hero-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Start the Meal Finder <span class="gm6-arrow" aria-hidden="true">→</span></a><a class="btn btn-outline" href="healthy-fast-food.html">Explore all restaurants</a></div></div>
 </section>
-</main><footer class="modern-footer">
-<div><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find fast-food meals that fit your calories, protein and goals—then understand the numbers.</p></div>
-<div><strong>Use GetMacros</strong><a href="healthy-fast-food.html">Healthy fast food</a><a href="restaurant-meal-finder.html">Meal finder</a><a href="calculators.html">Free macro calculator</a><a href="search.html">Search</a></div>
-<div><strong>Read</strong><a href="articles.html">Nutrition guides</a><a href="blog.html">The GetMacros Journal</a><a href="restaurant-meal-guides.html">Restaurant guides</a><a href="sources.html">Sources</a></div>
-<div><strong>About &amp; legal</strong><a href="about.html">About</a><a href="editorial-policy.html">Editorial policy</a><a href="corrections.html">Corrections</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a><a href="contact.html">Contact</a></div>
-<small>&copy; 2026 GetMacros.net &middot; Educational information, not individualized medical advice.</small>
-</footer>
-<script src="js/macro-math.js?v=20260826c"></script><script src="js/home-calculator.js?v=20260826c"></script><script src="js/polish.js?v=20260827b" defer></script><script src="js/site-motion.js?v=20260826b"></script><script src="js/atelier-v5.js?v=20260827b" defer></script><script src="js/studio-v6.js?v=20260827b" defer></script></body></html>
+</main>'''
+
+RESTAURANT_FILES = {
+    "cava-healthy-meals-macros.html", "chick-fil-a-healthy-meals-macros.html",
+    "chipotle-healthy-meals-macros.html", "dunkin-healthy-breakfast-macros.html",
+    "jersey-mikes-healthy-subs-macros.html", "kfc-healthy-meals-macros.html",
+    "mcdonalds-healthy-meals-macros.html", "panda-express-healthy-meals-macros.html",
+    "panera-healthy-meals-macros.html", "popeyes-healthy-meals-macros.html",
+    "starbucks-healthy-food-meals-macros.html", "subway-healthy-meals-macros.html",
+    "sweetgreen-healthy-meals-macros.html", "taco-bell-healthy-meals-macros.html",
+    "wendys-healthy-meals-macros.html",
+}
+
+TOOL_FILES = {
+    "calculators.html", "recipe-macro-scaler.html", "nutrition-label-comparison-tool.html",
+    "protein-value-calculator.html", "budget-meal-builder.html", "sodium-label-comparison-tool.html",
+    "carbohydrate-label-portion-tool.html", "weight-goal-timeline-calculator.html",
+    "sweat-rate-calculator.html",
+}
+
+LIBRARY_FILES = {"articles.html", "blog.html", "search.html", "restaurant-meal-guides.html"}
+
+def add_body_class(html: str, class_name: str) -> str:
+    match = re.search(r'<body class="([^"]*)"', html)
+    if not match:
+        return html
+    classes = match.group(1).split()
+    if class_name not in classes:
+        classes.append(class_name)
+    return html[:match.start(1)] + " ".join(classes) + html[match.end(1):]
+
+def apply_page(path: Path) -> bool:
+    html = path.read_text(encoding="utf-8")
+    original = html
+    name = path.name.lower()
+
+    html = re.sub(r'<link rel="stylesheet" href="css/studio-v6\.css\?v=[^"]+">', '', html)
+    html = re.sub(r'<script src="js/studio-v6\.js\?v=[^"]+" defer></script>', '', html)
+    html = html.replace("</head>", f'<link rel="stylesheet" href="css/studio-v6.css?v={VERSION}"></head>')
+    html = html.replace("</body>", f'<script src="js/studio-v6.js?v={VERSION}" defer></script></body>')
+
+    if name == "index.html":
+        html = re.sub(r'<main id="main-content">[\s\S]*?</main>', HOME_MAIN, html, count=1)
+        html = add_body_class(html, "home-studio")
+    elif name == "healthy-fast-food.html":
+        html = add_body_class(html, "flagship-page")
+    elif name == "restaurant-meal-finder.html":
+        html = add_body_class(html, "meal-finder-page")
+    elif name in RESTAURANT_FILES:
+        html = add_body_class(html, "restaurant-page")
+    elif name in TOOL_FILES:
+        html = add_body_class(html, "tools-page")
+    elif name in LIBRARY_FILES:
+        html = add_body_class(html, "library-page")
+
+    if name == "articles.html":
+        if 'id="article-library-search"' not in html:
+            html = html.replace('</section><section class="guide-group data-section">', f'</section>{LIBRARY_CONTROLS}<section class="guide-group data-section">', 1)
+        if 'js/article-library.js' not in html:
+            html = html.replace('</body>', '<script src="js/article-library.js?v=20260827b" defer></script></body>')
+
+    hero_h1 = re.search(r'(<(?:section|header)[^>]*(?:hero|Hero)[^>]*>[\s\S]{0,5000}?<h1)([^>]*>)', html)
+    if hero_h1 and "data-reveal-title" not in hero_h1.group(0):
+        html = html[:hero_h1.start(2)] + ' data-reveal-title' + html[hero_h1.start(2):]
+
+    if html != original:
+        path.write_text(html, encoding="utf-8", newline="\n")
+        return True
+    return False
+
+changed = sum(apply_page(path) for path in ROOT.glob("*.html"))
+print(f"Applied Studio v6 to {changed} pages.")

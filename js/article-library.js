@@ -1,14 +1,14 @@
 (function () {
   "use strict";
   var input = document.getElementById("article-library-search");
-  var sections = Array.prototype.slice.call(document.querySelectorAll(".library-section"));
+  var sections = Array.prototype.slice.call(document.querySelectorAll(".library-section, .guide-group"));
   if (!input || !sections.length) return;
   var status = document.getElementById("library-search-status");
 
   sections.forEach(function (section) {
-    var cards = Array.prototype.slice.call(section.querySelectorAll(".card"));
+    var cards = Array.prototype.slice.call(section.querySelectorAll(".card, .guide-card"));
     section.dataset.expanded = "false";
-    if (cards.length > 6) {
+    if (cards.length > 4) {
       var button = document.createElement("button");
       button.type = "button";
       button.className = "section-more";
@@ -28,11 +28,11 @@
     var query = raw.trim().toLowerCase();
     var total = 0;
     sections.forEach(function (section) {
-      var cards = Array.prototype.slice.call(section.querySelectorAll(".card"));
+      var cards = Array.prototype.slice.call(section.querySelectorAll(".card, .guide-card"));
       var sectionMatches = 0;
       cards.forEach(function (card, index) {
         var matches = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
-        var withinLimit = section.dataset.expanded === "true" || index < 6;
+        var withinLimit = section.dataset.expanded === "true" || index < 4;
         var show = query ? matches : withinLimit;
         card.classList.toggle("is-library-hidden", !show);
         if (matches) sectionMatches += 1;
@@ -43,7 +43,7 @@
       if (button) button.hidden = !!query;
     });
     if (status) {
-      status.textContent = query ? (total ? total + " matching articles" : "No articles match that search. Try a broader word.") : "Showing the first six articles in each topic.";
+      status.textContent = query ? (total ? total + " matching guides" : "No guides match that search. Try a broader word.") : "Showing a curated selection from each topic.";
       status.classList.toggle("library-empty", !!query && total === 0);
     }
   }
