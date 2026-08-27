@@ -213,8 +213,11 @@ def main() -> int:
                 ("about.html", "About"),
             )
             for nav_href, nav_label in required_nav:
-                pattern = rf'<a\b[^>]*href=["\']{re.escape(nav_href)}["\'][^>]*>\s*{re.escape(nav_label)}\s*</a>'
-                if not re.search(pattern, text, re.I):
+                pattern = rf'<a\b[^>]*href=["\']{re.escape(nav_href)}["\'][^>]*>(.*?)</a>'
+                anchor = re.search(pattern, text, re.I | re.S)
+                label_text = re.sub(r'<[^>]+>', ' ', anchor.group(1)) if anchor else ''
+                label_text = ' '.join(label_text.split())
+                if not anchor or nav_label.casefold() not in label_text.casefold():
                     errors.append(f"{path}: focused primary navigation link missing: {nav_label}")
 
         for raw in parser.jsonld:
@@ -415,7 +418,7 @@ def main() -> int:
         errors.append("calculators.html: stale related-content dump remains")
     if "calculators-polish.css" not in calc_text or "sex-choice-icon" not in calc_text:
         errors.append("calculators.html: calculator readability controls missing")
-    if '<meta name="theme-color" content="#123f2d">' not in calc_text:
+    if '<meta name="theme-color" content="#073426">' not in calc_text:
         errors.append("calculators.html: site theme color is inconsistent")
     if 'property="og:locale"' in calc_text or 'content="GetMacros.net logo"' in calc_text:
         errors.append("calculators.html: stale social metadata remains")

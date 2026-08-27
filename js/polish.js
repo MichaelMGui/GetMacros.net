@@ -150,7 +150,13 @@
       });
     }, { threshold: 0.4 });
     document.querySelectorAll(".mm-num b, .stats-ribbon b, .proof-strip strong")
-      .forEach(function (el) { io.observe(el); });
+      .forEach(function (el) {
+        // Keep first-screen facts immediately accurate. Counting is useful as
+        // a discovery moment lower on the page, but a half-counted proof point
+        // in the hero looks like incorrect data on fast or mobile loads.
+        if (el.getBoundingClientRect().top < window.innerHeight * .92) return;
+        io.observe(el);
+      });
   }
 
   function start() {

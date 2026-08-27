@@ -16,6 +16,7 @@ CORE_PAGES = {
     "restaurant-meal-guides.html",
     "calculators.html",
     "articles.html",
+    "blog.html",
     "search.html",
     "about.html",
     "contact.html",
@@ -58,6 +59,13 @@ TOOL_PAGES = {
 }
 
 GUIDE_GROUPS = OrderedDict({
+    "Journal": [
+        "best-fast-food-restaurants-for-your-goals.html",
+        "how-much-protein-can-your-body-absorb.html",
+        "are-diet-drinks-bad-for-you.html",
+        "does-creatine-cause-hair-loss.html",
+        "calories-vs-macros-what-matters-more.html",
+    ],
     "Macros and goals": [
         "protein.html", "carbs.html", "fats.html",
         "how-much-protein-per-day.html", "how-many-carbs-per-day.html",
