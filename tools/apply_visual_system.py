@@ -10,9 +10,23 @@ from site_scope import KEEP_ROOT_HTML
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = "20260826b"
 CALC_VERSION = "20260826c"
+CALCULATOR_SUITE_VERSION = "20260826d"
 CSS = f'<link rel="stylesheet" href="css/premium-v4.css?v={VERSION}">'
 JS = f'<script src="js/site-motion.js?v={VERSION}"></script>'
 MATH = f'<script src="js/macro-math.js?v={CALC_VERSION}"></script>'
+CALCULATOR_SUITE_CSS = f'<link rel="stylesheet" href="css/calculator-suite.css?v={CALCULATOR_SUITE_VERSION}">'
+CALCULATOR_SUITE_JS = f'<script src="js/calculator-suite.js?v={CALCULATOR_SUITE_VERSION}"></script>'
+CALCULATOR_PAGES = {
+    "calculators.html",
+    "recipe-macro-scaler.html",
+    "nutrition-label-comparison-tool.html",
+    "protein-value-calculator.html",
+    "budget-meal-builder.html",
+    "sodium-label-comparison-tool.html",
+    "carbohydrate-label-portion-tool.html",
+    "weight-goal-timeline-calculator.html",
+    "sweat-rate-calculator.html",
+}
 
 
 def upsert(text: str, name: str) -> str:
@@ -52,6 +66,21 @@ def upsert(text: str, name: str) -> str:
         text = re.sub(r'js/calculators\.js\?v=[^"\']+', f'js/calculators.js?v={CALC_VERSION}', text, count=1)
     if name == "restaurant-meal-finder.html":
         text = re.sub(r'js/macro-meals\.js\?v=[^"\']+', f'js/macro-meals.js?v={CALC_VERSION}', text, count=1)
+    text = re.sub(
+        r'<link rel="stylesheet" href="css/calculator-suite\.css\?v=[^"]+">',
+        "",
+        text,
+        flags=re.I,
+    )
+    text = re.sub(
+        r'<script src="js/calculator-suite\.js\?v=[^"]+"></script>',
+        "",
+        text,
+        flags=re.I,
+    )
+    if name in CALCULATOR_PAGES:
+        text = text.replace("</head>", f"{CALCULATOR_SUITE_CSS}</head>", 1)
+        text = text.replace("</body>", f"{CALCULATOR_SUITE_JS}</body>", 1)
     return text
 
 

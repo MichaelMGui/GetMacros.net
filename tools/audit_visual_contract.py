@@ -19,6 +19,18 @@ REQUIRED_ASSETS = (
     "js/polish.js",
     "js/site-motion.js",
 )
+CALCULATOR_PAGES = {
+    "calculators.html",
+    "recipe-macro-scaler.html",
+    "nutrition-label-comparison-tool.html",
+    "protein-value-calculator.html",
+    "budget-meal-builder.html",
+    "sodium-label-comparison-tool.html",
+    "carbohydrate-label-portion-tool.html",
+    "weight-goal-timeline-calculator.html",
+    "sweat-rate-calculator.html",
+}
+CALCULATOR_ASSETS = ("css/calculator-suite.css", "js/calculator-suite.js")
 
 
 class ContractParser(HTMLParser):
@@ -71,6 +83,8 @@ def main() -> int:
     for asset in ("css/premium-v4.css", "css/liquid.css", "css/polish.css"):
         if "prefers-reduced-motion: reduce" not in (ROOT / asset).read_text(encoding="utf-8"):
             errors.append(f"{asset}: reduced-motion fallback is missing")
+    if "prefers-reduced-motion: reduce" not in (ROOT / "css" / "calculator-suite.css").read_text(encoding="utf-8"):
+        errors.append("css/calculator-suite.css: reduced-motion fallback is missing")
     if 'prefers-reduced-motion: reduce' not in (ROOT / "js" / "polish.js").read_text(encoding="utf-8"):
         errors.append("js/polish.js: reduced-motion guard is missing")
     pages = sorted(ROOT / name for name in KEEP_ROOT_HTML if (ROOT / name).exists())
@@ -86,6 +100,12 @@ def main() -> int:
 
         if "site-v3" not in parser.body_classes:
             errors.append(f"{rel}: body is missing the shared site-v3 design scope")
+        if rel in CALCULATOR_PAGES:
+            for asset in CALCULATOR_ASSETS:
+                if Path(asset).name not in text:
+                    errors.append(f"{rel}: missing calculator-suite asset {asset}")
+                elif text.count(Path(asset).name) != 1:
+                    errors.append(f"{rel}: calculator-suite asset must load exactly once: {asset}")
         for asset in REQUIRED_ASSETS:
             if Path(asset).name not in text:
                 errors.append(f"{rel}: missing shared asset {asset}")
