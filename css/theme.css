@@ -116,7 +116,7 @@ body { color-scheme: light dark; }
 
 /* Muted copy, one colour everywhere */
 .site-v3 main :is(.hint, .meta, .note, .quiz-hint, .mm-hint, .metric-note,
-  .meal-list-note, .calc-fineprint, .section-head p, figcaption, small) {
+  .meal-list-note, .calc-fineprint, .section-head p, figcaption) {
   color: var(--gm-text-muted);
 }
 
@@ -413,3 +413,18 @@ section[class*="hero"] .theme-toggle{background:rgba(255,255,255,.12);border-col
   animation: none !important;
   transform: none !important;
 }
+
+
+/* Any option or band that paints itself dark carries light text, whatever a
+ * more general muted rule says. Setting bare `small` to the muted grey caught
+ * the sub-labels inside selected options, which sit on dark green. */
+.site-v3 :is(.gm6-choice.is-selected, .quiz-option.is-selected, .mm-chip.is-on,
+  .path-card.featured, .lane-label, .method-band, .trust-box, .mm-targets,
+  [class*="is-selected"], [aria-checked="true"]) :is(small, span, p, li, b, strong) {
+  color: var(--gm-on-dark-muted) !important;
+}
+.site-v3 :is(.gm6-choice.is-selected, .quiz-option.is-selected, .mm-chip.is-on,
+  [aria-checked="true"]) :is(b, strong, h3, h4) { color: var(--gm-on-dark) !important; }
+
+/* Eyebrows inside dark heroes were picking up the light-mode muted colour. */
+.site-v3 :is(section[class*="hero"], .gm6-hero) .eyebrow { color: var(--gm-lime) !important; }
