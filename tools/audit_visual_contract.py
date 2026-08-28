@@ -93,6 +93,13 @@ def main() -> int:
         errors.append("css/calculator-suite.css: reduced-motion fallback is missing")
     if "prefers-reduced-motion: reduce" not in (ROOT / "css" / "unified-v7.css").read_text(encoding="utf-8"):
         errors.append("css/unified-v7.css: reduced-motion fallback is missing")
+    unified_css = (ROOT / "css" / "unified-v7.css").read_text(encoding="utf-8")
+    for marker in ('html[data-theme="light"]', '@media (max-width: 900px)', '.quiz-nav .btn:only-child'):
+        if marker not in unified_css:
+            errors.append(f"css/unified-v7.css: required responsive/theme contract is missing: {marker}")
+    quiz_js = (ROOT / "js" / "meal-quiz.js").read_text(encoding="utf-8")
+    if "quiz-back" not in quiz_js or "quiz-continue" not in quiz_js or "'<span></span>'" in quiz_js:
+        errors.append("js/meal-quiz.js: intentional Back/Continue control contract is missing")
     pages = sorted(ROOT / name for name in KEEP_ROOT_HTML if (ROOT / name).exists())
     pages += sorted(ROOT.glob("*/*.html"))
     seen: set[Path] = set()
@@ -106,6 +113,14 @@ def main() -> int:
 
         if "site-v3" not in parser.body_classes:
             errors.append(f"{rel}: body is missing the shared site-v3 design scope")
+        if text.count("data-theme-toggle") != 1:
+            errors.append(f"{rel}: expected exactly one shared light/dark theme toggle")
+        if text.count('class="nav-utility"') != 1:
+            errors.append(f"{rel}: expected exactly one shared navigation utility group")
+        if 'localStorage.getItem("gm-theme")||"light"' not in text:
+            errors.append(f"{rel}: light-first theme boot is missing")
+        if '<meta name="theme-color" content="#f4f7f2">' not in text:
+            errors.append(f"{rel}: light-first browser theme color is missing")
         if rel in CALCULATOR_PAGES:
             for asset in CALCULATOR_ASSETS:
                 if Path(asset).name not in text:

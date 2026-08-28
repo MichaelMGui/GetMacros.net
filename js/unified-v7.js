@@ -6,7 +6,7 @@
   "use strict";
 
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var mobile = window.matchMedia && window.matchMedia("(max-width: 760px)");
+  var mobile = window.matchMedia && window.matchMedia("(max-width: 900px)");
   var finePointer = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
   function headerState() {
@@ -25,6 +25,37 @@
       requestAnimationFrame(paint);
     }, { passive: true });
     paint();
+  }
+
+  function theme() {
+    var buttons = document.querySelectorAll("[data-theme-toggle]");
+    if (!buttons.length) return;
+    var stored = "";
+    try { stored = localStorage.getItem("gm-theme") || ""; } catch (error) {}
+    var initial = document.documentElement.getAttribute("data-theme") || stored || "light";
+    function apply(mode, remember) {
+      document.documentElement.setAttribute("data-theme", mode);
+      if (remember) {
+        try { localStorage.setItem("gm-theme", mode); } catch (error) {}
+      }
+      var dark = mode === "dark";
+      buttons.forEach(function (button) {
+        button.setAttribute("aria-pressed", String(dark));
+        button.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+        var icon = button.querySelector(".theme-icon");
+        if (icon) icon.textContent = dark ? "☀" : "☾";
+        var label = button.querySelector(".theme-label");
+        if (label) label.textContent = dark ? "Light" : "Dark";
+      });
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", dark ? "#07110d" : "#f4f7f2");
+    }
+    apply(initial === "dark" ? "dark" : "light", false);
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        apply(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark", true);
+      });
+    });
   }
 
   function navigation() {
@@ -184,6 +215,7 @@
   }
 
   function start() {
+    try { theme(); } catch (error) {}
     try { headerState(); } catch (error) {}
     try { navigation(); } catch (error) {}
     try { accessibility(); } catch (error) {}

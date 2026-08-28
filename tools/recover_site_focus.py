@@ -11,7 +11,7 @@ import shutil
 from pathlib import Path
 from urllib.parse import urlparse
 
-from focus_components import PUBLISHER, SITE, footer, head, nav
+from focus_components import PUBLISHER, SITE, THEME_BOOT, footer, head, nav
 from site_scope import KEEP_ROOT_HTML, decision_for, section_for
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -168,14 +168,12 @@ def common_shell(path: str, text: str) -> str:
         text = re.sub(r"</head>", f'<meta name="google-adsense-account" content="{PUBLISHER}"></head>', text, count=1, flags=re.I)
     if "readability-v2.css" not in text:
         text = re.sub(r"</head>", '<link rel="stylesheet" href="css/readability-v2.css?v=20260823d"></head>', text, count=1, flags=re.I)
+    text = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">', '<meta name="theme-color" content="#f4f7f2">', text, flags=re.I)
+    if '<meta name="theme-color"' not in text:
+        text = re.sub(r"</head>", '<meta name="theme-color" content="#f4f7f2"></head>', text, count=1, flags=re.I)
     text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/(?:theme|unified-v7)\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
-    text = re.sub(
-        r'<script>try\{var t=localStorage\.getItem\(["\']gm-theme["\']\);if\(t\)document\.documentElement\.setAttribute\(["\']data-theme["\'],t\);\}catch\(e\)\{\}</script>\s*',
-        "",
-        text,
-        flags=re.I,
-    )
-    text = re.sub(r"</head>", '<link rel="stylesheet" href="css/unified-v7.css?v=20260828e"></head>', text, count=1, flags=re.I)
+    text = re.sub(r'<script>[^<]*gm-theme[^<]*</script>\s*', "", text, flags=re.I)
+    text = re.sub(r"</head>", THEME_BOOT + '<link rel="stylesheet" href="css/unified-v7.css?v=20260828f"></head>', text, count=1, flags=re.I)
     page_title = match_text(text, r"<title[^>]*>(.*?)</title>")
     page_desc = match_text(text, r'<meta\s+name=["\']description["\'][^>]*content=["\'](.*?)["\']')
     social = (

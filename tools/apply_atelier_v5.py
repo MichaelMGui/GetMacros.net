@@ -12,7 +12,6 @@ VERSION = "20260827b"
 
 HEADER = """<header class="site-header modern-header"><nav class="full-nav" aria-label="Main navigation">
 <a class="modern-brand" href="index.html" aria-label="GetMacros.net home"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a>
-<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open site menu</span><span class="nav-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span></button>
 <div class="full-nav-links" id="primary-navigation">
 <div class="nav-group"><button class="nav-group-trigger" type="button" aria-expanded="false">Eat Out</button><div class="nav-popover">
 <a href="healthy-fast-food.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-rice-bowl"></use></svg><strong>Healthy Fast Food</strong><small>Browse practical chain picks</small></a>
@@ -32,7 +31,11 @@ HEADER = """<header class="site-header modern-header"><nav class="full-nav" aria
 <a class="nav-direct" href="about.html">About</a>
 <a class="nav-mobile-search" href="search.html">Search GetMacros</a>
 </div>
+<div class="nav-utility">
+<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark</span></button>
 <a class="nav-action" href="search.html" aria-label="Search GetMacros">Search</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open site menu</span><span class="nav-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span></button>
+</div>
 </nav></header>"""
 
 FOOTER = """<footer class="modern-footer">
@@ -76,7 +79,7 @@ def apply(path: Path) -> bool:
     text = re.sub(r'js/polish\.js\?v=[0-9a-z]+', f'js/polish.js?v={VERSION}', text)
     text = text.replace("</head>", css + "</head>", 1)
     text = text.replace("</body>", js + "</body>", 1)
-    text = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">', '<meta name="theme-color" content="#073426">', text)
+    text = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">', '<meta name="theme-color" content="#f4f7f2">', text)
 
     if text == original:
         return False

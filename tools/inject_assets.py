@@ -13,7 +13,7 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 SHEETS = ["css/unified-v7.css"]
 SCRIPTS = ["js/unified-v7.js"]
-ASSET_VERSION = "20260828e"
+ASSET_VERSION = "20260828f"
 
 # Legacy scroll-reveal. It sets opacity:0 on `main > section` and relies
 # entirely on an IntersectionObserver callback to put it back, with no
@@ -85,11 +85,9 @@ def main():
             out = re.sub(r'<script[^>]*src="[^"]*' + re.escape(os.path.basename(dead)) +
                          r'[^"]*"[^>]*>\s*</script>', "", out)
 
-        # One theme-color sitewide. build_focus_pages wrote #123f2d while
-        # validate_site demanded #073426 on calculators.html, so the build was
-        # failing on a disagreement between two of its own steps.
+        # The default is light; unified-v7.js updates this when dark is chosen.
         out = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">',
-                     '<meta name="theme-color" content="#123f2d">', out)
+                     '<meta name="theme-color" content="#f4f7f2">', out)
 
         out = re.sub(
             r'<script>try\{var t=localStorage\.getItem\(["\']gm-theme["\']\);if\(t\)document\.documentElement\.setAttribute\(["\']data-theme["\'],t\);\}catch\(e\)\{\}</script>\s*',

@@ -8,7 +8,8 @@ from apply_atelier_v5 import FOOTER as ATELIER_FOOTER, HEADER as ATELIER_HEADER
 
 SITE = "https://getmacros.net"
 PUBLISHER = "ca-pub-2316153877942502"
-ASSET_VERSION = "20260828e"
+ASSET_VERSION = "20260828f"
+THEME_BOOT = '<script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>'
 
 CSP = (
     "default-src 'self'; script-src 'self' 'unsafe-inline' "
@@ -67,7 +68,7 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="icon" href="/favicon.svg?v=20260828b" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#123f2d">
+<meta name="theme-color" content="#f4f7f2">
 <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
@@ -80,7 +81,8 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="stylesheet" href="css/polish.css?v=20260826b">
 <link rel="stylesheet" href="css/atelier-v5.css?v=20260827b">
 <link rel="stylesheet" href="css/studio-v6.css?v=20260828c">
-<link rel="stylesheet" href="css/unified-v7.css?v=20260828e">
+{THEME_BOOT}
+<link rel="stylesheet" href="css/unified-v7.css?v=20260828f">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUBLISHER}" crossorigin="anonymous"></script>
 {jsonld}
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
@@ -94,7 +96,7 @@ def nav(current="") -> str:
 
 
 def footer() -> str:
-    return ATELIER_FOOTER + '<script src="js/unified-v7.js?v=20260828e" defer></script>'
+    return ATELIER_FOOTER + '<script src="js/unified-v7.js?v=20260828f" defer></script>'
 
 
 def breadcrumbs(items: list[tuple[str, str | None]]) -> str:
