@@ -14,8 +14,10 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
-SHEETS = ["css/liquid.css", "css/contrast-fix.css", "css/polish.css"]
-SCRIPTS = ["js/polish.js"]
+# theme.css loads last: it settles disagreements between the older
+# stylesheets rather than adding another voice to them.
+SHEETS = ["css/liquid.css", "css/contrast-fix.css", "css/polish.css", "css/theme.css"]
+SCRIPTS = ["js/polish.js", "js/theme-toggle.js"]
 ASSET_VERSION = "20260826b"
 
 # Legacy scroll-reveal. It sets opacity:0 on `main > section` and relies
@@ -75,6 +77,19 @@ def main():
         for dead in DROP_SCRIPTS:
             out = re.sub(r'<script[^>]*src="[^"]*' + re.escape(os.path.basename(dead)) +
                          r'[^"]*"[^>]*>\s*</script>', "", out)
+
+        # One theme-color sitewide. build_focus_pages wrote #123f2d while
+        # validate_site demanded #073426 on calculators.html, so the build was
+        # failing on a disagreement between two of its own steps.
+        out = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">',
+                     '<meta name="theme-color" content="#123f2d">', out)
+
+        # Apply a stored theme before first paint. Waiting for the deferred
+        # script means a dark-mode visitor gets a white flash first.
+        boot = ('<script>try{var t=localStorage.getItem("gm-theme");'
+                'if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>')
+        if "gm-theme" not in out and "<head>" in out:
+            out = out.replace("<head>", "<head>" + boot, 1)
 
         if out == c:
             continue

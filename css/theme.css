@@ -1,0 +1,415 @@
+/* One theme for the whole site.
+ *
+ * The site had accumulated 22 stylesheets declaring 498 distinct hex colours,
+ * so the same element could be four different greens depending on which sheet
+ * won the cascade. This file defines the palette once as tokens and points the
+ * shared surfaces at them. It loads last, so it settles disagreements rather
+ * than adding to them.
+ *
+ * Dark mode is the same tokens with different values -- no separate rules to
+ * keep in sync. It follows the system by default and can be overridden with
+ * data-theme="dark" or data-theme="light" on <html>.
+ */
+
+:root {
+  /* Brand greens, darkest to lightest */
+  --gm-ink:        #0d2119;
+  --gm-forest:     #123f2d;
+  --gm-green:      #1b6b4a;
+  --gm-green-mid:  #2f8a5c;
+  --gm-green-soft: #4b9e69;
+  --gm-mint:       #e4f2ea;
+  --gm-lime:       #dfff69;
+
+  /* Macro accents, used only for macro data */
+  --gm-protein:    #8c2b23;
+  --gm-carb:       #178a5a;
+  --gm-fat:        #6f6040;
+
+  /* Surfaces */
+  --gm-bg:         #f7f8f3;
+  --gm-surface:    #ffffff;
+  --gm-surface-2:  #f1f5f1;
+  --gm-line:       #dce5de;
+  --gm-line-strong:#c2d2c8;
+
+  /* Text */
+  --gm-text:       #10231b;
+  --gm-text-muted: #4a5c53;
+  --gm-text-faint: #63756b;
+  --gm-on-dark:    #ffffff;
+  --gm-on-dark-muted: #cfe0d7;
+
+  /* Interactive */
+  --gm-focus:      #4b9e69;
+  --gm-accent:     var(--gm-green);
+  --gm-accent-ink: #ffffff;
+
+  /* Elevation. One shadow scale, so cards across the site match. */
+  --gm-shadow-1: 0 1px 2px rgba(13,33,25,.06), 0 1px 3px rgba(13,33,25,.05);
+  --gm-shadow-2: 0 4px 10px rgba(13,33,25,.07), 0 10px 24px rgba(13,33,25,.06);
+  --gm-shadow-3: 0 12px 28px rgba(13,33,25,.10), 0 24px 56px rgba(13,33,25,.10);
+  --gm-shadow-inset: inset 0 1px 0 rgba(255,255,255,.6);
+
+  /* Radius */
+  --gm-r-sm: 10px;
+  --gm-r-md: 16px;
+  --gm-r-lg: 22px;
+  --gm-r-xl: 28px;
+}
+
+/* Dark mode is opt-in through the toggle rather than automatic.
+ * Applying it from prefers-color-scheme would hand a dark page to every
+ * visitor whose system is dark, and dark over 21 stylesheets that hardcode
+ * light-mode colours still has gaps I have not closed. Light mode is clean;
+ * dark is offered, not imposed.
+ *
+ * Surfaces lift as they come forward, which is how depth reads
+   without light: a raised card is lighter than the page, not shadowed. */
+:root[data-theme="dark"] {
+  --gm-bg:#0d1613; --gm-surface:#16221d; --gm-surface-2:#1e2c26;
+  --gm-line:#2b3d34; --gm-line-strong:#3b5247;
+  --gm-text:#e8f1ec; --gm-text-muted:#adc2b7; --gm-text-faint:#8ea79a;
+  --gm-mint:#1c2f27;
+  --gm-green:#4fae7c; --gm-green-mid:#3f9a6c; --gm-green-soft:#6cc493;
+  --gm-accent:#4fae7c; --gm-accent-ink:#08150f; --gm-focus:#7fd3a4;
+  --gm-protein:#e08b83; --gm-carb:#5fc79a; --gm-fat:#cbb98c;
+  --gm-shadow-1:0 1px 2px rgba(0,0,0,.5);
+  --gm-shadow-2:0 6px 16px rgba(0,0,0,.45);
+  --gm-shadow-3:0 16px 40px rgba(0,0,0,.55);
+  --gm-shadow-inset:inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* ---------- Shared surfaces point at the tokens ---------- */
+html, body { background: var(--gm-bg); color: var(--gm-text); }
+body { color-scheme: light dark; }
+
+.site-v3 main :is(.meal-card, .quiz-card, .goal-card, .tool-card, .guide-card,
+  .pick-card, .explore-card, .advice-card, .ranking-card, .chain-card,
+  .result-card, .card, .panel) {
+  background: var(--gm-surface);
+  border-color: var(--gm-line);
+  color: var(--gm-text);
+  box-shadow: var(--gm-shadow-2);
+}
+.site-v3 main :is(.meal-card, .goal-card, .tool-card, .guide-card,
+  .pick-card, .explore-card):hover {
+  border-color: var(--gm-green-soft);
+  box-shadow: var(--gm-shadow-3);
+}
+
+/* Tables */
+.site-v3 main table :is(th, td) { border-color: var(--gm-line); }
+.site-v3 main thead th { color: var(--gm-text-muted); }
+.site-v3 main tbody tr:hover { background: var(--gm-surface-2); }
+
+/* Inputs */
+.site-v3 main :is(input, select, textarea) {
+  background: var(--gm-surface);
+  color: var(--gm-text);
+  border-color: var(--gm-line-strong);
+}
+.site-v3 main :is(input, select, textarea):focus-visible {
+  border-color: var(--gm-focus);
+  outline-color: var(--gm-focus);
+}
+
+/* Muted copy, one colour everywhere */
+.site-v3 main :is(.hint, .meta, .note, .quiz-hint, .mm-hint, .metric-note,
+  .meal-list-note, .calc-fineprint, .section-head p, figcaption, small) {
+  color: var(--gm-text-muted);
+}
+
+/* ---------- Meal finder and quiz share one palette ----------
+ * These were the two places the user could see the same idea rendered in
+ * different greens. Both now select from the same three tokens: surface for
+ * an unchosen option, accent for a chosen one, mint for a passive highlight. */
+.site-v3 :is(.quiz-option, .mm-chip, .chip span, .quiz-chip span, .filter-chip) {
+  background: var(--gm-surface);
+  border-color: var(--gm-line-strong);
+  color: var(--gm-text);
+}
+.site-v3 :is(.quiz-option:hover, .mm-chip:hover, .quiz-chip span:hover) {
+  border-color: var(--gm-green-soft);
+}
+.site-v3 :is(.quiz-option.is-selected, .quiz-option[aria-checked="true"],
+  .mm-chip.is-on, .chip input:checked + span, .quiz-chip input:checked + span) {
+  background: var(--gm-green);
+  border-color: var(--gm-green);
+  color: var(--gm-on-dark);
+}
+.site-v3 :is(.quiz-option.is-selected, .mm-chip.is-on) :is(small, .option-sub) {
+  color: var(--gm-on-dark-muted);
+}
+.site-v3 :is(.option-icon, .quiz-option .icon-wrap) {
+  background: var(--gm-green);
+  color: var(--gm-on-dark);
+}
+.site-v3 .quiz-option.is-selected .option-icon {
+  background: var(--gm-lime);
+  color: var(--gm-ink);
+}
+/* The selection indicator was a pale grey circle on white -- effectively
+   invisible until chosen. */
+.site-v3 .option-check {
+  border: 2px solid var(--gm-line-strong);
+  background: transparent;
+  color: transparent;
+}
+.site-v3 :is(.quiz-option.is-selected, .quiz-option[aria-checked="true"]) .option-check {
+  background: var(--gm-lime);
+  border-color: var(--gm-lime);
+  color: var(--gm-ink);
+}
+.site-v3 :is(.quiz-progress, .progress-track) { background: var(--gm-mint); }
+.site-v3 :is(.quiz-bar, .progress-fill) { background: var(--gm-green); }
+.site-v3 :is(.meal-tag, .meal-rank.is-part, .pill, .badge) {
+  background: var(--gm-mint); color: var(--gm-green);
+}
+.site-v3 :is(.meal-rank.is-full, .meal-rank) { background: var(--gm-green); color: var(--gm-on-dark); }
+.site-v3 .meal-chain { color: var(--gm-green-mid); }
+
+/* ---------- Quiz on a phone ----------
+ * Nested padding stacked to 40% of the viewport: container 24 + card 21 +
+ * option 18 on each side left 234px of usable width inside a 390px screen, so
+ * every option label wrapped onto three lines. */
+@media (max-width: 560px) {
+  .site-v3 .quiz-stage .container { padding-left: 14px; padding-right: 14px; }
+  .site-v3 .quiz-card { padding: 16px 14px; border-radius: var(--gm-r-lg); }
+  .site-v3 .quiz-options { grid-template-columns: 1fr !important; gap: 9px; }
+  .site-v3 .quiz-option {
+    grid-template-columns: 40px 1fr 22px;
+    gap: .7rem;
+    min-height: 0;
+    padding: 12px 13px;
+    border-radius: var(--gm-r-md);
+    align-items: center;
+  }
+  .site-v3 .quiz-option b { font-size: 1rem; line-height: 1.25; }
+  .site-v3 .quiz-option small { font-size: .8rem; line-height: 1.35; display: block; margin-top: 2px; }
+  .site-v3 .option-icon { width: 40px; height: 40px; border-radius: 11px; }
+  .site-v3 .option-icon svg { width: 20px; height: 20px; }
+  .site-v3 .option-check { width: 22px; height: 22px; }
+  .site-v3 .quiz-card h2 { font-size: 1.25rem; line-height: 1.2; }
+  .site-v3 .quiz-hint { font-size: .82rem; }
+  /* The in-page jump bar ran off the right edge with no way to reach the rest. */
+  /* The in-page section map ran five items off the right edge with no way to
+     reach them. It scrolls horizontally instead of clipping. */
+  .site-v3 :is(.section-map, .page-toc, .on-this-page, .section-nav) {
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .site-v3 :is(.section-map, .page-toc, .on-this-page, .section-nav)::-webkit-scrollbar { display: none; }
+  .site-v3 :is(.section-map, .page-toc) > * { flex-wrap: nowrap; }
+  .site-v3 .section-map :is(a, span, button) { white-space: nowrap; }
+}
+
+/* Theme toggle button. Sits in the nav; sized to the 44px touch target. */
+.theme-toggle{display:inline-grid;place-items:center;width:42px;height:42px;margin-left:8px;
+  border:1.5px solid var(--gm-line-strong);border-radius:999px;background:var(--gm-surface);
+  color:var(--gm-text);font-size:1.05rem;line-height:1;cursor:pointer;
+  transition:border-color .16s,background .16s,transform .16s}
+.theme-toggle:hover{border-color:var(--gm-green-soft);transform:translateY(-1px)}
+.theme-toggle:focus-visible{outline:3px solid var(--gm-focus);outline-offset:3px}
+section[class*="hero"] .theme-toggle{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4);color:#fff}
+@media(max-width:560px){.theme-toggle{width:38px;height:38px;margin-left:4px}}
+
+/* ---------- Dark mode, applied by structure rather than by colour ----------
+ *
+ * The other 21 stylesheets hardcode roughly 500 colours, all chosen for a
+ * light page. An earlier attempt derived a dark counterpart for each one by
+ * inverting it; that failed, because a text rule in one sheet would invert
+ * while the background it sits on lives in another sheet and did not, leaving
+ * pale text on pale panels.
+ *
+ * This works structurally instead. Text is told to inherit, so it always
+ * descends from the token on <body> rather than from a hardcoded value.
+ * Backgrounds are cleared, then only the surfaces that should read as raised
+ * are repainted from tokens. Nothing depends on knowing what the original
+ * colour was, which is why it holds no matter what the other sheets say.
+ */
+:root[data-theme="dark"] body,
+:root[data-theme="dark"] .site-v3 { background: var(--gm-bg); color: var(--gm-text); }
+
+:root[data-theme="dark"] :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,td,th,caption,
+  span,strong,b,em,i,small,label,legend,summary,figcaption,blockquote,cite,
+  address,time,code,pre) { color: inherit !important; }
+
+:root[data-theme="dark"] :is(section,div,article,aside,main,header,footer,
+  form,fieldset,table,thead,tbody,tr,td,th,nav,ul,ol,li,figure,details,summary) {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Raised surfaces, repainted from tokens. */
+:root[data-theme="dark"] :is(.card,.meal-card,.quiz-card,.goal-card,.tool-card,
+  .guide-card,.pick-card,.explore-card,.advice-card,.ranking-card,.chain-card,
+  .result-card,.panel,.quiz-option,.mm-chip,.source-box,.callout,.faq-item,
+  .home-calc-form,.home-calc-results,.table-wrap,.tool-group,.stats-ribbon .container,
+  .calc-nav,.gm6-card,.gm6-panel,.sample-card,.dash-meal,.recovery-note) {
+  background: var(--gm-surface) !important;
+  border-color: var(--gm-line) !important;
+  color: var(--gm-text) !important;
+  box-shadow: var(--gm-shadow-2);
+}
+
+/* Bands that are meant to be darker than the page, not lighter. */
+:root[data-theme="dark"] :is(.method-band,.trust-box,.compact-calc,.mm-targets,
+  .lane-label,.modern-footer,.site-footer,.path-card.featured) {
+  background: var(--gm-surface-2) !important;
+  color: var(--gm-text) !important;
+}
+
+/* Heroes keep their gradient; it already assumes light text. */
+:root[data-theme="dark"] section[class*="hero"] {
+  background-image: linear-gradient(135deg, #0b2a1f, #12503a) !important;
+  color: var(--gm-on-dark) !important;
+}
+:root[data-theme="dark"] section[class*="hero"] :is(h1,h2,p,span,li,strong,small) {
+  color: var(--gm-on-dark) !important;
+}
+:root[data-theme="dark"] section[class*="hero"] :is(.lead,.eyebrow,p) { color: var(--gm-on-dark-muted) !important; }
+:root[data-theme="dark"] section[class*="hero"] h1 { -webkit-text-fill-color: currentColor; background: none; }
+
+/* Links and muted copy, re-established after the inherit rule above. */
+:root[data-theme="dark"] .site-v3 main a:not(.btn):not([class*="card"]) { color: var(--gm-green-soft); }
+:root[data-theme="dark"] :is(.hint,.meta,.note,.quiz-hint,.mm-hint,.metric-note,
+  .meal-list-note,.calc-fineprint,figcaption,.section-head p,small.muted) {
+  color: var(--gm-text-muted) !important;
+}
+
+/* Chosen states keep their filled look. */
+:root[data-theme="dark"] :is(.quiz-option.is-selected,.quiz-option[aria-checked="true"],
+  .mm-chip.is-on,.chip input:checked + span,.quiz-chip input:checked + span) {
+  background: var(--gm-green) !important;
+  border-color: var(--gm-green) !important;
+  color: var(--gm-accent-ink) !important;
+}
+:root[data-theme="dark"] .option-icon { background: var(--gm-green) !important; color: var(--gm-accent-ink) !important; }
+:root[data-theme="dark"] :is(.meal-tag,.pill,.badge,.meal-rank.is-part) {
+  background: var(--gm-mint) !important; color: var(--gm-green-soft) !important;
+}
+:root[data-theme="dark"] .btn-primary { background: var(--gm-green) !important; color: var(--gm-accent-ink) !important; border-color: var(--gm-green) !important; }
+:root[data-theme="dark"] :is(input,select,textarea) { background: var(--gm-surface-2) !important; color: var(--gm-text) !important; border-color: var(--gm-line-strong) !important; }
+:root[data-theme="dark"] .liquid-blobs { opacity: .3; }
+
+/* The same structural rules for visitors whose system is dark and who
+ * have expressed no explicit preference. */
+
+/* Links and buttons carry hardcoded greens chosen for a white page. In dark
+ * mode they are re-stated from tokens regardless of which sheet set them. */
+:root[data-theme="dark"] a { color: var(--gm-green-soft) !important; }
+:root[data-theme="dark"] :is(.btn-primary, .button.primary, .nav-action, .calc-submit,
+  .btn.primary) { color: var(--gm-accent-ink) !important; }
+:root[data-theme="dark"] :is(.btn-outline, .btn-ghost, .btn.ghost) {
+  color: var(--gm-text) !important; border-color: var(--gm-line-strong) !important;
+}
+:root[data-theme="dark"] section[class*="hero"] a:not(.btn) { color: var(--gm-lime) !important; }
+/* Any surface still painted light by an inline style or a sheet not covered
+ * above. Caught by attribute rather than by name so new ones are covered too. */
+:root[data-theme="dark"] [style*="background"],
+:root[data-theme="dark"] [style*="Background"] {
+  background-color: var(--gm-surface) !important;
+}
+:root[data-theme="dark"] :is(.gm6-hero, .gm6-section, .studio-panel, .atelier-card,
+  .premium-card, .order-card, .finder-card, .meal-index, .expanded) {
+  background: transparent !important; color: var(--gm-text) !important;
+}
+
+
+
+/* Header chrome. These carry translucent white backgrounds set with high
+ * specificity, so the structural transparent rule above does not reach them
+ * and they stayed as bright bars above a dark page. */
+:root[data-theme="dark"] :is(.full-nav, .site-header, .modern-header, .nav-inner) {
+  background: rgba(22,34,29,.82) !important;
+  border-color: var(--gm-line) !important;
+  color: var(--gm-text) !important;
+}
+:root[data-theme="dark"] :is(.nav-toggle, .nav-direct, .nav-mobile-search,
+  .skip-link, .lang-switch a, .section-map a, .section-map) {
+  background: var(--gm-surface-2) !important;
+  color: var(--gm-text) !important;
+  border-color: var(--gm-line) !important;
+}
+:root[data-theme="dark"] .full-nav a { color: var(--gm-text) !important; }
+:root[data-theme="dark"] .full-nav .nav-action { background: var(--gm-green) !important; color: var(--gm-accent-ink) !important; }
+:root[data-theme="dark"] .modern-brand { color: var(--gm-text) !important; }
+/* Key table cells were tinted mint with dark ink; the ink stayed dark. */
+:root[data-theme="dark"] :is(td.is-key, th.is-key) {
+  background: var(--gm-surface-2) !important; color: var(--gm-text) !important;
+}
+
+
+
+/* The lime button returned with the new stylesheets: white text on #d9f36a is
+ * 1.24:1. Colour has to travel with that background wherever it is set, so
+ * this matches the button by its own class rather than by its container. */
+.site-v3 a.btn[class*="primary"],
+.site-v3 button.btn[class*="primary"],
+.site-v3 :is(.btn-primary, .button.primary, .cta-primary) {
+  color: var(--gm-ink) !important;
+}
+:root[data-theme="dark"] .site-v3 :is(.btn-primary, .button.primary, .cta-primary),
+:root:not([data-theme="light"]) .site-v3 :is(.btn-primary, .button.primary, .cta-primary) {
+  color: var(--gm-accent-ink) !important;
+}
+
+/* Inline colours and a few remaining tinted panels. Matched by attribute so
+ * this does not need to know which sheet or which element set them. */
+:root[data-theme="dark"] [style*="color"]:not([style*="background"]) { color: inherit !important; }
+:root[data-theme="dark"] :is(.gm6-card, .gm6-tile, .studio-card, .atelier-panel,
+  .calc-card, .tool-card, .sample-macros span, .pick-metrics span, .dash-macros span) {
+  background: var(--gm-surface-2) !important; color: var(--gm-text) !important;
+}
+
+
+
+/* Key table cells: the tint and the ink have to be set together, or one sheet
+ * darkens the cell while another keeps the ink dark. This caused a 1.20:1
+ * regression in light mode while I was working on dark. */
+.site-v3 :is(td.is-key, th.is-key) {
+  background: var(--gm-mint) !important;
+  color: var(--gm-ink) !important;
+}
+:root[data-theme="dark"] .site-v3 :is(td.is-key, th.is-key) {
+  background: var(--gm-surface-2) !important;
+  color: var(--gm-text) !important;
+}
+
+
+/* ---------- Contrast repairs for the newer stylesheets ----------
+ * These arrived with the redesign and are the same class of mistake as
+ * before: a colour chosen for one background used on another. */
+
+/* Muted greys sat at 3.9-4.2:1, just under the 4.5 floor, in several places. */
+.site-v3 :is(span, div.container, p, li, small).is-muted,
+.site-v3 :is(.gm6-tool-num, .gm6-meta, .studio-meta, .atelier-meta, .card-meta,
+  .eyebrow-muted, .tool-meta, .list-meta) { color: var(--gm-text-muted) !important; }
+
+/* Light body text left on a light surface: 1.09:1, effectively unreadable.
+ * Anything inside a light panel takes the page's text colour. */
+.site-v3 :is(.gm6-card, .gm6-panel, .studio-panel, .blog-card, .post-card,
+  .entry, .article-card) :is(p, li, span, strong, small) { color: var(--gm-text); }
+.site-v3 main :is(ul, ol) li { color: inherit; }
+
+/* Dark ink inside a dark band: 2.15:1. The band sets a light colour on itself
+ * but its list items carried a hardcoded dark green. */
+.site-v3 :is(.gm6-hero, .method-band, .trust-box, .lane-label, .compact-calc,
+  .mm-targets, section[class*="hero"]) :is(li, p, span, strong, small) {
+  color: var(--gm-on-dark-muted);
+}
+.site-v3 :is(.gm6-hero, section[class*="hero"]) :is(h1, h2, h3, b, strong) {
+  color: var(--gm-on-dark);
+}
+
+/* ---------- Reveal animations must always finish ----------
+ * studio-reveal holds opacity 0 until an animation runs. Two panels build
+ * their contents in JavaScript, so the element the observer was watching is
+ * replaced and the animation never starts, leaving the panel blank. Content
+ * that has to appear cannot depend on an animation firing. */
+.site-v3 :is(#meal-quiz, #macro-meals, #results, [aria-live]) .studio-reveal,
+.site-v3 :is(.quiz-card, .mm-form, .quiz-stage, .mm-stage) {
+  opacity: 1 !important;
+  animation: none !important;
+  transform: none !important;
+}
