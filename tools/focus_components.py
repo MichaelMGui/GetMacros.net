@@ -84,7 +84,7 @@ def head(path: str, title: str, description: str, *, schema=None,
 def nav(current="") -> str:
     links = [
         ("healthy-fast-food.html", "Healthy Fast Food", "fastfood"),
-        ("restaurant-meal-finder.html", "Meal Finder", "finder"),
+        ("restaurant-meal-finder.html", "Healthy Order Match", "finder"),
         ("calculators.html", "Macro Calculator", "calculators"),
         ("articles.html", "Nutrition Guides", "guides"),
         ("about.html", "About", "about"),
@@ -104,7 +104,7 @@ def nav(current="") -> str:
 def footer() -> str:
     return '''<footer class="modern-footer">
 <div><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find fast-food meals that fit your calories, protein and goals—then understand the numbers.</p></div>
-<div><strong>Use GetMacros</strong><a href="healthy-fast-food.html">Healthy fast food</a><a href="restaurant-meal-finder.html">Meal finder</a><a href="calculators.html">Macro calculator</a><a href="articles.html">Nutrition guides</a></div>
+<div><strong>Use GetMacros</strong><a href="healthy-fast-food.html">Healthy fast food</a><a href="restaurant-meal-finder.html">Healthy Order Match</a><a href="calculators.html">Macro calculator</a><a href="articles.html">Nutrition guides</a></div>
 <div><strong>Trust</strong><a href="about.html">About</a><a href="editorial-policy.html">Editorial policy</a><a href="sources.html">Sources</a><a href="corrections.html">Corrections</a></div>
 <div><strong>Legal &amp; contact</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a><a href="contact.html">Contact</a></div>
 <small>&copy; 2026 GetMacros.net &middot; Educational information, not individualized medical advice.</small>

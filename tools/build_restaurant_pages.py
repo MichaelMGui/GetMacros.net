@@ -339,7 +339,7 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
 <p>GetMacros is independent and is not sponsored or endorsed by {html.escape(chain)}.</p></div></div></section>
 <section class="data-section"><div class="container"><div class="section-head"><h2>Compare another restaurant</h2>
 <p>Use the finder to rank all {len(parse_meals())} tracked options, or return to the chain directory.</p></div><div class="focus-actions">
-<a class="btn btn-primary" href="restaurant-meal-finder.html">Use the meal finder</a><a class="btn" href="healthy-fast-food.html">Browse all restaurants</a></div></div></section>
+<a class="btn btn-primary" href="restaurant-meal-finder.html">Use Healthy Order Match</a><a class="btn" href="healthy-fast-food.html">Browse all restaurants</a></div></div></section>
 <div class="ad-auto-anchor" aria-hidden="true"></div></main>{footer()}
 <script src="js/lang.js?v=20260823a"></script></body></html>'''
     return path, body, title, h1

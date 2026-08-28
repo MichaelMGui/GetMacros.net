@@ -220,9 +220,9 @@ def main():
     c = open(PAGE, encoding="utf-8").read()
     complete_count = sum(1 for m in meals if all(m.get(k) is not None for k in ("cal", "p", "f", "na")))
     c = re.sub(r"css/meal-finder-v2\.css\?v=[^\"']+", "css/meal-finder-v2.css?v=20260823c", c)
-    c = c.replace('"name": "What sounds right for you today?"', '"name": "Meal Finder"')
+    c = c.replace('"name": "What sounds right for you today?"', '"name": "Healthy Order Match"')
     c = c.replace('>Healthy fast food</a>', '>Healthy Fast Food</a>')
-    c = c.replace('aria-current="page">Meal finder</span>', 'aria-current="page">Meal Finder</span>')
+    c = c.replace('aria-current="page">Meal finder</span>', 'aria-current="page">Healthy Order Match</span>')
     c = re.sub(r"Five clear questions rank \d+ (?:real menu items|tracked menu options) from \d+ restaurants\.",
                f"Five clear questions rank {len(meals)} tracked menu options from {len({m['chain'] for m in meals})} restaurants.", c)
     c = re.sub(r"<span>\d+ complete nutrition profiles</span>",

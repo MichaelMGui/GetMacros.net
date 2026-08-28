@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "20260828a"
+VERSION = "20260828c"
 
 LIBRARY_CONTROLS = '''<section class="gm6-library-controls"><div class="container gm6-library-search"><label for="article-library-search">Find a useful guide<input id="article-library-search" type="search" placeholder="Try protein, weight loss, labels or meal prep" autocomplete="off"></label><p id="library-search-status" aria-live="polite">Showing a curated selection from each topic.</p></div></section>'''
 
@@ -26,7 +26,7 @@ HOME_MAIN = r'''<main id="main-content">
       </div>
     </div>
     <aside class="gm6-decision-panel" data-spotlight aria-label="Example GetMacros meal match">
-      <div class="gm6-decision-top"><span class="gm6-live">Meal Finder match</span><span>Chick-fil-A</span></div>
+      <div class="gm6-decision-top"><span class="gm6-live">Healthy Order Match</span><span>Chick-fil-A</span></div>
       <p class="gm6-decision-goal">High protein + bulking</p>
       <h2>30-count grilled nuggets, waffle fries &amp; fruit</h2>
       <p class="gm6-decision-meta">A serious higher-calorie order—not a snack pretending to be a meal.</p>
@@ -55,17 +55,17 @@ HOME_MAIN = r'''<main id="main-content">
   <div class="container">
     <div class="gm6-section-intro studio-reveal">
       <div><p class="eyebrow">The flagship tool</p><h2>One shortlist. Your priorities.</h2></div>
-      <div><p>The Meal Finder combines goals instead of forcing one generic definition of healthy. Choose high protein and bulking together, or cutting and lower sodium, and see why each result fits.</p></div>
+      <div><p>Healthy Order Match combines goals instead of forcing one generic definition of healthy. Choose high protein and bulking together, or cutting and lower sodium, and see why each result fits.</p></div>
     </div>
     <div class="gm6-finder-shell studio-reveal" data-spotlight>
       <div class="gm6-finder-copy">
-        <p class="eyebrow">Healthy Fast-Food Meal Finder</p>
+        <p class="eyebrow">Healthy Order Match</p>
         <h3>Turn five clear answers into dinner.</h3>
         <p>No sign-up and no hidden scoring. The tool ranks the same published menu data shown across the site.</p>
         <ol class="gm6-flow"><li>Choose one or several goals</li><li>Set appetite and dietary needs</li><li>Pick restaurants you can reach</li><li>Compare five strong matches</li></ol>
         <a class="btn btn-primary" href="restaurant-meal-finder.html">Build my shortlist <span class="gm6-arrow" aria-hidden="true">→</span></a>
       </div>
-      <div class="gm6-finder-preview" aria-label="Meal Finder question preview">
+      <div class="gm6-finder-preview" aria-label="Healthy Order Match question preview">
         <span class="gm6-question">Question 1 of 5</span>
         <h3>What are you working toward?</h3>
         <div class="gm6-choice-grid">
@@ -199,7 +199,7 @@ HOME_MAIN = r'''<main id="main-content">
 </section>
 
 <section class="gm6-final">
-  <div class="container studio-reveal"><p class="eyebrow">Ready when the menu is</p><h2>Find the meal that fits today.</h2><p>Choose your goals, appetite, dietary needs and available restaurants. Get a shortlist you can actually order.</p><div class="gm6-hero-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Start the Meal Finder <span class="gm6-arrow" aria-hidden="true">→</span></a><a class="btn btn-outline" href="healthy-fast-food.html">Explore all restaurants</a></div></div>
+  <div class="container studio-reveal"><p class="eyebrow">Ready when the menu is</p><h2>Find the meal that fits today.</h2><p>Choose your goals, appetite, dietary needs and available restaurants. Get a shortlist you can actually order.</p><div class="gm6-hero-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Start Healthy Order Match <span class="gm6-arrow" aria-hidden="true">→</span></a><a class="btn btn-outline" href="healthy-fast-food.html">Explore all restaurants</a></div></div>
 </section>
 </main>'''
 

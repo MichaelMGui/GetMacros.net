@@ -228,7 +228,7 @@ def write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
 def primary_intent(path: str, title: str) -> str:
     if path == "index.html": return "healthy fast food and macro calculator"
     if path == "healthy-fast-food.html": return "healthy fast food options"
-    if path == "restaurant-meal-finder.html": return "healthy fast-food meal finder"
+    if path == "restaurant-meal-finder.html": return "healthy order match fast-food quiz"
     if path == "restaurant-meal-guides.html": return "healthy fast-food restaurant guides"
     if path == "calculators.html": return "macro calculator and nutrition tools"
     if path == "articles.html": return "nutrition guides for macros and meals"
@@ -289,7 +289,7 @@ GetMacros now has one explicit product purpose: help people find fast-food meals
 - Established an explicit allowlist around healthy fast food, core tools, trust pages and a curated supporting guide library.
 - Removed {len(removed_set)} out-of-scope HTML URLs from navigation, search, sitemap and the published file tree. No mass homepage redirects were created; URLs without a true equivalent correctly resolve as missing pages.
 - Removed partial Spanish and French footprints and stale hreflang references.
-- Simplified the site-wide navigation to Healthy Fast Food, Meal Finder, Macro Calculator, Nutrition Guides and About, with Search as a utility action.
+- Simplified the site-wide navigation to Healthy Fast Food, Healthy Order Match, Macro Calculator, Nutrition Guides and About, with Search as a utility action.
 - Rebuilt client-side search and XML sitemap exclusively from surviving indexable content.
 - Changed the routine build so removed quizzes, games, glossary entries and broad articles cannot be regenerated.
 
@@ -318,7 +318,7 @@ GetMacros now has one explicit product purpose: help people find fast-food meals
 
 ## SEO and technical changes
 
-- Aligned the homepage, Healthy Fast Food hub, meal finder, directory and 15 restaurant pages with natural search intent.
+- Aligned the homepage, Healthy Fast Food hub, Healthy Order Match, directory and 15 restaurant pages with natural search intent.
 - Regenerated canonical sitemap and search coverage from the final indexable set.
 - Removed broken internal links and incomplete-language alternates.
 - Added or preserved unique title, description, canonical, Open Graph, Twitter and valid JSON-LD requirements through automated validation.

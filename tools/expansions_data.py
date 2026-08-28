@@ -1389,7 +1389,7 @@ EXPANSIONS.update({
   "targets use the ranges reported in resistance-training and weight-management research. Every "
   "calculator on the site uses the same equations, so two pages cannot give one person "
   "different answers.</p>"
-  "<p>Goal tags in the meal finder &mdash; high protein, lighter, high fiber &mdash; are derived "
+  "<p>Goal tags in Healthy Order Match &mdash; high protein, lighter, high fiber &mdash; are derived "
   "from each meal's own numbers against stated thresholds rather than assigned by hand. A label "
   "the site states out loud is the threshold the site actually applies.</p>"),
  ("What this site is not",

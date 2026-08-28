@@ -159,6 +159,9 @@
     document.querySelectorAll(".eatout-page .eatout-path,.eatout-page .eatout-match,.eatout-page .eatout-goal-grid a,.eatout-page .chain-card").forEach(function (item) {
       item.classList.add("studio-reveal");
     });
+    document.querySelectorAll(".order-match-page .order-match-preview,.order-match-page .quiz-stage-intro,.order-match-page .quiz-card,.order-match-page .order-macro-intro,.order-match-page .mm-form,.order-match-page .meal-jump").forEach(function (item) {
+      item.classList.add("studio-reveal");
+    });
   }
 
   function start() {

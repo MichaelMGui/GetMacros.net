@@ -207,7 +207,7 @@ def main() -> int:
                 errors.append(f"{path}: verified AdSense loader missing")
             required_nav = (
                 ("healthy-fast-food.html", "Healthy Fast Food"),
-                ("restaurant-meal-finder.html", "Meal Finder"),
+                ("restaurant-meal-finder.html", "Healthy Order Match"),
                 ("calculators.html", "Macro Calculator"),
                 ("articles.html", "Nutrition Guides"),
                 ("about.html", "About"),
