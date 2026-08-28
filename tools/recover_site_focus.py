@@ -159,7 +159,7 @@ def common_shell(path: str, text: str) -> str:
 
     text = re.sub(r'<link\b[^>]*hreflang=[^>]*>\s*', "", text, flags=re.I)
     text = re.sub(
-        r'<script\b[^>]*src=["\'][^"\']*js/(?:polish|site-motion|studio-v6|atelier-v5)\.js[^"\']*["\'][^>]*></script>\s*',
+        r'<script\b[^>]*src=["\'][^"\']*js/(?:polish|site-motion|studio-v6|atelier-v5|unified-v7)\.js[^"\']*["\'][^>]*></script>\s*',
         "",
         text,
         flags=re.I,
@@ -168,6 +168,8 @@ def common_shell(path: str, text: str) -> str:
         text = re.sub(r"</head>", f'<meta name="google-adsense-account" content="{PUBLISHER}"></head>', text, count=1, flags=re.I)
     if "readability-v2.css" not in text:
         text = re.sub(r"</head>", '<link rel="stylesheet" href="css/readability-v2.css?v=20260823d"></head>', text, count=1, flags=re.I)
+    text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/unified-v7\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
+    text = re.sub(r"</head>", '<link rel="stylesheet" href="css/unified-v7.css?v=20260828e"></head>', text, count=1, flags=re.I)
     page_title = match_text(text, r"<title[^>]*>(.*?)</title>")
     page_desc = match_text(text, r'<meta\s+name=["\']description["\'][^>]*content=["\'](.*?)["\']')
     social = (

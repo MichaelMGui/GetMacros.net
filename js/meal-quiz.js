@@ -109,7 +109,7 @@
   }
   function renderStep() {
     var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
-    root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + '</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost" data-go="-1">Back</button>' : '<span></span>') + '<button type="button" class="btn btn-primary" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
+    root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + ' Select the no-preference option when you want us to ignore this question.</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<p class="quiz-required" role="alert" hidden>Please choose an option before continuing. “No preference” is a full option too.</p><div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost" data-go="-1">Back</button>' : '<span></span>') + '<button type="button" class="btn btn-primary" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
     root.querySelector("h2").focus({ preventScroll: true });
   }
   function summary(count) {
@@ -137,6 +137,7 @@
 
   root.addEventListener("change", function (e) {
     var el = e.target;
+    var required = root.querySelector(".quiz-required"); if (required) required.hidden = true;
     if (el.dataset.incomplete) { includeIncomplete = el.checked; renderResults(); return; }
     if (el.dataset.any) {
       state[el.dataset.any] = [];
@@ -156,7 +157,16 @@
     var t = e.target.closest("[data-go],[data-restart],[data-more],[data-save],[data-share]"); if (!t) return;
     if (t.dataset.save) toggleSaved(t.dataset.save);
     else if (t.dataset.share) shareResults(t);
-    else if (t.dataset.go) { step += Number(t.dataset.go); step >= STEPS.length ? renderResults() : renderStep(); }
+    else if (t.dataset.go) {
+      var direction = Number(t.dataset.go);
+      var activeStep = STEPS[step];
+      if (direction > 0 && !state[activeStep.key].length && !noPreference[activeStep.key]) {
+        var message = root.querySelector(".quiz-required");
+        if (message) { message.hidden = false; message.scrollIntoView({ block: "nearest", behavior: reducedMotion() ? "auto" : "smooth" }); }
+        return;
+      }
+      step += direction; step >= STEPS.length ? renderResults() : renderStep();
+    }
     else if (t.dataset.restart) { step = 0; renderStep(); }
     else if (t.dataset.more) {
       var next = root._rest.splice(0, 3);
@@ -166,5 +176,6 @@
       updateSavedUi();
     }
   });
+  function reducedMotion() { return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; }
   deepLinked ? renderResults() : renderStep();
 })();

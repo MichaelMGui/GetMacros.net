@@ -232,12 +232,13 @@ def main() -> int:
             errors.append(f"{path}: advertising placeholder remains")
         if "css/premium-v4.css?v=20260826b" not in text:
             errors.append(f"{path}: shared premium visual system is missing")
-        if "js/site-motion.js?v=20260826b" not in text:
-            errors.append(f"{path}: shared motion layer is missing")
-        elif text.count("js/site-motion.js?") != 1:
-            errors.append(f"{path}: shared motion layer must load exactly once")
-        if text.count("js/polish.js?") != 1:
-            errors.append(f"{path}: progressive polish layer must load exactly once")
+        if text.count("css/unified-v7.css?") != 1:
+            errors.append(f"{path}: unified visual layer must load exactly once")
+        if text.count("js/unified-v7.js?") != 1:
+            errors.append(f"{path}: unified interaction layer must load exactly once")
+        for legacy_script in ("js/site-motion.js?", "js/polish.js?", "js/studio-v6.js?", "js/atelier-v5.js?"):
+            if legacy_script in text:
+                errors.append(f"{path}: conflicting legacy interaction layer remains: {legacy_script.split('/')[-1].rstrip('?')}")
         if "highperformanceformat.com" in text or "ads-config.js" in text:
             errors.append(f"{path}: obsolete third-party ad code remains")
         if re.search(r"pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js", text) and PUBLISHER not in text:

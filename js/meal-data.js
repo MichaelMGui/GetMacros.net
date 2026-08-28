@@ -130,11 +130,11 @@ window.GM_MEALS = [
  why:'A substantial salad with spicy grilled chicken, egg, cheese, corn and toppings. Dressing choice changes the final total.'},
 // Complete orders below are sums of the named standard items. Checked 2026-08-23
 // against Chick-fil-A's official nutrition guide and current item pages.
-{chain:'Chick-fil-A',name:'Bulk order: Grilled Club + waffle fries + 12-count grilled nuggets',cal:1140,p:80,c:92,f:8,na:1955,
+{chain:'Chick-fil-A',name:'High-protein bulking order: Grilled Club, waffle fries and 12-count grilled nuggets',cal:1140,p:80,c:92,f:8,na:1955,
  t:['protein','energy','fibre'],diet:[],meal:'main',size:'large',
  url:'chick-fil-a-healthy-meals-macros.html',
  why:'A real 1,000-calorie-plus order with 80 g protein. The total excludes dipping sauce and drinks; sodium is the main trade-off.'},
-{chain:'Chick-fil-A',name:'Bulk order: 30-count grilled nuggets + waffle fries + large fruit cup',cal:1050,p:104,c:77,f:10,na:1950,
+{chain:'Chick-fil-A',name:'High-protein bulking order: 30-count grilled nuggets, waffle fries and large fruit cup',cal:1050,p:104,c:77,f:10,na:1950,
  t:['protein','energy','fibre'],diet:[],meal:'main',size:'large',
  url:'chick-fil-a-healthy-meals-macros.html',
  why:'The highest-protein large order in this guide. It is a very large portion, and sauces are not included in the total.'},

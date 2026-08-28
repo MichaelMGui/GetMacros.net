@@ -16,8 +16,14 @@ REQUIRED_ASSETS = (
     "css/liquid.css",
     "css/contrast-fix.css",
     "css/polish.css",
+    "css/unified-v7.css",
+    "js/unified-v7.js",
+)
+FORBIDDEN_INTERACTION_ASSETS = (
     "js/polish.js",
     "js/site-motion.js",
+    "js/studio-v6.js",
+    "js/atelier-v5.js",
 )
 CALCULATOR_PAGES = {
     "calculators.html",
@@ -85,8 +91,8 @@ def main() -> int:
             errors.append(f"{asset}: reduced-motion fallback is missing")
     if "prefers-reduced-motion: reduce" not in (ROOT / "css" / "calculator-suite.css").read_text(encoding="utf-8"):
         errors.append("css/calculator-suite.css: reduced-motion fallback is missing")
-    if 'prefers-reduced-motion: reduce' not in (ROOT / "js" / "polish.js").read_text(encoding="utf-8"):
-        errors.append("js/polish.js: reduced-motion guard is missing")
+    if "prefers-reduced-motion: reduce" not in (ROOT / "css" / "unified-v7.css").read_text(encoding="utf-8"):
+        errors.append("css/unified-v7.css: reduced-motion fallback is missing")
     pages = sorted(ROOT / name for name in KEEP_ROOT_HTML if (ROOT / name).exists())
     pages += sorted(ROOT.glob("*/*.html"))
     seen: set[Path] = set()
@@ -109,7 +115,10 @@ def main() -> int:
         for asset in REQUIRED_ASSETS:
             if Path(asset).name not in text:
                 errors.append(f"{rel}: missing shared asset {asset}")
-        cascade_assets = REQUIRED_ASSETS[:2] + REQUIRED_ASSETS[2:5]
+        for asset in FORBIDDEN_INTERACTION_ASSETS:
+            if Path(asset).name in text:
+                errors.append(f"{rel}: conflicting legacy interaction asset remains: {asset}")
+        cascade_assets = REQUIRED_ASSETS[:6]
         positions = []
         for asset in cascade_assets:
             match = re.search(r"(?<![A-Za-z0-9_-])" + re.escape(Path(asset).name), text)

@@ -104,11 +104,11 @@ def build_home(meals: list[dict]) -> None:
     tool_html = "".join(f'<a class="tool-card" href="{p}"><span aria-hidden="true">{i+1:02d}</span><h3>{h}</h3><p>{d}</p></a>' for i, (p,h,d) in enumerate(tools))
     guides = [
         ("how-much-protein-per-day.html", "How much protein do I need?", "Understand the range before using a calculator."),
-        ("how-to-track-your-macros.html", "How to track macros", "Turn food labels and portions into useful totals."),
-        ("how-to-build-a-balanced-meal.html", "Build a balanced meal", "Use a flexible framework instead of a perfect plate."),
         ("high-protein-foods-list.html", "High-protein foods", "Compare practical animal and plant options."),
         ("cutting-bulking-maintenance-explained.html", "Cutting, bulking and maintenance", "Choose the phase that matches your goal."),
         ("how-to-read-a-nutrition-label.html", "Read a nutrition label", "Find the numbers that change a real food decision."),
+        ("how-to-calculate-recipe-nutrition.html", "Calculate recipe nutrition", "Turn ingredient totals into useful per-serving numbers."),
+        ("serving-size-vs-portion-size.html", "Serving size vs. portion size", "Scale label numbers to the amount you actually eat."),
     ]
     guide_html = "".join(f'<a class="guide-card" href="{p}"><h3>{h}</h3><p>{d}</p></a>' for p,h,d in guides)
     body = f'''{head("index.html", title, meta, schema=schema, extra='<link rel="stylesheet" href="css/modern.css?v=20260823a">')}
@@ -157,7 +157,7 @@ def build_fast_food(meals: list[dict]) -> None:
     visible = sorted([m for m in meals if m.get("p") is not None], key=lambda m:m["p"], reverse=True)[:10]
     schema = [
         {"@context":"https://schema.org","@type":"CollectionPage","name":"Healthy fast food options",
-         "url":f"{SITE}/healthy-fast-food.html","description":meta,"dateModified":"2026-08-23"},
+         "url":f"{SITE}/healthy-fast-food.html","description":meta,"dateModified":"2026-08-28"},
         {"@context":"https://schema.org","@type":"ItemList","name":"High-protein fast-food options",
          "numberOfItems":len(visible),"itemListElement":[{"@type":"ListItem","position":i,"name":m["name"],"url":f'{SITE}/{m["url"]}'} for i,m in enumerate(visible,1)]},
     ]
@@ -186,7 +186,7 @@ def build_fast_food(meals: list[dict]) -> None:
 <article class="ranking-card"><h3>Plant-based menu options</h3><ol class="ranking-list">{rank_list(meals,"p",limit=8,unit=" g",where=lambda m:"plant" in m.get("diet",[]))}</ol></article>
 <article class="ranking-card"><h3>High-protein fast-food breakfasts</h3><ol class="ranking-list">{rank_list(meals,"p",limit=8,unit=" g",where=lambda m:m.get("meal")=="breakfast")}</ol></article></div></div></section>
 <section><div class="container"><div class="section-head"><p class="eyebrow">Restaurant directory</p><h2>Healthy options by restaurant</h2><p>Every chain page now exposes all tracked options, protein-per-calorie, goal-based picks, unique ordering advice, an official source and a real checked date.</p></div><div class="chain-grid">{chain_cards(meals)}</div></div></section>
-<section class="data-section"><div class="container method-band"><div><p class="eyebrow">Methodology</p><h2>What “healthy” means here</h2><p>It means useful information for a specific goal—not a universal label. Rankings keep calories, protein, fiber and sodium visible together.</p></div><div><h3>Important limits</h3><ul><li>Standard U.S. menu builds, not every customization</li><li>Entrées, sides and snacks are classified separately</li><li>Missing values remain blank, never zero</li><li>Diet tags do not imply allergy safety</li><li>Menus and recipes change; confirm the official source</li></ul><a class="btn btn-outline" href="restaurant-nutrition-information.html">Read the data method</a></div></div></section>
+<section class="data-section"><div class="container method-band"><div><p class="eyebrow">Methodology</p><h2>What “healthy” means here</h2><p>It means useful information for a specific goal—not a universal label. Rankings keep calories, protein, fiber and sodium visible together.</p></div><div><h3>Important limits</h3><ul><li>Standard U.S. menu builds, not every customization</li><li>Entrées, sides and snacks are classified separately</li><li>Missing values remain blank, never zero</li><li>Diet tags do not imply allergy safety</li><li>Menus and recipes change; confirm the official source</li></ul><a class="btn btn-outline" href="sources.html">Read the data method</a></div></div></section>
 <div class="ad-auto-anchor" aria-hidden="true"></div></main>{footer()}</body></html>'''
     (ROOT/"healthy-fast-food.html").write_text(body,encoding="utf-8")
 
