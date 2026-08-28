@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
-"""Ensure every page links the late-loading stylesheets.
+"""Ensure every page ends with one unified visual and interaction layer.
 
 The generators emit their own <head>, so a stylesheet added by hand is dropped
-on the next build. Anything that has to load after the page's own CSS -- the
-contrast repairs, the liquid motion -- is re-linked here instead.
-
-Order matters: contrast-fix.css must come last so it can win on specificity
-rather than by piling on !important.
+on the next build. Page-specific layout CSS stays in place, while the unified
+system is re-linked last so old behavior layers cannot compete with it.
 """
 import glob
 import os
@@ -14,9 +11,9 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
-SHEETS = ["css/liquid.css", "css/contrast-fix.css", "css/polish.css"]
-SCRIPTS = ["js/polish.js"]
-ASSET_VERSION = "20260826b"
+SHEETS = ["css/unified-v7.css"]
+SCRIPTS = ["js/unified-v7.js"]
+ASSET_VERSION = "20260828e"
 
 # Legacy scroll-reveal. It sets opacity:0 on `main > section` and relies
 # entirely on an IntersectionObserver callback to put it back, with no
@@ -24,7 +21,15 @@ ASSET_VERSION = "20260826b"
 # full-site sweep found sections stuck at opacity 0 on 60 pages at desktop
 # width. js/polish.js replaces it and reveals everything unconditionally after
 # 1.2s, so the old script is stripped rather than left to compete.
-DROP_SCRIPTS = ["js/reveal.js"]
+DROP_SCRIPTS = [
+    "js/reveal.js",
+    "js/polish.js",
+    "js/site-motion.js",
+    "js/studio-v6.js",
+    "js/atelier-v5.js",
+    "js/theme-toggle.js",
+]
+DROP_SHEETS = ["css/theme.css"]
 
 
 def main():
@@ -36,11 +41,15 @@ def main():
         if "</head>" not in c:
             continue
         v = ASSET_VERSION
-        # Normalize the late cascade instead of merely appending missing files.
-        # contrast-fix intentionally comes before effects-only polish.css, while
-        # premium-v4 is inserted immediately before this group by the visual
-        # system pass.
+        # Normalize the final cascade instead of appending duplicates.
         for sheet in SHEETS:
+            c = re.sub(
+                rf'<link rel=["\']stylesheet["\'] href=["\'][^"\']*(?<![A-Za-z0-9_-]){re.escape(os.path.basename(sheet))}(?:\?[^"\']*)?["\']>',
+                "",
+                c,
+                flags=re.I,
+            )
+        for sheet in DROP_SHEETS:
             c = re.sub(
                 rf'<link rel=["\']stylesheet["\'] href=["\'][^"\']*(?<![A-Za-z0-9_-]){re.escape(os.path.basename(sheet))}(?:\?[^"\']*)?["\']>',
                 "",
@@ -75,6 +84,19 @@ def main():
         for dead in DROP_SCRIPTS:
             out = re.sub(r'<script[^>]*src="[^"]*' + re.escape(os.path.basename(dead)) +
                          r'[^"]*"[^>]*>\s*</script>', "", out)
+
+        # One theme-color sitewide. build_focus_pages wrote #123f2d while
+        # validate_site demanded #073426 on calculators.html, so the build was
+        # failing on a disagreement between two of its own steps.
+        out = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">',
+                     '<meta name="theme-color" content="#123f2d">', out)
+
+        out = re.sub(
+            r'<script>try\{var t=localStorage\.getItem\(["\']gm-theme["\']\);if\(t\)document\.documentElement\.setAttribute\(["\']data-theme["\'],t\);\}catch\(e\)\{\}</script>\s*',
+            "",
+            out,
+            flags=re.I,
+        )
 
         if out == c:
             continue
