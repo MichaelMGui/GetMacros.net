@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "20260827d"
+VERSION = "20260828a"
 
 LIBRARY_CONTROLS = '''<section class="gm6-library-controls"><div class="container gm6-library-search"><label for="article-library-search">Find a useful guide<input id="article-library-search" type="search" placeholder="Try protein, weight loss, labels or meal prep" autocomplete="off"></label><p id="library-search-status" aria-live="polite">Showing a curated selection from each topic.</p></div></section>'''
 

@@ -156,6 +156,9 @@
     document.querySelectorAll(".goal-card,.tool-card,.guide-card,.blog-card,.ranking-card,.pick-card,.meal-card").forEach(function (item, index) {
       if (index < 24) item.classList.add("studio-reveal");
     });
+    document.querySelectorAll(".eatout-page .eatout-path,.eatout-page .eatout-match,.eatout-page .eatout-goal-grid a,.eatout-page .chain-card").forEach(function (item) {
+      item.classList.add("studio-reveal");
+    });
   }
 
   function start() {
