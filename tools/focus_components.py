@@ -4,6 +4,8 @@ from __future__ import annotations
 import html
 import json
 
+from apply_atelier_v5 import FOOTER as ATELIER_FOOTER, HEADER as ATELIER_HEADER
+
 SITE = "https://getmacros.net"
 PUBLISHER = "ca-pub-2316153877942502"
 ASSET_VERSION = "20260826a"
@@ -72,7 +74,12 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/recovery.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/readability-v2.css?v=20260823d">
-<link rel="stylesheet" href="css/premium-v4.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/premium-v4.css?v=20260826b">
+<link rel="stylesheet" href="css/liquid.css?v=20260826b">
+<link rel="stylesheet" href="css/contrast-fix.css?v=20260826b">
+<link rel="stylesheet" href="css/polish.css?v=20260826b">
+<link rel="stylesheet" href="css/atelier-v5.css?v=20260827b">
+<link rel="stylesheet" href="css/studio-v6.css?v=20260828c">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUBLISHER}" crossorigin="anonymous"></script>
 {jsonld}
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
@@ -82,33 +89,14 @@ def head(path: str, title: str, description: str, *, schema=None,
 
 
 def nav(current="") -> str:
-    links = [
-        ("healthy-fast-food.html", "Healthy Fast Food", "fastfood"),
-        ("restaurant-meal-finder.html", "Healthy Order Match", "finder"),
-        ("calculators.html", "Macro Calculator", "calculators"),
-        ("articles.html", "Nutrition Guides", "guides"),
-        ("about.html", "About", "about"),
-    ]
-    anchors = []
-    for href, label, key in links:
-        mark = ' aria-current="page"' if key == current else ""
-        anchors.append(f'<a href="{href}"{mark}>{label}</a>')
-    return f'''<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header modern-header"><nav class="full-nav" aria-label="Main navigation">
-<a class="modern-brand" href="index.html" aria-label="GetMacros.net home"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a>
-<div class="full-nav-links">{''.join(anchors)}</div>
-<a class="nav-action" href="search.html">Search</a>
-</nav></header>'''
+    return '<a class="skip-link" href="#main-content">Skip to main content</a>\n' + ATELIER_HEADER
 
 
 def footer() -> str:
-    return '''<footer class="modern-footer">
-<div><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find fast-food meals that fit your calories, protein and goals—then understand the numbers.</p></div>
-<div><strong>Use GetMacros</strong><a href="healthy-fast-food.html">Healthy fast food</a><a href="restaurant-meal-finder.html">Healthy Order Match</a><a href="calculators.html">Macro calculator</a><a href="articles.html">Nutrition guides</a></div>
-<div><strong>Trust</strong><a href="about.html">About</a><a href="editorial-policy.html">Editorial policy</a><a href="sources.html">Sources</a><a href="corrections.html">Corrections</a></div>
-<div><strong>Legal &amp; contact</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a><a href="contact.html">Contact</a></div>
-<small>&copy; 2026 GetMacros.net &middot; Educational information, not individualized medical advice.</small>
-</footer><script src="js/site-motion.js?v=20260826a"></script>'''
+    return ATELIER_FOOTER + '''<script src="js/polish.js?v=20260827b" defer></script>
+<script src="js/site-motion.js?v=20260826b"></script>
+<script src="js/studio-v6.js?v=20260828c" defer></script>
+<script src="js/atelier-v5.js?v=20260827b" defer></script>'''
 
 
 def breadcrumbs(items: list[tuple[str, str | None]]) -> str:

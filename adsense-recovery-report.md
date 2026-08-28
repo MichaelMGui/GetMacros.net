@@ -2,7 +2,7 @@
 
 ## Outcome
 
-GetMacros now has one explicit product purpose: help people find fast-food meals that fit calories, protein and practical goals, then provide the tools and focused education needed to understand those numbers. The indexable footprint was reduced from 448 pages to 117; 331 HTML URLs were removed rather than redirected to unrelated destinations.
+GetMacros now has one explicit product purpose: help people find fast-food meals that fit calories, protein and practical goals, then provide the tools and focused education needed to understand those numbers. The indexable footprint was reduced from 448 pages to 57; 397 HTML URLs were removed rather than redirected to unrelated destinations.
 
 ## What was wrong
 
@@ -15,22 +15,22 @@ GetMacros now has one explicit product purpose: help people find fast-food meals
 ## Structural changes made
 
 - Established an explicit allowlist around healthy fast food, core tools, trust pages and a curated supporting guide library.
-- Removed 331 out-of-scope HTML URLs from navigation, search, sitemap and the published file tree. No mass homepage redirects were created; URLs without a true equivalent correctly resolve as missing pages.
+- Removed 397 out-of-scope HTML URLs from navigation, search, sitemap and the published file tree. No mass homepage redirects were created; URLs without a true equivalent correctly resolve as missing pages.
 - Removed partial Spanish and French footprints and stale hreflang references.
-- Simplified the site-wide navigation to Healthy Fast Food, Meal Finder, Macro Calculator, Nutrition Guides and About, with Search as a utility action.
+- Simplified the site-wide navigation to Healthy Fast Food, Healthy Order Match, Macro Calculator, Nutrition Guides and About, with Search as a utility action.
 - Rebuilt client-side search and XML sitemap exclusively from surviving indexable content.
 - Changed the routine build so removed quizzes, games, glossary entries and broad articles cannot be regenerated.
 
 ## Homepage and healthy fast food
 
-- Rebuilt the homepage around real repository data: 74 tracked options across 15 chains, a real meal example, goal pathways, cross-chain rankings, chain access, a compact macro calculator and transparent methodology.
+- Rebuilt the homepage around real repository data: 83 tracked options across 15 chains, a real meal example, goal pathways, cross-chain rankings, chain access, a compact macro calculator and transparent methodology.
 - Removed the “340 guides” claim and broad condition/topic directories.
 - Rebuilt the Healthy Fast Food hub with explicit search intent, complete-meal safeguards, cross-chain protein/calorie/fibre/sodium comparisons, goal definitions, restaurant directory and limitations.
 - Kept substantial static meal-finder rankings and explanatory content available before JavaScript interaction.
 
 ## Restaurant pages upgraded
 
-- Rebuilt all 15 chain guides from `js/meal-data.js`, exposing all 74 tracked menu records rather than teaser rows.
+- Rebuilt all 15 chain guides from `js/meal-data.js`, exposing all 83 tracked menu records rather than teaser rows.
 - Added chain-specific titles, H1s, introductions and ordering guidance.
 - Added full nutrient tables, high-protein, substantial lower-calorie, higher-energy and supported vegetarian picks.
 - Added transparent protein grams per 100 calories with its formula and a warning that it is not a health score.
@@ -46,7 +46,7 @@ GetMacros now has one explicit product purpose: help people find fast-food meals
 
 ## SEO and technical changes
 
-- Aligned the homepage, Healthy Fast Food hub, meal finder, directory and 15 restaurant pages with natural search intent.
+- Aligned the homepage, Healthy Fast Food hub, Healthy Order Match, directory and 15 restaurant pages with natural search intent.
 - Regenerated canonical sitemap and search coverage from the final indexable set.
 - Removed broken internal links and incomplete-language alternates.
 - Added or preserved unique title, description, canonical, Open Graph, Twitter and valid JSON-LD requirements through automated validation.

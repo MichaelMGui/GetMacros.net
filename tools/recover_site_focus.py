@@ -95,28 +95,53 @@ def normalize_path(href: str) -> str | None:
     return value or "index.html"
 
 
+STALE_REDIRECTS = {
+    "tdee-vs-bmr.html": "calculators.html",
+    "protein-for-muscle-growth.html": "macros-for-muscle-gain.html",
+    "protein-on-a-budget.html": "protein-value-calculator.html",
+    "how-to-measure-sweat-rate.html": "sweat-rate-calculator.html",
+    "restaurant-nutrition-information.html": "sources.html",
+    "nutrition-label-rounding-explained.html": "how-to-read-a-nutrition-label.html",
+    "weighing-cooking-oils-and-sauces.html": "how-to-calculate-recipe-nutrition.html",
+    "choosing-food-database-entry.html": "how-to-calculate-recipe-nutrition.html",
+    "plant-based-protein-sources.html": "high-protein-foods-list.html",
+    "how-much-fat-per-day.html": "fats.html",
+}
+
+
 def remove_stale_links(text: str) -> str:
     def replace_anchor(match: re.Match) -> str:
-        href = match.group(2)
+        href = match.group(3)
         target = normalize_path(href)
-        if target and target.endswith(".html") and target not in KEEP_ROOT_HTML:
-            # Card links are structural containers. Keeping only their inner
-            # markup creates orphan headings and descriptions at page bottoms.
-            full_anchor = match.group(0)
-            if re.search(r'class=["\'][^"\']*\b(?:explore-card|explore-all)\b', full_anchor, re.I):
-                return ""
-            return match.group(3)
-        return match.group(0)
-    return re.sub(r'<a\b([^>]*?)href=(["\'])(.*?)\2([^>]*)>(.*?)</a>',
-                  lambda m: replace_anchor(_anchor_match(m)), text, flags=re.I | re.S)
+        if not target or not target.endswith(".html") or target in KEEP_ROOT_HTML:
+            return match.group(0)
 
+        full_anchor = match.group(0)
+        if re.search(r'class=["\'][^"\']*\b(?:guide-card|explore-card|explore-all)\b', full_anchor, re.I):
+            return ""
 
-def _anchor_match(match: re.Match):
-    """Adapt a five-group anchor match to href/inner access used above."""
-    class Adapter:
-        def group(self, number: int) -> str:
-            return {0: match.group(0), 2: match.group(3), 3: match.group(5)}[number]
-    return Adapter()
+        replacement = STALE_REDIRECTS.get(target)
+        if replacement:
+            return (f'<a{match.group(1)}href={match.group(2)}{replacement}'
+                    f'{match.group(2)}{match.group(4)}>{match.group(5)}</a>')
+
+        # Ordinary inline links become plain text. This preserves the sentence
+        # without pretending a deleted article still has a destination.
+        return match.group(5)
+
+    text = re.sub(r'<a\b([^>]*?)href=(["\'])(.*?)\2([^>]*)>(.*?)</a>',
+                  replace_anchor, text, flags=re.I | re.S)
+
+    def remove_empty_group(match: re.Match) -> str:
+        section = match.group(0)
+        return section if re.search(r'class=["\'][^"\']*\b(?:guide-card|explore-card)\b', section, re.I) else ""
+
+    return re.sub(
+        r'<section\b[^>]*class=["\'][^"\']*\b(?:guide-group|related-explore)\b[^"\']*["\'][^>]*>.*?</section>',
+        remove_empty_group,
+        text,
+        flags=re.I | re.S,
+    )
 
 
 def common_shell(path: str, text: str) -> str:
@@ -133,6 +158,12 @@ def common_shell(path: str, text: str) -> str:
         current = "about"
 
     text = re.sub(r'<link\b[^>]*hreflang=[^>]*>\s*', "", text, flags=re.I)
+    text = re.sub(
+        r'<script\b[^>]*src=["\'][^"\']*js/(?:polish|site-motion|studio-v6|atelier-v5)\.js[^"\']*["\'][^>]*></script>\s*',
+        "",
+        text,
+        flags=re.I,
+    )
     if "google-adsense-account" not in text:
         text = re.sub(r"</head>", f'<meta name="google-adsense-account" content="{PUBLISHER}"></head>', text, count=1, flags=re.I)
     if "readability-v2.css" not in text:
@@ -295,14 +326,14 @@ GetMacros now has one explicit product purpose: help people find fast-food meals
 
 ## Homepage and healthy fast food
 
-- Rebuilt the homepage around real repository data: 74 tracked options across 15 chains, a real meal example, goal pathways, cross-chain rankings, chain access, a compact macro calculator and transparent methodology.
+- Rebuilt the homepage around real repository data: 83 tracked options across 15 chains, a real meal example, goal pathways, cross-chain rankings, chain access, a compact macro calculator and transparent methodology.
 - Removed the “340 guides” claim and broad condition/topic directories.
 - Rebuilt the Healthy Fast Food hub with explicit search intent, complete-meal safeguards, cross-chain protein/calorie/fibre/sodium comparisons, goal definitions, restaurant directory and limitations.
 - Kept substantial static meal-finder rankings and explanatory content available before JavaScript interaction.
 
 ## Restaurant pages upgraded
 
-- Rebuilt all 15 chain guides from `js/meal-data.js`, exposing all 74 tracked menu records rather than teaser rows.
+- Rebuilt all 15 chain guides from `js/meal-data.js`, exposing all 83 tracked menu records rather than teaser rows.
 - Added chain-specific titles, H1s, introductions and ordering guidance.
 - Added full nutrient tables, high-protein, substantial lower-calorie, higher-energy and supported vegetarian picks.
 - Added transparent protein grams per 100 calories with its formula and a warning that it is not a health score.
