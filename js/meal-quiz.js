@@ -109,7 +109,7 @@
   }
   function renderStep() {
     var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
-    root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + ' Select the no-preference option when you want us to ignore this question.</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<p class="quiz-required" role="alert" hidden>Please choose an option before continuing. “No preference” is a full option too.</p><div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost quiz-back" data-go="-1">Back</button>' : '') + '<button type="button" class="btn btn-primary quiz-continue" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
+    root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + ' Skip a question and we treat it as no preference.</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost quiz-back" data-go="-1">Back</button>' : '') + '<button type="button" class="btn btn-primary quiz-continue" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
     root.querySelector("h2").focus({ preventScroll: true });
   }
   function summary(count) {
@@ -160,10 +160,12 @@
     else if (t.dataset.go) {
       var direction = Number(t.dataset.go);
       var activeStep = STEPS[step];
-      if (direction > 0 && !state[activeStep.key].length && !noPreference[activeStep.key]) {
-        var message = root.querySelector(".quiz-required");
-        if (message) { message.hidden = false; message.scrollIntoView({ block: "nearest", behavior: reducedMotion() ? "auto" : "smooth" }); }
-        return;
+      // Leaving a question blank means the same thing as picking its
+      // no-preference option, so Continue advances either way. Refusing to
+      // move made the button look broken on a phone: the tap did nothing
+      // visible, and the explanation sat above the fold.
+      if (direction > 0 && !state[activeStep.key].length) {
+        noPreference[activeStep.key] = true;
       }
       step += direction; step >= STEPS.length ? renderResults() : renderStep();
     }

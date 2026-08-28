@@ -11,7 +11,20 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
-SHEETS = ["css/unified-v7.css"]
+# The full shared cascade, in the order audit_visual_contract.py requires.
+# Only unified-v7.css was managed here, so any page the generators rewrote lost
+# liquid, contrast-fix and polish -- 48 pages were failing the contract, and
+# more importantly they were missing the contrast repairs, which is a
+# readability bug rather than a cosmetic one.
+SHEETS = [
+    "css/liquid.css",
+    "css/contrast-fix.css",
+    "css/polish.css",
+    "css/unified-v7.css",
+    # After unified-v7 on purpose: it sets the failing colours with
+    # !important, so a repair earlier in the cascade cannot win.
+    "css/theme-fix.css",
+]
 SCRIPTS = ["js/unified-v7.js"]
 ASSET_VERSION = "20260828f"
 
@@ -63,6 +76,8 @@ def main():
                 f'<link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml"></head>',
                 1,
             )
+        # Re-linked as one block at the end of <head> so the relative order
+        # inside SHEETS is exactly the cascade the contract checks for.
         add = "".join(f'<link rel="stylesheet" href="{prefix}{sheet}?v={v}">' for sheet in SHEETS)
         out = c.replace("</head>", add + "</head>", 1)
 

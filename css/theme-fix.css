@@ -1,0 +1,146 @@
+/* Theme contrast repairs.
+ *
+ * Loads after unified-v7.css, which is the only way to win: that sheet sets
+ * most of these with !important, so a fix placed earlier in the cascade has no
+ * effect regardless of specificity.
+ *
+ * Every rule here exists because an automated pass measured the pair in a real
+ * browser, in both themes, and found it under the WCAG floor. The recurring
+ * cause is a component whose text colour is fixed while its background follows
+ * the theme, so it reads correctly in one mode and disappears in the other.
+ */
+
+/* Table headers. In light mode a dark-green header kept dark ink; in dark mode
+   a pale header kept pale ink. Bind both to the surface they sit on. */
+html[data-theme="light"] body.site-v3 :is(thead th, thead) {
+  background: #e7f0e9 !important;
+  color: #0e2a1f !important;
+}
+html[data-theme="dark"] body.site-v3 :is(thead th, thead) {
+  background: #172e25 !important;
+  color: #e8f2ec !important;
+}
+
+/* Text sitting on a dark band while the page is in light mode. These blocks
+   paint their own dark background, so their contents have to be light in both
+   themes rather than inheriting the page ink. */
+body.site-v3 :is(.method-band, .trust-box, .compact-calc, .modern-footer,
+  .lane-label, .path-card.featured, .gm6-dark, .u-dark, [class*="-dark"])
+  :is(p, li, small, h2, h3, h4, strong, b, span, td, a:not(.btn)) {
+  color: #dceae2 !important;
+}
+body.site-v3 :is(.method-band, .trust-box, .compact-calc, .lane-label,
+  .path-card.featured) :is(h2, h3, h4, strong, b) {
+  color: #ffffff !important;
+}
+
+/* Small print on a white card while the page is in dark mode: it kept the
+   dark-theme muted colour and vanished into the card. */
+html[data-theme="dark"] body.site-v3 :is(.sample-card, .dash-meal, .mini-result,
+  .pick-card, .meal-card, .u-card, [class*="card"])
+  :is(small, p, .meal-index-foot, figcaption) {
+  color: #3f5348 !important;
+}
+
+/* Muted greys that landed just under 4.5:1 on tinted surfaces. */
+body.site-v3 :is(.gm6-tool-num, figcaption, .meal-index-foot, .metric-note, .cite-org) {
+  color: #43574c !important;
+}
+html[data-theme="dark"] body.site-v3 :is(.gm6-tool-num, .metric-note, .cite-org) {
+  color: #b9cec3 !important;
+}
+
+/* A lime link on white is unreadable; lime is only ever a colour for dark
+   grounds. */
+body.site-v3 a.text-link,
+html[data-theme="light"] body.site-v3 a.text-link { color: #1a6344 !important; }
+body.site-v3 :is([class*="-dark"], .method-band, .trust-box) a.text-link { color: #dfff69 !important; }
+
+/* Buttons whose label sat at 3.64:1 on the mid-green fill. */
+body.site-v3 :is(button, .btn, .chip, .tab).active,
+body.site-v3 :is(button, .btn).is-active { color: #ffffff !important; }
+
+/* Row headers. `table.data-table th` in style.css paints them dark green and
+   white; a later rule reset the colour to page ink while leaving the dark
+   background, giving 1.49:1 on 82 pages. My first attempt here only covered
+   `thead th` and missed these entirely, because they are `th[scope="row"]`
+   inside tbody. */
+body.site-v3 table th[scope="row"],
+body.site-v3 table tbody th {
+  background: transparent !important;
+  color: var(--u-ink, #0e2a1f) !important;
+  font-weight: 750;
+}
+html[data-theme="dark"] body.site-v3 table :is(th[scope="row"], tbody th) {
+  color: #e8f2ec !important;
+}
+/* Column headers, both themes, stated as one pair so neither can drift. */
+html[data-theme="light"] body.site-v3 table thead th { color: #0e2a1f !important; }
+html[data-theme="dark"]  body.site-v3 table thead th { color: #e8f2ec !important; }
+
+/* The gm6 components paint their own dark panels, so their text must be light
+   in both themes rather than following the page ink. */
+/* a.gm6-tool is deliberately excluded: it is dark only in certain states, and
+   colouring it light unconditionally put pale text on a cream card at 1.22:1. */
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected),
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected)
+  :is(p, li, small, span, b, strong, h2, h3, h4, .gm6-tool-num, .eyebrow) {
+  color: #dceae2 !important;
+}
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected)
+  :is(h2, h3, h4, b, strong) { color: #ffffff !important; }
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head) .eyebrow { color: #c7ef7a !important; }
+
+/* A caption that kept the dark-theme muted grey on a white card. */
+html[data-theme="light"] body.site-v3 figcaption { color: #43574c !important; }
+
+/* Text inside the gm6 dark panels.
+ *
+ * Removing this block regressed the audit from 8 failing pairs to 45, so it is
+ * doing real work: without it the muted-grey rule above claims these elements
+ * and paints them dark on a dark panel. Selected by component class only --
+ * an earlier version also matched inline background styles, which caught the
+ * lime chip and put pale text on it. */
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected,
+  .gm6-hero, .gm6-band, .gm6-panel-dark) :is(p, li, small, span, figcaption,
+  .gm6-tool-num, .eyebrow, .metric-note, .cite-org) {
+  color: #cfe3d8 !important;
+}
+html[data-theme="dark"] body.site-v3 :is(.gm6-hero, .gm6-band, .gm6-finder-copy,
+  .gm6-compare-head) :is(p, li, small, figcaption, .eyebrow) {
+  color: #cfe3d8 !important;
+}
+html[data-theme="light"] body.site-v3 main > section:not([class*="hero"]) figcaption { color: #43574c !important; }
+html[data-theme="dark"]  body.site-v3 main > section:not([class*="hero"]) figcaption { color: #b9cec3 !important; }
+
+/* Desktop dropdown positioning.
+ *
+ * Only atelier-v5.css made .nav-popover absolute, and that sheet is not on
+ * every page. Pages without it fell back to the mobile drawer's static
+ * positioning, so two open panels sat inside the header and measured it at
+ * 572px against 80px elsewhere. This belongs in the shared cascade, not in an
+ * optional legacy sheet.
+ *
+ * Scoped above the 900px breakpoint so the mobile drawer, which is meant to be
+ * static and collapsed by max-height, is untouched. */
+@media (min-width: 901px) {
+  body.site-v3 .nav-group { position: relative; }
+  body.site-v3 .nav-popover {
+    position: absolute !important;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    width: min(330px, calc(100vw - 32px));
+    max-height: none !important;
+    overflow: visible !important;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 60;
+    transition: opacity .16s ease, transform .16s ease, visibility .16s;
+  }
+  body.site-v3 .nav-group.is-open .nav-popover {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: translateX(-50%) translateY(0);
+  }
+}

@@ -126,8 +126,8 @@ body .dash-meal small { color: #4a5c53 !important; }
 
 /* 11. Meal-index table headers rendered in the muted grey on the dark band
  *     behind them (1.52:1). Headers on a dark ground need light text. */
-.site-v3 .meal-index .meal-table thead th,
-.site-v3 .meal-index .meal-table th[scope="col"] { color: #dbe8e0 !important; }
+/* (retired: this band is light now, so the pale header colour that suited the
+   old dark band read at 1.08:1. theme-fix.css binds header colour to theme.) */
 .site-v3 .meal-index .meal-table th.is-key,
 .site-v3 .meal-index .meal-table td.is-key { color: #10231b !important; }
 
