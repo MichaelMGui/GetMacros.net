@@ -62,7 +62,7 @@ def head(path: str, title: str, description: str, *, schema=None,
 <meta name="twitter:title" content="{html.escape(title, quote=True)}">
 <meta name="twitter:description" content="{html.escape(description, quote=True)}">
 <meta name="twitter:image" content="{image_url}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg?v=20260828b" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#123f2d">
