@@ -42,8 +42,8 @@
       buttons.forEach(function (button) {
         button.setAttribute("aria-pressed", String(dark));
         button.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
-        var icon = button.querySelector(".theme-icon");
-        if (icon) icon.textContent = dark ? "☀" : "☾";
+        // The moon and sun are both in the markup; CSS reveals the one that
+        // matches the current theme, so nothing here touches .theme-icon.
         var label = button.querySelector(".theme-label");
         if (label) label.textContent = dark ? "Light" : "Dark";
       });

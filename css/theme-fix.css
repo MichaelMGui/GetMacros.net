@@ -343,7 +343,7 @@ html[data-theme="dark"] body.site-v3 :is(.macro-row span, .macro-grid span,
   color: #e6f2ea !important;
 }
 html[data-theme="dark"] body.site-v3 :is(.brand-mark, .brand-bubble, .meal-brand,
-  .goal-icon, .tool-group-icon, .card-icon, .round-link, .nav-mobile-search) {
+  .goal-icon, .tool-group-icon, .card-icon, .round-link) {
   background: rgba(214, 244, 226, .12) !important;
   color: #eaf6ef !important;
 }
@@ -728,3 +728,122 @@ html[data-theme="dark"] body.site-v3 .gm6-question { color: #b7c8bf !important; 
 
 /* The article eyebrow was the last text under 12px. */
 body.site-v3 :is(.eyebrow, p.eyebrow) { font-size: max(.78rem, 12.5px) !important; }
+
+/* ======================================================================
+ * The mobile menu drawer in dark mode.
+ *
+ * The drawer is painted #f4f6f4 with #173326 labels in both themes, so under
+ * the dark theme the theme-aware nav colours elsewhere in this file claimed
+ * the triggers and put near-white text on that pale panel: "Eat Out", "Tools",
+ * "Learn", "About" and the search row were all invisible with the menu open.
+ * The closed bar measured fine, which is why an audit of the default state
+ * never saw it. Light keeps the palette it has; dark gets its own.
+ * ====================================================================== */
+@media (max-width: 900px) {
+  html[data-theme="dark"] body.site-v3 .full-nav-links {
+    color: #eaf6ef !important;
+    background: #0f1d17 !important;
+    border: 1px solid rgba(214, 244, 226, .16) !important;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, .55) !important;
+  }
+  html[data-theme="dark"] body.site-v3 .full-nav-links :is(.nav-group-trigger, .nav-direct) {
+    color: #eaf6ef !important;
+    background: transparent !important;
+  }
+  html[data-theme="dark"] body.site-v3 .full-nav-links :is(.nav-group-trigger:hover, .nav-direct:hover),
+  html[data-theme="dark"] body.site-v3 .full-nav-links .nav-group.is-open .nav-group-trigger,
+  html[data-theme="dark"] body.site-v3 .full-nav-links .nav-direct[aria-current="page"] {
+    color: #ffffff !important;
+    background: rgba(214, 244, 226, .12) !important;
+  }
+  html[data-theme="dark"] body.site-v3 .full-nav-links .nav-group {
+    border-color: rgba(214, 244, 226, .14) !important;
+  }
+  /* Inside the drawer the popover is part of the same panel, so it does not
+     paint a second surface on top of it. */
+  html[data-theme="dark"] body.site-v3 .full-nav-links .nav-popover {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  html[data-theme="dark"] body.site-v3 .full-nav-links .nav-popover :is(a, strong, small, span) {
+    color: #e6f2ea !important;
+  }
+  html[data-theme="dark"] body.site-v3 .full-nav-links .nav-popover a:hover {
+    background: rgba(214, 244, 226, .1) !important;
+  }
+}
+
+/* Theme toggle icon.
+ *
+ * Both the moon and the sun are in the markup; this reveals the one that
+ * matches the current theme. They replace the ☾ and ☀ text characters, which
+ * every platform draws at a different weight and baseline -- thin outline on
+ * one, filled emoji on another -- and which the toggle script used to write
+ * into the button on each switch. */
+body.site-v3 .theme-icon {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+}
+body.site-v3 .theme-icon svg { width: 100%; height: 100%; display: none; }
+:root:not([data-theme="dark"]) body.site-v3 .theme-icon .theme-moon { display: block; }
+html[data-theme="dark"] body.site-v3 .theme-icon .theme-sun { display: block; }
+html[data-theme="dark"] body.site-v3 .theme-icon .theme-moon { display: none; }
+
+/* Male and female marks on the macro calculator.
+ *
+ * calculators-polish.css already set an M and an F on these badges, but a
+ * later rule hid the pseudo-element and cleared the badge's background, so
+ * both options rendered as a bare label with an empty 42px gap where the mark
+ * should be. The two options were also given the same person icon, which told
+ * you nothing about which was which. */
+body:is(.calculator-suite, .tools-page) .sex-choice-icon {
+  display: grid !important;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  border: 1px solid rgba(214, 244, 226, .18) !important;
+  background: rgba(214, 244, 226, .1) !important;
+  color: inherit !important;
+  font-weight: 900;
+}
+body:is(.calculator-suite, .tools-page) .sex-choice-icon::before {
+  display: block !important;
+  font-size: 1.05rem;
+  line-height: 1;
+  letter-spacing: .01em;
+}
+body:is(.calculator-suite, .tools-page) .sex-choice-row label:first-child .sex-choice-icon::before { content: "M"; }
+body:is(.calculator-suite, .tools-page) .sex-choice-row label:last-child .sex-choice-icon::before { content: "F"; }
+/* Selected: the badge inverts so the mark stays the clearest thing in the row. */
+body:is(.calculator-suite, .tools-page) .sex-choice-row label:has(input:checked) .sex-choice-icon {
+  border-color: transparent !important;
+  background: #07110d !important;
+  color: #bce94f !important;
+}
+html[data-theme="light"] body:is(.calculator-suite, .tools-page) .sex-choice-icon {
+  border-color: rgba(19, 73, 48, .2) !important;
+  background: rgba(19, 73, 48, .08) !important;
+}
+
+/* The search row at the bottom of the mobile drawer.
+ *
+ * Four sheets each gave it a different treatment -- dark green with white ink,
+ * lime with dark ink, and a muted translucent row -- and on search.html itself
+ * a fifth rule for the current page painted it dark green on dark green at
+ * 1.10:1. It is the same call to action as the Search button in the top bar,
+ * so it gets the same lime fill and dark ink in both themes, current page
+ * included, and a size that clears the 12px floor. */
+@media (max-width: 900px) {
+  body.site-v3 .full-nav-links a.nav-mobile-search,
+  body.site-v3 .full-nav-links a.nav-mobile-search[aria-current="page"],
+  body.site-v3 .full-nav-links a.nav-mobile-search:hover {
+    color: #07110d !important;
+    background: #bce94f !important;
+    font-size: max(.83rem, 13px) !important;
+    font-weight: 850;
+  }
+}
