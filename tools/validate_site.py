@@ -438,6 +438,10 @@ def main() -> int:
         errors.append(f"site.webmanifest: cannot parse JSON: {exc}")
 
     search_text, search_parser = pages.get("search.html", ("", PageParser()))
+    # What matters is that every indexable page is reachable from search, not
+    # which element carries the link. The results were <article class="result-card">
+    # wrapping an anchor; they are now the anchor itself, one row per page, so
+    # both shapes count.
     result_links = set()
     for match in re.finditer(r"<article\b[^>]*class=[\"'][^\"']*\bresult-card\b[^\"']*[\"'][^>]*>(.*?)</article>", search_text, re.I | re.S):
         anchor = re.search(r"<a\b[^>]*href=[\"']([^\"']+)[\"']", match.group(1), re.I)
@@ -445,6 +449,10 @@ def main() -> int:
             target = local_target("search.html", anchor.group(1))
             if target:
                 result_links.add(target)
+    for match in re.finditer(r"<a\b[^>]*class=[\"'][^\"']*\bsearch-hit\b[^\"']*[\"'][^>]*href=[\"']([^\"']+)[\"']", search_text, re.I):
+        target = local_target("search.html", match.group(1))
+        if target:
+            result_links.add(target)
     expected_search = indexable - {"search.html"}
     for path in sorted(expected_search - result_links):
         errors.append(f"search.html: missing indexable page {path}")

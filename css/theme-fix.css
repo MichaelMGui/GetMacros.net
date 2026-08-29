@@ -99,8 +99,8 @@ body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head) .eyebrow { color: #c7ef7a 
  * 1.48:1 on white. Card captions are stated separately from banner captions. */
 html[data-theme="light"] body.site-v3 figcaption { color: #43574c !important; }
 html[data-theme="dark"] body.site-v3 figcaption { color: #b9cec3 !important; }
-html[data-theme="light"] body.site-v3
-  :is(.editorial-figure, .article-illustration, .blog-hero-art) figcaption {
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero, .policy-hero)
+  :is(.editorial-figure, .article-illustration, .blog-hero-art) :is(figcaption, figcaption *) {
   color: #43574c !important;
 }
 html[data-theme="dark"] body.site-v3
@@ -119,11 +119,14 @@ body.site-v3 .calc-photo-card figcaption { color: #eef6f1 !important; }
  * lime chip and put pale text on it. */
 body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected,
   .gm6-hero, .gm6-band, .gm6-panel-dark) :is(p, li, small, span, figcaption,
-  .gm6-tool-num, .eyebrow, .metric-note, .cite-org) {
+  .gm6-tool-num, .eyebrow, .metric-note, .cite-org):not(:where(.btn, .btn *)) {
+  /* Button labels excluded: this rule reaches four classes deep, so it was
+     beating the rule that gives a button's contents the button's own colour,
+     and the arrow on "Find my meal" came out pale mint on a lime fill. */
   color: #dff0e7 !important;
 }
 html[data-theme="dark"] body.site-v3 :is(.gm6-hero, .gm6-band, .gm6-finder-copy,
-  .gm6-compare-head) :is(p, li, small, figcaption, .eyebrow) {
+  .gm6-compare-head) :is(p, li, small, figcaption, .eyebrow):not(:where(.btn, .btn *)) {
   color: #dff0e7 !important;
 }
 html[data-theme="light"] body.site-v3 main > section:not([class*="hero"]) figcaption { color: #43574c !important; }
@@ -377,9 +380,10 @@ html[data-theme="dark"]  body.site-v3 .gm6-tool:nth-child(3) { background: #1223
 /* Lime fills are identical in both themes, so their ink is dark in both. Stated
    at a higher specificity than the dark-panel rule above, which would otherwise
    claim these spans and paint pale text on a lime chip. */
-body.site-v3 :is(.gm6-macro-score span:first-child, .gm6-preview-result),
-body.site-v3 :is(.gm6-macro-score span:first-child, .gm6-preview-result)
-  :is(b, strong, span, small) {
+/* The calories chip is no longer part of this: it is a mid jade now, stated
+   further down with white ink. Only the lime preview banner remains. */
+body.site-v3 .gm6-preview-result,
+body.site-v3 .gm6-preview-result :is(b, strong, span, small) {
   color: #14301f !important;
 }
 
@@ -469,8 +473,6 @@ body.site-v3 :is(.icon-badge, .pill, .gm6-chain-mark) :is(b, strong, span, small
    rule matches four classes deep; anything shorter loses to it even with
    !important, which is why an earlier attempt at this left "1,050 calories"
    pale on lime. */
-html[data-theme] body.site-v3 .gm6-hero .gm6-macro-score span:first-child,
-html[data-theme] body.site-v3 .gm6-hero .gm6-macro-score span:first-child :is(b, small),
 html[data-theme] body.site-v3 .gm6-finder-preview .gm6-preview-result,
 html[data-theme] body.site-v3 .gm6-finder-preview .gm6-preview-result :is(strong, span) {
   color: #14301f !important;
@@ -582,8 +584,11 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
   background: none !important;
 }
 html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
-  :is(p, li, small, dd, span, figcaption) {
-  /* #dff0e7 measured 4.30:1 against the light end of the hero gradient. */
+  :is(p, li, small, dd, span, figcaption):not(:where(.btn, .btn *)) {
+  /* The previous #cfe3d8 measured 4.30:1 against the light end of the hero
+     gradient, just under the floor. Text inside a button is excluded: a button
+     carries its own colour, and painting its label with the section's ink left
+     the arrow on "Find my meal" pale mint on a lime fill. */
   color: #dff0e7 !important;
 }
 html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
@@ -927,4 +932,232 @@ body.site-v3 input:is([type="checkbox"], [type="radio"]) {
 }
 html[data-theme="dark"] body.site-v3 input:is([type="checkbox"], [type="radio"]) {
   accent-color: #7fe0a4;
+}
+
+/* ======================================================================
+ * Search page.
+ *
+ * Built to the same pattern as the homepage tool bento: a numbered kicker, a
+ * plain title and one line of copy, with the lead tile on forest. The old page
+ * set every result's headline at hero scale, so fifty-six of them stacked into
+ * a wall of underlined text with no way to tell one group from another.
+ * ====================================================================== */
+body.search-page .search-start { padding-block: clamp(46px, 6vw, 76px) !important; }
+body.search-page :is(.search-start-head, .search-library-head) { max-width: 720px; margin-bottom: clamp(24px, 3vw, 38px); }
+body.search-page :is(.search-start-head, .search-library-head) h2 {
+  margin: .35rem 0 0;
+  font-size: clamp(1.75rem, 3.2vw, 2.7rem) !important;
+  letter-spacing: -.035em;
+}
+
+body.search-page .search-start-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+body.search-page .search-start-tile {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  gap: 6px;
+  min-height: 168px;
+  padding: 22px;
+  border: 1px solid var(--u-line);
+  border-radius: 20px;
+  background: var(--u-surface);
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: transform .34s var(--u-ease, ease), box-shadow .34s ease, border-color .2s ease;
+}
+body.search-page .search-start-tile:nth-child(1) { grid-column: span 3; }
+body.search-page .search-start-tile:nth-child(2) { grid-column: span 3; }
+body.search-page .search-start-tile:hover {
+  transform: translateY(-4px);
+  border-color: rgba(36, 122, 84, .34);
+  box-shadow: var(--u-shadow-sm);
+}
+body.search-page .search-start-num {
+  font-size: max(.76rem, 12px);
+  font-weight: 850;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+body.search-page .search-start-name {
+  margin-top: auto;
+  font-size: clamp(1.15rem, 1.9vw, 1.5rem);
+  font-weight: 850;
+  letter-spacing: -.03em;
+  line-height: 1.15;
+}
+body.search-page .search-start-copy { font-size: .92rem; line-height: 1.5; }
+
+/* The lead tile is a forest panel in both themes, like the bento it echoes. */
+body.search-page .search-start-tile:nth-child(1) {
+  border-color: transparent;
+  background: linear-gradient(150deg, #0b3b2c, #10513c) !important;
+}
+body.search-page .search-start-tile:nth-child(1) .search-start-name { color: #ffffff !important; }
+body.search-page .search-start-tile:nth-child(1) .search-start-copy { color: #c6dbd0 !important; }
+body.search-page .search-start-tile:nth-child(1) .search-start-num { color: #dff36a !important; }
+
+html[data-theme="light"] body.search-page .search-start-tile:not(:nth-child(1)) .search-start-num { color: #176c48 !important; }
+html[data-theme="dark"] body.search-page .search-start-tile:not(:nth-child(1)) .search-start-num { color: #9ee6bb !important; }
+html[data-theme="light"] body.search-page .search-start-tile:not(:nth-child(1)) .search-start-copy { color: #43574c !important; }
+html[data-theme="dark"] body.search-page .search-start-tile:not(:nth-child(1)) .search-start-copy { color: #b7c8bf !important; }
+
+/* The library: one block per section, so the bottom of the page is labelled. */
+body.search-page .search-library { padding-block: clamp(40px, 5vw, 70px) !important; }
+body.search-page .search-group { padding: 0 !important; margin-bottom: clamp(30px, 4vw, 48px); background: none !important; }
+body.search-page .search-group-head { display: flex; align-items: center; gap: 12px; }
+body.search-page .search-group-head h2 {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.6rem) !important;
+  letter-spacing: -.03em;
+}
+body.search-page .search-group-count {
+  display: grid;
+  place-items: center;
+  min-width: 30px;
+  height: 26px;
+  padding: 0 9px;
+  border-radius: 999px;
+  font-size: max(.74rem, 12px);
+  font-weight: 850;
+}
+html[data-theme="light"] body.search-page .search-group-count { color: #0d3b2a !important; background: rgba(19,73,48,.1) !important; }
+html[data-theme="dark"] body.search-page .search-group-count { color: #d9f0e3 !important; background: rgba(214,244,226,.12) !important; }
+body.search-page .search-group-note { margin: .35rem 0 1rem; font-size: .93rem; }
+body.search-page .search-hits { display: grid; grid-template-columns: repeat(auto-fill, minmax(288px, 1fr)); gap: 12px; }
+body.search-page .search-hit {
+  display: grid;
+  gap: 5px;
+  align-content: start;
+  padding: 16px 18px;
+  border: 1px solid var(--u-line);
+  border-radius: 16px;
+  background: var(--u-surface);
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: transform .28s ease, border-color .2s ease, background .2s ease;
+}
+body.search-page .search-hit:hover { transform: translateY(-3px); border-color: rgba(36, 122, 84, .34); }
+body.search-page .search-hit-name {
+  font-size: max(1rem, 15.5px);
+  font-weight: 830;
+  letter-spacing: -.02em;
+  line-height: 1.3;
+  text-decoration: none !important;
+}
+body.search-page .search-hit-copy { font-size: .89rem; line-height: 1.5; }
+html[data-theme="light"] body.search-page :is(.search-hit-copy, .search-group-note) { color: #43574c !important; }
+html[data-theme="dark"] body.search-page :is(.search-hit-copy, .search-group-note) { color: #b7c8bf !important; }
+body.search-page .search-results-actions { display: flex; justify-content: center; margin-top: 8px; }
+
+@media (max-width: 900px) {
+  body.search-page .search-start-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.search-page .search-start-tile,
+  body.search-page .search-start-tile:nth-child(1),
+  body.search-page .search-start-tile:nth-child(2) { grid-column: span 2; min-height: 0; }
+}
+body.search-page .search-group-more {
+  margin: 12px 0 0;
+  font-size: .86rem;
+  font-weight: 750;
+}
+html[data-theme="light"] body.search-page .search-group-more { color: #43574c !important; }
+html[data-theme="dark"] body.search-page .search-group-more { color: #b7c8bf !important; }
+
+/* ======================================================================
+ * Homepage hero details.
+ * ====================================================================== */
+
+/* The arrow on "Find my meal" is a <span>, and the hero's rule for spans
+   painted it the same pale mint as the hero's body copy -- on a lime button
+   that is almost invisible. Anything inside a button takes the button's own
+   colour, not the section's. */
+html[data-theme] body.site-v3 :is(.btn, button.btn, a.btn) :is(span, b, strong, small) {
+  color: inherit !important;
+}
+body.site-v3 .gm6-arrow { opacity: .92; font-weight: 700; }
+
+/* The calories chip.
+ *
+ * It was filled with the neon lime used for buttons, which made the number on
+ * it hard to read and gave the panel two competing accents. A mid jade reads
+ * clearly with white on it, still marks the chip as the headline figure, and
+ * is plainly distinct from the near-black forest of the other two. */
+body.site-v3 .gm6-macro-score span:first-child {
+  background: #1f7a52 !important;
+  border-color: rgba(255, 255, 255, .18) !important;
+}
+html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:first-child,
+html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:first-child :is(b, small) {
+  color: #ffffff !important;
+}
+/* The other two chips are translucent over the hero gradient, so their labels
+   are measured against its lightest stop: #cfe0d7 came to 4.21:1 there. */
+html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:not(:first-child),
+html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:not(:first-child) small {
+  color: #dff0e7 !important;
+}
+
+/* "104 g" was breaking after the number because the chip is narrower than the
+   figure at full size. The value stays on one line and the columns share the
+   row evenly. */
+body.site-v3 .gm6-macro-score { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+body.site-v3 .gm6-macro-score b {
+  white-space: nowrap;
+  font-size: clamp(1.3rem, 2.1vw, 1.85rem) !important;
+}
+
+/* ======================================================================
+ * Mobile.
+ *
+ * The homepage ran 12,300px on a 390px screen, and roughly a tenth of that was
+ * section padding alone: ten sections at 58px top and bottom. Everything here
+ * buys back vertical space without shrinking anything below its readable size
+ * -- body copy, headings and controls keep their sizes; the air between them
+ * is what tightens.
+ * ====================================================================== */
+@media (max-width: 760px) {
+  body.site-v3 main > section,
+  body.site-v3 main > div > section { padding-block: 46px !important; }
+  body.site-v3 main > section[class*="hero"],
+  body.site-v3 main > .hero,
+  body.site-v3 .page-hero { padding-block: 56px 52px !important; }
+
+  /* The hero lede was four lines at 1.7 leading before the buttons appeared. */
+  body.site-v3 :is(.gm6-hero-lede, .eatout-lede, .hero-lede) {
+    font-size: 1.02rem !important;
+    line-height: 1.55 !important;
+  }
+  body.site-v3 main > section[class*="hero"] p { line-height: 1.55; }
+
+  /* Proof figures read as a compact pair of rows rather than four blocks. */
+  body.site-v3 .gm6-proof { gap: 1rem 1.6rem; margin-top: 2rem; }
+  body.site-v3 .gm6-proof strong { font-size: 1.1rem; }
+  body.site-v3 .gm6-proof span { font-size: .82rem; line-height: 1.3; }
+
+  /* Section intros and grids: the gaps were tuned for a 1280px canvas. */
+  body.site-v3 .gm6-section-intro { margin-bottom: 1.8rem !important; gap: 1rem !important; }
+  body.site-v3 :is(.gm6-tool-bento, .gm6-learning-grid, .guide-grid, .explore-grid,
+    .tool-grid, .goal-grid, .chain-grid, .card-grid, .blog-grid, .search-hits) { gap: 12px !important; }
+  body.site-v3 .gm6-tool { min-height: 0 !important; padding: 20px !important; }
+  body.site-v3 .gm6-tool:first-child { min-height: 0 !important; }
+  body.site-v3 .gm6-tool h3,
+  body.site-v3 .gm6-tool:first-child h3 { margin: .8rem 0 .4rem; font-size: clamp(1.3rem, 5.6vw, 1.7rem) !important; }
+
+  /* Stacked call-to-action buttons keep a comfortable height without becoming
+     a column of slabs. */
+  body.site-v3 :is(.gm6-hero-actions, .focus-actions, .hero-actions) .btn {
+    width: 100%;
+    min-height: 52px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 560px) {
+  body.site-v3 main > section,
+  body.site-v3 main > div > section { padding-block: 40px !important; }
+  body.site-v3 .container { padding-inline: 16px !important; }
 }

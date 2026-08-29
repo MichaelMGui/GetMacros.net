@@ -213,6 +213,20 @@ HOME_MAIN = re.sub(
     flags=re.S,
 )
 
+# The tools bento sat seventh, below the restaurant explorer, the comparison
+# table and the calculator, so the clearest statement of what the site actually
+# gives you was three screens down. It moves up to sit directly after the
+# flagship finder: find a meal, then the tools that support the decision.
+_tools = re.search(r'\n<section class="gm6-tools">.*?\n</section>\n', HOME_MAIN, re.S)
+if _tools:
+    HOME_MAIN = HOME_MAIN[:_tools.start()] + "\n" + HOME_MAIN[_tools.end():]
+    HOME_MAIN = re.sub(
+        r'(?=\n<section class="gm6-restaurants">)',
+        "\n" + _tools.group(0).strip("\n") + "\n",
+        HOME_MAIN,
+        count=1,
+    )
+
 RESTAURANT_FILES = {
     "cava-healthy-meals-macros.html", "chick-fil-a-healthy-meals-macros.html",
     "chipotle-healthy-meals-macros.html", "dunkin-healthy-breakfast-macros.html",

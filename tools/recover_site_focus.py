@@ -221,33 +221,140 @@ def is_indexable(item: dict) -> bool:
 
 
 def build_search(final: list[dict]) -> None:
+    """Build the search page.
+
+    The old version emitted one flat list of every page as a full-bleed card,
+    each with the same section word above a headline set at hero scale. Fifty-six
+    of those in a row read as a wall of unlabelled text rather than a library --
+    nothing told you what any group was, so the bottom of the page looked like
+    leftovers. This version leads with a small set of starting points, then
+    groups the rest under a heading per section with a count, and sets each hit
+    as a row rather than a poster.
+    """
     items = [item for item in final if is_indexable(item) and item["path"] != "search.html"]
-    featured_paths = (
-        "healthy-fast-food.html", "restaurant-meal-finder.html", "restaurant-meal-guides.html",
-        "calculators.html", "articles.html", "chipotle-healthy-meals-macros.html",
-        "chick-fil-a-healthy-meals-macros.html", "mcdonalds-healthy-meals-macros.html",
-        "nutrition-label-comparison-tool.html", "recipe-macro-scaler.html",
-        "macros-for-weight-loss.html", "macros-for-muscle-gain.html",
-    )
-    featured_order = {path: index for index, path in enumerate(featured_paths)}
-    items.sort(key=lambda item: (
-        0 if str(item["path"]) in featured_order else 1,
-        featured_order.get(str(item["path"]), 999),
-        section_for(str(item["path"])), str(item["h1"]),
-    ))
-    cards = []
+
+    # The five things most people arrive wanting. Shown before the library so
+    # the page answers "what is here" before it answers "what matches".
+    starts = [
+        ("restaurant-meal-finder.html", "Match", "Healthy Order Match",
+         "Answer five questions and get ranked meals from 15 chains."),
+        ("calculators.html", "Targets", "Free macro calculator",
+         "Daily calories, protein, carbs and fat, with the assumptions shown."),
+        ("healthy-fast-food.html", "Compare", "Healthy fast food",
+         "83 complete orders ranked for cutting, bulking and high protein."),
+        ("restaurant-meal-guides.html", "Browse", "Restaurant guides",
+         "Every chain we track, with official nutrition sources."),
+        ("articles.html", "Learn", "Nutrition guides",
+         "What the numbers mean, and how to use them at the next meal."),
+    ]
+    start_tiles = "".join(
+        f'<a class="search-start-tile" href="{path}">'
+        f'<span class="search-start-num">{index:02d} &middot; {html.escape(kicker)}</span>'
+        f'<span class="search-start-name">{html.escape(name)}</span>'
+        f'<span class="search-start-copy">{html.escape(copy)}</span></a>'
+        for index, (path, kicker, name, copy) in enumerate(starts, start=1))
+
+    # Group order puts the product first and the housekeeping pages last, so
+    # scrolling to the bottom lands on something that is meant to be there.
+    order = ["Healthy fast food", "Tools", "Macros and goals", "Labels and recipes",
+             "Protein and food", "Journal", "Trust", "Site"]
+    blurbs = {
+        "Healthy fast food": "Chain-by-chain menus, rankings and the meal finder.",
+        "Tools": "Calculators that answer one question each.",
+        "Macros and goals": "How to set and adjust the numbers for a goal.",
+        "Labels and recipes": "Reading a label and doing the math on real food.",
+        "Protein and food": "Food-level guides behind the protein numbers.",
+        "Journal": "Longer answers to questions worth the space.",
+        "Trust": "How the site is written, sourced and corrected.",
+        "Site": "Everything else.",
+    }
+    grouped: dict[str, list[dict]] = {}
     for item in items:
-        section = section_for(str(item["path"]))
-        haystack = f'{item["title"]} {item["h1"]} {item["meta"]} {section}'.casefold()
-        cards.append(f'''<article class="result-card" data-search="{html.escape(haystack, quote=True)}">
-<span>{html.escape(section)}</span><h2><a href="{item['path']}">{html.escape(str(item['h1'] or item['title']))}</a></h2><p>{html.escape(str(item['meta']))}</p></article>''')
+        grouped.setdefault(section_for(str(item["path"])), []).append(item)
+    for group in grouped.values():
+        group.sort(key=lambda item: str(item["h1"] or item["title"]))
+
+    total = 0
+    blocks = []
+    for section in order + [s for s in sorted(grouped) if s not in order]:
+        group = grouped.get(section)
+        if not group:
+            continue
+        hits = []
+        for item in group:
+            haystack = f'{item["title"]} {item["h1"]} {item["meta"]} {section}'.casefold()
+            hits.append(
+                f'<a class="search-hit" href="{item["path"]}" '
+                f'data-search="{html.escape(haystack, quote=True)}">'
+                f'<span class="search-hit-name">{html.escape(str(item["h1"] or item["title"]))}</span>'
+                f'<span class="search-hit-copy">{html.escape(str(item["meta"]))}</span></a>')
+        total += len(group)
+        blocks.append(
+            f'<section class="search-group" data-group>'
+            f'<div class="search-group-head"><h2>{html.escape(section)}</h2>'
+            f'<span class="search-group-count" data-count>{len(group)}</span></div>'
+            f'<p class="search-group-note">{html.escape(blurbs.get(section, ""))}</p>'
+            f'<div class="search-hits">{"".join(hits)}</div>'
+            f'<p class="search-group-more" data-more hidden></p></section>')
+
     title = "Search Healthy Fast Food, Macro Tools & Guides | GetMacros"
-    desc = "Search GetMacros healthy fast-food guides, restaurant comparisons, macro calculators and focused nutrition guides."
-    body = f'''{head("search.html", title, desc)}<body class="site-v3 recovery-page">{nav()}
-<main id="main-content"><section class="search-hero"><div class="container"><p class="eyebrow">Search GetMacros</p><h1>Find a restaurant, tool or nutrition guide</h1><p>Search the focused GetMacros library: healthy fast food, macro tools and the guides that help you use them.</p>
-<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try “Chipotle,” “high protein” or “recipe macros”" autocomplete="off"></label><p id="search-status" aria-live="polite">Showing 12 of {len(cards)} resources</p></div></section>
-<section><div class="container search-results-shell"><div class="search-results" id="search-results">{''.join(cards)}</div><div class="search-results-actions"><button class="search-results-toggle" id="search-results-toggle" type="button" aria-controls="search-results" aria-expanded="false">Show all {len(cards)} resources</button></div></div></section></main>{footer()}
-<script>(function(){{var q=document.getElementById('site-search'),cards=[].slice.call(document.querySelectorAll('.result-card')),status=document.getElementById('search-status'),toggle=document.getElementById('search-results-toggle'),limit=12,expanded=false;function words(value){{return value.toLowerCase().match(/[a-z0-9]+/g)||[];}}function run(){{var terms=words(q.value),matched=0,shown=0;cards.forEach(function(card,index){{var haystack=words(card.dataset.search).join(' '),match=!terms.length||terms.every(function(term){{return haystack.indexOf(term)>-1;}}),visible=match&&(terms.length||expanded||index<limit);card.hidden=!visible;if(match)matched++;if(visible)shown++;}});if(terms.length)status.textContent=matched+' matching resource'+(matched===1?'':'s');else status.textContent=expanded?'Showing all '+matched+' resources':'Showing '+shown+' of '+matched+' resources';toggle.hidden=!!terms.length||cards.length<=limit;toggle.setAttribute('aria-expanded',String(expanded));toggle.textContent=expanded?'Show fewer resources':'Show all '+cards.length+' resources';}}q.addEventListener('input',function(){{expanded=false;run();}});toggle.addEventListener('click',function(){{expanded=!expanded;run();if(!expanded)document.querySelector('.search-hero').scrollIntoView({{behavior:'smooth',block:'start'}});}});var initial=new URLSearchParams(location.search).get('q');if(initial)q.value=initial;run();}})();</script></body></html>'''
+    desc = ("Search GetMacros healthy fast-food guides, restaurant comparisons, "
+            "macro calculators and focused nutrition guides.")
+    # `perGroup` rather than one global cap: capping the first twelve rows
+    # overall showed twelve restaurants and hid every other section, so the
+    # page opened looking like one list again. Four from each section shows
+    # what the library is made of before you expand it. `limit` is the point
+    # below which expanding would be pointless.
+    script = """(function(){
+var q=document.getElementById('site-search'),
+    hits=[].slice.call(document.querySelectorAll('.search-hit')),
+    groups=[].slice.call(document.querySelectorAll('[data-group]')),
+    status=document.getElementById('search-status'),
+    toggle=document.getElementById('search-results-toggle'),
+    startBlock=document.getElementById('search-start'),
+    limit=12,perGroup=4,expanded=false;
+function words(value){return value.toLowerCase().match(/[a-z0-9]+/g)||[];}
+function run(){
+  var terms=words(q.value),matched=0,shown=0;
+  groups.forEach(function(group){
+    var rows=[].slice.call(group.querySelectorAll('.search-hit')),live=0,kept=0;
+    rows.forEach(function(hit){
+      var hay=words(hit.dataset.search).join(' '),
+          match=!terms.length||terms.every(function(t){return hay.indexOf(t)>-1;});
+      if(match)live++;
+      var visible=match&&(terms.length||expanded||kept<perGroup);
+      if(visible)kept++;
+      hit.hidden=!visible;
+    });
+    matched+=live;shown+=kept;
+    var count=group.querySelector('[data-count]');
+    if(count)count.textContent=live;
+    var more=group.querySelector('[data-more]');
+    if(more){var rest=live-kept;more.hidden=rest<1;more.textContent='+'+rest+' more in this section';}
+    group.hidden=!live;
+  });
+  if(startBlock)startBlock.hidden=!!terms.length;
+  if(terms.length)status.textContent=matched?matched+' match'+(matched===1?'':'es')+' for \u201c'+q.value.trim()+'\u201d':'Nothing matches \u201c'+q.value.trim()+'\u201d yet. Try a chain, a macro or a tool.';
+  else status.textContent=expanded?'Showing all '+matched+' pages':'Showing '+shown+' of '+matched+' pages';
+  toggle.hidden=!!terms.length||hits.length<=limit;
+  toggle.setAttribute('aria-expanded',String(expanded));
+  toggle.textContent=expanded?'Show fewer':'Show all '+hits.length+' pages';
+}
+q.addEventListener('input',function(){expanded=false;run();});
+toggle.addEventListener('click',function(){
+  expanded=!expanded;run();
+  if(!expanded)document.querySelector('.search-library').scrollIntoView({behavior:'smooth',block:'start'});
+});
+var initial=new URLSearchParams(location.search).get('q');
+if(initial)q.value=initial;
+run();
+})();"""
+    body = f'''{head("search.html", title, desc)}<body class="site-v3 recovery-page search-page">{nav()}
+<main id="main-content"><section class="search-hero"><div class="container"><p class="eyebrow">Search GetMacros</p><h1>Find a restaurant, tool or nutrition guide</h1><p>Every page on GetMacros in one place: healthy fast food, macro tools, and the guides that help you use them.</p>
+<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try &ldquo;Chipotle,&rdquo; &ldquo;high protein&rdquo; or &ldquo;recipe macros&rdquo;" autocomplete="off"></label><p id="search-status" aria-live="polite">Showing 12 of {total} pages</p></div></section>
+<section class="search-start" id="search-start"><div class="container"><div class="search-start-head"><p class="eyebrow">Start here</p><h2>The five people ask for most</h2></div><div class="search-start-grid">{start_tiles}</div></div></section>
+<section class="search-library"><div class="container"><div class="search-library-head"><p class="eyebrow">The whole library</p><h2>Everything, grouped by what it does</h2></div>{"".join(blocks)}<div class="search-results-actions"><button class="search-results-toggle" id="search-results-toggle" type="button" aria-controls="search-results" aria-expanded="false">Show all {total} pages</button></div></div></section></main>{footer()}
+<script>{script}</script></body></html>'''
     (ROOT / "search.html").write_text(body, encoding="utf-8")
 
 
