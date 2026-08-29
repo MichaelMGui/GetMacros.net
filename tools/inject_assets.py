@@ -44,6 +44,27 @@ DROP_SCRIPTS = [
 ]
 DROP_SHEETS = ["css/theme.css"]
 
+# The header is the same markup on every page, but its layout lives in
+# atelier-v5.css, which 11 generated article pages never linked. Without it
+# `.nav-mobile-search{display:none}` and the desktop nav-item display rules
+# were missing, so the phone search field rendered inline in the desktop bar,
+# overlapping "About". Linked where absent, immediately before liquid.css so
+# the rest of the cascade keeps the order the contract checks; pages that
+# already have it are left exactly where they are, since moving it past
+# studio-v6 would change how they look.
+SHARED_HEADER_SHEET = "css/atelier-v5.css"
+
+
+def ensure_header_sheet(text, prefix, version):
+    if "atelier-v5.css" in text:
+        return text
+    link = f'<link rel="stylesheet" href="{prefix}{SHARED_HEADER_SHEET}?v={version}">'
+    marker = re.search(r'<link rel="stylesheet" href="[^"]*liquid\.css[^"]*">', text)
+    if marker:
+        return text[:marker.start()] + link + text[marker.start():]
+    return text.replace("</head>", link + "</head>", 1)
+
+
 
 def main():
     os.chdir(ROOT)
@@ -80,6 +101,7 @@ def main():
         # inside SHEETS is exactly the cascade the contract checks for.
         add = "".join(f'<link rel="stylesheet" href="{prefix}{sheet}?v={v}">' for sheet in SHEETS)
         out = c.replace("</head>", add + "</head>", 1)
+        out = ensure_header_sheet(out, prefix, v)
 
         # Behaviour scripts load deferred at the end of body: they only enhance
         # what is already rendered, so blocking parse for them would trade a

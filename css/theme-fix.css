@@ -120,11 +120,11 @@ body.site-v3 .calc-photo-card figcaption { color: #eef6f1 !important; }
 body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected,
   .gm6-hero, .gm6-band, .gm6-panel-dark) :is(p, li, small, span, figcaption,
   .gm6-tool-num, .eyebrow, .metric-note, .cite-org) {
-  color: #cfe3d8 !important;
+  color: #dff0e7 !important;
 }
 html[data-theme="dark"] body.site-v3 :is(.gm6-hero, .gm6-band, .gm6-finder-copy,
   .gm6-compare-head) :is(p, li, small, figcaption, .eyebrow) {
-  color: #cfe3d8 !important;
+  color: #dff0e7 !important;
 }
 html[data-theme="light"] body.site-v3 main > section:not([class*="hero"]) figcaption { color: #43574c !important; }
 html[data-theme="dark"]  body.site-v3 main > section:not([class*="hero"]) figcaption { color: #b9cec3 !important; }
@@ -475,3 +475,290 @@ html[data-theme] body.site-v3 .gm6-finder-preview .gm6-preview-result,
 html[data-theme] body.site-v3 .gm6-finder-preview .gm6-preview-result :is(strong, span) {
   color: #14301f !important;
 }
+
+/* ======================================================================
+ * Layout repairs. Same reason this file loads last: these correct earlier
+ * sheets, and stating them anywhere else loses the cascade.
+ * ====================================================================== */
+
+/* Breadcrumbs: let the current page wrap instead of being sliced.
+ *
+ * site-v3.css sets the trail to white-space:nowrap inside an overflow-x:auto
+ * container with the scrollbar hidden, so on a phone a long article title is
+ * simply cut mid-word with nothing to say it continues -- "Serving size vs.
+ * portion size: the difference tha". Five articles lost between 16px and 130px
+ * of their title this way. A breadcrumb running to two lines is normal; a
+ * truncated one is a dead end. */
+@media (max-width: 720px) {
+  body.site-v3 .breadcrumb,
+  body.site-v3 .breadcrumb > .container,
+  body.site-v3 .breadcrumb > .container > span {
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+  body.site-v3 .breadcrumb > .container {
+    flex-wrap: wrap;
+    row-gap: 2px;
+    line-height: 1.5;
+  }
+}
+
+/* Action rows: two buttons that share an edge.
+ *
+ * recovery.css lays .focus-actions out as flex with a 12px gap, but on the
+ * blog hero something later resets it to display:block. The markup has no
+ * whitespace between the two <a>s, so they rendered edge to edge with no seam
+ * -- "Read the latestBrowse all guides" as one bar. Stated here so every
+ * action row keeps its gap regardless of what claimed display first. */
+body.site-v3 :is(.focus-actions, .hero-actions, .gm6-hero-actions, .calc-hero-actions) {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 12px !important;
+}
+
+/* Micro-labels below 12px.
+ *
+ * Kickers, meta lines and the theme-toggle label had drifted to 11.2-11.8px,
+ * which is under the size at which small caps-and-tracking text stays legible
+ * on a phone. Raised to a 12.5px floor; none of them are in a fixed-width box,
+ * so nothing reflows. */
+body.site-v3 :is(.theme-label, .blog-kicker, .story-index, .pill,
+  .blog-meta span, .order-preview-options em, .wg-headline span,
+  .meal-index-foot, .gm6-tool-num) {
+  font-size: max(.78rem, 12.5px) !important;
+}
+body.site-v3 small,
+body.site-v3 .modern-footer small { font-size: max(.79rem, 12.5px); }
+
+/* A three-digit statistic set in a two-digit box.
+ *
+ * .gm6-story-number strong scales to 6.4vw, which is 82px at desktop width,
+ * inside a flex item that had been allowed to shrink to 103px -- so "112"
+ * wrapped after the second digit. It keeps its size and stops wrapping. */
+body.site-v3 .gm6-story-number strong {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: clamp(3.2rem, 5.4vw, 5rem) !important;
+  line-height: 1;
+}
+body.site-v3 .gm6-story-number { flex-wrap: wrap; }
+
+/* A submit button narrower than its own label.
+ *
+ * The calculator buttons are inline-flex inside a grid, so they were free to
+ * shrink to the column width: "Calculate" needed 95px and got 70px, with the
+ * tail simply cut. A control never shrinks below its label. */
+body.site-v3 :is(.btn, .calc-submit, button[type="submit"], .link-btn) {
+  min-width: fit-content;
+  flex-shrink: 0;
+}
+
+/* A figure that clipped its own caption.
+ *
+ * .editorial-figure carries overflow:hidden for its rounded corners. As a grid
+ * item it was being stretched to the row rather than to its contents, so on
+ * articles.html the caption started 10px below the bottom of the box and was
+ * never visible at all. Sizing to content puts it back. */
+body.site-v3 :is(.editorial-figure, .article-illustration, .blog-hero-art) {
+  height: auto !important;
+  align-self: start;
+}
+
+/* Menu descriptions were the last text under 12px. */
+body.site-v3 .nav-popover small { font-size: max(.79rem, 12.5px) !important; }
+
+/* ======================================================================
+ * Hero banners.
+ *
+ * Every hero on the site is a dark green gradient in both themes, so its text
+ * is light in both themes. It could not be left to follow --u-ink: that token
+ * is dark under the light theme, which put near-black headings on a dark green
+ * banner. Stated once here for every hero variant the site uses.
+ * ====================================================================== */
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+  :is(h1, h2, h3, h4, strong, b) {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+}
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+  :is(p, li, small, dd, span, figcaption) {
+  /* #dff0e7 measured 4.30:1 against the light end of the hero gradient. */
+  color: #dff0e7 !important;
+}
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+  :is(.eyebrow, p.eyebrow) {
+  /* #a8f0bd measured 4.37:1 against the light end of the hero gradient;
+     the eyebrow is 12px uppercase, so it needs the 4.5:1 body-text floor. */
+  color: #c9f7d8 !important;
+}
+
+/* Panels that sit inside a hero keep their own ground, so they keep their own
+   ink. A caption on a white figure card and a value on a lime chip are both
+   inside the banner but not on it. */
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero, .policy-hero)
+  :is(.editorial-figure, .article-illustration, .blog-hero-art) figcaption {
+  color: #43574c !important;
+}
+html[data-theme="dark"] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero, .policy-hero)
+  :is(.editorial-figure, .article-illustration, .blog-hero-art) figcaption {
+  color: #b9cec3 !important;
+}
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero, .policy-hero)
+  .calc-photo-card figcaption {
+  color: #eef6f1 !important;
+}
+
+/* Outline and ghost buttons on a hero.
+ *
+ * unified-v7's light-theme rule gives them --u-ink on a 5% dark wash, which is
+ * correct on a light page and unreadable on the dark banner they actually sit
+ * on -- "Find a meal for my goal" was near-black on dark green. */
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+  :is(.btn-outline, .btn-ghost, button.btn-ghost, button[type="reset"]) {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, .42) !important;
+  background: rgba(255, 255, 255, .1) !important;
+}
+
+/* The method band is a dark panel by design (recovery.css paints it #10231b)
+   and its text is light to match. Something later repaints it near-white on
+   the blog, which left an entire eight-item panel of light text on light. */
+body.site-v3 .method-band {
+  background: #10231b !important;
+  border-color: rgba(214, 244, 226, .14) !important;
+}
+
+/* An inline "editorial note" callout kept its light paper in dark mode. */
+html[data-theme="dark"] body.site-v3 :is(.editorial-note, .answer-box, .callout, .note-box) {
+  background: #101f19 !important;
+  border-color: rgba(214, 244, 226, .16) !important;
+}
+html[data-theme="dark"] body.site-v3 :is(.editorial-note, .answer-box, .callout, .note-box)
+  :is(p, li, strong, b, span, small) { color: #e6f2ea !important; }
+
+/* The "see everything" link is a mid-green that only works on paper. */
+html[data-theme="dark"] body.site-v3 :is(.explore-all, a.explore-all, .meal-index-link a) {
+  color: #9ee6bb !important;
+}
+
+/* Light-theme secondary muted text.
+ *
+ * --u-muted-2 is #647a70, which is 4.27:1 on the page paper -- just under the
+ * floor, and it is used for breadcrumbs, card meta and menu descriptions, so
+ * it was the single most widely read colour that failed. Darkened to 4.77:1. */
+html[data-theme="light"] body.site-v3 { --u-muted-2: #5d7269; }
+
+/* The primary button's fill runs lime to mint. Dark ink is fine on the lime
+   end and 3.48:1 on the mint end, so the mint end is lifted rather than the
+   ink lightened -- white would fail on the lime half instead. */
+html[data-theme="light"] body.site-v3 :is(.btn-primary, .calc-submit, button[type="submit"]) {
+  background: linear-gradient(135deg, #cdf05f, #63b98a) !important;
+  color: #07110d !important;
+}
+
+/* ======================================================================
+ * Sections studio-v6 designed as dark bands.
+ *
+ * unified-v7 flattens every `main > section` to a transparent ground so the
+ * page reads as one canvas. That is right for most sections, but it pulled the
+ * floor out from under the ones built dark: the goal story kept its white
+ * headings and lime step labels while its background became the near-white
+ * page, so "Healthy is not one number." was white on white. Restoring the
+ * ground fixes a dozen text colours at once instead of restating each.
+ * ====================================================================== */
+body.site-v3 section.gm6-goal-story {
+  background: #0a3327 !important;
+  color: #ffffff !important;
+}
+body.site-v3 .gm6-goal-story :is(h2, h3, h4, strong, b) { color: #ffffff !important; }
+body.site-v3 .gm6-goal-story :is(p, li, small) { color: #c8dbd1 !important; }
+body.site-v3 .gm6-goal-story .gm6-story-label { color: #c8dbd1 !important; }
+body.site-v3 .gm6-goal-story .gm6-section-intro .eyebrow { color: #c9f7d8 !important; }
+body.site-v3 .gm6-goal-story .gm6-story-step > span { color: #dff36a !important; }
+body.site-v3 .gm6-goal-story .gm6-story-number span { color: #c8dbd1 !important; }
+
+/* Its steps are dimmed until they are the one being read. A step at 45%
+   opacity is below the contrast floor, so the dimming is gentler than the
+   original 45% and the active step is fully opaque. */
+body.site-v3 .gm6-story-step { opacity: .72; }
+body.site-v3 .gm6-story-step.is-active { opacity: 1; }
+
+/* The editorial cards in the learning grid are dark panels on a pale band. */
+body.site-v3 a.gm6-editorial :is(h3, h4, strong, b) { color: #ffffff !important; }
+body.site-v3 a.gm6-editorial :is(p, small, span) { color: #d2dfd9 !important; }
+
+/* 56vh per step over five steps made the section nearly 3,000px of mostly
+   empty column. The scroll story still needs room for the sticky panel to
+   change as you pass each step, so the height is trimmed rather than removed. */
+@media (min-width: 901px) {
+  body.site-v3 .gm6-story-step { min-height: 42vh !important; }
+}
+
+/* Panels inside a hero that carry their own ground.
+ *
+ * The order-match preview is a white card sitting on the dark banner, so the
+ * hero's light text rule turned every label on it white-on-white. A panel
+ * whose surface follows the theme takes the theme's ink, not the banner's. */
+html[data-theme="light"] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero)
+  :is(.order-match-preview, .eatout-match, .quiz-card, .quiz-results, .home-calc-form)
+  :is(h1, h2, h3, h4, strong, b) { color: #10251b !important; }
+html[data-theme="light"] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero)
+  :is(.order-match-preview, .eatout-match, .quiz-card, .quiz-results, .home-calc-form)
+  :is(p, li, small, span, em) { color: #43574c !important; }
+html[data-theme="dark"] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero)
+  :is(.order-match-preview, .eatout-match, .quiz-card, .quiz-results, .home-calc-form)
+  :is(h1, h2, h3, h4, strong, b) { color: #f4f8f5 !important; }
+html[data-theme="dark"] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .page-hero, .gm6-hero)
+  :is(.order-match-preview, .eatout-match, .quiz-card, .quiz-results, .home-calc-form)
+  :is(p, li, small, span, em) { color: #b7c8bf !important; }
+
+/* The finder's breadcrumb was styled white for a dark bar that no longer has
+   a background of its own, so it read as white on the page paper. */
+html[data-theme="light"] body.site-v3 .breadcrumb :is(a, span) { color: #3a5145 !important; }
+html[data-theme="light"] body.site-v3 .breadcrumb a { color: #176c48 !important; }
+html[data-theme="dark"] body.site-v3 .breadcrumb :is(a, span) { color: #b7c8bf !important; }
+html[data-theme="dark"] body.site-v3 .breadcrumb a { color: #9ee6bb !important; }
+
+/* Callout boxes carry text directly, not only in child elements. */
+html[data-theme="dark"] body.site-v3 :is(.editorial-note, .answer-box, .callout, .note-box) {
+  color: #e6f2ea !important;
+}
+
+/* Buttons on the dark method band. */
+body.site-v3 .method-band :is(a.btn, button.btn) {
+  color: #0b1712 !important;
+}
+body.site-v3 .method-band :is(a.btn-outline, a.btn-ghost, button.btn-ghost) {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, .42) !important;
+  background: rgba(255, 255, 255, .1) !important;
+}
+
+/* Outline buttons on the dark method band. The earlier pair here was written
+   as `.method-band a.btn-outline`, which is one class short of the light-theme
+   rule in unified-v7 that gives every ghost button dark ink; on the dark band
+   that read at 1.02:1. */
+html[data-theme] body.site-v3 .method-band :is(a.btn-outline, a.btn-ghost, button.btn-ghost, button[type="reset"]) {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, .42) !important;
+  background: rgba(255, 255, 255, .1) !important;
+}
+
+/* A stage heading styled white for a dark band that the section flattening
+   removed. It sits on the page paper now, so it takes the page ink. */
+html[data-theme="light"] body.site-v3 :is(.mm-stage-h, .order-macro-intro h2) { color: #10251b !important; }
+html[data-theme="dark"]  body.site-v3 :is(.mm-stage-h, .order-macro-intro h2) { color: #f4f8f5 !important; }
+
+/* Calculator field labels kept the light-theme ink inside the dark form card
+   that unified-v7 paints in both themes. */
+html[data-theme="dark"] body:is(.calculator-suite, .tools-page) :is(.field-label, .field > label, .height-pair label span, legend) {
+  color: #cfe0d7 !important;
+}
+
+/* The finder preview's question label is a mid-grey chosen for the pale panel
+   it sits on in light mode; the panel is dark in dark mode. */
+html[data-theme="dark"] body.site-v3 .gm6-question { color: #b7c8bf !important; }
+
+/* The article eyebrow was the last text under 12px. */
+body.site-v3 :is(.eyebrow, p.eyebrow) { font-size: max(.78rem, 12.5px) !important; }

@@ -23,7 +23,7 @@ CSP = (
     "https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google "
     "https://*.googleapis.com; frame-src 'self' https://*.googlesyndication.com "
     "https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google; "
-    "frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; "
+    "object-src 'none'; base-uri 'self'; form-action 'self'; "
     "upgrade-insecure-requests"
 )
 

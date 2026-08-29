@@ -95,8 +95,13 @@ body.site-v3 .article-container {
   margin-inline: auto;
 }
 body.site-v3 main { position: relative; min-width: 0; background: transparent !important; }
-body.site-v3 main > section { position: relative; padding-block: clamp(72px, 8vw, 118px); background: transparent !important; color: var(--u-ink) !important; }
-body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage) {
+/* Sections are flattened to one continuous canvas. .gm6-goal-story opts out:
+   it is designed as a dark band and carries white headings and lime step
+   labels of its own, so stripping its ground left white text on the pale
+   page. Any future section that paints itself belongs in this exclusion. */
+body.site-v3 main > section:not(.gm6-goal-story) { position: relative; padding-block: clamp(72px, 8vw, 118px); background: transparent !important; color: var(--u-ink) !important; }
+body.site-v3 main > section.gm6-goal-story { position: relative; padding-block: clamp(72px, 8vw, 118px); }
+body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage):not(.gm6-goal-story) {
   background: linear-gradient(180deg, rgba(255,255,255,.018), rgba(255,255,255,.006)) !important;
 }
 
@@ -649,7 +654,12 @@ body:is(.calculator-suite, .tools-page) .sex-choice-icon::before, body:is(.calcu
 body.site-v3.article-page:not(.restaurant-guide) main > section:not([class*="hero"]) > .container {
   max-width: 980px;
 }
-body.site-v3.article-page main > section[style] { background: transparent !important; color: var(--u-ink) !important; }
+/* Strips inline section backgrounds left over from older article markup.
+   Heroes are excluded: they also carry an inline style, so this rule was
+   removing the hero's dark gradient while the hero's own text rules kept
+   painting the eyebrow and lede light -- pale mint on a pale page, which
+   made the kicker and the standfirst invisible on 15 article pages. */
+body.site-v3.article-page main > section[style]:not([class*="hero"]) { background: transparent !important; color: var(--u-ink) !important; }
 body.site-v3.article-page main > section:not([class*="hero"]) + section:not([class*="hero"]) { border-top: 1px solid var(--u-line); }
 .cite, .source-card, .policy-card { border-color: var(--u-line) !important; background: var(--u-surface) !important; }
 .ad-auto-anchor { min-height: 0 !important; color: transparent !important; background: transparent !important; }
@@ -892,7 +902,7 @@ html[data-theme="light"] .nav-direct[aria-current="page"] { color: var(--u-ink) 
 html[data-theme="light"] .nav-popover,
 html[data-theme="light"] .full-nav-links { background-color: rgba(255,255,255,.99) !important; }
 html[data-theme="light"] .nav-popover a:hover { background: #edf3ee !important; }
-html[data-theme="light"] body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage) { background: rgba(22,83,53,.025) !important; }
+html[data-theme="light"] body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage):not(.gm6-goal-story) { background: rgba(22,83,53,.025) !important; }
 html[data-theme="light"] body.site-v3 a { color: #176c48; }
 html[data-theme="light"] body.site-v3 .eyebrow { color: #176c48 !important; }
 html[data-theme="light"] body.site-v3 main > section[class*="hero"] .eyebrow,
