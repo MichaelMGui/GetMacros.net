@@ -34,19 +34,18 @@ body.site-v3 :is(.method-band, .trust-box, .compact-calc, .lane-label,
   color: #ffffff !important;
 }
 
-/* Small print on a white card while the page is in dark mode: it kept the
-   dark-theme muted colour and vanished into the card. */
-html[data-theme="dark"] body.site-v3 :is(.sample-card, .dash-meal, .mini-result,
-  .pick-card, .meal-card, .u-card, [class*="card"])
-  :is(small, p, .meal-index-foot, figcaption) {
-  color: #3f5348 !important;
-}
-
-/* Muted greys that landed just under 4.5:1 on tinted surfaces. */
-body.site-v3 :is(.gm6-tool-num, figcaption, .meal-index-foot, .metric-note, .cite-org) {
+/* Muted small print.
+ *
+ * An earlier version of this block assumed cards stay white in dark mode and
+ * painted their captions #3f5348. They do not: unified-v7.css repaints every
+ * card dark under the dark theme, so that rule was putting dark grey on a dark
+ * card -- the 1.84:1 captions on calculators.html and the 2.06:1 ranking notes
+ * on healthy-fast-food.html were both this one rule. State the pair per theme
+ * instead, so neither side can be inferred wrongly. */
+html[data-theme="light"] body.site-v3 :is(.meal-index-foot, .metric-note, .cite-org) {
   color: #43574c !important;
 }
-html[data-theme="dark"] body.site-v3 :is(.gm6-tool-num, .metric-note, .cite-org) {
+html[data-theme="dark"] body.site-v3 :is(.meal-index-foot, .metric-note, .cite-org) {
   color: #b9cec3 !important;
 }
 
@@ -54,6 +53,7 @@ html[data-theme="dark"] body.site-v3 :is(.gm6-tool-num, .metric-note, .cite-org)
    grounds. */
 body.site-v3 a.text-link,
 html[data-theme="light"] body.site-v3 a.text-link { color: #1a6344 !important; }
+html[data-theme="dark"] body.site-v3 a.text-link { color: #9ee6bb !important; }
 body.site-v3 :is([class*="-dark"], .method-band, .trust-box) a.text-link { color: #dfff69 !important; }
 
 /* Buttons whose label sat at 3.64:1 on the mid-green fill. */
@@ -91,8 +91,24 @@ body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected)
   :is(h2, h3, h4, b, strong) { color: #ffffff !important; }
 body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head) .eyebrow { color: #c7ef7a !important; }
 
-/* A caption that kept the dark-theme muted grey on a white card. */
+/* Captions follow the panel they sit in, not the section around them.
+ *
+ * `main > section[class*="hero"] figcaption` in unified-v7.css assumes a hero
+ * is dark. On articles.html the caption is inside a white .editorial-figure
+ * that happens to sit in the hero, so it inherited hero ink and measured
+ * 1.48:1 on white. Card captions are stated separately from banner captions. */
 html[data-theme="light"] body.site-v3 figcaption { color: #43574c !important; }
+html[data-theme="dark"] body.site-v3 figcaption { color: #b9cec3 !important; }
+html[data-theme="light"] body.site-v3
+  :is(.editorial-figure, .article-illustration, .blog-hero-art) figcaption {
+  color: #43574c !important;
+}
+html[data-theme="dark"] body.site-v3
+  :is(.editorial-figure, .article-illustration, .blog-hero-art) figcaption {
+  color: #b9cec3 !important;
+}
+/* This one paints its own dark scrim, so it is light in both themes. */
+body.site-v3 .calc-photo-card figcaption { color: #eef6f1 !important; }
 
 /* Text inside the gm6 dark panels.
  *
@@ -143,4 +159,319 @@ html[data-theme="dark"]  body.site-v3 main > section:not([class*="hero"]) figcap
     opacity: 1 !important;
     transform: translateX(-50%) translateY(0);
   }
+}
+
+/* No scroll lock on the mobile menu.
+ *
+ * `.nav-open{overflow:hidden}` elsewhere in the cascade reset the page to the
+ * top whenever you opened the menu part-way down an article, which is exactly
+ * the "I have to scroll back up" problem. The header is sticky, so the drawer
+ * opens under it wherever you are; locking the body buys nothing and costs
+ * your place on the page. */
+body.nav-open {
+  position: static !important;
+  overflow: visible !important;
+}
+
+/* ======================================================================
+ * Dark mode: remap the surface and ink tokens.
+ *
+ * This is the cause of "the colours glitch out when switching". Four design
+ * systems each define their own paper, card and ink tokens, and none of them
+ * declared dark values. Switching to dark changed the text to light but left
+ * those panels light, so light text landed on light panels: the header at
+ * 1.73:1 on all 57 pages, headings at 1.06:1, table cells at 1.00:1.
+ *
+ * Fixing it at the token level rather than per element is the difference
+ * between one rule and several hundred, and it means any component built on
+ * these tokens is correct in both themes from now on without another patch.
+ * ====================================================================== */
+html[data-theme="dark"] {
+  /* studio-v6 */
+  --gm6-paper: #0b1712;
+  --gm6-paper-warm: #101f19;
+  --gm6-mint: #16302a;
+  --gm6-ink: #f4f8f5;
+  --gm6-ink-soft: #b7c8bf;
+  /* NOT inverted. `forest` names a dark accent panel that carries white text
+     in both themes -- the hero, the finder copy column, the compare header.
+     An earlier version of this file flipped it to a pale mint, which turned
+     every one of those panels light while their text stayed light: that is
+     the single biggest cause of "the colours glitch when I switch theme".
+     Dark mode only lifts them slightly so they still separate from the darker
+     page behind them. */
+  --gm6-forest: #12563f;
+  --gm6-forest-deep: #0f4433;
+
+  /* atelier-v5 */
+  --gm-paper: #0b1712;
+  --gm-card: #101f19;
+  --gm-line: rgba(214,244,226,.16);
+  --gm-ink: #f4f8f5;
+  --gm-ink-soft: #b7c8bf;
+  --gm-forest: #12563f;
+  --gm-forest-dark: #0f4433;
+
+  /* premium-v4 */
+  --premium-paper: #0b1712;
+  --premium-paper-warm: #101f19;
+  --premium-line: rgba(214,244,226,.16);
+  --premium-ink: #f4f8f5;
+  --premium-muted: #b7c8bf;
+  --premium-forest: #12563f;
+  --premium-forest-deep: #0f4433;
+  --premium-mint: #16302a;
+
+  /* site-v3 */
+  --v3-paper: #0b1712;
+  --v3-card: #101f19;
+  --v3-mint: #16302a;
+  --v3-line: rgba(214,244,226,.16);
+  --v3-ink: #f4f8f5;
+  --v3-muted: #b7c8bf;
+  --v3-forest: #12563f;
+
+  /* style.css base */
+  --color-bg: #07110d;
+  --color-surface: #101f19;
+  --color-text: #f4f8f5;
+  --color-text-muted: #b7c8bf;
+  --color-border: rgba(214,244,226,.16);
+  --cream: #0b1712;
+  --ink: #f4f8f5;
+  --muted: #b7c8bf;
+}
+
+/* The same values again, declared on <body>.
+ *
+ * A custom property set on an element beats one inherited from an ancestor, no
+ * matter how specific the ancestor's selector is. site-v3.css declares the
+ * whole --v3-* set on `.site-v3`, which is the body itself, and modern.css,
+ * meal-finder-v2.css and atelier-v5.css do the same on their own body classes.
+ * Every one of those shadowed the block above, so the remap silently did
+ * nothing on the components that use them -- the pale key column on the meal
+ * table was this, not a missing rule. */
+html[data-theme="dark"] body.site-v3,
+html[data-theme="dark"] body.modern-site,
+html[data-theme="dark"] body.finder-v2,
+html[data-theme="dark"] body.legacy-unified,
+html[data-theme="dark"] body.tools-page,
+html[data-theme="dark"] body.calculator-suite {
+  --v3-paper: #0b1712;
+  --v3-card: #101f19;
+  --v3-mint: #16302a;
+  --v3-line: rgba(214,244,226,.16);
+  --v3-ink: #f4f8f5;
+  --v3-muted: #b7c8bf;
+  --v3-forest: #12563f;
+
+  --gm-paper: #0b1712;
+  --gm-card: #101f19;
+  --gm-line: rgba(214,244,226,.16);
+  --gm-ink: #f4f8f5;
+  --gm-ink-soft: #b7c8bf;
+  --gm-forest: #12563f;
+
+  --cream: #0b1712;
+  --ink: #f4f8f5;
+  --muted: #b7c8bf;
+  --mint: #16302a;
+  --green: #9ee6bb;
+  --forest: #12563f;
+}
+
+/* Surfaces written as literal hex rather than through a token. Each was found
+   by measuring light-on-light in dark mode; the replacement is the dark
+   equivalent of the same role. */
+html[data-theme="dark"] body.site-v3 [style*="#fff"],
+html[data-theme="dark"] body.site-v3 :is(.gm6-card, .gm-card, .u-card, .sample-card,
+  .meal-card, .pick-card, .advice-card, .tool-card, .goal-card, .guide-card,
+  .chain-card, .ranking-card, .dash-meal, .mini-result, .home-calc-form,
+  .quiz-card, .mm-form, .table-wrap, .source-box, .nav-popover) {
+  background-color: #101f19 !important;
+  border-color: rgba(214,244,226,.16) !important;
+}
+html[data-theme="dark"] body.site-v3 :is(thead, thead th) {
+  background-color: #16302a !important;
+}
+
+/* Translucent light surfaces in dark mode.
+ *
+ * The header bar is rgba(255,254,248,.76) -- 76% opaque white. Over a light
+ * page that is a soft frosted bar; over the dark page it is still a near-white
+ * bar, and the dark theme's light text sits on it at 1.73:1. This is the
+ * "text on the top is impossible to read" case, and it was invisible to a
+ * token remap because the colour is written inline as rgba, not as a token.
+ *
+ * Anything frosted needs its own dark value, not a lighter alpha. */
+html[data-theme="dark"] body.site-v3 :is(.site-header, .modern-header, .full-nav,
+  .nav-utility, .section-tabs, .stats-ribbon > .container) {
+  background: rgba(11, 23, 18, .88) !important;
+  border-color: rgba(214, 244, 226, .16) !important;
+}
+html[data-theme="dark"] body.site-v3 :is(.nav-group-trigger, .nav-direct,
+  .theme-toggle, .nav-toggle, .modern-brand) {
+  color: #eaf6ef !important;
+  background: transparent !important;
+}
+html[data-theme="dark"] body.site-v3 .nav-popover {
+  background: #13241d !important;
+  border-color: rgba(214, 244, 226, .18) !important;
+}
+html[data-theme="dark"] body.site-v3 .nav-popover :is(a, strong, small, span) {
+  color: #e6f2ea !important;
+}
+html[data-theme="dark"] body.site-v3 .nav-popover a:hover { background: rgba(214,244,226,.09) !important; }
+
+/* A lime button carries dark ink in both themes: the fill does not change. */
+body.site-v3 a.btn[class*="primary"],
+html[data-theme="dark"] body.site-v3 :is(a.btn, button.btn)[class*="primary"] {
+  color: #0b1712 !important;
+}
+
+/* Remaining light panels written as literal colours rather than tokens, so the
+   dark-mode token remap could not reach them. Found by sampling every element
+   whose computed background was still near-white while the theme was dark. */
+html[data-theme="dark"] body.site-v3 :is(.data-section, .fast-section.alt,
+  .goal-section, .method-section, .final-cta, .tool-library, .gm6-band-soft) {
+  background: rgba(16, 31, 25, .92) !important;
+}
+html[data-theme="dark"] body.site-v3 :is(.macro-row span, .macro-grid span,
+  .pick-metrics span, .meal-metric, .sample-macros span, .dash-macros span,
+  .stat-row span, .goal-chips a, .chain-links a, .tool-links a, .filter-pills button) {
+  background: rgba(214, 244, 226, .08) !important;
+  color: #e6f2ea !important;
+}
+html[data-theme="dark"] body.site-v3 :is(.brand-mark, .brand-bubble, .meal-brand,
+  .goal-icon, .tool-group-icon, .card-icon, .round-link, .nav-mobile-search) {
+  background: rgba(214, 244, 226, .12) !important;
+  color: #eaf6ef !important;
+}
+/* A mint button on a mint panel: give the fill contrast rather than the text. */
+html[data-theme="dark"] body.site-v3 .data-section a.btn:not([class*="primary"]) {
+  background: rgba(214, 244, 226, .10) !important;
+  color: #eaf6ef !important;
+  border-color: rgba(214, 244, 226, .28) !important;
+}
+
+/* ======================================================================
+ * Components whose surface does NOT follow the theme.
+ *
+ * studio-v6.css writes several panels as literal colours: a forest card, a
+ * lime chip, a white shell. Those keep their colour in both themes, so their
+ * text has to be stated once rather than left to follow the page ink -- which
+ * is what made the homepage read correctly in light mode and dissolve in dark.
+ * ====================================================================== */
+
+/* The lead tool card is a forest panel in both themes. */
+body.site-v3 a.gm6-tool:first-child :is(p, span, small, li) { color: #dfeee6 !important; }
+body.site-v3 a.gm6-tool:first-child :is(h3, h4, strong, b) { color: #ffffff !important; }
+body.site-v3 a.gm6-tool:first-child .gm6-tool-num { color: #b7dcc6 !important; }
+/* The rest are pale in light mode and dark in dark mode, so they do follow it. */
+html[data-theme="light"] body.site-v3 a.gm6-tool:not(:first-child) .gm6-tool-num { color: #43574c !important; }
+html[data-theme="dark"]  body.site-v3 a.gm6-tool:not(:first-child) .gm6-tool-num { color: #b9cec3 !important; }
+html[data-theme="dark"]  body.site-v3 a.gm6-tool:not(:first-child) :is(h3, h4, strong, b) { color: #f4f8f5 !important; }
+html[data-theme="dark"]  body.site-v3 a.gm6-tool:not(:first-child) p { color: #b7c8bf !important; }
+html[data-theme="dark"]  body.site-v3 .gm6-tool:nth-child(3) { background: #12231c !important; }
+
+/* Lime fills are identical in both themes, so their ink is dark in both. Stated
+   at a higher specificity than the dark-panel rule above, which would otherwise
+   claim these spans and paint pale text on a lime chip. */
+body.site-v3 :is(.gm6-macro-score span:first-child, .gm6-preview-result),
+body.site-v3 :is(.gm6-macro-score span:first-child, .gm6-preview-result)
+  :is(b, strong, span, small) {
+  color: #14301f !important;
+}
+
+/* White shells that studio-v6 hard-codes, given their dark-mode equivalents. */
+html[data-theme="dark"] body.site-v3 :is(.gm6-finder-shell, .gm6-compare-shell) {
+  background: #101f19 !important;
+}
+html[data-theme="dark"] body.site-v3 .gm6-finder-preview {
+  background: linear-gradient(145deg, #13251e, #0e1e18) !important;
+}
+html[data-theme="dark"] body.site-v3 .gm6-choice:not(.is-selected) {
+  background: rgba(214, 244, 226, .06) !important;
+}
+html[data-theme="dark"] body.site-v3 .gm6-choice:not(.is-selected) :is(b, small) { color: #e4f0ea !important; }
+html[data-theme="dark"] body.site-v3 .gm6-finder-preview :is(h3, .eyebrow) { color: #f4f8f5 !important; }
+html[data-theme="dark"] body.site-v3 .gm6-method { background: #0d1a15 !important; }
+html[data-theme="dark"] body.site-v3 .gm6-method-points div { background: #101f19 !important; }
+html[data-theme="dark"] body.site-v3 .gm6-compare-row :is(strong, span) { color: #eaf4ee !important; }
+html[data-theme="dark"] body.site-v3 .gm6-compare-meal small { color: #a8bcb1 !important; }
+html[data-theme="dark"] body.site-v3 .gm6-compare-value.is-protein { color: #9ee6bb !important; }
+html[data-theme="dark"] body.site-v3 .home-calc-results :is(small, span) { color: #b7c8bf !important; }
+
+/* Calculator selection pills.
+ *
+ * The checked state fills with --u-mint, which is #247a54 under the light
+ * theme. Dark ink on that fill measures 3.64:1 -- readable-ish, but under the
+ * 4.5:1 floor for the 14px labels it carries. White on the same fill is
+ * 5.28:1, so the fill can stay exactly as designed. */
+html[data-theme="light"] body:is(.calculator-suite, .tools-page)
+  :is(.radio-row label:has(input:checked), .sex-choice-row label:has(input:checked),
+      .units-toggle button.active),
+html[data-theme="light"] body:is(.calculator-suite, .tools-page)
+  :is(.radio-row label:has(input:checked), .sex-choice-row label:has(input:checked),
+      .units-toggle button.active) :is(span, small, b) {
+  color: #ffffff !important;
+}
+
+/* ======================================================================
+ * The last pale panels in dark mode.
+ *
+ * Found by sweeping every page in the dark theme for elements whose computed
+ * background was still light. Saturated accents (the lime buttons, the pastel
+ * macro badges) are deliberately left alone -- they are the same fill in both
+ * themes by design -- but their ink is pinned dark below so it cannot follow
+ * the theme off them.
+ * ====================================================================== */
+html[data-theme="dark"] body.site-v3 :is(.formula, .calc-nav, .units-toggle,
+  .order-preview-progress, .meal-index, .meal-index .container,
+  .home-calc-results, .result-macros span, .wg-headline > div,
+  .calc-nav a) {
+  background: #101f19 !important;
+  border-color: rgba(214, 244, 226, .16) !important;
+}
+html[data-theme="dark"] body.site-v3 :is(.formula, .order-preview-progress,
+  .meal-index, .home-calc-results, .wg-headline)
+  :is(p, li, span, small, strong, b, td, th) {
+  color: #e6f2ea !important;
+}
+html[data-theme="dark"] body.site-v3 .calc-nav a { color: #e6f2ea !important; }
+html[data-theme="dark"] body.site-v3 .calc-nav a:hover { background: rgba(214,244,226,.1) !important; }
+html[data-theme="dark"] body.site-v3 .meal-index-foot {
+  color: #b9cec3 !important;
+  background: #101f19 !important;
+}
+html[data-theme="dark"] body.site-v3 .meal-index-foot a { color: #9ee6bb !important; }
+html[data-theme="dark"] body.site-v3 .units-toggle button:not(.active) { color: #cfe0d7 !important; }
+html[data-theme="dark"] body.site-v3 :is(input, textarea, select):not([type="checkbox"]):not([type="radio"]) {
+  background-color: #0e1c16 !important;
+  color: #f4f8f5 !important;
+  border-color: rgba(214, 244, 226, .18) !important;
+}
+html[data-theme="dark"] body.site-v3 :is(input, textarea)::placeholder { color: #8ba396 !important; }
+html[data-theme="dark"] body.site-v3 select option { color: #f4f8f5; background: #0e1c16; }
+
+/* Key columns were half-converted: the header cell went dark while the body
+   cell stayed pale, so one of the two always had ink the wrong way round. */
+html[data-theme="dark"] .site-v3 .meal-index .meal-table th.is-key,
+html[data-theme="dark"] .site-v3 .meal-index .meal-table td.is-key { color: #eaf4ee !important; }
+
+/* Pastel accent chips keep their fill in both themes, so they keep dark ink. */
+body.site-v3 :is(.icon-badge, .pill, .gm6-chain-mark),
+body.site-v3 :is(.icon-badge, .pill, .gm6-chain-mark) :is(b, strong, span, small) {
+  color: #14301f !important;
+}
+
+/* Lime, stated at a specificity that clears the dark-panel rule above. That
+   rule matches four classes deep; anything shorter loses to it even with
+   !important, which is why an earlier attempt at this left "1,050 calories"
+   pale on lime. */
+html[data-theme] body.site-v3 .gm6-hero .gm6-macro-score span:first-child,
+html[data-theme] body.site-v3 .gm6-hero .gm6-macro-score span:first-child :is(b, small),
+html[data-theme] body.site-v3 .gm6-finder-preview .gm6-preview-result,
+html[data-theme] body.site-v3 .gm6-finder-preview .gm6-preview-result :is(strong, span) {
+  color: #14301f !important;
 }

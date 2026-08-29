@@ -17,6 +17,11 @@ REQUIRED_ASSETS = (
     "css/contrast-fix.css",
     "css/polish.css",
     "css/unified-v7.css",
+    # theme-fix.css must come last. It repairs colours unified-v7.css sets with
+    # !important, so loading it any earlier makes every rule in it a no-op --
+    # which is exactly what happened when the recovery pass re-appended
+    # unified-v7 on its own and left theme-fix in front of it.
+    "css/theme-fix.css",
     "js/unified-v7.js",
 )
 FORBIDDEN_INTERACTION_ASSETS = (
@@ -133,7 +138,7 @@ def main() -> int:
         for asset in FORBIDDEN_INTERACTION_ASSETS:
             if Path(asset).name in text:
                 errors.append(f"{rel}: conflicting legacy interaction asset remains: {asset}")
-        cascade_assets = REQUIRED_ASSETS[:6]
+        cascade_assets = REQUIRED_ASSETS[:7]
         positions = []
         for asset in cascade_assets:
             match = re.search(r"(?<![A-Za-z0-9_-])" + re.escape(Path(asset).name), text)

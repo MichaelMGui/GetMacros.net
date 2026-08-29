@@ -171,9 +171,18 @@ def common_shell(path: str, text: str) -> str:
     text = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">', '<meta name="theme-color" content="#f4f7f2">', text, flags=re.I)
     if '<meta name="theme-color"' not in text:
         text = re.sub(r"</head>", '<meta name="theme-color" content="#f4f7f2"></head>', text, count=1, flags=re.I)
-    text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/(?:theme|unified-v7)\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
+    # theme-fix.css is stripped and re-added with unified-v7 so the pair keeps
+    # its order. This pass runs after inject_assets.py, and re-appending only
+    # unified-v7 left theme-fix ahead of it -- which silently disabled every
+    # repair in theme-fix, since unified-v7 sets the same properties with
+    # !important. That is why the dark-mode nav stayed white on the pages this
+    # recovery pass touches.
+    text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/(?:theme|theme-fix|unified-v7)\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
     text = re.sub(r'<script>[^<]*gm-theme[^<]*</script>\s*', "", text, flags=re.I)
-    text = re.sub(r"</head>", THEME_BOOT + '<link rel="stylesheet" href="css/unified-v7.css?v=20260828f"></head>', text, count=1, flags=re.I)
+    text = re.sub(r"</head>", THEME_BOOT
+                  + '<link rel="stylesheet" href="css/unified-v7.css?v=20260828f">'
+                  + '<link rel="stylesheet" href="css/theme-fix.css?v=20260828f"></head>',
+                  text, count=1, flags=re.I)
     page_title = match_text(text, r"<title[^>]*>(.*?)</title>")
     page_desc = match_text(text, r'<meta\s+name=["\']description["\'][^>]*content=["\'](.*?)["\']')
     social = (

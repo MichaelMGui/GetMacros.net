@@ -128,8 +128,12 @@ body .dash-meal small { color: #4a5c53 !important; }
  *     behind them (1.52:1). Headers on a dark ground need light text. */
 /* (retired: this band is light now, so the pale header colour that suited the
    old dark band read at 1.08:1. theme-fix.css binds header colour to theme.) */
-.site-v3 .meal-index .meal-table th.is-key,
-.site-v3 .meal-index .meal-table td.is-key { color: #10231b !important; }
+/* Light theme only. The key column's background is --v3-mint, which is a pale
+   mint in light mode and a deep green in dark mode, so a fixed dark ink here
+   was correct in one theme and invisible in the other. theme-fix.css states
+   the dark half at the same specificity. */
+html[data-theme="light"] .site-v3 .meal-index .meal-table th.is-key,
+html[data-theme="light"] .site-v3 .meal-index .meal-table td.is-key { color: #10231b !important; }
 
 /* 12. The muted grey sits at 4.35-4.46:1 on the warm tints, just under the
  *     4.5 floor. Darkened only where it lands on those backgrounds rather

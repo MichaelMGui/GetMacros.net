@@ -74,6 +74,17 @@
         if (trigger) trigger.setAttribute("aria-expanded", "false");
       });
     }
+    // The menu deliberately does not lock body scroll.
+    //
+    // `.nav-open{overflow:hidden}` reset the page to the top, because a body
+    // that is still scrolled stops being scrollable -- the "I have to scroll
+    // back up" problem. Pinning the body with position:fixed fixed that but
+    // moved the drawer out of the viewport, since it is anchored inside a
+    // sticky header.
+    //
+    // Leaving scroll alone is simpler and correct: the header is sticky, so
+    // the drawer opens under it wherever you are, and closing the menu cannot
+    // lose your place because nothing ever moved.
     function setNav(open) {
       document.body.classList.toggle("nav-open", open);
       if (toggle) {
