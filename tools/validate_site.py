@@ -355,7 +355,10 @@ def main() -> int:
             errors.append(f"restaurant data: Chipotle sodium is missing for {meal['name']}")
 
     count_claims = {
-        "index.html": r"<strong>83</strong>\s*tracked menu options",
+        # The point is that the page states the current count, not that it uses
+        # one exact sentence. The homepage kicker now says "83 meals", which is
+        # the same claim and has to stay just as current.
+        "index.html": r"83\s*(?:tracked menu options|meals\b)",
         "about.html": r"83 tracked menu options",
         "healthy-fast-food.html": r"83 tracked menu options",
         "restaurant-meal-finder.html": r"83 tracked menu options",

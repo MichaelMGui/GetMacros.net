@@ -11,18 +11,22 @@ HOME_MAIN = r'''<main id="main-content">
 <section class="gm6-hero liquid-surface" data-spotlight>
   <div class="container gm6-hero-grid">
     <div class="gm6-hero-copy">
-      <p class="eyebrow">Nutrition for the order in front of you</p>
+      <p class="eyebrow">Free meal finder &middot; 15 chains, 83 meals</p>
       <h1 data-reveal-title>Healthy fast food, figured out.</h1>
-      <p class="gm6-hero-lede">Compare real restaurant meals by calories, protein, fiber and sodium—then find the order that fits how you actually eat.</p>
+      <p class="gm6-hero-lede">Tell us your goal and where you are eating. We rank real menu items by calories, protein, fiber and sodium, and show why each one fits.</p>
+      <ol class="gm6-hero-steps" aria-label="How the meal finder works">
+        <li><b>1</b><span>Pick your goal</span></li>
+        <li><b>2</b><span>Choose your restaurants</span></li>
+        <li><b>3</b><span>Get meals ranked for you</span></li>
+      </ol>
       <div class="gm6-hero-actions">
         <a class="btn btn-primary" href="restaurant-meal-finder.html">Find my meal <span class="gm6-arrow" aria-hidden="true">→</span></a>
         <a class="btn btn-outline" href="calculators.html">Calculate my macros</a>
       </div>
       <div class="gm6-proof" aria-label="GetMacros database facts">
-        <span><strong>83</strong>tracked menu options</span>
-        <span><strong>15</strong>restaurant chains</span>
-        <span><strong>4 numbers</strong>kept visible together</span>
-        <span><strong>0 accounts</strong>needed to use the tools</span>
+        <span><strong>4 numbers</strong>calories, protein, fiber and sodium, always together</span>
+        <span><strong>0 accounts</strong>nothing to sign up for</span>
+        <span><strong>Official data</strong>every figure traced to the chain</span>
       </div>
     </div>
     <aside class="gm6-decision-panel" data-spotlight aria-label="Example GetMacros meal match">

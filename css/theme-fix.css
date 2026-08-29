@@ -1161,3 +1161,51 @@ body.site-v3 .gm6-macro-score b {
   body.site-v3 main > div > section { padding-block: 40px !important; }
   body.site-v3 .container { padding-inline: 16px !important; }
 }
+
+/* Hero steps: what the tool does, in three lines, above the button that does
+   it. On a phone the headline and one line of copy were the whole first
+   screen, and neither said this is a meal finder. */
+body.site-v3 .gm6-hero-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+body.site-v3 .gm6-hero-steps li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: max(.92rem, 14px);
+  line-height: 1.3;
+  color: #dff0e7 !important;
+}
+body.site-v3 .gm6-hero-steps b {
+  display: grid;
+  place-items: center;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(216, 255, 134, .16);
+  color: #dff36a !important;
+  font-size: .8rem;
+  font-weight: 850;
+}
+
+/* Clearance under the sticky header.
+ *
+ * The header is 73px tall and the hero slides under it, so a 56px top padding
+ * put the kicker directly behind the bar -- on a phone the first line of the
+ * page was unreadable. Heroes clear the header plus breathing room. */
+@media (max-width: 760px) {
+  body.site-v3 main > section[class*="hero"],
+  body.site-v3 main > .hero,
+  body.site-v3 .page-hero,
+  body.site-v3 main > article > header[class*="hero"],
+  body.site-v3 main > header[class*="hero"] { padding-block: 108px 48px !important; }
+  body.site-v3 .gm6-hero-steps { gap: 9px 16px; margin-top: 1.3rem; }
+  body.site-v3 .gm6-hero-steps li { width: 100%; }
+}
