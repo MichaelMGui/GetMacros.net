@@ -20,5 +20,10 @@ python3 tools/retitle.py
 python3 tools/apply_visual_system.py
 python3 tools/inject_assets.py
 python3 tools/recover_site_focus.py
+# Last, so it sees the final head of every page: rewrite each local CSS and
+# JS link with a hash of that file, so a changed asset always busts caches
+# and an unchanged one keeps its cache entry.
+python3 tools/stamp_assets.py
+
 python3 tools/validate_site.py
 python3 tools/audit_visual_contract.py

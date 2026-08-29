@@ -230,7 +230,10 @@ def main() -> int:
             errors.append(f"{path}: {parser.images_without_alt} image(s) missing alt attributes")
         if "ca-pub-XXXXXXXXXXXXXXXX" in text or 'data-ad-slot="0000000000"' in text:
             errors.append(f"{path}: advertising placeholder remains")
-        if "css/premium-v4.css?v=20260826b" not in text:
+        # Matched without the version: the stamp is a content hash now, so it
+        # changes whenever the file does. Pinning it here would fail the build
+        # every time the stylesheet was edited.
+        if "css/premium-v4.css?v=" not in text:
             errors.append(f"{path}: shared premium visual system is missing")
         if text.count("css/unified-v7.css?") != 1:
             errors.append(f"{path}: unified visual layer must load exactly once")
@@ -396,9 +399,9 @@ def main() -> int:
 
     calc_text = pages.get("calculators.html", ("", PageParser()))[0]
     home_text = pages.get("index.html", ("", PageParser()))[0]
-    if ("js/macro-math.js?v=20260826c" not in calc_text
-            or "js/macro-math.js?v=20260826c" not in home_text
-            or "js/macro-math.js?v=20260826c" not in finder_text):
+    if ("js/macro-math.js?v=" not in calc_text
+            or "js/macro-math.js?v=" not in home_text
+            or "js/macro-math.js?v=" not in finder_text):
         errors.append("macro calculator: shared calculation engine is missing from a calculator entry point")
     for goal_value, goal_label in (
         ("lose", "Lose weight"),
