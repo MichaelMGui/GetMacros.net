@@ -24,7 +24,7 @@
 .site-v3 select,
 .site-v3 textarea,
 .site-v3 button { font: inherit; }
-.site-v3 input,
+.site-v3 input:not([type="checkbox"]):not([type="radio"]),
 .site-v3 select,
 .site-v3 textarea { min-height: 48px; color: #10231b; border-color: #bdcec4; }
 .site-v3 select {

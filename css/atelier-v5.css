@@ -348,7 +348,11 @@ body.site-v3 {
   letter-spacing: -.01em;
 }
 .site-v3 .btn-primary { background: var(--gm-lime) !important; color: var(--gm-forest-dark) !important; border-color: transparent !important; }
-.site-v3 :is(input,select,textarea) {
+/* Checkboxes and radios are excluded. This rule gave every one of them a
+   54px-tall white field with a border and an inset shadow, so a 20px
+   checkbox sat in the middle of a phantom input box -- visible behind
+   every ingredient in the meal builder. */
+.site-v3 :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea) {
   min-height: 54px;
   border: 1px solid #c5d5ca !important;
   border-radius: 13px !important;

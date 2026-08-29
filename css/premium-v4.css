@@ -235,7 +235,9 @@ a.pick-card:hover, a.explore-card:hover, .meal-card:hover {
 }
 .goal-card p, .tool-card p, .guide-card p, .chain-card b { color: var(--premium-muted) !important; }
 
-input, select, textarea {
+/* Checkboxes and radios excluded: a 52px white bordered field behind a
+   20px control is a phantom box, not a text input. */
+input:not([type="checkbox"]):not([type="radio"]), select, textarea {
   min-height: 52px;
   border: 1px solid #c9d8cf !important;
   border-radius: 11px !important;

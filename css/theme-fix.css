@@ -847,3 +847,84 @@ html[data-theme="light"] body:is(.calculator-suite, .tools-page) .sex-choice-ico
     font-weight: 850;
   }
 }
+
+/* ======================================================================
+ * Spacing repairs.
+ * ====================================================================== */
+
+/* Fieldsets that are cards, not just groups.
+ *
+ * unified-v7 flattens every fieldset to transparent with `padding: 18px 0`,
+ * which is right for the macro calculator, where a fieldset is only a grouping.
+ * On the protein-value tool the fieldset IS the card: with no horizontal
+ * padding its labels sat flush against the panel's own border while the inputs
+ * inside them were inset, and the legend straddled the border line rather than
+ * sitting in the panel. Laying the fieldset out as a grid also pulls the legend
+ * into normal flow, so the border draws unbroken behind it. */
+body:is(.calculator-suite, .tools-page) fieldset.panel {
+  display: flow-root;
+  padding: clamp(20px, 2.6vw, 30px) !important;
+  border: 1px solid var(--u-line) !important;
+  border-radius: 22px !important;
+}
+/* Floating the legend is what actually takes it out of its special role, so
+   the panel's border draws as one unbroken rounded rectangle instead of
+   opening a notch around the word. display:grid alone does not: the browser
+   still renders a legend as a legend. */
+body:is(.calculator-suite, .tools-page) fieldset.panel > legend {
+  float: left;
+  width: 100%;
+  margin: 0 0 16px;
+  padding: 0 !important;
+}
+body:is(.calculator-suite, .tools-page) fieldset.panel > legend + * { clear: both; }
+
+/* Checkbox rows in the meal builder.
+ *
+ * A 10px gap between a 20px box and a label that often wraps to two lines read
+ * as one clump; the box also centred against the whole two-line block instead
+ * of sitting beside the first line. */
+body:is(.calculator-suite, .tools-page) .builder fieldset > label {
+  grid-template-columns: 22px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  align-items: start !important;
+  padding: 11px 12px !important;
+  line-height: 1.4;
+}
+body:is(.calculator-suite, .tools-page) .builder fieldset > label > input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+/* "See 3 more" was a full-width bar 1px of padding tall, so the label floated
+   in a strip rather than sitting in a button. */
+body.site-v3 button.ranking-more {
+  min-height: 48px;
+  padding: 12px 20px !important;
+  border-radius: 14px !important;
+  font-size: max(.86rem, 13.5px);
+  font-weight: 820;
+}
+
+/* Checkboxes and radios are controls, not text fields.
+ *
+ * Four sheets styled them through a bare `input` selector, so every checkbox
+ * carried a 46-54px white bordered field with an inset shadow behind it: in
+ * the meal builder each ingredient showed a tall phantom box around its 20px
+ * box, and the rows stretched to fit it. Each of those rules now excludes
+ * them; this is the backstop so a future one cannot reintroduce it. */
+body.site-v3 input:is([type="checkbox"], [type="radio"]) {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: initial !important;
+  appearance: auto;
+  accent-color: #176c48;
+}
+html[data-theme="dark"] body.site-v3 input:is([type="checkbox"], [type="radio"]) {
+  accent-color: #7fe0a4;
+}
