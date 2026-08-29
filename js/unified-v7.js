@@ -48,7 +48,7 @@
         if (label) label.textContent = dark ? "Light" : "Dark";
       });
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", dark ? "#07110d" : "#f4f7f2");
+      if (meta) meta.setAttribute("content", dark ? "#0a3a26" : "#f4f7f2");
     }
     apply(initial === "dark" ? "dark" : "light", false);
     buttons.forEach(function (button) {
@@ -186,6 +186,31 @@
     }, 1800);
   }
 
+  function titleReveals() {
+    document.querySelectorAll("[data-reveal-title]").forEach(function (heading) {
+      if (heading.querySelector(".gm6-title-word")) {
+        requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
+        return;
+      }
+      var text = heading.textContent.trim();
+      if (!text) return;
+      heading.textContent = "";
+      text.split(/\s+/).forEach(function (word, index) {
+        if (index) heading.appendChild(document.createTextNode(" "));
+        var outer = document.createElement("span");
+        var inner = document.createElement("span");
+        outer.className = "gm6-title-word";
+        inner.textContent = word;
+        inner.style.setProperty("--word-index", index);
+        outer.appendChild(inner);
+        heading.appendChild(outer);
+      });
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
+      });
+    });
+  }
+
   function pointerLight() {
     if (reduced || !finePointer) return;
     var cards = document.querySelectorAll(".guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.result-card,.explore-card,.pick-card,.meal-card,[data-spotlight]");
@@ -225,68 +250,15 @@
     });
   }
 
-  // The homepage goal story is a scroll-driven sequence: five steps, each
-  // dimmed to 45% until it is the one you are reading, with a sticky panel
-  // beside them showing that step's lens, number and meter. studio-v6.js used
-  // to drive it, and that script was dropped from the shared cascade because
-  // it fought this interaction layer -- so nothing set .is-active any more.
-  // Every step sat permanently at 45% opacity and the panel never changed: a
-  // 3,000px column of half-legible text and an effect that only existed to
-  // exist. This is the smallest thing that makes it work again.
-  function goalStory() {
-    var visual = document.querySelector(".gm6-story-visual");
-    var steps = [].slice.call(document.querySelectorAll(".gm6-story-step"));
-    if (!visual || steps.length < 2) return;
-
-    var title = visual.querySelector("[data-story-title]");
-    var copy = visual.querySelector("[data-story-copy]");
-    var number = visual.querySelector("[data-story-number]");
-    var meter = visual.querySelector(".gm6-story-meter i");
-    var current = null;
-
-    function show(step) {
-      if (step === current) return;
-      current = step;
-      steps.forEach(function (other) { other.classList.toggle("is-active", other === step); });
-      visual.classList.add("is-switching");
-      window.setTimeout(function () {
-        if (title && step.dataset.title) title.textContent = step.dataset.title;
-        if (copy && step.dataset.copy) copy.textContent = step.dataset.copy;
-        if (number && step.dataset.number) number.textContent = step.dataset.number;
-        if (meter && step.dataset.width) meter.style.width = step.dataset.width;
-        visual.classList.remove("is-switching");
-      }, 160);
-    }
-
-    // Without an observer every step stays readable and the panel keeps the
-    // first step's content, which is a correct static section rather than a
-    // broken animated one.
-    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced || !("IntersectionObserver" in window)) {
-      steps.forEach(function (step) { step.classList.add("is-active"); });
-      return;
-    }
-
-    show(steps[0]);
-    var observer = new IntersectionObserver(function (entries) {
-      var best = null;
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting && (!best || entry.intersectionRatio > best.intersectionRatio)) best = entry;
-      });
-      if (best) show(best.target);
-    }, { rootMargin: "-42% 0px -42% 0px", threshold: [0, 0.25, 0.5, 1] });
-    steps.forEach(function (step) { observer.observe(step); });
-  }
-
   function start() {
     try { theme(); } catch (error) {}
     try { headerState(); } catch (error) {}
     try { navigation(); } catch (error) {}
     try { accessibility(); } catch (error) {}
     try { compactRankings(); } catch (error) {}
+    try { titleReveals(); } catch (error) {}
     try { reveals(); } catch (error) {}
     try { pointerLight(); } catch (error) {}
-    try { goalStory(); } catch (error) {}
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);

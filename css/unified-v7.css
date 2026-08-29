@@ -95,13 +95,8 @@ body.site-v3 .article-container {
   margin-inline: auto;
 }
 body.site-v3 main { position: relative; min-width: 0; background: transparent !important; }
-/* Sections are flattened to one continuous canvas. .gm6-goal-story opts out:
-   it is designed as a dark band and carries white headings and lime step
-   labels of its own, so stripping its ground left white text on the pale
-   page. Any future section that paints itself belongs in this exclusion. */
-body.site-v3 main > section:not(.gm6-goal-story) { position: relative; padding-block: clamp(72px, 8vw, 118px); background: transparent !important; color: var(--u-ink) !important; }
-body.site-v3 main > section.gm6-goal-story { position: relative; padding-block: clamp(72px, 8vw, 118px); }
-body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage):not(.gm6-goal-story) {
+body.site-v3 main > section { position: relative; padding-block: clamp(72px, 8vw, 118px); background: transparent !important; color: var(--u-ink) !important; }
+body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage) {
   background: linear-gradient(180deg, rgba(255,255,255,.018), rgba(255,255,255,.006)) !important;
 }
 
@@ -902,7 +897,7 @@ html[data-theme="light"] .nav-direct[aria-current="page"] { color: var(--u-ink) 
 html[data-theme="light"] .nav-popover,
 html[data-theme="light"] .full-nav-links { background-color: rgba(255,255,255,.99) !important; }
 html[data-theme="light"] .nav-popover a:hover { background: #edf3ee !important; }
-html[data-theme="light"] body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage):not(.gm6-goal-story) { background: rgba(22,83,53,.025) !important; }
+html[data-theme="light"] body.site-v3 main > section:nth-of-type(even):not([class*="hero"]):not(.quiz-stage) { background: rgba(22,83,53,.025) !important; }
 html[data-theme="light"] body.site-v3 a { color: #176c48; }
 html[data-theme="light"] body.site-v3 .eyebrow { color: #176c48 !important; }
 html[data-theme="light"] body.site-v3 main > section[class*="hero"] .eyebrow,
@@ -972,4 +967,155 @@ html[data-theme="light"] .modern-footer { --u-ink:#f4f8f5; --u-muted:#b7c8bf; --
   body.site-v3 { color: #111 !important; background: #fff !important; }
   .site-header, .modern-footer, .ad-auto-anchor { display: none !important; }
   body.site-v3 :is(p,li,h1,h2,h3,h4,strong,b,a) { color: #111 !important; }
+}
+
+/* Corrective navigation and legibility pass — one dependable shell on every page. */
+.site-header.modern-header {
+  isolation: isolate;
+  overflow: visible !important;
+}
+.full-nav {
+  position: relative !important;
+  overflow: visible !important;
+}
+html[data-theme="dark"] .site-header.modern-header {
+  background: linear-gradient(180deg, rgba(4,24,15,.985), rgba(4,24,15,.92), rgba(4,24,15,0)) !important;
+}
+html[data-theme="dark"] .full-nav {
+  border-color: rgba(143,224,166,.28) !important;
+  background: linear-gradient(135deg, rgba(10,58,38,.98), rgba(7,43,29,.98)) !important;
+  box-shadow: 0 18px 50px rgba(0,0,0,.32), inset 0 1px rgba(190,255,207,.08) !important;
+}
+html[data-theme="dark"] .modern-brand,
+html[data-theme="dark"] :is(.nav-group-trigger,.nav-direct) { color: #b8efc8 !important; }
+html[data-theme="dark"] :is(.theme-toggle,.nav-toggle) {
+  color: #b8efc8 !important;
+  background: rgba(183,239,199,.09) !important;
+}
+html[data-theme="dark"] :is(.theme-toggle,.nav-toggle):hover,
+html[data-theme="dark"] :is(.nav-group-trigger,.nav-direct):hover,
+html[data-theme="dark"] .nav-group.is-open .nav-group-trigger,
+html[data-theme="dark"] .nav-group.is-current .nav-group-trigger,
+html[data-theme="dark"] .nav-direct[aria-current="page"] {
+  color: #effff3 !important;
+  background: rgba(183,239,199,.13) !important;
+}
+
+/* Open menus are deliberately light in either theme for immediate contrast. */
+.nav-popover {
+  border-color: #d5ddd8 !important;
+  color: #14241b !important;
+  background: rgba(246,248,246,.995) !important;
+  box-shadow: 0 24px 70px rgba(0,0,0,.3) !important;
+}
+.nav-popover a,
+.nav-popover a :is(strong,b) { color: #14241b !important; }
+.nav-popover a small { color: #586b61 !important; }
+.nav-popover a svg { color: #247a54 !important; }
+.nav-popover a:hover { color: #10251b !important; background: #e7eee9 !important; }
+
+/* Text must remain fully visible even when older motion styles are present. */
+body.site-v3 main { overflow: visible !important; }
+body.site-v3 :is(h1,h2,h3,h4,p,li,a,button,label,summary,small,strong,b,span) {
+  min-width: 0;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+body.site-v3 :is(.container,.full-nav,.content-grid,.two-col,.gm6-hero-grid,.gm6-section-intro,
+  .gm6-finder-shell,.gm6-calculator-shell,.gm6-learning-grid,.search-results,.quiz-options,
+  .results-grid,.result-card,.guide-card,.tool-card,.meal-card,.panel) > * { min-width: 0; }
+.gm6-title-word { display: inline-block; overflow: visible !important; vertical-align: baseline !important; }
+.gm6-title-word > span { display: inline-block; color: inherit; -webkit-text-fill-color: currentColor; }
+.eatout-path-action, .eatout-match-row > b { white-space: normal !important; }
+
+/* Search begins with a useful shortlist instead of a wall of every URL. */
+.search-results-shell { display: grid; gap: 28px; }
+.search-results-actions { display: flex; justify-content: center; }
+.search-results-toggle {
+  min-height: 48px;
+  padding: 11px 18px;
+  border: 1px solid var(--u-line-strong) !important;
+  border-radius: 14px !important;
+  color: var(--u-ink) !important;
+  background: var(--u-surface-2) !important;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.search-results-toggle:hover { border-color: rgba(168,240,189,.4) !important; background: var(--u-surface-3) !important; }
+
+/* The large nutrition database remains accessible without overwhelming the quiz. */
+.meal-database-disclosure {
+  margin: clamp(34px,6vw,76px) auto !important;
+  padding: 0 !important;
+  border: 1px solid var(--u-line-strong) !important;
+  border-radius: 26px !important;
+  background: var(--u-surface) !important;
+  box-shadow: var(--u-shadow) !important;
+  overflow: hidden !important;
+}
+.meal-database-disclosure > summary {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: 8px 18px;
+  align-items: center;
+  padding: clamp(20px,3vw,30px);
+  color: var(--u-ink) !important;
+  cursor: pointer;
+  list-style: none;
+}
+.meal-database-disclosure > summary::-webkit-details-marker { display: none; }
+.meal-database-disclosure > summary strong { font-size: clamp(1.15rem,2.2vw,1.5rem); }
+.meal-database-disclosure > summary span { grid-column: 1; color: var(--u-muted) !important; font-size: .9rem; }
+.meal-database-disclosure > summary::after {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  content: "+";
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #07110d;
+  background: var(--u-lime);
+  font-size: 1.45rem;
+  font-weight: 800;
+  transition: transform .3s var(--u-ease);
+}
+.meal-database-disclosure[open] > summary::after { transform: rotate(45deg); }
+.meal-database-disclosure[open] > summary { border-bottom: 1px solid var(--u-line); }
+.meal-database-disclosure .meal-index { padding: clamp(42px,6vw,76px) 0 !important; }
+
+@media (max-width: 900px) {
+  .site-header.modern-header { z-index: 5000 !important; }
+  .full-nav-links {
+    position: absolute !important;
+    z-index: 5001 !important;
+    inset: calc(100% + 10px) 0 auto 0 !important;
+    width: 100% !important;
+    max-height: min(70dvh, 620px) !important;
+    color: #14241b !important;
+    background: #f4f6f4 !important;
+    border-color: #d2dbd5 !important;
+    box-shadow: 0 28px 80px rgba(0,0,0,.34) !important;
+    overscroll-behavior: contain;
+  }
+  .full-nav-links :is(.nav-group-trigger,.nav-direct) { color: #173326 !important; }
+  .full-nav-links :is(.nav-group-trigger,.nav-direct):hover,
+  .full-nav-links .nav-group.is-open .nav-group-trigger,
+  .full-nav-links .nav-direct[aria-current="page"] { color: #10251b !important; background: #e4ece7 !important; }
+  .full-nav-links .nav-group { border-color: #d9e1dc !important; }
+  .full-nav-links .nav-popover { background: transparent !important; box-shadow: none !important; }
+  .full-nav-links .nav-popover a:hover { background: #e4ece7 !important; }
+  .nav-mobile-search { color: #07110d !important; background: #bce94f !important; }
+  .nav-open .site-header.modern-header { filter: none !important; }
+}
+
+@media (max-width: 760px) {
+  body.site-v3 h1 { font-size: clamp(2.3rem, 10.5vw, 3.75rem) !important; line-height: 1.02 !important; }
+  body.site-v3 h2 { font-size: clamp(1.75rem, 7.5vw, 2.55rem) !important; line-height: 1.1 !important; }
+  .modern-brand { font-size: .94rem !important; }
+  .full-nav-links { inset: calc(100% + 8px) 0 auto 0 !important; max-height: calc(100dvh - 90px) !important; }
+  .meal-database-disclosure { margin-inline: 14px !important; border-radius: 20px !important; }
+  .meal-database-disclosure > summary { padding: 18px; }
 }

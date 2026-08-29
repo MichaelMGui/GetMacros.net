@@ -8,7 +8,7 @@ from apply_atelier_v5 import FOOTER as ATELIER_FOOTER, HEADER as ATELIER_HEADER
 
 SITE = "https://getmacros.net"
 PUBLISHER = "ca-pub-2316153877942502"
-ASSET_VERSION = "20260828f"
+ASSET_VERSION = "20260828g"
 THEME_BOOT = '<script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>'
 
 CSP = (
@@ -82,7 +82,8 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="stylesheet" href="css/atelier-v5.css?v=20260827b">
 <link rel="stylesheet" href="css/studio-v6.css?v=20260828c">
 {THEME_BOOT}
-<link rel="stylesheet" href="css/unified-v7.css?v=20260828f">
+<link rel="stylesheet" href="css/unified-v7.css?v=20260828g">
+<link rel="stylesheet" href="css/theme-fix.css?v=20260828g">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUBLISHER}" crossorigin="anonymous"></script>
 {jsonld}
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
@@ -96,7 +97,7 @@ def nav(current="") -> str:
 
 
 def footer() -> str:
-    return ATELIER_FOOTER + '<script src="js/unified-v7.js?v=20260828f" defer></script>'
+    return ATELIER_FOOTER + '<script src="js/unified-v7.js?v=20260828g" defer></script>'
 
 
 def breadcrumbs(items: list[tuple[str, str | None]]) -> str:

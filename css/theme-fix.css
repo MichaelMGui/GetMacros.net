@@ -657,43 +657,9 @@ html[data-theme="light"] body.site-v3 :is(.btn-primary, .calc-submit, button[typ
   color: #07110d !important;
 }
 
-/* ======================================================================
- * Sections studio-v6 designed as dark bands.
- *
- * unified-v7 flattens every `main > section` to a transparent ground so the
- * page reads as one canvas. That is right for most sections, but it pulled the
- * floor out from under the ones built dark: the goal story kept its white
- * headings and lime step labels while its background became the near-white
- * page, so "Healthy is not one number." was white on white. Restoring the
- * ground fixes a dozen text colours at once instead of restating each.
- * ====================================================================== */
-body.site-v3 section.gm6-goal-story {
-  background: #0a3327 !important;
-  color: #ffffff !important;
-}
-body.site-v3 .gm6-goal-story :is(h2, h3, h4, strong, b) { color: #ffffff !important; }
-body.site-v3 .gm6-goal-story :is(p, li, small) { color: #c8dbd1 !important; }
-body.site-v3 .gm6-goal-story .gm6-story-label { color: #c8dbd1 !important; }
-body.site-v3 .gm6-goal-story .gm6-section-intro .eyebrow { color: #c9f7d8 !important; }
-body.site-v3 .gm6-goal-story .gm6-story-step > span { color: #dff36a !important; }
-body.site-v3 .gm6-goal-story .gm6-story-number span { color: #c8dbd1 !important; }
-
-/* Its steps are dimmed until they are the one being read. A step at 45%
-   opacity is below the contrast floor, so the dimming is gentler than the
-   original 45% and the active step is fully opaque. */
-body.site-v3 .gm6-story-step { opacity: .72; }
-body.site-v3 .gm6-story-step.is-active { opacity: 1; }
-
 /* The editorial cards in the learning grid are dark panels on a pale band. */
 body.site-v3 a.gm6-editorial :is(h3, h4, strong, b) { color: #ffffff !important; }
 body.site-v3 a.gm6-editorial :is(p, small, span) { color: #d2dfd9 !important; }
-
-/* 56vh per step over five steps made the section nearly 3,000px of mostly
-   empty column. The scroll story still needs room for the sticky panel to
-   change as you pass each step, so the height is trimmed rather than removed. */
-@media (min-width: 901px) {
-  body.site-v3 .gm6-story-step { min-height: 42vh !important; }
-}
 
 /* Panels inside a hero that carry their own ground.
  *

@@ -99,7 +99,11 @@ def main() -> int:
     if "prefers-reduced-motion: reduce" not in (ROOT / "css" / "unified-v7.css").read_text(encoding="utf-8"):
         errors.append("css/unified-v7.css: reduced-motion fallback is missing")
     unified_css = (ROOT / "css" / "unified-v7.css").read_text(encoding="utf-8")
-    for marker in ('html[data-theme="light"]', '@media (max-width: 900px)', '.quiz-nav .btn:only-child'):
+    for marker in (
+        'html[data-theme="light"]', 'html[data-theme="dark"] .full-nav',
+        '@media (max-width: 900px)', 'position: absolute !important',
+        'body.site-v3 main { overflow: visible !important; }', '.quiz-nav .btn:only-child',
+    ):
         if marker not in unified_css:
             errors.append(f"css/unified-v7.css: required responsive/theme contract is missing: {marker}")
     quiz_js = (ROOT / "js" / "meal-quiz.js").read_text(encoding="utf-8")
@@ -172,9 +176,17 @@ def main() -> int:
             errors.append(f"{rel}: favicon declaration is missing")
 
     home = (ROOT / "index.html").read_text(encoding="utf-8")
-    for required in ("gm6-tool-bento", "gm6-finder-shell", "gm6-rail", "gm6-macro-score", "gm6-goal-story"):
+    for required in ("gm6-tool-bento", "gm6-finder-shell", "gm6-rail", "gm6-macro-score"):
         if required not in home:
             errors.append(f"index.html: premium homepage component is missing: {required}")
+    if "gm6-goal-story" in home:
+        errors.append("index.html: removed scrolling goal-story clutter returned")
+    finder = (ROOT / "restaurant-meal-finder.html").read_text(encoding="utf-8")
+    if 'class="meal-database-disclosure"' not in finder:
+        errors.append("restaurant-meal-finder.html: optional meal database disclosure is missing")
+    search = (ROOT / "search.html").read_text(encoding="utf-8")
+    if 'id="search-results-toggle"' not in search or "limit=12" not in search:
+        errors.append("search.html: compact initial-result control is missing")
 
     if errors:
         print(f"FAILED: {len(errors)} visual-contract issue(s)")

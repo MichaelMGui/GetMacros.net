@@ -26,7 +26,7 @@ SHEETS = [
     "css/theme-fix.css",
 ]
 SCRIPTS = ["js/unified-v7.js"]
-ASSET_VERSION = "20260828f"
+ASSET_VERSION = "20260828g"
 
 # Legacy scroll-reveal. It sets opacity:0 on `main > section` and relies
 # entirely on an IntersectionObserver callback to put it back, with no

@@ -8,7 +8,7 @@ VERSION = "20260828c"
 LIBRARY_CONTROLS = '''<section class="gm6-library-controls"><div class="container gm6-library-search"><label for="article-library-search">Find a useful guide<input id="article-library-search" type="search" placeholder="Try protein, weight loss, labels or meal prep" autocomplete="off"></label><p id="library-search-status" aria-live="polite">Showing a curated selection from each topic.</p></div></section>'''
 
 HOME_MAIN = r'''<main id="main-content">
-<section class="gm6-hero" data-spotlight>
+<section class="gm6-hero liquid-surface" data-spotlight>
   <div class="container gm6-hero-grid">
     <div class="gm6-hero-copy">
       <p class="eyebrow">Nutrition for the order in front of you</p>
@@ -202,6 +202,16 @@ HOME_MAIN = r'''<main id="main-content">
   <div class="container studio-reveal"><p class="eyebrow">Ready when the menu is</p><h2>Find the meal that fits today.</h2><p>Choose your goals, appetite, dietary needs and available restaurants. Get a shortlist you can actually order.</p><div class="gm6-hero-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Start Healthy Order Match <span class="gm6-arrow" aria-hidden="true">→</span></a><a class="btn btn-outline" href="healthy-fast-food.html">Explore all restaurants</a></div></div>
 </section>
 </main>'''
+
+# The scrolling goal story repeated information already handled by Healthy Order
+# Match and depended on a fragile sticky animation. Keep the homepage focused.
+HOME_MAIN = re.sub(
+    r'\n<section class="gm6-goal-story">.*?</section>\n\n(?=<section class="gm6-restaurants">)',
+    "\n",
+    HOME_MAIN,
+    count=1,
+    flags=re.S,
+)
 
 RESTAURANT_FILES = {
     "cava-healthy-meals-macros.html", "chick-fil-a-healthy-meals-macros.html",
