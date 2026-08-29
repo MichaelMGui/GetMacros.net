@@ -171,9 +171,9 @@ def common_shell(path: str, text: str) -> str:
     text = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">', '<meta name="theme-color" content="#f4f7f2">', text, flags=re.I)
     if '<meta name="theme-color"' not in text:
         text = re.sub(r"</head>", '<meta name="theme-color" content="#f4f7f2"></head>', text, count=1, flags=re.I)
-    text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/(?:theme|unified-v7)\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
+    text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/(?:theme|unified-v7|theme-fix)\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
     text = re.sub(r'<script>[^<]*gm-theme[^<]*</script>\s*', "", text, flags=re.I)
-    text = re.sub(r"</head>", THEME_BOOT + '<link rel="stylesheet" href="css/unified-v7.css?v=20260828f"></head>', text, count=1, flags=re.I)
+    text = re.sub(r"</head>", THEME_BOOT + '<link rel="stylesheet" href="css/unified-v7.css?v=20260828g"><link rel="stylesheet" href="css/theme-fix.css?v=20260828g"></head>', text, count=1, flags=re.I)
     page_title = match_text(text, r"<title[^>]*>(.*?)</title>")
     page_desc = match_text(text, r'<meta\s+name=["\']description["\'][^>]*content=["\'](.*?)["\']')
     social = (
@@ -213,8 +213,21 @@ def is_indexable(item: dict) -> bool:
 
 def build_search(final: list[dict]) -> None:
     items = [item for item in final if is_indexable(item) and item["path"] != "search.html"]
+    featured_paths = (
+        "healthy-fast-food.html", "restaurant-meal-finder.html", "restaurant-meal-guides.html",
+        "calculators.html", "articles.html", "chipotle-healthy-meals-macros.html",
+        "chick-fil-a-healthy-meals-macros.html", "mcdonalds-healthy-meals-macros.html",
+        "nutrition-label-comparison-tool.html", "recipe-macro-scaler.html",
+        "macros-for-weight-loss.html", "macros-for-muscle-gain.html",
+    )
+    featured_order = {path: index for index, path in enumerate(featured_paths)}
+    items.sort(key=lambda item: (
+        0 if str(item["path"]) in featured_order else 1,
+        featured_order.get(str(item["path"]), 999),
+        section_for(str(item["path"])), str(item["h1"]),
+    ))
     cards = []
-    for item in sorted(items, key=lambda x: (section_for(str(x["path"])), str(x["h1"]))):
+    for item in items:
         section = section_for(str(item["path"]))
         haystack = f'{item["title"]} {item["h1"]} {item["meta"]} {section}'.casefold()
         cards.append(f'''<article class="result-card" data-search="{html.escape(haystack, quote=True)}">
@@ -223,9 +236,9 @@ def build_search(final: list[dict]) -> None:
     desc = "Search GetMacros healthy fast-food guides, restaurant comparisons, macro calculators and focused nutrition guides."
     body = f'''{head("search.html", title, desc)}<body class="site-v3 recovery-page">{nav()}
 <main id="main-content"><section class="search-hero"><div class="container"><p class="eyebrow">Search GetMacros</p><h1>Find a restaurant, tool or nutrition guide</h1><p>Search the focused GetMacros library: healthy fast food, macro tools and the guides that help you use them.</p>
-<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try “Chipotle,” “high protein” or “recipe macros”" autocomplete="off"></label><p id="search-status" aria-live="polite">Showing {len(cards)} resources</p></div></section>
-<section><div class="container search-results" id="search-results">{''.join(cards)}</div></section></main>{footer()}
-<script>(function(){{var q=document.getElementById('site-search'),cards=[].slice.call(document.querySelectorAll('.result-card')),status=document.getElementById('search-status');function words(value){{return value.toLowerCase().match(/[a-z0-9]+/g)||[];}}function run(){{var terms=words(q.value),shown=0;cards.forEach(function(card){{var haystack=words(card.dataset.search).join(' '),keep=!terms.length||terms.every(function(term){{return haystack.indexOf(term)>-1;}});card.hidden=!keep;if(keep)shown++;}});status.textContent='Showing '+shown+' resource'+(shown===1?'':'s');}}q.addEventListener('input',run);var initial=new URLSearchParams(location.search).get('q');if(initial){{q.value=initial;run();}}}})();</script></body></html>'''
+<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try “Chipotle,” “high protein” or “recipe macros”" autocomplete="off"></label><p id="search-status" aria-live="polite">Showing 12 of {len(cards)} resources</p></div></section>
+<section><div class="container search-results-shell"><div class="search-results" id="search-results">{''.join(cards)}</div><div class="search-results-actions"><button class="search-results-toggle" id="search-results-toggle" type="button" aria-controls="search-results" aria-expanded="false">Show all {len(cards)} resources</button></div></div></section></main>{footer()}
+<script>(function(){{var q=document.getElementById('site-search'),cards=[].slice.call(document.querySelectorAll('.result-card')),status=document.getElementById('search-status'),toggle=document.getElementById('search-results-toggle'),limit=12,expanded=false;function words(value){{return value.toLowerCase().match(/[a-z0-9]+/g)||[];}}function run(){{var terms=words(q.value),matched=0,shown=0;cards.forEach(function(card,index){{var haystack=words(card.dataset.search).join(' '),match=!terms.length||terms.every(function(term){{return haystack.indexOf(term)>-1;}}),visible=match&&(terms.length||expanded||index<limit);card.hidden=!visible;if(match)matched++;if(visible)shown++;}});if(terms.length)status.textContent=matched+' matching resource'+(matched===1?'':'s');else status.textContent=expanded?'Showing all '+matched+' resources':'Showing '+shown+' of '+matched+' resources';toggle.hidden=!!terms.length||cards.length<=limit;toggle.setAttribute('aria-expanded',String(expanded));toggle.textContent=expanded?'Show fewer resources':'Show all '+cards.length+' resources';}}q.addEventListener('input',function(){{expanded=false;run();}});toggle.addEventListener('click',function(){{expanded=!expanded;run();if(!expanded)document.querySelector('.search-hero').scrollIntoView({{behavior:'smooth',block:'start'}});}});var initial=new URLSearchParams(location.search).get('q');if(initial)q.value=initial;run();}})();</script></body></html>'''
     (ROOT / "search.html").write_text(body, encoding="utf-8")
 
 

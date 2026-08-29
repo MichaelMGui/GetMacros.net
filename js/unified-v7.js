@@ -48,7 +48,7 @@
         if (label) label.textContent = dark ? "Light" : "Dark";
       });
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", dark ? "#07110d" : "#f4f7f2");
+      if (meta) meta.setAttribute("content", dark ? "#0a3a26" : "#f4f7f2");
     }
     apply(initial === "dark" ? "dark" : "light", false);
     buttons.forEach(function (button) {
@@ -175,6 +175,31 @@
     }, 1800);
   }
 
+  function titleReveals() {
+    document.querySelectorAll("[data-reveal-title]").forEach(function (heading) {
+      if (heading.querySelector(".gm6-title-word")) {
+        requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
+        return;
+      }
+      var text = heading.textContent.trim();
+      if (!text) return;
+      heading.textContent = "";
+      text.split(/\s+/).forEach(function (word, index) {
+        if (index) heading.appendChild(document.createTextNode(" "));
+        var outer = document.createElement("span");
+        var inner = document.createElement("span");
+        outer.className = "gm6-title-word";
+        inner.textContent = word;
+        inner.style.setProperty("--word-index", index);
+        outer.appendChild(inner);
+        heading.appendChild(outer);
+      });
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
+      });
+    });
+  }
+
   function pointerLight() {
     if (reduced || !finePointer) return;
     var cards = document.querySelectorAll(".guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.result-card,.explore-card,.pick-card,.meal-card,[data-spotlight]");
@@ -220,6 +245,7 @@
     try { navigation(); } catch (error) {}
     try { accessibility(); } catch (error) {}
     try { compactRankings(); } catch (error) {}
+    try { titleReveals(); } catch (error) {}
     try { reveals(); } catch (error) {}
     try { pointerLight(); } catch (error) {}
   }

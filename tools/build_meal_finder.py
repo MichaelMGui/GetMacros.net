@@ -172,8 +172,10 @@ def render(meals):
     ]
 
     out = [START,
+           '<div class="container"><details class="meal-database-disclosure">',
+           f'<summary><strong>Browse all {n} tracked meals</strong><span>Optional: open the complete cross-chain nutrition database and rankings.</span></summary>',
            '<section class="meal-index"><div class="container">',
-           "<h2>The same meals, ranked across every chain</h2>",
+           "<h2>All tracked meals, ranked by nutrition</h2>",
            f"<p class=\"meal-index-intro\">The quiz answers one question at a time. "
            f"These are the standing lists behind it: all {n} tracked menu options from "
            f"{len(chains)} chains, sorted the ways people actually ask for them. "
@@ -199,7 +201,7 @@ def render(meals):
         f'<a href="{html.escape(next(m["url"] for m in meals if m["chain"] == c))}">'
         f'{html.escape(c)}</a>' for c in chains))
     out.append(".</p>")
-    out.append("</div></section>")
+    out.append("</div></section></details></div>")
     out.append(END)
     return "\n".join(out)
 
