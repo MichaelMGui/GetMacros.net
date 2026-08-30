@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import datetime
 import html
 import io
 import json
@@ -363,7 +364,12 @@ def build_sitemap(final: list[dict]) -> None:
     urls = []
     for path in paths:
         loc = f"{SITE}/" if path == "index.html" else f"{SITE}/{path}"
-        urls.append(f"  <url><loc>{loc}</loc></url>")
+        # lastmod from the file's own mtime rather than a build-wide constant:
+        # stamping every page with today's date on every build tells a crawler
+        # the whole site changed when one guide did, which is the fastest way
+        # to have the signal ignored.
+        stamp = datetime.date.fromtimestamp((ROOT / path).stat().st_mtime).isoformat()
+        urls.append(f"  <url><loc>{loc}</loc><lastmod>{stamp}</lastmod></url>")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n"
     (ROOT / "sitemap.xml").write_text(xml, encoding="utf-8")
 
