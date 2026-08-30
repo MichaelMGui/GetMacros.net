@@ -174,12 +174,13 @@ def common_shell(path: str, text: str) -> str:
         text = re.sub(r"</head>", '<meta name="theme-color" content="#f4f7f2"></head>', text, count=1, flags=re.I)
     # Rebuild the final cascade as a unit. Editorial v8 follows the unified
     # layer and its contrast repair because it owns the final page openings.
-    text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/(?:theme|theme-fix|unified-v7|editorial-v8)\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
+    text = re.sub(r'<link\b[^>]*href=["\'][^"\']*css/(?:theme|theme-fix|unified-v7|editorial-v8|clean-v9)\.css[^"\']*["\'][^>]*>\s*', "", text, flags=re.I)
     text = re.sub(r'<script>[^<]*gm-theme[^<]*</script>\s*', "", text, flags=re.I)
     text = re.sub(r"</head>", THEME_BOOT
                   + '<link rel="stylesheet" href="css/unified-v7.css?v=20260828g">'
                   + '<link rel="stylesheet" href="css/theme-fix.css?v=20260828g">'
-                  + '<link rel="stylesheet" href="css/editorial-v8.css?v=20260830a"></head>',
+                  + '<link rel="stylesheet" href="css/editorial-v8.css?v=20260830a">'
+                  + '<link rel="stylesheet" href="css/clean-v9.css?v=20260830b"></head>',
                   text, count=1, flags=re.I)
     page_title = match_text(text, r"<title[^>]*>(.*?)</title>")
     page_desc = match_text(text, r'<meta\s+name=["\']description["\'][^>]*content=["\'](.*?)["\']')

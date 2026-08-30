@@ -27,6 +27,8 @@ SHEETS = [
     # The final editorial composition layer. It replaces the repeated green
     # billboard on product and secondary-page openings after all legacy fixes.
     "css/editorial-v8.css",
+    # Direction "Clean" — redefines every token system, so it must be last.
+    "css/clean-v9.css",
 ]
 SCRIPTS = ["js/unified-v7.js"]
 ASSET_VERSION = "20260828g"

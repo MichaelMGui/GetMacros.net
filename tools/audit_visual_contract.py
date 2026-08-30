@@ -24,6 +24,9 @@ REQUIRED_ASSETS = (
     # deliberately last because it owns the final page-opening compositions.
     "css/theme-fix.css",
     "css/editorial-v8.css",
+    # clean-v9 is last: it redefines every token system to the chosen "Clean"
+    # direction, so it has to resolve after the sheets that read those tokens.
+    "css/clean-v9.css",
     "js/unified-v7.js",
 )
 FORBIDDEN_INTERACTION_ASSETS = (
@@ -146,7 +149,7 @@ def main() -> int:
         for asset in FORBIDDEN_INTERACTION_ASSETS:
             if Path(asset).name in text:
                 errors.append(f"{rel}: conflicting legacy interaction asset remains: {asset}")
-        cascade_assets = REQUIRED_ASSETS[:8]
+        cascade_assets = REQUIRED_ASSETS[:9]
         positions = []
         for asset in cascade_assets:
             match = re.search(r"(?<![A-Za-z0-9_-])" + re.escape(Path(asset).name), text)

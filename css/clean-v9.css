@@ -1,0 +1,240 @@
+/* GetMacros — Direction D, "Clean"
+ * =========================================================================
+ * White, one green, generous space, one weight of type, nothing decorative.
+ *
+ * This layer does its work at the TOKEN level rather than by restyling
+ * components. The site carries six token systems -- --u-, --gm6-, --v3-,
+ * --v8-, --gm- and --premium- -- with 789 uses between them, so redefining
+ * those reaches nearly every surface, border and text colour at once. What is
+ * left after that is decoration, which is removed explicitly below.
+ *
+ * Loads last, after editorial-v8.
+ *
+ * Type: Instrument Sans was the face in the chosen sketch, but the site's CSP
+ * is font-src 'self' and this environment has no network, so it cannot be
+ * fetched and self-hosted here. Inter is already self-hosted at 400-800 and is
+ * the same category of neutral grotesque; at 600 with tight tracking it sits
+ * very close. Swapping in Instrument Sans later is a font file plus two lines.
+ * ========================================================================= */
+
+:root,
+html[data-theme="light"] {
+  --d-bg:        #ffffff;
+  --d-bg-soft:   #f7f9f8;
+  --d-surface:   #ffffff;
+  --d-surface-2: #f7f9f8;
+  --d-surface-3: #f2f8f4;
+  --d-ink:       #0d1b14;
+  --d-muted:     #5c6b64;   /* 5.61:1 on white */
+  --d-muted-2:   #68776f;   /* 4.71:1 on white -- the sketch's #7c8b83 was 3.57 */
+  --d-line:      #e8ece9;
+  --d-line-2:    #dfe5e1;
+  --d-accent:    #0f7a4a;   /* 5.38:1 on white */
+  --d-accent-in: #ffffff;
+  --d-tint:      #f2f8f4;
+  --d-r-sm: 10px;
+  --d-r:    14px;
+  --d-r-lg: 18px;
+  --d-shadow: 0 1px 2px rgba(13, 27, 20, .04);
+}
+
+html[data-theme="dark"] {
+  --d-bg:        #0c1210;
+  --d-bg-soft:   #101815;
+  --d-surface:   #141b18;
+  --d-surface-2: #19221e;
+  --d-surface-3: #1f2a25;
+  --d-ink:       #f2f6f3;
+  --d-muted:     #a9b8b0;
+  --d-muted-2:   #8c9c94;
+  --d-line:      rgba(242, 246, 243, .12);
+  --d-line-2:    rgba(242, 246, 243, .22);
+  --d-accent:    #57c98d;   /* 9.14:1 on the page */
+  --d-accent-in: #0c1210;
+  --d-tint:      #16241d;
+  --d-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+/* ---- Every existing token system now resolves to the D palette ---------- */
+:root, html[data-theme="light"], html[data-theme="dark"],
+body.site-v3, body.modern-site, body.finder-v2, body.legacy-unified,
+body.tools-page, body.calculator-suite, body.home-studio, body.order-match-page {
+  --u-bg: var(--d-bg);            --u-bg-soft: var(--d-bg-soft);
+  --u-surface: var(--d-surface);  --u-surface-2: var(--d-surface-2);
+  --u-surface-3: var(--d-surface-3);
+  --u-ink: var(--d-ink);          --u-muted: var(--d-muted);
+  --u-muted-2: var(--d-muted-2);
+  --u-line: var(--d-line);        --u-line-strong: var(--d-line-2);
+  --u-mint: var(--d-accent);      --u-aqua: var(--d-accent);
+  --u-lime: var(--d-accent);
+  --u-shadow-sm: var(--d-shadow); --u-shadow: var(--d-shadow);
+  --u-shadow-lg: var(--d-shadow);
+  --u-radius-sm: var(--d-r-sm);   --u-radius: var(--d-r);
+  --u-radius-lg: var(--d-r-lg);
+
+  --gm6-ink: var(--d-ink);        --gm6-line: var(--d-line);
+  --gm6-forest: var(--d-accent);  --gm6-forest-deep: var(--d-ink);
+  --gm6-lime: var(--d-accent);    --gm6-paper: var(--d-bg);
+  --gm6-shadow-soft: var(--d-shadow);
+  --gm6-radius-lg: var(--d-r);    --gm6-radius-xl: var(--d-r-lg);
+
+  --v3-ink: var(--d-ink);         --v3-muted: var(--d-muted);
+  --v3-paper: var(--d-bg);        --v3-card: var(--d-surface);
+  --v3-line: var(--d-line);       --v3-forest: var(--d-accent);
+  --v3-lime: var(--d-accent);     --v3-mint: var(--d-tint);
+
+  --v8-ink: var(--d-ink);         --v8-ink-soft: var(--d-muted);
+  --v8-paper: var(--d-bg);        --v8-paper-warm: var(--d-bg-soft);
+  --v8-line: var(--d-line);       --v8-lime: var(--d-accent);
+  --v8-coral: var(--d-accent);    --v8-aqua: var(--d-accent);
+  --v8-muted: var(--d-muted);     --v8-solid: var(--d-ink);
+  --v8-shadow: var(--d-shadow);
+
+  --gm-forest: var(--d-accent);   --gm-forest-dark: var(--d-ink);
+  --gm-shadow: var(--d-shadow);
+  --premium-forest: var(--d-accent);
+  --premium-forest-deep: var(--d-ink);
+}
+
+/* ---- Page ground -------------------------------------------------------- */
+html, body.site-v3 {
+  background: var(--d-bg) !important;
+  color: var(--d-ink) !important;
+}
+
+/* ---- Type: one family, one weight for headings, tight tracking ---------- */
+body.site-v3, body.site-v3 :is(h1, h2, h3, h4, h5, h6, p, li, span, a, b, strong,
+  em, small, label, button, input, select, textarea, td, th, dt, dd, figcaption) {
+  font-family: "Inter", "Inter Fallback", system-ui, -apple-system, sans-serif;
+}
+body.site-v3 :is(h1, h2, h3, h4) {
+  font-weight: 600 !important;
+  letter-spacing: -.032em !important;
+  color: var(--d-ink) !important;
+  text-wrap: balance;
+}
+body.site-v3 h1 { line-height: 1.02 !important; }
+body.site-v3 :is(h2, h3, h4) { line-height: 1.12 !important; }
+body.site-v3 :is(p, li) { color: var(--d-muted); line-height: 1.62; }
+
+/* ---- Decoration off ----------------------------------------------------- */
+/* The old system leant on gradients, blurred colour blobs and heavy drop
+   shadows. None of that belongs in this direction: a clean layout earns its
+   depth from spacing and a single hairline. */
+body.site-v3 .liquid-surface::before,
+body.site-v3 .liquid-surface::after,
+body.site-v3 .liquid-blob { display: none !important; }
+
+body.site-v3 :is(section, header, div, article, aside, main)[class*="hero"],
+body.site-v3 .home-intro, body.site-v3 .match-intro,
+body.site-v3 .gm6-hero, body.site-v3 .gm6-band, body.site-v3 .gm6-tools,
+body.site-v3 .gm6-final, body.site-v3 .data-section, body.site-v3 .compact-calc {
+  background: var(--d-bg) !important;
+  background-image: none !important;
+  color: var(--d-ink) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+body.site-v3 :is(section, header, div)[class*="hero"] :is(h1, h2, h3, strong, b) {
+  color: var(--d-ink) !important;
+}
+body.site-v3 :is(section, header, div)[class*="hero"]
+  :is(p, li, small, span, dd, .eyebrow):not(:where(.btn, .btn *)) {
+  color: var(--d-muted) !important;
+}
+
+/* Cards: a hairline and a small radius, no lift, no glow. */
+body.site-v3 :is(.card, .panel, .quiz-card, .tool-card, .guide-card, .goal-card,
+  .chain-card, .result-card, .explore-card, .pick-card, .meal-card, .blog-card,
+  .gm6-tool, .search-hit, .advice-card, .calculator-card, .calc-card,
+  .single-macro-card, .order-console, .sample-card) {
+  background: var(--d-surface) !important;
+  border: 1px solid var(--d-line) !important;
+  border-radius: var(--d-r) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+body.site-v3 :is(.guide-card, .tool-card, .goal-card, .chain-card, .blog-card,
+  .gm6-tool, .search-hit, .meal-card, .pick-card):hover {
+  border-color: var(--d-accent) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ---- Buttons: one dark fill, one hairline outline ----------------------- */
+body.site-v3 :is(a, button).btn {
+  border-radius: var(--d-r-sm) !important;
+  font-weight: 600 !important;
+  letter-spacing: -.005em !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  transition: background-color .16s ease, border-color .16s ease, color .16s ease !important;
+}
+body.site-v3 :is(a, button).btn:is(.btn-primary, .home-primary, .match-primary, .quiz-continue) {
+  background: var(--d-ink) !important;
+  border: 1px solid var(--d-ink) !important;
+  color: var(--d-bg) !important;
+}
+body.site-v3 :is(a, button).btn:is(.btn-outline, .btn-ghost, .quiz-back) {
+  background: transparent !important;
+  border: 1px solid var(--d-line-2) !important;
+  color: var(--d-ink) !important;
+}
+body.site-v3 :is(a, button).btn:hover { transform: none !important; }
+body.site-v3 :is(a, button).btn:is(.btn-outline, .btn-ghost):hover {
+  border-color: var(--d-ink) !important;
+}
+
+/* ---- Links -------------------------------------------------------------- */
+body.site-v3 main a:not(.btn):not([class*="card"]):not(.gm6-tool) {
+  color: var(--d-accent);
+  text-underline-offset: 3px;
+}
+body.site-v3 main a:not(.btn):hover { color: var(--d-ink); }
+
+/* ---- Header and footer ------------------------------------------------- */
+body.site-v3 .site-header, body.site-v3 .modern-header {
+  background: var(--d-bg) !important;
+  border-bottom: 1px solid var(--d-line) !important;
+  box-shadow: none !important;
+}
+body.site-v3 .modern-footer {
+  background: var(--d-bg-soft) !important;
+  color: var(--d-ink) !important;
+  border-top: 1px solid var(--d-line);
+}
+body.site-v3 .modern-footer :is(p, a, small) { color: var(--d-muted) !important; }
+body.site-v3 .modern-footer a:hover { color: var(--d-ink) !important; }
+
+/* ---- Tables: hairlines, no fills --------------------------------------- */
+body.site-v3 :is(.data-table, .comparison-table) {
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+body.site-v3 :is(.data-table, .comparison-table) :is(td, th) {
+  border-color: var(--d-line) !important;
+  background: transparent !important;
+  color: var(--d-ink);
+}
+body.site-v3 :is(.data-table, .comparison-table) thead th {
+  color: var(--d-muted-2) !important;
+}
+
+/* ---- Figures never break away from their units -------------------------- */
+/* The stat blocks carry the value and unit as `1,950<em>mg</em>` in a box that
+   can be narrower than the pair, and an inherited overflow-wrap:break-word
+   then splits inside the word: the homepage sodium figure rendered as
+   "1,950 m" with the "g" on the next line. A quantity is one token. */
+body.site-v3 strong:has(> em),
+body.site-v3 :is(.gm6-macro-score, .stat-row, .results, .result, .pick-metrics,
+  .sample-macros, .proof-strip) :is(strong, b, span) {
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+body.site-v3 strong:has(> em) > em {
+  font-style: normal;
+  font-size: .62em;
+  font-weight: 500;
+  margin-left: .12em;
+  color: var(--d-muted-2);
+}
