@@ -577,13 +577,28 @@ body.site-v3 .nav-popover small { font-size: max(.79rem, 12.5px) !important; }
  * is dark under the light theme, which put near-black headings on a dark green
  * banner. Stated once here for every hero variant the site uses.
  * ====================================================================== */
-html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+/* Heroes that are still a dark gradient.
+ *
+ * This rule paints hero text light because heroes on this site were a forest
+ * gradient. editorial-v8 later converted a whole family of them -- article,
+ * page, focus-page, guide-hub, search and the new focused-guide header -- into
+ * light paper, and this rule kept painting light text onto them: on the new
+ * guide pages the H1 itself drew #dff0e7 on #f4f7f2, 1.09:1, so the title was
+ * invisible in light mode. Those headers carry their own ink from v8 now and
+ * are excluded here. :where() keeps the exclusion at zero specificity, because
+ * a bare :not() would raise this rule above the ones it has to lose to.
+ */
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
+    .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
+    .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
   :is(h1, h2, h3, h4, strong, b) {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
   background: none !important;
 }
-html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
+    .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
+    .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
   :is(p, li, small, dd, span, figcaption):not(:where(.btn, .btn *)) {
   /* The previous #cfe3d8 measured 4.30:1 against the light end of the hero
      gradient, just under the floor. Text inside a button is excluded: a button
@@ -591,7 +606,9 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
      the arrow on "Find my meal" pale mint on a lime fill. */
   color: #dff0e7 !important;
 }
-html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
+    .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
+    .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
   :is(.eyebrow, p.eyebrow) {
   /* #a8f0bd measured 4.37:1 against the light end of the hero gradient;
      the eyebrow is 12px uppercase, so it needs the 4.5:1 body-text floor. */
@@ -619,7 +636,9 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
  * unified-v7's light-theme rule gives them --u-ink on a 5% dark wash, which is
  * correct on a light page and unreadable on the dark banner they actually sit
  * on -- "Find a meal for my goal" was near-black on dark green. */
-html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"], .hero, .page-hero, .gm6-hero, .policy-hero)
+html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
+    .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
+    .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
   :is(.btn-outline, .btn-ghost, button.btn-ghost, button[type="reset"]) {
   color: #ffffff !important;
   border-color: rgba(255, 255, 255, .42) !important;

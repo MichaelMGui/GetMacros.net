@@ -690,7 +690,7 @@ body.site-v3.article-page main > section:not([class*="hero"]) + section:not([cla
 .focused-guide-body li + li { margin-top: 12px; }
 .focused-guide-body a { color: var(--u-mint); text-underline-offset: 3px; }
 .guide-quick-answer { margin-bottom: 62px; padding: clamp(24px,4vw,36px); border: 1px solid rgba(168,240,189,.22); border-radius: 26px; background: linear-gradient(145deg,rgba(168,240,189,.09),rgba(216,255,134,.035)); }
-.guide-quick-answer span,.focused-guide-side span { color: var(--u-lime); font-size: .72rem; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+.guide-quick-answer span,.focused-guide-side span { color: var(--u-lime); font-size: max(.72rem, 12.5px); font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
 .guide-quick-answer p { margin: 10px 0 0; color: var(--u-ink) !important; font-size: clamp(1.05rem,2vw,1.24rem); line-height: 1.65; }
 .guide-decision-table { margin: 28px 0 38px; overflow-x: auto; border: 1px solid var(--u-line); border-radius: 22px; background: var(--u-surface); }
 .guide-decision-table table { width: 100%; min-width: 620px; border-collapse: collapse; }
