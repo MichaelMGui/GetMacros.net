@@ -1712,3 +1712,19 @@ html[data-theme="dark"] body.site-v3:is(.meal-finder-page, .order-match-page)
   background: var(--u-lime, #bce94f) !important;
   box-shadow: none !important;
 }
+
+/* ---------------------------------------------------------------------------
+   Two leftovers from when the header and the search box were dark.
+
+   The brand dot after "GetMacros" is lime, which reads on a forest header and
+   measures 1.39:1 on the near-white one the header became. It keeps the lime
+   in dark, where the header still is dark, and takes the mint in light.
+
+   The search box's placeholder line is forest green, which on the dark
+   theme's near-black panel came to 1.48:1 -- the one piece of text on that
+   page telling you what the box is for.
+--------------------------------------------------------------------------- */
+html[data-theme="light"] body.site-v3 .brand-dot { color: #1d6a49 !important; }
+html[data-theme="dark"] body.site-v3 .search-box :is(span, ::placeholder),
+html[data-theme="dark"] body.site-v3 .search-box span { color: var(--u-muted-2, #8fa69a) !important; }
+html[data-theme="dark"] body.site-v3 .search-box input::placeholder { color: var(--u-muted-2, #8fa69a) !important; }

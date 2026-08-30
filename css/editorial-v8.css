@@ -357,7 +357,7 @@ body.home-studio main { margin-top: 0 !important; }
    Shared editorial headers: no more green-gradient billboard on every page.
    ------------------------------------------------------------------------- */
 
-body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,
   .article-hero,
   .focus-page-hero,
@@ -375,7 +375,7 @@ body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
   border-radius: 0 !important;
   box-shadow: inset 7px 0 0 var(--v8-coral) !important;
 }
-body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,
   .article-hero,
   .focus-page-hero,
@@ -383,7 +383,7 @@ body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
   .search-hero,
   .focused-guide-hero
 )::before,
-body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,
   .article-hero,
   .focus-page-hero,
@@ -391,7 +391,7 @@ body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
   .search-hero,
   .focused-guide-hero
 )::after { display: none !important; }
-body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,
   .article-hero,
   .focus-page-hero,
@@ -404,7 +404,7 @@ body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
   -webkit-text-fill-color: currentColor !important;
   background: none !important;
 }
-body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,
   .article-hero,
   .focus-page-hero,
@@ -416,7 +416,7 @@ body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
   line-height: .98 !important;
   letter-spacing: -.055em !important;
 }
-body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,
   .article-hero,
   .focus-page-hero,
@@ -424,7 +424,7 @@ body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
   .search-hero,
   .focused-guide-hero
 ) :is(p,li,small,figcaption) { max-width: 68ch; color: #46564e !important; }
-body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,
   .article-hero,
   .focus-page-hero,
@@ -463,16 +463,16 @@ html[data-theme="dark"] .match-facts dd { color: #9eafa6; }
 html[data-theme="dark"] .order-match-page .breadcrumb { color: #9daf9f !important; background: #0c1511 !important; border-color: rgba(255,255,255,.13); }
 html[data-theme="dark"] .match-primary { color: #111914 !important; background: var(--v8-lime) !important; border-color: var(--v8-lime) !important; }
 
-html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
 ) { color: #edf3ef !important; background: #151b18 !important; border-color: rgba(255,255,255,.13) !important; box-shadow: inset 7px 0 0 #df775e !important; }
-html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
 ) :is(h1,h2,h3,strong) { color: #f1f6f2 !important; }
-html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
 ) :is(p,li,small,figcaption) { color: #b8c7bf !important; }
-html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
   .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
 ) .eyebrow { color: #f29a83 !important; }
 
@@ -692,10 +692,10 @@ html[data-theme="dark"] .single-macro-form .units-toggle button.active { color: 
   .single-card-note { min-height: 0; }
   .single-macro-result { min-height: 64px !important; margin-top: 17px !important; padding-top: 15px !important; }
 
-  body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+  body.site-v3:not(.home-studio):not(.order-match-page) main :is(
     .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
   ) { padding-block: 50px !important; box-shadow: inset 5px 0 0 var(--v8-coral) !important; }
-  body.site-v3:not(.home-studio):not(.order-match-page) main > :is(
+  body.site-v3:not(.home-studio):not(.order-match-page) main :is(
     .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
   ) h1 { font-size: clamp(2.4rem,11vw,3.6rem) !important; }
 }
@@ -803,3 +803,45 @@ body.site-v3 .order-console-rail small { color: #9caaa3 !important; }
 /* The "Keep going" labels on the guide footer links sit outside every
    component root named in the floor above, so they kept their .7rem. */
 body.site-v3 .guide-related :is(span, b, i) { font-size: max(.78rem, 12.5px); }
+
+/* =========================================================================
+   Contents of a converted editorial header.
+   v8 turns six hero classes from a dark forest gradient into light paper, but
+   only restyles the header itself. Everything written to sit ON that gradient
+   -- outline buttons with white labels, mint fact chips, the deck and byline,
+   the eyebrow -- kept its light-on-dark colours and is now light-on-light.
+   Measured across the site: an outline button at 1.20:1 on 17 pages, fact
+   chips at 1.15:1 on 5, the deck at 1.10:1 on 2.
+
+   Scoped to the same selector that does the conversion, so the two cannot
+   disagree, and written once for the header's descendants rather than per
+   component -- the next thing added to a hero inherits the fix.
+   ========================================================================= */
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
+  .page-hero, .article-hero, .focus-page-hero, .guide-hub-hero, .search-hero, .focused-guide-hero
+) :is(p, span, li, dd, dt, small, figcaption, .eyebrow, .meta, .article-deck):not(:where(.btn, .btn *)) {
+  color: var(--v8-ink-soft) !important;
+}
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
+  .page-hero, .article-hero, .focus-page-hero, .guide-hub-hero, .search-hero, .focused-guide-hero
+) :is(h1, h2, h3, strong, b):not(:where(.btn, .btn *)) {
+  color: var(--v8-ink) !important;
+}
+/* The outline button drew a white label and a white border, both invisible on
+   paper. On this header it is a bordered button in the header's own ink. */
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
+  .page-hero, .article-hero, .focus-page-hero, .guide-hub-hero, .search-hero, .focused-guide-hero
+) :is(a, button).btn-outline {
+  color: var(--v8-ink) !important;
+  border-color: var(--v8-ink) !important;
+  background: transparent !important;
+}
+/* Fact chips sat on rgba(255,255,255,.08) -- a wash designed to lift off a
+   dark gradient and invisible over paper. They get a real surface. */
+body.site-v3:not(.home-studio):not(.order-match-page) main :is(
+  .page-hero, .article-hero, .focus-page-hero, .guide-hub-hero, .search-hero, .focused-guide-hero
+) :is(.article-facts, .stat-row) > * {
+  color: var(--v8-ink-soft) !important;
+  background: color-mix(in srgb, var(--v8-ink) 6%, transparent) !important;
+  border-color: var(--v8-line) !important;
+}
