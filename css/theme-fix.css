@@ -1209,3 +1209,37 @@ body.site-v3 .gm6-hero-steps b {
   body.site-v3 .gm6-hero-steps { gap: 9px 16px; margin-top: 1.3rem; }
   body.site-v3 .gm6-hero-steps li { width: 100%; }
 }
+
+/* The hero headline was sized for the three short words of the old slogan --
+   84px at desktop, capped at a 10ch measure. The headline states the offer now,
+   which is a sentence, so at that size it ran to four lines and its last line
+   crowded the lede. A slightly smaller face on a wider measure sets it in three
+   with room underneath. Scoped above the mobile breakpoint so the phone keeps
+   its own scale. */
+@media (min-width: 761px) {
+  body.site-v3 .gm6-hero h1 {
+    max-width: 15ch !important;
+    font-size: clamp(2.9rem, 5.1vw, 4.6rem) !important;
+    margin-bottom: 1.9rem;
+  }
+}
+
+/* Three steps read as three steps: an even row on a wide screen, one per line
+   on a narrow one. Left to wrap they broke two-then-one, which looked like a
+   mistake rather than a sequence. */
+body.site-v3 .gm6-hero-steps {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  align-items: start;
+  gap: 12px 18px;
+}
+
+/* Three proof points sit as three columns rather than two-then-one, which read
+   as an item that had fallen off the row. */
+@media (min-width: 761px) {
+  body.site-v3 .gm6-proof {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.4rem 2rem;
+  }
+}

@@ -12,8 +12,8 @@ HOME_MAIN = r'''<main id="main-content">
   <div class="container gm6-hero-grid">
     <div class="gm6-hero-copy">
       <p class="eyebrow">Free meal finder &middot; 15 chains, 83 meals</p>
-      <h1 data-reveal-title>Healthy fast food, figured out.</h1>
-      <p class="gm6-hero-lede">Tell us your goal and where you are eating. We rank real menu items by calories, protein, fiber and sodium, and show why each one fits.</p>
+      <h1 data-reveal-title>Find healthy fast food that fits your goal.</h1>
+      <p class="gm6-hero-lede">Every meal ranked on the four numbers that decide it&mdash;calories, protein, fiber and sodium&mdash;taken from each chain&rsquo;s own published data.</p>
       <ol class="gm6-hero-steps" aria-label="How the meal finder works">
         <li><b>1</b><span>Pick your goal</span></li>
         <li><b>2</b><span>Choose your restaurants</span></li>
