@@ -1605,3 +1605,23 @@ body.site-v3 .gm6-compare-hint { display: none; }
     color: var(--u-muted, #486157);
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Links inside the joined tools band.
+   The band is a dark forest gradient in BOTH themes, but only the dark theme
+   lightens link colour -- so a link added to the lead paragraph inherited the
+   light theme's `main a` green and drew #176c48 on #154a35, which is 1.59:1.
+   The band's own text is already light; its links have to be too, regardless
+   of which theme is active. #a8f0bd is what the dark theme resolves to here
+   and is 7.69:1 on the band, so both themes now agree on it.
+--------------------------------------------------------------------------- */
+body.site-v3 .gm6-tools :is(.gm6-tools-lead, .gm6-section-intro) a {
+  color: #a8f0bd !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+body.site-v3 .gm6-tools :is(.gm6-tools-lead, .gm6-section-intro) a:hover,
+body.site-v3 .gm6-tools :is(.gm6-tools-lead, .gm6-section-intro) a:focus-visible {
+  color: #dff0e7 !important;
+}
