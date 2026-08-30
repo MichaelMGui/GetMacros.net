@@ -298,8 +298,8 @@ def build_search(final: list[dict]) -> None:
             f'<p class="search-group-more" data-more hidden></p></section>')
 
     title = "Search Healthy Fast Food, Macro Tools & Guides | GetMacros"
-    desc = ("Search GetMacros healthy fast-food guides, restaurant comparisons, "
-            "macro calculators and focused nutrition guides.")
+    desc = ("Search every GetMacros page at once: healthy fast-food menu guides, "
+            "restaurant comparisons, macro calculators and nutrition explainers.")
     # `perGroup` rather than one global cap: capping the first twelve rows
     # overall showed twelve restaurants and hid every other section, so the
     # page opened looking like one list again. Four from each section shows

@@ -151,7 +151,7 @@ def build_home(meals: list[dict]) -> None:
 
 def build_fast_food(meals: list[dict]) -> None:
     count, chains = len(meals), len({m["chain"] for m in meals})
-    title = "Healthy Fast Food: High-Protein & Lower-Calorie Orders | GetMacros"
+    title = "Healthy Fast Food: Best High-Protein Orders | GetMacros"
     meta = (f"Compare {count} fast-food options across {chains} chains by calories, protein, fiber and sodium. "
             "Find meals for cutting, bulking, high protein and vegetarian goals.")
     visible = sorted([m for m in meals if m.get("p") is not None], key=lambda m:m["p"], reverse=True)[:10]

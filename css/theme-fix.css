@@ -1439,3 +1439,145 @@ html[data-theme="dark"] body.site-v3 .option-chain-mark {
   color: #14301f !important;
   filter: saturate(.95);
 }
+
+/* ======================================================================
+ * Motion.
+ *
+ * The site had grown twelve transition durations and six easing curves, so
+ * every component moved at its own speed and nothing felt like one product:
+ * a card lifted over .48s next to a button that changed colour in .12s. Three
+ * tiers, one curve, applied last so it settles the whole cascade.
+ *
+ *   state  170ms  colour, background, border, selection -- feedback
+ *   move   320ms  lifts, panels, anything that changes position
+ *   enter  560ms  scroll reveals, which are longer because they are further
+ *
+ * Distances are capped too. A 4-5px hover lift on one card and 2px on another
+ * reads as inconsistency rather than depth.
+ * ====================================================================== */
+:root {
+  --gm-ease: cubic-bezier(.22, 1, .36, 1);
+  --gm-state: .17s;
+  --gm-move: .32s;
+  --gm-enter: .56s;
+}
+
+body.site-v3 :is(a, button, .btn, .chip, .tab, .quiz-option, .search-hit,
+  .search-start-tile, .gm6-tool, .guide-card, .blog-card, .tool-card, .goal-card,
+  .chain-card, .result-card, .explore-card, .pick-card, .meal-card, .tool-group,
+  .nav-group-trigger, .nav-direct, .theme-toggle, .nav-toggle, .option-icon,
+  .calc-nav a, .tool-links a, .ranking-more, input, select, textarea) {
+  transition-duration: var(--gm-state) !important;
+  transition-timing-function: var(--gm-ease) !important;
+}
+
+/* Anything that moves gets the slower tier, so a lift never snaps. */
+body.site-v3 :is(.search-hit, .search-start-tile, .gm6-tool, .guide-card,
+  .blog-card, .tool-card, .goal-card, .chain-card, .result-card, .explore-card,
+  .pick-card, .meal-card, .tool-group, .gm6-finder-shell, .gm6-compare-shell):hover {
+  transition-duration: var(--gm-move) !important;
+}
+
+/* One lift distance, everywhere. */
+body.site-v3 :is(.search-hit, .search-start-tile, .gm6-tool, .guide-card,
+  .blog-card, .tool-card, .goal-card, .chain-card, .result-card, .explore-card,
+  .pick-card, .meal-card, .tool-group):hover {
+  transform: translate3d(0, -3px, 0) !important;
+}
+body.site-v3 :is(.btn, button.btn, a.btn):hover { transform: translate3d(0, -2px, 0) !important; }
+body.site-v3 :is(.btn, button.btn, a.btn):active { transform: translate3d(0, 0, 0) scale(.985) !important; transition-duration: .07s !important; }
+
+/* Reveals: one duration and one curve, so a page enters as a piece rather than
+   as a dozen elements arriving on their own schedules. */
+body.site-v3 :is(.u-reveal, .calc-reveal, .studio-reveal) {
+  transition-duration: var(--gm-enter) !important;
+  transition-timing-function: var(--gm-ease) !important;
+}
+
+/* Ambient motion in the hero stays slow and low-contrast: it is background
+   texture, and anything faster competes with the text in front of it. */
+body.site-v3 :is(.liquid-surface::before, .liquid-surface::after) {
+  animation-duration: 26s !important;
+  animation-timing-function: ease-in-out !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.site-v3 :is(.search-hit, .search-start-tile, .gm6-tool, .guide-card,
+    .blog-card, .tool-card, .goal-card, .chain-card, .result-card, .explore-card,
+    .pick-card, .meal-card, .tool-group, .btn, button.btn, a.btn):hover {
+    transform: none !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Cross-links between the calculators.
+   .tool-grid and .tool-card are defined in recovery.css, which only the
+   restaurant and focus pages load -- so on a tool page the band rendered as a
+   bare stack of headings. Rather than pull a whole page-level stylesheet onto
+   pages that were never built for it, the band carries its own styles here, in
+   the sheet every page already loads last, and reads its colours from the
+   unified tokens so both themes come out right without a second block.
+--------------------------------------------------------------------------- */
+body .gm-sibling-tools {
+  padding: clamp(48px, 7vw, 84px) 0;
+  border-top: 1px solid var(--u-line, rgba(19, 73, 48, .14));
+}
+body .gm-sibling-tools .section-head {
+  max-width: 60ch;
+  margin: 0 0 clamp(20px, 3vw, 30px);
+}
+body .gm-sibling-tools .section-head h2 {
+  margin: .3rem 0 .6rem;
+  font-size: clamp(1.5rem, 3.2vw, 2.05rem);
+  color: var(--u-ink, #10251b);
+}
+body .gm-sibling-tools .section-head p {
+  margin: 0;
+  color: var(--u-muted, #486157);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+body .gm-sibling-tools .tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+body .gm-sibling-tools a.tool-card {
+  display: block;
+  padding: 22px 22px 20px;
+  border: 1px solid var(--u-line, rgba(19, 73, 48, .14));
+  border-radius: 20px;
+  background: var(--u-surface, #fff);
+  box-shadow: var(--u-shadow-sm, 0 10px 28px rgba(20, 57, 39, .08));
+  text-decoration: none;
+  transition: transform var(--gm-move, .32s) var(--gm-ease, ease),
+              border-color var(--gm-state, .17s) var(--gm-ease, ease),
+              box-shadow var(--gm-move, .32s) var(--gm-ease, ease);
+}
+body .gm-sibling-tools a.tool-card:hover,
+body .gm-sibling-tools a.tool-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--u-mint, #247a54);
+  box-shadow: var(--u-shadow, 0 22px 60px rgba(20, 57, 39, .12));
+}
+body .gm-sibling-tools a.tool-card h3 {
+  margin: 0 0 .4rem;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  color: var(--u-ink, #10251b);
+}
+body .gm-sibling-tools a.tool-card p {
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.55;
+  color: var(--u-muted, #486157);
+}
+body .gm-sibling-tools .metric-note {
+  margin: clamp(18px, 2.6vw, 26px) 0 0;
+  font-size: .95rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  body .gm-sibling-tools a.tool-card:hover,
+  body .gm-sibling-tools a.tool-card:focus-visible { transform: none; }
+}

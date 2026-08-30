@@ -14,7 +14,7 @@ DATA = ROOT / "js" / "meal-data.js"
 
 CHAIN_CONFIG = {
     "Chipotle": {
-        "title": "Healthy Chipotle Orders: Calories, Protein & Macros | GetMacros",
+        "title": "Healthy Chipotle Orders: Calories & Protein | GetMacros",
         "h1": "Healthy Chipotle orders by calories and protein",
         "intro": "Chipotle is unusually flexible: protein, rice, beans, vegetables and toppings can be adjusted independently. Compare the complete builds we track, then use the official calculator for your exact custom bowl.",
         "source": "https://www.chipotle.com/nutrition-calculator",
@@ -69,7 +69,7 @@ CHAIN_CONFIG = {
         ],
     },
     "Subway": {
-        "title": "Healthy Subway Orders: Calories, Protein & Macros | GetMacros",
+        "title": "Healthy Subway Orders: Calories & Protein | GetMacros",
         "h1": "Healthy Subway orders by calories and protein",
         "intro": "At Subway, size and customization matter as much as the sandwich name. Bread length, extra protein, cheese and sauce can turn one menu item into very different meals.",
         "source": "https://www.subway.com/en-us/menunutrition1/nutrition",
@@ -266,12 +266,34 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
     cfg = CHAIN_CONFIG[chain]
     path = meals[0]["url"]
     title, h1 = cfg["title"], cfg["h1"]
-    meta = (f"Compare {chain} options by calories, protein, carbs, fiber and sodium. "
-            "See high-protein, lower-calorie and goal-based picks from verified menu data.")
     ranked_protein = sorted([m for m in meals if m.get("p") is not None], key=lambda m: m["p"], reverse=True)[:3]
     substantial = [m for m in meals if item_type(m) not in {"Side", "Side / snack"}
                    and ((m.get("p") or 0) >= 15 or (m.get("cal") or 0) >= 250)]
     lighter = sorted([m for m in substantial if m.get("cal") is not None], key=lambda m: m["cal"])[:3]
+    # One templated sentence with the chain name swapped in gave fifteen pages
+    # near-identical meta descriptions -- a duplicate-content signal, and a row
+    # of interchangeable snippets in the results. Naming this chain's own
+    # numbers makes every description distinct and tells a searcher, before
+    # they click, whether this page holds the order they are after.
+    meta = f"Compare all {len(meals)} tracked {chain} items by calories, protein, fiber and sodium."
+    if ranked_protein:
+        top = ranked_protein[0]
+        clause = f" {top['name']} leads on protein at {top['p']:g} g"
+        if lighter:
+            clause += f"; the lightest substantial order is {lighter[0]['cal']:g} calories"
+        clause += "."
+        if len(meta) + len(clause) <= 158:
+            meta += clause
+        elif len(meta) + len(f" {top['name']} leads on protein at {top['p']:g} g.") <= 158:
+            meta += f" {top['name']} leads on protein at {top['p']:g} g."
+        elif lighter:
+            # Long item names can push the named clause past the length Google
+            # renders. Fall back to the numbers alone rather than to a sentence
+            # every chain would share.
+            meta += (f" Top protein {top['p']:g} g; lightest substantial order "
+                     f"{lighter[0]['cal']:g} calories.")
+        else:
+            meta += f" Top protein {top['p']:g} g."
     energy = sorted([m for m in substantial if m.get("cal") is not None], key=lambda m: m["cal"], reverse=True)[:3]
     vegetarian = sorted([m for m in meals if "vegetarian" in m.get("diet", [])], key=lambda m: m.get("p") or -1, reverse=True)
     items = [{"@type": "ListItem", "position": i, "name": m["name"]} for i, m in enumerate(meals, 1)]
@@ -337,6 +359,14 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
 <p><a href="{html.escape(cfg["source"], quote=True)}">Open the official {html.escape(cfg["source_label"])}</a>. Confirm current nutrition and allergen information with {html.escape(chain)} when accuracy is important.</p>
 {additional_sources}
 <p>GetMacros is independent and is not sponsored or endorsed by {html.escape(chain)}.</p></div></div></section>
+<section><div class="container"><div class="section-head"><p class="eyebrow">Read next</p>
+<h2>Make the rest of the day fit around it</h2>
+<p>A single {html.escape(chain)} order is one decision. These guides cover the ones on either side of it.</p></div>
+<div class="guide-grid">
+<a class="guide-card" href="how-to-eat-out-without-wrecking-your-goal.html"><h3>How to eat out without wrecking your goal</h3><p>What to decide before you arrive, and which swaps actually change the numbers.</p></a>
+<a class="guide-card" href="how-many-calories-should-i-eat-a-day.html"><h3>How many calories should I eat a day?</h3><p>Work out the daily target this meal has to fit inside.</p></a>
+<a class="guide-card" href="how-much-sodium-per-day.html"><h3>How much sodium per day?</h3><p>Restaurant meals carry most of it. See what a day&rsquo;s worth looks like.</p></a>
+</div></div></section>
 <section class="data-section"><div class="container"><div class="section-head"><h2>Compare another restaurant</h2>
 <p>Use the finder to rank all {len(parse_meals())} tracked options, or return to the chain directory.</p></div><div class="focus-actions">
 <a class="btn btn-primary" href="restaurant-meal-finder.html">Use Healthy Order Match</a><a class="btn" href="healthy-fast-food.html">Browse all restaurants</a></div></div></section>

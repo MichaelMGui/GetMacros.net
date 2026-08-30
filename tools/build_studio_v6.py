@@ -169,10 +169,12 @@ HOME_MAIN = r'''<main id="main-content">
       <div class="gm6-reading-list">
         <a class="gm6-reading-link studio-reveal" href="how-much-protein-can-your-body-absorb.html"><small>Protein · 7 min</small><h3>How much protein can your body absorb at once?</h3><span>Read the evidence →</span></a>
         <a class="gm6-reading-link studio-reveal" href="macros-for-weight-loss.html"><small>Goals · 6 min</small><h3>Macros for weight loss</h3><span>Read the guide →</span></a>
+        <a class="gm6-reading-link studio-reveal" href="how-many-calories-should-i-eat-a-day.html"><small>Calorie targets · 6 min</small><h3>How many calories should I eat a day?</h3><span>Work out your number →</span></a>
       </div>
       <div class="gm6-reading-list">
         <a class="gm6-reading-link studio-reveal" href="does-creatine-cause-hair-loss.html"><small>Supplements · 7 min</small><h3>Does creatine cause hair loss?</h3><span>See what changed →</span></a>
         <a class="gm6-reading-link studio-reveal" href="how-to-read-a-nutrition-label.html"><small>Food labels · 8 min</small><h3>How to read a nutrition label</h3><span>Read the guide →</span></a>
+        <a class="gm6-reading-link studio-reveal" href="what-are-macros.html"><small>Macro basics · 5 min</small><h3>What are macros, in plain English?</h3><span>Start here →</span></a>
       </div>
     </div>
   </div>

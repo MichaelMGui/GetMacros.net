@@ -16,6 +16,161 @@ with open(os.path.join(ROOT, "icon-sprite.svg")) as _f:
     ICON_SPRITE = _f.read().strip()
 
 
+def _sodium_tables() -> tuple[str, str, str]:
+    """Sodium figures pulled from the live meal dataset at build time.
+
+    A sodium article that quotes generic advice is the same article everyone
+    else has published. The one thing this site holds that they do not is 74
+    complete restaurant orders with a measured sodium value on each, so the
+    article shows those instead of describing them -- and because the table is
+    generated, it cannot drift out of step with the finder it links to.
+    """
+    import sys as _sys
+    _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from build_restaurant_pages import item_type, parse_meals
+
+    meals = [m for m in parse_meals() if m.get("na") is not None]
+    if not meals:
+        return "", "", ""
+    values = sorted(m["na"] for m in meals)
+    median = values[len(values) // 2]
+    over_day = sum(1 for v in values if v >= 2300)
+    over_two_thirds = sum(1 for v in values if v >= 1500)
+
+    def rows(items):
+        return "".join(
+            f'<tr><th scope="row">{esc_html(m["name"])}</th>'
+            f'<td>{esc_html(m["chain"])}</td>'
+            f'<td>{m["na"]:,.0f}&nbsp;mg</td>'
+            f'<td>{(m["na"] / 2300 * 100):.0f}%</td></tr>'
+            for m in items
+        )
+
+    highest = sorted(meals, key=lambda m: -m["na"])[:6]
+    leanest = sorted(
+        [m for m in meals
+         if item_type(m) not in {"Side", "Side / snack"} and (m.get("p") or 0) >= 20],
+        key=lambda m: m["na"],
+    )[:6]
+    head_row = ('<tr><th>Order</th><th>Chain</th><th>Sodium</th>'
+                '<th>Share of 2,300&nbsp;mg</th></tr>')
+    high_table = f'<table class="data-table">{head_row}{rows(highest)}</table>'
+    low_table = f'<table class="data-table">{head_row}{rows(leanest)}</table>'
+    summary = (
+        f"Across the {len(meals)} tracked orders that publish a sodium value, the "
+        f"median is {median:,.0f}&nbsp;mg &mdash; roughly {median / 2300 * 100:.0f}&nbsp;per cent "
+        f"of a day in a single sitting. {over_two_thirds} of them carry at least "
+        f"1,500&nbsp;mg, and {over_day} reach or exceed the whole 2,300&nbsp;mg limit on their own."
+    )
+    return summary, high_table, low_table
+
+
+def _fiber_tables() -> tuple[str, str]:
+    """Fiber figures from the same dataset, for the same reason.
+
+    Fiber is the macro nobody publishes a comparison for, because it means
+    reading 76 menu entries. The site already has them, so the article shows
+    which orders actually carry fiber and how far the rest fall short.
+    """
+    import sys as _sys
+    _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from build_restaurant_pages import item_type, parse_meals
+
+    meals = [m for m in parse_meals() if m.get("f") is not None]
+    if not meals:
+        return "", ""
+    values = sorted(m["f"] for m in meals)
+    median = values[len(values) // 2]
+    strong = sum(1 for v in values if v >= 8)
+    thin = sum(1 for v in values if v <= 3)
+
+    best = sorted(
+        [m for m in meals if item_type(m) not in {"Side", "Side / snack"}],
+        key=lambda m: (-m["f"], m.get("cal") or 0),
+    )[:7]
+    table = (
+        '<table class="data-table">'
+        '<tr><th>Order</th><th>Chain</th><th>Fiber</th><th>Calories</th></tr>'
+        + "".join(
+            f'<tr><th scope="row">{esc_html(m["name"])}</th>'
+            f'<td>{esc_html(m["chain"])}</td>'
+            f'<td>{m["f"]:g}&nbsp;g</td>'
+            f'<td>{(m.get("cal") or 0):,.0f}</td></tr>'
+            for m in best
+        )
+        + "</table>"
+    )
+    summary = (
+        f"Of the {len(meals)} tracked orders with a published fiber value, the median "
+        f"is {median:g}&nbsp;g. Only {strong} reach 8&nbsp;g &mdash; about a third of a "
+        f"day for an adult woman &mdash; while {thin} come in at 3&nbsp;g or less. "
+        "Fiber is not distributed evenly across a menu; it is concentrated in a "
+        "handful of builds and absent from most of the rest."
+    )
+    return summary, table
+
+
+def _swap_table() -> str:
+    """Real pairs from the dataset where the same chain sells the same protein
+    for far fewer calories.
+
+    Swap advice is usually written as ranges because the writer has no menu
+    data. With 83 tracked orders the pairs can be found instead of estimated,
+    which turns "grilled saves you a few hundred calories" into two named
+    orders and the exact gap between them.
+    """
+    import sys as _sys
+    _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from build_restaurant_pages import item_type, parse_meals
+
+    meals = [m for m in parse_meals()
+             if m.get("cal") and m.get("p")
+             and item_type(m) not in {"Side", "Side / snack"}]
+    by_chain: dict[str, list[dict]] = {}
+    for m in meals:
+        by_chain.setdefault(m["chain"], []).append(m)
+
+    pairs = []
+    for chain, items in by_chain.items():
+        best = None
+        for heavy in items:
+            for light in items:
+                if heavy is light or light["p"] < 25:
+                    continue
+                # Same protein within a rounding error, meaningfully fewer
+                # calories: that is a swap, not a smaller meal.
+                # The lighter option has to still be a comparable meal. Without
+                # the floor, "nuggets alone" beat "a wrap" on calories and the
+                # table stopped being about swaps and started being about
+                # ordering less food.
+                if (abs(heavy["p"] - light["p"]) <= 6
+                        and heavy["cal"] - light["cal"] >= 180
+                        and light["cal"] >= heavy["cal"] * 0.55):
+                    gap = heavy["cal"] - light["cal"]
+                    if best is None or gap > best[0]:
+                        best = (gap, heavy, light)
+        if best:
+            pairs.append((best[0], chain, best[1], best[2]))
+    if not pairs:
+        return ""
+    pairs.sort(reverse=True)
+    rows = "".join(
+        f'<tr><th scope="row">{esc_html(chain)}</th>'
+        f'<td>{esc_html(heavy["name"])} &mdash; {heavy["cal"]:,.0f} cal, {heavy["p"]:g}&nbsp;g protein</td>'
+        f'<td>{esc_html(light["name"])} &mdash; {light["cal"]:,.0f} cal, {light["p"]:g}&nbsp;g protein</td>'
+        f'<td>&minus;{gap:,.0f} cal</td></tr>'
+        for gap, chain, heavy, light in pairs[:6]
+    )
+    return ('<table class="data-table">'
+            '<tr><th>Chain</th><th>Heavier order</th><th>Similar protein, fewer calories</th>'
+            '<th>Difference</th></tr>' + rows + "</table>")
+
+
+_SODIUM_SUMMARY, _SODIUM_HIGH, _SODIUM_LOW = _sodium_tables()
+_FIBER_SUMMARY, _FIBER_TABLE = _fiber_tables()
+_SWAP_TABLE = _swap_table()
+
+
 SITE = "https://getmacros.net"
 AUTHOR_NAME = "The GetMacros.net editorial team"
 # Every page on the site was written and published during this build window.
@@ -379,7 +534,7 @@ add(
       </div>''', bg="var(--color-protein-bg)", tight=True) +
     sec('''      <p>Want an exact number instead of a range? Our calculator factors in your weight, activity level, and goal automatically.</p>
       <p><a href="calculators.html" class="btn btn-primary">Calculate my protein target →</a></p>'''),
-    [("protein.html", "What protein actually does"), ("protein-for-muscle-growth.html", "Protein for muscle growth"), ("high-protein-foods-list.html", "High-protein foods list")]
+    [("protein.html", "What protein actually does"), ("what-are-macros.html", "What are macros?"), ("high-protein-foods-list.html", "High-protein foods list")]
 )
 
 add(
@@ -429,7 +584,7 @@ add(
 add(
     "high-protein-foods-list",
     "High-Protein Foods Ranked by Protein Per Calorie",
-    "25 high-protein foods with protein per 100 g, protein per 100 calories, and the protein in a realistic serving — so you can compare them the way you actually eat them.",
+    "25 high-protein foods ranked by protein per 100 g, protein per 100 calories and protein in a realistic serving, so you can compare them the way you eat them.",
     "protein", "Protein Guide", "25 high-protein foods, ranked by protein per calorie",
     "Ranked by protein per calorie rather than per 100 grams, with what a realistic serving of each actually delivers.",
     sec('''      <h2>Why per-100-gram lists mislead you</h2>
@@ -493,7 +648,7 @@ add(
       </ul>
       <p>For the authoritative reference, see MyPlate's Protein Foods Group and the USDA FoodData
       Central database behind it.</p>''', tight=True),
-    [("protein.html", "What protein actually does"), ("plant-based-protein-sources.html", "Best plant-based protein sources"), ("how-much-protein-per-day.html", "How much protein you need")]
+    [("protein.html", "What protein actually does"), ("how-much-fiber-per-day.html", "How much fiber per day"), ("how-much-protein-per-day.html", "How much protein you need")]
 )
 
 add(
@@ -1004,7 +1159,7 @@ add(
         <li><strong>Allergens are bolded or in a Contains line</strong> in most markets, and cross-contact warnings are voluntary rather than standardised.</li>
       </ul>
       <p>For the fuller picture on portion traps specifically, see <a href="food-labels-serving-size-traps.html">serving size traps</a>.</p>"""),
-    [("high-protein-foods-list.html", "High-protein foods list"), ("calculators.html", "Macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss")],
+    [("high-protein-foods-list.html", "High-protein foods list"), ("how-much-sodium-per-day.html", "How much sodium per day"), ("calculators.html", "Macro calculator"), ("macros-for-weight-loss.html", "Macros for fat loss")],
     faq=[
         ('What should I look at first on a nutrition label?', 'The serving size. Every other number on the panel is expressed per serving, so if the package holds two or three servings the calories, sugar and sodium you actually consume are two or three times what the panel shows.'),
         ('What does %DV mean on a food label?', 'Percent Daily Value compares one serving against a 2,000-calorie reference diet. The quick rule: 5% or less of a nutrient is a little, 20% or more is a lot.'),
@@ -1088,7 +1243,7 @@ add(
         <li><strong>New to lifting?</strong> You can often gain muscle and lose fat at once for a while &mdash; see <a href="body-recomposition-explained.html">body recomposition</a>. Stay near maintenance and let it happen.</li>
         <li><strong>Tired, under-slept, stressed?</strong> Maintenance. Neither direction works well from a depleted baseline.</li>
       </ul>"""),
-    [("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle"), ("tdee-vs-bmr.html", "BMR vs. TDEE")],
+    [("macros-for-weight-loss.html", "Macros for fat loss"), ("macros-for-muscle-gain.html", "Macros for building muscle"), ("how-many-calories-should-i-eat-a-day.html", "How many calories per day")],
     faq=[
         ('How long should a cut last?', 'Most people do well with 8-16 weeks, then a period at maintenance. Longer continuous deficits tend to bring falling training performance, rising hunger and worse adherence, which usually costs more than the extra weeks gain.'),
         ('Can you build muscle and lose fat at the same time?', 'Yes, in specific situations: beginners, people returning after a break, and people with higher body fat. It is called body recomposition and it becomes much harder with training experience.'),
@@ -1186,7 +1341,7 @@ add(
 add(
     "body-recomposition-explained",
     "Body Recomposition: Build Muscle, Lose Fat",
-    "What body recomposition means, who it actually works for, and how to set macros for it.",
+    "What body recomposition means, who it actually works for, how to set protein and calories for it, and how long to expect it to take before you judge results.",
     "general", "Nutrition Basics", "Body recomposition: building muscle and losing fat at once",
     "Losing fat and building muscle simultaneously is possible — but it's slower than doing either one at a time, and works best for specific people.",
     sec('''      <h2>Who it works best for</h2>
@@ -1197,7 +1352,7 @@ add(
       </ul>''') +
     sec('''      <h2>Setting macros for recomposition</h2>
       <p>Calories are typically set at or very close to maintenance (TDEE), rather than a clear deficit or surplus. Protein is kept high — similar to a cutting phase, around 1.8–2.2 g/kg — since it's doing double duty: supporting muscle growth and protecting existing muscle. Progress is usually slower and harder to see on the scale than a dedicated cut or bulk, so tracking measurements or photos matters more than the number on the scale.</p>''', bg="var(--color-carbs-bg)", tight=True),
-    [("macros-for-muscle-gain.html", "Macros for building muscle"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("cutting-bulking-maintenance-explained.html", "Cutting vs. bulking vs. maintenance")]
+    [("macros-for-muscle-gain.html", "Macros for building muscle"), ("how-many-calories-should-i-eat-a-day.html", "How many calories per day"), ("cutting-bulking-maintenance-explained.html", "Cutting vs. bulking vs. maintenance")]
 )
 
 add(
@@ -1380,7 +1535,7 @@ add(
         <li><strong>Fat cut to almost nothing</strong> to make room for carbohydrate, costing vitamin absorption and satiety.</li>
         <li><strong>No maintenance phase planned.</strong> The end of a cut is where most regain happens.</li>
       </ul>"""),
-    [("calculators.html", "Full macro calculator"), ("how-much-protein-per-day.html", "How much protein per day"), ("tdee-vs-bmr.html", "BMR vs. TDEE")],
+    [("calculators.html", "Full macro calculator"), ("how-much-protein-per-day.html", "How much protein per day"), ("how-many-calories-should-i-eat-a-day.html", "How many calories per day"), ("how-to-eat-out-without-wrecking-your-goal.html", "Eating out without wrecking it")],
     faq=[
         ('What is the best macro split for weight loss?', 'There is no single best split. Set a calorie deficit, put protein at 1.6-2.2 g/kg, keep fat at or above roughly 20% of calories, and let carbohydrate fill the rest. Within those guardrails, choose what you can sustain.'),
         ('How much protein should I eat to lose weight?', 'Roughly 1.6-2.2 grams per kilogram of body weight, toward the higher end the leaner you are or the steeper the deficit. Protein protects muscle, satisfies hunger and costs the most energy to digest.'),
@@ -1392,7 +1547,7 @@ add(
 add(
     "macros-for-muscle-gain",
     "How to Set Your Macros for Muscle Gain",
-    "A practical framework for setting protein, fat, and carb targets to build muscle while minimizing unnecessary fat gain.",
+    "A practical framework for setting protein, fat and carb targets to build muscle while minimising unnecessary fat gain, with example numbers you can copy.",
     "general", "Calculator Guide", "How to set your macros for building muscle",
     "Building muscle requires a calorie surplus and enough protein — but 'more is better' isn't the right mindset for either one.",
     sec('''      <ul class="checklist">
@@ -1431,7 +1586,7 @@ add(
         <li><strong>Chasing the anabolic window</strong> while missing the daily total. Timing is a rounding error next to consistency &mdash; see <a href="post-workout-anabolic-window.html">the anabolic window in detail</a>.</li>
         <li><strong>Not progressing the training.</strong> Food permits growth; the training is what asks for it.</li>
       </ul>"""),
-    [("calculators.html", "Full macro calculator"), ("protein-for-muscle-growth.html", "Protein for muscle growth"), ("what-is-glycogen.html", "What is glycogen?")],
+    [("calculators.html", "Full macro calculator"), ("how-many-calories-should-i-eat-a-day.html", "How many calories per day"), ("what-are-macros.html", "What are macros?")],
     faq=[
         ('How many calories should I eat to build muscle?', 'Roughly 5-15% above maintenance, aiming for about 0.25-0.5% of body weight gained per week. For most people that is a surplus of a few hundred calories rather than a thousand.'),
         ('How much protein do I need to build muscle?', 'About 1.6-2.2 grams per kilogram of body weight per day. Studies consistently show little additional benefit above roughly 2.2 g/kg once training and calories are adequate.'),
@@ -1473,6 +1628,321 @@ CATEGORY_LABEL = {
 }
 CATEGORY_PILL = {"protein": "protein", "fat": "fat", "carbs": "carbs", "athletes": "athletes", "diets": "diets", "science": "science", "general": "carbs"}
 
+
+
+# ------------------------------------------------- SEARCH-LED ADDITIONS 2026 --
+#
+# Five guides chosen for what people actually type, each answering a question
+# the library did not already answer. Every one connects to a tool on this site,
+# so the article ends somewhere useful rather than at a related-links box: the
+# calorie and macro questions run into the calculator, and the eating-out,
+# sodium and fiber questions run into the meal finder, which is the only part of
+# the site that can answer them for a specific restaurant order.
+
+add(
+    "how-many-calories-should-i-eat-a-day",
+    "How Many Calories Should I Eat a Day? | GetMacros",
+    "Work out your daily calorie target from your body size, activity and goal, see the maths behind it, and learn why the number is an estimate to adjust.",
+    "general", "Calorie targets", "How many calories should I eat a day?",
+    "There is no single right number. There is a decent estimate you can calculate in about a minute, and a way to correct it from what actually happens over the next fortnight.",
+    sec('''      <h2>The short answer</h2>
+      <p>Most adults land somewhere between 1,600 and 3,000 calories a day. Where you fall depends on four things: how big you are, how much you move, how old you are, and whether you are trying to lose, hold or gain weight. The estimate below is the same calculation clinicians and sports dietitians start from.</p>
+      <table class="data-table">
+        <tr><th>Step</th><th>What it gives you</th></tr>
+        <tr><th scope="row">1. Resting metabolic rate</th><td>Calories your body uses at complete rest</td></tr>
+        <tr><th scope="row">2. Activity multiplier</th><td>Your total daily burn, including movement and exercise</td></tr>
+        <tr><th scope="row">3. Goal adjustment</th><td>The target you actually eat to</td></tr>
+      </table>
+      <p><a class="text-link" href="calculators.html">Run the calculation for your own numbers &rarr;</a></p>''') +
+    sec('''      <h2>Step one: resting metabolic rate</h2>
+      <p>The Mifflin-St Jeor equation is the one most often recommended for healthy adults, because it predicted measured resting energy expenditure more accurately than the older Harris-Benedict equations in the review that established current practice.<sup class="ref"><a href="sources.html#p3">[1]</a></sup></p>
+      <table class="data-table">
+        <tr><th>Sex</th><th>Equation</th></tr>
+        <tr><th scope="row">Male</th><td>(10 &times; kg) + (6.25 &times; cm) &minus; (5 &times; age) + 5</td></tr>
+        <tr><th scope="row">Female</th><td>(10 &times; kg) + (6.25 &times; cm) &minus; (5 &times; age) &minus; 161</td></tr>
+      </table>
+      <p>A 30-year-old woman at 68&nbsp;kg and 165&nbsp;cm: (10 &times; 68) + (6.25 &times; 165) &minus; (5 &times; 30) &minus; 161 = <strong>1,400 calories</strong> at rest.</p>
+      <p>The sex term is in the equation because it estimates lean mass, which is what actually burns the energy. It is a statistical adjustment, not a statement about anyone.</p>''') +
+    sec('''      <h2>Step two: how much you move</h2>
+      <p>Multiply the resting figure by an activity factor. Most people overestimate this, which is the single largest source of error in the whole calculation.</p>
+      <table class="data-table">
+        <tr><th>Activity</th><th>Multiplier</th><th>Our example</th></tr>
+        <tr><th scope="row">Desk job, little exercise</th><td>1.2</td><td>1,680</td></tr>
+        <tr><th scope="row">Light exercise, 1&ndash;3 days a week</th><td>1.375</td><td>1,925</td></tr>
+        <tr><th scope="row">Moderate exercise, 3&ndash;5 days</th><td>1.55</td><td>2,170</td></tr>
+        <tr><th scope="row">Hard exercise, 6&ndash;7 days</th><td>1.725</td><td>2,415</td></tr>
+      </table>
+      <p>If you sit for work and train three times a week, you are usually closer to 1.375 than 1.55. An hour in the gym is a small share of a day that is otherwise spent sitting.</p>''') +
+    sec('''      <h2>Step three: adjust for the goal</h2>
+      <table class="data-table">
+        <tr><th>Goal</th><th>Adjustment</th><th>Our example at 1.375</th></tr>
+        <tr><th scope="row">Lose fat</th><td>&minus;15 to &minus;20%</td><td>1,540&ndash;1,635</td></tr>
+        <tr><th scope="row">Maintain</th><td>No change</td><td>1,925</td></tr>
+        <tr><th scope="row">Gain muscle</th><td>+10 to +15%</td><td>2,120&ndash;2,215</td></tr>
+      </table>
+      <p>Deficits larger than about 20&nbsp;per cent tend to cost lean mass and get harder to stick to, which is why the range stops there rather than going lower.</p>''') +
+    sec('''      <h2>Why the number is an estimate, and what to do about it</h2>
+      <p>Prediction equations carry real error for any one person: measured resting energy expenditure commonly sits within about 10&nbsp;per cent of the predicted value, and sometimes further out.<sup class="ref"><a href="sources.html#p3">[1]</a></sup> On a 2,000-calorie target that is a 200-calorie band before you have eaten anything.</p>
+      <p>So treat the output as a starting point and correct it from evidence:</p>
+      <ul>
+        <li>Eat to the estimate for two full weeks, weekends included.</li>
+        <li>Weigh yourself under the same conditions and use the weekly average, not any single morning.</li>
+        <li>If the average has not moved in the direction you want, change the target by roughly 100&ndash;150 calories and repeat.</li>
+      </ul>
+      <p>Two weeks is the shortest window that outlasts the water-weight noise from salt, carbohydrate and menstrual-cycle changes. Anything faster is reading the scale, not your metabolism.</p>''') +
+    sec('''      <h2>Turning the target into meals</h2>
+      <p>A daily number only helps if you can spend it. Once you have your target, the harder question is what a given restaurant order costs against it &mdash; which is what the finder is for: it ranks real menu items against a goal and shows calories, protein, fiber and sodium together.</p>
+      <p><a class="text-link" href="restaurant-meal-finder.html">Find meals that fit your target &rarr;</a></p>
+      <p class="calc-fineprint">Educational information, not individualized medical advice. If you are pregnant, managing a health condition, or working with a clinician on your intake, follow their guidance over a general equation.</p>'''),
+    [("calculators.html", "Free macro calculator"), ("how-to-calculate-macros-by-hand.html", "Calculate macros by hand"), ("macros-for-weight-loss.html", "Macros for fat loss"), ("restaurant-meal-finder.html", "Find a meal that fits")],
+    faq=[
+        ("Is 1,200 calories a day enough?", "For most adults it is below the resting requirement, which is why it tends to be difficult to sustain and is usually reserved for supervised settings. Work from your own calculated resting rate rather than a round number you have seen quoted."),
+        ("How many calories to lose one pound a week?", "A deficit of roughly 500 calories a day approximates one pound a week, from the older estimate that a pound of fat holds about 3,500 calories. It is a useful rule of thumb that drifts over longer periods as body size and expenditure change."),
+        ("Do I need to eat back exercise calories?", "If you used an activity multiplier, exercise is already included, so eating it back a second time double-counts it. If you calculated from your resting rate alone, then add it."),
+    ],
+)
+
+add(
+    "what-are-macros",
+    "What Are Macros? A Plain-English Guide | GetMacros",
+    "What macronutrients are, what protein, carbohydrate and fat each do, how many calories each provides, and how to set a split without weighing every meal.",
+    "general", "Macro basics", "What are macros, in plain English?",
+    "Macros are the three nutrients your body needs in large amounts. Counting them is just splitting your calorie target into three parts, and one of them matters more than the other two.",
+    sec('''      <h2>The three, and what they cost</h2>
+      <table class="data-table">
+        <tr><th>Macro</th><th>Calories per gram</th><th>What it mainly does</th></tr>
+        <tr><th scope="row">Protein</th><td>4</td><td>Builds and repairs tissue; keeps you full</td></tr>
+        <tr><th scope="row">Carbohydrate</th><td>4</td><td>Fuels the brain and hard exercise</td></tr>
+        <tr><th scope="row">Fat</th><td>9</td><td>Hormones, cell membranes, fat-soluble vitamins</td></tr>
+      </table>
+      <p>Alcohol supplies 7 calories per gram and is sometimes called a fourth macro. It is not required by the body and is usually left out of a split.</p>
+      <p>That table is the whole idea: calories tell you how much energy you ate, macros tell you where it came from.</p>''') +
+    sec('''      <h2>Why bother splitting them at all</h2>
+      <p>Two 2,000-calorie days can produce different outcomes. In controlled trials, higher-protein diets preserved more lean mass during weight loss than lower-protein diets at the same calorie intake.<sup class="ref"><a href="sources.html#p2">[1]</a></sup> Protein also has the largest thermic effect of the three &mdash; a larger share of its calories is spent digesting it &mdash; and is the most satiating per calorie.</p>
+      <p>That is the practical case for macros. Not that carbohydrate or fat are bad, but that the protein share changes what you lose or keep while the calorie total decides the direction.</p>''') +
+    sec('''      <h2>Setting your own split</h2>
+      <p>Set protein and fat as floors, then let carbohydrate fill whatever is left. That way the two nutrients with real minimums are protected and the flexible one absorbs the variation.</p>
+      <ul>
+        <li><strong>Protein:</strong> 1.6&ndash;2.2&nbsp;g per kg of body weight if you train or are eating in a deficit; 1.2&ndash;1.6&nbsp;g/kg otherwise.<sup class="ref"><a href="sources.html#p2">[1]</a></sup></li>
+        <li><strong>Fat:</strong> at least 0.6&nbsp;g per kg, or roughly 20&ndash;35&nbsp;per cent of calories, which is the accepted distribution range for adults.<sup class="ref"><a href="sources.html#p3">[2]</a></sup></li>
+        <li><strong>Carbohydrate:</strong> everything remaining.</li>
+      </ul>
+      <p>At 2,000 calories and 70&nbsp;kg: 140&nbsp;g protein (560 cal) and 65&nbsp;g fat (585 cal) leaves 855 calories, or about 214&nbsp;g of carbohydrate.</p>
+      <p><a class="text-link" href="calculators.html">Get your split calculated &rarr;</a></p>''') +
+    sec('''      <h2>Three worked splits at the same body weight</h2>
+      <p>The same 70&nbsp;kg person, three goals. Only the calorie total and the protein floor really move; carbohydrate absorbs the difference, which is the point of setting it last.</p>
+      <table class="data-table">
+        <tr><th>Goal</th><th>Calories</th><th>Protein</th><th>Fat</th><th>Carbohydrate</th></tr>
+        <tr><th scope="row">Fat loss</th><td>1,700</td><td>154&nbsp;g (2.2&nbsp;g/kg)</td><td>57&nbsp;g (30%)</td><td>149&nbsp;g</td></tr>
+        <tr><th scope="row">Maintenance</th><td>2,100</td><td>126&nbsp;g (1.8&nbsp;g/kg)</td><td>70&nbsp;g (30%)</td><td>241&nbsp;g</td></tr>
+        <tr><th scope="row">Muscle gain</th><td>2,400</td><td>126&nbsp;g (1.8&nbsp;g/kg)</td><td>73&nbsp;g (27%)</td><td>316&nbsp;g</td></tr>
+      </table>
+      <p>Notice what does <em>not</em> change much: protein in grams is nearly flat across maintenance and gaining, and rises for fat loss rather than falling. That is the single most common thing people get backwards. Cutting calories is when protein matters most, because it is the nutrient standing between a deficit and lost muscle.</p>
+      <p>Fat stays inside the 20&ndash;35&nbsp;per cent band in all three. Carbohydrate ranges from 149&nbsp;g to 316&nbsp;g &mdash; more than double &mdash; without anything being wrong in either case.</p>''') +
+    sec('''      <h2>Four mistakes that make the numbers useless</h2>
+      <ul>
+        <li><strong>Setting carbohydrate first.</strong> A percentage split assigned to all three at once means every change to one silently changes the others. Floors for protein and fat, remainder for carbohydrate, is more robust.</li>
+        <li><strong>Lowering protein while cutting.</strong> Protein calories look expensive when the total is small. They are the ones worth keeping.</li>
+        <li><strong>Weighing cooked food against raw entries.</strong> A hundred grams of raw chicken and a hundred grams of cooked chicken are not the same food. Pick one convention and stay with it.</li>
+        <li><strong>Tracking on weekdays only.</strong> Two untracked days can undo a five-day deficit by themselves, and they are the days most likely to be eaten out.</li>
+      </ul>
+      <p>None of these are precision problems. They are consistency problems, which is the category almost every failed attempt at tracking actually falls into.</p>''') +
+    sec('''      <h2>Counting without weighing every meal</h2>
+      <p>Precision is not the point; consistency is. Three approaches, in order of effort:</p>
+      <ul>
+        <li><strong>Track a normal week once.</strong> Most people eat a small rotation of meals. Learn what those cost and you can estimate the rest.</li>
+        <li><strong>Anchor the protein.</strong> If you hit your protein floor and your calorie total, the split largely takes care of itself.</li>
+        <li><strong>Use published numbers where they exist.</strong> Packaged food and chain restaurants publish theirs, which removes the guesswork from the meals hardest to estimate by eye.</li>
+      </ul>
+      <p><a class="text-link" href="how-to-read-a-nutrition-label.html">How to read a nutrition label &rarr;</a></p>''') +
+    sec('''      <h2>What macros will not tell you</h2>
+      <p>A split says nothing about fiber, sodium, micronutrients, or how a food was made. Two identical macro days can differ a great deal in how well they feed you. Macros are a budget, not a definition of a good diet &mdash; which is why the meal data on this site shows fiber and sodium beside calories and protein rather than stopping at the three.</p>
+      <p class="calc-fineprint">Educational information, not individualized medical advice.</p>'''),
+    [("calculators.html", "Free macro calculator"), ("calories-vs-macros-what-matters-more.html", "Calories vs macros"), ("how-to-calculate-macros-by-hand.html", "Calculate macros by hand"), ("protein.html", "What protein actually does")],
+    faq=[
+        ("Do I have to hit my macros exactly?", "No. Within about 5 grams of protein and fat, and within roughly 50 calories of the total, is close enough for the result to be indistinguishable over a week."),
+        ("Is counting macros better than counting calories?", "For weight change, the calorie total is what decides direction. Macros mostly decide what you keep while it happens, and how full you feel getting there."),
+        ("What is IIFYM?", "\u201cIf it fits your macros\u201d \u2014 the idea that food choice is unconstrained as long as the day\u0027s totals land. It works arithmetically and ignores fiber, sodium and micronutrients, so it is a starting framework rather than a finished plan."),
+    ],
+)
+
+add(
+    "how-to-eat-out-without-wrecking-your-goal",
+    "How to Eat Out Without Wrecking Your Goal | GetMacros",
+    "What to decide before you arrive at a restaurant, which swaps actually change the numbers, and how to handle a meal with no nutrition information at all.",
+    "general", "Eating out", "How to eat out without wrecking your goal",
+    "One restaurant meal does not undo a week. What causes trouble is not knowing roughly what it cost, so the next three days get guessed at too.",
+    sec('''      <h2>Decide the shape of the meal before you arrive</h2>
+      <p>Almost every useful decision happens before you are hungry and reading a menu. Two questions settle most of it:</p>
+      <ul>
+        <li><strong>Is this meal the main event or a normal meal?</strong> A birthday dinner and a Tuesday lunch deserve different treatment. Pretending otherwise is how people end up doing neither well.</li>
+        <li><strong>What is the one number that matters here?</strong> Usually protein if you are training, calories if you are cutting. Optimising all four at once in a queue is not realistic.</li>
+      </ul>
+      <p>If the chain publishes its nutrition information, you can settle both before you leave the house.</p>
+      <p><a class="text-link" href="restaurant-meal-finder.html">Check a chain before you go &rarr;</a></p>''') +
+    sec('''      <h2>The swaps that actually move the numbers</h2>
+      <p>Some substitutions change a meal materially. Others are folklore. Ranked by how much they typically change the total:</p>
+      <table class="data-table">
+        <tr><th>Swap</th><th>Typical effect</th></tr>
+        <tr><th scope="row">Grilled instead of fried protein</th><td>Large: often 150&ndash;300 calories and most of the added fat</td></tr>
+        <tr><th scope="row">Dressing or sauce on the side</th><td>Large: dressings frequently carry 100&ndash;200 calories</td></tr>
+        <tr><th scope="row">Skip the sugary drink</th><td>Large: 150&ndash;300 calories that do not fill you up</td></tr>
+        <tr><th scope="row">Half portion or share a side</th><td>Moderate and reliable</td></tr>
+        <tr><th scope="row">Wholegrain bun instead of white</th><td>Small: a few grams of fiber, similar calories</td></tr>
+        <tr><th scope="row">Removing cheese from a large meal</th><td>Small relative to the entr&eacute;e it sits on</td></tr>
+      </table>
+      <p>The pattern is that the cooking method, the sauce and the drink decide most of the difference. The bread rarely does.</p>''') +
+    sec('''      <h2>The same protein for hundreds fewer calories</h2>
+      <p>The argument for looking a menu up is easier to make with the menu in front of you. Each row below is one chain, two of its own orders, and near-identical protein &mdash; the calorie gap is what the choice is actually worth.</p>
+      ''' + _SWAP_TABLE + '''
+      <p>No row on that table involves eating less. Every one is the same meal slot at the same restaurant with the same protein delivered. The difference is cooking method, bread and sauce &mdash; which is exactly where the previous table said it would be.</p>
+      <p>It also shows why a rule of thumb only gets you so far. The gap ranges from under 200 calories to over 500 depending on the chain, and there is no way to know which you are looking at without the numbers.</p>
+      <p><a class="text-link" href="healthy-fast-food.html">Compare all 83 tracked orders &rarr;</a></p>''') +
+    sec('''      <h2>The salad that is not the light option</h2>
+      <p>A salad with fried chicken, cheese, candied nuts and a creamy dressing routinely costs more than a plain burger, and fills you up less. Judge the components, not the category. The reverse is also true: a grilled chicken sandwich is often one of the more reasonable orders on a fast-food menu.</p>
+      <p>This is the reason the rankings on this site work from complete tracked orders rather than from menu names.</p>''') +
+    sec('''      <h2>When there are no published numbers</h2>
+      <p>Independent restaurants rarely publish anything. Estimate from structure rather than trying to recall a figure:</p>
+      <ul>
+        <li>Find the protein and assume a palm-sized portion is roughly 30&nbsp;g.</li>
+        <li>Assume anything fried, creamy or glazed carries more fat than it looks.</li>
+        <li>Assume restaurant portions are larger than home portions of the same dish.</li>
+        <li>Log a sensible over-estimate rather than nothing. A wrong number you can correct beats a blank you cannot.</li>
+      </ul>
+      <p><a class="text-link" href="serving-size-vs-portion-size.html">Serving size vs portion size &rarr;</a></p>''') +
+    sec('''      <h2>After the meal</h2>
+      <p>Do not compensate by skipping breakfast the next day. The evidence for weight outcomes points at the average across weeks, not at any single day, and under-eating after a large meal tends to produce the swing it was meant to prevent. Return to your normal intake and carry on.</p>
+      <p class="calc-fineprint">Educational information, not individualized medical advice.</p>'''),
+    [("restaurant-meal-finder.html", "Healthy Order Match"), ("healthy-fast-food.html", "Healthy fast food"), ("best-fast-food-restaurants-for-your-goals.html", "Which chain fits your goal"), ("serving-size-vs-portion-size.html", "Serving size vs portion size")],
+    faq=[
+        ("How do I stay on track at a restaurant with no nutrition information?", "Estimate from the plate: a palm of protein is roughly 30 grams, assume fried and creamy items carry more fat than they look, and log a deliberate over-estimate rather than nothing."),
+        ("Is fast food always worse than a sit-down restaurant?", "Not reliably. Chains publish their numbers, which makes a fast-food meal easier to choose deliberately than an unlabelled restaurant dish of unknown size."),
+        ("Should I skip a meal to save calories for dinner?", "Arriving very hungry usually costs more than it saves. Eating normally and choosing deliberately at the table works better for most people."),
+    ],
+)
+
+add(
+    "how-much-sodium-per-day",
+    "How Much Sodium Per Day? Limits and Real Meals | GetMacros",
+    "The daily sodium limits health authorities set, how much a single restaurant meal can hold, and how to keep your total sensible without tracking milligrams.",
+    "general", "Sodium", "How much sodium per day, and why restaurant meals matter",
+    "Sodium is the number people notice last and restaurants supply most of. One order can carry a whole day of it.",
+    sec('''      <h2>The limits</h2>
+      <table class="data-table">
+        <tr><th>Guidance</th><th>Daily limit</th></tr>
+        <tr><th scope="row">US Dietary Guidelines, adults</th><td>Below 2,300&nbsp;mg</td></tr>
+        <tr><th scope="row">World Health Organization</th><td>Below 2,000&nbsp;mg</td></tr>
+        <tr><th scope="row">Physiological requirement</th><td>Far lower &mdash; a few hundred mg</td></tr>
+      </table>
+      <p>The gap between the requirement and the limit is deliberate: the limits are set where population blood-pressure risk begins to rise, not at the minimum needed to live.<sup class="ref"><a href="sources.html#p3">[1]</a></sup> For scale, 2,300&nbsp;mg of sodium is about one level teaspoon of table salt.</p>''') +
+    sec('''      <h2>Where it actually comes from</h2>
+      <p>Most sodium is not added at the table. The large majority of intake in countries with a Western diet arrives already in packaged and restaurant food, which is why a salt shaker is a small lever and a menu is a large one.</p>
+      <ul>
+        <li>Bread and rolls contribute steadily rather than dramatically &mdash; modest per slice, frequent across a day.</li>
+        <li>Cured and processed meats are dense sources.</li>
+        <li>Sauces, dressings and cheese add up quietly on an otherwise reasonable plate.</li>
+        <li>Soups and prepared sides are often higher than they taste.</li>
+      </ul>
+      <p>Something does not have to taste salty to be high in sodium. Sweetness masks it, which is why bread and some sauces surprise people.</p>''') +
+    sec('''      <h2>What one restaurant meal actually carries</h2>
+      <p>''' + _SODIUM_SUMMARY + '''</p>
+      <p>That is the practical problem in one line: the limit is a day and the meal is an hour. It is not that any single order is unusually bad, it is that a normal-looking lunch can spend most of the budget before dinner exists.</p>
+      <h3>The heaviest orders in our data</h3>
+      ''' + _SODIUM_HIGH + '''
+      <p>Two patterns explain almost every entry above. Combination platters multiply the sauce, and cured or brined proteins bring their own. Neither is obvious from the calorie count &mdash; the highest-sodium order in the table is not the highest-calorie one.</p>''') +
+    sec('''      <h2>Lower-sodium orders that are still real meals</h2>
+      <p>The useful comparison is not against a salad. It is against another order with the same protein that happens to cost far less sodium. Every item below carries at least 20&nbsp;g of protein.</p>
+      ''' + _SODIUM_LOW + '''
+      <p>The gap between the two tables is the whole argument for looking the number up. Same restaurants, same meal slot, several times the sodium.</p>
+      <p>This is why every meal in our data shows sodium beside calories and protein instead of hiding it, and why the finder can rank for lower sodium directly.</p>
+      <p><a class="text-link" href="restaurant-meal-finder.html">Find lower-sodium orders &rarr;</a></p>''') +
+    sec('''      <h2>Who needs to pay closer attention</h2>
+      <p>The population limit is a single line drawn across people whose responses differ. A few groups sit further from the average than the rest:</p>
+      <ul>
+        <li><strong>Anyone with raised blood pressure.</strong> This is the group the limits were set for, and the group where reducing intake changes the number most reliably.</li>
+        <li><strong>People eating most meals out.</strong> Not a medical category, but a practical one: if the kitchen is someone else&rsquo;s, you are working from the menu rather than the recipe.</li>
+        <li><strong>Endurance athletes in the heat.</strong> Sustained heavy sweating loses sodium in amounts that general guidance is not written for. Restricting hard while training hard is the wrong combination.</li>
+        <li><strong>Anyone given a specific figure by a clinician.</strong> That number outranks anything on this page.</li>
+      </ul>
+      <p>For everyone else the honest summary is unglamorous: most people are somewhat over, the cost of being over is gradual rather than acute, and the fix is a handful of ordering habits rather than a diet.</p>''') +
+    sec('''      <h2>Keeping the total sensible</h2>
+      <ul>
+        <li><strong>Budget by day, not by meal.</strong> A high-sodium lunch is fine if dinner is cooked at home.</li>
+        <li><strong>Sauce on the side</strong> removes a large share without changing the meal.</li>
+        <li><strong>Watch the combination, not the entr&eacute;e.</strong> Sides and drinks are where a reasonable order becomes a high one.</li>
+        <li><strong>Potassium matters too.</strong> Vegetables, beans and fruit support the same blood-pressure outcome from the other direction.</li>
+      </ul>
+      <p>If you have been told to restrict sodium for a medical reason, follow the figure your clinician gave you rather than a general population limit.</p>
+      <p class="calc-fineprint">Educational information, not individualized medical advice.</p>'''),
+    [("restaurant-meal-finder.html", "Find lower-sodium orders"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label"), ("healthy-fast-food.html", "Healthy fast food"), ("sodium-label-comparison-tool.html", "Sodium per portion calculator")],
+    faq=[
+        ("Is 2,300 mg of sodium a target or a limit?", "A limit, not a goal. There is no benefit in reaching it, and most guidance treats lower as better for blood pressure across a population."),
+        ("Does drinking water cancel out a salty meal?", "It helps with how you feel and with short-term water retention, but it does not change the sodium you consumed or its blood-pressure effect."),
+        ("Why does bread contain so much sodium?", "Salt controls fermentation and structure in baking, and bread is eaten often enough that a modest amount per slice becomes one of the larger contributors across a day."),
+    ],
+)
+
+add(
+    "how-much-fiber-per-day",
+    "How Much Fiber Per Day, and Where to Get It | GetMacros",
+    "The daily fiber target, why most people miss it, which foods close the gap fastest, and how to raise your intake without the discomfort that stops people.",
+    "general", "Fiber", "How much fiber per day, and where to actually get it",
+    "Fiber is the number almost everyone misses and almost nobody tracks. It is also one of the easiest to fix once you know which foods carry it.",
+    sec('''      <h2>The target</h2>
+      <table class="data-table">
+        <tr><th>Group</th><th>Daily fiber</th></tr>
+        <tr><th scope="row">Adult women</th><td>About 25&nbsp;g</td></tr>
+        <tr><th scope="row">Adult men</th><td>About 38&nbsp;g</td></tr>
+        <tr><th scope="row">General rule</th><td>Roughly 14&nbsp;g per 1,000 calories</td></tr>
+      </table>
+      <p>Average intake in the US and UK sits well below these figures &mdash; most adults get around half. The per-1,000-calorie rule is the more useful one if you eat noticeably more or less than average.<sup class="ref"><a href="sources.html#p3">[1]</a></sup></p>''') +
+    sec('''      <h2>Why it is worth hitting</h2>
+      <p>Higher fiber intake is one of the more consistent findings in nutrition research, associated with lower rates of cardiovascular disease and type 2 diabetes, and with better cholesterol and blood-glucose measures in controlled trials.<sup class="ref"><a href="sources.html#p3">[1]</a></sup></p>
+      <p>For anyone managing their weight there is a nearer-term reason: fiber adds volume and slows digestion, so a high-fiber meal is more filling than a low-fiber meal of the same calories. That is a direct advantage when the target is lower than your appetite.</p>''') +
+    sec('''      <h2>Where it actually comes from</h2>
+      <table class="data-table">
+        <tr><th>Food</th><th>Approximate fiber</th></tr>
+        <tr><th scope="row">Black beans, 1 cup cooked</th><td>15&nbsp;g</td></tr>
+        <tr><th scope="row">Lentils, 1 cup cooked</th><td>15&nbsp;g</td></tr>
+        <tr><th scope="row">Raspberries, 1 cup</th><td>8&nbsp;g</td></tr>
+        <tr><th scope="row">Avocado, half</th><td>5&nbsp;g</td></tr>
+        <tr><th scope="row">Oats, 40&nbsp;g dry</th><td>4&nbsp;g</td></tr>
+        <tr><th scope="row">Wholemeal bread, 1 slice</th><td>2&nbsp;g</td></tr>
+        <tr><th scope="row">Apple with skin</th><td>4&nbsp;g</td></tr>
+      </table>
+      <p>Beans and lentils do more in one serving than most other changes combined. A cup of black beans is more fiber than seven slices of wholemeal bread.</p>
+      <p><a class="text-link" href="high-protein-foods-list.html">High-protein foods, ranked &rarr;</a></p>''') +
+    sec('''      <h2>Soluble and insoluble, and why the distinction matters less than it sounds</h2>
+      <p>Fiber gets split into two categories, and the split is real but less actionable than it is usually presented.</p>
+      <table class="data-table">
+        <tr><th>Type</th><th>What it does</th><th>Mainly found in</th></tr>
+        <tr><th scope="row">Soluble</th><td>Forms a gel, slows digestion, binds bile acids &mdash; the mechanism behind the cholesterol and blood-glucose effects</td><td>Oats, barley, beans, apples, citrus</td></tr>
+        <tr><th scope="row">Insoluble</th><td>Adds bulk and speeds transit &mdash; the mechanism behind regularity</td><td>Wheat bran, whole grains, vegetable skins, nuts</td></tr>
+      </table>
+      <p>Almost every fiber-rich whole food contains both, in a ratio nobody has to manage. Labels report a single total, and the practical instruction that follows from the research is the same either way: eat more plants, from more than one category. Chasing a specific type is a level of precision the food supply does not support.</p>''') +
+    sec('''      <h2>Fiber when you are eating out</h2>
+      <p>Restaurant meals are where fiber quietly disappears: refined bread, little veg, and sides chosen for speed. Bean-based and grain-bowl orders are the reliable exceptions.</p>
+      <p>''' + _FIBER_SUMMARY + '''</p>
+      <h3>The highest-fiber orders in our data</h3>
+      ''' + _FIBER_TABLE + '''
+      <p>The pattern is beans. Every order at the top of that table gets there through black beans, pinto beans or a whole grain &mdash; not through salad, which contributes volume rather than fiber. If a menu has a bowl with beans on it, that is usually the highest-fiber thing on the menu.</p>
+      <p>Where a chain does not publish a fiber figure, we leave it blank rather than treating a missing value as a zero &mdash; a meal with no published number is not a meal with no fiber.</p>
+      <p><a class="text-link" href="restaurant-meal-finder.html">Find higher-fiber orders &rarr;</a></p>''') +
+    sec('''      <h2>Raising it without the discomfort</h2>
+      <ul>
+        <li><strong>Go up gradually.</strong> Adding 20&nbsp;g overnight is the usual reason people give up. Add roughly 5&nbsp;g a week.</li>
+        <li><strong>Drink more water.</strong> Fiber holds water; without it the change can be uncomfortable.</li>
+        <li><strong>Spread it across meals</strong> rather than taking it all at dinner.</li>
+        <li><strong>Prefer food over supplements</strong> where you can. Whole sources bring potassium, magnesium and protein with them.</li>
+      </ul>
+      <p class="calc-fineprint">Educational information, not individualized medical advice. If you have a diagnosed gut condition, follow the guidance you were given &mdash; fiber recommendations differ substantially for IBS and IBD.</p>'''),
+    [("restaurant-meal-finder.html", "Find higher-fiber orders"), ("high-protein-foods-list.html", "High-protein foods list"), ("carbs.html", "Carbohydrates explained"), ("how-to-read-a-nutrition-label.html", "How to read a nutrition label")],
+    faq=[
+        ("Is 30 g of fiber a day too much?", "For most adults it is within the recommended range and closer to the men's target. Discomfort usually comes from increasing intake quickly rather than from the amount itself."),
+        ("Do fiber supplements count?", "They count toward the number and can help close a gap, but they do not bring the potassium, magnesium and protein that beans, lentils and whole grains carry with them."),
+        ("Does fiber count toward carbohydrate?", "On a label, fiber is included in total carbohydrate. It is poorly absorbed, which is why some regions and some trackers subtract it to give a net figure."),
+    ],
+)
 
 def build_hub():
     by_cat = {}
@@ -1668,7 +2138,7 @@ def build_about():
 
 def build_privacy():
     title = "Privacy Policy"
-    meta = "GetMacros.net's privacy policy — what data is and isn't collected, how localStorage is used for quizzes and games, and how third-party ad networks use cookies."
+    meta = "GetMacros.net's privacy policy: what data is and isn't collected, how localStorage is used for quizzes and tools, and how third-party ad networks use cookies."
     url = "https://getmacros.net/privacy.html"
     html = f'''<!doctype html>
 <html lang="en">
@@ -1785,7 +2255,7 @@ def contact_jsonld(url):
 
 def build_contact():
     title = "Contact GetMacros.net"
-    meta = "How to reach GetMacros.net with corrections, content questions, or advertising inquiries."
+    meta = "How to reach GetMacros.net with a factual correction, a question about an article or calculator, an accessibility barrier, or an advertising enquiry."
     url = "https://getmacros.net/contact.html"
     html = f'''<!doctype html>
 <html lang="en">
@@ -2167,7 +2637,7 @@ add(
       <h2>Step 6: Remainder goes to carbs</h2>
       <p>Subtract protein and fat calories from total calories, then divide the remainder by 4 to get carb grams.</p>
       <p><a href="calculators.html" class="btn btn-primary">Skip the math — use the calculator →</a></p>''', bg="var(--color-carbs-bg)", tight=True),
-    [("tdee-vs-bmr.html", "BMR vs. TDEE"), ("calculators.html", "Full macro calculator"), ("how-much-protein-per-day.html", "How much protein per day")]
+    [("what-are-macros.html", "What are macros?"), ("calculators.html", "Full macro calculator"), ("how-many-calories-should-i-eat-a-day.html", "How many calories per day")]
 )
 
 add(

@@ -20,6 +20,8 @@ python3 tools/retitle.py
 python3 tools/apply_visual_system.py
 python3 tools/inject_assets.py
 python3 tools/recover_site_focus.py
+# After the focus pass, so it only ever links pages that survived it.
+python3 tools/link_siblings.py
 # Last, so it sees the final head of every page: rewrite each local CSS and
 # JS link with a hash of that file, so a changed asset always busts caches
 # and an unchanged one keeps its cache entry.

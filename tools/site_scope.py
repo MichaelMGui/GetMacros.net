@@ -71,6 +71,13 @@ GUIDE_GROUPS = OrderedDict({
         "how-much-protein-per-day.html", "how-to-calculate-macros-by-hand.html",
         "macros-for-weight-loss.html", "macros-for-muscle-gain.html",
         "cutting-bulking-maintenance-explained.html", "body-recomposition-explained.html",
+        "how-many-calories-should-i-eat-a-day.html", "what-are-macros.html",
+    ],
+    "Eating out": [
+        "how-to-eat-out-without-wrecking-your-goal.html",
+    ],
+    "Nutrients to watch": [
+        "how-much-sodium-per-day.html", "how-much-fiber-per-day.html",
     ],
     "Protein and food": [
         "high-protein-foods-list.html",
