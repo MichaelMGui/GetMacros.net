@@ -13,6 +13,79 @@ from site_scope import GUIDE_GROUPS, RESTAURANT_PAGES, TOOL_PAGES
 
 ROOT = Path(__file__).resolve().parents[1]
 
+SINGLE_MACRO_SECTION = '''<section id="single-macro-calculators" class="single-macro-studio">
+    <div class="container">
+      <header class="single-macro-head">
+        <div><p class="eyebrow">Quick targets</p><h2>Need one number, not a full plan?</h2></div>
+        <p>Choose the nutrient you want to estimate. These use the same reference ranges as the full calculator, with the method and citations available on the <a href="sources.html">Sources page</a>.</p>
+      </header>
+
+      <div class="single-macro-grid">
+        <article class="single-macro-card macro-protein">
+          <header class="single-card-head"><span class="single-card-number">01</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-protein"/></svg></span><div><p>Based on body weight</p><h3 id="protein-calculator">Protein target</h3></div></header>
+          <p class="single-card-copy">Estimate a daily range for general health, active living, or building and preserving muscle.</p>
+          <form id="protein-calc-form" class="single-macro-form">
+            <div class="units-toggle" aria-label="Weight unit">
+              <button type="button" class="active" data-pc-unit="lb">lb</button>
+              <button type="button" data-pc-unit="kg">kg</button>
+            </div>
+            <div class="field">
+              <label for="protein-weight">Body weight <span id="protein-weight-unit">lb</span></label>
+              <input type="number" id="protein-weight" min="1" step="0.1" value="170" required>
+            </div>
+            <div class="field">
+              <label for="protein-goal">What should the range support?</label>
+              <select id="protein-goal">
+                <option value="sedentary">General health</option>
+                <option value="active" selected>Active lifestyle</option>
+                <option value="muscle">Build or preserve muscle</option>
+              </select>
+            </div>
+            <div id="protein-calc-error" class="error-msg" hidden></div>
+            <button type="submit" class="calc-submit">Get protein target <span aria-hidden="true">&rarr;</span></button>
+          </form>
+          <div class="results empty single-macro-result" id="protein-calc-results">
+            <span class="result-placeholder">Your protein range will appear here.</span>
+          </div>
+        </article>
+
+        <article class="single-macro-card macro-fat">
+          <header class="single-card-head"><span class="single-card-number">02</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-fat"/></svg></span><div><p>Based on daily calories</p><h3 id="fat-calculator">Fat target</h3></div></header>
+          <p class="single-card-copy">Convert 20–35% of your daily calorie target into a practical fat range in grams.</p>
+          <form id="fat-form" class="single-macro-form">
+            <div class="field">
+              <label for="calories">Daily calorie target <span>kcal</span></label>
+              <input type="number" id="calories" name="calories" min="800" max="8000" step="10" value="2200" required>
+            </div>
+            <p class="single-card-note">Not sure yet? <a href="#macro-calculator">Calculate your full daily target first.</a></p>
+            <div id="fat-error" class="error-msg" hidden></div>
+            <button type="submit" class="calc-submit">Get fat target <span aria-hidden="true">&rarr;</span></button>
+          </form>
+          <div class="results empty single-macro-result" id="fat-results">
+            <span class="result-placeholder">Your daily fat range will appear here.</span>
+          </div>
+        </article>
+
+        <article class="single-macro-card macro-carbs">
+          <header class="single-card-head"><span class="single-card-number">03</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-carbs"/></svg></span><div><p>Based on daily calories</p><h3 id="carb-calculator">Carbohydrate target</h3></div></header>
+          <p class="single-card-copy">Convert 45–65% of your daily calorie target into a broad carbohydrate range in grams.</p>
+          <form id="carb-calc-form" class="single-macro-form">
+            <div class="field">
+              <label for="carb-calories">Daily calorie target <span>kcal</span></label>
+              <input type="number" id="carb-calories" min="800" max="8000" step="10" value="2200" required>
+            </div>
+            <p class="single-card-note">For carbs left after protein and fat, use the <a href="#macro-calculator">full macro calculator.</a></p>
+            <div id="carb-calc-error" class="error-msg" hidden></div>
+            <button type="submit" class="calc-submit">Get carb target <span aria-hidden="true">&rarr;</span></button>
+          </form>
+          <div class="results empty single-macro-result" id="carb-calc-results">
+            <span class="result-placeholder">Your daily carb range will appear here.</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>'''
+
 
 def page_meta(path: str) -> tuple[str, str, str]:
     text = (ROOT / path).read_text(encoding="utf-8")
@@ -258,6 +331,8 @@ def patch_existing_hubs() -> None:
         s=re.sub(r'<meta name="twitter:description" content="[^"]*">',f'<meta name="twitter:description" content="{meta}">',s,count=1)
         s=re.sub(r'"name": "Macro Calculator"','"name": "Free Macro Calculator"',s,count=1)
         s=re.sub(r'<section class="calc-hub-hero">.*?</section>','''<section class="calc-hub-hero"><div class="container calc-hero-grid"><div><p class="eyebrow">Free, transparent and built for real meals</p><h1>Free macro calculator for meals you actually eat</h1><p>Estimate daily calories, protein, carbs and fat, understand the assumptions, then use Healthy Order Match to compare restaurant orders for cutting, maintenance or bulking.</p><div class="calc-hero-actions"><a class="btn btn-primary" href="#macro-calculator">Start free calculation</a><a class="btn btn-ghost" href="restaurant-meal-finder.html">Find a meal for my goal</a></div></div><figure class="calc-photo-card"><img src="images/editorial-protein-foods.webp" width="1536" height="1024" alt="Salmon, tofu, eggs, yogurt, chickpeas and grains arranged beside a food scale" fetchpriority="high"><figcaption>Start with an estimate. Finish with a meal decision you can actually use.</figcaption></figure></div></section>''',s,count=1,flags=re.S)
+        s=re.sub(r'<section id="single-macro-calculators".*?</section>',
+                 SINGLE_MACRO_SECTION, s, count=1, flags=re.S)
         s=s.replace("This page now keeps only tools that calculate, compare or transform nutrition numbers. General worksheets and appointment organizers have been removed from this hub.","This focused library keeps only tools that calculate, compare or transform nutrition numbers for macros, food labels, recipes, budgets, hydration and restaurant choices.")
         s=re.sub(r'<meta name="theme-color" content="[^"]+">',
                  '<meta name="theme-color" content="#123f2d">', s, count=1)

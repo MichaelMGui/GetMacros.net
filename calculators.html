@@ -32,7 +32,7 @@
 <script src="js/img-fallback.js?v=d4e0a0201c"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2316153877942502" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/unified-pages.css?v=928382eaf3"><link rel="stylesheet" href="css/calculators-v2.css?v=6563269656"><link rel="stylesheet" href="css/calculator-height-v2.css?v=6aa1574e54"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getmacros.net/"}, {"@type": "ListItem", "position": 2, "name": "Macro Calculator", "item": "https://getmacros.net/calculators.html"}]}</script><meta name="google-adsense-account" content="ca-pub-2316153877942502"><link rel="stylesheet" href="css/readability-v2.css?v=38599f1a9a">
-<link rel="stylesheet" href="css/calculators-polish.css?v=43e73d39e7"><link rel="stylesheet" href="css/atelier-v5.css?v=6e2abbf250"><link rel="stylesheet" href="css/premium-v4.css?v=134c89ca75"><link rel="stylesheet" href="css/calculator-suite.css?v=21de672a59"><link rel="stylesheet" href="css/studio-v6.css?v=27681fd271"><link rel="stylesheet" href="css/liquid.css?v=2a010216cd"><link rel="stylesheet" href="css/contrast-fix.css?v=ee36b85b7c"><link rel="stylesheet" href="css/polish.css?v=118b77d861"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/unified-v7.css?v=b483600546"><link rel="stylesheet" href="css/theme-fix.css?v=a89dda0108"><link rel="stylesheet" href="css/editorial-v8.css?v=086eccb18c"></head>
+<link rel="stylesheet" href="css/calculators-polish.css?v=43e73d39e7"><link rel="stylesheet" href="css/atelier-v5.css?v=6e2abbf250"><link rel="stylesheet" href="css/premium-v4.css?v=134c89ca75"><link rel="stylesheet" href="css/studio-v6.css?v=27681fd271"><link rel="stylesheet" href="css/calculator-suite.css?v=21de672a59"><link rel="stylesheet" href="css/liquid.css?v=2a010216cd"><link rel="stylesheet" href="css/contrast-fix.css?v=ee36b85b7c"><link rel="stylesheet" href="css/polish.css?v=118b77d861"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/unified-v7.css?v=b483600546"><link rel="stylesheet" href="css/theme-fix.css?v=a89dda0108"><link rel="stylesheet" href="css/editorial-v8.css?v=cbca1e7a04"></head>
 <body class="unified-page site-v3 article-page calculators-v2 tools-page">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -553,6 +553,10 @@
 
 
 
+
+
+
+
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header modern-header"><nav class="full-nav" aria-label="Main navigation">
 <a class="modern-brand" href="index.html" aria-label="GetMacros.net home"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a>
@@ -677,73 +681,75 @@
     </div>
   </section>
 
-  <section id="single-macro-calculators" style="background:var(--color-bg)">
+  <section id="single-macro-calculators" class="single-macro-studio">
     <div class="container">
-      <h2><svg class="icon" aria-hidden="true" style="color:var(--color-accent)"><use href="#icon-target"/></svg> Single-macro calculators</h2>
-      <p class="section-intro">Already know your numbers, or just want one macro dialed in? Each of these uses the same reference ranges as the full calculator above — see the <a href="sources.html">Sources page</a> for citations.</p>
+      <header class="single-macro-head">
+        <div><p class="eyebrow">Quick targets</p><h2>Need one number, not a full plan?</h2></div>
+        <p>Choose the nutrient you want to estimate. These use the same reference ranges as the full calculator, with the method and citations available on the <a href="sources.html">Sources page</a>.</p>
+      </header>
 
-      <div class="card-grid" style="align-items:start;">
-        <div class="panel">
-          <span class="icon-badge protein"><svg class="icon" aria-hidden="true"><use href="#icon-protein"/></svg></span>
-          <h3 id="protein-calculator">Protein calculator</h3>
-          <form id="protein-calc-form">
-            <div class="units-toggle">
+      <div class="single-macro-grid">
+        <article class="single-macro-card macro-protein">
+          <header class="single-card-head"><span class="single-card-number">01</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-protein"/></svg></span><div><p>Based on body weight</p><h3 id="protein-calculator">Protein target</h3></div></header>
+          <p class="single-card-copy">Estimate a daily range for general health, active living, or building and preserving muscle.</p>
+          <form id="protein-calc-form" class="single-macro-form">
+            <div class="units-toggle" aria-label="Weight unit">
               <button type="button" class="active" data-pc-unit="lb">lb</button>
               <button type="button" data-pc-unit="kg">kg</button>
             </div>
             <div class="field">
-              <label for="protein-weight">Body weight (<span id="protein-weight-unit">lb</span>)</label>
+              <label for="protein-weight">Body weight <span id="protein-weight-unit">lb</span></label>
               <input type="number" id="protein-weight" min="1" step="0.1" value="170" required>
             </div>
             <div class="field">
-              <label for="protein-goal">Goal</label>
+              <label for="protein-goal">What should the range support?</label>
               <select id="protein-goal">
-                <option value="sedentary">General health (sedentary)</option>
-                <option value="active" selected>Recreationally active</option>
-                <option value="muscle">Building or preserving muscle</option>
+                <option value="sedentary">General health</option>
+                <option value="active" selected>Active lifestyle</option>
+                <option value="muscle">Build or preserve muscle</option>
               </select>
             </div>
             <div id="protein-calc-error" class="error-msg" hidden></div>
-            <button type="submit" class="calc-submit">Calculate</button>
+            <button type="submit" class="calc-submit">Get protein target <span aria-hidden="true">&rarr;</span></button>
           </form>
-          <div class="results empty" id="protein-calc-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
-            Enter your weight to see your protein target.
+          <div class="results empty single-macro-result" id="protein-calc-results">
+            <span class="result-placeholder">Your protein range will appear here.</span>
           </div>
-        </div>
+        </article>
 
-        <div class="panel">
-          <span class="icon-badge fat"><svg class="icon" aria-hidden="true"><use href="#icon-fat"/></svg></span>
-          <h3 id="fat-calculator">Fat calculator</h3>
-          <form id="fat-form">
+        <article class="single-macro-card macro-fat">
+          <header class="single-card-head"><span class="single-card-number">02</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-fat"/></svg></span><div><p>Based on daily calories</p><h3 id="fat-calculator">Fat target</h3></div></header>
+          <p class="single-card-copy">Convert 20–35% of your daily calorie target into a practical fat range in grams.</p>
+          <form id="fat-form" class="single-macro-form">
             <div class="field">
-              <label for="calories">Daily calorie target</label>
+              <label for="calories">Daily calorie target <span>kcal</span></label>
               <input type="number" id="calories" name="calories" min="800" max="8000" step="10" value="2200" required>
             </div>
-            <p class="hint">Don't know your calorie target? Use the full calculator above, or the <a href="calculators.html">BMR vs. TDEE guide</a>.</p>
+            <p class="single-card-note">Not sure yet? <a href="#macro-calculator">Calculate your full daily target first.</a></p>
             <div id="fat-error" class="error-msg" hidden></div>
-            <button type="submit" class="calc-submit">Calculate</button>
+            <button type="submit" class="calc-submit">Get fat target <span aria-hidden="true">&rarr;</span></button>
           </form>
-          <div class="results empty" id="fat-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
-            Enter your daily calories to see your recommended fat intake.
+          <div class="results empty single-macro-result" id="fat-results">
+            <span class="result-placeholder">Your daily fat range will appear here.</span>
           </div>
-        </div>
+        </article>
 
-        <div class="panel">
-          <span class="icon-badge carbs"><svg class="icon" aria-hidden="true"><use href="#icon-carbs"/></svg></span>
-          <h3 id="carb-calculator">Carbohydrate calculator</h3>
-          <form id="carb-calc-form">
+        <article class="single-macro-card macro-carbs">
+          <header class="single-card-head"><span class="single-card-number">03</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-carbs"/></svg></span><div><p>Based on daily calories</p><h3 id="carb-calculator">Carbohydrate target</h3></div></header>
+          <p class="single-card-copy">Convert 45–65% of your daily calorie target into a broad carbohydrate range in grams.</p>
+          <form id="carb-calc-form" class="single-macro-form">
             <div class="field">
-              <label for="carb-calories">Daily calorie target</label>
+              <label for="carb-calories">Daily calorie target <span>kcal</span></label>
               <input type="number" id="carb-calories" min="800" max="8000" step="10" value="2200" required>
             </div>
-            <p class="hint">For a target based on what's left after protein and fat, use the full calculator above.</p>
+            <p class="single-card-note">For carbs left after protein and fat, use the <a href="#macro-calculator">full macro calculator.</a></p>
             <div id="carb-calc-error" class="error-msg" hidden></div>
-            <button type="submit" class="calc-submit">Calculate</button>
+            <button type="submit" class="calc-submit">Get carb target <span aria-hidden="true">&rarr;</span></button>
           </form>
-          <div class="results empty" id="carb-calc-results" style="margin-top:1rem;min-height:auto;padding:1.25rem;">
-            Enter your daily calories to see your recommended carb intake.
+          <div class="results empty single-macro-result" id="carb-calc-results">
+            <span class="result-placeholder">Your daily carb range will appear here.</span>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
