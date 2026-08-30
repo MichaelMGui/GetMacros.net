@@ -56,20 +56,20 @@
     return ra - rb;
   });
   var STEPS = [
-    { key: "goal", title: "What are you working toward?", multiple: true,
-      hint: "Choose every goal that matters today. We rank for the combination, so high protein + bulking works together.",
+    { key: "goal", title: "What do you want from this meal?", multiple: true,
+      hint: "Pick as many as apply. We rank for the combination, so high protein and bulking work together.",
       options: [["energy", "Bulking", T.energy + "+ calories", "trendUp"], ["light", "Cutting", "250–" + T.light + " calories with at least 15 g protein", "trendDown"], ["protein", "High protein", T.protein + " g protein or more", "protein"], ["fibre", "High fiber", T.fibre + " g fiber or more", "leaf"], ["lowsodium", "Lower sodium", T.sodium + " mg or fewer on substantial meals", "drop"], ["balanced", "Balanced", "A practical middle-ground meal", "balance"]], none: ["No specific goal", "Show strong all-around starting points", "spark"] },
-    { key: "size", title: "How much food do you want?", single: true,
-      hint: "This adjusts the ranking. It never hides an otherwise strong match.",
+    { key: "size", title: "How big should the meal be?", single: true,
+      hint: "This nudges the ranking. It never hides an otherwise strong match.",
       options: [["small", "Small", "Snack or light appetite", "portionSmall"], ["medium", "Medium", "A regular meal", "portionMedium"], ["large", "Large", "Hungry or higher-calorie day", "portionLarge"]], none: ["Any portion size", "Do not use portion size as a ranking signal", "layers"] },
-    { key: "diet", title: "Any dietary needs?", multiple: true,
-      hint: "These are strict filters. Select more than one only when every choice must apply.",
+    { key: "diet", title: "Anything you need to avoid?", multiple: true,
+      hint: "These are strict filters. Choose more than one only when every one must apply.",
       options: [["vegetarian", "Vegetarian", "No meat or fish in the standard build", "leaf"], ["plant", "Plant-based", "No animal products in the standard build", "sprout"], ["gluten", "Gluten-aware", "No gluten ingredient listed in the standard build", "grain"]], none: ["No dietary filter", "Include every standard menu build", "all"] },
-    { key: "meal", title: "When are you ordering?", single: true,
+    { key: "meal", title: "Breakfast, or later in the day?", single: true,
       hint: "Breakfast menus are separated because availability changes by time of day.",
       options: [["main", "Lunch or dinner", "Use the main menu", "sun"], ["breakfast", "Breakfast", "Use breakfast items only", "sunrise"]], none: ["Any time of day", "Search breakfast and main menus", "clock"] },
-    { key: "chain", title: "Where can you eat?", multiple: true, chainStep: true,
-      hint: "Pick one or several restaurants, or search all " + chains.length + " chains.",
+    { key: "chain", title: "Which restaurants can you get to?", multiple: true, chainStep: true,
+      hint: "Choose the ones nearby, or search all " + chains.length + " chains.",
       options: chains.map(function (c) { return [c, c, "", "chain"]; }), none: ["Search every restaurant", "Compare all " + chains.length + " restaurants", "map"] }
   ];
   var state = { goal: [], size: [], diet: [], meal: [], chain: [] };

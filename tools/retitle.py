@@ -153,9 +153,12 @@ TITLES = {
         None),
 
     # --- H1 case, so the site does not mix Title Case and sentence case ---
-    "protein": (None, "Protein: the body's building block"),
-    "fats": (None, "Fat: hormones, vitamins and cell structure"),
-    "carbs": (None, "Carbohydrates: your body's preferred fuel"),
+    "protein": ("What Does Protein Do? Functions and Deficiency | GetMacros",
+                "What does protein do in your body?"),
+    "fats": ("What Does Fat Do? Hormones, Vitamins and Intake | GetMacros",
+             "What does fat do in your body?"),
+    "carbs": ("What Do Carbs Do? Energy, Glycogen and Fiber | GetMacros",
+              "What do carbs do in your body?"),
     "when-do-you-need-electrolytes": (None, "When do you actually need electrolytes?"),
     "protein-value-calculator": (None, "Protein cost per gram calculator"),
     "recipe-macro-scaler": (None, "Recipe calories and macros calculator"),

@@ -127,7 +127,14 @@ def canonical_for(path: str) -> str:
 def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
-    html_paths = sorted(p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*.html"))
+    # design/ holds the design-canvas working files and the seeded canvas page.
+    # They are .html but they are not site pages -- they carry no description,
+    # canonical or nav -- so the site contract does not apply to them.
+    html_paths = sorted(
+        p.relative_to(ROOT).as_posix()
+        for p in ROOT.rglob("*.html")
+        if not p.relative_to(ROOT).as_posix().startswith("design/")
+    )
     pages: dict[str, tuple[str, PageParser]] = {}
     titles: dict[str, list[str]] = {}
     descriptions_seen: dict[str, list[str]] = {}

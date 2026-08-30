@@ -45,7 +45,10 @@ def main():
             return match.group(0)
         return f'{match.group("attr")}="{match.group("prefix")}{match.group("path")}?v={version}"'
 
-    for page in sorted(glob.glob("*.html")) + sorted(glob.glob("*/*.html")):
+    pages = sorted(glob.glob("*.html")) + [
+        p for p in sorted(glob.glob("*/*.html")) if not p.startswith("design/")
+    ]
+    for page in pages:
         text = open(page, encoding="utf-8").read()
         out = LINK.sub(stamp, text)
         if out != text:

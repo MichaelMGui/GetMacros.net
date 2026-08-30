@@ -94,18 +94,54 @@ def add_breadcrumb_schema(text: str, name: str) -> tuple[str, bool]:
     return text.replace("</head>", tag + "</head>", 1), True
 
 
+ROBOTS = ('<meta name="robots" content="index, follow, max-snippet:-1, '
+          'max-image-preview:large, max-video-preview:-1">')
+
+
+def add_robots(text: str) -> tuple[str, bool]:
+    """Opt every indexable page into full snippets and large image previews.
+
+    With no robots meta at all, Google applies its conservative defaults: a
+    truncated snippet and, in most regions, a thumbnail-sized image or none.
+    The directive below is the documented way to ask for the full text snippet
+    and the large image preview that rich results and Discover use. It is the
+    single highest-leverage meta tag the site was missing, and it was missing
+    from 67 of 68 pages.
+
+    404.html already carries `noindex, follow` and must keep it -- an error
+    page in the index is worse than no page at all.
+    """
+    if 'name="robots"' in text:
+        return text, False
+    return text.replace("</head>", ROBOTS + "</head>", 1), True
+
+
+AUTHOR = '<meta name="author" content="The GetMacros.net editorial team">'
+
+
+def add_author(text: str) -> tuple[str, bool]:
+    if 'name="author"' in text:
+        return text, False
+    return text.replace("</head>", AUTHOR + "</head>", 1), True
+
+
 def main() -> int:
-    marked = crumbed = 0
+    marked = crumbed = robotsed = authored = 0
     for path in sorted(ROOT.glob("*.html")):
         text = original = path.read_text(encoding="utf-8")
         text, did_mark = mark_current(text, path.name)
         text, did_crumb = add_breadcrumb_schema(text, path.name)
+        text, did_robots = add_robots(text)
+        text, did_author = add_author(text)
         marked += did_mark
         crumbed += did_crumb
+        robotsed += did_robots
+        authored += did_author
         if text != original:
             path.write_text(text, encoding="utf-8")
     print(f"navigation finished: current page marked on {marked}, "
-          f"breadcrumb schema added on {crumbed}")
+          f"breadcrumb schema added on {crumbed}, robots directive on {robotsed}, "
+          f"author on {authored}")
     return 0
 
 

@@ -112,7 +112,9 @@ def main() -> int:
     if "quiz-back" not in quiz_js or "quiz-continue" not in quiz_js or "'<span></span>'" in quiz_js:
         errors.append("js/meal-quiz.js: intentional Back/Continue control contract is missing")
     pages = sorted(ROOT / name for name in KEEP_ROOT_HTML if (ROOT / name).exists())
-    pages += sorted(ROOT.glob("*/*.html"))
+    # Not design/: those are design-canvas working files, not site pages, and
+    # the shared-asset contract does not apply to them.
+    pages += sorted(p for p in ROOT.glob("*/*.html") if p.parent.name != "design")
     seen: set[Path] = set()
     pages = [p for p in pages if not (p in seen or seen.add(p))]
 
