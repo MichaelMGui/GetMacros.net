@@ -2452,7 +2452,6 @@ def build_404():
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1b6b4a">
-<link rel="preconnect" href="https://pagead2.googlesyndication.com">
 <meta name="robots" content="noindex, follow">
 <title>{esc_html(title)}</title>
 <meta name="description" content="{esc_html(meta)}">
@@ -2462,7 +2461,6 @@ def build_404():
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
 <link rel="stylesheet" href="css/site-v3.css?v={ASSET_VERSION}">
 <script src="js/img-fallback.js?v={ASSET_VERSION}"></script>
-{ADSENSE_LOADER}
 </head>
 <body class="site-v3 article-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -2490,7 +2488,7 @@ def build_404():
       </div>
     </div>
   </section>
-{AD_SLOT}</main>
+</main>
 
 {FOOTER}
 

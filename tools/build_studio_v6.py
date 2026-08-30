@@ -150,7 +150,7 @@ HOME_MAIN = r'''<main id="main-content">
 
 <section class="gm6-tools gm6-tools-joined">
   <div class="container">
-    <p class="gm6-tools-lead">Five free tools. Each answers one question, with no account and nothing hidden behind a wall.</p>
+    <p class="gm6-tools-lead">Nine free tools. Each answers one question, with no account and nothing hidden behind a wall. Five of them are here; <a href="calculators.html">the rest are one click away</a>.</p>
     <div class="gm6-tool-bento">
       <a class="gm6-tool studio-reveal" href="calculators.html"><span class="gm6-tool-num">01 · Daily targets</span><div><h3>Free Macro Calculator</h3><p>Estimate daily calories and macros, with the assumptions kept visible.</p></div><span class="gm6-tool-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg></span></a>
       <a class="gm6-tool studio-reveal" href="nutrition-label-comparison-tool.html"><span class="gm6-tool-num">02 · Compare</span><div><h3>Nutrition labels, side by side</h3><p>Put two products on equal footing.</p></div></a>

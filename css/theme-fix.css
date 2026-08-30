@@ -1494,12 +1494,12 @@ body.site-v3 :is(.u-reveal, .calc-reveal, .studio-reveal) {
   transition-timing-function: var(--gm-ease) !important;
 }
 
-/* Ambient motion in the hero stays slow and low-contrast: it is background
-   texture, and anything faster competes with the text in front of it. */
-body.site-v3 :is(.liquid-surface::before, .liquid-surface::after) {
-  animation-duration: 26s !important;
-  animation-timing-function: ease-in-out !important;
-}
+/* The hero's ambient blobs are deliberately left alone. A rule here tried to
+   normalise them to one 26s duration, which was wrong twice: pseudo-elements
+   are not valid inside :is(), so it never applied, and had it applied it would
+   have locked 21s and 27s into lockstep. Two blobs drifting on coprime
+   durations never repeat the same frame; two on the same duration pulse
+   together, which is the one thing background texture must not do. */
 
 @media (prefers-reduced-motion: reduce) {
   body.site-v3 :is(.search-hit, .search-start-tile, .gm6-tool, .guide-card,
