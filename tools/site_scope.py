@@ -82,6 +82,13 @@ GUIDE_GROUPS = OrderedDict({
     "Protein and food": [
         "high-protein-foods-list.html",
     ],
+    "Training and everyday eating": [
+        "what-to-eat-before-a-workout.html",
+        "what-to-eat-after-a-workout.html",
+        "why-did-i-gain-weight-overnight.html",
+        "how-to-hit-protein-goal-on-budget.html",
+        "calories-on-rest-days.html",
+    ],
     "Labels and recipes": [
         "serving-size-vs-portion-size.html", "how-to-read-a-nutrition-label.html",
         "how-to-calculate-recipe-nutrition.html",

@@ -2,7 +2,7 @@
 
 ## Outcome
 
-GetMacros now has one explicit product purpose: help people find fast-food meals that fit calories, protein and practical goals, then provide the tools and focused education needed to understand those numbers. The indexable footprint was reduced from 448 pages to 62; 397 HTML URLs were removed rather than redirected to unrelated destinations.
+GetMacros now has one explicit product purpose: help people find fast-food meals that fit calories, protein and practical goals, then provide the tools and focused education needed to understand those numbers. The indexable footprint was reduced from 448 pages to 67; 397 HTML URLs were removed rather than redirected to unrelated destinations.
 
 ## What was wrong
 
