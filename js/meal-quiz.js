@@ -156,6 +156,29 @@
     }).join("");
     return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + noPreferenceOption + choices + '</div>';
   }
+  // The card used to be rebuilt with innerHTML on every tap in the goal step,
+  // purely so the cutting/bulking warning could appear. Rebuilding replays the
+  // .quiz-card entrance animation -- a 0.62s fade and slide of the whole card
+  // -- so picking an option looked like the page reloading, and it also threw
+  // focus back to the heading on every tap. Both of those are fixed by
+  // updating the one paragraph that actually changes.
+  function syncConflict() {
+    var card = root.querySelector(".quiz-card");
+    if (!card) return;
+    var s = STEPS[step];
+    var conflict = s.key === "goal"
+      && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
+    var warn = card.querySelector(".quiz-warn");
+    if (conflict && !warn) {
+      warn = document.createElement("p");
+      warn.className = "quiz-warn";
+      warn.textContent = "Cutting and bulking point in opposite calorie directions."
+        + " Keep both if you want; results will clearly show the trade-off.";
+      card.insertBefore(warn, card.querySelector(".quiz-nav"));
+    } else if (!conflict && warn) {
+      warn.parentNode.removeChild(warn);
+    }
+  }
   function renderStep() {
     var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
     root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + ' Skip a question and we treat it as no preference.</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost quiz-back" data-go="-1">Back</button>' : '') + '<button type="button" class="btn btn-primary quiz-continue" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
@@ -189,9 +212,14 @@
     var required = root.querySelector(".quiz-required"); if (required) required.hidden = true;
     if (el.dataset.incomplete) { includeIncomplete = el.checked; renderResults(); return; }
     if (el.dataset.any) {
-      state[el.dataset.any] = [];
-      noPreference[el.dataset.any] = el.checked;
-      renderStep();
+      var anyKey = el.dataset.any;
+      state[anyKey] = [];
+      noPreference[anyKey] = el.checked;
+      // Uncheck the real choices directly. Re-rendering the card to achieve
+      // this was the other source of the reload flash.
+      var inputs = root.querySelectorAll('[data-facet="' + anyKey + '"]');
+      for (var i = 0; i < inputs.length; i++) inputs[i].checked = false;
+      syncConflict();
       return;
     }
     if (!el.dataset.facet) return;
@@ -200,7 +228,7 @@
     if (el.type === "radio") state[key] = el.checked ? [el.value] : [];
     else { var i = state[key].indexOf(el.value); if (el.checked && i === -1) state[key].push(el.value); if (!el.checked && i !== -1) state[key].splice(i, 1); }
     var any = root.querySelector('[data-any="' + key + '"]'); if (any) any.checked = false;
-    if (key === "goal") renderStep();
+    if (key === "goal") syncConflict();
   });
   root.addEventListener("click", function (e) {
     var t = e.target.closest("[data-go],[data-restart],[data-more],[data-save],[data-share]"); if (!t) return;
