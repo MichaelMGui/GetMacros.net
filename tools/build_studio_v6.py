@@ -8,39 +8,38 @@ VERSION = "20260828c"
 LIBRARY_CONTROLS = '''<section class="gm6-library-controls"><div class="container gm6-library-search"><label for="article-library-search">Find a useful guide<input id="article-library-search" type="search" placeholder="Try protein, weight loss, labels or meal prep" autocomplete="off"></label><p id="library-search-status" aria-live="polite">Showing a curated selection from each topic.</p></div></section>'''
 
 HOME_MAIN = r'''<main id="main-content">
-<section class="gm6-hero liquid-surface" data-spotlight>
-  <div class="container gm6-hero-grid">
-    <div class="gm6-hero-copy">
-      <p class="eyebrow">Free meal finder &middot; 15 chains, 83 meals</p>
-      <h1 data-reveal-title>Find healthy fast food that fits your goal.</h1>
-      <p class="gm6-hero-lede">Every meal ranked on the four numbers that decide it&mdash;calories, protein, fiber and sodium&mdash;taken from each chain&rsquo;s own published data.</p>
-      <ol class="gm6-hero-steps" aria-label="How the meal finder works">
-        <li><b>1</b><span>Pick your goal</span></li>
-        <li><b>2</b><span>Choose your restaurants</span></li>
-        <li><b>3</b><span>Get meals ranked for you</span></li>
-      </ol>
-      <div class="gm6-hero-actions">
-        <a class="btn btn-primary" href="restaurant-meal-finder.html">Find my meal <span class="gm6-arrow" aria-hidden="true">→</span></a>
-        <a class="btn btn-outline" href="calculators.html">Calculate my macros</a>
+<section class="home-intro" data-spotlight>
+  <div class="container home-intro-grid">
+    <div class="home-intro-copy">
+      <p class="home-kicker"><span>GetMacros / eat out</span><b>83 tracked menu options</b></p>
+      <h1>Healthy fast food, <em>picked for your goal.</em></h1>
+      <p class="home-intro-lede">Tell us what you need from the meal. We compare calories, protein, fiber and sodium across 15 chains, then give you a shortlist you can actually order.</p>
+      <div class="home-intro-actions">
+        <a class="btn home-primary" href="restaurant-meal-finder.html">Build my shortlist <span aria-hidden="true">↗</span></a>
+        <a class="home-text-link" href="calculators.html">Know your macros first <span aria-hidden="true">→</span></a>
       </div>
-      <div class="gm6-proof" aria-label="GetMacros database facts">
-        <span><strong>4 numbers</strong>calories, protein, fiber and sodium, always together</span>
-        <span><strong>0 accounts</strong>nothing to sign up for</span>
-        <span><strong>Official data</strong>every figure traced to the chain</span>
-      </div>
+      <ul class="home-signals" aria-label="How GetMacros helps">
+        <li><span>01</span><b>Choose more than one goal</b></li>
+        <li><span>02</span><b>See the nutrition tradeoffs</b></li>
+        <li><span>03</span><b>No account or app required</b></li>
+      </ul>
     </div>
-    <aside class="gm6-decision-panel" data-spotlight aria-label="Example GetMacros meal match">
-      <div class="gm6-decision-top"><span class="gm6-live">Healthy Order Match</span><span>Chick-fil-A</span></div>
-      <p class="gm6-decision-goal">High protein + bulking</p>
-      <h2>30-count grilled nuggets, waffle fries &amp; fruit</h2>
-      <p class="gm6-decision-meta">A serious higher-calorie order—not a snack pretending to be a meal.</p>
-      <div class="gm6-macro-score">
-        <span><b>1,050</b>calories</span><span><b>104g</b>protein</span><span><b>10g</b>fiber</span>
-      </div>
-      <div class="gm6-bars" aria-label="How the example matches its goal">
-        <div class="gm6-bar"><span>Protein</span><i style="--value:92%;--tone:var(--gm6-lime)"></i><b>104g</b></div>
-        <div class="gm6-bar"><span>Energy</span><i style="--value:86%;--tone:var(--gm6-apricot)"></i><b>1,050</b></div>
-        <div class="gm6-bar"><span>Fiber</span><i style="--value:54%;--tone:var(--gm6-sky)"></i><b>10g</b></div>
+    <aside class="order-console" aria-label="Example GetMacros meal match" data-console>
+      <div class="order-console-rail" aria-hidden="true"><b>GM</b><span></span><small>01 / 03</small></div>
+      <div class="order-console-body">
+        <header class="order-console-head"><span><i></i> Match ready</span><b>High protein + bulk</b></header>
+        <div class="order-console-ticket">
+          <p>Best fit / Chick-fil-A</p>
+          <h2>Grilled nuggets, waffle fries &amp; fruit</h2>
+          <div class="order-console-macros">
+            <span><small>Calories</small><strong>1,050</strong></span>
+            <span><small>Protein</small><strong>104<em>g</em></strong></span>
+            <span><small>Fiber</small><strong>10<em>g</em></strong></span>
+            <span><small>Sodium</small><strong>1,950<em>mg</em></strong></span>
+          </div>
+        </div>
+        <div class="order-console-reason"><span aria-hidden="true">✓</span><p><b>Why this fits</b>High energy and exceptional protein for a serious bulking meal. Sodium stays visible, not hidden.</p></div>
+        <div class="order-console-foot"><span>83 options checked</span><a href="restaurant-meal-finder.html">See your match <span aria-hidden="true">→</span></a></div>
       </div>
     </aside>
   </div>

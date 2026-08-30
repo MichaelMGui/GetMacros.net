@@ -24,6 +24,9 @@ SHEETS = [
     # After unified-v7 on purpose: it sets the failing colours with
     # !important, so a repair earlier in the cascade cannot win.
     "css/theme-fix.css",
+    # The final editorial composition layer. It replaces the repeated green
+    # billboard on product and secondary-page openings after all legacy fixes.
+    "css/editorial-v8.css",
 ]
 SCRIPTS = ["js/unified-v7.js"]
 ASSET_VERSION = "20260828g"

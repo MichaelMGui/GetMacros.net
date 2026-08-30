@@ -28,6 +28,38 @@ DATA = os.path.join(ROOT, "js", "meal-data.js")
 START = "<!--MEALS:START-->"
 END = "<!--MEALS:END-->"
 
+HERO = r'''<section class="match-intro" data-spotlight>
+  <div class="container match-intro-grid">
+    <div class="match-intro-copy">
+      <p class="match-kicker"><span>Healthy Order Match</span><b>Five short questions</b></p>
+      <h1>Find a fast-food order that <em>fits today.</em></h1>
+      <p>Choose your goal, appetite, dietary needs and the restaurants nearby. We rank 83 real menu options and show why each result earned its place.</p>
+      <div class="match-intro-actions">
+        <a class="btn match-primary" href="#meal-quiz">Start matching <span aria-hidden="true">↘</span></a>
+        <a class="match-text-link" href="#how-it-works">I need macro targets first <span aria-hidden="true">→</span></a>
+      </div>
+      <dl class="match-facts">
+        <div><dt>83</dt><dd>menu options</dd></div>
+        <div><dt>15</dt><dd>restaurant chains</dd></div>
+        <div><dt>0</dt><dd>accounts needed</dd></div>
+      </dl>
+    </div>
+    <aside class="match-question-preview" aria-label="Preview of the first matching question">
+      <div class="match-preview-head"><span>Question 01</span><b>1 / 5</b></div>
+      <div class="match-preview-progress" aria-hidden="true"><i></i></div>
+      <p>Choose one or combine a few</p>
+      <h2>What does this meal need to do?</h2>
+      <div class="match-preview-choices">
+        <span class="is-on"><i aria-hidden="true">✓</i><b>High protein</b><small>25 g or more</small></span>
+        <span><i aria-hidden="true">+</i><b>Cutting</b><small>Substantial, under 400 cal</small></span>
+        <span class="is-on"><i aria-hidden="true">✓</i><b>Bulking</b><small>600+ calories</small></span>
+        <span><i aria-hidden="true">+</i><b>Higher fiber</b><small>5 g or more</small></span>
+      </div>
+      <div class="match-preview-foot"><span><b>12</b> possible matches</span><strong>Next: appetite <span aria-hidden="true">→</span></strong></div>
+    </aside>
+  </div>
+</section>'''
+
 # Every threshold the site states in words. Change them here and the tags, the
 # quiz labels generated from them, and the lists below all move together.
 PROTEIN_G = 25
@@ -220,6 +252,15 @@ def main():
     # half-rewritten, with the old tags already stripped and the new ones never
     # added.
     c = open(PAGE, encoding="utf-8").read()
+    c, hero_count = re.subn(
+        r'<section class="(?:order-match-hero|match-intro)[^>]*>.*?</section>(?=\s*<section class="quiz-stage)',
+        HERO,
+        c,
+        count=1,
+        flags=re.S,
+    )
+    if hero_count != 1:
+        raise RuntimeError("could not replace the meal finder hero")
     complete_count = sum(1 for m in meals if all(m.get(k) is not None for k in ("cal", "p", "f", "na")))
     c = re.sub(r"css/meal-finder-v2\.css\?v=[^\"']+", "css/meal-finder-v2.css?v=20260823c", c)
     c = c.replace('"name": "What sounds right for you today?"', '"name": "Healthy Order Match"')

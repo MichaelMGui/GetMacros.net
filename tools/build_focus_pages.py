@@ -296,7 +296,6 @@ def patch_existing_hubs() -> None:
     if finder.exists():
         s=finder.read_text(encoding="utf-8")
         s=re.sub(r"<title>.*?</title>","<title>Healthy Fast-Food Quiz: Healthy Order Match | GetMacros</title>",s,count=1,flags=re.S)
-        s=re.sub(r"<h1[^>]*>.*?</h1>","<h1>Healthy Order Match</h1>",s,count=1,flags=re.S)
         finder.write_text(s,encoding="utf-8")
 
 

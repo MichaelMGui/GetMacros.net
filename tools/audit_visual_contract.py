@@ -17,11 +17,13 @@ REQUIRED_ASSETS = (
     "css/contrast-fix.css",
     "css/polish.css",
     "css/unified-v7.css",
-    # theme-fix.css must come last. It repairs colours unified-v7.css sets with
-    # !important, so loading it any earlier makes every rule in it a no-op --
+    # theme-fix.css must follow unified-v7. It repairs colours unified-v7.css
+    # sets with !important, so loading it any earlier makes those rules no-op --
     # which is exactly what happened when the recovery pass re-appended
-    # unified-v7 on its own and left theme-fix in front of it.
+    # unified-v7 on its own and left theme-fix in front of it. Editorial v8 is
+    # deliberately last because it owns the final page-opening compositions.
     "css/theme-fix.css",
+    "css/editorial-v8.css",
     "js/unified-v7.js",
 )
 FORBIDDEN_INTERACTION_ASSETS = (
@@ -142,7 +144,7 @@ def main() -> int:
         for asset in FORBIDDEN_INTERACTION_ASSETS:
             if Path(asset).name in text:
                 errors.append(f"{rel}: conflicting legacy interaction asset remains: {asset}")
-        cascade_assets = REQUIRED_ASSETS[:7]
+        cascade_assets = REQUIRED_ASSETS[:8]
         positions = []
         for asset in cascade_assets:
             match = re.search(r"(?<![A-Za-z0-9_-])" + re.escape(Path(asset).name), text)
@@ -179,7 +181,7 @@ def main() -> int:
     # gm6-rail belonged to the restaurant explorer, which was a third route to
     # pages the nav and the finder results already reach, sitting directly under
     # two sections that send you to them.
-    for required in ("gm6-tool-bento", "gm6-finder-shell", "gm6-macro-score"):
+    for required in ("gm6-tool-bento", "gm6-finder-shell", "order-console-macros"):
         if required not in home:
             errors.append(f"index.html: premium homepage component is missing: {required}")
     if "gm6-goal-story" in home:
