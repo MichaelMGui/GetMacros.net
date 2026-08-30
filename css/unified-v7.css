@@ -961,7 +961,7 @@ html[data-theme="light"] body.site-v3 main > section:nth-of-type(even):not([clas
 html[data-theme="light"] body.site-v3 a { color: #176c48; }
 html[data-theme="light"] body.site-v3 .eyebrow { color: #176c48 !important; }
 html[data-theme="light"] body.site-v3 main > section[class*="hero"] .eyebrow,
-html[data-theme="light"] body.site-v3 .page-hero .eyebrow { color: #a8f0bd !important; }
+html[data-theme="light"] body.site-v3 .page-hero .eyebrow { color: var(--d-muted-2, #68776f) !important; }
 html[data-theme="light"] body.site-v3 :is(.btn-outline,.btn-ghost,button.btn-ghost,button[type="reset"]) {
   color: var(--u-ink) !important;
   background: rgba(17,64,41,.055) !important;

@@ -36,6 +36,11 @@ html[data-theme="light"] {
   --d-r:    14px;
   --d-r-lg: 18px;
   --d-shadow: 0 1px 2px rgba(13, 27, 20, .04);
+  --d-fill:    #0d1b14;   /* a dark panel or chip -- stays dark in both themes */
+  --d-fill-in: #ffffff;
+  --d-btn:     #0d1b14;   /* primary button */
+  --d-btn-in:  #ffffff;
+  --d-lime:    #dcf0e4;   /* light fill; dark text sits on it */
 }
 
 html[data-theme="dark"] {
@@ -53,6 +58,11 @@ html[data-theme="dark"] {
   --d-accent-in: #0c1210;
   --d-tint:      #16241d;
   --d-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  --d-fill:    #1f2a25;
+  --d-fill-in: #f2f6f3;
+  --d-btn:     #57c98d;
+  --d-btn-in:  #0c1210;
+  --d-lime:    #57c98d;
 }
 
 /* ---- Every existing token system now resolves to the D palette ---------- */
@@ -65,35 +75,40 @@ body.tools-page, body.calculator-suite, body.home-studio, body.order-match-page 
   --u-ink: var(--d-ink);          --u-muted: var(--d-muted);
   --u-muted-2: var(--d-muted-2);
   --u-line: var(--d-line);        --u-line-strong: var(--d-line-2);
+  /* Three families, not one colour. The old system used "lime" as a LIGHT fill
+     that carries dark text, and "forest" as a DARK fill that carries light
+     text; mint and aqua were mostly text accents. Collapsing all of them onto
+     one mid-green broke both fill relationships at once -- dark labels landed
+     on a dark green at 2.6-3.3:1. Each family keeps its role. */
   --u-mint: var(--d-accent);      --u-aqua: var(--d-accent);
-  --u-lime: var(--d-accent);
+  --u-lime: var(--d-lime);
   --u-shadow-sm: var(--d-shadow); --u-shadow: var(--d-shadow);
   --u-shadow-lg: var(--d-shadow);
   --u-radius-sm: var(--d-r-sm);   --u-radius: var(--d-r);
   --u-radius-lg: var(--d-r-lg);
 
   --gm6-ink: var(--d-ink);        --gm6-line: var(--d-line);
-  --gm6-forest: var(--d-accent);  --gm6-forest-deep: var(--d-ink);
-  --gm6-lime: var(--d-accent);    --gm6-paper: var(--d-bg);
+  --gm6-forest: var(--d-fill);    --gm6-forest-deep: var(--d-fill);
+  --gm6-lime: var(--d-lime);      --gm6-paper: var(--d-bg);
   --gm6-shadow-soft: var(--d-shadow);
   --gm6-radius-lg: var(--d-r);    --gm6-radius-xl: var(--d-r-lg);
 
   --v3-ink: var(--d-ink);         --v3-muted: var(--d-muted);
   --v3-paper: var(--d-bg);        --v3-card: var(--d-surface);
-  --v3-line: var(--d-line);       --v3-forest: var(--d-accent);
-  --v3-lime: var(--d-accent);     --v3-mint: var(--d-tint);
+  --v3-line: var(--d-line);       --v3-forest: var(--d-fill);
+  --v3-lime: var(--d-lime);       --v3-mint: var(--d-tint);
 
   --v8-ink: var(--d-ink);         --v8-ink-soft: var(--d-muted);
   --v8-paper: var(--d-bg);        --v8-paper-warm: var(--d-bg-soft);
-  --v8-line: var(--d-line);       --v8-lime: var(--d-accent);
+  --v8-line: var(--d-line);       --v8-lime: var(--d-lime);
   --v8-coral: var(--d-accent);    --v8-aqua: var(--d-accent);
   --v8-muted: var(--d-muted);     --v8-solid: var(--d-ink);
   --v8-shadow: var(--d-shadow);
 
-  --gm-forest: var(--d-accent);   --gm-forest-dark: var(--d-ink);
+  --gm-forest: var(--d-fill);     --gm-forest-dark: var(--d-fill);
   --gm-shadow: var(--d-shadow);
-  --premium-forest: var(--d-accent);
-  --premium-forest-deep: var(--d-ink);
+  --premium-forest: var(--d-fill);
+  --premium-forest-deep: var(--d-fill);
 }
 
 /* ---- Page ground -------------------------------------------------------- */
@@ -171,10 +186,12 @@ body.site-v3 :is(a, button).btn {
   transition: background-color .16s ease, border-color .16s ease, color .16s ease !important;
 }
 body.site-v3 :is(a, button).btn:is(.btn-primary, .home-primary, .match-primary, .quiz-continue) {
-  background: var(--d-ink) !important;
-  border: 1px solid var(--d-ink) !important;
-  color: var(--d-bg) !important;
+  background: var(--d-btn) !important;
+  border: 1px solid var(--d-btn) !important;
+  color: var(--d-btn-in) !important;
 }
+body.site-v3 :is(a, button).btn:is(.btn-primary, .home-primary, .match-primary,
+  .quiz-continue) :is(span, b, strong, small) { color: var(--d-btn-in) !important; }
 body.site-v3 :is(a, button).btn:is(.btn-outline, .btn-ghost, .quiz-back) {
   background: transparent !important;
   border: 1px solid var(--d-line-2) !important;
@@ -198,13 +215,22 @@ body.site-v3 .site-header, body.site-v3 .modern-header {
   border-bottom: 1px solid var(--d-line) !important;
   box-shadow: none !important;
 }
+/* The footer stays dark in both themes. Its base is a hard-coded #0f241b with
+   white text and a dozen child rules written for that; lightening the ground
+   alone left light text on a light footer across all 67 pages. A dark footer
+   closing a white page is also the right shape for this direction -- it ends
+   the page instead of dissolving into it. */
 body.site-v3 .modern-footer {
-  background: var(--d-bg-soft) !important;
-  color: var(--d-ink) !important;
-  border-top: 1px solid var(--d-line);
+  background: #0d1b14 !important;
+  color: #ffffff !important;
+  border-top: 0 !important;
 }
-body.site-v3 .modern-footer :is(p, a, small) { color: var(--d-muted) !important; }
-body.site-v3 .modern-footer a:hover { color: var(--d-ink) !important; }
+body.site-v3 .modern-footer :is(p, a, small, span, strong, li) {
+  color: #c3cfc8 !important;
+}
+body.site-v3 .modern-footer :is(a:hover, .modern-brand, .footer-brand) {
+  color: #ffffff !important;
+}
 
 /* ---- Tables: hairlines, no fills --------------------------------------- */
 body.site-v3 :is(.data-table, .comparison-table) {
@@ -237,4 +263,128 @@ body.site-v3 strong:has(> em) > em {
   font-weight: 500;
   margin-left: .12em;
   color: var(--d-muted-2);
+}
+
+
+/* ---- Anything filled with the accent takes the accent's own foreground --
+   The old accent was lime -- a light fill that wanted dark text -- so a dozen
+   components hard-code a near-black label. This direction's accent is a mid
+   green that is dark, so those labels came to 3.3-3.6:1. */
+/* Controls are filled with the dark ink, not the accent. White on the mid
+   green is 5.4:1 flat, but several of these sit on a gradient whose lighter
+   stop drops it to 3.9:1, and chasing that margin per component is how the
+   old system ended up with a dozen one-off colour rules. The accent is a text
+   colour here; fills are ink. White on ink is 17.7:1 and has no margin to
+   lose. */
+body.site-v3 :is(.skip-link, .nav-action, .nav-mobile-search, .option-check,
+  .meal-rank, .quiz-chip input:checked + span, .mm-chip.is-on) {
+  background: var(--d-fill) !important;
+  background-image: none !important;
+  color: var(--d-fill-in) !important;
+  border-color: var(--d-fill) !important;
+}
+body.site-v3 :is(.skip-link, .nav-action, .nav-mobile-search) :is(span, b, strong) {
+  color: var(--d-fill-in) !important;
+}
+
+/* Kickers and eyebrows were light mints written to sit on the green heroes
+   this direction removed. On white they measured 1.18:1. */
+body.site-v3 :is(.eyebrow, .soft-label, .kicker, .match-kicker, .home-kicker,
+  .gm6-tool-num, .focused-guide-kicker, .section-head .eyebrow) {
+  color: var(--d-muted-2) !important;
+}
+body.site-v3 :is(.eyebrow, .soft-label) :is(span, b) { color: inherit !important; }
+
+
+/* ---- Dark panels and selected chips ------------------------------------
+   These are components the old system painted forest green and filled with
+   light text. Their fill token now flips with the theme, which turned them
+   into light panels still carrying light text. They take the constant dark
+   fill and its own foreground instead, so the relationship holds in both. */
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-panel-dark,
+  .method-band, .order-console-rail, .home-console-rail) {
+  background: var(--d-fill) !important;
+  color: var(--d-fill-in) !important;
+}
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-panel-dark,
+  .method-band) :is(p, li, span, small, strong, b, h1, h2, h3, .eyebrow) {
+  color: var(--d-fill-in) !important;
+}
+
+/* A chosen option is filled with the accent, which is a dark green here, so
+   its label has to be light -- the old accent was lime and wanted dark text. */
+body.site-v3 :is(.gm6-choice.is-selected, .option-check, .quiz-option:has(input:checked) .option-check) {
+  background: var(--d-accent) !important;
+  color: var(--d-accent-in) !important;
+}
+body.site-v3 .gm6-choice.is-selected :is(span, b, strong, small, h3) {
+  color: var(--d-accent-in) !important;
+}
+
+/* ---- Final foreground corrections --------------------------------------
+   These lose to identically-specific rules written for the old palette, so
+   they carry the theme attribute to sit above them. Each one is a fill whose
+   foreground has to move with it. */
+
+/* A chosen goal chip: accent fill in light, mint fill in dark, and in both
+   cases the label is the fill's own foreground rather than an inherited mint
+   that was correct only against forest green. */
+html[data-theme] body.site-v3 :is(.gm6-choice.is-selected, .gm6-choice.is-on, .is-on)
+  :is(b, strong, small, span, h3, p) {
+  color: var(--d-fill-in) !important;
+}
+html[data-theme] body.site-v3 :is(.gm6-choice.is-selected, .gm6-choice.is-on, .is-on) {
+  background: var(--d-fill) !important;
+  background-image: none !important;
+  color: var(--d-fill-in) !important;
+  border-color: var(--d-accent) !important;
+}
+
+/* Glyphs inside a primary button follow the button, not the page. */
+html[data-theme] body.site-v3 .btn:is(.btn-primary, .home-primary, .match-primary)
+  :is(.gm6-arrow, span, b, small) {
+  color: var(--d-btn-in) !important;
+}
+html[data-theme] body.site-v3 :is(.order-console-reason, .home-console-reason) span {
+  color: var(--d-fill-in) !important;
+}
+
+/* Page openings are white now, so the light mints written for the green
+   billboard have to become ink and muted -- including the per-word spans the
+   homepage headline treatment leaves on other pages. */
+html[data-theme] body.site-v3 main :is([class*="hero"], .policy-hero)
+  :is(h1, h2, .gm6-title-word, .gm6-title-word span, strong, b) {
+  color: var(--d-ink) !important;
+}
+html[data-theme] body.site-v3 main :is([class*="hero"], .policy-hero)
+  :is(p, li, small, dd, .eyebrow, .article-deck):not(:where(.btn, .btn *)) {
+  color: var(--d-muted) !important;
+}
+html[data-theme] body.site-v3 main :is([class*="hero"], .policy-hero) .eyebrow {
+  color: var(--d-muted-2) !important;
+}
+
+
+/* Any element carrying the dark fill carries its foreground too, so a chip
+   the enumeration above missed cannot end up ink on ink. */
+html[data-theme] body.site-v3 :is(.mm-chip, .quiz-chip, .chip, .tag, .pill,
+  .meal-rank, .rank, .badge)[class*="on"],
+html[data-theme] body.site-v3 :is(.mm-chip, .quiz-chip)[class*="on"] :is(span, b, small) {
+  color: var(--d-fill-in) !important;
+}
+
+/* Some heroes carry their gradient from a rule more specific than the one
+   above, so the ground stayed green under text this direction recoloured for
+   white. Stated once more with the theme attribute, covering .liquid-surface
+   since that is the class the decorative grounds ride on. */
+html[data-theme] body.site-v3 :is([class*="hero"], .liquid-surface, .home-intro, .match-intro) {
+  background-color: var(--d-bg) !important;
+  background-image: none !important;
+}
+html[data-theme] body.site-v3 :is([class*="hero"], .liquid-surface)
+  :is(p, li, span, small, dd, .eyebrow):not(:where(.btn, .btn *, [class*="card"], [class*="card"] *)) {
+  color: var(--d-muted) !important;
+}
+html[data-theme] body.site-v3 :is([class*="hero"], .liquid-surface) .eyebrow {
+  color: var(--d-muted-2) !important;
 }

@@ -109,6 +109,21 @@ html[data-theme="dark"] body.site-v3
 }
 /* This one paints its own dark scrim, so it is light in both themes. */
 body.site-v3 .calc-photo-card figcaption { color: #eef6f1 !important; }
+/* ===========================================================================
+ * RETIRED: hero text repairs for the green billboard.
+ *
+ * Everything below this line up to the marker was written to keep text legible
+ * on a dark forest-gradient hero. Direction D (clean-v9.css) removes those
+ * heroes -- page openings are white now -- so these rules paint light mint on
+ * white, and because several are more specific than the layer that replaced
+ * them, they win. Out-specifying each one is how a stylesheet ends up with a
+ * dozen counter-rules for a component that no longer exists.
+ *
+ * Kept as a record rather than deleted: if a dark hero ever returns, this is
+ * the measured palette for it.
+ * ======================================================================== */
+/* RETIRED (see note above) --
+
 
 /* Text inside the gm6 dark panels.
  *
@@ -116,19 +131,25 @@ body.site-v3 .calc-photo-card figcaption { color: #eef6f1 !important; }
  * doing real work: without it the muted-grey rule above claims these elements
  * and paints them dark on a dark panel. Selected by component class only --
  * an earlier version also matched inline background styles, which caught the
- * lime chip and put pale text on it. */
+ * lime chip and put pale text on it. * /
 body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-choice.is-selected,
   .gm6-hero, .gm6-band, .gm6-panel-dark) :is(p, li, small, span, figcaption,
   .gm6-tool-num, .eyebrow, .metric-note, .cite-org):not(:where(.btn, .btn *)) {
   /* Button labels excluded: this rule reaches four classes deep, so it was
      beating the rule that gives a button's contents the button's own colour,
-     and the arrow on "Find my meal" came out pale mint on a lime fill. */
+     and the arrow on "Find my meal" came out pale mint on a lime fill. * /
   color: #dff0e7 !important;
 }
+-- */
+
+/* RETIRED (see note above) --
+
 html[data-theme="dark"] body.site-v3 :is(.gm6-hero, .gm6-band, .gm6-finder-copy,
   .gm6-compare-head) :is(p, li, small, figcaption, .eyebrow):not(:where(.btn, .btn *)) {
   color: #dff0e7 !important;
 }
+-- */
+
 html[data-theme="light"] body.site-v3 main > section:not([class*="hero"]) figcaption { color: #43574c !important; }
 html[data-theme="dark"]  body.site-v3 main > section:not([class*="hero"]) figcaption { color: #b9cec3 !important; }
 
@@ -568,6 +589,8 @@ body.site-v3 :is(.editorial-figure, .article-illustration, .blog-hero-art) {
 
 /* Menu descriptions were the last text under 12px. */
 body.site-v3 .nav-popover small { font-size: max(.79rem, 12.5px) !important; }
+/* RETIRED (see note above) --
+
 
 /* ======================================================================
  * Hero banners.
@@ -576,7 +599,7 @@ body.site-v3 .nav-popover small { font-size: max(.79rem, 12.5px) !important; }
  * is light in both themes. It could not be left to follow --u-ink: that token
  * is dark under the light theme, which put near-black headings on a dark green
  * banner. Stated once here for every hero variant the site uses.
- * ====================================================================== */
+ * ====================================================================== * /
 /* Heroes that are still a dark gradient.
  *
  * This rule paints hero text light because heroes on this site were a forest
@@ -587,7 +610,7 @@ body.site-v3 .nav-popover small { font-size: max(.79rem, 12.5px) !important; }
  * invisible in light mode. Those headers carry their own ink from v8 now and
  * are excluded here. :where() keeps the exclusion at zero specificity, because
  * a bare :not() would raise this rule above the ones it has to lose to.
- */
+ * /
 html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
     .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
     .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
@@ -596,6 +619,10 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
   -webkit-text-fill-color: #ffffff !important;
   background: none !important;
 }
+-- */
+
+/* RETIRED (see note above) --
+
 html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
     .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
     .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
@@ -603,17 +630,23 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
   /* The previous #cfe3d8 measured 4.30:1 against the light end of the hero
      gradient, just under the floor. Text inside a button is excluded: a button
      carries its own colour, and painting its label with the section's ink left
-     the arrow on "Find my meal" pale mint on a lime fill. */
+     the arrow on "Find my meal" pale mint on a lime fill. * /
   color: #dff0e7 !important;
 }
+-- */
+
+/* RETIRED (see note above) --
+
 html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
     .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
     .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
   :is(.eyebrow, p.eyebrow) {
   /* #a8f0bd measured 4.37:1 against the light end of the hero gradient;
-     the eyebrow is 12px uppercase, so it needs the 4.5:1 body-text floor. */
+     the eyebrow is 12px uppercase, so it needs the 4.5:1 body-text floor. * /
   color: #c9f7d8 !important;
 }
+-- */
+
 
 /* Panels that sit inside a hero keep their own ground, so they keep their own
    ink. A caption on a white figure card and a value on a lime chip are both
@@ -1113,12 +1146,16 @@ html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:first-child,
 html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:first-child :is(b, small) {
   color: #ffffff !important;
 }
+/* RETIRED (see note above) --
+
 /* The other two chips are translucent over the hero gradient, so their labels
-   are measured against its lightest stop: #cfe0d7 came to 4.21:1 there. */
+   are measured against its lightest stop: #cfe0d7 came to 4.21:1 there. * /
 html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:not(:first-child),
 html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:not(:first-child) small {
   color: #dff0e7 !important;
 }
+-- */
+
 
 /* "104 g" was breaking after the number because the chip is narrower than the
    figure at full size. The value stays on one line and the columns share the
@@ -1193,6 +1230,8 @@ body.site-v3 .gm6-hero-steps {
   list-style: none;
   counter-reset: none;
 }
+/* RETIRED (see note above) --
+
 body.site-v3 .gm6-hero-steps li {
   display: flex;
   align-items: center;
@@ -1201,6 +1240,8 @@ body.site-v3 .gm6-hero-steps li {
   line-height: 1.3;
   color: #dff0e7 !important;
 }
+-- */
+
 body.site-v3 .gm6-hero-steps b {
   display: grid;
   place-items: center;
