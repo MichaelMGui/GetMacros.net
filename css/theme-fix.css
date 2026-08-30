@@ -1625,3 +1625,71 @@ body.site-v3 .gm6-tools :is(.gm6-tools-lead, .gm6-section-intro) a:hover,
 body.site-v3 .gm6-tools :is(.gm6-tools-lead, .gm6-section-intro) a:focus-visible {
   color: #dff0e7 !important;
 }
+
+/* ---------------------------------------------------------------------------
+   A selected quiz option, in dark mode.
+
+   studio-v6 styles the checked option with a hard-coded light gradient
+   (#f7fced -> #edf8ef) and no theme guard, but colours its title with a token,
+   var(--gm6-ink). In dark mode that token is remapped to near-white while the
+   background stays light, so the title painted #f4f8f5 on #f7fced -- 1.03:1,
+   gone. unified-v7 has a proper dark treatment for this state, but at one
+   class it loses to studio-v6's two, and its light-mode counterpart is scoped
+   to html[data-theme="light"], so in dark mode nothing was left to win.
+
+   That same bug is the "too strong" effect: on a dark page the selection was
+   a white card flashing in, a luminance jump of roughly fifteen to one. A
+   selected option should read as chosen, not as a different page. So dark mode
+   keeps the dark card and marks the choice with a lime edge and a quiet wash,
+   which is what the rest of the dark theme already does for a chosen control.
+--------------------------------------------------------------------------- */
+html[data-theme="dark"] body.site-v3:is(.meal-finder-page, .order-match-page)
+  :is(.quiz-option, .option-card):has(input:checked) {
+  border-color: rgba(216, 255, 134, .58) !important;
+  background:
+    linear-gradient(145deg, rgba(216, 255, 134, .13), rgba(168, 240, 189, .06)) !important;
+  box-shadow: inset 0 0 0 1px rgba(216, 255, 134, .14) !important;
+  color: var(--u-ink, #f4f8f5) !important;
+}
+/* The words keep the colours they had before the tap. Nothing about choosing
+   an option should change how legible its own label is. */
+html[data-theme="dark"] body.site-v3:is(.meal-finder-page, .order-match-page)
+  :is(.quiz-option, .option-card):has(input:checked) .option-copy b {
+  color: var(--u-ink, #f4f8f5) !important;
+}
+html[data-theme="dark"] body.site-v3:is(.meal-finder-page, .order-match-page)
+  :is(.quiz-option, .option-card):has(input:checked) .option-copy small {
+  color: var(--u-muted, #b7c8bf) !important;
+}
+/* The tick turns lime; the badge does not, unless it is a generic goal icon.
+   A restaurant's mark carries that chain's own colour -- overriding it on
+   selection erased the identity at the exact moment the user had chosen it,
+   so .option-chain-mark keeps its --chain-tone and lets the border and tick
+   carry the state. */
+html[data-theme="dark"] body.site-v3:is(.meal-finder-page, .order-match-page)
+  :is(.quiz-option, .option-card):has(input:checked)
+  .option-icon:not(.option-chain-mark) {
+  color: #07110d !important;
+  background: var(--u-lime, #bce94f) !important;
+  transform: none !important;
+}
+/* Excluding the chain mark from the rule above was not enough on its own:
+   studio-v6 has its own `:has(input:checked) .option-icon` rule painting the
+   badge lime, and that still reached the chain marks. The tone has to be put
+   back, not merely left alone.
+
+   Deliberately not scoped to dark. The reason a chain keeps its own colour
+   when you pick it has nothing to do with the theme, and light mode was
+   flattening all fifteen marks to the same lime the moment they were chosen. */
+body.site-v3:is(.meal-finder-page, .order-match-page)
+  :is(.quiz-option, .option-card):has(input:checked) .option-chain-mark {
+  color: #14301f !important;
+  background: var(--chain-tone, #e3efe8) !important;
+  transform: none !important;
+}
+html[data-theme="dark"] body.site-v3:is(.meal-finder-page, .order-match-page)
+  :is(.quiz-option, .option-card):has(input:checked) .option-check {
+  color: #07110d !important;
+  background: var(--u-lime, #bce94f) !important;
+  box-shadow: none !important;
+}
