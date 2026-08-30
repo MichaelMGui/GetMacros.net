@@ -464,16 +464,16 @@ html[data-theme="dark"] .order-match-page .breadcrumb { color: #9daf9f !importan
 html[data-theme="dark"] .match-primary { color: #111914 !important; background: var(--v8-lime) !important; border-color: var(--v8-lime) !important; }
 
 html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
-  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero
 ) { color: #edf3ef !important; background: #151b18 !important; border-color: rgba(255,255,255,.13) !important; box-shadow: inset 7px 0 0 #df775e !important; }
 html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
-  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero
 ) :is(h1,h2,h3,strong) { color: #f1f6f2 !important; }
 html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
-  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero
 ) :is(p,li,small,figcaption) { color: #b8c7bf !important; }
 html[data-theme="dark"] body.site-v3:not(.home-studio):not(.order-match-page) main :is(
-  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero
 ) .eyebrow { color: #f29a83 !important; }
 
 /* -------------------------------------------------------------------------
@@ -693,10 +693,10 @@ html[data-theme="dark"] .single-macro-form .units-toggle button.active { color: 
   .single-macro-result { min-height: 64px !important; margin-top: 17px !important; padding-top: 15px !important; }
 
   body.site-v3:not(.home-studio):not(.order-match-page) main :is(
-    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
+    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero
   ) { padding-block: 50px !important; box-shadow: inset 5px 0 0 var(--v8-coral) !important; }
   body.site-v3:not(.home-studio):not(.order-match-page) main :is(
-    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero
+    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero
   ) h1 { font-size: clamp(2.4rem,11vw,3.6rem) !important; }
 }
 
