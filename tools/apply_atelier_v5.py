@@ -36,7 +36,9 @@ HEADER = """<header class="site-header modern-header"><nav class="full-nav" aria
 <a class="nav-action" href="search.html" aria-label="Search GetMacros">Search</a>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open site menu</span><span class="nav-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span></button>
 </div>
-</nav></header>"""
+</nav>
+<p class="site-purpose"><span>Free tool: find fast-food meals that fit your goal &mdash; 15 chains, no sign-up.</span> <a href="restaurant-meal-finder.html">Find my meal <span aria-hidden="true">&rarr;</span></a></p>
+</header>"""
 
 FOOTER = """<footer class="modern-footer">
 <div><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find fast-food meals that fit your calories, protein and goals—then understand the numbers.</p></div>

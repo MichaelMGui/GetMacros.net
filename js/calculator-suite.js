@@ -158,8 +158,24 @@
     }, { threshold: .08, rootMargin: "0px 0px -6% 0px" });
     items.forEach(function (item) {
       item.classList.add("calc-reveal");
-      observer.observe(item);
+      // Anything already on screen is shown at once rather than waiting for a
+      // callback that has nothing to report.
+      if (item.getBoundingClientRect().top < window.innerHeight * 0.94) {
+        item.classList.add("is-visible");
+      } else {
+        observer.observe(item);
+      }
     });
+    // Unconditional safety net. .calc-reveal sets opacity to 0, and until this
+    // was here the only thing that ever put it back was the observer: if it
+    // missed an element -- a slow device, a scroll that outran the callback, a
+    // browser that batches differently -- the whole calculator stayed
+    // invisible with no way to recover. A reveal is decoration; the tool
+    // underneath it is not optional. js/unified-v7.js has had this fallback
+    // all along, which is why its sections never went missing.
+    window.setTimeout(function () {
+      items.forEach(function (item) { item.classList.add("is-visible"); });
+    }, 1500);
   }
 
   addHeroMark();

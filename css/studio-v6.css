@@ -240,7 +240,7 @@ a:hover .gm6-arrow { transform: translateX(4px); }
 .gm6-choice { padding: 18px; border: 1px solid var(--gm6-line); border-radius: 17px; background: rgba(255,255,255,.76); }
 .gm6-choice.is-selected { border-color: var(--gm6-forest); background: var(--gm6-forest); color: #fff; box-shadow: 0 12px 30px rgba(11,59,44,.15); }
 .gm6-choice b { display: block; margin-bottom: .25rem; font-size: .96rem; }
-.gm6-choice small { color: inherit; opacity: .78; font-size: .78rem; }
+.gm6-choice small { color: inherit; font-size: .78rem; }
 .gm6-preview-result { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 18px; padding: 18px 20px; border-radius: 18px; background: var(--gm6-lime); color: var(--gm6-forest-deep); }
 .gm6-preview-result strong { font-size: 1rem; }
 .gm6-preview-result span { font-size: .8rem; font-weight: 750; }

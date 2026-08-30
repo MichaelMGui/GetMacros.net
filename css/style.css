@@ -340,7 +340,10 @@ a:hover { color: var(--color-primary); }
   letter-spacing: 0.09em;
   font-size: 0.78rem;
   font-weight: 700;
-  opacity: 0.92;
+  /* No opacity here. Dimming text this way costs contrast silently: it does not
+     show up in the colour, so a rule that measures 4.89:1 draws at 4.42:1 and
+     every review of the palette says it passes. The eyebrow is quiet because of
+     the colour the theme gives it, which is measurable. */
 }
 
 /* Subtle grain texture for premium editorial feel */

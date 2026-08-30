@@ -1078,7 +1078,7 @@ html[data-theme="dark"] body.search-page .search-group-more { color: #b7c8bf !im
 html[data-theme] body.site-v3 :is(.btn, button.btn, a.btn) :is(span, b, strong, small) {
   color: inherit !important;
 }
-body.site-v3 .gm6-arrow { opacity: .92; font-weight: 700; }
+body.site-v3 .gm6-arrow { font-weight: 700; }
 
 /* The calories chip.
  *
@@ -1242,4 +1242,104 @@ body.site-v3 .gm6-hero-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.4rem 2rem;
   }
+}
+
+/* ======================================================================
+ * Quiz options.
+ * ====================================================================== */
+
+/* The selection effect was doing too much: a 4px lift on hover, a second lift
+   when checked, a 34px shadow, and the icon rotating and morphing from a
+   rounded square to a circle -- all over half a second. Choosing an answer
+   should feel like a switch closing, not like the card taking off. The state
+   is still unmistakable, it just arrives quickly and stays put. */
+body.site-v3 .quiz-option {
+  transition: border-color .16s ease, background .16s ease, box-shadow .16s ease !important;
+}
+body.site-v3 .quiz-option:hover {
+  transform: none !important;
+  box-shadow: 0 4px 14px rgba(6, 39, 30, .06) !important;
+}
+body.site-v3 .quiz-option:has(input:checked) {
+  transform: none !important;
+  box-shadow: none !important;
+}
+body.site-v3 .quiz-option:hover .option-icon {
+  transform: none !important;
+  border-radius: 16px !important;
+}
+body.site-v3 .option-icon { transition: background .16s ease, color .16s ease !important; }
+body.site-v3 .quiz-option:active { transform: scale(.994) !important; transition-duration: .06s !important; }
+
+/* A tapped option is a control, not a paragraph.
+ *
+ * Tapping quickly, or tapping and holding, made the browser treat the label as
+ * text and draw its own selection box around the words -- a blue rectangle on
+ * the platforms whose selection colour is not styled by the page. Controls do
+ * not need to be selectable, and the highlight is cleared on the children too,
+ * since the rule elsewhere only covers the label itself. */
+body.site-v3 :is(.quiz-option, .quiz-chip, .mm-chip, .sex-choice-row label, .units-toggle button),
+body.site-v3 :is(.quiz-option, .quiz-chip, .mm-chip, .sex-choice-row label, .units-toggle button) * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Keyboard focus stays clearly visible, in the site's own colour rather than
+   whatever ring the browser would draw. */
+body.site-v3 .quiz-option:has(input:focus-visible) {
+  outline: 3px solid #2f8f63 !important;
+  outline-offset: 3px !important;
+}
+html[data-theme="dark"] body.site-v3 .quiz-option:has(input:focus-visible) {
+  outline-color: #9ee6bb !important;
+}
+
+/* Text is never dimmed with opacity.
+ *
+ * .eyebrow carried opacity .92 and .gm6-choice small carried .78, which cost
+ * them 0.5 and 2.7 points of contrast respectively while leaving the declared
+ * colour looking fine -- the reason a palette review kept passing text that
+ * measured under the floor once it was actually painted. Where those elements
+ * need to read quieter than their neighbours, the colour says so. */
+body.site-v3 :is(.eyebrow, .gm6-choice small, .gm6-arrow) { opacity: 1 !important; }
+html[data-theme="light"] body.site-v3 .gm6-choice:not(.is-selected) small { color: #43574c !important; }
+html[data-theme="dark"] body.site-v3 .gm6-choice:not(.is-selected) small { color: #b7c8bf !important; }
+
+/* ======================================================================
+ * The purpose line.
+ *
+ * Someone arriving on a restaurant guide or an article from a search result
+ * had no way to tell what GetMacros is for without going to the homepage. One
+ * quiet line under the header says it and offers the tool in the same breath.
+ * It sits outside the sticky bar so it scrolls away and never costs height
+ * twice, and it is hidden where it would be redundant: the homepage hero says
+ * all of this at length, and on the finder you are already using the thing.
+ * ====================================================================== */
+body.site-v3 .site-purpose {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 14px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 9px 18px 0;
+  font-size: max(.82rem, 13px);
+  line-height: 1.45;
+  text-align: center;
+}
+body.site-v3 .site-purpose a {
+  font-weight: 820;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+html[data-theme="light"] body.site-v3 .site-purpose { color: #3f5c4e; }
+html[data-theme="light"] body.site-v3 .site-purpose a { color: #14683f !important; }
+html[data-theme="dark"] body.site-v3 .site-purpose { color: #b7c8bf; }
+html[data-theme="dark"] body.site-v3 .site-purpose a { color: #9ee6bb !important; }
+body.home-studio .site-purpose,
+body.order-match-page .site-purpose { display: none !important; }
+@media (max-width: 560px) {
+  body.site-v3 .site-purpose { padding: 8px 14px 0; font-size: max(.79rem, 12.5px); }
 }
