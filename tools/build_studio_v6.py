@@ -119,6 +119,7 @@ HOME_MAIN = r'''<main id="main-content">
       <div class="gm6-compare-row"><div class="gm6-compare-meal"><strong>Egg White Grill</strong><small>Chick-fil-A</small></div><span class="gm6-compare-value">290</span><span class="gm6-compare-value is-protein">26 g</span><span class="gm6-compare-value">1 g</span></div>
       <div class="gm6-compare-row"><div class="gm6-compare-meal"><strong>Footlong Rotisserie Chicken</strong><small>Subway</small></div><span class="gm6-compare-value">640</span><span class="gm6-compare-value is-protein">58 g</span><span class="gm6-compare-value">8 g</span></div>
     </div>
+    <p class="gm6-compare-hint">Swipe the table to see protein and fiber.</p>
   </div>
 </section>
 

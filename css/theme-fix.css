@@ -1581,3 +1581,27 @@ body .gm-sibling-tools .metric-note {
   body .gm-sibling-tools a.tool-card:hover,
   body .gm-sibling-tools a.tool-card:focus-visible { transform: none; }
 }
+
+/* ---------------------------------------------------------------------------
+   The three-meal comparison, on a phone.
+   The shell is overflow-x:auto over 690px-wide rows, so at 390px it shows
+   "Meal" and "Calories" and hides Protein and Fiber off the right edge with
+   nothing to say they are there. The table is not broken -- it scrolls, and
+   keyboard users get it through role="region" and tabindex -- but a column
+   that silently disappears reads as a column that does not exist. A fade at
+   the edge shows the content continues; the line underneath says how to reach
+   it. Both are mobile-only: on desktop all four columns already fit.
+--------------------------------------------------------------------------- */
+body.site-v3 .gm6-compare-hint { display: none; }
+@media (max-width: 900px) {
+  body.site-v3 .gm6-compare-shell {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+  }
+  body.site-v3 .gm6-compare-hint {
+    display: block;
+    margin: 12px 2px 0;
+    font-size: .88rem;
+    color: var(--u-muted, #486157);
+  }
+}
