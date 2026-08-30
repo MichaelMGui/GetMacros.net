@@ -1343,3 +1343,26 @@ body.order-match-page .site-purpose { display: none !important; }
 @media (max-width: 560px) {
   body.site-v3 .site-purpose { padding: 8px 14px 0; font-size: max(.79rem, 12.5px); }
 }
+
+/* The blue box around the quiz question.
+ *
+ * Each step moves focus to its <h2 tabindex="-1"> so a screen reader announces
+ * the new question. That is right, but the heading is an announcement target,
+ * not a control, and the browser drew a focus ring around it: unified-v7 sets
+ * `:focus-visible { outline: 3px solid var(--u-aqua) }` with !important, and
+ * --u-aqua is #8de6da -- a pale cyan. site-v3.css does try to clear it, but at
+ * two classes against two classes plus !important it never won.
+ *
+ * Rings stay everywhere they mean something. A heading that was focused by
+ * script, rather than by the person navigating, is not one of those places. */
+body.site-v3 :is(h1, h2, h3, h4)[tabindex="-1"]:focus,
+body.site-v3 :is(h1, h2, h3, h4)[tabindex="-1"]:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* And when a ring does show, it is the site's green rather than a cyan that
+   belongs to no other part of the page. Both values clear 3:1 against the
+   surfaces they are drawn on. */
+html[data-theme="light"] body.site-v3 :focus-visible { outline-color: #1c7a52 !important; }
+html[data-theme="dark"] body.site-v3 :focus-visible { outline-color: #9ee6bb !important; }
