@@ -1366,3 +1366,76 @@ body.site-v3 :is(h1, h2, h3, h4)[tabindex="-1"]:focus-visible {
    surfaces they are drawn on. */
 html[data-theme="light"] body.site-v3 :focus-visible { outline-color: #1c7a52 !important; }
 html[data-theme="dark"] body.site-v3 :focus-visible { outline-color: #9ee6bb !important; }
+
+/* ======================================================================
+ * One opening: the hero and the tools it promises.
+ *
+ * The tools bento used to be its own section under the heading "Less clutter.
+ * Better decisions." -- a design principle, not a thing anyone was looking
+ * for, sitting between the offer and the tools that deliver it. The heading is
+ * gone and the two run together on one ground, so opening the site shows what
+ * it does and every tool that does it without a scroll or a seam.
+ * ====================================================================== */
+html body.site-v3.home-studio main > section.gm6-hero {
+  border-radius: 0 !important;
+  padding-bottom: clamp(34px, 4vw, 54px) !important;
+}
+html[data-theme] body.site-v3.home-studio main > section.gm6-tools.gm6-tools-joined:nth-of-type(n) {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: clamp(64px, 8vw, 104px) !important;
+  border-radius: 0 0 clamp(30px, 5vw, 62px) clamp(30px, 5vw, 62px) !important;
+  background:
+    radial-gradient(circle at 82% 6%, rgba(141, 230, 218, .12), transparent 24rem),
+    linear-gradient(180deg, #154a35 0%, #10412f 55%, #0b3324 100%) !important;
+}
+html body.site-v3.home-studio .gm6-tools-lead {
+  max-width: 56ch;
+  margin: 0 0 clamp(22px, 3vw, 34px);
+  font-size: max(1rem, 15.5px);
+  color: #dff0e7 !important;
+}
+
+/* The cards read as glass on the dark ground rather than paper cut-outs. */
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool {
+  border-color: rgba(214, 244, 226, .17) !important;
+  background: rgba(255, 255, 255, .055) !important;
+  backdrop-filter: blur(9px);
+  color: #eaf6ef !important;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:first-child {
+  background: rgba(216, 255, 134, .1) !important;
+  border-color: rgba(216, 255, 134, .3) !important;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool :is(h3, h4, strong, b) { color: #ffffff !important; }
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool p { color: #cfe3d8 !important; }
+html[data-theme] body.site-v3.home-studio .gm6-tools-joined a.gm6-tool .gm6-tool-num { color: #d8ff86 !important; }
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool-icon {
+  background: rgba(216, 255, 134, .16) !important;
+  color: #eaf6ef !important;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:hover {
+  border-color: rgba(216, 255, 134, .42) !important;
+  background: rgba(255, 255, 255, .085) !important;
+}
+
+/* Chain tiles on the restaurant step.
+ *
+ * Initials in the chain's signature colour rather than its logo: we hold no
+ * licence to redistribute another company's mark, and third-party media
+ * republished without rights is exactly what an ad review flags. The initials
+ * plus the colour still let you find a chain at a glance, which is the job. */
+body.site-v3 .option-chain-mark {
+  display: grid !important;
+  place-items: center;
+  font-size: max(.86rem, 13.5px);
+  font-weight: 900;
+  letter-spacing: .01em;
+  color: #14301f !important;
+  background: var(--chain-tone, #e3efe8) !important;
+  border-radius: 14px;
+}
+html[data-theme="dark"] body.site-v3 .option-chain-mark {
+  color: #14301f !important;
+  filter: saturate(.95);
+}

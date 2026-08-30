@@ -109,23 +109,6 @@ HOME_MAIN = r'''<main id="main-content">
   </div>
 </section>
 
-<section class="gm6-restaurants">
-  <div class="container">
-    <div class="gm6-section-intro studio-reveal">
-      <div><p class="eyebrow">Restaurant explorer</p><h2>Start with where you are.</h2></div>
-      <div><p>Every chain guide uses the same nutrition hierarchy, so you can scan calories, protein, fiber and sodium without relearning the page.</p><a class="text-link" href="restaurant-meal-guides.html">View all restaurant guides →</a></div>
-    </div>
-    <div class="gm6-rail" aria-label="Restaurant guides">
-      <a class="gm6-chain" href="chipotle-healthy-meals-macros.html"><span class="gm6-chain-mark" style="--chain-tone:#e8f4d8">CH</span><div><small>6 tracked options</small><h3>Chipotle</h3><b>Bowls, salads and fiber →</b></div></a>
-      <a class="gm6-chain" href="chick-fil-a-healthy-meals-macros.html"><span class="gm6-chain-mark" style="--chain-tone:#ffe0d8">CF</span><div><small>11 tracked options</small><h3>Chick-fil-A</h3><b>Grilled picks and bulk meals →</b></div></a>
-      <a class="gm6-chain" href="panda-express-healthy-meals-macros.html"><span class="gm6-chain-mark" style="--chain-tone:#ffe9c7">PX</span><div><small>7 tracked options</small><h3>Panda Express</h3><b>Plates, sides and protein →</b></div></a>
-      <a class="gm6-chain" href="subway-healthy-meals-macros.html"><span class="gm6-chain-mark" style="--chain-tone:#daf2df">SW</span><div><small>7 tracked options</small><h3>Subway</h3><b>Six-inch and footlong subs →</b></div></a>
-      <a class="gm6-chain" href="starbucks-healthy-food-meals-macros.html"><span class="gm6-chain-mark" style="--chain-tone:#d9efea">SB</span><div><small>5 tracked options</small><h3>Starbucks</h3><b>Breakfast and protein boxes →</b></div></a>
-      <a class="gm6-chain" href="taco-bell-healthy-meals-macros.html"><span class="gm6-chain-mark" style="--chain-tone:#eee2f5">TB</span><div><small>5 tracked options</small><h3>Taco Bell</h3><b>Bowls and bean-based picks →</b></div></a>
-      <a class="gm6-chain" href="mcdonalds-healthy-meals-macros.html"><span class="gm6-chain-mark" style="--chain-tone:#fff0bd">MC</span><div><small>6 tracked options</small><h3>McDonald’s</h3><b>Breakfast and classic orders →</b></div></a>
-    </div>
-  </div>
-</section>
 
 <section class="gm6-compare">
   <div class="container">
@@ -165,9 +148,9 @@ HOME_MAIN = r'''<main id="main-content">
   </div>
 </section>
 
-<section class="gm6-tools">
+<section class="gm6-tools gm6-tools-joined">
   <div class="container">
-    <div class="gm6-section-intro studio-reveal"><div><p class="eyebrow">The useful tools</p><h2>Less clutter. Better decisions.</h2></div><div><p>Each tool solves one clear problem. No accounts, no artificial urgency, and no result hidden behind a wall.</p></div></div>
+    <p class="gm6-tools-lead">Five free tools. Each answers one question, with no account and nothing hidden behind a wall.</p>
     <div class="gm6-tool-bento">
       <a class="gm6-tool studio-reveal" href="calculators.html"><span class="gm6-tool-num">01 · Daily targets</span><div><h3>Free Macro Calculator</h3><p>Estimate daily calories and macros, with the assumptions kept visible.</p></div><span class="gm6-tool-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg></span></a>
       <a class="gm6-tool studio-reveal" href="nutrition-label-comparison-tool.html"><span class="gm6-tool-num">02 · Compare</span><div><h3>Nutrition labels, side by side</h3><p>Put two products on equal footing.</p></div></a>
@@ -207,29 +190,47 @@ HOME_MAIN = r'''<main id="main-content">
 </section>
 </main>'''
 
-# The scrolling goal story repeated information already handled by Healthy Order
-# Match and depended on a fragile sticky animation. Keep the homepage focused.
-HOME_MAIN = re.sub(
-    r'\n<section class="gm6-goal-story">.*?</section>\n\n(?=<section class="gm6-restaurants">)',
-    "\n",
-    HOME_MAIN,
-    count=1,
-    flags=re.S,
-)
+# Homepage order, applied as one pass so each step does not depend on a section
+# an earlier step may have removed. Two rewrites here silently stopped matching
+# when the section they anchored to was deleted, which put the goal story back
+# and dropped the tools bento entirely.
 
-# The tools bento sat seventh, below the restaurant explorer, the comparison
-# table and the calculator, so the clearest statement of what the site actually
-# gives you was three screens down. It moves up to sit directly after the
-# flagship finder: find a meal, then the tools that support the decision.
-_tools = re.search(r'\n<section class="gm6-tools">.*?\n</section>\n', HOME_MAIN, re.S)
+
+def _drop_section(markup: str, name: str) -> str:
+    """Remove one top-level <section class="NAME ..."> block from the homepage."""
+    match = re.search(
+        r'\n<section class="' + re.escape(name) + r'(?:[ "][^>]*)?>.*?\n</section>\n',
+        markup, re.S)
+    return markup[:match.start()] + "\n" + markup[match.end():] if match else markup
+
+
+def _extract_section(markup: str, name: str):
+    match = re.search(
+        r'\n<section class="' + re.escape(name) + r'(?:[ "][^>]*)?>.*?\n</section>\n',
+        markup, re.S)
+    if not match:
+        return markup, ""
+    return markup[:match.start()] + "\n" + markup[match.end():], match.group(0).strip("\n")
+
+
+# The scrolling goal story repeated what Healthy Order Match already does and
+# depended on a fragile sticky animation.
+HOME_MAIN = _drop_section(HOME_MAIN, "gm6-goal-story")
+
+# The restaurant explorer was a third route to pages the navigation and the
+# finder results already reach, sitting directly under two sections that send
+# you to them.
+HOME_MAIN = _drop_section(HOME_MAIN, "gm6-restaurants")
+
+# The tools bento sat seventh, so the clearest statement of what the site gives
+# you was three screens down. It moves directly under the hero and shares its
+# ground, so opening the site shows the offer and every tool that delivers it
+# in one view.
+HOME_MAIN, _tools = _extract_section(HOME_MAIN, "gm6-tools")
 if _tools:
-    HOME_MAIN = HOME_MAIN[:_tools.start()] + "\n" + HOME_MAIN[_tools.end():]
-    HOME_MAIN = re.sub(
-        r'(?=\n<section class="gm6-restaurants">)',
-        "\n" + _tools.group(0).strip("\n") + "\n",
-        HOME_MAIN,
-        count=1,
-    )
+    anchor = re.search(r'\n(?=<section class="gm6-trust-strip")', HOME_MAIN)
+    if anchor:
+        HOME_MAIN = HOME_MAIN[:anchor.start()] + "\n" + _tools + "\n" + HOME_MAIN[anchor.start():]
 
 RESTAURANT_FILES = {
     "cava-healthy-meals-macros.html", "chick-fil-a-healthy-meals-macros.html",

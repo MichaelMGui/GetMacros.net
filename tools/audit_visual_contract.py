@@ -176,11 +176,18 @@ def main() -> int:
             errors.append(f"{rel}: favicon declaration is missing")
 
     home = (ROOT / "index.html").read_text(encoding="utf-8")
-    for required in ("gm6-tool-bento", "gm6-finder-shell", "gm6-rail", "gm6-macro-score"):
+    # gm6-rail belonged to the restaurant explorer, which was a third route to
+    # pages the nav and the finder results already reach, sitting directly under
+    # two sections that send you to them.
+    for required in ("gm6-tool-bento", "gm6-finder-shell", "gm6-macro-score"):
         if required not in home:
             errors.append(f"index.html: premium homepage component is missing: {required}")
     if "gm6-goal-story" in home:
         errors.append("index.html: removed scrolling goal-story clutter returned")
+    if "gm6-restaurants" in home:
+        errors.append("index.html: removed restaurant-explorer rail returned")
+    if "gm6-tools-joined" not in home:
+        errors.append("index.html: the tools bento must stay joined to the hero opening")
     finder = (ROOT / "restaurant-meal-finder.html").read_text(encoding="utf-8")
     if 'class="meal-database-disclosure"' not in finder:
         errors.append("restaurant-meal-finder.html: optional meal database disclosure is missing")

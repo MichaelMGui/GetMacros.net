@@ -6,9 +6,55 @@
   var root = document.getElementById("meal-quiz");
   if (!root || !meals.length) return;
 
+  // Chains in order of how many people eat at them, by US systemwide sales,
+  // rather than alphabetically. Alphabetical put CAVA and Chick-fil-A first and
+  // buried McDonald's in the middle, so the list opened with the names fewest
+  // people were looking for. Anything not listed falls in after, alphabetically,
+  // so adding a chain to the data never drops it off the step.
+  var CHAIN_RANK = [
+    "McDonald's", "Starbucks", "Chick-fil-A", "Taco Bell", "Wendy's",
+    "Dunkin'", "Subway", "Chipotle", "Popeyes", "KFC",
+    "Panera", "Panda Express", "Jersey Mike's", "Sweetgreen", "CAVA"
+  ];
+  // Each chain gets a tile in its own signature colour. These are initials, not
+  // brand logos: we have no licence to redistribute another company's mark, and
+  // third-party media republished without rights is exactly what an ad review
+  // flags. The initials and the colour still make a chain findable at a glance.
+  var CHAIN_TONE = {
+    "McDonald's": "#ffe9c2", "Starbucks": "#d8ece0", "Chick-fil-A": "#ffe0d8",
+    "Taco Bell": "#ece2f5", "Wendy's": "#ffdcd6", "Dunkin'": "#ffe2f0",
+    "Subway": "#e4f3d8", "Chipotle": "#e8e0d8", "Popeyes": "#ffe6cc",
+    "KFC": "#ffdada", "Panera": "#e9f0d6", "Panda Express": "#ffe0e0",
+    "Jersey Mike's": "#dbe8f5", "Sweetgreen": "#dcf2dd", "CAVA": "#e2efe9"
+  };
+  // The data spells these with a typographic apostrophe (McDonald’s) while the
+  // lists above use a straight one, so a raw lookup missed exactly the four
+  // best-known chains and dropped them to the bottom of the step.
+  function chainKey(name) { return String(name).replace(/[\u2018\u2019\u02bc]/g, "'"); }
+  // Derived initials collide -- Chick-fil-A and Chipotle both reduce to "CH" --
+  // so the chains we carry get theirs stated.
+  var CHAIN_INITIALS = {
+    "McDonald's": "MC", "Starbucks": "SB", "Chick-fil-A": "CF", "Taco Bell": "TB",
+    "Wendy's": "WE", "Dunkin'": "DK", "Subway": "SW", "Chipotle": "CP",
+    "Popeyes": "PY", "KFC": "KF", "Panera": "PN", "Panda Express": "PX",
+    "Jersey Mike's": "JM", "Sweetgreen": "SG", "CAVA": "CV"
+  };
+  function chainInitials(name) {
+    var known = CHAIN_INITIALS[chainKey(name)];
+    if (known) return known;
+    var words = String(name).replace(/[^A-Za-z' ]/g, "").split(/\s+/).filter(Boolean);
+    if (words.length > 1) return (words[0][0] + words[1][0]).toUpperCase();
+    return String(name).replace(/[^A-Za-z]/g, "").slice(0, 2).toUpperCase();
+  }
   var chains = [];
   meals.forEach(function (m) { if (chains.indexOf(m.chain) === -1) chains.push(m.chain); });
-  chains.sort();
+  chains.sort(function (a, b) {
+    var ra = CHAIN_RANK.indexOf(chainKey(a)), rb = CHAIN_RANK.indexOf(chainKey(b));
+    if (ra === -1 && rb === -1) return a.localeCompare(b);
+    if (ra === -1) return 1;
+    if (rb === -1) return -1;
+    return ra - rb;
+  });
   var STEPS = [
     { key: "goal", title: "What are you working toward?", multiple: true,
       hint: "Choose every goal that matters today. We rank for the combination, so high protein + bulking works together.",
@@ -103,7 +149,10 @@
     var noPreferenceOption = '<label class="quiz-option quiz-option-any"><input type="' + type + '" name="q-' + s.key + '" data-any="' + s.key + '" value=""' + (noPreference[s.key] ? ' checked' : '') + '><span class="option-icon">' + iconSvg(none[2], none[0]) + '</span><span class="option-copy"><b>' + esc(none[0]) + '</b><small>' + esc(none[1]) + '</small></span><span class="option-check" aria-hidden="true">✓</span></label>';
     var choices = s.options.map(function (o) {
       var checked = state[s.key].indexOf(o[0]) !== -1 ? " checked" : "";
-      return '<label class="quiz-option"><input type="' + type + '" name="q-' + s.key + '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' + checked + '><span class="option-icon">' + iconSvg(o[3], o[1]) + '</span><span class="option-copy"><b>' + esc(o[1]) + '</b>' + (o[2] ? '<small>' + esc(o[2]) + '</small>' : '') + '</span><span class="option-check" aria-hidden="true">✓</span></label>';
+      var mark = s.chainStep
+        ? '<span class="option-icon option-chain-mark" style="--chain-tone:' + (CHAIN_TONE[chainKey(o[0])] || '#e3efe8') + '" aria-hidden="true">' + esc(chainInitials(o[0])) + '</span>'
+        : '<span class="option-icon">' + iconSvg(o[3], o[1]) + '</span>';
+      return '<label class="quiz-option"><input type="' + type + '" name="q-' + s.key + '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' + checked + '>' + mark + '<span class="option-copy"><b>' + esc(o[1]) + '</b>' + (o[2] ? '<small>' + esc(o[2]) + '</small>' : '') + '</span><span class="option-check" aria-hidden="true">✓</span></label>';
     }).join("");
     return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + noPreferenceOption + choices + '</div>';
   }
