@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,900;1,9..144,600&family=Inter:wght@400;500;700&display=swap">
+  <style>
+    body { margin: 0; }
+    .fg { font-family: "Fraunces", Georgia, serif; }
+    .in { font-family: "Inter", system-ui, sans-serif; }
+    .num { font-variant-numeric: tabular-nums; }
+    a { color: #1d6a49; } a:hover { color: #10251b; }
+  </style>
+</helmet>
+<div class="in" style="width: 1280px; min-height: 900px; box-sizing: border-box; background: #f4f1e6; color: #10251b; padding: 0 0 50px">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 22px 56px; border-bottom: 1px solid #10251b">
+    <span class="fg" style="font-size: 23px; font-weight: 900">GetMacros</span>
+    <div style="display: flex; gap: 30px; font-size: 13.5px; font-weight: 500"><span>Eat out</span><span>Tools</span><span>Learn</span><span>About</span></div>
+    <span style="font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; border-bottom: 2px solid #10251b; padding-bottom: 2px">Search</span>
+  </div>
+
+  <div style="padding: 46px 56px 30px; border-bottom: 1px solid #10251b; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 52px; align-items: end">
+    <div>
+      <span style="font-size: 12.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #4a5a52">The library</span>
+      <h1 class="fg" style="margin: 10px 0 0; font-weight: 900; font-size: 70px; line-height: .9; letter-spacing: -.025em">Twenty-eight guides,<br>all of them sourced.</h1>
+    </div>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3d4d45">Written to answer one question each, cited where a claim needs a source, and connected to the tool that does the arithmetic for you.</p>
+  </div>
+
+  <div style="padding: 34px 56px 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px">
+
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #10251b; padding-bottom: 8px">
+        <span class="fg" style="font-size: 21px; font-weight: 900">Macros &amp; goals</span>
+        <span class="num" style="font-size: 12.5px; color: #4a5a52">11</span>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">What are macros?<br><span style="font-size: 13px; font-weight: 400; color: #4a5a52">Plain English, one worked split</span></span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">How many calories a day?<br><span style="font-size: 13px; font-weight: 400; color: #4a5a52">The maths, and why it is an estimate</span></span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">Macros for fat loss</span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">Cutting, bulking, maintenance</span>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #10251b; padding-bottom: 8px">
+        <span class="fg" style="font-size: 21px; font-weight: 900">The Journal</span>
+        <span class="num" style="font-size: 12.5px; color: #4a5a52">5</span>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600; background: linear-gradient(transparent 66%, #d9f27a 66%)">Which chain fits your goal<br><span style="font-size: 13px; font-weight: 400; color: #4a5a52">Compared without picking one winner</span></span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">Calories vs. macros: what matters more</span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">How much protein can you absorb?</span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">Are diet drinks bad for you?</span>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #10251b; padding-bottom: 8px">
+        <span class="fg" style="font-size: 21px; font-weight: 900">Training &amp; everyday eating</span>
+        <span class="num" style="font-size: 12.5px; color: #4a5a52">5</span>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">What to eat before a workout<br><span style="font-size: 13px; font-weight: 400; color: #4a5a52">By how long you have, not by rules</span></span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">Why did I gain weight overnight?</span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">Hitting your protein goal on a budget</span>
+        <span style="padding: 13px 0; border-bottom: 1px solid rgba(16,37,27,.14); font-size: 15px; font-weight: 600">Calories on rest days</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin: 44px 56px 0; border: 1px solid #10251b; padding: 26px 30px; display: flex; justify-content: space-between; align-items: center; gap: 30px">
+    <div>
+      <h2 class="fg" style="margin: 0 0 5px; font-size: 27px; font-weight: 900; letter-spacing: -.02em">Every figure traced to the chain that published it.</h2>
+      <p style="margin: 0; font-size: 14.5px; color: #3d4d45">Corrections are public and dated. If a number here is wrong, say so and it changes.</p>
+    </div>
+    <span style="padding: 14px 24px; background: #10251b; color: #f4f1e6; font-size: 14.5px; font-weight: 700; white-space: nowrap">Read the method</span>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

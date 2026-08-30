@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Inter:wght@400;500;700&display=swap">
+  <style>
+    body { margin: 0; }
+    .fg { font-family: "Fraunces", Georgia, "Times New Roman", serif; }
+    .page { font-family: "Inter", system-ui, -apple-system, sans-serif;
+      --paper: #f4f1e6; --ink: #10251b; --soft: #4a5a52; --rule: rgba(16,37,27,.16);
+      --strong: #10251b; --mark: #d9f27a; --panel: #ffffff; --sig: #1d6a49; }
+    .page.dark { --paper: #07110d; --ink: #f4f8f5; --soft: #a8b8af; --rule: rgba(214,244,226,.16);
+      --strong: #f4f8f5; --mark: #3f5a1e; --panel: #101f19; --sig: #a8f0bd; }
+    .rule { border-bottom: 1px solid var(--rule); }
+    a { color: var(--sig); } a:hover { color: var(--ink); }
+    .num { font-variant-numeric: tabular-nums; }
+  </style>
+</helmet>
+<div class="page {{mode}}" style="width: 1280px; min-height: 980px; box-sizing: border-box; background: var(--paper); color: var(--ink); padding: 0 0 56px">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 22px 56px; border-bottom: 1px solid var(--strong)">
+    <span class="fg" style="font-size: 23px; font-weight: 900; letter-spacing: -.01em">GetMacros</span>
+    <div style="display: flex; gap: 30px; font-size: 13.5px; font-weight: 500">
+      <span>Eat out</span><span>Tools</span><span>Learn</span><span>About</span>
+    </div>
+    <span style="font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; border-bottom: 2px solid var(--strong); padding-bottom: 2px">Search</span>
+  </div>
+
+  <div style="padding: 52px 56px 0; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 56px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 22px">
+      <span style="font-size: 12.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--soft)">Free meal finder &nbsp;·&nbsp; 15 chains &nbsp;·&nbsp; 83 meals</span>
+      <h1 class="fg" style="margin: 0; font-weight: 900; font-size: 92px; line-height: .87; letter-spacing: -.025em">
+        Every order,<br>on the record.
+      </h1>
+      <p style="margin: 0; max-width: 46ch; font-size: 18px; line-height: 1.55; color: var(--soft)">
+        Eighty-three complete fast-food orders, each one carrying the four numbers that decide it &mdash; calories, protein, fiber and sodium &mdash; traced back to the chain that published them.
+      </p>
+      <div style="display: flex; gap: 12px; align-items: center; margin-top: 6px">
+        <span style="padding: 15px 26px; background: var(--strong); color: var(--paper); font-size: 15px; font-weight: 700">Find my meal</span>
+        <span style="padding: 15px 4px; font-size: 15px; font-weight: 700; border-bottom: 2px solid var(--strong)">Calculate my macros</span>
+      </div>
+      <ol style="margin: 26px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--strong)">
+        <li style="padding: 14px 16px 14px 0; border-right: 1px solid var(--rule)"><span class="fg num" style="font-size: 15px; font-weight: 900; color: var(--sig)">01</span><div style="font-size: 14.5px; font-weight: 500; margin-top: 3px">Pick your goal</div></li>
+        <li style="padding: 14px 16px; border-right: 1px solid var(--rule)"><span class="fg num" style="font-size: 15px; font-weight: 900; color: var(--sig)">02</span><div style="font-size: 14.5px; font-weight: 500; margin-top: 3px">Choose your restaurants</div></li>
+        <li style="padding: 14px 0 14px 16px"><span class="fg num" style="font-size: 15px; font-weight: 900; color: var(--sig)">03</span><div style="font-size: 14.5px; font-weight: 500; margin-top: 3px">Get meals ranked for you</div></li>
+      </ol>
+    </div>
+
+    <div style="border-top: 2px solid var(--strong); padding-top: 0">
+      <div class="rule" style="display: flex; justify-content: space-between; padding: 10px 0 8px; font-size: 11.5px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--soft)">
+        <span>Highest protein on file</span><span>g</span>
+      </div>
+      <div class="rule" style="display: flex; justify-content: space-between; align-items: baseline; padding: 13px 0">
+        <span style="font-size: 14.5px; line-height: 1.35">Footlong Rotisserie Chicken<br><span style="font-size: 13px; color: var(--soft)">Subway &nbsp;·&nbsp; 640 cal &nbsp;·&nbsp; 8 g fiber</span></span>
+        <span class="fg num" style="font-size: 34px; font-weight: 900">58</span>
+      </div>
+      <div class="rule" style="display: flex; justify-content: space-between; align-items: baseline; padding: 13px 0; background: linear-gradient(transparent 62%, var(--mark) 62%)">
+        <span style="font-size: 14.5px; line-height: 1.35">Chicken Bowl, rice &amp; beans<br><span style="font-size: 13px; color: var(--soft)">Chipotle &nbsp;·&nbsp; 650 cal &nbsp;·&nbsp; 14 g fiber</span></span>
+        <span class="fg num" style="font-size: 34px; font-weight: 900">48</span>
+      </div>
+      <div class="rule" style="display: flex; justify-content: space-between; align-items: baseline; padding: 13px 0">
+        <span style="font-size: 14.5px; line-height: 1.35">Grilled Teriyaki Chicken<br><span style="font-size: 13px; color: var(--soft)">Panda Express &nbsp;·&nbsp; 405 cal &nbsp;·&nbsp; 7 g fiber</span></span>
+        <span class="fg num" style="font-size: 34px; font-weight: 900">42</span>
+      </div>
+      <p style="margin: 14px 0 0; font-size: 13px; line-height: 1.5; color: var(--soft)"><em style="font-family: Fraunces, Georgia, serif; font-style: italic">Figures as published by each chain, checked August 2026.</em></p>
+    </div>
+  </div>
+
+  <div style="margin: 56px 56px 0; border-top: 1px solid var(--strong); padding-top: 34px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 22px">
+      <h2 class="fg" style="margin: 0; font-size: 38px; font-weight: 900; letter-spacing: -.02em">Nine tools, no accounts.</h2>
+      <span style="font-size: 13.5px; font-weight: 700; border-bottom: 2px solid var(--strong); padding-bottom: 2px">See all nine</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule)">
+      <div style="background: var(--panel); padding: 20px 18px; display: flex; flex-direction: column; gap: 6px; min-height: 132px">
+        <span class="fg num" style="font-size: 13px; font-weight: 900; color: var(--sig)">01</span>
+        <span style="font-size: 15px; font-weight: 700; line-height: 1.25">Macro calculator</span>
+        <span style="font-size: 13px; line-height: 1.45; color: var(--soft)">Daily calories and macros from your own numbers.</span>
+      </div>
+      <div style="background: var(--panel); padding: 20px 18px; display: flex; flex-direction: column; gap: 6px">
+        <span class="fg num" style="font-size: 13px; font-weight: 900; color: var(--sig)">02</span>
+        <span style="font-size: 15px; font-weight: 700; line-height: 1.25">Compare two labels</span>
+        <span style="font-size: 13px; line-height: 1.45; color: var(--soft)">Two foods on equal footing, per serving and per 100 cal.</span>
+      </div>
+      <div style="background: var(--panel); padding: 20px 18px; display: flex; flex-direction: column; gap: 6px">
+        <span class="fg num" style="font-size: 13px; font-weight: 900; color: var(--sig)">03</span>
+        <span style="font-size: 15px; font-weight: 700; line-height: 1.25">Recipe scaler</span>
+        <span style="font-size: 13px; line-height: 1.45; color: var(--soft)">Change the servings, keep the arithmetic honest.</span>
+      </div>
+      <div style="background: var(--panel); padding: 20px 18px; display: flex; flex-direction: column; gap: 6px">
+        <span class="fg num" style="font-size: 13px; font-weight: 900; color: var(--sig)">04</span>
+        <span style="font-size: 15px; font-weight: 700; line-height: 1.25">Protein per pound</span>
+        <span style="font-size: 13px; line-height: 1.45; color: var(--soft)">What a gram of protein actually costs you.</span>
+      </div>
+      <div style="background: var(--panel); padding: 20px 18px; display: flex; flex-direction: column; gap: 6px">
+        <span class="fg num" style="font-size: 13px; font-weight: 900; color: var(--sig)">05</span>
+        <span style="font-size: 15px; font-weight: 700; line-height: 1.25">Sodium per portion</span>
+        <span style="font-size: 13px; line-height: 1.45; color: var(--soft)">Label milligrams against the portion you eat.</span>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"mode":{"editor":"enum","options":["light","dark"],"default":"light","tsType":"string"}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { mode: this.props.mode ?? 'light' };
+  }
+}
+</script>
+</body>
+</html>

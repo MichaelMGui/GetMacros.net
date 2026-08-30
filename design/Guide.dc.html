@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Inter:wght@400;500;700&display=swap">
+  <style>
+    body { margin: 0; }
+    .fg { font-family: "Fraunces", Georgia, serif; }
+    .in { font-family: "Inter", system-ui, sans-serif; }
+    .num { font-variant-numeric: tabular-nums; }
+    a { color: #1d6a49; } a:hover { color: #10251b; }
+  </style>
+</helmet>
+<div class="in" style="width: 1280px; min-height: 980px; box-sizing: border-box; background: #f4f1e6; color: #10251b; padding: 0 0 50px">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 22px 56px; border-bottom: 1px solid #10251b">
+    <span class="fg" style="font-size: 23px; font-weight: 900">GetMacros</span>
+    <div style="display: flex; gap: 30px; font-size: 13.5px; font-weight: 500"><span>Eat out</span><span>Tools</span><span>Learn</span><span>About</span></div>
+    <span style="font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; border-bottom: 2px solid #10251b; padding-bottom: 2px">Search</span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 168px minmax(0, 1fr) 214px; gap: 44px; padding: 40px 56px 0; align-items: start">
+
+    <div style="position: sticky; top: 20px; padding-top: 6px">
+      <span style="font-size: 11.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #4a5a52">On this page</span>
+      <div style="display: flex; flex-direction: column; gap: 9px; margin-top: 12px; font-size: 13.5px; line-height: 1.35">
+        <span style="border-left: 2px solid #10251b; padding-left: 10px; font-weight: 700">The limits</span>
+        <span style="border-left: 2px solid rgba(16,37,27,.16); padding-left: 10px; color: #4a5a52">Where it comes from</span>
+        <span style="border-left: 2px solid rgba(16,37,27,.16); padding-left: 10px; color: #4a5a52">What one meal carries</span>
+        <span style="border-left: 2px solid rgba(16,37,27,.16); padding-left: 10px; color: #4a5a52">Keeping it sensible</span>
+      </div>
+    </div>
+
+    <div>
+      <span style="font-size: 12.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #4a5a52">Nutrients to watch &nbsp;·&nbsp; 8 min</span>
+      <h1 class="fg" style="margin: 12px 0 18px; font-weight: 900; font-size: 62px; line-height: .93; letter-spacing: -.025em; max-width: 17ch">How much sodium per day?</h1>
+      <p class="fg" style="margin: 0 0 26px; font-size: 22px; font-style: italic; font-weight: 600; line-height: 1.4; color: #3d4d45; max-width: 40ch">Sodium is the number people notice last and restaurants supply most of. One order can carry a whole day of it.</p>
+
+      <div style="display: flex; gap: 22px; padding: 14px 0; border-top: 1px solid #10251b; border-bottom: 1px solid rgba(16,37,27,.16); font-size: 13px; color: #4a5a52; margin-bottom: 28px">
+        <span>By the GetMacros editorial team</span><span>·</span><span>Reviewed 30 August 2026</span><span>·</span><span style="color: #1d6a49; font-weight: 600">2 sources cited</span>
+      </div>
+
+      <p style="margin: 0 0 18px; font-size: 17.5px; line-height: 1.68; max-width: 62ch">The gap between what the body requires and what guidance permits is deliberate: the limits are set where population blood-pressure risk begins to rise, not at the minimum needed to live.<sup style="color: #1d6a49; font-weight: 700">1</sup></p>
+
+      <h2 class="fg" style="margin: 30px 0 12px; font-size: 30px; font-weight: 900; letter-spacing: -.02em">What one restaurant meal actually carries</h2>
+      <p style="margin: 0 0 18px; font-size: 17.5px; line-height: 1.68; max-width: 62ch">Across the 74 tracked orders that publish a sodium value, the median is 840&nbsp;mg &mdash; roughly 37&nbsp;per cent of a day in a single sitting.</p>
+
+      <div style="border-top: 2px solid #10251b; margin: 22px 0 8px">
+        <div style="display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, .9fr) minmax(0, .7fr) minmax(0, .9fr); padding: 9px 0 7px; border-bottom: 1px solid rgba(16,37,27,.16); font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #4a5a52">
+          <span>Order</span><span>Chain</span><span style="text-align: right">Sodium</span><span style="text-align: right">Share of day</span>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, .9fr) minmax(0, .7fr) minmax(0, .9fr); padding: 11px 0; border-bottom: 1px solid rgba(16,37,27,.1); align-items: baseline; font-size: 15px">
+          <span style="font-weight: 600">Bigger Plate: chow mein + teriyaki</span><span style="color: #4a5a52">Panda Express</span><span class="num" style="text-align: right">2,880</span><span class="fg num" style="text-align: right; font-size: 19px; font-weight: 900; color: #a1521f">125&thinsp;%</span>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, .9fr) minmax(0, .7fr) minmax(0, .9fr); padding: 11px 0; border-bottom: 1px solid rgba(16,37,27,.1); align-items: baseline; font-size: 15px">
+          <span style="font-weight: 600">Footlong Meatball Marinara</span><span style="color: #4a5a52">Subway</span><span class="num" style="text-align: right">2,740</span><span class="fg num" style="text-align: right; font-size: 19px; font-weight: 900; color: #a1521f">119&thinsp;%</span>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, .9fr) minmax(0, .7fr) minmax(0, .9fr); padding: 11px 0; border-bottom: 1px solid rgba(16,37,27,.1); align-items: baseline; font-size: 15px">
+          <span style="font-weight: 600">Grilled Nuggets, 8 count</span><span style="color: #4a5a52">Chick-fil-A</span><span class="num" style="text-align: right">440</span><span class="fg num" style="text-align: right; font-size: 19px; font-weight: 900; color: #1d6a49">19&thinsp;%</span>
+        </div>
+      </div>
+      <p style="margin: 10px 0 0; font-size: 13px; color: #4a5a52"><em class="fg" style="font-style: italic">Against the 2,300 mg limit in the US Dietary Guidelines. Generated from the site&rsquo;s own dataset.</em></p>
+    </div>
+
+    <div style="padding-top: 6px">
+      <div style="border: 1px solid #10251b; padding: 16px 18px">
+        <span style="font-size: 11.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #1d6a49">Short answer</span>
+        <p style="margin: 8px 0 0; font-size: 14px; line-height: 1.55">Below 2,300&nbsp;mg a day for most adults. It is a ceiling, not a target.</p>
+      </div>
+      <div style="margin-top: 20px; border-top: 2px solid #10251b; padding-top: 12px">
+        <span style="font-size: 11.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #4a5a52">Keep reading</span>
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px; font-size: 14px; line-height: 1.35">
+          <span style="border-bottom: 1px solid rgba(16,37,27,.16); padding-bottom: 10px">How to read a nutrition label</span>
+          <span style="border-bottom: 1px solid rgba(16,37,27,.16); padding-bottom: 10px">Eating out without wrecking it</span>
+          <span>Sodium per portion calculator</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

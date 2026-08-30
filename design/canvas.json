@@ -1,0 +1,24 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "Applied — every page" },
+    { "id": "page-2", "name": "Directions" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html",  "page": "page-1", "x": 0,    "y": 0,    "w": 1280, "h": 980, "title": "Home" },
+    { "file": "Chain.dc.html", "page": "page-1", "x": 1400, "y": 0,    "w": 1280, "h": 980, "title": "Restaurant guide" },
+    { "file": "Guide.dc.html", "page": "page-1", "x": 2800, "y": 0,    "w": 1280, "h": 980, "title": "Article" },
+    { "file": "Hub.dc.html",   "page": "page-1", "x": 0,    "y": 1160, "w": 1280, "h": 900, "title": "Library index" },
+    { "file": "Finder.dc.html","page": "page-1", "x": 1400, "y": 1160, "w": 390,  "h": 844, "title": "Meal finder" },
+    { "file": "Tool.dc.html",  "page": "page-1", "x": 1900, "y": 1160, "w": 390,  "h": 844, "title": "Calculator" },
+    { "file": "DirectionA.dc.html", "page": "page-2", "x": 0,    "y": 0, "w": 880, "h": 620, "title": "A — Field Guide" },
+    { "file": "DirectionB.dc.html", "page": "page-2", "x": 980,  "y": 0, "w": 880, "h": 620, "title": "B — Instrument" },
+    { "file": "DirectionC.dc.html", "page": "page-2", "x": 1960, "y": 0, "w": 880, "h": 620, "title": "C — Grocer" }
+  ],
+  "annotations": [
+    { "id": "applied-note", "page": "page-1", "x": 0, "y": -150, "w": 620,
+      "text": "Direction A applied to all six page archetypes.\nFraunces 900 does the talking; hairline rules and tabular numerals carry the data.\nThe Home artboard has a light/dark switch above it." },
+    { "id": "directions-note", "page": "page-2", "x": 0, "y": -150, "w": 620,
+      "text": "Three genuinely different takes, same brand palette and fonts.\nA is applied on the other page. Tell me if B or C is closer and I will rebuild the set in that language." }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}

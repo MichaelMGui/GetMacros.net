@@ -1,2 +1,7 @@
 tools/__pycache__/
 *.pyc
+
+# Seeded design-canvas output. The .dc.html artboards and canvas.json are the
+# source; the seeded page is a ~2 MB build artifact regenerated from them.
+design/*.html
+!design/*.dc.html
