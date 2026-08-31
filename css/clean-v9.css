@@ -417,3 +417,59 @@ html[data-theme="dark"] body.site-v3 .calc-hero-actions a.btn.btn-ghost {
   color: #f2f6f3 !important;
   border-color: rgba(242, 246, 243, .22) !important;
 }
+
+/* ---- Controls inside the panels that stay dark in both themes -----------
+   The block above gives six panels a constant dark fill and a light
+   foreground, but it names only text tags. Anything else inside them kept
+   the page's own colours: the ghost button on the editorial band rendered
+   #0d1b14 ink on a #0d1b14 ground -- 1.00:1, present and completely
+   unreadable, on blog.html and articles.html.
+   Rather than write a competing rule for every control, the panel redefines
+   the tokens the control rules already read. Custom properties inherit, so
+   a button inside one of these panels resolves the same declarations against
+   a palette that suits its ground. No specificity contest, and it covers the
+   controls nobody has put in one of these panels yet.
+   Safe because none of the six ever contains a light surface of its own --
+   checked across all 67 pages; if one ever does, it needs these tokens
+   restored to the page values on that surface. */
+body.site-v3 :is(.gm6-finder-copy, .gm6-compare-head, .gm6-panel-dark,
+  .method-band, .order-console-rail, .home-console-rail) {
+  --d-ink: var(--d-fill-in);
+  --d-muted: rgba(255, 255, 255, .78);
+  --d-muted-2: rgba(255, 255, 255, .68);
+  --d-line: rgba(255, 255, 255, .18);
+  --d-line-2: rgba(255, 255, 255, .34);
+  --d-btn: var(--d-fill-in);
+  --d-btn-in: var(--d-fill);
+  --d-accent: var(--d-fill-in);
+}
+
+/* ---- One primary button, everywhere ------------------------------------
+   Three different fills were still shipping in light mode: the dark solid
+   this direction asks for, a pale mint, and the old lime-to-mint gradient.
+   Two reasons, both structural rather than one-off:
+
+   1. The earlier primary rule requires .btn, so .calc-submit and a bare
+      button[type="submit"] never matched it and kept the gradient.
+   2. `:is(.btn-primary, .calc-submit, button[type="submit"])` in theme-fix
+      scores on its MOST specific argument -- button[type="submit"], not the
+      class -- so that selector is (0,3,3) and the rule above it is (0,3,2).
+      A more general-looking selector was quietly winning.
+
+   This one carries the theme attribute and an attribute on the subject to
+   clear both, and names the submit controls directly. */
+html[data-theme] body.site-v3 :is(a, button, input)[class]:is(.btn-primary,
+  .home-primary, .match-primary, .quiz-continue, .calc-submit),
+html[data-theme] body.site-v3 button[type="submit"]:not(.btn-outline):not(.btn-ghost),
+html[data-theme] body.site-v3 input[type="submit"] {
+  background: var(--d-btn) !important;
+  background-image: none !important;
+  border: 1px solid var(--d-btn) !important;
+  color: var(--d-btn-in) !important;
+  box-shadow: none !important;
+}
+html[data-theme] body.site-v3 :is(a, button, input)[class]:is(.btn-primary,
+  .home-primary, .match-primary, .quiz-continue, .calc-submit)
+  :is(span, b, strong, small, .gm6-arrow) {
+  color: var(--d-btn-in) !important;
+}
