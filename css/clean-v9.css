@@ -388,3 +388,32 @@ html[data-theme] body.site-v3 :is([class*="hero"], .liquid-surface)
 html[data-theme] body.site-v3 :is([class*="hero"], .liquid-surface) .eyebrow {
   color: var(--d-muted-2) !important;
 }
+
+/* A ghost button written for a dark band: white label on a translucent white
+   fill, which on the white ground this direction uses is 1.00:1 — the button
+   is there and completely unreadable. */
+html[data-theme] body.site-v3 :is(a, button).btn:is(.btn-ghost, .btn-outline, .quiz-back) {
+  background: transparent !important;
+  border: 1px solid var(--d-line-2) !important;
+  color: var(--d-ink) !important;
+}
+html[data-theme] body.site-v3 :is(a, button).btn:is(.btn-ghost, .btn-outline, .quiz-back)
+  :is(span, b, small) { color: var(--d-ink) !important; }
+
+/* Stated with literal colours and no var(), and with the page's own body
+   classes in the selector. The ghost button on the calculators hub resisted
+   every token-based rule above it; a literal declaration removes var()
+   resolution as a variable in the diagnosis. */
+html body.site-v3 a.btn.btn-ghost,
+html body.site-v3 button.btn.btn-ghost,
+html body.site-v3 .calc-hero-actions a.btn.btn-ghost {
+  color: #0d1b14 !important;
+  background-color: transparent !important;
+  border: 1px solid #dfe5e1 !important;
+}
+html[data-theme="dark"] body.site-v3 a.btn.btn-ghost,
+html[data-theme="dark"] body.site-v3 button.btn.btn-ghost,
+html[data-theme="dark"] body.site-v3 .calc-hero-actions a.btn.btn-ghost {
+  color: #f2f6f3 !important;
+  border-color: rgba(242, 246, 243, .22) !important;
+}

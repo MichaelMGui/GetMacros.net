@@ -589,6 +589,8 @@ body.site-v3 :is(.editorial-figure, .article-illustration, .blog-hero-art) {
 
 /* Menu descriptions were the last text under 12px. */
 body.site-v3 .nav-popover small { font-size: max(.79rem, 12.5px) !important; }
+/* RETIRED with the green banner (see note above) --
+
 /* RETIRED (see note above) --
 
 
@@ -619,6 +621,8 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
   -webkit-text-fill-color: #ffffff !important;
   background: none !important;
 }
+-- */
+
 -- */
 
 /* RETIRED (see note above) --
@@ -663,12 +667,14 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
   .calc-photo-card figcaption {
   color: #eef6f1 !important;
 }
+/* RETIRED with the green banner (see note above) --
+
 
 /* Outline and ghost buttons on a hero.
  *
  * unified-v7's light-theme rule gives them --u-ink on a 5% dark wash, which is
  * correct on a light page and unreadable on the dark banner they actually sit
- * on -- "Find a meal for my goal" was near-black on dark green. */
+ * on -- "Find a meal for my goal" was near-black on dark green. * /
 html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="hero"],
     .hero, .page-hero, .gm6-hero, .policy-hero):not(:where(.focused-guide-hero,
     .article-hero, .page-hero, .focus-page-hero, .guide-hub-hero, .search-hero))
@@ -677,6 +683,8 @@ html[data-theme] body.site-v3 main :is(section[class*="hero"], header[class*="he
   border-color: rgba(255, 255, 255, .42) !important;
   background: rgba(255, 255, 255, .1) !important;
 }
+-- */
+
 
 /* The method band is a dark panel by design (recovery.css paints it #10231b)
    and its text is light to match. Something later repaints it near-white on
@@ -1142,10 +1150,14 @@ body.site-v3 .gm6-macro-score span:first-child {
   background: #1f7a52 !important;
   border-color: rgba(255, 255, 255, .18) !important;
 }
+/* RETIRED with the green banner (see note above) --
+
 html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:first-child,
 html[data-theme] body.site-v3 main .gm6-hero .gm6-macro-score span:first-child :is(b, small) {
   color: #ffffff !important;
 }
+-- */
+
 /* RETIRED (see note above) --
 
 /* The other two chips are translucent over the hero gradient, so their labels
