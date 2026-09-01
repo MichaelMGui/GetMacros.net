@@ -83,7 +83,7 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="stylesheet" href="css/studio-v6.css?v=20260828c">
 {THEME_BOOT}
 <link rel="stylesheet" href="css/unified-v7.css?v=20260828g">
-<link rel="stylesheet" href="css/theme-fix.css?v=20260828g">
+<link rel="stylesheet" href="css/theme-fix.css?v=bb1ce922e4">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUBLISHER}" crossorigin="anonymous"></script>
 {jsonld}
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
