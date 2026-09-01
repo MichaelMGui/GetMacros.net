@@ -72,6 +72,9 @@ GUIDE_GROUPS = OrderedDict({
         "macros-for-weight-loss.html", "macros-for-muscle-gain.html",
         "cutting-bulking-maintenance-explained.html", "body-recomposition-explained.html",
         "how-many-calories-should-i-eat-a-day.html", "what-are-macros.html",
+        "how-to-calculate-maintenance-calories.html", "what-is-a-calorie-deficit.html",
+        "can-you-build-muscle-in-a-calorie-deficit.html",
+        "when-to-recalculate-calories-and-macros.html",
     ],
     "Eating out": [
         "how-to-eat-out-without-wrecking-your-goal.html",
@@ -81,6 +84,7 @@ GUIDE_GROUPS = OrderedDict({
     ],
     "Protein and food": [
         "high-protein-foods-list.html",
+        "how-to-build-a-balanced-meal-with-macros.html",
     ],
     "Training and everyday eating": [
         "what-to-eat-before-a-workout.html",

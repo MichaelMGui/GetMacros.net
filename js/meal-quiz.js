@@ -6,15 +6,14 @@
   var root = document.getElementById("meal-quiz");
   if (!root || !meals.length) return;
 
-  // Chains in order of how many people eat at them, by US systemwide sales,
-  // rather than alphabetically. Alphabetical put CAVA and Chick-fil-A first and
-  // buried McDonald's in the middle, so the list opened with the names fewest
-  // people were looking for. Anything not listed falls in after, alphabetically,
-  // so adding a chain to the data never drops it off the step.
+  // Product-first order: begin with chains that combine broad familiarity with
+  // the strongest range of complete meals in this dataset. This is an interface
+  // priority, not a claim about national sales or a universal restaurant rank.
+  // Anything new falls in after these, alphabetically.
   var CHAIN_RANK = [
-    "McDonald's", "Starbucks", "Chick-fil-A", "Taco Bell", "Wendy's",
-    "Dunkin'", "Subway", "Chipotle", "Popeyes", "KFC",
-    "Panera", "Panda Express", "Jersey Mike's", "Sweetgreen", "CAVA"
+    "Chipotle", "McDonald's", "Wendy's", "Chick-fil-A", "Taco Bell",
+    "Subway", "Panda Express", "Starbucks", "Panera", "CAVA",
+    "Sweetgreen", "Jersey Mike's", "KFC", "Popeyes", "Dunkin'"
   ];
   // Each chain gets a tile in its own signature colour. These are initials, not
   // brand logos: we have no licence to redistribute another company's mark, and

@@ -57,15 +57,15 @@ HOME_MAIN = r'''<main id="main-content">
 <section class="gm6-finder-showcase">
   <div class="container">
     <div class="gm6-section-intro studio-reveal">
-      <div><p class="eyebrow">The flagship tool</p><h2>One shortlist. Your priorities.</h2></div>
-      <div><p>Healthy Order Match combines goals instead of forcing one generic definition of healthy. Choose high protein and bulking together, or cutting and lower sodium, and see why each result fits.</p></div>
+      <div><p class="eyebrow">Healthy Order Match</p><h2>Find meals for your goals.</h2></div>
+      <div><p>Combine goals such as high protein and bulking, or cutting and lower sodium. See why each match fits.</p></div>
     </div>
     <div class="gm6-finder-shell studio-reveal" data-spotlight>
       <div class="gm6-finder-copy">
-        <p class="eyebrow">Healthy Order Match</p>
-        <h3>Turn five clear answers into dinner.</h3>
-        <p>No sign-up and no hidden scoring. The tool ranks the same published menu data shown across the site.</p>
-        <ol class="gm6-flow"><li>Choose one or several goals</li><li>Set appetite and dietary needs</li><li>Pick restaurants you can reach</li><li>Compare five strong matches</li></ol>
+        <p class="eyebrow">Five quick questions</p>
+        <h3>Get five meals ranked for you.</h3>
+        <p>Results use published restaurant nutrition data.</p>
+        <ol class="gm6-flow"><li>Choose your goals</li><li>Set dietary needs and appetite</li><li>Select nearby restaurants</li><li>Compare your matches</li></ol>
         <a class="btn btn-primary" href="restaurant-meal-finder.html">Build my shortlist <span class="gm6-arrow" aria-hidden="true">→</span></a>
       </div>
       <div class="gm6-finder-preview" aria-label="Healthy Order Match question preview">
@@ -111,7 +111,7 @@ HOME_MAIN = r'''<main id="main-content">
 
 <section class="gm6-compare">
   <div class="container">
-    <div class="gm6-section-intro studio-reveal"><div><p class="eyebrow">Live comparison</p><h2>Three meals. One clear view.</h2></div><div><p>Calories alone do not tell the whole story. Compare the numbers that materially change a food decision.</p></div></div>
+    <div class="gm6-section-intro studio-reveal"><div><p class="eyebrow">Meal comparison</p><h2>Compare meals at a glance.</h2></div><div><p>Review calories, protein and fiber side by side.</p></div></div>
     <div class="gm6-compare-shell studio-reveal" tabindex="0" role="region" aria-label="Meal nutrition comparison">
       <div class="gm6-compare-head"><strong>Meal</strong><strong>Calories</strong><strong>Protein</strong><strong>Fiber</strong></div>
       <div class="gm6-compare-row"><div class="gm6-compare-meal"><strong>Chicken Bowl, rice &amp; beans</strong><small>Chipotle</small></div><span class="gm6-compare-value">650</span><span class="gm6-compare-value is-protein">48 g</span><span class="gm6-compare-value">14 g</span></div>
@@ -126,9 +126,8 @@ HOME_MAIN = r'''<main id="main-content">
   <div class="container gm6-calculator-shell">
     <div class="gm6-calculator-copy studio-reveal">
       <p class="eyebrow">Free Macro Calculator</p>
-      <h2>Know your day. Then choose your meal.</h2>
-      <p>Estimate daily calories, protein, carbs and fat using Mifflin–St Jeor, then bring the result directly to the restaurant finder.</p>
-      <ul><li>Weight in pounds or kilograms on the full tool</li><li>Height in feet/inches or centimeters</li><li>Cutting, recomposition, maintenance and muscle-gain goals</li></ul>
+      <h2>Calculate your daily macros.</h2>
+      <p>Estimate calories, protein, carbs and fat, then use those targets in the meal finder.</p>
       <a class="btn btn-outline" href="calculators.html">Open the full calculator</a>
     </div>
     <form id="home-macro-form" class="home-calc-form gm6-home-form studio-reveal">
@@ -150,20 +149,20 @@ HOME_MAIN = r'''<main id="main-content">
 
 <section class="gm6-tools gm6-tools-joined">
   <div class="container">
-    <p class="gm6-tools-lead">Nine free tools. Each answers one question, with no account and nothing hidden behind a wall. Five of them are here; <a href="calculators.html">the rest are one click away</a>.</p>
+    <p class="gm6-tools-lead">Free tools for macros, recipes and food labels. No account required. <a href="calculators.html">See all nine tools</a>.</p>
     <div class="gm6-tool-bento">
       <a class="gm6-tool studio-reveal" href="calculators.html"><span class="gm6-tool-num">01 · Daily targets</span><div><h3>Free Macro Calculator</h3><p>Estimate daily calories and macros, with the assumptions kept visible.</p></div><span class="gm6-tool-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg></span></a>
-      <a class="gm6-tool studio-reveal" href="nutrition-label-comparison-tool.html"><span class="gm6-tool-num">02 · Compare</span><div><h3>Nutrition labels, side by side</h3><p>Put two products on equal footing.</p></div></a>
-      <a class="gm6-tool studio-reveal" href="recipe-macro-scaler.html"><span class="gm6-tool-num">03 · Cook</span><div><h3>Recipe macro scaler</h3><p>Change servings without redoing every calculation.</p></div></a>
-      <a class="gm6-tool studio-reveal" href="protein-value-calculator.html"><span class="gm6-tool-num">04 · Shop</span><div><h3>Protein cost per gram</h3><p>Compare price and protein without mental math.</p></div></a>
-      <a class="gm6-tool studio-reveal" href="budget-meal-builder.html"><span class="gm6-tool-num">05 · Plan</span><div><h3>Budget meal builder</h3><p>Build a practical plate around cost and nutrition.</p></div></a>
+      <a class="gm6-tool studio-reveal" href="nutrition-label-comparison-tool.html"><span class="gm6-tool-num">02 · Compare</span><div><h3>Compare labels</h3><p>Put two products on equal footing.</p></div></a>
+      <a class="gm6-tool studio-reveal" href="recipe-macro-scaler.html"><span class="gm6-tool-num">03 · Cook</span><div><h3>Scale a recipe</h3><p>Change servings without redoing every calculation.</p></div></a>
+      <a class="gm6-tool studio-reveal" href="protein-value-calculator.html"><span class="gm6-tool-num">04 · Shop</span><div><h3>Protein value</h3><p>Compare price and protein without mental math.</p></div></a>
+      <a class="gm6-tool studio-reveal" href="budget-meal-builder.html"><span class="gm6-tool-num">05 · Plan</span><div><h3>Budget meals</h3><p>Build a practical plate around cost and nutrition.</p></div></a>
     </div>
   </div>
 </section>
 
 <section class="gm6-learning">
   <div class="container">
-    <div class="gm6-section-intro studio-reveal"><div><p class="eyebrow">Curated learning</p><h2>Read what helps at the next meal.</h2></div><div><p>Evidence-aware guides selected for practical value—not a wall of links designed to inflate page count.</p></div></div>
+    <div class="gm6-section-intro studio-reveal"><div><p class="eyebrow">Nutrition guides</p><h2>Practical answers, clearly explained.</h2></div><div><p>Learn about protein, calorie targets, food labels and common supplement questions.</p></div></div>
     <div class="gm6-learning-grid">
       <a class="gm6-editorial studio-reveal" href="best-fast-food-restaurants-for-your-goals.html"><small>Restaurant decisions · 8 min</small><h3>Which fast-food restaurant fits your goal?</h3><p>Compare chains without pretending one winner works for everyone.</p></a>
       <div class="gm6-reading-list">
@@ -182,7 +181,7 @@ HOME_MAIN = r'''<main id="main-content">
 
 <section class="gm6-method">
   <div class="container gm6-method-grid">
-    <div class="studio-reveal"><p class="eyebrow">Trust the method, not a badge</p><h2>We show what the number can—and cannot—tell you.</h2><p>Restaurant data changes. Portions vary. “Healthy” depends on the person and the goal. GetMacros keeps those limits visible instead of burying them.</p><a class="text-link" href="editorial-policy.html">Read the editorial standards →</a></div>
+    <div class="studio-reveal"><p class="eyebrow">Data you can check</p><h2>See the source behind each number.</h2><p>Menus and portions change. We publish sources, review dates and corrections so you can judge the data.</p><a class="text-link" href="editorial-policy.html">Read the editorial standards →</a></div>
     <div class="gm6-method-points studio-reveal"><div><strong>Published sources</strong><span>Menu figures trace back to each restaurant’s current nutrition information.</span></div><div><strong>Visible dates</strong><span>Restaurant guides state when the source was last checked.</span></div><div><strong>Missing stays missing</strong><span>An unpublished sodium or fiber value never becomes zero.</span></div><div><strong>Corrections welcome</strong><span>Material errors have a clear reporting and correction path.</span></div></div>
   </div>
 </section>
@@ -223,6 +222,10 @@ HOME_MAIN = _drop_section(HOME_MAIN, "gm6-goal-story")
 # finder results already reach, sitting directly under two sections that send
 # you to them.
 HOME_MAIN = _drop_section(HOME_MAIN, "gm6-restaurants")
+
+# The final banner repeated the same finder call-to-action already presented
+# in the hero and product section without adding new information.
+HOME_MAIN = _drop_section(HOME_MAIN, "gm6-final")
 
 # The tools bento sat seventh, so the clearest statement of what the site gives
 # you was three screens down. It moves directly under the hero and shares its

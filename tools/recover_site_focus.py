@@ -381,14 +381,15 @@ def build_feed(final: list[dict]) -> None:
 
 def write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
     handle = io.StringIO(newline="")
-    writer = csv.DictWriter(handle, fieldnames=fields)
+    # Keep reports byte-stable across Windows and Linux builds.
+    writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
     writer.writeheader()
     writer.writerows(rows)
     content = handle.getvalue()
-    if path.exists() and path.read_text(encoding="utf-8-sig").replace("\r\n", "\n") == content.replace("\r\n", "\n"):
+    if path.exists() and path.read_text(encoding="utf-8-sig") == content:
         return
     try:
-        path.write_text("\ufeff" + content, encoding="utf-8")
+        path.write_bytes(("\ufeff" + content).encode("utf-8"))
     except PermissionError:
         # Spreadsheet apps on Windows may hold an audit CSV open. That report
         # must not prevent the site, sitemap and validation work from finishing.

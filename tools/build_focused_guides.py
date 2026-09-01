@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the five focused, evidence-led guides added in August 2026."""
+"""Build focused, evidence-led guides for the practical nutrition library."""
 from __future__ import annotations
 
 import html
@@ -11,7 +11,8 @@ from focus_components import SITE, breadcrumbs, footer, head, nav
 from site_scope import GUIDE_GROUPS
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "2026-08-30"
+UPDATED = "2026-08-31"
+UPDATED_HUMAN = "August 31, 2026"
 
 ARTICLES = [
     {
@@ -276,6 +277,238 @@ ARTICLES = [
     },
 ]
 
+ARTICLES.extend([
+    {
+        "path": "how-to-calculate-maintenance-calories.html",
+        "title": "How to Calculate Maintenance Calories | GetMacros",
+        "h1": "How to calculate maintenance calories",
+        "desc": "Calculate maintenance calories with a clear starting estimate, then use your weight trend to find the intake that actually maintains your weight.",
+        "dek": "A formula gives you a starting point. Your own consistent data turns it into a useful target.",
+        "read": "8 min read",
+        "quick": "Estimate resting energy needs with a validated equation, account for activity, then hold the estimate steady long enough to compare average intake with your body-weight trend. Maintenance is a working range, not one permanently exact number.",
+        "body": r'''
+<h2>Maintenance calories are an average</h2>
+<p>Your maintenance calories are the average intake that keeps body weight broadly stable over time. They are often called total daily energy expenditure, or TDEE. The total includes resting metabolism, movement, training and the energy used to digest food. None of those components is perfectly identical every day.</p>
+<p>That is why maintenance is better treated as a range. A restaurant day, a long walk and a quiet workday can all have different totals while the weekly pattern remains stable.</p>
+
+<h2>Method 1: start with an equation</h2>
+<p>The GetMacros calculator uses the Mifflin–St Jeor equation to estimate resting energy expenditure from weight, height, age and equation sex. The original study derived the equation from 498 healthy adults. An activity factor then converts that resting estimate into an estimated daily total.</p>
+<div class="guide-formula"><span>Estimated resting needs</span><b>×</b><span>Activity factor</span><b>=</b><span>Starting maintenance estimate</span></div>
+<p>Activity is the least precise input. “Moderately active” can mean different things to two people, and planned exercise is only part of daily movement. Use the result as a first estimate—not proof that your body burns that exact number.</p>
+
+<h2>Method 2: use your own trend</h2>
+<ol>
+<li>Choose the calculator estimate or your current average intake as a starting point.</li>
+<li>Keep intake reasonably consistent for two to three weeks.</li>
+<li>Weigh under similar conditions and compare weekly averages, not isolated days.</li>
+<li>If the average is stable, your average intake is near maintenance.</li>
+<li>If the trend moves consistently, make a modest adjustment and observe again.</li>
+</ol>
+<p>Food tracking and scale weight both contain noise. Restaurant portions vary, labels round values and body water changes quickly. More decimal places do not fix uncertain inputs.</p>
+
+<h2>When should the estimate change?</h2>
+<p>Recheck after a meaningful weight change, a major shift in training or daily movement, or several weeks in which the trend no longer matches the plan. Energy expenditure changes with body size and composition, and it can also adapt during prolonged underfeeding. Do not react to one high or low morning.</p>
+
+<h2>A practical example</h2>
+<p>Suppose the calculator estimates 2,450 calories. You average about 2,400 for three weeks and your weekly weight averages are 176.2, 176.0 and 176.3 pounds. That intake is probably close enough to maintenance for planning. Calling it exactly 2,413 would suggest precision the data cannot support.</p>
+<p>Start with the <a href="calculators.html">free macro calculator</a>. If your goal changes, read <a href="cutting-bulking-maintenance-explained.html">cutting, bulking and maintenance</a> before changing the number.</p>
+''',
+        "sources": [
+            ("Mifflin–St Jeor resting energy equation", "https://pubmed.ncbi.nlm.nih.gov/2305711/"),
+            ("NIDDK Body Weight Planner", "https://www.niddk.nih.gov/bwp"),
+            ("Control of energy expenditure in humans", "https://pubmed.ncbi.nlm.nih.gov/25905198/"),
+        ],
+        "related": [("Free macro calculator", "calculators.html"), ("What is a calorie deficit?", "what-is-a-calorie-deficit.html"), ("When to recalculate macros", "when-to-recalculate-calories-and-macros.html")],
+    },
+    {
+        "path": "what-is-a-calorie-deficit.html",
+        "title": "What Is a Calorie Deficit? | GetMacros",
+        "h1": "What is a calorie deficit?",
+        "desc": "A calorie deficit means taking in less energy than you use over time. Learn how to estimate one, why weight loss slows and what to monitor.",
+        "dek": "A deficit describes an energy gap. It does not tell you which foods to eat or how aggressive the plan should be.",
+        "read": "8 min read",
+        "quick": "A calorie deficit occurs when average energy intake is below average energy expenditure. It can produce weight loss over time, but the relationship is dynamic: expenditure, body weight, appetite and adherence can change as the plan continues.",
+        "body": r'''
+<h2>The plain-language definition</h2>
+<p>Your body uses energy at rest, during movement and exercise, and while processing food. When average intake stays below average expenditure, stored energy helps cover the difference. That is a calorie deficit.</p>
+<p>The important word is <em>average</em>. One meal does not create or erase a long-term result. A higher restaurant day can exist inside an overall deficit, just as one low-calorie day cannot guarantee weight loss.</p>
+
+<h2>How to estimate a starting deficit</h2>
+<ol>
+<li>Estimate your <a href="how-to-calculate-maintenance-calories.html">maintenance calories</a>.</li>
+<li>Choose a moderate starting reduction rather than the largest number you can tolerate for a few days.</li>
+<li>Keep protein, produce and satisfying meals in the plan.</li>
+<li>Track the trend for several weeks under similar conditions.</li>
+<li>Adjust only when the trend and adherence both justify it.</li>
+</ol>
+<p>The CDC emphasizes gradual, steady weight loss and a broader lifestyle that includes eating patterns, activity, sleep and stress management. A calorie target is one tool inside that process, not the whole process.</p>
+
+<h2>Why the simple 3,500-calorie rule falls short</h2>
+<p>The familiar rule assumes a fixed energy gap produces the same rate forever. Human weight change is not linear. A smaller body generally requires less energy, movement can change, and the body can adapt to prolonged restriction. The NIH Body Weight Planner uses a dynamic model for that reason.</p>
+<p>This does not mean a deficit “stops working.” It means the original estimate may no longer describe the current situation.</p>
+
+<h2>Signs the plan may be too aggressive</h2>
+<ul>
+<li>Training performance and recovery decline persistently.</li>
+<li>Hunger or fatigue makes the plan difficult to sustain.</li>
+<li>Food rules become increasingly rigid or distressing.</li>
+<li>The rate of loss is much faster than intended.</li>
+</ul>
+<p>Pregnancy, growth, eating-disorder recovery and many medical conditions require individualized care. Speak with a qualified clinician or registered dietitian rather than using a general calculator.</p>
+
+<h2>Judge the plan by more than the scale</h2>
+<p>Use weekly weight trends, but also monitor strength, energy, hunger, sleep and your ability to eat normally around other people. A mathematically larger deficit is not automatically a better plan.</p>
+''',
+        "sources": [
+            ("CDC: Steps for Losing Weight", "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"),
+            ("NIDDK Body Weight Planner", "https://www.niddk.nih.gov/bwp"),
+            ("Dynamic mathematical model of body-weight change", "https://pubmed.ncbi.nlm.nih.gov/21872751/"),
+        ],
+        "related": [("Maintenance calories", "how-to-calculate-maintenance-calories.html"), ("Macros for weight loss", "macros-for-weight-loss.html"), ("Weight-goal timeline", "weight-goal-timeline-calculator.html")],
+    },
+    {
+        "path": "can-you-build-muscle-in-a-calorie-deficit.html",
+        "title": "Can You Build Muscle in a Calorie Deficit? | GetMacros",
+        "h1": "Can you build muscle in a calorie deficit?",
+        "desc": "Muscle gain in a calorie deficit is possible for some people, but energy deficiency makes it harder. See who is most likely to progress and what matters.",
+        "dek": "Possible does not mean equally likely for everyone—or optimal for maximizing muscle gain.",
+        "read": "9 min read",
+        "quick": "Some people can gain lean mass while losing fat, especially newer or returning lifters and people with more body fat. Resistance training and adequate protein matter, but larger energy deficits generally make lean-mass gains harder.",
+        "body": r'''
+<h2>The honest answer is “sometimes”</h2>
+<p>Building muscle requires a training signal, amino acids and enough recovery. Stored body energy can help cover an intake deficit, so fat loss and lean-mass gain are not biologically incompatible. But an energy deficit makes the environment less favorable for maximizing growth.</p>
+<p>A meta-analysis found that energy deficiency impaired lean-mass gains from resistance training even when strength gains remained possible. It also found a relationship between larger deficits and poorer lean-mass outcomes. That is a reason to avoid treating an extreme cut as a muscle-building shortcut.</p>
+
+<h2>Who has the best chance?</h2>
+<ul>
+<li><strong>New lifters:</strong> the training stimulus is novel, leaving more room for early adaptation.</li>
+<li><strong>People returning after time off:</strong> previously built muscle may return more readily than entirely new tissue is gained.</li>
+<li><strong>People with more stored body fat:</strong> more stored energy is available while training creates a reason to retain or build lean tissue.</li>
+<li><strong>People using a modest deficit:</strong> recovery is generally easier than during severe restriction.</li>
+</ul>
+<p>Advanced, already-lean lifters usually have less room for simultaneous progress. If maximum muscle gain is the priority, maintenance or a modest surplus is often the more predictable route.</p>
+
+<h2>What the strongest experiment can—and cannot—show</h2>
+<p>In a four-week randomized trial, young men completed intense resistance and interval training during a large energy deficit. The higher-protein group gained more lean mass and lost more fat than the lower-protein group. That shows recomposition can occur under tightly controlled, demanding conditions.</p>
+<p>It does not prove everyone should copy the trial’s aggressive deficit, protein intake or six-day training schedule. The intervention was short, supervised and specific.</p>
+
+<h2>Build the plan around four priorities</h2>
+<ol>
+<li><strong>Progressive resistance training:</strong> give the body a clear reason to adapt.</li>
+<li><strong>Adequate daily protein:</strong> use a sensible range based on body size and training, not an unlimited target.</li>
+<li><strong>A manageable deficit:</strong> faster weight loss can compete with recovery and lean-mass gain.</li>
+<li><strong>Sleep and time:</strong> judge several weeks of strength, measurements and weight trends together.</li>
+</ol>
+<p>Use the <a href="calculators.html">macro calculator</a> as a starting estimate, then read <a href="body-recomposition-explained.html">body recomposition explained</a> for a longer-term view.</p>
+''',
+        "sources": [
+            ("Higher protein during energy deficit and intense exercise: randomized trial", "https://pubmed.ncbi.nlm.nih.gov/26817506/"),
+            ("Energy deficiency and resistance-training gains: meta-analysis", "https://pubmed.ncbi.nlm.nih.gov/34623696/"),
+            ("ISSN position stand: protein and exercise", "https://pubmed.ncbi.nlm.nih.gov/28642676/"),
+        ],
+        "related": [("Body recomposition", "body-recomposition-explained.html"), ("Macros for muscle gain", "macros-for-muscle-gain.html"), ("Protein per day", "how-much-protein-per-day.html")],
+    },
+    {
+        "path": "when-to-recalculate-calories-and-macros.html",
+        "title": "When Should You Recalculate Calories and Macros? | GetMacros",
+        "h1": "When should you recalculate calories and macros?",
+        "desc": "Recalculate calories and macros after meaningful changes—not every scale fluctuation. Use weight trends, activity and performance to decide when.",
+        "dek": "Update the target when the inputs or the trend have changed enough to matter.",
+        "read": "7 min read",
+        "quick": "Recalculate after a meaningful weight change, a sustained change in activity or training, a new goal, or several consistent weeks in which progress differs from the plan. Do not recalculate because of one meal or one weigh-in.",
+        "body": r'''
+<h2>Your target was always an estimate</h2>
+<p>Calorie equations use current inputs such as weight, height, age and activity. Macro targets then divide that energy estimate according to the goal. If those inputs change, the old result can become less useful.</p>
+
+<h2>Five good reasons to recalculate</h2>
+<div class="guide-decision-table" role="region" aria-label="Reasons to recalculate calories and macros" tabindex="0"><table><thead><tr><th>Change</th><th>Why it matters</th></tr></thead><tbody>
+<tr><td>Meaningful weight change</td><td>Body size and composition influence energy expenditure.</td></tr>
+<tr><td>New activity pattern</td><td>A new job, step count or training schedule can change daily expenditure.</td></tr>
+<tr><td>New goal</td><td>Maintenance, cutting and gaining require different energy directions.</td></tr>
+<tr><td>Several weeks off-plan</td><td>A consistent trend can show that the starting estimate needs adjustment.</td></tr>
+<tr><td>Major recovery change</td><td>Illness, injury or a return to training can change needs and priorities.</td></tr>
+</tbody></table></div>
+
+<h2>What does not justify a new target?</h2>
+<ul>
+<li>One high restaurant meal.</li>
+<li>One unexpectedly high or low weigh-in.</li>
+<li>A few days of soreness or appetite change.</li>
+<li>A calculator giving a slightly different answer after rounding.</li>
+</ul>
+<p>Changing the target too often makes it impossible to learn from the plan. Hold a reasonable target steady long enough to see a trend.</p>
+
+<h2>A simple review schedule</h2>
+<ol>
+<li>Compare weekly weight averages for at least two to three weeks.</li>
+<li>Check training performance, hunger, energy and adherence.</li>
+<li>Confirm that activity has not changed accidentally.</li>
+<li>If the trend is consistently wrong for the goal, adjust modestly.</li>
+<li>Run the <a href="calculators.html">calculator</a> again after a meaningful change in body weight or routine.</li>
+</ol>
+
+<h2>Why needs can fall during weight loss</h2>
+<p>A smaller body generally uses less energy, and research also describes adaptive reductions in energy expenditure during prolonged restriction and weight loss. The size of that adaptation varies. It should not be used to declare a metabolism “broken,” but it is another reason an old maintenance estimate may stop matching current data.</p>
+<p>Keep protein relatively stable unless body size, training or clinical advice changes the target. Most routine adjustments can come from carbohydrate and fat according to preference and training needs.</p>
+''',
+        "sources": [
+            ("Changes in energy expenditure with weight gain and loss", "https://pubmed.ncbi.nlm.nih.gov/27739007/"),
+            ("Body composition and adaptive thermogenesis during weight loss", "https://pubmed.ncbi.nlm.nih.gov/36863769/"),
+            ("NIDDK Body Weight Planner", "https://www.niddk.nih.gov/bwp"),
+        ],
+        "related": [("Maintenance calories", "how-to-calculate-maintenance-calories.html"), ("Why weight jumped overnight", "why-did-i-gain-weight-overnight.html"), ("Cutting, bulking and maintenance", "cutting-bulking-maintenance-explained.html")],
+    },
+    {
+        "path": "how-to-build-a-balanced-meal-with-macros.html",
+        "title": "How to Build a Balanced Meal With Macros | GetMacros",
+        "h1": "How to build a balanced meal with macros",
+        "desc": "Build a balanced meal with protein, carbohydrate, produce and satisfying fat—then adjust portions for cutting, maintenance or bulking.",
+        "dek": "Use macros to shape the meal, not to turn dinner into an accounting exercise.",
+        "read": "9 min read",
+        "quick": "Start with a useful protein source, add a carbohydrate that fits the meal, include fruit or vegetables, and use fats and flavor deliberately. Change portion sizes for your goal instead of inventing separate ‘diet foods.’",
+        "body": r'''
+<h2>A four-part meal template</h2>
+<div class="guide-formula"><span>Protein</span><b>+</b><span>Carbohydrate</span><b>+</b><span>Produce</span><b>+</b><span>Fat and flavor</span></div>
+<p>This is a flexible assembly method, not a rule that every plate must look identical. A bean burrito, salmon rice bowl, lentil curry and yogurt-oat breakfast can all satisfy it in different ways.</p>
+
+<h2>1. Choose a protein anchor</h2>
+<p>Pick a serving that makes a meaningful contribution to your daily target: poultry, fish, eggs, dairy, tofu, tempeh, beans, lentils or another food you enjoy. USDA MyPlate emphasizes variety because different protein foods bring different nutrients.</p>
+
+<h2>2. Add carbohydrate for energy and satisfaction</h2>
+<p>Rice, potatoes, oats, bread, pasta, fruit, corn, beans and other carbohydrate foods can support training and make a meal satisfying. The amount can rise on higher-energy days and shrink on lower-energy days without labeling the food itself good or bad.</p>
+
+<h2>3. Add produce for volume, fiber and variety</h2>
+<p>Use vegetables or fruit that fit the meal rather than forcing a plain side salad everywhere. Frozen, canned and fresh options can all work. Sauces and preparation affect calories and sodium, so include them in the meal rather than pretending they do not count.</p>
+
+<h2>4. Use fat and flavor on purpose</h2>
+<p>Oil, nuts, seeds, avocado, cheese and sauces can add flavor and energy. They are especially useful when appetite is low or calories are high. During a cut, measure calorie-dense additions often enough to understand the portion—but do not strip every meal of flavor.</p>
+
+<h2>Adjust the same meal for three goals</h2>
+<div class="guide-decision-table" role="region" aria-label="Balanced meal adjustments by goal" tabindex="0"><table><thead><tr><th>Goal</th><th>Practical adjustment</th></tr></thead><tbody>
+<tr><td>Cutting</td><td>Keep the protein anchor, use plenty of produce and reduce the most calorie-dense extras first.</td></tr>
+<tr><td>Maintenance</td><td>Use portions that leave energy, hunger and weight trend broadly stable.</td></tr>
+<tr><td>Bulking</td><td>Add carbohydrate, a larger protein portion when needed, and convenient energy from fats or drinks.</td></tr>
+</tbody></table></div>
+
+<h2>Five meals built from the template</h2>
+<ul>
+<li>Chicken or tofu, rice, roasted vegetables and tahini sauce.</li>
+<li>Eggs, toast, fruit and yogurt.</li>
+<li>Lentil pasta, tomato sauce, vegetables and parmesan or nutritional yeast.</li>
+<li>Salmon, potatoes, green beans and olive-oil dressing.</li>
+<li>A burrito bowl with beans, rice, meat or sofritas, salsa and guacamole.</li>
+</ul>
+<p>When eating out, use the same logic: identify the protein, carbohydrate, produce and calorie-dense extras, then compare the published numbers in <a href="restaurant-meal-finder.html">Healthy Order Match</a>.</p>
+''',
+        "sources": [
+            ("USDA MyPlate", "https://www.myplate.gov/"),
+            ("USDA MyPlate: Protein Foods Group", "https://www.myplate.gov/web/eat-healthy/protein-foods"),
+            ("Dietary Guidelines for Americans, 2025–2030", "https://cdn.realfood.gov/DGA_508.pdf"),
+        ],
+        "related": [("Free macro calculator", "calculators.html"), ("High-protein foods", "high-protein-foods-list.html"), ("Healthy Order Match", "restaurant-meal-finder.html")],
+    },
+])
+
 
 def article_schema(item: dict) -> dict:
     return {
@@ -303,7 +536,7 @@ def build_article(item: dict) -> str:
     return f'''{head(item["path"], item["title"], item["desc"], schema=article_schema(item))}<body class="site-v3 article-page focused-guide">
 {nav("guides")}<main id="main-content">{breadcrumbs([("Home", "index.html"), ("Nutrition guides", "articles.html"), (item["h1"], None)])}
 <article>
-<header class="focused-guide-hero liquid-surface" id="guide-top"><div class="container"><div class="focused-guide-kicker"><span>Practical nutrition guide</span><span>{item["read"]}</span></div><h1 data-reveal-title>{html.escape(item["h1"])}</h1><p>{html.escape(item["dek"])}</p><div class="focused-guide-byline"><span>By the GetMacros editorial team</span><span>Reviewed and updated August 30, 2026</span></div></div></header>
+<header class="focused-guide-hero liquid-surface" id="guide-top"><div class="container"><div class="focused-guide-kicker"><span>Practical nutrition guide</span><span>{item["read"]}</span></div><h1 data-reveal-title>{html.escape(item["h1"])}</h1><p>{html.escape(item["dek"])}</p><div class="focused-guide-byline"><span>By the GetMacros editorial team</span><span>Reviewed and updated {UPDATED_HUMAN}</span></div></div></header>
 <div class="container focused-guide-layout"><div class="focused-guide-body">
 <aside class="guide-quick-answer"><span>Short answer</span><p>{html.escape(item["quick"])}</p></aside>
 {item["body"]}

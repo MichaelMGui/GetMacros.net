@@ -17,7 +17,7 @@ python3 tools/build_focus_pages.py
 python3 tools/build_studio_v6.py
 python3 tools/expand_articles.py
 python3 tools/retitle.py
-# Add the five intent-specific training/everyday-eating guides and rebuild the
+# Add the focused intent-specific guides and rebuild the
 # curated article hub after every generator that can rewrite article markup.
 python3 tools/build_focused_guides.py
 python3 tools/apply_visual_system.py
