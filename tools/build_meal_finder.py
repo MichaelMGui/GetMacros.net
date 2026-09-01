@@ -44,21 +44,13 @@ HERO = r'''<section class="match-intro" data-spotlight>
         <div><dt>0</dt><dd>accounts needed</dd></div>
       </dl>
     </div>
-    <aside class="match-question-preview" aria-label="Preview of the first matching question">
-      <div class="match-preview-head"><span>Question 01</span><b>1 / 5</b></div>
-      <div class="match-preview-progress" aria-hidden="true"><i></i></div>
-      <p>Choose one or combine a few</p>
-      <h2>What does this meal need to do?</h2>
-      <div class="match-preview-choices">
-        <span class="is-on"><i aria-hidden="true">✓</i><b>High protein</b><small>25 g or more</small></span>
-        <span><i aria-hidden="true">+</i><b>Cutting</b><small>Substantial, under 400 cal</small></span>
-        <span class="is-on"><i aria-hidden="true">✓</i><b>Bulking</b><small>600+ calories</small></span>
-        <span><i aria-hidden="true">+</i><b>Higher fiber</b><small>5 g or more</small></span>
-      </div>
-      <div class="match-preview-foot"><span><b>12</b> possible matches</span><strong>Next: appetite <span aria-hidden="true">→</span></strong></div>
-    </aside>
+    <div class="match-live-quiz" role="region" aria-label="Healthy Order Match questionnaire">
+      <div id="meal-quiz"></div>
+      <p class="calc-fineprint">Values are approximate standard builds from published chain nutrition information. Menus and recipes can change, so confirm important figures with the restaurant.</p>
+    </div>
   </div>
-</section>'''
+</section>
+<script src="js/meal-data.js?v=7faded9221"></script><script src="js/meal-quiz.js?v=3a8ad1872d"></script>'''
 
 # Every threshold the site states in words. Change them here and the tags, the
 # quiz labels generated from them, and the lists below all move together.
@@ -253,7 +245,11 @@ def main():
     # added.
     c = open(PAGE, encoding="utf-8").read()
     c, hero_count = re.subn(
-        r'<section class="(?:order-match-hero|match-intro)[^>]*>.*?</section>(?=\s*<section class="quiz-stage)',
+        r'<section class="(?:order-match-hero|match-intro)[^>]*>.*?</section>'
+        r'(?:\s*<section class="quiz-stage[^>]*>.*?</section>)?'
+        r'(?:\s*<script src="js/meal-data\.js[^>]*></script>'
+        r'<script src="js/meal-quiz\.js[^>]*></script>)?'
+        r'(?=\s*<section class="mm-stage)',
         HERO,
         c,
         count=1,

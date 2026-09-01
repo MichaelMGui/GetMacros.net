@@ -137,6 +137,49 @@
   box-shadow: 0 28px 90px rgba(6,39,30,.11) !important;
   animation: om-question-in .62s var(--om-ease) both;
 }
+
+/* The questionnaire belongs in the introduction. The previous right-hand
+   panel was only a visual mock-up, which looked interactive and forced people
+   to pass a fake first question before reaching the real one. */
+.order-match-page .match-live-quiz { min-width: 0; align-self: start; }
+.order-match-page .match-live-quiz #meal-quiz { width: 100%; margin: 0; scroll-margin-top: 96px; }
+.order-match-page .match-live-quiz .quiz-card,
+.order-match-page .match-live-quiz .quiz-results {
+  margin: 0;
+  padding: clamp(22px,3vw,34px) !important;
+  border-radius: 22px !important;
+}
+.order-match-page .match-live-quiz .quiz-progress { margin-bottom: 1.45rem; }
+.order-match-page .match-live-quiz .quiz-card h2,
+.order-match-page .match-live-quiz .quiz-results h2 {
+  max-width: 18ch;
+  font-size: clamp(1.85rem,2.8vw,2.65rem) !important;
+}
+.order-match-page .match-live-quiz .quiz-hint {
+  margin-bottom: 1.2rem;
+  font-size: .94rem;
+  line-height: 1.52;
+}
+.order-match-page .match-live-quiz .quiz-options { gap: 9px; }
+.order-match-page .match-live-quiz .quiz-option {
+  min-height: 88px;
+  padding: 13px;
+  grid-template-columns: 44px minmax(0,1fr) 24px;
+  gap: 11px;
+  border-radius: 14px !important;
+}
+.order-match-page .match-live-quiz .option-icon { width: 44px; height: 44px; border-radius: 12px; }
+.order-match-page .match-live-quiz .option-icon svg { width: 23px; height: 23px; }
+.order-match-page .match-live-quiz .option-copy b { font-size: .96rem; }
+.order-match-page .match-live-quiz .option-copy small { font-size: .79rem; line-height: 1.35; }
+.order-match-page .match-live-quiz .quiz-nav { margin-top: 1.35rem; }
+.order-match-page .match-live-quiz .calc-fineprint {
+  max-width: none;
+  margin: 14px 2px 0;
+  color: var(--d-muted) !important;
+  font-size: max(.7rem,12px);
+  line-height: 1.45;
+}
 @keyframes om-question-in { from { opacity: 0; transform: translate3d(0,13px,0); } }
 .order-match-page .quiz-progress { height: 7px; margin-bottom: 2.4rem; background: #e5ede7; }
 .order-match-page .quiz-progress span { background: linear-gradient(90deg,var(--gm6-forest),#71bd86,var(--gm6-lime)); transition: width .72s var(--om-ease); }
@@ -216,6 +259,13 @@
   .order-match-page .mm-form { padding: 20px 16px; border-radius: 25px; }
   .order-match-page .meal-jump ul { grid-template-columns: 1fr; }
   .order-match-preview { display: none; }
+  .order-match-page .match-intro { padding-bottom: 52px !important; }
+  .order-match-page .match-intro-grid { gap: 34px; }
+  .order-match-page .match-live-quiz .quiz-card,
+  .order-match-page .match-live-quiz .quiz-results { padding: 18px !important; border-radius: 18px !important; }
+  .order-match-page .match-live-quiz .quiz-card h2,
+  .order-match-page .match-live-quiz .quiz-results h2 { font-size: clamp(1.7rem,7.8vw,2.05rem) !important; }
+  .order-match-page .match-live-quiz .quiz-option { min-height: 82px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .order-match-hero::before,.order-match-hero::after,.order-preview-progress span { animation: none !important; }
