@@ -147,15 +147,18 @@ HOME_MAIN = r'''<main id="main-content">
   </div>
 </section>
 
-<section class="gm6-tools gm6-tools-joined">
+<section class="gm6-tools gm6-tools-joined" id="tools" aria-labelledby="home-tools-title">
   <div class="container">
-    <p class="gm6-tools-lead">Free tools for macros, recipes and food labels. No account required. <a href="calculators.html">See all nine tools</a>.</p>
+    <div class="gm6-tools-head">
+      <div><p class="eyebrow">Free nutrition tools</p><h2 id="home-tools-title">Pick a tool. Get a clear answer.</h2><p>Calculate daily targets, compare labels or plan a meal. No account required.</p></div>
+      <a class="gm6-tools-all" href="calculators.html">View all nine tools <span aria-hidden="true">→</span></a>
+    </div>
     <div class="gm6-tool-bento">
-      <a class="gm6-tool studio-reveal" href="calculators.html"><span class="gm6-tool-num">01 · Daily targets</span><div><h3>Free Macro Calculator</h3><p>Estimate daily calories and macros, with the assumptions kept visible.</p></div><span class="gm6-tool-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg></span></a>
-      <a class="gm6-tool studio-reveal" href="nutrition-label-comparison-tool.html"><span class="gm6-tool-num">02 · Compare</span><div><h3>Compare labels</h3><p>Put two products on equal footing.</p></div></a>
-      <a class="gm6-tool studio-reveal" href="recipe-macro-scaler.html"><span class="gm6-tool-num">03 · Cook</span><div><h3>Scale a recipe</h3><p>Change servings without redoing every calculation.</p></div></a>
-      <a class="gm6-tool studio-reveal" href="protein-value-calculator.html"><span class="gm6-tool-num">04 · Shop</span><div><h3>Protein value</h3><p>Compare price and protein without mental math.</p></div></a>
-      <a class="gm6-tool studio-reveal" href="budget-meal-builder.html"><span class="gm6-tool-num">05 · Plan</span><div><h3>Budget meals</h3><p>Build a practical plate around cost and nutrition.</p></div></a>
+      <a class="gm6-tool studio-reveal" href="calculators.html"><span class="gm6-tool-num">01 · Start here</span><div><h3>Free Macro Calculator</h3><p>Estimate calories, protein, carbs and fat for your goal.</p></div><span class="gm6-tool-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg></span><span class="gm6-tool-arrow" aria-hidden="true">→</span></a>
+      <a class="gm6-tool studio-reveal" href="nutrition-label-comparison-tool.html"><span class="gm6-tool-num">02 · Compare</span><div><h3>Compare labels</h3><p>Put two foods side by side.</p></div><span class="gm6-tool-arrow" aria-hidden="true">→</span></a>
+      <a class="gm6-tool studio-reveal" href="recipe-macro-scaler.html"><span class="gm6-tool-num">03 · Cook</span><div><h3>Scale a recipe</h3><p>Change servings without redoing the math.</p></div><span class="gm6-tool-arrow" aria-hidden="true">→</span></a>
+      <a class="gm6-tool studio-reveal" href="protein-value-calculator.html"><span class="gm6-tool-num">04 · Shop</span><div><h3>Protein value</h3><p>Compare price per gram of protein.</p></div><span class="gm6-tool-arrow" aria-hidden="true">→</span></a>
+      <a class="gm6-tool studio-reveal" href="budget-meal-builder.html"><span class="gm6-tool-num">05 · Plan</span><div><h3>Budget meals</h3><p>Build a meal around cost and macros.</p></div><span class="gm6-tool-arrow" aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>

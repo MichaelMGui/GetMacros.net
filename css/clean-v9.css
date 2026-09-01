@@ -473,3 +473,207 @@ html[data-theme] body.site-v3 :is(a, button, input)[class]:is(.btn-primary,
   :is(span, b, strong, small, .gm6-arrow) {
   color: var(--d-btn-in) !important;
 }
+
+/* ---- Homepage tools: useful links, not a dashboard ----------------------
+   This section used to become one tall dark slab on phones, with four
+   cramped square tiles. Keep the primary calculator prominent, then let the
+   remaining tools read like a short, scannable menu. These selectors are
+   intentionally stronger than the older joined-hero treatment. */
+html[data-theme] body.site-v3.home-studio main > section.gm6-tools.gm6-tools-joined:nth-of-type(n) {
+  margin: 0 !important;
+  padding: clamp(48px, 7vw, 80px) 0 !important;
+  border-radius: 0 !important;
+  background: var(--d-bg) !important;
+  background-image: none !important;
+}
+
+body.site-v3.home-studio .gm6-tools-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--d-line);
+}
+body.site-v3.home-studio .gm6-tools-head .eyebrow {
+  margin: 0 0 9px;
+  color: var(--d-accent) !important;
+}
+body.site-v3.home-studio .gm6-tools-head h2 {
+  max-width: 18ch;
+  margin: 0;
+  color: var(--d-ink) !important;
+  font-size: clamp(1.8rem, 3.2vw, 3rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.04em;
+}
+body.site-v3.home-studio .gm6-tools-head div > p:last-child {
+  max-width: 58ch;
+  margin: 13px 0 0;
+  color: var(--d-muted) !important;
+}
+body.site-v3.home-studio .gm6-tools-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  color: var(--d-ink) !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+body.site-v3.home-studio .gm6-tools-all span { color: var(--d-accent) !important; }
+
+body.site-v3.home-studio .gm6-tool-bento {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: minmax(142px, auto);
+  gap: 12px;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool {
+  grid-column: span 4;
+  min-height: 0;
+  padding: 22px;
+  border: 1px solid var(--d-line) !important;
+  border-radius: var(--d-r) !important;
+  background: var(--d-surface) !important;
+  backdrop-filter: none;
+  box-shadow: var(--d-shadow);
+  color: var(--d-ink) !important;
+  transition: transform .24s ease, border-color .24s ease, background-color .24s ease;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:first-child {
+  grid-column: span 4;
+  grid-row: span 2;
+  min-height: 296px;
+  border-color: var(--d-line-2) !important;
+  background: var(--d-surface-3) !important;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool :is(h3, h4, strong, b) {
+  color: var(--d-ink) !important;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool h3,
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:first-child h3 {
+  max-width: 13ch;
+  margin: 16px 0 6px;
+  font-size: clamp(1.25rem, 1.9vw, 1.75rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.025em;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool p {
+  max-width: 34ch;
+  margin: 0;
+  color: var(--d-muted) !important;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+html[data-theme] body.site-v3.home-studio .gm6-tools-joined a.gm6-tool .gm6-tool-num {
+  color: var(--d-muted-2) !important;
+  font-size: .7rem;
+  letter-spacing: .09em;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--d-tint) !important;
+  color: var(--d-accent) !important;
+}
+body.site-v3.home-studio .gm6-tool-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--d-accent) !important;
+  font-size: 1.1rem;
+  transition: transform .24s ease;
+}
+html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:hover {
+  transform: translateY(-2px);
+  border-color: var(--d-line-2) !important;
+  background: var(--d-surface-2) !important;
+  box-shadow: var(--d-shadow);
+}
+body.site-v3.home-studio .gm6-tool:hover .gm6-tool-arrow { transform: translateX(3px); }
+
+@media (max-width: 700px) {
+  html[data-theme] body.site-v3.home-studio main > section.gm6-tools.gm6-tools-joined:nth-of-type(n) {
+    padding: 38px 0 50px !important;
+  }
+  body.site-v3.home-studio .gm6-tools-head {
+    display: block;
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+  }
+  body.site-v3.home-studio .gm6-tools-head h2 {
+    max-width: 15ch;
+    font-size: clamp(1.65rem, 7.4vw, 2rem) !important;
+    line-height: 1.07 !important;
+  }
+  body.site-v3.home-studio .gm6-tools-head div > p:last-child {
+    margin-top: 10px;
+    font-size: max(.9rem, 14px);
+    line-height: 1.48;
+  }
+  body.site-v3.home-studio .gm6-tools-all {
+    margin-top: 14px;
+    min-height: 36px;
+    font-size: .9rem;
+  }
+  body.site-v3.home-studio .gm6-tool-bento {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0 !important;
+    border-top: 1px solid var(--d-line);
+  }
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool,
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:first-child {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 24px;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 3px 12px;
+    min-height: 86px !important;
+    padding: 16px 4px !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--d-line) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none;
+  }
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:first-child {
+    min-height: 116px !important;
+    margin-bottom: 5px;
+    padding: 18px 16px !important;
+    border: 1px solid var(--d-line-2) !important;
+    border-radius: var(--d-r) !important;
+    background: var(--d-surface-3) !important;
+  }
+  body.site-v3.home-studio .gm6-tool-num {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body.site-v3.home-studio .gm6-tool > div {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool h3,
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:first-child h3 {
+    max-width: none;
+    margin: 3px 0 2px;
+    font-size: max(1.02rem, 16px) !important;
+    line-height: 1.16 !important;
+  }
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool p,
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool:not(:first-child) p {
+    display: block;
+    margin: 0;
+    font-size: max(.78rem, 12.5px) !important;
+    line-height: 1.35 !important;
+  }
+  body.site-v3.home-studio .gm6-tool-arrow {
+    position: static;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    justify-self: end;
+  }
+  html body.site-v3.home-studio .gm6-tools-joined .gm6-tool-icon { display: none; }
+}
