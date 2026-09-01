@@ -37,7 +37,6 @@ HEADER = """<header class="site-header modern-header"><nav class="full-nav" aria
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open site menu</span><span class="nav-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span></button>
 </div>
 </nav>
-<p class="site-purpose"><span>Free tool: find fast-food meals that fit your goal &mdash; 15 chains, no sign-up.</span> <a href="restaurant-meal-finder.html">Find my meal <span aria-hidden="true">&rarr;</span></a></p>
 </header>"""
 
 FOOTER = """<footer class="modern-footer">

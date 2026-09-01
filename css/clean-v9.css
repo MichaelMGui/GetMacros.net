@@ -677,3 +677,361 @@ body.site-v3.home-studio .gm6-tool:hover .gm6-tool-arrow { transform: translateX
   }
   html body.site-v3.home-studio .gm6-tools-joined .gm6-tool-icon { display: none; }
 }
+
+/* =========================================================================
+   Purpose-first mobile pages
+   The final layer removes the decorative hero system that was making every
+   landing page look alike, then gives each important action a clear place.
+   ========================================================================= */
+
+/* Compact, readable introductions for every non-home landing page. */
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+      .search-hero, .focused-guide-hero, .calc-hub-hero) {
+  overflow: visible;
+  padding: clamp(46px, 7vw, 84px) 0 !important;
+  color: var(--d-ink) !important;
+  background: var(--d-bg) !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--d-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+      .search-hero, .focused-guide-hero, .calc-hub-hero)::before,
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+      .search-hero, .focused-guide-hero, .calc-hub-hero)::after {
+  display: none !important;
+}
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+      .search-hero, .focused-guide-hero, .calc-hub-hero) h1 {
+  max-width: 19ch;
+  margin: 10px 0 16px;
+  color: var(--d-ink) !important;
+  font-size: clamp(2.35rem, 5.7vw, 4.9rem) !important;
+  line-height: .99 !important;
+  letter-spacing: -.052em !important;
+  text-wrap: balance;
+}
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+      .search-hero, .focused-guide-hero, .calc-hub-hero) .eyebrow {
+  color: var(--d-accent) !important;
+}
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+      .search-hero, .focused-guide-hero, .calc-hub-hero) p {
+  max-width: 64ch;
+  color: var(--d-muted) !important;
+  font-size: clamp(.96rem, 1.5vw, 1.08rem) !important;
+  line-height: 1.62 !important;
+}
+.calc-hero-grid { grid-template-columns: minmax(0, 760px) !important; }
+
+/* Article shells used to add a second block of whitespace around a hero that
+   already owns its spacing. Keep one deliberate opening, not two. */
+body.site-v3.article-page main > article { padding-block: 0 !important; }
+
+/* Learn is a directory, not a stock-photo feature. */
+.guide-hub-intro {
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(420px, 1.12fr);
+  gap: clamp(38px, 7vw, 96px);
+  align-items: end;
+}
+.guide-hub-intro > div > p:last-child { margin-bottom: 0; }
+.guide-start {
+  display: grid;
+  border-top: 1px solid var(--d-line-2);
+}
+.guide-start a {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 3px 14px;
+  padding: 16px 0;
+  color: var(--d-ink) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--d-line-2);
+}
+.guide-start a > span {
+  grid-row: 1 / 3;
+  color: var(--d-accent) !important;
+  font-size: .69rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+.guide-start strong {
+  color: var(--d-ink) !important;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.guide-start small {
+  color: var(--d-muted) !important;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+.guide-start a:hover strong { color: var(--d-accent) !important; }
+
+/* Single-nutrient calculators: calm cards with a guaranteed mobile flow. */
+html[data-theme] body.site-v3.calculators-v2 .single-macro-studio {
+  overflow: visible;
+  padding: clamp(52px, 7vw, 84px) 0 !important;
+  background: var(--d-bg-soft) !important;
+  border-block: 1px solid var(--d-line) !important;
+}
+body.site-v3.calculators-v2 .single-macro-studio::before { display: none !important; }
+body.site-v3.calculators-v2 .single-macro-head {
+  grid-template-columns: minmax(0, .85fr) minmax(300px, .55fr);
+  gap: clamp(28px, 6vw, 78px);
+  margin-bottom: 28px;
+}
+body.site-v3.calculators-v2 .single-macro-head h2 {
+  max-width: 15ch;
+  color: var(--d-ink) !important;
+  font-size: clamp(2rem, 3.6vw, 3.35rem) !important;
+  line-height: 1.02 !important;
+}
+body.site-v3.calculators-v2 .single-macro-head .eyebrow { color: var(--d-accent) !important; }
+body.site-v3.calculators-v2 .single-macro-head > p { color: var(--d-muted) !important; }
+body.site-v3.calculators-v2 .single-macro-grid { gap: 12px; }
+html[data-theme] body.site-v3.calculators-v2 .single-macro-card {
+  min-width: 0;
+  padding: 22px;
+  background: var(--d-surface) !important;
+  border: 1px solid var(--d-line-2) !important;
+  border-radius: var(--d-r) !important;
+  box-shadow: var(--d-shadow) !important;
+  transform: none !important;
+}
+body.site-v3.calculators-v2 .single-card-head {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  padding-bottom: 17px;
+  border-color: var(--d-line) !important;
+}
+body.site-v3.calculators-v2 .single-card-number { display: none; }
+body.site-v3.calculators-v2 .single-card-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--d-accent) !important;
+  background: var(--d-tint) !important;
+  border: 1px solid var(--d-line) !important;
+  border-radius: 10px;
+}
+body.site-v3.calculators-v2 .single-card-copy {
+  min-height: 0;
+  margin: 16px 0;
+  color: var(--d-muted) !important;
+}
+html[data-theme] body.site-v3.calculators-v2 .single-macro-form :is(input, select) {
+  min-width: 0;
+  color: var(--d-ink) !important;
+  background: var(--d-bg) !important;
+  border-color: var(--d-line-2) !important;
+  border-radius: 10px !important;
+}
+body.site-v3.calculators-v2 .single-macro-form .calc-submit { border-radius: 10px !important; }
+body.site-v3.calculators-v2 .single-macro-result { border-color: var(--d-line) !important; }
+.calculator-safety-note {
+  max-width: 76ch;
+  margin: 18px 0 0;
+  color: var(--d-muted) !important;
+  font-size: .78rem;
+  line-height: 1.55;
+}
+.calculator-safety-note a { color: var(--d-ink) !important; font-weight: 700; }
+
+/* The four jump links should not become four full-width cards on phones. */
+body.site-v3.calculators-v2 .calc-nav-wrap { margin-top: 0; }
+body.site-v3.calculators-v2 .calc-nav a { min-width: 0; }
+
+@media (max-width: 760px) {
+  body.site-v3 main > .breadcrumb { display: none; }
+
+  html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+    :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+        .search-hero, .focused-guide-hero, .calc-hub-hero) {
+    padding: 36px 0 40px !important;
+  }
+  html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+    :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+        .search-hero, .focused-guide-hero, .calc-hub-hero) h1 {
+    max-width: 20ch;
+    margin: 8px 0 13px;
+    font-size: clamp(2rem, 10vw, 2.75rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -.045em !important;
+    overflow-wrap: anywhere;
+  }
+  html[data-theme] body.site-v3.article-page:not(.home-studio):not(.order-match-page) main
+    :is(.article-hero, .focused-guide-hero) h1 {
+    font-size: clamp(1.85rem, 8.4vw, 2.25rem) !important;
+    line-height: 1.06 !important;
+    letter-spacing: -.038em !important;
+  }
+  html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+    :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+        .search-hero, .focused-guide-hero, .calc-hub-hero) p {
+    font-size: max(.92rem, 14.5px) !important;
+    line-height: 1.55 !important;
+  }
+  html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+    :is(.page-hero, .article-hero, .focus-page-hero, .guide-hub-hero,
+        .search-hero, .focused-guide-hero, .calc-hub-hero) .eyebrow {
+    margin-bottom: 7px;
+    font-size: max(.65rem, 11px) !important;
+  }
+  body.site-v3:not(.home-studio) main :is(.article-hero, .guide-hub-hero, .calc-hub-hero)
+    :is(.editorial-figure, .blog-hero-art, .calc-photo-card, figure) {
+    display: none !important;
+  }
+  .calc-hero-actions { gap: 8px; margin-top: 20px; }
+  .calc-hero-actions .btn { width: 100%; min-height: 48px; justify-content: center; }
+
+  .guide-hub-intro { display: block; }
+  .guide-start { margin-top: 26px; }
+  .guide-start a { padding: 14px 0; }
+
+  body.site-v3.library-page .guide-group { padding: 34px 0 !important; }
+  body.site-v3.library-page .guide-group .section-head { margin-bottom: 12px; }
+  body.site-v3.library-page .guide-group .section-head h2 {
+    font-size: clamp(1.55rem, 7.2vw, 1.95rem) !important;
+    line-height: 1.08 !important;
+  }
+  body.site-v3.library-page .guide-grid {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0 !important;
+    border-top: 1px solid var(--d-line);
+  }
+  html[data-theme] body.site-v3.library-page .guide-card {
+    min-height: 0 !important;
+    padding: 17px 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--d-line) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+  body.site-v3.library-page .guide-card h3 {
+    margin: 0 0 5px;
+    font-size: max(1.03rem, 16.5px) !important;
+    line-height: 1.22 !important;
+    letter-spacing: -.012em !important;
+  }
+  body.site-v3.library-page .guide-card p {
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    color: var(--d-muted) !important;
+    font-size: max(.82rem, 13px) !important;
+    line-height: 1.45 !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  html[data-theme] body.site-v3.calculators-v2 .single-macro-studio {
+    padding: 40px 0 !important;
+  }
+  body.site-v3.calculators-v2 .single-macro-head {
+    display: block !important;
+    margin-bottom: 22px;
+  }
+  body.site-v3.calculators-v2 .single-macro-head h2 {
+    max-width: 17ch;
+    font-size: clamp(1.75rem, 8vw, 2.2rem) !important;
+    line-height: 1.06 !important;
+  }
+  body.site-v3.calculators-v2 .single-macro-head > p {
+    margin-top: 10px;
+    font-size: max(.86rem, 13.5px) !important;
+    line-height: 1.5;
+  }
+  body.site-v3.calculators-v2 .single-macro-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  html[data-theme] body.site-v3.calculators-v2 .single-macro-card {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+    gap: 0 !important;
+    width: 100%;
+    padding: 18px !important;
+    border-radius: 12px !important;
+  }
+  body.site-v3.calculators-v2 .single-card-head,
+  body.site-v3.calculators-v2 .single-card-copy,
+  body.site-v3.calculators-v2 .single-macro-form,
+  body.site-v3.calculators-v2 .single-macro-result {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+  body.site-v3.calculators-v2 .single-card-head h3 { font-size: 1.18rem !important; }
+  body.site-v3.calculators-v2 .single-card-copy {
+    margin: 14px 0;
+    font-size: max(.82rem, 13px) !important;
+    line-height: 1.45;
+  }
+  body.site-v3.calculators-v2 .single-macro-form { width: 100%; gap: 12px; }
+  body.site-v3.calculators-v2 .single-macro-result {
+    min-height: 58px !important;
+    margin-top: 14px !important;
+  }
+
+  body.site-v3.calculators-v2 .calc-nav-wrap {
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 1px solid var(--d-line);
+  }
+  html[data-theme] body.site-v3.calculators-v2 .calc-nav {
+    display: flex !important;
+    gap: 7px;
+    overflow-x: auto;
+    padding: 10px max(16px, calc((100vw - 1180px) / 2)) !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    scrollbar-width: none;
+  }
+  body.site-v3.calculators-v2 .calc-nav::-webkit-scrollbar { display: none; }
+  html[data-theme] body.site-v3.calculators-v2 .calc-nav a {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 8px 12px;
+    color: var(--d-ink) !important;
+    background: var(--d-surface) !important;
+    border: 1px solid var(--d-line-2) !important;
+    border-radius: 999px !important;
+    font-size: max(.78rem, 12.5px);
+  }
+  body.site-v3.calculators-v2 .calc-nav-icon { display: none; }
+
+  body.site-v3.calculators-v2 .tool-library { padding: 40px 0 !important; }
+  body.site-v3.calculators-v2 .tool-library-head { margin-bottom: 18px; }
+  body.site-v3.calculators-v2 .tool-library-head h2 {
+    font-size: clamp(1.72rem, 8vw, 2.1rem) !important;
+    line-height: 1.07 !important;
+  }
+  body.site-v3.calculators-v2 .tool-group { padding: 17px; border-radius: 12px; }
+  body.site-v3.calculators-v2 .tool-group-head { grid-template-columns: 38px 1fr; }
+  body.site-v3.calculators-v2 .tool-group-icon { width: 38px; height: 38px; border-radius: 9px; font-size: .82rem; }
+  body.site-v3.calculators-v2 .tool-group h3 { font-size: 1.08rem !important; }
+  body.site-v3.calculators-v2 .tool-group-head p { font-size: max(.8rem, 12.5px); }
+  body.site-v3.calculators-v2 .tool-links { gap: 0; }
+  body.site-v3.calculators-v2 .tool-links a {
+    min-height: 50px;
+    padding: 12px 2px;
+    background: transparent !important;
+    border-bottom: 1px solid var(--d-line) !important;
+    border-radius: 0;
+    font-size: max(.84rem, 13.5px);
+  }
+}

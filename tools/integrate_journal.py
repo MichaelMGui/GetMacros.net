@@ -14,7 +14,7 @@ POSTS = [
     ("calories-vs-macros-what-matters-more.html", "Calories vs. macros: what matters more?", "Use a clear priority order for weight change, muscle, fullness and performance."),
 ]
 
-JOURNAL_SECTION = '<section class="guide-group data-section"><div class="container"><div class="section-head"><p class="eyebrow">New in the journal</p><h2>Five questions worth a closer look</h2><p>Current, evidence-aware stories with a direct answer, visible limitations and a practical next step.</p></div><div class="guide-grid">' + "".join(
+JOURNAL_SECTION = '<section class="guide-group data-section"><div class="container"><div class="section-head"><p class="eyebrow">Featured guides</p><h2>Five questions worth a closer look</h2><p>Evidence-aware stories with a direct answer, visible limitations and a practical next step.</p></div><div class="guide-grid">' + "".join(
     f'<a class="guide-card" href="{path}"><h3>{title}</h3><p>{description}</p></a>'
     for path, title, description in POSTS
 ) + '</div><p><a class="btn btn-primary" href="blog.html">Visit the GetMacros Journal</a></p></div></section>'

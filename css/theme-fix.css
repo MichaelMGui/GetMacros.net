@@ -1378,44 +1378,6 @@ body.site-v3 :is(.eyebrow, .gm6-choice small, .gm6-arrow) { opacity: 1 !importan
 html[data-theme="light"] body.site-v3 .gm6-choice:not(.is-selected) small { color: #43574c !important; }
 html[data-theme="dark"] body.site-v3 .gm6-choice:not(.is-selected) small { color: #b7c8bf !important; }
 
-/* ======================================================================
- * The purpose line.
- *
- * Someone arriving on a restaurant guide or an article from a search result
- * had no way to tell what GetMacros is for without going to the homepage. One
- * quiet line under the header says it and offers the tool in the same breath.
- * It sits outside the sticky bar so it scrolls away and never costs height
- * twice, and it is hidden where it would be redundant: the homepage hero says
- * all of this at length, and on the finder you are already using the thing.
- * ====================================================================== */
-body.site-v3 .site-purpose {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 4px 14px;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 9px 18px 0;
-  font-size: max(.82rem, 13px);
-  line-height: 1.45;
-  text-align: center;
-}
-body.site-v3 .site-purpose a {
-  font-weight: 820;
-  text-decoration: none !important;
-  white-space: nowrap;
-}
-html[data-theme="light"] body.site-v3 .site-purpose { color: #3f5c4e; }
-html[data-theme="light"] body.site-v3 .site-purpose a { color: #14683f !important; }
-html[data-theme="dark"] body.site-v3 .site-purpose { color: #b7c8bf; }
-html[data-theme="dark"] body.site-v3 .site-purpose a { color: #9ee6bb !important; }
-body.home-studio .site-purpose,
-body.order-match-page .site-purpose { display: none !important; }
-@media (max-width: 560px) {
-  body.site-v3 .site-purpose { padding: 8px 14px 0; font-size: max(.79rem, 12.5px); }
-}
-
 /* The blue box around the quiz question.
  *
  * Each step moves focus to its <h2 tabindex="-1"> so a screen reader announces

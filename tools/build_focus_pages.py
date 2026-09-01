@@ -16,14 +16,14 @@ ROOT = Path(__file__).resolve().parents[1]
 SINGLE_MACRO_SECTION = '''<section id="single-macro-calculators" class="single-macro-studio">
     <div class="container">
       <header class="single-macro-head">
-        <div><p class="eyebrow">Quick targets</p><h2>Need one number, not a full plan?</h2></div>
-        <p>Choose the nutrient you want to estimate. These use the same reference ranges as the full calculator, with the method and citations available on the <a href="sources.html">Sources page</a>.</p>
+        <div><p class="eyebrow">Single nutrient calculators</p><h2>Protein, fat and carb calculators</h2></div>
+        <p>Use only the calculator you need. Each one shows a daily estimate and links to the published reference ranges behind it.</p>
       </header>
 
       <div class="single-macro-grid">
         <article class="single-macro-card macro-protein">
           <header class="single-card-head"><span class="single-card-number">01</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-protein"/></svg></span><div><p>Based on body weight</p><h3 id="protein-calculator">Protein target</h3></div></header>
-          <p class="single-card-copy">Estimate a daily range for general health, active living, or building and preserving muscle.</p>
+          <p class="single-card-copy">Estimate a daily protein range from body weight and goal.</p>
           <form id="protein-calc-form" class="single-macro-form">
             <div class="units-toggle" aria-label="Weight unit">
               <button type="button" class="active" data-pc-unit="lb">lb</button>
@@ -51,7 +51,7 @@ SINGLE_MACRO_SECTION = '''<section id="single-macro-calculators" class="single-m
 
         <article class="single-macro-card macro-fat">
           <header class="single-card-head"><span class="single-card-number">02</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-fat"/></svg></span><div><p>Based on daily calories</p><h3 id="fat-calculator">Fat target</h3></div></header>
-          <p class="single-card-copy">Convert 20–35% of your daily calorie target into a practical fat range in grams.</p>
+          <p class="single-card-copy">Convert 20–35% of daily calories into grams of fat.</p>
           <form id="fat-form" class="single-macro-form">
             <div class="field">
               <label for="calories">Daily calorie target <span>kcal</span></label>
@@ -68,7 +68,7 @@ SINGLE_MACRO_SECTION = '''<section id="single-macro-calculators" class="single-m
 
         <article class="single-macro-card macro-carbs">
           <header class="single-card-head"><span class="single-card-number">03</span><span class="single-card-icon" aria-hidden="true"><svg class="icon"><use href="#icon-carbs"/></svg></span><div><p>Based on daily calories</p><h3 id="carb-calculator">Carbohydrate target</h3></div></header>
-          <p class="single-card-copy">Convert 45–65% of your daily calorie target into a broad carbohydrate range in grams.</p>
+          <p class="single-card-copy">Convert 45–65% of daily calories into grams of carbohydrate.</p>
           <form id="carb-calc-form" class="single-macro-form">
             <div class="field">
               <label for="carb-calories">Daily calorie target <span>kcal</span></label>
@@ -83,6 +83,7 @@ SINGLE_MACRO_SECTION = '''<section id="single-macro-calculators" class="single-m
           </div>
         </article>
       </div>
+      <p class="calculator-safety-note">These are educational estimates for generally healthy adults, not individualized medical advice. See the <a href="sources.html">methods and sources</a>.</p>
     </div>
   </section>'''
 
@@ -288,12 +289,18 @@ def build_articles() -> None:
             group_cards.append(f'<a class="guide-card" href="{path}"><h3>{html.escape(h1)}</h3><p>{html.escape(desc)}</p></a>')
             visible_count+=1
         if group_cards:
-            cards.append(f'<section class="guide-group"><div class="container"><div class="section-head"><h2>{html.escape(group)}</h2></div><div class="guide-grid">{"".join(group_cards)}</div></div></section>')
+            section_id = {
+                "Macros and goals": "macros-and-goals",
+                "Eating out": "eating-out",
+                "Labels and recipes": "labels-and-recipes",
+            }.get(group)
+            id_attr = f' id="{section_id}"' if section_id else ""
+            cards.append(f'<section class="guide-group"{id_attr}><div class="container"><div class="section-head"><h2>{html.escape(group)}</h2></div><div class="guide-grid">{"".join(group_cards)}</div></div></section>')
     title="Nutrition Guides for Macros, Meals & Eating Out | GetMacros"
     meta="Browse focused GetMacros guides about protein, carbs, fat, macro goals, meal building, food labels, eating out and practical sports nutrition."
     schema={"@context":"https://schema.org","@type":"CollectionPage","name":"GetMacros Nutrition Guides","url":f"{SITE}/articles.html","description":meta,"numberOfItems":visible_count}
-    body=f'''{head("articles.html",title,meta,schema=schema)}<body class="site-v3 recovery-page">{nav("guides")}<main id="main-content">
-{breadcrumbs([("Home","index.html"),("Nutrition Guides",None)])}<section class="guide-hub-hero"><div class="container"><p class="eyebrow">Focused, practical education</p><h1>Nutrition guides: macros, calories and food labels</h1><p>Learn how protein, carbs, fat, portions and food labels connect to macro goals and real restaurant decisions. The library is curated around the GetMacros product—not every possible health topic.</p></div><figure class="editorial-figure"><img src="images/editorial-recipe-portions.webp" width="1536" height="1024" alt="Grilled chicken and vegetables divided into practical meal-prep portions" loading="lazy"><figcaption>Good nutrition guidance should lead to food decisions you can actually repeat.</figcaption></figure></section>{''.join(cards)}
+    body=f'''{head("articles.html",title,meta,schema=schema)}<body class="site-v3 recovery-page library-page">{nav("guides")}<main id="main-content">
+{breadcrumbs([("Home","index.html"),("Nutrition Guides",None)])}<section class="guide-hub-hero"><div class="container guide-hub-intro"><div><p class="eyebrow">Nutrition guides</p><h1>Understand macros and make better food decisions</h1><p>Clear, sourced guides about calories, protein, food labels, training and eating out. Start with the question you need answered.</p></div><nav class="guide-start" aria-label="Choose a nutrition topic"><a href="#macros-and-goals"><span>01</span><strong>Set calories and macros</strong><small>Targets for cutting, maintenance and muscle gain.</small></a><a href="#eating-out"><span>02</span><strong>Make sense of restaurant meals</strong><small>Compare complete orders and nutrition trade-offs.</small></a><a href="#labels-and-recipes"><span>03</span><strong>Read labels and recipes</strong><small>Serving sizes, portions and recipe math.</small></a></nav></div></section>{''.join(cards)}
 <div class="ad-auto-anchor" aria-hidden="true"></div></main>{footer()}</body></html>'''
     (ROOT/"articles.html").write_text(body,encoding="utf-8")
 
@@ -330,9 +337,13 @@ def patch_existing_hubs() -> None:
         s=re.sub(r'<meta name="twitter:title" content="[^"]*">','<meta name="twitter:title" content="Free Macro Calculator &amp; Nutrition Tools | GetMacros">',s,count=1)
         s=re.sub(r'<meta name="twitter:description" content="[^"]*">',f'<meta name="twitter:description" content="{meta}">',s,count=1)
         s=re.sub(r'"name": "Macro Calculator"','"name": "Free Macro Calculator"',s,count=1)
-        s=re.sub(r'<section class="calc-hub-hero(?: [^"]*)?">.*?</section>','''<section class="calc-hub-hero"><div class="container calc-hero-grid"><div><p class="eyebrow">Free, transparent and built for real meals</p><h1>Free macro calculator for real meals</h1><p>Estimate daily calories, protein, carbs and fat, understand the assumptions, then use Healthy Order Match to compare restaurant orders for cutting, maintenance or bulking.</p><div class="calc-hero-actions"><a class="btn btn-primary" href="#macro-calculator">Start free calculation</a><a class="btn btn-ghost" href="restaurant-meal-finder.html">Find a meal for my goal</a></div></div><figure class="calc-photo-card"><img src="images/editorial-protein-foods.webp" width="1536" height="1024" alt="Salmon, tofu, eggs, yogurt, chickpeas and grains arranged beside a food scale" fetchpriority="high"><figcaption>Start with an estimate. Finish with a meal decision you can actually use.</figcaption></figure></div></section>''',s,count=1,flags=re.S)
+        s=re.sub(r'<section class="calc-hub-hero(?: [^"]*)?">.*?</section>','''<section class="calc-hub-hero"><div class="container calc-hero-grid"><div><p class="eyebrow">Free Macro Calculator</p><h1>Calculate calories and macros for your goal</h1><p>Enter your age, height, weight, activity and goal to estimate daily calories, protein, carbs and fat. The calculation and its assumptions stay visible.</p><div class="calc-hero-actions"><a class="btn btn-primary" href="#macro-calculator">Calculate my macros</a><a class="btn btn-ghost" href="restaurant-meal-finder.html">Find a restaurant meal</a></div></div></div></section>''',s,count=1,flags=re.S)
         s=re.sub(r'<section id="single-macro-calculators".*?</section>',
                  SINGLE_MACRO_SECTION, s, count=1, flags=re.S)
+        s=re.sub(r'<section class="tight">\s*<div class="container">\s*<p class="section-intro">These calculators provide estimates.*?</section>\s*',
+                 '', s, count=1, flags=re.S)
+        s=re.sub(r'<section class="gm-sibling-tools">.*?</section>\s*',
+                 '', s, count=1, flags=re.S)
         s=s.replace("This page now keeps only tools that calculate, compare or transform nutrition numbers. General worksheets and appointment organizers have been removed from this hub.","This focused library keeps only tools that calculate, compare or transform nutrition numbers for macros, food labels, recipes, budgets, hydration and restaurant choices.")
         s=re.sub(r'<meta name="theme-color" content="[^"]+">',
                  '<meta name="theme-color" content="#123f2d">', s, count=1)

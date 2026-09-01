@@ -560,7 +560,13 @@ def refresh_hub() -> None:
             label = re.sub(r'<[^>]+>', '', title.group(1)).strip() if title else path.removesuffix('.html').replace('-', ' ')
             summary = html.unescape(desc.group(1)).strip() if desc else "Read this focused GetMacros guide."
             cards.append(f'<a class="guide-card" href="{path}"><h3>{html.escape(html.unescape(label))}</h3><p>{html.escape(summary)}</p></a>')
-        groups.append(f'<section class="guide-group data-section"><div class="container"><div class="section-head"><h2>{html.escape(group)}</h2></div><div class="guide-grid">{"".join(cards)}</div></div></section>')
+        section_id = {
+            "Macros and goals": "macros-and-goals",
+            "Eating out": "eating-out",
+            "Labels and recipes": "labels-and-recipes",
+        }.get(group)
+        id_attr = f' id="{section_id}"' if section_id else ""
+        groups.append(f'<section class="guide-group data-section"{id_attr}><div class="container"><div class="section-head"><h2>{html.escape(group)}</h2></div><div class="guide-grid">{"".join(cards)}</div></div></section>')
     text = re.sub(r'<section class="guide-group[^>]*>.*?(?=<div class="ad-auto-anchor")', "".join(groups), text, count=1, flags=re.S)
     count = sum(len(paths) for paths in GUIDE_GROUPS.values())
     text = re.sub(r'("numberOfItems"\s*:\s*)\d+', rf'\g<1>{count}', text)

@@ -59,7 +59,7 @@ TOOL_PAGES = {
 }
 
 GUIDE_GROUPS = OrderedDict({
-    "Journal": [
+    "Featured guides": [
         "best-fast-food-restaurants-for-your-goals.html",
         "how-much-protein-can-your-body-absorb.html",
         "are-diet-drinks-bad-for-you.html",

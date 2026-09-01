@@ -179,7 +179,9 @@ def band_for(current: str) -> str:
 
 def main() -> int:
     changed = 0
-    for name in sorted(TOOL_PAGES | {"calculators.html"}):
+    # The calculator hub already contains the complete, categorized library.
+    # Adding this band there repeated the same links a second time.
+    for name in sorted(TOOL_PAGES):
         path = ROOT / name
         if not path.exists():
             continue
