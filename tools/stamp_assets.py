@@ -45,8 +45,10 @@ def main():
             return match.group(0)
         return f'{match.group("attr")}="{match.group("prefix")}{match.group("path")}?v={version}"'
 
+    design_prefix = os.path.normcase("design" + os.sep)
     pages = sorted(glob.glob("*.html")) + [
-        p for p in sorted(glob.glob("*/*.html")) if not p.startswith("design/")
+        p for p in sorted(glob.glob("*/*.html"))
+        if not os.path.normcase(p).startswith(design_prefix)
     ]
     for page in pages:
         text = open(page, encoding="utf-8").read()

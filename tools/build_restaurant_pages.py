@@ -7,7 +7,7 @@ import json
 import re
 from pathlib import Path
 
-from focus_components import SITE, breadcrumbs, footer, head, nav
+from focus_components import ASSET_VERSION, SITE, breadcrumbs, footer, head, nav
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "js" / "meal-data.js"
@@ -262,6 +262,23 @@ def pick_cards(meals: list[dict], label: str) -> str:
     return "".join(out)
 
 
+def chain_finder(chain: str) -> str:
+    """A focused matcher for the restaurant guide the visitor is already on."""
+    safe_chain = html.escape(chain)
+    return f'''<section class="chain-finder-section" id="chain-meal-finder" data-chain-finder data-chain="{html.escape(chain, quote=True)}"><div class="container chain-finder-layout">
+<header class="chain-finder-intro"><p class="eyebrow">Quick match &middot; {safe_chain} only</p><h2>Find a meal from {safe_chain}</h2><p>Choose what matters today. We&rsquo;ll compare the complete {safe_chain} orders in this guide and explain the three closest matches.</p><ul><li>Uses this restaurant only</li><li>Shows calories, protein, fiber and sodium together</li><li>No account or email</li></ul></header>
+<form class="chain-finder-form" data-chain-form><fieldset><legend>What should this meal help with?</legend><div class="chain-choice-grid chain-goals">
+<label><input type="radio" name="chain-goal" value="balanced" checked><span><svg aria-hidden="true"><use href="icon-sprite.svg#icon-target"></use></svg><b>Balanced</b><small>Strong all-around fit</small></span></label>
+<label><input type="radio" name="chain-goal" value="protein"><span><svg aria-hidden="true"><use href="icon-sprite.svg#icon-protein"></use></svg><b>High protein</b><small>Prioritize protein</small></span></label>
+<label><input type="radio" name="chain-goal" value="light"><span><svg aria-hidden="true"><use href="icon-sprite.svg#icon-leaf"></use></svg><b>Cutting</b><small>Lighter, still substantial</small></span></label>
+<label><input type="radio" name="chain-goal" value="energy"><span><svg aria-hidden="true"><use href="icon-sprite.svg#icon-flame"></use></svg><b>Bulking</b><small>Higher energy and protein</small></span></label>
+<label><input type="radio" name="chain-goal" value="fibre"><span><svg aria-hidden="true"><use href="icon-sprite.svg#icon-leaf"></use></svg><b>Higher fiber</b><small>Favor published fiber</small></span></label>
+<label><input type="radio" name="chain-goal" value="lowsodium"><span><svg aria-hidden="true"><use href="icon-sprite.svg#icon-water"></use></svg><b>Lower sodium</b><small>Compare substantial meals</small></span></label>
+</div></fieldset><div class="chain-compact-fields"><fieldset><legend>Appetite</legend><div class="chain-choice-row"><label><input type="radio" name="chain-size" value="" checked><span>Any</span></label><label><input type="radio" name="chain-size" value="small"><span>Small</span></label><label><input type="radio" name="chain-size" value="medium"><span>Regular</span></label><label><input type="radio" name="chain-size" value="large"><span>Large</span></label></div></fieldset><fieldset><legend>Dietary filter</legend><div class="chain-choice-row"><label><input type="radio" name="chain-diet" value="" checked><span>None</span></label><label><input type="radio" name="chain-diet" value="vegetarian"><span>Vegetarian</span></label><label><input type="radio" name="chain-diet" value="plant"><span>Plant-based</span></label></div></fieldset></div>
+<button class="btn btn-primary chain-find-button" type="submit">Find my {safe_chain} meal <span aria-hidden="true">&rarr;</span></button></form>
+</div><div class="container chain-finder-results" data-chain-results hidden aria-live="polite"></div><div class="container chain-all-link"><p>Not set on {safe_chain}? <a href="restaurant-meal-finder.html">Find your best meal across all restaurants <span aria-hidden="true">&rarr;</span></a></p></div></section>'''
+
+
 def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
     cfg = CHAIN_CONFIG[chain]
     path = meals[0]["url"]
@@ -324,29 +341,24 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
     )
     veg = ""
     if vegetarian:
-        veg = f'''<section><div class="container"><div class="section-head"><p class="eyebrow">Dietary pattern</p>
-<h2>Vegetarian options in the tracked data</h2><p>These labels describe the standard build only. Confirm ingredients and cross-contact with the restaurant.</p></div>
-<div class="pick-grid">{pick_cards(vegetarian[:4], "Vegetarian")}</div></div></section>'''
+        veg = f'''<article class="chain-pick-group"><header><span class="chain-pick-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-leaf"></use></svg></span><div><p>Dietary pattern</p><h3>Vegetarian standard builds</h3></div></header><p>Confirm ingredients and cross-contact with the restaurant.</p><div class="pick-grid">{pick_cards(vegetarian[:4], "Vegetarian")}</div></article>'''
     body = f'''{head(path, title, meta, schema=schema)}
 <body class="site-v3 article-page restaurant-guide recovery-page">{nav("fastfood")}
 <main id="main-content">{breadcrumbs([("Home", "index.html"), ("Healthy Fast Food", "healthy-fast-food.html"), (chain, None)])}
 <section class="focus-page-hero"><div class="container"><p class="eyebrow">{html.escape(chain)} nutrition guide</p>
 <h1>{html.escape(h1)}</h1><p>{html.escape(cfg["intro"])}</p><div class="stat-row">
 <span>{len(meals)} tracked options</span><span>Official source checked August 2026</span><span>No missing value treated as zero</span></div>
-<div class="focus-actions"><a class="btn btn-primary" href="restaurant-meal-finder.html">Find my best match</a>
+<div class="focus-actions"><a class="btn btn-primary" href="#chain-meal-finder">Find a {html.escape(chain)} meal</a>
 <a class="btn btn-outline" href="#menu-comparison">Compare the menu</a></div></div></section>
-<section id="menu-comparison"><div class="container"><div class="section-head"><p class="eyebrow">Complete tracked menu</p>
-<h2>Compare every {html.escape(chain)} option we track</h2><p>{html.escape(data_note)}</p></div>
-{table(meals)}<p class="metric-note"><strong>Protein per 100 calories</strong> = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score.</p></div></section>
-<section class="data-section"><div class="container"><div class="section-head"><p class="eyebrow">High protein</p><h2>Highest-protein {html.escape(chain)} picks</h2>
-<p>Ranked only by published protein. Calories, fiber and sodium stay visible so one number does not make the whole decision.</p></div><div class="pick-grid">{pick_cards(ranked_protein, "Protein")}</div></div></section>
-<section><div class="container"><div class="section-head"><p class="eyebrow">Lower calorie, still substantial</p>
-<h2>Lighter entrées and meals</h2><p>Tiny sides and low-calorie add-ons are excluded from this list. These are the lightest tracked options that still function as an entrée or meaningful meal component.</p></div>
-<div class="pick-grid">{pick_cards(lighter, "Lighter")}</div></div></section>
-<section class="data-section"><div class="container"><div class="section-head"><p class="eyebrow">Higher energy</p>
-<h2>Options for larger appetites and bulking</h2><p>Higher-calorie is not a warning label. These options can fit higher energy needs while keeping protein visible.</p></div>
-<div class="pick-grid">{pick_cards(energy, "Higher energy")}</div></div></section>
+{chain_finder(chain)}
+<section class="chain-picks-section data-section"><div class="container"><div class="section-head"><p class="eyebrow">Best starting points</p><h2>{html.escape(chain)} orders by goal</h2><p>These short lists answer different questions. Every card keeps calories, protein, fiber and sodium together.</p></div><div class="chain-pick-groups">
+<article class="chain-pick-group"><header><span class="chain-pick-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-protein"></use></svg></span><div><p>High protein</p><h3>Most protein</h3></div></header><p>Ranked by published protein, with the rest of the meal still visible.</p><div class="pick-grid">{pick_cards(ranked_protein, "Protein")}</div></article>
+<article class="chain-pick-group"><header><span class="chain-pick-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-leaf"></use></svg></span><div><p>Cutting</p><h3>Lighter, substantial orders</h3></div></header><p>Tiny sides are excluded so these still function as an entrée or meal.</p><div class="pick-grid">{pick_cards(lighter, "Lighter")}</div></article>
+<article class="chain-pick-group"><header><span class="chain-pick-icon"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-flame"></use></svg></span><div><p>Bulking</p><h3>Higher-energy orders</h3></div></header><p>Larger options for bigger appetites, with protein kept in view.</p><div class="pick-grid">{pick_cards(energy, "Higher energy")}</div></article>
 {veg}
+</div></div></section>
+<section id="menu-comparison" class="chain-menu-section"><div class="container"><details class="restaurant-menu-details"><summary><span><small>Complete nutrition table</small><strong>Compare every {html.escape(chain)} option we track</strong></span><b>Open table <span aria-hidden="true">+</span></b></summary><div class="restaurant-menu-content"><p>{html.escape(data_note)}</p>
+{table(meals)}<p class="metric-note"><strong>Protein per 100 calories</strong> = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score.</p></div></details></div></section>
 <section><div class="container advice-grid"><article class="advice-card"><h2>How to order at {html.escape(chain)}</h2><ul>{advice}</ul></article>
 <article class="advice-card"><h2>Match the order to your goal</h2><ul>
 <li><strong>Cutting:</strong> start with the lighter substantial list, then choose a portion that keeps you satisfied.</li>
@@ -371,7 +383,7 @@ def build_page(chain: str, meals: list[dict]) -> tuple[str, str, str, str]:
 <p>Use the finder to rank all {len(parse_meals())} tracked options, or return to the chain directory.</p></div><div class="focus-actions">
 <a class="btn btn-primary" href="restaurant-meal-finder.html">Use Healthy Order Match</a><a class="btn" href="healthy-fast-food.html">Browse all restaurants</a></div></div></section>
 <div class="ad-auto-anchor" aria-hidden="true"></div></main>{footer()}
-<script src="js/lang.js?v=20260823a"></script></body></html>'''
+<script src="js/lang.js?v=20260823a"></script><script src="js/meal-data.js?v={ASSET_VERSION}" defer></script><script src="js/chain-meal-finder.js?v={ASSET_VERSION}" defer></script></body></html>'''
     return path, body, title, h1
 
 

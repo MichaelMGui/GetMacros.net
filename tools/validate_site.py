@@ -366,7 +366,7 @@ def main() -> int:
         # one exact sentence. The homepage kicker now says "83 meals", which is
         # the same claim and has to stay just as current.
         "index.html": r"83\s*(?:tracked menu options|meals\b)",
-        "about.html": r"83 tracked menu options",
+        "about.html": r"83(?:</strong><small>|\s+)tracked menu options",
         "healthy-fast-food.html": r"83 tracked menu options",
         "restaurant-meal-finder.html": r"83 tracked menu options",
     }
@@ -385,6 +385,10 @@ def main() -> int:
         errors.append("meal quiz: explicit no-preference state is missing")
     if "results.slice(0, 5)" not in quiz_text or "root._rest.splice(0, 3)" not in quiz_text:
         errors.append("meal quiz: expected five initial results and three-at-a-time reveal")
+    if 'root.querySelector("h2").focus' in quiz_text:
+        errors.append("meal quiz: heading focus can move the mobile viewport between questions")
+    if "quiz-announcer" not in quiz_text:
+        errors.append("meal quiz: non-scrolling live step announcement is missing")
     finder_css = (ROOT / "css" / "meal-finder-v2.css").read_text(encoding="utf-8")
     if re.search(r"\.quiz-option-any:has\(input:checked\)[^{]*\{[^}]*background:var\(--ink\)", finder_css, re.S):
         errors.append("meal quiz: no-preference selected state must not use the old black card")
@@ -403,6 +407,10 @@ def main() -> int:
         page_text = pages.get(page_path, ("", PageParser()))[0]
         if config["source"] not in page_text:
             errors.append(f"{page_path}: official {chain} source missing")
+        if "data-chain-finder" not in page_text or "js/chain-meal-finder.js?v=" not in page_text:
+            errors.append(f"{page_path}: restaurant-only meal matcher missing")
+        if "Find your best meal across all restaurants" not in page_text:
+            errors.append(f"{page_path}: all-restaurant matcher route missing")
         for meal in chain_meals:
             if meal["name"] not in page_text:
                 errors.append(f"{page_path}: tracked item missing from visible HTML: {meal['name']}")

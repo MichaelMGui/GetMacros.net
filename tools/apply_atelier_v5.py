@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 VERSION = "20260827b"
 
 HEADER = """<header class="site-header modern-header"><nav class="full-nav" aria-label="Main navigation">
-<a class="modern-brand" href="index.html" aria-label="GetMacros.net home"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a>
+<a class="modern-brand" href="index.html" aria-label="GetMacros.net home"><span class="brand-mark" aria-hidden="true"><svg><use href="icon-sprite.svg#logo-mark"></use></svg></span><span>GetMacros<span class="brand-dot">.</span></span></a>
 <div class="full-nav-links" id="primary-navigation">
 <div class="nav-group"><button class="nav-group-trigger" type="button" aria-expanded="false">Eat Out</button><div class="nav-popover">
 <a href="healthy-fast-food.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-rice-bowl"></use></svg><strong>Healthy Fast Food</strong><small>Browse practical chain picks</small></a>
@@ -40,7 +40,7 @@ HEADER = """<header class="site-header modern-header"><nav class="full-nav" aria
 </header>"""
 
 FOOTER = """<footer class="modern-footer">
-<div><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find fast-food meals that fit your calories, protein and goals—then understand the numbers.</p></div>
+<div><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg><use href="icon-sprite.svg#logo-mark"></use></svg></span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find fast-food meals that fit your calories, protein and goals—then understand the numbers.</p></div>
 <div><strong>Use GetMacros</strong><a href="healthy-fast-food.html">Healthy fast food</a><a href="restaurant-meal-finder.html">Healthy Order Match</a><a href="calculators.html">Free macro calculator</a><a href="search.html">Search</a></div>
 <div><strong>Read</strong><a href="articles.html">Nutrition guides</a><a href="blog.html">The GetMacros Journal</a><a href="restaurant-meal-guides.html">Restaurant guides</a><a href="sources.html">Sources</a></div>
 <div><strong>About &amp; legal</strong><a href="about.html">About</a><a href="editorial-policy.html">Editorial policy</a><a href="corrections.html">Corrections</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a><a href="contact.html">Contact</a></div>

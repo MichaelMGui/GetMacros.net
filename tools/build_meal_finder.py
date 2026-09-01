@@ -50,7 +50,7 @@ HERO = r'''<section class="match-intro" data-spotlight>
     </div>
   </div>
 </section>
-<script src="js/meal-data.js?v=7faded9221"></script><script src="js/meal-quiz.js?v=3a8ad1872d"></script>'''
+<script src="js/meal-data.js?v=7faded9221"></script><script src="js/meal-quiz.js?v=9baee3767c"></script>'''
 
 # Every threshold the site states in words. Change them here and the tags, the
 # quiz labels generated from them, and the lists below all move together.

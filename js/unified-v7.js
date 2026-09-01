@@ -27,6 +27,34 @@
     paint();
   }
 
+  function readingProgress() {
+    var content = document.querySelector(".article-container,.focused-guide-body");
+    var header = document.querySelector(".full-nav");
+    if (!content || !header || content.textContent.trim().split(/\s+/).length < 700) return;
+    var track = document.createElement("div");
+    var fill = document.createElement("span");
+    track.className = "reading-progress";
+    track.setAttribute("aria-hidden", "true");
+    track.appendChild(fill);
+    header.appendChild(track);
+    var queued = false;
+    function paint() {
+      var rect = content.getBoundingClientRect();
+      var start = window.scrollY + rect.top - window.innerHeight * .28;
+      var end = start + content.offsetHeight - window.innerHeight * .52;
+      var amount = end <= start ? 0 : Math.max(0, Math.min(1, (window.scrollY - start) / (end - start)));
+      track.style.setProperty("--read-progress", amount.toFixed(4));
+      queued = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(paint);
+    }, { passive: true });
+    window.addEventListener("resize", paint, { passive: true });
+    paint();
+  }
+
   function theme() {
     var buttons = document.querySelectorAll("[data-theme-toggle]");
     if (!buttons.length) return;
@@ -253,6 +281,7 @@
   function start() {
     try { theme(); } catch (error) {}
     try { headerState(); } catch (error) {}
+    try { readingProgress(); } catch (error) {}
     try { navigation(); } catch (error) {}
     try { accessibility(); } catch (error) {}
     try { compactRankings(); } catch (error) {}

@@ -474,6 +474,293 @@ html[data-theme] body.site-v3 :is(a, button, input)[class]:is(.btn-primary,
   color: var(--d-btn-in) !important;
 }
 
+/* ========================================================================
+   About: a scannable product-and-method page, not a wall of policy copy.
+   ======================================================================== */
+body.about-page .about-hero { overflow: hidden; }
+body.about-page .about-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(330px, .7fr);
+  gap: clamp(36px, 7vw, 100px);
+  align-items: center;
+}
+body.about-page .about-hero-grid > div > p:not(.eyebrow) {
+  max-width: 62ch;
+  color: var(--d-muted);
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  line-height: 1.65;
+}
+body.about-page .about-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+body.about-page .about-text-link,
+body.about-page .about-method-link a {
+  color: var(--d-ink);
+  font-weight: 750;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+body.about-page .about-proof {
+  position: relative;
+  padding: clamp(25px, 4vw, 42px);
+  color: var(--d-fill-in);
+  background: var(--d-fill);
+  border: 1px solid color-mix(in srgb, var(--d-fill-in) 13%, transparent);
+  border-radius: var(--d-r-lg);
+  box-shadow: 18px 18px 0 var(--d-tint);
+}
+body.about-page .about-proof > p:first-child {
+  margin: 0 0 22px;
+  color: color-mix(in srgb, var(--d-fill-in) 72%, transparent);
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+body.about-page .about-proof > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-block: 1px solid color-mix(in srgb, var(--d-fill-in) 16%, transparent);
+}
+body.about-page .about-proof span {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  min-width: 0;
+  padding: 22px 12px 22px 0;
+}
+body.about-page .about-proof span + span { padding-left: 16px; border-left: 1px solid color-mix(in srgb, var(--d-fill-in) 16%, transparent); }
+body.about-page .about-proof strong {
+  color: var(--d-fill-in) !important;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1;
+}
+body.about-page .about-proof small { color: color-mix(in srgb, var(--d-fill-in) 74%, transparent); font-size: .76rem; line-height: 1.35; }
+body.about-page .about-proof .about-proof-note { margin: 20px 0 0; color: color-mix(in srgb, var(--d-fill-in) 72%, transparent); font-size: .82rem; line-height: 1.5; }
+
+/* This proof panel sits inside the hero, whose shared contrast rule is
+   intentionally strong. Reassert the panel's inverse palette at the more
+   specific component boundary so its numbers never inherit hero ink. */
+html[data-theme] body.site-v3.about-page main .about-hero .about-proof strong {
+  color: var(--d-fill-in) !important;
+}
+html[data-theme] body.site-v3.about-page main .about-hero .about-proof :is(
+  small, .about-proof-note, p:first-child
+) {
+  color: color-mix(in srgb, var(--d-fill-in) 76%, transparent) !important;
+}
+
+body.about-page .about-section-head { max-width: 720px; margin-bottom: clamp(28px, 5vw, 48px); }
+body.about-page .about-section-head h2,
+body.about-page .about-standards h2 { max-width: 20ch; margin: 9px 0 14px; font-size: clamp(1.85rem, 4vw, 3rem); line-height: 1.06; }
+body.about-page .about-section-head > p:last-child { max-width: 58ch; margin: 0; color: var(--d-muted); line-height: 1.65; }
+body.about-page .about-purpose-grid,
+body.about-page .about-method-grid,
+body.about-page .about-accountability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+body.about-page .about-purpose-card,
+body.about-page .about-accountability-grid > a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  padding: clamp(22px, 3vw, 32px);
+  color: var(--d-ink);
+  background: var(--d-surface);
+  border: 1px solid var(--d-line-2);
+  border-radius: var(--d-r-lg);
+  text-decoration: none;
+  box-shadow: var(--d-shadow);
+  transition: transform 280ms cubic-bezier(.2,.75,.2,1), border-color 280ms ease, box-shadow 280ms ease;
+}
+body.about-page .about-purpose-card:hover,
+body.about-page .about-accountability-grid > a:hover {
+  transform: translateY(-5px);
+  border-color: color-mix(in srgb, var(--d-accent) 42%, var(--d-line));
+  box-shadow: 0 18px 42px rgba(13, 27, 20, .08);
+}
+body.about-page .about-icon,
+body.about-page .about-step-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--d-accent);
+  background: var(--d-tint);
+  border: 1px solid color-mix(in srgb, var(--d-accent) 18%, var(--d-line));
+  border-radius: 50%;
+}
+body.about-page .about-icon svg,
+body.about-page .about-step-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+body.about-page .about-card-num { position: absolute; top: 28px; right: 28px; color: var(--d-muted-2); font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+body.about-page .about-purpose-card h3,
+body.about-page .about-accountability-grid h3 { margin: auto 0 10px; max-width: 15ch; font-size: clamp(1.25rem, 2vw, 1.58rem); line-height: 1.13; }
+body.about-page .about-purpose-card p,
+body.about-page .about-accountability-grid p { margin: 0 0 20px; color: var(--d-muted); font-size: .92rem; line-height: 1.55; }
+body.about-page .about-purpose-card b,
+body.about-page .about-accountability-grid b { color: var(--d-accent); font-size: .83rem; }
+
+body.about-page .about-method-grid { counter-reset: about-method; }
+body.about-page .about-method-grid article {
+  padding: 0 clamp(10px, 2vw, 24px) 0 0;
+  border-right: 1px solid var(--d-line);
+}
+body.about-page .about-method-grid article:last-child { border-right: 0; }
+body.about-page .about-method-grid article > b { display: block; margin: 30px 0 10px; color: var(--d-accent); font-size: .72rem; letter-spacing: .12em; }
+body.about-page .about-method-grid h3 { margin: 0 0 12px; font-size: clamp(1.17rem, 2vw, 1.4rem); line-height: 1.2; }
+body.about-page .about-method-grid p { margin: 0; color: var(--d-muted); font-size: .9rem; line-height: 1.65; }
+body.about-page .about-method-link { margin: 38px 0 0; }
+
+body.about-page .about-standards-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(310px, .72fr);
+  gap: clamp(40px, 7vw, 96px);
+  align-items: center;
+}
+body.about-page .about-check-list { display: grid; gap: 0; margin: 28px 0 0; padding: 0; list-style: none; }
+body.about-page .about-check-list li { display: grid; grid-template-columns: 28px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--d-line); color: var(--d-muted); line-height: 1.55; }
+body.about-page .about-check-list svg { width: 23px; height: 23px; color: var(--d-accent); fill: none; stroke: currentColor; stroke-width: 2; }
+body.about-page .about-check-list strong { color: var(--d-ink); }
+body.about-page .about-boundary { padding: clamp(25px, 4vw, 40px); background: var(--d-tint); border: 1px solid var(--d-line-2); border-radius: var(--d-r-lg); }
+body.about-page .about-boundary h2 { margin-top: 22px; font-size: clamp(1.55rem, 3vw, 2.2rem); }
+body.about-page .about-boundary > p:not(.eyebrow) { color: var(--d-muted); line-height: 1.65; }
+body.about-page .about-boundary .eyebrow { margin-top: 22px; }
+body.about-page .about-accountability-grid > a { min-height: 280px; }
+body.about-page .about-independent { max-width: 76ch; margin: 32px 0 0; padding-top: 24px; color: var(--d-muted); border-top: 1px solid var(--d-line); font-size: .86rem; line-height: 1.6; }
+
+/* ========================================================================
+   Restaurant-only meal matcher.
+   ======================================================================== */
+body.restaurant-guide .chain-finder-section {
+  padding-block: clamp(54px, 8vw, 96px);
+  background: var(--d-bg-soft);
+  border-block: 1px solid var(--d-line);
+}
+body.restaurant-guide .chain-finder-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, .62fr) minmax(0, 1.38fr);
+  gap: clamp(38px, 7vw, 90px);
+  align-items: start;
+}
+body.restaurant-guide .chain-finder-intro { position: sticky; top: 116px; }
+body.restaurant-guide .chain-finder-intro h2 { max-width: 12ch; margin: 9px 0 18px; font-size: clamp(2rem, 4vw, 3.45rem); line-height: 1.02; }
+body.restaurant-guide .chain-finder-intro > p:not(.eyebrow) { max-width: 47ch; color: var(--d-muted); line-height: 1.65; }
+body.restaurant-guide .chain-finder-intro ul { display: grid; gap: 10px; margin: 24px 0 0; padding: 20px 0 0; border-top: 1px solid var(--d-line); list-style: none; }
+body.restaurant-guide .chain-finder-intro li { position: relative; padding-left: 22px; color: var(--d-muted); font-size: .85rem; line-height: 1.4; }
+body.restaurant-guide .chain-finder-intro li::before { content: "✓"; position: absolute; left: 0; color: var(--d-accent); font-weight: 900; }
+body.restaurant-guide .chain-finder-form { padding: clamp(20px, 3vw, 32px); background: var(--d-surface); border: 1px solid var(--d-line-2); border-radius: var(--d-r-lg); box-shadow: var(--d-shadow); }
+body.restaurant-guide .chain-finder-form fieldset { margin: 0; padding: 0; border: 0; }
+body.restaurant-guide .chain-finder-form legend { width: 100%; margin: 0 0 14px; color: var(--d-ink); font-size: .88rem; font-weight: 800; }
+body.restaurant-guide .chain-choice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+body.restaurant-guide .chain-choice-grid label,
+body.restaurant-guide .chain-choice-row label { position: relative; min-width: 0; cursor: pointer; }
+body.restaurant-guide .chain-choice-grid input,
+body.restaurant-guide .chain-choice-row input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+body.restaurant-guide .chain-choice-grid label > span {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: auto auto;
+  gap: 1px 9px;
+  min-height: 83px;
+  padding: 14px;
+  background: var(--d-surface-2);
+  border: 1px solid var(--d-line);
+  border-radius: var(--d-r-sm);
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+body.restaurant-guide .chain-choice-grid svg { grid-row: 1 / 3; align-self: center; width: 24px; height: 24px; color: var(--d-accent); fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+body.restaurant-guide .chain-choice-grid b { align-self: end; font-size: .84rem; line-height: 1.2; }
+body.restaurant-guide .chain-choice-grid small { color: var(--d-muted); font-size: .7rem; line-height: 1.25; }
+body.restaurant-guide .chain-choice-grid input:checked + span { background: var(--d-tint); border-color: var(--d-accent); box-shadow: inset 0 0 0 1px var(--d-accent); }
+body.restaurant-guide .chain-choice-grid input:focus-visible + span,
+body.restaurant-guide .chain-choice-row input:focus-visible + span { outline: 3px solid color-mix(in srgb, var(--d-accent) 35%, transparent); outline-offset: 2px; }
+body.restaurant-guide .chain-compact-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 24px; padding-top: 22px; border-top: 1px solid var(--d-line); }
+body.restaurant-guide .chain-choice-row { display: flex; flex-wrap: wrap; gap: 7px; }
+body.restaurant-guide .chain-choice-row label > span { display: block; padding: 9px 12px; color: var(--d-muted); background: var(--d-surface-2); border: 1px solid var(--d-line); border-radius: 999px; font-size: .78rem; font-weight: 700; line-height: 1; transition: color 180ms ease, border-color 180ms ease, background 180ms ease; }
+body.restaurant-guide .chain-choice-row input:checked + span { color: var(--d-accent-in); background: var(--d-accent); border-color: var(--d-accent); }
+body.restaurant-guide .chain-find-button { width: 100%; margin-top: 24px; }
+body.restaurant-guide .chain-finder-results[hidden] { display: none !important; }
+body.restaurant-guide .chain-finder-results { margin-top: clamp(36px, 6vw, 62px); }
+body.restaurant-guide .chain-results-head { display: flex; justify-content: space-between; gap: 30px; align-items: end; margin-bottom: 20px; padding-bottom: 18px; border-bottom: 1px solid var(--d-line); }
+body.restaurant-guide .chain-results-head h3 { margin: 5px 0 0; font-size: clamp(1.5rem, 3vw, 2.25rem); }
+body.restaurant-guide .chain-results-head > p { max-width: 45ch; margin: 0; color: var(--d-muted); font-size: .82rem; line-height: 1.5; }
+body.restaurant-guide .chain-result-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+body.restaurant-guide .chain-result-card { display: flex; flex-direction: column; min-width: 0; padding: 22px; background: var(--d-surface); border: 1px solid var(--d-line-2); border-radius: var(--d-r); }
+body.restaurant-guide .chain-result-card.is-best { border-color: color-mix(in srgb, var(--d-accent) 55%, var(--d-line)); box-shadow: inset 0 3px 0 var(--d-accent); }
+body.restaurant-guide .chain-result-top { display: flex; justify-content: space-between; color: var(--d-accent); font-size: .69rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+body.restaurant-guide .chain-result-card h3 { margin: 22px 0; font-size: 1.08rem; line-height: 1.3; overflow-wrap: anywhere; }
+body.restaurant-guide .chain-result-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--d-line); border-radius: var(--d-r-sm); overflow: hidden; }
+body.restaurant-guide .chain-result-metric { display: grid; gap: 2px; padding: 10px; }
+body.restaurant-guide .chain-result-metric:nth-child(even) { border-left: 1px solid var(--d-line); }
+body.restaurant-guide .chain-result-metric:nth-child(n+3) { border-top: 1px solid var(--d-line); }
+body.restaurant-guide .chain-result-metric b { font-size: .9rem; }
+body.restaurant-guide .chain-result-metric small { color: var(--d-muted); font-size: .65rem; }
+body.restaurant-guide .chain-result-metric.is-missing b { color: var(--d-muted); font-size: .72rem; }
+body.restaurant-guide .chain-result-card > p { margin: 18px 0 0; color: var(--d-muted); font-size: .82rem; line-height: 1.55; }
+body.restaurant-guide .chain-empty { padding: 24px; background: var(--d-surface); border: 1px solid var(--d-line-2); border-radius: var(--d-r); }
+body.restaurant-guide .chain-empty h3 { margin-top: 0; }
+body.restaurant-guide .chain-empty p { margin-bottom: 0; color: var(--d-muted); }
+body.restaurant-guide .chain-all-link { margin-top: 28px; }
+body.restaurant-guide .chain-all-link p { margin: 0; color: var(--d-muted); font-size: .83rem; text-align: center; }
+body.restaurant-guide .chain-all-link a { color: var(--d-ink); font-weight: 800; text-underline-offset: 4px; }
+
+/* Replacing quiz markup should not allow Safari's scroll anchoring to move the page. */
+body.order-match-page #meal-quiz { overflow-anchor: none; }
+
+@media (max-width: 820px) {
+  body.about-page .about-hero-grid,
+  body.about-page .about-standards-grid,
+  body.restaurant-guide .chain-finder-layout { grid-template-columns: 1fr; }
+  body.about-page .about-proof { box-shadow: 9px 9px 0 var(--d-tint); }
+  body.about-page .about-purpose-grid,
+  body.about-page .about-method-grid,
+  body.about-page .about-accountability-grid { grid-template-columns: 1fr; }
+  body.about-page .about-purpose-card,
+  body.about-page .about-accountability-grid > a { min-height: 0; }
+  body.about-page .about-purpose-card h3,
+  body.about-page .about-accountability-grid h3 { margin-top: 38px; }
+  body.about-page .about-method-grid article { display: grid; grid-template-columns: 48px 1fr; column-gap: 16px; padding: 18px 0; border-right: 0; border-bottom: 1px solid var(--d-line); }
+  body.about-page .about-method-grid article:last-child { border-bottom: 0; }
+  body.about-page .about-method-grid .about-step-icon { grid-row: 1 / 5; }
+  body.about-page .about-method-grid article > b { margin: 0 0 8px; }
+  body.about-page .about-method-grid h3,
+  body.about-page .about-method-grid p { grid-column: 2; }
+  body.restaurant-guide .chain-finder-intro { position: static; }
+  body.restaurant-guide .chain-finder-intro h2 { max-width: 15ch; }
+  body.restaurant-guide .chain-results-head { display: block; }
+  body.restaurant-guide .chain-results-head > p { margin-top: 10px; }
+  body.restaurant-guide .chain-result-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  body.about-page .about-hero-actions { align-items: flex-start; flex-direction: column; }
+  body.about-page .about-proof { padding: 22px 18px; }
+  body.about-page .about-proof > div { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  body.about-page .about-proof span { padding: 17px 8px 17px 0; }
+  body.about-page .about-proof span + span { padding-left: 10px; }
+  body.about-page .about-proof strong { font-size: 1.72rem; }
+  body.about-page .about-proof small { font-size: .66rem; overflow-wrap: anywhere; }
+  body.restaurant-guide .chain-finder-section { padding-block: 46px; }
+  body.restaurant-guide .chain-finder-form { padding: 16px; }
+  body.restaurant-guide .chain-choice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.restaurant-guide .chain-choice-grid label > span { grid-template-columns: 25px 1fr; min-height: 76px; padding: 11px; }
+  body.restaurant-guide .chain-choice-grid svg { width: 21px; height: 21px; }
+  body.restaurant-guide .chain-compact-fields { grid-template-columns: 1fr; gap: 19px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.about-page .about-purpose-card,
+  body.about-page .about-accountability-grid > a,
+  body.restaurant-guide .chain-choice-grid label > span { transition: none; }
+}
+
 /* ---- Homepage tools: useful links, not a dashboard ----------------------
    This section used to become one tall dark slab on phones, with four
    cramped square tiles. Keep the primary calculator prominent, then let the
@@ -1034,4 +1321,372 @@ body.site-v3.calculators-v2 .calc-nav a { min-width: 0; }
     border-radius: 0;
     font-size: max(.84rem, 13.5px);
   }
+}
+
+/* =========================================================================
+   Experience pass — one recognizable GetMacros system on every retained page.
+   The motion explains hierarchy and state; it never moves a user's viewport.
+   ========================================================================= */
+@view-transition { navigation: auto; }
+::view-transition-old(root) { animation: gm-page-out 140ms ease both; }
+::view-transition-new(root) { animation: gm-page-in 360ms cubic-bezier(.2,.72,.2,1) both; }
+@keyframes gm-page-out { to { opacity: .985; transform: translateY(-2px); } }
+@keyframes gm-page-in { from { opacity: .72; transform: translateY(6px); } }
+
+:root {
+  --d-ease: cubic-bezier(.2,.76,.2,1);
+  --d-section: clamp(58px, 8vw, 108px);
+}
+html { scroll-behavior: smooth; }
+html[data-theme] body.site-v3 {
+  min-width: 320px;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body.site-v3 ::selection { color: var(--d-accent-in); background: var(--d-accent); }
+body.site-v3 :is(p,li,dd) { overflow-wrap: break-word; }
+body.site-v3 main > section:not([class*="hero"]):not(.tight) { padding-block: var(--d-section); }
+body.site-v3 main > section + section { border-top-color: var(--d-line); }
+
+/* The real leaf mark is used everywhere the brand appears. */
+.modern-brand .brand-mark { display: grid !important; place-items: center; overflow: hidden; }
+.modern-brand .brand-mark svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.footer-brand .brand-mark svg { width: 25px; height: 25px; }
+
+/* Navigation is a calm instrument panel with fluid, springy menus. */
+html[data-theme] .site-header.modern-header {
+  padding: 10px clamp(8px, 1.8vw, 22px) 0 !important;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--d-bg) 94%, transparent) 0%, color-mix(in srgb, var(--d-bg) 72%, transparent) 68%, transparent 100%) !important;
+  backdrop-filter: none !important;
+}
+html[data-theme] .full-nav {
+  width: min(1180px, 100%) !important;
+  min-height: 68px !important;
+  padding: 8px 10px 8px 13px !important;
+  color: var(--d-ink) !important;
+  background: color-mix(in srgb, var(--d-surface) 94%, transparent) !important;
+  border: 1px solid var(--d-line-2) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 36px rgba(13,27,20,.07) !important;
+  backdrop-filter: blur(20px) saturate(125%);
+  transition: min-height 360ms var(--d-ease), box-shadow 360ms ease, background 360ms ease !important;
+}
+html[data-theme="dark"] .full-nav {
+  color: #e5f7ec !important;
+  background: color-mix(in srgb, #0c3b29 95%, transparent) !important;
+  border-color: rgba(151,223,182,.18) !important;
+  box-shadow: 0 14px 44px rgba(0,0,0,.32) !important;
+}
+html[data-theme="dark"] body.site-v3 .site-header.modern-header .full-nav {
+  color: #e5f7ec !important;
+  background: rgba(12,59,41,.96) !important;
+  border-color: rgba(173,231,195,.22) !important;
+}
+.site-header.is-scrolled .full-nav,
+body.is-scrolled .full-nav { min-height: 60px !important; box-shadow: 0 12px 38px rgba(13,27,20,.12) !important; }
+.full-nav .modern-brand { letter-spacing: -.035em !important; }
+.nav-group-trigger,
+.full-nav .nav-direct,
+.full-nav .nav-action,
+.theme-toggle { transition: color 180ms ease, background 220ms ease, transform 260ms var(--d-ease) !important; }
+.nav-group-trigger:hover,
+.full-nav .nav-direct:hover,
+.full-nav .nav-action:hover { transform: translateY(-1px); }
+.nav-group-trigger::after { transition: transform 360ms var(--d-ease) !important; }
+.nav-group.is-open .nav-group-trigger::after { transform: rotate(180deg) !important; }
+html[data-theme] .nav-popover {
+  padding: 9px !important;
+  color: #13251b !important;
+  background: rgba(250,252,250,.985) !important;
+  border: 1px solid rgba(17,52,35,.12) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 24px 70px rgba(8,30,19,.18) !important;
+  transform: translate(-50%, 11px) scale(.975) !important;
+  transform-origin: 50% 0;
+  transition: opacity 190ms ease, visibility 190ms ease, transform 420ms var(--d-ease) !important;
+}
+.nav-group.is-open .nav-popover { transform: translate(-50%, 0) scale(1) !important; }
+.nav-popover a { border-radius: 10px !important; transition: background 180ms ease, transform 260ms var(--d-ease) !important; }
+.nav-popover a:hover { transform: translateX(4px) !important; }
+@media (min-width: 901px) {
+  html[data-theme="dark"] body.site-v3 .site-header.modern-header .nav-popover {
+    color: #13251b !important;
+    background: #f4f6f4 !important;
+    border-color: rgba(17,52,35,.15) !important;
+    box-shadow: 0 24px 70px rgba(0,0,0,.32) !important;
+  }
+  html[data-theme="dark"] body.site-v3 .site-header.modern-header .nav-popover a strong {
+    color: #13251b !important;
+  }
+  html[data-theme="dark"] body.site-v3 .site-header.modern-header .nav-popover a span {
+    color: #53645b !important;
+  }
+}
+.reading-progress {
+  position: absolute;
+  inset: auto 18px 0;
+  height: 2px;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--d-accent) 12%, transparent);
+}
+.reading-progress > span { display: block; width: calc(var(--read-progress, 0) * 100%); height: 100%; background: var(--d-accent); transition: width 80ms linear; }
+
+/* A thin moving current gives page openings identity without another green box. */
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero,.calc-hub-hero) {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden !important;
+  padding-block: clamp(54px, 7.4vw, 94px) !important;
+  background:
+    radial-gradient(circle at 88% 15%, color-mix(in srgb, var(--d-accent) 8%, transparent) 0 13%, transparent 34%),
+    var(--d-bg) !important;
+}
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero,.calc-hub-hero)::before {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  z-index: 0 !important;
+  width: 58% !important;
+  height: 5px !important;
+  inset: auto auto 0 -9% !important;
+  padding: 0 !important;
+  opacity: 1 !important;
+  background: linear-gradient(90deg, transparent, var(--d-accent) 38%, color-mix(in srgb, var(--d-accent) 22%, transparent) 76%, transparent) !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  filter: blur(.2px);
+  transform-origin: left center;
+  animation: gm-current 8s var(--d-ease) infinite alternate !important;
+}
+html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+  :is(.page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero,.calc-hub-hero)::after {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  z-index: 0 !important;
+  width: clamp(150px, 24vw, 330px) !important;
+  height: clamp(150px, 24vw, 330px) !important;
+  right: -8% !important;
+  bottom: -72% !important;
+  opacity: .26 !important;
+  background: color-mix(in srgb, var(--d-accent) 13%, transparent) !important;
+  border: 0 !important;
+  border-radius: 42% 58% 61% 39% / 48% 44% 56% 52% !important;
+  filter: blur(1px);
+  animation: gm-orbit 11s ease-in-out infinite alternate !important;
+}
+@keyframes gm-current { from { transform: translateX(-6%) scaleX(.86); } to { transform: translateX(78%) scaleX(1.16); } }
+@keyframes gm-orbit { to { transform: translate3d(-24px,-20px,0) rotate(24deg) scale(1.06); } }
+body.site-v3 main :is([class*="hero"],.liquid-surface) > .container { position: relative; z-index: 1; }
+
+/* Intentional reading typography for guides, journal posts and trust pages. */
+body.site-v3 .article-container {
+  width: min(calc(100% - 36px), 760px) !important;
+  padding-block: clamp(46px, 7vw, 84px) !important;
+}
+body.site-v3 .article-container > :is(p,ul,ol,blockquote):not(.blog-meta),
+body.site-v3 .focused-guide-body > :is(p,ul,ol,blockquote) { font-size: clamp(1rem, 1.15vw, 1.075rem) !important; line-height: 1.78 !important; }
+body.site-v3 .article-container > h2,
+body.site-v3 .focused-guide-body > h2 {
+  max-width: 23ch;
+  margin-top: clamp(54px, 8vw, 84px) !important;
+  padding-top: 19px;
+  border-top: 1px solid var(--d-line);
+  font-size: clamp(1.7rem, 3.5vw, 2.55rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.035em !important;
+  text-wrap: balance;
+}
+body.site-v3 .article-container > h2::before { display: none !important; }
+body.site-v3 .article-container a:not(.btn) { text-decoration-thickness: 1px; text-underline-offset: 4px; }
+body.site-v3 .answer-box,
+body.site-v3 .evidence-card {
+  position: relative;
+  padding: clamp(21px, 4vw, 32px) !important;
+  background: var(--d-tint) !important;
+  border: 0 !important;
+  border-left: 3px solid var(--d-accent) !important;
+  border-radius: 0 var(--d-r) var(--d-r) 0 !important;
+  box-shadow: none !important;
+}
+body.site-v3 .answer-box h2 { margin-top: 0 !important; padding-top: 0 !important; border: 0 !important; font-size: clamp(1.35rem, 3vw, 1.8rem) !important; }
+body.site-v3 .source-list { padding: 0; list-style: none; border-top: 1px solid var(--d-line); }
+body.site-v3 .source-list li { margin: 0 !important; padding: 15px 0; border-bottom: 1px solid var(--d-line); }
+
+/* Journal: one strong lead story, then a clean editorial grid. */
+body.journal-page #latest .blog-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px !important; }
+html[data-theme] body.journal-page #latest .blog-card {
+  display: grid !important;
+  grid-template-rows: auto 1fr;
+  min-height: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  background: var(--d-surface) !important;
+  border: 1px solid var(--d-line-2) !important;
+  border-radius: var(--d-r-lg) !important;
+  box-shadow: var(--d-shadow) !important;
+}
+body.journal-page #latest .blog-card:first-child { grid-column: 1 / -1; grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); grid-template-rows: none; }
+body.journal-page .blog-card-media { min-height: 220px; overflow: hidden; background: var(--d-bg-soft); }
+body.journal-page .blog-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--d-ease); }
+body.journal-page .blog-card:hover .blog-card-media img { transform: scale(1.025); }
+body.journal-page .blog-card-copy { display: flex; flex-direction: column; padding: clamp(21px,3vw,31px); }
+body.journal-page .blog-card-copy h2 { max-width: 20ch; margin: 12px 0; font-size: clamp(1.3rem,2.3vw,1.85rem) !important; line-height: 1.1 !important; }
+body.journal-page .blog-card-copy > p { color: var(--d-muted) !important; line-height: 1.58; }
+body.journal-page .blog-arrow { margin-top: auto; padding-top: 18px; color: var(--d-accent); font-weight: 800; }
+
+/* Forms and tools share one quiet, touch-safe language. */
+html[data-theme] body.site-v3 :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea) {
+  min-height: 48px;
+  padding-inline: 13px;
+  color: var(--d-ink) !important;
+  background: var(--d-surface) !important;
+  border: 1px solid var(--d-line-2) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  font-size: max(.94rem, 16px) !important;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+html[data-theme] body.site-v3 :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea):focus {
+  border-color: var(--d-accent) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--d-accent) 16%, transparent) !important;
+  outline: none;
+}
+body.site-v3 :is(button,.btn,a.btn) { min-height: 44px; }
+body.tools-page :is(.toolbox,.builder,.calc-wrap,.calc-form,form.calculator-form) { overflow: hidden; }
+body.tools-page :is(.result,.results,.calculator-output,.output) { overflow-wrap: anywhere; }
+
+/* Restaurant pages answer the goal first; the dense table stays available. */
+body.restaurant-guide .chain-picks-section { background: var(--d-bg) !important; }
+body.restaurant-guide .chain-pick-groups { display: grid; gap: 50px; }
+body.restaurant-guide .chain-pick-group { display: grid; grid-template-columns: minmax(220px,.46fr) minmax(0,1.54fr); column-gap: clamp(30px,6vw,78px); align-items: start; padding-top: 30px; border-top: 1px solid var(--d-line-2); }
+body.restaurant-guide .chain-pick-group > header { display: grid; grid-template-columns: 42px 1fr; gap: 13px; align-items: center; }
+body.restaurant-guide .chain-pick-icon { display: grid; place-items: center; width: 42px; height: 42px; color: var(--d-accent); background: var(--d-tint); border-radius: 50%; }
+body.restaurant-guide .chain-pick-icon svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+body.restaurant-guide .chain-pick-group header p { margin: 0 0 3px; color: var(--d-accent); font-size: .69rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+body.restaurant-guide .chain-pick-group header h3 { margin: 0; font-size: clamp(1.12rem,2vw,1.45rem); line-height: 1.16; }
+body.restaurant-guide .chain-pick-group > p { grid-column: 1; margin: 15px 0 0; color: var(--d-muted); font-size: .82rem; line-height: 1.5; }
+body.restaurant-guide .chain-pick-group > .pick-grid { grid-column: 2; grid-row: 1 / 4; }
+body.restaurant-guide .chain-pick-group .pick-card { min-width: 0; }
+body.restaurant-guide .chain-menu-section { padding-block: clamp(32px,5vw,58px) !important; }
+body.restaurant-guide .restaurant-menu-details { background: var(--d-surface); border: 1px solid var(--d-line-2); border-radius: var(--d-r-lg); }
+body.restaurant-guide .restaurant-menu-details summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 94px; padding: 21px clamp(20px,4vw,34px); cursor: pointer; list-style: none; }
+body.restaurant-guide .restaurant-menu-details summary::-webkit-details-marker { display: none; }
+body.restaurant-guide .restaurant-menu-details summary span { display: grid; gap: 6px; }
+body.restaurant-guide .restaurant-menu-details summary small { color: var(--d-accent); font-size: .69rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+body.restaurant-guide .restaurant-menu-details summary strong { font-size: clamp(1.08rem,2.2vw,1.45rem); line-height: 1.2; }
+body.restaurant-guide .restaurant-menu-details summary > b { flex: 0 0 auto; color: var(--d-muted); font-size: .78rem; }
+body.restaurant-guide .restaurant-menu-details summary > b span { display: inline; margin-left: 7px; color: var(--d-accent); font-size: 1.2rem; transition: transform 280ms var(--d-ease); }
+body.restaurant-guide .restaurant-menu-details[open] summary > b span { display: inline-block; transform: rotate(45deg); }
+body.restaurant-guide .restaurant-menu-content { padding: 0 clamp(20px,4vw,34px) 28px; border-top: 1px solid var(--d-line); }
+body.restaurant-guide .restaurant-menu-content > p:first-child { max-width: 76ch; margin: 22px 0; color: var(--d-muted); line-height: 1.6; }
+
+/* Footer closes the product without becoming another directory wall. */
+html[data-theme] .modern-footer { gap: clamp(28px,5vw,64px) !important; padding-block: clamp(48px,7vw,82px) !important; border-top: 1px solid var(--d-line) !important; }
+.modern-footer > div > strong { color: var(--d-ink) !important; font-size: .72rem !important; letter-spacing: .08em; text-transform: uppercase; }
+.modern-footer a:not(.modern-brand) { line-height: 1.55; }
+
+@media (hover:hover) and (pointer:fine) {
+  body.site-v3 :is(.guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.pick-card,.meal-card) { transition: transform 320ms var(--d-ease), border-color 220ms ease, box-shadow 320ms ease !important; }
+  body.site-v3 :is(.guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.pick-card,.meal-card):hover { transform: translateY(-4px) !important; border-color: color-mix(in srgb,var(--d-accent) 35%,var(--d-line)) !important; box-shadow: 0 20px 48px rgba(13,27,20,.08) !important; }
+}
+
+@media (min-width: 981px) {
+  /* The working order ticket remains the visual anchor, but the introduction
+     no longer consumes a second screen before the user reaches the tools. */
+  body.home-studio .home-intro { padding: 64px 0 72px !important; }
+  body.home-studio .home-intro h1 {
+    max-width: 11ch;
+    font-size: clamp(3.35rem, 5.2vw, 4.85rem) !important;
+    line-height: .94 !important;
+  }
+  body.home-studio .home-kicker { margin-bottom: 27px; }
+  body.home-studio .home-intro-lede { margin-top: 1.45rem; line-height: 1.62; }
+  body.home-studio .home-intro-actions { margin-top: 1.45rem; }
+  body.home-studio .home-signals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 22px;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--v8-line);
+  }
+  body.home-studio .home-signals li { min-height: 44px; }
+  body.home-studio .home-signals li:nth-child(3) { display: none; }
+}
+
+@media (max-width: 900px) {
+  html[data-theme] .full-nav-links {
+    padding: 10px !important;
+    background: color-mix(in srgb,var(--d-surface) 98%,transparent) !important;
+    border: 1px solid var(--d-line-2) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 24px 60px rgba(7,24,15,.2) !important;
+    transform: translateY(-9px) scale(.985) !important;
+    transform-origin: top center;
+    transition: opacity 190ms ease, visibility 190ms ease, transform 420ms var(--d-ease) !important;
+  }
+  body.nav-open .full-nav-links { transform: translateY(0) scale(1) !important; }
+  html[data-theme="dark"] body.site-v3 .site-header.modern-header .full-nav-links {
+    color: #13251b !important;
+    background: #f4f6f4 !important;
+    border-color: rgba(17,52,35,.15) !important;
+  }
+  html[data-theme="dark"] body.site-v3 .site-header.modern-header .full-nav-links
+    :is(.nav-group-trigger,.nav-direct,.nav-action,.nav-popover a strong) {
+    color: #13251b !important;
+  }
+  html[data-theme="dark"] body.site-v3 .site-header.modern-header .full-nav-links .nav-popover a span {
+    color: #53645b !important;
+  }
+  html[data-theme] .nav-popover,
+  .nav-group.is-open .nav-popover { padding: 0 0 8px !important; background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; transform: none !important; }
+  body.journal-page #latest .blog-card:first-child { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  body.restaurant-guide .chain-pick-group { grid-template-columns: 1fr; gap: 0; }
+  body.restaurant-guide .chain-pick-group > .pick-grid { grid-column: 1; grid-row: auto; margin-top: 20px; }
+}
+
+@media (max-width: 620px) {
+  :root { --d-section: 48px; }
+  html[data-theme] .site-header.modern-header { padding: 7px 7px 0 !important; }
+  html[data-theme] .full-nav { min-height: 61px !important; padding: 7px 8px 7px 10px !important; border-radius: 15px !important; }
+  .modern-brand .brand-mark { width: 39px !important; height: 39px !important; }
+  .modern-brand .brand-mark svg { width: 24px; height: 24px; }
+  html[data-theme] body.site-v3:not(.home-studio):not(.order-match-page) main
+    :is(.page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero,.calc-hub-hero) { padding-block: 34px 39px !important; }
+  body.site-v3 .article-container { width: min(calc(100% - 28px),760px) !important; padding-block: 40px !important; }
+  body.site-v3 .article-container > h2,
+  body.site-v3 .focused-guide-body > h2 { margin-top: 48px !important; font-size: clamp(1.55rem,7vw,1.95rem) !important; }
+  body.journal-page #latest .blog-grid { grid-template-columns: 1fr; }
+  body.journal-page #latest .blog-card:first-child { grid-column: auto; }
+  body.journal-page .blog-card-media { min-height: 180px; }
+  body.restaurant-guide .restaurant-menu-details summary { min-height: 82px; padding: 17px; }
+  body.restaurant-guide .restaurant-menu-details summary > b { font-size: 0; }
+  body.restaurant-guide .restaurant-menu-details summary > b span { font-size: 1.35rem; }
+  body.restaurant-guide .restaurant-menu-content { padding-inline: 17px; }
+  .reading-progress { inset-inline: 12px; }
+
+  /* Keep the calculator opening compact enough that the form starts in the
+     first viewport, and undo the tablet grid alignment on stacked cards. */
+  body.site-v3.calculators-v2 .calc-hub-hero h1 {
+    max-width: 18ch !important;
+    font-size: clamp(2rem, 8.5vw, 2.35rem) !important;
+    line-height: 1.03 !important;
+  }
+  html[data-theme] body.site-v3.calculators-v2 .single-macro-result {
+    align-self: stretch !important;
+    width: auto !important;
+    background: transparent !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  ::view-transition-old(root),::view-transition-new(root),
+  html[data-theme] body.site-v3 main :is([class*="hero"],.liquid-surface)::before,
+  html[data-theme] body.site-v3 main :is([class*="hero"],.liquid-surface)::after { animation: none !important; }
+  body.journal-page .blog-card-media img { transition: none; }
 }

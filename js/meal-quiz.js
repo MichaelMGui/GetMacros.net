@@ -6,6 +6,16 @@
   var root = document.getElementById("meal-quiz");
   if (!root || !meals.length) return;
 
+  // Keep step changes accessible without moving the page. Focusing a newly
+  // inserted heading can still scroll the viewport in iOS Safari even when
+  // preventScroll is requested, which made Continue feel unpredictable.
+  var announcer = document.createElement("p");
+  announcer.className = "sr-only quiz-announcer";
+  announcer.setAttribute("aria-live", "polite");
+  announcer.setAttribute("aria-atomic", "true");
+  root.parentNode.insertBefore(announcer, root);
+  function announce(message) { announcer.textContent = message; }
+
   // Product-first order: begin with chains that combine broad familiarity with
   // the strongest range of complete meals in this dataset. This is an interface
   // priority, not a claim about national sales or a universal restaurant rank.
@@ -181,7 +191,7 @@
   function renderStep() {
     var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
     root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + ' Skip a question and we treat it as no preference.</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost quiz-back" data-go="-1">Back</button>' : '') + '<button type="button" class="btn btn-primary quiz-continue" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
-    root.querySelector("h2").focus({ preventScroll: true });
+    announce("Question " + (step + 1) + " of " + STEPS.length + ": " + s.title);
   }
   function summary(count) {
     var bits = [];
@@ -197,11 +207,11 @@
     var incompleteCount = meals.filter(function (m) { return !complete(m); }).length;
     if (!results.length) {
       root.innerHTML = '<div class="quiz-card empty-results"><span class="result-symbol">↺</span><h2 tabindex="-1">That combination is too narrow.</h2><p>Remove one restaurant or dietary filter and we can give you useful choices instead of filler.</p><button type="button" class="btn btn-primary" data-restart="1">Change my answers</button></div>';
-      root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); return;
+      announce("No meals match that exact combination. Change an answer to continue."); syncUrl(); return;
     }
     var shown = results.slice(0, 5);
     root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your five best matches</p><h2 tabindex="-1">Meals that fit your day</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="data-quality"><span aria-hidden="true">✓</span><p><b>Complete nutrition only by default.</b> Every result shown has calories, protein, fiber and sodium filled in.</p></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + '<div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded by default because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></div>';
-    root._rest = results.slice(5); root.querySelector("h2").focus({ preventScroll: true }); syncUrl(); updateSavedUi();
+    root._rest = results.slice(5); announce(summary(results.length)); syncUrl(); updateSavedUi();
   }
   function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }
   function shareResults(button) { var data = { title: "My GetMacros meal matches", text: "Fast-food options matched to my goals and preferences.", url: location.href }; if (navigator.share) { navigator.share(data).catch(function () {}); return; } if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(function () { button.textContent = "Link copied ✓"; }); }

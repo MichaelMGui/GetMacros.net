@@ -8,7 +8,7 @@ from apply_atelier_v5 import FOOTER as ATELIER_FOOTER, HEADER as ATELIER_HEADER
 
 SITE = "https://getmacros.net"
 PUBLISHER = "ca-pub-2316153877942502"
-ASSET_VERSION = "20260828g"
+ASSET_VERSION = "20260901a"
 THEME_BOOT = '<script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>'
 
 CSP = (
@@ -84,6 +84,8 @@ def head(path: str, title: str, description: str, *, schema=None,
 {THEME_BOOT}
 <link rel="stylesheet" href="css/unified-v7.css?v=20260828g">
 <link rel="stylesheet" href="css/theme-fix.css?v=bb1ce922e4">
+<link rel="stylesheet" href="css/editorial-v8.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="css/clean-v9.css?v={ASSET_VERSION}">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUBLISHER}" crossorigin="anonymous"></script>
 {jsonld}
 <meta http-equiv="Content-Security-Policy" content="{CSP}">

@@ -299,11 +299,9 @@ def build_search(final: list[dict]) -> None:
     title = "Search Healthy Fast Food, Macro Tools & Guides | GetMacros"
     desc = ("Search every GetMacros page at once: healthy fast-food menu guides, "
             "restaurant comparisons, macro calculators and nutrition explainers.")
-    # `perGroup` rather than one global cap: capping the first twelve rows
-    # overall showed twelve restaurants and hid every other section, so the
-    # page opened looking like one list again. Four from each section shows
-    # what the library is made of before you expand it. `limit` is the point
-    # below which expanding would be pointless.
+    # Keep the unfiltered library genuinely short while showing its range.
+    # Three entries from each early category avoids opening with a wall of
+    # restaurant pages; the complete index stays behind one explicit control.
     script = """(function(){
 var q=document.getElementById('site-search'),
     hits=[].slice.call(document.querySelectorAll('.search-hit')),
@@ -311,7 +309,7 @@ var q=document.getElementById('site-search'),
     status=document.getElementById('search-status'),
     toggle=document.getElementById('search-results-toggle'),
     startBlock=document.getElementById('search-start'),
-    limit=12,perGroup=4,expanded=false;
+    limit=12,perGroup=3,expanded=false;
 function words(value){return value.toLowerCase().match(/[a-z0-9]+/g)||[];}
 function run(){
   var terms=words(q.value),matched=0,shown=0;
@@ -321,23 +319,23 @@ function run(){
       var hay=words(hit.dataset.search).join(' '),
           match=!terms.length||terms.every(function(t){return hay.indexOf(t)>-1;});
       if(match)live++;
-      var visible=match&&(terms.length||expanded||kept<perGroup);
-      if(visible)kept++;
+      var visible=match&&(terms.length||expanded||(shown<limit&&kept<perGroup));
+      if(visible){kept++;shown++;}
       hit.hidden=!visible;
     });
-    matched+=live;shown+=kept;
+    matched+=live;
     var count=group.querySelector('[data-count]');
     if(count)count.textContent=live;
     var more=group.querySelector('[data-more]');
     if(more){var rest=live-kept;more.hidden=rest<1;more.textContent='+'+rest+' more in this section';}
-    group.hidden=!live;
+    group.hidden=!live||(!terms.length&&!expanded&&!kept);
   });
   if(startBlock)startBlock.hidden=!!terms.length;
   if(terms.length)status.textContent=matched?matched+' match'+(matched===1?'':'es')+' for \u201c'+q.value.trim()+'\u201d':'Nothing matches \u201c'+q.value.trim()+'\u201d yet. Try a chain, a macro or a tool.';
   else status.textContent=expanded?'Showing all '+matched+' pages':'Showing '+shown+' of '+matched+' pages';
-  toggle.hidden=!!terms.length||hits.length<=limit;
+  toggle.hidden=!!terms.length||matched<=limit;
   toggle.setAttribute('aria-expanded',String(expanded));
-  toggle.textContent=expanded?'Show fewer':'Show all '+hits.length+' pages';
+  toggle.textContent=expanded?'Show fewer':'Show all '+matched+' pages';
 }
 q.addEventListener('input',function(){expanded=false;run();});
 toggle.addEventListener('click',function(){
@@ -350,7 +348,7 @@ run();
 })();"""
     body = f'''{head("search.html", title, desc)}<body class="site-v3 recovery-page search-page">{nav()}
 <main id="main-content"><section class="search-hero"><div class="container"><p class="eyebrow">Search GetMacros</p><h1>Find a restaurant, tool or nutrition guide</h1><p>Every page on GetMacros in one place: healthy fast food, macro tools, and the guides that help you use them.</p>
-<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try &ldquo;Chipotle,&rdquo; &ldquo;high protein&rdquo; or &ldquo;recipe macros&rdquo;" autocomplete="off"></label><p id="search-status" aria-live="polite">Showing 12 of {total} pages</p></div></section>
+<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try &ldquo;Chipotle&rdquo; or &ldquo;high protein&rdquo;" autocomplete="off"></label><p id="search-status" aria-live="polite">Showing 12 of {total} pages</p></div></section>
 <section class="search-start" id="search-start"><div class="container"><div class="search-start-head"><p class="eyebrow">Start here</p><h2>The five people ask for most</h2></div><div class="search-start-grid">{start_tiles}</div></div></section>
 <section class="search-library"><div class="container"><div class="search-library-head"><p class="eyebrow">The whole library</p><h2>Everything, grouped by what it does</h2></div>{"".join(blocks)}<div class="search-results-actions"><button class="search-results-toggle" id="search-results-toggle" type="button" aria-controls="search-results" aria-expanded="false">Show all {total} pages</button></div></div></section></main>{footer()}
 <script>{script}</script></body></html>'''

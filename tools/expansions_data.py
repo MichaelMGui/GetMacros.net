@@ -1376,39 +1376,4 @@ EXPANSIONS.update({
   "grocery list to the penny.</p>"),
 ],
 
-"about": [
- ("How the numbers on this site are produced",
-  "<p>Two kinds of number appear across GetMacros, and they are sourced differently.</p>"
-  "<p><strong>Restaurant nutrition data</strong> comes from each chain's own published "
-  "information, for the standard build of the item as the chain lists it. Where a chain does "
-  "not publish a value, the tables show a dash rather than a zero, because a missing sodium "
-  "figure is not a low one and ranking it as such would be dishonest. Combined orders name "
-  "every item included.</p>"
-  "<p><strong>Calculator outputs</strong> use published equations rather than proprietary "
-  "formulas. Energy needs use Mifflin-St Jeor with standard activity multipliers; protein "
-  "targets use the ranges reported in resistance-training and weight-management research. Every "
-  "calculator on the site uses the same equations, so two pages cannot give one person "
-  "different answers.</p>"
-  "<p>Goal tags in Healthy Order Match &mdash; high protein, lighter, high fiber &mdash; are derived "
-  "from each meal's own numbers against stated thresholds rather than assigned by hand. A label "
-  "the site states out loud is the threshold the site actually applies.</p>"),
- ("What this site is not",
-  "<p>GetMacros publishes practical nutrition information for generally healthy adults. It does "
-  "not publish clinical guidance, and pages covering the management of specific medical "
-  "conditions were removed rather than maintained without the credentials such content "
-  "requires.</p>"
-  "<p>Nothing here is a substitute for advice from your own clinician, and there are situations "
-  "where a general guide is the wrong tool entirely: pregnancy and breastfeeding, chronic kidney "
-  "or liver disease, diabetes management, growth in children, and recovery from an eating "
-  "disorder, where numeric targets can do harm.</p>"
-  "<p>Estimates are presented as estimates. Mifflin-St Jeor predicts resting energy expenditure "
-  "to within roughly 10% for most people, restaurant portioning varies by location and shift, "
-  "and labels are permitted to round. Where a number is uncertain, the site says so rather than "
-  "presenting a decimal place it has not earned.</p>"),
- ("Corrections",
-  "<p>If something here is wrong, it should be fixed and the fix should be visible. Errors of "
-  "fact are corrected and logged rather than quietly edited. The contact page is the fastest "
-  "route, and specific pointers &mdash; the page, the figure, and what it should be &mdash; get "
-  "acted on quickest.</p>"),
-],
 })

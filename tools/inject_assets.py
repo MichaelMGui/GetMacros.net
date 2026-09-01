@@ -73,7 +73,9 @@ def ensure_header_sheet(text, prefix, version):
 
 def main():
     os.chdir(ROOT)
-    pages = sorted(glob.glob("*.html")) + sorted(glob.glob("*/*.html"))
+    pages = sorted(glob.glob("*.html")) + [
+        path for path in sorted(glob.glob("*/*.html")) if not path.startswith("design/")
+    ]
     touched = 0
     for f in pages:
         c = open(f, encoding="utf-8").read()
@@ -155,7 +157,10 @@ def liquid_heroes():
     left alone rather than getting two sets of moving colour.
     """
     n = 0
-    for f in sorted(glob.glob("*.html")) + sorted(glob.glob("*/*.html")):
+    pages = sorted(glob.glob("*.html")) + [
+        path for path in sorted(glob.glob("*/*.html")) if not path.startswith("design/")
+    ]
+    for f in pages:
         c = open(f, encoding="utf-8").read()
         if "liquid-blobs" in c:
             continue
