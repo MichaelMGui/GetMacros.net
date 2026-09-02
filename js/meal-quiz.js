@@ -163,7 +163,7 @@
         : '<span class="option-icon">' + iconSvg(o[3], o[1]) + '</span>';
       return '<label class="quiz-option"><input type="' + type + '" name="q-' + s.key + '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' + checked + '>' + mark + '<span class="option-copy"><b>' + esc(o[1]) + '</b>' + (o[2] ? '<small>' + esc(o[2]) + '</small>' : '') + '</span><span class="option-check" aria-hidden="true">✓</span></label>';
     }).join("");
-    return '<div class="quiz-options' + (s.chainStep ? " chain-options" : "") + '">' + noPreferenceOption + choices + '</div>';
+    return '<div class="quiz-options step-' + s.key + (s.chainStep ? " chain-options" : "") + '">' + noPreferenceOption + choices + '</div>';
   }
   // The card used to be rebuilt with innerHTML on every tap in the goal step,
   // purely so the cutting/bulking warning could appear. Rebuilding replays the
@@ -216,6 +216,21 @@
   function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }
   function shareResults(button) { var data = { title: "My GetMacros meal matches", text: "Fast-food options matched to my goals and preferences.", url: location.href }; if (navigator.share) { navigator.share(data).catch(function () {}); return; } if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(function () { button.textContent = "Link copied ✓"; }); }
 
+  // A question change is the one moment when moving the viewport is helpful:
+  // the old card can be taller than the next card on a phone. Reposition only
+  // after an explicit Back/Continue/Edit tap, never after loading or selecting
+  // an answer.
+  function showCurrentQuestion() {
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        var header = document.querySelector(".site-header");
+        var headerHeight = header ? header.getBoundingClientRect().height : 0;
+        var top = window.scrollY + root.getBoundingClientRect().top - headerHeight - 12;
+        window.scrollTo({ top: Math.max(0, top), left: 0, behavior: reducedMotion() ? "auto" : "smooth" });
+      });
+    });
+  }
+
   root.addEventListener("change", function (e) {
     var el = e.target;
     var required = root.querySelector(".quiz-required"); if (required) required.hidden = true;
@@ -254,8 +269,9 @@
         noPreference[activeStep.key] = true;
       }
       step += direction; step >= STEPS.length ? renderResults() : renderStep();
+      showCurrentQuestion();
     }
-    else if (t.dataset.restart) { step = 0; renderStep(); }
+    else if (t.dataset.restart) { step = 0; renderStep(); showCurrentQuestion(); }
     else if (t.dataset.more) {
       var next = root._rest.splice(0, 3);
       root.querySelector(".results-grid").insertAdjacentHTML("beforeend", next.map(function (m) { return card(m, false); }).join(""));

@@ -230,6 +230,17 @@ HOME_MAIN = _drop_section(HOME_MAIN, "gm6-restaurants")
 # in the hero and product section without adding new information.
 HOME_MAIN = _drop_section(HOME_MAIN, "gm6-final")
 
+# Keep the homepage focused on two immediate jobs: finding a restaurant meal
+# and opening a useful calculator. These sections repeated the same promise,
+# previewed a non-interactive quiz, or added methodology before the visitor had
+# chosen a task.
+for _redundant_home_section in (
+        "gm6-trust-strip", "gm6-finder-showcase", "gm6-compare",
+        "gm6-calculator", "gm6-method"):
+    HOME_MAIN = _drop_section(HOME_MAIN, _redundant_home_section)
+HOME_MAIN = re.sub(
+    r'\n\s*<ul class="home-signals".*?</ul>', "", HOME_MAIN, flags=re.S)
+
 # The tools bento sat seventh, so the clearest statement of what the site gives
 # you was three screens down. It moves directly under the hero and shares its
 # ground, so opening the site shows the offer and every tool that delivers it

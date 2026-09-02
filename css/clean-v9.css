@@ -1697,3 +1697,636 @@ html[data-theme] .modern-footer { gap: clamp(28px,5vw,64px) !important; padding-
   html[data-theme] body.site-v3 main :is([class*="hero"],.liquid-surface)::after { animation: none !important; }
   body.journal-page .blog-card-media img { transition: none; }
 }
+
+/* -------------------------------------------------------------------------
+   Cozy product direction — homepage first slice
+   The first screen explains the meal matcher, then hands off to three useful
+   tools. Repeated demos and numbered process strips are deliberately absent.
+   ------------------------------------------------------------------------- */
+body.home-studio {
+  --cozy-paper: #f3efe6;
+  --cozy-surface: #fffdf8;
+  --cozy-ink: #17231c;
+  --cozy-muted: #526158;
+  --cozy-line: #d8ded5;
+  --cozy-green: #28724f;
+  --cozy-green-soft: #e4f0e7;
+  background: var(--cozy-paper) !important;
+  color: var(--cozy-ink) !important;
+}
+html[data-theme="dark"] body.home-studio {
+  --cozy-paper: #0d1712;
+  --cozy-surface: #14231b;
+  --cozy-ink: #f2f5ef;
+  --cozy-muted: #bdc9c1;
+  --cozy-line: #31453a;
+  --cozy-green: #6dd39a;
+  --cozy-green-soft: #1b3327;
+}
+body.home-studio .home-intro {
+  min-height: 0 !important;
+  padding-block: clamp(44px, 7vw, 82px) !important;
+  color: var(--cozy-ink) !important;
+  background: var(--cozy-paper) !important;
+  border-bottom: 1px solid var(--cozy-line);
+}
+body.home-studio .home-intro::before,
+body.home-studio .home-intro::after { display: none !important; }
+body.home-studio .home-intro-grid { gap: clamp(30px, 6vw, 72px) !important; }
+body.home-studio .home-intro h1 {
+  max-width: 12ch !important;
+  margin: 18px 0 !important;
+  color: var(--cozy-ink) !important;
+  font-size: clamp(3rem, 7vw, 5.9rem) !important;
+  line-height: .96 !important;
+  letter-spacing: -.055em !important;
+}
+body.home-studio .home-intro h1 em { color: var(--cozy-green) !important; }
+body.home-studio .home-intro-lede {
+  max-width: 620px !important;
+  color: var(--cozy-muted) !important;
+  font-size: clamp(1rem, 1.55vw, 1.18rem) !important;
+  line-height: 1.62 !important;
+}
+body.home-studio .home-kicker :is(span,b) {
+  color: var(--cozy-muted) !important;
+  border-color: var(--cozy-line) !important;
+}
+body.home-studio .home-primary {
+  color: #fff !important;
+  background: var(--cozy-green) !important;
+  border-radius: 13px !important;
+  box-shadow: none !important;
+}
+body.home-studio .home-text-link { color: var(--cozy-ink) !important; }
+body.home-studio .home-signals,
+body.home-studio .gm6-trust-strip,
+body.home-studio .gm6-finder-showcase,
+body.home-studio .gm6-compare,
+body.home-studio .gm6-calculator,
+body.home-studio .gm6-method { display: none !important; }
+body.home-studio .gm6-tools {
+  padding-block: clamp(34px, 5vw, 64px) !important;
+  color: var(--cozy-ink) !important;
+  background: var(--cozy-surface) !important;
+  border-bottom: 1px solid var(--cozy-line);
+}
+body.home-studio .gm6-tools :is(h2,h3,p,.eyebrow,.gm6-tool-num) { color: inherit !important; }
+body.home-studio .gm6-tools-head > div > p:last-child { color: var(--cozy-muted) !important; }
+body.home-studio .gm6-tool {
+  min-height: 150px !important;
+  color: var(--cozy-ink) !important;
+  background: var(--cozy-surface) !important;
+  border: 1px solid var(--cozy-line) !important;
+  border-radius: 16px !important;
+  box-shadow: none !important;
+}
+body.home-studio .gm6-tool p { color: var(--cozy-muted) !important; }
+body.home-studio .gm6-tool:nth-child(n+4) { display: none !important; }
+body.home-studio .gm6-learning {
+  padding-block: clamp(42px, 6vw, 74px) !important;
+  color: var(--cozy-ink) !important;
+  background: var(--cozy-paper) !important;
+}
+body.home-studio .gm6-learning :is(h2,h3) { color: var(--cozy-ink) !important; }
+body.home-studio .gm6-learning :is(p,small) { color: var(--cozy-muted) !important; }
+body.home-studio .gm6-learning-grid > :nth-child(n+3),
+body.home-studio .gm6-reading-list > :nth-child(n+2) { display: none !important; }
+
+@media (max-width: 760px) {
+  body.home-studio .home-intro { padding-block: 28px 32px !important; }
+  body.home-studio .home-intro h1 {
+    max-width: 11ch !important;
+    margin: 13px 0 !important;
+    font-size: clamp(2.55rem, 12vw, 3.25rem) !important;
+    line-height: .98 !important;
+  }
+  body.home-studio .home-intro-lede {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+  body.home-studio .home-kicker { gap: 8px !important; }
+  body.home-studio .home-kicker :is(span,b) { font-size: .7rem !important; }
+  body.home-studio .home-intro-actions { gap: 12px !important; margin-top: 22px !important; }
+  body.home-studio .home-intro-actions .btn { width: 100% !important; min-height: 50px !important; }
+  body.home-studio .home-text-link { font-size: .9rem !important; }
+  body.home-studio .gm6-tools { padding-block: 28px !important; }
+  body.home-studio .gm6-tools-head { gap: 10px !important; margin-bottom: 18px !important; }
+  body.home-studio .gm6-tools-head h2 { font-size: 1.7rem !important; }
+  body.home-studio .gm6-tool-bento { grid-template-columns: 1fr !important; gap: 9px !important; }
+  body.home-studio .gm6-tool {
+    min-height: 0 !important;
+    padding: 15px 16px !important;
+    grid-template-columns: 1fr auto !important;
+  }
+  body.home-studio .gm6-tool p,
+  body.home-studio .gm6-tool-icon { display: none !important; }
+  body.home-studio .gm6-learning { padding-block: 34px !important; }
+  body.home-studio .gm6-section-intro { margin-bottom: 18px !important; }
+}
+
+/* -------------------------------------------------------------------------
+   Quiet interface pass — shared across every page
+   Warm surfaces, dependable contrast and compact page openings replace the
+   oversized dark panels. Motion is reserved for navigation and useful state.
+   ------------------------------------------------------------------------- */
+html[data-theme="light"] body.site-v3 {
+  --quiet-paper: #f3efe6;
+  --quiet-surface: #fffdf8;
+  --quiet-surface-2: #e9eee7;
+  --quiet-ink: #17231c;
+  --quiet-muted: #526158;
+  --quiet-line: #d5ddd4;
+  --quiet-green: #28724f;
+  --quiet-green-strong: #1f6042;
+  --quiet-green-soft: #dfeee3;
+  --quiet-shadow: 0 16px 42px rgba(23,35,28,.07);
+}
+html[data-theme="dark"] body.site-v3 {
+  --quiet-paper: #0d1712;
+  --quiet-surface: #15231b;
+  --quiet-surface-2: #1c2e24;
+  --quiet-ink: #f3f6f1;
+  --quiet-muted: #bdc9c1;
+  --quiet-line: #31463a;
+  --quiet-green: #73d79e;
+  --quiet-green-strong: #99e7b8;
+  --quiet-green-soft: #1d3829;
+  --quiet-shadow: 0 18px 48px rgba(0,0,0,.18);
+}
+html[data-theme] body.site-v3 {
+  background: var(--quiet-paper) !important;
+  color: var(--quiet-ink) !important;
+}
+html[data-theme] body.site-v3 main { color: var(--quiet-ink); }
+html[data-theme] body.site-v3 main :is(h1,h2,h3,h4,h5,h6,strong,dt,th) { color: var(--quiet-ink) !important; }
+html[data-theme] body.site-v3 main :is(p,li,dd,label,small,caption) { color: var(--quiet-muted); }
+html[data-theme] body.site-v3 main a:not(.btn):not(.home-primary):not(.match-primary) { color: var(--quiet-green-strong); }
+html[data-theme] body.site-v3 main :is(input,select,textarea) {
+  color: var(--quiet-ink) !important;
+  background-color: var(--quiet-surface) !important;
+  border-color: var(--quiet-line) !important;
+}
+html[data-theme] body.site-v3 main select {
+  border-radius: 12px !important;
+  box-shadow: none !important;
+}
+html[data-theme] body.site-v3 main :is(.btn,.calc-submit,button) {
+  border-radius: 12px !important;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease !important;
+}
+html[data-theme] body.site-v3 main :is(.btn-primary,.calc-submit,.match-primary) {
+  color: #fff !important;
+  background: var(--quiet-green-strong) !important;
+  border-color: var(--quiet-green-strong) !important;
+  box-shadow: none !important;
+}
+html[data-theme="dark"] body.site-v3 main :is(.btn-primary,.calc-submit,.match-primary) {
+  color: #102117 !important;
+  background: var(--quiet-green) !important;
+  border-color: var(--quiet-green) !important;
+}
+html[data-theme] body.site-v3 main :is(.btn-ghost,.btn-outline) {
+  color: var(--quiet-ink) !important;
+  background: var(--quiet-surface) !important;
+  border-color: var(--quiet-line) !important;
+}
+
+/* One compact, calm opening language for page hubs, tools and guides. */
+html[data-theme] body.site-v3 main :is(
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+  .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+) {
+  margin: 0 !important;
+  min-height: 0 !important;
+  padding-block: clamp(44px,6vw,76px) !important;
+  color: var(--quiet-ink) !important;
+  background: var(--quiet-paper) !important;
+  border-bottom: 1px solid var(--quiet-line) !important;
+  box-shadow: none !important;
+}
+html[data-theme] body.site-v3 main :is(
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+  .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+)::before,
+html[data-theme] body.site-v3 main :is(
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+  .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+)::after { display: none !important; animation: none !important; }
+html[data-theme] body.site-v3 main :is(
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+  .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+) h1 {
+  max-width: 17ch !important;
+  color: var(--quiet-ink) !important;
+  font-size: clamp(2.7rem,6vw,5rem) !important;
+  line-height: .98 !important;
+  letter-spacing: -.045em !important;
+}
+html[data-theme] body.site-v3 main :is(
+  .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+  .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+) :is(p,.lead,.hero-lead) {
+  max-width: 65ch;
+  color: var(--quiet-muted) !important;
+  font-size: clamp(.98rem,1.6vw,1.13rem) !important;
+  line-height: 1.6 !important;
+}
+
+/* Cards should feel like paper placed on the page, not floating dashboards. */
+html[data-theme] body.site-v3 main :is(
+  .guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.pick-card,.meal-card,
+  .article-card,.search-result,.calculator-card,.calc-card,.tool-shell,
+  .info-card,.fact-card,.source-card,.category-card
+) {
+  color: var(--quiet-ink) !important;
+  background: var(--quiet-surface) !important;
+  border: 1px solid var(--quiet-line) !important;
+  border-radius: 16px !important;
+  box-shadow: none !important;
+}
+html[data-theme] body.site-v3 main :is(
+  .guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.pick-card,.meal-card,
+  .article-card,.search-result,.calculator-card,.calc-card,.tool-shell,
+  .info-card,.fact-card,.source-card,.category-card
+) :is(p,small,span:not(.badge):not(.icon)) { color: var(--quiet-muted); }
+
+/* Navigation remains useful everywhere without becoming a second hero. */
+html[data-theme] body.site-v3 .site-header.modern-header {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+html[data-theme] body.site-v3 .full-nav {
+  color: #eef7f0 !important;
+  background: #174f37 !important;
+  border-color: rgba(220,244,228,.22) !important;
+  box-shadow: 0 10px 30px rgba(9,36,23,.14) !important;
+}
+html[data-theme] body.site-v3 .modern-brand,
+html[data-theme] body.site-v3 .full-nav > :is(a,button),
+html[data-theme] body.site-v3 .nav-group-trigger { color: #eef7f0 !important; }
+html[data-theme] body.site-v3 .brand-dot { color: #a6edbd !important; }
+html[data-theme] body.site-v3 .brand-mark {
+  color: #216342 !important;
+  background: #e7f2e8 !important;
+  border-color: rgba(231,242,232,.5) !important;
+  box-shadow: none !important;
+}
+html[data-theme] body.site-v3 :is(.theme-toggle,.nav-toggle) {
+  color: #eef7f0 !important;
+  background: rgba(255,255,255,.08) !important;
+  border: 1px solid rgba(236,248,239,.18) !important;
+}
+html[data-theme] body.site-v3 .modern-footer {
+  color: var(--quiet-muted) !important;
+  background: var(--quiet-surface) !important;
+  border-color: var(--quiet-line) !important;
+}
+html[data-theme] body.site-v3 .modern-footer :is(strong,.modern-brand) { color: var(--quiet-ink) !important; }
+html[data-theme] body.site-v3 .modern-footer a:not(.modern-brand) { color: var(--quiet-muted) !important; }
+
+/* The real meal quiz is the page. Its intro is brief and the optional
+   calculator/data tables remain available without lengthening the first run. */
+html[data-theme] body.order-match-page .match-intro {
+  min-height: 0 !important;
+  padding-block: clamp(34px,5vw,66px) !important;
+  color: var(--quiet-ink) !important;
+  background: var(--quiet-paper) !important;
+  border-bottom: 1px solid var(--quiet-line) !important;
+}
+html[data-theme] body.order-match-page .match-intro::before,
+html[data-theme] body.order-match-page .match-intro::after { display: none !important; }
+body.order-match-page .match-intro-grid {
+  grid-template-columns: minmax(220px,.55fr) minmax(0,1.45fr) !important;
+  gap: clamp(30px,6vw,76px) !important;
+  align-items: start !important;
+}
+body.order-match-page .match-intro-copy { position: sticky; top: 96px; }
+body.order-match-page .match-intro-copy h1 {
+  max-width: 10ch !important;
+  margin: 16px 0 !important;
+  color: var(--quiet-ink) !important;
+  font-size: clamp(2.7rem,5vw,4.65rem) !important;
+  line-height: .96 !important;
+  letter-spacing: -.05em !important;
+}
+body.order-match-page .match-intro-copy > p:last-child {
+  max-width: 40ch;
+  color: var(--quiet-muted) !important;
+  font-size: 1rem !important;
+  line-height: 1.58 !important;
+}
+body.order-match-page .match-kicker { gap: 8px !important; }
+body.order-match-page .match-kicker :is(span,b) {
+  color: var(--quiet-muted) !important;
+  border-color: var(--quiet-line) !important;
+}
+body.order-match-page .match-live-quiz { min-width: 0; }
+body.order-match-page #meal-quiz { overflow-anchor: none; }
+body.order-match-page .quiz-card,
+body.order-match-page .quiz-results {
+  color: var(--quiet-ink) !important;
+  background: var(--quiet-surface) !important;
+  border: 1px solid var(--quiet-line) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--quiet-shadow) !important;
+}
+body.order-match-page .quiz-card { padding: clamp(20px,3vw,34px) !important; }
+body.order-match-page .quiz-card h2 {
+  margin: 18px 0 7px !important;
+  color: var(--quiet-ink) !important;
+  font-size: clamp(1.75rem,3.4vw,2.55rem) !important;
+  line-height: 1.05 !important;
+}
+body.order-match-page .quiz-progress-row,
+body.order-match-page .quiz-hint { color: var(--quiet-muted) !important; }
+body.order-match-page .quiz-progress { background: var(--quiet-surface-2) !important; }
+body.order-match-page .quiz-progress span { background: var(--quiet-green) !important; }
+body.order-match-page .quiz-options { gap: 9px !important; }
+body.order-match-page .quiz-option {
+  min-height: 74px !important;
+  padding: 12px 14px !important;
+  color: var(--quiet-ink) !important;
+  background: var(--quiet-surface) !important;
+  border: 1px solid var(--quiet-line) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+body.order-match-page .quiz-option:has(input:checked) {
+  background: var(--quiet-green-soft) !important;
+  border-color: var(--quiet-green) !important;
+  outline: none !important;
+}
+body.order-match-page .quiz-option :is(b,small) { color: inherit !important; }
+body.order-match-page .quiz-option small { color: var(--quiet-muted) !important; }
+body.order-match-page .option-icon {
+  width: 38px !important;
+  height: 38px !important;
+  color: var(--quiet-green-strong) !important;
+  background: var(--quiet-green-soft) !important;
+  border: 0 !important;
+}
+body.order-match-page .option-check {
+  color: transparent !important;
+  background: var(--quiet-surface-2) !important;
+}
+body.order-match-page .quiz-option:has(input:checked) .option-check {
+  color: #fff !important;
+  background: var(--quiet-green-strong) !important;
+}
+html[data-theme] body.site-v3.order-match-page
+  .quiz-option:not(:has(input:checked)) .option-check {
+  color: transparent !important;
+  background: var(--quiet-surface-2) !important;
+}
+body.order-match-page .quiz-nav {
+  gap: 10px !important;
+  margin-top: 18px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid var(--quiet-line) !important;
+}
+body.order-match-page .quiz-nav .btn { min-height: 48px !important; white-space: nowrap; }
+body.order-match-page .order-match-macros {
+  padding-block: clamp(24px,4vw,44px) !important;
+  background: var(--quiet-paper) !important;
+}
+body.order-match-page .macro-target-disclosure {
+  overflow: clip;
+  background: var(--quiet-surface) !important;
+  border: 1px solid var(--quiet-line) !important;
+  border-radius: 16px !important;
+}
+body.order-match-page .macro-target-disclosure > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 76px;
+  padding: 17px 20px;
+  color: var(--quiet-ink) !important;
+  cursor: pointer;
+  list-style: none;
+}
+body.order-match-page .macro-target-disclosure > summary::-webkit-details-marker { display: none; }
+body.order-match-page .macro-target-disclosure > summary > span:first-child { display: grid; gap: 3px; }
+body.order-match-page .macro-target-disclosure > summary small { color: var(--quiet-muted) !important; }
+body.order-match-page .macro-target-disclosure > summary > span:last-child {
+  color: var(--quiet-green-strong) !important;
+  font-size: 1.7rem;
+  line-height: 1;
+  transition: transform 220ms ease;
+}
+body.order-match-page .macro-target-disclosure[open] > summary > span:last-child { transform: rotate(45deg); }
+body.order-match-page .macro-target-panel {
+  padding: 20px;
+  border-top: 1px solid var(--quiet-line);
+}
+body.order-match-page .meal-database-disclosure {
+  margin-block: 0 36px !important;
+  color: var(--quiet-ink) !important;
+  background: var(--quiet-surface) !important;
+  border-color: var(--quiet-line) !important;
+  border-radius: 16px !important;
+}
+
+/* Shorter article/library openings and consistent readable copy. */
+body.site-v3 :is(.article-container,.focused-guide-body,.policy-copy,.about-content) { color: var(--quiet-ink) !important; }
+body.site-v3 :is(.article-container,.focused-guide-body,.policy-copy,.about-content) p { color: var(--quiet-muted) !important; }
+body.site-v3 :is(.guide-hub-grid,.blog-grid,.tool-grid,.calculator-grid,.article-grid) { gap: clamp(14px,2.5vw,24px) !important; }
+body.site-v3 :is(.library-section,.guides-section,.tools-section,.article-section,.chain-picks-section) {
+  padding-block: clamp(38px,6vw,72px) !important;
+}
+
+@media (max-width: 900px) {
+  html[data-theme] body.site-v3 .full-nav-links {
+    max-height: calc(100dvh - 82px) !important;
+    overflow-y: auto !important;
+    color: #17231c !important;
+    background: #fbfaf5 !important;
+    border-color: #d5ddd4 !important;
+  }
+  html[data-theme] body.site-v3 .full-nav-links :is(a,button,strong) { color: #17231c !important; }
+  html[data-theme] body.site-v3 .full-nav-links :is(span,small) { color: #526158 !important; }
+  html[data-theme] body.site-v3 .full-nav-links .nav-mobile-search {
+    color: #17231c !important;
+    background: #edf2ec !important;
+    border: 1px solid #d5ddd4 !important;
+    box-shadow: none !important;
+  }
+  body.order-match-page .match-intro-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+  body.order-match-page .match-intro-copy { position: static; }
+}
+
+@media (max-width: 620px) {
+  html[data-theme] body.site-v3 .site-header.modern-header { padding: 6px !important; }
+  html[data-theme] body.site-v3 .full-nav {
+    min-height: 58px !important;
+    padding: 6px 7px 6px 9px !important;
+    border-radius: 15px !important;
+  }
+  html[data-theme] body.site-v3 .modern-brand { font-size: 1rem !important; }
+  html[data-theme] body.site-v3 .modern-brand .brand-mark { width: 37px !important; height: 37px !important; }
+  html[data-theme] body.site-v3 .theme-toggle,
+  html[data-theme] body.site-v3 .nav-toggle { width: 43px !important; height: 43px !important; }
+  html[data-theme] body.site-v3 main :is(
+    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+    .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+  ) { padding-block: 28px 33px !important; }
+  html[data-theme] body.site-v3 main :is(
+    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+    .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+  ) h1 {
+    max-width: 16ch !important;
+    margin-block: 10px 13px !important;
+    font-size: clamp(2.15rem,10vw,2.75rem) !important;
+    line-height: 1 !important;
+  }
+  html[data-theme] body.site-v3 main :is(
+    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+    .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+  ) :is(p,.lead,.hero-lead) { font-size: .97rem !important; line-height: 1.52 !important; }
+  html[data-theme] body.site-v3 main :is(
+    .page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,
+    .focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero
+  ) > .container,
+  html[data-theme] body.site-v3 main :is(.guide-hub-intro,.calc-hero-grid,.about-hero-grid) {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+  /* Numbered topic tours and decorative proof panels repeated information
+     that is already available immediately below each opening. */
+  body.library-page .guide-start,
+  body.about-page .about-proof,
+  body.calculator-suite .suite-hero-mark,
+  body.site-v3 .focus-page-hero .stat-row { display: none !important; }
+  body.library-page .guide-hub-intro,
+  body.about-page .about-hero-grid,
+  body.calculator-suite .tool-hero > .container { display: block !important; }
+  body.site-v3 :is(.focus-actions,.calc-hero-actions,.about-hero-actions) {
+    gap: 9px !important;
+    margin-top: 18px !important;
+  }
+  body.site-v3 :is(.focus-actions,.calc-hero-actions) .btn + .btn { display: none !important; }
+  body.site-v3 :is(.focus-actions,.calc-hero-actions,.about-hero-actions) .btn {
+    width: auto !important;
+    min-height: 46px !important;
+    padding: 11px 16px !important;
+  }
+  body.calculator-suite .tool-hero > .container { gap: 0 !important; }
+  body.calculator-suite main > .article-container:has(> form) {
+    padding: 96px 0 38px !important;
+  }
+  body.calculator-suite main > .article-container:has(> form) > .eyebrow { display: none !important; }
+  body.calculator-suite main > .article-container:has(> form) > h1 {
+    max-width: 16ch !important;
+    margin: 0 0 12px !important;
+    font-size: clamp(2.05rem,9.5vw,2.55rem) !important;
+    line-height: 1 !important;
+    letter-spacing: -.04em !important;
+  }
+  body.calculator-suite main > .article-container:has(> form) > .lead {
+    margin-bottom: 14px !important;
+    font-size: .95rem !important;
+    line-height: 1.5 !important;
+  }
+  body.calculator-suite main > .article-container:has(> form) > .callout {
+    margin-block: 14px !important;
+    padding: 14px !important;
+    border-radius: 13px !important;
+  }
+  body.calculator-suite main > .article-container:has(> form) > form { margin-top: 18px !important; }
+  body.calculator-suite .gm-sibling-tools { padding-block: 34px !important; }
+  body.calculator-suite .gm-sibling-tools .section-head { margin-bottom: 16px !important; }
+  body.calculator-suite .gm-sibling-tools .section-head h2 { font-size: 1.7rem !important; }
+  body.calculator-suite .gm-sibling-tools .tool-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    gap: 9px !important;
+  }
+  body.calculator-suite .gm-sibling-tools a.tool-card {
+    min-height: 104px !important;
+    padding: 14px !important;
+  }
+  body.calculator-suite .gm-sibling-tools a.tool-card h3 { font-size: 1rem !important; }
+  body.calculator-suite .gm-sibling-tools a.tool-card p { display: none !important; }
+  body.calculator-suite .gm-sibling-tools a.tool-card:nth-child(n+5) { display: none !important; }
+  body.order-match-page .match-intro { padding-block: 24px 30px !important; }
+  body.order-match-page .match-intro-grid { gap: 18px !important; }
+  body.order-match-page .match-intro-copy h1 {
+    max-width: 12ch !important;
+    margin: 10px 0 !important;
+    font-size: clamp(2.2rem,10.5vw,2.75rem) !important;
+    line-height: 1 !important;
+  }
+  body.order-match-page .match-intro-copy > p:last-child {
+    margin-bottom: 0 !important;
+    font-size: .95rem !important;
+    line-height: 1.48 !important;
+  }
+  body.order-match-page .match-kicker :is(span,b) { font-size: .66rem !important; }
+  body.order-match-page .quiz-card { padding: 17px !important; border-radius: 16px !important; }
+  body.order-match-page .quiz-card h2 { margin-top: 14px !important; font-size: 1.82rem !important; }
+  body.order-match-page .quiz-hint { margin-bottom: 13px !important; font-size: .84rem !important; line-height: 1.45 !important; }
+  body.order-match-page .quiz-options { grid-template-columns: 1fr !important; gap: 8px !important; }
+  body.order-match-page .quiz-options:not(.chain-options) { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  body.order-match-page .quiz-option {
+    min-height: 66px !important;
+    padding: 10px 12px !important;
+    grid-template-columns: 36px 1fr 22px !important;
+  }
+  body.order-match-page .option-icon { width: 34px !important; height: 34px !important; }
+  body.order-match-page .option-copy b { font-size: .96rem !important; }
+  body.order-match-page .option-copy small { font-size: .78rem !important; }
+  body.order-match-page .quiz-options:not(.chain-options) .quiz-option {
+    min-height: 82px !important;
+    padding: 10px !important;
+    grid-template-columns: minmax(0,1fr) 20px !important;
+  }
+  body.order-match-page .quiz-options:not(.chain-options) .option-icon { display: none !important; }
+  body.order-match-page .quiz-options:not(.chain-options) .option-copy b { font-size: .88rem !important; }
+  body.order-match-page .quiz-options:not(.chain-options) .option-copy {
+    min-width: 0;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    hyphens: none !important;
+  }
+  body.order-match-page .quiz-options:not(.chain-options) .option-copy small { font-size: .71rem !important; line-height: 1.3 !important; }
+  body.order-match-page .quiz-nav { display: grid !important; grid-template-columns: 1fr 1fr !important; }
+  body.order-match-page .quiz-nav .quiz-continue:only-child { grid-column: 1 / -1; }
+  body.order-match-page .quiz-nav .btn { width: 100% !important; min-width: 0 !important; font-size: .9rem !important; }
+  body.order-match-page .order-match-macros { padding-block: 18px 28px !important; }
+  body.order-match-page .macro-target-disclosure > summary { min-height: 68px; padding: 14px 16px; }
+  body.order-match-page .macro-target-panel { padding: 15px; }
+  html[data-theme] body.site-v3 .modern-footer {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+    padding: 36px 20px !important;
+  }
+  html[data-theme] body.site-v3 .modern-footer > div:first-child,
+  html[data-theme] body.site-v3 .modern-footer > small { grid-column: 1 / -1; }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  html[data-theme] body.site-v3 main :is(.btn,.calc-submit,button):hover { transform: translateY(-1px); }
+  html[data-theme] body.site-v3 main :is(
+    .guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.pick-card,.meal-card,
+    .article-card,.search-result,.calculator-card,.calc-card,.category-card
+  ):hover {
+    transform: translateY(-2px) !important;
+    border-color: color-mix(in srgb,var(--quiet-green) 42%,var(--quiet-line)) !important;
+    box-shadow: var(--quiet-shadow) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme] body.site-v3 *,
+  html[data-theme] body.site-v3 *::before,
+  html[data-theme] body.site-v3 *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

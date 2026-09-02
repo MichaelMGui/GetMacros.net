@@ -31,18 +31,9 @@ END = "<!--MEALS:END-->"
 HERO = r'''<section class="match-intro" data-spotlight>
   <div class="container match-intro-grid">
     <div class="match-intro-copy">
-      <p class="match-kicker"><span>Healthy Order Match</span><b>Five short questions</b></p>
-      <h1>Find a fast-food order that <em>fits today.</em></h1>
-      <p>Choose your goal, appetite, dietary needs and the restaurants nearby. We rank 83 real menu options and show why each result earned its place.</p>
-      <div class="match-intro-actions">
-        <a class="btn match-primary" href="#meal-quiz">Start matching <span aria-hidden="true">↘</span></a>
-        <a class="match-text-link" href="#how-it-works">I need macro targets first <span aria-hidden="true">→</span></a>
-      </div>
-      <dl class="match-facts">
-        <div><dt>83</dt><dd>menu options</dd></div>
-        <div><dt>15</dt><dd>restaurant chains</dd></div>
-        <div><dt>0</dt><dd>accounts needed</dd></div>
-      </dl>
+      <p class="match-kicker"><span>Free healthy fast-food finder</span><b>Five quick questions</b></p>
+      <h1>Find your best fast-food meal.</h1>
+      <p>Tell us your goal, appetite and dietary needs. We compare 83 real meals from 15 chains and rank the options that fit.</p>
     </div>
     <div class="match-live-quiz" role="region" aria-label="Healthy Order Match questionnaire">
       <div id="meal-quiz"></div>
