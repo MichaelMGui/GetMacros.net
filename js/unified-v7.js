@@ -144,7 +144,10 @@
       if (event.key !== "Escape") return;
       var wasOpen = document.body.classList.contains("nav-open");
       setNav(false);
-      if (wasOpen && toggle) toggle.focus();
+      if (wasOpen && toggle) {
+        try { toggle.focus({ preventScroll: true }); }
+        catch (error) { toggle.focus(); }
+      }
     });
     links.addEventListener("click", function (event) {
       if (mobile.matches && event.target.closest("a")) setNav(false);
@@ -216,26 +219,11 @@
 
   function titleReveals() {
     document.querySelectorAll("[data-reveal-title]").forEach(function (heading) {
-      if (heading.querySelector(".gm6-title-word")) {
-        requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
-        return;
-      }
-      var text = heading.textContent.trim();
-      if (!text) return;
-      heading.textContent = "";
-      text.split(/\s+/).forEach(function (word, index) {
-        if (index) heading.appendChild(document.createTextNode(" "));
-        var outer = document.createElement("span");
-        var inner = document.createElement("span");
-        outer.className = "gm6-title-word";
-        inner.textContent = word;
-        inner.style.setProperty("--word-index", index);
-        outer.appendChild(inner);
-        heading.appendChild(outer);
-      });
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
-      });
+      // Do not rebuild headings after the page has laid out. Per-word wrapper
+      // spans can change a line break by a few pixels; on a refresh farther
+      // down the page that becomes a visible vertical jump. The heading stays
+      // untouched and any motion is paint-only, so its height never changes.
+      requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
     });
   }
 

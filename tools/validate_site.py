@@ -389,6 +389,16 @@ def main() -> int:
         errors.append("meal quiz: heading focus can move the mobile viewport between questions")
     if "quiz-announcer" not in quiz_text:
         errors.append("meal quiz: non-scrolling live step announcement is missing")
+    # Results, filters and quiz steps update in place. They must never take
+    # over the viewport: mobile Safari is especially eager to animate these
+    # calls after a focused control is replaced.
+    for behavior_path in sorted(ROOT.glob("*.html")) + sorted((ROOT / "js").glob("*.js")):
+        behavior_text = behavior_path.read_text(encoding="utf-8")
+        if "scrollIntoView(" in behavior_text:
+            errors.append(f"{behavior_path.relative_to(ROOT)}: automatic scrollIntoView remains")
+    stability_css = (ROOT / "css" / "clean-v9.css").read_text(encoding="utf-8")
+    if not re.search(r"html\s*\{[^}]*scroll-behavior:\s*auto\s*!important", stability_css, re.S):
+        errors.append("shared CSS: page-level smooth scrolling can animate refresh restoration")
     finder_css = (ROOT / "css" / "meal-finder-v2.css").read_text(encoding="utf-8")
     if re.search(r"\.quiz-option-any:has\(input:checked\)[^{]*\{[^}]*background:var\(--ink\)", finder_css, re.S):
         errors.append("meal quiz: no-preference selected state must not use the old black card")

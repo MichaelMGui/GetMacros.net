@@ -1337,7 +1337,14 @@ body.site-v3.calculators-v2 .calc-nav a { min-width: 0; }
   --d-ease: cubic-bezier(.2,.76,.2,1);
   --d-section: clamp(58px, 8vw, 108px);
 }
-html { scroll-behavior: smooth; }
+/* Keep refreshes and dynamic tool updates still. Smooth scrolling on the root
+   also animates browser scroll restoration and hash restoration, which makes
+   an otherwise stable page appear to drift after it has loaded. */
+html { scroll-behavior: auto !important; }
+body.site-v3 :is(#meal-quiz, #macro-meals, #hc-results, #wg-results,
+  #search-results) {
+  overflow-anchor: none;
+}
 html[data-theme] body.site-v3 {
   min-width: 320px;
   font-size: 16px;

@@ -18,7 +18,6 @@
         section.dataset.expanded = String(!expanded);
         apply("");
         button.textContent = expanded ? "Show all " + cards.length + " articles" : "Show fewer";
-        if (expanded) section.scrollIntoView({ behavior: "smooth", block: "start" });
       });
       section.querySelector(".container").appendChild(button);
     }

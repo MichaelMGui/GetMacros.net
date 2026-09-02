@@ -244,8 +244,6 @@
       "</section>";
     root._rest = pool.slice(6);
     root._target = target;
-    var h = root.querySelector("#mm-targets-h");
-    if (h) h.focus({ preventScroll: true });
   }
 
   root.addEventListener("submit", function (e) {

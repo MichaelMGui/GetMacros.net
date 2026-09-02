@@ -33,6 +33,5 @@
       round(result.tdee).toLocaleString() + " kcal · " + settings.label + ".";
     var output = document.querySelector("#hc-results");
     output.hidden = false;
-    output.scrollIntoView({ behavior: "smooth", block: "nearest" });
   });
 }());

@@ -340,7 +340,6 @@ function run(){
 q.addEventListener('input',function(){expanded=false;run();});
 toggle.addEventListener('click',function(){
   expanded=!expanded;run();
-  if(!expanded)document.querySelector('.search-library').scrollIntoView({behavior:'smooth',block:'start'});
 });
 var initial=new URLSearchParams(location.search).get('q');
 if(initial)q.value=initial;
