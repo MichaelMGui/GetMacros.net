@@ -11,25 +11,25 @@ HOME_MAIN = r'''<main id="main-content">
 <section class="home-intro" data-spotlight>
   <div class="container home-intro-grid">
     <div class="home-intro-copy">
-      <p class="home-kicker"><span>GetMacros / eat out</span><b>83 tracked menu options</b></p>
-      <h1>Healthy fast food, <em>picked for your goal.</em></h1>
-      <p class="home-intro-lede">Tell us what you need from the meal. We compare calories, protein, fiber and sodium across 15 chains, then give you a shortlist you can actually order.</p>
+      <p class="home-kicker"><span>Free healthy fast food finder</span><b>83 meals across 15 chains</b></p>
+      <h1>Healthy fast food, <em>matched to your goals.</em></h1>
+      <p class="home-intro-lede">GetMacros is a free restaurant meal finder. Answer five quick questions about your goals, appetite and dietary needs. We rank real meals from 15 chains and explain which options fit you best.</p>
       <div class="home-intro-actions">
-        <a class="btn home-primary" href="restaurant-meal-finder.html">Build my shortlist <span aria-hidden="true">↗</span></a>
-        <a class="home-text-link" href="calculators.html">Know your macros first <span aria-hidden="true">→</span></a>
+        <a class="btn home-primary" href="restaurant-meal-finder.html">Find my best meal <span aria-hidden="true">↗</span></a>
+        <a class="home-text-link" href="restaurant-meal-guides.html">Browse the 15 restaurants <span aria-hidden="true">→</span></a>
       </div>
       <ul class="home-signals" aria-label="How GetMacros helps">
-        <li><span>01</span><b>Choose more than one goal</b></li>
-        <li><span>02</span><b>See the nutrition tradeoffs</b></li>
-        <li><span>03</span><b>No account or app required</b></li>
+        <li><span>01</span><b>Choose your nutrition goals</b></li>
+        <li><span>02</span><b>We rank real restaurant meals</b></li>
+        <li><span>03</span><b>See why every match fits</b></li>
       </ul>
     </div>
-    <aside class="order-console" aria-label="Example GetMacros meal match" data-console>
+    <aside class="order-console" aria-label="Example result from the Healthy Fast Food Finder" data-console>
       <div class="order-console-rail" aria-hidden="true"><b>GM</b><span></span><small>01 / 03</small></div>
       <div class="order-console-body">
-        <header class="order-console-head"><span><i></i> Match ready</span><b>High protein + bulk</b></header>
+        <header class="order-console-head"><span><i></i> Healthy Fast Food Finder</span><b>High protein + bulking</b></header>
         <div class="order-console-ticket">
-          <p>Best fit / Chick-fil-A</p>
+          <p>Your match / Chick-fil-A</p>
           <h2>Grilled nuggets, waffle fries &amp; fruit</h2>
           <div class="order-console-macros">
             <span><small>Calories</small><strong>1,050</strong></span>
@@ -38,8 +38,8 @@ HOME_MAIN = r'''<main id="main-content">
             <span><small>Sodium</small><strong>1,950<em>mg</em></strong></span>
           </div>
         </div>
-        <div class="order-console-reason"><span aria-hidden="true">✓</span><p><b>Why this fits</b>High energy and exceptional protein for a serious bulking meal. Sodium stays visible, not hidden.</p></div>
-        <div class="order-console-foot"><span>83 options checked</span><a href="restaurant-meal-finder.html">See your match <span aria-hidden="true">→</span></a></div>
+        <div class="order-console-reason"><span aria-hidden="true">✓</span><p><b>Why it matched</b>High energy and exceptional protein for a serious bulking meal. Sodium stays visible, not hidden.</p></div>
+        <div class="order-console-foot"><span>83 real meals compared</span><a href="restaurant-meal-finder.html">Find my meal <span aria-hidden="true">→</span></a></div>
       </div>
     </aside>
   </div>

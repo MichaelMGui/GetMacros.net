@@ -395,7 +395,7 @@ def write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
 
 
 def primary_intent(path: str, title: str) -> str:
-    if path == "index.html": return "healthy fast food and macro calculator"
+    if path == "index.html": return "healthy fast food finder for personal goals"
     if path == "healthy-fast-food.html": return "healthy fast food options"
     if path == "restaurant-meal-finder.html": return "healthy order match fast-food quiz"
     if path == "restaurant-meal-guides.html": return "healthy fast-food restaurant guides"

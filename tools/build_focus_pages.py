@@ -139,9 +139,9 @@ def build_home(meals: list[dict]) -> None:
     count, chains = len(meals), len({m["chain"] for m in meals})
     example = max((m for m in meals if m.get("p") is not None and item_type(m) != "Side"),
                   key=lambda m: m["p"])
-    title = "Healthy Fast Food Finder & Macro Calculator | GetMacros"
-    meta = (f"Find healthy fast-food options across {chains} chains by calories, protein, fiber and sodium, "
-            "then calculate daily macro targets with transparent tools.")
+    title = "Healthy Fast Food Finder for Your Goals | GetMacros"
+    meta = (f"Use the free GetMacros healthy fast food finder to get restaurant meals ranked for cutting, "
+            f"bulking, high protein and more across {chains} chains.")
     schema = [
         {"@context": "https://schema.org", "@type": "WebSite", "name": "GetMacros.net",
          "url": f"{SITE}/", "description": meta,
