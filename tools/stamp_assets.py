@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stamp every local CSS and JS link with a hash of that file's contents.
+"""Stamp every local CSS, JS, favicon, and icon-sprite reference with a content hash.
 
 The version stamps were hand-written in eleven generators -- thirty-seven of
 them -- and only changed when someone remembered to change them. They did not
@@ -19,7 +19,8 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
-LINK = re.compile(r'(?P<attr>href|src)="(?P<prefix>(?:\.\./)?)(?P<path>(?:css|js)/[A-Za-z0-9._-]+\.(?:css|js))(?:\?v=[^"]*)?"')
+LINK = re.compile(r'(?P<attr>href|src)="(?P<prefix>(?:\.\./|/)?)(?P<path>(?:(?:css|js)/[A-Za-z0-9._-]+\.(?:css|js)|favicon\.svg))(?:\?v=[^"]*)?"')
+SPRITE = re.compile(r'href="(?P<prefix>(?:\.\./)?)(?:icon-sprite\.svg)(?:\?v=[^"#]*)?#(?P<symbol>[A-Za-z0-9._-]+)"')
 
 
 def digest(path, cache={}):
@@ -45,6 +46,13 @@ def main():
             return match.group(0)
         return f'{match.group("attr")}="{match.group("prefix")}{match.group("path")}?v={version}"'
 
+    def stamp_sprite(match):
+        version = digest("icon-sprite.svg")
+        if version is None:
+            missing.add("icon-sprite.svg")
+            return match.group(0)
+        return f'href="{match.group("prefix")}icon-sprite.svg?v={version}#{match.group("symbol")}"'
+
     design_prefix = os.path.normcase("design" + os.sep)
     pages = sorted(glob.glob("*.html")) + [
         p for p in sorted(glob.glob("*/*.html"))
@@ -52,7 +60,7 @@ def main():
     ]
     for page in pages:
         text = open(page, encoding="utf-8").read()
-        out = LINK.sub(stamp, text)
+        out = SPRITE.sub(stamp_sprite, LINK.sub(stamp, text))
         if out != text:
             open(page, "w", encoding="utf-8").write(out)
             changed += 1

@@ -1337,6 +1337,124 @@ body.site-v3.calculators-v2 .calc-nav a { min-width: 0; }
   --d-ease: cubic-bezier(.2,.76,.2,1);
   --d-section: clamp(58px, 8vw, 108px);
 }
+
+/* -------------------------------------------------------------------------
+   Intentional interface pass — clear hierarchy, readable type and calm cards
+   ------------------------------------------------------------------------- */
+html[data-theme] body.site-v3 {
+  --intent-paper: var(--quiet-paper);
+  --intent-surface: var(--quiet-surface);
+  --intent-ink: var(--quiet-ink);
+  --intent-muted: #43564b;
+  --intent-line: var(--quiet-line);
+  --intent-accent: #28724f;
+  --intent-soft: #e3efe6;
+}
+html[data-theme="dark"] body.site-v3 {
+  --intent-muted: #d0dad3;
+  --intent-accent: #78dba3;
+  --intent-soft: #1c3829;
+}
+body.site-v3 :is(h1,h2,h3,h4,strong,b,.btn,.nav-group-trigger,.nav-direct) {
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+}
+
+/* The homepage opens with the product and its three real entry points. */
+body.home-studio .home-intro { padding-block: clamp(46px,6vw,74px) !important; }
+body.home-studio .home-intro-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0,.9fr) minmax(420px,1.1fr) !important;
+  gap: clamp(36px,6vw,82px) !important;
+  align-items: center !important;
+}
+body.home-studio .home-intro h1 {
+  max-width: 11ch !important;
+  margin: 16px 0 20px !important;
+  font-size: clamp(3.25rem,5.7vw,5.45rem) !important;
+  line-height: .96 !important;
+}
+body.home-studio .home-kicker { margin: 0 !important; }
+body.home-studio .home-kicker span { color: var(--intent-accent) !important; }
+body.home-studio .home-intro-lede { max-width: 54ch !important; color: var(--intent-muted) !important; }
+.home-launcher { display: grid; gap: 12px; }
+.home-launch-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0,1fr) auto;
+  gap: 16px;
+  align-items: center;
+  min-height: 112px;
+  padding: 18px;
+  color: var(--intent-ink) !important;
+  text-decoration: none;
+  background: var(--intent-surface);
+  border: 1px solid var(--intent-line);
+  border-radius: 18px;
+  transition: transform 260ms cubic-bezier(.22,1,.36,1), border-color 180ms ease, box-shadow 260ms ease;
+}
+.home-launch-card.is-primary { border-color: color-mix(in srgb,var(--intent-accent) 60%,var(--intent-line)); }
+.home-launch-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--intent-accent);
+  background: var(--intent-soft);
+  border-radius: 14px;
+}
+.home-launch-icon svg { width: 24px; height: 24px; fill: currentColor; }
+.home-launch-card > span:nth-child(2) { display: grid; gap: 4px; }
+.home-launch-card small { color: var(--intent-accent) !important; font-size: .69rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.home-launch-card strong { color: var(--intent-ink) !important; font-size: clamp(1.05rem,1.6vw,1.32rem); line-height: 1.15; }
+.home-launch-card b { color: var(--intent-muted) !important; font-size: .86rem; font-weight: 500; line-height: 1.42; }
+.home-launch-card > i { color: var(--intent-accent); font-size: 1.3rem; font-style: normal; transition: transform 220ms ease; }
+@media (hover:hover) and (pointer:fine) {
+  .home-launch-card:hover { transform: translateY(-3px); border-color: var(--intent-accent); box-shadow: 0 16px 36px rgba(18,51,34,.1); }
+  .home-launch-card:hover > i { transform: translateX(4px); }
+}
+body.home-studio .gm6-learning { padding-block: clamp(46px,6vw,72px) !important; }
+.home-guides-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 24px; }
+.home-guides-head h2 { max-width: 16ch; margin: 6px 0 0; font-size: clamp(2rem,4vw,3.25rem); line-height: 1; }
+.home-guides-head > a { color: var(--intent-accent) !important; font-weight: 800; text-decoration: none; }
+.home-guide-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.home-guide-card { overflow: hidden; color: var(--intent-ink) !important; text-decoration: none; background: var(--intent-surface); border: 1px solid var(--intent-line); border-radius: 18px; }
+.home-guide-card img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--intent-soft); }
+.home-guide-card > span { display: grid; gap: 7px; padding: 18px; }
+.home-guide-card small { color: var(--intent-accent) !important; font-size: .7rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.home-guide-card strong { font-size: 1.15rem; line-height: 1.24; }
+.home-guide-card b { color: var(--intent-muted) !important; font-size: .86rem; font-weight: 500; line-height: 1.45; }
+
+@media (max-width: 900px) {
+  body.home-studio .home-intro-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  body.home-studio .home-intro h1 { max-width: 13ch !important; }
+  .home-launcher { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .home-launch-card { grid-template-columns: 40px 1fr; align-content: start; min-height: 190px; }
+  .home-launch-card > i { display: none; }
+  .home-launch-card b { font-size: .8rem; }
+}
+@media (max-width: 620px) {
+  body.home-studio .home-intro { padding-block: 26px 34px !important; }
+  body.home-studio .home-intro-grid { gap: 22px !important; }
+  body.home-studio .home-intro h1 { max-width: 12ch !important; margin: 12px 0 14px !important; font-size: clamp(2.45rem,11.2vw,3.15rem) !important; line-height: .98 !important; }
+  body.home-studio .home-intro-lede { display: block !important; overflow: visible !important; font-size: .98rem !important; line-height: 1.5 !important; }
+  body.home-studio .home-intro-actions { margin-top: 18px !important; }
+  .home-launcher { grid-template-columns: 1fr; gap: 9px; }
+  .home-launch-card { grid-template-columns: 40px minmax(0,1fr) auto; gap: 12px; min-height: 0; padding: 13px 14px; border-radius: 15px; }
+  .home-launch-icon { width: 40px; height: 40px; border-radius: 11px; }
+  .home-launch-icon svg { width: 21px; height: 21px; }
+  .home-launch-card > i { display: block; }
+  .home-launch-card small { font-size: .62rem; }
+  .home-launch-card strong { font-size: .98rem; }
+  .home-launch-card b { display: none; }
+  .home-guides-head { align-items: start; flex-direction: column; gap: 12px; margin-bottom: 17px; }
+  .home-guides-head h2 { font-size: 1.85rem; }
+  .home-guide-grid { grid-template-columns: 1fr; gap: 11px; }
+  .home-guide-card { display: grid; grid-template-columns: 112px minmax(0,1fr); }
+  .home-guide-card img { height: 100%; aspect-ratio: auto; }
+  .home-guide-card > span { padding: 13px; }
+  .home-guide-card b { display: none; }
+}
 /* Keep refreshes and dynamic tool updates still. Smooth scrolling on the root
    also animates browser scroll restoration and hash restoration, which makes
    an otherwise stable page appear to drift after it has loaded. */
@@ -2329,4 +2447,176 @@ body.site-v3 :is(.library-section,.guides-section,.tools-section,.article-sectio
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
   }
+}
+
+/* FINAL LAYOUT CONTRACT --------------------------------------------------- */
+html[data-theme] body.site-v3 { --final-muted:#43564b; --final-accent:#28724f; --final-soft:#e3efe6; }
+html[data-theme="dark"] body.site-v3 { --final-muted:#d2ddd5; --final-accent:#7adca5; --final-soft:#1c3829; }
+html[data-theme] body.site-v3 main :is(p,li,dd,label,small,caption,.hint,.note) { color:var(--final-muted); }
+
+/* Header: dark green shell, pale open menus, readable selected states. */
+html[data-theme] body.site-v3 .full-nav { color:#f4faf5 !important; background:#174f37 !important; }
+@media (min-width:901px) {
+  html[data-theme] body.site-v3 .full-nav-links {
+    color:#f4faf5 !important;
+    background:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+  }
+  html[data-theme] body.site-v3 .full-nav-links :is(.nav-group-trigger,.nav-direct) { color:#eef7f0 !important; }
+  html[data-theme] body.site-v3 .nav-popover { color:#17231c !important; background:#fbfaf5 !important; border-color:#d2dcd3 !important; }
+  html[data-theme] body.site-v3 .nav-popover :is(a,strong) { color:#17231c !important; }
+  html[data-theme] body.site-v3 .nav-popover :is(span,small) { color:#526158 !important; }
+  html[data-theme] body.site-v3 :is(.nav-group.is-open > .nav-group-trigger,.nav-group-trigger[aria-expanded="true"],.nav-direct[aria-current="page"]) {
+    color:#173126 !important; background:#eef3ee !important; box-shadow:none !important;
+  }
+}
+
+/* Homepage rules repeat here intentionally as the final stylesheet layer. */
+body.home-studio .home-intro { padding-block:clamp(46px,6vw,74px) !important; }
+body.home-studio .home-intro-grid { display:grid !important; grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr) !important; gap:clamp(36px,6vw,82px) !important; align-items:center !important; }
+body.home-studio .home-intro h1 { max-width:11ch !important; margin:16px 0 20px !important; font-size:clamp(3.25rem,5.7vw,5.45rem) !important; line-height:.96 !important; }
+body.home-studio .home-intro-lede { display:block !important; overflow:visible !important; max-width:54ch !important; color:var(--final-muted) !important; }
+body.home-studio .home-kicker { margin:0 !important; }
+body.home-studio .home-kicker span { color:var(--final-accent) !important; }
+body.home-studio .gm6-tools { display:none !important; }
+
+/* Finder: the real questionnaire is the only demo, and the copy has room. */
+body.order-match-page .match-intro-grid { grid-template-columns:minmax(340px,.78fr) minmax(560px,1.22fr) !important; gap:clamp(38px,5vw,72px) !important; }
+body.order-match-page .match-intro-copy { position:sticky; top:96px; }
+body.order-match-page .match-intro-copy h1 { max-width:12ch !important; font-size:clamp(2.9rem,4.5vw,4.35rem) !important; line-height:.98 !important; }
+.match-calc-link { display:grid; grid-template-columns:38px 1fr auto; gap:12px; align-items:center; max-width:390px; margin-top:26px; padding:13px 14px; color:var(--quiet-ink) !important; text-decoration:none; background:var(--quiet-surface); border:1px solid var(--quiet-line); border-radius:14px; }
+.match-calc-link > svg { width:21px; height:21px; padding:8px; box-sizing:content-box; fill:var(--final-accent); background:var(--final-soft); border-radius:10px; }
+.match-calc-link > span { display:grid; gap:2px; }
+.match-calc-link strong { color:var(--quiet-ink) !important; font-size:.88rem; }
+.match-calc-link small { color:var(--final-muted) !important; font-size:.76rem; }
+.match-calc-link i { color:var(--final-accent); font-style:normal; }
+.quiz-data-note { margin-top:11px; color:var(--quiet-ink); background:transparent; border:1px solid var(--quiet-line); border-radius:12px; }
+.quiz-data-note summary { padding:12px 15px; color:var(--quiet-ink); font-size:.82rem; font-weight:800; cursor:pointer; }
+.quiz-data-note p { margin:0; padding:0 15px 14px; font-size:.78rem; line-height:1.5; }
+body.order-match-page .order-match-macros { display:none !important; }
+body.order-match-page .option-chain-mark { overflow:hidden; padding:4px !important; background:#fff !important; border:1px solid #d9e0da !important; }
+body.order-match-page .option-chain-mark img { display:block; width:100%; height:100%; object-fit:contain; border-radius:50%; }
+body.order-match-page .quiz-option { overflow:hidden; }
+body.order-match-page .quiz-option :is(.option-copy b,.option-copy small) { overflow-wrap:normal !important; word-break:normal !important; }
+
+/* Single-macro calculators: three dependable cards, no narrow inner columns. */
+body.calculators-v2 .single-macro-studio { padding-block:clamp(48px,6vw,74px) !important; background:var(--quiet-paper) !important; }
+body.calculators-v2 .single-macro-head { grid-template-columns:minmax(0,1fr) !important; gap:10px !important; margin-bottom:24px !important; }
+body.calculators-v2 .single-macro-head h2 { max-width:18ch !important; font-size:clamp(2rem,3.5vw,3.35rem) !important; }
+body.calculators-v2 .single-macro-head > p { max-width:62ch !important; color:var(--final-muted) !important; }
+body.calculators-v2 .single-macro-grid { display:grid !important; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:16px !important; align-items:stretch !important; }
+body.calculators-v2 .single-macro-card { display:flex !important; flex-direction:column !important; min-width:0 !important; padding:22px !important; color:var(--quiet-ink) !important; background:var(--quiet-surface) !important; border:1px solid var(--quiet-line) !important; border-radius:18px !important; box-shadow:none !important; }
+body.calculators-v2 .single-card-head { grid-template-columns:42px minmax(0,1fr) !important; gap:12px !important; padding-bottom:16px !important; }
+body.calculators-v2 .single-card-number { display:none !important; }
+body.calculators-v2 .single-card-icon { grid-column:1; color:var(--final-accent) !important; background:var(--final-soft) !important; border-radius:12px !important; }
+body.calculators-v2 .single-card-head > div { grid-column:2; min-width:0; }
+body.calculators-v2 .single-card-head h3 { font-size:1.14rem !important; line-height:1.2 !important; }
+body.calculators-v2 .single-card-copy { min-height:0 !important; margin:16px 0 !important; color:var(--final-muted) !important; font-size:.88rem !important; }
+body.calculators-v2 .single-macro-form { display:flex !important; flex:1; flex-direction:column !important; gap:14px !important; padding:0 !important; background:transparent !important; border:0 !important; }
+html[data-theme] body.site-v3.calculators-v2 .single-macro-studio .single-macro-form { padding:0 !important; background:transparent !important; border:0 !important; border-radius:0 !important; box-shadow:none !important; }
+body.calculators-v2 .single-macro-form .field { display:block !important; width:100% !important; }
+body.calculators-v2 .single-macro-form label { display:block !important; margin-bottom:7px !important; color:var(--quiet-ink) !important; line-height:1.35 !important; }
+body.calculators-v2 .single-macro-form label > span { float:right; }
+body.calculators-v2 .single-macro-form :is(input,select) { width:100% !important; min-width:0 !important; min-height:48px !important; }
+body.calculators-v2 .single-card-note { min-height:0 !important; color:var(--final-muted) !important; }
+body.calculators-v2 .single-macro-form .calc-submit { margin-top:auto !important; color:#fff !important; background:#28724f !important; border-color:#28724f !important; border-radius:12px !important; }
+html[data-theme="dark"] body.calculators-v2 .single-macro-form .calc-submit { color:#13251b !important; background:#7adca5 !important; border-color:#7adca5 !important; }
+body.calculators-v2 .single-macro-result { width:auto !important; min-height:64px !important; margin:18px 0 0 !important; padding:14px 0 0 !important; background:transparent !important; border:0 !important; border-top:1px solid var(--quiet-line) !important; }
+body.calculators-v2 .tool-group-icon { display:grid; place-items:center; }
+body.calculators-v2 .tool-group-icon .icon { width:20px; height:20px; }
+
+/* Recipe illustration sits beside the calculator instead of blocking it. */
+body.tools-page .tool-hero .eyebrow { display:none !important; }
+.recipe-work-section { padding-block:clamp(42px,6vw,72px); }
+.recipe-work-grid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr); gap:24px; align-items:start; }
+.recipe-work-main { width:auto !important; max-width:none !important; padding:0 !important; }
+.recipe-art-card { position:sticky; top:100px; overflow:hidden; margin:0; background:var(--quiet-surface); border:1px solid var(--quiet-line); border-radius:18px; }
+.recipe-art-card img { display:block; width:100%; aspect-ratio:3/2; object-fit:cover; }
+.recipe-art-card figcaption { padding:13px 15px; color:var(--final-muted); font-size:.78rem; line-height:1.45; }
+.recipe-assumptions { margin-top:16px !important; color:var(--quiet-ink); background:var(--quiet-surface); border:1px solid var(--quiet-line); border-radius:14px; }
+.recipe-assumptions summary { padding:15px 17px; color:var(--quiet-ink); font-weight:800; cursor:pointer; }
+.recipe-assumptions p { margin:0; padding:0 17px 17px; font-size:.86rem; line-height:1.55; }
+
+/* Label comparison fills the canvas evenly. */
+body.tools-page #compareForm { max-width:980px; margin-inline:auto; padding:22px; background:var(--quiet-surface); border:1px solid var(--quiet-line); border-radius:18px; }
+body.tools-page #compareForm .compare-form { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:16px !important; }
+body.tools-page #compareForm .food-panel { min-width:0; padding:20px !important; background:var(--quiet-paper) !important; border:1px solid var(--quiet-line) !important; border-radius:14px !important; }
+body.tools-page #compareForm .food-panel h2 { margin:0 0 18px !important; font-size:1.45rem !important; }
+body.tools-page #compareForm .fields { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:13px !important; }
+body.tools-page #compareForm .field.full { grid-column:1/-1; }
+body.tools-page #compareForm :is(input,select) { width:100% !important; min-width:0 !important; }
+body.tools-page #compareForm > .btn { width:calc(50% - 10px); min-height:48px; margin-top:16px; }
+body.tools-page #results { max-width:980px; margin:20px auto 0 !important; padding:22px !important; background:var(--quiet-surface) !important; border:1px solid var(--quiet-line) !important; border-radius:18px !important; }
+
+/* Editorial pages align title, deck and story to one readable column. */
+body.article-page .article-hero > .container { display:block !important; }
+body.article-page .article-hero h1 { max-width:16ch !important; margin:10px 0 16px !important; text-align:left !important; }
+body.article-page .article-hero :is(p,.lead,.article-deck) { max-width:65ch !important; margin-inline:0 !important; text-align:left !important; }
+body.article-page .article-container { max-width:780px !important; }
+body.about-page .about-proof { display:none !important; }
+
+/* Compact footer; no oversized directory wall. */
+html[data-theme] body.site-v3 .modern-footer { padding:46px max(22px,calc((100% - 1180px)/2)) !important; gap:30px 44px !important; }
+html[data-theme] body.site-v3 .modern-footer > div { align-content:start; }
+
+@media (max-width:900px) {
+  body.home-studio .home-intro-grid { grid-template-columns:1fr !important; gap:28px !important; }
+  body.home-studio .home-intro h1 { max-width:13ch !important; }
+  body.order-match-page .match-intro-grid { grid-template-columns:1fr !important; gap:24px !important; }
+  body.order-match-page .match-intro-copy { position:static; }
+  body.calculators-v2 .single-macro-grid { grid-template-columns:1fr !important; }
+  .recipe-work-grid { grid-template-columns:1fr; }
+  .recipe-art-card { position:static; }
+}
+@media (max-width:620px) {
+  body.home-studio .home-intro { padding-block:26px 34px !important; }
+  body.home-studio .home-intro h1 { max-width:12ch !important; margin:12px 0 14px !important; font-size:clamp(2.4rem,11vw,3rem) !important; }
+  body.home-studio .home-intro-actions { margin-top:18px !important; }
+  body.order-match-page .match-intro-copy h1 { max-width:14ch !important; font-size:2.25rem !important; }
+  .match-calc-link { margin-top:18px; }
+  body.order-match-page .quiz-options:not(.chain-options) { grid-template-columns:1fr !important; }
+  body.order-match-page .quiz-option { min-height:66px !important; }
+  body.order-match-page .quiz-options:not(.chain-options) .quiz-option { min-height:68px !important; grid-template-columns:36px minmax(0,1fr) 20px !important; }
+  body.order-match-page .quiz-options:not(.chain-options) .option-icon { display:grid !important; }
+  body.order-match-page .quiz-nav { grid-template-columns:1fr 1.25fr !important; }
+  body.calculators-v2 .single-macro-card { padding:17px !important; }
+  body.tools-page #compareForm { padding:13px; }
+  body.tools-page #compareForm .compare-form { grid-template-columns:1fr !important; }
+  body.tools-page #compareForm .food-panel { padding:15px !important; }
+  body.tools-page #compareForm .fields { gap:10px !important; }
+  body.tools-page #compareForm > .btn { width:100%; margin-top:10px; }
+  .recipe-work-section { padding-block:30px; }
+  .recipe-art-card { order:2; }
+}
+
+body.library-page .guide-start { display:none !important; }
+body.library-page .guide-hub-intro { display:block !important; }
+body.library-page .guide-hub-intro > div { max-width:760px; }
+body.library-page .guide-hub-hero h1 { max-width:16ch !important; }
+body.library-page .guide-grid { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+body.library-page .guide-card { min-height:0 !important; padding:20px !important; }
+body.library-page .guide-card h3 { font-size:1.12rem !important; line-height:1.25 !important; }
+body.library-page .guide-card p { font-size:.86rem !important; line-height:1.5 !important; }
+body.about-page .about-card-num,
+body.about-page .about-method-grid article > b { display:none !important; }
+body.home-studio .home-intro-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+body.home-studio .home-intro h1 { max-width:12.5ch !important; font-size:clamp(3.1rem,5vw,4.75rem) !important; }
+html[data-theme] body.site-v3 main :is(.page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero) h1 { max-width:18ch !important; font-size:clamp(2.65rem,5vw,4.35rem) !important; }
+@media (min-width:901px) { .home-launch-card { min-height:130px; } }
+@media (max-width:900px) {
+  body.library-page .guide-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+  body.home-studio .home-intro-grid { grid-template-columns:1fr !important; }
+}
+@media (max-width:620px) {
+  body.library-page .guide-grid { grid-template-columns:1fr !important; }
+  body.library-page .guide-card { padding:17px !important; }
+  html[data-theme] body.site-v3 main :is(small,p.eyebrow) { font-size:.8rem !important; }
+  html[data-theme][lang] body.site-v3 main p.eyebrow { font-size:13px !important; }
+  html[data-theme][lang] body.site-v3[class]:not(.home-studio):not(.order-match-page) main p.eyebrow { font-size:13px !important; }
+  html[data-theme] body.site-v3.order-match-page main .quiz-option small { font-size:.8rem !important; }
+  html[data-theme] body.site-v3 .chain-pick-group p { font-size:.8rem !important; }
+  .home-launch-card { min-height:89px !important; }
+  body.home-studio .home-intro h1 { max-width:12ch !important; font-size:clamp(2.4rem,11vw,3rem) !important; }
+  html[data-theme] body.site-v3 main :is(.page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero) h1 { max-width:16ch !important; font-size:clamp(2.15rem,10vw,2.7rem) !important; }
 }

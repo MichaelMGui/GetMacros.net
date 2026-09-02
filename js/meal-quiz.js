@@ -25,35 +25,20 @@
     "Subway", "Panda Express", "Starbucks", "Panera", "CAVA",
     "Sweetgreen", "Jersey Mike's", "KFC", "Popeyes", "Dunkin'"
   ];
-  // Each chain gets a tile in its own signature colour. These are initials, not
-  // brand logos: we have no licence to redistribute another company's mark, and
-  // third-party media republished without rights is exactly what an ad review
-  // flags. The initials and the colour still make a chain findable at a glance.
-  var CHAIN_TONE = {
-    "McDonald's": "#ffe9c2", "Starbucks": "#d8ece0", "Chick-fil-A": "#ffe0d8",
-    "Taco Bell": "#ece2f5", "Wendy's": "#ffdcd6", "Dunkin'": "#ffe2f0",
-    "Subway": "#e4f3d8", "Chipotle": "#e8e0d8", "Popeyes": "#ffe6cc",
-    "KFC": "#ffdada", "Panera": "#e9f0d6", "Panda Express": "#ffe0e0",
-    "Jersey Mike's": "#dbe8f5", "Sweetgreen": "#dcf2dd", "CAVA": "#e2efe9"
-  };
   // The data spells these with a typographic apostrophe (McDonald’s) while the
   // lists above use a straight one, so a raw lookup missed exactly the four
   // best-known chains and dropped them to the bottom of the step.
   function chainKey(name) { return String(name).replace(/[\u2018\u2019\u02bc]/g, "'"); }
-  // Derived initials collide -- Chick-fil-A and Chipotle both reduce to "CH" --
-  // so the chains we carry get theirs stated.
-  var CHAIN_INITIALS = {
-    "McDonald's": "MC", "Starbucks": "SB", "Chick-fil-A": "CF", "Taco Bell": "TB",
-    "Wendy's": "WE", "Dunkin'": "DK", "Subway": "SW", "Chipotle": "CP",
-    "Popeyes": "PY", "KFC": "KF", "Panera": "PN", "Panda Express": "PX",
-    "Jersey Mike's": "JM", "Sweetgreen": "SG", "CAVA": "CV"
+  var CHAIN_LOGO = {
+    "McDonald's": "mcdonalds", "Starbucks": "starbucks", "Chick-fil-A": "chick-fil-a",
+    "Taco Bell": "taco-bell", "Wendy's": "wendys", "Dunkin'": "dunkin",
+    "Subway": "subway", "Chipotle": "chipotle", "Popeyes": "popeyes", "KFC": "kfc",
+    "Panera": "panera", "Panda Express": "panda-express", "Jersey Mike's": "jersey-mikes",
+    "Sweetgreen": "sweetgreen", "CAVA": "cava"
   };
-  function chainInitials(name) {
-    var known = CHAIN_INITIALS[chainKey(name)];
-    if (known) return known;
-    var words = String(name).replace(/[^A-Za-z' ]/g, "").split(/\s+/).filter(Boolean);
-    if (words.length > 1) return (words[0][0] + words[1][0]).toUpperCase();
-    return String(name).replace(/[^A-Za-z]/g, "").slice(0, 2).toUpperCase();
+  function chainLogo(name) {
+    var slug = CHAIN_LOGO[chainKey(name)] || "chipotle";
+    return "images/restaurant-logos/" + slug + ".png";
   }
   var chains = [];
   meals.forEach(function (m) { if (chains.indexOf(m.chain) === -1) chains.push(m.chain); });
@@ -159,7 +144,7 @@
     var choices = s.options.map(function (o) {
       var checked = state[s.key].indexOf(o[0]) !== -1 ? " checked" : "";
       var mark = s.chainStep
-        ? '<span class="option-icon option-chain-mark" style="--chain-tone:' + (CHAIN_TONE[chainKey(o[0])] || '#e3efe8') + '" aria-hidden="true">' + esc(chainInitials(o[0])) + '</span>'
+        ? '<span class="option-icon option-chain-mark" aria-hidden="true"><img src="' + esc(chainLogo(o[0])) + '" alt="" width="40" height="40" loading="lazy"></span>'
         : '<span class="option-icon">' + iconSvg(o[3], o[1]) + '</span>';
       return '<label class="quiz-option"><input type="' + type + '" name="q-' + s.key + '" data-facet="' + s.key + '" value="' + esc(o[0]) + '"' + checked + '>' + mark + '<span class="option-copy"><b>' + esc(o[1]) + '</b>' + (o[2] ? '<small>' + esc(o[2]) + '</small>' : '') + '</span><span class="option-check" aria-hidden="true">✓</span></label>';
     }).join("");
@@ -190,7 +175,7 @@
   }
   function renderStep() {
     var s = STEPS[step], conflict = s.key === "goal" && state.goal.indexOf("energy") !== -1 && state.goal.indexOf("light") !== -1;
-    root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + ' Skip a question and we treat it as no preference.</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost quiz-back" data-go="-1">Back</button>' : '') + '<button type="button" class="btn btn-primary quiz-continue" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
+    root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + '</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost quiz-back" data-go="-1">Back</button>' : '') + '<button type="button" class="btn btn-primary quiz-continue" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
     announce("Question " + (step + 1) + " of " + STEPS.length + ": " + s.title);
   }
   function summary(count) {

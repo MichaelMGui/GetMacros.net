@@ -31,13 +31,14 @@ END = "<!--MEALS:END-->"
 HERO = r'''<section class="match-intro" data-spotlight>
   <div class="container match-intro-grid">
     <div class="match-intro-copy">
-      <p class="match-kicker"><span>Free healthy fast-food finder</span><b>Five quick questions</b></p>
-      <h1>Find your best fast-food meal.</h1>
-      <p>Tell us your goal, appetite and dietary needs. We compare 83 real meals from 15 chains and rank the options that fit.</p>
+      <p class="match-kicker"><span>Healthy fast-food finder</span></p>
+      <h1>Find a meal that fits your goals.</h1>
+      <p>Choose what matters today. We compare real menu items from 15 restaurants and explain the strongest matches.</p>
+      <a class="match-calc-link" href="calculators.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg><span><strong>Not sure about your targets?</strong><small>Calculate calories and macros first</small></span><i aria-hidden="true">→</i></a>
     </div>
     <div class="match-live-quiz" role="region" aria-label="Healthy Order Match questionnaire">
       <div id="meal-quiz"></div>
-      <p class="calc-fineprint">Values are approximate standard builds from published chain nutrition information. Menus and recipes can change, so confirm important figures with the restaurant.</p>
+      <details class="quiz-data-note"><summary>How accurate are these results?</summary><p>We use published nutrition for standard menu builds. Recipes and availability can change, so confirm important figures with the restaurant.</p></details>
     </div>
   </div>
 </section>
@@ -240,7 +241,7 @@ def main():
         r'(?:\s*<section class="quiz-stage[^>]*>.*?</section>)?'
         r'(?:\s*<script src="js/meal-data\.js[^>]*></script>'
         r'<script src="js/meal-quiz\.js[^>]*></script>)?'
-        r'(?=\s*<section class="mm-stage)',
+        r'(?=\s*(?:<section class="mm-stage|<div class="ad-auto-anchor|<!--MEALS:START-->))',
         HERO,
         c,
         count=1,

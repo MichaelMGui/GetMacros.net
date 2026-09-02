@@ -186,15 +186,18 @@ def main() -> int:
     # gm6-rail belonged to the restaurant explorer, which was a third route to
     # pages the nav and the finder results already reach, sitting directly under
     # two sections that send you to them.
-    for required in ("gm6-tool-bento", "gm6-finder-shell", "order-console-macros"):
+    for required in ("home-launcher", "home-launch-card", "home-guide-grid"):
         if required not in home:
             errors.append(f"index.html: premium homepage component is missing: {required}")
     if "gm6-goal-story" in home:
         errors.append("index.html: removed scrolling goal-story clutter returned")
     if "gm6-restaurants" in home:
         errors.append("index.html: removed restaurant-explorer rail returned")
-    if "gm6-tools-joined" not in home:
-        errors.append("index.html: the tools bento must stay joined to the hero opening")
+    if home.count('class="home-launch-card') != 3:
+        errors.append("index.html: homepage must expose exactly three primary tool choices")
+    for retired in ("order-console-macros", "gm6-finder-shell", "gm6-tool-bento"):
+        if retired in home:
+            errors.append(f"index.html: retired homepage demo returned: {retired}")
     finder = (ROOT / "restaurant-meal-finder.html").read_text(encoding="utf-8")
     if 'class="meal-database-disclosure"' not in finder:
         errors.append("restaurant-meal-finder.html: optional meal database disclosure is missing")

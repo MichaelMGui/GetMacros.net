@@ -365,7 +365,6 @@ def main() -> int:
         # The point is that the page states the current count, not that it uses
         # one exact sentence. The homepage kicker now says "83 meals", which is
         # the same claim and has to stay just as current.
-        "index.html": r"83\s*(?:tracked menu options|meals\b)",
         "about.html": r"83(?:</strong><small>|\s+)tracked menu options",
         "healthy-fast-food.html": r"83 tracked menu options",
         "restaurant-meal-finder.html": r"83 tracked menu options",
@@ -427,10 +426,8 @@ def main() -> int:
 
     calc_text = pages.get("calculators.html", ("", PageParser()))[0]
     home_text = pages.get("index.html", ("", PageParser()))[0]
-    if ("js/macro-math.js?v=" not in calc_text
-            or "js/macro-math.js?v=" not in home_text
-            or "js/macro-math.js?v=" not in finder_text):
-        errors.append("macro calculator: shared calculation engine is missing from a calculator entry point")
+    if "js/macro-math.js?v=" not in calc_text:
+        errors.append("macro calculator: shared calculation engine is missing from calculators.html")
     for goal_value, goal_label in (
         ("lose", "Lose weight"),
         ("recomp", "Lose fat + build muscle"),
@@ -440,8 +437,6 @@ def main() -> int:
         option = f'<option value="{goal_value}"'
         if option not in calc_text or goal_label not in calc_text:
             errors.append(f"calculators.html: goal option missing: {goal_label}")
-        if option not in home_text or goal_label not in home_text:
-            errors.append(f"index.html: goal option missing: {goal_label}")
         if option not in (ROOT / "js" / "macro-meals.js").read_text(encoding="utf-8") or goal_label not in (ROOT / "js" / "macro-meals.js").read_text(encoding="utf-8"):
             errors.append(f"meal finder macro calculator: goal option missing: {goal_label}")
     if calc_text.count('href="budget-meal-builder.html"') != 1:
