@@ -2971,6 +2971,126 @@ body.trust-page:not(.about-page) :is(.policy,main > section:not(.page-hero)) :is
   body.trust-page:not(.about-page) main > section:not(.page-hero):not(.policy-hero) > .container { padding:19px 0 !important; }
 }
 
+/* Restaurant reading panels: compact editorial type, not oversized hero cards. */
+html[data-theme] body.site-v3.restaurant-guide main > section:has(.advice-grid) {
+  padding-block:28px 12px !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main > section:has(.source-box) {
+  padding-block:12px 28px !important;
+}
+html[data-theme] body.site-v3.restaurant-guide .advice-grid {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-items:stretch;
+  gap:20px !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main .advice-card {
+  min-width:0;
+  padding:26px !important;
+  background:var(--quiet-surface) !important;
+  border:1px solid var(--quiet-line) !important;
+  border-radius:18px !important;
+  box-shadow:0 5px 18px rgba(0,0,0,.035) !important;
+  transition:transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+html[data-theme] body.site-v3.restaurant-guide main .advice-card h2 {
+  max-width:none !important;
+  margin:0 0 18px !important;
+  padding:0 0 16px !important;
+  border-bottom:1px solid var(--quiet-line);
+  font-size:clamp(1.25rem,1.6vw,1.5rem) !important;
+  font-weight:700 !important;
+  line-height:1.3 !important;
+  letter-spacing:-.025em !important;
+  text-align:left !important;
+  text-wrap:pretty;
+}
+html[data-theme] body.site-v3.restaurant-guide main .advice-card ul {
+  display:grid;
+  gap:16px;
+  margin:0 !important;
+  padding:0 !important;
+  list-style:none !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main .advice-card li {
+  position:relative;
+  max-width:none !important;
+  margin:0 !important;
+  padding:0 0 0 18px !important;
+  color:var(--quiet-muted) !important;
+  font-size:1rem !important;
+  font-weight:400 !important;
+  line-height:1.65 !important;
+  letter-spacing:normal !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main .advice-card li::before {
+  content:"";
+  position:absolute;
+  top:.7em;
+  left:0;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--quiet-green);
+}
+html[data-theme] body.site-v3.restaurant-guide main .advice-card li strong {
+  display:block;
+  margin-bottom:2px;
+  font-size:1rem !important;
+  font-weight:700 !important;
+  line-height:1.45 !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main .source-box {
+  padding:22px 26px !important;
+  background:var(--quiet-surface-2) !important;
+  border:1px solid var(--quiet-line) !important;
+  border-radius:14px !important;
+  box-shadow:none !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main .source-box h2 {
+  margin:0 0 12px !important;
+  max-width:none !important;
+  font-size:1.125rem !important;
+  font-weight:700 !important;
+  line-height:1.4 !important;
+  letter-spacing:-.015em !important;
+  text-align:left !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main .source-box :is(p,li) {
+  margin:8px 0 !important;
+  max-width:90ch !important;
+  color:var(--quiet-muted) !important;
+  font-size:.9375rem !important;
+  font-weight:400 !important;
+  line-height:1.65 !important;
+  letter-spacing:normal !important;
+}
+html[data-theme] body.site-v3.restaurant-guide main .source-box a {
+  color:var(--quiet-green-strong) !important;
+  font-weight:600 !important;
+  text-decoration:underline !important;
+  text-decoration-thickness:1px !important;
+  text-underline-offset:4px;
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  html[data-theme] body.site-v3.restaurant-guide main .advice-card:hover {
+    transform:translateY(-2px);
+    border-color:var(--quiet-green) !important;
+    box-shadow:0 9px 24px rgba(0,0,0,.07) !important;
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  html[data-theme] body.site-v3.restaurant-guide main .advice-card { transition:none !important; }
+}
+@media (max-width:760px) {
+  html[data-theme] body.site-v3.restaurant-guide .advice-grid {
+    grid-template-columns:1fr !important;
+    gap:12px !important;
+  }
+  html[data-theme] body.site-v3.restaurant-guide main :is(.advice-card,.source-box) { padding:20px !important; }
+  html[data-theme] body.site-v3.restaurant-guide main .advice-card h2 { margin-bottom:14px !important; padding-bottom:12px !important; }
+}
+
 /* The header mark must stay recognizable against the pale light-mode bar. */
 html[data-theme="light"] body.site-v3 .site-header .brand-mark {
   color:#174f37 !important;
