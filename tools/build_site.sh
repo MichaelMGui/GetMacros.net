@@ -27,6 +27,7 @@ python3 tools/recover_site_focus.py
 python3 tools/link_siblings.py
 # After every pass that can rewrite a nav or a breadcrumb.
 python3 tools/finish_navigation.py
+python3 tools/normalize_calculator_layouts.py
 # Last, so it sees the final head of every page: rewrite each local CSS and
 # JS link with a hash of that file, so a changed asset always busts caches
 # and an unchanged one keeps its cache entry.
@@ -34,3 +35,4 @@ python3 tools/stamp_assets.py
 
 python3 tools/validate_site.py
 python3 tools/audit_visual_contract.py
+python3 tools/test_workspace_contract.py

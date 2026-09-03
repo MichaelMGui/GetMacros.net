@@ -45,7 +45,10 @@
     mark.className = "suite-hero-mark";
     mark.setAttribute("aria-hidden", "true");
     mark.innerHTML = '<svg viewBox="0 0 24 24">' + icons[icon] + "</svg>";
-    host.appendChild(mark);
+    // Keep the icon with the heading, not in a floating oversized hero column.
+    var heading = host.querySelector("h1");
+    if (heading) heading.insertAdjacentElement("beforebegin", mark);
+    else host.prepend(mark);
   }
 
   function decorateForms() {
@@ -182,6 +185,6 @@
   decorateForms();
   decorateOutputs();
   enhanceLegacyCalculators();
-  addPointerLight();
-  addReveal();
+  // Inputs must never fade out or move after load. Motion is reserved for
+  // explicit interactions and fresh results, not the working surface.
 }());

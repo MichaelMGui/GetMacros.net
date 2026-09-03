@@ -3,6 +3,8 @@
 <head><meta charset="utf-8">
 <script>if(self!==top){try{top.location=self.location;}catch(e){document.documentElement.style.display="none";}}</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="application-name" content="GetMacros">
 <title>Recipe Calories and Macros Calculator | GetMacros</title>
 <meta name="description" content="Calculate calories and macros per serving when you scale a recipe up or down. Adjust the portions and get updated protein, carbs and fat.">
 <meta name="google-adsense-account" content="ca-pub-2316153877942502">
@@ -32,8 +34,8 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.googletagservices.com https://*.adtrafficquality.google https://*.gstatic.com https://*.googleapis.com; style-src 'self' 'unsafe-inline' https://*.googlesyndication.com; img-src 'self' data: https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.gstatic.com https://*.adtrafficquality.google; font-src 'self'; connect-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google https://*.googleapis.com; frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="stylesheet" href="css/readability-v2.css?v=38599f1a9a">
-<link rel="icon" href="/favicon.svg?v=38353cdc67" type="image/svg+xml"><meta name="theme-color" content="#f4f7f2"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name="author" content="The GetMacros.net editorial team"><link rel="stylesheet" href="css/premium-v4.css?v=134c89ca75"><link rel="stylesheet" href="css/studio-v6.css?v=27681fd271"><link rel="stylesheet" href="css/calculator-suite.css?v=990eaae2aa"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/atelier-v5.css?v=6e2abbf250"><link rel="stylesheet" href="css/liquid.css?v=eedbdaff3a"><link rel="stylesheet" href="css/contrast-fix.css?v=ee36b85b7c"><link rel="stylesheet" href="css/polish.css?v=118b77d861"><link rel="stylesheet" href="css/unified-v7.css?v=01294fccfe"><link rel="stylesheet" href="css/theme-fix.css?v=275f80becc"><link rel="stylesheet" href="css/editorial-v8.css?v=e70752a927"><link rel="stylesheet" href="css/clean-v9.css?v=9fb4beeeff"></head>
-<body class="site-v3 article-page tools-page">
+<link rel="icon" href="/favicon.svg?v=38353cdc67" type="image/svg+xml"><meta name="theme-color" content="#e5ebe5"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name="author" content="The GetMacros.net editorial team"><link rel="stylesheet" href="css/premium-v4.css?v=134c89ca75"><link rel="stylesheet" href="css/studio-v6.css?v=27681fd271"><link rel="stylesheet" href="css/calculator-suite.css?v=990eaae2aa"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/atelier-v5.css?v=6e2abbf250"><link rel="stylesheet" href="css/liquid.css?v=eedbdaff3a"><link rel="stylesheet" href="css/contrast-fix.css?v=ee36b85b7c"><link rel="stylesheet" href="css/polish.css?v=118b77d861"><link rel="stylesheet" href="css/unified-v7.css?v=01294fccfe"><link rel="stylesheet" href="css/theme-fix.css?v=275f80becc"><link rel="stylesheet" href="css/editorial-v8.css?v=e70752a927"><link rel="stylesheet" href="css/clean-v9.css?v=4c4b87d61d"></head>
+<body class="site-v3 article-page tools-page calculator-suite calculator-suite--recipe">
 
 
 
@@ -432,14 +434,14 @@
 <section class="tool-hero liquid-surface">
 <div class="container">
 <p class="eyebrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2h14a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm2 3v4h10V5H7Zm0 8v2h2v-2H7Zm4 0v2h2v-2h-2Zm4 0v2h2v-2h-2Zm-8 4v2h2v-2H7Zm4 0v2h2v-2h-2Zm4 0v2h2v-2h-2Z"/></svg> Free practical tool</p>
-<h1 data-reveal-title>Recipe calories and macros calculator</h1>
+<div class="suite-hero-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5h12l-1 16H7L6 5Z"/><path d="M4 5h16M9 2v3m6-3v3M9 9h6m-6 4h6m-6 4h4"/></svg></div><h1 data-reveal-title>Recipe calories and macros calculator</h1>
 <p>Scale a recipe up or down and see the calories, protein, carbs and fat in each new serving—without redoing the math by hand.</p>
 </div>
 </section>
 <section class="recipe-work-section">
 <div class="container recipe-work-grid">
 <div class="tool recipe-work-main">
-<div class="toolbox">
+<div class="toolbox tool-workspace"><div class="tool-inputs">
 <h2>Scale a recipe or meal</h2>
 <p>Enter nutrition per original serving, then choose how many servings the recipe originally made and how many you want now.</p>
 <div class="form-grid">
@@ -468,7 +470,7 @@
 <input id="fat" type="number" min="0" step=".1" value="14">
 </div>
 </div>
-<div class="results" aria-live="polite">
+</div><aside class="tool-output" aria-label="Calculation results"><div class="results" aria-live="polite">
 <div class="result">
 <strong id="rCal">—</strong>calories per new serving</div>
 <div class="result">
@@ -480,7 +482,7 @@
 </div>
 <p class="note" id="factor">
 </p>
-</div>
+</aside></div>
 <details class="editorial-note recipe-assumptions">
 <summary>What this calculator assumes</summary>
 <p>Every ingredient is multiplied by the same factor and the finished recipe is divided evenly. Cooking loss, leftover sauce, ingredient substitutions, and database rounding can change the real result. Treat the output as a planning estimate.</p>
@@ -508,5 +510,5 @@
 <script src="js/lang.js?v=a1b7da8b2d">
 </script>
 <script>const ids=["orig","nextServ","cal","pro","carb","fat"];function n(id){return Math.max(0,Number(document.getElementById(id).value)||0)}function calc(){const o=n("orig"),s=n("nextServ");if(!o||!s)return;const totalFactor=o/s;document.getElementById("rCal").textContent=Math.round(n("cal")*totalFactor);document.getElementById("rPro").textContent=(n("pro")*totalFactor).toFixed(1);document.getElementById("rCarb").textContent=(n("carb")*totalFactor).toFixed(1);document.getElementById("rFat").textContent=(n("fat")*totalFactor).toFixed(1);document.getElementById("factor").textContent="Ingredient multiplier: "+(s/o).toFixed(2)+"×. Multiply every ingredient amount by this number. Nutrition shown assumes the entire scaled recipe is divided evenly into "+s+" servings."}ids.forEach(id=>document.getElementById(id).addEventListener("input",calc));calc();</script>
-<script src="js/calculator-suite.js?v=8c3ac272b6"></script><script src="js/unified-v7.js?v=6dfad8d7a7" defer></script></body>
+<script src="js/calculator-suite.js?v=1ab5b4acfc"></script><script src="js/unified-v7.js?v=d5d89f3f29" defer></script></body>
 </html>

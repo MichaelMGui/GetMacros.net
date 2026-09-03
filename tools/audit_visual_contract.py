@@ -135,7 +135,7 @@ def main() -> int:
             errors.append(f"{rel}: expected exactly one shared navigation utility group")
         if 'localStorage.getItem("gm-theme")||"light"' not in text:
             errors.append(f"{rel}: light-first theme boot is missing")
-        if '<meta name="theme-color" content="#f4f7f2">' not in text:
+        if '<meta name="theme-color" content="#e5ebe5">' not in text:
             errors.append(f"{rel}: light-first browser theme color is missing")
         if rel in CALCULATOR_PAGES:
             for asset in CALCULATOR_ASSETS:

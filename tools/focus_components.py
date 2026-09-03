@@ -47,6 +47,8 @@ def head(path: str, title: str, description: str, *, schema=None,
 <meta charset="utf-8">
 <script>if(self!==top){{try{{top.location=self.location;}}catch(e){{document.documentElement.style.display="none";}}}}</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="application-name" content="GetMacros">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(description, quote=True)}">
 <meta name="author" content="The GetMacros.net editorial team">
@@ -68,7 +70,7 @@ def head(path: str, title: str, description: str, *, schema=None,
 <link rel="icon" href="/favicon.svg?v=20260828b" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#f4f7f2">
+<meta name="theme-color" content="#e5ebe5">
 <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_VERSION}">
