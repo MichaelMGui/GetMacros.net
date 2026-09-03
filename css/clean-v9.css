@@ -2970,6 +2970,20 @@ body.trust-page:not(.about-page) :is(.policy,main > section:not(.page-hero)) :is
   body.trust-page:not(.about-page) .policy section,
   body.trust-page:not(.about-page) main > section:not(.page-hero):not(.policy-hero) > .container { padding:19px 0 !important; }
 }
+
+/* The header mark must stay recognizable against the pale light-mode bar. */
+html[data-theme="light"] body.site-v3 .site-header .brand-mark {
+  color:#174f37 !important;
+  background:#f7fff9 !important;
+  border:1px solid #82ac92 !important;
+  box-shadow:0 0 0 3px rgba(143,224,170,.18), 0 5px 14px rgba(12,54,34,.14) !important;
+  transform:none !important;
+}
+html[data-theme="light"] body.site-v3 .site-header .brand-mark svg {
+  width:30px !important;
+  height:30px !important;
+  filter:drop-shadow(0 1px 1px rgba(10,48,31,.2)) saturate(1.16);
+}
 @media (min-width:901px) { .home-launch-card { min-height:130px; } }
 @media (max-width:900px) {
   body.library-page .guide-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
