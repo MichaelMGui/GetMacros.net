@@ -2087,6 +2087,20 @@ html[data-theme] body.site-v3 .full-nav {
 html[data-theme] body.site-v3 .modern-brand,
 html[data-theme] body.site-v3 .full-nav > :is(a,button),
 html[data-theme] body.site-v3 .nav-group-trigger { color: #eef7f0 !important; }
+html[data-theme] body.site-v3 .full-nav :is(
+  .nav-group-trigger.active,.nav-group-trigger[aria-expanded="true"],
+  .nav-link.active,a[aria-current="page"]
+) {
+  color:#fff !important;
+  background:#2b7251 !important;
+  border-color:rgba(220,244,228,.28) !important;
+}
+html[data-theme] body.site-v3 .full-nav .nav-group.is-current > .nav-group-trigger,
+html[data-theme] body.site-v3.about-page .full-nav .nav-direct {
+  color:#fff !important;
+  background:#2b7251 !important;
+  border-color:rgba(220,244,228,.28) !important;
+}
 html[data-theme] body.site-v3 .brand-dot { color: #a6edbd !important; }
 html[data-theme] body.site-v3 .brand-mark {
   color: #216342 !important;
@@ -2603,6 +2617,359 @@ body.about-page .about-method-grid article > b { display:none !important; }
 body.home-studio .home-intro-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
 body.home-studio .home-intro h1 { max-width:12.5ch !important; font-size:clamp(3.1rem,5vw,4.75rem) !important; }
 html[data-theme] body.site-v3 main :is(.page-hero,.article-hero,.focus-page-hero,.guide-hub-hero,.search-hero,.focused-guide-hero,.calc-hub-hero,.tool-hero,.policy-hero) h1 { max-width:18ch !important; font-size:clamp(2.65rem,5vw,4.35rem) !important; }
+
+/* -------------------------------------------------------------------------
+   Precision pass — results, calculators, journals and public trust pages
+   ------------------------------------------------------------------------- */
+
+/* Light mode uses neutral paper and clearly separated controls. */
+html[data-theme="light"] body.site-v3 {
+  --quiet-paper:#f5f7f3;
+  --quiet-surface:#ffffff;
+  --quiet-surface-2:#eaf0eb;
+  --quiet-ink:#15241b;
+  --quiet-muted:#465b4f;
+  --quiet-line:#c8d4cb;
+  --quiet-green:#2b7954;
+  --quiet-green-strong:#205f42;
+  --quiet-green-soft:#e1efe6;
+  --quiet-shadow:0 14px 36px rgba(22,42,30,.065);
+}
+html[data-theme="light"] body.site-v3 main :is(
+  .quiz-card,.quiz-results,.single-macro-card,.calc-form,.results,.food-panel,
+  .blog-card,.chain-card,.policy section,.about-method-grid article,
+  .about-accountability-grid a,.about-boundary
+) { border-color:var(--quiet-line) !important; }
+html[data-theme="light"] body.site-v3 main :is(input,select,textarea) {
+  background:#fff !important;
+  border-color:#b9c8be !important;
+}
+
+/* Meal matches: the answer summary belongs above a compact card grid. */
+body.order-match-page .match-intro-grid.results-mode {
+  display:block !important;
+  max-width:1180px;
+}
+body.order-match-page .match-intro-grid.results-mode .match-intro-copy { display:none !important; }
+body.order-match-page .match-intro-grid.results-mode .match-live-quiz {
+  width:100%;
+  max-width:none;
+}
+body.order-match-page .results-mode .quiz-results {
+  padding:clamp(20px,3vw,32px) !important;
+}
+body.order-match-page .results-heading {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+  gap:20px !important;
+  align-items:end !important;
+  margin-bottom:18px !important;
+  padding-bottom:18px !important;
+  border-bottom:1px solid var(--quiet-line) !important;
+}
+body.order-match-page .results-heading h2 {
+  max-width:none !important;
+  margin:5px 0 7px !important;
+  font-size:clamp(2rem,4vw,3.3rem) !important;
+  line-height:1 !important;
+}
+body.order-match-page .results-heading .quiz-summary {
+  max-width:72ch !important;
+  margin:0 !important;
+  font-size:.94rem !important;
+  line-height:1.5 !important;
+}
+body.order-match-page .results-heading .btn { min-height:44px !important; }
+body.order-match-page .data-quality { display:none !important; }
+body.order-match-page .results-grid {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:12px !important;
+}
+body.order-match-page .meal-card {
+  display:flex !important;
+  flex-direction:column !important;
+  min-width:0 !important;
+  min-height:244px !important;
+  padding:17px !important;
+  border-radius:15px !important;
+}
+body.order-match-page .meal-card.top-match {
+  grid-column:auto !important;
+  background:color-mix(in srgb,var(--quiet-green-soft) 52%,var(--quiet-surface)) !important;
+  border-color:color-mix(in srgb,var(--quiet-green) 52%,var(--quiet-line)) !important;
+}
+body.order-match-page .meal-card-top { gap:10px !important; }
+body.order-match-page .meal-chain,
+body.order-match-page .meal-rank { font-size:.69rem !important; line-height:1.2 !important; }
+body.order-match-page .meal-card h3 {
+  margin:10px 0 12px !important;
+  font-size:clamp(1.05rem,1.8vw,1.28rem) !important;
+  line-height:1.18 !important;
+  text-wrap:balance;
+}
+body.order-match-page .meal-stats {
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:6px !important;
+}
+body.order-match-page .meal-metric {
+  min-width:0 !important;
+  padding:8px 6px !important;
+  border-radius:9px !important;
+}
+body.order-match-page .meal-metric b { font-size:.9rem !important; white-space:nowrap; }
+body.order-match-page .meal-metric small { font-size:.62rem !important; }
+body.order-match-page .meal-reason {
+  margin:10px 0 !important;
+  font-size:.78rem !important;
+  line-height:1.42 !important;
+}
+body.order-match-page .meal-card-actions {
+  gap:10px !important;
+  margin-top:auto !important;
+  padding-top:10px !important;
+}
+body.order-match-page .meal-card-actions :is(a,button) { font-size:.76rem !important; }
+body.order-match-page .results-more { display:block; margin:14px auto 0 !important; }
+body.order-match-page .result-controls {
+  margin-top:18px !important;
+  padding-top:16px !important;
+  border-top:1px solid var(--quiet-line) !important;
+}
+
+/* Journal art supports the introduction instead of becoming the page. */
+body.site-v3.journal-page .article-hero > .container.blog-hero-grid {
+  display:grid !important;
+  grid-template-columns:minmax(0,1.2fr) minmax(270px,.58fr) !important;
+  gap:clamp(30px,5vw,68px) !important;
+  align-items:center !important;
+}
+body.site-v3.journal-page .blog-hero-art {
+  width:min(100%,390px) !important;
+  margin:0 0 0 auto !important;
+  padding:12px !important;
+  background:var(--quiet-surface) !important;
+  border:1px solid var(--quiet-line) !important;
+  border-radius:18px !important;
+  box-shadow:none !important;
+}
+body.site-v3.journal-page .blog-hero-art img {
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:245px !important;
+  object-fit:contain !important;
+  border-radius:12px !important;
+}
+
+/* Full calculator: four deliberate panels keep Goal beside the basics. */
+body.calculators-v2 #macro-calculator .calc-wrap {
+  display:grid !important;
+  grid-template-columns:minmax(0,1.2fr) minmax(340px,.8fr) !important;
+  gap:18px !important;
+  align-items:start !important;
+  padding:0 !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+body.calculators-v2 #macro-calculator .calc-form {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:12px !important;
+  height:auto !important;
+  padding:0 !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+body.calculators-v2 #macro-calculator .calc-form fieldset {
+  min-width:0 !important;
+  margin:0 !important;
+  padding:14px !important;
+  background:var(--quiet-paper) !important;
+  border:1px solid var(--quiet-line) !important;
+  border-radius:13px !important;
+}
+body.calculators-v2 #macro-calculator .calc-form fieldset legend {
+  padding-inline:6px !important;
+  font-size:.75rem !important;
+  letter-spacing:.08em !important;
+  text-transform:uppercase;
+}
+body.calculators-v2 #macro-calculator .calc-form .field { margin-bottom:12px !important; }
+body.calculators-v2 #macro-calculator .calc-form .hint { font-size:.75rem !important; line-height:1.42 !important; }
+body.calculators-v2 #macro-calculator .height-units button {
+  min-width:0 !important;
+  padding-inline:8px !important;
+  font-size:.76rem !important;
+}
+body.calculators-v2 #macro-calculator .sex-choice-row {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:7px !important;
+}
+body.calculators-v2 #macro-calculator .sex-choice-row > label {
+  display:grid !important;
+  grid-template-columns:36px minmax(0,1fr) !important;
+  gap:7px !important;
+  min-width:0 !important;
+  padding:8px !important;
+}
+body.calculators-v2 #macro-calculator .sex-choice-row > label > span:last-child {
+  min-width:0;
+  font-size:.8rem !important;
+  white-space:nowrap !important;
+}
+body.calculators-v2 #macro-calculator :is(#macro-error,.calc-submit) { grid-column:1/-1; }
+body.calculators-v2 #macro-calculator .calc-submit { min-height:50px !important; }
+body.calculators-v2 #macro-results {
+  width:auto !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:20px !important;
+  background:var(--quiet-surface) !important;
+  border:1px solid var(--quiet-line) !important;
+  border-radius:18px !important;
+  box-shadow:none !important;
+}
+
+/* The three single-macro tools use the same compact rhythm. */
+body.calculators-v2 .single-macro-studio > .container { width:min(1180px,calc(100% - 40px)) !important; }
+body.calculators-v2 .single-macro-card { min-height:0 !important; padding:19px !important; }
+body.calculators-v2 .single-card-head { padding-bottom:12px !important; border-bottom:1px solid var(--quiet-line) !important; }
+body.calculators-v2 .single-card-copy { margin:12px 0 15px !important; }
+body.calculators-v2 .single-macro-form { flex:0 0 auto !important; gap:10px !important; margin:0 !important; }
+body.calculators-v2 .single-macro-form :is(input,select) { min-height:44px !important; }
+body.calculators-v2 .single-card-note { margin:0 !important; font-size:.76rem !important; line-height:1.4 !important; }
+body.calculators-v2 .single-macro-form .calc-submit { min-height:46px !important; margin-top:8px !important; }
+body.calculators-v2 .single-macro-result { min-height:54px !important; margin-top:14px !important; padding-top:12px !important; }
+
+/* Label comparison occupies the full form, with controls beneath both foods. */
+body.tools-page #compareForm { display:block !important; }
+body.tools-page #compareForm .compare-form { width:100% !important; }
+body.tools-page #compareForm .compare-actions {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+  gap:10px !important;
+  margin-top:16px !important;
+}
+body.tools-page #compareForm .compare-actions .btn {
+  width:auto !important;
+  min-height:48px !important;
+  margin:0 !important;
+}
+
+/* Restaurant index cards are roomy names, not inventory counters. */
+body.library-page .chain-grid { gap:13px !important; }
+body.library-page .chain-card {
+  min-height:88px !important;
+  padding:20px 22px !important;
+  align-items:center !important;
+}
+body.library-page .chain-card span { font-size:1.06rem !important; font-weight:800; }
+body.library-page .chain-card b { color:var(--quiet-green-strong) !important; font-size:1.25rem !important; }
+
+/* Public policy pages read like edited documents, not stacked template panels. */
+body.trust-page:not(.about-page) main > :is(.page-hero,.policy-hero) > .container {
+  width:min(860px,calc(100% - 40px)) !important;
+  margin-inline:auto !important;
+}
+body.trust-page:not(.about-page) main > :is(.page-hero,.policy-hero) h1 {
+  max-width:18ch !important;
+  font-size:clamp(2.5rem,5vw,4.2rem) !important;
+}
+body.trust-page:not(.about-page) main > :is(.page-hero,.policy-hero) p[style] {
+  color:var(--quiet-muted) !important;
+  font-size:.82rem !important;
+}
+body.trust-page:not(.about-page) .container.policy,
+body.trust-page:not(.about-page) main > section:not(.page-hero) > .container {
+  width:min(860px,calc(100% - 40px)) !important;
+  max-width:860px !important;
+  margin-inline:auto !important;
+}
+body.trust-page:not(.about-page) .policy { padding-block:30px 54px !important; }
+body.trust-page:not(.about-page) .policy section,
+body.trust-page:not(.about-page) main > section:not(.page-hero):not(.policy-hero) > .container {
+  padding:24px 0 !important;
+  background:transparent !important;
+  border:0 !important;
+  border-bottom:1px solid var(--quiet-line) !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+body.trust-page:not(.about-page) .policy h2,
+body.trust-page:not(.about-page) main > section:not(.page-hero) h2 {
+  margin:0 0 10px !important;
+  font-size:clamp(1.35rem,2.4vw,1.7rem) !important;
+  line-height:1.15 !important;
+}
+body.trust-page:not(.about-page) :is(.policy,main > section:not(.page-hero)) :is(p,li) {
+  max-width:76ch;
+  font-size:1rem !important;
+  line-height:1.72 !important;
+}
+
+@media (max-width:900px) {
+  body.site-v3.journal-page .article-hero > .container.blog-hero-grid {
+    grid-template-columns:minmax(0,1fr) minmax(220px,.45fr) !important;
+    gap:24px !important;
+  }
+  body.calculators-v2 #macro-calculator .calc-wrap { grid-template-columns:1fr !important; }
+  body.calculators-v2 #macro-results { min-height:180px !important; }
+}
+
+@media (max-width:700px) {
+  body.order-match-page .results-grid { grid-template-columns:1fr !important; gap:9px !important; }
+  body.order-match-page .meal-card { min-height:214px !important; padding:14px !important; }
+  body.order-match-page .meal-card h3 { margin:8px 0 9px !important; }
+  body.order-match-page .meal-reason { margin:8px 0 !important; }
+  body.site-v3.journal-page .article-hero > .container.blog-hero-grid { grid-template-columns:1fr !important; }
+  body.site-v3.journal-page .blog-hero-art { width:min(100%,260px) !important; margin:4px 0 0 !important; }
+  body.site-v3.journal-page .blog-hero-art img { max-height:160px !important; }
+  body.calculators-v2 #macro-calculator .calc-form { grid-template-columns:1fr !important; }
+  body.calculators-v2 #macro-calculator :is(#macro-error,.calc-submit) { grid-column:auto; }
+}
+
+@media (max-width:620px) {
+  body.order-match-page .match-intro-grid.results-mode { width:calc(100% - 24px) !important; }
+  body.order-match-page .results-mode .quiz-results { padding:14px !important; border-radius:16px !important; }
+  body.order-match-page .results-heading {
+    grid-template-columns:1fr auto !important;
+    gap:10px !important;
+    margin-bottom:12px !important;
+    padding-bottom:12px !important;
+  }
+  body.order-match-page .results-heading h2 { font-size:1.8rem !important; }
+  body.order-match-page .results-heading .quiz-summary { font-size:.8rem !important; line-height:1.4 !important; }
+  body.order-match-page .results-heading .btn { min-height:40px !important; padding:8px 10px !important; font-size:.75rem !important; }
+  body.order-match-page .meal-card { min-height:202px !important; }
+  body.order-match-page .meal-card h3 { font-size:1rem !important; }
+  body.order-match-page .meal-reason { display:none !important; }
+  body.order-match-page .meal-card-actions {
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) auto !important;
+    align-items:center !important;
+  }
+  body.order-match-page .meal-card-actions .meal-save { min-height:40px !important; padding:8px 10px !important; }
+  body.order-match-page .result-controls { gap:12px !important; }
+  body.calculators-v2 .single-macro-studio > .container { width:min(100% - 24px,1180px) !important; }
+  body.tools-page #compareForm .compare-actions { grid-template-columns:1fr !important; }
+  body.tools-page #compareForm .compare-actions .btn { width:100% !important; }
+  body.library-page .chain-card { min-height:76px !important; padding:17px !important; }
+  body.trust-page:not(.about-page) main > :is(.page-hero,.policy-hero) > .container,
+  body.trust-page:not(.about-page) .container.policy,
+  body.trust-page:not(.about-page) main > section:not(.page-hero) > .container {
+    width:min(100% - 28px,860px) !important;
+  }
+  body.trust-page:not(.about-page) .policy { padding-block:16px 38px !important; }
+  body.trust-page:not(.about-page) .policy section,
+  body.trust-page:not(.about-page) main > section:not(.page-hero):not(.policy-hero) > .container { padding:19px 0 !important; }
+}
 @media (min-width:901px) { .home-launch-card { min-height:130px; } }
 @media (max-width:900px) {
   body.library-page .guide-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
