@@ -3,8 +3,8 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/slowf/.cache/c
 (async()=>{
  const browser=await chromium.launch({channel:'msedge',headless:true});
  const page=await browser.newPage({viewport:{width:390,height:900},reducedMotion:'reduce'});
- await page.route('https://**/*',r=>r.abort());
- const goto=file=>page.goto('http://127.0.0.1:4173/'+file,{waitUntil:'domcontentloaded'});
+ await require('./browser-fixture.cjs').localAssets(page);
+ const goto=file=>page.goto('http://127.0.0.1:4173/'+file,{waitUntil:'load'});
  await goto('recipe-macro-scaler.html');
  assert.equal(await page.locator('#rCal').textContent(),'300');
  await page.selectOption('#recipe-mode','scale');

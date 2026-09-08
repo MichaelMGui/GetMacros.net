@@ -10,7 +10,7 @@
         <a class="home-text-link" href="restaurant-meal-guides.html">Browse restaurants <span aria-hidden="true">→</span></a>
       </div>
     </div>
-    <div class="home-play-art"><img src="images/meal-play.svg" width="600" height="460" alt="A colourful plate with greens, chicken, tomatoes and grains beside a calculator"><span class="play-sticker">A little clarity. A lot of flavour.</span></div>
+    <div class="home-play-art"><img src="images/meal-play.svg" width="600" height="460" alt="A colourful plate with greens, chicken, tomatoes and grains beside a calculator"></div>
   </div>
 <div class="container home-tool-dock">    <nav class="home-launcher" aria-label="Choose a GetMacros tool">
       <a href="restaurant-meal-finder.html" class="home-launch-card is-primary"><span class="home-launch-icon"><svg aria-hidden="true"><use href="icon-sprite.svg?v=b9ffe5e9b4#icon-quiz"></use></svg></span><span><small>Start here</small><strong>Find a healthy fast-food meal</strong><b>Match meals to cutting, bulking, protein and dietary needs.</b></span><i aria-hidden="true">→</i></a>

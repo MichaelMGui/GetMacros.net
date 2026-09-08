@@ -2,8 +2,8 @@ const assert=require('node:assert/strict');
 const {chromium}=require('C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 let b;
 (async()=>{
- b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage({viewport:{width:768,height:1024},reducedMotion:'reduce'});await p.route('https://**/*',r=>r.abort());
- const go=f=>p.goto('http://127.0.0.1:4173/'+f,{waitUntil:'domcontentloaded'});
+ b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage({viewport:{width:768,height:1024},reducedMotion:'reduce'});await require('./browser-fixture.cjs').localAssets(p);
+ const go=f=>p.goto('http://127.0.0.1:4173/'+f,{waitUntil:'load'});
  await go('budget-meal-builder.html');
  for(const value of ['Oats','Peanut or seed butter','Frozen or dried fruit'])await p.locator('label').filter({has:p.locator('input[value="'+value+'"]')}).click();
  await p.locator('#builder [type="submit"]').click();

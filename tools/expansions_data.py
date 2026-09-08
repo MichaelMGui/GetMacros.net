@@ -47,17 +47,7 @@ EXPANSIONS = {
   "rather than current weight. A 120 kg person targeting 2.0 g/kg would land at 240 g a day, "
   "which is impractical and unnecessary; calculating against an 85 kg goal weight gives 170 g, "
   "which is both achievable and sufficient.</p>"),
- ("Spreading it across the day",
-  "<p>Total daily protein matters most. Distribution matters second, and the effect is real "
-  "but smaller than the internet suggests. Muscle protein synthesis responds to a meal "
-  "containing roughly 0.4 g/kg of protein, which is about 25&ndash;30 g for most adults, and "
-  "the response lasts a few hours before returning to baseline.</p>"
-  "<p>The practical consequence is that three or four meals each clearing that threshold beat "
-  "one enormous dinner and two token meals, even at identical daily totals. Most people who "
-  "miss their target are not short at dinner; they are eating 8 g at breakfast.</p>"
-  "<p>There is no upper limit on how much protein the body can absorb from one meal. Absorption "
-  "and use are different questions: a 60 g serving is absorbed, the surplus simply goes toward "
-  "energy or other tissues rather than extra muscle.</p>"),
+ ('Spreading it across the day', '<p>Spreading protein across meals can make a daily target easier to reach. It does not mean that protein above a fixed per-meal threshold is wasted.</p><p>A controlled study found a larger and longer muscle-protein synthesis response after 100 g of protein than after 25 g following exercise. This was an acute experiment, not proof that one large serving produces more muscle over months. Read the <a href="https://pubmed.ncbi.nlm.nih.gov/38118410/">original study</a> and our <a href="how-much-protein-can-your-body-absorb.html">protein absorption guide</a> for the distinction between absorption, short-term responses and long-term results.</p>'),
  ("When to get a target from a clinician instead",
   "<p>Higher protein intakes are well tolerated in healthy people; the concern about protein "
   "harming healthy kidneys has not held up in controlled trials. That finding does not extend "

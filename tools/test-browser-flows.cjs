@@ -5,8 +5,8 @@ let browser;
 (async()=>{
  browser=await chromium.launch({channel:'msedge',headless:true});
  const p=await browser.newPage({viewport:{width:390,height:900},reducedMotion:'reduce'});
- await p.route('https://**/*',r=>r.abort());
- const goto=f=>p.goto('http://127.0.0.1:4173/'+f,{waitUntil:'domcontentloaded'});
+ await require('./browser-fixture.cjs').localAssets(p);
+ const goto=f=>p.goto('http://127.0.0.1:4173/'+f,{waitUntil:'load'});
  await goto('restaurant-meal-finder.html');
  await p.locator('label').filter({has:p.locator('input[data-facet="goal"][value="protein"]')}).click();
  for(let i=0;i<5;i++)await p.locator('.quiz-continue').click();

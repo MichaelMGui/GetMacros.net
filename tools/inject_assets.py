@@ -133,7 +133,7 @@ def main():
 
         # The default is light; unified-v7.js updates this when dark is chosen.
         out = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">',
-                     '<meta name="theme-color" content="#f2fcf6">', out)
+                     '<meta name="theme-color" content="#f7faf8">', out)
 
         out = re.sub(
             r'<script>try\{var t=localStorage\.getItem\(["\']gm-theme["\']\);if\(t\)document\.documentElement\.setAttribute\(["\']data-theme["\'],t\);\}catch\(e\)\{\}</script>\s*',
