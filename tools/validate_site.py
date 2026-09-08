@@ -214,7 +214,7 @@ def main() -> int:
                 errors.append(f"{path}: verified AdSense loader missing")
             required_nav = (
                 ("healthy-fast-food.html", "Healthy Fast Food"),
-                ("restaurant-meal-finder.html", "Healthy Order Match"),
+                ("restaurant-meal-finder.html", "Fast-food meal finder"),
                 ("calculators.html", "Macro Calculator"),
                 ("articles.html", "Nutrition Guides"),
                 ("about.html", "About"),
@@ -367,7 +367,7 @@ def main() -> int:
         # the same claim and has to stay just as current.
         "about.html": r"83(?:</strong><small>|\s+)tracked menu options",
         "healthy-fast-food.html": r"83 tracked menu options",
-        "restaurant-meal-finder.html": r"83 tracked menu options",
+        "restaurant-meal-finder.html": r"83 (?:tracked )?menu options",
     }
     for path, claim in count_claims.items():
         if not re.search(claim, pages.get(path, ("", PageParser()))[0]):
@@ -418,7 +418,7 @@ def main() -> int:
             errors.append(f"{page_path}: official {chain} source missing")
         if "data-chain-finder" not in page_text or "js/chain-meal-finder.js?v=" not in page_text:
             errors.append(f"{page_path}: restaurant-only meal matcher missing")
-        if "Find your best meal across all restaurants" not in page_text:
+        if "Compare meals across all restaurants" not in page_text:
             errors.append(f"{page_path}: all-restaurant matcher route missing")
         for meal in chain_meals:
             if meal["name"] not in page_text:

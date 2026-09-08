@@ -235,16 +235,12 @@ def build_search(final: list[dict]) -> None:
     # The five things most people arrive wanting. Shown before the library so
     # the page answers "what is here" before it answers "what matches".
     starts = [
-        ("restaurant-meal-finder.html", "Match", "Healthy Order Match",
-         "Answer five questions and get ranked meals from 15 chains."),
-        ("calculators.html", "Targets", "Free macro calculator",
-         "Daily calories, protein, carbs and fat, with the assumptions shown."),
-        ("healthy-fast-food.html", "Compare", "Healthy fast food",
-         "83 complete orders ranked for cutting, bulking and high protein."),
-        ("restaurant-meal-guides.html", "Browse", "Restaurant guides",
-         "Every chain we track, with official nutrition sources."),
-        ("articles.html", "Learn", "Nutrition guides",
-         "What the numbers mean, and how to use them at the next meal."),
+        ("restaurant-meal-finder.html", "Eating out", "Find a fast-food meal",
+         "Compare meals for your goals and dietary needs."),
+        ("calculators.html", "Your targets", "Calculate daily macros",
+         "Estimate calories, protein, carbs and fat."),
+        ("articles.html", "Nutrition", "Understand food and macros",
+         "Answers about protein, calories and everyday eating."),
     ]
     start_tiles = "".join(
         f'<a class="search-start-tile" href="{path}">'
@@ -282,6 +278,13 @@ def build_search(final: list[dict]) -> None:
         hits = []
         for item in group:
             haystack = f'{item["title"]} {item["h1"]} {item["meta"]} {section}'.casefold()
+            source=(ROOT / str(item['path'])).read_text(encoding='utf-8')
+            main=re.search(r'<main\b.*?</main>',source,re.S)
+            if main:
+                content=re.sub(r'<(?:script|style)\b.*?</(?:script|style)>','',main[0],flags=re.S)
+                # Search page text as well as metadata, without repeating whole articles.
+                vocabulary=sorted(set(re.findall(r'[a-z0-9]+',clean_text(content).casefold())))
+                haystack+=' '+' '.join(vocabulary)
             hits.append(
                 f'<a class="search-hit" href="{item["path"]}" '
                 f'data-search="{html.escape(haystack, quote=True)}">'
@@ -302,54 +305,12 @@ def build_search(final: list[dict]) -> None:
     # Keep the unfiltered library genuinely short while showing its range.
     # Three entries from each early category avoids opening with a wall of
     # restaurant pages; the complete index stays behind one explicit control.
-    script = """(function(){
-var q=document.getElementById('site-search'),
-    hits=[].slice.call(document.querySelectorAll('.search-hit')),
-    groups=[].slice.call(document.querySelectorAll('[data-group]')),
-    status=document.getElementById('search-status'),
-    toggle=document.getElementById('search-results-toggle'),
-    startBlock=document.getElementById('search-start'),
-    limit=12,perGroup=3,expanded=false;
-function words(value){return value.toLowerCase().match(/[a-z0-9]+/g)||[];}
-function run(){
-  var terms=words(q.value),matched=0,shown=0;
-  groups.forEach(function(group){
-    var rows=[].slice.call(group.querySelectorAll('.search-hit')),live=0,kept=0;
-    rows.forEach(function(hit){
-      var hay=words(hit.dataset.search).join(' '),
-          match=!terms.length||terms.every(function(t){return hay.indexOf(t)>-1;});
-      if(match)live++;
-      var visible=match&&(terms.length||expanded||(shown<limit&&kept<perGroup));
-      if(visible){kept++;shown++;}
-      hit.hidden=!visible;
-    });
-    matched+=live;
-    var count=group.querySelector('[data-count]');
-    if(count)count.textContent=live;
-    var more=group.querySelector('[data-more]');
-    if(more){var rest=live-kept;more.hidden=rest<1;more.textContent='+'+rest+' more in this section';}
-    group.hidden=!live||(!terms.length&&!expanded&&!kept);
-  });
-  if(startBlock)startBlock.hidden=!!terms.length;
-  if(terms.length)status.textContent=matched?matched+' match'+(matched===1?'':'es')+' for \u201c'+q.value.trim()+'\u201d':'Nothing matches \u201c'+q.value.trim()+'\u201d yet. Try a chain, a macro or a tool.';
-  else status.textContent=expanded?'Showing all '+matched+' pages':'Showing '+shown+' of '+matched+' pages';
-  toggle.hidden=!!terms.length||matched<=limit;
-  toggle.setAttribute('aria-expanded',String(expanded));
-  toggle.textContent=expanded?'Show fewer':'Show all '+matched+' pages';
-}
-q.addEventListener('input',function(){expanded=false;run();});
-toggle.addEventListener('click',function(){
-  expanded=!expanded;run();
-});
-var initial=new URLSearchParams(location.search).get('q');
-if(initial)q.value=initial;
-run();
-})();"""
+    script = (ROOT / 'js/site-search.js').read_text(encoding='utf-8')
     body = f'''{head("search.html", title, desc)}<body class="site-v3 recovery-page search-page">{nav()}
-<main id="main-content"><section class="search-hero"><div class="container"><p class="eyebrow">Search GetMacros</p><h1>Find a restaurant, tool or nutrition guide</h1><p>Every page on GetMacros in one place: healthy fast food, macro tools, and the guides that help you use them.</p>
-<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try &ldquo;Chipotle&rdquo; or &ldquo;high protein&rdquo;" autocomplete="off"></label><p id="search-status" aria-live="polite">Showing 12 of {total} pages</p></div></section>
-<section class="search-start" id="search-start"><div class="container"><div class="search-start-head"><p class="eyebrow">Start here</p><h2>The five people ask for most</h2></div><div class="search-start-grid">{start_tiles}</div></div></section>
-<section class="search-library"><div class="container"><div class="search-library-head"><p class="eyebrow">The whole library</p><h2>Everything, grouped by what it does</h2></div>{"".join(blocks)}<div class="search-results-actions"><button class="search-results-toggle" id="search-results-toggle" type="button" aria-controls="search-results" aria-expanded="false">Show all {total} pages</button></div></div></section></main>{footer()}
+<main id="main-content"><section class="search-hero"><div class="container"><p class="eyebrow">Search GetMacros</p><h1>What would you like help with?</h1><p>Find a meal, calculate your macros or get a nutrition answer.</p>
+<label class="search-box" for="site-search"><span>What are you looking for?</span><input id="site-search" type="search" placeholder="Try &ldquo;high protein at Chipotle&rdquo;" autocomplete="off"></label><div class="search-suggestions" aria-label="Suggested searches"><button type="button" data-search-query="high protein">High protein</button><button type="button" data-search-query="Chipotle">Chipotle meals</button><button type="button" data-search-query="calorie calculator">Calorie calculator</button><button type="button" data-search-query="creatine">Creatine</button><button id="search-clear" type="button" hidden>Clear search</button></div><p id="search-status" aria-live="polite">Showing 12 of {total} pages</p></div></section>
+<section class="search-start" id="search-start"><div class="container"><div class="search-start-head"><p class="eyebrow">Start here</p><h2>Choose a starting point</h2></div><div class="search-start-grid">{start_tiles}</div></div></section>
+<section class="search-library" id="search-results"><div class="container"><div class="search-library-head"><p class="eyebrow">Results and topics</p><h2>Browse by topic</h2></div>{"".join(blocks)}<div class="search-results-actions"><button class="search-results-toggle" id="search-results-toggle" type="button" aria-controls="search-results" aria-expanded="false">Show all {total} pages</button></div></div></section></main>{footer()}
 <script>{script}</script></body></html>'''
     (ROOT / "search.html").write_text(body, encoding="utf-8")
 

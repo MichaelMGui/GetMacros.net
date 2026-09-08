@@ -16,7 +16,7 @@ let b;
  await go('weight-goal-timeline-calculator.html');await p.locator('#wg-go').click();assert.equal(await p.locator('#wg-results').isVisible(),true);assert.doesNotMatch(await p.locator('#wg-results').innerText(),/NaN|Infinity/);
  await p.fill('#wg-goal','200');await p.locator('#wg-go').click();assert.match(await p.locator('#wg-error').innerText(),/same/);assert.equal(await p.locator('#wg-results').isVisible(),false);
  console.log('PASS weight timeline: normal result and equal-weight validation');
- await go('search.html');await p.fill('#site-search','Chipotle');assert.ok(await p.locator('.search-hit:visible').count()>0);await p.fill('#site-search','zzzznonexistentxyz');assert.equal(await p.locator('.search-hit:visible').count(),0);await p.fill('#site-search','');assert.ok(await p.locator('.search-hit:visible').count()>0);
+ await go('search.html');await p.fill('#site-search','Chipotle');assert.ok(await p.locator('.search-hit:visible').count()>0);await p.fill('#site-search','zzzznonexistentxyz');assert.equal(await p.locator('.search-hit:visible').count(),0);await p.fill('#site-search','');assert.equal(await p.locator('.search-hit:visible').count(),0);assert.equal(await p.locator('.search-start-tile:visible').count(),3);
  console.log('PASS search: match, no results, clear');
  await go('index.html');await p.screenshot({path:'design/home-tablet-final.png'});
  assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

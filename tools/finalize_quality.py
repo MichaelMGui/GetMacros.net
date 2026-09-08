@@ -37,5 +37,7 @@ for path in ROOT.glob('*.html'):
     text=re.sub(r'<link rel="stylesheet" href="css/tide-motion\.css(?:\?[^"]*)?">','',text)
     text=re.sub(r'<script[^>]*src="js/tide-motion\.js(?:\?[^"]*)?"[^>]*>\s*</script>','',text)
     text=text.replace('</head>','<link rel="stylesheet" href="css/tide-motion.css"></head>',1)
+    text=re.sub(r'<link rel="stylesheet" href="css/workspaces\.css(?:\?[^"]*)?">','',text)
+    text=text.replace('</head>','<link rel="stylesheet" href="css/workspaces.css"></head>',1)
     text=text.replace('</body>','<script src="js/tide-motion.js" defer></script></body>',1)
     path.write_text(text,encoding='utf-8')

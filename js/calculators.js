@@ -69,8 +69,11 @@
   }
 
   function animateBars(container) {
-    if (reduceMotion) return;
     var bars = container.querySelectorAll("[data-target-width]");
+    if (reduceMotion || document.documentElement.classList.contains('tide-motion-off')) {
+      bars.forEach(function (bar) { bar.style.width = bar.getAttribute('data-target-width') + '%'; });
+      return;
+    }
     bars.forEach(function (b) {
       b.style.width = "0%";
     });
@@ -220,7 +223,7 @@
       results.innerHTML =
         '<div class="result-total">' +
           '<div class="num" data-count="' + r.totalCals + '">' + fmt(r.totalCals) + '</div>' +
-          '<div class="label">calories / day &middot; BMR ' + fmt(r.bmr) + ' &middot; TDEE ' + fmt(r.tdee) + '</div>' +
+          '<div class="label">calories per day</div>' +
         '</div>' +
         '<div class="macro-bar" aria-hidden="true">' +
           '<span class="protein" data-target-width="' + pPct + '" style="width:0%"></span>' +
@@ -229,7 +232,8 @@
         '</div>' +
         macroRow("protein", "Protein", r.proteinG, r.proteinCals, pPct) +
         macroRow("fat", "Fat", r.fatG, r.fatCals, fPct) +
-        macroRow("carbs", "Carbohydrate", r.carbG, r.carbCals, cPct);
+        macroRow("carbs", "Carbohydrate", r.carbG, r.carbCals, cPct) +
+        '<details class="work-result-note"><summary>How this estimate is calculated</summary><p>Estimated resting needs: ' + fmt(r.bmr) + ' calories. Estimated daily energy use, including activity: ' + fmt(r.tdee) + ' calories. Your selected goal adjusts the daily target.</p></details>';
 
       animateCount(results.querySelector(".num"), r.totalCals);
       results.querySelectorAll(".grams").forEach(function (el) {
