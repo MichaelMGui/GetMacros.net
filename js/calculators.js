@@ -93,18 +93,35 @@
 
     function setUnitGroup(buttons, value, current) {
       buttons.forEach(function (b) {
-        b.classList.toggle("active", b.dataset.weightUnit === value || b.dataset.heightUnit === value);
+        var active = b.dataset.weightUnit === value || b.dataset.heightUnit === value;
+        b.classList.toggle("active", active);
+        b.setAttribute("aria-pressed", String(active));
       });
       return value;
     }
 
     weightUnitButtons.forEach(function (btn) {
       btn.addEventListener("click", function () {
+        var input = document.getElementById("weight");
+        var nextUnit = btn.dataset.weightUnit;
+        if (nextUnit !== weightUnit && input.value !== "" && Number.isFinite(Number(input.value))) {
+          var kg = toKg(Number(input.value), weightUnit);
+          input.value = (nextUnit === "lb" ? kg * LB_PER_KG : kg).toFixed(1);
+        }
         weightUnit = setUnitGroup(weightUnitButtons, btn.dataset.weightUnit);
         document.getElementById("weight-unit-label").textContent = weightUnit === "lb" ? "lb" : "kg";
       });
     });
     function setHeightUnit(unit) {
+      if (unit !== heightUnit) {
+        var feet = document.getElementById("height-ft"), inches = document.getElementById("height-in"), cm = document.getElementById("height-cm");
+        if (unit === "cm" && feet.value !== "") cm.value = Math.round(toCm(Number(feet.value), "ftin", Number(inches.value)));
+        else if (unit === "ftin" && cm.value !== "") {
+          var totalInches = Math.round(Number(cm.value) * IN_PER_CM);
+          feet.value = Math.floor(totalInches / 12);
+          inches.value = totalInches % 12;
+        }
+      }
       heightUnit = setUnitGroup(heightUnitButtons, unit);
       var cmField = document.getElementById("height-cm-field");
       var feetField = document.getElementById("height-ftin-field");
@@ -124,6 +141,7 @@
       btn.addEventListener("click", function () { setHeightUnit(btn.dataset.heightUnit); });
     });
     setHeightUnit("ftin");
+    setUnitGroup(weightUnitButtons, "lb");
 
     macroForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -150,7 +168,7 @@
       }
       var weightKg = toKg(weightRaw, weightUnit);
 
-      if (!age || age < 14 || age > 100 || !weightKg || weightKg < 30 || weightKg > 300 || !heightCm || heightCm < 120 || heightCm > 230) {
+      if (!age || age < 18 || age > 100 || !weightKg || weightKg < 30 || weightKg > 300 || !heightCm || heightCm < 120 || heightCm > 230) {
         errorBox.textContent = "Please double-check your inputs — age, weight, and height look out of range.";
         errorBox.hidden = false;
         return;
@@ -267,11 +285,18 @@
   if (pcForm) {
     var pcUnit = "lb";
     pcForm.querySelectorAll("[data-pc-unit]").forEach(function (btn) {
+      btn.setAttribute('aria-pressed',String(btn.getAttribute('data-pc-unit')===pcUnit));
       btn.addEventListener("click", function () {
+        var input=document.getElementById('protein-weight'),next=btn.getAttribute('data-pc-unit');
+        if(next!==pcUnit&&input.value!==''&&Number.isFinite(Number(input.value))){
+          var kg=toKg(Number(input.value),pcUnit);input.value=(next==='lb'?kg*LB_PER_KG:kg).toFixed(1);
+        }
         pcForm.querySelectorAll("[data-pc-unit]").forEach(function (b) {
           b.classList.remove("active");
+          b.setAttribute('aria-pressed','false');
         });
         btn.classList.add("active");
+        btn.setAttribute('aria-pressed','true');
         pcUnit = btn.getAttribute("data-pc-unit");
         document.getElementById("protein-weight-unit").textContent = pcUnit;
       });
@@ -350,4 +375,17 @@
         '<div class="macro-result-row"><span>Upper bound (65%)</span><span class="amounts"><span class="grams">' + fmt(high) + ' g</span><br><span class="cals">' + fmt(cals * 0.65) + ' cal</span></span></div>';
     });
   }
+
+  // A result must never silently describe inputs the visitor has changed.
+  [['macro-form','macro-results'],['protein-calc-form','protein-calc-results'],['fat-form','fat-results'],['carb-calc-form','carb-calc-results']].forEach(function(pair){
+    var form=document.getElementById(pair[0]),output=document.getElementById(pair[1]);
+    if(!form||!output)return;
+    function invalidate(){
+      output.classList.add('empty');
+      output.innerHTML='<p class="result-placeholder">Update your details, then calculate to see your current result.</p>';
+    }
+    form.addEventListener('input',invalidate);
+    form.addEventListener('invalid',invalidate,true);
+    form.querySelectorAll('[data-weight-unit],[data-height-unit],[data-pc-unit]').forEach(function(button){button.addEventListener('click',invalidate);});
+  });
 })();

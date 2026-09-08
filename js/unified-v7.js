@@ -76,7 +76,7 @@
         if (label) label.textContent = dark ? "Light" : "Dark";
       });
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", dark ? "#0a3a26" : "#e5ebe5");
+      if (meta) meta.setAttribute("content", dark ? "#102723" : "#f6f4ec");
     }
     apply(initial === "dark" ? "dark" : "light", false);
     buttons.forEach(function (button) {
@@ -142,8 +142,11 @@
     });
     document.addEventListener("keydown", function (event) {
       if (event.key !== "Escape") return;
+      var openGroup = nav.querySelector('.nav-group.is-open');
+      var groupTrigger = openGroup && openGroup.querySelector('.nav-group-trigger');
       var wasOpen = document.body.classList.contains("nav-open");
       setNav(false);
+      if (!wasOpen && groupTrigger) groupTrigger.focus({preventScroll:true});
       if (wasOpen && toggle) {
         try { toggle.focus({ preventScroll: true }); }
         catch (error) { toggle.focus(); }
@@ -274,7 +277,8 @@
     try { accessibility(); } catch (error) {}
     try { compactRankings(); } catch (error) {}
     try { titleReveals(); } catch (error) {}
-    try { reveals(); } catch (error) {}
+    // Tide owns entrances; retire the legacy observer to avoid double motion.
+    document.querySelectorAll('.studio-reveal').forEach(item => item.classList.add('is-visible'));
     try { pointerLight(); } catch (error) {}
   }
 

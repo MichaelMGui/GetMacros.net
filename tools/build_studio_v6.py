@@ -254,10 +254,7 @@ if _tools:
 # The homepage is now intentionally hand-composed around three real entry
 # points. Preserve that reviewed markup instead of reviving the retired demo
 # ticket and hidden prototype sections when this maintenance script is rerun.
-_current_home = (ROOT / "index.html").read_text(encoding="utf-8")
-_current_main = re.search(r'<main id="main-content">[\s\S]*?</main>', _current_home)
-if _current_main:
-    HOME_MAIN = _current_main.group(0)
+HOME_MAIN = (ROOT / 'tools/homepage-main.inc').read_text(encoding='utf-8').strip()
 
 RESTAURANT_FILES = {
     "cava-healthy-meals-macros.html", "chick-fil-a-healthy-meals-macros.html",

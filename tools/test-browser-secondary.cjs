@@ -1,0 +1,25 @@
+const assert=require('node:assert/strict');
+const {chromium}=require('C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+let b;
+(async()=>{
+ b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage({viewport:{width:768,height:1024},reducedMotion:'reduce'});await p.route('https://**/*',r=>r.abort());
+ const go=f=>p.goto('http://127.0.0.1:4173/'+f,{waitUntil:'domcontentloaded'});
+ await go('budget-meal-builder.html');
+ for(const value of ['Oats','Peanut or seed butter','Frozen or dried fruit'])await p.locator('label').filter({has:p.locator('input[value="'+value+'"]')}).click();
+ await p.locator('#builder [type="submit"]').click();
+ assert.match(await p.locator('#output .meal-card').first().innerText(),/Fruit and nut oats/);
+ assert.doesNotMatch(await p.locator('#output .meal-card').first().innerText(),/needs [123] more/);
+ await p.screenshot({path:'design/budget-tablet.png',fullPage:true});
+ await p.locator('#builder [type="reset"]').click();
+ await p.waitForFunction(()=>document.querySelector('#output').textContent.includes('Select ingredients'));
+ console.log('PASS budget builder: compatible complete meal, distinct ideas, reset');
+ await go('weight-goal-timeline-calculator.html');await p.locator('#wg-go').click();assert.equal(await p.locator('#wg-results').isVisible(),true);assert.doesNotMatch(await p.locator('#wg-results').innerText(),/NaN|Infinity/);
+ await p.fill('#wg-goal','200');await p.locator('#wg-go').click();assert.match(await p.locator('#wg-error').innerText(),/same/);assert.equal(await p.locator('#wg-results').isVisible(),false);
+ console.log('PASS weight timeline: normal result and equal-weight validation');
+ await go('search.html');await p.fill('#site-search','Chipotle');assert.ok(await p.locator('.search-hit:visible').count()>0);await p.fill('#site-search','zzzznonexistentxyz');assert.equal(await p.locator('.search-hit:visible').count(),0);await p.fill('#site-search','');assert.ok(await p.locator('.search-hit:visible').count()>0);
+ console.log('PASS search: match, no results, clear');
+ await go('index.html');await p.screenshot({path:'design/home-tablet-final.png'});
+ assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ assert.equal(await p.locator('.home-intro').evaluate(e=>getComputedStyle(e,'::before').animationName),'none');
+ console.log('PASS tablet homepage and reduced motion');
+})().catch(e=>{console.error(e);process.exitCode=1}).finally(async()=>{if(b)await b.close()});

@@ -29,8 +29,10 @@ SHEETS = [
     "css/editorial-v8.css",
     # Direction "Clean" — redefines every token system, so it must be last.
     "css/clean-v9.css",
+    "css/tide.css",
+    "css/tide-motion.css",
 ]
-SCRIPTS = ["js/unified-v7.js"]
+SCRIPTS = ["js/unified-v7.js", "js/tide-motion.js"]
 ASSET_VERSION = "20260828g"
 
 # Legacy scroll-reveal. It sets opacity:0 on `main > section` and relies
@@ -74,7 +76,7 @@ def ensure_header_sheet(text, prefix, version):
 def main():
     os.chdir(ROOT)
     pages = sorted(glob.glob("*.html")) + [
-        path for path in sorted(glob.glob("*/*.html")) if not path.startswith("design/")
+        path for path in sorted(glob.glob("*/*.html")) if not path.replace("\\", "/").startswith("design/")
     ]
     touched = 0
     for f in pages:
@@ -131,7 +133,7 @@ def main():
 
         # The default is light; unified-v7.js updates this when dark is chosen.
         out = re.sub(r'<meta name="theme-color" content="#[0-9a-fA-F]{6}">',
-                     '<meta name="theme-color" content="#f4f7f2">', out)
+                     '<meta name="theme-color" content="#f6f4ec">', out)
 
         out = re.sub(
             r'<script>try\{var t=localStorage\.getItem\(["\']gm-theme["\']\);if\(t\)document\.documentElement\.setAttribute\(["\']data-theme["\'],t\);\}catch\(e\)\{\}</script>\s*',
@@ -158,7 +160,7 @@ def liquid_heroes():
     """
     n = 0
     pages = sorted(glob.glob("*.html")) + [
-        path for path in sorted(glob.glob("*/*.html")) if not path.startswith("design/")
+        path for path in sorted(glob.glob("*/*.html")) if not path.replace("\\", "/").startswith("design/")
     ]
     for f in pages:
         c = open(f, encoding="utf-8").read()

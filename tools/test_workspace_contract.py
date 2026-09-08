@@ -29,7 +29,7 @@ for path in ROOT.glob('*.html'):
     doc = Document(path.read_text(encoding='utf-8'))
     meta = [n['attrs'] for n in doc.nodes if n['tag'] == 'meta']
     assert len([m for m in meta if m.get('name') == 'color-scheme']) == 1, path.name
-    assert next(m for m in meta if m.get('name') == 'theme-color')['content'] == '#e5ebe5', path.name
+    assert next(m for m in meta if m.get('name') == 'theme-color')['content'] == '#f6f4ec', path.name
 
 food = Document((ROOT / 'high-protein-foods-list.html').read_text(encoding='utf-8'))
 assert len([n for n in food.nodes if 'data-label' in n['attrs']]) == 125
@@ -47,14 +47,14 @@ def contrast(fg, bg):
 
 
 for name, fg, bg in [
-    ('Light body', '#465b4f', '#e5ebe5'),
-    ('Light panel', '#465b4f', '#f0f3ed'),
-    ('Light result', '#465b4f', '#dbe4dc'),
-    ('Dark body', '#bdc9c1', '#0d1712'),
-    ('Dark panel', '#bdc9c1', '#15231b'),
-    ('Navigation', '#eef8ee', '#174b36'),
-    ('Menu', '#193828', '#e7ece5'),
-    ('Light icon', '#205f42', '#e1efe6'),
+    ('Light body', '#52655c', '#f6f4ec'),
+    ('Light panel', '#52655c', '#fffef8'),
+    ('Light result', '#52655c', '#eceee4'),
+    ('Dark body', '#c1cec0', '#102723'),
+    ('Dark panel', '#c1cec0', '#19362f'),
+    ('Navigation', '#163b35', '#fffef8'),
+    ('Menu', '#163b35', '#fffef8'),
+    ('Light icon', '#174e3d', '#e1e9dd'),
 ]:
     ratio = contrast(fg, bg)
     assert ratio >= 4.5, (name, ratio)
