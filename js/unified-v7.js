@@ -250,6 +250,8 @@
 
   function compactRankings() {
     document.querySelectorAll(".ranking-card .ranking-list").forEach(function (list) {
+      // The parent disclosure already controls density; avoid a second reveal.
+      if (list.closest("details")) return;
       var rows = Array.prototype.slice.call(list.children);
       if (rows.length <= 5 || list.dataset.compactReady) return;
       list.dataset.compactReady = "true";

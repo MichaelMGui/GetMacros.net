@@ -52,7 +52,7 @@
   var STEPS = [
     { key: "goal", title: "What do you want from this meal?", multiple: true,
       hint: "Pick as many as apply. We rank for the combination, so high protein and bulking work together.",
-      options: [["energy", "Bulking", T.energy + "+ calories", "trendUp"], ["light", "Cutting", "250–" + T.light + " calories with at least 15 g protein", "trendDown"], ["protein", "High protein", T.protein + " g protein or more", "protein"], ["fibre", "High fiber", T.fibre + " g fiber or more", "leaf"], ["lowsodium", "Lower sodium", T.sodium + " mg or fewer on substantial meals", "drop"], ["balanced", "Balanced", "A practical middle-ground meal", "balance"]], none: ["No specific goal", "Show strong all-around starting points", "spark"] },
+      options: [["energy", "Bulking", T.energy + "+ calories", "trendUp"], ["light", "Cutting", "250–" + T.light + " calories with at least 15 g protein", "trendDown"], ["protein", "High protein", T.protein + " g protein or more", "protein"], ["fibre", "High fiber", T.fibre + " g fiber or more", "leaf"], ["lowsodium", "Lower sodium", T.sodium + " mg or fewer on substantial meals", "drop"]], none: ["No specific goal", "Show strong all-around starting points", "spark"] },
     { key: "size", title: "How big should the meal be?", single: true,
       hint: "This nudges the ranking. It never hides an otherwise strong match.",
       options: [["small", "Small", "Snack or light appetite", "portionSmall"], ["medium", "Medium", "A regular meal", "portionMedium"], ["large", "Large", "Hungry or higher-calorie day", "portionLarge"]], none: ["Any portion size", "Do not use portion size as a ranking signal", "layers"] },
@@ -69,7 +69,7 @@
   var state = { goal: [], size: [], diet: [], meal: [], chain: [] };
   var noPreference = { goal: false, size: false, diet: false, meal: false, chain: false };
   var step = 0, includeIncomplete = false, SAVED_KEY = "getmacros-saved-meals-v1", saved = readSaved();
-  var GOAL_LABEL = { energy: "bulking", light: "cutting", protein: "high protein", fibre: "high fiber", lowsodium: "lower sodium", balanced: "balanced" };
+  var GOAL_LABEL = { energy: "bulking", light: "cutting", protein: "high protein", fibre: "high fiber", lowsodium: "lower sodium" };
   var DIET_LABEL = { vegetarian: "vegetarian", plant: "plant-based", gluten: "gluten-aware" };
 
   function esc(value) { return String(value).replace(/[&<>\"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;" }[c]; }); }
@@ -180,26 +180,21 @@
     root.innerHTML = '<div class="quiz-card"><div class="quiz-progress-row"><span>Question ' + (step + 1) + ' of ' + STEPS.length + '</span><span>' + Math.round((step + 1) / STEPS.length * 100) + '%</span></div><div class="quiz-progress"><span style="width:' + ((step + 1) / STEPS.length * 100) + '%"></span></div><h2 tabindex="-1">' + esc(s.title) + '</h2><p class="quiz-hint">' + esc(s.hint) + '</p>' + optionMarkup(s) + (conflict ? '<p class="quiz-warn">Cutting and bulking point in opposite calorie directions. Keep both if you want; results will clearly show the trade-off.</p>' : '') + '<div class="quiz-nav">' + (step ? '<button type="button" class="btn btn-ghost quiz-back" data-go="-1">Back</button>' : '') + '<button type="button" class="btn btn-primary quiz-continue" data-go="1">' + (step === STEPS.length - 1 ? 'Show my matches' : 'Continue') + '</button></div></div>';
     announce("Question " + (step + 1) + " of " + STEPS.length + ": " + s.title);
   }
-  function summary(count) {
-    var bits = [];
-    if (state.goal.length) bits.push(list(state.goal.map(function (g) { return GOAL_LABEL[g]; })));
-    if (state.size.length) bits.push(state.size[0] + " portion");
-    if (state.diet.length) bits.push(list(state.diet.map(function (d) { return DIET_LABEL[d]; })));
-    if (state.meal.length) bits.push(state.meal[0] === "breakfast" ? "breakfast" : "lunch or dinner");
-    if (state.chain.length) bits.push(list(state.chain));
-    return (bits.length ? "Best matches for " + list(bits) : "Best overall starting points") + ". " + count + " meals available.";
+  function resultTitle() {
+    return state.goal.length ? "Meals for " + state.goal.map(function(g){return GOAL_LABEL[g];}).join(" + ") : "Your meal matches";
   }
+  function summary(count) { return count + " meals ranked for your choices. Check each card for goal matches."; }
   function renderResults() {
     var layout = root.closest(".match-intro-grid");
     if (layout) layout.classList.add("results-mode");
     var results = meals.filter(eligible).sort(function (a, b) { return score(b) - score(a); });
     var incompleteCount = meals.filter(function (m) { return !complete(m); }).length;
     if (!results.length) {
-      root.innerHTML = '<div class="quiz-card empty-results"><span class="result-symbol">↺</span><h2 tabindex="-1">That combination is too narrow.</h2><p>Remove one restaurant or dietary filter and we can give you useful choices instead of filler.</p><button type="button" class="btn btn-primary" data-restart="1">Change my answers</button></div>';
+      root.innerHTML = '<div class="quiz-card empty-results"><span class="result-symbol">↺</span><h2 tabindex="-1">That combination is too narrow.</h2><p>Try more restaurants or fewer dietary filters.</p><button type="button" class="btn btn-primary" data-restart="1">Change my answers</button></div>';
       announce("No meals match that exact combination. Change an answer to continue."); syncUrl(); return;
     }
     var shown = results.slice(0, 5);
-    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your five best matches</p><h2 tabindex="-1">Meals that fit your day</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + '<div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></div>';
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><p class="eyebrow">Your shortlist</p><h2 tabindex="-1">' + esc(resultTitle()) + '</h2><p class="quiz-summary">' + esc(summary(results.length)) + '</p></div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + '<details class="result-options"><summary>Data options and sharing</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></details></div>';
     root._rest = results.slice(5); announce(summary(results.length)); syncUrl(); updateSavedUi();
   }
   function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }

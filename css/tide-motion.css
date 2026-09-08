@@ -23,3 +23,9 @@ html.tide-motion-off .tide-liquid{translate:0 0}
 .tide-liquid i:nth-child(2){background:linear-gradient(135deg,#c4d97250,#5caa9560)}
 .tide-liquid i{background:radial-gradient(circle at 25% 22%,#ffffffb0,transparent 48%),linear-gradient(135deg,#4de2a070,#b9e66f70);border-color:#74d7a780;box-shadow:inset 12px 18px 35px #ffffff70,inset -12px -20px 35px #26976030}
 .tide-liquid i:nth-child(2){background:linear-gradient(135deg,#ffbc7860,#bce88860)}
+/* Scroll colour stays behind content; opaque cards retain their contrast. */
+html[data-theme][lang] body.site-v3{background-image:radial-gradient(ellipse at var(--tide-wash-x,12%) var(--tide-wash-y,18%),#39a96412,transparent 62%)!important;background-attachment:fixed!important}
+html[data-theme="dark"][lang] body.site-v3{background-image:radial-gradient(ellipse at var(--tide-wash-x,12%) var(--tide-wash-y,18%),#4eb77414,transparent 62%)!important}
+html.tide-motion-on .site-header::after{content:"";position:fixed;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,#27864c,#81c854,#4cbb8c);transform:scaleX(var(--tide-progress,0));transform-origin:left;pointer-events:none}
+html.tide-motion-off body.site-v3{background-attachment:scroll!important}
+@media print{html[data-theme][lang] body.site-v3{background-image:none!important}.site-header::after{display:none!important}}

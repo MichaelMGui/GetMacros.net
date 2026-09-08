@@ -35,6 +35,22 @@
   preference.addEventListener('change', sync);
   sync();
 
+  // A quiet colour wash tracks progress without moving the document itself.
+  let washQueued = false;
+  const updateWash = () => {
+    washQueued = false;
+    if (!active) return;
+    const length = Math.max(1, root.scrollHeight - innerHeight);
+    const progress = Math.min(1, Math.max(0, scrollY / length));
+    root.style.setProperty('--tide-wash-x', (12 + progress * 76).toFixed(1) + '%');
+    root.style.setProperty('--tide-wash-y', (18 + progress * 54).toFixed(1) + '%');
+    root.style.setProperty('--tide-progress', progress.toFixed(4));
+  };
+  addEventListener('scroll', () => {
+    if (active && !washQueued) { washQueued = true; requestAnimationFrame(updateWash); }
+  }, {passive:true});
+  addEventListener('resize', updateWash, {passive:true});
+
   const hero = document.querySelector('.home-intro,.article-hero,.page-hero,.blog-hero,.focus-hero,.calc-hub-hero');
   if (hero) {
     hero.classList.add('tide-motion-scene');
