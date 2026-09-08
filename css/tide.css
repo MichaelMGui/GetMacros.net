@@ -122,3 +122,16 @@ html[data-theme][lang] body.site-v3.library-page .guide-card p{-webkit-line-clam
 /* Keep journal choices evenly sized, including the legacy featured card. */
 html[data-theme][lang] body.site-v3.journal-page #latest .blog-card{display:flex!important;flex-direction:column!important;grid-column:auto!important;grid-template-columns:none!important;grid-template-rows:none!important}
 html[data-theme][lang] body.site-v3.journal-page #latest .blog-card-media{flex:none!important;width:100%!important;height:160px!important;min-height:160px!important}
+/* Main calculator: reserve enough room for complete labels and results. */
+html[data-theme][lang] body.calculators-v2 #macro-calculator > .container{width:min(1160px,calc(100% - 40px))!important;max-width:1160px!important}
+html[data-theme][lang] body.calculators-v2 .calc-hub-hero{padding-block:24px!important;min-height:0!important}
+html[data-theme][lang] body.calculators-v2 .calc-hub-hero h1{font-size:clamp(2rem,3.5vw,3.1rem)!important;max-width:26ch!important;margin-block:10px 14px!important}
+html[data-theme][lang] body.calculators-v2 #macro-calculator{padding-block:32px!important}
+html[data-theme][lang] body.calculators-v2 #macro-calculator .calc-wrap{grid-template-columns:minmax(0,1.7fr) minmax(320px,1fr)!important}
+html[data-theme][lang] body.calculators-v2 #macro-calculator .result-placeholder{position:static!important;white-space:normal!important;width:100%!important;max-width:100%!important;transform:none!important;overflow-wrap:break-word}
+html[data-theme][lang] body.calculators-v2 #macro-calculator #macro-results{overflow:visible!important;height:auto!important;min-height:190px!important}
+html[data-theme][lang] body.calculators-v2 #macro-calculator #macro-form select{font-size:1rem!important;width:100%!important;min-width:0!important}
+html[data-theme][lang] body.calculators-v2 #macro-calculator #macro-form .units-toggle button{white-space:normal!important;min-height:44px!important}
+@media(max-width:1100px){html[data-theme][lang] body.calculators-v2 #macro-calculator .calc-wrap{grid-template-columns:1fr!important}}
+@media(max-width:620px){html[data-theme][lang] body.calculators-v2 #macro-calculator #macro-form{grid-template-columns:1fr!important;padding:20px!important}html[data-theme][lang] body.calculators-v2 #macro-calculator > .container{width:calc(100% - 28px)!important}}
+html[data-theme][lang] body.calculators-v2 #macro-calculator #macro-results::before,html[data-theme][lang] body.calculators-v2 #macro-calculator #macro-results::after{display:none!important}

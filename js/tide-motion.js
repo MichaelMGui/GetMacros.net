@@ -35,7 +35,7 @@
   preference.addEventListener('change', sync);
   sync();
 
-  const hero = document.querySelector('.home-intro,.article-hero,.page-hero,.blog-hero,.focus-hero');
+  const hero = document.querySelector('.home-intro,.article-hero,.page-hero,.blog-hero,.focus-hero,.calc-hub-hero');
   if (hero) {
     hero.classList.add('tide-motion-scene');
     const liquid = document.createElement('div');
@@ -66,9 +66,9 @@
         if (entry.target.closest('form,[aria-live],#meal-quiz')) return;
         const heading = /^H[12]$/.test(entry.target.tagName);
         play(entry.target, heading ? [
-          { clipPath: 'inset(0 0 100% 0)', translate: '0 22px', filter: 'blur(4px)' },
-          { clipPath: 'inset(0 0 0% 0)', translate: '0 -2px', filter: 'blur(0)', offset: .78 },
-          { clipPath: 'inset(0 0 0% 0)', translate: '0 0', filter: 'blur(0)' }
+          { translate: '0 28px', opacity: .65 },
+          { translate: '0 -2px', opacity: 1, offset: .78 },
+          { translate: '0 0', opacity: 1 }
         ] : [
           { translate: '0 30px', rotate: '0.6deg', filter: 'blur(2px)' },
           { translate: '0 -3px', rotate: '-0.12deg', filter: 'blur(0)', offset: .76 },
