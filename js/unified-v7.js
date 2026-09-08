@@ -76,7 +76,7 @@
         if (label) label.textContent = dark ? "Light" : "Dark";
       });
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", dark ? "#102723" : "#f6f4ec");
+      if (meta) meta.setAttribute("content", dark ? "#102723" : "#f5f7ff");
     }
     apply(initial === "dark" ? "dark" : "light", false);
     buttons.forEach(function (button) {

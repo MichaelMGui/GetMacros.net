@@ -445,7 +445,7 @@ def main() -> int:
         errors.append("calculators.html: stale related-content dump remains")
     if "calculators-polish.css" not in calc_text or "sex-choice-icon" not in calc_text:
         errors.append("calculators.html: calculator readability controls missing")
-    if '<meta name="theme-color" content="#f6f4ec">' not in calc_text:
+    if '<meta name="theme-color" content="#f5f7ff">' not in calc_text:
         errors.append("calculators.html: site theme color is inconsistent")
     if 'property="og:locale"' in calc_text or 'content="GetMacros.net logo"' in calc_text:
         errors.append("calculators.html: stale social metadata remains")

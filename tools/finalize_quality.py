@@ -4,7 +4,7 @@ import re,json
 ROOT=Path(__file__).resolve().parents[1]
 for path in ROOT.glob('*.html'):
     text=path.read_text(encoding='utf-8')
-    text=re.sub(r'(<meta name="theme-color" content=")[^"]+',r'\g<1>#f6f4ec',text)
+    text=re.sub(r'(<meta name="theme-color" content=")[^"]+',r'\g<1>#f5f7ff',text)
     # Build breadcrumbs from the visible navigation rather than stale removed hubs.
     def repair(match):
         try: data=json.loads(match.group(1))

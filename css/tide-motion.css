@@ -21,3 +21,5 @@ html.tide-motion-off .tide-liquid{translate:0 0}
 /* Give the liquid highlights enough contrast to read as moving glass. */
 .tide-liquid i{border-color:#609d8580;background:radial-gradient(circle at 25% 22%,#ffffffa8,transparent 48%),linear-gradient(135deg,#3b9c784d,#e7b65460);box-shadow:inset 12px 18px 35px #ffffff50,inset -12px -20px 35px #23655030}
 .tide-liquid i:nth-child(2){background:linear-gradient(135deg,#c4d97250,#5caa9560)}
+.tide-liquid i{background:radial-gradient(circle at 25% 22%,#ffffffb0,transparent 48%),linear-gradient(135deg,#62cbff70,#a593ff70);border-color:#8daff180;box-shadow:inset 12px 18px 35px #ffffff70,inset -12px -20px 35px #526ee930}
+.tide-liquid i:nth-child(2){background:linear-gradient(135deg,#ffbc7860,#fa9dc660)}
