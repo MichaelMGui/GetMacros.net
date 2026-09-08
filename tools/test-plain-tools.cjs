@@ -1,0 +1,43 @@
+const assert=require('node:assert/strict');
+const {webkit}=require('C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{const b=await webkit.launch();try{
+ for(const theme of ['light','dark'])for(const width of [320,390,1440]){
+  process.env.GM_TEST_THEME=theme;const p=await b.newPage({viewport:{width,height:1000},reducedMotion:'reduce'});
+  await require('./browser-fixture.cjs').localAssets(p);
+  const go=async f=>{await p.goto('http://127.0.0.1:4174/'+f+'.html');await p.evaluate(()=>document.fonts.ready);};
+  await go('recipe-macro-scaler');
+  assert.equal(await p.locator('#rCal').textContent(),'300');
+  await p.selectOption('#recipe-mode','scale');assert.equal(await p.locator('#rCal').textContent(),'450');
+  await p.fill('#orig','0');assert.equal(await p.locator('#rCal').textContent(),'—');
+  await p.fill('#orig','4');assert.equal(await p.locator('#rCal').textContent(),'450');
+  await go('nutrition-label-comparison-tool');
+  assert.equal(await p.locator('#resultRows tr').count(),6);
+  await p.selectOption('#compare-basis','weight');
+  assert.match(await p.locator('#resultRows tr').nth(1).innerText(),/400 kcal/);
+  await p.selectOption('#compare-basis','calories');
+  assert.equal(await p.locator('#resultRows tr').nth(1).locator('td').first().textContent(),'100 kcal');
+  await p.fill('#proA','');assert.equal(await p.locator('#results').isVisible(),false);
+  await p.locator('#compareForm [type="submit"]').click();assert.match(await p.locator('#error').textContent(),/Fill in both labels/);
+  await p.fill('#proA','6');await p.fill('#nameB','A very long example breakfast cereal with fruit and nuts');
+  await p.locator('#compareForm [type="submit"]').click();
+  assert.ok(await p.locator('.compare-table').evaluate(e=>e.getBoundingClientRect().right<=innerWidth));
+  assert.ok(await p.locator('#headB').evaluate(e=>e.getBoundingClientRect().right<=innerWidth));
+  await p.locator('#compareForm [type="reset"]').click();await p.waitForTimeout(50);
+  assert.equal(await p.locator('#compare-basis').inputValue(),'serving');
+  await p.locator('#results').screenshot({path:`design/plain-results-${width}-${theme}.png`});
+  await go('sodium-label-comparison-tool');
+  assert.equal(await p.locator('.suite-hero-mark svg').evaluate(e=>getComputedStyle(e).color),theme==='light'?'rgb(17, 100, 59)':'rgb(163, 236, 182)');
+  await p.locator('.suite-hero-mark').screenshot({path:`design/plain-icon-${width}-${theme}.png`});
+  await p.locator('footer').screenshot({path:`design/plain-footer-${width}-${theme}.png`});
+  assert.equal(await p.locator('.footer-details').getAttribute('open'),null);
+  if(width===390)assert.ok((await p.locator('footer').boundingBox()).height<600);
+  await p.locator('.footer-details summary').click();assert.ok(await p.locator('.footer-details a[href="sources.html"]').isVisible());
+  assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await p.close();console.log('PASS plain tools',theme,width);
+ }
+ delete process.env.GM_TEST_THEME;
+ const p=await b.newPage({colorScheme:'dark'});await require('./browser-fixture.cjs').localAssets(p);await p.goto('http://127.0.0.1:4174/index.html');
+ assert.equal(await p.locator('html').getAttribute('data-theme'),'light');
+ await p.locator('[data-theme-toggle]').click();await p.reload();assert.equal(await p.locator('html').getAttribute('data-theme'),'dark');
+ console.log('PASS light default and saved theme preference');
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1;});

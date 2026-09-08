@@ -39,13 +39,7 @@ HEADER = """<header class="site-header modern-header"><nav class="full-nav" aria
 </nav>
 </header>"""
 
-FOOTER = """<footer class="modern-footer">
-<div><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg><use href="icon-sprite.svg#logo-mark"></use></svg></span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find fast-food meals that fit your calories, protein and goals—then understand the numbers.</p></div>
-<div><strong>Use GetMacros</strong><a href="healthy-fast-food.html">Healthy fast food</a><a href="restaurant-meal-finder.html">Healthy Order Match</a><a href="calculators.html">Free macro calculator</a><a href="search.html">Search</a></div>
-<div><strong>Read</strong><a href="articles.html">Nutrition guides</a><a href="blog.html">The GetMacros Journal</a><a href="restaurant-meal-guides.html">Restaurant guides</a><a href="sources.html">Sources</a></div>
-<div><strong>About &amp; legal</strong><a href="about.html">About</a><a href="editorial-policy.html">Editorial policy</a><a href="corrections.html">Corrections</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a><a href="contact.html">Contact</a></div>
-<small>&copy; 2026 GetMacros.net &middot; Educational information, not individualized medical advice.</small>
-</footer>"""
+FOOTER = Path(__file__).with_name('plain-footer.inc').read_text(encoding='utf-8').strip()
 
 
 def convert_newlines(value: str, newline: str) -> str:

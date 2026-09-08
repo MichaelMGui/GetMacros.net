@@ -6,6 +6,7 @@ symbols={key:(viewbox,body) for key,viewbox,body in re.findall(r'<symbol id="([^
 for p in ROOT.glob('*.html'):
     s=p.read_text(encoding='utf-8')
     s=s.replace('Healthy Order Match','Fast-food meal finder')
+    s=s.replace('Recipe Macro Scaler','Adjust recipe portions').replace('Compare Labels','Compare two foods')
     # Inline shared navigation icons so Safari does not depend on external-use loading.
     def inline_icon(m):
         if m.group(2) not in symbols:return m.group(0)

@@ -11,7 +11,7 @@
   var scale=mode.value==='scale';
   var factor=scale?1:original/next;
   outputs.forEach(function(id,index){var value=Number(document.getElementById(inputs[index+2]).value)*factor;document.getElementById(id).textContent=index===0?Math.round(value).toLocaleString():value.toFixed(1);});
-  note.textContent=scale?'Multiply every ingredient by '+(next/original).toFixed(2)+'× to make '+next+' servings of the original size. Nutrition per serving stays the same.':'Keep the ingredients unchanged. Divide the original batch into '+next+' equal portions; each contains '+(original/next).toFixed(2)+'× the original serving’s nutrition.';
+  note.textContent=scale?'Use '+(next/original).toFixed(2)+'× each ingredient for '+next+' portions. Nutrition per portion stays the same.':'Keep the same ingredients and split the recipe into '+next+' equal portions.';
  }
  inputs.forEach(function(id){document.getElementById(id).addEventListener('input',update);});
  mode.addEventListener('change',update);update();

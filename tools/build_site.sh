@@ -33,6 +33,7 @@ python3 tools/refine_recipe.py
 python3 tools/refine_core_content.py
 python3 tools/refine_journal.py
 python3 tools/refine_reading.py
+python3 tools/refine_plain_tools.py
 python3 tools/refine_workspaces.py
 python3 tools/refine_organization.py
 python3 tools/finalize_quality.py

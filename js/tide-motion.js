@@ -51,7 +51,7 @@
   }, {passive:true});
   addEventListener('resize', updateWash, {passive:true});
 
-  const hero = document.querySelector('.home-intro,.article-hero,.page-hero,.blog-hero,.focus-hero,.calc-hub-hero,.match-intro,.search-hero');
+  const hero = document.querySelector('.home-intro,.article-hero,.page-hero,.blog-hero,.focus-hero,.calc-hub-hero,.match-intro,.search-hero,.tool-hero');
   if (hero) {
     hero.classList.add('tide-motion-scene');
     const liquid = document.createElement('div');
