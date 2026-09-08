@@ -29,7 +29,7 @@ for path in ROOT.glob('*.html'):
     doc = Document(path.read_text(encoding='utf-8'))
     meta = [n['attrs'] for n in doc.nodes if n['tag'] == 'meta']
     assert len([m for m in meta if m.get('name') == 'color-scheme']) == 1, path.name
-    assert next(m for m in meta if m.get('name') == 'theme-color')['content'] == '#f5f7ff', path.name
+    assert next(m for m in meta if m.get('name') == 'theme-color')['content'] == '#f2fcf6', path.name
 
 food = Document((ROOT / 'high-protein-foods-list.html').read_text(encoding='utf-8'))
 assert len([n for n in food.nodes if 'data-label' in n['attrs']]) == 125
@@ -47,7 +47,7 @@ def contrast(fg, bg):
 
 
 for name, fg, bg in [
-    ('Light body', '#52655c', '#f5f7ff'),
+    ('Light body', '#52655c', '#f2fcf6'),
     ('Light panel', '#52655c', '#fffef8'),
     ('Light result', '#52655c', '#eceee4'),
     ('Dark body', '#c1cec0', '#102723'),
