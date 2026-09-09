@@ -56,9 +56,20 @@ for path in ROOT.glob('*.html'):
     s=s.replace('Healthy fast-food options by the metric you care about','Compare meals by your goal')
     s=s.replace('Only substantial tracked items with published sodium qualify. Missing sodium is never treated as zero.','Meals and entrées with published sodium values.')
     if 'data-chain-finder' in s:
+        chain_match=re.search(r'data-chain="([^"]+)"',s)
+        if chain_match:
+            chain=html.escape(html.unescape(chain_match[1]))
+            s=re.sub(r'(<h1\b[^>]*>).*?(</h1>)',lambda m:m[1]+'Healthy '+chain+' meals'+m[2],s,count=1,flags=re.S)
         s=s.replace('type="radio" name="chain-goal"','type="checkbox" name="chain-goal"').replace('type="radio" name="chain-diet"','type="checkbox" name="chain-diet"')
         s=s.replace('<legend>What should this meal help with?</legend>','<legend>Your goals · choose any</legend>')
         s=re.sub(r'(<header class="chain-finder-intro"><h2>.*?</h2>).*?(</header>)',r'\1\2',s,flags=re.S)
+        s=re.sub(r'<header class="chain-finder-intro"><h2>.*?</h2></header>','<header class="chain-finder-intro"><h2>Find your meal</h2></header>',s,flags=re.S)
+        s=re.sub(r'(type="submit"[^>]*>)Find my .*? meal\s*(?:&rarr;|→)?',r'\1Find my meal',s)
+        s=s.replace('>Vegetarian standard builds<','>Vegetarian meals<').replace('>Higher-energy orders<','>Higher-calorie meals<').replace('>Cutting<','>Weight loss<').replace('>Bulking<','>Weight gain<')
+    if path.name=='healthy-fast-food.html':
+        labels={'Highest-protein fast food':'High protein','Lower-calorie meals and entrées':'Lower calories','Higher-calorie meals for weight gain':'Higher calories','Highest-fiber options':'More fiber','Lower-sodium meals and entrées':'Less sodium','Higher-protein vegetarian options':'Vegetarian meals','Plant-based menu options':'Plant-based meals','High-protein fast-food breakfasts':'High-protein breakfasts'}
+        for old,new in labels.items():s=s.replace('<summary>'+old+'</summary>','<summary>'+new+'</summary>')
+        s=s.replace('High-protein bulking order: ','')
     s=s.replace('<p>GetMacros uses primary research, position stands and official resources where possible. These sources support the guide; they do not make it individualized medical advice.</p>','')
     if path.name=='about.html':s=main(s,about())
     if path.name=='contact.html':s=main(s,contact())
