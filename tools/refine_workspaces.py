@@ -12,7 +12,7 @@ PAGES={
  'sources.html':('Nutrition Sources & Calculator Methods | GetMacros','Nutrition sources and calculation methods','Check the nutrition references and calculation methods behind GetMacros tools, articles and restaurant meal comparisons.'),
  'serving-size-vs-portion-size.html':('Serving Size vs. Portion Size: What Is the Difference?','Serving size vs. portion size: what is the difference?','Learn the difference between a label serving and the portion you eat, and how to calculate calories and nutrients for your actual portion.'),
  'how-to-eat-out-without-wrecking-your-goal.html':('How to Eat Out While Losing Weight or Building Muscle','How to eat out while working toward your goals','Learn how to compare restaurant meals for weight loss, muscle gain or maintenance using portions, calories, protein and practical ordering changes.'),
- 'blog.html':('Nutrition Blog: Protein, Diet Drinks & Creatine | GetMacros','Nutrition questions, explained','Explore the evidence on protein absorption, diet drinks, creatine and hair loss, restaurant meals, and calories versus macros.')
+ 'blog.html':('Nutrition Blog: Healthy Fast Food, Protein & Macros | GetMacros','GetMacros Blog','Explore practical answers about healthy fast food, protein absorption, diet drinks, creatine and calories versus macros.')
 }
 for p in ROOT.glob('*.html'):
  s=p.read_text(encoding='utf-8')
@@ -26,7 +26,7 @@ for p in ROOT.glob('*.html'):
    s=re.sub(r'(<meta '+attr+'="'+re.escape(key)+'" content=")[^"]*(")',lambda m:m[1]+html.escape(value,quote=True)+m[2],s)
   def schema(m):
    data=json.loads(m[1])
-   if data.get('@type') in ['Article','BlogPosting','WebPage','CollectionPage']:
+   if data.get('@type') in ['Article','BlogPosting','WebPage','CollectionPage','Blog']:
     if 'headline' in data:data['headline']=h1
     if 'name' in data:data['name']=h1
     if 'description' in data:data['description']=desc
@@ -41,6 +41,23 @@ for p in ROOT.glob('*.html'):
   s=s.replace('Choose what matters today. We compare real menu items from 15 restaurants and explain the strongest matches.','Pick your goals. Compare meals from 15 restaurants.')
   s=s.replace('Optional: open the complete cross-chain nutrition database and rankings.','Compare every listed meal and its nutrition.')
   s=s.replace("The quiz answers one question at a time. These are the standing lists behind it: all 83 tracked menu options from 15 chains, sorted the ways people actually ask for them. Every figure is the chain's published standard build.","Compare 83 menu options from 15 restaurants. Nutrition values refer to the named standard order.")
+ if p.name=='blog.html':
+  s=s.replace('A small, carefully edited collection about restaurant meals, protein, supplements and the claims that deserve a closer look.','Practical answers about fast food, protein and everyday nutrition.')
+  s=s.replace('Explore the journal','Explore the blog')
+  previews={
+   'best-fast-food-restaurants-for-your-goals.html':'Compare complete orders for high protein, fewer calories or a larger meal.',
+   'how-much-protein-can-your-body-absorb.html':'Is there really a 30-gram limit? Understand protein absorption and what matters for muscle.',
+   'are-diet-drinks-bad-for-you.html':'What research says about sweeteners, weight control and everyday drink choices.',
+   'does-creatine-cause-hair-loss.html':'The original hormone study, the newer hair trial, and what remains uncertain.',
+   'calories-vs-macros-what-matters-more.html':'What each number tells you, and where to start for weight loss or muscle gain.'
+  }
+  def preview(m):
+   block=m[0]
+   if m[1] in previews:block=re.sub(r'<p>.*?</p>','<p>'+previews[m[1]]+'</p>',block,flags=re.S)
+   block=re.sub(r'<span class="blog-arrow">.*?</span>','<span class="blog-arrow">Read article →</span>',block,flags=re.S)
+   return block
+  s=re.sub(r'<a class="blog-card guide-card" href="([^"]+)">.*?</a>',preview,s,flags=re.S)
+  s=re.sub(r'<section class="data-section">.*?</section>','<section class="blog-more"><div class="container"><p>Looking for a specific nutrition answer? <a href="articles.html">Browse all nutrition guides</a>.</p></div></section>',s,flags=re.S)
  # Remove repeated promotional qualifiers from link summaries, preserving facts.
  s=s.replace(' — with cited sources.','.').replace(' — with cited sources','')
  replacements={

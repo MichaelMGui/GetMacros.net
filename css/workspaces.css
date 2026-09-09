@@ -1,4 +1,9 @@
 /* Working surfaces: shared controls, colour and spacing for the tools. */
+html[data-theme][lang] body.site-v3.journal-page main#main-content #latest .blog-card{padding:0!important;overflow:hidden!important}
+html[data-theme][lang] body.site-v3.journal-page main#main-content #latest .blog-card-media{height:auto!important;min-height:0!important;aspect-ratio:8/5!important;width:100%!important;padding:0!important;border:0!important;overflow:hidden!important}
+html[data-theme][lang] body.site-v3.journal-page main#main-content #latest .blog-card-media img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center!important;border-radius:0!important;margin:0!important;padding:0!important}
+html[data-theme][lang] body.site-v3.journal-page main#main-content .blog-hero-art{padding:0!important;aspect-ratio:8/5!important;height:auto!important;min-height:0!important;overflow:hidden!important}
+html[data-theme][lang] body.site-v3.journal-page main#main-content .blog-hero-art img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;margin:0!important;padding:0!important}
 html[data-theme][lang] body.site-v3{--work-accent:#197b45;--work-on-accent:#fff;--work-warm:#fff1d7;--work-cool:#e3f3fa;--work-edge:#b6d4bd}
 html[data-theme="dark"][lang] body.site-v3{--work-accent:#72ce88;--work-on-accent:#102819;--work-warm:#3b3020;--work-cool:#203c43;--work-edge:#52735a}
 html[data-theme][lang] body.site-v3 main#main-content :is(.calc-hub-hero,.match-intro,.search-hero){background:radial-gradient(ellipse at 95% 10%,#4caf6530,transparent 65%)!important}

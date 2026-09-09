@@ -7,6 +7,7 @@ for p in ROOT.glob('*.html'):
     s=p.read_text(encoding='utf-8')
     s=s.replace('Healthy Order Match','Fast-food meal finder')
     s=s.replace('Recipe Macro Scaler','Adjust recipe portions').replace('Compare Labels','Compare two foods')
+    s=s.replace('The GetMacros Journal','GetMacros Blog').replace('the GetMacros Journal','the GetMacros Blog').replace('>Journal<','>Blog<').replace('"name": "Journal"','"name": "Blog"')
     # Inline shared navigation icons so Safari does not depend on external-use loading.
     def inline_icon(m):
         if m.group(2) not in symbols:return m.group(0)
