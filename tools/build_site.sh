@@ -37,6 +37,7 @@ python3 tools/refine_plain_tools.py
 python3 tools/refine_workspaces.py
 python3 tools/refine_organization.py
 python3 tools/finalize_quality.py
+python3 tools/simplify_interface.py
 # Last, so it sees the final head of every page: rewrite each local CSS and
 # JS link with a hash of that file, so a changed asset always busts caches
 # and an unchanged one keeps its cache entry.

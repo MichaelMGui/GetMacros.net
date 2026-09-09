@@ -2,37 +2,32 @@
 <section class="home-everyday" aria-labelledby="home-everyday-title">
   <div class="container home-everyday-layout">
     <div class="home-everyday-copy">
-      <p class="home-section-label">Beyond the drive-through</p>
       <h2 id="home-everyday-title">Eating in?<br>Make the numbers easier.</h2>
-      <p>Keep your planning in one place. Adjust a recipe, compare the cost of protein, or find meal ideas using ingredients you already have.</p>
-      <a class="home-extension-link" href="calculators.html">Explore the calculators <span aria-hidden="true">→</span></a>
+      <a class="btn action-link" href="calculators.html">Explore the calculators</a>
     </div>
     <div class="home-everyday-tools">
-      <a href="recipe-macro-scaler.html" class="home-everyday-tool">
+      <article class="home-everyday-tool">
         <span class="home-everyday-icon"><svg aria-hidden="true"><use href="icon-sprite.svg?v=f5dcf691b6#icon-carbs"></use></svg></span>
-        <span><h3>Change the portions, not the recipe.</h3><p>Scale known recipe calories and macros to the servings you need.</p><strong>Scale a recipe <span aria-hidden="true">→</span></strong></span>
-      </a>
-      <a href="protein-value-calculator.html" class="home-everyday-tool">
+        <div><h3>Recipe portions</h3><p>See calories and macros per portion.</p><a class="btn action-link" href="recipe-macro-scaler.html">Adjust portions</a></div>
+      </article>
+      <article class="home-everyday-tool">
         <span class="home-everyday-icon"><svg aria-hidden="true"><use href="icon-sprite.svg?v=f5dcf691b6#icon-protein"></use></svg></span>
-        <span><h3>See what your protein costs.</h3><p>Use a product’s price, serving count and protein content to compare value.</p><strong>Compare protein value <span aria-hidden="true">→</span></strong></span>
-      </a>
-      <a href="budget-meal-builder.html" class="home-everyday-tool">
+        <div><h3>Protein on a budget</h3><p>Find out which food gives you more protein for your money.</p><a class="btn action-link" href="protein-value-calculator.html">Compare costs</a></div>
+      </article>
+      <article class="home-everyday-tool">
         <span class="home-everyday-icon"><svg aria-hidden="true"><use href="icon-sprite.svg?v=f5dcf691b6#icon-calculator"></use></svg></span>
-        <span><h3>Make more of what’s in your pantry.</h3><p>Select ingredients you have to find flexible meal ideas and the gaps in your grocery list.</p><strong>Build a budget meal <span aria-hidden="true">→</span></strong></span>
-      </a>
+        <div><h3>Use what you have</h3><p>Get meal ideas from ingredients in your kitchen.</p><a class="btn action-link" href="budget-meal-builder.html">Find meal ideas</a></div>
+      </article>
     </div>
   </div>
 </section>
 <section class="home-finder-help" aria-labelledby="home-finder-help-title">
   <div class="container home-finder-help-layout">
     <div>
-      <p class="home-section-label">Before you order</p>
-      <h2 id="home-finder-help-title">A few things worth knowing.</h2>
-      <p>Find a useful match—not a one-size-fits-all “healthiest” meal.</p>
-      <a class="home-extension-link" href="restaurant-meal-finder.html">Find my restaurant meal <span aria-hidden="true">→</span></a>
+      <h2 id="home-finder-help-title">Meal finder questions</h2>
     </div>
     <div class="home-finder-questions">
-      <details open>
+      <details>
         <summary>How does the meal finder choose my matches?</summary>
         <p>Your goals, appetite, dietary preferences and restaurant choices shape the ranking. Results show the nutrition numbers and explain where an order fits—and where it falls short.</p>
       </details>
