@@ -76,6 +76,8 @@ for path in ROOT.glob('*.html'):
     if path.name=='calculators.html':
         for cls in ['breadcrumb','calc-nav-wrap','calculator-scope','single-card-note','single-card-copy']:s=remove(s,cls)
         s=s.replace('<h2>Your details</h2>','').replace('>Macro calculator</h1>','>Free macro calculator</h1>')
+        welcome='<section class="calc-hub-hero calc-welcome"><div class="container calc-hero-grid"><div class="calc-welcome-heading">'+icon('calculator')+'<h1 data-reveal-title>Free macro calculator</h1></div><div class="calc-welcome-macros" aria-hidden="true">'+icon('protein')+icon('fat')+icon('carbs')+'</div></div></section>'
+        s=re.sub(r'<section class="calc-hub-hero[^\"]*">.*?</section>',lambda _:welcome,s,count=1,flags=re.S)
         s=s.replace('<p class="hint">The calorie equation uses a different constant for each sex.</p>','')
         s=s.replace('<label for="weight">Weight (','<label class="sr-only" for="weight">Weight (')
         s=s.replace('<span class="field-label">Height in feet and inches</span>','')
