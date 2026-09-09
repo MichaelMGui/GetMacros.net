@@ -14,8 +14,21 @@ ARROW = r'(?:→|&rarr;|&#8594;)'
 
 
 def simplify(text, name):
+    # The duplicate sidebar takes half the article width despite adding no
+    # section navigation beyond the existing collapsible contents list.
+    text = re.sub(r'<aside class="focused-guide-side">.*?</aside>', '', text, flags=re.S)
+    def plain_chain_choices(match):
+        block = re.sub(r'<small>.*?</small>', '', match.group(0), flags=re.S)
+        return block.replace('<b>Balanced</b>', '<b>Any goal</b>').replace('<b>Cutting</b>', '<b>Weight loss</b>').replace('<b>Bulking</b>', '<b>Weight gain</b>')
+    text = re.sub(r'<div class="chain-choice-grid chain-goals">.*?</div>', plain_chain_choices, text, flags=re.S)
+    if name == 'nutrition-label-comparison-tool.html':
+        text = text.replace('value="Example cereal A"', 'value="Cereal A"').replace('value="Example cereal B"', 'value="Cereal B"')
+    if name == 'sources.html':
+        text = text.replace('>my.clevelandclinic.org/health/diseases/23099-kwashiorkor</a>', '>Read the Cleveland Clinic article</a>')
+        text = text.replace('>my.clevelandclinic.org/health/articles/24003-ketosis</a>', '>Read the Cleveland Clinic article</a>')
     if name == 'index.html':
         for old, new in {
+            'Cutting or bulking': 'Weight loss or gain',
             '<p>Choose more than one goal in the finder. Your answers shape the shortlist.</p>': '',
             'Compare protein alongside calories, fiber and sodium.': 'Find meals with more protein.',
             'Find lighter meals or larger orders for a bigger appetite.': 'Choose a lighter meal or a bigger portion.',
@@ -54,8 +67,8 @@ def simplify(text, name):
     if name == 'search.html':
         text = text.replace('<p>Find a meal, calculate your macros or get a nutrition answer.</p>', '')
     if name == 'restaurant-meal-finder.html':
-        text = re.sub(r'<a class="match-calc-link" href="calculators.html">.*?</a>',
-                      '<a class="btn action-link match-calc-link" href="calculators.html">Calculate my daily macros</a>', text, flags=re.S)
+        text = re.sub(r'<a class="[^"]*match-calc-link[^"]*"[^>]*>.*?</a>', '', text, flags=re.S)
+        text = re.sub(r'<details class="quiz-data-note">.*?</details>', '', text, flags=re.S)
     text = re.sub(r'<span>Keep going</span>', '', text)
 
     doc = Document(text)

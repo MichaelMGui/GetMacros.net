@@ -11,7 +11,7 @@
   error.textContent='';out.hidden=false;
   document.getElementById('headA').textContent=a.name;document.getElementById('headB').textContent=b.name;
   var factor=function(f){return basis.value==='weight'?100/f.serv:basis.value==='calories'?100/f.cal:1;};
-  var rows=[['serv','Amount compared','g'],['cal','Calories','kcal'],['pro','Protein','g'],['fib','Fiber','g'],['sug','Added sugar','g'],['sod','Sodium','mg']];
+  var rows=[['serv','Portion','g'],['cal','Calories','kcal'],['pro','Protein','g'],['fib','Fiber','g'],['sug','Added sugar','g'],['sod','Sodium','mg']];
   document.getElementById('resultRows').innerHTML=rows.map(function(row){var digits=row[0]==='cal'||row[0]==='sod'?0:1;return '<tr><th scope="row">'+row[1]+'</th><td>'+(a[row[0]]*factor(a)).toFixed(digits)+' '+row[2]+'</td><td>'+(b[row[0]]*factor(b)).toFixed(digits)+' '+row[2]+'</td></tr>';}).join('');
  }
  form.addEventListener('submit',render);form.addEventListener('reset',function(){setTimeout(function(){basis.value='serving';render();},0);});

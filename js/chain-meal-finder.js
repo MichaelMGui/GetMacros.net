@@ -55,11 +55,11 @@
     return cal + ", " + protein + (meal.f === null ? "." : " and " + meal.f.toLocaleString() + " g fiber.");
   }
   function metric(number, unit, label) {
-    var shown = number === null ? "Not listed" : Number(number).toLocaleString() + unit;
+    var shown = number === null ? "Not listed" : Number(number).toLocaleString() + (unit ? " " + unit : "");
     return '<span class="chain-result-metric' + (number === null ? ' is-missing' : '') + '"><b>' + shown + '</b><small>' + label + '</small></span>';
   }
   function card(meal, index, goal) {
-    return '<article class="chain-result-card' + (index === 0 ? ' is-best' : '') + '"><div class="chain-result-top"><span>' + (index === 0 ? 'Closest match' : 'Also fits') + '</span><b>0' + (index + 1) + '</b></div><h3>' + esc(meal.name) + '</h3><div class="chain-result-metrics">' + metric(meal.cal, '', 'calories') + metric(meal.p, 'g', 'protein') + metric(meal.f, 'g', 'fiber') + metric(meal.na, 'mg', 'sodium') + '</div><p>' + esc(explanation(meal, goal)) + '</p></article>';
+    return '<article class="chain-result-card' + (index === 0 ? ' is-best' : '') + '"><div class="chain-result-top"><span>' + (index === 0 ? 'Closest match' : 'Also fits') + '</span><b>0' + (index + 1) + '</b></div><h3>' + esc(meal.name.replace("High-protein bulking order: ", "")) + '</h3><div class="chain-result-metrics">' + metric(meal.cal, '', 'calories') + metric(meal.p, 'g', 'protein') + metric(meal.f, 'g', 'fiber') + metric(meal.na, 'mg', 'sodium') + '</div><p>' + esc(explanation(meal, goal)) + '</p></article>';
   }
 
   roots.forEach(function (root) {
@@ -83,7 +83,7 @@
         output.innerHTML = '<div class="chain-empty"><h3>No standard build here matches that dietary filter.</h3><p>Try removing the filter. Then confirm ingredients and cross-contact directly with ' + esc(chain) + '.</p></div>';
       } else {
         var shown = results.slice(0, 3);
-        output.innerHTML = '<div class="chain-results-head"><div><p class="eyebrow">Your ' + esc(chain) + ' matches</p><h3>' + (shown.length === 1 ? 'The closest meal in this guide' : 'The three closest meals in this guide') + '</h3></div><p>Rankings compare only the standard builds tracked on this page. Check the live menu before ordering.</p></div><div class="chain-result-grid">' + shown.map(function (meal, index) { return card(meal, index, goal); }).join("") + '</div>';
+        output.innerHTML = '<div class="chain-results-head"><h3>Your meal matches</h3></div><div class="chain-result-grid">' + shown.map(function (meal, index) { return card(meal, index, goal); }).join("") + '</div>';
       }
       output.hidden = false;
     });

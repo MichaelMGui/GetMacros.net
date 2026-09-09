@@ -5,7 +5,7 @@ from recover_site_focus import build_search,metadata
 ROOT=Path(__file__).resolve().parents[1]
 PAGES={
  'calculators.html':('Free Macro Calculator: Calories, Protein, Carbs & Fat | GetMacros','Free macro calculator','Calculate daily calories, protein, carbs and fat for weight loss, maintenance or muscle gain. Enter your age, weight, height and activity level.'),
- 'restaurant-meal-finder.html':('Healthy Fast-Food Meal Finder: High-Protein & Low-Calorie Meals','Find healthy fast-food meals','Find fast-food meals for high protein, cutting or bulking. Compare calories, protein, fiber and sodium from 15 restaurant chains.'),
+ 'restaurant-meal-finder.html':('Healthy Fast-Food Meal Finder: High-Protein & Low-Calorie Meals','Find healthy fast-food meals','Find fast-food meals for weight loss, weight gain or high protein. Compare calories, protein, fiber and sodium from 15 restaurant chains.'),
  'healthy-fast-food.html':('Healthy Fast Food: Compare Calories & Protein | GetMacros','Healthy fast food by restaurant','Compare healthy fast-food options by restaurant, calories, protein, fiber and sodium. Explore menu guides and find meals for your goals.'),
  'articles.html':('Nutrition Guides: Calories, Macros & Healthy Eating | GetMacros','Nutrition guides for everyday questions','Find clear answers about calories, protein, carbs, fat and eating out. Browse practical nutrition guides with examples and sources.'),
  'about.html':('About GetMacros | Nutrition Tools, Data & Editorial Standards','About GetMacros','Learn how GetMacros builds its macro calculators, restaurant nutrition guides and articles, including the data sources and editorial standards.'),

@@ -13,7 +13,7 @@ const {chromium, webkit} = require('C:/Users/slowf/.cache/codex-runtimes/codex-p
     assert.equal(await page.locator('input[data-facet="goal"][value="balanced"]').count(),0);
     for(const goal of ['energy','protein'])await page.locator('label').filter({has:page.locator('input[data-facet="goal"][value="'+goal+'"]')}).click();
     for(let i=0;i<5;i++)await page.locator('.quiz-continue').click();
-    assert.equal(await page.locator('.results-heading h2').innerText(),'Meals for bulking + high protein');
+    assert.equal(await page.locator('.results-heading h2').innerText(),'Meals for weight gain + high protein');
     assert.ok(await page.locator('.results-grid > *').count()>0);
     await page.locator('.results-heading').scrollIntoViewIfNeeded();
     await page.screenshot({path:`design/clarity-${engine}-${theme}-results.png`});

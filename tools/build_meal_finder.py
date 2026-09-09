@@ -10,11 +10,8 @@ Two jobs, both driven off js/meal-data.js so nothing can disagree with itself:
    only 10 reached 600 kcal. A threshold that a page states out loud has to be
    the threshold the page actually applies.
 
-2. The reference section under the quiz. Chain-by-chain tables were the wrong
-   shape for this page: every chain guide already publishes its own menu, so
-   repeating it here duplicated content and read as an appendix. What no single
-   guide can offer is the view across all of them, which is also what people
-   search for. So the section is a set of ranked cross-chain lists.
+2. A single browseable list under the quiz. Render each order once, with search,
+   goal filters and progressive disclosure instead of repeated ranking tables.
 """
 import html
 import json
@@ -34,11 +31,9 @@ HERO = r'''<section class="match-intro" data-spotlight>
       <p class="match-kicker"><span>Healthy fast-food finder</span></p>
       <h1>Find a meal that fits your goals.</h1>
       <p>Choose what matters today. We compare real menu items from 15 restaurants and explain the strongest matches.</p>
-      <a class="match-calc-link" href="calculators.html"><svg aria-hidden="true"><use href="icon-sprite.svg#icon-calculator"></use></svg><span><strong>Not sure about your targets?</strong><small>Calculate calories and macros first</small></span><i aria-hidden="true">→</i></a>
     </div>
     <div class="match-live-quiz" role="region" aria-label="Healthy Order Match questionnaire">
       <div id="meal-quiz"></div>
-      <details class="quiz-data-note"><summary>How accurate are these results?</summary><p>We use published nutrition for standard menu builds. Recipes and availability can change, so confirm important figures with the restaurant.</p></details>
     </div>
   </div>
 </section>
@@ -149,77 +144,8 @@ def table(rows, highlight):
 
 
 def render(meals):
-    n = len(meals)
-    chains = sorted({m["chain"] for m in meals})
-
-    sections = [
-        ("highest-protein-fast-food", "Highest-protein fast food meals",
-         f"Ranked across all {len(chains)} chains. Everything here clears "
-         f"{PROTEIN_G} g, and the leaders roughly double it.",
-         ranked(meals, "p"), "p"),
-        ("high-calorie-fast-food", "High-calorie fast food meals for bulking",
-         "Complete orders at 1,000 calories or more, ranked largest first. "
-         "Combined orders name every item included; drinks and unlisted sauces are excluded.",
-         ranked(meals, "cal", where=lambda m: m["cal"] >= 1000), "cal"),
-        ("fast-food-under-400-calories", f"Fast food under {LIGHT_KCAL} calories",
-         "Substantial entrées and meal components only: at least 250 calories and 15 g protein. "
-         "Tiny sides and snack portions are excluded.",
-         ranked(meals, "cal", reverse=False, where=lambda m: substantial(m) and m["cal"] <= LIGHT_KCAL), "cal"),
-        ("highest-fibre-fast-food", "Fast food with the most fiber",
-         "Fiber is the number most fast-food menus are thin on, and the one that "
-         "most changes whether a meal holds you until the next one.",
-         ranked(meals, "f"), "f"),
-        ("lowest-sodium-fast-food", "Lower-sodium meals and entrées",
-         "Only substantial items with at least 250 calories, 15 g protein and a published sodium figure qualify. "
-         "A missing number is not a low one, so nothing unpublished is ranked here.",
-         ranked(meals, "na", reverse=False, where=substantial), "na"),
-        ("vegetarian-fast-food", "Every vegetarian option we track",
-         "No meat or fish in the standard build. Ordered by protein, because that "
-         "is the number these meals most often give up.",
-         ranked(meals, "p", where=lambda m: "vegetarian" in m["diet"], limit=99), "p"),
-        ("plant-based-fast-food", "Every plant-based option we track",
-         "No animal products in the standard build. Check preparation locally: "
-         "shared fryers and dairy-based sauces are the usual surprises.",
-         ranked(meals, "p", where=lambda m: "plant" in m["diet"], limit=99), "p"),
-        ("healthy-fast-food-breakfast", "Breakfast items worth ordering",
-         "Served on the breakfast menu. Ordered by protein, since that is what "
-         "decides whether a breakfast lasts past mid-morning.",
-         ranked(meals, "p", where=lambda m: m["meal"] == "breakfast", limit=99), "p"),
-    ]
-
-    out = [START,
-           '<div class="container"><details class="meal-database-disclosure">',
-           f'<summary><strong>Browse all {n} tracked meals</strong><span>Optional: open the complete cross-chain nutrition database and rankings.</span></summary>',
-           '<section class="meal-index"><div class="container">',
-           "<h2>All tracked meals, ranked by nutrition</h2>",
-           f"<p class=\"meal-index-intro\">The quiz answers one question at a time. "
-           f"These are the standing lists behind it: all {n} tracked menu options from "
-           f"{len(chains)} chains, sorted the ways people actually ask for them. "
-           f"Every figure is the chain's published standard build.</p>",
-           '<nav class="meal-jump" aria-label="Jump to a list"><ul>']
-    for slug, title, _, _, _ in sections:
-        out.append(f'<li><a href="#{slug}">{html.escape(title)}</a></li>')
-    out.append("</ul></nav>")
-
-    for slug, title, blurb, rows, key in sections:
-        if not rows:
-            continue
-        out.append(f'<section class="meal-list" id="{slug}">')
-        out.append(f"<h3>{html.escape(title)}</h3>")
-        out.append(f'<p class="meal-list-note">{blurb} <b>{len(rows)}</b> '
-                   f'{"item" if len(rows) == 1 else "items"}.</p>')
-        out.append(table(rows, key))
-        out.append("</section>")
-
-    out.append('<p class="meal-index-foot">Looking for one restaurant rather than a '
-               'ranking? Each chain has its own guide: ')
-    out.append(", ".join(
-        f'<a href="{html.escape(next(m["url"] for m in meals if m["chain"] == c))}">'
-        f'{html.escape(c)}</a>' for c in chains))
-    out.append(".</p>")
-    out.append("</div></section></details></div>")
-    out.append(END)
-    return "\n".join(out)
+    from meal_browser import render as render_browser
+    return render_browser(meals)
 
 
 def main():
