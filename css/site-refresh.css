@@ -67,25 +67,25 @@ html[data-theme][lang] body.site-v3 main#main-content .contact-small{font-size:.
 html[data-theme][lang] body.site-v3 main#main-content .home-finder-questions details{padding:0 18px!important;border:1px solid var(--work-edge)!important;border-radius:14px!important;background:var(--quiet-surface)!important;margin-bottom:12px!important}
 html[data-theme][lang] body.site-v3 main#main-content .home-finder-questions{border:0!important}
 html[data-theme][lang] body.site-v3 main#main-content .home-finder-questions summary{padding:18px 0!important}
-/* Palm green actions on charcoal surfaces, with warm neutral text. */
-html[data-theme="dark"][lang] body.site-v3{--quiet-paper:#111917;--quiet-surface:#1c2723;--quiet-surface-2:#28352f;--quiet-ink:#f4f1e8;--quiet-muted:#bcc7c1;--quiet-line:#455a4e;--quiet-green-strong:#b9d2bf;--quiet-green-soft:#284b37;--work-accent:#337553;--work-on-accent:#ffffff;--work-edge:#4a6052;--work-warm:#43382b;--work-cool:#253e46;background-color:#111917!important;color:#f4f1e8!important}
+/* A visibly green dark background with lighter palm-green panels. */
+html[data-theme="dark"][lang] body.site-v3{--quiet-paper:#194632;--quiet-surface:#22523e;--quiet-surface-2:#2c604a;--quiet-ink:#f4f1e8;--quiet-muted:#d0ded4;--quiet-line:#63856e;--quiet-green-strong:#b9d2bf;--quiet-green-soft:#284b37;--work-accent:#337553;--work-on-accent:#ffffff;--work-edge:#739780;--work-warm:#43382b;--work-cool:#253e46;background-color:#194632!important;color:#f4f1e8!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content :is(h1,h2,h3,h4){color:#f4f1e8!important}
-html[data-theme="dark"][lang] body.site-v3 main#main-content :is(p,li){color:#bcc7c1!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(p,li){color:#d0ded4!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.btn-primary,.home-primary,.calc-submit,button[type="submit"],.browse-more){background:#337553!important;color:#ffffff!important;border-color:#337553!important;box-shadow:0 3px 0 #214a36!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content a.action-link{background:#26352f!important;border-color:#5c7668!important;color:#eee9dc!important;box-shadow:none!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content a.action-link:hover{background:#344b3c!important}
-html[data-theme="dark"][lang] body.site-v3 .site-header .full-nav{background:#1c2923!important;border:1px solid #455e4e!important;box-shadow:0 10px 30px #06170935!important;backdrop-filter:none!important}
+html[data-theme="dark"][lang] body.site-v3 .site-header .full-nav{background:#173b2b!important;border:1px solid #455e4e!important;box-shadow:0 10px 30px #06170935!important;backdrop-filter:none!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header :is(.brand,.brand span,.nav-link,.nav-group-trigger,.nav-action){color:#f4f1e8!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header :is(.theme-toggle,.nav-toggle){background:transparent!important;color:#f4f1e8!important;border:1px solid #607967!important;box-shadow:none!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header :is(.nav-toggle-lines,.theme-icon,.theme-icon svg,.nav-toggle-lines i){color:#f4f1e8!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header .nav-toggle-lines i{background:#f4f1e8!important}
-html[data-theme="dark"][lang] body.site-v3 .site-header .nav-popover{background:#202e27!important;border-color:#4a6553!important;box-shadow:0 16px 40px #08160e55!important}
+html[data-theme="dark"][lang] body.site-v3 .site-header .nav-popover{background:#204934!important;border-color:#4a6553!important;box-shadow:0 16px 40px #08160e55!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header .nav-popover :is(a,strong,b,span){color:#f4f1e8!important}
-html[data-theme="dark"][lang] body.site-v3 .site-header .nav-popover small{color:#bcc7c1!important}
+html[data-theme="dark"][lang] body.site-v3 .site-header .nav-popover small{color:#d0ded4!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header .nav-popover a:hover{background:#344b3c!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content .clear-icon{background:#2c4435!important;color:#b9d2bf!important}
 @media(max-width:1000px){html[data-theme][lang] body.site-v3 main#main-content :is(.clear-about-grid,.clear-tool-grid){grid-template-columns:repeat(2,minmax(0,1fr))}html[data-theme][lang] body.site-v3 main#main-content .single-macro-grid{grid-template-columns:1fr!important}html[data-theme][lang] body.site-v3 main#main-content .protein-food-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:900px){html[data-theme="dark"][lang] body.site-v3 .site-header .full-nav-links{background:#202e27!important;color:#f4f1e8!important;border-color:#4a6553!important}html[data-theme="dark"][lang] body.site-v3 .site-header .full-nav-links :is(a,button){color:#f4f1e8!important;background:transparent!important}}
+@media(max-width:900px){html[data-theme="dark"][lang] body.site-v3 .site-header .full-nav-links{background:#204934!important;color:#f4f1e8!important;border-color:#4a6553!important}html[data-theme="dark"][lang] body.site-v3 .site-header .full-nav-links :is(a,button){color:#f4f1e8!important;background:transparent!important}}
 @media(max-width:620px){html[data-theme][lang] body.site-v3 main#main-content :is(.clear-about-grid,.clear-tool-grid,.food-filter-controls){grid-template-columns:1fr}html[data-theme][lang] body.site-v3 main#main-content .protein-food-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}html[data-theme][lang] body.site-v3 main#main-content .protein-food-card{padding:18px}html[data-theme][lang] body.site-v3 main#main-content .clear-about-grid article{padding:22px}html[data-theme][lang] body.site-v3 main#main-content .clear-tool-card{padding:20px}html[data-theme][lang] body.site-v3 main#main-content .single-macro-card{padding:20px!important}html[data-theme][lang] body.site-v3 main#main-content .home-primary{font-size:1.25rem!important}}
 @media(max-width:380px){html[data-theme][lang] body.site-v3 main#main-content .protein-food-grid{grid-template-columns:1fr}}
 /* Native page transitions retain normal navigation, history and link behavior. */
@@ -127,15 +127,15 @@ html[data-theme][lang] body.site-v3 main#main-content :is(.clear-about-grid arti
 html[data-theme][lang] body.site-v3 main#main-content :is(.clear-about-grid article:nth-child(3),.clear-tool-card:nth-child(3n),.protein-food-card:nth-child(3n)) .clear-icon{color:#286779!important;background:#e2f0f4!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.clear-about-grid article:nth-child(2),.clear-tool-card:nth-child(3n+2),.protein-food-card:nth-child(3n+2)) .clear-icon{color:#e3c48e!important;background:#463b2a!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.clear-about-grid article:nth-child(3),.clear-tool-card:nth-child(3n),.protein-food-card:nth-child(3n)) .clear-icon{color:#a9cedc!important;background:#293f49!important}
-/* Palm at night: neutral surfaces make the green and complementary accents distinct. */
+/* Palm-green backgrounds retain cream text and complementary colour accents. */
 html[data-theme="dark"][lang] body.site-v3{
- --d-bg:var(--quiet-paper);--d-bg-soft:#16201b;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-surface-3:#304037;
+ --d-bg:var(--quiet-paper);--d-bg-soft:#1c4935;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-surface-3:#32664e;
  --d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-muted-2:#a7b9ae;--d-line:var(--quiet-line);--d-line-2:#52665a;
  --d-accent:#a0c7ad;--d-accent-in:#14241a;--d-tint:#293e31;--d-fill:#294b38;--d-fill-in:#f4f1e8;--d-btn:#337553;--d-btn-in:#fff;--d-lime:#a0c7ad;
  --quiet-green:#a0c7ad;--final-muted:var(--quiet-muted);--final-accent:#a0c7ad;--final-soft:#283d30;
  background-image:none!important;
 }
-html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.home-intro,.focus-hero,.focus-page-hero,.page-hero,.match-intro,.tool-hero,.article-hero,.search-hero,.blog-hero,.clear-page-intro){background:radial-gradient(ellipse at 90% 0%,#33755324,transparent 60%),var(--quiet-paper)!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.home-intro,.focus-hero,.focus-page-hero,.page-hero,.match-intro,.tool-hero,.article-hero,.search-hero,.blog-hero,.clear-page-intro){background:radial-gradient(ellipse at 90% 0%,#51966528,transparent 60%),var(--quiet-paper)!important;box-shadow:none!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.home-decision,.home-everyday-tool,.guide-card,.tool-card,.chain-card,.blog-card,.ranking-card,.pick-card,.advice-card,.chain-finder-form,.chain-result-card,.quiz-card,.quiz-results,.meal-card,.source-box,.callout,.editorial-note){background:var(--quiet-surface)!important;border-color:var(--quiet-line)!important;box-shadow:none!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.home-launch-card,.home-launch-card.is-primary){background:#293f32!important;border:1px solid #53755d!important;box-shadow:none!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content .home-launch-card:nth-child(2){background:#3a3228!important;border-color:#756044!important}
@@ -152,7 +152,7 @@ html[data-theme="dark"][lang] body.site-v3 main#main-content .chain-choice-grid 
 html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.pick-metrics span,.chain-result-metrics){background:#25362c!important;border-color:#496151!important;color:#e3ecdf!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header :is(.nav-group-trigger,.nav-direct)[aria-current],html[data-theme="dark"][lang] body.site-v3 .site-header .nav-group-trigger[aria-expanded="true"]{background:#294b38!important;color:#fff!important}
 html[data-theme="dark"][lang] body.site-v3 .site-header .brand-mark{background:#337553!important}
-html[data-theme="dark"][lang] body.site-v3 footer.modern-footer.footer-compact{background:#19261e!important;border-color:#455e4c!important}
+html[data-theme="dark"][lang] body.site-v3 footer.modern-footer.footer-compact{background:#173d2b!important;border-color:#455e4c!important}
 html[data-theme="dark"][lang] body.site-v3 .tide-liquid{opacity:.16!important}
 html[data-theme="dark"][lang] body.site-v3 .tide-liquid i{background:linear-gradient(135deg,#4b866250,#c2925950)!important;border-color:#6b977650!important;box-shadow:none!important}
 html[data-theme="dark"][lang] body.site-v3 .tide-liquid i:nth-child(2){background:linear-gradient(135deg,#59839650,#9bb28b40)!important}

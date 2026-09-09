@@ -75,7 +75,7 @@ for path in ROOT.glob('*.html'):
     if path.name=='contact.html':s=main(s,contact())
     if path.name=='calculators.html':
         for cls in ['breadcrumb','calc-nav-wrap','calculator-scope','single-card-note','single-card-copy']:s=remove(s,cls)
-        s=s.replace('<h2>Your details</h2>','').replace('Free macro calculator</h1>','Macro calculator</h1>')
+        s=s.replace('<h2>Your details</h2>','').replace('>Macro calculator</h1>','>Free macro calculator</h1>')
         s=s.replace('<p class="hint">The calorie equation uses a different constant for each sex.</p>','')
         s=s.replace('<label for="weight">Weight (','<label class="sr-only" for="weight">Weight (')
         s=s.replace('<span class="field-label">Height in feet and inches</span>','')
