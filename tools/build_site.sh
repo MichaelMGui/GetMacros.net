@@ -3,6 +3,7 @@
 set -e
 cd "$(dirname "$0")/.."
 
+python3 tools/bundle_styles.py --restore
 python3 tools/generate_articles.py
 
 # Focused product generators. Legacy breadcrumb/related-link post-passes relied
@@ -38,12 +39,15 @@ python3 tools/refine_workspaces.py
 python3 tools/refine_organization.py
 python3 tools/finalize_quality.py
 python3 tools/simplify_interface.py
+python3 tools/refine_approachability.py
+python3 tools/bundle_styles.py
 # Last, so it sees the final head of every page: rewrite each local CSS and
 # JS link with a hash of that file, so a changed asset always busts caches
 # and an unchanged one keeps its cache entry.
 python3 tools/stamp_assets.py
 
 python3 tools/validate_site.py
+python3 tools/test_style_bundles.py
 python3 tools/audit_visual_contract.py
 python3 tools/test_workspace_contract.py
 python3 tools/test_homepage_extension.py

@@ -18,7 +18,7 @@
   control.type = 'button';
   control.className = 'tide-motion-toggle';
   const sync = () => {
-    active = !paused && !preference.matches;
+    active = !paused && !preference.matches && !document.hidden;
     root.classList.toggle('tide-motion-on', active);
     root.classList.toggle('tide-motion-off', !active);
     control.textContent = preference.matches ? 'Motion reduced by device' : paused ? 'Enable motion' : 'Pause motion';
@@ -33,6 +33,7 @@
   });
   (document.querySelector('footer .container') || document.querySelector('footer'))?.append(control);
   preference.addEventListener('change', sync);
+  document.addEventListener?.('visibilitychange', sync);
   sync();
 
   // A quiet colour wash tracks progress without moving the document itself.
@@ -42,8 +43,6 @@
     if (!active) return;
     const length = Math.max(1, root.scrollHeight - innerHeight);
     const progress = Math.min(1, Math.max(0, scrollY / length));
-    root.style.setProperty('--tide-wash-x', (12 + progress * 76).toFixed(1) + '%');
-    root.style.setProperty('--tide-wash-y', (18 + progress * 54).toFixed(1) + '%');
     root.style.setProperty('--tide-progress', progress.toFixed(4));
   };
   addEventListener('scroll', () => {
@@ -72,7 +71,7 @@
   }
 
   // One-time entrances, only after intersection; observer failure cannot hide text.
-  const targets = document.querySelectorAll('main h1,main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool');
+  const targets = document.querySelectorAll('main h1,main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
       let sequence = 0;
@@ -82,14 +81,13 @@
         if (entry.target.closest('form,[aria-live],#meal-quiz')) return;
         const heading = /^H[12]$/.test(entry.target.tagName);
         play(entry.target, heading ? [
-          { translate: '0 28px', opacity: .65 },
-          { translate: '0 -2px', opacity: 1, offset: .78 },
+          { translate: '0 12px', opacity: 1 },
+          { translate: '0 0', opacity: 1, offset: .78 },
           { translate: '0 0', opacity: 1 }
         ] : [
-          { translate: '0 30px', rotate: '0.6deg', filter: 'blur(2px)' },
-          { translate: '0 -3px', rotate: '-0.12deg', filter: 'blur(0)', offset: .76 },
-          { translate: '0 0', rotate: '0deg', filter: 'blur(0)' }
-        ], { duration: heading ? 950 : 780, delay: Math.min(sequence++ * 65, 195), easing: 'cubic-bezier(.2,.75,.2,1)' });
+          { translate: '0 16px', opacity: .94 },
+          { translate: '0 0', opacity: 1 }
+        ], { duration: heading ? 420 : 480, delay: Math.min(sequence++ * 35, 105), easing: 'cubic-bezier(.2,.75,.2,1)' });
       });
     }, { threshold: .12 });
     targets.forEach(target => observer.observe(target));
@@ -106,7 +104,8 @@
       ripple.style.top = event.clientY - box.top + 'px';
       button.append(ripple);
       const size = Math.hypot(box.width, box.height) * 2;
-      play(ripple, [{ width: '0px', height: '0px', opacity: .3 }, { width: size + 'px', height: size + 'px', opacity: 0 }], { duration: 650, easing: 'ease-out' });
+      ripple.style.width=size+'px';ripple.style.height=size+'px';
+      play(ripple, [{ scale: '0', opacity: .3 }, { scale: '1', opacity: 0 }], { duration: 500, easing: 'ease-out' });
       setTimeout(() => ripple.remove(), 700);
     });
     button.addEventListener('pointerenter', () => {

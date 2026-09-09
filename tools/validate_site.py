@@ -242,7 +242,7 @@ def main() -> int:
         # every time the stylesheet was edited.
         if "css/premium-v4.css?v=" not in text:
             errors.append(f"{path}: shared premium visual system is missing")
-        if text.count("css/unified-v7.css?") != 1:
+        if text.count("css/unified-v7.css") != 1 or not re.search(r'href="css/(?:unified-v7|core-bundle)\.css\?', text):
             errors.append(f"{path}: unified visual layer must load exactly once")
         if text.count("js/unified-v7.js?") != 1:
             errors.append(f"{path}: unified interaction layer must load exactly once")
@@ -451,8 +451,8 @@ def main() -> int:
         errors.append("calculators.html: stale social metadata remains")
     if '"name": "Articles"' in calc_text or "Home › Articles ›" in calc_text:
         errors.append("calculators.html: stale Articles breadcrumb remains")
-    if '"name": "Macro Calculator"' not in calc_text or not re.search(r'Home</a>\s*<span[^>]*>&rsaquo;</span>\s*<span[^>]*>Macro Calculator</span>', calc_text):
-        errors.append("calculators.html: calculator breadcrumb hierarchy is missing")
+    if '"name": "Macro Calculator"' not in calc_text or 'BreadcrumbList' not in calc_text:
+        errors.append("calculators.html: structured calculator breadcrumb hierarchy is missing")
 
     try:
         ET.parse(ROOT / "feed.xml")

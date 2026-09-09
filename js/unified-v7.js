@@ -281,7 +281,7 @@
     try { titleReveals(); } catch (error) {}
     // Tide owns entrances; retire the legacy observer to avoid double motion.
     document.querySelectorAll('.studio-reveal').forEach(item => item.classList.add('is-visible'));
-    try { pointerLight(); } catch (error) {}
+    // Avoid repainting large gradients on every pointer movement.
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);

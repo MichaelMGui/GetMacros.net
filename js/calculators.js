@@ -268,16 +268,13 @@
       }
       out.classList.remove("empty");
       var low = (cals * 0.2) / 9;
-      var mid = (cals * 0.275) / 9;
+
       var high = (cals * 0.35) / 9;
       out.innerHTML =
         '<div class="result-total">' +
           '<div class="num">' + fmt(low) + '&ndash;' + fmt(high) + ' g</div>' +
-          '<div class="label">recommended fat per day (20&ndash;35% of calories)</div>' +
-        '</div>' +
-        '<div class="macro-result-row"><span>Lower bound (20%)</span><span class="amounts"><span class="grams">' + fmt(low) + ' g</span><br><span class="cals">' + fmt(cals * 0.2) + ' cal</span></span></div>' +
-        '<div class="macro-result-row"><span>Typical (27.5%)</span><span class="amounts"><span class="grams">' + fmt(mid) + ' g</span><br><span class="cals">' + fmt(cals * 0.275) + ' cal</span></span></div>' +
-        '<div class="macro-result-row"><span>Upper bound (35%)</span><span class="amounts"><span class="grams">' + fmt(high) + ' g</span><br><span class="cals">' + fmt(cals * 0.35) + ' cal</span></span></div>';
+          '<div class="label">fat per day (20&ndash;35% of calories)</div>' +
+        '</div>';
     });
   }
 
@@ -366,17 +363,14 @@
       }
 
       var low = (cals * 0.45) / 4;
-      var mid = (cals * 0.55) / 4;
+
       var high = (cals * 0.65) / 4;
       out.classList.remove("empty");
       out.innerHTML =
         '<div class="result-total">' +
         '<div class="num">' + fmt(low) + "&ndash;" + fmt(high) + " g</div>" +
-        '<div class="label">recommended carbs per day (45&ndash;65% of calories)</div>' +
-        "</div>" +
-        '<div class="macro-result-row"><span>Lower bound (45%)</span><span class="amounts"><span class="grams">' + fmt(low) + ' g</span><br><span class="cals">' + fmt(cals * 0.45) + ' cal</span></span></div>' +
-        '<div class="macro-result-row"><span>Typical (55%)</span><span class="amounts"><span class="grams">' + fmt(mid) + ' g</span><br><span class="cals">' + fmt(cals * 0.55) + ' cal</span></span></div>' +
-        '<div class="macro-result-row"><span>Upper bound (65%)</span><span class="amounts"><span class="grams">' + fmt(high) + ' g</span><br><span class="cals">' + fmt(cals * 0.65) + ' cal</span></span></div>';
+        '<div class="label">carbs per day (45&ndash;65% of calories)</div>' +
+        "</div>";
     });
   }
 

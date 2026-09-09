@@ -28,20 +28,20 @@
     </div>
     <div class="home-finder-questions">
       <details>
-        <summary>How does the meal finder choose my matches?</summary>
-        <p>Your goals, appetite, dietary preferences and restaurant choices shape the ranking. Results show the nutrition numbers and explain where an order fits—and where it falls short.</p>
+        <summary>How are my meals picked?</summary>
+        <p>Your answers help us sort the meals. Compare the nutrition and see which ones fit your goals.</p>
       </details>
       <details>
-        <summary>Can I choose more than one goal?</summary>
-        <p>Yes. Combine goals such as high protein and bulking in the quiz. Check each result’s explanation: a close match may meet some of your preferences rather than all of them.</p>
+        <summary>Can I pick more than one goal?</summary>
+        <p>Yes. Try weight gain and high protein, for example. Each result shows how many of your goals it matches.</p>
       </details>
       <details>
-        <summary>Do I need to know my calorie target first?</summary>
-        <p>No. You can start with your meal preferences. If you want a daily starting estimate, use the <a href="calculators.html">macro calculator</a> separately; a daily target is not a target for every meal.</p>
+        <summary>Do I need a calorie target?</summary>
+        <p>No. You can use the finder right away. The <a href="calculators.html">macro calculator</a> can help if you want a daily estimate.</p>
       </details>
       <details>
-        <summary>Will my exact order have the same nutrition?</summary>
-        <p>Not necessarily. Published figures describe standard builds; portions, substitutions and location can change them. Check the restaurant’s current nutrition and allergen information before ordering. <a href="sources.html">See our data sources.</a></p>
+        <summary>Will my order have these exact numbers?</summary>
+        <p>Portions and swaps can change the numbers. Check the restaurant’s menu and allergen information before ordering.</p>
       </details>
     </div>
   </div>

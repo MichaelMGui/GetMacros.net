@@ -69,21 +69,35 @@
     var chainMeals = meals.filter(function (meal) { return key(meal.chain) === key(chain); });
     if (!form || !output || !chainMeals.length) return;
 
+    form.addEventListener('change', function(event) {
+      output.hidden = true;
+      var input = event.target;
+      if (!['chain-goal','chain-diet'].includes(input.name)) return;
+      var resetValue = input.name === 'chain-goal' ? 'balanced' : '';
+      var peers = Array.from(form.querySelectorAll('input[name="'+input.name+'"]'));
+      if (input.checked && input.value === resetValue) peers.forEach(function(p){if(p!==input)p.checked=false;});
+      else if (input.checked) peers.forEach(function(p){if(p.value===resetValue)p.checked=false;});
+      if (!peers.some(function(p){return p.checked;})) peers.find(function(p){return p.value===resetValue;}).checked=true;
+    });
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var data = new FormData(form);
-      var goal = data.get("chain-goal") || "balanced";
+      var goals = data.getAll("chain-goal").filter(function(g){return g!=='balanced';});
+      if (!goals.length) goals=['balanced'];
       var size = data.get("chain-size") || "";
-      var diet = data.get("chain-diet") || "";
+      var diets = data.getAll("chain-diet").filter(Boolean);
       var results = chainMeals.filter(function (meal) {
-        return !diet || (meal.diet || []).indexOf(diet) !== -1;
-      }).sort(function (a, b) { return score(b, goal, size) - score(a, goal, size); });
+        return diets.every(function(diet){return (meal.diet || []).indexOf(diet) !== -1;});
+      }).sort(function (a, b) { return goals.reduce(function(total,goal){return total+score(b,goal,size)-score(a,goal,size);},0); });
 
       if (!results.length) {
-        output.innerHTML = '<div class="chain-empty"><h3>No standard build here matches that dietary filter.</h3><p>Try removing the filter. Then confirm ingredients and cross-contact directly with ' + esc(chain) + '.</p></div>';
+        output.innerHTML = '<div class="chain-empty"><h3>No meals match these choices.</h3><p>Try fewer filters. For allergies, check ingredients and cross-contact with ' + esc(chain) + '.</p></div>';
       } else {
         var shown = results.slice(0, 3);
-        output.innerHTML = '<div class="chain-results-head"><h3>Your meal matches</h3></div><div class="chain-result-grid">' + shown.map(function (meal, index) { return card(meal, index, goal); }).join("") + '</div>';
+        var labels={protein:'high protein',light:'weight loss',energy:'weight gain',fibre:'higher fiber',lowsodium:'less sodium'};
+        var title=goals[0]==='balanced'?'Your meal matches':'Meals for '+goals.map(function(g){return labels[g];}).join(' + ');
+        output.innerHTML = '<div class="chain-results-head"><h3>'+esc(title)+'</h3></div><div class="chain-result-grid">' + shown.map(function (meal, index) { return card(meal, index, goals.length===1?goals[0]:'balanced'); }).join("") + '</div>';
       }
       output.hidden = false;
     });
