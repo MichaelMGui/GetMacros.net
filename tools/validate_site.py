@@ -418,7 +418,9 @@ def main() -> int:
             continue
         page_path = chain_meals[0]["url"]
         page_text = pages.get(page_path, ("", PageParser()))[0]
-        if config["source"] not in page_text:
+        reviews = json.loads((ROOT / "tools/restaurant-review.json").read_text(encoding="utf-8"))
+        source_urls = {r["source"] for r in reviews if r["chain"] == chain}
+        if not source_urls or not all(url in page_text for url in source_urls):
             errors.append(f"{page_path}: official {chain} source missing")
         if "data-chain-finder" not in page_text or "js/chain-meal-finder.js?v=" not in page_text:
             errors.append(f"{page_path}: restaurant-only meal matcher missing")

@@ -88,7 +88,10 @@
       var size = data.get("chain-size") || "";
       var diets = data.getAll("chain-diet").filter(Boolean);
       var results = chainMeals.filter(function (meal) {
-        return diets.every(function(diet){return (meal.diet || []).indexOf(diet) !== -1;});
+        return diets.every(function(diet){return (meal.diet || []).indexOf(diet) !== -1;}) && goals.every(function(goal){
+          var nutrient = {protein:'p',light:'cal',energy:'cal',fibre:'f',lowsodium:'na'}[goal];
+          return !nutrient || meal[nutrient] !== null;
+        });
       }).sort(function (a, b) { return goals.reduce(function(total,goal){return total+score(b,goal,size)-score(a,goal,size);},0); });
 
       if (!results.length) {

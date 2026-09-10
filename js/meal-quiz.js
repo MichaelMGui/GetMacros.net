@@ -87,6 +87,10 @@
 
   function eligible(m) {
     if (!includeIncomplete && !complete(m)) return false;
+    if (!state.goal.every(function(goal) {
+      var nutrient = {protein:'p',light:'cal',energy:'cal',fibre:'f',lowsodium:'na'}[goal];
+      return !nutrient || m[nutrient] !== null;
+    })) return false;
     if (state.meal.length && state.meal.indexOf(m.meal) === -1) return false;
     if (state.diet.length && !state.diet.every(function (d) { return m.diet.indexOf(d) !== -1; })) return false;
     if (state.chain.length && state.chain.indexOf(m.chain) === -1) return false;

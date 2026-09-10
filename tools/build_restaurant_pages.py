@@ -53,7 +53,7 @@ CHAIN_CONFIG = {
         "advice": [
             "Start with greens, grains or a mix based on appetite and training needs, not because one base is universally better.",
             "Dips and dressings are easy to stack. Choose the ones you value instead of automatically adding every option.",
-            "Some CAVA nutrients are not available in a form we can verify for every build; missing values remain blank rather than being treated as zero.",
+            "These figures cover the standard bowls in the linked nutrition guide. Changing a base, protein, dip or dressing changes the total.",
         ],
     },
     "Chick-fil-A": {
@@ -218,7 +218,7 @@ def item_type(meal: dict) -> str:
     name = meal["name"].lower()
     if meal.get("meal") == "breakfast":
         return "Breakfast"
-    if any(word in name for word in ("side", "apple slices", "coleslaw", "green beans")):
+    if re.search(r"\bside\b", name) or name.startswith(("apple slices", "coleslaw", "green beans")):
         return "Side"
     if meal.get("size") == "small" and (meal.get("p") or 0) < 10:
         return "Side / snack"

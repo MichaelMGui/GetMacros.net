@@ -21,6 +21,16 @@ const {chromium,webkit}=require('C:/Users/slowf/.cache/codex-runtimes/codex-prim
      await pick('balanced').click();
      assert.equal(await p.locator('input[name="chain-goal"]:checked').count(),1);
      assert.equal(await p.locator('[data-chain-results]').isVisible(),false);
+     if(file==='taco-bell-healthy-meals-macros.html'){
+      await pick('fibre').click();
+      await p.locator('[data-chain-form] button[type="submit"]').click();
+      assert.equal(await p.locator('.chain-result-card').count(),0,'Unknown fiber must not be ranked as a match');
+      assert.match(await p.locator('[data-chain-results]').innerText(),/No meals match/);
+      await pick('protein').click();await pick('fibre').click();
+      await p.locator('[data-chain-form] button[type="submit"]').click();
+      assert.equal(await p.locator('.chain-result-card').count(),1);
+      assert.match(await p.locator('.chain-result-card').innerText(),/Cantina Chicken Bowl/);
+     }
     }
     await go('high-protein-foods-list.html');
     assert.equal(await p.locator('.protein-food-card:visible').count(),25);

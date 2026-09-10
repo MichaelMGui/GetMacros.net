@@ -10,6 +10,7 @@ ADDITIONS={
 'calories-vs-macros-what-matters-more.html': '''<h2>Why two plans with the same calories can feel different</h2><p>Consider two hypothetical 2,000-calorie plans. Plan A has 100 g protein, 250 g carbohydrate and about 67 g fat. Plan B has 150 g protein, 200 g carbohydrate and about 67 g fat. Using 4 calories per gram of protein and carbohydrate and 9 per gram of fat, each comes to approximately 2,000 calories; the small difference is rounding.</p><p>Moving 50 g from carbohydrate to protein keeps the arithmetic similar but changes the foods and portions needed. This does not prove that Plan B is better. The useful question is whether either plan suits the person’s protein needs, activity, food preferences and health context.</p><p>You do not need to optimize every number at once. If you are struggling to follow a plan, first identify the actual problem: hunger, inconvenient meals, an unrealistic target, training fatigue or inaccurate portions. A more complicated macro ratio is not automatically the solution.</p><p>The <a href="https://www.niddk.nih.gov/health-information/weight-management/body-weight-planner">NIDDK Body Weight Planner</a> explains why energy needs change over time. Revisit estimates as circumstances change, and use a repeatable eating pattern rather than treating a calculator result as permanent.</p>'''
 }
 for name,addition in ADDITIONS.items():
+ if name=='best-fast-food-restaurants-for-your-goals.html':continue  # Owned by the sourced submission pass.
  p=ROOT/name;s=p.read_text(encoding='utf-8')
  s=re.sub(r'<!--journal-revision:start-->.*?<!--journal-revision:end-->','',s,flags=re.S)
  # Keep the direct answer first, and insert the practical material before the sources.
@@ -45,7 +46,9 @@ def card(match):
  block=match.group(0)
  for name in ADDITIONS:
   if 'href="'+name+'"' in block:
-   article=(ROOT/name).read_text(encoding='utf-8');minutes=re.search(r'(\d+) minute read',article).group(1)
+   article=(ROOT/name).read_text(encoding='utf-8');match=re.search(r'(\d+) minute read',article)
+   if not match:continue
+   minutes=match.group(1)
    block=re.sub(r'\d+ min read',minutes+' min read',block)
  return block
 text=re.sub(r'<a class="blog-card.*?</a>',card,text,flags=re.S)

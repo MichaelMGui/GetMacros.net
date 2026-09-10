@@ -1,0 +1,252 @@
+[
+  {
+    "name": "Chicken breast, roasted",
+    "group": "animal",
+    "protein100": 31,
+    "calories100": 165,
+    "grams": 113,
+    "portion": "4 oz (113 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/171477/nutrients",
+    "reference": "Skinless breast meat"
+  },
+  {
+    "name": "Light tuna in water, drained",
+    "group": "animal",
+    "protein100": 25.5,
+    "calories100": 116,
+    "grams": 120,
+    "portion": "Drained portion (120 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/171986/nutrients",
+    "reference": "Without added salt; can sizes vary"
+  },
+  {
+    "name": "Turkey breast, roasted",
+    "group": "animal",
+    "protein100": 30.1,
+    "calories100": 147,
+    "grams": 113,
+    "portion": "4 oz (113 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/171496/nutrients",
+    "reference": "Meat only, from a whole turkey"
+  },
+  {
+    "name": "Shrimp, cooked",
+    "group": "animal",
+    "protein100": 24,
+    "calories100": 99,
+    "grams": 113,
+    "portion": "4 oz (113 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/175180/nutrients",
+    "reference": ""
+  },
+  {
+    "name": "Greek yogurt, plain nonfat",
+    "group": "animal",
+    "protein100": 10.19,
+    "calories100": 59,
+    "grams": 170,
+    "portion": "Small container (170 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg01.pdf#page=696",
+    "reference": ""
+  },
+  {
+    "name": "Cottage cheese, 1% fat",
+    "group": "animal",
+    "protein100": 12.4,
+    "calories100": 72,
+    "grams": 226,
+    "portion": "1 cup (226 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/173417/nutrients",
+    "reference": ""
+  },
+  {
+    "name": "Atlantic salmon, cooked",
+    "group": "animal",
+    "protein100": 22.1,
+    "calories100": 206,
+    "grams": 113,
+    "portion": "4 oz (113 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/175168/nutrients",
+    "reference": "Farmed; cooked with dry heat"
+  },
+  {
+    "name": "Pork loin, roasted",
+    "group": "animal",
+    "protein100": 28.6,
+    "calories100": 209,
+    "grams": 113,
+    "portion": "4 oz (113 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/168233/nutrients",
+    "reference": "Separable lean only"
+  },
+  {
+    "name": "Ground beef, 90% lean, cooked",
+    "group": "animal",
+    "protein100": 25.2,
+    "calories100": 204,
+    "grams": 113,
+    "portion": "4 oz (113 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/171793/nutrients",
+    "reference": "Pan-broiled patty"
+  },
+  {
+    "name": "Eggs, hard-boiled",
+    "group": "animal",
+    "protein100": 12.58,
+    "calories100": 155,
+    "grams": 100,
+    "portion": "2 large (100 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg01.pdf#page=384",
+    "reference": ""
+  },
+  {
+    "name": "Milk, 2%",
+    "group": "animal",
+    "protein100": 3.3,
+    "calories100": 50,
+    "grams": 244,
+    "portion": "1 cup (244 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg01.pdf#page=623",
+    "reference": ""
+  },
+  {
+    "name": "Whey powder, chocolate",
+    "group": "animal",
+    "protein100": 78.94736842105263,
+    "calories100": 394.7368421052632,
+    "grams": 30.4,
+    "portion": "1 scoop (30.4 g)",
+    "source": "https://www.nsfsport.com/certified-products/listing-detail.php?id=1256427",
+    "reference": "ON Gold Standard Double Rich Chocolate, U.S. label"
+  },
+  {
+    "name": "Tempeh",
+    "group": "plant",
+    "protein100": 20.29,
+    "calories100": 192,
+    "grams": 85,
+    "portion": "Before cooking: 3 oz (85 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg16.pdf#page=803",
+    "reference": ""
+  },
+  {
+    "name": "Edamame, cooked and shelled",
+    "group": "plant",
+    "protein100": 11.91,
+    "calories100": 121,
+    "grams": 155,
+    "portion": "1 cup (155 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg11.pdf#page=741",
+    "reference": ""
+  },
+  {
+    "name": "Lentils, cooked",
+    "group": "plant",
+    "protein100": 9.02,
+    "calories100": 116,
+    "grams": 198,
+    "portion": "1 cup (198 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg16.pdf#page=353",
+    "reference": "Boiled without salt"
+  },
+  {
+    "name": "Black beans, cooked",
+    "group": "plant",
+    "protein100": 8.86,
+    "calories100": 132,
+    "grams": 172,
+    "portion": "1 cup (172 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg16.pdf#page=55",
+    "reference": "Boiled without salt"
+  },
+  {
+    "name": "Firm tofu",
+    "group": "plant",
+    "protein100": 17.27,
+    "calories100": 144,
+    "grams": 126,
+    "portion": "Portion (126 g)",
+    "source": "https://fdc.nal.usda.gov/food-details/172475/nutrients",
+    "reference": "Firm tofu prepared with calcium sulfate; brands vary"
+  },
+  {
+    "name": "Hemp hearts",
+    "group": "plant",
+    "protein100": 31.56,
+    "calories100": 553,
+    "grams": 30,
+    "portion": "3 tbsp (30 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg12.pdf#page=297",
+    "reference": "Hulled hemp seeds"
+  },
+  {
+    "name": "Chickpeas, cooked",
+    "group": "plant",
+    "protein100": 8.86,
+    "calories100": 164,
+    "grams": 164,
+    "portion": "1 cup (164 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg16.pdf#page=263",
+    "reference": "Boiled without salt"
+  },
+  {
+    "name": "Peanut butter, smooth",
+    "group": "plant",
+    "protein100": 22.21,
+    "calories100": 598,
+    "grams": 32,
+    "portion": "2 tbsp (32 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg16.pdf#page=563",
+    "reference": "Without salt"
+  },
+  {
+    "name": "Chia seeds",
+    "group": "plant",
+    "protein100": 16.54,
+    "calories100": 486,
+    "grams": 24,
+    "portion": "2 tbsp (24 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg12.pdf#page=279",
+    "reference": "Dried"
+  },
+  {
+    "name": "Quinoa, cooked",
+    "group": "plant",
+    "protein100": 4.4,
+    "calories100": 120,
+    "grams": 185,
+    "portion": "1 cup (185 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf#page=256",
+    "reference": ""
+  },
+  {
+    "name": "Almonds",
+    "group": "plant",
+    "protein100": 21.15,
+    "calories100": 579,
+    "grams": 28,
+    "portion": "1 oz (28 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg12.pdf#page=18",
+    "reference": ""
+  },
+  {
+    "name": "Pumpkin seeds, shelled",
+    "group": "plant",
+    "protein100": 30.23,
+    "calories100": 559,
+    "grams": 28,
+    "portion": "1 oz (28 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg12.pdf#page=306",
+    "reference": "Dried kernels (pepitas)"
+  },
+  {
+    "name": "Rolled oats, dry",
+    "group": "plant",
+    "protein100": 13.15,
+    "calories100": 379,
+    "grams": 40,
+    "portion": "½ cup (40 g)",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg08.pdf#page=764",
+    "reference": ""
+  }
+]

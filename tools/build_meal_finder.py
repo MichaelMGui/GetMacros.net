@@ -51,7 +51,7 @@ SODIUM_MG = 600
 def substantial(m):
     """Require enough energy and protein to function as a meaningful entrée."""
     name = m.get("name", "").lower()
-    looks_like_side = any(word in name for word in ("side", "apple slices", "coleslaw", "green beans"))
+    looks_like_side = bool(re.search(r"\bside\b", name)) or name.startswith(("apple slices", "coleslaw", "green beans"))
     snack_size = m.get("size") == "small" and (m.get("p") or 0) < 10
     return (
         not looks_like_side

@@ -40,6 +40,10 @@ async function check(page){
     const files=engine==='edge'?all:all.filter(f=>/chipotle|jersey-mikes|panda-express/.test(f));
     for(const file of files){
      await p.goto('http://127.0.0.1:4174/'+file);
+     const rankings=p.locator('.compact-chain-ranking');
+     assert.ok(await rankings.count()>=3);
+     assert.equal(await p.locator('.compact-chain-ranking[open]').count(),0);
+     for(const summary of await rankings.locator('summary').all())await summary.click();
      for(const goal of ['protein','energy'])await p.locator('label').filter({has:p.locator('input[name="chain-goal"][value="'+goal+'"]')}).click();
      await p.locator('[data-chain-form] button[type="submit"]').click();
      assert.ok(await p.locator('.chain-result-card').count()>0);await check(p);

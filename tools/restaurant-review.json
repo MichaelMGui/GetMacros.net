@@ -1,0 +1,1083 @@
+[
+  {
+    "chain": "Sweetgreen",
+    "name": "Chicken Pesto Parm",
+    "source": "https://www.sweetgreen.com/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 510,
+      "p": 38,
+      "c": 30,
+      "f": 6,
+      "na": 1560
+    }
+  },
+  {
+    "chain": "Sweetgreen",
+    "name": "Harvest Bowl",
+    "source": "https://www.sweetgreen.com/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 760,
+      "p": 40,
+      "c": 60,
+      "f": 10,
+      "na": 1265
+    }
+  },
+  {
+    "chain": "Sweetgreen",
+    "name": "Shroomami",
+    "source": "https://www.sweetgreen.com/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 665,
+      "p": 20,
+      "c": 51,
+      "f": 11,
+      "na": 1250
+    }
+  },
+  {
+    "chain": "Sweetgreen",
+    "name": "Super Green Goddess",
+    "source": "https://www.sweetgreen.com/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 465,
+      "p": 12,
+      "c": 36,
+      "f": 13,
+      "na": 1230
+    }
+  },
+  {
+    "chain": "Sweetgreen",
+    "name": "Guacamole Greens",
+    "source": "https://www.sweetgreen.com/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 555,
+      "p": 29,
+      "c": 35,
+      "f": 12,
+      "na": 1560
+    }
+  },
+  {
+    "chain": "Wendy’s",
+    "name": "Classic Chicken Sandwich",
+    "source": "https://order.wendys.com/us/en/national/menu/chicken-nuggets-more/classic-chicken-sandwich",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 550,
+      "p": 28,
+      "c": 55,
+      "f": 3,
+      "na": 1630
+    }
+  },
+  {
+    "chain": "Wendy’s",
+    "name": "Grilled Chicken Ranch Wrap",
+    "source": "https://order.wendys.com/us/en/national/menu/chicken-nuggets-more/grilled-chicken-wrap",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 420,
+      "p": 28,
+      "c": 41,
+      "f": 1,
+      "na": 1100
+    }
+  },
+  {
+    "chain": "Wendy’s",
+    "name": "Apple Pecan Salad with one dressing packet",
+    "source": "https://order.wendys.com/us/en/national/menu/fresh-made-salads/apple-pecan-salad",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 510,
+      "p": 30,
+      "c": 43,
+      "f": 5,
+      "na": 1170
+    }
+  },
+  {
+    "chain": "Wendy’s",
+    "name": "Chili, small",
+    "source": "https://order.wendys.com/us/en/national/menu/fries-sides/chili",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 280,
+      "p": 19,
+      "c": 24,
+      "f": 3,
+      "na": 1050
+    }
+  },
+  {
+    "chain": "Wendy’s",
+    "name": "Dave’s Single",
+    "source": "https://order.wendys.com/us/en/national/menu/hamburgers/daves-single",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 560,
+      "p": 31,
+      "c": 37,
+      "f": 2,
+      "na": 1170
+    }
+  },
+  {
+    "chain": "Panera",
+    "name": "Green Goddess Cobb Salad with Chicken, half",
+    "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 290,
+      "p": 20,
+      "c": 15,
+      "f": 4,
+      "na": 990
+    }
+  },
+  {
+    "chain": "Panera",
+    "name": "Greek Salad, whole",
+    "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 630,
+      "p": 8,
+      "c": 17,
+      "f": 5,
+      "na": 1400
+    }
+  },
+  {
+    "chain": "Panera",
+    "name": "Homestyle Chicken Noodle Soup, cup",
+    "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 120,
+      "p": 10,
+      "c": 14,
+      "f": 0,
+      "na": 1050
+    }
+  },
+  {
+    "chain": "Panera",
+    "name": "Caesar with Chicken Salad, whole",
+    "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 670,
+      "p": 35,
+      "c": 27,
+      "f": 4,
+      "na": 2620
+    }
+  },
+  {
+    "chain": "Panera",
+    "name": "Hearty Fireside Chili, bowl",
+    "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 410,
+      "p": 19,
+      "c": 49,
+      "f": 9,
+      "na": 1730
+    }
+  },
+  {
+    "chain": "KFC",
+    "name": "Original Recipe Drumstick",
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 130,
+      "p": 12,
+      "c": 4,
+      "f": 1,
+      "na": 430
+    }
+  },
+  {
+    "chain": "KFC",
+    "name": "Original Recipe Breast",
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 390,
+      "p": 39,
+      "c": 11,
+      "f": 2,
+      "na": 1190
+    }
+  },
+  {
+    "chain": "KFC",
+    "name": "Kentucky Grilled Chicken Breast",
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 210,
+      "p": 38,
+      "c": 0,
+      "f": 0,
+      "na": 710
+    }
+  },
+  {
+    "chain": "KFC",
+    "name": "Green Beans, individual",
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 25,
+      "p": 1,
+      "c": 5,
+      "f": 3,
+      "na": 300
+    }
+  },
+  {
+    "chain": "KFC",
+    "name": "Grilled Breast with green beans and corn",
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 305,
+      "p": 41,
+      "c": 21,
+      "f": 5,
+      "na": 1010
+    }
+  },
+  {
+    "chain": "Popeyes",
+    "name": "3 Blackened Tenders",
+    "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 170,
+      "p": 28,
+      "c": 2,
+      "f": 1,
+      "na": 860
+    }
+  },
+  {
+    "chain": "Popeyes",
+    "name": "5 Blackened Tenders",
+    "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 280,
+      "p": 47,
+      "c": 4,
+      "f": 1,
+      "na": 1430
+    }
+  },
+  {
+    "chain": "Popeyes",
+    "name": "Red Beans & Rice, regular",
+    "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 260,
+      "p": 7,
+      "c": 29,
+      "f": 6,
+      "na": 580
+    }
+  },
+  {
+    "chain": "Popeyes",
+    "name": "3 Blackened Tenders with regular red beans and rice",
+    "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 430,
+      "p": 35,
+      "c": 31,
+      "f": 7,
+      "na": 1440
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Turkey Bacon, Cheddar & Egg White Sandwich",
+    "source": "https://www.starbucks.com/menu/product/368/single",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 260,
+      "p": 17,
+      "c": 30,
+      "f": 2,
+      "na": 600
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Spinach, Feta & Egg White Wrap",
+    "source": "https://www.starbucks.com/menu/product/371/single",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 290,
+      "p": 20,
+      "c": 34,
+      "f": 3,
+      "na": 840
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Rolled & Steel-Cut Oatmeal",
+    "source": "https://www.starbucks.com/menu/product/301/single",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 160,
+      "p": 5,
+      "c": 28,
+      "f": 4,
+      "na": 125
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Cheese Trio Protein Box",
+    "source": "https://www.starbucks.com/menu/product/2123222/single",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 520,
+      "p": 20,
+      "c": 59,
+      "f": 5,
+      "na": 710
+    }
+  },
+  {
+    "chain": "CAVA",
+    "name": "Greek Salad bowl",
+    "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 585,
+      "p": 37,
+      "c": 19,
+      "f": 8,
+      "na": 1830
+    }
+  },
+  {
+    "chain": "CAVA",
+    "name": "Falafel Crunch bowl",
+    "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 860,
+      "p": 24,
+      "c": 88,
+      "f": 18,
+      "na": 2230
+    }
+  },
+  {
+    "chain": "CAVA",
+    "name": "Chicken + Rice bowl",
+    "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 710,
+      "p": 40,
+      "c": 43,
+      "f": 7,
+      "na": 1830
+    }
+  },
+  {
+    "chain": "CAVA",
+    "name": "Harissa Avocado bowl",
+    "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 840,
+      "p": 42,
+      "c": 63,
+      "f": 12,
+      "na": 2030
+    }
+  },
+  {
+    "chain": "Dunkin’",
+    "name": "Egg & Cheese Wake-Up Wrap",
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 180,
+      "p": 7,
+      "c": 14,
+      "f": 0,
+      "na": 470
+    }
+  },
+  {
+    "chain": "Dunkin’",
+    "name": "Egg & Cheese English Muffin",
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 340,
+      "p": 14,
+      "c": 38,
+      "f": 1,
+      "na": 650
+    }
+  },
+  {
+    "chain": "Dunkin’",
+    "name": "Turkey Sausage Wake-Up Wrap",
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 230,
+      "p": 11,
+      "c": 15,
+      "f": 0,
+      "na": 660
+    }
+  },
+  {
+    "chain": "Dunkin’",
+    "name": "Sourdough Breakfast Sandwich",
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 630,
+      "p": 30,
+      "c": 58,
+      "f": 3,
+      "na": 1300
+    }
+  },
+  {
+    "chain": "Subway",
+    "name": "6-inch Veggie Delite",
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 320,
+      "p": 17,
+      "c": 41,
+      "f": 4,
+      "na": 600
+    }
+  },
+  {
+    "chain": "Subway",
+    "name": "6-inch Oven-Roasted Turkey",
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 480,
+      "p": 26,
+      "c": 42,
+      "f": 3,
+      "na": 1150
+    }
+  },
+  {
+    "chain": "Subway",
+    "name": "6-inch Grilled Chicken & Fresh Avocado",
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 450,
+      "p": 35,
+      "c": 44,
+      "f": 6,
+      "na": 800
+    }
+  },
+  {
+    "chain": "Subway",
+    "name": "Footlong Grilled Chicken & Fresh Avocado",
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 900,
+      "p": 70,
+      "c": 88,
+      "f": 12,
+      "na": 1600
+    }
+  },
+  {
+    "chain": "Subway",
+    "name": "Grilled Chicken Salad",
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 440,
+      "p": 26,
+      "c": 12,
+      "f": 4,
+      "na": 590
+    }
+  },
+  {
+    "chain": "Subway",
+    "name": "Footlong Grilled Chicken",
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 1020,
+      "p": 62,
+      "c": 86,
+      "f": 6,
+      "na": 1660
+    }
+  },
+  {
+    "chain": "Subway",
+    "name": "Footlong Meatball Marinara",
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 1140,
+      "p": 54,
+      "c": 106,
+      "f": 8,
+      "na": 2740
+    }
+  },
+  {
+    "chain": "Jersey Mike’s",
+    "name": "Turkey and Provolone Bowl, Mike’s Way",
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 490,
+      "p": 30,
+      "c": 8,
+      "f": 2,
+      "na": 1125
+    }
+  },
+  {
+    "chain": "Jersey Mike’s",
+    "name": "Mini Turkey and Provolone, Mike’s Way",
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 480,
+      "p": 26,
+      "c": 44,
+      "f": 3,
+      "na": 1153
+    }
+  },
+  {
+    "chain": "Jersey Mike’s",
+    "name": "Turkey and Provolone Wrap, Mike’s Way",
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 780,
+      "p": 38,
+      "c": 56,
+      "f": 4,
+      "na": 1695
+    }
+  },
+  {
+    "chain": "Jersey Mike’s",
+    "name": "Regular Veggie Sub, Mike’s Way",
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 950,
+      "p": 39,
+      "c": 69,
+      "f": 5,
+      "na": 1310
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Grilled Nuggets, 8 count",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 130,
+      "p": 25,
+      "c": 1,
+      "f": 0,
+      "na": 440
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Grilled Nuggets, 12 count",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 200,
+      "p": 38,
+      "c": 2,
+      "f": 0,
+      "na": 660
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Grilled Chicken Sandwich",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 390,
+      "p": 28,
+      "c": 45,
+      "f": 3,
+      "na": 765
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Market Salad with Grilled Nuggets",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 570,
+      "p": 32,
+      "c": 41,
+      "f": 6,
+      "na": 1080
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Egg White Grill",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 300,
+      "p": 27,
+      "c": 29,
+      "f": 1,
+      "na": 990
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Kale Crunch Side",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 170,
+      "p": 4,
+      "c": 13,
+      "f": 4,
+      "na": 250
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Grilled Chicken Club Sandwich",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 520,
+      "p": 37,
+      "c": 45,
+      "f": 3,
+      "na": 1055
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Chick-fil-A Cool Wrap",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 660,
+      "p": 43,
+      "c": 32,
+      "f": 14,
+      "na": 1420
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Cobb Salad with Spicy Grilled Filet (Cold)",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 600,
+      "p": 33,
+      "c": 16,
+      "f": 5,
+      "na": 1610
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "Grilled Club, medium waffle fries and 12 grilled nuggets",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 1140,
+      "p": 80,
+      "c": 92,
+      "f": 8,
+      "na": 1955
+    }
+  },
+  {
+    "chain": "Chick-fil-A",
+    "name": "30 grilled nuggets, medium waffle fries and large fruit cup",
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 1050,
+      "p": 104,
+      "c": 77,
+      "f": 10,
+      "na": 1950
+    }
+  },
+  {
+    "chain": "Taco Bell",
+    "name": "Cantina Chicken Soft Taco",
+    "source": "https://www.tacobell.com/food/tacos",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 260,
+      "p": null,
+      "c": null,
+      "f": null,
+      "na": null
+    }
+  },
+  {
+    "chain": "Taco Bell",
+    "name": "Cantina Chicken Bowl",
+    "source": "https://www.tacobell.com/food/bowls",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 520,
+      "p": 25,
+      "c": null,
+      "f": null,
+      "na": null
+    }
+  },
+  {
+    "chain": "Taco Bell",
+    "name": "Veggie Bowl",
+    "source": "https://www.tacobell.com/food/bowls",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 410,
+      "p": null,
+      "c": null,
+      "f": null,
+      "na": null
+    }
+  },
+  {
+    "chain": "Taco Bell",
+    "name": "Bean Burrito",
+    "source": "https://www.tacobell.com/food/burritos",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 360,
+      "p": null,
+      "c": null,
+      "f": null,
+      "na": null
+    }
+  },
+  {
+    "chain": "Taco Bell",
+    "name": "Cantina Chicken Burrito",
+    "source": "https://www.tacobell.com/food/burritos",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 570,
+      "p": null,
+      "c": null,
+      "f": null,
+      "na": null
+    }
+  },
+  {
+    "chain": "McDonald’s",
+    "name": "Hamburger",
+    "source": "https://www.mcdonalds.com/us/en-us/product/hamburger.html",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 250,
+      "p": 12,
+      "c": 30,
+      "f": 1,
+      "na": 510
+    }
+  },
+  {
+    "chain": "McDonald’s",
+    "name": "Egg McMuffin",
+    "source": "https://www.mcdonalds.com/us/en-us/product/egg-mcmuffin.html",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 310,
+      "p": 17,
+      "c": 30,
+      "f": 2,
+      "na": 770
+    }
+  },
+  {
+    "chain": "McDonald’s",
+    "name": "McChicken",
+    "source": "https://www.mcdonalds.com/us/en-us/product/mcchicken.html",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 390,
+      "p": 14,
+      "c": 38,
+      "f": 1,
+      "na": 560
+    }
+  },
+  {
+    "chain": "McDonald’s",
+    "name": "Quarter Pounder with Cheese",
+    "source": "https://www.mcdonalds.com/us/en-us/product/quarter-pounder-with-cheese.html",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 520,
+      "p": 30,
+      "c": 42,
+      "f": 2,
+      "na": 1140
+    }
+  },
+  {
+    "chain": "McDonald’s",
+    "name": "Double Cheeseburger",
+    "source": "https://www.mcdonalds.com/us/en-us/product/double-cheeseburger.html",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 440,
+      "p": 25,
+      "c": 34,
+      "f": 2,
+      "na": 1120
+    }
+  },
+  {
+    "chain": "McDonald’s",
+    "name": "Apple Slices",
+    "source": "https://www.mcdonalds.com/us/en-us/product/apple-slices.html",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 15,
+      "p": 0,
+      "c": 4,
+      "f": 0,
+      "na": 0
+    }
+  },
+  {
+    "chain": "Chipotle",
+    "name": "High Protein-High Fiber Bowl",
+    "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 540,
+      "p": 46,
+      "c": 66,
+      "f": 14,
+      "na": 1645
+    },
+    "additional_source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP"
+  },
+  {
+    "chain": "Chipotle",
+    "name": "High Protein-Low Calorie Salad",
+    "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 470,
+      "p": 36,
+      "c": 20,
+      "f": 10,
+      "na": 1395
+    },
+    "additional_source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP"
+  },
+  {
+    "chain": "Chipotle",
+    "name": "Chicken Bowl with white rice and black beans",
+    "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 650,
+      "p": 48,
+      "c": 88,
+      "f": 14,
+      "na": 1900
+    }
+  },
+  {
+    "chain": "Chipotle",
+    "name": "Sofritas Bowl with brown rice and black beans",
+    "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 620,
+      "p": 24,
+      "c": 93,
+      "f": 18,
+      "na": 1990
+    }
+  },
+  {
+    "chain": "Chipotle",
+    "name": "Veggie Bowl with brown rice, black beans and guacamole",
+    "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 620,
+      "p": 15,
+      "c": 76,
+      "f": 18,
+      "na": 1470
+    }
+  },
+  {
+    "chain": "Chipotle",
+    "name": "Steak Salad with black beans, no rice",
+    "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 345,
+      "p": 31,
+      "c": 36,
+      "f": 13,
+      "na": 1255
+    }
+  },
+  {
+    "chain": "Panda Express",
+    "name": "Grilled Teriyaki Chicken",
+    "source": "https://www.pandaexpress.com/nutritioninformation",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 275,
+      "p": 33,
+      "c": 14,
+      "f": 0,
+      "na": 470
+    }
+  },
+  {
+    "chain": "Panda Express",
+    "name": "Super Greens side",
+    "source": "https://www.pandaexpress.com/nutritioninformation",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 130,
+      "p": 9,
+      "c": 14,
+      "f": 7,
+      "na": 370
+    }
+  },
+  {
+    "chain": "Panda Express",
+    "name": "String Bean Chicken Breast",
+    "source": "https://www.pandaexpress.com/nutritioninformation",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 210,
+      "p": 12,
+      "c": 13,
+      "f": 5,
+      "na": 560
+    }
+  },
+  {
+    "chain": "Panda Express",
+    "name": "Grilled Teriyaki Chicken with Super Greens",
+    "source": "https://www.pandaexpress.com/nutritioninformation",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 405,
+      "p": 42,
+      "c": 28,
+      "f": 7,
+      "na": 840
+    }
+  },
+  {
+    "chain": "Panda Express",
+    "name": "Broccoli Beef with white steamed rice",
+    "source": "https://www.pandaexpress.com/nutritioninformation",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 670,
+      "p": 25,
+      "c": 130,
+      "f": 2,
+      "na": 520
+    }
+  },
+  {
+    "chain": "Panda Express",
+    "name": "Bigger Plate: fried rice + 3 grilled teriyaki chicken entrées",
+    "source": "https://www.pandaexpress.com/nutritioninformation",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 1445,
+      "p": 112,
+      "c": 143,
+      "f": 1,
+      "na": 2410
+    }
+  },
+  {
+    "chain": "Panda Express",
+    "name": "Bigger Plate: chow mein + grilled teriyaki + orange chicken + string bean chicken",
+    "source": "https://www.pandaexpress.com/nutritioninformation",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 1595,
+      "p": 76,
+      "c": 174,
+      "f": 14,
+      "na": 2880
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Egg White & Roasted Red Pepper Egg Bites",
+    "source": "https://www.starbucks.com/menu/product/2122117/single",
+    "checked": "2026-09-09",
+    "values": {
+      "cal": 170,
+      "p": 12,
+      "c": 11,
+      "f": 0,
+      "na": 470
+    }
+  }
+]
