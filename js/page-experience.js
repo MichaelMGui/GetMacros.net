@@ -23,6 +23,9 @@
   function arrive(){
     document.documentElement.classList.remove('page-leaving');
     const main=document.querySelector('main');
+    // A slow script must never fade content the reader has already been using.
+    const firstPaint=performance.getEntriesByName('first-contentful-paint')[0];
+    if(performance.now()>500 || (firstPaint && performance.now()-firstPaint.startTime>100))return;
     if(!nativePages&&motionAllowed()&&main?.animate)main.animate([{opacity:.7},{opacity:1}],{duration:240,easing:'cubic-bezier(.16,1,.3,1)'});
   }
   arrive();

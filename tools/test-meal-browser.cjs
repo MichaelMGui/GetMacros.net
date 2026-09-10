@@ -47,7 +47,9 @@ async function checkText(page) {
           await checkText(page);
           await page.locator('.quiz-continue').click();
         }
-        assert.equal(await page.locator('.results-heading h2').innerText(), 'Meals for weight gain + high protein');
+        assert.equal(await page.locator('.results-heading h2').innerText(), 'Your meal matches');
+        assert.deepEqual(await page.locator('.result-goals span').allTextContents(), ['weight gain','high protein']);
+        assert.match(await page.locator('.results-count').innerText(), /^Showing 5 of \d+ meals$/);
         assert.equal(await page.locator('.quiz-summary').count(), 0);
         await checkText(page);
         await page.locator('.meal-database-disclosure>summary').click();

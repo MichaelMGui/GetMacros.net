@@ -70,3 +70,14 @@ for food in foods:
 assert next(f for f in foods if f['name']=='Firm tofu')['protein100'] == 17.27
 assert next(f for f in foods if f['name']=='Pumpkin seeds, shelled')['protein100'] == 30.23
 print(f'Submission review: {len(meals)} sourced orders and {len(PAGES)} reviewed pages passed.')
+
+# The quiz must paint with the document and initialize only once after rebuilds.
+quiz=(ROOT/'restaurant-meal-finder.html').read_text(encoding='utf-8')
+for name in ('data','quiz'):
+    scripts=re.findall(r'<script src="js/meal-'+name+r'\.js[^\"]*"[^>]*>',quiz)
+    assert len(scripts)==1 and 'defer' in scripts[0], name
+    assert quiz.index(scripts[0]) < quiz.index('</head>'), name
+assert quiz.index('<script src="js/meal-data.js') < quiz.index('<script src="js/meal-quiz.js')
+assert quiz.count('data-first-question') >= 1 and 'What’s your goal?' in quiz
+assert quiz.count('<script data-quiz-bootstrap>')==1
+print('Quiz delivery: visible first question and one ordered copy of each script.')

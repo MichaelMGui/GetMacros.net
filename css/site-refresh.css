@@ -455,3 +455,95 @@ html[data-theme="dark"][lang] body.site-v3 footer.modern-footer.footer-compact{b
  html[data-theme][lang] body.site-v3 main#main-content .home-play-art{width:clamp(180px,54vw,220px)!important;max-width:100%!important;margin:8px auto 0!important;aspect-ratio:600/460;background:transparent!important;border:0!important;box-shadow:none!important}
  html[data-theme][lang] body.site-v3 main#main-content .home-how{margin-top:24px!important}
 }
+
+/* Quiz: clear, tactile choices with restrained food-inspired colour accents. */
+html[data-theme][lang] body.site-v3.order-match-page main#main-content .match-intro{padding-top:22px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content .match-intro-grid{max-width:880px!important;gap:22px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content .match-intro-copy h1{font-size:clamp(1.7rem,4vw,2.65rem)!important;line-height:1.15!important;max-width:24ch!important;margin-bottom:12px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content .match-intro-copy p{font-size:1rem!important;line-height:1.6!important;margin:0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz :is(.quiz-card,.quiz-results){border-radius:26px!important;padding:28px!important;background:var(--quiet-surface)!important;border:1px solid var(--quiet-line)!important;box-shadow:0 8px 24px #142c1810!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-progress-row{margin:0 0 12px!important;color:var(--quiet-muted)!important;font-size:.875rem!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-progress{height:6px!important;margin:0 0 22px!important;border-radius:8px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-card h2{margin:0 0 8px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-hint{margin:0 0 20px!important;font-size:1rem!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-options{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin:20px 0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option{position:relative;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;gap:10px!important;grid-column:auto!important;padding:16px!important;min-height:122px!important;min-width:0!important;border-radius:18px!important;background:var(--quiet-paper)!important;border:1px solid var(--quiet-line)!important;transition:box-shadow .16s ease!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-icon{width:32px!important;height:32px!important;flex:0 0 32px!important;margin:0!important;border-radius:10px!important;background:#e6eadb!important;color:#466932!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-icon svg{width:21px!important;height:21px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:nth-child(3n+1) .option-icon{background:#f3e5cd!important;color:#865d29!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:nth-child(3n+2) .option-icon{background:#e0ecf0!important;color:#3b6979!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-copy{display:block!important;min-width:0!important;width:100%!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-copy b{font-size:1.0625rem!important;line-height:1.35!important;letter-spacing:0!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-copy small{font-size:.875rem!important;line-height:1.4!important;margin-top:4px!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-check{position:absolute!important;top:14px!important;right:14px!important;width:22px!important;height:22px!important;background:var(--quiet-surface)!important;border:1px solid var(--quiet-line)!important;color:transparent!important;font-size:14px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:has(input:checked){background:#e7f0df!important;border-color:#397748!important;box-shadow:inset 0 0 0 1px #397748!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:has(input:checked) .option-check{background:#397748!important;border-color:#397748!important;color:#fff!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:has(input:focus-visible){outline:3px solid var(--quiet-green-strong)!important;outline-offset:3px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-nav{padding-top:18px!important;margin-top:22px!important;gap:12px!important;border-color:var(--quiet-line)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-nav .btn{min-height:52px!important;border-radius:14px!important;font:700 1.0625rem/1.4 Manrope,Inter,sans-serif!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-chain-mark{background:#fff!important;border-radius:50%!important;overflow:hidden!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-chain-mark img{width:100%!important;height:100%!important;object-fit:contain!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-heading{display:flex!important;align-items:flex-start!important;justify-content:space-between!important;gap:20px!important;margin-bottom:24px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-heading h2{font-size:clamp(1.5rem,4vw,2rem)!important;line-height:1.25!important;margin:8px 0 14px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-heading .btn{width:auto!important;margin:0!important;flex-shrink:0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-count{font-size:.875rem!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .result-goals{display:flex;gap:8px;flex-wrap:wrap}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .result-goals span{padding:6px 11px;border-radius:9px;font-size:.875rem;line-height:1.4;background:#e7f0df;color:#315a36;text-transform:capitalize}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card{padding:24px!important;border-radius:20px!important;min-width:0!important;background:var(--quiet-paper)!important;border:1px solid var(--quiet-line)!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card.top-match{grid-column:1/-1!important;border-top:4px solid #548642!important;background:var(--quiet-surface-2)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card-top{display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:12px!important;margin-bottom:18px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-chain{display:flex!important;align-items:center!important;gap:10px!important;font-size:1rem!important;line-height:1.4!important;color:var(--quiet-ink)!important;text-transform:none!important;letter-spacing:0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-chain img{width:36px;height:36px;object-fit:contain;border-radius:50%;background:white;flex-shrink:0}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-rank{font-size:.8125rem!important;padding:6px 9px!important;border-radius:8px!important;background:var(--quiet-surface)!important;color:var(--quiet-muted)!important;white-space:normal!important;line-height:1.4!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card h3{font-size:1.25rem!important;line-height:1.35!important;margin:0 0 20px!important;letter-spacing:0!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-stats{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric{padding:14px 10px!important;border-radius:12px!important;background:var(--quiet-surface)!important;min-width:0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric b{font-size:1.25rem!important;line-height:1.3!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric small{font-size:.875rem!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric:nth-child(1){background:#f4e9d7!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric:nth-child(2){background:#e4eddd!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-reason{font-size:.9375rem!important;line-height:1.65!important;color:var(--quiet-muted)!important;margin:18px 0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card-actions{display:flex!important;gap:10px!important;flex-wrap:wrap!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card-actions :is(a,button){flex:1 1 110px!important;min-height:46px!important;margin:0!important;padding:10px!important;border-radius:12px!important;font-size:.9375rem!important;text-align:center!important;justify-content:center!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-icon{background:#3d4d32!important;color:#c5dda9!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:nth-child(3n+1) .option-icon{background:#4b3d2c!important;color:#e8c18e!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:nth-child(3n+2) .option-icon{background:#2e434b!important;color:#aad1df!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:has(input:checked){background:#3b5034!important;border-color:#acd38e!important;box-shadow:inset 0 0 0 1px #acd38e!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:has(input:checked) .option-check{background:#acd38e!important;border-color:#acd38e!important;color:#1b2d1c!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz :is(.quiz-continue,.result-goals span){background:#9ac47d!important;color:#1b2d1c!important;border-color:#9ac47d!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric:nth-child(1){background:#473b2d!important}
+html[data-theme="dark"][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric:nth-child(2){background:#354931!important}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:hover{box-shadow:0 4px 12px #22332218!important}html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option:has(input:checked) .option-icon{animation:quiz-choice-pop .2s ease-out}}
+@keyframes quiz-choice-pop{from{transform:scale(.9)}to{transform:scale(1)}}
+@media(max-width:620px){
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz :is(.quiz-card,.quiz-results){padding:18px!important;border-radius:22px!important}
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option{padding:12px!important;min-height:124px!important;gap:8px!important}
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-options{gap:10px!important}
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-copy b{font-size:1rem!important}
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-check{right:10px!important;top:12px!important}
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-grid{grid-template-columns:1fr!important}
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-heading{flex-direction:column!important;gap:6px!important}
+ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card{padding:18px!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-intro-grid{grid-template-columns:minmax(0,1fr) clamp(80px,26vw,116px)!important;gap:20px 12px!important;align-items:center!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-intro-copy{display:contents!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-intro h1{grid-column:1;grid-row:1;font-size:clamp(1.7rem,7vw,2rem)!important;margin:0!important;max-width:none!important;text-wrap:initial!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-play-art{grid-column:2;grid-row:1;width:100%!important;margin:0!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-intro-lede{grid-column:1/-1;grid-row:2;margin:0!important;font-size:1rem!important;line-height:1.6!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-intro-actions{grid-column:1/-1;grid-row:3;margin:0!important;gap:10px!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-primary{min-height:60px!important;font-size:1.2rem!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-intro-actions a.home-text-link{min-height:48px!important;font-size:1rem!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-how{margin-top:32px!important}
+}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-results{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-icon{margin-inline:0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .option-copy small{font-weight:400!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-rank{text-transform:none!important;letter-spacing:0!important;font-weight:600!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card{display:block!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-metric.is-missing b{font-size:.9375rem!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card-actions{flex-direction:row!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-card-actions :is(a,button){flex:1 1 90px!important;width:auto!important;min-height:48px!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .results-heading .btn{min-height:44px!important;font-size:.9375rem!important;border-radius:12px!important;padding:10px 16px!important}
+
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-reason{display:block!important;min-height:0!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .result-symbol{display:grid!important;place-items:center!important;width:52px!important;height:52px!important;font-size:2rem!important;border-radius:16px!important;background:var(--quiet-surface-2)!important;color:var(--quiet-green-strong)!important;margin-bottom:18px!important}
