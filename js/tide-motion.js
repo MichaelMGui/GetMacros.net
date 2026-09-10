@@ -93,7 +93,7 @@
     targets.forEach(target => observer.observe(target));
   }
 
-  document.querySelectorAll('.btn,.home-launch-card').forEach(button => {
+  document.querySelectorAll('.btn,a.home-launch-card').forEach(button => {
     button.classList.add('tide-ripple-host');
     button.addEventListener('pointerdown', event => {
       if (!active) return;

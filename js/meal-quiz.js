@@ -216,7 +216,7 @@
   }
 
   var changingQuestion = false;
-  async function changeQuestion(update) {
+  async function changeQuestion(update, direction) {
     if (changingQuestion) return;
     changingQuestion = true;
     var oldCard = root.firstElementChild;
@@ -233,7 +233,7 @@
       root.removeAttribute('aria-busy');
       root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=true;});
       if (newCard && newCard.querySelector('.results-heading')) newCard=newCard.querySelector('.results-heading');
-      if (useMotion && newCard) await newCard.animate([{opacity:0.2,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:220,easing:'cubic-bezier(.2,.7,.2,1)'}).finished.catch(function(){});
+      if (useMotion && newCard) await newCard.animate([{opacity:0.2,translate:(direction < 0 ? '-12px' : '12px')+' 0'},{opacity:1,translate:'0 0'}],{duration:240,easing:'cubic-bezier(.16,1,.3,1)'}).finished.catch(function(){});
     } finally {
       root.removeAttribute('aria-busy');
       // Hold the old space until scrolling to the next question has settled.
@@ -284,9 +284,9 @@
       if (direction > 0 && !state[activeStep.key].length) {
         noPreference[activeStep.key] = true;
       }
-      changeQuestion(function(){step += direction; step >= STEPS.length ? renderResults() : renderStep();});
+      changeQuestion(function(){step += direction; step >= STEPS.length ? renderResults() : renderStep();}, direction);
     }
-    else if (t.dataset.restart) { changeQuestion(function(){step = 0; renderStep();}); }
+    else if (t.dataset.restart) { changeQuestion(function(){step = 0; renderStep();}, -1); }
     else if (t.dataset.more) {
       var next = root._rest.splice(0, 3);
       root.querySelector(".results-grid").insertAdjacentHTML("beforeend", next.map(function (m) { return card(m, false); }).join(""));

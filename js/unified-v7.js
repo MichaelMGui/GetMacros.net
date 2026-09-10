@@ -114,7 +114,13 @@
     // the drawer opens under it wherever you are, and closing the menu cannot
     // lose your place because nothing ever moved.
     function setNav(open) {
+      var entering = open && !document.body.classList.contains('nav-open');
       document.body.classList.toggle("nav-open", open);
+      if (entering && links.animate && !matchMedia('(prefers-reduced-motion: reduce)').matches && !document.documentElement.classList.contains('tide-motion-off')) {
+        if (links._entrance) links._entrance.cancel();
+        links._entrance = links.animate([{opacity:0,translate:'0 -8px'},{opacity:1,translate:'0 0'}],{duration:220,easing:'cubic-bezier(.16,1,.3,1)'});
+      }
+      if (!open && links._entrance) links._entrance.cancel();
       if (toggle) {
         toggle.setAttribute("aria-expanded", String(open));
         var label = toggle.querySelector(".sr-only");

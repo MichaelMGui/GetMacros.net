@@ -4,9 +4,13 @@ import re, sys
 
 ROOT = Path(__file__).resolve().parents[1]
 GROUPS = {
+    'foundation-bundle': ['style', 'site-v3'],
+    'reading-bundle': ['readability-v2', 'premium-v4'],
+    'accent-bundle': ['liquid', 'contrast-fix', 'polish'],
     'core-bundle': ['unified-v7', 'theme-fix', 'editorial-v8', 'clean-v9'],
     'finish-bundle': ['tide', 'tide-motion', 'workspaces', 'site-refresh'],
 }
+OPTIONAL = {'foundation-bundle', 'reading-bundle'}
 
 def compact(css):
     # Strings stay byte-for-byte intact. Removing a comment leaves a space so
@@ -41,7 +45,7 @@ def run():
                 pattern = r'\s*'.join(r'<link rel="stylesheet" href="css/'+re.escape(s)+r'\.css(?:\?[^\"]*)?">' for s in sources)
                 replacement = '<link rel="stylesheet" href="css/'+name+'.css" data-sources="'+'|'.join('css/'+s+'.css' for s in sources)+'">'
                 text, n = re.subn(pattern, replacement, text)
-                if n != 1:
+                if n != 1 and not (name in OPTIONAL and n == 0):
                     raise ValueError(f'{path.name}: {name} sources must be contiguous and occur once (found {n})')
         path.write_text(text, encoding='utf-8')
         count += 1

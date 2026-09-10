@@ -212,6 +212,10 @@ def main() -> int:
                 errors.append(f"{path}: expected one verified AdSense account meta tag")
             if f"adsbygoogle.js?client={PUBLISHER}" not in text:
                 errors.append(f"{path}: verified AdSense loader missing")
+            head = text.split('</head>', 1)[0]
+            loaders = re.findall(r'<script\b[^>]*src="https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client='+re.escape(PUBLISHER)+r'"[^>]*>', head)
+            if len(loaders) != 1 or not re.search(r'\basync\b', loaders[0]) or 'crossorigin="anonymous"' not in loaders[0]:
+                errors.append(f"{path}: expected one async AdSense loader in head with anonymous crossorigin")
             required_nav = (
                 ("healthy-fast-food.html", "Healthy Fast Food"),
                 ("restaurant-meal-finder.html", "Fast-food meal finder"),
@@ -240,7 +244,7 @@ def main() -> int:
         # Matched without the version: the stamp is a content hash now, so it
         # changes whenever the file does. Pinning it here would fail the build
         # every time the stylesheet was edited.
-        if "css/premium-v4.css?v=" not in text:
+        if not re.search(r'href="css/(?:premium-v4|reading-bundle)\.css\?v=', text):
             errors.append(f"{path}: shared premium visual system is missing")
         if text.count("css/unified-v7.css") != 1 or not re.search(r'href="css/(?:unified-v7|core-bundle)\.css\?', text):
             errors.append(f"{path}: unified visual layer must load exactly once")

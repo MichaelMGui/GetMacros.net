@@ -23,7 +23,7 @@
   function arrive(){
     document.documentElement.classList.remove('page-leaving');
     const main=document.querySelector('main');
-    if(!nativePages&&motionAllowed()&&main?.animate)main.animate([{opacity:.8},{opacity:1}],{duration:180,easing:'ease-out'});
+    if(!nativePages&&motionAllowed()&&main?.animate)main.animate([{opacity:.7},{opacity:1}],{duration:240,easing:'cubic-bezier(.16,1,.3,1)'});
   }
   addEventListener('pageshow',arrive);
   let leaving=false;
@@ -35,7 +35,7 @@
     if(url.origin!==location.origin||url.pathname===location.pathname||!(/\.html$|\/$/).test(url.pathname))return;
     event.preventDefault();if(leaving)return;leaving=true;
     document.documentElement.classList.add('page-leaving');
-    setTimeout(()=>location.assign(url.href),90);
+    setTimeout(()=>location.assign(url.href),60);
   });
   addEventListener('pageshow',()=>{leaving=false;});
 })();
