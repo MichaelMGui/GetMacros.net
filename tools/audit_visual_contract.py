@@ -186,7 +186,7 @@ def main() -> int:
     # gm6-rail belonged to the restaurant explorer, which was a third route to
     # pages the nav and the finder results already reach, sitting directly under
     # two sections that send you to them.
-    for required in ("home-launcher", "home-launch-card", "home-guide-grid"):
+    for required in ("home-launcher", "home-launch-card", "home-reading-grid"):
         if required not in home:
             errors.append(f"index.html: premium homepage component is missing: {required}")
     if "gm6-goal-story" in home:

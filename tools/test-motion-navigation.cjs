@@ -22,11 +22,14 @@ const {localAssets}=require('./browser-fixture.cjs');
             window.recordMotion=false;
             const heading=document.querySelector('#meal-quiz h2').getBoundingClientRect();
             const header=document.querySelector('.site-header').getBoundingClientRect();
-            const tail=window.motionSamples.slice(-10).map(x=>x.y);
+            // Measure elapsed stability, not a frame count: throttled browsers
+            // may produce fewer than ten frames during the settled period.
+            const tail=window.motionSamples.filter(x=>x.t>=performance.now()-200).map(x=>x.y);
+            tail.push(scrollY);
             return {visible:heading.top>=header.bottom && heading.bottom<innerHeight,drift:Math.max(...tail)-Math.min(...tail),overflow:document.documentElement.scrollWidth>innerWidth+1};
           });
           assert.ok(check.visible,`${engine.name()} ${theme} ${width} question ${step+2}: heading hidden`);
-          assert.ok(check.drift<=1,`Question still bouncing: ${JSON.stringify(check)}`);
+          assert.ok(check.drift<=1,`${engine.name()} ${theme} ${width} question ${step+2} still bouncing: ${JSON.stringify(check)}`);
           assert.equal(check.overflow,false);
         }
         await page.locator('[data-restart]').click();

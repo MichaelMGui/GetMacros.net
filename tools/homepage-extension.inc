@@ -24,7 +24,7 @@
 <section class="home-finder-help" aria-labelledby="home-finder-help-title">
   <div class="container home-finder-help-layout">
     <div>
-      <h2 id="home-finder-help-title">Meal finder questions</h2>
+      <h2 id="home-finder-help-title">Using the meal finder</h2>
     </div>
     <div class="home-finder-questions">
       <details>

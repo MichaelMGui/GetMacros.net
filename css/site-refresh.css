@@ -403,3 +403,49 @@ html[data-theme][lang] body.site-v3.calculator-suite--value.clarity-tool main#ma
 /* Old footer decoration must not escape into the last section above it. */
 html[data-theme][lang] body.site-v3 footer.modern-footer.footer-compact::before,html[data-theme][lang] body.site-v3 footer.modern-footer.footer-compact::after{content:none!important;display:none!important}
 html[data-theme][lang] body.site-v3.calculator-suite--value.clarity-tool main#main-content .tool-output .results{border-radius:0!important;overflow:visible!important}
+
+/* Practical examples sit after the working tool, with explicitly labeled numbers. */
+html[data-theme][lang] body.site-v3 main#main-content .practical-example{padding:40px 0 64px!important;background:var(--quiet-paper)!important}
+html[data-theme][lang] body.site-v3 main#main-content .practical-example>.container{max-width:960px}
+html[data-theme][lang] body.site-v3 main#main-content .practical-example h2{font-size:clamp(1.45rem,3vw,2rem)!important;line-height:1.25!important;max-width:30ch;margin:0 0 16px!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.example-intro,.example-note){max-width:75ch;font-size:1rem!important;line-height:1.7!important;color:var(--quiet-muted)!important;margin:0 0 22px!important}
+html[data-theme][lang] body.site-v3 main#main-content .example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0}
+html[data-theme][lang] body.site-v3 main#main-content .example-grid article{min-width:0;padding:26px;border:1px solid var(--quiet-line);border-radius:18px;background:var(--quiet-surface)!important;box-shadow:none}
+html[data-theme][lang] body.site-v3 main#main-content .example-grid h3{font-size:1rem!important;line-height:1.5!important;margin:0 0 14px!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3 main#main-content .example-grid strong{display:block;font-size:clamp(1.3rem,2vw,1.6rem)!important;line-height:1.4!important;color:var(--quiet-ink)!important;margin-bottom:14px}
+html[data-theme][lang] body.site-v3 main#main-content .example-grid p{font-size:1rem!important;line-height:1.7!important;margin:0!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-reading-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+html[data-theme][lang] body.site-v3 main#main-content .home-reading-card{display:flex;flex-direction:column;min-width:0;background:var(--quiet-surface)!important;border:1px solid var(--quiet-line);border-radius:24px;overflow:hidden}
+html[data-theme][lang] body.site-v3 main#main-content .home-reading-card>img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border:0;border-radius:0;background:#e5eddf}
+html[data-theme][lang] body.site-v3 main#main-content .home-reading-card>div{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:26px}
+html[data-theme][lang] body.site-v3 main#main-content .home-reading-card h3{font-size:1.3rem!important;line-height:1.35!important;margin:0 0 14px!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-reading-card p{font-size:1rem!important;line-height:1.65!important;margin:0 0 24px!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-reading-card .btn{margin-top:auto!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-guides-head{align-items:center;gap:20px;margin-bottom:28px}
+@media(max-width:760px){html[data-theme][lang] body.site-v3 main#main-content .home-reading-grid{grid-template-columns:1fr}html[data-theme][lang] body.site-v3 main#main-content .home-reading-card{display:grid;grid-template-columns:180px minmax(0,1fr)}html[data-theme][lang] body.site-v3 main#main-content .home-reading-card>img{height:100%;object-fit:cover}}
+@media(max-width:540px){html[data-theme][lang] body.site-v3 main#main-content .example-grid{grid-template-columns:1fr}html[data-theme][lang] body.site-v3 main#main-content .home-reading-card{display:flex}html[data-theme][lang] body.site-v3 main#main-content .home-reading-card>img{height:auto;aspect-ratio:2/1}html[data-theme][lang] body.site-v3 main#main-content .home-reading-card>div{padding:22px}}
+
+/* Night palette: charcoal canvas, solid stone panels, leaf and warm food accents. */
+html[data-theme="dark"][lang] body.site-v3{
+ --quiet-paper:#191e1c;--quiet-surface:#252c28;--quiet-surface-2:#323b34;--quiet-ink:#f4f1e8;--quiet-muted:#c3ccc3;--quiet-line:#566257;--quiet-green-strong:#a3ce8e;--quiet-green-soft:#344b35;
+ --work-accent:#91bf78;--work-on-accent:#18251b;--work-edge:#566257;--work-warm:#473a2d;--work-cool:#2e414b;
+ --d-bg:var(--quiet-paper);--d-bg-soft:#202722;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-surface-3:#3c483d;--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-muted-2:#b5bfb5;--d-line:var(--quiet-line);--d-line-2:#566257;--d-accent:#a3ce8e;--d-accent-in:#18251b;--d-tint:#344b35;--d-fill:#344b35;--d-fill-in:#f4f1e8;--d-btn:#91bf78;--d-btn-in:#18251b;--d-lime:#a3ce8e;
+ background:#191e1c!important;color:var(--quiet-ink)!important
+}
+html[data-theme="dark"][lang]{background:#191e1c!important;color-scheme:dark}
+html[data-theme="dark"][lang] body.site-v3 :is(.site-header .full-nav,.nav-popover,.full-nav-links){background:#252c28!important;border-color:#566257!important;box-shadow:0 8px 28px #0003!important;backdrop-filter:none!important}
+html[data-theme="dark"][lang] body.site-v3 .site-header :is(.theme-toggle,.nav-toggle){background:#323b34!important;color:#f4f1e8!important;border-color:#566257!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3 .site-header :is(.nav-group-trigger,.nav-direct,.nav-popover a){color:#f4f1e8!important}
+html[data-theme="dark"][lang] body.site-v3 .site-header :is(.nav-group-trigger[aria-expanded=true],.nav-direct[aria-current],.nav-popover a:hover){background:#3d4d39!important;color:#f4f1e8!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.home-launch-card,.home-decision,.home-everyday-tool,.guide-card,.blog-card,.chain-card,.ranking-card,.pick-card,.advice-card,.clear-tool-card,.protein-food-card,.clear-about-grid article,.quiz-card,.quiz-results,.meal-card,.browse-meal,.chain-finder-form,.chain-result-card,.tool-inputs,.tool-output,#macro-form,#macro-results,.single-macro-card,.food-panel,.panel,.clarity-more,.callout,.source-box,.editorial-note,.food-reference,.simple-tool-help,.recipe-assumptions){background:var(--quiet-surface)!important;border-color:var(--quiet-line)!important;box-shadow:none!important;backdrop-filter:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.home-play-art,.calc-hero-grid,.home-how,.home-everyday,.home-finder-help,.gm6-learning,.meal-browser){background:#202722!important;border-color:var(--quiet-line)!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea){background:#191e1c!important;color:#f4f1e8!important;border-color:#687968!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(input,textarea)::placeholder{color:#b5bfb5!important;opacity:1}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.single-macro-result,.price-result,.macro-stat,.pick-metrics>span,.quiz-option,.chain-choice-grid label>span){background:#323b34!important;border-color:#61715f!important;color:#f4f1e8!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.quiz-option.selected,.quiz-option[aria-checked=true],.quiz-option[aria-pressed=true],.chain-choice-grid input:checked+span){background:#3d5537!important;border-color:#a3ce8e!important;color:#f4f1e8!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.btn-primary,.home-primary-cta,.quiz-next,#macro-form button[type=submit],.single-macro-card button,.compare-actions button[type=submit],.meal-browser button.btn.browse-more){background:#91bf78!important;color:#18251b!important;border-color:#91bf78!important;text-shadow:none!important;box-shadow:0 3px 0 #435d37!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(a.action-link,.btn-secondary,.quiz-back){background:#323b34!important;color:#f4f1e8!important;border-color:#687968!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .clarity-icon{background:#3b4c32!important;color:#c2dfa7!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .clear-tool-card:nth-child(2) .clarity-icon{background:#2e414b!important;color:#b1d5e3!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .clear-tool-card:nth-child(3) .clarity-icon{background:#473a2d!important;color:#ebc195!important}
+html[data-theme="dark"][lang] body.site-v3 footer.modern-footer.footer-compact{background:#202722!important;border-top:1px solid #566257!important}

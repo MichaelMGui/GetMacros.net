@@ -13,7 +13,7 @@
 
 
 <link rel="stylesheet" href="css/studio-v6.css?v=27681fd271"><link rel="stylesheet" href="css/premium-v4.css?v=134c89ca75">
-<link rel="stylesheet" href="css/calculator-suite.css?v=990eaae2aa"><link rel="stylesheet" href="css/accent-bundle.css?v=5e4248c9c6" data-sources="css/liquid.css|css/contrast-fix.css|css/polish.css"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/core-bundle.css?v=d922bbd719" data-sources="css/unified-v7.css|css/theme-fix.css|css/editorial-v8.css|css/clean-v9.css"><link rel="stylesheet" href="css/finish-bundle.css?v=30d61e7435" data-sources="css/tide.css|css/tide-motion.css|css/workspaces.css|css/site-refresh.css"><link rel="preload" href="fonts/manrope-latin-700.woff2" as="font" type="font/woff2" crossorigin></head><body class="site-v3 article-page tools-page calculator-suite calculator-suite--target clarity-tool">
+<link rel="stylesheet" href="css/calculator-suite.css?v=990eaae2aa"><link rel="stylesheet" href="css/accent-bundle.css?v=5e4248c9c6" data-sources="css/liquid.css|css/contrast-fix.css|css/polish.css"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/core-bundle.css?v=d922bbd719" data-sources="css/unified-v7.css|css/theme-fix.css|css/editorial-v8.css|css/clean-v9.css"><link rel="stylesheet" href="css/finish-bundle.css?v=0b743fdc39" data-sources="css/tide.css|css/tide-motion.css|css/workspaces.css|css/site-refresh.css"><link rel="preload" href="fonts/manrope-latin-700.woff2" as="font" type="font/woff2" crossorigin></head><body class="site-v3 article-page tools-page calculator-suite calculator-suite--target clarity-tool">
 
 
 
@@ -466,7 +466,7 @@
   <p id="wg-summary" class="wg-summary"></p>
   <h3>Milestones</h3>
   <table class="data-table"><thead><tr><th>Milestone</th><th>Weight</th><th>Roughly when</th></tr></thead><tbody id="wg-milestones"></tbody></table>
-  <div class="panel"><h3>Planning your next steps</h3><ul class="checklist" id="wg-advice"></ul></div>
+  <div class="panel"><h3>What this result means</h3><ul class="checklist" id="wg-advice"></ul></div>
 </div>
 <details class="simple-tool-help"><summary>About this estimate</summary><p>Estimates for generally healthy adults, based on roughly 7,700 calories per kilogram of body tissue. They are not medical advice and do not fit pregnancy, growth, illness or eating-disorder recovery. Progress is rarely linear &mdash; water weight, training and the menstrual cycle all move the scale independently of fat.</p></details>
 </aside></div></div></section>
@@ -477,7 +477,7 @@
 
 
 
-<div class="ad-auto-anchor" aria-hidden="true"></div></main><footer class="modern-footer footer-compact">
+<div class="ad-auto-anchor" aria-hidden="true"></div><!-- practical-example:start --><section class="practical-example" aria-labelledby="example-title"><div class="container"><h2 id="example-title">What does a weekly percentage mean?</h2><p class="example-intro">The pace you choose is a percentage of the weight at each week of the calculation.</p><div class="example-grid"><article><h3>Starting at 80 kg</h3><strong>0.4 kg in the first week</strong><p>At a selected pace of 0.5%, the calculation is 80 × 0.005 = 0.4 kg.</p></article><article><h3>Later, at 76 kg</h3><strong>0.38 kg for that week</strong><p>The same percentage is a smaller amount: 76 × 0.005 = 0.38 kg.</p></article></div><p class="example-note">This explains the calculation, not a recommended pace. Real progress does not follow an exact schedule, and a change in scale weight is not the same as a change in body fat.</p><a class="btn action-link" href="cutting-bulking-maintenance-explained.html">Understand weight goals</a></div></section><!-- practical-example:end --></main><footer class="modern-footer footer-compact">
 <div class="footer-intro"><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff9ee"/><path d="M16 6a10 10 0 0 0 0 20Z" fill="#318454"/><path d="M18 6.2V15h8a10 10 0 0 0-8-8.8Z" fill="#d49254"/><path d="M18 17v8.8a10 10 0 0 0 8-8.8Z" fill="#4e8797"/></svg></span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find a meal. Know your macros.</p></div>
 <nav class="footer-main-links" aria-label="Footer"><a href="restaurant-meal-finder.html">Find a meal</a><a href="calculators.html">Calculators</a><a href="articles.html">Nutrition guides</a><a href="contact.html">Contact</a></nav>
 <details class="footer-details"><summary>About this site</summary><div><a href="about.html">About GetMacros</a><a href="sources.html">Sources</a><a href="editorial-policy.html">How I write the guides</a><a href="corrections.html">Corrections</a><a href="accessibility.html">Accessibility</a></div></details>
@@ -524,10 +524,7 @@
     $("wg-dir").textContent=losing?"daily deficit to start":"daily surplus to start";
 
     var shown=function(kg){return unit==="lb"?(kg/0.45359237).toFixed(1)+" lb":kg.toFixed(1)+" kg";};
-    $("wg-summary").textContent="Going from "+shown(curKg)+" to "+shown(goalKg)+" is "+shown(totalKg)+
-      " at "+($("wg-rate").options[$("wg-rate").selectedIndex].text.split("\u2014")[1]||"").trim()+
-      ". The deficit shown is your starting point: as you get lighter the same percentage is fewer calories, so recalculate every few kilograms.";
-
+    $("wg-summary").textContent="From "+shown(curKg)+" to "+shown(goalKg)+" at a selected pace of "+(pace*100)+"% per week. The weekly amount changes as the modeled weight changes.";
     var tb=$("wg-milestones"); tb.innerHTML="";
     [0.25,0.5,0.75,1].forEach(function(frac){
       var mKg=curKg+(losing?-1:1)*totalKg*frac,
@@ -539,18 +536,9 @@
       tb.appendChild(tr);
     });
 
-    var tips=losing?[
-      "<strong>Keep protein high</strong> \u2014 about 1.6\u20132.2 g per kg of body weight protects muscle while you lose fat.",
-      "<strong>Keep lifting.</strong> Cutting training intensity tells your body the muscle is not needed. Reduce volume before load.",
-      "<strong>Judge progress weekly, not daily.</strong> Use a 7-day average; water weight swings hide real change.",
-      "<strong>Recalculate every 4\u20136 kg.</strong> A lighter body burns less, so the same intake stops being a deficit.",
-      "<strong>Plan the finish.</strong> Move to maintenance for a few weeks at the end rather than stopping suddenly."
-    ]:[
-      "<strong>Keep the surplus modest.</strong> Roughly 5\u201315% above maintenance; bigger surpluses add fat, not muscle.",
-      "<strong>Train progressively.</strong> A surplus without resistance training mostly adds fat.",
-      "<strong>Protein still matters</strong> \u2014 1.6\u20132.2 g per kg supports the tissue you are trying to build.",
-      "<strong>Expect slower numbers.</strong> Muscle is gained far more slowly than fat is lost; 0.25\u20130.5% per week is realistic.",
-      "<strong>Check body composition, not just the scale.</strong> Waist measurements and photos tell you what the weight is made of."
+    var tips=[
+      "<strong>A date is only an estimate.</strong> This calculation assumes your selected percentage changes every week. It cannot predict your actual progress.",
+      "<strong>Scale weight is not just body fat.</strong> Fluid, food and muscle also affect what the scale shows. The calorie figure is a simplified calculation, not a personal intake target."
     ];
     var ul=$("wg-advice"); ul.innerHTML="";
     tips.forEach(function(t){var li=document.createElement("li");li.innerHTML=t;ul.appendChild(li);});
