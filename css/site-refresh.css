@@ -343,3 +343,63 @@ html[data-theme][lang] body.site-v3 main#main-content .home-play-art img{width:1
 /* Theme changes apply text and surfaces together; no pale flash under white text. */
 html[data-theme][lang] body.site-v3 main#main-content :is(a.action-link,.home-how .home-launch-card .btn,.quiz-option,.quiz-continue,.btn,.calc-submit){transition:box-shadow .16s ease!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content .meal-browser button.btn.browse-more{background:#2d7042!important;color:#fff!important}
+/* Task-first calculator polish: short introductions and readable input groups. */
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content :is(.tool-hero,.article-container){padding-top:28px!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .tool-hero{padding-bottom:24px!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .tool-hero+.recipe-work-section,html[data-theme][lang] body.site-v3.clarity-tool main#main-content .tool-hero+section{padding-top:8px!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content h1{font-size:clamp(1.8rem,3.2vw,2.7rem)!important;line-height:1.18!important;max-width:24ch!important;letter-spacing:-.03em!important;margin:0 0 14px!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .suite-hero-mark{width:44px!important;height:44px!important;padding:10px!important;margin-bottom:14px!important;border-radius:12px!important;background:var(--quiet-green-soft)!important;color:var(--quiet-green-strong)!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .suite-hero-mark .clarity-icon{width:24px;height:24px;background:transparent!important;color:inherit!important;padding:0;border-radius:0}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-icon{display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;border-radius:12px;color:#35673e;background:#e3eddd}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-icon svg{display:block;width:24px;height:24px;fill:none!important;stroke:currentColor!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card{padding:22px!important;gap:16px!important;align-items:flex-start!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card :is(h3,p){margin:0!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card p{margin-top:8px!important;font-size:1rem!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card:nth-child(2) .clarity-icon{background:#e1edf1;color:#356677}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card:nth-child(3) .clarity-icon{background:#f4e5d6;color:#815029}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .clarity-icon{background:#304b35;color:#c4ddb8}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card:nth-child(2) .clarity-icon{background:#2b434c;color:#b9dbe5}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card:nth-child(3) .clarity-icon{background:#49392d;color:#ecc49f}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-more{margin-top:20px;padding:0 22px;border:1px solid var(--quiet-line);border-radius:18px;background:var(--quiet-surface)}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-more>summary{padding:20px 0;cursor:pointer;font-size:1.0625rem;font-weight:700;color:var(--quiet-ink)}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-more[open]{padding-bottom:22px}
+html[data-theme][lang] body.site-v3 main#main-content .calc-purpose{grid-column:2/-1;margin:0!important;max-width:50ch;font-size:1rem!important;line-height:1.6!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3 main#main-content .calc-welcome-macros{grid-row:1}
+html[data-theme][lang] body.site-v3 main#main-content .recipe-clear-inputs{display:grid!important;gap:22px!important}
+html[data-theme][lang] body.site-v3 main#main-content .recipe-clear-inputs fieldset{padding:20px 0 0!important;margin:0!important;border:0!important;border-top:1px solid var(--quiet-line)!important;background:transparent!important;box-shadow:none!important;min-width:0!important}
+html[data-theme][lang] body.site-v3 main#main-content .recipe-clear-inputs legend{padding:0 8px 0 0!important;font-size:1.0625rem!important;font-weight:700!important;line-height:1.4!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-fields{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-fields .field{min-width:0!important;margin:0!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-fields input{width:100%!important;min-width:0!important;min-height:48px!important;box-sizing:border-box!important}
+html[data-theme][lang] body.site-v3 main#main-content .clarity-hint{font-size:.9375rem!important;line-height:1.6!important;color:var(--quiet-muted)!important;margin:0 0 16px!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content :is(.tool-inputs,.tool-output,.food-panel){border-radius:20px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .tool-output{background:var(--quiet-surface)!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .tool-output::before,html[data-theme][lang] body.site-v3.clarity-tool main#main-content .tool-output::after,html[data-theme][lang] body.site-v3.clarity-tool main#main-content .result::before,html[data-theme][lang] body.site-v3.clarity-tool main#main-content .result::after{display:none!important;content:none!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .tool-output>h2{font-size:1.25rem!important;line-height:1.4!important;margin:0 0 16px!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content #factor{margin-bottom:0!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .recipe-assumptions{margin-top:20px!important;border:1px solid var(--quiet-line)!important;padding:18px 20px!important;background:var(--quiet-surface)!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .recipe-assumptions summary{font-size:1rem!important;line-height:1.5!important;cursor:pointer}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .recipe-assumptions summary::after{display:none!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .clarity-help{padding-top:0!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .clarity-help details{padding:20px;border:1px solid var(--quiet-line);border-radius:18px;background:var(--quiet-surface);max-width:100%}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .clarity-help summary{font-size:1.0625rem;font-weight:700;cursor:pointer;line-height:1.5}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .clarity-help p{font-size:1rem!important;line-height:1.65!important;margin:16px 0!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .compare-actions{gap:12px!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .compare-actions button{min-height:50px!important;border-radius:12px!important;padding:12px 20px!important;border:1px solid var(--quiet-line)!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .compare-actions button[type=reset]{background:var(--quiet-surface-2)!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .error:empty{display:none!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .price-result{display:flex!important;flex-direction:column!important;gap:8px!important;padding:22px!important;border:1px solid var(--quiet-line)!important;background:var(--quiet-surface-2)!important;min-width:0!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .price-result strong{font-size:2rem!important;line-height:1.2!important;margin:8px 0 0!important;color:var(--quiet-ink)!important;overflow-wrap:anywhere}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .price-result small{font-size:1rem!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .price-per-gram{font-size:.875rem!important;line-height:1.5!important;color:var(--quiet-muted)!important}
+@media(max-width:700px){html[data-theme][lang] body.site-v3 main#main-content .calc-purpose{grid-column:1/-1;grid-row:3}html[data-theme][lang] body.site-v3 main#main-content .calc-welcome .calc-hero-grid{gap:14px!important}}
+@media(max-width:620px){html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid{grid-template-columns:1fr!important}html[data-theme][lang] body.site-v3 main#main-content .clarity-tool-grid .clear-tool-card{padding:20px!important}html[data-theme][lang] body.site-v3 main#main-content .clarity-more{padding:0 16px}html[data-theme][lang] body.site-v3 main#main-content .clarity-more .clear-tool-card{border:0!important;padding:16px 0!important;border-radius:0!important}html[data-theme][lang] body.site-v3.clarity-tool main#main-content h1{font-size:1.8rem!important}}
+html[data-theme][lang] body.site-v3.clarity-tool main#main-content .results::before,html[data-theme][lang] body.site-v3.clarity-tool main#main-content .results::after,html[data-theme][lang] body.site-v3 main#main-content .clarity-more::before,html[data-theme][lang] body.site-v3 main#main-content .clarity-more::after,html[data-theme][lang] body.site-v3 main#main-content .clarity-more>summary::after{display:none!important;content:none!important}
+html[data-theme][lang] body.site-v3.calculator-suite--value.clarity-tool main#main-content .tool-output .results{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.calculator-suite--value.clarity-tool main#main-content .price-result{padding:16px 12px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.calculator-suite--value.clarity-tool main#main-content .price-result strong{font-size:clamp(1.5rem,2vw,1.9rem)!important;letter-spacing:-.025em!important}
+html[data-theme][lang] body.site-v3.calculator-suite--value.clarity-tool main#main-content #winner{border:0!important;box-shadow:none!important;background:transparent!important;padding:0!important;margin:20px 0 0!important;font-size:1rem!important;line-height:1.6!important}
+/* Old footer decoration must not escape into the last section above it. */
+html[data-theme][lang] body.site-v3 footer.modern-footer.footer-compact::before,html[data-theme][lang] body.site-v3 footer.modern-footer.footer-compact::after{content:none!important;display:none!important}
+html[data-theme][lang] body.site-v3.calculator-suite--value.clarity-tool main#main-content .tool-output .results{border-radius:0!important;overflow:visible!important}

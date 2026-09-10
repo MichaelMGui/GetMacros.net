@@ -369,7 +369,7 @@ def main() -> int:
         # The point is that the page states the current count, not that it uses
         # one exact sentence. The homepage kicker now says "83 meals", which is
         # the same claim and has to stay just as current.
-        "about.html": r"83(?:</strong><small>|\s+)tracked menu options",
+        "about.html": r"83(?:</strong><small>|\s+)(?:tracked )?menu options",
         "healthy-fast-food.html": r"83 tracked menu options",
         "restaurant-meal-finder.html": r"83 (?:meals|(?:tracked )?menu options)",
     }
