@@ -449,3 +449,9 @@ html[data-theme="dark"][lang] body.site-v3 main#main-content .clarity-icon{backg
 html[data-theme="dark"][lang] body.site-v3 main#main-content .clear-tool-card:nth-child(2) .clarity-icon{background:#2e414b!important;color:#b1d5e3!important}
 html[data-theme="dark"][lang] body.site-v3 main#main-content .clear-tool-card:nth-child(3) .clarity-icon{background:#473a2d!important;color:#ebc195!important}
 html[data-theme="dark"][lang] body.site-v3 footer.modern-footer.footer-compact{background:#202722!important;border-top:1px solid #566257!important}
+/* A compact mobile illustration leaves room for the next useful step. */
+@media(max-width:620px){
+ html[data-theme][lang] body.site-v3 main#main-content .home-intro-grid{gap:8px!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-play-art{width:clamp(180px,54vw,220px)!important;max-width:100%!important;margin:8px auto 0!important;aspect-ratio:600/460;background:transparent!important;border:0!important;box-shadow:none!important}
+ html[data-theme][lang] body.site-v3 main#main-content .home-how{margin-top:24px!important}
+}

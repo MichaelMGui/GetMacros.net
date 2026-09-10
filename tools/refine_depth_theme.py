@@ -37,6 +37,7 @@ def run():
   s=s.replace('</main>','<!-- practical-example:start -->'+content+'<!-- practical-example:end --></main>',1)
   path.write_text(s,encoding='utf-8')
  path=ROOT/'index.html';s=path.read_text(encoding='utf-8')
+ s=s.replace('images/meal-play.svg','images/meal-plate.svg')
  s=s.replace('Meal finder questions</h2>','Using the meal finder</h2>')
  cards=[('how-many-calories-should-i-eat-a-day.html','journal-calories-vs-macros.svg','How many calories should I eat?','Understand your daily estimate and how your goal changes it.'),('how-much-protein-per-day.html','journal-protein-absorption.svg','How much protein do I need?','Find out how body weight and activity affect your daily target.'),('best-fast-food-restaurants-for-your-goals.html','journal-restaurant-comparison.svg','Which fast-food restaurant should I choose?','Compare complete orders for more protein, weight loss or a bigger meal.')]
  guide='<section class="gm6-learning"><div class="container"><div class="home-guides-head"><h2>Nutrition guides</h2><a class="btn action-link" href="articles.html">Browse all guides</a></div><div class="home-reading-grid">'
