@@ -189,15 +189,20 @@
   function summary(count) { return count + " meals ranked for your choices. Check each card for goal matches."; }
   function comparisonMarkup(results) {
     if (results.length < 2) return '';
-    return '<details class="meal-comparison"><summary>Compare two meals</summary><p>Choose two of your matches to see the numbers side by side.</p><div class="comparison-pickers">' + [0,1].map(function(slot){return '<label>Meal '+(slot+1)+'<select data-compare="'+slot+'">'+results.map(function(m,i){return '<option value="'+i+'"'+(i===slot?' selected':'')+'>'+esc(m.chain+' — '+m.name.replace('High-protein bulking order: ',''))+'</option>';}).join('')+'</select></label>';}).join('')+'</div><div class="comparison-output" aria-live="polite"></div></details>';
+    return '<details class="meal-comparison"><summary>Compare two meals</summary><p>Choose two matches to compare.</p><div class="comparison-pickers">' + [0,1].map(function(slot){return '<div class="comparison-picker"><span class="comparison-label">Meal '+(slot+1)+'</span><details data-compare="'+slot+'" data-value="'+slot+'"><summary aria-label="Choose meal '+(slot+1)+'"></summary><div class="comparison-choices" role="group" aria-label="Meal '+(slot+1)+' choices">'+results.map(function(m,i){return '<button type="button" data-compare-pick="'+i+'">'+esc(m.chain)+'<span>'+esc(m.name.replace('High-protein bulking order: ',''))+'</span></button>';}).join('')+'</div></details></div>';}).join('')+'</div><div class="comparison-output" aria-live="polite"></div></details>';
   }
   function updateComparison() {
-    var selects=root.querySelectorAll('[data-compare]');
-    if(selects.length!==2)return;
-    var pair=Array.from(selects).map(function(select){return root._matches[Number(select.value)];});
+    var pickers=root.querySelectorAll('[data-compare]');
+    if(pickers.length!==2)return;
+    var pair=Array.from(pickers).map(function(picker){
+      var m=root._matches[Number(picker.dataset.value)];
+      picker.querySelector('summary').innerHTML='<b>'+esc(m.chain)+'</b><span>'+esc(m.name.replace('High-protein bulking order: ',''))+'</span><small>Change meal</small>';
+      picker.querySelectorAll('[data-compare-pick]').forEach(function(button){button.setAttribute('aria-pressed',button.dataset.comparePick===picker.dataset.value?'true':'false');});
+      return m;
+    });
     var output=root.querySelector('.comparison-output');
     if(pair[0]===pair[1]){output.innerHTML='<p>Choose two different meals to compare.</p>';return;}
-    output.innerHTML='<div class="comparison-names">'+pair.map(function(m,i){return '<p><b>Meal '+(i+1)+': '+esc(m.chain)+'</b><span>'+esc(m.name.replace('High-protein bulking order: ',''))+'</span></p>';}).join('')+'</div><table><caption>Nutrition per complete order</caption><thead><tr><td></td><th scope="col">Meal 1</th><th scope="col">Meal 2</th></tr></thead><tbody>'+[['cal','Calories',''],['p','Protein',' g'],['f','Fiber',' g'],['na','Sodium',' mg']].map(function(row){return '<tr><th scope="row">'+row[1]+'</th>'+pair.map(function(m){return '<td>'+(m[row[0]]===null?'Not published':m[row[0]].toLocaleString()+row[2])+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
+    output.innerHTML='<table><caption>Nutrition per complete order</caption><thead><tr><td></td><th scope="col">Meal 1</th><th scope="col">Meal 2</th></tr></thead><tbody>'+[['cal','Calories',''],['p','Protein',' g'],['f','Fiber',' g'],['na','Sodium',' mg']].map(function(row){return '<tr><th scope="row">'+row[1]+'</th>'+pair.map(function(m){return '<td>'+(m[row[0]]===null?'Not published':m[row[0]].toLocaleString()+row[2])+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
   }
   function renderResults() {
     var layout = root.closest(".match-intro-grid");
@@ -257,7 +262,6 @@
 
   root.addEventListener("change", function (e) {
     var el = e.target;
-    if (el.hasAttribute("data-compare")) { updateComparison(); return; }
     var required = root.querySelector(".quiz-required"); if (required) required.hidden = true;
     if (el.dataset.incomplete) { includeIncomplete = el.checked; renderResults(); return; }
     if (el.dataset.any) {
@@ -279,7 +283,13 @@
     var any = root.querySelector('[data-any="' + key + '"]'); if (any) any.checked = false;
     if (key === "goal") syncConflict();
   });
+  root.addEventListener("keydown", function(e){
+    if(e.key==='Escape'){var picker=e.target.closest('[data-compare]');if(picker&&picker.open){picker.open=false;picker.querySelector('summary').focus();}}
+  });
   root.addEventListener("click", function (e) {
+    var choice=e.target.closest('[data-compare-pick]');
+    if(choice){var picker=choice.closest('[data-compare]');picker.dataset.value=choice.dataset.comparePick;picker.open=false;updateComparison();picker.querySelector('summary').focus({preventScroll:true});return;}
+
     var t = e.target.closest("[data-go],[data-restart],[data-more],[data-save],[data-share]"); if (!t) return;
     if (t.dataset.save) toggleSaved(t.dataset.save);
     else if (t.dataset.share) shareResults(t);
