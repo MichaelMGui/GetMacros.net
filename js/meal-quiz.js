@@ -187,6 +187,18 @@
     if(step===3) chains.forEach(function(name){var img=new Image();img.src=chainLogo(name);});
   }
   function summary(count) { return count + " meals ranked for your choices. Check each card for goal matches."; }
+  function comparisonMarkup(results) {
+    if (results.length < 2) return '';
+    return '<details class="meal-comparison"><summary>Compare two meals</summary><p>Choose two of your matches to see the numbers side by side.</p><div class="comparison-pickers">' + [0,1].map(function(slot){return '<label>Meal '+(slot+1)+'<select data-compare="'+slot+'">'+results.map(function(m,i){return '<option value="'+i+'"'+(i===slot?' selected':'')+'>'+esc(m.chain+' — '+m.name.replace('High-protein bulking order: ',''))+'</option>';}).join('')+'</select></label>';}).join('')+'</div><div class="comparison-output" aria-live="polite"></div></details>';
+  }
+  function updateComparison() {
+    var selects=root.querySelectorAll('[data-compare]');
+    if(selects.length!==2)return;
+    var pair=Array.from(selects).map(function(select){return root._matches[Number(select.value)];});
+    var output=root.querySelector('.comparison-output');
+    if(pair[0]===pair[1]){output.innerHTML='<p>Choose two different meals to compare.</p>';return;}
+    output.innerHTML='<div class="comparison-names">'+pair.map(function(m,i){return '<p><b>Meal '+(i+1)+': '+esc(m.chain)+'</b><span>'+esc(m.name.replace('High-protein bulking order: ',''))+'</span></p>';}).join('')+'</div><table><caption>Nutrition per complete order</caption><thead><tr><td></td><th scope="col">Meal 1</th><th scope="col">Meal 2</th></tr></thead><tbody>'+[['cal','Calories',''],['p','Protein',' g'],['f','Fiber',' g'],['na','Sodium',' mg']].map(function(row){return '<tr><th scope="row">'+row[1]+'</th>'+pair.map(function(m){return '<td>'+(m[row[0]]===null?'Not published':m[row[0]].toLocaleString()+row[2])+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
+  }
   function renderResults() {
     var layout = root.closest(".match-intro-grid");
     if (layout) layout.classList.add("results-mode");
@@ -197,7 +209,8 @@
       announce("No meals match that exact combination. Change an answer to continue."); syncUrl(); return;
     }
     var shown = results.slice(0, 5);
-    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + '<details class="result-options"><summary>More options</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></details></div>';
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + comparisonMarkup(results) + '<details class="result-options"><summary>More options</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with incomplete nutrition data</b><small>' + incompleteCount + ' meals are excluded because one or more figures are not published.</small></span></label><button type="button" class="btn btn-ghost" data-share="1">Share results</button></div></details></div>';
+    root._matches = results; updateComparison();
     root._rest = results.slice(5); root._total=results.length; announce(summary(results.length)); syncUrl(); updateSavedUi();
   }
   function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }
@@ -244,6 +257,7 @@
 
   root.addEventListener("change", function (e) {
     var el = e.target;
+    if (el.hasAttribute("data-compare")) { updateComparison(); return; }
     var required = root.querySelector(".quiz-required"); if (required) required.hidden = true;
     if (el.dataset.incomplete) { includeIncomplete = el.checked; renderResults(); return; }
     if (el.dataset.any) {
