@@ -743,3 +743,28 @@ html[data-theme][lang] body.site-v3.meal-ideas-page main#main-content .meal-idea
 html[data-theme][lang] body.site-v3.meal-ideas-page main#main-content#main-content .meal-idea-filters>button{opacity:1!important;filter:none!important}
 html[data-theme][lang] body.site-v3.meal-ideas-page main#main-content#main-content .meal-idea-filters>button[aria-pressed=true]{background:#326c47!important;color:#fff!important;border-color:#326c47!important}
 html[data-theme="dark"][lang] body.site-v3.meal-ideas-page main#main-content#main-content .meal-idea-filters>button[aria-pressed=true]{background:#a6c78b!important;color:#1e3020!important;border-color:#a6c78b!important}
+
+/* Explicit nested menu colours prevent a desktop light-theme rule winning. */
+html[data-theme="dark"][lang] body.site-v3 header.site-header nav.full-nav #primary-navigation :is(a,button,strong,b,span){color:#f4f1e8!important;-webkit-text-fill-color:currentColor!important}
+html[data-theme="dark"][lang] body.site-v3 header.site-header nav.full-nav #primary-navigation .nav-popover a small{color:#c6d1c8!important;-webkit-text-fill-color:currentColor!important;font-weight:400!important;font-size:.875rem!important;line-height:1.45!important}
+html[data-theme="dark"][lang] body.site-v3 header.site-header nav.full-nav #primary-navigation :is(.nav-popover,.nav-group){background:#252c28!important}
+html[data-theme="dark"][lang] body.site-v3 header.site-header nav.full-nav .nav-utility{background:transparent!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content .contact-address{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:22px!important;background:var(--character-soft)!important;border:0!important;border-radius:18px!important;margin:24px 0 16px!important}
+html[data-theme][lang] body.site-v3 main#main-content .contact-address-label{font-size:.9375rem;font-weight:650;color:var(--quiet-muted)}
+html[data-theme][lang] body.site-v3 main#main-content#main-content .contact-email-address{font-size:clamp(1.0625rem,4.7vw,1.5rem)!important;line-height:1.45!important;font-weight:750!important;color:var(--quiet-ink)!important;overflow-wrap:anywhere;text-decoration:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .contact-browser-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:440px}
+html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.contact-browser-links,.contact-draft-actions) .btn{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;border-radius:12px!important;font-size:1rem!important;font-weight:650!important;line-height:1.4!important;min-width:0!important;min-height:52px!important;width:100%!important;white-space:normal!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .contact-draft-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px!important}
+html[data-theme][lang] body.site-v3 main#main-content .contact-draft-actions .btn{width:100%!important;min-width:0!important;white-space:normal!important;font-size:1rem!important;line-height:1.4!important}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz .comparison-picker{--compare-tint:#e8f0de;--compare-ink:#315b38}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz .comparison-picker:nth-child(2){--compare-tint:#e4eef3;--compare-ink:#315d70}
+html[data-theme="dark"][lang] body.site-v3 main#main-content #meal-quiz .comparison-picker{--compare-tint:#2f4231;--compare-ink:#c5dfb3}
+html[data-theme="dark"][lang] body.site-v3 main#main-content #meal-quiz .comparison-picker:nth-child(2){--compare-tint:#2b3c46;--compare-ink:#b6d9e7}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz .comparison-label{display:inline-block!important;background:var(--compare-tint)!important;color:var(--compare-ink)!important;padding:7px 12px;border-radius:9px;font-size:.9375rem;font-weight:750;margin-bottom:10px}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz [data-compare]{background:var(--compare-tint)!important;border:0!important;border-radius:16px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz [data-compare]>summary{padding:20px!important}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz [data-compare] summary .comparison-brand{display:flex!important;align-items:center;gap:12px;margin:0!important;color:var(--compare-ink)!important}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz .comparison-brand img{width:36px;height:36px;flex:none;border-radius:11px;border:0}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz [data-compare] summary .comparison-meal-name{font-size:1.0625rem!important;line-height:1.5!important;margin-top:14px!important;color:var(--quiet-ink)!important;font-weight:550!important}
+html[data-theme][lang] body.site-v3 main#main-content #meal-quiz [data-compare] small{display:inline-block!important;background:var(--quiet-paper)!important;color:var(--quiet-ink)!important;padding:8px 12px;border-radius:9px;margin-top:16px!important;font-weight:650}
+@media(max-width:380px){html[data-theme][lang] body.site-v3 main#main-content .contact-draft-actions{grid-template-columns:1fr}}

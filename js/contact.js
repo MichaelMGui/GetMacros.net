@@ -5,7 +5,14 @@
  const email='getmacros.net@outlook.com',topic=document.querySelector('#contact-topic'),message=document.querySelector('#contact-message'),hint=document.querySelector('#contact-hint'),status=document.querySelector('#contact-draft-status');
  const topics={question:['A question for GetMacros','Tell me what you’d like to know. Please leave out private health details.'],idea:['An idea for GetMacros','What were you trying to do, and what would make it easier?'],problem:['Something to fix on GetMacros','Include the page link, what you tried and what happened. For a nutrition number, add the restaurant and menu item.']};
  const draft=document.querySelector('#contact-email-draft');
- function updateDraft(){draft.href=`mailto:${email}?subject=${encodeURIComponent(topics[topic.value][0])}&body=${encodeURIComponent(message.value.trim())}`;}
+ function updateDraft(){draft.href=`mailto:${email}?subject=${encodeURIComponent(topics[topic.value][0])}&body=${encodeURIComponent(message.value.trim())}`;
+  document.querySelectorAll('[data-webmail]').forEach(link=>{
+   const gmail=link.dataset.webmail==='gmail';
+   const url=new URL(gmail?'https://mail.google.com/mail/':'https://outlook.live.com/mail/0/deeplink/compose');
+   if(gmail){url.searchParams.set('view','cm');url.searchParams.set('fs','1');}
+   url.searchParams.set('to',email);url.searchParams.set(gmail?'su':'subject',topics[topic.value][0]);url.searchParams.set('body',message.value.trim());link.href=url.href;
+  });
+ }
  function sync(){hint.textContent=topics[topic.value][1];status.textContent='';updateDraft();}
  message.addEventListener('input',updateDraft);updateDraft();
  topic.addEventListener('change',sync);
@@ -23,6 +30,6 @@
  }
  document.querySelector('[data-copy-address]').addEventListener('click',()=>copy(email,document.querySelector('#contact-copy-status')));
  document.querySelector('[data-copy-message]').addEventListener('click',()=>{if(form.reportValidity())copy(text(),status);});
- draft.addEventListener('click',event=>{if(!form.reportValidity()){event.preventDefault();return;}updateDraft();status.textContent='Your message is ready for your email app. Nothing has been sent from this page.';});
- form.addEventListener('submit',event=>{event.preventDefault();draft.click();});
+ draft.addEventListener('click',event=>{updateDraft();status.textContent='Your message is ready for your email app. Nothing has been sent from this page.';});
+ form.addEventListener('submit',event=>{event.preventDefault();form.querySelector('[data-webmail="gmail"]').click();});
 })();

@@ -36,7 +36,7 @@
   };
   function chainLogo(name) {
     var slug = CHAIN_LOGO[chainKey(name)] || "chipotle";
-    return "images/restaurant-logos/" + slug + ".png";
+    return "images/restaurant-marks/" + slug + ".svg";
   }
   var chains = [];
   meals.forEach(function (m) { if (chains.indexOf(m.chain) === -1) chains.push(m.chain); });
@@ -196,7 +196,7 @@
     if(pickers.length!==2)return;
     var pair=Array.from(pickers).map(function(picker){
       var m=root._matches[Number(picker.dataset.value)];
-      picker.querySelector('summary').innerHTML='<b>'+esc(m.chain)+'</b><span>'+esc(m.name.replace('High-protein bulking order: ',''))+'</span><small>Change meal</small>';
+      picker.querySelector('summary').innerHTML='<span class="comparison-brand"><img src="'+esc(chainLogo(m.chain))+'" width="36" height="36" alt=""><b>'+esc(m.chain)+'</b></span><span class="comparison-meal-name">'+esc(m.name.replace('High-protein bulking order: ',''))+'</span><small>Choose a different meal</small>';
       picker.querySelectorAll('[data-compare-pick]').forEach(function(button){button.setAttribute('aria-pressed',button.dataset.comparePick===picker.dataset.value?'true':'false');});
       return m;
     });
