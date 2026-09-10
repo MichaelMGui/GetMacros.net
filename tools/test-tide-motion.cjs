@@ -4,6 +4,7 @@ function run(reduced) {
   let observer;
   const element = (tagName = 'DIV') => ({tagName, style: {setProperty() {}}, classList: {toggle() {}, add() {}},
     setAttribute() {}, append() {}, prepend() {}, closest() {return null;},
+    getBoundingClientRect() {return {top:900};}, parentElement:{closest(){return null;}},
     addEventListener(name, fn) {events[name] = fn;},
     animate() {const a = {cancelled: false, cancel() {this.cancelled = true;}, finished: new Promise(() => {})}; animations.push(a); return a;}
   });
@@ -17,7 +18,7 @@ function run(reduced) {
     localStorage: {getItem: key => values.get(key), setItem: (key, value) => values.set(key, value)},
     window: {IntersectionObserver: true},
     IntersectionObserver: class {constructor(fn) {observer = fn;} observe() {} unobserve() {}},
-    setTimeout, requestAnimationFrame: fn => fn(), addEventListener() {}
+    innerHeight:800, setTimeout, requestAnimationFrame: fn => fn(), addEventListener() {}
   });
   observer([{isIntersecting: true, target: title}]);
   assert.equal(animations.length, reduced ? 0 : 1);

@@ -36,61 +36,29 @@
   document.addEventListener?.('visibilitychange', sync);
   sync();
 
-  // A quiet colour wash tracks progress without moving the document itself.
-  let washQueued = false;
-  const updateWash = () => {
-    washQueued = false;
-    if (!active) return;
-    const length = Math.max(1, root.scrollHeight - innerHeight);
-    const progress = Math.min(1, Math.max(0, scrollY / length));
-    root.style.setProperty('--tide-progress', progress.toFixed(4));
-  };
-  addEventListener('scroll', () => {
-    if (active && !washQueued) { washQueued = true; requestAnimationFrame(updateWash); }
-  }, {passive:true});
-  addEventListener('resize', updateWash, {passive:true});
-
-  const hero = document.querySelector('.home-intro,.article-hero,.page-hero,.blog-hero,.focus-hero,.calc-hub-hero,.match-intro,.search-hero,.tool-hero');
-  if (hero) {
-    hero.classList.add('tide-motion-scene');
-    const liquid = document.createElement('div');
-    liquid.className = 'tide-liquid'; liquid.setAttribute('aria-hidden', 'true');
-    liquid.innerHTML = '<i></i><i></i><i></i>';
-    hero.prepend(liquid);
-    let queued = false;
-    const drift = () => {
-      queued = false;
-      if (!active) return;
-      const box = hero.getBoundingClientRect();
-      if (box.bottom < 0 || box.top > innerHeight) return;
-      liquid.style.setProperty('--tide-drift', Math.min(65, Math.max(-65, -box.top * .13)) + 'px');
-    };
-    addEventListener('scroll', () => {
-      if (active && !queued) { queued = true; requestAnimationFrame(drift); }
-    }, { passive: true });
-  }
-
   // One-time entrances, only after intersection; observer failure cannot hide text.
   const targets = document.querySelectorAll('main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
-      let sequence = 0;
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
         observer.unobserve(entry.target);
         if (entry.target.closest('form,[aria-live],#meal-quiz')) return;
         const heading = /^H[12]$/.test(entry.target.tagName);
         play(entry.target, heading ? [
-          { translate: '0 12px', opacity: 1 },
+          { translate: '0 6px', opacity: 1 },
           { translate: '0 0', opacity: 1, offset: .78 },
           { translate: '0 0', opacity: 1 }
         ] : [
-          { translate: '0 16px', opacity: .94 },
+          { translate: '0 6px', opacity: .94 },
           { translate: '0 0', opacity: 1 }
-        ], { duration: heading ? 420 : 480, delay: Math.min(sequence++ * 35, 105), easing: 'cubic-bezier(.2,.75,.2,1)' });
+        ], { duration: 220, delay: 0, easing: 'cubic-bezier(.2,.75,.2,1)' });
       });
     }, { threshold: .12 });
-    targets.forEach(target => observer.observe(target));
+    targets.forEach(target => {
+      // Never replay an entrance on already-visible content or nested headings.
+      if (target.getBoundingClientRect().top >= innerHeight && !target.parentElement.closest('.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card')) observer.observe(target);
+    });
   }
 
   document.querySelectorAll('.btn,a.home-launch-card').forEach(button => {

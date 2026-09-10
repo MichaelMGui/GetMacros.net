@@ -6,9 +6,7 @@
   var root = document.getElementById("meal-quiz");
   if (!root || !meals.length) return;
 
-  // Keep step changes accessible without moving the page. Focusing a newly
-  // inserted heading can still scroll the viewport in iOS Safari even when
-  // preventScroll is requested, which made Continue feel unpredictable.
+  // Announce question changes independently of the visual transition.
   var announcer = document.createElement("p");
   announcer.className = "sr-only quiz-announcer";
   announcer.setAttribute("aria-live", "polite");
@@ -209,14 +207,14 @@
   // after an explicit Back/Continue/Edit tap, never after loading or selecting
   // an answer.
   function showCurrentQuestion() {
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        var header = document.querySelector(".site-header");
-        var headerHeight = header ? header.getBoundingClientRect().height : 0;
-        var top = window.scrollY + root.getBoundingClientRect().top - headerHeight - 12;
-        window.scrollTo({ top: Math.max(0, top), left: 0, behavior: reducedMotion() ? "auto" : "smooth" });
-      });
-    });
+    var header = document.querySelector('.site-header');
+    var clearance = header ? Math.max(0, header.getBoundingClientRect().bottom) : 0;
+    var top = window.scrollY + root.getBoundingClientRect().top - clearance - 16;
+    // Reposition while the outgoing card is faded, before revealing the new
+    // question. Never race a smooth scroll against a shrinking document.
+    window.scrollTo({top: Math.max(0, top), left: 0, behavior: 'instant'});
+    var heading = root.querySelector('h2');
+    if (heading) heading.focus({preventScroll: true});
   }
 
   var changingQuestion = false;
@@ -225,28 +223,21 @@
     changingQuestion = true;
     var oldCard = root.firstElementChild;
     var useMotion = !reducedMotion() && oldCard && oldCard.animate;
-    var oldHeight = root.getBoundingClientRect().height;
-    root.style.minHeight = oldHeight + 'px';
     root.setAttribute('aria-busy', 'true');
     root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=true;});
     try {
-      if (useMotion) await oldCard.animate([{opacity:1},{opacity:0.2}],{duration:100,easing:'ease-out',fill:'forwards'}).finished.catch(function(){});
+      if (useMotion) await oldCard.animate([{opacity:1},{opacity:0}],{duration:80,easing:'ease-out',fill:'forwards'}).finished.catch(function(){});
       update();
       showCurrentQuestion();
       var newCard = root.firstElementChild;
       root.removeAttribute('aria-busy');
       root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=true;});
       if (newCard && newCard.querySelector('.results-heading')) newCard=newCard.querySelector('.results-heading');
-      if (useMotion && newCard) await newCard.animate([{opacity:0.2,translate:(direction < 0 ? '-12px' : '12px')+' 0'},{opacity:1,translate:'0 0'}],{duration:240,easing:'cubic-bezier(.16,1,.3,1)'}).finished.catch(function(){});
+      if (useMotion && newCard) await newCard.animate([{opacity:0,transform:'translateY(6px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'ease-out'}).finished.catch(function(){});
     } finally {
       root.removeAttribute('aria-busy');
-      // Hold the old space until scrolling to the next question has settled.
-      // Otherwise a shorter card clamps the page scroll before it can move.
-      var settleTimer, endTimer;
-      function release(){clearTimeout(settleTimer);clearTimeout(endTimer);window.removeEventListener('scroll',settle);root.style.minHeight='';root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=false;});changingQuestion=false;}
-      function settle(){clearTimeout(settleTimer);settleTimer=setTimeout(release,120);}
-      if (!useMotion) release();
-      else {window.addEventListener('scroll',settle,{passive:true});settleTimer=setTimeout(release,180);endTimer=setTimeout(release,1000);}
+      root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=false;});
+      changingQuestion=false;
     }
   }
 

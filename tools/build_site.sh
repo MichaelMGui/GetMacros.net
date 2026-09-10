@@ -42,6 +42,7 @@ python3 tools/simplify_interface.py
 python3 tools/refine_approachability.py
 python3 tools/refine_food_reference.py
 python3 tools/refine_submission.py
+python3 tools/refine_motion_design.py
 python3 tools/bundle_styles.py
 # Last, so it sees the final head of every page: rewrite each local CSS and
 # JS link with a hash of that file, so a changed asset always busts caches
