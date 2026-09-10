@@ -220,7 +220,7 @@ def main() -> int:
                 ("healthy-fast-food.html", "Healthy Fast Food"),
                 ("restaurant-meal-finder.html", "Fast-food meal finder"),
                 ("calculators.html", "Macro Calculator"),
-                ("articles.html", "Nutrition Guides"),
+                ("articles.html", "Nutrition basics"),
                 ("about.html", "About"),
             )
             for nav_href, nav_label in required_nav:
