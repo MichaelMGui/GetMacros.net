@@ -12,6 +12,12 @@ ART={
  'search':'<circle cx="70" cy="40" r="30" class="art-paper"/><circle cx="70" cy="40" r="20" class="art-blue"/><path d="m91 63 24 22" stroke-width="12" class="art-line"/><path d="M59 40h22m-11-11v22" class="art-cut"/><circle cx="125" cy="23" r="9" class="art-orange"/>',
  'cost':'<path d="M35 31h72l8 55H27Z" class="art-paper"/><path d="M48 32V23a23 23 0 0 1 46 0v9" class="art-line"/><path d="M47 44h47v29H47Z" class="art-leaf"/><circle cx="118" cy="65" r="24" class="art-orange"/><path d="M123 54h-8a5 5 0 0 0 0 10h5a5 5 0 0 1 0 10h-9m7-24v28" class="art-line"/>'
 }
+ART.update({
+ 'sodium':'<ellipse cx="80" cy="89" rx="40" ry="5" class="art-shadow"/><path d="M55 34h50l9 44a8 8 0 0 1-8 9H54a8 8 0 0 1-8-9Z" class="art-paper"/><path d="M55 34V23a25 16 0 0 1 50 0v11Z" class="art-blue"/><path d="M67 22h1m11-3h1m11 3h1" class="art-cut"/><rect x="60" y="48" width="40" height="24" rx="6" class="art-leaf"/><path d="M69 56h1m9 5h1m8-5h1m-19 9h1m17 1h1" class="art-cut"/><circle cx="129" cy="59" r="3" class="art-orange"/><circle cx="134" cy="74" r="3" class="art-orange"/><circle cx="124" cy="83" r="3" class="art-orange"/>',
+ 'carbs':'<ellipse cx="82" cy="88" rx="51" ry="5" class="art-shadow"/><path d="M35 76V43q-12-4-10-16 2-18 25-18h54q25 0 26 18 1 12-12 16v33q0 9-10 9H45q-10 0-10-9Z" class="art-orange"/><path d="M46 71V37q-9-2-9-9 0-8 16-8h48q16 0 17 8 0 7-11 9v34q0 4-5 4H51q-5 0-5-4Z" class="art-paper"/><path d="M59 38v20m17-24v20m17-16v20" class="art-line"/><path d="M118 70q-2-18 21-22 0 23-21 22Z" class="art-leaf"/>',
+ 'timeline':'<ellipse cx="80" cy="90" rx="50" ry="4" class="art-shadow"/><rect x="31" y="15" width="98" height="70" rx="12" class="art-paper"/><path d="M43 15h74q12 0 12 12v9H31v-9q0-12 12-12Z" class="art-leaf"/><path d="M51 9v15m58-15v15" class="art-line"/><path d="M47 65 67 54l20 7 25-16" class="art-line"/><circle cx="47" cy="65" r="5" class="art-blue"/><circle cx="67" cy="54" r="5" class="art-blue"/><circle cx="87" cy="61" r="5" class="art-blue"/><circle cx="112" cy="45" r="8" class="art-orange"/>',
+ 'sweat':'<ellipse cx="79" cy="90" rx="47" ry="4" class="art-shadow"/><rect x="81" y="10" width="25" height="12" rx="4" class="art-leaf"/><path d="M81 22h25l9 16v41q0 8-9 8H81q-9 0-9-8V38Z" class="art-paper"/><path d="M79 54q10-7 29 0v24q0 3-4 3H83q-4 0-4-3Z" class="art-blue"/><path d="M91 35h10m-10 10h10" class="art-line"/><path d="M41 23Q17 52 23 64q5 12 18 12t18-12q6-12-18-41Z" class="art-blue"/><path d="M32 56q-2 9 7 11" class="art-cut"/>'
+})
 def art(kind):
  drawing=ART[kind]
  if kind=='meal':drawing=drawing.replace('class="art-line"','class="art-edge"')
@@ -19,6 +25,10 @@ def art(kind):
  if kind=='cost':drawing=drawing.replace('v9" class="art-line"','v9" class="art-edge"')
  return '<svg class="colour-art" viewBox="0 0 160 100" aria-hidden="true" focusable="false">'+drawing+'</svg>'
 def kind_for(name):
+ if 'sodium-label' in name:return 'sodium'
+ if 'carbohydrate-label' in name:return 'carbs'
+ if 'weight-goal-timeline' in name:return 'timeline'
+ if 'sweat-rate' in name:return 'sweat'
  if 'protein-value' in name:return 'cost'
  if any(x in name for x in ['label','portion','recipe-macro']):return 'labels'
  if any(x in name for x in ['calculator','sweat-rate']):return 'tools'

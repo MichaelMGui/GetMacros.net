@@ -89,7 +89,7 @@
   });
   document.addEventListener?.('toggle',event=>{
     const panel=event.target;
-    if(panel.tagName!=='DETAILS'||!panel.open||!panel.closest('main')||panel.closest('#meal-quiz'))return;
+    if(panel.tagName!=='DETAILS'||!panel.open||!panel.closest('main,footer')||panel.closest('#meal-quiz'))return;
     Array.from(panel.children).filter(child=>child.tagName!=='SUMMARY').forEach(child=>play(child,[{opacity:.75,translate:'0 4px'},{opacity:1,translate:'0 0'}],{duration:180,easing:'ease-out'}));
   },true);
 })();
