@@ -8,14 +8,14 @@ html[data-theme][lang] body.site-v3[data-design-family]{
  background:var(--quiet-paper)!important;color:var(--quiet-ink)!important
 }
 html[data-theme="dark"][lang] body.site-v3[data-design-family]{
- /* Evening colours retain the light theme's warmth without a white canvas. */
- --quiet-paper:#405b64;--quiet-surface:#4b676a;--quiet-surface-2:#55736e;--quiet-ink:#fff9eb;--quiet-muted:#eef1e5;--quiet-line:#b3c7b8;--quiet-green-strong:#ecf4d6;--quiet-green-soft:#45634d;
+ /* Botanical greens retain the evening theme's warm text and colourful accents. */
+ --quiet-paper:#294b3c;--quiet-surface:#3a5d4c;--quiet-surface-2:#496d55;--quiet-ink:#fff9eb;--quiet-muted:#eef1e5;--quiet-line:#b3c7b8;--quiet-green-strong:#ecf4d6;--quiet-green-soft:#45634d;
  --leaf-fill:#45634d;--leaf-ink:#e5f2d1;--blue-fill:#48687a;--blue-ink:#e2f3fb;--orange-fill:#6a6049;--orange-ink:#fff0c7;--berry-fill:#5d617c;--berry-ink:#eef0ff;
- --work-accent:#a3d18c;--work-on-accent:#213d2c;--button-fill:#a3d18c;--button-ink:#213d2c;--card-shadow:0 6px 22px #263e441a;
- --d-bg:var(--quiet-paper);--d-bg-soft:#466168;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-muted-2:var(--quiet-muted);--d-line:var(--quiet-line);--d-accent:var(--quiet-green-strong);--d-btn:var(--button-fill);--d-btn-in:var(--button-ink)
+ --work-accent:#a3d18c;--work-on-accent:#213d2c;--button-fill:#a3d18c;--button-ink:#213d2c;--card-shadow:0 6px 22px #193e2b24;
+ --d-bg:var(--quiet-paper);--d-bg-soft:#315341;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-muted-2:var(--quiet-muted);--d-line:var(--quiet-line);--d-accent:var(--quiet-green-strong);--d-btn:var(--button-fill);--d-btn-in:var(--button-ink)
 }
 html[data-theme="light"][lang]{background:#f5f8f2!important}
-html[data-theme="dark"][lang]{background:#405b64!important}
+html[data-theme="dark"][lang]{background:#294b3c!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(label,legend,.cite-org,.breadcrumb,.breadcrumb span,.height-pair label span){color:var(--quiet-muted)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] .brand-dot{color:var(--quiet-green-strong)!important}
 html[data-theme][lang] body.site-v3[data-design-family="tools"]{--character-soft:var(--blue-fill);--character-ink:var(--blue-ink)}
