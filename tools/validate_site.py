@@ -371,12 +371,13 @@ def main() -> int:
         # the same claim and has to stay just as current.
         "about.html": r"83(?:</strong><small>|\s+)(?:tracked )?menu options",
         "healthy-fast-food.html": r"83 tracked menu options",
-        "restaurant-meal-finder.html": r"83 (?:meals|(?:tracked )?menu options)",
     }
     for path, claim in count_claims.items():
         if not re.search(claim, pages.get(path, ("", PageParser()))[0]):
             errors.append(f"{path}: current restaurant-option count claim missing")
     finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
+    if len(re.findall(r'class="browse-meal"', finder_text)) != len(meals):
+        errors.append("meal browser: rendered meal count does not match restaurant data")
     quiz_text = (ROOT / "js" / "meal-quiz.js").read_text(encoding="utf-8")
     if "quiz-skip" in quiz_text or "data-clear" in quiz_text:
         errors.append("meal quiz: small skip-link interaction returned")

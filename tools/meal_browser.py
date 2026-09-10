@@ -17,11 +17,11 @@ FILTERS = [
 def render(meals):
     out = ['<!--MEALS:START-->', '<div class="container meal-browser-shell">',
            '<details class="meal-database-disclosure" id="browse-meals">',
-           f'<summary><strong>Browse {len(meals)} meals</strong></summary>',
-           '<div class="meal-browser" data-meal-browser>',
+           '<summary><strong>Browse all restaurant meals</strong></summary>',
+           '<div class="meal-browser" data-meal-browser><p class="browse-intro">Skip the quiz and compare meals by restaurant, calories or protein.</p>',
            '<div class="meal-browser-controls" hidden>',
-           '<label for="browse-query">Search meals or restaurants<input type="search" id="browse-query" placeholder="e.g. chicken" autocomplete="off"></label>',
-           '<label for="browse-filter">Show<select id="browse-filter">']
+           '<label for="browse-query">Search by meal or restaurant<input type="search" id="browse-query" placeholder="Try Chipotle or chicken" autocomplete="off"></label>',
+           '<label for="browse-filter">Filter meals<select id="browse-filter">']
     out.extend(f'<option value="{value}">{label}</option>' for value, label, _ in FILTERS)
     out.extend(['</select></label></div>',
                 '<p class="browse-status" role="status" aria-live="polite" aria-atomic="true" hidden></p>',
