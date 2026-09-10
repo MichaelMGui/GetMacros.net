@@ -49,6 +49,7 @@ python3 tools/refine_quiz_experience.py
 python3 tools/refine_reading_finish.py
 python3 tools/refine_learning_sections.py
 python3 tools/refine_site_character.py
+python3 tools/refine_meal_ideas.py
 python3 tools/bundle_styles.py
 # Last, so it sees the final head of every page: rewrite each local CSS and
 # JS link with a hash of that file, so a changed asset always busts caches

@@ -40,7 +40,6 @@ CALCULATOR_PAGES = {
     "recipe-macro-scaler.html",
     "nutrition-label-comparison-tool.html",
     "protein-value-calculator.html",
-    "budget-meal-builder.html",
     "sodium-label-comparison-tool.html",
     "carbohydrate-label-portion-tool.html",
     "weight-goal-timeline-calculator.html",

@@ -38,7 +38,7 @@
 
   // Observe content below the initial viewport. Nothing is hidden in CSS or
   // left waiting for JavaScript; each reveal ends at the original layout.
-  const cards='.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.search-start-tile,.pick-card,.answer-box,.evidence-card';
+  const cards='.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.search-start-tile,.pick-card,.answer-box,.evidence-card,.meal-idea';
   const targets=document.querySelectorAll('main h2,main h3,main p,'+cards);
   if ('IntersectionObserver' in window) {
     const observer=new IntersectionObserver(entries=>{
