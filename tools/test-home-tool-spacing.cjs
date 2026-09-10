@@ -22,6 +22,8 @@ const{localAssets}=require('./browser-fixture.cjs');
   await p.goto('http://127.0.0.1:4174/calculators.html');
   const fills=await p.locator('.calc-welcome-macros .clear-icon').evaluateAll(es=>es.map(e=>getComputedStyle(e).backgroundColor));
   assert.deepEqual(fills,['rgba(0, 0, 0, 0)','rgba(0, 0, 0, 0)','rgba(0, 0, 0, 0)']);
+  const colours=await p.locator('.calc-welcome-macros .clear-icon svg').evaluateAll(es=>es.map(e=>getComputedStyle(e).color));
+  assert.equal(new Set(colours).size,3,'Macro symbols have distinct accent colours without coloured boxes');
   await p.screenshot({path:`design/palm-calculator-${engine.name()}-${theme}-${width}.png`});
   console.log('PASS',engine.name(),theme,width,'icon separation, larger text and coordinated calculator header');await p.close();
  }}finally{await browser.close()}

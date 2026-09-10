@@ -9,7 +9,7 @@ const {localAssets}=require('./browser-fixture.cjs');
   const pairs=await p.evaluate(()=>{
    const s=getComputedStyle(document.body),get=k=>s.getPropertyValue('--'+k).trim();
    const lum=hex=>{let value=hex.replace('#','');if(value.length===3)value=[...value].map(c=>c+c).join('');return value.match(/.{2}/g).map(n=>parseInt(n,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0)};
-   return [...['leaf','blue','orange','berry'].map(k=>[k+'-fill',k+'-ink']),['button-fill','button-ink'],['quiet-surface','quiet-muted'],['quiet-paper','quiet-ink']].map(([a,b])=>{const l1=lum(get(a)),l2=lum(get(b));return{pair:a+'/'+b,ratio:(Math.max(l1,l2)+.05)/(Math.min(l1,l2)+.05)}});
+   return [...['leaf','blue','orange','berry'].map(k=>[k+'-fill',k+'-ink']),...['petal-rose','petal-gold','petal-sky','petal-lilac'].map(k=>[k,k+'-ink']),['button-fill','button-ink'],['quiet-surface','quiet-muted'],['quiet-paper','quiet-ink']].map(([a,b])=>{const l1=lum(get(a)),l2=lum(get(b));return{pair:a+'/'+b,ratio:(Math.max(l1,l2)+.05)/(Math.min(l1,l2)+.05)}});
   });
   for(const pair of pairs)assert.ok(pair.ratio>=4.5,`${theme} ${pair.pair}: ${pair.ratio}`);
   for(const svg of await p.locator('.colour-tile-art svg').all()){
@@ -24,6 +24,6 @@ const {localAssets}=require('./browser-fixture.cjs');
   assert.equal(await option.locator('.option-check').evaluate(e=>getComputedStyle(e).color),'rgba(0, 0, 0, 0)','Unchecked options must not look selected');
   await option.click();assert.equal(await option.locator('input').isChecked(),true);
   assert.notEqual(await option.locator('.option-check').evaluate(e=>getComputedStyle(e).color),'rgba(0, 0, 0, 0)','Checked option needs visible confirmation');
-  console.log('PASS',engine.name(),theme,width,'seven contrast pairs, illustration size and layout');await p.close();
+  console.log('PASS',engine.name(),theme,width,'eleven contrast pairs, illustration size and layout');await p.close();
  }}finally{await b.close()}
 }})().catch(e=>{console.error(e);process.exitCode=1});
