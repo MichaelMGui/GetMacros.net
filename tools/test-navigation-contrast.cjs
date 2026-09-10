@@ -7,6 +7,7 @@ const {localAssets}=require('./browser-fixture.cjs');
   process.env.GM_TEST_THEME=theme;
   const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});await localAssets(page);
   await page.goto('http://127.0.0.1:4174/index.html');
+  assert.equal(await page.locator('.nav-popover').evaluateAll(es=>es.every(e=>getComputedStyle(e).opacity==='0'&&getComputedStyle(e).visibility==='hidden')),true,'Closed menus must not flash on first load');
   if(width<900)await page.locator('.nav-toggle').click();
   const triggers=page.locator('.nav-group-trigger');
   for(let i=0;i<await triggers.count();i++){

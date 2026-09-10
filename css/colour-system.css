@@ -259,3 +259,93 @@ html[data-theme][lang] body.focused-tool main#main-content#main-content#main-con
 
 html[data-theme][lang] body.focused-tool main#main-content#main-content#main-content .focused-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234b6257' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")!important;background-size:18px!important;background-position:right 14px center!important;background-repeat:no-repeat!important}
 html[data-theme="dark"][lang] body.focused-tool main#main-content#main-content#main-content .focused-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23eef1e5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")!important}
+
+
+/* Homepage garden: a single clear opening, spacious steps and coordinated reading cards. */
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-garden{padding:28px 0 0!important;background:transparent!important;overflow:visible!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-grid{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)!important;align-items:center!important;gap:32px!important;width:calc(100% - 48px)!important;max-width:1180px!important;padding:48px!important;margin:0 auto!important;border-radius:32px!important;background:var(--quiet-surface-2)!important;min-height:420px!important;isolation:isolate}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-copy{display:block!important;min-width:0!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro h1{font-size:clamp(2.4rem,4.35vw,3.9rem)!important;line-height:1.1!important;letter-spacing:-.045em!important;max-width:none!important;margin:0 0 24px!important;text-wrap:initial!important;word-break:normal!important;overflow-wrap:normal!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro h1 em{color:var(--quiet-green-strong)!important;font-style:normal!important;display:inline!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-lede{font-size:1.125rem!important;line-height:1.65!important;max-width:40ch!important;margin:0 0 28px!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-actions{display:flex!important;flex-wrap:wrap!important;align-items:stretch!important;gap:12px!important;margin:0!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-actions :is(.home-primary,.home-text-link){display:inline-flex!important;justify-content:center!important;align-items:center!important;min-height:60px!important;padding:16px 24px!important;border-radius:16px!important;line-height:1.3!important;font-size:1.0625rem!important;font-weight:750!important;white-space:normal!important;text-align:center!important;width:auto!important;min-width:0!important;max-width:100%!important;letter-spacing:-.02em!important;text-decoration:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-actions .home-primary{font-size:1.2rem!important;flex:1 1 190px!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-actions .home-text-link{background:var(--quiet-surface)!important;border:0!important;flex:1 1 170px!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-play-art{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;width:100%!important;min-width:0!important;margin:0!important;padding:0!important;aspect-ratio:auto!important;background:transparent!important;border:0!important;box-shadow:none!important;overflow:visible!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-play-art img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:600/460!important;object-fit:contain!important;max-height:none!important;filter:none!important;transform:none!important;animation:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-art-caption{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 4px}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-art-caption span{font-size:.875rem;font-weight:700;padding:8px 15px;border-radius:100px;background:var(--petal-leaf);color:var(--petal-leaf-ink)}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-art-caption span:nth-child(2){background:var(--petal-gold);color:var(--petal-gold-ink)}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-art-caption span:nth-child(3){background:var(--petal-sky);color:var(--petal-sky-ink)}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how{width:calc(100% - 48px)!important;max-width:1180px!important;margin:48px auto 0!important;padding:0!important;background:transparent!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launcher{gap:24px!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card{display:grid!important;grid-template-columns:48px minmax(0,1fr)!important;gap:12px 20px!important;align-content:start!important;padding:28px!important;border-radius:24px!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .how-step-number{grid-column:1;grid-row:1/3;width:48px;height:48px;font-size:1.375rem;border-radius:16px!important;background:var(--petal-gold)!important;color:var(--petal-gold-ink)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card:nth-child(2) .how-step-number{background:var(--petal-sky)!important;color:var(--petal-sky-ink)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card :is(h3,p,a){grid-column:2!important;min-width:0!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card h3{font-size:1.3rem!important;line-height:1.35!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card p{color:var(--quiet-muted)!important;font-size:1rem!important;max-width:34ch!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card .btn{margin:8px 0 0!important;justify-self:start!important;background:var(--petal-leaf)!important;color:var(--petal-leaf-ink)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday{padding:80px 0!important;background:transparent!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-layout{gap:48px!important;align-items:center!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-copy h2{font-size:clamp(2rem,3.6vw,3.1rem)!important;line-height:1.15!important;letter-spacing:-.035em!important;margin-bottom:24px!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-tools{gap:16px!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-tool{box-shadow:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-tool h3{font-size:1.2rem!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon svg{fill:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-finder-help{padding:16px 0 64px!important;background:transparent!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-finder-help-layout{gap:48px!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-finder-questions{display:grid;gap:12px}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-finder-questions details{margin:0!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .gm6-learning{padding:56px 0 64px!important;background:var(--quiet-surface-2)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card{box-shadow:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card>img{aspect-ratio:16/9!important;object-fit:cover!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card>div{padding:24px!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card h3{font-size:1.2rem!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card .btn{background:var(--leaf-fill)!important;color:var(--leaf-ink)!important;border:0!important}
+@media(max-width:1000px){
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-grid{padding:32px!important;gap:24px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro h1{font-size:clamp(2.1rem,4.3vw,3rem)!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-layout{gap:28px!important}
+}
+@media(max-width:760px){
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-garden{padding-top:16px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-grid{grid-template-columns:minmax(0,1fr) 100px!important;width:calc(100% - 32px)!important;padding:28px 24px!important;gap:18px 12px!important;border-radius:26px!important;min-height:0!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-copy{display:contents!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro h1{grid-column:1/-1!important;grid-row:1!important;font-size:clamp(1.875rem,5.8vw,2.8rem)!important;margin:0!important;line-height:1.13!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-lede{grid-column:1!important;grid-row:2!important;font-size:1rem!important;line-height:1.55!important;margin:0!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-play-art{grid-column:2!important;grid-row:2!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-art-caption{display:none!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-actions{grid-column:1/-1!important;grid-row:3!important;gap:10px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-actions .home-primary{flex:1 1 100%!important;min-height:58px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-actions .home-text-link{flex:1 1 100%!important;min-height:48px!important;padding:13px 20px!important;font-size:1rem!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how{width:calc(100% - 32px)!important;margin-top:32px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launcher{grid-template-columns:1fr!important;gap:16px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card{padding:24px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card .btn{width:auto!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday{padding:48px 0!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-layout{gap:24px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-finder-help{padding-bottom:40px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-finder-help-layout{gap:20px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .gm6-learning{padding:40px 0!important}
+}
+@media(max-width:380px){
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro-grid{padding:24px 20px!important;grid-template-columns:minmax(0,1fr) 74px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-intro h1{font-size:1.8rem!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card{padding:20px!important;grid-template-columns:36px minmax(0,1fr)!important;gap:12px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .how-step-number{width:36px;height:36px;font-size:1.15rem;border-radius:12px!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-how .home-launch-card h3{font-size:1.125rem!important}
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ html.tide-motion-on[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-play-art img{transition:rotate .45s ease!important}
+ html.tide-motion-on[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-play-art:hover img{rotate:-2deg}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.home-reading-card){transition:translate .2s ease!important}
+ html.tide-motion-on[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.home-reading-card):hover{translate:0 -3px}
+}
+
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-garden,.home-everyday,.home-finder-help,.gm6-learning){border:0!important;box-shadow:none!important}
+
+/* Closed navigation panels must never flash while styles or a saved theme initialise. */
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header .nav-group:not(.is-open) .nav-popover{visibility:hidden!important;opacity:0!important;pointer-events:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){html[data-theme][lang] body.site-v3[data-design-family] header.site-header .nav-popover{transition:none!important}}
