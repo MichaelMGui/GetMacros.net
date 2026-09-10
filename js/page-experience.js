@@ -15,4 +15,27 @@
     if(target){target.tabIndex=-1;target.focus({preventScroll:true});}
   });
   update();
+
+  // Native cross-page transitions where available; a brief arrival and exit
+  // fade provides the same continuity in browsers without that support.
+  const nativePages='onpagereveal' in window && 'onpageswap' in window;
+  const motionAllowed=()=>!matchMedia('(prefers-reduced-motion: reduce)').matches&&!document.documentElement.classList.contains('tide-motion-off');
+  function arrive(){
+    document.documentElement.classList.remove('page-leaving');
+    const main=document.querySelector('main');
+    if(!nativePages&&motionAllowed()&&main?.animate)main.animate([{opacity:.8},{opacity:1}],{duration:180,easing:'ease-out'});
+  }
+  addEventListener('pageshow',arrive);
+  let leaving=false;
+  document.addEventListener('click',event=>{
+    if(nativePages||!motionAllowed()||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    const link=event.target.closest('a[href]');
+    if(!link||link.hasAttribute('download')||(link.target&&link.target!=='_self'))return;
+    const url=new URL(link.href,location.href);
+    if(url.origin!==location.origin||url.pathname===location.pathname||!(/\.html$|\/$/).test(url.pathname))return;
+    event.preventDefault();if(leaving)return;leaving=true;
+    document.documentElement.classList.add('page-leaving');
+    setTimeout(()=>location.assign(url.href),90);
+  });
+  addEventListener('pageshow',()=>{leaving=false;});
 })();

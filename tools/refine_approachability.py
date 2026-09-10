@@ -72,6 +72,12 @@ for path in ROOT.glob('*.html'):
         s=s.replace('High-protein bulking order: ','')
     s=s.replace('<p>GetMacros uses primary research, position stands and official resources where possible. These sources support the guide; they do not make it individualized medical advice.</p>','')
     if path.name=='about.html':s=main(s,about())
+    if path.name=='index.html':
+        d=Document(s)
+        dock=next((n for n in d.nodes if 'home-tool-dock' in n['attrs'].get('class','').split() and 'end' in n),None)
+        if dock:
+            steps='<section class="container home-tool-dock home-how" aria-labelledby="home-how-title"><h2 id="home-how-title">How it works</h2><div class="home-launcher"><article class="home-launch-card"><span class="how-step-number">1</span><h3>Find your daily macros</h3><p>Use the free macro calculator to estimate your calories and macros.</p><a class="btn" href="calculators.html">Use free macro calculator</a></article><article class="home-launch-card"><span class="how-step-number">2</span><h3>Find meals for your goals</h3><p>Use the fast-food meal finder to find meals that fit your goals.</p><a class="btn" href="restaurant-meal-finder.html">Find my meal</a></article></div></section>'
+            s=s[:dock['start']]+steps+s[dock['end']:]
     if path.name=='contact.html':s=main(s,contact())
     if path.name=='calculators.html':
         for cls in ['breadcrumb','calc-nav-wrap','calculator-scope','single-card-note','single-card-copy']:s=remove(s,cls)

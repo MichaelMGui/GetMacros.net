@@ -71,7 +71,7 @@
   }
 
   // One-time entrances, only after intersection; observer failure cannot hide text.
-  const targets = document.querySelectorAll('main h1,main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card');
+  const targets = document.querySelectorAll('main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
       let sequence = 0;

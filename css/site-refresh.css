@@ -205,3 +205,44 @@ html[data-theme="dark"][lang] body.site-v3 main#main-content .calc-welcome-macro
 @media(max-width:700px){html[data-theme][lang] body.site-v3 main#main-content .calc-welcome .calc-hero-grid{grid-template-columns:1fr auto!important;gap:18px!important;padding:22px!important}html[data-theme][lang] body.site-v3 main#main-content .calc-welcome h1{grid-column:1/-1!important;grid-row:2!important}html[data-theme][lang] body.site-v3 main#main-content .calc-welcome-macros{grid-column:2;grid-row:1}html[data-theme][lang] body.site-v3 main#main-content .calc-welcome-heading>.clear-icon{width:48px!important;height:48px!important}}
 @media(max-width:400px){html[data-theme][lang] body.site-v3 main#main-content .calc-welcome .calc-hero-grid{width:calc(100% - 28px)!important;padding:18px!important}html[data-theme][lang] body.site-v3 main#main-content .calc-welcome-macros .clear-icon{width:34px!important;height:34px!important;min-width:34px!important}}
 html[data-theme][lang] body.site-v3 main#main-content .calc-welcome-heading>.clear-icon svg :is(rect:not(:first-child),circle){fill:#276b48!important;opacity:1!important}
+/* Clear, solid steps replace the small outlined shortcuts under the hero. */
+html[data-theme][lang] body.site-v3 main#main-content .home-how{margin-top:36px!important;padding-top:0!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-how h2{font-size:clamp(1.6rem,3vw,2.1rem)!important;margin:0 0 20px!important;line-height:1.25!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launcher{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:16px!important;padding:28px!important;min-height:0!important;background:#e2eddf!important;color:#1d412e!important;border:0!important;border-radius:22px!important;box-shadow:0 8px 24px #1c452b0b!important;transform:none!important;transition:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card:nth-child(2){background:#e3ecf0!important;color:#203f4c!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .how-step-number{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#266a46;color:#fff;font-size:1.25rem;font-weight:750}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card:nth-child(2) .how-step-number{background:#35667a}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card h3{font-size:1.4rem!important;line-height:1.3!important;margin:0!important;max-width:none!important;color:inherit!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card p{font-size:1.0625rem!important;line-height:1.6!important;margin:0!important;max-width:42ch!important;color:inherit!important;font-weight:400!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card .btn{margin-top:auto!important;padding:13px 18px!important;min-height:48px!important;border-radius:12px!important;background:#fff!important;color:#245439!important;border:0!important;box-shadow:0 2px 4px #1633230b!important;font-size:1rem!important;line-height:1.4!important;white-space:normal!important;text-align:center!important;width:auto!important;max-width:100%!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .home-how .home-launch-card{background:#294d38!important;color:#f3f4e9!important;box-shadow:0 10px 25px #07190f24!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .home-how .home-launch-card:nth-child(2){background:#294653!important;color:#f0f4ef!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .home-how .how-step-number{background:#d6e5b9;color:#243b27}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .home-how .home-launch-card:nth-child(2) .how-step-number{background:#bcd8e2;color:#244451}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .home-how .home-launch-card .btn{background:#e4eddf!important;color:#244431!important}
+/* Readable text and opaque panels throughout the working areas. */
+html[data-theme][lang] body.site-v3 main#main-content :is(.home-decision,.home-everyday-tool,.guide-card,.tool-card,.chain-card,.blog-card,.clear-tool-card,.pick-card,.advice-card,.meal-card,.chain-result-card) p{font-size:1rem!important;line-height:1.6!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.guide-card,.tool-card,.chain-card,.blog-card,.clear-tool-card,.home-everyday-tool) :is(h3,strong){font-size:1.125rem!important;line-height:1.4!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.quiz-option small,.chain-card small,.blog-card small,.guide-card small,.meal-stats small,.chain-result-metric small){font-size:.875rem!important;line-height:1.5!important}
+html[data-theme][lang] body.site-v3 .site-header :is(.full-nav,.nav-popover,.full-nav-links){backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.home-decision,.home-everyday-tool,.guide-card,.tool-card,.chain-card,.blog-card,.clear-tool-card,.clear-about-grid article,.protein-food-card,.ranking-card,.pick-card,.advice-card,.chain-finder-form,.chain-result-card,.quiz-card,.quiz-results,.meal-card,.source-box,.callout,.editorial-note,.single-macro-card,#macro-form){background:#1c352a!important;border:1px solid transparent!important;box-shadow:0 8px 22px #081c1429!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content :is(.single-macro-result,.tool-output,#macro-results,.browse-meal){background:#294a39!important;border-color:transparent!important;box-shadow:0 6px 18px #091b1220!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .quiz-option{background:#294a3a!important;border-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .quiz-option:has(input:checked){background:#365f47!important;border-color:#a4c595!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .single-macro-card.macro-fat{border-top:3px solid #c89e57!important}
+html[data-theme="dark"][lang] body.site-v3 main#main-content .single-macro-card.macro-carbs{border-top:3px solid #699cae!important}
+/* Keep movement on small elements; remove blur and repeated entrance animations. */
+html[data-theme][lang] body.site-v3 main#main-content .home-intro::before{animation:none!important;filter:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .quiz-card{animation:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .quiz-progress>span{transition:width .2s ease!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-play-art img{filter:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .home-launch-card{backdrop-filter:none!important}
+html[data-theme][lang] body.site-v3 .nav-popover{animation:none!important;transition:opacity .16s ease,visibility .16s ease!important}
+::view-transition-old(root){animation:page-out .16s ease both!important}
+::view-transition-new(root){animation:page-in .2s ease both!important}
+@keyframes page-in{from{opacity:.5}to{opacity:1}}
+html.page-leaving main#main-content{opacity:.65;transition:opacity .09s ease!important}
+@media(max-width:620px){html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launcher{grid-template-columns:1fr!important}html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card{padding:24px!important}html[data-theme][lang] body.site-v3 main#main-content .home-how .home-launch-card .btn{width:100%!important}html[data-theme][lang] body.site-v3 main#main-content .home-play-art img{animation:none!important}}
+@media(prefers-reduced-motion:reduce){html.page-leaving main#main-content{opacity:1!important;transition:none!important}::view-transition-old(root),::view-transition-new(root){animation:none!important}}
+html.tide-motion-off::view-transition-old(root),html.tide-motion-off::view-transition-new(root){animation:none!important}

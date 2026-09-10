@@ -193,8 +193,8 @@ def main() -> int:
         errors.append("index.html: removed scrolling goal-story clutter returned")
     if "gm6-restaurants" in home:
         errors.append("index.html: removed restaurant-explorer rail returned")
-    if home.count('class="home-launch-card') != 3:
-        errors.append("index.html: homepage must expose exactly three primary tool choices")
+    if home.count('class="home-launch-card') != 2 or 'id="home-how-title"' not in home:
+        errors.append("index.html: homepage must expose the two-step calculator and meal finder flow")
     for retired in ("order-console-macros", "gm6-finder-shell", "gm6-tool-bento"):
         if retired in home:
             errors.append(f"index.html: retired homepage demo returned: {retired}")

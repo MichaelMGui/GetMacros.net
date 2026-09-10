@@ -7,12 +7,12 @@ function run(reduced) {
     addEventListener(name, fn) {events[name] = fn;},
     animate() {const a = {cancelled: false, cancel() {this.cancelled = true;}, finished: new Promise(() => {})}; animations.push(a); return a;}
   });
-  const button = element('BUTTON'), title = element('H1');
+  const button = element('BUTTON'), title = element('H2');
   const preference = {matches: reduced, addEventListener(name, fn) {this.change = fn;}};
   vm.runInNewContext(fs.readFileSync('js/tide-motion.js', 'utf8'), {
     document: {documentElement: element(), createElement: () => button,
       querySelector: selector => selector.startsWith('footer') ? element() : null,
-      querySelectorAll: selector => selector.startsWith('main h1') ? [title] : []},
+      querySelectorAll: selector => selector.startsWith('main h2') ? [title] : []},
     matchMedia: query => query.includes('reduced') ? preference : {matches: false},
     localStorage: {getItem: key => values.get(key), setItem: (key, value) => values.set(key, value)},
     window: {IntersectionObserver: true},

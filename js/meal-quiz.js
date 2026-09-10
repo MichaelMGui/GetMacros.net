@@ -215,6 +215,37 @@
     });
   }
 
+  var changingQuestion = false;
+  async function changeQuestion(update) {
+    if (changingQuestion) return;
+    changingQuestion = true;
+    var oldCard = root.firstElementChild;
+    var useMotion = !reducedMotion() && oldCard && oldCard.animate;
+    var oldHeight = root.getBoundingClientRect().height;
+    root.style.minHeight = oldHeight + 'px';
+    root.setAttribute('aria-busy', 'true');
+    root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=true;});
+    try {
+      if (useMotion) await oldCard.animate([{opacity:1},{opacity:0.2}],{duration:100,easing:'ease-out',fill:'forwards'}).finished.catch(function(){});
+      update();
+      showCurrentQuestion();
+      var newCard = root.firstElementChild;
+      root.removeAttribute('aria-busy');
+      root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=true;});
+      if (newCard && newCard.querySelector('.results-heading')) newCard=newCard.querySelector('.results-heading');
+      if (useMotion && newCard) await newCard.animate([{opacity:0.2,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:220,easing:'cubic-bezier(.2,.7,.2,1)'}).finished.catch(function(){});
+    } finally {
+      root.removeAttribute('aria-busy');
+      // Hold the old space until scrolling to the next question has settled.
+      // Otherwise a shorter card clamps the page scroll before it can move.
+      var settleTimer, endTimer;
+      function release(){clearTimeout(settleTimer);clearTimeout(endTimer);window.removeEventListener('scroll',settle);root.style.minHeight='';root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=false;});changingQuestion=false;}
+      function settle(){clearTimeout(settleTimer);settleTimer=setTimeout(release,120);}
+      if (!useMotion) release();
+      else {window.addEventListener('scroll',settle,{passive:true});settleTimer=setTimeout(release,180);endTimer=setTimeout(release,1000);}
+    }
+  }
+
   root.addEventListener("change", function (e) {
     var el = e.target;
     var required = root.querySelector(".quiz-required"); if (required) required.hidden = true;
@@ -243,6 +274,7 @@
     if (t.dataset.save) toggleSaved(t.dataset.save);
     else if (t.dataset.share) shareResults(t);
     else if (t.dataset.go) {
+      if (changingQuestion) return;
       var direction = Number(t.dataset.go);
       var activeStep = STEPS[step];
       // Leaving a question blank means the same thing as picking its
@@ -252,10 +284,9 @@
       if (direction > 0 && !state[activeStep.key].length) {
         noPreference[activeStep.key] = true;
       }
-      step += direction; step >= STEPS.length ? renderResults() : renderStep();
-      showCurrentQuestion();
+      changeQuestion(function(){step += direction; step >= STEPS.length ? renderResults() : renderStep();});
     }
-    else if (t.dataset.restart) { step = 0; renderStep(); showCurrentQuestion(); }
+    else if (t.dataset.restart) { changeQuestion(function(){step = 0; renderStep();}); }
     else if (t.dataset.more) {
       var next = root._rest.splice(0, 3);
       root.querySelector(".results-grid").insertAdjacentHTML("beforeend", next.map(function (m) { return card(m, false); }).join(""));
@@ -264,6 +295,6 @@
       updateSavedUi();
     }
   });
-  function reducedMotion() { return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; }
+  function reducedMotion() { return document.documentElement.classList.contains('tide-motion-off') || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches); }
   deepLinked ? renderResults() : renderStep();
 })();
