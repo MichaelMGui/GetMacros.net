@@ -36,28 +36,37 @@
   document.addEventListener?.('visibilitychange', sync);
   sync();
 
-  // One-time entrances, only after intersection; observer failure cannot hide text.
-  const targets = document.querySelectorAll('main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.reading-section,.policy>section,.contact-draft-section,.search-start-tile,.pick-card,.answer-box,.evidence-card');
+  // Observe content below the initial viewport. Nothing is hidden in CSS or
+  // left waiting for JavaScript; each reveal ends at the original layout.
+  const cards='.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.search-start-tile,.pick-card,.answer-box,.evidence-card';
+  const targets=document.querySelectorAll('main h2,main h3,main p,'+cards);
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
+    const observer=new IntersectionObserver(entries=>{
+      let stagger=0;
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting)return;
         observer.unobserve(entry.target);
-        if (entry.target.closest('form,[aria-live],#meal-quiz')) return;
-        const heading = /^H[12]$/.test(entry.target.tagName);
-        play(entry.target, heading ? [
-          { translate: '0 10px', opacity: 1 },
-          { translate: '0 0', opacity: 1, offset: .78 },
-          { translate: '0 0', opacity: 1 }
+        const target=entry.target;
+        if(!active||target.closest('form,[aria-live],#meal-quiz,details:not([open])'))return;
+        // A fast scroll should never make already-passed content animate.
+        if(entry.boundingClientRect && entry.boundingClientRect.bottom<=0)return;
+        const heading=/^H[23]$/.test(target.tagName),paragraph=target.tagName==='P';
+        const delay=Math.min(stagger++,3)*45;
+        play(target, heading ? [
+          {translate:'0 22px',opacity:0},
+          {translate:'0 -1px',opacity:1,offset:.8},
+          {translate:'0 0',opacity:1}
+        ] : paragraph ? [
+          {translate:'0 14px',opacity:0},
+          {translate:'0 0',opacity:1}
         ] : [
-          { translate: '0 10px', opacity: .94 },
-          { translate: '0 0', opacity: 1 }
-        ], { duration: 300, delay: 0, easing: 'cubic-bezier(.2,.75,.2,1)' });
+          {translate:'0 26px',scale:'.985',opacity:0},
+          {translate:'0 0',scale:'1',opacity:1}
+        ],{duration:heading?560:paragraph?420:520,delay,fill:'backwards',easing:'cubic-bezier(.16,1,.3,1)'});
       });
-    }, { threshold: .12 });
-    targets.forEach(target => {
-      // Never replay an entrance on already-visible content or nested headings.
-      if (target.getBoundingClientRect().top >= innerHeight && !target.parentElement.closest('.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.reading-section,.policy>section,.contact-draft-section,.search-start-tile,.pick-card,.answer-box,.evidence-card')) observer.observe(target);
+    },{threshold:.08,rootMargin:'0px 0px -24px 0px'});
+    targets.forEach(target=>{
+      if(target.getBoundingClientRect().top>=innerHeight && !target.parentElement.closest(cards))observer.observe(target);
     });
   }
 
