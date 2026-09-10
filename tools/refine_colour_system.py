@@ -65,5 +65,7 @@ def run():
   if re.search(r'<link rel="stylesheet" href="css/site-refresh\.css',s):
    s=re.sub(r'<link rel="stylesheet" href="css/colour-system\.css(?:\?[^\"]*)?"[^>]*>','',s)
    s=re.sub(r'(<link rel="stylesheet" href="css/site-refresh\.css(?:\?[^\"]*)?"[^>]*>)',r'\1<link rel="stylesheet" href="css/colour-system.css">',s,count=1)
+  from refine_content_hubs import refine_hubs
+  s=refine_hubs(s,p.name,art)
   p.write_text(s,encoding='utf-8')
 if __name__=='__main__':run()

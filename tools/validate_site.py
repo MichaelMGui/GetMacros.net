@@ -370,7 +370,7 @@ def main() -> int:
         # one exact sentence. The homepage kicker now says "83 meals", which is
         # the same claim and has to stay just as current.
         "about.html": r"83(?:</strong><small>|\s+)(?:tracked )?menu options",
-        "healthy-fast-food.html": r"83 tracked menu options",
+        "healthy-fast-food.html": r"83 (?:tracked )?menu options",
     }
     for path, claim in count_claims.items():
         if not re.search(claim, pages.get(path, ("", PageParser()))[0]):
