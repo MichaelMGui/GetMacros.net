@@ -45,7 +45,7 @@ for name, page in PAGES.items():
     content = (ROOT / name).read_text(encoding='utf-8')
     heading = html.unescape(re.sub('<[^>]+>', '', re.search(r'<h1\b[^>]*>(.*?)</h1>', content, re.S)[1]))
     assert heading == page['title'], name
-    assert 'By GetMacros' in content and 'GetMacros.net editorial team' not in content, name
+    assert ('By GetMacros' in content or (name in {'editorial-policy.html','corrections.html','accessibility.html'} and '<meta name="author" content="GetMacros">' in content)) and 'GetMacros.net editorial team' not in content, name
     assert 'Updated September 9, 2026' in content, name
     assert html.escape(page['intro'], quote=True) in content, name
     for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', content, re.S):

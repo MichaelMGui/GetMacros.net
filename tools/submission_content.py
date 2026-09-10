@@ -305,20 +305,20 @@ page('how-much-sodium-per-day','How much sodium should you have per day?',
 <p>A meal cooked at home is not automatically low in sodium either. Ingredients, portions and the rest of the day still count. If you have a prescribed sodium limit, follow it rather than using this general guide.</p>
 ''',[('https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet','FDA: sodium in your diet'),('https://www.who.int/news-room/fact-sheets/detail/sodium-reduction','WHO: sodium reduction'),LABEL],['sodium-label-comparison-tool.html','restaurant-meal-finder.html','how-to-read-a-nutrition-label.html'])
 
-page('editorial-policy','How we write and check our content',
-     'GetMacros explains nutrition and helps you compare meals. Here is how we choose sources, describe the evidence and correct mistakes.', '''
+page('editorial-policy','How I write the guides',
+     'Here’s how I choose sources, explain nutrition and fix mistakes on GetMacros.', '''
 <h2>Who publishes GetMacros?</h2>
-<p>Pages are published under the GetMacros name. This is the site’s publishing identity, not a claim that a registered dietitian or doctor wrote or medically reviewed each page.</p>
-<p>We use software and AI tools to help draft, organize and check content and code. The publisher remains responsible for what appears here. A citation does not mean its author endorses this site.</p>
+<p>GetMacros is the name I publish under. The guides are not presented as medical reviews by a doctor or registered dietitian.</p>
+<p>I use software and AI tools to help draft, organize and check the site. I’m responsible for what I publish. Linking to a source does not mean its author endorses GetMacros.</p>
 <h2>Where do the facts come from?</h2>
 <p>Restaurant pages link to official menu information. Nutrition guides use research papers, reviews and accountable sources such as the NIH, FDA and USDA. Calculators explain their formulas and assumptions.</p>
-<p>We distinguish a study’s findings from what it cannot show. A short experiment in one group does not establish what happens to everyone over years. Missing menu data is not treated as zero.</p>
+<p>I explain what a study found and what it cannot tell us. A short study in one group does not show what happens to everyone over years. When a restaurant does not publish a number, I leave it blank rather than count it as zero.</p>
 <h2>What makes a page worth keeping?</h2>
-<p>It should answer a clear question, explain how to use a tool or help someone compare real options. We remove repeated explanations, unsupported claims and wording that makes a simple decision harder.</p>
+<p>A page should answer a useful question or help you make a choice. I remove repeated explanations, unsupported claims and wording that makes a simple decision harder.</p>
 <p>There is no fixed word-count target. A working calculator needs clear instructions; a research question may need more explanation and sources.</p>
 <h2>Updates and corrections</h2>
 <p>Dates change when content is meaningfully revised. Important factual or calculation corrections appear in the public corrections log. Routine spelling, layout and link repairs do not each need an entry.</p>
-<p>If something looks wrong, send the page link and the sentence or result to check. A supporting source is helpful. We assess the evidence before changing a claim.</p>
+<p>If something looks wrong, send me the page link and the sentence or result to check. A source is helpful too. I check the evidence before changing a claim.</p>
 <h2>What this site cannot do</h2>
 <p>GetMacros provides general education and estimates. It does not diagnose conditions or replace individual advice from a qualified clinician or dietitian. Medical nutrition needs can differ from the general examples here.</p>
 ''',[],['about.html','sources.html','corrections.html','contact.html'])

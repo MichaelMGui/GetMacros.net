@@ -38,10 +38,10 @@
 <script src="js/img-fallback.js?v=8a13d789c1"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2316153877942502" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/studio-v6.css?v=27681fd271"><link rel="stylesheet" href="css/premium-v4.css?v=134c89ca75">
-<link rel="stylesheet" href="css/atelier-v5.css?v=6e2abbf250"><link rel="stylesheet" href="css/accent-bundle.css?v=5e4248c9c6" data-sources="css/liquid.css|css/contrast-fix.css|css/polish.css"><meta name="google-adsense-account" content="ca-pub-2316153877942502"><link rel="stylesheet" href="css/readability-v2.css?v=38599f1a9a"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/core-bundle.css?v=d922bbd719" data-sources="css/unified-v7.css|css/theme-fix.css|css/editorial-v8.css|css/clean-v9.css"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><link rel="stylesheet" href="css/finish-bundle.css?v=284922707c" data-sources="css/tide.css|css/tide-motion.css|css/workspaces.css|css/site-refresh.css"><link rel="preload" href="fonts/manrope-latin-700.woff2" as="font" type="font/woff2" crossorigin></head>
-<body class="site-v3 article-page">
+<link rel="stylesheet" href="css/atelier-v5.css?v=6e2abbf250"><link rel="stylesheet" href="css/accent-bundle.css?v=5e4248c9c6" data-sources="css/liquid.css|css/contrast-fix.css|css/polish.css"><meta name="google-adsense-account" content="ca-pub-2316153877942502"><link rel="stylesheet" href="css/readability-v2.css?v=38599f1a9a"><script>try{document.documentElement.dataset.theme=localStorage.getItem("gm-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script><link rel="stylesheet" href="css/core-bundle.css?v=d922bbd719" data-sources="css/unified-v7.css|css/theme-fix.css|css/editorial-v8.css|css/clean-v9.css"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><link rel="stylesheet" href="css/finish-bundle.css?v=3ae603d5ab" data-sources="css/tide.css|css/tide-motion.css|css/workspaces.css|css/site-refresh.css"><link rel="preload" href="fonts/manrope-latin-700.woff2" as="font" type="font/woff2" crossorigin></head>
+<body class="site-v3 article-page contact-page">
 
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;overflow:hidden">
   <symbol id="logo-mark" viewBox="0 0 24 24">
     <circle cx="12" cy="12" r="10" fill="#174f37"/>
     <path d="M5.8 12.2h12.4c-.5 4-2.8 6.2-6.2 6.2s-5.7-2.2-6.2-6.2Z" fill="#f7f4ea"/>
@@ -334,9 +334,32 @@
 </nav>
 </header>
 
-<main id="main-content"><section class="clear-page-intro contact-refresh"><div class="container"><span class="clear-icon"><svg aria-hidden="true" viewBox="0 0 24 24">
-    <path d="M6 2h9l5 5v15a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L14 3.5zM7 12h10v1.6H7V12zm0 4h10v1.6H7V16zm0-8h5v1.6H7V8z"/>
-  </svg></span><h1>Contact GetMacros</h1><p>Questions, ideas or something not working? I’d love to hear from you.</p><a class="contact-email" href="mailto:getmacros.net@outlook.com">getmacros.net@outlook.com</a><p>I read and reply to every email.</p><div class="contact-choices"><a class="btn action-link" href="mailto:getmacros.net@outlook.com?subject=An%20idea%20for%20GetMacros">Suggest an improvement</a><a class="btn action-link" href="mailto:getmacros.net@outlook.com?subject=Something%20to%20fix%20on%20GetMacros">Report a problem</a></div><p class="contact-small">If something is wrong, include the page link and what happened.</p></div></section><!-- contact-help:start --><section class="practical-example contact-help"><div class="container"><h2>Help me find the problem</h2><div class="example-grid"><article><h3>A meal or nutrition number</h3><p>Send the restaurant, menu item and page link. If you found a different number on the restaurant’s website, include that link too.</p></article><article><h3>A calculator or button</h3><p>Tell me which page you used, what you entered and what happened. Your device and browser help me check the same setup.</p></article></div><p class="example-note">For a new idea, tell me what you were trying to do and what would have helped. Please leave out private health details.</p></div></section><!-- contact-help:end --></main>
+<main id="main-content">
+ <section class="clear-page-intro contact-refresh"><div class="container">
+  <h1>Contact GetMacros</h1>
+  <p>Questions, ideas or something not working? I read and reply to every email.</p>
+  <div class="contact-choices"><a class="btn action-link" href="#contact-draft" data-contact-topic="idea">Suggest an improvement</a><a class="btn action-link" href="#contact-draft" data-contact-topic="problem">Report a problem</a></div>
+  <div class="contact-address"><a href="mailto:getmacros.net@outlook.com">getmacros.net@outlook.com</a><button type="button" class="btn" data-copy-address>Copy email address</button></div>
+  <p id="contact-copy-status" class="contact-status" role="status"></p>
+ </div></section>
+ <section class="contact-draft-section" id="contact-draft" aria-labelledby="contact-draft-title"><div class="container">
+  <h2 id="contact-draft-title">Write your message</h2>
+  <form id="contact-form">
+   <label for="contact-topic">What’s it about?</label>
+   <select id="contact-topic" name="topic"><option value="question">A question</option><option value="idea">An idea for the site</option><option value="problem">Something isn’t working</option></select>
+   <label for="contact-message">Your message</label>
+   <p class="contact-hint" id="contact-hint">Tell me what you’d like to know. Please leave out private health details.</p>
+   <textarea id="contact-message" name="message" rows="6" maxlength="3000" required aria-describedby="contact-hint"></textarea>
+   <div class="contact-draft-actions"><a id="contact-email-draft" class="btn btn-primary" href="mailto:getmacros.net@outlook.com">Open email draft</a><button type="button" disabled class="btn action-link" data-copy-message>Copy message</button></div>
+   <p class="contact-hint">This opens your email app—you send the message there. If it doesn’t open, copy your message and email it to the address above.</p>
+   <p id="contact-draft-status" class="contact-status" role="status"></p>
+   <div id="contact-copy-fallback" hidden><label for="contact-copy-text">Select and copy these details</label><textarea id="contact-copy-text" rows="6" readonly></textarea></div>
+  </form>
+  <noscript><p>The draft builder needs JavaScript. You can email getmacros.net@outlook.com directly.</p></noscript>
+ </div></section>
+</main>
+
+
 
 <footer class="modern-footer footer-compact">
 <div class="footer-intro"><a class="modern-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff9ee"/><path d="M16 6a10 10 0 0 0 0 20Z" fill="#318454"/><path d="M18 6.2V15h8a10 10 0 0 0-8-8.8Z" fill="#d49254"/><path d="M18 17v8.8a10 10 0 0 0 8-8.8Z" fill="#4e8797"/></svg></span><span>GetMacros<span class="brand-dot">.</span></span></a><p>Find a meal. Know your macros.</p></div>
@@ -346,5 +369,5 @@
 </footer><script src="js/unified-v7.js?v=2a1a538016" defer></script><script src="js/main.js?v=d4c6e923cc"></script>
 <script src="js/lang.js?v=a1b7da8b2d"></script>
 
-<script src="js/tide-motion.js?v=a225ae0ae0" defer></script><script src="js/page-experience.js?v=df45c2e386" defer></script></body>
+<script src="js/tide-motion.js?v=cf0d9bcf0f" defer></script><script src="js/page-experience.js?v=df45c2e386" defer></script><script src="js/contact.js?v=e57e8be3b6" defer></script></body>
 </html>

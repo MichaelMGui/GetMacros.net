@@ -37,7 +37,7 @@
   sync();
 
   // One-time entrances, only after intersection; observer failure cannot hide text.
-  const targets = document.querySelectorAll('main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card');
+  const targets = document.querySelectorAll('main h2,.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.reading-section,.policy>section,.contact-draft-section');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -57,7 +57,7 @@
     }, { threshold: .12 });
     targets.forEach(target => {
       // Never replay an entrance on already-visible content or nested headings.
-      if (target.getBoundingClientRect().top >= innerHeight && !target.parentElement.closest('.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card')) observer.observe(target);
+      if (target.getBoundingClientRect().top >= innerHeight && !target.parentElement.closest('.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.reading-section,.policy>section,.contact-draft-section')) observer.observe(target);
     });
   }
 

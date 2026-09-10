@@ -547,3 +547,60 @@ html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-qui
 
 html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .meal-reason{display:block!important;min-height:0!important}
 html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .result-symbol{display:grid!important;place-items:center!important;width:52px!important;height:52px!important;font-size:2rem!important;border-radius:16px!important;background:var(--quiet-surface-2)!important;color:var(--quiet-green-strong)!important;margin-bottom:18px!important}
+
+/* Reading pages share a clean text column; decoration never divides the copy. */
+html[data-theme][lang] body.site-v3>svg:has(>symbol){position:absolute!important;width:0!important;height:0!important;overflow:hidden!important;pointer-events:none!important}
+html[data-theme][lang] body.site-v3 main#main-content :is([class*="hero"],.clear-page-intro){border-top:0!important;border-bottom:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content :is([class*="hero"],.clear-page-intro)::before,
+html[data-theme][lang] body.site-v3 main#main-content :is([class*="hero"],.clear-page-intro)::after,
+html[data-theme][lang] body.site-v3 main#main-content :is(h1,h2,h3)::before,
+html[data-theme][lang] body.site-v3 main#main-content :is(h1,h2,h3)::after{content:none!important;display:none!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(h1,h2,h3){border-top:0!important;border-bottom:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.policy-hero,.page-hero){padding:30px 0 22px!important;background:var(--quiet-paper)!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.policy-hero,.page-hero)>.container{width:min(760px,calc(100% - 40px))!important;max-width:760px!important;padding:0!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.policy-hero,.page-hero) h1{font-size:clamp(2rem,4vw,2.8rem)!important;line-height:1.18!important;max-width:26ch!important;margin:0 0 18px!important;text-align:left!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.policy-hero,.page-hero) p{font-size:1rem!important;line-height:1.7!important;max-width:68ch!important;margin:0!important;color:var(--quiet-muted)!important;text-align:left!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.submission-article,.policy){width:min(760px,calc(100% - 40px))!important;max-width:760px!important;margin:0 auto!important;padding:8px 0 48px!important;background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.reading-section,.policy section){margin:30px 0 0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.reading-section,.policy) h2{font-size:clamp(1.4rem,2.5vw,1.7rem)!important;line-height:1.3!important;margin:0 0 14px!important;padding:0!important;max-width:36ch!important;letter-spacing:-.025em!important;text-align:left!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.reading-section,.policy) :is(p,li){font-size:1rem!important;line-height:1.75!important;color:var(--quiet-muted)!important;max-width:75ch!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content :is(.reading-section,.policy) p{margin:12px 0!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content .submission-byline{font-size:.875rem!important;line-height:1.5!important;margin:0!important;padding:0!important;border:0!important;color:var(--quiet-muted)!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content .submission-anchor{margin:0!important;padding:0!important;height:0!important;border:0!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content .submission-sources{border:0!important;margin-top:30px!important;padding:0!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content .submission-next{padding-top:12px!important;border:0!important;gap:12px!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content>section.tight{padding:22px 0!important;border:0!important}
+html[data-theme][lang] body.site-v3.reading-page main#main-content>section.tight>.container{width:min(760px,calc(100% - 40px))!important;padding:0!important;border:0!important}
+/* Remove frames on decorative marks and pictures, keeping keyboard focus visible. */
+html[data-theme][lang] body.site-v3 main#main-content :is(.clear-icon,.clarity-icon,.suite-hero-mark,.single-card-icon,.chain-pick-icon,.home-everyday-icon,.home-launch-icon,.article-illustration,.home-play-art){border:0!important;box-shadow:none!important;background:transparent!important;filter:none!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.clear-icon,.clarity-icon,.suite-hero-mark,.single-card-icon,.chain-pick-icon,.home-everyday-icon,.home-launch-icon){color:var(--quiet-green-strong)!important}
+html[data-theme][lang] body.site-v3 main#main-content .clear-icon svg{color:var(--quiet-green-strong)!important;fill:currentColor!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option .option-icon{border:0!important;box-shadow:none!important;background:transparent!important}
+html[data-theme][lang] body.site-v3.order-match-page main#main-content #meal-quiz .quiz-option .option-chain-mark{background:#fff!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.home-reading-card,.blog-card,.guide-card,.clear-tool-card,.chain-card,.home-everyday-tool){border-color:transparent!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.home-reading-card,.blog-card,.guide-card) img{border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 :is(main#main-content .btn,main#main-content .action-link,.theme-toggle,.nav-toggle){border-color:transparent!important}
+html[data-theme][lang] body.site-v3 main#main-content .btn:focus-visible{outline:3px solid var(--quiet-green-strong)!important;outline-offset:4px!important}
+/* Contact actions lead to a visible local draft, with an email-app fallback. */
+html[data-theme][lang] body.site-v3.contact-page main#main-content :is(.contact-refresh,.contact-draft-section){padding:30px 0!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content .container{width:min(760px,calc(100% - 40px))!important;max-width:760px!important;padding:0!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content h1{font-size:clamp(2rem,4vw,2.8rem)!important;line-height:1.2!important;margin:0 0 18px!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content h2{font-size:1.5rem!important;line-height:1.3!important;margin:0 0 20px!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content .contact-address{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+html[data-theme][lang] body.site-v3.contact-page main#main-content .contact-address>a{font-size:1rem!important;overflow-wrap:anywhere;color:var(--quiet-green-strong)!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content :is(.contact-choices,.contact-draft-actions){display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+html[data-theme][lang] body.site-v3.contact-page main#main-content .contact-draft-actions .btn{flex:1 1 180px}
+html[data-theme][lang] body.site-v3.contact-page main#main-content #contact-form{display:block!important;background:var(--quiet-surface)!important;border:0!important;border-radius:22px!important;box-shadow:none!important;padding:26px!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content #contact-form label{display:block;margin:0 0 10px;font-size:1rem;font-weight:700;color:var(--quiet-ink)}
+html[data-theme][lang] body.site-v3.contact-page main#main-content #contact-form :is(select,textarea){display:block;width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid var(--quiet-line);border-radius:12px;background:var(--quiet-paper);color:var(--quiet-ink);font:inherit;line-height:1.6}
+html[data-theme][lang] body.site-v3.contact-page main#main-content #contact-topic{margin-bottom:24px}
+html[data-theme][lang] body.site-v3.contact-page main#main-content textarea{resize:vertical;min-height:150px}
+html[data-theme][lang] body.site-v3.contact-page main#main-content :is(.contact-hint,.contact-status){font-size:.9375rem!important;line-height:1.65!important;color:var(--quiet-muted)!important;margin:12px 0!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content .contact-status:empty{display:none!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content [hidden]{display:none!important}
+@media(max-width:620px){html[data-theme][lang] body.site-v3.contact-page main#main-content #contact-form{padding:20px!important}html[data-theme][lang] body.site-v3.contact-page main#main-content .contact-choices .btn{flex:1 1 100%;text-align:center;justify-content:center}html[data-theme][lang] body.site-v3.reading-page main#main-content .reading-section{margin-top:28px!important}}
+html[data-theme][lang] body.site-v3 main#main-content .calc-welcome :is(.calc-welcome-heading>.clear-icon,.calc-welcome-macros>.clear-icon){background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .calc-welcome .calc-welcome-heading>.clear-icon svg :is(rect:not(:first-child),circle){fill:var(--quiet-surface-2)!important;opacity:1!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content :is(.contact-refresh,.contact-draft-section){border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content :is(.contact-choices,.contact-address,.contact-draft-actions) .btn{border:0!important;border-radius:12px!important;font-size:1rem!important;min-height:48px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.contact-page main#main-content :is(.contact-choices,.contact-address) .btn{background:var(--quiet-surface-2)!important;color:var(--quiet-ink)!important}
