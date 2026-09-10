@@ -8,7 +8,7 @@ GROUPS = {
     'reading-bundle': ['readability-v2', 'premium-v4'],
     'accent-bundle': ['liquid', 'contrast-fix', 'polish'],
     'core-bundle': ['unified-v7', 'theme-fix', 'editorial-v8', 'clean-v9'],
-    'finish-bundle': ['tide', 'tide-motion', 'workspaces', 'site-refresh'],
+    'finish-bundle': ['tide', 'tide-motion', 'workspaces', 'site-refresh', 'colour-system'],
 }
 OPTIONAL = {'foundation-bundle', 'reading-bundle'}
 
