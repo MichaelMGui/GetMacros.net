@@ -1,5 +1,7 @@
 (function () {
   "use strict";
+  // Rebuilt tools own their forms and results; legacy decorators must not rewrite them.
+  if (document.body.classList.contains('focused-tool')) return;
 
   var pages = {
     "calculators.html": "calculator",

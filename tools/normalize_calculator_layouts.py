@@ -56,7 +56,7 @@ class Document(HTMLParser):
 def wrap_pair(name, form_id, output_id):
     path = ROOT / name
     text = path.read_text(encoding='utf-8')
-    if 'class="tool-workspace"' in text:
+    if re.search(r'class="[^"]*\btool-workspace\b', text):
         return
     doc = Document(text)
     form, out = doc.find(id=form_id), doc.find(id=output_id)
@@ -74,7 +74,7 @@ def wrap_pair(name, form_id, output_id):
 def split_toolbox(name, output_id=None):
     path = ROOT / name
     text = path.read_text(encoding='utf-8')
-    if 'toolbox tool-workspace' in text:
+    if 'toolbox tool-workspace' in text or 'tool-workspace focused-workspace' in text:
         return
     doc = Document(text)
     box = doc.find(cls='toolbox')
