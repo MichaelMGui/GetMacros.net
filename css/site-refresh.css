@@ -673,3 +673,35 @@ html[data-theme="dark"][lang] body.site-v3.basics-page main#main-content .guide-
 html[data-theme][lang] body.site-v3.basics-page main#main-content#main-content .guide-group .guide-grid a.guide-card{background:var(--topic-soft)!important;border:0!important;box-shadow:none!important}
 html[data-theme][lang] body.site-v3.basics-page main#main-content .guide-group :is(.guide-grid,.section-head){border:0!important;box-shadow:none!important}
 html[data-theme][lang] body.site-v3.basics-page main#main-content .guide-group :is(.guide-grid,.section-head)::before,html[data-theme][lang] body.site-v3.basics-page main#main-content .guide-group :is(.guide-grid,.section-head)::after{display:none!important}
+
+/* Shared visual families. Opaque surfaces keep colour readable in both themes. */
+html[data-theme][lang] body.site-v3{--character-ink:#315f42;--character-soft:#eaf1e3;--character-blue:#e8f1f5;--character-warm:#f8ecd9;--character-blue-ink:#315f70;--character-warm-ink:#805326}
+html[data-theme="dark"][lang] body.site-v3{--character-ink:#c4dda9;--character-soft:#2c3a2c;--character-blue:#293941;--character-warm:#3d3227;--character-blue-ink:#b2d6e2;--character-warm-ink:#ecc697}
+html[data-theme][lang] body.site-v3[data-design-family="tools"]{--character-ink:#315f70;--character-soft:#e8f1f5}
+html[data-theme="dark"][lang] body.site-v3[data-design-family="tools"]{--character-ink:#b2d6e2;--character-soft:#293941}
+html[data-theme][lang] body.site-v3 main#main-content .page-emblem{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:var(--character-soft)!important;color:var(--character-ink)!important;margin:0 0 18px;flex:none}
+html[data-theme][lang] body.site-v3 main#main-content .page-emblem svg{width:28px;height:28px}
+html[data-theme][lang] body.site-v3 main#main-content :is(.reading-section,.focused-guide-body,.article-container,.policy) h2{color:var(--character-ink)!important;line-height:1.3!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.answer-box,.evidence-card,.tool-example,.simple-tool-help,.source-box){background:var(--character-soft)!important;color:var(--quiet-ink)!important;border:0!important;border-radius:18px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.clear-about-grid article,.contact-choices>a,.search-start-tile,.clear-tool-card,.chain-card,.pick-card){background:var(--character-soft)!important;color:var(--quiet-ink)!important;border:0!important;border-radius:18px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.clear-about-grid article,.contact-choices>a,.search-start-tile,.clear-tool-card,.chain-card,.pick-card):nth-child(3n+2){background:var(--character-blue)!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.clear-about-grid article,.contact-choices>a,.search-start-tile,.clear-tool-card,.chain-card,.pick-card):nth-child(3n){background:var(--character-warm)!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.search-hit,.clear-tool-card,.chain-card,.pick-card,.home-reading-card,.blog-card){transition:translate .18s ease,box-shadow .18s ease!important}
+html[data-theme][lang] body.site-v3 main#main-content .single-macro-card:nth-child(2) :is(.single-macro-icon,.single-macro-result){background:var(--character-warm)!important;color:var(--character-warm-ink)!important}
+html[data-theme][lang] body.site-v3 main#main-content .single-macro-card:nth-child(3) :is(.single-macro-icon,.single-macro-result){background:var(--character-blue)!important;color:var(--character-blue-ink)!important}
+html[data-theme][lang] body.site-v3 main#main-content :is(.reading-map,.guide-sources,.submission-sources){border-radius:16px!important}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){html.tide-motion-on[data-theme][lang] body.site-v3 main#main-content :is(a.search-hit,a.clear-tool-card,a.chain-card,a.home-reading-card,a.blog-card):hover{translate:0 -3px;box-shadow:0 8px 22px #16352816!important}}
+::view-transition-old(root),::view-transition-new(root){animation-duration:180ms;animation-timing-function:ease-out}
+@media(max-width:620px){html[data-theme][lang] body.site-v3 main#main-content .page-emblem{width:40px;height:40px;border-radius:13px;margin-bottom:14px}.page-emblem svg{width:24px;height:24px}}
+
+html[data-theme][lang] body.site-v3 main#main-content .restaurant-emblem{display:block;width:48px;height:48px;margin-bottom:16px}
+html[data-theme][lang] body.site-v3 main#main-content .restaurant-emblem img{display:block;width:48px;height:48px;object-fit:contain;border:0!important;border-radius:12px;background:#fff}
+html[data-theme][lang] body.site-v3 main#main-content :is(.focus-page-hero,.page-hero,.article-hero,.data-section){border-top:0!important;border-bottom:0!important}
+
+html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.focused-guide-hero,.article-hero,.chain-finder-section){background:transparent!important;background-image:none!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.focused-guide-hero,.article-hero)::before,html[data-theme][lang] body.site-v3 main#main-content#main-content :is(.focused-guide-hero,.article-hero)::after{display:none!important}
+html[data-theme][lang] body.site-v3 main#main-content .focused-guide-hero{padding-block:28px!important}
+html[data-theme][lang] body.site-v3 main#main-content .focused-guide-byline{border:0!important;padding-top:12px!important;margin-top:12px!important;gap:8px!important}
+html[data-theme][lang] body.site-v3 main#main-content .focused-guide-layout{padding-top:24px!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content .guide-quick-answer{background:var(--character-soft)!important;background-image:none!important;border:0!important;border-radius:18px!important;box-shadow:none!important;padding:24px!important;margin-top:0!important}
+html[data-theme][lang] body.site-v3 main#main-content#main-content .guide-quick-answer>span{color:var(--character-ink)!important;font-size:.9375rem!important;letter-spacing:0!important;text-transform:none!important}
