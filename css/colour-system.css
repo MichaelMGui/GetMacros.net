@@ -8,13 +8,13 @@ html[data-theme][lang] body.site-v3[data-design-family]{
  background:var(--quiet-paper)!important;color:var(--quiet-ink)!important
 }
 html[data-theme="dark"][lang] body.site-v3[data-design-family]{
- --quiet-paper:#19231f;--quiet-surface:#25352d;--quiet-surface-2:#31463a;--quiet-ink:#f2f6ee;--quiet-muted:#c8d5cb;--quiet-line:#647f6c;--quiet-green-strong:#92d39f;--quiet-green-soft:#354f37;
- --leaf-fill:#354f37;--leaf-ink:#bce3a9;--blue-fill:#2b4858;--blue-ink:#b3e0f2;--orange-fill:#51402b;--orange-ink:#f1cc8d;--berry-fill:#503444;--berry-ink:#f2bed4;
- --work-accent:#8bce99;--work-on-accent:#173422;--button-fill:#8bce99;--button-ink:#173422;--card-shadow:0 6px 22px #080f0b28;
+ --quiet-paper:#234333;--quiet-surface:#2e503e;--quiet-surface-2:#39604a;--quiet-ink:#f4f8ef;--quiet-muted:#d1ddcf;--quiet-line:#819e86;--quiet-green-strong:#b0dfa5;--quiet-green-soft:#3b6244;
+ --leaf-fill:#3b6244;--leaf-ink:#d9edc9;--blue-fill:#355454;--blue-ink:#d0e8df;--orange-fill:#594d34;--orange-ink:#f2dfb6;--berry-fill:#56434b;--berry-ink:#efd2df;
+ --work-accent:#a0d5a1;--work-on-accent:#193b25;--button-fill:#a0d5a1;--button-ink:#193b25;--card-shadow:0 6px 22px #112b2024;
  --d-bg:var(--quiet-paper);--d-bg-soft:#213127;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-line:var(--quiet-line);--d-accent:var(--quiet-green-strong);--d-btn:var(--button-fill);--d-btn-in:var(--button-ink)
 }
 html[data-theme="light"][lang]{background:#f5f8f2!important}
-html[data-theme="dark"][lang]{background:#19231f!important}
+html[data-theme="dark"][lang]{background:#234333!important}
 html[data-theme][lang] body.site-v3[data-design-family="tools"]{--character-soft:var(--blue-fill);--character-ink:var(--blue-ink)}
 html[data-theme][lang] body.site-v3[data-design-family="contact"]{--character-soft:var(--orange-fill);--character-ink:var(--orange-ink)}
 
@@ -98,3 +98,21 @@ html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-c
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-launch-card{background:var(--quiet-surface)!important;border:0!important;box-shadow:var(--card-shadow)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .how-step-number{background:var(--leaf-fill)!important;color:var(--leaf-ink)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-launch-card:nth-child(2) .how-step-number{background:var(--blue-fill)!important;color:var(--blue-ink)!important}
+/* Palm-green refinement: keep the calculator and supporting tools in the same visual family. */
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool{display:grid!important;grid-template-columns:48px minmax(0,1fr)!important;align-items:start!important;gap:18px!important;padding:24px!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon{position:static!important;display:grid!important;place-items:center!important;width:48px!important;height:48px!important;min-width:0!important;margin:0!important;background:var(--leaf-fill)!important;color:var(--leaf-ink)!important;border-radius:14px!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon svg{fill:currentColor!important;width:25px!important;height:25px!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>div{min-width:0!important;margin:0!important;padding:0!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool h3{margin:0!important;max-width:none!important;line-height:1.4!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool p{margin:10px 0 16px!important;max-width:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool a{max-width:100%!important;white-space:normal!important;text-align:center!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .calc-hero-grid{background:var(--leaf-fill)!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome :is(.calc-welcome-heading>.clear-icon,.calc-welcome-macros>.clear-icon){background:transparent!important;color:var(--leaf-ink)!important;rotate:0deg!important;translate:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .clear-icon svg{fill:currentColor!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .clear-icon svg [fill="#fff"]{fill:var(--leaf-fill)!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday,.home-finder-help,.gm6-learning,.meal-browser){background:transparent!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation{background:var(--quiet-surface)!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content img[src*="images/restaurant-marks/"]{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:12px!important;object-fit:contain!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .quiz-option .option-icon.option-chain-mark{background:transparent!important;padding:0!important;border:0!important}
+@media(max-width:620px){html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool{grid-template-columns:44px minmax(0,1fr)!important;gap:16px!important;padding:20px!important}html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon{width:44px!important;height:44px!important}}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon svg[fill="none"]{fill:none!important}

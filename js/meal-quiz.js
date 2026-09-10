@@ -36,7 +36,7 @@
   };
   function chainLogo(name) {
     var slug = CHAIN_LOGO[chainKey(name)] || "chipotle";
-    return "images/restaurant-marks/" + slug + ".svg";
+    return "images/restaurant-marks/" + slug + ".svg?v=palm1";
   }
   var chains = [];
   meals.forEach(function (m) { if (chains.indexOf(m.chain) === -1) chains.push(m.chain); });

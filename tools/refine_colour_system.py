@@ -37,6 +37,10 @@ def run():
    block=m[0];url=re.search(r'href="([^"]+)"',block)[1]
    return re.sub(r'(<span class="clarity-icon"[^>]*>).*?</span>',lambda n:n[1]+art(kind_for(url))+'</span>',block,flags=re.S)
   s=re.sub(r'<a class="clear-tool-card"[^>]*>.*?</a>',tool,s,flags=re.S)
+  if p.name=='index.html':
+   s=s.replace('Use what you have','Simple meal ideas').replace('Get meal ideas from ingredients in your kitchen.','Six easy meals to make at home.')
+   glyphs=iter(['<rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16m6-16v16M3 12h18"/>','<path d="m3 12 9-9h8v8l-9 10Z"/><circle cx="16" cy="7" r="1"/><path d="m8 13 4 4m-6-2 4 4"/>','<circle cx="12" cy="12" r="7"/><path d="M2 3v7m-1-7v4q1 4 3 0V3M2 10v11M22 3v18m0-18q-4 5 0 8"/>'])
+   s=re.sub(r'(<span class="home-everyday-icon">).*?</span>',lambda m:m[1]+'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+next(glyphs)+'</svg></span>',s,flags=re.S)
   if p.name=='search.html':
    def card(m):
     block=re.sub(r'<span class="colour-tile-art".*?</span>','',m[0],flags=re.S)
