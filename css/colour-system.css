@@ -8,13 +8,16 @@ html[data-theme][lang] body.site-v3[data-design-family]{
  background:var(--quiet-paper)!important;color:var(--quiet-ink)!important
 }
 html[data-theme="dark"][lang] body.site-v3[data-design-family]{
- --quiet-paper:#272c30;--quiet-surface:#343b40;--quiet-surface-2:#424b50;--quiet-ink:#f5f4ed;--quiet-muted:#d1d7d5;--quiet-line:#84958f;--quiet-green-strong:#a8d9ad;--quiet-green-soft:#354d41;
- --leaf-fill:#354d41;--leaf-ink:#dcf0d6;--blue-fill:#354b5b;--blue-ink:#d4eaf5;--orange-fill:#504a3d;--orange-ink:#f1e2bf;--berry-fill:#42485b;--berry-ink:#e2e7fa;
- --work-accent:#77bd88;--work-on-accent:#142c21;--button-fill:#77bd88;--button-ink:#142c21;--card-shadow:0 6px 22px #10151924;
- --d-bg:var(--quiet-paper);--d-bg-soft:#2e3439;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-line:var(--quiet-line);--d-accent:var(--quiet-green-strong);--d-btn:var(--button-fill);--d-btn-in:var(--button-ink)
+ /* Evening colours retain the light theme's warmth without a white canvas. */
+ --quiet-paper:#405b64;--quiet-surface:#4b676a;--quiet-surface-2:#55736e;--quiet-ink:#fff9eb;--quiet-muted:#eef1e5;--quiet-line:#b3c7b8;--quiet-green-strong:#ecf4d6;--quiet-green-soft:#45634d;
+ --leaf-fill:#45634d;--leaf-ink:#e5f2d1;--blue-fill:#48687a;--blue-ink:#e2f3fb;--orange-fill:#6a6049;--orange-ink:#fff0c7;--berry-fill:#5d617c;--berry-ink:#eef0ff;
+ --work-accent:#a3d18c;--work-on-accent:#213d2c;--button-fill:#a3d18c;--button-ink:#213d2c;--card-shadow:0 6px 22px #263e441a;
+ --d-bg:var(--quiet-paper);--d-bg-soft:#466168;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-muted-2:var(--quiet-muted);--d-line:var(--quiet-line);--d-accent:var(--quiet-green-strong);--d-btn:var(--button-fill);--d-btn-in:var(--button-ink)
 }
 html[data-theme="light"][lang]{background:#f5f8f2!important}
-html[data-theme="dark"][lang]{background:#272c30!important}
+html[data-theme="dark"][lang]{background:#405b64!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(label,legend,.cite-org,.breadcrumb,.breadcrumb span,.height-pair label span){color:var(--quiet-muted)!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] .brand-dot{color:var(--quiet-green-strong)!important}
 html[data-theme][lang] body.site-v3[data-design-family="tools"]{--character-soft:var(--blue-fill);--character-ink:var(--blue-ink)}
 html[data-theme][lang] body.site-v3[data-design-family="contact"]{--character-soft:var(--orange-fill);--character-ink:var(--orange-ink)}
 
@@ -50,6 +53,7 @@ html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-c
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea){background:var(--quiet-paper)!important;color:var(--quiet-ink)!important;border-color:var(--quiet-line)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.btn-primary,.home-primary,.home-primary-cta,.quiz-next,.calc-submit,.chain-find-button,#macro-form button[type=submit]){background:var(--button-fill)!important;color:var(--button-ink)!important;border-color:var(--button-fill)!important;box-shadow:none!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(a.action-link,.btn-secondary,.quiz-back){background:var(--quiet-surface-2)!important;color:var(--quiet-ink)!important;border-color:var(--quiet-line)!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-how .home-launch-card .btn,.blog-card .blog-arrow){background:var(--petal-leaf)!important;color:var(--petal-leaf-ink)!important;border-color:transparent!important;box-shadow:none!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.single-macro-result,.price-result,.macro-stat){background:var(--tile-fill)!important;color:var(--quiet-ink)!important;border:0!important;border-radius:14px!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .quiz-option{background:var(--quiet-surface)!important;border-color:var(--quiet-line)!important;box-shadow:none!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .quiz-option .option-icon{background:var(--leaf-fill)!important;color:var(--leaf-ink)!important;border:0!important;box-shadow:none!important}
@@ -64,6 +68,7 @@ html[data-theme][lang] body.site-v3[data-design-family] footer.modern-footer.foo
 html[data-theme][lang] body.site-v3[data-design-family] footer.modern-footer.footer-compact :is(a,p,span,button,h2,h3,summary,small){color:var(--quiet-ink)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] header.site-header nav.full-nav{background:var(--quiet-surface)!important;border-color:var(--quiet-line)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation :is(.nav-popover,.nav-group){background:var(--quiet-surface)!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover a small{color:var(--quiet-muted)!important;-webkit-text-fill-color:currentColor!important;opacity:1!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] header.site-header :is(.theme-toggle,.nav-toggle){background:var(--quiet-surface-2)!important;color:var(--quiet-ink)!important;border:0!important}
 @media(max-width:620px){html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.page-emblem,.suite-hero-mark){width:48px;height:48px;border-radius:16px!important}html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.page-emblem,.suite-hero-mark) svg{width:28px;height:28px}}
 @media(hover:hover) and (prefers-reduced-motion:no-preference){html.tide-motion-on[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(a.clear-tool-card,a.guide-card,a.search-start-tile,.meal-idea):hover{translate:0 -3px;box-shadow:0 12px 28px #173b2820!important}}
@@ -118,7 +123,7 @@ html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-c
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon svg[fill="none"]{fill:none!important}
 /* Small leaf, sky and cream accents keep colour focused on useful visual cues. */
 html[data-theme][lang] body.site-v3[data-design-family]{--petal-leaf:#dceacd;--petal-leaf-ink:#305b37;--petal-gold:#f1e5c7;--petal-gold-ink:#66501e;--petal-sky:#d4e7ee;--petal-sky-ink:#28596e;--petal-lilac:#e1e7f5;--petal-lilac-ink:#485982;--petal-fill:var(--petal-leaf);--petal-ink:var(--petal-leaf-ink);--flower-leaf:#386f43;--flower-gold:#826117;--flower-sky:#306b80}
-html[data-theme="dark"][lang] body.site-v3[data-design-family]{--petal-leaf:#cedfbc;--petal-gold:#e8dbb6;--petal-sky:#c4dfe9;--petal-lilac:#d5dff0;--flower-leaf:#b4ddad;--flower-gold:#e6d093;--flower-sky:#add6ec}
+html[data-theme="dark"][lang] body.site-v3[data-design-family]{--petal-leaf:#d5e5b6;--petal-gold:#f0dda8;--petal-sky:#cae6ee;--petal-lilac:#dce1f4;--flower-leaf:#d0e5b2;--flower-gold:#f3d99b;--flower-sky:#c7e7f6}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option){--petal-fill:var(--petal-leaf);--petal-ink:var(--petal-leaf-ink)}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option):nth-child(4n+2){--petal-fill:var(--petal-gold);--petal-ink:var(--petal-gold-ink)}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option):nth-child(4n+3){--petal-fill:var(--petal-sky);--petal-ink:var(--petal-sky-ink)}
@@ -137,7 +142,7 @@ html[data-theme][lang] body.site-v3[data-page-tone="berry"]{--petal-fill:var(--p
 html[data-theme][lang] body.site-v3 .colour-art .art-edge{stroke:var(--petal-ink)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .calc-welcome-macros>.clear-icon svg{color:inherit!important;fill:currentColor!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .clear-tool-card h3{color:var(--quiet-ink)!important}
-/* Carry the neutral dark surfaces through selected and unselected controls. */
+/* Carry the evening surfaces through selected and unselected controls. */
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .sex-choice-row>label{background:var(--quiet-paper)!important;border-color:var(--quiet-line)!important;color:var(--quiet-ink)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .sex-choice-row>label:has(input:checked){background:var(--leaf-fill)!important;border-color:var(--quiet-green-strong)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .units-toggle{background:var(--quiet-paper)!important;border-color:var(--quiet-line)!important}
