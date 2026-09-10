@@ -1,20 +1,20 @@
 /* Shared colour roles: leaf, lake, orange and berry. Solid surfaces, no colour filters on artwork. */
 html[data-theme][lang] body.site-v3[data-design-family]{
  --quiet-paper:#f5f8f2;--quiet-surface:#ffffff;--quiet-surface-2:#edf3e8;--quiet-ink:#193c2e;--quiet-muted:#4b6257;--quiet-line:#b7cbbb;--quiet-green-strong:#246a43;--quiet-green-soft:#dceecf;
- --leaf-fill:#dceecf;--leaf-ink:#275d38;--blue-fill:#d5eaf4;--blue-ink:#205b77;--orange-fill:#f8e0bf;--orange-ink:#804814;--berry-fill:#f3dce6;--berry-ink:#883750;
+ --leaf-fill:#dceecf;--leaf-ink:#275d38;--blue-fill:#d5eaf4;--blue-ink:#205b77;--orange-fill:#f8e0bf;--orange-ink:#804814;--berry-fill:#e1e7f5;--berry-ink:#485982;
  --character-soft:var(--leaf-fill);--character-ink:var(--leaf-ink);--character-blue:var(--blue-fill);--character-blue-ink:var(--blue-ink);--character-warm:var(--orange-fill);--character-warm-ink:var(--orange-ink);
  --work-accent:#2c784c;--work-on-accent:#fff;--work-edge:var(--quiet-line);--work-warm:var(--orange-fill);--work-cool:var(--blue-fill);
  --tile-fill:var(--leaf-fill);--tile-ink:var(--leaf-ink);--tile-strong:#347c4c;--button-fill:#2c784c;--button-ink:#fff;--card-shadow:0 6px 22px #173b2810;
  background:var(--quiet-paper)!important;color:var(--quiet-ink)!important
 }
 html[data-theme="dark"][lang] body.site-v3[data-design-family]{
- --quiet-paper:#243a3c;--quiet-surface:#30494a;--quiet-surface-2:#3c5856;--quiet-ink:#f2f6f1;--quiet-muted:#cedbd6;--quiet-line:#829e97;--quiet-green-strong:#b2ddc1;--quiet-green-soft:#3c594d;
- --leaf-fill:#3c594d;--leaf-ink:#d7ebd7;--blue-fill:#36555d;--blue-ink:#d0e5ed;--orange-fill:#514b3c;--orange-ink:#f0e0bc;--berry-fill:#534752;--berry-ink:#eed7e3;
- --work-accent:#9bd2b9;--work-on-accent:#173b30;--button-fill:#9bd2b9;--button-ink:#173b30;--card-shadow:0 6px 22px #102c3028;
- --d-bg:var(--quiet-paper);--d-bg-soft:#2a4142;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-line:var(--quiet-line);--d-accent:var(--quiet-green-strong);--d-btn:var(--button-fill);--d-btn-in:var(--button-ink)
+ --quiet-paper:#272c30;--quiet-surface:#343b40;--quiet-surface-2:#424b50;--quiet-ink:#f5f4ed;--quiet-muted:#d1d7d5;--quiet-line:#84958f;--quiet-green-strong:#a8d9ad;--quiet-green-soft:#354d41;
+ --leaf-fill:#354d41;--leaf-ink:#dcf0d6;--blue-fill:#354b5b;--blue-ink:#d4eaf5;--orange-fill:#504a3d;--orange-ink:#f1e2bf;--berry-fill:#42485b;--berry-ink:#e2e7fa;
+ --work-accent:#77bd88;--work-on-accent:#142c21;--button-fill:#77bd88;--button-ink:#142c21;--card-shadow:0 6px 22px #10151924;
+ --d-bg:var(--quiet-paper);--d-bg-soft:#2e3439;--d-surface:var(--quiet-surface);--d-surface-2:var(--quiet-surface-2);--d-ink:var(--quiet-ink);--d-muted:var(--quiet-muted);--d-line:var(--quiet-line);--d-accent:var(--quiet-green-strong);--d-btn:var(--button-fill);--d-btn-in:var(--button-ink)
 }
 html[data-theme="light"][lang]{background:#f5f8f2!important}
-html[data-theme="dark"][lang]{background:#243a3c!important}
+html[data-theme="dark"][lang]{background:#272c30!important}
 html[data-theme][lang] body.site-v3[data-design-family="tools"]{--character-soft:var(--blue-fill);--character-ink:var(--blue-ink)}
 html[data-theme][lang] body.site-v3[data-design-family="contact"]{--character-soft:var(--orange-fill);--character-ink:var(--orange-ink)}
 
@@ -116,16 +116,16 @@ html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-c
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .quiz-option .option-icon.option-chain-mark{background:transparent!important;padding:0!important;border:0!important}
 @media(max-width:620px){html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool{grid-template-columns:44px minmax(0,1fr)!important;gap:16px!important;padding:20px!important}html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon{width:44px!important;height:44px!important}}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-everyday-tool>.home-everyday-icon svg[fill="none"]{fill:none!important}
-/* Garden accents: bright petals sit on quiet green reading surfaces. */
-html[data-theme][lang] body.site-v3[data-design-family]{--petal-rose:#f2c0cf;--petal-rose-ink:#71364b;--petal-gold:#f4dda1;--petal-gold-ink:#66501e;--petal-sky:#c2e2ed;--petal-sky-ink:#28596e;--petal-lilac:#dad0ef;--petal-lilac-ink:#51416e;--petal-fill:var(--petal-rose);--petal-ink:var(--petal-rose-ink);--flower-rose:#994866;--flower-gold:#826117;--flower-sky:#306b80}
-html[data-theme="dark"][lang] body.site-v3[data-design-family]{--petal-rose:#eeb8ca;--petal-gold:#edd18c;--petal-sky:#b4dce8;--petal-lilac:#cfc2e8;--flower-rose:#efb6cd;--flower-gold:#efd391;--flower-sky:#baddf0}
-html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option){--petal-fill:var(--petal-rose);--petal-ink:var(--petal-rose-ink)}
+/* Small leaf, sky and cream accents keep colour focused on useful visual cues. */
+html[data-theme][lang] body.site-v3[data-design-family]{--petal-leaf:#dceacd;--petal-leaf-ink:#305b37;--petal-gold:#f1e5c7;--petal-gold-ink:#66501e;--petal-sky:#d4e7ee;--petal-sky-ink:#28596e;--petal-lilac:#e1e7f5;--petal-lilac-ink:#485982;--petal-fill:var(--petal-leaf);--petal-ink:var(--petal-leaf-ink);--flower-leaf:#386f43;--flower-gold:#826117;--flower-sky:#306b80}
+html[data-theme="dark"][lang] body.site-v3[data-design-family]{--petal-leaf:#cedfbc;--petal-gold:#e8dbb6;--petal-sky:#c4dfe9;--petal-lilac:#d5dff0;--flower-leaf:#b4ddad;--flower-gold:#e6d093;--flower-sky:#add6ec}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option){--petal-fill:var(--petal-leaf);--petal-ink:var(--petal-leaf-ink)}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option):nth-child(4n+2){--petal-fill:var(--petal-gold);--petal-ink:var(--petal-gold-ink)}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option):nth-child(4n+3){--petal-fill:var(--petal-sky);--petal-ink:var(--petal-sky-ink)}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.search-start-tile,.single-macro-card,.protein-food-card,.guide-group,.quiz-option):nth-child(4n+4){--petal-fill:var(--petal-lilac);--petal-ink:var(--petal-lilac-ink)}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-tool>.home-everyday-icon,.clear-tool-card>.clarity-icon,.clear-about-grid article>.clear-icon,.search-start-tile>.colour-tile-art,.single-macro-card .single-card-icon,.protein-food-card>svg,.learning-icon){background:var(--petal-fill)!important;color:var(--petal-ink)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .quiz-option .option-icon:not(.option-chain-mark){background:var(--petal-fill)!important;color:var(--petal-ink)!important}
-html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .calc-welcome-macros>.clear-icon:nth-child(1){color:var(--flower-rose)!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .calc-welcome-macros>.clear-icon:nth-child(1){color:var(--flower-leaf)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .calc-welcome-macros>.clear-icon:nth-child(2){color:var(--flower-gold)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .calc-welcome-macros>.clear-icon:nth-child(3){color:var(--flower-sky)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .home-launch-card:first-child .how-step-number{background:var(--petal-gold)!important;color:var(--petal-gold-ink)!important}
@@ -137,11 +137,12 @@ html[data-theme][lang] body.site-v3[data-page-tone="berry"]{--petal-fill:var(--p
 html[data-theme][lang] body.site-v3 .colour-art .art-edge{stroke:var(--petal-ink)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .calc-welcome .calc-welcome-macros>.clear-icon svg{color:inherit!important;fill:currentColor!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .clear-tool-card h3{color:var(--quiet-ink)!important}
-/* Carry the cool evergreen surfaces through selected and unselected controls. */
+/* Carry the neutral dark surfaces through selected and unselected controls. */
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .sex-choice-row>label{background:var(--quiet-paper)!important;border-color:var(--quiet-line)!important;color:var(--quiet-ink)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .sex-choice-row>label:has(input:checked){background:var(--leaf-fill)!important;border-color:var(--quiet-green-strong)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .units-toggle{background:var(--quiet-paper)!important;border-color:var(--quiet-line)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .units-toggle .active{background:var(--button-fill)!important;color:var(--button-ink)!important}
+@media(prefers-reduced-motion:reduce){html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .units-toggle button{transition:none!important}}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .meal-metric:nth-child(1){background:var(--orange-fill)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .meal-metric:nth-child(2){background:var(--leaf-fill)!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .comparison-picker{--compare-tint:var(--leaf-fill);--compare-ink:var(--leaf-ink)}
