@@ -507,11 +507,22 @@ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-co
 html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card>div{background:transparent!important}
 html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content{padding-bottom:0!important}
 html[data-theme][lang] body.site-v3.home-studio[data-design-family] footer.modern-footer.footer-compact{background:var(--quiet-paper)!important;border:0!important;border-radius:0!important;margin-top:0!important;box-shadow:none!important}
-html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address{background:var(--blue-fill)!important;border:0!important;box-shadow:none!important}
-html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address :is(.contact-address-label,.contact-email-address){color:var(--blue-ink)!important}
-html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address [data-copy-address]{background:var(--quiet-surface)!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address{background:var(--leaf-fill)!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address :is(.contact-address-label,.contact-email-address){color:var(--leaf-ink)!important}
+html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address [data-copy-address]{background:#245439!important;color:#fff9eb!important}
 @media(max-width:760px){
  html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-layout,.home-finder-help-layout,.gm6-learning>.container){width:calc(100% - 32px)!important}
  html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-layout,.home-finder-help-layout){grid-template-columns:1fr!important}
  html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example .example-grid article{padding:20px!important}
 }
+
+/* Paint the destination immediately; motion belongs to the control being used. */
+@view-transition{navigation:none}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content{view-transition-name:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card .btn{background:#245439!important;color:#fff9eb!important;border:0!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card .btn:hover{background:#193f2b!important}
+
+/* Small botanical accents inside example cards, never behind the whole section. */
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example h2::before{content:"";display:block;width:32px;height:12px;margin-bottom:14px;border-radius:2px 14px 2px 14px;background:var(--quiet-green-strong)}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example .example-grid article{background:#3b604b!important;box-shadow:inset 0 3px #a8c998!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example .example-grid article:nth-child(2n){background:#3a5d58!important;box-shadow:inset 0 3px #add3ca!important}

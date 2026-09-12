@@ -229,33 +229,30 @@
     var header = document.querySelector('.site-header');
     var clearance = header ? Math.max(0, header.getBoundingClientRect().bottom) : 0;
     var top = window.scrollY + root.getBoundingClientRect().top - clearance - 16;
-    // Reposition while the outgoing card is faded, before revealing the new
-    // question. Never race a smooth scroll against a shrinking document.
+    // Align the new question in the same frame as the content change. Never
+    // race a smooth scroll against a shrinking document.
     window.scrollTo({top: Math.max(0, top), left: 0, behavior: 'instant'});
     var heading = root.querySelector('h2');
     if (heading) heading.focus({preventScroll: true});
   }
 
   var changingQuestion = false;
-  async function changeQuestion(update, direction) {
+  var questionAnimation;
+  function changeQuestion(update, direction) {
     if (changingQuestion) return;
     changingQuestion = true;
-    var oldCard = root.firstElementChild;
-    var useMotion = !reducedMotion() && oldCard && oldCard.animate;
-    root.setAttribute('aria-busy', 'true');
-    root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=true;});
+    if (questionAnimation) questionAnimation.cancel();
     try {
-      if (useMotion) await oldCard.animate([{opacity:1},{opacity:0}],{duration:80,easing:'ease-out',fill:'forwards'}).finished.catch(function(){});
       update();
       showCurrentQuestion();
       var newCard = root.firstElementChild;
-      root.removeAttribute('aria-busy');
-      root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=true;});
       if (newCard && newCard.querySelector('.results-heading')) newCard=newCard.querySelector('.results-heading');
-      if (useMotion && newCard) await newCard.animate([{opacity:0,transform:'translateY(6px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'ease-out'}).finished.catch(function(){});
+      // Feedback never holds up the next interaction or hides the question.
+      if (!reducedMotion() && newCard && newCard.animate) {
+        questionAnimation=newCard.animate([{translate:'0 3px'},{translate:'0 0'}],{duration:120,easing:'ease-out'});
+        questionAnimation.finished.catch(function(){});
+      }
     } finally {
-      root.removeAttribute('aria-busy');
-      root.querySelectorAll('[data-go],[data-restart]').forEach(function(button){button.disabled=false;});
       changingQuestion=false;
     }
   }

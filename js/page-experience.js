@@ -16,18 +16,8 @@
   });
   update();
 
-  // Native transitions never postpone navigation. Older browsers receive one
-  // short arrival fade at DOM readiness, rather than waiting for ads/images.
-  const nativePages='onpagereveal' in window && 'onpageswap' in window;
-  const motionAllowed=()=>!matchMedia('(prefers-reduced-motion: reduce)').matches&&!document.documentElement.classList.contains('tide-motion-off');
-  function arrive(){
-    document.documentElement.classList.remove('page-leaving');
-    const main=document.querySelector('main');
-    // A slow script must never fade content the reader has already been using.
-    const firstPaint=performance.getEntriesByName('first-contentful-paint')[0];
-    if(performance.now()>500 || (firstPaint && performance.now()-firstPaint.startTime>100))return;
-    if(!nativePages&&motionAllowed()&&main?.animate)main.animate([{opacity:.7},{opacity:1}],{duration:240,easing:'cubic-bezier(.16,1,.3,1)'});
-  }
-  arrive();
+  // Navigation uses the browser's immediate paint and back/forward cache.
+  // Do not fade an entire page or keep an outgoing screenshot on screen.
+  document.documentElement.classList.remove('page-leaving');
   addEventListener('pageshow',event=>{if(event.persisted)document.documentElement.classList.remove('page-leaving');});
 })();
