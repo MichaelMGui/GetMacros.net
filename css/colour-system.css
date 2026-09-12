@@ -44,7 +44,7 @@ html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-c
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.guide-card,.advice-card) p{color:var(--quiet-ink)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.pick-metrics,.browse-meal-stats){background:var(--tile-fill)!important;border-radius:14px!important;padding:14px!important;border:0!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.pick-metrics>span,.pick-metrics strong,.browse-meal-stats dt,.browse-meal-stats dd){color:var(--tile-ink)!important;background:transparent!important}
-html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.answer-box,.evidence-card,.tool-example,.simple-tool-help,.source-box,.guide-quick-answer,.callout,.editorial-note,.practical-example){background:var(--character-soft)!important;color:var(--quiet-ink)!important;border:0!important;border-radius:20px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.answer-box,.evidence-card,.tool-example,.simple-tool-help,.source-box,.guide-quick-answer,.callout,.editorial-note){background:var(--character-soft)!important;color:var(--quiet-ink)!important;border:0!important;border-radius:20px!important;box-shadow:none!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.reading-section,.focused-guide-body,.article-container,.policy) h2{color:var(--character-ink)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.data-table,.comparison-table,.table-wrap table) th{background:var(--character-soft)!important;color:var(--character-ink)!important;border-color:var(--quiet-line)!important}
 html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content :is(.search-hit,.reading-map,.guide-sources,.submission-sources,.food-reference,.restaurant-menu-details){background:var(--quiet-surface)!important;border-color:var(--quiet-line)!important;box-shadow:none!important}
@@ -494,3 +494,24 @@ html[data-theme][lang] body.site-v3.hub-finish[data-design-family] main#main-con
 
 html[data-theme][lang] body.site-v3.hub-finish[data-design-family] main#main-content#main-content#main-content .hub-art .art-edge{stroke:var(--quiet-green-strong)!important}
 html[data-theme][lang] body.site-v3.hub-finish.calculator-suite main#main-content#main-content#main-content{padding-top:100px!important}
+
+/* Photo review: examples remain in the page flow, with colour confined to their cards. */
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example:not(.hub-comparison-example)>.container{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example .example-grid article{padding:24px!important;background:var(--quiet-surface)!important;border:0!important;border-radius:18px!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-layout,.home-finder-help-layout,.gm6-learning>.container){width:calc(100% - 48px)!important;max-width:1180px!important;padding-left:0!important;padding-right:0!important;margin-left:auto!important;margin-right:auto!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-layout,.home-finder-help-layout){grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important;align-items:start!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-everyday-copy{padding-top:6px!important;position:static!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .gm6-learning{background:transparent!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card{background:var(--quiet-surface-2)!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content .home-reading-card>div{background:transparent!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content{padding-bottom:0!important}
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] footer.modern-footer.footer-compact{background:var(--quiet-paper)!important;border:0!important;border-radius:0!important;margin-top:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address{background:var(--blue-fill)!important;border:0!important;box-shadow:none!important}
+html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address :is(.contact-address-label,.contact-email-address){color:var(--blue-ink)!important}
+html[data-theme][lang] body.site-v3.contact-page[data-design-family] main#main-content#main-content#main-content .contact-address [data-copy-address]{background:var(--quiet-surface)!important;color:var(--quiet-ink)!important}
+@media(max-width:760px){
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-layout,.home-finder-help-layout,.gm6-learning>.container){width:calc(100% - 32px)!important}
+ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content :is(.home-everyday-layout,.home-finder-help-layout){grid-template-columns:1fr!important}
+ html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content .practical-example .example-grid article{padding:20px!important}
+}
