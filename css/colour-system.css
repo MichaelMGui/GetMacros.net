@@ -1,4 +1,4 @@
-/* Shared colour roles: leaf, lake, orange and berry. Solid surfaces, no colour filters on artwork. */
+/* Shared colour roles, with the final forest-and-amber palette below. */
 html[data-theme][lang] body.site-v3[data-design-family]{
  --quiet-paper:#f5f8f2;--quiet-surface:#ffffff;--quiet-surface-2:#edf3e8;--quiet-ink:#193c2e;--quiet-muted:#4b6257;--quiet-line:#b7cbbb;--quiet-green-strong:#246a43;--quiet-green-soft:#dceecf;
  --leaf-fill:#dceecf;--leaf-ink:#275d38;--blue-fill:#d5eaf4;--blue-ink:#205b77;--orange-fill:#f8e0bf;--orange-ink:#804814;--berry-fill:#e1e7f5;--berry-ink:#485982;
@@ -670,3 +670,38 @@ html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#ma
 html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content :is(.meal-stats,.browse-meal-stats):nth-child(n){background:var(--meal-green-wash)!important;border-radius:12px!important;padding:14px!important}
 html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content :is(.meal-metric b,.meal-metric small,.browse-meal-stats dt,.browse-meal-stats dd){color:var(--meal-green-ink)!important}
 html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content .meal-database-disclosure>summary::after{border-color:var(--quiet-green-strong)!important}
+
+/* Forest green and amber: shared roles across tools, guides and meal finding. */
+html[data-theme][lang] body.site-v3[data-design-family]{
+ --leaf-fill:#d9e9d0;--leaf-ink:#214c2e;--orange-fill:#f2d394;--orange-ink:#594019;
+ --blue-fill:var(--leaf-fill);--blue-ink:var(--leaf-ink);--berry-fill:var(--orange-fill);--berry-ink:var(--orange-ink);
+ --button-fill:#205d38;--button-ink:#ffffff;--work-accent:var(--button-fill);--work-on-accent:var(--button-ink);--tile-strong:#205d38;
+ --petal-leaf:var(--leaf-fill);--petal-leaf-ink:var(--leaf-ink);--petal-gold:var(--orange-fill);--petal-gold-ink:var(--orange-ink);--petal-sky:var(--leaf-fill);--petal-sky-ink:var(--leaf-ink);--petal-lilac:var(--orange-fill);--petal-lilac-ink:var(--orange-ink);
+ --flower-leaf:#205d38;--flower-gold:#795719;--flower-sky:#205d38;
+ --meal-gold:#f2d394;--meal-gold-ink:#594019;--meal-green-wash:#d9e9d0;--meal-green-ink:#214c2e;
+}
+html[data-theme="dark"][lang]{background:#1e4635!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family]{
+ --quiet-paper:#1e4635;--quiet-surface:#2b5540;--quiet-surface-2:#35634a;--quiet-line:transparent;--quiet-green-strong:#f5ce85;--quiet-green-soft:#285a3c;
+ --leaf-fill:#285a3c;--leaf-ink:#f0f6e8;--orange-fill:#69512c;--orange-ink:#fff0d2;
+ --button-fill:#205d38;--button-ink:#ffffff;--card-shadow:0 6px 22px #102e201c;
+ --petal-leaf:#285a3c;--petal-leaf-ink:#f0f6e8;--petal-gold:#e7ba6d;--petal-gold-ink:#453210;
+ --flower-leaf:#c9dfb7;--flower-gold:#f0c477;--flower-sky:#c9dfb7;--d-bg-soft:#244c39;
+ --meal-gold:#e7ba6d;--meal-gold-ink:#453210;--meal-green-wash:#285a3c;--meal-green-ink:#f0f6e8;
+}
+html[data-theme][lang] body.site-v3 .colour-art{--art-leaf:#2d7545;--art-blue:#d5a54d;--art-orange:#e6b860;--art-berry:#39764b}
+/* Keep surfaces distinct without pale decorative borders, including nested menus. */
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :where(*){border-color:transparent!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :where(*):not(:focus-visible){outline:none!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:2px solid #f0c477!important;outline-offset:3px!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(input[type=checkbox],input[type=radio]){accent-color:#e7ba6d;color-scheme:dark}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(.nav-action,.tide-motion-toggle,.meal-save,.search-results-toggle){background:var(--quiet-surface-2)!important;color:var(--quiet-ink)!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(.nav-popover,.full-nav){box-shadow:0 8px 24px #102b202e!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(.comparison-output tbody td,.comparison-output tbody th,.data-table td,.table-scroll td){border-bottom-color:#41674e!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(.practical-example .example-grid article,.practical-example .example-grid article:nth-child(2n)){background:var(--quiet-surface)!important;box-shadow:none!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(.browse-meal,.comparison-picker [data-compare],.calc-form,.calculator-output,.tool-output,fieldset.panel){background:var(--quiet-surface-2)!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] :is(main#main-content#main-content#main-content#main-content,header.site-header,footer.modern-footer) :is(.comparison-picker [data-compare]>summary){background:var(--meal-green-wash)!important}
+
+html[data-theme="dark"][lang] body.site-v3[data-design-family] .back-to-top{background:#205d38!important;color:#fff!important;border:0!important;box-shadow:0 6px 20px #102b202e!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] .back-to-top:focus-visible{outline:2px solid #f5ce85!important;outline-offset:3px!important}
+html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content :is(.food-filter-controls input,.food-filter-controls select,.search-box input){background:var(--quiet-surface-2)!important;color:var(--quiet-ink)!important;border-radius:12px!important}
