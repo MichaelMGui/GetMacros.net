@@ -68,7 +68,7 @@
         if (label) label.textContent = dark ? "Light" : "Dark";
       });
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", dark ? "#102723" : "#f7faf8");
+      if (meta) meta.setAttribute("content", dark ? "#242829" : "#f5f8f2");
     }
     apply(initial === "dark" ? "dark" : "light", false);
     buttons.forEach(function (button) {
@@ -86,9 +86,37 @@
     var groups = Array.prototype.slice.call(nav.querySelectorAll(".nav-group"));
     if (!links) return;
 
+    function revealPanel(panel) {
+      if (!panel || !panel.animate || matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('tide-motion-off')) return;
+      if (panel._entrance) panel._entrance.cancel();
+      panel._entrance = panel.animate([
+        {opacity:.55,scale:'.97',translate:'0 -5px'},
+        {opacity:1,scale:'1',translate:'0 0'}
+      ],{duration:240,easing:'cubic-bezier(.22,1,.36,1)'});
+    }
+    function openGroup(group, open) {
+      closeGroups(group);
+      group.classList.toggle('is-open',open);
+      group.querySelector('.nav-group-trigger').setAttribute('aria-expanded',String(open));
+      var panel=group.querySelector('.nav-popover');
+      if(open) revealPanel(panel);
+      else if(panel._entrance) panel._entrance.cancel();
+    }
+    function focusChoice(choice) {
+      choice.focus({preventScroll:true});
+      // Move only the mobile sheet, never the page behind it.
+      if(mobile.matches){
+        var item=choice.getBoundingClientRect(),sheet=links.getBoundingClientRect();
+        if(item.bottom>sheet.bottom-12)links.scrollTop+=item.bottom-sheet.bottom+12;
+        else if(item.top<sheet.top+12)links.scrollTop+=item.top-sheet.top-12;
+      }
+    }
+
     function closeGroups(except) {
       groups.forEach(function (group) {
         if (group === except) return;
+        var panel=group.querySelector('.nav-popover');
+        if(panel && panel._entrance) panel._entrance.cancel();
         group.classList.remove("is-open");
         var trigger = group.querySelector(".nav-group-trigger");
         if (trigger) trigger.setAttribute("aria-expanded", "false");
@@ -108,10 +136,7 @@
     function setNav(open) {
       var entering = open && !document.body.classList.contains('nav-open');
       document.body.classList.toggle("nav-open", open);
-      if (entering && links.animate && !matchMedia('(prefers-reduced-motion: reduce)').matches && !document.documentElement.classList.contains('tide-motion-off')) {
-        if (links._entrance) links._entrance.cancel();
-        links._entrance = links.animate([{opacity:0,translate:'0 -8px'},{opacity:1,translate:'0 0'}],{duration:220,easing:'cubic-bezier(.16,1,.3,1)'});
-      }
+      if (entering) revealPanel(links);
       if (!open && links._entrance) links._entrance.cancel();
       if (toggle) {
         toggle.setAttribute("aria-expanded", String(open));
@@ -125,14 +150,29 @@
         setNav(!document.body.classList.contains("nav-open"));
       });
     }
-    groups.forEach(function (group) {
+    groups.forEach(function (group, index) {
       var trigger = group.querySelector(".nav-group-trigger");
       if (!trigger) return;
+      var panel=group.querySelector('.nav-popover');
+      panel.id='navigation-panel-'+index;
+      trigger.setAttribute('aria-controls',panel.id);
       trigger.addEventListener("click", function () {
-        var open = !group.classList.contains("is-open");
-        closeGroups(group);
-        group.classList.toggle("is-open", open);
-        trigger.setAttribute("aria-expanded", String(open));
+        openGroup(group,!group.classList.contains('is-open'));
+      });
+      trigger.addEventListener('keydown',function(event){
+        if(event.key!=='ArrowDown' && event.key!=='ArrowUp')return;
+        event.preventDefault();openGroup(group,true);
+        var choices=panel.querySelectorAll('a');
+        focusChoice(choices[event.key==='ArrowUp'?choices.length-1:0]);
+      });
+      panel.addEventListener('keydown',function(event){
+        var choices=Array.from(panel.querySelectorAll('a')),at=choices.indexOf(document.activeElement),next;
+        if(event.key==='ArrowDown')next=(at+1)%choices.length;
+        else if(event.key==='ArrowUp')next=(at-1+choices.length)%choices.length;
+        else if(event.key==='Home')next=0;
+        else if(event.key==='End')next=choices.length-1;
+        else return;
+        event.preventDefault();focusChoice(choices[next]);
       });
     });
     document.addEventListener("click", function (event) {
@@ -150,6 +190,10 @@
         catch (error) { toggle.focus(); }
       }
     });
+    nav.addEventListener('focusout',function(event){
+      if(event.relatedTarget && !nav.contains(event.relatedTarget))setNav(false);
+    });
+    addEventListener('pageshow',function(event){if(event.persisted)setNav(false);});
     links.addEventListener("click", function (event) {
       if (mobile.matches && event.target.closest("a")) setNav(false);
     });

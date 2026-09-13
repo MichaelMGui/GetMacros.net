@@ -1,4 +1,4 @@
-/* Shared colour roles, with the final forest-and-amber palette below. */
+/* Shared colour roles, with the final charcoal-and-emerald palette below. */
 html[data-theme][lang] body.site-v3[data-design-family]{
  --quiet-paper:#f5f8f2;--quiet-surface:#ffffff;--quiet-surface-2:#edf3e8;--quiet-ink:#193c2e;--quiet-muted:#4b6257;--quiet-line:#b7cbbb;--quiet-green-strong:#246a43;--quiet-green-soft:#dceecf;
  --leaf-fill:#dceecf;--leaf-ink:#275d38;--blue-fill:#d5eaf4;--blue-ink:#205b77;--orange-fill:#f8e0bf;--orange-ink:#804814;--berry-fill:#e1e7f5;--berry-ink:#485982;
@@ -752,3 +752,41 @@ html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#ma
 html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content .quiz-option:nth-child(n) .option-icon{background:var(--meal-gold)!important;color:var(--meal-gold-ink)!important}
 html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content .quiz-option .option-chain-mark{background:transparent!important}
 html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content .quiz-option .option-copy :is(b,small){color:inherit!important}
+
+/* Tactile navigation: immediate actions, with short compositor-only feedback. */
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav{border-radius:26px!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav :is(.nav-group-trigger,.nav-direct,.nav-action,.theme-toggle,.nav-toggle){min-height:44px!important;border-radius:16px!important;font-size:.9375rem!important;letter-spacing:-.015em!important;touch-action:manipulation}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-group{background:transparent!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation :is(.nav-group-trigger,.nav-direct):is(:hover,:focus-visible),html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-group.is-open>.nav-group-trigger{background:var(--quiet-green-soft)!important;color:var(--quiet-ink)!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover{border:0!important;padding:10px!important;border-radius:24px!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;animation:none!important;transition:none!important;transform-origin:50% 0}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover a{min-height:76px!important;border-radius:16px!important;padding:14px 18px!important;transform:none!important;background:transparent!important;align-items:center!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover a:is(:hover,:focus-visible){background:var(--quiet-green-soft)!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover a>svg{width:40px!important;height:40px!important;padding:10px!important;border-radius:14px!important;background:var(--quiet-green-soft)!important;color:var(--quiet-green-strong)!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover a small{font-size:.8125rem!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover a[aria-current="page"]{padding-right:30px!important}
+html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav .nav-action{background:var(--quiet-green-soft)!important;color:var(--quiet-ink)!important;box-shadow:none!important}
+@media(max-width:900px){
+ html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation{padding:14px!important;border:0!important;border-radius:26px!important;background:var(--quiet-surface)!important;max-height:calc(100dvh - 115px)!important;overflow-y:auto!important;overscroll-behavior:contain;scrollbar-width:thin;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;transition:none!important}
+ html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-group{padding:4px 0!important;border:0!important}
+ html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-group-trigger{min-height:52px!important;padding:14px 16px!important;font-size:1.0625rem!important}
+ html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover{padding:4px 0!important;border-radius:18px!important;box-shadow:none!important;background:var(--quiet-surface)!important}
+ html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-group.is-open .nav-popover{max-height:none!important}
+ html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation .nav-popover a{min-height:72px!important;padding:12px 14px!important}
+ html[data-theme][lang] body.site-v3[data-design-family] header.site-header nav.full-nav #primary-navigation :is(.nav-direct,.nav-mobile-search){border-radius:16px!important;padding:14px 16px!important}
+}
+@media(prefers-reduced-motion:no-preference){
+ html.tide-motion-on[data-theme][lang] body.site-v3[data-design-family] :is(header.site-header a,header.site-header button,main .btn,main .action-link,main .section-nav a,main .calculator-nav a,footer a){transition:scale 180ms cubic-bezier(.22,1,.36,1),background-color 150ms ease!important}
+ html.tide-motion-on[data-theme][lang] body.site-v3[data-design-family] :is(header.site-header a,header.site-header button,main .btn,main .action-link,main .section-nav a,main .calculator-nav a,footer a):active{scale:.96}
+}
+/* Equal search entry points, including a one-column mobile layout. */
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content .search-start-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:1fr!important;align-items:stretch!important;gap:18px!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content .search-start-tile:nth-child(n){display:grid!important;grid-column:auto!important;grid-row:auto!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:112px auto auto 1fr!important;align-content:start!important;align-items:start!important;justify-self:stretch!important;width:100%!important;max-width:none!important;height:100%!important;box-sizing:border-box!important;margin:0!important;padding:22px!important;gap:12px!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content .search-start-tile>.colour-tile-art{width:100%!important;height:112px!important;min-height:112px!important;margin:0!important;box-sizing:border-box!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content .search-start-name{min-height:2.8em!important;max-width:none!important}
+html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content :is(.search-start-name,.search-start-copy){margin:0!important;overflow-wrap:normal!important;word-break:normal!important}
+@media(max-width:760px){html[data-theme][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content .search-start-grid{grid-template-columns:1fr!important}}
+/* All three macro badges have equal emphasis; the secondary action has a real surface. */
+html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-art-caption span:nth-child(n){background:var(--quiet-green-soft)!important;color:var(--quiet-ink)!important}
+html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-art-caption span:nth-child(n){background:#8bddb1!important;color:#163c29!important}
+html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-intro-actions a.home-text-link.btn.action-link{background:#52645b!important;color:#f4f7f5!important;border:0!important;box-shadow:0 3px 0 #202d26!important}
+html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-intro-actions a.home-text-link.btn.action-link:hover{background:#60766a!important}
