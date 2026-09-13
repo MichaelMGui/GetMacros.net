@@ -4,6 +4,7 @@
     <div class="home-everyday-copy">
       <h2 id="home-everyday-title">Eating in?<br>Make the numbers easier.</h2>
       <a class="btn action-link" href="calculators.html">Explore the calculators</a>
+      <img class="home-section-illustration" src="images/home-food-tools.webp" alt="" width="600" height="400" loading="lazy" decoding="async">
     </div>
     <div class="home-everyday-tools">
       <article class="home-everyday-tool">
@@ -25,23 +26,28 @@
   <div class="container home-finder-help-layout">
     <div>
       <h2 id="home-finder-help-title">Using the meal finder</h2>
+      <img class="home-section-illustration" src="images/home-finder-help.webp" alt="" width="600" height="400" loading="lazy" decoding="async">
     </div>
     <div class="home-finder-questions">
       <details>
         <summary>How are my meals picked?</summary>
         <p>Your answers help us sort the meals. Compare the nutrition and see which ones fit your goals.</p>
+        <a class="btn home-help-link" href="restaurant-meal-finder.html">Find my meal</a>
       </details>
       <details>
         <summary>Can I pick more than one goal?</summary>
         <p>Yes. Try weight gain and high protein, for example. Each result shows how many of your goals it matches.</p>
+        <a class="btn home-help-link" href="restaurant-meal-finder.html">Choose my goals</a>
       </details>
       <details>
         <summary>Do I need a calorie target?</summary>
-        <p>No. You can use the finder right away. The <a href="calculators.html">macro calculator</a> can help if you want a daily estimate.</p>
+        <p>No. You can use the finder right away. Use the macro calculator if you want a daily estimate.</p>
+        <a class="btn home-help-link" href="calculators.html">Calculate my macros</a>
       </details>
       <details>
         <summary>Will my order have these exact numbers?</summary>
         <p>Portions and swaps can change the numbers. Check the restaurant’s menu and allergen information before ordering.</p>
+        <a class="btn home-help-link" href="restaurant-meal-guides.html">Browse restaurant guides</a>
       </details>
     </div>
   </div>
