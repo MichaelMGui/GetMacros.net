@@ -5,55 +5,7 @@
 (function () {
   "use strict";
 
-  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var mobile = window.matchMedia && window.matchMedia("(max-width: 900px)");
-  var finePointer = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-
-  function headerState() {
-    var header = document.querySelector(".site-header");
-    if (!header) return;
-    var queued = false;
-    function paint() {
-      var settled = (window.scrollY || 0) > 18;
-      header.classList.toggle("is-scrolled", settled);
-      document.body.classList.toggle("is-scrolled", settled);
-      queued = false;
-    }
-    window.addEventListener("scroll", function () {
-      if (queued) return;
-      queued = true;
-      requestAnimationFrame(paint);
-    }, { passive: true });
-    paint();
-  }
-
-  function readingProgress() {
-    var content = document.querySelector(".article-container,.focused-guide-body");
-    var header = document.querySelector(".full-nav");
-    if (!content || !header || content.textContent.trim().split(/\s+/).length < 700) return;
-    var track = document.createElement("div");
-    var fill = document.createElement("span");
-    track.className = "reading-progress";
-    track.setAttribute("aria-hidden", "true");
-    track.appendChild(fill);
-    header.appendChild(track);
-    var queued = false;
-    function paint() {
-      var rect = content.getBoundingClientRect();
-      var start = window.scrollY + rect.top - window.innerHeight * .28;
-      var end = start + content.offsetHeight - window.innerHeight * .52;
-      var amount = end <= start ? 0 : Math.max(0, Math.min(1, (window.scrollY - start) / (end - start)));
-      track.style.setProperty("--read-progress", amount.toFixed(4));
-      queued = false;
-    }
-    window.addEventListener("scroll", function () {
-      if (queued) return;
-      queued = true;
-      requestAnimationFrame(paint);
-    }, { passive: true });
-    window.addEventListener("resize", paint, { passive: true });
-    paint();
-  }
 
   function theme() {
     var buttons = document.querySelectorAll("[data-theme-toggle]");
@@ -187,73 +139,6 @@
     });
   }
 
-  function reveals() {
-    document.querySelectorAll(".studio-reveal").forEach(function (item) {
-      item.classList.add("is-visible");
-    });
-    if (reduced || !("IntersectionObserver" in window)) return;
-    var selector = [
-      "main > section:not(:first-of-type) .section-head",
-      "main > section:not(:first-of-type) > .container > h2",
-      ".guide-card", ".blog-card", ".tool-card", ".goal-card", ".chain-card",
-      ".result-card", ".explore-card", ".pick-card", ".ranking-card",
-      ".food-gallery > *", ".content-grid > *", ".two-col > *"
-    ].join(",");
-    var items = [];
-    document.querySelectorAll(selector).forEach(function (item) {
-      if (item.closest("#meal-quiz,#macro-meals,[aria-live]")) return;
-      if (items.indexOf(item) !== -1) return;
-      item.classList.add("u-reveal");
-      item.style.setProperty("--u-delay", (items.length % 3) * 45 + "ms");
-      items.push(item);
-    });
-    if (!items.length) return;
-    document.documentElement.classList.add("u-reveal-ready");
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: .06, rootMargin: "0px 0px -6%" });
-    items.forEach(function (item) {
-      var rect = item.getBoundingClientRect();
-      if (rect.top < window.innerHeight * .94) item.classList.add("is-visible");
-      else observer.observe(item);
-    });
-    window.setTimeout(function () {
-      items.forEach(function (item) { item.classList.add("is-visible"); });
-    }, 1800);
-  }
-
-  function titleReveals() {
-    document.querySelectorAll("[data-reveal-title]").forEach(function (heading) {
-      // Do not rebuild headings after the page has laid out. Per-word wrapper
-      // spans can change a line break by a few pixels; on a refresh farther
-      // down the page that becomes a visible vertical jump. The heading stays
-      // untouched and any motion is paint-only, so its height never changes.
-      requestAnimationFrame(function () { heading.classList.add("is-title-visible"); });
-    });
-  }
-
-  function pointerLight() {
-    if (reduced || !finePointer) return;
-    var cards = document.querySelectorAll(".guide-card,.blog-card,.tool-card,.goal-card,.chain-card,.result-card,.explore-card,.pick-card,.meal-card,[data-spotlight]");
-    cards.forEach(function (card) {
-      card.classList.add("u-pointer-card");
-      var frame = 0;
-      card.addEventListener("pointermove", function (event) {
-        if (frame) return;
-        frame = requestAnimationFrame(function () {
-          var rect = card.getBoundingClientRect();
-          card.style.setProperty("--u-x", ((event.clientX - rect.left) / rect.width * 100).toFixed(1) + "%");
-          card.style.setProperty("--u-y", ((event.clientY - rect.top) / rect.height * 100).toFixed(1) + "%");
-          frame = 0;
-        });
-      }, { passive: true });
-    });
-  }
-
   function compactRankings() {
     document.querySelectorAll(".ranking-card .ranking-list").forEach(function (list) {
       // The parent disclosure already controls density; avoid a second reveal.
@@ -279,13 +164,10 @@
 
   function start() {
     try { theme(); } catch (error) {}
-    try { headerState(); } catch (error) {}
-    try { readingProgress(); } catch (error) {}
     try { navigation(); } catch (error) {}
     try { accessibility(); } catch (error) {}
     try { compactRankings(); } catch (error) {}
-    try { titleReveals(); } catch (error) {}
-    // Tide owns entrances; retire the legacy observer to avoid double motion.
+    // Legacy reveal hooks stay visible without observers or entrance motion.
     document.querySelectorAll('.studio-reveal').forEach(item => item.classList.add('is-visible'));
     // Avoid repainting large gradients on every pointer movement.
   }

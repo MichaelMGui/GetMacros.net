@@ -6,7 +6,7 @@
   button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 7-7 7 7M12 5v15"/></svg><span>Top</span>';
   document.body.append(button);
   let queued=false;
-  function update(){queued=false;button.hidden=scrollY<innerHeight*.8 || document.body.classList.contains('nav-open');}
+  function update(){queued=false;const hidden=scrollY<innerHeight*.8 || document.body.classList.contains('nav-open');if(button.hidden!==hidden)button.hidden=hidden;}
   addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(update);}},{passive:true});
   button.addEventListener('click',()=>{
     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches||document.documentElement.classList.contains('tide-motion-off');

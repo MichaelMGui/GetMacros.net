@@ -36,34 +36,12 @@
   document.addEventListener?.('visibilitychange', sync);
   sync();
 
-  // Observe content below the initial viewport. Nothing is hidden in CSS or
-  // left waiting for JavaScript; each reveal ends at the original layout.
-  const cards='.home-launch-card,.blog-card,.guide-card,.tool-card,.chain-card,.home-everyday-tool,.clear-tool-card,.clear-about-grid article,.protein-food-card,.search-start-tile,.pick-card,.answer-box,.evidence-card,.meal-idea';
-  const targets=document.querySelectorAll('main h2');
-  if ('IntersectionObserver' in window) {
-    const observer=new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{
-        if(!entry.isIntersecting)return;
-        observer.unobserve(entry.target);
-        const target=entry.target;
-        if(!active||target.closest('form,[aria-live],#meal-quiz,details:not([open])'))return;
-        // A fast scroll should never make already-passed content animate.
-        if(entry.boundingClientRect && entry.boundingClientRect.bottom<=0)return;
-        // Keep every word readable throughout. Only section headings move;
-        // paragraphs and entire card grids no longer repaint on each scroll.
-        play(target,[{translate:'0 5px',opacity:1},{translate:'0 0',opacity:1}],
-          {duration:160,easing:'ease-out'});
-      });
-    },{threshold:.08,rootMargin:'0px 0px -24px 0px'});
-    targets.forEach(target=>{
-      if(target.getBoundingClientRect().top>=innerHeight && !target.parentElement.closest(cards))observer.observe(target);
-    });
-  }
+  // Scrolling never starts animations or changes text.
 
   // Delegation also reaches quiz and comparison buttons rendered after startup.
   document.addEventListener?.('pointerdown', event => {
     const button=event.target.closest('.btn,.quiz-continue,.meal-save,[data-compare-pick]');
-    if(!button||!active)return;
+    if(!button||!active||!fine.matches||event.pointerType!=='mouse')return;
     button.classList.add('tide-ripple-host');
     const box=button.getBoundingClientRect(),ripple=document.createElement('span');
     ripple.className='tide-ripple';ripple.setAttribute('aria-hidden','true');
