@@ -735,3 +735,13 @@ html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content :is(.table-wrap,.formula){background:#20374f!important;color:#f3f8ff!important}
 html[data-theme="dark"][lang] body.site-v3[data-design-family] main#main-content#main-content#main-content#main-content .breadcrumb{background:transparent!important}
 html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content img{background:transparent!important}
+
+/* Keep the original four nutrition tiles, using the same two colours on every meal. */
+html[data-theme="light"][lang] body.site-v3.meal-finder-page[data-design-family]{--metric-first:#dcefe8;--metric-first-ink:#245746;--metric-second:#e1edf9;--metric-second-ink:#254d71;--meal-gold:#d8eafa;--meal-gold-ink:#254d71}
+html[data-theme="dark"][lang] body.site-v3.meal-finder-page[data-design-family]{--metric-first:#245a63;--metric-first-ink:#eafcfc;--metric-second:#2b4870;--metric-second-ink:#f0f6ff}
+html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content :is(.meal-stats,.browse-meal-stats):nth-child(n){background:transparent!important;padding:0!important;border-radius:0!important;gap:10px!important}
+html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content :is(.meal-metric:nth-child(n),.browse-meal-stats>div:nth-child(n)){background:var(--metric-first)!important;color:var(--metric-first-ink)!important;padding:14px 12px!important;border-radius:12px!important;min-width:0!important}
+html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content :is(.meal-metric:nth-child(even),.browse-meal-stats>div:nth-child(even)){background:var(--metric-second)!important;color:var(--metric-second-ink)!important}
+html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content :is(.meal-metric b,.meal-metric small,.browse-meal-stats dt,.browse-meal-stats dd){color:inherit!important}
+html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content .results-footer{margin:32px 0 0!important;padding:12px 0 8px!important;gap:20px!important}
+html[data-theme][lang] body.site-v3.meal-finder-page[data-design-family] main#main-content#main-content#main-content#main-content .match-intro:has(.results-mode){padding-bottom:32px!important}
