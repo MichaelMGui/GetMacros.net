@@ -7,6 +7,46 @@
 
   var mobile = window.matchMedia && window.matchMedia("(max-width: 900px)");
 
+  function headerState() {
+    var header=document.querySelector('.site-header');
+    if(!header||!window.IntersectionObserver)return;
+    var marker=document.createElement('span');
+    marker.setAttribute('aria-hidden','true');
+    marker.style.cssText='position:absolute;top:18px;left:0;width:1px;height:1px;pointer-events:none';
+    document.body.prepend(marker);
+    new IntersectionObserver(function(entries){
+      var scrolled=entries[0].boundingClientRect.bottom<0;
+      if(header.classList.contains('has-scroll')!==scrolled)header.classList.toggle('has-scroll',scrolled);
+    }).observe(marker);
+  }
+
+  function readingProgress() {
+    var content=document.querySelector('.article-container,.focused-guide-body');
+    var header=document.querySelector('.full-nav');
+    if(!content||!header||content.textContent.trim().split(/\s+/).length<700)return;
+    var track=document.createElement('div'),fill=document.createElement('span');
+    track.className='reading-progress';track.setAttribute('aria-hidden','true');
+    track.append(fill);header.append(track);
+    var start=0,end=1,queued=false,last=-1;
+    function paint(){
+      queued=false;
+      if(document.hidden)return;
+      var amount=Math.round(Math.max(0,Math.min(1,(scrollY-start)/(end-start)))*200)/200;
+      if(amount!==last){fill.style.setProperty('--read-progress',String(amount));last=amount;}
+    }
+    function measure(){
+      var rect=content.getBoundingClientRect();
+      start=scrollY+rect.top-innerHeight*.28;
+      end=Math.max(start+1,start+rect.height-innerHeight*.52);
+      paint();
+    }
+    // Geometry changes only on resize/content expansion, never during scrolling.
+    if(window.ResizeObserver)new ResizeObserver(measure).observe(content);
+    addEventListener('resize',measure,{passive:true});
+    addEventListener('scroll',function(){if(!queued){queued=true;requestAnimationFrame(paint);}},{passive:true});
+    measure();
+  }
+
   function theme() {
     var buttons = document.querySelectorAll("[data-theme-toggle]");
     if (!buttons.length) return;
@@ -164,6 +204,8 @@
 
   function start() {
     try { theme(); } catch (error) {}
+    try { headerState(); } catch (error) {}
+    try { readingProgress(); } catch (error) {}
     try { navigation(); } catch (error) {}
     try { accessibility(); } catch (error) {}
     try { compactRankings(); } catch (error) {}
