@@ -17,11 +17,11 @@ FILTERS = [
 def render(meals):
     out = ['<!--MEALS:START-->', '<div class="container meal-browser-shell">',
            '<details class="meal-database-disclosure" id="browse-meals">',
-           '<summary><strong>Browse all restaurant meals</strong></summary>',
-           '<div class="meal-browser" data-meal-browser><p class="browse-intro">Skip the quiz and compare meals by restaurant, calories or protein.</p>',
+           '<summary><strong>Browse all meals</strong></summary>',
+           '<div class="meal-browser" data-meal-browser>',
            '<div class="meal-browser-controls" hidden>',
-           '<label for="browse-query">Search by meal or restaurant<input type="search" id="browse-query" placeholder="Try Chipotle or chicken" autocomplete="off"></label>',
-           '<label for="browse-filter">Filter meals<select id="browse-filter">']
+           '<label for="browse-query">Meal or restaurant<input type="search" id="browse-query" placeholder="Try Chipotle or chicken" autocomplete="off"></label>',
+           '<label for="browse-filter">Your preference<select id="browse-filter">']
     out.extend(f'<option value="{value}">{label}</option>' for value, label, _ in FILTERS)
     out.extend(['</select></label></div>',
                 '<p class="browse-status" role="status" aria-live="polite" aria-atomic="true" hidden></p>',
@@ -51,9 +51,9 @@ def render(meals):
         out.append(f'</dl><a class="btn action-link" href="{escape(meal["url"])}">View menu</a></article>')
     out.extend(['</div>', '<p class="browse-empty" hidden>No meals found. Try another search or filter.</p>',
                 '<button class="btn browse-more" type="button" hidden>Show more meals</button>',
-                '<details class="browse-nutrition-note"><summary>Nutrition &amp; filters</summary>',
+                '<details class="browse-nutrition-note"><summary>About these numbers</summary>',
                 '<p>Numbers are for the listed order; portions and substitutions can change them. Check allergens with the restaurant.</p>',
                 '<p>High protein: 25 g or more. High fiber: 5 g or more. Lower sodium: up to 600 mg. Lower-calorie and lower-sodium filters include meals with at least 250 calories and 15 g protein.</p>',
-                '<a href="sources.html">Nutrition sources</a></details>',
+                '<a class="btn action-link" href="sources.html">Nutrition sources</a></details>',
                 '</div></details></div>', '<script src="js/meal-browser.js" defer></script>', '<!--MEALS:END-->'])
     return '\n'.join(out)
