@@ -1,6 +1,7 @@
 # Image inventory
 
-- `home-food-tools.webp` and `home-finder-help.webp`: original illustrations generated with OpenAI image generation for the homepage on 13 September 2026. Transparent PNG originals were exported to 720 × 480 WebP for delivery. These are decorative illustrations, not photographs of restaurant orders or calculated serving sizes.
+- `home-flat-tools.svg` and `home-flat-finder.svg`: flat compositions reusing the existing `home-meal-bowl.svg` artwork and calculator/search symbols from `tools/refine_colour_system.py`. Reproduce with `tools/compose_home_illustrations.py`. These decorative diagrams match the homepage hero and do not represent measured portions.
+- `home-food-tools.webp` and `home-finder-help.webp`: unused previous illustrations generated with OpenAI image generation on 13 September 2026; replaced by the matching flat vector compositions above.
 
 Reviewed 10 September 2026. This is a maintenance record, not a blanket rights clearance.
 
