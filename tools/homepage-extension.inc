@@ -4,7 +4,7 @@
     <div class="home-everyday-copy">
       <h2 id="home-everyday-title">Eating in?<br>Make the numbers easier.</h2>
       <a class="btn action-link" href="calculators.html">Explore the calculators</a>
-      <img class="home-section-illustration" src="images/home-flat-tools.svg" alt="" width="600" height="400" loading="lazy" decoding="async">
+      <img class="home-section-illustration" src="images/home-kitchen-prep.webp" alt="" width="600" height="400" loading="lazy" decoding="async">
     </div>
     <div class="home-everyday-tools">
       <article class="home-everyday-tool">
@@ -26,7 +26,7 @@
   <div class="container home-finder-help-layout">
     <div>
       <h2 id="home-finder-help-title">Using the meal finder</h2>
-      <img class="home-section-illustration" src="images/home-flat-finder.svg" alt="" width="600" height="400" loading="lazy" decoding="async">
+      <img class="home-section-illustration" src="images/home-restaurant-finder.webp" alt="" width="600" height="400" loading="lazy" decoding="async">
     </div>
     <div class="home-finder-questions">
       <details>

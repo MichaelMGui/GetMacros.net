@@ -1,6 +1,8 @@
 # Image inventory
 
-- `home-flat-tools.svg` and `home-flat-finder.svg`: flat compositions reusing the existing `home-meal-bowl.svg` artwork and calculator/search symbols from `tools/refine_colour_system.py`. Reproduce with `tools/compose_home_illustrations.py`. These decorative diagrams match the homepage hero and do not represent measured portions.
+- `home-hero-bowl.svg`: the original homepage bowl with a green napkin, matching the current illustration palette.
+- `home-kitchen-prep.webp` and `home-restaurant-finder.webp`: original flat-style kitchen and restaurant scenes generated with OpenAI image generation on 13 September 2026. Exported to 720 × 480 WebP with transparency. Decorative scenes, not photographs or representations of actual restaurants or measured portions.
+- `home-flat-tools.svg` and `home-flat-finder.svg`: unused earlier compositions that repeated the hero bowl, replaced by the distinct kitchen and restaurant scenes.
 - `home-food-tools.webp` and `home-finder-help.webp`: unused previous illustrations generated with OpenAI image generation on 13 September 2026; replaced by the matching flat vector compositions above.
 
 Reviewed 10 September 2026. This is a maintenance record, not a blanket rights clearance.

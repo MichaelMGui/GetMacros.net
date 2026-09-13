@@ -790,3 +790,5 @@ html[data-theme][lang] body.site-v3.home-studio[data-design-family] main#main-co
 html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-art-caption span:nth-child(n){background:#8bddb1!important;color:#163c29!important}
 html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-intro-actions a.home-text-link.btn.action-link{background:#52645b!important;color:#f4f7f5!important;border:0!important;box-shadow:0 3px 0 #202d26!important}
 html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-intro-actions a.home-text-link.btn.action-link:hover{background:#60766a!important}
+/* A green-charcoal hero surface complements the shared illustration palette. */
+html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-intro-grid{background:#344039!important}

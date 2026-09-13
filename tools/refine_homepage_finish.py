@@ -7,7 +7,7 @@ def refine_homepage(text):
     text = text.replace('Meals from 15 restaurant chains, matched to your appetite and goals.',
                         'Find meals from 15 restaurant chains that fit your appetite and goals.')
     text = re.sub(r'<div class="home-play-art"><img[^>]*>(?:<div class="home-art-caption"[^>]*>.*?</div>)?</div>',
-        '<div class="home-play-art"><img src="images/home-meal-bowl.svg" width="600" height="460" '
+        '<div class="home-play-art"><img src="images/home-hero-bowl.svg" width="600" height="460" '
         'alt="An illustrated meal bowl with grilled chicken, rice and colourful vegetables" fetchpriority="high">'
         '<div class="home-art-caption" aria-hidden="true"><span>Protein</span><span>Carbs</span><span>Fats</span></div></div>',
         text, count=1, flags=re.S)
