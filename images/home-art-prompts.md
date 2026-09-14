@@ -1,0 +1,15 @@
+# Upright homepage artwork
+
+Created 14 September 2026 with the built-in `image_gen` tool in image-edit mode. The existing homepage bowl was rendered from SVG as a style reference. Each lower scene was edited separately to preserve its distinct subject. Outputs were resized to 720 × 480 and exported as transparent WebP; no CSS rotation is applied.
+
+Published assets:
+- `home-kitchen-upright.webp`
+- `home-restaurant-upright.webp`
+
+## Kitchen final editing prompt
+
+Use case: style-transfer and background-extraction. Image 1 is the EDIT TARGET: upright kitchen preparation vignette. Image 2 is STYLE REFERENCE ONLY, showing the desired clean flat vector-like rendering. Keep Image 1's level composition, horizontal board edge, upright card and scale, vegetables and tomatoes. Change only its rendering: eliminate ALL glow and blurry halos, all gradients and texture, all lighting, all depth/bevel shading. Render each shape as a crisp simple opaque flat fill, like Image 2. The chopping board should be one simple pale-green flat rounded horizontal shape. Maintain simplified large rounded silhouettes with minimal interior strokes and this muted palette: ivory #FFFDF3, leaf #619649, dark green #387341, pale leaf #D5DFC5, small golden #F2D48A and tomato #DB7152 accents. The entire background around the objects must have ACTUAL ZERO ALPHA TRANSPARENCY right up to crisp antialiased cutout edges. No black background, no white background, no glow on transparency, no soft shadow, no ambient lighting, no vignette, no hazy pixels around objects, no visible rectangular background. Keep the full scene centered with breathing space in landscape 3:2. No bowl, no meal plate, no text, no logo, no border.
+
+## Restaurant final editing prompt
+
+Use case: style-transfer. Image 1 is the edit target restaurant. Image 2 is style reference only. Correct ONLY the rendering style and background of the restaurant to match the very simple flat opaque cutout artwork in image 2. Preserve the upright restaurant composition, horizontal roof and awning, vertical walls, mounted upright menu, door and serving window, small location pin. Remove the extra little plant inside the window so only the exterior plant remains. CRITICAL: REMOVE EVERY GLOW AND ALL BLURRED EDGES AND GRADIENTS. This must be crisp 2D solid-color artwork, absolutely no lighting effects. Uniform solid color fills inside each shape. Exterior must be entirely transparent with clean alpha exactly around silhouettes, no hazy halo, no translucent fog, no colored atmosphere, no background rectangle. Make the location pin smaller. Simplify interior strokes. Cream #FFFDF3 facade, leaf #619649, dark green #387341, pale leaf #D5DFC5, restrained gold #F2D48A. No realistic shading, no texture, no bevels, no 3D. No bowl or food copied from reference. No text logos. Keep landscape 3:2 format. All roof, counter and base lines perfectly level, all walls straight vertical. The single final image should look like a clean flat vector illustration exported on transparent background.

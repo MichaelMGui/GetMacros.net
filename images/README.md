@@ -1,7 +1,8 @@
 # Image inventory
 
 - `home-hero-bowl.svg`: the original homepage bowl with a green napkin, matching the current illustration palette.
-- `home-kitchen-prep.webp` and `home-restaurant-finder.webp`: original flat-style kitchen and restaurant scenes generated with OpenAI image generation on 13 September 2026. Exported to 720 × 480 WebP with transparency. Decorative scenes, not photographs or representations of actual restaurants or measured portions.
+- `home-kitchen-upright.webp` and `home-restaurant-upright.webp`: upright kitchen and restaurant scenes edited with the built-in OpenAI image-generation tool on 14 September 2026, using `home-hero-bowl.svg` as the style reference. Exported to 720 × 480 transparent WebP. Decorative illustrations, not actual restaurants or measured portions. See [editing prompts](home-art-prompts.md).
+- `home-kitchen-prep.webp` and `home-restaurant-finder.webp`: unused earlier scenes generated on 13 September 2026, replaced by the upright artwork above.
 - `home-flat-tools.svg` and `home-flat-finder.svg`: unused earlier compositions that repeated the hero bowl, replaced by the distinct kitchen and restaurant scenes.
 - `home-food-tools.webp` and `home-finder-help.webp`: unused previous illustrations generated with OpenAI image generation on 13 September 2026; replaced by the matching flat vector compositions above.
 
