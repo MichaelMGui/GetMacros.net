@@ -54,6 +54,7 @@ python3 tools/refine_trust_finish.py
 python3 tools/refine_colour_system.py
 python3 tools/refine_focused_calculators.py
 python3 tools/optimize_loading.py
+python3 tools/refine_search_visibility.py
 python3 tools/bundle_styles.py
 # Last, so it sees the final head of every page: rewrite each local CSS and
 # JS link with a hash of that file, so a changed asset always busts caches
@@ -66,3 +67,4 @@ python3 tools/audit_visual_contract.py
 python3 tools/test_workspace_contract.py
 python3 tools/test_homepage_extension.py
 python3 tools/test_submission_content.py
+python3 tools/test_search_visibility.py

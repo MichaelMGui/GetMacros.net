@@ -145,8 +145,7 @@ def build_home(meals: list[dict]) -> None:
     schema = [
         {"@context": "https://schema.org", "@type": "WebSite", "name": "GetMacros.net",
          "url": f"{SITE}/", "description": meta,
-         "potentialAction": {"@type": "SearchAction", "target": f"{SITE}/search.html?q={{search_term_string}}",
-                             "query-input": "required name=search_term_string"}},
+         },
         {"@context": "https://schema.org", "@type": "Organization", "name": "GetMacros.net",
          "url": f"{SITE}/", "email": "getmacros.net@outlook.com",
          "publishingPrinciples": f"{SITE}/editorial-policy.html"},

@@ -792,3 +792,21 @@ html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#
 html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-intro-actions a.home-text-link.btn.action-link:hover{background:#60766a!important}
 /* A green-charcoal hero surface complements the shared illustration palette. */
 html[data-theme="dark"][lang] body.site-v3.home-studio[data-design-family] main#main-content#main-content#main-content#main-content .home-intro-grid{background:#344039!important}
+/* Meal comparisons: allow full order names on phones and use wide screens. */
+html[data-theme][lang] body.site-v3.hub-finish[data-design-family] main#main-content#main-content#main-content #rankings .ranking-list {
+  width:100%;max-width:none!important;
+}
+@media (min-width:900px) {
+  html[data-theme][lang] body.site-v3.hub-finish[data-design-family] main#main-content#main-content#main-content #rankings .ranking-list {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media (max-width:560px) {
+  html[data-theme][lang] body.site-v3.hub-finish[data-design-family] main#main-content#main-content#main-content #rankings .ranking-list li {
+    grid-template-columns:minmax(0,1fr)!important;gap:8px!important;
+  }
+  html[data-theme][lang] body.site-v3.hub-finish[data-design-family] main#main-content#main-content#main-content #rankings .ranking-list li > span {
+    justify-self:start;text-align:left!important;white-space:normal!important;
+    padding:4px 9px;border-radius:8px;background:var(--quiet-green-soft);color:var(--quiet-ink)!important;
+  }
+}
