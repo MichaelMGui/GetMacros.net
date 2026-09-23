@@ -1,5 +1,14 @@
 # Image inventory
 
+## Active botanical assets (23 September 2026)
+
+- `botanical-mark.svg` and root `favicon.svg`: original sprout vector drawn in this repository. `tools/render-botanical-brand.cjs` creates matching app/Apple touch icons and `og-default.png`; no third-party art is used in these derivatives.
+- The small homepage flower and inline line icons are original path compositions in `tools/editorial-home.inc` and `tools/botanical_presentation.py`. They are decorative and excluded from the accessibility tree.
+- Active fonts: locally hosted Inter 400/700 and Fraunces 400, with OFL notices in `fonts/LICENSE-inter.txt` and `fonts/LICENSE-fraunces.txt`.
+- The existing credited Anna Pelzer food photograph below is retained with its recorded Unsplash licence. It is food inspiration, not an exact restaurant order.
+- Historic assets below are not a blanket rights clearance.
+
+
 - `editorial-salad.webp`: current publication homepage photograph by Anna Pelzer, [Bowl of vegetable salads](https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0), downloaded 22 September 2026 under the [Unsplash License](https://unsplash.com/license). Local 1100-pixel WebP; visible credit. Food inspiration, not an official restaurant order or calculated portion.
 - The September 2026 publication build uses `css/publication.css` for inline vector colours and preserves the neutral restaurant initials. Older homepage scenes below are historical assets, not the current homepage.
 

@@ -1,0 +1,32 @@
+{
+  "scope": "Three cold local lab runs per page; 390px Edge, 4x CPU, 100ms, 1.6Mbps; not field data or INP. See report.md.",
+  "medians": [
+    {
+      "page": "index.html",
+      "before_lcp_ms": 1984,
+      "after_lcp_ms": 1120,
+      "before_resource_bytes": 332165,
+      "after_resource_bytes": 131909,
+      "after_max_cls": 0,
+      "after_max_long_task_blocking_ms": 0
+    },
+    {
+      "page": "calculators.html",
+      "before_lcp_ms": 1116,
+      "after_lcp_ms": 1192,
+      "before_resource_bytes": 134425,
+      "after_resource_bytes": 150926,
+      "after_max_cls": 0,
+      "after_max_long_task_blocking_ms": 0
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "before_lcp_ms": 1468,
+      "after_lcp_ms": 1596,
+      "before_resource_bytes": 197511,
+      "after_resource_bytes": 218540,
+      "after_max_cls": 0,
+      "after_max_long_task_blocking_ms": 0
+    }
+  ]
+}

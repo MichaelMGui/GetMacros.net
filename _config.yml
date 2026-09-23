@@ -1,0 +1,6 @@
+# Keep development reports, test tools, and historical mockups off GitHub Pages.
+# Public HTML, assets, verification files, CNAME and ads.txt remain publishable.
+exclude:
+  - design
+  - docs
+  - tools

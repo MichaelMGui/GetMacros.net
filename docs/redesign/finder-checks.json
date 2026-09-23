@@ -1,0 +1,20 @@
+{
+  "checks": 20,
+  "engines": [
+    "Chromium",
+    "WebKit"
+  ],
+  "widths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "scope": "Numeric filters, null exclusion, invalid limits, URL reload, focus retention, reset and overflow",
+  "failures": []
+}

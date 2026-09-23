@@ -9,9 +9,10 @@ import json,re
 from normalize_calculator_layouts import Document
 from publication_examples import EXAMPLES
 from build_restaurant_pages import parse_meals
+from botanical_presentation import transform, LOGO as BOTANICAL_LOGO
 
 ROOT=Path(__file__).resolve().parents[1]
-LOGO='<svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="2.5"/><path d="M18 4v28M18 18h14" stroke="currentColor" stroke-width="2.5"/><path d="M8 18c0-5 3-8 6-8v16c-3 0-6-3-6-8Z" fill="currentColor"/></svg>'
+LOGO=BOTANICAL_LOGO
 CHAIN_SLUG={'CAVA':'cava','Chick-fil-A':'chick-fil-a','Chipotle':'chipotle','Dunkin’':'dunkin','Jersey Mike’s':'jersey-mikes','KFC':'kfc','McDonald’s':'mcdonalds','Panda Express':'panda-express','Panera':'panera','Popeyes':'popeyes','Starbucks':'starbucks','Subway':'subway','Sweetgreen':'sweetgreen','Taco Bell':'taco-bell','Wendy’s':'wendys'}
 CHAIN_PAGE={'Dunkin’':'dunkin-healthy-breakfast-macros.html','Jersey Mike’s':'jersey-mikes-healthy-subs-macros.html','Starbucks':'starbucks-healthy-food-meals-macros.html'}
 
@@ -98,6 +99,7 @@ def run():
    section='<section class="search-meals container" id="search-meals" hidden aria-live="polite"><div class="editorial-section-head"><div><h2>Matching restaurant meals</h2><p data-meal-count></p></div></div><div class="search-meal-list" id="search-meal-list"></div><p data-meal-more hidden>Showing the first 12 matches. <a href="restaurant-meal-finder.html">Use the meal finder</a> to narrow your choices.</p></section>'
    if 'id="search-meals"' not in text:text=text.replace('<section class="search-start"',section+'<section class="search-start"',1)
    if 'js/search-meals.js' not in text:text=text.replace('</body>','<script src="js/meal-data.js" defer></script><script src="js/search-meals.js" defer></script></body>')
+  text=transform(text,path.name)
   # Keep every retained article's factual body and current verification date.
   text=re.sub(r'\n{3,}','\n\n',text)
   path.write_text(text,encoding='utf-8')
@@ -109,7 +111,7 @@ def run():
  sitemap=(ROOT/'sitemap.xml').read_text(encoding='utf-8')
  for name in [*EXAMPLES,'','blog.html','search.html','calculators.html','restaurant-meal-finder.html','privacy.html']:
   url='https://getmacros.net/'+name
-  sitemap=re.sub(r'(<loc>'+re.escape(url)+r'</loc><lastmod>)[^<]+',r'\g<1>2026-09-23' if name in ('','blog.html','search.html') else r'\g<1>2026-09-22',sitemap)
+  sitemap=re.sub(r'(<loc>'+re.escape(url)+r'</loc><lastmod>)[^<]+',r'\g<1>2026-09-23' if name in ('','blog.html','search.html','serving-size-vs-portion-size.html') else r'\g<1>2026-09-22',sitemap)
  (ROOT/'sitemap.xml').write_text(sitemap,encoding='utf-8')
  print('Publication layout applied to all retained pages; publisher verification retained, ad requests paused.')
 

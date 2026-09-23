@@ -1,0 +1,590 @@
+{
+  "pages": [
+    {
+      "route": "/404.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/about.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/accessibility.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/are-diet-drinks-bad-for-you.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/articles.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/best-fast-food-restaurants-for-your-goals.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/blog.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/body-recomposition-explained.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/budget-meal-builder.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/calculators.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/calories-on-rest-days.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/calories-vs-macros-what-matters-more.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/can-you-build-muscle-in-a-calorie-deficit.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/carbohydrate-label-portion-tool.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/carbs.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/cava-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/chick-fil-a-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/contact.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/corrections.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/cutting-bulking-maintenance-explained.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/does-creatine-cause-hair-loss.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/dunkin-healthy-breakfast-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/editorial-policy.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/fats.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/high-protein-foods-list.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-many-calories-should-i-eat-a-day.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-much-fiber-per-day.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-much-protein-can-your-body-absorb.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-much-protein-per-day.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-much-sodium-per-day.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-to-build-a-balanced-meal-with-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-to-calculate-macros-by-hand.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-to-calculate-maintenance-calories.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-to-eat-out-without-wrecking-your-goal.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-to-hit-protein-goal-on-budget.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/how-to-read-a-nutrition-label.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/index.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/jersey-mikes-healthy-subs-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/kfc-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/macros-for-muscle-gain.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/macros-for-weight-loss.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/mcdonalds-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/nutrition-label-comparison-tool.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/panda-express-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/panera-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/popeyes-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/privacy.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/protein.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/search.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/sodium-label-comparison-tool.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/sources.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/starbucks-healthy-food-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/subway-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/sweat-rate-calculator.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/sweetgreen-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/taco-bell-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/terms.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/weight-goal-timeline-calculator.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/wendys-healthy-meals-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/what-are-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/what-is-a-calorie-deficit.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/what-to-eat-after-a-workout.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/what-to-eat-before-a-workout.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/when-to-recalculate-calories-and-macros.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    },
+    {
+      "route": "/why-did-i-gain-weight-overnight.html",
+      "styles": [
+        "css/publication.css"
+      ],
+      "inline_styles": 0,
+      "old_sprites": 0
+    }
+  ],
+  "removed_stylesheets": 34,
+  "policy": "One active replacement stylesheet; inactive historical generators and development previews are preserved but excluded from publication. No data/application script deleted."
+}

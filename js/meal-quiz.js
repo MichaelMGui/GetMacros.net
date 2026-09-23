@@ -36,7 +36,7 @@
   };
   function chainLogo(name) {
     var slug = CHAIN_LOGO[chainKey(name)] || "chipotle";
-    return "images/restaurant-marks/" + slug + ".svg?v=palm1";
+    return "images/restaurant-marks/" + slug + ".svg?v=botanical1";
   }
   var chains = [];
   meals.forEach(function (m) { if (chains.indexOf(m.chain) === -1) chains.push(m.chain); });
@@ -67,14 +67,14 @@
   ];
   var state = { goal: [], size: [], diet: [], meal: [], chain: [] };
   var noPreference = { goal: false, size: false, diet: false, meal: false, chain: false };
-  var step = 0, includeIncomplete = false, maxCal = null, minProtein = null, sortBy = 'match', SAVED_KEY = "getmacros-saved-meals-v1", saved = readSaved();
+  var step = 0, includeIncomplete = false, maxCal = null, minProtein = null, minFiber = null, maxSodium = null, sortBy = 'match', SAVED_KEY = "getmacros-saved-meals-v1", saved = readSaved();
   var GOAL_LABEL = { energy: "weight gain", light: "weight loss", protein: "high protein", fibre: "high fiber", lowsodium: "lower sodium" };
   var DIET_LABEL = { vegetarian: "vegetarian", plant: "plant-based", gluten: "gluten-aware" };
 
   function esc(value) { return String(value).replace(/[&<>\"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;" }[c]; }); }
   function list(items) { return items.length < 2 ? (items[0] || "") : items.slice(0, -1).join(", ") + " and " + items[items.length - 1]; }
   function has(m, tag) { return m.t.indexOf(tag) !== -1; }
-  function complete(m) { return m.cal !== null && m.p !== null && m.f !== null && m.na !== null; }
+  function complete(m) { return [m.cal,m.p,m.f,m.na].every(Number.isFinite); }
   function mealKey(m) { return m.chain + "||" + m.name; }
   function readSaved() { try { var value = JSON.parse(localStorage.getItem("getmacros-saved-meals-v1") || "[]"); return Array.isArray(value) ? value : []; } catch (error) { return []; } }
   function toggleSaved(key) { var i = saved.indexOf(key); if (i === -1) saved.push(key); else saved.splice(i, 1); try { localStorage.setItem(SAVED_KEY, JSON.stringify(saved)); } catch (error) {} updateSavedUi(); }
@@ -86,13 +86,17 @@
   function numberInRange(value,min,max){var n=Number(value);return value!==null && value!=='' && Number.isFinite(n) && n>=min && n<=max ? n : null;}
   maxCal=numberInRange(qs.get('maxCal'),150,2500);
   minProtein=numberInRange(qs.get('minProtein'),0,200);
-  if(maxCal!==null||minProtein!==null)deepLinked=true;
+  minFiber=numberInRange(qs.get('minFiber'),0,50);
+  maxSodium=numberInRange(qs.get('maxSodium'),0,10000);
+  if(maxCal!==null||minProtein!==null||minFiber!==null||maxSodium!==null)deepLinked=true;
   if(['calories','protein','match'].indexOf(qs.get('sort'))!==-1)sortBy=qs.get('sort');
 
   function eligible(m) {
     if (!includeIncomplete && !complete(m)) return false;
-    if(maxCal!==null && (m.cal===null||m.cal>maxCal))return false;
-    if(minProtein!==null && (m.p===null||m.p<minProtein))return false;
+    if(maxCal!==null && (!Number.isFinite(m.cal)||m.cal>maxCal))return false;
+    if(minProtein!==null && (!Number.isFinite(m.p)||m.p<minProtein))return false;
+    if(minFiber!==null && (m.f==null||m.f<minFiber))return false;
+    if(maxSodium!==null && (m.na==null||m.na>maxSodium))return false;
     if (!state.goal.every(function(goal) {
       var nutrient = {protein:'p',light:'cal',energy:'cal',fibre:'f',lowsodium:'na'}[goal];
       return !nutrient || m[nutrient] !== null;
@@ -146,7 +150,7 @@
     var key = mealKey(m), matches = matchCount(m);
     var reason = !state.goal.length || matches < state.goal.length ? why(m) : "";
     var badge = !state.goal.length ? "Good starting point" : matches === state.goal.length ? "Matches every goal" : "Matches " + matches + " of " + state.goal.length;
-    return '<article class="meal-card' + (top ? " top-match" : "") + '"><div class="meal-card-top"><span class="meal-chain"><img src="' + esc(chainLogo(m.chain)) + '" alt="" width="36" height="36">' + esc(m.chain) + '</span><span class="meal-rank">' + badge + '</span></div><h3>' + esc(m.name.replace("High-protein bulking order: ", "")) + '</h3><p class="meal-portion">' + esc(m.region || 'U.S.') + ' menu · ' + esc(m.serving || '1 listed order') + '</p><div class="meal-stats">' + metric(m.cal, "", "calories") + metric(m.p, "g", "protein") + metric(m.c, "g", "carbs") + metric(m.fat, "g", "fat") + '</div><p class="meal-reason">' + esc(why(m)) + '</p><details><summary>Order details &amp; sources</summary><p>' + esc(m.why) + '</p><p>Fiber: ' + (m.f == null ? 'not verified' : m.f + ' g') + ' · Sodium: ' + (m.na == null ? 'not verified' : m.na + ' mg') + '.</p><p>Missing values are not zero. Custom portions, sauces and regional recipes can change nutrition; check allergens directly with the restaurant.</p>' + (m.source ? '<p class="meal-source"><a href="' + esc(m.source) + '">Official nutrition source</a> · Record checked ' + esc(m.checked) + '</p>' : '') + '</details><div class="meal-card-actions"><a class="meal-link btn action-link" href="' + esc(m.url) + '">View menu</a><button class="meal-save" type="button" data-save="' + esc(key) + '" aria-pressed="' + (saved.indexOf(key) !== -1) + '">' + (saved.indexOf(key) !== -1 ? "Saved ✓" : "Save meal") + '</button></div></article>';
+    return '<article class="meal-card' + (top ? " top-match" : "") + '"><div class="meal-card-top"><span class="meal-chain"><img src="' + esc(chainLogo(m.chain)) + '" alt="" width="36" height="36">' + esc(m.chain) + '</span><span class="meal-rank">' + badge + '</span></div><h3>' + esc(m.name.replace("High-protein bulking order: ", "")) + '</h3><p class="meal-portion">' + esc(m.region || 'U.S.') + ' menu · ' + esc(m.serving || '1 listed order') + '</p><div class="meal-stats">' + metric(m.cal, "", "calories") + metric(m.p, "g", "protein") + metric(m.c, "g", "carbs") + metric(m.fat, "g", "fat") + '</div><p class="meal-reason">' + esc(m.why) + '</p><details><summary>Order details &amp; sources</summary><p>Fiber: ' + (m.f == null ? 'not verified' : m.f + ' g') + ' · Sodium: ' + (m.na == null ? 'not verified' : m.na + ' mg') + '.</p><p>Missing values are not zero. Custom portions, sauces and regional recipes can change nutrition; check allergens directly with the restaurant.</p>' + (m.source ? '<p class="meal-source"><a href="' + esc(m.source) + '">Official nutrition source</a> · Record checked ' + esc(m.checked) + '</p>' : '') + '</details><div class="meal-card-actions"><a class="meal-link btn action-link" href="' + esc(m.url) + '">View menu</a><button class="meal-save" type="button" data-save="' + esc(key) + '" aria-pressed="' + (saved.indexOf(key) !== -1) + '">' + (saved.indexOf(key) !== -1 ? "Saved ✓" : "Save meal") + '</button></div></article>';
   }
   function optionMarkup(s) {
     var type = s.single ? "radio" : "checkbox";
@@ -196,14 +200,14 @@
   function summary(count) { return count + " meals ranked for your choices. Check each card for goal matches."; }
   function comparisonMarkup(results) {
     if (results.length < 2) return '';
-    return '<section class="meal-comparison" aria-labelledby="meal-comparison-title"><div class="comparison-heading"><h3 id="meal-comparison-title">Compare two meals</h3><p>Pick two of your matches. See the numbers side by side.</p></div><div class="comparison-pickers">' + [0,1].map(function(slot){return '<div class="comparison-picker"><span class="comparison-label">Meal '+(slot+1)+'</span><details data-compare="'+slot+'" data-value="'+slot+'"><summary aria-label="Choose meal '+(slot+1)+'"></summary><div class="comparison-menu"><label class="comparison-search">Find a meal<input type="search" data-compare-search placeholder="Restaurant or meal" autocomplete="off"></label><div class="comparison-choices" role="group" aria-label="Meal '+(slot+1)+' choices">'+results.map(function(m,i){return '<button type="button" data-compare-pick="'+i+'"><b>'+esc(m.chain)+'</b><span>'+esc(m.name.replace('High-protein bulking order: ',''))+'</span></button>';}).join('')+'</div><p class="comparison-empty" hidden>No matches. Try another name.</p></div></details></div>';}).join('')+'</div><div class="comparison-output" aria-live="polite"></div></section>';
+    return '<section class="meal-comparison" aria-labelledby="meal-comparison-title"><div class="comparison-heading"><h3 id="meal-comparison-title">Compare two meals</h3><p>Pick two of your matches. See the numbers side by side.</p></div><div class="comparison-pickers">' + [0,1].map(function(slot){return '<div class="comparison-picker"><span class="comparison-label">Meal '+(slot+1)+'</span><details data-compare="'+slot+'" data-value="'+slot+'"><summary aria-label="Choose meal '+(slot+1)+'"></summary><div class="comparison-menu"><label class="comparison-search">Find a meal<input type="search" data-compare-search placeholder="Restaurant or meal" autocomplete="off"></label><div class="comparison-choices" role="group" aria-label="Meal '+(slot+1)+' choices">'+results.map(function(m,i){return '<button type="button" data-compare-pick="'+i+'"><b>'+esc(m.chain)+'</b><span>'+esc(m.name.replace('High-protein bulking order: ',''))+'</span></button>';}).join('')+'</div><p class="comparison-empty" hidden>No matches. Try another name.</p></div></details></div>';}).join('')+'</div><div class="comparison-output" aria-live="polite" tabindex="0" role="region" aria-label="Meal nutrition comparison"></div></section>';
   }
   function updateComparison() {
     var pickers=root.querySelectorAll('[data-compare]');
     if(pickers.length!==2)return;
     var pair=Array.from(pickers).map(function(picker){
       var m=root._matches[Number(picker.dataset.value)];
-      picker.querySelector('summary').innerHTML='<span class="comparison-brand"><img src="'+esc(chainLogo(m.chain))+'" width="36" height="36" alt=""><b>'+esc(m.chain)+'</b></span><span class="comparison-meal-name">'+esc(m.name.replace('High-protein bulking order: ',''))+'</span><span class="comparison-change">Change meal <span aria-hidden="true">⌄</span></span>';
+      picker.querySelector('summary').innerHTML='<span class="comparison-brand"><img src="'+esc(chainLogo(m.chain))+'" width="36" height="36" alt=""><b>'+esc(m.chain)+'</b></span><span class="comparison-meal-name">'+esc(m.name.replace('High-protein bulking order: ',''))+'</span><small class="meal-portion">'+esc(m.region||'U.S.')+' · '+esc(m.serving||'1 listed order')+'</small><span class="comparison-change">Change meal <span aria-hidden="true">⌄</span></span>';
       picker.querySelectorAll('[data-compare-pick]').forEach(function(button){button.setAttribute('aria-pressed',button.dataset.comparePick===picker.dataset.value?'true':'false');});
       return m;
     });
@@ -212,26 +216,41 @@
     output.innerHTML='<table><caption>Per listed order; see each meal’s portion and customization notes</caption><thead><tr><td></td><th scope="col">Meal 1</th><th scope="col">Meal 2</th></tr></thead><tbody>'+[['cal','Calories',''],['p','Protein',' g'],['c','Carbs',' g'],['fat','Fat',' g'],['f','Fiber',' g'],['na','Sodium',' mg']].map(function(row){return '<tr><th scope="row">'+row[1]+'</th>'+pair.map(function(m){return '<td>'+(m[row[0]]==null?'<span class="comparison-missing">Not verified</span>':'<span class="comparison-number">'+m[row[0]].toLocaleString()+'</span>'+(row[2]?'<small class="comparison-unit">'+row[2]+'</small>':''))+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
   }
   var renderingResults=false;
+  function nutrientControls(){return '<label>Minimum fiber (g)<input type="number" min="0" max="50" inputmode="numeric" data-min-fiber placeholder="Any" value="'+(minFiber===null?'':minFiber)+'"></label><label>Maximum sodium (mg)<input type="number" min="0" max="10000" inputmode="numeric" data-max-sodium placeholder="Any" value="'+(maxSodium===null?'':maxSodium)+'"></label>';}
+  function activeChoices(){var values=[];STEPS.filter(function(s){return s.key!=="goal";}).forEach(function(s){state[s.key].forEach(function(v){var option=s.options.find(function(o){return o[0]===v;});values.push(esc(option?option[1]:v));});});if(maxCal!==null)values.push('Up to '+maxCal+' calories');if(minProtein!==null)values.push(minProtein+' g+ protein');if(minFiber!==null)values.push(minFiber+' g+ fiber');if(maxSodium!==null)values.push('Up to '+maxSodium+' mg sodium');return values.length?'<p class="active-filter-summary">'+values.join(' · ')+'</p>':'';}
   function renderResults() {
     if(renderingResults)return;
     renderingResults=true;
+    var activeControl=['data-max-cal','data-min-protein','data-min-fiber','data-max-sodium','data-sort'].find(function(a){return root.contains(document.activeElement)&&document.activeElement.hasAttribute(a);});
     try{
     var layout = root.closest(".match-intro-grid");
     if (layout) layout.classList.add("results-mode");
     var results = meals.filter(eligible).sort(function (a, b) {if(sortBy==='calories')return (a.cal===null?Infinity:a.cal)-(b.cal===null?Infinity:b.cal)||score(b)-score(a);if(sortBy==='protein')return (b.p===null?-Infinity:b.p)-(a.p===null?-Infinity:a.p)||score(b)-score(a);return score(b)-score(a);});
     var incompleteCount = meals.filter(function (m) { return !complete(m); }).length;
     if (!results.length) {
-      root.innerHTML = '<div class="quiz-card empty-results"><h2 tabindex="-1">No meals for that combination.</h2><p>Try a higher calorie limit, lower protein target or another restaurant.</p><div class="empty-actions"><button type="button" class="btn btn-primary" data-restart="1">Edit choices</button><button type="button" class="btn" data-reset="1">Start over</button></div></div>';
+      root.innerHTML = '<div class="quiz-card empty-results"><h2 tabindex="-1">No meals for that combination.</h2><p>Try relaxing a nutrient limit or choosing another restaurant.</p><div class="empty-actions"><button type="button" class="btn btn-primary" data-restart="1">Edit choices</button><button type="button" class="btn" data-reset="1">Start over</button></div></div>';
+      root.querySelector('.empty-results').insertAdjacentHTML('beforeend',activeChoices()+'<div class="result-refine"><label>Maximum calories<input type="number" min="150" max="2500" inputmode="numeric" data-max-cal value="'+(maxCal===null?'':maxCal)+'" placeholder="Any"></label><label>Minimum protein (g)<input type="number" min="0" max="200" inputmode="numeric" data-min-protein value="'+(minProtein===null?'':minProtein)+'" placeholder="Any"></label>'+nutrientControls()+'</div>');
       announce("No meals match that exact combination. Change an answer to continue."); syncUrl(); return;
     }
     var shown = results.slice(0, 5);
-    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="result-refine" aria-label="Refine meals"><label>Maximum calories<input type="number" min="150" max="2500" step="10" inputmode="numeric" data-max-cal placeholder="Any" value="'+(maxCal===null?'':maxCal)+'"></label><label>Minimum protein (g)<input type="number" min="0" max="200" step="1" inputmode="numeric" data-min-protein placeholder="Any" value="'+(minProtein===null?'':minProtein)+'"></label><label>Sort meals<select data-sort><option value="match"'+(sortBy==='match'?' selected':'')+'>Best match</option><option value="calories"'+(sortBy==='calories'?' selected':'')+'>Lowest calories</option><option value="protein"'+(sortBy==='protein'?' selected':'')+'>Most protein</option></select></label></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + comparisonMarkup(results) + '<div class="results-footer"><details class="result-options"><summary>Nutrition data</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with missing numbers</b><small>' + incompleteCount + ' meals are hidden because our records lack calories, protein, fiber or sodium.</small></span></label></div></details><button type="button" class="btn btn-ghost" data-reset="1">Reset preferences</button><button type="button" class="btn btn-ghost" data-share="1">Share these results</button></div></div>';
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="result-refine" aria-label="Refine meals"><label>Maximum calories<input type="number" min="150" max="2500" step="1" inputmode="numeric" data-max-cal placeholder="Any" value="'+(maxCal===null?'':maxCal)+'"></label><label>Minimum protein (g)<input type="number" min="0" max="200" step="1" inputmode="numeric" data-min-protein placeholder="Any" value="'+(minProtein===null?'':minProtein)+'"></label><label>Sort meals<select data-sort><option value="match"'+(sortBy==='match'?' selected':'')+'>Best match</option><option value="calories"'+(sortBy==='calories'?' selected':'')+'>Lowest calories</option><option value="protein"'+(sortBy==='protein'?' selected':'')+'>Most protein</option></select></label></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + comparisonMarkup(results) + '<div class="results-footer"><details class="result-options"><summary>Nutrition data</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with missing numbers</b><small>' + incompleteCount + ' meals are hidden because our records lack calories, protein, fiber or sodium.</small></span></label></div></details><button type="button" class="btn btn-ghost" data-reset="1">Reset preferences</button><button type="button" class="btn btn-ghost" data-share="1">Share these results</button></div></div>';
+    root.querySelector('.results-heading').insertAdjacentHTML('afterend',activeChoices());
+    root.querySelector('.result-refine').insertAdjacentHTML('afterend','<details class="extra-nutrients"'+(minFiber!==null||maxSodium!==null?' open':'')+'><summary>Fiber and sodium limits</summary><div class="nutrient-fields">'+nutrientControls()+'</div><p class="clarity-hint">Meals with unknown values cannot match an active numeric limit.</p></details>');
     root._matches = results; updateComparison();
     root._rest = results.slice(5); root._total=results.length; announce(summary(results.length)); syncUrl(); updateSavedUi();
-    }finally{renderingResults=false;}
+    }finally{renderingResults=false;if(activeControl){var replacement=root.querySelector('['+activeControl+']');if(replacement)replacement.focus({preventScroll:true});}}
   }
-  function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0");if(maxCal!==null)url.searchParams.set('maxCal',maxCal);if(minProtein!==null)url.searchParams.set('minProtein',minProtein);if(sortBy!=='match')url.searchParams.set('sort',sortBy); history.replaceState(null, "", url); }
-  function shareResults(button) { var data = { title: "My GetMacros meal matches", text: "Fast-food options matched to my goals and preferences.", url: location.href }; if (navigator.share) { navigator.share(data).catch(function () {}); return; } if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(function () { button.textContent = "Link copied ✓"; }); }
+  function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0");if(maxCal!==null)url.searchParams.set('maxCal',maxCal);if(minProtein!==null)url.searchParams.set('minProtein',minProtein);if(minFiber!==null)url.searchParams.set('minFiber',minFiber);if(maxSodium!==null)url.searchParams.set('maxSodium',maxSodium);if(sortBy!=='match')url.searchParams.set('sort',sortBy); history.replaceState(null, "", url); }
+  function shareResults(button) {
+    var data = {title:"My GetMacros meal matches",text:"Restaurant meals for these preferences.",url:location.href};
+    function manualCopy(){
+      var existing=root.querySelector('.share-link-field');if(existing)existing.remove();
+      var label=document.createElement('label'),input=document.createElement('input');
+      label.className='share-link-field';label.textContent='Copy this results link';input.type='url';input.readOnly=true;input.value=data.url;label.append(input);button.parentNode.after(label);input.focus({preventScroll:true});input.select();announce('Select and copy the results link.');
+    }
+    function copy(){if(navigator.clipboard)navigator.clipboard.writeText(data.url).then(function(){button.textContent='Link copied';announce('Results link copied.');}).catch(manualCopy);else manualCopy();}
+    if(navigator.share){navigator.share(data).catch(function(error){if(error.name!=='AbortError')copy();});return;}copy();
+  }
 
   // A question change is the one moment when moving the viewport is helpful:
   // the old card can be taller than the next card on a phone. Reposition only
@@ -271,6 +290,9 @@
 
   root.addEventListener("change", function (e) {
     var el = e.target;
+    if(el.matches('.result-refine input,.nutrient-fields input')&&!el.reportValidity())return;
+    if(el.hasAttribute('data-min-fiber')){minFiber=numberInRange(el.value,0,50);renderResults();return;}
+    if(el.hasAttribute('data-max-sodium')){maxSodium=numberInRange(el.value,0,10000);renderResults();return;}
     if(el.hasAttribute('data-max-cal')){maxCal=numberInRange(el.value,150,2500);renderResults();return;}
     if(el.hasAttribute('data-min-protein')){minProtein=numberInRange(el.value,0,200);renderResults();return;}
     if(el.hasAttribute('data-sort')){sortBy=el.value;renderResults();return;}
@@ -333,7 +355,7 @@
       }
       changeQuestion(function(){step += direction; step >= STEPS.length ? renderResults() : renderStep();}, direction);
     }
-    else if (t.dataset.reset) { changeQuestion(function(){STEPS.forEach(function(s){state[s.key]=[];noPreference[s.key]=false;});includeIncomplete=false;maxCal=null;minProtein=null;sortBy='match';step=0;syncUrl();renderStep();}, -1); }
+    else if (t.dataset.reset) { changeQuestion(function(){STEPS.forEach(function(s){state[s.key]=[];noPreference[s.key]=false;});includeIncomplete=false;maxCal=null;minProtein=null;minFiber=null;maxSodium=null;sortBy='match';step=0;syncUrl();renderStep();}, -1); }
     else if (t.dataset.restart) { changeQuestion(function(){step = 0; renderStep();}, -1); }
     else if (t.dataset.more) {
       var next = root._rest.splice(0, 3);

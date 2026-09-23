@@ -1,0 +1,96 @@
+{
+  "environment": "Local Edge, 390x844, cold cache, 100 ms latency, 1.6 Mbps download, 4x CPU slowdown. No production CDN or field data.",
+  "sourceRoot": "C:\\Users\\slowf\\AppData\\Local\\Temp\\getmacros-before-chh8m8v_",
+  "results": [
+    {
+      "page": "index.html",
+      "run": 1,
+      "lcp": 1984,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1295.300000000745,
+      "resources": 8,
+      "bytes": 332165
+    },
+    {
+      "page": "index.html",
+      "run": 2,
+      "lcp": 1988,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1297.0999999977648,
+      "resources": 7,
+      "bytes": 332165
+    },
+    {
+      "page": "index.html",
+      "run": 3,
+      "lcp": 1984,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1298.7999999970198,
+      "resources": 7,
+      "bytes": 332165
+    },
+    {
+      "page": "calculators.html",
+      "run": 1,
+      "lcp": 1128,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1438.300000000745,
+      "resources": 8,
+      "bytes": 134425
+    },
+    {
+      "page": "calculators.html",
+      "run": 2,
+      "lcp": 1116,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1443,
+      "resources": 8,
+      "bytes": 134425
+    },
+    {
+      "page": "calculators.html",
+      "run": 3,
+      "lcp": 1104,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1430.9000000022352,
+      "resources": 8,
+      "bytes": 134425
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 1,
+      "lcp": 1468,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1974.800000000745,
+      "resources": 24,
+      "bytes": 197511
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 2,
+      "lcp": 1468,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1982.7999999970198,
+      "resources": 24,
+      "bytes": 197511
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 3,
+      "lcp": 1476,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1974.3999999985099,
+      "resources": 24,
+      "bytes": 197511
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "environment": "Local Edge, 390x844, cold cache, 100 ms latency, 1.6 Mbps download, 4x CPU slowdown. No production CDN or field data.",
+  "sourceRoot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net",
+  "results": [
+    {
+      "page": "index.html",
+      "run": 1,
+      "lcp": 1172,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1128.699999999255,
+      "resources": 8,
+      "bytes": 131909
+    },
+    {
+      "page": "index.html",
+      "run": 2,
+      "lcp": 1120,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1111.199999999255,
+      "resources": 8,
+      "bytes": 131909
+    },
+    {
+      "page": "index.html",
+      "run": 3,
+      "lcp": 1112,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1114.9000000022352,
+      "resources": 8,
+      "bytes": 131909
+    },
+    {
+      "page": "calculators.html",
+      "run": 1,
+      "lcp": 1200,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1540.1000000014901,
+      "resources": 10,
+      "bytes": 150926
+    },
+    {
+      "page": "calculators.html",
+      "run": 2,
+      "lcp": 1192,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1515.8999999985099,
+      "resources": 10,
+      "bytes": 150926
+    },
+    {
+      "page": "calculators.html",
+      "run": 3,
+      "lcp": 1192,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1508.699999999255,
+      "resources": 10,
+      "bytes": 150926
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 1,
+      "lcp": 1600,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 2093.900000002235,
+      "resources": 26,
+      "bytes": 218540
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 2,
+      "lcp": 1596,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 2095,
+      "resources": 26,
+      "bytes": 218540
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 3,
+      "lcp": 1592,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 2075,
+      "resources": 26,
+      "bytes": 218540
+    }
+  ]
+}

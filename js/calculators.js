@@ -50,39 +50,14 @@
     return Math.round(n).toLocaleString();
   }
 
-  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  function animateCount(el, target, suffix) {
-    if (reduceMotion || !el) {
-      if (el) el.textContent = fmt(target) + (suffix || "");
-      return;
-    }
-    var start = performance.now();
-    var duration = 700;
-    function step(now) {
-      var p = Math.min((now - start) / duration, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = fmt(target * eased) + (suffix || "");
-      if (p < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
+  // Show the calculated value immediately; nutrition numbers never count up from zero.
+  function setResultNumber(el, target, suffix) {
+    if (el) el.textContent = fmt(target) + (suffix || "");
   }
 
-  function animateBars(container) {
-    var bars = container.querySelectorAll("[data-target-width]");
-    if (reduceMotion || document.documentElement.classList.contains('tide-motion-off')) {
-      bars.forEach(function (bar) { bar.style.width = bar.getAttribute('data-target-width') + '%'; });
-      return;
-    }
-    bars.forEach(function (b) {
-      b.style.width = "0%";
-    });
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        bars.forEach(function (b) {
-          b.style.width = b.getAttribute("data-target-width") + "%";
-        });
-      });
+  function setMacroBar(container) {
+    container.querySelectorAll("[data-target-width]").forEach(function (bar) {
+      bar.style.width = bar.getAttribute("data-target-width") + "%";
     });
   }
 
@@ -235,11 +210,11 @@
         macroRow("carbs", "Carbohydrate", r.carbG, r.carbCals, cPct) +
         '<details class="work-result-note"><summary>How this estimate is calculated</summary><p>Estimated resting needs: ' + fmt(r.bmr) + ' calories. Estimated daily energy use, including activity: ' + fmt(r.tdee) + ' calories. Your selected goal adjusts the daily target.</p></details>';
 
-      animateCount(results.querySelector(".num"), r.totalCals);
+      setResultNumber(results.querySelector(".num"), r.totalCals);
       results.querySelectorAll(".grams").forEach(function (el) {
-        animateCount(el, parseFloat(el.getAttribute("data-count")), " g");
+        setResultNumber(el, parseFloat(el.getAttribute("data-count")), " g");
       });
-      animateBars(results);
+      setMacroBar(results);
     }
 
     function macroRow(cls, label, grams, cals, pct) {

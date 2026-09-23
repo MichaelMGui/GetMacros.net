@@ -1,0 +1,137 @@
+{
+  "scope": "200% root text sizing (not OS zoom), no-JavaScript navigation, missing images, stored theme selection; reduced motion requested",
+  "report": [
+    {
+      "file": "index.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "calculators.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "restaurant-meal-finder.html?goal=protein",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "chipotle-healthy-meals-macros.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "blog.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "sources.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "contact.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "privacy.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "search.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "protein-value-calculator.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "serving-size-vs-portion-size.html",
+      "theme": "light",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "index.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "calculators.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "restaurant-meal-finder.html?goal=protein",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "chipotle-healthy-meals-macros.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "blog.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "sources.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "contact.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "privacy.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "search.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "protein-value-calculator.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    },
+    {
+      "file": "serving-size-vs-portion-size.html",
+      "theme": "dark",
+      "textSize": "200%",
+      "overflow": false
+    }
+  ]
+}

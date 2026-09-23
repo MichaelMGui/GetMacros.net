@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-23",
+  "method": "Human visual interpretation of rendered screenshots through image tools; dimensions/themes below are actual reviewed representatives. Other routes were captured and automatically checked, not manually inspected.",
+  "pages": {
+    "index.html": [
+      "light 390",
+      "light 1440",
+      "dark 1440",
+      "home state light 1440",
+      "navigation state light 390"
+    ],
+    "404.html": [
+      "dark 1440",
+      "light 390"
+    ],
+    "about.html": [
+      "light 390",
+      "dark 1440"
+    ],
+    "articles.html": [
+      "light 1440",
+      "dark 390"
+    ],
+    "blog.html": [
+      "light 390",
+      "light 1440"
+    ],
+    "budget-meal-builder.html": [
+      "dark 390 after illustration fix",
+      "light 1440"
+    ],
+    "calculators.html": [
+      "light 390",
+      "light 1440",
+      "calculated results dark 390 after hierarchy fix"
+    ],
+    "carbohydrate-label-portion-tool.html": [
+      "dark 390"
+    ],
+    "chipotle-healthy-meals-macros.html": [
+      "dark 1280",
+      "dark 1440 after form layout fix"
+    ],
+    "contact.html": [
+      "light 1440",
+      "dark 390"
+    ],
+    "healthy-fast-food.html": [
+      "light 390"
+    ],
+    "high-protein-foods-list.html": [
+      "light 1440"
+    ],
+    "how-to-read-a-nutrition-label.html": [
+      "light 1280"
+    ],
+    "nutrition-label-comparison-tool.html": [
+      "light 390 after comparison grid fix"
+    ],
+    "privacy.html": [
+      "dark 1440",
+      "light 390"
+    ],
+    "protein-value-calculator.html": [
+      "dark 1440 after numeric layout fix"
+    ],
+    "recipe-macro-scaler.html": [
+      "light 1440 after numeric layout fix"
+    ],
+    "restaurant-meal-guides.html": [
+      "dark 1440 after name/count layout fix"
+    ],
+    "restaurant-meal-finder.html": [
+      "light 1440 initial quiz",
+      "light 390 filtered results",
+      "dark 1440 no-match state"
+    ],
+    "search.html": [
+      "dark 390",
+      "light 1440"
+    ],
+    "serving-size-vs-portion-size.html": [
+      "dark 390 after header height fix"
+    ],
+    "sources.html": [
+      "dark 390",
+      "dark 1440"
+    ],
+    "sodium-label-comparison-tool.html": [
+      "dark 390 calculated output"
+    ],
+    "sweat-rate-calculator.html": [
+      "dark 390 calculated output"
+    ],
+    "weight-goal-timeline-calculator.html": [
+      "light 1440"
+    ]
+  }
+}

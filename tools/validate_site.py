@@ -405,10 +405,10 @@ def main() -> int:
         behavior_text = behavior_path.read_text(encoding="utf-8")
         if "scrollIntoView(" in behavior_text:
             errors.append(f"{behavior_path.relative_to(ROOT)}: automatic scrollIntoView remains")
-    stability_css = (ROOT / "css" / "clean-v9.css").read_text(encoding="utf-8")
-    if not re.search(r"html\s*\{[^}]*scroll-behavior:\s*auto\s*!important", stability_css, re.S):
+    stability_css = (ROOT / "css" / "publication.css").read_text(encoding="utf-8")
+    if not re.search(r"html\s*\{[^}]*scroll-behavior:\s*auto(?:\s*!important)?\s*[;}]", stability_css, re.S):
         errors.append("shared CSS: page-level smooth scrolling can animate refresh restoration")
-    finder_css = (ROOT / "css" / "meal-finder-v2.css").read_text(encoding="utf-8")
+    finder_css = stability_css
     if re.search(r"\.quiz-option-any:has\(input:checked\)[^{]*\{[^}]*background:var\(--ink\)", finder_css, re.S):
         errors.append("meal quiz: no-preference selected state must not use the old black card")
     static_meal_count = sum(1 for meal in meals if meal["name"] in finder_text)
@@ -457,7 +457,7 @@ def main() -> int:
         errors.append("calculators.html: stale related-content dump remains")
     if ("calculators-polish.css" not in calc_text and 'data-publication="2026-09"' not in calc_text) or "sex-choice-icon" not in calc_text:
         errors.append("calculators.html: calculator readability controls missing")
-    if '<meta name="theme-color" content="#f7faf8">' not in calc_text:
+    if '<meta name="theme-color" content="#f7faf3">' not in calc_text:
         errors.append("calculators.html: site theme color is inconsistent")
     if 'property="og:locale"' in calc_text or 'content="GetMacros.net logo"' in calc_text:
         errors.append("calculators.html: stale social metadata remains")
