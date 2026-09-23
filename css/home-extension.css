@@ -1,0 +1,45 @@
+/* Homepage-only additions: actual tools and useful ordering questions. */
+html[data-theme][lang] body.home-studio main :is(.home-everyday,.home-finder-help) {
+  padding:48px 0 !important;
+  color:var(--quiet-ink);
+  background:var(--quiet-paper);
+  border-top:1px solid var(--quiet-line);
+}
+html[data-theme][lang] body.home-studio main .home-everyday { background:var(--quiet-surface-2); }
+.home-everyday-layout,.home-finder-help-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr); gap:56px; align-items:start; }
+html[data-theme][lang] body.home-studio main :is(.home-everyday,.home-finder-help) h2 {
+  font-size:clamp(1.6rem,2.5vw,2.2rem) !important; line-height:1.2 !important;
+  letter-spacing:-.025em !important; color:var(--quiet-ink) !important;
+  max-width:22ch !important; margin:0 0 16px !important; text-align:left !important;
+}
+html[data-theme][lang] body.home-studio main :is(.home-everyday,.home-finder-help) p {
+  font-size:1rem !important; line-height:1.65 !important; font-weight:400 !important;
+  color:var(--quiet-muted) !important; margin:0 0 16px !important; max-width:56ch;
+}
+html[data-theme][lang] body.home-studio main p.home-section-label {
+  font-size:.875rem !important; font-weight:700 !important;
+  color:var(--quiet-green-strong) !important; margin-bottom:12px !important;
+}
+.home-extension-link { display:inline-flex; gap:12px; align-items:center; min-height:44px; color:var(--quiet-green-strong); font-weight:700; text-underline-offset:4px; }
+.home-everyday-tools { display:grid; gap:12px; }
+.home-everyday-tool { display:grid; grid-template-columns:42px minmax(0,1fr); gap:16px; padding:22px; border:1px solid var(--quiet-line); border-radius:16px; background:var(--quiet-surface); color:var(--quiet-ink); text-decoration:none; }
+.home-everyday-icon { width:42px; height:42px; display:grid; place-items:center; border-radius:12px; background:var(--quiet-green-soft); }
+.home-everyday-icon svg { width:24px; height:24px; fill:var(--quiet-green-strong); }
+html[data-theme][lang] body.home-studio main .home-everyday-tool h3 { margin:0 0 6px !important; font-size:1.125rem !important; line-height:1.35 !important; color:var(--quiet-ink) !important; max-width:none !important; }
+html[data-theme][lang] body.home-studio main .home-everyday-tool p { margin:0 0 10px !important; }
+.home-everyday-tool strong { color:var(--quiet-green-strong); font-size:.9375rem; }
+.home-finder-questions { border-top:1px solid var(--quiet-line); }
+.home-finder-questions details { border:0; border-bottom:1px solid var(--quiet-line); padding:0; border-radius:0; background:transparent; box-shadow:none; }
+.home-finder-questions summary { cursor:pointer; padding:20px 0; font-size:1rem; font-weight:600; line-height:1.5; color:var(--quiet-ink); }
+html[data-theme][lang] body.home-studio main .home-finder-questions p { padding:0 0 8px; margin:0 0 12px !important; }
+.home-finder-questions a { color:var(--quiet-green-strong); text-underline-offset:3px; }
+:is(.home-everyday-tool,.home-extension-link,.home-finder-questions summary):focus-visible { outline:3px solid var(--quiet-green-strong); outline-offset:4px; }
+@media (max-width:760px) {
+  .home-everyday-layout,.home-finder-help-layout { grid-template-columns:1fr; gap:24px; }
+  html[data-theme][lang] body.home-studio main :is(.home-everyday,.home-finder-help) { padding:32px 0 !important; }
+  .home-everyday-tool { padding:18px; gap:12px; }
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  .home-everyday-tool { transition:transform 180ms ease,border-color 180ms ease; }
+  .home-everyday-tool:hover { transform:translateY(-2px); border-color:var(--quiet-green-strong); }
+}

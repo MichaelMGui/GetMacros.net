@@ -1,0 +1,109 @@
+/* Final visual layer.
+ *
+ * Every effect here animates transform, opacity, filter or a paint-only
+ * property. None can change layout, so none can cost CLS. The whole file is
+ * disabled under prefers-reduced-motion at the bottom.
+ *
+ * Loads after contrast-fix.css, so anything here that touches colour must not
+ * undo a contrast repair -- effects only, no text colour.
+ */
+
+/* --- Scroll reveal ------------------------------------------------------
+ * Elements start slightly low and transparent, then settle as they enter the
+ * viewport. Applied by js/polish.js only when IntersectionObserver exists, so
+ * a browser without it shows everything immediately rather than nothing. */
+.js-reveal .reveal-item{opacity:0;transform:translate3d(0,18px,0);
+  transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.js-reveal .reveal-item.is-in{opacity:1;transform:none}
+.js-reveal .reveal-item:nth-child(2){transition-delay:.06s}
+.js-reveal .reveal-item:nth-child(3){transition-delay:.12s}
+.js-reveal .reveal-item:nth-child(4){transition-delay:.18s}
+.js-reveal .reveal-item:nth-child(5){transition-delay:.24s}
+.js-reveal .reveal-item:nth-child(n+6){transition-delay:.3s}
+
+/* --- Reading progress ---------------------------------------------------
+ * Fixed to the top, painted from a transform so it never reflows the page. */
+.read-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:60;
+  background:linear-gradient(90deg,#1b6b4a,#4b9e69 55%,#dfff69);
+  transform:scaleX(0);transform-origin:left;will-change:transform;pointer-events:none}
+
+/* --- Cards --------------------------------------------------------------
+ * A soft sheen follows the pointer across a card. Uses a radial gradient
+ * positioned from custom properties the script updates, which is a paint
+ * change only. */
+.site-v3 main :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card,
+  .chain-card,.advice-card,.ranking-card){position:relative;overflow:hidden}
+.site-v3 main :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card)::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:0;
+  transition:opacity .35s ease;
+  background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),
+    rgba(75,158,105,.14),transparent 62%)}
+.site-v3 main :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card):hover::before{opacity:1}
+
+/* --- Headings -----------------------------------------------------------
+ * A restrained gradient on the largest headings only. Falls back to the
+ * inherited colour where background-clip is unsupported. */
+@supports (-webkit-background-clip: text) or (background-clip: text){
+  .site-v3 section[class*="hero"] h1{
+    background:linear-gradient(102deg,#ffffff 0%,#ffffff 58%,#dfff69 100%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent}
+  /* Light-background heroes keep dark type; the gradient above assumes a dark
+     ground and would be unreadable otherwise. */
+  .site-v3 .tool-hero h1,.site-v3 .guide-hub-hero h1{
+    background:none;-webkit-text-fill-color:currentColor;color:inherit}
+}
+
+/* --- Focus --------------------------------------------------------------
+ * A visible, consistent ring. Keyboard users were getting the browser default,
+ * which disappears against the dark sections. */
+.site-v3 :is(a,button,input,select,textarea,summary,[tabindex]):focus-visible{
+  outline:3px solid #4b9e69;outline-offset:3px;border-radius:6px}
+.site-v3 section[class*="hero"] :is(a,button):focus-visible{outline-color:#dfff69}
+
+/* --- Selection ----------------------------------------------------------- */
+.site-v3 ::selection{background:#dfff69;color:#10231b}
+
+/* --- Tables -------------------------------------------------------------- */
+.site-v3 main .data-table tbody tr,.site-v3 main .meal-table tbody tr{
+  transition:background .18s ease}
+.site-v3 main .data-table tbody tr:hover,.site-v3 main .meal-table tbody tr:hover{
+  background:rgba(75,158,105,.08)}
+
+/* --- Images -------------------------------------------------------------- */
+.site-v3 main figure img{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.site-v3 main figure:hover img{transform:scale(1.02)}
+
+/* --- Details ------------------------------------------------------------- */
+.site-v3 main details summary{transition:color .16s ease}
+.site-v3 main details[open] summary{margin-bottom:.4rem}
+
+/* --- Counting numbers ---------------------------------------------------
+ * The macro figures tick up rather than appearing. Width is reserved by
+ * tabular-nut numerals so the digits changing cannot shift anything. */
+.site-v3 .mm-num b,.site-v3 .result-head strong,.site-v3 .stats-ribbon b{
+  font-variant-numeric:tabular-nums}
+
+/* --- Smooth scrolling for in-page anchors -------------------------------- */
+@media (prefers-reduced-motion: no-preference){
+  html{scroll-behavior:smooth}
+}
+
+/* --- Print --------------------------------------------------------------- */
+@media print{
+  .liquid-blobs,.liquid-surface::before,.liquid-surface::after,.read-progress,
+  .site-header,.modern-footer,.ad-auto-anchor{display:none!important}
+  .site-v3 section[class*="hero"] h1{-webkit-text-fill-color:#000;color:#000}
+  .site-v3 main{color:#000}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:.85em;word-break:break-all}
+}
+
+/* --- Reduced motion ------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .js-reveal .reveal-item{opacity:1!important;transform:none!important;transition:none!important}
+  .read-progress{display:none}
+  .site-v3 main figure:hover img{transform:none}
+  .site-v3 main :is(.meal-card,.goal-card,.tool-card,.guide-card,.pick-card,.explore-card)::before{
+    display:none}
+}
