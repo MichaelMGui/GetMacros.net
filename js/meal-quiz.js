@@ -67,7 +67,7 @@
   ];
   var state = { goal: [], size: [], diet: [], meal: [], chain: [] };
   var noPreference = { goal: false, size: false, diet: false, meal: false, chain: false };
-  var step = 0, includeIncomplete = false, SAVED_KEY = "getmacros-saved-meals-v1", saved = readSaved();
+  var step = 0, includeIncomplete = false, maxCal = null, minProtein = null, sortBy = 'match', SAVED_KEY = "getmacros-saved-meals-v1", saved = readSaved();
   var GOAL_LABEL = { energy: "weight gain", light: "weight loss", protein: "high protein", fibre: "high fiber", lowsodium: "lower sodium" };
   var DIET_LABEL = { vegetarian: "vegetarian", plant: "plant-based", gluten: "gluten-aware" };
 
@@ -83,9 +83,16 @@
   var qs = new URLSearchParams(location.search), deepLinked = false;
   STEPS.forEach(function (s) { var allowed = s.options.map(function (o) { return o[0]; }); qs.getAll(s.key).forEach(function (v) { if (allowed.indexOf(v) !== -1 && state[s.key].indexOf(v) === -1) { state[s.key].push(v); deepLinked = true; } }); });
   includeIncomplete = qs.get("complete") === "0";
+  function numberInRange(value,min,max){var n=Number(value);return value!==null && value!=='' && Number.isFinite(n) && n>=min && n<=max ? n : null;}
+  maxCal=numberInRange(qs.get('maxCal'),150,2500);
+  minProtein=numberInRange(qs.get('minProtein'),0,200);
+  if(maxCal!==null||minProtein!==null)deepLinked=true;
+  if(['calories','protein','match'].indexOf(qs.get('sort'))!==-1)sortBy=qs.get('sort');
 
   function eligible(m) {
     if (!includeIncomplete && !complete(m)) return false;
+    if(maxCal!==null && (m.cal===null||m.cal>maxCal))return false;
+    if(minProtein!==null && (m.p===null||m.p<minProtein))return false;
     if (!state.goal.every(function(goal) {
       var nutrient = {protein:'p',light:'cal',energy:'cal',fibre:'f',lowsodium:'na'}[goal];
       return !nutrient || m[nutrient] !== null;
@@ -204,21 +211,26 @@
     if(pair[0]===pair[1]){output.innerHTML='<p>Choose two different meals to compare.</p>';return;}
     output.innerHTML='<table><caption>Per listed order; see each meal’s portion and customization notes</caption><thead><tr><td></td><th scope="col">Meal 1</th><th scope="col">Meal 2</th></tr></thead><tbody>'+[['cal','Calories',''],['p','Protein',' g'],['c','Carbs',' g'],['fat','Fat',' g'],['f','Fiber',' g'],['na','Sodium',' mg']].map(function(row){return '<tr><th scope="row">'+row[1]+'</th>'+pair.map(function(m){return '<td>'+(m[row[0]]==null?'<span class="comparison-missing">Not verified</span>':'<span class="comparison-number">'+m[row[0]].toLocaleString()+'</span>'+(row[2]?'<small class="comparison-unit">'+row[2]+'</small>':''))+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
   }
+  var renderingResults=false;
   function renderResults() {
+    if(renderingResults)return;
+    renderingResults=true;
+    try{
     var layout = root.closest(".match-intro-grid");
     if (layout) layout.classList.add("results-mode");
-    var results = meals.filter(eligible).sort(function (a, b) { return score(b) - score(a); });
+    var results = meals.filter(eligible).sort(function (a, b) {if(sortBy==='calories')return (a.cal===null?Infinity:a.cal)-(b.cal===null?Infinity:b.cal)||score(b)-score(a);if(sortBy==='protein')return (b.p===null?-Infinity:b.p)-(a.p===null?-Infinity:a.p)||score(b)-score(a);return score(b)-score(a);});
     var incompleteCount = meals.filter(function (m) { return !complete(m); }).length;
     if (!results.length) {
-      root.innerHTML = '<div class="quiz-card empty-results"><span class="result-symbol">↺</span><h2 tabindex="-1">No meals for that combination.</h2><p>Try another restaurant or remove a food preference.</p><button type="button" class="btn btn-primary" data-restart="1">Change my answers</button></div>';
+      root.innerHTML = '<div class="quiz-card empty-results"><h2 tabindex="-1">No meals for that combination.</h2><p>Try a higher calorie limit, lower protein target or another restaurant.</p><div class="empty-actions"><button type="button" class="btn btn-primary" data-restart="1">Edit choices</button><button type="button" class="btn" data-reset="1">Start over</button></div></div>';
       announce("No meals match that exact combination. Change an answer to continue."); syncUrl(); return;
     }
     var shown = results.slice(0, 5);
-    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + comparisonMarkup(results) + '<div class="results-footer"><details class="result-options"><summary>Nutrition data</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with missing numbers</b><small>' + incompleteCount + ' meals are hidden because our records lack calories, protein, fiber or sodium.</small></span></label></div></details><button type="button" class="btn btn-ghost" data-reset="1">Reset preferences</button><button type="button" class="btn btn-ghost" data-share="1">Share these results</button></div></div>';
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="result-refine" aria-label="Refine meals"><label>Maximum calories<input type="number" min="150" max="2500" step="10" inputmode="numeric" data-max-cal placeholder="Any" value="'+(maxCal===null?'':maxCal)+'"></label><label>Minimum protein (g)<input type="number" min="0" max="200" step="1" inputmode="numeric" data-min-protein placeholder="Any" value="'+(minProtein===null?'':minProtein)+'"></label><label>Sort meals<select data-sort><option value="match"'+(sortBy==='match'?' selected':'')+'>Best match</option><option value="calories"'+(sortBy==='calories'?' selected':'')+'>Lowest calories</option><option value="protein"'+(sortBy==='protein'?' selected':'')+'>Most protein</option></select></label></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + comparisonMarkup(results) + '<div class="results-footer"><details class="result-options"><summary>Nutrition data</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with missing numbers</b><small>' + incompleteCount + ' meals are hidden because our records lack calories, protein, fiber or sodium.</small></span></label></div></details><button type="button" class="btn btn-ghost" data-reset="1">Reset preferences</button><button type="button" class="btn btn-ghost" data-share="1">Share these results</button></div></div>';
     root._matches = results; updateComparison();
     root._rest = results.slice(5); root._total=results.length; announce(summary(results.length)); syncUrl(); updateSavedUi();
+    }finally{renderingResults=false;}
   }
-  function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0"); history.replaceState(null, "", url); }
+  function syncUrl() { var url = new URL(location.href); url.search = ""; STEPS.forEach(function (s) { state[s.key].forEach(function (v) { url.searchParams.append(s.key, v); }); }); if (includeIncomplete) url.searchParams.set("complete", "0");if(maxCal!==null)url.searchParams.set('maxCal',maxCal);if(minProtein!==null)url.searchParams.set('minProtein',minProtein);if(sortBy!=='match')url.searchParams.set('sort',sortBy); history.replaceState(null, "", url); }
   function shareResults(button) { var data = { title: "My GetMacros meal matches", text: "Fast-food options matched to my goals and preferences.", url: location.href }; if (navigator.share) { navigator.share(data).catch(function () {}); return; } if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(function () { button.textContent = "Link copied ✓"; }); }
 
   // A question change is the one moment when moving the viewport is helpful:
@@ -259,6 +271,9 @@
 
   root.addEventListener("change", function (e) {
     var el = e.target;
+    if(el.hasAttribute('data-max-cal')){maxCal=numberInRange(el.value,150,2500);renderResults();return;}
+    if(el.hasAttribute('data-min-protein')){minProtein=numberInRange(el.value,0,200);renderResults();return;}
+    if(el.hasAttribute('data-sort')){sortBy=el.value;renderResults();return;}
     var required = root.querySelector(".quiz-required"); if (required) required.hidden = true;
     if (el.dataset.incomplete) { includeIncomplete = el.checked; renderResults(); return; }
     if (el.dataset.any) {
@@ -318,7 +333,7 @@
       }
       changeQuestion(function(){step += direction; step >= STEPS.length ? renderResults() : renderStep();}, direction);
     }
-    else if (t.dataset.reset) { changeQuestion(function(){STEPS.forEach(function(s){state[s.key]=[];noPreference[s.key]=false;});includeIncomplete=false;step=0;syncUrl();renderStep();}, -1); }
+    else if (t.dataset.reset) { changeQuestion(function(){STEPS.forEach(function(s){state[s.key]=[];noPreference[s.key]=false;});includeIncomplete=false;maxCal=null;minProtein=null;sortBy='match';step=0;syncUrl();renderStep();}, -1); }
     else if (t.dataset.restart) { changeQuestion(function(){step = 0; renderStep();}, -1); }
     else if (t.dataset.more) {
       var next = root._rest.splice(0, 3);

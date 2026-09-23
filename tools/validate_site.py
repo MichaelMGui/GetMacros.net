@@ -220,11 +220,10 @@ def main() -> int:
             elif not ads_paused and (len(loaders) != 1 or not re.search(r'\basync\b', loaders[0]) or 'crossorigin="anonymous"' not in loaders[0]):
                 errors.append(f"{path}: expected one async AdSense loader in head with anonymous crossorigin")
             required_nav = (
-                ("healthy-fast-food.html", "Healthy Fast Food"),
-                ("restaurant-meal-finder.html", "Fast-food meal finder"),
-                ("calculators.html", "Macro Calculator"),
-                ("articles.html", "Nutrition basics"),
-                ("about.html", "About"),
+                ("restaurant-meal-finder.html", "Find a meal"),
+                ("restaurant-meal-guides.html", "All restaurants"),
+                ("calculators.html", "Macro calculator"),
+                ("articles.html", "Nutrition guides"),
             )
             for nav_href, nav_label in required_nav:
                 pattern = rf'<a\b[^>]*href=["\']{re.escape(nav_href)}["\'][^>]*>(.*?)</a>'

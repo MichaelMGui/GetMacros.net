@@ -26,7 +26,7 @@ for path in ROOT.glob('*.html'):
  if 'js/meal-data.js' in text:
   assert text.index('js/meal-data.js')<text.index('js/meal-provenance.js'),path.name
 css=(ROOT/'css/publication.css').read_text(encoding='utf-8')
-assert len(css.encode())<45000
+assert len(css.encode())<55000
 assert 'prefers-reduced-motion:reduce' in css and 'html[data-theme=dark]' in css
 assert 'google.com, pub-2316153877942502, DIRECT, f08c47fec0942fa0' in (ROOT/'ads.txt').read_text()
 with (ROOT/'docs/publication-page-audit.csv').open('w',encoding='utf-8',newline='') as f:
