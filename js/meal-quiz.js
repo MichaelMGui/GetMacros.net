@@ -121,7 +121,7 @@
     if (misses.length) text += (text ? " " : "") + "Trade-off: it does not meet " + list(misses) + ".";
     return text || m.why;
   }
-  function metric(value, unit, label) { var shown = value === null ? "Not published" : value.toLocaleString() + (unit ? " " + unit : ""); return '<span class="meal-metric' + (value === null ? " is-missing" : "") + '"><b>' + shown + "</b><small>" + label + "</small></span>"; }
+  function metric(value, unit, label) { var shown = value == null ? "Not verified" : value.toLocaleString() + (unit ? " " + unit : ""); return '<span class="meal-metric' + (value == null ? " is-missing" : "") + '"><b>' + shown + "</b><small>" + label + "</small></span>"; }
   function iconSvg(name, fallback) {
     var paths = {
       trendUp: '<path d="M5 17l5-5 3 3 6-7M14 8h5v5"/>', trendDown: '<path d="M5 7l5 5 3-3 6 7M14 16h5v-5"/>',
@@ -139,7 +139,7 @@
     var key = mealKey(m), matches = matchCount(m);
     var reason = !state.goal.length || matches < state.goal.length ? why(m) : "";
     var badge = !state.goal.length ? "Good starting point" : matches === state.goal.length ? "Matches every goal" : "Matches " + matches + " of " + state.goal.length;
-    return '<article class="meal-card' + (top ? " top-match" : "") + '"><div class="meal-card-top"><span class="meal-chain"><img src="' + esc(chainLogo(m.chain)) + '" alt="" width="36" height="36">' + esc(m.chain) + '</span><span class="meal-rank">' + badge + '</span></div><h3>' + esc(m.name.replace("High-protein bulking order: ", "")) + '</h3><div class="meal-stats">' + metric(m.cal, "", "calories") + metric(m.p, "g", "protein") + metric(m.f, "g", "fiber") + metric(m.na, "mg", "sodium") + '</div>' + (reason ? '<p class="meal-reason">' + esc(reason) + '</p>' : '') + '<div class="meal-card-actions"><a class="meal-link btn action-link" href="' + esc(m.url) + '">View menu</a><button class="meal-save" type="button" data-save="' + esc(key) + '" aria-pressed="' + (saved.indexOf(key) !== -1) + '">' + (saved.indexOf(key) !== -1 ? "Saved ✓" : "Save meal") + '</button></div></article>';
+    return '<article class="meal-card' + (top ? " top-match" : "") + '"><div class="meal-card-top"><span class="meal-chain"><img src="' + esc(chainLogo(m.chain)) + '" alt="" width="36" height="36">' + esc(m.chain) + '</span><span class="meal-rank">' + badge + '</span></div><h3>' + esc(m.name.replace("High-protein bulking order: ", "")) + '</h3><p class="meal-portion">' + esc(m.region || 'U.S.') + ' menu · ' + esc(m.serving || '1 listed order') + '</p><div class="meal-stats">' + metric(m.cal, "", "calories") + metric(m.p, "g", "protein") + metric(m.c, "g", "carbs") + metric(m.fat, "g", "fat") + '</div><p class="meal-reason">' + esc(why(m)) + '</p><details><summary>Order details &amp; sources</summary><p>' + esc(m.why) + '</p><p>Fiber: ' + (m.f == null ? 'not verified' : m.f + ' g') + ' · Sodium: ' + (m.na == null ? 'not verified' : m.na + ' mg') + '.</p><p>Missing values are not zero. Custom portions, sauces and regional recipes can change nutrition; check allergens directly with the restaurant.</p>' + (m.source ? '<p class="meal-source"><a href="' + esc(m.source) + '">Official nutrition source</a> · Record checked ' + esc(m.checked) + '</p>' : '') + '</details><div class="meal-card-actions"><a class="meal-link btn action-link" href="' + esc(m.url) + '">View menu</a><button class="meal-save" type="button" data-save="' + esc(key) + '" aria-pressed="' + (saved.indexOf(key) !== -1) + '">' + (saved.indexOf(key) !== -1 ? "Saved ✓" : "Save meal") + '</button></div></article>';
   }
   function optionMarkup(s) {
     var type = s.single ? "radio" : "checkbox";
@@ -202,7 +202,7 @@
     });
     var output=root.querySelector('.comparison-output');
     if(pair[0]===pair[1]){output.innerHTML='<p>Choose two different meals to compare.</p>';return;}
-    output.innerHTML='<table><caption>Per complete order</caption><thead><tr><td></td><th scope="col">Meal 1</th><th scope="col">Meal 2</th></tr></thead><tbody>'+[['cal','Calories',''],['p','Protein',' g'],['f','Fiber',' g'],['na','Sodium',' mg']].map(function(row){return '<tr><th scope="row">'+row[1]+'</th>'+pair.map(function(m){return '<td>'+(m[row[0]]===null?'<span class="comparison-missing">Not published</span>':'<span class="comparison-number">'+m[row[0]].toLocaleString()+'</span>'+(row[2]?'<small class="comparison-unit">'+row[2]+'</small>':''))+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
+    output.innerHTML='<table><caption>Per listed order; see each meal’s portion and customization notes</caption><thead><tr><td></td><th scope="col">Meal 1</th><th scope="col">Meal 2</th></tr></thead><tbody>'+[['cal','Calories',''],['p','Protein',' g'],['c','Carbs',' g'],['fat','Fat',' g'],['f','Fiber',' g'],['na','Sodium',' mg']].map(function(row){return '<tr><th scope="row">'+row[1]+'</th>'+pair.map(function(m){return '<td>'+(m[row[0]]==null?'<span class="comparison-missing">Not verified</span>':'<span class="comparison-number">'+m[row[0]].toLocaleString()+'</span>'+(row[2]?'<small class="comparison-unit">'+row[2]+'</small>':''))+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
   }
   function renderResults() {
     var layout = root.closest(".match-intro-grid");
@@ -214,7 +214,7 @@
       announce("No meals match that exact combination. Change an answer to continue."); syncUrl(); return;
     }
     var shown = results.slice(0, 5);
-    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + comparisonMarkup(results) + '<div class="results-footer"><details class="result-options"><summary>Nutrition data</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with missing numbers</b><small>' + incompleteCount + ' meals are hidden because their full nutrition is not published.</small></span></label></div></details><button type="button" class="btn btn-ghost" data-share="1">Share these results</button></div></div>';
+    root.innerHTML = '<div class="quiz-results"><div class="results-heading"><div><span class="results-count">Showing ' + shown.length + ' of ' + results.length + ' meals</span><h2 tabindex="-1">Your meal matches</h2>' + (state.goal.length ? '<div class="result-goals" aria-label="Your goals">' + state.goal.map(function(g){return '<span>'+esc(GOAL_LABEL[g])+'</span>';}).join('') + '</div>' : '') + '</div><button type="button" class="btn btn-ghost" data-restart="1">Edit answers</button></div><div class="results-grid">' + shown.map(function (m, i) { return card(m, i === 0); }).join("") + '</div>' + (results.length > shown.length ? '<button type="button" class="btn btn-ghost results-more" data-more="1">See 3 more meals</button>' : '') + comparisonMarkup(results) + '<div class="results-footer"><details class="result-options"><summary>Nutrition data</summary><div class="result-controls"><label class="data-toggle"><input type="checkbox" data-incomplete="1"' + (includeIncomplete ? ' checked' : '') + '><span><b>Include meals with missing numbers</b><small>' + incompleteCount + ' meals are hidden because our records lack calories, protein, fiber or sodium.</small></span></label></div></details><button type="button" class="btn btn-ghost" data-reset="1">Reset preferences</button><button type="button" class="btn btn-ghost" data-share="1">Share these results</button></div></div>';
     root._matches = results; updateComparison();
     root._rest = results.slice(5); root._total=results.length; announce(summary(results.length)); syncUrl(); updateSavedUi();
   }
@@ -302,7 +302,7 @@
     var choice=e.target.closest('[data-compare-pick]');
     if(choice){var picker=choice.closest('[data-compare]');picker.dataset.value=choice.dataset.comparePick;picker.open=false;updateComparison();picker.querySelector('summary').focus({preventScroll:true});return;}
 
-    var t = e.target.closest("[data-go],[data-restart],[data-more],[data-save],[data-share]"); if (!t) return;
+    var t = e.target.closest("[data-go],[data-restart],[data-reset],[data-more],[data-save],[data-share]"); if (!t) return;
     if (t.dataset.save) toggleSaved(t.dataset.save);
     else if (t.dataset.share) shareResults(t);
     else if (t.dataset.go) {
@@ -318,6 +318,7 @@
       }
       changeQuestion(function(){step += direction; step >= STEPS.length ? renderResults() : renderStep();}, direction);
     }
+    else if (t.dataset.reset) { changeQuestion(function(){STEPS.forEach(function(s){state[s.key]=[];noPreference[s.key]=false;});includeIncomplete=false;step=0;syncUrl();renderStep();}, -1); }
     else if (t.dataset.restart) { changeQuestion(function(){step = 0; renderStep();}, -1); }
     else if (t.dataset.more) {
       var next = root._rest.splice(0, 3);

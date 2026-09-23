@@ -1,5 +1,8 @@
 # Image inventory
 
+- `editorial-salad.webp`: current publication homepage photograph by Anna Pelzer, [Bowl of vegetable salads](https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0), downloaded 22 September 2026 under the [Unsplash License](https://unsplash.com/license). Local 1100-pixel WebP; visible credit. Food inspiration, not an official restaurant order or calculated portion.
+- The September 2026 publication build uses `css/publication.css` for inline vector colours and preserves the neutral restaurant initials. Older homepage scenes below are historical assets, not the current homepage.
+
 - `home-hero-bowl.svg`: the original homepage bowl with a green napkin, matching the current illustration palette.
 - `home-kitchen-upright.webp` and `home-restaurant-upright.webp`: upright kitchen and restaurant scenes edited with the built-in OpenAI image-generation tool on 14 September 2026, using `home-hero-bowl.svg` as the style reference. Exported to 720 × 480 transparent WebP. Decorative illustrations, not actual restaurants or measured portions. See [editing prompts](home-art-prompts.md).
 - `home-kitchen-prep.webp` and `home-restaurant-finder.webp`: unused earlier scenes generated on 13 September 2026, replaced by the upright artwork above.

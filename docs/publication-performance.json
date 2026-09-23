@@ -1,0 +1,95 @@
+{
+  "environment": "Local Edge, 390x844, cold cache, 100 ms latency, 1.6 Mbps download, 4x CPU slowdown. No production CDN or field data.",
+  "results": [
+    {
+      "page": "index.html",
+      "run": 1,
+      "lcp": 1904,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1047.0999999996275,
+      "resources": 7,
+      "bytes": 312766
+    },
+    {
+      "page": "index.html",
+      "run": 2,
+      "lcp": 1916,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1050.5,
+      "resources": 7,
+      "bytes": 312766
+    },
+    {
+      "page": "index.html",
+      "run": 3,
+      "lcp": 1924,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1075.0999999996275,
+      "resources": 7,
+      "bytes": 312766
+    },
+    {
+      "page": "calculators.html",
+      "run": 1,
+      "lcp": 1032,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1359.300000000745,
+      "resources": 9,
+      "bytes": 115788
+    },
+    {
+      "page": "calculators.html",
+      "run": 2,
+      "lcp": 1108,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1455.5,
+      "resources": 9,
+      "bytes": 115788
+    },
+    {
+      "page": "calculators.html",
+      "run": 3,
+      "lcp": 1036,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1365,
+      "resources": 9,
+      "bytes": 115788
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 1,
+      "lcp": 1400,
+      "cls": 0.00006430292511053556,
+      "longTasks": 0,
+      "domContentLoaded": 1745.9000000003725,
+      "resources": 25,
+      "bytes": 176261
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 2,
+      "lcp": 1412,
+      "cls": 0.00006430292511053556,
+      "longTasks": 0,
+      "domContentLoaded": 1758.0999999996275,
+      "resources": 25,
+      "bytes": 176261
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 3,
+      "lcp": 1380,
+      "cls": 0.00006430292511053556,
+      "longTasks": 0,
+      "domContentLoaded": 1743.2000000011176,
+      "resources": 25,
+      "bytes": 176261
+    }
+  ]
+}

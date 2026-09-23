@@ -210,11 +210,14 @@ def main() -> int:
             adsense_accounts = [m.get("content", "") for m in parser.metas if m.get("name", "").lower() == "google-adsense-account"]
             if adsense_accounts != [PUBLISHER]:
                 errors.append(f"{path}: expected one verified AdSense account meta tag")
-            if f"adsbygoogle.js?client={PUBLISHER}" not in text:
+            ads_paused = 'data-publication="2026-09"' in text and 'data-ads="off"' in text
+            if not ads_paused and f"adsbygoogle.js?client={PUBLISHER}" not in text:
                 errors.append(f"{path}: verified AdSense loader missing")
             head = text.split('</head>', 1)[0]
             loaders = re.findall(r'<script\b[^>]*src="https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client='+re.escape(PUBLISHER)+r'"[^>]*>', head)
-            if len(loaders) != 1 or not re.search(r'\basync\b', loaders[0]) or 'crossorigin="anonymous"' not in loaders[0]:
+            if ads_paused and loaders:
+                errors.append(f"{path}: ad serving is paused but a loader remains")
+            elif not ads_paused and (len(loaders) != 1 or not re.search(r'\basync\b', loaders[0]) or 'crossorigin="anonymous"' not in loaders[0]):
                 errors.append(f"{path}: expected one async AdSense loader in head with anonymous crossorigin")
             required_nav = (
                 ("healthy-fast-food.html", "Healthy Fast Food"),
@@ -244,9 +247,12 @@ def main() -> int:
         # Matched without the version: the stamp is a content hash now, so it
         # changes whenever the file does. Pinning it here would fail the build
         # every time the stylesheet was edited.
-        if not re.search(r'href="css/(?:premium-v4|reading-bundle)\.css\?v=', text):
+        publication = 'data-publication="2026-09"' in text
+        if publication and len(re.findall(r'href="css/publication\.css(?:\?[^\"]*)?"',text)) != 1:
+            errors.append(f"{path}: publication stylesheet must load exactly once")
+        if not publication and not re.search(r'href="css/(?:premium-v4|reading-bundle)\.css\?v=', text):
             errors.append(f"{path}: shared premium visual system is missing")
-        if text.count("css/unified-v7.css") != 1 or not re.search(r'href="css/(?:unified-v7|core-bundle)\.css\?', text):
+        if not publication and (text.count("css/unified-v7.css") != 1 or not re.search(r'href="css/(?:unified-v7|core-bundle)\.css\?', text)):
             errors.append(f"{path}: unified visual layer must load exactly once")
         if text.count("js/unified-v7.js?") != 1:
             errors.append(f"{path}: unified interaction layer must load exactly once")
@@ -450,7 +456,7 @@ def main() -> int:
         errors.append("calculators.html: Budget meal builder must appear exactly once")
     if "related-explore" in calc_text:
         errors.append("calculators.html: stale related-content dump remains")
-    if "calculators-polish.css" not in calc_text or "sex-choice-icon" not in calc_text:
+    if ("calculators-polish.css" not in calc_text and 'data-publication="2026-09"' not in calc_text) or "sex-choice-icon" not in calc_text:
         errors.append("calculators.html: calculator readability controls missing")
     if '<meta name="theme-color" content="#f7faf8">' not in calc_text:
         errors.append("calculators.html: site theme color is inconsistent")
