@@ -1,0 +1,4 @@
+// Generate the default homepage finder from the production renderer and actual records.
+// Run after changing meal data or finder markup, then rebuild_publication.py.
+const fs=require('node:fs');const{chromium}=require('C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');const{localAssets}=require('./browser-fixture.cjs');
+(async()=>{const b=await chromium.launch({channel:'msedge'});try{const p=await b.newPage();await localAssets(p);await p.goto('http://127.0.0.1:4174/index.html');await p.locator('.meal-row').first().waitFor();const markup=await p.locator('#meal-quiz').innerHTML();if((markup.match(/class="order-ticket meal-row"/g)||[]).length!==4)throw Error('Expected four real meals');fs.writeFileSync('tools/market-home-finder.inc',markup);console.log('Pre-rendered homepage controls and four meals.');}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});

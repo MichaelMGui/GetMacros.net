@@ -127,13 +127,14 @@ def canonical_for(path: str) -> str:
 def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
-    # design/ holds the design-canvas working files and the seeded canvas page.
+    # _config.yml excludes design/, docs/ and tools/ from the published site.
+    # These contain working previews and browser evidence, not public pages.
     # They are .html but they are not site pages -- they carry no description,
     # canonical or nav -- so the site contract does not apply to them.
     html_paths = sorted(
         p.relative_to(ROOT).as_posix()
         for p in ROOT.rglob("*.html")
-        if not p.relative_to(ROOT).as_posix().startswith("design/")
+        if not p.relative_to(ROOT).as_posix().startswith(("design/", "docs/", "tools/"))
     )
     pages: dict[str, tuple[str, PageParser]] = {}
     titles: dict[str, list[str]] = {}
@@ -383,21 +384,14 @@ def main() -> int:
     finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
     if len(re.findall(r'class="browse-meal"', finder_text)) != len(meals):
         errors.append("meal browser: rendered meal count does not match restaurant data")
-    quiz_text = (ROOT / "js" / "meal-quiz.js").read_text(encoding="utf-8")
-    if "quiz-skip" in quiz_text or "data-clear" in quiz_text:
-        errors.append("meal quiz: small skip-link interaction returned")
-    if "quiz-option-any" not in quiz_text or "data-any" not in quiz_text:
-        errors.append("meal quiz: full-size any/no-preference options missing")
-    if "!state[s.key].length ? ' checked'" in quiz_text or "any.checked = !state[key].length" in quiz_text:
-        errors.append("meal quiz: no-preference option must not be selected automatically")
-    if "var noPreference =" not in quiz_text:
-        errors.append("meal quiz: explicit no-preference state is missing")
-    if "results.slice(0, 5)" not in quiz_text or "root._rest.splice(0, 3)" not in quiz_text:
-        errors.append("meal quiz: expected five initial results and three-at-a-time reveal")
-    if 'root.querySelector("h2").focus' in quiz_text:
-        errors.append("meal quiz: heading focus can move the mobile viewport between questions")
-    if "quiz-announcer" not in quiz_text:
-        errors.append("meal quiz: non-scrolling live step announcement is missing")
+    finder_script = (ROOT / "js" / "meal-finder.js").read_text(encoding="utf-8")
+    # Direct browsing replaces the five-question wizard. Behavioral invariants
+    # (filters, ranking, unknowns, comparison, focus, reload) are browser-tested.
+    for feature in ('finder-filters', 'data-open-filters', 'data-open-compare', 'aria-live="polite"', 'Not verified'):
+        if feature not in finder_script:
+            errors.append(f"meal finder: missing required interface feature {feature}")
+    if 'js/meal-finder.js?' not in finder_text or 'data-first-question' in finder_text:
+        errors.append('meal finder: direct browsing migration incomplete')
     # Results, filters and quiz steps update in place. They must never take
     # over the viewport: mobile Safari is especially eager to animate these
     # calls after a focused control is replaced.
@@ -428,8 +422,8 @@ def main() -> int:
         source_urls = {r["source"] for r in reviews if r["chain"] == chain}
         if not source_urls or not all(url in page_text for url in source_urls):
             errors.append(f"{page_path}: official {chain} source missing")
-        if "data-chain-finder" not in page_text or "js/chain-meal-finder.js?v=" not in page_text:
-            errors.append(f"{page_path}: restaurant-only meal matcher missing")
+        if 'class="restaurant-entry"' not in page_text or 'name="chain"' not in page_text or 'action="restaurant-meal-finder.html"' not in page_text:
+            errors.append(f"{page_path}: restaurant-specific meal finder entry missing")
         if "Compare meals across all restaurants" not in page_text:
             errors.append(f"{page_path}: all-restaurant matcher route missing")
         for meal in chain_meals:
@@ -455,9 +449,9 @@ def main() -> int:
         errors.append("calculators.html: Budget meal builder must appear exactly once")
     if "related-explore" in calc_text:
         errors.append("calculators.html: stale related-content dump remains")
-    if ("calculators-polish.css" not in calc_text and 'data-publication="2026-09"' not in calc_text) or "sex-choice-icon" not in calc_text:
-        errors.append("calculators.html: calculator readability controls missing")
-    if '<meta name="theme-color" content="#f7faf3">' not in calc_text:
+    if 'data-publication="2026-09"' not in calc_text or 'role="radiogroup" aria-labelledby="sex-label"' not in calc_text or 'class="macro-details"' not in calc_text:
+        errors.append("calculators.html: labeled calculator field grid missing")
+    if '<meta name="theme-color" content="#fffefb">' not in calc_text:
         errors.append("calculators.html: site theme color is inconsistent")
     if 'property="og:locale"' in calc_text or 'content="GetMacros.net logo"' in calc_text:
         errors.append("calculators.html: stale social metadata remains")

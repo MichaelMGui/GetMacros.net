@@ -4,3 +4,12 @@ exclude:
   - design
   - docs
   - tools
+  - preview.stdout.log
+  - preview.stderr.log
+  - full26.txt
+  - CONTENT_REVIEW.md
+  - adsense-recovery-report.md
+  - visual-redesign-report.md
+  - content-audit.csv
+  - removed-urls.csv
+  - seo-changes.csv

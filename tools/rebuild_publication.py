@@ -9,29 +9,25 @@ import json,re
 from normalize_calculator_layouts import Document
 from publication_examples import EXAMPLES
 from build_restaurant_pages import parse_meals
-from botanical_presentation import transform, LOGO as BOTANICAL_LOGO
+from market_presentation import transform, LOGO as MARKET_LOGO
+from restaurant_identity import mark
 
 ROOT=Path(__file__).resolve().parents[1]
-LOGO=BOTANICAL_LOGO
+LOGO=MARKET_LOGO
 CHAIN_SLUG={'CAVA':'cava','Chick-fil-A':'chick-fil-a','Chipotle':'chipotle','Dunkin’':'dunkin','Jersey Mike’s':'jersey-mikes','KFC':'kfc','McDonald’s':'mcdonalds','Panda Express':'panda-express','Panera':'panera','Popeyes':'popeyes','Starbucks':'starbucks','Subway':'subway','Sweetgreen':'sweetgreen','Taco Bell':'taco-bell','Wendy’s':'wendys'}
 CHAIN_PAGE={'Dunkin’':'dunkin-healthy-breakfast-macros.html','Jersey Mike’s':'jersey-mikes-healthy-subs-macros.html','Starbucks':'starbucks-healthy-food-meals-macros.html'}
 
 def home_markup():
  meals=parse_meals()
  chains=sorted(set(m['chain'] for m in meals),key=str.casefold)
- options=''.join('<option value="'+escape(c,quote=True)+'">'+escape(c)+'</option>' for c in chains)
- links=''.join('<a href="'+CHAIN_PAGE.get(c,CHAIN_SLUG[c]+'-healthy-meals-macros.html')+'" data-chain-name="'+escape(c,quote=True)+'"><span class="restaurant-initial" aria-hidden="true">'+escape(''.join(w[0] for w in c.replace('’',' ').replace('-',' ').split())[:2])+'</span><span>'+escape(c)+'</span><span aria-hidden="true">↗</span></a>' for c in chains)
- # Only display recorded values. Missing fat is a gap in the source records.
- featured=[]
- for chain,name in [('Chick-fil-A','Grilled Chicken Sandwich'),('Chipotle','Chicken Bowl with white rice and black beans'),('Sweetgreen','Chicken Pesto Parm')]:
-  m=next(x for x in meals if x['chain']==chain and x['name']==name)
-  fat='11 g' if chain=='Chick-fil-A' else '—'
-  featured.append('<article class="featured-meal"><div><span class="featured-chain">'+escape(chain)+'</span><h3>'+escape(name)+'</h3><p>'+escape(m['why'])+'</p></div><dl><div><dt>Calories</dt><dd>'+str(m['cal'])+'</dd></div><div><dt>Protein</dt><dd>'+str(m['p'])+' g</dd></div><div><dt>Carbs</dt><dd>'+str(m['c'])+' g</dd></div><div><dt>Fat</dt><dd>'+fat+'</dd></div></dl><a href="'+m['url']+'">View restaurant guide <span aria-hidden="true">↗</span></a></article>')
- return (ROOT/'tools/editorial-home.inc').read_text(encoding='utf-8').replace('__CHAIN_COUNT__',str(len(chains))).replace('__MEAL_COUNT__',str(len(meals))).replace('__RESTAURANT_OPTIONS__',options).replace('__RESTAURANT_LINKS__',links).replace('__FEATURED_MEALS__',''.join(featured))
+ links=''.join('<a href="'+CHAIN_PAGE.get(c,CHAIN_SLUG[c]+'-healthy-meals-macros.html')+'" data-chain-name="'+escape(c,quote=True)+'">'+mark(c)+'<span>'+escape(c)+'</span></a>' for c in chains)
+ return (ROOT/'tools/market-home.inc').read_text(encoding='utf-8').replace('__CHAIN_COUNT__',str(len(chains))).replace('__MEAL_COUNT__',str(len(meals))).replace('__RESTAURANT_LINKS__',links).replace('__HOME_FINDER__',(ROOT/'tools/market-home-finder.inc').read_text(encoding='utf-8'))
 
 def replace_node(text,node,replacement):return text[:node['start']]+replacement+text[node['end']:]
 
 def run():
+ from build_edition_css import build
+ build()
  for path in ROOT.glob('*.html'):
   text=path.read_text(encoding='utf-8')
   if path.name=='index.html':
@@ -43,7 +39,7 @@ def run():
     text=re.sub(r'(<meta '+attr+'="'+key+r'" content=")[^"]*',lambda m:m.group(1)+value,text,count=1)
   if path.name=='blog.html':
    doc=Document(text);main=next(n for n in doc.nodes if n['tag']=='main')
-   text=replace_node(text,main,(ROOT/'tools/editorial-blog.inc').read_text(encoding='utf-8'))
+   text=replace_node(text,main,(ROOT/'tools/market-blog.inc').read_text(encoding='utf-8'))
    journal_title='GetMacros Journal | Eating Out and Nutrition Guides'
    journal_description='Clear, source-linked answers about restaurant meals, protein, calories and everyday nutrition. Read the GetMacros Journal.'
    text=re.sub(r'<title>.*?</title>','<title>'+journal_title+'</title>',text,count=1,flags=re.S)
@@ -59,17 +55,17 @@ def run():
     text=text.replace('Updated September 9, 2026','Updated September 22, 2026')
     text=re.sub(r'("dateModified"\s*:\s*")[^"]+',r'\g<1>2026-09-22',text)
   # Remove obsolete presentation at the source, not behind a second cascade.
-  text=re.sub(r'<header\b[^>]*>.*?</header>',(ROOT/'tools/editorial-header.inc').read_text(encoding='utf-8').replace('__LOGO__',LOGO),text,count=1,flags=re.S)
-  text=re.sub(r'<footer\b[^>]*>.*?</footer>',(ROOT/'tools/editorial-footer.inc').read_text(encoding='utf-8').replace('__LOGO__',LOGO),text,count=1,flags=re.S)
+  text=re.sub(r'<header\b[^>]*>.*?</header>',(ROOT/'tools/market-header.inc').read_text(encoding='utf-8').replace('__LOGO__',LOGO),text,count=1,flags=re.S)
+  text=re.sub(r'<footer\b[^>]*class="market-footer"[^>]*>.*?</footer>',(ROOT/'tools/market-footer.inc').read_text(encoding='utf-8').replace('__LOGO__',LOGO),text,count=1,flags=re.S)
   text=re.sub(r'<style\b[^>]*>.*?</style>','',text,flags=re.S)
   text=re.sub(r'<link\b(?=[^>]*rel="stylesheet")[^>]*>','',text)
   text=re.sub(r'<link\b(?=[^>]*rel="preload")(?=[^>]*as="font")[^>]*>','',text)
   text=re.sub(r'<link\b[^>]*rel="preconnect"[^>]*href="https://pagead2\.googlesyndication\.com"[^>]*>','',text)
-  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin></head>')
+  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin></head>')
   # Publisher verification is retained. Ad serving awaits account-side CMP
   # verification; a home-made banner would not meet Google's CMP requirement.
   text=re.sub(r'<script\b[^>]*src="https://pagead2\.googlesyndication\.com/[^>]*>.*?</script>','',text,flags=re.S)
-  text=re.sub(r'<script\b[^>]*src="js/(?:main|lang|tide-motion|polish|site-motion|studio-v6|atelier-v5|calculator-suite)\.js[^>]*>.*?</script>','',text,flags=re.S)
+  text=re.sub(r'<script\b[^>]*src="js/(?:main|lang|tide-motion|polish|site-motion|studio-v6|atelier-v5|calculator-suite|page-experience)\.js[^>]*>.*?</script>','',text,flags=re.S)
   text=re.sub(r'(<body\b[^>]*?)\sdata-ads="[^"]*"',r'\1',text)
   text=re.sub(r'(<body\b[^>]*?)\sdata-publication="[^"]*"',r'\1',text)
   text=re.sub(r'<body\b', '<body data-ads="off" data-publication="2026-09"',text,count=1)

@@ -191,12 +191,13 @@
     function renderMacroResults(r) {
       var results = document.getElementById("macro-results");
       results.classList.remove("empty");
+      results.hidden = false;
       var pPct = Math.round((r.proteinCals / r.totalCals) * 100);
       var fPct = Math.round((r.fatCals / r.totalCals) * 100);
       var cPct = 100 - pPct - fPct;
 
       results.innerHTML =
-        '<div class="result-total">' +
+        '<div class="daily-estimate"><div class="result-total"><span class="eyebrow">Your daily estimate</span>' +
           '<div class="num" data-count="' + r.totalCals + '">' + fmt(r.totalCals) + '</div>' +
           '<div class="label">calories per day</div>' +
         '</div>' +
@@ -205,10 +206,10 @@
           '<span class="fat" data-target-width="' + fPct + '" style="width:0%"></span>' +
           '<span class="carbs" data-target-width="' + cPct + '" style="width:0%"></span>' +
         '</div>' +
-        macroRow("protein", "Protein", r.proteinG, r.proteinCals, pPct) +
+        '<div class="estimate-macros">' + macroRow("protein", "Protein", r.proteinG, r.proteinCals, pPct) +
         macroRow("fat", "Fat", r.fatG, r.fatCals, fPct) +
-        macroRow("carbs", "Carbohydrate", r.carbG, r.carbCals, cPct) +
-        '<details class="work-result-note"><summary>How this estimate is calculated</summary><p>Estimated resting needs: ' + fmt(r.bmr) + ' calories. Estimated daily energy use, including activity: ' + fmt(r.tdee) + ' calories. Your selected goal adjusts the daily target.</p></details>';
+        macroRow("carbs", "Carbohydrate", r.carbG, r.carbCals, cPct) + '</div></div>' +
+        '<details class="work-result-note"><summary>How this estimate is calculated</summary><p>Estimated resting needs: ' + fmt(r.bmr) + ' calories. Estimated daily energy use, including activity: ' + fmt(r.tdee) + ' calories. Your selected goal adjusts the daily target.</p></details><p class="clarity-hint">These are daily estimates. Choose a portion of your day’s calories when looking for one meal.</p><a class="btn" href="restaurant-meal-finder.html">Explore restaurant meals</a>';
 
       setResultNumber(results.querySelector(".num"), r.totalCals);
       results.querySelectorAll(".grams").forEach(function (el) {
@@ -218,10 +219,10 @@
     }
 
     function macroRow(cls, label, grams, cals, pct) {
-      return '<div class="macro-result-row">' +
-        '<span><span class="dot ' + cls + '"></span>' + label + ' (' + pct + '%)</span>' +
+      return '<div class="estimate-nutrient">' +
+        '<span class="estimate-label">' + label + '</span>' +
         '<span class="amounts"><span class="grams" data-count="' + grams + '">' + fmt(grams) + ' g</span><br>' +
-        '<span class="cals">' + fmt(cals) + ' cal</span></span>' +
+        '<span class="cals">' + pct + '% · ' + fmt(cals) + ' cal</span></span>' +
         '</div>';
     }
   }
