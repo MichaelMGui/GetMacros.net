@@ -1,0 +1,131 @@
+[
+  {
+    "command": "-X utf8 tools/apply_audited_data.py",
+    "exitCode": 0,
+    "output": "Applied source patches to 41 of 83 records; no uninspected dates refreshed.\n"
+  },
+  {
+    "command": "-X utf8 tools/build_release_resources.py",
+    "exitCode": 0,
+    "output": "Published 33 distinct sourced resources; guides, search and sitemap updated.\n"
+  },
+  {
+    "command": "-X utf8 tools/rebuild_publication.py",
+    "exitCode": 0,
+    "output": "Publication layout applied to all retained pages; publisher verification retained, ad requests paused.\n"
+  },
+  {
+    "command": "-X utf8 tools/strengthen_meal_comparisons.py",
+    "exitCode": 0,
+    "output": "Updated 15 restaurant comparisons; nutrient records and source dates unchanged.\n"
+  },
+  {
+    "command": "-X utf8 tools/sync_restaurant_release.py",
+    "exitCode": 0,
+    "output": "Synchronized 15 restaurant guides and 83 source-defined rows.\n"
+  },
+  {
+    "command": "-X utf8 tools/release_copy_audit.py --apply-reviewed --output docs/cozy-redesign-2026-10-03/copy-audit.json",
+    "exitCode": 0,
+    "output": "Reviewed edits applied: already current\nChecked 73 existing pages / 2035 authored blocks; 14 sentence groups, 8 heading groups, 10 near-paragraph pairs. Written docs\\cozy-redesign-2026-10-03\\copy-audit.json\n"
+  },
+  {
+    "command": "-X utf8 tools/refresh_release_search.py",
+    "exitCode": 0,
+    "output": "Refreshed 104 search previews from current page headings and metadata.\n"
+  },
+  {
+    "command": "-X utf8 tools/finish_release_metadata.py",
+    "exitCode": 0,
+    "output": "Release modification dates and source/privacy implementation notes reconciled; prior data-review dates preserved.\n"
+  },
+  {
+    "command": "-X utf8 tools/stamp_assets.py",
+    "exitCode": 0,
+    "output": "asset versions stamped from file contents on 106 page(s)\n"
+  },
+  {
+    "command": "-X utf8 tools/apply_audited_data.py",
+    "exitCode": 0,
+    "output": "Applied source patches to 41 of 83 records; no uninspected dates refreshed.\n"
+  },
+  {
+    "command": "-X utf8 tools/build_release_resources.py",
+    "exitCode": 0,
+    "output": "Published 33 distinct sourced resources; guides, search and sitemap updated.\n"
+  },
+  {
+    "command": "-X utf8 tools/rebuild_publication.py",
+    "exitCode": 0,
+    "output": "Publication layout applied to all retained pages; publisher verification retained, ad requests paused.\n"
+  },
+  {
+    "command": "-X utf8 tools/strengthen_meal_comparisons.py",
+    "exitCode": 0,
+    "output": "Updated 15 restaurant comparisons; nutrient records and source dates unchanged.\n"
+  },
+  {
+    "command": "-X utf8 tools/sync_restaurant_release.py",
+    "exitCode": 0,
+    "output": "Synchronized 15 restaurant guides and 83 source-defined rows.\n"
+  },
+  {
+    "command": "-X utf8 tools/release_copy_audit.py --apply-reviewed --output docs/cozy-redesign-2026-10-03/copy-audit.json",
+    "exitCode": 0,
+    "output": "Reviewed edits applied: already current\nChecked 73 existing pages / 2035 authored blocks; 14 sentence groups, 8 heading groups, 10 near-paragraph pairs. Written docs\\cozy-redesign-2026-10-03\\copy-audit.json\n"
+  },
+  {
+    "command": "-X utf8 tools/refresh_release_search.py",
+    "exitCode": 0,
+    "output": "Refreshed 104 search previews from current page headings and metadata.\n"
+  },
+  {
+    "command": "-X utf8 tools/finish_release_metadata.py",
+    "exitCode": 0,
+    "output": "Release modification dates and source/privacy implementation notes reconciled; prior data-review dates preserved.\n"
+  },
+  {
+    "command": "-X utf8 tools/stamp_assets.py",
+    "exitCode": 0,
+    "output": "asset versions stamped from file contents on 106 page(s)\n"
+  },
+  {
+    "check": "Two full builds produce identical public HTML, stylesheet, search index and sitemap",
+    "pass": true
+  },
+  {
+    "command": "-X utf8 tools/validate_site.py",
+    "exitCode": 0,
+    "output": "PASS: 106 HTML files; 105 indexable pages; 105 sitemap URLs; 104 searchable resources.\n"
+  },
+  {
+    "command": "-X utf8 tools/test_publication.py",
+    "exitCode": 0,
+    "output": "Publication: 106 pages; single stylesheet (69,039 bytes), preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.\n"
+  },
+  {
+    "command": "-X utf8 tools/test_search_visibility.py",
+    "exitCode": 0,
+    "output": "Search visibility passed: 106 pages, 5484 internal links and anchors; meal labels match source data.\n"
+  },
+  {
+    "command": "-X utf8 tools/test-content-value.py",
+    "exitCode": 0,
+    "output": "PASS: 15 comparisons match source records; missing values retained; duplicate menus absent; article anchors and methodology intact.\n"
+  },
+  {
+    "command": "-X utf8 tools/test-release-content.py",
+    "exitCode": 0,
+    "output": "PASS: {'resources': 33, 'uniqueIntents': 33, 'reproducedSourceFactEntries': 183, 'visibleNutritionRows': 142, 'snapshotInputRecords': 41, 'auditedFinderRecords': 41, 'ingredientSums': 7, 'sourceWireRoundtrip': 'lossless', 'partialCheckDates': 'preserved', 'visualInspection': 'not performed by this script'}\n"
+  },
+  {
+    "command": "node tools/test_macro_math.js",
+    "exitCode": 0,
+    "output": "PASS: conversions, BMR, TDEE, goal adjustments and macro energy balance.\n"
+  },
+  {
+    "command": "node tools/test-companion-engine.cjs",
+    "exitCode": 0,
+    "output": "PASS Calorie maximum is strict and inclusive \nPASS Protein minimum is strict and inclusive \nPASS Fiber minimum uses the actual value and includes its boundary \nPASS Sodium maximum uses milligrams and includes its boundary \nPASS Fiber and sodium limits exclude unknown nutrient values \nPASS Unknown calories and protein are excluded by explicit limits \nPASS Combined limits never relax after a no-match result \nPASS Explicit zero is a real supported limit \nPASS Optional missing values remain null without fabricated zero \nPASS Restaurant and meal-time selections use OR within their group \nPASS Ingredient selections are strict supported exclusions \nPASS Size preference changes rank without excluding other sizes \nPASS Soft priorities retain incomplete meals when explicitly included \nPASS Protein preference ranks a supported protein-tagged order first \nPASS Explicit numeric sorts are predictable \nPASS Missing values sort last when incomplete records are included \nPASS URL state round trip preserves all supported selections and limits \nPASS Unsupported, repeated and out-of-range URL values are normalized \nPASS Filtering/ranking do not mutate the dataset \nPASS Production provenance expands losslessly and preserves partial-source dates \nPASS No preference preserves catalogue order without hidden nutrient ranking \n21/21 release engine checks passed.\n"
+  }
+]

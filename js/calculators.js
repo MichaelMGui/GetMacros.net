@@ -93,11 +93,11 @@
     function setHeightUnit(unit) {
       if (unit !== heightUnit) {
         var feet = document.getElementById("height-ft"), inches = document.getElementById("height-in"), cm = document.getElementById("height-cm");
-        if (unit === "cm" && feet.value !== "") cm.value = Math.round(toCm(Number(feet.value), "ftin", Number(inches.value)));
+        if (unit === "cm" && feet.value !== "") cm.value = toCm(Number(feet.value), "ftin", Number(inches.value)).toFixed(1);
         else if (unit === "ftin" && cm.value !== "") {
-          var totalInches = Math.round(Number(cm.value) * IN_PER_CM);
+          var totalInches = Math.round(Number(cm.value) * IN_PER_CM * 10) / 10;
           feet.value = Math.floor(totalInches / 12);
-          inches.value = totalInches % 12;
+          inches.value = (totalInches % 12).toFixed(1);
         }
       }
       heightUnit = setUnitGroup(heightUnitButtons, unit);

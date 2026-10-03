@@ -1,0 +1,655 @@
+{
+  "scope": "Tracked root HTML before new release resources; source-text check only",
+  "pages": [
+    "404.html",
+    "about.html",
+    "accessibility.html",
+    "are-diet-drinks-bad-for-you.html",
+    "articles.html",
+    "best-fast-food-restaurants-for-your-goals.html",
+    "blog.html",
+    "body-recomposition-explained.html",
+    "budget-meal-builder.html",
+    "calculators.html",
+    "calories-on-rest-days.html",
+    "calories-vs-macros-what-matters-more.html",
+    "can-you-build-muscle-in-a-calorie-deficit.html",
+    "carbohydrate-label-portion-tool.html",
+    "carbs.html",
+    "cava-healthy-meals-macros.html",
+    "chick-fil-a-healthy-meals-macros.html",
+    "chipotle-healthy-meals-macros.html",
+    "contact.html",
+    "corrections.html",
+    "cutting-bulking-maintenance-explained.html",
+    "does-creatine-cause-hair-loss.html",
+    "dunkin-healthy-breakfast-macros.html",
+    "editorial-policy.html",
+    "fats.html",
+    "healthy-fast-food.html",
+    "high-protein-foods-list.html",
+    "how-many-calories-should-i-eat-a-day.html",
+    "how-much-fiber-per-day.html",
+    "how-much-protein-can-your-body-absorb.html",
+    "how-much-protein-per-day.html",
+    "how-much-sodium-per-day.html",
+    "how-to-build-a-balanced-meal-with-macros.html",
+    "how-to-calculate-macros-by-hand.html",
+    "how-to-calculate-maintenance-calories.html",
+    "how-to-calculate-recipe-nutrition.html",
+    "how-to-eat-out-without-wrecking-your-goal.html",
+    "how-to-hit-protein-goal-on-budget.html",
+    "how-to-read-a-nutrition-label.html",
+    "index.html",
+    "jersey-mikes-healthy-subs-macros.html",
+    "kfc-healthy-meals-macros.html",
+    "macros-for-muscle-gain.html",
+    "macros-for-weight-loss.html",
+    "mcdonalds-healthy-meals-macros.html",
+    "nutrition-label-comparison-tool.html",
+    "panda-express-healthy-meals-macros.html",
+    "panera-healthy-meals-macros.html",
+    "popeyes-healthy-meals-macros.html",
+    "privacy.html",
+    "protein-value-calculator.html",
+    "protein.html",
+    "recipe-macro-scaler.html",
+    "restaurant-meal-finder.html",
+    "restaurant-meal-guides.html",
+    "search.html",
+    "serving-size-vs-portion-size.html",
+    "sodium-label-comparison-tool.html",
+    "sources.html",
+    "starbucks-healthy-food-meals-macros.html",
+    "subway-healthy-meals-macros.html",
+    "sweat-rate-calculator.html",
+    "sweetgreen-healthy-meals-macros.html",
+    "taco-bell-healthy-meals-macros.html",
+    "terms.html",
+    "weight-goal-timeline-calculator.html",
+    "wendys-healthy-meals-macros.html",
+    "what-are-macros.html",
+    "what-is-a-calorie-deficit.html",
+    "what-to-eat-after-a-workout.html",
+    "what-to-eat-before-a-workout.html",
+    "when-to-recalculate-calories-and-macros.html",
+    "why-did-i-gain-weight-overnight.html"
+  ],
+  "pageCount": 73,
+  "authoredBlockCount": 2035,
+  "exclusions": "Outside main; navigation/footer/scripts; table records (factual values/serving/source notes); source lists, publication metadata, shared navigation labels and named disclosure classes. Legal pages retained for review; legitimate legal/source reuse is not automatically rewritten.",
+  "thresholds": {
+    "sentenceMinimumWords": 8,
+    "headingMinimumWords": 4,
+    "paragraphMinimumWords": 25,
+    "nearParagraphSimilarity": 0.94
+  },
+  "repeatedSentences": [
+    [
+      {
+        "route": "best-fast-food-restaurants-for-your-goals.html",
+        "line": 24,
+        "tag": "p",
+        "text": "Tofu, mushrooms, rice and vegetables with miso sesame ginger dressing."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Tofu, mushrooms, rice and vegetables with miso sesame ginger dressing."
+      }
+    ],
+    [
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Standard Greek Salad bowl from CAVA’s published nutrition guide."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Standard Greek Salad bowl from CAVA’s published nutrition guide."
+      }
+    ],
+    [
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Confirm the current build and availability when ordering."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Confirm the current build and availability when ordering."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Adobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine."
+      },
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Adobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Adobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Carbs and sodium are calculated from Chipotle's published ingredient values."
+      },
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Carbs and sodium are calculated from Chipotle's published ingredient values."
+      },
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Carbs and sodium are calculated from Chipotle's published ingredient values."
+      },
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Carbs and sodium are calculated from Chipotle's published ingredient values."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Carbs and sodium are calculated from Chipotle's published ingredient values."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Carbs and sodium are calculated from Chipotle's published ingredient values."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Adobo chicken, Supergreens, fajita vegetables, fresh tomato salsa and guacamole."
+      },
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Adobo chicken, Supergreens, fajita vegetables, fresh tomato salsa and guacamole."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Adobo chicken, Supergreens, fajita vegetables, fresh tomato salsa and guacamole."
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Use a few questions or go straight to the meals."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Use a few questions or go straight to the meals."
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Adobo chicken, white rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Adobo chicken, white rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine."
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Values are summed from Chipotle's published ingredient table."
+      },
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Values are summed from Chipotle's published ingredient table."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Values are summed from Chipotle's published ingredient table."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Values are summed from Chipotle's published ingredient table."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Values are summed from Chipotle's published ingredient table."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Values are summed from Chipotle's published ingredient table."
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Sofritas, brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Sofritas, brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine."
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "p",
+        "text": "Portions, sauces and local recipes may change the numbers."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Portions, sauces and local recipes may change the numbers."
+      }
+    ],
+    [
+      {
+        "route": "mcdonalds-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Extra sides, sauces and drinks are not included."
+      },
+      {
+        "route": "mcdonalds-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Extra sides, sauces and drinks are not included."
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Chicken, quinoa and vegetables with parmesan, breadcrumbs and pesto vinaigrette."
+      },
+      {
+        "route": "sweetgreen-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Chicken, quinoa and vegetables with parmesan, breadcrumbs and pesto vinaigrette."
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "p",
+        "text": "Chicken and warm grains with sweet potato, apple, goat cheese and almonds."
+      },
+      {
+        "route": "sweetgreen-healthy-meals-macros.html",
+        "line": 61,
+        "tag": "p",
+        "text": "Chicken and warm grains with sweet potato, apple, goat cheese and almonds."
+      }
+    ]
+  ],
+  "repeatedHeadings": [
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "h2",
+        "text": "Find your next order"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "Find your next order"
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "h2",
+        "text": "High Protein-High Fiber Bowl"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "High Protein-High Fiber Bowl"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 53,
+        "tag": "h3",
+        "text": "High Protein-High Fiber Bowl"
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "h2",
+        "text": "High Protein-Low Calorie Salad"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "High Protein-Low Calorie Salad"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 61,
+        "tag": "h3",
+        "text": "High Protein-Low Calorie Salad"
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "h2",
+        "text": "Chicken Bowl with white rice and black beans"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "Chicken Bowl with white rice and black beans"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 45,
+        "tag": "h3",
+        "text": "Chicken Bowl with white rice and black beans"
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "h2",
+        "text": "Sofritas Bowl with brown rice and black beans"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "Sofritas Bowl with brown rice and black beans"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 69,
+        "tag": "h3",
+        "text": "Sofritas Bowl with brown rice and black beans"
+      }
+    ],
+    [
+      {
+        "route": "index.html",
+        "line": 54,
+        "tag": "h2",
+        "text": "Your meals, side by side"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "Your meals, side by side"
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "Veggie Bowl with brown rice, black beans and guacamole"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 85,
+        "tag": "h3",
+        "text": "Veggie Bowl with brown rice, black beans and guacamole"
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 22,
+        "tag": "h2",
+        "text": "Steak Salad with black beans, no rice"
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "line": 77,
+        "tag": "h3",
+        "text": "Steak Salad with black beans, no rice"
+      }
+    ]
+  ],
+  "nearParagraphs": [
+    {
+      "similarity": 0.967,
+      "locations": [
+        {
+          "route": "chipotle-healthy-meals-macros.html",
+          "line": 61,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine"
+        },
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.967,
+      "locations": [
+        {
+          "route": "chipotle-healthy-meals-macros.html",
+          "line": 61,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.957,
+      "locations": [
+        {
+          "route": "chipotle-healthy-meals-macros.html",
+          "line": 61,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 3 oz supergreens, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole"
+        },
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 3 oz supergreens, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.957,
+      "locations": [
+        {
+          "route": "chipotle-healthy-meals-macros.html",
+          "line": 61,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 3 oz supergreens, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 3 oz supergreens, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.968,
+      "locations": [
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 4 oz white rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.955,
+      "locations": [
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz sofritas, 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.968,
+      "locations": [
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 4 oz white rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.944,
+      "locations": [
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 4 oz white rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz sofritas, 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.955,
+      "locations": [
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz sofritas, 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    },
+    {
+      "similarity": 0.944,
+      "locations": [
+        {
+          "route": "index.html",
+          "line": 54,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz sofritas, 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        },
+        {
+          "route": "restaurant-meal-finder.html",
+          "line": 22,
+          "tag": "p",
+          "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 4 oz white rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu"
+        }
+      ]
+    }
+  ]
+}

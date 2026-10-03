@@ -24,14 +24,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Rebuild and validate the focused site
-        run: sh tools/build_site.sh
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: "24"
+      - name: Rebuild and validate the focused site
+        run: sh tools/build_site.sh
       - name: Test filtering, units and calculator formulas
         run: |
           node tools/test_macro_math.js
-          node tools/test-release-engine.cjs
+          node tools/test-companion-engine.cjs
           python3 tools/test-release-content.py

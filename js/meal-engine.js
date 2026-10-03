@@ -18,7 +18,7 @@ if(s.chain.length&&!s.chain.includes(m.chain)||s.meal.length&&!s.meal.includes(m
 if(!s.diet.every(d=>(m.diet||[]).includes(d)))return false;
 return [['maxCal','cal',false],['minProtein','p',true],['minFiber','f',true],['maxSodium','na',false]].every(([k,n,min])=>s[k]===null||Number.isFinite(m[n])&&(min?m[n]>=s[k]:m[n]<=s[k]));
 }
-function score(m,s){let n=s.size.length&&m.size===s.size[0]?28:0;s.goal.forEach(g=>{if((m.t||[]).includes(g))n+=65;});if(Number.isFinite(m.p))n+=Math.min(m.p,50)*.5;if(Number.isFinite(m.f))n+=Math.min(m.f,15)*.5;if(Number.isFinite(m.p)&&m.cal)n+=m.p/m.cal*100;if(!complete(m))n-=40;return n;}
+function score(m,s){let n=s.size.length&&m.size===s.size[0]?28:0;s.goal.forEach(g=>{if((m.t||[]).includes(g))n+=65;if(g==='protein'&&Number.isFinite(m.p))n+=Math.min(m.p,100)*.5;if(g==='fibre'&&Number.isFinite(m.f))n+=Math.min(m.f,25);if(g==='lowsodium'&&Number.isFinite(m.na))n+=Math.max(0,3000-m.na)/1000;});return n;}
 function results(meals,s){return meals.filter(m=>eligible(m,s)).sort((a,b)=>s.sort==='calories'?(a.cal??Infinity)-(b.cal??Infinity)||score(b,s)-score(a,s):s.sort==='protein'?(b.p??-Infinity)-(a.p??-Infinity)||score(b,s)-score(a,s):score(b,s)-score(a,s));}
 const api={limits,facets,complete,key,normalize,fromSearch,toSearch,eligible,score,results};global.GetMacrosMeals=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);

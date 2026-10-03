@@ -1,0 +1,1968 @@
+[
+  {
+    "name": "cozy",
+    "url": "https://cozytonight.com",
+    "status": 200,
+    "title": "CozyTonight — Find something cozy to watch or play",
+    "content": "Skip to content\nCozyTonight\nBrowse\nTheCozyBlog\nSeasons\nPlay\nSaved\nWarm\nCold\n\n✳\nAutumn at CozyTonight\nNo. 01 · The evening edition\n\nFind something\ncozy\nto watch or play.\n\nMovies, TV shows, video games and board games—rated for comfort, with links to watch, play or buy.\n\n✦\nHelp me choose\nBrowse the library\nSay hello\n✦\nSEASONAL FILM\nChristopher Robin\n↗\nSEASONAL PICKS\nA little autumn magic\nExplore autumn ↗\n→\n01\nMovies\n02\nTV Shows\n03\nVideo Games\n04\nBoard Games\nTHE FEATURED SCREENING\nTonight’s highlights\nAll movies ↗\nMOVIES · 1989\nKiki’s Delivery Service\n\nA seaside bakery and a fresh start.\n\n81\nCozy Score\nExplore title →\nA small world to wander into\n01 / 02\nVIDEO GAMES\nTiny Glade\n\nShape miniature buildings and courtyards without a checklist.\n\n98\nCozy Score\nExplore title →\n\nCozy Score is about comfort, not quality. See how it works ↗\n\nTHECOZYBLOG · THE READING ROOM\nFor the nights when choosing is the hard part.\nExplore TheCozyBlog\n01 / GAMES\nCozy games without combat: four different ways to unwind\nA practical guide to combat-free cozy games, from small explorations to building and arranging, with the pressures each game still has.\n02 / TABLETOP\nCozy board games for two: choose your kind of togetherness\nCompare a cooperative landing, a nature puzzle and a quilt puzzle for two players, with honest notes on tension.\n03 / GAMES\nWant Stardew Valley’s creativity without its daily clock?\nAlternatives for people who like making a cozy place but would rather avoid Stardew Valley’s daily time pressure and mine combat.\nMOVIES\nMovies for tonight\nBrowse all 50 →\n78\nMovies\nPaddington 2\n\nA small bear. A very big heart.\n\n76\nMovies\nLuca\n\nAn Italian summer of friendship and small-town discovery.\n\n55\nMovies\nWolfwalkers\n\nA forest friendship that challenges the walls around it.\n\n62\nMovies\nSong of the Sea\n\nA hand-drawn folktale about family and finding a voice.\n\n81\nMovies\nAmélie\n\nSmall acts of imagination in a richly detailed Paris.\n\n80\nMovies\nMy Neighbor Totoro\n\nFind wonder in the everyday.\n\nVIDEO GAMES\nGames at your own pace\nBrowse all 50 →\n98\nVideo Games\nTiny Glade\n\nShape miniature buildings and courtyards without a checklist.\n\n71\nVideo Games\nSpiritfarer\n\nCare for passengers on a warmly illustrated boat.\n\n76\nVideo Games\nOoblets\n\nFarming and creature collecting with dance-battle humour.\n\n92\nVideo Games\nDorfromantik\n\nBuild a landscape. Let your thoughts wander.\n\n77\nVideo Games\nCozy Grove: Camp Spirit\n\nA new island of ghostly requests and patient discovery.\n\n85\nVideo Games\nSmushi Come Home\n\nA tiny mushroom searches for a way home.\n\nTV SHOWS\nOne more episode\nBrowse all 50 →\n72\nTV Shows\nTed Lasso\n\nKindness and team-building in a competitive setting.\n\n88\nTV Shows\nPokémon Concierge\n\nHospitality and small discoveries at a Pokémon resort.\n\n98\nTV Shows\nFlying Witch\n\nEveryday country life with small magical interruptions.\n\n75\nTV Shows\nNatsume's Book of Friends\n\nA gentle observer builds connections with spirits.\n\n74\nTV Shows\nMushishi\n\nReflective encounters with strange natural phenomena.\n\nBOARD GAMES\nYour next game night\nBrowse all 50 →\n89\nBoard Games\nCascadia\n\nA pocket of wilderness on your table.\n\n77\nBoard Games\nCalico\n\nQuilts, cats, and a surprisingly clever puzzle.\n\n87\nBoard Games\nDixit\n\nDreamlike images become clues for friends.\n\n67\nBoard Games\nMysterium\n\nInterpret dreamlike clues in a cooperative mystery.\n\n89\nBoard Games\nHarmonies\n\nStack a small landscape and make homes for animals.\n\n71\nBoard Games\nCodenames: Duet\n\nA shared word puzzle for careful clue-giving.\n\nCozyTonight\n\nEntertainment recommendations, comfort notes and links to providers. CozyTonight does not stream movies or shows.\n\nBROWSE\nMovies\nTV Shows\nVideo Games\nBoard Games\nTheCozyBlog\nSeasons & Moods\nPlay & Quizzes\nABOUT\nAbout\nHow we score\nEditorial policy\nContact\nPrivacy\nTerms\n\nIndependent, source-based recommendations. Saved titles stay in this browser.",
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to content",
+        "label": null,
+        "href": "#main"
+      },
+      {
+        "tag": "A",
+        "text": "CozyTonight",
+        "label": null,
+        "href": "/"
+      },
+      {
+        "tag": "A",
+        "text": "MoviesFilms by mood and runtime",
+        "label": null,
+        "href": "/movies"
+      },
+      {
+        "tag": "A",
+        "text": "TV showsEpisodes for the evening",
+        "label": null,
+        "href": "/tv-shows"
+      },
+      {
+        "tag": "A",
+        "text": "Video gamesWorlds by platform and pace",
+        "label": null,
+        "href": "/video-games"
+      },
+      {
+        "tag": "A",
+        "text": "Board gamesFind your player count",
+        "label": null,
+        "href": "/board-games"
+      },
+      {
+        "tag": "A",
+        "text": "FEATURED SCREENINGKiki’s Delivery ServiceExplore the film ↗",
+        "label": null,
+        "href": "/movies/kikis-delivery-service"
+      },
+      {
+        "tag": "A",
+        "text": "TheCozyBlog",
+        "label": null,
+        "href": "/thecozyblog"
+      },
+      {
+        "tag": "A",
+        "text": "Seasons",
+        "label": null,
+        "href": "/seasons"
+      },
+      {
+        "tag": "A",
+        "text": "Play",
+        "label": null,
+        "href": "/play"
+      },
+      {
+        "tag": "A",
+        "text": "Saved",
+        "label": null,
+        "href": "/my-cozy-list"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Warm",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cold",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Canada",
+        "label": "Region",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Calm mode",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": "Search",
+        "href": "/search"
+      },
+      {
+        "tag": "A",
+        "text": "✦ Help me choose",
+        "label": null,
+        "href": "/quiz/tonight"
+      },
+      {
+        "tag": "A",
+        "text": "Browse the library",
+        "label": null,
+        "href": "/search"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Say hello✦",
+        "label": "Say hello to the autumn character",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "SEASONAL FILMChristopher Robin↗",
+        "label": "Explore the autumn featured movie, Christopher Robin",
+        "href": "/movies/christopher-robin"
+      },
+      {
+        "tag": "A",
+        "text": "Explore autumn ↗",
+        "label": "Explore autumn picks",
+        "href": "/seasons/autumn"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": "Search movies, shows, games or moods",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "→",
+        "label": "Search titles",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "01Movies",
+        "label": null,
+        "href": "/movies"
+      },
+      {
+        "tag": "A",
+        "text": "02TV Shows",
+        "label": null,
+        "href": "/tv-shows"
+      },
+      {
+        "tag": "A",
+        "text": "03Video Games",
+        "label": null,
+        "href": "/video-games"
+      },
+      {
+        "tag": "A",
+        "text": "04Board Games",
+        "label": null,
+        "href": "/board-games"
+      },
+      {
+        "tag": "A",
+        "text": "All movies ↗",
+        "label": null,
+        "href": "/movies"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/movies/kikis-delivery-service"
+      },
+      {
+        "tag": "A",
+        "text": "Kiki’s Delivery Service",
+        "label": null,
+        "href": "/movies/kikis-delivery-service"
+      },
+      {
+        "tag": "A",
+        "text": "Explore title →",
+        "label": "Explore Kiki’s Delivery Service",
+        "href": "/movies/kikis-delivery-service"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Kiki’s Delivery Service",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/video-games/tiny-glade"
+      },
+      {
+        "tag": "A",
+        "text": "Tiny Glade",
+        "label": null,
+        "href": "/video-games/tiny-glade"
+      },
+      {
+        "tag": "A",
+        "text": "Explore title →",
+        "label": "Explore Tiny Glade",
+        "href": "/video-games/tiny-glade"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Tiny Glade",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "See how it works ↗",
+        "label": null,
+        "href": "/how-we-score"
+      },
+      {
+        "tag": "A",
+        "text": "Explore TheCozyBlog",
+        "label": null,
+        "href": "/thecozyblog"
+      },
+      {
+        "tag": "A",
+        "text": "01 / GAMESCozy games without combat: four different ways to unwindA practical guide to combat-free c",
+        "label": null,
+        "href": "/thecozyblog/cozy-games-without-combat"
+      },
+      {
+        "tag": "A",
+        "text": "02 / TABLETOPCozy board games for two: choose your kind of togethernessCompare a cooperative landing",
+        "label": null,
+        "href": "/thecozyblog/cozy-board-games-for-two"
+      },
+      {
+        "tag": "A",
+        "text": "03 / GAMESWant Stardew Valley’s creativity without its daily clock?Alternatives for people who like ",
+        "label": null,
+        "href": "/thecozyblog/stardew-without-the-clock"
+      },
+      {
+        "tag": "A",
+        "text": "Browse all 50 →",
+        "label": null,
+        "href": "/movies"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/movies/paddington-2"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Paddington 2",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Paddington 2",
+        "label": null,
+        "href": "/movies/paddington-2"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/movies/luca"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Luca",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Luca",
+        "label": null,
+        "href": "/movies/luca"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/movies/wolfwalkers"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Wolfwalkers",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Wolfwalkers",
+        "label": null,
+        "href": "/movies/wolfwalkers"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/movies/song-of-the-sea"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Song of the Sea",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Song of the Sea",
+        "label": null,
+        "href": "/movies/song-of-the-sea"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/movies/amelie"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Amélie",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Amélie",
+        "label": null,
+        "href": "/movies/amelie"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/movies/my-neighbor-totoro"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save My Neighbor Totoro",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "My Neighbor Totoro",
+        "label": null,
+        "href": "/movies/my-neighbor-totoro"
+      },
+      {
+        "tag": "A",
+        "text": "Browse all 50 →",
+        "label": null,
+        "href": "/video-games"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/video-games/tiny-glade"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Tiny Glade",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Tiny Glade",
+        "label": null,
+        "href": "/video-games/tiny-glade"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/video-games/spiritfarer"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Spiritfarer",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Spiritfarer",
+        "label": null,
+        "href": "/video-games/spiritfarer"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/video-games/ooblets"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Ooblets",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Ooblets",
+        "label": null,
+        "href": "/video-games/ooblets"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/video-games/dorfromantik"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Dorfromantik",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Dorfromantik",
+        "label": null,
+        "href": "/video-games/dorfromantik"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/video-games/cozy-grove-camp-spirit"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Cozy Grove: Camp Spirit",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Cozy Grove: Camp Spirit",
+        "label": null,
+        "href": "/video-games/cozy-grove-camp-spirit"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/video-games/smushi-come-home"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Smushi Come Home",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Smushi Come Home",
+        "label": null,
+        "href": "/video-games/smushi-come-home"
+      },
+      {
+        "tag": "A",
+        "text": "Browse all 50 →",
+        "label": null,
+        "href": "/tv-shows"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/tv-shows/ted-lasso"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Ted Lasso",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Ted Lasso",
+        "label": null,
+        "href": "/tv-shows/ted-lasso"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/tv-shows/pokemon-concierge"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Pokémon Concierge",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Pokémon Concierge",
+        "label": null,
+        "href": "/tv-shows/pokemon-concierge"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/tv-shows/flying-witch"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Flying Witch",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Flying Witch",
+        "label": null,
+        "href": "/tv-shows/flying-witch"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/tv-shows/natsume-s-book-of-friends"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Natsume's Book of Friends",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Natsume's Book of Friends",
+        "label": null,
+        "href": "/tv-shows/natsume-s-book-of-friends"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/tv-shows/mushishi"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Mushishi",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Mushishi",
+        "label": null,
+        "href": "/tv-shows/mushishi"
+      },
+      {
+        "tag": "A",
+        "text": "Browse all 50 →",
+        "label": null,
+        "href": "/board-games"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/board-games/cascadia"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Cascadia",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Cascadia",
+        "label": null,
+        "href": "/board-games/cascadia"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/board-games/calico"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Calico",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Calico",
+        "label": null,
+        "href": "/board-games/calico"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/board-games/dixit"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Dixit",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Dixit",
+        "label": null,
+        "href": "/board-games/dixit"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/board-games/mysterium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Mysterium",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Mysterium",
+        "label": null,
+        "href": "/board-games/mysterium"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/board-games/harmonies"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Harmonies",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Harmonies",
+        "label": null,
+        "href": "/board-games/harmonies"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": null,
+        "href": "/board-games/codenames-duet"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Save Codenames: Duet",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Codenames: Duet",
+        "label": null,
+        "href": "/board-games/codenames-duet"
+      },
+      {
+        "tag": "A",
+        "text": "CozyTonight",
+        "label": null,
+        "href": "/"
+      },
+      {
+        "tag": "A",
+        "text": "Movies",
+        "label": null,
+        "href": "/movies"
+      },
+      {
+        "tag": "A",
+        "text": "TV Shows",
+        "label": null,
+        "href": "/tv-shows"
+      },
+      {
+        "tag": "A",
+        "text": "Video Games",
+        "label": null,
+        "href": "/video-games"
+      },
+      {
+        "tag": "A",
+        "text": "Board Games",
+        "label": null,
+        "href": "/board-games"
+      },
+      {
+        "tag": "A",
+        "text": "TheCozyBlog",
+        "label": null,
+        "href": "/thecozyblog"
+      },
+      {
+        "tag": "A",
+        "text": "Seasons & Moods",
+        "label": null,
+        "href": "/seasons"
+      },
+      {
+        "tag": "A",
+        "text": "Play & Quizzes",
+        "label": null,
+        "href": "/play"
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "label": null,
+        "href": "/about"
+      },
+      {
+        "tag": "A",
+        "text": "How we score",
+        "label": null,
+        "href": "/how-we-score"
+      },
+      {
+        "tag": "A",
+        "text": "Editorial policy",
+        "label": null,
+        "href": "/editorial-policy"
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "label": null,
+        "href": "/contact"
+      },
+      {
+        "tag": "A",
+        "text": "Privacy",
+        "label": null,
+        "href": "/privacy"
+      },
+      {
+        "tag": "A",
+        "text": "Terms",
+        "label": null,
+        "href": "/terms"
+      }
+    ],
+    "styles": {
+      "heading": "Fraunces, Georgia, serif",
+      "body": "\"Hanken Grotesk\", sans-serif",
+      "background": "rgb(244, 236, 221)",
+      "animations": [
+        {
+          "type": "CSSAnimation",
+          "duration": 7000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 700,
+          "iterations": 1
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": "auto",
+          "iterations": 1
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 900,
+          "iterations": 1
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 7000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 4700,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 3500,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9800,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 10600,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 11400,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 12200,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 13000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 8000,
+          "iterations": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "cozy-quiz",
+    "url": "https://cozytonight.com/quiz/tonight",
+    "status": 200,
+    "title": "Recommendation quiz · CozyTonight",
+    "content": "Skip to content\nCozyTonight\nBrowse\nTheCozyBlog\nSeasons\nPlay\nSaved\nWarm\nCold\n\nA LITTLE HELP CHOOSING\n\nStart fresh\n\n01 / 04\n\nWhat would you like to find?\n\nChoose one or more, or let us surprise you.\n\nMovies\nTV shows\nVideo games\nBoard games\n✳\nSurprise me\nBack\nContinue\n\nPick your kind of evening.\n\nQuiz answers stay on this device. Cozy Score measures comfort, not quality.\n\nCozyTonight\n\nEntertainment recommendations, comfort notes and links to providers. CozyTonight does not stream movies or shows.\n\nBROWSE\nMovies\nTV Shows\nVideo Games\nBoard Games\nTheCozyBlog\nSeasons & Moods\nPlay & Quizzes\nABOUT\nAbout\nHow we score\nEditorial policy\nContact\nPrivacy\nTerms\n\nIndependent, source-based recommendations. Saved titles stay in this browser.",
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to content",
+        "label": null,
+        "href": "#main"
+      },
+      {
+        "tag": "A",
+        "text": "CozyTonight",
+        "label": null,
+        "href": "/"
+      },
+      {
+        "tag": "A",
+        "text": "MoviesFilms by mood and runtime",
+        "label": null,
+        "href": "/movies"
+      },
+      {
+        "tag": "A",
+        "text": "TV showsEpisodes for the evening",
+        "label": null,
+        "href": "/tv-shows"
+      },
+      {
+        "tag": "A",
+        "text": "Video gamesWorlds by platform and pace",
+        "label": null,
+        "href": "/video-games"
+      },
+      {
+        "tag": "A",
+        "text": "Board gamesFind your player count",
+        "label": null,
+        "href": "/board-games"
+      },
+      {
+        "tag": "A",
+        "text": "FEATURED SCREENINGKiki’s Delivery ServiceExplore the film ↗",
+        "label": null,
+        "href": "/movies/kikis-delivery-service"
+      },
+      {
+        "tag": "A",
+        "text": "TheCozyBlog",
+        "label": null,
+        "href": "/thecozyblog"
+      },
+      {
+        "tag": "A",
+        "text": "Seasons",
+        "label": null,
+        "href": "/seasons"
+      },
+      {
+        "tag": "A",
+        "text": "Play",
+        "label": null,
+        "href": "/play"
+      },
+      {
+        "tag": "A",
+        "text": "Saved",
+        "label": null,
+        "href": "/my-cozy-list"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Warm",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cold",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Canada",
+        "label": "Region",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Calm mode",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "label": "Search",
+        "href": "/search"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Start fresh",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Movies",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "TV shows",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Video games",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Board games",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "✳Surprise me",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Back",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Continue",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "CozyTonight",
+        "label": null,
+        "href": "/"
+      },
+      {
+        "tag": "A",
+        "text": "Movies",
+        "label": null,
+        "href": "/movies"
+      },
+      {
+        "tag": "A",
+        "text": "TV Shows",
+        "label": null,
+        "href": "/tv-shows"
+      },
+      {
+        "tag": "A",
+        "text": "Video Games",
+        "label": null,
+        "href": "/video-games"
+      },
+      {
+        "tag": "A",
+        "text": "Board Games",
+        "label": null,
+        "href": "/board-games"
+      },
+      {
+        "tag": "A",
+        "text": "TheCozyBlog",
+        "label": null,
+        "href": "/thecozyblog"
+      },
+      {
+        "tag": "A",
+        "text": "Seasons & Moods",
+        "label": null,
+        "href": "/seasons"
+      },
+      {
+        "tag": "A",
+        "text": "Play & Quizzes",
+        "label": null,
+        "href": "/play"
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "label": null,
+        "href": "/about"
+      },
+      {
+        "tag": "A",
+        "text": "How we score",
+        "label": null,
+        "href": "/how-we-score"
+      },
+      {
+        "tag": "A",
+        "text": "Editorial policy",
+        "label": null,
+        "href": "/editorial-policy"
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "label": null,
+        "href": "/contact"
+      },
+      {
+        "tag": "A",
+        "text": "Privacy",
+        "label": null,
+        "href": "/privacy"
+      },
+      {
+        "tag": "A",
+        "text": "Terms",
+        "label": null,
+        "href": "/terms"
+      }
+    ],
+    "styles": {
+      "heading": "Fraunces, Georgia, serif",
+      "body": "\"Hanken Grotesk\", sans-serif",
+      "background": "rgb(244, 236, 221)",
+      "animations": [
+        {
+          "type": "CSSAnimation",
+          "duration": 7000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 700,
+          "iterations": 1
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": "auto",
+          "iterations": 1
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 900,
+          "iterations": 1
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 7000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 4700,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 3500,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9000,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 9800,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 10600,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 11400,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 12200,
+          "iterations": null
+        },
+        {
+          "type": "CSSAnimation",
+          "duration": 13000,
+          "iterations": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "getmacros-before",
+    "url": "https://getmacros.net/",
+    "status": 200,
+    "title": "Find a fast-food meal that fits your macros | GetMacros",
+    "content": "Skip to main content\nGetMacros\nSearch\n01\nFind a meal\n02\nRestaurants\n03\nCalculators\n04\nLearn\nFast food.\nYour macros.\n\nFind fast-food meals by calories and protein.\n\n83 recorded orders\n15 restaurants\nU.S. menus\nFind your next order\n\nUse a few questions or go straight to the meals.\n\nHelp me choose\nBrowse meals\nSaved meals\nMaximum calories\nMinimum protein (g)\nChoose restaurants\nMore preferences\nReset filters\n\n78 meals match\n\nOrder by\nPreference order\nLowest calories\nMost protein\nPopeyes\nSave meal\n5 Blackened Tenders\n\n5 tenders, biscuit, sauce and drink excluded · U.S. menu\n\nCalories\n280\nProtein\n47 g\nCarbs\n4 g\nFat\n9 g\n\nFive blackened tenders, without sides or sauces. High in protein, with 1,430 mg sodium.\n\nDetails & source\nCompare meal\nChick-fil-A\nSave meal\n30 grilled nuggets, medium waffle fries and large fruit cup\n\n1 listed order · U.S. menu\n\nCalories\n1,050\nProtein\n104 g\nCarbs\n77 g\nFat\nNot verified\n\n30 grilled nuggets, medium waffle fries and a large fruit cup: 510 + 420 + 120 calories. No extra sauce or drink.\n\nDetails & source\nCompare meal\nSubway\nSave meal\nFootlong Grilled Chicken & Fresh Avocado\n\n1 listed order · U.S. menu\n\nCalories\n900\nProtein\n70 g\nCarbs\n88 g\nFat\nNot verified\n\nTwo six-inch servings of the Fresh Fit recipe. Subway instructs doubling its six-inch values for a footlong.\n\nDetails & source\nCompare meal\nChipotle\nSave meal\nHigh Protein-High Fiber Bowl\n\nListed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine · U.S. menu\n\nCalories\n540\nProtein\n46 g\nCarbs\n66 g\nFat\n13 g\n\nAdobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine. Carbs and sodium are calculated from Chipotle's published ingredient values.\n\nDetails & source\nCompare meal\nShow 12 more meals\nBrowse all matching meals\n\nU.S. menu data. Portions, sauces and local recipes may change the numbers. About our data\n\nShare results\nPrint meals\n\nChoose a restaurant\nRestaurant guides\nCAVA\nChick-fil-A\nChipotle\nDunkin’\nJersey Mike’s\nKFC\nMcDonald’s\nPanda Express\nPanera\nPopeyes\nStarbucks\nSubway\nSweetgreen\nTaco Bell\nWendy’s\nFood inspiration, not a restaurant order. Anna Pelzer / Unsplash.\nYour daily\nstarting point.\n\nEstimate calories, protein, carbs and fat for your goal.\n\nUse the free macro calculator\nCompare two food labels\nNutrition, explained\nAll nutrition guides\n01 / Food labels\nWhat do the numbers on a label mean?\n02 / Protein\nHow much protein do I need?\n03 / Menu data\nHow much protein per 100 calories?\n\nEvery recorded order links to its restaurant nutrition source.\n\nRead our methods\nGetMacros\nSee our sources and methods\nFIND\nMeal finder\nRestaurants\nCALCULATE\nDaily macros\nCompare foods\nRecipe portions\nREAD\nNutrition basics\nThe journal\nSources\nGETMACROS\nAbout\nEditorial policy\nCorrections\nContact\nDETAILS\nPrivacy\nTerms\nAccessibility\n© 2026 GetMacros\nU.S. restaurant data · Educational estimates\nBack to top",
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "label": null,
+        "href": "#main-content"
+      },
+      {
+        "tag": "A",
+        "text": "GetMacros",
+        "label": "GetMacros home",
+        "href": "index.html"
+      },
+      {
+        "tag": "A",
+        "text": "Search",
+        "label": null,
+        "href": "search.html"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Dark",
+        "label": "Switch to dark theme",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "01 Find a meal",
+        "label": null,
+        "href": "restaurant-meal-finder.html"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "02 Restaurants",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "03 Calculators",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "04 Learn",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "",
+        "label": "Steak character: show greeting",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Help me choose",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Browse meals",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Saved meals",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reset filters",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Popeyes",
+        "label": null,
+        "href": "popeyes-healthy-meals-macros.html"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Save meal",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Official nutrition source",
+        "label": null,
+        "href": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf"
+      },
+      {
+        "tag": "A",
+        "text": "Restaurant menu",
+        "label": null,
+        "href": "popeyes-healthy-meals-macros.html"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Chick-fil-A",
+        "label": null,
+        "href": "chick-fil-a-healthy-meals-macros.html"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Save meal",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Official nutrition source",
+        "label": null,
+        "href": "https://www.chick-fil-a.com/nutrition-allergens"
+      },
+      {
+        "tag": "A",
+        "text": "Restaurant menu",
+        "label": null,
+        "href": "chick-fil-a-healthy-meals-macros.html"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Subway",
+        "label": null,
+        "href": "subway-healthy-meals-macros.html"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Save meal",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Official nutrition source",
+        "label": null,
+        "href": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf"
+      },
+      {
+        "tag": "A",
+        "text": "Restaurant menu",
+        "label": null,
+        "href": "subway-healthy-meals-macros.html"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Chipotle",
+        "label": null,
+        "href": "chipotle-healthy-meals-macros.html"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Save meal",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Official nutrition source",
+        "label": null,
+        "href": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      },
+      {
+        "tag": "A",
+        "text": "Restaurant menu",
+        "label": null,
+        "href": "chipotle-healthy-meals-macros.html"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Show 12 more meals",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Browse all matching meals",
+        "label": null,
+        "href": "restaurant-meal-finder.html"
+      },
+      {
+        "tag": "A",
+        "text": "About our data",
+        "label": null,
+        "href": "sources.html"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Share results",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Print meals",
+        "label": null,
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "Restaurant guides",
+        "label": null,
+        "href": "restaurant-meal-guides.html"
+      },
+      {
+        "tag": "A",
+        "text": "CAVA",
+        "label": null,
+        "href": "cava-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Chick-fil-A",
+        "label": null,
+        "href": "chick-fil-a-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Chipotle",
+        "label": null,
+        "href": "chipotle-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Dunkin’",
+        "label": null,
+        "href": "dunkin-healthy-breakfast-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Jersey Mike’s",
+        "label": null,
+        "href": "jersey-mikes-healthy-subs-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "KFC",
+        "label": null,
+        "href": "kfc-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "McDonald’s",
+        "label": null,
+        "href": "mcdonalds-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Panda Express",
+        "label": null,
+        "href": "panda-express-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Panera",
+        "label": null,
+        "href": "panera-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Popeyes",
+        "label": null,
+        "href": "popeyes-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Starbucks",
+        "label": null,
+        "href": "starbucks-healthy-food-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Subway",
+        "label": null,
+        "href": "subway-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Sweetgreen",
+        "label": null,
+        "href": "sweetgreen-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Taco Bell",
+        "label": null,
+        "href": "taco-bell-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Wendy’s",
+        "label": null,
+        "href": "wendys-healthy-meals-macros.html"
+      },
+      {
+        "tag": "A",
+        "text": "Use the free macro calculator",
+        "label": null,
+        "href": "calculators.html"
+      },
+      {
+        "tag": "A",
+        "text": "Compare two food labels",
+        "label": null,
+        "href": "nutrition-label-comparison-tool.html"
+      },
+      {
+        "tag": "A",
+        "text": "All nutrition guides",
+        "label": null,
+        "href": "articles.html"
+      },
+      {
+        "tag": "A",
+        "text": "What do the numbers on a label mean?",
+        "label": null,
+        "href": "how-to-read-a-nutrition-label.html"
+      },
+      {
+        "tag": "A",
+        "text": "How much protein do I need?",
+        "label": null,
+        "href": "how-much-protein-per-day.html"
+      },
+      {
+        "tag": "A",
+        "text": "How much protein per 100 calories?",
+        "label": null,
+        "href": "protein-density-fast-food.html"
+      },
+      {
+        "tag": "A",
+        "text": "Read our methods",
+        "label": null,
+        "href": "sources.html"
+      },
+      {
+        "tag": "A",
+        "text": "GetMacros",
+        "label": null,
+        "href": "index.html"
+      },
+      {
+        "tag": "A",
+        "text": "See our sources and methods",
+        "label": null,
+        "href": "sources.html"
+      },
+      {
+        "tag": "A",
+        "text": "Meal finder",
+        "label": null,
+        "href": "restaurant-meal-finder.html"
+      },
+      {
+        "tag": "A",
+        "text": "Restaurants",
+        "label": null,
+        "href": "restaurant-meal-guides.html"
+      },
+      {
+        "tag": "A",
+        "text": "Daily macros",
+        "label": null,
+        "href": "calculators.html"
+      },
+      {
+        "tag": "A",
+        "text": "Compare foods",
+        "label": null,
+        "href": "nutrition-label-comparison-tool.html"
+      },
+      {
+        "tag": "A",
+        "text": "Recipe portions",
+        "label": null,
+        "href": "recipe-macro-scaler.html"
+      },
+      {
+        "tag": "A",
+        "text": "Nutrition basics",
+        "label": null,
+        "href": "articles.html"
+      },
+      {
+        "tag": "A",
+        "text": "The journal",
+        "label": null,
+        "href": "blog.html"
+      },
+      {
+        "tag": "A",
+        "text": "Sources",
+        "label": null,
+        "href": "sources.html"
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "label": null,
+        "href": "about.html"
+      },
+      {
+        "tag": "A",
+        "text": "Editorial policy",
+        "label": null,
+        "href": "editorial-policy.html"
+      },
+      {
+        "tag": "A",
+        "text": "Corrections",
+        "label": null,
+        "href": "corrections.html"
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "label": null,
+        "href": "contact.html"
+      },
+      {
+        "tag": "A",
+        "text": "Privacy",
+        "label": null,
+        "href": "privacy.html"
+      },
+      {
+        "tag": "A",
+        "text": "Terms",
+        "label": null,
+        "href": "terms.html"
+      },
+      {
+        "tag": "A",
+        "text": "Accessibility",
+        "label": null,
+        "href": "accessibility.html"
+      },
+      {
+        "tag": "A",
+        "text": "Back to top",
+        "label": null,
+        "href": "#site-top"
+      }
+    ],
+    "styles": {
+      "heading": "Inter, system-ui, sans-serif",
+      "body": "Inter, system-ui, sans-serif",
+      "background": "rgb(255, 254, 251)",
+      "animations": []
+    }
+  }
+]

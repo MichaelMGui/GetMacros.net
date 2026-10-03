@@ -68,7 +68,7 @@
         if (label) label.textContent = dark ? "Light" : "Dark";
       });
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", dark ? "#101e19" : "#fffefb");
+      if (meta) meta.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--bg").trim());
     }
     apply(initial === "dark" ? "dark" : "light", false);
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(event){
@@ -91,7 +91,7 @@
     if (!links) return;
 
     function revealPanel(panel) {
-      if (!panel || !panel.animate || matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('tide-motion-off')) return;
+      if (!panel || !panel.animate || matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.dataset.motion==='calm') return;
       if (panel._entrance) panel._entrance.cancel();
       panel._entrance = panel.animate([
         {translate:'0 -2px'},
@@ -206,7 +206,7 @@
     var current = (location.pathname.split("/").pop() || "index.html").toLowerCase();
     links.querySelectorAll("a[href]").forEach(function (link) {
       var target = (link.getAttribute("href") || "").split("#")[0].split("?")[0].split("/").pop().toLowerCase();
-      var active = target === current;
+      var savedLink=(link.getAttribute('href')||'').includes('view=saved');var savedView=new URLSearchParams(location.search).get('view')==='saved';var active = target === current && (target!=='restaurant-meal-finder.html'||savedLink===savedView);
       if (active) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
       if (active) {

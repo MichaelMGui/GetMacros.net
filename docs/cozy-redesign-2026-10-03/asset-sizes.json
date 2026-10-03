@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "css/publication.css",
+    "bytes": 69352,
+    "gzipBytes": 15243
+  },
+  {
+    "asset": "js/meal-finder.js",
+    "bytes": 23749,
+    "gzipBytes": 6855
+  },
+  {
+    "asset": "js/meal-guide.js",
+    "bytes": 9275,
+    "gzipBytes": 3390
+  },
+  {
+    "asset": "js/kitchen-companion.js",
+    "bytes": 8103,
+    "gzipBytes": 2847
+  },
+  {
+    "asset": "images/kitchen-companions.svg",
+    "bytes": 7130,
+    "gzipBytes": 2103
+  },
+  {
+    "asset": "fonts/fraunces-latin-500-normal.woff2",
+    "bytes": 18000,
+    "gzipBytes": 18028
+  }
+]

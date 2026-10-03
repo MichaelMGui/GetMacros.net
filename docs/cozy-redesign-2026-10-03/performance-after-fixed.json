@@ -1,0 +1,96 @@
+{
+  "environment": "Local Edge, 390x844, cold cache, 100 ms latency, 1.6 Mbps download, 4x CPU slowdown. No production CDN or field data.",
+  "sourceRoot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net",
+  "results": [
+    {
+      "page": "index.html",
+      "run": 1,
+      "lcp": 2168,
+      "cls": 0,
+      "longTasks": 61,
+      "domContentLoaded": 2225.4000000059605,
+      "resources": 17,
+      "bytes": 280469
+    },
+    {
+      "page": "index.html",
+      "run": 2,
+      "lcp": 2024,
+      "cls": 0,
+      "longTasks": 25,
+      "domContentLoaded": 2180.4000000059605,
+      "resources": 17,
+      "bytes": 280469
+    },
+    {
+      "page": "index.html",
+      "run": 3,
+      "lcp": 1924,
+      "cls": 0,
+      "longTasks": 11,
+      "domContentLoaded": 2011.2000000178814,
+      "resources": 17,
+      "bytes": 280469
+    },
+    {
+      "page": "calculators.html",
+      "run": 1,
+      "lcp": 1348,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1808.300000011921,
+      "resources": 15,
+      "bytes": 199142
+    },
+    {
+      "page": "calculators.html",
+      "run": 2,
+      "lcp": 1344,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1814.7000000178814,
+      "resources": 15,
+      "bytes": 199142
+    },
+    {
+      "page": "calculators.html",
+      "run": 3,
+      "lcp": 1380,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 1834.300000011921,
+      "resources": 15,
+      "bytes": 199142
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 1,
+      "lcp": 2060,
+      "cls": 0,
+      "longTasks": 42,
+      "domContentLoaded": 2375.2999999821186,
+      "resources": 18,
+      "bytes": 283732
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 2,
+      "lcp": 2076,
+      "cls": 0,
+      "longTasks": 26,
+      "domContentLoaded": 2425.4000000059605,
+      "resources": 18,
+      "bytes": 283732
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 3,
+      "lcp": 2076,
+      "cls": 0,
+      "longTasks": 36,
+      "domContentLoaded": 2393.5,
+      "resources": 18,
+      "bytes": 283732
+    }
+  ]
+}

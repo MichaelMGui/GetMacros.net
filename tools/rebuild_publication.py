@@ -17,22 +17,27 @@ LOGO=MARKET_LOGO
 CHAIN_SLUG={'CAVA':'cava','Chick-fil-A':'chick-fil-a','Chipotle':'chipotle','Dunkin’':'dunkin','Jersey Mike’s':'jersey-mikes','KFC':'kfc','McDonald’s':'mcdonalds','Panda Express':'panda-express','Panera':'panera','Popeyes':'popeyes','Starbucks':'starbucks','Subway':'subway','Sweetgreen':'sweetgreen','Taco Bell':'taco-bell','Wendy’s':'wendys'}
 CHAIN_PAGE={'Dunkin’':'dunkin-healthy-breakfast-macros.html','Jersey Mike’s':'jersey-mikes-healthy-subs-macros.html','Starbucks':'starbucks-healthy-food-meals-macros.html'}
 
-def home_markup():
+def home_markup(finder=None):
  meals=parse_meals()
  chains=sorted(set(m['chain'] for m in meals),key=str.casefold)
  links=''.join('<a href="'+CHAIN_PAGE.get(c,CHAIN_SLUG[c]+'-healthy-meals-macros.html')+'" data-chain-name="'+escape(c,quote=True)+'">'+mark(c)+'<span>'+escape(c)+'</span></a>' for c in chains)
- return (ROOT/'tools/market-home.inc').read_text(encoding='utf-8').replace('__CHAIN_COUNT__',str(len(chains))).replace('__MEAL_COUNT__',str(len(meals))).replace('__RESTAURANT_LINKS__',links).replace('__HOME_FINDER__',(ROOT/'tools/market-home-finder.inc').read_text(encoding='utf-8'))
+ text=(ROOT/'tools/market-home.inc').read_text(encoding='utf-8').replace('__CHAIN_COUNT__',str(len(chains))).replace('__MEAL_COUNT__',str(len(meals))).replace('__RESTAURANT_LINKS__',links).replace('__HOME_FINDER__',finder or (ROOT/'tools/market-home-finder.inc').read_text(encoding='utf-8'))
+ preview=next(m for m in meals if m['chain']=='Chick-fil-A' and m['name']=='Grilled Chicken Sandwich')
+ for token,value in {'NAME':preview['chain']+' · '+preview['name'],'PORTION':'1 sandwich (206 g) · U.S. menu','CAL':preview['cal'],'PROTEIN':preview['p'],'URL':preview['url']}.items():text=text.replace('__PREVIEW_'+token+'__',escape(str(value),quote=True))
+ return text
 
 def replace_node(text,node,replacement):return text[:node['start']]+replacement+text[node['end']:]
 
 def run():
  from build_edition_css import build
  build()
+ from build_finder_snapshot import build as build_snapshot
+ home_finder,full_finder=build_snapshot()
  for path in ROOT.glob('*.html'):
   text=path.read_text(encoding='utf-8')
   if path.name=='index.html':
    doc=Document(text);main=next(n for n in doc.nodes if n['tag']=='main')
-   text=replace_node(text,main,home_markup())
+   text=replace_node(text,main,home_markup(home_finder))
    text=re.sub(r'<title>.*?</title>','<title>Find a fast-food meal that fits your macros | GetMacros</title>',text,count=1,flags=re.S)
    text=re.sub(r'<meta name="description" content="[^"]*">','<meta name="description" content="Find real fast-food meals by calories, protein, fiber and restaurant. Compare the order, portion and nutrition before you eat.">',text,count=1)
    for attr,key,value in [('property','og:title','Find a fast-food meal that fits your macros | GetMacros'),('property','og:description','Find real fast-food meals by calories, protein, fiber and restaurant. Compare the order, portion and nutrition before you eat.'),('name','twitter:title','Find a fast-food meal that fits your macros | GetMacros'),('name','twitter:description','Find real fast-food meals by calories, protein, fiber and restaurant. Compare the order, portion and nutrition before you eat.')]:
@@ -61,7 +66,8 @@ def run():
   text=re.sub(r'<link\b(?=[^>]*rel="stylesheet")[^>]*>','',text)
   text=re.sub(r'<link\b(?=[^>]*rel="preload")(?=[^>]*as="font")[^>]*>','',text)
   text=re.sub(r'<link\b[^>]*rel="preconnect"[^>]*href="https://pagead2\.googlesyndication\.com"[^>]*>','',text)
-  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin></head>')
+  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/fraunces-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin></head>')
+  text=re.sub(r'<script>try\{var p=localStorage.getItem\(\'gm-theme\'\).*?</script>',"<script>try{var p=localStorage.getItem('gm-theme');document.documentElement.dataset.theme=p==='light'||p==='dark'?p:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.appearance=localStorage.getItem('gm-appearance')==='harvest'?'harvest':'fresh';document.documentElement.dataset.motion=localStorage.getItem('gm-motion')==='calm'?'calm':'full'}catch(e){document.documentElement.dataset.theme='light'}</script>",text,flags=re.S)
   # Publisher verification is retained. Ad serving awaits account-side CMP
   # verification; a home-made banner would not meet Google's CMP requirement.
   text=re.sub(r'<script\b[^>]*src="https://pagead2\.googlesyndication\.com/[^>]*>.*?</script>','',text,flags=re.S)
@@ -81,6 +87,15 @@ def run():
   if path.name=='privacy.html':
    text=re.sub(r'<p>This site integrates Google AdSense\..*?</p>','<p>GetMacros has applied to Google AdSense. Publisher ownership verification remains on the site, but advertising scripts are currently paused. No Google ad requests are made by the site code. Before enabling ads, we will configure the required consent controls, verify their behavior and update this notice.</p><p>If advertising is enabled later, Google and its partners may use cookies or similar technologies. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites that use its services</a> and <a href="https://myadcenter.google.com">Google’s advertising controls</a>.</p>',text,flags=re.S)
   # Clarify the educational scope next to the full macro form.
+  if path.name=='calculators.html':
+   text=text.replace('id="height-cm" name="height_cm"','id="height-cm" name="height_cm" step="0.1"').replace('id="height-in" name="height_in" min="0" max="11"','id="height-in" name="height_in" min="0" max="11.9" step="0.1"')
+   text=text.replace('step="0.1" step="0.1"','step="0.1"')
+   if 'data-calc-mode="compact"' not in text:
+    text=text.replace('<form class="calc-form compact-macro-form" id="macro-form">','<form class="calc-form compact-macro-form" id="macro-form"><div class="calculator-presentation"><button type="button" data-calc-mode="compact" aria-pressed="true">All inputs</button><button type="button" data-calc-mode="guided" aria-pressed="false">Guide me</button><p>Body measurements help estimate resting energy. Activity and your goal adjust that estimate. These inputs stay in this tab.</p></div>')
+  if path.name=='restaurant-meal-finder.html':
+   doc=Document(text);node=next(n for n in doc.nodes if n['attrs'].get('id')=='meal-quiz');text=text[:node['inner']]+full_finder+text[node['close']:]
+   if 'class="companion finder-companion"' not in text:
+    text=text.replace('<h1>Healthy fast-food meals</h1></section>','<h1>Healthy fast-food meals</h1><span class="companion finder-companion" data-companion aria-hidden="true"><svg class="fresh-character" viewBox="0 0 320 360"><use href="images/kitchen-companions.svg#bunny"></use></svg><svg class="harvest-character" viewBox="0 0 320 360"><use href="images/kitchen-companions.svg#squirrel"></use></svg></span></section>')
   if path.name=='calculators.html' and 'publication-calculator-note' not in text:
    text=text.replace('<form class="calc-form" id="macro-form">','<form class="calc-form" id="macro-form"><p class="clarity-hint publication-calculator-note">Adult estimates, not a prescription. Uses Mifflin–St Jeor resting energy, an activity multiplier and your chosen goal. <a href="sources.html">Formula and limitations</a>.</p>')
   if 'class="chain-finder-intro"' in text:
@@ -100,12 +115,12 @@ def run():
   # One shared runtime for characters, non-identifying event boundaries and
   # optional advertising. Serving stays disabled until an approved adapter
   # and affirmative consent are supplied.
-  for script in ['product-events','food-characters','ad-placements']:
+  for script in ['product-events','food-characters','ad-placements','kitchen-companion','meal-guide']:
    text=re.sub(r'<script[^>]+src="js/'+script+r'\.js[^>]*>.*?</script>','',text,flags=re.S)
-  text=text.replace('</body>','<script src="js/product-events.js" defer></script><script src="js/food-characters.js" defer></script><script src="js/ad-placements.js" defer></script></body>')
+  text=text.replace('</body>','<script src="js/product-events.js" defer></script><script src="js/food-characters.js" defer></script><script src="js/kitchen-companion.js" defer></script><script src="js/ad-placements.js" defer></script></body>')
   if 'js/meal-finder.js' in text:
    text=re.sub(r'<script[^>]+src="js/meal-engine.js[^>]*>.*?</script>','',text,flags=re.S)
-   text=re.sub(r'(<script[^>]+src="js/meal-finder\.js)',r'<script src="js/meal-engine.js" defer></script>\1',text,count=1)
+   text=re.sub(r'(<script[^>]+src="js/meal-finder\.js)',r'<script src="js/meal-engine.js" defer></script><script src="js/meal-guide.js" defer></script>\1',text,count=1)
   # Keep every retained article's factual body and current verification date.
   text=re.sub(r'\n{3,}','\n\n',text)
   text=re.sub(r'(?m)^[ \t]+$','',text)
