@@ -13,7 +13,7 @@ def run(args):
         (OUT/'build-checks.json').write_text(json.dumps(records,indent=2),encoding='utf-8')
         raise SystemExit(result.returncode)
 def snapshot():
-    files=list(ROOT.glob('*.html'))+[ROOT/'css/publication.css',ROOT/'search-index.json',ROOT/'sitemap.xml']
+    files=list(ROOT.glob('*.html'))+[ROOT/'css/publication.css',ROOT/'js/site-search.js',ROOT/'sitemap.xml']
     return {str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files if p.exists()}
 for script in steps:
     args=[sys.executable,'-X','utf8','tools/'+script]

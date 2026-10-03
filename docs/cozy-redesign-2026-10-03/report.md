@@ -53,4 +53,10 @@ The additional font and companion assets have a small loading cost. The first im
 
 Task wording, quiz help, selected states and motion/privacy explanations were revised. Existing useful article copy, source records, U.S. scope, truthful review dates, accurate formulas and legal meaning were retained. Duplicate-copy reporting was rerun; shared labels, repeated source disclosures and similar ingredient lists are intentional, not indiscriminately rewritten. Existing URLs, metadata, canonicals, structured data, internal links, search resources and verification remain intact. No new live keyword research or traffic forecasts are claimed for this design release.
 
-Remaining limits: no access to CozyTonight source assets; unknown restaurant values remain unverified; data review dates have not been advanced because the design changed; no exhaustive manual screen-reader audit, physical-device matrix or field-performance measurement. The deployed checks are recorded separately in `live-verification.json` after publication. AdSense approval remains Google's decision.
+Remaining limits: no access to CozyTonight source assets; unknown restaurant values remain unverified; data review dates have not been advanced because the design changed; no exhaustive manual screen-reader audit, physical-device matrix or field-performance measurement. AdSense approval remains Google's decision.
+
+## Published verification
+
+Implementation commit: `7c5e890ca73dc9c6c392a46b886ba9cd2b72345d`. Published through the existing Pages branch, with both GitHub quality runs and the Pages deployment successful. The actual production check passed **107 exact route-body comparisons**, **11 text asset comparisons**, a real custom **404 response**, and **eight Fresh/Harvest × light/dark × mobile/desktop quiz/shared-filter journeys**. Only line endings and the existing Cloudflare email protection were normalized; the decoded contact address was verified unchanged.
+
+See `deployment-checks.json`, `live-verification.json` and `final/live-home-*.png` / `final/live-quiz-*.png`. These are actual production checks and screenshots, separate from the local browser fixture and local lab measurements.
