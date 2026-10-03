@@ -17,7 +17,7 @@
   },
   "automatedViewportChecks": 2140,
   "resilienceChecks": 56,
-  "humanInspectionRecords": 66,
+  "humanInspectionRecords": 70,
   "humanInspectionLimit": "Regions and screens listed in visual manifests; all individual pages rendered but not all individually human inspected",
   "excludedFromPages": "docs, tools and design directories via _config.yml; includes baseline fixtures, art gallery, screenshots and research reports"
 }

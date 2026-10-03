@@ -48,6 +48,38 @@
       "capture": "presentation/comparison-print.png",
       "region": "Comparison print composition; aligned nutrition/portion/source content",
       "method": "Viewed actual print-media pixels; Close button then removed and render retested"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "width": 390,
+      "capture": "live/home-light-390.png",
+      "region": "Home first viewport: hierarchy, compact character, finder controls and sort wrapping",
+      "method": "Viewed actual production captured pixels"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "width": 1440,
+      "capture": "live/home-dark-1440.png",
+      "region": "Home first viewport: theme, desktop navigation, character and finder layout",
+      "method": "Viewed actual production captured pixels"
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "light",
+      "width": 1440,
+      "capture": "live/comparison-light-1440.png",
+      "region": "Open two-meal comparison: portion definitions, six nutrient rows, sources and actions",
+      "method": "Viewed actual production captured pixels"
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "dark",
+      "width": 390,
+      "capture": "live/comparison-dark-390.png",
+      "region": "Open two-meal comparison: wrapping, nutrient alignment, scrollable dialog and close control",
+      "method": "Viewed actual production captured pixels"
     }
   ],
   "additionalArtInspection": "16-food light gallery and original protein-density launch graphic viewed; no restaurant photograph represented"

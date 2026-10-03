@@ -1,0 +1,746 @@
+{
+  "scope": "Actual production HTTP and Edge browser; not field performance, medical review or complete accessibility certification",
+  "verifiedAt": "2026-10-03T17:52:24.664Z",
+  "http": [
+    {
+      "route": "/accessibility.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/articles.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/404.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/are-diet-drinks-bad-for-you.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/about.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/body-recomposition-explained.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/best-fast-food-restaurants-for-your-goals.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/breakfast-drinks-and-add-ons.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/blog.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/as-packaged-vs-prepared-nutrition.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/budget-meal-builder.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/calculate-macros-mixed-bowl.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/calories-in-multi-serving-packages.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/calculators.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/calories-on-rest-days.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/calories-vs-macros-what-matters-more.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/can-you-build-muscle-in-a-calorie-deficit.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/carbohydrate-label-portion-tool.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/carbs.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/cava-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/chick-fil-a-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/chick-fil-a-vs-popeyes-chicken.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/contact.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "Existing Cloudflare email obfuscation decoded and its exact decoder script removed for origin comparison; decoded address verified unchanged"
+    },
+    {
+      "route": "/chipotle-rice-beans-nutrition.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/chipotle-toppings-nutrition.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/corrections.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "Existing Cloudflare email obfuscation decoded and its exact decoder script removed for origin comparison; decoded address verified unchanged"
+    },
+    {
+      "route": "/cutting-bulking-maintenance-explained.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/chipotle-vs-cava-chicken-bowls.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/edible-portion-vs-purchased-weight.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/dunkin-healthy-breakfast-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/editorial-policy.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/drained-weight-nutrition-label.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/does-creatine-cause-hair-loss.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/fast-food-breakfast-protein-comparison.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/fast-food-fiber-and-protein.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/fast-food-meals-500-to-700-calories.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/fast-food-under-1000mg-sodium.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/fast-food-protein-and-sodium.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/fats.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/grilled-and-blackened-chicken-comparison.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/high-protein-fast-food-under-500-calories.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/high-protein-foods-list.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-many-calories-should-i-eat-a-day.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-much-fiber-per-day.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-much-protein-can-your-body-absorb.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-much-protein-per-day.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-much-sodium-per-day.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-to-build-a-balanced-meal-with-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-to-calculate-macros-by-hand.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-to-calculate-maintenance-calories.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-to-eat-out-without-wrecking-your-goal.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-to-hit-protein-goal-on-budget.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/jersey-mikes-healthy-subs-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/index.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/kfc-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/macros-for-muscle-gain.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/macros-for-weight-loss.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/mcdonalds-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/missing-restaurant-nutrition.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/nutrition-label-comparison-tool.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/how-to-read-a-nutrition-label.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/panda-express-base-nutrition-comparison.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/nutrition-label-rounding.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/panda-express-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/panda-express-chicken-entree-comparison.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/panera-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/popeyes-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/privacy.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/protein-cost-food-waste.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/protein-powder-scoop-weight.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/protein.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/raw-vs-cooked-food-weight.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/restaurant-bowl-nutrition-comparison.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/sodium-label-comparison-tool.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/search.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/sources.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/subway-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/starbucks-healthy-food-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/sweat-rate-calculator.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/sweetgreen-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/sweetgreen-vs-panera-chicken-salads.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/taco-bell-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/terms.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "Existing Cloudflare email obfuscation decoded and its exact decoder script removed for origin comparison; decoded address verified unchanged"
+    },
+    {
+      "route": "/unequal-recipe-portions.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/use-calorie-target-meal-finder.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/vegetarian-fast-food-protein-comparison.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/weight-goal-timeline-calculator.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/wendys-healthy-meals-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/what-are-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/what-is-a-calorie-deficit.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/what-to-eat-after-a-workout.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/when-to-recalculate-calories-and-macros.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/what-to-eat-before-a-workout.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/why-did-i-gain-weight-overnight.html",
+      "status": 200,
+      "releaseBodyMatches": true,
+      "normalization": "LF line endings only"
+    },
+    {
+      "route": "/getmacros-release-no-such-page-20261003.html",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "route": "/tools/test-release-routes.cjs",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "route": "/docs/release-2026-10-03/release-report.md",
+      "status": 404,
+      "expected": 404
+    }
+  ],
+  "assets": [
+    {
+      "asset": "css/publication.css",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "js/meal-data.js",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "js/meal-provenance.js",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "js/meal-engine.js",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "js/meal-finder.js",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "js/food-characters.js",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "js/ad-placements.js",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "js/product-events.js",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "images/food-characters.svg",
+      "status": 200,
+      "releaseBodyMatches": true
+    },
+    {
+      "asset": "sitemap.xml",
+      "status": 200,
+      "releaseBodyMatches": true
+    }
+  ],
+  "browser": [
+    {
+      "engine": "Edge",
+      "theme": "light",
+      "width": 390,
+      "result": "pass",
+      "checks": "Home initial results/character; strict finder limits, guided back/cancel, two-meal comparison, new data/practical guides, calculator, persistence, overflow, runtime errors and no ad requests"
+    },
+    {
+      "engine": "Edge",
+      "theme": "light",
+      "width": 1440,
+      "result": "pass",
+      "checks": "Home initial results/character; strict finder limits, guided back/cancel, two-meal comparison, new data/practical guides, calculator, persistence, overflow, runtime errors and no ad requests"
+    },
+    {
+      "engine": "Edge",
+      "theme": "dark",
+      "width": 390,
+      "result": "pass",
+      "checks": "Home initial results/character; strict finder limits, guided back/cancel, two-meal comparison, new data/practical guides, calculator, persistence, overflow, runtime errors and no ad requests"
+    },
+    {
+      "engine": "Edge",
+      "theme": "dark",
+      "width": 1440,
+      "result": "pass",
+      "checks": "Home initial results/character; strict finder limits, guided back/cancel, two-meal comparison, new data/practical guides, calculator, persistence, overflow, runtime errors and no ad requests"
+    }
+  ],
+  "failures": []
+}
