@@ -1,0 +1,12 @@
+{
+  "resources": 33,
+  "uniqueIntents": 33,
+  "reproducedSourceFactEntries": 183,
+  "visibleNutritionRows": 142,
+  "snapshotInputRecords": 41,
+  "auditedFinderRecords": 41,
+  "ingredientSums": 7,
+  "sourceWireRoundtrip": "lossless",
+  "partialCheckDates": "preserved",
+  "visualInspection": "not performed by this script"
+}

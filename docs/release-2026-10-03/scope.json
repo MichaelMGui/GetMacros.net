@@ -1,0 +1,23 @@
+{
+  "rootHTML": 106,
+  "publicRoutesWithRootAlias": 107,
+  "newResources": 33,
+  "pageFamilies": {
+    "product homepage": 2,
+    "error": 1,
+    "trust/legal/contact": 8,
+    "retained editorial article": 34,
+    "directory/editorial index": 3,
+    "worked practical guide": 15,
+    "calculator/food tool": 9,
+    "restaurant guide": 15,
+    "data resource": 18,
+    "meal finder/results": 1,
+    "search": 1
+  },
+  "automatedViewportChecks": 2140,
+  "resilienceChecks": 56,
+  "humanInspectionRecords": 66,
+  "humanInspectionLimit": "Regions and screens listed in visual manifests; all individual pages rendered but not all individually human inspected",
+  "excludedFromPages": "docs, tools and design directories via _config.yml; includes baseline fixtures, art gallery, screenshots and research reports"
+}

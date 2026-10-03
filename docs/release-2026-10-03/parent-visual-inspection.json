@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-03",
+  "inspections": [
+    {
+      "route": "/index.html",
+      "theme": "light",
+      "width": 390,
+      "capture": "journeys/homepage-character-chromium-light-390.png",
+      "region": "Top viewport; steak greeting and primary discovery controls",
+      "method": "Viewed actual pixels"
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "dark",
+      "width": 390,
+      "capture": "journeys/guide-chromium-dark-390.png",
+      "region": "Open fourth guided step; controls, progress, typography and dismissal",
+      "method": "Viewed actual pixels"
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "dark",
+      "width": 1440,
+      "capture": "journeys/comparison-chromium-dark-1440.png",
+      "region": "Three-meal comparison viewport; names, portions, aligned nutrients and source notes",
+      "method": "Viewed actual pixels"
+    },
+    {
+      "route": "/calculators.html",
+      "theme": "light",
+      "width": 1440,
+      "capture": "routes/screenshots/calculators.html-light-1440.png",
+      "region": "Full page; three-column inputs, unit controls, aligned action rows and supporting library",
+      "method": "Viewed full-page pixels"
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "theme": "dark",
+      "width": 390,
+      "capture": "routes/screenshots/protein-density-fast-food.html-dark-390.png",
+      "region": "Full-page composition; detailed small text reviewed by agent body crop separately",
+      "method": "Viewed scaled full-page pixels"
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "print",
+      "width": 1000,
+      "capture": "presentation/comparison-print.png",
+      "region": "Comparison print composition; aligned nutrition/portion/source content",
+      "method": "Viewed actual print-media pixels; Close button then removed and render retested"
+    }
+  ],
+  "additionalArtInspection": "16-food light gallery and original protein-density launch graphic viewed; no restaurant photograph represented"
+}

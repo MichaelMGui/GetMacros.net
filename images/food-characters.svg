@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!-- Original GetMacros food characters. Decorative brand art, not exact meals. -->
+  <symbol id="food-steak" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M41 87 25 98 19 91"/><path class="food-arm-wave" d="m119 83 17-15 2-12"/><path d="m58 122-3 18h-9m50-19 5 19h9"/></g>
+    <g stroke="#293b2b" stroke-width="2.5" stroke-linejoin="round"><path fill="#dc826e" d="M34 79c2-30 25-49 51-47 16 1 25 12 37 28 14 19 10 41-6 52-14 10-34 15-53 9-20-6-31-18-29-42Z"/><path fill="#f6c5ac" d="M44 79c1-21 19-36 38-36 15 0 23 12 34 26 10 13 7 28-6 36-16 10-37 12-51 5-12-6-18-15-15-31Z"/><path fill="#de8c79" stroke="none" d="M51 76c6-18 18-25 34-24 13 1 20 13 27 25 8 14 2 21-10 27-12 6-28 8-38 2-12-7-17-14-13-30Z"/><path fill="#fff1d4" d="M91 48c4 1 7 5 6 9-1 5-7 8-11 5-6-4-2-16 5-14Z"/></g>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M66 80v4m26-4v4"/><path class="food-smile" fill="none" d="M72 92q9 9 17-1"/></g><g fill="#efae94"><ellipse cx="58" cy="90" rx="5" ry="3"/><ellipse cx="102" cy="90" rx="5" ry="3"/></g>
+  </symbol>
+  <symbol id="food-chicken" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m45 83-19 7-6-7m91 12 17 5 7-6m-81 21-6 25h-9m44-25 6 25h9"/></g>
+    <g class="food-nod" stroke="#293b2b" stroke-width="2.5"><path fill="#fff0d2" d="m98 74 24-29c-8-7-4-15 3-14 5 1 5 7 6 8 2 0 9-1 10 5 1 7-7 11-12 6l-23 32Z"/><path fill="#d99b53" d="M48 47c19-10 35-1 46 14 17 8 24 26 13 43-12 18-43 25-61 11-22-17-24-54 2-68Z"/><path fill="#eebc77" stroke="none" d="M51 55c11-6 18-3 25 2-19 1-32 14-34 32-8-14-4-27 9-34Z"/></g>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M55 83v4m26-4v4"/><path fill="none" d="M61 97q8 8 16-1"/></g><path fill="none" stroke="#bd7c37" stroke-width="2.5" stroke-linecap="round" d="m91 96 6-3m-2 11 5-3"/>
+  </symbol>
+  <symbol id="food-salmon" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m36 83-14 5-5-6m108 1 15 5 5-6m-85 33-4 19h-10m53-19 4 19h10"/></g>
+    <path fill="#e8896e" stroke="#293b2b" stroke-width="2.5" d="M31 60q51-25 96-5l3 48q-47 28-96 4Z"/><path fill="#799487" stroke="#293b2b" stroke-width="2.5" d="m34 107 4 11q46 15 89-5l3-10q-48 21-96 4Z"/>
+    <g stroke="#ffdbb9" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="m45 57 5 43m14-48 5 23m15-26 4 25m14-25 4 26m15-23 3 45"/></g>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M68 85v4m26-4v4"/><path fill="none" d="M75 98q7 6 13-1"/></g>
+  </symbol>
+  <symbol id="food-shrimp" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m46 87-19 6-5-6m89 5 14 8 7-4m-68 24-4 16h-9m36-17 5 17h9"/></g>
+    <g stroke="#293b2b" stroke-width="2.5" stroke-linejoin="round"><path fill="#f1ab85" d="M110 106c-8 14-22 19-39 15-25-6-40-27-32-51 7-23 26-36 47-30 17 4 23 18 16 30-5 9-14 10-20 4-9-9-20 5-12 17 6 10 23 11 31 3Z"/><path class="food-leaf" fill="#e48665" d="m103 95 18-13 12 5-16 10 12 8-5 10-21-9Z"/><path fill="none" stroke="#d77f5c" stroke-width="3" d="m51 55 17 10m-28 13 19 1m-16 18 18-7m-5 23 14-14m5 21 5-17"/><path fill="none" d="M86 42q15-18 24-9M88 44q21-8 26-1"/></g>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M73 56v3m18-3v3"/><path fill="none" d="M78 65q5 4 9-1"/></g>
+  </symbol>
+  <symbol id="food-egg" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m39 82-17 10-5-5m105-5 17 10 5-5m-83 32-5 17h-9m51-17 5 17h9"/></g>
+    <path fill="#fff5db" stroke="#293b2b" stroke-width="2.5" d="M79 29c14 0 43 39 46 65 3 20-12 35-45 35S33 114 35 94c3-25 29-65 44-65Z"/><circle fill="#efbf54" cx="80" cy="88" r="29"/><path fill="#f6d77c" d="M57 80q10-17 28-15-20 9-20 27Z"/>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M67 82v4m25-4v4"/><path fill="none" d="M72 97q8 8 16 0"/></g>
+  </symbol>
+  <symbol id="food-tofu" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m35 88-15 4-5-5"/><path class="food-arm-wave" d="m123 87 17-16 1-9"/><path d="m57 123-3 16h-10m54-16 5 16h10"/></g>
+    <g stroke="#293b2b" stroke-width="2.5" stroke-linejoin="round"><path fill="#f4e8c9" d="m36 53 25-15 65 9-9 18-2 54-22 11-61-9Z"/><path fill="#fff7df" d="m36 53 62 9 28-15-65-9Z"/><path fill="#e2d4b1" d="m98 62 28-15-11 72-22 11Z"/><path fill="none" d="m98 62-5 68"/></g>
+    <g fill="#dfcfaa"><circle cx="47" cy="71" r="2"/><circle cx="79" cy="72" r="2.5"/><circle cx="42" cy="108" r="2"/><circle cx="84" cy="117" r="2"/></g><g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M53 86v4m25-4v4"/><path fill="none" d="M58 101q8 6 15-1"/></g>
+  </symbol>
+  <symbol id="food-beans" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m42 85-15 6-6-5m96-5 14 9 7-4m-74 36-4 16h-9m42-17 5 17h9"/></g>
+    <path class="food-nod" fill="#b86e62" stroke="#293b2b" stroke-width="2.5" d="M57 39c17-12 34-4 39 14 4 16-3 23 4 32 6 8 21 14 18 26-3 16-24 22-43 12-27-14-45-57-18-84Z"/><path fill="none" stroke="#e4a08c" stroke-width="5" stroke-linecap="round" d="M64 48q-19 19-3 42"/>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M65 74v4m24-4v4"/><path fill="none" d="M72 88q8 7 15-1"/></g>
+  </symbol>
+  <symbol id="food-apple" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m40 86-17 6-5-5m103-2 16 7 5-5m-80 34-4 17h-9m48-17 4 17h9"/></g>
+    <g stroke="#293b2b" stroke-width="2.5"><path fill="#d77765" d="M80 48c-21-15-43-2-45 23-2 27 18 52 34 53l12-3 11 3c17-2 36-28 34-54-2-24-27-36-46-22Z"/><path fill="none" stroke-width="4" stroke-linecap="round" d="M80 50q-2-17 5-26"/><path class="food-leaf" fill="#8eae69" d="M82 36q3-24 27-16-5 18-27 16Z"/></g><path fill="none" stroke="#efa08a" stroke-width="5" stroke-linecap="round" d="M50 62q-6 7-6 17"/>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M66 81v4m27-4v4"/><path fill="none" d="M73 95q8 8 16-1"/></g>
+  </symbol>
+  <symbol id="food-banana" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m43 94-18 6-6-5m87-12 22 5 4-6m-70 34-5 19h-9m43-18 5 18h9"/></g>
+    <g class="food-nod" stroke="#293b2b" stroke-width="2.5" stroke-linejoin="round"><path fill="#efd169" d="M112 33c9 52-17 93-60 88-18-3-27-16-29-28 44 15 75-2 82-59Z"/><path fill="#f8e299" d="M106 35c0 37-14 67-42 70-15 2-28-1-41-12 44 15 75-2 82-59Z"/><path fill="#91a568" d="m105 34-3-10 11-2 3 11Z"/><path fill="#728664" d="m23 93-7-4-3 7 10 4Z"/></g>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M65 88v4m24-6v4"/><path fill="none" d="M72 103q8 6 14-2"/></g>
+  </symbol>
+  <symbol id="food-strawberry" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m39 79-17 9-5-5m105-5 15 10 5-5m-80 36-4 19h-9m48-19 4 19h9"/></g>
+    <path fill="#d97b70" stroke="#293b2b" stroke-width="2.5" d="M39 53c21-18 59-18 82 1 23 22-19 69-40 76-21-7-63-54-42-77Z"/>
+    <path class="food-leaf" fill="#8aac65" stroke="#293b2b" stroke-width="2.5" stroke-linejoin="round" d="m81 50-24-6 8-10 15 8 3-19 11 3-7 16 23-6 6 11-35 3Z"/>
+    <g stroke="#f6bf92" stroke-width="3" stroke-linecap="round"><path d="m45 67 2 3m6 27 2 3m16 13 2 3m32-49 2 3m-5 29 2 3m-6-48 2 3"/></g><g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M66 78v4m28-4v4"/><path fill="none" d="M73 93q8 8 16-1"/></g>
+  </symbol>
+  <symbol id="food-orange" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m39 85-17 8-5-5m105-4 17 9 5-5m-83 33-4 17h-9m51-17 4 17h9"/></g>
+    <circle fill="#e7ad56" stroke="#293b2b" stroke-width="2.5" cx="80" cy="80" r="46"/><path class="food-leaf" fill="#8eac69" stroke="#293b2b" stroke-width="2.5" d="M80 34q8-23 31-14-9 18-31 14Z"/><path fill="none" stroke="#f5cd83" stroke-width="5" stroke-linecap="round" d="M51 56q-10 9-10 22"/>
+    <g fill="#cf9548"><circle cx="54" cy="97" r="1.5"/><circle cx="111" cy="67" r="1.5"/><circle cx="103" cy="109" r="1.5"/><circle cx="62" cy="111" r="1.5"/></g><g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M66 79v4m27-4v4"/><path fill="none" d="M73 94q8 8 16-1"/></g>
+  </symbol>
+  <symbol id="food-blueberry" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m42 90-20 4-5-5m102-1 18 6 6-5m-82 32-4 17h-9m51-17 4 17h9"/></g>
+    <circle fill="#8596b0" stroke="#293b2b" stroke-width="2.5" cx="80" cy="83" r="43"/><path class="food-leaf" fill="#b0bbcb" stroke="#293b2b" stroke-width="2.5" stroke-linejoin="round" d="m62 48 7-13 10 7 12-7 9 13-13 7-12-5Z"/><path fill="none" stroke="#bac8d7" stroke-width="5" stroke-linecap="round" d="M53 63q-8 8-8 19"/>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M66 80v4m27-4v4"/><path fill="none" d="M73 95q8 8 16-1"/></g>
+  </symbol>
+  <symbol id="food-avocado" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m42 89-19 7-5-5"/><path class="food-arm-wave" d="m116 91 21-20 1-9"/><path d="m60 123-4 16h-9m49-16 5 16h9"/></g>
+    <path fill="#62815c" stroke="#293b2b" stroke-width="2.5" d="M80 26c20 0 22 29 31 41 29 38 16 64-31 64S20 105 48 67c10-13 11-41 32-41Z"/><path fill="#c8d891" d="M80 35c14 0 16 25 25 38 23 32 13 48-25 48S32 105 55 73c10-14 11-38 25-38Z"/><circle fill="#b28557" stroke="#293b2b" stroke-width="2.5" cx="80" cy="95" r="22"/><path fill="none" stroke="#d7b37b" stroke-width="4" stroke-linecap="round" d="M67 89q3-9 11-9"/>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M68 59v4m24-4v4"/><path fill="none" d="M75 71q5 5 10 0"/></g>
+  </symbol>
+  <symbol id="food-carrot" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m51 82-25 10-5-5m87-6 19 12 6-4m-69 30-5 20h-9m37-23 7 23h9"/></g>
+    <path fill="#e8a665" stroke="#293b2b" stroke-width="2.5" d="M52 48q29-16 59 2c7 13-22 70-37 80-13-13-29-68-22-82Z"/><g class="food-leaf" fill="none" stroke="#6c925c" stroke-width="8" stroke-linecap="round"><path d="m79 45-1-22m4 20 15-21m-22 20-14-15"/></g>
+    <path fill="none" stroke="#ce8b4d" stroke-width="3" stroke-linecap="round" d="m53 58 11 3m40 1-11 3m-33 36 10 2m24-12-8 2"/><g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M66 75v4m25-4v4"/><path fill="none" d="M73 90q7 7 13-1"/></g>
+  </symbol>
+  <symbol id="food-broccoli" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m51 91-26 4-5-5m88 2 25 3 6-5m-75 31-4 17h-9m43-17 4 17h9"/></g>
+    <path fill="#afc788" stroke="#293b2b" stroke-width="2.5" stroke-linejoin="round" d="m55 74 16 20-5 32h29l-4-32 18-21-12-9-17 22-13-22Z"/><g class="food-leaf" stroke="#293b2b" stroke-width="2.5" fill="#71966a"><path d="M44 75c-22-10-9-36 10-34-2-22 25-30 36-12 22-15 46 3 36 21 19 14 5 40-15 33-9 12-30 7-35 1-11 9-29 5-32-9Z"/></g><path fill="none" stroke="#96b982" stroke-width="4" stroke-linecap="round" d="M49 53q4-5 10-5m12-12 6-1m22 7 7 3"/>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M67 64v4m27-4v4"/><path fill="none" d="M74 79q8 7 15-1"/></g>
+  </symbol>
+  <symbol id="food-pear" viewBox="0 0 160 160">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="m42 87-19 7-5-5m103-2 17 7 5-5m-81 34-4 16h-9m47-16 4 16h9"/></g>
+    <g stroke="#293b2b" stroke-width="2.5"><path fill="#c4cf7e" d="M80 38c18 0 15 22 25 34 27 35 19 55-24 55S29 105 55 72c11-13 7-34 25-34Z"/><path fill="none" stroke-width="4" stroke-linecap="round" d="M80 39q-2-14 7-22"/><path class="food-leaf" fill="#87a96b" d="M85 27q12-17 29-6-12 14-29 6Z"/></g><path fill="none" stroke="#e0e6a5" stroke-width="5" stroke-linecap="round" d="M53 88q-7 9-6 17"/><g fill="#a7b66a"><circle cx="103" cy="105" r="1.5"/><circle cx="94" cy="114" r="1.5"/><circle cx="58" cy="114" r="1.5"/></g>
+    <g stroke="#293b2b" stroke-width="3.5" stroke-linecap="round"><path class="food-eyes" d="M67 84v4m26-4v4"/><path fill="none" d="M74 99q8 8 15-1"/></g>
+  </symbol>
+</svg>

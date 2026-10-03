@@ -12,6 +12,7 @@
  function clear(){out.hidden=true;out.replaceChildren();empty.hidden=false;error.hidden=true;}
  function fail(message){clear();error.textContent=message;error.hidden=false;}
  function show(...items){error.hidden=true;out.replaceChildren(...items);out.hidden=false;empty.hidden=true;
+  document.dispatchEvent(new CustomEvent('getmacros:calculator-completed'));
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches||document.documentElement.classList.contains('tide-motion-off');
   // Results sit directly after the form on phones; never move the viewport on calculation.
   out.focus({preventScroll:true});

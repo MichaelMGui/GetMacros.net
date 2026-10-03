@@ -1,0 +1,326 @@
+[
+  {
+    "route": "protein-density-fast-food.html",
+    "intent": "Compare protein efficiency while retaining actual order sizes.",
+    "uniqueValue": "Reproducible density ranking beside total protein, serving definitions and sodium; explains the small-portion trap.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "high-protein-fast-food-under-500-calories.html",
+    "intent": "Find an order meeting two explicit nutrition limits.",
+    "uniqueValue": "Finite source-audited dual-threshold shortlist separating protein portions, breakfast and assembled meals.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "fast-food-meals-500-to-700-calories.html",
+    "intent": "Compare substantial main-order formats within a chosen calorie band.",
+    "uniqueValue": "Inclusive calorie-band comparison with minimum protein and format-specific composition notes.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "fast-food-breakfast-protein-comparison.html",
+    "intent": "Choose between named breakfast foods without invented prices or extra-drink assumptions.",
+    "uniqueValue": "Four sourced breakfast foods with total protein and density plus a concrete egg-bites versus sandwich calculation.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "fast-food-protein-and-sodium.html",
+    "intent": "Compare sodium among protein-containing orders, rather than rank on protein alone.",
+    "uniqueValue": "Paired-constraint analysis with a protein-only portion contrast and an assembled-order contrast.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "fast-food-fiber-and-protein.html",
+    "intent": "Find an order that meets two nutrients rather than maximize one.",
+    "uniqueValue": "Dual-nutrient collection with ingredient calculations explaining beans and the limits of cross-chain swaps.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "vegetarian-fast-food-protein-comparison.html",
+    "intent": "Understand protein differences among existing vegetarian ingredient classifications.",
+    "uniqueValue": "Explicit candidate-order list distinguishes egg/dairy foods from plant-based builds without allergy-safety claims.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "grilled-and-blackened-chicken-comparison.html",
+    "intent": "Choose a stand-alone protein portion using total amount and density.",
+    "uniqueValue": "Count versus ounce portions and directly derived per-calorie efficiency, with incomplete sodium explicitly retained.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "panda-express-chicken-entree-comparison.html",
+    "intent": "Choose among three specific chicken preparations while holding the side constant in worked calculations.",
+    "uniqueValue": "Official entree portion table plus equal-base arithmetic; separates portion totals from recipe claims.",
+    "nextAction": [
+      {
+        "url": "panda-express-base-nutrition-comparison.html",
+        "label": "Compare Panda bases"
+      },
+      {
+        "url": "panda-express-healthy-meals-macros.html",
+        "label": "Tracked Panda orders"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "restaurant-bowl-nutrition-comparison.html",
+    "intent": "Compare named grain and vegetable bowl builds across three supported chains.",
+    "uniqueValue": "Source-audited cross-chain bowl range with explicit complete-build boundaries; no interchangeable base assumptions.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "fast-food-under-1000mg-sodium.html",
+    "intent": "Find source-inspected candidates below an explicit order-level sodium ceiling.",
+    "uniqueValue": "Strict sodium cutoff with sides/main-item separation and a zero-sodium rice counterexample.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "chick-fil-a-vs-popeyes-chicken.html",
+    "intent": "Compare two chains’ distinct chicken-only portions and an explicit side decision.",
+    "uniqueValue": "Specific cross-chain count comparison with total sodium/protein tradeoff and one supported complete-order example.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "chipotle-vs-cava-chicken-bowls.html",
+    "intent": "Compare actual tracked chicken orders rather than declare a universally healthier chain.",
+    "uniqueValue": "Cross-chain complete-build comparison with precise Chipotle component inventory and CAVA source-edition limit.",
+    "nextAction": [
+      {
+        "url": "chipotle-healthy-meals-macros.html",
+        "label": "Chipotle tracked builds"
+      },
+      {
+        "url": "cava-healthy-meals-macros.html",
+        "label": "CAVA tracked bowls"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "sweetgreen-vs-panera-chicken-salads.html",
+    "intent": "Choose between two fully named salads with dressing included and no half-versus-whole mismatch.",
+    "uniqueValue": "Whole-order cross-chain table with quantified protein/sodium/fiber differences and truthful dressing boundaries.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "panda-express-base-nutrition-comparison.html",
+    "intent": "Resolve base-versus-entree Super Greens portion confusion and compare full bases.",
+    "uniqueValue": "Five official serving rows plus reproducible full-base differences; explicitly avoids half-side substitution.",
+    "nextAction": [
+      {
+        "url": "panda-express-chicken-entree-comparison.html",
+        "label": "Compare chicken entrees"
+      },
+      {
+        "url": "panda-express-healthy-meals-macros.html",
+        "label": "Tracked Panda orders"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "chipotle-rice-beans-nutrition.html",
+    "intent": "Understand rice-versus-bean and white-versus-brown numerical differences within one chain.",
+    "uniqueValue": "Equal official 4 oz portion comparison plus two complete component sums, without nutrition equivalence claims.",
+    "nextAction": [
+      {
+        "url": "chipotle-toppings-nutrition.html",
+        "label": "Compare toppings"
+      },
+      {
+        "url": "chipotle-healthy-meals-macros.html",
+        "label": "Tracked Chipotle builds"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "chipotle-toppings-nutrition.html",
+    "intent": "Compare real topping portions and their additive effects without calling ingredients bad or zero-calorie.",
+    "uniqueValue": "Different serving-unit reference plus two explicit additions; distinguishes tablespoon guesses from published portions.",
+    "nextAction": [
+      {
+        "url": "chipotle-rice-beans-nutrition.html",
+        "label": "Rice and beans"
+      },
+      {
+        "url": "chipotle-healthy-meals-macros.html",
+        "label": "Tracked Chipotle builds"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  },
+  {
+    "route": "fast-food-nutrition-data-report.html",
+    "intent": "Cite and understand the original project dataset scope and release-level inspection coverage.",
+    "uniqueValue": "Reproducible coverage counts and descriptive medians, audited ingredient/calculated provenance and source access boundaries.",
+    "nextAction": [
+      {
+        "url": "restaurant-meal-finder.html",
+        "label": "Find and compare tracked meals"
+      },
+      {
+        "url": "restaurant-meal-guides.html",
+        "label": "Restaurant nutrition guides"
+      }
+    ],
+    "date": "2026-10-03",
+    "locale": "Search locale not confirmed; source nutrition scope U.S.",
+    "measurement": "Qualitative opportunity, no volume/ranking metric"
+  }
+]

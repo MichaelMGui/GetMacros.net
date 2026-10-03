@@ -1,0 +1,1091 @@
+{
+  "date": "2026-10-03",
+  "reviewer": "food_characters_release agent",
+  "inspections": [
+    {
+      "route": "/contact.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/contact.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/contact.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/contact.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/contact.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/contact.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/contact.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/contact.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/sources.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/sources.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/sources.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/sources.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/sources.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/sources.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/sources.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/sources.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/search.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/search.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/search.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/search.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/search.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/search.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/search.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/search.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/404.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/404.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/404.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/404.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/404.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/404.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/404.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/404.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/calculators.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/calculators.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/calculators.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/calculators.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/calculators.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/calculators.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/calculators.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/calculators.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/articles.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/articles.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/articles.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/articles.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/articles.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/articles.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1050 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/articles.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/articles.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/index.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present",
+        "Final stacked mobile sort control after WebKit zoom fix"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/index.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/index.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present",
+        "Final stacked mobile sort control after WebKit zoom fix"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/index.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/restaurant-meal-finder.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present",
+        "Final stacked mobile sort control after WebKit zoom fix"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/restaurant-meal-finder.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/restaurant-meal-finder.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present",
+        "Final stacked mobile sort control after WebKit zoom fix"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/restaurant-meal-finder.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/chipotle-healthy-meals-macros.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/chipotle-healthy-meals-macros.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/chipotle-healthy-meals-macros.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/chipotle-healthy-meals-macros.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/protein-density-fast-food.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/protein-density-fast-food.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/protein-density-fast-food.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/protein-density-fast-food.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/serving-size-vs-portion-size.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/serving-size-vs-portion-size.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/serving-size-vs-portion-size.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/serving-size-vs-portion-size.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "theme": "light",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/grams-vs-milliliters-nutrition-labels.html-light-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/grams-vs-milliliters-nutrition-labels.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "theme": "dark",
+      "width": 390,
+      "engine": "chromium",
+      "capture": "screenshots/grams-vs-milliliters-nutrition-labels.html-dark-390.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1000 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/grams-vs-milliliters-nutrition-labels.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "Top 1100 CSS pixels",
+      "reviewed": [
+        "heading hierarchy and wrapping",
+        "navigation and visible actions",
+        "spacing and alignment",
+        "theme surfaces and readable text",
+        "visible form or meal controls where present",
+        "food character placement where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/chipotle-healthy-meals-macros.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/chipotle-healthy-meals-macros.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/protein-density-fast-food.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/protein-density-fast-food.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/serving-size-vs-portion-size.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/serving-size-vs-portion-size.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/grams-vs-milliliters-nutrition-labels.html-light-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "screenshots/grams-vs-milliliters-nutrition-labels.html-dark-1440.png",
+      "method": "Viewed actual captured pixels in labelled contact-sheet crop",
+      "region": "1050–2250 CSS pixels",
+      "reviewed": [
+        "restaurant and nutrition table rows",
+        "portion descriptions",
+        "number columns and supported missing-data wording",
+        "article body spacing",
+        "links and source section where present"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "dark",
+      "width": 320,
+      "engine": "webkit",
+      "capture": "menu-webkit-dark-320.png",
+      "method": "Viewed complete actual viewport screenshot",
+      "region": "Open calculator navigation menu",
+      "reviewed": [
+        "keyboard focus ring",
+        "item grouping and spacing",
+        "menu width and viewport containment",
+        "readability and distinct surfaces",
+        "visible close action on mobile"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "light",
+      "width": 320,
+      "engine": "chromium",
+      "capture": "menu-chromium-light-320.png",
+      "method": "Viewed complete actual viewport screenshot",
+      "region": "Open calculator navigation menu",
+      "reviewed": [
+        "keyboard focus ring",
+        "item grouping and spacing",
+        "menu width and viewport containment",
+        "readability and distinct surfaces",
+        "visible close action on mobile"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "dark",
+      "width": 1440,
+      "engine": "webkit",
+      "capture": "menu-webkit-dark-1440.png",
+      "method": "Viewed complete actual viewport screenshot",
+      "region": "Open calculator navigation menu",
+      "reviewed": [
+        "keyboard focus ring",
+        "item grouping and spacing",
+        "menu width and viewport containment",
+        "readability and distinct surfaces",
+        "visible close action on mobile"
+      ],
+      "remainingVisualIssues": []
+    },
+    {
+      "route": "/index.html",
+      "theme": "light",
+      "width": 1440,
+      "engine": "chromium",
+      "capture": "menu-chromium-light-1440.png",
+      "method": "Viewed complete actual viewport screenshot",
+      "region": "Open calculator navigation menu",
+      "reviewed": [
+        "keyboard focus ring",
+        "item grouping and spacing",
+        "menu width and viewport containment",
+        "readability and distinct surfaces",
+        "visible close action on mobile"
+      ],
+      "remainingVisualIssues": []
+    }
+  ],
+  "limitations": [
+    "Human visual inspection covers named regions and states only; all-route screenshot generation does not imply all pages were manually inspected.",
+    "The labelled contact sheets are scaled crops of local fixture browser captures, not additional browser screenshots.",
+    "External services and production HTTP responses were not exercised.",
+    "No screen-reader audit or claim of full accessibility compliance."
+  ],
+  "resolvedDefects": [
+    "320 px article heading overflow: character now stacks above full-width heading.",
+    "200% root text sizing article overflow: same character/heading layout correction.",
+    "WebKit 200% root text sizing home/finder overflow: mobile sort-label uses a one-column grid; final affected-route and all resilience retests pass."
+  ],
+  "pendingAtWriting": [],
+  "finalAutomatedReport": "checks.json"
+}

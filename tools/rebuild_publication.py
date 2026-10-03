@@ -65,6 +65,7 @@ def run():
   # Publisher verification is retained. Ad serving awaits account-side CMP
   # verification; a home-made banner would not meet Google's CMP requirement.
   text=re.sub(r'<script\b[^>]*src="https://pagead2\.googlesyndication\.com/[^>]*>.*?</script>','',text,flags=re.S)
+  text=re.sub(r'<div class="ad-auto-anchor"[^>]*>\s*</div>','',text)
   text=re.sub(r'<script\b[^>]*src="js/(?:main|lang|tide-motion|polish|site-motion|studio-v6|atelier-v5|calculator-suite|page-experience)\.js[^>]*>.*?</script>','',text,flags=re.S)
   text=re.sub(r'(<body\b[^>]*?)\sdata-ads="[^"]*"',r'\1',text)
   text=re.sub(r'(<body\b[^>]*?)\sdata-publication="[^"]*"',r'\1',text)
@@ -96,14 +97,28 @@ def run():
    if 'id="search-meals"' not in text:text=text.replace('<section class="search-start"',section+'<section class="search-start"',1)
    if 'js/search-meals.js' not in text:text=text.replace('</body>','<script src="js/meal-data.js" defer></script><script src="js/search-meals.js" defer></script></body>')
   text=transform(text,path.name)
+  # One shared runtime for characters, non-identifying event boundaries and
+  # optional advertising. Serving stays disabled until an approved adapter
+  # and affirmative consent are supplied.
+  for script in ['product-events','food-characters','ad-placements']:
+   text=re.sub(r'<script[^>]+src="js/'+script+r'\.js[^>]*>.*?</script>','',text,flags=re.S)
+  text=text.replace('</body>','<script src="js/product-events.js" defer></script><script src="js/food-characters.js" defer></script><script src="js/ad-placements.js" defer></script></body>')
+  if 'js/meal-finder.js' in text:
+   text=re.sub(r'<script[^>]+src="js/meal-engine.js[^>]*>.*?</script>','',text,flags=re.S)
+   text=re.sub(r'(<script[^>]+src="js/meal-finder\.js)',r'<script src="js/meal-engine.js" defer></script>\1',text,count=1)
   # Keep every retained article's factual body and current verification date.
   text=re.sub(r'\n{3,}','\n\n',text)
+  text=re.sub(r'(?m)^[ \t]+$','',text)
   path.write_text(text,encoding='utf-8')
  records=json.loads((ROOT/'tools/restaurant-review.json').read_text(encoding='utf-8'))
  metadata={r['chain']+'||'+r['name']:{'source':r['source'],'checked':r['checked'],'region':'U.S.','serving':'1 listed order','fat':None} for r in records}
  metadata['Chick-fil-A||Grilled Chicken Sandwich'].update(fat=11,serving='1 sandwich (206 g)',checked='2026-09-22',source='https://www.chick-fil-a.com/nutrition-allergens')
- script='/* Source records; missing fat is not estimated from calories. */\n(function(){var records='+json.dumps(metadata,ensure_ascii=False,separators=(',',':'))+'; (window.GM_MEALS||[]).forEach(function(m){var r=records[m.chain+"||"+m.name];if(r)Object.assign(m,r);});})();\n'
- (ROOT/'js/meal-provenance.js').write_text(script,encoding='utf-8')
+ patches=ROOT/'docs/release-2026-10-03/data-audited-patches.json'
+ if patches.exists():
+  for r in json.loads(patches.read_text(encoding='utf-8'))['records']:
+   metadata[r['recordKey']].update(source=r['source'],checked=r['retrievalDate'],serving=r['serving'],fat=r['values'].get('fat'),sourceDate=r['sourceDate'],nutrientProvenance=next(item['nutrientProvenance'] for item in records if item['chain']+'||'+item['name']==r['recordKey']),components=r['components'],verificationStatus=r['verificationStatus'],notes=r['notes'])
+ from meal_provenance import pack
+ (ROOT/'js/meal-provenance.js').write_text(pack(metadata),encoding='utf-8')
  sitemap=(ROOT/'sitemap.xml').read_text(encoding='utf-8')
  for name in [*EXAMPLES,'','blog.html','search.html','calculators.html','restaurant-meal-finder.html','privacy.html']:
   url='https://getmacros.net/'+name

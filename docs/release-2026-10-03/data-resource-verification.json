@@ -1,0 +1,19 @@
+{
+  "pages": 18,
+  "uniqueSlugs": 18,
+  "tableFactRows": 183,
+  "sourceInspectedRecords": 41,
+  "centralValuesPending": [],
+  "checks": [
+    "Unique page intents supplied for editorial review",
+    "Balanced tables and section headings",
+    "Internal body links resolve locally or within batch",
+    "Table rows match audited source values",
+    "No missing nutrient replaced by zero"
+  ],
+  "notPerformed": [
+    "Visual/browser review of the final integrated pages",
+    "Live ordering/menu availability verification",
+    "Legal determination of numerical fact/database reuse in each jurisdiction"
+  ]
+}

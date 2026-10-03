@@ -44,9 +44,9 @@ CHOICES = {
  'Taco Bell': ('What we can compare—and what is missing', 'Cantina Chicken Bowl', 'Veggie Bowl',
   'We can compare the recorded calorie totals for these two bowls. We cannot make a complete protein, fiber or sodium comparison because some values are unverified in our records. A dash is missing information, not a zero and not evidence that the veggie bowl has no protein.',
   'The finder excludes records missing calories, protein, fiber or sodium by default. You can include incomplete records, but a nutrient filter still requires that nutrient to be known. Check Taco Bell’s current item information before relying on a missing value.'),
- 'Panda Express': ('An entrée alone or with a vegetable side?', 'Grilled Teriyaki Chicken', 'Grilled Teriyaki Chicken with Super Greens',
-  'The second record combines the chicken with Super Greens. The difference is the recorded vegetable side: it adds food energy, protein, fiber and sodium. This explains why the combination is more informative for lunch than ranking the chicken portion alone.',
-  'Rice or chow mein makes a different combination. Extra sauce packets are not an automatic part of these totals; check what is included in your actual order.'),
+ 'Panda Express': ('Chicken alone or with a full greens base?', 'Grilled Teriyaki Chicken', 'Grilled Teriyaki Chicken with Super Greens',
+  'The second record adds a full 10 oz Super Greens base to the 6.1 oz chicken entree: 180 calories, 8 g protein, 8 g fiber and 660 mg sodium more. The smaller 3.5 oz Super Greens entree entry is a different source portion and is not used for this combination.',
+  'Rice, chow mein or a half-side serving makes a different calculation. Extra sauce packets are separate; the source lists teriyaki sauce as its own portion.'),
  'KFC': ('One piece of chicken or a listed combination?', 'Kentucky Grilled Chicken Breast', 'Grilled Breast with green beans and corn',
   'The combination adds green beans and corn to the grilled breast. It contains more calories and fiber than the chicken piece alone. These are recorded portions, not a promise that grilled chicken or these sides are available at every KFC.',
   'Check your location first. If it offers only a different recipe or side size, the figures here do not transfer to that replacement.'),
@@ -63,7 +63,7 @@ CHOICES = {
 
 def run():
  meals=parse_meals()
- provenance=json.loads(re.search(r'var records=(\{.*?\});', (ROOT/'js/meal-provenance.js').read_text(encoding='utf-8'))[1])
+ provenance=__import__('meal_provenance').read(ROOT/'js/meal-provenance.js')
  for chain,(title,first,second,meaning,check) in CHOICES.items():
   pair=[next(m for m in meals if m['chain']==chain and m['name']==name) for name in (first,second)]
   rows=[]; orders=[]

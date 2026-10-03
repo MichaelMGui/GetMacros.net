@@ -1,0 +1,283 @@
+{
+  "date": "2026-10-03",
+  "calculations": [
+    {
+      "route": "panda-express-chicken-entree-comparison.html",
+      "label": "grilled teriyaki chicken with full white-rice base",
+      "method": "Sum of rounded official portion values; not a separately published combo total",
+      "components": [
+        {
+          "item": "grilled teriyaki chicken",
+          "count": 1,
+          "values": {
+            "cal": 280,
+            "p": 38,
+            "c": 13,
+            "f": 0,
+            "na": 610,
+            "fat": 9
+          }
+        },
+        {
+          "item": "white rice",
+          "count": 1,
+          "values": {
+            "cal": 570,
+            "p": 11,
+            "c": 129,
+            "f": 0,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "results": {
+        "cal": 850,
+        "p": 49,
+        "c": 142,
+        "f": 0,
+        "na": 610,
+        "fat": 9
+      }
+    },
+    {
+      "route": "panda-express-chicken-entree-comparison.html",
+      "label": "string bean chicken with full white-rice base",
+      "method": "Sum of rounded official portion values; not a separately published combo total",
+      "components": [
+        {
+          "item": "string bean chicken",
+          "count": 1,
+          "values": {
+            "cal": 210,
+            "p": 15,
+            "c": 15,
+            "f": 3,
+            "na": 600,
+            "fat": 10
+          }
+        },
+        {
+          "item": "white rice",
+          "count": 1,
+          "values": {
+            "cal": 570,
+            "p": 11,
+            "c": 129,
+            "f": 0,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "results": {
+        "cal": 780,
+        "p": 26,
+        "c": 144,
+        "f": 3,
+        "na": 600,
+        "fat": 10
+      }
+    },
+    {
+      "route": "panda-express-chicken-entree-comparison.html",
+      "label": "orange chicken with full white-rice base",
+      "method": "Sum of rounded official portion values; not a separately published combo total",
+      "components": [
+        {
+          "item": "orange chicken",
+          "count": 1,
+          "values": {
+            "cal": 560,
+            "p": 19,
+            "c": 63,
+            "f": 1,
+            "na": 1000,
+            "fat": 25
+          }
+        },
+        {
+          "item": "white rice",
+          "count": 1,
+          "values": {
+            "cal": 570,
+            "p": 11,
+            "c": 129,
+            "f": 0,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "results": {
+        "cal": 1130,
+        "p": 30,
+        "c": 192,
+        "f": 1,
+        "na": 1000,
+        "fat": 25
+      }
+    },
+    {
+      "route": "chipotle-rice-beans-nutrition.html",
+      "label": "white rice and black beans",
+      "method": "Sum of rounded official portion values; not a separately published combo total",
+      "components": [
+        {
+          "item": "white rice",
+          "count": 1,
+          "values": {
+            "cal": 210,
+            "p": 4,
+            "c": 40,
+            "f": 1,
+            "na": 350,
+            "fat": 4
+          }
+        },
+        {
+          "item": "black beans",
+          "count": 1,
+          "values": {
+            "cal": 130,
+            "p": 8,
+            "c": 22,
+            "f": 7,
+            "na": 210,
+            "fat": 1.5
+          }
+        }
+      ],
+      "results": {
+        "cal": 340,
+        "p": 12,
+        "c": 62,
+        "f": 8,
+        "na": 560,
+        "fat": 5.5
+      }
+    },
+    {
+      "route": "chipotle-rice-beans-nutrition.html",
+      "label": "brown rice and black beans",
+      "method": "Sum of rounded official portion values; not a separately published combo total",
+      "components": [
+        {
+          "item": "brown rice",
+          "count": 1,
+          "values": {
+            "cal": 210,
+            "p": 4,
+            "c": 36,
+            "f": 2,
+            "na": 190,
+            "fat": 6
+          }
+        },
+        {
+          "item": "black beans",
+          "count": 1,
+          "values": {
+            "cal": 130,
+            "p": 8,
+            "c": 22,
+            "f": 7,
+            "na": 210,
+            "fat": 1.5
+          }
+        }
+      ],
+      "results": {
+        "cal": 340,
+        "p": 12,
+        "c": 58,
+        "f": 9,
+        "na": 400,
+        "fat": 7.5
+      }
+    },
+    {
+      "route": "chipotle-toppings-nutrition.html",
+      "label": "cheese and sour cream",
+      "method": "Sum of rounded official portion values; not a separately published combo total",
+      "components": [
+        {
+          "item": "cheese",
+          "count": 1,
+          "values": {
+            "cal": 110,
+            "p": 6,
+            "c": 1,
+            "f": 0,
+            "na": 190,
+            "fat": 8
+          }
+        },
+        {
+          "item": "sour cream",
+          "count": 1,
+          "values": {
+            "cal": 110,
+            "p": 2,
+            "c": 2,
+            "f": 0,
+            "na": 30,
+            "fat": 9
+          }
+        }
+      ],
+      "results": {
+        "cal": 220,
+        "p": 8,
+        "c": 3,
+        "f": 0,
+        "na": 220,
+        "fat": 17
+      }
+    },
+    {
+      "route": "chipotle-toppings-nutrition.html",
+      "label": "guacamole and tomato salsa",
+      "method": "Sum of rounded official portion values; not a separately published combo total",
+      "components": [
+        {
+          "item": "guacamole",
+          "count": 1,
+          "values": {
+            "cal": 230,
+            "p": 2,
+            "c": 8,
+            "f": 6,
+            "na": 370,
+            "fat": 22
+          }
+        },
+        {
+          "item": "tomato salsa",
+          "count": 1,
+          "values": {
+            "cal": 25,
+            "p": 0,
+            "c": 4,
+            "f": 1,
+            "na": 550,
+            "fat": 0
+          }
+        }
+      ],
+      "results": {
+        "cal": 255,
+        "p": 2,
+        "c": 12,
+        "f": 7,
+        "na": 920,
+        "fat": 22
+      }
+    }
+  ],
+  "otherCheckedDifferences": [
+    "Grilled Chicken Sandwich plus Kale Crunch sodium =1015mg",
+    "Whole Caesar with Chicken minus Guacamole Greens sodium =1060mg"
+  ],
+  "ratioMethod": "Protein g / calories ×100; rank before rounding, display one decimal"
+}

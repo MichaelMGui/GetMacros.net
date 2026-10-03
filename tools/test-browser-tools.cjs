@@ -33,14 +33,14 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/slowf/.cache/c
  await page.evaluate(()=>window.scrollTo(0,500));
  const before=await page.evaluate(()=>scrollY);
  const menuBox=await page.locator('.nav-toggle').boundingBox();await page.mouse.click(menuBox.x+menuBox.width/2,menuBox.y+menuBox.height/2);assert.equal(await page.locator('.nav-toggle').getAttribute('aria-expanded'),'true');
- await page.getByRole('button',{name:'Eat Out',exact:true}).click();
+ await page.getByRole('button',{name:/Restaurants/}).click();
  assert.equal(await page.locator('.nav-group').first().locator('.nav-popover a').first().isVisible(),true);
  await page.keyboard.press('Escape');assert.equal(await page.locator('.nav-toggle').getAttribute('aria-expanded'),'false');
  assert.ok(Math.abs((await page.evaluate(()=>scrollY))-before)<3);
  console.log('PASS mobile menu: open, submenu, Escape, preserves scroll');
  await page.setViewportSize({width:1440,height:1000});
- await page.getByRole('button',{name:'Tools',exact:true}).click();
- await page.keyboard.press('Escape');assert.equal(await page.getByRole('button',{name:'Tools',exact:true}).evaluate(el=>el===document.activeElement),true);
+ await page.getByRole('button',{name:/Calculators/}).click();
+ await page.keyboard.press('Escape');assert.equal(await page.getByRole('button',{name:/Calculators/}).evaluate(el=>el===document.activeElement),true);
  console.log('PASS desktop submenu Escape restores focus');
  await browser.close();
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "protein-density",
+    "viewport": "1200x630",
+    "textWithinCanvas": true
+  },
+  {
+    "asset": "panda-bases",
+    "viewport": "1200x630",
+    "textWithinCanvas": true
+  },
+  {
+    "state": "Three-meal comparison",
+    "printMedia": true,
+    "controlsHidden": true,
+    "nutrientRows": 6,
+    "output": "comparison-print.pdf",
+    "physicalPrinterTested": false
+  }
+]

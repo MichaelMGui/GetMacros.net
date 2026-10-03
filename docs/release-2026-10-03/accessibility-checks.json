@@ -1,0 +1,35 @@
+{
+  "scope": "Core text and primary action contrast; keyboard skip link and menu; search and reset. Not a complete WCAG audit.",
+  "report": [
+    {
+      "theme": "light",
+      "name": "body",
+      "contrast": 14.53
+    },
+    {
+      "theme": "light",
+      "name": "secondary text",
+      "contrast": 5.98
+    },
+    {
+      "theme": "light",
+      "name": "primary action",
+      "contrast": 7.02
+    },
+    {
+      "theme": "dark",
+      "name": "body",
+      "contrast": 15.38
+    },
+    {
+      "theme": "dark",
+      "name": "secondary text",
+      "contrast": 9.48
+    },
+    {
+      "theme": "dark",
+      "name": "primary action",
+      "contrast": 10.56
+    }
+  ]
+}

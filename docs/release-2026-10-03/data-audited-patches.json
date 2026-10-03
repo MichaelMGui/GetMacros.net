@@ -1,0 +1,3125 @@
+{
+  "retrievalDate": "2026-10-03",
+  "market": "U.S.",
+  "records": [
+    {
+      "recordKey": "Sweetgreen||Chicken Pesto Parm",
+      "values": {
+        "cal": 510,
+        "p": 38,
+        "c": 30,
+        "f": 6,
+        "na": 1560,
+        "fat": 24
+      },
+      "source": "https://www.sweetgreen.com/nutrition",
+      "sourceURLs": [
+        "https://www.sweetgreen.com/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard bowl, 420 g, including dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Sweetgreen||Harvest Bowl",
+      "values": {
+        "cal": 760,
+        "p": 40,
+        "c": 60,
+        "f": 10,
+        "na": 1265,
+        "fat": 42
+      },
+      "source": "https://www.sweetgreen.com/nutrition",
+      "sourceURLs": [
+        "https://www.sweetgreen.com/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard bowl, 425 g, including dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Sweetgreen||Shroomami",
+      "values": {
+        "cal": 665,
+        "p": 20,
+        "c": 51,
+        "f": 11,
+        "na": 1250,
+        "fat": 45
+      },
+      "source": "https://www.sweetgreen.com/nutrition",
+      "sourceURLs": [
+        "https://www.sweetgreen.com/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard bowl, 457 g, including dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Sweetgreen||Super Green Goddess",
+      "values": {
+        "cal": 465,
+        "p": 12,
+        "c": 36,
+        "f": 13,
+        "na": 1230,
+        "fat": 32
+      },
+      "source": "https://www.sweetgreen.com/nutrition",
+      "sourceURLs": [
+        "https://www.sweetgreen.com/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard salad, 347 g, including dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Sweetgreen||Guacamole Greens",
+      "values": {
+        "cal": 555,
+        "p": 29,
+        "c": 35,
+        "f": 12,
+        "na": 1560,
+        "fat": 32
+      },
+      "source": "https://www.sweetgreen.com/nutrition",
+      "sourceURLs": [
+        "https://www.sweetgreen.com/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard salad, 635 g, including dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.sweetgreen.com/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panera||Green Goddess Cobb Salad with Chicken, half",
+      "values": {
+        "cal": 290,
+        "p": 20,
+        "c": 15,
+        "f": 4,
+        "na": 990,
+        "fat": 17
+      },
+      "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+      "sourceURLs": [
+        "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1/2 standard salad, dressing included; extra side excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09-02",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panera||Greek Salad, whole",
+      "values": {
+        "cal": 630,
+        "p": 8,
+        "c": 17,
+        "f": 5,
+        "na": 1400,
+        "fat": 59
+      },
+      "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+      "sourceURLs": [
+        "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 whole standard salad, dressing included; extra side excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09-02",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panera||Homestyle Chicken Noodle Soup, cup",
+      "values": {
+        "cal": 120,
+        "p": 10,
+        "c": 14,
+        "f": 0,
+        "na": 1050,
+        "fat": 3
+      },
+      "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+      "sourceURLs": [
+        "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 cup, without bread or another side",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09-02",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panera||Caesar with Chicken Salad, whole",
+      "values": {
+        "cal": 670,
+        "p": 35,
+        "c": 27,
+        "f": 4,
+        "na": 2620,
+        "fat": 47
+      },
+      "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+      "sourceURLs": [
+        "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 whole standard salad, dressing included; extra side excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09-02",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panera||Hearty Fireside Chili, bowl",
+      "values": {
+        "cal": 410,
+        "p": 19,
+        "c": 49,
+        "f": 9,
+        "na": 1730,
+        "fat": 15
+      },
+      "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+      "sourceURLs": [
+        "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 bowl, without bread bowl or another side",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09-02",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "CAVA||Greek Salad bowl",
+      "values": {
+        "cal": 585,
+        "p": 37,
+        "c": 19,
+        "f": 8,
+        "na": 1830,
+        "fat": 40
+      },
+      "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+      "sourceURLs": [
+        "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Existing official April-2025-named document inspected; no printed publication date established. Current live menu linkage could not be verified. Do not claim this is a new menu edition."
+    },
+    {
+      "recordKey": "CAVA||Falafel Crunch bowl",
+      "values": {
+        "cal": 860,
+        "p": 24,
+        "c": 88,
+        "f": 18,
+        "na": 2230,
+        "fat": 56
+      },
+      "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+      "sourceURLs": [
+        "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Existing official April-2025-named document inspected; no printed publication date established. Current live menu linkage could not be verified. Do not claim this is a new menu edition."
+    },
+    {
+      "recordKey": "CAVA||Chicken + Rice bowl",
+      "values": {
+        "cal": 710,
+        "p": 40,
+        "c": 43,
+        "f": 7,
+        "na": 1830,
+        "fat": 42
+      },
+      "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+      "sourceURLs": [
+        "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Existing official April-2025-named document inspected; no printed publication date established. Current live menu linkage could not be verified. Do not claim this is a new menu edition."
+    },
+    {
+      "recordKey": "CAVA||Harissa Avocado bowl",
+      "values": {
+        "cal": 840,
+        "p": 42,
+        "c": 63,
+        "f": 12,
+        "na": 2030,
+        "fat": 50
+      },
+      "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+      "sourceURLs": [
+        "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Existing official April-2025-named document inspected; no printed publication date established. Current live menu linkage could not be verified. Do not claim this is a new menu edition."
+    },
+    {
+      "recordKey": "Chick-fil-A||Grilled Nuggets, 8 count",
+      "values": {
+        "cal": 130,
+        "p": 25,
+        "c": 1,
+        "f": 0,
+        "na": 440,
+        "fat": 3
+      },
+      "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+      "sourceURLs": [
+        "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets"
+      ],
+      "market": "U.S.",
+      "serving": "8 grilled nuggets, without dipping sauce",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Chick-fil-A||Grilled Chicken Sandwich",
+      "values": {
+        "cal": 390,
+        "p": 28,
+        "c": 45,
+        "f": 3,
+        "na": 765,
+        "fat": 11
+      },
+      "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+      "sourceURLs": [
+        "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard sandwich; source formulation includes listed sauce ingredients; extra packets, sides and drinks excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Chick-fil-A||Egg White Grill",
+      "values": {
+        "cal": 300,
+        "p": 27,
+        "c": 29,
+        "f": 1,
+        "na": 990,
+        "fat": 8
+      },
+      "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+      "sourceURLs": [
+        "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard breakfast sandwich",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Chick-fil-A||Kale Crunch Side",
+      "values": {
+        "cal": 170,
+        "p": 4,
+        "c": 13,
+        "f": 4,
+        "na": 250,
+        "fat": 12
+      },
+      "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+      "sourceURLs": [
+        "https://www.chick-fil-a.com/menu/sides/kale-crunch-side"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard side with vinaigrette and almonds",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Chick-fil-A||Grilled Chicken Club Sandwich",
+      "values": {
+        "cal": 520,
+        "p": 37,
+        "c": 45,
+        "f": 3,
+        "na": 1055,
+        "fat": 22
+      },
+      "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+      "sourceURLs": [
+        "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard sandwich; extra sides and drinks excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Chick-fil-A||Chick-fil-A Cool Wrap",
+      "values": {
+        "cal": 660,
+        "p": 43,
+        "c": 32,
+        "f": 14,
+        "na": 1420,
+        "fat": 45
+      },
+      "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+      "sourceURLs": [
+        "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap"
+      ],
+      "market": "U.S.",
+      "serving": "1 standard wrap with suggested Avocado Lime Ranch dressing",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Chick-fil-A||Grilled Nuggets, 12 count",
+      "values": {
+        "cal": 200,
+        "p": 38,
+        "c": 2,
+        "fat": 4.5
+      },
+      "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+      "sourceURLs": [
+        "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets"
+      ],
+      "market": "U.S.",
+      "serving": "12 grilled nuggets, without dipping sauce",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Dedicated item page displays four nutrients. Prior fiber and sodium were not reverified in this inspection; retain their prior provenance dates."
+    },
+    {
+      "recordKey": "Popeyes||3 Blackened Tenders",
+      "values": {
+        "cal": 170,
+        "p": 28,
+        "c": 2,
+        "f": 1,
+        "na": 860,
+        "fat": 6
+      },
+      "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+      "sourceURLs": [
+        "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "3 tenders, biscuit, sauce and drink excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Popeyes||5 Blackened Tenders",
+      "values": {
+        "cal": 280,
+        "p": 47,
+        "c": 4,
+        "f": 1,
+        "na": 1430,
+        "fat": 9
+      },
+      "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+      "sourceURLs": [
+        "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "5 tenders, biscuit, sauce and drink excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Popeyes||Red Beans & Rice, regular",
+      "values": {
+        "cal": 260,
+        "p": 7,
+        "c": 29,
+        "f": 6,
+        "na": 580,
+        "fat": 16
+      },
+      "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+      "sourceURLs": [
+        "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "1 regular side, biscuit, sauce and drink excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Popeyes||3 Blackened Tenders with regular red beans and rice",
+      "values": {
+        "cal": 430,
+        "p": 35,
+        "c": 31,
+        "f": 7,
+        "na": 1440,
+        "fat": 22
+      },
+      "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+      "sourceURLs": [
+        "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "3 blackened tenders plus 1 regular red beans and rice; biscuit, sauce and drink excluded",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2026-09",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "3 Blackened Tenders",
+          "count": 1
+        },
+        {
+          "item": "Red Beans & Rice, regular",
+          "count": 1
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panda Express||Grilled Teriyaki Chicken",
+      "values": {
+        "cal": 280,
+        "p": 38,
+        "c": 13,
+        "f": 0,
+        "na": 610,
+        "fat": 9
+      },
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceURLs": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "market": "U.S.",
+      "serving": "6.1 oz chicken entree",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panda Express||Super Greens side",
+      "values": {
+        "cal": 180,
+        "p": 8,
+        "c": 17,
+        "f": 8,
+        "na": 660,
+        "fat": 9
+      },
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceURLs": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "market": "U.S.",
+      "serving": "10 oz full Super Greens base",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panda Express||String Bean Chicken Breast",
+      "values": {
+        "cal": 210,
+        "p": 15,
+        "c": 15,
+        "f": 3,
+        "na": 600,
+        "fat": 10
+      },
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceURLs": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "market": "U.S.",
+      "serving": "5.6 oz entree",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": ""
+    },
+    {
+      "recordKey": "Panda Express||Grilled Teriyaki Chicken with Super Greens",
+      "values": {
+        "cal": 460,
+        "p": 46,
+        "c": 30,
+        "f": 8,
+        "na": 1270,
+        "fat": 18
+      },
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceURLs": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "market": "U.S.",
+      "serving": "1 × 6.1 oz grilled teriyaki chicken + 1 × 10 oz super greens base",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "grilled teriyaki chicken",
+          "count": 1,
+          "serving": "6.1 oz",
+          "values": {
+            "cal": 280,
+            "p": 38,
+            "c": 13,
+            "f": 0,
+            "na": 610,
+            "fat": 9
+          }
+        },
+        {
+          "item": "super greens base",
+          "count": 1,
+          "serving": "10 oz",
+          "values": {
+            "cal": 180,
+            "p": 8,
+            "c": 17,
+            "f": 8,
+            "na": 660,
+            "fat": 9
+          }
+        }
+      ],
+      "notes": "Sum of full source-table portions, not half-sides or Cub Meal portions; extra sauce packets and drinks excluded."
+    },
+    {
+      "recordKey": "Panda Express||Broccoli Beef with white steamed rice",
+      "values": {
+        "cal": 760,
+        "p": 28,
+        "c": 143,
+        "f": 2,
+        "na": 600,
+        "fat": 7
+      },
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceURLs": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "market": "U.S.",
+      "serving": "1 × 6.3 oz broccoli beef + 1 × 12 oz white rice",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "broccoli beef",
+          "count": 1,
+          "serving": "6.3 oz",
+          "values": {
+            "cal": 190,
+            "p": 17,
+            "c": 14,
+            "f": 2,
+            "na": 600,
+            "fat": 7
+          }
+        },
+        {
+          "item": "white rice",
+          "count": 1,
+          "serving": "12 oz",
+          "values": {
+            "cal": 570,
+            "p": 11,
+            "c": 129,
+            "f": 0,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": "Sum of full source-table portions, not half-sides or Cub Meal portions; extra sauce packets and drinks excluded."
+    },
+    {
+      "recordKey": "Panda Express||Bigger Plate: fried rice + 3 grilled teriyaki chicken entrées",
+      "values": {
+        "cal": 1450,
+        "p": 129,
+        "c": 148,
+        "f": 3,
+        "na": 2640,
+        "fat": 40
+      },
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceURLs": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "market": "U.S.",
+      "serving": "1 × 12 oz fried rice + 3 × 6.1 oz grilled teriyaki chicken",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "fried rice",
+          "count": 1,
+          "serving": "12 oz",
+          "values": {
+            "cal": 610,
+            "p": 15,
+            "c": 109,
+            "f": 3,
+            "na": 810,
+            "fat": 13
+          }
+        },
+        {
+          "item": "grilled teriyaki chicken",
+          "count": 3,
+          "serving": "6.1 oz",
+          "values": {
+            "cal": 280,
+            "p": 38,
+            "c": 13,
+            "f": 0,
+            "na": 610,
+            "fat": 9
+          }
+        }
+      ],
+      "notes": "Sum of full source-table portions, not half-sides or Cub Meal portions; extra sauce packets and drinks excluded."
+    },
+    {
+      "recordKey": "Panda Express||Bigger Plate: chow mein + grilled teriyaki + orange chicken + string bean chicken",
+      "values": {
+        "cal": 1570,
+        "p": 86,
+        "c": 180,
+        "f": 9,
+        "na": 3250,
+        "fat": 56
+      },
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceURLs": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "market": "U.S.",
+      "serving": "1 × 12 oz chow mein + 1 × 6.1 oz grilled teriyaki chicken + 1 × 6.2 oz orange chicken + 1 × 5.6 oz string bean chicken",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "chow mein",
+          "count": 1,
+          "serving": "12 oz",
+          "values": {
+            "cal": 520,
+            "p": 14,
+            "c": 89,
+            "f": 5,
+            "na": 1040,
+            "fat": 12
+          }
+        },
+        {
+          "item": "grilled teriyaki chicken",
+          "count": 1,
+          "serving": "6.1 oz",
+          "values": {
+            "cal": 280,
+            "p": 38,
+            "c": 13,
+            "f": 0,
+            "na": 610,
+            "fat": 9
+          }
+        },
+        {
+          "item": "orange chicken",
+          "count": 1,
+          "serving": "6.2 oz",
+          "values": {
+            "cal": 560,
+            "p": 19,
+            "c": 63,
+            "f": 1,
+            "na": 1000,
+            "fat": 25
+          }
+        },
+        {
+          "item": "string bean chicken",
+          "count": 1,
+          "serving": "5.6 oz",
+          "values": {
+            "cal": 210,
+            "p": 15,
+            "c": 15,
+            "f": 3,
+            "na": 600,
+            "fat": 10
+          }
+        }
+      ],
+      "notes": "Sum of full source-table portions, not half-sides or Cub Meal portions; extra sauce packets and drinks excluded."
+    },
+    {
+      "recordKey": "Starbucks||Turkey Bacon, Cheddar & Egg White Sandwich",
+      "values": {
+        "cal": 260,
+        "p": 17,
+        "c": 30,
+        "f": 2,
+        "na": 600,
+        "fat": 9
+      },
+      "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+      "sourceURLs": [
+        "https://www.starbucks.com/menu/product/368/single/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 sandwich, 142 g",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "official indexed nutrition text inspected; live rendering inaccessible",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Official nutrition-page text returned in search result inspection. Direct page retrieval produced an empty script shell; this distinction is recorded, not claimed as a fresh rendered-site inspection."
+    },
+    {
+      "recordKey": "Starbucks||Spinach, Feta & Egg White Wrap",
+      "values": {
+        "cal": 290,
+        "p": 20,
+        "c": 34,
+        "f": 3,
+        "na": 840,
+        "fat": 8
+      },
+      "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+      "sourceURLs": [
+        "https://www.starbucks.com/menu/product/371/single/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 wrap, 159 g",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "official indexed nutrition text inspected; live rendering inaccessible",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Official nutrition-page text returned in search result inspection. Direct page retrieval produced an empty script shell; this distinction is recorded, not claimed as a fresh rendered-site inspection."
+    },
+    {
+      "recordKey": "Starbucks||Egg White & Roasted Red Pepper Egg Bites",
+      "values": {
+        "cal": 170,
+        "p": 12,
+        "c": 11,
+        "f": 0,
+        "na": 470,
+        "fat": 8
+      },
+      "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+      "sourceURLs": [
+        "https://www.starbucks.com/menu/product/2122117/single/nutrition"
+      ],
+      "market": "U.S.",
+      "serving": "1 serving of two bites, 130 g",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": null,
+      "verificationStatus": "official indexed nutrition text inspected; live rendering inaccessible",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "published",
+          "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [],
+      "notes": "Official nutrition-page text returned in search result inspection. Direct page retrieval produced an empty script shell; this distinction is recorded, not claimed as a fresh rendered-site inspection."
+    },
+    {
+      "recordKey": "Chipotle||Chicken Bowl with white rice and black beans",
+      "values": {
+        "cal": 650,
+        "p": 48,
+        "c": 88,
+        "f": 14,
+        "na": 1900,
+        "fat": 14.0
+      },
+      "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceURLs": [
+        "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "Listed ingredient build: 1 × 4 oz chicken, 1 × 4 oz white rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2024-10 (ingredient PDF printed edition)",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "chicken",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 180,
+            "p": 32,
+            "c": 0,
+            "f": 0,
+            "na": 310,
+            "fat": 7
+          }
+        },
+        {
+          "item": "white rice",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 210,
+            "p": 4,
+            "c": 40,
+            "f": 1,
+            "na": 350,
+            "fat": 4
+          }
+        },
+        {
+          "item": "black beans",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 130,
+            "p": 8,
+            "c": 22,
+            "f": 7,
+            "na": 210,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "fajita vegetables",
+          "count": 1,
+          "serving": "2 oz",
+          "values": {
+            "cal": 20,
+            "p": 1,
+            "c": 5,
+            "f": 1,
+            "na": 150,
+            "fat": 0
+          }
+        },
+        {
+          "item": "corn salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 80,
+            "p": 3,
+            "c": 16,
+            "f": 3,
+            "na": 330,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "tomato salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 25,
+            "p": 0,
+            "c": 4,
+            "f": 1,
+            "na": 550,
+            "fat": 0
+          }
+        },
+        {
+          "item": "romaine",
+          "count": 1,
+          "serving": "1 oz",
+          "values": {
+            "cal": 5,
+            "p": 0,
+            "c": 1,
+            "f": 1,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": "Component sums use rounded published portions. High Protein Menu calories, protein and fiber retain restaurant-published totals; other nutrients are ingredient sums. A half rice portion is an explicit GetMacros assumption, not a freshly measured restaurant scoop."
+    },
+    {
+      "recordKey": "Chipotle||Sofritas Bowl with brown rice and black beans",
+      "values": {
+        "cal": 620,
+        "p": 24,
+        "c": 93,
+        "f": 18,
+        "na": 1990,
+        "fat": 19.0
+      },
+      "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceURLs": [
+        "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "Listed ingredient build: 1 × 4 oz sofritas, 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2024-10 (ingredient PDF printed edition)",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "sofritas",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 150,
+            "p": 8,
+            "c": 9,
+            "f": 3,
+            "na": 560,
+            "fat": 10
+          }
+        },
+        {
+          "item": "brown rice",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 210,
+            "p": 4,
+            "c": 36,
+            "f": 2,
+            "na": 190,
+            "fat": 6
+          }
+        },
+        {
+          "item": "black beans",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 130,
+            "p": 8,
+            "c": 22,
+            "f": 7,
+            "na": 210,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "fajita vegetables",
+          "count": 1,
+          "serving": "2 oz",
+          "values": {
+            "cal": 20,
+            "p": 1,
+            "c": 5,
+            "f": 1,
+            "na": 150,
+            "fat": 0
+          }
+        },
+        {
+          "item": "corn salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 80,
+            "p": 3,
+            "c": 16,
+            "f": 3,
+            "na": 330,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "tomato salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 25,
+            "p": 0,
+            "c": 4,
+            "f": 1,
+            "na": 550,
+            "fat": 0
+          }
+        },
+        {
+          "item": "romaine",
+          "count": 1,
+          "serving": "1 oz",
+          "values": {
+            "cal": 5,
+            "p": 0,
+            "c": 1,
+            "f": 1,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": "Component sums use rounded published portions. High Protein Menu calories, protein and fiber retain restaurant-published totals; other nutrients are ingredient sums. A half rice portion is an explicit GetMacros assumption, not a freshly measured restaurant scoop."
+    },
+    {
+      "recordKey": "Chipotle||Veggie Bowl with brown rice, black beans and guacamole",
+      "values": {
+        "cal": 620,
+        "p": 15,
+        "c": 76,
+        "f": 18,
+        "na": 1470,
+        "fat": 29.5
+      },
+      "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceURLs": [
+        "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "Listed ingredient build: 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole, 1 × 1 oz romaine",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2024-10 (ingredient PDF printed edition)",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "brown rice",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 210,
+            "p": 4,
+            "c": 36,
+            "f": 2,
+            "na": 190,
+            "fat": 6
+          }
+        },
+        {
+          "item": "black beans",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 130,
+            "p": 8,
+            "c": 22,
+            "f": 7,
+            "na": 210,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "fajita vegetables",
+          "count": 1,
+          "serving": "2 oz",
+          "values": {
+            "cal": 20,
+            "p": 1,
+            "c": 5,
+            "f": 1,
+            "na": 150,
+            "fat": 0
+          }
+        },
+        {
+          "item": "tomato salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 25,
+            "p": 0,
+            "c": 4,
+            "f": 1,
+            "na": 550,
+            "fat": 0
+          }
+        },
+        {
+          "item": "guacamole",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 230,
+            "p": 2,
+            "c": 8,
+            "f": 6,
+            "na": 370,
+            "fat": 22
+          }
+        },
+        {
+          "item": "romaine",
+          "count": 1,
+          "serving": "1 oz",
+          "values": {
+            "cal": 5,
+            "p": 0,
+            "c": 1,
+            "f": 1,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": "Component sums use rounded published portions. High Protein Menu calories, protein and fiber retain restaurant-published totals; other nutrients are ingredient sums. A half rice portion is an explicit GetMacros assumption, not a freshly measured restaurant scoop."
+    },
+    {
+      "recordKey": "Chipotle||Steak Salad with black beans, no rice",
+      "values": {
+        "cal": 345,
+        "p": 31,
+        "c": 36,
+        "f": 13,
+        "na": 1255,
+        "fat": 7.5
+      },
+      "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceURLs": [
+        "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      ],
+      "market": "U.S.",
+      "serving": "Listed ingredient build: 1 × 4 oz steak, 1 × 3 oz supergreens, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2024-10 (ingredient PDF printed edition)",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "p": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "steak",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 150,
+            "p": 21,
+            "c": 1,
+            "f": 1,
+            "na": 330,
+            "fat": 6
+          }
+        },
+        {
+          "item": "supergreens",
+          "count": 1,
+          "serving": "3 oz",
+          "values": {
+            "cal": 15,
+            "p": 1,
+            "c": 3,
+            "f": 2,
+            "na": 15,
+            "fat": 0
+          }
+        },
+        {
+          "item": "black beans",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 130,
+            "p": 8,
+            "c": 22,
+            "f": 7,
+            "na": 210,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "fajita vegetables",
+          "count": 1,
+          "serving": "2 oz",
+          "values": {
+            "cal": 20,
+            "p": 1,
+            "c": 5,
+            "f": 1,
+            "na": 150,
+            "fat": 0
+          }
+        },
+        {
+          "item": "tomato salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 25,
+            "p": 0,
+            "c": 4,
+            "f": 1,
+            "na": 550,
+            "fat": 0
+          }
+        },
+        {
+          "item": "romaine",
+          "count": 1,
+          "serving": "1 oz",
+          "values": {
+            "cal": 5,
+            "p": 0,
+            "c": 1,
+            "f": 1,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": "Component sums use rounded published portions. High Protein Menu calories, protein and fiber retain restaurant-published totals; other nutrients are ingredient sums. A half rice portion is an explicit GetMacros assumption, not a freshly measured restaurant scoop."
+    },
+    {
+      "recordKey": "Chipotle||High Protein-High Fiber Bowl",
+      "values": {
+        "cal": 540,
+        "p": 46,
+        "c": 66.0,
+        "f": 14,
+        "na": 1645.0,
+        "fat": 13.0
+      },
+      "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceURLs": [
+        "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP"
+      ],
+      "market": "U.S.",
+      "serving": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2024-10 (ingredient PDF printed edition)",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+          "retrieved": "2026-10-03",
+          "sourceDate": "2025-12-18"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+          "retrieved": "2026-10-03",
+          "sourceDate": "2025-12-18"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+          "retrieved": "2026-10-03",
+          "sourceDate": "2025-12-18"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "chicken",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 180,
+            "p": 32,
+            "c": 0,
+            "f": 0,
+            "na": 310,
+            "fat": 7
+          }
+        },
+        {
+          "item": "brown rice",
+          "count": 0.5,
+          "serving": "4 oz",
+          "values": {
+            "cal": 210,
+            "p": 4,
+            "c": 36,
+            "f": 2,
+            "na": 190,
+            "fat": 6
+          }
+        },
+        {
+          "item": "black beans",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 130,
+            "p": 8,
+            "c": 22,
+            "f": 7,
+            "na": 210,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "fajita vegetables",
+          "count": 1,
+          "serving": "2 oz",
+          "values": {
+            "cal": 20,
+            "p": 1,
+            "c": 5,
+            "f": 1,
+            "na": 150,
+            "fat": 0
+          }
+        },
+        {
+          "item": "corn salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 80,
+            "p": 3,
+            "c": 16,
+            "f": 3,
+            "na": 330,
+            "fat": 1.5
+          }
+        },
+        {
+          "item": "tomato salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 25,
+            "p": 0,
+            "c": 4,
+            "f": 1,
+            "na": 550,
+            "fat": 0
+          }
+        },
+        {
+          "item": "romaine",
+          "count": 1,
+          "serving": "1 oz",
+          "values": {
+            "cal": 5,
+            "p": 0,
+            "c": 1,
+            "f": 1,
+            "na": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": "Component sums use rounded published portions. High Protein Menu calories, protein and fiber retain restaurant-published totals; other nutrients are ingredient sums. A half rice portion is an explicit GetMacros assumption, not a freshly measured restaurant scoop."
+    },
+    {
+      "recordKey": "Chipotle||High Protein-Low Calorie Salad",
+      "values": {
+        "cal": 470,
+        "p": 36,
+        "c": 20,
+        "f": 10,
+        "na": 1395,
+        "fat": 29
+      },
+      "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceURLs": [
+        "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP"
+      ],
+      "market": "U.S.",
+      "serving": "Listed ingredient build: 1 × 4 oz chicken, 1 × 3 oz supergreens, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole",
+      "retrievalDate": "2026-10-03",
+      "sourceDate": "2024-10 (ingredient PDF printed edition)",
+      "verificationStatus": "source inspected",
+      "nutrientProvenance": {
+        "cal": {
+          "method": "published",
+          "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+          "retrieved": "2026-10-03",
+          "sourceDate": "2025-12-18"
+        },
+        "p": {
+          "method": "published",
+          "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+          "retrieved": "2026-10-03",
+          "sourceDate": "2025-12-18"
+        },
+        "c": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "f": {
+          "method": "published",
+          "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+          "retrieved": "2026-10-03",
+          "sourceDate": "2025-12-18"
+        },
+        "na": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        },
+        "fat": {
+          "method": "calculated",
+          "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+          "retrieved": "2026-10-03"
+        }
+      },
+      "components": [
+        {
+          "item": "chicken",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 180,
+            "p": 32,
+            "c": 0,
+            "f": 0,
+            "na": 310,
+            "fat": 7
+          }
+        },
+        {
+          "item": "supergreens",
+          "count": 1,
+          "serving": "3 oz",
+          "values": {
+            "cal": 15,
+            "p": 1,
+            "c": 3,
+            "f": 2,
+            "na": 15,
+            "fat": 0
+          }
+        },
+        {
+          "item": "fajita vegetables",
+          "count": 1,
+          "serving": "2 oz",
+          "values": {
+            "cal": 20,
+            "p": 1,
+            "c": 5,
+            "f": 1,
+            "na": 150,
+            "fat": 0
+          }
+        },
+        {
+          "item": "tomato salsa",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 25,
+            "p": 0,
+            "c": 4,
+            "f": 1,
+            "na": 550,
+            "fat": 0
+          }
+        },
+        {
+          "item": "guacamole",
+          "count": 1,
+          "serving": "4 oz",
+          "values": {
+            "cal": 230,
+            "p": 2,
+            "c": 8,
+            "f": 6,
+            "na": 370,
+            "fat": 22
+          }
+        }
+      ],
+      "notes": "Component sums use rounded published portions. High Protein Menu calories, protein and fiber retain restaurant-published totals; other nutrients are ingredient sums. A half rice portion is an explicit GetMacros assumption, not a freshly measured restaurant scoop."
+    }
+  ],
+  "ingredients": {
+    "Chipotle": {
+      "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceDate": "2024-10 (printed edition)",
+      "values": {
+        "chicken": {
+          "serving": "4 oz",
+          "cal": 180,
+          "p": 32,
+          "c": 0,
+          "f": 0,
+          "na": 310,
+          "fat": 7
+        },
+        "steak": {
+          "serving": "4 oz",
+          "cal": 150,
+          "p": 21,
+          "c": 1,
+          "f": 1,
+          "na": 330,
+          "fat": 6
+        },
+        "sofritas": {
+          "serving": "4 oz",
+          "cal": 150,
+          "p": 8,
+          "c": 9,
+          "f": 3,
+          "na": 560,
+          "fat": 10
+        },
+        "white rice": {
+          "serving": "4 oz",
+          "cal": 210,
+          "p": 4,
+          "c": 40,
+          "f": 1,
+          "na": 350,
+          "fat": 4
+        },
+        "brown rice": {
+          "serving": "4 oz",
+          "cal": 210,
+          "p": 4,
+          "c": 36,
+          "f": 2,
+          "na": 190,
+          "fat": 6
+        },
+        "black beans": {
+          "serving": "4 oz",
+          "cal": 130,
+          "p": 8,
+          "c": 22,
+          "f": 7,
+          "na": 210,
+          "fat": 1.5
+        },
+        "pinto beans": {
+          "serving": "4 oz",
+          "cal": 130,
+          "p": 8,
+          "c": 21,
+          "f": 8,
+          "na": 210,
+          "fat": 1.5
+        },
+        "fajita vegetables": {
+          "serving": "2 oz",
+          "cal": 20,
+          "p": 1,
+          "c": 5,
+          "f": 1,
+          "na": 150,
+          "fat": 0
+        },
+        "corn salsa": {
+          "serving": "4 oz",
+          "cal": 80,
+          "p": 3,
+          "c": 16,
+          "f": 3,
+          "na": 330,
+          "fat": 1.5
+        },
+        "tomato salsa": {
+          "serving": "4 oz",
+          "cal": 25,
+          "p": 0,
+          "c": 4,
+          "f": 1,
+          "na": 550,
+          "fat": 0
+        },
+        "romaine": {
+          "serving": "1 oz",
+          "cal": 5,
+          "p": 0,
+          "c": 1,
+          "f": 1,
+          "na": 0,
+          "fat": 0
+        },
+        "supergreens": {
+          "serving": "3 oz",
+          "cal": 15,
+          "p": 1,
+          "c": 3,
+          "f": 2,
+          "na": 15,
+          "fat": 0
+        },
+        "guacamole": {
+          "serving": "4 oz",
+          "cal": 230,
+          "p": 2,
+          "c": 8,
+          "f": 6,
+          "na": 370,
+          "fat": 22
+        },
+        "cheese": {
+          "serving": "1 oz",
+          "cal": 110,
+          "p": 6,
+          "c": 1,
+          "f": 0,
+          "na": 190,
+          "fat": 8
+        },
+        "sour cream": {
+          "serving": "2 oz",
+          "cal": 110,
+          "p": 2,
+          "c": 2,
+          "f": 0,
+          "na": 30,
+          "fat": 9
+        },
+        "vinaigrette": {
+          "serving": "2 fl oz",
+          "cal": 220,
+          "p": 1,
+          "c": 18,
+          "f": 1,
+          "na": 850,
+          "fat": 16
+        },
+        "burrito tortilla": {
+          "serving": "1 tortilla",
+          "cal": 320,
+          "p": 8,
+          "c": 50,
+          "f": 3,
+          "na": 600,
+          "fat": 9
+        }
+      }
+    },
+    "Panda Express": {
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "sourceDate": null,
+      "values": {
+        "grilled teriyaki chicken": {
+          "serving": "6.1 oz",
+          "cal": 280,
+          "p": 38,
+          "c": 13,
+          "f": 0,
+          "na": 610,
+          "fat": 9
+        },
+        "super greens base": {
+          "serving": "10 oz",
+          "cal": 180,
+          "p": 8,
+          "c": 17,
+          "f": 8,
+          "na": 660,
+          "fat": 9
+        },
+        "super greens entree": {
+          "serving": "3.5 oz",
+          "cal": 45,
+          "p": 3,
+          "c": 5,
+          "f": 3,
+          "na": 130,
+          "fat": 2
+        },
+        "string bean chicken": {
+          "serving": "5.6 oz",
+          "cal": 210,
+          "p": 15,
+          "c": 15,
+          "f": 3,
+          "na": 600,
+          "fat": 10
+        },
+        "broccoli beef": {
+          "serving": "6.3 oz",
+          "cal": 190,
+          "p": 17,
+          "c": 14,
+          "f": 2,
+          "na": 600,
+          "fat": 7
+        },
+        "white rice": {
+          "serving": "12 oz",
+          "cal": 570,
+          "p": 11,
+          "c": 129,
+          "f": 0,
+          "na": 0,
+          "fat": 0
+        },
+        "fried rice": {
+          "serving": "12 oz",
+          "cal": 610,
+          "p": 15,
+          "c": 109,
+          "f": 3,
+          "na": 810,
+          "fat": 13
+        },
+        "chow mein": {
+          "serving": "12 oz",
+          "cal": 520,
+          "p": 14,
+          "c": 89,
+          "f": 5,
+          "na": 1040,
+          "fat": 12
+        },
+        "orange chicken": {
+          "serving": "6.2 oz",
+          "cal": 560,
+          "p": 19,
+          "c": 63,
+          "f": 1,
+          "na": 1000,
+          "fat": 25
+        },
+        "teriyaki sauce": {
+          "serving": "1.8 oz",
+          "cal": 70,
+          "p": 0,
+          "c": 16,
+          "f": 0,
+          "na": 380,
+          "fat": 0
+        }
+      }
+    }
+  },
+  "unverifiedCombinations": [
+    "Chick-fil-A||Grilled Club, medium waffle fries and 12 grilled nuggets",
+    "Chick-fil-A||30 grilled nuggets, medium waffle fries and large fruit cup"
+  ],
+  "sourceLimitations": [
+    "Starbucks live nutrition pages were not rendered: official indexed source text inspected.",
+    "CAVA existing official document accessible; its current menu linkage and printed publication date remain unresolved.",
+    "Neither accessible source nor attribution alone establishes a right to redistribute complete documents or datasets. No source documents, branded images or bulk dataset downloads are published by this tool."
+  ]
+}

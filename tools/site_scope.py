@@ -121,6 +121,8 @@ def section_for(path: str) -> str:
 
 
 def decision_for(path: str) -> tuple[str, str]:
+    if path in release_routes():
+        return "SUPPORT", "Distinct source-backed release resource with recorded utility and a publication gate."
     if path in CORE_PAGES | RESTAURANT_PAGES | TOOL_PAGES:
         return "CORE", "Directly supports healthy fast-food discovery, macro tools, or site trust."
     if path in GUIDE_PAGES:
@@ -128,3 +130,17 @@ def decision_for(path: str) -> tuple[str, str]:
     if path.startswith("es/") or path.startswith("fr/"):
         return "REMOVE", "Partial translation footprint without equivalent translated tools and guides."
     return "REMOVE", "Outside the focused healthy-fast-food and macro-tools product, duplicative, or insufficiently distinctive."
+def release_routes():
+    """Explicit reviewed release manifests extend the public route allowlist."""
+    from pathlib import Path
+    import json
+    root=Path(__file__).resolve().parents[1]
+    routes=set()
+    for name in ('release_explainers.json','release_collections.json'):
+        path=root/'tools'/name
+        if path.exists():
+            for row in json.loads(path.read_text(encoding='utf-8')):
+                slug=row['slug'];routes.add(slug if slug.endswith('.html') else slug+'.html')
+    return routes
+
+KEEP_ROOT_HTML = KEEP_ROOT_HTML | release_routes()

@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-03",
+  "pages": [
+    {
+      "route": "chipotle-healthy-meals-macros.html",
+      "records": 6,
+      "comparisonRecords": [
+        "High Protein-High Fiber Bowl",
+        "High Protein-Low Calorie Salad"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "sweetgreen-healthy-meals-macros.html",
+      "records": 5,
+      "comparisonRecords": [
+        "Chicken Pesto Parm",
+        "Harvest Bowl"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "cava-healthy-meals-macros.html",
+      "records": 4,
+      "comparisonRecords": [
+        "Greek Salad bowl",
+        "Chicken + Rice bowl"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "chick-fil-a-healthy-meals-macros.html",
+      "records": 11,
+      "comparisonRecords": [
+        "Grilled Nuggets, 8 count",
+        "Grilled Chicken Sandwich"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "subway-healthy-meals-macros.html",
+      "records": 7,
+      "comparisonRecords": [
+        "6-inch Grilled Chicken & Fresh Avocado",
+        "Footlong Grilled Chicken & Fresh Avocado"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": false,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "panera-healthy-meals-macros.html",
+      "records": 5,
+      "comparisonRecords": [
+        "Green Goddess Cobb Salad with Chicken, half",
+        "Caesar with Chicken Salad, whole"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "starbucks-healthy-food-meals-macros.html",
+      "records": 5,
+      "comparisonRecords": [
+        "Egg White & Roasted Red Pepper Egg Bites",
+        "Spinach, Feta & Egg White Wrap"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "mcdonalds-healthy-meals-macros.html",
+      "records": 6,
+      "comparisonRecords": [
+        "Double Cheeseburger",
+        "Quarter Pounder with Cheese"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": false,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "wendys-healthy-meals-macros.html",
+      "records": 5,
+      "comparisonRecords": [
+        "Grilled Chicken Ranch Wrap",
+        "Classic Chicken Sandwich"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": false,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "taco-bell-healthy-meals-macros.html",
+      "records": 5,
+      "comparisonRecords": [
+        "Cantina Chicken Bowl",
+        "Veggie Bowl"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": false,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "panda-express-healthy-meals-macros.html",
+      "records": 7,
+      "comparisonRecords": [
+        "Grilled Teriyaki Chicken",
+        "Grilled Teriyaki Chicken with Super Greens"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "kfc-healthy-meals-macros.html",
+      "records": 5,
+      "comparisonRecords": [
+        "Kentucky Grilled Chicken Breast",
+        "Grilled Breast with green beans and corn"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": false,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "popeyes-healthy-meals-macros.html",
+      "records": 4,
+      "comparisonRecords": [
+        "5 Blackened Tenders",
+        "3 Blackened Tenders with regular red beans and rice"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": true,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "jersey-mikes-healthy-subs-macros.html",
+      "records": 4,
+      "comparisonRecords": [
+        "Turkey and Provolone Bowl, Mike’s Way",
+        "Mini Turkey and Provolone, Mike’s Way"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": false,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    },
+    {
+      "route": "dunkin-healthy-breakfast-macros.html",
+      "records": 4,
+      "comparisonRecords": [
+        "Egg & Cheese Wake-Up Wrap",
+        "Egg & Cheese English Muffin"
+      ],
+      "tableValues": "central meals and provenance, including known fat",
+      "sourceNarrativeUpdated": false,
+      "template": "preserved",
+      "visualInspection": "not performed by this synchronization tool"
+    }
+  ],
+  "checks": [
+    "15 guide tables match 83 central order rows",
+    "All comparison pairs resolve to central records",
+    "Balanced generated tables",
+    "No dates refreshed for uninspected restaurant data"
+  ]
+}

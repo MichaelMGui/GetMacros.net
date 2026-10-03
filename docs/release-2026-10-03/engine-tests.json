@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Calorie maximum is strict and inclusive",
+    "result": "pass"
+  },
+  {
+    "name": "Protein minimum is strict and inclusive",
+    "result": "pass"
+  },
+  {
+    "name": "Fiber minimum uses the actual value and includes its boundary",
+    "result": "pass"
+  },
+  {
+    "name": "Sodium maximum uses milligrams and includes its boundary",
+    "result": "pass"
+  },
+  {
+    "name": "Fiber and sodium limits exclude unknown nutrient values",
+    "result": "pass"
+  },
+  {
+    "name": "Unknown calories and protein are excluded by explicit limits",
+    "result": "pass"
+  },
+  {
+    "name": "Combined limits never relax after a no-match result",
+    "result": "pass"
+  },
+  {
+    "name": "Explicit zero is a real supported limit",
+    "result": "pass"
+  },
+  {
+    "name": "Optional missing values remain null without fabricated zero",
+    "result": "pass"
+  },
+  {
+    "name": "Restaurant and meal-time selections use OR within their group",
+    "result": "pass"
+  },
+  {
+    "name": "Ingredient selections are strict supported exclusions",
+    "result": "pass"
+  },
+  {
+    "name": "Size preference changes rank without excluding other sizes",
+    "result": "pass"
+  },
+  {
+    "name": "Soft priorities retain incomplete meals when explicitly included",
+    "result": "pass"
+  },
+  {
+    "name": "Protein preference ranks a supported protein-tagged order first",
+    "result": "pass"
+  },
+  {
+    "name": "Explicit numeric sorts are predictable",
+    "result": "pass"
+  },
+  {
+    "name": "Missing values sort last when incomplete records are included",
+    "result": "pass"
+  },
+  {
+    "name": "URL state round trip preserves all supported selections and limits",
+    "result": "pass"
+  },
+  {
+    "name": "Unsupported, repeated and out-of-range URL values are normalized",
+    "result": "pass"
+  },
+  {
+    "name": "Filtering/ranking do not mutate the dataset",
+    "result": "pass"
+  },
+  {
+    "name": "Production provenance expands losslessly and preserves partial-source dates",
+    "result": "pass"
+  }
+]

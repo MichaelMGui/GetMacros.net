@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-03",
+  "method": "Repository assets intercepted through existing browser fixture; no network restaurant fetch",
+  "checks": [
+    {
+      "route": "panda-express-healthy-meals-macros.html",
+      "width": 320,
+      "theme": "light",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 7
+    },
+    {
+      "route": "chick-fil-a-healthy-meals-macros.html",
+      "width": 320,
+      "theme": "light",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 11
+    },
+    {
+      "route": "chipotle-healthy-meals-macros.html",
+      "width": 320,
+      "theme": "light",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 6
+    },
+    {
+      "route": "panda-express-healthy-meals-macros.html",
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 7
+    },
+    {
+      "route": "chick-fil-a-healthy-meals-macros.html",
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 11
+    },
+    {
+      "route": "chipotle-healthy-meals-macros.html",
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 6
+    },
+    {
+      "route": "panda-express-healthy-meals-macros.html",
+      "width": 320,
+      "theme": "dark",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 7
+    },
+    {
+      "route": "chick-fil-a-healthy-meals-macros.html",
+      "width": 320,
+      "theme": "dark",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 11
+    },
+    {
+      "route": "chipotle-healthy-meals-macros.html",
+      "width": 320,
+      "theme": "dark",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 6
+    },
+    {
+      "route": "panda-express-healthy-meals-macros.html",
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 7
+    },
+    {
+      "route": "chick-fil-a-healthy-meals-macros.html",
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 11
+    },
+    {
+      "route": "chipotle-healthy-meals-macros.html",
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "overflow": false,
+      "tableRows": 6
+    }
+  ],
+  "screenshots": [
+    "docs/release-2026-10-03/data-panda-comparison-light-320.png",
+    "docs/release-2026-10-03/data-chick-comparison-light-320.png",
+    "docs/release-2026-10-03/data-chipotle-comparison-light-320.png",
+    "docs/release-2026-10-03/data-panda-comparison-light-1440.png",
+    "docs/release-2026-10-03/data-chick-comparison-light-1440.png",
+    "docs/release-2026-10-03/data-chipotle-comparison-light-1440.png",
+    "docs/release-2026-10-03/data-panda-comparison-dark-320.png",
+    "docs/release-2026-10-03/data-chick-comparison-dark-320.png",
+    "docs/release-2026-10-03/data-chipotle-comparison-dark-320.png",
+    "docs/release-2026-10-03/data-panda-comparison-dark-1440.png",
+    "docs/release-2026-10-03/data-chick-comparison-dark-1440.png",
+    "docs/release-2026-10-03/data-chipotle-comparison-dark-1440.png"
+  ],
+  "errors": []
+}

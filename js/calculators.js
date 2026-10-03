@@ -192,6 +192,7 @@
       var results = document.getElementById("macro-results");
       results.classList.remove("empty");
       results.hidden = false;
+      document.dispatchEvent(new CustomEvent("getmacros:calculator-completed"));
       var pPct = Math.round((r.proteinCals / r.totalCals) * 100);
       var fPct = Math.round((r.fatCals / r.totalCals) * 100);
       var cPct = 100 - pPct - fPct;
@@ -243,6 +244,7 @@
         return;
       }
       out.classList.remove("empty");
+      document.dispatchEvent(new CustomEvent("getmacros:calculator-completed"));
       var low = (cals * 0.2) / 9;
 
       var high = (cals * 0.35) / 9;
@@ -305,6 +307,7 @@
       var highG = r[1] * weightKg;
 
       out.classList.remove("empty");
+      document.dispatchEvent(new CustomEvent("getmacros:calculator-completed"));
       if (Math.abs(lowG - highG) < 0.5) {
         out.innerHTML =
           '<div class="result-total">' +
@@ -342,6 +345,7 @@
 
       var high = (cals * 0.65) / 4;
       out.classList.remove("empty");
+      document.dispatchEvent(new CustomEvent("getmacros:calculator-completed"));
       out.innerHTML =
         '<div class="result-total">' +
         '<div class="num">' + fmt(low) + "&ndash;" + fmt(high) + " g</div>" +

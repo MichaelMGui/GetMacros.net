@@ -1,0 +1,90 @@
+[
+  {
+    "theme": "light",
+    "width": 320,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  },
+  {
+    "theme": "dark",
+    "width": 320,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "characters": 16,
+    "layout": "pass",
+    "focus": "pass",
+    "hover": "pass",
+    "tapDismiss": "pass",
+    "reducedMotion": "pass",
+    "runtimeErrors": []
+  }
+]

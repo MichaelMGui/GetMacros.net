@@ -3,65 +3,235 @@
     "chain": "Sweetgreen",
     "name": "Chicken Pesto Parm",
     "source": "https://www.sweetgreen.com/nutrition",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 510,
       "p": 38,
       "c": 30,
       "f": 6,
       "na": 1560
+    },
+    "sourceDate": null,
+    "serving": "1 standard bowl, 420 g, including dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Sweetgreen",
     "name": "Harvest Bowl",
     "source": "https://www.sweetgreen.com/nutrition",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 760,
       "p": 40,
       "c": 60,
       "f": 10,
       "na": 1265
+    },
+    "sourceDate": null,
+    "serving": "1 standard bowl, 425 g, including dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Sweetgreen",
     "name": "Shroomami",
     "source": "https://www.sweetgreen.com/nutrition",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 665,
       "p": 20,
       "c": 51,
       "f": 11,
       "na": 1250
+    },
+    "sourceDate": null,
+    "serving": "1 standard bowl, 457 g, including dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Sweetgreen",
     "name": "Super Green Goddess",
     "source": "https://www.sweetgreen.com/nutrition",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 465,
       "p": 12,
       "c": 36,
       "f": 13,
       "na": 1230
+    },
+    "sourceDate": null,
+    "serving": "1 standard salad, 347 g, including dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Sweetgreen",
     "name": "Guacamole Greens",
     "source": "https://www.sweetgreen.com/nutrition",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 555,
       "p": 29,
       "c": 35,
       "f": 12,
       "na": 1560
+    },
+    "sourceDate": null,
+    "serving": "1 standard salad, 635 g, including dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.sweetgreen.com/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
@@ -133,65 +303,235 @@
     "chain": "Panera",
     "name": "Green Goddess Cobb Salad with Chicken, half",
     "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 290,
       "p": 20,
       "c": 15,
       "f": 4,
       "na": 990
+    },
+    "sourceDate": "2026-09-02",
+    "serving": "1/2 standard salad, dressing included; extra side excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panera",
     "name": "Greek Salad, whole",
     "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 630,
       "p": 8,
       "c": 17,
       "f": 5,
       "na": 1400
+    },
+    "sourceDate": "2026-09-02",
+    "serving": "1 whole standard salad, dressing included; extra side excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panera",
     "name": "Homestyle Chicken Noodle Soup, cup",
     "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 120,
       "p": 10,
       "c": 14,
       "f": 0,
       "na": 1050
+    },
+    "sourceDate": "2026-09-02",
+    "serving": "1 cup, without bread or another side",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panera",
     "name": "Caesar with Chicken Salad, whole",
     "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 670,
       "p": 35,
       "c": 27,
       "f": 4,
       "na": 2620
+    },
+    "sourceDate": "2026-09-02",
+    "serving": "1 whole standard salad, dressing included; extra side excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panera",
     "name": "Hearty Fireside Chili, bowl",
     "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 410,
       "p": 19,
       "c": 49,
       "f": 9,
       "na": 1730
+    },
+    "sourceDate": "2026-09-02",
+    "serving": "1 bowl, without bread bowl or another side",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.panerabread.com/content/dam/panerabread/documents/c8-26-nutrition-guide.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
@@ -263,78 +603,282 @@
     "chain": "Popeyes",
     "name": "3 Blackened Tenders",
     "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 170,
       "p": 28,
       "c": 2,
       "f": 1,
       "na": 860
+    },
+    "sourceDate": "2026-09",
+    "serving": "3 tenders, biscuit, sauce and drink excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Popeyes",
     "name": "5 Blackened Tenders",
     "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 280,
       "p": 47,
       "c": 4,
       "f": 1,
       "na": 1430
+    },
+    "sourceDate": "2026-09",
+    "serving": "5 tenders, biscuit, sauce and drink excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Popeyes",
     "name": "Red Beans & Rice, regular",
     "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 260,
       "p": 7,
       "c": 29,
       "f": 6,
       "na": 580
+    },
+    "sourceDate": "2026-09",
+    "serving": "1 regular side, biscuit, sauce and drink excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Popeyes",
     "name": "3 Blackened Tenders with regular red beans and rice",
     "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 430,
       "p": 35,
       "c": 31,
       "f": 7,
       "na": 1440
+    },
+    "sourceDate": "2026-09",
+    "serving": "3 blackened tenders plus 1 regular red beans and rice; biscuit, sauce and drink excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Starbucks",
     "name": "Turkey Bacon, Cheddar & Egg White Sandwich",
-    "source": "https://www.starbucks.com/menu/product/368/single",
-    "checked": "2026-09-09",
+    "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+    "checked": "2026-10-03",
     "values": {
       "cal": 260,
       "p": 17,
       "c": 30,
       "f": 2,
       "na": 600
+    },
+    "sourceDate": null,
+    "serving": "1 sandwich, 142 g",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/368/single/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Starbucks",
     "name": "Spinach, Feta & Egg White Wrap",
-    "source": "https://www.starbucks.com/menu/product/371/single",
-    "checked": "2026-09-09",
+    "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+    "checked": "2026-10-03",
     "values": {
       "cal": 290,
       "p": 20,
       "c": 34,
       "f": 3,
       "na": 840
+    },
+    "sourceDate": null,
+    "serving": "1 wrap, 159 g",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/371/single/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
@@ -367,52 +911,188 @@
     "chain": "CAVA",
     "name": "Greek Salad bowl",
     "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 585,
       "p": 37,
       "c": 19,
       "f": 8,
       "na": 1830
+    },
+    "sourceDate": null,
+    "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "CAVA",
     "name": "Falafel Crunch bowl",
     "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 860,
       "p": 24,
       "c": 88,
       "f": 18,
       "na": 2230
+    },
+    "sourceDate": null,
+    "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "CAVA",
     "name": "Chicken + Rice bowl",
     "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 710,
       "p": 40,
       "c": 43,
       "f": 7,
       "na": 1830
+    },
+    "sourceDate": null,
+    "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "CAVA",
     "name": "Harissa Avocado bowl",
     "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 840,
       "p": 42,
       "c": 63,
       "f": 12,
       "na": 2030
+    },
+    "sourceDate": null,
+    "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
@@ -613,40 +1293,144 @@
   {
     "chain": "Chick-fil-A",
     "name": "Grilled Nuggets, 8 count",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+    "checked": "2026-10-03",
     "values": {
       "cal": 130,
       "p": 25,
       "c": 1,
       "f": 0,
       "na": 440
+    },
+    "sourceDate": null,
+    "serving": "8 grilled nuggets, without dipping sauce",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-nuggets",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chick-fil-A",
     "name": "Grilled Nuggets, 12 count",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+    "checked": "2026-10-03",
     "values": {
       "cal": 200,
       "p": 38,
       "c": 2,
       "f": 0,
       "na": 660
+    },
+    "sourceDate": null,
+    "serving": "12 grilled nuggets, without dipping sauce",
+    "nutrientProvenance": {
+      "f": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-09-09",
+        "status": "retained; not reverified in October inspection"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-09-09",
+        "status": "retained; not reverified in October inspection"
+      },
+      "cal": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/12-ct-grilled-nuggets",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chick-fil-A",
     "name": "Grilled Chicken Sandwich",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+    "checked": "2026-10-03",
     "values": {
       "cal": 390,
       "p": 28,
       "c": 45,
       "f": 3,
       "na": 765
+    },
+    "sourceDate": null,
+    "serving": "1 standard sandwich; source formulation includes listed sauce ingredients; extra packets, sides and drinks excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/grilled-chicken-sandwich",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
@@ -665,53 +1449,189 @@
   {
     "chain": "Chick-fil-A",
     "name": "Egg White Grill",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+    "checked": "2026-10-03",
     "values": {
       "cal": 300,
       "p": 27,
       "c": 29,
       "f": 1,
       "na": 990
+    },
+    "sourceDate": null,
+    "serving": "1 standard breakfast sandwich",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/breakfast/egg-white-grill",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chick-fil-A",
     "name": "Kale Crunch Side",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+    "checked": "2026-10-03",
     "values": {
       "cal": 170,
       "p": 4,
       "c": 13,
       "f": 4,
       "na": 250
+    },
+    "sourceDate": null,
+    "serving": "1 standard side with vinaigrette and almonds",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/sides/kale-crunch-side",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chick-fil-A",
     "name": "Grilled Chicken Club Sandwich",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+    "checked": "2026-10-03",
     "values": {
       "cal": 520,
       "p": 37,
       "c": 45,
       "f": 3,
       "na": 1055
+    },
+    "sourceDate": null,
+    "serving": "1 standard sandwich; extra sides and drinks excluded",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chick-fil-A",
     "name": "Chick-fil-A Cool Wrap",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+    "checked": "2026-10-03",
     "values": {
       "cal": 660,
       "p": 43,
       "c": 32,
       "f": 14,
       "na": 1420
+    },
+    "sourceDate": null,
+    "serving": "1 standard wrap with suggested Avocado Lime Ranch dressing",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-cool-wrap",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
@@ -900,21 +1820,58 @@
     "chain": "Chipotle",
     "name": "High Protein-High Fiber Bowl",
     "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 540,
       "p": 46,
-      "c": 66,
+      "c": 66.0,
       "f": 14,
-      "na": 1645
+      "na": 1645.0
     },
-    "additional_source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP"
+    "additional_source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+    "sourceDate": "2024-10 (ingredient PDF printed edition)",
+    "serving": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+        "retrieved": "2026-10-03",
+        "sourceDate": "2025-12-18"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+        "retrieved": "2026-10-03",
+        "sourceDate": "2025-12-18"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+        "retrieved": "2026-10-03",
+        "sourceDate": "2025-12-18"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      }
+    }
   },
   {
     "chain": "Chipotle",
     "name": "High Protein-Low Calorie Salad",
     "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 470,
       "p": 36,
@@ -922,162 +1879,607 @@
       "f": 10,
       "na": 1395
     },
-    "additional_source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP"
+    "additional_source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+    "sourceDate": "2024-10 (ingredient PDF printed edition)",
+    "serving": "Listed ingredient build: 1 × 4 oz chicken, 1 × 3 oz supergreens, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+        "retrieved": "2026-10-03",
+        "sourceDate": "2025-12-18"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+        "retrieved": "2026-10-03",
+        "sourceDate": "2025-12-18"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://newsroom.chipotle.com/2025-12-18-CHIPOTLE-UNVEILS-ITS-FIRST-EVER-HIGH-PROTEIN-MENU-FEATURING-A-NEW-SNACK-READY-HIGH-PROTEIN-CUP",
+        "retrieved": "2026-10-03",
+        "sourceDate": "2025-12-18"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      }
+    }
   },
   {
     "chain": "Chipotle",
     "name": "Chicken Bowl with white rice and black beans",
     "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 650,
       "p": 48,
       "c": 88,
       "f": 14,
       "na": 1900
+    },
+    "sourceDate": "2024-10 (ingredient PDF printed edition)",
+    "serving": "Listed ingredient build: 1 × 4 oz chicken, 1 × 4 oz white rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chipotle",
     "name": "Sofritas Bowl with brown rice and black beans",
     "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 620,
       "p": 24,
       "c": 93,
       "f": 18,
       "na": 1990
+    },
+    "sourceDate": "2024-10 (ingredient PDF printed edition)",
+    "serving": "Listed ingredient build: 1 × 4 oz sofritas, 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chipotle",
     "name": "Veggie Bowl with brown rice, black beans and guacamole",
     "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 620,
       "p": 15,
       "c": 76,
       "f": 18,
       "na": 1470
+    },
+    "sourceDate": "2024-10 (ingredient PDF printed edition)",
+    "serving": "Listed ingredient build: 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole, 1 × 1 oz romaine",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Chipotle",
     "name": "Steak Salad with black beans, no rice",
     "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 345,
       "p": 31,
       "c": 36,
       "f": 13,
       "na": 1255
+    },
+    "sourceDate": "2024-10 (ingredient PDF printed edition)",
+    "serving": "Listed ingredient build: 1 × 4 oz steak, 1 × 3 oz supergreens, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panda Express",
     "name": "Grilled Teriyaki Chicken",
     "source": "https://www.pandaexpress.com/nutritioninformation",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
-      "cal": 275,
-      "p": 33,
-      "c": 14,
+      "cal": 280,
+      "p": 38,
+      "c": 13,
       "f": 0,
-      "na": 470
+      "na": 610
+    },
+    "sourceDate": null,
+    "serving": "6.1 oz chicken entree",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panda Express",
     "name": "Super Greens side",
     "source": "https://www.pandaexpress.com/nutritioninformation",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
-      "cal": 130,
-      "p": 9,
-      "c": 14,
-      "f": 7,
-      "na": 370
+      "cal": 180,
+      "p": 8,
+      "c": 17,
+      "f": 8,
+      "na": 660
+    },
+    "sourceDate": null,
+    "serving": "10 oz full Super Greens base",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panda Express",
     "name": "String Bean Chicken Breast",
     "source": "https://www.pandaexpress.com/nutritioninformation",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
       "cal": 210,
-      "p": 12,
-      "c": 13,
-      "f": 5,
-      "na": 560
+      "p": 15,
+      "c": 15,
+      "f": 3,
+      "na": 600
+    },
+    "sourceDate": null,
+    "serving": "5.6 oz entree",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panda Express",
     "name": "Grilled Teriyaki Chicken with Super Greens",
     "source": "https://www.pandaexpress.com/nutritioninformation",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
-      "cal": 405,
-      "p": 42,
-      "c": 28,
-      "f": 7,
-      "na": 840
+      "cal": 460,
+      "p": 46,
+      "c": 30,
+      "f": 8,
+      "na": 1270
+    },
+    "sourceDate": null,
+    "serving": "1 × 6.1 oz grilled teriyaki chicken + 1 × 10 oz super greens base",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panda Express",
     "name": "Broccoli Beef with white steamed rice",
     "source": "https://www.pandaexpress.com/nutritioninformation",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
-      "cal": 670,
-      "p": 25,
-      "c": 130,
+      "cal": 760,
+      "p": 28,
+      "c": 143,
       "f": 2,
-      "na": 520
+      "na": 600
+    },
+    "sourceDate": null,
+    "serving": "1 × 6.3 oz broccoli beef + 1 × 12 oz white rice",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panda Express",
     "name": "Bigger Plate: fried rice + 3 grilled teriyaki chicken entrées",
     "source": "https://www.pandaexpress.com/nutritioninformation",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
-      "cal": 1445,
-      "p": 112,
-      "c": 143,
-      "f": 1,
-      "na": 2410
+      "cal": 1450,
+      "p": 129,
+      "c": 148,
+      "f": 3,
+      "na": 2640
+    },
+    "sourceDate": null,
+    "serving": "1 × 12 oz fried rice + 3 × 6.1 oz grilled teriyaki chicken",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Panda Express",
     "name": "Bigger Plate: chow mein + grilled teriyaki + orange chicken + string bean chicken",
     "source": "https://www.pandaexpress.com/nutritioninformation",
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "values": {
-      "cal": 1595,
-      "p": 76,
-      "c": 174,
-      "f": 14,
-      "na": 2880
+      "cal": 1570,
+      "p": 86,
+      "c": 180,
+      "f": 9,
+      "na": 3250
+    },
+    "sourceDate": null,
+    "serving": "1 × 12 oz chow mein + 1 × 6.1 oz grilled teriyaki chicken + 1 × 6.2 oz orange chicken + 1 × 5.6 oz string bean chicken",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "calculated",
+        "source": "https://www.pandaexpress.com/nutritioninformation",
+        "retrieved": "2026-10-03"
+      }
     }
   },
   {
     "chain": "Starbucks",
     "name": "Egg White & Roasted Red Pepper Egg Bites",
-    "source": "https://www.starbucks.com/menu/product/2122117/single",
-    "checked": "2026-09-09",
+    "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+    "checked": "2026-10-03",
     "values": {
       "cal": 170,
       "p": 12,
       "c": 11,
       "f": 0,
       "na": 470
+    },
+    "sourceDate": null,
+    "serving": "1 serving of two bites, 130 g",
+    "nutrientProvenance": {
+      "cal": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "p": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "c": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "f": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "na": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+        "retrieved": "2026-10-03"
+      },
+      "fat": {
+        "method": "published",
+        "source": "https://www.starbucks.com/menu/product/2122117/single/nutrition",
+        "retrieved": "2026-10-03"
+      }
     }
   }
 ]
