@@ -1,0 +1,42 @@
+[
+  {
+    "asset": "css/publication.css",
+    "bytes": 69860,
+    "gzipBytes": 14804
+  },
+  {
+    "asset": "js/meal-view.js",
+    "bytes": 8411,
+    "gzipBytes": 3304
+  },
+  {
+    "asset": "js/meal-finder.js",
+    "bytes": 13571,
+    "gzipBytes": 4609
+  },
+  {
+    "asset": "js/meal-guide.js",
+    "bytes": 8613,
+    "gzipBytes": 3137
+  },
+  {
+    "asset": "js/food-experience.js",
+    "bytes": 6811,
+    "gzipBytes": 2508
+  },
+  {
+    "asset": "js/food-characters.js",
+    "bytes": 6066,
+    "gzipBytes": 2115
+  },
+  {
+    "asset": "images/food-characters.svg",
+    "bytes": 19058,
+    "gzipBytes": 2808
+  },
+  {
+    "asset": "fonts/gabarito-latin.woff2",
+    "bytes": 34236,
+    "gzipBytes": 33903
+  }
+]

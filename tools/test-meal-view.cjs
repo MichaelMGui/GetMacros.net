@@ -1,0 +1,20 @@
+// The same meal markup is used for static fallbacks and interactive results.
+const assert=require('node:assert/strict');
+require('../js/meal-view.js');
+const V=globalThis.GetMacrosMealView;
+const m={chain:'Example',name:'Order <with> extras',serving:'Two listed portions',cal:540,p:38,c:null,fat:0,f:null,na:0,url:'example.html',why:'Listed portions only',source:'https://example.com/nutrition',checked:'2026-09-09'};
+assert.equal(V.number(null,'g'),'Not verified');
+assert.equal(V.number(undefined,'mg'),'Not verified');
+assert.equal(V.number(0,'mg'),'0 mg');
+const html=V.card(m,2,{state:{maxCal:600,minProtein:30}});
+assert.ok(html.includes('Two listed portions'));
+assert.ok(html.includes('Order &lt;with&gt; extras'));
+assert.ok(html.includes('<dt>Carbs</dt><dd>Not verified</dd>'));
+assert.ok(html.includes('<dt>Fat</dt><dd>0 g</dd>'));
+assert.ok(html.includes('<dt>Sodium</dt><dd>0 mg</dd>'));
+assert.ok(html.includes('Official nutrition source'));
+assert.ok(html.includes('U.S. menu'));
+assert.ok(html.includes('Within your calorie limit'));
+assert.ok(html.includes('Meets your protein target'));
+assert.ok(!html.includes('perfect for you'));
+console.log('PASS shared meal presentation: unknown values, genuine zero, units, servings, sources, escaping and factual match reasons.');

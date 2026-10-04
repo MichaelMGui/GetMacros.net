@@ -384,7 +384,7 @@ def main() -> int:
     finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
     if len(re.findall(r'class="browse-meal"', finder_text)) != len(meals):
         errors.append("meal browser: rendered meal count does not match restaurant data")
-    finder_script = (ROOT / "js" / "meal-finder.js").read_text(encoding="utf-8")
+    finder_script = (ROOT / "js" / "meal-finder.js").read_text(encoding="utf-8") + (ROOT / "js" / "meal-view.js").read_text(encoding="utf-8")
     # Direct browsing replaces the five-question wizard. Behavioral invariants
     # (filters, ranking, unknowns, comparison, focus, reload) are browser-tested.
     for feature in ('finder-filters', 'data-open-filters', 'data-open-compare', 'aria-live="polite"', 'Not verified'):

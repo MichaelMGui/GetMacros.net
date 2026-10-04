@@ -1,12 +1,12 @@
 /* Original brand illustrations. No movement until an intentional interaction. */
-.food-character,[data-food-character]{--food-size:112px;display:inline-grid;grid-template-rows:var(--food-size) minmax(28px,auto);justify-items:center;align-items:start;width:var(--food-size);max-width:100%;color:var(--ink,#152d24);vertical-align:middle;isolation:isolate}
+.food-character,[data-food-character]{--food-size:112px;display:inline-grid;grid-template-rows:var(--food-size);position:relative;justify-items:center;align-items:start;width:var(--food-size);max-width:100%;color:var(--ink,#152d24);vertical-align:middle;isolation:isolate}
 .food-character:not([data-interactive=true]),[data-food-character]:not([data-interactive=true]){grid-template-rows:var(--food-size)}
 .food-character[data-interactive=false]{grid-template-rows:var(--food-size)}
 .food-character .food-character-art,.food-character svg{display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
 .food-character button.food-character-trigger,.food-character button.food-character-trigger:hover,.food-character button.food-character-trigger:active{display:block;width:var(--food-size);height:var(--food-size);max-width:100%;min-height:0;padding:0;border:0;border-radius:12px;background:transparent;box-shadow:none;color:inherit;cursor:pointer;transform:none;line-height:1}
 .food-character-trigger:focus-visible{outline:3px solid var(--focus,#345cca);outline-offset:3px}
 .food-character-trigger:active .food-character-art{transform:scale(.98)}
-.food-character .food-character-greeting{visibility:hidden;opacity:0;pointer-events:none;position:static;display:block;max-width:100%;padding:2px 10px;border:1px solid var(--line,#dce2d8);border-radius:8px;background:var(--surface,#fff);color:var(--ink,#152d24);font:600 13px/1.5 Inter,system-ui,sans-serif;text-align:center;white-space:normal;overflow-wrap:anywhere;transition:opacity 140ms}
+.food-character .food-character-greeting{visibility:hidden;opacity:0;pointer-events:none;position:absolute;bottom:0;display:block;max-width:100%;padding:2px 10px;border:0;border-radius:8px;background:var(--surface,#fff);color:var(--ink,#152d24);font:600 13px/1.5 Inter,system-ui,sans-serif;text-align:center;white-space:normal;overflow-wrap:anywhere;transition:opacity 140ms}
 .food-character.is-greeting .food-character-greeting{visibility:visible;opacity:1;pointer-events:auto}
 .food-character[data-interactive=false] .food-character-greeting{display:none}
 .food-character .food-arm-wave{transform-box:view-box;transform-origin:119px 83px}
@@ -23,3 +23,5 @@
 @keyframes food-nod{0%,100%{transform:rotate(0)}40%{transform:rotate(4deg)}70%{transform:rotate(-2deg)}}
 @media(prefers-reduced-motion:reduce){.food-character.is-greeting[data-motion] .food-arm-wave,.food-character.is-greeting[data-motion] .food-eyes,.food-character.is-greeting[data-motion] .food-leaf,.food-character.is-greeting[data-motion] .food-nod{animation:none}.food-character .food-character-greeting{transition:none}.food-character-trigger:active .food-character-art{transform:none}}
 @media print{.food-character[data-interactive=true]{display:none}}
+
+.food-character.is-reacting .food-arm-wave{animation:food-wave 620ms ease-in-out 1}.food-character.is-reacting .food-eyes{animation:food-blink 620ms ease-in-out 1}.food-character.is-reacting .food-leaf{animation:food-leaf 620ms ease-in-out 1}

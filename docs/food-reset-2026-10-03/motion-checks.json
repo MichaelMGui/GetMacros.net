@@ -1,0 +1,42 @@
+[
+  {
+    "engine": "chromium",
+    "theme": "light",
+    "liquidHover": true,
+    "navGlide": true,
+    "finiteFoodReaction": true,
+    "quizSelection": true,
+    "calmPersistence": true,
+    "reducedMotion": true
+  },
+  {
+    "engine": "chromium",
+    "theme": "dark",
+    "liquidHover": true,
+    "navGlide": true,
+    "finiteFoodReaction": true,
+    "quizSelection": true,
+    "calmPersistence": true,
+    "reducedMotion": true
+  },
+  {
+    "engine": "webkit",
+    "theme": "light",
+    "liquidHover": true,
+    "navGlide": true,
+    "finiteFoodReaction": true,
+    "quizSelection": true,
+    "calmPersistence": true,
+    "reducedMotion": true
+  },
+  {
+    "engine": "webkit",
+    "theme": "dark",
+    "liquidHover": true,
+    "navGlide": true,
+    "finiteFoodReaction": true,
+    "quizSelection": true,
+    "calmPersistence": true,
+    "reducedMotion": true
+  }
+]

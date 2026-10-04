@@ -56,10 +56,10 @@ def transform(text,name):
  if name=='about.html' and 'page-record-count' not in text:
   meals=parse_meals()
   text=re.sub(r'(<h1\b[^>]*>.*?</h1>)',lambda m:m[1]+'<p class="page-record-count">'+str(len(meals))+' menu options from '+str(len(set(m['chain'] for m in meals)))+' U.S. restaurant chains.</p>',text,count=1,flags=re.S)
- # Home loads the very same finder component and source records.
+ # Home has one quiz entry, using the shared data and engine.
  if name=='index.html':
   text=re.sub(r'<script[^>]*src="js/(?:editorial-home|meal-data|meal-provenance|meal-finder)\.js[^>]*>.*?</script>','',text,flags=re.S)
-  text=text.replace('</body>','<script src="js/meal-data.js" defer></script><script src="js/meal-provenance.js" defer></script><script src="js/meal-finder.js" defer></script></body>')
+  text=text.replace('</body>','<script src="js/meal-data.js" defer></script><script src="js/meal-provenance.js" defer></script></body>')
  text=re.sub(r'(<meta name="theme-color" content=")[^"]*',r'\g<1>#fffefb',text)
  return text
 

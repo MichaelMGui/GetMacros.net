@@ -34,4 +34,5 @@ jobs:
         run: |
           node tools/test_macro_math.js
           node tools/test-companion-engine.cjs
+          node tools/test-meal-view.cjs
           python3 tools/test-release-content.py

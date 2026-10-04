@@ -1,0 +1,74 @@
+[
+  {
+    "file": "market-content.css",
+    "selectors": ".reading-map"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": ".reading-map h2"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": "img.article-hero"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": ".chain-pick-groups"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": ".pick-metrics"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": ".chain-pick-icon"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": ".clear-icon"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": ".clear-icon svg"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".quiet-link"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".choice-label,.radio-group label"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".choice-label:has(:checked),.radio-group label:has(:checked)"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".clear-page-body,.policy-body,.sources-content"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".guide-card-content"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".chain-pick-card,.chain-result,.chain-highlight"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".chain-finder-form"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".search-meal-card"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".contact-hero"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": ".clear-page-body,.policy-body,.sources-content"
+  }
+]

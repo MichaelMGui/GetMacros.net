@@ -11,9 +11,9 @@
  const paragraph=(text,cls)=>node('p',text,cls);
  function clear(){out.hidden=true;out.replaceChildren();empty.hidden=false;error.hidden=true;}
  function fail(message){clear();error.textContent=message;error.hidden=false;}
- function show(...items){error.hidden=true;out.replaceChildren(...items);out.hidden=false;empty.hidden=true;
+ function show(...items){if(form.contains(document.activeElement))document.activeElement.blur();error.hidden=true;out.replaceChildren(...items);out.hidden=false;empty.hidden=true;
   document.dispatchEvent(new CustomEvent('getmacros:calculator-completed'));
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches||document.documentElement.classList.contains('tide-motion-off');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches||document.documentElement.dataset.motion==='calm';
   // Results sit directly after the form on phones; never move the viewport on calculation.
   out.focus({preventScroll:true});
   if(!reduced&&out.animate)out.animate([{opacity:.6,translate:'0 5px'},{opacity:1,translate:'0 0'}],{duration:200,easing:'ease-out'});

@@ -21,7 +21,7 @@ def home_markup(finder=None):
  meals=parse_meals()
  chains=sorted(set(m['chain'] for m in meals),key=str.casefold)
  links=''.join('<a href="'+CHAIN_PAGE.get(c,CHAIN_SLUG[c]+'-healthy-meals-macros.html')+'" data-chain-name="'+escape(c,quote=True)+'">'+mark(c)+'<span>'+escape(c)+'</span></a>' for c in chains)
- text=(ROOT/'tools/market-home.inc').read_text(encoding='utf-8').replace('__CHAIN_COUNT__',str(len(chains))).replace('__MEAL_COUNT__',str(len(meals))).replace('__RESTAURANT_LINKS__',links).replace('__HOME_FINDER__',finder or (ROOT/'tools/market-home-finder.inc').read_text(encoding='utf-8'))
+ text=(ROOT/'tools/market-home.inc').read_text(encoding='utf-8').replace('__CHAIN_COUNT__',str(len(chains))).replace('__MEAL_COUNT__',str(len(meals))).replace('__RESTAURANT_LINKS__',links).replace('__POPULAR_MEALS__',finder or '')
  preview=next(m for m in meals if m['chain']=='Chick-fil-A' and m['name']=='Grilled Chicken Sandwich')
  for token,value in {'NAME':preview['chain']+' · '+preview['name'],'PORTION':'1 sandwich (206 g) · U.S. menu','CAL':preview['cal'],'PROTEIN':preview['p'],'URL':preview['url']}.items():text=text.replace('__PREVIEW_'+token+'__',escape(str(value),quote=True))
  return text
@@ -66,8 +66,8 @@ def run():
   text=re.sub(r'<link\b(?=[^>]*rel="stylesheet")[^>]*>','',text)
   text=re.sub(r'<link\b(?=[^>]*rel="preload")(?=[^>]*as="font")[^>]*>','',text)
   text=re.sub(r'<link\b[^>]*rel="preconnect"[^>]*href="https://pagead2\.googlesyndication\.com"[^>]*>','',text)
-  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/fraunces-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin></head>')
-  text=re.sub(r'<script>try\{var p=localStorage.getItem\(\'gm-theme\'\).*?</script>',"<script>try{var p=localStorage.getItem('gm-theme');document.documentElement.dataset.theme=p==='light'||p==='dark'?p:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.appearance=localStorage.getItem('gm-appearance')==='harvest'?'harvest':'fresh';document.documentElement.dataset.motion=localStorage.getItem('gm-motion')==='calm'?'calm':'full'}catch(e){document.documentElement.dataset.theme='light'}</script>",text,flags=re.S)
+  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/gabarito-latin.woff2" as="font" type="font/woff2" crossorigin></head>')
+  text=re.sub(r'<script>try\{var p=localStorage.getItem\(\'gm-theme\'\).*?</script>',"<script>try{var p=localStorage.getItem('gm-theme');document.documentElement.dataset.theme=p==='light'||p==='dark'?p:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.classList.add('js');document.documentElement.dataset.motion=localStorage.getItem('gm-motion')==='calm'?'calm':'full'}catch(e){document.documentElement.dataset.theme='light'}</script>",text,flags=re.S)
   # Publisher verification is retained. Ad serving awaits account-side CMP
   # verification; a home-made banner would not meet Google's CMP requirement.
   text=re.sub(r'<script\b[^>]*src="https://pagead2\.googlesyndication\.com/[^>]*>.*?</script>','',text,flags=re.S)
@@ -94,8 +94,6 @@ def run():
     text=text.replace('<form class="calc-form compact-macro-form" id="macro-form">','<form class="calc-form compact-macro-form" id="macro-form"><div class="calculator-presentation"><button type="button" data-calc-mode="compact" aria-pressed="true">All inputs</button><button type="button" data-calc-mode="guided" aria-pressed="false">Guide me</button><p>Body measurements help estimate resting energy. Activity and your goal adjust that estimate. These inputs stay in this tab.</p></div>')
   if path.name=='restaurant-meal-finder.html':
    doc=Document(text);node=next(n for n in doc.nodes if n['attrs'].get('id')=='meal-quiz');text=text[:node['inner']]+full_finder+text[node['close']:]
-   if 'class="companion finder-companion"' not in text:
-    text=text.replace('<h1>Healthy fast-food meals</h1></section>','<h1>Healthy fast-food meals</h1><span class="companion finder-companion" data-companion aria-hidden="true"><svg class="fresh-character" viewBox="0 0 320 360"><use href="images/kitchen-companions.svg#bunny"></use></svg><svg class="harvest-character" viewBox="0 0 320 360"><use href="images/kitchen-companions.svg#squirrel"></use></svg></span></section>')
   if path.name=='calculators.html' and 'publication-calculator-note' not in text:
    text=text.replace('<form class="calc-form" id="macro-form">','<form class="calc-form" id="macro-form"><p class="clarity-hint publication-calculator-note">Adult estimates, not a prescription. Uses Mifflin–St Jeor resting energy, an activity multiplier and your chosen goal. <a href="sources.html">Formula and limitations</a>.</p>')
   if 'class="chain-finder-intro"' in text:
@@ -115,12 +113,36 @@ def run():
   # One shared runtime for characters, non-identifying event boundaries and
   # optional advertising. Serving stays disabled until an approved adapter
   # and affirmative consent are supplied.
-  for script in ['product-events','food-characters','ad-placements','kitchen-companion','meal-guide']:
+  for script in ['product-events','food-characters','ad-placements','kitchen-companion','food-experience','meal-guide','meal-view']:
    text=re.sub(r'<script[^>]+src="js/'+script+r'\.js[^>]*>.*?</script>','',text,flags=re.S)
-  text=text.replace('</body>','<script src="js/product-events.js" defer></script><script src="js/food-characters.js" defer></script><script src="js/kitchen-companion.js" defer></script><script src="js/ad-placements.js" defer></script></body>')
+  text=text.replace('</body>','<script src="js/product-events.js" defer></script><script src="js/food-characters.js" defer></script><script src="js/food-experience.js" defer></script><script src="js/ad-placements.js" defer></script></body>')
   if 'js/meal-finder.js' in text:
    text=re.sub(r'<script[^>]+src="js/meal-engine.js[^>]*>.*?</script>','',text,flags=re.S)
-   text=re.sub(r'(<script[^>]+src="js/meal-finder\.js)',r'<script src="js/meal-engine.js" defer></script><script src="js/meal-guide.js" defer></script>\1',text,count=1)
+   text=re.sub(r'(<script[^>]+src="js/meal-finder\.js)',r'<script src="js/meal-engine.js" defer></script><script src="js/meal-view.js" defer></script><script src="js/meal-guide.js" defer></script>\1',text,count=1)
+  text=re.sub(r'<(?:span|div|button)\b[^>]*class="[^"]*companion[^"<>]*"[^>]*>\s*<svg class="fresh-character".*?</svg>\s*<svg class="harvest-character".*?</svg>\s*</(?:span|div|button)>','<span data-food-character="egg" aria-hidden="true"><svg viewBox="0 0 160 160"><use href="images/food-characters.svg#food-egg"></use></svg></span>',text,flags=re.S)
+  if path.name=='calculators.html':
+   text=re.sub(r'<div class="calculator-presentation">.*?</div>','<div class="calculator-presentation"><span class="calc-step-label">About you</span><button class="quiet-button" type="button" data-calc-switch>All inputs</button></div>',text,flags=re.S)
+   text=text.replace('id="macro-form">','id="macro-form" data-calc-mode="guided" data-calc-step="0">') if 'id="macro-form" data-calc-mode' not in text else text
+   doc=Document(text);parent=next((n for n in doc.nodes if 'macro-details' in n['attrs'].get('class','').split()),None)
+   if parent:
+    fields=[n for n in doc.nodes if n['parent']==parent and 'field' in n['attrs'].get('class','').split()]
+    edits=[]
+    for i,n in enumerate(fields):
+     tag=text[n['start']:n['inner']];tag=re.sub(r' data-calc-section="[^"]*"','',tag);tag=tag[:-1]+' data-calc-section="'+str(0 if i<4 else i-3)+'">';edits.append((n['start'],n['inner'],tag))
+    for a,b,v in reversed(edits):text=text[:a]+v+text[b:]
+   doc=Document(text);groups=next((n for n in doc.nodes if 'macro-details' in n['attrs'].get('class','').split()),None)
+   if groups and 'class="calc-guide-nav"' not in text:
+    nav='<div class="calc-guide-nav"><button class="quiet-button" type="button" data-calc-back hidden>Back</button><span data-calc-progress>1 of 3</span><button class="btn btn-primary" type="button" data-calc-next>Continue →</button></div>'
+    text=text[:groups['end']]+nav+text[groups['end']:]
+   doc=Document(text);individual=next((n for n in doc.nodes if n['tag']=='section' and n['attrs'].get('id')=='single-macro-calculators'),None)
+   if individual:
+    content=text[individual['inner']:individual['close']]
+    if 'individual-macro-tools' not in content:
+     content=re.sub(r'<h2[^>]*>.*?</h2>','',content,count=1,flags=re.S)
+     text=text[:individual['inner']]+'<details class="individual-macro-tools"><summary>Individual protein, fat &amp; carb targets</summary>'+content+'</details>'+text[individual['close']:]
+  if path.name=='index.html':
+   text=re.sub(r'<script[^>]+src="js/(?:meal-engine|meal-guide)\.js[^>]*>.*?</script>','',text,flags=re.S)
+   text=text.replace('<script src="js/food-experience.js"', '<script src="js/meal-engine.js" defer></script><script src="js/meal-guide.js" defer></script><script src="js/food-experience.js"')
   # Keep every retained article's factual body and current verification date.
   text=re.sub(r'\n{3,}','\n\n',text)
   text=re.sub(r'(?m)^[ \t]+$','',text)
