@@ -1,0 +1,900 @@
+[
+  {
+    "file": "market-content.css",
+    "selector": ".suite-hero-mark",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "suite-hero-mark"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".calc-welcome-macros",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "calc-welcome-macros"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".calc-welcome-heading>.clear-icon",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "calc-welcome-heading",
+      "clear-icon"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".learning-icon",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "learning-icon"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".article-meta",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "article-meta"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".sources-box",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "sources-box"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".sources-box h2",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "sources-box"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".tool-workspace>form",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "tool-workspace"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-form",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "chain-finder-form"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".tool-output:has(.results:not([hidden]))>.workspace-placeholder",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "workspace-placeholder"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".results .macro-value",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "macro-value"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".results .result-value",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "result-value"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".macro-cards",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "macro-cards"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".result-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "result-grid"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".macro-cards>*",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "macro-cards"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".tool-workspace .fields",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "tool-workspace"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".focused-fields",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "focused-fields"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-grid"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-card",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-card p",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-card h3",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-card:after",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-card:hover h3",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-result-metrics",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "chain-result-metrics"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-result-metric",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "chain-result-metric"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-result-metric b",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "chain-result-metric"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-result-metric small",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "chain-result-metric"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".pick-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "pick-grid"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".pick-card",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "pick-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".pick-card h3",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "pick-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".pick-card .rank",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "pick-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".search-start-num",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "search-start-num"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".search-group-note",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "search-group-note"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".meal-idea-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "meal-idea-grid"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".contact-refresh>.container",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "contact-refresh"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".segmented button[aria-pressed=true]",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "segmented"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".error-page main",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "error-page"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".pill",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "pill"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".calc-purpose",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "calc-purpose"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".tool-workspace>form",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "tool-workspace"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-form",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "chain-finder-form"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".focused-fields",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "focused-fields"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-grid"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".macro-cards",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "macro-cards"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".result-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "result-grid"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-card",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".clear-tool-card h3",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".pick-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "pick-grid"
+    ]
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".meal-idea-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "meal-idea-grid"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".reading-progress",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "reading-progress"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".segmented",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "segmented"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".radio-group",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "radio-group"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".segmented button",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "segmented"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".validation-error",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "validation-error"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".form-error",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "form-error"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".nav-action",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "nav-action"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".nav-action span",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "nav-action"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".discovery-container",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "discovery-container"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".tool-table",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "tool-table"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".table-container",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "table-container"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".callout",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "callout"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".article-callout",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "article-callout"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".guide-callout",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "guide-callout"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".article-meta",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "article-meta"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".focused-card",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "focused-card"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".tool-panel",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "tool-panel"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".chain-finder-form",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "chain-finder-form"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".focused-card h2",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "focused-card"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".tool-panel h2",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "tool-panel"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".clear-tool-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-grid"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".clear-tool-card",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".clear-tool-card .clear-icon",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card",
+      "clear-icon"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".clear-tool-card h3",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".clear-tool-card:after",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".browse-meal-card",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "browse-meal-card"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".meal-idea-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "meal-idea-grid"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".contact-browser-links",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "contact-browser-links"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".macro-details .radio-group",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "radio-group"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".macro-details .radio-group label",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "radio-group"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".clear-tool-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-grid"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".meal-idea-grid",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "meal-idea-grid"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-deck",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "journal-deck"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".clear-tool-card p",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-tool-card"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".container .clear-page-body",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "clear-page-body"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".container .policy-body",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "policy-body"
+    ]
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".container .sources-content",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "sources-content"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character .food-arm-wave",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-arm-wave"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character .food-eyes",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-eyes"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character .food-leaf",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-leaf"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character .food-nod",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-nod"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion=wave] .food-arm-wave",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-arm-wave"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion=blink] .food-eyes",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-eyes"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion=leaf] .food-leaf",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-leaf"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion=nod] .food-nod",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-nod"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion] .food-arm-wave",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-arm-wave"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion] .food-eyes",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-eyes"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion] .food-leaf",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-leaf"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-greeting[data-motion] .food-nod",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-nod"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-reacting .food-arm-wave",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-arm-wave"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-reacting .food-eyes",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-eyes"
+    ]
+  },
+  {
+    "file": "food-characters.css",
+    "selector": ".food-character.is-reacting .food-leaf",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "food-leaf"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet>div",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet .food-character",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet h2",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet p",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet a",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet .food-character",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet>div",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".market-meet h2",
+    "reason": "Class absent from public HTML, loaded runtime and active templates",
+    "classes": [
+      "market-meet"
+    ]
+  }
+]

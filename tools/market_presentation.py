@@ -59,7 +59,7 @@ def transform(text,name):
  # Home has one quiz entry, using the shared data and engine.
  if name=='index.html':
   text=re.sub(r'<script[^>]*src="js/(?:editorial-home|meal-data|meal-provenance|meal-finder)\.js[^>]*>.*?</script>','',text,flags=re.S)
-  text=text.replace('</body>','<script src="js/meal-data.js" defer></script><script src="js/meal-provenance.js" defer></script></body>')
+  text=text.replace('</body>','<script src="js/meal-data.js" defer></script></body>')
  text=re.sub(r'(<meta name="theme-color" content=")[^"]*',r'\g<1>#fffefb',text)
  return text
 

@@ -1,0 +1,194 @@
+[
+  {
+    "engine": "chromium",
+    "theme": "light",
+    "width": 320,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "theme": "light",
+    "width": 390,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "theme": "light",
+    "width": 1440,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "theme": "dark",
+    "width": 320,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "theme": "dark",
+    "width": 390,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "theme": "dark",
+    "width": 1440,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "theme": "light",
+    "width": 320,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "theme": "light",
+    "width": 390,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "theme": "light",
+    "width": 1440,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "theme": "dark",
+    "width": 320,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "theme": "dark",
+    "width": 390,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "theme": "dark",
+    "width": 1440,
+    "checks": [
+      "Steak focus/touch greeting and Escape",
+      "mobile modal/focus handling",
+      "valid/invalid live portion arithmetic",
+      "topic selection, pagination, hash navigation and text sizing",
+      "restaurant source expansion and filter handoff",
+      "article/game shelf persistence and removal focus",
+      "grouped search and no results",
+      "filter-respecting Surprise me and no-match"
+    ],
+    "errors": []
+  }
+]

@@ -85,9 +85,14 @@ def goal_tags(m):
 def parse_meals(src):
     meals = []
     for raw in re.findall(r"\{chain:.*?\}(?=,\n|\n\];|\n\])", src, re.S):
-        o = re.sub(r"(\{|,)\s*([a-zA-Z_]\w*)\s*:", r'\1"\2":', raw)
-        o = re.sub(r"'((?:[^'\\]|\\.)*)'",
-                   lambda m: json.dumps(m.group(1).replace("\\'", "'")), o)
+        # Read quoted strings as whole tokens. An apostrophe in a JSON-quoted
+        # order name must not consume a later single-quoted goal tag.
+        def token(match):
+            quoted=match.group(1)
+            if quoted:
+                return quoted if quoted.startswith('"') else json.dumps(quoted[1:-1].replace("\\'", "'"))
+            return json.dumps(match.group(2))+':'
+        o=re.sub(r'''("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')|([A-Za-z_]\w*)\s*:''',token,raw)
         meals.append(json.loads(o))
     return meals
 

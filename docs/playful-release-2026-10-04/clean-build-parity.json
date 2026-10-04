@@ -1,0 +1,7 @@
+{
+  "html": 291,
+  "privatePdfFiles": 0,
+  "publicTextDifferences": [],
+  "assetStampCRLFvsLF": "tested equivalent",
+  "scope": "Clean baseline archive plus explicit implementation manifest; full build and quality gates passed."
+}

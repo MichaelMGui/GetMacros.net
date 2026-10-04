@@ -1,0 +1,1060 @@
+{
+  "checks": 52,
+  "results": [
+    {
+      "track": "macro",
+      "route": "equal-calories-different-macros-menu.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "labels",
+      "route": "sugar-lines-do-not-add.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "protein",
+      "route": "protein-serving-count-day-not-prescription.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "fiber",
+      "route": "qdoba-vegan-bowl-fiber-tradeoff.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "ordering",
+      "route": "cross-chain-melt-sandwich-orders.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "breakfast",
+      "route": "arbys-breakfast-bread-format.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "lunch",
+      "route": "noodles-mac-protein-not-simple-add-on.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "restaurant",
+      "route": "culvers-dinner-name-side-footnote.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "cross-restaurant",
+      "route": "three-count-tacos-not-three-equal-meals.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "calculator",
+      "route": "calculator-height-feet-inches-not-decimal.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 12,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "recipe",
+      "route": "recipe-combined-batches-not-average-serving.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "budget",
+      "route": "protein-value-price-range-overlap.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "dataset",
+      "route": "menu-average-chain-weighting.html",
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 2,
+          "tableWidth": 354,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 18,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "macro",
+      "route": "equal-calories-different-macros-menu.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "labels",
+      "route": "sugar-lines-do-not-add.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "protein",
+      "route": "protein-serving-count-day-not-prescription.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "fiber",
+      "route": "qdoba-vegan-bowl-fiber-tradeoff.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "ordering",
+      "route": "cross-chain-melt-sandwich-orders.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "breakfast",
+      "route": "arbys-breakfast-bread-format.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "lunch",
+      "route": "noodles-mac-protein-not-simple-add-on.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "restaurant",
+      "route": "culvers-dinner-name-side-footnote.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "cross-restaurant",
+      "route": "three-count-tacos-not-three-equal-meals.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "calculator",
+      "route": "calculator-height-feet-inches-not-decimal.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 12,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "recipe",
+      "route": "recipe-combined-batches-not-average-serving.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "budget",
+      "route": "protein-value-price-range-overlap.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "dataset",
+      "route": "menu-average-chain-weighting.html",
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 2,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 18,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "macro",
+      "route": "equal-calories-different-macros-menu.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "labels",
+      "route": "sugar-lines-do-not-add.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "protein",
+      "route": "protein-serving-count-day-not-prescription.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "fiber",
+      "route": "qdoba-vegan-bowl-fiber-tradeoff.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "ordering",
+      "route": "cross-chain-melt-sandwich-orders.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "breakfast",
+      "route": "arbys-breakfast-bread-format.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "lunch",
+      "route": "noodles-mac-protein-not-simple-add-on.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "restaurant",
+      "route": "culvers-dinner-name-side-footnote.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "cross-restaurant",
+      "route": "three-count-tacos-not-three-equal-meals.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "calculator",
+      "route": "calculator-height-feet-inches-not-decimal.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 12,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "recipe",
+      "route": "recipe-combined-batches-not-average-serving.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "budget",
+      "route": "protein-value-price-range-overlap.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": true,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "dataset",
+      "route": "menu-average-chain-weighting.html",
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 2,
+          "tableWidth": 354,
+          "regionWidth": 354
+        }
+      ],
+      "articleParagraphs": 18,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "macro",
+      "route": "equal-calories-different-macros-menu.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "labels",
+      "route": "sugar-lines-do-not-add.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "protein",
+      "route": "protein-serving-count-day-not-prescription.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "fiber",
+      "route": "qdoba-vegan-bowl-fiber-tradeoff.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "ordering",
+      "route": "cross-chain-melt-sandwich-orders.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "breakfast",
+      "route": "arbys-breakfast-bread-format.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "lunch",
+      "route": "noodles-mac-protein-not-simple-add-on.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "restaurant",
+      "route": "culvers-dinner-name-side-footnote.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "cross-restaurant",
+      "route": "three-count-tacos-not-three-equal-meals.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "calculator",
+      "route": "calculator-height-feet-inches-not-decimal.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 12,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "recipe",
+      "route": "recipe-combined-batches-not-average-serving.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [],
+      "articleParagraphs": 11,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "budget",
+      "route": "protein-value-price-range-overlap.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 8,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 10,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "track": "dataset",
+      "route": "menu-average-chain-weighting.html",
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "main": 1,
+      "missingImages": [],
+      "tableRegions": [
+        {
+          "labeled": true,
+          "focusable": true,
+          "scrolls": false,
+          "columns": 2,
+          "tableWidth": 720,
+          "regionWidth": 720
+        }
+      ],
+      "articleParagraphs": 18,
+      "overflow": [],
+      "errors": []
+    }
+  ],
+  "failures": [],
+  "method": "Playwright Edge using repository asset interception, not a live server or field measurement.",
+  "visualReview": "Screenshots captured; manual image review recorded separately."
+}

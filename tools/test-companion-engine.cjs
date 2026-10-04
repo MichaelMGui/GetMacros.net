@@ -26,7 +26,7 @@ test('Filtering/ranking do not mutate the dataset',()=>{const before=JSON.string
 test('Production provenance expands losslessly and preserves partial-source dates',()=>{
  const vm=require('node:vm'),context={window:{}};vm.createContext(context);
  for(const file of ['js/meal-data.js','js/meal-provenance.js'])vm.runInContext(fs.readFileSync(file,'utf8'),context,{filename:file});
- const actual=context.window.GM_MEALS;assert.equal(actual.length,83);
+ const actual=context.window.GM_MEALS;const expansion=JSON.parse(fs.readFileSync('tools/restaurant_release/expansion-payload.json','utf8'));assert.equal(actual.length,expansion.baseRecords+expansion.newOrders);
  const patches=JSON.parse(fs.readFileSync('docs/release-2026-10-03/data-audited-patches.json','utf8')).records;assert.equal(patches.length,41);
  for(const patch of patches){const record=actual.find(m=>m.chain+'||'+m.name===patch.recordKey);assert.ok(record,patch.recordKey);assert.equal(record.serving,patch.serving);for(const [nutrient,value] of Object.entries(patch.values)){assert.equal(record[nutrient],value,patch.recordKey+' '+nutrient);const provenance=record.nutrientProvenance[nutrient];assert.equal(typeof provenance,'object');assert.equal(provenance.retrieved,patch.nutrientProvenance[nutrient].retrieved);assert.equal(provenance.method,patch.nutrientProvenance[nutrient].method);assert.equal(provenance.source,patch.nutrientProvenance[nutrient].source);}}
  const partial=actual.find(m=>m.chain==='Chick-fil-A'&&m.name==='Grilled Nuggets, 12 count');assert.ok(partial);assert.equal(partial.nutrientProvenance.p.retrieved,'2026-10-03');assert.equal(partial.nutrientProvenance.f.retrieved,'2026-09-09');assert.equal(partial.nutrientProvenance.na.retrieved,'2026-09-09');

@@ -11,8 +11,11 @@ def plain(s):return re.sub(r'\s+',' ',unescape(re.sub(r'<[^>]+>',' ',s))).strip(
 def family(name,text):
  if name=='index.html':return 'home'
  if name=='404.html':return 'error'
+ if name=='play.html':return 'play-directory'
+ if name.startswith('play-') and 'data-game-id' in text:return 'game'
+ if name=='food-shelf.html':return 'saved'
  if name=='restaurant-meal-finder.html':return 'finder'
- if 'class="chain-finder-intro"' in text:return 'restaurant'
+ if 'class="chain-finder-intro"' in text or 'class="restaurant-reference"' in text:return 'restaurant'
  if name=='search.html':return 'search'
  if name=='blog.html':return 'journal'
  if name in ('about.html','sources.html','editorial-policy.html','corrections.html'):return 'trust'

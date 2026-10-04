@@ -1,0 +1,550 @@
+[
+  {
+    "file": "food-design.css",
+    "selectors": [
+      ".home-popular .meal-numbers"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "food-design.css",
+    "selectors": [
+      ".calculator-waiting p"
+    ],
+    "property": "max-width"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      "*",
+      "*::before",
+      "*::after"
+    ],
+    "property": "scroll-behavior"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      "*",
+      "*::before",
+      "*::after"
+    ],
+    "property": "animation"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".garden-toc"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".garden-toc"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".not-found"
+    ],
+    "property": "max-width"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".not-found"
+    ],
+    "property": "margin"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".not-found"
+    ],
+    "property": "padding"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".contact-draft-section"
+    ],
+    "property": "margin"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".meal-ideas-grid"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".meal-ideas-grid"
+    ],
+    "property": "grid-template-columns"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".meal-ideas-grid"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-meal-list"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-meal-list"
+    ],
+    "property": "grid-template-columns"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-meal-list"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-name"
+    ],
+    "property": "font"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-tile"
+    ],
+    "property": "padding"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-tile"
+    ],
+    "property": "background"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-tile"
+    ],
+    "property": "border"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-tile"
+    ],
+    "property": "border-radius"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-grid"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-grid"
+    ],
+    "property": "grid-template-columns"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".search-start-grid"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".guide-card p"
+    ],
+    "property": "color"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".guide-card p"
+    ],
+    "property": "font-size"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".guide-card"
+    ],
+    "property": "padding"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".guide-card"
+    ],
+    "property": "border-bottom"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".guide-grid"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".guide-grid"
+    ],
+    "property": "grid-template-columns"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".guide-grid"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".ranking-card"
+    ],
+    "property": "background"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".ranking-card"
+    ],
+    "property": "padding"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".ranking-card"
+    ],
+    "property": "border"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".ranking-card"
+    ],
+    "property": "border-radius"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".ranking-grid"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".ranking-grid"
+    ],
+    "property": "grid-template-columns"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".ranking-grid"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card p"
+    ],
+    "property": "font-size"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card"
+    ],
+    "property": "padding"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card"
+    ],
+    "property": "border-bottom"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card"
+    ],
+    "property": "color"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card"
+    ],
+    "property": "text-decoration"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-card"
+    ],
+    "property": "align-items"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-grid"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-grid"
+    ],
+    "property": "grid-template-columns"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".chain-grid"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".table-wrap",
+      ".table-scroll"
+    ],
+    "property": "max-width"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".table-wrap",
+      ".table-scroll"
+    ],
+    "property": "overflow-x"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      "input::placeholder",
+      "textarea::placeholder"
+    ],
+    "property": "color"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      "input::placeholder",
+      "textarea::placeholder"
+    ],
+    "property": "opacity"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".macro-bar .carbs"
+    ],
+    "property": "background"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".macro-bar .fat"
+    ],
+    "property": "background"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".macro-bar .protein"
+    ],
+    "property": "background"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".macro-bar"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".macro-bar"
+    ],
+    "property": "height"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".macro-bar"
+    ],
+    "property": "overflow"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".macro-bar"
+    ],
+    "property": "border-radius"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".focused-metric strong"
+    ],
+    "property": "font-size"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-form>.calc-submit"
+    ],
+    "property": "margin-top"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-form"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-form"
+    ],
+    "property": "flex-direction"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-card"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-card"
+    ],
+    "property": "padding"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-card"
+    ],
+    "property": "border-top"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-grid"
+    ],
+    "property": "display"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-grid"
+    ],
+    "property": "grid-template-columns"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".single-macro-grid"
+    ],
+    "property": "gap"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".calc-form",
+      ".tool-inputs",
+      ".contact-draft-section form"
+    ],
+    "property": "padding"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".calc-form",
+      ".tool-inputs",
+      ".contact-draft-section form"
+    ],
+    "property": "background"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".submission-byline",
+      ".blog-meta"
+    ],
+    "property": "font-size"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".submission-byline",
+      ".blog-meta"
+    ],
+    "property": "color"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".article-container p",
+      ".focused-guide-body p"
+    ],
+    "property": "font-size"
+  },
+  {
+    "file": "market-content.css",
+    "selectors": [
+      ".article-container p",
+      ".focused-guide-body p"
+    ],
+    "property": "line-height"
+  }
+]

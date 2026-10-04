@@ -1,0 +1,35 @@
+{
+  "environment": "Local Edge, 390x844, cold cache, 100 ms latency, 1.6 Mbps download, 4x CPU slowdown. No production CDN or field data.",
+  "samplesPerPage": 3,
+  "baselineCommit": "62f1ccb7bdb96d296d957aefcb9f5f08ac4c14f1",
+  "measurements": [
+    {
+      "route": "index.html",
+      "beforeMedianLCPms": 1860,
+      "afterMedianLCPms": 1808,
+      "beforeMedianCLS": 0,
+      "afterMedianCLS": 0,
+      "afterMedianLongTaskExcessMs": 0,
+      "afterBytes": 347927
+    },
+    {
+      "route": "calculators.html",
+      "beforeMedianLCPms": 1448,
+      "afterMedianLCPms": 1468,
+      "beforeMedianCLS": 0,
+      "afterMedianCLS": 0.0008012640534371851,
+      "afterMedianLongTaskExcessMs": 0,
+      "afterBytes": 239182
+    },
+    {
+      "route": "restaurant-meal-finder.html",
+      "beforeMedianLCPms": 2112,
+      "afterMedianLCPms": 2552,
+      "beforeMedianCLS": 0.00014679492218883742,
+      "afterMedianCLS": 0.00013168483153153308,
+      "afterMedianLongTaskExcessMs": 0,
+      "afterBytes": 505647
+    }
+  ],
+  "limits": "Uncompressed local HTTP assets; no CDN, field data, Lighthouse score or real-user performance claim. Finder dataset grew from83 to463 records; its cold-load median rose from2.112s to2.552s. No long-task excess in final samples."
+}

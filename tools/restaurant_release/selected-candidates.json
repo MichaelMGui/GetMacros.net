@@ -1,0 +1,6034 @@
+{
+  "arbys": [
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Pecan Chicken Salad Sandwich Contains: Wheat, Egg, Soy, Tree Nuts (Pecans) 322 850 410 46 7 0.5 65 1200 83 6 18 28",
+      "name": "Pecan Chicken Salad Sandwich",
+      "portion": "322",
+      "values": {
+        "cal": 850.0,
+        "fat": 46.0,
+        "na": 1200.0,
+        "c": 83.0,
+        "f": 6.0,
+        "p": 28.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Brisket Sandwich (Sweet) Contains: Wheat, May Contain: Sesame 249 530 140 15 11 0 95 1860 64 3 30 34",
+      "name": "Quarter Pound Brisket Sandwich (Sweet)",
+      "portion": "249",
+      "values": {
+        "cal": 530.0,
+        "fat": 15.0,
+        "na": 1860.0,
+        "c": 64.0,
+        "f": 3.0,
+        "p": 34.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Brisket Sandwich (Spicy) Contains: Wheat, May Contain: Sesame 249 520 140 15 11 0 95 1860 62 3 26 34",
+      "name": "Quarter Pound Brisket Sandwich (Spicy)",
+      "portion": "249",
+      "values": {
+        "cal": 520.0,
+        "fat": 15.0,
+        "na": 1860.0,
+        "c": 62.0,
+        "f": 3.0,
+        "p": 34.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Brisket Bowl (Sweet) Contains: Wheat, Milk, Soy, Egg 397 870 400 45 22 1 150 2820 70 2 31 44",
+      "name": "Quarter Pound Brisket Bowl (Sweet)",
+      "portion": "397",
+      "values": {
+        "cal": 870.0,
+        "fat": 45.0,
+        "na": 2820.0,
+        "c": 70.0,
+        "f": 2.0,
+        "p": 44.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Brisket Bowl (Spicy) Contains: Wheat, Milk, Soy, Egg 397 860 410 45 22 1 150 2820 68 3 27 45",
+      "name": "Quarter Pound Brisket Bowl (Spicy)",
+      "portion": "397",
+      "values": {
+        "cal": 860.0,
+        "fat": 45.0,
+        "na": 2820.0,
+        "c": 68.0,
+        "f": 3.0,
+        "p": 45.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Pulled Pork Sandwich (Sweet) Contains: Wheat; May Contain: Sesame 249 420 80 9 3 0 60 1760 61 3 30 25",
+      "name": "Quarter Pound Pulled Pork Sandwich (Sweet)",
+      "portion": "249",
+      "values": {
+        "cal": 420.0,
+        "fat": 9.0,
+        "na": 1760.0,
+        "c": 61.0,
+        "f": 3.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Pulled Pork Sandwich (Spicy) Contains: Wheat; May Contain: Sesame 249 410 80 9 3 0 60 1760 60 3 25 25",
+      "name": "Quarter Pound Pulled Pork Sandwich (Spicy)",
+      "portion": "249",
+      "values": {
+        "cal": 410.0,
+        "fat": 9.0,
+        "na": 1760.0,
+        "c": 60.0,
+        "f": 3.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Pulled Pork Bowl (Sweet) Contains: Wheat, Milk, Soy, Egg 397 760 350 38 14 0.5 115 2720 67 2 31 35",
+      "name": "Quarter Pound Pulled Pork Bowl (Sweet)",
+      "portion": "397",
+      "values": {
+        "cal": 760.0,
+        "fat": 38.0,
+        "na": 2720.0,
+        "c": 67.0,
+        "f": 2.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Quarter Pound Pulled Pork Bowl (Spicy) Contains: Wheat, Milk, Soy, Egg 397 750 350 39 14 0.5 115 2720 66 3 26 35",
+      "name": "Quarter Pound Pulled Pork Bowl (Spicy)",
+      "portion": "397",
+      "values": {
+        "cal": 750.0,
+        "fat": 39.0,
+        "na": 2720.0,
+        "c": 66.0,
+        "f": 3.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Classic Beef ‘n Cheddar Contains: Milk, Soy, Wheat, Sesame 195 450 180 20 6 1 50 1280 45 2 9 23",
+      "name": "Classic Beef ‘n Cheddar",
+      "portion": "195",
+      "values": {
+        "cal": 450.0,
+        "fat": 20.0,
+        "na": 1280.0,
+        "c": 45.0,
+        "f": 2.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Classic Roast Beef Contains: Soy, Wheat, Sesame 154 360 120 14 5 0.5 50 970 37 2 5 23",
+      "name": "Classic Roast Beef",
+      "portion": "154",
+      "values": {
+        "cal": 360.0,
+        "fat": 14.0,
+        "na": 970.0,
+        "c": 37.0,
+        "f": 2.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 1,
+      "sourceRow": "Classic French Dip & Swiss/Au Jus Contains: Milk, Soy, Wheat 324 530 190 21 10 1 85 2540 50 2 3 34",
+      "name": "Classic French Dip & Swiss/Au Jus",
+      "portion": "324",
+      "values": {
+        "cal": 530.0,
+        "fat": 21.0,
+        "na": 2540.0,
+        "c": 50.0,
+        "f": 2.0,
+        "p": 34.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Angus Cheesesteak Contains: Milk, Wheat, Sesame 290 690 300 34 16 1 110 2110 61 4 8 38",
+      "name": "Angus Cheesesteak",
+      "portion": "290",
+      "values": {
+        "cal": 690.0,
+        "fat": 34.0,
+        "na": 2110.0,
+        "c": 61.0,
+        "f": 4.0,
+        "p": 38.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Crispy Chicken Contains: Egg, Wheat; May Contain Sesame † Milk, Soy, Fish (where available) 240 530 200 22 4.5 0 50 1410 59 4 13 24",
+      "name": "Crispy Chicken",
+      "portion": "240",
+      "values": {
+        "cal": 530.0,
+        "fat": 22.0,
+        "na": 1410.0,
+        "c": 59.0,
+        "f": 4.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Buffalo Chicken Contains: Egg, Milk, Wheat; May Contain Sesame † Soy, Fish (where available) 228 530 200 22 4.5 0 45 2100 59 4 12 24",
+      "name": "Buffalo Chicken",
+      "portion": "228",
+      "values": {
+        "cal": 530.0,
+        "fat": 22.0,
+        "na": 2100.0,
+        "c": 59.0,
+        "f": 4.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Chicken Bacon Swiss Contains: Egg, Milk, Wheat; May Contain Sesame † Soy, Fish (where available) 272 650 270 30 9.5 0 75 1760 61 4 14 35",
+      "name": "Chicken Bacon Swiss",
+      "portion": "272",
+      "values": {
+        "cal": 650.0,
+        "fat": 30.0,
+        "na": 1760.0,
+        "c": 61.0,
+        "f": 4.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Chicken Cordon Bleu Contains: Egg, Milk, Wheat; May Contain Sesame † Soy, Fish (where available) 233 650 270 30 9 0 85 1790 59 4 11 35",
+      "name": "Chicken Cordon Bleu",
+      "portion": "233",
+      "values": {
+        "cal": 650.0,
+        "fat": 30.0,
+        "na": 1790.0,
+        "c": 59.0,
+        "f": 4.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Chicken Tenders (3) Contains: Egg, Milk, Soy, Wheat † Fish (where available) 129 370 160 18 3 0 60 1190 28 2 0 23",
+      "name": "Chicken Tenders (3)",
+      "portion": "129",
+      "values": {
+        "cal": 370.0,
+        "fat": 18.0,
+        "na": 1190.0,
+        "c": 28.0,
+        "f": 2.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Greek Gyro Contains: Egg, Milk, Soy, Wheat 273 700 390 44 13 0 75 1370 55 4 6 23",
+      "name": "Greek Gyro",
+      "portion": "273",
+      "values": {
+        "cal": 700.0,
+        "fat": 44.0,
+        "na": 1370.0,
+        "c": 55.0,
+        "f": 4.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Reuben Contains: Egg, Milk, Wheat 308 680 280 31 8 0.5 80 2420 62 4 5 37",
+      "name": "Reuben",
+      "portion": "308",
+      "values": {
+        "cal": 680.0,
+        "fat": 31.0,
+        "na": 2420.0,
+        "c": 62.0,
+        "f": 4.0,
+        "p": 37.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Turkey Ranch & Bacon Sandwich Contains: Egg, Milk, Soy, Wheat 360 800 310 34 10 0.5 70 2480 79 5 16 46",
+      "name": "Turkey Ranch & Bacon Sandwich",
+      "portion": "360",
+      "values": {
+        "cal": 800.0,
+        "fat": 34.0,
+        "na": 2480.0,
+        "c": 79.0,
+        "f": 5.0,
+        "p": 46.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 2,
+      "sourceRow": "Ham & Swiss Melt Contains: Egg, Milk, Wheat, Sesame † Fish (where available) 167 380 120 13 5 0 60 1370 40 2 5 26",
+      "name": "Ham & Swiss Melt",
+      "portion": "167",
+      "values": {
+        "cal": 380.0,
+        "fat": 13.0,
+        "na": 1370.0,
+        "c": 40.0,
+        "f": 2.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 4,
+      "sourceRow": "Roast Beef Slider Contains: Milk, Soy, Wheat/May contain Sesame 77 180 70 7 3 0 25 520 18 1 4 11",
+      "name": "Roast Beef Slider",
+      "portion": "77",
+      "values": {
+        "cal": 180.0,
+        "fat": 7.0,
+        "na": 520.0,
+        "c": 18.0,
+        "f": 1.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 4,
+      "sourceRow": "Chicken Slider Contains: Egg, Milk, Soy, Wheat/May contain Sesame † Fish (where available) 79 230 80 9 2 0 25 620 25 1 2 11",
+      "name": "Chicken Slider",
+      "portion": "79",
+      "values": {
+        "cal": 230.0,
+        "fat": 9.0,
+        "na": 620.0,
+        "c": 25.0,
+        "f": 1.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 4,
+      "sourceRow": "Ham Slider Contains: Milk, Soy, Wheat/May contain Sesame 77 170 50 6 2 0 25 600 19 0 4 11",
+      "name": "Ham Slider",
+      "portion": "77",
+      "values": {
+        "cal": 170.0,
+        "fat": 6.0,
+        "na": 600.0,
+        "c": 19.0,
+        "f": 0.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 4,
+      "sourceRow": "Buffalo Chicken Slider Contains: Egg, Milk, Soy, Wheat/May contain Sesame † Fish (where available) 92 260 100 12 2 0 25 910 26 1 3 10",
+      "name": "Buffalo Chicken Slider",
+      "portion": "92",
+      "values": {
+        "cal": 260.0,
+        "fat": 12.0,
+        "na": 910.0,
+        "c": 26.0,
+        "f": 1.0,
+        "p": 10.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 4,
+      "sourceRow": "Ranch Chicken Wrap Contains: Egg, Milk, Wheat, Soy † Fish (where available) 139 400 210 23 7 0 45 1000 32 1 1 16",
+      "name": "Ranch Chicken Wrap",
+      "portion": "139",
+      "values": {
+        "cal": 400.0,
+        "fat": 23.0,
+        "na": 1000.0,
+        "c": 32.0,
+        "f": 1.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 4,
+      "sourceRow": "Honey Mustard Chicken Wrap Contains: Egg, Milk, Wheat, Soy † Fish (where available) 139 380 190 21 7 0 35 990 34 1 3 15",
+      "name": "Honey Mustard Chicken Wrap",
+      "portion": "139",
+      "values": {
+        "cal": 380.0,
+        "fat": 21.0,
+        "na": 990.0,
+        "c": 34.0,
+        "f": 1.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Sausage Biscuit Contains: Egg, Milk, Soy, Wheat 144 500 300 33 15 0 40 1450 36 1 3 12",
+      "name": "• Sausage Biscuit",
+      "portion": "144",
+      "values": {
+        "cal": 500.0,
+        "fat": 33.0,
+        "na": 1450.0,
+        "c": 36.0,
+        "f": 1.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Bacon Biscuit Contains: Egg, Milk, Soy, Wheat 104 340 150 17 10 0 15 1180 36 1 3 10",
+      "name": "• Bacon Biscuit",
+      "portion": "104",
+      "values": {
+        "cal": 340.0,
+        "fat": 17.0,
+        "na": 1180.0,
+        "c": 36.0,
+        "f": 1.0,
+        "p": 10.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Ham Biscuit Contains: Egg, Milk, Soy, Wheat 140 340 140 16 9 0 30 1420 37 1 4 13",
+      "name": "• Ham Biscuit",
+      "portion": "140",
+      "values": {
+        "cal": 340.0,
+        "fat": 16.0,
+        "na": 1420.0,
+        "c": 37.0,
+        "f": 1.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Chicken Biscuit Contains: Egg, Milk, Soy, Wheat † Fish (where available) 134 390 160 18 9 0 20 1330 44 2 2 13",
+      "name": "• Chicken Biscuit",
+      "portion": "134",
+      "values": {
+        "cal": 390.0,
+        "fat": 18.0,
+        "na": 1330.0,
+        "c": 44.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Bacon, Egg & Cheese Sourdough Contains: Egg, Milk, Soy, Wheat 163 470 190 22 8 0 145 1260 46 2 5 23",
+      "name": "• Bacon, Egg & Cheese Sourdough",
+      "portion": "163",
+      "values": {
+        "cal": 470.0,
+        "fat": 22.0,
+        "na": 1260.0,
+        "c": 46.0,
+        "f": 2.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Bacon, Egg & Cheese Croissant Contains: Egg, Milk, Soy, Wheat 132 430 240 26 13 0.5 175 1010 29 1 4 18",
+      "name": "• Bacon, Egg & Cheese Croissant",
+      "portion": "132",
+      "values": {
+        "cal": 430.0,
+        "fat": 26.0,
+        "na": 1010.0,
+        "c": 29.0,
+        "f": 1.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Bacon, Egg & Cheese Biscuit Contains: Egg, Milk, Soy, Wheat 166 470 250 28 14 0 145 1720 37 1 4 18",
+      "name": "• Bacon, Egg & Cheese Biscuit",
+      "portion": "166",
+      "values": {
+        "cal": 470.0,
+        "fat": 28.0,
+        "na": 1720.0,
+        "c": 37.0,
+        "f": 1.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Bacon, Egg & Cheese Wrap Contains: Egg, Milk, Soy, Wheat † Fish (where available) 146 410 220 24 9 0 150 1330 29 1 2 18",
+      "name": "• Bacon, Egg & Cheese Wrap",
+      "portion": "146",
+      "values": {
+        "cal": 410.0,
+        "fat": 24.0,
+        "na": 1330.0,
+        "c": 29.0,
+        "f": 1.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Sausage, Egg & Cheese Sourdough Contains: Egg, Milk, Soy, Wheat 203 630 340 38 13 0 175 1450 47 2 5 24",
+      "name": "• Sausage, Egg & Cheese Sourdough",
+      "portion": "203",
+      "values": {
+        "cal": 630.0,
+        "fat": 38.0,
+        "na": 1450.0,
+        "c": 47.0,
+        "f": 2.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Sausage, Egg & Cheese Croissant Contains: Egg, Milk, Soy, Wheat 172 580 380 43 19 0.5 205 1200 30 1 4 19",
+      "name": "• Sausage, Egg & Cheese Croissant",
+      "portion": "172",
+      "values": {
+        "cal": 580.0,
+        "fat": 43.0,
+        "na": 1200.0,
+        "c": 30.0,
+        "f": 1.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Sausage, Egg & Cheese Biscuit Contains: Egg, Milk, Soy, Wheat 206 630 400 44 20 0 175 1910 39 1 4 19",
+      "name": "• Sausage, Egg & Cheese Biscuit",
+      "portion": "206",
+      "values": {
+        "cal": 630.0,
+        "fat": 44.0,
+        "na": 1910.0,
+        "c": 39.0,
+        "f": 1.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Sausage, Egg & Cheese Wrap Contains: Egg, Milk, Soy, Wheat † Fish (where available) 181 550 350 39 14 0 175 1420 30 1 3 17",
+      "name": "• Sausage, Egg & Cheese Wrap",
+      "portion": "181",
+      "values": {
+        "cal": 550.0,
+        "fat": 39.0,
+        "na": 1420.0,
+        "c": 30.0,
+        "f": 1.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Ham, Egg & Cheese Sourdough Contains: Egg, Milk, Soy, Wheat 194 460 160 18 5 0 155 1290 47 2 4 26",
+      "name": "• Ham, Egg & Cheese Sourdough",
+      "portion": "194",
+      "values": {
+        "cal": 460.0,
+        "fat": 18.0,
+        "na": 1290.0,
+        "c": 47.0,
+        "f": 2.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Ham, Egg & Cheese Croissant Contains: Egg, Milk, Soy, Wheat 162 410 200 23 11 0.5 185 1040 30 1 3 21",
+      "name": "• Ham, Egg & Cheese Croissant",
+      "portion": "162",
+      "values": {
+        "cal": 410.0,
+        "fat": 23.0,
+        "na": 1040.0,
+        "c": 30.0,
+        "f": 1.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Ham, Egg & Cheese Biscuit Contains: Egg, Milk, Soy, Wheat 196 460 210 24 12 0 155 1750 38 1 3 21",
+      "name": "• Ham, Egg & Cheese Biscuit",
+      "portion": "196",
+      "values": {
+        "cal": 460.0,
+        "fat": 24.0,
+        "na": 1750.0,
+        "c": 38.0,
+        "f": 1.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Ham, Egg & Cheese Wrap Contains: Egg, Milk, Soy, Wheat † Fish (where available) 178 400 190 21 8 0 165 1390 31 1 2 20",
+      "name": "• Ham, Egg & Cheese Wrap",
+      "portion": "178",
+      "values": {
+        "cal": 400.0,
+        "fat": 21.0,
+        "na": 1390.0,
+        "c": 31.0,
+        "f": 1.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Ham & Swiss Croissant Contains: Egg, Milk, Soy, Wheat 119 340 160 17 10 0 70 910 29 1 2 17",
+      "name": "• Ham & Swiss Croissant",
+      "portion": "119",
+      "values": {
+        "cal": 340.0,
+        "fat": 17.0,
+        "na": 910.0,
+        "c": 29.0,
+        "f": 1.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Bacon & Cheese Croissant Contains: Egg, Milk, Soy, Wheat 83 330 170 19 10 0 50 740 27 1 2 14",
+      "name": "• Bacon & Cheese Croissant",
+      "portion": "83",
+      "values": {
+        "cal": 330.0,
+        "fat": 19.0,
+        "na": 740.0,
+        "c": 27.0,
+        "f": 1.0,
+        "p": 14.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Sausage & Cheese Croissant Contains: Egg, Milk, Soy, Wheat 123 490 310 35 16 0 80 940 28 1 3 15",
+      "name": "• Sausage & Cheese Croissant",
+      "portion": "123",
+      "values": {
+        "cal": 490.0,
+        "fat": 35.0,
+        "na": 940.0,
+        "c": 28.0,
+        "f": 1.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• French Toast Sticks Contains: Soy, Wheat † Egg, Milk, Fish (where available) 191 590 225 25 4.5 0 0 540 82 3 36 8",
+      "name": "• French Toast Sticks",
+      "portion": "191",
+      "values": {
+        "cal": 590.0,
+        "fat": 25.0,
+        "na": 540.0,
+        "c": 82.0,
+        "f": 3.0,
+        "p": 8.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 9,
+      "sourceRow": "• Sausage Gravy Biscuit Contains: Egg, Milk, Soy, Wheat 261 480 250 28 13 0 20 1770 48 1 3 9",
+      "name": "• Sausage Gravy Biscuit",
+      "portion": "261",
+      "values": {
+        "cal": 480.0,
+        "fat": 28.0,
+        "na": 1770.0,
+        "c": 48.0,
+        "f": 1.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 10,
+      "sourceRow": "• Super Roast Beef Contains: Soy, Wheat, Sesame 210 440 170 19 6 1 50 1080 43 3 11 23",
+      "name": "• Super Roast Beef",
+      "portion": "210",
+      "values": {
+        "cal": 440.0,
+        "fat": 19.0,
+        "na": 1080.0,
+        "c": 43.0,
+        "f": 3.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 10,
+      "sourceRow": "• Arby’s Melt Contains: Milk, Soy, Wheat, Sesame 146 330 110 12 4 0.5 35 940 39 2 5 18",
+      "name": "• Arby’s Melt",
+      "portion": "146",
+      "values": {
+        "cal": 330.0,
+        "fat": 12.0,
+        "na": 940.0,
+        "c": 39.0,
+        "f": 2.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 10,
+      "sourceRow": "• Ham & Swiss Sandwich Contains: Egg, Milk, Soy, Wheat 328 730 260 29 9 0 85 1760 81 5 15 37",
+      "name": "• Ham & Swiss Sandwich",
+      "portion": "328",
+      "values": {
+        "cal": 730.0,
+        "fat": 29.0,
+        "na": 1760.0,
+        "c": 81.0,
+        "f": 5.0,
+        "p": 37.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "arbys",
+      "page": 10,
+      "sourceRow": "• Roast Beef Gyro Contains: Egg, Milk, Wheat 273 540 260 29 7 1 60 1300 48 3 5 24",
+      "name": "• Roast Beef Gyro",
+      "portion": "273",
+      "values": {
+        "cal": 540.0,
+        "fat": 29.0,
+        "na": 1300.0,
+        "c": 48.0,
+        "f": 3.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    }
+  ],
+  "del-taco": [
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "TACOS Beer Battered Fish Taco 157g 230 9 2 0 33 930 28 2 1 11",
+      "name": "Beer Battered Fish Taco",
+      "portion": "157g",
+      "values": {
+        "cal": 230.0,
+        "fat": 9.0,
+        "na": 930.0,
+        "c": 28.0,
+        "f": 2.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Carne Asada Steak Street Guac'd Up Taco 104g 140 4.5 1.5 0 25 460 15 2 1 10",
+      "name": "Carne Asada Steak Street Guac'd Up Taco",
+      "portion": "104g",
+      "values": {
+        "cal": 140.0,
+        "fat": 4.5,
+        "na": 460.0,
+        "c": 15.0,
+        "f": 2.0,
+        "p": 10.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Carne Asada Steak Street Taco 92g 120 3.5 1.5 0 25 420 14 1 1 10",
+      "name": "Carne Asada Steak Street Taco",
+      "portion": "92g",
+      "values": {
+        "cal": 120.0,
+        "fat": 3.5,
+        "na": 420.0,
+        "c": 14.0,
+        "f": 1.0,
+        "p": 10.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Chipotle Crispy Chicken Guac'd Up Taco 111g 260 13 4 0 25 730 23 1 1 9",
+      "name": "Chipotle Crispy Chicken Guac'd Up Taco",
+      "portion": "111g",
+      "values": {
+        "cal": 260.0,
+        "fat": 13.0,
+        "na": 730.0,
+        "c": 23.0,
+        "f": 1.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Chipotle Crispy Chicken Taco 97g 240 12 3.5 0 25 690 22 1 1 9",
+      "name": "Chipotle Crispy Chicken Taco",
+      "portion": "97g",
+      "values": {
+        "cal": 240.0,
+        "fat": 12.0,
+        "na": 690.0,
+        "c": 22.0,
+        "f": 1.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Grilled Chicken Street Guac'd Up Taco 107g 130 4.5 0 0 30 340 14 2 1 9",
+      "name": "Grilled Chicken Street Guac'd Up Taco",
+      "portion": "107g",
+      "values": {
+        "cal": 130.0,
+        "fat": 4.5,
+        "na": 340.0,
+        "c": 14.0,
+        "f": 2.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Grilled Chicken Street Taco 90g 110 3.5 0 0 30 300 13 0 0 9",
+      "name": "Grilled Chicken Street Taco",
+      "portion": "90g",
+      "values": {
+        "cal": 110.0,
+        "fat": 3.5,
+        "na": 300.0,
+        "c": 13.0,
+        "f": 0.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Grilled Chicken Taco 104g 210 12 3 0 45 510 15 1 1 11",
+      "name": "Grilled Chicken Taco",
+      "portion": "104g",
+      "values": {
+        "cal": 210.0,
+        "fat": 12.0,
+        "na": 510.0,
+        "c": 15.0,
+        "f": 1.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Jumbo Shrimp Taco 115g 280 16 2.5 0 35 550 25 2 2 7",
+      "name": "Jumbo Shrimp Taco",
+      "portion": "115g",
+      "values": {
+        "cal": 280.0,
+        "fat": 16.0,
+        "na": 550.0,
+        "c": 25.0,
+        "f": 2.0,
+        "p": 7.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Ranch Crispy Chicken Guac'd Up Taco 111g 250 13 4 0 30 740 24 2 1 10",
+      "name": "Ranch Crispy Chicken Guac'd Up Taco",
+      "portion": "111g",
+      "values": {
+        "cal": 250.0,
+        "fat": 13.0,
+        "na": 740.0,
+        "c": 24.0,
+        "f": 2.0,
+        "p": 10.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Ranch Crispy Chicken Taco 97g 240 12 4 0 30 700 22 1 1 9",
+      "name": "Ranch Crispy Chicken Taco",
+      "portion": "97g",
+      "values": {
+        "cal": 240.0,
+        "fat": 12.0,
+        "na": 700.0,
+        "c": 22.0,
+        "f": 1.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Snack Taco (Crunchy) 53g 120 7 3 0 20 135 8 0 1 6",
+      "name": "Snack Taco (Crunchy)",
+      "portion": "53g",
+      "values": {
+        "cal": 120.0,
+        "fat": 7.0,
+        "na": 135.0,
+        "c": 8.0,
+        "f": 0.0,
+        "p": 6.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Snack Taco (Soft) 67g 150 6 3 0 20 330 14 1 1 7",
+      "name": "Snack Taco (Soft)",
+      "portion": "67g",
+      "values": {
+        "cal": 150.0,
+        "fat": 6.0,
+        "na": 330.0,
+        "c": 14.0,
+        "f": 1.0,
+        "p": 7.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "The Del Taco (Crunchy) 121g 300 20 11 0 60 520 14 2 2 16",
+      "name": "The Del Taco (Crunchy)",
+      "portion": "121g",
+      "values": {
+        "cal": 300.0,
+        "fat": 20.0,
+        "na": 520.0,
+        "c": 14.0,
+        "f": 2.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "The Del Taco (Soft) 128g 290 17 10 0 60 610 16 1 2 17",
+      "name": "The Del Taco (Soft)",
+      "portion": "128g",
+      "values": {
+        "cal": 290.0,
+        "fat": 17.0,
+        "na": 610.0,
+        "c": 16.0,
+        "f": 1.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Crunchtada® Tostada 181g 350 14 4.5 0 15 440 44 9 1 13",
+      "name": "Crunchtada® Tostada",
+      "portion": "181g",
+      "values": {
+        "cal": 350.0,
+        "fat": 14.0,
+        "na": 440.0,
+        "c": 44.0,
+        "f": 9.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "BURRITOS 8 Layer Veggie Burrito 342g 540 17 7 0 30 1360 73 9 3 18",
+      "name": "8 Layer Veggie Burrito",
+      "portion": "342g",
+      "values": {
+        "cal": 540.0,
+        "fat": 17.0,
+        "na": 1360.0,
+        "c": 73.0,
+        "f": 9.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Bean & Cheese Burrito (Green) 280g 500 10 5 0 15 1360 80 15 1 24",
+      "name": "Bean & Cheese Burrito (Green)",
+      "portion": "280g",
+      "values": {
+        "cal": 500.0,
+        "fat": 10.0,
+        "na": 1360.0,
+        "c": 80.0,
+        "f": 15.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Bean & Cheese Burrito (Red) 280g 520 10 5 0 15 1330 79 15 1 24",
+      "name": "Bean & Cheese Burrito (Red)",
+      "portion": "280g",
+      "values": {
+        "cal": 520.0,
+        "fat": 10.0,
+        "na": 1330.0,
+        "c": 79.0,
+        "f": 15.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Chicken Cheddar Roller (Chipotle) 111g 280 12 3 0 40 730 30 0 0 13",
+      "name": "Chicken Cheddar Roller (Chipotle)",
+      "portion": "111g",
+      "values": {
+        "cal": 280.0,
+        "fat": 12.0,
+        "na": 730.0,
+        "c": 30.0,
+        "f": 0.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Chicken Cheddar Roller (Original) 118g 250 9 2.5 0 40 750 30 0 0 13",
+      "name": "Chicken Cheddar Roller (Original)",
+      "portion": "118g",
+      "values": {
+        "cal": 250.0,
+        "fat": 9.0,
+        "na": 750.0,
+        "c": 30.0,
+        "f": 0.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Chicken Cheddar Roller (Ranch) 111g 270 12 3 0 40 730 30 0 0 13",
+      "name": "Chicken Cheddar Roller (Ranch)",
+      "portion": "111g",
+      "values": {
+        "cal": 270.0,
+        "fat": 12.0,
+        "na": 730.0,
+        "c": 30.0,
+        "f": 0.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Del Beef™ Burrito (Beef & Cheddar Burrito) 240g 520 26 12 0.5 80 1290 40 3 3 28",
+      "name": "Del Beef™ Burrito (Beef & Cheddar Burrito)",
+      "portion": "240g",
+      "values": {
+        "cal": 520.0,
+        "fat": 26.0,
+        "na": 1290.0,
+        "c": 40.0,
+        "f": 3.0,
+        "p": 28.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Del Classic Chicken Burrito (Grilled Chicken Burrito) 251g 560 34 7 0 95 1200 40 0 2 24",
+      "name": "Del Classic Chicken Burrito (Grilled Chicken Burrito)",
+      "portion": "251g",
+      "values": {
+        "cal": 560.0,
+        "fat": 34.0,
+        "na": 1200.0,
+        "c": 40.0,
+        "f": 0.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Del Combo™ Burrito (Combo Beef & Bean Burrito) 251g 510 18 8 0 50 1280 57 8 2 25",
+      "name": "Del Combo™ Burrito (Combo Beef & Bean Burrito)",
+      "portion": "251g",
+      "values": {
+        "cal": 510.0,
+        "fat": 18.0,
+        "na": 1280.0,
+        "c": 57.0,
+        "f": 8.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Jumbo Shrimp Burrito 314g 820 49 9 0 90 1840 73 0 2 18",
+      "name": "Jumbo Shrimp Burrito",
+      "portion": "314g",
+      "values": {
+        "cal": 820.0,
+        "fat": 49.0,
+        "na": 1840.0,
+        "c": 73.0,
+        "f": 0.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Spicy Grilled Chicken Burrito 315g 560 18 5 0 80 1700 69 6 0 30",
+      "name": "Spicy Grilled Chicken Burrito",
+      "portion": "315g",
+      "values": {
+        "cal": 560.0,
+        "fat": 18.0,
+        "na": 1700.0,
+        "c": 69.0,
+        "f": 6.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "EPIC BURRITOS® Epic Carne Asada Steak Cali Bacon Burrito 414g 1050 60 22 1 155 2600 73 4 4 51",
+      "name": "EPIC BURRITOS® Epic Carne Asada Steak Cali Bacon Burrito",
+      "portion": "414g",
+      "values": {
+        "cal": 1050.0,
+        "fat": 60.0,
+        "na": 2600.0,
+        "c": 73.0,
+        "f": 4.0,
+        "p": 51.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Epic Carne Asada Steak Fresh Guacamole Burrito 442g 770 26 8 0.5 75 2490 94 9 4 42",
+      "name": "Epic Carne Asada Steak Fresh Guacamole Burrito",
+      "portion": "442g",
+      "values": {
+        "cal": 770.0,
+        "fat": 26.0,
+        "na": 2490.0,
+        "c": 94.0,
+        "f": 9.0,
+        "p": 42.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Epic Carne Asada Steak Loaded Queso Burrito 465g 890 44 19 1 130 3130 75 2 4 47",
+      "name": "Epic Carne Asada Steak Loaded Queso Burrito",
+      "portion": "465g",
+      "values": {
+        "cal": 890.0,
+        "fat": 44.0,
+        "na": 3130.0,
+        "c": 75.0,
+        "f": 2.0,
+        "p": 47.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Epic Combo Beef & Bean Burrito 493g 880 41 20 0.5 120 2010 79 12 7 42",
+      "name": "Epic Combo Beef & Bean Burrito",
+      "portion": "493g",
+      "values": {
+        "cal": 880.0,
+        "fat": 41.0,
+        "na": 2010.0,
+        "c": 79.0,
+        "f": 12.0,
+        "p": 42.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Epic Grilled Chicken Cali Bacon Burrito 414g 1020 60 18 0 170 2240 72 4 3 46",
+      "name": "Epic Grilled Chicken Cali Bacon Burrito",
+      "portion": "414g",
+      "values": {
+        "cal": 1020.0,
+        "fat": 60.0,
+        "na": 2240.0,
+        "c": 72.0,
+        "f": 4.0,
+        "p": 46.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Epic Grilled Chicken Fresh Guacamole Burrito 442g 740 26 5 0.0 90 2130 92 11 3 39",
+      "name": "Epic Grilled Chicken Fresh Guacamole Burrito",
+      "portion": "442g",
+      "values": {
+        "cal": 740.0,
+        "fat": 26.0,
+        "na": 2130.0,
+        "c": 92.0,
+        "f": 11.0,
+        "p": 39.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Epic Grilled Chicken Loaded Queso Burrito 465g 860 45 15 0 150 2770 73 2 3 43",
+      "name": "Epic Grilled Chicken Loaded Queso Burrito",
+      "portion": "465g",
+      "values": {
+        "cal": 860.0,
+        "fat": 45.0,
+        "na": 2770.0,
+        "c": 73.0,
+        "f": 2.0,
+        "p": 43.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "MACHO BURRITOS Macho Beef Burrito 461g 860 46 22 1.5 140 1980 61 6 8 43",
+      "name": "MACHO BURRITOS Macho Beef Burrito",
+      "portion": "461g",
+      "values": {
+        "cal": 860.0,
+        "fat": 46.0,
+        "na": 1980.0,
+        "c": 61.0,
+        "f": 6.0,
+        "p": 43.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "(In select restaurants) Macho Carne Asada Steak & Bean Burrito 469g 810 31 16 1 120 2420 80 10 5 47",
+      "name": "(In select restaurants) Macho Carne Asada Steak & Bean Burrito",
+      "portion": "469g",
+      "values": {
+        "cal": 810.0,
+        "fat": 31.0,
+        "na": 2420.0,
+        "c": 80.0,
+        "f": 10.0,
+        "p": 47.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Macho Chicken & Bean Burrito 469g 780 31 12 0 135 2070 78 10 4 43",
+      "name": "Macho Chicken & Bean Burrito",
+      "portion": "469g",
+      "values": {
+        "cal": 780.0,
+        "fat": 31.0,
+        "na": 2070.0,
+        "c": 78.0,
+        "f": 10.0,
+        "p": 43.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Macho Combo™ Beef & Bean Burrito 472g 850 38 19 1 110 1960 78 12 7 40",
+      "name": "Macho Combo™ Beef & Bean Burrito",
+      "portion": "472g",
+      "values": {
+        "cal": 850.0,
+        "fat": 38.0,
+        "na": 1960.0,
+        "c": 78.0,
+        "f": 12.0,
+        "p": 40.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "QUESADILLAS & NACHOS 3 Layer Queso Nachos 186g 350 15 3.5 0.0 10 770 47 8 1 11",
+      "name": "& NACHOS 3 Layer Queso Nachos",
+      "portion": "186g",
+      "values": {
+        "cal": 350.0,
+        "fat": 15.0,
+        "na": 770.0,
+        "c": 47.0,
+        "f": 8.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Cheddar Quesadilla 152g 480 27 16 0 85 1030 35 1 0 22",
+      "name": "Cheddar Quesadilla",
+      "portion": "152g",
+      "values": {
+        "cal": 480.0,
+        "fat": 27.0,
+        "na": 1030.0,
+        "c": 35.0,
+        "f": 1.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Chicken Cheddar Quesadilla 195g 540 30 16 0 115 1250 36 1 0 29",
+      "name": "Chicken Cheddar Quesadilla",
+      "portion": "195g",
+      "values": {
+        "cal": 540.0,
+        "fat": 30.0,
+        "na": 1250.0,
+        "c": 36.0,
+        "f": 1.0,
+        "p": 29.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Queso Loaded Nachos (Carne Asada Steak) 595g 1030 47 16 0.5 100 2960 111 19 6 46",
+      "name": "Queso Loaded Nachos (Carne Asada Steak)",
+      "portion": "595g",
+      "values": {
+        "cal": 1030.0,
+        "fat": 47.0,
+        "na": 2960.0,
+        "c": 111.0,
+        "f": 19.0,
+        "p": 46.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Queso Loaded Nachos (Grilled Chicken) 595g 1010 47 14 0.0 110 2720 109 19 6 44",
+      "name": "Queso Loaded Nachos (Grilled Chicken)",
+      "portion": "595g",
+      "values": {
+        "cal": 1010.0,
+        "fat": 47.0,
+        "na": 2720.0,
+        "c": 109.0,
+        "f": 19.0,
+        "p": 44.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Queso Loaded Nachos (Seasoned Beef) 615g 1090 55 20 1.0 100 2730 110 21 8 45",
+      "name": "Queso Loaded Nachos (Seasoned Beef)",
+      "portion": "615g",
+      "values": {
+        "cal": 1090.0,
+        "fat": 55.0,
+        "na": 2730.0,
+        "c": 110.0,
+        "f": 21.0,
+        "p": 45.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "SALADS Taco Salad with Fresh Guac (Carne Asada Steak) 421g 440 26 13 0 105 1510 23 1 7 29",
+      "name": "SALADS Taco Salad with Fresh Guac (Carne Asada Steak)",
+      "portion": "421g",
+      "values": {
+        "cal": 440.0,
+        "fat": 26.0,
+        "na": 1510.0,
+        "c": 23.0,
+        "f": 1.0,
+        "p": 29.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Taco Salad with Fresh Guac (Grilled Chicken) 421g 420 26 10 0 115 1270 22 1 7 26",
+      "name": "Taco Salad with Fresh Guac (Grilled Chicken)",
+      "portion": "421g",
+      "values": {
+        "cal": 420.0,
+        "fat": 26.0,
+        "na": 1270.0,
+        "c": 22.0,
+        "f": 1.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Taco Salad with Fresh Guac (Seasoned Beef) 446g 540 34 17 0.5 110 1320 23 1 9 28",
+      "name": "Taco Salad with Fresh Guac (Seasoned Beef)",
+      "portion": "446g",
+      "values": {
+        "cal": 540.0,
+        "fat": 34.0,
+        "na": 1320.0,
+        "c": 23.0,
+        "f": 1.0,
+        "p": 28.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "BURGERS & FRIES Del Cheeseburger 191g 470 28 10 1 70 1000 34 1 7 17",
+      "name": "& FRIES Del Cheeseburger",
+      "portion": "191g",
+      "values": {
+        "cal": 470.0,
+        "fat": 28.0,
+        "na": 1000.0,
+        "c": 34.0,
+        "f": 1.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "3 Pc. Crispy Chicken & Fries Box (Chipotle Dipping Sauce) 270g 720 51 9 0 60 1770 45 0 2 18",
+      "name": "3 Pc. Crispy Chicken & Fries Box (Chipotle Dipping Sauce)",
+      "portion": "270g",
+      "values": {
+        "cal": 720.0,
+        "fat": 51.0,
+        "na": 1770.0,
+        "c": 45.0,
+        "f": 0.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "3 Pc. Crispy Chicken & Fries Box (Ranch Dipping Sauce) 270g 710 50 9 0 70 1820 47 0 2 20",
+      "name": "3 Pc. Crispy Chicken & Fries Box (Ranch Dipping Sauce)",
+      "portion": "270g",
+      "values": {
+        "cal": 710.0,
+        "fat": 50.0,
+        "na": 1820.0,
+        "c": 47.0,
+        "f": 0.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Carne Asada Steak Fries 340g 760 56 14 0 75 1190 45 6 1 21",
+      "name": "Carne Asada Steak Fries",
+      "portion": "340g",
+      "values": {
+        "cal": 760.0,
+        "fat": 56.0,
+        "na": 1190.0,
+        "c": 45.0,
+        "f": 6.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Chili Cheddar Fries 298g 570 35 11 0 50 920 42 5 1 15",
+      "name": "Chili Cheddar Fries",
+      "portion": "298g",
+      "values": {
+        "cal": 570.0,
+        "fat": 35.0,
+        "na": 920.0,
+        "c": 42.0,
+        "f": 5.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Deluxe Chili Cheddar Fries™ 340g 610 37 13 0 60 930 44 6 2 16",
+      "name": "Deluxe Chili Cheddar Fries™",
+      "portion": "340g",
+      "values": {
+        "cal": 610.0,
+        "fat": 37.0,
+        "na": 930.0,
+        "c": 44.0,
+        "f": 6.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Double Del® Cheeseburger 266g 690 47 18 2 125 1230 35 1 7 30",
+      "name": "Double Del® Cheeseburger",
+      "portion": "266g",
+      "values": {
+        "cal": 690.0,
+        "fat": 47.0,
+        "na": 1230.0,
+        "c": 35.0,
+        "f": 1.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Double Del® Cheeseburger with Bacon 280g 760 51 20 2 145 1840 35 1 7 37",
+      "name": "Double Del® Cheeseburger with Bacon",
+      "portion": "280g",
+      "values": {
+        "cal": 760.0,
+        "fat": 51.0,
+        "na": 1840.0,
+        "c": 35.0,
+        "f": 1.0,
+        "p": 37.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 1,
+      "sourceRow": "Queso Loaded Fries 393g 660 44 16 0 75 1760 46 6 4 21",
+      "name": "Queso Loaded Fries",
+      "portion": "393g",
+      "values": {
+        "cal": 660.0,
+        "fat": 44.0,
+        "na": 1760.0,
+        "c": 46.0,
+        "f": 6.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 2,
+      "sourceRow": "BREAKFAST Breakfast Burrito (Bacon, Egg & Cheese) 223g 520 26 9 0 275 1540 36 2 0 30",
+      "name": "Breakfast Burrito (Bacon, Egg & Cheese)",
+      "portion": "223g",
+      "values": {
+        "cal": 520.0,
+        "fat": 26.0,
+        "na": 1540.0,
+        "c": 36.0,
+        "f": 2.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 2,
+      "sourceRow": "Breakfast Burrito (Carne Asada Steak, Egg & Cheese) 237g 450 19 8 0 260 1290 38 0 1 25",
+      "name": "Breakfast Burrito (Carne Asada Steak, Egg & Cheese)",
+      "portion": "237g",
+      "values": {
+        "cal": 450.0,
+        "fat": 19.0,
+        "na": 1290.0,
+        "c": 38.0,
+        "f": 0.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 2,
+      "sourceRow": "Breakfast Burrito (Egg & Cheese) 195g 380 16 7 0 235 950 35 2 0 16",
+      "name": "Breakfast Burrito (Egg & Cheese)",
+      "portion": "195g",
+      "values": {
+        "cal": 380.0,
+        "fat": 16.0,
+        "na": 950.0,
+        "c": 35.0,
+        "f": 2.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 2,
+      "sourceRow": "Breakfast Roller (Bacon, Egg & Cheese) 123g 290 14 5 0 140 860 24 1 0 16",
+      "name": "Breakfast Roller (Bacon, Egg & Cheese)",
+      "portion": "123g",
+      "values": {
+        "cal": 290.0,
+        "fat": 14.0,
+        "na": 860.0,
+        "c": 24.0,
+        "f": 1.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "del-taco",
+      "page": 2,
+      "sourceRow": "Breakfast Roller (Egg & Cheese) 116g 250 11 5 0 125 610 24 1 0 11",
+      "name": "Breakfast Roller (Egg & Cheese)",
+      "portion": "116g",
+      "values": {
+        "cal": 250.0,
+        "fat": 11.0,
+        "na": 610.0,
+        "c": 24.0,
+        "f": 1.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    }
+  ],
+  "sonic": [
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "ALL-AMERICAN BACON SONIC SMASHER™ (DOUBLE) 670 42 16 1 115 1870 32 2 8 39",
+      "name": "ALL-AMERICAN BACON SONIC SMASHER™ (DOUBLE)",
+      "portion": null,
+      "values": {
+        "cal": 670.0,
+        "fat": 42.0,
+        "na": 1870.0,
+        "c": 32.0,
+        "f": 2.0,
+        "p": 39.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "ALL-AMERICAN SONIC SMASHER™ (DOUBLE) 610 37 14 0.5 105 1650 32 2 8 35",
+      "name": "ALL-AMERICAN SONIC SMASHER™ (DOUBLE)",
+      "portion": null,
+      "values": {
+        "cal": 610.0,
+        "fat": 37.0,
+        "na": 1650.0,
+        "c": 32.0,
+        "f": 2.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "∆ HATCH GREEN CHILE CHEESEBURGER WITH MUSTARD 650 35 10 0 65 1110 50 2 9 30",
+      "name": "∆ HATCH GREEN CHILE CHEESEBURGER WITH MUSTARD",
+      "portion": null,
+      "values": {
+        "cal": 650.0,
+        "fat": 35.0,
+        "na": 1110.0,
+        "c": 50.0,
+        "f": 2.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "JR BACON CHEESEBURGER 400 26 8 0 40 1440 27 1 7 17",
+      "name": "JR BACON CHEESEBURGER",
+      "portion": null,
+      "values": {
+        "cal": 400.0,
+        "fat": 26.0,
+        "na": 1440.0,
+        "c": 27.0,
+        "f": 1.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "JR DOUBLE CHEESEBURGER 390 23 8 0 45 870 25 2 6 21",
+      "name": "JR DOUBLE CHEESEBURGER",
+      "portion": null,
+      "values": {
+        "cal": 390.0,
+        "fat": 23.0,
+        "na": 870.0,
+        "c": 25.0,
+        "f": 2.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "ORIGINAL SONIC SMASHER™ (DOUBLE) 600 37 14 1 100 1530 30 1 8 35",
+      "name": "ORIGINAL SONIC SMASHER™ (DOUBLE)",
+      "portion": null,
+      "values": {
+        "cal": 600.0,
+        "fat": 37.0,
+        "na": 1530.0,
+        "c": 30.0,
+        "f": 1.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "SONIC® CHEESEBURGER WITH KETCHUP & MAYO 700 41 11 0 65 1360 52 2 12 30",
+      "name": "SONIC® CHEESEBURGER WITH KETCHUP & MAYO",
+      "portion": null,
+      "values": {
+        "cal": 700.0,
+        "fat": 41.0,
+        "na": 1360.0,
+        "c": 52.0,
+        "f": 2.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "SuperSONIC® DOUBLE CHEESEBURGER WITH KETCHUP & MAYO 1040 68 20 0 130 1970 54 2 12 50",
+      "name": "SuperSONIC® DOUBLE CHEESEBURGER WITH KETCHUP & MAYO",
+      "portion": null,
+      "values": {
+        "cal": 1040.0,
+        "fat": 68.0,
+        "na": 1970.0,
+        "c": 54.0,
+        "f": 2.0,
+        "p": 50.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "∆ SuperSONIC® JALAPEÑO DOUBLE CHEESEBURGER WITH MUSTARD 970 61 19 0 125 1850 51 1 10 51",
+      "name": "∆ SuperSONIC® JALAPEÑO DOUBLE CHEESEBURGER WITH MUSTARD",
+      "portion": null,
+      "values": {
+        "cal": 970.0,
+        "fat": 61.0,
+        "na": 1850.0,
+        "c": 51.0,
+        "f": 1.0,
+        "p": 51.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 3,
+      "sourceRow": "∆ DELUXE TERIYAKI SONIC SMASHER™ (DOUBLE) 760 42 14 1 105 1930 58 2 15 36",
+      "name": "∆ DELUXE TERIYAKI SONIC SMASHER™ (DOUBLE)",
+      "portion": null,
+      "values": {
+        "cal": 760.0,
+        "fat": 42.0,
+        "na": 1930.0,
+        "c": 58.0,
+        "f": 2.0,
+        "p": 36.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "CORN DOG 230 13 4 0 15 480 23 1 5 6",
+      "name": "CORN DOG",
+      "portion": null,
+      "values": {
+        "cal": 230.0,
+        "fat": 13.0,
+        "na": 480.0,
+        "c": 23.0,
+        "f": 1.0,
+        "p": 6.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "JR BURGER 270 14 3.5 0 20 580 24 1 6 11",
+      "name": "JR BURGER",
+      "portion": null,
+      "values": {
+        "cal": 270.0,
+        "fat": 14.0,
+        "na": 580.0,
+        "c": 24.0,
+        "f": 1.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "JR CHEESEBURGER 290 16 6 0 30 800 25 2 6 13",
+      "name": "JR CHEESEBURGER",
+      "portion": null,
+      "values": {
+        "cal": 290.0,
+        "fat": 16.0,
+        "na": 800.0,
+        "c": 25.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆BLT TOASTER® 450 25 7 0 30 940 42 3 5 16",
+      "name": "∆BLT TOASTER®",
+      "portion": null,
+      "values": {
+        "cal": 450.0,
+        "fat": 25.0,
+        "na": 940.0,
+        "c": 42.0,
+        "f": 3.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ CHICKEN CLUB TOASTER® 670 36 10 0 80 1890 55 5 6 33",
+      "name": "∆ CHICKEN CLUB TOASTER®",
+      "portion": null,
+      "values": {
+        "cal": 670.0,
+        "fat": 36.0,
+        "na": 1890.0,
+        "c": 55.0,
+        "f": 5.0,
+        "p": 33.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "CHEESY BAJA CRISPY TENDER WRAP 290 14 3.5 0 30 810 30 2 1 12",
+      "name": "CHEESY BAJA CRISPY TENDER WRAP",
+      "portion": null,
+      "values": {
+        "cal": 290.0,
+        "fat": 14.0,
+        "na": 810.0,
+        "c": 30.0,
+        "f": 2.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "CRISPY TENDERS (3 PC.) 260 12 1 0 60 730 16 2 0 21",
+      "name": "CRISPY TENDERS (3 PC.)",
+      "portion": null,
+      "values": {
+        "cal": 260.0,
+        "fat": 12.0,
+        "na": 730.0,
+        "c": 16.0,
+        "f": 2.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "GARLIC PARMESAN RANCH CRISPY TENDER WRAP 330 16 4.5 0 30 950 34 1 2 12",
+      "name": "GARLIC PARMESAN RANCH CRISPY TENDER WRAP",
+      "portion": null,
+      "values": {
+        "cal": 330.0,
+        "fat": 16.0,
+        "na": 950.0,
+        "c": 34.0,
+        "f": 1.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "PREMIUM CHICKEN BITES SMALL 240 12 2 0 25 900 19 1 0 13",
+      "name": "PREMIUM CHICKEN BITES SMALL",
+      "portion": null,
+      "values": {
+        "cal": 240.0,
+        "fat": 12.0,
+        "na": 900.0,
+        "c": 19.0,
+        "f": 1.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ COUNTRY FRIED STEAK SANDWICH 640 29 8 0 40 1350 76 2 9 16",
+      "name": "∆ COUNTRY FRIED STEAK SANDWICH",
+      "portion": null,
+      "values": {
+        "cal": 640.0,
+        "fat": 29.0,
+        "na": 1350.0,
+        "c": 76.0,
+        "f": 2.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "CRISPY CHICKEN SANDWICH 520 24 4.5 0 50 1470 52 4 10 24",
+      "name": "CRISPY CHICKEN SANDWICH",
+      "portion": null,
+      "values": {
+        "cal": 520.0,
+        "fat": 24.0,
+        "na": 1470.0,
+        "c": 52.0,
+        "f": 4.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "GRILLED CHEESE SANDWICH 390 20 10 0 40 1130 42 3 4 13",
+      "name": "GRILLED CHEESE SANDWICH",
+      "portion": null,
+      "values": {
+        "cal": 390.0,
+        "fat": 20.0,
+        "na": 1130.0,
+        "c": 42.0,
+        "f": 3.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ PHILLY CHEESESTEAK SANDWICH 750 39 17 1.5 125 1710 53 1 3 46",
+      "name": "∆ PHILLY CHEESESTEAK SANDWICH",
+      "portion": null,
+      "values": {
+        "cal": 750.0,
+        "fat": 39.0,
+        "na": 1710.0,
+        "c": 53.0,
+        "f": 1.0,
+        "p": 46.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ PORK TENDERLOIN SANDWICH 650 30 3.5 0 40 1060 69 2 9 20",
+      "name": "∆ PORK TENDERLOIN SANDWICH",
+      "portion": null,
+      "values": {
+        "cal": 650.0,
+        "fat": 30.0,
+        "na": 1060.0,
+        "c": 69.0,
+        "f": 2.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "ALL-AMERICAN HOT DOG 410 21 8 1 35 1150 42 2 13 13",
+      "name": "ALL-AMERICAN HOT DOG",
+      "portion": null,
+      "values": {
+        "cal": 410.0,
+        "fat": 21.0,
+        "na": 1150.0,
+        "c": 42.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ CHICAGO HOT DOG 400 20 7 1 35 2030 42 3 14 11",
+      "name": "∆ CHICAGO HOT DOG",
+      "portion": null,
+      "values": {
+        "cal": 400.0,
+        "fat": 20.0,
+        "na": 2030.0,
+        "c": 42.0,
+        "f": 3.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "CHILI CHEESE CONEY 470 29 12 1.5 55 1200 34 2 4 18",
+      "name": "CHILI CHEESE CONEY",
+      "portion": null,
+      "values": {
+        "cal": 470.0,
+        "fat": 29.0,
+        "na": 1200.0,
+        "c": 34.0,
+        "f": 2.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "FOOTLONG QUARTER POUND CONEY 770 48 18 0.5 100 2160 54 3 9 31",
+      "name": "FOOTLONG QUARTER POUND CONEY",
+      "portion": null,
+      "values": {
+        "cal": 770.0,
+        "fat": 48.0,
+        "na": 2160.0,
+        "c": 54.0,
+        "f": 3.0,
+        "p": 31.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ NEW YORK HOT DOG 400 23 8 1.5 35 1110 35 3 5 13",
+      "name": "∆ NEW YORK HOT DOG",
+      "portion": null,
+      "values": {
+        "cal": 400.0,
+        "fat": 23.0,
+        "na": 1110.0,
+        "c": 35.0,
+        "f": 3.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "REGULAR HOT DOG 360 21 8 1 35 800 31 2 4 12",
+      "name": "REGULAR HOT DOG",
+      "portion": null,
+      "values": {
+        "cal": 360.0,
+        "fat": 21.0,
+        "na": 800.0,
+        "c": 31.0,
+        "f": 2.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ BISCUIT SANDWICH BACON 480 24 12 0 240 2130 40 1 5 20",
+      "name": "∆ BISCUIT SANDWICH BACON",
+      "portion": null,
+      "values": {
+        "cal": 480.0,
+        "fat": 24.0,
+        "na": 2130.0,
+        "c": 40.0,
+        "f": 1.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ BISCUIT SANDWICH HAM 500 22 13 0 100 2010 43 1 6 23",
+      "name": "∆ BISCUIT SANDWICH HAM",
+      "portion": null,
+      "values": {
+        "cal": 500.0,
+        "fat": 22.0,
+        "na": 2010.0,
+        "c": 43.0,
+        "f": 1.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ BISCUIT SANDWICH SAUSAGE 580 34 16 0 255 2150 40 1 5 21",
+      "name": "∆ BISCUIT SANDWICH SAUSAGE",
+      "portion": null,
+      "values": {
+        "cal": 580.0,
+        "fat": 34.0,
+        "na": 2150.0,
+        "c": 40.0,
+        "f": 1.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "BREAKFAST BURRITO BACON 470 25 11 0 320 1540 35 1 1 25",
+      "name": "BREAKFAST BURRITO BACON",
+      "portion": null,
+      "values": {
+        "cal": 470.0,
+        "fat": 25.0,
+        "na": 1540.0,
+        "c": 35.0,
+        "f": 1.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ BREAKFAST BURRITO HAM 440 20 9 0 330 1920 38 1 2 27",
+      "name": "∆ BREAKFAST BURRITO HAM",
+      "portion": null,
+      "values": {
+        "cal": 440.0,
+        "fat": 20.0,
+        "na": 1920.0,
+        "c": 38.0,
+        "f": 1.0,
+        "p": 27.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "BREAKFAST BURRITO SAUSAGE 490 28 12 0 320 1450 35 1 1 23",
+      "name": "BREAKFAST BURRITO SAUSAGE",
+      "portion": null,
+      "values": {
+        "cal": 490.0,
+        "fat": 28.0,
+        "na": 1450.0,
+        "c": 35.0,
+        "f": 1.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "BREAKFAST TOASTER® BACON 470 24 10 0 250 1940 42 3 4 22",
+      "name": "BREAKFAST TOASTER® BACON",
+      "portion": null,
+      "values": {
+        "cal": 470.0,
+        "fat": 24.0,
+        "na": 1940.0,
+        "c": 42.0,
+        "f": 3.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆BREAKFAST TOASTER® HAM 470 21 8 0 265 2390 45 3 6 26",
+      "name": "∆BREAKFAST TOASTER® HAM",
+      "portion": null,
+      "values": {
+        "cal": 470.0,
+        "fat": 21.0,
+        "na": 2390.0,
+        "c": 45.0,
+        "f": 3.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "BREAKFAST TOASTER® SAUSAGE 570 34 13 0 265 1960 42 3 4 23",
+      "name": "BREAKFAST TOASTER® SAUSAGE",
+      "portion": null,
+      "values": {
+        "cal": 570.0,
+        "fat": 34.0,
+        "na": 1960.0,
+        "c": 42.0,
+        "f": 3.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ BRIOCHE SANDWICH BACON 440 23 9 0 250 1820 38 2 9 20",
+      "name": "∆ BRIOCHE SANDWICH BACON",
+      "portion": null,
+      "values": {
+        "cal": 440.0,
+        "fat": 23.0,
+        "na": 1820.0,
+        "c": 38.0,
+        "f": 2.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆BRIOCHE SANDWICH HAM 450 21 10 0 110 1700 41 2 11 24",
+      "name": "∆BRIOCHE SANDWICH HAM",
+      "portion": null,
+      "values": {
+        "cal": 450.0,
+        "fat": 21.0,
+        "na": 1700.0,
+        "c": 41.0,
+        "f": 2.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ BRIOCHE SANDWICH SAUSAGE 530 33 12 0 265 1840 38 3 9 22",
+      "name": "∆ BRIOCHE SANDWICH SAUSAGE",
+      "portion": null,
+      "values": {
+        "cal": 530.0,
+        "fat": 33.0,
+        "na": 1840.0,
+        "c": 38.0,
+        "f": 3.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ CROISSONIC® SANDWICH BACON 430 27 10 0 240 1540 29 1 5 18",
+      "name": "∆ CROISSONIC® SANDWICH BACON",
+      "portion": null,
+      "values": {
+        "cal": 430.0,
+        "fat": 27.0,
+        "na": 1540.0,
+        "c": 29.0,
+        "f": 1.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆CROISSONIC® SANDWICH HAM 430 23 9 0 255 2000 31 1 6 22",
+      "name": "∆CROISSONIC® SANDWICH HAM",
+      "portion": null,
+      "values": {
+        "cal": 430.0,
+        "fat": 23.0,
+        "na": 2000.0,
+        "c": 31.0,
+        "f": 1.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "∆ CROISSONIC® SANDWICH SAUSAGE 530 37 14 0 255 1560 29 1 5 19",
+      "name": "∆ CROISSONIC® SANDWICH SAUSAGE",
+      "portion": null,
+      "values": {
+        "cal": 530.0,
+        "fat": 37.0,
+        "na": 1560.0,
+        "c": 29.0,
+        "f": 1.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "FRENCH TOAST STICKS WITHOUT SYRUP (4 PC.) 480 25 4.5 0 0 460 54 3 12 8",
+      "name": "FRENCH TOAST STICKS WITHOUT SYRUP (4 PC.)",
+      "portion": null,
+      "values": {
+        "cal": 480.0,
+        "fat": 25.0,
+        "na": 460.0,
+        "c": 54.0,
+        "f": 3.0,
+        "p": 8.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "SuperSONIC® BREAKFAST BURRITO 590 33 13 0 320 1770 49 3 3 24",
+      "name": "SuperSONIC® BREAKFAST BURRITO",
+      "portion": null,
+      "values": {
+        "cal": 590.0,
+        "fat": 33.0,
+        "na": 1770.0,
+        "c": 49.0,
+        "f": 3.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "sonic",
+      "page": 4,
+      "sourceRow": "ULTIMATE MEAT & CHEESE BREAKFAST BURRITO® 820 56 18 0.5 355 2190 47 2 1 29",
+      "name": "ULTIMATE MEAT & CHEESE BREAKFAST BURRITO®",
+      "portion": null,
+      "values": {
+        "cal": 820.0,
+        "fat": 56.0,
+        "na": 2190.0,
+        "c": 47.0,
+        "f": 2.0,
+        "p": 29.0
+      },
+      "qualifiers": {}
+    }
+  ],
+  "culvers": [
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "ButterBurger®, Single 390 17 7 0.5 55 480 38 1 6 20",
+      "name": "ButterBurger®, Single",
+      "portion": null,
+      "values": {
+        "cal": 390.0,
+        "fat": 17.0,
+        "na": 480.0,
+        "c": 38.0,
+        "f": 1.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "ButterBurger® Cheese, Single 460 23 11 0.5 75 700 39 1 7 24",
+      "name": "ButterBurger® Cheese, Single",
+      "portion": null,
+      "values": {
+        "cal": 460.0,
+        "fat": 23.0,
+        "na": 700.0,
+        "c": 39.0,
+        "f": 1.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Mushroom & Swiss ButterBurger®, Single 530 28 12 0.5 75 650 41 2 6 27",
+      "name": "Mushroom & Swiss ButterBurger®, Single",
+      "portion": null,
+      "values": {
+        "cal": 530.0,
+        "fat": 28.0,
+        "na": 650.0,
+        "c": 41.0,
+        "f": 2.0,
+        "p": 27.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Sourdough Melt, Single 490 25 12 1 80 600 42 3 3 26",
+      "name": "Sourdough Melt, Single",
+      "portion": null,
+      "values": {
+        "cal": 490.0,
+        "fat": 25.0,
+        "na": 600.0,
+        "c": 42.0,
+        "f": 3.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "The Culver's® Deluxe, Single 580 34 13 0.5 85 920 41 1 7 24",
+      "name": "The Culver's® Deluxe, Single",
+      "portion": null,
+      "values": {
+        "cal": 580.0,
+        "fat": 34.0,
+        "na": 920.0,
+        "c": 41.0,
+        "f": 1.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "The Culver's® Bacon Deluxe, Single 670 40 15 0.5 110 1300 42 1 8 33",
+      "name": "The Culver's® Bacon Deluxe, Single",
+      "portion": null,
+      "values": {
+        "cal": 670.0,
+        "fat": 40.0,
+        "na": 1300.0,
+        "c": 42.0,
+        "f": 1.0,
+        "p": 33.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Wisconsin Swiss Melt, Single 480 24 10 1 75 560 41 4 3 27",
+      "name": "Wisconsin Swiss Melt, Single",
+      "portion": null,
+      "values": {
+        "cal": 480.0,
+        "fat": 24.0,
+        "na": 560.0,
+        "c": 41.0,
+        "f": 4.0,
+        "p": 27.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Chicken Tenders, Buffalo - 4 Piece 540 24 2.5 0 85 2010 40 3 <1 39",
+      "name": "Chicken Tenders, Buffalo - 4 Piece",
+      "portion": null,
+      "values": {
+        "cal": 540.0,
+        "fat": 24.0,
+        "na": 2010.0,
+        "c": 40.0,
+        "f": 3.0,
+        "p": 39.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Chicken Tenders, Original - 4 Piece 520 23 2.5 0 90 1560 41 2 <1 39",
+      "name": "Chicken Tenders, Original - 4 Piece",
+      "portion": null,
+      "values": {
+        "cal": 520.0,
+        "fat": 23.0,
+        "na": 1560.0,
+        "c": 41.0,
+        "f": 2.0,
+        "p": 39.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Crispy Chicken Sandwich 690 35 8 0 75 1590 65 2 9 28",
+      "name": "Crispy Chicken Sandwich",
+      "portion": null,
+      "values": {
+        "cal": 690.0,
+        "fat": 35.0,
+        "na": 1590.0,
+        "c": 65.0,
+        "f": 2.0,
+        "p": 28.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Grilled Chicken Sandwich 480 19 6 0 115 1340 40 2 9 36",
+      "name": "Grilled Chicken Sandwich",
+      "portion": null,
+      "values": {
+        "cal": 480.0,
+        "fat": 19.0,
+        "na": 1340.0,
+        "c": 40.0,
+        "f": 2.0,
+        "p": 36.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Spicy Crispy Chicken Sandwich 680 33 7 0 80 1680 65 3 9 32",
+      "name": "Spicy Crispy Chicken Sandwich",
+      "portion": null,
+      "values": {
+        "cal": 680.0,
+        "fat": 33.0,
+        "na": 1680.0,
+        "c": 65.0,
+        "f": 3.0,
+        "p": 32.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Butterfly Jumbo Shrimp** - 10 Piece 540 27 2.5 0 195 1600 58 2 4 15",
+      "name": "Butterfly Jumbo Shrimp** - 10 Piece",
+      "portion": null,
+      "values": {
+        "cal": 540.0,
+        "fat": 27.0,
+        "na": 1600.0,
+        "c": 58.0,
+        "f": 2.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Butterfly Jumbo Shrimp Dinner* - 6 Piece 470 22 4 0 125 1180 55 2 5 13",
+      "name": "Butterfly Jumbo Shrimp Dinner* - 6 Piece",
+      "portion": null,
+      "values": {
+        "cal": 470.0,
+        "fat": 22.0,
+        "na": 1180.0,
+        "c": 55.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "North Atlantic Cod Sandwich 600 34 8 0 60 830 51 2 6 23",
+      "name": "North Atlantic Cod Sandwich",
+      "portion": null,
+      "values": {
+        "cal": 600.0,
+        "fat": 34.0,
+        "na": 830.0,
+        "c": 51.0,
+        "f": 2.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "North Atlantic Cod Dinner* - 1 Piece 350 18 4 0 40 490 31 1 3 16",
+      "name": "North Atlantic Cod Dinner* - 1 Piece",
+      "portion": null,
+      "values": {
+        "cal": 350.0,
+        "fat": 18.0,
+        "na": 490.0,
+        "c": 31.0,
+        "f": 1.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Beef Pot Roast Dinner* 500 20 10 1 155 1100 45 1 6 32",
+      "name": "Beef Pot Roast Dinner*",
+      "portion": null,
+      "values": {
+        "cal": 500.0,
+        "fat": 20.0,
+        "na": 1100.0,
+        "c": 45.0,
+        "f": 1.0,
+        "p": 32.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Beef Pot Roast Sandwich 410 13 6 1 140 740 40 1 8 31",
+      "name": "Beef Pot Roast Sandwich",
+      "portion": null,
+      "values": {
+        "cal": 410.0,
+        "fat": 13.0,
+        "na": 740.0,
+        "c": 40.0,
+        "f": 1.0,
+        "p": 31.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Chopped Steak Dinner* 560 36 14 1 110 550 24 2 3 33",
+      "name": "Chopped Steak Dinner*",
+      "portion": null,
+      "values": {
+        "cal": 560.0,
+        "fat": 36.0,
+        "na": 550.0,
+        "c": 24.0,
+        "f": 2.0,
+        "p": 33.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Grilled Cheese 360 16 9 0 45 800 39 2 3 14",
+      "name": "Grilled Cheese",
+      "portion": null,
+      "values": {
+        "cal": 360.0,
+        "fat": 16.0,
+        "na": 800.0,
+        "c": 39.0,
+        "f": 2.0,
+        "p": 14.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Grilled Reuben Melt 660 38 15 0 105 1840 43 4 6 37",
+      "name": "Grilled Reuben Melt",
+      "portion": null,
+      "values": {
+        "cal": 660.0,
+        "fat": 38.0,
+        "na": 1840.0,
+        "c": 43.0,
+        "f": 4.0,
+        "p": 37.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Harvest Veggie Burger 610 26 10 0 60 1030 74 5 9 19",
+      "name": "Harvest Veggie Burger",
+      "portion": null,
+      "values": {
+        "cal": 610.0,
+        "fat": 26.0,
+        "na": 1030.0,
+        "c": 74.0,
+        "f": 5.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "culvers",
+      "page": 3,
+      "sourceRow": "Pork Loin Sandwich 580 20 3.5 0 55 990 68 2 7 31",
+      "name": "Pork Loin Sandwich",
+      "portion": null,
+      "values": {
+        "cal": 580.0,
+        "fat": 20.0,
+        "na": 990.0,
+        "c": 68.0,
+        "f": 2.0,
+        "p": 31.0
+      },
+      "qualifiers": {}
+    }
+  ],
+  "taco-johns": [
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crunchy Dorado Taco 330 23 6 0 85 560 15 2 2 16",
+      "name": "Crunchy Dorado Taco",
+      "portion": null,
+      "values": {
+        "cal": 330.0,
+        "fat": 23.0,
+        "na": 560.0,
+        "c": 15.0,
+        "f": 2.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Chipotle Chicken Burrito 640 32 10 0.5 90 1410 59 5 3 25",
+      "name": "Chipotle Chicken Burrito",
+      "portion": null,
+      "values": {
+        "cal": 640.0,
+        "fat": 32.0,
+        "na": 1410.0,
+        "c": 59.0,
+        "f": 5.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Chipotle Chicken Quesadilla 590 34 14 0.5 115 1370 40 2 2 29",
+      "name": "Chipotle Chicken Quesadilla",
+      "portion": null,
+      "values": {
+        "cal": 590.0,
+        "fat": 34.0,
+        "na": 1370.0,
+        "c": 40.0,
+        "f": 2.0,
+        "p": 29.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Mexi Rolls®, Chipotle Shredded Chicken, 4 count ★ 500 24 8 0.5 55 820 46 8 1 24",
+      "name": "Mexi Rolls®, Chipotle Shredded Chicken, 4 count ★",
+      "portion": null,
+      "values": {
+        "cal": 500.0,
+        "fat": 24.0,
+        "na": 820.0,
+        "c": 46.0,
+        "f": 8.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Western Gold Grilled Burrito, Beef 720 38 10 1 50 1680 70 5 6 23",
+      "name": "Western Gold Grilled Burrito, Beef",
+      "portion": null,
+      "values": {
+        "cal": 720.0,
+        "fat": 38.0,
+        "na": 1680.0,
+        "c": 70.0,
+        "f": 5.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Western Gold Grilled Burrito, Chicken 680 30 7 0 80 1840 69 5 7 30",
+      "name": "Western Gold Grilled Burrito, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 680.0,
+        "fat": 30.0,
+        "na": 1840.0,
+        "c": 69.0,
+        "f": 5.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Western Gold Grilled Burrito, Crispy Chicken 660 32 7 0 40 1730 72 5 6 19",
+      "name": "Western Gold Grilled Burrito, Crispy Chicken",
+      "portion": null,
+      "values": {
+        "cal": 660.0,
+        "fat": 32.0,
+        "na": 1730.0,
+        "c": 72.0,
+        "f": 5.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Western Gold Grilled Burrito, Refried Beans 670 29 7 0 15 1700 83 11 6 17",
+      "name": "Western Gold Grilled Burrito, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 670.0,
+        "fat": 29.0,
+        "na": 1700.0,
+        "c": 83.0,
+        "f": 11.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Western Gold Grilled Burrito, Steak 700 35 8 0 60 1670 68 4 6 27",
+      "name": "Western Gold Grilled Burrito, Steak",
+      "portion": null,
+      "values": {
+        "cal": 700.0,
+        "fat": 35.0,
+        "na": 1670.0,
+        "c": 68.0,
+        "f": 4.0,
+        "p": 27.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Fiesta Rice Bowl, Chicken ★ 630 19 6 0 90 1760 74 9 8 38",
+      "name": "Fiesta Rice Bowl, Chicken ★",
+      "portion": null,
+      "values": {
+        "cal": 630.0,
+        "fat": 19.0,
+        "na": 1760.0,
+        "c": 74.0,
+        "f": 9.0,
+        "p": 38.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Fiesta Rice Bowl, Chipotle Shredded Chicken ★ 730 32 10 0 160 1840 71 9 6 40",
+      "name": "Fiesta Rice Bowl, Chipotle Shredded Chicken ★",
+      "portion": null,
+      "values": {
+        "cal": 730.0,
+        "fat": 32.0,
+        "na": 1840.0,
+        "c": 71.0,
+        "f": 9.0,
+        "p": 40.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Fiesta Rice Bowl, Steak ★ 650 23 7 0 70 1580 74 9 7 34",
+      "name": "Fiesta Rice Bowl, Steak ★",
+      "portion": null,
+      "values": {
+        "cal": 650.0,
+        "fat": 23.0,
+        "na": 1580.0,
+        "c": 74.0,
+        "f": 9.0,
+        "p": 34.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Loaded Potato Olés® Bowl, Beef ★ 970 65 15 0.5 55 2610 74 12 3 23",
+      "name": "Loaded Potato Olés® Bowl, Beef ★",
+      "portion": null,
+      "values": {
+        "cal": 970.0,
+        "fat": 65.0,
+        "na": 2610.0,
+        "c": 74.0,
+        "f": 12.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Loaded Potato Olés® Bowl, Chicken ★ 950 61 13 0 70 2690 73 12 3 27",
+      "name": "Loaded Potato Olés® Bowl, Chicken ★",
+      "portion": null,
+      "values": {
+        "cal": 950.0,
+        "fat": 61.0,
+        "na": 2690.0,
+        "c": 73.0,
+        "f": 12.0,
+        "p": 27.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Loaded Potato Olés® Bowl, Chipotle Shredded Chicken ★ 1010 68 15 0 105 2730 71 12 3 28",
+      "name": "Loaded Potato Olés® Bowl, Chipotle Shredded Chicken ★",
+      "portion": null,
+      "values": {
+        "cal": 1010.0,
+        "fat": 68.0,
+        "na": 2730.0,
+        "c": 71.0,
+        "f": 12.0,
+        "p": 28.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Loaded Potato Olés® Bowl, Steak ★ 960 63 14 0 60 2600 72 12 3 25",
+      "name": "Loaded Potato Olés® Bowl, Steak ★",
+      "portion": null,
+      "values": {
+        "cal": 960.0,
+        "fat": 63.0,
+        "na": 2600.0,
+        "c": 72.0,
+        "f": 12.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Beef 150 10 3.5 0 25 310 8 1 <1 9",
+      "name": "Crispy Taco, Beef",
+      "portion": null,
+      "values": {
+        "cal": 150.0,
+        "fat": 10.0,
+        "na": 310.0,
+        "c": 8.0,
+        "f": 1.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Chicken 130 6 2 0 40 390 7 <1 1 12",
+      "name": "Crispy Taco, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 130.0,
+        "fat": 6.0,
+        "na": 390.0,
+        "c": 7.0,
+        "f": null,
+        "p": 12.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Chipotle Shredded Chicken (Limited Time) 180 12 4 0 75 430 5 <1 <1 14",
+      "name": "Crispy Taco, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 180.0,
+        "fat": 12.0,
+        "na": 430.0,
+        "c": 5.0,
+        "f": null,
+        "p": 14.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Refried Beans 120 5 2 0 5 320 14 4 <1 6",
+      "name": "Crispy Taco, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 120.0,
+        "fat": 5.0,
+        "na": 320.0,
+        "c": 14.0,
+        "f": 4.0,
+        "p": 6.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Steak 140 8 2.5 0 30 300 7 <1 <1 10",
+      "name": "Crispy Taco, Steak",
+      "portion": null,
+      "values": {
+        "cal": 140.0,
+        "fat": 8.0,
+        "na": 300.0,
+        "c": 7.0,
+        "f": null,
+        "p": 10.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Super, Beef 170 11 4.5 0 30 320 9 1 2 9",
+      "name": "Crispy Taco, Super, Beef",
+      "portion": null,
+      "values": {
+        "cal": 170.0,
+        "fat": 11.0,
+        "na": 320.0,
+        "c": 9.0,
+        "f": 1.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Super, Chicken 150 7 3 0 45 400 9 1 2 13",
+      "name": "Crispy Taco, Super, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 150.0,
+        "fat": 7.0,
+        "na": 400.0,
+        "c": 9.0,
+        "f": 1.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Super, Chipotle Shredded Chicken (Limited Time) 200 13 5 0 75 450 7 <1 2 14",
+      "name": "Crispy Taco, Super, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 200.0,
+        "fat": 13.0,
+        "na": 450.0,
+        "c": 7.0,
+        "f": null,
+        "p": 14.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Super, Refried Beans 140 6 2.5 0 10 330 16 4 2 6",
+      "name": "Crispy Taco, Super, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 140.0,
+        "fat": 6.0,
+        "na": 330.0,
+        "c": 16.0,
+        "f": 4.0,
+        "p": 6.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Taco, Super, Steak 160 9 3.5 0 35 320 8 <1 2 11",
+      "name": "Crispy Taco, Super, Steak",
+      "portion": null,
+      "values": {
+        "cal": 160.0,
+        "fat": 9.0,
+        "na": 320.0,
+        "c": 8.0,
+        "f": null,
+        "p": 11.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Fiesta Softshell Taco, Chicken 250 11 3 0 40 650 22 1 2 15",
+      "name": "Fiesta Softshell Taco, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 250.0,
+        "fat": 11.0,
+        "na": 650.0,
+        "c": 22.0,
+        "f": 1.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Fiesta Softshell Taco, Chipotle Shredded Chicken (Limited Time) 300 18 5 0 75 690 20 1 1 16",
+      "name": "Fiesta Softshell Taco, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 300.0,
+        "fat": 18.0,
+        "na": 690.0,
+        "c": 20.0,
+        "f": 1.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Fiesta Softshell Taco, Steak 260 13 4 0 30 560 21 1 1 13",
+      "name": "Fiesta Softshell Taco, Steak",
+      "portion": null,
+      "values": {
+        "cal": 260.0,
+        "fat": 13.0,
+        "na": 560.0,
+        "c": 21.0,
+        "f": 1.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Chicken Taco, Chipotle Lime 300 16 4 0 35 770 27 2 2 13",
+      "name": "Crispy Chicken Taco, Chipotle Lime",
+      "portion": null,
+      "values": {
+        "cal": 300.0,
+        "fat": 16.0,
+        "na": 770.0,
+        "c": 27.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Chicken Taco, Chipotle Ranch (Limited Time) 290 14 4 0 35 770 26 2 1 13",
+      "name": "Crispy Chicken Taco, Chipotle Ranch (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 290.0,
+        "fat": 14.0,
+        "na": 770.0,
+        "c": 26.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Chicken Taco, Fiesta Sauce 290 15 4 0 35 760 26 2 1 13",
+      "name": "Crispy Chicken Taco, Fiesta Sauce",
+      "portion": null,
+      "values": {
+        "cal": 290.0,
+        "fat": 15.0,
+        "na": 760.0,
+        "c": 26.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Crispy Chicken Taco, Western Gold (Limited Time) 290 14 3.5 0 35 780 28 2 3 13",
+      "name": "Crispy Chicken Taco, Western Gold (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 290.0,
+        "fat": 14.0,
+        "na": 780.0,
+        "c": 28.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Softshell Taco, Beef 230 11 4.5 0 25 480 22 1 <1 11",
+      "name": "Softshell Taco, Beef",
+      "portion": null,
+      "values": {
+        "cal": 230.0,
+        "fat": 11.0,
+        "na": 480.0,
+        "c": 22.0,
+        "f": 1.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Softshell Taco, Chicken 210 7 2.5 0 40 570 21 1 1 14",
+      "name": "Softshell Taco, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 210.0,
+        "fat": 7.0,
+        "na": 570.0,
+        "c": 21.0,
+        "f": 1.0,
+        "p": 14.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Softshell Taco, Chipotle Shredded Chicken (Limited Time) 260 14 4.5 0 75 600 19 <1 <1 16",
+      "name": "Softshell Taco, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 260.0,
+        "fat": 14.0,
+        "na": 600.0,
+        "c": 19.0,
+        "f": null,
+        "p": 16.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Softshell Taco, Refried Beans 200 6 2.5 0 5 500 28 4 <1 8",
+      "name": "Softshell Taco, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 200.0,
+        "fat": 6.0,
+        "na": 500.0,
+        "c": 28.0,
+        "f": 4.0,
+        "p": 8.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Softshell Taco, Steak 220 9 3.5 0 30 480 21 1 <1 13",
+      "name": "Softshell Taco, Steak",
+      "portion": null,
+      "values": {
+        "cal": 220.0,
+        "fat": 9.0,
+        "na": 480.0,
+        "c": 21.0,
+        "f": 1.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 1,
+      "sourceRow": "Softshell Taco, Super, Beef 250 12 5 0 30 500 23 2 2 11",
+      "name": "Softshell Taco, Super, Beef",
+      "portion": null,
+      "values": {
+        "cal": 250.0,
+        "fat": 12.0,
+        "na": 500.0,
+        "c": 23.0,
+        "f": 2.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Softshell Taco, Super, Chicken 230 8 3.5 0 45 590 23 1 2 15",
+      "name": "Softshell Taco, Super, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 230.0,
+        "fat": 8.0,
+        "na": 590.0,
+        "c": 23.0,
+        "f": 1.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Softshell Taco, Super, Chipotle Shredded Chicken (Limited Time) 280 15 5.0 0 75 620 21 1 1 16",
+      "name": "Softshell Taco, Super, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 280.0,
+        "fat": 15.0,
+        "na": 620.0,
+        "c": 21.0,
+        "f": 1.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Softshell Taco, Super, Refried Beans 220 8 3.5 0 10 520 30 4 2 8",
+      "name": "Softshell Taco, Super, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 220.0,
+        "fat": 8.0,
+        "na": 520.0,
+        "c": 30.0,
+        "f": 4.0,
+        "p": 8.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Softshell Taco, Super, Steak 240 10 4 0 35 500 23 1 2 13",
+      "name": "Softshell Taco, Super, Steak",
+      "portion": null,
+      "values": {
+        "cal": 240.0,
+        "fat": 10.0,
+        "na": 500.0,
+        "c": 23.0,
+        "f": 1.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Stuffed Grilled Taco, Beef 540 26 9 1 40 1070 56 3 1 18",
+      "name": "Stuffed Grilled Taco, Beef",
+      "portion": null,
+      "values": {
+        "cal": 540.0,
+        "fat": 26.0,
+        "na": 1070.0,
+        "c": 56.0,
+        "f": 3.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Stuffed Grilled Taco, Chicken 570 27 8 0 55 1190 56 3 2 21",
+      "name": "Stuffed Grilled Taco, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 570.0,
+        "fat": 27.0,
+        "na": 1190.0,
+        "c": 56.0,
+        "f": 3.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Stuffed Grilled Taco, Chipotle Shredded Chicken (Limited Time) 620 34 10 0 90 1230 54 3 2 23",
+      "name": "Stuffed Grilled Taco, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 620.0,
+        "fat": 34.0,
+        "na": 1230.0,
+        "c": 54.0,
+        "f": 3.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Stuffed Grilled Taco, Refried Beans 510 21 7 0 20 1080 62 6 1 15",
+      "name": "Stuffed Grilled Taco, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 510.0,
+        "fat": 21.0,
+        "na": 1080.0,
+        "c": 62.0,
+        "f": 6.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Stuffed Grilled Taco, Steak 530 24 8 0 40 1060 55 3 2 19",
+      "name": "Stuffed Grilled Taco, Steak",
+      "portion": null,
+      "values": {
+        "cal": 530.0,
+        "fat": 24.0,
+        "na": 1060.0,
+        "c": 55.0,
+        "f": 3.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Beef 320 14 5 0 25 720 34 5 1 14",
+      "name": "Taco Bravo®, Beef",
+      "portion": null,
+      "values": {
+        "cal": 320.0,
+        "fat": 14.0,
+        "na": 720.0,
+        "c": 34.0,
+        "f": 5.0,
+        "p": 14.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Chicken 350 15 4 0 40 830 34 5 2 18",
+      "name": "Taco Bravo®, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 350.0,
+        "fat": 15.0,
+        "na": 830.0,
+        "c": 34.0,
+        "f": 5.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Chipotle Shredded Chicken (Limited Time) 400 22 6 0 75 880 33 4 1 19",
+      "name": "Taco Bravo®, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 400.0,
+        "fat": 22.0,
+        "na": 880.0,
+        "c": 33.0,
+        "f": 4.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Refried Beans 290 9 3 0 5 730 41 8 1 12",
+      "name": "Taco Bravo®, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 290.0,
+        "fat": 9.0,
+        "na": 730.0,
+        "c": 41.0,
+        "f": 8.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Steak 310 12 4 0 30 710 33 5 1 16",
+      "name": "Taco Bravo®, Steak",
+      "portion": null,
+      "values": {
+        "cal": 310.0,
+        "fat": 12.0,
+        "na": 710.0,
+        "c": 33.0,
+        "f": 5.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Super, Beef 340 15 6 0 30 740 36 5 2 15",
+      "name": "Taco Bravo®, Super, Beef",
+      "portion": null,
+      "values": {
+        "cal": 340.0,
+        "fat": 15.0,
+        "na": 740.0,
+        "c": 36.0,
+        "f": 5.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Super, Chicken 370 16 5 0 45 850 36 5 3 19",
+      "name": "Taco Bravo®, Super, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 370.0,
+        "fat": 16.0,
+        "na": 850.0,
+        "c": 36.0,
+        "f": 5.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Super, Chipotle Shredded Chicken (Limited Time) 430 23 7 0 80 900 35 5 2 20",
+      "name": "Taco Bravo®, Super, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 430.0,
+        "fat": 23.0,
+        "na": 900.0,
+        "c": 35.0,
+        "f": 5.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Super, Refried Beans 310 10 4 0 10 750 42 8 2 12",
+      "name": "Taco Bravo®, Super, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 310.0,
+        "fat": 10.0,
+        "na": 750.0,
+        "c": 42.0,
+        "f": 8.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Bravo®, Super, Steak 330 13 4.5 0 35 730 35 5 2 17",
+      "name": "Taco Bravo®, Super, Steak",
+      "portion": null,
+      "values": {
+        "cal": 330.0,
+        "fat": 13.0,
+        "na": 730.0,
+        "c": 35.0,
+        "f": 5.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Bean Burrito 410 13 5 0 15 970 56 8 1 15",
+      "name": "Bean Burrito",
+      "portion": null,
+      "values": {
+        "cal": 410.0,
+        "fat": 13.0,
+        "na": 970.0,
+        "c": 56.0,
+        "f": 8.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Beef Burrito 460 22 9 1 50 930 43 2 1 21",
+      "name": "Beef Burrito",
+      "portion": null,
+      "values": {
+        "cal": 460.0,
+        "fat": 22.0,
+        "na": 930.0,
+        "c": 43.0,
+        "f": 2.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Boss Burrito, Chicken 770 29 9 0.5 85 1850 87 6 6 37",
+      "name": "Boss Burrito, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 770.0,
+        "fat": 29.0,
+        "na": 1850.0,
+        "c": 87.0,
+        "f": 6.0,
+        "p": 37.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Boss Burrito, Chipotle Shredded Chicken (Limited Time) 880 42 13 0.5 155 1930 84 6 5 40",
+      "name": "Boss Burrito, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 880.0,
+        "fat": 42.0,
+        "na": 1930.0,
+        "c": 84.0,
+        "f": 6.0,
+        "p": 40.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Boss Burrito, Steak 790 33 10 0.5 70 1670 86 6 5 34",
+      "name": "Boss Burrito, Steak",
+      "portion": null,
+      "values": {
+        "cal": 790.0,
+        "fat": 33.0,
+        "na": 1670.0,
+        "c": 86.0,
+        "f": 6.0,
+        "p": 34.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Combination Burrito 440 17 7 0.5 30 940 49 5 1 18",
+      "name": "Combination Burrito",
+      "portion": null,
+      "values": {
+        "cal": 440.0,
+        "fat": 17.0,
+        "na": 940.0,
+        "c": 49.0,
+        "f": 5.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Grilled Burrito, Beef 710 41 13 1 65 1690 57 5 2 26",
+      "name": "Grilled Burrito, Beef",
+      "portion": null,
+      "values": {
+        "cal": 710.0,
+        "fat": 41.0,
+        "na": 1690.0,
+        "c": 57.0,
+        "f": 5.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Grilled Burrito, Chicken 670 33 10 0.5 90 1850 56 4 3 34",
+      "name": "Grilled Burrito, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 670.0,
+        "fat": 33.0,
+        "na": 1850.0,
+        "c": 56.0,
+        "f": 4.0,
+        "p": 34.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Grilled Burrito, Chipotle Shredded Chicken (Limited Time) 770 46 14 0.5 160 1940 53 4 1 36",
+      "name": "Grilled Burrito, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 770.0,
+        "fat": 46.0,
+        "na": 1940.0,
+        "c": 53.0,
+        "f": 4.0,
+        "p": 36.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Grilled Burrito, Crispy Chicken 650 35 10 0.5 55 1740 59 5 2 22",
+      "name": "Grilled Burrito, Crispy Chicken",
+      "portion": null,
+      "values": {
+        "cal": 650.0,
+        "fat": 35.0,
+        "na": 1740.0,
+        "c": 59.0,
+        "f": 5.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Grilled Burrito, Refried Beans 650 31 10 0.5 30 1710 70 10 2 20",
+      "name": "Grilled Burrito, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 650.0,
+        "fat": 31.0,
+        "na": 1710.0,
+        "c": 70.0,
+        "f": 10.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Grilled Burrito, Steak 690 37 11 0.5 75 1680 55 4 2 30",
+      "name": "Grilled Burrito, Steak",
+      "portion": null,
+      "values": {
+        "cal": 690.0,
+        "fat": 37.0,
+        "na": 1680.0,
+        "c": 55.0,
+        "f": 4.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Meat & Potato Burrito, Beef 510 25 7 0 25 1140 56 4 2 15",
+      "name": "Meat & Potato Burrito, Beef",
+      "portion": null,
+      "values": {
+        "cal": 510.0,
+        "fat": 25.0,
+        "na": 1140.0,
+        "c": 56.0,
+        "f": 4.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Meat & Potato Burrito, Chicken 490 21 6 0 40 1220 55 4 2 18",
+      "name": "Meat & Potato Burrito, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 490.0,
+        "fat": 21.0,
+        "na": 1220.0,
+        "c": 55.0,
+        "f": 4.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Meat & Potato Burrito, Chipotle Shredded Chicken (Limited Time) 550 28 8 0 75 1270 53 4 1 19",
+      "name": "Meat & Potato Burrito, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 550.0,
+        "fat": 28.0,
+        "na": 1270.0,
+        "c": 53.0,
+        "f": 4.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Meat & Potato Burrito, Crispy Chicken 530 24 6 0 35 1380 60 5 2 16",
+      "name": "Meat & Potato Burrito, Crispy Chicken",
+      "portion": null,
+      "values": {
+        "cal": 530.0,
+        "fat": 24.0,
+        "na": 1380.0,
+        "c": 60.0,
+        "f": 5.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Meat & Potato Burrito, Refried Beans 490 20 6 0 10 1150 62 7 2 12",
+      "name": "Meat & Potato Burrito, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 490.0,
+        "fat": 20.0,
+        "na": 1150.0,
+        "c": 62.0,
+        "f": 7.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Meat & Potato Burrito, Steak 500 23 6 0 30 1140 54 4 2 16",
+      "name": "Meat & Potato Burrito, Steak",
+      "portion": null,
+      "values": {
+        "cal": 500.0,
+        "fat": 23.0,
+        "na": 1140.0,
+        "c": 54.0,
+        "f": 4.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Burrito, Beef 460 19 8 0.5 35 980 52 6 2 19",
+      "name": "Super Burrito, Beef",
+      "portion": null,
+      "values": {
+        "cal": 460.0,
+        "fat": 19.0,
+        "na": 980.0,
+        "c": 52.0,
+        "f": 6.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Burrito, Chicken 440 15 6 0 50 1060 51 5 3 23",
+      "name": "Super Burrito, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 440.0,
+        "fat": 15.0,
+        "na": 1060.0,
+        "c": 51.0,
+        "f": 5.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Burrito, Chipotle Shredded Chicken (Limited Time) 490 21 8 0 85 1100 50 5 2 24",
+      "name": "Super Burrito, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 490.0,
+        "fat": 21.0,
+        "na": 1100.0,
+        "c": 50.0,
+        "f": 5.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Burrito, Crispy Chicken 480 18 7 0 45 1210 56 6 3 21",
+      "name": "Super Burrito, Crispy Chicken",
+      "portion": null,
+      "values": {
+        "cal": 480.0,
+        "fat": 18.0,
+        "na": 1210.0,
+        "c": 56.0,
+        "f": 6.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Burrito, Refried Beans 430 14 6 0 20 990 58 8 2 16",
+      "name": "Super Burrito, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 430.0,
+        "fat": 14.0,
+        "na": 990.0,
+        "c": 58.0,
+        "f": 8.0,
+        "p": 16.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Burrito, Steak 450 17 7 0 40 970 51 5 2 21",
+      "name": "Super Burrito, Steak",
+      "portion": null,
+      "values": {
+        "cal": 450.0,
+        "fat": 17.0,
+        "na": 970.0,
+        "c": 51.0,
+        "f": 5.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "4-Cheese Quesadilla, Cheese 420 21 11 0.5 45 950 39 2 1 18",
+      "name": "4-Cheese Quesadilla, Cheese",
+      "portion": null,
+      "values": {
+        "cal": 420.0,
+        "fat": 21.0,
+        "na": 950.0,
+        "c": 39.0,
+        "f": 2.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "4-Cheese Quesadilla, Chicken 530 27 12 0.5 80 1290 42 2 2 28",
+      "name": "4-Cheese Quesadilla, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 530.0,
+        "fat": 27.0,
+        "na": 1290.0,
+        "c": 42.0,
+        "f": 2.0,
+        "p": 28.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "4-Cheese Quesadilla, Steak 540 29 12 0.5 70 1210 41 2 2 26",
+      "name": "4-Cheese Quesadilla, Steak",
+      "portion": null,
+      "values": {
+        "cal": 540.0,
+        "fat": 29.0,
+        "na": 1210.0,
+        "c": 41.0,
+        "f": 2.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Boss Bowl, Chicken 650 22 7 0 90 1730 75 9 8 38",
+      "name": "Boss Bowl, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 650.0,
+        "fat": 22.0,
+        "na": 1730.0,
+        "c": 75.0,
+        "f": 9.0,
+        "p": 38.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Boss Bowl, Chipotle Shredded Chicken (Limited Time) 760 35 11 0 160 1820 72 8 7 40",
+      "name": "Boss Bowl, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 760.0,
+        "fat": 35.0,
+        "na": 1820.0,
+        "c": 72.0,
+        "f": 8.0,
+        "p": 40.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Boss Bowl, Steak 670 26 8 0 70 1560 74 9 7 34",
+      "name": "Boss Bowl, Steak",
+      "portion": null,
+      "values": {
+        "cal": 670.0,
+        "fat": 26.0,
+        "na": 1560.0,
+        "c": 74.0,
+        "f": 9.0,
+        "p": 34.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Cheesy Snack Quesadilla 230 13 6 0 30 390 19 <1 0 9",
+      "name": "Cheesy Snack Quesadilla",
+      "portion": null,
+      "values": {
+        "cal": 230.0,
+        "fat": 13.0,
+        "na": 390.0,
+        "c": 19.0,
+        "f": null,
+        "p": 9.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Chicken Snack Quesadilla 190 7 2.5 0 30 440 19 <1 <1 11",
+      "name": "Chicken Snack Quesadilla",
+      "portion": null,
+      "values": {
+        "cal": 190.0,
+        "fat": 7.0,
+        "na": 440.0,
+        "c": 19.0,
+        "f": null,
+        "p": 11.0
+      },
+      "qualifiers": {
+        "f": "<1"
+      }
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Crispy Chicken Tenders, 3 count 300 14 2 0 75 1280 20 3 1 24",
+      "name": "Crispy Chicken Tenders, 3 count",
+      "portion": null,
+      "values": {
+        "cal": 300.0,
+        "fat": 14.0,
+        "na": 1280.0,
+        "c": 20.0,
+        "f": 3.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Mexi Rolls®, 4 count 500 24 8 0.5 55 820 46 8 1 24",
+      "name": "Mexi Rolls®, 4 count",
+      "portion": null,
+      "values": {
+        "cal": 500.0,
+        "fat": 24.0,
+        "na": 820.0,
+        "c": 46.0,
+        "f": 8.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Nachos, Beef 800 46 13 0.5 50 1360 74 11 3 22",
+      "name": "Super Nachos, Beef",
+      "portion": null,
+      "values": {
+        "cal": 800.0,
+        "fat": 46.0,
+        "na": 1360.0,
+        "c": 74.0,
+        "f": 11.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Nachos, Chipotle Shredded Chicken (Limited Time) 830 49 13 0.0 95 1480 72 11 3 27",
+      "name": "Super Nachos, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 830.0,
+        "fat": 49.0,
+        "na": 1480.0,
+        "c": 72.0,
+        "f": 11.0,
+        "p": 27.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Potato Olés®, Beef 1050 68 16 1 50 2780 86 16 3 23",
+      "name": "Super Potato Olés®, Beef",
+      "portion": null,
+      "values": {
+        "cal": 1050.0,
+        "fat": 68.0,
+        "na": 2780.0,
+        "c": 86.0,
+        "f": 16.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Super Potato Olés®, Chipotle Shredded Chicken (Limited Time) 1080 71 16 0.0 95 2910 83 16 3 28",
+      "name": "Super Potato Olés®, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 1080.0,
+        "fat": 71.0,
+        "na": 2910.0,
+        "c": 83.0,
+        "f": 16.0,
+        "p": 28.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Burger, Beef 350 12 5 0 35 710 45 3 8 17",
+      "name": "Taco Burger, Beef",
+      "portion": null,
+      "values": {
+        "cal": 350.0,
+        "fat": 12.0,
+        "na": 710.0,
+        "c": 45.0,
+        "f": 3.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Burger, Chicken 300 6 3 0 45 720 43 3 8 19",
+      "name": "Taco Burger, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 300.0,
+        "fat": 6.0,
+        "na": 720.0,
+        "c": 43.0,
+        "f": 3.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Burger, Chipotle Shredded Chicken (Limited Time) 350 12 5 0 80 770 42 3 7 20",
+      "name": "Taco Burger, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 350.0,
+        "fat": 12.0,
+        "na": 770.0,
+        "c": 42.0,
+        "f": 3.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 2,
+      "sourceRow": "Taco Burger, Refried Beans 290 5 3 0 10 650 50 6 7 12",
+      "name": "Taco Burger, Refried Beans",
+      "portion": null,
+      "values": {
+        "cal": 290.0,
+        "fat": 5.0,
+        "na": 650.0,
+        "c": 50.0,
+        "f": 6.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Taco Burger, Steak 310 8 4 0 35 640 43 3 8 17",
+      "name": "Taco Burger, Steak",
+      "portion": null,
+      "values": {
+        "cal": 310.0,
+        "fat": 8.0,
+        "na": 640.0,
+        "c": 43.0,
+        "f": 3.0,
+        "p": 17.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Taco Salad, Beef 840 62 16 2 70 1390 46 5 7 25",
+      "name": "Taco Salad, Beef",
+      "portion": null,
+      "values": {
+        "cal": 840.0,
+        "fat": 62.0,
+        "na": 1390.0,
+        "c": 46.0,
+        "f": 5.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Taco Salad, Chicken 800 54 13 1 95 1550 45 5 8 32",
+      "name": "Taco Salad, Chicken",
+      "portion": null,
+      "values": {
+        "cal": 800.0,
+        "fat": 54.0,
+        "na": 1550.0,
+        "c": 45.0,
+        "f": 5.0,
+        "p": 32.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Taco Salad, Chipotle Shredded Chicken (Limited Time) 900 67 17 1 165 1630 42 4 7 35",
+      "name": "Taco Salad, Chipotle Shredded Chicken (Limited Time)",
+      "portion": null,
+      "values": {
+        "cal": 900.0,
+        "fat": 67.0,
+        "na": 1630.0,
+        "c": 42.0,
+        "f": 4.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Taco Salad, Steak 820 58 14 1 75 1370 44 4 7 29",
+      "name": "Taco Salad, Steak",
+      "portion": null,
+      "values": {
+        "cal": 820.0,
+        "fat": 58.0,
+        "na": 1370.0,
+        "c": 44.0,
+        "f": 4.0,
+        "p": 29.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Breakfast Taco, Bacon ★ 340 19 6 0 145 800 28 2 0 12",
+      "name": "Breakfast Taco, Bacon ★",
+      "portion": null,
+      "values": {
+        "cal": 340.0,
+        "fat": 19.0,
+        "na": 800.0,
+        "c": 28.0,
+        "f": 2.0,
+        "p": 12.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Breakfast Taco, Sausage ★ 380 22 7 0 150 860 29 2 <1 13",
+      "name": "Breakfast Taco, Sausage ★",
+      "portion": null,
+      "values": {
+        "cal": 380.0,
+        "fat": 22.0,
+        "na": 860.0,
+        "c": 29.0,
+        "f": 2.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Breakfast Taco, Steak ★ 340 18 5 0 145 770 29 2 0 14",
+      "name": "Breakfast Taco, Steak ★",
+      "portion": null,
+      "values": {
+        "cal": 340.0,
+        "fat": 18.0,
+        "na": 770.0,
+        "c": 29.0,
+        "f": 2.0,
+        "p": 14.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Nacho Crunch Beef Burrito 320 15 5 0 20 750 34 2 <1 11",
+      "name": "Nacho Crunch Beef Burrito",
+      "portion": null,
+      "values": {
+        "cal": 320.0,
+        "fat": 15.0,
+        "na": 750.0,
+        "c": 34.0,
+        "f": 2.0,
+        "p": 11.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Nacho Crunch Chicken Burrito 350 17 4 0 40 860 34 2 1 15",
+      "name": "Nacho Crunch Chicken Burrito",
+      "portion": null,
+      "values": {
+        "cal": 350.0,
+        "fat": 17.0,
+        "na": 860.0,
+        "c": 34.0,
+        "f": 2.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Spicy Chicken & Potato Griller 390 19 4 0 35 960 37 3 2 15",
+      "name": "Spicy Chicken & Potato Griller",
+      "portion": null,
+      "values": {
+        "cal": 390.0,
+        "fat": 19.0,
+        "na": 960.0,
+        "c": 37.0,
+        "f": 3.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Spicy Steak & Potato Griller 400 21 5 0 25 880 37 3 1 13",
+      "name": "Spicy Steak & Potato Griller",
+      "portion": null,
+      "values": {
+        "cal": 400.0,
+        "fat": 21.0,
+        "na": 880.0,
+        "c": 37.0,
+        "f": 3.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Meat & Potato Breakfast Burrito, Bacon 530 27 7 0 190 1310 51 4 <1 18",
+      "name": "Meat & Potato Breakfast Burrito, Bacon",
+      "portion": null,
+      "values": {
+        "cal": 530.0,
+        "fat": 27.0,
+        "na": 1310.0,
+        "c": 51.0,
+        "f": 4.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Meat & Potato Breakfast Burrito, Sausage 610 34 10 0 200 1440 53 4 <1 20",
+      "name": "Meat & Potato Breakfast Burrito, Sausage",
+      "portion": null,
+      "values": {
+        "cal": 610.0,
+        "fat": 34.0,
+        "na": 1440.0,
+        "c": 53.0,
+        "f": 4.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Meat & Potato Breakfast Burrito, Steak 540 26 7 0 195 1260 52 4 <1 21",
+      "name": "Meat & Potato Breakfast Burrito, Steak",
+      "portion": null,
+      "values": {
+        "cal": 540.0,
+        "fat": 26.0,
+        "na": 1260.0,
+        "c": 52.0,
+        "f": 4.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 3,
+      "sourceRow": "Potato Olés® Scrambler, Bacon 980 66 15 0 205 2760 72 12 2 23",
+      "name": "Potato Olés® Scrambler, Bacon",
+      "portion": null,
+      "values": {
+        "cal": 980.0,
+        "fat": 66.0,
+        "na": 2760.0,
+        "c": 72.0,
+        "f": 12.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 4,
+      "sourceRow": "Potato Olés® Scrambler, Sausage 1060 74 18 0 220 2890 73 12 3 25",
+      "name": "Potato Olés® Scrambler, Sausage",
+      "portion": null,
+      "values": {
+        "cal": 1060.0,
+        "fat": 74.0,
+        "na": 2890.0,
+        "c": 73.0,
+        "f": 12.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 4,
+      "sourceRow": "Potato Olés® Scrambler, Steak 990 65 14 0 215 2710 73 12 2 26",
+      "name": "Potato Olés® Scrambler, Steak",
+      "portion": null,
+      "values": {
+        "cal": 990.0,
+        "fat": 65.0,
+        "na": 2710.0,
+        "c": 73.0,
+        "f": 12.0,
+        "p": 26.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 4,
+      "sourceRow": "Scrambler Breakfast Burrito, Bacon 540 27 7 0 190 1410 53 4 2 18",
+      "name": "Scrambler Breakfast Burrito, Bacon",
+      "portion": null,
+      "values": {
+        "cal": 540.0,
+        "fat": 27.0,
+        "na": 1410.0,
+        "c": 53.0,
+        "f": 4.0,
+        "p": 18.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 4,
+      "sourceRow": "Scrambler Breakfast Burrito, Sausage 620 35 10 0 200 1530 54 4 2 20",
+      "name": "Scrambler Breakfast Burrito, Sausage",
+      "portion": null,
+      "values": {
+        "cal": 620.0,
+        "fat": 35.0,
+        "na": 1530.0,
+        "c": 54.0,
+        "f": 4.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 4,
+      "sourceRow": "Scrambler Breakfast Burrito, Steak 550 26 7 0 195 1360 54 4 2 22",
+      "name": "Scrambler Breakfast Burrito, Steak",
+      "portion": null,
+      "values": {
+        "cal": 550.0,
+        "fat": 26.0,
+        "na": 1360.0,
+        "c": 54.0,
+        "f": 4.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "taco-johns",
+      "page": 4,
+      "sourceRow": "Spicy Chorizo Breakfast Burrito 490 26 9 0 200 1360 42 2 1 19",
+      "name": "Spicy Chorizo Breakfast Burrito",
+      "portion": null,
+      "values": {
+        "cal": 490.0,
+        "fat": 26.0,
+        "na": 1360.0,
+        "c": 42.0,
+        "f": 2.0,
+        "p": 19.0
+      },
+      "qualifiers": {}
+    }
+  ],
+  "qdoba": [
+    {
+      "sourceId": "qdoba",
+      "page": 1,
+      "sourceRow": "Chicken Queso Bowl M 468 750 290 33 15 0.5 140 74 16 4 43 1820 1040",
+      "name": "Chicken Queso Bowl",
+      "portion": "468",
+      "values": {
+        "cal": 750.0,
+        "fat": 33.0,
+        "c": 74.0,
+        "f": 16.0,
+        "p": 43.0,
+        "na": 1820.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 1,
+      "sourceRow": "Chicken Queso Burrito MWG 569 1050 350 40 17 0.5 140 126 19 6 51 2580 1090",
+      "name": "Chicken Queso Burrito",
+      "portion": "569",
+      "values": {
+        "cal": 1050.0,
+        "fat": 40.0,
+        "c": 126.0,
+        "f": 19.0,
+        "p": 51.0,
+        "na": 2580.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 1,
+      "sourceRow": "Cholula® Hot & Sweet Chicken Bowl M 418 610 180 20 8 0 95 77 15 10 31 1500 940",
+      "name": "Cholula® Hot & Sweet Chicken Bowl",
+      "portion": "418",
+      "values": {
+        "cal": 610.0,
+        "fat": 20.0,
+        "c": 77.0,
+        "f": 15.0,
+        "p": 31.0,
+        "na": 1500.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 1,
+      "sourceRow": "Cholula® Hot & Sweet Chicken Burrito MWG 520 910 250 27 10 0 95 130 19 12 39 2260 1000",
+      "name": "Cholula® Hot & Sweet Chicken Burrito",
+      "portion": "520",
+      "values": {
+        "cal": 910.0,
+        "fat": 27.0,
+        "c": 130.0,
+        "f": 19.0,
+        "p": 39.0,
+        "na": 2260.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 1,
+      "sourceRow": "Citrus Lime Chicken Salad - 421 540 230 26 4.5 0 90 49 16 11 31 1210 1130",
+      "name": "Citrus Lime Chicken Salad",
+      "portion": "421",
+      "values": {
+        "cal": 540.0,
+        "fat": 26.0,
+        "c": 49.0,
+        "f": 16.0,
+        "p": 31.0,
+        "na": 1210.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 1,
+      "sourceRow": "Double Protein Bowl - Steak - 553 1040 640 72 12 2.5 165 47 20 9 52 2250 1610",
+      "name": "Double Protein Bowl - Steak",
+      "portion": "553",
+      "values": {
+        "cal": 1040.0,
+        "fat": 72.0,
+        "c": 47.0,
+        "f": 20.0,
+        "p": 52.0,
+        "na": 2250.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Fajita Vegan Bowl - 482 530 150 17 2.5 0 0 79 22 7 17 1380 1130",
+      "name": "Fajita Vegan Bowl",
+      "portion": "482",
+      "values": {
+        "cal": 530.0,
+        "fat": 17.0,
+        "c": 79.0,
+        "f": 22.0,
+        "p": 17.0,
+        "na": 1380.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Impossible™ Taco Salad *select locations only* SM 400 520 210 23 10 0 30 46 18 4 31 1200 1370",
+      "name": "Impossible™ Taco Salad *select locations only*",
+      "portion": "400",
+      "values": {
+        "cal": 520.0,
+        "fat": 23.0,
+        "c": 46.0,
+        "f": 18.0,
+        "p": 31.0,
+        "na": 1200.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Keto Bowl - Brisket Birria M 340 370 220 25 9 0.5 80 13 7 4 25 1140 910",
+      "name": "Keto Bowl - Brisket Birria",
+      "portion": "340",
+      "values": {
+        "cal": 370.0,
+        "fat": 25.0,
+        "c": 13.0,
+        "f": 7.0,
+        "p": 25.0,
+        "na": 1140.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Keto Bowl - Chicken M 340 400 230 26 9 0 155 11 7 3 33 990 1070",
+      "name": "Keto Bowl - Chicken",
+      "portion": "340",
+      "values": {
+        "cal": 400.0,
+        "fat": 26.0,
+        "c": 11.0,
+        "f": 7.0,
+        "p": 33.0,
+        "na": 990.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Keto Bowl - Steak M 340 490 340 38 14 0 100 13 7 4 25 940 890",
+      "name": "Keto Bowl - Steak",
+      "portion": "340",
+      "values": {
+        "cal": 490.0,
+        "fat": 38.0,
+        "c": 13.0,
+        "f": 7.0,
+        "p": 25.0,
+        "na": 940.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Southwest Steak Burrito EWG 498 1220 520 58 16 1.5 90 134 19 6 43 2480 900",
+      "name": "Southwest Steak Burrito",
+      "portion": "498",
+      "values": {
+        "cal": 1220.0,
+        "fat": 58.0,
+        "c": 134.0,
+        "f": 19.0,
+        "p": 43.0,
+        "na": 2480.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Street Style Chicken Tacos (3) Flour MWG 311 550 260 28 8 0 100 46 8 6 29 1690 850",
+      "name": "Street Style Chicken Tacos (3) Flour",
+      "portion": "311",
+      "values": {
+        "cal": 550.0,
+        "fat": 28.0,
+        "c": 46.0,
+        "f": 8.0,
+        "p": 29.0,
+        "na": 1690.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "qdoba",
+      "page": 2,
+      "sourceRow": "Street Style Pork Carnitas Tacos (3) Flour MWG 238 370 120 13 6 0 55 38 4 3 23 1500 190",
+      "name": "Street Style Pork Carnitas Tacos (3) Flour",
+      "portion": "238",
+      "values": {
+        "cal": 370.0,
+        "fat": 13.0,
+        "c": 38.0,
+        "f": 4.0,
+        "p": 23.0,
+        "na": 1500.0
+      },
+      "qualifiers": {}
+    }
+  ],
+  "el-pollo-loco": [
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Red Chile Cheesy Enchilada Double Chicken Bowl 28.9 1090 400 44 19 1 275 3560 94 13 8 81",
+      "name": "Red Chile Cheesy Enchilada Double Chicken Bowl",
+      "portion": "28.9",
+      "values": {
+        "cal": 1090.0,
+        "fat": 44.0,
+        "na": 3560.0,
+        "c": 94.0,
+        "f": 13.0,
+        "p": 81.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Green Chile Cheesy Enchilada Double Chicken Bowl 28.9 1100 400 45 19 1 275 3530 93 12 8 81",
+      "name": "Green Chile Cheesy Enchilada Double Chicken Bowl",
+      "portion": "28.9",
+      "values": {
+        "cal": 1100.0,
+        "fat": 45.0,
+        "na": 3530.0,
+        "c": 93.0,
+        "f": 12.0,
+        "p": 81.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Red & Green Chile Cheesy Enchilada Double Chicken Bowl 28.9 1090 400 44 19 1 275 3540 94 12 8 81",
+      "name": "Red & Green Chile Cheesy Enchilada Double Chicken Bowl",
+      "portion": "28.9",
+      "values": {
+        "cal": 1090.0,
+        "fat": 44.0,
+        "na": 3540.0,
+        "c": 94.0,
+        "f": 12.0,
+        "p": 81.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Red Chile Chicken Tamale (1) 4.0 230 130 14 2 0 35 650 18 2 1 9",
+      "name": "Red Chile Chicken Tamale (1)",
+      "portion": "4.0",
+      "values": {
+        "cal": 230.0,
+        "fat": 14.0,
+        "na": 650.0,
+        "c": 18.0,
+        "f": 2.0,
+        "p": 9.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Double Chicken Bowl 24.2 930 290 33 13 0.5 250 2670 87 11 5 74",
+      "name": "Double Chicken Bowl",
+      "portion": "24.2",
+      "values": {
+        "cal": 930.0,
+        "fat": 33.0,
+        "na": 2670.0,
+        "c": 87.0,
+        "f": 11.0,
+        "p": 74.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Mexican Caesar Salad* 13.4 420 160 17 4.5 0 165 1530 18 5 4 52",
+      "name": "Mexican Caesar Salad*",
+      "portion": "13.4",
+      "values": {
+        "cal": 420.0,
+        "fat": 17.0,
+        "na": 1530.0,
+        "c": 18.0,
+        "f": 5.0,
+        "p": 52.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Original Pollo Bowl® 18.2 580 90 10 2.5 0 105 2030 83 9 3 41",
+      "name": "Original Pollo Bowl®",
+      "portion": "18.2",
+      "values": {
+        "cal": 580.0,
+        "fat": 10.0,
+        "na": 2030.0,
+        "c": 83.0,
+        "f": 9.0,
+        "p": 41.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Guacamole Chicken Burrito 15.9 920 430 48 15 1 205 1980 65 9 3 59",
+      "name": "Guacamole Chicken Burrito",
+      "portion": "15.9",
+      "values": {
+        "cal": 920.0,
+        "fat": 48.0,
+        "na": 1980.0,
+        "c": 65.0,
+        "f": 9.0,
+        "p": 59.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "2 pc Breast & Wing Meal w/Corn Tortillas Pinto Beans & Rice 17.9 660 120 14 4 0 175 2070 77 8 2 58",
+      "name": "2 pc Breast & Wing Meal w/Corn Tortillas Pinto Beans & Rice",
+      "portion": "17.9",
+      "values": {
+        "cal": 660.0,
+        "fat": 14.0,
+        "na": 2070.0,
+        "c": 77.0,
+        "f": 8.0,
+        "p": 58.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "2 pc Breast & Wing Meal w/Flour Tortillas Pinto Beans & Rice 18.1 740 160 18 5 0 175 2490 85 8 2 59",
+      "name": "2 pc Breast & Wing Meal w/Flour Tortillas Pinto Beans & Rice",
+      "portion": "18.1",
+      "values": {
+        "cal": 740.0,
+        "fat": 18.0,
+        "na": 2490.0,
+        "c": 85.0,
+        "f": 8.0,
+        "p": 59.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Classic Chicken Tostada* 17.4 820 340 38 11 0 105 1430 80 6 6 42",
+      "name": "Classic Chicken Tostada*",
+      "portion": "17.4",
+      "values": {
+        "cal": 820.0,
+        "fat": 38.0,
+        "na": 1430.0,
+        "c": 80.0,
+        "f": 6.0,
+        "p": 42.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Double Chicken Tostada* 21.2 990 400 45 13 0 185 1740 82 8 6 65",
+      "name": "Double Chicken Tostada*",
+      "portion": "21.2",
+      "values": {
+        "cal": 990.0,
+        "fat": 45.0,
+        "na": 1740.0,
+        "c": 82.0,
+        "f": 8.0,
+        "p": 65.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Street Corn Salad* 14.3 390 130 14 4.5 0 165 1600 17 5 5 52",
+      "name": "Street Corn Salad*",
+      "portion": "14.3",
+      "values": {
+        "cal": 390.0,
+        "fat": 14.0,
+        "na": 1600.0,
+        "c": 17.0,
+        "f": 5.0,
+        "p": 52.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Mexican Caesar Salad* 13.4 420 160 17 4.5 0 165 1530 18 5 4 52",
+      "name": "Mexican Caesar Salad*",
+      "portion": "13.4",
+      "values": {
+        "cal": 420.0,
+        "fat": 17.0,
+        "na": 1530.0,
+        "c": 18.0,
+        "f": 5.0,
+        "p": 52.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Original Pollo Bowl® 18.2 580 90 10 2.5 0 105 2030 83 9 3 41",
+      "name": "Original Pollo Bowl®",
+      "portion": "18.2",
+      "values": {
+        "cal": 580.0,
+        "fat": 10.0,
+        "na": 2030.0,
+        "c": 83.0,
+        "f": 9.0,
+        "p": 41.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Double Chicken Bowl 24.2 930 290 33 13 0.5 250 2670 87 11 5 74",
+      "name": "Double Chicken Bowl",
+      "portion": "24.2",
+      "values": {
+        "cal": 930.0,
+        "fat": 33.0,
+        "na": 2670.0,
+        "c": 87.0,
+        "f": 11.0,
+        "p": 74.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Grande Avocado Chicken Bowl 22.2 790 240 26 11 0 145 2270 90 11 6 49",
+      "name": "Grande Avocado Chicken Bowl",
+      "portion": "22.2",
+      "values": {
+        "cal": 790.0,
+        "fat": 26.0,
+        "na": 2270.0,
+        "c": 90.0,
+        "f": 11.0,
+        "p": 49.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Queso Crunch Double Chicken Burrito Bowl 25.8 1080 390 43 17 0.5 265 3180 96 12 5 78",
+      "name": "Queso Crunch Double Chicken Burrito Bowl",
+      "portion": "25.8",
+      "values": {
+        "cal": 1080.0,
+        "fat": 43.0,
+        "na": 3180.0,
+        "c": 96.0,
+        "f": 12.0,
+        "p": 78.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Street Corn Double Chicken Burrito Bowl 25.8 1080 420 46 14 0.5 255 3230 95 12 6 75",
+      "name": "Street Corn Double Chicken Burrito Bowl",
+      "portion": "25.8",
+      "values": {
+        "cal": 1080.0,
+        "fat": 46.0,
+        "na": 3230.0,
+        "c": 95.0,
+        "f": 12.0,
+        "p": 75.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Taco al Carbón 3.2 170 40 5 1.5 0 60 250 17 2 0 15",
+      "name": "Taco al Carbón",
+      "portion": "3.2",
+      "values": {
+        "cal": 170.0,
+        "fat": 5.0,
+        "na": 250.0,
+        "c": 17.0,
+        "f": 2.0,
+        "p": 15.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Chicken Avocado Taco 6.3 330 170 19 6 0 90 780 17 2 2 24",
+      "name": "Chicken Avocado Taco",
+      "portion": "6.3",
+      "values": {
+        "cal": 330.0,
+        "fat": 19.0,
+        "na": 780.0,
+        "c": 17.0,
+        "f": 2.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Shredded Chicken Crunchy Taco 4.2 210 80 8 3.5 0 45 420 22 3 2 14",
+      "name": "Shredded Chicken Crunchy Taco",
+      "portion": "4.2",
+      "values": {
+        "cal": 210.0,
+        "fat": 8.0,
+        "na": 420.0,
+        "c": 22.0,
+        "f": 3.0,
+        "p": 14.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Guacamole Chicken Burrito 15.9 920 430 48 15 1 205 1980 65 9 3 59",
+      "name": "Guacamole Chicken Burrito",
+      "portion": "15.9",
+      "values": {
+        "cal": 920.0,
+        "fat": 48.0,
+        "na": 1980.0,
+        "c": 65.0,
+        "f": 9.0,
+        "p": 59.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Chipotle Guacamole Chicken Burrito 17.3 1010 450 50 16 1 210 2340 81 8 3 60",
+      "name": "Chipotle Guacamole Chicken Burrito",
+      "portion": "17.3",
+      "values": {
+        "cal": 1010.0,
+        "fat": 50.0,
+        "na": 2340.0,
+        "c": 81.0,
+        "f": 8.0,
+        "p": 60.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Queso Guacamole Chicken Burrito 18.7 780 270 30 11 0.5 110 2440 88 9 6 40",
+      "name": "Queso Guacamole Chicken Burrito",
+      "portion": "18.7",
+      "values": {
+        "cal": 780.0,
+        "fat": 30.0,
+        "na": 2440.0,
+        "c": 88.0,
+        "f": 9.0,
+        "p": 40.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Chipotle Chicken Quesadilla 11.6 930 510 57 24 1.5 165 1720 53 4 2 51",
+      "name": "Chipotle Chicken Quesadilla",
+      "portion": "11.6",
+      "values": {
+        "cal": 930.0,
+        "fat": 57.0,
+        "na": 1720.0,
+        "c": 53.0,
+        "f": 4.0,
+        "p": 51.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Salsa Verde Chicken Quesadilla 11.6 810 390 44 22 1 155 1570 53 4 2 51",
+      "name": "Salsa Verde Chicken Quesadilla",
+      "portion": "11.6",
+      "values": {
+        "cal": 810.0,
+        "fat": 44.0,
+        "na": 1570.0,
+        "c": 53.0,
+        "f": 4.0,
+        "p": 51.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Shredded Chicken Nachos 17.0 940 470 52 16 1 110 1890 86 14 6 33",
+      "name": "Shredded Chicken Nachos",
+      "portion": "17.0",
+      "values": {
+        "cal": 940.0,
+        "fat": 52.0,
+        "na": 1890.0,
+        "c": 86.0,
+        "f": 14.0,
+        "p": 33.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Chicken Tortilla Soup 13.7 240 80 9 2 0 75 1260 19 3 3 23",
+      "name": "Chicken Tortilla Soup",
+      "portion": "13.7",
+      "values": {
+        "cal": 240.0,
+        "fat": 9.0,
+        "na": 1260.0,
+        "c": 19.0,
+        "f": 3.0,
+        "p": 23.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Original BRC Burrito® 7.6 410 100 11 4.5 0 15 1020 63 4 1 13",
+      "name": "Original BRC Burrito®",
+      "portion": "7.6",
+      "values": {
+        "cal": 410.0,
+        "fat": 11.0,
+        "na": 1020.0,
+        "c": 63.0,
+        "f": 4.0,
+        "p": 13.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Classic Chicken Burrito 10.4 480 120 13 5 0 55 1450 66 5 2 25",
+      "name": "Classic Chicken Burrito",
+      "portion": "10.4",
+      "values": {
+        "cal": 480.0,
+        "fat": 13.0,
+        "na": 1450.0,
+        "c": 66.0,
+        "f": 5.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "el-pollo-loco",
+      "page": 1,
+      "sourceRow": "Cheese Quesadilla 5.5 530 270 30 18 1 75 950 37 1 1 25",
+      "name": "Cheese Quesadilla",
+      "portion": "5.5",
+      "values": {
+        "cal": 530.0,
+        "fat": 30.0,
+        "na": 950.0,
+        "c": 37.0,
+        "f": 1.0,
+        "p": 25.0
+      },
+      "qualifiers": {}
+    }
+  ],
+  "noodles": [
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Roasted Garlic Cream Tortelloni 770 380 346 173 38 19 19 10 0.5 0 140 70 2400 1200 72 36 67 34 5 3 7 4 36 18",
+      "name": "Roasted Garlic Cream Tortelloni",
+      "portion": null,
+      "values": {
+        "cal": 770.0,
+        "fat": 38.0,
+        "na": 2400.0,
+        "c": 72.0,
+        "f": 5.0,
+        "p": 36.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Basil Pesto Cavatappi 860 430 366 183 41 20 13 7 0.5 0 55 25 1140 570 103 51 93 46 10 5 8 4 24 12",
+      "name": "Basil Pesto Cavatappi",
+      "portion": null,
+      "values": {
+        "cal": 860.0,
+        "fat": 41.0,
+        "na": 1140.0,
+        "c": 103.0,
+        "f": 10.0,
+        "p": 24.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Pad Thai 1040 520 380 190 42 21 8 4 0 0 340 170 2020 1010 143 72 139 70 4 2 44 22 20 10",
+      "name": "Pad Thai",
+      "portion": null,
+      "values": {
+        "cal": 1040.0,
+        "fat": 42.0,
+        "na": 2020.0,
+        "c": 143.0,
+        "f": 4.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Buttery Parmesan Noodles 760 370 301 150 34 17 14 7 1 0 210 105 330 160 98 49 94 47 4 2 6 3 22 11",
+      "name": "Buttery Parmesan Noodles",
+      "portion": null,
+      "values": {
+        "cal": 760.0,
+        "fat": 34.0,
+        "na": 330.0,
+        "c": 98.0,
+        "f": 4.0,
+        "p": 22.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Japanese Pan Noodles 640 320 110 50 12 6 4 2 0 0 0 0 2010 1000 114 57 109 55 5 2 22 11 20 10",
+      "name": "Japanese Pan Noodles",
+      "portion": null,
+      "values": {
+        "cal": 640.0,
+        "fat": 12.0,
+        "na": 2010.0,
+        "c": 114.0,
+        "f": 5.0,
+        "p": 20.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Pasta Fresca 660 330 180 90 20 10 4 2 0 0 5 5 1240 620 103 52 93 47 10 5 10 5 21 10",
+      "name": "Pasta Fresca",
+      "portion": null,
+      "values": {
+        "cal": 660.0,
+        "fat": 20.0,
+        "na": 1240.0,
+        "c": 103.0,
+        "f": 10.0,
+        "p": 21.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Steak Stroganoff 1220 680 612 339 68 38 27 15 1.5 0.5 275 160 1610 1000 118 60 110 56 7 4 13 7 44 29",
+      "name": "Steak Stroganoff",
+      "portion": null,
+      "values": {
+        "cal": 1220.0,
+        "fat": 68.0,
+        "na": 1610.0,
+        "c": 118.0,
+        "f": 7.0,
+        "p": 44.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Rigatoni Rosa with Parmesan Chicken 890 540 272 172 30 19 10 6 0.5 0 90 70 1640 1280 113 60 99 53 13 7 12 6 45 34",
+      "name": "Rigatoni Rosa with Parmesan Chicken",
+      "portion": null,
+      "values": {
+        "cal": 890.0,
+        "fat": 30.0,
+        "na": 1640.0,
+        "c": 113.0,
+        "f": 13.0,
+        "p": 45.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Crispy Chicken Bacon Alfredo 1150 680 532 311 59 35 30 16 0 0 220 135 1840 1380 105 57 95 51 10 5 7 4 50 36",
+      "name": "Crispy Chicken Bacon Alfredo",
+      "portion": null,
+      "values": {
+        "cal": 1150.0,
+        "fat": 59.0,
+        "na": 1840.0,
+        "c": 105.0,
+        "f": 10.0,
+        "p": 50.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Spicy Korean Steak Noodles 960 550 221 143 25 16 4 3 0 0 40 40 3400 1890 150 76 144 73 3 1 43 22 31 23",
+      "name": "Spicy Korean Steak Noodles",
+      "portion": null,
+      "values": {
+        "cal": 960.0,
+        "fat": 25.0,
+        "na": 3400.0,
+        "c": 150.0,
+        "f": 3.0,
+        "p": 31.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Chicken Parmesan 940 292 32 12 1 90 1840 115 107 8 15 51",
+      "name": "Chicken Parmesan",
+      "portion": null,
+      "values": {
+        "cal": 940.0,
+        "fat": 32.0,
+        "na": 1840.0,
+        "c": 115.0,
+        "f": 8.0,
+        "p": 51.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Spaghetti & Meatballs 980 670 430 350 48 39 18 16 3 2.5 90 85 1580 1180 102 53 98 51 4 2 16 8 35 25",
+      "name": "Spaghetti & Meatballs",
+      "portion": null,
+      "values": {
+        "cal": 980.0,
+        "fat": 48.0,
+        "na": 1580.0,
+        "c": 102.0,
+        "f": 4.0,
+        "p": 35.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Lemon Garlic Shrimp Scampi 1070 560 539 272 60 30 27 13 1 0.5 215 155 1400 860 104 52 93 46 11 5 8 4 33 21",
+      "name": "Lemon Garlic Shrimp Scampi",
+      "portion": null,
+      "values": {
+        "cal": 1070.0,
+        "fat": 60.0,
+        "na": 1400.0,
+        "c": 104.0,
+        "f": 11.0,
+        "p": 33.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Cajun Shrimp Fettuccine 1050 550 515 269 57 30 28 14 0 0 255 175 1770 1200 98 49 90 45 8 4 9 4 36 23",
+      "name": "Cajun Shrimp Fettuccine",
+      "portion": null,
+      "values": {
+        "cal": 1050.0,
+        "fat": 57.0,
+        "na": 1770.0,
+        "c": 98.0,
+        "f": 8.0,
+        "p": 36.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Chipotle Chicken Cavatappi 1170 670 520 288 58 32 29 15 0 0 260 185 1870 1210 108 54 101 51 7 4 13 6 53 40",
+      "name": "Chipotle Chicken Cavatappi",
+      "portion": null,
+      "values": {
+        "cal": 1170.0,
+        "fat": 58.0,
+        "na": 1870.0,
+        "c": 108.0,
+        "f": 7.0,
+        "p": 53.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Creamy Cheddar Mac 1050 520 389 195 43 22 23 11 1.5 0.5 115 55 1910 950 120 60 115 57 5 3 10 5 46 23",
+      "name": "Creamy Cheddar Mac",
+      "portion": null,
+      "values": {
+        "cal": 1050.0,
+        "fat": 43.0,
+        "na": 1910.0,
+        "c": 120.0,
+        "f": 5.0,
+        "p": 46.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Buffalo Chicken Ranch Mac 1380 790 545 292 61 32 24 13 1.5 0.5 215 160 3450 2000 128 64 121 61 6 3 12 6 70 49",
+      "name": "Buffalo Chicken Ranch Mac",
+      "portion": null,
+      "values": {
+        "cal": 1380.0,
+        "fat": 61.0,
+        "na": 3450.0,
+        "c": 128.0,
+        "f": 6.0,
+        "p": 70.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Pulled Pork BBQ Mac 1240 690 439 241 49 27 22 12 1 0.5 165 115 2580 1530 137 69 131 66 6 3 21 11 63 41",
+      "name": "Pulled Pork BBQ Mac",
+      "portion": null,
+      "values": {
+        "cal": 1240.0,
+        "fat": 49.0,
+        "na": 2580.0,
+        "c": 137.0,
+        "f": 6.0,
+        "p": 63.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Garlic Bacon Crunch Mac 1290 640 564 282 63 31 28 14 1.5 0.5 140 70 2310 1160 128 64 122 61 6 3 10 5 55 28",
+      "name": "Garlic Bacon Crunch Mac",
+      "portion": null,
+      "values": {
+        "cal": 1290.0,
+        "fat": 63.0,
+        "na": 2310.0,
+        "c": 128.0,
+        "f": 6.0,
+        "p": 55.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Chicken Caesar Salad w 670 444 49 12 0.5 150 1510 18 15 3 5 42",
+      "name": "Chicken Caesar Salad w",
+      "portion": null,
+      "values": {
+        "cal": 670.0,
+        "fat": 49.0,
+        "na": 1510.0,
+        "c": 18.0,
+        "f": 3.0,
+        "p": 42.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Mediterranean Chicken Salad 430 153 17 6 0 125 1700 34 31 3 7 36",
+      "name": "Mediterranean Chicken Salad",
+      "portion": null,
+      "values": {
+        "cal": 430.0,
+        "fat": 17.0,
+        "na": 1700.0,
+        "c": 34.0,
+        "f": 3.0,
+        "p": 36.0
+      },
+      "qualifiers": {}
+    },
+    {
+      "sourceId": "noodles",
+      "page": 1,
+      "sourceRow": "Chicken Noodle Soup w 360 90 10 2.5 0 140 2320 41 39 2 9 30",
+      "name": "Chicken Noodle Soup w",
+      "portion": null,
+      "values": {
+        "cal": 360.0,
+        "fat": 10.0,
+        "na": 2320.0,
+        "c": 41.0,
+        "f": 2.0,
+        "p": 30.0
+      },
+      "qualifiers": {}
+    }
+  ]
+}

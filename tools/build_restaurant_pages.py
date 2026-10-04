@@ -204,14 +204,8 @@ CHAIN_CONFIG = {
 
 
 def parse_meals() -> list[dict]:
-    src = DATA.read_text(encoding="utf-8")
-    meals = []
-    for raw in re.findall(r"\{chain:.*?\}(?=,\n|\n\];|\n\])", src, re.S):
-        obj = re.sub(r"(\{|,)\s*([a-zA-Z_]\w*)\s*:", r'\1"\2":', raw)
-        obj = re.sub(r"'((?:[^'\\]|\\.)*)'",
-                     lambda m: json.dumps(m.group(1).replace("\\'", "'")), obj)
-        meals.append(json.loads(obj))
-    return meals
+    from build_meal_finder import parse_meals as parse_source
+    return parse_source(DATA.read_text(encoding="utf-8"))
 
 
 def item_type(meal: dict) -> str:

@@ -7,8 +7,9 @@ get bumped for three commits of CSS work, so every browser and CDN that already
 held `css/theme-fix.css?v=20260828g` kept serving the old file: the site was
 deployed and correct, and looked completely unchanged on a phone.
 
-A stamp taken from the file's own bytes cannot go stale. It changes exactly when
-the file changes, and stays put when it does not, so an unchanged asset keeps
+A stamp taken from the asset's content cannot go stale. Text line endings are
+normalized so Windows checkout and Linux CI produce the same versions. It changes
+when the content changes, and stays put when it does not, so an unchanged asset keeps
 its cache entry. This runs last, over the generated HTML, which is why it fixes
 all eleven generators at once instead of asking each to remember.
 """
@@ -30,7 +31,7 @@ def digest(path, cache={}):
             cache[path] = None
         else:
             with open(full, "rb") as handle:
-                cache[path] = hashlib.sha256(handle.read()).hexdigest()[:10]
+                cache[path] = hashlib.sha256(handle.read().replace(b"\r\n", b"\n")).hexdigest()[:10]
     return cache[path]
 
 

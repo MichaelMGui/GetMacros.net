@@ -12,6 +12,11 @@ SHAPES={
  'leaf':'<path d="M5 16C2 6 13 3 20 4c0 9-4 16-12 14m-4 3L16 9m-7 7V9m4 3h5"/>',
 }
 MARKS={'CAVA':('cava','bowl'),'Chick-fil-A':('chick-fil-a','chicken'),'Chipotle':('chipotle','bowl'),'Dunkin’':('dunkin','cup'),'Jersey Mike’s':('jersey-mikes','sub'),'KFC':('kfc','chicken'),'McDonald’s':('mcdonalds','sandwich'),'Panda Express':('panda-express','bowl'),'Panera':('panera','sub'),'Popeyes':('popeyes','chicken'),'Starbucks':('starbucks','cup'),'Subway':('subway','sub'),'Sweetgreen':('sweetgreen','leaf'),'Taco Bell':('taco-bell','taco'),'Wendy’s':('wendys','sandwich')}
+MARKS.update({'Arby’s':('arbys','sandwich'),'SONIC':('sonic','sandwich'),
+ 'QDOBA':('qdoba','bowl'),'El Pollo Loco':('el-pollo-loco','chicken'),
+ 'Del Taco':('del-taco','taco'),'Noodles & Company':('noodles-and-company','bowl'),
+ 'Culver’s':('culvers','sandwich'),'Taco John’s':('taco-johns','taco'),
+ 'In-N-Out':('in-n-out','sandwich'),'Raising Cane’s':('raising-canes','chicken')})
 def mark(chain):
  return '<span class="restaurant-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+SHAPES[MARKS[chain][1]]+'</svg></span>'
 def run():

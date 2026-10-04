@@ -113,7 +113,9 @@
     function setNav(open) {
       var entering = open && !document.body.classList.contains('nav-open');
       document.body.classList.toggle("nav-open", open);
-      if (entering) revealPanel(links);
+      if(!open){links.removeAttribute('aria-modal');links.removeAttribute('role');links.removeAttribute('aria-label');}if(mobile.matches){links.toggleAttribute('aria-modal',open);if(open){links.setAttribute('aria-modal','true');links.setAttribute('role','dialog');links.setAttribute('aria-label','Site navigation');}else{links.removeAttribute('role');links.removeAttribute('aria-label');}}
+      document.querySelectorAll('main,.market-footer,.modern-brand,.nav-utility').forEach(function(node){if(mobile.matches&&open){if(!node.hasAttribute('data-nav-inert'))node.dataset.navInert=node.inert?'preserve':'added';node.inert=true;}else if(node.hasAttribute('data-nav-inert')){node.inert=node.dataset.navInert==='preserve';delete node.dataset.navInert;}});
+      if (entering){revealPanel(links);if(mobile.matches)links.querySelector('[data-nav-close]')?.focus({preventScroll:true});}
       if (!open && links._entrance) links._entrance.cancel();
       if (toggle) {
         toggle.setAttribute("aria-expanded", String(open));
@@ -122,6 +124,7 @@
       }
       if (!open) closeGroups();
     }
+    links.querySelector('[data-nav-close]')?.addEventListener('click',function(){setNav(false);toggle?.focus({preventScroll:true});});
     if (toggle) {
       toggle.addEventListener("click", function () {
         setNav(!document.body.classList.contains("nav-open"));
@@ -156,6 +159,7 @@
       if (!nav.contains(event.target)) setNav(false);
     });
     document.addEventListener("keydown", function (event) {
+      if(event.key==='Tab'&&mobile.matches&&document.body.classList.contains('nav-open')){var choices=Array.from(links.querySelectorAll('a,button,input,summary')).filter(function(n){return n.getClientRects().length&&!n.disabled;});var first=choices[0],last=choices[choices.length-1];if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}return;}
       if (event.key !== "Escape") return;
       var openGroup = nav.querySelector('.nav-group.is-open');
       var groupTrigger = openGroup && openGroup.querySelector('.nav-group-trigger');

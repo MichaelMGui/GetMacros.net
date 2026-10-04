@@ -1,0 +1,5 @@
+/* Downloads public, official nutrition evidence. No authentication or TLS bypass. */
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const out=path.join(__dirname,'sources');
+const sources=JSON.parse(fs.readFileSync(path.join(__dirname,'source-candidates.json'),'utf8'));
+(async()=>{let log=[];for(const s of sources){try{const r=await fetch(s.url,{signal:AbortSignal.timeout(45000)});const b=Buffer.from(await r.arrayBuffer());if(!r.ok)throw new Error(`HTTP ${r.status}`);const pdf=b.subarray(0,4).toString()==='%PDF';const file=s.id+(pdf?'.pdf':'.html');fs.writeFileSync(path.join(out,file),b);log.push({...s,status:r.status,resolvedUrl:r.url,retrieved:'2026-10-04',file,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')}); console.log(s.id,file,b.length);if(!pdf){const links=[...b.toString().matchAll(/(?:href|src)=["']([^"']+)["']/g)].map(m=>m[1]).filter(u=>/pdf|nutrition|nutritional|widen/i.test(u));console.log(JSON.stringify(links));}}catch(e){log.push({...s,error:e.message});console.log(s.id,e.message)}}fs.writeFileSync(path.join(out,'retrieval-log.json'),JSON.stringify(log,null,2)+'\n')})();

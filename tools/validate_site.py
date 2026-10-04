@@ -8,6 +8,7 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 from collections import Counter
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
@@ -348,8 +349,14 @@ def main() -> int:
 
     meals = parse_meals()
     chains = {m["chain"] for m in meals}
-    if len(meals) != 83 or len(chains) != 15:
-        errors.append(f"restaurant data: expected 83 options across 15 chains, found {len(meals)} across {len(chains)}")
+    expansion = json.loads((ROOT / 'tools/restaurant_release/expansion-payload.json').read_text(encoding='utf-8'))
+    expected_meals = expansion['baseRecords'] + expansion['newOrders']
+    expected_chains = expansion['baseChains'] + expansion['newChains']
+    configured_chains = set(CHAIN_CONFIG) | {c['chain'] for c in expansion['chains']}
+    if len(meals) != expected_meals or len(chains) != expected_chains:
+        errors.append(f"restaurant data: expected {expected_meals} options across {expected_chains} chains, found {len(meals)} across {len(chains)}")
+    if chains != configured_chains:
+        errors.append(f"restaurant data: chain coverage differs from configured source inventory: {sorted(chains ^ configured_chains)}")
     meal_keys = Counter((m["chain"].casefold(), m["name"].casefold()) for m in meals)
     for key, count in meal_keys.items():
         if count > 1:
@@ -373,17 +380,19 @@ def main() -> int:
 
     count_claims = {
         # The point is that the page states the current count, not that it uses
-        # one exact sentence. The homepage kicker now says "83 meals", which is
-        # the same claim and has to stay just as current.
-        "about.html": r"83(?:</strong><small>|\s+)(?:tracked )?menu options",
-        "healthy-fast-food.html": r"83 (?:tracked |U\.S\. )?menu options",
+        # one exact sentence. The number is derived from the explicit release
+        # inventory, not changed to match whatever data happens to be present.
+        "about.html": rf"{expected_meals}(?:</strong><small>|\s+)(?:tracked )?(?:menu options|recorded orders)",
+        "healthy-fast-food.html": rf"{expected_meals} (?:tracked |U\.S\. )?(?:menu options|recorded orders)",
     }
     for path, claim in count_claims.items():
         if not re.search(claim, pages.get(path, ("", PageParser()))[0]):
             errors.append(f"{path}: current restaurant-option count claim missing")
     finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
-    if len(re.findall(r'class="browse-meal"', finder_text)) != len(meals):
-        errors.append("meal browser: rendered meal count does not match restaurant data")
+    references=re.findall(r'data-reference-order="([^"]+)"',finder_text)
+    from html import unescape
+    if {unescape(k) for k in references}!={m['chain']+'||'+m['name'] for m in meals} or len(references)!=len(meals):
+        errors.append("meal finder: no-script order references do not match the source inventory")
     finder_script = (ROOT / "js" / "meal-finder.js").read_text(encoding="utf-8") + (ROOT / "js" / "meal-view.js").read_text(encoding="utf-8")
     # Direct browsing replaces the five-question wizard. Behavioral invariants
     # (filters, ranking, unknowns, comparison, focus, reload) are browser-tested.
@@ -409,25 +418,31 @@ def main() -> int:
     if static_meal_count < 35:
         errors.append(f"restaurant-meal-finder.html: only {static_meal_count} tracked options appear in static HTML")
     for chain in chains:
-        if chain not in finder_text:
+        if chain not in unescape(finder_text):
             errors.append(f"restaurant-meal-finder.html: restaurant coverage missing from static HTML: {chain}")
-    for chain, config in CHAIN_CONFIG.items():
+    reviews = json.loads((ROOT / "tools/restaurant-review.json").read_text(encoding="utf-8"))
+    for chain in sorted(configured_chains):
         chain_meals = [m for m in meals if m["chain"] == chain]
         if not chain_meals:
             errors.append(f"restaurant data: no records for {chain}")
             continue
         page_path = chain_meals[0]["url"]
         page_text = pages.get(page_path, ("", PageParser()))[0]
-        reviews = json.loads((ROOT / "tools/restaurant-review.json").read_text(encoding="utf-8"))
         source_urls = {r["source"] for r in reviews if r["chain"] == chain}
-        if not source_urls or not all(url in page_text for url in source_urls):
+        if not source_urls or not all(url in unescape(page_text) for url in source_urls):
             errors.append(f"{page_path}: official {chain} source missing")
-        if 'class="restaurant-entry"' not in page_text or 'name="chain"' not in page_text or 'action="restaurant-meal-finder.html"' not in page_text:
+        if not any(c in page_text for c in ('class="restaurant-entry"', 'class="guide-filter-entry"')) or 'name="chain"' not in page_text or 'action="restaurant-meal-finder.html"' not in page_text:
             errors.append(f"{page_path}: restaurant-specific meal finder entry missing")
-        if "Compare meals across all restaurants" not in page_text:
+        # A journey is the actual destination, not one mandatory sentence.
+        # Both a direct unfiltered finder and the restaurant browse index let
+        # readers change restaurants without retaining a chain query parameter.
+        all_restaurant_targets = {'restaurant-meal-finder.html','restaurant-meal-guides.html','healthy-fast-food.html'}
+        main = re.search(r'<main\b[^>]*>(.*?)</main>',page_text,re.S)
+        cross_restaurant_links = re.findall(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',main[1] if main else '',re.S)
+        if not any(href in all_restaurant_targets and re.sub('<[^>]+>','',label).strip() for href,label in cross_restaurant_links):
             errors.append(f"{page_path}: all-restaurant matcher route missing")
         for meal in chain_meals:
-            if meal["name"] not in page_text:
+            if meal["name"] not in unescape(page_text):
                 errors.append(f"{page_path}: tracked item missing from visible HTML: {meal['name']}")
 
     calc_text = pages.get("calculators.html", ("", PageParser()))[0]

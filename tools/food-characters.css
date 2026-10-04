@@ -1,5 +1,5 @@
 /* Original brand illustrations. No movement until an intentional interaction. */
-.food-character,[data-food-character]{--food-size:112px;display:inline-grid;grid-template-rows:var(--food-size);position:relative;justify-items:center;align-items:start;width:var(--food-size);max-width:100%;color:var(--ink,#152d24);vertical-align:middle;isolation:isolate}
+.food-character,[data-food-character]{--food-size:var(--character-size,112px);display:inline-grid;grid-template-rows:var(--food-size);position:relative;justify-items:center;align-items:start;width:var(--food-size);max-width:100%;color:var(--ink,#152d24);vertical-align:middle;isolation:isolate}
 .food-character:not([data-interactive=true]),[data-food-character]:not([data-interactive=true]){grid-template-rows:var(--food-size)}
 .food-character[data-interactive=false]{grid-template-rows:var(--food-size)}
 .food-character .food-character-art,.food-character svg{display:block;width:100%;height:100%;overflow:visible;pointer-events:none}

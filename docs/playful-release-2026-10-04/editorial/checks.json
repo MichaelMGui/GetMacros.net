@@ -1,0 +1,25 @@
+{
+  "checkedNewArticles": 117,
+  "arithmeticCases": 292,
+  "restaurantFactsCrossChecked": 133,
+  "datasetCalculationsChecked": 5,
+  "exactRepeatedAuthoredParagraphs": [],
+  "nearDuplicateBodies": [],
+  "checks": [
+    "distinct titles/reader intents/routes against baseline",
+    "authored body and semantic headings",
+    "inspected source URL registry",
+    "safe reproducible arithmetic",
+    "exact restaurant fields/portions/source identity against verified payload",
+    "snapshot denominator and classification counts",
+    "internal references exist",
+    "rendered template metadata/main count",
+    "all authored paragraphs retained when generated"
+  ],
+  "notCovered": [
+    "human visual inspection of every article",
+    "medical expert review",
+    "field performance",
+    "external source reachability on every build"
+  ]
+}

@@ -141,6 +141,17 @@ def release_routes():
         if path.exists():
             for row in json.loads(path.read_text(encoding='utf-8')):
                 slug=row['slug'];routes.add(slug if slug.endswith('.html') else slug+'.html')
+    editorial=root/'tools/editorial_release/articles.json'
+    if editorial.exists():
+        routes.update(r['slug'] for r in json.loads(editorial.read_text(encoding='utf-8')) if r['status']=='checked')
+    games=root/'tools/play_release/manifest.json'
+    if games.exists():
+        manifest=json.loads(games.read_text(encoding='utf-8'))
+        routes.update(r['route'] for r in manifest['games'] if r['status']=='implemented')
+        routes.add('play.html')
+    expansion=root/'tools/restaurant_release/expansion-payload.json'
+    if expansion.exists():routes.update(c['route'] for c in json.loads(expansion.read_text(encoding='utf-8'))['chains'])
+    routes.add('food-shelf.html')
     return routes
 
 KEEP_ROOT_HTML = KEEP_ROOT_HTML | release_routes()

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "arbys",
+    "chain": "Arby\u2019s",
+    "url": "https://assets.ctfassets.net/30q5w5l98nbx/3A0KfHgCWZv8al7gU36Jlg/7ea1f28881e8ac0364fe9a017507c4c7/Arbys_Nutritional_and_Allergen_JULY_2026.pdf",
+    "landing": "https://www.arbys.com/menu"
+  },
+  {
+    "id": "sonic",
+    "chain": "SONIC",
+    "url": "https://assets.ctfassets.net/whnlxz6bna9d/665Hn9SdgyT53pJgF9cmkK/090ae5fe05d8cd9643fb98fcde32ef1a/61667-1_FEE_0926_NUTBRO_SEPTEMBER_FA_rg_WCAG.pdf",
+    "landing": "https://www.sonicdrivein.com/nutrition-allergen/"
+  },
+  {
+    "id": "qdoba",
+    "chain": "QDOBA",
+    "url": "https://assets.ctfassets.net/0tc4847zqy12/bQFJBCmsAk4ww4qzdfAOm/10ad09aaf097d3e9fb10fc4c62af52c3/Nutrition_9.1.26.pdf",
+    "landing": "https://www.qdoba.com/nutrition-allergens"
+  },
+  {
+    "id": "el-pollo-loco",
+    "chain": "El Pollo Loco",
+    "url": "https://www.elpolloloco.com/content/pdfs/epl_web_nutrition_guide_mod_5_2026_hr-2.pdf",
+    "landing": "https://www.elpolloloco.com/nutrition/"
+  },
+  {
+    "id": "del-taco",
+    "chain": "Del Taco",
+    "url": "https://www.deltaco.com/files/pdf/2026/nutritional-02-2026.pdf",
+    "landing": "https://deltaco.com/menu.html"
+  },
+  {
+    "id": "noodles",
+    "chain": "Noodles & Company",
+    "url": "https://www.noodles.com/sites/default/files/2026-01/Menu%2520Nutritionals%25201.14.pdf",
+    "landing": "https://www.noodles.com/faq/where-can-i-find-nutritional-information"
+  },
+  {
+    "id": "culvers",
+    "chain": "Culver\u2019s",
+    "url": "https://cdn.culvers.com/menu/docs/guide-nutrition-allergen.pdf",
+    "landing": "https://www.culvers.com/nutrition-and-allergen-guide"
+  },
+  {
+    "id": "taco-johns-landing",
+    "chain": "Taco John\u2019s",
+    "url": "https://tacojohns.com/nutrition-information/"
+  },
+  {
+    "id": "jimmy-johns-landing",
+    "chain": "Jimmy John\u2019s",
+    "url": "https://www.jimmyjohns.com/documents/nutrition-info"
+  },
+  {
+    "id": "shake-shack",
+    "chain": "Shake Shack",
+    "url": "https://shakeshack.com/nutritionandallergeninfo"
+  },
+  {
+    "id": "potbelly-landing",
+    "chain": "Potbelly",
+    "url": "https://www.potbelly.com/nutrition"
+  },
+  {
+    "id": "taco-johns",
+    "chain": "Taco John\u2019s",
+    "url": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "landing": "https://tacojohns.com/nutrition-information/"
+  },
+  {
+    "id": "raising-canes",
+    "chain": "Raising Cane\u2019s",
+    "url": "https://raisingcanes.cdn.prismic.io/raisingcanes/IxTKraMRo_HyNWx2_Allergen%26NutritionalInformation_ALL_DIGITAL_8.26.pdf",
+    "landing": "https://www.raisingcanes.com/allergens"
+  },
+  {
+    "id": "in-n-out-landing",
+    "chain": "In-N-Out",
+    "url": "https://www.in-n-out.com/menu/nutrition-info"
+  },
+  {
+    "id": "in-n-out",
+    "chain": "In-N-Out",
+    "url": "https://www.in-n-out.com/docs/default-source/downloads/nutrition_info.pdf?sfvrsn=332aab37_36",
+    "landing": "https://www.in-n-out.com/menu/nutrition-info"
+  }
+]

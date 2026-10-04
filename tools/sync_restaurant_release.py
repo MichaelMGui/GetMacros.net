@@ -21,6 +21,45 @@ def ancestors(node):
         node=node['parent']
 def inside(node,parent):return any(n is parent for n in ancestors(node))
 
+def validate_menu(text,entries,provenance,efficiency=True):
+    """Check rendered rows against source data without replacing composition."""
+    finished=Document(text)
+    menu=finished.find(id='menu-comparison')
+    assert menu is not None,'Missing menu comparison section'
+    table=next(node for node in finished.nodes if node['tag']=='table' and inside(node,menu))
+    data_rows=[node for node in finished.nodes if node['tag']=='tr' and inside(node,table) and any(a['tag']=='tbody' for a in ancestors(node))]
+    assert len(data_rows)==len(entries),(len(data_rows),len(entries))
+    for row,meal in zip(data_rows,entries):
+        name=next(node for node in finished.nodes if node['tag']=='strong' and inside(node,row))
+        actual_name=html.unescape(re.sub('<[^>]*>','',text[name['inner']:name['close']]))
+        assert actual_name==meal['name'],(meal['name'],actual_name)
+        cells=[node for node in finished.nodes if node['tag']=='td' and node['parent'] is row]
+        source=provenance[meal['chain']+'||'+meal['name']]
+        expected=[n(meal.get(k)) for k in ('cal','p','c')]+[n(source.get('fat'))]+[n(meal.get(k)) for k in ('f','na')]
+        if efficiency:expected.append('—' if not meal.get('cal') or meal.get('p') is None else f'{meal["p"]/meal["cal"]*100:.1f}')
+        actual=[html.unescape(re.sub('<[^>]*>','',text[cell['inner']:cell['close']])) for cell in cells]
+        assert expected==actual,(meal['name'],expected,actual)
+    assert text.count('<table')==text.count('</table>'),'Unbalanced tables'
+    return finished,table
+
+def validate_expansion_comparison(text,entries,provenance,doc,menu):
+    """New guides choose their own actual rows; no legacy CHOICES assumptions."""
+    names=[]
+    known={m['name']:m for m in entries}
+    for table in (node for node in doc.nodes if node['tag']=='table' and not inside(node,menu)):
+        rows=[node for node in doc.nodes if node['tag']=='tr' and inside(node,table) and any(a['tag']=='tbody' for a in ancestors(node))]
+        for row in rows:
+            strong=next(node for node in doc.nodes if node['tag']=='strong' and inside(node,row))
+            name=html.unescape(re.sub('<[^>]*>','',text[strong['inner']:strong['close']]))
+            assert name in known,('Unknown comparison row',name)
+            meal=known[name];source=provenance[meal['chain']+'||'+name]
+            cells=[node for node in doc.nodes if node['tag']=='td' and node['parent'] is row]
+            actual=[html.unescape(re.sub('<[^>]*>','',text[cell['inner']:cell['close']])) for cell in cells]
+            expected=[n(meal.get(k)) for k in ('cal','p','c')]+[n(source.get('fat'))]+[n(meal.get(k)) for k in ('f','na')]
+            assert expected==actual,(name,expected,actual)
+            names.append(name)
+    return names
+
 def rows_table(meals,provenance,compact=False):
     keys=('cal','p','f','na') if compact else ('cal','p','c','fat','f','na')
     labels={'cal':'Calories','p':'Protein (g)','c':'Carbs (g)','fat':'Fat (g)','f':'Fiber (g)','na':'Sodium (mg)'}
@@ -64,20 +103,39 @@ def run():
     provenance=__import__('meal_provenance').read(ROOT/'js/meal-provenance.js')
     chains=defaultdict(list)
     for meal in meals:chains[meal['chain']].append(meal)
+    payload_path=ROOT/'tools/restaurant_release/expansion-payload.json'
+    expanded_chains={c['chain'] for c in json.loads(payload_path.read_text(encoding='utf-8'))['chains']} if payload_path.exists() else set()
     report=[]
     for chain,entries in chains.items():
         path=ROOT/entries[0]['url']; text=path.read_text(encoding='utf-8');doc=Document(text)
-        menu=doc.find(id='menu-comparison');comparison=doc.find(id='ordering-comparison')
+        menu=doc.find(id='menu-comparison')
         tables=[node for node in doc.nodes if node['tag']=='table']
+        if chain in expanded_chains:
+            # The new guides already contain source-specific portions, notes and
+            # independently chosen comparison rows. Validate all values; preserve
+            # the authored composition rather than fitting it into the old pair.
+            validate_menu(text,entries,provenance,efficiency=False)
+            pair_names=validate_expansion_comparison(text,entries,provenance,doc,menu)
+            report.append({'route':path.name,'chain':chain,'records':len(entries),'comparisonRecords':pair_names,
+                'tableValues':'central meals and provenance, including known fat',
+                'sourceNarrativeUpdated':False,'sourceCheckDates':sorted({provenance[chain+'||'+m['name']].get('checked') for m in entries if provenance[chain+'||'+m['name']].get('checked')}),
+                'template':'new source-specific composition preserved','visualInspection':'not performed by this synchronization tool'})
+            continue
+        comparison=doc.find(id='ordering-comparison')
         menu_table=next(node for node in tables if inside(node,menu))
         comparison_table=next(node for node in tables if inside(node,comparison))
         choice=CHOICES[chain]
         pair=[next(m for m in entries if m['name']==name) for name in choice[1:3]]
         edits=[(menu_table['start'],menu_table['end'],rows_table(entries,provenance)),
                (comparison_table['start'],comparison_table['end'],rows_table(pair,provenance,True))]
-        heading=next(node for node in doc.nodes if node['tag']=='h2' and inside(node,comparison))
+        heading=next((node for node in doc.nodes if node['tag']=='h2' and inside(node,comparison)),None)
+        if heading is None:
+            # The final presentation pass turns this optional explanation into
+            # an accordion. Preserve its summary instead of assuming a heading
+            # still exists or removing the working disclosure control.
+            heading=next(node for node in doc.nodes if node['tag']=='summary' and inside(node,comparison) and not inside(node,comparison_table))
         explanation=next(node for node in doc.nodes if node['tag']=='p' and node['start']>=heading['end'] and inside(node,comparison))
-        edits.extend([(heading['start'],heading['end'],'<h2>'+esc(choice[0])+'</h2>'),
+        edits.extend([(heading['start'],heading['end'],'<'+heading['tag']+'>'+esc(choice[0])+'</'+heading['tag']+'>'),
                       (explanation['start'],explanation['end'],'<p>'+esc(choice[3])+'</p>')])
         # Contiguous tags can share end/start offsets; an earlier strict > check
         # selected the following disclaimer instead of the first explanation.
@@ -126,22 +184,17 @@ def run():
             text=re.sub(r'<script type="application/ld\+json">(.*?)</script>',date_refresh,text,flags=re.S)
         assert text.count('<table')==text.count('</table>'),path.name
         path.write_text(text,encoding='utf-8')
-        # Parse the finished table again and assert one row per actual record.
-        finished=Document(text); table=next(node for node in finished.nodes if node['tag']=='table' and inside(node,finished.find(id='menu-comparison')))
-        data_rows=[node for node in finished.nodes if node['tag']=='tr' and inside(node,table) and any(a['tag']=='tbody' for a in ancestors(node))]
-        assert len(data_rows)==len(entries),(path.name,len(data_rows),len(entries))
-        for row,meal in zip(data_rows,entries):
-            cells=[node for node in finished.nodes if node['tag']=='td' and node['parent'] is row]
-            source=provenance[meal['chain']+'||'+meal['name']]
-            expected=[n(meal.get(k)) for k in ('cal','p','c')]+[n(source.get('fat'))]+[n(meal.get(k)) for k in ('f','na')]
-            expected.append('—' if not meal.get('cal') or meal.get('p') is None else f'{meal["p"]/meal["cal"]*100:.1f}')
-            actual=[html.unescape(re.sub('<[^>]*>','',text[cell['inner']:cell['close']])) for cell in cells]
-            assert expected==actual,(path.name,meal['name'],expected,actual)
-        report.append({'route':path.name,'records':len(entries),'comparisonRecords':[m['name'] for m in pair],
+        validate_menu(text,entries,provenance)
+        report.append({'route':path.name,'chain':chain,'records':len(entries),'comparisonRecords':[m['name'] for m in pair],
             'tableValues':'central meals and provenance, including known fat','sourceNarrativeUpdated':chain in SOURCE_NOTES,
             'template':'preserved','visualInspection':'not performed by this synchronization tool'})
     out=ROOT/'docs/release-2026-10-03/data-restaurant-sync.json'
-    out.write_text(json.dumps({'date':DATE,'pages':report,'checks':['15 guide tables match 83 central order rows','All comparison pairs resolve to central records','Balanced generated tables','No dates refreshed for uninspected restaurant data']},ensure_ascii=False,indent=2),encoding='utf-8')
+    used_sources=[provenance[m['chain']+'||'+m['name']] for m in meals]
+    source_urls={url for source in used_sources for url in [source.get('source'),*[r.get('source') for r in source.get('nutrientProvenance',{}).values()]] if url}
+    out.write_text(json.dumps({'date':DATE,'restaurantCount':len(chains),'orderCount':len(meals),
+        'officialSourceCount':len(source_urls),
+        'sourceCheckDates':sorted({r['checked'] for r in used_sources if r.get('checked')}),
+        'pages':report,'checks':[f'{len(report)} guide tables match {len(meals)} central order rows','All comparison pairs resolve to central records','Balanced generated tables','No dates refreshed for uninspected restaurant data']},ensure_ascii=False,indent=2),encoding='utf-8')
     print(f'Synchronized {len(report)} restaurant guides and {len(meals)} source-defined rows.')
 
 if __name__=='__main__':run()

@@ -192,6 +192,8 @@
       var results = document.getElementById("macro-results");
       results.classList.remove("empty");
       results.hidden = false;
+      var waiting = document.querySelector('.calculator-waiting');
+      if (waiting) waiting.hidden = true;
       document.dispatchEvent(new CustomEvent("getmacros:calculator-completed"));
       var pPct = Math.round((r.proteinCals / r.totalCals) * 100);
       var fPct = Math.round((r.fatCals / r.totalCals) * 100);

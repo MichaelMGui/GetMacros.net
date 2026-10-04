@@ -1,0 +1,96 @@
+{
+  "environment": "Local Edge, 390x844, cold cache, 100 ms latency, 1.6 Mbps download, 4x CPU slowdown. No production CDN or field data.",
+  "sourceRoot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net",
+  "results": [
+    {
+      "page": "index.html",
+      "run": 1,
+      "lcp": 1852,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 2021.699999988079,
+      "resources": 15,
+      "bytes": 347927
+    },
+    {
+      "page": "index.html",
+      "run": 2,
+      "lcp": 1808,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 2041.6000000238419,
+      "resources": 15,
+      "bytes": 347927
+    },
+    {
+      "page": "index.html",
+      "run": 3,
+      "lcp": 1776,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 2011.6000000238419,
+      "resources": 15,
+      "bytes": 347927
+    },
+    {
+      "page": "calculators.html",
+      "run": 1,
+      "lcp": 1484,
+      "cls": 0.0008012640534371851,
+      "longTasks": 0,
+      "domContentLoaded": 1953.6000000238419,
+      "resources": 15,
+      "bytes": 239182
+    },
+    {
+      "page": "calculators.html",
+      "run": 2,
+      "lcp": 1448,
+      "cls": 0.0008012640534371851,
+      "longTasks": 0,
+      "domContentLoaded": 1904.7000000476837,
+      "resources": 15,
+      "bytes": 239182
+    },
+    {
+      "page": "calculators.html",
+      "run": 3,
+      "lcp": 1468,
+      "cls": 0.0008012640534371851,
+      "longTasks": 0,
+      "domContentLoaded": 1927.3999999761581,
+      "resources": 15,
+      "bytes": 239182
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 1,
+      "lcp": 2552,
+      "cls": 0.00013168483153153308,
+      "longTasks": 0,
+      "domContentLoaded": 3382.7000000476837,
+      "resources": 18,
+      "bytes": 505647
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 2,
+      "lcp": 2568,
+      "cls": 0.00013168483153153308,
+      "longTasks": 0,
+      "domContentLoaded": 3383.7000000476837,
+      "resources": 18,
+      "bytes": 505647
+    },
+    {
+      "page": "restaurant-meal-finder.html",
+      "run": 3,
+      "lcp": 2396,
+      "cls": 0.00013168483153153308,
+      "longTasks": 0,
+      "domContentLoaded": 3356.800000011921,
+      "resources": 18,
+      "bytes": 505647
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "finished_games": 56,
+  "unfinished_games": 0,
+  "public_routes": [
+    "play.html",
+    "play-serving-size-detective.html",
+    "play-label-matchmaker.html",
+    "play-missing-number-kitchen.html",
+    "play-portion-balance.html",
+    "play-claim-check.html",
+    "play-rounding-room.html",
+    "play-ingredient-order.html",
+    "play-build-a-plate.html",
+    "play-protein-target-puzzle.html",
+    "play-range-finder.html",
+    "play-fiber-trail.html",
+    "play-sodium-sort.html",
+    "play-restaurant-order-builder.html",
+    "play-trade-off-table.html",
+    "play-fruit-catch.html",
+    "play-garden-glide.html",
+    "play-picnic-delivery.html",
+    "play-berry-bounce.html",
+    "play-kitchen-rhythm.html",
+    "play-orange-orbit.html",
+    "play-bean-balance.html",
+    "play-pantry-pack.html",
+    "play-recipe-path.html",
+    "play-garden-pipes.html",
+    "play-snack-slide.html",
+    "play-orchard-nonogram.html",
+    "play-tabletop-tangram.html",
+    "play-lunchbox-logic.html",
+    "play-ingredient-anagrams.html",
+    "play-food-crossword.html",
+    "play-menu-word-hunt.html",
+    "play-kitchen-connections.html",
+    "play-description-detective.html",
+    "play-nutrition-term-match.html",
+    "play-source-sleuth.html",
+    "play-market-memory.html",
+    "play-spot-the-swap.html",
+    "play-order-recall.html",
+    "play-pantry-peek.html",
+    "play-sequence-chef.html",
+    "play-silhouette-supper.html",
+    "play-odd-ingredient-out.html",
+    "play-plate-art.html",
+    "play-smoothie-studio.html",
+    "play-sandwich-architect.html",
+    "play-mascot-maker.html",
+    "play-recipe-remix.html",
+    "play-market-budget.html",
+    "play-picnic-planner.html",
+    "play-menu-mystery.html",
+    "play-macro-grid.html",
+    "play-portion-fractions.html",
+    "play-restaurant-route.html",
+    "play-harvest-conveyor.html",
+    "play-food-factory.html",
+    "play-recipe-dominoes.html"
+  ],
+  "rule_tests": {
+    "command": "node tools/play_release/test-rules.cjs",
+    "seeded_solutions": 2240,
+    "seeds_per_game": 40,
+    "passed": true,
+    "checks": [
+      "deterministic generation",
+      "solvability",
+      "pause guard",
+      "completion guard",
+      "invalid placement",
+      "overlap",
+      "blank value rejection",
+      "no duplicate letters",
+      "no maze teleport"
+    ]
+  },
+  "browser_solutions": {
+    "command": "node tools/play_release/test-browser.cjs",
+    "solved_runs": 224,
+    "engines": [
+      "Edge"
+    ],
+    "widths": [
+      390,
+      1440
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "report": "docs\\play-release-2026-10-04\\browser-checks.json",
+    "passed": true
+  },
+  "responsive": {
+    "command": "node tools/play_release/test-responsive.cjs",
+    "renders": 1140,
+    "engines": [
+      "Edge",
+      "WebKit"
+    ],
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "report": "docs\\play-release-2026-10-04\\responsive-checks.json",
+    "passed": true
+  },
+  "interactions": {
+    "command": "node tools/play_release/test-interactions.cjs",
+    "engines": [
+      "Edge",
+      "WebKit"
+    ],
+    "checks": [
+      "touch fruit catch",
+      "keyboard maze",
+      "finite catch motion",
+      "reduced-motion gesture removal",
+      "untimed memory mismatch continuation",
+      "saved character persistence",
+      "shape text accommodation"
+    ],
+    "report": "docs\\play-release-2026-10-04\\interaction-checks.json",
+    "passed": true
+  },
+  "visual_review": {
+    "method": "Rendered individual playfield captures reviewed on eight contact sheets; representative full-page screenshots additionally reviewed",
+    "playfields_reviewed": 56,
+    "individual_screenshots": "docs\\play-release-2026-10-04\\individual",
+    "fullpage_screenshots": "docs\\play-release-2026-10-04",
+    "limitation": "Individual captures alternate light/dark at 390 px. Every full individual route was rendered in both themes and all widths programmatically, not manually viewed in every combination."
+  },
+  "sources": [
+    {
+      "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+      "inspected": "2026-10-04",
+      "supports": "Serving-size reference and nutrition-label units, used in Nutrition Term Match."
+    }
+  ],
+  "assets": {
+    "provenance": "Original GetMacros food SVG cast, new original basket, canopy, paddle, beat, hedge, parcel, silhouette and modular character SVG geometry; no stock imagery or branded game assets."
+  },
+  "limitations": [
+    "Coordination games use deliberate untimed turns rather than reaction-speed arcade play.",
+    "Small authored clue banks and compact puzzles are intentional; this is not 56 long-form campaigns.",
+    "All arithmetic and price labels outside the two verified restaurant games are fictional educational examples.",
+    "Local progress/artwork can be lost if browser storage is cleared; no account sync.",
+    "No claim of certified accessibility; checks cover the documented controls and accommodations.",
+    "No production deployment performed by game worker."
+  ],
+  "current_source_sha256": {
+    "rules": "0644b9e4c701042b624ce1031f79c0e5ea9462a38928b04bec16d50f742aa00b",
+    "ui": "089713b4abbf84c53d0f7deea04e2982781bbc44f8ddd89539456cef0c7079b5"
+  },
+  "integration": [
+    "Call tools/build_play_release.py after the publication pass and before metadata/search/stamping.",
+    "tools/play_release/manifest.json provides 56 game records and 57 routes.",
+    "Only Play routes load js/play-rules.js, js/play-release.js and css/play-release.css.",
+    "Use js/play-catalogue.json for game global-search entries.",
+    "[data-shelf-save] buttons use the root food-shelf.js API."
+  ]
+}

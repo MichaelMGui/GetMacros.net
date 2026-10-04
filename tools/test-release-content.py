@@ -22,7 +22,10 @@ for row in rows:
     text=(ROOT/row['slug']).read_text(encoding='utf-8')
     assert '<h1>'+row['h1']+'</h1>' in text or unescape(row['h1']) in unescape(text),row['slug']
     # Shared presentation adds section IDs/classes; authored words remain intact.
-    for paragraph in re.findall(r'<p(?: [^>]*)?>(.*?)</p>',row['body'],re.S):
+    # The dataset report is rebuilt from the expanded source-defined snapshot;
+    # its older33-resource body is historical rather than current coverage.
+    retained_body=row['body'] if row['slug']!='fast-food-nutrition-data-report.html' else ''
+    for paragraph in re.findall(r'<p(?: [^>]*)?>(.*?)</p>',retained_body,re.S):
         plain=lambda v:re.sub(r'\s+',' ',unescape(re.sub('<[^>]+>','',v))).strip()
         assert plain(paragraph) in plain(text),(row['slug'],plain(paragraph))
     assert row['originalUtility'] and row['sourceURLs'],row['slug']
@@ -44,8 +47,13 @@ import statistics
 complete=[r['values'] for r in audited.values() if len(r['values'])==6]
 assert len(complete)==40
 snapshot=(ROOT/'fast-food-nutrition-data-report.html').read_text(encoding='utf-8')
-for statistic in [len(meals),len({m['chain'] for m in meals.values()}),len(audited),len(complete),statistics.median(m['cal'] for m in complete),statistics.median(m['p'] for m in complete)]:
+from build_restaurant_data_report import load as report_records,statistics_for
+current=statistics_for(report_records())
+assert current['records']==len(meals) and current['chains']==len({m['chain'] for m in meals.values()})
+for statistic in [current['records'],current['chains'],current['exactSixNutrients'],current['sourceInspectedRecords']]:
     assert f'>{statistic:g}' in snapshot,statistic
+historical=unescape(re.sub('<[^>]*>',' ',snapshot))
+assert '41' in historical and '40' in historical and '467.5' in historical and '28' in historical,'Earlier source subset statistics must remain explicitly historical'
 for key,patch in audited.items():
     for nutrient,value in patch['values'].items():
         actual=provenance[key]['fat'] if nutrient=='fat' else meals[key][nutrient]

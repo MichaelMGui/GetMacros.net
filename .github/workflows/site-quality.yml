@@ -35,4 +35,6 @@ jobs:
           node tools/test_macro_math.js
           node tools/test-companion-engine.cjs
           node tools/test-meal-view.cjs
+          node tools/play_release/test-rules.cjs
           python3 tools/test-release-content.py
+          python3 tools/test_asset_stamps.py

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "arbys",
+    "chain": "Arby’s",
+    "url": "https://assets.ctfassets.net/30q5w5l98nbx/3A0KfHgCWZv8al7gU36Jlg/7ea1f28881e8ac0364fe9a017507c4c7/Arbys_Nutritional_and_Allergen_JULY_2026.pdf",
+    "landing": "https://www.arbys.com/menu",
+    "status": 200,
+    "resolvedUrl": "https://assets.ctfassets.net/30q5w5l98nbx/3A0KfHgCWZv8al7gU36Jlg/7ea1f28881e8ac0364fe9a017507c4c7/Arbys_Nutritional_and_Allergen_JULY_2026.pdf",
+    "retrieved": "2026-10-04",
+    "file": "arbys.pdf",
+    "bytes": 315390,
+    "sha256": "0fa0787c0199f01b100c7143b8129392f088391f1f5ef5230fd85f49e995f745"
+  },
+  {
+    "id": "sonic",
+    "chain": "SONIC",
+    "url": "https://assets.ctfassets.net/whnlxz6bna9d/665Hn9SdgyT53pJgF9cmkK/090ae5fe05d8cd9643fb98fcde32ef1a/61667-1_FEE_0926_NUTBRO_SEPTEMBER_FA_rg_WCAG.pdf",
+    "landing": "https://www.sonicdrivein.com/nutrition-allergen/",
+    "status": 200,
+    "resolvedUrl": "https://assets.ctfassets.net/whnlxz6bna9d/665Hn9SdgyT53pJgF9cmkK/090ae5fe05d8cd9643fb98fcde32ef1a/61667-1_FEE_0926_NUTBRO_SEPTEMBER_FA_rg_WCAG.pdf",
+    "retrieved": "2026-10-04",
+    "file": "sonic.pdf",
+    "bytes": 3225091,
+    "sha256": "394bbea0e1120f868747f414558ee3cbfd8ddbfd5111eb7e49fb9ec6b3ba8778"
+  },
+  {
+    "id": "qdoba",
+    "chain": "QDOBA",
+    "url": "https://assets.ctfassets.net/0tc4847zqy12/bQFJBCmsAk4ww4qzdfAOm/10ad09aaf097d3e9fb10fc4c62af52c3/Nutrition_9.1.26.pdf",
+    "landing": "https://www.qdoba.com/nutrition-allergens",
+    "status": 200,
+    "resolvedUrl": "https://assets.ctfassets.net/0tc4847zqy12/bQFJBCmsAk4ww4qzdfAOm/10ad09aaf097d3e9fb10fc4c62af52c3/Nutrition_9.1.26.pdf",
+    "retrieved": "2026-10-04",
+    "file": "qdoba.pdf",
+    "bytes": 214110,
+    "sha256": "028ce3a4ae884fa56b1d9d09bec6cb9c4b5c01dd8c7fecc186a3497ad5eac463"
+  },
+  {
+    "id": "el-pollo-loco",
+    "chain": "El Pollo Loco",
+    "url": "https://www.elpolloloco.com/content/pdfs/epl_web_nutrition_guide_mod_5_2026_hr-2.pdf",
+    "landing": "https://www.elpolloloco.com/nutrition/",
+    "status": 200,
+    "resolvedUrl": "https://www.elpolloloco.com/content/pdfs/epl_web_nutrition_guide_mod_5_2026_hr-2.pdf",
+    "retrieved": "2026-10-04",
+    "file": "el-pollo-loco.pdf",
+    "bytes": 81849,
+    "sha256": "2061058f06db87ac72c262e4c2b93e3ba73e2cb8e12df827ff58e422ce23729d"
+  },
+  {
+    "id": "del-taco",
+    "chain": "Del Taco",
+    "url": "https://www.deltaco.com/files/pdf/2026/nutritional-02-2026.pdf",
+    "landing": "https://deltaco.com/menu.html",
+    "status": 200,
+    "resolvedUrl": "https://www.deltaco.com/files/pdf/2026/nutritional-02-2026.pdf",
+    "retrieved": "2026-10-04",
+    "file": "del-taco.pdf",
+    "bytes": 219257,
+    "sha256": "83d5da4c6e7592f33ad98ef5cbc338f933a1ebbc2a7c1a81ea7d28e19b2c6551"
+  },
+  {
+    "id": "noodles",
+    "chain": "Noodles & Company",
+    "url": "https://www.noodles.com/sites/default/files/2026-01/Menu%2520Nutritionals%25201.14.pdf",
+    "landing": "https://www.noodles.com/faq/where-can-i-find-nutritional-information",
+    "status": 200,
+    "resolvedUrl": "https://www.noodles.com/sites/default/files/2026-01/Menu%2520Nutritionals%25201.14.pdf",
+    "retrieved": "2026-10-04",
+    "file": "noodles.pdf",
+    "bytes": 171207,
+    "sha256": "b273a89f513f265d25fb69738865e10d681f7422c68f807b4c49296478a21646"
+  },
+  {
+    "id": "culvers",
+    "chain": "Culver’s",
+    "url": "https://cdn.culvers.com/menu/docs/guide-nutrition-allergen.pdf",
+    "landing": "https://www.culvers.com/nutrition-and-allergen-guide",
+    "status": 200,
+    "resolvedUrl": "https://cdn.culvers.com/menu/docs/guide-nutrition-allergen.pdf",
+    "retrieved": "2026-10-04",
+    "file": "culvers.pdf",
+    "bytes": 4430465,
+    "sha256": "68ff3cead212c6090982b01bdb66dbdba6e7f60d629c29e20d803bd65158584c"
+  },
+  {
+    "id": "taco-johns-landing",
+    "chain": "Taco John’s",
+    "url": "https://tacojohns.com/nutrition-information/",
+    "status": 200,
+    "resolvedUrl": "https://tacojohns.com/nutrition-information/",
+    "retrieved": "2026-10-04",
+    "file": "taco-johns-landing.html",
+    "bytes": 64485,
+    "sha256": "064c52fe70f6690882ccb4a51ee14b825986f7b944ec2d16b25715a1bc3aaa39"
+  },
+  {
+    "id": "jimmy-johns-landing",
+    "chain": "Jimmy John’s",
+    "url": "https://www.jimmyjohns.com/documents/nutrition-info",
+    "status": 200,
+    "resolvedUrl": "https://www.jimmyjohns.com/documents/nutrition-info",
+    "retrieved": "2026-10-04",
+    "file": "jimmy-johns-landing.html",
+    "bytes": 11142,
+    "sha256": "9fd3e167b2a90d2b39879b23a972dfffe084bc43e35c8d30759bbc19dd436d3d"
+  },
+  {
+    "id": "shake-shack",
+    "chain": "Shake Shack",
+    "url": "https://shakeshack.com/nutritionandallergeninfo",
+    "error": "HTTP 403"
+  },
+  {
+    "id": "potbelly-landing",
+    "chain": "Potbelly",
+    "url": "https://www.potbelly.com/nutrition",
+    "error": "HTTP 403"
+  },
+  {
+    "id": "taco-johns",
+    "chain": "Taco John’s",
+    "url": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "landing": "https://tacojohns.com/nutrition-information/",
+    "status": 200,
+    "resolvedUrl": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "retrieved": "2026-10-04",
+    "file": "taco-johns.pdf",
+    "bytes": 201695,
+    "sha256": "d30e1afb0bad6d23067c9d989904cd960f07c2225b6678d5bf7ed4fc38bc127f"
+  },
+  {
+    "id": "raising-canes",
+    "chain": "Raising Cane’s",
+    "url": "https://raisingcanes.cdn.prismic.io/raisingcanes/IxTKraMRo_HyNWx2_Allergen%26NutritionalInformation_ALL_DIGITAL_8.26.pdf",
+    "landing": "https://www.raisingcanes.com/allergens",
+    "status": 200,
+    "resolvedUrl": "https://raisingcanes.cdn.prismic.io/raisingcanes/IxTKraMRo_HyNWx2_Allergen%26NutritionalInformation_ALL_DIGITAL_8.26.pdf",
+    "retrieved": "2026-10-04",
+    "file": "raising-canes.pdf",
+    "bytes": 289447,
+    "sha256": "fe16c31a45ed75a07fd9a4ac3462a511a1ce4672d58f6d1f7041fd5067c30055"
+  },
+  {
+    "id": "in-n-out-landing",
+    "chain": "In-N-Out",
+    "url": "https://www.in-n-out.com/menu/nutrition-info",
+    "status": 200,
+    "resolvedUrl": "https://www.in-n-out.com/menu/nutrition-info",
+    "retrieved": "2026-10-04",
+    "file": "in-n-out-landing.html",
+    "bytes": 958,
+    "sha256": "c1879af01a689193020cce6ee5c8bada62d2d7cef9ec334684f0c2a6b8c236dd"
+  },
+  {
+    "id": "in-n-out",
+    "chain": "In-N-Out",
+    "url": "https://www.in-n-out.com/docs/default-source/downloads/nutrition_info.pdf?sfvrsn=332aab37_36",
+    "landing": "https://www.in-n-out.com/menu/nutrition-info",
+    "status": 200,
+    "resolvedUrl": "https://www.in-n-out.com/docs/default-source/downloads/nutrition_info.pdf?sfvrsn=332aab37_36",
+    "retrieved": "2026-10-04",
+    "file": "in-n-out.html",
+    "bytes": 212,
+    "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
+  }
+]

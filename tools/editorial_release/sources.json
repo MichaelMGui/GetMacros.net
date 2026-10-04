@@ -1,0 +1,227 @@
+[
+  {
+    "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+    "label": "FDA: using a Nutrition Facts label",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Label quantities refer to the stated serving; nutrients are not interchangeable.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+    "label": "FDA: serving information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Serving sizes and household/metric units on U.S. labels.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+    "label": "FDA: Daily Values",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Percent Daily Value is a reference comparison, not a personalised target.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+    "label": "FDA: added sugars",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Added sugars are part of total sugars, not an additional amount to add.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet",
+    "label": "FDA: sodium",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Sodium units and the distinction between sodium and salt.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.fda.gov/food/food-labeling-nutrition/menu-labeling-requirements",
+    "label": "FDA: menu labeling",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Written nutrition information and menu-labeling scope.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.nist.gov/pml/owm/si-units-mass",
+    "label": "NIST: units of mass",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Gram, milligram and kilogram relationships.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.nist.gov/pml/owm/si-units-volume",
+    "label": "NIST: units of volume",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Volume quantities and their distinction from mass.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.nist.gov/pml/owm/metric-si/metric-kitchen",
+    "label": "NIST: Metric Kitchen",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Using appropriate kitchen measurements.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://fdc.nal.usda.gov/data-documentation/",
+    "label": "USDA: FoodData Central documentation",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Food-data types have different sources and purposes.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://fdc.nal.usda.gov/Foundation_Foods_Documentation/",
+    "label": "USDA: Foundation Foods documentation",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Food descriptions, portions, missing nutrients and sample variation.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.fda.gov/food/buy-store-serve-safe-food/food-allergies-what-you-need-know",
+    "label": "FDA: food allergies",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Ingredient/allergen information requires attention beyond nutrient totals.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.fda.gov/food/nutrition-facts-label/calories-nutrition-facts-label",
+    "label": "FDA: calories on the label",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Calories describe energy for the listed amount.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://assets.ctfassets.net/30q5w5l98nbx/3A0KfHgCWZv8al7gU36Jlg/7ea1f28881e8ac0364fe9a017507c4c7/Arbys_Nutritional_and_Allergen_JULY_2026.pdf",
+    "label": "Arby’s official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://www.deltaco.com/files/pdf/2026/nutritional-02-2026.pdf",
+    "label": "Del Taco official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://assets.ctfassets.net/whnlxz6bna9d/665Hn9SdgyT53pJgF9cmkK/090ae5fe05d8cd9643fb98fcde32ef1a/61667-1_FEE_0926_NUTBRO_SEPTEMBER_FA_rg_WCAG.pdf",
+    "label": "SONIC official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://cdn.culvers.com/menu/docs/guide-nutrition-allergen.pdf",
+    "label": "Culver’s official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "label": "Taco John’s official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://assets.ctfassets.net/0tc4847zqy12/bQFJBCmsAk4ww4qzdfAOm/10ad09aaf097d3e9fb10fc4c62af52c3/Nutrition_9.1.26.pdf",
+    "label": "QDOBA official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://www.elpolloloco.com/content/pdfs/epl_web_nutrition_guide_mod_5_2026_hr-2.pdf",
+    "label": "El Pollo Loco official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://www.noodles.com/sites/default/files/2026-01/Menu%2520Nutritionals%25201.14.pdf",
+    "label": "Noodles & Company official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://www.in-n-out.com/docs/default-source/downloads/nutrition_info.pdf?sfvrsn=332aab37_36",
+    "label": "In-N-Out official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026.",
+    "method": "Current official PDF opened with web tool; all nine burger rows, headings and January 2026 edition inspected. Local snapshot not claimed."
+  },
+  {
+    "url": "https://raisingcanes.cdn.prismic.io/raisingcanes/IxTKraMRo_HyNWx2_Allergen%26NutritionalInformation_ALL_DIGITAL_8.26.pdf",
+    "label": "Raising Cane’s official U.S. nutrition information",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. official restaurant orders",
+    "notes": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026.",
+    "method": "Official PDF downloaded by data verifier; relevant source rows and table headings inspected locally by editorial. Published fields cross-checked against the versioned record payload; no laboratory or expert review claimed."
+  },
+  {
+    "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9",
+    "label": "NIST: unit conversion factors",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Avoirdupois ounce and pound conversion factors and thermochemical calorie-to-joule conversion; rounded factors are identified as approximations.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  },
+  {
+    "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+    "label": "NIST: metric prefixes",
+    "status": "inspected",
+    "researchDate": "2026-10-04",
+    "locale": "U.S. nutrition labels; SI measurements",
+    "notes": "Milli and micro represent powers of ten; supports the conversion between milligrams and micrograms.",
+    "method": "Opened current official source with web tool; body inspected; no fabricated expert review."
+  }
+]

@@ -16,11 +16,15 @@ ROOT=Path(__file__).resolve().parents[1]
 LOGO=MARKET_LOGO
 CHAIN_SLUG={'CAVA':'cava','Chick-fil-A':'chick-fil-a','Chipotle':'chipotle','Dunkin’':'dunkin','Jersey Mike’s':'jersey-mikes','KFC':'kfc','McDonald’s':'mcdonalds','Panda Express':'panda-express','Panera':'panera','Popeyes':'popeyes','Starbucks':'starbucks','Subway':'subway','Sweetgreen':'sweetgreen','Taco Bell':'taco-bell','Wendy’s':'wendys'}
 CHAIN_PAGE={'Dunkin’':'dunkin-healthy-breakfast-macros.html','Jersey Mike’s':'jersey-mikes-healthy-subs-macros.html','Starbucks':'starbucks-healthy-food-meals-macros.html'}
+from build_restaurant_expansion import payload, metadata_overrides
+for entry in payload()['chains']:
+ CHAIN_PAGE[entry['chain']]=entry['route']
+ CHAIN_SLUG[entry['chain']]=entry['id']
 
 def home_markup(finder=None):
  meals=parse_meals()
  chains=sorted(set(m['chain'] for m in meals),key=str.casefold)
- links=''.join('<a href="'+CHAIN_PAGE.get(c,CHAIN_SLUG[c]+'-healthy-meals-macros.html')+'" data-chain-name="'+escape(c,quote=True)+'">'+mark(c)+'<span>'+escape(c)+'</span></a>' for c in chains)
+ links=''.join('<a href="'+CHAIN_PAGE.get(c,CHAIN_SLUG[c]+'-healthy-meals-macros.html')+'" data-chain-name="'+escape(c,quote=True)+'">'+mark(c)+'<span>'+escape(c)+'</span></a>' for c in ['Chipotle','Chick-fil-A','McDonald’s','Taco Bell','Arby’s','SONIC','QDOBA','In-N-Out'] if c in chains)
  text=(ROOT/'tools/market-home.inc').read_text(encoding='utf-8').replace('__CHAIN_COUNT__',str(len(chains))).replace('__MEAL_COUNT__',str(len(meals))).replace('__RESTAURANT_LINKS__',links).replace('__POPULAR_MEALS__',finder or '')
  preview=next(m for m in meals if m['chain']=='Chick-fil-A' and m['name']=='Grilled Chicken Sandwich')
  for token,value in {'NAME':preview['chain']+' · '+preview['name'],'PORTION':'1 sandwich (206 g) · U.S. menu','CAL':preview['cal'],'PROTEIN':preview['p'],'URL':preview['url']}.items():text=text.replace('__PREVIEW_'+token+'__',escape(str(value),quote=True))
@@ -29,6 +33,7 @@ def home_markup(finder=None):
 def replace_node(text,node,replacement):return text[:node['start']]+replacement+text[node['end']:]
 
 def run():
+ write_provenance()
  from build_edition_css import build
  build()
  from build_finder_snapshot import build as build_snapshot
@@ -66,7 +71,7 @@ def run():
   text=re.sub(r'<link\b(?=[^>]*rel="stylesheet")[^>]*>','',text)
   text=re.sub(r'<link\b(?=[^>]*rel="preload")(?=[^>]*as="font")[^>]*>','',text)
   text=re.sub(r'<link\b[^>]*rel="preconnect"[^>]*href="https://pagead2\.googlesyndication\.com"[^>]*>','',text)
-  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/gabarito-latin.woff2" as="font" type="font/woff2" crossorigin></head>')
+  text=text.replace('</head>','<link rel="stylesheet" href="css/publication.css"><link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin></head>')
   text=re.sub(r'<script>try\{var p=localStorage.getItem\(\'gm-theme\'\).*?</script>',"<script>try{var p=localStorage.getItem('gm-theme');document.documentElement.dataset.theme=p==='light'||p==='dark'?p:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.classList.add('js');document.documentElement.dataset.motion=localStorage.getItem('gm-motion')==='calm'?'calm':'full'}catch(e){document.documentElement.dataset.theme='light'}</script>",text,flags=re.S)
   # Publisher verification is retained. Ad serving awaits account-side CMP
   # verification; a home-made banner would not meet Google's CMP requirement.
@@ -100,9 +105,10 @@ def run():
    text=text.replace('<header class="chain-finder-intro"><h2>Find your meal</h2></header>','<header class="chain-finder-intro"><h2>Find your meal</h2><p>Choose what matters, then compare the tracked orders. Check the restaurant menu before making a swap.</p></header>')
   # Attach provenance before any meal consumer executes. All unknown fat
   # values remain null; f in the historical dataset explicitly means fiber.
-  if 'js/meal-data.js' in text:
+  if 'js/meal-data.js' in text and path.name!='index.html':
    text=re.sub(r'<script[^>]+src="js/meal-provenance.js[^>]*>.*?</script>','',text,flags=re.S)
    text=re.sub(r'(<script[^>]+src="js/meal-data\.js[^>]*>\s*</script>)',r'\1<script src="js/meal-provenance.js" defer></script>',text)
+  if path.name=='index.html':text=re.sub(r'<script[^>]+src="js/meal-provenance.js[^>]*>.*?</script>','',text,flags=re.S)
   if path.name=='index.html' and 'js/editorial-home.js' not in text:
    text=text.replace('</body>','<script src="js/editorial-home.js" defer></script></body>')
   if path.name=='search.html':
@@ -147,6 +153,9 @@ def run():
   text=re.sub(r'\n{3,}','\n\n',text)
   text=re.sub(r'(?m)^[ \t]+$','',text)
   path.write_text(text,encoding='utf-8')
+ print('Publication layout applied to all retained pages; publisher verification retained, ad requests paused.')
+
+def write_provenance():
  records=json.loads((ROOT/'tools/restaurant-review.json').read_text(encoding='utf-8'))
  metadata={r['chain']+'||'+r['name']:{'source':r['source'],'checked':r['checked'],'region':'U.S.','serving':'1 listed order','fat':None} for r in records}
  metadata['Chick-fil-A||Grilled Chicken Sandwich'].update(fat=11,serving='1 sandwich (206 g)',checked='2026-09-22',source='https://www.chick-fil-a.com/nutrition-allergens')
@@ -155,12 +164,12 @@ def run():
   for r in json.loads(patches.read_text(encoding='utf-8'))['records']:
    metadata[r['recordKey']].update(source=r['source'],checked=r['retrievalDate'],serving=r['serving'],fat=r['values'].get('fat'),sourceDate=r['sourceDate'],nutrientProvenance=next(item['nutrientProvenance'] for item in records if item['chain']+'||'+item['name']==r['recordKey']),components=r['components'],verificationStatus=r['verificationStatus'],notes=r['notes'])
  from meal_provenance import pack
+ metadata.update(metadata_overrides())
  (ROOT/'js/meal-provenance.js').write_text(pack(metadata),encoding='utf-8')
  sitemap=(ROOT/'sitemap.xml').read_text(encoding='utf-8')
  for name in [*EXAMPLES,'','blog.html','search.html','calculators.html','restaurant-meal-finder.html','privacy.html']:
   url='https://getmacros.net/'+name
   sitemap=re.sub(r'(<loc>'+re.escape(url)+r'</loc><lastmod>)[^<]+',r'\g<1>2026-09-23' if name in ('','blog.html','search.html','serving-size-vs-portion-size.html') else r'\g<1>2026-09-22',sitemap)
  (ROOT/'sitemap.xml').write_text(sitemap,encoding='utf-8')
- print('Publication layout applied to all retained pages; publisher verification retained, ad requests paused.')
 
 if __name__=='__main__':run()

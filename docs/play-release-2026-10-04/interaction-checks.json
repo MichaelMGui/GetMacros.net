@@ -1,0 +1,46 @@
+[
+  {
+    "engine": "chromium",
+    "theme": "light",
+    "touchCatch": true,
+    "finiteMotion": true,
+    "reducedMotion": true,
+    "keyboardMaze": true,
+    "untimedMemory": true,
+    "localCreativeSave": true,
+    "silhouetteDescription": true
+  },
+  {
+    "engine": "chromium",
+    "theme": "dark",
+    "touchCatch": true,
+    "finiteMotion": true,
+    "reducedMotion": true,
+    "keyboardMaze": true,
+    "untimedMemory": true,
+    "localCreativeSave": true,
+    "silhouetteDescription": true
+  },
+  {
+    "engine": "webkit",
+    "theme": "light",
+    "touchCatch": true,
+    "finiteMotion": true,
+    "reducedMotion": true,
+    "keyboardMaze": true,
+    "untimedMemory": true,
+    "localCreativeSave": true,
+    "silhouetteDescription": true
+  },
+  {
+    "engine": "webkit",
+    "theme": "dark",
+    "touchCatch": true,
+    "finiteMotion": true,
+    "reducedMotion": true,
+    "keyboardMaze": true,
+    "untimedMemory": true,
+    "localCreativeSave": true,
+    "silhouetteDescription": true
+  }
+]

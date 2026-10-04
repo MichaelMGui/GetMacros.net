@@ -48,6 +48,7 @@
     root.querySelector('.finder-complete-note')?.remove();
     const previous=new Map([...resultList.querySelectorAll('[data-meal-id]')].map(n=>[n.dataset.mealId,n.getBoundingClientRect()]));
     const results=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));
+    root.querySelector('[data-surprise]').disabled=!results.length;
     root.querySelector('.results-count').textContent=results.length+' meal'+(results.length===1?'':'s')+' match';
     const retain=firstRender&&!saved.length&&[...resultList.querySelectorAll("[data-meal-id]")].map(n=>Number(n.dataset.mealId)).join(",")===results.slice(0,visible).map(m=>meals.indexOf(m)).join(",");firstRender=false;
     if(!retain)resultList.innerHTML=results.length?results.slice(0,visible).map(mealRow).join(''):'<section class="finder-empty"><span data-food-character="pear" data-character-size="100" aria-hidden="true"></span><h2>'+ (savedOnly?'No saved meals match.':'No meals match these limits.')+'</h2><p>'+ (savedOnly?'Save an order with the Save meal button, or return to all meals.':'Your limits are unchanged. Remove an active filter above or choose different limits. Incomplete records need known values for any nutrient you filter.')+'</p><button type="button" data-reset>Clear filters</button></section>';
@@ -96,6 +97,7 @@
     if(el.hasAttribute('data-browse')){savedOnly=false;render();root.querySelector('[name=sort]').focus();track('finder_started');}
     if(el.hasAttribute('data-show-saved')){savedOnly=!savedOnly;render();track('finder_started');}
     if(el.hasAttribute('data-more')){visible+=12;render();}
+    if(el.hasAttribute('data-surprise')){const matches=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));if(!matches.length)return;const rand=new Uint32Array(1);crypto.getRandomValues(rand);const at=rand[0]%matches.length,m=matches[at];visible=Math.max(visible,Math.ceil((at+1)/pageSize)*pageSize);render();const row=resultList.querySelector('[data-meal-id="'+meals.indexOf(m)+'"]');if(row){const details=row.querySelector('.meal-detail');details.open=true;details.querySelector('summary').focus();}}
     if(el.hasAttribute('data-reset'))clear();
     if(el.hasAttribute('data-remove')){const k=el.dataset.remove;if(facets[k])state[k]=state[k].filter(v=>v!==el.dataset.value);else if(k==='complete')state.complete=true;else state[k]=null;controlsFromState();render();root.querySelector('[name=sort]').focus({preventScroll:true});}
     if(el.hasAttribute('data-save')){const m=meals[Number(el.dataset.save)],id=key(m);saved=saved.includes(id)?saved.filter(v=>v!==id):[...saved,id];try{localStorage.setItem('getmacros-saved-meals-v1',JSON.stringify(saved));}catch(e){}el.innerHTML=V.icon('save')+'<span>'+(saved.includes(id)?'Saved':'Save')+'</span>';el.setAttribute('aria-label',(saved.includes(id)?'Unsave ':'Save ')+m.name);window.GetMacrosCompanion?.respond('saved');el.setAttribute('aria-pressed',saved.includes(id));if(savedOnly)render();}
