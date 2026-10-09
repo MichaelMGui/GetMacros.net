@@ -44,7 +44,7 @@ for row in rows:
 assert facts==183
 # Forty-one report inputs produce aggregate statistics, not forty-one visible rows.
 import statistics
-complete=[r['values'] for r in audited.values() if len(r['values'])==6]
+complete=[r['values'] for r in audited.values() if r['retrievalDate']=='2026-10-03' and len(r['values'])==6]
 assert len(complete)==40
 snapshot=(ROOT/'fast-food-nutrition-data-report.html').read_text(encoding='utf-8')
 from build_restaurant_data_report import load as report_records,statistics_for
@@ -59,7 +59,9 @@ for key,patch in audited.items():
         actual=provenance[key]['fat'] if nutrient=='fat' else meals[key][nutrient]
         assert actual==value,(key,nutrient,actual,value)
     assert provenance[key]['serving']==patch['serving'],key
-    assert provenance[key]['checked']==patch['retrievalDate'],key
+    latest=provenance[key].get('sourceReview')
+    assert provenance[key]['checked']==(latest['reviewedAt'] if latest else patch['retrievalDate']),key
+    if latest:assert latest['reviewedAt']>=patch['retrievalDate'] and latest['source'].startswith('https://'),key
 # The source wire format is lossless, including the two older CFA nutrients.
 temp=OUT/'source-wire-roundtrip.js'
 temp.write_text(pack(provenance),encoding='utf-8')

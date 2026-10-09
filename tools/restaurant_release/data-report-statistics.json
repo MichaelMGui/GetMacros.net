@@ -1,0 +1,348 @@
+{
+  "snapshotDate": "2026-10-09",
+  "inspectionStart": "2026-10-03",
+  "market": "U.S.",
+  "records": 463,
+  "chains": 25,
+  "sourceInspectedRecords": 421,
+  "sourceInspectedChains": 18,
+  "exactSixNutrients": 413,
+  "exactSixNutrientsInspectedThisRelease": 410,
+  "exactFinderNutrients": 423,
+  "sourceURLs": 48,
+  "ranges": {
+    "cal": {
+      "known": 463,
+      "unknown": 0,
+      "min": 15,
+      "median": 500,
+      "max": 1570
+    },
+    "p": {
+      "known": 459,
+      "unknown": 4,
+      "min": 0,
+      "median": 23,
+      "max": 129
+    },
+    "c": {
+      "known": 458,
+      "unknown": 5,
+      "min": 0,
+      "median": 42.0,
+      "max": 180
+    },
+    "fat": {
+      "known": 423,
+      "unknown": 40,
+      "min": 3,
+      "median": 24,
+      "max": 74
+    },
+    "f": {
+      "known": 448,
+      "unknown": 15,
+      "min": 0,
+      "median": 3.0,
+      "max": 22
+    },
+    "na": {
+      "known": 458,
+      "unknown": 5,
+      "min": 0,
+      "median": 1275.0,
+      "max": 3560
+    }
+  },
+  "coverage": [
+    {
+      "chain": "Arby’s",
+      "route": "arbys-nutrition-guide.html",
+      "records": 53,
+      "calorieMin": 170,
+      "calorieMax": 870,
+      "proteinMin": 8,
+      "proteinMax": 46,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "CAVA",
+      "route": "cava-healthy-meals-macros.html",
+      "records": 4,
+      "calorieMin": 585,
+      "calorieMax": 860,
+      "proteinMin": 24,
+      "proteinMax": 42,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Chick-fil-A",
+      "route": "chick-fil-a-healthy-meals-macros.html",
+      "records": 11,
+      "calorieMin": 130,
+      "calorieMax": 1140,
+      "proteinMin": 4,
+      "proteinMax": 104,
+      "unknownFiber": 0,
+      "unknownFat": 2
+    },
+    {
+      "chain": "Chipotle",
+      "route": "chipotle-healthy-meals-macros.html",
+      "records": 6,
+      "calorieMin": 345,
+      "calorieMax": 650,
+      "proteinMin": 15,
+      "proteinMax": 48,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Culver’s",
+      "route": "culvers-nutrition-guide.html",
+      "records": 23,
+      "calorieMin": 350,
+      "calorieMax": 690,
+      "proteinMin": 13,
+      "proteinMax": 39,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Del Taco",
+      "route": "del-taco-nutrition-guide.html",
+      "records": 60,
+      "calorieMin": 110,
+      "calorieMax": 1090,
+      "proteinMin": 6,
+      "proteinMax": 51,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Dunkin’",
+      "route": "dunkin-healthy-breakfast-macros.html",
+      "records": 4,
+      "calorieMin": 180,
+      "calorieMax": 630,
+      "proteinMin": 7,
+      "proteinMax": 30,
+      "unknownFiber": 0,
+      "unknownFat": 4
+    },
+    {
+      "chain": "El Pollo Loco",
+      "route": "el-pollo-loco-nutrition-guide.html",
+      "records": 27,
+      "calorieMin": 170,
+      "calorieMax": 1100,
+      "proteinMin": 9,
+      "proteinMax": 81,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "In-N-Out",
+      "route": "in-n-out-nutrition-guide.html",
+      "records": 9,
+      "calorieMin": 210,
+      "calorieMax": 610,
+      "proteinMin": 12,
+      "proteinMax": 34,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Jersey Mike’s",
+      "route": "jersey-mikes-healthy-subs-macros.html",
+      "records": 4,
+      "calorieMin": 480,
+      "calorieMax": 950,
+      "proteinMin": 26,
+      "proteinMax": 39,
+      "unknownFiber": 0,
+      "unknownFat": 4
+    },
+    {
+      "chain": "KFC",
+      "route": "kfc-healthy-meals-macros.html",
+      "records": 5,
+      "calorieMin": 25,
+      "calorieMax": 390,
+      "proteinMin": 1,
+      "proteinMax": 41,
+      "unknownFiber": 0,
+      "unknownFat": 5
+    },
+    {
+      "chain": "McDonald’s",
+      "route": "mcdonalds-healthy-meals-macros.html",
+      "records": 6,
+      "calorieMin": 15,
+      "calorieMax": 520,
+      "proteinMin": 0,
+      "proteinMax": 30,
+      "unknownFiber": 0,
+      "unknownFat": 6
+    },
+    {
+      "chain": "Noodles & Company",
+      "route": "noodles-and-company-nutrition-guide.html",
+      "records": 22,
+      "calorieMin": 360,
+      "calorieMax": 1380,
+      "proteinMin": 20,
+      "proteinMax": 70,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Panda Express",
+      "route": "panda-express-healthy-meals-macros.html",
+      "records": 7,
+      "calorieMin": 180,
+      "calorieMax": 1570,
+      "proteinMin": 8,
+      "proteinMax": 129,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Panera",
+      "route": "panera-healthy-meals-macros.html",
+      "records": 5,
+      "calorieMin": 120,
+      "calorieMax": 670,
+      "proteinMin": 8,
+      "proteinMax": 35,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Popeyes",
+      "route": "popeyes-healthy-meals-macros.html",
+      "records": 4,
+      "calorieMin": 170,
+      "calorieMax": 430,
+      "proteinMin": 7,
+      "proteinMax": 47,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "QDOBA",
+      "route": "qdoba-nutrition-guide.html",
+      "records": 14,
+      "calorieMin": 370,
+      "calorieMax": 1220,
+      "proteinMin": 17,
+      "proteinMax": 52,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Raising Cane’s",
+      "route": "raising-canes-nutrition-guide.html",
+      "records": 3,
+      "calorieMin": 630,
+      "calorieMax": 1150,
+      "proteinMin": 41,
+      "proteinMax": 45,
+      "unknownFiber": 2,
+      "unknownFat": 0
+    },
+    {
+      "chain": "SONIC",
+      "route": "sonic-nutrition-guide.html",
+      "records": 47,
+      "calorieMin": 230,
+      "calorieMax": 970,
+      "proteinMin": 6,
+      "proteinMax": 51,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Starbucks",
+      "route": "starbucks-healthy-food-meals-macros.html",
+      "records": 5,
+      "calorieMin": 160,
+      "calorieMax": 520,
+      "proteinMin": 5,
+      "proteinMax": 20,
+      "unknownFiber": 0,
+      "unknownFat": 2
+    },
+    {
+      "chain": "Subway",
+      "route": "subway-healthy-meals-macros.html",
+      "records": 7,
+      "calorieMin": 320,
+      "calorieMax": 1140,
+      "proteinMin": 17,
+      "proteinMax": 70,
+      "unknownFiber": 0,
+      "unknownFat": 7
+    },
+    {
+      "chain": "Sweetgreen",
+      "route": "sweetgreen-healthy-meals-macros.html",
+      "records": 5,
+      "calorieMin": 465,
+      "calorieMax": 760,
+      "proteinMin": 12,
+      "proteinMax": 40,
+      "unknownFiber": 0,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Taco Bell",
+      "route": "taco-bell-healthy-meals-macros.html",
+      "records": 5,
+      "calorieMin": 260,
+      "calorieMax": 570,
+      "proteinMin": 25,
+      "proteinMax": 25,
+      "unknownFiber": 5,
+      "unknownFat": 5
+    },
+    {
+      "chain": "Taco John’s",
+      "route": "taco-johns-nutrition-guide.html",
+      "records": 122,
+      "calorieMin": 120,
+      "calorieMax": 1080,
+      "proteinMin": 6,
+      "proteinMax": 40,
+      "unknownFiber": 8,
+      "unknownFat": 0
+    },
+    {
+      "chain": "Wendy’s",
+      "route": "wendys-healthy-meals-macros.html",
+      "records": 5,
+      "calorieMin": 280,
+      "calorieMax": 560,
+      "proteinMin": 19,
+      "proteinMax": 31,
+      "unknownFiber": 0,
+      "unknownFat": 5
+    }
+  ],
+  "snapshotSHA256": "a9d583839d7ffc99d4cf544d36fbf19826b02aadda5a8bde126648557bdc5c52",
+  "originalOctober3Subset": {
+    "inspected": 41,
+    "exactSixNutrients": 40,
+    "medianCalories": 467.5,
+    "medianProtein": 28.0
+  },
+  "inspectionNotClaimed": [
+    "Kitchen measurements",
+    "Local menu availability",
+    "Allergen safety",
+    "Price verification",
+    "Representative population survey"
+  ]
+}

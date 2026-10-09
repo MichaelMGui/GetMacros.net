@@ -1,0 +1,66 @@
+{
+  "baseline": {
+    "status": "done",
+    "evidence": [
+      "baseline.json",
+      "baseline-active-files.tar.gz",
+      "baseline-build.log",
+      "baseline/"
+    ]
+  },
+  "copy": {
+    "status": "done for stated targeted scope",
+    "evidence": [
+      "copy-audit.json",
+      "copy-review-decisions.json"
+    ],
+    "limits": "No bulk article deletion or claim that all 182 article bodies were rewritten."
+  },
+  "country_data": {
+    "status": "done for 3 Canadian chains / 74 verified components",
+    "evidence": [
+      "../../tools/international/records.json",
+      "data-gaps.json"
+    ],
+    "held": "McDonald’s Canada; A&W conflicting regular mango shake; French and future markets."
+  },
+  "country_interface": {
+    "status": "done",
+    "evidence": [
+      "journeys/checks.json"
+    ],
+    "behavior": "Country and language separate; explicit URLs win; supported filters persist; incompatible selections explained; no IP redirect."
+  },
+  "tools": {
+    "status": "done",
+    "evidence": [
+      "test-results.json",
+      "journeys/checks.json"
+    ],
+    "features": "Country-safe comparator, exact component builder, drink comparison, saved notebook, public order card, explicit local-price currency; calculator unit/validation and quiz submit fixes."
+  },
+  "seo": {
+    "status": "done for implementation; indexing unavailable",
+    "evidence": [
+      "seo-research.json",
+      "query-to-page.csv",
+      "inventory.json"
+    ],
+    "limits": "No authorized Search Console or analytics access; no verified submission/indexing/traffic."
+  },
+  "verification": {
+    "status": "done locally",
+    "evidence": [
+      "routes/checks.json",
+      "browser/checks.json",
+      "additional/checks.json",
+      "journeys/checks.json",
+      "publish-test-results.json",
+      "publish-build.log"
+    ]
+  },
+  "publication": {
+    "status": "pending actual live checks",
+    "workflow": "Existing normal atomic push to main and Pages branch; no DNS changes."
+  }
+}

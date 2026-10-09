@@ -41,7 +41,7 @@
     let chips=[];
     Object.keys(facets).forEach(k=>state[k].forEach(v=>chips.push({k,v,label:facets[k].find(o=>o[0]===v)[1]})));
     Object.keys(limits).forEach(k=>{if(state[k]!==null)chips.push({k,v:'',label:limits[k][2]+': '+state[k]});});
-    if(!state.complete)chips.push({k:'complete',v:'',label:'Incomplete records included'});
+    if(!state.complete)chips.push({k:'complete',v:'',label:'Items with missing macros included'});
     root.querySelector('.active-preferences').innerHTML=chips.map(c=>'<button type="button" data-remove="'+c.k+'" data-value="'+esc(c.v)+'" aria-label="Remove '+esc(c.label)+'">'+esc(c.label)+' <span aria-hidden="true">×</span></button>').join('');
     root.querySelector('[data-filter-count]').textContent=chips.length?'('+chips.length+')':'';
   }
@@ -50,16 +50,17 @@
     const previous=new Map([...resultList.querySelectorAll('[data-meal-id]')].map(n=>[n.dataset.mealId,n.getBoundingClientRect()]));
     const results=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));
     root.querySelector('[data-surprise]').disabled=!results.length;
-    root.querySelector('.results-count').textContent=results.length+' meal'+(results.length===1?'':'s')+' match';
+    root.querySelector('.results-count').textContent=results.length+' '+(state.market==='CA'?'item':'meal')+(results.length===1?'':'s')+' match';
     const retain=firstRender&&!saved.length&&[...resultList.querySelectorAll("[data-meal-id]")].map(n=>Number(n.dataset.mealId)).join(",")===results.slice(0,visible).map(m=>meals.indexOf(m)).join(",");firstRender=false;
     if(!retain)resultList.innerHTML=results.length?results.slice(0,visible).map(mealRow).join(''):'<section class="finder-empty"><span data-food-character="pear" data-character-size="100" aria-hidden="true"></span><h2>'+ (savedOnly?'No saved meals match.':'No meals match these limits.')+'</h2><p>'+ (savedOnly?'Save an order with the Save meal button, or return to all meals.':'Your limits are unchanged. Remove an active filter above or choose different limits. Incomplete records need known values for any nutrient you filter.')+'</p><button type="button" data-reset>Clear filters</button></section>';
+    if(!results.length&&state.complete){const partial=E.results(meals,{...state,complete:false}).filter(m=>!savedOnly||saved.includes(key(m)));if(partial.length)resultList.innerHTML='<section class="finder-empty"><h2>Matching orders have missing macros.</h2><p>'+partial.length+' order'+(partial.length===1?' meets':'s meet')+' your selected limits, but calories, protein, carbs or fat are incomplete. Known values still satisfy each nutrient limit. Unknown values stay labelled.</p><button type="button" data-allow-incomplete>Show these orders</button><button class="quiet-button" type="button" data-reset>Clear filters</button></section>';}
     root.querySelector('[data-more]').hidden=results.length<=visible;
     root.querySelector('[data-more]').textContent='Show '+Math.min(12,results.length-visible)+' more meals';
     if(document.documentElement.dataset.motion!=='calm'&&!matchMedia('(prefers-reduced-motion: reduce)').matches)resultList.querySelectorAll('[data-meal-id]').forEach(n=>{const old=previous.get(n.dataset.mealId),box=n.getBoundingClientRect();if(old&&box.top<innerHeight&&box.bottom>0&&(Math.abs(old.top-box.top)>2||Math.abs(old.left-box.left)>2))n.animate([{transform:'translate('+(old.left-box.left)+'px,'+(old.top-box.top)+'px)'},{transform:'none'}],{duration:280,easing:'cubic-bezier(.22,.8,.25,1)'});});
     activeFilters();syncUrl();updateTray();
     root.querySelector('[data-show-saved]').setAttribute('aria-pressed',savedOnly);
     root.querySelector('[data-browse]').setAttribute('aria-pressed',!savedOnly);
-    root.querySelector('.home-all-results').href='restaurant-meal-finder.html'+(E.toSearch(state).toString()?'?'+E.toSearch(state):'');
+    root.querySelector('.home-all-results').href=(window.GetMacrosMarket?.route('finder')||'/restaurant-meal-finder.html')+(E.toSearch(state).toString()?'?'+E.toSearch(state):'');
     root.querySelector('.home-all-results').hidden=!root.hasAttribute('data-home-preview');
     window.GetMacrosCharacters?.enhance(root);
     root.querySelector('[data-share-status]').textContent='';
@@ -67,7 +68,7 @@
   function controlsFromState(){
     Object.keys(facets).forEach(k=>form.querySelectorAll('input[name="'+k+'"]').forEach(el=>el.checked=state[k].includes(el.value)));
     Object.keys(limits).forEach(k=>form.elements[k].value=state[k]??'');
-    form.elements.size.value=state.size[0]||'';form.elements.incomplete.checked=!state.complete;
+    if(form.elements.size)form.elements.size.value=state.size[0]||'';form.elements.incomplete.checked=!state.complete;
     root.querySelector('[name=sort]').value=state.sort;
   }
   function clear(){Object.keys(facets).forEach(k=>state[k]=[]);Object.keys(limits).forEach(k=>state[k]=null);state.complete=true;state.sort='match';savedOnly=false;visible=pageSize;controlsFromState();render();}
@@ -100,6 +101,7 @@
     if(el.hasAttribute('data-more')){visible+=12;render();}
     if(el.hasAttribute('data-surprise')){const matches=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));if(!matches.length)return;const rand=new Uint32Array(1);crypto.getRandomValues(rand);const at=rand[0]%matches.length,m=matches[at];visible=Math.max(visible,Math.ceil((at+1)/pageSize)*pageSize);render();const row=resultList.querySelector('[data-meal-id="'+meals.indexOf(m)+'"]');if(row){const details=row.querySelector('.meal-detail');details.open=true;details.querySelector('summary').focus();}}
     if(el.hasAttribute('data-reset'))clear();
+    if(el.hasAttribute('data-allow-incomplete')){state.complete=false;controlsFromState();render();const count=root.querySelector('.results-count');count.tabIndex=-1;count.focus({preventScroll:true});}
     if(el.hasAttribute('data-remove')){const k=el.dataset.remove;if(facets[k])state[k]=state[k].filter(v=>v!==el.dataset.value);else if(k==='complete')state.complete=true;else state[k]=null;controlsFromState();render();root.querySelector('[name=sort]').focus({preventScroll:true});}
     if(el.hasAttribute('data-save')){const m=meals[Number(el.dataset.save)],id=key(m);const next=window.GetMacrosNotebook?.toggle(m);if(!next){root.querySelector('[data-share-status]').textContent='This browser could not save the order. Existing saves are unchanged.';return;}saved=next;el.innerHTML=V.icon('save')+'<span>'+(saved.includes(id)?'Saved':'Save')+'</span>';el.setAttribute('aria-label',(saved.includes(id)?'Unsave ':'Save ')+m.name);window.GetMacrosCompanion?.respond('saved');el.setAttribute('aria-pressed',saved.includes(id));if(savedOnly)render();}
     if(el.hasAttribute('data-open-filters')){filterDialog.append(form);filterDialog.showModal();}
@@ -107,13 +109,13 @@
     if(el.hasAttribute('data-clear-compare')){selected=[];updateTray();}
     if(el.hasAttribute('data-open-compare')){
       const pair=selected.map(i=>meals[i]);track('comparison_used');
-      root.querySelector('.comparison-output').innerHTML=GetMacrosOrderCore.comparisonTable(pair,expectedSnapshots)+'<div class="comparison-actions"><button type="button" class="btn" data-share-comparison>Share comparison</button><button type="button" data-print>Print comparison</button><a href="compare-complete-restaurant-orders.html#order-builder">Build an order</a></div><p data-comparison-status role="status"></p>';
+      root.querySelector('.comparison-output').innerHTML=GetMacrosOrderCore.comparisonTable(pair,expectedSnapshots)+'<div class="comparison-actions"><button type="button" class="btn" data-share-comparison>Share comparison</button><button type="button" data-print>Print comparison</button><a href="'+(state.market==='CA'?'/ca/en/tools/complete-order/#order-builder':'/compare-complete-restaurant-orders.html#order-builder')+'">Build an order</a></div><p data-comparison-status role="status"></p>';
       compareDialog.showModal();
     }
     if(el.hasAttribute('data-close-compare'))compareDialog.close();
     if(el.hasAttribute('data-print'))window.print();
     if(el.hasAttribute('data-share')||el.hasAttribute('data-share-comparison')){
-      const url=new URL('restaurant-meal-finder.html',location.href);url.search=E.toSearch(state).toString();
+      const url=new URL(window.GetMacrosMarket?.route('finder')||'/restaurant-meal-finder.html',location.origin);url.search=E.toSearch(state).toString();
       const comparison=el.hasAttribute('data-share-comparison');if(comparison)selected.forEach(i=>{url.searchParams.append('compare',key(meals[i]));if(window.GetMacrosOrderCore)url.searchParams.append('snapshot',GetMacrosOrderCore.version(meals[i]));});
       const status=root.querySelector(comparison?'[data-comparison-status]':'[data-share-status]');
       try{await navigator.clipboard.writeText(url.href);status.textContent=comparison?'Comparison link copied.':'Result link copied.';}catch{status.replaceChildren();const label=document.createElement('label');label.textContent='Copy this link';const input=document.createElement('input');input.readOnly=true;input.setAttribute("aria-label",comparison?"Comparison link":"Results link");input.value=url.href;label.append(input);status.append(label);input.focus();input.select();}track('share_action');

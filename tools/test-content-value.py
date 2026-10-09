@@ -39,5 +39,6 @@ for p in ROOT.glob('*.html'):
 t=(ROOT/'body-recomposition-explained.html').read_text(encoding='utf-8')
 for i in range(1,7):assert f'id="guide-section-{i}"' in t
 assert 'not results from a GetMacros experiment' in t
-assert 'Fat or carbohydrate values can still be unverified' in (ROOT/'sources.html').read_text(encoding='utf-8')
+assert 'Complete macros means known calories, protein, carbs and fat' in (ROOT/'sources.html').read_text(encoding='utf-8')
+assert 'Fiber and sodium are checked separately when you filter them' in (ROOT/'sources.html').read_text(encoding='utf-8')
 print('PASS: 15 comparisons match source records; missing values retained; duplicate menus absent; article anchors and methodology intact.')

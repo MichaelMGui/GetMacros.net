@@ -1,0 +1,117 @@
+[
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/validate_site.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/test_publication.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/test_search_visibility.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/test_macro_math.js"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/test-companion-engine.cjs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/test-meal-view.cjs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/test-growth-tools.cjs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/international/test-markets.cjs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/growth_release/review-source.py",
+      "--validate"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/test_growth_release.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/play_release/test-rules.cjs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/test-release-content.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/test_asset_stamps.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "tools/international/audit.py"
+    ],
+    "exit_code": 0
+  }
+]

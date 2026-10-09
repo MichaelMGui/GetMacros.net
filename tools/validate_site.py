@@ -222,13 +222,13 @@ def main() -> int:
             elif not ads_paused and (len(loaders) != 1 or not re.search(r'\basync\b', loaders[0]) or 'crossorigin="anonymous"' not in loaders[0]):
                 errors.append(f"{path}: expected one async AdSense loader in head with anonymous crossorigin")
             required_nav = (
-                ("restaurant-meal-finder.html", "Find a meal"),
-                ("restaurant-meal-guides.html", "All restaurants"),
-                ("calculators.html", "Macro calculator"),
-                ("articles.html", "All guides"),
+                ("/ca/en/find-a-meal/" if path.startswith('ca/en/') else "restaurant-meal-finder.html", "Find a meal"),
+                ("/ca/en/restaurants/" if path.startswith('ca/en/') else "restaurant-meal-guides.html", "All restaurants"),
+                ("calculators.html?market=CA" if path.startswith('ca/en/') else "calculators.html", "Macro calculator"),
+                ("articles.html?market=CA" if path.startswith('ca/en/') else "articles.html", "All guides"),
             )
             for nav_href, nav_label in required_nav:
-                pattern = rf'<a\b[^>]*href=["\']{re.escape(nav_href)}["\'][^>]*>(.*?)</a>'
+                pattern = rf'<a\b[^>]*href=["\']/?{re.escape(nav_href.lstrip("/"))}["\'][^>]*>(.*?)</a>'
                 anchor = re.search(pattern, text, re.I | re.S)
                 label_text = re.sub(r'<[^>]+>', ' ', anchor.group(1)) if anchor else ''
                 label_text = ' '.join(label_text.split())
@@ -249,7 +249,7 @@ def main() -> int:
         # changes whenever the file does. Pinning it here would fail the build
         # every time the stylesheet was edited.
         publication = 'data-publication="2026-09"' in text
-        if publication and len(re.findall(r'href="css/publication\.css(?:\?[^\"]*)?"',text)) != 1:
+        if publication and len(re.findall(r'href="/?css/publication\.css(?:\?[^\"]*)?"',text)) != 1:
             errors.append(f"{path}: publication stylesheet must load exactly once")
         if not publication and not re.search(r'href="css/(?:premium-v4|reading-bundle)\.css\?v=', text):
             errors.append(f"{path}: shared premium visual system is missing")
@@ -344,7 +344,7 @@ def main() -> int:
     for path, (text, _) in pages.items():
         visible_text = re.sub(r"<(?:script|style)\b.*?</(?:script|style)>", " ", text, flags=re.I | re.S)
         visible_text = re.sub(r"<[^>]+>", " ", visible_text)
-        if re.search(r"\bfibre\b", visible_text, re.I):
+        if not path.startswith('ca/en/') and path!='search.html' and re.search(r"\bfibre\b", visible_text, re.I):
             errors.append(f"{path}: visible copy must use the U.S. spelling 'fiber'")
 
     meals = parse_meals()
@@ -472,7 +472,8 @@ def main() -> int:
         errors.append("calculators.html: stale social metadata remains")
     if '"name": "Articles"' in calc_text or "Home › Articles ›" in calc_text:
         errors.append("calculators.html: stale Articles breadcrumb remains")
-    if '"name": "Macro Calculator"' not in calc_text or 'BreadcrumbList' not in calc_text:
+    calculator_schema=[json.loads(value) for value in re.findall(r'<script type="application/ld\+json">(.*?)</script>',calc_text,re.S)]
+    if not any(value.get('@type')=='BreadcrumbList' and any(item.get('name')=='Macro Calculator' for item in value.get('itemListElement',[])) for value in calculator_schema if isinstance(value,dict)):
         errors.append("calculators.html: structured calculator breadcrumb hierarchy is missing")
 
     try:

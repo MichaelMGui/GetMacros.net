@@ -1,0 +1,24 @@
+url,type,market,purpose,live_status
+https://getmacros.net/ca/en/,home,CA,"Find Canadian restaurant meals with explicit portions, calories, protein and official Canadian nutrition sources.",pending verification
+https://getmacros.net/ca/en/restaurants/,restaurant-index,CA,"Browse source-backed Canadian guides for Tim Hortons, A&W Canada and Harvey’s, with explicit serving and coverage limits.",pending verification
+https://getmacros.net/ca/en/restaurants/a-w-canada/,restaurant,CA,"Compare exact A&W Canada Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",pending verification
+https://getmacros.net/ca/en/restaurants/harvey-s/,restaurant,CA,"Compare exact Harvey’s Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",pending verification
+https://getmacros.net/ca/en/restaurants/tim-hortons/,restaurant,CA,"Compare exact Tim Hortons Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",pending verification
+https://getmacros.net/ca/en/find-a-meal/,finder,CA,"Filter Canadian restaurant orders by calories, protein, fibre and sodium. Compare exact portions without substituting U.S. menus.",pending verification
+https://getmacros.net/ca/en/collections/breakfast/,collection,CA,"Compare A&W and Tim Hortons Canadian breakfast portions, calories, protein and sodium, then count your drink and side separately.",pending verification
+https://getmacros.net/ca/en/collections/protein-meals/,collection,CA,"Compare tracked Canadian restaurant items with at least 25 g protein, including calories, portions and sodium rather than a made-up health score.",pending verification
+https://getmacros.net/ca/en/tools/complete-order/,tool,CA,"Add exact Canadian entrées, sides and drinks, with honest known subtotals and a source-backed A&W complete-order example.",pending verification
+https://getmacros.net/ca/en/tools/drink-comparison/,tool,CA,"Compare Canadian Tim Hortons and A&W named drink sizes, calories, protein and total sugars without guessing customisation values.",pending verification
+https://getmacros.net/ca/en/menu-sources/,methodology,CA,"Check the Canadian restaurant selection, source editions, retrieval dates, missing fields, withheld values and menu update history.",pending verification
+https://getmacros.net/,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/calculators.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/sources.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/fast-food-nutrition-data-report.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/breakfast-dataset-not-opening-hours.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/exact-fiber-coverage-denominator.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/menu-pdf-filename-not-edition-date.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/restaurant-search-result-count-scope.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/same-restaurant-name-different-market-data.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/menu-average-chain-weighting.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/published-vs-calculated-restaurant-rows.html,improved existing,global or US,"Copy, task clarity or country context",pending verification
+https://getmacros.net/burger-variants-not-nine-base-burgers.html,improved existing,global or US,"Copy, task clarity or country context",pending verification

@@ -1,0 +1,761 @@
+[
+  {
+    "country": "US",
+    "restaurant": "Chick-fil-A",
+    "order": "Market Salad with Grilled Nuggets",
+    "id": "Chick-fil-A||Market Salad with Grilled Nuggets",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Chick-fil-A",
+    "order": "Cobb Salad with Spicy Grilled Filet (Cold)",
+    "id": "Chick-fil-A||Cobb Salad with Spicy Grilled Filet (Cold)",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.chick-fil-a.com/nutrition-allergens",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Subway",
+    "order": "6-inch Veggie Delite",
+    "id": "Subway||6-inch Veggie Delite",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Subway",
+    "order": "6-inch Oven-Roasted Turkey",
+    "id": "Subway||6-inch Oven-Roasted Turkey",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Subway",
+    "order": "6-inch Grilled Chicken & Fresh Avocado",
+    "id": "Subway||6-inch Grilled Chicken & Fresh Avocado",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Subway",
+    "order": "Footlong Grilled Chicken & Fresh Avocado",
+    "id": "Subway||Footlong Grilled Chicken & Fresh Avocado",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Subway",
+    "order": "Grilled Chicken Salad",
+    "id": "Subway||Grilled Chicken Salad",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Subway",
+    "order": "Footlong Grilled Chicken",
+    "id": "Subway||Footlong Grilled Chicken",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Subway",
+    "order": "Footlong Meatball Marinara",
+    "id": "Subway||Footlong Meatball Marinara",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://media.subway.com/dam/urn:aaid:aem:2278372c-147b-42f2-8edc-7d8d94d1f07e/original/as/us-nutrition-en.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Starbucks",
+    "order": "Rolled & Steel-Cut Oatmeal",
+    "id": "Starbucks||Rolled & Steel-Cut Oatmeal",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.starbucks.com/menu/product/301/single",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Starbucks",
+    "order": "Cheese Trio Protein Box",
+    "id": "Starbucks||Cheese Trio Protein Box",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.starbucks.com/menu/product/2123222/single",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "McDonald’s",
+    "order": "Hamburger",
+    "id": "McDonald’s||Hamburger",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.mcdonalds.com/us/en-us/product/hamburger.html",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "McDonald’s",
+    "order": "Egg McMuffin",
+    "id": "McDonald’s||Egg McMuffin",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.mcdonalds.com/us/en-us/product/egg-mcmuffin.html",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "McDonald’s",
+    "order": "McChicken",
+    "id": "McDonald’s||McChicken",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.mcdonalds.com/us/en-us/product/mcchicken.html",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "McDonald’s",
+    "order": "Quarter Pounder with Cheese",
+    "id": "McDonald’s||Quarter Pounder with Cheese",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.mcdonalds.com/us/en-us/product/quarter-pounder-with-cheese.html",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "McDonald’s",
+    "order": "Double Cheeseburger",
+    "id": "McDonald’s||Double Cheeseburger",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.mcdonalds.com/us/en-us/product/double-cheeseburger.html",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "McDonald’s",
+    "order": "Apple Slices",
+    "id": "McDonald’s||Apple Slices",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.mcdonalds.com/us/en-us/product/apple-slices.html",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Wendy’s",
+    "order": "Classic Chicken Sandwich",
+    "id": "Wendy’s||Classic Chicken Sandwich",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://order.wendys.com/us/en/national/menu/chicken-nuggets-more/classic-chicken-sandwich",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Wendy’s",
+    "order": "Grilled Chicken Ranch Wrap",
+    "id": "Wendy’s||Grilled Chicken Ranch Wrap",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://order.wendys.com/us/en/national/menu/chicken-nuggets-more/grilled-chicken-wrap",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Wendy’s",
+    "order": "Apple Pecan Salad with one dressing packet",
+    "id": "Wendy’s||Apple Pecan Salad with one dressing packet",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://order.wendys.com/us/en/national/menu/fresh-made-salads/apple-pecan-salad",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Wendy’s",
+    "order": "Chili, small",
+    "id": "Wendy’s||Chili, small",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://order.wendys.com/us/en/national/menu/fries-sides/chili",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Wendy’s",
+    "order": "Dave’s Single",
+    "id": "Wendy’s||Dave’s Single",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://order.wendys.com/us/en/national/menu/hamburgers/daves-single",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco Bell",
+    "order": "Cantina Chicken Soft Taco",
+    "id": "Taco Bell||Cantina Chicken Soft Taco",
+    "missing_macros": [
+      "p",
+      "c",
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "f",
+      "na",
+      "sugar"
+    ],
+    "source": "https://www.tacobell.com/food/tacos",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco Bell",
+    "order": "Cantina Chicken Bowl",
+    "id": "Taco Bell||Cantina Chicken Bowl",
+    "missing_macros": [
+      "c",
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "f",
+      "na",
+      "sugar"
+    ],
+    "source": "https://www.tacobell.com/food/bowls",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco Bell",
+    "order": "Veggie Bowl",
+    "id": "Taco Bell||Veggie Bowl",
+    "missing_macros": [
+      "p",
+      "c",
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "f",
+      "na",
+      "sugar"
+    ],
+    "source": "https://www.tacobell.com/food/bowls",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco Bell",
+    "order": "Bean Burrito",
+    "id": "Taco Bell||Bean Burrito",
+    "missing_macros": [
+      "p",
+      "c",
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "f",
+      "na",
+      "sugar"
+    ],
+    "source": "https://www.tacobell.com/food/burritos",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco Bell",
+    "order": "Cantina Chicken Burrito",
+    "id": "Taco Bell||Cantina Chicken Burrito",
+    "missing_macros": [
+      "p",
+      "c",
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "f",
+      "na",
+      "sugar"
+    ],
+    "source": "https://www.tacobell.com/food/burritos",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "KFC",
+    "order": "Original Recipe Drumstick",
+    "id": "KFC||Original Recipe Drumstick",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "KFC",
+    "order": "Original Recipe Breast",
+    "id": "KFC||Original Recipe Breast",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "KFC",
+    "order": "Kentucky Grilled Chicken Breast",
+    "id": "KFC||Kentucky Grilled Chicken Breast",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "KFC",
+    "order": "Green Beans, individual",
+    "id": "KFC||Green Beans, individual",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "KFC",
+    "order": "Grilled Breast with green beans and corn",
+    "id": "KFC||Grilled Breast with green beans and corn",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.nutritionix.com/kfc/menu/premium",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Jersey Mike’s",
+    "order": "Turkey and Provolone Bowl, Mike’s Way",
+    "id": "Jersey Mike’s||Turkey and Provolone Bowl, Mike’s Way",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Jersey Mike’s",
+    "order": "Mini Turkey and Provolone, Mike’s Way",
+    "id": "Jersey Mike’s||Mini Turkey and Provolone, Mike’s Way",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Jersey Mike’s",
+    "order": "Turkey and Provolone Wrap, Mike’s Way",
+    "id": "Jersey Mike’s||Turkey and Provolone Wrap, Mike’s Way",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Jersey Mike’s",
+    "order": "Regular Veggie Sub, Mike’s Way",
+    "id": "Jersey Mike’s||Regular Veggie Sub, Mike’s Way",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://www.jerseymikes.com/menu/nutrition",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Dunkin’",
+    "order": "Egg & Cheese Wake-Up Wrap",
+    "id": "Dunkin’||Egg & Cheese Wake-Up Wrap",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Dunkin’",
+    "order": "Egg & Cheese English Muffin",
+    "id": "Dunkin’||Egg & Cheese English Muffin",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Dunkin’",
+    "order": "Turkey Sausage Wake-Up Wrap",
+    "id": "Dunkin’||Turkey Sausage Wake-Up Wrap",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Dunkin’",
+    "order": "Sourdough Breakfast Sandwich",
+    "id": "Dunkin’||Sourdough Breakfast Sandwich",
+    "missing_macros": [
+      "fat"
+    ],
+    "missing_other_nutrients": [
+      "sugar"
+    ],
+    "source": "https://assets.ctfassets.net/ubkcphxhphh0/4zSgulxInizXp52K1eizxO/8874a0423b75607ac0e0182cbf48fcf2/DD_W6_nutrition_guide.pdf",
+    "source_checked": "2026-09-09",
+    "verification_status": "legacy-source-record; not reverified for the Canadian launch"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Crispy Taco, Chicken",
+    "id": "Taco John’s||Crispy Taco, Chicken",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Crispy Taco, Chipotle Shredded Chicken (Limited Time)",
+    "id": "Taco John’s||Crispy Taco, Chipotle Shredded Chicken (Limited Time)",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Crispy Taco, Steak",
+    "id": "Taco John’s||Crispy Taco, Steak",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Crispy Taco, Super, Chipotle Shredded Chicken (Limited Time)",
+    "id": "Taco John’s||Crispy Taco, Super, Chipotle Shredded Chicken (Limited Time)",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Crispy Taco, Super, Steak",
+    "id": "Taco John’s||Crispy Taco, Super, Steak",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Softshell Taco, Chipotle Shredded Chicken (Limited Time)",
+    "id": "Taco John’s||Softshell Taco, Chipotle Shredded Chicken (Limited Time)",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Cheesy Snack Quesadilla",
+    "id": "Taco John’s||Cheesy Snack Quesadilla",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Taco John’s",
+    "order": "Chicken Snack Quesadilla",
+    "id": "Taco John’s||Chicken Snack Quesadilla",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official source inspected; published row transcribed"
+  },
+  {
+    "country": "US",
+    "restaurant": "Raising Cane’s",
+    "order": "3 fingers with fries, sauce and Texas Toast (individual portions)",
+    "id": "Raising Cane’s||3 fingers with fries, sauce and Texas Toast (individual portions)",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://raisingcanes.cdn.prismic.io/raisingcanes/IxTKraMRo_HyNWx2_Allergen%26NutritionalInformation_ALL_DIGITAL_8.26.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official individual portions inspected; GetMacros sum calculated"
+  },
+  {
+    "country": "US",
+    "restaurant": "Raising Cane’s",
+    "order": "3 fingers with Texas Toast and coleslaw (individual portions)",
+    "id": "Raising Cane’s||3 fingers with Texas Toast and coleslaw (individual portions)",
+    "missing_macros": [],
+    "missing_other_nutrients": [
+      "f",
+      "sugar"
+    ],
+    "source": "https://raisingcanes.cdn.prismic.io/raisingcanes/IxTKraMRo_HyNWx2_Allergen%26NutritionalInformation_ALL_DIGITAL_8.26.pdf",
+    "source_checked": "2026-10-04",
+    "verification_status": "official individual portions inspected; GetMacros sum calculated"
+  }
+]

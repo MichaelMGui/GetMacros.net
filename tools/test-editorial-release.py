@@ -57,7 +57,10 @@ def run():
             if len(p.split())<10:continue
             if p in paragraphs:repeated.append({'routes':[paragraphs[p],row['slug']],'paragraph':p})
             paragraphs[p]=row['slug']
-        for r in row['related']:assert (ROOT/r['url'].split('?')[0]).exists(),(row['slug'],r['url'])
+        for r in row['related']:
+            target=ROOT/r['url'].split('?')[0].lstrip('/')
+            if target.is_dir():target=target/'index.html'
+            assert target.is_file(),(row['slug'],r['url'])
         if (ROOT/row['slug']).exists():
             html=(ROOT/row['slug']).read_text(encoding='utf-8')
             assert row['title'] in unescape(html)

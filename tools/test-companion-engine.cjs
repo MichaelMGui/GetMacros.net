@@ -5,7 +5,8 @@ const meals=[meal('Baseline'),meal('Lower calories',{cal:400,p:25,chain:'B'}),me
 const reports=[];function test(name,run){try{run();reports.push({name,result:'pass'});}catch(e){reports.push({name,result:'fail',message:e.message});}}
 const state=values=>E.normalize(values,meals),names=s=>E.results(meals,s).map(m=>m.name);
 test('Calorie maximum is strict and inclusive',()=>{assert.deepEqual(new Set(names(state({maxCal:450}))),new Set(['Lower calories','Vegetarian','Plant breakfast']));});
-test('Protein minimum is strict and inclusive',()=>{assert.deepEqual(new Set(names(state({minProtein:30}))),new Set(['Baseline','Higher protein']));});
+test('Protein minimum is strict and inclusive; optional fiber/sodium do not imply missing macros',()=>{assert.deepEqual(new Set(names(state({minProtein:30}))),new Set(['Baseline','Higher protein','Unknown fiber','Unknown sodium']));});
+test('Complete macros require calories, protein, carbs and fat, with genuine zero preserved',()=>{assert.equal(E.complete(meal('zero fat',{fat:0})),true);for(const k of ['cal','p','c','fat'])assert.equal(E.complete(meal('missing',{[k]:null})),false);assert.equal(E.complete(meal('optional missing',{f:null,na:null})),true);});
 test('Fiber minimum uses the actual value and includes its boundary',()=>{assert.deepEqual(names(state({minFiber:6})),['Plant breakfast']);assert.equal(E.eligible(meals[0],state({minFiber:5})),true);});
 test('Sodium maximum uses milligrams and includes its boundary',()=>{assert.deepEqual(names(state({maxSodium:500})),['Plant breakfast']);assert.equal(E.eligible(meals[0],state({maxSodium:700})),true);});
 test('Fiber and sodium limits exclude unknown nutrient values',()=>{assert.equal(E.eligible(meals[5],state({complete:false,minFiber:1})),false);assert.equal(E.eligible(meals[6],state({complete:false,maxSodium:1000})),false);});
@@ -27,7 +28,7 @@ test('Production provenance expands losslessly and preserves partial-source date
  const vm=require('node:vm'),context={window:{}};vm.createContext(context);
  for(const file of ['js/meal-data.js','js/meal-provenance.js'])vm.runInContext(fs.readFileSync(file,'utf8'),context,{filename:file});
  const actual=context.window.GM_MEALS;const expansion=JSON.parse(fs.readFileSync('tools/restaurant_release/expansion-payload.json','utf8'));assert.equal(actual.length,expansion.baseRecords+expansion.newOrders);
- const patches=JSON.parse(fs.readFileSync('docs/release-2026-10-03/data-audited-patches.json','utf8')).records;assert.equal(patches.length,41);
+ const patches=JSON.parse(fs.readFileSync('docs/release-2026-10-03/data-audited-patches.json','utf8')).records;assert.equal(patches.length,43);
  for(const patch of patches){const record=actual.find(m=>m.chain+'||'+m.name===patch.recordKey);assert.ok(record,patch.recordKey);assert.equal(record.serving,patch.serving);for(const [nutrient,value] of Object.entries(patch.values)){assert.equal(record[nutrient],value,patch.recordKey+' '+nutrient);const provenance=record.nutrientProvenance[nutrient];assert.equal(typeof provenance,'object');assert.equal(provenance.retrieved,patch.nutrientProvenance[nutrient].retrieved);assert.equal(provenance.method,patch.nutrientProvenance[nutrient].method);assert.equal(provenance.source,patch.nutrientProvenance[nutrient].source);}}
  const partial=actual.find(m=>m.chain==='Chick-fil-A'&&m.name==='Grilled Nuggets, 12 count');assert.ok(partial);assert.equal(partial.nutrientProvenance.p.retrieved,'2026-10-03');assert.equal(partial.nutrientProvenance.f.retrieved,'2026-09-09');assert.equal(partial.nutrientProvenance.na.retrieved,'2026-09-09');
 });

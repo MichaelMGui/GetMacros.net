@@ -325,7 +325,7 @@ def build_improvements():
         for r in records:
             source_refs.append({'key':key(r['chain'],r['name']),'url':r['source'],'recordInspectionDate':r['checked'],'sourceEdition':r.get('sourceDate'),'method':r['verificationStatus'],'newSourceInspection':CURRENT_SOURCE_REVIEW[r['chain']]['method'],'currentSourceReviewDate':'2026-10-09','portion':r['serving'],'region':r['region']})
         source_rows={ (r['source'],r['checked'],r.get('sourceDate')):r for r in records }
-        links='<details><summary>Source editions for this comparison</summary><ul>'+''.join('<li><a href="'+html.escape(r['source'],quote=True)+'">'+html.escape(r['chain']+' official source')+'</a> · recorded inspection '+html.escape(r['checked'])+' · edition '+html.escape(r.get('sourceDate') or 'not established')+'</li>' for r in source_rows.values())+'</ul><p>The content addition is dated October 9, 2026. Stored record-inspection dates and printed editions above are unchanged.</p></details>'
+        links='<details><summary>Source editions for this comparison</summary><ul>'+''.join('<li><a href="'+html.escape(r['source'],quote=True)+'">'+html.escape(r['chain']+' official source')+'</a> · recorded inspection '+html.escape(r['checked'])+' · edition '+html.escape(r.get('sourceDate') or 'not established')+'</li>' for r in source_rows.values())+'</ul></details>'
         body+=links
         guide=i<10
         anchor='<section class="chain-menu-section" id="menu-comparison">' if guide else '<h2 id="resource-section-4">Sources and date boundaries</h2>' if i<18 else '<section class="guide-sources">' if i==18 else '<section class="hub-notes container">'

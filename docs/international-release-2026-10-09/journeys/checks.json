@@ -1,0 +1,64 @@
+{
+  "production": false,
+  "time": "2026-10-09T18:54:01.855Z",
+  "checks": [
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 390,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 1440,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 390,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 1440,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 390,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 1440,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 390,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 1440,
+      "result": "pass",
+      "scope": "country navigation/history; Canadian quiz and supported choices; calculator validation/units; all header panels; mobile nav; exact results/filter/share/compare/save/download; notes/refresh/removal; empty results; Canadian builder/drinks; local currency; market search; reduced motion; 200% text"
+    }
+  ],
+  "failures": [],
+  "clipboard": "Mocked clipboard writes; link content and navigation verified."
+}

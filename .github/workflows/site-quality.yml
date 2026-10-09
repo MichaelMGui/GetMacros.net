@@ -36,6 +36,7 @@ jobs:
           node tools/test-companion-engine.cjs
           node tools/test-meal-view.cjs
           node tools/test-growth-tools.cjs
+          node tools/international/test-markets.cjs
           python3 tools/growth_release/review-source.py --validate
           python3 tools/test_growth_release.py
           node tools/play_release/test-rules.cjs

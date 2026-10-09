@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-09",
+  "first_party_access": "No authorized Search Console/analytics export or session was available. Visitor uplift and demand were not measured.",
+  "search_volume": null,
+  "keyword_difficulty": null,
+  "traffic_forecast": null,
+  "guidance": [
+    {
+      "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+      "implementation": "Separate crawlable Canadian URLs, explicit country choice, no IP redirects, U.S. URLs retained."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "implementation": "Self canonicals; reciprocal en-CA/en-US only for equivalent homepage, directory and finder. No French or unrelated-guide alternates."
+    }
+  ],
+  "observed_search_results": [
+    {
+      "query": "Tim Hortons Canada protein latte nutrition breakfast calories",
+      "locale": "Canada intended; search engine locale not forced",
+      "sources": [
+        "https://www.timhortons.ca/nutrition-and-allergens",
+        "https://timhortons-menus.ca/wp-content/uploads/2025/11/Tim-Hortons-Nutrition-Guide.pdf",
+        "https://menupricetoday.com/ca/brands/tim-hortons/menu/latte-proteine"
+      ],
+      "observation": "Results mix official navigation, a third-party older PDF and product/price pages. Third-party values/prices were not imported. Exact current linked PDF edition and named size improve the answer.",
+      "implemented": [
+        "/ca/en/tools/drink-comparison/",
+        "/ca/en/restaurants/tim-hortons/",
+        "/ca/en/collections/breakfast/"
+      ]
+    },
+    {
+      "query": "A&W Canada Teen Burger meal calories fries root beer",
+      "locale": "Canada intended; search engine locale not forced",
+      "sources": [
+        "https://web.aw.ca/en/our-menu",
+        "https://awmenu.ca/calculator",
+        "https://awmenu.ca/teen-burger",
+        "https://www.dwlz.com/Restaurants/awrootbeer.html"
+      ],
+      "observation": "Results include complete-order calculators, item pages and old calorie tables with differing values. We used current official serving drawers, explicit drink/fries sizes and a transparent three-component sum. No local prices or competitor numbers were reused.",
+      "implemented": [
+        "/ca/en/tools/complete-order/",
+        "/ca/en/restaurants/a-w-canada/"
+      ]
+    },
+    {
+      "query": "Harvey's Canada grilled chicken sandwich nutrition sodium",
+      "locale": "Canada intended; search engine locale not forced",
+      "sources": [
+        "https://www.harveys.ca/en/nutrition.html",
+        "https://www.harveys.ca/en/menu/pickup/i106059/grilled-chicken-sandwich.html?s=1924",
+        "https://rippedrestaurants.com/ca/chains/harveys/grilled-chicken"
+      ],
+      "observation": "Results can describe the chicken component instead of the complete sandwich. Our guide identifies the sandwich serving, includes sodium and keeps separately selected garnishes distinct.",
+      "implemented": [
+        "/ca/en/restaurants/harvey-s/",
+        "/ca/en/collections/protein-meals/"
+      ]
+    }
+  ],
+  "scope": "Qualitative research, not measured demand, ranking or competitor traffic. Official sources establish nutrition; search results establish observed page types only."
+}

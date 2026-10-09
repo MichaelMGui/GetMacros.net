@@ -1,0 +1,14 @@
+/* Portable order cards contain public menu facts, never private notes or goals. */
+(function(global){'use strict';const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function wrap(text,max=55){const lines=[];let line='';for(const token of String(text||'').split(/\s+/)){const chunks=token.match(new RegExp('.{1,'+max+'}','g'))||[''];for(const word of chunks){if(line.length&&line.length+1+word.length>max){lines.push(line);line='';}line+=(line?' ':'')+word;if(line.length>=max){lines.push(line);line='';}}}if(line)lines.push(line);return lines;}
+function svg(m){const C=global.GetMacrosOrderCore;const title=wrap(m.name,44),portion=wrap(m.serving,70),sources=(m.components?.filter(x=>x.source).map(x=>x.source)||[m.source]).filter(Boolean),sourceLines=[...new Set(sources)].flatMap(s=>wrap(s,78));const h=520+(title.length+portion.length+sourceLines.length)*27;
+ let y=100;const line=(s,size=20,color='#233c2c')=>{const out='<text x="44" y="'+y+'" font-family="Arial, sans-serif" font-size="'+size+'" fill="'+color+'">'+esc(s)+'</text>';y+=size+12;return out};
+ let text=line(m.chain+' · '+(m.country==='CA'?'Canada':m.country==='US'||m.region==='U.S.'?'United States':m.region||'Market not established'),20,'#526457');text+=title.map(s=>line(s,32)).join('');text+=portion.map(s=>line(s,17,'#526457')).join('');y+=22;
+ for(const [k,[label,unit]] of Object.entries(C.fields)){if(k==='sugar')continue;text+=line(label+': '+(C.finite(m[k])?m[k].toLocaleString('en-US')+' '+unit:'Not verified'),22);}y+=15;text+=line('Source edition: '+(m.sourceDate||'Not established'),16,'#526457');text+=line('Source checked: '+(m.checked||'Not established'),16,'#526457');text+=sourceLines.map(s=>line(s,13,'#526457')).join('');text+=line('Listed portions; extras are separate unless included.',15,'#526457');
+ return '<svg xmlns="http://www.w3.org/2000/svg" width="760" height="'+Math.max(h,y+45)+'" viewBox="0 0 760 '+Math.max(h,y+45)+'"><rect width="760" height="100%" fill="#fffef8"/><path d="M44 44h672" stroke="#2c6443" stroke-width="3"/><text x="44" y="35" font-family="Arial,sans-serif" font-size="17" fill="#2c6443">GetMacros · Exact order</text>'+text+'</svg>';
+}
+function download(m){const url=URL.createObjectURL(new Blob([svg(m)],{type:'image/svg+xml'}));const a=document.createElement('a');a.href=url;a.download='getmacros-'+(m.country||'menu').toLowerCase()+'-order.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+global.GetMacrosOrderShare=Object.freeze({svg,download});
+if(typeof document!=='undefined')document.addEventListener('click',e=>{const b=e.target.closest('[data-order-card]');if(!b)return;const m=global.GM_MEALS?.[Number(b.dataset.orderCard)];if(m){download(m);b.textContent='Card downloaded';setTimeout(()=>b.textContent='Download order card',2000);}});
+if(typeof module!=='undefined')module.exports={svg,wrap};
+})(typeof window==='undefined'?globalThis:window);

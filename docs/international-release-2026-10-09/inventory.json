@@ -1,0 +1,2747 @@
+{
+  "routes": 302,
+  "families": {
+    "error": 1,
+    "trust": 5,
+    "legal": 3,
+    "article": 182,
+    "restaurant": 28,
+    "reference-index": 4,
+    "journal": 1,
+    "meal-ideas": 1,
+    "calculator-hub": 1,
+    "calculator": 7,
+    "contact": 1,
+    "home": 2,
+    "game": 56,
+    "game-index": 1,
+    "finder": 2,
+    "search": 1,
+    "restaurant-index": 1,
+    "collection": 2,
+    "tool": 2,
+    "methodology": 1
+  },
+  "pages": [
+    {
+      "route": "/404.html",
+      "family": "error",
+      "market_scope": "global",
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist. Find protein, fat, and carbohydrate guides, calculators, quizzes, and the full glossary on GetMacros.net.",
+      "main_paragraphs": 3,
+      "incoming_links": 2
+    },
+    {
+      "route": "/about.html",
+      "family": "trust",
+      "market_scope": "global",
+      "title": "About GetMacros | Nutrition Tools, Data & Editorial Standards",
+      "description": "Learn how GetMacros builds its macro calculators, restaurant nutrition guides and articles, including the data sources and editorial standards.",
+      "main_paragraphs": 6,
+      "incoming_links": 306
+    },
+    {
+      "route": "/accessibility.html",
+      "family": "legal",
+      "market_scope": "global",
+      "title": "Accessibility at GetMacros",
+      "description": "We want the site to be comfortable to read and use on phones, larger screens and with a keyboard. Tell us when something gets in the way.",
+      "main_paragraphs": 6,
+      "incoming_links": 309
+    },
+    {
+      "route": "/added-sugar-percentage-from-grams.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Calculate added-sugars % Daily Value from grams | GetMacros",
+      "description": "Use the U.S. label reference without turning it into a personal sugar prescription.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/arbys-breakfast-bread-format.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Arby’s bacon breakfast: biscuit, croissant, wrap or sourdough? | GetMacros",
+      "description": "The bread format changes the complete breakfast, not just its shape.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/arbys-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Arby’s Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 53 recorded U.S. Arby’s orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 207,
+      "incoming_links": 63
+    },
+    {
+      "route": "/arbys-roast-beef-cheddar-french-dip.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Arby’s roast beef, Beef ’n Cheddar or French Dip? | GetMacros",
+      "description": "Three sandwiches show why equal protein does not mean equal sodium.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/arbys-sliders-count-whole-tray.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Arby’s sliders: one row is one slider | GetMacros",
+      "description": "A slider comparison needs the number on your tray.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/are-diet-drinks-bad-for-you.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Are Diet Drinks Bad for You? | GetMacros",
+      "description": "Are diet drinks bad for you? Separate sweetener safety, weight-control evidence and practical drink choices without treating every can as good or bad.",
+      "main_paragraphs": 21,
+      "incoming_links": 15
+    },
+    {
+      "route": "/articles.html",
+      "family": "reference-index",
+      "market_scope": "global",
+      "title": "Nutrition basics: Calories, Macros & Healthy Eating | GetMacros",
+      "description": "Find clear answers about calories, protein, carbs, fat and eating out. Browse practical nutrition guides with examples and sources.",
+      "main_paragraphs": 10,
+      "incoming_links": 3059
+    },
+    {
+      "route": "/as-packaged-vs-prepared-nutrition.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "As packaged vs as prepared: which nutrition column do I use? | GetMacros",
+      "description": "Avoid counting milk or oil twice. Check what an as-prepared column includes and adjust a worked example when your preparation differs.",
+      "main_paragraphs": 13,
+      "incoming_links": 10
+    },
+    {
+      "route": "/best-fast-food-restaurants-for-your-goals.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Healthy fast food: which restaurant fits your goal? | GetMacros",
+      "description": "Compare real orders for protein, calories, fiber and portion size. The best choice depends on what you want from your next meal.",
+      "main_paragraphs": 20,
+      "incoming_links": 15
+    },
+    {
+      "route": "/blog.html",
+      "family": "journal",
+      "market_scope": "global",
+      "title": "GetMacros Journal | Eating Out and Nutrition Guides",
+      "description": "Clear, source-linked answers about restaurant meals, protein, calories and everyday nutrition. Read the GetMacros Journal.",
+      "main_paragraphs": 1,
+      "incoming_links": 309
+    },
+    {
+      "route": "/body-recomposition-explained.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Body Recomposition: How to Track Progress | GetMacros",
+      "description": "Track body recomposition with consistent measurements, training notes and realistic expectations. Learn what changes in weight, waist and strength can tell you.",
+      "main_paragraphs": 12,
+      "incoming_links": 13
+    },
+    {
+      "route": "/breakfast-bacon-format-sodium-cross-chain.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A bacon breakfast comparison needs its bread format | GetMacros",
+      "description": "Arby’s and SONIC have similar-calorie choices with different sodium.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/breakfast-dataset-not-opening-hours.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Does a breakfast result mean breakfast is available now? | GetMacros",
+      "description": "Use a breakfast nutrition result to choose an order, then check local hours, availability, sides and drink portions before buying.",
+      "main_paragraphs": 21,
+      "incoming_links": 7
+    },
+    {
+      "route": "/breakfast-drinks-and-add-ons.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Breakfast calories: count the drink, spread and side | GetMacros",
+      "description": "Build a complete breakfast comparison instead of judging a sandwich alone. A worked order example includes a drink and side with clear source checks.",
+      "main_paragraphs": 16,
+      "incoming_links": 9
+    },
+    {
+      "route": "/breakfast-food-vs-combo-menu.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Breakfast item or breakfast combo: compare the same thing | GetMacros",
+      "description": "Separate the food-only entry from its optional side and drink.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/breakfast-sandwich-half-not-half-protein.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Half a sandwich may not be half of every nutrient | GetMacros",
+      "description": "Dividing a mixed food requires a composition assumption, not just a knife.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/breakfast-two-items-not-one-entry.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A breakfast order with two items needs two nutrition entries | GetMacros",
+      "description": "Count the actual food and drink instead of borrowing a single-item menu total.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/breakfast-yogurt-topping-layer.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Calculate yogurt with a topping without treating it as one label | GetMacros",
+      "description": "Separate the pot, topping and portion you actually use.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/budget-meal-builder.html",
+      "family": "meal-ideas",
+      "market_scope": "global",
+      "title": "Simple meal ideas: Easy Breakfasts, Lunches & Dinners | GetMacros",
+      "description": "Six simple meal ideas with ingredients, quick preparation steps and easy swaps. Find breakfast, lunch, dinner and vegetarian options.",
+      "main_paragraphs": 21,
+      "incoming_links": 5
+    },
+    {
+      "route": "/burger-variants-not-nine-base-burgers.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "In-N-Out burger variations: compare the exact build | GetMacros",
+      "description": "Standard, sauce and Protein Style entries describe different servings.",
+      "main_paragraphs": 20,
+      "incoming_links": 7
+    },
+    {
+      "route": "/burrito-wrap-cross-chain-no-size-standard.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A wrap is not a burrito serving standard | GetMacros",
+      "description": "Small wraps and large named burritos should not share one assumed portion.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calculate-macros-mixed-bowl.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Calculate a bowl’s macros from separate food labels | GetMacros",
+      "description": "Scale each ingredient to the amount in your bowl, then add calories and protein. A four-part example includes a sauce and prevents mixed-unit errors.",
+      "main_paragraphs": 12,
+      "incoming_links": 10
+    },
+    {
+      "route": "/calculator-activity-choice-sensitivity.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Activity choices can change an estimate more than decimal places | GetMacros",
+      "description": "Use the activity description honestly instead of chasing a precise-looking result.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calculator-height-feet-inches-not-decimal.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "5 feet 10 inches is not 5.10 feet | GetMacros",
+      "description": "Convert compound height correctly before using an estimate.",
+      "main_paragraphs": 13,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calculator-input-basis-checklist.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Before calculating: five checks on the nutrition input | GetMacros",
+      "description": "A correct formula cannot repair a mismatched source.",
+      "main_paragraphs": 13,
+      "incoming_links": 8
+    },
+    {
+      "route": "/calculator-positive-inputs-zero-nutrition.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A zero nutrient value is different from a zero serving weight | GetMacros",
+      "description": "Some zeros are valid data; others make a calculation undefined.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calculator-pound-kilogram-entry.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Pounds and kilograms: change the unit, not just the number | GetMacros",
+      "description": "A wrong unit selection can overwhelm the rest of a calculator’s inputs.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calculator-round-at-end.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Why a calculator should round at the end | GetMacros",
+      "description": "Small intermediate changes can add up across several portions.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calculators.html",
+      "family": "calculator-hub",
+      "market_scope": "global",
+      "title": "Free Macro Calculator: Calories, Protein, Carbs & Fat | GetMacros",
+      "description": "Calculate daily calories, protein, carbs and fat for weight loss, maintenance or muscle gain. Enter your age, weight, height and activity level.",
+      "main_paragraphs": 7,
+      "incoming_links": 948
+    },
+    {
+      "route": "/calorie-range-menu-reading.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What does a calorie range on a restaurant menu mean? | GetMacros",
+      "description": "A range does not tell you the total for your exact order. Check the included choices.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calorie-tool-output-reverse-check.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Reverse-check a portion calculator before trusting its output | GetMacros",
+      "description": "A simple inverse calculation can reveal a wrong multiplier.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/calorie-units-kcal-kilojoules.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Calories, kcal and kilojoules: compare energy units first | GetMacros",
+      "description": "An energy number needs its unit before it can be compared.",
+      "main_paragraphs": 12,
+      "incoming_links": 8
+    },
+    {
+      "route": "/calories-in-multi-serving-packages.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How many calories are in the whole package? | GetMacros",
+      "description": "Read per-serving and per-package columns correctly, account for inner packets, and calculate a partial package with clear examples.",
+      "main_paragraphs": 13,
+      "incoming_links": 8
+    },
+    {
+      "route": "/calories-on-rest-days.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Should You Eat the Same Calories on Rest Days? | GetMacros",
+      "description": "You can keep calories the same on rest days or cycle them around training. Compare both approaches while keeping recovery and your weekly goal in view.",
+      "main_paragraphs": 10,
+      "incoming_links": 12
+    },
+    {
+      "route": "/calories-vs-macros-what-matters-more.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Calories vs. Macros: What Matters More? | GetMacros",
+      "description": "Calories vs. macros: learn which matters for weight change, muscle, fullness and performance—and how to set priorities without tracking everything.",
+      "main_paragraphs": 29,
+      "incoming_links": 18
+    },
+    {
+      "route": "/can-you-build-muscle-in-a-calorie-deficit.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Can You Build Muscle in a Calorie Deficit? | GetMacros",
+      "description": "Muscle gain in a calorie deficit is possible for some people, but energy deficiency makes it harder. See who is most likely to progress and what matters.",
+      "main_paragraphs": 8,
+      "incoming_links": 11
+    },
+    {
+      "route": "/carbohydrate-label-portion-tool.html",
+      "family": "calculator",
+      "market_scope": "global",
+      "title": "Carb calculator | GetMacros",
+      "description": "Enter the carbs on the label and how many servings you eat. For half a serving, enter 0.5.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/carbs.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What do carbs do in your body? | GetMacros",
+      "description": "Carbohydrates provide energy. Foods such as oats, rice, potatoes, fruit and beans can also bring fiber, vitamins and minerals to your meals.",
+      "main_paragraphs": 10,
+      "incoming_links": 11
+    },
+    {
+      "route": "/cava-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy CAVA Orders: Bowls, Calories & Protein | GetMacros",
+      "description": "Compare all 4 tracked CAVA items by calories, protein, fiber and sodium. Harissa Avocado bowl leads on protein at 42 g.",
+      "main_paragraphs": 42,
+      "incoming_links": 17
+    },
+    {
+      "route": "/chick-fil-a-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Chick-fil-A Orders: Calories & Protein | GetMacros",
+      "description": "Compare Chick-fil-A grilled nuggets, sandwiches, salads and breakfast. See calories and protein for each U.S. order, plus what sauces and sides change.",
+      "main_paragraphs": 62,
+      "incoming_links": 327
+    },
+    {
+      "route": "/chick-fil-a-vs-popeyes-chicken.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Chick-fil-A grilled nuggets vs Popeyes blackened tenders | GetMacros",
+      "description": "Compare three exact chicken portions by protein, calories, fat and sodium, then see a defined side-added calculation without invented swaps.",
+      "main_paragraphs": 13,
+      "incoming_links": 8
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Chipotle Orders: Bowls, Calories & Protein | GetMacros",
+      "description": "Compare six Chipotle bowls and salads by calories and protein. See exact ingredients, vegetarian options and high-protein orders on the U.S. menu.",
+      "main_paragraphs": 62,
+      "incoming_links": 342
+    },
+    {
+      "route": "/chipotle-rice-beans-nutrition.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Chipotle rice and beans: compare exact portions and combined totals | GetMacros",
+      "description": "Compare Chipotle’s published 4 oz rice and bean portions, including fiber, protein and sodium. See two explicit rice-and-bean sums.",
+      "main_paragraphs": 15,
+      "incoming_links": 10
+    },
+    {
+      "route": "/chipotle-toppings-nutrition.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Chipotle topping nutrition: compare serving sizes and added totals | GetMacros",
+      "description": "Compare cheese, sour cream, guacamole, salsas, vinaigrette and vegetables using their own published serving sizes, with worked addition totals.",
+      "main_paragraphs": 18,
+      "incoming_links": 10
+    },
+    {
+      "route": "/chipotle-vs-cava-chicken-bowls.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Chipotle vs CAVA chicken bowls: compare defined orders | GetMacros",
+      "description": "A defined Chipotle chicken bowl and two published CAVA bowls compared by calories, protein, carbs, fiber and sodium.",
+      "main_paragraphs": 14,
+      "incoming_links": 8
+    },
+    {
+      "route": "/choose-fooddata-central-entry.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Which FoodData Central entry should I choose? | GetMacros",
+      "description": "Match food identity and preparation before choosing a nutrient number.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Compare complete restaurant orders, not mismatched portions | GetMacros",
+      "description": "An order checklist and worked comparison show why an entrée-only figure and a meal with sides can give a misleading ranking.",
+      "main_paragraphs": 16,
+      "incoming_links": 11
+    },
+    {
+      "route": "/contact.html",
+      "family": "contact",
+      "market_scope": "global",
+      "title": "Contact GetMacros",
+      "description": "Have a question, suggestion or correction? Email GetMacros. I read and reply to every email.",
+      "main_paragraphs": 6,
+      "incoming_links": 312
+    },
+    {
+      "route": "/corrections.html",
+      "family": "trust",
+      "market_scope": "global",
+      "title": "Corrections and updates | GetMacros",
+      "description": "Found a wrong number, unclear explanation or broken tool? Send the page link and what needs checking.",
+      "main_paragraphs": 10,
+      "incoming_links": 314
+    },
+    {
+      "route": "/cross-chain-bean-burritos-serving-proof.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Two bean burritos: Del Taco and El Pollo Loco | GetMacros",
+      "description": "The shared word “bean” does not create equivalent portions.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/cross-chain-breakfast-ham-formats.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Ham breakfasts at Arby’s and SONIC: choose the format | GetMacros",
+      "description": "A wrap, croissant and burrito are different breakfasts.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/cross-chain-chicken-soup-no-sodium-assumption.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Chicken soup at El Pollo Loco and Noodles & Company | GetMacros",
+      "description": "A soup label does not guarantee a lower-sodium lunch.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/cross-chain-melt-sandwich-orders.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Reuben or sourdough melt: compare the whole sandwich | GetMacros",
+      "description": "Three different melt-style orders show why the name is not a serving standard.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/culvers-chicken-grilled-crispy-spicy.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Culver’s grilled, crispy or spicy chicken sandwich? | GetMacros",
+      "description": "Protein, calories and sodium all change with the published build.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/culvers-dinner-name-side-footnote.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What does a Culver’s dinner nutrition row include? | GetMacros",
+      "description": "The word “dinner” does not mean every side is in the number.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/culvers-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Culver’s Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 23 recorded U.S. Culver’s orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 106,
+      "incoming_links": 33
+    },
+    {
+      "route": "/cutting-bulking-maintenance-explained.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Cutting, bulking or maintenance: what do they mean? | GetMacros",
+      "description": "Cutting means eating for weight loss. Bulking means eating to support weight gain and muscle building. Maintenance means keeping weight broadly steady.",
+      "main_paragraphs": 10,
+      "incoming_links": 16
+    },
+    {
+      "route": "/del-taco-bean-burrito-vs-veggie-burrito.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Del Taco bean-and-cheese or Eight Layer Veggie Burrito? | GetMacros",
+      "description": "A vegetable-focused name does not predict the fiber number.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/del-taco-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Del Taco Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 60 recorded U.S. Del Taco orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 195,
+      "incoming_links": 78
+    },
+    {
+      "route": "/del-taco-two-street-tacos-vs-burrito.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Two Del Taco street tacos or one chicken burrito? | GetMacros",
+      "description": "Count the tacos before comparing them with a whole burrito.",
+      "main_paragraphs": 10,
+      "incoming_links": 7
+    },
+    {
+      "route": "/does-creatine-cause-hair-loss.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Does Creatine Cause Hair Loss? | GetMacros",
+      "description": "Does creatine cause hair loss? See what the 2009 DHT study found, what the 2025 hair-follicle trial added and what remains uncertain.",
+      "main_paragraphs": 19,
+      "incoming_links": 14
+    },
+    {
+      "route": "/drained-weight-nutrition-label.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Drained weight and nutrition labels: which weight counts? | GetMacros",
+      "description": "Check whether a canned food label describes drained solids or the contents with liquid. A worked example shows the difference without inventing a conversion.",
+      "main_paragraphs": 13,
+      "incoming_links": 8
+    },
+    {
+      "route": "/dunkin-healthy-breakfast-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Dunkin' Breakfast: Calories & Protein | GetMacros",
+      "description": "Compare all 4 tracked Dunkin’ items by calories, protein, fiber and sodium. Sourdough Breakfast Sandwich leads on protein at 30 g.",
+      "main_paragraphs": 36,
+      "incoming_links": 15
+    },
+    {
+      "route": "/edible-portion-vs-purchased-weight.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Edible portion vs purchased weight: avoid counting bones and peel | GetMacros",
+      "description": "Separate the amount bought from the food you eat. A simple yield example shows how edible weight changes food quantity and cost comparisons.",
+      "main_paragraphs": 13,
+      "incoming_links": 9
+    },
+    {
+      "route": "/editorial-policy.html",
+      "family": "trust",
+      "market_scope": "global",
+      "title": "Editorial policy | GetMacros",
+      "description": "Here’s how I choose sources, explain nutrition and fix mistakes on GetMacros.",
+      "main_paragraphs": 11,
+      "incoming_links": 312
+    },
+    {
+      "route": "/el-pollo-loco-bowls-protein-bigger-build.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "El Pollo Loco bowls: Original, Grande or Double Chicken? | GetMacros",
+      "description": "More protein arrives with a different complete bowl.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/el-pollo-loco-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "El Pollo Loco Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 27 recorded U.S. El Pollo Loco orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 95,
+      "incoming_links": 37
+    },
+    {
+      "route": "/el-pollo-loco-salad-dressing-boundary.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "El Pollo Loco salads: check whether dressing is included | GetMacros",
+      "description": "A starred salad total is an incomplete dressed-salad total.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/el-pollo-loco-tortilla-complete-chicken-meal.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "El Pollo Loco chicken meal: corn or flour tortillas? | GetMacros",
+      "description": "An explicit two-piece meal pair includes beans and rice.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/equal-calories-different-macros-menu.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Same calories, different macros: three real menu ties | GetMacros",
+      "description": "A tied calorie total can still leave very different protein and fat choices.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/equal-tax-protein-value-ranking.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Does the same percentage tax change protein-value rankings? | GetMacros",
+      "description": "A shared percentage multiplies every ratio equally; fixed charges behave differently.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/exact-fiber-coverage-denominator.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to compare fiber when a menu value is missing | GetMacros",
+      "description": "A missing or less-than fiber value is not zero. See how to compare known portions, apply a minimum and keep uncertain totals honest.",
+      "main_paragraphs": 21,
+      "incoming_links": 7
+    },
+    {
+      "route": "/fast-food-breakfast-protein-comparison.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Fast-food breakfast protein: four exact food portions compared | GetMacros",
+      "description": "Compare Chick-fil-A and Starbucks breakfast food by protein, calories, carbohydrate and sodium. Drinks and breakfast extras are excluded.",
+      "main_paragraphs": 21,
+      "incoming_links": 8
+    },
+    {
+      "route": "/fast-food-fiber-and-protein.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Fast-food fiber and protein: compare beans, bowls and wraps | GetMacros",
+      "description": "Selected fast-food orders with at least 20 g protein and 7 g fiber. Compare calories, sodium and the exact included portions.",
+      "main_paragraphs": 33,
+      "incoming_links": 8
+    },
+    {
+      "route": "/fast-food-meals-500-to-700-calories.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Fast-food orders from 500 to 700 calories: compare what is included | GetMacros",
+      "description": "Compare tracked bowls, salads, a wrap and a sandwich within a 500–700-calorie range, with protein, fiber and serving details.",
+      "main_paragraphs": 22,
+      "incoming_links": 8
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "GetMacros nutrition data snapshot: coverage, calculations and source limits | GetMacros",
+      "description": "An original, reproducible snapshot of GetMacros’ tracked U.S. order dataset, source-inspection coverage, nutrient provenance and exact scope.",
+      "main_paragraphs": 21,
+      "incoming_links": 11
+    },
+    {
+      "route": "/fast-food-protein-and-sodium.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "High-protein fast food and sodium: compare both numbers | GetMacros",
+      "description": "A source-audited comparison of fast-food orders with at least 25 g protein, sorted by sodium and retaining exact servings.",
+      "main_paragraphs": 41,
+      "incoming_links": 8
+    },
+    {
+      "route": "/fast-food-under-1000mg-sodium.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Fast-food portions under 1,000 mg sodium: a sourced shortlist | GetMacros",
+      "description": "Selected U.S. portions below 1,000 mg sodium, including sides and main items. Exact servings and excluded extras remain visible.",
+      "main_paragraphs": 25,
+      "incoming_links": 8
+    },
+    {
+      "route": "/fat-and-carb-two-energy-profiles.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Similar energy, different fat and carbohydrate profiles | GetMacros",
+      "description": "Two 950–960 kcal orders show why calories cannot fill missing macro lines.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/fats.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What does fat do in your body? | GetMacros",
+      "description": "Fat provides energy, essential fatty acids and help absorbing vitamins A, D, E and K. Both the type and amount matter.",
+      "main_paragraphs": 11,
+      "incoming_links": 11
+    },
+    {
+      "route": "/fiber-count-menu-not-plant-score.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Where fiber appears in a varied menu sample | GetMacros",
+      "description": "Beans, bowls, noodles and sandwiches all need their actual rows.",
+      "main_paragraphs": 14,
+      "incoming_links": 7
+    },
+    {
+      "route": "/fiber-daily-value-portion-example.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What does 7 g fiber mean on a U.S. label? | GetMacros",
+      "description": "Translate a gram amount into the label reference while keeping the portion visible.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/fiber-per-portion-vs-density.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "More fiber per 100 g can still mean less fiber on your plate | GetMacros",
+      "description": "Compare concentration and actual portion as separate questions.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/food-shelf.html",
+      "family": "trust",
+      "market_scope": "global",
+      "title": "Saved meals, articles and games | GetMacros",
+      "description": "Keep your favorite meals, practical guides and games on a local food shelf. No account needed.",
+      "main_paragraphs": 6,
+      "incoming_links": 789
+    },
+    {
+      "route": "/grams-per-serving-vs-protein-percentage.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Protein grams are different from the percentage of a food’s weight | GetMacros",
+      "description": "A protein percentage needs an explicit denominator.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Grams vs milliliters on food labels: compare the same amount | GetMacros",
+      "description": "A practical way to compare labels in grams and milliliters without assuming every liquid weighs the same. Includes a worked dressing example.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/grilled-and-blackened-chicken-comparison.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Grilled and blackened fast-food chicken: compare protein portions | GetMacros",
+      "description": "Compare exact nugget, tender and teriyaki-chicken portions by protein, calories, fat and sodium without treating them as complete lunches.",
+      "main_paragraphs": 22,
+      "incoming_links": 8
+    },
+    {
+      "route": "/half-serving-percent-daily-value.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Does half a serving mean half the % Daily Value? | GetMacros",
+      "description": "Scale the underlying amount, then allow for the label’s rounding.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "family": "reference-index",
+      "market_scope": "US",
+      "title": "Healthy Fast Food Options: Calories & Protein | GetMacros",
+      "description": "Compare 83 U.S. fast-food options across 15 restaurants. Find high-protein orders, meals under 500 calories and vegetarian choices with nutrition details.",
+      "main_paragraphs": 11,
+      "incoming_links": 326
+    },
+    {
+      "route": "/high-protein-fast-food-under-500-calories.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "High-protein fast food under 500 calories: exact orders and portions | GetMacros",
+      "description": "Selected orders with at least 25 g protein and fewer than 500 calories, with servings, sodium, fiber and excluded extras kept visible.",
+      "main_paragraphs": 29,
+      "incoming_links": 8
+    },
+    {
+      "route": "/high-protein-foods-list.html",
+      "family": "reference-index",
+      "market_scope": "global",
+      "title": "25 High-Protein Foods: Compare Servings & Calories | GetMacros",
+      "description": "Compare 25 high-protein foods by protein per serving and per 100 calories, including meat, fish, dairy and plant-based choices.",
+      "main_paragraphs": 54,
+      "incoming_links": 9
+    },
+    {
+      "route": "/how-many-calories-should-i-eat-a-day.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How many calories should I eat a day? | GetMacros",
+      "description": "There is no single calorie target for everyone. Your body size, age, activity and goal help estimate a starting point.",
+      "main_paragraphs": 14,
+      "incoming_links": 29
+    },
+    {
+      "route": "/how-much-fiber-per-day.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How much fiber do you need per day? | GetMacros",
+      "description": "Fiber helps with digestion and can support heart health. Beans, whole grains, fruit, vegetables, nuts and seeds are practical ways to get more.",
+      "main_paragraphs": 11,
+      "incoming_links": 12
+    },
+    {
+      "route": "/how-much-protein-can-your-body-absorb.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How Much Protein Can Your Body Absorb at Once? | GetMacros",
+      "description": "Your body does not waste protein after 30 grams. Learn the difference between protein absorption, muscle protein synthesis and practical meal distribution.",
+      "main_paragraphs": 21,
+      "incoming_links": 16
+    },
+    {
+      "route": "/how-much-protein-per-day.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How much protein do you need per day? | GetMacros",
+      "description": "Your protein needs depend on your body size, training and health. Use these ranges as a starting point, then choose foods that make the target practical.",
+      "main_paragraphs": 10,
+      "incoming_links": 23
+    },
+    {
+      "route": "/how-much-sodium-per-day.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How much sodium should you have per day? | GetMacros",
+      "description": "Packaged foods and restaurant meals can contain a lot of sodium. Check the whole portion, then compare options that fit the meal you want.",
+      "main_paragraphs": 10,
+      "incoming_links": 29
+    },
+    {
+      "route": "/how-to-build-a-balanced-meal-with-macros.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to Build a Balanced Meal With Macros | GetMacros",
+      "description": "Build a balanced meal with protein, carbohydrate, produce and satisfying fat—then adjust portions for cutting, maintenance or bulking.",
+      "main_paragraphs": 8,
+      "incoming_links": 12
+    },
+    {
+      "route": "/how-to-calculate-macros-by-hand.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to calculate your macros by hand | GetMacros",
+      "description": "Estimate daily calories first, then convert protein, fat and carbs into grams. This worked example explains the arithmetic behind a macro plan.",
+      "main_paragraphs": 12,
+      "incoming_links": 13
+    },
+    {
+      "route": "/how-to-calculate-maintenance-calories.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to Calculate Maintenance Calories | GetMacros",
+      "description": "Calculate maintenance calories with a clear starting estimate, then use your weight trend to find the intake that actually maintains your weight.",
+      "main_paragraphs": 10,
+      "incoming_links": 14
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to Calculate Calories and Macros in a Recipe",
+      "description": "Calculate calories and macros for a homemade recipe using ingredient totals, cooked yield, and portion weight without confusing raw and cooked entries.",
+      "main_paragraphs": 14,
+      "incoming_links": 14
+    },
+    {
+      "route": "/how-to-eat-out-without-wrecking-your-goal.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to eat out while working toward your goals | GetMacros",
+      "description": "You can enjoy a restaurant meal while working on weight loss, muscle gain or everyday nutrition. Start with the whole order and a goal that matters to you.",
+      "main_paragraphs": 13,
+      "incoming_links": 27
+    },
+    {
+      "route": "/how-to-hit-protein-goal-on-budget.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to Hit Your Protein Goal on a Budget | GetMacros",
+      "description": "Reach your protein goal on a budget by comparing cost per gram, choosing flexible staples and planning meals that use the whole package.",
+      "main_paragraphs": 14,
+      "incoming_links": 13
+    },
+    {
+      "route": "/how-to-read-a-nutrition-label.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to read a nutrition label | GetMacros",
+      "description": "Start with the serving size, then check the nutrients in the amount you will eat. This guide follows the U.S. Nutrition Facts label.",
+      "main_paragraphs": 15,
+      "incoming_links": 80
+    },
+    {
+      "route": "/in-n-out-double-vs-two-hamburgers.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "In-N-Out Double-Double or two Hamburgers? | GetMacros",
+      "description": "More pieces do not necessarily mean a similar protein total.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/in-n-out-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "In-N-Out Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 9 recorded U.S. In-N-Out orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 50,
+      "incoming_links": 18
+    },
+    {
+      "route": "/in-n-out-three-published-hamburger-versions.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "In-N-Out Hamburger: standard, sauce swap or Protein Style? | GetMacros",
+      "description": "The restaurant publishes three exact builds worth keeping separate.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/",
+      "family": "home",
+      "market_scope": "US",
+      "title": "Find a fast-food meal that fits your macros | GetMacros",
+      "description": "Find real fast-food meals by calories, protein, fiber and restaurant. Compare the order, portion and nutrition before you eat.",
+      "main_paragraphs": 10,
+      "incoming_links": 629
+    },
+    {
+      "route": "/jersey-mikes-healthy-subs-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Jersey Mike's Subs: Calories & Protein | GetMacros",
+      "description": "Compare all 4 tracked Jersey Mike’s items by calories, protein, fiber and sodium. Regular Veggie Sub, Mike’s Way leads on protein at 39 g.",
+      "main_paragraphs": 36,
+      "incoming_links": 13
+    },
+    {
+      "route": "/kfc-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy KFC Options: Calories & Protein | GetMacros",
+      "description": "Compare all 5 tracked KFC items by calories, protein, fiber and sodium. Grilled Breast with green beans and corn leads on protein at 41 g.",
+      "main_paragraphs": 39,
+      "incoming_links": 14
+    },
+    {
+      "route": "/macros-for-muscle-gain.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to set your macros for muscle gain | GetMacros",
+      "description": "Muscle gain depends on training, enough food and recovery. A useful macro plan supports those things without turning every meal into a calculation.",
+      "main_paragraphs": 12,
+      "incoming_links": 15
+    },
+    {
+      "route": "/macros-for-weight-loss.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to set your macros for weight loss | GetMacros",
+      "description": "Start with a manageable calorie target, include enough protein, and choose a balance of carbs and fat you can keep eating comfortably.",
+      "main_paragraphs": 12,
+      "incoming_links": 14
+    },
+    {
+      "route": "/mcdonalds-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy McDonald's Options: Calories & Protein | GetMacros",
+      "description": "Compare all 6 tracked McDonald’s items by calories, protein, fiber and sodium. Quarter Pounder with Cheese leads on protein at 30 g.",
+      "main_paragraphs": 42,
+      "incoming_links": 17
+    },
+    {
+      "route": "/meal-calculation-two-serving-units.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Two servings of food do not mean two servings of every topping | GetMacros",
+      "description": "Different components need their own quantity multipliers.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/meal-filters-intersection-not-extra-options.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Why adding a filter can reduce your meal matches | GetMacros",
+      "description": "Every explicit condition must be satisfied by the same order.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/menu-average-chain-weighting.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Can an average tell you which restaurant to choose? | GetMacros",
+      "description": "Compare the actual order first. Unequal menu coverage can distort a restaurant-wide average.",
+      "main_paragraphs": 19,
+      "incoming_links": 7
+    },
+    {
+      "route": "/menu-pdf-filename-not-edition-date.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How current is a restaurant nutrition PDF? | GetMacros",
+      "description": "Check the printed edition, country, serving and current restaurant link before relying on an old nutrition PDF or a newer-looking filename.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/milligram-microgram-mineral-label.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Milligrams and micrograms: a thousand-fold label difference | GetMacros",
+      "description": "Check the unit before moving a nutrient into your notes.",
+      "main_paragraphs": 12,
+      "incoming_links": 8
+    },
+    {
+      "route": "/missing-restaurant-nutrition.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What does “not verified” mean on a restaurant meal? | GetMacros",
+      "description": "Understand unknown nutrient values, incomplete meal totals and filter behavior. Learn why missing fat or sodium must not be recorded as zero.",
+      "main_paragraphs": 13,
+      "incoming_links": 13
+    },
+    {
+      "route": "/net-carbs-total-carbohydrate.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Can I put “net carbs” into a total-carbohydrate filter? | GetMacros",
+      "description": "Use the same definition on both sides of a comparison.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/noodles-and-company-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Noodles & Company Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 22 recorded U.S. Noodles & Company orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 102,
+      "incoming_links": 36
+    },
+    {
+      "route": "/noodles-mac-protein-not-simple-add-on.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Noodles & Company mac dishes: compare named builds | GetMacros",
+      "description": "A chicken or pork mac is not plain mac plus an assumed meat value.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/noodles-regular-noodle-orders-not-addons.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Noodles & Company: which noodle rows already include chicken? | GetMacros",
+      "description": "A named chicken dish and a base pasta need different accounting.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/noodles-two-chicken-salads.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Noodles & Company chicken salads: Caesar or Mediterranean? | GetMacros",
+      "description": "Lower calories and lower sodium do not point to the same salad.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/nutrient-grams-not-food-weight.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Why do nutrient grams not add up to the food’s weight? | GetMacros",
+      "description": "A 200 g portion is not 200 g of protein, carbs and fat. Learn what that leaves out.",
+      "main_paragraphs": 12,
+      "incoming_links": 8
+    },
+    {
+      "route": "/nutrition-blank-vs-not-detected.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Blank, zero and “not detected” are different nutrition entries | GetMacros",
+      "description": "A missing field is a boundary, not an invitation to create a number.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/nutrition-data-mean-not-every-portion.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A food database average is not every individual portion | GetMacros",
+      "description": "Understand what an average can support without inventing precision.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/nutrition-label-comparison-tool.html",
+      "family": "calculator",
+      "market_scope": "global",
+      "title": "Nutrition Label Comparison Tool: Compare Two Foods | GetMacros",
+      "description": "Compare two nutrition labels per serving, per 100 g or per 100 calories. Check protein, fiber, added sugar and sodium when choosing between foods.",
+      "main_paragraphs": 10,
+      "incoming_links": 332
+    },
+    {
+      "route": "/nutrition-label-rounding.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Why nutrition label numbers do not always add up exactly | GetMacros",
+      "description": "Understand rounded calories and nutrient values, avoid false precision when scaling, and distinguish a labeled zero from missing restaurant data.",
+      "main_paragraphs": 12,
+      "incoming_links": 9
+    },
+    {
+      "route": "/nutrition-totals-not-ingredient-recipe.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Can nutrition totals reveal a restaurant recipe? | GetMacros",
+      "description": "Six nutrient numbers cannot tell you every ingredient quantity.",
+      "main_paragraphs": 12,
+      "incoming_links": 8
+    },
+    {
+      "route": "/panda-express-base-nutrition-comparison.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Panda Express bases: rice, chow mein and Super Greens portions | GetMacros",
+      "description": "Compare full Panda Express bases by calories, carbs, fiber and sodium, with the 10 oz Super Greens base separated from the 3.5 oz entree entry.",
+      "main_paragraphs": 15,
+      "incoming_links": 10
+    },
+    {
+      "route": "/panda-express-chicken-entree-comparison.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Panda Express chicken entrees: teriyaki, string bean and orange | GetMacros",
+      "description": "Compare source-defined Panda Express chicken portions and see what changes when the same full rice base is added to each.",
+      "main_paragraphs": 13,
+      "incoming_links": 10
+    },
+    {
+      "route": "/panda-express-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Panda Express Orders: Calories & Protein | GetMacros",
+      "description": "Compare 7 tracked Panda Express portions, including teriyaki chicken at 280 calories and 38 g protein. Full bases and extra sauce stay distinct.",
+      "main_paragraphs": 50,
+      "incoming_links": 23
+    },
+    {
+      "route": "/panera-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Panera Orders: Calories & Protein | GetMacros",
+      "description": "Compare all 5 tracked Panera items by calories, protein, fiber and sodium. Caesar with Chicken Salad, whole leads on protein at 35 g.",
+      "main_paragraphs": 46,
+      "incoming_links": 16
+    },
+    {
+      "route": "/per-ounce-vs-per-100g-food.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to compare food listed per ounce and per 100 g | GetMacros",
+      "description": "Convert the portion basis first, keeping fluid ounces separate.",
+      "main_paragraphs": 13,
+      "incoming_links": 8
+    },
+    {
+      "route": "/percent-daily-value-not-vertical-total.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Why % Daily Value does not add up to 100% | GetMacros",
+      "description": "Each nutrient has its own reference amount. Adding the column creates a number with no useful meaning.",
+      "main_paragraphs": 11,
+      "incoming_links": 8
+    },
+    {
+      "route": "/percentage-points-vs-percent-food-labels.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Percentage points and percent: read a label comparison correctly | GetMacros",
+      "description": "A move from 10% DV to 15% DV is five points, not a 5% increase.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/plant-name-not-fiber-number.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A plant ingredient’s name cannot tell you its fiber grams | GetMacros",
+      "description": "Check the actual food, preparation and portion before assigning a number.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/play-bean-balance.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Bean Balance — food puzzle | GetMacros",
+      "description": "Stack beans while keeping their combined center over the base.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-berry-bounce.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Berry Bounce — food puzzle | GetMacros",
+      "description": "Return the berry with the paddle until the targets are cleared.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-build-a-plate.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Build-a-Plate — food puzzle | GetMacros",
+      "description": "Choose three ingredients that meet the plate's category rules.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-claim-check.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Claim Check — food puzzle | GetMacros",
+      "description": "Find the claim the displayed example label actually supports.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-description-detective.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Description Detective — food puzzle | GetMacros",
+      "description": "Pair ingredient descriptions with the right names.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-fiber-trail.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Fiber Trail — food puzzle | GetMacros",
+      "description": "Collect marked tokens along a path to the exit.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-food-crossword.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Food Crossword — food puzzle | GetMacros",
+      "description": "Complete a small intersecting food crossword.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-food-factory.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Food Factory — food puzzle | GetMacros",
+      "description": "Order three processing switches to produce the requested symbol string.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-fruit-catch.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Fruit Catch — food puzzle | GetMacros",
+      "description": "Move the basket beneath the requested fruit before dropping it.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-garden-glide.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Garden Glide — food puzzle | GetMacros",
+      "description": "Guide the carrot through a small garden maze.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-garden-pipes.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Garden Pipes — food puzzle | GetMacros",
+      "description": "Rotate the pipes into a connected water route.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-harvest-conveyor.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Harvest Conveyor — food puzzle | GetMacros",
+      "description": "Route the next item into the requested destination as belts change.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-ingredient-anagrams.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Ingredient Anagrams — food puzzle | GetMacros",
+      "description": "Put the shuffled letters back into an ingredient name.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-ingredient-order.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Ingredient Order — food puzzle | GetMacros",
+      "description": "Arrange example ingredients from most to least by mass.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-kitchen-connections.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Kitchen Connections — food puzzle | GetMacros",
+      "description": "Sort eight kitchen words into two precise groups.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-kitchen-rhythm.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Kitchen Rhythm — food puzzle | GetMacros",
+      "description": "Repeat the displayed beat pattern in its correct order.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-label-matchmaker.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Label Matchmaker — food puzzle | GetMacros",
+      "description": "Pair each example portion with its matching panel.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-lunchbox-logic.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Lunchbox Logic — food puzzle | GetMacros",
+      "description": "Place four picnic items into compartments using position clues.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-macro-grid.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Macro Grid — food puzzle | GetMacros",
+      "description": "Complete the missing cells so all row and column totals agree.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-market-budget.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Market Budget — food puzzle | GetMacros",
+      "description": "Fill a fictional market basket within a budget and item count.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-market-memory.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Market Memory — food puzzle | GetMacros",
+      "description": "Find all four pairs of original food characters.",
+      "main_paragraphs": 7,
+      "incoming_links": 5
+    },
+    {
+      "route": "/play-mascot-maker.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Mascot Maker — food puzzle | GetMacros",
+      "description": "Give an original ingredient character its own expression.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-menu-mystery.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Menu Mystery — food puzzle | GetMacros",
+      "description": "Identify a tracked U.S. order from progressively revealed clues.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-menu-word-hunt.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Menu Word Hunt — food puzzle | GetMacros",
+      "description": "Find three food words hidden in the letter grid.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-missing-number-kitchen.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Missing Number Kitchen — food puzzle | GetMacros",
+      "description": "Recover a missing number from a whole-recipe total.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-nutrition-term-match.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Nutrition Term Match — food puzzle | GetMacros",
+      "description": "Connect three terms to their exact explanations.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-odd-ingredient-out.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Odd Ingredient Out — food puzzle | GetMacros",
+      "description": "Find the item that does not satisfy the stated shape rule.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-orange-orbit.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Orange Orbit — food puzzle | GetMacros",
+      "description": "Turn the orbit and land at the marked platform.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-orchard-nonogram.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Orchard Nonogram — food puzzle | GetMacros",
+      "description": "Fill the orchard pattern using row and column clues.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-order-recall.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Order Recall — food puzzle | GetMacros",
+      "description": "Study an order, then rebuild its sequence from memory.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-pantry-pack.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Pantry Pack — food puzzle | GetMacros",
+      "description": "Fit every pantry piece into the available grid.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-pantry-peek.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Pantry Peek — food puzzle | GetMacros",
+      "description": "Study the pantry and recall how many requested items it held.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-picnic-delivery.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Picnic Delivery — food puzzle | GetMacros",
+      "description": "Pick up picnic parcels, then bring them to the table.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-picnic-planner.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Picnic Planner — food puzzle | GetMacros",
+      "description": "Pack a picnic kit with enough seats and drinks within its space limit.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-plate-art.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Plate Art — food puzzle | GetMacros",
+      "description": "Arrange food stamps into your own plate and save the result.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-portion-balance.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Portion Balance — food puzzle | GetMacros",
+      "description": "Balance two plates by changing their portion counts.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-portion-fractions.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Portion Fractions — food puzzle | GetMacros",
+      "description": "Shade equivalent fractions of two differently divided plates.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-protein-target-puzzle.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Protein Target Puzzle — food puzzle | GetMacros",
+      "description": "Combine fictional portions to reach an exact example total.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-range-finder.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Range Finder — food puzzle | GetMacros",
+      "description": "Find every example order inside the requested range.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-recipe-dominoes.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Recipe Dominoes — food puzzle | GetMacros",
+      "description": "Join all the ingredient tiles by their matching edge tags.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-recipe-path.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Recipe Path — food puzzle | GetMacros",
+      "description": "Follow the preparation steps in order through the grid.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-recipe-remix.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Recipe Remix — food puzzle | GetMacros",
+      "description": "Replace missing example ingredients while preserving recipe roles.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-restaurant-order-builder.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Restaurant Order Builder — food puzzle | GetMacros",
+      "description": "Reconstruct a real tracked restaurant order from its included items.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-restaurant-route.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Restaurant Route — food puzzle | GetMacros",
+      "description": "Visit fictional restaurants on a map with a short closed route.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-rounding-room.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Rounding Room — food puzzle | GetMacros",
+      "description": "Find the interval that rounds to the displayed number.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-sandwich-architect.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Sandwich Architect — food puzzle | GetMacros",
+      "description": "Rebuild the requested sandwich from bottom to top.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-sequence-chef.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Sequence Chef — food puzzle | GetMacros",
+      "description": "Repeat a growing sequence of food characters.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-serving-size-detective.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Serving Size Detective — food puzzle | GetMacros",
+      "description": "Work out the amount in several labeled example servings.",
+      "main_paragraphs": 8,
+      "incoming_links": 5
+    },
+    {
+      "route": "/play-silhouette-supper.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Silhouette Supper — food puzzle | GetMacros",
+      "description": "Recognize an ingredient from its original silhouette.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-smoothie-studio.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Smoothie Studio — food puzzle | GetMacros",
+      "description": "Mix colored fictional ingredients to match a recipe's ratio.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-snack-slide.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Snack Slide — food puzzle | GetMacros",
+      "description": "Slide the illustrated tiles back into order.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-sodium-sort.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Sodium Sort — food puzzle | GetMacros",
+      "description": "Sort equal-sized example servings by sodium.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-source-sleuth.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Source Sleuth — food puzzle | GetMacros",
+      "description": "Choose the excerpt that supports the claim without overreaching.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-spot-the-swap.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Spot the Swap — food puzzle | GetMacros",
+      "description": "Find the three swapped items between two picnic scenes.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-tabletop-tangram.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Tabletop Mosaic — food puzzle | GetMacros",
+      "description": "Cover a diamond-shaped lunch silhouette with four geometric pieces.",
+      "main_paragraphs": 7,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play-trade-off-table.html",
+      "family": "game",
+      "market_scope": "global",
+      "title": "Trade-off Table — food puzzle | GetMacros",
+      "description": "Find the orders that satisfy two displayed priorities together.",
+      "main_paragraphs": 8,
+      "incoming_links": 4
+    },
+    {
+      "route": "/play.html",
+      "family": "game-index",
+      "market_scope": "global",
+      "title": "Food games & puzzles | GetMacros",
+      "description": "Play 56 original food puzzles, memory games, creative studios and untimed coordination challenges. Touch and keyboard controls, no account needed.",
+      "main_paragraphs": 59,
+      "incoming_links": 729
+    },
+    {
+      "route": "/popeyes-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Popeyes Options: Calories & Protein | GetMacros",
+      "description": "Compare all 4 tracked Popeyes items by calories, protein, fiber and sodium. 5 Blackened Tenders leads on protein at 47 g.",
+      "main_paragraphs": 42,
+      "incoming_links": 14
+    },
+    {
+      "route": "/portion-ratio-vs-percent-change.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A portion multiplier is different from a percentage increase | GetMacros",
+      "description": "Two servings are twice the amount, but that is a 100% increase—not 200%.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/privacy.html",
+      "family": "legal",
+      "market_scope": "global",
+      "title": "Privacy Policy",
+      "description": "GetMacros.net's privacy policy: what data is and isn't collected, how browser preferences and saved meals are stored, and how third-party ad networks use cookies.",
+      "main_paragraphs": 14,
+      "incoming_links": 314
+    },
+    {
+      "route": "/protein-chicken-sandwich-size-cross-chain.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Three chicken sandwiches with different portion boundaries | GetMacros",
+      "description": "Cane’s, Culver’s and SONIC sandwich rows are complete builds.",
+      "main_paragraphs": 13,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-cost-currency-comparison.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Protein prices only compare when the currencies match | GetMacros",
+      "description": "A lower-looking price can be more expensive after a unit or currency mismatch.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-cost-food-waste.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Protein cost and food waste: when the bigger pack stops saving money | GetMacros",
+      "description": "Calculate protein cost for the amount you actually use. A break-even example shows how unfinished food changes a bulk package comparison.",
+      "main_paragraphs": 13,
+      "incoming_links": 9
+    },
+    {
+      "route": "/protein-cost-pack-size-minimum-spend.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Cheaper protein per gram can require a larger cash outlay | GetMacros",
+      "description": "Separate checkout affordability from unit value.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Fast-food protein per 100 calories: a portion-aware comparison | GetMacros",
+      "description": "Compare protein density and total protein in selected fast-food orders. See why chicken portions and complete bowls answer different questions.",
+      "main_paragraphs": 29,
+      "incoming_links": 9
+    },
+    {
+      "route": "/protein-label-blank-daily-value.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Why can a protein label have grams but no % Daily Value? | GetMacros",
+      "description": "A blank percentage is different from zero protein. Use the grams and the portion.",
+      "main_paragraphs": 11,
+      "incoming_links": 8
+    },
+    {
+      "route": "/protein-per-package-not-scoop-count.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How much protein is in a pack when serving weights differ? | GetMacros",
+      "description": "Use weight and the label basis to compare the whole pack.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-powder-scoop-weight.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Protein powder scoop weight: calculate the amount you use | GetMacros",
+      "description": "A scoop is a product-specific serving measure. Use the label’s gram weight to calculate partial servings and include the liquid in your shake separately.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-serving-count-day-not-prescription.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Add protein from different portions without inventing a meal plan | GetMacros",
+      "description": "Keep the quantities and serving assumptions in a simple ledger.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-sort-vs-portion-mass.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "More food weight does not guarantee more protein | GetMacros",
+      "description": "Source portions let you separate quantity of food from protein grams.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-target-gap-not-automatic-extra.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A protein gap is arithmetic, not an instruction to add another order | GetMacros",
+      "description": "Compare the difference with portions you actually want to eat.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-value-after-fixed-delivery-fee.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Delivery fees can reverse a protein-cost comparison | GetMacros",
+      "description": "Include the costs that actually belong to the purchase.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "family": "calculator",
+      "market_scope": "global",
+      "title": "Protein cost per gram calculator | GetMacros",
+      "description": "Use your receipt to compare protein value and the amount you actually paid.",
+      "main_paragraphs": 11,
+      "incoming_links": 326
+    },
+    {
+      "route": "/protein-value-price-range-overlap.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "When uncertain prices prevent a confident protein-value ranking | GetMacros",
+      "description": "A range is more honest than choosing a convenient unverified price.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/protein.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What does protein do in your body? | GetMacros",
+      "description": "Protein helps build and repair tissues, including muscle. Your body also uses it to make enzymes, hormones and antibodies.",
+      "main_paragraphs": 10,
+      "incoming_links": 11
+    },
+    {
+      "route": "/published-vs-calculated-restaurant-rows.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What is included in a calculated restaurant meal? | GetMacros",
+      "description": "Count the named sides, sauce and drink, and check whether the total was published or added from components.",
+      "main_paragraphs": 20,
+      "incoming_links": 7
+    },
+    {
+      "route": "/qdoba-burrito-bowl-published-pair.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "QDOBA Chicken Queso: bowl or burrito? | GetMacros",
+      "description": "Compare the actual published pair before assuming what the tortilla adds.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/qdoba-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "QDOBA Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 14 recorded U.S. QDOBA orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 57,
+      "incoming_links": 29
+    },
+    {
+      "route": "/qdoba-vegan-bowl-fiber-tradeoff.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "QDOBA Fajita Vegan Bowl: fiber, protein and the full portion | GetMacros",
+      "description": "A named vegan bowl provides useful numbers without becoming a diet score.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/raising-canes-build-order-not-combo-name.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Raising Cane’s: build an order without inventing a combo total | GetMacros",
+      "description": "Listed individual portions can be added transparently; a combo name is not enough.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/raising-canes-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Raising Cane’s Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 3 recorded U.S. Raising Cane’s orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 25,
+      "incoming_links": 11
+    },
+    {
+      "route": "/raw-vs-cooked-food-weight.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Raw vs cooked weight: which nutrition entry should you use? | GetMacros",
+      "description": "Match food weights to raw or cooked nutrition entries. See why a fixed conversion fails and how to divide a cooked batch using your own yield.",
+      "main_paragraphs": 13,
+      "incoming_links": 9
+    },
+    {
+      "route": "/recipe-added-water-not-new-nutrients.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Adding water changes recipe weight, not the counted ingredient totals | GetMacros",
+      "description": "Recalculate portion density after measuring the new yield.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-combined-batches-not-average-serving.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Combine two batches without averaging the wrong servings | GetMacros",
+      "description": "Add whole-batch totals before dividing by the final serving count.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-discrete-pieces-count-or-weight.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Counted pieces or gram portions: choose one clear recipe basis | GetMacros",
+      "description": "A piece count works only when the pieces are sufficiently comparable.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-evaporation-weight-density.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "When water evaporates, recipe calories per gram can change | GetMacros",
+      "description": "Batch totals and batch density are different quantities.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-fixed-seasoning-scale.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Scaling a recipe when one ingredient stays fixed | GetMacros",
+      "description": "A double batch is not exactly double if the ingredient list changes.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-freezing-portion-count.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Freezing a batch does not decide its serving count | GetMacros",
+      "description": "Use measured containers and a consistent recipe basis.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-left-in-pan-residual.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Food left in the pan: what can you subtract from the recipe? | GetMacros",
+      "description": "A leftover weight needs a composition assumption before it becomes a nutrient subtraction.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "family": "calculator",
+      "market_scope": "global",
+      "title": "Recipe Portion Calculator: Calories per Serving | GetMacros",
+      "description": "Split one batch into different portions, or change how much you make. Use the nutrition already listed on your recipe.",
+      "main_paragraphs": 9,
+      "incoming_links": 334
+    },
+    {
+      "route": "/recipe-one-ingredient-substitution.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Recalculate a recipe after changing one ingredient | GetMacros",
+      "description": "Subtract the old component and add the new one.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-quarter-batch-not-quarter-ingredient.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A quarter of the batch is not a quarter of one ingredient | GetMacros",
+      "description": "Keep the portion fraction attached to the correct total.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-recalculate-new-product-label.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Changing brands means updating the ingredient record | GetMacros",
+      "description": "An equal spoonful can carry a different label value.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-repeated-ingredient-two-label-bases.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "The same ingredient listed twice can use two label bases | GetMacros",
+      "description": "Convert each quantity before combining it.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-sauce-made-vs-sauce-used.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Made 300 g of sauce but used only 80 g? | GetMacros",
+      "description": "The main dish needs the amount transferred, not the whole sauce batch.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-sauce-on-side-two-totals.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Recipe with sauce on the side: keep two totals | GetMacros",
+      "description": "A separate sauce is useful only if its portion stays visible.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-target-batch-portions-integer.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A batch can yield six portions plus a smaller remainder | GetMacros",
+      "description": "Do not round the serving count and lose the leftover food.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/recipe-uniform-vs-component-serving.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A stew and a plated meal need different portion calculations | GetMacros",
+      "description": "Uniform batch division cannot replace separate component amounts.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/restaurant-bowl-nutrition-comparison.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Restaurant bowl nutrition: compare complete listed builds | GetMacros",
+      "description": "Compare selected Chipotle, CAVA and Sweetgreen bowls with exact build descriptions, protein, fiber, sodium and source-date boundaries.",
+      "main_paragraphs": 28,
+      "incoming_links": 8
+    },
+    {
+      "route": "/restaurant-compare-tradeoff-not-single-score.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Two meals can trade places when your priority changes | GetMacros",
+      "description": "Calories and protein do not produce one universal winner.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/restaurant-dominated-choice-still-context.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "When one order beats another on two numbers | GetMacros",
+      "description": "A numerical advantage is useful—but it still has a defined scope.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "family": "finder",
+      "market_scope": "US",
+      "title": "Healthy Fast-Food Meal Finder: High-Protein & Low-Calorie Meals",
+      "description": "Compare U.S. fast-food orders by calories, protein, fiber and sodium. Filter by restaurant, see what is included and compare two meals side by side.",
+      "main_paragraphs": 67,
+      "incoming_links": 1099
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "family": "reference-index",
+      "market_scope": "US",
+      "title": "Healthy Fast-Food Restaurant Guides | GetMacros",
+      "description": "Choose from 15 U.S. restaurant guides. Compare specific orders, calories and protein, with ingredients, ordering tips and official nutrition sources.",
+      "main_paragraphs": 28,
+      "incoming_links": 918
+    },
+    {
+      "route": "/restaurant-menu-serving-weight.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "When restaurant serving weights help—and when they do not | GetMacros",
+      "description": "Use a gram weight to understand the source portion, not to promise an exact tray weight.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/restaurant-protein-cost-receipt-prices.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Use your receipt to compare restaurant protein value | GetMacros",
+      "description": "Official protein can be paired with your actual paid price, with extras kept separate.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/restaurant-protein-value-no-price-data.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Can you rank restaurant protein value without prices? | GetMacros",
+      "description": "Nutrition alone cannot establish cost per gram.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/restaurant-search-result-count-scope.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What does the meal-finder result count mean? | GetMacros",
+      "description": "See how your limits, missing values and displayed results affect the shortlist.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/restaurant-value-your-nutrient-not-protein.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Value per fiber gram asks a different question | GetMacros",
+      "description": "The nutrient in the denominator changes what a price comparison means.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/salad-burger-calories-no-category-rule.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Can a burger have fewer calories than a salad? | GetMacros",
+      "description": "The exact restaurant recipe matters more than the category name.",
+      "main_paragraphs": 13,
+      "incoming_links": 7
+    },
+    {
+      "route": "/same-restaurant-name-different-market-data.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Restaurant nutrition: choose the country where you order | GetMacros",
+      "description": "Match the country, recipe and serving before comparing calories or protein.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/saved-meal-source-version-check.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "A saved meal is a bookmark, not a frozen restaurant promise | GetMacros",
+      "description": "Recheck the build when a menu or official source changes.",
+      "main_paragraphs": 11,
+      "incoming_links": 8
+    },
+    {
+      "route": "/search.html",
+      "family": "search",
+      "market_scope": "global",
+      "title": "Search Healthy Fast Food, Macro Tools & Guides | GetMacros",
+      "description": "Search every GetMacros page at once: healthy fast-food menu guides, restaurant comparisons, macro calculators and nutrition explainers.",
+      "main_paragraphs": 3,
+      "incoming_links": 305
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Serving Size vs. Portion Size: What Is the Difference?",
+      "description": "Learn the difference between a label serving and the portion you eat, and how to calculate calories and nutrients for your actual portion.",
+      "main_paragraphs": 18,
+      "incoming_links": 14
+    },
+    {
+      "route": "/sodium-label-comparison-tool.html",
+      "family": "calculator",
+      "market_scope": "global",
+      "title": "Sodium calculator | GetMacros",
+      "description": "Compare two foods using the sodium on each label and the number of servings you eat.",
+      "main_paragraphs": 10,
+      "incoming_links": 8
+    },
+    {
+      "route": "/sodium-milligrams-to-grams.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Sodium in mg and g: stop the thousand-fold mistake | GetMacros",
+      "description": "Convert the unit before comparing a label with a nutrient target.",
+      "main_paragraphs": 12,
+      "incoming_links": 8
+    },
+    {
+      "route": "/sonic-hot-dog-sodium-toppings.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "SONIC hot dogs: similar calories, different sodium | GetMacros",
+      "description": "The Chicago, New York and Regular Hot Dog builds are not interchangeable.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/sonic-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "SONIC Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 47 recorded U.S. SONIC orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 202,
+      "incoming_links": 60
+    },
+    {
+      "route": "/sonic-small-burgers-not-same-order.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "SONIC’s smaller burgers: read beyond “Jr” | GetMacros",
+      "description": "Three small burger names still describe different nutrition profiles.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "SONIC’s Ultimate breakfast burrito: what changes? | GetMacros",
+      "description": "A bigger name adds more than just protein.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/sources.html",
+      "family": "trust",
+      "market_scope": "global",
+      "title": "Nutrition Sources & Calculator Methods | GetMacros",
+      "description": "Check the nutrition references and calculation methods behind GetMacros tools, articles and restaurant meal comparisons.",
+      "main_paragraphs": 14,
+      "incoming_links": 648
+    },
+    {
+      "route": "/starbucks-healthy-food-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Starbucks Food: Calories & Protein | GetMacros",
+      "description": "Compare all 5 tracked Starbucks items by calories, protein, fiber and sodium. Spinach, Feta & Egg White Wrap leads on protein at 20 g.",
+      "main_paragraphs": 44,
+      "incoming_links": 18
+    },
+    {
+      "route": "/subway-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Subway Orders: Calories & Protein | GetMacros",
+      "description": "Compare all 7 tracked Subway items by calories, protein, fiber and sodium. Footlong Grilled Chicken & Fresh Avocado leads on protein at 70 g.",
+      "main_paragraphs": 45,
+      "incoming_links": 18
+    },
+    {
+      "route": "/sugar-lines-do-not-add.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Do I add total sugars and added sugars together? | GetMacros",
+      "description": "Read the indented sugar lines correctly, then compare two portions without counting sugar twice.",
+      "main_paragraphs": 11,
+      "incoming_links": 9
+    },
+    {
+      "route": "/sweat-rate-calculator.html",
+      "family": "calculator",
+      "market_scope": "global",
+      "title": "Sweat rate calculator | GetMacros",
+      "description": "Use your weight before and after a workout, its length and what you drank to estimate fluid loss.",
+      "main_paragraphs": 11,
+      "incoming_links": 5
+    },
+    {
+      "route": "/sweetgreen-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Sweetgreen Bowls: Calories & Protein | GetMacros",
+      "description": "Compare all 5 tracked Sweetgreen items by calories, protein, fiber and sodium. Harvest Bowl leads on protein at 40 g.",
+      "main_paragraphs": 39,
+      "incoming_links": 28
+    },
+    {
+      "route": "/sweetgreen-vs-panera-chicken-salads.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Sweetgreen vs Panera chicken salads: two whole orders compared | GetMacros",
+      "description": "Compare whole Guacamole Greens and Caesar with Chicken salads by calories, protein, fat, fiber and sodium, including their standard dressing.",
+      "main_paragraphs": 12,
+      "incoming_links": 8
+    },
+    {
+      "route": "/taco-bell-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Taco Bell Orders: Bowls, Tacos & Calories | GetMacros",
+      "description": "Compare Taco Bell bowls, tacos and burritos by calories. Check U.S. menu portions, vegetarian choices and available protein values before ordering.",
+      "main_paragraphs": 39,
+      "incoming_links": 14
+    },
+    {
+      "route": "/taco-johns-bowl-base-tradeoff.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Taco John’s rice bowl or Loaded Potato Olés bowl? | GetMacros",
+      "description": "The base changes the whole chicken bowl, not only its carbohydrate line.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/taco-johns-breakfast-taco-vs-burrito.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Taco John’s breakfast taco or Meat & Potato Burrito? | GetMacros",
+      "description": "The same bacon theme does not make these equivalent portions.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/taco-johns-nutrition-guide.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Taco John’s Nutrition: Calories & Protein | GetMacros",
+      "description": "Compare 122 recorded U.S. Taco John’s orders by calories, protein, carbs, fat, fiber and sodium. Check the exact portion and official source.",
+      "main_paragraphs": 415,
+      "incoming_links": 133
+    },
+    {
+      "route": "/taco-johns-small-fiber-bound.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Taco John’s “less than 1 g” fiber is not zero | GetMacros",
+      "description": "A source bound changes what you can total and filter honestly.",
+      "main_paragraphs": 11,
+      "incoming_links": 8
+    },
+    {
+      "route": "/tare-bowl-before-weighing-food.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to tare a bowl before weighing food | GetMacros",
+      "description": "Measure the food rather than the bowl, and keep the unit visible.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/terms.html",
+      "family": "legal",
+      "market_scope": "global",
+      "title": "Terms of Use",
+      "description": "The terms governing use of GetMacros.net — educational content only, not medical advice, third-party ads, and intellectual property.",
+      "main_paragraphs": 7,
+      "incoming_links": 311
+    },
+    {
+      "route": "/three-count-tacos-not-three-equal-meals.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Three tacos across Del Taco and QDOBA: define the count | GetMacros",
+      "description": "A three-taco named order and three single tacos need different arithmetic.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/two-fiber-sources-one-bowl.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Two fiber sources in one bowl: add the portions, not the percentages | GetMacros",
+      "description": "Keep both ingredients and their labeled amounts in the calculation.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/two-for-one-protein-promotion.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Does a two-for-one offer change the protein value? | GetMacros",
+      "description": "Calculate the usable total and the actual checkout price.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/two-meal-total-not-day-recommendation.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Two restaurant meals are a subtotal, not a daily diet | GetMacros",
+      "description": "A sum can be accurate while still leaving the rest of the day unknown.",
+      "main_paragraphs": 13,
+      "incoming_links": 8
+    },
+    {
+      "route": "/two-person-restaurant-budget-constraints.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Choose two orders within one budget | GetMacros",
+      "description": "A lower price per protein gram may still exceed the money available.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/unequal-recipe-portions.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "How to calculate macros for unequal recipe portions | GetMacros",
+      "description": "Divide an evenly mixed recipe by finished weight when meal-prep containers differ in size. Includes totals, assumptions and a check for separated ingredients.",
+      "main_paragraphs": 13,
+      "incoming_links": 9
+    },
+    {
+      "route": "/use-calorie-target-meal-finder.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Use a daily calorie estimate to choose a restaurant meal | GetMacros",
+      "description": "Turn a daily calculator estimate into optional meal-search limits without treating one-third of your day as a prescription or sharing personal inputs.",
+      "main_paragraphs": 13,
+      "incoming_links": 7
+    },
+    {
+      "route": "/vegetarian-fast-food-protein-comparison.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Vegetarian fast-food protein: compare eight tracked orders | GetMacros",
+      "description": "Compare protein, calories and fiber in tracked meat-free bowls, salads and breakfast foods, with ingredient and source limitations.",
+      "main_paragraphs": 25,
+      "incoming_links": 8
+    },
+    {
+      "route": "/vegetarian-label-not-allergen-safety.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Vegetarian is not an allergen-safety guarantee | GetMacros",
+      "description": "Dietary descriptions and allergen information answer different questions.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/weigh-food-by-container-difference.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Weigh a spoonful by the change in container weight | GetMacros",
+      "description": "An alternative when putting the ingredient directly on the scale is awkward.",
+      "main_paragraphs": 12,
+      "incoming_links": 7
+    },
+    {
+      "route": "/weight-goal-timeline-calculator.html",
+      "family": "calculator",
+      "market_scope": "global",
+      "title": "Weight goal timeline | GetMacros",
+      "description": "Choose a weekly pace to see a possible timeline. This is a calculation, not a prediction of your progress.",
+      "main_paragraphs": 11,
+      "incoming_links": 7
+    },
+    {
+      "route": "/wendys-healthy-meals-macros.html",
+      "family": "restaurant",
+      "market_scope": "US",
+      "title": "Healthy Wendy's Options: Calories & Protein | GetMacros",
+      "description": "Compare all 5 tracked Wendy’s items by calories, protein, fiber and sodium. Dave’s Single leads on protein at 31 g.",
+      "main_paragraphs": 39,
+      "incoming_links": 13
+    },
+    {
+      "route": "/what-are-macros.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What are macros? | GetMacros",
+      "description": "Macros are protein, carbohydrates and fat. They provide energy and help your body work. Here is what the numbers mean when you plan a meal.",
+      "main_paragraphs": 18,
+      "incoming_links": 17
+    },
+    {
+      "route": "/what-is-a-calorie-deficit.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What Is a Calorie Deficit? | GetMacros",
+      "description": "A calorie deficit means taking in less energy than you use over time. Learn how to estimate one, why weight loss slows and what to monitor.",
+      "main_paragraphs": 9,
+      "incoming_links": 11
+    },
+    {
+      "route": "/what-to-eat-after-a-workout.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What to Eat After a Workout | GetMacros",
+      "description": "Build a practical post-workout meal with protein, carbs and fluids. Learn when recovery timing matters and when your next normal meal is enough.",
+      "main_paragraphs": 15,
+      "incoming_links": 12
+    },
+    {
+      "route": "/what-to-eat-before-a-workout.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "What to Eat Before a Workout | GetMacros",
+      "description": "What to eat before a workout, from a full meal to a quick snack. Choose carbs, protein and portion size based on timing and stomach comfort.",
+      "main_paragraphs": 8,
+      "incoming_links": 11
+    },
+    {
+      "route": "/when-to-recalculate-calories-and-macros.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "When Should You Recalculate Calories and Macros? | GetMacros",
+      "description": "Recalculate calories and macros after meaningful changes—not every scale fluctuation. Use weight trends, activity and performance to decide when.",
+      "main_paragraphs": 6,
+      "incoming_links": 13
+    },
+    {
+      "route": "/why-did-i-gain-weight-overnight.html",
+      "family": "article",
+      "market_scope": "global",
+      "title": "Why Did I Gain Weight Overnight? | GetMacros",
+      "description": "An overnight scale increase is usually not a sudden change in body fat. Learn how food mass, fluid, sodium, carbs and digestion move daily weight.",
+      "main_paragraphs": 13,
+      "incoming_links": 13
+    },
+    {
+      "route": "/ca/en/",
+      "family": "home",
+      "market_scope": "CA",
+      "title": "Canadian fast-food meals | GetMacros Canada",
+      "description": "Find Canadian restaurant meals with explicit portions, calories, protein and official Canadian nutrition sources.",
+      "main_paragraphs": 3,
+      "incoming_links": 37
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "family": "restaurant-index",
+      "market_scope": "CA",
+      "title": "Canadian restaurant nutrition guides | GetMacros Canada",
+      "description": "Browse source-backed Canadian guides for Tim Hortons, A&W Canada and Harvey’s, with explicit serving and coverage limits.",
+      "main_paragraphs": 4,
+      "incoming_links": 39
+    },
+    {
+      "route": "/ca/en/restaurants/a-w-canada/",
+      "family": "restaurant",
+      "market_scope": "CA",
+      "title": "A&W Canada Canadian nutrition | GetMacros Canada",
+      "description": "Compare exact A&W Canada Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",
+      "main_paragraphs": 5,
+      "incoming_links": 307
+    },
+    {
+      "route": "/ca/en/restaurants/harvey-s/",
+      "family": "restaurant",
+      "market_scope": "CA",
+      "title": "Harvey’s Canadian nutrition | GetMacros Canada",
+      "description": "Compare exact Harvey’s Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",
+      "main_paragraphs": 5,
+      "incoming_links": 331
+    },
+    {
+      "route": "/ca/en/restaurants/tim-hortons/",
+      "family": "restaurant",
+      "market_scope": "CA",
+      "title": "Tim Hortons Canadian nutrition | GetMacros Canada",
+      "description": "Compare exact Tim Hortons Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",
+      "main_paragraphs": 5,
+      "incoming_links": 307
+    },
+    {
+      "route": "/ca/en/find-a-meal/",
+      "family": "finder",
+      "market_scope": "CA",
+      "title": "Canadian restaurant meal finder | GetMacros Canada",
+      "description": "Filter Canadian restaurant orders by calories, protein, fibre and sodium. Compare exact portions without substituting U.S. menus.",
+      "main_paragraphs": 67,
+      "incoming_links": 49
+    },
+    {
+      "route": "/ca/en/collections/breakfast/",
+      "family": "collection",
+      "market_scope": "CA",
+      "title": "Canadian fast-food breakfast comparison | GetMacros Canada",
+      "description": "Compare A&W and Tim Hortons Canadian breakfast portions, calories, protein and sodium, then count your drink and side separately.",
+      "main_paragraphs": 4,
+      "incoming_links": 6
+    },
+    {
+      "route": "/ca/en/collections/protein-meals/",
+      "family": "collection",
+      "market_scope": "CA",
+      "title": "Canadian high-protein restaurant meals | GetMacros Canada",
+      "description": "Compare tracked Canadian restaurant items with at least 25 g protein, including calories, portions and sodium rather than a made-up health score.",
+      "main_paragraphs": 4,
+      "incoming_links": 15
+    },
+    {
+      "route": "/ca/en/tools/complete-order/",
+      "family": "tool",
+      "market_scope": "CA",
+      "title": "Canadian complete-order builder | GetMacros Canada",
+      "description": "Add exact Canadian entrées, sides and drinks, with honest known subtotals and a source-backed A&W complete-order example.",
+      "main_paragraphs": 6,
+      "incoming_links": 10
+    },
+    {
+      "route": "/ca/en/tools/drink-comparison/",
+      "family": "tool",
+      "market_scope": "CA",
+      "title": "Canadian drink and protein-latte comparison | GetMacros Canada",
+      "description": "Compare Canadian Tim Hortons and A&W named drink sizes, calories, protein and total sugars without guessing customisation values.",
+      "main_paragraphs": 6,
+      "incoming_links": 6
+    },
+    {
+      "route": "/ca/en/menu-sources/",
+      "family": "methodology",
+      "market_scope": "CA",
+      "title": "Canadian menu-data sources and coverage | GetMacros Canada",
+      "description": "Check the Canadian restaurant selection, source editions, retrieval dates, missing fields, withheld values and menu update history.",
+      "main_paragraphs": 9,
+      "incoming_links": 312
+    }
+  ],
+  "orphans": [],
+  "errors": []
+}

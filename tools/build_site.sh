@@ -19,6 +19,7 @@ python3 tools/build_playful_interface.py
 python3 tools/build_play_release.py
 python3 tools/integrate_playful_release.py
 python3 tools/build_growth_release.py
+python3 tools/build_international_release.py
 python3 tools/refresh_release_search.py
 python3 tools/stamp_assets.py
 python3 tools/validate_site.py
@@ -27,3 +28,4 @@ python3 tools/test_search_visibility.py
 python3 tools/test-content-value.py
 python3 tools/test-editorial-release.py
 python3 tools/restaurant_release/test_expansion.py
+node tools/international/test-markets.cjs

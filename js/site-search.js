@@ -17,7 +17,7 @@
     var ranked=hits.map(function(hit){
       var hay=words(hit.dataset.search).join(' '),title=words(hit.querySelector('.search-hit-name').textContent).join(' ');
       return {hit:hit,match:terms.every(function(t){return hay.indexOf(t)>-1;}),score:terms.reduce(function(sum,t){return sum+(title.indexOf(t)>-1?5:0);},0)+(title===terms.join(' ')?10:0)};
-    }).filter(function(item){return item.match;}).sort(function(a,b){return b.score-a.score;});
+    }).filter(function(item){return item.match&&(!item.hit.dataset.market||item.hit.dataset.market===(window.GetMacrosMarket?.current||'US'));}).sort(function(a,b){return b.score-a.score;});
     var visible=ranked.slice(0,expanded?ranked.length:limit).map(function(item){return item.hit;});
     var sortedGroups=groups.slice().sort(function(a,b){
       function score(group){var best=ranked.find(function(item){return group.contains(item.hit);});return best?best.score:-1;}
@@ -28,7 +28,7 @@
       var live=0;
       [].slice.call(group.querySelectorAll('.search-hit')).forEach(function(hit){
         var hay=words(hit.dataset.search).join(' ');
-        var match=terms.every(function(t){return hay.indexOf(t)>-1;});
+        var match=terms.every(function(t){return hay.indexOf(t)>-1;})&&(!hit.dataset.market||hit.dataset.market===(window.GetMacrosMarket?.current||'US'));
         hit.hidden=!(searching?(match&&visible.indexOf(hit)>-1):expanded);
         if(match)live++;
       });

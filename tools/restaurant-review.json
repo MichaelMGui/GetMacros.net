@@ -1650,28 +1650,168 @@
   {
     "chain": "Chick-fil-A",
     "name": "Grilled Club, medium waffle fries and 12 grilled nuggets",
-    "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+    "checked": "2026-10-09",
     "values": {
       "cal": 1140,
       "p": 80,
       "c": 92,
       "f": 8,
       "na": 1955
-    }
+    },
+    "nutrientProvenance": {
+      "cal": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "Grilled Chicken Club Sandwich",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "12 ct Grilled Nuggets"
+        ]
+      },
+      "p": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "Grilled Chicken Club Sandwich",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "12 ct Grilled Nuggets"
+        ]
+      },
+      "c": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "Grilled Chicken Club Sandwich",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "12 ct Grilled Nuggets"
+        ]
+      },
+      "fat": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "Grilled Chicken Club Sandwich",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "12 ct Grilled Nuggets"
+        ]
+      },
+      "f": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "Grilled Chicken Club Sandwich",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "12 ct Grilled Nuggets"
+        ]
+      },
+      "na": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-grilled-chicken-club-sandwich",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "Grilled Chicken Club Sandwich",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "12 ct Grilled Nuggets"
+        ]
+      }
+    },
+    "sourceDate": null,
+    "serving": "1 standard sandwich; extra sides and drinks excluded + Medium · 125 g + 12 count · 142 g"
   },
   {
     "chain": "Chick-fil-A",
     "name": "30 grilled nuggets, medium waffle fries and large fruit cup",
     "source": "https://www.chick-fil-a.com/nutrition-allergens",
-    "checked": "2026-09-09",
+    "checked": "2026-10-09",
     "values": {
       "cal": 1050,
       "p": 104,
       "c": 77,
       "f": 10,
       "na": 1950
-    }
+    },
+    "nutrientProvenance": {
+      "cal": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "30 ct Grilled Nuggets",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "Large Fruit Cup"
+        ]
+      },
+      "p": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "30 ct Grilled Nuggets",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "Large Fruit Cup"
+        ]
+      },
+      "c": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "30 ct Grilled Nuggets",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "Large Fruit Cup"
+        ]
+      },
+      "fat": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "30 ct Grilled Nuggets",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "Large Fruit Cup"
+        ]
+      },
+      "f": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "30 ct Grilled Nuggets",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "Large Fruit Cup"
+        ]
+      },
+      "na": {
+        "method": "sum of published exact components",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens",
+        "retrieved": "2026-10-09",
+        "status": "arithmetic checked; component source dates preserved",
+        "components": [
+          "30 ct Grilled Nuggets",
+          "Medium Chick-fil-A Waffle Potato Fries®",
+          "Large Fruit Cup"
+        ]
+      }
+    },
+    "sourceDate": null,
+    "serving": "30 count · 369 g + Medium · 125 g + Large · 215 g"
   },
   {
     "chain": "Taco Bell",

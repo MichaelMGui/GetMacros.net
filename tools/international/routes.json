@@ -1,0 +1,112 @@
+[
+  {
+    "route": "/ca/en/",
+    "path": "ca/en/index.html",
+    "title": "Canadian fast-food meals",
+    "description": "Find Canadian restaurant meals with explicit portions, calories, protein and official Canadian nutrition sources.",
+    "template": "home",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/restaurants/",
+    "path": "ca/en/restaurants/index.html",
+    "title": "Canadian restaurant nutrition guides",
+    "description": "Browse source-backed Canadian guides for Tim Hortons, A&W Canada and Harvey’s, with explicit serving and coverage limits.",
+    "template": "restaurant-index",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/restaurants/a-w-canada/",
+    "path": "ca/en/restaurants/a-w-canada/index.html",
+    "title": "A&W Canada Canadian nutrition",
+    "description": "Compare exact A&W Canada Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",
+    "template": "restaurant",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/restaurants/harvey-s/",
+    "path": "ca/en/restaurants/harvey-s/index.html",
+    "title": "Harvey’s Canadian nutrition",
+    "description": "Compare exact Harvey’s Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",
+    "template": "restaurant",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/restaurants/tim-hortons/",
+    "path": "ca/en/restaurants/tim-hortons/index.html",
+    "title": "Tim Hortons Canadian nutrition",
+    "description": "Compare exact Tim Hortons Canadian servings, calories, protein, carbs, fat, fibre and sodium, with official sources and clear limitations.",
+    "template": "restaurant",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/find-a-meal/",
+    "path": "ca/en/find-a-meal/index.html",
+    "title": "Canadian restaurant meal finder",
+    "description": "Filter Canadian restaurant orders by calories, protein, fibre and sodium. Compare exact portions without substituting U.S. menus.",
+    "template": "finder",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/collections/breakfast/",
+    "path": "ca/en/collections/breakfast/index.html",
+    "title": "Canadian fast-food breakfast comparison",
+    "description": "Compare A&W and Tim Hortons Canadian breakfast portions, calories, protein and sodium, then count your drink and side separately.",
+    "template": "collection",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/collections/protein-meals/",
+    "path": "ca/en/collections/protein-meals/index.html",
+    "title": "Canadian high-protein restaurant meals",
+    "description": "Compare tracked Canadian restaurant items with at least 25 g protein, including calories, portions and sodium rather than a made-up health score.",
+    "template": "collection",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/tools/complete-order/",
+    "path": "ca/en/tools/complete-order/index.html",
+    "title": "Canadian complete-order builder",
+    "description": "Add exact Canadian entrées, sides and drinks, with honest known subtotals and a source-backed A&W complete-order example.",
+    "template": "tool",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/tools/drink-comparison/",
+    "path": "ca/en/tools/drink-comparison/index.html",
+    "title": "Canadian drink and protein-latte comparison",
+    "description": "Compare Canadian Tim Hortons and A&W named drink sizes, calories, protein and total sugars without guessing customisation values.",
+    "template": "tool",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  },
+  {
+    "route": "/ca/en/menu-sources/",
+    "path": "ca/en/menu-sources/index.html",
+    "title": "Canadian menu-data sources and coverage",
+    "description": "Check the Canadian restaurant selection, source editions, retrieval dates, missing fields, withheld values and menu update history.",
+    "template": "methodology",
+    "market": "CA",
+    "language": "en",
+    "lastmod": "2026-10-09"
+  }
+]

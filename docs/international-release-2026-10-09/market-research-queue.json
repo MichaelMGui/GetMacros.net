@@ -1,0 +1,46 @@
+[
+  {
+    "market": "CA",
+    "restaurant": "McDonald’s Canada",
+    "sources": [
+      "https://www.mcdonalds.com/ca/en-ca/full-menu.html",
+      "https://www.mcdonalds.com/ca/en-ca/product/egg-mcmuffin.html"
+    ],
+    "status": "Held: browser/direct access denied and available page extraction omitted full nutrition numbers. No U.S. substitutions."
+  },
+  {
+    "market": "GB",
+    "restaurant": "Greggs",
+    "sources": [
+      "https://www.greggs.com/nutrition",
+      "https://www.greggs.com/menu/product/sausage-roll-1000446/"
+    ],
+    "status": "Research queue; no UK pages/records published."
+  },
+  {
+    "market": "GB",
+    "restaurant": "Nando’s",
+    "sources": [
+      "https://www.nandos.co.uk/food/menu/",
+      "https://www.nandos.co.uk/food/allergens/"
+    ],
+    "status": "Research queue; serving/build verification required."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Guzman y Gomez",
+    "sources": [
+      "https://www.guzmanygomez.com.au/wp-content/uploads/2026/02/260128_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf"
+    ],
+    "status": "Official Australian guide found; no Australian records or pages published."
+  },
+  {
+    "market": "JP",
+    "restaurant": "McDonald’s Japan",
+    "sources": [
+      "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
+      "https://www.mcdonalds.co.jp/products/nutrition_balance_check/"
+    ],
+    "status": "Official Japanese sources found. Salt-equivalent grams require explicitly proven conversions; no Japanese records published."
+  }
+]

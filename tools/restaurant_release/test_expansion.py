@@ -116,7 +116,7 @@ class Expansion(unittest.TestCase):
 const assert=require('node:assert/strict');
 const engine=require('./js/meal-engine.js');
 const payload=require('./tools/restaurant_release/expansion-payload.json');
-const rows=payload.records.map(r=>r.meal);
+const rows=payload.records.map(r=>({...r.meal,fat:r.values.fat,market:'US',country:'US'}));
 for(const c of payload.chains){
  const state=engine.fromSearch('?chain='+encodeURIComponent(c.chain)+'&complete=0',rows);
  assert.equal(engine.results(rows,state).length,c.records);
@@ -128,7 +128,8 @@ assert.deepEqual(results.map(r=>r.name).sort(),['Cheeseburger with onion, Protei
 const unknown=rows.find(m=>m.chain==='Raising Cane’s'&&m.f===null);
 assert.ok(unknown);
 assert.equal(engine.eligible(unknown,engine.normalize({complete:false,minFiber:1},rows)),false);
-assert.equal(engine.eligible(unknown,engine.normalize({complete:true},rows)),false);
+assert.equal(engine.eligible(unknown,engine.normalize({complete:true},rows)),engine.complete(unknown));
+assert.equal(engine.eligible({...unknown,fat:null},engine.normalize({complete:true},rows)),false);
 assert.equal(engine.eligible(unknown,engine.normalize({complete:false},rows)),true);
 assert.equal(engine.results(rows,engine.normalize({meal:['breakfast'],complete:false},rows)).every(m=>m.meal==='breakfast'),true);
 console.log('Production engine: all10 chains, numeric filters, unknown nutrients, breakfast and share-state round trips passed.');

@@ -1,0 +1,63 @@
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/validate_site.py
+PASS: 302 HTML files; 301 indexable pages; 301 sitemap URLs; 300 searchable resources.
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/test_publication.py
+Publication: 302 pages; shared stylesheet (69,999 bytes) plus purposeful route styles, preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/test_search_visibility.py
+Search visibility passed: 302 pages, 17679 internal links and anchors; meal labels match source data.
+COMMAND: node tools/test_macro_math.js
+PASS: conversions, BMR, TDEE, goal adjustments and macro energy balance.
+COMMAND: node tools/test-companion-engine.cjs
+PASS Calorie maximum is strict and inclusive
+PASS Protein minimum is strict and inclusive; optional fiber/sodium do not imply missing macros
+PASS Complete macros require calories, protein, carbs and fat, with genuine zero preserved
+PASS Fiber minimum uses the actual value and includes its boundary
+PASS Sodium maximum uses milligrams and includes its boundary
+PASS Fiber and sodium limits exclude unknown nutrient values
+PASS Unknown calories and protein are excluded by explicit limits
+PASS Combined limits never relax after a no-match result
+PASS Explicit zero is a real supported limit
+PASS Optional missing values remain null without fabricated zero
+PASS Restaurant and meal-time selections use OR within their group
+PASS Ingredient selections are strict supported exclusions
+PASS Size preference changes rank without excluding other sizes
+PASS Soft priorities retain incomplete meals when explicitly included
+PASS Protein preference ranks a supported protein-tagged order first
+PASS Explicit numeric sorts are predictable
+PASS Missing values sort last when incomplete records are included
+PASS URL state round trip preserves all supported selections and limits
+PASS Unsupported, repeated and out-of-range URL values are normalized
+PASS Filtering/ranking do not mutate the dataset
+PASS Production provenance expands losslessly and preserves partial-source dates
+PASS No preference preserves catalogue order without hidden nutrient ranking
+22/22 release engine checks passed.
+COMMAND: node tools/test-meal-view.cjs
+PASS shared meal presentation: unknown values, genuine zero, units, servings, sources, escaping and factual match reasons.
+COMMAND: node tools/test-growth-tools.cjs
+PASS Known subtotals preserve genuine zero and missing values
+PASS Serving quantities reject zero, fraction,negative and excessive entries
+PASS Assembled snapshots retain quantities, source trail and unknown totals
+PASS Receipt quantities and currency use actual whole-line payment
+PASS Receipt rejects unavailable values, unsupportedFX and zero protein
+PASS Exact comparison never normalises country or portion differences
+PASS Changed source snapshot is flagged, not silently overwritten
+PASS Notebook survives storage failures without false saved-state success
+PASS Notes stay local and source versions omit personal notes
+9 meaningful order-tool checks passed.
+COMMAND: node tools/international/test-markets.cjs
+PASS: Canadian source fields, exact order sums, editions, market isolation, missing macros/nutrients, stable U.S. keys, share state, private-card exclusion and finder/builder equality.
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/growth_release/review-source.py --validate
+PASS curated schema/raw values, 135 unique menu rows, null/bounds, size/sugar and three portion arithmetic regressions; private source snapshot unavailable (historical browser evidence retained, no fresh retrieval claimed)
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/test_growth_release.py
+PASS 20 substantive integrations, 42 exact record checks, comparator IDs, source dates, 25-chain directory, privacy disclosure placement and dependency ordering.
+COMMAND: node tools/play_release/test-rules.cjs
+PASS: 2240 deterministic solvable games across 56 rules; invalid inputs, empty values, overlap, repeated tiles, completion and pause guards.
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/test-release-content.py
+PASS: {'resources': 33, 'uniqueIntents': 33, 'reproducedSourceFactEntries': 183, 'visibleNutritionRows': 142, 'snapshotInputRecords': 41, 'auditedFinderRecords': 43, 'ingredientSums': 7, 'sourceWireRoundtrip': 'lossless', 'partialCheckDates': 'preserved', 'visualInspection': 'not performed by this script'}
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/test_asset_stamps.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+COMMAND: C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 tools/international/audit.py
+302 active routes; 0 metadata/link/hreflang errors; 0 orphans; 35 repeated paragraphs; 74 language candidates

@@ -1,0 +1,1144 @@
+{
+  "method": "Scripted main-content paragraph review candidates; not a claim that every page was visually read. Necessary disclosures/source notes require editorial retention.",
+  "repeated_paragraphs": [
+    {
+      "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have.",
+      "routes": [
+        "/added-sugar-percentage-from-grams.html",
+        "/breakfast-food-vs-combo-menu.html",
+        "/breakfast-sandwich-half-not-half-protein.html",
+        "/breakfast-two-items-not-one-entry.html",
+        "/breakfast-yogurt-topping-layer.html",
+        "/calculator-activity-choice-sensitivity.html",
+        "/calculator-input-basis-checklist.html",
+        "/calculator-pound-kilogram-entry.html",
+        "/calculator-round-at-end.html",
+        "/calorie-range-menu-reading.html",
+        "/calorie-tool-output-reverse-check.html",
+        "/calorie-units-kcal-kilojoules.html",
+        "/fiber-daily-value-portion-example.html",
+        "/fiber-per-portion-vs-density.html",
+        "/grams-per-serving-vs-protein-percentage.html",
+        "/half-serving-percent-daily-value.html",
+        "/meal-calculation-two-serving-units.html",
+        "/meal-filters-intersection-not-extra-options.html",
+        "/milligram-microgram-mineral-label.html",
+        "/net-carbs-total-carbohydrate.html",
+        "/nutrient-grams-not-food-weight.html",
+        "/nutrition-blank-vs-not-detected.html",
+        "/nutrition-data-mean-not-every-portion.html",
+        "/per-ounce-vs-per-100g-food.html",
+        "/percent-daily-value-not-vertical-total.html",
+        "/percentage-points-vs-percent-food-labels.html",
+        "/portion-ratio-vs-percent-change.html",
+        "/protein-cost-currency-comparison.html",
+        "/protein-cost-pack-size-minimum-spend.html",
+        "/protein-label-blank-daily-value.html",
+        "/protein-per-package-not-scoop-count.html",
+        "/protein-serving-count-day-not-prescription.html",
+        "/protein-target-gap-not-automatic-extra.html",
+        "/protein-value-after-fixed-delivery-fee.html",
+        "/recipe-added-water-not-new-nutrients.html",
+        "/recipe-combined-batches-not-average-serving.html",
+        "/recipe-discrete-pieces-count-or-weight.html",
+        "/recipe-evaporation-weight-density.html",
+        "/recipe-fixed-seasoning-scale.html",
+        "/recipe-freezing-portion-count.html",
+        "/recipe-left-in-pan-residual.html",
+        "/recipe-one-ingredient-substitution.html",
+        "/recipe-quarter-batch-not-quarter-ingredient.html",
+        "/recipe-recalculate-new-product-label.html",
+        "/recipe-repeated-ingredient-two-label-bases.html",
+        "/recipe-sauce-made-vs-sauce-used.html",
+        "/recipe-sauce-on-side-two-totals.html",
+        "/recipe-target-batch-portions-integer.html",
+        "/recipe-uniform-vs-component-serving.html",
+        "/restaurant-compare-tradeoff-not-single-score.html",
+        "/restaurant-dominated-choice-still-context.html",
+        "/restaurant-menu-serving-weight.html",
+        "/restaurant-protein-value-no-price-data.html",
+        "/sodium-milligrams-to-grams.html",
+        "/sugar-lines-do-not-add.html",
+        "/tare-bowl-before-weighing-food.html",
+        "/two-fiber-sources-one-bowl.html",
+        "/two-for-one-protein-promotion.html",
+        "/weigh-food-by-container-difference.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026.",
+      "routes": [
+        "/arbys-breakfast-bread-format.html",
+        "/arbys-roast-beef-cheddar-french-dip.html",
+        "/arbys-sliders-count-whole-tray.html",
+        "/breakfast-bacon-format-sodium-cross-chain.html",
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/burrito-wrap-cross-chain-no-size-standard.html",
+        "/cross-chain-breakfast-ham-formats.html",
+        "/cross-chain-melt-sandwich-orders.html",
+        "/equal-calories-different-macros-menu.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/menu-average-chain-weighting.html",
+        "/menu-pdf-filename-not-edition-date.html",
+        "/protein-sort-vs-portion-mass.html",
+        "/published-vs-calculated-restaurant-rows.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition.",
+      "routes": [
+        "/arbys-breakfast-bread-format.html",
+        "/arbys-roast-beef-cheddar-french-dip.html",
+        "/arbys-sliders-count-whole-tray.html",
+        "/breakfast-bacon-format-sodium-cross-chain.html",
+        "/burrito-wrap-cross-chain-no-size-standard.html",
+        "/cross-chain-bean-burritos-serving-proof.html",
+        "/cross-chain-breakfast-ham-formats.html",
+        "/cross-chain-chicken-soup-no-sodium-assumption.html",
+        "/cross-chain-melt-sandwich-orders.html",
+        "/culvers-chicken-grilled-crispy-spicy.html",
+        "/culvers-dinner-name-side-footnote.html",
+        "/del-taco-bean-burrito-vs-veggie-burrito.html",
+        "/del-taco-two-street-tacos-vs-burrito.html",
+        "/el-pollo-loco-bowls-protein-bigger-build.html",
+        "/el-pollo-loco-salad-dressing-boundary.html",
+        "/el-pollo-loco-tortilla-complete-chicken-meal.html",
+        "/equal-calories-different-macros-menu.html",
+        "/equal-tax-protein-value-ranking.html",
+        "/fat-and-carb-two-energy-profiles.html",
+        "/fiber-count-menu-not-plant-score.html",
+        "/in-n-out-double-vs-two-hamburgers.html",
+        "/in-n-out-three-published-hamburger-versions.html",
+        "/menu-pdf-filename-not-edition-date.html",
+        "/noodles-mac-protein-not-simple-add-on.html",
+        "/noodles-regular-noodle-orders-not-addons.html",
+        "/noodles-two-chicken-salads.html",
+        "/nutrition-totals-not-ingredient-recipe.html",
+        "/protein-chicken-sandwich-size-cross-chain.html",
+        "/protein-sort-vs-portion-mass.html",
+        "/protein-value-price-range-overlap.html",
+        "/qdoba-burrito-bowl-published-pair.html",
+        "/qdoba-vegan-bowl-fiber-tradeoff.html",
+        "/raising-canes-build-order-not-combo-name.html",
+        "/restaurant-protein-cost-receipt-prices.html",
+        "/restaurant-value-your-nutrient-not-protein.html",
+        "/salad-burger-calories-no-category-rule.html",
+        "/saved-meal-source-version-check.html",
+        "/sonic-hot-dog-sodium-toppings.html",
+        "/sonic-small-burgers-not-same-order.html",
+        "/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+        "/taco-johns-bowl-base-tradeoff.html",
+        "/taco-johns-breakfast-taco-vs-burrito.html",
+        "/taco-johns-small-fiber-bound.html",
+        "/three-count-tacos-not-three-equal-meals.html",
+        "/two-person-restaurant-budget-constraints.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts.",
+      "routes": [
+        "/arbys-nutrition-guide.html",
+        "/culvers-nutrition-guide.html",
+        "/del-taco-nutrition-guide.html",
+        "/el-pollo-loco-nutrition-guide.html",
+        "/in-n-out-nutrition-guide.html",
+        "/noodles-and-company-nutrition-guide.html",
+        "/qdoba-nutrition-guide.html",
+        "/raising-canes-nutrition-guide.html",
+        "/sonic-nutrition-guide.html",
+        "/taco-johns-nutrition-guide.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Source marks this item as limited-time or location-dependent; check availability.",
+      "routes": [
+        "/arbys-nutrition-guide.html",
+        "/qdoba-nutrition-guide.html",
+        "/taco-johns-nutrition-guide.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Published August 27, 2026 · Updated September 9, 2026 · 6 minute read · By GetMacros",
+      "routes": [
+        "/are-diet-drinks-bad-for-you.html",
+        "/does-creatine-cause-hair-loss.html",
+        "/how-much-protein-can-your-body-absorb.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ.",
+      "routes": [
+        "/as-packaged-vs-prepared-nutrition.html",
+        "/breakfast-drinks-and-add-ons.html",
+        "/calculate-macros-mixed-bowl.html",
+        "/calories-in-multi-serving-packages.html",
+        "/compare-complete-restaurant-orders.html",
+        "/drained-weight-nutrition-label.html",
+        "/edible-portion-vs-purchased-weight.html",
+        "/grams-vs-milliliters-nutrition-labels.html",
+        "/missing-restaurant-nutrition.html",
+        "/nutrition-label-rounding.html",
+        "/protein-cost-food-waste.html",
+        "/protein-powder-scoop-weight.html",
+        "/raw-vs-cooked-food-weight.html",
+        "/unequal-recipe-portions.html",
+        "/use-calorie-target-meal-finder.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026.",
+      "routes": [
+        "/breakfast-bacon-format-sodium-cross-chain.html",
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/cross-chain-breakfast-ham-formats.html",
+        "/cross-chain-chicken-soup-no-sodium-assumption.html",
+        "/equal-calories-different-macros-menu.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/fat-and-carb-two-energy-profiles.html",
+        "/fiber-count-menu-not-plant-score.html",
+        "/menu-average-chain-weighting.html",
+        "/menu-pdf-filename-not-edition-date.html",
+        "/noodles-mac-protein-not-simple-add-on.html",
+        "/noodles-regular-noodle-orders-not-addons.html",
+        "/noodles-two-chicken-salads.html",
+        "/nutrition-totals-not-ingredient-recipe.html",
+        "/protein-chicken-sandwich-size-cross-chain.html",
+        "/published-vs-calculated-restaurant-rows.html",
+        "/salad-burger-calories-no-category-rule.html",
+        "/sonic-hot-dog-sodium-toppings.html",
+        "/sonic-small-burgers-not-same-order.html",
+        "/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+        "/taco-johns-bowl-base-tradeoff.html",
+        "/taco-johns-breakfast-taco-vs-burrito.html",
+        "/taco-johns-small-fiber-bound.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026.",
+      "routes": [
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/cross-chain-bean-burritos-serving-proof.html",
+        "/del-taco-bean-burrito-vs-veggie-burrito.html",
+        "/del-taco-two-street-tacos-vs-burrito.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/fiber-count-menu-not-plant-score.html",
+        "/menu-average-chain-weighting.html",
+        "/published-vs-calculated-restaurant-rows.html",
+        "/restaurant-value-your-nutrient-not-protein.html",
+        "/three-count-tacos-not-three-equal-meals.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026.",
+      "routes": [
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/cross-chain-melt-sandwich-orders.html",
+        "/culvers-chicken-grilled-crispy-spicy.html",
+        "/culvers-dinner-name-side-footnote.html",
+        "/equal-tax-protein-value-ranking.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/fiber-count-menu-not-plant-score.html",
+        "/menu-average-chain-weighting.html",
+        "/protein-chicken-sandwich-size-cross-chain.html",
+        "/protein-value-price-range-overlap.html",
+        "/published-vs-calculated-restaurant-rows.html",
+        "/restaurant-protein-cost-receipt-prices.html",
+        "/salad-burger-calories-no-category-rule.html",
+        "/two-meal-total-not-day-recommendation.html",
+        "/two-person-restaurant-budget-constraints.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026.",
+      "routes": [
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/burrito-wrap-cross-chain-no-size-standard.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/fiber-count-menu-not-plant-score.html",
+        "/menu-average-chain-weighting.html",
+        "/nutrition-totals-not-ingredient-recipe.html",
+        "/protein-sort-vs-portion-mass.html",
+        "/published-vs-calculated-restaurant-rows.html",
+        "/qdoba-burrito-bowl-published-pair.html",
+        "/qdoba-vegan-bowl-fiber-tradeoff.html",
+        "/saved-meal-source-version-check.html",
+        "/three-count-tacos-not-three-equal-meals.html",
+        "/two-meal-total-not-day-recommendation.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026.",
+      "routes": [
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/cross-chain-bean-burritos-serving-proof.html",
+        "/cross-chain-chicken-soup-no-sodium-assumption.html",
+        "/el-pollo-loco-bowls-protein-bigger-build.html",
+        "/el-pollo-loco-salad-dressing-boundary.html",
+        "/el-pollo-loco-tortilla-complete-chicken-meal.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/menu-average-chain-weighting.html",
+        "/published-vs-calculated-restaurant-rows.html",
+        "/salad-burger-calories-no-category-rule.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026.",
+      "routes": [
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/in-n-out-double-vs-two-hamburgers.html",
+        "/in-n-out-three-published-hamburger-versions.html",
+        "/menu-average-chain-weighting.html",
+        "/published-vs-calculated-restaurant-rows.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026.",
+      "routes": [
+        "/breakfast-dataset-not-opening-hours.html",
+        "/burger-variants-not-nine-base-burgers.html",
+        "/exact-fiber-coverage-denominator.html",
+        "/menu-average-chain-weighting.html",
+        "/protein-chicken-sandwich-size-cross-chain.html",
+        "/published-vs-calculated-restaurant-rows.html",
+        "/raising-canes-build-order-not-combo-name.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "The table describes the specified U.S. selection checked October 4, 2026, not the full current finder, every restaurant menu or customer purchases. Named portions and variants are separate. Retrieval dates do not replace printed edition dates; prices and dietary classifications are not inferred.",
+      "routes": [
+        "/burger-variants-not-nine-base-burgers.html",
+        "/menu-average-chain-weighting.html",
+        "/published-vs-calculated-restaurant-rows.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Avoirdupois ounce and pound conversion factors and thermochemical calorie-to-joule conversion; rounded factors are identified as approximations.",
+      "routes": [
+        "/calculator-height-feet-inches-not-decimal.html",
+        "/calculator-pound-kilogram-entry.html",
+        "/calorie-units-kcal-kilojoules.html",
+        "/per-ounce-vs-per-100g-food.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Turn on JavaScript to use this calculator. The worked example below explains the math.",
+      "routes": [
+        "/carbohydrate-label-portion-tool.html",
+        "/sodium-label-comparison-tool.html",
+        "/sweat-rate-calculator.html",
+        "/weight-goal-timeline-calculator.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score.",
+      "routes": [
+        "/cava-healthy-meals-macros.html",
+        "/chick-fil-a-healthy-meals-macros.html",
+        "/chipotle-healthy-meals-macros.html",
+        "/dunkin-healthy-breakfast-macros.html",
+        "/jersey-mikes-healthy-subs-macros.html",
+        "/kfc-healthy-meals-macros.html",
+        "/mcdonalds-healthy-meals-macros.html",
+        "/panda-express-healthy-meals-macros.html",
+        "/panera-healthy-meals-macros.html",
+        "/popeyes-healthy-meals-macros.html",
+        "/starbucks-healthy-food-meals-macros.html",
+        "/subway-healthy-meals-macros.html",
+        "/sweetgreen-healthy-meals-macros.html",
+        "/taco-bell-healthy-meals-macros.html",
+        "/wendys-healthy-meals-macros.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering.",
+      "routes": [
+        "/cava-healthy-meals-macros.html",
+        "/chick-fil-a-healthy-meals-macros.html",
+        "/chipotle-healthy-meals-macros.html",
+        "/dunkin-healthy-breakfast-macros.html",
+        "/jersey-mikes-healthy-subs-macros.html",
+        "/kfc-healthy-meals-macros.html",
+        "/mcdonalds-healthy-meals-macros.html",
+        "/panda-express-healthy-meals-macros.html",
+        "/panera-healthy-meals-macros.html",
+        "/popeyes-healthy-meals-macros.html",
+        "/starbucks-healthy-food-meals-macros.html",
+        "/subway-healthy-meals-macros.html",
+        "/sweetgreen-healthy-meals-macros.html",
+        "/taco-bell-healthy-meals-macros.html",
+        "/wendys-healthy-meals-macros.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "1 standard sandwich; source formulation includes listed sauce ingredients; extra packets, sides and drinks excluded",
+      "routes": [
+        "/chick-fil-a-healthy-meals-macros.html",
+        "/fast-food-protein-and-sodium.html",
+        "/fast-food-under-1000mg-sodium.html",
+        "/high-protein-fast-food-under-500-calories.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "routes": [
+        "/chipotle-healthy-meals-macros.html",
+        "/fast-food-fiber-and-protein.html",
+        "/fast-food-meals-500-to-700-calories.html",
+        "/fast-food-protein-and-sodium.html",
+        "/protein-density-fast-food.html",
+        "/restaurant-bowl-nutrition-comparison.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 3 oz supergreens, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole",
+      "routes": [
+        "/chipotle-healthy-meals-macros.html",
+        "/fast-food-fiber-and-protein.html",
+        "/fast-food-protein-and-sodium.html",
+        "/high-protein-fast-food-under-500-calories.html",
+        "/protein-density-fast-food.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Listed ingredient build: 1 × 4 oz chicken, 1 × 4 oz white rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "routes": [
+        "/chipotle-healthy-meals-macros.html",
+        "/chipotle-vs-cava-chicken-bowls.html",
+        "/fast-food-fiber-and-protein.html",
+        "/fast-food-meals-500-to-700-calories.html",
+        "/fast-food-protein-and-sodium.html",
+        "/restaurant-bowl-nutrition-comparison.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Listed ingredient build: 1 × 4 oz sofritas, 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "routes": [
+        "/chipotle-healthy-meals-macros.html",
+        "/fast-food-fiber-and-protein.html",
+        "/fast-food-meals-500-to-700-calories.html",
+        "/restaurant-bowl-nutrition-comparison.html",
+        "/vegetarian-fast-food-protein-comparison.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Listed ingredient build: 1 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 4 oz guacamole, 1 × 1 oz romaine",
+      "routes": [
+        "/chipotle-healthy-meals-macros.html",
+        "/restaurant-bowl-nutrition-comparison.html",
+        "/vegetarian-fast-food-protein-comparison.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Listed ingredient build: 1 × 4 oz steak, 1 × 3 oz supergreens, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+      "routes": [
+        "/chipotle-healthy-meals-macros.html",
+        "/fast-food-fiber-and-protein.html",
+        "/fast-food-protein-and-sodium.html",
+        "/high-protein-fast-food-under-500-calories.html",
+        "/protein-density-fast-food.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Figures checked against the linked official sources on September 9, 2026. Recipes, portions and local availability can change.",
+      "routes": [
+        "/dunkin-healthy-breakfast-macros.html",
+        "/jersey-mikes-healthy-subs-macros.html",
+        "/kfc-healthy-meals-macros.html",
+        "/mcdonalds-healthy-meals-macros.html",
+        "/subway-healthy-meals-macros.html",
+        "/wendys-healthy-meals-macros.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "1 × 12 oz chow mein + 1 × 6.1 oz grilled teriyaki chicken + 1 × 6.2 oz orange chicken + 1 × 5.6 oz string bean chicken",
+      "routes": [
+        "/fast-food-fiber-and-protein.html",
+        "/fast-food-protein-and-sodium.html",
+        "/panda-express-healthy-meals-macros.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "3 blackened tenders plus 1 regular red beans and rice; biscuit, sauce and drink excluded",
+      "routes": [
+        "/fast-food-fiber-and-protein.html",
+        "/fast-food-protein-and-sodium.html",
+        "/high-protein-fast-food-under-500-calories.html",
+        "/popeyes-healthy-meals-macros.html",
+        "/protein-density-fast-food.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Official nutrition inspected October 4, 2026. Printed source edition: Not established from the printed document. Retrieval does not mean the recipe was re-tested. Local portions, availability and later menu changes can differ.",
+      "routes": [
+        "/noodles-and-company-nutrition-guide.html",
+        "/sonic-nutrition-guide.html",
+        "/taco-johns-nutrition-guide.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides.",
+      "routes": [
+        "/play-bean-balance.html",
+        "/play-berry-bounce.html",
+        "/play-build-a-plate.html",
+        "/play-claim-check.html",
+        "/play-description-detective.html",
+        "/play-fiber-trail.html",
+        "/play-food-crossword.html",
+        "/play-food-factory.html",
+        "/play-fruit-catch.html",
+        "/play-garden-glide.html",
+        "/play-garden-pipes.html",
+        "/play-harvest-conveyor.html",
+        "/play-ingredient-anagrams.html",
+        "/play-ingredient-order.html",
+        "/play-kitchen-connections.html",
+        "/play-kitchen-rhythm.html",
+        "/play-label-matchmaker.html",
+        "/play-lunchbox-logic.html",
+        "/play-macro-grid.html",
+        "/play-market-budget.html",
+        "/play-market-memory.html",
+        "/play-mascot-maker.html",
+        "/play-menu-mystery.html",
+        "/play-menu-word-hunt.html",
+        "/play-missing-number-kitchen.html",
+        "/play-nutrition-term-match.html",
+        "/play-odd-ingredient-out.html",
+        "/play-orange-orbit.html",
+        "/play-orchard-nonogram.html",
+        "/play-order-recall.html",
+        "/play-pantry-pack.html",
+        "/play-pantry-peek.html",
+        "/play-picnic-delivery.html",
+        "/play-picnic-planner.html",
+        "/play-plate-art.html",
+        "/play-portion-balance.html",
+        "/play-portion-fractions.html",
+        "/play-protein-target-puzzle.html",
+        "/play-range-finder.html",
+        "/play-recipe-dominoes.html",
+        "/play-recipe-path.html",
+        "/play-recipe-remix.html",
+        "/play-restaurant-order-builder.html",
+        "/play-restaurant-route.html",
+        "/play-rounding-room.html",
+        "/play-sandwich-architect.html",
+        "/play-sequence-chef.html",
+        "/play-serving-size-detective.html",
+        "/play-silhouette-supper.html",
+        "/play-smoothie-studio.html",
+        "/play-snack-slide.html",
+        "/play-sodium-sort.html",
+        "/play-source-sleuth.html",
+        "/play-spot-the-swap.html",
+        "/play-tabletop-tangram.html",
+        "/play-trade-off-table.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Touch the controls or use Tab and Enter. There is no time limit or mandatory sound. Pause at any point; restarting repeats this puzzle and New puzzle changes its seed.",
+      "routes": [
+        "/play-bean-balance.html",
+        "/play-berry-bounce.html",
+        "/play-build-a-plate.html",
+        "/play-claim-check.html",
+        "/play-description-detective.html",
+        "/play-fiber-trail.html",
+        "/play-food-crossword.html",
+        "/play-food-factory.html",
+        "/play-fruit-catch.html",
+        "/play-garden-glide.html",
+        "/play-garden-pipes.html",
+        "/play-harvest-conveyor.html",
+        "/play-ingredient-anagrams.html",
+        "/play-ingredient-order.html",
+        "/play-kitchen-connections.html",
+        "/play-kitchen-rhythm.html",
+        "/play-label-matchmaker.html",
+        "/play-lunchbox-logic.html",
+        "/play-macro-grid.html",
+        "/play-market-budget.html",
+        "/play-market-memory.html",
+        "/play-mascot-maker.html",
+        "/play-menu-mystery.html",
+        "/play-menu-word-hunt.html",
+        "/play-missing-number-kitchen.html",
+        "/play-nutrition-term-match.html",
+        "/play-odd-ingredient-out.html",
+        "/play-orange-orbit.html",
+        "/play-orchard-nonogram.html",
+        "/play-order-recall.html",
+        "/play-pantry-pack.html",
+        "/play-pantry-peek.html",
+        "/play-picnic-delivery.html",
+        "/play-picnic-planner.html",
+        "/play-plate-art.html",
+        "/play-portion-balance.html",
+        "/play-portion-fractions.html",
+        "/play-protein-target-puzzle.html",
+        "/play-range-finder.html",
+        "/play-recipe-dominoes.html",
+        "/play-recipe-path.html",
+        "/play-recipe-remix.html",
+        "/play-restaurant-order-builder.html",
+        "/play-restaurant-route.html",
+        "/play-rounding-room.html",
+        "/play-sandwich-architect.html",
+        "/play-sequence-chef.html",
+        "/play-serving-size-detective.html",
+        "/play-silhouette-supper.html",
+        "/play-smoothie-studio.html",
+        "/play-snack-slide.html",
+        "/play-sodium-sort.html",
+        "/play-source-sleuth.html",
+        "/play-spot-the-swap.html",
+        "/play-tabletop-tangram.html",
+        "/play-trade-off-table.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard.",
+      "routes": [
+        "/play-bean-balance.html",
+        "/play-berry-bounce.html",
+        "/play-build-a-plate.html",
+        "/play-claim-check.html",
+        "/play-description-detective.html",
+        "/play-fiber-trail.html",
+        "/play-food-crossword.html",
+        "/play-food-factory.html",
+        "/play-fruit-catch.html",
+        "/play-garden-glide.html",
+        "/play-garden-pipes.html",
+        "/play-harvest-conveyor.html",
+        "/play-ingredient-anagrams.html",
+        "/play-ingredient-order.html",
+        "/play-kitchen-connections.html",
+        "/play-kitchen-rhythm.html",
+        "/play-label-matchmaker.html",
+        "/play-lunchbox-logic.html",
+        "/play-macro-grid.html",
+        "/play-market-budget.html",
+        "/play-market-memory.html",
+        "/play-mascot-maker.html",
+        "/play-menu-mystery.html",
+        "/play-menu-word-hunt.html",
+        "/play-missing-number-kitchen.html",
+        "/play-nutrition-term-match.html",
+        "/play-odd-ingredient-out.html",
+        "/play-orange-orbit.html",
+        "/play-orchard-nonogram.html",
+        "/play-order-recall.html",
+        "/play-pantry-pack.html",
+        "/play-pantry-peek.html",
+        "/play-picnic-delivery.html",
+        "/play-picnic-planner.html",
+        "/play-plate-art.html",
+        "/play-portion-balance.html",
+        "/play-portion-fractions.html",
+        "/play-protein-target-puzzle.html",
+        "/play-range-finder.html",
+        "/play-recipe-dominoes.html",
+        "/play-recipe-path.html",
+        "/play-recipe-remix.html",
+        "/play-restaurant-order-builder.html",
+        "/play-restaurant-route.html",
+        "/play-rounding-room.html",
+        "/play-sandwich-architect.html",
+        "/play-sequence-chef.html",
+        "/play-serving-size-detective.html",
+        "/play-silhouette-supper.html",
+        "/play-smoothie-studio.html",
+        "/play-snack-slide.html",
+        "/play-sodium-sort.html",
+        "/play-source-sleuth.html",
+        "/play-spot-the-swap.html",
+        "/play-tabletop-tangram.html",
+        "/play-trade-off-table.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets.",
+      "routes": [
+        "/play-build-a-plate.html",
+        "/play-claim-check.html",
+        "/play-fiber-trail.html",
+        "/play-food-factory.html",
+        "/play-harvest-conveyor.html",
+        "/play-ingredient-order.html",
+        "/play-label-matchmaker.html",
+        "/play-macro-grid.html",
+        "/play-missing-number-kitchen.html",
+        "/play-portion-balance.html",
+        "/play-portion-fractions.html",
+        "/play-protein-target-puzzle.html",
+        "/play-range-finder.html",
+        "/play-recipe-dominoes.html",
+        "/play-restaurant-route.html",
+        "/play-rounding-room.html",
+        "/play-serving-size-detective.html",
+        "/play-sodium-sort.html",
+        "/play-trade-off-table.html"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    },
+    {
+      "text": "We do not certify allergens or dietary suitability. Confirm ingredients and preparation with the restaurant. Source retrieval and edition dates are separate.",
+      "routes": [
+        "/ca/en/restaurants/a-w-canada/",
+        "/ca/en/restaurants/harvey-s/",
+        "/ca/en/restaurants/tim-hortons/"
+      ],
+      "status": "editorial review candidate; shared factual limits are not automatically removed",
+      "review_decision": "Retain factual portion/source or safety disclosure where it applies; not marketing copy. Repetition inside independently usable source details is deliberate."
+    }
+  ],
+  "internal_language_candidates": [
+    {
+      "route": "/arbys-breakfast-bread-format.html",
+      "text": "Bread choice changes the listed breakfast enough to be worth checking. Arby’s Bacon, Egg & Cheese versions range from 410 to 470 kcal in these four records, but their sodium range is wider than the calorie difference might suggest.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/arbys-breakfast-bread-format.html",
+      "text": "Start with whichever breakfast formats the location actually offers, then compare the complete rows. Add any ordered potato side, spread or drink separately using its own source portion. Breakfast availability is location-dependent; this comparison records published builds rather than promising all four will be offered where you are.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/are-diet-drinks-bad-for-you.html",
+      "text": "In 2023, the International Agency for Research on Cancer classified aspartame as “possibly carcinogenic,” a hazard category indicating limited evidence—not a measure of risk at a typical dose. At the same time, the Joint FAO/WHO Expert Committee on Food Additives reviewed exposure and retained its acceptable daily intake of 0–40 mg per kilogram of body weight. The agencies explained the distinction in their joint hazard and risk assessment release.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/body-recomposition-explained.html",
+      "text": "Separate the goal from the evidence. A change in body weight measures total mass, not muscle and fat separately. A stronger lift records performance, not a direct muscle measurement. Looking at more than one measure helps you avoid drawing a big conclusion from a small change.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/breakfast-two-items-not-one-entry.html",
+      "text": "Check whether the sandwich listing includes a spread, sauce or cheese. Check whether the yogurt is the whole container or a smaller serving. GetMacros records should keep exclusions visible so a standalone breakfast item is not mistaken for a combo.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/burger-variants-not-nine-base-burgers.html",
+      "text": "They are separate records because calories, macros, sodium or serving weight change. Choose the recipe you actually want: the standard, mustard-and-ketchup and lettuce-wrapped versions should not share one assumed nutrition total.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/burger-variants-not-nine-base-burgers.html",
+      "text": "The table shows the three-by-three structure in the January 2026 source. This is a classification of the inspected records, not a menu sales analysis or a claim about the popularity of lettuce wraps. Use the restaurant’s nutrition information for alterations outside these documented choices.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/calories-vs-macros-what-matters-more.html",
+      "text": "If you only track one macro, protein is often the most useful candidate for a muscle-building or cutting goal. The daily protein guide shows baseline and training-oriented ranges without pretending everyone needs bodybuilder numbers.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/chick-fil-a-healthy-meals-macros.html",
+      "text": "Original dedicated item checks date to October 3, 2026. Six specific items were rechecked against the full official table October 9, with their earlier per-nutrient history retained. Two large combinations now have exact, source-linked fat sums reviewed October 9; other records keep their own dates. The Cool Wrap figure includes suggested Avocado Lime Ranch dressing.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/chick-fil-a-vs-popeyes-chicken.html",
+      "text": "To compare a different finished order, include its exact side and sauce amounts. Review the Chick-fil-A records or review the Popeyes records, then compare the named items in the finder.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/corrections.html",
+      "text": "Email getmacros.net@outlook.com. Include the wording or result, what you expected and a supporting source if you have one. Please do not send private medical records.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/culvers-nutrition-guide.html",
+      "text": "Both are single-patty adult-menu entries, with fries and drinks excluded. The dataset uses the July 2025 official guide retrieved October 4, 2026. Its later retrieval does not make the recipe edition current, so confirm later changes with Culver’s before ordering.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/del-taco-bean-burrito-vs-veggie-burrito.html",
+      "text": "The 6 g fiber difference belongs to the full published orders. You cannot assign all of it to one ingredient without compatible ingredient records. “More layers” also does not automatically mean more of every nutrient.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/does-creatine-cause-hair-loss.html",
+      "text": "The creatine rumor traces mainly to a 2009 crossover study of 20 college-aged male rugby players. Participants completed a seven-day creatine loading phase at 25 grams per day followed by 14 days at 5 grams per day. Serum testosterone did not change, while DHT rose from baseline and the DHT-to-testosterone ratio changed.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/does-creatine-cause-hair-loss.html",
+      "text": "One 12-week study cannot establish that no creatine user could ever notice shedding. Pattern hair loss unfolds over longer periods and is strongly influenced by genetics, age and baseline follicle sensitivity. The study was limited to men aged 18–40 who resistance trained. It did not focus only on people with a strong family history or active androgenetic alopecia, and it did not test a loading phase.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/el-pollo-loco-tortilla-complete-chicken-meal.html",
+      "text": "Pinto beans and rice belong to both named records. Adding their standard portions again would double-count them. If you select another side or different pieces of chicken, neither original row automatically becomes accurate for the revised meal.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/equal-calories-different-macros-menu.html",
+      "text": "If calories are equal, compare the supported nutrient that matters to you, the meal format and current availability. Sodium breaks the Arby’s tie clearly in the published records. Preference can still decide the order. The table excludes additional sides, sauce packets and drinks and does not promise every standard kitchen portion is exact.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-fiber-and-protein.html",
+      "text": "Beans, vegetables and some wraps can change a protein-focused order’s fiber total. In the checked records, several bowls and salads contain at least 20 g protein and 7 g fiber. The calories and sodium still vary widely.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-fiber-and-protein.html",
+      "text": "Del Taco’s Green Bean & Cheese Burrito records 24 g protein and 15 g fiber. QDOBA’s Fajita Vegan Bowl has more fiber, at 22 g, but less protein, at 17 g. A “most fiber” sort and a “20 g protein minimum” filter answer different questions.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-meals-500-to-700-calories.html",
+      "text": "These are source-inspected main-order records with at least 20 g protein. The range is a browsing choice, not a universal lunch requirement. Standard dressings are included where the source says so; extra sides and drinks are not.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "An original, reproducible snapshot of GetMacros’ tracked U.S. order dataset, source-inspection coverage, nutrient provenance and exact scope.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "The current dataset contains 463 recorded orders across 25 U.S. restaurant names. These are selected portions and explicitly assembled orders. Coverage is recorded below; it is not a survey of the restaurant market.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "Each minimum, median and maximum uses only records with a known value for that nutrient. Different nutrients can therefore describe different subsets. A listed “less than 1 g” is a bound, not an exact zero or one.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "These ranges include single tacos, breakfast items, sides retained in the original dataset and large combinations. The maximum is a recorded portion, not a suggested target. The median is not a typical lunch or an estimate of what people eat.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "The October 3–4 inspection covered 421 records from 18 chains at least partly. The remaining records retain earlier check dates. A source inspection means the published document or page was inspected; it is not a kitchen measurement, local availability test or promise that a recipe just changed.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "The initial source audit covered 41 records. Of those, 40 had six exact inspected or calculated values. Its median was 467.5 calories and 28 g protein. Those figures describe that earlier subset only.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "Cite “GetMacros restaurant-data snapshot, October 9, 2026,” this URL, the statistic, units and subset definition. For a specific restaurant nutrient claim, also cite that order’s official source and portion. These U.S. records are not Canadian or globally interchangeable menu data. See the separate Canadian coverage report.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "The snapshot is computed from the central meal records and their recorded provenance. A deterministic snapshot fingerprint is a9d583839d7ffc99. It identifies this record set, not independent certification.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "text": "135 component records shown",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-protein-and-sodium.html",
+      "text": "This is an order comparison, not advice for a medical sodium restriction. The FDA’s sodium guide explains how daily labeling reference values work. A daily reference is not automatically a target for each meal. In the finder, a sodium ceiling excludes records above your chosen amount or without a known sodium value.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-protein-and-sodium.html",
+      "text": "The regular Noodles Chicken Noodle Soup records 30 g protein and 2,320 mg sodium. Culver’s Beef Pot Roast Sandwich records 31 g protein and 740 mg sodium. Their protein totals are close, but the sodium totals differ by 1,580 mg.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-protein-and-sodium.html",
+      "text": "The soup is the regular dish, not the smaller side. The sandwich excludes sides and a drink. Both are U.S. records inspected October 4, with Culver’s figures retained from its July 2025 edition. For a medically prescribed limit, use advice from your clinician and confirm the current restaurant information.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/fast-food-under-1000mg-sodium.html",
+      "text": "If you have a sodium limit set by a clinician, use that individual guidance and ask the restaurant about the actual preparation. These U.S. source records cannot establish the sodium of a local customized order.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/grilled-and-blackened-chicken-comparison.html",
+      "text": "The crispy build therefore has 210 more calories but 8 g less protein at its standard serving. Fat is 35 g versus 19 g, and sodium 1,590 mg versus 1,340 mg. These whole-product differences cannot be attributed exclusively to cooking method: the records do not measure a controlled identical-chicken experiment.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "text": "A single Del Taco Grilled Chicken Street Taco records 110 calories and 9 g protein. If you actually order three identical listed portions, the calculated amount is 330 calories and 27 g protein. That is your three-taco calculation, not a newly published restaurant combo.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "text": "Compare it with the food you would otherwise buy: El Pollo Loco’s Classic Chicken Burrito records 480 calories and 25 g protein at its 10.4 oz portion. The lower-calorie taco row does not by itself tell you which full order you want. Count comes before sorting.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "text": "These U.S. records retain the February and September 2026 source editions inspected October 4. A drink, dipping sauce or side needs another supported portion. Use the exact records below, then change quantities in the order builder; missing component values must remain unknown.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/high-protein-fast-food-under-500-calories.html",
+      "text": "The wider dataset also records QDOBA’s Keto Bowl - Chicken, Culver’s Grilled Chicken Sandwich and El Pollo Loco’s Classic Chicken Burrito below 500 calories with at least 25 g protein. These are a named bowl, sandwich and burrito, rather than three bare chicken portions.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/how-much-protein-can-your-body-absorb.html",
+      "text": "For general health rather than maximizing muscle growth, needs and priorities differ. The page How much protein do I need? separates baseline reference intakes from training-oriented ranges.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/how-to-hit-protein-goal-on-budget.html",
+      "text": "For a restaurant order, use the amount you actually paid and the protein in that exact item. Arby’s Classic Roast Beef records 23 g protein; its Ham & Swiss Melt records 26 g. The melt can cost about 13% more before its cost per gram exceeds the roast-beef sandwich’s: 26 ÷ 23 is about 1.13.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/how-to-hit-protein-goal-on-budget.html",
+      "text": "Protein value still does not rank taste, fiber or sodium. The sandwich nutrient records use the U.S. June 2026 effective source inspected October 4; sides, drinks and extra sauce are excluded. Keep fees consistent between the two prices.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/jersey-mikes-healthy-subs-macros.html",
+      "text": "Both records are Mike’s Way. A regular sub, wrap or different toppings are separate orders; do not reuse the mini-sub numbers for them.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/menu-average-chain-weighting.html",
+      "text": "There are 380 source-defined records across ten chains in this dated selection. Taco John’s is 122 ÷ 380, approximately 32.1% of those rows. Raising Cane’s is 3 ÷ 380, approximately 0.8%. These shares describe database coverage, not sales, popularity or the proportion of menu items sold nationally.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/menu-average-chain-weighting.html",
+      "text": "The finder can compare exact meals without inventing a broad chain health score. When evaluating a dataset summary, look for its scope, count and weighting method. More records can mean more documented variants rather than better or worse food. The table makes the imbalance visible so a single average cannot hide it.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/menu-pdf-filename-not-edition-date.html",
+      "text": "A printed edition describes what the document claims about itself. A retrieval date records when GetMacros obtained it. A filename is a storage label. None proves when every restaurant changed a recipe or last verified a kitchen portion.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/milligram-microgram-mineral-label.html",
+      "text": "An invented label listing 20 micrograms records 0.020 milligrams, not 20 milligrams. Conversely, 2 milligrams is 2,000 micrograms. The arithmetic converts the unit; it does not change the amount of the nutrient in the food.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/missing-restaurant-nutrition.html",
+      "text": "A strict protein minimum needs a supported protein value. A strict sodium maximum needs a supported sodium value. An incomplete meal should not pass either test based on a guessed number. Including incomplete records in general browsing does not make their missing nutrients verified.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/noodles-regular-noodle-orders-not-addons.html",
+      "text": "If your ordered named dish already includes Parmesan Chicken, do not add that protein again merely because the receipt lists an ingredient. An extra ordered protein is another component and requires its published portion. Drinks and extra sides are not included in this table. This guide records source-defined builds rather than a promise about every customization available at a location.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/nutrition-totals-not-ingredient-recipe.html",
+      "text": "Look for official component information, a documented customization or a clearly defined standard variation. When it is absent, keep the modified total unknown. The complete-order records below remain useful for choosing between published builds; they simply do not become recipes or independent ingredient measurements because a calculator can subtract them.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/portion-ratio-vs-percent-change.html",
+      "text": "This arithmetic can compare calories, protein or another supported quantity, but it does not by itself judge the meal’s suitability. Keep the portions and units visible. A percentage for a tiny baseline can sound dramatic while the gram difference is small. FDA’s serving guidance supports scaling like-for-like portions; the fictional examples here explain how to describe the resulting difference accurately.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/privacy.html",
+      "text": "Game completions, the last puzzle seed and saved artwork are also stored locally. They are not an account or cross-device sync. Clearing site storage removes these records.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "text": "We divide the published protein by calories and multiply by 100. The table includes the twelve highest ratios among source-inspected GetMacros records with at least 20 g protein. Ranking uses the unrounded ratio; the displayed ratio is rounded to one decimal place.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/recipe-target-batch-portions-integer.html",
+      "text": "Rounding 1,000 ÷ 150 up to seven identical portions would claim 1,050 g of food. Rounding down to six and discarding the remainder from your records would omit 200 kcal if you later eat it.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/recipe-target-batch-portions-integer.html",
+      "text": "This method assumes an evenly mixed batch. Separate chicken pieces, toppings or uneven sauce may require component-level portioning. The invented example is arithmetic, not a kitchen-tested recipe or advice to eat a particular portion. Use your actual final yield and compatible ingredient records, and follow appropriate storage guidance independently of the nutrient calculation.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/restaurant-compare-tradeoff-not-single-score.html",
+      "text": "FDA’s serving and menu resources support checking the declared basis. The figures here are fictional and do not establish a personal target. GetMacros can sort real supported records by a chosen quantity. It should not convert those simple rankings into a made-up percentage of perfection or a promise about an individual health outcome.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/restaurant-menu-serving-weight.html",
+      "text": "A weight should never replace the order description. Check whether dressing, buns, toppings and sides are included. Ingredient weights and a completed order’s weight may be drawn from different source records, and rounded figures may not sum exactly.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/restaurant-protein-value-no-price-data.html",
+      "text": "FDA’s menu-labeling resource explains the nutrition context; it does not provide prices. GetMacros’ protein-cost calculator accepts prices you supply. The finder’s nutrient records should never be treated as a verified price database. When a value question cannot be answered from the available evidence, the useful next step is to obtain the missing price, not to turn calories into a proxy for cost.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/restaurant-search-result-count-scope.html",
+      "text": "The meal finder counts the items it can search, not every order a restaurant could prepare. The result count is useful when its scope is clear. “No matches” in a tracked dataset does not prove that no suitable meal exists anywhere on the current menu.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/restaurant-search-result-count-scope.html",
+      "text": "Imagine a dataset of 20 records, two lacking the necessary protein data. Eighteen are eligible for a supported protein search. Five satisfy your active limits, but the first display shows three. The useful label is “5 matches” with three currently visible—not “20 meals for you.”",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/saved-meal-source-version-check.html",
+      "text": "Confirm that the current official entry still describes the same market and build. If you added extra protein or removed an ingredient, the standard saved row may not describe your modification. A source retrieval date records an inspection, not a guarantee about the next order.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/sonic-small-burgers-not-same-order.html",
+      "text": "“Jr” describes a menu format, not a fixed nutrient profile. In these SONIC records, the Jr Double Cheeseburger has more protein and less sodium than the Jr Bacon Cheeseburger, even though their calories are close.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/sources.html",
+      "text": "Choose the country where you are ordering. Canadian and U.S. records have separate portions and official sources. Open an order’s details for its serving and source history; a comparison’s writing date does not mean its restaurant values were rechecked that day.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/sources.html",
+      "text": "The U.S. finder coverage report records known and missing values. The separate Canadian source history describes A&W, Harvey’s and Tim Hortons coverage, editions and withheld values. Neither is a full-menu or local-availability audit.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/sources.html",
+      "text": "CAVA’s earlier accessible document does not establish current local menu availability. Earlier Starbucks checks used official indexed text when the live page did not expose a nutrition table. These access limits remain attached to the affected records.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/sources.html",
+      "text": "380 additional recorded orders from 10 U.S. chains were transcribed from inspected official sources. The complete dataset now contains 463 orders across 25 chains. A single taco or slider remains one named portion, not a full combo meal.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/sources.html",
+      "text": "Printed source editions and retrieval dates are different. Culver’s uses a July 2025 official document; unestablished publication dates stay blank. These are U.S. records, with no inferred allergen safety, prices or local menu availability. Inspect each restaurant’s portions and source notes.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/starbucks-healthy-food-meals-macros.html",
+      "text": "The wrap supplies more protein, fiber and calories than the egg bites in these records. The bites are the smaller breakfast option, but the wrap may better match a larger appetite. These are food-only comparisons: a latte, syrup or other drink is not included.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/starbucks-healthy-food-meals-macros.html",
+      "text": "Three food records were inspected October 3, 2026 in indexed text from their official nutrition pages; direct page retrieval returned a script shell. Other records retain their previous check dates. A drink or added spread is not included in a food-only total.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/sweetgreen-healthy-meals-macros.html",
+      "text": "These recorded bowls are close in protein but differ substantially in calories. The Harvest Bowl has more fiber and less sodium in our records, so choosing only by calorie count would miss part of the comparison. Both figures describe the standard bowl, including its listed dressing.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/taco-bell-healthy-meals-macros.html",
+      "text": "We can compare the recorded calorie totals for these two bowls. We cannot make a complete protein, fiber or sodium comparison because some values are unverified in our records. A dash is missing information, not a zero and not evidence that the veggie bowl has no protein.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/taco-bell-healthy-meals-macros.html",
+      "text": "The finder requires known calories, protein, carbs and fat by default. You can include incomplete records, but a nutrient filter still requires that nutrient to be known. Check Taco Bell’s current item information before relying on a missing value.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/use-calorie-target-meal-finder.html",
+      "text": "Remember that the tracked dataset is a selection of U.S. orders. No matches means no supported match in that selection, not that no suitable meal exists anywhere.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/vegetarian-fast-food-protein-comparison.html",
+      "text": "These additional records do not yet have dietary classifications assigned in GetMacros. The exact-order link can compare their nutrition, but they are not automatically included as verified matches by the site’s meat-free or plant-based filter. A menu name alone cannot fill that missing classification.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    },
+    {
+      "route": "/ca/en/",
+      "text": "A tracked selection, not a full-menu audit. McDonald’s Canada is awaiting complete source verification; U.S. McDonald’s records are not shown here.",
+      "review_decision": "Read in context: retain applicable source/portion limits, mathematical definitions or scientific terminology. Technical wording on the coverage report is deliberate; no automatic synonym replacement."
+    }
+  ]
+}

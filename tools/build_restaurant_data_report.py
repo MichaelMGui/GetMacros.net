@@ -47,10 +47,11 @@ def load(preview=False):
     return records
 
 def statistics_for(records):
-    version=payload()['date']
+    version='2026-10-09'
+    inspection_end=payload()['date']
     inspection_start='2026-10-03'
     def checked(info):
-        return inspection_start <= str(info.get('retrieved','')) <= version
+        return inspection_start <= str(info.get('retrieved','')) <= inspection_end
     inspected=[r for r in records if any(checked(info) for info in r['proof'].get('nutrientProvenance',{}).values())]
     exact_inspected=[r for r in records if all(r['values'][k] is not None and checked(r['proof'].get('nutrientProvenance',{}).get(k,{})) for k in FIELDS)]
     exact_all=[r for r in records if all(r['values'][k] is not None for k in FIELDS)]
@@ -71,12 +72,12 @@ def statistics_for(records):
     data=[{'key':r['key'],'values':r['values'],'proof':r['proof']} for r in records]
     digest=hashlib.sha256(json.dumps(data,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
     original_audit_path=ROOT/'docs/release-2026-10-03/data-audited-patches.json'
-    original=json.loads(original_audit_path.read_text(encoding='utf-8'))['records']
+    original=[r for r in json.loads(original_audit_path.read_text(encoding='utf-8'))['records'] if r['retrievalDate']=='2026-10-03']
     original_exact=[r['values'] for r in original if len(r['values'])==6 and all(v is not None for v in r['values'].values())]
     return {'snapshotDate':version,'inspectionStart':inspection_start,'market':'U.S.','records':len(records),'chains':len(chains),
         'sourceInspectedRecords':len(inspected),'sourceInspectedChains':len({r['meal']['chain'] for r in inspected}),
         'exactSixNutrients':len(exact_all),'exactSixNutrientsInspectedThisRelease':len(exact_inspected),
-        'exactFinderNutrients':sum(all(r['values'][k] is not None for k in ('cal','p','f','na')) for r in records),
+        'exactFinderNutrients':sum(all(r['values'][k] is not None for k in ('cal','p','c','fat')) for r in records),
         'sourceURLs':len(sources),'ranges':ranges,'coverage':coverage,'snapshotSHA256':digest,
         'originalOctober3Subset':{'inspected':len(original),'exactSixNutrients':len(original_exact),'medianCalories':statistics.median(r['cal'] for r in original_exact),'medianProtein':statistics.median(r['p'] for r in original_exact)},
         'inspectionNotClaimed':['Kitchen measurements','Local menu availability','Allergen safety','Price verification','Representative population survey']}
@@ -88,12 +89,12 @@ def render_body(s):
     measures=[('Recorded orders',s['records'],'Individual foods, explicitly named portions and defined combinations.'),
         ('Restaurant names',s['chains'],'Distinct U.S. chain labels; not a store-location count.'),
         ('Records with all six exact nutrition values',s['exactSixNutrients'],'Calories, protein, carbohydrate, fat, fiber and sodium; includes earlier source checks.'),
-        ('Records with all finder nutrients known',s['exactFinderNutrients'],'Calories, protein, fiber and sodium; the finder’s complete-data setting uses this subset.'),
+        ('Records with all finder nutrients known',s['exactFinderNutrients'],'Calories, protein, carbs and fat. Fiber and sodium must also be known when filtered.'),
         ('Unknown exact fiber values',s['ranges']['f']['unknown'],'Includes less-than bounds; unknown values are not zero.'),
         ('Unknown fat values',s['ranges']['fat']['unknown'],'Fat comes from recorded provenance, never inferred from calories.'),
-        ('Source-inspected records, October 3–4',s['sourceInspectedRecords'],'At least one nutrient source inspected during this release; not a new recipe date.'),
+        ('Source-inspected records, October 3–4',s['sourceInspectedRecords'],'At least one nutrient source inspected in this dated subset; not a new recipe date.'),
         ('Chains in that source inspection',s['sourceInspectedChains'],'Inspection coverage, not every store or full menu.'),
-        ('Six exact values inspected or calculated, October 3–4',s['exactSixNutrientsInspectedThisRelease'],'All six nutrients have release-period provenance and an exact number.')]
+        ('Six exact values inspected or calculated, October 3–4',s['exactSixNutrientsInspectedThisRelease'],'All six nutrients have October 3–4 provenance and an exact number.')]
     coverage='<div class="table-wrap" tabindex="0" role="region" aria-label="Dataset coverage"><table class="comparison-table"><thead><tr><th scope="col">Measure</th><th scope="col">Records</th><th scope="col">Meaning</th></tr></thead><tbody>'+''.join('<tr><th scope="row">'+label+'</th><td>'+str(count)+'</td><td>'+meaning+'</td></tr>' for label,count,meaning in measures)+'</tbody></table></div>'
     ranges='<div class="table-wrap" tabindex="0" role="region" aria-label="Known-value nutrition ranges"><table class="comparison-table"><thead><tr><th scope="col">Nutrient</th><th scope="col">Minimum</th><th scope="col">Median</th><th scope="col">Maximum</th><th scope="col">Unknown</th></tr></thead><tbody>'
     for k,(label,unit) in FIELDS.items():
@@ -106,7 +107,7 @@ def render_body(s):
     chain_table+='</tbody></table></div></details>'
     historic=s['originalOctober3Subset']
     history=f'<details><summary>The earlier October 3 subset</summary><p>The initial source audit covered {historic["inspected"]} records. Of those, {historic["exactSixNutrients"]} had six exact inspected or calculated values. Its median was {num(historic["medianCalories"])} calories and {num(historic["medianProtein"])} g protein. Those figures describe that earlier subset only.</p><div class="table-wrap"><table class="comparison-table"><thead><tr><th scope="col">Earlier subset measure</th><th scope="col">October 3 value</th></tr></thead><tbody>'+''.join('<tr><th scope="row">'+label+'</th><td>'+num(count)+'</td></tr>' for label,count in [('Inspected records',historic['inspected']),('Six exact inspected values',historic['exactSixNutrients']),('Median calories',historic['medianCalories']),('Median protein (g)',historic['medianProtein'])])+'</tbody></table></div></details>'
-    return f'''<p class="submission-byline">By GetMacros · Published October 3, 2026 · Data snapshot October 4, 2026</p>
+    return f'''<p class="submission-byline">By GetMacros · Published October 3, 2026 · Data snapshot October 9, 2026</p>
 <p>The current dataset contains <strong>{s['records']} recorded orders across {s['chains']} U.S. restaurant names</strong>. These are selected portions and explicitly assembled orders. Coverage is recorded below; it is not a survey of the restaurant market.</p>
 <h2 id="resource-section-1">What the snapshot covers</h2>{coverage}{chain_table}
 <h2 id="resource-section-2">Known values and unknown values</h2><p>Each minimum, median and maximum uses only records with a known value for that nutrient. Different nutrients can therefore describe different subsets. A listed “less than 1 g” is a bound, not an exact zero or one.</p>{ranges}
@@ -115,8 +116,8 @@ def render_body(s):
 <p>A published recipe total and a GetMacros component sum are different kinds of evidence. Chipotle and Panda builds retain their ingredient assumptions. The two new Raising Cane’s finger orders sum explicitly listed individual portions and are not presented as official combo totals. If one component has unknown exact fiber, the total stays unknown. No missing fat is estimated from a calorie equation.</p>
 <h2 id="resource-section-4">Source dates are not recipe dates</h2><p>The October 3–4 inspection covered {s['sourceInspectedRecords']} records from {s['sourceInspectedChains']} chains at least partly. The remaining records retain earlier check dates. A source inspection means the published document or page was inspected; it is not a kitchen measurement, local availability test or promise that a recipe just changed.</p>
 <p>Arby’s printed effective date is June 2026. SONIC’s linked filename says September 2026 but its cover says Summer 2026. Culver’s uses an official July 2025 PDF; check its live guide for later changes. In-N-Out uses the January 2026 PDF linked by its nutrition page, which differs from some HTML values. Exact printed dates remain unknown for Noodles and Taco John’s.</p>
-<p>The earlier CAVA document’s current menu linkage remains unresolved. Starbucks source access used indexed official text. The twelve-count Chick-fil-A nuggets have separate dates for four newly inspected nutrients and their older fiber and sodium records. These limits do not disappear when the site design changes.</p>{history}
-<h2 id="resource-section-5">Use or cite these figures</h2><p>Cite “GetMacros restaurant-data snapshot, October 4, 2026,” this URL, the statistic, units and subset definition. For a specific restaurant nutrient claim, also cite that order’s official source and portion. These U.S. records are not Canadian or globally interchangeable menu data.</p>
+<p>The earlier CAVA document’s current menu linkage remains unresolved. Starbucks source access used indexed official text. Chick-fil-A’s twelve-count nuggets retain their original nutrient-check history alongside a subsequent full-table review on October 9. The two large combination fat totals were calculated from exact documented components on October 9. Those later checks are separate from the October 3–4 subset above.</p>{history}
+<h2 id="resource-section-5">Use or cite these figures</h2><p>Cite “GetMacros restaurant-data snapshot, October 9, 2026,” this URL, the statistic, units and subset definition. For a specific restaurant nutrient claim, also cite that order’s official source and portion. These U.S. records are not Canadian or globally interchangeable menu data. See the <a href="ca/en/menu-sources/">separate Canadian coverage report</a>.</p>
 <p>The snapshot is computed from the central meal records and their recorded provenance. A deterministic snapshot fingerprint is <code>{s['snapshotSHA256'][:16]}</code>. It identifies this record set, not independent certification.</p>
 <h2 id="resource-section-6">Sources and limits</h2><p><a href="sources.html">Sources and methodology</a> explains the record definitions. Individual <a href="restaurant-meal-guides.html">restaurant guides</a> provide official links, source editions and serving notes. Prices, allergen safety and unsupported menu customizations are not inferred. GetMacros does not republish restaurant photographs or source PDFs as its own artwork.</p>
 <aside class="ad-placement" data-ad-placement="article-after-content" hidden aria-label="Advertisement"></aside><aside class="source-ribbon"><div><h2>Find an order with these values</h2><p><a href="restaurant-meal-finder.html">Find and compare meals</a></p><p><a href="restaurant-meal-guides.html">Browse restaurant guides</a></p></div></aside>'''

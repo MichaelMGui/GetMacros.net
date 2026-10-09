@@ -15,7 +15,7 @@ class Links(HTMLParser):
         if 'id' in attrs:self.ids.add(attrs['id'])
         if tag=='a' and 'href' in attrs:self.hrefs.append(attrs['href'])
 
-pages={p.name:p.read_text(encoding='utf-8') for p in ROOT.glob('*.html')}
+pages={p.relative_to(ROOT).as_posix():p.read_text(encoding='utf-8') for p in [*ROOT.glob('*.html'),*ROOT.glob('ca/en/**/index.html')]}
 parsed={}
 for name,text in pages.items():
     assert 'search_term_string' not in text, name+' contains a search placeholder'
@@ -29,6 +29,7 @@ for name,page in parsed.items():
         if url.netloc and url.hostname not in {'getmacros.net','www.getmacros.net'}:continue
         if url.scheme=='http':raise AssertionError(name+' links to insecure site URL '+href)
         target=unquote(url.path).lstrip('/') or (name if url.fragment else 'index.html')
+        if target.endswith('/'):target+='index.html'
         if target in parsed:
             if url.fragment:assert unquote(url.fragment) in parsed[target].ids, (name,href,'missing anchor')
         else:assert (ROOT/target).is_file(),(name,href,'missing internal destination')

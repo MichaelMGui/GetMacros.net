@@ -32,4 +32,8 @@ for row in payload['improvements']:
 assert len(payload['improvements'])==20
 for route in ('compare-complete-restaurant-orders.html','breakfast-drinks-and-add-ons.html','food-shelf.html','protein-value-calculator.html','restaurant-meal-finder.html'):
  text=(ROOT/route).read_text(encoding='utf-8');assert text.index('js/order-tools-core.js')<text.index('js/protein-value.js' if route.startswith('protein-value') else 'js/order-notebook.js'),route
-print(f'PASS 20 substantive integrations, {checked} exact record checks, comparator IDs, source dates, 25-chain directory and dependency ordering.')
+from normalize_calculator_layouts import Document
+privacy=(ROOT/'privacy.html').read_text(encoding='utf-8');doc=Document(privacy)
+reading=doc.find(cls='article-container');note=doc.find(cls='growth-update')
+assert reading and note and reading['start']<note['start']<note['end']<reading['end'],'Private-note disclosure must stay in the privacy reading column, before the footer'
+print(f'PASS 20 substantive integrations, {checked} exact record checks, comparator IDs, source dates, 25-chain directory, privacy disclosure placement and dependency ordering.')

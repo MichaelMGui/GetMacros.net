@@ -1,0 +1,46 @@
+{"newOrders": 380, "newChains": 10, "publishedOrders": 378, "calculatedOrders": 2, "incompleteExactNutrition": 10, "sourceSnapshotsVerified": [], "sourceSnapshotsUnavailable": ["arbys", "del-taco", "sonic", "culvers", "taco-johns", "qdoba", "el-pollo-loco", "noodles", "raising-canes"], "checks": ["unique identities", "known units", "U.S. scope", "servings", "per-nutrient provenance", "available private source PDF hashes", "fiber bound preservation", "component sums", "unknown-value propagation"], "generatedPages": ["arbys-nutrition-guide.html", "del-taco-nutrition-guide.html", "sonic-nutrition-guide.html", "culvers-nutrition-guide.html", "taco-johns-nutrition-guide.html", "qdoba-nutrition-guide.html", "el-pollo-loco-nutrition-guide.html", "noodles-and-company-nutrition-guide.html", "in-n-out-nutrition-guide.html", "raising-canes-nutrition-guide.html"], "applied": true, "browserInspection": "Not performed by this data generator; verify installed guides in the integrated release."}
+Applied source patches to 43 of 463 records; no uninspected dates refreshed.
+Published 33 distinct sourced resources; guides, search and sitemap updated.
+Editorial release: 117 authored, checked new article routes; indexes untouched.
+Publication layout applied to all retained pages; publisher verification retained, ad requests paused.
+{"records": 463, "chains": 25, "exactSixNutrients": 413, "exactFinderNutrients": 423, "sourceInspectedRecords": 421, "sourceInspectedChains": 18, "exactSixNutrientsInspectedThisRelease": 410, "ranges": {"cal": {"known": 463, "unknown": 0, "min": 15, "median": 500, "max": 1570}, "p": {"known": 459, "unknown": 4, "min": 0, "median": 23, "max": 129}, "c": {"known": 458, "unknown": 5, "min": 0, "median": 42.0, "max": 180}, "fat": {"known": 423, "unknown": 40, "min": 3, "median": 24, "max": 74}, "f": {"known": 448, "unknown": 15, "min": 0, "median": 3.0, "max": 22}, "na": {"known": 458, "unknown": 5, "min": 0, "median": 1275.0, "max": 3560}}}
+Updated 15 restaurant comparisons; nutrient records and source dates unchanged.
+Synchronized 25 restaurant guides and 463 source-defined rows.
+Reviewed edits applied: healthy-fast-food.html
+Checked 258 existing pages / 4898 authored blocks; 123 sentence groups, 7 heading groups, 25 near-paragraph pairs. Written C:\Users\slowf\Documents\ChatGPT\getmacros.net\docs\playful-release-2026-10-04\publish-checkout\docs\release-2026-10-03\copy-audit.json
+Release modification dates and source/privacy implementation notes reconciled; prior data-review dates preserved.
+Progressive Learn categories, restaurant tables/comparisons and food-label fields applied.
+Calculator composition, task hub, live portion example and local food shelf built.
+Built 56 game routes + Play directory; 38 verified records available to restaurant puzzles.
+Connected release: {"date": "2026-10-04", "publicHtmlRoutes": 291, "rootAlias": 1, "newArticlesGenerated": 117, "gamesGenerated": 56, "newChains": 10, "newRecordedOrders": 380, "totalRecordedOrders": 463, "totalChains": 25, "searchResources": 289, "verification": "Pending integrated browser review; no completion claim"}
+Growth tools integrated across 28 existing routes; 129 new component records. No missing-package article was fabricated.
+International release: 11 Canadian routes; 74 Canadian items; existing routes preserved.
+Refreshed 300 search previews from current page headings and metadata.
+asset versions stamped from file contents on 302 page(s)
+PASS: 302 HTML files; 301 indexable pages; 301 sitemap URLs; 300 searchable resources.
+Publication: 302 pages; shared stylesheet (69,999 bytes) plus purposeful route styles, preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.
+Search visibility passed: 302 pages, 17679 internal links and anchors; meal labels match source data.
+PASS: 15 comparisons match source records; missing values retained; duplicate menus absent; article anchors and methodology intact.
+PASS: 117 new articles; 292 arithmetic cases; 133 restaurant rows; 5 snapshot checks; no repeated authored paragraphs or near-duplicate bodies.
+test_append_is_idempotent_and_preserves_existing_rows (__main__.Expansion.test_append_is_idempotent_and_preserves_existing_rows) ... ok
+test_data_report_counts_exact_unknowns_from_provenance (__main__.Expansion.test_data_report_counts_exact_unknowns_from_provenance) ... ok
+test_dressing_and_culvers_dinner_limits_are_retained (__main__.Expansion.test_dressing_and_culvers_dinner_limits_are_retained) ... ok
+test_every_new_chain_has_an_original_food_symbol (__main__.Expansion.test_every_new_chain_has_an_original_food_symbol) ... ok
+test_existing_finder_handles_new_data_and_share_state (__main__.Expansion.test_existing_finder_handles_new_data_and_share_state) ... ok
+test_full_sync_keeps_new_compositions_without_old_comparison_id (__main__.Expansion.test_full_sync_keeps_new_compositions_without_old_comparison_id) ... ok
+test_impossible_source_rows_are_absent (__main__.Expansion.test_impossible_source_rows_are_absent) ... ok
+test_individual_canes_sum_is_not_a_published_combo (__main__.Expansion.test_individual_canes_sum_is_not_a_published_combo) ... ok
+test_mixed_quoted_names_survive_generated_single_quoted_tags (__main__.Expansion.test_mixed_quoted_names_survive_generated_single_quoted_tags) ... ok
+test_new_guide_metadata_and_serving_rows (__main__.Expansion.test_new_guide_metadata_and_serving_rows) ... ok
+test_new_guides_match_central_rows_without_legacy_pairs (__main__.Expansion.test_new_guides_match_central_rows_without_legacy_pairs) ... ok
+test_packed_provenance_round_trip_preserves_bounds_and_fat (__main__.Expansion.test_packed_provenance_round_trip_preserves_bounds_and_fat) ... ok
+test_private_source_snapshots_are_optional_but_never_ignored_when_available (__main__.Expansion.test_private_source_snapshots_are_optional_but_never_ignored_when_available) ... ok
+test_review_merge_preserves_unrelated_facts (__main__.Expansion.test_review_merge_preserves_unrelated_facts) ... ok
+test_validates_curated_source_records (__main__.Expansion.test_validates_curated_source_records) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.077s
+
+OK
+Synchronized 25 restaurant guides and 463 source-defined rows.
+PASS: Canadian source fields, exact order sums, editions, market isolation, missing macros/nutrients, stable U.S. keys, share state, private-card exclusion and finder/builder equality.

@@ -12,6 +12,14 @@ SECTIONS=[
 ('Decide whether the goal still fits', '''<p>Recomposition is gradual and uncertain. You do not have to pursue muscle gain and fat loss at the same time. If your priority changes, a clearer single goal may be easier to plan and assess.</p><p>Review whether you can sustain the routine and recover from training. Persistent fatigue, poor recovery or health concerns deserve individual help, rather than increasingly strict targets from a website. GetMacros offers educational estimates; it does not measure body composition or diagnose the cause of a change.</p>'''),
 ]
 
+def finder_methodology():
+ p=ROOT/'sources.html';t=p.read_text(encoding='utf-8')
+ old='The meal finder ranks the menu options in our dataset against your chosen preferences. It does not search every item a restaurant sells. Unconfirmed values stay unknown; the finder excludes incomplete records by default and lets you include them explicitly.'
+ new='The meal finder searches our tracked selection, not every item a restaurant sells. Calorie and nutrient limits exclude orders that do not meet them. Priorities change the order of the remaining results; they are not a personal health score.</p><p>Complete macros means known calories, protein, carbs and fat. Fiber and sodium are checked separately when you filter them. You can explicitly include items with missing macros, but any active nutrient limit still requires that nutrient to be known. Unknown values are never treated as zero.</p><p>Choose the country where you are ordering. Canadian and U.S. records have separate portions and official sources. Open an order’s details for its serving and source history; a comparison’s writing date does not mean its restaurant values were rechecked that day.'
+ t=t.replace(old,new)
+ t=re.sub(r'<p>The meal finder searches the orders in our dataset,.*?</p><p>By default, a result needs.*?</p><p>The restaurant comparisons are calculations.*?</p>',lambda m:'<p>'+new+'</p>',t,flags=re.S)
+ p.write_text(t,encoding='utf-8')
+
 def run():
  removed=0
  for p in ROOT.glob('*.html'):
@@ -35,10 +43,7 @@ def run():
  t=t.replace('Updated September 9, 2026','Updated September 28, 2026')
  t=re.sub(r'("dateModified"\s*:\s*")[^"]+',r'\g<1>2026-09-28',t)
  p.write_text(t,encoding='utf-8')
- p=ROOT/'sources.html';t=p.read_text(encoding='utf-8')
- old='The meal finder ranks the menu options in our dataset against your chosen preferences. It does not search every item a restaurant sells. Unconfirmed values stay unknown; the finder excludes incomplete records by default and lets you include them explicitly.'
- new='The meal finder searches the orders in our dataset, not every item a restaurant sells. Calorie and nutrient limits exclude orders that do not meet them. Goal preferences change the order of the remaining results; they are not a personal health score. You can also sort by calories or protein.</p><p>By default, a result needs known calories, protein, fiber and sodium. Fat or carbohydrate values can still be unverified: “complete” does not mean every possible nutrient is known. “Include incomplete records” widens the list, but a filter still excludes an order if the value it needs is missing. Unknown values are never treated as zero.</p><p>The restaurant comparisons are calculations and explanations based on those same recorded orders. A comparison’s writing date does not mean every restaurant value was rechecked that day. Open an order’s details for its portion, source and recorded check date; verify current local availability with the restaurant.'
- t=t.replace(old,new);p.write_text(t,encoding='utf-8')
+ finder_methodology()
  print(f'Removed {removed} duplicated article contents blocks; distinguished recomposition guide; clarified finder methodology.')
 
 if __name__=='__main__':run()

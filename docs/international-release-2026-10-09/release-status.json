@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-09",
+  "deployment": "pending",
+  "markets_published_locally": [
+    "US",
+    "CA"
+  ],
+  "new_canadian_records": 74,
+  "canadian_restaurants": {
+    "Harvey’s": 19,
+    "Tim Hortons": 24,
+    "A&W Canada": 31
+  },
+  "new_canadian_routes": 11,
+  "existing_macro_gaps_resolved": 2,
+  "unresolved_US_macro_records": 40,
+  "withheld_conflicting_records": [
+    "A&W Canada regular Mango Passionfruit Shake: 94 g sugars within 91 g carbohydrates."
+  ],
+  "blocked_markets": [
+    "McDonald’s Canada full values unavailable",
+    "French editorial review unavailable",
+    "UK/Australia/Japan are researched, not launched"
+  ],
+  "source_date_limit": "Tim Hortons current official link points to July 2026 Canadian PDF; current retrieval does not make the recipe edition October 2026.",
+  "analytics": "Unavailable; no traffic, indexing or revenue claim. Sitemap submission and indexing are not verified.",
+  "verification": {
+    "route_rendering": {
+      "checks": 3030,
+      "failures": 0,
+      "evidence": "routes/checks.json"
+    },
+    "representative_rendering": {
+      "checks": 80,
+      "failures": 0,
+      "evidence": "browser/checks.json"
+    },
+    "journeys": {
+      "checks": 8,
+      "failures": 0,
+      "evidence": "journeys/checks.json"
+    }
+  },
+  "expert_review": "No dietitian or medical review claimed. No new disease-treatment content.",
+  "licensing": "Original existing food characters retained. No new third-party imagery or PDFs redistributed."
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "route": "/sources.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/same-restaurant-name-different-market-data.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/fast-food-nutrition-data-report.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/contact.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/privacy.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/nutrition-label-comparison-tool.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/recipe-macro-scaler.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/play.html",
+    "theme": "light",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/sources.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/same-restaurant-name-different-market-data.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/fast-food-nutrition-data-report.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/contact.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/privacy.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/nutrition-label-comparison-tool.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/recipe-macro-scaler.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/play.html",
+    "theme": "light",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/sources.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/same-restaurant-name-different-market-data.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/fast-food-nutrition-data-report.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/contact.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/privacy.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/nutrition-label-comparison-tool.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/recipe-macro-scaler.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/play.html",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "route": "/sources.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/same-restaurant-name-different-market-data.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/fast-food-nutrition-data-report.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/contact.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/privacy.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/nutrition-label-comparison-tool.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/recipe-macro-scaler.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "route": "/play.html",
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false
+  }
+]

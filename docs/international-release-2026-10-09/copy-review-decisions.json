@@ -1,0 +1,13 @@
+{
+  "method": "All active routes scanned; eight help guides rewritten individually, all 25 U.S. restaurant lead paragraphs read in context, repeated introductory comparisons removed when repeated below. Necessary shared safety and source disclosures retained. Not every article body was substantively rewritten.",
+  "implemented": [
+    "Removed repeated homepage lunch messaging.",
+    "Removed layered macro-calculator headings and introduced a direct task label.",
+    "Rewrote eight guides around breakfast availability, missing fiber, PDF currency, result counts, country choice, exact burger variants, calculated orders and menu averages; retained useful tables, citations and URLs.",
+    "Removed internal content-addition/release notes from 20 existing comparison sections; source dates remain in their source lists.",
+    "Replaced the stale initial-dataset paragraph on Sources with current U.S./Canadian coverage links.",
+    "Removed duplicated restaurant comparison paragraphs from the masthead when the detailed comparison already explains them.",
+    "Changed the common restaurant input heading to Choose your limits."
+  ],
+  "consolidations": "No articles deleted or redirected. Useful worked examples and established links were retained; no authorized search-performance evidence supported bulk deletion."
+}

@@ -95,7 +95,7 @@ SOURCE_NOTES={
  'Popeyes':'The linked U.S. PDF is labeled September 2026 and was inspected October 3, 2026. The three-tender-plus-side record is an explicit sum of the published three-tender and regular-side portions; biscuits, drinks and extra sauce are excluded.',
  'Panda Express':'The official table was inspected October 3, 2026. The Super Greens base is 10 oz, distinct from the separate 3.5 oz entree entry. Combinations sum full named entree and base portions; no half-side weight or extra sauce is assumed.',
  'Starbucks':'Three food records were inspected October 3, 2026 in indexed text from their official nutrition pages; direct page retrieval returned a script shell. Other records retain their previous check dates. A drink or added spread is not included in a food-only total.',
- 'Chick-fil-A':'Selected dedicated item pages were inspected October 3, 2026. The twelve-count nuggets page exposed calories, protein, carbs and fat only; its retained fiber/sodium were not newly verified. Two large combinations and other records retain earlier check dates. The Cool Wrap figure includes suggested Avocado Lime Ranch dressing.',
+ 'Chick-fil-A':'Original dedicated item checks date to October 3, 2026. Six specific items were rechecked against the full official table October 9, with their earlier per-nutrient history retained. Two large combinations now have exact, source-linked fat sums reviewed October 9; other records keep their own dates. The Cool Wrap figure includes suggested Avocado Lime Ranch dressing.',
 }
 
 def run():
