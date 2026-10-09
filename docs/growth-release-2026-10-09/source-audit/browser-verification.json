@@ -1,0 +1,2718 @@
+{
+  "checkedAt": "2026-10-09",
+  "url": "https://www.chick-fil-a.com/nutrition-allergens",
+  "engine": "Microsoft Edge",
+  "method": "Actual official web interface with visible rows and expanded variant controls; no request interception or challenge bypass.",
+  "rows": [
+    {
+      "id": "cfa-us-10176-43d7a61f",
+      "title": "Hash Brown Scramble Bowl w/ No Meat",
+      "parent": "Hash Brown Scramble Bowl",
+      "group": "Breakfast",
+      "values": [
+        "180g",
+        "350",
+        "24",
+        "8",
+        "0",
+        "330",
+        "770",
+        "16",
+        "3",
+        "1",
+        "17"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10175-71d99afd",
+      "title": "Hash Brown Scramble Bowl w/ Bacon",
+      "parent": "Hash Brown Scramble Bowl",
+      "group": "Breakfast",
+      "values": [
+        "200g",
+        "450",
+        "32",
+        "11",
+        "0",
+        "395",
+        "1060",
+        "15",
+        "2",
+        "2",
+        "23"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10174-25820462",
+      "title": "Hash Brown Scramble Bowl w/ Spicy Chicken",
+      "parent": "Hash Brown Scramble Bowl",
+      "group": "Breakfast",
+      "values": [
+        "251g",
+        "500",
+        "32",
+        "9",
+        "0",
+        "420",
+        "1590",
+        "21",
+        "3",
+        "2",
+        "32"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10173-0782478a",
+      "title": "Hash Brown Scramble Bowl w/ Grilled Filet",
+      "parent": "Hash Brown Scramble Bowl",
+      "group": "Breakfast",
+      "values": [
+        "230g",
+        "410",
+        "26",
+        "8",
+        "0",
+        "420",
+        "1200",
+        "15",
+        "2",
+        "2",
+        "30"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10171-e1152c15",
+      "title": "Hash Brown Scramble Bowl w/ Sausage",
+      "parent": "Hash Brown Scramble Bowl",
+      "group": "Breakfast",
+      "values": [
+        "212g",
+        "480",
+        "37",
+        "12",
+        "0",
+        "395",
+        "1020",
+        "15",
+        "2",
+        "1",
+        "23"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10170-ca30815c",
+      "title": "Hash Brown Scramble Bowl w/ Nuggets",
+      "parent": "Hash Brown Scramble Bowl",
+      "group": "Breakfast",
+      "values": [
+        "233g",
+        "470",
+        "30",
+        "9",
+        "0",
+        "415",
+        "1350",
+        "19",
+        "2",
+        "2",
+        "29"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10161-7b037970",
+      "title": "Hash Brown Scramble Burrito w/ No Meat",
+      "parent": "Hash Brown Scramble Burrito",
+      "group": "Breakfast",
+      "values": [
+        "251g",
+        "580",
+        "34",
+        "11",
+        "0.5",
+        "330",
+        "1200",
+        "47",
+        "5",
+        "1",
+        "22"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10160-79419a2f",
+      "title": "Hash Brown Scramble Burrito w/ Bacon",
+      "parent": "Hash Brown Scramble Burrito",
+      "group": "Breakfast",
+      "values": [
+        "271g",
+        "680",
+        "42",
+        "14",
+        "0.5",
+        "395",
+        "1630",
+        "46",
+        "3",
+        "2",
+        "30"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10159-2159b2df",
+      "title": "Hash Brown Scramble Burrito w/ Spicy Chicken",
+      "parent": "Hash Brown Scramble Burrito",
+      "group": "Breakfast",
+      "values": [
+        "322g",
+        "740",
+        "42",
+        "13",
+        "0.5",
+        "420",
+        "2020",
+        "53",
+        "4",
+        "2",
+        "37"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10157-346ec41e",
+      "title": "Hash Brown Scramble Burrito w/ Grilled Filet",
+      "parent": "Hash Brown Scramble Burrito",
+      "group": "Breakfast",
+      "values": [
+        "301g",
+        "650",
+        "36",
+        "12",
+        "0.5",
+        "420",
+        "1630",
+        "46",
+        "3",
+        "2",
+        "35"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10155-4d8f74c9",
+      "title": "Hash Brown Scramble Burrito w/  Sausage",
+      "parent": "Hash Brown Scramble Burrito",
+      "group": "Breakfast",
+      "values": [
+        "283g",
+        "720",
+        "47",
+        "16",
+        "0.5",
+        "395",
+        "1450",
+        "46",
+        "3",
+        "1",
+        "28"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10154-52500d19",
+      "title": "Hash Brown Scramble Burrito w/ Nuggets",
+      "parent": "Hash Brown Scramble Burrito",
+      "group": "Breakfast",
+      "values": [
+        "304g",
+        "700",
+        "40",
+        "12",
+        "0.5",
+        "415",
+        "1770",
+        "51",
+        "3",
+        "2",
+        "34"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-38480-20ea0706",
+      "title": "10 ct Chick-fil-A Chick-n-Minis®",
+      "parent": "Chick-fil-A Chick-n-Minis®",
+      "group": "Breakfast",
+      "values": [
+        "318g",
+        "910",
+        "34",
+        "10",
+        "0",
+        "150",
+        "2640",
+        "103",
+        "6",
+        "19",
+        "49"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10149-d27c81a4",
+      "title": "4 ct Chick-fil-A Chick-n-Minis®",
+      "parent": "Chick-fil-A Chick-n-Minis®",
+      "group": "Breakfast",
+      "values": [
+        "127g",
+        "360",
+        "13",
+        "4",
+        "0",
+        "60",
+        "1060",
+        "41",
+        "2",
+        "8",
+        "20"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10194-6c974ece",
+      "title": "Sausage, Egg & Cheese Muffin",
+      "parent": "Sausage, Egg & Cheese Muffin",
+      "group": "Breakfast",
+      "values": [
+        "173g",
+        "490",
+        "32",
+        "13",
+        "0",
+        "205",
+        "1000",
+        "29",
+        "1",
+        "1",
+        "23"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10192-882b642f",
+      "title": "Bacon, Egg & Cheese Muffin",
+      "parent": "Bacon, Egg & Cheese Muffin",
+      "group": "Breakfast",
+      "values": [
+        "126g",
+        "300",
+        "13",
+        "6",
+        "0",
+        "180",
+        "780",
+        "28",
+        "1",
+        "2",
+        "16"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10190-33bb1b3e",
+      "title": "Chicken, Egg & Cheese Muffin",
+      "parent": "Chicken, Egg & Cheese Muffin",
+      "group": "Breakfast",
+      "values": [
+        "187g",
+        "410",
+        "18",
+        "6",
+        "0",
+        "215",
+        "1320",
+        "36",
+        "1",
+        "4",
+        "27"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10188-2dbf8c44",
+      "title": "Sausage, Egg & Cheese Biscuit",
+      "parent": "Sausage, Egg & Cheese Biscuit",
+      "group": "Breakfast",
+      "values": [
+        "192g",
+        "620",
+        "42",
+        "18",
+        "0",
+        "205",
+        "1510",
+        "38",
+        "2",
+        "4",
+        "22"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10186-f99801ac",
+      "title": "Bacon, Egg & Cheese Biscuit",
+      "parent": "Bacon, Egg & Cheese Biscuit",
+      "group": "Breakfast",
+      "values": [
+        "145g",
+        "420",
+        "23",
+        "11",
+        "0",
+        "180",
+        "1220",
+        "38",
+        "2",
+        "4",
+        "15"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10184-c5f429c6",
+      "title": "Chicken, Egg & Cheese Biscuit",
+      "parent": "Chicken, Egg & Cheese Biscuit",
+      "group": "Breakfast",
+      "values": [
+        "211g",
+        "550",
+        "28",
+        "12",
+        "0",
+        "215",
+        "1870",
+        "48",
+        "3",
+        "7",
+        "27"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10150-db5b253f",
+      "title": "Egg White Grill",
+      "parent": "Egg White Grill",
+      "group": "Breakfast",
+      "values": [
+        "172g",
+        "300",
+        "8",
+        "4",
+        "0",
+        "65",
+        "990",
+        "29",
+        "1",
+        "2",
+        "27"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-631-758979be",
+      "title": "Spicy Chicken Biscuit",
+      "parent": "Spicy Chicken Biscuit",
+      "group": "Breakfast",
+      "values": [
+        "153g",
+        "450",
+        "22",
+        "8",
+        "0",
+        "40",
+        "1570",
+        "44",
+        "3",
+        "5",
+        "19"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-39847-9fb5de62",
+      "title": "Chick-fil-A® Chicken Biscuit",
+      "parent": "Chick-fil-A® Chicken Biscuit",
+      "group": "Breakfast",
+      "values": [
+        "153g",
+        "460",
+        "23",
+        "8",
+        "0",
+        "45",
+        "1510",
+        "45",
+        "2",
+        "6",
+        "19"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10199-57bd63d7",
+      "title": "Large Hash Browns",
+      "parent": "Hash Browns",
+      "group": "Breakfast",
+      "values": [
+        "121g",
+        "420",
+        "29",
+        "4",
+        "0",
+        "0",
+        "700",
+        "35",
+        "4",
+        "0",
+        "4"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10198-af2da906",
+      "title": "Small Hash Browns",
+      "parent": "Hash Browns",
+      "group": "Breakfast",
+      "values": [
+        "77g",
+        "270",
+        "18",
+        "2.5",
+        "0",
+        "0",
+        "440",
+        "23",
+        "3",
+        "0",
+        "3"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10329-b4c4d353",
+      "title": "2 ct Chick-fil-A Chick-n-Strips®",
+      "parent": "Chick-fil-A Chick-n-Strips®",
+      "group": "Entrées",
+      "values": [
+        "91g",
+        "200",
+        "9",
+        "2",
+        "0",
+        "50",
+        "580",
+        "11",
+        "0",
+        "1",
+        "19"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10220-99af1243",
+      "title": "10 ct Chick-fil-A Chick-n-Strips®",
+      "parent": "Chick-fil-A Chick-n-Strips®",
+      "group": "Entrées",
+      "values": [
+        "452g",
+        "1020",
+        "46",
+        "9",
+        "0",
+        "250",
+        "2870",
+        "54",
+        "0",
+        "6",
+        "96"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10333-4a865b29",
+      "title": "4 ct Chick-fil-A Chick-n-Strips®",
+      "parent": "Chick-fil-A Chick-n-Strips®",
+      "group": "Entrées",
+      "values": [
+        "181g",
+        "410",
+        "19",
+        "3.5",
+        "0",
+        "100",
+        "1150",
+        "22",
+        "0",
+        "2",
+        "39"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10331-16a1a389",
+      "title": "3 ct Chick-fil-A Chick-n-Strips®",
+      "parent": "Chick-fil-A Chick-n-Strips®",
+      "group": "Entrées",
+      "values": [
+        "136g",
+        "310",
+        "14",
+        "2.5",
+        "0",
+        "75",
+        "870",
+        "16",
+        "0",
+        "2",
+        "29"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10275-8ffa4642",
+      "title": "30 ct Grilled Nuggets",
+      "parent": "Grilled Nuggets",
+      "group": "Entrées",
+      "values": [
+        "369g",
+        "510",
+        "11",
+        "3",
+        "0",
+        "335",
+        "1710",
+        "4",
+        "1",
+        "3",
+        "98"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10325-f0e9b5c4",
+      "title": "12 ct Grilled Nuggets",
+      "parent": "Grilled Nuggets",
+      "group": "Entrées",
+      "values": [
+        "142g",
+        "200",
+        "4.5",
+        "1",
+        "0",
+        "130",
+        "660",
+        "2",
+        "0",
+        "1",
+        "38"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10324-b016aa89",
+      "title": "8 ct Grilled Nuggets",
+      "parent": "Grilled Nuggets",
+      "group": "Entrées",
+      "values": [
+        "95g",
+        "130",
+        "3",
+        "0.5",
+        "0",
+        "85",
+        "440",
+        "1",
+        "0",
+        "1",
+        "25"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10271-16f565b6",
+      "title": "30 ct Chick-fil-A® Nuggets",
+      "parent": "Chick-fil-A® Nuggets",
+      "group": "Entrées",
+      "values": [
+        "425g",
+        "950",
+        "43",
+        "9",
+        "0",
+        "315",
+        "4550",
+        "41",
+        "0",
+        "4",
+        "100"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10320-85428434",
+      "title": "12 ct Chick-fil-A® Nuggets",
+      "parent": "Chick-fil-A® Nuggets",
+      "group": "Entrées",
+      "values": [
+        "170g",
+        "380",
+        "17",
+        "3.5",
+        "0",
+        "125",
+        "1820",
+        "16",
+        "0",
+        "1",
+        "40"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10318-d9cc8c5b",
+      "title": "8 ct Chick-fil-A® Nuggets",
+      "parent": "Chick-fil-A® Nuggets",
+      "group": "Entrées",
+      "values": [
+        "113g",
+        "250",
+        "11",
+        "2.5",
+        "0",
+        "85",
+        "1210",
+        "11",
+        "0",
+        "1",
+        "27"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10304-40a3bbf9",
+      "title": "Spicy Deluxe Sandwich w/ No Cheese",
+      "parent": "Spicy Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "238g",
+        "460",
+        "18",
+        "4",
+        "0",
+        "65",
+        "1740",
+        "46",
+        "2",
+        "7",
+        "28"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10301-116d51d0",
+      "title": "Spicy Deluxe Sandwich w/ American",
+      "parent": "Spicy Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "252g",
+        "510",
+        "22",
+        "7",
+        "0",
+        "80",
+        "1980",
+        "47",
+        "2",
+        "7",
+        "31"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10303-b3017bcb",
+      "title": "Spicy Deluxe Sandwich w/ Colby Jack",
+      "parent": "Spicy Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "259g",
+        "540",
+        "24",
+        "8",
+        "0",
+        "85",
+        "1890",
+        "46",
+        "2",
+        "7",
+        "33"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10300-34c3d325",
+      "title": "Spicy Deluxe Sandwich w/ Pepper Jack",
+      "parent": "Spicy Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "259g",
+        "540",
+        "24",
+        "8",
+        "0",
+        "85",
+        "1890",
+        "46",
+        "2",
+        "7",
+        "34"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10295-e8d24748",
+      "title": "Chick-fil-A® Deluxe Sandwich w/ No Cheese",
+      "parent": "Chick-fil-A® Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "233g",
+        "430",
+        "16",
+        "3.5",
+        "0",
+        "70",
+        "1480",
+        "42",
+        "1",
+        "7",
+        "29"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10294-5a60dae2",
+      "title": "Chick-fil-A® Deluxe Sandwich w/ Pepper Jack",
+      "parent": "Chick-fil-A® Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "254g",
+        "510",
+        "23",
+        "8",
+        "0",
+        "90",
+        "1620",
+        "43",
+        "1",
+        "7",
+        "34"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10293-a4d3a1c5",
+      "title": "Chick-fil-A® Deluxe Sandwich w/ Colby Jack",
+      "parent": "Chick-fil-A® Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "254g",
+        "510",
+        "23",
+        "8",
+        "0",
+        "90",
+        "1620",
+        "43",
+        "1",
+        "7",
+        "34"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10292-a5429028",
+      "title": "Chick-fil-A® Deluxe Sandwich w/ American",
+      "parent": "Chick-fil-A® Deluxe Sandwich",
+      "group": "Entrées",
+      "values": [
+        "247g",
+        "490",
+        "21",
+        "6",
+        "0",
+        "85",
+        "1710",
+        "43",
+        "1",
+        "7",
+        "32"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10335-11c17e00",
+      "title": "Chick-fil-A Cool Wrap®",
+      "parent": "Chick-fil-A Cool Wrap®",
+      "group": "Entrées",
+      "values": [
+        "231g",
+        "660",
+        "45",
+        "9",
+        "0",
+        "110",
+        "1420",
+        "32",
+        "14",
+        "5",
+        "43"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10305-b3909b46",
+      "title": "Grilled Chicken Sandwich",
+      "parent": "Grilled Chicken Sandwich",
+      "group": "Entrées",
+      "values": [
+        "206g",
+        "390",
+        "11",
+        "2.5",
+        "0",
+        "75",
+        "765",
+        "45",
+        "3",
+        "11",
+        "28"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10296-30923798",
+      "title": "Spicy Chicken Sandwich",
+      "parent": "Spicy Chicken Sandwich",
+      "group": "Entrées",
+      "values": [
+        "188g",
+        "450",
+        "18",
+        "4",
+        "0",
+        "65",
+        "1740",
+        "44",
+        "1",
+        "6",
+        "28"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-39841-a83798ba",
+      "title": "Chick-fil-A® Chicken Sandwich",
+      "parent": "Chick-fil-A® Chicken Sandwich",
+      "group": "Entrées",
+      "values": [
+        "183g",
+        "420",
+        "16",
+        "3.5",
+        "0",
+        "70",
+        "1470",
+        "41",
+        "1",
+        "6",
+        "29"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10344-f3b57f88",
+      "title": "Small Mac & Cheese",
+      "parent": "Mac & Cheese",
+      "group": "Sides",
+      "values": [
+        "136g",
+        "270",
+        "17",
+        "10",
+        "0",
+        "40",
+        "710",
+        "17",
+        "2",
+        "2",
+        "12"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10225-323af8dc",
+      "title": "Medium Mac & Cheese",
+      "parent": "Mac & Cheese",
+      "group": "Sides",
+      "values": [
+        "227g",
+        "450",
+        "29",
+        "16",
+        "0",
+        "70",
+        "1190",
+        "28",
+        "3",
+        "3",
+        "20"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10338-29c625a3",
+      "title": "Small Chick-fil-A Waffle Potato Fries®",
+      "parent": "Chick-fil-A Waffle Potato Fries®",
+      "group": "Sides",
+      "values": [
+        "96g",
+        "320",
+        "19",
+        "3",
+        "0",
+        "0",
+        "190",
+        "35",
+        "4",
+        "1",
+        "4"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10340-52c953b9",
+      "title": "Large Chick-fil-A Waffle Potato Fries®",
+      "parent": "Chick-fil-A Waffle Potato Fries®",
+      "group": "Sides",
+      "values": [
+        "179g",
+        "600",
+        "35",
+        "5",
+        "0",
+        "0",
+        "340",
+        "65",
+        "7",
+        "1",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10223-347d4033",
+      "title": "Medium Chick-fil-A Waffle Potato Fries®",
+      "parent": "Chick-fil-A Waffle Potato Fries®",
+      "group": "Sides",
+      "values": [
+        "125g",
+        "420",
+        "24",
+        "4",
+        "0",
+        "0",
+        "240",
+        "45",
+        "5",
+        "1",
+        "5"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10348-f5dbe3b2",
+      "title": "Bowl of Chicken Noodle Soup",
+      "parent": "Chicken Noodle Soup",
+      "group": "Sides",
+      "values": [
+        "476g",
+        "320",
+        "8",
+        "2",
+        "0",
+        "60",
+        "2280",
+        "42",
+        "3",
+        "3",
+        "20"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10233-4d64e924",
+      "title": "Cup of Chicken Noodle Soup",
+      "parent": "Chicken Noodle Soup",
+      "group": "Sides",
+      "values": [
+        "252g",
+        "190",
+        "4.5",
+        "1",
+        "0",
+        "30",
+        "1290",
+        "27",
+        "2",
+        "2",
+        "11"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-576-82ec039b",
+      "title": "Kale Crunch Side",
+      "parent": "Kale Crunch Side",
+      "group": "Sides",
+      "values": [
+        "112g",
+        "170",
+        "12",
+        "1.5",
+        "0",
+        "0",
+        "250",
+        "13",
+        "4",
+        "8",
+        "4"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10211-2f672cbb",
+      "title": "Large Fruit Cup",
+      "parent": "Fruit Cup",
+      "group": "Sides",
+      "values": [
+        "215g",
+        "120",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "28",
+        "4",
+        "21",
+        "1"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10209-577b0041",
+      "title": "Small Fruit Cup",
+      "parent": "Fruit Cup",
+      "group": "Sides",
+      "values": [
+        "107g",
+        "60",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "14",
+        "2",
+        "11",
+        "1"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10210-90dec090",
+      "title": "Medium Fruit Cup",
+      "parent": "Fruit Cup",
+      "group": "Sides",
+      "values": [
+        "125g",
+        "70",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "16",
+        "2",
+        "12",
+        "1"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10202-d0a6bce0",
+      "title": "Berry Parfait w/ Cookie Crumbs",
+      "parent": "Berry Parfait",
+      "group": "Sides",
+      "values": [
+        "195g",
+        "240",
+        "8",
+        "3.5",
+        "0",
+        "20",
+        "85",
+        "31",
+        "1",
+        "25",
+        "12"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10204-42bbbcb3",
+      "title": "Berry Parfait w/ Granola",
+      "parent": "Berry Parfait",
+      "group": "Sides",
+      "values": [
+        "206g",
+        "270",
+        "9",
+        "3.5",
+        "0",
+        "20",
+        "85",
+        "35",
+        "1",
+        "26",
+        "13"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10351-e940f4e4",
+      "title": "Buddy Fruits® Apple Sauce",
+      "parent": "Buddy Fruits® Apple Sauce",
+      "group": "Sides",
+      "values": [
+        "90g",
+        "45",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "12",
+        "1",
+        "8",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-32963-95059d51",
+      "title": "Chick-fil-A® Sauce Flavored Waffle Potato Chips",
+      "parent": "Chick-fil-A® Sauce Flavored Waffle Potato Chips",
+      "group": "Sides",
+      "values": [
+        "43g",
+        "210",
+        "12",
+        "3",
+        "0",
+        "0",
+        "330",
+        "26",
+        "2",
+        "3",
+        "3"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10256-7ae6eccb",
+      "title": "Original Flavor Waffle Potato Chips",
+      "parent": "Original Flavor Waffle Potato Chips",
+      "group": "Sides",
+      "values": [
+        "43g",
+        "220",
+        "13",
+        "3.5",
+        "0",
+        "0",
+        "250",
+        "25",
+        "2",
+        "0",
+        "3"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10264-e25774b2",
+      "title": "Chocolate Fudge Brownie",
+      "parent": "Chocolate Fudge Brownie",
+      "group": "Treats",
+      "values": [
+        "85g",
+        "370",
+        "21",
+        "8",
+        "0",
+        "65",
+        "140",
+        "47",
+        "2",
+        "35",
+        "4"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10262-1cc48229",
+      "title": "Chocolate Chunk Cookie",
+      "parent": "Chocolate Chunk Cookie",
+      "group": "Treats",
+      "values": [
+        "78g",
+        "370",
+        "17",
+        "9",
+        "0",
+        "15",
+        "230",
+        "49",
+        "3",
+        "26",
+        "5"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10517-74663ae4",
+      "title": "Frosted Lemonade w/ Diet Lemonade",
+      "parent": "Frosted Lemonade",
+      "group": "Treats",
+      "values": [
+        "383g",
+        "280",
+        "7",
+        "4.5",
+        "0",
+        "25",
+        "140",
+        "50",
+        "0",
+        "48",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10516-172f2597",
+      "title": "Frosted Lemonade",
+      "parent": "Frosted Lemonade",
+      "group": "Treats",
+      "values": [
+        "383g",
+        "350",
+        "7",
+        "4.5",
+        "0",
+        "25",
+        "135",
+        "67",
+        "0",
+        "65",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10537-33c6007f",
+      "title": "Chick-fil-A® Icedream® Cone",
+      "parent": "Chick-fil-A® Icedream® Cone",
+      "group": "Treats",
+      "values": [
+        "135g",
+        "180",
+        "4",
+        "2.5",
+        "0",
+        "15",
+        "90",
+        "32",
+        "0",
+        "25",
+        "4"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10539-bbfa0878",
+      "title": "Chick-fil-A® Icedream® Cup",
+      "parent": "Chick-fil-A® Icedream® Cup",
+      "group": "Treats",
+      "values": [
+        "122g",
+        "140",
+        "3.5",
+        "2.5",
+        "0",
+        "15",
+        "75",
+        "24",
+        "0",
+        "24",
+        "4"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10535-f5af7ab8",
+      "title": "Vanilla Milkshake",
+      "parent": "Vanilla Milkshake",
+      "group": "Treats",
+      "values": [
+        "409g",
+        "580",
+        "23",
+        "15",
+        "1",
+        "90",
+        "390",
+        "82",
+        "1",
+        "80",
+        "13"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10533-e7e1608e",
+      "title": "Strawberry Milkshake",
+      "parent": "Strawberry Milkshake",
+      "group": "Treats",
+      "values": [
+        "409g",
+        "560",
+        "18",
+        "11",
+        "0.5",
+        "70",
+        "370",
+        "92",
+        "1",
+        "87",
+        "10"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10531-662deae7",
+      "title": "Chocolate Milkshake",
+      "parent": "Chocolate Milkshake",
+      "group": "Treats",
+      "values": [
+        "409g",
+        "600",
+        "22",
+        "14",
+        "1",
+        "85",
+        "350",
+        "93",
+        "1",
+        "90",
+        "12"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10529-80b812c0",
+      "title": "Cookies & Cream Milkshake",
+      "parent": "Cookies & Cream Milkshake",
+      "group": "Treats",
+      "values": [
+        "409g",
+        "630",
+        "25",
+        "15",
+        "1",
+        "85",
+        "430",
+        "91",
+        "1",
+        "84",
+        "13"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51481-ffe45871",
+      "title": "Vanilla Frosted Coffee",
+      "parent": "Vanilla Frosted Coffee",
+      "group": "Treats",
+      "values": [
+        "400g",
+        "330",
+        "7",
+        "4.5",
+        "0",
+        "25",
+        "140",
+        "62",
+        "0",
+        "60",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51479-6246f862",
+      "title": "Mocha Frosted Coffee",
+      "parent": "Mocha Frosted Coffee",
+      "group": "Treats",
+      "values": [
+        "400g",
+        "330",
+        "7",
+        "4.5",
+        "0",
+        "25",
+        "150",
+        "61",
+        "1",
+        "59",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51477-48989928",
+      "title": "Caramel Frosted Coffee",
+      "parent": "Caramel Frosted Coffee",
+      "group": "Treats",
+      "values": [
+        "406g",
+        "370",
+        "10",
+        "6",
+        "0",
+        "40",
+        "190",
+        "63",
+        "0",
+        "60",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10519-28e1f452",
+      "title": "Frosted Coffee",
+      "parent": "Frosted Coffee",
+      "group": "Treats",
+      "values": [
+        "374g",
+        "260",
+        "7",
+        "4.5",
+        "0",
+        "25",
+        "140",
+        "45",
+        "0",
+        "44",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10362-0e972298",
+      "title": "Large Freshly-Brewed Sweetened Iced Tea",
+      "parent": "Freshly-Brewed Sweetened Iced Tea",
+      "group": "Drinks",
+      "values": [
+        "893g",
+        "170",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "44",
+        "0",
+        "44",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10361-0f1a5ea4",
+      "title": "Medium Freshly-Brewed Sweetened Iced Tea",
+      "parent": "Freshly-Brewed Sweetened Iced Tea",
+      "group": "Drinks",
+      "values": [
+        "604g",
+        "120",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "31",
+        "0",
+        "30",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10356-3d428cfe",
+      "title": "Small Freshly-Brewed Sweetened Iced Tea",
+      "parent": "Freshly-Brewed Sweetened Iced Tea",
+      "group": "Drinks",
+      "values": [
+        "451g",
+        "90",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "22",
+        "0",
+        "22",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10414-28aa7fcf",
+      "title": "Large Dr Pepper®",
+      "parent": "Dr Pepper®",
+      "group": "Drinks",
+      "values": [
+        "859g",
+        "250",
+        "0",
+        "0",
+        "0",
+        "0",
+        "75",
+        "64",
+        "0",
+        "64",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10413-33cbfe3e",
+      "title": "Medium Dr Pepper®",
+      "parent": "Dr Pepper®",
+      "group": "Drinks",
+      "values": [
+        "584g",
+        "170",
+        "0",
+        "0",
+        "0",
+        "0",
+        "50",
+        "44",
+        "0",
+        "44",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10411-086089cf",
+      "title": "Small Dr Pepper®",
+      "parent": "Dr Pepper®",
+      "group": "Drinks",
+      "values": [
+        "451g",
+        "130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "40",
+        "34",
+        "0",
+        "34",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10408-d2de6489",
+      "title": "Large Coca-Cola®",
+      "parent": "Coca-Cola®",
+      "group": "Drinks",
+      "values": [
+        "859g",
+        "250",
+        "0",
+        "0",
+        "0",
+        "0",
+        "65",
+        "68",
+        "0",
+        "68",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10407-e045d93f",
+      "title": "Medium Coca-Cola®",
+      "parent": "Coca-Cola®",
+      "group": "Drinks",
+      "values": [
+        "584g",
+        "170",
+        "0",
+        "0",
+        "0",
+        "0",
+        "45",
+        "46",
+        "0",
+        "46",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10406-eaf9f657",
+      "title": "Small Coca-Cola®",
+      "parent": "Coca-Cola®",
+      "group": "Drinks",
+      "values": [
+        "451g",
+        "130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "35",
+        "35",
+        "0",
+        "35",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10384-9d4f59fb",
+      "title": "Large Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "parent": "Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "944g",
+        "150",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10",
+        "40",
+        "0",
+        "36",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10383-45dedab8",
+      "title": "Medium Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "parent": "Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "641g",
+        "110",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5",
+        "29",
+        "0",
+        "26",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10382-c07277c3",
+      "title": "Small Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "parent": "Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "479g",
+        "80",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5",
+        "20",
+        "0",
+        "18",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10388-1efbfac6",
+      "title": "Large Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "parent": "Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "944g",
+        "260",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "66",
+        "0",
+        "60",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10387-c1304ec3",
+      "title": "Medium Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "parent": "Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "641g",
+        "160",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "41",
+        "0",
+        "38",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10386-d5d67efe",
+      "title": "Small Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "parent": "Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "479g",
+        "130",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "33",
+        "0",
+        "30",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10392-f470cc99",
+      "title": "Large Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "parent": "Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "944g",
+        "60",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10",
+        "15",
+        "0",
+        "11",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10391-aebb0aed",
+      "title": "Medium Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "parent": "Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "641g",
+        "35",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5",
+        "10",
+        "0",
+        "7",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10390-b00bc84e",
+      "title": "Small Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "parent": "Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "479g",
+        "30",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5",
+        "8",
+        "0",
+        "6",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10380-7b228c4c",
+      "title": "Large Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+      "parent": "Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "944g",
+        "350",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "91",
+        "0",
+        "85",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10379-d20bf278",
+      "title": "Medium Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+      "parent": "Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "641g",
+        "240",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "60",
+        "0",
+        "57",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10378-83f94093",
+      "title": "Small Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+      "parent": "Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+      "group": "Drinks",
+      "values": [
+        "479g",
+        "180",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "45",
+        "0",
+        "43",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10375-bf1ae48e",
+      "title": "Large Chick-fil-A® Diet Lemonade",
+      "parent": "Chick-fil-A® Diet Lemonade",
+      "group": "Drinks",
+      "values": [
+        "916g",
+        "80",
+        "0",
+        "0",
+        "0",
+        "0",
+        "15",
+        "23",
+        "0",
+        "17",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10374-5f463edf",
+      "title": "Medium Chick-fil-A® Diet Lemonade",
+      "parent": "Chick-fil-A® Diet Lemonade",
+      "group": "Drinks",
+      "values": [
+        "612g",
+        "60",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10",
+        "15",
+        "0",
+        "11",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10373-ea48f07b",
+      "title": "Small Chick-fil-A® Diet Lemonade",
+      "parent": "Chick-fil-A® Diet Lemonade",
+      "group": "Drinks",
+      "values": [
+        "465g",
+        "40",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10",
+        "12",
+        "0",
+        "8",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10371-5c67be34",
+      "title": "Large Chick-fil-A® Lemonade",
+      "parent": "Chick-fil-A® Lemonade",
+      "group": "Drinks",
+      "values": [
+        "916g",
+        "380",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "98",
+        "1",
+        "90",
+        "1"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10370-ec523099",
+      "title": "Medium Chick-fil-A® Lemonade",
+      "parent": "Chick-fil-A® Lemonade",
+      "group": "Drinks",
+      "values": [
+        "612g",
+        "260",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "66",
+        "0",
+        "60",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10369-5291d968",
+      "title": "Small Chick-fil-A® Lemonade",
+      "parent": "Chick-fil-A® Lemonade",
+      "group": "Drinks",
+      "values": [
+        "465g",
+        "190",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "49",
+        "0",
+        "45",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10366-3ee6ce44",
+      "title": "Large Freshly-Brewed Unsweetened Iced Tea",
+      "parent": "Freshly-Brewed Unsweetened Iced Tea",
+      "group": "Drinks",
+      "values": [
+        "893g",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10365-5d121b7f",
+      "title": "Medium Freshly-Brewed Unsweetened Iced Tea",
+      "parent": "Freshly-Brewed Unsweetened Iced Tea",
+      "group": "Drinks",
+      "values": [
+        "604g",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10364-0e3082ba",
+      "title": "Small Freshly-Brewed Unsweetened Iced Tea",
+      "parent": "Freshly-Brewed Unsweetened Iced Tea",
+      "group": "Drinks",
+      "values": [
+        "451g",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10419-00e09930",
+      "title": "Honest Kids® Apple Juice",
+      "parent": "Honest Kids® Apple Juice",
+      "group": "Drinks",
+      "values": [
+        "170g",
+        "35",
+        "0",
+        "0",
+        "0",
+        "0",
+        "15",
+        "9",
+        "0",
+        "8",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10423-4bd09c40",
+      "title": "1% Chocolate Milk",
+      "parent": "1% Chocolate Milk",
+      "group": "Drinks",
+      "values": [
+        "198g",
+        "140",
+        "2",
+        "1.5",
+        "0",
+        "10",
+        "160",
+        "23",
+        "0",
+        "21",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10425-4738e175",
+      "title": "1% Milk",
+      "parent": "1% Milk",
+      "group": "Drinks",
+      "values": [
+        "213g",
+        "90",
+        "2",
+        "1.5",
+        "0",
+        "10",
+        "105",
+        "10",
+        "0",
+        "10",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10421-b0f80de1",
+      "title": "Simply Orange®",
+      "parent": "Simply Orange®",
+      "group": "Drinks",
+      "values": [
+        "326g",
+        "160",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10",
+        "34",
+        "0",
+        "30",
+        "2"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10417-fd3e0146",
+      "title": "DASANI® Bottled Water",
+      "parent": "DASANI® Bottled Water",
+      "group": "Drinks",
+      "values": [
+        "479g",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10427-14cb98d5",
+      "title": "Hot Coffee",
+      "parent": "Hot Coffee",
+      "group": "Coffee",
+      "values": [
+        "340g",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51469-dd0ec932",
+      "title": "Cream Cold Brew",
+      "parent": "Cream Cold Brew",
+      "group": "Coffee",
+      "values": [
+        "652g",
+        "370",
+        "17",
+        "10",
+        "0.5",
+        "65",
+        "360",
+        "48",
+        "0",
+        "47",
+        "8"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51467-8ddaa20a",
+      "title": "Vanilla Cream Cold Brew",
+      "parent": "Cream Cold Brew",
+      "group": "Coffee",
+      "values": [
+        "689g",
+        "470",
+        "17",
+        "10",
+        "0.5",
+        "65",
+        "360",
+        "72",
+        "0",
+        "69",
+        "8"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51464-162653a7",
+      "title": "Mocha Cream Cold Brew",
+      "parent": "Cream Cold Brew",
+      "group": "Coffee",
+      "values": [
+        "689g",
+        "460",
+        "17",
+        "11",
+        "0.5",
+        "65",
+        "370",
+        "71",
+        "1",
+        "68",
+        "9"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51460-ea391b2a",
+      "title": "Caramel Cream Cold Brew",
+      "parent": "Cream Cold Brew",
+      "group": "Coffee",
+      "values": [
+        "700g",
+        "520",
+        "22",
+        "14",
+        "1",
+        "80",
+        "440",
+        "75",
+        "0",
+        "71",
+        "9"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10403-a7ec09e9",
+      "title": "Vanilla Iced Coffee",
+      "parent": "Iced Coffee",
+      "group": "Coffee",
+      "values": [
+        "661g",
+        "210",
+        "4",
+        "3",
+        "0",
+        "15",
+        "115",
+        "35",
+        "0",
+        "33",
+        "7"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51474-32a1e1bb",
+      "title": "Mocha Iced Coffee",
+      "parent": "Iced Coffee",
+      "group": "Coffee",
+      "values": [
+        "661g",
+        "200",
+        "4.5",
+        "3",
+        "0",
+        "15",
+        "125",
+        "34",
+        "1",
+        "31",
+        "8"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-51472-440c2516",
+      "title": "Caramel Iced Coffee",
+      "parent": "Iced Coffee",
+      "group": "Coffee",
+      "values": [
+        "672g",
+        "260",
+        "9",
+        "6",
+        "0.5",
+        "35",
+        "190",
+        "38",
+        "0",
+        "34",
+        "8"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10577-3a482664",
+      "title": "Honey Roasted BBQ Sauce",
+      "parent": "Honey Roasted BBQ Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "12g",
+        "60",
+        "5",
+        "1",
+        "0",
+        "5",
+        "75",
+        "3",
+        "0",
+        "2",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10576-229f37ad",
+      "title": "Zesty Buffalo Sauce",
+      "parent": "Zesty Buffalo Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "21g",
+        "25",
+        "2.5",
+        "0",
+        "0",
+        "5",
+        "570",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10575-fafebf10",
+      "title": "Sweet & Spicy Sriracha Sauce",
+      "parent": "Sweet & Spicy Sriracha Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "28g",
+        "45",
+        "0",
+        "0",
+        "0",
+        "0",
+        "380",
+        "11",
+        "0",
+        "10",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10574-740a57f1",
+      "title": "Polynesian Sauce",
+      "parent": "Polynesian Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "28g",
+        "110",
+        "6",
+        "1",
+        "0",
+        "0",
+        "210",
+        "14",
+        "0",
+        "13",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10573-b4f684a0",
+      "title": "Honey Mustard Sauce",
+      "parent": "Honey Mustard Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "28g",
+        "50",
+        "0",
+        "0",
+        "0",
+        "0",
+        "160",
+        "11",
+        "0",
+        "10",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10572-1a207d5b",
+      "title": "Garden Herb Ranch Sauce",
+      "parent": "Garden Herb Ranch Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "21g",
+        "100",
+        "11",
+        "2",
+        "0",
+        "10",
+        "170",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10571-b0bbd4a7",
+      "title": "Chick-fil-A® Sauce",
+      "parent": "Chick-fil-A® Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "28g",
+        "140",
+        "13",
+        "2",
+        "0",
+        "10",
+        "170",
+        "6",
+        "0",
+        "6",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10570-004c0ef1",
+      "title": "Barbeque Sauce",
+      "parent": "Barbeque Sauce",
+      "group": "Dipping Sauces",
+      "values": [
+        "28g",
+        "45",
+        "0",
+        "0",
+        "0",
+        "0",
+        "200",
+        "11",
+        "0",
+        "9",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10584-7d0c0f56",
+      "title": "Zesty Apple Cider Vinaigrette Dressing",
+      "parent": "Zesty Apple Cider Vinaigrette Dressing",
+      "group": "Dressings",
+      "values": [
+        "56g",
+        "230",
+        "19",
+        "3",
+        "0",
+        "0",
+        "450",
+        "16",
+        "0",
+        "14",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10583-8bc9565f",
+      "title": "Light Italian Dressing",
+      "parent": "Light Italian Dressing",
+      "group": "Dressings",
+      "values": [
+        "57g",
+        "25",
+        "1",
+        "0",
+        "0",
+        "0",
+        "470",
+        "3",
+        "0",
+        "2",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10582-ee761423",
+      "title": "Light Balsamic Vinaigrette Dressing",
+      "parent": "Light Balsamic Vinaigrette Dressing",
+      "group": "Dressings",
+      "values": [
+        "57g",
+        "80",
+        "4",
+        "0.5",
+        "0",
+        "0",
+        "360",
+        "10",
+        "0",
+        "9",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10581-e2291c46",
+      "title": "Garden Herb Ranch Dressing",
+      "parent": "Garden Herb Ranch Dressing",
+      "group": "Dressings",
+      "values": [
+        "57g",
+        "280",
+        "29",
+        "5",
+        "0",
+        "25",
+        "440",
+        "2",
+        "0",
+        "1",
+        "1"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10580-e912e6a3",
+      "title": "Fat-Free Honey Mustard Dressing",
+      "parent": "Fat-Free Honey Mustard Dressing",
+      "group": "Dressings",
+      "values": [
+        "57g",
+        "90",
+        "0",
+        "0",
+        "0",
+        "0",
+        "330",
+        "22",
+        "1",
+        "18",
+        "0"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10579-ee70309b",
+      "title": "Creamy Salsa Dressing",
+      "parent": "Creamy Salsa Dressing",
+      "group": "Dressings",
+      "values": [
+        "57g",
+        "290",
+        "31",
+        "5",
+        "0",
+        "25",
+        "630",
+        "2",
+        "0",
+        "1",
+        "1"
+      ],
+      "visible": true
+    },
+    {
+      "id": "cfa-us-10578-8968e87a",
+      "title": "Avocado Lime Ranch Dressing",
+      "parent": "Avocado Lime Ranch Dressing",
+      "group": "Dressings",
+      "values": [
+        "57g",
+        "310",
+        "32",
+        "5",
+        "0",
+        "25",
+        "520",
+        "3",
+        "1",
+        "2",
+        "1"
+      ],
+      "visible": true
+    }
+  ],
+  "screenshots": [
+    "docs/growth-release-2026-10-09/source-audit/official-fruit-cup-sizes.png",
+    "docs/growth-release-2026-10-09/source-audit/official-kale-crunch.png",
+    "docs/growth-release-2026-10-09/source-audit/official-grilled-sandwich.png",
+    "docs/growth-release-2026-10-09/source-audit/official-honey-roasted-bbq.png",
+    "docs/growth-release-2026-10-09/source-audit/official-diet-lemonade-sizes.png",
+    "docs/growth-release-2026-10-09/source-audit/official-iced-coffee-conflict.png"
+  ],
+  "verifiedRows": 135,
+  "errors": []
+}

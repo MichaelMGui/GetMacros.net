@@ -26,6 +26,7 @@
   const key=E.key,complete=E.complete;
   let state=E.fromSearch(location.search,meals);
   selected=new URLSearchParams(location.search).getAll('compare').map(k=>meals.findIndex(m=>key(m)===k)).filter(i=>i>=0).slice(0,3);
+  let expectedSnapshots=new URLSearchParams(location.search).getAll('snapshot').slice(0,3);
   savedOnly=new URLSearchParams(location.search).get('view')==='saved';
   function readState(){return E.fromSearch(location.search,meals);}
   function syncUrl(){const url=new URL(location.href);url.search=E.toSearch(state).toString();if(savedOnly)url.searchParams.set('view','saved');history.replaceState(null,'',url);}
@@ -82,7 +83,7 @@
   root.addEventListener('change',e=>{
     const el=e.target,k=el.name;
     if(el.closest('.guided-dialog'))return;
-    if(el.hasAttribute('data-compare')){const id=Number(el.dataset.compare);selected=el.checked?[...selected,id].slice(0,3):selected.filter(v=>v!==id);updateTray();return;}
+    if(el.hasAttribute('data-compare')){const id=Number(el.dataset.compare);selected=el.checked?[...selected,id].slice(0,3):selected.filter(v=>v!==id);expectedSnapshots=[];updateTray();return;}
     if(limits[k]){if(!el.reportValidity())return;const value=el.value===''?null:Number(el.value);if(state[k]===value)return;state[k]=value;}
     else if(k==='sort')state.sort=el.value;
     else if(k==='incomplete')state.complete=!el.checked;
@@ -100,20 +101,20 @@
     if(el.hasAttribute('data-surprise')){const matches=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));if(!matches.length)return;const rand=new Uint32Array(1);crypto.getRandomValues(rand);const at=rand[0]%matches.length,m=matches[at];visible=Math.max(visible,Math.ceil((at+1)/pageSize)*pageSize);render();const row=resultList.querySelector('[data-meal-id="'+meals.indexOf(m)+'"]');if(row){const details=row.querySelector('.meal-detail');details.open=true;details.querySelector('summary').focus();}}
     if(el.hasAttribute('data-reset'))clear();
     if(el.hasAttribute('data-remove')){const k=el.dataset.remove;if(facets[k])state[k]=state[k].filter(v=>v!==el.dataset.value);else if(k==='complete')state.complete=true;else state[k]=null;controlsFromState();render();root.querySelector('[name=sort]').focus({preventScroll:true});}
-    if(el.hasAttribute('data-save')){const m=meals[Number(el.dataset.save)],id=key(m);saved=saved.includes(id)?saved.filter(v=>v!==id):[...saved,id];try{localStorage.setItem('getmacros-saved-meals-v1',JSON.stringify(saved));}catch(e){}el.innerHTML=V.icon('save')+'<span>'+(saved.includes(id)?'Saved':'Save')+'</span>';el.setAttribute('aria-label',(saved.includes(id)?'Unsave ':'Save ')+m.name);window.GetMacrosCompanion?.respond('saved');el.setAttribute('aria-pressed',saved.includes(id));if(savedOnly)render();}
+    if(el.hasAttribute('data-save')){const m=meals[Number(el.dataset.save)],id=key(m);const next=window.GetMacrosNotebook?.toggle(m);if(!next){root.querySelector('[data-share-status]').textContent='This browser could not save the order. Existing saves are unchanged.';return;}saved=next;el.innerHTML=V.icon('save')+'<span>'+(saved.includes(id)?'Saved':'Save')+'</span>';el.setAttribute('aria-label',(saved.includes(id)?'Unsave ':'Save ')+m.name);window.GetMacrosCompanion?.respond('saved');el.setAttribute('aria-pressed',saved.includes(id));if(savedOnly)render();}
     if(el.hasAttribute('data-open-filters')){filterDialog.append(form);filterDialog.showModal();}
     if(el.hasAttribute('data-close-filters'))filterDialog.close();
     if(el.hasAttribute('data-clear-compare')){selected=[];updateTray();}
     if(el.hasAttribute('data-open-compare')){
       const pair=selected.map(i=>meals[i]);track('comparison_used');
-      root.querySelector('.comparison-output').innerHTML='<table><caption>Per listed order. Unknown values are not zero.</caption><thead><tr><td>Nutrient</td>'+pair.map(m=>'<th scope="col">'+esc(m.chain)+'<strong>'+esc(m.name)+'</strong><small>'+esc(m.serving||'1 listed order')+' · '+esc(m.region||'U.S.')+'</small></th>').join('')+'</tr></thead><tbody>'+[['cal','Calories',''],['p','Protein','g'],['c','Carbs','g'],['fat','Fat','g'],['f','Fiber','g'],['na','Sodium','mg']].map(([k,l,u])=>'<tr><th scope="row">'+l+'</th>'+pair.map(m=>'<td>'+number(m[k],u)+'</td>').join('')+'</tr>').join('')+'</tbody></table><div class="comparison-notes">'+pair.map(m=>'<div><h3>'+esc(m.chain)+'</h3><p>'+esc(m.why)+'</p>'+(m.source?'<a href="'+esc(m.source)+'">Official source</a>':'')+'</div>').join('')+'</div><div class="comparison-actions"><button type="button" class="btn" data-share-comparison>Share comparison</button><button type="button" data-print>Print comparison</button></div><p data-comparison-status role="status"></p>';
+      root.querySelector('.comparison-output').innerHTML=GetMacrosOrderCore.comparisonTable(pair,expectedSnapshots)+'<div class="comparison-actions"><button type="button" class="btn" data-share-comparison>Share comparison</button><button type="button" data-print>Print comparison</button><a href="compare-complete-restaurant-orders.html#order-builder">Build an order</a></div><p data-comparison-status role="status"></p>';
       compareDialog.showModal();
     }
     if(el.hasAttribute('data-close-compare'))compareDialog.close();
     if(el.hasAttribute('data-print'))window.print();
     if(el.hasAttribute('data-share')||el.hasAttribute('data-share-comparison')){
       const url=new URL('restaurant-meal-finder.html',location.href);url.search=E.toSearch(state).toString();
-      const comparison=el.hasAttribute('data-share-comparison');if(comparison)selected.forEach(i=>url.searchParams.append('compare',key(meals[i])));
+      const comparison=el.hasAttribute('data-share-comparison');if(comparison)selected.forEach(i=>{url.searchParams.append('compare',key(meals[i]));if(window.GetMacrosOrderCore)url.searchParams.append('snapshot',GetMacrosOrderCore.version(meals[i]));});
       const status=root.querySelector(comparison?'[data-comparison-status]':'[data-share-status]');
       try{await navigator.clipboard.writeText(url.href);status.textContent=comparison?'Comparison link copied.':'Result link copied.';}catch{status.replaceChildren();const label=document.createElement('label');label.textContent='Copy this link';const input=document.createElement('input');input.readOnly=true;input.setAttribute("aria-label",comparison?"Comparison link":"Results link");input.value=url.href;label.append(input);status.append(label);input.focus();input.select();}track('share_action');
     }

@@ -47,15 +47,38 @@ def run():
  pages=[metadata(p) for p in sorted(ROOT.glob('*.html'))]
  articles=[p for p in pages if p['family']=='article']
  byroute={p['route']:p for p in pages}
- topics=defaultdict(list)
- for row in new:topics[row['category']].append(byroute[row['slug']])
+ groups={'Eating Out':[], 'Breakfast':[], 'Coffee & Drinks':[], 'Meal Comparisons':[], 'Protein & Value':[], 'Portions & Labels':[], 'Nutrition Basics':[]}
+ aliases=defaultdict(list)
+ old_categories=list(dict.fromkeys(r['category'] for r in new))
+ def reading_group(row):
+  title=byroute[row['slug']]['title'].lower();category=row['category']
+  if row['slug']=='breakfast-drinks-and-add-ons.html' or any(w in title for w in ('drink','coffee','latte','cold foam')):return 'Coffee & Drinks'
+  if category=='Breakfast decisions':return 'Breakfast'
+  if category=='Restaurant comparisons':return 'Meal Comparisons'
+  if category in ('Protein questions','Practical protein','Food costs','Budget and value'):return 'Protein & Value'
+  if category in ('Recipe arithmetic','Food labels','Calculator notes','Recipe portions','Kitchen calculations'):return 'Portions & Labels'
+  if category in ('Macro fundamentals','Nutrition numbers','Sources and methods'):return 'Nutrition Basics'
+  return 'Eating Out'
+ for row in new:groups[reading_group(row)].append(byroute[row['slug']])
+ for i,category in enumerate(old_categories):aliases[reading_group(next(r for r in new if r['category']==category))].append('reading-topic-'+str(i))
  old=[p for p in articles if p['route'] not in {r['slug'] for r in new}]
- topics['Nutrition foundations']=old
+ for page in old:
+  title=page['title'].lower()
+  if page['route']=='breakfast-drinks-and-add-ons.html' or any(w in title for w in ('drink','coffee','latte','cold foam')):topic='Coffee & Drinks'
+  elif 'breakfast' in title:topic='Breakfast'
+  elif any(w in title for w in ('protein on a budget','protein cost','protein value')):topic='Protein & Value'
+  elif any(w in title for w in ('recipe','portion','food label','nutrition label')):topic='Portions & Labels'
+  elif page['route'] in ('compare-complete-restaurant-orders.html','best-fast-food-restaurants-for-your-goals.html'):topic='Meal Comparisons'
+  else:topic='Nutrition Basics'
+  groups[topic].append(page)
+ aliases['Nutrition Basics'].append('reading-topic-'+str(len(old_categories)))
+ topics={k:v for k,v in groups.items() if v}
  # A short editorial selection precedes a compact, complete topic library.
  featured=[byroute[r] for r in ['total-sugars-added-sugars-label.html','how-to-read-a-nutrition-label.html','compare-complete-restaurant-orders.html'] if r in byroute]
  if len(featured)<3:featured=(featured+[byroute[r['slug']] for r in new])[:3]
- options=''.join('<option value="reading-topic-'+str(i)+'">'+escape(topic)+'</option>' for i,topic in enumerate(topics))
- sections=''.join('<section class="reading-topic" id="reading-topic-'+str(i)+'" data-reading-topic><header><h3>'+escape(topic)+'</h3><p>'+str(len(rows))+' reads</p></header><div class="library-reads">'+''.join(reading_link(r) for r in rows)+'</div><button class="text-action" type="button" data-more-reads hidden>Show more reads '+ARROW+'</button></section>' for i,(topic,rows) in enumerate(topics.items()))
+ topic_id=lambda topic:'learn-'+topic.lower().replace(' & ','-').replace(' ','-')
+ options=''.join('<option value="'+topic_id(topic)+'">'+escape(topic)+'</option>' for topic in topics)
+ sections=''.join('<section class="reading-topic" id="'+topic_id(topic)+'" data-topic-alias="'+' '.join(aliases[topic])+'" data-reading-topic><header><h3>'+escape(topic)+'</h3><p>'+str(len(rows))+' reads</p></header><div class="library-reads">'+''.join(reading_link(r) for r in rows)+'</div><button class="text-action" type="button" data-more-reads hidden>Show more reads '+ARROW+'</button></section>' for topic,rows in topics.items())
  features=''.join(reading_link(r).replace('<span>',food(c)+'<span>',1) for r,c in zip(featured,['strawberry','broccoli','egg']))
  main='<main id="main-content"><section class="library-masthead container"><div><h1>A little food<br>for thought.</h1><p>Useful answers. Clear examples. Sources you can follow.</p></div>'+food('avocado',True)+'</section><section class="library-feature container" aria-label="Start reading">'+features+'</section><section class="container topic-library"><div class="reading-browser-head"><h2>Find your next read.</h2><label class="reading-topic-choice" hidden>Read about<select id="reading-topic-select">'+options+'</select></label></div><p id="reading-topic-status" class="sr-only" role="status"></p>'+sections+'</section><section class="library-next container"><div><h2>Try it for yourself.</h2><p>Small games about portions, patterns and food.</p></div><a class="btn btn-primary" href="play.html">Make a little time to play '+ARROW+'</a></section></main>'
  p=ROOT/'articles.html';p.write_text(add_library_style(replace_main(p.read_text(encoding='utf-8'),main)),encoding='utf-8')

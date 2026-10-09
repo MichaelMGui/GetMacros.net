@@ -29,6 +29,6 @@ groups.forEach(function(g){g.querySelector('[data-more-reads]').addEventListener
  if(visible>=links.length){this.hidden=true;links[Math.max(0,links.length-1)].focus();}
  status.textContent='Showing '+Math.min(visible,links.length)+' of '+links.length+' reads.';
 });});
-function hash(){var id=location.hash.slice(1);if(groups.some(function(g){return g.id===id;}))show(id,false,true);}
+function hash(){var id=location.hash.slice(1),group=groups.find(function(g){return g.id===id||(g.dataset.topicAlias||'').split(' ').includes(id);});if(group)show(group.id,false,false);}
 show(groups[0].id,false,false);hash();window.addEventListener('hashchange',hash);
 })();

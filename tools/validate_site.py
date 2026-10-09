@@ -225,7 +225,7 @@ def main() -> int:
                 ("restaurant-meal-finder.html", "Find a meal"),
                 ("restaurant-meal-guides.html", "All restaurants"),
                 ("calculators.html", "Macro calculator"),
-                ("articles.html", "Nutrition guides"),
+                ("articles.html", "All guides"),
             )
             for nav_href, nav_label in required_nav:
                 pattern = rf'<a\b[^>]*href=["\']{re.escape(nav_href)}["\'][^>]*>(.*?)</a>'

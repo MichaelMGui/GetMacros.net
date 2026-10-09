@@ -1,0 +1,46 @@
+{
+  "reviewDate": "2026-10-09",
+  "methodLimit": "Web extracted rows; no claim that every PDF visual column or complete current local menu was newly verified. Existing source-audited records are preserved.",
+  "chains": {
+    "Arby’s": {
+      "method": "Official PDF extracted rows inspected with web.open/find; chicken sandwich, roast beef and melt rows matched the retained dataset.",
+      "sourceEdition": "Effective June 2026; filename July 2026."
+    },
+    "SONIC": {
+      "method": "Official PDF extracted page 4 rows inspected with web.open/find; tender, wrap and breakfast-burrito values matched the retained dataset.",
+      "sourceEdition": "Filename September 2026; printed season ambiguity retained."
+    },
+    "QDOBA": {
+      "method": "Official PDF extracted rows inspected with web.open/find; Keto Chicken/Steak, Cholula and Fajita Vegan rows matched the retained dataset.",
+      "sourceEdition": "Printed Nutrition Facts 2026; filename September 1, 2026."
+    },
+    "El Pollo Loco": {
+      "method": "Official PDF extracted rows inspected with web.open/find; both quesadillas and Classic Chicken Burrito matched the retained dataset.",
+      "sourceEdition": "Retained September 2026 edition."
+    },
+    "Del Taco": {
+      "method": "Official PDF extracted rows inspected with web.open/find; roller flavors, bean-and-cheese, taco and breakfast-burrito values matched the retained dataset.",
+      "sourceEdition": "Printed February 2026."
+    },
+    "Noodles & Company": {
+      "method": "Official PDF extracted regular-column rows inspected with web.open; pasta and regular soup values matched the retained dataset.",
+      "sourceEdition": "Printed NTR.0126, exact formal publication date remains unstated in stored metadata."
+    },
+    "Culver’s": {
+      "method": "Official PDF extracted adult-menu rows inspected with web.open; burger, sandwich and veggie-burger rows matched the retained dataset. Adult menu is kept separate from differing kids à-la-carte values.",
+      "sourceEdition": "Retained July 2025 edition; not represented as a newly issued 2026 menu."
+    },
+    "Taco John’s": {
+      "method": "Official PDF extracted bowl rows inspected with web.open/find; the two standard chicken bowls matched the retained dataset.",
+      "sourceEdition": "Exact printed edition date remains unstated."
+    },
+    "In-N-Out": {
+      "method": "Official linked PDF extracted rows and printed January 2026 date inspected with web.open/find; Double-Double versions matched the retained dataset.",
+      "sourceEdition": "Printed January 2026."
+    },
+    "Raising Cane’s": {
+      "method": "Fresh official-PDF web retrieval returned an internal error. Existing inspected snapshot only; no fresh source verification claimed.",
+      "sourceEdition": "Retained August 2026 edition."
+    }
+  }
+}

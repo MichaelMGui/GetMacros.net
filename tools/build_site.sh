@@ -18,6 +18,7 @@ python3 tools/refine_food_pages.py
 python3 tools/build_playful_interface.py
 python3 tools/build_play_release.py
 python3 tools/integrate_playful_release.py
+python3 tools/build_growth_release.py
 python3 tools/refresh_release_search.py
 python3 tools/stamp_assets.py
 python3 tools/validate_site.py

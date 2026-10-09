@@ -1,0 +1,15 @@
+{
+  "newRecords": 129,
+  "reverifiedExistingRecords": 6,
+  "correctedOldRecords": 0,
+  "totalCatalogueRecords": 135,
+  "newByCategory": {
+    "breakfast": 24,
+    "entree": 18,
+    "side": 15,
+    "treat": 14,
+    "drink": 43,
+    "sauce": 8,
+    "dressing": 7
+  }
+}

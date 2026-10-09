@@ -1,18 +1,8 @@
-(function(){
- 'use strict';
- var ids=['ap','as','ag','bp','bs','bg'];
- function money(value,digits){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2,maximumFractionDigits:digits||4}).format(value);}
- function update(){
-  var valid=ids.every(function(id){var el=document.getElementById(id);return el.value!==''&&el.checkValidity()&&Number.isFinite(Number(el.value));});
-  var v=function(id){return Number(document.getElementById(id).value);};
-  var aTotal=v('as')*v('ag'),bTotal=v('bs')*v('bg');
-  valid=valid&&aTotal>0&&bTotal>0;
-  var a=valid?v('ap')/aTotal:0,b=valid?v('bp')/bTotal:0;
-  document.getElementById('ra').textContent=valid?money(a)+'/g':'—';
-  document.getElementById('rb').textContent=valid?money(b)+'/g':'—';
-  document.getElementById('ra25').textContent=valid?money(a*25,2):'—';
-  document.getElementById('rb25').textContent=valid?money(b*25,2):'—';
-  document.getElementById('winner').textContent=!valid?'Enter the price, servings and protein for both foods.':(Math.abs(a-b)<1e-10?'Both foods cost the same per gram of protein.':(a<b?'The first food':'The second food')+' gives you more protein for your money.');
- }
- ids.forEach(function(id){document.getElementById(id).addEventListener('input',update);});update();
-}());
+/* Receipt values are user-entered, in one currency. No price database or FX. */
+(function(){'use strict';const C=window.GetMacrosOrderCore,ids=['ap','as','ag','aq','bp','bs','bg','bq'],currency=document.querySelector('#receipt-currency');if(!C||!currency)return;
+const money=(n,digits=4)=>new Intl.NumberFormat('en-US',{style:'currency',currency:currency.value,minimumFractionDigits:2,maximumFractionDigits:digits}).format(n);
+function read(prefix){return C.receipt({paid:Number(document.querySelector('#'+prefix+'p').value),quantity:Number(document.querySelector('#'+prefix+'q').value),servings:Number(document.querySelector('#'+prefix+'s').value),protein:Number(document.querySelector('#'+prefix+'g').value),currency:currency.value});}
+function update(){const valid=ids.every(id=>{const el=document.getElementById(id);return el.value!==''&&el.checkValidity();}),a=valid?read('a'):null,b=valid?read('b'):null;
+for(const [prefix,result] of [['a',a],['b',b]]){document.getElementById('r'+prefix).textContent=result?money(result.costPerGram)+'/g':'—';document.getElementById('r'+prefix+'25').textContent=result?money(result.costPer25,2):'—';const price=document.getElementById(prefix+'p');document.querySelector('[data-checkout-'+prefix+']').textContent=price.value!==''&&price.checkValidity()?money(Number(price.value),2)+' paid at checkout':'Enter the amount paid';}
+document.getElementById('winner').textContent=!a||!b?'Enter both complete receipt lines. Amount paid, quantity and protein must be above zero.':Math.abs(a.costPerGram-b.costPerGram)<1e-10?'Both lines have the same cost per gram of protein.':(a.costPerGram<b.costPerGram?'The first line':'The second line')+' has the lower cost per gram of protein. Checkout affordability is shown separately.';
+}ids.forEach(id=>document.getElementById(id).addEventListener('input',update));currency.addEventListener('change',update);update();})();
