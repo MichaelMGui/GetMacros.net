@@ -1,6 +1,6 @@
 # GetMacros global product release — October 11, 2026
 
-This release extends the existing product and food-character identity. It does not claim to cover every food, country, restaurant or current menu. Deployment verification is recorded separately in `deployment-verification.json` and `verified-live-links.csv` after publication.
+This release extends the existing product and food-character identity. It does not claim to cover every food, country, restaurant or current menu. The implementation revision **f08ae38b8463f6fede91b3e14bd7d35e5700ea4b** is live through the existing GitHub Pages workflow. Pages deployment and both Site quality jobs succeeded. `deployment-verification.json` records 341 actual live HTTP route checks, matching public asset hashes, 338 sitemap pages and private paths returning 404. `verified-live-links.csv` contains all 39 new routes plus the substantially extended existing raw/cooked guide. Sitemap submission and indexing were not verified.
 
 ## Delivered implementation
 
@@ -55,7 +55,9 @@ Four original comparison graphics, four short-video scripts, two newsletter draf
 - Representative product checks: **80 renders**, eight page families, light/dark at 320, 390, 768, 1280 and 1440 px. Overflow/runtime checks passed; real diary edit/favorite/recipe/import/delete and offline journeys passed.
 - Additional journeys: four light/dark mobile/desktop runs covering country switching, retained limits, empty/typo search, exact-order tools, ingredient-link restoration, source-version warnings, local photo preview with no disabled-service API request, navigation dismissal and reduced-motion settings.
 
-Actual files: `route-renders.json`, `test-results.json`, `final/checks.json`, `journey-checks.json` and `final/*.png`. `coverage.csv` distinguishes automated rendering from manual screenshot inspection. Not every route was manually inspected. Representative old and new page families were reviewed as screenshots; production checks are recorded only after the public deployment is verified.
+Actual files: `route-renders.json`, `test-results.json`, `final/checks.json`, `journey-checks.json` and `final/*.png`. `coverage.csv` distinguishes automated rendering from manual screenshot inspection. Not every route was manually inspected. Representative old and new page families were reviewed as screenshots.
+
+Real production browser verification passed in light/dark at 390/1440 px: live source lookup and portion review, the private diary with AI truthfully disabled, UK/NZ named components and 198 g/236 g serving definitions, and the UK finder. There was no request interception or local fixture. Sixteen actual screenshots and four journey results are in `production/`. The mobile light comparison, desktop dark comparison and mobile light source-portion dialog were manually reviewed. Production visits here are QA, not evidence of traffic growth.
 
 The first production check also exposed an omitted `.webmanifest` in the explicit publication file list. The publisher now includes it, preserving the reviewed app colors, scope and shortcuts on the actual static deployment.
 

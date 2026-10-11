@@ -1,0 +1,57 @@
+{
+  "verifiedAt": "2026-10-11T18:38:21.945Z",
+  "results": [
+    {
+      "theme": "light",
+      "width": 390,
+      "base": "https://getmacros.net",
+      "passed": [
+        "live source lookup and portion dialog",
+        "live local diary; AI disabled truthfully",
+        "Europe/Oceania documented components and serving weights",
+        "live UK finder",
+        "no runtime errors"
+      ],
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "base": "https://getmacros.net",
+      "passed": [
+        "live source lookup and portion dialog",
+        "live local diary; AI disabled truthfully",
+        "Europe/Oceania documented components and serving weights",
+        "live UK finder",
+        "no runtime errors"
+      ],
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "base": "https://getmacros.net",
+      "passed": [
+        "live source lookup and portion dialog",
+        "live local diary; AI disabled truthfully",
+        "Europe/Oceania documented components and serving weights",
+        "live UK finder",
+        "no runtime errors"
+      ],
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "base": "https://getmacros.net",
+      "passed": [
+        "live source lookup and portion dialog",
+        "live local diary; AI disabled truthfully",
+        "Europe/Oceania documented components and serving weights",
+        "live UK finder",
+        "no runtime errors"
+      ],
+      "overflow": false
+    }
+  ]
+}

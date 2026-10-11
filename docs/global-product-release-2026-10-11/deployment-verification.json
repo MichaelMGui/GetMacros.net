@@ -1,0 +1,2506 @@
+{
+  "revision": "f08ae38b8463f6fede91b3e14bd7d35e5700ea4b",
+  "verifiedAt": "2026-10-11T18:38:57.840Z",
+  "production": "https://getmacros.net",
+  "assets": [
+    {
+      "path": "data/food-library/manifest.json",
+      "status": 200,
+      "sha256": "3daf720d1e4ab1155ff26fce3bef8199a6e9e7721f91817295e8a99580b64ad7"
+    },
+    {
+      "path": "data/food-library/index.json",
+      "status": 200,
+      "sha256": "ce653a3899cf3e7b3c36038f283def0991b597717da36279463a67d483ea0faa"
+    },
+    {
+      "path": "js/order-registry.json",
+      "status": 200,
+      "sha256": "d2ab76aa8a57bfa9cffdc6223d0d0d69eed838c7462adb54263f7d5cb22a273f"
+    },
+    {
+      "path": "js/app-config.js",
+      "status": 200,
+      "sha256": "3ae788278502d3ebb26a10b16ed9cebd53a679468fe77748200a9d6ef7b08002"
+    },
+    {
+      "path": "js/ingredient-comparison.js",
+      "status": 200,
+      "sha256": "a1de59466eb7cfc674ead07065bd63fde47c7869efcb6bbd1748ea8928ae86b7"
+    },
+    {
+      "path": "js/food-core.js",
+      "status": 200,
+      "sha256": "1821ee99357536170e04ebd180cb435a9c619b898b1ec7bb1aac06e8f0616caa"
+    },
+    {
+      "path": "js/food-app.js",
+      "status": 200,
+      "sha256": "81bac6a9798adbb04596771faa41a7ea65eb14ec7917bf1774a91b3ed839b131"
+    },
+    {
+      "path": "css/food-app.css",
+      "status": 200,
+      "sha256": "9bd52c67d86b3cc3909c6c942fe2d735f3d127c9c67b9adf182554af72d1c0aa"
+    },
+    {
+      "path": "site.webmanifest",
+      "status": 200,
+      "sha256": "e9e4ec75c420220d96061aa7a37f2863895debdda0eccd42d3c49c11eb60e719"
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "sha256": "ac64631e58c4cdbba8f2f39d17fbd67f17153c6ebc239237814811d117cd9d99"
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "sha256": "a40755b4dbd379ae6e100c9ff14667f21b7c162b2e1c4b334068bbc6af02d8b1"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "canonical": "https://getmacros.net/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/accessibility.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/accessibility.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/about.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/about.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/added-sugar-percentage-from-grams.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/added-sugar-percentage-from-grams.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/arbys-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/404.html",
+      "status": 200,
+      "canonical": null,
+      "robots": "noindex, follow",
+      "h1Count": 1
+    },
+    {
+      "route": "/arbys-breakfast-bread-format.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-breakfast-bread-format.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/arbys-roast-beef-cheddar-french-dip.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-roast-beef-cheddar-french-dip.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/as-packaged-vs-prepared-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/as-packaged-vs-prepared-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/articles.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/articles.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/au/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/au/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/find-a-meal/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/are-diet-drinks-bad-for-you.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/are-diet-drinks-bad-for-you.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/arbys-sliders-count-whole-tray.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-sliders-count-whole-tray.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/au/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/restaurants/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/au/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/au/en/restaurants/guzman-y-gomez/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/restaurants/guzman-y-gomez/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/blog.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/blog.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/best-fast-food-restaurants-for-your-goals.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/best-fast-food-restaurants-for-your-goals.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/breakfast-bacon-format-sodium-cross-chain.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-bacon-format-sodium-cross-chain.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/breakfast-dataset-not-opening-hours.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-dataset-not-opening-hours.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/body-recomposition-explained.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/body-recomposition-explained.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/breakfast-drinks-and-add-ons.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-drinks-and-add-ons.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/breakfast-sandwich-half-not-half-protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-sandwich-half-not-half-protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/breakfast-food-vs-combo-menu.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-food-vs-combo-menu.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/breakfast-two-items-not-one-entry.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-two-items-not-one-entry.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/breakfast-yogurt-topping-layer.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-yogurt-topping-layer.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/budget-meal-builder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/budget-meal-builder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/burger-variants-not-nine-base-burgers.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/burger-variants-not-nine-base-burgers.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/burrito-wrap-cross-chain-no-size-standard.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/burrito-wrap-cross-chain-no-size-standard.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/collections/breakfast/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/collections/breakfast/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/collections/protein-meals/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/find-a-meal/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/menu-sources/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/menu-sources/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/restaurants/harvey-s/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/harvey-s/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/restaurants/a-w-canada/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/a-w-canada/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/restaurants/tim-hortons/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/tim-hortons/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/tools/complete-order/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/tools/complete-order/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ca/en/tools/drink-comparison/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/tools/drink-comparison/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculate-macros-mixed-bowl.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculate-macros-mixed-bowl.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculator-height-feet-inches-not-decimal.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-height-feet-inches-not-decimal.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculator-activity-choice-sensitivity.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-activity-choice-sensitivity.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculator-input-basis-checklist.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-input-basis-checklist.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculator-pound-kilogram-entry.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-pound-kilogram-entry.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculator-round-at-end.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-round-at-end.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculators.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculators.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calorie-range-menu-reading.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calorie-range-menu-reading.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calorie-tool-output-reverse-check.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calorie-tool-output-reverse-check.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calculator-positive-inputs-zero-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-positive-inputs-zero-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calorie-units-kcal-kilojoules.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calorie-units-kcal-kilojoules.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calories-on-rest-days.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calories-on-rest-days.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calories-in-multi-serving-packages.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calories-in-multi-serving-packages.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/can-you-build-muscle-in-a-calorie-deficit.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/can-you-build-muscle-in-a-calorie-deficit.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/carbohydrate-label-portion-tool.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/carbohydrate-label-portion-tool.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/calories-vs-macros-what-matters-more.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calories-vs-macros-what-matters-more.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/carbs.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/carbs.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/cava-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cava-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/chick-fil-a-vs-popeyes-chicken.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chick-fil-a-vs-popeyes-chicken.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/chick-fil-a-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chick-fil-a-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/chipotle-rice-beans-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-rice-beans-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/chipotle-vs-cava-chicken-bowls.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-vs-cava-chicken-bowls.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/chipotle-toppings-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-toppings-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/choose-fooddata-central-entry.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/choose-fooddata-central-entry.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/compare-menu-ingredients-worldwide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/compare-menu-ingredients-worldwide.html",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/contact.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/contact.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/compare-complete-restaurant-orders.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/corrections.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/corrections.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/cross-chain-breakfast-ham-formats.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-breakfast-ham-formats.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/cross-chain-bean-burritos-serving-proof.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-bean-burritos-serving-proof.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/cross-chain-chicken-soup-no-sodium-assumption.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-chicken-soup-no-sodium-assumption.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/cross-chain-melt-sandwich-orders.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-melt-sandwich-orders.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/culvers-chicken-grilled-crispy-spicy.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/culvers-chicken-grilled-crispy-spicy.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/culvers-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/culvers-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/culvers-dinner-name-side-footnote.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/culvers-dinner-name-side-footnote.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/cutting-bulking-maintenance-explained.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cutting-bulking-maintenance-explained.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/del-taco-bean-burrito-vs-veggie-burrito.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/del-taco-bean-burrito-vs-veggie-burrito.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/del-taco-two-street-tacos-vs-burrito.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/del-taco-two-street-tacos-vs-burrito.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/diet-patterns-evidence.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/diet-patterns-evidence.html",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/del-taco-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/del-taco-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/does-creatine-cause-hair-loss.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/does-creatine-cause-hair-loss.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/drained-weight-nutrition-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/drained-weight-nutrition-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/dunkin-healthy-breakfast-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/dunkin-healthy-breakfast-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/edible-portion-vs-purchased-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/edible-portion-vs-purchased-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/editorial-policy.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/editorial-policy.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/el-pollo-loco-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/el-pollo-loco-bowls-protein-bigger-build.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-bowls-protein-bigger-build.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/el-pollo-loco-salad-dressing-boundary.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-salad-dressing-boundary.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/el-pollo-loco-tortilla-complete-chicken-meal.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-tortilla-complete-chicken-meal.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/equal-calories-different-macros-menu.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/equal-calories-different-macros-menu.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/equal-tax-protein-value-ranking.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/equal-tax-protein-value-ranking.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/exact-fiber-coverage-denominator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/exact-fiber-coverage-denominator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fast-food-breakfast-protein-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-breakfast-protein-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fast-food-meals-500-to-700-calories.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-meals-500-to-700-calories.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fast-food-fiber-and-protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-fiber-and-protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-nutrition-data-report.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fast-food-protein-and-sodium.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-protein-and-sodium.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fat-and-carb-two-energy-profiles.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fat-and-carb-two-energy-profiles.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fast-food-under-1000mg-sodium.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-under-1000mg-sodium.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fats.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fats.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fiber-count-menu-not-plant-score.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fiber-count-menu-not-plant-score.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fiber-daily-value-portion-example.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fiber-daily-value-portion-example.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/fiber-per-portion-vs-density.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fiber-per-portion-vs-density.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/food-diary.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-diary.html",
+      "robots": "noindex,follow",
+      "h1Count": 1
+    },
+    {
+      "route": "/food-library-sources.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-library-sources.html",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/food-library.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-library.html",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/food-shelf.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-shelf.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/gb/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/gb/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/gb/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/restaurants/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/gb/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/find-a-meal/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/gb/en/restaurants/greggs/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/restaurants/greggs/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/gb/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/restaurants/subway/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/grams-per-serving-vs-protein-percentage.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/grams-per-serving-vs-protein-percentage.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/grams-vs-milliliters-nutrition-labels.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/grilled-and-blackened-chicken-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/grilled-and-blackened-chicken-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/healthy-fast-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/half-serving-percent-daily-value.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/half-serving-percent-daily-value.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/high-protein-fast-food-under-500-calories.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/high-protein-fast-food-under-500-calories.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/high-protein-foods-list.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/high-protein-foods-list.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-many-calories-should-i-eat-a-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-many-calories-should-i-eat-a-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-much-fiber-per-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-fiber-per-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-much-protein-can-your-body-absorb.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-protein-can-your-body-absorb.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-much-protein-per-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-protein-per-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-much-sodium-per-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-sodium-per-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-to-calculate-macros-by-hand.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-calculate-macros-by-hand.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-to-build-a-balanced-meal-with-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-build-a-balanced-meal-with-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-to-eat-out-without-wrecking-your-goal.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-eat-out-without-wrecking-your-goal.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-to-calculate-maintenance-calories.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-calculate-maintenance-calories.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-calculate-recipe-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-to-read-a-nutrition-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-read-a-nutrition-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/how-to-hit-protein-goal-on-budget.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-hit-protein-goal-on-budget.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ie/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/ie/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/ie/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/restaurants/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/ie/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/restaurants/subway/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/in-n-out-double-vs-two-hamburgers.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/in-n-out-double-vs-two-hamburgers.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/ie/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/find-a-meal/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/in-n-out-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/in-n-out-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/jersey-mikes-healthy-subs-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/jersey-mikes-healthy-subs-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/in-n-out-three-published-hamburger-versions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/in-n-out-three-published-hamburger-versions.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/jp/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/jp/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/jp/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/restaurants/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/jp/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/find-a-meal/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/jp/en/restaurants/mcdonald-s-japan/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/restaurants/mcdonald-s-japan/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/kfc-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/kfc-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/macros-for-muscle-gain.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/macros-for-muscle-gain.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/macros-for-weight-loss.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/macros-for-weight-loss.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/mcdonalds-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/mcdonalds-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/meal-calculation-two-serving-units.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/meal-calculation-two-serving-units.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/meal-filters-intersection-not-extra-options.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/meal-filters-intersection-not-extra-options.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/menu-average-chain-weighting.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/menu-average-chain-weighting.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/menu-pdf-filename-not-edition-date.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/menu-pdf-filename-not-edition-date.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/milligram-microgram-mineral-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/milligram-microgram-mineral-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/missing-restaurant-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/missing-restaurant-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/mx/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/mx/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/mx/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/find-a-meal/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/mx/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/restaurants/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/mx/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/restaurants/subway/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/net-carbs-total-carbohydrate.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/net-carbs-total-carbohydrate.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/noodles-and-company-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-and-company-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/noodles-mac-protein-not-simple-add-on.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-mac-protein-not-simple-add-on.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/noodles-regular-noodle-orders-not-addons.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-regular-noodle-orders-not-addons.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/noodles-two-chicken-salads.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-two-chicken-salads.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/nutrient-grams-not-food-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrient-grams-not-food-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/nutrition-blank-vs-not-detected.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-blank-vs-not-detected.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/nutrition-data-mean-not-every-portion.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-data-mean-not-every-portion.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/nutrition-label-rounding.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-label-rounding.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/nutrition-label-comparison-tool.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-label-comparison-tool.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/nutrition-totals-not-ingredient-recipe.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-totals-not-ingredient-recipe.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/nz/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/nz/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/nz/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/find-a-meal/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/nz/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/restaurants/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/nz/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/restaurants/subway/",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/offline.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/offline.html",
+      "robots": "noindex,follow",
+      "h1Count": 1
+    },
+    {
+      "route": "/panda-express-base-nutrition-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panda-express-base-nutrition-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/panda-express-chicken-entree-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panda-express-chicken-entree-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/panera-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panera-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/panda-express-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panda-express-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/per-ounce-vs-per-100g-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/per-ounce-vs-per-100g-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/percent-daily-value-not-vertical-total.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/percent-daily-value-not-vertical-total.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/percentage-points-vs-percent-food-labels.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/percentage-points-vs-percent-food-labels.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/plant-name-not-fiber-number.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/plant-name-not-fiber-number.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-bean-balance.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-bean-balance.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-build-a-plate.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-build-a-plate.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-berry-bounce.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-berry-bounce.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-claim-check.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-claim-check.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-description-detective.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-description-detective.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-fiber-trail.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-fiber-trail.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-food-factory.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-food-factory.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-fruit-catch.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-fruit-catch.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-garden-glide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-garden-glide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-garden-pipes.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-garden-pipes.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-harvest-conveyor.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-harvest-conveyor.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-ingredient-order.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-ingredient-order.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-food-crossword.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-food-crossword.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-ingredient-anagrams.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-ingredient-anagrams.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-kitchen-connections.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-kitchen-connections.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-kitchen-rhythm.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-kitchen-rhythm.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-lunchbox-logic.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-lunchbox-logic.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-macro-grid.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-macro-grid.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-market-budget.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-market-budget.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-market-memory.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-market-memory.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-mascot-maker.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-mascot-maker.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-menu-mystery.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-menu-mystery.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-menu-word-hunt.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-menu-word-hunt.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-nutrition-term-match.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-nutrition-term-match.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-missing-number-kitchen.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-missing-number-kitchen.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-odd-ingredient-out.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-odd-ingredient-out.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-orchard-nonogram.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-orchard-nonogram.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-orange-orbit.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-orange-orbit.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-order-recall.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-order-recall.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-pantry-pack.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-pantry-pack.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-pantry-peek.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-pantry-peek.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-picnic-delivery.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-picnic-delivery.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-picnic-planner.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-picnic-planner.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-plate-art.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-plate-art.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-portion-balance.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-portion-balance.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-portion-fractions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-portion-fractions.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-protein-target-puzzle.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-protein-target-puzzle.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-range-finder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-range-finder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-recipe-dominoes.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-recipe-dominoes.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-recipe-path.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-recipe-path.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-recipe-remix.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-recipe-remix.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-restaurant-order-builder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-restaurant-order-builder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-restaurant-route.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-restaurant-route.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-rounding-room.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-rounding-room.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-label-matchmaker.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-label-matchmaker.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-sandwich-architect.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-sandwich-architect.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-sequence-chef.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-sequence-chef.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-serving-size-detective.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-serving-size-detective.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-smoothie-studio.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-smoothie-studio.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-snack-slide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-snack-slide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-sodium-sort.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-sodium-sort.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-spot-the-swap.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-spot-the-swap.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-source-sleuth.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-source-sleuth.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-tabletop-tangram.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-tabletop-tangram.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-trade-off-table.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-trade-off-table.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/popeyes-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/popeyes-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/portion-ratio-vs-percent-change.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/portion-ratio-vs-percent-change.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/play-silhouette-supper.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-silhouette-supper.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/privacy.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/privacy.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-chicken-sandwich-size-cross-chain.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-chicken-sandwich-size-cross-chain.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-cost-currency-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-cost-currency-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-cost-pack-size-minimum-spend.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-cost-pack-size-minimum-spend.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-density-fast-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-label-blank-daily-value.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-label-blank-daily-value.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-per-package-not-scoop-count.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-per-package-not-scoop-count.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-sort-vs-portion-mass.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-sort-vs-portion-mass.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-serving-count-day-not-prescription.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-serving-count-day-not-prescription.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-powder-scoop-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-powder-scoop-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-cost-food-waste.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-cost-food-waste.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-target-gap-not-automatic-extra.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-target-gap-not-automatic-extra.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-value-after-fixed-delivery-fee.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-value-after-fixed-delivery-fee.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-value-calculator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/published-vs-calculated-restaurant-rows.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/published-vs-calculated-restaurant-rows.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/qdoba-burrito-bowl-published-pair.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/qdoba-burrito-bowl-published-pair.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/protein-value-price-range-overlap.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-value-price-range-overlap.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/qdoba-vegan-bowl-fiber-tradeoff.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/qdoba-vegan-bowl-fiber-tradeoff.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/qdoba-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/qdoba-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/raising-canes-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/raising-canes-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/raising-canes-build-order-not-combo-name.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/raising-canes-build-order-not-combo-name.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/raw-vs-cooked-food-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/raw-vs-cooked-food-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/read-and-watch.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/read-and-watch.html",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-added-water-not-new-nutrients.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-added-water-not-new-nutrients.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-combined-batches-not-average-serving.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-combined-batches-not-average-serving.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-discrete-pieces-count-or-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-discrete-pieces-count-or-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-evaporation-weight-density.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-evaporation-weight-density.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-freezing-portion-count.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-freezing-portion-count.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-fixed-seasoning-scale.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-fixed-seasoning-scale.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-left-in-pan-residual.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-left-in-pan-residual.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-macro-scaler.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-one-ingredient-substitution.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-one-ingredient-substitution.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-quarter-batch-not-quarter-ingredient.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-quarter-batch-not-quarter-ingredient.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-recalculate-new-product-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-recalculate-new-product-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-repeated-ingredient-two-label-bases.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-repeated-ingredient-two-label-bases.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-sauce-made-vs-sauce-used.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-sauce-made-vs-sauce-used.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-sauce-on-side-two-totals.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-sauce-on-side-two-totals.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-target-batch-portions-integer.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-target-batch-portions-integer.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/recipe-uniform-vs-component-serving.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-uniform-vs-component-serving.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-bowl-nutrition-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-bowl-nutrition-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-compare-tradeoff-not-single-score.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-compare-tradeoff-not-single-score.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-meal-finder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-dominated-choice-still-context.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-dominated-choice-still-context.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-meal-guides.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-protein-cost-receipt-prices.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-protein-cost-receipt-prices.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-menu-serving-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-menu-serving-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-protein-value-no-price-data.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-protein-value-no-price-data.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-search-result-count-scope.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-search-result-count-scope.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/restaurant-value-your-nutrient-not-protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-value-your-nutrient-not-protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/salad-burger-calories-no-category-rule.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/salad-burger-calories-no-category-rule.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/same-restaurant-name-different-market-data.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/same-restaurant-name-different-market-data.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/saved-meal-source-version-check.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/saved-meal-source-version-check.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/serving-size-vs-portion-size.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sodium-label-comparison-tool.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sodium-label-comparison-tool.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sodium-milligrams-to-grams.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sodium-milligrams-to-grams.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sonic-hot-dog-sodium-toppings.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-hot-dog-sodium-toppings.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sonic-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sonic-small-burgers-not-same-order.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-small-burgers-not-same-order.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sources.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sources.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/starbucks-healthy-food-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/starbucks-healthy-food-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sugar-lines-do-not-add.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sugar-lines-do-not-add.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/subway-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/subway-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sweat-rate-calculator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sweat-rate-calculator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sweetgreen-vs-panera-chicken-salads.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sweetgreen-vs-panera-chicken-salads.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/sweetgreen-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sweetgreen-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/taco-bell-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-bell-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/taco-johns-bowl-base-tradeoff.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-bowl-base-tradeoff.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/taco-johns-breakfast-taco-vs-burrito.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-breakfast-taco-vs-burrito.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/taco-johns-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/taco-johns-small-fiber-bound.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-small-fiber-bound.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/tare-bowl-before-weighing-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/tare-bowl-before-weighing-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/terms.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/terms.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/three-count-tacos-not-three-equal-meals.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/three-count-tacos-not-three-equal-meals.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/two-meal-total-not-day-recommendation.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-meal-total-not-day-recommendation.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/two-for-one-protein-promotion.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-for-one-protein-promotion.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/two-person-restaurant-budget-constraints.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-person-restaurant-budget-constraints.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/two-fiber-sources-one-bowl.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-fiber-sources-one-bowl.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/unequal-recipe-portions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/unequal-recipe-portions.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/use-calorie-target-meal-finder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/use-calorie-target-meal-finder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/vegetarian-label-not-allergen-safety.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/vegetarian-label-not-allergen-safety.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/vegetarian-fast-food-protein-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/vegetarian-fast-food-protein-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/weight-goal-timeline-calculator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/weight-goal-timeline-calculator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/weigh-food-by-container-difference.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/weigh-food-by-container-difference.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/wendys-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/wendys-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/what-is-a-calorie-deficit.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-is-a-calorie-deficit.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/what-are-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-are-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/what-to-eat-after-a-workout.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-to-eat-after-a-workout.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/what-to-eat-before-a-workout.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-to-eat-before-a-workout.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/when-to-recalculate-calories-and-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/when-to-recalculate-calories-and-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/why-did-i-gain-weight-overnight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/why-did-i-gain-weight-overnight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1
+    },
+    {
+      "route": "/world-restaurant-menus.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/world-restaurant-menus.html",
+      "robots": "indexable default",
+      "h1Count": 1
+    },
+    {
+      "route": "/search.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/search.html",
+      "robots": "indexable default",
+      "h1Count": 1
+    }
+  ],
+  "privatePaths": [
+    {
+      "route": "/server/index.cjs",
+      "status": 404
+    },
+    {
+      "route": "/tools/product_release/menu-records.json",
+      "status": 404
+    },
+    {
+      "route": "/docs/global-product-release-2026-10-11/sources/japan.html",
+      "status": 404
+    }
+  ],
+  "searchConsole": "No authorized access; submission, crawling, indexing and search clicks unverified",
+  "counts": {
+    "foodProfiles": 13578,
+    "restaurantRecords": 1400,
+    "markets": [
+      "US",
+      "CA",
+      "MX",
+      "GB",
+      "IE",
+      "AU",
+      "NZ",
+      "JP"
+    ],
+    "checkedPublicRoutes": 341,
+    "sitemapPages": 338
+  },
+  "actionsHttpStatus": 200,
+  "actions": [
+    {
+      "name": "pages build and deployment",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/38164503393",
+      "headSha": "f08ae38b8463f6fede91b3e14bd7d35e5700ea4b"
+    },
+    {
+      "name": "Site quality",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/38164503828",
+      "headSha": "f08ae38b8463f6fede91b3e14bd7d35e5700ea4b"
+    },
+    {
+      "name": "Site quality",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/38164503537",
+      "headSha": "f08ae38b8463f6fede91b3e14bd7d35e5700ea4b"
+    }
+  ]
+}
