@@ -47,7 +47,7 @@ Four original comparison graphics, four short-video scripts, two newsletter draf
 - Repeat-integration regression passed. It protects the app manifest/shortcuts and unique currency options from being reset or duplicated by later builds.
 - `tools/product_release/run-checks.py`: 17 commands passed, covering existing formulas, filters, order tools, country isolation, content, metadata, search, source checks and asset stamps.
 - `tools/restaurant_release/test_expansion.py`: 15 tests passed.
-- `tools/product_release/test-food.cjs`: source portion math, null propagation, recipe yields, snapshot validation, exports, search and market checks passed.
+- `tools/product_release/test-food.cjs`: 11 checks passed for source portion math, null propagation, recipe yields, snapshot validation, exports, search relevance and market isolation. Live QA identified the olive-oil ranking issue; ingredient matches now rank before dishes containing the ingredient.
 - `node --test server/test/service.test.cjs`: three service tests passed, including actual local HTTP requests with injected provider responses. These are not live AI quality evaluations.
 - `tools/product_release/test-image.cjs`: actual Sharp decode/resize/metadata-removal validation passed on a synthetic image. This is not food recognition testing.
 - Semantic contrast checker: 44 token-pair checks passed. This is not a claim of complete WCAG certification.
@@ -56,6 +56,8 @@ Four original comparison graphics, four short-video scripts, two newsletter draf
 - Additional journeys: four light/dark mobile/desktop runs covering country switching, retained limits, empty/typo search, exact-order tools, ingredient-link restoration, source-version warnings, local photo preview with no disabled-service API request, navigation dismissal and reduced-motion settings.
 
 Actual files: `route-renders.json`, `test-results.json`, `final/checks.json`, `journey-checks.json` and `final/*.png`. `coverage.csv` distinguishes automated rendering from manual screenshot inspection. Not every route was manually inspected. Representative old and new page families were reviewed as screenshots; production checks are recorded only after the public deployment is verified.
+
+The first production check also exposed an omitted `.webmanifest` in the explicit publication file list. The publisher now includes it, preserving the reviewed app colors, scope and shortcuts on the actual static deployment.
 
 Local warm-search timing is lab-only and not a real-user metric or Lighthouse score. There is no authorized analytics or Search Console export/connector, so the reported visitor increase, acquisition sources, field performance, submitted/indexed counts and receiving-clicks remain unverified. Sitemap inclusion is not indexing.
 

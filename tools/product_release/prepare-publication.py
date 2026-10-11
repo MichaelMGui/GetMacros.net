@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/global-product-release-2
 assert DEST.resolve().is_relative_to(ROOT/'docs') and (DEST/'.git').is_dir()
 remote=subprocess.check_output(['git','remote','get-url','origin'],cwd=DEST,text=True).strip();assert remote=='https://github.com/MichaelMGui/GetMacros.net.git'
 baseline={r['path']:r['sha256'] for r in json.loads((OUT/'baseline-files.json').read_text())['files']}
-candidates=[p for p in ROOT.iterdir() if p.is_file() and (p.suffix in ['.html','.js','.json','.svg','.xml','.yml','.txt'] or p.name in ['.gitignore','CNAME','.nojekyll'])]
+candidates=[p for p in ROOT.iterdir() if p.is_file() and (p.suffix in ['.html','.js','.json','.svg','.xml','.yml','.txt','.webmanifest'] or p.name in ['.gitignore','CNAME','.nojekyll'])]
 for directory in ['css','js','images','fonts','tools','.github','ca','mx','gb','ie','au','nz','jp','data/food-library','server']:
  candidates.extend(p for p in (ROOT/directory).rglob('*') if p.is_file() and not set(p.parts)&{'__pycache__','node_modules','private','.git'} and not (p.name.startswith('.env') and p.name!='.env.example'))
 candidates.extend(p for p in OUT.iterdir() if p.is_file() and p.suffix in ['.md','.json','.csv'] and not p.name.startswith('baseline-'))

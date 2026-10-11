@@ -1,11 +1,11 @@
 {
   "name": "GetMacros.net",
   "short_name": "GetMacros",
-  "description": "Healthy fast-food comparisons, macro calculators and focused nutrition guides with transparent sources.",
+  "description": "Find country-specific restaurant meals, look up foods and keep a private food notebook.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7faf3",
-  "theme_color": "#267044",
+  "background_color": "#fffdf8",
+  "theme_color": "#2c6443",
   "icons": [
     {
       "src": "/images/icon-192.png",
@@ -16,6 +16,22 @@
       "src": "/images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "id": "/",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Log food",
+      "url": "/food-diary.html"
+    },
+    {
+      "name": "Food library",
+      "url": "/food-library.html"
+    },
+    {
+      "name": "Find a meal",
+      "url": "/restaurant-meal-finder.html"
     }
   ]
 }
