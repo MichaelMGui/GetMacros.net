@@ -2,7 +2,7 @@
   {
     "theme": "light",
     "width": 390,
-    "warmFoodSearchMs": 3,
+    "warmFoodSearchMs": 1.900000000372529,
     "passed": [
       "existing page families",
       "empty/fuzzy search",
@@ -17,7 +17,7 @@
   {
     "theme": "light",
     "width": 1440,
-    "warmFoodSearchMs": 2.799999998882413,
+    "warmFoodSearchMs": 3.599999999627471,
     "passed": [
       "existing page families",
       "empty/fuzzy search",
@@ -32,7 +32,7 @@
   {
     "theme": "dark",
     "width": 390,
-    "warmFoodSearchMs": 2.900000000372529,
+    "warmFoodSearchMs": 2.099999999627471,
     "passed": [
       "existing page families",
       "empty/fuzzy search",
@@ -47,7 +47,7 @@
   {
     "theme": "dark",
     "width": 1440,
-    "warmFoodSearchMs": 3.099999999627471,
+    "warmFoodSearchMs": 4.199999999254942,
     "passed": [
       "existing page families",
       "empty/fuzzy search",

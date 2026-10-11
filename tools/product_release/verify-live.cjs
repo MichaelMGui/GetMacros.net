@@ -7,7 +7,7 @@ async function read(url){const response=await fetch(url,{headers,signal:AbortSig
 const hash=s=>crypto.createHash('sha256').update(s.replace(/\r\n/g,'\n')).digest('hex');
 (async()=>{
  const report={revision,verifiedAt:new Date().toISOString(),production:base,assets:[],routes:[],privatePaths:[],searchConsole:'No authorized access; submission, crawling, indexing and search clicks unverified'};
- const assets=['data/food-library/manifest.json','data/food-library/index.json','js/order-registry.json','js/app-config.js','js/ingredient-comparison.js','js/food-core.js','js/food-app.js','css/food-app.css','site.webmanifest','sw.js','sitemap.xml'];
+ const assets=['data/food-library/manifest.json','data/food-library/index.json','js/order-registry.json','js/app-config.js','js/ingredient-compare-core.js','js/ingredient-comparison.js','js/food-core.js','js/food-app.js','css/food-app.css','site.webmanifest','sw.js','sitemap.xml'];
  for(const asset of assets){const r=await read(base+'/'+asset+'?release='+revision);const expected=fs.readFileSync(asset,'utf8');assert.equal(r.status,200,asset+' HTTP status');assert.equal(hash(r.text),hash(expected),asset+' has not reached the verified release');report.assets.push({path:asset,status:r.status,sha256:hash(r.text)});}
  const manifest=JSON.parse((await read(base+'/data/food-library/manifest.json?release='+revision)).text),registry=JSON.parse((await read(base+'/js/order-registry.json?release='+revision)).text);
  assert.equal(manifest.profileCount,13578);assert.equal(registry.records.length,1400);assert.equal(registry.markets.length,8);
