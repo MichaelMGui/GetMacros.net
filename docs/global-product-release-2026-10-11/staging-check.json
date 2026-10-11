@@ -1,0 +1,122 @@
+[
+  {
+    "offset": 0,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of '_config.yml', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 40,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'css/markets.css', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 80,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 120,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 160,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 200,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 240,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 280,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 320,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'docs/global-product-release-2026-10-11/distribution-drafts.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/global-product-release-2026-10-11/distribution/manifest.json', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 360,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 400,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'docs/global-product-release-2026-10-11/journey-checks.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/global-product-release-2026-10-11/release-report.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/global-product-release-2026-10-11/route-renders.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/global-product-release-2026-10-11/seo-research.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/global-product-release-2026-10-11/source-rights-and-queue.md', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 440,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 480,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'js/meal-engine.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'images/market-flags.svg', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'js/app-config.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'js/app-runtime.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'js/diary-edit.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'js/food-assistant.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'js/food-core.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'js/food-library.js', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 520,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'js/site-search.js', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 560,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 600,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "offset": 640,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'server/.env.example', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 680,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'tools/build_site.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/international/test-markets.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'server/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'server/assistant.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'server/food-index.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'server/package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'server/test/service.test.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/baseline.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/fetch-sources.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/finish-ui.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/import_food_library.py', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 720,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": "warning: in the working copy of 'tools/refresh_release_search.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/run_food_build.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/site_scope.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/test-meal-view.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/test_publication.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/test_search_visibility.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/validate_site.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/import_menus.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/inspect_sources.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/make-distribution.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/menu_inspection.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/pages.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/prepare-publication.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/reconcile-files.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/release-inventory.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/render-finder.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/run-checks.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/test-food.cjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/product_release/test-image.cjs', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  {
+    "offset": 760,
+    "attempt": 0,
+    "exitCode": 0,
+    "output": ""
+  }
+]

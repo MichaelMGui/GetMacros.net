@@ -152,6 +152,8 @@ def release_routes():
     expansion=root/'tools/restaurant_release/expansion-payload.json'
     if expansion.exists():routes.update(c['route'] for c in json.loads(expansion.read_text(encoding='utf-8'))['chains'])
     routes.add('food-shelf.html')
+    product=root/'tools/product_release/pages.json'
+    if product.exists():routes.update(r['route'] for r in json.loads(product.read_text(encoding='utf-8')))
     return routes
 
 KEEP_ROOT_HTML = KEEP_ROOT_HTML | release_routes()

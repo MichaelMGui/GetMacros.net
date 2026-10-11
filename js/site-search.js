@@ -23,7 +23,8 @@
       function score(group){var best=ranked.find(function(item){return group.contains(item.hit);});return best?best.score:-1;}
       return searching?score(b)-score(a):0;
     });
-    sortedGroups.forEach(function(group){group.parentNode.insertBefore(group,document.querySelector('.search-results-actions'));});
+    var actions=document.querySelector('.search-results-actions');
+    if(actions)sortedGroups.forEach(function(group){actions.parentNode.insertBefore(group,actions);});
     groups.forEach(function(group){
       var live=0;
       [].slice.call(group.querySelectorAll('.search-hit')).forEach(function(hit){
@@ -39,7 +40,7 @@
     });
     startBlock.hidden=searching||expanded;
     libraryHeading.hidden=!searching&&!expanded;
-    status.textContent=searching?(matched?(matched>limit&&!expanded?'Top '+limit+' of ':'')+matched+' result'+(matched===1?'':'s')+' for “'+q.value.trim()+'”':'No results. Try “protein”, “Chipotle” or “calorie calculator”.'):(expanded?'Browse all '+hits.length+' resources':'Try a topic below, or choose a starting point.');
+    status.textContent=searching?(matched?(matched>limit&&!expanded?'Top '+limit+' of ':'')+matched+' result'+(matched===1?'':'s')+' for “'+q.value.trim()+'”':'No results. Try “protein”, “Chipotle” or “calorie calculator”.'):(expanded?'Browse '+matched+' resources for this market and general topics':'Try a topic below, or choose a starting point.');
     toggle.hidden=searching&&matched<=limit;
     toggle.setAttribute('aria-expanded',String(expanded));
     toggle.textContent=searching?(expanded?'Show top results':'Show all '+matched+' results'):(expanded?'Back to starting points':'Browse all topics');

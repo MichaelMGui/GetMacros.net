@@ -1,0 +1,7 @@
+/* Lazy source shards are loaded only on food-library and diary screens. */
+(function(){'use strict';const F=window.GetMacrosFood,cache=new Map();let ready;
+ async function json(url){const r=await fetch(url,{cache:'force-cache'});if(!r.ok)throw Error('Food data could not load. Try again when connected.');return r.json();}
+ async function load(){if(!ready)ready=Promise.all([json('/data/food-library/manifest.json'),json('/data/food-library/index.json'),json('/js/order-registry.json')]).then(([manifest,index,orders])=>{const restaurant=orders.records.map(F.restaurant);restaurant.forEach(r=>cache.set(r.id,r));index.push(...restaurant.map(r=>({id:r.id,name:r.name,type:r.type,category:r.category,market:r.market})));index.forEach(r=>r.search=F.text(r.name));return {manifest,index};}).catch(e=>{ready=null;throw e});return ready;}
+ async function get(id){if(cache.has(id))return cache.get(id);const {index}=await load();const item=index.find(r=>r.id===id);if(!item)throw Error('That food is unavailable. Search again.');const key='shard:'+item.shard;if(!cache.has(key))cache.set(key,json('/data/food-library/records/'+item.shard+'.json').then(rows=>{rows.forEach(r=>{r.sourceUrl=r.sourceUrl||'https://fdc.nal.usda.gov/food-details/'+r.sourceRef+'/nutrients';cache.set(r.id,r)});return rows;}).catch(e=>{cache.delete(key);throw e}));await cache.get(key);return cache.get(id);}
+ window.GetMacrosLibrary={load,get,async search(q,options){const {index}=await load();return F.search(index,q,options)}};
+})();

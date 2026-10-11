@@ -4,6 +4,8 @@ exclude:
   - design
   - docs
   - tools
+  - server
+  - music-platform
   - preview.stdout.log
   - preview.stderr.log
   - full26.txt

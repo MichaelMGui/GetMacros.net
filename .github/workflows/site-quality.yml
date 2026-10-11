@@ -33,6 +33,9 @@ jobs:
       - name: Test filtering, units and calculator formulas
         run: |
           node tools/test_macro_math.js
+          node tools/product_release/test-food.cjs
+          python3 tools/product_release/test-generators.py
+          node --test server/test/service.test.cjs
           node tools/test-companion-engine.cjs
           node tools/test-meal-view.cjs
           node tools/test-growth-tools.cjs

@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "GB": 337,
+    "AU": 15,
+    "MX": 93,
+    "NZ": 17,
+    "IE": 66,
+    "JP": 206
+  },
+  "newRecords": 734,
+  "scope": "Inspected source table snapshots; not independent lab measurement or full-menu availability audit."
+}

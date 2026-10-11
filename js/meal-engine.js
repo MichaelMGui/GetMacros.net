@@ -6,7 +6,7 @@ const complete=m=>['cal','p','c','fat'].every(k=>Number.isFinite(m[k]));
 const market=m=>m.market||m.country||'US';
 const key=m=>m.id||(market(m)==='US'?m.chain+'||'+m.name:market(m)+'||'+m.chain+'||'+m.name);
 function normalize(input={},meals=[]){
-const options={...facets,chain:[...new Set(meals.map(m=>m.chain))]};const s={market:['US','CA'].includes(input.market)?input.market:(meals[0]?market(meals[0]):'US'),sort:['match','calories','protein'].includes(input.sort)?input.sort:'match',complete:input.complete!==false};
+const options={...facets,chain:[...new Set(meals.map(m=>m.chain))]},markets=[...new Set(meals.map(market))];const s={market:markets.includes(input.market)?input.market:(meals[0]?market(meals[0]):'US'),sort:['match','calories','protein'].includes(input.sort)?input.sort:'match',complete:input.complete!==false};
 for(const [k,values] of Object.entries(options))s[k]=[...new Set((Array.isArray(input[k])?input[k]:[]).filter(v=>values.includes(v)))];
 for(const [k,[min,max]] of Object.entries(limits)){const value=input[k],n=Number(value);s[k]=value!==null&&value!==undefined&&value!==''&&Number.isFinite(n)&&n>=min&&n<=max?n:null;}
 return s;

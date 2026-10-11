@@ -1,0 +1,569 @@
+[
+  {
+    "slug": "raw-and-roasted-chicken",
+    "title": "Weighed raw or cooked?",
+    "subtitle": "Two USDA chicken profiles · each comparison uses 100 g",
+    "columns": [
+      [
+        "Raw, skinless breast",
+        {
+          "cal": 112,
+          "p": 22.5,
+          "c": 0,
+          "fat": 1.93,
+          "f": null,
+          "na": 65.8,
+          "sugar": null,
+          "sat": 0.349,
+          "chol": 72.7,
+          "calcium": 3.94,
+          "iron": 0.354,
+          "magnesium": 26.2,
+          "phosphorus": 215,
+          "potassium": 330,
+          "zinc": 0.654,
+          "selenium": null,
+          "vitaminC": null,
+          "thiamin": null,
+          "riboflavin": null,
+          "niacin": null,
+          "vitaminB6": null,
+          "folate": null,
+          "folateDFE": null,
+          "vitaminB12": null,
+          "vitaminA": null,
+          "vitaminD": null,
+          "vitaminE": null,
+          "vitaminK": null,
+          "monoFat": 0.369,
+          "polyFat": 0.296
+        }
+      ],
+      [
+        "Roasted breast, meat only",
+        {
+          "cal": 165,
+          "p": 31,
+          "c": 0,
+          "fat": 3.57,
+          "f": 0,
+          "na": 74,
+          "sugar": 0,
+          "sat": 1.01,
+          "chol": 85,
+          "calcium": 15,
+          "iron": 1.04,
+          "magnesium": 29,
+          "phosphorus": 228,
+          "potassium": 256,
+          "zinc": 1,
+          "selenium": 27.6,
+          "vitaminC": 0,
+          "thiamin": 0.07,
+          "riboflavin": 0.114,
+          "niacin": 13.7,
+          "vitaminB6": 0.6,
+          "folate": 4,
+          "folateDFE": 4,
+          "vitaminB12": 0.34,
+          "vitaminA": 6,
+          "vitaminD": 0.1,
+          "vitaminE": 0.27,
+          "vitaminK": 0.3,
+          "monoFat": 1.24,
+          "polyFat": 0.77
+        }
+      ]
+    ],
+    "note": "Different reference profiles, not a before-and-after test of the same chicken.",
+    "url": "https://getmacros.net/raw-vs-cooked-food-weight.html",
+    "sources": [
+      "fdc:2646170",
+      "fdc:171477"
+    ],
+    "asset": "raw-and-roasted-chicken.svg",
+    "rights": "Original GetMacros layout; factual source values. No third-party photos.",
+    "status": "Prepared; not posted externally"
+  },
+  {
+    "slug": "olive-oil-source-portions",
+    "title": "A small amount still counts.",
+    "subtitle": "Olive oil · source-supported household measures",
+    "columns": [
+      [
+        "1 teaspoon · 4.5 g",
+        {
+          "cal": 39.78,
+          "p": 0,
+          "c": 0,
+          "fat": 4.5,
+          "f": 0,
+          "na": 0.09,
+          "sugar": 0,
+          "sat": 0.621,
+          "chol": 0,
+          "calcium": 0.045,
+          "iron": 0.0252,
+          "magnesium": 0,
+          "phosphorus": 0,
+          "potassium": 0.045,
+          "zinc": 0,
+          "selenium": 0,
+          "vitaminC": 0,
+          "thiamin": 0,
+          "riboflavin": 0,
+          "niacin": 0,
+          "vitaminB6": 0,
+          "folate": 0,
+          "folateDFE": 0,
+          "vitaminB12": 0,
+          "vitaminA": 0,
+          "vitaminD": 0,
+          "vitaminE": 0.648,
+          "vitaminK": 2.709,
+          "monoFat": 3.2849999999999997,
+          "polyFat": 0.4725
+        }
+      ],
+      [
+        "1 tablespoon · 13.5 g",
+        {
+          "cal": 119.34,
+          "p": 0,
+          "c": 0,
+          "fat": 13.5,
+          "f": 0,
+          "na": 0.27,
+          "sugar": 0,
+          "sat": 1.8630000000000002,
+          "chol": 0,
+          "calcium": 0.135,
+          "iron": 0.07560000000000001,
+          "magnesium": 0,
+          "phosphorus": 0,
+          "potassium": 0.135,
+          "zinc": 0,
+          "selenium": 0,
+          "vitaminC": 0,
+          "thiamin": 0,
+          "riboflavin": 0,
+          "niacin": 0,
+          "vitaminB6": 0,
+          "folate": 0,
+          "folateDFE": 0,
+          "vitaminB12": 0,
+          "vitaminA": 0,
+          "vitaminD": 0,
+          "vitaminE": 1.9440000000000002,
+          "vitaminK": 8.127,
+          "monoFat": 9.855,
+          "polyFat": 1.4175
+        }
+      ]
+    ],
+    "note": "Use the amount you actually added. These gram weights belong to this source food.",
+    "url": "https://getmacros.net/food-library.html?food=fdc%3A171413",
+    "sources": [
+      "fdc:171413"
+    ],
+    "asset": "olive-oil-source-portions.svg",
+    "rights": "Original GetMacros layout; factual source values. No third-party photos.",
+    "status": "Prepared; not posted externally"
+  },
+  {
+    "slug": "dark-chocolate-portions",
+    "title": "Start with the portion.",
+    "subtitle": "USDA dark chocolate, 70–85% cacao reference profile",
+    "columns": [
+      [
+        "20 g portion",
+        {
+          "cal": 119.60000000000001,
+          "p": 1.558,
+          "c": 9.18,
+          "fat": 8.520000000000001,
+          "f": 2.18,
+          "na": 4,
+          "sugar": 4.800000000000001,
+          "sat": 4.9,
+          "chol": 0.6000000000000001,
+          "calcium": 14.600000000000001,
+          "iron": 2.3800000000000003,
+          "magnesium": 45.6,
+          "phosphorus": 61.6,
+          "potassium": 143,
+          "zinc": 0.662,
+          "selenium": 1.36,
+          "vitaminC": null,
+          "thiamin": 0.0068000000000000005,
+          "riboflavin": 0.015600000000000001,
+          "niacin": 0.21000000000000002,
+          "vitaminB6": 0.0076,
+          "folate": null,
+          "folateDFE": null,
+          "vitaminB12": 0.05600000000000001,
+          "vitaminA": 0.4,
+          "vitaminD": null,
+          "vitaminE": 0.118,
+          "vitaminK": 1.46,
+          "monoFat": 2.5600000000000005,
+          "polyFat": 0.252
+        }
+      ],
+      [
+        "40 g portion",
+        {
+          "cal": 239.20000000000002,
+          "p": 3.116,
+          "c": 18.36,
+          "fat": 17.040000000000003,
+          "f": 4.36,
+          "na": 8,
+          "sugar": 9.600000000000001,
+          "sat": 9.8,
+          "chol": 1.2000000000000002,
+          "calcium": 29.200000000000003,
+          "iron": 4.760000000000001,
+          "magnesium": 91.2,
+          "phosphorus": 123.2,
+          "potassium": 286,
+          "zinc": 1.324,
+          "selenium": 2.72,
+          "vitaminC": null,
+          "thiamin": 0.013600000000000001,
+          "riboflavin": 0.031200000000000002,
+          "niacin": 0.42000000000000004,
+          "vitaminB6": 0.0152,
+          "folate": null,
+          "folateDFE": null,
+          "vitaminB12": 0.11200000000000002,
+          "vitaminA": 0.8,
+          "vitaminD": null,
+          "vitaminE": 0.236,
+          "vitaminK": 2.92,
+          "monoFat": 5.120000000000001,
+          "polyFat": 0.504
+        }
+      ]
+    ],
+    "note": "A reference composition, not a claim that every brand uses this exact recipe.",
+    "url": "https://getmacros.net/food-library.html?food=fdc%3A170273",
+    "sources": [
+      "fdc:170273"
+    ],
+    "asset": "dark-chocolate-portions.svg",
+    "rights": "Original GetMacros layout; factual source values. No third-party photos.",
+    "status": "Prepared; not posted externally"
+  },
+  {
+    "slug": "subway-country-builds",
+    "title": "The country changes the build.",
+    "subtitle": "Two source-listed Subway 6-inch builds · distinct recipes and sizes",
+    "columns": [
+      [
+        "UK chicken breast · 198 g",
+        {
+          "id": "GB|subway|b4264d560fa0bb8a",
+          "chain": "Subway",
+          "restaurantId": "subway",
+          "restaurantMarketId": "GB|subway",
+          "name": "Subs — Chicken Breast",
+          "market": "GB",
+          "country": "GB",
+          "region": "GB",
+          "language": "en",
+          "serving": "1 listed 6-inch sub · 198 g",
+          "servingGrams": 198,
+          "category": "entree",
+          "meal": "main",
+          "size": "",
+          "diet": [],
+          "components": [
+            {
+              "item": "Onions",
+              "quantity": null
+            },
+            {
+              "item": "Cucumbers",
+              "quantity": null
+            },
+            {
+              "item": "Lettuce",
+              "quantity": null
+            },
+            {
+              "item": "Bread (variety not specified in this table)",
+              "quantity": null
+            }
+          ],
+          "cal": 340,
+          "p": 26,
+          "c": 42,
+          "fat": 6.8,
+          "f": 2.4,
+          "na": 720,
+          "sugar": 7,
+          "sat": 3.1,
+          "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+          "sourceDate": "2026-09",
+          "retrievedAt": "2026-10-11",
+          "checked": "2026-10-11",
+          "verificationStatus": "official-table-reviewed",
+          "sourcePage": 1,
+          "sourceHash": "e51f46cfd63f9b4172d1ee56e033f6144f28efa5d397c0c2a42b4b2c77b20406",
+          "nativeNutrients": {
+            "cal": 340,
+            "fat": 6.8,
+            "sat": 3.1,
+            "c": 42,
+            "sugar": 7,
+            "f": 2.4,
+            "p": 26,
+            "salt": 1.8,
+            "kJ": 1424
+          },
+          "nutrientBasis": "per named serving",
+          "units": {
+            "cal": "kcal",
+            "p": "g",
+            "c": "g",
+            "fat": "g",
+            "f": "g",
+            "na": "mg",
+            "sugar": "g",
+            "sat": "g"
+          },
+          "notes": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt.",
+          "conversions": [
+            {
+              "from": "salt",
+              "fromUnit": "g",
+              "to": "na",
+              "toUnit": "mg",
+              "formula": "salt (g) × 1000 ÷ 2.5",
+              "method": "salt-equivalent conversion; not source-reported sodium"
+            }
+          ],
+          "url": "/gb/en/restaurants/subway/",
+          "nutrientProvenance": {
+            "cal": {
+              "method": "official published serving",
+              "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+              "page": 1,
+              "edition": "2026-09",
+              "verifiedAt": "2026-10-11"
+            },
+            "p": {
+              "method": "official published serving",
+              "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+              "page": 1,
+              "edition": "2026-09",
+              "verifiedAt": "2026-10-11"
+            },
+            "c": {
+              "method": "official published serving",
+              "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+              "page": 1,
+              "edition": "2026-09",
+              "verifiedAt": "2026-10-11"
+            },
+            "fat": {
+              "method": "official published serving",
+              "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+              "page": 1,
+              "edition": "2026-09",
+              "verifiedAt": "2026-10-11"
+            },
+            "f": {
+              "method": "official published serving",
+              "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+              "page": 1,
+              "edition": "2026-09",
+              "verifiedAt": "2026-10-11"
+            },
+            "sugar": {
+              "method": "official published serving",
+              "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+              "page": 1,
+              "edition": "2026-09",
+              "verifiedAt": "2026-10-11"
+            },
+            "sat": {
+              "method": "official published serving",
+              "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+              "page": 1,
+              "edition": "2026-09",
+              "verifiedAt": "2026-10-11"
+            }
+          },
+          "macroComplete": true,
+          "t": [
+            "protein",
+            "light"
+          ],
+          "sourceVersion": "ff65368fef1e8ff8"
+        }
+      ],
+      [
+        "NZ chicken strips · 236 g",
+        {
+          "id": "NZ|subway|116ff4314b0bea4c",
+          "chain": "Subway",
+          "restaurantId": "subway",
+          "restaurantMarketId": "NZ|subway",
+          "name": "Chicken Strips",
+          "market": "NZ",
+          "country": "NZ",
+          "region": "NZ",
+          "language": "en",
+          "serving": "1 source 6-inch sub · 236 g",
+          "servingGrams": 236,
+          "category": "entree",
+          "meal": "main",
+          "size": "",
+          "diet": [],
+          "components": [
+            {
+              "item": "processed cheddar cheese",
+              "quantity": null
+            },
+            {
+              "item": "lettuce",
+              "quantity": null
+            },
+            {
+              "item": "tomato",
+              "quantity": null
+            },
+            {
+              "item": "cucumber",
+              "quantity": null
+            },
+            {
+              "item": "carrot",
+              "quantity": null
+            },
+            {
+              "item": "mayonnaise on wheat bread",
+              "quantity": null
+            }
+          ],
+          "cal": 336,
+          "p": 25,
+          "c": 40.6,
+          "fat": 8.1,
+          "f": 4.5,
+          "na": 764,
+          "sugar": 6.8,
+          "sat": 3.1,
+          "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+          "sourceDate": "2025-10",
+          "retrievedAt": "2026-10-11",
+          "checked": "2026-10-11",
+          "verificationStatus": "official-table-reviewed",
+          "sourcePage": 1,
+          "sourceHash": "b931072269660a7f937ec0c6872fa4a865757498dcfd55fd21c27a256c1da662",
+          "nativeNutrients": {
+            "cal": 336,
+            "p": 25,
+            "fat": 8.1,
+            "sat": 3.1,
+            "c": 40.6,
+            "sugar": 6.8,
+            "f": 4.5,
+            "na": 764,
+            "kJ": 1410
+          },
+          "nutrientBasis": "per named serving",
+          "units": {
+            "cal": "kcal",
+            "p": "g",
+            "c": "g",
+            "fat": "g",
+            "f": "g",
+            "na": "mg",
+            "sugar": "g",
+            "sat": "g"
+          },
+          "notes": "October 2025 New Zealand recipe snapshot, including the named bread, cheese, vegetables and sauce. Availability can change; custom builds are not equivalent to this recipe. Named recipe components are not full ingredient formulations.",
+          "conversions": [],
+          "url": "/nz/en/restaurants/subway/",
+          "nutrientProvenance": {
+            "cal": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            },
+            "p": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            },
+            "c": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            },
+            "fat": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            },
+            "f": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            },
+            "na": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            },
+            "sugar": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            },
+            "sat": {
+              "method": "official published serving",
+              "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf",
+              "page": 1,
+              "edition": "2025-10",
+              "verifiedAt": "2026-10-11"
+            }
+          },
+          "macroComplete": true,
+          "t": [
+            "protein",
+            "light"
+          ],
+          "sourceVersion": "aa6099e3fae039ce",
+          "ingredientDescription": "processed cheddar cheese, lettuce, tomato, cucumber, carrot, mayonnaise on wheat bread"
+        }
+      ]
+    ],
+    "note": "UK/ROI September 2026 and NZ October 2025 editions. Not an equal-weight comparison.",
+    "url": "https://getmacros.net/compare-menu-ingredients-worldwide.html?country1=GB&item1=GB%7Csubway%7Cb4264d560fa0bb8a&version1=ff65368fef1e8ff8&country2=NZ&item2=NZ%7Csubway%7C116ff4314b0bea4c&version2=aa6099e3fae039ce",
+    "sources": [
+      "GB|subway|b4264d560fa0bb8a",
+      "NZ|subway|116ff4314b0bea4c"
+    ],
+    "asset": "subway-country-builds.svg",
+    "rights": "Original GetMacros layout; factual source values. No third-party photos.",
+    "status": "Prepared; not posted externally"
+  }
+]

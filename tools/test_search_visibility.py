@@ -15,7 +15,7 @@ class Links(HTMLParser):
         if 'id' in attrs:self.ids.add(attrs['id'])
         if tag=='a' and 'href' in attrs:self.hrefs.append(attrs['href'])
 
-pages={p.relative_to(ROOT).as_posix():p.read_text(encoding='utf-8') for p in [*ROOT.glob('*.html'),*ROOT.glob('ca/en/**/index.html')]}
+pages={p.relative_to(ROOT).as_posix():p.read_text(encoding='utf-8') for p in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]}
 parsed={}
 for name,text in pages.items():
     assert 'search_term_string' not in text, name+' contains a search placeholder'

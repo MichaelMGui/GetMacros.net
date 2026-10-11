@@ -50,7 +50,7 @@
     const previous=new Map([...resultList.querySelectorAll('[data-meal-id]')].map(n=>[n.dataset.mealId,n.getBoundingClientRect()]));
     const results=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));
     root.querySelector('[data-surprise]').disabled=!results.length;
-    root.querySelector('.results-count').textContent=results.length+' '+(state.market==='CA'?'item':'meal')+(results.length===1?'':'s')+' match';
+    root.querySelector('.results-count').textContent=results.length+' '+(state.market==='US'?'meal':'item')+(results.length===1?'':'s')+' match';
     const retain=firstRender&&!saved.length&&[...resultList.querySelectorAll("[data-meal-id]")].map(n=>Number(n.dataset.mealId)).join(",")===results.slice(0,visible).map(m=>meals.indexOf(m)).join(",");firstRender=false;
     if(!retain)resultList.innerHTML=results.length?results.slice(0,visible).map(mealRow).join(''):'<section class="finder-empty"><span data-food-character="pear" data-character-size="100" aria-hidden="true"></span><h2>'+ (savedOnly?'No saved meals match.':'No meals match these limits.')+'</h2><p>'+ (savedOnly?'Save an order with the Save meal button, or return to all meals.':'Your limits are unchanged. Remove an active filter above or choose different limits. Incomplete records need known values for any nutrient you filter.')+'</p><button type="button" data-reset>Clear filters</button></section>';
     if(!results.length&&state.complete){const partial=E.results(meals,{...state,complete:false}).filter(m=>!savedOnly||saved.includes(key(m)));if(partial.length)resultList.innerHTML='<section class="finder-empty"><h2>Matching orders have missing macros.</h2><p>'+partial.length+' order'+(partial.length===1?' meets':'s meet')+' your selected limits, but calories, protein, carbs or fat are incomplete. Known values still satisfy each nutrient limit. Unknown values stay labelled.</p><button type="button" data-allow-incomplete>Show these orders</button><button class="quiet-button" type="button" data-reset>Clear filters</button></section>';}
@@ -109,7 +109,7 @@
     if(el.hasAttribute('data-clear-compare')){selected=[];updateTray();}
     if(el.hasAttribute('data-open-compare')){
       const pair=selected.map(i=>meals[i]);track('comparison_used');
-      root.querySelector('.comparison-output').innerHTML=GetMacrosOrderCore.comparisonTable(pair,expectedSnapshots)+'<div class="comparison-actions"><button type="button" class="btn" data-share-comparison>Share comparison</button><button type="button" data-print>Print comparison</button><a href="'+(state.market==='CA'?'/ca/en/tools/complete-order/#order-builder':'/compare-complete-restaurant-orders.html#order-builder')+'">Build an order</a></div><p data-comparison-status role="status"></p>';
+      root.querySelector('.comparison-output').innerHTML=GetMacrosOrderCore.comparisonTable(pair,expectedSnapshots)+'<div class="comparison-actions"><button type="button" class="btn" data-share-comparison>Share comparison</button><button type="button" data-print>Print comparison</button><a href="'+(state.market==='CA'?'/ca/en/tools/complete-order/#order-builder':'/compare-complete-restaurant-orders.html?market='+state.market+'#order-builder')+'">Build an order</a></div><p data-comparison-status role="status"></p>';
       compareDialog.showModal();
     }
     if(el.hasAttribute('data-close-compare'))compareDialog.close();

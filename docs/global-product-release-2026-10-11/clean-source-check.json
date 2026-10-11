@@ -1,0 +1,27 @@
+{
+  "source": "Export of the isolated publisher Git index; no untracked inputs",
+  "buildExitCode": 0,
+  "publicDifferences": [],
+  "equivalentSerializationAndStamps": [
+    {
+      "path": "index.html",
+      "reason": "Only content-hash asset stamps differ"
+    },
+    {
+      "path": "restaurant-meal-finder.html",
+      "reason": "Only content-hash asset stamps differ"
+    },
+    {
+      "path": "search.html",
+      "reason": "Only content-hash asset stamps differ"
+    },
+    {
+      "path": "sw.js",
+      "reason": "Only content-hash cache version differs"
+    },
+    {
+      "path": "js/meal-data.js",
+      "reason": "Serialization differs; every evaluated meal field and array order matches"
+    }
+  ]
+}

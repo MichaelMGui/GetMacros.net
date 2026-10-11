@@ -1,0 +1,62 @@
+[
+  {
+    "theme": "light",
+    "width": 390,
+    "warmFoodSearchMs": 3,
+    "passed": [
+      "existing page families",
+      "empty/fuzzy search",
+      "country filtering and reset",
+      "local order builder",
+      "ingredient link reload and stale source",
+      "local photo preview; no upload while disabled",
+      "no runtime errors"
+    ],
+    "keyboardInspection": "Native controls and Escape tested; not full screen-reader certification"
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "warmFoodSearchMs": 2.799999998882413,
+    "passed": [
+      "existing page families",
+      "empty/fuzzy search",
+      "country filtering and reset",
+      "local order builder",
+      "ingredient link reload and stale source",
+      "local photo preview; no upload while disabled",
+      "no runtime errors"
+    ],
+    "keyboardInspection": "Native controls and Escape tested; not full screen-reader certification"
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "warmFoodSearchMs": 2.900000000372529,
+    "passed": [
+      "existing page families",
+      "empty/fuzzy search",
+      "country filtering and reset",
+      "local order builder",
+      "ingredient link reload and stale source",
+      "local photo preview; no upload while disabled",
+      "no runtime errors"
+    ],
+    "keyboardInspection": "Native controls and Escape tested; not full screen-reader certification"
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "warmFoodSearchMs": 3.099999999627471,
+    "passed": [
+      "existing page families",
+      "empty/fuzzy search",
+      "country filtering and reset",
+      "local order builder",
+      "ingredient link reload and stale source",
+      "local photo preview; no upload while disabled",
+      "no runtime errors"
+    ],
+    "keyboardInspection": "Native controls and Escape tested; not full screen-reader certification"
+  }
+]

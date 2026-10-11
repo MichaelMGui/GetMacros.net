@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import posixpath
 import re
 import sys
@@ -112,7 +113,7 @@ def local_target(current: str, href: str) -> str | None:
     target = posixpath.normpath(target)
     if target in (".", ""):
         target = "index.html"
-    if clean.endswith("/"):
+    if clean.endswith("/") and target != 'index.html':
         target = posixpath.join(target, "index.html")
     return target
 
@@ -132,11 +133,12 @@ def main() -> int:
     # These contain working previews and browser evidence, not public pages.
     # They are .html but they are not site pages -- they carry no description,
     # canonical or nav -- so the site contract does not apply to them.
-    html_paths = sorted(
-        p.relative_to(ROOT).as_posix()
-        for p in ROOT.rglob("*.html")
-        if not p.relative_to(ROOT).as_posix().startswith(("design/", "docs/", "tools/"))
-    )
+    excluded={'.git','node_modules','design','docs','tools','server','music-platform'}
+    all_files=set()
+    for folder,dirs,files in os.walk(ROOT):
+        dirs[:]=[d for d in dirs if d not in {'.git','node_modules'} and not (Path(folder)==ROOT and d in excluded)]
+        all_files.update((Path(folder)/f).relative_to(ROOT).as_posix() for f in files)
+    html_paths = sorted(p for p in all_files if p.endswith('.html'))
     pages: dict[str, tuple[str, PageParser]] = {}
     titles: dict[str, list[str]] = {}
     descriptions_seen: dict[str, list[str]] = {}
@@ -199,7 +201,7 @@ def main() -> int:
                 errors.append(f"{path}: expected one Open Graph title")
             elif og_titles[0].get("content", "") != title:
                 errors.append(f"{path}: Open Graph title must match page title")
-            if og_descriptions != [descriptions[0]]:
+            if not descriptions or og_descriptions != [descriptions[0]]:
                 errors.append(f"{path}: Open Graph description must match meta description")
             if og_urls != [canonical_for(path)]:
                 errors.append(f"{path}: Open Graph URL must match canonical")
@@ -207,7 +209,7 @@ def main() -> int:
                 errors.append(f"{path}: expected one Twitter card declaration")
             if twitter_titles != [title]:
                 errors.append(f"{path}: Twitter title must match page title")
-            if twitter_descriptions != [descriptions[0]]:
+            if not descriptions or twitter_descriptions != [descriptions[0]]:
                 errors.append(f"{path}: Twitter description must match meta description")
             adsense_accounts = [m.get("content", "") for m in parser.metas if m.get("name", "").lower() == "google-adsense-account"]
             if adsense_accounts != [PUBLISHER]:
@@ -221,11 +223,14 @@ def main() -> int:
                 errors.append(f"{path}: ad serving is paused but a loader remains")
             elif not ads_paused and (len(loaders) != 1 or not re.search(r'\basync\b', loaders[0]) or 'crossorigin="anonymous"' not in loaders[0]):
                 errors.append(f"{path}: expected one async AdSense loader in head with anonymous crossorigin")
+            localized=re.match(r'^(ca|mx|gb|ie|au|nz|jp)/en/',path)
+            market=localized[1].upper() if localized else None
+            prefix='/'+localized[1]+'/en/' if localized else ''
             required_nav = (
-                ("/ca/en/find-a-meal/" if path.startswith('ca/en/') else "restaurant-meal-finder.html", "Find a meal"),
-                ("/ca/en/restaurants/" if path.startswith('ca/en/') else "restaurant-meal-guides.html", "All restaurants"),
-                ("calculators.html?market=CA" if path.startswith('ca/en/') else "calculators.html", "Macro calculator"),
-                ("articles.html?market=CA" if path.startswith('ca/en/') else "articles.html", "All guides"),
+                (prefix+"find-a-meal/" if market else "restaurant-meal-finder.html", "Find a meal"),
+                (prefix+"restaurants/" if market else "restaurant-meal-guides.html", "All restaurants"),
+                ("calculators.html?market="+market if market else "calculators.html", "Macro calculator"),
+                ("articles.html?market="+market if market else "articles.html", "All guides"),
             )
             for nav_href, nav_label in required_nav:
                 pattern = rf'<a\b[^>]*href=["\']/?{re.escape(nav_href.lstrip("/"))}["\'][^>]*>(.*?)</a>'
@@ -291,7 +296,6 @@ def main() -> int:
         for path in sorted(root_html - KEEP_ROOT_HTML):
             errors.append(f"focused allowlist: unexpected HTML page {path}")
 
-    all_files = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if p.is_file()}
     for path, (_, parser) in pages.items():
         for href in parser.links:
             target = local_target(path, href)

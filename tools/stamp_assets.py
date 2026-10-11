@@ -55,7 +55,7 @@ def main():
         return f'href="{match.group("prefix")}{match.group("path")}?v={version}#{match.group("symbol")}"'
 
     design_prefix = os.path.normcase("design" + os.sep)
-    pages = sorted(glob.glob("*.html")) + sorted(glob.glob("ca/en/**/index.html",recursive=True)) + [
+    pages = sorted(glob.glob("*.html")) + sorted(glob.glob("*/en/**/index.html",recursive=True)) + [
         p for p in sorted(glob.glob("*/*.html"))
         if not os.path.normcase(p).startswith(design_prefix)
     ]
@@ -66,6 +66,14 @@ def main():
             open(page, "w", encoding="utf-8").write(out)
             changed += 1
 
+    # A content-addressed app shell prevents stale arithmetic/UI after a release.
+    if os.path.exists('sw.js'):
+        app_files=['food-diary.html','food-library.html','offline.html','site.webmanifest','js/order-registry.json','data/food-library/manifest.json','data/food-library/index.json']
+        app_files += sorted(glob.glob('js/*.js'))+sorted(glob.glob('css/*.css'))
+        fingerprint=hashlib.sha256(b''.join(open(p,'rb').read().replace(b'\r\n',b'\n') for p in app_files if os.path.isfile(p))).hexdigest()[:16]
+        sw=open('sw.js',encoding='utf-8').read()
+        sw=re.sub(r"const VERSION='[^']+'", "const VERSION='gm-food-app-"+fingerprint+"'",sw,count=1)
+        open('sw.js','w',encoding='utf-8').write(sw)
     for path in sorted(missing):
         print(f"  WARNING linked asset does not exist: {path}")
     print(f"asset versions stamped from file contents on {changed} page(s)")

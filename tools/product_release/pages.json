@@ -1,0 +1,11 @@
+[
+ {"route":"food-library.html","kind":"library","indexable":true},
+ {"route":"food-diary.html","kind":"private-app","indexable":false},
+ {"route":"compare-menu-ingredients-worldwide.html","kind":"comparison","indexable":true},
+ {"route":"world-restaurant-menus.html","kind":"directory","indexable":true},
+ {"route":"food-library-sources.html","kind":"methodology","indexable":true},
+ {"route":"raw-vs-cooked-food-weight.html","kind":"guide","indexable":true},
+ {"route":"diet-patterns-evidence.html","kind":"guide","indexable":true},
+ {"route":"read-and-watch.html","kind":"editorial","indexable":true},
+ {"route":"offline.html","kind":"offline","indexable":false}
+]
