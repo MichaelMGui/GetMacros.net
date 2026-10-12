@@ -1,7 +1,8 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const E=require('../../js/meal-engine.js'),C=require('../../js/order-tools-core.js');
 const ca=JSON.parse(fs.readFileSync('js/canada-meals.json')).records,registry=JSON.parse(fs.readFileSync('js/order-registry.json')).records;
-assert.equal(ca.length,74);assert.equal(new Set(ca.map(E.key)).size,ca.length);
+const additionalCanadian=JSON.parse(fs.readFileSync('tools/master_release/restaurant_records.json')).records;
+assert.equal(ca.length,74+additionalCanadian.length);assert.equal(new Set(ca.map(E.key)).size,ca.length);
 const publishedMarkets=JSON.parse(fs.readFileSync("js/order-registry.json")).markets;
 for(const r of registry){assert(publishedMarkets.includes(r.country));assert.equal(r.country,r.market);assert(r.restaurantMarketId.startsWith(r.country+'|'));assert.equal(r.nutrientBasis,'per named serving');assert(r.verificationStatus);}
 for(const r of ca){assert.equal(r.country,'CA');assert.equal(r.market,'CA');assert(r.source.startsWith('https://'));assert(r.serving&&r.checked&&r.retrievedAt);assert.equal(r.units.na,'mg');assert.equal(r.units.cal,'kcal');assert.deepEqual(r.conversions,[]);for(const k of Object.keys(C.fields))assert(r[k]===null||C.finite(r[k]));if(r.sugar!==null&&r.c!==null)assert(r.sugar<=r.c,`${r.id}: sugars exceed carbs`);}

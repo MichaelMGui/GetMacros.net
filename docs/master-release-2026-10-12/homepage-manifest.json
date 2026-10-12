@@ -1,0 +1,386 @@
+[
+  {
+    "market": "US",
+    "route": "/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "Chick-fil-A||Grilled Chicken Sandwich",
+        "chain": "Chick-fil-A",
+        "name": "Grilled Chicken Sandwich",
+        "market": "US",
+        "cal": 390,
+        "p": 28,
+        "serving": "206 g · published serving",
+        "source": "https://www.chick-fil-a.com/nutrition-allergens"
+      },
+      {
+        "id": null,
+        "chain": "Chipotle",
+        "name": "High Protein-High Fiber Bowl",
+        "market": "US",
+        "cal": 540,
+        "p": 46,
+        "serving": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine",
+        "source": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      },
+      {
+        "id": null,
+        "chain": "CAVA",
+        "name": "Greek Salad bowl",
+        "market": "US",
+        "cal": 585,
+        "p": 37,
+        "serving": "1 standard curated bowl, including its standard dips, toppings and dressing",
+        "source": "https://assets.ctfassets.net/kugm9fp9ib18/3rkBCBV2gIGMu78AnqigQk/26f1d223147700d1c266d358b3678d3b/CAVA-Reg-GID-0425-Nutri_Allerg.pdf"
+      },
+      {
+        "id": null,
+        "chain": "Panda Express",
+        "name": "Grilled Teriyaki Chicken",
+        "market": "US",
+        "cal": 280,
+        "p": 38,
+        "serving": "6.1 oz chicken entree",
+        "source": "https://www.pandaexpress.com/nutritioninformation"
+      }
+    ],
+    "chainCount": 25
+  },
+  {
+    "market": "CA",
+    "route": "/ca/en/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "CA|tim-hortons|egg-cheese-english-muffin",
+        "chain": "Tim Hortons",
+        "name": "Egg & Cheese English Muffin",
+        "market": "CA",
+        "cal": 270.0,
+        "p": 14.0,
+        "serving": "1 listed sandwich or wrap",
+        "source": "https://cdn.sanity.io/files/czqk28jt/prod_th_ca/147e592c99c865b50aca61832fa8ce3975cb0da5.pdf"
+      },
+      {
+        "id": "CA|harvey-s|grilled-chicken-sandwich",
+        "chain": "Harvey’s",
+        "name": "Grilled Chicken Sandwich",
+        "market": "CA",
+        "cal": 270,
+        "p": 28,
+        "serving": "1 listed item, 169 g",
+        "source": "https://www.harveys.ca/en/nutrition.html"
+      },
+      {
+        "id": "CA|a-w-canada|teen-burger",
+        "chain": "A&W Canada",
+        "name": "Teen Burger™",
+        "market": "CA",
+        "cal": 500.0,
+        "p": 27.0,
+        "serving": "1 standard listed item · 250g",
+        "source": "https://web.aw.ca/en/our-menu/burgers/teen-burger"
+      },
+      {
+        "id": "CA|subway|e75bc85ca583ebdf",
+        "chain": "Subway",
+        "name": "6\" Steak Subs — Steak'n Bacon",
+        "market": "CA",
+        "cal": 600.0,
+        "p": 31.0,
+        "serving": "1 6\" steak subs · 257 g",
+        "source": "https://media.subway.com/dam/urn:aaid:aem:c0ee4b37-9376-42de-b2d6-2a3ffaadecb1/original/as/CAN_Nutrition_ENG_6_11_26.pdf"
+      }
+    ],
+    "chainCount": 9
+  },
+  {
+    "market": "MX",
+    "route": "/mx/en/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "MX|subway|584038599a5f7fe6",
+        "chain": "Subway",
+        "name": "6-inch sub — Costillas Holy Moly Guacamoli",
+        "market": "MX",
+        "cal": 660.0,
+        "p": 23.0,
+        "serving": "1 6-inch sub · 279 g",
+        "source": "https://www.subway.com/v1v2/assets/es-mx/nutrition/documents/mexico-nutrition-112025-eng.pdf"
+      },
+      {
+        "id": "MX|subway|1e7f71b642759cf5",
+        "chain": "Subway",
+        "name": "6-inch sub — Crunchy Steak Bacon",
+        "market": "MX",
+        "cal": 550.0,
+        "p": 30.0,
+        "serving": "1 6-inch sub · 235 g",
+        "source": "https://www.subway.com/v1v2/assets/es-mx/nutrition/documents/mexico-nutrition-112025-eng.pdf"
+      },
+      {
+        "id": "MX|subway|0640c9dcc7393e96",
+        "chain": "Subway",
+        "name": "6-inch sub — American Teriyaki",
+        "market": "MX",
+        "cal": 470.0,
+        "p": 24.0,
+        "serving": "1 6-inch sub · 272 g",
+        "source": "https://www.subway.com/v1v2/assets/es-mx/nutrition/documents/mexico-nutrition-112025-eng.pdf"
+      },
+      {
+        "id": "MX|subway|c84085e802a94a60",
+        "chain": "Subway",
+        "name": "6-inch sub — Oh My Boneless!",
+        "market": "MX",
+        "cal": 550.0,
+        "p": 27.0,
+        "serving": "1 6-inch sub · 233 g",
+        "source": "https://www.subway.com/v1v2/assets/es-mx/nutrition/documents/mexico-nutrition-112025-eng.pdf"
+      }
+    ],
+    "chainCount": 1
+  },
+  {
+    "market": "GB",
+    "route": "/gb/en/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "GB|greggs|933a4742355cd8a7",
+        "chain": "Greggs",
+        "name": "Bacon & Lorne Breakfast Baguette",
+        "market": "GB",
+        "cal": 607.0,
+        "p": 33.0,
+        "serving": "1 listed portion · source size 221.5 g/ml",
+        "source": "https://a.storyblok.com/f/94904/x/7dd8489dab/nutritional-information.pdf"
+      },
+      {
+        "id": "GB|subway|31472f57eea7cfd2",
+        "chain": "Subway",
+        "name": "Subs — Bacon",
+        "market": "GB",
+        "cal": 306.0,
+        "p": 16.0,
+        "serving": "1 listed 6-inch sub · 100 g",
+        "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf"
+      },
+      {
+        "id": "GB|greggs|eafb6b9ae02e5e53",
+        "chain": "Greggs",
+        "name": "6 Mini Sausage Rolls",
+        "market": "GB",
+        "cal": 469.0,
+        "p": 13.0,
+        "serving": "1 listed portion · source size 146.1 g/ml",
+        "source": "https://a.storyblok.com/f/94904/x/7dd8489dab/nutritional-information.pdf"
+      },
+      {
+        "id": "GB|greggs|91f3326008108321",
+        "chain": "Greggs",
+        "name": "All Butter Croissant",
+        "market": "GB",
+        "cal": 292.0,
+        "p": 7.1,
+        "serving": "1 listed portion · source size 79 g/ml",
+        "source": "https://a.storyblok.com/f/94904/x/7dd8489dab/nutritional-information.pdf"
+      }
+    ],
+    "chainCount": 2
+  },
+  {
+    "market": "IE",
+    "route": "/ie/en/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "IE|subway|31472f57eea7cfd2",
+        "chain": "Subway",
+        "name": "Subs — Bacon",
+        "market": "IE",
+        "cal": 306.0,
+        "p": 16.0,
+        "serving": "1 listed 6-inch sub · 100 g",
+        "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf"
+      },
+      {
+        "id": "IE|subway|47dfe4a6bcf9ea4f",
+        "chain": "Subway",
+        "name": "Subs — Poached Egg and Cheese",
+        "market": "IE",
+        "cal": 294.0,
+        "p": 16.0,
+        "serving": "1 listed 6-inch sub · 132 g",
+        "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf"
+      },
+      {
+        "id": "IE|subway|a669d06111619a86",
+        "chain": "Subway",
+        "name": "Subs — Lincolnshire Sausage",
+        "market": "IE",
+        "cal": 353.0,
+        "p": 16.0,
+        "serving": "1 listed 6-inch sub · 132 g",
+        "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf"
+      },
+      {
+        "id": "IE|subway|d1c9c9528c537760",
+        "chain": "Subway",
+        "name": "Subs — Lincolnshire Sausage and Bacon",
+        "market": "IE",
+        "cal": 446.0,
+        "p": 22.0,
+        "serving": "1 listed 6-inch sub · 167 g",
+        "source": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf"
+      }
+    ],
+    "chainCount": 1
+  },
+  {
+    "market": "AU",
+    "route": "/au/en/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "AU|guzman-y-gomez|882fab3b92703568",
+        "chain": "Guzman y Gomez",
+        "name": "Burrito — Mild Grilled Chicken",
+        "market": "AU",
+        "cal": 773.0,
+        "p": 48.3,
+        "serving": "1 standard mild burrito · 480 g",
+        "source": "https://www.guzmanygomez.com.au/wp-content/uploads/2026/03/260305_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf"
+      },
+      {
+        "id": "AU|guzman-y-gomez|7677fb896aa70853",
+        "chain": "Guzman y Gomez",
+        "name": "Burrito — Mild Ground Beef",
+        "market": "AU",
+        "cal": 828.0,
+        "p": 36.7,
+        "serving": "1 standard mild burrito · 480 g",
+        "source": "https://www.guzmanygomez.com.au/wp-content/uploads/2026/03/260305_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf"
+      },
+      {
+        "id": "AU|guzman-y-gomez|29b88792697c09c0",
+        "chain": "Guzman y Gomez",
+        "name": "Burrito — Mild Pulled Pork",
+        "market": "AU",
+        "cal": 759.0,
+        "p": 42.1,
+        "serving": "1 standard mild burrito · 480 g",
+        "source": "https://www.guzmanygomez.com.au/wp-content/uploads/2026/03/260305_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf"
+      },
+      {
+        "id": "AU|guzman-y-gomez|b87b716929f34b3f",
+        "chain": "Guzman y Gomez",
+        "name": "Burrito — Mild Pulled Shiitake Mushroom",
+        "market": "AU",
+        "cal": 899.0,
+        "p": 32.3,
+        "serving": "1 standard mild burrito · 480 g",
+        "source": "https://www.guzmanygomez.com.au/wp-content/uploads/2026/03/260305_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf"
+      }
+    ],
+    "chainCount": 1
+  },
+  {
+    "market": "NZ",
+    "route": "/nz/en/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "NZ|subway|9191d0ab6cb2bbc8",
+        "chain": "Subway",
+        "name": "BBQ Southern Style Chicken",
+        "market": "NZ",
+        "cal": 456.0,
+        "p": 20.8,
+        "serving": "1 source 6-inch sub · 229 g",
+        "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf"
+      },
+      {
+        "id": "NZ|subway|37c448ada5c4f0f6",
+        "chain": "Subway",
+        "name": "Chicken & Bacon Ranch",
+        "market": "NZ",
+        "cal": 422.0,
+        "p": 26.2,
+        "serving": "1 source 6-inch sub · 242 g",
+        "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf"
+      },
+      {
+        "id": "NZ|subway|57c178d6928037e7",
+        "chain": "Subway",
+        "name": "Chicken Classic",
+        "market": "NZ",
+        "cal": 481.0,
+        "p": 22.2,
+        "serving": "1 source 6-inch sub · 248 g",
+        "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf"
+      },
+      {
+        "id": "NZ|subway|116ff4314b0bea4c",
+        "chain": "Subway",
+        "name": "Chicken Strips",
+        "market": "NZ",
+        "cal": 336.0,
+        "p": 25.0,
+        "serving": "1 source 6-inch sub · 236 g",
+        "source": "https://www.subway.com/en-nz/-/media/New_Zealand/Documents/Nutritionals/NZ-Nutritional-Summary.pdf"
+      }
+    ],
+    "chainCount": 1
+  },
+  {
+    "market": "JP",
+    "route": "/jp/en/",
+    "template": "shared-market-v1",
+    "featured": [
+      {
+        "id": "JP|mcdonald-s-japan|b79879adf4b5bc96",
+        "chain": "McDonald’s Japan",
+        "name": "てりやきチキンフィレオ",
+        "market": "JP",
+        "cal": 496.0,
+        "p": 20.1,
+        "serving": "1 source-listed item / named size",
+        "source": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/"
+      },
+      {
+        "id": "JP|mcdonald-s-japan|01235fb09481bb19",
+        "chain": "McDonald’s Japan",
+        "name": "えびフィレオ®",
+        "market": "JP",
+        "cal": 408.0,
+        "p": 11.4,
+        "serving": "1 source-listed item / named size",
+        "source": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/"
+      },
+      {
+        "id": "JP|mcdonald-s-japan|3ed51954c7d83ada",
+        "chain": "McDonald’s Japan",
+        "name": "てりやきマックバーガー",
+        "market": "JP",
+        "cal": 485.0,
+        "p": 14.2,
+        "serving": "1 source-listed item / named size",
+        "source": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/"
+      },
+      {
+        "id": "JP|mcdonald-s-japan|47263b6ced4f1730",
+        "chain": "McDonald’s Japan",
+        "name": "エグチ(エッグチーズバーガー)",
+        "market": "JP",
+        "cal": 390.0,
+        "p": 22.4,
+        "serving": "1 source-listed item / named size",
+        "source": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/"
+      }
+    ],
+    "chainCount": 1
+  }
+]

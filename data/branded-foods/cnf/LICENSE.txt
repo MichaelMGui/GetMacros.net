@@ -1,0 +1,16 @@
+Contains information licensed under the Open Government Licence – Canada.
+Canadian Nutrient File, Health Canada, 2026.
+
+Licence:
+https://open.canada.ca/en/open-government-licence-canada
+Official source and licence declaration:
+https://open.canada.ca/data/en/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109
+
+GetMacros publishes a normalized, source-linked selection of the 2026 reference
+file. This is a food-composition reference, not a current Canadian grocery label
+database. Do not imply Government of Canada endorsement. The edition contains
+mixed analytical, label, imputed and calculated nutrient values; the original
+per-nutrient source descriptions and dates remain attached to each profile.
+
+2026 measure-weight conversions already express gram weights. They must not be
+multiplied by 100 as if they were the previous 2015 conversion factors.

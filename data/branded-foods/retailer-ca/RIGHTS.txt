@@ -1,0 +1,15 @@
+GetMacros factual curation of four nutrition tables on Costco Canada's official
+product pages. This source partition is separate from USDA CC0 and Canadian
+Nutrient File Open Government Licence data.
+
+Source pages, product images, artwork, trademarks and other third-party material
+are not licensed or re-published here. GetMacros does not claim retailer permission
+to copy a complete proprietary catalogue. Only the selected factual nutrition,
+serving, product identity and ingredient information needed for food logging is
+transcribed with source links. No product imagery, marketing prose or reviews are
+used. No endorsement, partnership, exact current packaging, local availability,
+allergen guarantee, inventory or unpublished barcode is implied.
+
+The supplier-labelled source figures may change. Confirm the physical package
+when accuracy for the item in hand matters. Source inconsistencies are retained
+as explicit limitations rather than silently repaired.

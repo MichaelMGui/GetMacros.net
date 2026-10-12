@@ -1,0 +1,162 @@
+{
+  "counts": {
+    "total": 282,
+    "byChain": {
+      "Subway": 85,
+      "Domino’s": 46,
+      "Mary Brown’s": 48,
+      "Booster Juice": 48,
+      "Pizza Pizza": 16,
+      "Pizza Nova": 39
+    },
+    "completeMacros": 243,
+    "calculatedOrders": 3,
+    "caloriesOnly": 39
+  },
+  "issues": [
+    {
+      "chain": "Mary Brown’s",
+      "name": "Fries (Large)",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "Taters (Large)",
+      "reason": "Published fat exceeds source serving mass; no correction guessed",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "Mashed Potatoes (Large)",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "Coleslaw (Large)",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "Gravy (Large)",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "4 PC: Thigh, Drum, Wing, and Side Breast",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "5 PC: Thigh, Drum, Wing, 2 Side Breast",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "5 PC: 2 Thighs, Drum, Wing, and Side Breast",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "Fan Favorite 6PC: 2 Thighs, Drum, 2 Wing, and Side",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "B9 rPeCas: t2 Thighs, 2 Drum, 2 Wing, 2 Side Breast, Centre",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "13 PC: 3 Thigh, 3 Drum, 3 Wing, 3 Side Breast, Centre",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "18 PC: 4 Thigh, 4 Drum, 4 Wing, 4 Side Breast, 2 Centre",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "27 PC: 6 Thigh, 6 Drum, 6 Wing, 6 Side Breast, 3 Centre",
+      "reason": "Multi-serving order denominator unresolved",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "3 PC: Spicy Chicken Tenders",
+      "reason": "Unusually high source sodium; held for clarification",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Mary Brown’s",
+      "name": "5 PC: Spicy Chicken Tenders",
+      "reason": "Unusually high source sodium; held for clarification",
+      "sourcePage": 1
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Pepperoni Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 35.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Meat Supreme Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 45.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Buffalo Chicken Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 35.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Classic Super Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 35.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Sausage Mushroom Melt Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 35.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Classic Cheese Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 25.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Garden Veggie Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 25.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Mediterranean Vegetarian Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 35.0
+    },
+    {
+      "chain": "Pizza Pizza",
+      "name": "Pesto Amore Pizza",
+      "reason": "Source saturated-fat text exceeds total fat; held as unknown, not decimal-corrected",
+      "rawSaturatedFat": 35.0
+    }
+  ]
+}

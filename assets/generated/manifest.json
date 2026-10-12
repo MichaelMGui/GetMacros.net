@@ -1,0 +1,297 @@
+{
+  "js/order-registry.json": {
+    "url": "/assets/generated/js-order-registry-e22e1e2fced3.json",
+    "sourceSha256": "e22e1e2fced326719285f1d30fdead59a3b1c9ef656ed7418e8caf29c098ba83",
+    "assetSha256": "e22e1e2fced326719285f1d30fdead59a3b1c9ef656ed7418e8caf29c098ba83"
+  },
+  "js/img-fallback.js": {
+    "url": "/assets/generated/js-img-fallback-d4e0a0201ceb.js",
+    "sourceSha256": "d4e0a0201ceb165e2018524bc56818533f57c6be63d5aa47e5adb4913d486016",
+    "assetSha256": "d4e0a0201ceb165e2018524bc56818533f57c6be63d5aa47e5adb4913d486016"
+  },
+  "css/publication.css": {
+    "url": "/assets/generated/css-publication-ce9ae560af55.css",
+    "sourceSha256": "ef2abf5a99a8bfb7367ae390a7dd876bbce9553338514786c96b750214778210",
+    "assetSha256": "ce9ae560af5515552010870c95dd8a4a4cc84640db986d859ac61dd8098ecbdb"
+  },
+  "css/markets.css": {
+    "url": "/assets/generated/css-markets-1d3ff75b86b4.css",
+    "sourceSha256": "1d3ff75b86b46838e04ea83bce837801d04e2cc9ce16baa47179fca7de2461e4",
+    "assetSha256": "1d3ff75b86b46838e04ea83bce837801d04e2cc9ce16baa47179fca7de2461e4"
+  },
+  "js/market-definitions.js": {
+    "url": "/assets/generated/js-market-definitions-1528b1e7412e.js",
+    "sourceSha256": "1528b1e7412e05b8c3c7f75f8f95d77bdee439c05b32c8a14f36312293795e60",
+    "assetSha256": "1528b1e7412e05b8c3c7f75f8f95d77bdee439c05b32c8a14f36312293795e60"
+  },
+  "js/markets.js": {
+    "url": "/assets/generated/js-markets-10f60a3a2679.js",
+    "sourceSha256": "10f60a3a26798ba9461763389569cae2e0b3c743bb7f644bedd837b9c56f39ad",
+    "assetSha256": "10f60a3a26798ba9461763389569cae2e0b3c743bb7f644bedd837b9c56f39ad"
+  },
+  "js/unified-v7.js": {
+    "url": "/assets/generated/js-unified-v7-9dd42c9d6c7f.js",
+    "sourceSha256": "9dd42c9d6c7fe6d0c2eefcd6f50aa060c07a33aebf500089f81f042b6d5334e4",
+    "assetSha256": "9dd42c9d6c7fe6d0c2eefcd6f50aa060c07a33aebf500089f81f042b6d5334e4"
+  },
+  "js/product-events.js": {
+    "url": "/assets/generated/js-product-events-13af0a0b2006.js",
+    "sourceSha256": "13af0a0b20063593129989fb350d5d4b6de896b22d340148194b197b12c44d4c",
+    "assetSha256": "13af0a0b20063593129989fb350d5d4b6de896b22d340148194b197b12c44d4c"
+  },
+  "js/food-characters.js": {
+    "url": "/assets/generated/js-food-characters-8b7759a10f84.js",
+    "sourceSha256": "8b7759a10f84fe95409a53efa65f8318afb844a2ffce635bb263ab6053f905ae",
+    "assetSha256": "8b7759a10f84fe95409a53efa65f8318afb844a2ffce635bb263ab6053f905ae"
+  },
+  "js/food-experience.js": {
+    "url": "/assets/generated/js-food-experience-1db0f33a9bc5.js",
+    "sourceSha256": "1db0f33a9bc57adae7848b2f833a416735f178464665157b26b97a953d673278",
+    "assetSha256": "1db0f33a9bc57adae7848b2f833a416735f178464665157b26b97a953d673278"
+  },
+  "js/ad-placements.js": {
+    "url": "/assets/generated/js-ad-placements-988d90e3d1b1.js",
+    "sourceSha256": "988d90e3d1b1b45c600909fe26d329967ff9d4b3325e980cbb04a36fef186a79",
+    "assetSha256": "988d90e3d1b1b45c600909fe26d329967ff9d4b3325e980cbb04a36fef186a79"
+  },
+  "css/food-shelf.css": {
+    "url": "/assets/generated/css-food-shelf-94a22eca4f88.css",
+    "sourceSha256": "94a22eca4f88672e568e11a16266a96578a7dfb37013fba9231c7130a888533a",
+    "assetSha256": "94a22eca4f88672e568e11a16266a96578a7dfb37013fba9231c7130a888533a"
+  },
+  "js/food-shelf.js": {
+    "url": "/assets/generated/js-food-shelf-3b098e60a7e1.js",
+    "sourceSha256": "3b098e60a7e12c34f220648189bb1be5543727aaad74e639fa080676d32b6a09",
+    "assetSha256": "3b098e60a7e12c34f220648189bb1be5543727aaad74e639fa080676d32b6a09"
+  },
+  "css/release-library.css": {
+    "url": "/assets/generated/css-release-library-733ff5685785.css",
+    "sourceSha256": "733ff5685785d904e824c392bacb2d1e3ef3cfae5cd834cb9908a864e0a9e498",
+    "assetSha256": "733ff5685785d904e824c392bacb2d1e3ef3cfae5cd834cb9908a864e0a9e498"
+  },
+  "css/growth-tools.css": {
+    "url": "/assets/generated/css-growth-tools-22012a2d7dca.css",
+    "sourceSha256": "22012a2d7dcac1f243075ac28545b2c9274940c8ee29106b43e25997a2081205",
+    "assetSha256": "22012a2d7dcac1f243075ac28545b2c9274940c8ee29106b43e25997a2081205"
+  },
+  "js/library-browser.js": {
+    "url": "/assets/generated/js-library-browser-0e13b8bc040c.js",
+    "sourceSha256": "0e13b8bc040c70f0aabebd8ae7a8b8851737c1cc5a30b78b207a63281620b92c",
+    "assetSha256": "0e13b8bc040c70f0aabebd8ae7a8b8851737c1cc5a30b78b207a63281620b92c"
+  },
+  "js/order-tools-core.js": {
+    "url": "/assets/generated/js-order-tools-core-96011440bad0.js",
+    "sourceSha256": "96011440bad04ca2fddb72d2cec0c819cc28df22aa0c66baa93d899e48b2edbd",
+    "assetSha256": "96011440bad04ca2fddb72d2cec0c819cc28df22aa0c66baa93d899e48b2edbd"
+  },
+  "js/order-notebook.js": {
+    "url": "/assets/generated/js-order-notebook-2e0b98373e63.js",
+    "sourceSha256": "2e0b98373e63c70b863e045b4ee516ad5131460a5b08b6270e8578c89f2345be",
+    "assetSha256": "2e0b98373e63c70b863e045b4ee516ad5131460a5b08b6270e8578c89f2345be"
+  },
+  "js/order-tools.js": {
+    "url": "/assets/generated/js-order-tools-df9ca2539686.js",
+    "sourceSha256": "df9ca2539686f2557dcf5d00f7b5f5cc476fd1000118f4dc2ebb03143162351a",
+    "assetSha256": "df9ca2539686f2557dcf5d00f7b5f5cc476fd1000118f4dc2ebb03143162351a"
+  },
+  "js/meal-ideas.js": {
+    "url": "/assets/generated/js-meal-ideas-be63f0430d51.js",
+    "sourceSha256": "be63f0430d51b4cf098b6cf93c9ec0485ff2eb7bb3464cd705d3e59a3557a587",
+    "assetSha256": "be63f0430d51b4cf098b6cf93c9ec0485ff2eb7bb3464cd705d3e59a3557a587"
+  },
+  "js/macro-math.js": {
+    "url": "/assets/generated/js-macro-math-5181c76aa375.js",
+    "sourceSha256": "5181c76aa37517a29753bfe29f61e05ccbcc1f7599d787fe6e646348d25ee31e",
+    "assetSha256": "5181c76aa37517a29753bfe29f61e05ccbcc1f7599d787fe6e646348d25ee31e"
+  },
+  "js/calculators.js": {
+    "url": "/assets/generated/js-calculators-232ee52c89fd.js",
+    "sourceSha256": "232ee52c89fd436ec8e2a3a0a1eb3d7da36b146e3b5cc4057da24a2e4b27c5ea",
+    "assetSha256": "232ee52c89fd436ec8e2a3a0a1eb3d7da36b146e3b5cc4057da24a2e4b27c5ea"
+  },
+  "js/focused-calculators.js": {
+    "url": "/assets/generated/js-focused-calculators-7151b5636eb8.js",
+    "sourceSha256": "7151b5636eb8df3859cbecfd018101b2788b3b340c1d4be03959c2eb42cdfa89",
+    "assetSha256": "7151b5636eb8df3859cbecfd018101b2788b3b340c1d4be03959c2eb42cdfa89"
+  },
+  "css/food-app.css": {
+    "url": "/assets/generated/css-food-app-1ec9968e134d.css",
+    "sourceSha256": "1ec9968e134dcbc9d1e530690c305971cf4865efec2a53c03a329e8fd8659802",
+    "assetSha256": "1ec9968e134dcbc9d1e530690c305971cf4865efec2a53c03a329e8fd8659802"
+  },
+  "js/ingredient-compare-core.js": {
+    "url": "/assets/generated/js-ingredient-compare-core-9846a4b2d78c.js",
+    "sourceSha256": "9846a4b2d78cae7254b3ee468a5f796ef27bf4f6b07d3889202659e24c0260ab",
+    "assetSha256": "9846a4b2d78cae7254b3ee468a5f796ef27bf4f6b07d3889202659e24c0260ab"
+  },
+  "js/ingredient-comparison.js": {
+    "url": "/assets/generated/js-ingredient-comparison-212e4a60ce99.js",
+    "sourceSha256": "212e4a60ce99b5e2a5e9134ff1c43d0cb5942f5172be868c66c5d898dc24ff2c",
+    "assetSha256": "212e4a60ce99b5e2a5e9134ff1c43d0cb5942f5172be868c66c5d898dc24ff2c"
+  },
+  "js/contact.js": {
+    "url": "/assets/generated/js-contact-ab64751e08f4.js",
+    "sourceSha256": "ab64751e08f4bf6bc8c10f7eff9a1ec3b587d5db46ba662812db4be347b9257b",
+    "assetSha256": "ab64751e08f4bf6bc8c10f7eff9a1ec3b587d5db46ba662812db4be347b9257b"
+  },
+  "js/food-core.js": {
+    "url": "/assets/generated/js-food-core-ce520375ad38.js",
+    "sourceSha256": "ce520375ad38de8301643d5748e142bd5b474d3c0259a9dc6b3a845edc7283b5",
+    "assetSha256": "ce520375ad38de8301643d5748e142bd5b474d3c0259a9dc6b3a845edc7283b5"
+  },
+  "js/branded-foods.js": {
+    "url": "/assets/generated/js-branded-foods-f1d39e3e64c1.js",
+    "sourceSha256": "f1d39e3e64c180a8fce7dcae3513befda1ae477931a9d54d78cfa22e89c86d73",
+    "assetSha256": "f1d39e3e64c180a8fce7dcae3513befda1ae477931a9d54d78cfa22e89c86d73"
+  },
+  "js/food-library.js": {
+    "url": "/assets/generated/js-food-library-34f608f51fca.js",
+    "sourceSha256": "34f608f51fca538c6030b3fa4e6d8cab784a5437fc0a65918e3554d9b25f0d7b",
+    "assetSha256": "34f608f51fca538c6030b3fa4e6d8cab784a5437fc0a65918e3554d9b25f0d7b"
+  },
+  "js/food-diary-store.js": {
+    "url": "/assets/generated/js-food-diary-store-11d1116bc89d.js",
+    "sourceSha256": "11d1116bc89d915c618d70a8dd0251fcd5386d94a80329273934979922b76daa",
+    "assetSha256": "11d1116bc89d915c618d70a8dd0251fcd5386d94a80329273934979922b76daa"
+  },
+  "js/food-app.js": {
+    "url": "/assets/generated/js-food-app-619ef97889d2.js",
+    "sourceSha256": "619ef97889d20dee135ecc977ce16e13aaca34278dd9f4f56f7b0fdffadc3beb",
+    "assetSha256": "619ef97889d20dee135ecc977ce16e13aaca34278dd9f4f56f7b0fdffadc3beb"
+  },
+  "js/food-portion-compare.js": {
+    "url": "/assets/generated/js-food-portion-compare-e8ff64fe34b3.js",
+    "sourceSha256": "e8ff64fe34b31edd2df0982a728730787dc60ee565f0a3e42f96930134a24599",
+    "assetSha256": "e8ff64fe34b31edd2df0982a728730787dc60ee565f0a3e42f96930134a24599"
+  },
+  "js/diary-edit.js": {
+    "url": "/assets/generated/js-diary-edit-75160d3b3697.js",
+    "sourceSha256": "75160d3b36971650fe07752de43a55775fc8de3639a7496a6b1fbad3c54f3c76",
+    "assetSha256": "75160d3b36971650fe07752de43a55775fc8de3639a7496a6b1fbad3c54f3c76"
+  },
+  "js/app-runtime.js": {
+    "url": "/assets/generated/js-app-runtime-42f376b7989e.js",
+    "sourceSha256": "42f376b7989e9c5c8a5b18dbd7b389221542358e54f859e13f5e439b223bd750",
+    "assetSha256": "42f376b7989e9c5c8a5b18dbd7b389221542358e54f859e13f5e439b223bd750"
+  },
+  "js/protein-foods.js": {
+    "url": "/assets/generated/js-protein-foods-b0942c6681d1.js",
+    "sourceSha256": "b0942c6681d163b7b60e4fd434b18eca486d371df442c5e4af037500b8089552",
+    "assetSha256": "b0942c6681d163b7b60e4fd434b18eca486d371df442c5e4af037500b8089552"
+  },
+  "js/food-compare.js": {
+    "url": "/assets/generated/js-food-compare-d98f8d7225b9.js",
+    "sourceSha256": "d98f8d7225b949ec7689d88be4736695f812212458364c7400da9797b105da63",
+    "assetSha256": "d98f8d7225b949ec7689d88be4736695f812212458364c7400da9797b105da63"
+  },
+  "css/play-release.css": {
+    "url": "/assets/generated/css-play-release-6d05cb5fef2c.css",
+    "sourceSha256": "6d05cb5fef2c89dbb7cf855ea9f1675e737b3b9b63cbd55bf2d325cc2ecd3da7",
+    "assetSha256": "6d05cb5fef2c89dbb7cf855ea9f1675e737b3b9b63cbd55bf2d325cc2ecd3da7"
+  },
+  "js/play-rules.js": {
+    "url": "/assets/generated/js-play-rules-0644b9e4c701.js",
+    "sourceSha256": "0644b9e4c701042b624ce1031f79c0e5ea9462a38928b04bec16d50f742aa00b",
+    "assetSha256": "0644b9e4c701042b624ce1031f79c0e5ea9462a38928b04bec16d50f742aa00b"
+  },
+  "js/play-release.js": {
+    "url": "/assets/generated/js-play-release-ca1cdf8e0f39.js",
+    "sourceSha256": "ca1cdf8e0f393352b94a50acef2e8d1db02d09841a2e2e54b10543c20e9878f0",
+    "assetSha256": "ca1cdf8e0f393352b94a50acef2e8d1db02d09841a2e2e54b10543c20e9878f0"
+  },
+  "js/play-directory.js": {
+    "url": "/assets/generated/js-play-directory-b599eb48beb1.js",
+    "sourceSha256": "b599eb48beb19d4dc977f986f9a5c35455a66bd6cfebf2a3fa25190fa793e198",
+    "assetSha256": "b599eb48beb19d4dc977f986f9a5c35455a66bd6cfebf2a3fa25190fa793e198"
+  },
+  "js/protein-value.js": {
+    "url": "/assets/generated/js-protein-value-329722db5455.js",
+    "sourceSha256": "329722db5455c4627e3c0cf862db18c5034f93a3ac3220b5c53d52d42aab838f",
+    "assetSha256": "329722db5455c4627e3c0cf862db18c5034f93a3ac3220b5c53d52d42aab838f"
+  },
+  "js/recipe-scaler.js": {
+    "url": "/assets/generated/js-recipe-scaler-4b22c7bcf52d.js",
+    "sourceSha256": "4b22c7bcf52dec8fecdfda3f6d3481f778d240b1fc63b36759d7f41d8ec2879f",
+    "assetSha256": "4b22c7bcf52dec8fecdfda3f6d3481f778d240b1fc63b36759d7f41d8ec2879f"
+  },
+  "js/meal-data.js": {
+    "url": "/assets/generated/js-meal-data-5434b32fb86e.js",
+    "sourceSha256": "5434b32fb86e57a45b1842bf017801eab825aaa08278140f1c4e5536845ad89b",
+    "assetSha256": "5434b32fb86e57a45b1842bf017801eab825aaa08278140f1c4e5536845ad89b"
+  },
+  "js/meal-provenance.js": {
+    "url": "/assets/generated/js-meal-provenance-db7b9efb8a1a.js",
+    "sourceSha256": "db7b9efb8a1abd6c7be50d10b92293578e6d155208c82502828015f81c8ac880",
+    "assetSha256": "db7b9efb8a1abd6c7be50d10b92293578e6d155208c82502828015f81c8ac880"
+  },
+  "js/meal-engine.js": {
+    "url": "/assets/generated/js-meal-engine-4f603e7aa05e.js",
+    "sourceSha256": "4f603e7aa05e417243d4bc1c559680b518a579ff3347f681376fd8df7d40399b",
+    "assetSha256": "4f603e7aa05e417243d4bc1c559680b518a579ff3347f681376fd8df7d40399b"
+  },
+  "js/meal-view.js": {
+    "url": "/assets/generated/js-meal-view-98d8eda71003.js",
+    "sourceSha256": "98d8eda71003fc006b1ce82ce6e02c219926b2db2e8cb4dce73298b38cecb6db",
+    "assetSha256": "98d8eda71003fc006b1ce82ce6e02c219926b2db2e8cb4dce73298b38cecb6db"
+  },
+  "js/meal-guide.js": {
+    "url": "/assets/generated/js-meal-guide-3a1111001547.js",
+    "sourceSha256": "3a11110015470d57a3ce1e53052ff6249f88c9197e94baebc7a470f696e9e648",
+    "assetSha256": "3a11110015470d57a3ce1e53052ff6249f88c9197e94baebc7a470f696e9e648"
+  },
+  "js/order-share.js": {
+    "url": "/assets/generated/js-order-share-c0fee38ab146.js",
+    "sourceSha256": "c0fee38ab1460c6950ca845c658f288bf9a3949afcb4034c4c8b3d6f11c54ffd",
+    "assetSha256": "c0fee38ab1460c6950ca845c658f288bf9a3949afcb4034c4c8b3d6f11c54ffd"
+  },
+  "js/meal-finder.js": {
+    "url": "/assets/generated/js-meal-finder-7016f40ece4e.js",
+    "sourceSha256": "7016f40ece4ed7e6191faa55f7dc2481097546e25584914e4037de865e079366",
+    "assetSha256": "7016f40ece4ed7e6191faa55f7dc2481097546e25584914e4037de865e079366"
+  },
+  "js/search-meals.js": {
+    "url": "/assets/generated/js-search-meals-fce9922e610f.js",
+    "sourceSha256": "fce9922e610fa1027d15592b272dc33e2fc5e7206ca674a5d4fcb98545bd1f1a",
+    "assetSha256": "fce9922e610fa1027d15592b272dc33e2fc5e7206ca674a5d4fcb98545bd1f1a"
+  },
+  "js/site-search.js": {
+    "url": "/assets/generated/js-site-search-e2e99a0d6fb8.js",
+    "sourceSha256": "e2e99a0d6fb88d984407c5ebc1871656ae5cdc428dfdf6b789ad605d1f6b761c",
+    "assetSha256": "e2e99a0d6fb88d984407c5ebc1871656ae5cdc428dfdf6b789ad605d1f6b761c"
+  },
+  "js/au-meals.js": {
+    "url": "/assets/generated/js-au-meals-a0985a79cf28.js",
+    "sourceSha256": "a0985a79cf289d28b73fd92d3dc1b0cda019abd484ec64536f716267d3cc5bba",
+    "assetSha256": "a0985a79cf289d28b73fd92d3dc1b0cda019abd484ec64536f716267d3cc5bba"
+  },
+  "js/canada-meals.js": {
+    "url": "/assets/generated/js-canada-meals-f876ca44d76e.js",
+    "sourceSha256": "f876ca44d76e8b8598524025da01b9592b01b6a773b558a49eb478491f3b6313",
+    "assetSha256": "f876ca44d76e8b8598524025da01b9592b01b6a773b558a49eb478491f3b6313"
+  },
+  "js/gb-meals.js": {
+    "url": "/assets/generated/js-gb-meals-61d70ada9c63.js",
+    "sourceSha256": "61d70ada9c63618f8bbed3c5d31e5aaa1098ad84f89343506589d88e7d050393",
+    "assetSha256": "61d70ada9c63618f8bbed3c5d31e5aaa1098ad84f89343506589d88e7d050393"
+  },
+  "js/ie-meals.js": {
+    "url": "/assets/generated/js-ie-meals-6bb5576c219f.js",
+    "sourceSha256": "6bb5576c219f5f0d4754723abeba39bd7ab41395868199dea7c258148b4b2678",
+    "assetSha256": "6bb5576c219f5f0d4754723abeba39bd7ab41395868199dea7c258148b4b2678"
+  },
+  "js/jp-meals.js": {
+    "url": "/assets/generated/js-jp-meals-8bbd8a091dc4.js",
+    "sourceSha256": "8bbd8a091dc404323f40091e769cd7d5c22870d37abf96f501d0b6dea132eff6",
+    "assetSha256": "8bbd8a091dc404323f40091e769cd7d5c22870d37abf96f501d0b6dea132eff6"
+  },
+  "js/mx-meals.js": {
+    "url": "/assets/generated/js-mx-meals-a31a7455d877.js",
+    "sourceSha256": "a31a7455d8770117844743c22018b4e8b3d4fefd9e27b545136953ed89281f02",
+    "assetSha256": "a31a7455d8770117844743c22018b4e8b3d4fefd9e27b545136953ed89281f02"
+  },
+  "js/nz-meals.js": {
+    "url": "/assets/generated/js-nz-meals-86dabbfc1e89.js",
+    "sourceSha256": "86dabbfc1e8985364aeebe833d075d34a1d06449fea6648efcea1ad634bf3b7a",
+    "assetSha256": "86dabbfc1e8985364aeebe833d075d34a1d06449fea6648efcea1ad634bf3b7a"
+  }
+}

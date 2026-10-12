@@ -18,6 +18,8 @@ import hashlib
 import os
 import re
 import sys
+import json
+import posixpath
 
 ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 LINK = re.compile(r'(?P<attr>href|src)="(?P<prefix>(?:\.\./|/)?)(?P<path>(?:(?:css|js)/[A-Za-z0-9._-]+\.(?:css|js)|favicon\.svg))(?:\?v=[^"]*)?"')
@@ -66,13 +68,83 @@ def main():
             open(page, "w", encoding="utf-8").write(out)
             changed += 1
 
+    # Older service workers matched only the pathname and could return an old
+    # bundle even when ?v changed. Immutable filenames keep HTML/code coherent
+    # on the very first visit after a major release, before worker activation.
+    generated = os.path.join(ROOT, 'assets', 'generated')
+    os.makedirs(generated, exist_ok=True)
+    manifest = {}
+    def immutable(source):
+        if source in manifest:
+            return manifest[source]['url']
+        original = open(os.path.join(ROOT,source),'rb').read().replace(b'\r\n',b'\n')
+        data = original
+        if source.endswith('.css'):
+            css = original.decode('utf-8-sig')
+            def absolute_url(match):
+                value=match[1].strip('"\' ')
+                if value.startswith(('/', '#', 'data:', 'http:', 'https:')):
+                    return match[0]
+                return 'url("/'+posixpath.normpath(posixpath.join(posixpath.dirname(source),value))+'")'
+            data=re.sub(r'url\(([^)]+)\)',absolute_url,css).encode('utf-8')
+        version=hashlib.sha256(data).hexdigest()[:12]
+        name=source.replace('/','-').rsplit('.',1)
+        filename=name[0]+'-'+version+'.'+name[1]
+        open(os.path.join(generated,filename),'wb').write(data)
+        url='/assets/generated/'+filename
+        manifest[source]={'url':url,'sourceSha256':hashlib.sha256(original).hexdigest(),'assetSha256':hashlib.sha256(data).hexdigest()}
+        return url
+    registry=immutable('js/order-registry.json') if os.path.exists('js/order-registry.json') else None
+    for page in pages:
+        text=open(page,encoding='utf-8').read()
+        text=re.sub(r'<script data-public-assets>.*?</script>','',text,flags=re.S)
+        def immutable_tag(match):
+            tag=match[0]
+            logical=re.search(r'data-source-path="([^"]+)"',tag)
+            target=re.search(r'\b(?:href|src)="/?((?:css|js)/[A-Za-z0-9._-]+\.(?:css|js))(?:\?[^" ]*)?"',tag)
+            source=logical[1] if logical else target[1] if target else None
+            if not source or not os.path.isfile(os.path.join(ROOT,source)):
+                return tag
+            tag=re.sub(r'\sdata-source-path="[^"]+"','',tag)
+            tag=re.sub(r'\b(href|src)="[^"]+"',lambda m:m[1]+'="'+immutable(source)+'"',tag,count=1)
+            return tag[:-1]+' data-source-path="'+source+'">'
+        text=re.sub(r'<(?:link|script)\b[^>]*>',immutable_tag,text)
+        seen_links=set()
+        def unique_link(match):
+            tag=match[0]
+            attrs=dict(re.findall(r'([\w-]+)="([^"]*)"',tag))
+            key=(attrs.get('rel'),attrs.get('as'),attrs.get('href'),attrs.get('hreflang'),attrs.get('type'),attrs.get('media'))
+            if key in seen_links:return ''
+            seen_links.add(key)
+            return tag
+        text=re.sub(r'<link\b[^>]*>',unique_link,text)
+        # Header replacement must not accumulate blank separators on rebuild.
+        text=re.sub(r'</header>\s+(?=<main\b)','</header>\n',text)
+        text=re.sub(r'</footer>\s+(?=<script\b)','</footer>\n',text)
+        text=re.sub(r'</script>\s+(?=<script\b|</body>)','</script>\n',text)
+        if registry:
+            text=text.replace('</head>','<script data-public-assets>window.GM_PUBLIC_ASSETS='+json.dumps({'/js/order-registry.json':registry},separators=(',',':'))+';</script></head>')
+        open(page,'w',encoding='utf-8').write(text)
+    open(os.path.join(generated,'manifest.json'),'w',encoding='utf-8').write(json.dumps(manifest,indent=2)+'\n')
+    # Only remove this generator's obsolete immutable artifacts, never sources.
+    needed={os.path.basename(v['url']) for v in manifest.values()}|{'manifest.json'}
+    for name in os.listdir(generated):
+        target=os.path.abspath(os.path.join(generated,name))
+        if os.path.commonpath([os.path.abspath(generated),target])==os.path.abspath(generated) and name not in needed and re.fullmatch(r'[A-Za-z0-9._-]+-[a-f0-9]{12}\.(css|js|json)',name):
+            os.remove(target)
+
     # A content-addressed app shell prevents stale arithmetic/UI after a release.
     if os.path.exists('sw.js'):
         app_files=['food-diary.html','food-library.html','offline.html','site.webmanifest','js/order-registry.json','data/food-library/manifest.json','data/food-library/index.json']
+        app_files += sorted(glob.glob('data/branded-foods/*/manifest.json'))
         app_files += sorted(glob.glob('js/*.js'))+sorted(glob.glob('css/*.css'))
         fingerprint=hashlib.sha256(b''.join(open(p,'rb').read().replace(b'\r\n',b'\n') for p in app_files if os.path.isfile(p))).hexdigest()[:16]
         sw=open('sw.js',encoding='utf-8').read()
         sw=re.sub(r"const VERSION='[^']+'", "const VERSION='gm-food-app-"+fingerprint+"'",sw,count=1)
+        offline_assets={'/favicon.svg'}
+        for page in ['food-diary.html','food-library.html']:
+            offline_assets.update(re.findall(r'(?:href|src)="(/assets/generated/[^"]+\.(?:css|js))"',open(page,encoding='utf-8').read()))
+        sw=re.sub(r'const APP_ASSETS=.*?;', 'const APP_ASSETS='+json.dumps(sorted(offline_assets),separators=(',',':'))+';',sw,count=1)
         open('sw.js','w',encoding='utf-8').write(sw)
     for path in sorted(missing):
         print(f"  WARNING linked asset does not exist: {path}")

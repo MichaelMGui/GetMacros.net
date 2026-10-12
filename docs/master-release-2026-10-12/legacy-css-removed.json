@@ -1,0 +1,582 @@
+[
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .text-action",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".ensemble-note",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-row",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>[data-food-character]",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>.btn",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool>[data-food-character]",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools>a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools span",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools small",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools b",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".chain-finder-intro h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-masthead",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-masthead h1",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-content",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover h2 a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article h2 a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-issue",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article>span",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools .supporting-tools",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-content",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .btn",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .text-action",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".ensemble-note",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd span",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dt",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action svg",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>[data-food-character]",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>.btn",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools .supporting-tools",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool>[data-food-character]",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-content",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-masthead h1",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .btn",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .text-action",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".page-category",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature .food-character",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature .food-character",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature h2",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-row",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-intro p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-next",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics a:hover",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".search-group-head",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".search-group-count",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-layout",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-intro p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".meal-browser-shell",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".restaurant-directory-strip a:hover",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".restaurant-directory-strip a:focus-visible",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".home-popular .meal-row",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".home-popular .meal-numbers",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".quiz-invitation",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-library-grid",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource h3",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource p",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource a",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".order-actions",
+    "reason": "Absent from all final sitemap/private HTML, all JS modules, SVG assets and active master homepage generator."
+  }
+]

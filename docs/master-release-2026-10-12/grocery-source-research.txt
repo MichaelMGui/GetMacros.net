@@ -1,0 +1,134 @@
+GROCERY SOURCE RESEARCH — checked October 12, 2026 (America/Toronto)
+
+Implemented sources
+
+USDA FoodData Central:
+https://fdc.nal.usda.gov/download-datasets/
+https://fdc.nal.usda.gov/api-guide/
+https://fdc.nal.usda.gov/GBFPD_Documentation/
+The current bulk Branded release is April 2026. The JSON archive downloaded here
+is 204,270,542 bytes; its full decoded stream is about 3.1 GB. The importer reads
+one product at a time without extracting that whole JSON or using an API key.
+CC0 permits commercial reuse; source attribution is retained. The authenticated
+API has a default 1,000 requests/hour/IP; keys must remain private. The public
+DEMO_KEY's lower quota is not a production integration. No API key was obtained.
+
+The data are manufacturer-reported labels. USDA normalizes to 100 g OR 100 mL,
+depending on source units. This import never assumes mL equals grams. An mL item
+is logged using its named source serving and explicit per-serving arithmetic.
+Unusable serving bases, unrecognized markets, absent identity and absent core
+nutrients are excluded with exact reason counts in branded-import.json.
+
+Actual publication: 36,862 distinct source product/formulation records, comprising
+35,755 attributed to the United States and 1,107 to New Zealand. No Canadian
+branded labels were present in this downloaded source. U.S. records are never
+substituted when the selected market is Canada. This is a curated source catalogue,
+not an audited complete grocery catalogue or retailer inventory.
+
+Real brand examples (case variations summed): Kirkland Signature + Kirkland 127;
+Great Value 2,239; Trader Joe's 284; Good & Gather 352; Erewhon 6. Oreo-labelled
+brand variants are available separately. Each is a distinct product, not one fake
+nutrient record representing an entire brand. The brand text PRESIDENT is not
+evidence of Canada's President's Choice; no such equivalence is inferred.
+
+Health Canada:
+https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-about-us.html
+https://open.canada.ca/data/en/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109
+https://produits-sante.canada.ca/api/documentation/cnf-documentation-en.html
+Official current guidance now points to the 2026 bulk file; the old online/API
+interface remains the 2015 reference and was not passed off as current. The 2026
+file was downloaded with its official users' and structure guides. Relevant PDF
+measure/missing-data pages were actually rendered and read; this is not only a
+CSV header guess. All 5,993 reference profiles were imported separately, retaining
+native units, per-nutrient provenance, food dates, preparation descriptions and
+direct gram weights. This count is separate from branded product counts.
+Attribution and the Open Government Licence – Canada declaration are present
+in the dataset's machine-readable metadata and public source partition licence.
+
+Open Food Facts evaluation — no records published
+
+https://openfoodfacts.github.io/openfoodfacts-server/api/
+https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/license-be-on-the-legal-side/
+https://opendatacommons.org/licenses/odbl/1-0/
+Database ODbL 1.0; individual database contents DbCL; product images carry separate
+CC BY-SA and may also contain third-party package rights. A public derivative
+database needs attribution and share-alike plus free machine-readable access to
+the derivative or alterations. A source-separated collective database must retain
+these rights for its OFF partition. No OFF data are folded into the CC0/OGL
+partitions. No product images were downloaded or used.
+
+Current primary API documentation recommends v3 for new applicable endpoints,
+while v2 search remains supported. It states 15 product reads/min/IP, 10 searches
+/min/IP, and bulk downloads for more than a few hundred products. It also warns
+against using remote search as-you-type. Our small Canadian store-brand research
+request used requested fields, a descriptive User-Agent and 6.5-second pacing.
+Three initial requests returned HTTP 503. Requests were stopped, with no retries,
+IP changes, bot bypass or mirrors. The fetcher now stops on the first error.
+Therefore OFF contributes zero product records in this release. A future enabled
+partition requires actual accessible data, source-quality checks, notices and
+share-alike distribution; an architecture or brand queue is not published coverage.
+
+Canadian brand gaps
+
+Beyond the four source-linked Kirkland products below, Canadian Kirkland coverage,
+Great Value Canada, President's Choice, No Name, Compliments,
+Selection, Irresistibles, Our Finest, Western Family and Nature's Emporium remain
+an explicit source-verification queue. Current Canadian grocery labels were not
+invented from the U.S. library. Costco stock/warehouse availability is not claimed.
+
+Small Canadian retailer sample — four records, separately counted
+
+Four official Costco Canada/Business Centre pages were opened in full and saved
+as private source evidence: Kirkland Macadamia Nuts 680 g, Unsalted Mixed Nuts
+1.13 kg, Natural Peanut Butter 2 × 1 kg, and Organic Greek Yogurt 0% 1.36 kg.
+Complete calorie/protein/carbohydrate/fat source values and named gram servings
+are retained, plus available fiber, sodium and micronutrients. Source product
+item numbers are retained; these are not invented UPCs. The macadamia page's
+inconsistent container serving count is flagged and not used for logging.
+No photographs, marketing copy, reviews or whole proprietary catalogue were
+republished. The factual curation is a separate retailer-ca partition with rights
+and limitations. It does not claim an official API or licensed Costco database.
+Current Canadian Kirkland organic milk was not published: the accessible text
+showed conflicting micronutrient units and the full-page retrieval failed. No
+U.S. milk record was substituted. Larger Canadian coverage remains incomplete.
+
+Commercial provider research — not contracted or integrated
+
+https://www.nutritionix.com/database
+Nutritionix advertises a U.S./Canada branded grocery database and semi-monthly
+licensed CSV/JSON bulk delivery. Its website's coverage claims are provider claims,
+not GetMacros measurements. This is a practical candidate if Canada needs licensed
+coverage beyond openly accessible sources. Actual contract, permitted caching,
+redistribution, fees, quality and brand depth need owner/provider review.
+
+https://platform.fatsecret.com/api-editions
+https://platform.fatsecret.com/attribution
+https://platform.fatsecret.com/terms
+FatSecret's country datasets and required attribution depend on account edition.
+International paid access is not assumed to be free or bulk-redistributable. No
+account, key, purchase, external message or copyrighted database extraction occurred.
+
+Search/refresh implementation
+
+Food-library and diary screens alone load js/branded-foods.js. They first request
+small source manifests; token-prefix postings and 64-row metadata pages are loaded
+on demand. Full 30-field records live in 256 bounded shards per source. Exact
+UPC/EAN lookup normalizes numeric identifiers to GTIN-14 for matching while retaining
+original text. Market, formulation, ingredients, package and serving identities
+remain distinct. Different flavors and national versions are not merged by name.
+Search uses independent source tables and reports unavailable sources; failed
+providers cannot erase the existing 13,578 U.S. reference profiles.
+
+Refresh: download the official current archive using fetch-branded-sources.cjs;
+run import_branded_foods.py; inspect import counts/exclusions and source changes;
+run test_branded_import.py and test-branded-search.cjs. The dataset version and
+original source identifier are stored in diary snapshots by the shared FoodCore.
+No personal notes or diary entries leave the browser through this adapter.
+
+SEO boundaries
+
+These are database records, not thousands of thin indexable barcode URLs. Search
+queries are not added to sitemaps. The useful public food library explains source,
+market, portion and limitations; exact product records are reviewed in the tool.
+There is no invented search volume, new brand endorsement, ranking guarantee,
+or claim that a large import by itself creates traffic.

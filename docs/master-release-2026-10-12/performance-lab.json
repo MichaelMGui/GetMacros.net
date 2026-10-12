@@ -1,0 +1,439 @@
+{
+  "measuredAt": "2026-10-12T16:24:17.270Z",
+  "method": "Edge on same desktop, 390 px, cold browser contexts, warm static-file server, unthrottled loopback, reduced motion, service workers blocked, three samples after one warmup. Navigation timing and brief observed layout shifts only; no Lighthouse or field Core Web Vitals claim.",
+  "previousRevision": "93e873b20f6332ce03beaaa79a467f4259b9020b",
+  "samples": [
+    {
+      "edition": "before",
+      "route": "/",
+      "sample": 0,
+      "domContentLoadedMs": 115.29999999701977,
+      "loadMs": 159.59999999403954,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 19,
+      "decodedResourceBytes": 386981
+    },
+    {
+      "edition": "before",
+      "route": "/",
+      "sample": 1,
+      "domContentLoadedMs": 75.59999999403954,
+      "loadMs": 122.90000000596046,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 19,
+      "decodedResourceBytes": 386981
+    },
+    {
+      "edition": "before",
+      "route": "/",
+      "sample": 2,
+      "domContentLoadedMs": 135.1000000089407,
+      "loadMs": 149.79999999701977,
+      "firstContentfulPaintMs": 120,
+      "layoutShiftObserved": 0,
+      "resourceCount": 19,
+      "decodedResourceBytes": 386981
+    },
+    {
+      "edition": "before",
+      "route": "/ca/en/",
+      "sample": 0,
+      "domContentLoadedMs": 60.900000005960464,
+      "loadMs": 88.40000000596046,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 14,
+      "decodedResourceBytes": 194291
+    },
+    {
+      "edition": "before",
+      "route": "/ca/en/",
+      "sample": 1,
+      "domContentLoadedMs": 57.79999999701977,
+      "loadMs": 85.3999999910593,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 14,
+      "decodedResourceBytes": 194291
+    },
+    {
+      "edition": "before",
+      "route": "/ca/en/",
+      "sample": 2,
+      "domContentLoadedMs": 52.8999999910593,
+      "loadMs": 82.29999999701977,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 14,
+      "decodedResourceBytes": 194291
+    },
+    {
+      "edition": "before",
+      "route": "/food-diary.html",
+      "sample": 0,
+      "domContentLoadedMs": 98.90000000596046,
+      "loadMs": 121.5,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 24,
+      "decodedResourceBytes": 269535
+    },
+    {
+      "edition": "before",
+      "route": "/food-diary.html",
+      "sample": 1,
+      "domContentLoadedMs": 92.1000000089407,
+      "loadMs": 127.1000000089407,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 24,
+      "decodedResourceBytes": 269535
+    },
+    {
+      "edition": "before",
+      "route": "/food-diary.html",
+      "sample": 2,
+      "domContentLoadedMs": 78.5,
+      "loadMs": 110.8999999910593,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 24,
+      "decodedResourceBytes": 269535
+    },
+    {
+      "edition": "before",
+      "route": "/calculators.html",
+      "sample": 0,
+      "domContentLoadedMs": 100.6000000089407,
+      "loadMs": 120.70000000298023,
+      "firstContentfulPaintMs": 84,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 255672
+    },
+    {
+      "edition": "before",
+      "route": "/calculators.html",
+      "sample": 1,
+      "domContentLoadedMs": 97.20000000298023,
+      "loadMs": 118.40000000596046,
+      "firstContentfulPaintMs": 80,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 255672
+    },
+    {
+      "edition": "before",
+      "route": "/calculators.html",
+      "sample": 2,
+      "domContentLoadedMs": 110.20000000298023,
+      "loadMs": 132.20000000298023,
+      "firstContentfulPaintMs": 100,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 255672
+    },
+    {
+      "edition": "before",
+      "route": "/restaurant-meal-finder.html",
+      "sample": 0,
+      "domContentLoadedMs": 98,
+      "loadMs": 125,
+      "firstContentfulPaintMs": 92,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 571249
+    },
+    {
+      "edition": "before",
+      "route": "/restaurant-meal-finder.html",
+      "sample": 1,
+      "domContentLoadedMs": 102.70000000298023,
+      "loadMs": 131.20000000298023,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 571249
+    },
+    {
+      "edition": "before",
+      "route": "/restaurant-meal-finder.html",
+      "sample": 2,
+      "domContentLoadedMs": 98.59999999403954,
+      "loadMs": 125.40000000596046,
+      "firstContentfulPaintMs": 96,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 571249
+    },
+    {
+      "edition": "after",
+      "route": "/",
+      "sample": 0,
+      "domContentLoadedMs": 94.20000000298023,
+      "loadMs": 101.70000000298023,
+      "firstContentfulPaintMs": 92,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/",
+      "sample": 1,
+      "domContentLoadedMs": 97.70000000298023,
+      "loadMs": 103.70000000298023,
+      "firstContentfulPaintMs": 92,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/",
+      "sample": 2,
+      "domContentLoadedMs": 87.59999999403954,
+      "loadMs": 92.69999998807907,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/ca/en/",
+      "sample": 0,
+      "domContentLoadedMs": 87.29999999701977,
+      "loadMs": 92.40000000596046,
+      "firstContentfulPaintMs": 96,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/ca/en/",
+      "sample": 1,
+      "domContentLoadedMs": 86.80000001192093,
+      "loadMs": 92.80000001192093,
+      "firstContentfulPaintMs": 96,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/ca/en/",
+      "sample": 2,
+      "domContentLoadedMs": 91.6000000089407,
+      "loadMs": 96.6000000089407,
+      "firstContentfulPaintMs": 96,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/food-diary.html",
+      "sample": 0,
+      "domContentLoadedMs": 75.09999999403954,
+      "loadMs": 78.79999999701977,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0,
+      "resourceCount": 22,
+      "decodedResourceBytes": 274231
+    },
+    {
+      "edition": "after",
+      "route": "/food-diary.html",
+      "sample": 1,
+      "domContentLoadedMs": 61.20000000298023,
+      "loadMs": 75.29999999701977,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 22,
+      "decodedResourceBytes": 274231
+    },
+    {
+      "edition": "after",
+      "route": "/food-diary.html",
+      "sample": 2,
+      "domContentLoadedMs": 81.1000000089407,
+      "loadMs": 86.70000000298023,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0,
+      "resourceCount": 23,
+      "decodedResourceBytes": 274540
+    },
+    {
+      "edition": "after",
+      "route": "/calculators.html",
+      "sample": 0,
+      "domContentLoadedMs": 110.59999999403954,
+      "loadMs": 119,
+      "firstContentfulPaintMs": 84,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 262148
+    },
+    {
+      "edition": "after",
+      "route": "/calculators.html",
+      "sample": 1,
+      "domContentLoadedMs": 111.59999999403954,
+      "loadMs": 119.8999999910593,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 262148
+    },
+    {
+      "edition": "after",
+      "route": "/calculators.html",
+      "sample": 2,
+      "domContentLoadedMs": 114.29999999701977,
+      "loadMs": 122.09999999403954,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 262148
+    },
+    {
+      "edition": "after",
+      "route": "/restaurant-meal-finder.html",
+      "sample": 0,
+      "domContentLoadedMs": 101.8999999910593,
+      "loadMs": 115.8999999910593,
+      "firstContentfulPaintMs": 96,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 577737
+    },
+    {
+      "edition": "after",
+      "route": "/restaurant-meal-finder.html",
+      "sample": 1,
+      "domContentLoadedMs": 114.3999999910593,
+      "loadMs": 118.5,
+      "firstContentfulPaintMs": 100,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 577737
+    },
+    {
+      "edition": "after",
+      "route": "/restaurant-meal-finder.html",
+      "sample": 2,
+      "domContentLoadedMs": 104.5,
+      "loadMs": 120.59999999403954,
+      "firstContentfulPaintMs": 100,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 577737
+    }
+  ],
+  "medians": [
+    {
+      "edition": "before",
+      "route": "/",
+      "domContentLoadedMs": 115.29999999701977,
+      "loadMs": 149.79999999701977,
+      "firstContentfulPaintMs": 120,
+      "layoutShiftObserved": 0,
+      "resourceCount": 19,
+      "decodedResourceBytes": 386981
+    },
+    {
+      "edition": "before",
+      "route": "/ca/en/",
+      "domContentLoadedMs": 57.79999999701977,
+      "loadMs": 85.3999999910593,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 14,
+      "decodedResourceBytes": 194291
+    },
+    {
+      "edition": "before",
+      "route": "/food-diary.html",
+      "domContentLoadedMs": 92.1000000089407,
+      "loadMs": 121.5,
+      "firstContentfulPaintMs": null,
+      "layoutShiftObserved": 0,
+      "resourceCount": 24,
+      "decodedResourceBytes": 269535
+    },
+    {
+      "edition": "before",
+      "route": "/calculators.html",
+      "domContentLoadedMs": 100.6000000089407,
+      "loadMs": 120.70000000298023,
+      "firstContentfulPaintMs": 84,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 255672
+    },
+    {
+      "edition": "before",
+      "route": "/restaurant-meal-finder.html",
+      "domContentLoadedMs": 98.59999999403954,
+      "loadMs": 125.40000000596046,
+      "firstContentfulPaintMs": 92,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 571249
+    },
+    {
+      "edition": "after",
+      "route": "/",
+      "domContentLoadedMs": 94.20000000298023,
+      "loadMs": 101.70000000298023,
+      "firstContentfulPaintMs": 92,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/ca/en/",
+      "domContentLoadedMs": 87.29999999701977,
+      "loadMs": 92.80000001192093,
+      "firstContentfulPaintMs": 96,
+      "layoutShiftObserved": 0,
+      "resourceCount": 15,
+      "decodedResourceBytes": 239460
+    },
+    {
+      "edition": "after",
+      "route": "/food-diary.html",
+      "domContentLoadedMs": 75.09999999403954,
+      "loadMs": 78.79999999701977,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0,
+      "resourceCount": 22,
+      "decodedResourceBytes": 274231
+    },
+    {
+      "edition": "after",
+      "route": "/calculators.html",
+      "domContentLoadedMs": 111.59999999403954,
+      "loadMs": 119.8999999910593,
+      "firstContentfulPaintMs": 88,
+      "layoutShiftObserved": 0.0006324312806307267,
+      "resourceCount": 19,
+      "decodedResourceBytes": 262148
+    },
+    {
+      "edition": "after",
+      "route": "/restaurant-meal-finder.html",
+      "domContentLoadedMs": 104.5,
+      "loadMs": 118.5,
+      "firstContentfulPaintMs": 100,
+      "layoutShiftObserved": 0.00010393777967185169,
+      "resourceCount": 26,
+      "decodedResourceBytes": 577737
+    }
+  ]
+}

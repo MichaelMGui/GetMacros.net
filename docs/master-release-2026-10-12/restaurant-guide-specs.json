@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/ca/en/restaurants/subway/",
+    "title": "Subway Canada nutrition: subs, salads & breakfast",
+    "description": "Compare Canadian 6-inch subs, Fresh Fit recipes, wraps, salads, power bowls and breakfast servings using Subway’s June 2026 table.",
+    "kind": "restaurant",
+    "market": "CA",
+    "indexable": true
+  },
+  {
+    "route": "/ca/en/restaurants/domino-s/",
+    "title": "Domino’s Canada pizza nutrition: exact small-slice builds",
+    "description": "Calculate a small hand-tossed Canadian pizza slice from official crust, sauce, cheese and topping portions. See ingredients and serving limits.",
+    "kind": "restaurant",
+    "market": "CA",
+    "indexable": true
+  },
+  {
+    "route": "/ca/en/restaurants/mary-brown-s/",
+    "title": "Mary Brown’s Canada nutrition: chicken, sandwiches & sides",
+    "description": "Compare source-defined Canadian chicken pieces, Big Mary sandwiches, small sides and exact-order totals from the July 2026 nutrition guide.",
+    "kind": "restaurant",
+    "market": "CA",
+    "indexable": true
+  },
+  {
+    "route": "/ca/en/restaurants/booster-juice/",
+    "title": "Booster Juice Canada nutrition: smoothie sizes & protein",
+    "description": "Compare regular and snack smoothies, protein, total sugars and serving volumes from Booster Juice’s September 2026 Canadian nutrition guide.",
+    "kind": "restaurant",
+    "market": "CA",
+    "indexable": true
+  },
+  {
+    "route": "/ca/en/restaurants/pizza-pizza/",
+    "title": "Pizza Pizza Canada calories: small pizza per slice",
+    "description": "Compare calories, protein and macros for one-sixth of a 10-inch small Canadian Pizza Pizza pizza. Missing and contradictory fields stay visible.",
+    "kind": "restaurant",
+    "market": "CA",
+    "indexable": true
+  },
+  {
+    "route": "/ca/en/restaurants/pizza-nova/",
+    "title": "Pizza Nova Canada calories: in-store slice portions",
+    "description": "Look up official Pizza Nova in-store slice calories, understand the serving difference from made-to-order pizzas, and see which macros are unavailable.",
+    "kind": "restaurant",
+    "market": "CA",
+    "indexable": true
+  }
+]

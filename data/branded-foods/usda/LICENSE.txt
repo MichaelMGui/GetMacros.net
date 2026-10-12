@@ -1,0 +1,16 @@
+USDA FoodData Central — Global Branded Food Products Database, April 2026 bulk edition.
+
+Data are in the public domain under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/
+USDA source and reuse guidance:
+https://fdc.nal.usda.gov/api-guide/#bkmk-9
+
+Suggested attribution: U.S. Department of Agriculture, Agricultural Research Service.
+FoodData Central. April 2026 branded-food download, retrieved October 12, 2026.
+https://fdc.nal.usda.gov/download-datasets/
+
+GetMacros normalization preserves the source market, product and label identifiers,
+serving units and missing values. Product labels are manufacturer submissions;
+an import does not constitute independent checking of the current package.
+No retailer endorsement, current inventory, allergen assurance or product imagery
+is implied. Source identifiers and complete record provenance remain in the records.

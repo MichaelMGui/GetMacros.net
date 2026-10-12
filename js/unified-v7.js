@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  var mobile = window.matchMedia && window.matchMedia("(max-width: 900px)");
+  var mobile = window.matchMedia && window.matchMedia("(max-width: 1100px)");
 
   function headerState() {
     var header=document.querySelector('.site-header');
@@ -22,7 +22,8 @@
 
   function theme() {
     var buttons = document.querySelectorAll("[data-theme-toggle]");
-    if (!buttons.length) return;
+    var choices = document.querySelectorAll("[data-theme-choice]");
+    if (!buttons.length && !choices.length) return;
     var stored = "";
     try { stored = localStorage.getItem("gm-theme") || ""; } catch (error) {}
     var initial = document.documentElement.getAttribute("data-theme") || stored || "light";
@@ -40,6 +41,10 @@
         var label = button.querySelector(".theme-label");
         if (label) label.textContent = dark ? "Light" : "Dark";
       });
+      choices.forEach(function (button) {
+        button.setAttribute('aria-pressed', String(button.getAttribute('data-theme-choice') === mode));
+      });
+      document.querySelectorAll('[data-appearance-current]').forEach(function(label){label.textContent=dark?'Dark':'Light';label.closest('summary').setAttribute('aria-label','Appearance: '+mode+' mode');});
       var meta = document.querySelector('meta[name="theme-color"]');
       if (meta) meta.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--bg").trim());
     }
@@ -53,6 +58,7 @@
         apply(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark", true);
       });
     });
+    choices.forEach(function(button){button.addEventListener('click',function(){apply(button.getAttribute('data-theme-choice'),true);});});
   }
 
   function navigation() {

@@ -254,13 +254,13 @@ def main() -> int:
         # changes whenever the file does. Pinning it here would fail the build
         # every time the stylesheet was edited.
         publication = 'data-publication="2026-09"' in text
-        if publication and len(re.findall(r'href="/?css/publication\.css(?:\?[^\"]*)?"',text)) != 1:
+        if publication and len(re.findall(r'data-source-path="css/publication\.css"|href="/?css/publication\.css(?:\?[^\"]*)?"',text)) != 1:
             errors.append(f"{path}: publication stylesheet must load exactly once")
         if not publication and not re.search(r'href="css/(?:premium-v4|reading-bundle)\.css\?v=', text):
             errors.append(f"{path}: shared premium visual system is missing")
         if not publication and (text.count("css/unified-v7.css") != 1 or not re.search(r'href="css/(?:unified-v7|core-bundle)\.css\?', text)):
             errors.append(f"{path}: unified visual layer must load exactly once")
-        if text.count("js/unified-v7.js?") != 1:
+        if text.count('data-source-path="js/unified-v7.js"') + text.count("js/unified-v7.js?") != 1:
             errors.append(f"{path}: unified interaction layer must load exactly once")
         for legacy_script in ("js/site-motion.js?", "js/polish.js?", "js/studio-v6.js?", "js/atelier-v5.js?"):
             if legacy_script in text:
@@ -403,7 +403,7 @@ def main() -> int:
     for feature in ('finder-filters', 'data-open-filters', 'data-open-compare', 'aria-live="polite"', 'Not verified'):
         if feature not in finder_script:
             errors.append(f"meal finder: missing required interface feature {feature}")
-    if 'js/meal-finder.js?' not in finder_text or 'data-first-question' in finder_text:
+    if not re.search(r'<script\b[^>]*(?:data-source-path="js/meal-finder\.js"|src="js/meal-finder\.js\?)', finder_text) or 'data-first-question' in finder_text:
         errors.append('meal finder: direct browsing migration incomplete')
     # Results, filters and quiz steps update in place. They must never take
     # over the viewport: mobile Safari is especially eager to animate these
@@ -451,7 +451,7 @@ def main() -> int:
 
     calc_text = pages.get("calculators.html", ("", PageParser()))[0]
     home_text = pages.get("index.html", ("", PageParser()))[0]
-    if "js/macro-math.js?v=" not in calc_text:
+    if not re.search(r'<script\b[^>]*(?:data-source-path="js/macro-math\.js"|src="js/macro-math\.js\?v=)', calc_text):
         errors.append("macro calculator: shared calculation engine is missing from calculators.html")
     for goal_value, goal_label in (
         ("lose", "Lose weight"),

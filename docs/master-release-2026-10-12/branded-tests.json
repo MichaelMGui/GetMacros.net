@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "realSourceTests": 26,
+  "preciseSearchBytes": 1009449,
+  "preciseSearchRequests": 33,
+  "sourceCounts": [
+    {
+      "source": "usda",
+      "count": 36862
+    },
+    {
+      "source": "retailer-ca",
+      "count": 4
+    },
+    {
+      "source": "cnf",
+      "count": 5993
+    }
+  ]
+}

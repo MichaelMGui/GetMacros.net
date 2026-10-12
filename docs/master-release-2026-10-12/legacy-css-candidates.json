@@ -1,0 +1,932 @@
+[
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-intro p",
+    "unknownClasses": [
+      "chain-finder-intro"
+    ],
+    "bytes": 57
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-next",
+    "unknownClasses": [
+      "hub-next"
+    ],
+    "bytes": 37
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics",
+    "unknownClasses": [
+      "hub-topics"
+    ],
+    "bytes": 67
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics a",
+    "unknownClasses": [
+      "hub-topics"
+    ],
+    "bytes": 195
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics a:hover",
+    "unknownClasses": [
+      "hub-topics"
+    ],
+    "bytes": 43
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".search-group-head",
+    "unknownClasses": [
+      "search-group-head"
+    ],
+    "bytes": 92
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".search-group-count",
+    "unknownClasses": [
+      "search-group-count"
+    ],
+    "bytes": 55
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-layout",
+    "unknownClasses": [
+      "chain-finder-layout"
+    ],
+    "bytes": 56
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".chain-finder-intro p",
+    "unknownClasses": [
+      "chain-finder-intro"
+    ],
+    "bytes": 37
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".meal-browser-shell",
+    "unknownClasses": [
+      "meal-browser-shell"
+    ],
+    "bytes": 83
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics",
+    "unknownClasses": [
+      "hub-topics"
+    ],
+    "bytes": 20
+  },
+  {
+    "file": "market-content.css",
+    "selector": ".hub-topics a",
+    "unknownClasses": [
+      "hub-topics"
+    ],
+    "bytes": 48
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 86
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .text-action",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 44
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".ensemble-note",
+    "unknownClasses": [
+      "ensemble-note"
+    ],
+    "bytes": 129
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "unknownClasses": [
+      "popular-meals"
+    ],
+    "bytes": 83
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-row",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 175
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading h2",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 79
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading p",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 48
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 55
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 49
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 77
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 151
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>[data-food-character]",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 57
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation h2",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 56
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation p",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 63
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>.btn",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 39
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip",
+    "unknownClasses": [
+      "restaurant-directory-strip"
+    ],
+    "bytes": 101
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip a",
+    "unknownClasses": [
+      "restaurant-directory-strip"
+    ],
+    "bytes": 212
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools",
+    "unknownClasses": [
+      "home-tools"
+    ],
+    "bytes": 85
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool",
+    "unknownClasses": [
+      "daily-tool"
+    ],
+    "bytes": 53
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool>[data-food-character]",
+    "unknownClasses": [
+      "daily-tool"
+    ],
+    "bytes": 52
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool p",
+    "unknownClasses": [
+      "daily-tool"
+    ],
+    "bytes": 50
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools>a",
+    "unknownClasses": [
+      "supporting-tools"
+    ],
+    "bytes": 166
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools span",
+    "unknownClasses": [
+      "supporting-tools"
+    ],
+    "bytes": 68
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools small",
+    "unknownClasses": [
+      "supporting-tools"
+    ],
+    "bytes": 54
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".supporting-tools b",
+    "unknownClasses": [
+      "supporting-tools"
+    ],
+    "bytes": 81
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".chain-finder-intro h2",
+    "unknownClasses": [
+      "chain-finder-intro"
+    ],
+    "bytes": 40
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-masthead",
+    "unknownClasses": [
+      "journal-masthead"
+    ],
+    "bytes": 38
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-masthead h1",
+    "unknownClasses": [
+      "journal-masthead"
+    ],
+    "bytes": 55
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-content",
+    "unknownClasses": [
+      "journal-content"
+    ],
+    "bytes": 71
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover",
+    "unknownClasses": [
+      "journal-cover"
+    ],
+    "bytes": 83
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover h2",
+    "unknownClasses": [
+      "journal-cover"
+    ],
+    "bytes": 35
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover h2 a",
+    "unknownClasses": [
+      "journal-cover"
+    ],
+    "bytes": 58
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover p",
+    "unknownClasses": [
+      "journal-cover"
+    ],
+    "bytes": 53
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article",
+    "unknownClasses": [
+      "journal-contents"
+    ],
+    "bytes": 77
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article h2",
+    "unknownClasses": [
+      "journal-contents"
+    ],
+    "bytes": 47
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article h2 a",
+    "unknownClasses": [
+      "journal-contents"
+    ],
+    "bytes": 69
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article p",
+    "unknownClasses": [
+      "journal-contents"
+    ],
+    "bytes": 73
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-issue",
+    "unknownClasses": [
+      "journal-issue"
+    ],
+    "bytes": 115
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-contents article>span",
+    "unknownClasses": [
+      "journal-contents"
+    ],
+    "bytes": 115
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "unknownClasses": [
+      "popular-meals"
+    ],
+    "bytes": 61
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading h2",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 45
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools",
+    "unknownClasses": [
+      "home-tools"
+    ],
+    "bytes": 21
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip",
+    "unknownClasses": [
+      "restaurant-directory-strip"
+    ],
+    "bytes": 74
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools",
+    "unknownClasses": [
+      "home-tools"
+    ],
+    "bytes": 38
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool",
+    "unknownClasses": [
+      "daily-tool"
+    ],
+    "bytes": 21
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools .supporting-tools",
+    "unknownClasses": [
+      "home-tools",
+      "supporting-tools"
+    ],
+    "bytes": 98
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-content",
+    "unknownClasses": [
+      "journal-content"
+    ],
+    "bytes": 26
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 39
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .btn",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 56
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .text-action",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 44
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".ensemble-note",
+    "unknownClasses": [
+      "ensemble-note"
+    ],
+    "bytes": 52
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "unknownClasses": [
+      "popular-meals"
+    ],
+    "bytes": 72
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading h2",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 50
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .order-heading p",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 48
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 46
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 48
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd span",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 53
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dt",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 48
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 52
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action svg",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 42
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 80
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>[data-food-character]",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 56
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation h2",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 37
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation p",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 35
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".quiz-invitation>.btn",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 64
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip",
+    "unknownClasses": [
+      "restaurant-directory-strip"
+    ],
+    "bytes": 72
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".restaurant-directory-strip a",
+    "unknownClasses": [
+      "restaurant-directory-strip"
+    ],
+    "bytes": 47
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-tools .supporting-tools",
+    "unknownClasses": [
+      "home-tools",
+      "supporting-tools"
+    ],
+    "bytes": 44
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool>[data-food-character]",
+    "unknownClasses": [
+      "daily-tool"
+    ],
+    "bytes": 51
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool",
+    "unknownClasses": [
+      "daily-tool"
+    ],
+    "bytes": 21
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".daily-tool h2",
+    "unknownClasses": [
+      "daily-tool"
+    ],
+    "bytes": 33
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-content",
+    "unknownClasses": [
+      "journal-content"
+    ],
+    "bytes": 153
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover",
+    "unknownClasses": [
+      "journal-cover"
+    ],
+    "bytes": 28
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-cover h2",
+    "unknownClasses": [
+      "journal-cover"
+    ],
+    "bytes": 35
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".journal-masthead h1",
+    "unknownClasses": [
+      "journal-masthead"
+    ],
+    "bytes": 38
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 23
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .btn",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 39
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".hero-actions .text-action",
+    "unknownClasses": [
+      "hero-actions"
+    ],
+    "bytes": 44
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".popular-meals",
+    "unknownClasses": [
+      "popular-meals"
+    ],
+    "bytes": 24
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 37
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers dd",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 48
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 44
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".page-category",
+    "unknownClasses": [
+      "page-category"
+    ],
+    "bytes": 28
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature",
+    "unknownClasses": [
+      "learn-feature"
+    ],
+    "bytes": 175
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature .food-character",
+    "unknownClasses": [
+      "learn-feature"
+    ],
+    "bytes": 49
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature h2",
+    "unknownClasses": [
+      "learn-feature"
+    ],
+    "bytes": 52
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature p",
+    "unknownClasses": [
+      "learn-feature"
+    ],
+    "bytes": 52
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature",
+    "unknownClasses": [
+      "learn-feature"
+    ],
+    "bytes": 65
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature .food-character",
+    "unknownClasses": [
+      "learn-feature"
+    ],
+    "bytes": 48
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".learn-feature h2",
+    "unknownClasses": [
+      "learn-feature"
+    ],
+    "bytes": 35
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-row",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 80
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .meal-numbers",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 45
+  },
+  {
+    "file": "food-design.css",
+    "selector": ".home-popular .text-action",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 40
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-library-grid",
+    "unknownClasses": [
+      "release-library-grid"
+    ],
+    "bytes": 92
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource",
+    "unknownClasses": [
+      "release-resource"
+    ],
+    "bytes": 69
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource h3",
+    "unknownClasses": [
+      "release-resource"
+    ],
+    "bytes": 67
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource p",
+    "unknownClasses": [
+      "release-resource"
+    ],
+    "bytes": 79
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".release-resource a",
+    "unknownClasses": [
+      "release-resource"
+    ],
+    "bytes": 37
+  },
+  {
+    "file": "release-product.css",
+    "selector": ".order-actions",
+    "unknownClasses": [
+      "order-actions"
+    ],
+    "bytes": 277
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".restaurant-directory-strip a:hover",
+    "unknownClasses": [
+      "restaurant-directory-strip"
+    ],
+    "bytes": 103
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".restaurant-directory-strip a:focus-visible",
+    "unknownClasses": [
+      "restaurant-directory-strip"
+    ],
+    "bytes": 103
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".home-popular .meal-row",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 42
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".home-popular .meal-numbers",
+    "unknownClasses": [
+      "home-popular"
+    ],
+    "bytes": 37
+  },
+  {
+    "file": "playful-system.css",
+    "selector": ".quiz-invitation",
+    "unknownClasses": [
+      "quiz-invitation"
+    ],
+    "bytes": 35
+  }
+]

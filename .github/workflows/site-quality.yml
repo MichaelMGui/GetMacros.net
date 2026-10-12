@@ -46,3 +46,5 @@ jobs:
           node tools/play_release/test-rules.cjs
           python3 tools/test-release-content.py
           python3 tools/test_asset_stamps.py
+          node tools/master_release/test-branded-search.cjs
+          node tools/master_release/test-branded-integrity.cjs

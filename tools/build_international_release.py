@@ -112,7 +112,7 @@ def data():
  # Existing U.S. identity and source dates are retained, not recertified today.
  script="const fs=require('fs'),vm=require('vm'),s={window:{}};vm.createContext(s);for(const f of ['meal-data','meal-provenance'])vm.runInContext(fs.readFileSync('js/'+f+'.js','utf8'),s);console.log(JSON.stringify(s.window.GM_MEALS));"
  rows=json.loads(subprocess.run(['node','-e',script],cwd=ROOT,capture_output=True,text=True,check=True,encoding='utf-8').stdout)
- fats={r['chain']+'||'+r['name']:r.get('fat') for r in rows};p=ROOT/'js/meal-data.js';s=p.read_text(encoding='utf-8');s=re.sub(r'/\* market-model:start \*/.*?/\* market-model:end \*/','',s,flags=re.S)
+ fats={r['chain']+'||'+r['name']:r.get('fat') for r in rows};p=ROOT/'js/meal-data.js';s=p.read_text(encoding='utf-8');s=re.sub(r'/\* market-model:start \*/.*?/\* market-model:end \*/','',s,flags=re.S).rstrip()
  s+='\n/* market-model:start */\n(function(){const fats='+json.dumps(fats,ensure_ascii=False,separators=(',',':'))+';window.GM_MEALS.forEach(m=>{m.market="US";m.country="US";m.fat=fats[m.chain+"||"+m.name]??null;});})();\n/* market-model:end */\n';write('js/meal-data.js',s)
  for r in rows:r.update(market='US',country='US',restaurantId=slug(r['chain']),units={'cal':'kcal','p':'g','c':'g','fat':'g','f':'g','na':'mg'},retrievedAt=r.get('checked'),sourceDate=r.get('sourceDate'),verificationStatus=r.get('verificationStatus','legacy-source-record; not reverified for the Canadian launch'),conversions=[])
  # Keep new and reverified U.S. component records without duplicate identities.

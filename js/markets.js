@@ -28,11 +28,33 @@ function init(){document.querySelectorAll('[data-current-market-label]').forEach
  document.querySelectorAll('.nav-search-panel').forEach(form=>{if(form.tagName!=='FORM')return;let input=form.querySelector('[name=market]');if(!input){input=document.createElement('input');input.type='hidden';input.name='market';form.append(input);}input.value=current;});
  document.querySelectorAll('[data-market-only]').forEach(a=>a.hidden=a.dataset.marketOnly!==current);
  if(current==='CA'){const hint=document.querySelector('[data-search-query=Chipotle]');if(hint){hint.dataset.searchQuery='Tim Hortons';hint.textContent='Tim Hortons';}const search=document.querySelector('#site-search');if(search)search.placeholder='Try protein latte or breakfast';}
- const pickers=[...document.querySelectorAll('.country-picker,.language-picker')];
+ const pickers=[...document.querySelectorAll('.country-picker,.language-picker,.appearance-picker,.nav-search')];
  pickers.forEach(p=>p.addEventListener('toggle',()=>{if(p.open)pickers.filter(x=>x!==p).forEach(x=>x.open=false)}));
  document.addEventListener('click',e=>pickers.forEach(p=>{if(p.open&&!p.contains(e.target))p.open=false}));
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){const p=pickers.find(x=>x.open);if(p){e.preventDefault();p.open=false;p.querySelector('summary').focus();}}});
  document.querySelectorAll('[data-country-form]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();const value=form.querySelector('[data-country-select]').value;persist(value);if(value===current){form.closest('details').open=false;form.closest('details').querySelector('summary').focus();return;}location.assign(switchURL(value).href);}));
+ const choices=[...document.querySelectorAll('[data-country-choice]')];
+ choices.forEach(a=>{
+  const value=a.dataset.countryChoice;
+  if(!definitions[value])return;
+  a.href=switchURL(value).href;
+  if(value===current)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+  a.addEventListener('click',e=>{
+   // Links remain crawlable and support opening a deliberate country in a tab.
+   if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
+   persist(value);
+   if(value===current){e.preventDefault();const picker=a.closest('details');picker.open=false;picker.querySelector('summary').focus();}
+  });
+ });
+ const countryPanel=document.querySelector('.country-panel');
+ countryPanel?.addEventListener('keydown',e=>{
+  const shown=choices.filter(a=>!a.closest('li').hidden),index=shown.indexOf(document.activeElement);
+  if(index<0)return;
+  const next=e.key==='ArrowDown'?(index+1)%shown.length:e.key==='ArrowUp'?(index-1+shown.length)%shown.length:e.key==='Home'?0:e.key==='End'?shown.length-1:null;
+  if(next!==null){e.preventDefault();shown[next].focus();}
+ });
+ const countrySearch=document.querySelector('[data-country-search]');
+ if(countrySearch&&choices.length>12){countrySearch.closest('label').hidden=false;countrySearch.addEventListener('input',()=>{const q=countrySearch.value.trim().toLocaleLowerCase();choices.forEach(a=>a.closest('li').hidden=!definitions[a.dataset.countryChoice].name.toLocaleLowerCase().includes(q));});}
  if(new URLSearchParams(location.search).has('marketChanged')){const n=document.createElement('p');n.className='market-notice';n.setAttribute('role','status');n.textContent=new URLSearchParams(location.search).get('marketChanged')==='page'?'Country changed. This restaurant or exact order is not published in the selected market, so its selection was cleared. Browse the available local menus below.':'Country changed. Restaurant, comparison or ingredient selections that do not apply here were cleared. Compatible nutrient limits and meal preferences were kept.';const quiz=document.querySelector('#meal-quiz');if(quiz)quiz.before(n);else document.querySelector('main')?.prepend(n);const url=new URL(location.href);url.searchParams.delete('marketChanged');history.replaceState(null,'',url);}
  const currency=document.querySelector('#receipt-currency');if(currency&&!currency.dataset.userSet&&[...currency.options].some(o=>o.value===definitions[current].currency))currency.value=definitions[current].currency;currency?.addEventListener('change',()=>currency.dataset.userSet='true');
 }

@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 rows=[]
 for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  text=path.read_text(encoding='utf-8');doc=Document(text)
- styles=[n['attrs']['href'].split('?')[0].lstrip('/') for n in doc.nodes if n['tag']=='link' and n['attrs'].get('rel')=='stylesheet']
+ styles=[n['attrs'].get('data-source-path',n['attrs']['href'].split('?')[0].lstrip('/')) for n in doc.nodes if n['tag']=='link' and n['attrs'].get('rel')=='stylesheet']
  assert styles and styles[0]=='css/publication.css' and len(styles)==len(set(styles)),(path.name,styles)
  assert all(s in {'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css'} for s in styles),(path.name,styles)
  if 'css/food-app.css' in styles:assert 'food-app' in text or 'product-diary:start' in text,path.name
@@ -19,7 +19,9 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  ids=[n['attrs']['id'] for n in doc.nodes if 'id' in n['attrs']]
  assert len(ids)==len(set(ids)),path.name
  assert len([n for n in doc.nodes if n['tag']=='h1'])==1,path.name
- assert text.count('data-theme-toggle')==1,path.name
+ assert text.count('data-theme-toggle')==0,path.name
+ assert text.count('data-theme-choice="light"')==1 and text.count('data-theme-choice="dark"')==1,path.name
+ assert text.count('class="appearance-picker"')==1,path.name
  main=next(n for n in doc.nodes if n['tag']=='main')
  content=text[main['inner']:main['close']]
  plain=re.sub('<[^>]+>',' ',content)

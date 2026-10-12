@@ -1,0 +1,3888 @@
+{
+  "date": "2026-10-12",
+  "routesChecked": 348,
+  "method": "Automated authored main-content paragraphs/headings; excludes navigation and numeric tables. A report is not manual review of every sentence.",
+  "repeatedBlocks": [
+    [
+      {
+        "route": "added-sugar-percentage-from-grams.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "breakfast-food-vs-combo-menu.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "breakfast-sandwich-half-not-half-protein.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "breakfast-two-items-not-one-entry.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "breakfast-yogurt-topping-layer.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "calculator-activity-choice-sensitivity.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "calculator-input-basis-checklist.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "calculator-pound-kilogram-entry.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "calculator-round-at-end.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "calorie-range-menu-reading.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "calorie-tool-output-reverse-check.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "calorie-units-kcal-kilojoules.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "fiber-daily-value-portion-example.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "fiber-per-portion-vs-density.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "grams-per-serving-vs-protein-percentage.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "half-serving-percent-daily-value.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "meal-calculation-two-serving-units.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "meal-filters-intersection-not-extra-options.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "milligram-microgram-mineral-label.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "net-carbs-total-carbohydrate.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "nutrient-grams-not-food-weight.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "nutrition-blank-vs-not-detected.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "nutrition-data-mean-not-every-portion.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "per-ounce-vs-per-100g-food.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "percent-daily-value-not-vertical-total.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "percentage-points-vs-percent-food-labels.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "portion-ratio-vs-percent-change.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "protein-cost-currency-comparison.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "protein-cost-pack-size-minimum-spend.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "protein-label-blank-daily-value.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "protein-per-package-not-scoop-count.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "protein-serving-count-day-not-prescription.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "protein-target-gap-not-automatic-extra.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "protein-value-after-fixed-delivery-fee.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-added-water-not-new-nutrients.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-combined-batches-not-average-serving.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-discrete-pieces-count-or-weight.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-evaporation-weight-density.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-fixed-seasoning-scale.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-freezing-portion-count.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-left-in-pan-residual.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-one-ingredient-substitution.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-quarter-batch-not-quarter-ingredient.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-recalculate-new-product-label.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-repeated-ingredient-two-label-bases.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-sauce-made-vs-sauce-used.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-sauce-on-side-two-totals.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-target-batch-portions-integer.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "recipe-uniform-vs-component-serving.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "restaurant-compare-tradeoff-not-single-score.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "restaurant-dominated-choice-still-context.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "restaurant-menu-serving-weight.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "restaurant-protein-value-no-price-data.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "sodium-milligrams-to-grams.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "sugar-lines-do-not-add.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "tare-bowl-before-weighing-food.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "two-fiber-sources-one-bowl.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "two-for-one-protein-promotion.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      },
+      {
+        "route": "weigh-food-by-container-difference.html",
+        "element": "p",
+        "text": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have."
+      }
+    ],
+    [
+      {
+        "route": "play-bean-balance.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-berry-bounce.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-build-a-plate.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-claim-check.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-description-detective.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-fiber-trail.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-food-crossword.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-food-factory.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-fruit-catch.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-garden-glide.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-garden-pipes.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-harvest-conveyor.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-ingredient-anagrams.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-ingredient-order.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-kitchen-connections.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-kitchen-rhythm.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-label-matchmaker.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-lunchbox-logic.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-macro-grid.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-market-budget.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-market-memory.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-mascot-maker.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-menu-mystery.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-menu-word-hunt.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-missing-number-kitchen.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-nutrition-term-match.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-odd-ingredient-out.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-orange-orbit.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-orchard-nonogram.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-order-recall.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-pantry-pack.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-pantry-peek.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-picnic-delivery.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-picnic-planner.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-plate-art.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-portion-balance.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-portion-fractions.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-protein-target-puzzle.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-range-finder.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-recipe-dominoes.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-recipe-path.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-recipe-remix.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-restaurant-order-builder.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-restaurant-route.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-rounding-room.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-sandwich-architect.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-sequence-chef.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-serving-size-detective.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-silhouette-supper.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-smoothie-studio.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-snack-slide.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-sodium-sort.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-source-sleuth.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-spot-the-swap.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-tabletop-tangram.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      },
+      {
+        "route": "play-trade-off-table.html",
+        "element": "p",
+        "text": "This interactive game needs JavaScript. The instructions below remain available, or read the nutrition guides ."
+      }
+    ],
+    [
+      {
+        "route": "play-bean-balance.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-berry-bounce.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-build-a-plate.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-claim-check.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-description-detective.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-fiber-trail.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-food-crossword.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-food-factory.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-fruit-catch.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-garden-glide.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-garden-pipes.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-harvest-conveyor.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-ingredient-anagrams.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-ingredient-order.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-kitchen-connections.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-kitchen-rhythm.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-label-matchmaker.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-lunchbox-logic.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-macro-grid.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-market-budget.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-market-memory.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-mascot-maker.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-menu-mystery.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-menu-word-hunt.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-missing-number-kitchen.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-nutrition-term-match.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-odd-ingredient-out.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-orange-orbit.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-orchard-nonogram.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-order-recall.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-pantry-pack.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-pantry-peek.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-picnic-delivery.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-picnic-planner.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-plate-art.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-portion-balance.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-portion-fractions.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-protein-target-puzzle.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-range-finder.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-recipe-dominoes.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-recipe-path.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-recipe-remix.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-restaurant-order-builder.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-restaurant-route.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-rounding-room.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-sandwich-architect.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-sequence-chef.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-serving-size-detective.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-silhouette-supper.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-smoothie-studio.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-snack-slide.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-sodium-sort.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-source-sleuth.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-spot-the-swap.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-tabletop-tangram.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      },
+      {
+        "route": "play-trade-off-table.html",
+        "element": "p",
+        "text": "Use touch or Tab and Enter. Restart repeats the puzzle; New puzzle changes it. There is no timer or mandatory sound."
+      }
+    ],
+    [
+      {
+        "route": "play-bean-balance.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-berry-bounce.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-build-a-plate.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-claim-check.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-description-detective.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-fiber-trail.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-food-crossword.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-food-factory.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-fruit-catch.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-garden-glide.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-garden-pipes.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-harvest-conveyor.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-ingredient-anagrams.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-ingredient-order.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-kitchen-connections.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-kitchen-rhythm.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-label-matchmaker.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-lunchbox-logic.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-macro-grid.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-market-budget.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-market-memory.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-mascot-maker.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-menu-mystery.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-menu-word-hunt.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-missing-number-kitchen.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-nutrition-term-match.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-odd-ingredient-out.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-orange-orbit.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-orchard-nonogram.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-order-recall.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-pantry-pack.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-pantry-peek.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-picnic-delivery.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-picnic-planner.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-plate-art.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-portion-balance.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-portion-fractions.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-protein-target-puzzle.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-range-finder.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-recipe-dominoes.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-recipe-path.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-recipe-remix.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-restaurant-order-builder.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-restaurant-route.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-rounding-room.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-sandwich-architect.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-sequence-chef.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-serving-size-detective.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-silhouette-supper.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-smoothie-studio.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-snack-slide.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-sodium-sort.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-source-sleuth.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-spot-the-swap.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-tabletop-tangram.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      },
+      {
+        "route": "play-trade-off-table.html",
+        "element": "p",
+        "text": "Original GetMacros rules and food artwork. Progress and saved creations stay in this browser. No account or public leaderboard."
+      }
+    ],
+    [
+      {
+        "route": "arbys-breakfast-bread-format.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "arbys-roast-beef-cheddar-french-dip.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "arbys-sliders-count-whole-tray.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "breakfast-bacon-format-sodium-cross-chain.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "burrito-wrap-cross-chain-no-size-standard.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "cross-chain-bean-burritos-serving-proof.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "cross-chain-breakfast-ham-formats.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "cross-chain-chicken-soup-no-sodium-assumption.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "cross-chain-melt-sandwich-orders.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "culvers-chicken-grilled-crispy-spicy.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "culvers-dinner-name-side-footnote.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "del-taco-bean-burrito-vs-veggie-burrito.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "del-taco-two-street-tacos-vs-burrito.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "el-pollo-loco-bowls-protein-bigger-build.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "el-pollo-loco-salad-dressing-boundary.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "el-pollo-loco-tortilla-complete-chicken-meal.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "equal-calories-different-macros-menu.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "equal-tax-protein-value-ranking.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "fat-and-carb-two-energy-profiles.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "fiber-count-menu-not-plant-score.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "in-n-out-double-vs-two-hamburgers.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "in-n-out-three-published-hamburger-versions.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "menu-pdf-filename-not-edition-date.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "noodles-mac-protein-not-simple-add-on.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "noodles-regular-noodle-orders-not-addons.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "noodles-two-chicken-salads.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "nutrition-totals-not-ingredient-recipe.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "protein-chicken-sandwich-size-cross-chain.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "protein-sort-vs-portion-mass.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "protein-value-price-range-overlap.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "qdoba-burrito-bowl-published-pair.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "qdoba-vegan-bowl-fiber-tradeoff.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "raising-canes-build-order-not-combo-name.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "restaurant-protein-cost-receipt-prices.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "restaurant-value-your-nutrient-not-protein.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "salad-burger-calories-no-category-rule.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "saved-meal-source-version-check.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "sonic-hot-dog-sodium-toppings.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "sonic-small-burgers-not-same-order.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "sonic-ultimate-breakfast-not-extra-protein-rule.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "taco-johns-bowl-base-tradeoff.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "taco-johns-breakfast-taco-vs-burrito.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "taco-johns-small-fiber-bound.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "three-count-tacos-not-three-equal-meals.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      },
+      {
+        "route": "two-person-restaurant-budget-constraints.html",
+        "element": "p",
+        "text": "These are specific U.S. source-defined orders, not personalised recommendations or worldwide menus. Published values are estimates of standard portions. Extra items, unrecorded substitutions, prices and allergen safety are not inferred. Source retrieval is October 4, 2026; an older printed edition remains an older edition."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-bacon-format-sodium-cross-chain.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-breakfast-ham-formats.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-chicken-soup-no-sodium-assumption.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "equal-calories-different-macros-menu.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "fat-and-carb-two-energy-profiles.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "fat-and-carb-two-energy-profiles.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "fiber-count-menu-not-plant-score.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-pdf-filename-not-edition-date.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "noodles-mac-protein-not-simple-add-on.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "noodles-regular-noodle-orders-not-addons.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "noodles-two-chicken-salads.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "nutrition-totals-not-ingredient-recipe.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "protein-chicken-sandwich-size-cross-chain.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "salad-burger-calories-no-category-rule.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "sonic-hot-dog-sodium-toppings.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "sonic-small-burgers-not-same-order.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "sonic-ultimate-breakfast-not-extra-protein-rule.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "taco-johns-bowl-base-tradeoff.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "taco-johns-breakfast-taco-vs-burrito.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      },
+      {
+        "route": "taco-johns-small-fiber-bound.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition not established. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "play-build-a-plate.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-claim-check.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-fiber-trail.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-food-factory.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-harvest-conveyor.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-ingredient-order.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-label-matchmaker.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-macro-grid.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-missing-number-kitchen.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-portion-balance.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-portion-fractions.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-protein-target-puzzle.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-range-finder.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-recipe-dominoes.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-restaurant-route.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-rounding-room.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-serving-size-detective.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-sodium-sort.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      },
+      {
+        "route": "play-trade-off-table.html",
+        "element": "p",
+        "text": "All numerical labels in this puzzle are fictional examples. They are not menu values or personal targets."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-melt-sandwich-orders.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "culvers-chicken-grilled-crispy-spicy.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "culvers-dinner-name-side-footnote.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "equal-tax-protein-value-ranking.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "fiber-count-menu-not-plant-score.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "protein-chicken-sandwich-size-cross-chain.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "protein-value-price-range-overlap.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "restaurant-protein-cost-receipt-prices.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "salad-burger-calories-no-category-rule.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "two-meal-total-not-day-recommendation.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      },
+      {
+        "route": "two-person-restaurant-budget-constraints.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2025-07. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "arbys-breakfast-bread-format.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "arbys-roast-beef-cheddar-french-dip.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "arbys-sliders-count-whole-tray.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "breakfast-bacon-format-sodium-cross-chain.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burrito-wrap-cross-chain-no-size-standard.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-breakfast-ham-formats.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-melt-sandwich-orders.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "equal-calories-different-macros-menu.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-pdf-filename-not-edition-date.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "protein-sort-vs-portion-mass.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-06. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "as-packaged-vs-prepared-nutrition.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "breakfast-drinks-and-add-ons.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "calculate-macros-mixed-bowl.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "calories-in-multi-serving-packages.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "compare-complete-restaurant-orders.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "drained-weight-nutrition-label.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "edible-portion-vs-purchased-weight.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "grams-vs-milliliters-nutrition-labels.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "missing-restaurant-nutrition.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "nutrition-label-rounding.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "protein-cost-food-waste.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "protein-powder-scoop-weight.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "raw-vs-cooked-food-weight.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "unequal-recipe-portions.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      },
+      {
+        "route": "use-calorie-target-meal-finder.html",
+        "element": "p",
+        "text": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ."
+      }
+    ],
+    [
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "chick-fil-a-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "dunkin-healthy-breakfast-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "jersey-mikes-healthy-subs-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "kfc-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "mcdonalds-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "panda-express-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "panera-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "popeyes-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "starbucks-healthy-food-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "subway-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "sweetgreen-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "taco-bell-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      },
+      {
+        "route": "wendys-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Protein per 100 calories = protein grams ÷ calories × 100. It is a transparent efficiency metric, not a health score."
+      }
+    ],
+    [
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "chick-fil-a-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "dunkin-healthy-breakfast-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "jersey-mikes-healthy-subs-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "kfc-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "mcdonalds-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "panda-express-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "panera-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "popeyes-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "starbucks-healthy-food-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "subway-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "sweetgreen-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "taco-bell-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      },
+      {
+        "route": "wendys-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Recorded U.S. portions; extra items excluded. A dash means unverified."
+      }
+    ],
+    [
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "chick-fil-a-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "dunkin-healthy-breakfast-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "jersey-mikes-healthy-subs-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "kfc-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "mcdonalds-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "panda-express-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "panera-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "popeyes-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "starbucks-healthy-food-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "subway-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "sweetgreen-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "taco-bell-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      },
+      {
+        "route": "wendys-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures use the recorded source dates. Confirm current portions and local availability before ordering."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burrito-wrap-cross-chain-no-size-standard.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "fiber-count-menu-not-plant-score.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "nutrition-totals-not-ingredient-recipe.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "protein-sort-vs-portion-mass.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "qdoba-burrito-bowl-published-pair.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "qdoba-vegan-bowl-fiber-tradeoff.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "saved-meal-source-version-check.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "three-count-tacos-not-three-equal-meals.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      },
+      {
+        "route": "two-meal-total-not-day-recommendation.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-bean-burritos-serving-proof.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "del-taco-bean-burrito-vs-veggie-burrito.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "del-taco-two-street-tacos-vs-burrito.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "fiber-count-menu-not-plant-score.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "restaurant-value-your-nutrient-not-protein.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      },
+      {
+        "route": "three-count-tacos-not-three-equal-meals.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-02. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-bean-burritos-serving-proof.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "cross-chain-chicken-soup-no-sodium-assumption.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "el-pollo-loco-bowls-protein-bigger-build.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "el-pollo-loco-salad-dressing-boundary.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "el-pollo-loco-tortilla-complete-chicken-meal.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      },
+      {
+        "route": "salad-burger-calories-no-category-rule.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-09. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "arbys-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "culvers-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "del-taco-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "el-pollo-loco-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "in-n-out-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "noodles-and-company-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "qdoba-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "raising-canes-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "sonic-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      },
+      {
+        "route": "taco-johns-nutrition-guide.html",
+        "element": "p",
+        "text": "Calories are kcal; protein, carbohydrate, fat and fiber are grams; sodium is milligrams. These are listed U.S. orders, not a complete live menu. A dash stays unknown, including published “less than” amounts."
+      }
+    ],
+    [
+      {
+        "route": "calculator-round-at-end.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "fiber-per-portion-vs-density.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "grams-per-serving-vs-protein-percentage.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "meal-calculation-two-serving-units.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "net-carbs-total-carbohydrate.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "nutrient-grams-not-food-weight.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "nutrition-blank-vs-not-detected.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "plant-name-not-fiber-number.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "protein-label-blank-daily-value.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      },
+      {
+        "route": "protein-target-gap-not-automatic-extra.html",
+        "element": "p",
+        "text": "Label quantities refer to the stated serving; nutrients are not interchangeable."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026."
+      },
+      {
+        "route": "in-n-out-double-vs-two-hamburgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026."
+      },
+      {
+        "route": "in-n-out-three-published-hamburger-versions.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-01. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026."
+      },
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026."
+      },
+      {
+        "route": "protein-chicken-sandwich-size-cross-chain.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026."
+      },
+      {
+        "route": "raising-canes-build-order-not-combo-name.html",
+        "element": "p",
+        "text": "Exact published order values and portion definitions; source edition 2026-08. Retrieved October 4, 2026."
+      }
+    ],
+    [
+      {
+        "route": "au/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Dietary classifications are not verified for this selection. Read the restaurant source and confirm ingredients locally."
+      },
+      {
+        "route": "ca/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Dietary classifications are not verified for this selection. Read the restaurant source and confirm ingredients locally."
+      },
+      {
+        "route": "gb/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Dietary classifications are not verified for this selection. Read the restaurant source and confirm ingredients locally."
+      },
+      {
+        "route": "ie/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Dietary classifications are not verified for this selection. Read the restaurant source and confirm ingredients locally."
+      },
+      {
+        "route": "jp/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Dietary classifications are not verified for this selection. Read the restaurant source and confirm ingredients locally."
+      },
+      {
+        "route": "mx/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Dietary classifications are not verified for this selection. Read the restaurant source and confirm ingredients locally."
+      },
+      {
+        "route": "nz/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Dietary classifications are not verified for this selection. Read the restaurant source and confirm ingredients locally."
+      }
+    ],
+    [
+      {
+        "route": "au/en/restaurants/guzman-y-gomez/index.html",
+        "element": "p",
+        "text": "Different customizations need their own source values. No allergen or dietary certification is provided. The table is a snapshot, not a guarantee of current local availability."
+      },
+      {
+        "route": "gb/en/restaurants/greggs/index.html",
+        "element": "p",
+        "text": "Different customizations need their own source values. No allergen or dietary certification is provided. The table is a snapshot, not a guarantee of current local availability."
+      },
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Different customizations need their own source values. No allergen or dietary certification is provided. The table is a snapshot, not a guarantee of current local availability."
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Different customizations need their own source values. No allergen or dietary certification is provided. The table is a snapshot, not a guarantee of current local availability."
+      },
+      {
+        "route": "jp/en/restaurants/mcdonald-s-japan/index.html",
+        "element": "p",
+        "text": "Different customizations need their own source values. No allergen or dietary certification is provided. The table is a snapshot, not a guarantee of current local availability."
+      },
+      {
+        "route": "mx/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Different customizations need their own source values. No allergen or dietary certification is provided. The table is a snapshot, not a guarantee of current local availability."
+      },
+      {
+        "route": "nz/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Different customizations need their own source values. No allergen or dietary certification is provided. The table is a snapshot, not a guarantee of current local availability."
+      }
+    ],
+    [
+      {
+        "route": "gb/en/index.html",
+        "element": "p",
+        "text": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt."
+      },
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt."
+      },
+      {
+        "route": "ie/en/index.html",
+        "element": "p",
+        "text": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt."
+      },
+      {
+        "route": "ie/en/index.html",
+        "element": "p",
+        "text": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt."
+      },
+      {
+        "route": "ie/en/index.html",
+        "element": "p",
+        "text": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt."
+      },
+      {
+        "route": "ie/en/index.html",
+        "element": "p",
+        "text": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt."
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "September 2026 edition explicitly covers UK and Republic of Ireland. Table basis: bread except salads/spuds, named protein and vegetables (onions, cucumbers, lettuce). Exact bread type and full ingredient formulation are not supplied here. Sauce/cheese changes require separate source values. Sodium is converted from published salt."
+      }
+    ],
+    [
+      {
+        "route": "dunkin-healthy-breakfast-macros.html",
+        "element": "p",
+        "text": "Figures checked against the linked official sources on September 9, 2026. Recipes, portions and local availability can change."
+      },
+      {
+        "route": "jersey-mikes-healthy-subs-macros.html",
+        "element": "p",
+        "text": "Figures checked against the linked official sources on September 9, 2026. Recipes, portions and local availability can change."
+      },
+      {
+        "route": "kfc-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures checked against the linked official sources on September 9, 2026. Recipes, portions and local availability can change."
+      },
+      {
+        "route": "mcdonalds-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures checked against the linked official sources on September 9, 2026. Recipes, portions and local availability can change."
+      },
+      {
+        "route": "subway-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures checked against the linked official sources on September 9, 2026. Recipes, portions and local availability can change."
+      },
+      {
+        "route": "wendys-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Figures checked against the linked official sources on September 9, 2026. Recipes, portions and local availability can change."
+      }
+    ],
+    [
+      {
+        "route": "au/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Choose a source-defined serving. Refine calories, protein and available nutrients."
+      },
+      {
+        "route": "gb/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Choose a source-defined serving. Refine calories, protein and available nutrients."
+      },
+      {
+        "route": "ie/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Choose a source-defined serving. Refine calories, protein and available nutrients."
+      },
+      {
+        "route": "jp/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Choose a source-defined serving. Refine calories, protein and available nutrients."
+      },
+      {
+        "route": "mx/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Choose a source-defined serving. Refine calories, protein and available nutrients."
+      },
+      {
+        "route": "nz/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "Choose a source-defined serving. Refine calories, protein and available nutrients."
+      }
+    ],
+    [
+      {
+        "route": "au/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "The filters need JavaScript. Listed source meals remain visible; country restaurant guides contain the full tables."
+      },
+      {
+        "route": "gb/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "The filters need JavaScript. Listed source meals remain visible; country restaurant guides contain the full tables."
+      },
+      {
+        "route": "ie/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "The filters need JavaScript. Listed source meals remain visible; country restaurant guides contain the full tables."
+      },
+      {
+        "route": "jp/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "The filters need JavaScript. Listed source meals remain visible; country restaurant guides contain the full tables."
+      },
+      {
+        "route": "mx/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "The filters need JavaScript. Listed source meals remain visible; country restaurant guides contain the full tables."
+      },
+      {
+        "route": "nz/en/find-a-meal/index.html",
+        "element": "p",
+        "text": "The filters need JavaScript. Listed source meals remain visible; country restaurant guides contain the full tables."
+      }
+    ],
+    [
+      {
+        "route": "au/en/collections/protein-meals/index.html",
+        "element": "p",
+        "text": "Source-defined items with at least 25 g protein per listed serving. Calories, portion size and sodium still matter to the comparison."
+      },
+      {
+        "route": "gb/en/collections/protein-meals/index.html",
+        "element": "p",
+        "text": "Source-defined items with at least 25 g protein per listed serving. Calories, portion size and sodium still matter to the comparison."
+      },
+      {
+        "route": "ie/en/collections/protein-meals/index.html",
+        "element": "p",
+        "text": "Source-defined items with at least 25 g protein per listed serving. Calories, portion size and sodium still matter to the comparison."
+      },
+      {
+        "route": "jp/en/collections/protein-meals/index.html",
+        "element": "p",
+        "text": "Source-defined items with at least 25 g protein per listed serving. Calories, portion size and sodium still matter to the comparison."
+      },
+      {
+        "route": "mx/en/collections/protein-meals/index.html",
+        "element": "p",
+        "text": "Source-defined items with at least 25 g protein per listed serving. Calories, portion size and sodium still matter to the comparison."
+      },
+      {
+        "route": "nz/en/collections/protein-meals/index.html",
+        "element": "p",
+        "text": "Source-defined items with at least 25 g protein per listed serving. Calories, portion size and sodium still matter to the comparison."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/restaurants/booster-juice/index.html",
+        "element": "p",
+        "text": "GetMacros is independent of the restaurant. Local availability, prepared portions and later menu changes can differ. No allergen guarantee is made."
+      },
+      {
+        "route": "ca/en/restaurants/domino-s/index.html",
+        "element": "p",
+        "text": "GetMacros is independent of the restaurant. Local availability, prepared portions and later menu changes can differ. No allergen guarantee is made."
+      },
+      {
+        "route": "ca/en/restaurants/mary-brown-s/index.html",
+        "element": "p",
+        "text": "GetMacros is independent of the restaurant. Local availability, prepared portions and later menu changes can differ. No allergen guarantee is made."
+      },
+      {
+        "route": "ca/en/restaurants/pizza-nova/index.html",
+        "element": "p",
+        "text": "GetMacros is independent of the restaurant. Local availability, prepared portions and later menu changes can differ. No allergen guarantee is made."
+      },
+      {
+        "route": "ca/en/restaurants/pizza-pizza/index.html",
+        "element": "p",
+        "text": "GetMacros is independent of the restaurant. Local availability, prepared portions and later menu changes can differ. No allergen guarantee is made."
+      },
+      {
+        "route": "ca/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "GetMacros is independent of the restaurant. Local availability, prepared portions and later menu changes can differ. No allergen guarantee is made."
+      }
+    ],
+    [
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "1 standard curated bowl, including its standard dips, toppings and dressing"
+      },
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "1 standard curated bowl, including its standard dips, toppings and dressing"
+      },
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "1 standard curated bowl, including its standard dips, toppings and dressing"
+      },
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "1 standard curated bowl, including its standard dips, toppings and dressing"
+      },
+      {
+        "route": "index.html",
+        "element": "p",
+        "text": "1 standard curated bowl, including its standard dips, toppings and dressing"
+      }
+    ],
+    [
+      {
+        "route": "fiber-daily-value-portion-example.html",
+        "element": "p",
+        "text": "Percent Daily Value is a reference comparison, not a personalised target."
+      },
+      {
+        "route": "half-serving-percent-daily-value.html",
+        "element": "p",
+        "text": "Percent Daily Value is a reference comparison, not a personalised target."
+      },
+      {
+        "route": "milligram-microgram-mineral-label.html",
+        "element": "p",
+        "text": "Percent Daily Value is a reference comparison, not a personalised target."
+      },
+      {
+        "route": "percent-daily-value-not-vertical-total.html",
+        "element": "p",
+        "text": "Percent Daily Value is a reference comparison, not a personalised target."
+      },
+      {
+        "route": "percentage-points-vs-percent-food-labels.html",
+        "element": "p",
+        "text": "Percent Daily Value is a reference comparison, not a personalised target."
+      }
+    ],
+    [
+      {
+        "route": "au/en/index.html",
+        "element": "p",
+        "text": "Mild standard build. Source recipe and ingredient matrix, pages 3–4; includes the listed filling, standard sauces and accompaniments. Spicy/rice/bean swaps are not applied. March 9, 2026 edition; locally prepared portions vary. Named components are not a full ingredient formulation."
+      },
+      {
+        "route": "au/en/index.html",
+        "element": "p",
+        "text": "Mild standard build. Source recipe and ingredient matrix, pages 3–4; includes the listed filling, standard sauces and accompaniments. Spicy/rice/bean swaps are not applied. March 9, 2026 edition; locally prepared portions vary. Named components are not a full ingredient formulation."
+      },
+      {
+        "route": "au/en/index.html",
+        "element": "p",
+        "text": "Mild standard build. Source recipe and ingredient matrix, pages 3–4; includes the listed filling, standard sauces and accompaniments. Spicy/rice/bean swaps are not applied. March 9, 2026 edition; locally prepared portions vary. Named components are not a full ingredient formulation."
+      },
+      {
+        "route": "au/en/index.html",
+        "element": "p",
+        "text": "Mild standard build. Source recipe and ingredient matrix, pages 3–4; includes the listed filling, standard sauces and accompaniments. Spicy/rice/bean swaps are not applied. March 9, 2026 edition; locally prepared portions vary. Named components are not a full ingredient formulation."
+      },
+      {
+        "route": "au/en/restaurants/guzman-y-gomez/index.html",
+        "element": "p",
+        "text": "Mild standard build. Source recipe and ingredient matrix, pages 3–4; includes the listed filling, standard sauces and accompaniments. Spicy/rice/bean swaps are not applied. March 9, 2026 edition; locally prepared portions vary. Named components are not a full ingredient formulation."
+      }
+    ],
+    [
+      {
+        "route": "jp/en/index.html",
+        "element": "p",
+        "text": "Japanese names and sizes are preserved from the official per-item table. Gram weights, fiber and full ingredient formulations are unavailable in this table. Sodium is converted from salt equivalent; sugar is total sugar. No equivalence to U.S. or Canadian recipes is assumed."
+      },
+      {
+        "route": "jp/en/index.html",
+        "element": "p",
+        "text": "Japanese names and sizes are preserved from the official per-item table. Gram weights, fiber and full ingredient formulations are unavailable in this table. Sodium is converted from salt equivalent; sugar is total sugar. No equivalence to U.S. or Canadian recipes is assumed."
+      },
+      {
+        "route": "jp/en/index.html",
+        "element": "p",
+        "text": "Japanese names and sizes are preserved from the official per-item table. Gram weights, fiber and full ingredient formulations are unavailable in this table. Sodium is converted from salt equivalent; sugar is total sugar. No equivalence to U.S. or Canadian recipes is assumed."
+      },
+      {
+        "route": "jp/en/index.html",
+        "element": "p",
+        "text": "Japanese names and sizes are preserved from the official per-item table. Gram weights, fiber and full ingredient formulations are unavailable in this table. Sodium is converted from salt equivalent; sugar is total sugar. No equivalence to U.S. or Canadian recipes is assumed."
+      },
+      {
+        "route": "jp/en/restaurants/mcdonald-s-japan/index.html",
+        "element": "p",
+        "text": "Japanese names and sizes are preserved from the official per-item table. Gram weights, fiber and full ingredient formulations are unavailable in this table. Sodium is converted from salt equivalent; sugar is total sugar. No equivalence to U.S. or Canadian recipes is assumed."
+      }
+    ],
+    [
+      {
+        "route": "mx/en/index.html",
+        "element": "p",
+        "text": "November 2025 Mexican source snapshot, not a claim that the full current menu was audited. Standard source recipe; no extra sauces or sides."
+      },
+      {
+        "route": "mx/en/index.html",
+        "element": "p",
+        "text": "November 2025 Mexican source snapshot, not a claim that the full current menu was audited. Standard source recipe; no extra sauces or sides."
+      },
+      {
+        "route": "mx/en/index.html",
+        "element": "p",
+        "text": "November 2025 Mexican source snapshot, not a claim that the full current menu was audited. Standard source recipe; no extra sauces or sides."
+      },
+      {
+        "route": "mx/en/index.html",
+        "element": "p",
+        "text": "November 2025 Mexican source snapshot, not a claim that the full current menu was audited. Standard source recipe; no extra sauces or sides."
+      },
+      {
+        "route": "mx/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "November 2025 Mexican source snapshot, not a claim that the full current menu was audited. Standard source recipe; no extra sauces or sides."
+      }
+    ],
+    [
+      {
+        "route": "nz/en/index.html",
+        "element": "p",
+        "text": "October 2025 New Zealand recipe snapshot, including the named bread, cheese, vegetables and sauce. Availability can change; custom builds are not equivalent to this recipe. Named recipe components are not full ingredient formulations."
+      },
+      {
+        "route": "nz/en/index.html",
+        "element": "p",
+        "text": "October 2025 New Zealand recipe snapshot, including the named bread, cheese, vegetables and sauce. Availability can change; custom builds are not equivalent to this recipe. Named recipe components are not full ingredient formulations."
+      },
+      {
+        "route": "nz/en/index.html",
+        "element": "p",
+        "text": "October 2025 New Zealand recipe snapshot, including the named bread, cheese, vegetables and sauce. Availability can change; custom builds are not equivalent to this recipe. Named recipe components are not full ingredient formulations."
+      },
+      {
+        "route": "nz/en/index.html",
+        "element": "p",
+        "text": "October 2025 New Zealand recipe snapshot, including the named bread, cheese, vegetables and sauce. Availability can change; custom builds are not equivalent to this recipe. Named recipe components are not full ingredient formulations."
+      },
+      {
+        "route": "nz/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "October 2025 New Zealand recipe snapshot, including the named bread, cheese, vegetables and sauce. Availability can change; custom builds are not equivalent to this recipe. Named recipe components are not full ingredient formulations."
+      }
+    ],
+    [
+      {
+        "route": "calculator-height-feet-inches-not-decimal.html",
+        "element": "p",
+        "text": "Avoirdupois ounce and pound conversion factors and thermochemical calorie-to-joule conversion; rounded factors are identified as approximations."
+      },
+      {
+        "route": "calculator-pound-kilogram-entry.html",
+        "element": "p",
+        "text": "Avoirdupois ounce and pound conversion factors and thermochemical calorie-to-joule conversion; rounded factors are identified as approximations."
+      },
+      {
+        "route": "calorie-units-kcal-kilojoules.html",
+        "element": "p",
+        "text": "Avoirdupois ounce and pound conversion factors and thermochemical calorie-to-joule conversion; rounded factors are identified as approximations."
+      },
+      {
+        "route": "per-ounce-vs-per-100g-food.html",
+        "element": "p",
+        "text": "Avoirdupois ounce and pound conversion factors and thermochemical calorie-to-joule conversion; rounded factors are identified as approximations."
+      }
+    ],
+    [
+      {
+        "route": "carbohydrate-label-portion-tool.html",
+        "element": "p",
+        "text": "Turn on JavaScript to use this calculator. The worked example below explains the math."
+      },
+      {
+        "route": "sodium-label-comparison-tool.html",
+        "element": "p",
+        "text": "Turn on JavaScript to use this calculator. The worked example below explains the math."
+      },
+      {
+        "route": "sweat-rate-calculator.html",
+        "element": "p",
+        "text": "Turn on JavaScript to use this calculator. The worked example below explains the math."
+      },
+      {
+        "route": "weight-goal-timeline-calculator.html",
+        "element": "p",
+        "text": "Turn on JavaScript to use this calculator. The worked example below explains the math."
+      }
+    ],
+    [
+      {
+        "route": "gb/en/index.html",
+        "element": "p",
+        "text": "September 2026 guide. Source uses a g/ml size column; gram conversion is unavailable for this entry. (HS) denotes a hospital-shop product. Regional recipes and availability may differ."
+      },
+      {
+        "route": "gb/en/index.html",
+        "element": "p",
+        "text": "September 2026 guide. Source uses a g/ml size column; gram conversion is unavailable for this entry. (HS) denotes a hospital-shop product. Regional recipes and availability may differ."
+      },
+      {
+        "route": "gb/en/index.html",
+        "element": "p",
+        "text": "September 2026 guide. Source uses a g/ml size column; gram conversion is unavailable for this entry. (HS) denotes a hospital-shop product. Regional recipes and availability may differ."
+      },
+      {
+        "route": "gb/en/restaurants/greggs/index.html",
+        "element": "p",
+        "text": "September 2026 guide. Source uses a g/ml size column; gram conversion is unavailable for this entry. (HS) denotes a hospital-shop product. Regional recipes and availability may differ."
+      }
+    ],
+    [
+      {
+        "route": "are-diet-drinks-bad-for-you.html",
+        "element": "p",
+        "text": "Published August 27, 2026 · Updated September 9, 2026 · 6 minute read · By GetMacros"
+      },
+      {
+        "route": "does-creatine-cause-hair-loss.html",
+        "element": "p",
+        "text": "Published August 27, 2026 · Updated September 9, 2026 · 6 minute read · By GetMacros"
+      },
+      {
+        "route": "how-much-protein-can-your-body-absorb.html",
+        "element": "p",
+        "text": "Published August 27, 2026 · Updated September 9, 2026 · 6 minute read · By GetMacros"
+      }
+    ],
+    [
+      {
+        "route": "burger-variants-not-nine-base-burgers.html",
+        "element": "p",
+        "text": "The table describes the specified U.S. selection checked October 4, 2026, not the full current finder, every restaurant menu or customer purchases. Named portions and variants are separate. Retrieval dates do not replace printed edition dates; prices and dietary classifications are not inferred."
+      },
+      {
+        "route": "menu-average-chain-weighting.html",
+        "element": "p",
+        "text": "The table describes the specified U.S. selection checked October 4, 2026, not the full current finder, every restaurant menu or customer purchases. Named portions and variants are separate. Retrieval dates do not replace printed edition dates; prices and dietary classifications are not inferred."
+      },
+      {
+        "route": "published-vs-calculated-restaurant-rows.html",
+        "element": "p",
+        "text": "The table describes the specified U.S. selection checked October 4, 2026, not the full current finder, every restaurant menu or customer purchases. Named portions and variants are separate. Retrieval dates do not replace printed edition dates; prices and dietary classifications are not inferred."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine"
+      },
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine"
+      },
+      {
+        "route": "index.html",
+        "element": "p",
+        "text": "Listed ingredient build: 1 × 4 oz chicken, 0.5 × 4 oz brown rice, 1 × 4 oz black beans, 1 × 2 oz fajita vegetables, 1 × 4 oz corn salsa, 1 × 4 oz tomato salsa, 1 × 1 oz romaine"
+      }
+    ],
+    [
+      {
+        "route": "noodles-and-company-nutrition-guide.html",
+        "element": "p",
+        "text": "Official nutrition inspected October 4, 2026. Printed source edition: Not established from the printed document. Retrieval does not mean the recipe was re-tested. Local portions, availability and later menu changes can differ."
+      },
+      {
+        "route": "sonic-nutrition-guide.html",
+        "element": "p",
+        "text": "Official nutrition inspected October 4, 2026. Printed source edition: Not established from the printed document. Retrieval does not mean the recipe was re-tested. Local portions, availability and later menu changes can differ."
+      },
+      {
+        "route": "taco-johns-nutrition-guide.html",
+        "element": "p",
+        "text": "Official nutrition inspected October 4, 2026. Printed source edition: Not established from the printed document. Retrieval does not mean the recipe was re-tested. Local portions, availability and later menu changes can differ."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/restaurants/a-w-canada/index.html",
+        "element": "p",
+        "text": "We do not certify allergens or dietary suitability. Confirm ingredients and preparation with the restaurant. Source retrieval and edition dates are separate."
+      },
+      {
+        "route": "ca/en/restaurants/harvey-s/index.html",
+        "element": "p",
+        "text": "We do not certify allergens or dietary suitability. Confirm ingredients and preparation with the restaurant. Source retrieval and edition dates are separate."
+      },
+      {
+        "route": "ca/en/restaurants/tim-hortons/index.html",
+        "element": "p",
+        "text": "We do not certify allergens or dietary suitability. Confirm ingredients and preparation with the restaurant. Source retrieval and edition dates are separate."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/restaurants/a-w-canada/index.html",
+        "element": "p",
+        "text": "Official Canadian nutrition source · Retrieved and reviewed October 9, 2026."
+      },
+      {
+        "route": "ca/en/restaurants/harvey-s/index.html",
+        "element": "p",
+        "text": "Official Canadian nutrition source · Retrieved and reviewed October 9, 2026."
+      },
+      {
+        "route": "ca/en/restaurants/tim-hortons/index.html",
+        "element": "p",
+        "text": "Official Canadian nutrition source · Retrieved and reviewed October 9, 2026."
+      }
+    ],
+    [
+      {
+        "route": "added-sugar-percentage-from-grams.html",
+        "element": "p",
+        "text": "Added sugars are part of total sugars, not an additional amount to add."
+      },
+      {
+        "route": "sugar-lines-do-not-add.html",
+        "element": "p",
+        "text": "Added sugars are part of total sugars, not an additional amount to add."
+      }
+    ],
+    [
+      {
+        "route": "arbys-nutrition-guide.html",
+        "element": "p",
+        "text": "Roast-beef sandwiches, chicken wraps and breakfast orders, compared at their listed portions. Breakfast and regional items depend on the location."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Roast-beef sandwiches, chicken wraps and breakfast orders, compared at their listed portions. Breakfast and regional items depend on the location."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-dataset-not-opening-hours.html",
+        "element": "p",
+        "text": "The worked table describes the selected U.S. servings checked October 4, 2026, not the full current finder or every local menu. Source retrieval dates do not replace printed edition dates. Local opening hours, prices and dietary certifications are not inferred."
+      },
+      {
+        "route": "exact-fiber-coverage-denominator.html",
+        "element": "p",
+        "text": "The worked table describes the selected U.S. servings checked October 4, 2026, not the full current finder or every local menu. Source retrieval dates do not replace printed edition dates. Local opening hours, prices and dietary certifications are not inferred."
+      }
+    ],
+    [
+      {
+        "route": "breakfast-drinks-and-add-ons.html",
+        "element": "p",
+        "text": "The interactive tool needs JavaScript. The article tables and official sources remain available."
+      },
+      {
+        "route": "compare-complete-restaurant-orders.html",
+        "element": "p",
+        "text": "The interactive tool needs JavaScript. The article tables and official sources remain available."
+      }
+    ],
+    [
+      {
+        "route": "cava-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Standard Greek Salad bowl from CAVA’s published nutrition guide. Confirm the current build and availability when ordering."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "element": "p",
+        "text": "Standard Greek Salad bowl from CAVA’s published nutrition guide. Confirm the current build and availability when ordering."
+      }
+    ],
+    [
+      {
+        "route": "chick-fil-a-vs-popeyes-chicken.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. The inspected Popeyes PDF is labeled September 2026."
+      },
+      {
+        "route": "grilled-and-blackened-chicken-comparison.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. The inspected Popeyes PDF is labeled September 2026."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Adobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine. Carbs and sodium are calculated from Chipotle's published ingredient values."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "element": "p",
+        "text": "Adobo chicken, light brown rice, black beans, fajita vegetables, corn salsa, tomato salsa and romaine. Carbs and sodium are calculated from Chipotle's published ingredient values."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Adobo chicken, Supergreens, fajita vegetables, fresh tomato salsa and guacamole. Carbs and sodium are calculated from Chipotle's published ingredient values."
+      },
+      {
+        "route": "restaurant-meal-finder.html",
+        "element": "p",
+        "text": "Adobo chicken, Supergreens, fajita vegetables, fresh tomato salsa and guacamole. Carbs and sodium are calculated from Chipotle's published ingredient values."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-rice-beans-nutrition.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. Chipotle ingredient sums use its October 2024 printed U.S. table, inspected October 3, 2026; retrieval does not make that an October 2026 menu edition."
+      },
+      {
+        "route": "chipotle-toppings-nutrition.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. Chipotle ingredient sums use its October 2024 printed U.S. table, inspected October 3, 2026; retrieval does not make that an October 2026 menu edition."
+      }
+    ],
+    [
+      {
+        "route": "chipotle-vs-cava-chicken-bowls.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. Chipotle ingredient sums use its October 2024 printed U.S. table, inspected October 3, 2026; retrieval does not make that an October 2026 menu edition. The CAVA figures come from the accessible official April-2025-named document. Its printed date and current menu linkage could not be established."
+      },
+      {
+        "route": "restaurant-bowl-nutrition-comparison.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. Chipotle ingredient sums use its October 2024 printed U.S. table, inspected October 3, 2026; retrieval does not make that an October 2026 menu edition. The CAVA figures come from the accessible official April-2025-named document. Its printed date and current menu linkage could not be established."
+      }
+    ],
+    [
+      {
+        "route": "culvers-nutrition-guide.html",
+        "element": "p",
+        "text": "Single-patty burgers, chicken sandwiches and other listed orders. Dinner nutrition includes the specified protein, roll and butter; extra sides remain separate."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Single-patty burgers, chicken sandwiches and other listed orders. Dinner nutrition includes the specified protein, roll and butter; extra sides remain separate."
+      }
+    ],
+    [
+      {
+        "route": "del-taco-nutrition-guide.html",
+        "element": "p",
+        "text": "Tacos, burritos, salads and breakfast orders at their published gram weights. A single taco is shown as a single taco, never as an unnamed combination meal."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Tacos, burritos, salads and breakfast orders at their published gram weights. A single taco is shown as a single taco, never as an unnamed combination meal."
+      }
+    ],
+    [
+      {
+        "route": "el-pollo-loco-nutrition-guide.html",
+        "element": "p",
+        "text": "Chicken bowls, burritos and salads from the September 2026 U.S. guide. Starred salads exclude dressing; complete chicken-meal entries name their sides."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Chicken bowls, burritos and salads from the September 2026 U.S. guide. Starred salads exclude dressing; complete chicken-meal entries name their sides."
+      }
+    ],
+    [
+      {
+        "route": "food-diary.html",
+        "element": "p",
+        "text": "— means unavailable. Values describe the source food and portion, not a measurement of your exact plate."
+      },
+      {
+        "route": "food-library.html",
+        "element": "p",
+        "text": "— means unavailable. Values describe the source food and portion, not a measurement of your exact plate."
+      }
+    ],
+    [
+      {
+        "route": "high-protein-fast-food-under-500-calories.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. Chipotle ingredient sums use its October 2024 printed U.S. table, inspected October 3, 2026; retrieval does not make that an October 2026 menu edition. The inspected Popeyes PDF is labeled September 2026."
+      },
+      {
+        "route": "protein-density-fast-food.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served. Chipotle ingredient sums use its October 2024 printed U.S. table, inspected October 3, 2026; retrieval does not make that an October 2026 menu edition. The inspected Popeyes PDF is labeled September 2026."
+      }
+    ],
+    [
+      {
+        "route": "how-to-calculate-recipe-nutrition.html",
+        "element": "p",
+        "text": "Sources support the factual framework; examples and explanations are original editorial work."
+      },
+      {
+        "route": "serving-size-vs-portion-size.html",
+        "element": "p",
+        "text": "Sources support the factual framework; examples and explanations are original editorial work."
+      }
+    ],
+    [
+      {
+        "route": "in-n-out-nutrition-guide.html",
+        "element": "p",
+        "text": "Three standard burgers and their explicitly published mustard-and-ketchup or lettuce-wrap versions. Extra fries, drinks and spread packets are separate."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Three standard burgers and their explicitly published mustard-and-ketchup or lettuce-wrap versions. Extra fries, drinks and spread packets are separate."
+      }
+    ],
+    [
+      {
+        "route": "noodles-and-company-nutrition-guide.html",
+        "element": "p",
+        "text": "Regular-size noodle dishes, protein-containing entrées, salads and soup. Small, Duos and individual add-on portions are kept out of this comparison."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Regular-size noodle dishes, protein-containing entrées, salads and soup. Small, Duos and individual add-on portions are kept out of this comparison."
+      }
+    ],
+    [
+      {
+        "route": "panda-express-base-nutrition-comparison.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served."
+      },
+      {
+        "route": "panda-express-chicken-entree-comparison.html",
+        "element": "p",
+        "text": "These are selected U.S. portions, not a complete menu survey. Extra drinks, sides and sauce packets are excluded unless named. Published portions can differ from the food actually served."
+      }
+    ],
+    [
+      {
+        "route": "play-food-factory.html",
+        "element": "p",
+        "text": "Order three processing switches to produce the requested symbol string."
+      },
+      {
+        "route": "play.html",
+        "element": "p",
+        "text": "Order three processing switches to produce the requested symbol string."
+      }
+    ],
+    [
+      {
+        "route": "play-menu-mystery.html",
+        "element": "p",
+        "text": "Uses tracked U.S. menu data. The complete portion and official source appear after solving. Additional toppings and other markets are not implied."
+      },
+      {
+        "route": "play-restaurant-order-builder.html",
+        "element": "p",
+        "text": "Uses tracked U.S. menu data. The complete portion and official source appear after solving. Additional toppings and other markets are not implied."
+      }
+    ],
+    [
+      {
+        "route": "play-picnic-planner.html",
+        "element": "p",
+        "text": "Pack a picnic kit with enough seats and drinks within its space limit."
+      },
+      {
+        "route": "play.html",
+        "element": "p",
+        "text": "Pack a picnic kit with enough seats and drinks within its space limit."
+      }
+    ],
+    [
+      {
+        "route": "qdoba-nutrition-guide.html",
+        "element": "p",
+        "text": "Named bowls, burritos, salads and three-taco orders. These are published builds; changing rice, beans or toppings creates a different order."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Named bowls, burritos, salads and three-taco orders. These are published builds; changing rice, beans or toppings creates a different order."
+      }
+    ],
+    [
+      {
+        "route": "raising-canes-nutrition-guide.html",
+        "element": "p",
+        "text": "A sandwich and two clearly specified orders made from listed individual portions. Calculated orders are kept separate from the chain’s published combo entries."
+      },
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "A sandwich and two clearly specified orders made from listed individual portions. Calculated orders are kept separate from the chain’s published combo entries."
+      }
+    ],
+    [
+      {
+        "route": "recipe-recalculate-new-product-label.html",
+        "element": "p",
+        "text": "Ingredient/allergen information requires attention beyond nutrient totals."
+      },
+      {
+        "route": "vegetarian-label-not-allergen-safety.html",
+        "element": "p",
+        "text": "Ingredient/allergen information requires attention beyond nutrient totals."
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-finder.html",
+        "element": "p",
+        "text": "Chicken, quinoa and vegetables with parmesan, breadcrumbs and pesto vinaigrette. Standard bowl, including dressing."
+      },
+      {
+        "route": "sweetgreen-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Chicken, quinoa and vegetables with parmesan, breadcrumbs and pesto vinaigrette. Standard bowl, including dressing."
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-finder.html",
+        "element": "p",
+        "text": "Chicken and warm grains with sweet potato, apple, goat cheese and almonds. Includes the standard dressing."
+      },
+      {
+        "route": "sweetgreen-healthy-meals-macros.html",
+        "element": "p",
+        "text": "Chicken and warm grains with sweet potato, apple, goat cheese and almonds. Includes the standard dressing."
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Burgers, hot dogs and breakfast orders from SONIC’s linked U.S. brochure. Optional items are marked in the source; drinks and extra sides are separate."
+      },
+      {
+        "route": "sonic-nutrition-guide.html",
+        "element": "p",
+        "text": "Burgers, hot dogs and breakfast orders from SONIC’s linked U.S. brochure. Optional items are marked in the source; drinks and extra sides are separate."
+      }
+    ],
+    [
+      {
+        "route": "restaurant-meal-guides.html",
+        "element": "p",
+        "text": "Compare tacos, burritos, bowls and breakfast orders without silently adding Potato Olés or a drink. Limited-time and select-location labels remain visible."
+      },
+      {
+        "route": "taco-johns-nutrition-guide.html",
+        "element": "p",
+        "text": "Compare tacos, burritos, bowls and breakfast orders without silently adding Potato Olés or a drink. Limited-time and select-location labels remain visible."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/index.html",
+        "element": "p",
+        "text": "July 2026 Canadian nutrition edition, linked by Tim Hortons on October 9. Recipes, size names and values follow that edition; local availability and subsequent menu changes are not verified. No guessed milk or syrup changes."
+      },
+      {
+        "route": "ca/en/restaurants/tim-hortons/index.html",
+        "element": "p",
+        "text": "July 2026 Canadian nutrition edition, linked by Tim Hortons on October 9. Recipes, size names and values follow that edition; local availability and subsequent menu changes are not verified. No guessed milk or syrup changes."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/index.html",
+        "element": "p",
+        "text": "Uses the serving listed in Harvey’s nutrition table. Selected garnishes and sauces are recorded separately; confirm the build with the restaurant. This table is not an allergy guarantee."
+      },
+      {
+        "route": "ca/en/restaurants/harvey-s/index.html",
+        "element": "p",
+        "text": "Uses the serving listed in Harvey’s nutrition table. Selected garnishes and sauces are recorded separately; confirm the build with the restaurant. This table is not an allergy guarantee."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/index.html",
+        "element": "p",
+        "text": "Standard Canadian build shown by A&W. Included ingredient names are listed in the source; individual ingredient quantities and subtraction values are not published here. Availability varies by location."
+      },
+      {
+        "route": "ca/en/restaurants/a-w-canada/index.html",
+        "element": "p",
+        "text": "Standard Canadian build shown by A&W. Included ingredient names are listed in the source; individual ingredient quantities and subtraction values are not published here. Availability varies by location."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/index.html",
+        "element": "p",
+        "text": "June 2026 Canadian table, linked by the official Canadian nutrition page on October 12. Listed standard recipe; extras are not added. No equivalence to another country is assumed. One footlong is two source 6-inch servings, as specified by Subway."
+      },
+      {
+        "route": "ca/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "June 2026 Canadian table, linked by the official Canadian nutrition page on October 12. Listed standard recipe; extras are not added. No equivalence to another country is assumed. One footlong is two source 6-inch servings, as specified by Subway."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/tools/complete-order/index.html",
+        "element": "p",
+        "text": "Exact Canadian portions, with source links. Unknown values stay unknown."
+      },
+      {
+        "route": "ca/en/tools/drink-comparison/index.html",
+        "element": "p",
+        "text": "Exact Canadian portions, with source links. Unknown values stay unknown."
+      }
+    ],
+    [
+      {
+        "route": "ca/en/tools/complete-order/index.html",
+        "element": "p",
+        "text": "The interactive tool needs JavaScript. The source-linked comparison above remains readable."
+      },
+      {
+        "route": "ca/en/tools/drink-comparison/index.html",
+        "element": "p",
+        "text": "The interactive tool needs JavaScript. The source-linked comparison above remains readable."
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/index.html",
+        "element": "p",
+        "text": "66 source-defined entries. Edition dates and selection limits are shown in the guide."
+      },
+      {
+        "route": "ie/en/restaurants/index.html",
+        "element": "p",
+        "text": "66 source-defined entries. Edition dates and selection limits are shown in the guide."
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Bacon — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Bacon — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Poached Egg and Cheese — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Poached Egg and Cheese — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Lincolnshire Sausage — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Lincolnshire Sausage — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Lincolnshire Sausage and Bacon — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Lincolnshire Sausage and Bacon — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Big Breakwich — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Big Breakwich — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Chicken Breast — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Chicken Breast — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Chicken and Bacon — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Chicken and Bacon — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Chicken Tikka — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Chicken Tikka — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Beef Chilli — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Beef Chilli — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Rotisserie Style Chicken — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Rotisserie Style Chicken — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Tex Mexan — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Tex Mexan — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Meatball Marinara (Pork & Beef Meatballs) — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Meatball Marinara (Pork & Beef Meatballs) — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Philly Steak — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Philly Steak — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Garlic Cheesesteak — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Garlic Cheesesteak — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Ham — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Ham — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Turkey — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Turkey — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Ham and Turkey — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Ham and Turkey — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Spicy Italian — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Spicy Italian — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Italian B.M.T — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Italian B.M.T — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Veggie Delite — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Veggie Delite — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Tuna Mayo — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Tuna Mayo — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Spiced Plant Patty — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Spiced Plant Patty — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — 5 Bean Chilli — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — 5 Bean Chilli — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Bacon and Cheese Toastie — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Bacon and Cheese Toastie — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Big Cheesesteak Toastie — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Big Cheesesteak Toastie — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Triple Cheese — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Triple Cheese — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Nacho Chicken — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Nacho Chicken — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Ham and Cheese — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — Ham and Cheese — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — BLT — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Subs — BLT — Onions, Cucumbers, Lettuce, Bread (variety not specified in this table)"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Wraps — Meatball Marinara (Pork & Beef Meatballs) — Onions, Cucumbers, Lettuce"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Wraps — Meatball Marinara (Pork & Beef Meatballs) — Onions, Cucumbers, Lettuce"
+      }
+    ],
+    [
+      {
+        "route": "gb/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Salads — Meatball Marinara (Pork & Beef Meatballs) — Onions, Cucumbers, Lettuce"
+      },
+      {
+        "route": "ie/en/restaurants/subway/index.html",
+        "element": "p",
+        "text": "Salads — Meatball Marinara (Pork & Beef Meatballs) — Onions, Cucumbers, Lettuce"
+      }
+    ]
+  ],
+  "internalLanguageCandidates": []
+}

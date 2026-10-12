@@ -4,6 +4,7 @@
 # reviewed content and restore the discarded presentation layers.
 set -e
 cd "$(dirname "$0")/.."
+python3 tools/restore_asset_sources.py
 python3 tools/build_restaurant_expansion.py --apply
 python3 tools/apply_audited_data.py
 python3 tools/build_release_resources.py
@@ -21,6 +22,9 @@ python3 tools/integrate_playful_release.py
 python3 tools/build_growth_release.py
 python3 tools/build_international_release.py
 python3 tools/build_global_product.py
+python3 tools/build_master_release.py
+python3 tools/build_master_diary.py
+python3 tools/build_master_interface.py
 python3 tools/refresh_release_search.py
 python3 tools/stamp_assets.py
 python3 tools/validate_site.py
@@ -30,3 +34,6 @@ python3 tools/test-content-value.py
 python3 tools/test-editorial-release.py
 python3 tools/restaurant_release/test_expansion.py
 node tools/international/test-markets.cjs
+python3 tools/test_master_homepages.py
+python3 tools/master_release/test_branded_import.py
+python3 tools/master_release/test_restaurants.py
