@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-10-12T16:44:43.142Z",
+  "previousRevision": "93e873b20f6332ce03beaaa79a467f4259b9020b",
+  "legacyCache": [
+    "gm-food-app-ff313bc1bb68cad3"
+  ],
+  "newCache": [
+    "gm-food-app-ff313bc1bb68cad3",
+    "gm-food-app-3dad36e6bb3c2621"
+  ],
+  "checks": [
+    "legacy source deployment really installed",
+    "new bundles bypass stale old worker",
+    "autoactivation without forced page reload",
+    "all private entries and source snapshots preserved",
+    "registry 1682 instead of old inventory",
+    "styled private diary works offline after upgrade",
+    "no runtime errors"
+  ]
+}

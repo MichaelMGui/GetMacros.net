@@ -1,0 +1,155 @@
+{
+  "verifiedAt": "2026-10-12T16:44:38.034Z",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "light",
+      "width": 1280,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": [
+        "four actual Canadian label products",
+        "175 g yogurt source values",
+        "equal-weight comparison",
+        "no Canadian Great Value substitution",
+        "exact barcode lookup and market separation",
+        "Canadian reference portions",
+        "unsupported mL-to-g conversion prevented",
+        "no runtime errors/no page overflow"
+      ],
+      "requestsToAI": 0
+    }
+  ]
+}

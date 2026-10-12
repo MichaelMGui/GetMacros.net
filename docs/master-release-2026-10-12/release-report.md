@@ -74,6 +74,10 @@ coverage.csv distinguishes manual representative viewing from automated checks b
 
 The existing approved GitHub workflow is used through an isolated checkout. Production evidence is recorded in deployment-verification.json, verified-live-links.csv and production/checks.json. Only real verified production URLs are described as live. Docs/tools/server/source downloads must return 404 publicly.
 
+Implementation revision: 21a60f3e56555b59ea3fdd798e1ee57d5d6eddbc. Published without force to the existing main and claude/getmacros-nutrition-site-1gfhsm refs. GitHub Pages deployment and both Site quality runs reported success. Production HTTP verification matched all 348 pages and 70 assets with the source, confirmed registry/import counts and checked four private/invalid paths returned 404. The existing Cloudflare email-protection transformation on the contact page was decoded exactly before comparison; other bytes were still compared.
+
+Four real production browser journeys (light/dark at 390/1440) passed: all eight homepages, country menu keyboard handling, persisted appearance, Canadian product review, source-based diary arithmetic/persistence, Canadian Subway finder, European/Oceanian ingredient comparison, and calculator/guide/search/game layouts. Actual screenshots are in production/. The root read the deployed U.S. light desktop home, Canadian light mobile home, Canadian dark mobile finder and dark product-review dialog. Production tests originally needed a wait for the actual source dialog and a calorie assertion based on the selected Canadian reference rather than an unrelated U.S. reference; both harness assumptions were corrected and the complete journeys rerun.
+
 Remaining:
 
 - Broad Canadian supermarket/Costco labels beyond four reviewed products. President's Choice, No Name and Canadian Great Value were not populated using U.S. values.

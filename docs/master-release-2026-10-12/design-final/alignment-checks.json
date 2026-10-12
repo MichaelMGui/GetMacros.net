@@ -1,0 +1,655 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "route": "/",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/au/en/",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Nutrition baseline alignment",
+        "Card heights and action baseline alignment",
+        "No page overflow",
+        "Footer wordmark stays intact",
+        "Source disclosure opens"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "verifiedAt": "2026-10-12T16:30:42.136Z",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1280,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": [
+        "source review",
+        "log and persistence",
+        "edit math/version",
+        "favorite portion review",
+        "keyboard tabs and dismissal",
+        "remove/undo",
+        "recipe yield",
+        "idempotent/corrupt import",
+        "no install or AI entry points"
+      ],
+      "errors": [],
+      "overflow": false
+    }
+  ]
+}

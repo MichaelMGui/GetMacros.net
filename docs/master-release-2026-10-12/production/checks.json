@@ -1,0 +1,66 @@
+{
+  "verifiedAt": "2026-10-12T16:55:03.915Z",
+  "production": "https://getmacros.net",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 390,
+      "passed": [
+        "eight actual market homes",
+        "country keyboard/menu dismissal",
+        "theme persistence",
+        "Canadian brand/label source portion",
+        "private diary source arithmetic and persistence",
+        "Canadian Subway finder",
+        "Europe/Oceania ingredient-source comparison",
+        "calculator/guide/search/game renders",
+        "no runtime errors/no page overflow"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": [
+        "eight actual market homes",
+        "country keyboard/menu dismissal",
+        "theme persistence",
+        "Canadian brand/label source portion",
+        "private diary source arithmetic and persistence",
+        "Canadian Subway finder",
+        "Europe/Oceania ingredient-source comparison",
+        "calculator/guide/search/game renders",
+        "no runtime errors/no page overflow"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "passed": [
+        "eight actual market homes",
+        "country keyboard/menu dismissal",
+        "theme persistence",
+        "Canadian brand/label source portion",
+        "private diary source arithmetic and persistence",
+        "Canadian Subway finder",
+        "Europe/Oceania ingredient-source comparison",
+        "calculator/guide/search/game renders",
+        "no runtime errors/no page overflow"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": [
+        "eight actual market homes",
+        "country keyboard/menu dismissal",
+        "theme persistence",
+        "Canadian brand/label source portion",
+        "private diary source arithmetic and persistence",
+        "Canadian Subway finder",
+        "Europe/Oceania ingredient-source comparison",
+        "calculator/guide/search/game renders",
+        "no runtime errors/no page overflow"
+      ]
+    }
+  ]
+}

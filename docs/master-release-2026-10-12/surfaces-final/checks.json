@@ -1,0 +1,1429 @@
+{
+  "base": "http://127.0.0.1:4189",
+  "date": "2026-10-12",
+  "renders": [
+    {
+      "route": "/calculators.html",
+      "width": 320,
+      "theme": "light",
+      "screenshot": "calculators-html-light-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 320,
+      "theme": "dark",
+      "screenshot": "calculators-html-dark-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "calculators-html-light-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "calculators-html-dark-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 768,
+      "theme": "light",
+      "screenshot": "calculators-html-light-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 768,
+      "theme": "dark",
+      "screenshot": "calculators-html-dark-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1280,
+      "theme": "light",
+      "screenshot": "calculators-html-light-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1280,
+      "theme": "dark",
+      "screenshot": "calculators-html-dark-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "calculators-html-light-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "calculators-html-dark-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 320,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-light-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 320,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-dark-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-light-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-dark-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 768,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-light-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 768,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-dark-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 1280,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-light-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 1280,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-dark-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-light-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-dark-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 320,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-subway-light-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 320,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-subway-dark-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-subway-light-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-subway-dark-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 768,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-subway-light-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 768,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-subway-dark-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1280,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-subway-light-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1280,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-subway-dark-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-subway-light-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-subway-dark-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 320,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-pizza-nova-light-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 320,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-pizza-nova-dark-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-pizza-nova-light-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-pizza-nova-dark-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 768,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-pizza-nova-light-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 768,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-pizza-nova-dark-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1280,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-pizza-nova-light-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1280,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-pizza-nova-dark-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "ca-en-restaurants-pizza-nova-light-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "ca-en-restaurants-pizza-nova-dark-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 320,
+      "theme": "light",
+      "screenshot": "search-html-market-CA-light-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 320,
+      "theme": "dark",
+      "screenshot": "search-html-market-CA-dark-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "search-html-market-CA-light-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "search-html-market-CA-dark-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 768,
+      "theme": "light",
+      "screenshot": "search-html-market-CA-light-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 768,
+      "theme": "dark",
+      "screenshot": "search-html-market-CA-dark-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1280,
+      "theme": "light",
+      "screenshot": "search-html-market-CA-light-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1280,
+      "theme": "dark",
+      "screenshot": "search-html-market-CA-dark-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "search-html-market-CA-light-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "search-html-market-CA-dark-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 320,
+      "theme": "light",
+      "screenshot": "food-library-html-market-CA-light-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 320,
+      "theme": "dark",
+      "screenshot": "food-library-html-market-CA-dark-320.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "food-library-html-market-CA-light-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "food-library-html-market-CA-dark-390.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 768,
+      "theme": "light",
+      "screenshot": "food-library-html-market-CA-light-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 768,
+      "theme": "dark",
+      "screenshot": "food-library-html-market-CA-dark-768.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1280,
+      "theme": "light",
+      "screenshot": "food-library-html-market-CA-light-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1280,
+      "theme": "dark",
+      "screenshot": "food-library-html-market-CA-dark-1280.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "food-library-html-market-CA-light-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "light",
+        "dialogs": []
+      }
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "food-library-html-market-CA-dark-1440.png",
+      "state": {
+        "overflow": false,
+        "h1": 1,
+        "theme": "dark",
+        "dialogs": []
+      }
+    }
+  ],
+  "journeys": [
+    {
+      "route": "/calculators.html",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Native age validation",
+        "Guided progression",
+        "Metric result 2759 kcal / 128g protein",
+        "Weight and height conversions",
+        "Resubmitted equivalent imperial result",
+        "Custom out-of-range error"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "All85 disclosure",
+        "Scrollable table region",
+        "No page overflow with expanded records"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Every calorie-only source value retained",
+        "Two columns fully visible with explicit unavailable macro disclosure",
+        "No false macro-finder primary action"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/search.html?market=CA",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Canadian Subway guide is discoverable",
+        "U.S. Subway guide excluded in Canadian search",
+        "No-match state"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "route": "/food-library.html?market=CA",
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Local source/market filters",
+        "Search matching exact Canadian restaurant record",
+        "Portion scaling in review",
+        "Source detail",
+        "Escape focus restoration"
+      ]
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "status": "pass",
+      "checks": [
+        "Desktop/mobile open calculator menu",
+        "ArrowDown menu focus",
+        "Escape dismissal"
+      ]
+    }
+  ],
+  "status": "pass"
+}

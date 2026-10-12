@@ -21,7 +21,8 @@ candidates.append(ROOT/'tools/restore_asset_sources.py')
 candidates.extend(ROOT/name for name in ['tools/market-content.css','tools/food-characters.css','tools/release-product.css'])
 candidates.extend(ROOT/name for name in ['tools/international/test-markets.cjs','tools/product_release/test-food.cjs','tools/product_release/test-generators.py'])
 candidates.extend(ROOT/name for name in json.loads((ROOT/'assets/generated/manifest.json').read_text()))
-candidates.extend(p for p in OUT.iterdir() if p.is_file() and p.suffix in ['.md','.json','.csv','.txt'] and not p.name.startswith(('baseline','deployment')))
+candidates.extend(p for p in OUT.iterdir() if p.is_file() and p.suffix in ['.md','.json','.csv','.txt'] and not p.name.startswith('baseline') and p.name!='deployment-files.json')
+candidates.extend(OUT/name for name in ['production/checks.json','upgrade/checks.json','diary/checks.json','products/checks.json','design-final/checks.json','design-final/alignment-checks.json','surfaces-final/checks.json'])
 changed=[]
 for p in sorted(set(candidates)):
     if not p.is_file():continue

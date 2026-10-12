@@ -1,0 +1,3213 @@
+{
+  "revision": "21a60f3e56555b59ea3fdd798e1ee57d5d6eddbc",
+  "verifiedAt": "2026-10-12T16:51:16.185Z",
+  "production": "https://getmacros.net",
+  "assets": [
+    {
+      "path": "assets/generated/js-img-fallback-d4e0a0201ceb.js",
+      "status": 200,
+      "sha256": "d4e0a0201ceb165e2018524bc56818533f57c6be63d5aa47e5adb4913d486016"
+    },
+    {
+      "path": "assets/generated/css-publication-ce9ae560af55.css",
+      "status": 200,
+      "sha256": "ce9ae560af5515552010870c95dd8a4a4cc84640db986d859ac61dd8098ecbdb"
+    },
+    {
+      "path": "assets/generated/css-markets-1d3ff75b86b4.css",
+      "status": 200,
+      "sha256": "1d3ff75b86b46838e04ea83bce837801d04e2cc9ce16baa47179fca7de2461e4"
+    },
+    {
+      "path": "assets/generated/manifest.json",
+      "status": 200,
+      "sha256": "f776af7f0364ffcb1cfbd8fb83d73e9bd3ca18c7def733d39914e71224893968"
+    },
+    {
+      "path": "assets/generated/js-market-definitions-1528b1e7412e.js",
+      "status": 200,
+      "sha256": "1528b1e7412e05b8c3c7f75f8f95d77bdee439c05b32c8a14f36312293795e60"
+    },
+    {
+      "path": "assets/generated/js-markets-10f60a3a2679.js",
+      "status": 200,
+      "sha256": "10f60a3a26798ba9461763389569cae2e0b3c743bb7f644bedd837b9c56f39ad"
+    },
+    {
+      "path": "assets/generated/js-unified-v7-9dd42c9d6c7f.js",
+      "status": 200,
+      "sha256": "9dd42c9d6c7fe6d0c2eefcd6f50aa060c07a33aebf500089f81f042b6d5334e4"
+    },
+    {
+      "path": "assets/generated/js-product-events-13af0a0b2006.js",
+      "status": 200,
+      "sha256": "13af0a0b20063593129989fb350d5d4b6de896b22d340148194b197b12c44d4c"
+    },
+    {
+      "path": "assets/generated/js-order-registry-e22e1e2fced3.json",
+      "status": 200,
+      "sha256": "e22e1e2fced326719285f1d30fdead59a3b1c9ef656ed7418e8caf29c098ba83"
+    },
+    {
+      "path": "assets/generated/js-ad-placements-988d90e3d1b1.js",
+      "status": 200,
+      "sha256": "988d90e3d1b1b45c600909fe26d329967ff9d4b3325e980cbb04a36fef186a79"
+    },
+    {
+      "path": "assets/generated/js-food-experience-1db0f33a9bc5.js",
+      "status": 200,
+      "sha256": "1db0f33a9bc57adae7848b2f833a416735f178464665157b26b97a953d673278"
+    },
+    {
+      "path": "assets/generated/js-food-characters-8b7759a10f84.js",
+      "status": 200,
+      "sha256": "8b7759a10f84fe95409a53efa65f8318afb844a2ffce635bb263ab6053f905ae"
+    },
+    {
+      "path": "assets/generated/css-growth-tools-22012a2d7dca.css",
+      "status": 200,
+      "sha256": "22012a2d7dcac1f243075ac28545b2c9274940c8ee29106b43e25997a2081205"
+    },
+    {
+      "path": "assets/generated/js-food-shelf-3b098e60a7e1.js",
+      "status": 200,
+      "sha256": "3b098e60a7e12c34f220648189bb1be5543727aaad74e639fa080676d32b6a09"
+    },
+    {
+      "path": "assets/generated/css-food-shelf-94a22eca4f88.css",
+      "status": 200,
+      "sha256": "94a22eca4f88672e568e11a16266a96578a7dfb37013fba9231c7130a888533a"
+    },
+    {
+      "path": "assets/generated/css-release-library-733ff5685785.css",
+      "status": 200,
+      "sha256": "733ff5685785d904e824c392bacb2d1e3ef3cfae5cd834cb9908a864e0a9e498"
+    },
+    {
+      "path": "assets/generated/js-order-tools-core-96011440bad0.js",
+      "status": 200,
+      "sha256": "96011440bad04ca2fddb72d2cec0c819cc28df22aa0c66baa93d899e48b2edbd"
+    },
+    {
+      "path": "assets/generated/js-library-browser-0e13b8bc040c.js",
+      "status": 200,
+      "sha256": "0e13b8bc040c70f0aabebd8ae7a8b8851737c1cc5a30b78b207a63281620b92c"
+    },
+    {
+      "path": "assets/generated/js-order-notebook-2e0b98373e63.js",
+      "status": 200,
+      "sha256": "2e0b98373e63c70b863e045b4ee516ad5131460a5b08b6270e8578c89f2345be"
+    },
+    {
+      "path": "assets/generated/js-order-tools-df9ca2539686.js",
+      "status": 200,
+      "sha256": "df9ca2539686f2557dcf5d00f7b5f5cc476fd1000118f4dc2ebb03143162351a"
+    },
+    {
+      "path": "assets/generated/js-meal-ideas-be63f0430d51.js",
+      "status": 200,
+      "sha256": "be63f0430d51b4cf098b6cf93c9ec0485ff2eb7bb3464cd705d3e59a3557a587"
+    },
+    {
+      "path": "assets/generated/js-macro-math-5181c76aa375.js",
+      "status": 200,
+      "sha256": "5181c76aa37517a29753bfe29f61e05ccbcc1f7599d787fe6e646348d25ee31e"
+    },
+    {
+      "path": "assets/generated/js-focused-calculators-7151b5636eb8.js",
+      "status": 200,
+      "sha256": "7151b5636eb8df3859cbecfd018101b2788b3b340c1d4be03959c2eb42cdfa89"
+    },
+    {
+      "path": "assets/generated/js-calculators-232ee52c89fd.js",
+      "status": 200,
+      "sha256": "232ee52c89fd436ec8e2a3a0a1eb3d7da36b146e3b5cc4057da24a2e4b27c5ea"
+    },
+    {
+      "path": "assets/generated/css-food-app-1ec9968e134d.css",
+      "status": 200,
+      "sha256": "1ec9968e134dcbc9d1e530690c305971cf4865efec2a53c03a329e8fd8659802"
+    },
+    {
+      "path": "assets/generated/js-ingredient-compare-core-9846a4b2d78c.js",
+      "status": 200,
+      "sha256": "9846a4b2d78cae7254b3ee468a5f796ef27bf4f6b07d3889202659e24c0260ab"
+    },
+    {
+      "path": "assets/generated/js-ingredient-comparison-212e4a60ce99.js",
+      "status": 200,
+      "sha256": "212e4a60ce99b5e2a5e9134ff1c43d0cb5942f5172be868c66c5d898dc24ff2c"
+    },
+    {
+      "path": "assets/generated/js-contact-ab64751e08f4.js",
+      "status": 200,
+      "sha256": "ab64751e08f4bf6bc8c10f7eff9a1ec3b587d5db46ba662812db4be347b9257b"
+    },
+    {
+      "path": "assets/generated/js-branded-foods-f1d39e3e64c1.js",
+      "status": 200,
+      "sha256": "f1d39e3e64c180a8fce7dcae3513befda1ae477931a9d54d78cfa22e89c86d73"
+    },
+    {
+      "path": "assets/generated/js-food-core-ce520375ad38.js",
+      "status": 200,
+      "sha256": "ce520375ad38de8301643d5748e142bd5b474d3c0259a9dc6b3a845edc7283b5"
+    },
+    {
+      "path": "assets/generated/js-food-diary-store-11d1116bc89d.js",
+      "status": 200,
+      "sha256": "11d1116bc89d915c618d70a8dd0251fcd5386d94a80329273934979922b76daa"
+    },
+    {
+      "path": "assets/generated/js-food-portion-compare-e8ff64fe34b3.js",
+      "status": 200,
+      "sha256": "e8ff64fe34b31edd2df0982a728730787dc60ee565f0a3e42f96930134a24599"
+    },
+    {
+      "path": "assets/generated/js-food-library-34f608f51fca.js",
+      "status": 200,
+      "sha256": "34f608f51fca538c6030b3fa4e6d8cab784a5437fc0a65918e3554d9b25f0d7b"
+    },
+    {
+      "path": "assets/generated/js-food-app-619ef97889d2.js",
+      "status": 200,
+      "sha256": "619ef97889d20dee135ecc977ce16e13aaca34278dd9f4f56f7b0fdffadc3beb"
+    },
+    {
+      "path": "assets/generated/js-diary-edit-75160d3b3697.js",
+      "status": 200,
+      "sha256": "75160d3b36971650fe07752de43a55775fc8de3639a7496a6b1fbad3c54f3c76"
+    },
+    {
+      "path": "assets/generated/js-app-runtime-42f376b7989e.js",
+      "status": 200,
+      "sha256": "42f376b7989e9c5c8a5b18dbd7b389221542358e54f859e13f5e439b223bd750"
+    },
+    {
+      "path": "assets/generated/js-protein-foods-b0942c6681d1.js",
+      "status": 200,
+      "sha256": "b0942c6681d163b7b60e4fd434b18eca486d371df442c5e4af037500b8089552"
+    },
+    {
+      "path": "assets/generated/js-food-compare-d98f8d7225b9.js",
+      "status": 200,
+      "sha256": "d98f8d7225b949ec7689d88be4736695f812212458364c7400da9797b105da63"
+    },
+    {
+      "path": "assets/generated/js-play-rules-0644b9e4c701.js",
+      "status": 200,
+      "sha256": "0644b9e4c701042b624ce1031f79c0e5ea9462a38928b04bec16d50f742aa00b"
+    },
+    {
+      "path": "assets/generated/css-play-release-6d05cb5fef2c.css",
+      "status": 200,
+      "sha256": "6d05cb5fef2c89dbb7cf855ea9f1675e737b3b9b63cbd55bf2d325cc2ecd3da7"
+    },
+    {
+      "path": "assets/generated/js-play-directory-b599eb48beb1.js",
+      "status": 200,
+      "sha256": "b599eb48beb19d4dc977f986f9a5c35455a66bd6cfebf2a3fa25190fa793e198"
+    },
+    {
+      "path": "assets/generated/js-protein-value-329722db5455.js",
+      "status": 200,
+      "sha256": "329722db5455c4627e3c0cf862db18c5034f93a3ac3220b5c53d52d42aab838f"
+    },
+    {
+      "path": "assets/generated/js-play-release-ca1cdf8e0f39.js",
+      "status": 200,
+      "sha256": "ca1cdf8e0f393352b94a50acef2e8d1db02d09841a2e2e54b10543c20e9878f0"
+    },
+    {
+      "path": "assets/generated/js-recipe-scaler-4b22c7bcf52d.js",
+      "status": 200,
+      "sha256": "4b22c7bcf52dec8fecdfda3f6d3481f778d240b1fc63b36759d7f41d8ec2879f"
+    },
+    {
+      "path": "assets/generated/js-meal-data-5434b32fb86e.js",
+      "status": 200,
+      "sha256": "5434b32fb86e57a45b1842bf017801eab825aaa08278140f1c4e5536845ad89b"
+    },
+    {
+      "path": "assets/generated/js-meal-provenance-db7b9efb8a1a.js",
+      "status": 200,
+      "sha256": "db7b9efb8a1abd6c7be50d10b92293578e6d155208c82502828015f81c8ac880"
+    },
+    {
+      "path": "assets/generated/js-meal-engine-4f603e7aa05e.js",
+      "status": 200,
+      "sha256": "4f603e7aa05e417243d4bc1c559680b518a579ff3347f681376fd8df7d40399b"
+    },
+    {
+      "path": "assets/generated/js-meal-guide-3a1111001547.js",
+      "status": 200,
+      "sha256": "3a11110015470d57a3ce1e53052ff6249f88c9197e94baebc7a470f696e9e648"
+    },
+    {
+      "path": "assets/generated/js-order-share-c0fee38ab146.js",
+      "status": 200,
+      "sha256": "c0fee38ab1460c6950ca845c658f288bf9a3949afcb4034c4c8b3d6f11c54ffd"
+    },
+    {
+      "path": "assets/generated/js-meal-view-98d8eda71003.js",
+      "status": 200,
+      "sha256": "98d8eda71003fc006b1ce82ce6e02c219926b2db2e8cb4dce73298b38cecb6db"
+    },
+    {
+      "path": "assets/generated/js-meal-finder-7016f40ece4e.js",
+      "status": 200,
+      "sha256": "7016f40ece4ed7e6191faa55f7dc2481097546e25584914e4037de865e079366"
+    },
+    {
+      "path": "assets/generated/js-site-search-e2e99a0d6fb8.js",
+      "status": 200,
+      "sha256": "e2e99a0d6fb88d984407c5ebc1871656ae5cdc428dfdf6b789ad605d1f6b761c"
+    },
+    {
+      "path": "assets/generated/js-search-meals-fce9922e610f.js",
+      "status": 200,
+      "sha256": "fce9922e610fa1027d15592b272dc33e2fc5e7206ca674a5d4fcb98545bd1f1a"
+    },
+    {
+      "path": "assets/generated/js-au-meals-a0985a79cf28.js",
+      "status": 200,
+      "sha256": "a0985a79cf289d28b73fd92d3dc1b0cda019abd484ec64536f716267d3cc5bba"
+    },
+    {
+      "path": "assets/generated/js-canada-meals-f876ca44d76e.js",
+      "status": 200,
+      "sha256": "f876ca44d76e8b8598524025da01b9592b01b6a773b558a49eb478491f3b6313"
+    },
+    {
+      "path": "assets/generated/js-ie-meals-6bb5576c219f.js",
+      "status": 200,
+      "sha256": "6bb5576c219f5f0d4754723abeba39bd7ab41395868199dea7c258148b4b2678"
+    },
+    {
+      "path": "assets/generated/js-gb-meals-61d70ada9c63.js",
+      "status": 200,
+      "sha256": "61d70ada9c63618f8bbed3c5d31e5aaa1098ad84f89343506589d88e7d050393"
+    },
+    {
+      "path": "assets/generated/js-mx-meals-a31a7455d877.js",
+      "status": 200,
+      "sha256": "a31a7455d8770117844743c22018b4e8b3d4fefd9e27b545136953ed89281f02"
+    },
+    {
+      "path": "assets/generated/js-nz-meals-86dabbfc1e89.js",
+      "status": 200,
+      "sha256": "86dabbfc1e8985364aeebe833d075d34a1d06449fea6648efcea1ad634bf3b7a"
+    },
+    {
+      "path": "assets/generated/js-jp-meals-8bbd8a091dc4.js",
+      "status": 200,
+      "sha256": "8bbd8a091dc404323f40091e769cd7d5c22870d37abf96f501d0b6dea132eff6"
+    },
+    {
+      "path": "data/restaurant-presence.json",
+      "status": 200,
+      "sha256": "47cc8af5d2b19299eb3ba95ba1924e098e52eda4fe75fd19db66beb9b7df5545"
+    },
+    {
+      "path": "data/branded-foods/usda/manifest.json",
+      "status": 200,
+      "sha256": "86bb2b1effc27561d2f2351110468382e9ed081b0cda7dfcbacd75aef41b8ca8"
+    },
+    {
+      "path": "data/branded-foods/cnf/manifest.json",
+      "status": 200,
+      "sha256": "b86706cc31f5744ee20c359d5cdd6afa564b4c6bfe7d32c33d5ce12c9df92415"
+    },
+    {
+      "path": "data/branded-foods/usda/LICENSE.txt",
+      "status": 200,
+      "sha256": "2d15a9a7acdfaf52bbc36682fbdf1536639f97e54a4b69e48a0e8d6e84e3da0d"
+    },
+    {
+      "path": "data/branded-foods/retailer-ca/manifest.json",
+      "status": 200,
+      "sha256": "0a1ec985234587682ce616ef9b9e9ebf0dd145053b40e6a31d31f0547fa1b55c"
+    },
+    {
+      "path": "data/branded-foods/cnf/LICENSE.txt",
+      "status": 200,
+      "sha256": "478bf1cbf03ab7c53d226f6afe6b1f0e59027555548db4983e07b6cd9bd87f88"
+    },
+    {
+      "path": "js/order-registry.json",
+      "status": 200,
+      "sha256": "e22e1e2fced326719285f1d30fdead59a3b1c9ef656ed7418e8caf29c098ba83"
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "sha256": "f39653d878260269af46e25fe06f8deb1394f9628193178a56cd9fd99e8f9863"
+    },
+    {
+      "path": "data/branded-foods/retailer-ca/RIGHTS.txt",
+      "status": 200,
+      "sha256": "7154a4cce7fa691780ec40739e581e35bc059e8ba31675faabdb58f2e8c47034"
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "sha256": "99cba7649c0eee737dffbefbd5310c55d4bef294cda9ba50e8a0f2afafafa8c6"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "canonical": "https://getmacros.net/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/accessibility.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/accessibility.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/about.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/about.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/404.html",
+      "status": 200,
+      "canonical": null,
+      "robots": "noindex, follow",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/added-sugar-percentage-from-grams.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/added-sugar-percentage-from-grams.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/arbys-breakfast-bread-format.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-breakfast-bread-format.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/arbys-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/arbys-roast-beef-cheddar-french-dip.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-roast-beef-cheddar-french-dip.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/arbys-sliders-count-whole-tray.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/arbys-sliders-count-whole-tray.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/as-packaged-vs-prepared-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/as-packaged-vs-prepared-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/are-diet-drinks-bad-for-you.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/are-diet-drinks-bad-for-you.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/articles.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/articles.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/au/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/au/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/au/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/find-a-meal/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/au/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/restaurants/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/au/en/restaurants/guzman-y-gomez/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/restaurants/guzman-y-gomez/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/best-fast-food-restaurants-for-your-goals.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/best-fast-food-restaurants-for-your-goals.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/blog.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/blog.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/body-recomposition-explained.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/body-recomposition-explained.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/breakfast-bacon-format-sodium-cross-chain.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-bacon-format-sodium-cross-chain.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/breakfast-dataset-not-opening-hours.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-dataset-not-opening-hours.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/breakfast-food-vs-combo-menu.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-food-vs-combo-menu.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/breakfast-drinks-and-add-ons.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-drinks-and-add-ons.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/breakfast-two-items-not-one-entry.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-two-items-not-one-entry.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/budget-meal-builder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/budget-meal-builder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/breakfast-sandwich-half-not-half-protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-sandwich-half-not-half-protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/breakfast-yogurt-topping-layer.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/breakfast-yogurt-topping-layer.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/burger-variants-not-nine-base-burgers.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/burger-variants-not-nine-base-burgers.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/collections/breakfast/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/collections/breakfast/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/burrito-wrap-cross-chain-no-size-standard.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/burrito-wrap-cross-chain-no-size-standard.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/find-a-meal/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/collections/protein-meals/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/menu-sources/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/menu-sources/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/booster-juice/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/booster-juice/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/a-w-canada/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/a-w-canada/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/domino-s/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/domino-s/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/harvey-s/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/harvey-s/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-nova/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/pizza-nova/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/mary-brown-s/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/mary-brown-s/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/pizza-pizza/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/pizza-pizza/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/subway/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/restaurants/tim-hortons/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/restaurants/tim-hortons/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/tools/complete-order/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/tools/complete-order/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculate-macros-mixed-bowl.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculate-macros-mixed-bowl.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ca/en/tools/drink-comparison/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/tools/drink-comparison/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculator-activity-choice-sensitivity.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-activity-choice-sensitivity.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculator-height-feet-inches-not-decimal.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-height-feet-inches-not-decimal.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculator-input-basis-checklist.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-input-basis-checklist.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculator-positive-inputs-zero-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-positive-inputs-zero-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculator-pound-kilogram-entry.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-pound-kilogram-entry.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculator-round-at-end.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculator-round-at-end.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calorie-tool-output-reverse-check.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calorie-tool-output-reverse-check.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calculators.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculators.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calorie-range-menu-reading.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calorie-range-menu-reading.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calorie-units-kcal-kilojoules.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calorie-units-kcal-kilojoules.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calories-on-rest-days.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calories-on-rest-days.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calories-vs-macros-what-matters-more.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calories-vs-macros-what-matters-more.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/calories-in-multi-serving-packages.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calories-in-multi-serving-packages.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/can-you-build-muscle-in-a-calorie-deficit.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/can-you-build-muscle-in-a-calorie-deficit.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/carbs.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/carbs.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/carbohydrate-label-portion-tool.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/carbohydrate-label-portion-tool.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/cava-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cava-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/chick-fil-a-vs-popeyes-chicken.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chick-fil-a-vs-popeyes-chicken.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/chick-fil-a-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chick-fil-a-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/chipotle-rice-beans-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-rice-beans-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/chipotle-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/chipotle-toppings-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-toppings-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/choose-fooddata-central-entry.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/choose-fooddata-central-entry.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/chipotle-vs-cava-chicken-bowls.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chipotle-vs-cava-chicken-bowls.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/compare-menu-ingredients-worldwide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/compare-menu-ingredients-worldwide.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/compare-complete-restaurant-orders.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/contact.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/contact.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": true
+    },
+    {
+      "route": "/corrections.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/corrections.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": true
+    },
+    {
+      "route": "/cross-chain-bean-burritos-serving-proof.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-bean-burritos-serving-proof.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/cross-chain-breakfast-ham-formats.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-breakfast-ham-formats.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/cross-chain-chicken-soup-no-sodium-assumption.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-chicken-soup-no-sodium-assumption.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/cross-chain-melt-sandwich-orders.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cross-chain-melt-sandwich-orders.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/culvers-chicken-grilled-crispy-spicy.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/culvers-chicken-grilled-crispy-spicy.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/culvers-dinner-name-side-footnote.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/culvers-dinner-name-side-footnote.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/culvers-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/culvers-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/cutting-bulking-maintenance-explained.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/cutting-bulking-maintenance-explained.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/del-taco-bean-burrito-vs-veggie-burrito.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/del-taco-bean-burrito-vs-veggie-burrito.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/del-taco-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/del-taco-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/diet-patterns-evidence.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/diet-patterns-evidence.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/del-taco-two-street-tacos-vs-burrito.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/del-taco-two-street-tacos-vs-burrito.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/drained-weight-nutrition-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/drained-weight-nutrition-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/edible-portion-vs-purchased-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/edible-portion-vs-purchased-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/dunkin-healthy-breakfast-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/dunkin-healthy-breakfast-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/does-creatine-cause-hair-loss.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/does-creatine-cause-hair-loss.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/editorial-policy.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/editorial-policy.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/el-pollo-loco-bowls-protein-bigger-build.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-bowls-protein-bigger-build.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/el-pollo-loco-salad-dressing-boundary.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-salad-dressing-boundary.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/el-pollo-loco-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/el-pollo-loco-tortilla-complete-chicken-meal.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/el-pollo-loco-tortilla-complete-chicken-meal.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/equal-calories-different-macros-menu.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/equal-calories-different-macros-menu.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/equal-tax-protein-value-ranking.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/equal-tax-protein-value-ranking.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/exact-fiber-coverage-denominator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/exact-fiber-coverage-denominator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fast-food-fiber-and-protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-fiber-and-protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fast-food-meals-500-to-700-calories.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-meals-500-to-700-calories.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fast-food-breakfast-protein-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-breakfast-protein-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fast-food-nutrition-data-report.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-nutrition-data-report.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fast-food-protein-and-sodium.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-protein-and-sodium.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fast-food-under-1000mg-sodium.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fast-food-under-1000mg-sodium.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fat-and-carb-two-energy-profiles.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fat-and-carb-two-energy-profiles.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fats.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fats.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fiber-count-menu-not-plant-score.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fiber-count-menu-not-plant-score.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fiber-daily-value-portion-example.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fiber-daily-value-portion-example.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/fiber-per-portion-vs-density.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fiber-per-portion-vs-density.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/food-diary.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-diary.html",
+      "robots": "noindex,follow",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/food-library-sources.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-library-sources.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/food-library.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-library.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/food-shelf.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-shelf.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/gb/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/gb/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/find-a-meal/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/gb/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/gb/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/restaurants/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/gb/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/restaurants/subway/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/gb/en/restaurants/greggs/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/restaurants/greggs/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/grams-per-serving-vs-protein-percentage.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/grams-per-serving-vs-protein-percentage.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/grams-vs-milliliters-nutrition-labels.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/grilled-and-blackened-chicken-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/grilled-and-blackened-chicken-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/half-serving-percent-daily-value.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/half-serving-percent-daily-value.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/high-protein-fast-food-under-500-calories.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/high-protein-fast-food-under-500-calories.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/healthy-fast-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/healthy-fast-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/high-protein-foods-list.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/high-protein-foods-list.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-much-fiber-per-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-fiber-per-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-many-calories-should-i-eat-a-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-many-calories-should-i-eat-a-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-much-protein-can-your-body-absorb.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-protein-can-your-body-absorb.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-much-protein-per-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-protein-per-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-much-sodium-per-day.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-much-sodium-per-day.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-build-a-balanced-meal-with-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-build-a-balanced-meal-with-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-calculate-macros-by-hand.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-calculate-macros-by-hand.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-calculate-maintenance-calories.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-calculate-maintenance-calories.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-calculate-recipe-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-eat-out-without-wrecking-your-goal.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-eat-out-without-wrecking-your-goal.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-log-food-portions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-log-food-portions.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-hit-protein-goal-on-budget.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-hit-protein-goal-on-budget.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/how-to-read-a-nutrition-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/how-to-read-a-nutrition-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ie/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ie/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ie/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/restaurants/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ie/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/find-a-meal/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/ie/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/restaurants/subway/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/in-n-out-double-vs-two-hamburgers.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/in-n-out-double-vs-two-hamburgers.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/jersey-mikes-healthy-subs-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/jersey-mikes-healthy-subs-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/in-n-out-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/in-n-out-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/in-n-out-three-published-hamburger-versions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/in-n-out-three-published-hamburger-versions.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/jp/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/jp/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/jp/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/find-a-meal/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/jp/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/restaurants/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/jp/en/restaurants/mcdonald-s-japan/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/restaurants/mcdonald-s-japan/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/kfc-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/kfc-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/macros-for-muscle-gain.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/macros-for-muscle-gain.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/macros-for-weight-loss.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/macros-for-weight-loss.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/mcdonalds-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/mcdonalds-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/meal-calculation-two-serving-units.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/meal-calculation-two-serving-units.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/meal-filters-intersection-not-extra-options.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/meal-filters-intersection-not-extra-options.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/menu-average-chain-weighting.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/menu-average-chain-weighting.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/menu-pdf-filename-not-edition-date.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/menu-pdf-filename-not-edition-date.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/missing-restaurant-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/missing-restaurant-nutrition.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/mx/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/mx/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/mx/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/find-a-meal/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/mx/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/restaurants/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/mx/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/restaurants/subway/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/milligram-microgram-mineral-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/milligram-microgram-mineral-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/noodles-and-company-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-and-company-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/net-carbs-total-carbohydrate.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/net-carbs-total-carbohydrate.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/noodles-mac-protein-not-simple-add-on.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-mac-protein-not-simple-add-on.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/noodles-regular-noodle-orders-not-addons.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-regular-noodle-orders-not-addons.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/noodles-two-chicken-salads.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/noodles-two-chicken-salads.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nutrition-blank-vs-not-detected.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-blank-vs-not-detected.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nutrient-grams-not-food-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrient-grams-not-food-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nutrition-label-comparison-tool.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-label-comparison-tool.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nutrition-data-mean-not-every-portion.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-data-mean-not-every-portion.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nutrition-label-rounding.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-label-rounding.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nutrition-totals-not-ingredient-recipe.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/nutrition-totals-not-ingredient-recipe.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nz/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nz/en/find-a-meal/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/find-a-meal/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nz/en/restaurants/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/restaurants/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nz/en/collections/protein-meals/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/collections/protein-meals/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/nz/en/restaurants/subway/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/restaurants/subway/",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/panda-express-base-nutrition-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panda-express-base-nutrition-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/offline.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/offline.html",
+      "robots": "noindex,follow",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/panda-express-chicken-entree-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panda-express-chicken-entree-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/panda-express-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panda-express-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/panera-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/panera-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/per-ounce-vs-per-100g-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/per-ounce-vs-per-100g-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/percentage-points-vs-percent-food-labels.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/percentage-points-vs-percent-food-labels.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/percent-daily-value-not-vertical-total.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/percent-daily-value-not-vertical-total.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/plant-name-not-fiber-number.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/plant-name-not-fiber-number.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-bean-balance.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-bean-balance.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-berry-bounce.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-berry-bounce.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-build-a-plate.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-build-a-plate.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-claim-check.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-claim-check.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-description-detective.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-description-detective.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-fiber-trail.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-fiber-trail.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-food-crossword.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-food-crossword.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-food-factory.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-food-factory.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-fruit-catch.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-fruit-catch.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-garden-glide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-garden-glide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-garden-pipes.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-garden-pipes.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-harvest-conveyor.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-harvest-conveyor.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-kitchen-connections.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-kitchen-connections.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-ingredient-anagrams.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-ingredient-anagrams.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-ingredient-order.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-ingredient-order.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-kitchen-rhythm.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-kitchen-rhythm.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-lunchbox-logic.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-lunchbox-logic.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-label-matchmaker.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-label-matchmaker.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-macro-grid.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-macro-grid.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-market-budget.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-market-budget.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-mascot-maker.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-mascot-maker.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-market-memory.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-market-memory.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-menu-mystery.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-menu-mystery.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-menu-word-hunt.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-menu-word-hunt.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-missing-number-kitchen.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-missing-number-kitchen.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-odd-ingredient-out.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-odd-ingredient-out.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-nutrition-term-match.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-nutrition-term-match.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-orange-orbit.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-orange-orbit.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-orchard-nonogram.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-orchard-nonogram.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-pantry-pack.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-pantry-pack.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-order-recall.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-order-recall.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-pantry-peek.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-pantry-peek.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-picnic-delivery.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-picnic-delivery.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-picnic-planner.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-picnic-planner.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-plate-art.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-plate-art.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-portion-balance.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-portion-balance.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-portion-fractions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-portion-fractions.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-protein-target-puzzle.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-protein-target-puzzle.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-range-finder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-range-finder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-recipe-dominoes.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-recipe-dominoes.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-recipe-path.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-recipe-path.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-recipe-remix.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-recipe-remix.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-restaurant-order-builder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-restaurant-order-builder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-restaurant-route.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-restaurant-route.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-rounding-room.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-rounding-room.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-sandwich-architect.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-sandwich-architect.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-sequence-chef.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-sequence-chef.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-serving-size-detective.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-serving-size-detective.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-silhouette-supper.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-silhouette-supper.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-smoothie-studio.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-smoothie-studio.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-sodium-sort.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-sodium-sort.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-source-sleuth.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-source-sleuth.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-tabletop-tangram.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-tabletop-tangram.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-spot-the-swap.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-spot-the-swap.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-snack-slide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-snack-slide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play-trade-off-table.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play-trade-off-table.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/popeyes-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/popeyes-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/play.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/privacy.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/privacy.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-chicken-sandwich-size-cross-chain.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-chicken-sandwich-size-cross-chain.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-cost-currency-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-cost-currency-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/portion-ratio-vs-percent-change.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/portion-ratio-vs-percent-change.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-cost-food-waste.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-cost-food-waste.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-cost-pack-size-minimum-spend.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-cost-pack-size-minimum-spend.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-density-fast-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-density-fast-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-label-blank-daily-value.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-label-blank-daily-value.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-per-package-not-scoop-count.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-per-package-not-scoop-count.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-powder-scoop-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-powder-scoop-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-serving-count-day-not-prescription.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-serving-count-day-not-prescription.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-sort-vs-portion-mass.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-sort-vs-portion-mass.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-value-after-fixed-delivery-fee.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-value-after-fixed-delivery-fee.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-value-calculator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-value-price-range-overlap.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-value-price-range-overlap.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/protein-target-gap-not-automatic-extra.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/protein-target-gap-not-automatic-extra.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/published-vs-calculated-restaurant-rows.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/published-vs-calculated-restaurant-rows.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/qdoba-burrito-bowl-published-pair.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/qdoba-burrito-bowl-published-pair.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/qdoba-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/qdoba-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/raising-canes-build-order-not-combo-name.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/raising-canes-build-order-not-combo-name.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/qdoba-vegan-bowl-fiber-tradeoff.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/qdoba-vegan-bowl-fiber-tradeoff.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/raising-canes-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/raising-canes-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/read-and-watch.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/read-and-watch.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-combined-batches-not-average-serving.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-combined-batches-not-average-serving.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-discrete-pieces-count-or-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-discrete-pieces-count-or-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/raw-vs-cooked-food-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/raw-vs-cooked-food-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-evaporation-weight-density.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-evaporation-weight-density.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-added-water-not-new-nutrients.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-added-water-not-new-nutrients.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-fixed-seasoning-scale.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-fixed-seasoning-scale.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-freezing-portion-count.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-freezing-portion-count.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-left-in-pan-residual.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-left-in-pan-residual.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-macro-scaler.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-one-ingredient-substitution.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-one-ingredient-substitution.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-quarter-batch-not-quarter-ingredient.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-quarter-batch-not-quarter-ingredient.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-recalculate-new-product-label.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-recalculate-new-product-label.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-repeated-ingredient-two-label-bases.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-repeated-ingredient-two-label-bases.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-sauce-made-vs-sauce-used.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-sauce-made-vs-sauce-used.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-target-batch-portions-integer.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-target-batch-portions-integer.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-sauce-on-side-two-totals.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-sauce-on-side-two-totals.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/recipe-uniform-vs-component-serving.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/recipe-uniform-vs-component-serving.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-bowl-nutrition-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-bowl-nutrition-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-compare-tradeoff-not-single-score.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-compare-tradeoff-not-single-score.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-dominated-choice-still-context.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-dominated-choice-still-context.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-meal-finder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-menu-serving-weight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-menu-serving-weight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-meal-guides.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-protein-cost-receipt-prices.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-protein-cost-receipt-prices.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-value-your-nutrient-not-protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-value-your-nutrient-not-protein.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/salad-burger-calories-no-category-rule.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/salad-burger-calories-no-category-rule.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-protein-value-no-price-data.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-protein-value-no-price-data.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/restaurant-search-result-count-scope.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-search-result-count-scope.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/same-restaurant-name-different-market-data.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/same-restaurant-name-different-market-data.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/saved-meal-source-version-check.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/saved-meal-source-version-check.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/serving-size-vs-portion-size.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/serving-size-vs-portion-size.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/search.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/search.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sodium-label-comparison-tool.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sodium-label-comparison-tool.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sodium-milligrams-to-grams.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sodium-milligrams-to-grams.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sonic-hot-dog-sodium-toppings.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-hot-dog-sodium-toppings.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sonic-small-burgers-not-same-order.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-small-burgers-not-same-order.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sonic-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sonic-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/starbucks-healthy-food-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/starbucks-healthy-food-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sources.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sources.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/subway-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/subway-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sugar-lines-do-not-add.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sugar-lines-do-not-add.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sweat-rate-calculator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sweat-rate-calculator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sweetgreen-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sweetgreen-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/taco-bell-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-bell-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/sweetgreen-vs-panera-chicken-salads.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/sweetgreen-vs-panera-chicken-salads.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/taco-johns-breakfast-taco-vs-burrito.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-breakfast-taco-vs-burrito.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/taco-johns-small-fiber-bound.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-small-fiber-bound.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/taco-johns-nutrition-guide.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-nutrition-guide.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/taco-johns-bowl-base-tradeoff.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/taco-johns-bowl-base-tradeoff.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/tare-bowl-before-weighing-food.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/tare-bowl-before-weighing-food.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/terms.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/terms.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": true
+    },
+    {
+      "route": "/two-fiber-sources-one-bowl.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-fiber-sources-one-bowl.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/two-for-one-protein-promotion.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-for-one-protein-promotion.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/three-count-tacos-not-three-equal-meals.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/three-count-tacos-not-three-equal-meals.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/two-meal-total-not-day-recommendation.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-meal-total-not-day-recommendation.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/two-person-restaurant-budget-constraints.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/two-person-restaurant-budget-constraints.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/unequal-recipe-portions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/unequal-recipe-portions.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/use-calorie-target-meal-finder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/use-calorie-target-meal-finder.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/vegetarian-fast-food-protein-comparison.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/vegetarian-fast-food-protein-comparison.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/vegetarian-label-not-allergen-safety.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/vegetarian-label-not-allergen-safety.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/weigh-food-by-container-difference.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/weigh-food-by-container-difference.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/weight-goal-timeline-calculator.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/weight-goal-timeline-calculator.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/wendys-healthy-meals-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/wendys-healthy-meals-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/what-are-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-are-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/what-is-a-calorie-deficit.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-is-a-calorie-deficit.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/what-to-eat-after-a-workout.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-to-eat-after-a-workout.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/what-to-eat-before-a-workout.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/what-to-eat-before-a-workout.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/when-to-recalculate-calories-and-macros.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/when-to-recalculate-calories-and-macros.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/world-restaurant-menus.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/world-restaurant-menus.html",
+      "robots": "indexable default",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    },
+    {
+      "route": "/why-did-i-gain-weight-overnight.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/why-did-i-gain-weight-overnight.html",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "sourceMatched": true,
+      "edgeEmailProtection": false
+    }
+  ],
+  "privatePaths": [
+    {
+      "route": "/server/index.cjs",
+      "status": 404
+    },
+    {
+      "route": "/tools/master_release/restaurant_records.json",
+      "status": 404
+    },
+    {
+      "route": "/docs/master-release-2026-10-12/sources/subway.pdf",
+      "status": 404
+    },
+    {
+      "route": "/not-a-getmacros-page",
+      "status": 404
+    }
+  ],
+  "searchConsole": "No authorized access; sitemap submission, crawling, indexing and clicks unverified",
+  "counts": {
+    "publicRoutes": 348,
+    "sitemapPages": 345,
+    "restaurantRecords": 1682,
+    "markets": [
+      "US",
+      "CA",
+      "MX",
+      "GB",
+      "IE",
+      "AU",
+      "NZ",
+      "JP"
+    ],
+    "importedSources": {
+      "usda": 36862,
+      "cnf": 5993,
+      "retailer-ca": 4
+    },
+    "presenceSchema": [
+      "schemaVersion",
+      "checkedAt",
+      "scope",
+      "statusMeaning",
+      "relationships"
+    ]
+  },
+  "actionsHttpStatus": 200,
+  "actions": [
+    {
+      "name": "Site quality",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/38279799948",
+      "headSha": "21a60f3e56555b59ea3fdd798e1ee57d5d6eddbc"
+    },
+    {
+      "name": "pages build and deployment",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/38279799526",
+      "headSha": "21a60f3e56555b59ea3fdd798e1ee57d5d6eddbc"
+    },
+    {
+      "name": "Site quality",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/38279799443",
+      "headSha": "21a60f3e56555b59ea3fdd798e1ee57d5d6eddbc"
+    }
+  ]
+}
