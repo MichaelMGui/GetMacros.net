@@ -17,6 +17,33 @@ GROUPS=[
 ('drinks','Drinks',['Coffee','Tea','Tap water','Bottled water','Plant-based milk','Apple juice','Citrus juice','Other fruit juice','Smoothies and grain drinks','Soft drinks','Diet soft drinks','Flavored or carbonated water','Milk shakes and other dairy drinks','Vegetable juice']),
 ('sauces','Oils, sauces & extras',['Salad dressings and vegetable oils','Fats and Oils','Butter and animal fats','Mayonnaise','Mustard and other condiments','Tomato-based condiments','Pasta sauces, tomato-based','Dips, gravies, other sauces','Soy-based condiments','Olives, pickles, pickled vegetables','Spices and Herbs','Sugars and honey','Jams, syrups, toppings']),
 ]
+# Source IDs, not invented nutrient profiles. Keep familiar ingredients near the top.
+PINS={
+ 'eggs-dairy':['fdc:173424','fdc:171287','fdc:330137','fdc:746782'],
+ 'bread-cereal':['fdc:2708381','fdc:2346396','fdc:2346397','fdc:172688'],
+ 'grains-potatoes':['fdc:168878','fdc:169704','fdc:170112','fdc:2346401'],
+ 'protein':['fdc:171477','fdc:2646170'],
+ 'plant-protein':['fdc:173735','fdc:175254','fdc:172475'],
+ 'fruit':['fdc:173944','fdc:2346409'],
+ 'vegetables':['fdc:747447','fdc:170393','fdc:321360'],
+ 'snacks':['fdc:170273','fdc:2708219'],
+ 'nuts':['fdc:170567'],
+ 'drinks':['fdc:2710707','fdc:171890'],
+ 'sauces':['fdc:171413','fdc:2710186'],
+}
+
+def category(row):
+    """Route coarse source categories by explicit food names where necessary."""
+    name=row['name'].casefold()
+    if row['category']=='Cereal Grains and Pasta' and name.startswith('oats,'):return 'Oatmeal'
+    if row['category']=='Fruits and Fruit Juices' and 'juice' in name:return 'Other fruit juice'
+    if row['category']=='Legumes and Legume Products' and name.startswith('peanut butter'):return 'Nuts and seeds'
+    if row['category']=='Vegetables and Vegetable Products' and name.startswith(('potatoes,','sweet potato')):return 'White potatoes, baked or boiled'
+    if row['category']=='Baked Products':
+        if name.startswith(('bread,','bagels,','bagel,','rolls,','english muffins','tortillas,')):return 'Yeast breads'
+        return 'Cookies and brownies' if name.startswith(('cookies,','crackers,','cake,','doughnuts,','pie,','pastries,')) else 'Biscuits, muffins, quick breads'
+    if row['category']=='Beverages':return 'Other fruit juice'
+    return row['category']
 def build():
     index=json.loads((ROOT/'data/food-library/index.json').read_text())
     manifest=json.loads((ROOT/'data/food-library/manifest.json').read_text())
@@ -24,14 +51,21 @@ def build():
     excluded=re.compile(r'mcdonald|burger king|wendy|starbucks|chick-fil|kfc|taco bell|subway|panda express|panera|popeye|gerber|baby food|infant|formula|sustain|ensure|boost plus|\bNFS\b|\bNS as to\b|,\s*NS\b',re.I)
     for row in index:
         if excluded.search(row['name']) or len(row['name'])>170:continue
-        by_category[row['category']].append(row)
+        by_category[category(row)].append(row)
     rank={'foundation':0,'legacy':1,'prepared':2}
     for rows in by_category.values():
         rows.sort(key=lambda row:(rank[row['type']],len(row['name']),row['name']))
     seen_names=set();groups=[]
+    eligible={r['id']:r for rows in by_category.values() for r in rows}
     for key,title,categories in GROUPS:
         rows=[];pools=[iter(by_category[c]) for c in categories]
-        while len(rows)<100 and pools:
+        for food_id in PINS.get(key,[]):
+            row=eligible.get(food_id)
+            if not row or category(row) not in categories:raise ValueError('Pinned food is not in its source group: '+food_id)
+            normalized=re.sub(r'\W+',' ',row['name'].casefold()).strip()
+            if normalized not in seen_names:
+                seen_names.add(normalized);rows.append({k:row[k] for k in ['id','name','type','shard']})
+        while pools:
             remaining=[]
             for pool in pools:
                 for row in pool:
@@ -42,7 +76,6 @@ def build():
                         break
                 else:continue
                 remaining.append(pool)
-                if len(rows)==100:break
             pools=remaining
         groups.append({'id':key,'name':title,'foods':rows})
     payload={'schemaVersion':1,'libraryVersion':manifest['libraryVersion'],'scope':'Shared food-composition references for every country; not local restaurant or packaged-product formulations. Prepared dishes are source reference recipes.','groups':groups,'foodCount':sum(len(g['foods']) for g in groups)}

@@ -3,10 +3,10 @@ const fs=require('node:fs'),assert=require('node:assert/strict'),vm=require('nod
 const F=require('../../js/food-core.js'),html=fs.readFileSync('food-diary.html','utf8');
 const url=html.match(/data-diary-catalogue="([^"]+)"/)[1],catalogue=JSON.parse(fs.readFileSync('.'+url,'utf8'));
 const index=new Map(JSON.parse(fs.readFileSync('data/food-library/index.json','utf8')).map(r=>[r.id,r]));
-assert.equal(catalogue.schemaVersion,1);assert.equal(catalogue.groups.length,12);assert.equal(catalogue.foodCount,1200);
+assert.equal(catalogue.schemaVersion,1);assert.equal(catalogue.groups.length,12);assert(catalogue.foodCount>=9000);assert.equal(catalogue.foodCount,catalogue.groups.reduce((sum,g)=>sum+g.foods.length,0));
 assert.equal(crypto.createHash('sha256').update(fs.readFileSync('.'+url)).digest('hex').slice(0,12),url.match(/-([a-f0-9]{12})\.json$/)[1]);
 const ids=new Set(),names=new Set(),shards=new Map();
-for(const group of catalogue.groups){assert.equal(group.foods.length,100);for(const row of group.foods){
+for(const group of catalogue.groups){assert(group.foods.length>=100);for(const row of group.foods){
  assert(!ids.has(row.id));ids.add(row.id);assert(!names.has(row.name.toLowerCase()));names.add(row.name.toLowerCase());
  const original=index.get(row.id);assert(original);assert.equal(row.name,original.name);assert.equal(row.type,original.type);assert.equal(row.shard,original.shard);
  assert.deepEqual(Object.keys(row).sort(),['id','name','shard','type']);assert(['foundation','legacy','prepared'].includes(row.type));
@@ -27,5 +27,5 @@ vm.runInNewContext(fs.readFileSync('js/food-library.js','utf8'),context);
  assert.equal(F.sum([{cal:null}]).cal.value,null);assert.equal(F.sum([{cal:0}]).cal.value,0);
  assert.equal(F.sum([{cal:25},{cal:null}]).cal.value,null);assert.equal(F.sum([{cal:25},{cal:null}]).cal.subtotal,25);
  assert(fs.readFileSync('sw.js','utf8').includes(url),'Browse catalogue is part of the matching offline shell');
- console.log('PASS: 1,200 source-backed browse choices; 12 groups; source identity, portions, nulls, bounded loading and offline catalogue.');
+ console.log('PASS: '+catalogue.foodCount+' source-backed browse choices; 12 groups; source identity, portions, nulls, bounded loading and offline catalogue.');
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -115,9 +115,9 @@
     "assetSha256": "7151b5636eb8df3859cbecfd018101b2788b3b340c1d4be03959c2eb42cdfa89"
   },
   "css/food-app.css": {
-    "url": "/assets/generated/css-food-app-452e63a94240.css",
-    "sourceSha256": "452e63a94240d97e262233512a1c573c9bb3588de361796a89efed5f23130f40",
-    "assetSha256": "452e63a94240d97e262233512a1c573c9bb3588de361796a89efed5f23130f40"
+    "url": "/assets/generated/css-food-app-6d6f2c8f8185.css",
+    "sourceSha256": "6d6f2c8f818572af3d93c27ac3e1627400c51fb67e5fe2425852f8872936f31d",
+    "assetSha256": "6d6f2c8f818572af3d93c27ac3e1627400c51fb67e5fe2425852f8872936f31d"
   },
   "js/ingredient-compare-core.js": {
     "url": "/assets/generated/js-ingredient-compare-core-9846a4b2d78c.js",
@@ -150,14 +150,19 @@
     "assetSha256": "7a19b4102b7b41fa15f0d55ffed12d474519f4e717519bc2213d10b23b5ef0a6"
   },
   "js/food-diary-store.js": {
-    "url": "/assets/generated/js-food-diary-store-11d1116bc89d.js",
-    "sourceSha256": "11d1116bc89d915c618d70a8dd0251fcd5386d94a80329273934979922b76daa",
-    "assetSha256": "11d1116bc89d915c618d70a8dd0251fcd5386d94a80329273934979922b76daa"
+    "url": "/assets/generated/js-food-diary-store-4482a3f8b8f1.js",
+    "sourceSha256": "4482a3f8b8f1520a826c42ca9f4839b4c26a06d67d6dc528fac311a9e980339e",
+    "assetSha256": "4482a3f8b8f1520a826c42ca9f4839b4c26a06d67d6dc528fac311a9e980339e"
   },
   "js/food-app.js": {
-    "url": "/assets/generated/js-food-app-fc94e34dceed.js",
-    "sourceSha256": "fc94e34dceed8d35eafadc4d905afe975d1bf65ad85d97a4dc900ae99430badf",
-    "assetSha256": "fc94e34dceed8d35eafadc4d905afe975d1bf65ad85d97a4dc900ae99430badf"
+    "url": "/assets/generated/js-food-app-be1706d26553.js",
+    "sourceSha256": "be1706d265532168f39fab3d699fb72d1041f525444da9ce1dcf48808aa02ddc",
+    "assetSha256": "be1706d265532168f39fab3d699fb72d1041f525444da9ce1dcf48808aa02ddc"
+  },
+  "js/diary-actions.js": {
+    "url": "/assets/generated/js-diary-actions-5e68af9d1b1d.js",
+    "sourceSha256": "5e68af9d1b1d06e2ec2202ec2a8667de9b1b56abfeecbe863ad6279ca0bce2ac",
+    "assetSha256": "5e68af9d1b1d06e2ec2202ec2a8667de9b1b56abfeecbe863ad6279ca0bce2ac"
   },
   "js/food-portion-compare.js": {
     "url": "/assets/generated/js-food-portion-compare-e8ff64fe34b3.js",

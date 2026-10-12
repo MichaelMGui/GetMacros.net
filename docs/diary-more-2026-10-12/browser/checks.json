@@ -1,0 +1,216 @@
+{
+  "verifiedAt": "2026-10-12T21:56:32.656Z",
+  "base": "http://127.0.0.1:59352",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1280,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "catalogueCount": 9905,
+      "checks": [
+        "empty repeat state",
+        "day controls and daylight-saving date",
+        "raw/cooked preparations",
+        "alphabetical browse",
+        "remembered group",
+        "exact source and country copy",
+        "double-submit",
+        "invalid-batch rejection",
+        "retry IDs",
+        "optional private notes",
+        "same-meal warning",
+        "date/country persistence",
+        "export integrity",
+        "no overflow or runtime errors"
+      ]
+    }
+  ]
+}
