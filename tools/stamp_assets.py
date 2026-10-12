@@ -135,13 +135,15 @@ def main():
 
     # A content-addressed app shell prevents stale arithmetic/UI after a release.
     if os.path.exists('sw.js'):
-        app_files=['food-diary.html','food-library.html','offline.html','site.webmanifest','js/order-registry.json','data/food-library/manifest.json','data/food-library/index.json']
+        app_files=['food-diary.html','food-library.html','offline.html','site.webmanifest','icon-sprite.svg','js/order-registry.json','data/food-library/manifest.json','data/food-library/index.json']
         app_files += sorted(glob.glob('data/branded-foods/*/manifest.json'))
+        app_files += sorted(glob.glob('data/food-library/diary-foods-*.json'))
         app_files += sorted(glob.glob('js/*.js'))+sorted(glob.glob('css/*.css'))
         fingerprint=hashlib.sha256(b''.join(open(p,'rb').read().replace(b'\r\n',b'\n') for p in app_files if os.path.isfile(p))).hexdigest()[:16]
         sw=open('sw.js',encoding='utf-8').read()
         sw=re.sub(r"const VERSION='[^']+'", "const VERSION='gm-food-app-"+fingerprint+"'",sw,count=1)
-        offline_assets={'/favicon.svg'}
+        offline_assets={'/favicon.svg','/icon-sprite.svg'}
+        offline_assets.update('/'+p.replace('\\','/') for p in glob.glob('data/food-library/diary-foods-*.json'))
         for page in ['food-diary.html','food-library.html']:
             offline_assets.update(re.findall(r'(?:href|src)="(/assets/generated/[^"]+\.(?:css|js))"',open(page,encoding='utf-8').read()))
         sw=re.sub(r'const APP_ASSETS=.*?;', 'const APP_ASSETS='+json.dumps(sorted(offline_assets),separators=(',',':'))+';',sw,count=1)

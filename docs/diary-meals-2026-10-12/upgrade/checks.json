@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-10-12T19:22:25.310Z",
+  "previousRevision": "ca760c3ea23e89d88a9c4a052a184e2acb715915",
+  "legacyCache": [
+    "gm-food-app-3dad36e6bb3c2621"
+  ],
+  "newCache": [
+    "gm-food-app-3dad36e6bb3c2621",
+    "gm-food-app-4e76faac86cba281"
+  ],
+  "checks": [
+    "legacy source deployment really installed",
+    "new bundles bypass stale old worker",
+    "autoactivation without forced page reload",
+    "all private entries and source snapshots preserved",
+    "restaurant inventory unchanged",
+    "styled diary, shared catalogue and recent saved portions work offline after upgrade",
+    "no runtime errors"
+  ]
+}

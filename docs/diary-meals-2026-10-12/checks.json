@@ -1,0 +1,266 @@
+{
+  "verifiedAt": "2026-10-12T19:22:52.804Z",
+  "base": "http://127.0.0.1:57659",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "light",
+      "width": 1280,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "countries": [
+        "US",
+        "CA",
+        "MX",
+        "GB",
+        "IE",
+        "AU",
+        "NZ",
+        "JP"
+      ],
+      "passed": [
+        "four permanent meal groups",
+        "1,200 shared browse foods",
+        "more foods",
+        "targeted logging and source math",
+        "edit/move",
+        "remove/undo",
+        "country/date persistence",
+        "unknown totals",
+        "no overflow"
+      ],
+      "runtimeErrors": []
+    }
+  ]
+}
