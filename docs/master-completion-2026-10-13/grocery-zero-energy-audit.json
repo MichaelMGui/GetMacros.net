@@ -1,0 +1,239 @@
+{
+  "source": "Open Food Facts current public partition",
+  "criterion": "Source-normalized energy 0 kcal per100 g/mL with protein>1g or fat>1g per100 source units; source original values retained for review, not automatically corrected",
+  "marketProfiles": 21,
+  "sourceProducts": 21,
+  "byMarket": {
+    "CA": 15,
+    "US": 6
+  },
+  "examples": [
+    {
+      "id": "branded:off:0627733010801:CA",
+      "name": "Coconut palm sugar",
+      "brand": "Organic traditions",
+      "source": "https://world.openfoodfacts.org/product/0627733010801",
+      "serving": {
+        "amount": 4.0,
+        "unit": "g",
+        "label": "4g"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 2.0,
+        "c": 3.0,
+        "fat": 1.0
+      }
+    },
+    {
+      "id": "branded:off:0667888140688:CA",
+      "name": "Mustard",
+      "brand": "Régale",
+      "source": "https://world.openfoodfacts.org/product/0667888140688",
+      "serving": {
+        "amount": 5.0,
+        "unit": "ml",
+        "label": "5 mL"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 4.0,
+        "c": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "branded:off:0055742550009:CA",
+      "name": "Farine tout usage non blanchie",
+      "brand": "Compliments",
+      "source": "https://world.openfoodfacts.org/product/0055742550009",
+      "serving": {
+        "amount": 30.0,
+        "unit": "g",
+        "label": "0.25 cup (30 g)"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 4.0,
+        "c": null,
+        "fat": 0.4
+      }
+    },
+    {
+      "id": "branded:off:0096619120291:CA",
+      "name": "Colombian Supremo Whole Bean Coffee",
+      "brand": "Kirkland signature",
+      "source": "https://world.openfoodfacts.org/product/0096619120291",
+      "serving": {
+        "amount": 100.0,
+        "unit": "g",
+        "label": "100 g"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 14.4,
+        "c": 40.2,
+        "fat": 15.4
+      }
+    },
+    {
+      "id": "branded:off:0056200761142:CA",
+      "name": "Classic Yellow Mustard",
+      "brand": "French's",
+      "source": "https://world.openfoodfacts.org/product/0056200761142",
+      "serving": {
+        "amount": 5.0,
+        "unit": "ml",
+        "label": "5 mL"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 4.0,
+        "c": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "branded:off:0057000036355:CA",
+      "name": "Yellow Mustard",
+      "brand": "Heinz",
+      "source": "https://world.openfoodfacts.org/product/0057000036355",
+      "serving": {
+        "amount": 5.0,
+        "unit": "ml",
+        "label": "5 mL"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 4.0,
+        "c": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "branded:off:0892565002847:CA",
+      "name": "Organic Miso Reduced Sodium",
+      "brand": "marukome",
+      "source": "https://world.openfoodfacts.org/product/0892565002847",
+      "serving": {
+        "amount": 15.0,
+        "unit": "g",
+        "label": "1 tbsp (15 g)"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 4.858,
+        "c": 17.68,
+        "fat": 2.102
+      }
+    },
+    {
+      "id": "branded:off:0057000012694:CA",
+      "name": "Moutarde jaune",
+      "brand": "Heinz",
+      "source": "https://world.openfoodfacts.org/product/0057000012694",
+      "serving": {
+        "amount": 5.0,
+        "unit": "ml",
+        "label": "5ml"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 2.0,
+        "c": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "branded:off:19918044:US",
+      "name": "Coffee Cake Muffin Cream Cake",
+      "brand": "Kirkland",
+      "source": "https://world.openfoodfacts.org/product/19918044",
+      "serving": {
+        "amount": 106.0,
+        "unit": "g",
+        "label": "1 muffin (106 g)"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 0.0,
+        "c": 59.4339622641509,
+        "fat": 20.7547169811321
+      }
+    },
+    {
+      "id": "branded:off:0055742531664:CA",
+      "name": "Prepared Mustard",
+      "brand": "Compliments",
+      "source": "https://world.openfoodfacts.org/product/0055742531664",
+      "serving": {
+        "amount": 5.0,
+        "unit": "ml",
+        "label": "5 mL"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 4.0,
+        "c": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "branded:off:00756396:US",
+      "name": "Tofu Sheets",
+      "brand": "Trader Joe's",
+      "source": "https://world.openfoodfacts.org/product/00756396",
+      "serving": {
+        "amount": 90.0,
+        "unit": "g",
+        "label": "1/2 package (90g)"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": 25.875,
+        "c": 15.6,
+        "fat": 14.4
+      }
+    },
+    {
+      "id": "branded:off:0038000136016:US",
+      "name": "Original",
+      "brand": "Pringles",
+      "source": "https://world.openfoodfacts.org/product/0038000136016",
+      "serving": {
+        "amount": 28.0,
+        "unit": "g",
+        "label": "28g"
+      },
+      "per100": {
+        "cal": 0.0,
+        "p": null,
+        "c": 57.1428571428571,
+        "fat": 32.1428571428571
+      }
+    }
+  ],
+  "allIds": [
+    "branded:off:0627733010801:CA",
+    "branded:off:0667888140688:CA",
+    "branded:off:0055742550009:CA",
+    "branded:off:0096619120291:CA",
+    "branded:off:0056200761142:CA",
+    "branded:off:0057000036355:CA",
+    "branded:off:0892565002847:CA",
+    "branded:off:0057000012694:CA",
+    "branded:off:19918044:US",
+    "branded:off:0055742531664:CA",
+    "branded:off:00756396:US",
+    "branded:off:0038000136016:US",
+    "branded:off:0770338003805:CA",
+    "branded:off:0060383168094:CA",
+    "branded:off:0062639370657:CA",
+    "branded:off:0011110787934:US",
+    "branded:off:0056200762170:CA",
+    "branded:off:0013764001978:US",
+    "branded:off:0078742237855:US",
+    "branded:off:0066200011604:CA",
+    "branded:off:0624913005541:CA"
+  ]
+}

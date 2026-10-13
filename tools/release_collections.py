@@ -85,7 +85,7 @@ def source_patch():
       ('Greek Salad bowl',(585,37,19,8,1830,40)),('Falafel Crunch bowl',(860,24,88,18,2230,56)),
       ('Chicken + Rice bowl',(710,40,43,7,1830,42)),('Harissa Avocado bowl',(840,42,63,12,2030,50))]:
         add('CAVA',name,nums,CAVA,'1 standard curated bowl, including its standard dips, toppings and dressing',
-          notes='Existing official April-2025-named document inspected; no printed publication date established. Current live menu linkage could not be verified. Do not claim this is a new menu edition.')
+          notes='Values come from an official document whose filename refers to April 2025. The document supplies no publication date; its connection to today's menu is unconfirmed.')
     for name,nums,portion in [
       ('Grilled Nuggets, 8 count',(130,25,1,0,440,3),'8 grilled nuggets, without dipping sauce'),
       ('Grilled Chicken Sandwich',(390,28,45,3,765,11),'1 standard sandwich; source formulation includes listed sauce ingredients; extra packets, sides and drinks excluded'),

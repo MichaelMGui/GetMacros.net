@@ -77,7 +77,7 @@ def record(group,parent,row,digest,is_new):
  if group in ('Drinks','Coffee','Treats'):notes.append('The printed weight is the published serving, not a conversion to fluid ounces. Added sugar and unlisted customizations are unknown.')
  if group in ('Dipping Sauces','Dressings'):notes.append('One published packet/container portion. Adding it to an order is an additional portion; do not add a packet already included in an entree total.')
  if 'Hash Brown Scramble' in name:notes.append('Use only the named published recipe. No unlisted protein or hash-brown substitution is calculated.')
- if row['ID']==10305:notes.append('Sauce inclusion is unresolved: the product page ingredient list includes Honey Roasted BBQ ingredients, while its prose says the sandwich pairs with that sauce. Do not label this 390 kcal row as sauce-free or subtract a packet.')
+ if row['ID']==10305:notes.append('The source lists Honey Roasted BBQ ingredients but also describes the sandwich as paired with that sauce. Whether the published 390 kcal includes it is unclear; a sauce-free total is unavailable.')
  if row['ID']==10335:notes.append('The source publishes a suggested-dressing total. Do not add the same suggested dressing again.')
  if row['ID']==576:notes.append('The 112 g published side includes kale, cabbage, vinaigrette and roasted almonds. It is not a catering tray or an almond-free customization.')
  if 'Fruit Cup' in name:notes.append('Use the exact named size: Small 107 g, Medium 125 g, Large 215 g. No generic fruit-cup portion is substituted.')

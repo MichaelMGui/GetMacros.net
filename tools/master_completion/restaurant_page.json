@@ -1,0 +1,59 @@
+{
+  "route": "/ca/en/restaurants/new-york-fries/",
+  "title": "New York Fries Canada nutrition: poutine, fries & order sizes",
+  "description": "Compare Canadian New York Fries sizes, exact gram weights, calories and macros. Selected August 2026 source servings, extra amounts and calculated hot-dog orders.",
+  "heading": "New York Fries Canada.",
+  "intro": "Choose the size you order. Snack, regular and large are different portions.",
+  "sections": [
+    {
+      "heading": "Poutine sizes are separate servings",
+      "copy": "The August 20 Canadian guide lists a snack Classic Poutine at395 g and a regular at600 g. Regular adds205 g,530 kcal and12 g protein; it is not simply two snack portions. Larger sizes carry their own published amounts.",
+      "comparisonNames": [
+        "Classic Poutine, Snack",
+        "Classic Poutine, Regular",
+        "Classic Poutine, Large"
+      ]
+    },
+    {
+      "heading": "Build the whole order",
+      "copy": "A hot dog with a snack fries order totals910 kcal and28 g protein. With regular fries it totals1,320 kcal and33 g protein. GetMacros sums two named Canadian source servings; drink, dips and extra condiments are not included. These totals are not separately published restaurant combos.",
+      "comparisonNames": [
+        "Hot dog with bun + snack fries",
+        "Hot dog with bun + regular fries"
+      ]
+    },
+    {
+      "heading": "Check extras before adding them",
+      "copy": "The guide supplies extra quantities for a snack-size poutine. Regular extras use twice that amount and large extras three times. The rule applies to the extra ingredient only. Do not use it to scale an entire poutine.",
+      "comparisonNames": [
+        "Cheese Curds",
+        "Chili",
+        "Butter Chicken",
+        "Gravy"
+      ]
+    },
+    {
+      "heading": "Match the Canadian serving",
+      "copy": "This selection uses the source linked by New York Fries’ Canadian site. A familiar name on its U.S. site does not establish the same recipe or size. Each recorded portion retains the named source size, gram weight and edition. It is not a complete live menu or warehouse inventory."
+    },
+    {
+      "heading": "Source and limits",
+      "copy": "Source edition August 20, 2026; retrieved and selected rows reviewed October 13, 2026. Published values are rounded and prepared portions can vary. Check your branch for availability and allergens. We do not infer allergen safety or unpublished substitutions.",
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf"
+    }
+  ],
+  "actions": [
+    {
+      "label": "Find Canadian meals",
+      "url": "/ca/en/find-a-meal/"
+    },
+    {
+      "label": "Log food",
+      "url": "/food-diary.html"
+    },
+    {
+      "label": "Compare countries",
+      "url": "/compare-menu-ingredients-worldwide.html"
+    }
+  ]
+}

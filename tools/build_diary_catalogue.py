@@ -45,8 +45,8 @@ def category(row):
     if row['category']=='Beverages':return 'Other fruit juice'
     return row['category']
 def build():
-    index=json.loads((ROOT/'data/food-library/index.json').read_text())
-    manifest=json.loads((ROOT/'data/food-library/manifest.json').read_text())
+    index=json.loads((ROOT/'data/food-library/index.json').read_text(encoding='utf-8'))
+    manifest=json.loads((ROOT/'data/food-library/manifest.json').read_text(encoding='utf-8'))
     by_category=defaultdict(list)
     excluded=re.compile(r'mcdonald|burger king|wendy|starbucks|chick-fil|kfc|taco bell|subway|panda express|panera|popeye|gerber|baby food|infant|formula|sustain|ensure|boost plus|\bNFS\b|\bNS as to\b|,\s*NS\b',re.I)
     for row in index:

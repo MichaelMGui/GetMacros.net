@@ -1,0 +1,65 @@
+{
+  "checks": [
+    "President's Choice",
+    "No Name",
+    "Great Value",
+    "Kirkland",
+    "Compliments",
+    "Our Finest",
+    "Western Family"
+  ],
+  "lookup": [
+    {
+      "market": "US",
+      "returned": 30
+    },
+    {
+      "market": "CA",
+      "returned": 22
+    },
+    {
+      "market": "MX",
+      "returned": 30
+    },
+    {
+      "market": "GB",
+      "returned": 30
+    },
+    {
+      "market": "IE",
+      "returned": 25
+    },
+    {
+      "market": "AU",
+      "returned": 30
+    },
+    {
+      "market": "NZ",
+      "returned": 30
+    },
+    {
+      "market": "JP",
+      "returned": 20
+    },
+    {
+      "query": "President's Choice rice",
+      "market": "CA",
+      "bytes": 1350060,
+      "requests": 15
+    },
+    {
+      "query": "Great Value milk",
+      "market": "CA",
+      "bytes": 1560187,
+      "requests": 31
+    },
+    {
+      "query": "Kirkland almonds",
+      "market": "CA",
+      "bytes": 998134,
+      "requests": 12
+    }
+  ],
+  "pass": true,
+  "description": "Actual imported labels, isolated local static loader; not browser or independently remeasured nutrient verification."
+}

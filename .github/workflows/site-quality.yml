@@ -49,3 +49,7 @@ jobs:
           node tools/master_release/test-branded-search.cjs
           node tools/master_release/test-branded-integrity.cjs
           node tools/master_release/test-diary-meals.cjs
+          node tools/master_completion/test-source-ui.cjs
+          python3 tools/master_completion/grocery_integrity_off.py
+          python3 tools/master_completion/test_integration.py
+          node tools/master_completion/grocery-search-off.cjs

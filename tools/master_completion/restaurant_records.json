@@ -1,0 +1,4186 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-13",
+  "records": [
+    {
+      "id": "CA|new-york-fries|9b3b9a00748853d7",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Fries, Snack",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 snack order · 170 g",
+      "servingGrams": 170,
+      "sourceServing": "1 snack order",
+      "sourceServingGrams": 170,
+      "category": "side",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "fibre",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 490.0,
+      "p": 6.0,
+      "c": 61.0,
+      "fat": 25.0,
+      "f": 5.0,
+      "na": 50.0,
+      "sugar": 1.0,
+      "sat": 2.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 490,
+        "p": 6,
+        "c": 61,
+        "fat": 25,
+        "f": 5,
+        "na": 50,
+        "sugar": 1,
+        "sat": 2
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 1400.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 50.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 1.75,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|0c427c0e7dc42854",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Fries, Regular",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 regular order · 312 g",
+      "servingGrams": 312,
+      "sourceServing": "1 regular order",
+      "sourceServingGrams": 312,
+      "category": "side",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "energy",
+        "fibre",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 900.0,
+      "p": 11.0,
+      "c": 111.0,
+      "fat": 46.0,
+      "f": 10.0,
+      "na": 85.0,
+      "sugar": 1.0,
+      "sat": 4.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 900,
+        "p": 11,
+        "c": 111,
+        "fat": 46,
+        "f": 10,
+        "na": 85,
+        "sugar": 1,
+        "sat": 4
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 2550.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 100.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 3.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|ae00a3842b03b192",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Fries, Large",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 large order · 397 g",
+      "servingGrams": 397,
+      "sourceServing": "1 large order",
+      "sourceServingGrams": 397,
+      "category": "side",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "energy",
+        "fibre",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 1150.0,
+      "p": 15.0,
+      "c": 142.0,
+      "fat": 58.0,
+      "f": 13.0,
+      "na": 110.0,
+      "sugar": 2.0,
+      "sat": 5.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 1150,
+        "p": 15,
+        "c": 142,
+        "fat": 58,
+        "f": 13,
+        "na": 110,
+        "sugar": 2,
+        "sat": 5
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 3200.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 125.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|299fc3ddb677304d",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Classic Poutine, Snack",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 snack poutine · 395 g",
+      "servingGrams": 395,
+      "sourceServing": "1 snack poutine",
+      "sourceServingGrams": 395,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 890.0,
+      "p": 27.0,
+      "c": 77.0,
+      "fat": 52.0,
+      "f": 5.0,
+      "na": 1160.0,
+      "sugar": 3.0,
+      "sat": 20.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 890,
+        "p": 27,
+        "c": 77,
+        "fat": 52,
+        "f": 5,
+        "na": 1160,
+        "sugar": 3,
+        "sat": 20
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 65.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 1500.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 650.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 2.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|eff5d2526af2e8de",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Classic Poutine, Regular",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 regular poutine · 600 g",
+      "servingGrams": 600,
+      "sourceServing": "1 regular poutine",
+      "sourceServingGrams": 600,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 1420.0,
+      "p": 39.0,
+      "c": 132.0,
+      "fat": 81.0,
+      "f": 10.0,
+      "na": 1510.0,
+      "sugar": 4.0,
+      "sat": 28.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 1420,
+        "p": 39,
+        "c": 132,
+        "fat": 81,
+        "f": 10,
+        "na": 1510,
+        "sugar": 4,
+        "sat": 28
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 115.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 2650.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 1150.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 3.5,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|0d0211cb8f574a42",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Classic Poutine, Large",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 large poutine · 811 g",
+      "servingGrams": 811,
+      "sourceServing": "1 large poutine",
+      "sourceServingGrams": 811,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 1920.0,
+      "p": 56.0,
+      "c": 171.0,
+      "fat": 111.0,
+      "f": 13.0,
+      "na": 2160.0,
+      "sugar": 6.0,
+      "sat": 42.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 1920,
+        "p": 56,
+        "c": 171,
+        "fat": 111,
+        "f": 13,
+        "na": 2160,
+        "sugar": 6,
+        "sat": 42
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 170.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 3450.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 1650.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.5,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|acb7fadf6bba0f01",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Nacho Fries, Snack",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 snack order · 318 g",
+      "servingGrams": 318,
+      "sourceServing": "1 snack order",
+      "sourceServingGrams": 318,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 600.0,
+      "p": 9.0,
+      "c": 76.0,
+      "fat": 29.0,
+      "f": 6.0,
+      "na": 770.0,
+      "sugar": 7.0,
+      "sat": 4.5,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 600,
+        "p": 9,
+        "c": 76,
+        "fat": 29,
+        "f": 6,
+        "na": 770,
+        "sugar": 7,
+        "sat": 4.5
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 1700.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 125.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 2.25,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|a5837d7616388ac4",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Nacho Fries, Regular",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 regular order · 523 g",
+      "servingGrams": 523,
+      "sourceServing": "1 regular order",
+      "sourceServingGrams": 523,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 1040.0,
+      "p": 15.0,
+      "c": 133.0,
+      "fat": 50.0,
+      "f": 12.0,
+      "na": 1160.0,
+      "sugar": 11.0,
+      "sat": 7.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 1040,
+        "p": 15,
+        "c": 133,
+        "fat": 50,
+        "f": 12,
+        "na": 1160,
+        "sugar": 11,
+        "sat": 7
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 3000.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 200.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|b470acbd0a6c817c",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Butter Chicken Poutine, Snack",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 snack poutine · 381 g",
+      "servingGrams": 381,
+      "sourceServing": "1 snack poutine",
+      "sourceServingGrams": 381,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 900.0,
+      "p": 35.0,
+      "c": 75.0,
+      "fat": 50.0,
+      "f": 7.0,
+      "na": 980.0,
+      "sugar": 5.0,
+      "sat": 18.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 900,
+        "p": 35,
+        "c": 75,
+        "fat": 50,
+        "f": 7,
+        "na": 980,
+        "sugar": 5,
+        "sat": 18
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 70.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 1700.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 600.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 2.25,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|4f0b783110aaf989",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Butter Chicken Poutine, Regular",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 regular poutine · 589 g",
+      "servingGrams": 589,
+      "sourceServing": "1 regular poutine",
+      "sourceServingGrams": 589,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 1470.0,
+      "p": 51.0,
+      "c": 130.0,
+      "fat": 81.0,
+      "f": 12.0,
+      "na": 1320.0,
+      "sugar": 7.0,
+      "sat": 26.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 1470,
+        "p": 51,
+        "c": 130,
+        "fat": 81,
+        "f": 12,
+        "na": 1320,
+        "sugar": 7,
+        "sat": 26
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 105.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 2950.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 900.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|5408432f9b7107ad",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Chili Poutine, Snack",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 snack poutine · 325 g",
+      "servingGrams": 325,
+      "sourceServing": "1 snack poutine",
+      "sourceServingGrams": 325,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 900.0,
+      "p": 31.0,
+      "c": 72.0,
+      "fat": 54.0,
+      "f": 7.0,
+      "na": 710.0,
+      "sugar": 3.0,
+      "sat": 21.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 900,
+        "p": 31,
+        "c": 72,
+        "fat": 54,
+        "f": 7,
+        "na": 710,
+        "sugar": 3,
+        "sat": 21
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 95.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 1600.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 800.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 3.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|2d16b9aafdb97a62",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Chili Poutine, Regular",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 regular poutine · 534 g",
+      "servingGrams": 534,
+      "sourceServing": "1 regular poutine",
+      "sourceServingGrams": 534,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [],
+      "cal": 1460.0,
+      "p": 45.0,
+      "c": 128.0,
+      "fat": 85.0,
+      "f": 12.0,
+      "na": 1010.0,
+      "sugar": 5.0,
+      "sat": 29.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 1460,
+        "p": 45,
+        "c": 128,
+        "fat": 85,
+        "f": 12,
+        "na": 1010,
+        "sugar": 5,
+        "sat": 29
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 130.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 2800.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 1100.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 5.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|db936e0456fdb1b6",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Hot Dog with Bun",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 hot dog with bun · 184 g",
+      "servingGrams": 184,
+      "sourceServing": "1 hot dog with bun",
+      "sourceServingGrams": 184,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [],
+      "components": [],
+      "cal": 420.0,
+      "p": 22.0,
+      "c": 39.0,
+      "fat": 20.0,
+      "f": 2.0,
+      "na": 1370.0,
+      "sugar": 2.0,
+      "sat": 7.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 420,
+        "p": 22,
+        "c": 39,
+        "fat": 20,
+        "f": 2,
+        "na": 1370,
+        "sugar": 2,
+        "sat": 7
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 90.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 300.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 150.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.5,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|65c893e57066a06a",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Hot Dog without Bun",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 hot dog without bun · 113 g",
+      "servingGrams": 113,
+      "sourceServing": "1 hot dog without bun",
+      "sourceServingGrams": 113,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light"
+      ],
+      "components": [],
+      "cal": 230.0,
+      "p": 16.0,
+      "c": 6.0,
+      "fat": 16.0,
+      "f": 1.0,
+      "na": 1090.0,
+      "sugar": 1.0,
+      "sat": 6.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 230,
+        "p": 16,
+        "c": 6,
+        "fat": 16,
+        "f": 1,
+        "na": 1090,
+        "sugar": 1,
+        "sat": 6
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 90.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 200.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 100.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 1.75,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|f42149a902489fb2",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Poutine Dog",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 loaded hot dog · 241 g",
+      "servingGrams": 241,
+      "sourceServing": "1 loaded hot dog",
+      "sourceServingGrams": 241,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein"
+      ],
+      "components": [],
+      "cal": 550.0,
+      "p": 29.0,
+      "c": 43.0,
+      "fat": 28.0,
+      "f": 2.0,
+      "na": 1660.0,
+      "sugar": 3.0,
+      "sat": 13.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 2,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 550,
+        "p": 29,
+        "c": 43,
+        "fat": 28,
+        "f": 2,
+        "na": 1660,
+        "sugar": 3,
+        "sat": 13
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 120.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 250.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 400.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|c241d9e36d2790d9",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Bacon Double Cheese Dog",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 loaded hot dog · 236 g",
+      "servingGrams": 236,
+      "sourceServing": "1 loaded hot dog",
+      "sourceServingGrams": 236,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein"
+      ],
+      "components": [],
+      "cal": 560.0,
+      "p": 30.0,
+      "c": 44.0,
+      "fat": 29.0,
+      "f": 2.0,
+      "na": 1650.0,
+      "sugar": 3.0,
+      "sat": 13.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 2,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 560,
+        "p": 30,
+        "c": 44,
+        "fat": 29,
+        "f": 2,
+        "na": 1650,
+        "sugar": 3,
+        "sat": 13
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 120.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 350.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 400.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|5c542c03ad6c4d3d",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Butter Chicken Dog",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 loaded hot dog · 241 g",
+      "servingGrams": 241,
+      "sourceServing": "1 loaded hot dog",
+      "sourceServingGrams": 241,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein"
+      ],
+      "components": [],
+      "cal": 570.0,
+      "p": 31.0,
+      "c": 43.0,
+      "fat": 29.0,
+      "f": 2.0,
+      "na": 1640.0,
+      "sugar": 3.0,
+      "sat": 13.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 2,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 570,
+        "p": 31,
+        "c": 43,
+        "fat": 29,
+        "f": 2,
+        "na": 1640,
+        "sugar": 3,
+        "sat": 13
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Canadian guide dated August 20, 2026. Exact named source serving; no sides, drinks or unspecified condiments are added. Tracked selection, not the full live menu or a branch-availability guarantee.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 2,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 120.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 300.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 400.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 4.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      }
+    },
+    {
+      "id": "CA|new-york-fries|35f193976e6609f4",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Chili",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 ladle for snack-size poutine · 28 g",
+      "servingGrams": 28,
+      "sourceServing": "1 ladle for snack-size poutine",
+      "sourceServingGrams": 28,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 30.0,
+      "p": 2.0,
+      "c": 2.0,
+      "fat": 1.5,
+      "f": 0.0,
+      "na": 105.0,
+      "sugar": 1.0,
+      "sat": 0.5,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 30,
+        "p": 2,
+        "c": 2,
+        "fat": 1.5,
+        "f": 0,
+        "na": 105,
+        "sugar": 1,
+        "sat": 0.5
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 5.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 50.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.5,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Chili",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|0328714a3e1d7a54",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Butter Chicken",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 ladle for snack-size poutine · 38 g",
+      "servingGrams": 38,
+      "sourceServing": "1 ladle for snack-size poutine",
+      "sourceServingGrams": 38,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 45.0,
+      "p": 4.0,
+      "c": 3.0,
+      "fat": 2.0,
+      "f": 0.0,
+      "na": 160.0,
+      "sugar": 1.0,
+      "sat": 1.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 45,
+        "p": 4,
+        "c": 3,
+        "fat": 2,
+        "f": 0,
+        "na": 160,
+        "sugar": 1,
+        "sat": 1
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 5.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 75.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.2,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Butter Chicken",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|5abecc3042f01b1e",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Cheese Curds",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1/2 scoop for snack-size poutine · 28 g",
+      "servingGrams": 28,
+      "sourceServing": "1/2 scoop for snack-size poutine",
+      "sourceServingGrams": 28,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 100.0,
+      "p": 7.0,
+      "c": 1.0,
+      "fat": 9.0,
+      "f": 0.0,
+      "na": 170.0,
+      "sugar": 0.0,
+      "sat": 6.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 100,
+        "p": 7,
+        "c": 1,
+        "fat": 9,
+        "f": 0,
+        "na": 170,
+        "sugar": 0,
+        "sat": 6
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 30.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 30.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 225.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Cheese Curds",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|a219a96529a8dab2",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Gravy",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 pump for snack-size poutine · 35 g",
+      "servingGrams": 35,
+      "sourceServing": "1 pump for snack-size poutine",
+      "sourceServingGrams": 35,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 15.0,
+      "p": 0.2,
+      "c": 3.0,
+      "fat": 0.3,
+      "f": 0.0,
+      "na": 170.0,
+      "sugar": 1.0,
+      "sat": 0.2,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 15,
+        "p": 0.2,
+        "c": 3,
+        "fat": 0.3,
+        "f": 0,
+        "na": 170,
+        "sugar": 1,
+        "sat": 0.2
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Gravy",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|d65a9732495bdd56",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Salsa",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 ladle for snack-size poutine · 28 g",
+      "servingGrams": 28,
+      "sourceServing": "1 ladle for snack-size poutine",
+      "sourceServingGrams": 28,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 10.0,
+      "p": 0.4,
+      "c": 2.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "na": 210.0,
+      "sugar": 1.0,
+      "sat": 0.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 10,
+        "p": 0.4,
+        "c": 2,
+        "fat": 0,
+        "f": 0,
+        "na": 210,
+        "sugar": 1,
+        "sat": 0
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 75.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.2,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Salsa",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|b013c26eb85ae178",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Sour Cream",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 ounce for snack-size poutine · 28 g",
+      "servingGrams": 28,
+      "sourceServing": "1 ounce for snack-size poutine",
+      "sourceServingGrams": 28,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 45.0,
+      "p": 1.0,
+      "c": 2.0,
+      "fat": 4.0,
+      "f": 0.0,
+      "na": 20.0,
+      "sugar": 1.0,
+      "sat": 2.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 45,
+        "p": 1,
+        "c": 2,
+        "fat": 4,
+        "f": 0,
+        "na": 20,
+        "sugar": 1,
+        "sat": 2
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 30.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 20.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Sour Cream",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|390489be0b47c6b9",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Bacon Pieces",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 teaspoon for snack-size poutine · 3 g",
+      "servingGrams": 3,
+      "sourceServing": "1 teaspoon for snack-size poutine",
+      "sourceServingGrams": 3,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 15.0,
+      "p": 1.0,
+      "c": 0.0,
+      "fat": 1.0,
+      "f": 0.0,
+      "na": 55.0,
+      "sugar": 0.0,
+      "sat": 0.3,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 15,
+        "p": 1,
+        "c": 0,
+        "fat": 1,
+        "f": 0,
+        "na": 55,
+        "sugar": 0,
+        "sat": 0.3
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Bacon Pieces",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|78818e615f111e1d",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Parmesan Cheese",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 tablespoon for snack-size poutine · 5.6 g",
+      "servingGrams": 5.6,
+      "sourceServing": "1 tablespoon for snack-size poutine",
+      "sourceServingGrams": 5.6,
+      "category": "component",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "light",
+        "lowsodium"
+      ],
+      "components": [],
+      "cal": 20.0,
+      "p": 2.0,
+      "c": 0.0,
+      "fat": 1.5,
+      "f": 0.0,
+      "na": 60.0,
+      "sugar": 0.0,
+      "sat": 1.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "official-table-reviewed",
+      "nativeNutrients": {
+        "cal": 20,
+        "p": 2,
+        "c": 0,
+        "fat": 1.5,
+        "f": 0,
+        "na": 60,
+        "sugar": 0,
+        "sat": 1
+      },
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "Published extra amount for a snack-size poutine. The source says regular extras use twice and large extras three times this amount. This rule does not scale a whole poutine.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": false,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "official published serving",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 5.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "potassium": {
+          "value": 10.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "calcium": {
+          "value": 50.0,
+          "unit": "mg",
+          "method": "official published serving"
+        },
+        "iron": {
+          "value": 0.0,
+          "unit": "mg",
+          "method": "official published serving"
+        }
+      },
+      "builderScope": "CA|new-york-fries|snack-poutine-extra",
+      "sourceItem": "Parmesan Cheese",
+      "servingRules": {
+        "snack": 1,
+        "regular": 2,
+        "large": 3,
+        "appliesTo": "extra ingredient amount only"
+      }
+    },
+    {
+      "id": "CA|new-york-fries|d7cfa5cc8d729691",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Hot dog with bun + snack fries",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 hot dog with bun + 1 snack fries order",
+      "servingGrams": 354,
+      "sourceServing": null,
+      "sourceServingGrams": null,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [
+        {
+          "item": "Hot Dog with Bun",
+          "quantity": 1,
+          "recordId": "CA|new-york-fries|db936e0456fdb1b6"
+        },
+        {
+          "item": "Fries, Snack",
+          "quantity": 1,
+          "recordId": "CA|new-york-fries|9b3b9a00748853d7"
+        }
+      ],
+      "cal": 910.0,
+      "p": 28.0,
+      "c": 100.0,
+      "fat": 45.0,
+      "f": 7.0,
+      "na": 1420.0,
+      "sugar": 3.0,
+      "sat": 9.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "calculated-from-official-components",
+      "nativeNutrients": null,
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "GetMacros adds the rounded Canadian source values for these two exact items. Drink, dips and extra condiments are excluded. This is a calculated order, not a separately published restaurant combo.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|9b3b9a00748853d7"
+          ],
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 90.0,
+          "unit": "mg",
+          "method": "sum of official component values"
+        },
+        "potassium": {
+          "value": 1700.0,
+          "unit": "mg",
+          "method": "sum of official component values"
+        },
+        "calcium": {
+          "value": 200.0,
+          "unit": "mg",
+          "method": "sum of official component values"
+        },
+        "iron": {
+          "value": 6.25,
+          "unit": "mg",
+          "method": "sum of official component values"
+        }
+      },
+      "calculatedFrom": [
+        {
+          "id": "CA|new-york-fries|db936e0456fdb1b6",
+          "quantity": 1
+        },
+        {
+          "id": "CA|new-york-fries|9b3b9a00748853d7",
+          "quantity": 1
+        }
+      ],
+      "calculation": "Sum of one named hot dog and one named fries portion."
+    },
+    {
+      "id": "CA|new-york-fries|fbe4440f1a98a8ed",
+      "chain": "New York Fries",
+      "restaurantId": "new-york-fries",
+      "restaurantMarketId": "CA|new-york-fries",
+      "name": "Hot dog with bun + regular fries",
+      "market": "CA",
+      "country": "CA",
+      "region": "CA",
+      "language": "en",
+      "serving": "1 hot dog with bun + 1 regular fries order",
+      "servingGrams": 496,
+      "sourceServing": null,
+      "sourceServingGrams": null,
+      "category": "entree",
+      "meal": "main",
+      "size": "",
+      "diet": [],
+      "t": [
+        "protein",
+        "energy",
+        "fibre"
+      ],
+      "components": [
+        {
+          "item": "Hot Dog with Bun",
+          "quantity": 1,
+          "recordId": "CA|new-york-fries|db936e0456fdb1b6"
+        },
+        {
+          "item": "Fries, Regular",
+          "quantity": 1,
+          "recordId": "CA|new-york-fries|0c427c0e7dc42854"
+        }
+      ],
+      "cal": 1320.0,
+      "p": 33.0,
+      "c": 150.0,
+      "fat": 66.0,
+      "f": 12.0,
+      "na": 1455.0,
+      "sugar": 3.0,
+      "sat": 11.0,
+      "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+      "sourceParent": "https://www.newyorkfries.com/fries",
+      "sourceDate": "2026-08-20",
+      "sourceDateProvenance": "Printed Last updated: Aug. 20, 2026 on both rendered source pages",
+      "retrievedAt": "2026-10-13",
+      "checked": "2026-10-13",
+      "sourcePage": 1,
+      "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "sourceVersion": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+      "verificationStatus": "calculated-from-official-components",
+      "nativeNutrients": null,
+      "nutrientBasis": "per named source serving",
+      "units": {
+        "cal": "kcal",
+        "p": "g",
+        "c": "g",
+        "fat": "g",
+        "f": "g",
+        "na": "mg",
+        "sugar": "g",
+        "sat": "g"
+      },
+      "conversions": [],
+      "notes": "GetMacros adds the rounded Canadian source values for these two exact items. Drink, dips and extra condiments are excluded. This is a calculated order, not a separately published restaurant combo.",
+      "url": "/ca/en/restaurants/new-york-fries/",
+      "macroComplete": true,
+      "finderSupported": true,
+      "nutrientProvenance": {
+        "cal": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "p": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "c": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "fat": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "f": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "na": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "sugar": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        },
+        "sat": {
+          "method": "sum of official component values",
+          "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+          "page": 1,
+          "edition": "2026-08-20",
+          "componentIds": [
+            "CA|new-york-fries|db936e0456fdb1b6",
+            "CA|new-york-fries|0c427c0e7dc42854"
+          ],
+          "verifiedAt": "2026-10-13"
+        }
+      },
+      "additionalNutrients": {
+        "chol": {
+          "value": 90.0,
+          "unit": "mg",
+          "method": "sum of official component values"
+        },
+        "potassium": {
+          "value": 2850.0,
+          "unit": "mg",
+          "method": "sum of official component values"
+        },
+        "calcium": {
+          "value": 250.0,
+          "unit": "mg",
+          "method": "sum of official component values"
+        },
+        "iron": {
+          "value": 7.5,
+          "unit": "mg",
+          "method": "sum of official component values"
+        }
+      },
+      "calculatedFrom": [
+        {
+          "id": "CA|new-york-fries|db936e0456fdb1b6",
+          "quantity": 1
+        },
+        {
+          "id": "CA|new-york-fries|0c427c0e7dc42854",
+          "quantity": 1
+        }
+      ],
+      "calculation": "Sum of one named hot dog and one named fries portion."
+    }
+  ],
+  "counts": {
+    "newRecords": 27,
+    "officialServingRecords": 25,
+    "calculatedOrders": 2,
+    "components": 8,
+    "finderRecords": 19
+  },
+  "source": {
+    "source": "https://www.newyorkfries.com/_files/ugd/bdf8b6_4b1456a15baf4c13acd16438966d77e6.pdf",
+    "sourceParent": "https://www.newyorkfries.com/fries",
+    "sourceHash": "26200ed27de3c04fb7165e7f6a1dd67251bf954640f2695f090d2b42a1776ee4",
+    "sourceDate": "2026-08-20",
+    "rights": {
+      "kind": "individually curated factual nutrient observations",
+      "copyingScope": "Selected menu names, serving definitions and factual quantities only. Original PDF, table arrangement, prose, images and trademarks are not republished. No ownership or open data license is claimed.",
+      "photosImported": false,
+      "completeCatalogueCopied": false
+    },
+    "limits": [
+      "Selected Canadian guide servings, not an audited full menu or live branch inventory.",
+      "Extra topping quantities in source are based on a snack-size poutine; regular extras are two times and large extras three times. These factors do not scale a complete poutine.",
+      "Named hot dog serving includes its printed build; no unidentified condiments are silently added.",
+      "Source nutrient values are rounded; calculated totals are sums of named published component values.",
+      "Allergen safety is not inferred."
+    ]
+  }
+}

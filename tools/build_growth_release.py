@@ -69,6 +69,8 @@ def run():
  write('protein-value-calculator.html',scripts(text,['order-tools-core.js']))
  # Additional data are source-checked components, not fictitious full-lunch totals.
  catalogue=json.loads((DATA/'menu-records.json').read_text(encoding='utf-8'));records=catalogue['records'];new=sum(r['isNew'] for r in records)
+ # Curated source is authoritative for the public download as well as tables.
+ (ROOT/'js/order-catalogue.json').write_text(json.dumps(catalogue,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
  table='<div class="table-wrap" tabindex="0" role="region" aria-label="Source-checked menu components"><table class="component-snapshot-table"><caption>U.S. published portions checked October 9, 2026. Sugar means total sugars; added sugars are unknown.</caption><thead><tr>'+''.join('<th scope="col">'+v+'</th>' for v in ('Exact item','Portion','Status','Calories','Protein (g)','Carbs (g)','Fat (g)','Fiber (g)','Sodium (mg)','Total sugars (g)'))+'</tr></thead><tbody>'
  for r in records:
   n=r['nutrients'];table+='<tr><th scope="row"><a href="'+e(r['source']['productUrl'] or r['source']['url'])+'">'+e(r['name'])+'</a><small>'+e(r['category'])+'</small></th><td>'+e(r['portion']['label'])+'</td><td>'+('New' if r['isNew'] else 'Reverified existing')+'</td>'+''.join('<td>'+('Unknown' if n[k] is None else e(n[k]))+'</td>' for k in ('calories','proteinG','carbsG','fatG','fiberG','sodiumMg','totalSugarG'))+'</tr>'

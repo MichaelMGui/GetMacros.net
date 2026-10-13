@@ -1,0 +1,63 @@
+{
+  "publishedSourceBytes": 829158631,
+  "directoryBytes": {
+    "root": 8196345,
+    ".well-known": 162,
+    "assets": 7981790,
+    "au": 173156,
+    "ca": 522542,
+    "css": 136227,
+    "data": 799044024,
+    "fonts": 335521,
+    "gb": 284348,
+    "ie": 195938,
+    "images": 2398878,
+    "jp": 216311,
+    "js": 9314877,
+    "mx": 189862,
+    "nz": 168650
+  },
+  "largestFiles": [
+    [
+      29275131,
+      "data/branded-foods/off/records.ndjson.gz"
+    ],
+    [
+      14625008,
+      "data/branded-foods/off/source-records.ndjson.gz"
+    ],
+    [
+      4298895,
+      "js/order-registry.json"
+    ],
+    [
+      4298894,
+      "assets/generated/js-order-registry-fcf1e9d7d748.json"
+    ],
+    [
+      1916838,
+      "data/food-library/index.json"
+    ],
+    [
+      1158556,
+      "js/canada-meals.json"
+    ],
+    [
+      1069624,
+      "data/food-library/diary-foods-93eb178dd592.json"
+    ],
+    [
+      962256,
+      "js/gb-meals.js"
+    ],
+    [
+      962255,
+      "assets/generated/js-gb-meals-61d70ada9c63.js"
+    ],
+    [
+      923299,
+      "data/branded-foods/off/barcodes/000.json"
+    ]
+  ],
+  "measurement": "Staged public source tree before Pages packaging; excludes existing configured development/private directories, not an HTTP transfer measurement."
+}

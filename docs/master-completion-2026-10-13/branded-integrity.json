@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "recordsInspected": 139310,
+  "bySource": {
+    "usda": 36862,
+    "retailer-ca": 4,
+    "cnf": 5993,
+    "off": 96451
+  },
+  "unknownNutrientFieldsPreserved": 2423623,
+  "originalUsdaReferenceCount": 13578
+}

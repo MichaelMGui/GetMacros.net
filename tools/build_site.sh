@@ -23,6 +23,7 @@ python3 tools/build_growth_release.py
 python3 tools/build_international_release.py
 python3 tools/build_global_product.py
 python3 tools/build_master_release.py
+python3 tools/build_master_completion.py
 python3 tools/build_master_diary.py
 python3 tools/build_master_interface.py
 python3 tools/refresh_release_search.py
@@ -38,3 +39,7 @@ python3 tools/test_master_homepages.py
 python3 tools/master_release/test_branded_import.py
 python3 tools/master_release/test_restaurants.py
 node tools/master_release/test-diary-meals.cjs
+
+python3 tools/master_completion/test_restaurants.py
+python3 tools/master_completion/grocery_test_off.py
+node tools/master_completion/test-source-ui.cjs

@@ -155,6 +155,7 @@ def release_routes():
     product=root/'tools/product_release/pages.json'
     if product.exists():routes.update(r['route'] for r in json.loads(product.read_text(encoding='utf-8')))
     routes.add('how-to-log-food-portions.html')
+    routes.add('grocery-food-coverage.html')
     return routes
 
 KEEP_ROOT_HTML = KEEP_ROOT_HTML | release_routes()
