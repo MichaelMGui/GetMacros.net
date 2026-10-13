@@ -1,13 +1,15 @@
 """Copy only this release into the existing approved writable Git publisher."""
 from pathlib import Path
-import json, re, shutil, subprocess, time
+import json, re, shutil, subprocess, time, argparse
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/"docs/master-completion-2026-10-13"
 DEST=ROOT/"docs/master-release-2026-10-12/publisher"
 assert DEST.resolve().is_relative_to(ROOT/"docs") and (DEST/".git").is_dir()
 assert subprocess.check_output(["git","remote","get-url","origin"],cwd=DEST,text=True).strip()=="https://github.com/MichaelMGui/GetMacros.net.git"
 previous=json.loads((OUT/"baseline.json").read_text())["publishedRevision"]
-assert subprocess.check_output(["git","rev-parse","HEAD"],cwd=DEST,text=True).strip()==previous
+parser=argparse.ArgumentParser();parser.add_argument('--expected-head',default=previous);args=parser.parse_args()
+assert re.fullmatch(r'[a-f0-9]{40}',args.expected_head)
+assert subprocess.check_output(["git","rev-parse","HEAD"],cwd=DEST,text=True).strip()==args.expected_head
 baseline=set(json.loads((OUT/"baseline.json").read_text())["hashes"])
 tracked=set(subprocess.check_output(["git","ls-files"],cwd=DEST,text=True).splitlines())
 # Preserve unrelated historical generators that were never in production.

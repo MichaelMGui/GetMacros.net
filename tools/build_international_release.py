@@ -119,7 +119,10 @@ def data():
  catalogue=json.loads((ROOT/'js/order-catalogue.json').read_text(encoding='utf-8'))
  for r in catalogue['records']:
   n=r['nutrients'];row=dict(id=r['id'] if r['isNew'] else r.get('baselineKey'),chain=r.get('restaurant',r.get('chain')),name=r['name'],market='US',country='US',region='U.S.',serving=r['portion']['label'],source=r['source']['url'],checked=r['source']['checkedAt'],sourceDate=None,category=r['category'],notes=' '.join(r.get('notes',[])) if isinstance(r.get('notes'),list) else r.get('notes',''),url='/chick-fil-a-healthy-meals-macros.html',cal=n['calories'],p=n['proteinG'],c=n['carbsG'],fat=n['fatG'],f=n['fiberG'],na=n['sodiumMg'],sugar=n['totalSugarG'],verificationStatus='official-table-reviewed',retrievedAt=r['source']['checkedAt'],units={'cal':'kcal','p':'g','c':'g','fat':'g','f':'g','na':'mg','sugar':'g'},conversions=[])
-  if r['isNew']:rows.append(row)
+  if r['isNew']:
+   # These additional logging/builder records are not in the primary U.S. finder.
+   row['finderSupported']=False
+   rows.append(row)
   else:
    at=next((i for i,m in enumerate(rows) if m['chain']+'||'+m['name']==r.get('baselineKey')),None)
    if at is not None:rows[at].update(row)

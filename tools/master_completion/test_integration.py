@@ -23,6 +23,29 @@ def route_source(route):
     return path.read_text(encoding="utf-8")
 
 
+def actual_finder_counts():
+    """Execute the trusted data assets used by the real finder, not the registry."""
+    script = r"""
+const fs=require('node:fs'),vm=require('node:vm');
+const files={US:'meal-data.js',CA:'canada-meals.js',MX:'mx-meals.js',
+GB:'gb-meals.js',IE:'ie-meals.js',AU:'au-meals.js',NZ:'nz-meals.js',JP:'jp-meals.js'};
+const result={};
+for(const [market,file]of Object.entries(files)){
+ const scope={window:{}};
+ vm.runInNewContext(fs.readFileSync('js/'+file,'utf8'),scope,{filename:file});
+ const rows=scope.window.GM_MEALS;
+ if(!Array.isArray(rows))throw Error(file+' has no finder meal array');
+ const chains={},markets={};
+ for(const r of rows){chains[r.chain]=(chains[r.chain]||0)+1;const country=r.market||r.country||'missing';markets[country]=(markets[country]||0)+1;}
+ result[market]={file,count:rows.length,chains,markets};
+}
+console.log(JSON.stringify(result));
+"""
+    result = subprocess.run(["node", "-e", script], cwd=ROOT,
+                            capture_output=True, encoding="utf-8", check=True)
+    return json.loads(result.stdout)
+
+
 class CompletedRestaurantIntegration(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -103,6 +126,16 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         self.assertEqual(nyf["localMenuSource"], self.additions[0]["sourceParent"])
         self.assertIn("not a complete", nyf["limitations"])
 
+    def test_us_finder_count_matches_the_actual_primary_dataset(self):
+        script = "const fs=require('fs'),vm=require('vm'),c={window:{}};vm.runInNewContext(fs.readFileSync('js/meal-data.js','utf8'),c);console.log(c.window.GM_MEALS.length)"
+        actual = int(subprocess.check_output(['node', '-e', script], cwd=ROOT, text=True))
+        usa = [r for r in self.registry if r['market'] == 'US']
+        self.assertEqual(sum(finder_supported(r) for r in usa), actual)
+        additional = [r for r in usa if str(r.get('id', '')).startswith('cfa-us-')]
+        self.assertEqual(len(additional), 129)
+        self.assertTrue(all(r['finderSupported'] is False for r in additional))
+        self.assertTrue(all(r.get('source') for r in additional))
+
     def test_world_index_uses_every_tracked_chain(self):
         html = route_source("/world-restaurant-menus.html")
         main = unescape(re.search(r"<main\b[^>]*>(.*?)</main>", html, re.S)[1])
@@ -176,6 +209,27 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         report = json.loads(result.stdout)
         self.assertEqual(report["status"], "passed")
         self.assertGreaterEqual(report["checks"], 30)
+
+    def test_actual_finder_membership_matches_presence_per_chain(self):
+        counts = actual_finder_counts()
+        for market, actual in counts.items():
+            self.assertEqual(actual["markets"], {market: actual["count"]}, actual["file"])
+            rows = [r for r in self.registry if r["market"] == market and finder_supported(r)]
+            self.assertEqual(len(rows), actual["count"], market)
+            self.assertEqual(dict(Counter(r["chain"] for r in rows)), actual["chains"], market)
+            for presence in self.presence:
+                if presence["country"] == market:
+                    self.assertEqual(presence["finderRecords"],
+                                     actual["chains"].get(presence["restaurantBrand"], 0),
+                                     presence["id"])
+        # The U.S. catalogue also has logging/builder records that are deliberately
+        # outside the established finder. Their existence must not inflate it.
+        self.assertEqual(counts["US"]["count"], 463)
+        self.assertEqual(counts["US"]["chains"]["Chick-fil-A"], 11)
+        us_cfa = next(p for p in self.presence
+                      if p["country"] == "US" and p["restaurantBrand"] == "Chick-fil-A")
+        self.assertEqual(us_cfa["trackedRecords"], 140)
+        self.assertEqual(us_cfa["finderRecords"], 11)
 
 
 if __name__ == "__main__":

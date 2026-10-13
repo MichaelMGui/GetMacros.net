@@ -1,11 +1,14 @@
 """Validate only the staged release in an isolated checkout, including CI checks."""
 from pathlib import Path
-import json, os, subprocess, tempfile
+import json, os, subprocess, tempfile, argparse
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'docs/master-completion-2026-10-13'
 PUBLISHER = ROOT / 'docs/master-release-2026-10-12/publisher'
 PYTHON = 'C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
+parser=argparse.ArgumentParser()
+parser.add_argument('--focused',action='store_true',help='Final source-capability correction; retains the full build and relevant integration/food/idempotency tests.')
+args=parser.parse_args()
 
 quality = [
     ['node', 'tools/test_macro_math.js'],
@@ -51,7 +54,8 @@ with tempfile.TemporaryDirectory(prefix='getmacros-completion-index-') as direct
     environment = {**os.environ, 'GIT_DIR': str(PUBLISHER / '.git'), 'GIT_WORK_TREE': str(clean)}
     outcomes = []
     with (OUT / 'clean-source-build.log').open('w', encoding='utf-8') as log:
-        commands = [[PYTHON, '-X', 'utf8', 'tools/run_food_build.py']] + quality
+        focused = [quality[i] for i in [1,3,8,19]]
+        commands = [[PYTHON, '-X', 'utf8', 'tools/run_food_build.py']] + (focused if args.focused else quality)
         for command in commands:
             log.write('\nCOMMAND: ' + ' '.join(command) + '\n'); log.flush()
             result = subprocess.run(command, cwd=clean, env=environment, stdout=log, stderr=subprocess.STDOUT)

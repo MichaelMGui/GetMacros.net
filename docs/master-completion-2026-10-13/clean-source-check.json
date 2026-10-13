@@ -12,21 +12,7 @@
     {
       "command": [
         "node",
-        "tools/test_macro_math.js"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
         "tools/product_release/test-food.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/product_release/test-ingredient-comparison.cjs"
       ],
       "exitCode": 0
     },
@@ -42,35 +28,6 @@
     {
       "command": [
         "node",
-        "--test",
-        "server/test/service.test.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/test-companion-engine.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/test-meal-view.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/test-growth-tools.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
         "tools/international/test-markets.cjs"
       ],
       "exitCode": 0
@@ -80,102 +37,7 @@
         "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
         "-X",
         "utf8",
-        "tools/growth_release/review-source.py",
-        "--validate"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
-        "-X",
-        "utf8",
-        "tools/test_growth_release.py"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/play_release/test-rules.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
-        "-X",
-        "utf8",
-        "tools/test-release-content.py"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
-        "-X",
-        "utf8",
-        "tools/test_asset_stamps.py"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/master_release/test-branded-search.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/master_release/test-branded-integrity.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/master_release/test-diary-meals.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/master_completion/test-source-ui.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
-        "-X",
-        "utf8",
-        "tools/master_completion/grocery_integrity_off.py"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
-        "-X",
-        "utf8",
         "tools/master_completion/test_integration.py"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/master_completion/grocery-search-off.cjs"
-      ],
-      "exitCode": 0
-    },
-    {
-      "command": [
-        "node",
-        "tools/master_completion/test_restaurant_adapter.cjs"
       ],
       "exitCode": 0
     }

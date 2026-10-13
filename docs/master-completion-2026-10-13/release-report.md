@@ -95,3 +95,9 @@ Local final refinement evidence: the ten native grocery/diary journeys passed ag
 
 
 Final isolated publication check: the complete build and 22 further quality commands passed (23 commands total), with zero public-file differences between the staged source rebuild and the reviewed application. No inherited untracked inputs were used. The staged public tree is 829,158,631 bytes before Pages packaging; the largest individual file is the 29,275,131-byte licensed normalized export. Full results are in clean-source-check.json, clean-source-build.log and artifact-size.json.
+
+
+Final coverage-counter correction: the 129 additional U.S. Chick-fil-A logging/builder catalogue entries are explicitly excluded from the primary meal-finder count. They remain searchable/loggable, with unchanged nutrition and sources. The actual U.S. finder has 463 rows (11 Chick-fil-A); its broader registry has 592 rows (140 Chick-fil-A). Twelve output integration tests execute the actual eight market data assets and verify total and per-chain presence counters. Actual finder counts: US 463; CA 281; MX 53; GB 327; IE 66; AU 15; NZ 17; JP 206. The original comprehensive passing check is retained as clean-source-full-check.json and clean-source-full-build.log; the final scoped correction receives a full application rebuild plus focused integration, food and idempotency checks, and the full production CI workflow.
+
+
+The final source-capability correction passed the complete application build plus four focused regression commands, with zero public-file differences (clean-source-check.json). All eight actual finder arrays and their per-chain coverage counters pass the 12-test integration suite. Production licensed gzip exports match their exact binary SHA-256; text distributions have exactly matching UTF-8 contents after Git line-ending normalization.
