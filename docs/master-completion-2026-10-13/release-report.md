@@ -101,3 +101,22 @@ Final coverage-counter correction: the 129 additional U.S. Chick-fil-A logging/b
 
 
 The final source-capability correction passed the complete application build plus four focused regression commands, with zero public-file differences (clean-source-check.json). All eight actual finder arrays and their per-chain coverage counters pass the 12-test integration suite. Production licensed gzip exports match their exact binary SHA-256; text distributions have exactly matching UTF-8 contents after Git line-ending normalization.
+
+
+## Actual publication and live verification
+
+Implemented release de34b416a46afd68ee3fb4d24e81739361b5e64f, followed by the tested coverage-counter correction 04406045f20761934f693f93daec1d5b58b55842. Both were atomically pushed through the existing main and claude/getmacros-nutrition-site-1gfhsm workflow. Both Site quality runs and the Pages build/deployment completed successfully on the final implementation revision. No DNS, Cloudflare settings, credentials, provider purchase or unrelated project was changed.
+
+Live source verification passed: all 350 public HTML pages and 452 production resources returned 200 and matched the reviewed source. This includes active immutable assets, current manifests/market postings, the complete OFF licensed source/normalized archives, and representative record/token/barcode/metadata shards. Remaining individual shards were all validated locally; they were not all individually downloaded from production. Text line endings are normalized for Git portability; both gzip archives require exact binary SHA-256. The hosting layer reversibly protects email addresses on some pages; the verifier decodes only that known transformation, asserts the decoded address equals its source and then requires the rest of the page to match exactly. No hosting setting was changed.
+
+Actual live browser evidence: 140 sampled page/theme/width states and 10 expanded control journeys passed on revision 0440604, including country and language/search menus, theme persistence, filters and missing macros, diary review/logging/preferences, calculators and game pause/restart. Both live U.S./Canada comparison captures and named phone controls were visually opened (visual-final-production/checks.json and visual-review.md).
+
+Ten live grocery/diary/comparison journeys passed across both themes and all five widths on feature revision de34b41; its tested grocery/UI/source logic is unchanged by the final count correction. Source exports, real barcode/brand review, amounts, source licensing, favorites, repeats, private backups, country isolation, source-outage fallback and New York Fries were exercised (products/production/README.md). One initial source-outage assertion timed out; its cause was undetermined and is retained in initial-failure-and-recovery.json. Fresh diagnostics matched all 24 requested USDA source files and the complete unchanged-assertion rerun passed. No timeout or assertion was weakened.
+
+The 15 substantive resource links in live-links.csv are verified real GetMacros URLs. New curated indexable resources: two. Newly mass-published diet articles or barcode pages: zero. General article counts and historical game/data expansion are not counted as work newly done by this completion pass.
+
+Sitemap: 347 canonical eligible URLs are actually published and source-verified. No authorized Search Console submission, URL inspection, current indexing/click evidence or analytics attribution was available. Published, submitted, crawled, indexed and receiving clicks are not equated.
+
+The local comprehensive build/22-command check, final full-build/focused correction check, remote CI, source-integrity reports and browser evidence are separate checks. They do not certify all screen readers, native devices, field performance or future community-label accuracy.
+
+Pages with a documented hosting email transformation: corrections.html, contact.html, terms.html.

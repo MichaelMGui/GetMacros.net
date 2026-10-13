@@ -64,3 +64,11 @@ Final integrated-asset verification passed and is recorded in visual-final/check
 The final corrected filter-sheet captures, language and search panels, empty search, missing-macro disclosure, food review, country picker and both side-by-side homepage comparisons were opened as images. The US/Canada compositions and featured nutrient/action alignment remain consistent. No active CSS reset or nutrition formula change was required.
 
 Broader all-route, formula, data-integrity, grocery search and deployment verification remain separate release checks. This document does not claim full screen-reader certification, real-device coverage or field performance measurements.
+
+## Actual production verification
+
+After the Pages deployment of revision 04406045f20761934f693f93daec1d5b58b55842, the same final browser suite ran against https://getmacros.net and passed. Its base URL and actual production results are recorded in visual-final-production/checks.json. This was not a local preview or substituted network response.
+
+The production scope was 140 route/theme/width render states (the 14 representative routes listed in the QA script at 320, 390, 768, 1280 and 1440px, light and dark), ten expanded product/control journeys and two presentations of exact top-level US/Canada screenshots. It checked HTTP 200 for the representative routes, current-country content, sampled home structure, card geometry, page overflow and runtime errors; menu bounds and keyboard dismissal; appearance persistence; direct versus remembered markets; site-search empty/matched/clear behavior; compatible Subway country switching and its missing-fat disclosure; real source-food review and breakfast logging; diary preferences; calculator validation/results; and the three sampled games' pause/resume/restart controls.
+
+Both production US/Canada comparison images were opened and reviewed. The production 320px filter panel and country selector, 390px dark appearance panel and logged diary, 320px dark food review and empty search captures were also opened as images. They reflect the deployed corrections and coherent day/night presentation. No production app edits were made during this verification.
