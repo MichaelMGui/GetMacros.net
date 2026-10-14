@@ -24,7 +24,7 @@ owned=["tools/build_clarity_release.py","tools/site_scope.py","tools/run_food_bu
        "tools/build_playful_interface.py","tools/rebuild_publication.py","tools/test_publication.py","tools/test-editorial-release.py",
        "tools/master_completion/test_integration.py",".github/workflows/site-quality.yml",
        "js/food-comparison-state.js","js/clarity-media.js","css/clarity-media.css","images/food-characters.svg",
-       "tools/food-design.css","tools/playful-system.css","sitemap.xml"]
+       "tools/food-design.css","tools/playful-system.css","sitemap.xml","sw.js"]
 candidates.update(ROOT/name for name in owned)
 candidates.update(p for p in OUT.glob("*") if p.is_file() and p.suffix in [".md",".csv",".json"] and p.name not in ["baseline.json","analytics-baseline.md","publication-files.json","stage-paths.json","deployment-verification.json","editorial-source-inventory.json","character-game-transient-failure.json"])
 changed=[];allowed=set()
@@ -65,3 +65,19 @@ release_paths=subprocess.check_output(["git","diff","--cached","--name-only","-z
 release_paths=sorted(p for p in release_paths if p)
 (OUT/"publication-files.json").write_text(json.dumps(dict(previousRevision=previous,changedFiles=len(release_paths),paths=release_paths,scope="Reviewed clarity release only; private analytics, source archives and inherited unrelated work excluded."),indent=2),encoding="utf-8")
 print(json.dumps(dict(stagedPaths=len(pending),changedFiles=len(release_paths),previousRevision=previous)))
+# A successful rebuild must not hide an omitted generated output in the
+# published checkout. Check the actual copies before committing them.
+manifest=json.loads((ROOT/'assets/generated/manifest.json').read_text(encoding='utf-8'))
+expected={p.relative_to(ROOT).as_posix() for p in ROOT.glob('*.html')}
+for code in ['ca','mx','gb','ie','au','nz','jp']:expected.update(p.relative_to(ROOT).as_posix() for p in (ROOT/code/'en').rglob('index.html'))
+expected.update(manifest)
+expected.update(item['url'].lstrip('/') for item in manifest.values())
+expected.update(['assets/generated/manifest.json','sw.js','sitemap.xml','data/restaurant-presence.json'])
+for name in expected:
+    left=(ROOT/name).read_bytes().replace(b'\r\n',b'\n');right=(DEST/name).read_bytes().replace(b'\r\n',b'\n')
+    assert left==right, 'Publication copy differs from reviewed output: '+name
+worker=(DEST/'sw.js').read_text(encoding='utf-8')
+worker_assets=json.loads(re.search(r'const APP_ASSETS=(\[.*?\]);',worker)[1])
+assert all((DEST/name.lstrip('/')).is_file() for name in worker_assets), 'Offline worker references missing published assets'
+(OUT/'publisher-copy-check.json').write_text(json.dumps(dict(result='pass',checkedOutputs=len(expected),offlineAssets=len(worker_assets),scope='Actual publisher copies before rebuild; all public HTML, active sources/immutable assets, worker, sitemap and presence registry'),indent=2),encoding='utf-8')
+print('PASS: actual publisher outputs and offline asset references match the reviewed application.')
