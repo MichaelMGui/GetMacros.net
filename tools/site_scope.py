@@ -156,6 +156,10 @@ def release_routes():
     if product.exists():routes.update(r['route'] for r in json.loads(product.read_text(encoding='utf-8')))
     routes.add('how-to-log-food-portions.html')
     routes.add('grocery-food-coverage.html')
+    routes.add('compare-foods.html')
+    clarity=root/'docs/clarity-release-2026-10-14/editorial-manifest.json'
+    if clarity.exists():
+        routes.update(r['route'].lstrip('/') for r in json.loads(clarity.read_text(encoding='utf-8'))['routes'])
     return routes
 
 KEEP_ROOT_HTML = KEEP_ROOT_HTML | release_routes()

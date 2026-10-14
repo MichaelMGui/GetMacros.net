@@ -1,0 +1,84 @@
+{
+  "reviewDate": "2026-10-14",
+  "scope": "reviewed selected Canadian restaurant servings; no shared registry edits or deployment by this subtask",
+  "counts": {
+    "newRecords": 40,
+    "officialServingRecords": 37,
+    "calculatedOrders": 3,
+    "components": 3,
+    "finderRecords": 37,
+    "newRestaurants": 1,
+    "groceryRecordsAdded": 0
+  },
+  "tested": 17,
+  "result": "pass",
+  "command": "python -X utf8 tools/clarity_release/test_restaurant_additions.py",
+  "sourceHash": "68487fd23a5851c2ec5110d0192475bf91cb4168e270519910747f820cbc066e",
+  "sourceReview": {
+    "browserPages": [
+      "https://www.tripleos.com/menus/",
+      "https://www.tripleos.com/legal-privacy/",
+      "https://www.tripleos.com/locations/"
+    ],
+    "pdfPagesVisuallyRead": [
+      1,
+      2
+    ],
+    "sourceEdition": "2025-06",
+    "sourceEditionPrecision": "month",
+    "rawEvidenceMustRemainPrivate": true
+  },
+  "newMarkets": 0,
+  "newGroceryProfiles": 0,
+  "expectedAfterMerge": {
+    "registryRecords": 1749,
+    "canadaRecords": 423,
+    "canadaFinderRecords": 318,
+    "presenceRelationships": 75,
+    "canadianChainsWithMacroCoverage": 11
+  },
+  "providerAudit": {
+    "OpenFoodFacts": "Existing manifest96451 community-label profiles across8market tags, not independent current package verification. No duplicate import added.",
+    "USDA_CNF": "Existing separate partitions retained; not represented as newly verified here."
+  },
+  "blockers": [
+    "Restaurant-source current recipe/portion availability is not a full branch-menu audit.",
+    "No reuse authorization requested or received for restricted Mucho Burrito/Osmow’s/Taco Bell sources.",
+    "Dairy Queen native source review and full terms were blocked; contradictory source rows not imported.",
+    "Quesada source retrieval alone does not resolve the restrictive terms link shown in its ordering interface."
+  ],
+  "withheld": [
+    {
+      "name": "Cajun Fries",
+      "reason": "Printed 337 kcal conflicts materially with the printed 2.7 g fat, 31 g carbs and 5.7 g protein. No guessed correction."
+    },
+    {
+      "name": "Impossible Burger and its Without Sauce variant",
+      "reason": "Printed energy substantially conflicts with the listed core macro quantities; the recipe is not inferred."
+    },
+    {
+      "name": "Regular (20 oz) Vanilla, Chocolate, Strawberry, Cookies & Cream Milkshakes",
+      "reason": "Printed energy differs materially from the listed macros and small-serving scaling is unreliable; no invented regular-size values."
+    },
+    {
+      "name": "Frappuccino - Regular (20 oz)",
+      "reason": "Printed 242 kcal conflicts materially with the printed 7 g fat, 28 g carbs and 4 g protein under the review gate; no guessed correction."
+    }
+  ],
+  "mexicoCorrection": {
+    "sourceRecords": 93,
+    "categoryCorrections": 20,
+    "renamedRecords": 39,
+    "numericCorrections": 0,
+    "publicIdsChanged": 0,
+    "finderBefore": 53,
+    "finderAfter": 51,
+    "testsPassed": 11
+  },
+  "internationalImporterReproducibility": {
+    "method": "run full import_menus.py against pinned local source evidence with output writes captured in memory",
+    "records": 734,
+    "result": "exact fixture equality",
+    "otherMarketChanges": 0
+  }
+}

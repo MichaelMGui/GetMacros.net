@@ -83,7 +83,8 @@ class CompletedRestaurantIntegration(unittest.TestCase):
     def test_presence_counts_reflect_real_country_rows(self):
         self.assertEqual(len({r["id"] for r in self.presence}), len(self.presence))
         baseline = read("tools/master_release/restaurant_presence.json")["relationships"]
-        expected_ids = {r["id"] for r in baseline + self.changes["relationships"]}
+        clarity=read('tools/clarity_release/restaurant_additions.json')['presenceRelationships']
+        expected_ids = {r["id"] for r in baseline + self.changes["relationships"] + clarity}
         self.assertEqual({r["id"] for r in self.presence}, expected_ids)
         for p in self.presence:
             rows = [r for r in self.registry

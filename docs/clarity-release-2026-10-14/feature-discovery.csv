@@ -1,0 +1,10 @@
+feature,primary entry,contextual entry,destination
+Meal finder,Find a meal,Homepage and restaurants,/restaurant-meal-finder.html
+Comparison,Compare,Meals and food review and articles,/compare-foods.html
+Food diary,Log food,Comparison and food review,/food-diary.html
+Food library,Log food menu,Comparison and diary search,/food-library.html
+Saved orders,Log food menu,Finder save and diary saved tab,/food-shelf.html
+Calculators,Calculators,Articles and portion example,/calculators.html
+Learn,Learn,Restaurant guides and calculator explanation,/articles.html
+Play,Learn menu,Homepage games module,/play.html
+Read and watch,Learn menu,Editorial and footer,/read-and-watch.html

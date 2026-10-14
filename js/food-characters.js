@@ -20,10 +20,10 @@ function enhance(root=document){
   if(!interactive){host.setAttribute('aria-hidden','true');return;}
   host.removeAttribute('aria-hidden');
   const button=document.createElement('button');button.type='button';button.className='food-character-trigger';button.setAttribute('aria-label',character.name+' character: show greeting');button.setAttribute('aria-expanded','false');svg.replaceWith(button);button.append(svg);
-  const bubble=document.createElement('span');bubble.className='food-character-greeting';bubble.id='food-greeting-'+(++serial);bubble.setAttribute('role','tooltip');bubble.textContent=host.dataset.greeting||character.greeting;host.append(bubble);
+  const bubble=document.createElement('span');bubble.className='food-character-greeting';bubble.id='food-greeting-'+(++serial);bubble.setAttribute('role','tooltip');bubble.textContent=host.dataset.greeting||character.greeting;host.append(bubble);button.setAttribute('aria-controls',bubble.id);
   let hovered=false,pinned=false,suppressed=false;
-  const show=()=>{if(suppressed)return;host.dataset.pose='greeting';host.classList.add('is-greeting');button.setAttribute('aria-expanded','true');button.setAttribute('aria-describedby',bubble.id);};
-  const hide=()=>{host.dataset.pose='rest';host.classList.remove('is-greeting');button.setAttribute('aria-expanded','false');button.removeAttribute('aria-describedby');};
+  const show=()=>{if(suppressed)return;host.dataset.pose='greeting';host.classList.add('is-greeting');button.setAttribute('aria-expanded','true');button.setAttribute('aria-label',character.name+' character: hide greeting');button.setAttribute('aria-describedby',bubble.id);};
+  const hide=()=>{host.dataset.pose='rest';host.classList.remove('is-greeting');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label',character.name+' character: show greeting');button.removeAttribute('aria-describedby');};
   poses.set(host,pose=>{pinned=pose==='greeting';suppressed=!pinned;if(pinned)show();else hide();});
   host.addEventListener('pointerenter',e=>{if(e.pointerType==='touch')return;hovered=true;show();});
   host.addEventListener('pointerleave',e=>{if(e.pointerType==='touch')return;hovered=false;suppressed=false;if(!pinned&&document.activeElement!==button)hide();});

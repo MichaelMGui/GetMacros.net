@@ -17,7 +17,7 @@
   if(!reviewed.length){preview.append(element('p','No foods logged for this meal. Choose another date or meal.'));return;}
   if(reviewed.length>100){fail(Error('Choose a meal with up to 100 foods.'));return;}
   const heading=element('h3',reviewed.length+' saved '+(reviewed.length===1?'portion':'portions')),list=element('ul');
-  for(const entry of reviewed){const row=element('li'),s=entry.snapshot;row.append(element('span',s.name),element('small',s.quantity+' '+s.portionLabel+(s.market&&!['US-reference','CA-reference','personal'].includes(s.market)?' · '+(window.GetMacrosMarket.definitions[s.market]?.name||s.market):'')));list.append(row);}
+  for(const entry of reviewed){const row=element('li'),s=entry.snapshot;row.append(element('span',s.name),element('small',F.formatPortion(s)+(s.market&&!['US-reference','CA-reference','personal'].includes(s.market)?' · '+(window.GetMacrosMarket.definitions[s.market]?.name||s.market):'')));list.append(row);}
   const total=F.sum(reviewed.map(e=>e.snapshot.nutrients)).cal;
   const description=total.missing===total.count?'Calories unavailable':new Intl.NumberFormat('en',{maximumFractionDigits:1}).format(total.missing?total.subtotal:total.value)+' kcal'+(total.missing?' known subtotal · '+total.missing+' unavailable':' logged');
   preview.append(heading,element('p',description),list);

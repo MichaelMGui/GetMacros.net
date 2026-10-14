@@ -1,0 +1,283 @@
+{
+  "date": "2026-10-14",
+  "newArticles": 11,
+  "improvedArticles": 10,
+  "routes": [
+    {
+      "route": "/tim-hortons-canada-protein-latte-vs-latte.html",
+      "title": "Tim Hortons Canada: Protein Latte vs regular Latte",
+      "description": "Compare the named Canadian latte sizes, calories and protein. See a complete breakfast example and the limits of custom milk and sugar claims.",
+      "cluster": "Coffee & drinks",
+      "intent": "Compare a Canadian Protein Latte with a regular Latte of the same size.",
+      "uniqueValue": "Six exact recipes, size-specific deltas and two complete breakfast sums.",
+      "existingOverlap": "Existing Canadian hub lists the rows; existing Starbucks articles are U.S. recipes. This page answers the named Tim Hortons drink choice.",
+      "sourceIds": [
+        "CA|tim-hortons|latte-small",
+        "CA|tim-hortons|protein-latte-small",
+        "CA|tim-hortons|latte-medium",
+        "CA|tim-hortons|protein-latte-medium",
+        "CA|tim-hortons|latte-large",
+        "CA|tim-hortons|protein-latte-large",
+        "CA|tim-hortons|bacon-english-muffin"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 413,
+      "bodyHash": "8824f1dc0a08e92fc1c72d479cc545d6344625686ef4df4064cf367941054efb",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/harveys-original-angus-veggie-burger-comparison.html",
+      "title": "Harvey’s: Original vs Angus vs Veggie Burger",
+      "description": "Compare the Canadian listed burger builds, calories, protein, fiber and sodium, then account for cheese and a separate fries portion.",
+      "cluster": "Eating out",
+      "intent": "Choose among three named Harvey’s Canadian burgers.",
+      "uniqueValue": "Shows calorie/protein/sodium trade-offs, named cheese change and a complete fries sum.",
+      "existingOverlap": "The existing hub is a reference table, not this three-way decision and side calculation.",
+      "sourceIds": [
+        "CA|harvey-s|original-burger",
+        "CA|harvey-s|angus-burger",
+        "CA|harvey-s|veggie-burger",
+        "CA|harvey-s|angus-burger-with-cheese",
+        "CA|harvey-s|fries-regular"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 347,
+      "bodyHash": "c1125728f00db118d28fd9749c3200525a17ce820e6183913a59aec812dd957a",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/new-york-fries-canada-fries-vs-poutine.html",
+      "title": "New York Fries Canada: fries vs Classic Poutine",
+      "description": "Compare snack and regular fries with the matching Classic Poutine. Keep named sizes, standard toppings and extra-topping rules separate.",
+      "cluster": "Meal comparisons",
+      "intent": "Understand the nutrition change between fries and Classic Poutine of a named size.",
+      "uniqueValue": "Four exact source servings, size-specific differences and an actionable no-double-counting rule.",
+      "existingOverlap": "Existing hub covers all sizes and hot-dog orders; this page explains the fries-to-poutine decision and extra topping boundaries.",
+      "sourceIds": [
+        "CA|new-york-fries|9b3b9a00748853d7",
+        "CA|new-york-fries|299fc3ddb677304d",
+        "CA|new-york-fries|0c427c0e7dc42854",
+        "CA|new-york-fries|eff5d2526af2e8de"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 374,
+      "bodyHash": "4104a733471c18ff5373685cfe0d26f1e5aedda38a0e78efafe990f5eeb6a99b",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/mary-browns-big-mary-fries-vs-taters.html",
+      "title": "Mary Brown’s: Big Mary with small fries or Taters?",
+      "description": "Compare two complete Canadian Big Mary orders with exact small sides. See the calories, protein, fiber and sodium differences before drinks or sauces.",
+      "cluster": "Complete orders",
+      "intent": "Choose a small side for a Canadian Big Mary and calculate the actual two-item order.",
+      "uniqueValue": "Two reproducible order totals with different side weights and a sodium trade-off.",
+      "existingOverlap": "Existing hub gives only Big Mary + Taters; this page adds the exact fries alternative and whole-order comparison.",
+      "sourceIds": [
+        "CA|mary-brown-s|fac26eb4d968b77e",
+        "CA|mary-brown-s|54e9d9681cfdfef4",
+        "CA|mary-brown-s|5c7071bed084372c"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 413,
+      "bodyHash": "dd50217f0f8230f36a69f4aa3eeb6a1acf4cfb0c5a093ceddf18595aae452f46",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+      "title": "Greggs: Sausage Roll vs Vegan Roll nutrition",
+      "description": "Compare the UK source-listed rolls, protein, calories and salt. Count packs correctly and see why rounded per-item values can differ from package totals.",
+      "cluster": "Eating out",
+      "intent": "Compare the two named Greggs rolls and log a single item or pack correctly.",
+      "uniqueValue": "Per-item decision, genuine rounded pack discrepancy and explicit salt-to-sodium calculation.",
+      "existingOverlap": "The existing UK hub lists many rows; no current article answers this roll and pack question.",
+      "sourceIds": [
+        "GB|greggs|9fd4d3747d33caec",
+        "GB|greggs|cc8af4d0a923e22e",
+        "GB|greggs|4361241b368594ec"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 361,
+      "bodyHash": "bcbbbac3edcb0f11cb194329d674ec31ed74db5944d72a43d1ca7588bb923c3c",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/guzman-y-gomez-australia-chicken-bowl-vs-burrito.html",
+      "title": "Guzman y Gomez Australia: chicken bowl vs burrito",
+      "description": "Compare the standard Australian mild grilled chicken bowl, burrito and Caesar recipe by listed serving, with clear portion and customization limits.",
+      "cluster": "Meal comparisons",
+      "intent": "Choose between an Australian standard mild grilled chicken bowl and burrito.",
+      "uniqueValue": "Whole-build deltas, source weights and transparent same-weight arithmetic, without inventing a wrap subtraction.",
+      "existingOverlap": "Existing bowl articles cover U.S. chains; this is an exact Australian source-defined comparison.",
+      "sourceIds": [
+        "AU|guzman-y-gomez|882fab3b92703568",
+        "AU|guzman-y-gomez|03818260f5478ccf",
+        "AU|guzman-y-gomez|3d23014d68e6edf4"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 389,
+      "bodyHash": "d94dfc90f106d1b4f6145f6b69e91ec89627d077aa542be04fbbf922ba561947",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/subway-mexico-chicken-sandwich-comparison.html",
+      "title": "Subway Mexico: oven-roasted, breaded or teriyaki chicken?",
+      "description": "Compare exact Mexico six-inch chicken sandwich recipes, calories and protein. Count the included Sweet Onion sauce and approximate footlong correctly.",
+      "cluster": "Eating out",
+      "intent": "Compare three Mexico chicken sandwich recipes without confusing components and complete subs.",
+      "uniqueValue": "Official local full-sub values, sauce inclusion and exact supported footlong example.",
+      "existingOverlap": "No existing Mexico chicken decision article; related generic preparation articles do not supply these local recipe boundaries.",
+      "sourceIds": [
+        "MX|subway|9b4bd844fbca7c10",
+        "MX|subway|3a9aceb0e0935480",
+        "MX|subway|410b8dfcc56b67db"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 365,
+      "bodyHash": "de5e15c2df44bd9244c41eb580c507aa590b1fe3b64b0fda1667db2da7e3a0ac",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/subway-turkey-breast-canada-vs-mexico.html",
+      "title": "Subway Turkey Breast: Canada and Mexico recipes compared",
+      "description": "Compare Canadian Classics and Fresh Fit Turkey Breast with Mexico’s standard six-inch sub. Country, recipe, serving and source edition remain explicit.",
+      "cluster": "Country comparisons",
+      "intent": "Find why the same Subway filling name has different Canada and Mexico nutrition records.",
+      "uniqueValue": "Three real regional recipes with weight, edition, macro differences and component versus sandwich warning.",
+      "existingOverlap": "Existing market-matching guide has no exact cross-country sandwich example; this page provides an explicit sourced comparison.",
+      "sourceIds": [
+        "CA|subway|77375bae116414d6",
+        "CA|subway|55de1f2352aa7413",
+        "MX|subway|1c5926505abe2837"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 392,
+      "bodyHash": "2bc52c541b40ad2ae0845a84d3f9d6d6e11e08e9df3a9850974d0bbfdf8147eb",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/kirkland-canada-macadamia-vs-mixed-nuts.html",
+      "title": "Kirkland Canada: macadamias vs mixed nuts by portion",
+      "description": "Compare the Canadian retailer labels at equal 28 g and 50 g portions. Keep package identity, source uncertainty and serving sizes clear.",
+      "cluster": "Groceries & labels",
+      "intent": "Compare two actual Canadian Kirkland nut products on the same weight basis.",
+      "uniqueValue": "Four genuine calculated portions, original arithmetic and a real retailer container-count conflict.",
+      "existingOverlap": "Existing portion articles use fictional labels; this uses two exact retailer-source identities without claiming current inventory.",
+      "sourceIds": [
+        "branded:retailer-ca:costco:1195303",
+        "branded:retailer-ca:costco:1652577"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 448,
+      "bodyHash": "9cf15c08345ed2c36ddd05a3f17e34d786ffd069c3d9b3a192b4a5c6dba1a63b",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/canada-pepperoni-pizza-three-slice-comparison.html",
+      "title": "Canada pizza comparison: three small pepperoni slices",
+      "description": "Compare defined Domino’s and Pizza Pizza Canadian small-pizza portions, distinguish calculated from published values, and keep Pizza Nova’s missing macros visible.",
+      "cluster": "Complete orders",
+      "intent": "Calculate a three-slice Canadian pepperoni order with explicit size and slice fraction.",
+      "uniqueValue": "Two exact three-slice calculations and honest calorie-only chain exclusion.",
+      "existingOverlap": "Each chain hub covers its slices; this answer is a two-chain three-slice order with source-method differences.",
+      "sourceIds": [
+        "CA|domino-s|5a5ca21953798c73",
+        "CA|pizza-pizza|9e6d6c719cf5caf2"
+      ],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 379,
+      "bodyHash": "74ef3f2ade40a3076cf5a9cc1beb82e408b5e37c728413cb5cf1768d4c8ebd99",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    },
+    {
+      "route": "/international-menu-data-coverage-explained.html",
+      "title": "Restaurant nutrition by country: what the coverage counts mean",
+      "description": "See an original eight-market coverage snapshot with explicit record, finder, macro and fiber denominators. Understand why catalogue counts cannot rank countries.",
+      "cluster": "Original analysis",
+      "intent": "Understand which market counts can support food comparison and which cannot.",
+      "uniqueValue": "Reproducible original eight-market denominators and actionable missing-data examples.",
+      "existingOverlap": "Existing U.S. data report concerns a dated U.S. selection. This covers all current market records and incompatible sampling denominators.",
+      "sourceIds": [],
+      "status": "source-and-arithmetic-checked; no independent clinical or kitchen review",
+      "datePublished": "2026-10-14",
+      "wordCount": 379,
+      "bodyHash": "1c9e24bbcb953348c38418f2eac34dfe13bc67a389bbcb8233e2df1132304c8d",
+      "publicationStatus": "release-candidate; live deployment not yet verified",
+      "visualStatus": "pending browser verification by root"
+    }
+  ],
+  "improvements": [
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "heading": "A real two-ingredient worked example",
+      "contribution": "Adds an exact brand/market recipe, equal and unequal portion calculations, mixing assumption and saved-version workflow."
+    },
+    {
+      "route": "/how-to-read-a-nutrition-label.html",
+      "heading": "Apply the serving calculation to a real label",
+      "contribution": "Adds a real Canadian branded portion, distinguishes market conventions and prevents spoon-size guessing."
+    },
+    {
+      "route": "/same-restaurant-name-different-market-data.html",
+      "heading": "A Turkey Breast sub is not one worldwide recipe",
+      "contribution": "Replaces abstract market advice with exact local identities, weights and a working cross-market comparison."
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "heading": "Try the checklist with two Canadian complete orders",
+      "contribution": "Adds two real component-built orders and reproducible serving change without removing the original explanatory fictional example."
+    },
+    {
+      "route": "/published-vs-calculated-restaurant-rows.html",
+      "heading": "A Canadian component sum, with the boundary visible",
+      "contribution": "Adds a current market-specific calculation and explains missing-field propagation while preserving historical U.S. census dates."
+    },
+    {
+      "route": "/how-to-calculate-maintenance-calories.html",
+      "heading": "Check what the equation actually calculates",
+      "contribution": "Adds reproducible equation and activity sensitivity using existing tested factors; no personalized health recommendation."
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "heading": "A real drink example keeps mL as mL",
+      "contribution": "Adds real source sizes and a rounding/recipe counterexample to the fictional unit illustration."
+    },
+    {
+      "route": "/how-to-log-food-portions.html",
+      "heading": "Make the next log faster without changing yesterday",
+      "contribution": "Explains existing recent/favourite/repeat/recipe paths, snapshot preservation and duplicate/import boundaries."
+    },
+    {
+      "route": "/saved-meal-source-version-check.html",
+      "heading": "What changes when you edit a saved portion?",
+      "contribution": "Adds concrete snapshot-version arithmetic and distinguishes historical edit, repeat and deliberate new-source selection."
+    },
+    {
+      "route": "/calorie-units-kcal-kilojoules.html",
+      "heading": "Use the published energy value when both are shown",
+      "contribution": "Adds an actual dual-energy source row and explicit rounding distinction, without overwriting native energy values."
+    }
+  ],
+  "sourcesPreserved": true,
+  "clinicalReview": "No clinician, dietitian, kitchen or physical-package review is claimed.",
+  "indexes": "Owned generator does not modify sitemap, article index, search or allowlist; parent integration is required."
+}

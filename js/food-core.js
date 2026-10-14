@@ -40,5 +40,6 @@
   for(const r of data.recipes){if(typeof r.id!=='string'||!r.id.startsWith('recipe:')||typeof r.name!=='string'||!Array.isArray(r.parts)||r.parts.length>100||!r.parts.length||!r.nutrients)throw Error('Invalid recipe in export.');amount(r.yieldServings);r.parts.forEach(p=>validateSnapshot(p));const total=sum(r.parts.map(p=>p.nutrients));for(const k of fields){const expected=total[k].value===null?null:total[k].value/r.yieldServings;if(expected===null?r.nutrients[k]!==null:!known(r.nutrients[k])||Math.abs(expected-r.nutrients[k])>Math.max(1,expected)*1e-8)throw Error('Recipe values do not match its ingredient snapshots.');}}
   return data;
  }
- return Object.freeze({fields,units,known,amount,factor,scale,sum,snapshot,fromSnapshot,recipe,date,today,restaurant,text,search,validateDraft,validateSnapshot,validateExport});
+ function formatPortion(s){const number=new Intl.NumberFormat('en',{maximumFractionDigits:8}).format(s.quantity);if(s.measure==='g')return number+' g';const label=s.portionLabel||s.serving||'source serving';return s.quantity===1?label:number+' × '+label;}
+ return Object.freeze({fields,units,known,amount,factor,scale,sum,snapshot,fromSnapshot,recipe,date,today,restaurant,text,search,validateDraft,validateSnapshot,validateExport,formatPortion});
 });

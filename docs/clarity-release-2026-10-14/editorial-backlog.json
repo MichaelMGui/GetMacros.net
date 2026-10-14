@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-14",
+  "basis": "Current source-only 350-route audit, focused source checks and qualitative search results; no demand metrics available.",
+  "new": [
+    {
+      "route": "/tim-hortons-canada-protein-latte-vs-latte.html",
+      "intent": "Compare a Canadian Protein Latte with a regular Latte of the same size.",
+      "uniqueValue": "Six exact recipes, size-specific deltas and two complete breakfast sums.",
+      "overlapDecision": "Existing Canadian hub lists the rows; existing Starbucks articles are U.S. recipes. This page answers the named Tim Hortons drink choice.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/harveys-original-angus-veggie-burger-comparison.html",
+      "intent": "Choose among three named Harvey’s Canadian burgers.",
+      "uniqueValue": "Shows calorie/protein/sodium trade-offs, named cheese change and a complete fries sum.",
+      "overlapDecision": "The existing hub is a reference table, not this three-way decision and side calculation.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/new-york-fries-canada-fries-vs-poutine.html",
+      "intent": "Understand the nutrition change between fries and Classic Poutine of a named size.",
+      "uniqueValue": "Four exact source servings, size-specific differences and an actionable no-double-counting rule.",
+      "overlapDecision": "Existing hub covers all sizes and hot-dog orders; this page explains the fries-to-poutine decision and extra topping boundaries.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/mary-browns-big-mary-fries-vs-taters.html",
+      "intent": "Choose a small side for a Canadian Big Mary and calculate the actual two-item order.",
+      "uniqueValue": "Two reproducible order totals with different side weights and a sodium trade-off.",
+      "overlapDecision": "Existing hub gives only Big Mary + Taters; this page adds the exact fries alternative and whole-order comparison.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+      "intent": "Compare the two named Greggs rolls and log a single item or pack correctly.",
+      "uniqueValue": "Per-item decision, genuine rounded pack discrepancy and explicit salt-to-sodium calculation.",
+      "overlapDecision": "The existing UK hub lists many rows; no current article answers this roll and pack question.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/guzman-y-gomez-australia-chicken-bowl-vs-burrito.html",
+      "intent": "Choose between an Australian standard mild grilled chicken bowl and burrito.",
+      "uniqueValue": "Whole-build deltas, source weights and transparent same-weight arithmetic, without inventing a wrap subtraction.",
+      "overlapDecision": "Existing bowl articles cover U.S. chains; this is an exact Australian source-defined comparison.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/subway-mexico-chicken-sandwich-comparison.html",
+      "intent": "Compare three Mexico chicken sandwich recipes without confusing components and complete subs.",
+      "uniqueValue": "Official local full-sub values, sauce inclusion and exact supported footlong example.",
+      "overlapDecision": "No existing Mexico chicken decision article; related generic preparation articles do not supply these local recipe boundaries.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/subway-turkey-breast-canada-vs-mexico.html",
+      "intent": "Find why the same Subway filling name has different Canada and Mexico nutrition records.",
+      "uniqueValue": "Three real regional recipes with weight, edition, macro differences and component versus sandwich warning.",
+      "overlapDecision": "Existing market-matching guide has no exact cross-country sandwich example; this page provides an explicit sourced comparison.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/kirkland-canada-macadamia-vs-mixed-nuts.html",
+      "intent": "Compare two actual Canadian Kirkland nut products on the same weight basis.",
+      "uniqueValue": "Four genuine calculated portions, original arithmetic and a real retailer container-count conflict.",
+      "overlapDecision": "Existing portion articles use fictional labels; this uses two exact retailer-source identities without claiming current inventory.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/canada-pepperoni-pizza-three-slice-comparison.html",
+      "intent": "Calculate a three-slice Canadian pepperoni order with explicit size and slice fraction.",
+      "uniqueValue": "Two exact three-slice calculations and honest calorie-only chain exclusion.",
+      "overlapDecision": "Each chain hub covers its slices; this answer is a two-chain three-slice order with source-method differences.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    },
+    {
+      "route": "/international-menu-data-coverage-explained.html",
+      "intent": "Understand which market counts can support food comparison and which cannot.",
+      "uniqueValue": "Reproducible original eight-market denominators and actionable missing-data examples.",
+      "overlapDecision": "Existing U.S. data report concerns a dated U.S. selection. This covers all current market records and incompatible sampling denominators.",
+      "status": "implemented release candidate; root integration/browser/deployment gates apply"
+    }
+  ],
+  "improved": [
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "contribution": "Adds an exact brand/market recipe, equal and unequal portion calculations, mixing assumption and saved-version workflow.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/how-to-read-a-nutrition-label.html",
+      "contribution": "Adds a real Canadian branded portion, distinguishes market conventions and prevents spoon-size guessing.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/same-restaurant-name-different-market-data.html",
+      "contribution": "Replaces abstract market advice with exact local identities, weights and a working cross-market comparison.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "contribution": "Adds two real component-built orders and reproducible serving change without removing the original explanatory fictional example.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/published-vs-calculated-restaurant-rows.html",
+      "contribution": "Adds a current market-specific calculation and explains missing-field propagation while preserving historical U.S. census dates.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/how-to-calculate-maintenance-calories.html",
+      "contribution": "Adds reproducible equation and activity sensitivity using existing tested factors; no personalized health recommendation.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "contribution": "Adds real source sizes and a rounding/recipe counterexample to the fictional unit illustration.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/how-to-log-food-portions.html",
+      "contribution": "Explains existing recent/favourite/repeat/recipe paths, snapshot preservation and duplicate/import boundaries.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/saved-meal-source-version-check.html",
+      "contribution": "Adds concrete snapshot-version arithmetic and distinguishes historical edit, repeat and deliberate new-source selection.",
+      "status": "implemented substantive addition at established URL"
+    },
+    {
+      "route": "/calorie-units-kcal-kilojoules.html",
+      "contribution": "Adds an actual dual-energy source row and explicit rounding distinction, without overwriting native energy values.",
+      "status": "implemented substantive addition at established URL"
+    }
+  ],
+  "mergedCandidates": [
+    {
+      "candidate": "How to calculate homemade recipe macros",
+      "destination": "/how-to-calculate-recipe-nutrition.html",
+      "reason": "Established general intent already has method and sources; add exact two-ingredient recipe rather than duplicate it."
+    },
+    {
+      "candidate": "Protein in a spoon of peanut butter",
+      "destination": "/how-to-read-a-nutrition-label.html",
+      "reason": "A spoon size is not defined; add measured 15 g and 30 g source example at the label guide."
+    },
+    {
+      "candidate": "Track food across countries",
+      "destination": "/same-restaurant-name-different-market-data.html",
+      "reason": "Existing source-matching guide gains exact country example."
+    },
+    {
+      "candidate": "kJ calories calculator article",
+      "destination": "/calorie-units-kcal-kilojoules.html",
+      "reason": "Energy conversion already covered; real dual-energy example adds utility there."
+    },
+    {
+      "candidate": "Why daily calories differ with activity",
+      "destination": "/how-to-calculate-maintenance-calories.html",
+      "reason": "Existing method page gains exact tested-factor example."
+    },
+    {
+      "candidate": "How to repeat yesterday lunch",
+      "destination": "/how-to-log-food-portions.html",
+      "reason": "Document existing diary features contextually instead of creating a narrow help landing page."
+    },
+    {
+      "candidate": "Subway Canada chicken Fresh Fit vs Classics",
+      "destination": "/ca/en/restaurants/subway/",
+      "reason": "Existing hub already has this exact three-format comparison; no separate repetitive page."
+    },
+    {
+      "candidate": "New York Fries hot dog combo calories",
+      "destination": "/compare-complete-restaurant-orders.html",
+      "reason": "Existing complete-order guide gains real two-size sums, complementing the local source hub."
+    },
+    {
+      "candidate": "Pizza Nova protein per slice",
+      "destination": "/ca/en/restaurants/pizza-nova/",
+      "reason": "Official retained source has calories only; keep missing macro status in its existing hub."
+    },
+    {
+      "candidate": "Best high-protein country",
+      "destination": "/international-menu-data-coverage-explained.html",
+      "reason": "Incompatible coverage cannot establish a winner; publish original denominator analysis instead."
+    }
+  ],
+  "deferred": [
+    {
+      "candidate": "Subway Canada October 2026 recipe change",
+      "blocker": "Only third-party search mentions were found; current official PDF request timed out. No new source facts or false dates.",
+      "countsAsPublished": false
+    },
+    {
+      "candidate": "Starbucks international protein milk customization calculator",
+      "blocker": "Must verify exact market, size and build before ingredient subtraction; existing source coverage insufficient.",
+      "countsAsPublished": false
+    },
+    {
+      "candidate": "Costco store inventory comparison",
+      "blocker": "No authorized real-time inventory source; retailer label records are not current warehouse stock.",
+      "countsAsPublished": false
+    },
+    {
+      "candidate": "Pizza Nova complete-macro rankings",
+      "blocker": "Protein, carbohydrate and fat unavailable in the retained official slice listing.",
+      "countsAsPublished": false
+    },
+    {
+      "candidate": "French Canada versions of the new decisions",
+      "blocker": "No reviewed French content; no fake alternates or hreflang.",
+      "countsAsPublished": false
+    },
+    {
+      "candidate": "Personalized diet treatment articles",
+      "blocker": "No clinical review or individualized evidence; release focuses on transparent portions and practical ordering.",
+      "countsAsPublished": false
+    }
+  ]
+}

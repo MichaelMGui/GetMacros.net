@@ -110,6 +110,7 @@
     if(el.hasAttribute('data-open-compare')){
       const pair=selected.map(i=>meals[i]);track('comparison_used');
       root.querySelector('.comparison-output').innerHTML=GetMacrosOrderCore.comparisonTable(pair,expectedSnapshots)+'<div class="comparison-actions"><button type="button" class="btn" data-share-comparison>Share comparison</button><button type="button" data-print>Print comparison</button><a href="'+(state.market==='CA'?'/ca/en/tools/complete-order/#order-builder':'/compare-complete-restaurant-orders.html?market='+state.market+'#order-builder')+'">Build an order</a></div><p data-comparison-status role="status"></p>';
+      const workspace=document.createElement('a');workspace.className='text-action';workspace.textContent='Open comparison workspace →';const link=new URL('/compare-foods.html',location.origin);link.searchParams.set('market',state.market);pair.forEach(m=>link.searchParams.append('item','order:'+(m.market||state.market)+':'+(m.id||m.chain+'||'+m.name)));workspace.href=link.href;root.querySelector('.comparison-actions').append(workspace);
       compareDialog.showModal();
     }
     if(el.hasAttribute('data-close-compare'))compareDialog.close();

@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-14T18:00:40.469Z",
+  "checks": [
+    {
+      "route": "/tim-hortons-canada-protein-latte-vs-latte.html",
+      "theme": "light",
+      "names": [
+        "Latte - Medium",
+        "Protein Latte - Medium"
+      ],
+      "basis": "portions",
+      "href": "https://getmacros.net/compare-foods.html?item=order%3ACA%3ACA%7Ctim-hortons%7Clatte-medium&item=order%3ACA%3ACA%7Ctim-hortons%7Cprotein-latte-medium&basis=portions",
+      "status": "pass",
+      "runtimeErrors": [],
+      "screenshot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\docs\\clarity-release-2026-10-14\\editorial-screenshots\\journey-tim-hortons-canada-protein-latte-vs-latte-light.png"
+    },
+    {
+      "route": "/subway-turkey-breast-canada-vs-mexico.html",
+      "theme": "light",
+      "names": [
+        "Turkey Breast",
+        "Mexico"
+      ],
+      "basis": "portions",
+      "href": "https://getmacros.net/compare-foods.html?item=order%3ACA%3ACA%7Csubway%7C77375bae116414d6&item=order%3AMX%3AMX%7Csubway%7C1c5926505abe2837&basis=portions",
+      "status": "pass",
+      "runtimeErrors": [],
+      "screenshot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\docs\\clarity-release-2026-10-14\\editorial-screenshots\\journey-subway-turkey-breast-canada-vs-mexico-light.png"
+    },
+    {
+      "route": "/kirkland-canada-macadamia-vs-mixed-nuts.html",
+      "theme": "light",
+      "names": [
+        "Macadamia Nuts",
+        "Unsalted Mixed Nuts"
+      ],
+      "basis": "100g",
+      "href": "https://getmacros.net/compare-foods.html?item=branded%3Aretailer-ca%3Acostco%3A1195303&item=branded%3Aretailer-ca%3Acostco%3A1652577&basis=100g",
+      "status": "pass",
+      "runtimeErrors": [],
+      "screenshot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\docs\\clarity-release-2026-10-14\\editorial-screenshots\\journey-kirkland-canada-macadamia-vs-mixed-nuts-light.png"
+    },
+    {
+      "route": "/tim-hortons-canada-protein-latte-vs-latte.html",
+      "theme": "dark",
+      "names": [
+        "Latte - Medium",
+        "Protein Latte - Medium"
+      ],
+      "basis": "portions",
+      "href": "https://getmacros.net/compare-foods.html?item=order%3ACA%3ACA%7Ctim-hortons%7Clatte-medium&item=order%3ACA%3ACA%7Ctim-hortons%7Cprotein-latte-medium&basis=portions",
+      "status": "pass",
+      "runtimeErrors": [],
+      "screenshot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\docs\\clarity-release-2026-10-14\\editorial-screenshots\\journey-tim-hortons-canada-protein-latte-vs-latte-dark.png"
+    },
+    {
+      "route": "/subway-turkey-breast-canada-vs-mexico.html",
+      "theme": "dark",
+      "names": [
+        "Turkey Breast",
+        "Mexico"
+      ],
+      "basis": "portions",
+      "href": "https://getmacros.net/compare-foods.html?item=order%3ACA%3ACA%7Csubway%7C77375bae116414d6&item=order%3AMX%3AMX%7Csubway%7C1c5926505abe2837&basis=portions",
+      "status": "pass",
+      "runtimeErrors": [],
+      "screenshot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\docs\\clarity-release-2026-10-14\\editorial-screenshots\\journey-subway-turkey-breast-canada-vs-mexico-dark.png"
+    },
+    {
+      "route": "/kirkland-canada-macadamia-vs-mixed-nuts.html",
+      "theme": "dark",
+      "names": [
+        "Macadamia Nuts",
+        "Unsalted Mixed Nuts"
+      ],
+      "basis": "100g",
+      "href": "https://getmacros.net/compare-foods.html?item=branded%3Aretailer-ca%3Acostco%3A1195303&item=branded%3Aretailer-ca%3Acostco%3A1652577&basis=100g",
+      "status": "pass",
+      "runtimeErrors": [],
+      "screenshot": "C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\docs\\clarity-release-2026-10-14\\editorial-screenshots\\journey-kirkland-canada-macadamia-vs-mixed-nuts-dark.png"
+    }
+  ]
+}

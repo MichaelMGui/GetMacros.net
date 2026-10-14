@@ -77,7 +77,7 @@ def run():
   # verification; a home-made banner would not meet Google's CMP requirement.
   text=re.sub(r'<script\b[^>]*src="https://pagead2\.googlesyndication\.com/[^>]*>.*?</script>','',text,flags=re.S)
   text=re.sub(r'<div class="ad-auto-anchor"[^>]*>\s*</div>','',text)
-  text=re.sub(r'<script\b[^>]*src="js/(?:main|lang|tide-motion|polish|site-motion|studio-v6|atelier-v5|calculator-suite|page-experience)\.js[^>]*>.*?</script>','',text,flags=re.S)
+  text=re.sub(r'<script\b[^>]*src="/?js/(?:main|lang|tide-motion|polish|site-motion|studio-v6|atelier-v5|calculator-suite|page-experience)\.js[^>]*>.*?</script>','',text,flags=re.S)
   text=re.sub(r'(<body\b[^>]*?)\sdata-ads="[^"]*"',r'\1',text)
   text=re.sub(r'(<body\b[^>]*?)\sdata-publication="[^"]*"',r'\1',text)
   text=re.sub(r'<body\b', '<body data-ads="off" data-publication="2026-09"',text,count=1)
@@ -106,9 +106,9 @@ def run():
   # Attach provenance before any meal consumer executes. All unknown fat
   # values remain null; f in the historical dataset explicitly means fiber.
   if 'js/meal-data.js' in text and path.name!='index.html':
-   text=re.sub(r'<script[^>]+src="js/meal-provenance.js[^>]*>.*?</script>','',text,flags=re.S)
-   text=re.sub(r'(<script[^>]+src="js/meal-data\.js[^>]*>\s*</script>)',r'\1<script src="js/meal-provenance.js" defer></script>',text)
-  if path.name=='index.html':text=re.sub(r'<script[^>]+src="js/meal-provenance.js[^>]*>.*?</script>','',text,flags=re.S)
+   text=re.sub(r'<script[^>]+src="/?js/meal-provenance.js[^>]*>.*?</script>','',text,flags=re.S)
+   text=re.sub(r'(<script[^>]+src="/?js/meal-data\.js[^>]*>\s*</script>)',r'\1<script src="js/meal-provenance.js" defer></script>',text)
+  if path.name=='index.html':text=re.sub(r'<script[^>]+src="/?js/meal-provenance.js[^>]*>.*?</script>','',text,flags=re.S)
   if path.name=='index.html' and 'js/editorial-home.js' not in text:
    text=text.replace('</body>','<script src="js/editorial-home.js" defer></script></body>')
   if path.name=='search.html':
@@ -120,11 +120,11 @@ def run():
   # optional advertising. Serving stays disabled until an approved adapter
   # and affirmative consent are supplied.
   for script in ['product-events','food-characters','ad-placements','kitchen-companion','food-experience','meal-guide','meal-view']:
-   text=re.sub(r'<script[^>]+src="js/'+script+r'\.js[^>]*>.*?</script>','',text,flags=re.S)
+   text=re.sub(r'<script[^>]+src="/?js/'+script+r'\.js[^>]*>.*?</script>','',text,flags=re.S)
   text=text.replace('</body>','<script src="js/product-events.js" defer></script><script src="js/food-characters.js" defer></script><script src="js/food-experience.js" defer></script><script src="js/ad-placements.js" defer></script></body>')
   if 'js/meal-finder.js' in text:
-   text=re.sub(r'<script[^>]+src="js/meal-engine.js[^>]*>.*?</script>','',text,flags=re.S)
-   text=re.sub(r'(<script[^>]+src="js/meal-finder\.js)',r'<script src="js/meal-engine.js" defer></script><script src="js/meal-view.js" defer></script><script src="js/meal-guide.js" defer></script>\1',text,count=1)
+   text=re.sub(r'<script[^>]+src="/?js/meal-engine.js[^>]*>.*?</script>','',text,flags=re.S)
+   text=re.sub(r'(<script[^>]+src="/?js/meal-finder\.js)',r'<script src="js/meal-engine.js" defer></script><script src="js/meal-view.js" defer></script><script src="js/meal-guide.js" defer></script>\1',text,count=1)
   text=re.sub(r'<(?:span|div|button)\b[^>]*class="[^"]*companion[^"<>]*"[^>]*>\s*<svg class="fresh-character".*?</svg>\s*<svg class="harvest-character".*?</svg>\s*</(?:span|div|button)>','<span data-food-character="egg" aria-hidden="true"><svg viewBox="0 0 160 160"><use href="images/food-characters.svg#food-egg"></use></svg></span>',text,flags=re.S)
   if path.name=='calculators.html':
    text=re.sub(r'<div class="calculator-presentation">.*?</div>','<div class="calculator-presentation"><span class="calc-step-label">About you</span><button class="quiet-button" type="button" data-calc-switch>All inputs</button></div>',text,flags=re.S)
@@ -147,7 +147,7 @@ def run():
      content=re.sub(r'<h2[^>]*>.*?</h2>','',content,count=1,flags=re.S)
      text=text[:individual['inner']]+'<details class="individual-macro-tools"><summary>Individual protein, fat &amp; carb targets</summary>'+content+'</details>'+text[individual['close']:]
   if path.name=='index.html':
-   text=re.sub(r'<script[^>]+src="js/(?:meal-engine|meal-guide)\.js[^>]*>.*?</script>','',text,flags=re.S)
+   text=re.sub(r'<script[^>]+src="/?js/(?:meal-engine|meal-guide)\.js[^>]*>.*?</script>','',text,flags=re.S)
    text=text.replace('<script src="js/food-experience.js"', '<script src="js/meal-engine.js" defer></script><script src="js/meal-guide.js" defer></script><script src="js/food-experience.js"')
   # Keep every retained article's factual body and current verification date.
   text=re.sub(r'\n{3,}','\n\n',text)

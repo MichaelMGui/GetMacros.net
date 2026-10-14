@@ -64,7 +64,13 @@ def run():
         if (ROOT/row['slug']).exists():
             html=(ROOT/row['slug']).read_text(encoding='utf-8')
             assert row['title'] in unescape(html)
-            for p in re.findall(r'<p>(.*?)</p>',row['body'],re.S):assert plain(p) in plain(html),(row['slug'],'authored copy missing')
+            revisions=json.loads((ROOT/'tools/clarity_release/copy-revisions.json').read_text(encoding='utf-8'))
+            for p in re.findall(r'<p>(.*?)</p>',row['body'],re.S):
+                expected=plain(p)
+                if row['slug'] in revisions['routes'] and expected==plain(revisions['before']):expected=plain(revisions['after'])
+                if row['slug'] in revisions['routes']:
+                    for revision in revisions['contextRevisions']:expected=expected.replace(plain(revision['before']),plain(revision['after']))
+                assert expected in plain(html),(row['slug'],'authored copy or reviewed disclosure missing')
     for i,a in enumerate(checked):
         for b in checked[i+1:]:
             ratio=SequenceMatcher(None,plain(a['body']),plain(b['body']),autojunk=True).ratio()

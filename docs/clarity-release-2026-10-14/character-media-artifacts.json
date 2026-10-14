@@ -1,0 +1,25 @@
+{
+  "js/play-release.js": {
+    "url": "/assets/generated/js-play-release-e63d7933d8c4.js",
+    "sourceSha256": "e63d7933d8c4755cedd55cfff88157ab658fcf9d23c718a3b014580232c2efad",
+    "assetSha256": "e63d7933d8c4755cedd55cfff88157ab658fcf9d23c718a3b014580232c2efad"
+  },
+  "js/food-characters.js": {
+    "url": "/assets/generated/js-food-characters-3668765bfd3b.js",
+    "sourceSha256": "3668765bfd3b197a3315df17ef4b3746da0d9962308281e71c29c8bf9c2e91ad",
+    "assetSha256": "3668765bfd3b197a3315df17ef4b3746da0d9962308281e71c29c8bf9c2e91ad"
+  },
+  "css/clarity-media.css": {
+    "url": "/assets/generated/css-clarity-media-a3dcc8ad1135.css",
+    "sourceSha256": "a3dcc8ad1135b4e28c1a55046df29367cc9ee730d8e225c5de17796557eae4ff",
+    "assetSha256": "a3dcc8ad1135b4e28c1a55046df29367cc9ee730d8e225c5de17796557eae4ff"
+  },
+  "js/clarity-media.js": {
+    "url": "/assets/generated/js-clarity-media-adb4f6886e53.js",
+    "sourceSha256": "adb4f6886e537d5612f87a0c1b797788a7b20d0262aa093a49e32724b09051d7",
+    "assetSha256": "adb4f6886e537d5612f87a0c1b797788a7b20d0262aa093a49e32724b09051d7"
+  },
+  "images/food-characters.svg": {
+    "sourceSha256": "7f0c5bd3f30ad8711b992ba81ae7e5eabd5e01b1a784fa86e59769c6a8f8d64d"
+  }
+}

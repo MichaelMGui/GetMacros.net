@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib,json,re
 from collections import Counter
+from subway_mexico import normalize as normalize_mexico
 ROOT=Path(__file__).resolve().parents[2]
 D=ROOT/'docs/global-product-release-2026-10-11/sources'
 DATE='2026-10-11'
@@ -48,20 +49,14 @@ for table in page['tables']:
   components.append(cells[0].removeprefix('Mild '))
   row('AU','Guzman y Gomez',name,'1 standard mild '+build.lower()+' · '+cells[1]+' g',v,'gyg.pdf','2026-03-09',17,grams=num(cells[1]),components=components,notes='Mild standard build. Source recipe and ingredient matrix, pages 3–4; includes the listed filling, standard sauces and accompaniments. Spicy/rice/bean swaps are not applied. March 9, 2026 edition; locally prepared portions vary. Named components are not a full ingredient formulation.')
 
-for page in read('subway-mexico'):
- group=''
- for cells in page['tables'][0]:
-  if len(cells)!=11:continue
-  if num(cells[1]) is None:
-   if cells[0] and all(x is None for x in cells[1:]):group=' '.join(cells[0].split())
-   continue
-  name=cells[0];prefix='6-inch sub' if '6"' in group else 'Salad' if 'Salads' in group else group
-  category='entree' if '6"' in group or 'Salads' in group else 'component'
-  v={k:num(cells[i]) for k,i in {'cal':2,'fat':4,'sat':5,'na':6,'c':7,'f':8,'sugar':9,'p':10}.items()}
-  components=['Lettuce','Tomatoes','Onions','Green peppers','Cucumbers','Olives'] if 'Salads' in group else []
-  note='November 2025 Mexican source snapshot, not a claim that the full current menu was audited. Standard source recipe; no extra sauces or sides.'
-  if 'Salads' in group:note+=' Salad vegetables included. Dressing excluded unless the name says otherwise.'
-  row('MX','Subway',prefix+' — '+name,'1 '+prefix.lower()+' · '+cells[1]+' g',v,'subway-mexico.pdf','2025-11',page['page'],category,note,grams=num(cells[1]),components=components)
+for normalized in normalize_mexico(read('subway-mexico')):
+ r=row('MX','Subway',normalized['name'],normalized['serving'],normalized['values'],
+       'subway-mexico.pdf','2025-11',normalized['sourcePage'],normalized['category'],
+       normalized['notes'],grams=normalized['servingGrams'],components=normalized['components'])
+ # Preserve established public comparison/share identities; historic private
+ # diary snapshots remain untouched by this source-label correction.
+ for key in ['id','sourceGroup','finderSupported','classificationReviewedAt','identityProvenance']:
+  r[key]=normalized[key]
 
 for cells in read('subway-nz')[0]['tables'][0]:
  if len(cells)!=11 or any(num(x) is None for x in cells[1:]):continue

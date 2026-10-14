@@ -1,0 +1,37 @@
+/* Clarity release: original ingredient interactions and an image-free media shelf. */
+.food-character[data-food-character=steak] .food-arm-wave{transform-origin:120px 76px}
+.food-character[data-food-character=steak] .food-character-greeting{bottom:4px;padding:4px 12px;border:1px solid var(--line);background:var(--surface);line-height:1.3}
+html[data-motion=calm] .food-character.is-greeting[data-motion] .food-arm-wave,html[data-motion=calm] .food-character.is-greeting[data-motion] .food-eyes,html[data-motion=calm] .food-character.is-greeting[data-motion] .food-leaf,html[data-motion=calm] .food-character.is-greeting[data-motion] .food-nod{animation:none}
+html[data-motion=calm] .food-character .food-character-greeting{transition:none}
+html[data-motion=calm] .food-character-trigger:active .food-character-art{transform:none}
+.clarity-media .food-app-head{margin-bottom:32px}
+.clarity-media-shelf{display:grid;gap:0}
+.clarity-media-item{display:grid;grid-template-columns:112px minmax(0,1fr);gap:32px;padding:32px 0;border-top:1px solid var(--line);min-width:0}
+.clarity-media-mark{width:112px;aspect-ratio:1;display:grid;place-items:center;border-radius:14px;color:var(--green);background:var(--soft);align-self:start}
+.clarity-media-mark[data-media-kind=film]{border-radius:50%;background:var(--highlight)}
+.clarity-media-mark[data-media-kind=guide]{border-radius:14px 14px 32px 14px}
+.clarity-media-mark svg{display:block;width:64px;height:64px;overflow:hidden}
+.clarity-media-content{min-width:0}
+.clarity-media-content h2{font:600 clamp(1.3rem,2.2vw,1.65rem)/1.22 var(--display);margin:8px 0 12px;overflow-wrap:anywhere}
+.clarity-media-content h2 a{color:var(--ink);text-decoration:none;text-underline-offset:4px}
+.clarity-media-content h2 a:hover{text-decoration:underline;text-decoration-thickness:1px}
+.clarity-media-content p{font-size:.93rem;line-height:1.65;margin:12px 0;max-width:64ch}
+.clarity-media-content .clarity-media-kind{font-size:.78rem;font-weight:600;line-height:1.4;margin:0;color:var(--muted)}
+.clarity-media-content .clarity-media-credit{color:var(--ink);font-size:.84rem;font-weight:600;margin:0 0 4px}
+.clarity-media-content .clarity-media-edition{color:var(--muted);font-size:.82rem;margin:0 0 16px}
+.clarity-media-content .clarity-media-limit{font-size:.84rem;color:var(--muted);margin:12px 0 18px}
+.clarity-media-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;font-size:.84rem}
+.clarity-media-actions a{padding-block:8px;min-height:40px;display:inline-flex;align-items:center;gap:6px}
+.clarity-media-actions a svg{width:18px;height:18px;flex:none}
+.clarity-media-method{margin-top:24px;padding:18px 0;border-top:1px solid var(--line)}
+.clarity-media-method summary{font-weight:600;min-height:44px;display:flex;align-items:center;gap:12px;cursor:pointer}
+.clarity-media-method summary::after{content:'+';margin-left:auto;font-size:1.25rem}
+.clarity-media-method[open] summary::after{content:'−'}
+.clarity-media-method p{font-size:.86rem;color:var(--muted);max-width:70ch}
+.play-complete h2:focus{outline:3px solid var(--focus);outline-offset:6px;border-radius:4px}
+.play-complete h2{scroll-margin-top:calc(var(--header-height,80px) + 20px)}
+.play-stage[role=region]{scroll-margin-top:calc(var(--header-height,80px) + 20px)}
+.play-complete .play-complete-art{display:block;width:112px;height:112px;margin:0 auto 18px}
+.play-complete .play-complete-art svg{display:block;width:100%;height:100%}
+.clarity-game .play-head h1{margin-bottom:0}
+@media(max-width:550px){.clarity-media-item{grid-template-columns:56px minmax(0,1fr);gap:0 16px;padding:26px 0}.clarity-media-mark{width:56px;border-radius:12px;grid-row:1/4}.clarity-media-mark svg{width:36px;height:36px}.clarity-media-content{display:contents}.clarity-media-content>*{grid-column:1/-1;min-width:0}.clarity-media-content .clarity-media-kind,.clarity-media-content h2,.clarity-media-content .clarity-media-credit{grid-column:2}.clarity-media-content h2{font-size:1.25rem}.clarity-media-content p{font-size:.88rem}.clarity-media-content .clarity-media-credit{margin-bottom:14px}.clarity-media-content .clarity-media-edition{margin-top:8px}.clarity-media-actions{gap:4px 14px}.clarity-media-actions a{min-height:44px}.clarity-media .food-app-head{margin-bottom:24px}.clarity-game .play-head{grid-template-columns:minmax(0,1fr) 64px;gap:14px;margin-bottom:24px}.clarity-game .play-head>div{grid-column:1;grid-row:1;min-width:0}.clarity-game .play-head>.play-food{grid-column:2;grid-row:1;width:64px;height:64px;order:0;transform:none}.clarity-game .play-head h1{font-size:clamp(1.9rem,7vw,2.4rem);line-height:1.15}}

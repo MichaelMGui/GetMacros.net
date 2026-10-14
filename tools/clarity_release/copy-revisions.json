@@ -1,0 +1,9 @@
+{
+  "routes": ["how-to-calculate-recipe-nutrition.html", "how-to-read-a-nutrition-label.html", "same-restaurant-name-different-market-data.html", "compare-complete-restaurant-orders.html", "published-vs-calculated-restaurant-rows.html", "how-to-calculate-maintenance-calories.html", "grams-vs-milliliters-nutrition-labels.html", "how-to-log-food-portions.html", "saved-meal-source-version-check.html", "calorie-units-kcal-kilojoules.html"],
+  "before": "All food figures and prices in the worked example are invented to explain the method. They are not restaurant nutrition, tested recipes, shopping prices or personal dietary advice. Use the current label for the product you actually have.",
+  "after": "Hypothetical examples are labelled as examples. The separately sourced food comparison identifies its market, portion and source edition. Use the current label for the product you have; no kitchen or physical-package testing is claimed.",
+  "contextRevisions": [
+    {"before": "These sources support the factual explanations above. Worked label examples are illustrative where stated. Restaurant comparisons use the listed U.S. portions; availability and local recipes may differ.", "after": "These sources support the measurement explanations. Hypothetical label examples remain labelled; real food comparisons identify their own country, serving and source edition. Availability and recipes can change."},
+    {"before": "Use the updated matching source rather than averaging old and new values.", "after": "For a new order, use the matching source rather than averaging old and new values. Preserve earlier diary snapshots unless you deliberately edit them."}
+  ]
+}
