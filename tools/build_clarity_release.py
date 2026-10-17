@@ -176,6 +176,8 @@ def build():
                     for n in reversed([n for n in Document(text).nodes if n['tag']=='script' and (n['attrs'].get('data-source-path','').lstrip('/')=='js/clarity-media.js' or n['attrs'].get('src','').split('?')[0].lstrip('/')=='js/clarity-media.js')]):text=text[:n['start']]+text[n['end']:]
                     text=text.replace('</body>','<script src="/js/clarity-media.js" defer></script></body>',1)
                 write(p,text)
+    from build_visible_workspace import build as workspace_build
+    workspace_build()
     from build_edition_css import build as css_build
     css_build()
     print('Clarity release integrated: shared discovery, retained comparison, calculator workspace and route inventory.')

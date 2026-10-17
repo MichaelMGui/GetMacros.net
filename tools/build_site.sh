@@ -37,6 +37,7 @@ python3 tools/test-editorial-release.py
 python3 tools/restaurant_release/test_expansion.py
 node tools/international/test-markets.cjs
 python3 tools/test_master_homepages.py
+python3 tools/test_visible_workspace.py
 python3 tools/master_release/test_branded_import.py
 python3 tools/master_release/test_restaurants.py
 node tools/master_release/test-diary-meals.cjs

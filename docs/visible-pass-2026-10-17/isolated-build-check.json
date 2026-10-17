@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\slowf\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8",
+        "tools/run_food_build.py"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "checkedPublicFiles": 494,
+  "differences": [],
+  "source": "isolated staged Git index; full production build including its tests"
+}

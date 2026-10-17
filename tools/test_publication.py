@@ -9,7 +9,8 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  text=path.read_text(encoding='utf-8');doc=Document(text)
  styles=[n['attrs'].get('data-source-path',n['attrs']['href'].split('?')[0].lstrip('/')) for n in doc.nodes if n['tag']=='link' and n['attrs'].get('rel')=='stylesheet']
  assert styles and styles[0]=='css/publication.css' and len(styles)==len(set(styles)),(path.name,styles)
- assert all(s in {'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css','css/clarity-media.css'} for s in styles),(path.name,styles)
+ assert all(s in {'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css','css/clarity-media.css','css/home-workspace.css'} for s in styles),(path.name,styles)
+ if 'css/home-workspace.css' in styles:assert 'data-home-template=' in text,path.name
  if 'css/food-app.css' in styles:assert 'food-app' in text or 'product-diary:start' in text,path.name
  if 'css/release-library.css' in styles:assert path.name in {'articles.html','blog.html','restaurant-meal-guides.html'} or 'class="restaurant-reference"' in text,path.name
  if 'css/food-shelf.css' in styles:assert path.name=='food-shelf.html' or 'data-shelf-save' in text or 'play-page' in text,path.name

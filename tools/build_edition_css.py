@@ -10,6 +10,7 @@ def build():
  css=re.sub(r'(?<![\w.])0\.(\d+)',r'.\1',css)
  css=css.replace(';}', '}')
  (root/'css/publication.css').write_text(css.strip(),encoding='utf-8')
+ home=(root/'tools/home-workspace.css').read_text(encoding='utf-8');home=re.sub(r'/\*.*?\*/','',home,flags=re.S);home=re.sub(r'\s*([{}:;,])\s*',r'\1',home);(root/'css/home-workspace.css').write_text(home.strip(),encoding='utf-8')
  shelf=(root/'tools/food-shelf.css').read_text(encoding='utf-8');shelf=re.sub(r'\s*([{}:;,])\s*',r'\1',shelf);(root/'css/food-shelf.css').write_text(shelf,encoding='utf-8')
  library=(root/'tools/release-library.css').read_text(encoding='utf-8');library=re.sub(r'/\*.*?\*/','',library,flags=re.S);library=re.sub(r'\s*([{}:;,])\s*',r'\1',library);(root/'css/release-library.css').write_text(library,encoding='utf-8')
 if __name__=='__main__':build()

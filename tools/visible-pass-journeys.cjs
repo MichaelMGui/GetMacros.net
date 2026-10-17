@@ -1,0 +1,46 @@
+const {chromium}=require('C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+let base=process.env.GM_PREVIEW_URL;const out=path.resolve(process.env.GM_OUTPUT_DIR||'docs/visible-pass-2026-10-17/journeys');fs.mkdirSync(out,{recursive:true});
+const http=require('node:http'),root=path.resolve('.');
+const server=http.createServer((req,res)=>{let file=path.join(root,decodeURIComponent(new URL(req.url,'http://localhost').pathname));if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return}if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');if(!fs.existsSync(file)){res.writeHead(404).end();return}const types={'.html':'text/html','.css':'text/css','.js':'application/javascript','.json':'application/json','.svg':'image/svg+xml','.woff2':'font/woff2'};res.setHeader('Content-Type',types[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file))});
+(async()=>{if(!base){await new Promise(r=>server.listen(0,'127.0.0.1',r));base='http://127.0.0.1:'+server.address().port;}const b=await chromium.launch({channel:'msedge',args:['--no-proxy-server']});const report=[];try{
+ for(const theme of ['light','dark'])for(const width of [390,1280]){
+  const c=await b.newContext({viewport:{width,height:900},serviceWorkers:'block',reducedMotion:'reduce'});await c.addInitScript(t=>localStorage.setItem('gm-theme',t),theme);
+  const p=await c.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
+  await p.goto(base+'/food-diary.html',{waitUntil:'networkidle'});await p.evaluate(()=>document.fonts.ready);
+  await p.locator('[data-diary-add]').focus();await p.locator('[data-diary-add]').press('Enter');await p.locator('#food-picker').waitFor({state:'visible'});
+  await p.locator('#food-picker').press('Escape');assert(await p.locator('[data-diary-add]').evaluate(n=>document.activeElement===n));
+  await p.locator('[data-meal-add=Breakfast]').click();
+  await p.waitForFunction(()=>document.querySelector('[data-food-browse-group]')?.options.length>1);
+  assert.equal(await p.locator('[data-food-browse-controls]').evaluate(n=>n.open),false);
+  await p.screenshot({path:path.join(out,`food-search-${theme}-${width}.png`)});
+  await p.locator('[data-food-query]').fill('banana');await p.locator('[data-food-search] button[type=submit]').click();
+  await p.locator('.food-search-row').first().waitFor();await p.locator('.food-search-row').first().click();
+  await p.locator('#food-review').waitFor({state:'visible'});
+  const grams=await p.locator('#food-review [name=measure] option[value=g]').count();
+  if(grams)await p.locator('#food-review [name=measure]').selectOption('g');
+  await p.locator('#food-review [name=quantity]').fill(grams?'100':'1');await p.locator('#food-review [name=quantity]').blur();
+  await p.locator('#food-review [name=occasion]').selectOption('Breakfast');
+  await p.screenshot({path:path.join(out,`food-review-${theme}-${width}.png`)});
+  await p.locator('[data-review-favorite]').click();await p.locator('[data-review-save]').click();
+  await p.locator('#diary-breakfast .diary-entry').waitFor();
+  assert(await p.locator('.diary-summary').isVisible());assert.equal(await p.locator('.diary-entry').count(),1);
+  await p.screenshot({path:path.join(out,`diary-logged-${theme}-${width}.png`)});
+  await p.reload({waitUntil:'networkidle'});await p.locator('#diary-breakfast .diary-entry').waitFor();
+  await p.locator('.diary-entry').getByRole('button',{name:'Edit',exact:true}).click();
+  await p.getByLabel('Amount in the saved measure').fill(grams?'50':'2');await p.getByRole('button',{name:'Save changes',exact:true}).click();
+  await p.waitForFunction(prefix=>document.querySelector('.food-entry-portion')?.textContent.startsWith(prefix),grams?'50 ':'2 ');
+  await p.locator('.diary-entry').getByRole('button',{name:'Remove',exact:true}).click();await p.locator('[data-diary-undo]').click();await p.locator('.diary-entry').waitFor();
+  await p.locator('[data-diary-previous]').click();await p.waitForFunction(()=>document.querySelectorAll('.diary-entry').length===0);
+  await p.locator('[data-diary-today]').click();await p.locator('.diary-entry').waitFor();
+  await p.locator('[data-open-preferences]').click();await p.locator('#diary-preferences').waitFor({state:'visible'});
+  await p.locator('#diary-preferences summary').filter({hasText:'Backup & restore'}).click();
+  const download=p.waitForEvent('download');await p.locator('[data-diary-export]').click();const file=await download;const backup=JSON.parse(fs.readFileSync(await file.path(),'utf8'));assert.equal(backup.entries.length,1);
+  await p.locator('[data-preferences-close]').click();
+  assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+  await p.goto(base+'/ca/en/',{waitUntil:'networkidle'});await p.locator('.home-finder-entry [name=maxCal]').fill('600');await p.locator('.home-finder-entry [name=minProtein]').fill('25');await p.locator('.home-finder-entry button').click();
+  await p.waitForURL('**/ca/en/find-a-meal/**');assert.equal(new URL(p.url()).searchParams.get('maxCal'),'600');assert.equal(new URL(p.url()).searchParams.get('minProtein'),'25');
+  assert.deepEqual(errors,[]);report.push({theme,width,passed:true,journeys:['breakfast search','source category disclosure','review portion','save favorite','log','reload persistence','edit portion','remove and undo','previous date and today','export backup','Canadian homepage to finder']});await c.close();
+ }
+ fs.writeFileSync(path.join(out,'checks.json'),JSON.stringify(report,null,2));console.log('PASS: '+report.length+' complete diary/homepage journeys.');
+}finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});

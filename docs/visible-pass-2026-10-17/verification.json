@@ -1,0 +1,23 @@
+{
+  "renderedStates": 30,
+  "overflowOrRuntimeFailures": 0,
+  "completeJourneys": 4,
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "widths": [
+    320,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "scope": "Eight shared homepage compositions and the private food diary; no new data or AI functionality",
+  "isolatedProductionBuild": {
+    "exitCode": 0,
+    "checkedPublicFiles": 494,
+    "differences": []
+  },
+  "repeatedRegionalBuild": "All eight homepages byte-identical after metadata, workspace and immutable asset regeneration"
+}

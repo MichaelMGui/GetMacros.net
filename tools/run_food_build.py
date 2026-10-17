@@ -13,6 +13,7 @@ files.insert(files.index('refresh_release_search'),'build_clarity_release')
 for f in files:
  subprocess.run([P,'-X','utf8','tools/'+f+'.py']+(['--apply-reviewed'] if f=='release_copy_audit' else ['--apply'] if f in {'build_restaurant_expansion','build_restaurant_data_report'} else []),check=True)
 subprocess.run(['node','tools/international/test-markets.cjs'],check=True)
+subprocess.run([P,'-X','utf8','tools/test_visible_workspace.py'],check=True)
 for test in ['tools/test_master_homepages.py','tools/master_release/test_branded_import.py','tools/master_release/test_restaurants.py','tools/master_completion/test_restaurants.py','tools/master_completion/grocery_test_off.py','tools/test_asset_stamps.py']:
  subprocess.run([P,'-X','utf8',test],check=True)
 for test in ['tools/master_release/test-branded-search.cjs','tools/master_release/test-branded-integrity.cjs','tools/master_release/test-diary-meals.cjs','tools/master_completion/test-source-ui.cjs']:
