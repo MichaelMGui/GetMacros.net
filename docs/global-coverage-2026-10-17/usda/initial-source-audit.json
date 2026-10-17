@@ -1,0 +1,61 @@
+{
+  "sourceRows": 455458,
+  "sourceRowsByMarket": {
+    "United States": 446502,
+    "New Zealand": 1108,
+    "US": 7848
+  },
+  "sourceServingUnits": {
+    "g": 281351,
+    "ml": 43062,
+    "GRM": 108108,
+    "MLT": 16930,
+    "MG": 3780,
+    "IU": 2012,
+    "GM": 187,
+    "MC": 28
+  },
+  "acceptedRowsByExistingRulesWithoutAllowlist": 321790,
+  "acceptedUnits": {
+    "g": 278804,
+    "ml": 42986
+  },
+  "rejectReasons": {
+    "missing-product-identity": 953,
+    "missing-core-nutrition": 1643,
+    "unsupported-or-absent-serving-basis": 131072
+  },
+  "rejectedExamples": {
+    "missing-product-identity": {
+      "fdcId": 349015,
+      "name": "MUR GLN CRUSHED TOM BASIL",
+      "brand": "",
+      "unit": "g",
+      "serving": 60
+    },
+    "missing-core-nutrition": {
+      "fdcId": 578248,
+      "name": "HIMALAYAN GOURMET PINK SALT CRYSTALS",
+      "brand": "JERRY'S SMOKEHOUSE",
+      "unit": "g",
+      "serving": 1
+    },
+    "unsupported-or-absent-serving-basis": {
+      "fdcId": 1761277,
+      "name": "ZERO CALORIE SWEETENER",
+      "brand": "MONK FRUIT IN THE RAW",
+      "unit": "g",
+      "serving": 0
+    }
+  },
+  "updateLogRows": 1789878,
+  "historicalUpdateLogReferences": 1334420,
+  "duplicateMarketBarcodeRows": 1672,
+  "sizeEstimate": {
+    "sampleRows": 1320,
+    "meanRecordBytes": 2933.4,
+    "meanGzipRecordBytes": 272.9,
+    "estimatedRecordsJsonBytes": 943949025,
+    "estimatedRecordsGzipBytes": 87832337
+  }
+}

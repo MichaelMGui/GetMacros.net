@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-17",
+  "sourcePartition": "usda",
+  "license": "CC0-1.0",
+  "openFoodFactsDataIncluded": false,
+  "sources": [
+    {
+      "title": "USDA FoodData Central Download Datasets",
+      "url": "https://fdc.nal.usda.gov/download-datasets/",
+      "finding": "The official Latest Downloads table lists April 2026 as the latest branded JSON and CSV bulk release at this check. April 2026 is the stated release month; the JSON download filename carries the snapshot date 2026-04-30.",
+      "downloadUrl": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_branded_food_json_2026-04-30.zip",
+      "archiveRetrievedAt": "2026-10-12",
+      "archiveSha256": "57b0f122e61cf2840f03c11e9520275d0d2018dc036e16273fcd3cd370db2256"
+    },
+    {
+      "title": "USDA Global Branded Food Products Database Documentation",
+      "url": "https://fdc.nal.usda.gov/GBFPD_Documentation/",
+      "findings": [
+        "Data providers supply the labels; USDA standardizes presentation. Bulk files do not include monthly changes made between releases.",
+        "The source converts nutrients to a 100-unit basis in grams or milliliters, depending on the provider's supplied unit. Milliliters do not establish a gram mass.",
+        "An omitted nutrient is unknown. A reported zero may reflect label rounding. Neither missing data nor a not-significant-source statement authorizes filling zero.",
+        "Historical source updates can change descriptions, brands, nutrients, and ingredients. An update is not necessarily a reformulation. An update-log reference alone supplies no historical nutrient body.",
+        "Market attribution is retained exactly as supplied, with the United States and US spelling aliases mapped to US. New Zealand is separate. The source does not establish present retailer inventory."
+      ]
+    },
+    {
+      "title": "FoodData Central API Guide — Licensing",
+      "url": "https://fdc.nal.usda.gov/api-guide/#bkmk-9",
+      "finding": "USDA identifies FoodData Central as public domain under CC0 1.0 Universal and requests source attribution. This partition remains independent from Open Food Facts and its ODbL obligations."
+    },
+    {
+      "title": "FoodData Central Download Field Descriptions",
+      "url": "https://fdc.nal.usda.gov/portal-data/external/dataDictionary",
+      "finding": "Repeated GTIN/UPC codes identify source updates, distinguished chronologically by publication_date. Every actual source FDC ID is retained; same-market barcode grouping does not merge nutrient values."
+    },
+    {
+      "title": "GS1 T0055 Unit of measure",
+      "url": "https://gs1.se/en/guides/documentation/code-lists/t0055-unit-of-measure/",
+      "finding": "The primary GS1 code table explicitly defines GRM as gram and MLT as millilitre. These are unit aliases, with no change to numerical amount or gram-to-volume inference. MG, IU, GM and MC are not normalized by this importer because their source meaning and nutrient denominator are not established by this evidence."
+    }
+  ],
+  "implementation": {
+    "script": "tools/global_coverage_2026_10_17/usda_expand.py",
+    "staging": "docs/global-coverage-2026-10-17/usda/staged",
+    "recordEncoding": "Deterministic gzip JSON with 3-hex SHA-256 ID shards; uncompressed manifest.json.",
+    "idPolicy": "branded:usda:<fdcId>. The importer refuses to finish if an established production ID would disappear.",
+    "datePolicy": "Parse month/day/year and ISO source dates to ISO before comparison. Latest means greatest publication date within this source bulk snapshot.",
+    "versionPolicy": "Same-market normalized GTINs form source-version groups. Distinct source IDs, ingredients, package wording, serving units and nutrient bodies remain preserved. Fingerprints include nutrient values so changed nutrition cannot be silently deduplicated.",
+    "historyPolicy": "History entries contain source IDs and dates only, plus whether that actual record exists in the catalogue. Missing historical nutrient bodies are never fabricated.",
+    "coveragePolicy": "No brand allowlist and no artificial row target. Accept each source-supported US/NZ food with product identity, at least one finite core nutrient and a positive, documented serving basis."
+  }
+}

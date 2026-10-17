@@ -1,0 +1,130 @@
+L0@P0: URL: https://media.subway.com/dam/urn:aaid:aem:246fd30f-0f78-4d1c-bd45-750bda1a695a/original/as/MEX%20Nutrition%20ENG%208.2026.pdf
+L1@P0: Serving Size (g)
+L2@P0: CaloriesCalories From FatTotal Fat (g)Saturated Fat (g)Sodium (mg)Carbohydrate (g)Dietary Fiber (g)Sugars (g)Protein (g)
+L3@P0: 6" Subway Series
+L4@P0: Costillas Holy Moly Guacamoli 279 650 340 38 12 1490 54 6 13 23
+L5@P0: Crunchy Steak Bacon 235 540 210 24 8 1520 47 3 9 30
+L6@P0: American Teriyaki 272 460 120 13 3 1090 61 5 20 25
+L7@P0: Oh My Boneless! 233 540 220 24 9 1890 54 4 8 26
+L8@P0: Jamtochino 241 400 140 16 6 1650 44 3 7 21
+L9@P0: Italonni 186 480 250 27 12 1350 37 3 5 21
+L10@P0: 6" Sandwiches
+L11@P0: Barbecue Rib Patty 264 470 200 22 7 990 48 6 13 21
+L12@P0: Black Forest Ham 219 270 45 5 1 860 41 5 8 17
+L13@P0: Boneless Hot 203 520 230 26 9 1920 50 4 6 22
+L14@P0: Chicken Teriyaki (includes Sweet Onion) 247 330 35 4 1 630 52 5 17 22
+L15@P0: Chicken, Oven Roasted 226 290 35 4 1 440 39 5 7 25
+L16@P0: Chicken Bacon Ranch® 252 390 120 13 3 710 40 5 8 29
+L17@P0: Chicken, Breaded 237 390 130 14 5 470 51 9 7 19
+L18@P0: Chicken Milanesa Napolitana 308 510 200 22 9 1660 56 7 10 27
+L19@P0: Chicken Milanesa Mexicana 257 460 200 22 8 780 51 8 7 19
+L20@P0: Chicken Milanesa de Pollo 3 Queso 231 470 200 22 10 1100 50 6 6 22
+L21@P0: Italian BMT® 224 390 150 16 5 1090 41 5 8 20
+L22@P0: Meatball Marinara 258 530 200 23 12 1430 54 5 10 27
+L23@P0: Parmesan Chicken 270 430 150 16 6 660 55 9 9 21
+L24@P0: Pizza Sub 238 430 180 20 8 1140 44 6 9 19
+L25@P0: Steak & Cheese 168 360 100 11 5 1070 36 3 6 25
+L26@P0: Tuna 236 320 90 10 2 580 40 5 6 19
+L27@P0: Turkey Breast 205 260 35 4 1 700 42 5 7 15
+L28@P0: Veggie Delite® with American Cheese 174 250 50 6 2 440 39 5 6 12
+L29@P0: Golazo Sandwiches
+L30@P0: BBQ Rib 183 360 120 16 6 1110 40 2 9 13
+L31@P0: Ham and Cheese with Guacomole 161 330 110 15 4 1040 38 3 6 10
+L32@P0: Milanesa de Pollo 245 490 160 20 7 1000 35 3 6 21
+L33@P0: Ultra Golazo Steak 250 420 110 15 6 1480 41 2 9 23
+L34@P0: Golazo Kids Sub 136 290 80 11 4 1030 35 1 6 12
+L35@P0: Pastor Sandwiches
+L36@P0: Gran Pastor 257 470 160 20 7 1510 43 5 5 31
+L37@P0: Gringo Pastor 215 420 120 15 8 1360 40 2 5 31
+L38@P0: Campechano 206 430 130 17 5 1030 45 3 6 25
+L39@P0: Golazo Pastor 132 290 15 8 2 750 40 2 5 14
+L40@P0: SALADS
+L41@P0: Salads
+L42@P0: Barbecue Rib Patty 375 310 180 20 7 810 19 5 10 14
+L43@P0: Black Forest Ham 330 110 30 3 1 680 12 4 6 9
+L44@P0: Boneless Hot 420 450 270 30 9 1860 28 6 7 18
+L45@P0: Breaded Chicken 348 230 120 13 5 280 22 7 5 12
+L46@P0: Chicken Breast, Oven Roasted 337 120 20 2 1 250 10 4 5 17
+L47@P0: Chicken Teriyaki (includes Sweet onion) 358 160 20 2 1 440 23 4 15 14
+L48@P0: Chicken & Bacon Ranch 363 220 100 12 3 520 11 4 5 21
+L49@P0: Italian BMT® 335 220 130 15 5 900 12 4 5 12
+L50@P0: Parmesan Chicken 381 270 130 15 5 480 25 8 7 13
+L51@P0: Pizza Sub 349 270 170 19 8 950 14 4 7 12
+L52@P0: Double values for approximate footlong nutrition values.
+L53@P0: Values include lettuce, tomatoes, onions, green peppers, cucumbers
+L54@P0: and olives. Values do not include dressing unless noted.
+L55@P0: SANDWICHES
+L56@P0: Values are based on standard recipes. Double values for
+L57@P0: approximate footlong nutrition values.
+L58@P0: SUBWAY® MEXICO
+L59@P0: NUTRITION INFORMATION
+L60@P0-1: August 2026Serving Size (g)
+L61@P1: CaloriesCalories From FatTotal Fat (g)Saturated Fat (g)Sodium (mg)Carbohydrate (g)Dietary Fiber (g)Sugars (g)Protein (g)
+L62@P1: Steak & Cheese 356 230 90 10 5 890 11 4 5 21
+L63@P1: Tuna 347 160 80 9 2 390 10 4 4 11
+L64@P1: Turkey Breast 316 90 20 2 1 520 13 4 5 7
+L65@P1: Veggie Delite® with Cheese 285 90 40 4 2 250 9 4 4 5
+L66@P1: Breads
+L67@P1: 6" Italian (White) 71 180 20 2 1 250 33 2 4 7
+L68@P1: 6" Wheat Bread 78 190 20 2 0 290 33 4 5 10
+L69@P1: 6" Honey Oat 81 200 20 2 1 290 35 4 6 10
+L70@P1: 6" Parmesan Oregano 74 190 20 2 1 440 34 2 4 7
+L71@P1: 6" Roasted Garlic 74 180 20 2 1 590 34 2 5 7
+L72@P1: Apple Cider Vinegar 4 0 0 0 0 0 0 0 0 0
+L73@P1: Bacon (2 strips) 15 80 50 6 3 290 1 0 0 6
+L74@P1: BBQ 14 10 0 0 0 120 2 0 1 0
+L75@P1: Buffalo 14 0 0 0 0 420 1 0 0 0
+L76@P1: Ketchup 14 15 0 0 0 160 4 0 3 0
+L77@P1: Chipotle Southwest Sauce 14 30 25 3 0 125 1 0 0 0
+L78@P1: Guacamole, Spicy 30 50 45 5 1 125 3 2 0 1
+L79@P1: Honey Mustard Sauce 14 20 5 1 0 95 4 0 3 0
+L80@P1: Mayonnaise 14 35 30 4 1 75 1 0 0 0
+L81@P1: Olive Oil Blend (1 tsp) 4 30 30 4 0 0 0 0 0 0
+L82@P1: Ranch Dressing 21 80 80 8 1 190 2 0 1 0
+L83@P1: Sweet Onion Sauce 18 30 0 0 0 70 8 0 7 0
+L84@P1: Crispy Onions 13 80 50 6 0 30 5 0 0 1
+L85@P1: Banana Peppers (3 rings) 4 0 0 0 0 30 0 0 0 0
+L86@P1: Cucumbers (3 slices) 14 0 0 0 0 0 1 0 0 0
+L87@P1: Green Peppers (3 strips) 7 0 0 0 0 0 0 0 0 0
+L88@P1: Jalapeno Peppers (3 rings) 4 0 0 0 0 35 0 0 0 0
+L89@P1: Lettuce 21 0 0 0 0 0 0 0 0 0
+L90@P1: Onions 7 0 0 0 0 0 1 0 0 0
+L91@P1: Pickles (3 chips) 10 0 0 0 0 115 0 0 0 0
+L92@P1: Olives (3 rings) 3 0 0 0 0 25 0 0 0 0
+L93@P1: Tomatoes (3 wheels) 35 5 0 0 0 0 1 0 1 0
+L94@P1: American 11 40 30 3 2 190 0 0 0 2
+L95@P1: Manchego 11 40 30 3 2 180 0 0 0 2
+L96@P1: Mozzarella 34 110 80 9 6 230 1 0 0 7
+L97@P1: Parmesan 2 5 0 0 0 25 0 0 0 1
+L98@P1: Barbecue Rib Patty 71 240 170 19 7 470 4 1 3 11
+L99@P1: Boneless 80 170 80 9 5 920 10 2 1 12
+L100@P1: Breaded Chicken 74 180 110 12 4 220 12 4 0 9
+L101@P1: Chicken Strips 64 70 15 1 0 190 1 0 1 15
+L102@P1: Chicken Strips, Teriyaki Glazed 64 70 10 1 0 290 5 0 2 11
+L103@P1: Ham, Black Forest 57 60 20 2 1 610 3 0 2 7
+L104@P1: Italian BMT® Meats 62 170 130 14 5 830 3 0 1 10
+L105@P1: Pepperoni (3 slices) 17 80 60 7 3 280 1 0 0 3
+L106@P1: Steak (no cheese) 71 140 50 6 2 640 2 1 1 16
+L107@P1: Tuna 74 110 70 8 1 330 1 0 0 9
+L108@P1: Turkey Breast 43 45 10 1 0 450 3 0 1 5
+L109@P1: Chocolate Chip Cookie 45 220 100 11 6 90 27 1 17 2
+L110@P1: Cinnamon Roll Cookie 45 220 100 11 6 135 28 2 16 2
+L111@P1: Double Chocolate Chip Cookie 45 220 110 12 7 65 27 1 18 2
+L112@P1: Pecan Cookie 45 210 90 10 6 90 29 1 19 2
+L113@P1: White Chip Cranberry Cookie 45 210 90 10 6 90 29 1 19 2
+L114@P1: Crosschips 102 180 60 7 2 910 27 2 1 3
+L115@P1: Boneless Bites (includes Buffalo Sauce) 190 350 160 19 10 2730 21 4 2 25
+L116@P1: Boneless Bites (includes BBQ Sauce) 190 360 170 18 10 2100 24 4 5 25
+L117@P1: Desserts
+L118@P1: Cheese (amount on 6-inch sandwich)
+L119@P1: Individual Meats (amount on 6" sub or salad)
+L120@P1: Sides
+L121@P1: BREADS & CONDIMENTS
+L122@P1: Sandwich Condiments and Toppings (amount on 6-inch sandwich)
+L123@P1-2: Vegetables (amount on 6-inch sandwich)Serving Size (g)
+L124@P2: CaloriesCalories From FatTotal Fat (g)Saturated Fat (g)Sodium (mg)Carbohydrate (g)Dietary Fiber (g)Sugars (g)Protein (g)
+L125@P2: **At participating locations.
+L126@P2: A Registered Dietitian compiled this nutrition information from the following data: Nutrition analysis from approved food manufacturers, independent laboratories and the USDA
+L127@P2: Nutrient Database for Standard Reference. The nutrition information listed here is based on standard recipes and product formulations, however slight variations may occur due to
+L128@P2: season of the year, use of an alternate supplier, region of the country and/or small differences in product assembly. Nutrition information for these items are based on the most
+L129@P2: common formulas and ingredients.

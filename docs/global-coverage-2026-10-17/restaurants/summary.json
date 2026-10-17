@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-17",
+  "scope": "Exact reviewed country-specific source selections; no complete/live full-menu claim.",
+  "marketCounts": {
+    "JP": 187,
+    "CA": 90,
+    "GB": 119,
+    "IE": 128,
+    "AU": 234,
+    "US": 46,
+    "NZ": 143,
+    "MX": 7
+  },
+  "chainCounts": {
+    "JP|MOS Burger": 187,
+    "CA|KFC": 90,
+    "GB|KFC": 119,
+    "IE|KFC": 128,
+    "AU|Guzman y Gomez": 234,
+    "US|Panda Express": 46,
+    "NZ|Subway": 143,
+    "MX|Subway": 7
+  }
+}

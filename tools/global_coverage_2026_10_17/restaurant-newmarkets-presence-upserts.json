@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-17",
+  "relationships": [
+    {
+      "id": "FR|quick",
+      "country": "FR",
+      "restaurantBrand": "Quick",
+      "restaurantId": "quick",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.quick.fr/",
+      "localMenuSource": "https://www.quick.fr/",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.quick.fr/tous-les-quicks",
+        "evidenceType": "current official country or explicitly regional operating resource",
+        "observation": "Official directory explicitly lists the Quick restaurants of France.",
+        "checkedAt": "2026-10-17"
+      },
+      "nutritionSources": [
+        "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf"
+      ],
+      "lastCheckedDate": "2026-10-17",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "nutritionSourceStatus": "reviewed-selection",
+      "finderSupported": true,
+      "trackedRecords": 190,
+      "completeMacroRecords": 190,
+      "finderRecords": 172,
+      "calculatedOrders": 0,
+      "caloriesOnlyRecords": 0,
+      "partialMacroRecords": 0,
+      "sourceRetrievalIsVerification": false,
+      "limitations": "Quick France official menu. French source product names are preserved; English site navigation is a separate language choice. Source snapshots do not establish a complete live menu, stock at every branch, full ingredient formulation or allergen safety."
+    },
+    {
+      "id": "IN|mcdonald-s-north-east-india",
+      "country": "IN",
+      "restaurantBrand": "McDonald’s North & East India",
+      "restaurantId": "mcdonald-s-north-east-india",
+      "localOperatingEntity": "Connaught Plaza Restaurants Private Limited",
+      "officialCountryWebsite": "https://mcdindia.com/",
+      "localMenuSource": "https://mcdindia.com/",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://mcdindia.com/nutritional-information/",
+        "evidenceType": "current official country or explicitly regional operating resource",
+        "observation": "Official nutrition page footer identifies Connaught Plaza Restaurants Private Limited as McDonald’s licensee in North & East India.",
+        "checkedAt": "2026-10-17"
+      },
+      "nutritionSources": [
+        "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf"
+      ],
+      "lastCheckedDate": "2026-10-17",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "nutritionSourceStatus": "reviewed-selection",
+      "finderSupported": true,
+      "trackedRecords": 82,
+      "completeMacroRecords": 82,
+      "finderRecords": 71,
+      "calculatedOrders": 0,
+      "caloriesOnlyRecords": 0,
+      "partialMacroRecords": 0,
+      "sourceRetrievalIsVerification": false,
+      "limitations": "North & East India only: Connaught Plaza Restaurants Private Limited. No West/South India franchise equivalence. This regional scope must remain visible on cards, finder rows, directories and country home. Source snapshots do not establish a complete live menu, stock at every branch, full ingredient formulation or allergen safety."
+    },
+    {
+      "id": "SG|burger-king",
+      "country": "SG",
+      "restaurantBrand": "Burger King",
+      "restaurantId": "burger-king",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://burgerking.com.sg/",
+      "localMenuSource": "https://burgerking.com.sg/",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://burgerking.com.sg/Locator",
+        "evidenceType": "current official country or explicitly regional operating resource",
+        "observation": "Official Singapore restaurant locator is available from the locally scoped menu site.",
+        "checkedAt": "2026-10-17"
+      },
+      "nutritionSources": [
+        "https://burgerking.com.sg/Menu/Category/1",
+        "https://burgerking.com.sg/Menu/Category/11",
+        "https://burgerking.com.sg/Menu/Category/2",
+        "https://burgerking.com.sg/Menu/Category/3",
+        "https://burgerking.com.sg/Menu/Category/4",
+        "https://burgerking.com.sg/Menu/Category/5",
+        "https://burgerking.com.sg/Menu/Category/7",
+        "https://burgerking.com.sg/Menu/Category/8",
+        "https://burgerking.com.sg/Menu/Category/9"
+      ],
+      "lastCheckedDate": "2026-10-17",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "nutritionSourceStatus": "reviewed-selection",
+      "finderSupported": true,
+      "trackedRecords": 57,
+      "completeMacroRecords": 57,
+      "finderRecords": 41,
+      "calculatedOrders": 0,
+      "caloriesOnlyRecords": 0,
+      "partialMacroRecords": 0,
+      "sourceRetrievalIsVerification": false,
+      "limitations": "Burger King Singapore local menu. All nine linked category pages were captured; selected conflicting source rows withheld. Beverage 100ml reference entries remain reference amounts. Source snapshots do not establish a complete live menu, stock at every branch, full ingredient formulation or allergen safety."
+    },
+    {
+      "id": "ZA|debonairs-pizza",
+      "country": "ZA",
+      "restaurantBrand": "Debonairs Pizza",
+      "restaurantId": "debonairs-pizza",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://debonairspizza.co.za/",
+      "localMenuSource": "https://debonairspizza.co.za/",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+        "evidenceType": "current official country or explicitly regional operating resource",
+        "observation": "Official South African site publishes its own standard and halaal menu nutrition guide and local location-directory links.",
+        "checkedAt": "2026-10-17"
+      },
+      "nutritionSources": [
+        "https://debonairspizza.co.za/nutritional-and-allergen-guide/"
+      ],
+      "lastCheckedDate": "2026-10-17",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "nutritionSourceStatus": "reviewed-selection",
+      "finderSupported": true,
+      "trackedRecords": 160,
+      "completeMacroRecords": 160,
+      "finderRecords": 87,
+      "calculatedOrders": 0,
+      "caloriesOnlyRecords": 0,
+      "partialMacroRecords": 0,
+      "sourceRetrievalIsVerification": false,
+      "limitations": "Debonairs Pizza South Africa official standard/halaal source guide. Source variants and named sizes preserved; identical nutritional variants merged. Local legal franchisees are not inferred. Source snapshots do not establish a complete live menu, stock at every branch, full ingredient formulation or allergen safety."
+    }
+  ]
+}

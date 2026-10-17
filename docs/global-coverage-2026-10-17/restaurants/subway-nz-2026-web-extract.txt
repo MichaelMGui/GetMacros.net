@@ -1,0 +1,397 @@
+L0@P1: URL: https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf
+L1@P1: AVG QTY Per Serve Serving Size (g) Energy (kJ) Energy (kCal) Protein (g) Fat, Total (g) Sat. Fat (g) Carb. (g) Sugars (g) Dietary Fiber (g) Sodium (mg)
+L2@P1: Subway 6-Inch® Subs
+L3@P1: BBQ Southern Style Chicken
+L4@P1: (southern-style chicken bites, old English-style processed cheese, spinach, tomato,
+L5@P1: onion, pickle, smoky bbq sauce, toasted on Italian herbs & cheese bread)
+L6@P1: 229 1910 456 20.8 15.3 6.4 56.4 12.3 4.3 1320
+L7@P1: Chicken & Bacon Ranch
+L8@P1: (chicken strips, bacon, processed cheddar cheese, lettuce, tomato, carrot, onion, ranch
+L9@P1: dressing, toasted on white bread)
+L10@P1: 242 1770 422 26.2 17.7 5.3 39.7 5.9 3.7 878
+L11@P1: Chicken Classic
+L12@P1: (old English-style processed cheese, lettuce tomato, cucumber, onion, garlic aioli,
+L13@P1: toasted on Italian herbs & cheese bread)
+L14@P1: 248 2010 481 22.2 22.1 6.2 45.6 6.7 3.8 1240
+L15@P1: Chicken Strips
+L16@P1: (processed cheddar cheese, lettuce, tomato, cucumber, carrot, mayonnaise on wheat
+L17@P1: bread)
+L18@P1: 236 1410 336 25.0 8.1 3.1 40.6 6.8 4.5 764
+L19@P1: Chipotle Steak Melt
+L20@P1: (diced steak, old English-style processed cheese, spinach, capsicum, onion, pickle,
+L21@P1: chipotle sauce, toasted on Italian herbs & cheese bread)
+L22@P1: 205 2020 483 26.9 22.6 6.9 41.1 5.3 2.9 1280
+L23@P1: Honey Mustard Leg Ham
+L24@P1: (processed cheddar cheese, lettuce, tomato, cucumber, carrot, honey mustard on
+L25@P1: malted rye bread)
+L26@P1: 228 1530 366 20.8 9.2 3.1 47.6 9.7 5.6 1040
+L27@P1: Italian B.M.T.®
+L28@P1: (salami, pepperoni, leg ham, mozzarella cheese, lettuce, tomato, onion, capsicum, olive,
+L29@P1: mayonnaise on Italian herbs & cheese bread)
+L30@P1: 236 1980 474 25.7 21.2 9.0 43.3 7.0 3.2 1380
+L31@P1: Italian Meatball
+L32@P1: (beef meatball in marinara sauce, mozzarella cheese, spinach, tomato, onion, olive,
+L33@P1: garlic aioli, toasted on Italian herbs & cheese bread)
+L34@P1: 291 2140 513 24.5 21.3 7.4 51.2 10.6 5.1 1220
+L35@P1: Philly-Style Three-Cheese Steak
+L36@P1: (diced steak, processed cheddar cheese, old English-style processed cheese, mozzarella
+L37@P1: cheese, capsicum, onion, jalapeno pepper, garlic aioli toasted on white bread)
+L38@P1: 207 2050 491 30.7 22.0 8.9 40.0 5.6 2.9 1270
+L39@P1: Pizza Melt
+L40@P1: (salami, pepperoni, mozzarella cheese, olive, tomato, capsicum, onion, marinara sauce,
+L41@P1: toasted on Italian herbs & cheese bread)
+L42@P1: 201 1860 445 22.2 20.0 8.7 42.1 6.2 3.4 1150
+L43@P1: Pork Riblet
+L44@P1: (processed cheddar cheese, lettuce, tomato, onion, carrot, smoky bbq sauce on white
+L45@P1: bread)
+L46@P1: 246 2020 483 21.5 22.2 8.8 46.8 12.1 4.9 1060
+L47@P1: Roast Beef
+L48@P1: (processed cheddar cheese, lettuce, spinach, tomato, onion, mayonnaise on roasted
+L49@P1: garlic bread)
+L50@P1: 222 1490 356 19.3 8.2 3.2 48.3 9.4 3.0 1350
+L51@P1: Smashed Falafel
+L52@P1: (processed cheddar cheese, lettuce, spinach, tomato, onion, carrot, garlic aioli on wheat
+L53@P1: bread)
+L54@P1: 253 2010 481 17.6 17.6 3.8 57.9 9.9 7.7 1280
+L55@P1: Sweet Onion Chicken Teriyaki
+L56@P1: (chicken strips in teriyaki glaze, mozzarella cheese, spinach, tomato, cucumber, onion,
+L57@P1: capsicum, sweet onion sauce, toasted on white bread)
+L58@P1: 257 1600 382 26.6 7.1 3.0 53.0 15.8 3.6 847
+L59@P1: Three Pepper Chicken
+L60@P1: (old English-style processed cheese, lettuce, tomato, onion, carrot, garlic aioli, toasted
+L61@P1: on Italian herbs & cheese bread)
+L62@P1: 269 2250 537 25.5 23.2 5.7 54.5 7.1 3.9 1470
+L63@P1: Tuna Mayo
+L64@P1: (tuna in mayonnaise, processed cheddar cheese, lettuce, tomato, onion, pickle on wheat
+L65@P1: bread)
+L66@P1: 217 1350 322 20.6 7.5 2.8 41.2 6.9 3.6 796
+L67@P1: Veggie Delite® with Avo
+L68@P1: (processed cheddar cheese, lettuce, spinach, tomato, cucumber, onion, carrot on
+L69@P1: malted rye bread)
+L70@P1: 216 1500 359 15.0 13.0 3.3 44.8 5.0 8.1 514
+L71@P1: Veggie Patty
+L72@P1: (mozzarella cheese, lettuce, spinach, tomato, cucumber, onion, carrot, garlic aioli, sweet
+L73@P1: chilli, toasted on wheat bread)
+L74@P1: 306 2370 567 20.0 22.6 5.5 66.6 16.7 9.6 1030
+L75@P1: Wraps (on white flour wrap)
+L76@P1: BBQ Southern Style Chicken
+L77@P1: (southern-style chicken bites, old English-style processed cheese, spinach, tomato,
+L78@P1: onion, pickle, smoky bbq sauce)
+L79@P1: 221 1740 415 18.3 15.3 6.7 51.7 13.0 5.8 1150
+L80@P1: Double values for approximate Subway Footlong® sub nutrition
+L81@P1: values
+L82@P1: NEW ZEALAND NUTRITION INFORMATION
+L83@P1: May 2026AVG QTY Per Serve Serving Size (g) Energy (kJ) Energy (kCal) Protein (g) Fat, Total (g) Sat. Fat (g) Carb. (g) Sugars (g) Dietary Fiber (g) Sodium (mg)
+L84@P2: Chicken & Bacon Ranch
+L85@P2: (chicken strips, bacon, processed cheddar cheese, lettuce, tomato, carrot, onion, ranch
+L86@P2: dressing)
+L87@P2: 245 1750 419 25.7 20.1 7.2 37.0 6.9 5.6 912
+L88@P2: Chicken Classic
+L89@P2: (old English-style processed cheese, lettuce, tomato, cucumber, onion, garlic aioli)
+L90@P2: 239 1840 440 19.7 22.1 6.5 40.8 7.5 5.3 1070
+L91@P2: Chicken Strips
+L92@P2: (processed cheddar cheese, lettuce, tomato, cucumber, carrot, mayonnaise)
+L93@P2: 237 1400 334 24.4 10.6 5.0 38.2 7.9 5.5 766
+L94@P2: Chipotle Steak Melt
+L95@P2: (diced steak, old English-style processed cheese, spinach, capsicum, onion, pickle,
+L96@P2: chipotle sauce)
+L97@P2: 197 1850 442 24.4 22.5 7.2 36.3 6.1 4.4 1110
+L98@P2: Honey Mustard Leg Ham
+L99@P2: (processed cheddar cheese, lettuce, tomato, cucumber, carrot, honey mustard)
+L100@P2: 219 1320 315 17.1 9.1 4.6 42.4 10.8 4.6 952
+L101@P2: Italian B.M.T.®
+L102@P2: (salami, pepperoni, leg ham, mozzarella cheese, lettuce, tomato, onion, capsicum, olive,
+L103@P2: mayonnaise)
+L104@P2: 228 1810 432 23.2 21.2 9.4 38.5 7.7 4.7 1210
+L105@P2: Italian Meatball
+L106@P2: (beef meatball in marinara sauce, mozzarella cheese, spinach, tomato, onion, olive,
+L107@P2: garlic aioli)
+L108@P2: 282 1970 471 22.0 21.3 7.8 46.5 11.3 6.6 1050
+L109@P2: Pizza Melt
+L110@P2: (salami, pepperoni, mozzarella cheese, olive, tomato, capsicum, onion, marinara sauce)
+L111@P2: 193 1690 403 19.7 19.9 9.0 37.3 6.9 4.9 980
+L112@P2: Pork Riblet
+L113@P2: (processed cheddar cheese, lettuce, tomato, onion, carrot, smoky bbq sauce)
+L114@P2: 249 2010 480 21.0 24.6 10.7 44.2 13.2 6.8 1090
+L115@P2: Roast Beef
+L116@P2: (processed cheddar cheese, lettuce, spinach, tomato, onion, honey mustard)
+L117@P2: 220 1380 329 18.5 9.5 4.9 42.9 10.9 4.7 774
+L118@P2: Smashed Falafel
+L119@P2: (processed cheddar cheese, lettuce, spinach, tomato, onion, carrot, garlic aioli)
+L120@P2: 254 2000 478 17.0 20.0 5.7 55.5 10.9 8.7 1280
+L121@P2: Sweet Onion Chicken Teriyaki
+L122@P2: (chicken strips in teriyaki glaze, mozzarella cheese, spinach, tomato, cucumber, onion,
+L123@P2: capsicum, sweet onion sauce)
+L124@P2: 260 1590 379 26.1 9.4 4.9 50.4 16.8 5.5 881
+L125@P2: Three Pepper Chicken
+L126@P2: (old English-style processed cheese, lettuce, tomato, onion, carrot, garlic aioli)
+L127@P2: 260 2070 496 23.0 23.1 6.1 49.7 7.9 5.4 1300
+L128@P2: Tuna Mayo
+L129@P2: (tuna in mayonnaise, processed cheddar cheese, lettuce, tomato, onion, pickle)
+L130@P2: 218 1340 320 20.1 9.9 4.7 38.8 8.0 4.6 798
+L131@P2: Veggie Delite® with Avo
+L132@P2: (processed cheddar cheese, lettuce, spinach, tomato, cucumber, onion, carrot)
+L133@P2: 207 1290 308 11.3 13.0 4.8 39.6 6.1 7.1 423
+L134@P2: Veggie Patty
+L135@P2: (mozzarella cheese, lettuce, spinach, tomato, cucumber, onion, carrot, garlic aioli, sweet
+L136@P2: chilli)
+L137@P2: 307 2360 565 19.4 25.0 7.4 64.2 17.8 10.6 1040
+L138@P2: BBQ Southern Style Chicken
+L139@P2: (southern-style chicken bites, old English-style processed cheese, smoky bbq sauce)
+L140@P2: 272 1030 245 12.5 11.3 4.6 22.0 12.1 3.7 800
+L141@P2: Chicken & Bacon Ranch
+L142@P2: (chicken strips, bacon, processed cheddar cheese, ranch dressing)
+L143@P2: 285 1030 247 19.8 16.0 5.1 6.9 5.2 3.3 680
+L144@P2: Chicken Classic
+L145@P2: (old English-style processed cheese, garlic aioli)
+L146@P2: 272 1120 268 13.8 18.0 4.3 10.8 5.9 3.1 840
+L147@P2: Chicken Strips
+L148@P2: (processed cheddar cheese, mayonnaise )
+L149@P2: 270 679 162 18.6 6.5 2.8 8.2 6.2 3.3 533
+L150@P2: Chipotle Steak Melt
+L151@P2: (diced steak, old English-style processed cheese, chipotle sauce)
+L152@P2: 276 1160 277 18.9 18.5 5.1 7.4 5.9 2.5 765
+L153@P2: Honey Mustard Leg Ham
+L154@P2: (processed cheddar cheese, honey mustard)
+L155@P2: 252 598 143 11.3 5.1 2.5 12.3 9.2 2.4 719
+L156@P2: Italian B.M.T.®
+L157@P2: (salami, pepperoni, leg ham, mozzarella cheese, mayonnaise)
+L158@P2: 265 1080 258 17.4 16.9 7.2 8.5 6.2 2.4 960
+L159@P2: Italian Meatball
+L160@P2: (beef meatball in marinara sauce, mozzarella cheese, garlic aioli)
+L161@P2: 340 1250 299 16.2 17.0 5.6 16.8 10.3 4.5 792
+L162@P2: Pizza Melt
+L163@P2: (salami, pepperoni, mozzarella cheese, marinara sauce)
+L164@P2: 251 969 231 14.1 15.6 6.8 7.7 5.8 2.9 728
+L165@P2: Pork Riblet
+L166@P2: (processed cheddar cheese, smoky bbq sauce)
+L167@P2: 289 1290 308 15.1 20.5 8.6 14.1 11.5 4.5 860
+L168@P2: Roast Beef
+L169@P2: (processed cheddar cheese, mayonnaise)
+L170@P2: 254 623 149 12.4 6.3 2.9 8.8 6.7 2.4 526
+L171@P2: Smashed Falafel
+L172@P2: (mozzarella cheese, garlic aioli )
+L173@P2: 290 1280 306 12.4 15.6 3.6 24.6 9.0 6.2 980
+L174@P2: Sweet Onion Chicken Teriyaki
+L175@P2: (chicken strips in teriyaki glaze, mozzarella cheese, sweet onion sauce)
+L176@P2: 300 869 208 20.1 5.4 2.7 20.2 15.4 3.3 650
+L177@P2: Salads (regular with lettuce, spinach, tomato, cucumber, capsicum, onion, carrot, olive)AVG QTY Per Serve Serving Size (g) Energy (kJ) Energy (kCal) Protein (g) Fat, Total (g) Sat. Fat (g) Carb. (g) Sugars (g) Dietary Fiber (g) Sodium (mg)
+L178@P3: Three Pepper Chicken
+L179@P3: (old English-style processed cheese, garlic aioli)
+L180@P3: 300 1350 323 17.2 19.1 3.9 19.6 6.2 3.1 1070
+L181@P3: Tuna Mayo
+L182@P3: (tuna in mayonnaise, processed cheddar cheese)
+L183@P3: 255 623 149 14.3 5.8 2.5 8.9 6.6 2.4 456
+L184@P3: Veggie Delite® with Avo
+L185@P3: (processed cheddar cheese)
+L186@P3: 226 551 132 5.2 8.9 2.7 8.8 4.2 4.5 185
+L187@P3: Veggie Patty
+L188@P3: (mozzarella cheese, garlic aioli, sweet chilli)
+L189@P3: 326 1630 389 13.2 21.0 5.2 33.4 15.8 8.0 798
+L190@P3: BBQ Southern Style Chicken
+L191@P3: (southern-style chicken bites, old English-style processed cheese, smoky bbq sauce)
+L192@P3: 445 1990 477 24.1 22.4 9.1 42.2 22.2 6.1 1590
+L193@P3: Chicken & Bacon Ranch
+L194@P3: (chicken strips, bacon, processed cheddar cheese, ranch dressing)
+L195@P3: 470 2010 479 38.8 31.9 10.1 12.1 8.5 5.4 1350
+L196@P3: Chicken Classic
+L197@P3: (old English-style processed cheese, garlic aioli)
+L198@P3: 445 2180 522 26.8 35.9 8.7 19.7 9.8 5.1 1670
+L199@P3: Chicken Strips
+L200@P3: (processed cheddar cheese, mayonnaise )
+L201@P3: 441 1300 311 36.2 12.9 5.6 14.6 10.5 5.4 1060
+L202@P3: Chipotle Steak Melt
+L203@P3: (diced steak, old English-style processed cheese, chipotle sauce)
+L204@P3: 453 2260 540 36.8 37.0 10.1 12.9 9.8 3.9 1520
+L205@P3: Honey Mustard Leg Ham
+L206@P3: (processed cheddar cheese, honey mustard)
+L207@P3: 405 1140 272 21.7 10.0 5.0 22.9 16.3 3.6 1430
+L208@P3: Italian B.M.T.®
+L209@P3: (salami, pepperoni, leg ham, mozzarella cheese, mayonnaise)
+L210@P3: 430 2100 501 33.8 33.6 14.3 15.2 10.4 3.6 1900
+L211@P3: Italian Meatball
+L212@P3: (beef meatball in marinara sauce, mozzarella cheese, garlic aioli)
+L213@P3: 580 2450 585 31.5 33.8 11.1 31.9 18.7 7.8 1570
+L214@P3: Pizza Melt
+L215@P3: (salami, pepperoni, mozzarella cheese, marinara sauce)
+L216@P3: 402 1880 449 27.2 31.1 13.7 13.6 9.6 4.6 1450
+L217@P3: Pork Riblet
+L218@P3: (processed cheddar cheese, smoky bbq sauce)
+L219@P3: 479 2520 602 29.4 40.9 17.1 26.4 21.0 7.7 1710
+L220@P3: Roast Beef
+L221@P3: (processed cheddar cheese, mayonnaise) 409 1190 284 23.9 12.6 5.8 15.8 11.4 3.6 1040
+L222@P3: Smashed Falafel
+L223@P3: (mozzarella cheese, garlic aioli )
+L224@P3: 480 2500 598 23.9 31.1 7.1 47.5 16.1 11.2 1950
+L225@P3: Sweet Onion Chicken Teriyaki
+L226@P3: (chicken strips in teriyaki glaze, mozzarella cheese, sweet onion sauce)
+L227@P3: 500 1680 402 39.3 10.6 5.4 38.6 28.9 5.4 1290
+L228@P3: Three Pepper Chicken
+L229@P3: (old English-style processed cheese, garlic aioli)
+L230@P3: 501 2650 633 33.5 38.1 7.8 37.4 10.4 5.1 2120
+L231@P3: Tuna Mayo
+L232@P3: (tuna in mayonnaise, processed cheddar cheese)
+L233@P3: 411 1190 284 27.6 11.5 5.0 16.1 11.2 3.6 902
+L234@P3: Veggie Delite® with Avo
+L235@P3: (processed cheddar cheese)
+L236@P3: 353 1040 249 9.5 17.7 5.3 15.8 6.4 7.9 360
+L237@P3: Veggie Patty
+L238@P3: (mozzarella cheese, garlic aioli, sweet chilli)
+L239@P3: 552 3200 764 25.6 41.8 10.5 65.0 29.6 14.9 1590
+L240@P3: Mini Subs
+L241@P3: Leg Ham 125 675 161 9.1 2.1 0.4 25.5 3.5 2.0 386
+L242@P3: Roast Beef 138 750 179 11.3 2.6 0.7 26.1 3.8 2.0 345
+L243@P3: Veggie Delite® with Avo 130 766 183 6.4 5.3 0.7 27.7 3.2 3.5 166
+L244@P3: Breakfast
+L245@P3: Subway 6-Inch® Subs
+L246@P3: Bacon, Egg & Cheese
+L247@P3: (bacon, lettuce, tomato, egg omelette, old English-style cheese, garlic aioli, toasted on
+L248@P3: white bread)
+L249@P3: 223 1780 425 19.1 20.5 6.0 39.5 5.8 3.2 855
+L250@P3: Classic Ham & Egg
+L251@P3: (leg ham, egg omelette, old English-style cheese, mayonnaise, toasted on white bread)
+L252@P3: 192 1560 373 24.4 12.9 4.8 38.7 5.3 2.0 1100
+L253@P3: Steak & Egg Brekkie
+L254@P3: (diced steak, egg omelette, mozzarella cheese, lettuce, tomato, onion, BBQ sauce,
+L255@P3: toasted on Italian herbs & cheese bread)
+L256@P3: 299 2110 503 36.0 17.2 7.8 48.3 12.4 3.1 1224
+L257@P3: Values include white bread, lettuce, spinach, tomato, cucumber,
+L258@P3: onion, capsicum
+L259@P3: Double values for approximate Subway Footlong® sub nutrition
+L260@P3: values
+L261@P3: Salads (large with lettuce, spinach, tomato, cucumber, capsicum, onion, carrot, olive)AVG QTY Per Serve Serving Size (g) Energy (kJ) Energy (kCal) Protein (g) Fat, Total (g) Sat. Fat (g) Carb. (g) Sugars (g) Dietary Fiber (g) Sodium (mg)
+L262@P4: Breakfast Wraps
+L263@P4: Mexican-Style Brekkie
+L264@P4: (leg ham, egg omelette, mozzarella cheese, avocado, tomato, onion, jalapeno pepper,
+L265@P4: chipotle sauce, toasted on regular white flour wrap)
+L266@P4: 285 2170 519 27.1 29.5 7.9 40.1 7.1 6.5 1140
+L267@P4: Spinach & Egg
+L268@P4: (egg omelette, mozzarella cheese, spinach, tomato, white flour wrap)
+L269@P4: 185 1330 318 18.7 12.7 6.1 33.9 4.8 4.3 487
+L270@P4: Sides & Snacks
+L271@P4: Smashed Avo on Toast (on white bread) 137 1310 312 9.7 12.6 1.5 42.2 2.7 6.1 239
+L272@P4: Creamy Garlic Cheese Bread
+L273@P4: (mozzarella cheese, garlic aioli, parmesan oregano topping on white bread)
+L274@P4: 123 1540 368 16.4 15.0 5.4 39.9 4.1 2.7 747
+L275@P4: Chipotle Quesadilla
+L276@P4: (mozzarella cheese, chipotle southwest sauce on white flour wrap)
+L277@P4: 94.0 1120 268 9.8 17.0 5.1 19.9 3.6 2.3 400
+L278@P4: Creamy Garlic Herb Bread
+L279@P4: (garlic aioli, parmesan oregano topping on white bread)
+L280@P4: 93.0 1180 281 8.4 9.1 1.1 39.9 4.1 2.7 600
+L281@P4: Ham, Cheese & Tomato Toastie
+L282@P4: (mozzarella cheese, mayonnaise on white bread)
+L283@P4: 127 1040 248 13.8 6.4 2.7 32.5 4.7 1.8 568
+L284@P4: Meatball Mozza Pot
+L285@P4: (beef meatballs in marinara sauce, mozarella cheese)
+L286@P4: 194 1060 254 109.7 12.2 5.4 14.6 7.6 2.2 746
+L287@P4: Nachos
+L288@P4: (Doritos® Cheese Supreme Corn Chips, mozzarella cheese, avocado, jalapeno pepper,
+L289@P4: Mexican salsa)
+L290@P4: 133 1600 383 12.5 23.0 5.9 31.9 2.1 4.5 593
+L291@P4: Nachos with Chicken Strips
+L292@P4: (Doritos® Cheese Supreme Corn Chips, mozzarella cheese, avocado, jalapeno pepper,
+L293@P4: Mexican salsa)
+L294@P4: 197 1890 452 26.9 24.7 6.5 32.6 2.6 5.4 862
+L295@P4: Nachos with Diced Steak
+L296@P4: (Doritos® Cheese Supreme Corn Chips, mozzarella cheese, avocado, jalapeno pepper,
+L297@P4: Mexican salsa)
+L298@P4: 197 2040 487 27.0 27.5 8.0 32.6 2.6 4.5 952
+L299@P4: Southern Style Chicken Bites (no sauce) 120 1140 272 16.3 15.1 4.8 16.8 1.3 1.9 674
+L300@P4: Southern Style Chicken Bites (with spicy mayo) 135 1440 344 16.5 22.4 5.4 18.5 2.7 2.0 826
+L301@P4: Cookies
+L302@P4: Chocolate Chip Cookie 45.0 932 223 2.3 10.7 6.0 29.4 18.5 1.0 137
+L303@P4: Chocolate Chip Cookie with M&M'S® 45.0 894 214 2.2 9.9 5.3 28.8 17.3 0.9 120
+L304@P4: Double Chocolate Chip Cookie 45.0 881 211 2.2 9.3 5.7 29.4 19.3 1.1 150
+L305@P4: Oatmeal Raisin Cookie 45.0 796 190 2.5 6.9 3.4 29.3 17.5 1.4 176
+L306@P4: White Chip Macadamia Nut Cookie 45.0 933 223 2.2 11.2 6.0 28.3 18.4 0.7 153
+L307@P4: Baked Goods
+L308@P4: Apple & Custard Danish 115 1420 338 6.1 15.5 9.1 42.5 13.9 0.0 357
+L309@P4: Apricot & Custard Danish 115 1380 329 5.6 14.8 8.6 42.2 14.3 0.0 344
+L310@P4: Boysenberry & Custard Danish 115 1420 338 5.9 36.2 9.1 43.1 13.2 0.0 337
+L311@P4: Smoothies
+L312@P4: Blueberry and Mango 425 931 223 2.1 0.6 0.2 55.7 38.6 4.0 2.0
+L313@P4: Mango 480 754 180 1.6 0.8 0.2 44.8 42.4 3.2 2.2
+L314@P4: Mixed Berry Banana 480 844 202 1.9 0.7 0.1 36.2 36.2 5.3 2.2
+L315@P4: Strawberry 425 785 188 2.2 0.6 0.2 46.6 24.2 4.2 26.0
+L316@P4: Tropical 480 829 198 1.7 0.6 0.2 50.4 39.8 3.9 2.1
+L317@P4: Breads
+L318@P4: Subway 6-Inch® Wheat Bread 69.0 814 195 7.5 2.1 0.3 35.0 2.6 2.7 271
+L319@P4: Subway 6-Inch® White Bread 67.0 817 195 7.4 2.1 0.3 35.2 2.7 1.8 239
+L320@P4: Subway 6-Inch® Malted Rye Bread 79.0 1020 244 10.6 4.5 0.7 37.8 2.6 4.7 364
+L321@P4: Subway 6-Inch® Italian Herbs & Cheese Bread 78.4 977 234 9.4 4.5 1.9 37.3 3.0 2.2 444
+L322@P4: Subway 6-Inch® Roasted Garlic Bread 77.6 954 228 7.9 2.3 0.4 42.2 5.1 2.1 867
+L323@P4: Mini Wheat Bread 46.0 542 130 5.0 1.4 0.2 23.3 1.7 1.8 181
+L324@P4: Mini White Bread 44.7 545 130 5.0 1.4 0.2 23.5 1.8 1.2 159
+L325@P4: Wrap, Flour 70.0 804 192 6.9 4.5 2.2 32.6 3.7 3.7 273
+L326@P4: Wrap, Gluten Free * 80.0 537 128 4.1 5.1 3.0 23.0 3.4 11.4 414
+L327@P4: Meat, Poultry, Egg, Seafood & Vegetarian Items
+L328@P4: Bacon, Streaky (2 strips) 8.8 150 35.8 1.0 3.5 1.3 0.1 0.1 0.0 73
+L329@P4: Chicken Classic 60.0 529 126 9.5 8.0 1.7 3.3 0.4 0.0 390
+L330@P4: Chicken Pepperoni Meats (chicken strips, pepperoni) 82.0 582 139 18.5 7.5 2.9 1.2 0.7 0.9 539
+L331@P4: Chicken Strips 64.0 285 68.2 14.4 1.7 0.6 0.6 0.5 0.9 269
+L332@P4: Chicken Teriyaki 85.0 421 101 14.5 1.8 0.6 8.0 4.8 0.9 463
+L333@P4: Deli Supreme Meats (salami, pepperoni, leg ham, roast beef) 72.0 750 180 14.5 12.8 5.1 1.9 1.0 0.0 850
+L334@P4: Egg Omelette 59.0 326 77.8 7.5 5.3 1.8 0.2 0.2 0.0 139
+L335@P4: Italian B.M.T. ® Meats (salami, pepperoni, leg ham) 56.0 680 161.9 11.7 12.3 4.9 1.5 0.7 0.0 760
+L336@P4: Amount on Subway 6-Inch® Sub, wrap, regular salad
+L337@P4: Selected locations only
+L338@P4: Availability of flavours vary at locationsAVG QTY Per Serve Serving Size (g) Energy (kJ) Energy (kCal) Protein (g) Fat, Total (g) Sat. Fat (g) Carb. (g) Sugars (g) Dietary Fiber (g) Sodium (mg)
+L339@P5: Leg Ham 40.0 167 39.9 7.0 1.2 0.4 0.6 0.6 0.0 440
+L340@P5: Meatball (beef) with Marinara Sauce 125 654 156 10.4 7.2 3.0 9.8 5.1 1.5 476
+L341@P5: Pepperoni 18.0 297 71.0 4.1 5.9 2.3 0.6 0.2 0.0 270
+L342@P5: Pizza Melt Meats (salami, pepperoni) 36.0 590 142.0 8.2 11.7 4.7 1.2 0.4 0.0 540
+L343@P5: Pork Riblet 77.0 832 199 10.9 16.9 6.5 0.5 0.2 1.9 465
+L344@P5: Roast Beef 48.0 229 54.8 8.3 1.5 0.7 1.2 1.0 0.0 261
+L345@P5: Salami 18.0 297 71.0 4.1 5.9 2.3 0.6 0.2 0.0 270
+L346@P5: Smashed Falafel 75.0 682 163 6.6 5.9 1.0 17.6 3.8 3.2 662
+L347@P5: Southern Style Chicken Bites 60.0 568 136 8.2 7.6 2.4 8.4 0.7 1.0 337
+L348@P5: Steak, Diced 64.0 435 104 14.5 4.5 2.0 0.6 0.5 0.0 358
+L349@P5: Three Pepper Chicken 88.0 760 182 12.8 9.1 1.2 12.1 0.7 0.0 616
+L350@P5: Tuna & Mayo (with Mayonnaise) 64.0 315 75.3 10.2 2.2 0.4 3.6 2.4 0.0 271
+L351@P5: Veggie Patty 90.0 860 205.6 7.4 11.1 2.6 16.8 1.9 5.0 302
+L352@P5: Sauces & Dressings
+L353@P5: Chipotle Southwest Sauce 21.0 416 99.4 0.3 10.4 0.9 1.5 1.1 0.0 148
+L354@P5: Garlic Aioli 21.0 284 67.9 0.3 6.4 0.5 2.2 1.2 0.6 197
+L355@P5: Habanero Hot Sauce 15.0 82.5 19.7 0.1 0.0 0.0 4.6 3.7 0.1 320
+L356@P5: Honey Mustard 21.0 124 29.6 0.3 0.3 0.0 6.5 4.4 0.0 94.5
+L357@P5: Marinara 21.0 59.9 14.3 0.3 0.5 0.1 1.8 1.4 0.5 70.4
+L358@P5: Mayonnaise 15.0 86.1 20.6 0.1 1.2 0.2 2.3 1.5 0.0 79.5
+L359@P5: Mexican Salsa 21.0 35.7 8.4 0.3 0.0 0.0 1.5 0.8 0.0 115
+L360@P5: Ranch Dressing 21.0 290 69.3 0.4 7.2 1.2 0.9 0.4 0.0 153
+L361@P5: Smoky BBQ Sauce 21.0 149 35.7 0.3 0.0 0.0 8.4 7.2 0.1 210
+L362@P5: Spicy Mayonnaise 15.0 303 72.4 0.2 7.3 0.6 1.6 1.4 0.2 148
+L363@P5: Sweet Chili Sauce 21.0 169 40.4 0.1 0.1 0.0 9.6 8.7 0.0 181
+L364@P5: Sweet Onion Sauce 21.0 134 32.1 0.1 0.2 0.0 7.4 6.6 0.0 69.1
+L365@P5: Cheeses
+L366@P5: Mozzarella Cheese (shredded) 14.0 169 40.4 3.7 2.8 2.0 0.0 0.0 0.0 68.6
+L367@P5: Old English-Style Processed Cheese (slices) 11.3 163 38.9 2.3 3.1 2.1 0.5 0.3 0.1 203
+L368@P5: Processed Cheddar Cheese (slices) 11.3 162 38.6 2.3 3.1 2.0 0.5 0.2 0.0 136
+L369@P5: Philly-Style Three-Cheese (mozzarella, processed cheddar, old English-style processed cheeses) 36.6 493 118 8.3 9.0 6.0 1.0 0.5 0.1 408
+L370@P5: Vegetables
+L371@P5: Avocado 35.0 244 58.3 1.2 5.3 0.6 3.5 0.0 2.1 0.0
+L372@P5: Capsicum (3 strips) 7.0 5.9 1.4 0.1 0.0 0.0 0.2 0.2 0.1 0.2
+L373@P5: Carrot 7.0 12.0 2.9 0.1 0.0 0.0 0.5 0.3 0.2 4.8
+L374@P5: Cucumber (3 slices) 14.0 8.8 2.1 0.1 0.0 0.0 0.4 0.2 0.1 0.3
+L375@P5: Jalapeno Pepper (3 rings) 4.0 6.7 1.6 0.1 0.0 0.0 0.2 0.2 0.1 67.6
+L376@P5: Lettuce 21.0 12.3 2.9 0.2 0.0 0.0 0.4 0.4 0.3 2.1
+L377@P5: Onion 7.0 11.7 2.8 0.1 0.0 0.0 0.5 0.3 0.1 0.3
+L378@P5: Olive (3 rings) 3.0 16.1 3.8 0.0 0.3 0.1 0.2 0.0 0.1 26.4
+L379@P5: Pickle (3 wheels) 9.5 5.9 1.4 0.0 0.0 0.0 0.2 0.0 0.1 114
+L380@P5: Pineapple (Selected Locations Only) 20.0 68.0 16.3 0.1 0.0 0.0 3.7 3.7 0.0 0.6
+L381@P5: Spinach 7.0 6.4 1.5 0.2 0.0 0.0 0.2 0.0 0.2 5.5
+L382@P5: Tomato (3 wheels) 35.0 26.4 6.3 0.3 0.1 0.0 0.9 0.9 0.4 1.8
+L383@P5: Toppings
+L384@P5: Doritos® Cheese Supreme Flavoured Corn Chips 45.0 981 234 3.5 12.2 1.4 26.6 1.0 2.2 274
+L385@P5: Seasonings
+L386@P5: Pepper 1.0 12.1 2.9 0.1 0.0 0.0 0.4 0.0 0.0 0.25
+L387@P5: Salt 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 391
+L388@P5: Amount on Subway 6-Inch® Sub, wrap, regular salad
+L389@P5: * Our gluten free products are manufactured in a gluten free facility. However, other menu items and ingredients in our restaurants contain gluten. Although we take steps to reduce
+L390@P5: the chances of cross contamination, we prepare our items on shared equipment so we cannot guarantee our menu items are gluten free. If you have food allergies, sensitivities or
+L391@P5: special dietary needs, please visit our website – www.subway.com.nz for more information.
+L392@P5: Amount on Subway 6-Inch® Sub, wrap, regular salad
+L393@P5: Nutrition information compiled using nutrition analysis from approved food manufacturers, independent laboratories and the USDA National Nutrient Database for Standard Reference.
+L394@P5: The nutrition information listed here is based on standard recipes and product formulations, however slight variations may occur due to the season of the year, use of an alternate
+L395@P5: supplier, region of the country and/or small differences in product assembly.
+L396@P5: Amount on nachos snack

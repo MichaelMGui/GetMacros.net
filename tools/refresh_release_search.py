@@ -16,7 +16,7 @@ def run():
   if route in seen or re.search(r'<meta\s+name="robots"[^>]*content="[^"]*noindex',page):
    edits.append((n['start'],n['end'],''));continue
   seen.add(route);retained+=1
-  country=re.match(r'^(ca|mx|gb|ie|au|nz|jp)/en/',route)
+  country=re.match(r'^([a-z]{2})/en/',route)
   market=country[1].upper() if country else 'US' if 'data-market-scope="US"' in page else ''
   fragment='<a class="search-hit"'+(' data-market="'+market+'"' if market else '')+' href="'+escape(n['attrs']['href'],quote=True)+'" data-search="'+escape(title+' '+meta+' '+h1,quote=True)+'"><span class="search-hit-name">'+escape(h1)+'</span><span class="search-hit-copy">'+escape(meta)+'</span></a>'
   edits.append((n['start'],n['end'],fragment))

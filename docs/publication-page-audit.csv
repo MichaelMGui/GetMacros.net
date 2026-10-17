@@ -1,74 +1,401 @@
 page,type,visible_words,external_sources,disposition,follow_up
-404.html,directory / publisher,44,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-about.html,directory / publisher,122,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-accessibility.html,guide,237,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-are-diet-drinks-bad-for-you.html,guide,1354,10,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-articles.html,directory / publisher,462,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-best-fast-food-restaurants-for-your-goals.html,guide,748,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-blog.html,directory / publisher,195,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-body-recomposition-explained.html,guide,422,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-budget-meal-builder.html,directory / publisher,343,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-calculators.html,tool,329,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-calories-on-rest-days.html,directory / publisher,723,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+404.html,directory / publisher,42,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+about.html,directory / publisher,121,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+accessibility.html,guide,249,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+added-sugar-percentage-from-grams.html,guide,363,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+arbys-breakfast-bread-format.html,guide,495,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+arbys-nutrition-guide.html,tool,2409,56,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+arbys-roast-beef-cheddar-french-dip.html,guide,477,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+arbys-sliders-count-whole-tray.html,guide,473,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+are-diet-drinks-bad-for-you.html,guide,1338,10,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+articles.html,directory / publisher,5042,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+as-packaged-vs-prepared-nutrition.html,guide,436,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+best-fast-food-restaurants-for-your-goals.html,guide,762,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+blog.html,directory / publisher,163,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+body-recomposition-explained.html,guide,632,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+breakfast-bacon-format-sodium-cross-chain.html,guide,509,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+breakfast-dataset-not-opening-hours.html,guide,621,10,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+breakfast-drinks-and-add-ons.html,guide,477,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+breakfast-food-vs-combo-menu.html,guide,373,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+breakfast-sandwich-half-not-half-protein.html,guide,371,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+breakfast-two-items-not-one-entry.html,guide,379,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+breakfast-yogurt-topping-layer.html,guide,355,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+budget-meal-builder.html,directory / publisher,337,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+burger-variants-not-nine-base-burgers.html,guide,550,10,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+burrito-wrap-cross-chain-no-size-standard.html,guide,500,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculate-macros-mixed-bowl.html,guide,454,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculator-activity-choice-sensitivity.html,guide,343,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculator-height-feet-inches-not-decimal.html,guide,384,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculator-input-basis-checklist.html,guide,366,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculator-positive-inputs-zero-nutrition.html,guide,341,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculator-pound-kilogram-entry.html,guide,360,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculator-round-at-end.html,guide,346,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calculators.html,tool,374,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+calorie-range-menu-reading.html,guide,378,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calorie-tool-output-reverse-check.html,guide,324,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calorie-units-kcal-kilojoules.html,guide,505,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calories-in-multi-serving-packages.html,guide,431,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+calories-on-rest-days.html,directory / publisher,679,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
 calories-vs-macros-what-matters-more.html,guide,1525,7,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-can-you-build-muscle-in-a-calorie-deficit.html,directory / publisher,509,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+can-you-build-muscle-in-a-calorie-deficit.html,directory / publisher,483,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+canada-pepperoni-pizza-three-slice-comparison.html,guide,427,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
 carbohydrate-label-portion-tool.html,tool,220,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-carbs.html,guide,428,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-cava-healthy-meals-macros.html,tool,728,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-chick-fil-a-healthy-meals-macros.html,tool,858,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-chipotle-healthy-meals-macros.html,tool,924,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-contact.html,tool,126,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-corrections.html,guide,407,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-cutting-bulking-maintenance-explained.html,guide,424,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-does-creatine-cause-hair-loss.html,guide,1180,8,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-dunkin-healthy-breakfast-macros.html,tool,658,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-editorial-policy.html,guide,343,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-fats.html,guide,452,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-healthy-fast-food.html,directory / publisher,987,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-high-protein-foods-list.html,directory / publisher,778,25,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-how-many-calories-should-i-eat-a-day.html,guide,561,2,Retained; worked example added,Recheck source freshness before changing any nutrient/date
-how-much-fiber-per-day.html,guide,437,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-how-much-protein-can-your-body-absorb.html,guide,1377,8,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-how-much-protein-per-day.html,guide,442,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-how-much-sodium-per-day.html,guide,440,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-how-to-build-a-balanced-meal-with-macros.html,directory / publisher,567,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-how-to-calculate-macros-by-hand.html,guide,441,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-how-to-calculate-maintenance-calories.html,directory / publisher,565,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-how-to-calculate-recipe-nutrition.html,guide,514,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-how-to-eat-out-without-wrecking-your-goal.html,guide,612,2,Retained; worked example added,Recheck source freshness before changing any nutrient/date
-how-to-hit-protein-goal-on-budget.html,directory / publisher,730,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-how-to-read-a-nutrition-label.html,guide,651,4,Retained; worked example added,Recheck source freshness before changing any nutrient/date
-index.html,tool,481,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-jersey-mikes-healthy-subs-macros.html,tool,781,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-kfc-healthy-meals-macros.html,tool,711,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-macros-for-muscle-gain.html,guide,461,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-macros-for-weight-loss.html,guide,455,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-mcdonalds-healthy-meals-macros.html,tool,684,6,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-nutrition-label-comparison-tool.html,tool,185,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-panda-express-healthy-meals-macros.html,tool,853,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-panera-healthy-meals-macros.html,tool,768,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-popeyes-healthy-meals-macros.html,tool,670,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-privacy.html,guide,370,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-protein-value-calculator.html,directory / publisher,196,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-protein.html,guide,415,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+carbs.html,guide,436,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+cava-healthy-meals-macros.html,tool,874,9,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+chick-fil-a-healthy-meals-macros.html,tool,1033,17,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+chick-fil-a-vs-popeyes-chicken.html,guide,421,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+chipotle-healthy-meals-macros.html,tool,1545,16,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+chipotle-rice-beans-nutrition.html,guide,418,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+chipotle-toppings-nutrition.html,guide,476,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+chipotle-vs-cava-chicken-bowls.html,guide,520,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+choose-fooddata-central-entry.html,guide,380,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+compare-complete-restaurant-orders.html,guide,679,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+compare-foods.html,tool,207,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+compare-menu-ingredients-worldwide.html,directory / publisher,125,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+contact.html,tool,106,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+corrections.html,guide,410,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+cross-chain-bean-burritos-serving-proof.html,guide,466,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+cross-chain-breakfast-ham-formats.html,guide,504,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+cross-chain-chicken-soup-no-sodium-assumption.html,guide,459,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+cross-chain-melt-sandwich-orders.html,guide,472,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+culvers-chicken-grilled-crispy-spicy.html,guide,445,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+culvers-dinner-name-side-footnote.html,guide,488,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+culvers-nutrition-guide.html,tool,1573,26,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+cutting-bulking-maintenance-explained.html,guide,432,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+del-taco-bean-burrito-vs-veggie-burrito.html,guide,477,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+del-taco-nutrition-guide.html,tool,2439,63,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+del-taco-two-street-tacos-vs-burrito.html,guide,458,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+diet-patterns-evidence.html,directory / publisher,548,5,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+does-creatine-cause-hair-loss.html,guide,1176,8,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+drained-weight-nutrition-label.html,guide,460,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+dunkin-healthy-breakfast-macros.html,tool,584,9,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+edible-portion-vs-purchased-weight.html,guide,425,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+editorial-policy.html,guide,346,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+el-pollo-loco-bowls-protein-bigger-build.html,guide,456,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+el-pollo-loco-nutrition-guide.html,tool,1129,30,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+el-pollo-loco-salad-dressing-boundary.html,guide,478,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+el-pollo-loco-tortilla-complete-chicken-meal.html,guide,444,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+equal-calories-different-macros-menu.html,guide,521,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+equal-tax-protein-value-ranking.html,guide,433,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+exact-fiber-coverage-denominator.html,guide,677,10,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fast-food-breakfast-protein-comparison.html,guide,746,6,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fast-food-fiber-and-protein.html,guide,1206,9,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fast-food-meals-500-to-700-calories.html,guide,788,7,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fast-food-nutrition-data-report.html,guide,3855,184,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fast-food-protein-and-sodium.html,guide,1350,16,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fast-food-under-1000mg-sodium.html,guide,711,10,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fat-and-carb-two-energy-profiles.html,guide,481,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fats.html,guide,460,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fiber-count-menu-not-plant-score.html,guide,568,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fiber-daily-value-portion-example.html,guide,370,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+fiber-per-portion-vs-density.html,guide,372,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+food-diary.html,tool,353,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+food-library-sources.html,directory / publisher,572,11,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+food-library.html,tool,164,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+food-shelf.html,directory / publisher,133,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+grams-per-serving-vs-protein-percentage.html,guide,380,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+grams-vs-milliliters-nutrition-labels.html,guide,616,5,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+greggs-sausage-roll-vs-vegan-roll-nutrition.html,guide,413,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+grilled-and-blackened-chicken-comparison.html,guide,690,5,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+grocery-food-coverage.html,directory / publisher,807,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+guzman-y-gomez-australia-chicken-bowl-vs-burrito.html,guide,436,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+half-serving-percent-daily-value.html,guide,374,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+harveys-original-angus-veggie-burger-comparison.html,guide,395,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+healthy-fast-food.html,directory / publisher,1285,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+high-protein-fast-food-under-500-calories.html,guide,976,11,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+high-protein-foods-list.html,directory / publisher,768,25,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+how-many-calories-should-i-eat-a-day.html,guide,569,2,Retained; worked example added,Recheck source freshness before changing any nutrient/date
+how-much-fiber-per-day.html,guide,445,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+how-much-protein-can-your-body-absorb.html,guide,1374,8,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+how-much-protein-per-day.html,guide,450,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+how-much-sodium-per-day.html,guide,448,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+how-to-build-a-balanced-meal-with-macros.html,directory / publisher,519,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+how-to-calculate-macros-by-hand.html,guide,449,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+how-to-calculate-maintenance-calories.html,directory / publisher,703,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+how-to-calculate-recipe-nutrition.html,guide,849,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+how-to-eat-out-without-wrecking-your-goal.html,guide,620,2,Retained; worked example added,Recheck source freshness before changing any nutrient/date
+how-to-hit-protein-goal-on-budget.html,directory / publisher,925,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+how-to-log-food-portions.html,directory / publisher,528,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+how-to-read-a-nutrition-label.html,guide,889,5,Retained; worked example added,Recheck source freshness before changing any nutrient/date
+in-n-out-double-vs-two-hamburgers.html,guide,416,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+in-n-out-nutrition-guide.html,tool,893,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+in-n-out-three-published-hamburger-versions.html,guide,441,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+index.html,tool,476,6,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+international-menu-data-coverage-explained.html,guide,427,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+jersey-mikes-healthy-subs-macros.html,tool,609,9,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+kfc-healthy-meals-macros.html,tool,618,10,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+kirkland-canada-macadamia-vs-mixed-nuts.html,guide,497,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+macros-for-muscle-gain.html,guide,469,4,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+macros-for-weight-loss.html,guide,463,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+mary-browns-big-mary-fries-vs-taters.html,guide,466,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+mcdonalds-healthy-meals-macros.html,tool,617,16,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+meal-calculation-two-serving-units.html,guide,372,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+meal-filters-intersection-not-extra-options.html,guide,344,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+menu-average-chain-weighting.html,guide,569,10,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+menu-pdf-filename-not-edition-date.html,guide,503,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+milligram-microgram-mineral-label.html,guide,372,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+missing-restaurant-nutrition.html,guide,483,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+net-carbs-total-carbohydrate.html,guide,369,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+new-york-fries-canada-fries-vs-poutine.html,guide,429,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+noodles-and-company-nutrition-guide.html,tool,1365,25,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+noodles-mac-protein-not-simple-add-on.html,guide,480,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+noodles-regular-noodle-orders-not-addons.html,guide,476,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+noodles-two-chicken-salads.html,guide,442,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+nutrient-grams-not-food-weight.html,guide,410,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+nutrition-blank-vs-not-detected.html,guide,405,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+nutrition-data-mean-not-every-portion.html,guide,384,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+nutrition-label-comparison-tool.html,tool,198,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+nutrition-label-rounding.html,guide,452,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+nutrition-totals-not-ingredient-recipe.html,guide,478,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+offline.html,directory / publisher,27,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+panda-express-base-nutrition-comparison.html,guide,425,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+panda-express-chicken-entree-comparison.html,guide,409,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+panda-express-healthy-meals-macros.html,tool,1854,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+panda-express-mushroom-and-orange-chicken-portions.html,directory / publisher,302,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+panera-healthy-meals-macros.html,tool,763,10,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+per-ounce-vs-per-100g-food.html,guide,412,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+percent-daily-value-not-vertical-total.html,guide,380,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+percentage-points-vs-percent-food-labels.html,guide,357,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+plant-name-not-fiber-number.html,guide,370,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+play-bean-balance.html,directory / publisher,115,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-berry-bounce.html,directory / publisher,115,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-build-a-plate.html,directory / publisher,130,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-claim-check.html,directory / publisher,136,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-description-detective.html,directory / publisher,115,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-fiber-trail.html,directory / publisher,134,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-food-crossword.html,directory / publisher,114,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-food-factory.html,directory / publisher,128,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-fruit-catch.html,directory / publisher,112,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-garden-glide.html,directory / publisher,113,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-garden-pipes.html,directory / publisher,118,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-harvest-conveyor.html,directory / publisher,136,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-ingredient-anagrams.html,directory / publisher,112,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-ingredient-order.html,directory / publisher,131,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-kitchen-connections.html,directory / publisher,118,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-kitchen-rhythm.html,directory / publisher,113,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-label-matchmaker.html,directory / publisher,134,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-lunchbox-logic.html,directory / publisher,113,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-macro-grid.html,directory / publisher,135,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-market-budget.html,directory / publisher,111,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-market-memory.html,directory / publisher,123,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-mascot-maker.html,directory / publisher,118,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-menu-mystery.html,directory / publisher,143,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-menu-word-hunt.html,directory / publisher,117,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-missing-number-kitchen.html,directory / publisher,131,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-nutrition-term-match.html,directory / publisher,131,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-odd-ingredient-out.html,directory / publisher,118,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-orange-orbit.html,directory / publisher,113,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-orchard-nonogram.html,directory / publisher,116,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-order-recall.html,directory / publisher,114,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-pantry-pack.html,directory / publisher,117,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-pantry-peek.html,directory / publisher,118,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-picnic-delivery.html,directory / publisher,113,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-picnic-planner.html,directory / publisher,116,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-plate-art.html,directory / publisher,120,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-portion-balance.html,directory / publisher,129,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-portion-fractions.html,directory / publisher,131,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-protein-target-puzzle.html,directory / publisher,133,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-range-finder.html,directory / publisher,131,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-recipe-dominoes.html,directory / publisher,133,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-recipe-path.html,directory / publisher,112,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-recipe-remix.html,directory / publisher,112,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-restaurant-order-builder.html,directory / publisher,143,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-restaurant-route.html,directory / publisher,131,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-rounding-room.html,directory / publisher,137,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-sandwich-architect.html,directory / publisher,110,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-sequence-chef.html,directory / publisher,118,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-serving-size-detective.html,directory / publisher,137,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-silhouette-supper.html,directory / publisher,116,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-smoothie-studio.html,directory / publisher,116,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-snack-slide.html,directory / publisher,120,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-sodium-sort.html,directory / publisher,131,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-source-sleuth.html,directory / publisher,118,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-spot-the-swap.html,directory / publisher,114,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-tabletop-tangram.html,directory / publisher,125,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play-trade-off-table.html,directory / publisher,133,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+play.html,directory / publisher,898,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+popeyes-healthy-meals-macros.html,tool,735,9,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+portion-ratio-vs-percent-change.html,guide,356,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+privacy.html,guide,907,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-chicken-sandwich-size-cross-chain.html,guide,490,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-cost-currency-comparison.html,guide,363,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-cost-food-waste.html,guide,458,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-cost-pack-size-minimum-spend.html,guide,353,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-density-fast-food.html,guide,1016,8,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-label-blank-daily-value.html,guide,399,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-per-package-not-scoop-count.html,guide,374,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-powder-scoop-weight.html,guide,419,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-serving-count-day-not-prescription.html,guide,373,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-sort-vs-portion-mass.html,guide,520,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-target-gap-not-automatic-extra.html,guide,381,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-value-after-fixed-delivery-fee.html,guide,361,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein-value-calculator.html,directory / publisher,290,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+protein-value-price-range-overlap.html,guide,443,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+protein.html,guide,423,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+published-vs-calculated-restaurant-rows.html,guide,719,11,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+qdoba-burrito-bowl-published-pair.html,guide,423,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+qdoba-nutrition-guide.html,tool,800,17,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+qdoba-vegan-bowl-fiber-tradeoff.html,guide,431,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+raising-canes-build-order-not-combo-name.html,guide,548,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+raising-canes-nutrition-guide.html,tool,801,6,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+raw-vs-cooked-food-weight.html,guide,707,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+read-and-watch.html,directory / publisher,250,6,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+recipe-added-water-not-new-nutrients.html,guide,357,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-combined-batches-not-average-serving.html,guide,361,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-discrete-pieces-count-or-weight.html,guide,350,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-evaporation-weight-density.html,guide,353,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-fixed-seasoning-scale.html,guide,363,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-freezing-portion-count.html,guide,353,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-left-in-pan-residual.html,guide,363,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
 recipe-macro-scaler.html,directory / publisher,212,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-restaurant-meal-finder.html,tool,1760,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-restaurant-meal-guides.html,directory / publisher,131,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-search.html,directory / publisher,2071,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-serving-size-vs-portion-size.html,guide,691,2,Retained; worked example added,Recheck source freshness before changing any nutrient/date
-sodium-label-comparison-tool.html,tool,235,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-sources.html,guide,568,19,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-starbucks-healthy-food-meals-macros.html,tool,835,5,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-subway-healthy-meals-macros.html,tool,754,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+recipe-one-ingredient-substitution.html,guide,345,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-quarter-batch-not-quarter-ingredient.html,guide,326,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-recalculate-new-product-label.html,guide,356,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-repeated-ingredient-two-label-bases.html,guide,366,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-sauce-made-vs-sauce-used.html,guide,363,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-sauce-on-side-two-totals.html,guide,369,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-target-batch-portions-integer.html,guide,357,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+recipe-uniform-vs-component-serving.html,guide,359,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-bowl-nutrition-comparison.html,guide,1020,5,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-compare-tradeoff-not-single-score.html,guide,365,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-dominated-choice-still-context.html,guide,358,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-meal-finder.html,tool,5573,84,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+restaurant-meal-guides.html,directory / publisher,771,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+restaurant-menu-serving-weight.html,guide,392,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-protein-cost-receipt-prices.html,guide,440,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-protein-value-no-price-data.html,guide,357,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-search-result-count-scope.html,guide,326,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+restaurant-value-your-nutrient-not-protein.html,guide,446,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+salad-burger-calories-no-category-rule.html,guide,514,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+same-restaurant-name-different-market-data.html,guide,568,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+saved-meal-source-version-check.html,guide,633,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+search.html,directory / publisher,9064,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+serving-size-vs-portion-size.html,guide,690,2,Retained; worked example added,Recheck source freshness before changing any nutrient/date
+sodium-label-comparison-tool.html,tool,233,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+sodium-milligrams-to-grams.html,guide,375,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+sonic-hot-dog-sodium-toppings.html,guide,489,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+sonic-nutrition-guide.html,tool,2919,50,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+sonic-small-burgers-not-same-order.html,guide,482,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+sonic-ultimate-breakfast-not-extra-protein-rule.html,guide,467,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+sources.html,guide,891,19,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+starbucks-healthy-food-meals-macros.html,tool,874,14,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+subway-healthy-meals-macros.html,tool,666,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+subway-mexico-chicken-sandwich-comparison.html,guide,412,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+subway-turkey-breast-canada-vs-mexico.html,guide,441,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+sugar-lines-do-not-add.html,guide,373,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
 sweat-rate-calculator.html,tool,246,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-sweetgreen-healthy-meals-macros.html,tool,730,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-taco-bell-healthy-meals-macros.html,tool,651,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-terms.html,guide,325,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+sweetgreen-healthy-meals-macros.html,tool,682,10,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+sweetgreen-vs-panera-chicken-salads.html,guide,402,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+taco-bell-healthy-meals-macros.html,tool,636,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+taco-johns-bowl-base-tradeoff.html,guide,450,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+taco-johns-breakfast-taco-vs-burrito.html,guide,494,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+taco-johns-nutrition-guide.html,tool,4463,125,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+taco-johns-small-fiber-bound.html,guide,515,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+tare-bowl-before-weighing-food.html,guide,374,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+terms.html,guide,328,0,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+three-count-tacos-not-three-equal-meals.html,guide,489,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+tim-hortons-canada-protein-latte-vs-latte.html,guide,463,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+two-fiber-sources-one-bowl.html,guide,376,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+two-for-one-protein-promotion.html,guide,364,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+two-meal-total-not-day-recommendation.html,guide,401,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+two-person-restaurant-budget-constraints.html,guide,434,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+unequal-recipe-portions.html,guide,445,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+use-calorie-target-meal-finder.html,guide,441,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+vegetarian-fast-food-protein-comparison.html,guide,909,8,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+vegetarian-label-not-allergen-safety.html,guide,337,1,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+weigh-food-by-container-difference.html,guide,379,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
 weight-goal-timeline-calculator.html,tool,250,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-wendys-healthy-meals-macros.html,tool,686,5,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-what-are-macros.html,guide,398,2,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
-what-is-a-calorie-deficit.html,directory / publisher,514,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-what-to-eat-after-a-workout.html,directory / publisher,670,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-what-to-eat-before-a-workout.html,directory / publisher,724,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-when-to-recalculate-calories-and-macros.html,directory / publisher,496,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
-why-did-i-gain-weight-overnight.html,directory / publisher,657,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+wendys-healthy-meals-macros.html,tool,609,14,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+what-are-macros.html,guide,591,3,"Retained; source body preserved, layout rebuilt",Recheck source freshness before changing any nutrient/date
+what-is-a-calorie-deficit.html,directory / publisher,482,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+what-to-eat-after-a-workout.html,directory / publisher,638,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+what-to-eat-before-a-workout.html,directory / publisher,701,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+when-to-recalculate-calories-and-macros.html,directory / publisher,464,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+why-did-i-gain-weight-overnight.html,directory / publisher,623,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+world-restaurant-menus.html,directory / publisher,265,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,483,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,2237,84,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,102,6,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,310,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,286,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,5750,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,453,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,1995,84,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,287,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,422,28,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,468,16,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,489,18,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,296,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,733,32,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1071,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1497,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,482,20,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1297,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1078,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,816,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,746,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,629,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1866,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,599,25,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1097,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,189,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,209,3,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,469,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,2146,84,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,48,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,275,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,323,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,3993,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,432,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,1999,72,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,124,6,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,324,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,280,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,5474,271,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,2165,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,2134,66,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,464,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,2177,72,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,93,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,285,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,293,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,2361,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,2133,66,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,501,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,2155,72,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,52,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,91,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,311,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1598,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,464,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,1992,60,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,95,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,242,12,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,291,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,3483,206,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,3139,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,420,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,2024,84,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,117,8,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,271,11,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,302,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,2262,2,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,401,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,1988,84,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,83,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,168,6,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,308,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,296,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,3524,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,425,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,1991,84,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,49,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,234,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,300,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,1095,9,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,583,4,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,tool,2513,82,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,50,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,355,0,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,324,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality
+index.html,directory / publisher,3992,1,"Retained; source body preserved, layout rebuilt",Maintain tool/data functionality

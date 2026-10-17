@@ -1,0 +1,227 @@
+{
+  "pass": true,
+  "recordsInspected": 446810,
+  "byMarket": {
+    "US": 445703,
+    "NZ": 1107
+  },
+  "brandCount": 38412,
+  "brandCountsByMarket": {
+    "US": 38055,
+    "NZ": 372
+  },
+  "brandCountsValidatedAgainstEveryRecord": true,
+  "brandCountsMode": "per-market",
+  "nutrientUnknownsPreserved": 8112914,
+  "normalizedServingUnits": {
+    "g": 386903,
+    "ml": 59907
+  },
+  "sourceRawServingUnits": {
+    "GRM": 108099,
+    "MLT": 16921,
+    "g": 278804,
+    "ml": 42986
+  },
+  "sourceVersionGroups": 424903,
+  "groupsWithMultipleActualSourceRows": 21204,
+  "availableSourceHistoryReferences": 446810,
+  "unavailableSourceHistoryReferencesWithoutInventedNutrients": 1311203,
+  "metadataRowsInspected": 446810,
+  "postingsInspected": {
+    "tokens": 4138234,
+    "barcodes": 436803
+  },
+  "allMarketPostingsCoverExactlyAllRecords": true,
+  "allDataPartitionsGzip": true,
+  "representativeRecords": {
+    "grams": {
+      "id": "branded:usda:2716826",
+      "name": "Angie's BOOMCHICKAPOP Cinnabon Bakery Inspired Cinnamon Roll Flavored Drizzled Kettle Corn, 4.5 oz.",
+      "brand": "Angie's BOOMCHICKAPOP",
+      "sourceServing": {
+        "amount": 31,
+        "unit": "g",
+        "rawUnit": "GRM",
+        "label": "1 1/4 cups (31g)"
+      },
+      "basis": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "nutrients": {
+        "cal": 548,
+        "p": 3.23,
+        "c": 67.7,
+        "fat": 29.0,
+        "f": 3.2,
+        "na": 226,
+        "sugar": 41.9,
+        "sat": 9.68,
+        "chol": 0.0,
+        "calcium": 0.0,
+        "iron": 0.0,
+        "magnesium": null,
+        "phosphorus": null,
+        "potassium": 0.0,
+        "zinc": null,
+        "selenium": null,
+        "vitaminC": 0.0,
+        "thiamin": null,
+        "riboflavin": null,
+        "niacin": null,
+        "vitaminB6": null,
+        "folate": null,
+        "folateDFE": null,
+        "vitaminB12": null,
+        "vitaminA": 0.0,
+        "vitaminD": 0.0,
+        "vitaminE": null,
+        "vitaminK": null,
+        "monoFat": 16.1,
+        "polyFat": 1.61
+      }
+    },
+    "gs1Grams": {
+      "id": "branded:usda:2716826",
+      "name": "Angie's BOOMCHICKAPOP Cinnabon Bakery Inspired Cinnamon Roll Flavored Drizzled Kettle Corn, 4.5 oz.",
+      "brand": "Angie's BOOMCHICKAPOP",
+      "sourceServing": {
+        "amount": 31,
+        "unit": "g",
+        "rawUnit": "GRM",
+        "label": "1 1/4 cups (31g)"
+      },
+      "basis": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "nutrients": {
+        "cal": 548,
+        "p": 3.23,
+        "c": 67.7,
+        "fat": 29.0,
+        "f": 3.2,
+        "na": 226,
+        "sugar": 41.9,
+        "sat": 9.68,
+        "chol": 0.0,
+        "calcium": 0.0,
+        "iron": 0.0,
+        "magnesium": null,
+        "phosphorus": null,
+        "potassium": 0.0,
+        "zinc": null,
+        "selenium": null,
+        "vitaminC": 0.0,
+        "thiamin": null,
+        "riboflavin": null,
+        "niacin": null,
+        "vitaminB6": null,
+        "folate": null,
+        "folateDFE": null,
+        "vitaminB12": null,
+        "vitaminA": 0.0,
+        "vitaminD": 0.0,
+        "vitaminE": null,
+        "vitaminK": null,
+        "monoFat": 16.1,
+        "polyFat": 1.61
+      }
+    },
+    "milliliters": {
+      "id": "branded:usda:2664314",
+      "name": "PINEAPPLE CHIA SEED DRINK, PINEAPPLE",
+      "brand": "RIO GRANDE FOODS",
+      "sourceServing": {
+        "amount": 290,
+        "unit": "ml",
+        "rawUnit": "MLT",
+        "label": "9.8 fl oz"
+      },
+      "basis": {
+        "amount": 1,
+        "unit": "serving"
+      },
+      "nutrients": {
+        "cal": 118.9,
+        "p": 0.0,
+        "c": 31.03,
+        "fat": 0.0,
+        "f": 0.0,
+        "na": 72.5,
+        "sugar": 29.0,
+        "sat": 0.0,
+        "chol": 0.0,
+        "calcium": 8.7,
+        "iron": 0.0,
+        "magnesium": null,
+        "phosphorus": null,
+        "potassium": 63.8,
+        "zinc": null,
+        "selenium": null,
+        "vitaminC": null,
+        "thiamin": null,
+        "riboflavin": null,
+        "niacin": null,
+        "vitaminB6": null,
+        "folate": null,
+        "folateDFE": null,
+        "vitaminB12": null,
+        "vitaminA": null,
+        "vitaminD": 0.0,
+        "vitaminE": null,
+        "vitaminK": null,
+        "monoFat": null,
+        "polyFat": null
+      }
+    },
+    "gs1Milliliters": {
+      "id": "branded:usda:2664314",
+      "name": "PINEAPPLE CHIA SEED DRINK, PINEAPPLE",
+      "brand": "RIO GRANDE FOODS",
+      "sourceServing": {
+        "amount": 290,
+        "unit": "ml",
+        "rawUnit": "MLT",
+        "label": "9.8 fl oz"
+      },
+      "basis": {
+        "amount": 1,
+        "unit": "serving"
+      },
+      "nutrients": {
+        "cal": 118.9,
+        "p": 0.0,
+        "c": 31.03,
+        "fat": 0.0,
+        "f": 0.0,
+        "na": 72.5,
+        "sugar": 29.0,
+        "sat": 0.0,
+        "chol": 0.0,
+        "calcium": 8.7,
+        "iron": 0.0,
+        "magnesium": null,
+        "phosphorus": null,
+        "potassium": 63.8,
+        "zinc": null,
+        "selenium": null,
+        "vitaminC": null,
+        "thiamin": null,
+        "riboflavin": null,
+        "niacin": null,
+        "vitaminB6": null,
+        "folate": null,
+        "folateDFE": null,
+        "vitaminB12": null,
+        "vitaminA": null,
+        "vitaminD": 0.0,
+        "vitaminE": null,
+        "vitaminK": null,
+        "monoFat": null,
+        "polyFat": null
+      }
+    }
+  }
+}

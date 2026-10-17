@@ -1,0 +1,220 @@
+[
+  {
+    "file": "quick-fr.pdf",
+    "url": "https://assets.quick.fr/Declaration_Nutritionnelle_au_09_JUIN_26_ec88e7a66b.pdf",
+    "finalUrl": "https://assets.quick.fr/Declaration_Nutritionnelle_au_09_JUIN_26_ec88e7a66b.pdf",
+    "retrievedAt": "2026-10-17",
+    "bytes": 1754828,
+    "sha256": "9c4130325ea47f90c542b6c8e98c559a28fb4e3bdbcc3ca4efcdf232133d128f",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "quick-fr-index.html",
+    "url": "https://www.quick.fr/",
+    "finalUrl": "https://www.quick.fr/",
+    "retrievedAt": "2026-10-17",
+    "bytes": 151137,
+    "sha256": "f1d96b4c8880d4b052f517ed2432cdc8773f6ea8de77b8eeecfbfc2af1675684",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-in-ne.pdf",
+    "url": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "finalUrl": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "retrievedAt": "2026-10-17",
+    "bytes": 567698,
+    "sha256": "5bd57038eb7c7ae994dd441e1106584c14ba66e1ce461044f7211c9420bc432c",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-in-ne-index.html",
+    "url": "https://mcdindia.com/nutritional-information/",
+    "finalUrl": "https://mcdindia.com/nutritional-information/",
+    "retrievedAt": "2026-10-17",
+    "bytes": 80731,
+    "sha256": "7f4666b084591f38226d8ad37c1a599072149825b4235594b575eb6fa7495203",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-in-ne-about.html",
+    "url": "https://mcdindia.com/about-us/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "steers-za-index.html",
+    "url": "https://steers.co.za/nutritional-guide/",
+    "finalUrl": "https://steers.co.za/nutritional-guide/",
+    "retrievedAt": "2026-10-17",
+    "bytes": 150238,
+    "sha256": "6d3cdae05e3ab5685ab18cb287920f913790ba537f199fede091f1f8ee542f1e",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-index.html",
+    "url": "https://burgerking.com.sg/",
+    "finalUrl": "https://burgerking.com.sg/",
+    "retrievedAt": "2026-10-17",
+    "bytes": 53069,
+    "sha256": "01be0bd6e68172ea420ecd78e751504676cd9ff4552f108ae9d05728cda6a5dd",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-sg-index.html",
+    "url": "https://www.mcdonalds.com.sg/nutrition-calculator",
+    "finalUrl": "https://www.mcdonalds.com.sg/nutrition-calculator",
+    "retrievedAt": "2026-10-17",
+    "bytes": 35100,
+    "sha256": "671a34a7eb0d5327036e518123ac8cab3e8f307eba69a44cf62b6ca65e0581e1",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-ae.pdf",
+    "url": "https://www.mcdonalds.com/content/dam/sites/ArabiaGWS/english/Feature-Callout/Desktop/AllergensGuide.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "quick-fr-current.pdf",
+    "url": "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf",
+    "finalUrl": "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf",
+    "retrievedAt": "2026-10-17",
+    "bytes": 775804,
+    "sha256": "6ae46b676615f306d500c52730030e7233395956d1f1526cccc7899694b60715",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-menu.html",
+    "url": "https://burgerking.com.sg/Menu",
+    "finalUrl": "https://burgerking.com.sg/Menu",
+    "retrievedAt": "2026-10-17",
+    "bytes": 61290,
+    "sha256": "a649abb22dfdbfa8ef4da5214483261acb80a3df2df3a9648e9af1fe5a1fd504",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-sg-calculator.js",
+    "url": "https://www.mcdonalds.com.sg/modules/custom/mcdonalds_nutrition_calculator/js/mcdonalds_nutrition_calculator.js?v=1",
+    "finalUrl": "https://www.mcdonalds.com.sg/modules/custom/mcdonalds_nutrition_calculator/js/mcdonalds_nutrition_calculator.js?v=1",
+    "retrievedAt": "2026-10-17",
+    "bytes": 1612,
+    "sha256": "5e983fe0872052eebfbaaf48024c8c81dba7519254ef31e118518bc3006e526f",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category1.html",
+    "url": "https://burgerking.com.sg/Menu/Category/1",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/1",
+    "retrievedAt": "2026-10-17",
+    "bytes": 74606,
+    "sha256": "bc4708b54ef48918a9558afa3e617a874a2e09446c4a433115e212cb1f521b88",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-sg-full-menu.html",
+    "url": "https://www.mcdonalds.com.sg/full-menu",
+    "finalUrl": "https://www.mcdonalds.com.sg/full-menu",
+    "retrievedAt": "2026-10-17",
+    "bytes": 95268,
+    "sha256": "a2ca7847ec1efbbadbdf95b508069bc81f1b7e7f2e30fe46f7b385c217481776",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "debonairs-za-index.html",
+    "url": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "finalUrl": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "retrievedAt": "2026-10-17",
+    "bytes": 1102038,
+    "sha256": "052b7833afc9b923743b5174274bc31f622f6047e74ea060af346c4dcb17717d",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category2.html",
+    "url": "https://burgerking.com.sg/Menu/Category/2",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/2",
+    "retrievedAt": "2026-10-17",
+    "bytes": 72204,
+    "sha256": "cb340e9015a413beec75eb8438983a908af030898ea4d6d2efdb65e47e328980",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category3.html",
+    "url": "https://burgerking.com.sg/Menu/Category/3",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/3",
+    "retrievedAt": "2026-10-17",
+    "bytes": 63140,
+    "sha256": "df4ed6a0283bbac52cf35305a2d4cc2b8a93c9b2ecfa7e2469dd4845c774f697",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category4.html",
+    "url": "https://burgerking.com.sg/Menu/Category/4",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  {
+    "file": "bk-sg-category5.html",
+    "url": "https://burgerking.com.sg/Menu/Category/5",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/5",
+    "retrievedAt": "2026-10-17",
+    "bytes": 93279,
+    "sha256": "057a43771466234c1bbcf174ce07e2280a8b77861186e4a011886e0b7f50bfa0",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category7.html",
+    "url": "https://burgerking.com.sg/Menu/Category/7",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/7",
+    "retrievedAt": "2026-10-17",
+    "bytes": 66813,
+    "sha256": "d8e1a3a785d34cee577ae60c4963c20958d69bcebe5af94aa4bd1f2df2e2aa8e",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category8.html",
+    "url": "https://burgerking.com.sg/Menu/Category/8",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/8",
+    "retrievedAt": "2026-10-17",
+    "bytes": 64365,
+    "sha256": "d56451390c3a69605cb6c10dd0288372b41537266639c439a9901fe8f0d810be",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category9.html",
+    "url": "https://burgerking.com.sg/Menu/Category/9",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/9",
+    "retrievedAt": "2026-10-17",
+    "bytes": 65715,
+    "sha256": "2b6eb3c2839d83994c54fe8688a565ae20639e19b35c9fc92a0e02010820197d",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-category11.html",
+    "url": "https://burgerking.com.sg/Menu/Category/11",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/11",
+    "retrievedAt": "2026-10-17",
+    "bytes": 63756,
+    "sha256": "5154622825798ed95f9a14dcc01e822c251caada14c5c481f312a9fb22b48301",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-item2.html",
+    "url": "https://burgerking.com.sg/Menu/Item/2",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "bk-sg-category4.html",
+    "url": "https://burgerking.com.sg/Menu/Category/4",
+    "finalUrl": "https://burgerking.com.sg/Menu/Category/4",
+    "retrievedAt": "2026-10-17",
+    "bytes": 72943,
+    "sha256": "2f786b543abdaa717e563f745568b78ae9ab74aa3127c554fd8b4ebd998b3768",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-sg-main.js",
+    "url": "https://burgerking.com.sg/Content/js/main.js",
+    "finalUrl": "https://burgerking.com.sg/Content/js/main.js",
+    "retrievedAt": "2026-10-17",
+    "bytes": 88061,
+    "sha256": "03c2e2751da23b70d31136daea1e63eca08e84b3abe5aec0f414fa1a7e17a827",
+    "retrievalIsVerification": false
+  }
+]

@@ -1,0 +1,28 @@
+# Native nutrition basis recovery — research only, 2026-10-17
+
+The first 245,359-profile TSV expansion is staged and verified independently of this investigation. No additional database file was downloaded for this research.
+
+## Official source choices and cost
+
+The [OFF published data-page source](https://raw.githubusercontent.com/openfoodfacts/openfoodfacts-web/main/lang/en/texts/data.html) links its nightly full JSONL export and explicitly links [openfoodfacts/product-database on Hugging Face](https://huggingface.co/datasets/openfoodfacts/product-database) as its simplified Parquet distribution. This establishes provider provenance; the similarly named third-party Canada subset is not used.
+
+| Source | Official route | Observed size / cost | Suitability |
+| --- | --- | --- | --- |
+| Daily complete JSONL | `https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz` | Current compressed size not established. Metadata-only HEAD could not leave the execution sandbox. No body read. Full JSONL expansion would be materially larger than its gzip and must be streamed. | Highest fidelity source, retaining nested nutrition sets and source/preparation details. A new acquisition needs measured headers, pinned source version/checksum and a bounded streaming plan. |
+| Provider-linked Parquet | [current food.parquet file](https://huggingface.co/datasets/openfoodfacts/product-database/blob/main/food.parquet) | Published current size **7.96 GB**; dataset total 8.03 GB. Current file page reports SHA-256 `f589c258256ab1e08c584270f4e10cc5dd921a3732c887bbbf7442f6e1b5365a`, revision `803f013`. This is metadata observed on the provider's linked host, not a locally verified download checksum. | Displayed schema includes `nutrition_data_per`, source codes, country tags, source modification time, nutrients, serving fields and quality-error tags. Native source 100 g/100 mL basis is therefore recoverable without requiring a named serving. The simplified schema must still be checked against real rows before ingestion. |
+| HF legacy JSONL mirror | [openfoodfacts/openfoodfacts-jsonl-export](https://huggingface.co/datasets/openfoodfacts/openfoodfacts-jsonl-export/tree/main) | Published 7.68 GB; repository shows three commits and old mirror activity. | Do not treat this mirror as the current daily release merely because it is on the official organization's account. Prefer the current linked Parquet or current static JSONL. |
+| Country-specific JSONL | No country JSONL route established from official published data-page links. | Unknown; no guessed URLs fetched. | Do not promise a small Canadian JSONL download without an official artifact and measured size. |
+
+The Parquet source page changed from a search-indexed older 4.27 GB file to the current 7.96 GB file; the older search result must not be used for acquisition planning. Future ingestion should pin a complete repository revision and resolve its exact byte size before reading data. A full file needs roughly 8 GB of network transfer plus temporary/staged output storage; an extracted JSON copy would add substantially more. The current bundle lacks PyArrow, DuckDB and fsspec, so column-level HTTP range reading would first need an appropriate available runtime/dependency and must not silently fall back to full downloads.
+
+## A bounded next investigation
+
+[Hugging Face's Parquet API](https://huggingface.co/docs/dataset-viewer/parquet) reports file URLs, byte sizes and whether conversion is partial. It warns that converted previews may stop at 5 GB; a viewer count or sample must not be mistaken for the complete dataset. First fetch only that small metadata response. If the exact provider Parquet can be read through HTTP ranges, inspect footer metadata to estimate compressed bytes for the required identity, country, nutrition-basis, nutrient, serving and quality columns before deciding on a full scan. No actual savings are claimed until those column sizes and range support are measured.
+
+The [HF filter endpoint](https://huggingface.co/docs/dataset-viewer/filter) supports bounded server-side result pages but documents simple scalar comparisons, not arbitrary nested-array membership or complete SQL. Because OFF countries are a list, it is not established that a documented single Canada filter can retrieve all rows. Paging millions of viewer rows is not a replacement for a licensed, versioned bulk acquisition.
+
+For a new source adapter, accept only explicit as-sold `100g` or `100ml` nutrition evidence, keep its exact field path/version, and preserve unknown nutrients. A 100 mL record can be represented as a named 100 mL nutrition-basis portion with no gram weight, or by explicit volume support in the runtime. Neither approach infers density or claims a physical serving size. Prepared sets, estimated nutrient sets and conflicting source definitions require their own explicit handling. Do not fuse old TSV values with a newer basis from an unrelated source version.
+
+The retained `off-explicit-basis-examples.json` already demonstrates the distinction with real Canadian source products: Coca-Cola Zero `06731906` reports an explicit `100g` basis and no named serving; Heinz Tomato Ketchup `0057000613280` reports `100ml` and no named serving. The earlier API probe omitted some provider quality fields, so these remain evidence examples rather than publication candidates. No product-by-product API crawling is proposed.
+
+The same ODbL/DbCL source separation, attribution and downloadable derivative/transformation obligations apply. Product imagery is outside this ingestion. Source labels and country tags remain community data, without a current-package or current-inventory verification claim.

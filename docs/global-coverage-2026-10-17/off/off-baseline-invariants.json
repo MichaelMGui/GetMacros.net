@@ -1,0 +1,39 @@
+{
+  "sourceSha256": "f72687ee8bc6522054fe69dbfda6b91902c16af1ec2e043cde27bc6c29ad8176",
+  "profileCount": 96451,
+  "markets": {
+    "AU": 1856,
+    "CA": 46950,
+    "GB": 24206,
+    "IE": 3975,
+    "JP": 192,
+    "MX": 1743,
+    "NZ": 423,
+    "US": 17106
+  },
+  "idAndFormulationSha256": "3c8a9b26e20e2e988579a29f4341c20f5d0dcc2043a64460edac1dc5ad4d74ce",
+  "method": "Reconstruct the original 2026-10-13 brand scope with unchanged legacy normalize from retained public source subset. Direct pre-integration expanded audit separately proved all96451productionIDs/formulations unchanged.",
+  "quarantinedSourceCodes": [
+    "0011110787934",
+    "0013764001978",
+    "0038000136016",
+    "0055742531664",
+    "0055742550009",
+    "0056200761142",
+    "0056200762170",
+    "0057000012694",
+    "0057000036355",
+    "0060383168094",
+    "0062639370657",
+    "0066200011604",
+    "00756396",
+    "0078742237855",
+    "0096619120291",
+    "0624913005541",
+    "0627733010801",
+    "0667888140688",
+    "0770338003805",
+    "0892565002847",
+    "19918044"
+  ]
+}

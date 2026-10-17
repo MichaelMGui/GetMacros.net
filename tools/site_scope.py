@@ -127,6 +127,8 @@ def decision_for(path: str) -> tuple[str, str]:
         return "CORE", "Directly supports healthy fast-food discovery, macro tools, or site trust."
     if path in GUIDE_PAGES:
         return "SUPPORT", "Focused practical guidance that explains or supports a core GetMacros task."
+    if path.startswith('fr/en/'):
+        return "SUPPORT", "Published France-market content in English, with reviewed local restaurant records; not an unreviewed French translation."
     if path.startswith("es/") or path.startswith("fr/"):
         return "REMOVE", "Partial translation footprint without equivalent translated tools and guides."
     return "REMOVE", "Outside the focused healthy-fast-food and macro-tools product, duplicative, or insufficiently distinctive."
@@ -157,6 +159,9 @@ def release_routes():
     routes.add('how-to-log-food-portions.html')
     routes.add('grocery-food-coverage.html')
     routes.add('compare-foods.html')
+    global_briefs=root/'docs/global-coverage-2026-10-17/restaurants/guide-briefs.json'
+    if global_briefs.exists():
+        routes.update(r['slug']+'.html' for r in json.loads(global_briefs.read_text(encoding='utf-8'))['briefs'] if r['market']=='US')
     clarity=root/'docs/clarity-release-2026-10-14/editorial-manifest.json'
     if clarity.exists():
         routes.update(r['route'].lstrip('/') for r in json.loads(clarity.read_text(encoding='utf-8'))['routes'])

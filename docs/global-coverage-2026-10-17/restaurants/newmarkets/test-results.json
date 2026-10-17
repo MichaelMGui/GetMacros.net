@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "testsRun": 15,
+  "failures": 0,
+  "errors": 0,
+  "records": 489,
+  "marketCounts": {
+    "FR": 190,
+    "IN": 82,
+    "SG": 57,
+    "ZA": 160
+  },
+  "finderEligible": {
+    "FR": 172,
+    "IN": 71,
+    "SG": 41,
+    "ZA": 87
+  }
+}

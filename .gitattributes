@@ -1,0 +1,10 @@
+# Preserve compressed data, assets and source captures byte-for-byte.
+*.gz binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+docs/global-coverage-2026-10-17/restaurants/** -text

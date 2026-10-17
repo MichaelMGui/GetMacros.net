@@ -1,0 +1,82 @@
+[
+  {
+    "source": "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf",
+    "name": "Macaroni Salad",
+    "page": 2,
+    "published": {
+      "cal": 110.0,
+      "fat": 9.0,
+      "sat": 1.0,
+      "na": 500.0,
+      "c": 21.0,
+      "f": 1.0,
+      "sugar": 3.0,
+      "p": 3.0
+    },
+    "screeningEstimate": 177.0,
+    "reason": "large internal energy/macronutrient discrepancy; no correction inferred"
+  },
+  {
+    "source": "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf",
+    "name": "Macaroni Salad",
+    "page": 2,
+    "published": {
+      "cal": 390.0,
+      "fat": 31.0,
+      "sat": 3.0,
+      "na": 1760.0,
+      "c": 75.0,
+      "f": 3.0,
+      "sugar": 11.0,
+      "p": 11.0
+    },
+    "screeningEstimate": 623.0,
+    "reason": "large internal energy/macronutrient discrepancy; no correction inferred"
+  },
+  {
+    "source": "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf",
+    "name": "Meatball Mozza Pot",
+    "page": 4,
+    "published": {
+      "kJ": 1060.0,
+      "cal": 254.0,
+      "p": 109.7,
+      "fat": 12.2,
+      "sat": 5.4,
+      "c": 14.6,
+      "sugar": 7.6,
+      "f": 2.2,
+      "na": 746.0
+    },
+    "screeningEstimate": 607.0,
+    "reason": "large internal energy/macronutrient discrepancy; no correction inferred"
+  },
+  {
+    "source": "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf",
+    "name": "Boysenberry & Custard Danish",
+    "page": 4,
+    "published": {
+      "kJ": 1420.0,
+      "cal": 338.0,
+      "p": 5.9,
+      "fat": 36.2,
+      "sat": 9.1,
+      "c": 43.1,
+      "sugar": 13.2,
+      "f": 0.0,
+      "na": 337.0
+    },
+    "screeningEstimate": 521.8,
+    "reason": "large internal energy/macronutrient discrepancy; no correction inferred"
+  },
+  {
+    "source": "https://media.subway.com/dam/urn:aaid:aem:246fd30f-0f78-4d1c-bd45-750bda1a695a/original/as/MEX%20Nutrition%20ENG%208.2026.pdf",
+    "name": "Ham and Cheese with Guacomole",
+    "reason": "same-edition official English and Spanish values disagree; no preferred value inferred"
+  },
+  {
+    "source": "https://media.subway.com/dam/urn:aaid:aem:246fd30f-0f78-4d1c-bd45-750bda1a695a/original/as/MEX%20Nutrition%20ENG%208.2026.pdf",
+    "name": "Golazo Kids Sub",
+    "reason": "same-edition official English and Spanish values disagree; no preferred value inferred"
+  }
+]

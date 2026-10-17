@@ -27,6 +27,7 @@ python3 tools/build_master_completion.py
 python3 tools/build_master_diary.py
 python3 tools/build_master_interface.py
 python3 tools/build_clarity_release.py
+python3 tools/build_global_coverage_release.py
 python3 tools/refresh_release_search.py
 python3 tools/stamp_assets.py
 python3 tools/validate_site.py

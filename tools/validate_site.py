@@ -223,7 +223,7 @@ def main() -> int:
                 errors.append(f"{path}: ad serving is paused but a loader remains")
             elif not ads_paused and (len(loaders) != 1 or not re.search(r'\basync\b', loaders[0]) or 'crossorigin="anonymous"' not in loaders[0]):
                 errors.append(f"{path}: expected one async AdSense loader in head with anonymous crossorigin")
-            localized=re.match(r'^(ca|mx|gb|ie|au|nz|jp)/en/',path)
+            localized=re.match(r'^([a-z]{2})/en/',path)
             market=localized[1].upper() if localized else None
             prefix='/'+localized[1]+'/en/' if localized else ''
             required_nav = (
@@ -348,7 +348,7 @@ def main() -> int:
     for path, (text, _) in pages.items():
         visible_text = re.sub(r"<(?:script|style)\b.*?</(?:script|style)>", " ", text, flags=re.I | re.S)
         visible_text = re.sub(r"<[^>]+>", " ", visible_text)
-        if not path.startswith('ca/en/') and path!='search.html' and re.search(r"\bfibre\b", visible_text, re.I):
+        if not re.match(r'^[a-z]{2}/en/',path) and path!='search.html' and re.search(r"\bfibre\b", visible_text, re.I):
             errors.append(f"{path}: visible copy must use the U.S. spelling 'fiber'")
 
     meals = parse_meals()

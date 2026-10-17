@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-17",
+  "newGrocerySourceProfiles": 558856,
+  "totalBrandedSourceProfiles": 692173,
+  "groceryProviders": {
+    "usda": {
+      "profiles": 446810,
+      "version": "17bc6d9894617254",
+      "markets": {
+        "US": 445703,
+        "NZ": 1107
+      },
+      "license": "CC0 1.0"
+    },
+    "off": {
+      "profiles": 245359,
+      "version": "270168ffab5263f9",
+      "markets": {
+        "AU": 9159,
+        "CA": 46950,
+        "GB": 67041,
+        "IE": 35223,
+        "JP": 3808,
+        "MX": 8057,
+        "NZ": 2352,
+        "US": 72769
+      },
+      "license": "ODbL 1.0"
+    },
+    "retailer-ca": {
+      "profiles": 4,
+      "version": "e80bb5c8e24e9a0a",
+      "markets": {
+        "CA": 4
+      },
+      "license": "GetMacros factual curation; third-party website/text/image rights not relicensed"
+    },
+    "cnf": {
+      "profiles": 5993,
+      "version": "36edf66196be49b0",
+      "markets": {
+        "CA-reference": 5993
+      },
+      "license": "Open Government Licence - Canada"
+    }
+  },
+  "generalReferenceProfiles": 13578,
+  "newRestaurantRecords": 1443,
+  "refreshedExistingRestaurantRecords": 17,
+  "totalRestaurantRecords": 3192,
+  "publishedMarkets": {
+    "US": {
+      "restaurantRecords": 638,
+      "restaurantBrands": 25,
+      "grocerySourceProfiles": 518472
+    },
+    "CA": {
+      "restaurantRecords": 513,
+      "restaurantBrands": 12,
+      "grocerySourceProfiles": 46954
+    },
+    "MX": {
+      "restaurantRecords": 100,
+      "restaurantBrands": 1,
+      "grocerySourceProfiles": 8057
+    },
+    "GB": {
+      "restaurantRecords": 456,
+      "restaurantBrands": 3,
+      "grocerySourceProfiles": 67041
+    },
+    "IE": {
+      "restaurantRecords": 194,
+      "restaurantBrands": 2,
+      "grocerySourceProfiles": 35223
+    },
+    "AU": {
+      "restaurantRecords": 249,
+      "restaurantBrands": 1,
+      "grocerySourceProfiles": 9159
+    },
+    "NZ": {
+      "restaurantRecords": 160,
+      "restaurantBrands": 1,
+      "grocerySourceProfiles": 3459
+    },
+    "JP": {
+      "restaurantRecords": 393,
+      "restaurantBrands": 2,
+      "grocerySourceProfiles": 3808
+    },
+    "FR": {
+      "restaurantRecords": 190,
+      "restaurantBrands": 1,
+      "grocerySourceProfiles": 0
+    },
+    "IN": {
+      "restaurantRecords": 82,
+      "restaurantBrands": 1,
+      "grocerySourceProfiles": 0
+    },
+    "SG": {
+      "restaurantRecords": 57,
+      "restaurantBrands": 1,
+      "grocerySourceProfiles": 0
+    },
+    "ZA": {
+      "restaurantRecords": 160,
+      "restaurantBrands": 1,
+      "grocerySourceProfiles": 0
+    }
+  },
+  "newComparisonGuides": 13,
+  "verification": {
+    "sourceIntegrity": "USDA and OFF full-source audits passed; imported packages are not independently label-verified",
+    "browser": "See browser-results.json and restaurants/newmarkets/browser-results.json for actual checks and screenshot paths",
+    "live": "Pending live verification; local build is not proof of deployment"
+  },
+  "remainingGaps": [
+    "No claim of every grocery item, retailer inventory or every fast-food menu.",
+    "USDA April2026 and OFF October13 snapshots retain dated source versions; current shelf availability is not established.",
+    "French product names are preserved; no reviewed French interface or French hreflang is claimed.",
+    "India coverage is McDonald’s North & East India only, not other franchise regions.",
+    "OFF records without an unambiguous gram/millilitre source serving and contradictory restaurant rows remain excluded.",
+    "No branded-grocery source partition is published for the four new restaurant markets; common reference foods and their local menu records remain usable.",
+    "Google indexing and search traffic have not been measured or guaranteed."
+  ]
+}

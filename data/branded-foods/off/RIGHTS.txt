@@ -7,3 +7,5 @@ The independently licensed USDA CC0, Canadian Nutrient File OGL, and factual ret
 Free machine-readable source subset: source-records.ndjson.gz. Free normalized export: records.ndjson.gz. Free normalized records and indexes: manifest.json and its named shards. Transformation algorithm: normalization.py. Retain these notices and share-alike requirements when redistributing this partition.
 
 No product imagery is included. Brand names identify products; no partnership or endorsement is implied. Country tags are community-reported; no live retail inventory or independent package verification is claimed.
+
+Expansion audited 2026-10-17 from retained 2026-10-13 snapshot. All brands in existing markets; no new retrieval or independent label verification claimed. Source carbohydrate definition is not changed or fiber-adjusted. Gzip JSON shards are directly downloadable; decompress as UTF-8 JSON.

@@ -1,0 +1,193 @@
+{
+  "pass": true,
+  "sourceVersion": "17bc6d9894617254",
+  "realNameQueries": 18,
+  "realBarcodeQueries": 18,
+  "countryIsolationCases": 25,
+  "unknownNutrientSnapshots": 18,
+  "actualGzipSourceRequests": 129,
+  "totalBytes": 16948822,
+  "totalRequests": 209,
+  "results": [
+    {
+      "label": "Publix",
+      "query": "Publix half",
+      "id": "branded:usda:2757603",
+      "nameHits": 9,
+      "barcodeHits": 2,
+      "bytes": 3710591,
+      "requests": 18,
+      "unknownFields": 23
+    },
+    {
+      "label": "Publix",
+      "query": "Publix deli cheese fresh mozzarella",
+      "id": "branded:usda:2756697",
+      "nameHits": 2,
+      "barcodeHits": 2,
+      "bytes": 1131367,
+      "requests": 11,
+      "unknownFields": 23
+    },
+    {
+      "label": "H-E-B",
+      "query": "H-E-B 14g protein nonfat greek yogurt",
+      "id": "branded:usda:2757918",
+      "nameHits": 1,
+      "barcodeHits": 3,
+      "bytes": 697050,
+      "requests": 20,
+      "unknownFields": 24
+    },
+    {
+      "label": "H-E-B",
+      "query": "H-E-B select ingredients large curd cottage",
+      "id": "branded:usda:2757910",
+      "nameHits": 1,
+      "barcodeHits": 3,
+      "bytes": 1682493,
+      "requests": 13,
+      "unknownFields": 24
+    },
+    {
+      "label": "Wegmans",
+      "query": "Wegmans sour cream",
+      "id": "branded:usda:2676147",
+      "nameHits": 17,
+      "barcodeHits": 1,
+      "bytes": 589894,
+      "requests": 19,
+      "unknownFields": 17
+    },
+    {
+      "label": "Wegmans",
+      "query": "Wegmans cilantro jalapeno hummus",
+      "id": "branded:usda:2676142",
+      "nameHits": 3,
+      "barcodeHits": 1,
+      "bytes": 183883,
+      "requests": 9,
+      "unknownFields": 17
+    },
+    {
+      "label": "Meijer",
+      "query": "Meijer feta cheese crumbles",
+      "id": "branded:usda:2757400",
+      "nameHits": 1,
+      "barcodeHits": 2,
+      "bytes": 1218544,
+      "requests": 11,
+      "unknownFields": 25
+    },
+    {
+      "label": "Meijer",
+      "query": "Meijer shredded parmesan cheese",
+      "id": "branded:usda:2757395",
+      "nameHits": 10,
+      "barcodeHits": 3,
+      "bytes": 363458,
+      "requests": 12,
+      "unknownFields": 24
+    },
+    {
+      "label": "ALDI",
+      "query": "ALDI bremer chicken pot pie",
+      "id": "branded:usda:2752711",
+      "nameHits": 1,
+      "barcodeHits": 1,
+      "bytes": 688341,
+      "requests": 10,
+      "unknownFields": 14
+    },
+    {
+      "label": "ALDI",
+      "query": "ALDI baking cooking spray",
+      "id": "branded:usda:2752710",
+      "nameHits": 1,
+      "barcodeHits": 1,
+      "bytes": 1121675,
+      "requests": 7,
+      "unknownFields": 13
+    },
+    {
+      "label": "Millville",
+      "query": "Millville frosted shredded wheat sweetened whole",
+      "id": "branded:usda:2668780",
+      "nameHits": 6,
+      "barcodeHits": 2,
+      "bytes": 885591,
+      "requests": 16,
+      "unknownFields": 8
+    },
+    {
+      "label": "Millville",
+      "query": "Millville cranberry cluster crunch multigrain flakes",
+      "id": "branded:usda:1163361",
+      "nameHits": 1,
+      "barcodeHits": 1,
+      "bytes": 553186,
+      "requests": 10,
+      "unknownFields": 12
+    },
+    {
+      "label": "Food Lion",
+      "query": "Food Lion cheese cake raspberry swirl",
+      "id": "branded:usda:2679437",
+      "nameHits": 1,
+      "barcodeHits": 1,
+      "bytes": 1444349,
+      "requests": 12,
+      "unknownFields": 17
+    },
+    {
+      "label": "Food Lion",
+      "query": "Food Lion cheese cake double chocolate",
+      "id": "branded:usda:2679436",
+      "nameHits": 1,
+      "barcodeHits": 1,
+      "bytes": 102604,
+      "requests": 3,
+      "unknownFields": 17
+    },
+    {
+      "label": "Hy-Vee",
+      "query": "Hy-Vee milk chocolate covered raisins",
+      "id": "branded:usda:2757271",
+      "nameHits": 1,
+      "barcodeHits": 2,
+      "bytes": 780568,
+      "requests": 9,
+      "unknownFields": 22
+    },
+    {
+      "label": "Hy-Vee",
+      "query": "Hy-Vee vegetable cooking stock gluten free",
+      "id": "branded:usda:2757236",
+      "nameHits": 1,
+      "barcodeHits": 2,
+      "bytes": 607612,
+      "requests": 8,
+      "unknownFields": 23
+    },
+    {
+      "label": "Hannaford",
+      "query": "Hannaford cheese snack bars colby jack",
+      "id": "branded:usda:2673338",
+      "nameHits": 1,
+      "barcodeHits": 1,
+      "bytes": 571155,
+      "requests": 10,
+      "unknownFields": 17
+    },
+    {
+      "label": "Hannaford",
+      "query": "Hannaford powdered sugar",
+      "id": "branded:usda:2673334",
+      "nameHits": 2,
+      "barcodeHits": 1,
+      "bytes": 346561,
+      "requests": 6,
+      "unknownFields": 18
+    }
+  ]
+}

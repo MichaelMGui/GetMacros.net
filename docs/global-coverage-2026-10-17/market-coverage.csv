@@ -1,0 +1,13 @@
+country,name,restaurant_records,restaurant_brands,grocery_source_profiles
+US,United States,638,25,518472
+CA,Canada,513,12,46954
+MX,Mexico,100,1,8057
+GB,United Kingdom,456,3,67041
+IE,Ireland,194,2,35223
+AU,Australia,249,1,9159
+NZ,New Zealand,160,1,3459
+JP,Japan,393,2,3808
+FR,France,190,1,0
+IN,India,82,1,0
+SG,Singapore,57,1,0
+ZA,South Africa,160,1,0

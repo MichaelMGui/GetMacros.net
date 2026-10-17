@@ -1,0 +1,9 @@
+{
+  "partition": "off",
+  "compressedShards": 7030,
+  "previousBytes": 553819638,
+  "compressedBytes": 55094960,
+  "savedBytes": 498724678,
+  "profileCount": 96451,
+  "factChanges": 0
+}

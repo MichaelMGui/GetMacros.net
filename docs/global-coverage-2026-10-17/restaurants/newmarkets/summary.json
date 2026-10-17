@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-17",
+  "scope": "Four additional real markets, exact reviewed country/regional source snapshots. Not a complete current-menu/local-stock audit.",
+  "marketCounts": {
+    "FR": 190,
+    "IN": 82,
+    "SG": 57,
+    "ZA": 160
+  },
+  "chainCounts": {
+    "FR|Quick": 190,
+    "IN|McDonald\u2019s North & East India": 82,
+    "SG|Burger King": 57,
+    "ZA|Debonairs Pizza": 160
+  },
+  "sourcePanels": 305,
+  "ambiguousRepeatedSizeGroups": 2,
+  "withheldEntries": 25
+}

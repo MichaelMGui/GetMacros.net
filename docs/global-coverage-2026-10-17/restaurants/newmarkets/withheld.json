@@ -1,0 +1,376 @@
+[
+  {
+    "name": "Qrousty Bowl Sauce long bacon",
+    "source": "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf",
+    "sourcePage": 1,
+    "published": {
+      "kJ": 5061.0,
+      "cal": 1211.0,
+      "fat": 77048.0,
+      "sat": 10.2,
+      "c": 105.0,
+      "sugar": 8.4,
+      "p": 23.0,
+      "salt": 3.43,
+      "f": 4.5
+    },
+    "screeningEstimate": 693944.0,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  },
+  {
+    "name": "Nuggets · 4 Pcs",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 30,
+    "published": {
+      "cal": 168.58,
+      "p": 10.03,
+      "fat": 9.54,
+      "sat": 4.45,
+      "na": 313.25
+    },
+    "missingFields": [
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Nuggets · 6 Pcs",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 30,
+    "published": {
+      "cal": 252.52,
+      "p": 15.04,
+      "fat": 14.3,
+      "sat": 6.68,
+      "na": 469.87
+    },
+    "missingFields": [
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Nuggets · 9 Pcs",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 30,
+    "published": {
+      "cal": 377.91,
+      "p": 22.56,
+      "fat": 21.46,
+      "sat": 10.02,
+      "na": 704.81
+    },
+    "missingFields": [
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Nuggets · 20 Pcs",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 30,
+    "published": {
+      "cal": 812.1,
+      "p": 47.6,
+      "fat": 46.9,
+      "sat": 21.11,
+      "na": 1490.0
+    },
+    "missingFields": [
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Fries",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 31,
+    "published": {
+      "cal": 215.77,
+      "p": 3.38,
+      "fat": 10.39,
+      "sat": 4.97,
+      "na": 153.15
+    },
+    "missingFields": [
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Fries · Medium",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 31,
+    "published": {
+      "cal": 304.92,
+      "p": 4.79,
+      "fat": 14.7,
+      "sat": 7.04,
+      "na": 216.79
+    },
+    "missingFields": [
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Fries · Large",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 31,
+    "published": {
+      "cal": 431.11,
+      "p": 6.76,
+      "fat": 20.77,
+      "sat": 9.95,
+      "na": 306.29
+    },
+    "missingFields": [
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "McFloat",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 57,
+    "published": {
+      "cal": 138.76,
+      "fat": 1.75,
+      "sat": 1.28,
+      "na": 44.53
+    },
+    "missingFields": [
+      "p",
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "McFloat",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 57,
+    "published": {
+      "cal": 151.56,
+      "fat": 1.75,
+      "sat": 1.28,
+      "na": 66.61
+    },
+    "missingFields": [
+      "p",
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Masala Chai",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 58,
+    "published": {
+      "cal": 94.23,
+      "fat": 1.46,
+      "sat": 0.87,
+      "na": 7.08
+    },
+    "missingFields": [
+      "p",
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Masala Chai",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 58,
+    "published": {
+      "cal": 54.97,
+      "fat": 0.85,
+      "sat": 0.51,
+      "na": 4.13
+    },
+    "missingFields": [
+      "p",
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Minute Made Pulpy Orange · Serving",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 59,
+    "published": {
+      "cal": 156.0,
+      "p": 0.0,
+      "na": 1.0
+    },
+    "missingFields": [
+      "c",
+      "fat"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Coke Zero · Serving",
+    "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+    "sourcePage": 60,
+    "published": {
+      "cal": 0.1,
+      "fat": 0.0,
+      "na": 24.75
+    },
+    "missingFields": [
+      "p",
+      "c"
+    ],
+    "reason": "Full macros unavailable or unclear after source extraction; missing fields not inferred"
+  },
+  {
+    "name": "Ultimate Angus Classic BBQ™",
+    "source": "https://burgerking.com.sg/Menu/Category/3",
+    "sourcePage": "BK_MENU_PRODUCTS.73",
+    "published": {
+      "cal": 1780.0,
+      "p": 27.0,
+      "c": 38.0,
+      "fat": 21.0,
+      "sat": 10.0,
+      "f": 3.9,
+      "na": 750.0,
+      "sugar": 11.0
+    },
+    "screeningEstimate": 449.0,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  },
+  {
+    "name": "Ultimate Angus Mushroom Swiss™",
+    "source": "https://burgerking.com.sg/Menu/Category/3",
+    "sourcePage": "BK_MENU_PRODUCTS.74",
+    "published": {
+      "cal": 1792.0,
+      "p": 26.0,
+      "c": 35.0,
+      "fat": 21.0,
+      "sat": 10.0,
+      "f": 4.6,
+      "na": 810.0,
+      "sugar": 7.5
+    },
+    "screeningEstimate": 433.0,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  },
+  {
+    "name": "BBQ BEEF",
+    "size": "Small",
+    "group": "Real Deal®",
+    "variant": "standard",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-standard-1380-0-0",
+    "reason": "Repeated same named source size within one section has conflicting/ambiguous portion data; all occurrences withheld"
+  },
+  {
+    "name": "BBQ BEEF",
+    "size": "Small",
+    "group": "Real Deal®",
+    "variant": "standard",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-standard-1380-0-0",
+    "reason": "Repeated same named source size within one section has conflicting/ambiguous portion data; all occurrences withheld"
+  },
+  {
+    "name": "Chicken — TIKKA CHICKEN · Small · standard",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-standard-1400-4-2",
+    "published": {
+      "c": 6.43,
+      "p": 28.17,
+      "fat": 13.33,
+      "kJ": 2271.83,
+      "na": 719.32,
+      "f": 3.47,
+      "cal": 542.9804015296367
+    },
+    "screeningEstimate": 258.37,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  },
+  {
+    "name": "Chicken — SWEET CHILLI CHICKEN · Small · standard",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-standard-1411-4-4",
+    "published": {
+      "c": 6.83,
+      "p": 30.44,
+      "fat": 19.02,
+      "kJ": 2498.96,
+      "na": 603.45,
+      "f": 2.01,
+      "cal": 597.2657743785851
+    },
+    "screeningEstimate": 320.26,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  },
+  {
+    "name": "Sides — Pork Cocktail Cheese Griller · Regular · standard",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-standard-4044-8-8",
+    "published": {
+      "c": 4.1,
+      "p": 18.2,
+      "fat": 18.1,
+      "kJ": 669.0,
+      "na": 1333.0,
+      "f": 1.4,
+      "cal": 159.8948374760994
+    },
+    "screeningEstimate": 252.1,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  },
+  {
+    "name": "BBQ BEEF",
+    "size": "Small",
+    "group": "Real Deal®",
+    "variant": "halaal",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-halaal-1380-0-0",
+    "reason": "Repeated same named source size within one section has conflicting/ambiguous portion data; all occurrences withheld"
+  },
+  {
+    "name": "BBQ BEEF",
+    "size": "Small",
+    "group": "Real Deal®",
+    "variant": "halaal",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-halaal-1380-0-0",
+    "reason": "Repeated same named source size within one section has conflicting/ambiguous portion data; all occurrences withheld"
+  },
+  {
+    "name": "Chicken — TIKKA CHICKEN · Small · halaal",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-halaal-1400-4-2",
+    "published": {
+      "c": 6.43,
+      "p": 28.17,
+      "fat": 13.33,
+      "kJ": 2271.83,
+      "na": 719.32,
+      "f": 3.47,
+      "cal": 542.9804015296367
+    },
+    "screeningEstimate": 258.37,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  },
+  {
+    "name": "Chicken — SWEET CHILLI CHICKEN · Small · halaal",
+    "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+    "sourcePage": "nutri-item-halaal-1411-4-4",
+    "published": {
+      "c": 6.83,
+      "p": 30.44,
+      "fat": 19.02,
+      "kJ": 2498.96,
+      "na": 603.45,
+      "f": 2.01,
+      "cal": 597.2657743785851
+    },
+    "screeningEstimate": 320.26,
+    "reason": "large source energy/macro discrepancy or implausible extracted numeric cell; no inferred correction"
+  }
+]

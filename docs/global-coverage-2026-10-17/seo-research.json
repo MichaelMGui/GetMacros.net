@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-17",
+  "firstPartySearchConsoleAccess": false,
+  "searchVolume": "Unavailable; none invented",
+  "guidanceReviewed": [
+    {
+      "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+      "applied": "Separate crawlable regional URLs; no IP redirects; country market separate from language."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "applied": "Self canonicals and reciprocal en-region annotations for the shared home/finder/directory sets only. No claim of reviewed French translations."
+    },
+    {
+      "url": "https://developers.google.com/crawling/docs/faceted-navigation",
+      "applied": "Only curated published pages in sitemap. Search/filter combinations and personal diary states do not gain separate indexable pages."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "applied": "Thirteen narrow source-backed comparisons with exact portions and useful logging links. No per-barcode SEO page factory."
+    }
+  ],
+  "observedQueries": [
+    {
+      "query": "KFC Canada nutrition chicken piece calories",
+      "locale": "Not controlled",
+      "observation": "Serving-piece identification is essential; a generic chicken-piece total obscures drumstick/rib differences. Some search hits imitate official nutrition pages; current official country source was checked separately.",
+      "implementation": "Canada KFC guide plus named-piece comparison with two-drumstick arithmetic."
+    },
+    {
+      "query": "MOS burger Japan nutrition",
+      "locale": "Not controlled",
+      "observation": "Official calculator/download coexist; accompaniments and drink ice exclusions matter. Japanese named servings should remain identifiable.",
+      "source": "https://www.mos.jp/menu/nutrition/",
+      "implementation": "Japan MOS guide, current dated PDF selection, original product names and separate accompaniments."
+    },
+    {
+      "query": "Subway New Zealand salad nutrition",
+      "locale": "Not controlled",
+      "observation": "Search still surfaces the October2025 summary, while the official site links a newer May2026 guide. Large salad should not be inferred by doubling the regular one.",
+      "source": "https://www.subway.com/en-nz/menunutrition/nutrition/",
+      "implementation": "Seventeen stable NZIDs refreshed and two actual recipe/size comparisons."
+    },
+    {
+      "query": "Wegmans nutrition facts food labels",
+      "locale": "Not controlled",
+      "observation": "Official pages distinguish made-in-store sheets from product labels and warn availability differs by store. Grocery-source imports are not warehouse inventory.",
+      "source": "https://www.wegmans.com/values-in-action/feel-your-best/nutrition-facts",
+      "implementation": "Real brand-aware product search and source/serving review; no real-time retailer inventory claim."
+    }
+  ],
+  "limitations": [
+    "Qualitative search observations are not measured demand, rankings or competitor traffic.",
+    "No sitemap submission or Google indexing has been verified in this session.",
+    "Menu source research and actual edition/hash records are retained in restaurants/source-register.json and restaurants/newmarkets/source-register.json."
+  ]
+}

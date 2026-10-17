@@ -1,0 +1,682 @@
+{
+  "reviewedAt": "2026-10-17",
+  "briefs": [
+    {
+      "market": "CA",
+      "slug": "kfc-canada-original-recipe-pieces-and-two-piece-log",
+      "title": "KFC Canada: log the named chicken piece",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The Canadian table gives separate Original Recipe values for keel, rib, drumstick, wing and thigh. A generic entry called one piece of KFC chicken cannot describe all five. Start with the piece actually eaten, then add separately listed sides and drinks.",
+        "One drumstick is 140 kcal, 15 g protein, 2 g carbohydrate and 8 g fat. One rib is 270 kcal, 29 g protein, 6 g carbohydrate and 15 g fat. Two documented drumstick portions total 280 kcal and 30 g protein; that arithmetic is different from choosing an unspecified two-piece combo.",
+        "The Famous Chicken Sandwich is its own complete sandwich serving at 690 kcal and 35 g protein. It includes a different published build, so subtracting a chicken piece from the sandwich total would not isolate bread or sauce.",
+        "These facts come from the English Canadian sheet updated November 17, 2025 and reviewed October 17, 2026. They are a dated local source selection. Two macaroni-salad rows were withheld because their calories and macros disagree substantially; no replacement numbers were guessed."
+      ],
+      "comparisonRows": [
+        {
+          "id": "CA|kfc|cb71822103fcf2b4",
+          "name": "Original Recipe® Chicken — Drumstick",
+          "serving": "1 piece",
+          "servingGrams": null,
+          "cal": 140.0,
+          "p": 15.0,
+          "c": 2.0,
+          "fat": 8.0,
+          "f": 0.0,
+          "na": 150.0,
+          "sugar": 0.0,
+          "sat": 1.5,
+          "ingredientDescription": null,
+          "source": "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf",
+          "sourceDate": "2025-11-17",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "CA|kfc|581ffcc0b1db2f9f",
+          "name": "Original Recipe® Chicken — Rib",
+          "serving": "1 piece",
+          "servingGrams": null,
+          "cal": 270.0,
+          "p": 29.0,
+          "c": 6.0,
+          "fat": 15.0,
+          "f": 0.0,
+          "na": 420.0,
+          "sugar": 0.0,
+          "sat": 2.5,
+          "ingredientDescription": null,
+          "source": "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf",
+          "sourceDate": "2025-11-17",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "CA|kfc|5dba16804b1b543b",
+          "name": "Famous Chicken Sandwich",
+          "serving": "1 sandwich",
+          "servingGrams": null,
+          "cal": 690.0,
+          "p": 35.0,
+          "c": 58.0,
+          "fat": 36.0,
+          "f": 2.0,
+          "na": 1400.0,
+          "sugar": 11.0,
+          "sat": 5.0,
+          "ingredientDescription": null,
+          "source": "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf",
+          "sourceDate": "2025-11-17",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "2 × drumstick",
+          "cal": 280,
+          "p": 30,
+          "c": 4,
+          "fat": 16,
+          "na": 300,
+          "basis": "Two published one-piece portions; no side or drink included."
+        }
+      ],
+      "sources": [
+        "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf"
+      ],
+      "recordIds": [
+        "CA|kfc|cb71822103fcf2b4",
+        "CA|kfc|581ffcc0b1db2f9f",
+        "CA|kfc|5dba16804b1b543b"
+      ]
+    },
+    {
+      "market": "GB",
+      "slug": "kfc-uk-fillet-burger-and-ranch-rice-bowl",
+      "title": "KFC UK: Fillet Burger or Original Ranch Rice Bowl",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The September 2026 UK&I table gives the Fillet Burger and Original Ranch Rice Bowl the same 28.8 g protein. The rest of their nutrition differs, so a bowl name alone does not establish a lower-calorie choice.",
+        "The burger is 463 kcal with 43 g carbohydrate and 18.7 g fat. The bowl is 558 kcal with 62.8 g carbohydrate and 19.7 g fat. For these exact named servings, the bowl adds 95 kcal, 19.8 g carbohydrate and 1 g fat while published protein stays the same.",
+        "The source reports salt rather than sodium: 2.2 g for the burger and 2.9 g for the bowl. Converting salt grams to sodium milligrams with salt × 1000 ÷ 2.5 gives 880 mg and 1,160 mg. Those are calculated sodium equivalents; fibre is absent from the table.",
+        "The comparison covers one listed item. Chips, dipping sauces and drinks need their own entries. Ireland-only markers and selected-restaurant markers still matter when using this shared source."
+      ],
+      "comparisonRows": [
+        {
+          "id": "GB|kfc|eca7e87318264d20",
+          "name": "Fillet Burger",
+          "serving": "1 source-listed item / named size",
+          "servingGrams": null,
+          "cal": 463.0,
+          "p": 28.8,
+          "c": 43.0,
+          "fat": 18.7,
+          "f": null,
+          "na": 880.0,
+          "sugar": 6.5,
+          "sat": 2.2,
+          "ingredientDescription": null,
+          "source": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+          "sourceDate": "2026-09",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "GB|kfc|bf34b7819e694627",
+          "name": "Original Ranch Rice Bowl",
+          "serving": "1 source-listed item / named size",
+          "servingGrams": null,
+          "cal": 558.0,
+          "p": 28.8,
+          "c": 62.8,
+          "fat": 19.7,
+          "f": null,
+          "na": 1160.0,
+          "sugar": 7.4,
+          "sat": 2.5,
+          "ingredientDescription": null,
+          "source": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+          "sourceDate": "2026-09",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "rice bowl minus burger",
+          "cal": 95,
+          "p": 0,
+          "c": 19.8,
+          "fat": 1,
+          "na": 280
+        }
+      ],
+      "sources": [
+        "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf"
+      ],
+      "recordIds": [
+        "GB|kfc|eca7e87318264d20",
+        "GB|kfc|bf34b7819e694627"
+      ]
+    },
+    {
+      "market": "IE",
+      "slug": "kfc-ireland-fillet-roll-and-fillet-burger",
+      "title": "KFC Ireland: the Fillet Roll has its own serving",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The official September 2026 shared UK&I sheet marks both Fillet Rolls with #, meaning Ireland-only. Their local entries are preserved for Ireland and excluded from Great Britain coverage.",
+        "The Original Recipe Chicken Fillet Roll is 662 kcal, 28.6 g protein, 78.7 g carbohydrate and 24.5 g fat. The Fillet Burger is 463 kcal, 28.8 g protein, 43 g carbohydrate and 18.7 g fat. The roll adds 199 kcal and 35.7 g carbohydrate while the published protein totals remain close.",
+        "The Zinger Fillet Roll is another named recipe at 751 kcal, 23 g protein, 81 g carbohydrate and 36 g fat. Its values are not obtained by swapping a chicken number inside the Original Recipe roll.",
+        "The three servings exclude an invented meal deal. Use the source name and its Ireland availability marker, then log any actual sides or drinks separately. Sodium is a conversion from source salt, and gram weights and fibre are not supplied."
+      ],
+      "comparisonRows": [
+        {
+          "id": "IE|kfc|7fedd0f5181e6384",
+          "name": "Original Recipe Chicken Fillet Roll #",
+          "serving": "1 source-listed item / named size",
+          "servingGrams": null,
+          "cal": 662.0,
+          "p": 28.6,
+          "c": 78.7,
+          "fat": 24.5,
+          "f": null,
+          "na": 1280.0,
+          "sugar": 7.5,
+          "sat": 5.2,
+          "ingredientDescription": null,
+          "source": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+          "sourceDate": "2026-09",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "IE|kfc|49d090f6e9521d50",
+          "name": "Zinger Fillet Roll #",
+          "serving": "1 source-listed item / named size",
+          "servingGrams": null,
+          "cal": 751.0,
+          "p": 23.0,
+          "c": 81.0,
+          "fat": 36.0,
+          "f": null,
+          "na": 1320.0,
+          "sugar": 9.0,
+          "sat": 6.0,
+          "ingredientDescription": null,
+          "source": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+          "sourceDate": "2026-09",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "IE|kfc|eca7e87318264d20",
+          "name": "Fillet Burger",
+          "serving": "1 source-listed item / named size",
+          "servingGrams": null,
+          "cal": 463.0,
+          "p": 28.8,
+          "c": 43.0,
+          "fat": 18.7,
+          "f": null,
+          "na": 880.0,
+          "sugar": 6.5,
+          "sat": 2.2,
+          "ingredientDescription": null,
+          "source": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+          "sourceDate": "2026-09",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Original Recipe roll minus Fillet Burger",
+          "cal": 199,
+          "p": -0.2,
+          "c": 35.7,
+          "fat": 5.8,
+          "na": 400
+        }
+      ],
+      "sources": [
+        "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf"
+      ],
+      "recordIds": [
+        "IE|kfc|7fedd0f5181e6384",
+        "IE|kfc|49d090f6e9521d50",
+        "IE|kfc|eca7e87318264d20"
+      ]
+    },
+    {
+      "market": "AU",
+      "slug": "gyg-australia-mini-bowl-and-mini-burrito",
+      "title": "GYG Australia: Mini Bowl versus Mini Burrito",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The March 9, 2026 Australian guide publishes separate mild grilled chicken Mini Bowl and Mini Burrito recipes. Their names share a filling, but each row is a complete named build with its own source serving.",
+        "The 264 g Mini Bowl is 409 kcal with 24.2 g protein, 48.6 g carbohydrate and 12.8 g fat. The 260 g Mini Burrito is 453 kcal with 26.5 g protein, 53.1 g carbohydrate and 14.6 g fat. The burrito adds 44 kcal and 2.3 g protein in these source recipes.",
+        "Published sodium is 992 mg for the bowl and 1,090 mg for the burrito. The serving weights are close, but equal food mass would not make their ingredient composition or nutrition identical.",
+        "These rows use the standard mild recipe. Spicy deltas, rice swaps, extra toppings and sauces are not automatically applied. The extended menu collection also keeps mini, regular and Little G’s servings separate; restricted-store item names retain the listed store limitation."
+      ],
+      "comparisonRows": [
+        {
+          "id": "AU|guzman-y-gomez|199bb651a2e780c9",
+          "name": "Mini Bowl — Mild Grilled Chicken",
+          "serving": "1 source-listed mini bowl · 264 g",
+          "servingGrams": 264.0,
+          "cal": 409.0,
+          "p": 24.2,
+          "c": 48.6,
+          "fat": 12.8,
+          "f": 3.2,
+          "na": 992.0,
+          "sugar": 1.9,
+          "sat": 5.1,
+          "ingredientDescription": null,
+          "source": "https://www.guzmanygomez.com.au/wp-content/uploads/2026/03/260305_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf",
+          "sourceDate": "2026-03-09",
+          "sourcePage": 32,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "AU|guzman-y-gomez|1efe9f89d89a94f7",
+          "name": "Mini Burrito — Mild Grilled Chicken",
+          "serving": "1 source-listed mini burrito · 260 g",
+          "servingGrams": 260.0,
+          "cal": 453.0,
+          "p": 26.5,
+          "c": 53.1,
+          "fat": 14.6,
+          "f": 3.8,
+          "na": 1090.0,
+          "sugar": 3.3,
+          "sat": 7.4,
+          "ingredientDescription": null,
+          "source": "https://www.guzmanygomez.com.au/wp-content/uploads/2026/03/260305_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf",
+          "sourceDate": "2026-03-09",
+          "sourcePage": 32,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Mini Burrito minus Mini Bowl",
+          "cal": 44,
+          "p": 2.3,
+          "c": 4.5,
+          "fat": 1.8,
+          "na": 98
+        }
+      ],
+      "sources": [
+        "https://www.guzmanygomez.com.au/wp-content/uploads/2026/03/260305_NUTRITION_ALLERGEN_GUIDE_420X297MM.pdf"
+      ],
+      "recordIds": [
+        "AU|guzman-y-gomez|199bb651a2e780c9",
+        "AU|guzman-y-gomez|1efe9f89d89a94f7"
+      ]
+    },
+    {
+      "market": "NZ",
+      "slug": "subway-nz-regular-and-large-teriyaki-salad",
+      "title": "Subway New Zealand: regular and large teriyaki salads",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The May 2026 New Zealand guide gives separate recipes for regular and large salads. The large Sweet Onion Chicken Teriyaki salad is a published 500 g portion, while the regular is 300 g. A large entry is not created by doubling the regular numbers.",
+        "The regular salad is 208 kcal with 20.1 g protein, 20.2 g carbohydrate and 5.4 g fat. The large is 402 kcal with 39.3 g protein, 38.6 g carbohydrate and 10.6 g fat. Doubling the regular calories would give 416 kcal, which is not the published 402 kcal large serving.",
+        "Both source salad definitions include lettuce, spinach, tomato, cucumber, capsicum, onion, carrot and olives. The named recipe also lists chicken strips in teriyaki glaze, mozzarella and sweet onion sauce. These recipe components describe the standard build, not a full additive or allergen formulation.",
+        "The large adds 194 kcal, 19.2 g protein and 640 mg sodium relative to the regular. Log the exact size and sauce actually ordered; ingredient changes need separate support. Two contradictory source food rows were withheld rather than repaired by assumption."
+      ],
+      "comparisonRows": [
+        {
+          "id": "NZ|subway|51c9d445f786c358",
+          "name": "Regular Salad — Sweet Onion Chicken Teriyaki",
+          "serving": "1 source regular salad · 300 g",
+          "servingGrams": 300.0,
+          "cal": 208.0,
+          "p": 20.1,
+          "c": 20.2,
+          "fat": 5.4,
+          "f": 3.3,
+          "na": 650.0,
+          "sugar": 15.4,
+          "sat": 2.7,
+          "ingredientDescription": "lettuce, spinach, tomato, cucumber, capsicum, onion, carrot, olive; chicken strips in teriyaki glaze, mozzarella cheese, sweet onion sauce",
+          "source": "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf",
+          "sourceDate": "2026-05",
+          "sourcePage": 2,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "NZ|subway|6fd129c8835bcaed",
+          "name": "Large Salad — Sweet Onion Chicken Teriyaki",
+          "serving": "1 source large salad · 500 g",
+          "servingGrams": 500.0,
+          "cal": 402.0,
+          "p": 39.3,
+          "c": 38.6,
+          "fat": 10.6,
+          "f": 5.4,
+          "na": 1290.0,
+          "sugar": 28.9,
+          "sat": 5.4,
+          "ingredientDescription": "lettuce, spinach, tomato, cucumber, capsicum, onion, carrot, olive; chicken strips in teriyaki glaze, mozzarella cheese, sweet onion sauce",
+          "source": "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf",
+          "sourceDate": "2026-05",
+          "sourcePage": 3,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "large minus regular",
+          "cal": 194,
+          "p": 19.2,
+          "c": 18.4,
+          "fat": 5.2,
+          "na": 640
+        },
+        {
+          "expression": "2 × regular calories",
+          "cal": 416,
+          "isPublishedLargeServing": false
+        }
+      ],
+      "sources": [
+        "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf"
+      ],
+      "recordIds": [
+        "NZ|subway|51c9d445f786c358",
+        "NZ|subway|6fd129c8835bcaed"
+      ]
+    },
+    {
+      "market": "JP",
+      "slug": "mos-japan-mos-burger-and-teriyaki-chicken",
+      "title": "MOS Japan: MOS Burger and Teriyaki Chicken Burger",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "MOS Japan’s October 14, 2026 table reports each named item with a source weight. The MOS Burger is 211.2 g; the Teriyaki Chicken Burger is 148.9 g. The comparison is between those actual local recipes and portions.",
+        "The MOS Burger is 372 kcal with 15.2 g protein, 40 g carbohydrate and 17 g fat. The Teriyaki Chicken Burger is 303 kcal with 20.1 g protein, 32.4 g carbohydrate and 10.3 g fat. For these named servings, the chicken burger has 69 fewer calories and 4.9 g more protein.",
+        "The source provides sodium directly: 906 mg and 842 mg. It also provides rounded salt equivalents, so the direct sodium values are retained instead of recalculating them from rounded salt. Sugar and saturated fat are unavailable and remain blank.",
+        "Japanese names are preserved to help match the local item. MOS Cafe drinks and foods retain their own recipes, separately listed sauces are not silently included, and the source says cold drink weights exclude ice. Item names and these nutrient totals are not full ingredient lists."
+      ],
+      "comparisonRows": [
+        {
+          "id": "JP|mos-burger|5f4fc82d2685cb8a",
+          "name": "モスバーガー",
+          "serving": "1 named source item · 211.2 g",
+          "servingGrams": 211.2,
+          "cal": 372.0,
+          "p": 15.2,
+          "c": 40.0,
+          "fat": 17.0,
+          "f": 3.4,
+          "na": 906.0,
+          "sugar": null,
+          "sat": null,
+          "ingredientDescription": null,
+          "source": "https://www.mos.jp/menu/pdf/nutrition.pdf",
+          "sourceDate": "2026-10-14",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "JP|mos-burger|d41c859a4db2f5ce",
+          "name": "テリヤキチキンバーガー",
+          "serving": "1 named source item · 148.9 g",
+          "servingGrams": 148.9,
+          "cal": 303.0,
+          "p": 20.1,
+          "c": 32.4,
+          "fat": 10.3,
+          "f": 1.6,
+          "na": 842.0,
+          "sugar": null,
+          "sat": null,
+          "ingredientDescription": null,
+          "source": "https://www.mos.jp/menu/pdf/nutrition.pdf",
+          "sourceDate": "2026-10-14",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Teriyaki Chicken Burger minus MOS Burger",
+          "cal": -69,
+          "p": 4.9,
+          "c": -7.6,
+          "fat": -6.7,
+          "na": -64
+        }
+      ],
+      "sources": [
+        "https://www.mos.jp/menu/pdf/nutrition.pdf"
+      ],
+      "recordIds": [
+        "JP|mos-burger|5f4fc82d2685cb8a",
+        "JP|mos-burger|d41c859a4db2f5ce"
+      ]
+    },
+    {
+      "market": "MX",
+      "slug": "subway-mexico-gran-pastor-and-gringo-pastor",
+      "title": "Subway Mexico: Gran Pastor versus Gringo Pastor",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The August 2026 Mexican source names Gran Pastor and Gringo Pastor as separate local builds. Both English and Spanish official sheets agree on the selected macro values. Their portions are the named sandwiches; no six-inch or footlong size is inferred.",
+        "Gran Pastor is a 257 g serving at 470 kcal, 31 g protein, 43 g carbohydrate and 20 g fat. Gringo Pastor is 215 g at 420 kcal, 31 g protein, 40 g carbohydrate and 15 g fat. The published protein is equal, while Gran Pastor adds 50 kcal and 5 g fat.",
+        "Gran Pastor also has 5 g fibre and 1,510 mg sodium, versus 2 g fibre and 1,360 mg sodium for Gringo Pastor. The extra 3 g fibre therefore comes with a different overall serving, not an isolated ingredient comparison.",
+        "This selected expansion adds seven named Golazo/Pastor builds. Two other new builds were withheld because same-date English and Spanish nutrition values conflict. The rest of the older Mexican snapshot is not relabelled as August 2026. Additional sauces, cheese, sides and drinks must be logged separately when actually added."
+      ],
+      "comparisonRows": [
+        {
+          "id": "MX|subway|33b54fdc74b90920",
+          "name": "Pastor — Gran Pastor",
+          "serving": "1 named local sandwich · 257 g",
+          "servingGrams": 257.0,
+          "cal": 470.0,
+          "p": 31.0,
+          "c": 43.0,
+          "fat": 20.0,
+          "f": 5.0,
+          "na": 1510.0,
+          "sugar": 5.0,
+          "sat": 7.0,
+          "ingredientDescription": null,
+          "source": "https://media.subway.com/dam/urn:aaid:aem:246fd30f-0f78-4d1c-bd45-750bda1a695a/original/as/MEX%20Nutrition%20ENG%208.2026.pdf",
+          "sourceDate": "2026-08",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "MX|subway|1e63e100b2b142fb",
+          "name": "Pastor — Gringo Pastor",
+          "serving": "1 named local sandwich · 215 g",
+          "servingGrams": 215.0,
+          "cal": 420.0,
+          "p": 31.0,
+          "c": 40.0,
+          "fat": 15.0,
+          "f": 2.0,
+          "na": 1360.0,
+          "sugar": 5.0,
+          "sat": 8.0,
+          "ingredientDescription": null,
+          "source": "https://media.subway.com/dam/urn:aaid:aem:246fd30f-0f78-4d1c-bd45-750bda1a695a/original/as/MEX%20Nutrition%20ENG%208.2026.pdf",
+          "sourceDate": "2026-08",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Gran Pastor minus Gringo Pastor",
+          "cal": 50,
+          "p": 0,
+          "c": 3,
+          "fat": 5,
+          "f": 3,
+          "na": 150
+        }
+      ],
+      "sources": [
+        "https://media.subway.com/dam/urn:aaid:aem:246fd30f-0f78-4d1c-bd45-750bda1a695a/original/as/MEX%20Nutrition%20ENG%208.2026.pdf"
+      ],
+      "recordIds": [
+        "MX|subway|33b54fdc74b90920",
+        "MX|subway|1e63e100b2b142fb"
+      ]
+    },
+    {
+      "market": "US",
+      "slug": "panda-express-mushroom-and-orange-chicken-portions",
+      "title": "Panda Express: Mushroom Chicken and Orange Chicken portions",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The official U.S. live nutrition table lists Mushroom Chicken at a 5.7 oz portion and The Original Orange Chicken at 6.2 oz. Each is one published entree portion; neither number is a bowl, plate or family tray.",
+        "Mushroom Chicken is 180 kcal with 13 g protein, 12 g carbohydrate and 9 g fat. Orange Chicken is 560 kcal with 19 g protein, 63 g carbohydrate and 25 g fat. Orange Chicken adds 380 kcal and 6 g protein when comparing these exact source portions.",
+        "Published sodium is 820 mg for Mushroom Chicken and 1,000 mg for Orange Chicken. A lower-calorie entree can still contribute substantial sodium, so use both displayed values if those are the nutrients you track.",
+        "A complete order needs its actual side and every entree portion. The dataset preserves separately published side versus entree versions of Super Greens and does not invent Cub Meal totals from an incomplete capture. The live page supplies no publication date: October 17, 2026 is the review date, not a source-edition date. Restaurant preparation and actual portions can vary."
+      ],
+      "comparisonRows": [
+        {
+          "id": "US|panda-express|c77e404ec78029f3",
+          "name": "Chicken — Mushroom Chicken",
+          "serving": "1 source portion · 5.7 oz",
+          "servingGrams": null,
+          "cal": 180.0,
+          "p": 13.0,
+          "c": 12.0,
+          "fat": 9.0,
+          "f": 1.0,
+          "na": 820.0,
+          "sugar": 5.0,
+          "sat": 2.0,
+          "ingredientDescription": null,
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "sourceDate": null,
+          "sourcePage": "L35",
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "US|panda-express|d4d223bf0dd8cee9",
+          "name": "Chicken — The Original Orange Chicken®",
+          "serving": "1 source portion · 6.2 oz",
+          "servingGrams": null,
+          "cal": 560.0,
+          "p": 19.0,
+          "c": 63.0,
+          "fat": 25.0,
+          "f": 1.0,
+          "na": 1000.0,
+          "sugar": 24.0,
+          "sat": 5.0,
+          "ingredientDescription": null,
+          "source": "https://www.pandaexpress.com/nutritioninformation",
+          "sourceDate": null,
+          "sourcePage": "L36",
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Orange Chicken minus Mushroom Chicken",
+          "cal": 380,
+          "p": 6,
+          "c": 51,
+          "fat": 16,
+          "na": 180
+        }
+      ],
+      "sources": [
+        "https://www.pandaexpress.com/nutritioninformation"
+      ],
+      "recordIds": [
+        "US|panda-express|c77e404ec78029f3",
+        "US|panda-express|d4d223bf0dd8cee9"
+      ]
+    },
+    {
+      "market": "NZ",
+      "slug": "subway-nz-roast-beef-sub-and-wrap-recipes",
+      "title": "Subway New Zealand: roast beef bread and dressing differ by format",
+      "reviewedAt": "2026-10-17",
+      "scope": "Source-backed editorial brief; not published HTML. Exact named servings, not a diet prescription.",
+      "paragraphs": [
+        "The May 2026 New Zealand recipes give the roast beef sub and wrap different standard dressings. The sub lists processed cheddar, lettuce, spinach, tomato, onion and mayonnaise on roasted garlic bread. The wrap lists the same named vegetables and cheese with honey mustard on white flour wrap.",
+        "The 222 g sub is 356 kcal with 19.3 g protein, 48.3 g carbohydrate and 8.2 g fat. The 220 g wrap is 329 kcal with 18.5 g protein, 42.9 g carbohydrate and 9.5 g fat. In this source pair, the wrap is 27 kcal lower and 1.3 g fat higher.",
+        "Those differences describe two complete published recipes. They do not measure the isolated effect of replacing bread with a wrap or mayonnaise with honey mustard; more than one component changes.",
+        "Use the recipe description to check the actual order before logging. A custom sauce or bread choice needs its own documented ingredient amount. These standard-build descriptions are useful menu components, but they do not replace a full ingredient or allergen document."
+      ],
+      "comparisonRows": [
+        {
+          "id": "NZ|subway|648526bde05f00c0",
+          "name": "6-Inch Sub — Roast Beef",
+          "serving": "1 source 6-inch sub · 222 g",
+          "servingGrams": 222.0,
+          "cal": 356.0,
+          "p": 19.3,
+          "c": 48.3,
+          "fat": 8.2,
+          "f": 3.0,
+          "na": 1350.0,
+          "sugar": 9.4,
+          "sat": 3.2,
+          "ingredientDescription": "processed cheddar cheese, lettuce, spinach, tomato, onion, mayonnaise on roasted garlic bread",
+          "source": "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf",
+          "sourceDate": "2026-05",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "NZ|subway|9e4eebe8b8b67f23",
+          "name": "Wrap — Roast Beef",
+          "serving": "1 source wrap · 220 g",
+          "servingGrams": 220.0,
+          "cal": 329.0,
+          "p": 18.5,
+          "c": 42.9,
+          "fat": 9.5,
+          "f": 4.7,
+          "na": 774.0,
+          "sugar": 10.9,
+          "sat": 4.9,
+          "ingredientDescription": "processed cheddar cheese, lettuce, spinach, tomato, onion, honey mustard",
+          "source": "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf",
+          "sourceDate": "2026-05",
+          "sourcePage": 2,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "wrap minus sub",
+          "cal": -27,
+          "p": -0.8,
+          "c": -5.4,
+          "fat": 1.3,
+          "na": -576
+        }
+      ],
+      "sources": [
+        "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf"
+      ],
+      "recordIds": [
+        "NZ|subway|648526bde05f00c0",
+        "NZ|subway|9e4eebe8b8b67f23"
+      ]
+    }
+  ]
+}

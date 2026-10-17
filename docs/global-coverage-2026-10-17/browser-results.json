@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "base": "http://127.0.0.1:4194",
+  "checks": [
+    "New grocery source record searched, portion reviewed, logged to Breakfast and retained after reload",
+    "/ca/en/find-a-meal/?chain=KFC real local results",
+    "/jp/en/find-a-meal/?chain=MOS+Burger real local results",
+    "No page overflow at 320px across six representative pages",
+    "No page overflow at 390px across six representative pages",
+    "No page overflow at 768px across six representative pages",
+    "No page overflow at 1280px across six representative pages",
+    "No page overflow at 1440px across six representative pages"
+  ],
+  "runtimeErrors": [],
+  "screenshots": [
+    "01-new-publix-search-desktop.png",
+    "02-new-product-portion-desktop.png",
+    "03-logged-breakfast-desktop.png",
+    "04-kfc-canada-results-desktop.png",
+    "05-mos-japan-results-desktop.png",
+    "06-diary-mobile.png",
+    "07-wegmans-search-mobile.png",
+    "08-mos-guide-dark-mobile.png"
+  ]
+}

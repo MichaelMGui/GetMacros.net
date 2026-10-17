@@ -1,7 +1,8 @@
+const sourceJSON=require('../source-json.cjs');
 /* Real imported data + isolated adapter; no external providers or browser mocks. */
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve('.');let bytes=0,requests=0;
-const context={crypto:require('node:crypto').webcrypto,TextEncoder,console,Map,Set,Promise,CustomEvent:class{},fetch:async url=>{requests++;const p=path.join(root,url);if(!fs.existsSync(p))return {ok:false,status:404};const text=fs.readFileSync(p,'utf8');bytes+=Buffer.byteLength(text);return {ok:true,json:async()=>JSON.parse(text)};}};context.window=context;
+const context={crypto:require('node:crypto').webcrypto,TextEncoder,TextDecoder,Response,DecompressionStream,console,Map,Set,Promise,CustomEvent:class{},fetch:async url=>{requests++;return sourceJSON.fileResponse(root,url,n=>bytes+=n);}};context.window=context;
 vm.runInNewContext(fs.readFileSync('js/branded-foods.js','utf8'),context);const G=context.GetMacrosBranded,F=require('../../js/food-core.js');
 (async()=>{
  const m=await G.manifest();assert(m.sources.some(s=>s.id==='usda'&&s.manifest.profileCount>30000));assert(m.sources.some(s=>s.id==='cnf'&&s.manifest.profileCount===5993));
@@ -15,7 +16,7 @@ vm.runInNewContext(fs.readFileSync('js/branded-foods.js','utf8'),context);const 
  const sauce=await G.get('cnf:1700');const measure=sauce.portions.find(p=>p.label.includes('250'));assert(measure);assert(Math.abs(measure.grams-257.819)<1e-6,'2026 weight is grams; must not be multiplied by 100');assert.equal(F.scale(sauce,1,measure.id).cal,sauce.nutrients.cal*measure.grams/100);
  assert.throws(()=>F.scale(item,0,'g'));assert.throws(()=>F.scale(item,1,'unknown-portion'));
  // Source mL records are named-serving based; missing density prevents gram conversion.
- let fluid;for(const file of fs.readdirSync('data/branded-foods/usda/records')){fluid=JSON.parse(fs.readFileSync(path.join('data/branded-foods/usda/records',file))).find(r=>r.sourceServing.unit==='ml');if(fluid)break;}
+ let fluid;for(const file of fs.readdirSync('data/branded-foods/usda/records')){fluid=sourceJSON.read(path.join('data/branded-foods/usda/records',file)).find(r=>r.sourceServing.unit==='ml');if(fluid)break;}
  assert(fluid);assert.equal(fluid.basis.unit,'serving');assert.throws(()=>F.scale(fluid,100,'g'));assert.equal(F.scale(fluid,2,'serving').cal,fluid.nutrients.cal===null?null:fluid.nutrients.cal*2);
  const snapshot=F.snapshot(item,1,item.basis.unit==='serving'?'serving':'source-serving');assert.equal(F.validateSnapshot(snapshot),snapshot);const unknownKey=F.fields.find(k=>item.nutrients[k]===null);assert(unknownKey);assert.equal(snapshot.nutrients[unknownKey],null);
  // Do not collapse different Oreo products merely because brand/barcode prefixes match.

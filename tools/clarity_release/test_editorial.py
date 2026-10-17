@@ -59,7 +59,12 @@ class Editorial(unittest.TestCase):
  def test_coverage_has_honest_denominators(self):
   for row in self.coverage:
    self.assertGreaterEqual(row['tracked'],row['finder']);self.assertGreaterEqual(row['tracked'],row['complete']);self.assertGreaterEqual(row['tracked'],row['fiber'])
-  jp=next(r for r in self.coverage if r['market']=='JP');self.assertEqual(jp['fiber'],0)
+  for row in self.coverage:
+   local=[r for r in ed.REG if r['market']==row['market']]
+   self.assertEqual(row['tracked'],len(local))
+   self.assertEqual(row['fiber'],sum(r.get('f') is not None for r in local))
+  self.assertTrue(all(r.get('f') is None for r in ed.REG if r['market']=='JP' and r['chain']=='McDonald’s Japan'))
+  self.assertTrue(any(r.get('f') is not None for r in ed.REG if r['market']=='JP' and r['chain']=='MOS Burger'))
   ca=next(r for r in self.coverage if r['market']=='CA');self.assertGreaterEqual(ca['caloriesOnly'],39)
  def test_rendered_metadata_and_crawlable_answer(self):
   for r in self.rows:

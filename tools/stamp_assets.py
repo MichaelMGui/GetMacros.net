@@ -137,6 +137,7 @@ def main():
     if os.path.exists('sw.js'):
         app_files=['food-diary.html','food-library.html','offline.html','site.webmanifest','icon-sprite.svg','js/order-registry.json','data/food-library/manifest.json','data/food-library/index.json']
         app_files += sorted(glob.glob('data/branded-foods/*/manifest.json'))
+        app_files += ['data/restaurant-foods/manifest.json'] if os.path.exists('data/restaurant-foods/manifest.json') else []
         app_files += sorted(glob.glob('data/food-library/diary-foods-*.json'))
         app_files += sorted(glob.glob('js/*.js'))+sorted(glob.glob('css/*.css'))
         fingerprint=hashlib.sha256(b''.join(open(p,'rb').read().replace(b'\r\n',b'\n') for p in app_files if os.path.isfile(p))).hexdigest()[:16]

@@ -1,0 +1,37 @@
+{
+  "manifestBytes": 87071,
+  "parts": {
+    "records": {
+      "files": 4096,
+      "bytes": 94091611,
+      "largestBytes": 36457
+    },
+    "index": {
+      "files": 3834,
+      "bytes": 22661509,
+      "largestBytes": 7579
+    },
+    "tokens": {
+      "files": 4203,
+      "bytes": 4356828,
+      "largestBytes": 192593
+    },
+    "barcodes": {
+      "files": 122,
+      "bytes": 1882542,
+      "largestBytes": 472396
+    },
+    "markets": {
+      "files": 8,
+      "bytes": 556609,
+      "largestBytes": 169428
+    },
+    "brands": {
+      "files": 8,
+      "bytes": 494376,
+      "largestBytes": 148266
+    }
+  },
+  "largestPublishedFileBytes": 87979644,
+  "noFileAtOrAbove95000000Bytes": true
+}

@@ -1,0 +1,82 @@
+ADDITIONAL MARKETS — REVIEWED 2026-10-17
+
+Stable independent output: 489 new local restaurant records in four new countries.
+  France: 190 Quick records; 172 eligible for complete-macro matching.
+  India: 82 McDonald's North & East India records; 71 eligible for matching.
+  Singapore: 57 Burger King records; 41 eligible for matching.
+  South Africa: 160 Debonairs Pizza records; 87 eligible for matching.
+
+Integration files (all separate from the original 954+17 batch)
+  tools/global_coverage_2026_10_17/restaurant-newmarkets-records.json
+  tools/global_coverage_2026_10_17/restaurant-newmarkets-definitions.json
+  tools/global_coverage_2026_10_17/restaurant-newmarkets-presence-upserts.json
+  docs/global-coverage-2026-10-17/restaurants/newmarkets/guide-briefs.json
+  docs/global-coverage-2026-10-17/restaurants/newmarkets/source-register.json
+  docs/global-coverage-2026-10-17/restaurants/newmarkets/withheld.json
+  docs/global-coverage-2026-10-17/restaurants/newmarkets/test-results.json
+
+Four market definition seeds follow the existing GM_MARKETS fields, including
+country full names, continent, currency, flag, routes and actual supported chain.
+Additional fields provide source language, operator scope, counts and evidence.
+Do not imply broader grocery coverage merely because restaurant markets exist.
+
+France
+  Quick's current homepage links the October 6, 2026 nutrition PDF. The search
+  index's June PDF is not used. All three current tables were reviewed.
+  French item names, source portions, named counts and fountain volumes remain.
+  200/350/500ml drink entries are distinct source volumes, not gram weights.
+  Salt is converted to sodium with salt(g) x1000/2.5. Source bounds remain bounds.
+  One corrupted extracted bowl-fat cell was withheld. Published beer energy is
+  retained: a P/C/fat-only energy screen cannot account for alcohol energy.
+
+India
+  Official chain name in the batch: McDonald's North & East India.
+  Legal operator: Connaught Plaza Restaurants Private Limited, explicitly proven
+  by the current nutrition-page footer. The chain name, region field, notes,
+  definition scope and guide all preserve North & East India. This scope must
+  remain visible in the country home, directory, finder and saved-food display.
+  West/South India values are not substituted or assumed equivalent.
+  Current linked PDF has 71 named product pages plus a cover. Multiple documented
+  sizes are separate records; identical repeated pages are deduplicated.
+  No whole-book edition date is supplied. /2025/12/ is an upload path, not an
+  edition date. Per-product older version labels remain part of their names.
+  Nugget/Fries and other unclear macro rows are withheld rather than inventing
+  missing carbs. Recommended daily allowance columns are never food values.
+
+Singapore
+  All nine linked local Burger King categories were captured. Category4 returned
+  one temporary500 then succeeded. Public BK_MENU_PRODUCTS objects supply each
+  source recipe and its local macros; main.js confirms display units g and mg.
+  59 source products yielded57 accepted rows; two inconsistent Angus rows held.
+  Sixteen beverage reference rows are explicitly per100ml and excluded from
+  complete-order matching. No unspecified cup volume is invented.
+  Descriptive menu ingredients are useful descriptions, not full formulations.
+  No publication/edition date is supplied; review and retrieval dates stay separate.
+
+South Africa
+  Source: live official Debonairs Pizza standard/halaal nutrition guide.
+  Clearly named whole sizes remain whole portions; no slice count is invented.
+  Source energy is kJ; kcal = kJ/4.184 with explicit conversion provenance.
+  136 identical standard/halaal nutritional variants are merged, preserving both
+  source-variant labels. Distinct values remain separate source builds.
+  Two repeated Small-size groups conflict; all ambiguous occurrences withheld.
+  Implausible lost-decimal rows are withheld without inferring decimal places.
+  Gram weights, saturated fat and sugars are unavailable in these source panels.
+  No source publication date is supplied.
+
+QA
+  Fourteen new-market tests pass: actual source hashes, all4countries, final row
+  hashes, French name/edition/current-link proof, drink volumes versus mass,
+  Indian regional operator and RDA-column separation, missing carbs withheld,
+  all9Singapore categories and reference-volume exclusion, South African kJ/kcal
+  units, ambiguous sizes and variant deduplication, definition/presence/brief IDs.
+  Four useful source-backed guide briefs use the same schema as the stable batch.
+  All outputs are staged only. No shared country definitions, runtime registry,
+  HTML, Git, publishing or deployment was changed by this workstream.
+
+Rebuild from already reviewed local captures
+  bundled-python -X utf8 tools/global_coverage_2026_10_17/restaurant_newmarkets_stage.py
+  bundled-python -X utf8 tools/global_coverage_2026_10_17/restaurant_newmarkets_metadata.py
+  bundled-python -X utf8 tools/global_coverage_2026_10_17/restaurant_newmarkets_verify.py
+
+Do not rerun network collection just to reproduce these reviewed snapshots.

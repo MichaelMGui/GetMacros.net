@@ -1,0 +1,187 @@
+{
+  "passAll": true,
+  "completed": 30,
+  "planned": 30,
+  "results": [
+    {
+      "command": "node tools/test_macro_math.js",
+      "exitCode": 0,
+      "seconds": 0.05,
+      "log": "docs/global-coverage-2026-10-17/ci-01.log"
+    },
+    {
+      "command": "node tools/product_release/test-food.cjs",
+      "exitCode": 0,
+      "seconds": 0.56,
+      "log": "docs/global-coverage-2026-10-17/ci-02.log"
+    },
+    {
+      "command": "node tools/product_release/test-ingredient-comparison.cjs",
+      "exitCode": 0,
+      "seconds": 0.06,
+      "log": "docs/global-coverage-2026-10-17/ci-03.log"
+    },
+    {
+      "command": "python3 tools/product_release/test-generators.py",
+      "exitCode": 0,
+      "seconds": 57.62,
+      "log": "docs/global-coverage-2026-10-17/ci-04.log"
+    },
+    {
+      "command": "node --test server/test/service.test.cjs",
+      "exitCode": 0,
+      "seconds": 2.81,
+      "log": "docs/global-coverage-2026-10-17/ci-05.log"
+    },
+    {
+      "command": "node tools/test-companion-engine.cjs",
+      "exitCode": 0,
+      "seconds": 0.08,
+      "log": "docs/global-coverage-2026-10-17/ci-06.log"
+    },
+    {
+      "command": "node tools/test-meal-view.cjs",
+      "exitCode": 0,
+      "seconds": 0.06,
+      "log": "docs/global-coverage-2026-10-17/ci-07.log"
+    },
+    {
+      "command": "node tools/test-growth-tools.cjs",
+      "exitCode": 0,
+      "seconds": 0.09,
+      "log": "docs/global-coverage-2026-10-17/ci-08.log"
+    },
+    {
+      "command": "node tools/international/test-markets.cjs",
+      "exitCode": 0,
+      "seconds": 0.45,
+      "log": "docs/global-coverage-2026-10-17/ci-09.log"
+    },
+    {
+      "command": "python3 tools/growth_release/review-source.py --validate",
+      "exitCode": 0,
+      "seconds": 0.14,
+      "log": "docs/global-coverage-2026-10-17/ci-10.log"
+    },
+    {
+      "command": "python3 tools/test_growth_release.py",
+      "exitCode": 0,
+      "seconds": 0.16,
+      "log": "docs/global-coverage-2026-10-17/ci-11.log"
+    },
+    {
+      "command": "node tools/play_release/test-rules.cjs",
+      "exitCode": 0,
+      "seconds": 0.23,
+      "log": "docs/global-coverage-2026-10-17/ci-12.log"
+    },
+    {
+      "command": "python3 tools/test-release-content.py",
+      "exitCode": 0,
+      "seconds": 0.33,
+      "log": "docs/global-coverage-2026-10-17/ci-13.log"
+    },
+    {
+      "command": "python3 tools/test_asset_stamps.py",
+      "exitCode": 0,
+      "seconds": 0.89,
+      "log": "docs/global-coverage-2026-10-17/ci-14.log"
+    },
+    {
+      "command": "node tools/master_release/test-branded-search.cjs",
+      "exitCode": 0,
+      "seconds": 1.12,
+      "log": "docs/global-coverage-2026-10-17/ci-15.log"
+    },
+    {
+      "command": "node tools/master_release/test-branded-integrity.cjs",
+      "exitCode": 0,
+      "seconds": 40.42,
+      "log": "docs/global-coverage-2026-10-17/ci-16.log"
+    },
+    {
+      "command": "node tools/master_release/test-diary-meals.cjs",
+      "exitCode": 0,
+      "seconds": 0.31,
+      "log": "docs/global-coverage-2026-10-17/ci-17.log"
+    },
+    {
+      "command": "node tools/master_completion/test-source-ui.cjs",
+      "exitCode": 0,
+      "seconds": 0.05,
+      "log": "docs/global-coverage-2026-10-17/ci-18.log"
+    },
+    {
+      "command": "python3 tools/master_completion/grocery_integrity_off.py",
+      "exitCode": 0,
+      "seconds": 146.08,
+      "log": "docs/global-coverage-2026-10-17/ci-19.log"
+    },
+    {
+      "command": "python3 tools/master_completion/test_integration.py",
+      "exitCode": 0,
+      "seconds": 1.19,
+      "log": "docs/global-coverage-2026-10-17/ci-20.log"
+    },
+    {
+      "command": "node tools/master_completion/grocery-search-off.cjs",
+      "exitCode": 0,
+      "seconds": 0.59,
+      "log": "docs/global-coverage-2026-10-17/ci-21.log"
+    },
+    {
+      "command": "node tools/clarity_release/test-comparison.cjs",
+      "exitCode": 0,
+      "seconds": 0.08,
+      "log": "docs/global-coverage-2026-10-17/ci-22.log"
+    },
+    {
+      "command": "node tools/global_coverage_2026_10_17/library_market_search.cjs",
+      "exitCode": 0,
+      "seconds": 0.58,
+      "log": "docs/global-coverage-2026-10-17/ci-23.log"
+    },
+    {
+      "command": "node tools/global_coverage_2026_10_17/usda_test_search.cjs",
+      "exitCode": 0,
+      "seconds": 1.34,
+      "log": "docs/global-coverage-2026-10-17/ci-24.log"
+    },
+    {
+      "command": "python3 tools/global_coverage_2026_10_17/restaurant_verify.py",
+      "exitCode": 0,
+      "seconds": 0.23,
+      "log": "docs/global-coverage-2026-10-17/ci-25.log"
+    },
+    {
+      "command": "python3 tools/global_coverage_2026_10_17/restaurant_newmarkets_verify.py",
+      "exitCode": 0,
+      "seconds": 0.25,
+      "log": "docs/global-coverage-2026-10-17/ci-26.log"
+    },
+    {
+      "command": "python3 tools/clarity_release/test_restaurant_additions.py",
+      "exitCode": 0,
+      "seconds": 0.19,
+      "log": "docs/global-coverage-2026-10-17/ci-27.log"
+    },
+    {
+      "command": "python3 tools/clarity_release/test_mexico_classification.py",
+      "exitCode": 0,
+      "seconds": 0.14,
+      "log": "docs/global-coverage-2026-10-17/ci-28.log"
+    },
+    {
+      "command": "python3 tools/clarity_release/test_character_media.py",
+      "exitCode": 0,
+      "seconds": 0.11,
+      "log": "docs/global-coverage-2026-10-17/ci-29.log"
+    },
+    {
+      "command": "python3 tools/clarity_release/test_editorial.py",
+      "exitCode": 0,
+      "seconds": 0.55,
+      "log": "docs/global-coverage-2026-10-17/ci-30.log"
+    }
+  ]
+}

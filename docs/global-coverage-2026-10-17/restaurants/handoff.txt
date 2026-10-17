@@ -1,0 +1,67 @@
+REVIEWED RESTAURANT BATCH — 2026-10-17
+
+Integration artifacts
+  tools/global_coverage_2026_10_17/restaurant-records.json
+    records: 954 additions; updates: 17 New Zealand records retaining existing IDs.
+    Merge updates by ID before appending records. Do not blindly append updates.
+  tools/global_coverage_2026_10_17/restaurant-presence-upserts.json
+    9 proposed relationship upserts: eight covered market/chain pairs and KFC Mexico's
+    independently confirmed source-withheld status. Recompute counters after integration.
+  docs/global-coverage-2026-10-17/restaurants/guide-briefs.json
+    Nine source-backed briefs covering all eight markets, with exact record IDs,
+    comparison tables, recipe descriptions where supplied, and checked arithmetic.
+  docs/global-coverage-2026-10-17/restaurants/test-results.json
+    Fourteen checks pass. Covers source hashes, eight-country macro support, named
+    serving anchors, regional exclusions, salt units, bounds, independent Japanese
+    sodium, source refresh IDs, and withheld contradictions.
+
+Country additions (and new finder-eligible subset)
+  AU Guzman y Gomez: 234 (232). Existing 15 unchanged. March 9, 2026 snapshot.
+  CA KFC: 90 (85). English November 17, 2025 snapshot. Two bad rows withheld.
+  GB KFC: 119 (105). September 2026. # and ~ regional-only rows excluded from GB.
+  IE KFC: 128 (114). September 2026. Shared source explicitly covers Ireland.
+  JP MOS Burger: 187 (174). October 14, 2026. Cafe recipes retain distinct names.
+  MX Subway: 7 (7). Newly named August 2026 Golazo/Pastor builds; EN/ES agree.
+  NZ Subway: 143 (82) plus 17 refreshed subs. May 2026 named per-serve recipes.
+  US Panda Express: 46 (23). Food selections through source line L82 only.
+
+Source boundaries
+  This batch is not a complete current-menu or every-branch availability claim.
+  Drink, dessert, side and ingredient records are real source rows. Components
+  stay outside macro meal matching. Missing fibre, sugar or saturated fat is null.
+  Source less-than values retain nutrientBounds; a bound is not exact zero or its
+  exact upper limit. Bound-dependent macro rows are excluded from matching.
+  KFC UK&I sodium is salt(g) × 1000 ÷ 2.5. MOS Japan directly published sodium
+  takes precedence over a conversion from its rounded salt equivalent.
+  Source editions, download dates and review dates are separate fields.
+  Web-extracted numeric files are explicitly identified as web captures; their
+  hashes do not pretend to identify original PDF or HTML bytes.
+
+Sources withheld rather than repaired
+  KFC Canada individual/large macaroni salads: published energy and macros differ
+  by more than the screening tolerance. Full source values remain in withheld.json.
+  Subway NZ Meatball Mozza Pot: source lists 109.7g protein and only 254kcal.
+  Subway NZ Boysenberry Danish: source fat creates a large energy discrepancy.
+  Subway Mexico Ham and Cheese with Guacomole and Golazo Kids Sub: same-date
+  English and Spanish tables disagree. Seven other new builds were cross-checked.
+  KFC Mexico: current official table links Nutrimentales 2026 V5 image pages.
+  Inspected page 01 lists Crujipollo at 190.6kcal, 25.4g fat, 49.1g carbohydrate,
+  16.7g protein and 4,282.4mg sodium. A basic 4/4/9 screen would imply 491.8kcal.
+  Page 02 Hot Cruji and page 03 Jalapeno/Mango chicken show similar conflicts;
+  page 20 Mac & Cheese and page 24 Popcorn also do not resolve source concerns.
+  No KFC Mexico macro rows were imported, and no units or decimal places were
+  silently changed. Current page and all 52 linked 2026 label images are archived.
+  Supermac's Irish PDF is archived but not imported: it explicitly says Jan2021
+  print edition and contains substantial inconsistencies. Its 2024 URL is not its
+  edition date. KFC's explicit September2026 UK&I table provides better IE coverage.
+  KFC NZ nutrition endpoint refused direct access; no Australian data substituted.
+
+Reproduce the stable stage (no shared runtime writes)
+  bundled-python -X utf8 tools/global_coverage_2026_10_17/restaurant_stage.py
+  bundled-python -X utf8 tools/global_coverage_2026_10_17/restaurant_verify.py
+  bundled-python -X utf8 tools/global_coverage_2026_10_17/restaurant_presence.py
+  bundled-python -X utf8 tools/global_coverage_2026_10_17/restaurant_guides.py
+
+Do not rerun the network fetch merely to rebuild: the reviewed snapshots and
+numeric captures are already present and hashed. No shared registry, HTML,
+country configuration, global build, Git, deployment or publication was edited.

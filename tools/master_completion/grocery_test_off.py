@@ -4,6 +4,32 @@ from unittest.mock import patch
 from pathlib import Path
 from grocery_import_off import normalize, barcode, source_serving, number, MAP, text, run, merge_quarantine, SOURCE_FIELDS, ROOT
 import grocery_import_off as importer
+sys.path.insert(0,str(ROOT/'tools/global_coverage_2026_10_17'))
+from off_test_expand import ExpansionBoundaries
+import off_expand as expanded_importer
+import grocery_integrity_off as integrity
+
+class ExpandedProductionContract(unittest.TestCase):
+    def test_expanded_audit_routes_to_streaming_subset_without_bulk(self):
+        from source_json import read_json
+        partition=ROOT/'data/branded-foods/off'
+        manifest=read_json(partition/'manifest.json')
+        if manifest.get('source',{}).get('normalizationAuditDate')!='2026-10-17':self.skipTest('Historical production partition uses its unchanged legacy audit')
+        counts={'marketProfiles':manifest['profileCount'],'quarantinedSourceProductsChecked':30,'sourceProducts':241432,'indexProfiles':manifest['profileCount'],'tokenPostings':1291950,'volumeProfilesWithoutInferredGrams':20313,'countryPostings':manifest['profileCount']}
+        with tempfile.TemporaryDirectory(prefix='off-dispatch-fixture-',dir=expanded_importer.OUT) as directory:
+            work=Path(directory).resolve();self.assertTrue(work.is_relative_to(expanded_importer.OUT.resolve()));report=work/'report.json'
+            with patch('off_verify_partition.verify',return_value={'counts':counts}) as verifier,patch.object(importer,'RAW',work/'absent-original-bulk.gz'):
+                result=integrity.run(partition,report)
+            verifier.assert_called_once_with(partition=partition.resolve(),report_path=report,baseline=None)
+            self.assertEqual(result['profilesChecked'],manifest['profileCount']);self.assertTrue(report.is_file())
+
+    def test_historical_baseline_is_pinned_independently_of_bulk_file(self):
+        baseline=json.loads((expanded_importer.OUT/'off-baseline-invariants.json').read_text(encoding='utf-8'))
+        self.assertEqual(baseline['profileCount'],96451)
+        self.assertEqual(sum(baseline['markets'].values()),96451)
+        self.assertEqual(baseline['markets']['CA'],46950)
+        self.assertEqual(len(baseline['idAndFormulationSha256']),64)
+        self.assertEqual(baseline['sourceSha256'],'f72687ee8bc6522054fe69dbfda6b91902c16af1ec2e043cde27bc6c29ad8176')
 
 def row(**changes):
     source={'code':'0068100084245','product_name':'Smooth Peanut Butter','brands':'Kraft','countries_tags':'en:canada','quantity':'1 kg','serving_size':'1 tbsp (15 g)','serving_quantity':'15','energy-kcal_100g':'600','proteins_100g':'20','carbohydrates_100g':'20','fat_100g':'50','sodium_100g':'0.3','last_modified_datetime':'2026-10-01T00:00:00Z','ingredients_text':'Peanuts'}

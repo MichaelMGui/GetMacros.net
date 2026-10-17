@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "testsRun": 15,
+  "failures": 0,
+  "errors": 0,
+  "newRows": 954,
+  "refreshedRows": 17,
+  "marketCounts": {
+    "JP": 187,
+    "CA": 90,
+    "GB": 119,
+    "IE": 128,
+    "AU": 234,
+    "US": 46,
+    "NZ": 143,
+    "MX": 7
+  },
+  "newFinderEligible": {
+    "JP": 174,
+    "CA": 85,
+    "GB": 105,
+    "IE": 114,
+    "AU": 232,
+    "US": 23,
+    "NZ": 82,
+    "MX": 7
+  },
+  "sourceEditionIsRetrievalDate": false
+}

@@ -54,6 +54,10 @@ jobs:
           python3 tools/master_completion/test_integration.py
           node tools/master_completion/grocery-search-off.cjs
           node tools/clarity_release/test-comparison.cjs
+          node tools/global_coverage_2026_10_17/library_market_search.cjs
+          node tools/global_coverage_2026_10_17/usda_test_search.cjs
+          python3 tools/global_coverage_2026_10_17/restaurant_verify.py
+          python3 tools/global_coverage_2026_10_17/restaurant_newmarkets_verify.py
           python3 tools/clarity_release/test_restaurant_additions.py
           python3 tools/clarity_release/test_mexico_classification.py
           python3 tools/clarity_release/test_character_media.py

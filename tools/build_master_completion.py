@@ -1,3 +1,4 @@
+from source_json import read_json
 """Publish reviewed additions and a factual source/brand navigator, before shared UI."""
 from pathlib import Path
 from collections import Counter
@@ -95,11 +96,19 @@ def coverage():
         if not (directory/"manifest.json").exists():continue
         manifest=json.loads((directory/"manifest.json").read_text(encoding="utf-8"))
         own=Counter()
-        for shard in manifest["recordShards"]:
-            for r in json.loads((directory/"records"/(shard+".json")).read_text(encoding="utf-8")):
-                if r["type"]!="branded":continue
-                own[r["market"]]+=1;counts[r["market"]]+=1;brands.setdefault(r["market"],Counter())[r["brand"]]+=1
-                examples.setdefault((r["market"],r["brand"]),r["name"])
+        if manifest.get('brandCountsPrefix'):
+            # Counts are generated and audited from every source record at
+            # ingestion. Do not decompress the entire catalogue to render links.
+            for market,total in manifest['markets'].items():
+                local=read_json(directory/manifest['brandCountsPrefix']/(market+'.json'))
+                assert sum(local.values())==total
+                own[market]=total;counts[market]+=total
+                brands.setdefault(market,Counter()).update(local)
+        else:
+            for shard in manifest["recordShards"]:
+                for r in read_json(directory/"records"/(shard+".json")):
+                    if r["type"]!="branded":continue
+                    own[r["market"]]+=1;counts[r["market"]]+=1;brands.setdefault(r["market"],Counter())[r["brand"]]+=1
         sources.append(dict(id=directory.name,count=manifest["profileCount"],markets=dict(own),source=manifest["source"]))
     sections=[]
     preferred={

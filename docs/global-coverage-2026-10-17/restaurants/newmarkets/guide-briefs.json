@@ -1,0 +1,319 @@
+{
+  "reviewedAt": "2026-10-17",
+  "briefs": [
+    {
+      "market": "FR",
+      "slug": "quick-france-coca-cola-volumes-and-mega-giant",
+      "title": "Quick France: match the drink volume to the menu entry",
+      "reviewedAt": "2026-10-17",
+      "scope": "Quick France official menu. French source product names are preserved; English site navigation is a separate language choice.",
+      "paragraphs": [
+        "Quick France’s declaration valid from October 6, 2026 separates fountain drinks into 200 ml, 350 ml and 500 ml source portions. The French product names are preserved so that the local menu entry can be matched directly.",
+        "The Coca Cola source serving is 84 kcal and 21 g carbohydrate at 200 ml, versus 210 kcal and 53 g carbohydrate at 500 ml. The larger source serving adds 126 kcal. These volumes do not become serving weights: 500 ml is not recorded as 500 g.",
+        "A Méga Giant is a separate published burger portion at 859 kcal, 46 g protein, 38 g carbohydrate and 58 g fat. Adding the actually consumed Coca Cola serving gives 943 kcal with the 200 ml drink or 1,069 kcal with the 500 ml drink. Those sums do not include fries or a sauce.",
+        "The guide reports salt, so sodium is a documented conversion from salt rather than a separately published sodium measurement. Less-than source salt values remain bounds; missing exact sodium is not replaced by zero. Source participating-restaurant and prepackaged-product markers still apply."
+      ],
+      "comparisonRows": [
+        {
+          "id": "FR|quick|84549c6b5653b214",
+          "name": "Coca Cola · 200 ml",
+          "serving": "1 portion publiée / format nommé · 200 ml",
+          "servingGrams": null,
+          "servingMillilitres": 200,
+          "cal": 84.0,
+          "p": 0.0,
+          "c": 21.0,
+          "fat": 0.0,
+          "f": 0.0,
+          "na": 0.0,
+          "sugar": 21.2,
+          "sat": 0.0,
+          "ingredientDescription": null,
+          "source": "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf",
+          "sourceDate": "2026-10-06",
+          "sourcePage": 2,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "FR|quick|ceea01848c8f524e",
+          "name": "Coca Cola · 500 ml",
+          "serving": "1 portion publiée / format nommé · 500 ml",
+          "servingGrams": null,
+          "servingMillilitres": 500,
+          "cal": 210.0,
+          "p": 0.0,
+          "c": 53.0,
+          "fat": 0.0,
+          "f": 0.0,
+          "na": 0.0,
+          "sugar": 53.0,
+          "sat": 0.0,
+          "ingredientDescription": null,
+          "source": "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf",
+          "sourceDate": "2026-10-06",
+          "sourcePage": 2,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "FR|quick|bc5b5d4c86a0fb50",
+          "name": "Méga Giant",
+          "serving": "1 portion publiée / format nommé",
+          "servingGrams": null,
+          "servingMillilitres": null,
+          "cal": 859.0,
+          "p": 46.0,
+          "c": 38.0,
+          "fat": 58.0,
+          "f": 2.4,
+          "na": 1248.0,
+          "sugar": 4.7,
+          "sat": 17.4,
+          "ingredientDescription": null,
+          "source": "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf",
+          "sourceDate": "2026-10-06",
+          "sourcePage": 1,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Méga Giant + 200ml Coca Cola",
+          "cal": 943
+        },
+        {
+          "expression": "Méga Giant + 500ml Coca Cola",
+          "cal": 1069
+        },
+        {
+          "expression": "500ml minus 200ml Coca Cola",
+          "cal": 126,
+          "c": 32
+        }
+      ],
+      "sources": [
+        "https://assets.quick.fr/Declaration_Nutritionnelle_des_produits_Quick_valable_a_partir_du_6_octobre_2026_a98adac17b.pdf"
+      ],
+      "recordIds": [
+        "FR|quick|84549c6b5653b214",
+        "FR|quick|ceea01848c8f524e",
+        "FR|quick|bc5b5d4c86a0fb50"
+      ]
+    },
+    {
+      "market": "IN",
+      "slug": "mcdonalds-north-east-india-veg-and-egg-mcmuffin",
+      "title": "McDonald’s North & East India: Veg and Egg Mc Muffin",
+      "reviewedAt": "2026-10-17",
+      "scope": "North & East India only: Connaught Plaza Restaurants Private Limited. No West/South India franchise equivalence. This regional scope must remain visible on cards, finder rows, directories and country home.",
+      "paragraphs": [
+        "This comparison covers the Connaught Plaza Restaurants Private Limited menu in North & East India. It does not apply automatically to the West or South India franchise menus. That operating-region label belongs with the food entry whenever it is searched, compared or saved.",
+        "The local booklet lists a 119 g Veg Mc Muffin at 303.35 kcal, 10.22 g protein, 38.86 g carbohydrate and 11.78 g fat. The 112 g Egg Mc Muffin is 283.46 kcal, 14.05 g protein, 28.12 g carbohydrate and 12.31 g fat.",
+        "For those exact named servings, Egg Mc Muffin has 19.89 fewer calories and 3.83 g more protein, while fat is 0.53 g higher. Sodium is 804.63 mg for Veg Mc Muffin and 519.31 mg for Egg Mc Muffin. The numbers compare complete listed items, not an isolated egg substitution.",
+        "The current official page links the booklet, but the PDF supplies no whole-book edition date. Its December 2025 upload path is not treated as a publication or review date. Some pages retain older product-version labels, which are preserved. Fibre and unclear source macro fields are not filled with assumed zeroes."
+      ],
+      "comparisonRows": [
+        {
+          "id": "IN|mcdonald-s-north-east-india|9354d21e61bd1e90",
+          "name": "Veg Mc Muffin",
+          "serving": "1 named source portion · 119 g",
+          "servingGrams": 119.0,
+          "servingMillilitres": null,
+          "cal": 303.35,
+          "p": 10.22,
+          "c": 38.86,
+          "fat": 11.78,
+          "f": null,
+          "na": 804.63,
+          "sugar": 3.02,
+          "sat": 7.29,
+          "ingredientDescription": null,
+          "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+          "sourceDate": null,
+          "sourcePage": 2,
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "IN|mcdonald-s-north-east-india|fae58a6ed21effc7",
+          "name": "Egg Mc Muffin",
+          "serving": "1 named source portion · 112 g",
+          "servingGrams": 112.0,
+          "servingMillilitres": null,
+          "cal": 283.46,
+          "p": 14.05,
+          "c": 28.12,
+          "fat": 12.31,
+          "f": null,
+          "na": 519.31,
+          "sugar": 2.38,
+          "sat": 6.92,
+          "ingredientDescription": null,
+          "source": "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf",
+          "sourceDate": null,
+          "sourcePage": 4,
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Egg minus Veg Mc Muffin",
+          "cal": -19.89,
+          "p": 3.83,
+          "c": -10.74,
+          "fat": 0.53,
+          "na": -285.32
+        }
+      ],
+      "sources": [
+        "https://mcdindia.com/wp-content/uploads/2025/12/product-nutritional-information-bookletpdf.pdf"
+      ],
+      "recordIds": [
+        "IN|mcdonald-s-north-east-india|9354d21e61bd1e90",
+        "IN|mcdonald-s-north-east-india|fae58a6ed21effc7"
+      ]
+    },
+    {
+      "market": "SG",
+      "slug": "burger-king-singapore-whopper-and-cheese",
+      "title": "Burger King Singapore: Whopper and Whopper with Cheese",
+      "reviewedAt": "2026-10-17",
+      "scope": "Burger King Singapore local menu. All nine linked category pages were captured; selected conflicting source rows withheld. Beverage 100ml reference entries remain reference amounts.",
+      "paragraphs": [
+        "Burger King Singapore’s local menu publishes separate nutrition for WHOPPER and WHOPPER with Cheese. These are Singapore source recipes; a burger with the same brand name in another country is a separate record.",
+        "WHOPPER is 625 kcal with 24 g protein, 54 g carbohydrate, 35 g fat and 1,400 mg sodium. WHOPPER with Cheese is 700 kcal with 29 g protein, 55 g carbohydrate, 40 g fat and 1,700 mg sodium. The published cheese version adds 75 kcal, 5 g protein, 5 g fat and 300 mg sodium.",
+        "The official description names a beef patty, pickles, ketchup, tomato, lettuce, onion, mayonnaise and a sesame bun for WHOPPER. That is a useful menu description; it is not a full additive, supplier or allergen formulation. The comparison uses the two published builds and does not calculate a universal cheese-slice value from their difference.",
+        "All nine linked local categories were captured. Two conflicting nutrition rows were withheld, and publication dates are unavailable. Some fountain beverages are explicitly reported per 100 ml: those references remain 100 ml entries and are excluded from complete-order matching until actual consumed volume is specified."
+      ],
+      "comparisonRows": [
+        {
+          "id": "SG|burger-king|2f010b9b6a6ad9d5",
+          "name": "WHOPPER®",
+          "serving": "1 named source item",
+          "servingGrams": null,
+          "servingMillilitres": null,
+          "cal": 625.0,
+          "p": 24.0,
+          "c": 54.0,
+          "fat": 35.0,
+          "f": 4.5,
+          "na": 1400.0,
+          "sugar": 17.0,
+          "sat": 12.0,
+          "ingredientDescription": "Look who's here - THE burger to rule them all. A real meaty flame-grilled WHOPPER® beef patty, topped with tangy pickles, ketchup, fresh tomatoes, crisp lettuce and fresh onions, finished with creamy mayo , and served on a toasted 5\" sesame seed bun. Feeling hungry for a real meaty burger yet? Double WHOPPER® Burger is also available.",
+          "source": "https://burgerking.com.sg/Menu/Category/1",
+          "sourceDate": null,
+          "sourcePage": "BK_MENU_PRODUCTS.2",
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "SG|burger-king|099ce5a70afdb9e3",
+          "name": "WHOPPER® with Cheese",
+          "serving": "1 named source item",
+          "servingGrams": null,
+          "servingMillilitres": null,
+          "cal": 700.0,
+          "p": 29.0,
+          "c": 55.0,
+          "fat": 40.0,
+          "f": 4.5,
+          "na": 1700.0,
+          "sugar": 18.0,
+          "sat": 16.0,
+          "ingredientDescription": "A full-flavored western, in a regular size offering! A mouth-watering, flame-grilled beef patty topped with American cheese, fresh tomatoes, crisp lettuce, tangy pickles and fresh onions, served on a toasted sesame seed bun and flavored with creamy mayo and tangy BBQ sauce. Take your tastebuds out on a wild ride! Double WHOPPER® with Cheese Burger is also available.",
+          "source": "https://burgerking.com.sg/Menu/Category/1",
+          "sourceDate": null,
+          "sourcePage": "BK_MENU_PRODUCTS.97",
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "WHOPPER with Cheese minus WHOPPER",
+          "cal": 75,
+          "p": 5,
+          "c": 1,
+          "fat": 5,
+          "na": 300
+        }
+      ],
+      "sources": [
+        "https://burgerking.com.sg/Menu/Category/1"
+      ],
+      "recordIds": [
+        "SG|burger-king|2f010b9b6a6ad9d5",
+        "SG|burger-king|099ce5a70afdb9e3"
+      ]
+    },
+    {
+      "market": "ZA",
+      "slug": "debonairs-south-africa-bbq-chicken-source-sizes",
+      "title": "Debonairs South Africa: log the whole named pizza size",
+      "reviewedAt": "2026-10-17",
+      "scope": "Debonairs Pizza South Africa official standard/halaal source guide. Source variants and named sizes preserved; identical nutritional variants merged. Local legal franchisees are not inferred.",
+      "paragraphs": [
+        "Debonairs Pizza South Africa’s local nutrition guide supplies separate whole named sizes. The selected Real Deal BBQ Chicken Small and Medium entries have the same published nutrition in its standard and halaal sections, so identical nutritional variants are merged with both source labels retained.",
+        "The Small source portion is 26.54 g protein, 73.89 g carbohydrate, 13.07 g fat and 397.66 mg sodium. The Medium is 45.04 g protein, 110.83 g carbohydrate, 24 g fat and 603.71 mg sodium. These numbers describe each whole source-sized portion, not one slice.",
+        "Source energy is in kilojoules. Dividing by 4.184 gives about 520.67 kcal for Small and 841.83 kcal for Medium. Calculated kcal is labelled as a unit conversion, while protein, carbs, fat and sodium remain source-reported. The Medium therefore adds about 321.15 kcal and 18.5 g protein.",
+        "The table does not supply gram weights, saturated fat or sugar for these entries. Several other source panels repeat conflicting Small labels or contain implausible decimal values; they were withheld together without guessing which size or decimal was intended. A local stock, full ingredient-formula or allergen-safety claim is not inferred."
+      ],
+      "comparisonRows": [
+        {
+          "id": "ZA|debonairs-pizza|0085878ffd13e420",
+          "name": "Real Deal® — BBQ Chicken · Small · standard / halaal",
+          "serving": "1 whole named source portion · Small",
+          "servingGrams": null,
+          "servingMillilitres": null,
+          "cal": 520.6739961759082,
+          "p": 26.54,
+          "c": 73.89,
+          "fat": 13.07,
+          "f": 2.0,
+          "na": 397.66,
+          "sugar": null,
+          "sat": null,
+          "ingredientDescription": null,
+          "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+          "sourceDate": null,
+          "sourcePage": "nutri-item-standard-1378-0-1",
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "ZA|debonairs-pizza|d7fd84fc826b1bfc",
+          "name": "Real Deal® — BBQ Chicken · Medium · standard / halaal",
+          "serving": "1 whole named source portion · Medium",
+          "servingGrams": null,
+          "servingMillilitres": null,
+          "cal": 841.8260038240917,
+          "p": 45.04,
+          "c": 110.83,
+          "fat": 24.0,
+          "f": 2.94,
+          "na": 603.71,
+          "sugar": null,
+          "sat": null,
+          "ingredientDescription": null,
+          "source": "https://debonairspizza.co.za/nutritional-and-allergen-guide/",
+          "sourceDate": null,
+          "sourcePage": "nutri-item-standard-1378-0-1",
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Medium minus Small whole source portion",
+          "cal": 321.1520076481835,
+          "p": 18.5,
+          "c": 36.94,
+          "fat": 10.93,
+          "na": 206.05
+        }
+      ],
+      "sources": [
+        "https://debonairspizza.co.za/nutritional-and-allergen-guide/"
+      ],
+      "recordIds": [
+        "ZA|debonairs-pizza|0085878ffd13e420",
+        "ZA|debonairs-pizza|d7fd84fc826b1bfc"
+      ]
+    }
+  ]
+}

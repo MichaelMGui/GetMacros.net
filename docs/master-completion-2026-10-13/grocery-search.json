@@ -6,7 +6,8 @@
     "Kirkland",
     "Compliments",
     "Our Finest",
-    "Western Family"
+    "Western Family",
+    "Japanese voiced kana matches source-normalized brands through combined library search"
   ],
   "lookup": [
     {
@@ -15,11 +16,11 @@
     },
     {
       "market": "CA",
-      "returned": 22
+      "returned": 21
     },
     {
       "market": "MX",
-      "returned": 30
+      "returned": 24
     },
     {
       "market": "GB",
@@ -27,7 +28,7 @@
     },
     {
       "market": "IE",
-      "returned": 25
+      "returned": 26
     },
     {
       "market": "AU",
@@ -44,19 +45,19 @@
     {
       "query": "President's Choice rice",
       "market": "CA",
-      "bytes": 1350060,
+      "bytes": 685954,
       "requests": 15
     },
     {
       "query": "Great Value milk",
       "market": "CA",
-      "bytes": 1560187,
+      "bytes": 576351,
       "requests": 31
     },
     {
       "query": "Kirkland almonds",
       "market": "CA",
-      "bytes": 998134,
+      "bytes": 387932,
       "requests": 12
     }
   ],

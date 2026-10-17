@@ -1,0 +1,650 @@
+[
+  {
+    "file": "mos-jp.pdf",
+    "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
+    "finalUrl": "https://www.mos.jp/menu/pdf/nutrition.pdf",
+    "retrievedAt": "2026-10-17",
+    "bytes": 522567,
+    "sha256": "1c2e33d26f11e3812a256175141d82b72b09dddc53cb328a89eacd15a552a13a",
+    "contentType": "application/pdf",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mos-jp-index.html",
+    "url": "https://www.mos.jp/omoi/quality/product_info/",
+    "finalUrl": "https://www.mos.jp/omoi/quality/product_info/",
+    "retrievedAt": "2026-10-17",
+    "bytes": 12653,
+    "sha256": "aa86cf362d95744b4d71e8a6a7a0b753ebf9b6ed67d2fd68a04b69d598557cc4",
+    "contentType": "text/html",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-uki.pdf",
+    "url": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+    "finalUrl": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+    "retrievedAt": "2026-10-17",
+    "bytes": 211913,
+    "sha256": "c5a6a222db62b194f69ec409b0bf830b88e59a8ced496a4703f4747a08c17b0c",
+    "contentType": "application/pdf",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-uki-index.html",
+    "url": "https://www.kfc.co.uk/nutrition-allergens",
+    "retrievedAt": "2026-10-17",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "kfc-ca.pdf",
+    "url": "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf",
+    "finalUrl": "https://assets.ctfassets.net/a2mgcrjjefyo/3AUi2N7aacNo4rjQ1jE3di/ab5513730957082e372dd36fd0a7c950/KFC_Nutritional_Information__W8__EN_FR.pdf",
+    "retrievedAt": "2026-10-17",
+    "bytes": 484791,
+    "sha256": "88d26a55911e5af2df5fd26a765d6a3ac7fef93cfad83fa328048ff776862496",
+    "contentType": "application/pdf",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-ca-index.html",
+    "url": "https://www.kfc.ca/nutrition-and-allergy-info",
+    "retrievedAt": "2026-10-17",
+    "error": "The read operation timed out"
+  },
+  {
+    "file": "kfc-nz-index.html",
+    "url": "https://help.kfc.co.nz/hc/en-us/articles/360028815991-Allergens-Nutrition",
+    "finalUrl": "https://help.kfc.co.nz/hc/en-us/articles/360028815991-Allergens-Nutrition",
+    "retrievedAt": "2026-10-17",
+    "bytes": 16786,
+    "sha256": "991b2df7191a2b5eb5f94e4b99f16ad5316d4c59dd67e4aa9038e7ddc6537b52",
+    "contentType": "text/html; charset=utf-8",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-au-index.html",
+    "url": "https://www.kfc.com.au/nutrition-allergen",
+    "retrievedAt": "2026-10-17",
+    "error": "The read operation timed out"
+  },
+  {
+    "file": "panda-us.html",
+    "url": "https://www.pandaexpress.com/nutritioninformation",
+    "retrievedAt": "2026-10-17",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "subway-mx-index.html",
+    "url": "https://www.subway.com/es-mx/menunutrition/nutrition",
+    "retrievedAt": "2026-10-17",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "file": "supermacs-ie.pdf",
+    "url": "https://supermacs.ie/wp-content/uploads/2024/06/Nutritional-SUPERMACS-PAPA-JOHNS-Rev005.pdf",
+    "finalUrl": "https://supermacs.ie/nutritional-information/",
+    "retrievedAt": "2026-10-17",
+    "bytes": 221077,
+    "sha256": "ea3f008342f93e75647d71c1c7a30911b4a26b90dd27c08f90430cfca590c192",
+    "contentType": "text/html; charset=UTF-8",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-index.html",
+    "url": "https://kfc.com.mx/tabla-nutricional",
+    "finalUrl": "https://kfc.com.mx/tabla-nutricional",
+    "retrievedAt": "2026-10-17",
+    "bytes": 302951,
+    "sha256": "79f581f235badb8d6b3187be1475dc83b6ea21022a88a5a00a9a9cce5d7922fd",
+    "contentType": "text/html; charset=utf-8",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-nz-menu.html",
+    "url": "https://kfc.co.nz/nutrition",
+    "retrievedAt": "2026-10-17",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "kfc-mx-01.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_01.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_01.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 91760,
+    "sha256": "5122db6b2bb19a142a12d71594a95deb65251f586caf1a8d80c917fa173b3841",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-02.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_02.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_02.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 73742,
+    "sha256": "663e2e03694bf594c241cb9c67435c82fcd44a4513873f7a959c7a9c2f1d8ba4",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-03.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_03.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_03.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 89315,
+    "sha256": "a13db0f9b141aad1d2788dac46fdee5703d04a7e94124a01f1948b2e6d02e4fc",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-04.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_04.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_04.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 80664,
+    "sha256": "faf3bf6d328329e4840e9f31a2a80479562fe537f4c1804c2da063d27d60c697",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-05.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_05.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_05.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 85113,
+    "sha256": "a5f13a1fd182f2dcd7c69257ad74f12884c7869b2358e45a222aac429499c5f9",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-06.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_06.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_06.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 87117,
+    "sha256": "f112dcc57d824e15fa419039e77378ac2c4fd7b21625bbeea7593aa1e591629b",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-07.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_07.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_07.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 59371,
+    "sha256": "5a5a34fd7faf1a740d7d70b34cb04c85f59d07bcf20269c12b2484baa2afd2d6",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-08.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_08.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_08.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 91143,
+    "sha256": "eb2a619a52f1396d6bf910117fdf02837a45fe0084ac86fa3f55ef17c622b874",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-09.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_09.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_09.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 91385,
+    "sha256": "ef984172d7d958dc118eb9267791b5e27f25c4cf1379041d6ec8a49dbb5a8f87",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-10.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_10.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_10.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 92772,
+    "sha256": "7234ff33ddfbcef9d757c45a494e26063249e037c5c07e5098b73bf2443c94d1",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-11.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_11.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_11.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 60119,
+    "sha256": "81fcd2e3316ffcdb534ea70641b98a295d6caf148d1b9160a4d788015ee54270",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-12.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_12.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_12.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 59352,
+    "sha256": "b07b47f7cffd90959eea8702fb397e373edf40301109477084b9cf80b9d2ea5c",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-13.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_12.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_12.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 59352,
+    "sha256": "b07b47f7cffd90959eea8702fb397e373edf40301109477084b9cf80b9d2ea5c",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-14.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_13.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_13.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 94739,
+    "sha256": "965a2fd026e77d314d6806dba027e19d67105149c3780cf309c53c349f98aabe",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-15.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_14.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_14.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 55267,
+    "sha256": "526bf523ba5350f41437664e26c9705f9f95cc2c8cec09495a54870c0951f222",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-16.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_15.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_15.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 87350,
+    "sha256": "3524441288bde060c7231ab370ad36e2aecb4be91c52a0ab4d9aed59195a1e7c",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-17.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_16.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_16.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 88940,
+    "sha256": "d825c92ed2d3690059c3444e991b25ea85245be6e16cc4f56682fac95fbccede",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-18.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_17.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_17.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 90099,
+    "sha256": "30dccf7e9f1216f21e907eaf8dfd2d235ae64b346fa2f2274533fab8ec957646",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-19.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_18.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_18.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 89943,
+    "sha256": "6519d29babb51ca5a4f1f2587a52b7a7d782407367b3254d93bcb05661c49b9a",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-20.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_19.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_19.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 57447,
+    "sha256": "9eadb8722aabd19df245ac0d4c5a761337fd95b28a88ac64c33820b9f1c92651",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-21.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_20.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_20.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 82976,
+    "sha256": "11ceb568bf21ca4f38fddbc28cc88073ce609b9a20964dd1315b2ac92b3413bb",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-22.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_21.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_21.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 87128,
+    "sha256": "f4898dbd60e045354c11ca002cec9c897acc7d36c6127c64088fb68cda954565",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-23.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_22.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_22.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 92094,
+    "sha256": "b94e4dae20985238d8059bbac83a1134dde4d4498e495b70d658219bb7204b58",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-24.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_23.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_23.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 53864,
+    "sha256": "bafb3f327d6ea920721a5feeb836209f2534db3f522bf306ea3f18763bc5601f",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-25.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_24.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_24.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 94044,
+    "sha256": "f9ac82b3bb19de48ab6ee235da8045558a5a1b228440bc454e424f80a803b500",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-26.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_25.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_25.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 86379,
+    "sha256": "1c771f4ec6bf32142062d30b0dd190d81f933613f020fbb0c1c533f8609ae6d3",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-27.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_26.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_26.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 82739,
+    "sha256": "60b303620cadfe21a6e36ac7923fe2148881525270cabe1c12a15133f2d0d56e",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-28.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_27.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_27.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 89842,
+    "sha256": "6d510cb3d909c596312043f67028eb99c9b229f328e5d78975f515e5c95a2608",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-29.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_28.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_28.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 90753,
+    "sha256": "60c28ccc62a73a45ca6351ccac6d5d0ad7fbf22a539fbe462f3a9193b07113f1",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-30.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_29.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_29.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 86002,
+    "sha256": "8443cba6680319d9c328060d1deaf462eec6d9bef8199753a14181e069171386",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-31.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_30.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_30.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 53775,
+    "sha256": "8156081d7a672d5060ca98fe581d512cd8b66fbd62331acf21010d461dcb8ef3",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-32.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_31.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_31.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 84633,
+    "sha256": "a2f05fd6348ba6bbcc19f7cc7846b6970d052666bf1ebb57e0e291338ee51be2",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-33.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_32.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_32.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 77147,
+    "sha256": "ba81405962bc5ab46f42eca8c396a7d0484ceb1f46184d7a4bad3d6dcda3aba5",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-34.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_33.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_33.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 57579,
+    "sha256": "4d498911c98bb4b68c773f421fbc56a7186b58425ec03d9bd883e3b74c79b0d1",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-35.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_34.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_34.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 78345,
+    "sha256": "f5fc0a576498fdd17db1764ffcd340a29da15c0afde06c6a3d0e37efe4a47fbb",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-36.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_35.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_35.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 51336,
+    "sha256": "e2846be22ec4614df74cdb477d05fce0eb4ee49f587598808f9488bdbf5822ca",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-37.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_36.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_36.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 78693,
+    "sha256": "25ad8e22bd03168bb26690d94eb091286d410d900763bdac0e83a55e418f9b92",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-38.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_37.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_37.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 52211,
+    "sha256": "b0eedaef891d9f631cd8cdc8997d7de27bbf46d15f78ddcc1452797bbe38e0b4",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-39.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_38.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_38.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 78799,
+    "sha256": "cc0e57dee10c39139c9b8cc68e6fb9a4ca1a243766dea0f765fb9544fd33480b",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-40.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_39.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_39.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 53693,
+    "sha256": "5eb6ffe560fe03df0600cd20aec9104a9282734c0f8ae5fd2d9c73211145bb75",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-41.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_40.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_40.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 92596,
+    "sha256": "8fcba33815a501c9580d8ff52616e182b9af479a2a6ec561211313541614b75c",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-42.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_41.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_41.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 110078,
+    "sha256": "c3a72561b840bdb0d6f95f87174d581e0c351ef8f86aa969b13b284e61e4cf8f",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-43.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_42.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_42.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 91716,
+    "sha256": "fc1ff2259001968ee0cea90eddf9e3e2aed8057217875afe745889c40a7e41ec",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-44.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_43.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_43.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 91998,
+    "sha256": "8aad5df7dddeb2aadc4b14bd12887f22eabefb8723b12f95f3ae1029a2e42e75",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-45.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_44.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_44.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 97145,
+    "sha256": "aec80305e80bdc19aa7375bb851ed618b2e56806343d99e2992120ab5a9b224c",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-46.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_45.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_45.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 63198,
+    "sha256": "60a5c3738f22efb54bd38f3eb2170477cc70de072d69934453375aa00aac889f",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-47.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_46.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_46.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 99879,
+    "sha256": "6c0f7c381174cda5ad8d1bcb3bd2bb64d56271982243cc7fac27be0283cb033d",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-48.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_47.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_47.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 95350,
+    "sha256": "13fc93caece7a91b8c6cd715bd504459bb65aacdd3e43b9f4c3e7b11bb8c2da1",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-49.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_48.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_48.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 103020,
+    "sha256": "b1be1d0a1e0197607bba7e363e4f2fa593f3424ecf188d6444255ca98a35d962",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-50.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_49.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_49.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 65852,
+    "sha256": "c06fa603df0e1f183b686154a16c528c8cf28b8c8801702ad09c6ed0d7424406",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-51.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_50.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_50.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 70629,
+    "sha256": "fde3bfd28f3dbbaac889e6f84338f53d9148a4d6082dac893befb5b10c64f5ca",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-52.jpg",
+    "url": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_51.jpg",
+    "finalUrl": "https://cdn.tictuk.com/7646423017805410/static-images/Nutrimentales%202026%20V5_Page_51.jpg",
+    "retrievedAt": "2026-10-17",
+    "bytes": 45808,
+    "sha256": "65ac2371d9e45f7a787357011a36d5de85529a645e4ddf1858b6c4332c8fa5b8",
+    "contentType": "image/jpeg",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-mx-index.html",
+    "url": "https://kfc.com.mx/tabla-nutricional",
+    "finalUrl": "https://kfc.com.mx/tabla-nutricional",
+    "retrievedAt": "2026-10-17",
+    "bytes": 302951,
+    "sha256": "79f581f235badb8d6b3187be1475dc83b6ea21022a88a5a00a9a9cce5d7922fd",
+    "contentType": "text/html; charset=utf-8",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-nz-menu.html",
+    "url": "https://kfc.co.nz/nutrition",
+    "retrievedAt": "2026-10-17",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "subway-nz-2026.pdf",
+    "url": "https://media.subway.com/dam/urn:aaid:aem:0e28bcc2-9385-4a0d-b54f-3a177e7dd86d/original/as/NZ%20Nutritional%20Web%20Guide%20May%202026.pdf",
+    "retrievedAt": "2026-10-17",
+    "error": "Remote end closed connection without response"
+  }
+]
