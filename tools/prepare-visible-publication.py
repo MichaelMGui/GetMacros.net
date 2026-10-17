@@ -1,10 +1,11 @@
 """Publish only the reviewed workspace changes through the established checkout."""
 from pathlib import Path
-import json,re,shutil,subprocess,difflib
+import json,re,shutil,subprocess,difflib,argparse
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'docs/visible-pass-2026-10-17'
 DEST=ROOT/'docs/master-release-2026-10-12/publisher'
-BASE='e1eeee003a5e440ac0a6f456bba5b7d0033693a5'
+parser=argparse.ArgumentParser();parser.add_argument('--expected-head',default='e1eeee003a5e440ac0a6f456bba5b7d0033693a5');args=parser.parse_args();BASE=args.expected_head
+assert re.fullmatch(r'[a-f0-9]{40}',BASE)
 assert subprocess.check_output(['git','rev-parse','HEAD'],cwd=DEST,text=True).strip()==BASE
 assert subprocess.check_output(['git','remote','get-url','origin'],cwd=DEST,text=True).strip()=='https://github.com/MichaelMGui/GetMacros.net.git'
 assert not subprocess.check_output(['git','diff','--name-only'],cwd=DEST,text=True).strip(),'Unstaged publisher work must be preserved.'

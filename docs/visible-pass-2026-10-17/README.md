@@ -33,3 +33,5 @@ No claim of a complete accessibility audit, physical-device/Safari testing, fiel
 ## Final source-build result
 
 The complete staged production build passed outside the restricted Windows fixture sandbox. All 494 compared public pages, active assets, manifests and the offline worker matched the reviewed application exactly. The earlier additional food, generator, country and integration suites also passed; their first output comparison identified the corrected stylesheet-link placement. A repeated regional/template/asset cycle now preserves all eight homepage files byte-for-byte.
+
+The final 320-pixel picker inspection found cramped labels. Meal choices now use two rows only at that narrow width; source tabs use proportionate columns. Both themes were rendered again and all choice/tab labels fit their controls. Screenshots: `after/search-light-320.png` and `after/search-dark-320.png`.

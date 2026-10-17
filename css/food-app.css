@@ -24,3 +24,5 @@
 
 @media(prefers-reduced-motion:reduce){.diary-workspace .diary-meal-add{transition:none;transform:none}}
 html[data-motion=calm] .diary-workspace .diary-meal-add{transition:none;transform:none}
+
+@media(max-width:350px){.diary-workspace .diary-meal-choice>div{display:grid;grid-template-columns:1fr 1fr;gap:6px}.diary-workspace .diary-meal-choice label{font-size:.78rem;padding:8px 10px;justify-content:flex-start;gap:8px}.diary-workspace .diary-meal-choice input{width:14px;height:14px}.diary-workspace .food-picker-tabs{display:grid;grid-template-columns:1fr 1fr 1.25fr 1.15fr 1fr;gap:2px}.diary-workspace .food-picker-tabs button{min-width:0;padding:9px 3px;font-size:.68rem}}

@@ -120,9 +120,9 @@
     "assetSha256": "7151b5636eb8df3859cbecfd018101b2788b3b340c1d4be03959c2eb42cdfa89"
   },
   "css/food-app.css": {
-    "url": "/assets/generated/css-food-app-8675edca5ef9.css",
-    "sourceSha256": "8675edca5ef987c17a83585856718fe9df66fc668febbceb47c3ccbb17abcdbd",
-    "assetSha256": "8675edca5ef987c17a83585856718fe9df66fc668febbceb47c3ccbb17abcdbd"
+    "url": "/assets/generated/css-food-app-40e38cac15e1.css",
+    "sourceSha256": "40e38cac15e1b22c603fb10a26281f071e5ece9ee0dfc2875e71ca2cf36b1dbe",
+    "assetSha256": "40e38cac15e1b22c603fb10a26281f071e5ece9ee0dfc2875e71ca2cf36b1dbe"
   },
   "js/food-core.js": {
     "url": "/assets/generated/js-food-core-5ede21042845.js",
