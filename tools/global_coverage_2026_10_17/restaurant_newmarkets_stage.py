@@ -2,7 +2,6 @@
 from pathlib import Path
 import json,re,hashlib
 from collections import Counter,defaultdict
-import lxml.html
 import restaurant_stage as core
 ROOT=Path(__file__).resolve().parents[2]
 D=ROOT/'docs/global-coverage-2026-10-17/restaurants/newmarkets'
@@ -16,6 +15,7 @@ def n(value,comma=False):
  return float(s) if re.fullmatch(r'\d+(?:\.\d+)?',s) else None
 def text(s):return core.clean(s)
 def htmltext(s):
+ import lxml.html
  try:return text(lxml.html.fromstring('<div>'+s+'</div>').text_content())
  except Exception:return text(s)
 def screen(name,v,src,page):
@@ -101,6 +101,7 @@ def singapore():
    r['productId']=product_id;r['productUrl']='https://burgerking.com.sg/Menu/Category/'+file.stem.removeprefix('bk-sg-category')+'#product-'+product_id;r['ingredientDescription']=description
    if reference:r['servingMillilitres']=100;r['nutrientBasis']='per 100 ml source reference';r['finderSupported']=False
 def south_africa():
+ import lxml.html
  src=core.source('debonairs-za-index.html','ZA','Debonairs Pizza',None,limitations='Live standard/halaal source nutrition panels. No publication date or gram weight supplied. Same-size conflicting panels withheld together. Source decimal/size inconsistencies not repaired. kJ converted to kcal; a whole source-sized portion is not one slice.')
  doc=lxml.html.fromstring((D/'debonairs-za-index.html').read_text(encoding='utf-8'))
  candidates=[]
