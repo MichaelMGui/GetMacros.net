@@ -136,6 +136,11 @@ def south_africa():
   if len(r['sourceVariants'])>1:r['name']=r['name'].rsplit(' · ',1)[0]+' · standard / halaal';r['notes']+=' Identical standard and halaal source values merged into one nutritional record.'
  return {'sourcePanels':len(candidates),'ambiguousRepeatedSizeGroups':len(duplicate_groups)}
 def save(extra):
+ for file,market,chain,url in [
+  ('quick-fr-index.html','FR','Quick','https://www.quick.fr/'),
+  ('mcd-in-ne-index.html','IN','McDonald’s North & East India','https://mcdindia.com/nutritional-information/'),
+  ('bk-sg-main.js','SG','Burger King','https://burgerking.com.sg/Content/js/main.js')]:
+  core.source(file,market,chain,None,url=url,method='official menu linkage, operating-region or nutrient-unit display evidence',limitations='Supporting source proof; not a separate nutrition record, publication-date claim or reusable visual asset.')
  seen={};output=[];conflicted=set()
  for r in core.records:
   identity=r['market']+'|'+r['restaurantId']+'|'+hashlib.sha256((r['name']+'|'+r['serving']).encode()).hexdigest()[:16]

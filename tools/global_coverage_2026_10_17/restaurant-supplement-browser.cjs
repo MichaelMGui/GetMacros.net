@@ -1,0 +1,8 @@
+// Public official-page capture for source discovery; no account or ordering APIs.
+const fs=require('node:fs'),path=require('node:path');
+const{chromium}=require('C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const out=path.resolve(__dirname,'../../docs/global-coverage-2026-10-17/restaurants/supplement');
+(async()=>{const b=await chromium.launch({channel:'msedge',headless:true,args:['--no-proxy-server']});const c=await b.newContext({locale:'en-US'});const p=await c.newPage();const responses=[];
+p.on('response',async r=>{const u=r.url();if(/mcdonalds|bk\.com|burgerking|rbictg|sanity\.io/.test(u)&&!/(segment|adobe|demdex|consent|analytics)/.test(u)){const entry={url:u,status:r.status(),contentType:r.headers()['content-type']};responses.push(entry);if(/json/.test(r.headers()['content-type']||'')){try{const index=responses.length,body=await r.body();if(body.length<2*1024*1024){const name='browser-response-'+index+'.json';fs.writeFileSync(path.join(out,name),body);entry.file=name;}}catch{}}}});
+for(const [name,url]of[['mcd-ca','https://www.mcdonalds.com/ca/en-ca/full-menu.html'],['bk-us','https://www.bk.com/nutrition-explorer']]){try{await p.goto(url,{waitUntil:'domcontentloaded',timeout:45000});await p.waitForTimeout(10000);fs.writeFileSync(path.join(out,name+'-browser.html'),await p.content());fs.writeFileSync(path.join(out,name+'-browser.txt'),await p.locator('body').innerText());console.log(name,p.url(),(await p.locator('body').innerText()).slice(0,1600));}catch(e){console.log(name,e.message);}}
+fs.writeFileSync(path.join(out,'browser-responses.json'),JSON.stringify(responses,null,2));await b.close();})().catch(e=>{console.error(e);process.exitCode=1});

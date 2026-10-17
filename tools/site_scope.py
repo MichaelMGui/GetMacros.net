@@ -159,9 +159,13 @@ def release_routes():
     routes.add('how-to-log-food-portions.html')
     routes.add('grocery-food-coverage.html')
     routes.add('compare-foods.html')
-    global_briefs=root/'docs/global-coverage-2026-10-17/restaurants/guide-briefs.json'
-    if global_briefs.exists():
-        routes.update(r['slug']+'.html' for r in json.loads(global_briefs.read_text(encoding='utf-8'))['briefs'] if r['market']=='US')
+    for relative in ['docs/global-coverage-2026-10-17/restaurants/guide-briefs.json','docs/global-coverage-2026-10-17/restaurants/supplement/guide-briefs.json']:
+        global_briefs=root/relative
+        if global_briefs.exists():
+            routes.update(r['slug']+'.html' for r in json.loads(global_briefs.read_text(encoding='utf-8'))['briefs'] if r['market']=='US')
+    supplement=root/'tools/global_coverage_2026_10_17/restaurant-supplement-records.json'
+    if supplement.exists():
+        routes.update(r['url'].lstrip('/') for r in json.loads(supplement.read_text(encoding='utf-8'))['records'] if r['market']=='US')
     clarity=root/'docs/clarity-release-2026-10-14/editorial-manifest.json'
     if clarity.exists():
         routes.update(r['route'].lstrip('/') for r in json.loads(clarity.read_text(encoding='utf-8'))['routes'])

@@ -1,0 +1,2509 @@
+[
+  {
+    "sourceObjectId": "08745030-a330-425a-8689-9fed8e479f76",
+    "name": {
+      "_type": "localeString",
+      "en": "Iced Tea"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 95,
+      "carbohydrates": 22,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "saturatedFat": 0,
+      "sugar": 22,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=08745030-a330-425a-8689-9fed8e479f76]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "10fa9250-0740-47a7-9ddb-79373a55eb10",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Coca-Cola",
+      "es": "PLU CONFIG TEST Pepsi Grande"
+    },
+    "sourceUpdatedAt": "2024-09-19T15:06:16Z",
+    "productSize": "850 Ml",
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 262.5,
+      "carbohydrates": 66.3,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 66.3,
+      "transFat": 0,
+      "weight": 625.09
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=10fa9250-0740-47a7-9ddb-79373a55eb10]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Explicit PLU CONFIG TEST product; excluded from consumer menu coverage."
+    ]
+  },
+  {
+    "sourceObjectId": "11274e5f-1678-4092-b59c-80ea14730827",
+    "name": {
+      "_type": "localeString",
+      "en": "Sprite"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 185,
+      "carbohydrates": 45.5,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 86.4,
+      "saturatedFat": 0,
+      "sugar": 45.5,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=11274e5f-1678-4092-b59c-80ea14730827]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred.",
+      "Large energy/macronutrient discrepancy: source calories 185; 4/4/9 screening estimate 527.6 kcal. No corrected values invented."
+    ]
+  },
+  {
+    "sourceObjectId": "148c51b3-ab00-4a59-adfd-9e244fcaa8a8",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Fries",
+      "es": "Papas Grandes"
+    },
+    "sourceUpdatedAt": "2025-12-16T18:20:58Z",
+    "productSize": "176 Gramos",
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 379.22,
+      "carbohydrates": 47.56,
+      "cholesterol": 0,
+      "fat": 16.93,
+      "fiber": 8.43,
+      "proteins": 4.89,
+      "salt": 0.73,
+      "saturatedFat": 5.82,
+      "sodium": 290.97,
+      "sugar": 0.32,
+      "transFat": 0.11,
+      "weight": 159
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=148c51b3-ab00-4a59-adfd-9e244fcaa8a8]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Conflicting source portion: productSize is 176 Gramos but nutrition.weight is 159 g. Neither chosen."
+    ]
+  },
+  {
+    "sourceObjectId": "1dcabaf2-20ec-42c9-8b79-2e092354e632",
+    "name": {
+      "_type": "localeString",
+      "en": "Medium Pepsi",
+      "es": "PLU CONFIG TEST Pepsi Mediana"
+    },
+    "sourceUpdatedAt": "2024-09-11T19:21:42Z",
+    "productSize": "566 Ml",
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 190,
+      "carbohydrates": 48.2,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 48.2,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=1dcabaf2-20ec-42c9-8b79-2e092354e632]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Explicit PLU CONFIG TEST product; excluded from consumer menu coverage."
+    ]
+  },
+  {
+    "sourceObjectId": "1e7a61bc-86ee-49ac-b8e9-b492de05eaa5",
+    "name": {
+      "_type": "localeString",
+      "en": "Coca-Cola®"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 190,
+      "carbohydrates": 48.2,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "saturatedFat": 0,
+      "sugar": 48.2,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=1e7a61bc-86ee-49ac-b8e9-b492de05eaa5]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "3a0c2137-5a72-47e8-9e8e-07ebd2db8110",
+    "name": {
+      "_type": "localeString",
+      "en": "Fanta"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 86.4,
+      "carbohydrates": 20.5,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "saturatedFat": 0,
+      "sugar": 20.5,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=3a0c2137-5a72-47e8-9e8e-07ebd2db8110]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "4bd7629b-6309-4b9e-b95d-b56a707671ab",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Onion Rings",
+      "es": "PLU CONFIG TEST Aros de Cebolla Grandes"
+    },
+    "sourceUpdatedAt": "2024-09-19T15:06:16Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 224.82,
+      "carbohydrates": 27.97,
+      "cholesterol": 0,
+      "fat": 9.78,
+      "fiber": 3.33,
+      "proteins": 4.58,
+      "salt": 0.38,
+      "saturatedFat": 2.17,
+      "sodium": 152.1,
+      "sugar": 4.29,
+      "transFat": 0,
+      "weight": 90
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=4bd7629b-6309-4b9e-b95d-b56a707671ab]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Explicit PLU CONFIG TEST product; excluded from consumer menu coverage."
+    ]
+  },
+  {
+    "sourceObjectId": "5f4a8866-776d-47bd-a82f-d560c66681cc",
+    "name": {
+      "_type": "localeString",
+      "en": "Plant Based Chicken Royale"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 206.86,
+      "carbohydrates": 36.48,
+      "cholesterol": 0,
+      "fat": 3.2,
+      "fiber": 2.21,
+      "proteins": 7.09,
+      "salt": 2.46,
+      "saturatedFat": 0.77,
+      "sodium": 1040.48,
+      "sugar": 4.93,
+      "transFat": 0,
+      "weight": 175
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=5f4a8866-776d-47bd-a82f-d560c66681cc]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "76beba77-ed47-4020-900e-187ef9079683",
+    "name": {
+      "_type": "localeString",
+      "en": "Manzanita Sol Large",
+      "es": "Manzanita Sol Grande"
+    },
+    "sourceUpdatedAt": "2025-10-15T20:32:29Z",
+    "productSize": "850 Ml",
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 350,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 625.09
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=76beba77-ed47-4020-900e-187ef9079683]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Large energy/macronutrient discrepancy: source calories 350; 4/4/9 screening estimate 0 kcal. No corrected values invented."
+    ]
+  },
+  {
+    "sourceObjectId": "8fad2475-aedd-4554-9443-e1e26f4904e6",
+    "name": {
+      "_type": "localeString",
+      "en": "Bottled Water Epura",
+      "es": "Epura"
+    },
+    "sourceUpdatedAt": "2026-09-07T15:47:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 0,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 500
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=8fad2475-aedd-4554-9443-e1e26f4904e6]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "963f5461-81c8-4c5b-8a69-9a38b04224a4",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Fries",
+      "es": "PLU CONFIGS TEST Papas Grandes"
+    },
+    "sourceUpdatedAt": "2024-09-19T15:06:16Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 379.22,
+      "carbohydrates": 47.56,
+      "cholesterol": 0,
+      "fat": 16.93,
+      "fiber": 8.43,
+      "proteins": 4.89,
+      "salt": 0.73,
+      "saturatedFat": 5.82,
+      "sodium": 290.97,
+      "sugar": 0.32,
+      "transFat": 0.11,
+      "weight": 159
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=963f5461-81c8-4c5b-8a69-9a38b04224a4]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Explicit PLU CONFIG TEST product; excluded from consumer menu coverage."
+    ]
+  },
+  {
+    "sourceObjectId": "a25e784e-3368-426b-bf62-b83854dc6f60",
+    "name": {
+      "_type": "localeString",
+      "en": "Medium Onion Rings",
+      "es": "PLU CONFIG TEST Aros de Cebolla Medianos"
+    },
+    "sourceUpdatedAt": "2024-09-12T12:01:46Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 337.23,
+      "carbohydrates": 41.96,
+      "cholesterol": 0,
+      "fat": 14.67,
+      "fiber": 5,
+      "proteins": 6.87,
+      "salt": 0.57,
+      "saturatedFat": 3.25,
+      "sodium": 228.15,
+      "sugar": 6.44,
+      "transFat": 0,
+      "weight": 135
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=a25e784e-3368-426b-bf62-b83854dc6f60]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Explicit PLU CONFIG TEST product; excluded from consumer menu coverage."
+    ]
+  },
+  {
+    "sourceObjectId": "a43fcfc0-a996-461e-b103-aa2d5adbd270",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Fries",
+      "es": "Papas Grandes"
+    },
+    "sourceUpdatedAt": "2025-10-22T21:39:57Z",
+    "productSize": "176 Gramos",
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 379.22,
+      "carbohydrates": 47.56,
+      "cholesterol": 0,
+      "fat": 16.93,
+      "fiber": 8.43,
+      "proteins": 4.89,
+      "salt": 0.73,
+      "saturatedFat": 5.82,
+      "sodium": 290.97,
+      "sugar": 0.32,
+      "transFat": 0.11,
+      "weight": 159
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=a43fcfc0-a996-461e-b103-aa2d5adbd270]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Conflicting source portion: productSize is 176 Gramos but nutrition.weight is 159 g. Neither chosen."
+    ]
+  },
+  {
+    "sourceObjectId": "c664ef2e-d38e-4044-b2b0-5f0b5a7adc9e",
+    "name": {
+      "_type": "localeString",
+      "en": "WHOPPER®"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 476.5,
+      "carbohydrates": 40.86,
+      "cholesterol": 0,
+      "fat": 20.92,
+      "fiber": 3.09,
+      "proteins": 29.91,
+      "salt": 0.99,
+      "saturatedFat": 8.02,
+      "sodium": 440.88,
+      "sugar": 5.63,
+      "transFat": 0,
+      "weight": 174
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=c664ef2e-d38e-4044-b2b0-5f0b5a7adc9e]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "ca570cc7-84a9-4f8f-b0a6-645ca158356f",
+    "name": {
+      "_type": "localeString",
+      "en": "Mini King Fusion with Nutella®"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 189.95,
+      "carbohydrates": 26.18,
+      "cholesterol": 0.6,
+      "fat": 7.92,
+      "fiber": 0.85,
+      "proteins": 3.12,
+      "salt": 0.36,
+      "saturatedFat": 3.64,
+      "sodium": 144.77,
+      "sugar": 21.65,
+      "transFat": 0,
+      "weight": 81.5
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=ca570cc7-84a9-4f8f-b0a6-645ca158356f]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "e48e6755-4043-4eb7-8fb4-bbba9289eb83",
+    "name": {
+      "_type": "localeString",
+      "en": "9 Onion Rings"
+    },
+    "sourceUpdatedAt": "2023-01-09T14:45:18Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 337.23,
+      "carbohydrates": 41.96,
+      "cholesterol": 0,
+      "fat": 14.67,
+      "fiber": 5,
+      "proteins": 6.87,
+      "salt": 0.57,
+      "saturatedFat": 3.25,
+      "sodium": 228.15,
+      "sugar": 6.44,
+      "transFat": 0,
+      "weight": 135
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=e48e6755-4043-4eb7-8fb4-bbba9289eb83]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "ecb35609-74ef-467d-81da-bf22a8a680cc",
+    "name": {
+      "_type": "localeString",
+      "en": "Medium Fries",
+      "es": "PLU CONFIG TEST Papas Medianas "
+    },
+    "sourceUpdatedAt": "2024-09-12T12:01:22Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 276.66,
+      "carbohydrates": 34.7,
+      "cholesterol": 0,
+      "fat": 12.36,
+      "fiber": 6.15,
+      "proteins": 3.57,
+      "salt": 0.53,
+      "saturatedFat": 4.25,
+      "sodium": 212.28,
+      "sugar": 0.23,
+      "transFat": 0.08,
+      "weight": 116
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=ecb35609-74ef-467d-81da-bf22a8a680cc]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Explicit PLU CONFIG TEST product; excluded from consumer menu coverage."
+    ]
+  },
+  {
+    "sourceObjectId": "f3760c9b-bdf8-4502-9519-2ec9d68b7e26",
+    "name": {
+      "_type": "localeString",
+      "en": "Small Manzanita Sol",
+      "es": "Manzanita Sol Regular"
+    },
+    "sourceUpdatedAt": "2025-01-08T21:10:25Z",
+    "productSize": "453 Ml",
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 150,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "saturatedFat": 0,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=f3760c9b-bdf8-4502-9519-2ec9d68b7e26]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "Large energy/macronutrient discrepancy: source calories 150; 4/4/9 screening estimate 0 kcal. No corrected values invented."
+    ]
+  },
+  {
+    "sourceObjectId": "f89e2aa6-4156-41c5-bcce-3015e49b311c",
+    "name": {
+      "_type": "localeString",
+      "en": "Fries"
+    },
+    "sourceUpdatedAt": "2023-01-23T17:07:07Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 278.4,
+      "carbohydrates": 33.75,
+      "cholesterol": 0,
+      "fat": 12.99,
+      "fiber": 6.15,
+      "proteins": 3.54,
+      "salt": 0.55,
+      "saturatedFat": 4.5,
+      "sodium": 218.08,
+      "sugar": 0.23,
+      "transFat": 0.05,
+      "weight": 116
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=f89e2aa6-4156-41c5-bcce-3015e49b311c]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_10640",
+    "name": {
+      "_type": "localeString",
+      "en": "Bottled Water",
+      "es": "Agua"
+    },
+    "sourceUpdatedAt": "2024-11-07T21:50:20Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 0,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 500
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_10640]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_12926",
+    "name": {
+      "_type": "localeString",
+      "en": "Kids Hamburger"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:33Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 234.87,
+      "carbohydrates": 23.83,
+      "cholesterol": 0,
+      "fat": 9.23,
+      "fiber": 1.48,
+      "proteins": 13.61,
+      "salt": 0.6,
+      "saturatedFat": 3.67,
+      "sodium": 247.24,
+      "sugar": 3.18,
+      "transFat": 0.15,
+      "weight": 84.27
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_12926]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_12927",
+    "name": {
+      "_type": "localeString",
+      "en": "Kids Cheeseburger"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:33Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 272.11,
+      "carbohydrates": 24.63,
+      "cholesterol": 0,
+      "fat": 12.09,
+      "fiber": 1.59,
+      "proteins": 15.68,
+      "salt": 1.12,
+      "saturatedFat": 5.54,
+      "sodium": 453.58,
+      "sugar": 3.67,
+      "transFat": 0.15,
+      "weight": 95.67
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_12927]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_13084",
+    "name": {
+      "_type": "localeString",
+      "en": "Kids Nuggets"
+    },
+    "sourceUpdatedAt": "2023-01-19T05:00:30Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 165.12,
+      "carbohydrates": 10.94,
+      "cholesterol": 0,
+      "fat": 9.34,
+      "fiber": 0.58,
+      "proteins": 8.96,
+      "salt": 0.93,
+      "saturatedFat": 1.41,
+      "sodium": 370.56,
+      "sugar": 0.63,
+      "transFat": 0,
+      "weight": 64
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_13084]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_16871",
+    "name": {
+      "_type": "localeString",
+      "en": "20 Nuggets"
+    },
+    "sourceUpdatedAt": "2025-03-03T14:23:45Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 827.3,
+      "carbohydrates": 55.11,
+      "cholesterol": 0,
+      "fat": 46.72,
+      "fiber": 2.88,
+      "proteins": 44.81,
+      "salt": 4.66,
+      "saturatedFat": 7.04,
+      "sodium": 1864.44,
+      "sugar": 3.52,
+      "transFat": 0,
+      "weight": 321
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_16871]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1851",
+    "name": {
+      "_type": "localeString",
+      "en": "Hamburger"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:59:19Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 234.88,
+      "carbohydrates": 23.82,
+      "cholesterol": 0,
+      "fat": 9.24,
+      "fiber": 1.47,
+      "proteins": 13.61,
+      "salt": 0.6,
+      "saturatedFat": 3.69,
+      "sodium": 247.23,
+      "sugar": 3.17,
+      "transFat": 0.15,
+      "weight": 84.27
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1851]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1852",
+    "name": {
+      "_type": "localeString",
+      "de": "WHOPPER®",
+      "en": "WHOPPER®",
+      "es": "WHOPPER®",
+      "fr": "WHOPPER®",
+      "it": "WHOPPER®"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:15:22Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 572.68,
+      "carbohydrates": 42.12,
+      "cholesterol": 0,
+      "fat": 31,
+      "fiber": 3.09,
+      "proteins": 29.91,
+      "salt": 1.41,
+      "saturatedFat": 8.65,
+      "sodium": 567.51,
+      "sugar": 6.05,
+      "transFat": 0,
+      "weight": 195
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1852]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1853",
+    "name": {
+      "_type": "localeString",
+      "en": "Chicken Royale"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:33:43Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 335.1,
+      "carbohydrates": 38.16,
+      "cholesterol": 0,
+      "fat": 16.64,
+      "fiber": 2.21,
+      "proteins": 7.09,
+      "salt": 3.02,
+      "saturatedFat": 1.61,
+      "sodium": 1209.32,
+      "sugar": 5.49,
+      "transFat": 0,
+      "weight": 203
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1853]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1854",
+    "name": {
+      "_type": "localeString",
+      "en": "Cheeseburger"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:58:46Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 272.12,
+      "carbohydrates": 24.62,
+      "cholesterol": 0,
+      "fat": 12.1,
+      "fiber": 1.58,
+      "proteins": 15.68,
+      "salt": 1.12,
+      "saturatedFat": 5.56,
+      "sodium": 453.57,
+      "sugar": 3.66,
+      "transFat": 0.15,
+      "weight": 95.67
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1854]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1855",
+    "name": {
+      "_type": "localeString",
+      "en": "Double WHOPPER®"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:33Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 319.53,
+      "carbohydrates": 41.22,
+      "cholesterol": 0,
+      "fat": 20.15,
+      "fiber": 3.64,
+      "proteins": 6.85,
+      "salt": 1.57,
+      "saturatedFat": 1.13,
+      "sodium": 633.72,
+      "sugar": 5.18,
+      "transFat": 0,
+      "weight": 280
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1855]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1858",
+    "name": {
+      "_type": "localeString",
+      "de": "Bacon Double Cheeseburger",
+      "en": "Bacon Double Cheeseburger",
+      "es": "Bacon Double Cheeseburger",
+      "fr": "Bacon Double Cheeseburger",
+      "it": "Bacon Double Cheeseburger"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:22:22Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 317.52,
+      "carbohydrates": 22.69,
+      "cholesterol": 0,
+      "fat": 14.92,
+      "fiber": 1.95,
+      "proteins": 21.7,
+      "salt": 2.08,
+      "saturatedFat": 7.18,
+      "sodium": 832.79,
+      "sugar": 2.04,
+      "transFat": 0.3,
+      "weight": 149.34
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1858]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1860",
+    "name": {
+      "_type": "localeString",
+      "en": "6 Nuggets"
+    },
+    "sourceUpdatedAt": "2024-11-01T20:42:06Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 249.38,
+      "carbohydrates": 16.81,
+      "cholesterol": 0,
+      "fat": 14.02,
+      "fiber": 0.86,
+      "proteins": 13.45,
+      "salt": 1.42,
+      "saturatedFat": 2.11,
+      "sodium": 567.48,
+      "sugar": 1.3,
+      "transFat": 0,
+      "weight": 97
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1860]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1870",
+    "name": {
+      "_type": "localeString",
+      "en": "Double Cheeseburger"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:59:50Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 405.51,
+      "carbohydrates": 25.45,
+      "cholesterol": 0,
+      "fat": 21.78,
+      "fiber": 1.87,
+      "proteins": 26.43,
+      "salt": 1.7,
+      "saturatedFat": 10.44,
+      "sodium": 687.34,
+      "sugar": 4.19,
+      "transFat": 0.3,
+      "weight": 140.34
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1870]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_1880",
+    "name": {
+      "_type": "localeString",
+      "en": "Tea"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:33Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 0,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0.1,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 100
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_1880]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_2181",
+    "name": {
+      "_type": "localeString",
+      "en": "Bacon Double Cheese XL"
+    },
+    "sourceUpdatedAt": "2023-01-19T11:43:26Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 205.65,
+      "carbohydrates": 38.35,
+      "cholesterol": 0,
+      "fat": 8.41,
+      "fiber": 4.21,
+      "proteins": 6.06,
+      "salt": 3.81,
+      "saturatedFat": 1.04,
+      "sodium": 1526.4,
+      "sugar": 3.26,
+      "transFat": 0,
+      "weight": 316.6
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_2181]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_2183",
+    "name": {
+      "_type": "localeString",
+      "en": "9 Nuggets"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:47:41Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 373.22,
+      "carbohydrates": 25.01,
+      "cholesterol": 0,
+      "fat": 21.02,
+      "fiber": 1.3,
+      "proteins": 20.17,
+      "salt": 2.11,
+      "saturatedFat": 3.17,
+      "sodium": 845.4,
+      "sugar": 1.78,
+      "transFat": 0,
+      "weight": 145
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_2183]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_2186",
+    "name": {
+      "_type": "localeString",
+      "en": "20 Chilli Cheese Bites"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:56:08Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 1060.77,
+      "carbohydrates": 103.66,
+      "cholesterol": 0,
+      "fat": 55.65,
+      "fiber": 5.4,
+      "proteins": 33.5,
+      "salt": 6.83,
+      "saturatedFat": 24.2,
+      "sodium": 2731.95,
+      "sugar": 4.58,
+      "transFat": 0,
+      "weight": 372.2
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_2186]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_2188",
+    "name": {
+      "_type": "localeString",
+      "en": "6 Chilli Cheese Bites*"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:54:55Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 318.23,
+      "carbohydrates": 31.1,
+      "cholesterol": 0,
+      "fat": 16.7,
+      "fiber": 1.62,
+      "proteins": 10.05,
+      "salt": 2.05,
+      "saturatedFat": 7.26,
+      "sodium": 819.59,
+      "sugar": 1.38,
+      "transFat": 0,
+      "weight": 111.66
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_2188]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_28637",
+    "name": {
+      "_type": "localeString",
+      "en": "Medium Diet Coke"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:33Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 1.4,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_28637]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_28641",
+    "name": {
+      "_type": "localeString",
+      "en": "Coca-Cola Zero"
+    },
+    "sourceUpdatedAt": "2023-01-27T20:02:27Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 2.3,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_28641]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_28642",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Coca-Cola Zero"
+    },
+    "sourceUpdatedAt": "2023-01-27T20:03:12Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 3.1,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 625.09
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_28642]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_30392",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Fanta",
+      "es": "Mirinda Grande"
+    },
+    "sourceUpdatedAt": "2025-10-15T20:32:29Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 118.8,
+      "carbohydrates": 28.1,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 28.1,
+      "transFat": 0,
+      "weight": 625.09
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_30392]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_38328",
+    "name": {
+      "_type": "localeString",
+      "de": "Bacon King Double",
+      "en": "Bacon King Double",
+      "es": "Bacon King Double",
+      "fr": "Bacon King Double",
+      "it": "Bacon King Double"
+    },
+    "sourceUpdatedAt": "2023-01-27T18:06:47Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 1042.79,
+      "carbohydrates": 49.32,
+      "cholesterol": 0,
+      "fat": 64.01,
+      "fiber": 4.49,
+      "proteins": 65.5,
+      "salt": 4.63,
+      "saturatedFat": 25.26,
+      "sodium": 1850.79,
+      "sugar": 12.03,
+      "transFat": 0,
+      "weight": 357.6
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_38328]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_42919",
+    "name": {
+      "_type": "localeString",
+      "en": "Latte"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 160,
+      "carbohydrates": 20.3,
+      "cholesterol": 0,
+      "fat": 6,
+      "fiber": 8.5,
+      "proteins": 10.6,
+      "salt": null,
+      "saturatedFat": 3,
+      "sodium": null,
+      "sugar": 10.4,
+      "transFat": 0,
+      "weight": null
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_42919]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_42920",
+    "name": {
+      "_type": "localeString",
+      "en": "Cappuccino"
+    },
+    "sourceUpdatedAt": "2023-01-11T10:34:10Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 149,
+      "carbohydrates": 19.2,
+      "cholesterol": 0,
+      "fat": 5.6,
+      "fiber": 8.5,
+      "proteins": 9.7,
+      "salt": null,
+      "saturatedFat": 2.7,
+      "sodium": null,
+      "sugar": 9.3,
+      "transFat": 0,
+      "weight": null
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_42920]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_42921",
+    "name": {
+      "_type": "localeString",
+      "en": "Flat White"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 162,
+      "carbohydrates": 21,
+      "cholesterol": 0,
+      "fat": 6.1,
+      "fiber": 9.5,
+      "proteins": 10.5,
+      "salt": null,
+      "saturatedFat": 2.9,
+      "sodium": null,
+      "sugar": 9.9,
+      "transFat": 0,
+      "weight": null
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_42921]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_42922",
+    "name": {
+      "_type": "localeString",
+      "en": "Americano"
+    },
+    "sourceUpdatedAt": "2023-01-11T10:34:42Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 56,
+      "carbohydrates": 9.9,
+      "cholesterol": 0,
+      "fat": 2.5,
+      "fiber": 8.5,
+      "proteins": 2.7,
+      "salt": null,
+      "saturatedFat": 0.7,
+      "sodium": null,
+      "sugar": 0.03,
+      "transFat": 0,
+      "weight": null
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_42922]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_42923",
+    "name": {
+      "_type": "localeString",
+      "en": "Espresso"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 56,
+      "carbohydrates": 9.9,
+      "cholesterol": 0,
+      "fat": 2.5,
+      "fiber": 8.5,
+      "proteins": 2.7,
+      "salt": null,
+      "saturatedFat": 0.7,
+      "sodium": null,
+      "sugar": 0.03,
+      "transFat": 0,
+      "weight": null
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_42923]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_42924",
+    "name": {
+      "_type": "localeString",
+      "en": "Hot Chocolate"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 144,
+      "carbohydrates": 25.6,
+      "cholesterol": 0,
+      "fat": 2.1,
+      "fiber": 0,
+      "proteins": 5.7,
+      "salt": null,
+      "saturatedFat": 1.4,
+      "sodium": null,
+      "sugar": 25.2,
+      "transFat": 0,
+      "weight": null
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_42924]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_43558",
+    "name": {
+      "_type": "localeString",
+      "en": "Apple slices"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 33,
+      "carbohydrates": 7.2,
+      "cholesterol": 0,
+      "fat": 0.06,
+      "fiber": 1.02,
+      "proteins": 0.12,
+      "salt": 0,
+      "saturatedFat": 0,
+      "sodium": 0.6,
+      "sugar": 6.6,
+      "transFat": 0,
+      "weight": 60
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_43558]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_45050",
+    "name": {
+      "_type": "localeString",
+      "en": "Ketchup",
+      "es": "Ketchup"
+    },
+    "sourceUpdatedAt": "2026-02-24T18:56:23Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 1.02,
+      "carbohydrates": 0.23,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0.02,
+      "proteins": 0.01,
+      "saturatedFat": 0,
+      "sodium": 7.2,
+      "sugar": 0.23,
+      "transFat": 0
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_45050]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_45237",
+    "name": {
+      "_type": "localeString",
+      "en": "Oreo® Fusion"
+    },
+    "sourceUpdatedAt": "2023-01-11T10:30:00Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 244.04,
+      "carbohydrates": 39.84,
+      "cholesterol": 0,
+      "fat": 7.38,
+      "fiber": 0.96,
+      "proteins": 4.3,
+      "salt": 0.42,
+      "saturatedFat": 3.64,
+      "sodium": 167.75,
+      "sugar": 28.8,
+      "transFat": 0,
+      "weight": 140
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_45237]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_45676",
+    "name": {
+      "_type": "localeString",
+      "en": "Mini Oreo® Fusion"
+    },
+    "sourceUpdatedAt": "2023-01-11T10:30:26Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 163.43,
+      "carbohydrates": 26.63,
+      "cholesterol": 0,
+      "fat": 4.97,
+      "fiber": 0.71,
+      "proteins": 2.87,
+      "salt": 0.28,
+      "saturatedFat": 2.32,
+      "sodium": 115.16,
+      "sugar": 18.68,
+      "transFat": 0,
+      "weight": 90
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_45676]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_52666",
+    "name": {
+      "_type": "localeString",
+      "en": "Semi-skimmed Milk "
+    },
+    "sourceUpdatedAt": "2023-01-10T21:47:30Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 123,
+      "carbohydrates": 12,
+      "cholesterol": 0,
+      "fat": 4.2,
+      "fiber": 0,
+      "proteins": 9,
+      "salt": null,
+      "saturatedFat": 2.5,
+      "sodium": null,
+      "sugar": 12,
+      "transFat": 0,
+      "weight": 250
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_52666]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_52672",
+    "name": {
+      "_type": "localeString",
+      "en": "Sprite Zero"
+    },
+    "sourceUpdatedAt": "2023-01-27T20:04:27Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 4.5,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 454.61
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_52672]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_52673",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Sprite Zero"
+    },
+    "sourceUpdatedAt": "2023-01-27T20:03:52Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 6.3,
+      "carbohydrates": 0,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 0,
+      "transFat": 0,
+      "weight": 625.09
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_52673]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_53635",
+    "name": {
+      "_type": "localeString",
+      "en": "Capri Sun Orange Juice"
+    },
+    "sourceUpdatedAt": "2023-01-27T20:12:14Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 14,
+      "carbohydrates": 3.2,
+      "cholesterol": 0,
+      "fat": 0,
+      "fiber": 0,
+      "proteins": 0,
+      "salt": null,
+      "saturatedFat": 0,
+      "sodium": null,
+      "sugar": 2.6,
+      "transFat": 0,
+      "weight": null
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_53635]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_53846",
+    "name": {
+      "_type": "localeString",
+      "en": "9 Chilli Cheese Bites"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:55:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 477.35,
+      "carbohydrates": 46.65,
+      "cholesterol": 0,
+      "fat": 25.04,
+      "fiber": 2.43,
+      "proteins": 15.08,
+      "salt": 3.08,
+      "saturatedFat": 10.89,
+      "sodium": 1229.38,
+      "sugar": 2.06,
+      "transFat": 0,
+      "weight": 167.49
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_53846]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_56077",
+    "name": {
+      "_type": "localeString",
+      "en": "Vegan Royale"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:37:50Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 335.22,
+      "carbohydrates": 38.12,
+      "cholesterol": 0,
+      "fat": 16.72,
+      "fiber": 1.68,
+      "proteins": 7.21,
+      "salt": 1.34,
+      "saturatedFat": 1.61,
+      "sodium": 535.4,
+      "sugar": 5.53,
+      "transFat": 0,
+      "weight": 107
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_56077]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57060",
+    "name": {
+      "_type": "localeString",
+      "en": "Steakhouse Angus "
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 209.22,
+      "carbohydrates": 31.05,
+      "cholesterol": 0,
+      "fat": 6.62,
+      "fiber": 1.55,
+      "proteins": 5.04,
+      "salt": 1.19,
+      "saturatedFat": 2.1,
+      "sodium": 465.6,
+      "sugar": 3.16,
+      "transFat": 0.07,
+      "weight": 91
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57060]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57360",
+    "name": {
+      "_type": "localeString",
+      "en": "Small Fries"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 219,
+      "carbohydrates": 25,
+      "cholesterol": 0,
+      "fat": 11,
+      "fiber": 4.8,
+      "proteins": 2.7,
+      "salt": 0.42,
+      "saturatedFat": 3.9,
+      "sodium": 169.2,
+      "sugar": 0.4,
+      "transFat": 0.04,
+      "weight": 90
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57360]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57361",
+    "name": {
+      "_type": "localeString",
+      "en": "Regular Fries"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 282,
+      "carbohydrates": 32,
+      "cholesterol": 0,
+      "fat": 14,
+      "fiber": 6.2,
+      "proteins": 3.5,
+      "salt": 0.55,
+      "saturatedFat": 5,
+      "sodium": 218.08,
+      "sugar": 0.4,
+      "transFat": 0.05,
+      "weight": 116
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57361]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57362",
+    "name": {
+      "_type": "localeString",
+      "en": "Large Fries "
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 386,
+      "carbohydrates": 44,
+      "cholesterol": 0,
+      "fat": 20,
+      "fiber": 8.4,
+      "proteins": 4.8,
+      "salt": 0.75,
+      "saturatedFat": 6.8,
+      "sodium": 298.92,
+      "sugar": 0.4,
+      "transFat": 0.07,
+      "weight": 159
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57362]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57363",
+    "name": {
+      "_type": "localeString",
+      "en": "6 Onion Rings"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 225,
+      "carbohydrates": 28,
+      "cholesterol": 0,
+      "fat": 9.8,
+      "fiber": 3.3,
+      "proteins": 4.6,
+      "salt": 0.38,
+      "saturatedFat": 2.2,
+      "sodium": 152.1,
+      "sugar": 4.3,
+      "transFat": 0,
+      "weight": 90
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57363]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57364",
+    "name": {
+      "_type": "localeString",
+      "en": "9 Onion Rings "
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:37Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 337,
+      "carbohydrates": 42,
+      "cholesterol": 0,
+      "fat": 15,
+      "fiber": 5,
+      "proteins": 6.9,
+      "salt": 0.57,
+      "saturatedFat": 3.3,
+      "sodium": 228.15,
+      "sugar": 6.4,
+      "transFat": 0,
+      "weight": 135
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57364]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57627",
+    "name": {
+      "_type": "localeString",
+      "en": "Kids Vegan Nuggets "
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:41Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 162,
+      "carbohydrates": 14.33,
+      "cholesterol": 0,
+      "fat": 8.57,
+      "fiber": 3.46,
+      "proteins": 5.26,
+      "salt": 0.81,
+      "saturatedFat": 0.58,
+      "sodium": 322.56,
+      "sugar": 0.58,
+      "transFat": 0,
+      "weight": 72
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57627]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57628",
+    "name": {
+      "_type": "localeString",
+      "en": "6 Vegan Nuggets "
+    },
+    "sourceUpdatedAt": "2023-01-27T19:45:44Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 243,
+      "carbohydrates": 21.49,
+      "cholesterol": 0,
+      "fat": 12.85,
+      "fiber": 5.18,
+      "proteins": 7.88,
+      "salt": 1.21,
+      "saturatedFat": 0.86,
+      "sodium": 483.84,
+      "sugar": 0.86,
+      "transFat": 0,
+      "weight": 108
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57628]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57629",
+    "name": {
+      "_type": "localeString",
+      "en": "9 Vegan Nuggets "
+    },
+    "sourceUpdatedAt": "2023-01-27T19:45:58Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 364.5,
+      "carbohydrates": 32.24,
+      "cholesterol": 0,
+      "fat": 19.28,
+      "fiber": 7.78,
+      "proteins": 11.83,
+      "salt": 1.81,
+      "saturatedFat": 1.3,
+      "sodium": 725.76,
+      "sugar": 1.3,
+      "transFat": 0,
+      "weight": 162
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57629]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57630",
+    "name": {
+      "_type": "localeString",
+      "en": "20 Vegan Nuggets "
+    },
+    "sourceUpdatedAt": "2023-01-27T19:46:12Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 810,
+      "carbohydrates": 71.64,
+      "cholesterol": 0,
+      "fat": 42.84,
+      "fiber": 17.28,
+      "proteins": 26.28,
+      "salt": 4.03,
+      "saturatedFat": 2.88,
+      "sodium": 1612.8,
+      "sugar": 2.88,
+      "transFat": 0,
+      "weight": 360
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57630]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_57806",
+    "name": {
+      "_type": "localeString",
+      "en": "Small Ben & Jerry's Chocolate Fudge Brownie "
+    },
+    "sourceUpdatedAt": "2023-01-12T05:00:29Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 176.4,
+      "carbohydrates": 20.88,
+      "cholesterol": 0,
+      "fat": 9.36,
+      "fiber": 1.39,
+      "proteins": 3.02,
+      "salt": 0.14,
+      "saturatedFat": 5.76,
+      "sodium": 55.94,
+      "sugar": 19.44,
+      "transFat": 0,
+      "weight": 72
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_57806]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_58505",
+    "name": {
+      "_type": "localeString",
+      "en": "Farmhouse Angus"
+    },
+    "sourceUpdatedAt": "2023-01-11T10:31:45Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 765.85,
+      "carbohydrates": 35.97,
+      "cholesterol": 0,
+      "fat": 49.45,
+      "fiber": 2.91,
+      "proteins": 43.17,
+      "salt": 2.73,
+      "saturatedFat": 18.2,
+      "sodium": 1089.6,
+      "sugar": 7.42,
+      "transFat": 0.07,
+      "weight": 257
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_58505]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_61936",
+    "name": {
+      "_type": "localeString",
+      "de": "Plant-based WHOPPER® with Cheeese",
+      "en": "Plant-based WHOPPER® with Cheese",
+      "es": "Plant-based WHOPPER® with Cheeese",
+      "fr": "Plant-based WHOPPER® with Cheeese",
+      "it": "Plant-based WHOPPER® with Cheeese"
+    },
+    "sourceUpdatedAt": "2023-01-27T19:36:40Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 422.47,
+      "carbohydrates": 47.24,
+      "cholesterol": 0,
+      "fat": 21.19,
+      "fiber": 2.95,
+      "proteins": 9.24,
+      "salt": 1.68,
+      "saturatedFat": 8.02,
+      "sodium": 677.29,
+      "sugar": 6.35,
+      "transFat": 0,
+      "weight": 135
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_61936]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_64192",
+    "name": {
+      "_type": "localeString",
+      "en": "Crispy Chicken ",
+      "es": "Crispy Chicken "
+    },
+    "sourceUpdatedAt": "2024-09-10T00:27:27Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 163.95,
+      "carbohydrates": 30.97,
+      "cholesterol": 0,
+      "fat": 1.72,
+      "fiber": 2.4,
+      "proteins": 5.09,
+      "salt": 2.6,
+      "saturatedFat": 1.57,
+      "sodium": 1037.65,
+      "sugar": 3.09,
+      "transFat": 0.16,
+      "weight": 172
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_64192]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient."
+    ]
+  },
+  {
+    "sourceObjectId": "item_65737",
+    "name": {
+      "_type": "localeString",
+      "en": "Bacon King "
+    },
+    "sourceUpdatedAt": "2023-01-27T18:04:01Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 299.18,
+      "carbohydrates": 39.35,
+      "cholesterol": 0,
+      "fat": 14.73,
+      "fiber": 3.43,
+      "proteins": 6.87,
+      "salt": 3.16,
+      "saturatedFat": 2.19,
+      "sodium": 1271.1,
+      "sugar": 3.26,
+      "transFat": 0,
+      "weight": 235.8
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_65737]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_65799",
+    "name": {
+      "_type": "localeString",
+      "en": "Loaded Fries with Bacon and Cheese"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:46Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 489.32,
+      "carbohydrates": 51.1,
+      "cholesterol": 0,
+      "fat": 25.14,
+      "fiber": 8.51,
+      "proteins": 10.38,
+      "salt": 1.94,
+      "saturatedFat": 10.84,
+      "sodium": 776.57,
+      "sugar": 2.64,
+      "transFat": 0.11,
+      "weight": 199
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_65799]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_65801",
+    "name": {
+      "_type": "localeString",
+      "en": "Cheesy Loaded Fries"
+    },
+    "sourceUpdatedAt": "2023-01-09T16:02:21Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 450.62,
+      "carbohydrates": 50.23,
+      "cholesterol": 0,
+      "fat": 22.39,
+      "fiber": 8.46,
+      "proteins": 7.77,
+      "salt": 1.57,
+      "saturatedFat": 9.72,
+      "sodium": 626.97,
+      "sugar": 2.21,
+      "transFat": 0.11,
+      "weight": 189
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_65801]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_65802",
+    "name": {
+      "_type": "localeString",
+      "en": "Loaded Fries with Bacon and Cheese"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:46Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 489.32,
+      "carbohydrates": 51.1,
+      "cholesterol": 0,
+      "fat": 25.14,
+      "fiber": 8.51,
+      "proteins": 10.38,
+      "salt": 1.94,
+      "saturatedFat": 10.84,
+      "sodium": 776.57,
+      "sugar": 2.64,
+      "transFat": 0.11,
+      "weight": 199
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_65802]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  },
+  {
+    "sourceObjectId": "item_65803",
+    "name": {
+      "_type": "localeString",
+      "en": "Loaded Fries with Cheese"
+    },
+    "sourceUpdatedAt": "2023-01-10T05:00:46Z",
+    "productSize": null,
+    "nativeNutrients": {
+      "_type": "nutrition",
+      "calories": 450.62,
+      "carbohydrates": 50.23,
+      "cholesterol": 0,
+      "fat": 22.39,
+      "fiber": 8.46,
+      "proteins": 7.77,
+      "salt": 1.57,
+      "saturatedFat": 9.72,
+      "sodium": 626.97,
+      "sugar": 2.21,
+      "transFat": 0.11,
+      "weight": 189
+    },
+    "source": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "sourceHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "sourcePage": "result.macroItems[_id=item_65803]",
+    "accepted": false,
+    "reasons": [
+      "Membership in a currently published Mexican menu and its exact local serving was not verified. Anonymous CMS inclusion alone is insufficient.",
+      "No Spanish local product name in this object; legacy/template menu objects coexist in this dataset. No country equivalence inferred."
+    ]
+  }
+]

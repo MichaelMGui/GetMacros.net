@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-17",
+  "scope": "Separate current official Canadian and U.S. Burger King nutrition explorer snapshots; standard named servings only, no inferred customizations.",
+  "marketCounts": {
+    "CA": 134,
+    "US": 256
+  },
+  "chainCounts": {
+    "CA|Burger King": 134,
+    "US|Burger King": 256
+  }
+}

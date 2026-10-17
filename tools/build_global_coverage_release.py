@@ -24,13 +24,24 @@ def html_path(route): return 'index.html' if route=='/' else route.strip('/')+'/
 def eligible(row): return row.get('category') not in ('component','sauce') and row.get('finderSupported',True)
 def action(route,label): return '<a class="text-action" href="'+e(route)+'">'+e(label)+' →</a>'
 def section(title,body): return '<section><h2>'+e(title)+'</h2>'+body+'</section>'
-def table(*args,**kwargs): return source_table(*args,**kwargs).replace('aria-label="Canadian serving','aria-label="Source serving')
+def table(rows,caption,**kwargs):
+    rendered=source_table(rows,caption,**kwargs).replace('aria-label="Canadian serving','aria-label="Source serving')
+    label='source-table-'+hashlib.sha256((caption+'|'.join(r['name'] for r in rows)).encode()).hexdigest()[:12]
+    # Keep the caption outside the horizontal scroll area. A native caption
+    # otherwise takes the wide table's width and disappears off narrow screens.
+    rendered=re.sub(r'<caption>.*?</caption>','',rendered,count=1,flags=re.S)
+    rendered=rendered.replace('<table','<table aria-labelledby="'+label+'"',1)
+    return '<p id="'+label+'" data-source-table-caption>'+e(caption)+'</p>'+rendered
 
 def integrate():
     additions=read('tools/global_coverage_2026_10_17/restaurant-records.json')
     new_market_file=ROOT/'tools/global_coverage_2026_10_17/restaurant-newmarkets-records.json'
     if new_market_file.exists():
         newer=read(new_market_file.relative_to(ROOT))
+        additions['records']+=newer['records'];additions['updates']+=newer.get('updates',[])
+    supplement=ROOT/'tools/global_coverage_2026_10_17/restaurant-supplement-records.json'
+    if supplement.exists():
+        newer=read(supplement.relative_to(ROOT))
         additions['records']+=newer['records'];additions['updates']+=newer.get('updates',[])
     registry=read('js/order-registry.json')
     incoming=additions['records']+additions['updates'];ids={r['id'] for r in incoming}
@@ -43,6 +54,8 @@ def integrate():
     if new_market_file.exists():
         markets.update(read('tools/global_coverage_2026_10_17/restaurant-newmarkets-definitions.json'))
         upserts+=read('tools/global_coverage_2026_10_17/restaurant-newmarkets-presence-upserts.json')['relationships']
+    supplement_presence=OUT/'restaurants/supplement/presence-upserts.json'
+    if supplement_presence.exists():upserts+=read(supplement_presence.relative_to(ROOT))['relationships']
     registry['markets']=list(markets);dump('js/order-registry.json',registry)
     from source_json import write_json
     restaurant_manifest={'version':hashlib.sha256(json.dumps(registry['records'],ensure_ascii=False,sort_keys=True).encode()).hexdigest()[:16],'markets':{}}
@@ -93,7 +106,7 @@ def integrate():
         if code=='IN':text=text.replace('<section id="meal-quiz"','<!-- operator-scope:start --><p class="market-notice">North &amp; East India only · McDonald’s operated by Connaught Plaza Restaurants Private Limited. Other Indian regions may use different menus.</p><!-- operator-scope:end --><section id="meal-quiz"',1)
         # A single explicit market dataset is loaded immediately before the
         # finder. The U.S. retains existing data assets used by other tools.
-        text=re.sub(r'<script[^>]*src="/?js/'+name+r'-meals\.js(?:\?[^" ]*)?"[^>]*>\s*</script>','',text)
+        text=re.sub(r'<script[^>]*src="/?(?:js/'+name+r'-meals\.js|assets/generated/js-'+name+r'-meals-[a-f0-9]+\.js)(?:\?[^" ]*)?"[^>]*>\s*</script>','',text)
         text=re.sub(r'(?=<script[^>]*src="/?(?:js/meal-finder\.js|assets/generated/js-meal-finder-[^" ]+\.js))',lambda _: '<script src="/js/'+name+'-meals.js" defer></script>',text,count=1)
         write(path,text)
     write('js/market-definitions.js','window.GM_MARKETS='+json.dumps(markets,ensure_ascii=False,separators=(',',':'))+';\n')
@@ -108,6 +121,20 @@ def integrate():
             fragment=re.sub(r'\b\d+ recorded orders\b',str(count)+' recorded orders',fragment)
             fragment=re.sub(r'Compare \d+ tracked '+re.escape(chain)+r' portions',str('Compare '+str(count)+' tracked '+chain+' portions'),fragment)
         text=text[:node['start']]+fragment+text[node['end']:]
+    # New U.S. brands need a crawlable directory entry as well as a guide.
+    # Reuse the directory's own illustration and arrow, keeping one component
+    # architecture rather than introducing another card style.
+    if any(r['market']=='US' and r['chain']=='Burger King' for r in additions['records']):
+        doc=Document(text)
+        current=[n for n in doc.nodes if 'restaurant-entry' in n['attrs'].get('class','').split()]
+        if not any(re.search(r'<h2>\s*Burger King\s*</h2>',text[n['start']:n['end']]) for n in current):
+            sample=text[current[0]['start']:current[0]['end']]
+            icon=re.search(r'<span class="restaurant-mark".*?</span>',sample,re.S)[0]
+            arrow=re.search(r'</div>(<svg.*?</svg>)</a>',sample,re.S)[1]
+            rows=[r for r in registry['records'] if r['market']=='US' and r['chain']=='Burger King' and eligible(r)]
+            entry='<a class="restaurant-entry" href="burger-king-healthy-meals-macros.html">'+icon+'<div><h2>Burger King</h2><p>Named U.S. burgers, breakfast servings, sides and drinks from the local nutrition explorer. Standard builds are kept separate from Canadian recipes.</p><small>'+str(len(rows))+' recorded orders · U.S.</small></div>'+arrow+'</a>'
+            library=next(n for n in doc.nodes if 'restaurant-library' in n['attrs'].get('class','').split())
+            text=text[:library['close']]+entry+text[library['close']:]
     path.write_text(text,encoding='utf-8')
     return additions,registry,markets,presence
 
@@ -115,13 +142,18 @@ def guides(additions,registry,markets,presence):
     briefs=read('docs/global-coverage-2026-10-17/restaurants/guide-briefs.json')['briefs']
     newer=ROOT/'docs/global-coverage-2026-10-17/restaurants/newmarkets/guide-briefs.json'
     if newer.exists():briefs+=read(newer.relative_to(ROOT))['briefs']
+    newer=OUT/'restaurants/supplement/guide-briefs.json'
+    if newer.exists():briefs+=read(newer.relative_to(ROOT))['briefs']
     by_chain={}
     for brief in briefs:
         code=brief['market'];country=markets[code]['name'];route=('/'+brief['slug']+'.html') if code=='US' else markets[code]['home']+'guides/'+brief['slug']+'/'
         rows=brief['comparisonRows'];chain=next(r['chain'] for r in registry['records'] if r.get('id')==brief['recordIds'][0])
         by_chain.setdefault((code,chain),[]).append((route,brief['title']))
         body='<article class="food-app food-reading"><header class="food-app-head"><h1>'+e(brief['title'])+'</h1></header>'
-        body+='<p>'+e(brief['paragraphs'][0])+'</p>'+table(rows,'Exact '+country+' source servings. Unknown nutrients remain unknown.')
+        compared_markets={r.get('market',code) for r in rows}
+        display_rows=[dict(r,name=r['name']+' · '+markets[r.get('market',code)]['name']) for r in rows] if len(compared_markets)>1 else rows
+        caption=('Separate country source servings; country is shown with each item.' if len(compared_markets)>1 else 'Exact '+country+' source servings.')+' Unknown nutrients remain unknown.'
+        body+='<p>'+e(brief['paragraphs'][0])+'</p>'+table(display_rows,caption)
         body+=''.join('<p>'+e(p)+'</p>' for p in brief['paragraphs'][1:])
         body+=section('Try the portions',action('/food-library.html?'+urlencode(dict(market=code,type='restaurant',q=chain)),'Search these servings')+' '+action('/compare-foods.html?market='+code,'Compare portions')+' '+action('/food-diary.html?market='+code,'Log a meal'))
         body+=section('Sources & limits','<ul>'+''.join('<li><a href="'+e(url)+'">Official '+e(chain)+' nutrition source</a></li>' for url in dict.fromkeys(r['source'] for r in rows))+'</ul><p>Source rows reviewed October 17, 2026. Edition dates remain attached to each menu record. GetMacros did not test these meals or audit every local branch. Different recipes, added sauces and later menu changes need their own source values.</p>')+'</article>'
@@ -217,6 +249,14 @@ def refresh_coverage_article(markets):
     write(html_path(row['route']),text)
     product.PAGES.append(dict(route=row['route'],path=html_path(row['route']),title=row['title'],description=row['description'],kind='article-updated',market='global',indexable=True))
 
+def local_price_currencies(markets):
+    path=ROOT/'protein-value-calculator.html';text=path.read_text(encoding='utf-8')
+    names={'INR':'Indian rupees','SGD':'Singapore dollars','ZAR':'South African rand'}
+    control=Document(text).find(id='receipt-currency');options=text[control['start']:control['end']]
+    extra=''.join('<option value="'+code+'">'+code+' — '+e(names.get(code,code))+'</option>' for code in dict.fromkeys(info['currency'] for info in markets.values()) if 'value="'+code+'"' not in options)
+    if extra:text=text[:control['close']]+extra+text[control['close']:];path.write_text(text,encoding='utf-8')
+    product.PAGES.append(dict(route='/protein-value-calculator.html',path='protein-value-calculator.html',title='Protein value calculator',description='Compare protein value using your own local prices, quantities and selected currency. No prices or exchange rates are supplied.',kind='tool-updated',market='global',indexable=True))
+
 def build():
     OUT.mkdir(parents=True,exist_ok=True);product.PAGES.clear()
     additions,registry,markets,presence=integrate()
@@ -232,6 +272,7 @@ def build():
     flag_path.write_text(flags,encoding='utf-8')
     guides(additions,registry,markets,presence)
     refresh_coverage_article(markets)
+    local_price_currencies(markets)
     from build_master_completion import coverage,regional_annotations
     product.MARKETS.update(markets);coverage()
     from build_master_interface import build as shared_home

@@ -1,0 +1,23 @@
+{
+  "reviewedAt": "2026-10-17",
+  "mcdonaldsCanada": {
+    "status": "blocked; no records staged",
+    "urls": [
+      "https://www.mcdonalds.com/ca/en-ca/full-menu.html",
+      "https://www.mcdonalds.com/ca/en-ca/about-our-food/nutrition-calculator.html",
+      "https://www.mcdonalds.com/dnaapp/itemDetails?country=CA&language=en&showLiveData=true&item=200154&nutrient_req=Y"
+    ],
+    "evidence": "HTTP403 on direct requests; Edge full-menu rendering explicitly Access Denied. Official indexed product pages contain dynamic empty nutrition panels in web text. No macros inferred from names, third-party sources or an old unlinked PDF."
+  },
+  "burgerKingUS": {
+    "status": "public nutrition data resolved; browser country redirect remains",
+    "requestedUrl": "https://www.bk.com/nutrition-explorer",
+    "browserRedirect": "https://www.burgerking.ca/nutrition-explorer",
+    "resolution": "Explicitly select prod_bk_us using the official public app CMS query and its separate U.S. StaticPage. Canadian data remains in prod_bk_ca and is never relabelled.",
+    "rejectedHistoricalSource": {
+      "url": "https://bk-use1-prod.sites.rbictg.com/nutrition/nutrition.pdf",
+      "edition": "2022-11",
+      "reason": "Not a current linked live-menu source; no records imported from this PDF."
+    }
+  }
+}

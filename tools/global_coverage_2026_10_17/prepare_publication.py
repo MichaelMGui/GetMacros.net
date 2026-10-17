@@ -44,6 +44,7 @@ ROOT_FILES = {
 # already belong to the guarded publisher HEAD; unrelated root tools are omitted.
 SOURCE_FILES = {
     '.github/workflows/site-quality.yml',
+    'tools/ci_failure_summary.py',
     'tools/source_json.py', 'tools/source-json.cjs',
     'tools/build_global_coverage_release.py', 'tools/build_master_completion.py',
     'tools/build_site.sh', 'tools/run_food_build.py', 'tools/site_scope.py',
@@ -74,7 +75,7 @@ PUBLIC_EXTENSIONS = {
 }
 TEXT_EXTENSIONS = {'.html', '.css', '.js', '.json', '.py', '.cjs', '.sh', '.yml', '.yaml', '.md', '.txt', '.csv', '.xml', '.svg', '.webmanifest'}
 EVIDENCE_METADATA = {'guide-briefs.json', 'source-register.json', 'summary.json', 'test-results.json', 'withheld.json', 'retrieval.json', 'source-research.json', 'handoff.txt'}
-SKIP_EVIDENCE = {'publication-preparation.json', 'baseline.json'}
+SKIP_EVIDENCE = {'publication-preparation.json', 'publication-followup-preparation.json', 'baseline.json'}
 
 
 def require(condition, message):
@@ -152,17 +153,19 @@ def collect_paths():
     for directory in (OUT, OUT / 'usda', OUT / 'off'):
         if directory.exists():
             evidence.update(path for path in directory.iterdir() if path.is_file() and path.suffix in {'.json', '.md', '.txt', '.csv'} and path.name not in SKIP_EVIDENCE)
-    for directory in (OUT / 'restaurants', OUT / 'restaurants/newmarkets'):
+    for directory in (OUT / 'restaurants', OUT / 'restaurants/newmarkets', OUT / 'restaurants/supplement', OUT / 'restaurants/mexico-supplement'):
         if not directory.exists():
             continue
         evidence.update(path for path in directory.iterdir() if path.is_file() and path.name in EVIDENCE_METADATA)
+        if directory.name in ('supplement', 'mexico-supplement'):
+            evidence.update(path for path in directory.iterdir() if path.is_file() and path.suffix.lower() in {'.json', '.txt', '.html', '.pdf', '.md'})
         register = directory / 'source-register.json'
         if register.exists():
             for row in json.loads(register.read_text(encoding='utf-8')):
                 path = ROOT / row['file']
                 established_gyg=ROOT/'docs/global-product-release-2026-10-11/sources/gyg.pdf'
                 require(path.resolve().is_relative_to((OUT / 'restaurants').resolve()) or path.resolve()==established_gyg.resolve(), 'Registered evidence is outside the reviewed evidence scope')
-                require(path.suffix.lower() in {'.json', '.txt', '.html', '.pdf', '.png', '.jpg', '.jpeg'}, 'Offline archive is not bounded publication evidence: ' + str(path))
+                require(path.suffix.lower() in {'.json', '.txt', '.html', '.pdf', '.js', '.png', '.jpg', '.jpeg'}, 'Offline archive is not bounded publication evidence: ' + str(path))
                 evidence.add(path)
     for path in evidence:
         require(path.is_file() and path.stat().st_size <= MAX_EVIDENCE_FILE, 'Required evidence is absent or exceeds 2 MB: ' + str(path))
@@ -241,10 +244,15 @@ def write_report(report):
 
 
 def main():
+    global EXPECTED_HEAD, REPORT
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--stage', action='store_true', help='Stage explicit prepared files only; never commit or push')
+    parser.add_argument('--followup', action='store_true', help='Prepare the reviewed follow-up to the pinned global catalogue release')
     parser.add_argument('--recover-interrupted-copy', action='store_true', help='Recover this release\'s interrupted copy receipt; only explicitly selected files may be adopted')
     args = parser.parse_args()
+    if args.followup:
+        EXPECTED_HEAD = '8e5a7d70b428fbaa7eae2eac04a1a97e27783874'
+        REPORT = OUT / 'publication-followup-preparation.json'
     no_reparse(DEST, ROOT)
     require((DEST / '.git').is_dir() and DEST.resolve().is_relative_to((ROOT / 'docs').resolve()), 'Publisher checkout is missing or outside workspace docs')
     require(Path(git('rev-parse', '--show-toplevel')).resolve() == DEST.resolve(), 'Git resolved a different checkout')

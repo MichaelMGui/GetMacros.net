@@ -166,5 +166,47 @@
     "coverage": "reviewed table selection; not a full current-menu or local-stock audit",
     "limitations": "Live standard/halaal source nutrition panels. No publication date or gram weight supplied. Same-size conflicting panels withheld together. Source decimal/size inconsistencies not repaired. kJ converted to kcal; a whole source-sized portion is not one slice.",
     "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/global-coverage-2026-10-17/restaurants/newmarkets/quick-fr-index.html",
+    "url": "https://www.quick.fr/",
+    "sha256": "f1d96b4c8880d4b052f517ed2432cdc8773f6ea8de77b8eeecfbfc2af1675684",
+    "marketScope": "FR",
+    "chain": "Quick",
+    "sourceEdition": null,
+    "retrievedAt": "2026-10-17",
+    "verifiedAt": "2026-10-17",
+    "captureMethod": "official menu linkage, operating-region or nutrient-unit display evidence",
+    "coverage": "Supporting source proof; not a separate nutrition record",
+    "limitations": "No publication-date claim or reusable visual asset.",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/global-coverage-2026-10-17/restaurants/newmarkets/mcd-in-ne-index.html",
+    "url": "https://mcdindia.com/nutritional-information/",
+    "sha256": "7f4666b084591f38226d8ad37c1a599072149825b4235594b575eb6fa7495203",
+    "marketScope": "IN",
+    "chain": "McDonald’s North & East India",
+    "sourceEdition": null,
+    "retrievedAt": "2026-10-17",
+    "verifiedAt": "2026-10-17",
+    "captureMethod": "official menu linkage, operating-region or nutrient-unit display evidence",
+    "coverage": "Supporting source proof; not a separate nutrition record",
+    "limitations": "No publication-date claim or reusable visual asset.",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/global-coverage-2026-10-17/restaurants/newmarkets/bk-sg-main.js",
+    "url": "https://burgerking.com.sg/Content/js/main.js",
+    "sha256": "03c2e2751da23b70d31136daea1e63eca08e84b3abe5aec0f414fa1a7e17a827",
+    "marketScope": "SG",
+    "chain": "Burger King",
+    "sourceEdition": null,
+    "retrievedAt": "2026-10-17",
+    "verifiedAt": "2026-10-17",
+    "captureMethod": "official menu linkage, operating-region or nutrient-unit display evidence",
+    "coverage": "Supporting source proof; not a separate nutrition record",
+    "limitations": "No publication-date claim or reusable visual asset.",
+    "retrievalIsVerification": false
   }
 ]

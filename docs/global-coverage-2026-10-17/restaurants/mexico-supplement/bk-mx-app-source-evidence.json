@@ -1,0 +1,14 @@
+{
+  "source": "https://www.burgerking.com.mx/static/js/main.bdd06e47.js",
+  "sourceSha256": "9fe325d9c92a3ad91d4d9d352bce8b5047f67b5e21ebcdcdc4b87c27602e2007",
+  "captureDate": "2026-10-17",
+  "captureType": "small public application source excerpts; full bundle not retained",
+  "publicProjectId": "czqk28jt",
+  "publicDataset": "prod_bk_mx",
+  "datasetEvidence": "official Big King HTML uses cdn.sanity.io/images/czqk28jt/prod_bk_mx/ URLs",
+  "apiVersion": "v2023-08-01",
+  "apiPattern": "https://<publicProjectId>.apicdn.sanity.io/v2023-08-01/data/query/<publicDataset>",
+  "nutritionUnitMapExcerpt": "const c={calories:\"kcal\",carbohydrates:\"g\",cholesterol:\"mg\",fat:\"g\",fiber:\"g\",proteins:\"g\",salt:\"g\",saturatedFat:\"g\",sodium:\"mg\",sugar:\"g\",transFat:\"g\",weight:\"g\"}",
+  "authentication": "No token, API key, cookies, account, or authorization header used for menu data queries.",
+  "limits": "A public dataset may contain templates and test records; availability/current local menu inclusion remains unverified."
+}

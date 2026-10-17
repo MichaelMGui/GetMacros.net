@@ -32,7 +32,7 @@ def identity(row):
 
 def published_batches(markets):
     batches = []
-    for name in ['restaurant-records.json', 'restaurant-newmarkets-records.json']:
+    for name in ['restaurant-records.json', 'restaurant-newmarkets-records.json', 'restaurant-supplement-records.json']:
         path = ROOT / GLOBAL / name
         if path.exists():
             batch = read(GLOBAL + name)

@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "market": "IN",
+      "currency": "INR"
+    },
+    {
+      "market": "SG",
+      "currency": "SGD"
+    },
+    {
+      "market": "ZA",
+      "currency": "ZAR"
+    }
+  ]
+}

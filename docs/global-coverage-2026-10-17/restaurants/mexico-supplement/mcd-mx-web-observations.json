@@ -1,0 +1,21 @@
+{
+  "reviewedAt": "2026-10-17",
+  "captureMethod": "web tool readable text; not raw HTML or operated accordion",
+  "observations": [
+    {
+      "url": "https://www.mcdonalds.com.mx/menu/hamburguesas/big-mac",
+      "finding": "Official Mexico Big Mac page has product description plus Información nutricional and Información sobre alérgenos headings, but no numeric nutrient values in readable text."
+    },
+    {
+      "url": "https://www.mcdonalds.com.mx/menu/hamburguesas",
+      "finding": "Current official hamburger category links the Mexican Big Mac and other named local products; presence alone is not nutrition verification."
+    },
+    {
+      "url": "https://www.mcdonalds.com.mx/menu/cajita-feliz",
+      "finding": "Nutrition prompt is present but no usable complete numeric nutrition table is exposed in readable text."
+    }
+  ],
+  "browserAccess": "cua.getState returned apps=[], browsers=[]; in-app browser unavailable. No accordions were operated.",
+  "rawSourceHash": null,
+  "rawSourceHashReason": "Direct HTTP capture returned 403; no raw McDonald’s HTML retained or invented."
+}

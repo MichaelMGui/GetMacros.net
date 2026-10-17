@@ -45,18 +45,18 @@
     }
   },
   "generalReferenceProfiles": 13578,
-  "newRestaurantRecords": 1443,
+  "newRestaurantRecords": 1833,
   "refreshedExistingRestaurantRecords": 17,
-  "totalRestaurantRecords": 3192,
+  "totalRestaurantRecords": 3582,
   "publishedMarkets": {
     "US": {
-      "restaurantRecords": 638,
-      "restaurantBrands": 25,
+      "restaurantRecords": 894,
+      "restaurantBrands": 26,
       "grocerySourceProfiles": 518472
     },
     "CA": {
-      "restaurantRecords": 513,
-      "restaurantBrands": 12,
+      "restaurantRecords": 647,
+      "restaurantBrands": 13,
       "grocerySourceProfiles": 46954
     },
     "MX": {
@@ -110,7 +110,7 @@
       "grocerySourceProfiles": 0
     }
   },
-  "newComparisonGuides": 13,
+  "newComparisonGuides": 16,
   "verification": {
     "sourceIntegrity": "USDA and OFF full-source audits passed; imported packages are not independently label-verified",
     "browser": "See browser-results.json and restaurants/newmarkets/browser-results.json for actual checks and screenshot paths",

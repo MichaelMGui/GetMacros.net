@@ -1,0 +1,228 @@
+{
+  "reviewedAt": "2026-10-17",
+  "briefs": [
+    {
+      "market": "CA",
+      "slug": "burger-king-canada-whopper-cheese-standard-serving",
+      "title": "Burger King Canada: Whopper and Whopper with Cheese",
+      "reviewedAt": "2026-10-17",
+      "scope": "Country-specific named standard Burger King per-serving products from separate official nutrition explorer snapshots. No customizations invented.",
+      "paragraphs": [
+        "The current Canadian nutrition explorer supplies two separate named standard servings: Whopper and Whopper with Cheese. Its Whopper is 710 kcal, 33 g protein, 50 g carbohydrate, 43 g fat and 1,150 mg sodium.",
+        "The Canadian Whopper with Cheese is 790 kcal, 37 g protein, 51 g carbohydrate, 50 g fat and 1,420 mg sodium. Comparing those two complete published products gives an increase of 80 kcal, 4 g protein, 1 g carbohydrate, 7 g fat and 270 mg sodium.",
+        "Those are named whole-item servings from the official explorer. No fries or drink is included, and the difference is not a measured nutrition statement for an arbitrary cheese slice or a custom cheese quantity.",
+        "The explorer does not show a publication date or a serving-weight unit in its inspected facts panel. The saved record therefore preserves an unknown publication date and leaves gram weight unavailable. Retrieval and review were October 17, 2026; branch stock and allergy safety are separate questions."
+      ],
+      "comparisonRows": [
+        {
+          "id": "CA|burger-king|39c553720193a564",
+          "market": "CA",
+          "country": "CA",
+          "chain": "Burger King",
+          "name": "Whopper®",
+          "serving": "1 named source item · standard per-serving build",
+          "servingGrams": null,
+          "cal": 710,
+          "p": 33,
+          "c": 50,
+          "fat": 43,
+          "f": 4,
+          "na": 1150,
+          "sugar": 13,
+          "sat": 13,
+          "source": "https://www.burgerking.ca/nutrition-explorer",
+          "sourceDate": null,
+          "sourcePage": "StaticPage 56ed3383-9c4c-41ae-a125-49cb2f2e6188 / item_11895",
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "CA|burger-king|de704312c07f8a94",
+          "market": "CA",
+          "country": "CA",
+          "chain": "Burger King",
+          "name": "Whopper® with Cheese",
+          "serving": "1 named source item · standard per-serving build",
+          "servingGrams": null,
+          "cal": 790,
+          "p": 37,
+          "c": 51,
+          "fat": 50,
+          "f": 4,
+          "na": 1420,
+          "sugar": 14,
+          "sat": 17,
+          "source": "https://www.burgerking.ca/nutrition-explorer",
+          "sourceDate": null,
+          "sourcePage": "StaticPage 56ed3383-9c4c-41ae-a125-49cb2f2e6188 / item_9273",
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "Canadian named Whopper with Cheese minus Whopper",
+          "cal": 80,
+          "p": 4,
+          "c": 1,
+          "fat": 7,
+          "na": 270
+        }
+      ],
+      "sources": [
+        "https://www.burgerking.ca/nutrition-explorer"
+      ],
+      "recordIds": [
+        "CA|burger-king|39c553720193a564",
+        "CA|burger-king|de704312c07f8a94"
+      ]
+    },
+    {
+      "market": "US",
+      "slug": "burger-king-us-whopper-cheese-standard-serving",
+      "title": "Burger King U.S.: use the local Whopper serving",
+      "reviewedAt": "2026-10-17",
+      "scope": "Country-specific named standard Burger King per-serving products from separate official nutrition explorer snapshots. No customizations invented.",
+      "paragraphs": [
+        "The official U.S. nutrition explorer has its own published country payload. Its standard Whopper is 710 kcal, 34 g protein, 57 g carbohydrate, 42 g fat and 1,250 mg sodium.",
+        "The U.S. Whopper with Cheese is 790 kcal, 37 g protein, 58 g carbohydrate, 49 g fat and 1,660 mg sodium. For these complete named products, the cheese version adds 80 kcal, 3 g protein, 1 g carbohydrate, 7 g fat and 410 mg sodium.",
+        "Use the named standard serving shown in the official U.S. explorer. Optional ingredient changes need their own published nutrition; the base ingredients are not combined into invented custom meals.",
+        "Sodium is directly source-reported. A separately supplied rounded salt field does not replace that direct sodium value. The source has no publication edition; the snapshot was retrieved and reviewed October 17, 2026, and does not prove availability at every branch."
+      ],
+      "comparisonRows": [
+        {
+          "id": "US|burger-king|36a6c685d38e3910",
+          "market": "US",
+          "country": "US",
+          "chain": "Burger King",
+          "name": "Whopper",
+          "serving": "1 named source item · standard per-serving build",
+          "servingGrams": null,
+          "cal": 710,
+          "p": 34,
+          "c": 57,
+          "fat": 42,
+          "f": 4,
+          "na": 1250,
+          "sugar": 14,
+          "sat": 12,
+          "source": "https://www.bk.com/nutrition-explorer",
+          "sourceDate": null,
+          "sourcePage": "StaticPage 415f9110-e7bf-45d8-8f22-33702a1b4fcc / item_953",
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "US|burger-king|86846116e9d9802e",
+          "market": "US",
+          "country": "US",
+          "chain": "Burger King",
+          "name": "Whopper with Cheese",
+          "serving": "1 named source item · standard per-serving build",
+          "servingGrams": null,
+          "cal": 790,
+          "p": 37,
+          "c": 58,
+          "fat": 49,
+          "f": 4,
+          "na": 1660,
+          "sugar": 15,
+          "sat": 16,
+          "source": "https://www.bk.com/nutrition-explorer",
+          "sourceDate": null,
+          "sourcePage": "StaticPage 415f9110-e7bf-45d8-8f22-33702a1b4fcc / item_960",
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "U.S. named Whopper with Cheese minus Whopper",
+          "cal": 80,
+          "p": 3,
+          "c": 1,
+          "fat": 7,
+          "na": 410
+        }
+      ],
+      "sources": [
+        "https://www.bk.com/nutrition-explorer"
+      ],
+      "recordIds": [
+        "US|burger-king|36a6c685d38e3910",
+        "US|burger-king|86846116e9d9802e"
+      ]
+    },
+    {
+      "market": "CA",
+      "slug": "burger-king-canada-us-whopper-local-ingredients",
+      "title": "Canada and U.S. Whoppers: same calories, different local records",
+      "reviewedAt": "2026-10-17",
+      "scope": "Country-specific named standard Burger King per-serving products from separate official nutrition explorer snapshots. No customizations invented.",
+      "paragraphs": [
+        "Both current official country explorers list the standard Whopper at 710 kcal, but their remaining values differ. Canada lists 33 g protein, 50 g carbohydrate, 43 g fat and 1,150 mg sodium. The U.S. lists 34 g protein, 57 g carbohydrate, 42 g fat and 1,250 mg sodium. These are separate local records, not interchangeable servings.",
+        "Each local source publishes ingredient statements for named components. Both identify the beef patty as beef. The Canadian mayonnaise statement includes water, onion powder and garlic powder; the U.S. mayonnaise statement includes ground red pepper, dried garlic and mustard oil. These are differences in the published statements, without assuming that either statement specifies ingredient quantities.",
+        "The bun statements also differ. Canada lists a canola-or-soybean vegetable oil option and pea protein; the U.S. statement lists soybean oil and a vegetable-protein group containing pea, potato and faba bean. Supplier alternatives and the source wording matter when comparing local menus.",
+        "No isolated ingredient change is claimed to cause the macro differences: the whole products, source rounding and local standard servings can all differ. Full recipe quantities, unpublished processing details, branch stock and allergy safety are not inferred from these ingredient statements. Use the correct country when finding or logging a meal."
+      ],
+      "comparisonRows": [
+        {
+          "id": "CA|burger-king|39c553720193a564",
+          "market": "CA",
+          "country": "CA",
+          "chain": "Burger King",
+          "name": "Whopper®",
+          "serving": "1 named source item · standard per-serving build",
+          "servingGrams": null,
+          "cal": 710,
+          "p": 33,
+          "c": 50,
+          "fat": 43,
+          "f": 4,
+          "na": 1150,
+          "sugar": 13,
+          "sat": 13,
+          "source": "https://www.burgerking.ca/nutrition-explorer",
+          "sourceDate": null,
+          "sourcePage": "StaticPage 56ed3383-9c4c-41ae-a125-49cb2f2e6188 / item_11895",
+          "checked": "2026-10-17"
+        },
+        {
+          "id": "US|burger-king|36a6c685d38e3910",
+          "market": "US",
+          "country": "US",
+          "chain": "Burger King",
+          "name": "Whopper",
+          "serving": "1 named source item · standard per-serving build",
+          "servingGrams": null,
+          "cal": 710,
+          "p": 34,
+          "c": 57,
+          "fat": 42,
+          "f": 4,
+          "na": 1250,
+          "sugar": 14,
+          "sat": 12,
+          "source": "https://www.bk.com/nutrition-explorer",
+          "sourceDate": null,
+          "sourcePage": "StaticPage 415f9110-e7bf-45d8-8f22-33702a1b4fcc / item_953",
+          "checked": "2026-10-17"
+        }
+      ],
+      "calculations": [
+        {
+          "expression": "U.S. named Whopper minus Canadian Whopper",
+          "cal": 0,
+          "p": 1,
+          "c": 7,
+          "fat": -1,
+          "na": 100
+        }
+      ],
+      "sources": [
+        "https://www.bk.com/nutrition-explorer",
+        "https://www.burgerking.ca/nutrition-explorer"
+      ],
+      "recordIds": [
+        "CA|burger-king|39c553720193a564",
+        "US|burger-king|36a6c685d38e3910"
+      ]
+    }
+  ]
+}

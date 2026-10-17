@@ -1,0 +1,447 @@
+[
+  {
+    "url": "https://www.mcdonalds.com/ca/en-ca/full-menu.html",
+    "status": 403,
+    "contentType": "text/html"
+  },
+  {
+    "url": "https://www.bk.com/nutrition-explorer",
+    "status": 301
+  },
+  {
+    "url": "https://www.burgerking.ca/nutrition-explorer",
+    "status": 200,
+    "contentType": "text/html"
+  },
+  {
+    "url": "https://www.burgerking.ca/oneTrust.js",
+    "status": 200,
+    "contentType": "text/javascript"
+  },
+  {
+    "url": "https://www.burgerking.ca/_expo/static/js/web/index-a5e4389cc3f23924515d4198cf1faad0.js",
+    "status": 200,
+    "contentType": "application/javascript"
+  },
+  {
+    "url": "https://use1-prod-bk-gateway.rbictg.com/graphql?query=%7B__typename%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/ucl/themes/bk/fonts/KonTikiJF-Aloha.345ec82cfa1fb5ba7dd3c1e39374eef2.otf",
+    "status": 200,
+    "contentType": "binary/octet-stream"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialIcons.4e85bc9ebe07e0340c9c4fc2f6c38908.ttf",
+    "status": 200,
+    "contentType": "binary/octet-stream"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/ucl/themes/bk/fonts/FlameRegular.83b0c58a6ec6af89fd625531a97603e1.ttf",
+    "status": 200,
+    "contentType": "binary/octet-stream"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/ucl/themes/bk/fonts/FlameRegularSans.e092fcb172f4a4c71d665bc087af481b.ttf",
+    "status": 200,
+    "contentType": "binary/octet-stream"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/ucl/themes/bk/fonts/FlameBold.f5c03d0423793ab1621fbcefe7086e34.ttf",
+    "status": 200,
+    "contentType": "binary/octet-stream"
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=1&ae=g&auid=667116229.1792274691&dt=Burger%20King&en=page_view&dl=https%3A%2F%2Fwww.burgerking.ca%2Fnutrition-explorer&scrsrc=www.googletagmanager.com&rnd=1706626844.1792274691&navt=n&npa=0&ep.ads_data_redaction=0&gdid=dYWJhMj&gtm=45He6ae1v9219672592za200zd9219672592xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120469145~120469153~121246026~121246034~123322201&tft=1792274691447&tfd=5343&fmt=8",
+    "status": 200
+  },
+  {
+    "url": "blob:https://www.burgerking.ca/96c0ee70-a143-40b9-a2a2-da091f974f33",
+    "status": 200,
+    "contentType": ""
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/home-active.f9ad9dc2bd1a01096c415d46a5584faf.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/menu-active.787c76a51f3de7a9a56e370762345aea.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/my-code.2eb3c38a89f30b4477b0271e72d56240.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/rewards.8f8c4f360860acc401b087b89f72fa7b.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/menu.980f3aa22edc41e98017c0f519c00763.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/rewards-active.6c268ebafba55df6c793160f60de8a69.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/forter.js",
+    "status": 200,
+    "contentType": "text/javascript"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/home.ca7eee0d9d88fee10678e4c0ef96fc41.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/offers.2a7400594148c698f5db03e8a0e182e4.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/my-code-active.4fe3371d18ab2f530752488f95ff2245.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.burgerking.ca/assets/src/assets/images/nav/offers-active.3fbdc0876aacf36402b9cba3e658d32e.svg",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=0&ae=g&auid=667116229.1792274691&dt=Burger%20King&en=page_view&dl=https%3A%2F%2Fwww.burgerking.ca%2Fnutrition-explorer&scrsrc=www.googletagmanager.com&rnd=1706626844.1792274691&navt=n&npa=0&ep.ads_data_redaction=0&gdid=dYWJhMj&gtm=45He6ae1v9219672592za200zd9219672592xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120469145~120469153~121246026~121246034~123322201&tft=1792274692336&tfd=6232&fmt=8",
+    "status": 200
+  },
+  {
+    "url": "https://use1-prod-bk-gateway.rbictg.com/graphql?operationName=LoyaltyUnauthenticatedRewards",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/graphql/prod_bk_ca/default?operationName=featureWebHomePage&variables=%7B%22featureHomePageId%22%3A%22feature-home-page-singleton%22%7D&query=query+featureWebHomePage%28%24featureHomePageId%3AID%21%29%7BFeatureHomePage%28id%3A%24featureHomePageId%29%7Bunauthenticated%3AwebUnauthenticated%7B...HomePageConfigurationFragment+__typename%7Dauthenticated%3AwebAuthenticated%7B...HomePageConfigurationFragment+__typename%7D__typename%7D%7Dfragment+HomePageConfigurationFragment+on+HomePageConfiguration%7Bcomponents%7B...on+SimpleHomePage%7B_id+__typename%7D...on+Alert%7B_id+__typename%7D...on+MarketingTileGroup%7B_id+__typename%7D...on+MarketingCardGroup%7B_id+__typename%7D...on+OffersSection%7B_id+__typename%7D...on+LockedOffers%7B_id+__typename%7D...on+RewardsSection%7B_id+__typename%7D...on+QuestsSection%7B_id+__typename%7D...on+AppDownload%7B_id+__typename%7D__typename%7D__typename%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/graphql/prod_bk_ca/default?operationName=GetStaticPageRoutes&variables=%7B%7D&query=query+GetStaticPageRoutes%7BallStaticPages%7B_id+path%7Bcurrent+__typename%7Dtitle+localePath%7Ben%7Bcurrent+__typename%7Dfr%7Bcurrent+__typename%7D__typename%7DlocaleTitle%7Blocale%3Aen+__typename%7DdisplayIndex+parent%7B_id+_key+__typename%7DredirectUrl%7Blocale%3Aen+__typename%7D__typename%7D%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/data/query/prod_bk_ca?tag=bk-app;WEB-7.84.0.getOfferIncentiveIds",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/graphql/prod_bk_ca/default?operationName=LoyaltyRewards&variables=%7B%7D&query=query+LoyaltyRewards%7BallRewards%7B...RewardFragment+__typename%7D%7Dfragment+ImageFragment+on+Image%7Basset%7Bmetadata%7BblurHash+__typename%7DaltText+_id+__typename%7D__typename%7Dfragment+MenuImageFragment+on+Image%7Basset%7B_id+__typename%7D__typename%7Dfragment+RewardFragment+on+Reward%7B_id+loyaltyEngineId+name%7Blocale%3Aen+__typename%7DincentiveNotInMenu+description%7Blocale%3AenRaw+__typename%7DmobileOrderOnly+moreInfo%7BenRaw+__typename%7DhowToRedeem%7BenRaw+__typename%7DbackgroundImage%7B...MenuImageFragment+__typename%7Dimage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DimageDescription%7Blocale%3Aen+__typename%7Dincentives%7B__typename+...on+Combo%7B_id+_type+mainItem%7B_id+_type+operationalItem%7Bdaypart+__typename%7D__typename%7DvendorConfigs%7B...Plus+__typename%7D__typename%7D...on+Item%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...Plus+__typename%7D__typename%7D...on+Picker%7B_id+_type+options%7Boption%7B__typename+...on+Combo%7B_id+_type+mainItem%7B_id+_type+operationalItem%7Bdaypart+__typename%7D__typename%7DvendorConfigs%7B...Plus+__typename%7D__typename%7D...on+Item%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...Plus+__typename%7D__typename%7D%7D__typename%7D__typename%7D...on+OfferDiscount%7B_id+_type+discountValue+discountType+__typename%7D%7DvendorConfigs%7B...Plus+__typename%7D__typename%7Dfragment+VC+on+VendorConfig%7BpluType+parentSanityId+constantPlu+discountPlu+quantityBasedPlu%7Bquantity+plu+qualifier+__typename%7DmultiConstantPlus%7Bquantity+plu+qualifier+__typename%7DparentChildPlu%7Bplu+childPlu+__typename%7DsizeBasedPlu%7BcomboPlu+comboSize+__typename%7D__typename%7Dfragment+Plus+on+VendorConfigs%7Bcarrols%7B...VC+__typename%7DcarrolsDelivery%7B...VC+__typename%7Dncr%7B...VC+__typename%7DncrDelivery%7B...VC+__typename%7Dqdi%7B...VC+__typename%7DqdiDelivery%7B...VC+__typename%7D__typename%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/graphql/prod_bk_ca/default?operationName=simpleHomePages&variables=%7B%22where%22%3A%7B%22_id_in%22%3A%5B%22ec2ec2fb-650e-45c6-be76-c9244857c451%22%5D%7D%7D&query=query+simpleHomePages%28%24where%3ASimpleHomePageFilter%29%7BallSimpleHomePages%28where%3A%24where%29%7B...on+SimpleHomePage%7B...SimpleHomePageFragment+__typename%7D__typename%7D%7Dfragment+ImageFragment+on+Image%7Basset%7Bmetadata%7BblurHash+__typename%7DaltText+_id+__typename%7D__typename%7Dfragment+SimpleHomePageFragment+on+SimpleHomePage%7B_id+header%7Blocale%3Aen+__typename%7DdesktopImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DmobileImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DmobileImageLottie%7Blocale%3Aen%7Basset%7Burl+__typename%7D__typename%7D__typename%7DmobileVideo%7Blocale%3Aen%7Basset%7Burl+__typename%7D__typename%7D__typename%7DmobileImageBackgroundColor+imageDisclaimerText%7Blocale%3Aen+__typename%7DaltImageText%7Blocale%3Aen+__typename%7DimageLink+daypart+__typename%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/graphql/prod_bk_ca/default?operationName=marketingCardGroups&variables=%7B%22where%22%3A%7B%22_id_in%22%3A%5B%22f75007e3-e6a1-4ca1-a71e-de859d931ca9%22%5D%7D%7D&query=query+marketingCardGroups%28%24where%3AMarketingCardGroupFilter%29%7BallMarketingCardGroups%28where%3A%24where%29%7B...on+MarketingCardGroup%7B...MarketingCardGroupFragment+__typename%7D__typename%7D%7Dfragment+ColorFragment+on+Color%7Balpha+hex+hsl%7B_type+a+h+l+s+__typename%7Dhsv%7B_type+a+h+s+v+__typename%7Drgb%7B_type+a+b+g+r+__typename%7D__typename%7Dfragment+ImageFragment+on+Image%7Basset%7Bmetadata%7BblurHash+__typename%7DaltText+_id+__typename%7D__typename%7Dfragment+ImagesFragment+on+Images%7Bapp%7B...ImageFragment+__typename%7DimageDescription+__typename%7Dfragment+MarketingCardGroupFragment+on+MarketingCardGroup%7B_id+Cards%7B...on+MarketingCard%7B...MarketingCardFragment+__typename%7D__typename%7D__typename%7Dfragment+MarketingCardFragment+on+MarketingCard%7B_id+header%7Blocale%3Aen+__typename%7Ddescription%7Blocale%3Aen+__typename%7Dimage%7Blocale%3Aen%7B...ImagesFragment+__typename%7D__typename%7DcallToAction%7BactionText%7Blocale%3Aen+__typename%7DactionUrl%7Blocale%3Aen+__typename%7Droute+__typename%7DhasCustomColors+textColor%7B...ColorFragment+__typename%7DbackgroundColor%7B...ColorFragment+__typename%7DbuttonTextColor%7B...ColorFragment+__typename%7DbuttonBackgroundColor%7B...ColorFragment+__typename%7DhasTerms+termsText%7BlocaleRaw%3AenRaw+__typename%7DtermsButton%7BactionText%7Blocale%3Aen+__typename%7DactionUrl%7Blocale%3Aen+__typename%7Droute+__typename%7DdaysOfWeek+timeRanges%7BstartTime+endTime+__typename%7D__typename%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/graphql/prod_bk_ca/default?operationName=appDownload&variables=%7B%22appDownloadId%22%3A%22KGX4urdh7UF2Vlz88pYP0q%22%7D&query=query+appDownload%28%24appDownloadId%3AID%21%29%7BAppDownload%28id%3A%24appDownloadId%29%7B...AppDownloadFragment+__typename%7D%7Dfragment+AppDownloadFragment+on+AppDownload%7B_id+details%7BbackgroundImage%7B...ImageFragment+__typename%7DprimaryImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DprimaryImageDesktop%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DheaderSuperText%7Blocale%3Aen+__typename%7Dheader%7Blocale%3Aen+__typename%7Dcopy%7Blocale%3Aen+__typename%7DtextDecorationLeft%7B...ImageFragment+__typename%7DtextDecorationRight%7B...ImageFragment+__typename%7DsubmitButtonText%7Blocale%3Aen+__typename%7DiOSDownloadLink+iOSDownloadImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DandroidDownloadLink+androidDownloadImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DhuaweiDownloadLink+huaweiDownloadImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7D__typename%7D__typename%7Dfragment+ImageFragment+on+Image%7Basset%7Bmetadata%7BblurHash+__typename%7DaltText+_id+__typename%7D__typename%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=0&auid=667116229.1792274691&dt=Burger%20King&tid=AW-17474378530&en=page_view&dl=https%3A%2F%2Fwww.burgerking.ca%2Fnutrition-explorer&scrsrc=www.googletagmanager.com&rnd=1706626844.1792274691&navt=n&npa=0&did=dYWJhMj&gdid=dYWJhMj&gtm=45be6ae1v9227448710za20ozb9219672592zd9219672592xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034~123322201&tft=1792274692739&tfd=6635&tids=AW-17474378530&fmt=8",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/17474378530/?random=1792274692719&cv=11&fst=1792274692719&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6ae1v9227448710za20ozb9219672592zd9219672592xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034~123322201&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.burgerking.ca%2Fnutrition-explorer&rcb=1&frm=0&tiba=Burger%20King&did=dYWJhMj&gdid=dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=667116229.1792274691&uaa=x86&uab=64&uafvl=Microsoft%2520Edge%3B155.0.4283.45%7CChromium%3B155.0.8059.40%7CNot(A%253ABrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+    "status": 200
+  },
+  {
+    "url": "https://kjfd81ul.apicdn.sanity.io/v2026-04-24/graphql/prod_bk_ca/default?operationName=staticNutritionPage&variables=%7B%22id%22%3A%2256ed3383-9c4c-41ae-a125-49cb2f2e6188%22%7D&query=query+staticNutritionPage%28%24id%3AID%21%29%7BStaticPage%28id%3A%24id%29%7B_id+title+path%7B_key+_type+current+__typename%7Dwidgets%7B...NutritionExplorerWidgetFragment+__typename%7D__typename%7D%7Dfragment+AllergensFragment+on+OpAllergen%7Bmilk+eggs+fish+peanuts+shellfish+treeNuts+soy+wheat+mustard+sesame+celery+lupin+gluten+sulphurDioxide+__typename%7Dfragment+ConditionAllergenFragment+on+ConditionAllergen%7B_type+allergenIdentifier+comparisonOperator+comparisonValue+__typename%7Dfragment+ConditionNutritionFragment+on+ConditionNutrition%7B_type+nutritionIdentifier+comparisonOperator+comparisonValue+__typename%7Dfragment+ConditionParentCategoryFragment+on+ConditionParentCategory%7B_type+parentCategory%7B...on+Section%7B_id+__typename%7D...on+Picker%7B_id+__typename%7D__typename%7D__typename%7Dfragment+ConditionItemOneOfFragment+on+ConditionItemOneOf%7B_type+items%7B...NutritionExplorerItemFragment+__typename%7D__typename%7Dfragment+FilterFragment+on+Filter%7B_type+description%7Blocale%3Aen+__typename%7Dconditions%7B...ConditionAllergenFragment+...ConditionNutritionFragment+...ConditionParentCategoryFragment+...ConditionItemOneOfFragment+__typename%7D__typename%7Dfragment+FilterGroupFragment+on+FilterGroup%7B_type+description%7Blocale%3Aen+__typename%7Dfilters%7B...FilterFragment+__typename%7D__typename%7Dfragment+ImageFragment+on+Image%7Basset%7Bmetadata%7BblurHash+__typename%7DaltText+_id+__typename%7D__typename%7Dfragment+IngredientsItemsFragment+on+Ingredients%7BingredientImage%7B...ImageFragment+__typename%7Dingredients+name%7Blocale%3Aen+__typename%7DingredientsFrLocale+__typename%7Dfragment+NutritionExplorerItemFragment+on+Item%7B_id+_type+name%7Blocale%3Aen+__typename%7Dimage%7B...ImageFragment+__typename%7Doptions%7Boptions%7Bdefault+nutrition%7B...NutritionFragment+__typename%7D__typename%7D__typename%7Dnutrition%7B...NutritionFragment+__typename%7DnutritionWithModifiers%7B...NutritionFragment+__typename%7Dallergens%7B...AllergensFragment+__typename%7Dingredients%7B...IngredientsItemsFragment+__typename%7D__typename%7Dfragment+NutritionExplorerComboFragment+on+Combo%7B_id+_type+name%7Blocale%3Aen+__typename%7Dimage%7B...ImageFragment+__typename%7DmainItem%7B...NutritionExplorerItemFragment+__typename%7D__typename%7Dfragment+NutritionExplorerPickerFragment+on+Picker%7B_id+_type+name%7Blocale%3Aen+__typename%7Dimage%7B...ImageFragment+__typename%7DpickerDefaults%7BpickerAspect%7B_id+__typename%7DpickerAspectValueIdentifier+__typename%7DpickerAspects%7B_id+_type+pickerAspectOptions%7Bidentifier+__typename%7D__typename%7DpickerAspectItemOptionMappings%7BpickerAspect%7B_id+__typename%7Doptions%7Bvalue+__typename%7D__typename%7Doptions%7BpickerItemMappings%7BpickerAspectValueIdentifier+pickerAspect%7B_id+__typename%7D__typename%7Doption%7B...NutritionExplorerItemFragment+...NutritionExplorerComboFragment+__typename%7D__typename%7D__typename%7Dfragment+NutritionExplorerSectionFragment+on+Section%7B_id+_type+name%7Blocale%3Aen+__typename%7DcarouselImage%7B...ImageFragment+__typename%7Dimage%7B...ImageFragment+__typename%7Doptions%7B...NutritionExplorerPickerFragment+...NutritionExplorerItemFragment+...NutritionExplorerComboFragment+...on+Section%7B_id+_type+name%7Blocale%3Aen+__typename%7Doptions%7B...NutritionExplorerPickerFragment+...NutritionExplorerItemFragment+...on+Section%7B_type+_id+options%7B...NutritionExplorerPickerFragment+...NutritionExplorerItemFragment+__typename%7D__typename%7D__typename%7D__typename%7D__typename%7D__typename%7Dfragment+NutritionExplorerMenuFragment+on+Menu%7B_id+_type+options%7B...NutritionExplorerPickerFragment+...NutritionExplorerSectionFragment+...NutritionExplorerItemFragment+...NutritionExplorerComboFragment+__typename%7DpickerBackgroundImage%7B...ImageFragment+__typename%7D__typename%7Dfragment+NutritionExplorerWidgetFragment+on+NutritionExplorerWidget%7B_key+_type+menu%7B...NutritionExplorerMenuFragment+__typename%7DviewMenuButtonText%7Blocale%3Aen+__typename%7DmoreOptionsButtonText%7Blocale%3Aen+__typename%7DmadLibFilterGroup%7B...FilterGroupFragment+__typename%7DmodalFilterGroups%7B...FilterGroupFragment+__typename%7DcategoryWhitelist%7B...on+Section%7B_id+_type+__typename%7D...on+Picker%7B_id+_type+__typename%7D__typename%7D__typename%7Dfragment+NutritionFragment+on+Nutrition%7Bcalories+fat+saturatedFat+transFat+cholesterol+sodium+salt+carbohydrates+fiber+sugar+proteins+weight+__typename%7D",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "url": "blob:https://www.burgerking.ca/8da552cc-5993-4918-a5bf-ab9f899a2798",
+    "status": 200,
+    "contentType": "application/javascript"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/a8016a15bb633100044df851a399ddcfb0c452bc-2100x1050.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/7ca8daa29c83f979ec2aa7d5b208ba5f4530415f-2000x1000.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/e165783deaee34bc4c5fb98b2dbfd8a9e5d282ee-2000x1000.png?w=650&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/e165783deaee34bc4c5fb98b2dbfd8a9e5d282ee-2000x1000.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/fa9e224cb5787829b96ff160a0315d056ef5e07b-2000x1000.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/2adfc30e6b30874f482678a85d2ac760b46c93e4-2000x1000.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/51b68f46073fa5e4435819352cd61961af9d0d49-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/a51647521b8e77ef4985c18c6e65d1f6911cfbb2-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/97bb08de41740414f23e245a16f912d2118078cc-1500x1500.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/fa9e224cb5787829b96ff160a0315d056ef5e07b-2000x1000.png?w=650&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/723aaeaf2bec7f23e6e4804c98b82e4a75bbfa24-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/4682882b70d9b69cc1c46d8ac59d3f176b10cd77-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/12c65f4128b1e4876691adf6baca5711d91a8eb1-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/97bb08de41740414f23e245a16f912d2118078cc-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/f8bad1ab3c9a3ff70beb8c3ad377b1c1174ec31a-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/93e5306578adf35a5f68e6f1bdeeee6b3c1fa73a-1340x2014.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/7d6d06feeb28b8cf17618385a9f8dc9c1786ee54-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/2adfc30e6b30874f482678a85d2ac760b46c93e4-2000x1000.png?w=650&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/7ca8daa29c83f979ec2aa7d5b208ba5f4530415f-2000x1000.png?w=650&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/eb43f76dec2389cbe9bccea1271114530c303f86-646x250.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/8293bf1da469d1cca58fba752315f5b2c4a5ebca-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/572f2df94857086051ce7ff22d4a93946ea0e88c-120x40.svg?tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/4c9d28186f75c5e9e46eef7b7f60af9bf1f13b2d-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/4defcb20f2e4d484a6b9be341920ddd6c1fcb2f6-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/834c1b81b9b7b607c0c2bacf4e1573a88515f9d5-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17474378530/?random=1792274692719&cv=11&fst=1792274692719&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6ae1v9227448710za20ozb9219672592zd9219672592xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034~123322201&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.burgerking.ca%2Fnutrition-explorer&rcb=1&frm=0&tiba=Burger%20King&did=dYWJhMj&gdid=dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=667116229.1792274691&uaa=x86&uab=64&uafvl=Microsoft%2520Edge%3B155.0.4283.45%7CChromium%3B155.0.8059.40%7CNot(A%253ABrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+    "status": 200,
+    "contentType": "text/javascript; charset=UTF-8"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/6e58b7c71993d54d6f4d79e2c42decec36383a16-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/b410ac7446112b78b67c370a32041e0745724691-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/b8c565cff6b35e656b905a7c70c7f249cb05659b-2666x1333.png?w=150&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/ffe540a81ee97c0e1ff38dc7ac7e4c45bf013356-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/167b563379ba8c719bdcae2ff7106f7c90d1ad9f-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/36e3aada669a14376d61c7fd88e19877f9fcad58-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/72233efb2ed90cdb37af5b4610a5873648807068-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/83290b099c8b1664ab0d7f79f157d3abc7e58c35-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/fb86a20f45dab7f99f4be104d30e02f2fd80d73e-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/66a075b940cc651a3b76f091a7e8039123b882c7-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "blob:https://www.burgerking.ca/7ddbf449-f40a-4b6e-8b80-3efcd40969a1",
+    "status": 200,
+    "contentType": "application/javascript"
+  },
+  {
+    "url": "blob:https://www.burgerking.ca/461e1a83-e63f-4ec5-90e2-d259b469e5fd",
+    "status": 200,
+    "contentType": "application/javascript"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/fd1bd0778522006b8f3cfe023db9deb6a54cc389-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/4ed5abc4846a0e59fa6bd8bc0fda3f6c479b23e7-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/04f0343ea368ad4aefacde582777c0f9285edaaf-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/17474378530/?random=1792274692719&cv=11&fst=1792274400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6ae1v9227448710za20ozb9219672592zd9219672592xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034~123322201&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.burgerking.ca%2Fnutrition-explorer&rcb=1&frm=0&tiba=Burger%20King&did=dYWJhMj&gdid=dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=667116229.1792274691&uaa=x86&uab=64&uafvl=Microsoft%2520Edge%3B155.0.4283.45%7CChromium%3B155.0.8059.40%7CNot(A%253ABrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAQM4h3CS6p_rK2CHIWu_bThzOq15ptuTzLPAW2I-bOvvWDKLW0EbvtSeBOfi-Ebrjqyowak_IdX7JkE5b6LBgz101zhsbGO_Nev3rUUar_-iTLc1VbXx9V5gbsBkEZLVQ7PssBHCL3sHuJrNKlnT52K-Rn9lVSiRc081D3IT9ybd8-rqIBss3d_hfw2taDVaM-yaS5v9X1tubEPuJWDBJ83hrV18S336TVlLg3yqrVii86ySQ8lajawo7_SfYZzrkdUl77qKAeonmS04vk6uVEbl6&random=554805337&rmt_tld=0&ipr=y",
+    "status": 200,
+    "contentType": "image/gif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/7ff97e5b150d300a3a43a8c486dff5adbd9049c5-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/fb287a36bdc879733f377c3eb4078ffcdcb477b8-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/11108d4c588132d1a2ec7198d8b3c89049c89d44-1500x1500.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/d24b43ed6bbc58168940d80fa6509619b630dfb2-1333x1333.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/1773174023ac24516e4f2fe6296ae8cb4cc995e8-1333x1333.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/87044567be9bf7fa33cea2c805e769b723e78768-1333x1333.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/2fd4a1bb7568347c1f4f4f957926f6e72be4488e-1333x1333.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/29db406dba178505aa645df6071115d5cccc8190-1333x1333.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/6522092246a0d977ff25fb7b312ba470e4987cb1-1333x1333.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://cdn.sanity.io/images/kjfd81ul/prod_bk_ca/bfe3b110b2b5cb5d18b20288d7adb66abd567882-1333x1333.png?w=900&q=75&fit=max&auto=format&tag=bk-app%3BWEB-7.84.0",
+    "status": 200,
+    "contentType": "image/avif"
+  },
+  {
+    "url": "https://www.google.ca/pagead/1p-user-list/17474378530/?random=1792274692719&cv=11&fst=1792274400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6ae1v9227448710za20ozb9219672592zd9219672592xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034~123322201&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.burgerking.ca%2Fnutrition-explorer&rcb=1&frm=0&tiba=Burger%20King&did=dYWJhMj&gdid=dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=667116229.1792274691&uaa=x86&uab=64&uafvl=Microsoft%2520Edge%3B155.0.4283.45%7CChromium%3B155.0.8059.40%7CNot(A%253ABrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAQM4h3CS6p_rK2CHIWu_bThzOq15ptuTzLPAW2I-bOvvWDKLW0EbvtSeBOfi-Ebrjqyowak_IdX7JkE5b6LBgz101zhsbGO_Nev3rUUar_-iTLc1VbXx9V5gbsBkEZLVQ7PssBHCL3sHuJrNKlnT52K-Rn9lVSiRc081D3IT9ybd8-rqIBss3d_hfw2taDVaM-yaS5v9X1tubEPuJWDBJ83hrV18S336TVlLg3yqrVii86ySQ8lajawo7_SfYZzrkdUl77qKAeonmS04vk6uVEbl6&random=554805337&rmt_tld=1&ipr=y",
+    "status": 200,
+    "contentType": "image/gif"
+  }
+]

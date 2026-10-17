@@ -1,0 +1,49 @@
+{
+  "reviewedAt": "2026-10-17",
+  "status": "withheld-source-quality-and-access",
+  "acceptedRecords": 0,
+  "updates": 0,
+  "presenceUpserts": 0,
+  "guideBriefs": 0,
+  "mexicoBaseline": {
+    "records": 100,
+    "chain": "Subway",
+    "identityNutritionSourceSha256": "0152454b51060e7de4e6f9b9b04fd657f3e9e5f98102ea4203e5095928f52f6f"
+  },
+  "publicDataset": {
+    "nutritionItems": 418,
+    "fatItems": 78,
+    "proteinItems": 78,
+    "carbItems": 79,
+    "completeMacroObjects": 78,
+    "withoutSpanishName": 59,
+    "explicitTestName": 6,
+    "menuNames": [
+      {
+        "_type": "localeString",
+        "es": "Menú V1"
+      },
+      {
+        "_type": "localeString",
+        "en": "Antarctica Menu"
+      },
+      {
+        "_type": "localeString",
+        "en": "BK Menu"
+      },
+      {
+        "_type": "localeString",
+        "es": "Menú V2 Alsea"
+      }
+    ],
+    "scope": "Anonymous public CMS objects, not a verified current-menu count."
+  },
+  "sourcePayloadHash": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+  "limits": [
+    "McDonald’s Mexico direct downloads returned HTTP 403; web text exposes nutrition accordion headings without numerical values.",
+    "No enabled browser surface was available to operate those public accordions.",
+    "Burger King legacy Big King page reports only 224 g and 570 kcal; protein/carbohydrate/fat values are absent.",
+    "Burger King regional nutrition links point to a burgerking.es storage path; not established as Mexican data.",
+    "No KFC Mexico source rows, foreign substitutions, private credentials, guessed portions, image copies, or unknown-to-zero conversion used."
+  ]
+}

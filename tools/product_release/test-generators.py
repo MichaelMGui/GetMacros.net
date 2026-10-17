@@ -11,7 +11,8 @@ def integrate():
     assert manifest['scope'] == '/' and manifest['id'] == '/'
     assert manifest['shortcuts'][0]['url'] == '/food-diary.html'
     html = (ROOT/'protein-value-calculator.html').read_text(encoding='utf-8')
-    for currency in ['USD','CAD','GBP','EUR','AUD','NZD','MXN','JPY']:
+    market_definitions=json.loads(re.search(r'window.GM_MARKETS=(.*);',(ROOT/'js/market-definitions.js').read_text(encoding='utf-8'))[1])
+    for currency in sorted(set(['USD','CAD','GBP','EUR','AUD','NZD','MXN','JPY'])|{info['currency'] for info in market_definitions.values()}):
         assert html.count('value="'+currency+'"') == 1, 'Duplicate or missing currency '+currency
     pages = json.loads((ROOT/'docs/global-product-release-2026-10-11/published-manifest.json').read_text(encoding='utf-8'))
     master = json.loads((ROOT/'docs/master-release-2026-10-12/published-manifest.json').read_text(encoding='utf-8'))

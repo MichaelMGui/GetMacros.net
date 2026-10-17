@@ -1,0 +1,69 @@
+{
+  "reviewedAt": "2026-10-17",
+  "relationships": [
+    {
+      "id": "CA|burger-king",
+      "country": "CA",
+      "restaurantBrand": "Burger King",
+      "restaurantId": "burger-king",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.burgerking.ca/",
+      "localMenuSource": "https://www.burgerking.ca/nutrition-explorer",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.burgerking.ca/nutrition-explorer",
+        "evidenceType": "official country nutrition explorer and explicit country CMS dataset",
+        "observation": "Published named local menu and per-serving facts are present in prod_bk_ca. U.S. support explicitly links its U.S. nutrition explorer; the Canadian site is independently scoped.",
+        "checkedAt": "2026-10-17"
+      },
+      "nutritionSources": [
+        "https://www.burgerking.ca/nutrition-explorer"
+      ],
+      "lastCheckedDate": "2026-10-17",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "nutritionSourceStatus": "reviewed-selection",
+      "finderSupported": true,
+      "trackedRecords": 134,
+      "completeMacroRecords": 134,
+      "finderRecords": 124,
+      "calculatedOrders": 0,
+      "caloriesOnlyRecords": 0,
+      "partialMacroRecords": 0,
+      "sourceRetrievalIsVerification": false,
+      "limitations": "Captured official named source selection; no branch-stock, full-live-menu, full ingredient-formula completeness or allergy-safety claim."
+    },
+    {
+      "id": "US|burger-king",
+      "country": "US",
+      "restaurantBrand": "Burger King",
+      "restaurantId": "burger-king",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.bk.com/",
+      "localMenuSource": "https://www.bk.com/nutrition-explorer",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.bk.com/nutrition-explorer",
+        "evidenceType": "official country nutrition explorer and explicit country CMS dataset",
+        "observation": "Published named local menu and per-serving facts are present in prod_bk_us. U.S. support explicitly links its U.S. nutrition explorer; the Canadian site is independently scoped.",
+        "checkedAt": "2026-10-17"
+      },
+      "nutritionSources": [
+        "https://www.bk.com/nutrition-explorer"
+      ],
+      "lastCheckedDate": "2026-10-17",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "nutritionSourceStatus": "reviewed-selection",
+      "finderSupported": true,
+      "trackedRecords": 256,
+      "completeMacroRecords": 256,
+      "finderRecords": 233,
+      "calculatedOrders": 0,
+      "caloriesOnlyRecords": 0,
+      "partialMacroRecords": 0,
+      "sourceRetrievalIsVerification": false,
+      "limitations": "Captured official named source selection; no branch-stock, full-live-menu, full ingredient-formula completeness or allergy-safety claim."
+    }
+  ]
+}

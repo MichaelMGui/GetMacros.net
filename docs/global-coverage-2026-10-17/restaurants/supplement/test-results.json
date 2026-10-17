@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "testsRun": 15,
+  "failures": 0,
+  "errors": 0,
+  "records": 390,
+  "marketCounts": {
+    "CA": 134,
+    "US": 256
+  },
+  "finderEligible": {
+    "CA": 124,
+    "US": 233
+  },
+  "sourceEditionIsRetrievalDate": false
+}

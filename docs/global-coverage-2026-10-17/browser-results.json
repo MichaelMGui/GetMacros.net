@@ -5,6 +5,9 @@
     "New grocery source record searched, portion reviewed, logged to Breakfast and retained after reload",
     "/ca/en/find-a-meal/?chain=KFC real local results",
     "/jp/en/find-a-meal/?chain=MOS+Burger real local results",
+    "CA Burger King exact country serving searched, reviewed and logged to Lunch",
+    "US Burger King exact country serving searched, reviewed and logged to Lunch",
+    "Cross-country nutrition table labels both actual countries",
     "No page overflow at 320px across six representative pages",
     "No page overflow at 390px across six representative pages",
     "No page overflow at 768px across six representative pages",
@@ -20,6 +23,9 @@
     "05-mos-japan-results-desktop.png",
     "06-diary-mobile.png",
     "07-wegmans-search-mobile.png",
-    "08-mos-guide-dark-mobile.png"
+    "08-mos-guide-dark-mobile.png",
+    "09-burger-king-ca-review-desktop.png",
+    "09-burger-king-us-review-desktop.png",
+    "10-whopper-country-comparison-mobile.png"
   ]
 }

@@ -1,0 +1,54 @@
+Burger King Canada and U.S. supplement — reviewed 2026-10-17
+
+390 named standard-serving records: Canada 134; United States 256.
+Finder supported: Canada 124; United States 233. Condiments stay searchable
+source components rather than finder meals. No McDonald's records staged.
+
+Integration inputs:
+tools/global_coverage_2026_10_17/restaurant-supplement-records.json
+docs/global-coverage-2026-10-17/restaurants/supplement/presence-upserts.json
+docs/global-coverage-2026-10-17/restaurants/supplement/guide-briefs.json
+docs/global-coverage-2026-10-17/restaurants/supplement/source-register.json
+
+Same records/updates batch schema as earlier restaurant work. No updates.
+U.S. guide URL approved by parent: /burger-king-healthy-meals-macros.html
+Canadian guide URL: /ca/en/restaurants/burger-king/
+
+Exact official payloads:
+bk-ca-nutrition.json (1,066,508 bytes), distinct CA StaticPage and prod_bk_ca.
+bk-us-nutrition.json (1,639,605 bytes), distinct US StaticPage and prod_bk_us.
+Official help page explicitly links BK Nutrition Explorer – USA. Shared app
+configuration explicitly distinguishes U.S. and Canadian domains/datasets.
+Current Canadian visible Whopper panel independently checked in Edge.
+
+Core macros and optional nutrient nulls/zeros are copied exactly from the
+source's published standard-build object. The app-code excerpts verify that
+the explorer displays this object, not its separate base-nutrition object.
+No modifier arithmetic, invented sides, cheese quantities, or combos.
+Source weight values are retained in sourcePublishedNutrition but are not
+declared grams: the inspected panel gives no native weight unit. Serving
+means one named source item, per serving. Publication dates remain unknown.
+Direct sodium is preserved even where source salt does not reconcile.
+
+15 independent source/integrity/serving/region/arithmetic tests:
+bundled Python -X utf8 tools/global_coverage_2026_10_17/restaurant-supplement-verify.py
+Class: SupplementTests. Result: 15/15 pass.
+Every registered evidence file is under 2 MiB; registered total under 20 MiB.
+Unrelated app discovery bundle removed after retaining exact selected
+configuration/display excerpts and the original full-bundle SHA-256.
+
+3 source-backed briefs: Canadian Whopper with/without cheese; U.S. equivalent;
+Canada/U.S. Whopper macros and actual local mayonnaise/bun statements.
+Country ingredient differences do not establish quantities or causal macro
+effects. No allergy-safety or full-live-menu claim.
+
+Parent is handling full-country comparison table labels/neutral caption and
+plain-language presentation of the standard-build explanation.
+
+McDonald's Canada: official menu/calculator and known official nutrition API
+return HTTP403 here. Edge displays Access Denied. Indexed product page text
+omits dynamic macros. No old unlinked PDF or third-party nutrition used.
+Burger King U.S.: browser navigation redirects to Canada; public data access
+was resolved through the explicitly U.S. official CMS dataset. See blockers.json.
+
+No shared registry, runtime, build, HTML, Git or deployment edits by this agent.

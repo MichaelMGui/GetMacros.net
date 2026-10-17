@@ -1,0 +1,119 @@
+[
+  {
+    "file": "mcd-mx-big-mac.html",
+    "url": "https://www.mcdonalds.com.mx/menu/hamburguesas/big-mac",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "mcd-mx-menu.html",
+    "url": "https://www.mcdonalds.com.mx/menu",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "bk-mx-home.html",
+    "url": "https://www.burgerking.com.mx",
+    "finalUrl": "https://www.burgerking.com.mx",
+    "bytes": 2207,
+    "sha256": "09da40e91944eff68d5e10f7816e2a6a14812afaa2b546b72d10fd92b55eeb89",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-mx-real.html",
+    "url": "https://www.burgerking.com.mx/saborreal-s.html",
+    "finalUrl": "https://www.burgerking.com.mx/saborreal-s.html",
+    "bytes": 117980,
+    "sha256": "499a0e7169e87f9c73b4da83be649c8d2e0c2c8d109cc292be5c07c519d7d90c",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-mx-big-king.html",
+    "url": "https://www.burgerking.com.mx/menu/a-la-parrilla/big-king-s.html",
+    "finalUrl": "https://www.burgerking.com.mx/menu/a-la-parrilla/big-king-s.html",
+    "bytes": 287608,
+    "sha256": "463efe9443ffde8c2d86334f518b6a6531a2a08e670706d8258348082ff78a04",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-mx-big-mac-apex.html",
+    "url": "https://mcdonalds.com.mx/menu/hamburguesas/big-mac",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "mcd-mx-big-mac-query.html",
+    "url": "https://www.mcdonalds.com.mx/menu/hamburguesas/big-mac?source=nutrition",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "mcd-mx-home.html",
+    "url": "https://www.mcdonalds.com.mx/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "mcd-mx-cajita.html",
+    "url": "https://www.mcdonalds.com.mx/menu/cajita-feliz",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "bk-mx-main.js",
+    "url": "https://www.burgerking.com.mx/static/js/main.bdd06e47.js",
+    "finalUrl": "https://www.burgerking.com.mx/static/js/main.bdd06e47.js",
+    "bytes": 5779117,
+    "sha256": "9fe325d9c92a3ad91d4d9d352bce8b5047f67b5e21ebcdcdc4b87c27602e2007",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false,
+    "retained": false,
+    "retainedEvidenceFile": "bk-mx-app-source-evidence.json",
+    "reason": "Retain only required public source excerpts; avoid copying unrelated app configuration and telemetry."
+  },
+  {
+    "file": "bk-mx-menu.html",
+    "url": "https://www.burgerking.com.mx/es/menu",
+    "finalUrl": "https://www.burgerking.com.mx/es/menu",
+    "bytes": 2207,
+    "sha256": "09da40e91944eff68d5e10f7816e2a6a14812afaa2b546b72d10fd92b55eeb89",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-latam-nutrition.html",
+    "url": "https://www.burgerkinglatino.com/es/content/nutrition-information-documents-area",
+    "finalUrl": "https://www.burgerkinglatino.com/es/content/nutrition-information-documents-area",
+    "bytes": 32340,
+    "sha256": "6ac6b8cb914418a0b7b831bea1743bb1a385a4a7e5e7332955437be328eecf09",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "bk-mx-public-nutrition.json",
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%5B0...250%5D%7B_id%2C_type%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%2Cdescription%2Cslug%2Cavailability%7D",
+    "finalUrl": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%5B0...250%5D%7B_id%2C_type%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%2Cdescription%2Cslug%2Cavailability%7D",
+    "bytes": 318973,
+    "sha256": "80f82a888117b2371a2b2e6ee3d03a18ad6e4eaed99632e48746d34eb087bb35",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false,
+    "authentication": "none; public anonymous read"
+  },
+  {
+    "file": "bk-mx-public-counts.json",
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "finalUrl": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%7B%22nutritionItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition%29%5D%29%2C%22fatItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%5D%29%2C%22proteinItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%29%2C%22carbItems%22%3Acount%28%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.carbohydrates%29%5D%29%2C%22macroItems%22%3A%2A%5B_type%20%3D%3D%20%22item%22%20%26%26%20defined%28nutrition.fat%29%20%26%26%20defined%28nutrition.carbohydrates%29%20%26%26%20%28defined%28nutrition.proteins%29%20%7C%7C%20defined%28nutrition.protein%29%29%5D%7B_id%2C_updatedAt%2Cname%2Cnutrition%2CproductSize%7D%2C%22menus%22%3A%2A%5B_type%20%3D%3D%20%22menu%22%5D%5B0...10%5D%7B_id%2Cname%7D%7D",
+    "bytes": 29236,
+    "sha256": "a1b3cd3aba79b9a62cde0016b40762ab46dbc19e10631c3ccb10a2a6f8a9b007",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false,
+    "authentication": "none; public anonymous read"
+  },
+  {
+    "file": "bk-mx-public-menus.json",
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%2A%5B_type%20%3D%3D%20%22menu%22%5D%7B...%7D",
+    "finalUrl": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/data/query/prod_bk_mx?query=%2A%5B_type%20%3D%3D%20%22menu%22%5D%7B...%7D",
+    "bytes": 4329,
+    "sha256": "9afe377bfd30615dcf6cbf157ca82d9ea49fe25e9011e53040c7eb2b8007aadf",
+    "retrievedAt": "2026-10-17",
+    "retrievalIsVerification": false,
+    "authentication": "none; public anonymous read"
+  }
+]

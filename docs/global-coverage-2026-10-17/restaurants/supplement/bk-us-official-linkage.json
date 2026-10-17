@@ -1,0 +1,11 @@
+{
+  "sourceUrl": "https://help.bk.com/hc/en-us/articles/36913083446935-Where-can-I-view-the-nutrition-and-allergen-information-for-Burger-King-menu-items",
+  "retrievedAt": "2026-10-17",
+  "verifiedAt": "2026-10-17",
+  "captureMethod": "Official page read with web.run; selected short evidence excerpt",
+  "pageTitle": "Where can I view the nutrition and allergen information for Burger King menu items?",
+  "pageUpdatedAt": "2026-03-17 15:20",
+  "observedLinkText": "BK Nutrition Explorer – USA",
+  "observedLinkUrl": "https://www.bk.com/nutrition-explorer",
+  "observation": "Official U.S. help article directs users to the current U.S. explorer. The linked article date is not an edition date for the nutrition payload."
+}

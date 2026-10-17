@@ -29,9 +29,12 @@ jobs:
         with:
           node-version: "24"
       - name: Rebuild and validate the focused site
-        run: sh tools/build_site.sh
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/getmacros-validation.log") 2>&1
+          sh tools/build_site.sh
       - name: Test filtering, units and calculator formulas
         run: |
+          exec > >(tee -a "$RUNNER_TEMP/getmacros-validation.log") 2>&1
           node tools/test_macro_math.js
           node tools/product_release/test-food.cjs
           node tools/product_release/test-ingredient-comparison.cjs
@@ -58,7 +61,12 @@ jobs:
           node tools/global_coverage_2026_10_17/usda_test_search.cjs
           python3 tools/global_coverage_2026_10_17/restaurant_verify.py
           python3 tools/global_coverage_2026_10_17/restaurant_newmarkets_verify.py
+          python3 tools/global_coverage_2026_10_17/restaurant-supplement-verify.py
+          python3 tools/global_coverage_2026_10_17/mexico-supplement-test.py
           python3 tools/clarity_release/test_restaurant_additions.py
           python3 tools/clarity_release/test_mexico_classification.py
           python3 tools/clarity_release/test_character_media.py
           python3 tools/clarity_release/test_editorial.py
+      - name: Expose failed validation output
+        if: failure()
+        run: python3 tools/ci_failure_summary.py

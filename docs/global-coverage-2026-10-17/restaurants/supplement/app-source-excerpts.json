@@ -1,0 +1,34 @@
+{
+  "sourceUrl": "https://www.burgerking.ca/_expo/static/js/web/index-a5e4389cc3f23924515d4198cf1faad0.js",
+  "originalSha256": "840d4c6ff35c3890593595b226f2a7e132108329cfdaf828f1a58649de11db53",
+  "originalBytes": 13409150,
+  "retrievedAt": "2026-10-17",
+  "captureMethod": "Selected exact source-code excerpts; not a full-bundle capture",
+  "snippets": [
+    {
+      "match": "V=()=>`${O()}_${b()}`",
+      "excerpt": "_EMAIL_DOMAIN||d(),v=()=>c[b()],E=()=>f[b()],I=(0,o.getConfigValue)({key:'buildRegion'})||'US',B=I.toUpperCase(),C=I===u.Region.US,k=I===u.Region.CA,h=(0,n.randomUUID)(),V=()=>`${O()}_${b()}`,R=!1,S=!1,A=P(u.RBIEnv.PROD),w=!0,N=!1,_=!1,L=!1,D=()=>/Mobile/.test(navigator.userAgent)||L,M=()=>new Set(['iPad Simulator','iPhone Simulator','iPod Simulator','iPad','iPhone','iPod']).has(navigator.platform)||navigator.userAgent.includes('Mac')&&'"
+    },
+    {
+      "match": "sanityDataset)()}_${l.toLowerCase()}",
+      "excerpt": "atusListener)(t);return()=>{C.current&&clearTimeout(C.current),n()}},p=[],o[0]=R,o[1]=p):(R=o[0],p=o[1]),(0,r(d[6]).useEffect)(R,p),o[2]!==l||o[3]!==y){const t=l?`${(0,s.sanityDataset)()}_${l.toLowerCase()}`:(0,s.sanityDataset)().toLowerCase();b=(0,r(d[7]).getSanityGroqQueryUrl)({sanityDataset:t,useCdn:!0,sanityProjectId:y}),h=(0,r(d[7]).getSanityGraphqlQueryUrl)({sanityDataset:t,useCdn:!0,sanityProjectId:y}),o[2]=l,o[3]=y,o[4]=b,o[5]=h}else b=o[4],h=o"
+    },
+    {
+      "match": "sanity-project-id",
+      "excerpt": "sPayPalSupported)(),'enable-venmo-payments':(0,n.isVenmoSupported)(),'enable-cash-app-payments':!1,'show-ordering-issue-info':!0,'show-increased-delivery-fees-modal':!1,'sanity-project-id':'kjfd81ul','app-takeover':t.region===l.Region.CA?[{name:'elevation',startDate:'2026-03-31T00:00:00-05:00',endDate:'2026-05-03T23:59:59-05:00'},{name:'mandalorian',startDate:'2026-05-04T00:00:00-05:00',endDate:'2026-06-04T23:59:59-05:00'},{name:'dra"
+    },
+    {
+      "match": "n.nutritionWithModifiers.calories",
+      "excerpt": "=(0,r(d[3]).min)([a,t]);a-=o,p+=o*u(n.option)}o.push(l),s.push(p)}})),{max:t+(0,r(d[3]).sum)(s),min:t+(0,r(d[3]).sum)(o)}}function l(n){const t=n.nutritionWithModifiers&&n.nutritionWithModifiers.calories?n.nutritionWithModifiers.calories:0;return{min:t,max:t}}const f=(n,t)=>({max:Math.max(n.max,t.max),min:n.min?Math.min(n.min,t.min):t.min}),p=n=>{if(!n)return Object.assign({},c,{length:0});function t(n){const{min:t,max:o}=n.reduce(((n,t)=>{const o=p"
+    },
+    {
+      "match": "facts:L,allergenGroups:A",
+      "excerpt": ".ingredients||[],t[7]=n.ingredients,t[8]=O):O=t[8];const W=O;let $;t[9]!==A||t[10]!==n.image||t[11]!==n.name||t[12]!==L||t[13]!==W?($=[{itemName:n.name,itemImage:n.image,facts:L,allergenGroups:A,ingredients:W}],t[9]=A,t[10]=n.image,t[11]=n.name,t[12]=L,t[13]=W,t[14]=$):$=t[14];const F=$;let N,k,z,D,G,I;t[15]===Symbol.for(\"react.memo_cache_sentinel\")?(N=()=>y(!0),t[15]=N):N=t[15],t[16]!==n.name?(k=(0,r(d[13]).jsx)(f.Typography,{variant:\"head"
+    },
+    {
+      "match": "androidIntentFilterHosts",
+      "excerpt": "tps://apps.apple.com/us/app/burger-king-canada/id1422864779\\\",\\\"playStoreUrl\\\":\\\"https://play.google.com/store/apps/details?id=com.emn8.mobilem8.nativeapp.bkca&pli=1\\\",\\\"androidIntentFilterHosts\\\":[\\\"www.burgerking.ca\\\",\\\"burgerking.ca\\\"],\\\"associatedDomains\\\":[\\\"burgerking.ca\\\",\\\"www.burgerking.ca\\\",\\\"*.web.bk.ca.rbi.tools\\\",\\\"link.mail.burgerking.ca\\\",\\\"link.yourway.burgerking.ca\\\",\\\"burgerkingca.app.link\\\",\\\"burgerkingca-alternate.app.li"
+    }
+  ],
+  "scopeObservation": "Shared official app explicitly maps US to bk.com and CA to burgerking.ca; Sanity dataset is environment/brand/region. U.S. and Canadian static Nutrition Explorer IDs and payloads are distinct."
+}
