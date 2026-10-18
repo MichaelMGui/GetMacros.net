@@ -1,0 +1,10 @@
+{
+  "base": "http://127.0.0.1:54998",
+  "checks": [],
+  "runtimeErrors": [],
+  "screenshots": [
+    "diary-mobile-dark.png",
+    "learn-desktop-dark.png",
+    "quiz-restaurants-desktop-dark.png"
+  ]
+}

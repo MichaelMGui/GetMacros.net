@@ -1,0 +1,37 @@
+[
+  {
+    "command": "node tools/test_macro_math.js",
+    "exitCode": 0,
+    "output": "PASS: conversions, BMR, TDEE, goal adjustments and macro energy balance.\n"
+  },
+  {
+    "command": "node tools/product_release/test-food.cjs",
+    "exitCode": 0,
+    "output": "PASS Food search tolerates a common typo without changing preparation or market\nPASS Ingredient lookup puts olive oil before dishes merely containing it\nPASS Imported profiles have stable IDs, known units and a source basis\nPASS Chicken weight and olive-oil portions use actual source values\nPASS Unknown nutrients remain unknown through quantities, daily sums and recipe yields\nPASS Raw and cooked entries remain different records and historical snapshots are immutable\nPASS Date logic is local-calendar based and rejects invalid dates\nPASS Every published market is isolated by both finder and food search\nPASS Salt conversion, named portions and ingredient source limits are preserved\nPASS AI record validation rejects unknown records and invalid quantities\nPASS Diary backups reject corrupted snapshots and recipe totals before any import\n11 food-integrity and computation checks passed.\n"
+  },
+  {
+    "command": "node tools/product_release/test-ingredient-comparison.cjs",
+    "exitCode": 0,
+    "output": "PASS: source-label plurals, original labels retained, no preparation/bread/sauce equivalence inferred, immutable inputs.\n"
+  },
+  {
+    "command": "node tools/master_release/test-diary-meals.cjs",
+    "exitCode": 0,
+    "output": "PASS: 9905 source-backed browse choices; 12 groups; source identity, portions, nulls, bounded loading and offline catalogue.\n"
+  },
+  {
+    "command": "C:\\Users\\slowf\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -X utf8 tools/test_publication.py",
+    "exitCode": 0,
+    "output": "Publication: 405 pages; shared stylesheet (64,098 bytes) plus purposeful route styles, preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.\n"
+  },
+  {
+    "command": "C:\\Users\\slowf\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -X utf8 tools/test_search_visibility.py",
+    "exitCode": 0,
+    "output": "Search visibility passed: 405 pages, 30861 internal links and anchors; meal labels match source data.\n"
+  },
+  {
+    "command": "C:\\Users\\slowf\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -X utf8 tools/test_asset_stamps.py",
+    "exitCode": 0,
+    "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.302s\n\nOK\n"
+  }
+]

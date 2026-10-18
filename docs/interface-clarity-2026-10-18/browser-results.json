@@ -1,0 +1,39 @@
+{
+  "base": "http://127.0.0.1:59634",
+  "checks": [
+    "light 320px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "light 390px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "light 768px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "light 1280px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "light 1440px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "dark 320px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "dark 390px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "dark 768px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "dark 1280px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes",
+    "dark 1440px: aligned search, unclipped meal selector, filters, categories, portions, logging/reload, tabs, quiz selection/results, Learn and five shared-style routes"
+  ],
+  "runtimeErrors": [],
+  "screenshots": [
+    "diary-mobile-dark.png",
+    "learn-desktop-dark.png",
+    "picker-dark-1280.png",
+    "picker-dark-1440.png",
+    "picker-dark-320.png",
+    "picker-dark-390.png",
+    "picker-dark-768.png",
+    "picker-light-1280.png",
+    "picker-light-1440.png",
+    "picker-light-320.png",
+    "picker-light-390.png",
+    "picker-light-768.png",
+    "quiz-dark-1440.png",
+    "quiz-dark-320.png",
+    "quiz-dark-390.png",
+    "quiz-light-1440.png",
+    "quiz-light-320.png",
+    "quiz-light-390.png",
+    "quiz-restaurants-desktop-dark.png",
+    "review-dark-390.png",
+    "review-light-390.png"
+  ]
+}

@@ -14,7 +14,7 @@ const out='docs/diary-meals-2026-10-12';fs.mkdirSync(out,{recursive:true});
   // Every meal button targets its own review; browsing uses real source shards.
   for(const occasion of ['Breakfast','Lunch','Dinner','Snack']){
    await page.locator('[data-meal-add="'+occasion+'"]').click();await page.locator('[data-browse-food]').first().waitFor();
-   assert.equal(await page.locator('[name=pickerMeal]:checked').inputValue(),occasion);assert.equal(await page.locator('[data-browse-food]').count(),12);
+   assert.equal(await page.locator('select[name=pickerMeal]').inputValue(),occasion);assert.equal(await page.locator('[data-browse-food]').count(),12);
    if(occasion==='Breakfast'){await page.locator('[data-food-browse-more]').click();await page.waitForFunction(()=>document.querySelectorAll('[data-browse-food]').length===24);}
    if(occasion==='Snack')await page.screenshot({path:path.join(out,'browse-'+theme+'-'+width+'.png')});
    await page.locator('[data-browse-food]').first().click();await page.locator('#food-review').waitFor({state:'visible'});
@@ -58,9 +58,12 @@ const out='docs/diary-meals-2026-10-12';fs.mkdirSync(out,{recursive:true});
    await GetMacrosDiary.add(snapshot,{date:'2026-10-11',occasion:'Breakfast'});
   },entries[0].snapshot);
   await page.reload();await page.locator('.diary-entry').waitFor();
-  assert.match(await page.locator('[data-diary-occasion="Breakfast"] .diary-meal-totals').textContent(),/Unknown/);
+   // A single food shows its own values; a duplicate meal subtotal is intentionally omitted.
+   assert.equal(await page.locator('[data-diary-occasion="Breakfast"] .diary-meal-totals').count(),0);
+   const missing=page.locator('[data-diary-occasion="Breakfast"] .diary-entry .food-values dd');
+   assert.equal(await missing.nth(0).textContent(),'— kcal');assert.equal(await missing.nth(1).textContent(),'— g');
   assert.match(await page.locator('[data-diary-totals]').textContent(),/Unknown/);assert.deepEqual(errors,[]);
-  checks.push({theme,width,countries:countryChecks,passed:['four permanent meal groups','1,200 shared browse foods','more foods','targeted logging and source math','edit/move','remove/undo','country/date persistence','unknown totals','no overflow'],runtimeErrors:errors});await context.close();console.log('PASS shared diary',theme,width,'all eight countries');
+   checks.push({theme,width,countries:countryChecks,passed:['four permanent meal groups','source-backed shared browse foods','more foods','targeted logging and source math','edit/move','remove/undo','country/date persistence','unknown totals','no overflow'],runtimeErrors:errors});await context.close();console.log('PASS shared diary',theme,width,'all eight sampled countries');
  }
  fs.writeFileSync(out+(process.env.LIVE_BASE?'/live-checks.json':'/checks.json'),JSON.stringify({verifiedAt:new Date().toISOString(),base,checks},null,2));
  }finally{await browser.close();server.close()}
