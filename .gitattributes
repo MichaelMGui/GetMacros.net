@@ -8,3 +8,5 @@
 *.woff binary
 *.woff2 binary
 docs/global-coverage-2026-10-17/restaurants/** -text
+docs/flagship-release-2026-10-18/uk/sources/** -text
+docs/flagship-release-2026-10-18/markets/sources/** -text

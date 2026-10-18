@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-18T16:55:09.968Z",
+  "method": "ordinary public HTTPS GET; no credentials, access bypass or external posting",
+  "rows": [
+    {
+      "url": "https://leon.co/menu/smoked-salmon-avocado-egg-pot/",
+      "status": 200,
+      "finalUrl": "https://leon.co/menu/smoked-salmon-avocado-egg-pot/",
+      "bytes": 1011657,
+      "sha256": "20557f2fa3b4f23778b0e458964367cbe87f0cf1a50220f336b2d0e82e75604c"
+    },
+    {
+      "url": "https://leon.co/menu/sausage-egg-muffin/",
+      "status": 200,
+      "finalUrl": "https://leon.co/menu/sausage-egg-muffin/",
+      "bytes": 1012317,
+      "sha256": "9b8f3d00a2e6c40d6fca291f33bc0a54af24f4c2e2ba0f2c8b15631e66653260"
+    },
+    {
+      "url": "https://leon.co/menu/bacon-egg-muffin/",
+      "status": 200,
+      "finalUrl": "https://leon.co/menu/bacon-egg-muffin/",
+      "bytes": 1012107,
+      "sha256": "3b90e76bc0628b232041f619d26b799fe98e7ff7b20eb57517fbfd507b8e47ea"
+    },
+    {
+      "url": "https://leon.co/menu/halloumi-egg-avo-sando/",
+      "status": 200,
+      "finalUrl": "https://leon.co/menu/halloumi-egg-avo-sando/",
+      "bytes": 1012838,
+      "sha256": "c46ff31499cbe46f1e8d7466fe4595c9bf4e0a466373170ff466960a156a99ea"
+    },
+    {
+      "url": "https://www.chick-fil-a.ca/menu/entrees/grilled-chicken-sandwich",
+      "status": 200,
+      "finalUrl": "https://www.chick-fil-a.ca/menu/entrees/grilled-chicken-sandwich",
+      "bytes": 246093,
+      "sha256": "73f1a4b2f42f6fea8b8e9bb9d3afa34c67c7db388f114b1bec4c0c07c0ff8d4c"
+    },
+    {
+      "url": "https://www.chick-fil-a.ca/menu/sides",
+      "status": 200,
+      "finalUrl": "https://www.chick-fil-a.ca/menu/sides",
+      "bytes": 240990,
+      "sha256": "5898b272870c764c8d05363810167c3c1e8be16d7bd0b3a56960e9164b3f0212"
+    },
+    {
+      "url": "https://www.nandos.co.uk/food/menu/",
+      "status": 200,
+      "finalUrl": "https://www.nandos.co.uk/food/menu/",
+      "bytes": 2482232,
+      "sha256": "46fcde03ce15d532689a05b5f41c09a8dec3e9c47dd5da0ae25a2e4ae79cf5d4"
+    },
+    {
+      "url": "https://www.wendys.com/en-gb/breakfast-wraps",
+      "status": 200,
+      "finalUrl": "https://www.wendys.com/en-gb/breakfast-wraps",
+      "bytes": 62651,
+      "sha256": "d234ec58fc16256fa0e67f57f61b7137f925b35a9e5e59054b8b00b26547e96d"
+    }
+  ]
+}

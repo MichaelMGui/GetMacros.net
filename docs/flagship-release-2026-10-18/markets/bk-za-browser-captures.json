@@ -1,0 +1,141 @@
+[
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=featureWebHomePage&variables=%7B%22featureHomePageId%22%3A%22feature-home-page-singleton%22%7D&query=query+featureWebHomePage%28%24featureHomePageId%3AID%21%29%7BFeatureHomePage%28id%3A%24featureHomePageId%29%7Bunauthenticated%3AwebUnauthenticated%7B...HomePageConfigurationFragment+__typename%7Dauthenticated%3AwebAuthenticated%7B...HomePageConfigurationFragment+__typename%7D__typename%7D%7Dfragment+HomePageConfigurationFragment+on+HomePageConfiguration%7Bcomponents%7B...on+MainHero%7B_id+__typename%7D...on+Hero%7B_id+__typename%7D...on+BrazeContentCards%7B_id+__typename%7D...on+Alert%7B_id+__typename%7D...on+MarketingTileGroup%7B_id+__typename%7D...on+MarketingTileCarousel%7B_id+__typename%7D...on+MarketingCardGroup%7B_id+__typename%7D...on+OffersSection%7B_id+__typename%7D...on+Trending%7B_id+__typename%7D...on+FanFavorites%7B_id+__typename%7D...on+OurServices%7B_id+__typename%7D...on+AppDownload%7B_id+__typename%7D...on+RecentItems%7B_id+__typename%7D...on+RewardsSection%7B_id+__typename%7D...on+OfferCarouselSection%7B_id+__typename%7D...on+StartOrderCta%7B_id+__typename%7D__typename%7D__typename%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-0.json",
+    "bytes": 843,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=featureNavigation&variables=%7B%22featureNavigationId%22%3A%22feature-navigation-singleton%22%7D&query=query+featureNavigation%28%24featureNavigationId%3AID%21%29%7BFeatureNavigation%28id%3A%24featureNavigationId%29%7B...NavigationDesktopFragment+...NavigationMobileFragment+...NavigationButtonFragment+aboutMenuEntries%7B...NavigationSectionFragment+__typename%7D__typename%7D%7Dfragment+NavigationDesktopFragment+on+FeatureNavigation%7BnavigationDesktop%7B_key+_type+...NavigationLinksFragment+...AboutMenuEntriesDesktopFragment+__typename%7D__typename%7Dfragment+NavigationLinksFragment+on+NavigationDesktop%7BnavigationLinks%7B...NavigationLinkFragment+__typename%7DnavigationLinksWithServiceModeOrStoreSelected%7B...NavigationLinkFragment+__typename%7D__typename%7Dfragment+NavigationLinkFragment+on+NavigationDesktopLink%7B_key+hideLinkBasedOnLdFlag%7BlaunchDarklyFlag+__typename%7DnavLink%7B...on+LinkWidget%7B...LinkWidgetFragment+__typename%7D__typename%7DlaunchDarklyAlternateNavigationLink%7Benabled+launchDarklyFlagDependency%7BlaunchDarklyFlag+__typename%7DnavLink%7B...on+LinkWidget%7B...LinkWidgetFragment+__typename%7D__typename%7D__typename%7D__typename%7Dfragment+LinkWidgetFragment+on+LinkWidget%7B_key+_type+text%7Blocale%3Aen+__typename%7Dlink%7Blocale%3Aen+__typename%7D__typename%7Dfragment+AboutMenuEntriesDesktopFragment+on+NavigationDesktop%7BaboutMenuEntries%7B...NavigationSectionFragment+__typename%7D__typename%7Dfragment+NavigationSectionFragment+on+NavigationSection%7Bname%7Blocale%3Aen+__typename%7Dpages%7B...on+StaticPage%7Btitle+localeTitle%7Blocale%3Aen+__typename%7Dpath%7Bcurrent+__typename%7DlocalePath%7Blocale%3Aen%7Bcurrent+__typename%7D__typename%7DredirectUrl%7Blocale%3Aen+__typename%7D__typename%7D...on+NavigationSection%7Bname%7Blocale%3Aen+__typename%7Dpages%7B...on+StaticPage%7Btitle+localeTitle%7Blocale%3Aen+__typename%7Dpath%7Bcurrent+__typename%7DlocalePath%7Blocale%3Aen%7Bcurrent+__typename%7D__typename%7DredirectUrl%7Blocale%3Aen+__typename%7D__typename%7D__typename%7D__typename%7D__typename%7D__typename%7Dfragment+NavigationMobileFragment+on+FeatureNavigation%7BnavigationMobile%7B_key+_type+...NavigationTabsFragment+...AboutMenuEntriesMobileFragment+__typename%7D__typename%7Dfragment+NavigationTabsFragment+on+NavigationMobile%7BnavigationTabs%7B...NavigationTabFragment+__typename%7DnavigationTabsWithServiceModeSelected%7B...NavigationTabFragment+__typename%7D__typename%7Dfragment+NavigationTabFragment+on+NavigationMobileTab%7B_key+_type+hideLinkBasedOnLdFlag%7BlaunchDarklyFlag+__typename%7DtabIcon%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DtabIconActive%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DtabLink%7B...on+LinkWidget%7B...LinkWidgetFragment+__typename%7D__typename%7DlaunchDarklyAlternateMobileTab%7B_key+_type+enabled+launchDarklyFlagDependency%7BlaunchDarklyFlag+__typename%7DtabIcon%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DtabIconActive%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DtabLink%7B...on+LinkWidget%7B...LinkWidgetFragment+__typename%7D__typename%7D__typename%7D__typename%7Dfragment+ImageFragment+on+Image%7Bhotspot%7Bx+y+height+width+__typename%7Dcrop%7Btop+bottom+left+right+__typename%7Dasset%7Bmetadata%7Blqip+__typename%7D_id+url+__typename%7D__typename%7Dfragment+AboutMenuEntriesMobileFragment+on+NavigationMobile%7BaboutMenuEntries%7B...NavigationSectionFragment+__typename%7D__typename%7Dfragment+NavigationButtonFragment+on+FeatureNavigation%7BnavigationMobileHeaderButton%7B_key+icon%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DiconActive%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7Dlink%7Blocale%3Aen+__typename%7D__typename%7D__typename%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-1.json",
+    "bytes": 23316,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=GetStaticPageRoutes&variables=%7B%7D&query=query+GetStaticPageRoutes%28%24staticPageWhere%3AStaticPageFilter%29%7BallStaticPage%28where%3A%24staticPageWhere%29%7B_id+_updatedAt+path%7Bcurrent+__typename%7Dtitle+localePath%7Ben%7Bcurrent+__typename%7D__typename%7DredirectUrl%7Blocale%3Aen+__typename%7DlocaleTitle%7Blocale%3Aen+__typename%7D__typename%7D%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-2.json",
+    "bytes": 20370,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=marketingCardGroups&variables=%7B%22where%22%3A%7B%22_id%22%3A%7B%22in%22%3A%5B%22102560aa-2043-4cc5-a4ba-3588428233ac%22%2C%22070ba9fe-8337-41bc-968e-e5a19e75f78f%22%5D%7D%7D%7D&query=query+marketingCardGroups%28%24where%3AMarketingCardGroupFilter%29%7BallMarketingCardGroup%28where%3A%24where%29%7B...on+MarketingCardGroup%7B...MarketingCardGroupFragment+__typename%7D__typename%7D%7Dfragment+MarketingCardGroupFragment+on+MarketingCardGroup%7B_id+Cards%7B...on+MarketingCard%7B...MarketingCardFragment+__typename%7D__typename%7D__typename%7Dfragment+MarketingCardFragment+on+MarketingCard%7B_id+header%7Blocale%3Aen+__typename%7Ddescription%7Blocale%3Aen+__typename%7Dimage%7Blocale%3Aen%7B...ImagesFragment+__typename%7D__typename%7DcallToAction%7BactionText%7Blocale%3Aen+__typename%7DactionUrl%7Blocale%3Aen+__typename%7Droute+__typename%7DhasCustomColors+textColor%7B...ColorFragment+__typename%7DbackgroundColor%7B...ColorFragment+__typename%7DbuttonTextColor%7B...ColorFragment+__typename%7DbuttonBackgroundColor%7B...ColorFragment+__typename%7DhasTerms+termsText%7BlocaleRaw%3AenRaw+__typename%7DtermsButton%7BactionText%7Blocale%3Aen+__typename%7DactionUrl%7Blocale%3Aen+__typename%7Droute+__typename%7DBKPayAudience+bkSpecificTargeting+daysOfWeek+timeRanges%7BstartTime+endTime+__typename%7D__typename%7Dfragment+ImagesFragment+on+Images%7Bapp%7B...ImageFragment+__typename%7DimageDescription+__typename%7Dfragment+ImageFragment+on+Image%7Bhotspot%7Bx+y+height+width+__typename%7Dcrop%7Btop+bottom+left+right+__typename%7Dasset%7Bmetadata%7Blqip+__typename%7D_id+url+__typename%7D__typename%7Dfragment+ColorFragment+on+Color%7Balpha+hex+hsl%7B_type+a+h+l+s+__typename%7Dhsv%7B_type+a+h+s+v+__typename%7Drgb%7B_type+a+b+g+r+__typename%7D__typename%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-3.json",
+    "bytes": 20974,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=appDownload&variables=%7B%22appDownloadId%22%3A%224f7f2b13-e61f-4ab2-9c71-cae2321d566d%22%7D&query=query+appDownload%28%24appDownloadId%3AID%21%29%7BAppDownload%28id%3A%24appDownloadId%29%7B...AppDownloadFragment+__typename%7D%7Dfragment+AppDownloadFragment+on+AppDownload%7B_id+details%7BbackgroundImage%7B...ImageFragment+__typename%7DprimaryImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DheaderSuperText%7Blocale%3Aen+__typename%7Dheader%7Blocale%3Aen+__typename%7Dcopy%7Blocale%3Aen+__typename%7DtextDecorationLeft%7B...ImageFragment+__typename%7DtextDecorationRight%7B...ImageFragment+__typename%7DsubmitButtonText%7Blocale%3Aen+__typename%7DiOSDownloadLink+iOSDownloadImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DandroidDownloadLink+androidDownloadImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DhuaweiDownloadLink+huaweiDownloadImage%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7D__typename%7D__typename%7Dfragment+ImageFragment+on+Image%7Bhotspot%7Bx+y+height+width+__typename%7Dcrop%7Btop+bottom+left+right+__typename%7Dasset%7Bmetadata%7Blqip+__typename%7D_id+url+__typename%7D__typename%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-4.json",
+    "bytes": 3298,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=featureFooter&variables=%7B%22featureFooterId%22%3A%22feature-footer-singleton%22%7D&query=query+featureFooter%28%24featureFooterId%3AID%21%29%7BFeatureFooter%28id%3A%24featureFooterId%29%7Brows%7B_key+columns%7B_key+options%7B...on+CopyrightAndLanguageSelector%7B...CopyrightAndLanguageSelectorFragment+__typename%7D...on+HighlightedVerticalLinkListWidget%7B...HighlightedVerticalLinkListWidgetFragment+__typename%7D...on+HorizontalLinkListWidget%7B...HorizontalLinkListWidgetFragment+__typename%7D...on+ImageWidget%7B...ImageWidgetFragment+__typename%7D...on+SocialIconsWithHeaderWidget%7B...SocialIconsWithHeaderWidgetFragment+__typename%7D...on+TextWidget%7B...TextWidgetFragment+__typename%7D...on+TextWidgetWithUrl%7B...TextWidgetWithUrlFragment+__typename%7D...on+VerticalLinkListWidget%7B...VerticalLinkListWidgetFragment+__typename%7D...on+VerticalLinkListWithHeaderWidget%7B...VerticalLinkListWithHeaderWidgetFragment+__typename%7D...on+WordmarkAndSocialIcons%7B...WordmarkAndSocialIconsFragment+__typename%7D__typename%7D__typename%7D__typename%7D__typename%7D%7Dfragment+CopyrightAndLanguageSelectorFragment+on+CopyrightAndLanguageSelector%7B_type+copyrightText%7Blocale%3Aen+__typename%7D__typename%7Dfragment+HighlightedVerticalLinkListWidgetFragment+on+HighlightedVerticalLinkListWidget%7B_type+header%7Blocale%3Aen+__typename%7Dsubheader%7Blocale%3Aen+__typename%7DhighlightedLinks%7B...HighlightedLinkWidgetFragment+__typename%7D__typename%7Dfragment+HighlightedLinkWidgetFragment+on+HighlightedLinkWidget%7B_key+_type+text%7Blocale%3Aen+__typename%7Dlink%7Blocale%3Aen+__typename%7D__typename%7Dfragment+HorizontalLinkListWidgetFragment+on+HorizontalLinkListWidget%7B_type+linkWidgets%7B...LinkWidgetFragment+__typename%7D__typename%7Dfragment+LinkWidgetFragment+on+LinkWidget%7B_key+_type+text%7Blocale%3Aen+__typename%7Dlink%7Blocale%3Aen+__typename%7D__typename%7Dfragment+ImageWidgetFragment+on+ImageWidget%7B_type+image%7Blocale%3Aen%7B...ImageFragment+__typename%7D__typename%7DimageDescription%7Blocale%3Aen+__typename%7DattributionLink+__typename%7Dfragment+ImageFragment+on+Image%7Bhotspot%7Bx+y+height+width+__typename%7Dcrop%7Btop+bottom+left+right+__typename%7Dasset%7Bmetadata%7Blqip+__typename%7D_id+url+__typename%7D__typename%7Dfragment+SocialIconsWithHeaderWidgetFragment+on+SocialIconsWithHeaderWidget%7B_type+header%7Blocale%3Aen+__typename%7DsocialIconsWidget%7B...SocialIconsWidgetFragment+__typename%7D__typename%7Dfragment+SocialIconsWidgetFragment+on+SocialIconsWidget%7B_type+instagramUrl%7Blocale%3Aen+__typename%7DfacebookUrl%7Blocale%3Aen+__typename%7DyoutubeUrl%7Blocale%3Aen+__typename%7DtwitterUrl%7Blocale%3Aen+__typename%7DtiktokUrl%7Blocale%3Aen+__typename%7DlinkedinUrl%7Blocale%3Aen+__typename%7DsnapchatUrl%7Blocale%3Aen+__typename%7D__typename%7Dfragment+TextWidgetFragment+on+TextWidget%7B_type+text%7Blocale%3Aen+__typename%7D__typename%7Dfragment+TextWidgetWithUrlFragment+on+TextWidgetWithUrl%7B_type+text%7Blocale%3Aen+__typename%7DtextUrl%7Blocale%3Aen+__typename%7Durl%7Blocale%3Aen+__typename%7D__typename%7Dfragment+VerticalLinkListWidgetFragment+on+VerticalLinkListWidget%7B_type+linkWidgets%7B...LinkWidgetFragment+__typename%7D__typename%7Dfragment+VerticalLinkListWithHeaderWidgetFragment+on+VerticalLinkListWithHeaderWidget%7B_type+header%7Blocale%3Aen+__typename%7DlinkWidgets%7B...LinkWidgetFragment+__typename%7D__typename%7Dfragment+WordmarkAndSocialIconsFragment+on+WordmarkAndSocialIcons%7B_type+socialIconsWidget%7B...SocialIconsWidgetFragment+__typename%7D__typename%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-5.json",
+    "bytes": 5233,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=featureEarningCalculation&variables=%7B%22id%22%3A%22earningCalculation%22%7D&query=query+featureEarningCalculation%28%24id%3AID%21%29%7BEarningCalculation%28id%3A%24id%29%7B_id+offerRedemptionCooldownPeriod+offerRedemptionLimits%7BsameOfferLimit+standardOffersLimit+__typename%7DrewardsRedemptionConfig%7BstandardRewardsLimit+__typename%7DpointsExpirationType+pointsExpiryDays+enableLoyaltyTiers+loyaltyTiersEntranceBehaviorConfigurations%7BloyaltyTierKey+pointsNeeded+pointsNeededToMaintain+pointsToEnterCalculationTimeInterval+pointsToEnterCalculationTimeUnit+pointsToMaintainCalculationTimeInterval+pointsToMaintainCalculationTimeUnit+__typename%7D__typename%7D%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-6.json",
+    "bytes": 521,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=allFeatureIds&variables=%7B%7D&query=query+allFeatureIds%7BallFeatureAccountForm%28limit%3A1%29%7B_id+__typename%7DallFeatureGeolocationMapMarkers%28limit%3A1%29%7B_id+__typename%7DallFeatureGeolocationModal%28limit%3A1%29%7B_id+__typename%7DallFeatureHomePage%28limit%3A1%29%7B_id+__typename%7DallFeatureOffers%28limit%3A1%29%7B_id+__typename%7DallFeatureFooter%28limit%3A1%29%7B_id+__typename%7DallFeatureNavigation%28limit%3A1%29%7B_id+__typename%7DallFeatureAccountDeletePage%28limit%3A1%29%7B_id+__typename%7DallFeatureAccountRequestInfoPage%28limit%3A1%29%7B_id+__typename%7DallSupportData%28limit%3A1%29%7B_id+__typename%7DallFeatureStaticMenu%28limit%3A1%29%7B_id+__typename%7DallFeatureMenu%28limit%3A1%29%7B_id+__typename%7DallFeatureLayout%28limit%3A1%29%7B_id+__typename%7DallFeatureDisclaimers%28limit%3A1%29%7B_id+__typename%7DallFeatureExternalLinkSection%28limit%3A1%29%7B_id+__typename%7DallFeatureAccount%28limit%3A1%29%7B_id+__typename%7DallLoyaltyUI%28limit%3A1%29%7B_id+__typename%7DallFeatureNutrition%28limit%3A1%29%7B_id+__typename%7DallRewardList%28limit%3A1%29%7B_id+__typename%7DallClaimPointsUI%28limit%3A1%29%7B_id+__typename%7DallFeatureOnboarding%28limit%3A1%29%7B_id+__typename%7DallFeatureLockers%28limit%3A1%29%7B_id+__typename%7DallFeatureBeeperModal%28limit%3A1%29%7B_id+__typename%7DallLinkPhysicalCardUi%28limit%3A1%29%7B_id+__typename%7DallLiveMemberships%28limit%3A1%29%7B_id+__typename%7DallLoyaltyLiveExternalOffers%28limit%3A1%29%7B_id+__typename%7DallFeatureInvitationCode%28where%3A%7BenableInvitationCode%3A%7Beq%3Atrue%7D%7Dlimit%3A1%29%7B_id+__typename%7DallFeatureAccountUpdatedAgreements%28limit%3A1%29%7B_id+__typename%7DallFeatureDonation%28limit%3A1%29%7B_id+__typename%7DallFeatureIFrame%28limit%3A1%29%7B_id+__typename%7DallFeatureQRCodeRefillDrinks%28limit%3A1%29%7B_id+__typename%7DallFeatureAggregatorRedirectButtons%28limit%3A1%29%7B_id+__typename%7DallFeatureGeolocationTermsModal%28limit%3A1%29%7B_id+__typename%7DallConfigRedeemInRestaurant%28limit%3A1%29%7B_id+__typename%7DallFeatureFeesAndTaxes%28limit%3A1%29%7B_id+__typename%7DallFeatureEventReservations%28limit%3A1%29%7B_id+__typename%7DallFeatureUpsell%28limit%3A1%29%7B_id+__typename%7DallFeatureShareMenu%28limit%3A1%29%7B_id+__typename%7DallLoyaltyOffersUI%28limit%3A1%29%7B_id+__typename%7DallFeatureIncentivizePickup%28limit%3A1%29%7B_id+__typename%7D%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-7.json",
+    "bytes": 2676,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://euc1-prod-bk.rbictg.com/graphql",
+    "status": 200,
+    "file": "bk-za-8.json",
+    "bytes": 1784,
+    "keys": [
+      "0"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=GetStaticPage&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-9.json",
+    "bytes": 41314,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=GetStaticPageRoutes&variables=%7B%7D&query=query+GetStaticPageRoutes%28%24staticPageWhere%3AStaticPageFilter%29%7BallStaticPage%28where%3A%24staticPageWhere%29%7B_id+_updatedAt+path%7Bcurrent+__typename%7Dtitle+localePath%7Ben%7Bcurrent+__typename%7D__typename%7DredirectUrl%7Blocale%3Aen+__typename%7DlocaleTitle%7Blocale%3Aen+__typename%7D__typename%7D%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-10.json",
+    "bytes": 20370,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=featureSortedLoyaltyOffers&variables=%7B%22id%22%3A%22feature-loyalty-offers-ui-singleton%22%7D&query=query+featureSortedLoyaltyOffers%28%24id%3AID%21%29%7BLoyaltyOffersUI%28id%3A%24id%29%7B_id+sortedSystemwideOffers%7B...SystemwideOffersFragment+__typename%7D__typename%7D%7Dfragment+SystemwideOffersFragment+on+SystemwideOffer%7B_id+_type+testOnly+loyaltyEngineId+name%7BlocaleRaw%3AenRaw+__typename%7Ddescription%7BlocaleRaw%3AenRaw+__typename%7DmoreInfo%7BlocaleRaw%3AenRaw+__typename%7DhowToRedeem%7BenRaw+__typename%7DbackgroundImage%7B...MenuImageFragment+__typename%7DshortCode+mobileOrderOnly+redemptionMethod+daypart+redemptionType+upsellOptions%7B_id+loyaltyEngineId+description%7BlocaleRaw%3AenRaw+__typename%7DlocalizedImage%7Blocale%3Aen%7B...MenuImagesFragment+__typename%7D__typename%7Dname%7BlocaleRaw%3AenRaw+__typename%7D__typename%7DofferPrice+pricingDisplay%7BdisplayOriginalRetailPrice+displayOfferPrice+__typename%7DlocalizedImage%7Blocale%3Aen%7B...MenuImagesFragment+__typename%7D__typename%7DuiPattern+isUpcomingOffer+lockedOffersPanel%7BcompletedChallengeHeader%7BlocaleRaw%3AenRaw+__typename%7DcompletedChallengeDescription%7BlocaleRaw%3AenRaw+__typename%7D__typename%7DpromoCodePanel%7BpromoCodeDescription%7BlocaleRaw%3AenRaw+__typename%7DpromoCodeLabel%7BlocaleRaw%3AenRaw+__typename%7DpromoCodeLink+__typename%7Dincentives%7B__typename+...on+Combo%7B_id+_type+mainItem%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7DisOfferBenefit+__typename%7D...on+Item%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7D...on+Picker%7B_id+_type+options%7Bdefault+option%7B__typename+...on+Combo%7B_id+_type+mainItem%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7D...on+Item%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7D%7D__typename%7DisOfferBenefit+__typename%7D...on+OfferDiscount%7B_id+_type+discountValue+discountType+discountProduct%7B...on+Item%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7D...on+Combo%7B_id+_type+mainItem%7B_id+_type+operationalItem%7Bdaypart+__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7D__typename%7D__typename%7D__typename%7D%7DvendorConfigs%7B...VendorConfigsFragment+__typename%7DpluConfigs%7B...PluConfigsFragment+__typename%7Drules%7B...on+RequiresAuthentication%7BrequiresAuthentication+__typename%7D...on+LoyaltyBetweenDates%7BstartDate+endDate+__typename%7D...on+LoyaltyBetweenTimes%7BstartTime+endTime+__typename%7D...on+UserAttributes%7BuserAttributesItem%7BattributeItem+useAttributeBatteryLevelFilter+useAttributeBatteryLevelValue+userAttributeBooleanValue+userAttributeStringFilter+userAttributeStringValue+__typename%7D__typename%7D__typename%7D__typename%7Dfragment+MenuImageFragment+on+Image%7Bhotspot%7Bx+y+height+width+__typename%7Dcrop%7Btop+bottom+left+right+__typename%7Dasset%7Bmetadata%7Blqip+__typename%7D_id+url+__typename%7D__typename%7Dfragment+MenuImagesFragment+on+Images%7Bapp%7B...MenuImageFragment+__typename%7DimageDescription+__typename%7Dfragment+VendorConfigsFragment+on+VendorConfigs%7Bncr%7B...VendorConfigFragment+__typename%7DncrDelivery%7B...VendorConfigFragment+__typename%7Dpartner%7B...VendorConfigFragment+__typename%7DpartnerDelivery%7B...VendorConfigFragment+__typename%7DproductNumber%7B...VendorConfigFragment+__typename%7DproductNumberDelivery%7B...VendorConfigFragment+__typename%7Dsicom%7B...VendorConfigFragment+__typename%7DsicomDelivery%7B...VendorConfigFragment+__typename%7Dqdi%7B...VendorConfigFragment+__typename%7DqdiDelivery%7B...VendorConfigFragment+__typename%7Drpos%7B...VendorConfigFragment+__typename%7DrposDelivery%7B...VendorConfigFragment+__typename%7DsimplyDelivery%7B...VendorConfigFragment+__typename%7DsimplyDeliveryDelivery%7B...VendorConfigFragment+__typename%7DtoshibaLoyalty%7B...VendorConfigFragment+__typename%7D__typename%7Dfragment+VendorConfigFragment+on+VendorConfig%7BpluType+parentSanityId+pullUpLevels+constantPlu+discountPlu+quantityBasedPlu%7Bquantity+plu+qualifier+__typename%7DmultiConstantPlus%7Bquantity+plu+qualifier+__typename%7DparentChildPlu%7Bplu+childPlu+__typename%7DsizeBasedPlu%7BcomboPlu+comboSize+__typename%7D__typename%7Dfragment+PluConfigsFragment+on+PluConfigs%7B_key+_type+partner%7B...PluConfigFragment+__typename%7D__typename%7Dfragment+PluConfigFragment+on+PluConfig%7B_key+_type+posIntegration%7B_id+_type+name+__typename%7DserviceMode+vendorConfig%7B...VendorConfigFragment+__typename%7D__typename%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-11.json",
+    "bytes": 189834,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=featureMenu&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-12.json",
+    "bytes": 6993,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://czqk28jt.apicdn.sanity.io/v2023-08-01/graphql/prod_bk_za/gen3?operationName=featureNutrition&variables=%7B%22featureNutritionId%22%3A%22feature-nutrition-singleton%22%7D&query=query+featureNutrition%28%24featureNutritionId%3AID%21%29%7BFeatureNutrition%28id%3A%24featureNutritionId%29%7B_id+nutritionTables%7B...NutritionTableFragment+__typename%7DroundingRules%7B...RoundingRulesFragment+__typename%7D__typename%7D%7Dfragment+NutritionTableFragment+on+NutritionTable%7B_key+_type+title%7Blocale%3Aen+__typename%7Ditems%7B...on+NutritionItem%7B...NutritionItemFragment+__typename%7D...on+NutritionItemGroup%7B...NutritionItemGroupFragment+__typename%7D__typename%7D__typename%7Dfragment+NutritionItemFragment+on+NutritionItem%7B_type+additionalItems%7B...on+NutritionItem%7Bname%7Blocale%3Aen+__typename%7DnutritionKey+omitUnitFromValue+unit%7Blocale%3Aen+__typename%7D__typename%7D__typename%7Dname%7Blocale%3Aen+__typename%7DnutritionKey+omitUnitFromValue+unit%7Blocale%3Aen+__typename%7D__typename%7Dfragment+NutritionItemGroupFragment+on+NutritionItemGroup%7B_key+_type+mainItem%7B...NutritionItemFragment+__typename%7DlineItems%7B...NutritionItemFragment+__typename%7D__typename%7Dfragment+RoundingRulesFragment+on+RoundingRules%7Benabled+decimalPlaces+roundingType+__typename%7D&tag=rbi.prod.bk.za.web",
+    "status": 200,
+    "file": "bk-za-13.json",
+    "bytes": 272,
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  }
+]

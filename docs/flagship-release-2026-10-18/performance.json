@@ -1,0 +1,327 @@
+{
+  "method": "Edge on Windows,localhost,390×844,3fresh browser contexts per page,default motion,no network/CPU throttle. Fonts ready; 350ms settling. Local cold-context lab observations,not Lighthouse or real-user field data.",
+  "summary": [
+    {
+      "revision": "before-7f33f665",
+      "route": "/",
+      "runs": 3,
+      "domContentLoadedMs": 80,
+      "loadMs": 85,
+      "resourceRequests": 17,
+      "resourceBodyBytes": 249198,
+      "domNodes": 726
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/calculators.html",
+      "runs": 3,
+      "domContentLoadedMs": 90,
+      "loadMs": 97,
+      "resourceRequests": 19,
+      "resourceBodyBytes": 262213,
+      "domNodes": 569
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/food-diary.html",
+      "runs": 3,
+      "domContentLoadedMs": 67,
+      "loadMs": 72,
+      "resourceRequests": 26,
+      "resourceBodyBytes": 348562,
+      "domNodes": 698
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/gb/en/find-a-meal/",
+      "runs": 3,
+      "domContentLoadedMs": 82,
+      "loadMs": 86,
+      "resourceRequests": 23,
+      "resourceBodyBytes": 1526141,
+      "domNodes": 1293
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/",
+      "runs": 3,
+      "domContentLoadedMs": 75,
+      "loadMs": 87,
+      "resourceRequests": 21,
+      "resourceBodyBytes": 274517,
+      "domNodes": 840
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/calculators.html",
+      "runs": 3,
+      "domContentLoadedMs": 89,
+      "loadMs": 91,
+      "resourceRequests": 20,
+      "resourceBodyBytes": 283106,
+      "domNodes": 643
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/food-diary.html",
+      "runs": 3,
+      "domContentLoadedMs": 63,
+      "loadMs": 66,
+      "resourceRequests": 27,
+      "resourceBodyBytes": 370429,
+      "domNodes": 782
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/gb/en/find-a-meal/",
+      "runs": 3,
+      "domContentLoadedMs": 108,
+      "loadMs": 109,
+      "resourceRequests": 28,
+      "resourceBodyBytes": 1627007,
+      "domNodes": 941
+    }
+  ],
+  "samples": [
+    {
+      "revision": "before-7f33f665",
+      "route": "/",
+      "run": 0,
+      "domContentLoadedMs": 99,
+      "loadMs": 105,
+      "resourceRequests": 17,
+      "resourceBodyBytes": 249198,
+      "domNodes": 726
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/",
+      "run": 1,
+      "domContentLoadedMs": 74,
+      "loadMs": 80,
+      "resourceRequests": 17,
+      "resourceBodyBytes": 249198,
+      "domNodes": 726
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/",
+      "run": 2,
+      "domContentLoadedMs": 80,
+      "loadMs": 85,
+      "resourceRequests": 17,
+      "resourceBodyBytes": 249198,
+      "domNodes": 726
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/calculators.html",
+      "run": 0,
+      "domContentLoadedMs": 98,
+      "loadMs": 105,
+      "resourceRequests": 19,
+      "resourceBodyBytes": 262213,
+      "domNodes": 569
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/calculators.html",
+      "run": 1,
+      "domContentLoadedMs": 88,
+      "loadMs": 95,
+      "resourceRequests": 19,
+      "resourceBodyBytes": 262213,
+      "domNodes": 569
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/calculators.html",
+      "run": 2,
+      "domContentLoadedMs": 90,
+      "loadMs": 97,
+      "resourceRequests": 19,
+      "resourceBodyBytes": 262213,
+      "domNodes": 569
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/food-diary.html",
+      "run": 0,
+      "domContentLoadedMs": 63,
+      "loadMs": 68,
+      "resourceRequests": 26,
+      "resourceBodyBytes": 348562,
+      "domNodes": 698
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/food-diary.html",
+      "run": 1,
+      "domContentLoadedMs": 67,
+      "loadMs": 72,
+      "resourceRequests": 26,
+      "resourceBodyBytes": 348562,
+      "domNodes": 698
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/food-diary.html",
+      "run": 2,
+      "domContentLoadedMs": 68,
+      "loadMs": 73,
+      "resourceRequests": 26,
+      "resourceBodyBytes": 348562,
+      "domNodes": 698
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/gb/en/find-a-meal/",
+      "run": 0,
+      "domContentLoadedMs": 80,
+      "loadMs": 83,
+      "resourceRequests": 23,
+      "resourceBodyBytes": 1526141,
+      "domNodes": 1293
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/gb/en/find-a-meal/",
+      "run": 1,
+      "domContentLoadedMs": 82,
+      "loadMs": 86,
+      "resourceRequests": 23,
+      "resourceBodyBytes": 1526141,
+      "domNodes": 1293
+    },
+    {
+      "revision": "before-7f33f665",
+      "route": "/gb/en/find-a-meal/",
+      "run": 2,
+      "domContentLoadedMs": 84,
+      "loadMs": 87,
+      "resourceRequests": 23,
+      "resourceBodyBytes": 1526141,
+      "domNodes": 1293
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/",
+      "run": 0,
+      "domContentLoadedMs": 75,
+      "loadMs": 87,
+      "resourceRequests": 21,
+      "resourceBodyBytes": 274517,
+      "domNodes": 840
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/",
+      "run": 1,
+      "domContentLoadedMs": 82,
+      "loadMs": 91,
+      "resourceRequests": 21,
+      "resourceBodyBytes": 274517,
+      "domNodes": 840
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/",
+      "run": 2,
+      "domContentLoadedMs": 71,
+      "loadMs": 80,
+      "resourceRequests": 21,
+      "resourceBodyBytes": 274517,
+      "domNodes": 840
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/calculators.html",
+      "run": 0,
+      "domContentLoadedMs": 84,
+      "loadMs": 86,
+      "resourceRequests": 20,
+      "resourceBodyBytes": 283106,
+      "domNodes": 643
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/calculators.html",
+      "run": 1,
+      "domContentLoadedMs": 89,
+      "loadMs": 91,
+      "resourceRequests": 20,
+      "resourceBodyBytes": 283106,
+      "domNodes": 643
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/calculators.html",
+      "run": 2,
+      "domContentLoadedMs": 90,
+      "loadMs": 92,
+      "resourceRequests": 20,
+      "resourceBodyBytes": 283106,
+      "domNodes": 643
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/food-diary.html",
+      "run": 0,
+      "domContentLoadedMs": 70,
+      "loadMs": 72,
+      "resourceRequests": 27,
+      "resourceBodyBytes": 370429,
+      "domNodes": 782
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/food-diary.html",
+      "run": 1,
+      "domContentLoadedMs": 62,
+      "loadMs": 65,
+      "resourceRequests": 27,
+      "resourceBodyBytes": 370429,
+      "domNodes": 782
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/food-diary.html",
+      "run": 2,
+      "domContentLoadedMs": 63,
+      "loadMs": 66,
+      "resourceRequests": 27,
+      "resourceBodyBytes": 370429,
+      "domNodes": 782
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/gb/en/find-a-meal/",
+      "run": 0,
+      "domContentLoadedMs": 108,
+      "loadMs": 109,
+      "resourceRequests": 28,
+      "resourceBodyBytes": 1627007,
+      "domNodes": 941
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/gb/en/find-a-meal/",
+      "run": 1,
+      "domContentLoadedMs": 117,
+      "loadMs": 118,
+      "resourceRequests": 28,
+      "resourceBodyBytes": 1627007,
+      "domNodes": 941
+    },
+    {
+      "revision": "after-working-tree",
+      "route": "/gb/en/find-a-meal/",
+      "run": 2,
+      "domContentLoadedMs": 107,
+      "loadMs": 109,
+      "resourceRequests": 28,
+      "resourceBodyBytes": 1627007,
+      "domNodes": 941
+    }
+  ]
+}

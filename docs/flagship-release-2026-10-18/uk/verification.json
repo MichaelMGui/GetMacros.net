@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-18",
+  "testsRun": 18,
+  "failures": 0,
+  "errors": 0,
+  "records": 4736,
+  "chains": {
+    "Nando’s": 270,
+    "LEON": 148,
+    "Wagamama": 193,
+    "Wendy’s": 180,
+    "Five Guys": 91,
+    "Pepe’s": 131,
+    "Starbucks": 1280,
+    "Chick-fil-A": 74,
+    "Zizzi": 428,
+    "ASK Italian": 367,
+    "PizzaExpress": 398,
+    "Tortilla": 284,
+    "Tim Hortons": 289,
+    "Wasabi": 74,
+    "Caffè Nero": 422,
+    "Chipotle": 24,
+    "Chopstix": 83
+  },
+  "sourceCaptureFiles": 57,
+  "withdrawnIds": [
+    "GB|caffe-nero|7a516fe75551dd8a",
+    "GB|chipotle|34a30e2db02c65f5",
+    "GB|chopstix|78197336b560b32c",
+    "GB|five-guys|31ac4fc4285b9363",
+    "GB|five-guys|4a4c6b0975d0f846",
+    "GB|leon|a702250881fa4f64",
+    "GB|leon|b6a808a6c8ff14e1",
+    "GB|nandos|23b3a89f2b3a8f25",
+    "GB|pizzaexpress|b4ccf06d6871b17f",
+    "GB|tim-hortons|e41cae5f323f9941",
+    "GB|wendys|ba491766107099ff"
+  ],
+  "scope": "Offline unit, market-isolation, arithmetic and source-byte integrity checks; not a claim that every source PDF page or rendered public page was visually inspected."
+}

@@ -1,0 +1,267 @@
+[
+  {
+    "market": "AU",
+    "restaurant": "Domino’s",
+    "sourceGroup": "all published nutrition cards",
+    "sourceProducts": 78,
+    "reviewedPortionRecords": 214,
+    "sourceUrl": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceEdition": null,
+    "status": "all numeric offered variants reviewed",
+    "limitations": "Per-slice/serving scope, not whole pizza or real-time branch availability. Fibre unavailable."
+  },
+  {
+    "market": "NZ",
+    "restaurant": "Domino’s",
+    "sourceGroup": "all published nutrition cards",
+    "sourceProducts": 70,
+    "reviewedPortionRecords": 241,
+    "sourceUrl": "https://www.dominos.co.nz/menu/nutritional-information",
+    "sourceEdition": null,
+    "status": "all numeric offered variants reviewed",
+    "limitations": "Per-slice/serving scope, not whole pizza or real-time branch availability. Fibre unavailable."
+  },
+  {
+    "market": "IN",
+    "restaurant": "Domino’s",
+    "sourceGroup": "active menu product variants",
+    "sourceProducts": 160,
+    "reviewedProductFamilies": 64,
+    "reviewedPortionRecords": 201,
+    "variantsWithoutNutrition": 434,
+    "sourceUrl": "https://www.dominos.co.in/menu/nutritional-information",
+    "status": "only explicit numeric active variants imported",
+    "limitations": "Missing variants are not filled from a different crust/size; no full nutrition coverage claim."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Breakfast ",
+    "sourceNamedPortions": 16,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Bundle Meals ",
+    "sourceNamedPortions": 50,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Bundle-Meals-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Chicken Burgers ",
+    "sourceNamedPortions": 0,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-July-2026-Final-Chicken-Burgers-Nutritionals.pdf",
+    "sourceEdition": "2026-07-28",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Chicken",
+    "sourceNamedPortions": 24,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Chicken-NutritionalGuideReport_Nutritional-Values-Report-16062026_2.pdf",
+    "sourceEdition": "2026-06-16",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Cold Drinks ",
+    "sourceNamedPortions": 0,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Cold-Drinks-Nutritionals_1.pdf",
+    "sourceEdition": "2026-09-01",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Jack d Up Drinks ",
+    "sourceNamedPortions": 0,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Jack-d-Up-Drinks-Nutritionals.pdf",
+    "sourceEdition": "2026-09-01",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Cold Drinks ",
+    "sourceNamedPortions": 37,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-April-2026-Final-Cold-Drinks-Nutritionals.pdf",
+    "sourceEdition": "2026-04-28",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Desserts ",
+    "sourceNamedPortions": 0,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Desserts-Nutritionals.pdf",
+    "sourceEdition": "2026-09-01",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Extra Condiments ",
+    "sourceNamedPortions": 16,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Extra-Condiments-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Frozen Bursties ",
+    "sourceNamedPortions": 35,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Grill Masters ",
+    "sourceNamedPortions": 0,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-30-June-2026-Final-Grill-Masters-Nutritionals_1.pdf",
+    "sourceEdition": "2026-06-30",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Jack s Cafe ",
+    "sourceNamedPortions": 50,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Jack-s-Cafe-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Kid s Meals ",
+    "sourceNamedPortions": 2,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-6-January-2026-Final-Kid-s-Meals-Nutritionals.pdf",
+    "sourceEdition": "2026-01-06",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Penny Pinchers ",
+    "sourceNamedPortions": 0,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-2-October-2025-Final-Penny-Pinchers-Nutritionals.pdf",
+    "sourceEdition": "2025-10-02",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Plant Based Veggie ",
+    "sourceNamedPortions": 6,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-23-January-2026-Plant-Based-Veggie-Nutritionals_1.pdf",
+    "sourceEdition": "2026-01-23",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Sides Snacks ",
+    "sourceNamedPortions": 16,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Sides-Snacks-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "What s New ",
+    "sourceNamedPortions": 42,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "AU",
+    "restaurant": "Hungry Jack’s",
+    "sourceGroup": "Whopper Beef ",
+    "sourceNamedPortions": 28,
+    "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf",
+    "sourceEdition": "2026-09-26",
+    "status": "numeric per-serving rows reviewed",
+    "limitations": "Category files overlap. Conflicting duplicate portions use latest identified edition only; equal-edition conflicts are withheld."
+  },
+  {
+    "market": "NZ",
+    "restaurant": "Burger King",
+    "sourceGroup": "Core Menu and Limited Time Offers",
+    "reviewedPortionRecords": 60,
+    "sourceUrl": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+    "sourceEdition": "2026-07-29",
+    "status": "per-serve rows reviewed with conflicts withheld",
+    "limitations": "Source dual-energy inconsistencies are not corrected by inference; fibre unavailable."
+  },
+  {
+    "market": "SG",
+    "restaurant": "Chick-fil-A",
+    "sourceGroup": "all November 2025 source categories",
+    "reviewedPortionRecords": 62,
+    "sourceUrl": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "sourceEdition": "2025-11",
+    "status": "consistent named portions imported; contradictory drinks withheld",
+    "limitations": "Current 2026 menu additions not covered by dated source; no all-menu completeness claim."
+  },
+  {
+    "market": "FR",
+    "restaurant": "Burger King",
+    "sourceGroup": "current category-linked product portions",
+    "sourceProductsReachable": 159,
+    "reviewedPortionRecords": 113,
+    "sourceUrl": "https://www.burgerking.fr/carte",
+    "sourceEdition": null,
+    "status": "numeric reachable products reviewed",
+    "limitations": "Unlinked/internal products and theoretical combo variants excluded; fibre and weights not supplied."
+  },
+  {
+    "market": "JP",
+    "restaurant": "KFC",
+    "sourceGroup": "Japanese nutrition pages 1–5",
+    "reviewedPortionRecords": 69,
+    "sourceUrl": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+    "sourceEdition": "2026-09-11",
+    "status": "named portions and sizes reviewed",
+    "limitations": "English pages 6–10 duplicate same items and are not counted twice; sugar/saturated fat unavailable."
+  },
+  {
+    "market": "IE",
+    "restaurant": "Zizzi",
+    "sourceGroup": "ROI/Belfast food, extras, kids and non-alcoholic drinks (pages 3–23)",
+    "reviewedPortionRecords": 353,
+    "sourceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+    "sourceEdition": "2026-09-28",
+    "status": "per-portion dishes reviewed",
+    "limitations": "Alcohol pages 24–25 not imported. Combined ROI/Belfast source does not imply all products at every branch."
+  }
+]

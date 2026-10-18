@@ -1,0 +1,33 @@
+[
+  {
+    "command": "python -X utf8 tools/run_food_build.py",
+    "exit": 1,
+    "seconds": 137.52,
+    "log": "full-build.log"
+  },
+  {
+    "command": "python -X utf8 tools/run_food_build.py",
+    "exit": 0,
+    "seconds": 168.94,
+    "log": "full-build-retry.log",
+    "environment": "Outside Windows sandbox; required temporary-file access"
+  },
+  {
+    "command": "python -X utf8 tools/product_release/test-generators.py",
+    "exit": 0,
+    "seconds": 141.63,
+    "log": "repeat-build.log",
+    "environment": "Outside Windows sandbox; required temporary-file access"
+  },
+  {
+    "command": [
+      "restore_asset_sources.py",
+      "build_flagship_release.py",
+      "refresh_release_search.py",
+      "stamp_assets.py"
+    ],
+    "exit": 0,
+    "seconds": 33.91,
+    "log": "final-guide-links.log"
+  }
+]

@@ -44,7 +44,7 @@
       choices.forEach(function (button) {
         button.setAttribute('aria-pressed', String(button.getAttribute('data-theme-choice') === mode));
       });
-      document.querySelectorAll('[data-appearance-current]').forEach(function(label){label.textContent=dark?'Dark':'Light';label.closest('summary').setAttribute('aria-label','Appearance: '+mode+' mode');});
+      document.querySelectorAll('[data-appearance-current]').forEach(function(label){label.textContent=dark?'Dark':'Light';label.closest('summary,button')?.setAttribute('aria-label','Appearance: '+mode+' mode');});
       var meta = document.querySelector('meta[name="theme-color"]');
       if (meta) meta.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--bg").trim());
     }

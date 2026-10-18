@@ -61,7 +61,14 @@ class MexicoSourceExclusions(unittest.TestCase):
         self.assertTrue(all('403' in row['error'] for row in attempts))
 
     def test_existing_mexico_rows_unchanged(self):
-        baseline = REPORT.mexico_baseline()
+        current = REPORT.mexico_baseline()
+        # The prior accepted Subway snapshot remains byte-equivalent in this
+        # factual projection. A separately reviewed Starbucks release may add
+        # local calorie-only sizes; it is not part of the excluded BK CMS batch.
+        baseline = [row for row in current if row['chain'] == 'Subway']
+        newer_path = REPORT.ROOT / 'tools/flagship_release/markets_mexico_calories.json'
+        newer = json.loads(newer_path.read_text(encoding='utf-8'))['records'] if newer_path.exists() else []
+        self.assertEqual({row['id'] for row in current if row['chain'] != 'Subway'}, {row['id'] for row in newer})
         expected = REPORT.read('summary.json')['mexicoBaseline']
         self.assertEqual(len(baseline), 100)
         self.assertEqual({row['chain'] for row in baseline}, {'Subway'})

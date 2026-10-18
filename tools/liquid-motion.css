@@ -1,0 +1,17 @@
+/* Shared motion primitives; every interaction remains immediate and optional. */
+:root{--ease-liquid:cubic-bezier(.18,.84,.24,1);--ease-settle:cubic-bezier(.2,.85,.25,1.1);--motion-fast:140ms;--motion-ui:230ms;--motion-panel:300ms}
+button,.btn{transition:background-color var(--motion-fast),border-color var(--motion-fast),color var(--motion-fast),box-shadow var(--motion-fast),transform var(--motion-fast) var(--ease-settle)}
+button:active:not(:disabled),.btn:active{transform:scale(.98)}.product-nav-tools button:active{transform:scale(.98)}
+.guide-answer{isolation:isolate;overflow:hidden}.guide-answer .answer-mark{display:block;position:absolute;right:12px;top:50%;width:21px;height:21px;margin-top:-10px;border:1.5px solid var(--control-border);border-radius:6px;pointer-events:none;transition:background 160ms,border-color 160ms,transform 240ms var(--ease-settle)}
+.guide-answer input{opacity:0;position:absolute;right:10px;top:50%;width:24px;height:24px;margin:-12px 0 0;z-index:1}.guide-answer input[type=radio]~.answer-mark{border-radius:50%}.guide-answer:has(input:checked) .answer-mark{background:var(--green);border-color:var(--green)}.guide-answer:has(input:checked) .answer-mark:after{content:"";position:absolute;left:6px;top:3px;width:6px;height:10px;border:solid var(--on-green);border-width:0 2px 2px 0;transform:rotate(45deg);animation:selection-check 180ms var(--ease-liquid)}
+.guide-answer>span:not(.answer-mark){padding-right:32px}.guide-answer:has(input:focus-visible){outline:2px solid var(--focus);outline-offset:-2px}.guided-progress>span{transition:background 240ms,transform 240ms var(--ease-settle)}.guided-progress>span.is-current{transform:scaleY(1.5)}
+.meal-visual img,.reading-feature-art,.home-macro-art [data-food-character]{transition:transform 280ms var(--ease-liquid)}.meal-row:hover .meal-visual img{transform:translateY(-3px) rotate(-1deg)}.reading-feature:hover .reading-feature-art{transform:translateY(-3px)}.home-macro-feature:hover .home-macro-art [data-food-character]{transform:rotate(-3deg)}
+.play-game-link,.restaurant-shortcut{transition:background 160ms,transform 230ms var(--ease-settle)}.play-game-link:active,.restaurant-shortcut:active{transform:scale(.985)}.game-board button[aria-pressed=true]{transition:background 160ms,transform 180ms var(--ease-settle)}
+.liquid-feedback{animation:liquid-feedback 330ms var(--ease-settle)}.liquid-confirmation{animation:liquid-confirmation 320ms var(--ease-liquid)}
+@keyframes selection-check{from{opacity:0;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+@keyframes liquid-feedback{0%{transform:scale(1)}45%{transform:scale(1.025,.98)}100%{transform:scale(1)}}
+@keyframes liquid-confirmation{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--green) 20%,transparent)}100%{box-shadow:0 0 0 10px transparent}}
+@view-transition{navigation:auto}::view-transition-old(root){animation-duration:120ms}::view-transition-new(root){animation-duration:180ms}
+html[data-motion=calm] *,html[data-motion=calm] *:before,html[data-motion=calm] *:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+html[data-page-hidden] [data-food-character] *{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}

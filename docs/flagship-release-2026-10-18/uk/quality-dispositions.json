@@ -1,0 +1,296 @@
+[
+  {
+    "id": "GB|nandos|23b3a89f2b3a8f25",
+    "chain": "Nando’s",
+    "name": "Baked Beans · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "baked-beans:extras-breakfast#facts-0",
+    "reason": "Official source contradicts its own subset nutrient: sat=13.0 exceeds fat=0.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 81,
+      "p": 4.8,
+      "c": 0.2,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 13.0,
+      "na": 280.0
+    },
+    "sourceHash": "e8034eaebd5aa8bd612dd2e360215a829d29091ec0c21889c2f02a06448100ae",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|leon|a702250881fa4f64",
+    "chain": "LEON",
+    "name": "Kids Pick and Mix Meals",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "3ff46736-a2b4-4298-ade2-4b7b15779a6f",
+    "reason": "Variable pick-and-mix bundle has zero placeholder weight and nutrients, not a specified zero-calorie meal.",
+    "values": {
+      "cal": 0.0,
+      "p": 0.0,
+      "c": 0.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 0.0,
+      "na": 0.0
+    },
+    "sourceHash": "0a7d98a62b545e7be2102422f9d8d61c4d7c82cf35bab6a42232ee7e83fda070",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|leon|12fcd7ecfe09c822",
+    "chain": "LEON",
+    "name": "Unsweetened Iced Matcha Latte",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "7334e9f4-e7b8-4c71-ad2c-94f4ed89f445",
+    "action": "invalid mass changed to unknown",
+    "reason": "Published zero gram-weight cannot define a serving; original source weight retained as sourceServingGrams=0."
+  },
+  {
+    "id": "GB|leon|6ff8e5e9c6e5b02f",
+    "chain": "LEON",
+    "name": "Moju Ginger Shot",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "b0de43ca-00b7-4982-bbcf-e7b9dbbfe839",
+    "action": "invalid mass changed to unknown",
+    "reason": "Published zero gram-weight cannot define a serving; original source weight retained as sourceServingGrams=0."
+  },
+  {
+    "id": "GB|leon|a1acc04e707bf347",
+    "chain": "LEON",
+    "name": "Unsweetened Matcha Latte",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "9fe7b3d6-30cd-4bad-96ca-a3ec86db3b87",
+    "action": "invalid mass changed to unknown",
+    "reason": "Published zero gram-weight cannot define a serving; original source weight retained as sourceServingGrams=0."
+  },
+  {
+    "id": "GB|leon|b6a808a6c8ff14e1",
+    "chain": "LEON",
+    "name": "Oat Milk Mocha",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "miPzlXUxgbuXWXr43B1Zvii",
+    "reason": "Official source contradicts its own subset nutrient: sugar=29.0 exceeds c=28.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 285.0,
+      "p": 4.0,
+      "c": 28.0,
+      "fat": 16.0,
+      "f": 5.0,
+      "sugar": 29.0,
+      "sat": 9.0,
+      "na": 68.0
+    },
+    "sourceHash": "0a7d98a62b545e7be2102422f9d8d61c4d7c82cf35bab6a42232ee7e83fda070",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|wendys|ba491766107099ff",
+    "chain": "Wendy’s",
+    "name": "Chives",
+    "source": "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-%28002%29.pdf",
+    "sourcePage": 2,
+    "reason": "Source prints a zero-gram, all-zero condiment allocation; no meaningful loggable portion established.",
+    "values": {
+      "cal": 0.0,
+      "p": 0.0,
+      "c": 0.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 0.0,
+      "na": 0.0
+    },
+    "sourceHash": "a415f4907f3bee76285e51b188bf8e41f0c2034a6377ca05f0e4511164df00f4",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|five-guys|31ac4fc4285b9363",
+    "chain": "Five Guys",
+    "name": "Milkshakes (Including Big Kids Shake) — M&Ms®",
+    "source": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "sourcePage": 1,
+    "reason": "Official source contradicts its own subset nutrient: sugar=50.0 exceeds c=49.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 251.0,
+      "p": 2.1,
+      "c": 49.0,
+      "fat": 4.9,
+      "f": 1.2,
+      "sugar": 50.0,
+      "sat": 2.9,
+      "na": 152.0
+    },
+    "sourceHash": "5846847444521c5665d3b25e7955a7b3a7f1c79da6a6d18e2f59ffc6921853f0",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|five-guys|4a4c6b0975d0f846",
+    "chain": "Five Guys",
+    "name": "Little Milkshakes — M&Ms® Little",
+    "source": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "sourcePage": 1,
+    "reason": "Official source contradicts its own subset nutrient: sugar=25.0 exceeds c=24.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 126.0,
+      "p": 1.0,
+      "c": 24.0,
+      "fat": 2.5,
+      "f": 0.6,
+      "sugar": 25.0,
+      "sat": 1.5,
+      "na": 76.0
+    },
+    "sourceHash": "5846847444521c5665d3b25e7955a7b3a7f1c79da6a6d18e2f59ffc6921853f0",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|pizzaexpress|5425c0762c0385bb",
+    "chain": "PizzaExpress",
+    "name": "Goats Cheese · Pizza topping",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 14,
+    "action": "portion scope made visible",
+    "reason": "Different source recipe allocations must not share an indistinguishable name/serving. Stable record ID preserved."
+  },
+  {
+    "id": "GB|pizzaexpress|d4a70d6a17c2bbb1",
+    "chain": "PizzaExpress",
+    "name": "Spinach · Pizza topping",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 14,
+    "action": "portion scope made visible",
+    "reason": "Different source recipe allocations must not share an indistinguishable name/serving. Stable record ID preserved."
+  },
+  {
+    "id": "GB|pizzaexpress|b4ccf06d6871b17f",
+    "chain": "PizzaExpress",
+    "name": "Passion Fruit Still Lemonade",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 16,
+    "reason": "Official source contradicts its own subset nutrient: sugar=11.2 exceeds c=9.4. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 45.0,
+      "p": 0.2,
+      "c": 9.4,
+      "fat": 0.6,
+      "f": 1.2,
+      "sugar": 11.2,
+      "sat": 0.2,
+      "na": 8.0
+    },
+    "sourceHash": "0f9d9ae2de1babd73cbb64855cbd4d71a2bf0219642d69ec15aea9382e24cde4",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|pizzaexpress|ee1a2a0691606f7a",
+    "chain": "PizzaExpress",
+    "name": "Goats Cheese · Airport breakfast extra",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 22,
+    "action": "portion scope made visible",
+    "reason": "Different source recipe allocations must not share an indistinguishable name/serving. Stable record ID preserved."
+  },
+  {
+    "id": "GB|pizzaexpress|c0bb41aa7fb7f022",
+    "chain": "PizzaExpress",
+    "name": "Spinach · Airport breakfast extra",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 22,
+    "action": "portion scope made visible",
+    "reason": "Different source recipe allocations must not share an indistinguishable name/serving. Stable record ID preserved."
+  },
+  {
+    "id": "GB|tim-hortons|e41cae5f323f9941",
+    "chain": "Tim Hortons",
+    "name": "Dark Roast Coffee (Large)",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 6,
+    "reason": "Official source contradicts its own subset nutrient: sat=3.6 exceeds fat=0.02. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 5.0,
+      "p": 0.61,
+      "c": 0.0,
+      "fat": 0.02,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 3.6,
+      "na": 12.0
+    },
+    "sourceHash": "8c9a0728efc01054530d2618e064b16e152d5e4ae239f03026142f716c54bc56",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|caffe-nero|7a516fe75551dd8a",
+    "chain": "Caffè Nero",
+    "name": "Irish Pork & Pancetta Sausage Roll (NI)",
+    "source": "https://www.caffenero.com/uk/menu/food/panini-tostati-nero-deli",
+    "sourcePage": "size--irish-pork-pancetta-sausage-roll-ni-",
+    "reason": "Official source contradicts its own subset nutrient: sugar=6.6 exceeds c=2.7. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 410.0,
+      "p": 15.5,
+      "c": 2.7,
+      "fat": 26.7,
+      "f": 1.7,
+      "sugar": 6.6,
+      "sat": 11.7,
+      "na": 452.0
+    },
+    "sourceHash": "2155ac0cffee56a466d207753e8bbfdefadd7be6c347d8706535b73783f7fb08",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|chipotle|34a30e2db02c65f5",
+    "chain": "Chipotle",
+    "name": "Romaine Lettuce (salad)",
+    "source": "https://www.chipotle.co.uk/nutrition-calculator",
+    "sourcePage": 1,
+    "reason": "Official source contradicts its own subset nutrient: sugar=1.1 exceeds c=0.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 15.0,
+      "p": 0.0,
+      "c": 0.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 1.1,
+      "sat": 0.0,
+      "na": 0.0
+    },
+    "sourceHash": "07ee7a2a740ac66975ed2377255f3916befac7db5692f5920e6d31f714439db2",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  },
+  {
+    "id": "GB|chopstix|78197336b560b32c",
+    "chain": "Chopstix",
+    "name": "KATSU CURRY SAUCE PORTION · Small",
+    "source": "https://chopstixnoodles.co.uk/menu/katsu-curry-sauce-portion/",
+    "sourcePage": "nutrition-column-1",
+    "reason": "Official source contradicts its own subset nutrient: sat=2.8 exceeds fat=0.8. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 80.0,
+      "p": 1.1,
+      "c": 5.4,
+      "fat": 0.8,
+      "f": 0.7,
+      "sugar": 0.5,
+      "sat": 2.8,
+      "na": 312.0
+    },
+    "sourceHash": "1cbb5902d2aa4abb61ebe7159fd34c48699dacbb56bdb173908dc844b23aeefb",
+    "reviewedAt": "2026-10-18",
+    "action": "withheld"
+  }
+]

@@ -212,8 +212,12 @@
         '<div class="estimate-macros">' + macroRow("protein", "Protein", r.proteinG, r.proteinCals, pPct) +
         macroRow("fat", "Fat", r.fatG, r.fatCals, fPct) +
         macroRow("carbs", "Carbohydrate", r.carbG, r.carbCals, cPct) + '</div></div>' +
-        '<details class="work-result-note"><summary>How this estimate is calculated</summary><p>Estimated resting needs: ' + fmt(r.bmr) + ' calories. Estimated daily energy use, including activity: ' + fmt(r.tdee) + ' calories. Your selected goal adjusts the daily target.</p></details><p class="clarity-hint">These are daily estimates. Choose a portion of your day’s calories when looking for one meal.</p><a class="btn" href="restaurant-meal-finder.html">Explore restaurant meals</a>';
+        '<div class="secondary-information work-result-note"><button class="secondary-information-action" type="button" aria-expanded="false" aria-controls="daily-estimate-method" data-toggle-section="daily-estimate-method">How this estimate is calculated</button><section id="daily-estimate-method" hidden><p>Estimated resting needs: ' + fmt(r.bmr) + ' calories. Estimated daily energy use, including activity: ' + fmt(r.tdee) + ' calories. Your selected goal adjusts the daily target.</p></section></div><section class="calculator-meal-handoff"><h3>Find one meal.</h3><label>Choose its calorie limit<input type="number" data-meal-calories min="150" max="2500" step="1" placeholder="For example, 600" inputmode="numeric"></label><p class="source-note">Your daily estimate is not a single meal target.</p><a class="btn btn-primary" data-calculator-meals href="restaurant-meal-finder.html">Browse meals</a><p data-meal-handoff-status role="status"></p></section>';
 
+      var limit=results.querySelector('[data-meal-calories]'),link=results.querySelector('[data-calculator-meals]');
+      var finder=window.GetMacrosMarket?.route('finder')||'/restaurant-meal-finder.html';link.href=finder;
+      limit.addEventListener('input',function(){link.textContent=limit.value?'Find meals within this limit':'Browse meals';});
+      link.addEventListener('click',function(event){if(limit.value&&!limit.reportValidity()){event.preventDefault();return;}var target=new URL(finder,location.origin);if(limit.value)target.searchParams.set('maxCal',String(Number(limit.value)));link.href=target.pathname+target.search;});
       setResultNumber(results.querySelector(".num"), r.totalCals);
       results.querySelectorAll(".grams").forEach(function (el) {
         setResultNumber(el, parseFloat(el.getAttribute("data-count")), " g");

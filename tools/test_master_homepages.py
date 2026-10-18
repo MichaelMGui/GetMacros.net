@@ -22,12 +22,13 @@ for code,info in countries().items():
   assert f'{row["cal"]:g}<span> kcal' in card
   assert f'{row["p"]:g}<span> g' in card
   assert row['source'].replace('&','&amp;') in card
- form=doc.find(cls='home-finder-entry');assert form['attrs']['action']==info['finder']
+ entry=doc.find(cls='home-quiz-action');assert entry['attrs']['href']==info['finder']+'?quiz=1'
+ assert 'data-quiz-entry' in entry['attrs']
  choices=[n for n in doc.nodes if 'data-country-choice' in n['attrs']]
  assert len(choices)==len(countries())
- assert not doc.find(cls='country-panel')['attrs'].get('data-country-form')
+ assert doc.find(cls='country-dialog')['tag']=='dialog'
  assert 'data-theme-choice="light"' in text and 'data-theme-choice="dark"' in text
  assert 'data-country-select' not in text
  assert len(re.findall(r'<link rel="canonical"',text))==1
  canonical='https://getmacros.net'+info['home'];assert 'rel="canonical" href="'+canonical+'"' in text
-print('PASS: eight shared home structures, exact market/record/portion values, country links, appearance choices and canonicals.')
+print('PASS: all shared home structures, exact market/record/portion values, flagship quiz links, country dialogs, appearance choices and canonicals.')

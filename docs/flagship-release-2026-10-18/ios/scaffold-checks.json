@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-18T17:58:47.834Z",
+  "checks": 14,
+  "status": "passed",
+  "nativeCompilation": "not run: Windows has no Xcode or iOS simulator",
+  "devicePersistence": "requires physical-device update and interruption tests"
+}

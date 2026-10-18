@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-18",
+  "applicationMinimumIOS": "16.4",
+  "xcodeConfigurations": 4,
+  "swiftDependencyPackageMajorIOS": "16",
+  "reason": "Shared UI needs native dialog/:has plus the branded-food gzip reader needs Compression Streams. The application deployment floor exceeds the SDK minimum. Optional newer presentation effects remain progressive enhancements.",
+  "sources": [
+    {
+      "url": "https://webkit.org/blog/12445/new-webkit-features-in-safari-15-4/",
+      "sourcePublicationDate": "2022-03-14",
+      "observed": "WebKit describes native dialog/backdrop and has-selector support in Safari/iOS15.4."
+    },
+    {
+      "url": "https://webkit.org/blog/13966/webkit-features-in-safari-16-4/",
+      "sourcePublicationDate": "2023-03-27",
+      "observed": "WebKit describes Compression Streams API for browser compression/decompression as a Safari16.4 addition."
+    }
+  ],
+  "verification": "Xcode build settings and generated Swift package checked; actual iOS16.4 WKWebView and Xcode compilation remain unverified on Windows."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "starbucks-mx-hot-calories",
+    "marketScope": "MX",
+    "chain": "Starbucks",
+    "file": "docs/flagship-release-2026-10-18/markets/sources/starbucks-mx-hot.html",
+    "url": "https://www.starbucks.com.mx/menu/bebidas/calientes",
+    "sha256": "71a3514bdaa00c5153b78dbc374bf1e5db60a6608155d4a6ee7809bd50eea1bf",
+    "retrievedAt": "2026-10-18",
+    "verifiedAt": "2026-10-18",
+    "sourceEdition": null,
+    "captureMethod": "official public rendered category with embedded product subtitles",
+    "retrievalIsVerification": false,
+    "coverage": "38 explicitly named-size calorie entries across11 products in the captured13-product hot-drinks category. Two unsized espresso products withheld.",
+    "limitations": "Calories-only source, not complete macros or whole menu. Source zero is retained as reported kcal, never translated into zero protein/carbohydrate/fat. No volume, custom milk/syrup effects, local availability or image rights inferred."
+  },
+  {
+    "id": "starbucks-mx-latte-check",
+    "marketScope": "MX",
+    "chain": "Starbucks",
+    "file": "docs/flagship-release-2026-10-18/markets/sources/starbucks-mx-latte.html",
+    "url": "https://www.starbucks.com.mx/producto/latte",
+    "sha256": "944d5a18e19174b06f33f287db3eedad2b0495fb364bfbaed1d7a6193437dc37",
+    "retrievedAt": "2026-10-18",
+    "verifiedAt": "2026-10-18",
+    "sourceEdition": null,
+    "captureMethod": "official individual item page checked against category subtitles",
+    "retrievalIsVerification": false,
+    "coverage": "Independent Latte product-page match: Alto120kcal, Grande150kcal, Venti200kcal.",
+    "limitations": "No complete nutrient panel, size volume or customization nutrient effects supplied."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "market": "AU",
+    "rows": 627,
+    "beforeBytes": 662506,
+    "packedBytes": 209859,
+    "gzipBytes": 35713,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "CA",
+    "rows": 652,
+    "beforeBytes": 707584,
+    "packedBytes": 233344,
+    "gzipBytes": 39233,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "FR",
+    "rows": 276,
+    "beforeBytes": 293424,
+    "packedBytes": 79937,
+    "gzipBytes": 15868,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "GB",
+    "rows": 4416,
+    "beforeBytes": 4855613,
+    "packedBytes": 1315574,
+    "gzipBytes": 219540,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "IE",
+    "rows": 446,
+    "beforeBytes": 489658,
+    "packedBytes": 134828,
+    "gzipBytes": 23261,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "IN",
+    "rows": 256,
+    "beforeBytes": 297230,
+    "packedBytes": 88305,
+    "gzipBytes": 17426,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "JP",
+    "rows": 438,
+    "beforeBytes": 456041,
+    "packedBytes": 163711,
+    "gzipBytes": 26001,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "MX",
+    "rows": 96,
+    "beforeBytes": 92629,
+    "packedBytes": 33323,
+    "gzipBytes": 5929,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "NZ",
+    "rows": 383,
+    "beforeBytes": 385258,
+    "packedBytes": 136552,
+    "gzipBytes": 23498,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "SG",
+    "rows": 89,
+    "beforeBytes": 89069,
+    "packedBytes": 27326,
+    "gzipBytes": 6035,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "US",
+    "rows": 917,
+    "beforeBytes": 886342,
+    "packedBytes": 305064,
+    "gzipBytes": 42373,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  },
+  {
+    "market": "ZA",
+    "rows": 87,
+    "beforeBytes": 103501,
+    "packedBytes": 28664,
+    "gzipBytes": 6086,
+    "equalityTest": "tools/flagship_release/test_finder_payload.py"
+  }
+]

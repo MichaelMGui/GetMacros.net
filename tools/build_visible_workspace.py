@@ -17,7 +17,7 @@ def build():
         text=text.replace('Compare restaurant meals by calories, protein, carbs and fat.','Compare restaurant orders by calories, protein, carbs and fat.')
         text=text.replace('<div class="hero-copy"><h1>','<div class="hero-copy"><h1>')
         # One coherent finder bar replaces stacked fields and competing actions.
-        form=Document(text).find(cls='home-finder-entry')
+        form=next((n for n in Document(text).nodes if 'home-finder-entry' in n['attrs'].get('class','').split()),None)
         if form:
             old=text[form['start']:form['end']]
             old=old.replace('Calories, up to','Max. calories').replace('Protein, at least (g)','Min. protein (g)').replace('Find my meal','Find a meal')

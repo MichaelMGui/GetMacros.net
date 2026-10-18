@@ -1,0 +1,188 @@
+{
+  "Nando’s": {
+    "namedSourceIdentities": 151,
+    "namedPortions": 270,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 89,
+      "side": 78,
+      "component": 41,
+      "dessert": 10,
+      "drink": 52
+    }
+  },
+  "LEON": {
+    "namedSourceIdentities": 148,
+    "namedPortions": 148,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 73,
+      "dessert": 15,
+      "side": 17,
+      "drink": 39,
+      "component": 4
+    }
+  },
+  "Wagamama": {
+    "namedSourceIdentities": 167,
+    "namedPortions": 193,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 80,
+      "side": 23,
+      "component": 12,
+      "dessert": 17,
+      "drink": 61
+    }
+  },
+  "Wendy’s": {
+    "namedSourceIdentities": 180,
+    "namedPortions": 180,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 77,
+      "side": 13,
+      "dessert": 16,
+      "drink": 27,
+      "component": 47
+    }
+  },
+  "Five Guys": {
+    "namedSourceIdentities": 91,
+    "namedPortions": 91,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "component": 55,
+      "side": 10,
+      "entree": 26
+    }
+  },
+  "Pepe’s": {
+    "namedSourceIdentities": 131,
+    "namedPortions": 131,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 97,
+      "side": 18,
+      "component": 12,
+      "dessert": 4
+    }
+  },
+  "Starbucks": {
+    "namedSourceIdentities": 467,
+    "namedPortions": 1280,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "drink": 1175,
+      "component": 27,
+      "dessert": 59,
+      "entree": 19
+    }
+  },
+  "Chick-fil-A": {
+    "namedSourceIdentities": 58,
+    "namedPortions": 74,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 13,
+      "component": 17,
+      "side": 6,
+      "drink": 38
+    }
+  },
+  "Zizzi": {
+    "namedSourceIdentities": 428,
+    "namedPortions": 428,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "side": 37,
+      "entree": 184,
+      "component": 95,
+      "dessert": 29,
+      "drink": 83
+    }
+  },
+  "ASK Italian": {
+    "namedSourceIdentities": 367,
+    "namedPortions": 367,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 159,
+      "side": 29,
+      "component": 21,
+      "dessert": 46,
+      "drink": 112
+    }
+  },
+  "PizzaExpress": {
+    "namedSourceIdentities": 396,
+    "namedPortions": 398,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "side": 58,
+      "entree": 164,
+      "component": 89,
+      "dessert": 27,
+      "drink": 60
+    }
+  },
+  "Tortilla": {
+    "namedSourceIdentities": 284,
+    "namedPortions": 284,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "component": 252,
+      "side": 27,
+      "dessert": 3,
+      "drink": 2
+    }
+  },
+  "Tim Hortons": {
+    "namedSourceIdentities": 289,
+    "namedPortions": 289,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "drink": 173,
+      "entree": 68,
+      "dessert": 48
+    }
+  },
+  "Wasabi": {
+    "namedSourceIdentities": 73,
+    "namedPortions": 74,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "entree": 73,
+      "drink": 1
+    }
+  },
+  "Caffè Nero": {
+    "namedSourceIdentities": 378,
+    "namedPortions": 422,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "drink": 287,
+      "entree": 79,
+      "dessert": 56
+    }
+  },
+  "Chipotle": {
+    "namedSourceIdentities": 24,
+    "namedPortions": 24,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "component": 24
+    }
+  },
+  "Chopstix": {
+    "namedSourceIdentities": 30,
+    "namedPortions": 83,
+    "calculatedComposedOrders": 0,
+    "categoryCounts": {
+      "component": 56,
+      "side": 20,
+      "entree": 4,
+      "dessert": 3
+    }
+  }
+}

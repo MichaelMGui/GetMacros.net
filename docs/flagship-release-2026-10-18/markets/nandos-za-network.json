@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://api.nandos.co.za/api/v2/pack/menu/default",
+    "entryPoint": "https://www.nandos.co.za/eat/order/menu",
+    "file": "docs/flagship-release-2026-10-18/markets/sources/nandos-za-menu.json",
+    "sha256": "3aebbca6b8ebb089936e24516b08bb249f89cfc779dc74b250f74527b12a2940",
+    "bytes": 2415297,
+    "retrievedAt": "2026-10-18",
+    "captureMethod": "public menu response from fresh anonymous browser context; no authenticated user data retained",
+    "retrievalIsVerification": false
+  }
+]

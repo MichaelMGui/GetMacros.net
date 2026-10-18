@@ -159,6 +159,8 @@ def release_routes():
     routes.add('how-to-log-food-portions.html')
     routes.add('grocery-food-coverage.html')
     routes.add('compare-foods.html')
+    routes.add('whats-new.html')
+    routes.update({'leon-uk-breakfast-muffin-egg-pot-nutrition.html','nandos-uk-quarter-chicken-rice-chips-corn.html','wendys-uk-breakfast-muffin-wrap-calories-protein.html','chick-fil-a-canada-grilled-sandwich-fries-sizes.html'})
     for relative in ['docs/global-coverage-2026-10-17/restaurants/guide-briefs.json','docs/global-coverage-2026-10-17/restaurants/supplement/guide-briefs.json']:
         global_briefs=root/relative
         if global_briefs.exists():

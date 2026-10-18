@@ -1,0 +1,795 @@
+{
+  "revision": "059dc787961348c9d1d93c09446ee5f7eb5fa732",
+  "checkedAt": "2026-10-17T22:51:40.730Z",
+  "pass": true,
+  "actions": [
+    {
+      "name": "Site quality",
+      "branch": "claude/getmacros-nutrition-site-1gfhsm",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/39076206675"
+    },
+    {
+      "name": "Site quality",
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/39076206759"
+    },
+    {
+      "name": "pages build and deployment",
+      "branch": "claude/getmacros-nutrition-site-1gfhsm",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/39076206575"
+    }
+  ],
+  "sourceMatches": [
+    {
+      "url": "https://getmacros.net/fr/en/collections/protein-meals/",
+      "path": "fr/en/collections/protein-meals/index.html",
+      "status": 200,
+      "sha256": "a7635066e986f307d13241a300c6684727bf748061917409dd0077a0fdade742",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/in/en/collections/protein-meals/",
+      "path": "in/en/collections/protein-meals/index.html",
+      "status": 200,
+      "sha256": "db9206abc3b50bec3385767aac20339237653560f9a5533ce1b71329ffaebb82",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sg/en/collections/protein-meals/",
+      "path": "sg/en/collections/protein-meals/index.html",
+      "status": 200,
+      "sha256": "2d4cc3e6379b2577d475b14706417f21f4bb144a6c811a2d9466b5c770dbd391",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/za/en/collections/protein-meals/",
+      "path": "za/en/collections/protein-meals/index.html",
+      "status": 200,
+      "sha256": "f1b84bc988ac986232ba563580c85d149a89fedffb91c1a52109fd88a19af64c",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/guides/kfc-canada-original-recipe-pieces-and-two-piece-log/",
+      "path": "ca/en/guides/kfc-canada-original-recipe-pieces-and-two-piece-log/index.html",
+      "status": 200,
+      "sha256": "fc618e1a432b2b21bdc9216f29a1fe7dc464b0b5deaa47d9de22b6d464ad2b8e",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/gb/en/guides/kfc-uk-fillet-burger-and-ranch-rice-bowl/",
+      "path": "gb/en/guides/kfc-uk-fillet-burger-and-ranch-rice-bowl/index.html",
+      "status": 200,
+      "sha256": "90b9cce3648d5488d5600da080a2697a877fc441a128ae0393ea811982cc0531",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ie/en/guides/kfc-ireland-fillet-roll-and-fillet-burger/",
+      "path": "ie/en/guides/kfc-ireland-fillet-roll-and-fillet-burger/index.html",
+      "status": 200,
+      "sha256": "379fe04ce2c07ec5724d5d468f89c6840e84cb1a4acc420f587c9ccaace76586",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/au/en/guides/gyg-australia-mini-bowl-and-mini-burrito/",
+      "path": "au/en/guides/gyg-australia-mini-bowl-and-mini-burrito/index.html",
+      "status": 200,
+      "sha256": "0997738356239c59ced6c00687b2331028cb3a33cda7e491501ba6ecd12a6c47",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/nz/en/guides/subway-nz-regular-and-large-teriyaki-salad/",
+      "path": "nz/en/guides/subway-nz-regular-and-large-teriyaki-salad/index.html",
+      "status": 200,
+      "sha256": "e4abab850d40e4cff7972a120a7ba61e87c6937c5482c29e644251138075cb7a",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/jp/en/guides/mos-japan-mos-burger-and-teriyaki-chicken/",
+      "path": "jp/en/guides/mos-japan-mos-burger-and-teriyaki-chicken/index.html",
+      "status": 200,
+      "sha256": "f8e998c8a0b7c2164116a9294b6e0f99dec9d0791f5b553515b85f3eed94fe22",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/mx/en/guides/subway-mexico-gran-pastor-and-gringo-pastor/",
+      "path": "mx/en/guides/subway-mexico-gran-pastor-and-gringo-pastor/index.html",
+      "status": 200,
+      "sha256": "0d6d64ff087930b1647e3cb7e3f7b35270cf87e3d76ce0dc95492777dd8e1c32",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/panda-express-mushroom-and-orange-chicken-portions.html",
+      "path": "panda-express-mushroom-and-orange-chicken-portions.html",
+      "status": 200,
+      "sha256": "0683911e4169989da9e19c47aad737a547f629ba3a816abe23b2e0057e147337",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/nz/en/guides/subway-nz-roast-beef-sub-and-wrap-recipes/",
+      "path": "nz/en/guides/subway-nz-roast-beef-sub-and-wrap-recipes/index.html",
+      "status": 200,
+      "sha256": "4dc381ff811d27de3dc3592b21f257b15399f66872c5745b7ba8540bec389a8e",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/fr/en/guides/quick-france-coca-cola-volumes-and-mega-giant/",
+      "path": "fr/en/guides/quick-france-coca-cola-volumes-and-mega-giant/index.html",
+      "status": 200,
+      "sha256": "029db73b69ce0eba2e4109d95840e68dbe066c69e20b38974a1c5479450b8b0a",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/in/en/guides/mcdonalds-north-east-india-veg-and-egg-mcmuffin/",
+      "path": "in/en/guides/mcdonalds-north-east-india-veg-and-egg-mcmuffin/index.html",
+      "status": 200,
+      "sha256": "de12df8bcdfbd47b37c212000f4c40fec629efd453e62db93eca3b4259d13f32",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sg/en/guides/burger-king-singapore-whopper-and-cheese/",
+      "path": "sg/en/guides/burger-king-singapore-whopper-and-cheese/index.html",
+      "status": 200,
+      "sha256": "98e56fee1ddb972e44ce7919e25bb54747e5323c40e468b7b9cfbee2c5b5cfc7",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/za/en/guides/debonairs-south-africa-bbq-chicken-source-sizes/",
+      "path": "za/en/guides/debonairs-south-africa-bbq-chicken-source-sizes/index.html",
+      "status": 200,
+      "sha256": "e6185811e976e5df27e0e74bb62a4b91ff5d03226502b8096a15ffe8ea3ed2e2",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/guides/burger-king-canada-whopper-cheese-standard-serving/",
+      "path": "ca/en/guides/burger-king-canada-whopper-cheese-standard-serving/index.html",
+      "status": 200,
+      "sha256": "e576e476e34cf779eb4c0803f88192eca8c9e461465adeb2fba8ac273f34e784",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/burger-king-us-whopper-cheese-standard-serving.html",
+      "path": "burger-king-us-whopper-cheese-standard-serving.html",
+      "status": 200,
+      "sha256": "318e5533cc485313ce27a7741970cd47cf840be7482245af5190d0c5ba9d7ed1",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/guides/burger-king-canada-us-whopper-local-ingredients/",
+      "path": "ca/en/guides/burger-king-canada-us-whopper-local-ingredients/index.html",
+      "status": 200,
+      "sha256": "c4f79f1aa2a299255ec49974f4754af26473ffd83fda2381a292a471218b15af",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/au/en/restaurants/guzman-y-gomez/",
+      "path": "au/en/restaurants/guzman-y-gomez/index.html",
+      "status": 200,
+      "sha256": "3f95b411fbbaec2448c6d472bc5e378e45bf2927ef28b248fdae79424d625f13",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/restaurants/burger-king/",
+      "path": "ca/en/restaurants/burger-king/index.html",
+      "status": 200,
+      "sha256": "a91f2afd0956104e08ff1df564b59a5282667120a0e99d317866ffb946b9c8e9",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/restaurants/kfc/",
+      "path": "ca/en/restaurants/kfc/index.html",
+      "status": 200,
+      "sha256": "dc25f1a39347434e6074a931054d4cee6861cc0a4e648c081a1d97dd5b05b0bb",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/fr/en/restaurants/quick/",
+      "path": "fr/en/restaurants/quick/index.html",
+      "status": 200,
+      "sha256": "615583662fb398606871f798d6d4d82f14e789bb77da1e3443f993de33dddfc5",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/gb/en/restaurants/kfc/",
+      "path": "gb/en/restaurants/kfc/index.html",
+      "status": 200,
+      "sha256": "32309aefb7a4b12b6e4bd080d90b3db86b2c0b3f760ab0e61abaee4ba0367719",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ie/en/restaurants/kfc/",
+      "path": "ie/en/restaurants/kfc/index.html",
+      "status": 200,
+      "sha256": "6af09980e6ce1df84bf2be5663adde4659fa798227cdb542fc4d0506b0639844",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/in/en/restaurants/mcdonald-s-north-east-india/",
+      "path": "in/en/restaurants/mcdonald-s-north-east-india/index.html",
+      "status": 200,
+      "sha256": "e5cc50286fc652eff42a8b10f1402811dabe6aa7faf41744c5468e54cb3b89fe",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/jp/en/restaurants/mos-burger/",
+      "path": "jp/en/restaurants/mos-burger/index.html",
+      "status": 200,
+      "sha256": "ef37cdcece5a01eeb79d8a2a1447d75407ca748da71adfd082fed27ca6e5a83c",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/mx/en/restaurants/subway/",
+      "path": "mx/en/restaurants/subway/index.html",
+      "status": 200,
+      "sha256": "a2f0acfcbde705ae4e6eef07ebea6a34dd5c09b794261ed91b082c70ad0ee409",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/nz/en/restaurants/subway/",
+      "path": "nz/en/restaurants/subway/index.html",
+      "status": 200,
+      "sha256": "59401f7f3332ffd7fd1904c31b8b03d051b79b5ef3871cc62b2c7efce3c3f1db",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sg/en/restaurants/burger-king/",
+      "path": "sg/en/restaurants/burger-king/index.html",
+      "status": 200,
+      "sha256": "3af9d65d948e7ea01b5a50a61f55ad27b216f9ea5a511002a0ceea2760f80af1",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/za/en/restaurants/debonairs-pizza/",
+      "path": "za/en/restaurants/debonairs-pizza/index.html",
+      "status": 200,
+      "sha256": "c451b9262222f45bbbc437168ab5b64fc3496aca2efac32f147fe90f95609edf",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/restaurants/",
+      "path": "ca/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "cb03c174bb600d00994786f6bd8290ff2b77440bf3d723cb49f1e31a9c957206",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/mx/en/restaurants/",
+      "path": "mx/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "2dac6d644ba1ee2e96f5073b211b2129d0907f57cebce5ebb8921d4f7b40bf9e",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/gb/en/restaurants/",
+      "path": "gb/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "dd95a47a4b14ecd0fbd2f74e3c307b65eafa0e8f101947ea0deac6af5961eedd",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ie/en/restaurants/",
+      "path": "ie/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "7e5ed7e33fd032864d53a62f8acd7aafc2db23ac15850e79349cbf849e9e8dc9",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/au/en/restaurants/",
+      "path": "au/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "ad2e343a049389402b0ed6905836c3199b067564f0c132c8334cccaec783d43d",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/nz/en/restaurants/",
+      "path": "nz/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "4ee8f87c88f1d138e3ea4c7c36327548de8cee6124babd3674ad983746394204",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/jp/en/restaurants/",
+      "path": "jp/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "3d2b4b496e75e98b0b39148a2d8024f292c12b3fcbf86d8448611c7db1de94f8",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/fr/en/restaurants/",
+      "path": "fr/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "2b47a6ea1c4adb9d9e49dbc78728b28b5f39637e5aa97c5b17d805dd4a11b782",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/in/en/restaurants/",
+      "path": "in/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "7d990c0ce346abf29a30a020b2db6d10b0ae9cedd82f50dc5d12a4fd5c25fd39",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sg/en/restaurants/",
+      "path": "sg/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "5b49f996b52d975b6205a43149a8efc1e49415578b4534e651b648249432a2f4",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/za/en/restaurants/",
+      "path": "za/en/restaurants/index.html",
+      "status": 200,
+      "sha256": "b8d0eb06e797abed436a380f4f0b27b8d7263bd2da2f01764a58d413fc6859ec",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/world-restaurant-menus.html",
+      "path": "world-restaurant-menus.html",
+      "status": 200,
+      "sha256": "fc6800b29f770a6cbbff9e3e266fcb2f1ba6a5e7d5ba73f32c42c109e6b7097a",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/international-menu-data-coverage-explained.html",
+      "path": "international-menu-data-coverage-explained.html",
+      "status": 200,
+      "sha256": "6a7b442a7197dd1c9b882e3f024a9c13f0c0809afcec490b4f6d719841699293",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/protein-value-calculator.html",
+      "path": "protein-value-calculator.html",
+      "status": 200,
+      "sha256": "576175bcfa836f073277e33ca2f91fbe674353551f0548f4c02c96ef91bf2887",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/grocery-food-coverage.html",
+      "path": "grocery-food-coverage.html",
+      "status": 200,
+      "sha256": "35b002fd68a39f824d25767e4f7f071771d00de65f71b50618b3b153315f210a",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/",
+      "path": "index.html",
+      "status": 200,
+      "sha256": "6f433d9dca63f0604af89aae5736f7f14ab7db22a5014493281a8c36b533a055",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/restaurant-meal-finder.html",
+      "path": "restaurant-meal-finder.html",
+      "status": 200,
+      "sha256": "dddfcc8528bac06aa2e874ec83eab0ae730285d4869c1f25ce876f2d0ba2c220",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/",
+      "path": "ca/en/index.html",
+      "status": 200,
+      "sha256": "6c32f675f1b0b71a9debf08828da0c6a7267a27c94798a9c19a4d330d144c07a",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ca/en/find-a-meal/",
+      "path": "ca/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "a68bbecf607ce18bf9830db95ba138d1c58f383e104510b50766674c1e3cf494",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/mx/en/",
+      "path": "mx/en/index.html",
+      "status": 200,
+      "sha256": "a6258c5bc314798894570f80e2d98786b8682a836088389643163219154be60f",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/mx/en/find-a-meal/",
+      "path": "mx/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "b370b79ba392ce5e7756df4abbb511ed24f33d30670aa975ef1bcfc94374ff3e",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/gb/en/",
+      "path": "gb/en/index.html",
+      "status": 200,
+      "sha256": "de8ddcbbd4d75bf7f1c446904d829b2f88154830e7fd350d5c95c10d56033dac",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/gb/en/find-a-meal/",
+      "path": "gb/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "73a2eb31c7121821325c2bd6e127187ff1c7405b4d058a81fb264f039b6250c1",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ie/en/",
+      "path": "ie/en/index.html",
+      "status": 200,
+      "sha256": "a875156d5e5b559cb18f70b6f316cf34e6551c0062ea45ac3cf710691bfc029b",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/ie/en/find-a-meal/",
+      "path": "ie/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "20f03d9f8a2363a4a537e1993236b85160140b056c3af874ed068f520e132fd5",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/au/en/",
+      "path": "au/en/index.html",
+      "status": 200,
+      "sha256": "cabeb08431300e92017650da7248898ecb4a0ca789818529b43919c093a227b7",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/au/en/find-a-meal/",
+      "path": "au/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "de0603678dd91e100ae5e9547a892e9ce3cc4ce9f94e6be0597e8b41b8828558",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/nz/en/",
+      "path": "nz/en/index.html",
+      "status": 200,
+      "sha256": "1914f292cf1f63a0e5b5711478d6dd679ecc8caf63c8d168046378ae264053b6",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/nz/en/find-a-meal/",
+      "path": "nz/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "a6dfba095cfbdc1bae78d83135c41d0522114268168b07a3f7469cbed7773458",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/jp/en/",
+      "path": "jp/en/index.html",
+      "status": 200,
+      "sha256": "bb41a957e5fb51564a8f0fdabe3e3fca05e10ed17b11bb3e6a9da6550bcaa68c",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/jp/en/find-a-meal/",
+      "path": "jp/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "e44dc748602f64c2d5a18ebc347abf6dd0dd7685129335fe5b17d9b392e495bb",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/fr/en/",
+      "path": "fr/en/index.html",
+      "status": 200,
+      "sha256": "188a1934d8461d1b219b004322be9b5421a8ceef13ffe146ba4b2b93c2cf5cb8",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/fr/en/find-a-meal/",
+      "path": "fr/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "e17b3130c7fafee529430269020007ddb141126c17db6bd428d025cf91fc2132",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/in/en/",
+      "path": "in/en/index.html",
+      "status": 200,
+      "sha256": "b20154ef370224ff810b8281fca56c27579c89c0626fe35bbad0e89ea46e14d0",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/in/en/find-a-meal/",
+      "path": "in/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "1949efceb03eb2671c7c48e93002a37805087101dea518921beb7243ce47c154",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sg/en/",
+      "path": "sg/en/index.html",
+      "status": 200,
+      "sha256": "9008988d3db889bef989621362744fa8d5dfd931f827bc682b27913fe427ff9f",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sg/en/find-a-meal/",
+      "path": "sg/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "a3c37dd6366cbd5564e212096653a7e6ab9aed6ef0d0ef950408ad0d1f428b25",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/za/en/",
+      "path": "za/en/index.html",
+      "status": 200,
+      "sha256": "e8b459714a32386a3fa99e0d4dee408c2bfb984d75a092042c8d6d38ceb59ac0",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/za/en/find-a-meal/",
+      "path": "za/en/find-a-meal/index.html",
+      "status": 200,
+      "sha256": "939d8464037e416c84dac6b3e43bcc2aefa6f25421a1e87652130c8ba26cf0f1",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/food-diary.html",
+      "path": "food-diary.html",
+      "status": 200,
+      "sha256": "3fc67557d857ea228158d57a56a9ed5c8478dece6cb3b6c33825a8a276065875",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/food-library.html",
+      "path": "food-library.html",
+      "status": 200,
+      "sha256": "c2cdab63f22d97935afa1f43e082bc2782fe6c6e75021c711e1e421a3e0c31c3",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sitemap.xml",
+      "path": "sitemap.xml",
+      "status": 200,
+      "sha256": "4b79df203c8cabb321f1fbdecb053abcd483784fa43e7dce9a45ae6e2b7ac100",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/sw.js",
+      "path": "sw.js",
+      "status": 200,
+      "sha256": "3071fa8072b486b32ba34fc3aa6920a5b3c734aada3ce72f951eb81f9fb81d8f",
+      "cacheStatus": "EXPIRED",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/js/order-registry.json",
+      "path": "js/order-registry.json",
+      "status": 200,
+      "sha256": "6b708dfd2f7c06d32cbff2678fa5e6c251a5481101e4f458766992a282fe1b63",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/manifest.json",
+      "path": "data/restaurant-foods/manifest.json",
+      "status": 200,
+      "sha256": "732210f9e050fcf388ff536d4a0b5c8532842985e41c0131f1408f91ab06a490",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/data/branded-foods/off/manifest.json",
+      "path": "data/branded-foods/off/manifest.json",
+      "status": 200,
+      "sha256": "884088351eecaffe82fe0feb279fb3b73a5a17fd030a2a1aa3932d8a51bdd809",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/data/branded-foods/usda/manifest.json",
+      "path": "data/branded-foods/usda/manifest.json",
+      "status": 200,
+      "sha256": "427a79931c4abf862877ad05d2a565a28e9df30444e312810190a38c4a154c23",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/data/branded-foods/cnf/manifest.json",
+      "path": "data/branded-foods/cnf/manifest.json",
+      "status": 200,
+      "sha256": "b86706cc31f5744ee20c359d5cdd6afa564b4c6bfe7d32c33d5ce12c9df92415",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/data/branded-foods/retailer-ca/manifest.json",
+      "path": "data/branded-foods/retailer-ca/manifest.json",
+      "status": 200,
+      "sha256": "0a1ec985234587682ce616ef9b9e9ebf0dd145053b40e6a31d31f0547fa1b55c",
+      "cacheStatus": "DYNAMIC",
+      "age": "0"
+    },
+    {
+      "url": "https://getmacros.net/assets/generated/js-branded-foods-80a47931b081.js",
+      "path": "assets/generated/js-branded-foods-80a47931b081.js",
+      "status": 200,
+      "sha256": "80a47931b0811ea1d0f766894e3e95f037a42230b75e5047b7435ee01298c377",
+      "cacheStatus": "HIT",
+      "age": "198"
+    },
+    {
+      "url": "https://getmacros.net/assets/generated/js-food-library-41a943f25ee2.js",
+      "path": "assets/generated/js-food-library-41a943f25ee2.js",
+      "status": 200,
+      "sha256": "41a943f25ee2c4908f356ddfd579a3f056bb029db02e305a2eb93f7a554161e6",
+      "cacheStatus": "HIT",
+      "age": "198"
+    },
+    {
+      "url": "https://getmacros.net/assets/generated/js-markets-a842f0004fb2.js",
+      "path": "assets/generated/js-markets-a842f0004fb2.js",
+      "status": 200,
+      "sha256": "a842f0004fb21ebe7fd9801cc213866161c55ff196e35baa718d04fd00248bc1",
+      "cacheStatus": "HIT",
+      "age": "252"
+    },
+    {
+      "url": "https://getmacros.net/assets/generated/js-market-definitions-794d1ec95514.js",
+      "path": "assets/generated/js-market-definitions-794d1ec95514.js",
+      "status": 200,
+      "sha256": "794d1ec95514acc87a38922091ac3b4729705b390ec6febb7413d14b804a5cdb",
+      "cacheStatus": "HIT",
+      "age": "252"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/US.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/US.json.gz",
+      "status": 200,
+      "records": 894,
+      "market": "US"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/CA.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/CA.json.gz",
+      "status": 200,
+      "records": 647,
+      "market": "CA"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/MX.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/MX.json.gz",
+      "status": 200,
+      "records": 100,
+      "market": "MX"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/GB.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/GB.json.gz",
+      "status": 200,
+      "records": 456,
+      "market": "GB"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/IE.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/IE.json.gz",
+      "status": 200,
+      "records": 194,
+      "market": "IE"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/AU.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/AU.json.gz",
+      "status": 200,
+      "records": 249,
+      "market": "AU"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/NZ.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/NZ.json.gz",
+      "status": 200,
+      "records": 160,
+      "market": "NZ"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/JP.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/JP.json.gz",
+      "status": 200,
+      "records": 393,
+      "market": "JP"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/FR.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/FR.json.gz",
+      "status": 200,
+      "records": 190,
+      "market": "FR"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/IN.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/IN.json.gz",
+      "status": 200,
+      "records": 82,
+      "market": "IN"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/SG.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/SG.json.gz",
+      "status": 200,
+      "records": 57,
+      "market": "SG"
+    },
+    {
+      "url": "https://getmacros.net/data/restaurant-foods/ZA.json.gz?v=686be93226793071",
+      "path": "data/restaurant-foods/ZA.json.gz",
+      "status": 200,
+      "records": 160,
+      "market": "ZA"
+    }
+  ],
+  "indexing": "Deployment verified; Google indexing and traffic not measured."
+}

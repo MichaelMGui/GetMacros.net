@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "inputFiles": [
+    "tools/flagship_release/markets_release_records.json",
+    "tools/flagship_release/uk_records.json",
+    "tools/flagship_release/markets_mexico_calories.json"
+  ],
+  "newSourcePortions": 6741,
+  "newCalculatedOrders": 4,
+  "refreshedSourcePortions": 135,
+  "registryRecords": 10327,
+  "newByMarket": {
+    "CA": 236,
+    "US": 186,
+    "AU": 471,
+    "NZ": 301,
+    "IN": 185,
+    "SG": 62,
+    "FR": 108,
+    "JP": 69,
+    "IE": 353,
+    "GB": 4736,
+    "MX": 38
+  },
+  "recordsByMarket": {
+    "US": 1080,
+    "CA": 883,
+    "GB": 5192,
+    "AU": 720,
+    "MX": 138,
+    "IE": 547,
+    "JP": 462,
+    "NZ": 461,
+    "FR": 298,
+    "IN": 267,
+    "SG": 119,
+    "ZA": 160
+  },
+  "chainsByMarket": {
+    "US": 26,
+    "CA": 15,
+    "MX": 2,
+    "GB": 20,
+    "IE": 3,
+    "AU": 3,
+    "NZ": 3,
+    "JP": 3,
+    "FR": 2,
+    "IN": 2,
+    "SG": 2,
+    "ZA": 1
+  },
+  "newSourceChainRelationships": 30,
+  "scope": "Exact source snapshots. Products, named portions and calculated orders are separate. See source reports for category limits and withheld records."
+}

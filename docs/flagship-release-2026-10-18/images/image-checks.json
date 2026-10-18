@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-18T17:36:30.274Z",
+  "mealAssignments": 10327,
+  "originalAssets": 15,
+  "exactPhotographs": 0,
+  "categoryRegressionCases": 9,
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "screenshots": [
+    "original-cutouts-light.png",
+    "original-cutouts-dark.png"
+  ],
+  "inspection": "Actual Edge render and image-load/overflow check; no photographic portion verification claimed"
+}

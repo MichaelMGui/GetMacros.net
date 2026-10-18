@@ -1,0 +1,17 @@
+{
+  "appId": "net.getmacros.app",
+  "appName": "GetMacros",
+  "webDir": "www",
+  "server": {
+    "hostname": "localhost",
+    "iosScheme": "capacitor",
+    "cleartext": false
+  },
+  "ios": {
+    "contentInset": "automatic",
+    "scrollEnabled": true,
+    "preferredContentMode": "mobile",
+    "backgroundColor": "#F7FAF3",
+    "allowsLinkPreview": false
+  }
+}

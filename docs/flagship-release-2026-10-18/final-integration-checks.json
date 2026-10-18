@@ -1,0 +1,27 @@
+[
+  {
+    "command": "restore_asset_sources",
+    "exit": 0,
+    "seconds": 0.71
+  },
+  {
+    "command": "build_flagship_release",
+    "exit": 0,
+    "seconds": 41.71
+  },
+  {
+    "command": "refresh_release_search",
+    "exit": 0,
+    "seconds": 2.52
+  },
+  {
+    "command": "stamp_assets",
+    "exit": 0,
+    "seconds": 4.81
+  },
+  {
+    "command": "validate_site",
+    "exit": 1,
+    "seconds": 6.37
+  }
+]

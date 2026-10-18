@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-17T22:44:10.213116+00:00",
+  "provider": "USDA manufacturer-supplied branded source profiles",
+  "counts": {
+    "profiles": 446810,
+    "allFourMacroFieldsAvailable": 437820,
+    "missingOrUnsupportedBarcodeWarnings": 10007,
+    "sourceDiscontinuedWarnings": 1859,
+    "sourceSugarCarbohydrateWarnings": 1341
+  },
+  "meaning": "Counts preserve existing source warnings. Available macro fields do not mean independent package verification or current retailer stock. Contradictory source values are not silently repaired.",
+  "sourceWarningsVisibleIn": "Food portion review: Source & full nutrition"
+}

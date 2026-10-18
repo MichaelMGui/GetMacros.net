@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html data-wf-page="648722bdcce85e8895a7c7dc" data-wf-site="646ca38fd7b369eaad5be181">
+<head>
+<!-- Cookies Code -->
+<script type='text/javascript' src='https://api.concord.tech/site-v1/4042a42d-fb4f-4dac-a432-4e48eb2da760/site-client'></script>
+
+<base href="https://gdk.com/" />
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Page Not Found</title>
+
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Webflow" name="generator">
+
+<meta name="description" content="Page Not Found">
+<meta name="keywords" content="Page Not Found">
+<meta name="google-site-verification" content="lOxW8nKIHggVuOUWmUMNF1hL8deyo5mehSiwZ4L_o18" />
+
+
+
+<meta property="og:site_name" content="German Doner Kebab">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Page Not Found"/>
+<meta property="og:image" content="https://media.gdk.com/cdn-cgi/image/width=600,height=400/images/misc/GDK.jpg"/>
+<meta property="og:description" content="Page Not Found"/>
+<meta property="og:url" content="" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="">
+<meta property="twitter:title" content="Page Not Found">
+<meta property="twitter:description" content="Page Not Found">
+<meta property="twitter:image" content="https://media.gdk.com/cdn-cgi/image/width=600,height=400/images/misc/GDK.jpg">
+
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/webflow.css" rel="stylesheet" type="text/css">
+<link href="css/gdk-new-website.webflow.css?v=d33dcfb0116c1132a4d109a5a2e8a4f3" rel="stylesheet" type="text/css">
+<link href="css/custom-styles.css?v=901481b6eadfdde136cb8e1025caa0f8" rel="stylesheet" type="text/css">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- favicon end -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300italic,300,700,700italic,900,900italic,500,500italic,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,300,300italic,700italic,600' rel='stylesheet' type='text/css'>
+<script language="javascript" type="text/javascript">HOST_URL = "https://gdk.com";</script>
+<script language="javascript" type="text/javascript" src="scripts/ajax.js?rand=3"></script>
+<script language="javascript" type="text/javascript">
+	function goBack() {
+		window.history.back(-1);
+	}
+
+function EmailValidationHeader(location) {
+
+	$('.error-label').css('display','none')
+	$('.confirmed-label').css('display','none')
+
+	var error = '';
+	//document.getElementById("errorMSG_"+location).style.display = 'none';
+	//document.getElementById("successMSG_"+location).style.display = 'none';
+
+   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   var address = document.getElementById("email_"+location).value;
+
+	if(document.getElementById("email_"+location).value=='') {
+		document.getElementById("email_"+location).focus();
+		error= '<p>Please enter your email address.</p>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+	}else if(reg.test(address) == false) {
+		document.getElementById("email_"+location).focus();
+		error= '<p>Please enter your valid email address.</p>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+   }
+
+	if(document.getElementById("listID_"+location).value=='') {
+		document.getElementById("listID_"+location).focus();
+		error= '<p>Please select location.</p>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+	}
+
+		document.getElementById("successMSG_"+location).innerHTML = "<p>Please wait...</p>";
+		document.getElementById("successMSG_"+location).style.display = 'block';
+
+		var listID = $('#listID_'+location).val().split('---GDK---');
+		updateCookieCountry(listID[0]);
+
+		var url = "AJAX_NewsLetter.php?email="+address+"&listID="+listID[1];
+		LoadSimpleContents(url,document.getElementById("successMSG_"+location),location);
+		return false;
+
+	return false;
+}
+
+function EmailValidation(location) {
+
+	$('.error-label').css('display','none')
+	$('.confirmed-label').css('display','none')
+
+	var error = '';
+	//document.getElementById("errorMSG_"+location).style.display = 'none';
+	//document.getElementById("successMSG_"+location).style.display = 'none';
+
+   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   var address = document.getElementById("email_"+location).value;
+
+	if(document.getElementById("email_"+location).value=='') {
+		document.getElementById("email_"+location).focus();
+		error= '<p>Please enter your email address.</p>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+	}else if(reg.test(address) == false) {
+		document.getElementById("email_"+location).focus();
+		error= '<p>Please enter your valid email address.</p>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+   }
+
+		document.getElementById("successMSG_"+location).innerHTML = "<p>Please wait...</p>";
+		document.getElementById("successMSG_"+location).style.display = 'block';
+
+		var listID = $('#listID_'+location).val();
+		var url = "AJAX_NewsLetter.php?email="+address+"&listID="+listID;
+		LoadSimpleContents(url,document.getElementById("successMSG_"+location),location);
+		return false;
+
+	return false;
+}
+
+</script>
+<style>
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+   position:relative;
+height:0;
+}
+.map-responsive iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+  table.gdkprivacy {
+    border-collapse: collapse;
+    border: 1px solid black; /* 1px border around table */
+  }
+
+  table.gdkprivacy td,
+  table.gdkprivacy th {
+    padding: 10px;          /* Cell padding */
+    border: 1px solid black; /* Optional: 1px border around each cell */
+  }
+</style>
+<!-- Reviewed code with JK 21 Feb 24 -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQLJBR6');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '830109561769572');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=830109561769572&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!--  18 Oct 23 JM START-->
+<!-- 
+Start of global snippet: Please do not remove
+Place this snippet between the <head> and </head> tags on every page of your site.
+-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=DC-13646485"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'DC-13646485');
+</script>
+<!-- End of global snippet: Please do not remove -->
+<!-- 18 Oct 23 James Myles END -->
+
+<!--  18 Oct 23 JM START-->
+<!-- Meta Pixel Code -->	
+<script>	
+!function(f,b,e,v,n,t,s)	
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?	
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};	
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';	
+n.queue=[];t=b.createElement(e);t.async=!0;	
+t.src=v;s=b.getElementsByTagName(e)[0];	
+s.parentNode.insertBefore(t,s)}(window, document,'script',	
+'https://connect.facebook.net/en_US/fbevents.js');	
+fbq('init', '546939995492596');	
+fbq('track', 'PageView');	
+</script>	
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=546939995492596&ev=PageView&noscript=1" /></noscript>	
+<!-- End Meta Pixel Code -->	
+<!-- 18 Oct 23 JM END -->
+
+<!--  23 Oct 23 LM START-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-60ZP4C1D6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-60ZP4C1D6N');
+</script>
+<!-- 23 Oct 23 LM END -->
+
+<!-- Start of Blis Pixel loader tag -->
+<script src="https://sitepixel.blis.com/BlisPixel.js?cachebuster=1" type="text/javascript" async></script>
+<script>
+  window.blis_q = window.blis_q || [];
+  window.blis_q.push({ event_type: "PixelSetup", settings: {
+    pixelUUID: "7baca6ec-76fd-4b19-8e60-951ae1f43215"
+  }});
+</script>
+<!-- End of Blis Pixel Loader tag -->
+
+<!-- Facebook Pixel - Alex GDK Ireland -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1258191876298787'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1258191876298787&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code --><style type="text/css">
+a.disableBTN {
+	cursor: default;
+}
+footer {
+	position: relative;
+}
+
+.footer.bg-orange, .footer.bg-black.text-orange { /*padding-bottom:0px; */}
+.footer_notes_orange {
+
+    background-color: #000;
+    margin-top: 20px;
+
+}
+
+.foter_notes {
+    font-family: HKgrotesk Medium, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #ffb34b !important;
+	padding: 20px 60px;
+    padding-bottom: 20px;
+	background-color: #000;
+}
+@media screen and (max-width: 991px) {
+.foter_notes {
+    padding: 5rem 3rem 3rem;
+}
+}
+.w-form-fail {
+	text-align: left;
+	background-color: #9506069e;
+	margin-top: 20px;
+	padding: 12px 20px;
+	font-size: 1.4rem;
+	color: #fafafa;
+	border-radius: 200px;
+}
+.w-form-done {
+	text-align: left;
+    background-color: #232322;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1.4rem;
+    color: var(--stp-accent);
+    border-radius: 200px;
+}
+.disableBTN {
+	pointer-events: none !important;
+}
+.removedBTN {
+	visibility: hidden !important;
+	opacity: 0 !important;
+	pointer-events: auto !important;
+}
+.loc-buttons .removedBTN {
+	display: none !important;
+}
+.product-card-cta-group:has(>.removedBTN) {
+	display: flex !important;
+}
+.product-card-cta-group .removedBTN {
+	display: none !important;
+}
+.stp-item.disableBTN {
+	pointer-events: none !important;
+	opacity: 0.5;
+}
+.stp-item.removedBTN {
+	display: none !important;
+}
+.news-items-wrapper .ui-card-date {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news-items-wrapper .ui-card-group {
+	width: 100%;
+}
+.news-items-wrapper .ui-card-mask-group {
+	width: calc(100% - 4rem);
+}
+</style>
+
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <style type="text/css">
+	html, body {
+		font-size: clamp(10px,calc(100vw/1920*10),12px);
+	}
+</style>
+</head>
+<body class="pagenotfound-page bg-black">
+	  <!-- country select modal with bg overlay -->
+  <div class="country-select-wrapper ">
+    <div class="country-select-overlay" onclick="this.parentElement.classList.remove('active'); document.body.classList.remove('overflow-hidden');"></div>
+    <div class="country-select-inner">
+      <img src="images/gdk-logo_orange.svg" loading="lazy" alt="" class="country-select-logo">
+      <h2 class="country-select-heading">please select your COUNTRY</h2>
+      <ul role="list" class="country-select-list">		
+    					<li class="country-select-item">
+        			  <a href="https://gdk.com/gb?cr=1" class="country-select-link">UK</a>
+        			</li>
+					<li class="country-select-item">
+        			  <a href="https://gdk.com/ie?cr=1" class="country-select-link">Ireland</a>
+        			</li>
+					<li class="country-select-item">
+        			  <a href="https://gdk.com/ae?cr=1" class="country-select-link">UAE</a>
+        			</li>
+					<li class="country-select-item">
+        			  <a href="https://gdk.com/se?cr=1" class="country-select-link">Sweden</a>
+        			</li>
+					<li class="country-select-item">
+                  <a href="#" class="country-select-link" onclick="updateCookieCountry('canada---GDK---2eb876d9ce---GDK---Canada---GDK---14---GDK---https://gdk.com/ca?cr=1'); return false;">Canada</a>
+        			</li>
+					<li class="country-select-item">
+                  <a href="#" class="country-select-link" onclick="updateCookieCountry('usa---GDK---fc1d22fe6d---GDK---USA---GDK---13---GDK---https://gdk.com/us?cr=1'); return false;">USA</a>
+        			</li>
+					<li class="country-select-item">
+        			  <a href="https://gdk.com/sa?cr=1" class="country-select-link">Saudi Arabia</a>
+        			</li>
+		        <!--<li class="country-select-item last-child">
+          <a href="https://media.gdk.com/" class="country-select-link">GLOBAL</a>
+        </li>-->
+      </ul>
+    </div>
+  </div>
+    <!-- country select modal with bg overlay -->
+
+
+<div id="top" class="top-page-anchor"></div>
+<div class="menu-page-bg"></div><div class="page-top header-black  " id="headingPanel">
+    <!--
+    <div class="page-trisition">
+      <div class="nav-bar_spacing">
+        <div class="container-large">
+          <div class="nav-bar_wrapper">
+            <a href="https://order.online/en/business/-565671?hideModal=true&pickup=true" target="_blank" class="button-default-orange">ORDER NOW</a>            <a href="#" class="nav-bar_hamburger-icon_wrapper nav-trigger w-inline-block">
+              <div class="icon-100 w-embed"><svg viewbox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.140137" width="15" height="2" fill="currentColor"></rect>
+                  <rect x="0.5" y="4.14014" width="15" height="2" fill="currentColor"></rect>
+                  <rect x="6.5" y="8.14014" width="9" height="2" fill="currentColor"></rect>
+                </svg></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
+      <div class="nav-bar_spacing">
+        <div class="container-large">
+          <div class="nav-bar_wrapper">			<!--
+            -->     
+      
+			<a id="orderButton" href="https://order.online/en/business/-565671?hideModal=true&pickup=true" target="_blank"  class="button-default-orange">ORDER NOW</a>      
+			
+           <a id="headerLogo" href="https://gdk.com/ca" class="w-inline-block">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.09 66.98"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path fill="currentcolor" d="M222.09,2H190.9L169.75,20.52V2H147.42v23.3C144.1,10.31,131.76,2,113,2H77.74V19.53C71.45,6.72,57.14,0,40.49,0,16.18,0,0,13.83,0,34.35,0,52.61,14.73,67,40,67H41l.62,0a56.69,56.69,0,0,0,20.19-3.69,26.94,26.94,0,0,0,16-19.56V65h35c19.4,0,31.44-7.82,34.7-22.35V65h22.33V43.93L176,39l18.53,26h27.29l-29.1-39.51ZM113.7,11.76l.76-.39.69-.28H116l.39.14.14.2.36.06.33.18.07.28-.06.3-.6.45-.16.27-.24.29-.13.11-.23.3-.63.41-.37,0-.45-.06-.28-.21-.16-.4-.1-.18-.4-.28-.1-.19v-.2l-.09-.23,0-.3Zm-8.12,0,.76-.39.7-.28h.89l.38.14.15.2.36.06.33.18.07.28-.07.3-.6.45-.15.27-.25.29-.13.11-.23.3-.62.41-.37,0-.46-.06-.27-.21-.16-.4-.1-.18-.4-.28-.11-.19v-.2l-.09-.23,0-.3ZM22.42,33.63c0-10,5.06-16.73,17.89-16.73,9,0,13.56,3.08,16.46,9.32l21-6.48v9.19H41.22V43.75H55.05c-.55,3.07-3.17,6.33-13.38,6.33-12.74,0-19.25-5.87-19.25-16.45m97.93-7-3.95.47-.26,1c-2.5.66-4,.3-6.69.48l0,.6h0c3,0,8.64,0,10.59-1.22.11,1.21-.15,3.16-1,3.91a3.06,3.06,0,0,1-1.64.57c-.68.09-1.43.12-2.1.2l-2.94.53s1.43,0-.74.62a15.25,15.25,0,0,1-1.61.32,1.36,1.36,0,0,0,.3.13l.7.25.25,0a8.18,8.18,0,0,0,1.4,0c.47,0,.8,0,1.07,0a1.74,1.74,0,0,1,1,.26l3.59-.08c-.5,1.77-.41,1.89-2.07,2.6-.6.25-1.11.5-1.65.68a5.92,5.92,0,0,1-1.8.36l-.8,1.4,4-.45a11.8,11.8,0,0,1-5,4.91v9.4c-1.71-.11-1.4.21-1.42-1.59l0-8c-2-.62-4.34-3.28-5.34-5.34l.26.17-.26-.17c-1.58-1.49-3.33-6.68-3.51-9.38h0c-.79-2.68-.88-5.46,1.16-7,2.57-1.89,4.57-1.31,7.57-2.09.37-2.13,0-4.51.11-5.77.15-1.43-.21-.76.61-1.13,1,.31.73-.23.83,1.42v5.66c3.77-.15,8.11,1.13,8.94,3.45l-5.81.32a15.07,15.07,0,0,0,1.6,1.12h0a10.91,10.91,0,0,0,4.52-.58Z"/></g></g></svg>
+           </a>
+
+           <style>
+            .top-panel-right-wrapper {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 20px;
+            }
+            .header-country-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+              flex-wrap: nowrap;
+              padding: 0px 20px;
+              height: 38px;
+              background: #ff7a00;
+              color: #000;
+              border-radius: 100px;
+              
+            }
+            .header-country-button span {
+              font-family: "HKGrotesk Bold", sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%; /* 24px */
+              letter-spacing: -0.16px;
+              text-transform: uppercase;
+            }
+            .page-top.header-black .header-country-button {
+              color: #000 !important;
+              background: #ff7a00 !important;
+            }
+            .page-top.header-black.sticky .header-country-button {
+              color: #ff7a00 !important;
+              background: #000 !important;
+            }
+            .page-top.header-orange .header-country-button {
+              color: #ff7a00 !important;
+              background: #000 !important;
+            }
+            .page-top.header-orange.sticky .header-country-button {
+              color: #000 !important;
+              background: #ff7a00 !important;
+            }
+            .nav-bar_hamburger-icon_wrapper {
+              margin-left: 0 !important;
+            }
+            #orderButton {
+              margin-right: 63px;
+            }
+            .country-select-wrapper {
+              position: fixed;
+            }
+            @media (max-width: 575px) {
+              .header-country-button {
+                gap: 2px;
+                padding: 0px 10px;
+              }
+              .header-country-button span {
+                font-size: 14px;
+                line-height: 1;
+              }
+              #headerLogo {
+                margin-right: 15px;
+              }
+              .top-panel-right-wrapper {
+                gap: 15px;
+              }
+            }
+            @media (max-width: 767px) {
+              #orderButton {
+                margin-right: 0;
+              }
+            }
+           </style>
+            <div class="top-panel-right-wrapper">
+              <a class="header-country-button" href="javascript:void(0);" onclick="document.querySelector('.country-select-wrapper').classList.add('active'); document.body.classList.add('overflow-hidden');">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span id="headerCountry">CANADA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+              </a>
+              <a href="#" class="nav-bar_hamburger-icon_wrapper nav-trigger w-inline-block">
+                <div class="icon-100 w-embed">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 448 512">
+                    <path d="M0 64H448v64H0V64zM0 224H448v64H0V224zM448 384v64H0V384H448z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar-open_component">
+        <div class="nav-bar-open_transition-wrapper">
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+          <div class="nav-bar-open_transition-bg"></div>
+        </div>
+        <div class="nav-bar-open_nav-close">
+          <div class="icon-100 w-embed">
+            <svg viewbox="0 0 12 12" style="width: 20px" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.875 2L9.875 10" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+              <path d="M9.875 2L1.875 10" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="nav-bar-open_nav-side-effect">
+          <div class="nav-bar-open_nav-side-effect-wrapper">
+            <div class="multiple-stripes-anim-2">
+              <div class="msa-stage-2">
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-0"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-50"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-100"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-150"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-200"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-250"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-300"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-350"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-400"></div>
+                </div>
+                <div class="msa-item-2">
+                  <div class="msa-item-stripe-2 bg-black delay-450"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bar-open_top-wrapper">
+          <div class="nav-bar-open_container">
+            <div class="nav-bar-open_top">
+              <div class="nav-bar-open_top-right-details_top-animation is-mobile">
+                <div class="stripe-anim-stage">
+                  <div class="stripe-anim-el bg-black"></div>
+                </div>
+              </div>
+              <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd7113f4-bd7113c0" class="nav-bar-open_links">
+
+				<div class="nav-bar-open_link-wrapper-divider"></div>
+
+											<a href="https://gdk.com/ca/our-food"   class="nav-bar-open_link-wrapper w-inline-block ">
+					  <div class="nav-bar-open_link-text-wrapper is-2nd ">
+						<div class="nav-bar-open_link-text">OUR FOOD</div>
+					  </div>
+					  <div class="nav-bar-open_link-text-wrapper is-1st ">
+						<div class="nav-bar-open_link-text">OUR FOOD</div>
+					  </div>
+					</a>
+					<div class="nav-bar-open_link-wrapper-divider"></div>
+									<a href="https://gdk.com/ca/menu"   class="nav-bar-open_link-wrapper w-inline-block ">
+					  <div class="nav-bar-open_link-text-wrapper is-2nd ">
+						<div class="nav-bar-open_link-text">THE MENU</div>
+					  </div>
+					  <div class="nav-bar-open_link-text-wrapper is-1st ">
+						<div class="nav-bar-open_link-text">THE MENU</div>
+					  </div>
+					</a>
+					<div class="nav-bar-open_link-wrapper-divider"></div>
+									<a href="https://gdk.com/ca/offers"   class="nav-bar-open_link-wrapper w-inline-block ">
+					  <div class="nav-bar-open_link-text-wrapper is-2nd ">
+						<div class="nav-bar-open_link-text">OFFERS</div>
+					  </div>
+					  <div class="nav-bar-open_link-text-wrapper is-1st ">
+						<div class="nav-bar-open_link-text">OFFERS</div>
+					  </div>
+					</a>
+					<div class="nav-bar-open_link-wrapper-divider"></div>
+									<a href="https://gdk.com/ca/gdk-locations"   class="nav-bar-open_link-wrapper w-inline-block ">
+					  <div class="nav-bar-open_link-text-wrapper is-2nd ">
+						<div class="nav-bar-open_link-text">RESTAURANT LOCATOR</div>
+					  </div>
+					  <div class="nav-bar-open_link-text-wrapper is-1st ">
+						<div class="nav-bar-open_link-text">RESTAURANT LOCATOR</div>
+					  </div>
+					</a>
+					<div class="nav-bar-open_link-wrapper-divider"></div>
+									<a href="https://gdk.com/ca/latest-news"   class="nav-bar-open_link-wrapper w-inline-block ">
+					  <div class="nav-bar-open_link-text-wrapper is-2nd ">
+						<div class="nav-bar-open_link-text">LATEST NEWS</div>
+					  </div>
+					  <div class="nav-bar-open_link-text-wrapper is-1st ">
+						<div class="nav-bar-open_link-text">LATEST NEWS</div>
+					  </div>
+					</a>
+					<div class="nav-bar-open_link-wrapper-divider"></div>
+									<a href="https://gdk.com/ca/join-us"   class="nav-bar-open_link-wrapper w-inline-block ">
+					  <div class="nav-bar-open_link-text-wrapper is-2nd ">
+						<div class="nav-bar-open_link-text">JOIN US</div>
+					  </div>
+					  <div class="nav-bar-open_link-text-wrapper is-1st ">
+						<div class="nav-bar-open_link-text">JOIN US</div>
+					  </div>
+					</a>
+					<div class="nav-bar-open_link-wrapper-divider"></div>
+				
+              </div>
+              <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd711426-bd7113c0" class="nav-bar-open_top-right-details">
+                <div class="multiple-stripes-anim" style="width: 30px; position: absolute; right: 7rem; top: calc(50% - 60px);">
+                  <div class="msa-stage">
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-0"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-50"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-100"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-150"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-200"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-250"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-300"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-350"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-400"></div>
+                    </div>
+                    <div class="msa-item">
+                      <div class="msa-item-stripe bg-black delay-450"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-bar-open_top-right-details_top">
+                  <div class="nav-bar-open_top-right-details_top-animation">
+                    <div class="stripe-anim-stage">
+                      <div class="stripe-anim-el bg-black"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-bar-open_top-right-details_middle">
+                  <div class="nav-bar-open_top-right-details_logo-wrapper">
+                    <img src="images/gdk-icon-black.svg" loading="lazy" alt="">
+                  </div>
+                </div>
+                <div class="nav-bar-open_top-right-details_bottom">
+                  <div class="nav-bar-open_top-right-details_links">
+                    											<a href="mailto:press@gdk.com?subject=Media%20Enquiry%20via%20GDK%20Website"  class="nav-bar-open_top-right-details_link-wrapper w-inline-block">
+						  <div class="nav-bar-open_top-right-details_link-text-wrapper is-1st">
+							<div class="nav-bar-open_top-right-details_link-text">MEDIA ENQUIRIES</div>
+						  </div>
+						  <div class="nav-bar-open_top-right-details_link-text-wrapper is-2nd">
+							<div class="nav-bar-open_top-right-details_link-text">MEDIA ENQUIRIES</div>
+						  </div>
+						</a>
+						<div class="nav-bar-open_top-right-details_link-wrapper-divider"></div>
+											<a href="https://gdk.com/ca/german-doner-kebab-gdk-fast-food-franchise-opportunity"  class="nav-bar-open_top-right-details_link-wrapper w-inline-block">
+						  <div class="nav-bar-open_top-right-details_link-text-wrapper is-1st">
+							<div class="nav-bar-open_top-right-details_link-text">FRANCHISE ENQUIRIES</div>
+						  </div>
+						  <div class="nav-bar-open_top-right-details_link-text-wrapper is-2nd">
+							<div class="nav-bar-open_top-right-details_link-text">FRANCHISE ENQUIRIES</div>
+						  </div>
+						</a>
+						<div class="nav-bar-open_top-right-details_link-wrapper-divider"></div>
+											<a href="https://gdk.com/ca/contact-us"  class="nav-bar-open_top-right-details_link-wrapper w-inline-block">
+						  <div class="nav-bar-open_top-right-details_link-text-wrapper is-1st">
+							<div class="nav-bar-open_top-right-details_link-text">CONTACT US</div>
+						  </div>
+						  <div class="nav-bar-open_top-right-details_link-text-wrapper is-2nd">
+							<div class="nav-bar-open_top-right-details_link-text">CONTACT US</div>
+						  </div>
+						</a>
+						<div class="nav-bar-open_top-right-details_link-wrapper-divider"></div>
+					                  </div>
+                </div>
+              </div>
+              <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd711440-bd7113c0" class="nav-bar-open_top-bottom-links is-mobile">
+                <div class="nav-bar-open_bottom_links">
+								                  <a href="https://gdk.com/ca/allergen-information"  class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">ALLERGENS INFO</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                  <a href="https://media.gdk.com/images/misc/Canada.pdf" target="_blank" class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">HALAL CERTIFICATE</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                  <a href="https://gdk.com/ca/privacy-policy"  class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">PRIVACY POLICY</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                  <a href="mailto:press@gdk.com?subject=Media%20Enquiry%20via%20GDK%20Website"  class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">MEDIA ENQUIRIES</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                  <a href="https://gdk.com/ca/german-doner-kebab-gdk-fast-food-franchise-opportunity"  class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">FRANCHISE ENQUIRIES</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                  <a href="https://gdk.com/ca/contact-us"  class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">CONTACT US</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                </div>
+
+								        					<!--
+          							<a href="https://order.online/en/business/-565671?hideModal=true&pickup=true" target="_blank" class="button_wrapper is-secondary is-nav w-inline-block">
+							  <div class="text-block-2">ORDER NOW</div>
+							</a>
+					              -->
+
+          <a href="https://order.online/en/business/-565671?hideModal=true&pickup=true" target="_blank"  class="stp-item button_wrapper is-secondary is-nav w-inline-block">
+							  <div class="text-block-2">ORDER NOW</div>
+							</a>
+          
+				              </div>
+            </div>
+          </div>
+          <div class="nav-bar-open_bottom-wrapper is-mobile">
+            <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd71145a-bd7113c0" class="nav-bar-open_container">
+              <div class="nav-bar-open_bottom">
+                <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd71145c-bd7113c0" class="nav-bar-open_bottom_credit-social">
+                  <div class="nav-bar-open_bottom_translate-wrapper">
+                    <div class="monster"></div>
+                  </div>
+                  <div class="nav-bar-open_bottom_social-wrapper">
+                    					<a href="https://www.instagram.com/gdkcanada" target="_blank" class="nav-bar-open_bottom_social-icon w-inline-block">
+                      <div class="icon-100 w-embed">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </a>
+															                    <a href="https://www.facebook.com/gdkcanada" target="_blank" class="nav-bar-open_bottom_social-icon w-inline-block">
+                      <div class="icon-100 w-embed">
+                        <svg style="height: 22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                          <path fill="currentcolor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                        </svg>
+                      </div>
+                    </a>
+										                    <a href="https://www.tiktok.com/@gdkcanada" target="_blank" class="nav-bar-open_bottom_social-icon w-inline-block">
+                      <div class="icon-100 w-embed">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                          <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </a>
+					                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-bar-open_bottom_credit-wrapper">
+              <p class="nav-bar-open_bottom_credit-text">&copy; GERMAN DONER KEBAB 2026</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bar-open_bottom-wrapper">
+          <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd71146c-bd7113c0" class="nav-bar-open_container">
+            <div class="nav-bar-open_bottom">
+              <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd71146e-bd7113c0" class="nav-bar-open_bottom_links">
+
+								                  <a href="https://gdk.com/ca/allergen-information"  class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">ALLERGENS INFO</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                  <a href="https://media.gdk.com/images/misc/Canada.pdf" target="_blank" class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">HALAL CERTIFICATE</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				                  <a href="https://gdk.com/ca/privacy-policy"  class="nav-bar-open_bottom_link-wrapper w-inline-block">
+                    <div class="nav-bar-open_bottom_link-text">PRIVACY POLICY</div>
+                    <div class="nav-bar-open_bottom_link-style"></div>
+                  </a>
+				              </div>
+              <div id="w-node-_2c3ccbe5-f08a-4de2-c466-0176bd71147b-bd7113c0" class="nav-bar-open_bottom_credit-social">
+                <div class="nav-bar-open_bottom_credit-wrapper">
+                  <p class="nav-bar-open_bottom_credit-text">&copy; GERMAN DONER KEBAB 2026</p>
+                </div>
+                <div class="nav-bar-open_bottom_social-wrapper">
+                  				  <a href="https://www.instagram.com/gdkcanada" target="_blank" class="nav-bar-open_bottom_social-icon w-inline-block">
+                    <div class="icon-100 w-embed">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </a>
+				  				  				                    <a href="https://www.facebook.com/gdkcanada" target="_blank" class="nav-bar-open_bottom_social-icon w-inline-block">
+                    <div class="icon-100 w-embed">
+                      <svg style="height: 22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentcolor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                      </svg>
+                    </div>
+                  </a>
+				  				                    <a href="https://www.tiktok.com/@gdkcanada" target="_blank" class="nav-bar-open_bottom_social-icon w-inline-block">
+                    <div class="icon-100 w-embed">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </a>
+				                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-bar-open_bottom_translate-wrapper">
+            <div class="monster"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-not-found-content">
+    <h1 class="heading-h1">404</h1>
+    <div class="text-orange text-default custom-margins">Page not found</div>
+    <a href="https://gdk.com" class="button-default-orange">return to homepage</a>
+  </div>
+	<div class="stp-panel">
+		<a href="https://gdk.com" class="stp-item ">
+			<div class="stp-icon-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+				<g clip-path="url(#clip0_1688_6074)">
+				<path d="M5.125 26.9998H27.125V14.9998C27.1251 14.8684 27.0993 14.7384 27.0491 14.617C26.9989 14.4956 26.9253 14.3852 26.8325 14.2923L16.8325 4.29231C16.7396 4.19933 16.6293 4.12557 16.5079 4.07525C16.3865 4.02493 16.2564 3.99902 16.125 3.99902C15.9936 3.99902 15.8635 4.02493 15.7421 4.07525C15.6207 4.12557 15.5104 4.19933 15.4175 4.29231L5.4175 14.2923C5.32467 14.3852 5.25105 14.4956 5.20086 14.617C5.15068 14.7384 5.1249 14.8684 5.125 14.9998V26.9998Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</g>
+				<defs>
+				<clipPath id="clip0_1688_6074">
+					<rect width="32" height="32" fill="white" transform="translate(0.125)"/>
+				</clipPath>
+				</defs>
+			</svg>
+			</div>
+			<span class="stp-label">Home</span>
+		</a>
+				<!--		-->
+		<a id="orderButtonMobile" href="https://order.online/en/business/-565671?hideModal=true&pickup=true" target="_blank"   class="stp-item">
+		
+			<div class="stp-icon-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" width="33" height="25" viewBox="0 0 33 25" fill="none">
+			<g clip-path="url(#clip0_1688_6116)">
+				<path d="M1.26514 16.9254C9.60514 25.2654 23.1351 25.2654 31.4851 16.9254L16.3751 1.81543L1.26514 16.9254Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+				<path d="M1.28516 16.7651C3.48516 15.0951 2.45516 12.8051 2.16516 12.1951C1.93516 11.7151 1.68516 11.1751 1.79516 10.9151C1.91516 10.6451 2.49516 10.4351 3.00516 10.2551C3.64516 10.0251 4.30516 9.79512 4.64516 9.29512C4.98516 8.79512 4.95516 8.10512 4.93516 7.43512C4.91516 6.90512 4.88516 6.30512 5.09516 6.09512C5.30516 5.88512 5.91516 5.91512 6.46516 5.93512C7.14516 5.96512 7.85516 5.99512 8.36516 5.65512C8.87516 5.32512 9.11516 4.67512 9.34516 4.05512C9.53516 3.55512 9.74516 2.98512 10.0252 2.87512C10.2952 2.76512 10.8452 3.01512 11.3352 3.23512C11.9552 3.51512 13.1352 3.80512 13.7552 3.69512C14.3452 3.57512 14.8152 3.07512 15.2752 2.59512C15.6452 2.19512 16.0752 1.74512 16.3852 1.74512" stroke="currentColor" stroke-width="1.78" stroke-linejoin="round"/>
+				<path d="M16.375 1.73535C16.685 1.73535 17.115 2.18535 17.485 2.58535C17.945 3.06535 18.415 3.57535 19.005 3.68535C19.615 3.80535 20.805 3.51535 21.425 3.22535C21.915 3.00535 22.465 2.75535 22.735 2.86535C23.015 2.97535 23.225 3.54535 23.415 4.04535C23.645 4.66535 23.885 5.31535 24.395 5.64535C24.905 5.98535 25.615 5.95535 26.295 5.92535C26.835 5.90535 27.455 5.87535 27.665 6.08535C27.875 6.29535 27.845 6.89535 27.825 7.42535C27.795 8.09535 27.765 8.78535 28.115 9.28535C28.455 9.78535 29.115 10.0154 29.755 10.2454C30.265 10.4254 30.845 10.6354 30.965 10.9054C31.075 11.1654 30.815 11.7054 30.595 12.1854C30.305 12.7954 29.275 15.0854 31.475 16.7554" stroke="currentColor" stroke-width="1.78" stroke-linejoin="round"/>
+			</g>
+			<defs>
+				<clipPath id="clip0_1688_6116">
+				<rect width="32.22" height="23.37" fill="white" transform="translate(0.265137 0.81543)"/>
+				</clipPath>
+			</defs>
+			</svg>
+			</div>
+			<span class="stp-label">ORDER NOW</span>
+		</a>
+		<a href="https://gdk.com/ca/gdk-locations" class="stp-item ">
+			<div class="stp-icon-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" width="21" height="28" viewBox="0 0 21 28" fill="none">
+				<g clip-path="url(#clip0_1602_4649)">
+				<path d="M9.49505 25.6898C7.03505 22.6098 1.42505 15.1498 1.42505 10.9598C1.42505 5.87977 5.54505 1.75977 10.625 1.75977C15.705 1.75977 19.825 5.87977 19.825 10.9598C19.825 15.1498 14.215 22.6098 11.755 25.6798C11.165 26.4098 10.075 26.4098 9.48505 25.6798L9.49505 25.6898ZM7.97505 9.42977C7.42505 10.3798 7.42505 11.5498 7.97505 12.4998C8.52505 13.4498 9.53505 14.0298 10.635 14.0298C11.735 14.0298 12.745 13.4498 13.295 12.4998C13.845 11.5498 13.845 10.3798 13.295 9.42977C12.745 8.47977 11.735 7.89977 10.635 7.89977C9.53505 7.89977 8.52505 8.47977 7.97505 9.42977Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+				</g>
+				<defs>
+				<clipPath id="clip0_1602_4649">
+					<rect width="20.4" height="26.48" fill="white" transform="translate(0.425049 0.759766)"/>
+				</clipPath>
+				</defs>
+			</svg>
+			</div>
+			<span class="stp-label">Locations</span>
+		</a>
+		<a href="https://gdk.com/ca/offers" class="stp-item ">
+			<div class="stp-icon-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+				<path d="M13.5 2L16.2175 10.4084H25L17.8912 15.601L20.6087 24L13.5 18.8074L6.39125 24L9.10875 15.601L2 10.4084H10.7825L13.5 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+			</svg>
+			</div>
+			<span class="stp-label">Offers</span>
+		</a>
+	</div>
+	<style type="text/css">
+		:root {
+			--stp-bg: #181818;
+			--stp-text: #787878;
+			--stp-accent: #FF7900;
+		}
+
+		@media (max-width: 575px) {
+			.stp-panel {
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: calc(90px + env(safe-area-inset-bottom));
+				padding: 12px calc(12px) calc(12px + env(safe-area-inset-bottom));
+				background: var(--stp-bg);
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				gap: 10px;
+				z-index: 1000;
+			}
+
+			.stp-item {
+				text-decoration: none;
+				color: var(--stp-text);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 12px;
+				line-height: 16px;
+				transition: color 300ms ease;
+			}
+
+			.stp-icon-wrapper {
+				margin-bottom: 5px;
+				width: 34px;
+				height: 32px;
+				transition: color 300ms ease;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.stp-item:hover,
+			.stp-item:focus,
+			.stp-item.active {
+				color: var(--stp-accent);
+			}
+
+			.stp-item:hover .stp-icon,
+			.stp-item:focus .stp-icon {
+				color: var(--stp-accent);
+			}
+		}
+
+		@media (min-width: 576px) {
+			.stp-panel {
+				display: none;
+			}
+		}
+
+		.stp-panel {
+			padding-bottom: calc(12px + constant(safe-area-inset-bottom));
+			height: calc(90px + constant(safe-area-inset-bottom));
+		}
+	</style>
+<style type="text/css">
+	.checkbox-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.checkbox-icon::before {
+		content: "";
+		display: block;
+			width: 12px;
+		height: 12px;
+		border-radius: 12px;
+		background-color: currentcolor;
+			opacity: 0;
+		transition: opacity 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+	.checkbox-input-input:checked + .checkbox-icon::before {
+		opacity: 1;
+	}
+</style>
+<div class="footer bg-orange">
+    <div class="footer-pl">
+      <a href="javascript:void(0)" style="cursor: default;" class="footer-logo w-inline-block"><img src="images/gdk-logo.svg" loading="lazy" alt="" class="footer-logo-img"></a>
+      <ul role="list" class="footer-menu-list">
+							<li class="fml-item">
+			  <a href="https://gdk.com/ca/our-food"   class="fml-item-link border-black w-inline-block ">
+				<div class="fml-item-mask">
+				  <div class="fml-text-static inverted">OUR FOOD</div>
+				  <div class="fml-text-active inverted">OUR FOOD</div>
+				</div>
+			  </a>
+			</li>
+					<li class="fml-item">
+			  <a href="https://gdk.com/ca/menu"   class="fml-item-link border-black w-inline-block ">
+				<div class="fml-item-mask">
+				  <div class="fml-text-static inverted">THE MENU</div>
+				  <div class="fml-text-active inverted">THE MENU</div>
+				</div>
+			  </a>
+			</li>
+					<li class="fml-item">
+			  <a href="https://gdk.com/ca/offers"   class="fml-item-link border-black w-inline-block ">
+				<div class="fml-item-mask">
+				  <div class="fml-text-static inverted">OFFERS</div>
+				  <div class="fml-text-active inverted">OFFERS</div>
+				</div>
+			  </a>
+			</li>
+					<li class="fml-item">
+			  <a href="https://gdk.com/ca/gdk-locations"   class="fml-item-link border-black w-inline-block ">
+				<div class="fml-item-mask">
+				  <div class="fml-text-static inverted">RESTAURANT LOCATOR</div>
+				  <div class="fml-text-active inverted">RESTAURANT LOCATOR</div>
+				</div>
+			  </a>
+			</li>
+					<li class="fml-item">
+			  <a href="https://gdk.com/ca/latest-news"   class="fml-item-link border-black w-inline-block ">
+				<div class="fml-item-mask">
+				  <div class="fml-text-static inverted">LATEST NEWS</div>
+				  <div class="fml-text-active inverted">LATEST NEWS</div>
+				</div>
+			  </a>
+			</li>
+					<li class="fml-item">
+			  <a href="https://gdk.com/ca/join-us"   class="fml-item-link border-black w-inline-block ">
+				<div class="fml-item-mask">
+				  <div class="fml-text-static inverted">JOIN US</div>
+				  <div class="fml-text-active inverted">JOIN US</div>
+				</div>
+			  </a>
+			</li>
+		      </ul>
+    </div>
+    <div class="footer-pr">
+      <div class="fpr-top">
+        <div data-hover="false" data-delay="0" class="region-dropdown w-dropdown">
+          <div class="rd-toggle border-black w-dropdown-toggle">
+            <div class="rdt-icon text-black w-icon-dropdown-toggle"></div>
+            <div class="rdt-text text-black">CANADA</div>
+          </div>
+          <nav class="rd-list  w-dropdown-list">		    
+			            									<a href="https://gdk.com/gb?cr=1" class="rd-link w-dropdown-link">UK</a>
+																<a href="https://gdk.com/ie?cr=1" class="rd-link w-dropdown-link">Ireland</a>
+																<a href="https://gdk.com/ae?cr=1" class="rd-link w-dropdown-link">UAE</a>
+																<a href="https://gdk.com/se?cr=1" class="rd-link w-dropdown-link">Sweden</a>
+																<a href="#" class="rd-link w-dropdown-link" onclick="updateCookieCountry('canada---GDK---2eb876d9ce---GDK---Canada---GDK---14---GDK---https://gdk.com/ca?cr=1'); return false;">Canada</a>
+																<a href="#" class="rd-link w-dropdown-link" onclick="updateCookieCountry('usa---GDK---fc1d22fe6d---GDK---USA---GDK---13---GDK---https://gdk.com/us?cr=1'); return false;">USA</a>
+																<a href="https://gdk.com/sa?cr=1" class="rd-link w-dropdown-link">Saudi Arabia</a>
+							          </nav>
+        </div>
+        <a href="javascript:void(0);" style="cursor: default;" class="footer-logo-icon w-inline-block"><img src="images/gdk-icon-black.svg" loading="lazy" alt="" class="footer-logo-icon-img"></a>
+      </div>
+      <div class="fpr-mid">
+        <h5 class="fpr-heading text-black">Sign up to our newsletter</h5>
+        <div class="newsletter-form w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="nf-container" onsubmit="EmailValidationHeader('footer'); return false;">
+	            <input type="text" class="nf-input bg-orange text-black border-black w-input" maxlength="256" name="email_footer" data-name="Email" placeholder="Email Address *" id="email_footer" >
+              <label class="w-checkbox checkbox-input my-20">
+                <input type="checkbox" name="privacy_footer" id="privacy_footer" value="Y" class="w-checkbox-input checkbox-input-input" />
+                <div class="checkbox-icon border-black text-black"></div>
+                <span class="checkbox-label text-black w-form-label" for="checkbox-2">By checking this box you confirm that you have read our <a href="https://gdk.com/ca/privacy-policy" target="_blank" class="checkbox-label-link text-black" style="text-decoration:underline">Privacy Policy.</a> *</span>
+              </label>
+              <input type="button" value="Submit" data-wait="Please wait..." class="button-default bg-black text-orange w-button" onClick="EmailValidationHeader('footer'); return false;"></form>
+          <div class="w-form-done nl-notifications" id="successMSG_footer">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail nl-notifications" id="errorMSG_footer">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+        <ul role="list" class="footer-link-list">
+
+									  <li class="fll-item">
+				<a href="https://media.gdk.com/images/misc/Canada.pdf" target="_blank" class="fll-link text-black">HALAL CERTIFICATE</a>
+			  </li>
+						  <li class="fll-item">
+				<a href="https://gdk.com/ca/privacy-policy"  class="fll-link text-black">PRIVACY POLICY</a>
+			  </li>
+						  <li class="fll-item">
+				<a href="https://gdk.com/ca/cookie-policy"  class="fll-link text-black">COOKIE POLICY</a>
+			  </li>
+						  <li class="fll-item">
+				<a href="https://gdk.com/ca/contact-us"  class="fll-link text-black">CONTACT US</a>
+			  </li>
+						  <li class="fll-item">
+				<a href="https://gdk.com/ca/allergen-information"  class="fll-link text-black">ALLERGENS INFO</a>
+			  </li>
+						  <li class="fll-item">
+				<a href="https://gdk.com/ca/german-doner-kebab-gdk-fast-food-franchise-opportunity"  class="fll-link text-black">FRANCHISE ENQUIRIES</a>
+			  </li>
+						  <li class="fll-item">
+				<a href="mailto:press@gdk.com?subject=Media%20Enquiry%20via%20GDK%20Website"  class="fll-link text-black">MEDIA ENQUIRIES</a>
+			  </li>
+						  <li class="fll-item">
+				<a href="https://gdk.com/ca/gb/modern-slavery-child-labour-and-human-trafficking-statement"  class="fll-link text-black">MODERN SLAVERY STATEMENT</a>
+			  </li>
+			
+        </ul>
+      </div>
+      <div class="fpr-bot">
+        <div class="copyrights text-black">
+          &copy; GERMAN DONER KEBAB 2026<br>
+          SITE CREDIT: <a href="https://thedesignfactory.co.uk/" style="color: inherit;" target="_blank">THE DESIGN FACTORY</a>
+        </div>
+        <ul role="list" class="footer-soc-links">
+		  
+		  			  <li class="fsl-item">
+				<a href="https://www.facebook.com/gdkcanada" target="_blank" class="fsl-link w-inline-block">
+          <img src="images/soc-facebook-black.svg" loading="lazy" width="Auto" height="20" alt="" class="fsl-icon">
+        </a>
+			  </li>
+		  
+		  			  <li class="fsl-item">
+				<a href="https://www.instagram.com/gdkcanada" target="_blank" class="fsl-link w-inline-block"><img src="images/soc-instagram-black.svg" loading="lazy" width="19" alt="" class="fsl-icon"></a>
+			  </li>
+		  
+		  			  <li class="fsl-item">
+				<a href="https://www.tiktok.com/@gdkcanada" target="_blank" class="fsl-link w-inline-block"><img src="images/soc-tiktok-black.svg" loading="lazy" width="19" alt="" class="fsl-icon"></a>
+			  </li>
+		  		  
+		          </ul>
+      </div>
+    </div>
+  </div>
+  <!--
+<a href="#top" class="back-to-top w-inline-block">
+    <div class="back-to-top-icon w-embed"><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512">
+        <path fill="#000000" d="M209.4 39.4C204.8 34.7 198.6 32 192 32s-12.8 2.7-17.4 7.4l-168 176c-9.2 9.6-8.8 24.8 .8 33.9s24.8 8.8 33.9-.8L168 115.9V456c0 13.3 10.7 24 24 24s24-10.7 24-24V115.9L342.6 248.6c9.2 9.6 24.3 9.9 33.9 .8s9.9-24.3 .8-33.9l-168-176z"></path>
+      </svg></div>
+  </a>
+-->
+  <div class="foter_notes footer_notes_orange">GDK (UK) is committed to providing mandatory information relating to the 14 key allergens intentionally used in our menu.  A number of key allergens, including gluten and milk, are present in the food and ingredients we use; and due to handling and preparation methods, there is a risk of unintended cross-contact with other ingredients.  Whilst we have allergen control measures in place, we cannot guarantee that any of our food is allergen-free or suitable for those with allergies.  Therefore, if you have a food allergy, intolerance or coeliac disease, please speak to our team about the ingredients in your food before you order.
+<br><br>
+We only use whole chicken thighs to guarantee the best flavour and texture. With natural products, however, there may be a very slight chance that a small piece of bone can be found. While this reflects our commitment to authentic, high-quality poultry, we do ask you to consume carefully.
+</div>  <div class="global-css w-embed">
+    <style type="text/css">
+a {
+  text-decoration: none;
+}
+.nav-bar-open_transition-wrapper {
+  pointer-events: none;
+}
+/* ==== For Page Tranistion ==== */
+body .page-trisition,
+.w-editor .page-trisition {
+  display: none;
+}
+.page-trisition {
+  z-index: 888 !important;
+}
+/* ==== Navbar responsive ==== */
+@media only screen and (max-width: 1440px) and (min-width: 1360px) {
+  .nav-bar-open_link-text {
+    font-size: 2.25rem;
+  }
+  .nav-bar-open_link-text-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav-bar-open_top-right-details {
+    padding-left: 22%;
+    padding-right: 20%;
+  }
+  .nav-bar-open_bottom_credit-social {
+    padding-left: 22%;
+  }
+  .nav-bar-open_container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .nav-bar-open_nav-close {
+    top: 4rem;
+    right: 4rem;
+  }
+  .nav-bar-open_nav-side-effect {
+    right: 4rem;
+  }
+}
+@media only screen and (max-width: 1361px) and (min-width: 992px) {
+  .nav-bar-open_link-text {
+    font-size: 2rem;
+  }
+  .nav-bar-open_link-text-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav-bar-open_top-right-details {
+    padding-left: 16%;
+    padding-right: 14%;
+  }
+  .nav-bar-open_bottom_credit-social {
+    padding-left: 16%;
+  }
+  .nav-bar-open_container {
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+  }
+  .nav-bar-open_nav-close {
+    top: 3.25rem;
+    right: 3.25rem;
+  }
+  .nav-bar-open_nav-side-effect {
+    right: 3.25rem;
+  }
+}
+</style>
+    <style type="text/css">
+html, body {
+	font-size: clamp(10px,calc(100vw/1920*10),12px);
+}
+</style>
+    <style type="text/css">
+      .stripe-anim {
+        width: calc(((min(100vw, 1920px) - 14rem) / 36 * 2) - 0.9444444444444444rem);
+        min-width: calc(((1920px - 140px) / 36 * 2) - 9.444444444444445px);
+        /*height: 0.8rem;*/
+        height: 8px;
+      }
+      .stripe-anim-stage {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .stripe-anim-el {
+        width: 100%;
+        height: 100%;
+        transform: translate3d(-90%, 0px, 0px);
+        animation: stripe-horizontal-transform 1600ms cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+      }
+      @keyframes stripe-horizontal-transform {
+        0% {
+          transform: translate3d(-90%, 0px, 0px);
+        }
+        2% {
+          transform: translate3d(-90%, 0px, 0px);
+        }
+        48% {
+          transform: translate3d(90%, 0px, 0px);
+        }
+        52% {
+          transform: translate3d(90%, 0px, 0px);
+        }
+        98% {
+          transform: translate3d(-90%, 0px, 0px);
+        }
+        100% {
+          transform: translate3d(-90%, 0px, 0px);
+        }
+      }
+      .msa-item-stripe {
+        animation: stripe-horisontal-translate-small 1600ms infinite;
+      }
+      @keyframes stripe-horisontal-translate-small {
+        50%{
+          transform:translateX(0);
+        }
+        100% {
+          transform:translateX(120%);
+        }
+      }
+      .delay-0 {
+        animation-delay: 0;
+      }
+      .delay-50 {
+        animation-delay: 50ms;
+      }
+      .delay-100 {
+        animation-delay: 100ms;
+      }
+      .delay-150 {
+        animation-delay: 150ms;
+      }
+      .delay-200 {
+        animation-delay: 200ms;
+      }
+      .delay-250 {
+        animation-delay: 250ms;
+      }
+      .delay-300 {
+        animation-delay: 300ms;
+      }
+      .delay-350 {
+        animation-delay: 350ms;
+      }
+      .delay-400 {
+        animation-delay: 400ms;
+      }
+      .delay-450 {
+        animation-delay: 450ms;
+      }
+      .delay-500 {
+        animation-delay: 500ms;
+      }
+      .delay-550 {
+        animation-delay: 550ms;
+      }
+      .delay-600 {
+        animation-delay: 600ms;
+      }
+      .delay-650 {
+        animation-delay: 650ms;
+      }
+      .delay-700 {
+        animation-delay: 700ms;
+      }
+      .delay-750 {
+        animation-delay: 750ms;
+      }
+      .delay-800 {
+        animation-delay: 800ms;
+      }
+      .delay-850 {
+        animation-delay: 850ms;
+      }
+      .delay-900 {
+        animation-delay: 900ms;
+      }
+      .delay-950 {
+        animation-delay: 950ms;
+      }
+    </style>
+    <style type="text/css">
+.fml-item-link.w--current .fml-item-mask {
+transform: translateY(-50%);
+left:0;
+}
+.page-not-found-content {
+height: calc(100vh - 13rem);
+}
+</style>
+  </div>
+<!-- fancybox modal -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<style type="text/css">
+	.custom-modal {
+		background-color: #ff7a00;
+		text-align: center;
+		padding: 40px;
+	}
+	.cstm-separator {
+		height: 30px;
+	}
+	@media (max-width: 578px) {
+		.custom-modal {
+			padding: 50px 20px;
+		}
+		.custom-modal .button-default-black {
+			white-space: unset;
+		}
+	}
+</style>
+<script type="text/javascript">
+	Fancybox.bind("[data-fancybox]", {
+	
+	});
+</script>
+
+
+<div style="display: none;">
+	<div id="modal-order-select" class="custom-modal">
+		<a href="https://order.toasttab.com/online/gdk-columbus-park" target="_blank" class="button-default-black">Ordering from our Brooklyn kiosk location?</a>
+		<div class="cstm-separator"></div>
+		<a href="https://onlineorder.3s-pos.com/gdkusa" target="_blank" class="button-default-black">Ordering from any of our other USA locations?</a>
+	</div>
+	<div id="modal-canada" class="custom-modal">
+		<h4 class="modal-heading">Do you want to visit the <span class="text-black" id="switchCountryCU">GDK Canada</span> site or browse the content on this site?</h4>
+		<div class="cstm-separator"></div>
+		<div class="two-button-grid">
+			<a href="#" target="_blank" class="button-default-black bg-black text-white" id="switchCountryCULink">VISIT GDKCANADA.com</a>
+			<a href="javascript:void(0);" class="button-default-black bg-white text-black" onclick="stayHere(); return false;">STAY HERE</a>
+			<input type="hidden" id="switchCountryNameVal" value="" />
+			<input type="hidden" id="switchCountryURLVal" value="" />
+		</div>
+	</div>
+</div>
+<!-- fancybox modal -->
+
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=646ca38fd7b369eaad5be181" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="js/webflow.js?rand=1" type="text/javascript"></script><!--  #### Additional code to work page tranistion perfectly ####  -->
+<script type="text/javascript">
+
+	const header = document.getElementById("headingPanel");
+	const headerLogo = document.getElementById("headerLogo");
+	const orderButton = document.getElementById("orderButton");
+	const scrollChange = 50;
+
+	const add_class_on_scroll = function(){
+		header.classList.add("sticky");
+	}
+	const remove_class_on_scroll = function(){
+		header.classList.remove("sticky");
+	}
+
+	if(!(header.classList.contains('always-sticky'))) {
+		window.addEventListener('scroll', function() {
+			let scrollpos = window.scrollY;
+
+			if (scrollpos >= scrollChange) { add_class_on_scroll() }
+			else { remove_class_on_scroll() }
+
+		});
+	}
+	
+
+</script>
+<style type="text/css">
+	#headerLogo svg {
+		width: 120px;
+    display: block;
+		transition: all .6s cubic-bezier(.215, .61, .355, 1);
+	}
+	.nav-bar_hamburger-icon_wrapper {
+		margin-left: 7rem;
+		border-radius: 2rem;
+	}
+	.nav-bar_hamburger-icon_wrapper:hover {
+		border-color: #fafaf6 !important;
+	}
+
+	.page-top .container-large {
+		border: none;
+		border-radius: 0;
+		padding-left: 7rem;
+    padding-right: 7rem;
+		transition: all .6s cubic-bezier(.215, .61, .355, 1);
+	}
+	.page-top.sticky .container-large {
+		border-radius: 4rem;
+		padding-left: 3.5rem;
+    padding-right: 3.5rem;
+	}
+
+	.nav-bar_spacing {
+		padding-left: 0;
+		padding-right: 0;
+		transition: all .6s cubic-bezier(.215, .61, .355, 1);
+	}
+	.page-top.sticky .nav-bar_spacing {
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+	@media (max-width: 991px) {
+		.page-top .container-large {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+		.page-top.sticky .container-large {
+	    padding-left: 1.5rem;
+	    padding-right: 1.5rem;
+		}
+		.nav-bar_spacing {
+			padding-top: 1.5rem;
+		}
+		.page-top.sticky .nav-bar_spacing {
+
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+		.nav-bar_wrapper {
+			height: 6rem;
+		}
+		#headerLogo svg {
+			width: 100px;
+		}
+		.nav-bar-open_nav-close {
+			width: 4rem;
+			height: 4rem;
+			padding: 0;
+			top: 1.5rem;
+			right: 1.5rem;
+		}
+	}
+
+	.page-top.header-orange .container-large {
+		background: transparent;
+	}
+	.page-top.header-black .container-large {
+		background: transparent;
+	}
+	.page-top.header-orange.sticky .container-large {
+		background: #000;
+	}
+	.page-top.header-black.sticky .container-large {
+		background: #ff7a00;
+	}
+
+
+	.page-top.header-orange .nav-bar_hamburger-icon_wrapper {
+		color: #000;
+		border-color: #000;
+	}
+	.page-top.header-black .nav-bar_hamburger-icon_wrapper {
+		color: #ff7a00;
+		border-color: #ff7a00;
+	}
+	.page-top.header-orange.sticky .nav-bar_hamburger-icon_wrapper {
+		color: #ff7a00;
+		border-color: #ff7a00;
+	}
+	.page-top.header-black.sticky .nav-bar_hamburger-icon_wrapper {
+		color: #000;
+		border-color: #000;
+	}
+
+
+	.page-top.header-black #headerLogo {
+		color: #ff7a00;
+	}
+	.page-top.header-orange #headerLogo {
+		color: #000;
+	}
+	.page-top.header-black.sticky #headerLogo {
+		color: #000;
+	}
+	.page-top.header-orange.sticky #headerLogo {
+		color: #ff7a00;
+	}
+
+	.page-top.header-black #orderButton {
+		color: #000 !important;
+		background: #ff7a00 !important;
+	}
+	.page-top.header-black #orderButton:hover {
+		color: #ff7a00 !important;
+		background: #000 !important;
+	}
+	.page-top.header-orange #orderButton {
+		color: #ff7a00 !important;
+		background: #000 !important;
+	}
+	.page-top.header-orange #orderButton:hover {
+		color: #000 !important;
+		background: #fff !important;
+	}
+	.page-top.header-black.sticky #orderButton {
+		color: #ff7a00 !important;
+		background: #000 !important;
+	}
+	.page-top.header-black.sticky #orderButton:hover {
+		color: #000 !important;
+		background: #fff !important;
+	}
+	.page-top.header-orange.sticky #orderButton {
+		color: #000 !important;
+		background: #ff7a00 !important;
+	}
+	.page-top.header-orange.sticky #orderButton:hover {
+		color: #000 !important;
+		background: #fff !important;
+	}
+</style>
+<!--  18 Oct 23 JM START-->
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11355667820"></script>
+<script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'AW-11355667820'); </script>
+<!-- 18 Oct 23 JM END -->
+<script src="js/jquery.cookie.js"></script>
+<script language="javascript" type="text/javascript">
+//$.cookie('GDKCountry',tmpAry,{expires: 365,path:'/'});
+
+	function AcceptCookie() {
+	  let cookieContainer = document.querySelector('.cookie-panel');
+	  cookieContainer.classList.remove("active");
+
+		$.ajax({
+			type: 'POST',
+			url: 'https://gdk.com/acceptCookie',
+			data: {				
+				acceptCookie: 'Y'
+			},
+			success: function(res){
+				location.reload();				
+			}
+		});
+	  
+	}
+
+	function stayHere() {
+		
+		Fancybox.close();
+
+		let val = $('#switchCountryNameVal').val();
+		if(val == '') {
+			return;
+		}
+
+		var listID = val.split('---GDK---');
+		var GDKCountry = listID[0];
+		var GDKCountryListID = listID[1];
+		var GDKCountryName = listID[2];
+		var GDKCountryID = listID[3];
+
+		$.ajax({
+			type: 'POST',
+			url: 'https://gdk.com/cookie',
+			data: {
+				GDKCountryID: GDKCountryID,
+				setCookie: 'Y'
+			},
+			success: function(res){
+				//location.reload();				
+				if($('#switchCountryURLVal').val() == '') {
+					document.location.href = res.regionURL+'/ca/food/menu';
+				}else{
+					document.location.href = $('#switchCountryURLVal').val();
+				}
+			}
+		});
+
+	}
+
+	function updateCookieCountry(val) {
+
+
+		var listID = val.split('---GDK---');
+		var GDKCountry = listID[0];
+		var GDKCountryListID = listID[1];
+		var GDKCountryName = listID[2];
+		var GDKCountryID = listID[3];
+		var pageURL = listID[4];
+		
+		$('#switchCountryNameVal').val(val);
+		$('#switchCountryURLVal').val(pageURL);
+		
+		
+		if(GDKCountry == 'usa') {
+			$('#switchCountryCU').text('GDK USA');
+			$('#switchCountryCULink').attr('href','https://gdkusa.com/');
+			$('#switchCountryCULink').text('VISIT GDKUSA.com');
+				
+			Fancybox.show([{src: "#modal-canada"}]);
+			return;
+		}
+
+		if(GDKCountry == 'canada') {
+			$('#switchCountryCU').text('GDK Canada');
+			$('#switchCountryCULink').attr('href','https://gdkcanada.com/');
+			$('#switchCountryCULink').text('VISIT GDKCANADA.com');
+			Fancybox.show([{src: "#modal-canada"}]);
+			return;
+		}		
+
+		$.ajax({
+			type: 'POST',
+			url: 'https://gdk.com/cookie',
+			data: {
+				GDKCountryID: GDKCountryID,
+				setCookie: 'Y'
+			},
+			success: function(msg){
+				//location.reload();
+			}
+		});
+		
+		//$.cookie('GDKCountry',GDKCountry,{expires: 365,path:'/',secure: true});
+		//$.cookie('GDKCountryName',GDKCountryName,{expires: 365,path:'/',secure: true});
+		//$.cookie('GDKCountryID',GDKCountryID,{expires: 365,path:'/',secure: true});
+		//$.cookie('GDKCountryListID',GDKCountryListID,{expires: 365,path:'/',secure: true});		
+	}
+
+
+function EmailValidationHeader(location) {
+
+	$('.nl-notifications').css('display','none')
+
+	var error = '';
+	//document.getElementById("errorMSG_"+location).style.display = 'none';
+	//document.getElementById("successMSG_"+location).style.display = 'none';
+
+   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   var address = document.getElementById("email_"+location).value;
+
+	if(document.getElementById("email_"+location).value=='') {
+		document.getElementById("email_"+location).focus();
+		error= '<div>Please enter your email address.</div>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+	}else if(reg.test(address) == false) {
+		document.getElementById("email_"+location).focus();
+		error= '<div>Please enter your valid email address.</div>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+   }
+
+	if($('input[name=privacy_'+location+']:checked').length == 0) {
+		error= '<div>Please accept privacy policy.</div>'
+		document.getElementById("errorMSG_"+location).innerHTML = error;
+		document.getElementById("errorMSG_"+location).style.display = 'block';
+		return false;
+	}
+
+		document.getElementById("successMSG_"+location).innerHTML = "<div>Please wait...</div>";
+		document.getElementById("successMSG_"+location).style.display = 'block';
+
+		var listID = '2eb876d9ce';
+		
+		var url = "AJAX_NewsLetter.php?email="+address+"&listID="+listID[1]+"&location_id=14";
+		LoadSimpleContents(url,document.getElementById("successMSG_"+location),location);
+		return false;
+
+	return false;
+}
+
+function LoadSimpleContents(url,layer,location) {
+						/*************************************************************************/
+							var xmlhttp=false;
+							try {
+								xmlhttp = new ActiveXObject("Msxml2.XMLHTTP"); //here simply we are creating object
+							} catch (e) {
+										try {
+											xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); //here simply we are creating object
+										} catch (E) {
+											xmlhttp = false;
+										}//try {
+							}//	try {
+
+							if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+								xmlhttp = new XMLHttpRequest();//here simply we are creating object
+							}
+						/*************************************************************************/
+
+
+		xmlhttp.open("POST", url,true);
+
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var finalprice = trimmer(xmlhttp.responseText);
+//				alert(finalprice);
+				layer.innerHTML = finalprice;
+				document.getElementById("email_"+location).value = '';
+//				alert(layer.innerHTML);
+				//layer.innerHTML = xmlhttp.responseText;
+			}
+		}//xmlhttp.onreadystatechange = function() {
+		xmlhttp.send(null);
+	}
+
+
+</script>
+  <!--  #### GSAP And full navbar animation ####  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script>
+$(document).ready(function () {
+  function nacbarActions() {
+    // On page load link active
+    let navBarLinkWraper1st = $(
+      ".nav-bar-open_link-wrapper.w--current .nav-bar-open_link-text-wrapper.is-1st"
+    );
+    let navBarLinkWraper2nd = $(
+      ".nav-bar-open_link-wrapper.w--current .nav-bar-open_link-text-wrapper.is-2nd"
+    );
+    $(navBarLinkWraper1st).addClass("is-active");
+    $(navBarLinkWraper2nd).addClass("is-active");
+    // On hover add/remove class
+    let navBarLink = $(".nav-bar-open_link-wrapper");
+    $(navBarLink).on("mouseenter", function () {
+      $(this).find(".nav-bar-open_link-text-wrapper").addClass("is-active");
+    });
+    $(navBarLink).on("mouseleave", function () {
+      $(this).find(".nav-bar-open_link-text-wrapper").removeClass("is-active");
+      // Fix current menu alwys active
+      if ($(this).hasClass("w--current")) {
+        $(this).find(".nav-bar-open_link-text-wrapper").addClass("is-active");
+      }
+    });
+  }
+  nacbarActions();
+  // Is 2nd menu
+  function nacbarLeftBottomActions() {
+    // On page load link active
+    let navBarBottomLinkWraper1st = $(
+      ".nav-bar-open_top-right-details_link-wrapper.w--current .nav-bar-open_top-right-details_link-text-wrapper.is-1st"
+    );
+    let navBarBottomLinkWraper2nd = $(
+      ".nav-bar-open_top-right-details_link-wrapper.w--current .nav-bar-open_top-right-details_link-text-wrapper.is-2nd"
+    );
+    $(navBarBottomLinkWraper1st).addClass("is-active");
+    $(navBarBottomLinkWraper2nd).addClass("is-active");
+    // On hover add/remove class
+    let navBarLink = $(".nav-bar-open_top-right-details_link-wrapper");
+    $(navBarLink).on("mouseenter", function () {
+      $(this)
+        .find(".nav-bar-open_top-right-details_link-text-wrapper")
+        .addClass("is-active");
+    });
+    $(navBarLink).on("mouseleave", function () {
+      $(this)
+        .find(".nav-bar-open_top-right-details_link-text-wrapper")
+        .removeClass("is-active");
+      // Fix current menu alwys active
+      if ($(this).hasClass("w--current")) {
+        $(this)
+          .find(".nav-bar-open_top-right-details_link-text-wrapper")
+          .addClass("is-active");
+      }
+    });
+  }
+  nacbarLeftBottomActions();
+});
+// ==== GSAP starts ================
+// Nav-bar open animation
+function nabBarOpen() {
+  // All variables
+  // Nababr open timeline
+  let nabBarOpenTL = gsap.timeline({ paused: true });
+  nabBarOpenTL
+    .fromTo(
+      ".nav-bar-open_component",
+      {
+        display: "none",
+        opacity: 0
+      },
+      {
+        display: "flex",
+        opacity: 1,
+        duration: 0.3,
+        ease: "power1.in"
+      }
+    )
+    .fromTo(
+      ".nav-bar-open_transition-bg",
+      {
+        width: "0%"
+      },
+      {
+        width: "100%",
+        stagger: { each: 0.05, from: "start" },
+        duration: 0.3,
+        ease: "power1.in"
+      },
+      ">-.1"
+    )
+    .from(
+      ".nav-bar-open_nav-side-effect, .nav-bar-open_top-right-details_top-animation",
+      {
+        opacity: 0,
+        duration: 0.3,
+        ease: "power1.in"
+      },
+      ">-0.2"
+    )
+    .fromTo(
+      ".nav-bar-open_link-wrapper-divider",
+      {
+        width: "0%"
+      },
+      {
+        width: "100%",
+        duration: 0.3,
+        ease: "power1.in",
+        stagger: { each: 0.07, from: "start" }
+      },
+      ">-0.3"
+    )
+    .fromTo(
+      ".nav-bar-open_link-wrapper .nav-bar-open_link-text-wrapper.is-1st .nav-bar-open_link-text",
+      {
+        y: "6rem"
+      },
+      {
+        y: "0rem",
+        duration: 0.3,
+        ease: "power1.in",
+        stagger: { each: 0.07, from: "start" }
+      },
+      "<0.2"
+    )
+    .fromTo(
+      ".nav-bar-open_link-wrapper.w--current .nav-bar-open_link-text-wrapper.is-2nd",
+      {
+        y: "-7rem"
+      },
+      {
+        y: "0rem",
+        duration: 0.3,
+        ease: "power1.in"
+      },
+      ">-0.4"
+    )
+    .fromTo(
+      ".nav-bar-open_bottom_link-text",
+      {
+        yPercent: 100
+      },
+      {
+        yPercent: 0,
+        duration: 0.3,
+        ease: "power1.in"
+      },
+      ">-0.2"
+    )
+    .fromTo(
+      ".nav-bar-open_bottom_translate-wrapper, .nav-bar-open_top-right-details_logo-wrapper",
+      {
+        opacity: 0
+      },
+      {
+        opacity: 1,
+        duration: 0.3,
+        ease: "power1.in"
+      },
+      ">0.1"
+    )
+    .fromTo(
+      ".nav-bar-open_top-right-details_link-wrapper-divider",
+      {
+        width: "0%"
+      },
+      {
+        width: "100%",
+        duration: 0.3,
+        ease: "power1.in",
+        stagger: { each: 0.07, from: "end" }
+      },
+      "<"
+    )
+    .fromTo(
+      ".nav-bar-open_top-right-details_link-text-wrapper.is-1st",
+      {
+        yPercent: 100
+      },
+      {
+        yPercent: 0,
+        duration: 0.3,
+        ease: "power1.in",
+        stagger: { each: 0.07, from: "end" }
+      },
+      "<-0.2"
+    )
+    .fromTo(
+      ".nav-bar-open_top-right-details_link-wrapper.w--current .nav-bar-open_top-right-details_link-text-wrapper.is-1st",
+      {
+        opacity: 0
+      },
+      {
+        opacity: 0
+      },
+      "<-0.1"
+    )
+    .fromTo(
+      ".nav-bar-open_top-right-details_link-wrapper.w--current .nav-bar-open_top-right-details_link-text-wrapper.is-2nd",
+      {
+        y: "3.5rem"
+      },
+      {
+        y: "0rem",
+        duration: 0.3,
+        ease: "power1.in"
+      },
+      ">-0.1"
+    )
+    .fromTo(
+      ".nav-bar-open_bottom_credit-text",
+      {
+        yPercent: 100
+      },
+      {
+        yPercent: 0,
+        duration: 0.3,
+        ease: "power1.in"
+      },
+      "<0"
+    )
+    .fromTo(
+      ".nav-bar-open_bottom_social-icon, .button_wrapper.is-secondary.is-nav",
+      {
+        scale: 0.01
+      },
+      {
+        scale: 1,
+        duration: 0.3,
+        ease: "power2.in"
+      },
+      "<0"
+    )
+    .fromTo(
+      ".nav-bar-open_nav-close",
+      {
+        scale: 0.01
+      },
+      {
+        scale: 1,
+        duration: 0.3,
+        ease: "power2.in"
+      },
+      "<0.1"
+    );
+  // Navbar open on click
+  $(".nav-trigger").on("click", function () {
+    nabBarOpenTL.restart();
+  });
+  // Navbar close on click
+  $(
+    ".nav-bar-open_nav-close"
+  ).on("click", function () {
+    nabBarOpenTL.reverse();
+  });
+}
+nabBarOpen();
+</script>
+</body>
+</html>

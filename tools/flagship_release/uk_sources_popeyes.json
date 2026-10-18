@@ -1,0 +1,1 @@
+{"popeyes-data.json": "https://app-allergenplatform-prod-westeurope-001.azurewebsites.net/api/recipes/get-information?pagination[page]=1&pagination[pageSize]=500&allergens=false&nutrition=true"}

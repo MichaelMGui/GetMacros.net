@@ -1,0 +1,8 @@
+feature,primary_entry,contextual_entry,destination,verification
+Meal quiz,Homepage primary action;main navigation,Country homepages;finder,/restaurant-meal-finder.html?quiz=1,Actual journey passed
+Macro calculator,Homepage hero/module;main navigation,Tools and articles,/calculators.html,Inputs/result/per-meal journey passed
+Food log,Main and mobile navigation,Meal detail and menu table,/food-diary.html,"Portion,save,recent,reload journey passed"
+Comparison,Menu panel,"Meals,order tray,menu tables,food review",/compare-foods.html,Two-meal comparison passed
+Complete order,Menu panel,Comparison actions and guides,/compare-complete-restaurant-orders.html,Searchable main/side workflow tested
+Play,Main navigation;homepage module,Menu panel and Learn,/play.html,Directory and all56game routes rendered
+Saved orders,Mobile tasks;menu panel,Save actions;diary Saved tab,/food-shelf.html,Snapshot and repeat workflow tested

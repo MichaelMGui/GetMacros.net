@@ -1,7 +1,34 @@
 {
-  "revision": "8e5a7d70b428fbaa7eae2eac04a1a97e27783874",
-  "previousRevision": "8b35778b390192859e48c12ac265d1a80ce75862",
-  "status": "push-in-progress",
-  "liveVerification": "pending",
-  "workflow": "Existing atomic main and publishing-branch update; GitHub Pages"
+  "revision": "059dc787961348c9d1d93c09446ee5f7eb5fa732",
+  "catalogueRevision": "8e5a7d70b428fbaa7eae2eac04a1a97e27783874",
+  "productRevision": "9408224ff8dd8f55dd781ae5013b1d35787e86d1",
+  "status": "live-verified",
+  "checkedAt": "2026-10-17T22:51:40.730Z",
+  "liveSourceMatches": 97,
+  "allLiveHtmlRoutesChecked": 405,
+  "actions": [
+    {
+      "name": "Site quality",
+      "branch": "claude/getmacros-nutrition-site-1gfhsm",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/39076206675"
+    },
+    {
+      "name": "Site quality",
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/39076206759"
+    },
+    {
+      "name": "pages build and deployment",
+      "branch": "claude/getmacros-nutrition-site-1gfhsm",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelMGui/GetMacros.net/actions/runs/39076206575"
+    }
+  ],
+  "workflow": "Existing approved atomic main and publishing-branch push; GitHub Pages",
+  "indexing": "Not measured; sitemap publication does not prove Google indexing"
 }

@@ -1,0 +1,22 @@
+{
+  "invalidFixture": "rejected",
+  "nonfinite": "rejected",
+  "booleanNutrients": "rejected",
+  "explicitZero": "retained",
+  "cleanFixture": "accepted",
+  "conversionAndProvenanceRegressions": [
+    "wrong salt conversion",
+    "wrong sodium grams",
+    "wrong kJ conversion",
+    "per100g needs mass",
+    "per100g scale error",
+    "zero mass rejected",
+    "source hash mismatch",
+    "future source date",
+    "incorrect normalized unit",
+    "untraceable known nutrient"
+  ],
+  "wrongComponentSum": "rejected",
+  "crossMarketComponent": "rejected",
+  "unknownComponentTotal": "rejected"
+}

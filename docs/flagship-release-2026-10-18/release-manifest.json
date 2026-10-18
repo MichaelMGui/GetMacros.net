@@ -1,0 +1,207 @@
+{
+  "base": "7f33f665c04b8203fc5eba6645b8669fc343a65b",
+  "rootBranch": "codex/live",
+  "inheritedDirtyTree": "Preserved; root Git is read-only. Publication uses established guarded publisher checkout.",
+  "requirements": [
+    {
+      "part": 1,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 2,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 3,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 4,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 5,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 6,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 7,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 8,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 9,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 10,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 11,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 12,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 13,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 14,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 15,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 16,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 17,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 18,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 19,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 20,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 21,
+      "status": "In progress",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 22,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 23,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 24,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "part": 25,
+      "status": "Pending",
+      "files": [],
+      "routes": [],
+      "evidence": [],
+      "blockers": []
+    }
+  ]
+}

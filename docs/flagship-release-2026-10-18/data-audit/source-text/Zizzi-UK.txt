@@ -1,0 +1,41 @@
+APERITIVO                             Per 100g Nutrition                            Per Portion Nutrition
+
+Menu Item Name                        Energy Energy Fa t           Saturates    Carbohydrate    Sugar      Protein    Salt     Energy     Energy     Fa t     Saturates    Carbohydrate     Sugar     Protein      Salt
+                                        kJ       kcal                                                                            kJ        kcal
+
+
+Complimentary Pasta Crisps            1467     346       1        0.2           79             3.9        3.7        3.3     161         38        0        0              8.7            0          0          0.36
+Complimentary Hot Chocolate           469      112       3.9      2.4           14             14         4          0.11    117         28        1        0.6            3.6            3.5        1          0.03
+Pasta Crisps                          938      222       2.1      0.2           47             4.9        2.8        2.1     704         166       1.5      0.2            35             3.7        2.1        1.5
+Olive Bowl                            625      152       15       2.1           0.7            0          1          3.5     617         150       15       2.1            0.7            0          1          3.5
+Dough Crusts                          1118     265       9.1      1.1           39             1.8        6.5        1.6     2705        642       22       2.8            94             4.4        16         3.9
+
+
+
+STARTERSAPERITIVO                     Per 100g Nutrition                            Per Portion Nutrition
+
+Menu Item Name                         Energy Energy Fa t          Saturates    Carbohydrate    Sugar      Protein    Salt     Energy     Energy     Fa t     Saturates    Carbohydrate     Sugar     Protein      Salt
+                                         kJ      kcal                                                                            kJ        kcal
+
+
+Garlic Bread                          1076     255       6.6      1.4           41             1.4        7.    1    1.3     2561        607       16       3.4            98              3.3       17         3
+Garlic Bread with Mozzarella          1057     250       6.5      2.8           38             1.4        9.6        1.2     2906        688       18       7.    8        104             3.7       26         3.4
+Garlic Bread with Mozzarella &        1037     246       6.2      2.6           38             4.9        8.8        1.2     3164        750       19       7.    8        116             15        27         3.7
+Caramelised Onions
+Cheesy Chilli Garlic Bread            1092     259       8.7      3.2           35             1.4        9          1.2     3226        766       26       9.5            105             4.2       27         3.5
+Garlic & Mozzarella Bombe             1108     263       8.6      3.2           37             3.5        9.1        1.3     3139        74 5      24       9.1            104             9.8       26         3.6
+Chorizo & Mozzarella Bombe            1151     2 74      11       4             33             3.2        11         1.5     3779        899       35       13             109             11        36         4.9
+Pollo Fritti                          886      212       12       1.4           16             1.7        10         0.57    2532        606       34       4              45              4.9       29         1.6
+Pollo Fritti x 8                      949      227       13       1.3           17             1.6        11         0.59    4925        1179      67       6.9            89              8.3       56         3.1
+Bruschetta Classica                   667      159       5.9      1             22             3.8        3.7        0.57    1893        450       17       2.8            62              11        10         1.6
+Calamari Small                        1129     269       13       1             35             1.2        3.7        1       2093        499       25       1.9            65              2.2       6.9        1.9
+Calamari Large                        1071     255       10       0.8           38             0.9        3.9        0.97    3593        854       35       2.6            126             3         13         3.3
+Chilli Calamari - Small               1249     298       16       1.3           35             4.7        3.4        1       2663        636       35       2.7            75              9.9       7.    2    2.2
+Chilli Calamari - Large               1194     285       15       1.1           35             5.1        3.2        0.72    4316        1031      55       4.1            125             18        12         2.6
+
+
+
+
+
+
+                                                                                                                                                                                                                              3

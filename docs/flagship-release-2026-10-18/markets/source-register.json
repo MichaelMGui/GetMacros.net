@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cfa-ca-nutrition",
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-ca-nutrition.html",
+    "url": "https://www.chick-fil-a.ca/nutrition-allergens",
+    "marketScope": "CA",
+    "chain": "Chick-fil-A",
+    "sha256": "6b846a27b489f38402c0d6eb50430acab0fdc82c642364d6e2e57279a1d74b9b",
+    "retrievedAt": "2026-10-18",
+    "verifiedAt": "2026-10-18",
+    "sourceEdition": null,
+    "captureMethod": "official public rendered table and embedded nutrition store",
+    "retrievalIsVerification": false,
+    "coverage": "all numeric named leaf portions in this identified nutrition snapshot; not every branch or real-time stock",
+    "limitations": "No source publication date. Source portions, not inferred combo totals. Shared preparation is not an allergy guarantee. Canada does not serve breakfast; official FAQ reviewed separately."
+  },
+  {
+    "id": "cfa-us-nutrition",
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-us-nutrition.html",
+    "url": "https://www.chick-fil-a.com/nutrition-allergens",
+    "marketScope": "US",
+    "chain": "Chick-fil-A",
+    "sha256": "989febcd2a69f01834baa521a8d526a7ccfad71d2544438e8460c297e2ee7710",
+    "retrievedAt": "2026-10-18",
+    "verifiedAt": "2026-10-18",
+    "sourceEdition": null,
+    "captureMethod": "official public rendered table and embedded nutrition store",
+    "retrievalIsVerification": false,
+    "coverage": "all numeric named leaf portions in this identified nutrition snapshot; not every branch or real-time stock",
+    "limitations": "No source publication date. Source portions, not inferred combo totals. Shared preparation is not an allergy guarantee. Breakfast is time/location dependent. Limited-time sandwiches remain identified; no all-branch availability claim."
+  },
+  {
+    "id": "chipotle-ca-components",
+    "file": "docs/flagship-release-2026-10-18/markets/sources/chipotle-ca-2025.pdf",
+    "url": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "marketScope": "CA",
+    "chain": "Chipotle",
+    "sha256": "3bfd2ff13030862df6ef4d1abbde75e11e25798d69d7977318ec7c8761026250",
+    "retrievedAt": "2026-10-18",
+    "verifiedAt": "2026-10-18",
+    "sourceEdition": "2024-10",
+    "captureMethod": "official PDF p2 table extraction and rendered page inspection",
+    "retrievalIsVerification": false,
+    "coverage": "all named nutrient rows on page 2, with identical kids/adult portions deduplicated",
+    "limitations": "Printed edition CAN OCT 24, despite 3-2025 filename. Historical official snapshot, not current live availability. Beverage ml is not converted to grams. <1 values remain bounds. No added price or availability claims."
+  }
+]

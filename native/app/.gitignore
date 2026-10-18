@@ -1,0 +1,13 @@
+node_modules/
+www/
+ios/App/App/public/
+ios/App/App/capacitor.config.json
+ios/App/App.xcworkspace/xcuserdata/
+ios/App/App.xcodeproj/xcuserdata/
+ios/App/Pods/
+ios/DerivedData/
+*.xcuserstate
+*.mobileprovision
+*.p12
+*.cer
+build-report.json

@@ -121,7 +121,8 @@ def run():
  # Guide forms navigate directly; their nutrition and portions are static,
  # source-checked HTML. Do not download the full interactive dataset there.
  for entries in chains.values():
-  p=ROOT/entries[0]['url'];text=p.read_text(encoding='utf-8');text=re.sub(r'<script[^>]+src="js/meal-(?:data|provenance)\.js[^>]*>.*?</script>','',text,flags=re.S);p.write_text(text,encoding='utf-8')
+  p=ROOT/entries[0]['url'];before=p.read_text(encoding='utf-8');text=re.sub(r'<script[^>]+src="js/meal-(?:data|provenance)\.js[^>]*>.*?</script>','',before,flags=re.S)
+  if text!=before:p.write_text(text,encoding='utf-8')
  # Discovery keeps one global search field; indexed links stay crawlable.
  pages=[metadata(p) for p in sorted(ROOT.glob('*.html'))]
  grouped=defaultdict(list)

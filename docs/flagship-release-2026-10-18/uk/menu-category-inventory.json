@@ -1,0 +1,2446 @@
+{
+  "reviewedAt": "2026-10-18",
+  "scope": "Final reviewed source-category selections after audit; not a whole-live-menu completeness claim.",
+  "groups": [
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Breakfast Rolls",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Burgers, Pittas, Wraps",
+      "stagedNamedPortions": 24,
+      "macroComplete": 24,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Desserts",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Dips & Extras",
+      "stagedNamedPortions": 36,
+      "macroComplete": 36,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Drinks",
+      "stagedNamedPortions": 52,
+      "macroComplete": 52,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Eggs",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Extras",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Nandinos (Kids)",
+      "stagedNamedPortions": 15,
+      "macroComplete": 15,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "PERi-PERi Chicken",
+      "stagedNamedPortions": 30,
+      "macroComplete": 30,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Salads & Bowls",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Sides",
+      "stagedNamedPortions": 60,
+      "macroComplete": 60,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Starters",
+      "stagedNamedPortions": 18,
+      "macroComplete": 18,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Sweet Treats",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "The Classics",
+      "stagedNamedPortions": 1,
+      "macroComplete": 1,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "The Lunch Fix",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "The Works",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Nando’s",
+      "sourceCategory": "Veggie",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Bigger Breakfasts ",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Breakfast Boxes",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Breakfast Sides",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Burgers",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Cakes",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Coffee",
+      "stagedNamedPortions": 16,
+      "macroComplete": 16,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Egg Pots",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Fries",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Functional Drinks",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Juices & Cans",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Kids' All Day",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Kids' Breakfast",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "LEON Boxes",
+      "stagedNamedPortions": 17,
+      "macroComplete": 17,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Muffins",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Oat Milk Coffee",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Pastries",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Porridge",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Sauces",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Sides",
+      "stagedNamedPortions": 13,
+      "macroComplete": 13,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Smoothies",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Superfood Salads",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Uncategorized",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Warm Salads ",
+      "stagedNamedPortions": 1,
+      "macroComplete": 1,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Wraps",
+      "stagedNamedPortions": 7,
+      "macroComplete": 7,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "LEON",
+      "sourceCategory": "Yoghurts",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "desserts + sweet treats",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "drinks / beers + cider",
+      "stagedNamedPortions": 1,
+      "macroComplete": 1,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "drinks / coffee by UESHIMA",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "drinks / freshly made juices",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "drinks / soft drinks",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "extras",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "gluten free / desserts + sweet treats",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "gluten free / drinks / coffee by UESHIMA",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "gluten free / drinks / freshly made juices",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "gluten free / drinks / soft drinks",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "gluten free / extras",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "gluten free / sides",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "gluten free / the main event",
+      "stagedNamedPortions": 15,
+      "macroComplete": 15,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "kids / desserts",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "kids / drinks",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "kids / katsu",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "kids / noodles",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "kids / ramen",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "kids / rice",
+      "stagedNamedPortions": 1,
+      "macroComplete": 1,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "lunch time",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "sides / bao buns",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "sides / big flavour bites",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "sides / gyoza",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "sides / lighter bites",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "the main event / chef's picks",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "the main event / curries",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "the main event / donburi",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "the main event / ramen",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wagamama",
+      "sourceCategory": "the main event / teppanyaki",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-10-07",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "BEVERAGES",
+      "stagedNamedPortions": 27,
+      "macroComplete": 27,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "BREAKFAST",
+      "stagedNamedPortions": 21,
+      "macroComplete": 21,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "CHICKEN",
+      "stagedNamedPortions": 26,
+      "macroComplete": 26,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "FROSTY®",
+      "stagedNamedPortions": 16,
+      "macroComplete": 16,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "HAMBURGERS",
+      "stagedNamedPortions": 9,
+      "macroComplete": 9,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "INGREDIENTS/CONDIMENTS",
+      "stagedNamedPortions": 47,
+      "macroComplete": 47,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "KID'S MEAL",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "SALADS INCLUDES TOPPINGS & DRESSINGS",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "SIDES",
+      "stagedNamedPortions": 13,
+      "macroComplete": 13,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wendy’s",
+      "sourceCategory": "WRAPS",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "2026-03-25",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "BREAKFAST (SANDWICHES AVAILABLE AT HEATHROW ONLY)",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "BUILD YOUR OWN (AVAILABLE AT HEATHROW ONLY)",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "BUN",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "BURGERS",
+      "stagedNamedPortions": 7,
+      "macroComplete": 7,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "FRIES COOKED IN PEANUT OIL",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "HOT DOGS",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "LITTLE MILKSHAKES + (MIX-INS) - amount of individual mix-ins may vary depending upon number of mix-ins included in shake",
+      "stagedNamedPortions": 14,
+      "macroComplete": 14,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "LOADED FRIES COOKED IN PEANUT OIL",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "MEAT",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "MILKSHAKES (INCLUDING BIG KIDS SHAKE) + MIX-INS - amount of individual mix-ins may vary depending upon number of mix-ins included in shake",
+      "stagedNamedPortions": 14,
+      "macroComplete": 14,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "OTHER ITEMS",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "SANDWICHES",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "SIDES COOKED IN PEANUT OIL (AVAILABLE AT HEATHROW ONLY)",
+      "stagedNamedPortions": 1,
+      "macroComplete": 1,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Five Guys",
+      "sourceCategory": "TOPPINGS",
+      "stagedNamedPortions": 16,
+      "macroComplete": 16,
+      "sourceScope": "2026-10-13",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "ben-jerrys-ice-cream",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "current-promotion",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "drinks",
+      "stagedNamedPortions": 22,
+      "macroComplete": 22,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "extras-sides",
+      "stagedNamedPortions": 30,
+      "macroComplete": 30,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "grilled-platters",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "pepes-desserts",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "pepes-dips",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "pepes-fried-collection",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "pepes-grilled-collection",
+      "stagedNamedPortions": 33,
+      "macroComplete": 33,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "pepes-kids-meals",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "pepes-sauce-flavours",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Pepe’s",
+      "sourceCategory": "pepes-veggie-table",
+      "stagedNamedPortions": 9,
+      "macroComplete": 9,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Bakery Menu",
+      "stagedNamedPortions": 30,
+      "macroComplete": 30,
+      "sourceScope": "2026-10-05",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Breakfast Menu",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "2026-10-05",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Chocolate, Snacks & Bottled Drinks",
+      "stagedNamedPortions": 25,
+      "macroComplete": 25,
+      "sourceScope": "2026-10-05",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Cold Brew",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Espresso",
+      "stagedNamedPortions": 90,
+      "macroComplete": 90,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Frappuccino® Blended Beverage",
+      "stagedNamedPortions": 357,
+      "macroComplete": 357,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Hot Teas",
+      "stagedNamedPortions": 96,
+      "macroComplete": 96,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Iced Coffee",
+      "stagedNamedPortions": 157,
+      "macroComplete": 157,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Iced Teas & Starbucks Refresha® Drink",
+      "stagedNamedPortions": 81,
+      "macroComplete": 81,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Mocha & Chocolate",
+      "stagedNamedPortions": 115,
+      "macroComplete": 115,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Protein Beverages",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Reserve",
+      "stagedNamedPortions": 36,
+      "macroComplete": 36,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Sandwiches & Toasties",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "2026-10-05",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Seasonal",
+      "stagedNamedPortions": 233,
+      "macroComplete": 233,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Seasonal Menu",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "2026-10-05",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Starbucks",
+      "sourceCategory": "Syrups, Drizzles & Cream Cold Foams",
+      "stagedNamedPortions": 27,
+      "macroComplete": 27,
+      "sourceScope": "2026-09-18",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chick-fil-A",
+      "sourceCategory": "Drinks",
+      "stagedNamedPortions": 32,
+      "macroComplete": 32,
+      "sourceScope": "2026-07 (0726 footer)",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chick-fil-A",
+      "sourceCategory": "Kids portions",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-07 (0726 footer)",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chick-fil-A",
+      "sourceCategory": "Mains",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-07 (0726 footer)",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chick-fil-A",
+      "sourceCategory": "Salads and protein components",
+      "stagedNamedPortions": 7,
+      "macroComplete": 7,
+      "sourceScope": "2026-07 (0726 footer)",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chick-fil-A",
+      "sourceCategory": "Sauces and toppings",
+      "stagedNamedPortions": 9,
+      "macroComplete": 9,
+      "sourceScope": "2026-07 (0726 footer)",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chick-fil-A",
+      "sourceCategory": "Sides",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-07 (0726 footer)",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chick-fil-A",
+      "sourceCategory": "Treats",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-07 (0726 footer)",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Al forno",
+      "stagedNamedPortions": 17,
+      "macroComplete": 17,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Aperitivo and starters",
+      "stagedNamedPortions": 18,
+      "macroComplete": 18,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Calzone and classic pizza",
+      "stagedNamedPortions": 7,
+      "macroComplete": 7,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Cold drinks",
+      "stagedNamedPortions": 37,
+      "macroComplete": 37,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Desserts",
+      "stagedNamedPortions": 22,
+      "macroComplete": 22,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Extras",
+      "stagedNamedPortions": 94,
+      "macroComplete": 94,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Gelato",
+      "stagedNamedPortions": 7,
+      "macroComplete": 7,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Hot drinks",
+      "stagedNamedPortions": 46,
+      "macroComplete": 46,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Kids",
+      "stagedNamedPortions": 52,
+      "macroComplete": 52,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Non-gluten dishes",
+      "stagedNamedPortions": 14,
+      "macroComplete": 14,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Non-gluten pizza",
+      "stagedNamedPortions": 17,
+      "macroComplete": 17,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Pasta",
+      "stagedNamedPortions": 14,
+      "macroComplete": 14,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Rustica pizza",
+      "stagedNamedPortions": 19,
+      "macroComplete": 19,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Seasonal specials",
+      "stagedNamedPortions": 35,
+      "macroComplete": 35,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Signature dishes and salads",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Zizzi",
+      "sourceCategory": "Starters",
+      "stagedNamedPortions": 19,
+      "macroComplete": 19,
+      "sourceScope": "2026-09-15",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Al Forno",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Beers & Ciders",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Bread & Nibbles",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Classic Pasta",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Condiments",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Decaf Coffees",
+      "stagedNamedPortions": 24,
+      "macroComplete": 24,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Desserts",
+      "stagedNamedPortions": 27,
+      "macroComplete": 27,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Dips",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Extra Toppings",
+      "stagedNamedPortions": 21,
+      "macroComplete": 21,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Hot Drinks",
+      "stagedNamedPortions": 36,
+      "macroComplete": 36,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Kids Desserts",
+      "stagedNamedPortions": 17,
+      "macroComplete": 17,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Kids Drinks",
+      "stagedNamedPortions": 13,
+      "macroComplete": 13,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Kids Mains",
+      "stagedNamedPortions": 20,
+      "macroComplete": 20,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Kids Sides",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Kids Starters",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Kids Tiny Tums",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Mains & Salads",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Mocktails & Non-Alcoholic cocktails",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Non-Gluten Dessert",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Non-Gluten Kids",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Non-Gluten Pasta",
+      "stagedNamedPortions": 16,
+      "macroComplete": 16,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Non-Gluten Pizza",
+      "stagedNamedPortions": 14,
+      "macroComplete": 14,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Pasta Fresca",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Pizza",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Sides",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Soft Drinks",
+      "stagedNamedPortions": 39,
+      "macroComplete": 39,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Specials",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Starters",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Takeaway Only",
+      "stagedNamedPortions": 1,
+      "macroComplete": 1,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Vegan",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "ASK Italian",
+      "sourceCategory": "Vegan kids menu",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-09-10",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Airport breakfast extras",
+      "stagedNamedPortions": 25,
+      "macroComplete": 25,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Al Forno",
+      "stagedNamedPortions": 13,
+      "macroComplete": 13,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Desserts",
+      "stagedNamedPortions": 27,
+      "macroComplete": 27,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Dips",
+      "stagedNamedPortions": 18,
+      "macroComplete": 18,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Dough Balls",
+      "stagedNamedPortions": 24,
+      "macroComplete": 24,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Drinks",
+      "stagedNamedPortions": 33,
+      "macroComplete": 33,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Extra toppings",
+      "stagedNamedPortions": 30,
+      "macroComplete": 30,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Hot Drinks",
+      "stagedNamedPortions": 27,
+      "macroComplete": 27,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Piccolo extras",
+      "stagedNamedPortions": 16,
+      "macroComplete": 16,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Piccolo pizzas and pasta",
+      "stagedNamedPortions": 24,
+      "macroComplete": 24,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Pizzas - Classic",
+      "stagedNamedPortions": 45,
+      "macroComplete": 45,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Pizzas - Large Classic",
+      "stagedNamedPortions": 23,
+      "macroComplete": 23,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Pizzas - Romana",
+      "stagedNamedPortions": 46,
+      "macroComplete": 46,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Salads",
+      "stagedNamedPortions": 13,
+      "macroComplete": 13,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Sides",
+      "stagedNamedPortions": 9,
+      "macroComplete": 9,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "PizzaExpress",
+      "sourceCategory": "Starters",
+      "stagedNamedPortions": 25,
+      "macroComplete": 25,
+      "sourceScope": "2026-09",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Balance Fuel Bowl",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Breakfast Bowl",
+      "stagedNamedPortions": 8,
+      "macroComplete": 8,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Breakfast Burrito",
+      "stagedNamedPortions": 7,
+      "macroComplete": 7,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Breakfast Roll/Bun",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Desserts",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Hot Drinks",
+      "stagedNamedPortions": 2,
+      "macroComplete": 2,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Kids Burrito/Naked Burrito",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Large Burrito/Bowl",
+      "stagedNamedPortions": 25,
+      "macroComplete": 25,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Large Damn That’S Hot Bowl",
+      "stagedNamedPortions": 9,
+      "macroComplete": 9,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Large Damn That’S Hot Burrito",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Large Salad",
+      "stagedNamedPortions": 26,
+      "macroComplete": 26,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Medium Burrito/Bowl",
+      "stagedNamedPortions": 25,
+      "macroComplete": 25,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Medium Damn That’S Hot Bowl",
+      "stagedNamedPortions": 9,
+      "macroComplete": 9,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Medium Damn That’S Hot Burrito",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Medium Salad",
+      "stagedNamedPortions": 26,
+      "macroComplete": 26,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Nachos Queso",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Plant Fuel Bowl",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Protein Pots",
+      "stagedNamedPortions": 23,
+      "macroComplete": 23,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Quesadilla",
+      "stagedNamedPortions": 11,
+      "macroComplete": 11,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Sides",
+      "stagedNamedPortions": 27,
+      "macroComplete": 27,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tortilla",
+      "sourceCategory": "Tres Tacos",
+      "stagedNamedPortions": 21,
+      "macroComplete": 21,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tim Hortons",
+      "sourceCategory": "Bakery (35 Items)",
+      "stagedNamedPortions": 25,
+      "macroComplete": 25,
+      "sourceScope": "2026-10-08",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tim Hortons",
+      "sourceCategory": "Breakfast (26 Items)",
+      "stagedNamedPortions": 26,
+      "macroComplete": 26,
+      "sourceScope": "2026-10-08",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tim Hortons",
+      "sourceCategory": "Cold Beverage (37 Items)",
+      "stagedNamedPortions": 100,
+      "macroComplete": 100,
+      "sourceScope": "2026-10-08",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tim Hortons",
+      "sourceCategory": "Hot Beverage (32 Items)",
+      "stagedNamedPortions": 73,
+      "macroComplete": 73,
+      "sourceScope": "2026-10-08",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tim Hortons",
+      "sourceCategory": "Impulse (23 Items)",
+      "stagedNamedPortions": 23,
+      "macroComplete": 23,
+      "sourceScope": "2026-10-08",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tim Hortons",
+      "sourceCategory": "Sandwiches (37 Items)",
+      "stagedNamedPortions": 37,
+      "macroComplete": 37,
+      "sourceScope": "2026-10-08",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Tim Hortons",
+      "sourceCategory": "Timmies Minis (6 Items)",
+      "stagedNamedPortions": 5,
+      "macroComplete": 5,
+      "sourceScope": "2026-10-08",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Breakfast hot cabinet",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Hot beverages",
+      "stagedNamedPortions": 1,
+      "macroComplete": 1,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Mixed bento",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Onigiri",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Potto salad pot",
+      "stagedNamedPortions": 7,
+      "macroComplete": 7,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Salads and bowls",
+      "stagedNamedPortions": 10,
+      "macroComplete": 10,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Soups",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Wasabi",
+      "sourceCategory": "Sushi set boxes",
+      "stagedNamedPortions": 30,
+      "macroComplete": 30,
+      "sourceScope": "2026-09-17",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Breakfast",
+      "stagedNamedPortions": 35,
+      "macroComplete": 35,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Coffee",
+      "stagedNamedPortions": 103,
+      "macroComplete": 103,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Hot Drinks",
+      "stagedNamedPortions": 51,
+      "macroComplete": 51,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Iced Drinks",
+      "stagedNamedPortions": 133,
+      "macroComplete": 133,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Panini Tostati Nero Deli",
+      "stagedNamedPortions": 38,
+      "macroComplete": 38,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Salads Soups Hot Pots",
+      "stagedNamedPortions": 6,
+      "macroComplete": 6,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Snacks",
+      "stagedNamedPortions": 26,
+      "macroComplete": 26,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Caffè Nero",
+      "sourceCategory": "Sweet Treats",
+      "stagedNamedPortions": 30,
+      "macroComplete": 30,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chipotle",
+      "sourceCategory": "UK ingredient portions",
+      "stagedNamedPortions": 24,
+      "macroComplete": 24,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chopstix",
+      "sourceCategory": "Bases",
+      "stagedNamedPortions": 12,
+      "macroComplete": 12,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chopstix",
+      "sourceCategory": "Desserts",
+      "stagedNamedPortions": 3,
+      "macroComplete": 3,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chopstix",
+      "sourceCategory": "Dips and sauces",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chopstix",
+      "sourceCategory": "Published food combinations",
+      "stagedNamedPortions": 4,
+      "macroComplete": 4,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chopstix",
+      "sourceCategory": "Sides",
+      "stagedNamedPortions": 20,
+      "macroComplete": 20,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    },
+    {
+      "market": "GB",
+      "chain": "Chopstix",
+      "sourceCategory": "Toppings",
+      "stagedNamedPortions": 40,
+      "macroComplete": 40,
+      "sourceScope": "live; edition unavailable",
+      "status": "reviewed selection; not whole-business menu completeness",
+      "remaining": "See withheld.json and source-register.json for excluded/missing rows and source-specific limitations."
+    }
+  ]
+}

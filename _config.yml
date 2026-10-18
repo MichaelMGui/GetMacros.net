@@ -5,6 +5,7 @@ exclude:
   - docs
   - tools
   - server
+  - native
   - music-platform
   - preview.stdout.log
   - preview.stderr.log

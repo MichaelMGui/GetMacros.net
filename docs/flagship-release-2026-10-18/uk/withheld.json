@@ -1,0 +1,5237 @@
+[
+  {
+    "chain": "Nando’s",
+    "name": "Dare to share",
+    "reason": "No fixed portion nutrition in source",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Dare to share",
+    "reason": "No fixed portion nutrition in source",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "1/4 Chicken Meal",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "2 Boneless Thighs Meal",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Beanie Wrap",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "beanie-wrap-trial:burgers-pittas-wraps#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 644,
+      "p": 21.5,
+      "c": 37.0,
+      "fat": 26.5,
+      "f": 11.3,
+      "na": null,
+      "sugar": 10.7,
+      "sat": 7.2,
+      "salt": 2.4,
+      "kJ": 2696
+    },
+    "screeningEnergy": 472.5
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spicy Rice Bowl",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "spicy-rice-bowl:salads#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 600,
+      "p": 15.1,
+      "c": 21.5,
+      "fat": 31.7,
+      "f": 3.6,
+      "na": null,
+      "sugar": 8.3,
+      "sat": 3.5,
+      "salt": 3.6,
+      "kJ": 2506
+    },
+    "screeningEnergy": 431.70000000000005
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spicy Rice Bowl · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "spicy-rice-bowl:salads#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 600,
+      "p": 15.1,
+      "c": 21.5,
+      "fat": 31.7,
+      "f": 3.6,
+      "na": null,
+      "sugar": 8.3,
+      "sat": 3.5,
+      "salt": 3.6,
+      "kJ": 2506
+    },
+    "screeningEnergy": 431.70000000000005
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Full Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Full Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Full Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Boneless Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Boneless Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Boneless Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Family Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Family Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "All-in Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "All-in Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "All-in Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "XL Wing Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "XL Wing Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "XL Wing Platter",
+    "reason": "Bundle choice contains unspecified side/drink; source base total is not a complete order",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Beanie Wrap · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "beanie-wrap:veggie#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 644,
+      "p": 21.5,
+      "c": 37.0,
+      "fat": 26.5,
+      "f": 11.3,
+      "na": null,
+      "sugar": 10.7,
+      "sat": 7.2,
+      "salt": 2.4,
+      "kJ": 2696
+    },
+    "screeningEnergy": 472.5
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Buttermilk Pancakes · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "buttermilk-pancakes:sweet-treats-breakfast#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 525,
+      "p": 10.7,
+      "c": 29.0,
+      "fat": 0.3,
+      "f": 1.3,
+      "na": null,
+      "sugar": 15.3,
+      "sat": 69.7,
+      "salt": 0.5,
+      "kJ": 2201
+    },
+    "screeningEnergy": 161.5
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Toast · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "toast:the-classics-breakfast#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 447,
+      "p": 11.2,
+      "c": 3.3,
+      "fat": 11.2,
+      "f": 0.0,
+      "na": null,
+      "sugar": 0.3,
+      "sat": 74.0,
+      "salt": 1.4,
+      "kJ": 1863
+    },
+    "screeningEnergy": 158.8
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Banana And Blueberry Porridge · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "banana-and-blueberry-porridge:the-classics-breakfast#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 417,
+      "p": 10.6,
+      "c": 29.0,
+      "fat": 0.3,
+      "f": 1.3,
+      "na": null,
+      "sugar": 15.3,
+      "sat": 43.0,
+      "salt": 0.5,
+      "kJ": 1748
+    },
+    "screeningEnergy": 161.1
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Eggs on Toast · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "egg-on-toast:eggs-breakfast#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 656,
+      "p": 30.2,
+      "c": 16.0,
+      "fat": 11.3,
+      "f": 0.0,
+      "na": null,
+      "sugar": 4.7,
+      "sat": 75.7,
+      "salt": 2.6,
+      "kJ": 2738
+    },
+    "screeningEnergy": 286.5
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Egg On Toast · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "egg-on-toast-nandinos:nandinos-kids-breakfast#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 224,
+      "p": 5.8,
+      "c": 1.6,
+      "fat": 5.6,
+      "f": 0.0,
+      "na": null,
+      "sugar": 0.2,
+      "sat": 36.8,
+      "salt": 0.7,
+      "kJ": 933
+    },
+    "screeningEnergy": 80.0
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Bombay Sapphire Gin",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Tiny Rebel Session IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Tiny Rebel Session IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Tiny Rebel Session IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Tiny Rebel Session IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Tiny Rebel Session IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sxollie Cider",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sxollie Cider",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sxollie Cider",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sxollie Cider",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sxollie Cider",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "BERO Kingston Golden Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "BERO Kingston Golden Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "BERO Kingston Golden Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "BERO Kingston Golden Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "BERO Kingston Golden Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Freedom Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Freedom Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Freedom Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Freedom Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Freedom Pils",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Beavertown Lazer Crush Alcohol Free IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Beavertown Lazer Crush Alcohol Free IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Beavertown Lazer Crush Alcohol Free IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Beavertown Lazer Crush Alcohol Free IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Beavertown Lazer Crush Alcohol Free IPA",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Black’s Kinsale Pale Ale",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres Draught Half Pint",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres Draught Half Pint",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres Draught Half Pint",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres Draught Pint",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres Draught Pint",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Sagres Draught Pint",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Chardonnay (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Chardonnay (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Chardonnay (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Sauvignon Blanc (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Sauvignon Blanc (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Sauvignon Blanc (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Sauvignon Blanc (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Sauvignon Blanc (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 2 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 2 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 2 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 2 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 2 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Merlot (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Merlot (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Merlot (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Merlot (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Merlot (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Cabernet Sauvignon (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Cabernet Sauvignon (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Cabernet Sauvignon (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 5 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 5 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 5 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 5 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Creative Block 5 (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Rose (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Rose (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Rose (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Rose (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Spier Rose (South Africa)",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Mimosa",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Portuguese Sparkling Wine",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Pink Berry Crush · Frozen Cocktails Trial",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "pink-berry-crush:drinks#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 234,
+      "p": 0.3,
+      "c": 0.0,
+      "fat": 0.3,
+      "f": 2.1,
+      "na": null,
+      "sugar": 54.3,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": 990
+    },
+    "screeningEnergy": 3.8999999999999995
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Pink Berry Crush · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "pink-berry-crush:drinks#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 234,
+      "p": 0.3,
+      "c": 0.0,
+      "fat": 0.3,
+      "f": 2.1,
+      "na": null,
+      "sugar": 54.3,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": 990
+    },
+    "screeningEnergy": 3.8999999999999995
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Tropical Crush · Frozen Cocktails Trial",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "tropical-crush:drinks#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 246,
+      "p": 1.8,
+      "c": 0.0,
+      "fat": 1.8,
+      "f": 0.3,
+      "na": null,
+      "sugar": 56.7,
+      "sat": 1.2,
+      "salt": 0.0,
+      "kJ": 1041
+    },
+    "screeningEnergy": 23.4
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Tropical Crush · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "tropical-crush:drinks#facts-0",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 246,
+      "p": 1.8,
+      "c": 0.0,
+      "fat": 1.8,
+      "f": 0.3,
+      "na": null,
+      "sugar": 56.7,
+      "sat": 1.2,
+      "salt": 0.0,
+      "kJ": 1041
+    },
+    "screeningEnergy": 23.4
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Strawberry Sunset",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Strawberry Sunset",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Savanna Beach",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "Savanna Beach",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "Nando’s",
+    "name": "The Pickle House Bloody Mary",
+    "reason": "Alcoholic drink outside meal discovery scope",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json"
+  },
+  {
+    "chain": "LEON",
+    "name": "Aji Verde Chicken Mezze",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "63d869cc-3391-43cb-a17d-88b7df54e91a",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "Black Velvet Iced Matcha Latte ",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "b2b36ad5-8baf-4eb2-9d3a-5f7b32204c3f",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "LOVe Burger",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "miwRFb8zzo503mPNjkM60RO",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 565.0,
+      "p": 15.0,
+      "c": 63.0,
+      "fat": 10.1,
+      "f": 20.0,
+      "na": null,
+      "sugar": 4.7,
+      "sat": 5.6,
+      "salt": 2.67,
+      "kJ": null
+    },
+    "screeningEnergy": 402.9
+  },
+  {
+    "chain": "LEON",
+    "name": "Mushroom Magic Romesco",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "miL9pfLUYFkLsYTwKWFsDUS",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 570.0,
+      "p": 11.0,
+      "c": 73.0,
+      "fat": 2.6,
+      "f": 3.6,
+      "na": null,
+      "sugar": 5.2,
+      "sat": 3.9,
+      "salt": 2.2,
+      "kJ": null
+    },
+    "screeningEnergy": 359.4
+  },
+  {
+    "chain": "LEON",
+    "name": "Sweet & Salty Popcorn",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "fd2a299f-7596-4e8d-bcff-7da4669ae6e1",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "Salt Crisps",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "c7ecd393-5553-48b0-9c78-8ecaa8bab936",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "Salt & Vinegar Crisps",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "938eaeed-75f9-4c2d-af64-3838af59b8a2",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "Keo Mango Chewy Slices",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "cf9760b3-37a4-4c8c-aaf7-d2951d99a3c1",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "Karma Gingerella Soda",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "588a0991-5ec5-40d5-b386-efd458bd60f0",
+    "reason": "Published portion mass contradicts macro mass",
+    "values": {
+      "cal": 146.0,
+      "p": 0.0,
+      "c": 37.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 37.0,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": null
+    },
+    "servingGrams": 12.0
+  },
+  {
+    "chain": "LEON",
+    "name": "Karma Cola Soda",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "4980b099-bfb9-4d29-a9dd-f74848a9e6b2",
+    "reason": "Published portion mass contradicts macro mass",
+    "values": {
+      "cal": 165.0,
+      "p": 0.0,
+      "c": 41.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 40.0,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": null
+    },
+    "servingGrams": 12.0
+  },
+  {
+    "chain": "LEON",
+    "name": "Razza Raspberry Lemonade Soda",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "dd268f66-4bf9-4e87-9fb9-0d945b70fed6",
+    "reason": "Published portion mass contradicts macro mass",
+    "values": {
+      "cal": 146.0,
+      "p": 0.0,
+      "c": 37.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 37.0,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": null
+    },
+    "servingGrams": 12.0
+  },
+  {
+    "chain": "LEON",
+    "name": "Karma Lemony Lemonade Soda",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "683708f5-0f23-4cc5-8eb9-c528f8128e69",
+    "reason": "Published portion mass contradicts macro mass",
+    "values": {
+      "cal": 172.0,
+      "p": 0.0,
+      "c": 43.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 43.0,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": null
+    },
+    "servingGrams": 16.0
+  },
+  {
+    "chain": "LEON",
+    "name": "Teas and Infusions",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "37821af4-99ff-48f3-ab84-0e330c74c934",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "Moju Turmeric Shot",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "13f986eb-4195-4e5a-8f3a-67a699263650",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "Halloumi & Egg Muffin",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "62c94d87-a419-4f63-bd6d-c1bfcc01d772",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "LEON",
+    "name": "LEON Organic Coffee at Home",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "c616195e-ec11-43f1-9053-08fb8bb60463",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "strawbiscus spritz",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "c15c1f56-47b8-4b14-afdb-e860a113cecd|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "bright + stormy",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "ab348495-48d2-41d7-a1ec-1b4f62e4b79e|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "passion fruit paloma",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "3126f0bf-0807-416b-a4a9-b1620b3e27d6|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "lychee blush sangria",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "51bb2d58-d5e8-460a-812b-08310b4180a4|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "thai chilli margarita",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "f8aec26e-1330-4d9d-b6fb-c5562b743055|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "roku g+t",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "ecf9ce15-12af-4e02-8a4c-3dc4f3d2763e|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "camden pale ale",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "a55674b2-6154-426d-bfb2-d54e25d27527|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "sxollie cider",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "9a7fe055-f209-45f7-bb2a-12eac4823e4e|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "asahi 330ml",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "a171272e-7db1-4fb4-8e2b-f641e2b92714|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "pinot noir",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "081e3232-abe8-4231-aa90-78d27558f5d4|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "pinot grigio",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "2d6758af-ec4c-4c15-85a8-34eb85109a25|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "merlot",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "0fccefed-e4f4-4f07-a3bd-b80ba7f709d3|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "marlborough sauvignon blanc",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "232ab70b-6777-442e-b9f2-d357426d13b4|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "pinot grigio blush",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "2d705c25-d26d-46ff-8365-e62833dbc70f|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "organic prosecco",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "b60b8719-1641-4381-8e93-04fd1fb1ae78|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "kaori sake",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "82af3fab-6c0f-49bb-a7a4-e025918a6922|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "strawbiscus spritz · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "c15c1f56-47b8-4b14-afdb-e860a113cecd|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "bright + stormy · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "ab348495-48d2-41d7-a1ec-1b4f62e4b79e|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "thai chilli margarita · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "f8aec26e-1330-4d9d-b6fb-c5562b743055|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "lychee blush sangria · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "51bb2d58-d5e8-460a-812b-08310b4180a4|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "passion fruit paloma · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "3126f0bf-0807-416b-a4a9-b1620b3e27d6|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "roku g+t · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "ecf9ce15-12af-4e02-8a4c-3dc4f3d2763e|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "sxollie cider · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "9a7fe055-f209-45f7-bb2a-12eac4823e4e|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "pinot noir · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "081e3232-abe8-4231-aa90-78d27558f5d4|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "merlot · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "0fccefed-e4f4-4f07-a3bd-b80ba7f709d3|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "pinot grigio · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "358f780c-73fa-45f9-8bf1-de7d33ae8aa6|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "marlborough sauvignon blanc · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "6bf917ed-7574-4644-97f5-694c63916299|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "pinot grigio blush · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "ac16bcdb-72ca-4d21-a54b-5c3f7ffa0005|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wagamama",
+    "name": "organic prosecco · Gluten-free menu",
+    "source": "https://www.wagamama.com/menu",
+    "sourcePage": "d5d1c603-ecee-44da-9dfd-a65e6e326707|standard",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Wendy’s",
+    "name": "Sour Cream",
+    "source": "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-%28002%29.pdf",
+    "sourcePage": 2,
+    "reason": "Published portion mass contradicts macro mass",
+    "values": {
+      "cal": 52.0,
+      "p": 0.7,
+      "c": 1.1,
+      "fat": 5.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 1.1,
+      "sat": 3.1,
+      "salt": 0.04,
+      "kJ": null
+    },
+    "servingGrams": 1.0
+  },
+  {
+    "chain": "Five Guys",
+    "name": "Milkshakes (Including Big Kids Shake) — Flake",
+    "source": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "sourcePage": 1,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 43.0,
+      "p": 0.6,
+      "c": 4.8,
+      "fat": 18.0,
+      "f": 0.2,
+      "na": null,
+      "sugar": 4.7,
+      "sat": 1.4,
+      "salt": 1.0,
+      "kJ": 180.0
+    },
+    "screeningEnergy": 183.6
+  },
+  {
+    "chain": "Five Guys",
+    "name": "Little Milkshakes — Flake",
+    "source": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "sourcePage": 1,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 43.0,
+      "p": 0.6,
+      "c": 4.8,
+      "fat": 18.0,
+      "f": 0.2,
+      "na": null,
+      "sugar": 4.7,
+      "sat": 1.4,
+      "salt": 1.0,
+      "kJ": 180.0
+    },
+    "screeningEnergy": 183.6
+  },
+  {
+    "chain": "Five Guys",
+    "name": "Little Bacon Burger",
+    "source": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "sourcePage": 1,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 537.0,
+      "p": 28.0,
+      "c": 367.0,
+      "fat": 27.0,
+      "f": 1.7,
+      "na": null,
+      "sugar": 6.5,
+      "sat": 11.0,
+      "salt": 1.73,
+      "kJ": 2247.0
+    },
+    "screeningEnergy": 1823.0
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken  (BBQ Quesadilla)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-36",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken  (BBQ Wrap)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-37",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken  (Chicken & Cheese Quesadilla)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-38",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken  (Fajita)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-39",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken  (Wrap)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-40",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken (Burrito)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-41",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 67.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken (Chick n rice)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-42",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken (Chicken Salad)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-43",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken (Hot & Spicy Quesadilla)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-44",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken (Loaded Fries – chicken)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-45",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken (Nachos)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-46",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 67.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Chicken (Tasca)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-47",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 100.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Feta",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-48",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 84.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Fillet (Chicken XL)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-49",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 145.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Fillet (Prime Pitta)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-50",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 145.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Paneer (Burrito)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-52",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 208.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Paneer (Loaded Fries)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-53",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 312.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Paneer (Nachos)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-54",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 208.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Paneer (Rice)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-55",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 312.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Paneer (Salad)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-56",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 312.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Extra Paneer (Wrap)",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-57",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 312.0,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Onion Rings",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-89",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 305.0,
+      "p": 5.9,
+      "c": 393.0,
+      "fat": 13.8,
+      "f": null,
+      "na": null,
+      "sugar": 4.4,
+      "sat": 1.4,
+      "salt": 0.8,
+      "kJ": null
+    },
+    "screeningEnergy": 1719.8
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Barley",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-153",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Celery",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-154",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Eggs",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-155",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Milk",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-156",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Mustard",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-157",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Oats",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-158",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Peanuts",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-159",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Sesame",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-160",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Soya",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-161",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Sulphites",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-162",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Walnuts",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-163",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Pepe’s",
+    "name": "Wheat",
+    "source": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "sourcePage": "nutrition-item-164",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - semi-skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - semi-skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - whole milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - whole milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - almond drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - almond drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - soya drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - soya drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - oat drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - oat drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - coconut drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - coconut drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 23,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Almond flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Almond flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Almond flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Almond flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Almond flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Brown sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Brown sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Brown sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Brown sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Brown sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Classic chai syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Classic chai syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Classic chai syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Classic chai syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Classic chai syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free caramel flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 73,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free hazelnut flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Sugar free vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Vanilla flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Simple sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Simple sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Simple sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Simple sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Simple sugar flavour syrup",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Caramel Drizzle",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Mocha Drizzle",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Strawberry sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Strawberry sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Strawberry sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Strawberry sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Strawberry sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 74,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "White chocolate mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 75,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "1 pump"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "White chocolate mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 75,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "2 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "White chocolate mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 75,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "3 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "White chocolate mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 75,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "4 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "White chocolate mocha sauce",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 75,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "5 pumps"
+  },
+  {
+    "chain": "Starbucks",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 76,
+    "reason": "Irregular beverage table geometry requires separate review",
+    "columns": 23
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Chemex",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 79,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "One"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "French Press",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 80,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "One"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - semi-skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - semi-skimmed milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - whole milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - whole milk",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - almond drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - almond drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - soya drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - soya drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - oat drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - oat drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - coconut drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Single"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Espresso Macchiato - coconut drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "sourcePage": 81,
+    "reason": "Unsupported source serving label; no cup or pump amount inferred",
+    "size": "Double"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Mini Caramel Waffles",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 18,
+    "reason": "Published 787-kcal mini-waffle row lacks an identifiable package weight/count; hold for portion clarification"
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Apple & Mango Juice",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 19,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 112.0,
+      "p": null,
+      "c": 28.0,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": 28.0,
+      "sat": null,
+      "salt": null,
+      "kJ": 476.0
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Berries Juice Drink",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 19,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 63.0,
+      "p": null,
+      "c": 15.0,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": 15.0,
+      "sat": null,
+      "salt": null,
+      "kJ": 267.0
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 19,
+    "reason": "Food numeric row has unexpected column count",
+    "rowY": 259.91619999999995,
+    "cells": [
+      "427",
+      "101",
+      "0",
+      "24",
+      "24",
+      "0"
+    ]
+  },
+  {
+    "chain": "Starbucks",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 19,
+    "reason": "Food numeric row has unexpected column count",
+    "rowY": 273.91419999999994,
+    "cells": [
+      "156",
+      "37",
+      "0",
+      "7.7",
+      "7.7",
+      "0"
+    ]
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Peach Iced Tea",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 19,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 69.0,
+      "p": null,
+      "c": 16.0,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": 16.0,
+      "sat": null,
+      "salt": 0.03,
+      "kJ": 291.0
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 19,
+    "reason": "Food numeric row has unexpected column count",
+    "rowY": 414.8001999999997,
+    "cells": [
+      "257",
+      "61",
+      "14",
+      "14",
+      "0.03"
+    ]
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Smooth Orange Juice",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 19,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 91.0,
+      "p": 1.5,
+      "c": 20.0,
+      "fat": null,
+      "f": 1.3,
+      "na": null,
+      "sugar": 20.0,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": 387.0
+    }
+  },
+  {
+    "chain": "Starbucks",
+    "name": "Turmeric Shot",
+    "source": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "sourcePage": 20,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 45.0,
+      "p": null,
+      "c": 9.8,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": 9.8,
+      "sat": null,
+      "salt": null,
+      "kJ": 191.0
+    }
+  },
+  {
+    "chain": "Zizzi",
+    "name": "Sunset Mango Margarita",
+    "source": "https://cdn.sanity.io/files/ysupxjc9/production/abb3546d604fabb82945c2b1291c22949e5dc66e.pdf/ZIZZI-UK-NUTRITION-GUIDE_AUTUMN_SEP2026_V1.pdf",
+    "sourcePage": 25,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 297.0,
+      "p": 0.7,
+      "c": 54.0,
+      "fat": 0.0,
+      "f": null,
+      "na": null,
+      "sugar": 53.0,
+      "sat": 0.0,
+      "salt": 0.78,
+      "kJ": 1254.0
+    },
+    "screeningEnergy": 218.8
+  },
+  {
+    "chain": "ASK Italian",
+    "name": "Takeaway - Aperol Spritz",
+    "source": "https://cdn.sanity.io/files/ysupxjc9/production/ecd7a56f0b39eedfeb25391e6dc42bb62ba0d3d3.pdf/autumn26_allergenguide_nocrop.pdf",
+    "sourcePage": 44,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 214.0,
+      "p": 0.0,
+      "c": 22.0,
+      "fat": 0.0,
+      "f": null,
+      "na": null,
+      "sugar": 22.0,
+      "sat": 0.0,
+      "salt": 0.04,
+      "kJ": 896.0
+    },
+    "screeningEnergy": 88.0
+  },
+  {
+    "chain": "PizzaExpress",
+    "name": "Garlic & Herbs dip",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 13,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 112.0,
+      "p": 0.4,
+      "c": 3.3,
+      "fat": 1.1,
+      "f": 0.2,
+      "na": null,
+      "sugar": 2.3,
+      "sat": 0.8,
+      "salt": 0.51,
+      "kJ": 462.0
+    },
+    "screeningEnergy": 24.7
+  },
+  {
+    "chain": "PizzaExpress",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 18,
+    "reason": "Irregular merged per-portion table requires separate geometry review",
+    "columns": 34
+  },
+  {
+    "chain": "PizzaExpress",
+    "name": "Piccolo — Chocolate Brownie",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 20,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 251.0,
+      "p": 2.9,
+      "c": 26.5,
+      "fat": 24.7,
+      "f": 1.9,
+      "na": null,
+      "sugar": 22.6,
+      "sat": 6.4,
+      "salt": 0.06,
+      "kJ": 1049.0
+    },
+    "screeningEnergy": 339.9
+  },
+  {
+    "chain": "PizzaExpress",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 21,
+    "reason": "Irregular merged per-portion table requires separate geometry review",
+    "columns": 23
+  },
+  {
+    "chain": "PizzaExpress",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 23,
+    "reason": "Irregular merged per-portion table requires separate geometry review",
+    "columns": 23
+  },
+  {
+    "chain": "PizzaExpress",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 24,
+    "reason": "Irregular merged per-portion table requires separate geometry review",
+    "columns": 25
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Mexican Rice (Burrito)",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 4,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 108.0,
+      "kJ": 601.0,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 34.0,
+      "sugar": 2.0,
+      "f": 3.0,
+      "p": 3.0,
+      "salt": 1.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Mexican Rice (Bowl)",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 4,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 161.0,
+      "kJ": 901.0,
+      "fat": 1.0,
+      "sat": 0.0,
+      "c": 50.0,
+      "sugar": 3.0,
+      "f": 5.0,
+      "p": 4.0,
+      "salt": 1.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Mexican Rice (Burrito)",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 5,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 161.0,
+      "kJ": 901.0,
+      "fat": 1.0,
+      "sat": 0.0,
+      "c": 50.0,
+      "sugar": 3.0,
+      "f": 5.0,
+      "p": 4.3,
+      "salt": 1.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Mexican Rice (Bowl)",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 5,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 215.0,
+      "kJ": 1202.0,
+      "fat": 1.0,
+      "sat": 0.0,
+      "c": 67.0,
+      "sugar": 3.0,
+      "f": 7.0,
+      "p": 5.8,
+      "salt": 1.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Beef Barbacoa",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 10,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 63.0,
+      "kJ": 594.0,
+      "fat": 12.0,
+      "sat": 5.0,
+      "c": 0.0,
+      "sugar": 0.0,
+      "f": 0.0,
+      "p": 8.0,
+      "salt": 2.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Chorizo (Pork)",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 10,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 125.0,
+      "kJ": 118.0,
+      "fat": 1.0,
+      "sat": 0.0,
+      "c": 2.0,
+      "sugar": 1.0,
+      "f": 1.0,
+      "p": 3.0,
+      "salt": 0.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Vegan Chilli",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 10,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 32.0,
+      "kJ": 534.0,
+      "fat": 10.0,
+      "sat": 6.0,
+      "c": 0.0,
+      "sugar": 0.0,
+      "f": 0.0,
+      "p": 10.0,
+      "salt": 1.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Monterey Jack Cheese",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 10,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 193.0,
+      "kJ": 494.0,
+      "fat": 11.0,
+      "sat": 7.0,
+      "c": 3.0,
+      "sugar": 3.0,
+      "f": 0.0,
+      "p": 3.0,
+      "salt": 0.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Guacamole",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 10,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 95.0,
+      "kJ": 52.0,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 2.0,
+      "sugar": 2.0,
+      "f": 1.0,
+      "p": 0.0,
+      "salt": 0.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Monterey Jack Cheese",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 11,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 112.0,
+      "kJ": 267.0,
+      "fat": 5.0,
+      "sat": 3.0,
+      "c": 0.0,
+      "sugar": 0.0,
+      "f": 0.0,
+      "p": 5.0,
+      "salt": 0.0
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Mexican Rice",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 13,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 215.0,
+      "kJ": 1202.0,
+      "fat": 0.99,
+      "sat": 0.24,
+      "c": 67.1,
+      "sugar": 3.44,
+      "f": 6.53,
+      "p": 5.79,
+      "salt": 1.12
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Mexican Rice",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 20,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 107.6,
+      "kJ": 600.9,
+      "fat": 0.5,
+      "sat": 0.1,
+      "c": 33.6,
+      "sugar": 1.7,
+      "f": 3.3,
+      "p": 2.9,
+      "salt": 0.6
+    }
+  },
+  {
+    "chain": "Tortilla",
+    "name": "Large Veggie Breakfast Burrito",
+    "source": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "sourcePage": 21,
+    "reason": "Published kcal/kJ conflict; not repaired by guessing",
+    "values": {
+      "cal": 729.0,
+      "kJ": 2666.0,
+      "fat": 32.0,
+      "sat": 11.0,
+      "c": 63.0,
+      "sugar": 10.0,
+      "f": 6.0,
+      "p": 26.0,
+      "salt": 3.0
+    }
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Original Blend Coffee (Small)",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 6,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 3.0,
+      "p": null,
+      "c": 0.0,
+      "fat": 0.01,
+      "f": 0.0,
+      "na": null,
+      "sugar": 0.0,
+      "sat": 0.01,
+      "salt": 0.01,
+      "kJ": 12.0
+    }
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Dark Roast Coffee",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 6,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 4.0,
+      "p": null,
+      "c": 0.0,
+      "fat": 0.01,
+      "f": 0.0,
+      "na": null,
+      "sugar": 0.0,
+      "sat": 0.01,
+      "salt": 0.02,
+      "kJ": 17.0
+    }
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Dark Roast Coffee (Small)",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 6,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 3.0,
+      "p": null,
+      "c": 0.0,
+      "fat": 0.01,
+      "f": 0.0,
+      "na": null,
+      "sugar": 0.0,
+      "sat": 0.01,
+      "salt": 0.01,
+      "kJ": 12.0
+    }
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Espresso",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 6,
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": 1.0,
+      "p": null,
+      "c": 0.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 0.0,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": 4.0
+    }
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Iced French Vanilla",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 8,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 360.0,
+      "p": 3.4,
+      "c": 38.0,
+      "fat": 10.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 31.0,
+      "sat": 10.0,
+      "salt": 0.8,
+      "kJ": 1506.0
+    },
+    "screeningEnergy": 255.6
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Mocha Iced Capp®",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 9,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 472.0,
+      "p": 4.6,
+      "c": 56.0,
+      "fat": 53.0,
+      "f": 0.9,
+      "na": null,
+      "sugar": 53.0,
+      "sat": 17.0,
+      "salt": 0.1,
+      "kJ": 1973.0
+    },
+    "screeningEnergy": 719.4
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Mocha Iced Capp® (Small)",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 9,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 340.0,
+      "p": 3.3,
+      "c": 37.0,
+      "fat": 35.0,
+      "f": 0.5,
+      "na": null,
+      "sugar": 35.0,
+      "sat": 14.0,
+      "salt": 0.1,
+      "kJ": 1422.0
+    },
+    "screeningEnergy": 476.2
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Mocha Iced Capp® (Large)",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 9,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 604.0,
+      "p": 5.9,
+      "c": 76.0,
+      "fat": 71.0,
+      "f": 1.2,
+      "na": null,
+      "sugar": 71.0,
+      "sat": 21.0,
+      "salt": 0.2,
+      "kJ": 2529.0
+    },
+    "screeningEnergy": 966.6
+  },
+  {
+    "chain": "Tim Hortons",
+    "name": "Strawberry Lemonade Refresher (Large)",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 9,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 242.0,
+      "p": 0.0,
+      "c": 35.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "na": null,
+      "sugar": 25.0,
+      "sat": 0.0,
+      "salt": 0.0,
+      "kJ": 609.0
+    },
+    "screeningEnergy": 140.0
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 8,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "energy (kcal) per pack",
+      "energy (kcal) per",
+      "protein (g) per 100g",
+      "carbohydrate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g)",
+      "number of servings",
+      "contains raw fish",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product",
+      "allergens condiments only"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 13,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "energy (kcal) portion",
+      "energy (kcal) portion",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "",
+      "salt (g) per 100g",
+      "portion size (g) standard",
+      "portion size (g) large",
+      "number of servings",
+      "suitable for vegetar- ians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 14,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "energy (kcal) portion standard",
+      "energy (kcal) portion large",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g) standard",
+      "portion size (g) large",
+      "number of servings",
+      "suitable for vegetar- ians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 18,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g)",
+      "number of servings",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 19,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g)",
+      "number of servings",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "name": "Porridge pot with honey",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 20,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 330.0,
+      "p": 4094.6,
+      "c": 50.74,
+      "fat": 7.375,
+      "f": null,
+      "na": null,
+      "sugar": 28.025,
+      "sat": 2.95,
+      "salt": 0.354,
+      "kJ": null
+    },
+    "screeningEnergy": 16647.735
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 22,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g)",
+      "number of servings",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 24,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "energy",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g)",
+      "number of servings",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 25,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g)",
+      "number of servings",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 25,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "energy",
+      "protein (g) per 100g",
+      "carbohy- drate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g)",
+      "number of servings",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "name": "Semi skimmed milk",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 26,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 206.0,
+      "p": 3.4,
+      "c": 5.0,
+      "fat": 1.7,
+      "f": null,
+      "na": null,
+      "sugar": 5.0,
+      "sat": 1.0,
+      "salt": 0.15,
+      "kJ": null
+    },
+    "screeningEnergy": 48.9
+  },
+  {
+    "chain": "Wasabi",
+    "name": "Oat milk",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 26,
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 247.0,
+      "p": 1.0,
+      "c": 6.6,
+      "fat": 3.0,
+      "f": null,
+      "na": null,
+      "sugar": 4.0,
+      "sat": 0.3,
+      "salt": 0.1,
+      "kJ": null
+    },
+    "screeningEnergy": 57.4
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 27,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "energy (kcal) per portion - pot / sachet",
+      "energy (kcal) per portion - for counter salad",
+      "protein (g) per 100g",
+      "carbohydrate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g) - pot/ sachet",
+      "portion size (g) - for counter salad",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Wasabi",
+    "source": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "sourcePage": 28,
+    "reason": "Multiple/unclear serving columns require distinct size adapter",
+    "headings": [
+      "product",
+      "energy (kcal) per 100g",
+      "energy (kj) per 100g",
+      "energy (kcal) per portion - pot/ sachet",
+      "energy (kcal) per portion - for counter salad",
+      "protein (g) per 100g",
+      "carbohydrate (g) per 100g",
+      "sugar (g) per 100g",
+      "fat (g) per 100g",
+      "sat fat (g) per 100g",
+      "salt (g) per 100g",
+      "portion size (g) - pot/ sachet",
+      "number of servings",
+      "suitable for vegetarians",
+      "vegan",
+      "contains msg",
+      "contains alcohol",
+      "contains gluten",
+      "allergens product"
+    ]
+  },
+  {
+    "chain": "Caffè Nero",
+    "name": "Chocolate Milkshake · Almond",
+    "source": "https://www.caffenero.com/uk/menu/drinks/iced-drinks",
+    "sourcePage": "size--chocolate-milkshake-almond",
+    "reason": "One or more core macro values are unavailable; no zero inferred",
+    "values": {
+      "cal": null,
+      "p": null,
+      "c": null,
+      "fat": null,
+      "f": null,
+      "na": null,
+      "sugar": null,
+      "sat": null,
+      "salt": null,
+      "kJ": null
+    }
+  },
+  {
+    "chain": "Chopstix",
+    "name": "NO CHICK’N SWEET & SOUR · Small",
+    "source": "https://chopstixnoodles.co.uk/menu/no-chickn-sweet-sour/",
+    "sourcePage": "nutrition-column-2",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 357.0,
+      "p": 1.8,
+      "c": 14.7,
+      "fat": 16.6,
+      "f": 3.5,
+      "na": null,
+      "sugar": 9.6,
+      "sat": 1.3,
+      "salt": 1.12,
+      "kJ": 1477.0
+    },
+    "screeningEnergy": 215.4
+  },
+  {
+    "chain": "Chopstix",
+    "name": "NO CHICK’N SWEET & SOUR · R/L/XL",
+    "source": "https://chopstixnoodles.co.uk/menu/no-chickn-sweet-sour/",
+    "sourcePage": "nutrition-column-3",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 268.0,
+      "p": 1.3,
+      "c": 11.0,
+      "fat": 12.5,
+      "f": 2.6,
+      "na": null,
+      "sugar": 7.2,
+      "sat": 1.0,
+      "salt": 0.84,
+      "kJ": 1108.0
+    },
+    "screeningEnergy": 161.7
+  },
+  {
+    "chain": "Chopstix",
+    "name": "NO CHICK’N SWEET & SOUR · Topper",
+    "source": "https://chopstixnoodles.co.uk/menu/no-chickn-sweet-sour/",
+    "sourcePage": "nutrition-column-4",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 428.0,
+      "p": 2.1,
+      "c": 17.7,
+      "fat": 20.0,
+      "f": 4.2,
+      "na": null,
+      "sugar": 11.5,
+      "sat": 1.5,
+      "salt": 1.34,
+      "kJ": 1772.0
+    },
+    "screeningEnergy": 259.2
+  },
+  {
+    "chain": "Chopstix",
+    "name": "SPRING ROLLS MINI STIX MEAL — Fruit Shoot",
+    "source": "https://chopstixnoodles.co.uk/menu/spring-roll-mini-stix-meal/",
+    "reason": "Separate drink column does not identify bottle/volume, not added to food total"
+  },
+  {
+    "chain": "Chopstix",
+    "name": "CHICKEN BALLS MINI STIX MEAL — Fruit Shoot",
+    "source": "https://chopstixnoodles.co.uk/menu/chicken-balls-mini-stix-meal/",
+    "reason": "Separate drink column does not identify bottle/volume, not added to food total"
+  },
+  {
+    "chain": "Chopstix",
+    "name": "KATSU CURRY SAUCE PORTION · Large",
+    "source": "https://chopstixnoodles.co.uk/menu/katsu-curry-sauce-portion/",
+    "sourcePage": "nutrition-column-2",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 160.0,
+      "p": 2.2,
+      "c": 10.7,
+      "fat": 1.6,
+      "f": 1.4,
+      "na": null,
+      "sugar": 1.0,
+      "sat": 5.6,
+      "salt": 1.57,
+      "kJ": 661.0
+    },
+    "screeningEnergy": 66.0
+  },
+  {
+    "chain": "Chopstix",
+    "name": "Panko Chicken Breast Pieces · 10",
+    "source": "https://chopstixnoodles.co.uk/menu/panko-chicken-breast-pieces/",
+    "sourcePage": "nutrition-column-3",
+    "reason": "Large energy/macronutrient discrepancy; source not silently corrected",
+    "values": {
+      "cal": 1097.0,
+      "p": 56.4,
+      "c": 54.2,
+      "fat": 7.16,
+      "f": 4.0,
+      "na": null,
+      "sugar": 2.9,
+      "sat": 9.1,
+      "salt": 3.27,
+      "kJ": 4565.0
+    },
+    "screeningEnergy": 506.84
+  },
+  {
+    "chain": "Chopstix",
+    "name": "VALUE MEAL DEAL",
+    "source": "https://chopstixnoodles.co.uk/menu/value-meal-deal/",
+    "reason": "No fixed full-macro table for the linked meal deal/product"
+  },
+  {
+    "chain": "Chopstix",
+    "name": "EXTRA VALUE MEAL DEAL",
+    "source": "https://chopstixnoodles.co.uk/menu/extra-value-meal-deal/",
+    "reason": "No fixed full-macro table for the linked meal deal/product"
+  },
+  {
+    "id": "GB|starbucks|8db8de53a04de438",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|be9e65840c46b4ec",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|2878480bb3789469",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|five-guys|355593b502c2144f",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|3458bd031d254d63",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|6428443609bd74a4",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|198cbb4660d2e210",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|9fcbb35bfc2f524e",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|26ec3d6aec3fbfb0",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|36e54bbee0a74cf1",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|19beb77bb39f0cd9",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|21fd6db12e50ef55",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|29ee7620f369c119",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|631cb1970809d12a",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|b14da71426586ce8",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|6d2fe12a86c15014",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|72c5643f4c0ccb73",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|five-guys|cf1e3f0f21ab3a55",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|dd156ac5970d01ef",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|9d4d080b53b6e115",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|nandos|d0746daa95c38cd5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|44c76ccf9832de3d",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|9bba4c6edb981ddb",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|dd23a2ee5e70eb27",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wagamama|5083585ef5d5c945",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|45b0f6a524fcf801",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|7c5067eef0d3f49b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|e96cb2c44a055609",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|4492d370cab04b03",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|9ba04baffccf3a46",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ca9789c29d83c87f",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|pizzaexpress|14934e0dee471ba4",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|1d1072cd0ed8a042",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|37de6bfc1a8b90c6",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|9b5fca787160111a",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|6edc7c3b89a73b84",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|bf8ddff067fa50b2",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|c94fecc0903ca7bf",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|c47ee60879816efc",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|1a9d7d0387bf52f2",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|1142f81073553ecb",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|8d3b984c412832e5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|db86efc7aaafb740",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|cc8bdc5006b456b8",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|bd493578a9922468",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ab92acac2456213e",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|f82045dce4316e86",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|d203ceba584bbfa1",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|6f3814ba810e1cb5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|40fdb4a3c5c5fc24",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|e837967b74ec08f9",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|e432e79b1d19d91f",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|a84cb4d47ec1a43e",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|f6175b0dd9e3d8c5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|470b3a30c699dc0f",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|d4dc545f84988bfa",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|58cc3d4c44cd67de",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|534b1a7422bef343",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|8c6861655ef192db",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|824961b7523d1e2d",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|7678d081605a0a1b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|b3a23a67e5867ac2",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|23a4d1078f54d007",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|c9f17f83138ffbe7",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ccd6efca4d1d4319",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|a969544d10f594e2",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|2cfb79d27a3110c9",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|c148ef99ea595621",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ce942973fb17907b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|978d49016978584c",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|nandos|8a91fbaee54786c5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|c56cf466e5094fd1",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|7de7cc307c9386b4",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|4adc250d1542bdcd",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|bf55fec89944f5b0",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|57ec429f2114ad84",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|34078ab96adeda51",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|24748e42bd948f37",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|7b0da6f56302fda3",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ef7e13a3e531d897",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|a8da947db32b70eb",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|d28bc98c473e7e2b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|1cce5c1d4ad2b140",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|a73b8cf6d21b0f12",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|a4f0cb5c1f20df55",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|29984748bfb2b4a4",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ca03ed7cbeb7e715",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|e8a52c1ac0cf2339",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ab23923180776afa",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|fad76c2be67d0006",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|897e5e6dd6a1a208",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|8b32a8ef0fa1dee7",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|57582d2007555b43",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|12614fd222241ef1",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|f9d548c52c902e43",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|554725ffa8e7ccd3",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|c34814c4a23098bb",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|acc42b2aa06f74b6",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|296a3c775e916dc2",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|79f7cb9c336c7662",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|e2dce7e1428b96c8",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|a410e1ad6c375a2b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|6735a1e94904181d",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|05ea8bdf8e5a1626",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|dcb69fe3e5e37fb7",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|42c1d6525fbb8c3a",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|11571b10707ca3b7",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|8aa5eca59118a48e",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ac530978696838c5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|c3b4cdec31e6dc4b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|72c217ff6f9ba1f7",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|87710f3cc460bc63",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|fbc290d9239d4cd5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|b54ad9024fd380b1",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|6c9c6d91932d257c",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|70dc11c290846b8a",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|6e05bc709006f696",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|45282fefc9039baa",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|67d18c54e1ef0534",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|8b79dedcafece107",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|ask-italian|a25e1815071f2382",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|b68fd3f4587ebfb8",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|70e575ba5f2f1c1d",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|56cdf21497ff7733",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|5415c4b87879a17a",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|1c9668f5e9fbbb9f",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|82daf4c42eac88e6",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|0b44910717c84c81",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|f96ef5065fe59262",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|0953d3b4e5276f2a",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|ask-italian|ba3d49959e4732a3",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|ca7c4a6024fa1728",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|29da7d7ac4072540",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|bdba6d99715e5cf3",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|32c39788cde1a5fa",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|bd46f641307ccd76",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|4d45186d158b49f5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|b038cc7e0331d3e0",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|56ea263b1c6754d4",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|b09aa85d37457958",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|a02b60fe495ffd16",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|bfa462ea812ba9cb",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|17af888e9e2d4d31",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|9f68654513deeb3b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|2e16450f4008fee8",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|7c85915a1908266b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|tortilla|03f75d4243c94ac5",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|664d2b9b27130272",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|wasabi|77e6fdb861232b5d",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|63d05b02472c5de8",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|58b5eb077fb07c6b",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|510d18b8062d041d",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|38e4b1f34a365c86",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|e4b6ad44a060ca7f",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|56d8874cc1ae324c",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|c33f6b2819dbc3b0",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|0f72191a8e4ee705",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|883266e03d26c976",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|5b914d77700fa03d",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|starbucks|804d4efd23cbe73e",
+    "reason": "Conflicting same-name/serving source rows withheld together"
+  },
+  {
+    "id": "GB|nandos|23b3a89f2b3a8f25",
+    "chain": "Nando’s",
+    "name": "Baked Beans · Exclusive to Gatwick",
+    "source": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "sourcePage": "baked-beans:extras-breakfast#facts-0",
+    "reason": "Official source contradicts its own subset nutrient: sat=13.0 exceeds fat=0.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 81,
+      "p": 4.8,
+      "c": 0.2,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 13.0,
+      "na": 280.0
+    },
+    "sourceHash": "e8034eaebd5aa8bd612dd2e360215a829d29091ec0c21889c2f02a06448100ae",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|leon|a702250881fa4f64",
+    "chain": "LEON",
+    "name": "Kids Pick and Mix Meals",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "3ff46736-a2b4-4298-ade2-4b7b15779a6f",
+    "reason": "Variable pick-and-mix bundle has zero placeholder weight and nutrients, not a specified zero-calorie meal.",
+    "values": {
+      "cal": 0.0,
+      "p": 0.0,
+      "c": 0.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 0.0,
+      "na": 0.0
+    },
+    "sourceHash": "0a7d98a62b545e7be2102422f9d8d61c4d7c82cf35bab6a42232ee7e83fda070",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|leon|b6a808a6c8ff14e1",
+    "chain": "LEON",
+    "name": "Oat Milk Mocha",
+    "source": "https://leon.co/menu/",
+    "sourcePage": "miPzlXUxgbuXWXr43B1Zvii",
+    "reason": "Official source contradicts its own subset nutrient: sugar=29.0 exceeds c=28.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 285.0,
+      "p": 4.0,
+      "c": 28.0,
+      "fat": 16.0,
+      "f": 5.0,
+      "sugar": 29.0,
+      "sat": 9.0,
+      "na": 68.0
+    },
+    "sourceHash": "0a7d98a62b545e7be2102422f9d8d61c4d7c82cf35bab6a42232ee7e83fda070",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|wendys|ba491766107099ff",
+    "chain": "Wendy’s",
+    "name": "Chives",
+    "source": "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-%28002%29.pdf",
+    "sourcePage": 2,
+    "reason": "Source prints a zero-gram, all-zero condiment allocation; no meaningful loggable portion established.",
+    "values": {
+      "cal": 0.0,
+      "p": 0.0,
+      "c": 0.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 0.0,
+      "na": 0.0
+    },
+    "sourceHash": "a415f4907f3bee76285e51b188bf8e41f0c2034a6377ca05f0e4511164df00f4",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|five-guys|31ac4fc4285b9363",
+    "chain": "Five Guys",
+    "name": "Milkshakes (Including Big Kids Shake) — M&Ms®",
+    "source": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "sourcePage": 1,
+    "reason": "Official source contradicts its own subset nutrient: sugar=50.0 exceeds c=49.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 251.0,
+      "p": 2.1,
+      "c": 49.0,
+      "fat": 4.9,
+      "f": 1.2,
+      "sugar": 50.0,
+      "sat": 2.9,
+      "na": 152.0
+    },
+    "sourceHash": "5846847444521c5665d3b25e7955a7b3a7f1c79da6a6d18e2f59ffc6921853f0",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|five-guys|4a4c6b0975d0f846",
+    "chain": "Five Guys",
+    "name": "Little Milkshakes — M&Ms® Little",
+    "source": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "sourcePage": 1,
+    "reason": "Official source contradicts its own subset nutrient: sugar=25.0 exceeds c=24.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 126.0,
+      "p": 1.0,
+      "c": 24.0,
+      "fat": 2.5,
+      "f": 0.6,
+      "sugar": 25.0,
+      "sat": 1.5,
+      "na": 76.0
+    },
+    "sourceHash": "5846847444521c5665d3b25e7955a7b3a7f1c79da6a6d18e2f59ffc6921853f0",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|pizzaexpress|b4ccf06d6871b17f",
+    "chain": "PizzaExpress",
+    "name": "Passion Fruit Still Lemonade",
+    "source": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "sourcePage": 16,
+    "reason": "Official source contradicts its own subset nutrient: sugar=11.2 exceeds c=9.4. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 45.0,
+      "p": 0.2,
+      "c": 9.4,
+      "fat": 0.6,
+      "f": 1.2,
+      "sugar": 11.2,
+      "sat": 0.2,
+      "na": 8.0
+    },
+    "sourceHash": "0f9d9ae2de1babd73cbb64855cbd4d71a2bf0219642d69ec15aea9382e24cde4",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|tim-hortons|e41cae5f323f9941",
+    "chain": "Tim Hortons",
+    "name": "Dark Roast Coffee (Large)",
+    "source": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "sourcePage": 6,
+    "reason": "Official source contradicts its own subset nutrient: sat=3.6 exceeds fat=0.02. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 5.0,
+      "p": 0.61,
+      "c": 0.0,
+      "fat": 0.02,
+      "f": 0.0,
+      "sugar": 0.0,
+      "sat": 3.6,
+      "na": 12.0
+    },
+    "sourceHash": "8c9a0728efc01054530d2618e064b16e152d5e4ae239f03026142f716c54bc56",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|caffe-nero|7a516fe75551dd8a",
+    "chain": "Caffè Nero",
+    "name": "Irish Pork & Pancetta Sausage Roll (NI)",
+    "source": "https://www.caffenero.com/uk/menu/food/panini-tostati-nero-deli",
+    "sourcePage": "size--irish-pork-pancetta-sausage-roll-ni-",
+    "reason": "Official source contradicts its own subset nutrient: sugar=6.6 exceeds c=2.7. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 410.0,
+      "p": 15.5,
+      "c": 2.7,
+      "fat": 26.7,
+      "f": 1.7,
+      "sugar": 6.6,
+      "sat": 11.7,
+      "na": 452.0
+    },
+    "sourceHash": "2155ac0cffee56a466d207753e8bbfdefadd7be6c347d8706535b73783f7fb08",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|chipotle|34a30e2db02c65f5",
+    "chain": "Chipotle",
+    "name": "Romaine Lettuce (salad)",
+    "source": "https://www.chipotle.co.uk/nutrition-calculator",
+    "sourcePage": 1,
+    "reason": "Official source contradicts its own subset nutrient: sugar=1.1 exceeds c=0.0. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 15.0,
+      "p": 0.0,
+      "c": 0.0,
+      "fat": 0.0,
+      "f": 0.0,
+      "sugar": 1.1,
+      "sat": 0.0,
+      "na": 0.0
+    },
+    "sourceHash": "07ee7a2a740ac66975ed2377255f3916befac7db5692f5920e6d31f714439db2",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "GB|chopstix|78197336b560b32c",
+    "chain": "Chopstix",
+    "name": "KATSU CURRY SAUCE PORTION · Small",
+    "source": "https://chopstixnoodles.co.uk/menu/katsu-curry-sauce-portion/",
+    "sourcePage": "nutrition-column-1",
+    "reason": "Official source contradicts its own subset nutrient: sat=2.8 exceeds fat=0.8. Withheld pending source correction; not guessed.",
+    "values": {
+      "cal": 80.0,
+      "p": 1.1,
+      "c": 5.4,
+      "fat": 0.8,
+      "f": 0.7,
+      "sugar": 0.5,
+      "sat": 2.8,
+      "na": 312.0
+    },
+    "sourceHash": "1cbb5902d2aa4abb61ebe7159fd34c48699dacbb56bdb173908dc844b23aeefb",
+    "reviewedAt": "2026-10-18"
+  }
+]

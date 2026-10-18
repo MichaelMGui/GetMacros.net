@@ -1,2 +1,2 @@
-const E=require('../../js/meal-engine.js');require('../../js/meal-view.js');
+const E=require('../../js/meal-engine.js');global.window=global;require('../../js/meal-images.js');require('../../js/meal-view.js');
 let input='';process.stdin.on('data',s=>input+=s);process.stdin.on('end',()=>{const data=JSON.parse(input);global.GM_MARKETS=data.markets;const state=E.fromSearch('',data.rows),rows=E.results(data.rows,state);process.stdout.write(GetMacrosMealView.shell(data.rows,state,E,{rows:rows.slice(0,12).map(m=>GetMacrosMealView.card(m,data.rows.indexOf(m),{state})).join(''),count:rows.length}));});

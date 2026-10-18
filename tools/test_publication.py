@@ -1,7 +1,7 @@
 """Validate the delivered rebuild, not the historical content-generator CSS."""
 from pathlib import Path
 from html.parser import HTMLParser
-import json,re,csv
+import json,re,csv,gzip
 from normalize_calculator_layouts import Document
 ROOT=Path(__file__).resolve().parents[1]
 rows=[]
@@ -22,7 +22,7 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  assert len([n for n in doc.nodes if n['tag']=='h1'])==1,path.name
  assert text.count('data-theme-toggle')==0,path.name
  assert text.count('data-theme-choice="light"')==1 and text.count('data-theme-choice="dark"')==1,path.name
- assert text.count('class="appearance-picker"')==1,path.name
+ assert len([n for n in doc.nodes if 'appearance-picker' in n['attrs'].get('class','').split()])==1,path.name
  main=next(n for n in doc.nodes if n['tag']=='main')
  content=text[main['inner']:main['close']]
  plain=re.sub('<[^>]+>',' ',content)
@@ -34,9 +34,11 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  if 'js/meal-data.js' in text and path.name!='index.html':
   assert text.index('js/meal-data.js')<text.index('js/meal-provenance.js'),path.name
 css=(ROOT/'css/publication.css').read_text(encoding='utf-8')
-# 70 KB uncompressed budget accommodates shared quiz and original SVG-character states.
+# 80 KB includes the accessible native-dialog navigation, source panels and
+# shared liquid interaction system. Also bound the compressed transfer cost.
 # Lab timing and compressed sizes are recorded separately; this is a size guard, not a speed claim.
-assert len(css.encode())<70000
+assert len(css.encode())<80000
+assert len(gzip.compress(css.encode()))<18000
 assert 'prefers-reduced-motion:reduce' in css and 'html[data-theme=dark]' in css
 assert 'google.com, pub-2316153877942502, DIRECT, f08c47fec0942fa0' in (ROOT/'ads.txt').read_text()
 with (ROOT/'docs/publication-page-audit.csv').open('w',encoding='utf-8',newline='') as f:

@@ -2,7 +2,8 @@
 (function(){'use strict';
 const definitions=window.GM_MARKETS||{US:{name:'United States',home:'/',finder:'/restaurant-meal-finder.html',restaurants:'/restaurant-meal-guides.html',collection:'/healthy-fast-food.html',chains:null,currency:'USD'},CA:{name:'Canada',home:'/ca/en/',finder:'/ca/en/find-a-meal/',restaurants:'/ca/en/restaurants/',collection:'/ca/en/collections/protein-meals/',chains:['A&W Canada','Harvey’s','Tim Hortons'],currency:'CAD'}};
 const stored=()=>{try{return localStorage.getItem('gm-market-v1')}catch{return null}};
-const pathMarket=Object.keys(definitions).find(k=>k!=='US'&&location.pathname.startsWith('/'+k.toLowerCase()+'/en/'))||(document.documentElement.dataset.marketScope==='US'?'US':null);
+const explicitScope=document.documentElement.dataset.marketScope;
+const pathMarket=Object.keys(definitions).find(k=>k!=='US'&&location.pathname.startsWith('/'+k.toLowerCase()+'/en/'))||(definitions[explicitScope]?explicitScope:null);
 const requested=new URLSearchParams(location.search).get('market');
 const current=pathMarket||(definitions[requested]?requested:definitions[stored()]?stored():'US');
 function persist(value){try{localStorage.setItem('gm-market-v1',value);localStorage.setItem('gm-language-v1','en')}catch{}}
@@ -23,12 +24,12 @@ function switchURL(value,url=new URL(location.href)){
 document.documentElement.dataset.currentMarket=current;
 window.GetMacrosMarket=Object.freeze({current,definitions,route,switchURL});
 function init(){document.querySelectorAll('[data-current-market-label]').forEach(n=>n.textContent='© 2026 GetMacros · '+definitions[current].name+' menus');document.querySelectorAll('[data-country-select]').forEach(select=>select.value=current);document.querySelectorAll('[data-country-name]').forEach(n=>n.textContent=definitions[current].name);document.querySelectorAll('.country-picker>summary').forEach(n=>n.setAttribute('aria-label','Restaurant country: '+definitions[current].name+'. Choose country'));document.querySelectorAll('[data-country-flag]').forEach(n=>{const generic=n.querySelector('[data-market-flag]');if(generic)generic.setAttribute("href","/images/market-flags.svg#flag-"+current);else{n.querySelector('[data-flag-us]').hidden=current!=='US';n.querySelector('[data-flag-ca]').hidden=current!=='CA';}});
- document.querySelectorAll('[data-market-route]').forEach(a=>a.href=route(a.dataset.marketRoute));
+ document.querySelectorAll('[data-market-route]').forEach(a=>{const url=new URL(route(a.dataset.marketRoute),location.origin);if(a.hasAttribute('data-quiz-entry'))url.searchParams.set('quiz','1');a.href=url.href;});
  document.querySelectorAll('[data-market-context]').forEach(a=>{const url=new URL(a.href,location.href);url.searchParams.set('market',current);a.href=url.href;});
  document.querySelectorAll('.nav-search-panel').forEach(form=>{if(form.tagName!=='FORM')return;let input=form.querySelector('[name=market]');if(!input){input=document.createElement('input');input.type='hidden';input.name='market';form.append(input);}input.value=current;});
  document.querySelectorAll('[data-market-only]').forEach(a=>a.hidden=a.dataset.marketOnly!==current);
  if(current==='CA'){const hint=document.querySelector('[data-search-query=Chipotle]');if(hint){hint.dataset.searchQuery='Tim Hortons';hint.textContent='Tim Hortons';}const search=document.querySelector('#site-search');if(search)search.placeholder='Try protein latte or breakfast';}
- const pickers=[...document.querySelectorAll('.country-picker,.language-picker,.appearance-picker,.nav-search')];
+ const pickers=[...document.querySelectorAll('.country-picker,.language-picker,.appearance-picker,.nav-search')].filter(p=>p.tagName==='DETAILS');
  pickers.forEach(p=>p.addEventListener('toggle',()=>{if(p.open)pickers.filter(x=>x!==p).forEach(x=>x.open=false)}));
  document.addEventListener('click',e=>pickers.forEach(p=>{if(p.open&&!p.contains(e.target))p.open=false}));
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){const p=pickers.find(x=>x.open);if(p){e.preventDefault();p.open=false;p.querySelector('summary').focus();}}});
@@ -43,10 +44,10 @@ function init(){document.querySelectorAll('[data-current-market-label]').forEach
    // Links remain crawlable and support opening a deliberate country in a tab.
    if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
    persist(value);
-   if(value===current){e.preventDefault();const picker=a.closest('details');picker.open=false;picker.querySelector('summary').focus();}
+   if(value===current){e.preventDefault();const picker=a.closest('details');if(picker){picker.open=false;picker.querySelector('summary').focus();}else a.closest('dialog')?.close();}
   });
  });
- const countryPanel=document.querySelector('.country-panel');
+ const countryPanel=document.querySelector('.country-list,.country-panel');
  countryPanel?.addEventListener('keydown',e=>{
   const shown=choices.filter(a=>!a.closest('li').hidden),index=shown.indexOf(document.activeElement);
   if(index<0)return;

@@ -16,7 +16,7 @@ jobs:
   validate:
     name: Validate static site
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -67,6 +67,11 @@ jobs:
           python3 tools/clarity_release/test_mexico_classification.py
           python3 tools/clarity_release/test_character_media.py
           python3 tools/clarity_release/test_editorial.py
+          python3 tools/flagship_release/markets_test.py
+          python3 tools/flagship_release/markets_mexico_calories.py --test
+          python3 tools/flagship_release/uk_verify.py
+          python3 tools/flagship_release/data_audit.py
+          python3 tools/flagship_release/test_finder_payload.py
       - name: Expose failed validation output
         if: failure()
         run: python3 tools/ci_failure_summary.py

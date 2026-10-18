@@ -1,0 +1,14 @@
+{
+  "reviewedAt": "2026-10-18",
+  "scope": "native/app source scaffold, not an archived iOS binary",
+  "flows": [
+    {"data":"Food diary entries, portions, private notes, nutrient snapshots, recipes and favorites","storage":"WKWebView IndexedDB plus local protected Application Support archive","transmission":"None by this implementation; only user-initiated Files export","deletion":"Existing local delete plus native archive clear; app uninstall removes app storage"},
+    {"data":"Saved restaurant orders and UI preferences","storage":"Existing WKWebView origin local storage","transmission":"Only user-initiated public share/export","limitation":"Saved notebook is separate from diary JSON"},
+    {"data":"New grocery source shard paths","destination":"https://getmacros.net/data/branded-foods/","transmission":"GET, credentials omitted, no referrer; no raw diary or body inputs","storage":"Bounded 64 MiB local source-response cache","reviewGate":"Confirm hosting IP/access-log retention before App Store Connect privacy label"},
+    {"data":"Public share title/text/URL","destination":"iOS system share sheet after explicit action","transmission":"User chooses recipient; private diary is not included in ordinary public order shares"},
+    {"data":"Backup JSON file","destination":"iOS Files document picker after explicit action","transmission":"User-selected Files provider may sync the chosen file; warning states it contains private notes"},
+    {"data":"Official source references","destination":"External HTTPS URL after explicit tap","transmission":"Opens outside the bundled bridge; third-party policy applies"}
+  ],
+  "notAdded": ["accounts","analytics SDK","ad SDK","HealthKit","location","camera","microphone","push notifications","remote diary synchronization"],
+  "nativeVerification": "NOT RUN: macOS and Xcode unavailable"
+}

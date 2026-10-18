@@ -22,10 +22,49 @@ def dump(path,value): write(path,json.dumps(value,ensure_ascii=False,separators=
 def e(value): return escape(str(value),quote=True)
 def html_path(route): return 'index.html' if route=='/' else route.strip('/')+'/index.html' if route.endswith('/') else route.lstrip('/')
 def eligible(row): return row.get('category') not in ('component','sauce') and row.get('finderSupported',True)
+FINDER_FIELDS=('id','chain','restaurantId','restaurantMarketId','name','serving','servingGrams','servingMillilitres','market','country','region','language','category','meal','size','diet','cal','p','c','fat','f','na','sugar','sat','why','source','sourceDate','checked','retrievedAt','notes','sourceVersion','nutrientBounds','operatingRegion','localOperatingEntity','availabilityScope','finderSupported','verificationStatus','url','components')
+def finder_record(row):
+    """Keep all decision/snapshot fields; full evidence loads in food lookup."""
+    return {k:row[k] for k in FINDER_FIELDS if k in row}
+
+def finder_script(records):
+    """Pack repeated schema/text while preserving the exact runtime objects.
+
+    The browser still receives only its selected market, not the world registry.
+    Keep absent fields absent and explicit unknowns null. No lossy rounding.
+    """
+    rows=[finder_record(row) for row in records]
+    keys=[key for key in FINDER_FIELDS if any(key in row for row in rows)]
+    strings=Counter()
+    def count(value):
+        if isinstance(value,str):strings[value]+=1
+        elif isinstance(value,list):
+            for item in value:count(item)
+        elif isinstance(value,dict):
+            for item in value.values():count(item)
+    for row in rows:count(row)
+    pool=sorted(value for value,total in strings.items() if total>1 and len(value)>11)
+    indexes={value:i for i,value in enumerate(pool)}
+    compact=lambda value:json.dumps(value,ensure_ascii=False,separators=(',',':'),allow_nan=False)
+    def encode(value):
+        if isinstance(value,str) and value in indexes:return 's['+str(indexes[value])+']'
+        if isinstance(value,list):return '['+','.join(encode(item) for item in value)+']'
+        if isinstance(value,dict):return '{'+','.join(compact(key)+':'+encode(item) for key,item in value.items())+'}'
+        return compact(value)
+    packed='['+','.join('['+','.join(encode(row[key]) if key in row else 'void 0' for key in keys)+']' for row in rows)+']'
+    return 'window.GM_MEALS=(()=>{const k='+compact(keys)+',s='+compact(pool)+',r='+packed+';return r.map(v=>Object.fromEntries(v.flatMap((x,i)=>x===undefined?[]:[[k[i],x]])));})();window.GM_THRESHOLDS={protein:25,energy:600,light:400,fibre:5,sodium:600};\n'
 def action(route,label): return '<a class="text-action" href="'+e(route)+'">'+e(label)+' →</a>'
 def section(title,body): return '<section><h2>'+e(title)+'</h2>'+body+'</section>'
 def table(rows,caption,**kwargs):
     rendered=source_table(rows,caption,**kwargs).replace('aria-label="Canadian serving','aria-label="Source serving')
+    records=iter(rows)
+    def actions(match):
+        row=next(records)
+        if not row.get('id') or not row.get('market'):return match[0]
+        token='order:'+row['market']+':'+row['id']
+        links='<span class="table-actions"><a href="/compare-foods.html?'+e(urlencode({'market':row['market'],'item':token,'append':'1'}))+'">Compare</a><a href="/food-diary.html?'+e(urlencode({'market':row['market'],'food':token}))+'">Log</a></span>'
+        return match[0][:-5]+links+'</th>'
+    rendered=re.sub(r'<tr><th scope="row">.*?</th>',actions,rendered,flags=re.S)
     label='source-table-'+hashlib.sha256((caption+'|'.join(r['name'] for r in rows)).encode()).hexdigest()[:12]
     # Keep the caption outside the horizontal scroll area. A native caption
     # otherwise takes the wide table's width and disappears off narrow screens.
@@ -33,7 +72,7 @@ def table(rows,caption,**kwargs):
     rendered=rendered.replace('<table','<table aria-labelledby="'+label+'"',1)
     return '<p id="'+label+'" data-source-table-caption>'+e(caption)+'</p>'+rendered
 
-def integrate():
+def integrate(extra=None):
     additions=read('tools/global_coverage_2026_10_17/restaurant-records.json')
     new_market_file=ROOT/'tools/global_coverage_2026_10_17/restaurant-newmarkets-records.json'
     if new_market_file.exists():
@@ -43,14 +82,21 @@ def integrate():
     if supplement.exists():
         newer=read(supplement.relative_to(ROOT))
         additions['records']+=newer['records'];additions['updates']+=newer.get('updates',[])
+    if extra:
+        additions['records']+=extra['records'];additions['updates']+=extra.get('updates',[])
     registry=read('js/order-registry.json')
-    incoming=additions['records']+additions['updates'];ids={r['id'] for r in incoming}
+    if extra and extra.get('withdrawnIds'):
+        withdrawn=set(extra['withdrawnIds']);registry['records']=[r for r in registry['records'] if r.get('id') not in withdrawn]
+    # Later reviewed source refreshes replace a prior batch identity; never
+    # produce two current records for the same stable ID.
+    incoming=list({r['id']:r for r in additions['records']+additions['updates']}.values());ids={r['id'] for r in incoming}
     registry['records']=[r for r in registry['records'] if r.get('id') not in ids]+incoming
     explicit=[r['id'] for r in registry['records'] if r.get('id')]
     assert len(set(explicit))==len(explicit)
     dump('js/order-registry.json',registry)
     markets=json.loads(re.search(r'window.GM_MARKETS=(.*);',(ROOT/'js/market-definitions.js').read_text(encoding='utf-8'))[1])
     presence=read('data/restaurant-presence.json');upserts=read('tools/global_coverage_2026_10_17/restaurant-presence-upserts.json')['relationships']
+    if extra:upserts+=extra.get('presenceUpserts',[])
     if new_market_file.exists():
         markets.update(read('tools/global_coverage_2026_10_17/restaurant-newmarkets-definitions.json'))
         upserts+=read('tools/global_coverage_2026_10_17/restaurant-newmarkets-presence-upserts.json')['relationships']
@@ -76,7 +122,16 @@ def integrate():
         if code in ('FR','IN','SG','ZA'):
             rows=sorted([r for r in registry['records'] if r['market']==code and eligible(r) and r.get('p') is not None and r['p']>=25],key=lambda r:-r['p'])[:12]
             product.page(info['collection'],info['name']+' restaurant servings with 25 g protein','Compare named '+info['name']+' portions with at least 25 g protein, alongside calories, carbs, fat and available sodium.','<article class="food-app food-reading">'+product.head('Protein options in '+info['name']+'.','Compare the named serving, not just the protein number.')+'<p>'+e(info['officialOperatorScope'])+'</p>'+table(rows,'At least 25 g protein per listed source serving. No healthiest-food ranking or full-menu claim.')+action(info['finder']+'?minProtein=25','Refine the selection')+'</article>','collection',market=code)
-    relations={r['id']:r for r in presence['relationships']};relations.update({r['id']:r for r in upserts})
+    relations={r['id']:r for r in presence['relationships']}
+    brand_key=lambda value:re.sub(r'\W+','',value.casefold())
+    for item in upserts:
+        item=dict(item);previous=relations.get(item['id'],{})
+        aliases=set(previous.get('previousPresenceIds',[]));history=list(previous.get('presenceHistory',[]))
+        for key,old in list(relations.items()):
+            if key!=item['id'] and old['country']==item['country'] and brand_key(old['restaurantBrand'])==brand_key(item['restaurantBrand']):
+                aliases.add(key);aliases.update(old.get('previousPresenceIds',[]));history.append({'id':key,'presence':old.get('presence'),'nutritionSources':old.get('nutritionSources',[])});relations.pop(key)
+        if aliases:item['previousPresenceIds']=sorted(aliases);item['presenceHistory']=list({json.dumps(h,sort_keys=True):h for h in history}.values())
+        relations[item['id']]=item
     for key,r in relations.items():
         local=[x for x in registry['records'] if x.get('restaurantMarketId')==key or (x['market']==r['country'] and x['chain']==r['restaurantBrand'])]
         r['trackedRecords']=len(local);r['finderRecords']=sum(eligible(x) for x in local)
@@ -90,7 +145,7 @@ def integrate():
         local=[r for r in registry['records'] if r['market']==code];finder=[r for r in local if eligible(r)]
         info['chains']=sorted({r['chain'] for r in finder})
         name='canada' if code=='CA' else code.lower()
-        write('js/'+name+'-meals.js','window.GM_MEALS='+json.dumps(finder,ensure_ascii=False,separators=(',',':'))+';window.GM_THRESHOLDS={protein:25,energy:600,light:400,fibre:5,sodium:600};\n')
+        write('js/'+name+'-meals.js',finder_script(finder))
         if code=='CA':
             ca=read('js/canada-meals.json');ca['records']=local;dump('js/canada-meals.json',ca)
         path=html_path(info['finder']);text=(ROOT/path).read_text(encoding='utf-8')
@@ -164,9 +219,10 @@ def guides(additions,registry,markets,presence):
         route=next(r['url'] for r in local if r.get('id') in {x['id'] for x in additions['records']+additions['updates']})
         if not route.startswith('/'):route='/'+route
         country=markets[code]['name'];finder=markets[code]['finder']+'?'+urlencode(dict(chain=chain))
-        body='<article class="food-app food-reading">'+product.head(chain+' in '+country+'.','Check the exact serving before choosing or logging an order.')
+        calories_only=all(all(r.get(k) is None for k in ('p','c','fat')) for r in local)
+        body='<article class="food-app food-reading">'+product.head(chain+' in '+country+'.','Calories are published for these named sizes. Protein, carbs and fat remain unknown.' if calories_only else 'Check the exact serving before choosing or logging an order.')
         body+='<nav class="food-actions">'+action(finder,'Find a meal')+' '+action('/food-library.html?'+urlencode(dict(market=code,type='restaurant',q=chain)),'Search every tracked item')+'</nav>'
-        body+=section('A closer comparison',''.join('<p>'+action(url,label)+'</p>' for url,label in by_chain.get((code,chain),[])))
+        if by_chain.get((code,chain)):body+=section('A closer comparison',''.join('<p>'+action(url,label)+'</p>' for url,label in by_chain[(code,chain)]))
         for category,label in [('entree','Meals & mains'),('breakfast','Breakfast'),('side','Sides'),('drink','Drinks'),('component','Ingredients'),('sauce','Sauces')]:
             rows=[r for r in local if (r.get('category')=='entree' and r.get('meal')=='breakfast' and category=='breakfast') or (r.get('category')==category and not(category=='entree' and r.get('meal')=='breakfast'))]
             if rows:body+=section(label,table(rows,'Per named '+country+' serving; sides and drinks are separate unless included in the name.'))
@@ -183,7 +239,9 @@ def guides(additions,registry,markets,presence):
             extra=extra.replace('Fibre','Fiber')
             write(html_path(route),text.replace('</main>','<!-- global-menu-selection:start -->'+extra+'<!-- global-menu-selection:end --></main>',1))
         else:
-            product.page(route,chain+' '+country+' nutrition: menu portions & macros','Compare '+str(len(local))+' tracked '+chain+' servings in '+country+'. Check calories, protein, carbs, fat, exact portions and official source editions.',body,'restaurant',market=code)
+            title=chain+' '+country+(' drink calories: named menu sizes' if calories_only else ' nutrition: menu portions & macros')
+            description=('See '+str(len(local))+' official '+country+' drink sizes and their calories. Protein, carbs and fat are not published in this source.' if calories_only else 'Compare '+str(len(local))+' tracked '+chain+' servings in '+country+'. Check calories, protein, carbs, fat, exact portions and official source editions.')
+            product.page(route,title,description,body,'restaurant',market=code)
     for code,info in markets.items():
         relationships=[r for r in presence['relationships'] if r['country']==code]
         rows=[]

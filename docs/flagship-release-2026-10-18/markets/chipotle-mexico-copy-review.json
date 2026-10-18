@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-10-18",
+  "officialAnnouncement": "https://ir.chipotle.com/2026-07-13-CHIPOTLE-ENTERS-MEXICO-WITH-FIRST-RESTAURANT-IN-NUEVO-LEON",
+  "announcementDate": "2026-07-13",
+  "announcedOpeningDate": "2026-07-16",
+  "findings": [
+    {
+      "route": "/articles.html",
+      "classification": "adjacent unrelated article links; not an absence claim",
+      "text": "Chipotle, CAVA and Sweetgreen bowls with exact build descriptions, protein, fiber, sodium and source-date boundaries.Subway Mexico: oven-roasted, breaded or teriyaki chicken?Compare exact Mexico"
+    }
+  ],
+  "noStalePublicClaimFound": true,
+  "recommendation": "Record announced July 16 Nuevo León opening separately from local nutrition availability. Source is an opening announcement; no local numeric nutrition imported. No older blanket absence statement should be published.",
+  "excludedFromPublicScan": [
+    "native/app/www/",
+    "native/app/ios/App/App/public/"
+  ]
+}

@@ -1,0 +1,361 @@
+[
+  {
+    "command": [
+      "tools/flagship_release/markets_test.py"
+    ],
+    "exit": 0,
+    "seconds": 1.26,
+    "output": "test_bounded_and_missing_values_remain_unknown (__main__.MarketReleaseTests.test_bounded_and_missing_values_remain_unknown) ... ok\ntest_cfa_markets_and_breakfast (__main__.MarketReleaseTests.test_cfa_markets_and_breakfast) ... ok\ntest_country_identities_and_counts (__main__.MarketReleaseTests.test_country_identities_and_counts) ... ok\ntest_every_market_candidate_has_disposition (__main__.MarketReleaseTests.test_every_market_candidate_has_disposition) ... ok\ntest_gallon_catering_and_sauce_not_person_meal (__main__.MarketReleaseTests.test_gallon_catering_and_sauce_not_person_meal) ... ok\ntest_independent_audit_dispositions (__main__.MarketReleaseTests.test_independent_audit_dispositions) ... ok\ntest_integration_is_idempotent_and_preserves_unrelated (__main__.MarketReleaseTests.test_integration_is_idempotent_and_preserves_unrelated) ... ok\ntest_irish_serving_variants_are_distinct (__main__.MarketReleaseTests.test_irish_serving_variants_are_distinct) ... ok\ntest_pizza_units_not_whole_pizza (__main__.MarketReleaseTests.test_pizza_units_not_whole_pizza) ... ok\ntest_precise_component_totals_and_nulls (__main__.MarketReleaseTests.test_precise_component_totals_and_nulls) ... ok\ntest_primary_source_capture_hashes (__main__.MarketReleaseTests.test_primary_source_capture_hashes) ... ok\ntest_sg_category_table_order (__main__.MarketReleaseTests.test_sg_category_table_order) ... ok\ntest_source_versions_are_reproducible (__main__.MarketReleaseTests.test_source_versions_are_reproducible) ... ok\ntest_unresolved_pouch_mass_is_not_scaled (__main__.MarketReleaseTests.test_unresolved_pouch_mass_is_not_scaled) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 1.071s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/flagship_release/uk_verify.py"
+    ],
+    "exit": 0,
+    "seconds": 1.25,
+    "output": "test_01_scope_counts_and_unique_identities (__main__.UKReleaseTests.test_01_scope_counts_and_unique_identities) ... ok\ntest_02_units_unknowns_and_numeric_integrity (__main__.UKReleaseTests.test_02_units_unknowns_and_numeric_integrity) ... ok\ntest_03_source_capture_hashes_and_provenance (__main__.UKReleaseTests.test_03_source_capture_hashes_and_provenance) ... ok\ntest_04_source_and_verification_dates_remain_distinct (__main__.UKReleaseTests.test_04_source_and_verification_dates_remain_distinct) ... ok\ntest_05_salt_sodium_conversion (__main__.UKReleaseTests.test_05_salt_sodium_conversion) ... ok\ntest_06_chickfila_per100g_serving_arithmetic (__main__.UKReleaseTests.test_06_chickfila_per100g_serving_arithmetic) ... ok\ntest_07_wasabi_mixed_nutrient_basis (__main__.UKReleaseTests.test_07_wasabi_mixed_nutrient_basis) ... ok\ntest_08_nandos_native_units_and_subregions (__main__.UKReleaseTests.test_08_nandos_native_units_and_subregions) ... ok\ntest_09_leon_explicit_ingredients_and_weights (__main__.UKReleaseTests.test_09_leon_explicit_ingredients_and_weights) ... ok\ntest_10_component_rows_not_claimed_as_complete_orders (__main__.UKReleaseTests.test_10_component_rows_not_claimed_as_complete_orders) ... ok\ntest_11_unknown_fibre_not_inferred_as_zero (__main__.UKReleaseTests.test_11_unknown_fibre_not_inferred_as_zero) ... ok\ntest_12_edition_and_portion_reference_anchors (__main__.UKReleaseTests.test_12_edition_and_portion_reference_anchors) ... ok\ntest_13_airport_and_recipe_portions_distinct (__main__.UKReleaseTests.test_13_airport_and_recipe_portions_distinct) ... ok\ntest_14_withdrawals_do_not_survive_upsert (__main__.UKReleaseTests.test_14_withdrawals_do_not_survive_upsert) ... ok\ntest_15_market_preservation_and_idempotence (__main__.UKReleaseTests.test_15_market_preservation_and_idempotence) ... ok\ntest_16_presence_is_not_synonymous_with_finder_support (__main__.UKReleaseTests.test_16_presence_is_not_synonymous_with_finder_support) ... ok\ntest_17_all_named_candidate_dispositions_and_reports (__main__.UKReleaseTests.test_17_all_named_candidate_dispositions_and_reports) ... ok\ntest_18_no_unlicensed_photos_or_unreviewed_customization_claim (__main__.UKReleaseTests.test_18_no_unlicensed_photos_or_unreviewed_customization_claim) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.966s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/master_release/test_branded_import.py"
+    ],
+    "exit": 0,
+    "seconds": 0.14,
+    "output": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.005s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/master_release/test_restaurants.py"
+    ],
+    "exit": 0,
+    "seconds": 0.12,
+    "output": "test_booster_sizes_and_micronutrients (__main__.RestaurantIntegrity.test_booster_sizes_and_micronutrients) ... ok\ntest_core_completeness_is_exact (__main__.RestaurantIntegrity.test_core_completeness_is_exact) ... ok\ntest_dominos_exact_component_sums (__main__.RestaurantIntegrity.test_dominos_exact_component_sums) ... ok\ntest_guides_have_distinct_useful_content (__main__.RestaurantIntegrity.test_guides_have_distinct_useful_content) ... ok\ntest_market_and_identity (__main__.RestaurantIntegrity.test_market_and_identity) ... ok\ntest_mary_complete_order_arithmetic (__main__.RestaurantIntegrity.test_mary_complete_order_arithmetic) ... ok\ntest_mary_source_errors_not_guessed (__main__.RestaurantIntegrity.test_mary_source_errors_not_guessed) ... ok\ntest_pizza_pizza_contradiction_is_null (__main__.RestaurantIntegrity.test_pizza_pizza_contradiction_is_null) ... ok\ntest_presence_and_coverage_are_separate (__main__.RestaurantIntegrity.test_presence_and_coverage_are_separate) ... ok\ntest_subway_same_named_different_builds (__main__.RestaurantIntegrity.test_subway_same_named_different_builds) ... ok\ntest_unknown_pizza_nova_macros (__main__.RestaurantIntegrity.test_unknown_pizza_nova_macros) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.010s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/master_completion/test_restaurants.py"
+    ],
+    "exit": 0,
+    "seconds": 0.4,
+    "output": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.299s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/master_completion/grocery_test_off.py"
+    ],
+    "exit": 0,
+    "seconds": 0.32,
+    "output": ".................................\n----------------------------------------------------------------------\nRan 33 tests in 0.140s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/global_coverage_2026_10_17/restaurant_verify.py"
+    ],
+    "exit": 0,
+    "seconds": 0.47,
+    "output": "test_australian_named_mini_recipe (__main__.RestaurantEvidenceTests.test_australian_named_mini_recipe) ... ok\ntest_canadian_chicken_anchor_and_real_piece_unit (__main__.RestaurantEvidenceTests.test_canadian_chicken_anchor_and_real_piece_unit) ... ok\ntest_every_existing_country_has_actual_new_macros (__main__.RestaurantEvidenceTests.test_every_existing_country_has_actual_new_macros) ... ok\ntest_exact_published_zero_salt_converts_and_bounds_do_not (__main__.RestaurantEvidenceTests.test_exact_published_zero_salt_converts_and_bounds_do_not) ... ok\ntest_inconsistent_official_rows_are_withheld (__main__.RestaurantEvidenceTests.test_inconsistent_official_rows_are_withheld) ... ok\ntest_ireland_markers_are_not_british_availability (__main__.RestaurantEvidenceTests.test_ireland_markers_are_not_british_availability) ... ok\ntest_japanese_direct_sodium_is_not_recomputed_from_rounded_salt (__main__.RestaurantEvidenceTests.test_japanese_direct_sodium_is_not_recomputed_from_rounded_salt) ... ok\ntest_less_than_is_not_zero_or_exact_upper_bound (__main__.RestaurantEvidenceTests.test_less_than_is_not_zero_or_exact_upper_bound) ... ok\ntest_mexican_named_builds_no_size_inference (__main__.RestaurantEvidenceTests.test_mexican_named_builds_no_size_inference) ... ok\ntest_nz_large_salad_is_published_not_doubled (__main__.RestaurantEvidenceTests.test_nz_large_salad_is_published_not_doubled) ... ok\ntest_salt_conversion_and_unavailable_fibre (__main__.RestaurantEvidenceTests.test_salt_conversion_and_unavailable_fibre) ... ok\ntest_source_refresh_keeps_original_ids (__main__.RestaurantEvidenceTests.test_source_refresh_keeps_original_ids) ... ok\ntest_unique_new_ids_and_source_hashes (__main__.RestaurantEvidenceTests.test_unique_new_ids_and_source_hashes) ... ok\ntest_us_real_portions_and_no_combo_invention (__main__.RestaurantEvidenceTests.test_us_real_portions_and_no_combo_invention) ... ok\ntest_versions_describe_final_rows (__main__.RestaurantEvidenceTests.test_versions_describe_final_rows) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.342s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/global_coverage_2026_10_17/restaurant_newmarkets_verify.py"
+    ],
+    "exit": 0,
+    "seconds": 0.5,
+    "output": "test_definitions_presence_and_briefs_match_actual_records (__main__.NewMarketTests.test_definitions_presence_and_briefs_match_actual_records) ... ok\ntest_four_actual_markets_have_macro_records (__main__.NewMarketTests.test_four_actual_markets_have_macro_records) ... ok\ntest_france_bounds_and_source_alcohol_energy (__main__.NewMarketTests.test_france_bounds_and_source_alcohol_energy) ... ok\ntest_france_current_edition_is_linked_and_french_names_preserved (__main__.NewMarketTests.test_france_current_edition_is_linked_and_french_names_preserved) ... ok\ntest_france_volume_is_not_mass_or_an_unspecified_cup (__main__.NewMarketTests.test_france_volume_is_not_mass_or_an_unspecified_cup) ... ok\ntest_india_missing_carbs_are_not_invented (__main__.NewMarketTests.test_india_missing_carbs_are_not_invented) ... ok\ntest_india_product_values_are_not_rda_columns (__main__.NewMarketTests.test_india_product_values_are_not_rda_columns) ... ok\ntest_indian_operator_proof_and_visible_region (__main__.NewMarketTests.test_indian_operator_proof_and_visible_region) ... ok\ntest_published_zero_salt_and_zero_number_parsing (__main__.NewMarketTests.test_published_zero_salt_and_zero_number_parsing) ... ok\ntest_singapore_fountain_reference_is_not_a_complete_cup (__main__.NewMarketTests.test_singapore_fountain_reference_is_not_a_complete_cup) ... ok\ntest_singapore_nine_category_sources_and_native_units (__main__.NewMarketTests.test_singapore_nine_category_sources_and_native_units) ... ok\ntest_source_hashes_are_actual_saved_bytes (__main__.NewMarketTests.test_source_hashes_are_actual_saved_bytes) ... ok\ntest_south_africa_conflicting_small_and_identical_variants (__main__.NewMarketTests.test_south_africa_conflicting_small_and_identical_variants) ... ok\ntest_south_africa_energy_conversion_has_correct_scale (__main__.NewMarketTests.test_south_africa_energy_conversion_has_correct_scale) ... ok\ntest_unique_ids_and_final_versions (__main__.NewMarketTests.test_unique_ids_and_final_versions) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.304s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/global_coverage_2026_10_17/restaurant-supplement-verify.py"
+    ],
+    "exit": 0,
+    "seconds": 0.19,
+    "output": "test_actual_country_counts_and_no_updates (__main__.SupplementTests.test_actual_country_counts_and_no_updates) ... ok\ntest_brief_arithmetic_and_presence_match_rows (__main__.SupplementTests.test_brief_arithmetic_and_presence_match_rows) ... ok\ntest_canadian_whopper_matches_actual_rendered_panel (__main__.SupplementTests.test_canadian_whopper_matches_actual_rendered_panel) ... ok\ntest_country_ingredient_comparison_has_actual_source_statements (__main__.SupplementTests.test_country_ingredient_comparison_has_actual_source_statements) ... ok\ntest_country_payloads_are_distinct (__main__.SupplementTests.test_country_payloads_are_distinct) ... ok\ntest_every_nutrient_is_exact_from_its_own_country_item (__main__.SupplementTests.test_every_nutrient_is_exact_from_its_own_country_item) ... ok\ntest_exact_source_files_hashes_and_publication_size (__main__.SupplementTests.test_exact_source_files_hashes_and_publication_size) ... ok\ntest_mcdonalds_and_historical_pdf_not_substituted (__main__.SupplementTests.test_mcdonalds_and_historical_pdf_not_substituted) ... ok\ntest_missing_edition_is_not_retrieval_date (__main__.SupplementTests.test_missing_edition_is_not_retrieval_date) ... ok\ntest_no_gram_or_volume_guesses_and_only_named_servings (__main__.SupplementTests.test_no_gram_or_volume_guesses_and_only_named_servings) ... ok\ntest_published_standard_field_is_not_base_nutrition (__main__.SupplementTests.test_published_standard_field_is_not_base_nutrition) ... ok\ntest_repeated_navigation_rows_are_deduplicated (__main__.SupplementTests.test_repeated_navigation_rows_are_deduplicated) ... ok\ntest_source_zero_is_retained_without_missing_zero_fill (__main__.SupplementTests.test_source_zero_is_retained_without_missing_zero_fill) ... ok\ntest_us_direct_sodium_does_not_use_inconsistent_rounded_salt (__main__.SupplementTests.test_us_direct_sodium_does_not_use_inconsistent_rounded_salt) ... ok\ntest_versions_and_provenance_describe_final_rows (__main__.SupplementTests.test_versions_and_provenance_describe_final_rows) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.049s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/test_growth_release.py"
+    ],
+    "exit": 0,
+    "seconds": 0.11,
+    "output": "PASS 20 substantive integrations, 42 exact record checks, comparator IDs, source dates, 25-chain directory, privacy disclosure placement and dependency ordering.\n"
+  },
+  {
+    "command": [
+      "tools/test-release-content.py"
+    ],
+    "exit": 0,
+    "seconds": 0.28,
+    "output": "PASS: {'resources': 33, 'uniqueIntents': 33, 'reproducedSourceFactEntries': 183, 'visibleNutritionRows': 142, 'snapshotInputRecords': 41, 'auditedFinderRecords': 43, 'ingredientSums': 7, 'sourceWireRoundtrip': 'lossless', 'partialCheckDates': 'preserved', 'visualInspection': 'not performed by this script'}\n"
+  },
+  {
+    "command": [
+      "tools/clarity_release/test_editorial.py"
+    ],
+    "exit": 0,
+    "seconds": 0.92,
+    "output": "Clarity editorial: 11 distinct new articles, 10 substantial existing-page additions; indexes untouched.\nClarity editorial: 11 distinct new articles, 10 substantial existing-page additions; indexes untouched.\n.............\n----------------------------------------------------------------------\nRan 13 tests in 0.455s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/clarity_release/test_mexico_classification.py"
+    ],
+    "exit": 0,
+    "seconds": 0.13,
+    "output": "test_all_source_sections_and_count (__main__.MexicanSectionRegression.test_all_source_sections_and_count) ... ok\ntest_condiment_mention_does_not_make_it_a_sub (__main__.MexicanSectionRegression.test_condiment_mention_does_not_make_it_a_sub) ... ok\ntest_desserts_and_sides_are_exact_food_servings (__main__.MexicanSectionRegression.test_desserts_and_sides_are_exact_food_servings) ... ok\ntest_full_pinned_source_parse_if_present (__main__.MexicanSectionRegression.test_full_pinned_source_parse_if_present) ... ok\ntest_individual_meat_is_not_sandwich (__main__.MexicanSectionRegression.test_individual_meat_is_not_sandwich) ... ok\ntest_missing_macros_disable_finder (__main__.MexicanSectionRegression.test_missing_macros_disable_finder) ... ok\ntest_page_two_breads_keep_source_section_and_existing_ids (__main__.MexicanSectionRegression.test_page_two_breads_keep_source_section_and_existing_ids) ... ok\ntest_pure_parser_preserves_legacy_ids_but_not_wrong_labels (__main__.MexicanSectionRegression.test_pure_parser_preserves_legacy_ids_but_not_wrong_labels) ... ok\ntest_true_complete_turkey_identity_preserved (__main__.MexicanSectionRegression.test_true_complete_turkey_identity_preserved) ... ok\ntest_unknown_heading_fails_closed (__main__.MexicanSectionRegression.test_unknown_heading_fails_closed) ... ok\ntest_values_country_source_and_old_nutrition_review_preserved (__main__.MexicanSectionRegression.test_values_country_source_and_old_nutrition_review_preserved) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.025s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/flagship_release/markets_mexico_calories.py",
+      "--test"
+    ],
+    "exit": 0,
+    "seconds": 0.12,
+    "output": "test_capture_and_versions (__main__.MexicoCaloriesTests.test_capture_and_versions) ... ok\ntest_country_portions_units_and_no_customization (__main__.MexicoCaloriesTests.test_country_portions_units_and_no_customization) ... ok\ntest_every_source_size (__main__.MexicoCaloriesTests.test_every_source_size) ... ok\ntest_independent_latte_page (__main__.MexicoCaloriesTests.test_independent_latte_page) ... ok\ntest_known_zero_does_not_create_zero_macros (__main__.MexicoCaloriesTests.test_known_zero_does_not_create_zero_macros) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/test_macro_math.js"
+    ],
+    "exit": 0,
+    "seconds": 0.06,
+    "output": "PASS: conversions, BMR, TDEE, goal adjustments and macro energy balance.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/test-meal-view.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.07,
+    "output": "PASS shared meal presentation: unknown values, genuine zero, units, servings, sources, escaping and factual match reasons.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/product_release/test-ingredient-comparison.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.07,
+    "output": "PASS: source-label plurals, original labels retained, no preparation/bread/sauce equivalence inferred, immutable inputs.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/test-growth-tools.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.13,
+    "output": "PASS Known subtotals preserve genuine zero and missing values\nPASS Serving quantities reject zero, fraction,negative and excessive entries\nPASS Assembled snapshots retain quantities, source trail and unknown totals\nPASS Receipt quantities and currency use actual whole-line payment\nPASS Receipt rejects unavailable values, unsupportedFX and zero protein\nPASS Exact comparison never normalises country or portion differences\nPASS Changed source snapshot is flagged, not silently overwritten\nPASS Notebook survives storage failures without false saved-state success\nPASS Notes stay local and source versions omit personal notes\n9 meaningful order-tool checks passed.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/test-companion-engine.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.22,
+    "output": "PASS Calorie maximum is strict and inclusive \nPASS Protein minimum is strict and inclusive; optional fiber/sodium do not imply missing macros \nPASS Complete macros require calories, protein, carbs and fat, with genuine zero preserved \nPASS Fiber minimum uses the actual value and includes its boundary \nPASS Sodium maximum uses milligrams and includes its boundary \nPASS Fiber and sodium limits exclude unknown nutrient values \nPASS Unknown calories and protein are excluded by explicit limits \nPASS Combined limits never relax after a no-match result \nPASS Explicit zero is a real supported limit \nPASS Optional missing values remain null without fabricated zero \nPASS Restaurant and meal-time selections use OR within their group \nPASS Ingredient selections are strict supported exclusions \nPASS Size preference changes rank without excluding other sizes \nPASS Soft priorities retain incomplete meals when explicitly included \nPASS Protein preference ranks a supported protein-tagged order first \nPASS Explicit numeric sorts are predictable \nPASS Missing values sort last when incomplete records are included \nPASS URL state round trip preserves all supported selections and limits \nPASS Unsupported, repeated and out-of-range URL values are normalized \nPASS Filtering/ranking do not mutate the dataset \nPASS Production provenance expands losslessly and preserves partial-source dates \nPASS No preference preserves catalogue order without hidden nutrient ranking \n22/22 release engine checks passed.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/play_release/test-rules.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.25,
+    "output": "PASS: 2240 deterministic solvable games across 56 rules; invalid inputs, empty values, overlap, repeated tiles, completion and pause guards.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/master_release/test-branded-search.cjs"
+    ],
+    "exit": 0,
+    "seconds": 1.83,
+    "output": "{\n  \"pass\": true,\n  \"realSourceTests\": 26,\n  \"preciseSearchBytes\": 2149903,\n  \"preciseSearchRequests\": 50,\n  \"sourceCounts\": [\n    {\n      \"source\": \"off\",\n      \"count\": 245359\n    },\n    {\n      \"source\": \"usda\",\n      \"count\": 446810\n    },\n    {\n      \"source\": \"retailer-ca\",\n      \"count\": 4\n    },\n    {\n      \"source\": \"cnf\",\n      \"count\": 5993\n    }\n  ]\n}\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/master_release/test-branded-integrity.cjs"
+    ],
+    "exit": 0,
+    "seconds": 45.44,
+    "output": "{\n  \"pass\": true,\n  \"recordsInspected\": 698166,\n  \"bySource\": {\n    \"usda\": 446810,\n    \"retailer-ca\": 4,\n    \"cnf\": 5993,\n    \"off\": 245359\n  },\n  \"unknownNutrientFieldsPreserved\": 12829154,\n  \"originalUsdaReferenceCount\": 13578,\n  \"usdaVersionGroups\": 424903,\n  \"usdaHistoricalRows\": 21907,\n  \"validUsdaRepeatedFormulations\": 9\n}\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/master_release/test-diary-meals.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.33,
+    "output": "PASS: 9905 source-backed browse choices; 12 groups; source identity, portions, nulls, bounded loading and offline catalogue.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/master_completion/test-source-ui.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.06,
+    "output": "PASS source-license preservation, backward-compatible snapshots, private backup validation, public-only brand shortcuts and attributed share-card contracts\nPASS source-version grouping preserves distinct flavours, packages and markets; supported restaurant minerals retain exact units/provenance\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/clarity_release/test-comparison.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.14,
+    "output": "PASS: persisted comparison, market identity, edition/portion links, unknowns, equal weights, malformed storage and public-only sharing.\nPASS: cold restaurant deep link resolves its cached local record without a nonexistent shard.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/product_release/test-food.cjs"
+    ],
+    "exit": 0,
+    "seconds": 1.16,
+    "output": "PASS Food search tolerates a common typo without changing preparation or market\nPASS Ingredient lookup puts olive oil before dishes merely containing it\nPASS Imported profiles have stable IDs, known units and a source basis\nPASS Chicken weight and olive-oil portions use actual source values\nPASS Unknown nutrients remain unknown through quantities, daily sums and recipe yields\nPASS Raw and cooked entries remain different records and historical snapshots are immutable\nPASS Date logic is local-calendar based and rejects invalid dates\nPASS Every published market is isolated by both finder and food search\nPASS Salt conversion, named portions and ingredient source limits are preserved\nPASS AI record validation rejects unknown records and invalid quantities\nPASS Diary backups reject corrupted snapshots and recipe totals before any import\n11 food-integrity and computation checks passed.\n"
+  },
+  {
+    "command": [
+      "--test",
+      "server/test/service.test.cjs"
+    ],
+    "exit": 0,
+    "seconds": 3.61,
+    "output": "✔ Structured interpretations reject invalid or fabricated numerical quantities (0.6636ms)\n✔ Real HTTP adapter isolates origins, authorizes sessions, caps requests and validates provider data (1785.7271ms)\n✔ Disabled provider has an honest availability response and cannot mint analysis sessions (1588.5689ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 3487.6031\n"
+  },
+  {
+    "command": [
+      "tools/international/test-markets.cjs"
+    ],
+    "exit": 0,
+    "seconds": 2.88,
+    "output": "PASS: Canadian source fields, exact order sums, editions, market isolation, missing macros/nutrients, stable U.S. keys, share state, private-card exclusion and finder/builder equality.\n"
+  },
+  {
+    "command": [
+      "tools/growth_release/review-source.py",
+      "--validate"
+    ],
+    "exit": 0,
+    "seconds": 0.12,
+    "output": "PASS curated schema/raw values, 135 unique menu rows, null/bounds, size/sugar and three portion arithmetic regressions; private source snapshot hash and rows verified\n"
+  },
+  {
+    "command": [
+      "tools/master_completion/grocery_integrity_off.py"
+    ],
+    "exit": 0,
+    "seconds": 159.02,
+    "output": "{\"phase\": \"source\", \"products\": 100000, \"elapsedSeconds\": 32}\n{\"phase\": \"source\", \"products\": 200000, \"elapsedSeconds\": 68}\n{\"phase\": \"record-shards\", \"expectedProfiles\": 245359}\n{\"phase\": \"postings\", \"indexProfiles\": 245359}\n{\n  \"ok\": true,\n  \"partition\": \"C:\\\\Users\\\\slowf\\\\Documents\\\\ChatGPT\\\\getmacros.net\\\\data\\\\branded-foods\\\\off\",\n  \"sourceRetrievedAt\": \"2026-10-13\",\n  \"counts\": {\n    \"nutrientSourceComparisons\": 6624693,\n    \"sourceProducts\": 241432,\n    \"volumeProfilesWithoutInferredGrams\": 20313,\n    \"marketProfiles\": 245359,\n    \"completeCoreProfiles\": 237759,\n    \"partialCoreProfiles\": 7600,\n    \"historicalIdsAndFormulationsPreserved\": 96451,\n    \"indexProfiles\": 245359,\n    \"tokenPostings\": 1291950,\n    \"barcodePostings\": 245359,\n    \"countryPostings\": 245359,\n    \"quarantinedSourceProductsChecked\": 30,\n    \"redistributableExportProfiles\": 245359\n  },\n  \"markets\": {\n    \"US\": 72769,\n    \"GB\": 67041,\n    \"CA\": 46950,\n    \"MX\": 8057,\n    \"AU\": 9159,\n    \"IE\": 35223,\n    \"NZ\": 2352,\n    \"JP\": 3808\n  },\n  \"jsonEncoding\": \"gzip\",\n  \"maximumCompressedRecordShardBytes\": 36457,\n  \"version\": \"270168ffab5263f9\",\n  \"memoryPolicy\": \"One source row/record shard/index page at a time; compact SQLite expected identities and postings; no all-record object list.\",\n  \"elapsedSeconds\": 158.906\n}\n"
+  },
+  {
+    "command": [
+      "tools/master_completion/grocery-search-off.cjs"
+    ],
+    "exit": 0,
+    "seconds": 0.69,
+    "output": "{\n  \"checks\": [\n    \"President's Choice\",\n    \"No Name\",\n    \"Great Value\",\n    \"Kirkland\",\n    \"Compliments\",\n    \"Our Finest\",\n    \"Western Family\",\n    \"Japanese voiced kana matches source-normalized brands through combined library search\"\n  ],\n  \"lookup\": [\n    {\n      \"market\": \"US\",\n      \"returned\": 30\n    },\n    {\n      \"market\": \"CA\",\n      \"returned\": 21\n    },\n    {\n      \"market\": \"MX\",\n      \"returned\": 24\n    },\n    {\n      \"market\": \"GB\",\n      \"returned\": 30\n    },\n    {\n      \"market\": \"IE\",\n      \"returned\": 26\n    },\n    {\n      \"market\": \"AU\",\n      \"returned\": 30\n    },\n    {\n      \"market\": \"NZ\",\n      \"returned\": 30\n    },\n    {\n      \"market\": \"JP\",\n      \"returned\": 20\n    },\n    {\n      \"query\": \"President's Choice rice\",\n      \"market\": \"CA\",\n      \"bytes\": 685954,\n      \"requests\": 15\n    },\n    {\n      \"query\": \"Great Value milk\",\n      \"market\": \"CA\",\n      \"bytes\": 576351,\n      \"requests\": 31\n    },\n    {\n      \"query\": \"Kirkland almonds\",\n      \"market\": \"CA\",\n      \"bytes\": 387932,\n      \"requests\": 12\n    }\n  ],\n  \"pass\": true,\n  \"description\": \"Actual imported labels, isolated local static loader; not browser or independently remeasured nutrient verification.\"\n}\n"
+  },
+  {
+    "command": [
+      "tools/global_coverage_2026_10_17/library_market_search.cjs"
+    ],
+    "exit": 0,
+    "seconds": 1.3,
+    "output": "{\n  \"pass\": true,\n  \"checks\": 41,\n  \"markets\": [\n    \"US\",\n    \"CA\",\n    \"MX\",\n    \"GB\",\n    \"IE\",\n    \"AU\",\n    \"NZ\",\n    \"JP\",\n    \"FR\",\n    \"IN\",\n    \"SG\",\n    \"ZA\"\n  ],\n  \"coldSelectedMarketBytes\": 2052802,\n  \"initialMarketShardBytes\": 115864,\n  \"wholeRegistryBytes\": 36367332,\n  \"noWholeRegistryRequests\": true\n}\n"
+  },
+  {
+    "command": [
+      "tools/global_coverage_2026_10_17/usda_test_search.cjs"
+    ],
+    "exit": 0,
+    "seconds": 1.43,
+    "output": "{\n  \"pass\": true,\n  \"sourceVersion\": \"17bc6d9894617254\",\n  \"realNameQueries\": 18,\n  \"realBarcodeQueries\": 18,\n  \"countryIsolationCases\": 25,\n  \"unknownNutrientSnapshots\": 18,\n  \"actualGzipSourceRequests\": 129,\n  \"totalBytes\": 16948822,\n  \"totalRequests\": 209\n}\n"
+  },
+  {
+    "command": [
+      "tools/clarity_release/test_restaurant_additions.py"
+    ],
+    "exit": 0,
+    "seconds": 0.41,
+    "output": "test_complete_order_sums_every_supported_field (__main__.ReviewedLocalServings.test_complete_order_sums_every_supported_field) ... ok\ntest_contradictory_source_not_silently_corrected (__main__.ReviewedLocalServings.test_contradictory_source_not_silently_corrected) ... ok\ntest_dips_not_finder_meals (__main__.ReviewedLocalServings.test_dips_not_finder_meals) ... ok\ntest_edition_is_not_retrieval_or_invented_day (__main__.ReviewedLocalServings.test_edition_is_not_retrieval_or_invented_day) ... ok\ntest_invalid_quantities_fail (__main__.ReviewedLocalServings.test_invalid_quantities_fail) ... ok\ntest_local_market_and_country_scope (__main__.ReviewedLocalServings.test_local_market_and_country_scope) ... ok\ntest_named_fries_are_independent_servings (__main__.ReviewedLocalServings.test_named_fries_are_independent_servings) ... ok\ntest_native_units_and_no_inferred_density (__main__.ReviewedLocalServings.test_native_units_and_no_inferred_density) ... ok\ntest_no_inherited_identity_collision (__main__.ReviewedLocalServings.test_no_inherited_identity_collision) ... ok\ntest_no_invented_ingredients_allergen_diet_or_micronutrients (__main__.ReviewedLocalServings.test_no_invented_ingredients_allergen_diet_or_micronutrients) ... ok\ntest_precise_counts (__main__.ReviewedLocalServings.test_precise_counts) ... ok\ntest_presence_numbers_equal_records (__main__.ReviewedLocalServings.test_presence_numbers_equal_records) ... ok\ntest_provenance_and_pinned_file_when_available (__main__.ReviewedLocalServings.test_provenance_and_pinned_file_when_available) ... ok\ntest_reproducible_output (__main__.ReviewedLocalServings.test_reproducible_output) ... ok\ntest_sauce_variants_are_published_not_guessed (__main__.ReviewedLocalServings.test_sauce_variants_are_published_not_guessed) ... ok\ntest_source_zero_is_not_missing (__main__.ReviewedLocalServings.test_source_zero_is_not_missing) ... ok\ntest_unknowns_propagate_per_nutrient (__main__.ReviewedLocalServings.test_unknowns_propagate_per_nutrient) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.309s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/clarity_release/test_character_media.py"
+    ],
+    "exit": 0,
+    "seconds": 0.1,
+    "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/flagship_release/data_audit.py"
+    ],
+    "exit": 0,
+    "seconds": 0.96,
+    "output": "{\n  \"checkedAt\": \"2026-10-18\",\n  \"inputRecords\": 6880,\n  \"newRecords\": 6745,\n  \"refreshedRecords\": 135,\n  \"groups\": {\n    \"GB|Nando’s\": 270,\n    \"GB|LEON\": 148,\n    \"GB|Wagamama\": 193,\n    \"GB|Wendy’s\": 180,\n    \"GB|Five Guys\": 91,\n    \"GB|Pepe’s\": 131,\n    \"GB|Starbucks\": 1280,\n    \"GB|Chick-fil-A\": 74,\n    \"GB|Zizzi\": 428,\n    \"GB|ASK Italian\": 367,\n    \"GB|PizzaExpress\": 398,\n    \"GB|Tortilla\": 284,\n    \"GB|Tim Hortons\": 289,\n    \"GB|Wasabi\": 74,\n    \"GB|Caffè Nero\": 422,\n    \"GB|Chipotle\": 24,\n    \"GB|Chopstix\": 83,\n    \"CA|Chick-fil-A\": 151,\n    \"US|Chick-fil-A\": 321,\n    \"CA|Chipotle\": 85,\n    \"AU|Domino’s\": 214,\n    \"NZ|Domino’s\": 241,\n    \"IN|Domino’s\": 185,\n    \"AU|Hungry Jack’s\": 257,\n    \"NZ|Burger King\": 60,\n    \"SG|Chick-fil-A\": 62,\n    \"FR|Burger King\": 108,\n    \"JP|KFC\": 69,\n    \"IE|Zizzi\": 353,\n    \"MX|Starbucks\": 38\n  },\n  \"sourceCaptureFiles\": 88,\n  \"originalSourceSampleChecks\": {\n    \"samplePortions\": 60,\n    \"marketChainGroups\": 30,\n    \"minimumPerGroup\": 2,\n    \"method\": \"Original official capture reading and numeric replay; no screenshot, laboratory or every-row human review implied.\"\n  },\n  \"errorCount\": 0,\n  \"warningCount\": 37,\n  \"issuesByCode\": {\n    \"large-calories\": 6,\n    \"sugar-exceeds-c\": 3,\n    \"sat-exceeds-fat\": 24,\n    \"large-sodium\": 1,\n    \"energy-screen\": 3\n  },\n  \"inputHashes\": {\n    \"tools/flagship_release/uk_records.json\": \"f3a1e8cf32e18e6cfab72583bea8defc60d75caebe0bb66713c5a3dbe630cf01\",\n    \"tools/flagship_release/markets_release_records.json\": \"3da718ebf687a720ee01de26b8f56d3c6fa506884d31a0e247d9b8a66ea08cc1\",\n    \"tools/flagship_release/markets_mexico_calories.json\": \"625565fd9c9fbec2e8550b79325261b498a946cb0167c72465d3bbd14341dfec\"\n  },\n  \"scope\": \"Read-only data screens, source-file integrity and 60 source-sampled portions. No visual or lab verification inferred.\"\n}\n{\"severity\": \"warning\", \"code\": \"large-calories\", \"id\": \"GB|pepes|4bd1dbf6147dbf57\", \"market\": \"GB\", \"chain\": \"Pepe’s\", \"name\": \"Mega (Serves 5-6)\", \"message\": \"Over 5,000 kcal; confirm whole order/catering scope.\", \"cal\": 6005.0}\n{\"severity\": \"warning\", \"code\": \"sugar-exceeds-c\", \"id\": \"GB|chick-fil-a|938a1adc9eb26a91\", \"market\": \"GB\", \"chain\": \"Chick-fil-A\", \"name\": \"Creamy Caesar Dressing\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.32, \"child\": 1.76, \"parent\": 1.44}\n{\"severity\": \"warning\", \"code\": \"large-calories\", \"id\": \"GB|zizzi|0532d9afde6b3173\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Birthday Cake\", \"message\": \"Over 5,000 kcal; confirm whole order/catering scope.\", \"cal\": 9358.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|zizzi|9552d9e45737f629\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Dark Chocolate\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.2, \"child\": 0.2, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|zizzi|d6806de931480bf7\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Chilly Billy Ice Lolly\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.1, \"child\": 0.1, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|zizzi|f87c3fce2f262b97\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Kids Orange Juice\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.2, \"child\": 0.2, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|zizzi|9a9febab1eed83f9\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Hip Pop Strawberry & Pineapple\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.3, \"child\": 0.3, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|zizzi|98939dcbd971baa0\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Orange Juice\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.3, \"child\": 0.3, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|zizzi|bea62a6d78748067\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Decaf Macchiato\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.2, \"child\": 0.2, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|zizzi|049bbdfbd64f222f\", \"market\": \"GB\", \"chain\": \"Zizzi\", \"name\": \"Raspberry & Rose Lemonade\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.1, \"child\": 0.1, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|ask-italian|dd386a44d0203ff0\", \"market\": \"GB\", \"chain\": \"ASK Italian\", \"name\": \"Orange Juice\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.3, \"child\": 0.3, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|ask-italian|2f6a40e9eb631120\", \"market\": \"GB\", \"chain\": \"ASK Italian\", \"name\": \"Orange Juice & Lemonade\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.1, \"child\": 0.1, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|ask-italian|266495b2fd255663\", \"market\": \"GB\", \"chain\": \"ASK Italian\", \"name\": \"Orange juice & soda\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.1, \"child\": 0.1, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|ask-italian|195c91ab4f540461\", \"market\": \"GB\", \"chain\": \"ASK Italian\", \"name\": \"& Chocolate Sauce\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.3, \"child\": 0.3, \"parent\": 0.0}\n{\"severity\": \"warning\", \"code\": \"sat-exceeds-fat\", \"id\": \"GB|ask-italian|a2d302f2ffeee1dd\", \"market\": \"GB\", \"chain\": \"ASK Italian\", \"name\": \"Chilly Billy Pure Fruit Orange And Apple\", \"message\": \"Subset nutrient exceeds its parent nutrient; inspect original source.\", \"difference\": 0.1, \"child\": 0.1, \"parent\": 0.0}\n"
+  },
+  {
+    "command": [
+      "tools/global_coverage_2026_10_17/mexico-supplement-test.py"
+    ],
+    "exit": 0,
+    "seconds": 0.45,
+    "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.302s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/flagship_release/test_finder_payload.py"
+    ],
+    "exit": 0,
+    "seconds": 2.22,
+    "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 2.036s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/master_completion/test_integration.py"
+    ],
+    "exit": 0,
+    "seconds": 16.54,
+    "output": "test_actual_finder_membership_matches_presence_per_chain (__main__.CompletedRestaurantIntegration.test_actual_finder_membership_matches_presence_per_chain) ... ok\ntest_all_reviewed_records_integrated_once (__main__.CompletedRestaurantIntegration.test_all_reviewed_records_integrated_once) ... ok\ntest_country_dataset_and_finder_do_not_leak (__main__.CompletedRestaurantIntegration.test_country_dataset_and_finder_do_not_leak) ... ok\ntest_country_market_chain_definition_comes_from_actual_finder (__main__.CompletedRestaurantIntegration.test_country_market_chain_definition_comes_from_actual_finder) ... ok\ntest_directories_link_local_operations_honestly (__main__.CompletedRestaurantIntegration.test_directories_link_local_operations_honestly) ... ok\ntest_guide_source_portions_and_seo_are_real (__main__.CompletedRestaurantIntegration.test_guide_source_portions_and_seo_are_real) ... ok\ntest_new_operating_presence_never_fakes_nutrition (__main__.CompletedRestaurantIntegration.test_new_operating_presence_never_fakes_nutrition) ... ok\ntest_new_york_fries_coverage_counts_and_source (__main__.CompletedRestaurantIntegration.test_new_york_fries_coverage_counts_and_source) ... ok\ntest_presence_counts_reflect_real_country_rows (__main__.CompletedRestaurantIntegration.test_presence_counts_reflect_real_country_rows) ... ok\ntest_restaurant_adapter_unit_conversion_and_country_search (__main__.CompletedRestaurantIntegration.test_restaurant_adapter_unit_conversion_and_country_search) ... ok\ntest_us_finder_count_matches_the_actual_primary_dataset (__main__.CompletedRestaurantIntegration.test_us_finder_count_matches_the_actual_primary_dataset) ... ok\ntest_world_index_uses_every_tracked_chain (__main__.CompletedRestaurantIntegration.test_world_index_uses_every_tracked_chain) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 16.179s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/test_asset_stamps.py"
+    ],
+    "exit": 0,
+    "seconds": 1.25,
+    "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.072s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/validate_site.py"
+    ],
+    "exit": 0,
+    "seconds": 3.95,
+    "output": "PASS: 439 HTML files; 436 indexable pages; 436 sitemap URLs; 435 searchable resources.\nWARNING: duplicate H1 wording: au/en/index.html, ca/en/index.html, fr/en/index.html, gb/en/index.html, ie/en/index.html, in/en/index.html, index.html, jp/en/index.html, mx/en/index.html, nz/en/index.html, sg/en/index.html, za/en/index.html\n"
+  },
+  {
+    "command": [
+      "tools/test_publication.py"
+    ],
+    "exit": 0,
+    "seconds": 4.45,
+    "output": "Publication: 439 pages; shared stylesheet (77,415 bytes) plus purposeful route styles, preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.\n"
+  },
+  {
+    "command": [
+      "tools/test_search_visibility.py"
+    ],
+    "exit": 0,
+    "seconds": 1.98,
+    "output": "Search visibility passed: 439 pages, 50629 internal links and anchors; meal labels match source data.\n"
+  }
+]

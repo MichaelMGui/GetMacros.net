@@ -1,0 +1,1262 @@
+[
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "BBQ Sausage and Onion — Extra Large",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "page": "REPLACEMENTFORDELETEDNON2026-nutritional-info-product-card/ad6cd76d-1127-49b0-971e-e31eec40a930",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 194.0,
+      "kJ": 7.5,
+      "p": 5.7,
+      "fat": 2.4,
+      "sat": 27.4,
+      "c": 3.9,
+      "sugar": 3.9,
+      "na": 420.0
+    },
+    "screeningEstimate": 60.0
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Peri Peri Chicken — Gluten Free",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "page": "P223-nutritional-info-product-card/b0879bce-a0af-4c42-9dae-ee698306cf15",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 139.0,
+      "kJ": 582.0,
+      "p": 5.6,
+      "fat": 5.5,
+      "sat": 1.5,
+      "c": 156.0,
+      "sugar": 2.0,
+      "na": 322.0
+    },
+    "screeningEstimate": 695.9
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Cheese & Garlic Scrolls (4 Pack)",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Garlic Bread",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Cheesy Garlic Bread",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Vegan Cheesy Garlic Bread",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Crispy Chips with Domino's Pizza Salt",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Crispy Chips with Domino's Pizza Salt",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "1146d60c-ce29-4fe8-b6f7-96b4d02c5117"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Creamy Garlic Aioli Dipping Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Spicy Sriracha Mayo Dipping Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Pepperoni Stuffed Cheesy Bread",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Triple Cheese Bites 5 Pack",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Southern Fried Chicken Bites 20 Pack",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - No Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "f03818ca-82f2-4778-9442-bbd5de66e0cc"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - No Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - No Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "28414540-de20-41f8-bd2e-7eb378657b04"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - No Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "cad4414c-e781-4551-bd00-ac3797df04a6"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - No Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "63f84821-14dc-4c3e-8cce-f792d9644a7c"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - No Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "8a3a0489-bd79-4e65-a323-b482748c7ddf"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - Hot Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "f03818ca-82f2-4778-9442-bbd5de66e0cc"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - Hot Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - BBQ Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "28414540-de20-41f8-bd2e-7eb378657b04"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - BBQ Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - BBQ Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "f03818ca-82f2-4778-9442-bbd5de66e0cc"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - BBQ Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "cad4414c-e781-4551-bd00-ac3797df04a6"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - BBQ Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "63f84821-14dc-4c3e-8cce-f792d9644a7c"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - BBQ Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "8a3a0489-bd79-4e65-a323-b482748c7ddf"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - Hot Honey Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - Hot Honey Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "28414540-de20-41f8-bd2e-7eb378657b04"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - Peri Peri Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "f03818ca-82f2-4778-9442-bbd5de66e0cc"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - Peri Peri Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Tenders 4 Pack BBQ Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "cad4414c-e781-4551-bd00-ac3797df04a6"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Tenders 4 Pack Garlic Butter Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "cad4414c-e781-4551-bd00-ac3797df04a6"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Marinara Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Chocolate Lava Cake",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Hot Choc Fudge Brownies",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Mini Dutch Pancakes 12 Pack",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Salted Caramel Chocolate Mousse",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Chocolate Dipping Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Brownies with Nutella",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Churros with Nutella (2 Serves)",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Choc Lava Cake with Nutella",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "White Chocolate Thickshake with Cream",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Chocolate Thickshake with Cream",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "AU",
+    "chain": "Domino’s",
+    "name": "Salted Caramel Thickshake with Cream",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.com.au/menu/nutritional-information",
+    "sourceVariant": "2d01621a-c65f-4b06-bf19-b1c405e97bf5"
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Beef & Onion — Gluten Free",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "P097-nutritional-info-product-card/8d95fb56-9f22-4d25-9a6c-b385ab63425f",
+    "reason": "missing exact core nutrient",
+    "values": {
+      "cal": 121.0,
+      "kJ": 505.0,
+      "p": null,
+      "fat": 3.7,
+      "sat": 1.5,
+      "c": 16.4,
+      "sugar": 22.3,
+      "na": 235.0
+    }
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Ham & Cheese — Deep Pan",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "P099-nutritional-info-product-card/88be86a1-a963-4501-8be8-cf20b07dfb13",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 118.0,
+      "kJ": 934.0,
+      "p": 7.5,
+      "fat": 6.4,
+      "sat": 2.2,
+      "c": 32.9,
+      "sugar": 3.2,
+      "na": 422.0
+    },
+    "screeningEstimate": 219.2
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "BBQ Sausage and Onion — Thin N Crispy",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "P505-nutritional-info-product-card/619da927-d7a0-4cd1-ad1a-f3f48effcca6",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 110.0,
+      "kJ": 463.0,
+      "p": 431.0,
+      "fat": 4.7,
+      "sat": 2.3,
+      "c": 13.0,
+      "sugar": 2.7,
+      "na": 224.0
+    },
+    "screeningEstimate": 1818.3
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "BBQ Meatlovers — Gluten Free",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "P385-nutritional-info-product-card/8d95fb56-9f22-4d25-9a6c-b385ab63425f",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 667.0,
+      "kJ": 159.0,
+      "p": 6.4,
+      "fat": 8.5,
+      "sat": 4.0,
+      "c": 14.1,
+      "sugar": 3.5,
+      "na": 393.0
+    },
+    "screeningEstimate": 158.5
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Creamy Chicken and Cranberry — Extra Large",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "P522-nutritional-info-product-card/a7699a01-d853-4cce-936b-bb67990b933e",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 270.0,
+      "kJ": 1130.0,
+      "p": 10.6,
+      "fat": 6.5,
+      "sat": 33.0,
+      "c": 418.0,
+      "sugar": 6.1,
+      "na": 407.0
+    },
+    "screeningEstimate": 1772.9
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Mega Meatlovers — Gluten Free",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "P415-nutritional-info-product-card/8d95fb56-9f22-4d25-9a6c-b385ab63425f",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 149.0,
+      "kJ": 737.0,
+      "p": 7.4,
+      "fat": 7.3,
+      "sat": 3.5,
+      "c": 28.4,
+      "sugar": 3.6,
+      "na": 511.0
+    },
+    "screeningEstimate": 208.89999999999998
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Apricot Chicken — Mini",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "P039-nutritional-info-product-card/8fb78abd-11e6-4dee-bc9c-6b9763712ab8",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 940.0,
+      "kJ": 225.0,
+      "p": 7.9,
+      "fat": 6.0,
+      "sat": 2.1,
+      "c": 33.8,
+      "sugar": 5.7,
+      "na": 332.0
+    },
+    "screeningEstimate": 220.79999999999998
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Sweet Chilli Dipping Sauce — Sides",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "S00082-nutritional-info-product-card/41a6c3af-4a90-4b94-8485-0f53a100231f",
+    "reason": "missing exact core nutrient",
+    "values": {
+      "cal": 44.0,
+      "kJ": 182.0,
+      "p": null,
+      "fat": null,
+      "sat": null,
+      "c": 10.6,
+      "sugar": 9.7,
+      "na": 179.0
+    }
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Crispy Chips with Domino's Pizza Salt",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "sourceVariant": "41a6c3af-4a90-4b94-8485-0f53a100231f"
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - No Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "sourceVariant": "f8af24f4-029e-41fa-9f51-1d776f2de1ec"
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Saucy Chicken Wings - Butter Chicken Sauce — 10 pack",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "S00603-1338-nutritional-info-product-card/144056c9-4439-4fcd-891b-18934c540852",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 714.0,
+      "kJ": 2990.0,
+      "p": 60.8,
+      "fat": 43.2,
+      "sat": 11.1,
+      "c": 1.6,
+      "sugar": 9.5,
+      "na": 3110.0
+    }
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Marinara Sauce",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "sourceVariant": "59802261-8940-4383-84f9-960f38e0c58f"
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Mozarella Cheese Twists",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "sourceVariant": "59802261-8940-4383-84f9-960f38e0c58f"
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Salted Caramel Chocolate Mousse — Sides",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "page": "S00179-nutritional-info-product-card/41a6c3af-4a90-4b94-8485-0f53a100231f",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 382.0,
+      "kJ": 1600.0,
+      "p": 2.9,
+      "fat": 25.4,
+      "sat": 18.0,
+      "c": 33.8,
+      "sugar": 35.2,
+      "na": 270.0
+    }
+  },
+  {
+    "market": "NZ",
+    "chain": "Domino’s",
+    "name": "Choc Lava Cake with Nutella",
+    "reason": "nutrition variant is not offered by source control",
+    "source": "https://www.dominos.co.nz/menu/nutritional-information",
+    "sourceVariant": "3c656b2d-2584-40ee-918a-fb97aeeb9681"
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Eggs Benny On Turkish",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Eggs Benny Wrap",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "French Toast Fingers 4 x pack",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "French Toast Fingers 6 x pack",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Coke No Sugar POM Small",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-April-2026-Final-Cold-Drinks-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 6.0,
+      "p": 0.2,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 0.4,
+      "sugar": 34.4,
+      "na": 50.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Coke No Sugar POM Medium",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-April-2026-Final-Cold-Drinks-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 7.0,
+      "p": 0.3,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 0.5,
+      "sugar": 43.9,
+      "na": 64.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Coke No Sugar POM Large",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-April-2026-Final-Cold-Drinks-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 10.0,
+      "p": 0.4,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 0.7,
+      "sugar": 63.7,
+      "na": 92.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Portioned Mayonnaise",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Extra-Condiments-Nutritionals.pdf",
+    "page": 1,
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "kJ": 298.0,
+      "p": 0.6,
+      "fat": 32.7,
+      "sat": 5.4,
+      "c": 1.3,
+      "sugar": 0.7,
+      "na": 226.0
+    },
+    "screeningEstimate": 301.90000000000003
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Sauce Dipper Mayonnaise",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Extra-Condiments-Nutritionals.pdf",
+    "page": 1,
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "kJ": 745.0,
+      "p": 1.4,
+      "fat": 81.7,
+      "sat": 13.5,
+      "c": 3.1,
+      "sugar": 1.5,
+      "na": 565.0
+    },
+    "screeningEstimate": 753.3000000000001
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "FCB Fanta Strawberry Large",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 466.0,
+      "p": 0.0,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 23.1,
+      "sugar": 27.0,
+      "na": 8.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "FCB Fanta Strawberry Medium",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 338.0,
+      "p": 0.0,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 16.8,
+      "sugar": 19.6,
+      "na": 6.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "FCB Fanta Strawberry Small",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 267.0,
+      "p": 0.0,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 13.3,
+      "sugar": 15.5,
+      "na": 5.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "FCB Fanta Strawberry Spider Large",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 1062.0,
+      "p": 4.2,
+      "fat": 5.7,
+      "sat": 3.9,
+      "c": 41.6,
+      "sugar": 45.6,
+      "na": 102.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "FCB Fanta Strawberry Spider Medium",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 935.0,
+      "p": 4.2,
+      "fat": 5.7,
+      "sat": 3.9,
+      "c": 35.3,
+      "sugar": 38.2,
+      "na": 100.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "FCB Fanta Strawberry Spider Small",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "page": 2,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 851.0,
+      "p": 4.2,
+      "fat": 5.7,
+      "sat": 3.9,
+      "c": 31.1,
+      "sugar": 33.3,
+      "na": 98.0
+    }
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Kids Grilled Chicken Wrap",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-6-January-2026-Final-Kid-s-Meals-Nutritionals.pdf",
+    "page": 2,
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "kJ": 1236.0,
+      "p": 23.1,
+      "fat": 23.4,
+      "sat": 5.4,
+      "c": 27.6,
+      "sugar": 2.5,
+      "na": 644.0
+    },
+    "screeningEstimate": 413.4
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Big Jack Angus",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Big Jack Double",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Big Jack Single",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Cheese Lovers Whopper",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Cheese Lovers Whopper Double",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Cheesy Cheese Burger ’26",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Napoletana Grilled Chicken",
+    "source": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+    "page": 4,
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "kJ": 1761.0,
+      "p": 32.2,
+      "fat": 32.4,
+      "sat": 9.2,
+      "c": 33.5,
+      "sugar": 10.2,
+      "na": null
+    },
+    "screeningEstimate": 554.4
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Stacker Double",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Stacker Double Dipper",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Stacker Quad",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Stacker Quad Dipper",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Stacker Triple",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "AU",
+    "chain": "Hungry Jack’s",
+    "name": "Stacker Triple Dipper",
+    "reason": "same named portion has conflicting equal-edition source values",
+    "edition": "2026-09-26",
+    "sources": [
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+      "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf"
+    ]
+  },
+  {
+    "market": "NZ",
+    "chain": "Burger King",
+    "name": "Hamburger",
+    "source": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+    "page": 1,
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "kJ": 1220.0,
+      "cal": 291.0,
+      "p": 16.7,
+      "fat": 13.9,
+      "sat": 5.9,
+      "c": 2.6,
+      "sugar": 6.7,
+      "na": 471.0
+    }
+  },
+  {
+    "market": "NZ",
+    "chain": "Burger King",
+    "name": "Onion Rings - 6 pack",
+    "reason": "source kcal and kJ materially disagree",
+    "values": {
+      "kJ": 945.0,
+      "cal": 198.0,
+      "p": 4.4,
+      "fat": 9.9,
+      "sat": 1.0,
+      "c": 28.7,
+      "sugar": 2.9,
+      "na": 402.0
+    },
+    "source": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf"
+  },
+  {
+    "market": "SG",
+    "chain": "Chick-fil-A",
+    "name": "Chick-fil-A® Lemonade — Regular",
+    "source": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "page": "1 / Drinks",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 192.0,
+      "p": 0.2,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 4.3,
+      "sugar": 46.2,
+      "f": 0.2,
+      "na": 1.0
+    }
+  },
+  {
+    "market": "SG",
+    "chain": "Chick-fil-A",
+    "name": "Chick-fil-A® Lemonade — Large",
+    "source": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "page": "1 / Drinks",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 256.0,
+      "p": 0.3,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 5.8,
+      "sugar": 61.6,
+      "f": 0.3,
+      "na": 1.0
+    }
+  },
+  {
+    "market": "SG",
+    "chain": "Chick-fil-A",
+    "name": "Sunjoy® (Lemonade, Sweet Tea) — Regular",
+    "source": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "page": "1 / Drinks",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 178.0,
+      "p": 0.1,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 15.4,
+      "sugar": 43.3,
+      "f": 0.1,
+      "na": 0.0
+    }
+  },
+  {
+    "market": "SG",
+    "chain": "Chick-fil-A",
+    "name": "Sunjoy® (Lemonade, Sweet Tea) — Large",
+    "source": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "page": "1 / Drinks",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 238.0,
+      "p": 0.2,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 23.0,
+      "sugar": 57.9,
+      "f": 0.2,
+      "na": 1.0
+    }
+  },
+  {
+    "market": "SG",
+    "chain": "Chick-fil-A",
+    "name": "Sunjoy® (Lemonade, Unsweet Tea) — Regular",
+    "source": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "page": "1 / Drinks",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 128.0,
+      "p": 0.1,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 2.9,
+      "sugar": 30.8,
+      "f": 0.1,
+      "na": 0.0
+    }
+  },
+  {
+    "market": "SG",
+    "chain": "Chick-fil-A",
+    "name": "Sunjoy® (Lemonade, Unsweet Tea) — Large",
+    "source": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "page": "1 / Drinks",
+    "reason": "source sugar materially exceeds carbohydrate",
+    "values": {
+      "cal": 160.0,
+      "p": 0.2,
+      "fat": 0.0,
+      "sat": 0.0,
+      "c": 3.6,
+      "sugar": 38.5,
+      "f": 0.2,
+      "na": 1.0
+    }
+  },
+  {
+    "market": "FR",
+    "chain": "Burger King",
+    "name": "Donut Whouaf — menu enfant (produit seul)",
+    "source": "https://www.burgerking.fr/carte",
+    "page": "catalog version 1792336357/product/5187524366324769959",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 1000.0,
+      "fat": 16.0,
+      "sat": 8.6,
+      "p": 3.8,
+      "c": 21.0,
+      "sugar": 7.6,
+      "salt": 0.53
+    },
+    "screeningEstimate": 243.2
+  },
+  {
+    "market": "FR",
+    "chain": "Burger King",
+    "sourceProductId": "6103988203432489853",
+    "name": "Baby Whopper®",
+    "source": "https://www.burgerking.fr/carte",
+    "page": "catalog product/6103988203432489853",
+    "reason": "Current linked source supplies same named Baby burger with materially different nutrient totals and no clear portion qualifier. All conflicting named versions withheld; no serving inferred.",
+    "values": {
+      "cal": 629.0,
+      "fat": 35.0,
+      "sat": 9.4,
+      "p": 28.0,
+      "c": 49.0,
+      "sugar": 12.0,
+      "salt": 2.5
+    }
+  },
+  {
+    "market": "FR",
+    "chain": "Burger King",
+    "sourceProductId": "6992014596576420432",
+    "name": "Baby Whopper®",
+    "source": "https://www.burgerking.fr/carte",
+    "page": "catalog product/6992014596576420432",
+    "reason": "Current linked source supplies same named Baby burger with materially different nutrient totals and no clear portion qualifier. All conflicting named versions withheld; no serving inferred.",
+    "values": {
+      "cal": 297.0,
+      "fat": 14.0,
+      "sat": 4.3,
+      "p": 12.0,
+      "c": 23.0,
+      "sugar": 5.6,
+      "salt": 0.95
+    }
+  },
+  {
+    "market": "FR",
+    "chain": "Burger King",
+    "name": "Moyenne Gaufrette Fries",
+    "source": "https://www.burgerking.fr/carte",
+    "page": "catalog version 1792336357/product/7515882106331992033",
+    "reason": "gross source energy/macronutrient discrepancy; no correction inferred",
+    "values": {
+      "cal": 247.0,
+      "fat": 11.0,
+      "sat": 1.1,
+      "p": 2.4,
+      "c": 21.0,
+      "sugar": null,
+      "salt": 0.67
+    },
+    "screeningEstimate": 192.6
+  },
+  {
+    "market": "FR",
+    "chain": "Burger King",
+    "sourceProductId": "7780170669187313138",
+    "name": "Baby Big King®",
+    "source": "https://www.burgerking.fr/carte",
+    "page": "catalog product/7780170669187313138",
+    "reason": "Current linked source supplies same named Baby burger with materially different nutrient totals and no clear portion qualifier. All conflicting named versions withheld; no serving inferred.",
+    "values": {
+      "cal": 482.0,
+      "fat": 28.0,
+      "sat": 12.0,
+      "p": 27.0,
+      "c": 30.0,
+      "sugar": 6.3,
+      "salt": 2.4
+    }
+  },
+  {
+    "market": "FR",
+    "chain": "Burger King",
+    "sourceProductId": "7862637256457491716",
+    "name": "Baby Big King®",
+    "source": "https://www.burgerking.fr/carte",
+    "page": "catalog product/7862637256457491716",
+    "reason": "Current linked source supplies same named Baby burger with materially different nutrient totals and no clear portion qualifier. All conflicting named versions withheld; no serving inferred.",
+    "values": {
+      "cal": 297.0,
+      "fat": 16.0,
+      "sat": 6.1,
+      "p": 14.0,
+      "c": 24.0,
+      "sugar": 5.6,
+      "salt": 1.2
+    }
+  }
+]

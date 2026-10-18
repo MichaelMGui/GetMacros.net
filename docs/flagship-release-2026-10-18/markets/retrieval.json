@@ -1,0 +1,605 @@
+[
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-ca-nutrition.html",
+    "url": "https://www.chick-fil-a.ca/nutrition-allergens",
+    "finalUrl": "https://www.chick-fil-a.ca/nutrition-allergens",
+    "retrievedAt": "2026-10-18",
+    "sha256": "6b846a27b489f38402c0d6eb50430acab0fdc82c642364d6e2e57279a1d74b9b",
+    "bytes": 2807087,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-ca-menu.html",
+    "url": "https://www.chick-fil-a.ca/menu",
+    "finalUrl": "https://www.chick-fil-a.ca/menu",
+    "retrievedAt": "2026-10-18",
+    "sha256": "2779d29e865330cb717460dff6b0f63ebf0652582d43660d8c4f494e4772f09b",
+    "bytes": 254784,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-us-nutrition.html",
+    "url": "https://www.chick-fil-a.com/nutrition-allergens",
+    "finalUrl": "https://www.chick-fil-a.com/nutrition-allergens",
+    "retrievedAt": "2026-10-18",
+    "sha256": "989febcd2a69f01834baa521a8d526a7ccfad71d2544438e8460c297e2ee7710",
+    "bytes": 6104374,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-us-breakfast.html",
+    "url": "https://www.chick-fil-a.com/menu/breakfast",
+    "finalUrl": "https://www.chick-fil-a.com/menu/breakfast",
+    "retrievedAt": "2026-10-18",
+    "sha256": "df061785708ee8c99104f4603d773a43a3303645f14fcecd42e5f0d79cefa0e1",
+    "bytes": 305925,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/shake-ca-menu.html",
+    "url": "https://shakeshack.ca/menu",
+    "finalUrl": "https://shakeshack.ca/menu",
+    "retrievedAt": "2026-10-18",
+    "sha256": "60dd15ac5a0d227f9e19d61eb7ff98b9ea81505ef292edfc123884f0bc04bfd5",
+    "bytes": 328487,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/shake-ca-locations.html",
+    "url": "https://shakeshack.ca/locations",
+    "finalUrl": "https://shakeshack.ca/locations",
+    "retrievedAt": "2026-10-18",
+    "sha256": "f6f957409d3efbb2fffd01930a9692c0623858aeeafee10e04298f61f73ab688",
+    "bytes": 96118,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/popeyes-ca-menu.html",
+    "url": "https://www.popeyeschicken.ca/menu/",
+    "finalUrl": "https://www.popeyeschicken.ca/menu/",
+    "retrievedAt": "2026-10-18",
+    "sha256": "6301f2dedd7b3b7c02dbfa0c3926818206b227596b201f22ad866cb9773311d3",
+    "bytes": 5190,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/chipotle-ca-nutrition.html",
+    "url": "https://www.chipotle.ca/nutrition-calculator",
+    "finalUrl": "https://www.chipotle.ca/nutrition-calculator",
+    "retrievedAt": "2026-10-18",
+    "sha256": "1a292333f0dd4305c7d538f89a168c729dd1a13c02f61eee8e1203a3d71d30dd",
+    "bytes": 67590,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/wendys-ca-menu.html",
+    "url": "https://order.wendys.com/ca/en/national/menu",
+    "finalUrl": "https://order.wendys.com/ca/en/national/menu",
+    "retrievedAt": "2026-10-18",
+    "sha256": "508838fb48507a98b85d7dd5ec26cf77dd436b2fd055c79b0ff1e3d0a15a9c07",
+    "bytes": 253085,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/mcd-ca-nutrition.html",
+    "url": "https://www.mcdonalds.com/ca/en-ca/full-menu.html",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/wendys-ca-single.html",
+    "url": "https://order.wendys.com/ca/en/national/menu/combos/daves-single",
+    "finalUrl": "https://order.wendys.com/ca/en/national/menu/combos/daves-single",
+    "retrievedAt": "2026-10-18",
+    "sha256": "6b9d9c7726b86bf6e8d5881d5d78713368d04fb4bae590d0e64894bb0386e979",
+    "bytes": 647282,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-ca-no-breakfast.html",
+    "url": "https://www.chick-fil-a.ca/customer-support/our-restaurants/hours-of-operation/are-chick-fil-a-restaurants-in-canada-open-for-breakfast",
+    "finalUrl": "https://www.chick-fil-a.ca/customer-support/our-restaurants/hours-of-operation/are-chick-fil-a-restaurants-in-canada-open-for-breakfast",
+    "retrievedAt": "2026-10-18",
+    "sha256": "9e8340c16a1f2e5ce189c8315cbef68cef1dd16845a3c94f6072647cd5113bde",
+    "bytes": 203168,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/chipotle-ca-2025.pdf",
+    "url": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "finalUrl": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "3bfd2ff13030862df6ef4d1abbde75e11e25798d69d7977318ec7c8761026250",
+    "bytes": 202026,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/popeyes-ca-nutrition.html",
+    "url": "https://www.popeyeschicken.ca/nutritional-information",
+    "finalUrl": "https://www.popeyeschicken.ca/nutritional-information",
+    "retrievedAt": "2026-10-18",
+    "sha256": "6301f2dedd7b3b7c02dbfa0c3926818206b227596b201f22ad866cb9773311d3",
+    "bytes": 5190,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-sg-index.html",
+    "url": "https://www.chick-fil-a.com.sg/nutrition-allergens/",
+    "finalUrl": "https://www.chick-fil-a.com.sg/nutrition-allergens/",
+    "retrievedAt": "2026-10-18",
+    "sha256": "16a98973a0a04a52af518443b0e5701864d46819a9a4480525511e3012cfddd8",
+    "bytes": 93269,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/cfa-sg.pdf",
+    "url": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "finalUrl": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "d730ef8368a72187851c6722b1bc80fdbc76dc55ec9cc2da7c21b1ff1029e753",
+    "bytes": 439205,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-index.html",
+    "url": "https://www.hungryjacks.com.au/nutrition-info",
+    "finalUrl": "https://www.hungryjacks.com.au/nutrition-info",
+    "retrievedAt": "2026-10-18",
+    "sha256": "b66dcdeaaba1a68e71fe0f2a7ceddec620bcc2e6342645c6f91b5400b979900c",
+    "bytes": 60598,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/dominos-in-index.html",
+    "url": "https://m.dominos.co.in/jfl-discovery-ui/en/pwa/nutritional-info",
+    "finalUrl": "https://m.dominos.co.in/jfl-discovery-ui/en/pwa/nutritional-info",
+    "retrievedAt": "2026-10-18",
+    "sha256": "3f48192c6dc7952cbbde1ac0c8088bb0d419f324fc0ac090bdc00a4770bc0c64",
+    "bytes": 16154,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-nz-index.html",
+    "url": "https://www.burgerking.co.nz/nutrition-explorer",
+    "finalUrl": "https://www.burgerking.co.nz/nutrition-explorer",
+    "retrievedAt": "2026-10-18",
+    "sha256": "3b67697f936c3046e91ec5dd0c0917b0129669452386800ae2f55e98536c1855",
+    "bytes": 1748,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "subway-ie-index.html",
+    "url": "https://www.subway.com/en-IE/MenuNutrition/Nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "file": "mcd-fr-index.html",
+    "url": "https://www.mcdonalds.fr/nos-produits/nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "kfc-in-index.html",
+    "url": "https://online.kfc.co.in/nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "pizzahut-za-index.html",
+    "url": "https://www.pizzahut.co.za/en/nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-01.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "b69c982fe47ac10d7332d359b49a294c80444c2474b27a7cf57b1c5ea3c0c1a6",
+    "bytes": 33346,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-02.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Bundle-Meals-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Bundle-Meals-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "c8d36d826f87e8624e057227736bc4faf26a00cd2a2968a3da9b9580b5302780",
+    "bytes": 164714,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-03.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-July-2026-Final-Chicken-Burgers-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-July-2026-Final-Chicken-Burgers-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "973ed121c53c4e5cee4ed6fb2c95b6269baf6b718d3563beafca73219b1b775c",
+    "bytes": 72700,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-04.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Chicken-NutritionalGuideReport_Nutritional-Values-Report-16062026_2.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Chicken-NutritionalGuideReport_Nutritional-Values-Report-16062026_2.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "4a71de58e7ec9392cfe669d81ef5fe7a736203e18f5070831c1aa7ba14219088",
+    "bytes": 69583,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-05.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Cold-Drinks-Nutritionals_1.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Cold-Drinks-Nutritionals_1.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "dc2fa7371aad25b417a3b676da45c4dc270bf9a1ca74e0efb0881945b4b44bd6",
+    "bytes": 76026,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-06.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Jack-d-Up-Drinks-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Jack-d-Up-Drinks-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "1ea93adb99cfd8c3511c451486b3aa1c3b704ef16f9f0ae0db266cdc5201cdb1",
+    "bytes": 16951,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-07.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-April-2026-Final-Cold-Drinks-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-April-2026-Final-Cold-Drinks-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "080bc38e076130e2490279668fe87d00a435602260354b9436a9d06939d25b8f",
+    "bytes": 95922,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-08.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Desserts-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-1-September-2026-Final-Desserts-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "3eaa5293da94b82c73b741740ec47192d359b1d98df9f84ba414d13649cde259",
+    "bytes": 38550,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-09.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Extra-Condiments-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Extra-Condiments-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "22e540ffbbfbb6487d475e251e3f5fbdd806d55f0c1769a330a13f7cc8653423",
+    "bytes": 29614,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-10.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "f7126205b806af66f03ccf349b56cd1cc46ff5a4669bbab96baee245cb44ed11",
+    "bytes": 54342,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-11.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-30-June-2026-Final-Grill-Masters-Nutritionals_1.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-30-June-2026-Final-Grill-Masters-Nutritionals_1.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "840415db9cbda5d91c57e49c9844780f28a1a9b548fcc962d7d260eec4070aa4",
+    "bytes": 66653,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-12.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Jack-s-Cafe-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Jack-s-Cafe-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "a61690d48105be4d031a6866c1d74390d30d1a9db1ced084dc569a2cd13bc15a",
+    "bytes": 87548,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-13.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-6-January-2026-Final-Kid-s-Meals-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-6-January-2026-Final-Kid-s-Meals-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "66c6f23d14c811dfdf400c293aedc90d38a6dc7d80637d1efe4fba6bb5ab265b",
+    "bytes": 59279,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-14.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-2-October-2025-Final-Penny-Pinchers-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-2-October-2025-Final-Penny-Pinchers-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "b16fde51f60fe8e51afc0debfc5370b8c2c89faccb5a2c11ad41023aba698eb6",
+    "bytes": 29483,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-15.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-23-January-2026-Plant-Based-Veggie-Nutritionals_1.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-23-January-2026-Plant-Based-Veggie-Nutritionals_1.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "c3b3f5af642a081512a4416e11bfe7bb2e5ebfc189b8dfb78b8e363b3bb6cddb",
+    "bytes": 35840,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-16.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Sides-Snacks-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Sides-Snacks-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "9e6c8b9a628e3108f9afb651a54117e1002a269105cca3cf77668426cd30e250",
+    "bytes": 29990,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-17.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "513f81b9fa60a4397ef090c256fe829afeb621c642918eb35ec9c82589d4c9a5",
+    "bytes": 117129,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-18.pdf",
+    "url": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf",
+    "finalUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "852b8706338b6ddce2cfce0f85d754c4609cba87dcd38c8bf727098a97a8af08",
+    "bytes": 64288,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-nz.pdf",
+    "url": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+    "finalUrl": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "8bb434ae9f88d528e872e3ee611b4b8ac06006c8666a5f6ecdb1d0e80f848b86",
+    "bytes": 307368,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-nz.js",
+    "url": "https://www.burgerking.co.nz/assets/index.js",
+    "finalUrl": "https://www.burgerking.co.nz/assets/index.js",
+    "retrievedAt": "2026-10-18",
+    "sha256": "3b67697f936c3046e91ec5dd0c0917b0129669452386800ae2f55e98536c1855",
+    "bytes": 1748,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-jp-index.html",
+    "url": "https://www.kfc.co.jp/food/allergy.html",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/burgerking-jp-index.html",
+    "url": "https://www.burgerking.co.jp/#/allergen",
+    "finalUrl": "https://www.burgerking.co.jp/#/allergen",
+    "retrievedAt": "2026-10-18",
+    "sha256": "f2dabc8e648bf31624295d777c1623b2ef1c26964d4ffd76d7122820ea5182a2",
+    "bytes": 3973,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "subway-uki-index.html",
+    "url": "https://www.subway.com/en-GB/MenuNutrition/Nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "The read operation timed out"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/dominos-in-site.html",
+    "url": "https://www.dominos.co.in/menu/nutritional-information",
+    "finalUrl": "https://www.dominos.co.in/menu/nutritional-information",
+    "retrievedAt": "2026-10-18",
+    "sha256": "874b53aad7aed62a25431ec9f3e2b12d4c76322d14f3a29bd1913062647ad153",
+    "bytes": 5185603,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "tacobell-in-index.html",
+    "url": "https://www.tacobell.co.in/nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "mcd-ie-index.html",
+    "url": "https://www.mcdonalds.com/ie/en-ie/food/nutrition-calculator.html",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/dominos-au-nutrition.html",
+    "url": "https://www.dominos.com.au/menu/nutritional-information",
+    "finalUrl": "https://www.dominos.com.au/menu/nutritional-information",
+    "retrievedAt": "2026-10-18",
+    "sha256": "675747acfa532708cb8f3e206c94d1c875df3c14ffc8717f2cce78a4343ef7ce",
+    "bytes": 1199730,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/dominos-nz-nutrition.html",
+    "url": "https://www.dominos.co.nz/menu/nutritional-information",
+    "finalUrl": "https://www.dominos.co.nz/menu/nutritional-information",
+    "retrievedAt": "2026-10-18",
+    "sha256": "8ec0189c2c82be2a600dd4f4158d23da6e8fb2495cdd66e5d9498e35bc6158b0",
+    "bytes": 1178279,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-za-nutrition.html",
+    "url": "https://www.kfc.co.za/nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "file": "nandos-za-nutrition.html",
+    "url": "https://www.nandos.co.za/eat/nutrition",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "mcd-mx-nutrition.html",
+    "url": "https://www.mcdonalds.com.mx/nutricional",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "starbucks-mx-nutrition.html",
+    "url": "https://www.starbucks.com.mx/menu/informacion-nutricional",
+    "retrievedAt": "2026-10-18",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/kfc-jp-index.html",
+    "url": "https://www.kfc.co.jp/food_information",
+    "finalUrl": "https://www.kfc.co.jp/food_information",
+    "retrievedAt": "2026-10-18",
+    "sha256": "94ad35c79dcdb95857b37044cca5c7b11caa8bc17356e23ed193f1fb7fd90564",
+    "bytes": 22156,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/kfc-jp.pdf",
+    "url": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+    "finalUrl": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "e64efbca9725361d325ea40d7c49b15df394bb7e6db4eaa17deacd99c6f6102b",
+    "bytes": 271040,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-fr-menu.html",
+    "url": "https://www.burgerking.fr/carte",
+    "finalUrl": "https://www.burgerking.fr/carte",
+    "retrievedAt": "2026-10-18",
+    "sha256": "4635ef756c927b82dcacfdb1e172d937f9c8809ea21a868e4aecb1d8f515ad69",
+    "bytes": 1709351,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "kfc-fr-menu.html",
+    "url": "https://www.kfc.fr/notre-carte",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAt": "2026-10-18"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-za-menu.html",
+    "url": "https://www.burgerking.co.za/menu",
+    "finalUrl": "https://www.burgerking.co.za/menu",
+    "retrievedAt": "2026-10-18",
+    "sha256": "8a9be52acfba3837fcf0555d21dd49d5288bda57311c874521d3f50ca36525cd",
+    "bytes": 1748,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "nandos-za-menu.html",
+    "url": "https://www.nandos.co.za/menu",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedAt": "2026-10-18"
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/starbucks-mx-menu.html",
+    "url": "https://www.starbucks.com.mx/menu",
+    "finalUrl": "https://www.starbucks.com.mx/menu",
+    "retrievedAt": "2026-10-18",
+    "sha256": "216cd0008c69dc5b897d6bc9e7db3444bb1b056d548f6e053cbd4ab4181b8c9b",
+    "bytes": 32195,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/zizzi-ie.pdf",
+    "url": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+    "finalUrl": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+    "retrievedAt": "2026-10-18",
+    "sha256": "7c679f48c762639f3cffc6f3d0cc665e304798ca16995c11b645b46c5a7f4ccc",
+    "bytes": 2837101,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-za-main.js",
+    "url": "https://www.burgerking.co.za/static/js/main.a621f29c.js",
+    "finalUrl": "https://www.burgerking.co.za/static/js/main.a621f29c.js",
+    "retrievedAt": "2026-10-18",
+    "sha256": "019e7f9702653f8e8d71479461e9aa2309d249d6a442884c31f46767a76ae9c8",
+    "bytes": 5779616,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-za-nutrition.html",
+    "url": "https://www.burgerking.co.za/nutrition-explorer",
+    "finalUrl": "https://www.burgerking.co.za/nutrition-explorer",
+    "retrievedAt": "2026-10-18",
+    "sha256": "8a9be52acfba3837fcf0555d21dd49d5288bda57311c874521d3f50ca36525cd",
+    "bytes": 1748,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/bk-za-faq.html",
+    "url": "https://www.burgerking.co.za/frequently-asked-questions",
+    "finalUrl": "https://www.burgerking.co.za/frequently-asked-questions",
+    "retrievedAt": "2026-10-18",
+    "sha256": "8a9be52acfba3837fcf0555d21dd49d5288bda57311c874521d3f50ca36525cd",
+    "bytes": 1748,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/nandos-za-menu.html",
+    "url": "https://www.nandos.co.za/eat/order/menu",
+    "finalUrl": "https://www.nandos.co.za/eat/order/menu",
+    "retrievedAt": "2026-10-18",
+    "sha256": "aee4b2278637c9a447d9abecd09b6ef5121a5732b05643d11d412730d2556871",
+    "bytes": 2989,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/starbucks-mx-hot.html",
+    "url": "https://www.starbucks.com.mx/menu/bebidas/calientes",
+    "finalUrl": "https://www.starbucks.com.mx/menu/bebidas/calientes",
+    "retrievedAt": "2026-10-18",
+    "sha256": "71a3514bdaa00c5153b78dbc374bf1e5db60a6608155d4a6ee7809bd50eea1bf",
+    "bytes": 36436,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/zizzi-ie-presence.html",
+    "url": "https://www.zizzi.co.uk/italian-restaurants/ireland/dublin",
+    "finalUrl": "https://www.zizzi.co.uk/italian-restaurants/ireland/dublin",
+    "retrievedAt": "2026-10-18",
+    "sha256": "3d92009241805ecd59c9cbea4ba4107a1cbf01e1731d1356db1502a3336cccbe",
+    "bytes": 642356,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/chipotle-mx-announcement.html",
+    "url": "https://ir.chipotle.com/2026-07-13-CHIPOTLE-ENTERS-MEXICO-WITH-FIRST-RESTAURANT-IN-NUEVO-LEON",
+    "finalUrl": "https://ir.chipotle.com/2026-07-13-CHIPOTLE-ENTERS-MEXICO-WITH-FIRST-RESTAURANT-IN-NUEVO-LEON",
+    "retrievedAt": "2026-10-18",
+    "sha256": "ad2ad06e227791542157e230feef270d4b61b56636f199dfabc344112f00bcf1",
+    "bytes": 105188,
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "docs/flagship-release-2026-10-18/markets/sources/starbucks-mx-latte.html",
+    "url": "https://www.starbucks.com.mx/producto/latte",
+    "retrievedAt": "2026-10-18",
+    "sha256": "944d5a18e19174b06f33f287db3eedad2b0495fb364bfbaed1d7a6193437dc37",
+    "bytes": 17469,
+    "retrievalIsVerification": false
+  },
+  {
+    "url": "https://api.nandos.co.za/api/v2/pack/menu/default",
+    "entryPoint": "https://www.nandos.co.za/eat/order/menu",
+    "file": "docs/flagship-release-2026-10-18/markets/sources/nandos-za-menu.json",
+    "sha256": "3aebbca6b8ebb089936e24516b08bb249f89cfc779dc74b250f74527b12a2940",
+    "bytes": 2415297,
+    "retrievedAt": "2026-10-18",
+    "captureMethod": "public menu response from fresh anonymous browser context; no authenticated user data retained",
+    "retrievalIsVerification": false
+  }
+]

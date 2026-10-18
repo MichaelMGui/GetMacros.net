@@ -1,0 +1,1145 @@
+{
+  "scope": "60 original-source portion samples across30 country/chain groups, including separately cross-checked Mexican calorie-only drink sizes. Not every-row manual or laboratory verification.",
+  "observations": [
+    {
+      "group": "GB|Nando’s",
+      "id": "GB|nandos|8e9825da8445bd6e",
+      "name": "Sol Bowl",
+      "sourceUrl": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/nandos-data.json",
+      "sourceHash": "e8034eaebd5aa8bd612dd2e360215a829d29091ec0c21889c2f02a06448100ae",
+      "sourceLocator": "sol-bowl:extra-hot-meal-deals#facts-0",
+      "expectedNormalized": {
+        "cal": 583,
+        "p": 7.2,
+        "c": 63,
+        "fat": 31.5,
+        "na": 1360
+      },
+      "observation": "raw official JSON; item nutritionalInfo factsForPortionSizes[0], not modifier bundles; native mg macros divided by 1000, salt 3.4g x400",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Nando’s",
+      "id": "GB|nandos|ac815ef8536ba24e",
+      "name": "Hearty Bowl",
+      "sourceUrl": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/nandos-data.json",
+      "sourceHash": "e8034eaebd5aa8bd612dd2e360215a829d29091ec0c21889c2f02a06448100ae",
+      "sourceLocator": "hearty-bowl:extra-hot-meal-deals#facts-0",
+      "expectedNormalized": {
+        "cal": 432,
+        "p": 9.3,
+        "c": 44.3,
+        "fat": 22.9,
+        "na": 1040
+      },
+      "observation": "raw official JSON; main item facts; no optional meat, halloumi or spices inferred; salt 2.6g x400",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|LEON",
+      "id": "GB|leon|853811e9d39873b8",
+      "name": "Bacon & Egg Muffin",
+      "sourceUrl": "https://leon.co/menu/",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/leon.html",
+      "sourceHash": "0a7d98a62b545e7be2102422f9d8d61c4d7c82cf35bab6a42232ee7e83fda070",
+      "sourceLocator": "mia3i5iTF9OW1CGe6B_7KaM",
+      "expectedNormalized": {
+        "cal": 431,
+        "p": 24,
+        "c": 36,
+        "fat": 20,
+        "na": 1480
+      },
+      "observation": "raw official HTML RSC payload nutritionInfo; 224g; source salt 3.7g x400",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|LEON",
+      "id": "GB|leon|8e703c6852af6cdb",
+      "name": "Sausage & Egg Muffin",
+      "sourceUrl": "https://leon.co/menu/",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/leon.html",
+      "sourceHash": "0a7d98a62b545e7be2102422f9d8d61c4d7c82cf35bab6a42232ee7e83fda070",
+      "sourceLocator": "miuBwpC3C8868cTk0THTod5",
+      "expectedNormalized": {
+        "cal": 454,
+        "p": 25,
+        "c": 38,
+        "fat": 22,
+        "na": 840
+      },
+      "observation": "raw official HTML RSC payload nutritionInfo; 217g; source salt 2.1g x400",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Wagamama",
+      "id": "GB|wagamama|be27244fc12c502f",
+      "name": "katsu chicken wrap",
+      "sourceUrl": "https://www.wagamama.com/menu",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/wagamama.html",
+      "sourceHash": "6c63e841960fb15bbfabcd310019a749ed8a9a16b7da8658ed7edf833976021b",
+      "sourceLocator": "8ad31c9d-f2b6-4f08-b1f5-36f44f0f821f|standard",
+      "expectedNormalized": {
+        "cal": 481,
+        "p": 29.8,
+        "c": 41.2,
+        "fat": 21.3,
+        "na": 500
+      },
+      "observation": "raw official Menus[0].Sections[0].Recipes[0].Nutrs PerServ; native sodium 0.5g x1000, do not recompute from rounded salt",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Wagamama",
+      "id": "GB|wagamama|c8be6acc8ef39dfa",
+      "name": "yasai katsu wrap",
+      "sourceUrl": "https://www.wagamama.com/menu",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/wagamama.html",
+      "sourceHash": "6c63e841960fb15bbfabcd310019a749ed8a9a16b7da8658ed7edf833976021b",
+      "sourceLocator": "184f3874-b3b1-466e-844c-28b78f5f52a1|standard",
+      "expectedNormalized": {
+        "cal": 596,
+        "p": 18.6,
+        "c": 63.7,
+        "fat": 29,
+        "na": 500
+      },
+      "observation": "raw official Recipes[1] PerServ; native sodium 0.5g x1000; one wrap recipe includes its dipping sauce description",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Wendy’s",
+      "id": "GB|wendys|1a4177571e1e290c",
+      "name": "Wendy's Single",
+      "sourceUrl": "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-%28002%29.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/wendys.pdf",
+      "sourceHash": "a415f4907f3bee76285e51b188bf8e41f0c2034a6377ca05f0e4511164df00f4",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 524,
+        "p": 28,
+        "c": 37,
+        "fat": 29,
+        "na": 880
+      },
+      "observation": "independent pypdf layout read of original official PDF page1; 213g source portion, salt 2.2g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Wendy’s",
+      "id": "GB|wendys|28d30bbbd64d4047",
+      "name": "Wendy's Double",
+      "sourceUrl": "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-%28002%29.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/wendys.pdf",
+      "sourceHash": "a415f4907f3bee76285e51b188bf8e41f0c2034a6377ca05f0e4511164df00f4",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 879,
+        "p": 54,
+        "c": 39,
+        "fat": 56,
+        "na": 1760
+      },
+      "observation": "independent pypdf original PDF page1; 324g source portion, salt 4.4g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Five Guys",
+      "id": "GB|five-guys|5750dc632d526d0c",
+      "name": "Bacon**",
+      "sourceUrl": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/fiveguys.pdf",
+      "sourceHash": "5846847444521c5665d3b25e7955a7b3a7f1c79da6a6d18e2f59ffc6921853f0",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 78,
+        "p": 6.4,
+        "c": 0.7,
+        "fat": 5.5,
+        "na": 368
+      },
+      "observation": "original official PDF page1, per-portion left table; 323kJ/78kcal; salt .92g; gram weight unknown",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Five Guys",
+      "id": "GB|five-guys|f791d0bd464c6bc3",
+      "name": "Beef Burger Patty",
+      "sourceUrl": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/fiveguys.pdf",
+      "sourceHash": "5846847444521c5665d3b25e7955a7b3a7f1c79da6a6d18e2f59ffc6921853f0",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 195,
+        "p": 18,
+        "c": 0,
+        "fat": 14,
+        "na": 52
+      },
+      "observation": "original official PDF page1 per-portion values; not adjacent per100g columns; salt .13g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Pepe’s",
+      "id": "GB|pepes|21165c72c80a9911",
+      "name": "1/2 Chicken",
+      "sourceUrl": "https://www.pepes.co.uk/nutrition-allergens-uk",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/pepes-nutrition.html",
+      "sourceHash": "43992d0f9e1b9a308a90778b7751939694494e13a8b728777654a776d2f4e8d3",
+      "sourceLocator": "nutrition-item-0",
+      "expectedNormalized": {
+        "cal": 798,
+        "p": 125.6,
+        "c": 2.5,
+        "fat": 32,
+        "na": 1640
+      },
+      "observation": "original official HTML nutrition row; salt4.1g; Add Flavour70ml instruction kept separate from base",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Pepe’s",
+      "id": "GB|pepes|1637ceb31971c1ec",
+      "name": "1/4 Chicken",
+      "sourceUrl": "https://www.pepes.co.uk/nutrition-allergens-uk",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/pepes-nutrition.html",
+      "sourceHash": "43992d0f9e1b9a308a90778b7751939694494e13a8b728777654a776d2f4e8d3",
+      "sourceLocator": "nutrition-item-1",
+      "expectedNormalized": {
+        "cal": 399,
+        "p": 62.8,
+        "c": 1.3,
+        "fat": 16,
+        "na": 840
+      },
+      "observation": "original official HTML nutrition row; salt2.1g; optional40ml flavour not automatically added",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Starbucks",
+      "id": "GB|starbucks|e9eccc21de33be91",
+      "name": "Pumpkin Spice Latte - skimmed milk · Short",
+      "sourceUrl": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/starbucks-drinks.pdf",
+      "sourceHash": "9e05d19718303c4590a85050ffe5b986195e28b418f9877f9e5fb8f188051494",
+      "sourceLocator": "5:1",
+      "expectedNormalized": {
+        "cal": 128,
+        "p": 4.3,
+        "c": 16.2,
+        "fat": 4.6,
+        "na": 68
+      },
+      "observation": "original Sep18 drinks PDF page5; Short skimmed recipe, salt.17g; do not switch milk recipe",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Starbucks",
+      "id": "GB|starbucks|8969ca67302a73e9",
+      "name": "Pumpkin Spice Latte - skimmed milk · Tall",
+      "sourceUrl": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/starbucks-drinks.pdf",
+      "sourceHash": "9e05d19718303c4590a85050ffe5b986195e28b418f9877f9e5fb8f188051494",
+      "sourceLocator": "5:2",
+      "expectedNormalized": {
+        "cal": 185,
+        "p": 6.7,
+        "c": 24.5,
+        "fat": 5.8,
+        "na": 104
+      },
+      "observation": "original drinks PDF page5; Tall skimmed recipe, salt.26g; not Short semi-skimmed row",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Chick-fil-A",
+      "id": "GB|chick-fil-a|427465dbcfe7f54f",
+      "name": "Chick-fil-A® Chicken Sandwich",
+      "sourceUrl": "https://www.chick-fil-a.co.uk/wp-content/uploads/sites/2/2026/09/387155-UK_Allergen_Sign_Digital.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/chickfila.pdf",
+      "sourceHash": "9d9ea63772200a654e71f903a5516b23772f9a058fd54a5ed429e9c41d96e772",
+      "sourceLocator": "1:y287.0",
+      "expectedNormalized": {
+        "cal": 402.28,
+        "p": 26.7,
+        "c": 39.16,
+        "fat": 15.13,
+        "na": 1352.8
+      },
+      "observation": "original UK PDF page1; source per100g226kcal,15P,22C,8.5fat,1.9salt; source178g multiplier1.78",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Chick-fil-A",
+      "id": "GB|chick-fil-a|d98d20e602ec59c1",
+      "name": "Chick-fil-A® Deluxe Sandwich",
+      "sourceUrl": "https://www.chick-fil-a.co.uk/wp-content/uploads/sites/2/2026/09/387155-UK_Allergen_Sign_Digital.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/chickfila.pdf",
+      "sourceHash": "9d9ea63772200a654e71f903a5516b23772f9a058fd54a5ed429e9c41d96e772",
+      "sourceLocator": "1:y303.5",
+      "expectedNormalized": {
+        "cal": 470.92,
+        "p": 31.72,
+        "c": 39.04,
+        "fat": 20.496,
+        "na": 1464
+      },
+      "observation": "original UK PDF page1; per100g193kcal,13P,16C,8.4fat,1.5salt; source244g multiplier2.44; fiber unknown",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Zizzi",
+      "id": "GB|zizzi|bd50f53a80fea382",
+      "name": "Complimentary Pasta Crisps",
+      "sourceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/abb3546d604fabb82945c2b1291c22949e5dc66e.pdf/ZIZZI-UK-NUTRITION-GUIDE_AUTUMN_SEP2026_V1.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/zizzi.pdf",
+      "sourceHash": "c1429e8192ff0b808dfa1582b609d9f649d52a7c881519fb1ffe16a309e4dde9",
+      "sourceLocator": 3,
+      "expectedNormalized": {
+        "cal": 38,
+        "p": 0,
+        "c": 8.7,
+        "fat": 0,
+        "na": 144
+      },
+      "observation": "original official PDF page3 perportion38kcal, not per100g346kcal; source rounded0P retained with warning; salt.36g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Zizzi",
+      "id": "GB|zizzi|2405029590adf085",
+      "name": "Complimentary Hot Chocolate",
+      "sourceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/abb3546d604fabb82945c2b1291c22949e5dc66e.pdf/ZIZZI-UK-NUTRITION-GUIDE_AUTUMN_SEP2026_V1.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/zizzi.pdf",
+      "sourceHash": "c1429e8192ff0b808dfa1582b609d9f649d52a7c881519fb1ffe16a309e4dde9",
+      "sourceLocator": 3,
+      "expectedNormalized": {
+        "cal": 28,
+        "p": 1,
+        "c": 3.6,
+        "fat": 1,
+        "na": 12
+      },
+      "observation": "original official PDF page3 perportion values; salt.03g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|ASK Italian",
+      "id": "GB|ask-italian|fd58a0d1ebb3c204",
+      "name": "Lasagne Garlic Bread",
+      "sourceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/ecd7a56f0b39eedfeb25391e6dc42bb62ba0d3d3.pdf/autumn26_allergenguide_nocrop.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/askitalian.pdf",
+      "sourceHash": "4e5aa73c91ff322feaac43d957997d8c19eae2b4a5aca826da61aedaf6075b4b",
+      "sourceLocator": 35,
+      "expectedNormalized": {
+        "cal": 874,
+        "p": 35,
+        "c": 113,
+        "fat": 30,
+        "na": 1680
+      },
+      "observation": "original official PDF page35 perportion; 3672kJ, salt4.2g, dated autumn specials06/10/26–16/11/26",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|ASK Italian",
+      "id": "GB|ask-italian|2db38e7bda4e8eb7",
+      "name": "S'mores Dessert Pizza",
+      "sourceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/ecd7a56f0b39eedfeb25391e6dc42bb62ba0d3d3.pdf/autumn26_allergenguide_nocrop.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/askitalian.pdf",
+      "sourceHash": "4e5aa73c91ff322feaac43d957997d8c19eae2b4a5aca826da61aedaf6075b4b",
+      "sourceLocator": 35,
+      "expectedNormalized": {
+        "cal": 1182,
+        "p": 26,
+        "c": 218,
+        "fat": 22,
+        "na": null
+      },
+      "observation": "original official PDF page35 perportion4989kJ/1182kcal; source salt cell blank, sodium remains unknown",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|PizzaExpress",
+      "id": "GB|pizzaexpress|74cfd488d9b35d72",
+      "name": "Dough Balls Al Forno",
+      "sourceUrl": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/pizzaexpress.pdf",
+      "sourceHash": "0f9d9ae2de1babd73cbb64855cbd4d71a2bf0219642d69ec15aea9382e24cde4",
+      "sourceLocator": 3,
+      "expectedNormalized": {
+        "cal": 527,
+        "p": 31.1,
+        "c": 38.2,
+        "fat": 28.1,
+        "na": 1040
+      },
+      "observation": "original official PDF page3 perportion; whole named serving, salt2.6g; England/Wales/Scotland scope",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|PizzaExpress",
+      "id": "GB|pizzaexpress|fb8cc7aedd4d98cd",
+      "name": "Dough Balls Al Forno GF",
+      "sourceUrl": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/pizzaexpress.pdf",
+      "sourceHash": "0f9d9ae2de1babd73cbb64855cbd4d71a2bf0219642d69ec15aea9382e24cde4",
+      "sourceLocator": 3,
+      "expectedNormalized": {
+        "cal": 582,
+        "p": 25.7,
+        "c": 43.2,
+        "fat": 32,
+        "na": 1120
+      },
+      "observation": "original official PDF page3; GF is separate source recipe; salt2.8g; no per100g assumption",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Tortilla",
+      "id": "GB|tortilla|04e087e5168bcc01",
+      "name": "Medium Burrito/Bowl — Tortilla Wrap",
+      "sourceUrl": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/tortilla.pdf",
+      "sourceHash": "dec97168701ee4793925e1ad5f18ece7af8386e1662453031aeadbd6c842f7cb",
+      "sourceLocator": 4,
+      "expectedNormalized": {
+        "cal": 195,
+        "p": 5,
+        "c": 36,
+        "fat": 3,
+        "na": 400
+      },
+      "observation": "original official PDF page4; Medium allocation component, not completed bowl; salt1g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Tortilla",
+      "id": "GB|tortilla|9ae7cb0ff82c8a2d",
+      "name": "Medium Burrito/Bowl — Coriander Rice (Burrito)",
+      "sourceUrl": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/tortilla.pdf",
+      "sourceHash": "dec97168701ee4793925e1ad5f18ece7af8386e1662453031aeadbd6c842f7cb",
+      "sourceLocator": 4,
+      "expectedNormalized": {
+        "cal": 117,
+        "p": 3,
+        "c": 24,
+        "fat": 1,
+        "na": 0
+      },
+      "observation": "original official PDF page4; component allocation; source salt0 retained as published; not whole order",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Tim Hortons",
+      "id": "GB|tim-hortons|a88715db672cdbad",
+      "name": "Americano",
+      "sourceUrl": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/timhortons.pdf",
+      "sourceHash": "8c9a0728efc01054530d2618e064b16e152d5e4ae239f03026142f716c54bc56",
+      "sourceLocator": 6,
+      "expectedNormalized": {
+        "cal": 0,
+        "p": 0.02,
+        "c": 0,
+        "fat": 0,
+        "na": 4
+      },
+      "observation": "original UK/Ireland PDF page6; 16oz serving, source0kcal but .02gP; salt.01g; not imported as Irish market proof",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Tim Hortons",
+      "id": "GB|tim-hortons|cfcbff4aad7bdcc5",
+      "name": "Americano (Small)",
+      "sourceUrl": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/timhortons.pdf",
+      "sourceHash": "8c9a0728efc01054530d2618e064b16e152d5e4ae239f03026142f716c54bc56",
+      "sourceLocator": 6,
+      "expectedNormalized": {
+        "cal": 0,
+        "p": 0.01,
+        "c": 0,
+        "fat": 0,
+        "na": 4
+      },
+      "observation": "original official PDF page6; small12oz .01gP; tiny values preserved, salt.01g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Wasabi",
+      "id": "GB|wasabi|3b10d0cf59a292d7",
+      "name": "Avocado and Edamame Onigiri",
+      "sourceUrl": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/wasabi.pdf",
+      "sourceHash": "f583a9ee8e84f6de689556960242c05fc0d216d554f4376d17d042c05ae948e5",
+      "sourceLocator": 4,
+      "expectedNormalized": {
+        "cal": 194,
+        "p": 4.84,
+        "c": 31.823,
+        "fat": 5.687,
+        "na": 411.4
+      },
+      "observation": "original official PDF page4; 121g, published portion194kcal; per100g4P26.3C4.7fat.85salt scaled1.21; do not recalc rounded source calories",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Wasabi",
+      "id": "GB|wasabi|117402d779824cb6",
+      "name": "BBQ Chicken Onigiri",
+      "sourceUrl": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/wasabi.pdf",
+      "sourceHash": "f583a9ee8e84f6de689556960242c05fc0d216d554f4376d17d042c05ae948e5",
+      "sourceLocator": 4,
+      "expectedNormalized": {
+        "cal": 197,
+        "p": 6.534,
+        "c": 35.695,
+        "fat": 3.509,
+        "na": 479.16
+      },
+      "observation": "original official PDF page4; 121g, portion197kcal; per100g5.4P29.5C2.9fat.99salt scaled1.21",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Caffè Nero",
+      "id": "GB|caffe-nero|eef7fd6081cfe721",
+      "name": "Cinnamon Roll Latte · Semi Skimmed Milk",
+      "sourceUrl": "https://www.caffenero.com/uk/menu/coffee",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/caffenero-coffee.html",
+      "sourceHash": "66b2dc58bc7c12a4690a809ffc728697ee2d00e0d960f20de1f0027d44782670",
+      "sourceLocator": "size--cinnamon-roll-latte-semi-skimmed-milk",
+      "expectedNormalized": {
+        "cal": 195,
+        "p": 9.5,
+        "c": 28.5,
+        "fat": 4.6,
+        "na": 120
+      },
+      "observation": "original official coffee HTML per-product table822kJ/195kcal; distinct milk recipe; salt.30g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Caffè Nero",
+      "id": "GB|caffe-nero|4b87d7be126fd5ec",
+      "name": "Cinnamon Roll Latte · Skimmed Milk",
+      "sourceUrl": "https://www.caffenero.com/uk/menu/coffee",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/caffenero-coffee.html",
+      "sourceHash": "66b2dc58bc7c12a4690a809ffc728697ee2d00e0d960f20de1f0027d44782670",
+      "sourceLocator": "size--cinnamon-roll-latte-skimmed-milk",
+      "expectedNormalized": {
+        "cal": 167,
+        "p": 9.6,
+        "c": 28.7,
+        "fat": 1.3,
+        "na": 124
+      },
+      "observation": "original official coffee HTML per-product table705kJ/167kcal, salt.31g; not per100g column48kcal",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Chipotle",
+      "id": "GB|chipotle|0c9e4bb34cade24e",
+      "name": "Flour Tortilla* (burrito)",
+      "sourceUrl": "https://www.chipotle.co.uk/nutrition-calculator",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/chipotle.html",
+      "sourceHash": "07ee7a2a740ac66975ed2377255f3916befac7db5692f5920e6d31f714439db2",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 297,
+        "p": 7.9,
+        "c": 49.2,
+        "fat": 8.8,
+        "na": 600
+      },
+      "observation": "original official PDF despite .html capture extension; ingredient serving; source salt1.5g; source lacks gram weight",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Chipotle",
+      "id": "GB|chipotle|b2dd0e4cae0f7cf2",
+      "name": "Flour Tortilla* (taco)",
+      "sourceUrl": "https://www.chipotle.co.uk/nutrition-calculator",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/chipotle.html",
+      "sourceHash": "07ee7a2a740ac66975ed2377255f3916befac7db5692f5920e6d31f714439db2",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 94,
+        "p": 2.5,
+        "c": 15.5,
+        "fat": 2.8,
+        "na": 200
+      },
+      "observation": "same original official PDF ingredient line; salt.5g; separate tortilla not complete taco",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Chopstix",
+      "id": "GB|chopstix|9eb4111750d43642",
+      "name": "VEGETABLE CHOW MEIN · Taster",
+      "sourceUrl": "https://chopstixnoodles.co.uk/menu/veg-noodles/",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/chopstix-veg-noodles.html",
+      "sourceHash": "05493f7117c14786bdfe310280d6d8a88e7169531208d0b04a70b62b02b44f5d",
+      "sourceLocator": "nutrition-column-1",
+      "expectedNormalized": {
+        "cal": 123,
+        "p": 3.7,
+        "c": 21.7,
+        "fat": 2.8,
+        "na": 432
+      },
+      "observation": "original linked official product HTML V22Sep2026 table Taster column; salt1.08g; base excludes chosen toppings",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "GB|Chopstix",
+      "id": "GB|chopstix|8d68b6c661e0d8e6",
+      "name": "VEGETABLE CHOW MEIN · Small",
+      "sourceUrl": "https://chopstixnoodles.co.uk/menu/veg-noodles/",
+      "sourceFile": "docs/flagship-release-2026-10-18/uk/sources/chopstix-veg-noodles.html",
+      "sourceHash": "05493f7117c14786bdfe310280d6d8a88e7169531208d0b04a70b62b02b44f5d",
+      "sourceLocator": "nutrition-column-2",
+      "expectedNormalized": {
+        "cal": 246,
+        "p": 7.4,
+        "c": 43.4,
+        "fat": 5.6,
+        "na": 864
+      },
+      "observation": "same official product HTML Small column; salt2.16g; source labels Regular/Large separately",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "CA|Chick-fil-A",
+      "id": "CA|chick-fil-a|official-622",
+      "name": "4 ct Spicy Chick-fil-A Chick-n-Strips®",
+      "sourceUrl": "https://www.chick-fil-a.ca/nutrition-allergens",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/cfa-ca-nutrition.html",
+      "sourceHash": "6b846a27b489f38402c0d6eb50430acab0fdc82c642364d6e2e57279a1d74b9b",
+      "sourceLocator": "nutrition/Entrées/622",
+      "expectedNormalized": {
+        "cal": 360,
+        "p": 36,
+        "c": 21,
+        "fat": 15,
+        "na": 2070
+      },
+      "observation": "original official Canadian HTML visible nutrition blocks; 172g; 4count portion; not US recipe",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "CA|Chick-fil-A",
+      "id": "CA|chick-fil-a|official-619",
+      "name": "3 ct Spicy Chick-fil-A Chick-n-Strips®",
+      "sourceUrl": "https://www.chick-fil-a.ca/nutrition-allergens",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/cfa-ca-nutrition.html",
+      "sourceHash": "6b846a27b489f38402c0d6eb50430acab0fdc82c642364d6e2e57279a1d74b9b",
+      "sourceLocator": "nutrition/Entrées/619",
+      "expectedNormalized": {
+        "cal": 270,
+        "p": 27,
+        "c": 16,
+        "fat": 12,
+        "na": 1550
+      },
+      "observation": "original Canadian HTML visible nutrition block;129g; 3count portion",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "US|Chick-fil-A",
+      "id": "US|chick-fil-a|official-36541",
+      "name": "Waffle",
+      "sourceUrl": "https://www.chick-fil-a.com/nutrition-allergens",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/cfa-us-nutrition.html",
+      "sourceHash": "989febcd2a69f01834baa521a8d526a7ccfad71d2544438e8460c297e2ee7710",
+      "sourceLocator": "nutrition/Breakfast/36541",
+      "expectedNormalized": {
+        "cal": 380,
+        "p": 5,
+        "c": 52,
+        "fat": 18,
+        "na": 330
+      },
+      "observation": "original official US HTML breakfast group;83g; source fiber5g; Canadian breakfast not inferred",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "US|Chick-fil-A",
+      "id": "US|chick-fil-a|official-10216",
+      "name": "4 ct Mini Yeast Rolls",
+      "sourceUrl": "https://www.chick-fil-a.com/nutrition-allergens",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/cfa-us-nutrition.html",
+      "sourceHash": "989febcd2a69f01834baa521a8d526a7ccfad71d2544438e8460c297e2ee7710",
+      "sourceLocator": "nutrition/Breakfast/10216",
+      "expectedNormalized": {
+        "cal": 300,
+        "p": 6,
+        "c": 52,
+        "fat": 8,
+        "na": 450
+      },
+      "observation": "original US HTML breakfast breads block;70g;4count rolls; no chicken added",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "CA|Chipotle",
+      "id": "CA|chipotle|official-5f3b7af87718c5",
+      "name": "Flour Tortilla (burrito)",
+      "sourceUrl": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/chipotle-ca-2025.pdf",
+      "sourceHash": "3bfd2ff13030862df6ef4d1abbde75e11e25798d69d7977318ec7c8761026250",
+      "sourceLocator": "2 / Standard components and drinks / row 1",
+      "expectedNormalized": {
+        "cal": 320,
+        "p": 8,
+        "c": 50,
+        "fat": 9,
+        "na": 600
+      },
+      "observation": "original Canadian PDF page2 per-each tortilla; no fabricated gram mass; source fiber3g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "CA|Chipotle",
+      "id": "CA|chipotle|official-b260245d7361ce",
+      "name": "Flour Tortilla (taco)",
+      "sourceUrl": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/chipotle-ca-2025.pdf",
+      "sourceHash": "3bfd2ff13030862df6ef4d1abbde75e11e25798d69d7977318ec7c8761026250",
+      "sourceLocator": "2 / Standard components and drinks / row 2",
+      "expectedNormalized": {
+        "cal": 80,
+        "p": 2,
+        "c": 13,
+        "fat": 2.5,
+        "na": 160
+      },
+      "observation": "original Canadian PDF page2 per-each tortilla; source fiber less-than1g remains null rather than zero",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "AU|Domino’s",
+      "id": "AU|domino-s|official-P369-7116a9e2-7b34-4099-b3de-b3ddf654b579",
+      "name": "Cheesy Garlic with Crème Fraiche — Classic Crust",
+      "sourceUrl": "https://www.dominos.com.au/menu/nutritional-information",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/dominos-au-nutrition.html",
+      "sourceHash": "675747acfa532708cb8f3e206c94d1c875df3c14ffc8717f2cce78a4343ef7ce",
+      "sourceLocator": "P369-nutritional-info-product-card/7116a9e2-7b34-4099-b3de-b3ddf654b579",
+      "expectedNormalized": {
+        "cal": 125,
+        "p": 4.9,
+        "c": 16,
+        "fat": 4.5,
+        "na": 216
+      },
+      "observation": "original official Australian HTML default nutrition block;46g and8servings/pizza; one slice, not whole pizza",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "AU|Domino’s",
+      "id": "AU|domino-s|official-P301-7116a9e2-7b34-4099-b3de-b3ddf654b579",
+      "name": "Margarita — Classic Crust",
+      "sourceUrl": "https://www.dominos.com.au/menu/nutritional-information",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/dominos-au-nutrition.html",
+      "sourceHash": "675747acfa532708cb8f3e206c94d1c875df3c14ffc8717f2cce78a4343ef7ce",
+      "sourceLocator": "P301-nutritional-info-product-card/7116a9e2-7b34-4099-b3de-b3ddf654b579",
+      "expectedNormalized": {
+        "cal": 116,
+        "p": 5,
+        "c": 16.4,
+        "fat": 3.1,
+        "na": 236
+      },
+      "observation": "original official Australian HTML Margarita default block;53g and8servings/pizza; one slice",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "NZ|Domino’s",
+      "id": "NZ|domino-s|official-P015-f152e2fb-ef6c-4712-af75-ca24b0eef77b",
+      "name": "Simply Cheese — Classic Crust",
+      "sourceUrl": "https://www.dominos.co.nz/menu/nutritional-information",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/dominos-nz-nutrition.html",
+      "sourceHash": "8ec0189c2c82be2a600dd4f4158d23da6e8fb2495cdd66e5d9498e35bc6158b0",
+      "sourceLocator": "P015-nutritional-info-product-card/f152e2fb-ef6c-4712-af75-ca24b0eef77b",
+      "expectedNormalized": {
+        "cal": 180,
+        "p": 6.9,
+        "c": 26.8,
+        "fat": 4.6,
+        "na": 299
+      },
+      "observation": "original official NZ HTML default block;53g and8servings/pizza; national recipe separate from Australia",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "NZ|Domino’s",
+      "id": "NZ|domino-s|official-P097-f152e2fb-ef6c-4712-af75-ca24b0eef77b",
+      "name": "Beef & Onion — Classic Crust",
+      "sourceUrl": "https://www.dominos.co.nz/menu/nutritional-information",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/dominos-nz-nutrition.html",
+      "sourceHash": "8ec0189c2c82be2a600dd4f4158d23da6e8fb2495cdd66e5d9498e35bc6158b0",
+      "sourceLocator": "P097-nutritional-info-product-card/f152e2fb-ef6c-4712-af75-ca24b0eef77b",
+      "expectedNormalized": {
+        "cal": 121,
+        "p": 5.1,
+        "c": 17.6,
+        "fat": 2.9,
+        "na": 223
+      },
+      "observation": "original official NZ HTML default block;52g one of8slices",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "IN|Domino’s",
+      "id": "IN|domino-s|official-42dabf5a-1c90-4d26-917a-6a5a6c01d758",
+      "name": "Achari Do Pyaza — Cheese Burst-Regular",
+      "sourceUrl": "https://www.dominos.co.in/menu/nutritional-information",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/dominos-in-site.html",
+      "sourceHash": "874b53aad7aed62a25431ec9f3e2b12d4c76322d14f3a29bd1913062647ad153",
+      "sourceLocator": "product/79ca7436-1f1b-485e-8eca-3134a65fdb15/variant/42dabf5a-1c90-4d26-917a-6a5a6c01d758",
+      "expectedNormalized": {
+        "cal": 949.95,
+        "p": 32.06,
+        "c": 107.77,
+        "fat": 42.66,
+        "na": 2055.4
+      },
+      "observation": "original official HTML embedded product variant Elements; whole Regular variant, native kcal; not divided by guessed slices",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "IN|Domino’s",
+      "id": "IN|domino-s|official-b9ba6de4-0294-4efd-8b60-4a5bf653fd00",
+      "name": "Cheese Lava Golden Corn — Pull Apart Crust-Medium",
+      "sourceUrl": "https://www.dominos.co.in/menu/nutritional-information",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/dominos-in-site.html",
+      "sourceHash": "874b53aad7aed62a25431ec9f3e2b12d4c76322d14f3a29bd1913062647ad153",
+      "sourceLocator": "product/25a56923-ddc0-4a58-8278-e2670abff5ad/variant/b9ba6de4-0294-4efd-8b60-4a5bf653fd00",
+      "expectedNormalized": {
+        "cal": 857.14,
+        "p": 34.01,
+        "c": 90.73,
+        "fat": 39.07,
+        "na": 1936.8
+      },
+      "observation": "original official HTML embedded product variant Elements; whole Medium Pull Apart variant, exact native kcal and mg sodium",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "AU|Hungry Jack’s",
+      "id": "AU|hungry-jack-s|official-9c11357c725c42b1",
+      "name": "Hash Brown",
+      "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-01.pdf",
+      "sourceHash": "b69c982fe47ac10d7332d359b49a294c80444c2474b27a7cf57b1c5ea3c0c1a6",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 163.72,
+        "p": 1.4,
+        "c": 15.2,
+        "fat": 11,
+        "na": 244
+      },
+      "observation": "original breakfast PDF page1 per-serve column;58g;685kJ /4.184 rounds163.72kcal; do not use per100g1180kJ",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "AU|Hungry Jack’s",
+      "id": "AU|hungry-jack-s|official-730226e13510f97f",
+      "name": "Jack’s Brekky Roll",
+      "sourceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/hjs-au-01.pdf",
+      "sourceHash": "b69c982fe47ac10d7332d359b49a294c80444c2474b27a7cf57b1c5ea3c0c1a6",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 592.02,
+        "p": 34.7,
+        "c": 30.8,
+        "fat": 36.9,
+        "na": 1048
+      },
+      "observation": "original breakfast PDF page1 per-serve column;235g;2477kJ /4.184; not per100g1054kJ",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "NZ|Burger King",
+      "id": "NZ|burger-king|official-d6e793dbe8dd268d",
+      "name": "WHOPPER Jr®",
+      "sourceUrl": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/bk-nz.pdf",
+      "sourceHash": "8bb434ae9f88d528e872e3ee611b4b8ac06006c8666a5f6ecdb1d0e80f848b86",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 361,
+        "p": 16.2,
+        "c": 23.8,
+        "fat": 20.2,
+        "na": 455
+      },
+      "observation": "original official PDF page1;154g; retain published361kcal alongside1440kJ rather than overwrite source kcal",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "NZ|Burger King",
+      "id": "NZ|burger-king|official-88386544c8f4ffe6",
+      "name": "WHOPPER Jr® with Cheese",
+      "sourceUrl": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/bk-nz.pdf",
+      "sourceHash": "8bb434ae9f88d528e872e3ee611b4b8ac06006c8666a5f6ecdb1d0e80f848b86",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 399,
+        "p": 18.6,
+        "c": 24.4,
+        "fat": 23.2,
+        "na": 613
+      },
+      "observation": "original official PDF page1;166g; source399kcal and1600kJ; no inferred combo",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "SG|Chick-fil-A",
+      "id": "SG|chick-fil-a|official-a52eb3354e297db6",
+      "name": "Chick-fil-A® Chicken Sandwich — 1 Sandwich",
+      "sourceUrl": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/cfa-sg.pdf",
+      "sourceHash": "d730ef8368a72187851c6722b1bc80fdbc76dc55ec9cc2da7c21b1ff1029e753",
+      "sourceLocator": "1 / Mains",
+      "expectedNormalized": {
+        "cal": 397,
+        "p": 30.2,
+        "c": 40.2,
+        "fat": 12.8,
+        "na": 1292
+      },
+      "observation": "original official SG PDF page1 mains row;186g; exact source sodiummg; distinct from UK/CA/US",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "SG|Chick-fil-A",
+      "id": "SG|chick-fil-a|official-5f17bdd0b0c7eca5",
+      "name": "Chick-fil-A® Deluxe Sandwich — 1 Sandwich",
+      "sourceUrl": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/cfa-sg.pdf",
+      "sourceHash": "d730ef8368a72187851c6722b1bc80fdbc76dc55ec9cc2da7c21b1ff1029e753",
+      "sourceLocator": "1 / Mains",
+      "expectedNormalized": {
+        "cal": 462,
+        "p": 34,
+        "c": 41.6,
+        "fat": 17.9,
+        "na": 1397
+      },
+      "observation": "original official SG PDF page1;251g, fiber2.5g; no side/drink included",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "FR|Burger King",
+      "id": "FR|burger-king|official-4633014133964283204",
+      "name": "Fuze Tea Pêche Hibiscus (50cl)",
+      "sourceUrl": "https://www.burgerking.fr/carte",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/bk-fr-menu.html",
+      "sourceHash": "4635ef756c927b82dcacfdb1e172d937f9c8809ea21a868e4aecb1d8f515ad69",
+      "sourceLocator": "catalog version 1792336357/product/4633014133964283204",
+      "expectedNormalized": {
+        "cal": 85,
+        "p": 0,
+        "c": 20,
+        "fat": 0,
+        "na": 40
+      },
+      "observation": "original official catalog JSON products ID4633014133964283204, nutrition.portion; salt.10g; not 40cl/100g share column",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "FR|Burger King",
+      "id": "FR|burger-king|official-4666271225618586047",
+      "name": "King Chicken Bacon — menu enfant (produit seul)",
+      "sourceUrl": "https://www.burgerking.fr/carte",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/bk-fr-menu.html",
+      "sourceHash": "4635ef756c927b82dcacfdb1e172d937f9c8809ea21a868e4aecb1d8f515ad69",
+      "sourceLocator": "catalog version 1792336357/product/4666271225618586047",
+      "expectedNormalized": {
+        "cal": 419.54,
+        "p": 14,
+        "c": 41,
+        "fat": 21,
+        "na": 840
+      },
+      "observation": "original official product ID4666271225618586047; small children-menu product context; separate larger482kcal same-name product; salt2.1g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "JP|KFC",
+      "id": "JP|kfc|official-af0f400adb35d73c",
+      "name": "オリジナルチキン",
+      "sourceUrl": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/kfc-jp.pdf",
+      "sourceHash": "e64efbca9725361d325ea40d7c49b15df394bb7e6db4eaa17deacd99c6f6102b",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 218,
+        "p": 16.5,
+        "c": 9.1,
+        "fat": 12.8,
+        "na": 585
+      },
+      "observation": "original Japanese official PDF page1; edible mean87g, source sodiummg; source dash means unanalysed, not zero",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "JP|KFC",
+      "id": "JP|kfc|official-750ee89b3f75513e",
+      "name": "にんにく醤油チキン",
+      "sourceUrl": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/kfc-jp.pdf",
+      "sourceHash": "e64efbca9725361d325ea40d7c49b15df394bb7e6db4eaa17deacd99c6f6102b",
+      "sourceLocator": 1,
+      "expectedNormalized": {
+        "cal": 275,
+        "p": 18.8,
+        "c": 11.1,
+        "fat": 17.2,
+        "na": 603
+      },
+      "observation": "original Japanese PDF page1; edible102g; source sodiummg; source fiber.7g",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "IE|Zizzi",
+      "id": "IE|zizzi|official-c7e6b37ef8f29021",
+      "name": "Complimentary Pasta Crisps",
+      "sourceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/zizzi-ie.pdf",
+      "sourceHash": "7c679f48c762639f3cffc6f3d0cc665e304798ca16995c11b645b46c5a7f4ccc",
+      "sourceLocator": 3,
+      "expectedNormalized": {
+        "cal": 69,
+        "p": 0.7,
+        "c": 16,
+        "fat": 0,
+        "na": 264
+      },
+      "observation": "original Republic of Ireland PDF page3 perportion;293kJ69kcal salt.66g; UK38kcal intentionally not substituted",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "IE|Zizzi",
+      "id": "IE|zizzi|official-8a6bf42e86db4fcf",
+      "name": "Complimentary Hot Chocolate",
+      "sourceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/zizzi-ie.pdf",
+      "sourceHash": "7c679f48c762639f3cffc6f3d0cc665e304798ca16995c11b645b46c5a7f4ccc",
+      "sourceLocator": 3,
+      "expectedNormalized": {
+        "cal": 26,
+        "p": 1,
+        "c": 3.6,
+        "fat": 0.8,
+        "na": 12
+      },
+      "observation": "original Ireland PDF page3 perportion;111kJ26kcal, salt.03g; distinct UK28kcal row",
+      "checkedAt": "2026-10-18",
+      "method": "independent original-capture PDF text / HTML / raw JSON reading; not visual screenshot or laboratory verification"
+    },
+    {
+      "group": "MX|Starbucks",
+      "id": "MX|starbucks|calories-d951b01d-d8d8-4fab-9d69-2340f492dc8f-alto",
+      "name": "Latte — Alto",
+      "sourceUrl": "https://www.starbucks.com.mx/menu/bebidas/calientes",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/starbucks-mx-hot.html",
+      "sourceHash": "71a3514bdaa00c5153b78dbc374bf1e5db60a6608155d4a6ee7809bd50eea1bf",
+      "sourceLocator": "hot-drinks/product/d951b01d-d8d8-4fab-9d69-2340f492dc8f/size/Alto",
+      "expectedNormalized": {
+        "cal": 120,
+        "p": null,
+        "c": null,
+        "fat": null,
+        "f": null,
+        "na": null
+      },
+      "observation": "Literal Mexican Latte size calories independently checked in captured category subtitle and separate official Latte product page (Alto120, Grande150, Venti200). No macro or volume inferred.",
+      "checkedAt": "2026-10-18"
+    },
+    {
+      "group": "MX|Starbucks",
+      "id": "MX|starbucks|calories-d951b01d-d8d8-4fab-9d69-2340f492dc8f-venti",
+      "name": "Latte — Venti",
+      "sourceUrl": "https://www.starbucks.com.mx/menu/bebidas/calientes",
+      "sourceFile": "docs/flagship-release-2026-10-18/markets/sources/starbucks-mx-hot.html",
+      "sourceHash": "71a3514bdaa00c5153b78dbc374bf1e5db60a6608155d4a6ee7809bd50eea1bf",
+      "sourceLocator": "hot-drinks/product/d951b01d-d8d8-4fab-9d69-2340f492dc8f/size/Venti",
+      "expectedNormalized": {
+        "cal": 200,
+        "p": null,
+        "c": null,
+        "fat": null,
+        "f": null,
+        "na": null
+      },
+      "observation": "Literal Mexican Latte size calories independently checked in captured category subtitle and separate official Latte product page (Alto120, Grande150, Venti200). No macro or volume inferred.",
+      "checkedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "scope": "Raw adapter diagnostics before final audit/deduplication; repeated pricing groups are not additive coverage counts.",
+  "groups": [
+    {
+      "chain": "Nando’s",
+      "category": "The Lunch Fix",
+      "sourceItems": 2,
+      "stagedRecords": 2,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Starters",
+      "sourceItems": 29,
+      "stagedRecords": 18,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 18
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Flying Solo",
+      "sourceItems": 2,
+      "stagedRecords": 0,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 0
+    },
+    {
+      "chain": "Nando’s",
+      "category": "PERi-PERi Chicken",
+      "sourceItems": 59,
+      "stagedRecords": 32,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 30
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Burgers, Pittas, Wraps",
+      "sourceItems": 45,
+      "stagedRecords": 24,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 24
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Salads & Bowls",
+      "sourceItems": 9,
+      "stagedRecords": 4,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 4
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Sharing Platters",
+      "sourceItems": 14,
+      "stagedRecords": 0,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 0
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Veggie",
+      "sourceItems": 15,
+      "stagedRecords": 4,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 4
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Nandinos (Kids)",
+      "sourceItems": 17,
+      "stagedRecords": 16,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 15
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Sides",
+      "sourceItems": 53,
+      "stagedRecords": 60,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 60
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Dips & Extras",
+      "sourceItems": 41,
+      "stagedRecords": 36,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 36
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Sweet Treats",
+      "sourceItems": 5,
+      "stagedRecords": 4,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 4
+    },
+    {
+      "chain": "Nando’s",
+      "category": "The Classics",
+      "sourceItems": 3,
+      "stagedRecords": 1,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 1
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Breakfast Rolls",
+      "sourceItems": 4,
+      "stagedRecords": 4,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 4
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Eggs",
+      "sourceItems": 4,
+      "stagedRecords": 3,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 3
+    },
+    {
+      "chain": "Nando’s",
+      "category": "The Works",
+      "sourceItems": 2,
+      "stagedRecords": 2,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "Nando’s",
+      "category": "PERi-PERi Chicken",
+      "sourceItems": 3,
+      "stagedRecords": 0,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 30
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Nandinos (Kids)",
+      "sourceItems": 2,
+      "stagedRecords": 1,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 15
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Sides",
+      "sourceItems": 6,
+      "stagedRecords": 0,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 60
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Extras",
+      "sourceItems": 8,
+      "stagedRecords": 6,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 6
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Drinks",
+      "sourceItems": 139,
+      "stagedRecords": 52,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 52
+    },
+    {
+      "chain": "Nando’s",
+      "category": "Desserts",
+      "sourceItems": 14,
+      "stagedRecords": 6,
+      "scope": "Base named dishes; pricing duplicates merged; regional restrictions retained",
+      "publishedStagedRecords": 6
+    },
+    {
+      "chain": "LEON",
+      "category": "Muffins",
+      "stagedRecords": 8,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 8
+    },
+    {
+      "chain": "LEON",
+      "category": "Bigger Breakfasts ",
+      "stagedRecords": 3,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 3
+    },
+    {
+      "chain": "LEON",
+      "category": "Egg Pots",
+      "stagedRecords": 6,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 6
+    },
+    {
+      "chain": "LEON",
+      "category": "Wraps",
+      "stagedRecords": 7,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 7
+    },
+    {
+      "chain": "LEON",
+      "category": "LEON Boxes",
+      "stagedRecords": 17,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 17
+    },
+    {
+      "chain": "LEON",
+      "category": "Burgers",
+      "stagedRecords": 6,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 6
+    },
+    {
+      "chain": "LEON",
+      "category": "Superfood Salads",
+      "stagedRecords": 8,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 8
+    },
+    {
+      "chain": "LEON",
+      "category": "Cakes",
+      "stagedRecords": 11,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 11
+    },
+    {
+      "chain": "LEON",
+      "category": "Yoghurts",
+      "stagedRecords": 2,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "LEON",
+      "category": "Porridge",
+      "stagedRecords": 5,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 5
+    },
+    {
+      "chain": "LEON",
+      "category": "Sides",
+      "stagedRecords": 13,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 13
+    },
+    {
+      "chain": "LEON",
+      "category": "Smoothies",
+      "stagedRecords": 3,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 3
+    },
+    {
+      "chain": "LEON",
+      "category": "Juices & Cans",
+      "stagedRecords": 11,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 11
+    },
+    {
+      "chain": "LEON",
+      "category": "Breakfast Sides",
+      "stagedRecords": 2,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "LEON",
+      "category": "Uncategorized",
+      "stagedRecords": 6,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 6
+    },
+    {
+      "chain": "LEON",
+      "category": "Breakfast Boxes",
+      "stagedRecords": 2,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "LEON",
+      "category": "Kids' All Day",
+      "stagedRecords": 3,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 3
+    },
+    {
+      "chain": "LEON",
+      "category": "Sauces",
+      "stagedRecords": 4,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 4
+    },
+    {
+      "chain": "LEON",
+      "category": "Coffee",
+      "stagedRecords": 16,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 16
+    },
+    {
+      "chain": "LEON",
+      "category": "Fries",
+      "stagedRecords": 2,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "LEON",
+      "category": "Functional Drinks",
+      "stagedRecords": 4,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 4
+    },
+    {
+      "chain": "LEON",
+      "category": "Kids' Breakfast",
+      "stagedRecords": 2,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "LEON",
+      "category": "Pastries",
+      "stagedRecords": 2,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 2
+    },
+    {
+      "chain": "LEON",
+      "category": "Warm Salads ",
+      "stagedRecords": 1,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 1
+    },
+    {
+      "chain": "LEON",
+      "category": "Oat Milk Coffee",
+      "stagedRecords": 6,
+      "scope": "Distinct published recipes; missing core macros withheld",
+      "publishedStagedRecords": 6
+    },
+    {
+      "chain": "Wagamama",
+      "category": "All 224 captured service recipes",
+      "sourceItems": 224,
+      "scope": "Named sizes in the public UK nutrition service; independent dishes, not combos",
+      "publishedStagedRecords": 0
+    }
+  ]
+}

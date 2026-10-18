@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Country search, explicit local URL and back navigation retain genuine market",
+    "Packed international meal keeps a working exact restaurant-guide destination",
+    "Actual game answer, completion focus, restart, pause/resume and next puzzle",
+    "Adult calculator rejects an invalid age and accepts corrected inputs",
+    "Learn page at 200% root text size has no horizontal page overflow"
+  ],
+  "errors": []
+}

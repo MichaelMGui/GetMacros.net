@@ -1,0 +1,43 @@
+[
+  {
+    "command": [
+      "tools/validate_site.py"
+    ],
+    "exit": 0,
+    "seconds": 3.85,
+    "output": "PASS: 439 HTML files; 436 indexable pages; 436 sitemap URLs; 435 searchable resources.\nWARNING: duplicate H1 wording: au/en/index.html, ca/en/index.html, fr/en/index.html, gb/en/index.html, ie/en/index.html, in/en/index.html, index.html, jp/en/index.html, mx/en/index.html, nz/en/index.html, sg/en/index.html, za/en/index.html\n"
+  },
+  {
+    "command": [
+      "tools/test_publication.py"
+    ],
+    "exit": 0,
+    "seconds": 3.02,
+    "output": "Publication: 439 pages; shared stylesheet (77,415 bytes) plus purposeful route styles, preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.\n"
+  },
+  {
+    "command": [
+      "tools/test_asset_stamps.py"
+    ],
+    "exit": 0,
+    "seconds": 0.47,
+    "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.323s\n\nOK\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/international/test-markets.cjs"
+    ],
+    "exit": 0,
+    "seconds": 2.89,
+    "output": "PASS: Canadian source fields, exact order sums, editions, market isolation, missing macros/nutrients, stable U.S. keys, share state, private-card exclusion and finder/builder equality.\n"
+  },
+  {
+    "command": [
+      "tools/flagship_release/test_finder_payload.py"
+    ],
+    "exit": 0,
+    "seconds": 2.01,
+    "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 1.855s\n\nOK\n"
+  }
+]

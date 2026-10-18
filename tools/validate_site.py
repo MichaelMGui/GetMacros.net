@@ -133,7 +133,7 @@ def main() -> int:
     # These contain working previews and browser evidence, not public pages.
     # They are .html but they are not site pages -- they carry no description,
     # canonical or nav -- so the site contract does not apply to them.
-    excluded={'.git','node_modules','design','docs','tools','server','music-platform'}
+    excluded={'.git','node_modules','design','docs','tools','server','native','music-platform'}
     all_files=set()
     for folder,dirs,files in os.walk(ROOT):
         dirs[:]=[d for d in dirs if d not in {'.git','node_modules'} and not (Path(folder)==ROOT and d in excluded)]
@@ -226,18 +226,19 @@ def main() -> int:
             localized=re.match(r'^([a-z]{2})/en/',path)
             market=localized[1].upper() if localized else None
             prefix='/'+localized[1]+'/en/' if localized else ''
+            explicit=re.search(r'data-market-scope="([A-Z]{2})"',text)
+            if not localized and explicit and explicit[1]!='US':
+                market=explicit[1];prefix='/'+market.lower()+'/en/'
             required_nav = (
-                (prefix+"find-a-meal/" if market else "restaurant-meal-finder.html", "Find a meal"),
-                (prefix+"restaurants/" if market else "restaurant-meal-guides.html", "All restaurants"),
+                ((prefix+"find-a-meal/" if market else "restaurant-meal-finder.html")+"?quiz=1", "Find my meal"),
+                (prefix+"restaurants/" if market else "restaurant-meal-guides.html", "Restaurants"),
                 ("calculators.html?market="+market if market else "calculators.html", "Macro calculator"),
-                ("articles.html?market="+market if market else "articles.html", "All guides"),
+                ("articles.html?market="+market if market else "articles.html", "Nutrition guides"),
             )
             for nav_href, nav_label in required_nav:
                 pattern = rf'<a\b[^>]*href=["\']/?{re.escape(nav_href.lstrip("/"))}["\'][^>]*>(.*?)</a>'
-                anchor = re.search(pattern, text, re.I | re.S)
-                label_text = re.sub(r'<[^>]+>', ' ', anchor.group(1)) if anchor else ''
-                label_text = ' '.join(label_text.split())
-                if not anchor or nav_label.casefold() not in label_text.casefold():
+                labels=[' '.join(re.sub(r'<[^>]+>',' ',part).split()).casefold() for part in re.findall(pattern,text,re.I|re.S)]
+                if not any(nav_label.casefold() in label for label in labels):
                     errors.append(f"{path}: focused primary navigation link missing: {nav_label}")
 
         for raw in parser.jsonld:
@@ -348,7 +349,8 @@ def main() -> int:
     for path, (text, _) in pages.items():
         visible_text = re.sub(r"<(?:script|style)\b.*?</(?:script|style)>", " ", text, flags=re.I | re.S)
         visible_text = re.sub(r"<[^>]+>", " ", visible_text)
-        if not re.match(r'^[a-z]{2}/en/',path) and path!='search.html' and re.search(r"\bfibre\b", visible_text, re.I):
+        localized_scope=re.search(r'data-market-scope="(CA|GB|IE|AU|NZ)"',text)
+        if not localized_scope and not re.match(r'^[a-z]{2}/en/',path) and path!='search.html' and re.search(r"\bfibre\b", visible_text, re.I):
             errors.append(f"{path}: visible copy must use the U.S. spelling 'fiber'")
 
     meals = parse_meals()

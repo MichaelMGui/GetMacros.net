@@ -1,0 +1,11 @@
+/* Application-only safe areas. The publication remains unchanged. */
+html.gm-native{overscroll-behavior-y:none;-webkit-text-size-adjust:100%}
+.gm-native body{padding-bottom:calc(var(--mobile-nav-height,0px) + env(safe-area-inset-bottom,0px))}
+.gm-native .site-header{padding-top:env(safe-area-inset-top,0px)}
+.gm-native dialog{max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 24px)}
+.gm-native .native-backups{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.gm-native .native-backups button{min-height:44px;padding:10px 14px;background:var(--surface,#fff);color:var(--ink,#173b27);border:1px solid var(--control-border,#758d78);border-radius:7px}
+.gm-native .native-backups button:hover{background:var(--soft,#e7f2df)}
+.gm-native .native-backups button:focus-visible{outline:2px solid var(--focus,#267044);outline-offset:2px}
+.gm-native .native-backups p{flex-basis:100%;margin:0;font-size:.85rem;color:var(--muted)}
+.gm-native .native-offline{position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);left:50%;transform:translateX(-50%);max-width:calc(100% - 24px);z-index:100;background:var(--ink);color:var(--surface);border-radius:8px;padding:8px 12px;font-size:.8rem;pointer-events:none}

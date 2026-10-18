@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-18",
+  "requestOrigin": "capacitor://localhost",
+  "method": "Public HTTPS GET, Node fetch with explicit Origin header; no credentials or diary payload",
+  "results": [
+    {
+      "url": "https://getmacros.net/data/branded-foods/usda/manifest.json",
+      "status": 200,
+      "accessControlAllowOrigin": "*",
+      "vary": "Accept-Encoding",
+      "contentType": "application/json; charset=utf-8",
+      "contentLength": 27674
+    },
+    {
+      "url": "https://getmacros.net/data/branded-foods/off/manifest.json",
+      "status": 200,
+      "accessControlAllowOrigin": "*",
+      "vary": "Accept-Encoding",
+      "contentType": "application/json; charset=utf-8",
+      "contentLength": 33959
+    }
+  ],
+  "scope": "Real current public response headers permit cross-origin resource requests. Does not substitute for an actual WKWebView or offline device test."
+}

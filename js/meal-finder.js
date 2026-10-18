@@ -24,6 +24,7 @@
   let visible=pageSize,selected=[],saved=[],savedOnly=false;
   try {const s=JSON.parse(localStorage.getItem('getmacros-saved-meals-v1')||'[]');if(Array.isArray(s))saved=s;}catch(e){}
   const key=E.key,complete=E.complete;
+  const launchQuiz=new URLSearchParams(location.search).get('quiz')==='1';
   let state=E.fromSearch(location.search,meals);
   selected=new URLSearchParams(location.search).getAll('compare').map(k=>meals.findIndex(m=>key(m)===k)).filter(i=>i>=0).slice(0,3);
   let expectedSnapshots=new URLSearchParams(location.search).getAll('snapshot').slice(0,3);
@@ -37,7 +38,7 @@
   function number(v,unit=''){return Number.isFinite(v)?v.toLocaleString()+(unit?' '+unit:''):'Not verified';}
   function mealRow(m){const id=meals.indexOf(m);return V.card(m,id,{saved:saved.includes(key(m)),selected:selected.includes(id),state});}
   function activeFilters(){
-    root.querySelector('.restaurant-picker summary span').textContent=state.chain.length ? state.chain.length+' restaurant'+(state.chain.length===1?'':'s')+' selected' : 'Choose restaurants';
+    root.querySelector('[data-chain-selection]').textContent=state.chain.length ? state.chain.length+' restaurant'+(state.chain.length===1?'':'s')+' selected' : 'Choose restaurants';
     let chips=[];
     Object.keys(facets).forEach(k=>state[k].forEach(v=>chips.push({k,v,label:facets[k].find(o=>o[0]===v)[1]})));
     Object.keys(limits).forEach(k=>{if(state[k]!==null)chips.push({k,v:'',label:limits[k][2]+': '+state[k]});});
@@ -99,7 +100,9 @@
     if(el.hasAttribute('data-browse')){savedOnly=false;render();root.querySelector('[name=sort]').focus();track('finder_started');}
     if(el.hasAttribute('data-show-saved')){savedOnly=!savedOnly;render();track('finder_started');}
     if(el.hasAttribute('data-more')){visible+=12;render();}
-    if(el.hasAttribute('data-surprise')){const matches=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));if(!matches.length)return;const rand=new Uint32Array(1);crypto.getRandomValues(rand);const at=rand[0]%matches.length,m=matches[at];visible=Math.max(visible,Math.ceil((at+1)/pageSize)*pageSize);render();const row=resultList.querySelector('[data-meal-id="'+meals.indexOf(m)+'"]');if(row){const details=row.querySelector('.meal-detail');details.open=true;details.querySelector('summary').focus();}}
+    if(el.hasAttribute('data-meal-details'))showMeal(Number(el.dataset.mealDetails),el);
+    if(el.hasAttribute('data-close-meal'))root.querySelector('.meal-panel').close();
+    if(el.hasAttribute('data-surprise')){const matches=E.results(meals,state).filter(m=>!savedOnly||saved.includes(key(m)));if(!matches.length)return;const rand=new Uint32Array(1);crypto.getRandomValues(rand);const at=rand[0]%matches.length,m=matches[at];visible=Math.max(visible,Math.ceil((at+1)/pageSize)*pageSize);render();const row=resultList.querySelector('[data-meal-id="'+meals.indexOf(m)+'"]');if(row){showMeal(meals.indexOf(m),row.querySelector('[data-meal-details]'));}}
     if(el.hasAttribute('data-reset'))clear();
     if(el.hasAttribute('data-allow-incomplete')){state.complete=false;controlsFromState();render();const count=root.querySelector('.results-count');count.tabIndex=-1;count.focus({preventScroll:true});}
     if(el.hasAttribute('data-remove')){const k=el.dataset.remove;if(facets[k])state[k]=state[k].filter(v=>v!==el.dataset.value);else if(k==='complete')state.complete=true;else state[k]=null;controlsFromState();render();root.querySelector('[name=sort]').focus({preventScroll:true});}
@@ -128,11 +131,12 @@
     const count=root.querySelector('.results-count');count.tabIndex=-1;count.focus();track('quiz_completed');
   }});
   function openGuide(){guided.open();track('finder_started');}
-  const restaurantPicker=root.querySelector('.restaurant-picker');
-  document.addEventListener('click',e=>{if(restaurantPicker.open&&!restaurantPicker.contains(e.target))restaurantPicker.open=false;});
-  restaurantPicker.addEventListener('keydown',e=>{if(e.key==='Escape'&&restaurantPicker.open){e.preventDefault();e.stopPropagation();restaurantPicker.open=false;restaurantPicker.querySelector('summary').focus();}});
+  let mealReturn=null;
+  function showMeal(id,trigger){const panel=root.querySelector('.meal-panel');mealReturn=trigger;panel.innerHTML=V.detail(meals[id],id);panel.showModal();window.GetMacrosMotion?.animate(panel,[{opacity:.6,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:260});}
+  root.querySelector('.meal-panel').addEventListener('close',()=>mealReturn?.isConnected&&mealReturn.focus({preventScroll:true}));
+  root.querySelector('[data-filter-chain-search]').addEventListener('input',e=>{const term=e.target.value.toLocaleLowerCase().trim();form.querySelectorAll('.restaurant-checks label').forEach(label=>label.hidden=!label.textContent.toLocaleLowerCase().includes(term));});
   compareDialog.addEventListener('close',()=>root.querySelector('[data-open-compare]').focus({preventScroll:true}));
   const mobile=matchMedia('(max-width: 800px)');mobile.addEventListener('change',e=>{if(!e.matches&&filterDialog.open)filterDialog.close();});
   addEventListener('popstate',()=>{state=readState();controlsFromState();visible=pageSize;render();});
-  root.dataset.ready='true';controlsFromState();render();if(selected.length>=2)root.querySelector('[data-open-compare]').click();
+  root.dataset.ready='true';controlsFromState();render();if(launchQuiz)openGuide();else if(selected.length>=2)root.querySelector('[data-open-compare]').click();
 })();

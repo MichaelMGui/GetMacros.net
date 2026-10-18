@@ -1,0 +1,1216 @@
+[
+  {
+    "file": "nandos.html",
+    "url": "https://www.nandos.co.uk/food/menu/",
+    "finalUrl": "https://www.nandos.co.uk/food/menu/",
+    "status": 200,
+    "bytes": 2482232,
+    "sha256": "6b2806cb4e6f94c8770d903d260a75fb25239bb68eebd0c70e4cebb7d0d44392",
+    "retrievedAt": "2026-10-18T16:27:55.042Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd.html",
+    "url": "https://www.mcdonalds.com/gb/en-gb/menu.html",
+    "finalUrl": "https://www.mcdonalds.com/gb/en-gb/menu.html",
+    "status": 200,
+    "bytes": 309283,
+    "sha256": "68b762eb7a24836595c5bd477f6b7c0a3f3a5dd670c8bb14ce9b8e52c8cc4080",
+    "retrievedAt": "2026-10-18T16:27:53.123Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "leon.html",
+    "url": "https://leon.co/menu/",
+    "finalUrl": "https://leon.co/menu/",
+    "status": 200,
+    "bytes": 1040682,
+    "sha256": "0a7d98a62b545e7be2102422f9d8d61c4d7c82cf35bab6a42232ee7e83fda070",
+    "retrievedAt": "2026-10-18T16:27:53.579Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "itsu.html",
+    "url": "https://www.itsu.com/menu/",
+    "finalUrl": "https://www.itsu.com/menu/",
+    "status": 200,
+    "bytes": 480594,
+    "sha256": "ad951db68b4416aea9d3b09c4d69b8e506a2669838502984a1cce5627a2b7468",
+    "retrievedAt": "2026-10-18T16:27:54.317Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wasabi.html",
+    "url": "https://www.wasabi.uk.com/nutritional-information/",
+    "finalUrl": "https://www.wasabi.uk.com/nutritional-information/",
+    "status": 404,
+    "bytes": 45982,
+    "sha256": "5f8d1faaeab7de914e00794c90217dfc546993e6b5526e2afa91496677a9ffbc",
+    "retrievedAt": "2026-10-18T16:27:56.125Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wagamama.html",
+    "url": "https://www.wagamama.com/menu",
+    "finalUrl": "https://www.wagamama.com/menu",
+    "status": 200,
+    "bytes": 924576,
+    "sha256": "6c63e841960fb15bbfabcd310019a749ed8a9a16b7da8658ed7edf833976021b",
+    "retrievedAt": "2026-10-18T16:27:57.292Z",
+    "retrievalIsVerification": false,
+    "originalResponseSha256": "9ff6188107c23f52b6d135dcc9d860e55575afbfe9f38b01d74ee40f8107b425",
+    "redactedFields": [
+      "city",
+      "countryRegionCode",
+      "countryRegionName",
+      "latitude",
+      "longitude",
+      "postalCode"
+    ]
+  },
+  {
+    "file": "pret.html",
+    "url": "https://www.pret.co.uk/en-GB/our-menu",
+    "finalUrl": "https://www.pret.co.uk/en-GB/our-menu",
+    "status": 200,
+    "bytes": 136829,
+    "sha256": "b643b735dcc5d769302b2fe41399e26596ed53ef02ddbeedb0cf80000f59d92a",
+    "retrievedAt": "2026-10-18T16:27:56.553Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "popeyes.html",
+    "url": "https://allergensandnutritions.popeyesuk.com/nutritional-information-table",
+    "finalUrl": "https://allergensandnutritions.popeyesuk.com/nutritional-information-table",
+    "status": 200,
+    "bytes": 479,
+    "sha256": "ccbf5edaa90507e17bf8a38e9ea5e0b75e90c639c5b934ae5e194ea22aa86ab2",
+    "retrievedAt": "2026-10-18T16:28:25.975Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wendys.pdf",
+    "url": "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-%28002%29.pdf",
+    "finalUrl": "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-%28002%29.pdf",
+    "status": 200,
+    "bytes": 336028,
+    "sha256": "a415f4907f3bee76285e51b188bf8e41f0c2034a6377ca05f0e4511164df00f4",
+    "retrievedAt": "2026-10-18T16:28:25.952Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wendys.html",
+    "url": "https://www.wendys.com/en-gb/",
+    "finalUrl": "https://www.wendys.com/en-gb/",
+    "status": 200,
+    "bytes": 142052,
+    "sha256": "45b8952fdcd4b5bd60975eec881c6ad9fde2518c07d1c3a0144a588a77710cba",
+    "retrievedAt": "2026-10-18T16:28:25.728Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "fiveguys.html",
+    "url": "https://www.fiveguys.co.uk/nutritional-allergy-information/",
+    "finalUrl": "https://www.fiveguys.co.uk/nutritional-allergy-information/",
+    "status": 200,
+    "bytes": 121250,
+    "sha256": "3644629b824c4335249b0653c644dec3b2836c29002c717b4ee852d57e528a41",
+    "retrievedAt": "2026-10-18T16:28:25.775Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "nandos-app.js",
+    "url": "https://www.nandos.co.uk/food/menu/app-1792141003981.js",
+    "finalUrl": "https://www.nandos.co.uk/food/menu/app-1792141003981.js",
+    "status": 200,
+    "bytes": 66230,
+    "sha256": "302c1c9a8de4408ade2ba32eeee79bfe0f8a1ae6dcab1a1ab2c5df6198fa36cc",
+    "retrievedAt": "2026-10-18T16:28:26.101Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "leon-allergens.html",
+    "url": "https://leon.co/allergens/",
+    "finalUrl": "https://leon.co/allergens/",
+    "status": 200,
+    "bytes": 620524,
+    "sha256": "76ec37461fcaafb88d7d8ab3603c747b2aaec7772f986c43857044066dc85d46",
+    "retrievedAt": "2026-10-18T16:28:26.399Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wagamama-allergens.html",
+    "url": "https://www.wagamama.com/allergen-information",
+    "finalUrl": "https://www.wagamama.com/allergen-information",
+    "status": 200,
+    "bytes": 333557,
+    "sha256": "3ae2df87872646da32f2a67cbc8384466ed0b50edcfff8fe57df6c9a498fb30e",
+    "retrievedAt": "2026-10-18T16:28:26.956Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "nandos-data.json",
+    "url": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "finalUrl": "https://www.nandos.co.uk/food/menu/page-data/index/page-data.1792141003981.json",
+    "status": 200,
+    "bytes": 4925670,
+    "sha256": "e8034eaebd5aa8bd612dd2e360215a829d29091ec0c21889c2f02a06448100ae",
+    "retrievedAt": "2026-10-18T16:29:04.771Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "fiveguys.pdf",
+    "url": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "finalUrl": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+    "status": 200,
+    "bytes": 509113,
+    "sha256": "5846847444521c5665d3b25e7955a7b3a7f1c79da6a6d18e2f59ffc6921853f0",
+    "retrievedAt": "2026-10-18T16:29:02.664Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "popeyes-app.js",
+    "url": "https://allergensandnutritions.popeyesuk.com/assets/index-umHEyXr2.js",
+    "finalUrl": "https://allergensandnutritions.popeyesuk.com/assets/index-umHEyXr2.js",
+    "status": 200,
+    "bytes": 359260,
+    "sha256": "17656d0d0be1ab138d270570c3c21616eaa148b351e2cdab8fa76736e07964f8",
+    "retrievedAt": "2026-10-18T16:29:02.877Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "burgerking.html",
+    "url": "https://www.burgerking.co.uk/",
+    "finalUrl": "https://www.burgerking.co.uk/",
+    "status": 200,
+    "bytes": 2000,
+    "sha256": "4dcfca09d4d042962cb95025b31dc37badc3aa7a357f19dfb9b6099b12e8a170",
+    "retrievedAt": "2026-10-18T16:31:30.053Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "dominos.html",
+    "url": "https://corporate.dominos.co.uk/about-us/our-food/allergens-and-nutrition",
+    "finalUrl": "https://corporate.dominos.co.uk/about-us/our-food/allergens-and-nutrition",
+    "status": 403,
+    "bytes": 446,
+    "sha256": "9fa672ac95c4fd98cfaf64e5301279d9763a26f030f1694bee977353732beebf",
+    "retrievedAt": "2026-10-18T16:31:29.951Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "pizzahut.html",
+    "url": "https://www.pizzahut.co.uk/restaurants/food/nutritional-information/",
+    "finalUrl": "https://www.pizzahut.co.uk/restaurants/food/nutritional-information/",
+    "status": 403,
+    "bytes": 433,
+    "sha256": "71346f434af9b9ffa96311794f52a5ab76231116780238cc389958675d809c96",
+    "retrievedAt": "2026-10-18T16:31:30.116Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "papajohns.html",
+    "url": "https://www.papajohns.co.uk/nutritional-information",
+    "finalUrl": "https://www.papajohns.com/international/",
+    "status": 200,
+    "bytes": 41864,
+    "sha256": "27a9bb60c510b70eabd07155cdf44b1de273d4e35d1a86eedfff6e76c059b0aa",
+    "retrievedAt": "2026-10-18T16:31:30.305Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "shakeshack.html",
+    "url": "https://www.shakeshack.co.uk/menu/allergen-information/",
+    "finalUrl": "https://www.shakeshack.co.uk/menu/allergen-information/",
+    "status": 403,
+    "bytes": 4550,
+    "sha256": "c6b98d5ab9bd098a7d5d3998720519b998d7ae2da1bd18ae51bfd09893d73343",
+    "retrievedAt": "2026-10-18T16:31:30.465Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "tacobell.html",
+    "url": "https://www.tacobell.co.uk/nutrition",
+    "finalUrl": "https://www.tacobell.co.uk/",
+    "status": 200,
+    "bytes": 138646,
+    "sha256": "8991e3842d47fb6e3532b40dc6ed4cbca0fc2b3611f9262bc992af56c8d2c69c",
+    "retrievedAt": "2026-10-18T16:31:31.375Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chipotle.html",
+    "url": "https://www.chipotle.co.uk/nutrition-calculator",
+    "finalUrl": "https://www.chipotle.co.uk/nutrition-calculator",
+    "status": 200,
+    "bytes": 86841,
+    "sha256": "07ee7a2a740ac66975ed2377255f3916befac7db5692f5920e6d31f714439db2",
+    "retrievedAt": "2026-10-18T16:31:31.023Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wingstop.html",
+    "url": "https://www.wingstop.co.uk/nutrition",
+    "finalUrl": "https://www.wingstop.co.uk/nutrition",
+    "status": 200,
+    "bytes": 41563,
+    "sha256": "46e7f3f1e47865371ac165abb927fa3f905a6dc14032c1f1baf3a439dfab6d69",
+    "retrievedAt": "2026-10-18T16:31:31.032Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "jollibee.html",
+    "url": "https://www.jollibee.uk/allergens-and-nutrition",
+    "finalUrl": "https://www.jollibee.uk/allergens-and-nutrition",
+    "status": 404,
+    "bytes": 562517,
+    "sha256": "3f449a225f51bbff6227d7fb39e2cad767c0a8440b29a41ca9e89b27ded16921",
+    "retrievedAt": "2026-10-18T16:31:31.668Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "timhortons.html",
+    "url": "https://timhortons.co.uk/nutrition-and-allergens",
+    "finalUrl": "https://timhortons.co.uk/nutrition-and-allergens",
+    "status": 404,
+    "bytes": 5512,
+    "sha256": "c7c16dd049eb40b5fd5fc4243a0ffd104824efa297a45a5ba8fa9abb2ff6dbe8",
+    "retrievedAt": "2026-10-18T16:31:31.944Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "starbucks.html",
+    "url": "https://www.starbucks.co.uk/nutrition",
+    "finalUrl": "https://www.starbucks.co.uk/nutrition",
+    "status": 200,
+    "bytes": 480061,
+    "sha256": "f0a7c1940881eb32129dd62a340de7c52214473010b02fb839b7b2be076e0312",
+    "retrievedAt": "2026-10-18T16:31:31.633Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "costa.html",
+    "url": "https://www.costa.co.uk/sustainability/nutrition",
+    "finalUrl": "https://www.costa.co.uk/sustainability/nutrition",
+    "status": 200,
+    "bytes": 266714,
+    "sha256": "9eba05d3c972a1c05b30598c9d9077006cde188fec25e01083e33ca3d492c321",
+    "retrievedAt": "2026-10-18T16:31:32.173Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero.html",
+    "url": "https://caffenero.com/uk/food-drinks/food/",
+    "finalUrl": "https://www.caffenero.com/uk/food-drinks/food",
+    "status": 404,
+    "bytes": 153,
+    "sha256": "3248b01d461ed11b7d34871bee9879ba2536c0ae5c47f16638e9aaae0ec5a481",
+    "retrievedAt": "2026-10-18T16:31:34.366Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "tortilla.html",
+    "url": "https://www.tortilla.co.uk/food/menu/",
+    "error": "TimeoutError: The operation was aborted due to timeout"
+  },
+  {
+    "file": "germandonerkebab.html",
+    "url": "https://www.germandonerkebab.com/food/menu",
+    "finalUrl": "https://gdk.com/ca/food/menu",
+    "status": 404,
+    "bytes": 82121,
+    "sha256": "1973a3576829271cb961f3a42dd93b5a0fb3668caf193690f1c416b5593565c5",
+    "retrievedAt": "2026-10-18T16:31:33.077Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "pepes.html",
+    "url": "https://www.pepes.co.uk/menu",
+    "finalUrl": "https://pepes.co.uk/menu/",
+    "status": 200,
+    "bytes": 124613,
+    "sha256": "866669be1303f2d532ee32dada85ecbbc39883e23945073b04cfdf9480bcfce7",
+    "retrievedAt": "2026-10-18T16:31:33.297Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "slimchickens.html",
+    "url": "https://slimchickens.co.uk/menu/",
+    "finalUrl": "https://slimchickens.co.uk/menu/",
+    "status": 404,
+    "bytes": 16617,
+    "sha256": "ca7d957c173c8780e5b8dfc2e397d0510b6564d90cc4954157c3a0cc84287978",
+    "retrievedAt": "2026-10-18T16:32:12.742Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix.html",
+    "url": "https://chopstixnoodles.co.uk/nutrition/",
+    "finalUrl": "https://chopstixnoodles.co.uk/wp-content/uploads/2026/09/NUTRITIONAL-TABLE-V22-SEPT-26.pdf",
+    "status": 200,
+    "bytes": 177441,
+    "sha256": "4dd4ebcb23915ab0abfc96d8400fcceb64bfb79476540a8d9e41c4b146b376c4",
+    "retrievedAt": "2026-10-18T16:32:13.939Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wenzels.html",
+    "url": "https://www.wenzels.co.uk/menu/",
+    "finalUrl": "https://www.wenzels.co.uk/menu/",
+    "status": 200,
+    "bytes": 366630,
+    "sha256": "b654a7086ce0ac9ca5243f13c858ef92c36e498707ba075f65e4160e2cd5fd21",
+    "retrievedAt": "2026-10-18T16:32:12.544Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "pizzaexpress.html",
+    "url": "https://www.pizzaexpress.com/allergens-and-nutrition",
+    "finalUrl": "https://www.pizzaexpress.com/allergens-and-nutrition",
+    "status": 404,
+    "bytes": 23727,
+    "sha256": "605609f12cc4e7b919a2d67eef3cc55244b111947e14eb14caf4ab83f5baf1a2",
+    "retrievedAt": "2026-10-18T16:32:12.510Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "zizzi.html",
+    "url": "https://www.zizzi.co.uk/food",
+    "finalUrl": "https://www.zizzi.co.uk/menus",
+    "status": 200,
+    "bytes": 1850550,
+    "sha256": "57bc93fff6007c9df15b077638ed7c9ab8a33771a38676389b4a5bf9dff90307",
+    "retrievedAt": "2026-10-18T16:32:14.992Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "askitalian.html",
+    "url": "https://www.askitalian.co.uk/menu/",
+    "finalUrl": "https://www.askitalian.co.uk/menus",
+    "status": 200,
+    "bytes": 1072954,
+    "sha256": "ff5fcb764a4fef83682d0945e54aa27815c5e9a591a94421b01c3bbfee3f3ef7",
+    "retrievedAt": "2026-10-18T16:32:15.019Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chickfila.html",
+    "url": "https://www.chick-fil-a.co.uk/locations",
+    "finalUrl": "https://www.chick-fil-a.co.uk/locations/",
+    "status": 200,
+    "bytes": 111549,
+    "sha256": "43fc52642869b3120ad02b2f32264ab5c69291c6eb6e5e0c403af587f6b9d546",
+    "retrievedAt": "2026-10-18T16:32:15.037Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "starbucks-food.pdf",
+    "url": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "finalUrl": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-10/AUT%2026_UK_AllergenBook_CORE_FOOD_v04.pdf",
+    "status": 200,
+    "bytes": 2575017,
+    "sha256": "b02c5bfceb4d926030932213ea655e735f13f94be96058aa8ef793eb7978222d",
+    "retrievedAt": "2026-10-18T16:32:16.017Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "starbucks-drinks.pdf",
+    "url": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "finalUrl": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+    "status": 200,
+    "bytes": 4101209,
+    "sha256": "9e05d19718303c4590a85050ffe5b986195e28b418f9877f9e5fb8f188051494",
+    "retrievedAt": "2026-10-18T16:32:16.486Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "costa.pdf",
+    "url": "https://www.costa.co.uk/docs/store-allergen-guide.pdf",
+    "finalUrl": "https://www.costa.co.uk/docs/store-allergen-guide.pdf",
+    "status": 200,
+    "bytes": 940,
+    "sha256": "7615bd93dae0b0877f386a0d79f43569444686634eaad1178001853df8140ded",
+    "retrievedAt": "2026-10-18T16:32:15.912Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-menu.html",
+    "url": "https://chopstixnoodles.co.uk/menu/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/",
+    "status": 200,
+    "bytes": 168150,
+    "sha256": "a68ecfb499eb62e268f50e8973e6cab02913e12549c4c581a9ec929dc5ac7b2f",
+    "retrievedAt": "2026-10-18T16:32:17.529Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "tacobell-nutrition.html",
+    "url": "https://www.tacobell.co.uk/nutrition-information/",
+    "finalUrl": "https://www.tacobell.co.uk/nutrition-information/",
+    "status": 200,
+    "bytes": 102096,
+    "sha256": "7406cf6df9006b7775e2d2ac6d1933277e75db6858a417d0e1216a23167247a9",
+    "retrievedAt": "2026-10-18T16:32:17.914Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "jollibee-nutrition.html",
+    "url": "https://www.jollibee.uk/nutritional-info",
+    "finalUrl": "https://www.jollibee.uk/nutritional-info",
+    "status": 200,
+    "bytes": 544169,
+    "sha256": "64ce18abc37e92e6489d955efe6996f4f82d1b5d850022d1e441e0f3c04f6401",
+    "retrievedAt": "2026-10-18T16:32:17.958Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "pepes-nutrition.html",
+    "url": "https://www.pepes.co.uk/nutrition-allergens-uk",
+    "finalUrl": "https://pepes.co.uk/nutrition-allergens-uk/",
+    "status": 200,
+    "bytes": 414301,
+    "sha256": "43992d0f9e1b9a308a90778b7751939694494e13a8b728777654a776d2f4e8d3",
+    "retrievedAt": "2026-10-18T16:32:18.602Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chickfila-menu.html",
+    "url": "https://www.chick-fil-a.co.uk/menu/",
+    "finalUrl": "https://www.chick-fil-a.co.uk/menu/",
+    "status": 200,
+    "bytes": 137956,
+    "sha256": "215819984a36fb1d499c74b42c92206e32dfcff884cac261715221037b15525d",
+    "retrievedAt": "2026-10-18T16:32:18.292Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chickfila-nutrition.html",
+    "url": "https://www.chick-fil-a.co.uk/nutrition-allergens/",
+    "finalUrl": "https://www.chick-fil-a.co.uk/nutrition-allergens/",
+    "status": 200,
+    "bytes": 96403,
+    "sha256": "6d92f4dfb47b591c6844bad594d54eb71ecdc624ba991db79b209d1cf473bd0d",
+    "retrievedAt": "2026-10-18T16:32:18.967Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "nandos-component.js",
+    "url": "https://www.nandos.co.uk/food/menu/component---src-pages-index-js-6e3b063a51b99a29455a.js",
+    "finalUrl": "https://www.nandos.co.uk/food/menu/component---src-pages-index-js-6e3b063a51b99a29455a.js",
+    "status": 200,
+    "bytes": 264155,
+    "sha256": "48103540ec1753bdbc20b78f3297c612b5b74a9d0cc78aff0c392cc0e34631e0",
+    "retrievedAt": "2026-10-18T16:34:09.014Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix.pdf",
+    "url": "https://chopstixnoodles.co.uk/wp-content/uploads/2026/09/NUTRITIONAL-TABLE-V22-SEPT-26.pdf",
+    "finalUrl": "https://chopstixnoodles.co.uk/wp-content/uploads/2026/09/NUTRITIONAL-TABLE-V22-SEPT-26.pdf",
+    "status": 200,
+    "bytes": 177441,
+    "sha256": "4dd4ebcb23915ab0abfc96d8400fcceb64bfb79476540a8d9e41c4b146b376c4",
+    "retrievedAt": "2026-10-18T16:34:09.640Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chickfila.pdf",
+    "url": "https://www.chick-fil-a.co.uk/wp-content/uploads/sites/2/2026/09/387155-UK_Allergen_Sign_Digital.pdf",
+    "finalUrl": "https://www.chick-fil-a.co.uk/wp-content/uploads/sites/2/2026/09/387155-UK_Allergen_Sign_Digital.pdf",
+    "status": 200,
+    "bytes": 1503726,
+    "sha256": "9d9ea63772200a654e71f903a5516b23772f9a058fd54a5ed429e9c41d96e772",
+    "retrievedAt": "2026-10-18T16:34:10.100Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "leon-one.html",
+    "url": "https://leon.co/menu/smoked-salmon-pickle-dill-cream-muffin/",
+    "finalUrl": "https://leon.co/menu/smoked-salmon-pickle-dill-cream-muffin/",
+    "status": 200,
+    "bytes": 1012889,
+    "sha256": "2e6673746f4dc73a0f351f3ed82de629a113e69354081cf7c6d2f7a8426b54cb",
+    "retrievedAt": "2026-10-18T16:34:09.530Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "mcd-one.html",
+    "url": "https://www.mcdonalds.com/gb/en-gb/product/big-mac.html",
+    "finalUrl": "https://www.mcdonalds.com/gb/en-gb/product/big-mac.html",
+    "status": 200,
+    "bytes": 270888,
+    "sha256": "2166db8d6066d6af8729dcefc480811b4b8a1a6b1958d470b4ea2522cfa0c992",
+    "retrievedAt": "2026-10-18T16:34:10.262Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "popeyes-data.json",
+    "url": "https://app-allergenplatform-prod-westeurope-001.azurewebsites.net/api/recipes/get-information?pagination[page]=1&pagination[pageSize]=500&allergens=false&nutrition=true",
+    "finalUrl": "https://app-allergenplatform-prod-westeurope-001.azurewebsites.net/api/recipes/get-information?pagination[page]=1&pagination[pageSize]=500&allergens=false&nutrition=true",
+    "status": 200,
+    "bytes": 32,
+    "sha256": "23a5a21f690e1b6e53f66d05713396e25eca43f51c751f4ab88851daddacb911",
+    "retrievedAt": "2026-10-18T16:35:46.823Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "papajohns-local.html",
+    "url": "https://www.papajohns.co.uk/allergens-and-nutrition",
+    "finalUrl": "https://www.papajohns.com/international/",
+    "status": 200,
+    "bytes": 41864,
+    "sha256": "e022753bb8a04cfc1557bed77e3a610e8fe8ab629c15ad0342355fb0f3177ee0",
+    "retrievedAt": "2026-10-18T16:44:17.804Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "papajohns.pdf",
+    "url": "https://www.papajohns.co.uk/pdfs/nutritional-information.pdf",
+    "finalUrl": "https://www.papajohns.com/international/",
+    "status": 200,
+    "bytes": 41864,
+    "sha256": "c7403c647312f924f0287c56794ca81872e71b31ba1a459c8e3cf1d17ced9137",
+    "retrievedAt": "2026-10-18T16:44:17.843Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-local.html",
+    "url": "https://www.caffenero.com/uk/menu",
+    "finalUrl": "https://www.caffenero.com/uk/menu",
+    "status": 200,
+    "bytes": 32936,
+    "sha256": "41dd54ada8fed17be68d9c6da4b5f39b9a476e247e8348f32924ce6bbe0eb1e7",
+    "retrievedAt": "2026-10-18T16:44:18.568Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "timhortons-local.html",
+    "url": "https://timhortons.co.uk/information/1",
+    "finalUrl": "https://timhortons.co.uk/information/1",
+    "status": 200,
+    "bytes": 80884,
+    "sha256": "74576a5058d270a16c14d86357efca69778dccb9e8a208c5363f38981aa183fa",
+    "retrievedAt": "2026-10-18T16:44:17.902Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "tortilla-local.html",
+    "url": "https://www.tortilla.co.uk/",
+    "finalUrl": "https://www.tortilla.co.uk/",
+    "status": 200,
+    "bytes": 108254,
+    "sha256": "192bf74a98682ffd73e811627392eacbae080ebc5c961b20c56d81001aeccec9",
+    "retrievedAt": "2026-10-18T16:44:19.119Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "germandonerkebab-local.html",
+    "url": "https://www.germandonerkebab.com/",
+    "finalUrl": "https://gdk.com/ca",
+    "status": 200,
+    "bytes": 110675,
+    "sha256": "14b5f4487c939858960e1469a48933924a6e5180694c5ea6ca3d20a81d43f717",
+    "retrievedAt": "2026-10-18T16:44:19.332Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "slimchickens-local.html",
+    "url": "https://slimchickens.co.uk/",
+    "finalUrl": "https://slimchickens.co.uk/",
+    "status": 200,
+    "bytes": 97559,
+    "sha256": "da84514de786198b10a51ebfd6ae91354648ee886183425b0f34e08d418a8b45",
+    "retrievedAt": "2026-10-18T16:44:19.052Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "pizzaexpress-local.html",
+    "url": "https://www.pizzaexpress.com/our-food/nutritional-information",
+    "finalUrl": "https://www.pizzaexpress.com/our-food/nutritional-information",
+    "status": 404,
+    "bytes": 23758,
+    "sha256": "064303fc48a96b6f4e512eec458e31ac363edc74b24a56eab2ab4c002875e750",
+    "retrievedAt": "2026-10-18T16:44:19.159Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "zizzi.pdf",
+    "url": "https://cdn.sanity.io/files/ysupxjc9/production/abb3546d604fabb82945c2b1291c22949e5dc66e.pdf/ZIZZI-UK-NUTRITION-GUIDE_AUTUMN_SEP2026_V1.pdf",
+    "finalUrl": "https://cdn.sanity.io/files/ysupxjc9/production/abb3546d604fabb82945c2b1291c22949e5dc66e.pdf/ZIZZI-UK-NUTRITION-GUIDE_AUTUMN_SEP2026_V1.pdf",
+    "status": 200,
+    "bytes": 2557687,
+    "sha256": "c1429e8192ff0b808dfa1582b609d9f649d52a7c881519fb1ffe16a309e4dde9",
+    "retrievedAt": "2026-10-18T16:45:43.412Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero.pdf",
+    "url": "https://caffenerowebsite.blob.core.windows.net/production/data/menus/caffenero_nutrition_allergens-en_GB.pdf",
+    "finalUrl": "https://caffenerowebsite.blob.core.windows.net/production/data/menus/caffenero_nutrition_allergens-en_GB.pdf",
+    "status": 200,
+    "bytes": 1101327,
+    "sha256": "0b3bfe69c4caead8985cd36d7b847459757897c2aa0d0bc9a16e59e3768416e6",
+    "retrievedAt": "2026-10-18T16:45:46.823Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "tortilla-nutrition.html",
+    "url": "https://www.tortilla.co.uk/menu/nutrition-and-allergens",
+    "finalUrl": "https://www.tortilla.co.uk/menu/nutrition-and-allergens",
+    "status": 200,
+    "bytes": 63163,
+    "sha256": "996fce7f6abe872d79eaa85bebe786051abd13658f6a61c7df1773b2be05ed93",
+    "retrievedAt": "2026-10-18T16:45:43.150Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wasabi-local.html",
+    "url": "https://www.wasabi.uk.com/menus/",
+    "finalUrl": "https://www.wasabi.uk.com/menus/",
+    "status": 200,
+    "bytes": 254003,
+    "sha256": "ca8d0aefb5f4255dadd50859a178b4d1194bab28f4ff51152c4f6237872ac164",
+    "retrievedAt": "2026-10-18T16:45:42.792Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wenzels-home.html",
+    "url": "https://www.wenzels.co.uk/",
+    "finalUrl": "https://www.wenzels.co.uk/",
+    "status": 200,
+    "bytes": 453170,
+    "sha256": "0a8b49da17e2ad93b0b849b27661b37bcdd6905adfabd27d8c24e9cc115f4c0b",
+    "retrievedAt": "2026-10-18T16:45:47.159Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "dominos-pizzas.pdf",
+    "url": "https://corporate.dominos.co.uk/Media/Default/Corporate%20Responsibility/Food/IngredientsPizzasandToppings.pdf",
+    "finalUrl": "https://corporate.dominos.co.uk/Media/Default/Corporate%20Responsibility/Food/IngredientsPizzasandToppings.pdf",
+    "status": 403,
+    "bytes": 483,
+    "sha256": "97f4ceaa8e47dacadbdf84585f7d55377ba4b12b840331a9730dbd6b9b71e6d0",
+    "retrievedAt": "2026-10-18T16:45:47.040Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "tortilla.pdf",
+    "url": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "finalUrl": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+    "status": 200,
+    "bytes": 3368860,
+    "sha256": "dec97168701ee4793925e1ad5f18ece7af8386e1662453031aeadbd6c842f7cb",
+    "retrievedAt": "2026-10-18T16:46:32.181Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wasabi.pdf",
+    "url": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "finalUrl": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+    "status": 200,
+    "bytes": 863454,
+    "sha256": "f583a9ee8e84f6de689556960242c05fc0d216d554f4376d17d042c05ae948e5",
+    "retrievedAt": "2026-10-18T16:46:31.546Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "wenzels.pdf",
+    "url": "https://www.wenzels.co.uk/wp-content/uploads/2026/06/Wenzels_Allergen_Sheet_June_2026.pdf",
+    "finalUrl": "https://www.wenzels.co.uk/wp-content/uploads/2026/06/Wenzels_Allergen_Sheet_June_2026.pdf",
+    "status": 200,
+    "bytes": 6310976,
+    "sha256": "99cdafd5985aa2ee4260afcb0a61e5d609f2238731058e09960c549fe5ba511f",
+    "retrievedAt": "2026-10-18T16:46:32.806Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "pizzaexpress-nutrition.html",
+    "url": "https://www.pizzaexpress.com/allergens-and-nutritionals",
+    "finalUrl": "https://www.pizzaexpress.com/allergens-and-nutritionals",
+    "status": 200,
+    "bytes": 389498,
+    "sha256": "8257dee17a08993bd838c3960c01e6e1d7950621b08d7ee3013b292572f85aec",
+    "retrievedAt": "2026-10-18T16:46:31.558Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "timhortons-menu.html",
+    "url": "https://timhortons.co.uk/menu",
+    "finalUrl": "https://timhortons.co.uk/menu",
+    "status": 200,
+    "bytes": 306066,
+    "sha256": "640b7102e69c84d17b26a4057339520330ae6217262095376584304c6b1c82a8",
+    "retrievedAt": "2026-10-18T16:46:33.980Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "askitalian.pdf",
+    "url": "https://cdn.sanity.io/files/ysupxjc9/production/ecd7a56f0b39eedfeb25391e6dc42bb62ba0d3d3.pdf/autumn26_allergenguide_nocrop.pdf",
+    "finalUrl": "https://cdn.sanity.io/files/ysupxjc9/production/ecd7a56f0b39eedfeb25391e6dc42bb62ba0d3d3.pdf/autumn26_allergenguide_nocrop.pdf",
+    "status": 200,
+    "bytes": 7080885,
+    "sha256": "4e5aa73c91ff322feaac43d957997d8c19eae2b4a5aca826da61aedaf6075b4b",
+    "retrievedAt": "2026-10-18T16:46:34.188Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "pizzaexpress.pdf",
+    "url": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "finalUrl": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+    "status": 200,
+    "bytes": 1478302,
+    "sha256": "0f9d9ae2de1babd73cbb64855cbd4d71a2bf0219642d69ec15aea9382e24cde4",
+    "retrievedAt": "2026-10-18T16:47:51.181Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "timhortons.pdf",
+    "url": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "finalUrl": "https://timhortons.co.uk/assets/img/products/Nutrition-20261008-151007-ece8.pdf",
+    "status": 200,
+    "bytes": 318215,
+    "sha256": "8c9a0728efc01054530d2618e064b16e152d5e4ae239f03026142f716c54bc56",
+    "retrievedAt": "2026-10-18T16:47:51.613Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-coffee.html",
+    "url": "https://www.caffenero.com/uk/menu/coffee",
+    "finalUrl": "https://www.caffenero.com/uk/menu/coffee",
+    "status": 200,
+    "bytes": 924639,
+    "sha256": "66b2dc58bc7c12a4690a809ffc728697ee2d00e0d960f20de1f0027d44782670",
+    "retrievedAt": "2026-10-18T16:48:39.784Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-drinks.html",
+    "url": "https://www.caffenero.com/uk/menu/drinks",
+    "finalUrl": "https://www.caffenero.com/uk/menu/drinks/iced-drinks",
+    "status": 200,
+    "bytes": 1333966,
+    "sha256": "4f431ca0af9127448a1075bcb749fd0e1d6311beee81368555765a342ce13688",
+    "retrievedAt": "2026-10-18T16:48:42.199Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-iced-drinks.html",
+    "url": "https://www.caffenero.com/uk/menu/drinks/iced-drinks",
+    "finalUrl": "https://www.caffenero.com/uk/menu/drinks/iced-drinks",
+    "status": 200,
+    "bytes": 1333966,
+    "sha256": "4f431ca0af9127448a1075bcb749fd0e1d6311beee81368555765a342ce13688",
+    "retrievedAt": "2026-10-18T16:48:40.159Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-food.html",
+    "url": "https://www.caffenero.com/uk/menu/food",
+    "finalUrl": "https://www.caffenero.com/uk/menu/food/breakfast",
+    "status": 200,
+    "bytes": 415414,
+    "sha256": "25ad8e18e4dd5e6405eb83a506f9eac6ffe294808a54f976a091cc60b31ebf6f",
+    "retrievedAt": "2026-10-18T16:48:39.076Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-breakfast.html",
+    "url": "https://www.caffenero.com/uk/menu/food/breakfast",
+    "finalUrl": "https://www.caffenero.com/uk/menu/food/breakfast",
+    "status": 200,
+    "bytes": 415414,
+    "sha256": "25ad8e18e4dd5e6405eb83a506f9eac6ffe294808a54f976a091cc60b31ebf6f",
+    "retrievedAt": "2026-10-18T16:48:44.420Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-menu.html",
+    "url": "https://www.caffenero.com/uk/menu",
+    "finalUrl": "https://www.caffenero.com/uk/menu",
+    "status": 200,
+    "bytes": 32936,
+    "sha256": "41dd54ada8fed17be68d9c6da4b5f39b9a476e247e8348f32924ce6bbe0eb1e7",
+    "retrievedAt": "2026-10-18T16:49:45.887Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-hot-drinks.html",
+    "url": "https://www.caffenero.com/uk/menu/drinks/hot-drinks",
+    "finalUrl": "https://www.caffenero.com/uk/menu/drinks/hot-drinks",
+    "status": 200,
+    "bytes": 507448,
+    "sha256": "723ee33c64cafdd50c03e1d54f433953d4be68800ee74e658d87e82354cd1c11",
+    "retrievedAt": "2026-10-18T16:49:47.658Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-panini-tostati-nero-deli.html",
+    "url": "https://www.caffenero.com/uk/menu/food/panini-tostati-nero-deli",
+    "finalUrl": "https://www.caffenero.com/uk/menu/food/panini-tostati-nero-deli",
+    "status": 200,
+    "bytes": 510068,
+    "sha256": "2155ac0cffee56a466d207753e8bbfdefadd7be6c347d8706535b73783f7fb08",
+    "retrievedAt": "2026-10-18T16:49:47.146Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-salads-soups-hot-pots.html",
+    "url": "https://www.caffenero.com/uk/menu/food/salads-soups-hot-pots",
+    "finalUrl": "https://www.caffenero.com/uk/menu/food/salads-soups-hot-pots",
+    "status": 200,
+    "bytes": 100969,
+    "sha256": "07f6acb4a4357acedd32abaef5817fcdb7bba0fb8f069a3db2799b3f98802036",
+    "retrievedAt": "2026-10-18T16:49:46.433Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-snacks.html",
+    "url": "https://www.caffenero.com/uk/menu/food/snacks",
+    "finalUrl": "https://www.caffenero.com/uk/menu/food/snacks",
+    "status": 200,
+    "bytes": 330289,
+    "sha256": "31f8052dd45f5cc47fd9e2de47ccca4a1c95a3741e904a24ee8d4a3d3452c5a5",
+    "retrievedAt": "2026-10-18T16:49:51.324Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "caffenero-sweet-treats.html",
+    "url": "https://www.caffenero.com/uk/menu/food/sweet-treats",
+    "finalUrl": "https://www.caffenero.com/uk/menu/food/sweet-treats",
+    "status": 200,
+    "bytes": 425061,
+    "sha256": "9a947949972e3f2a54f6e9fbe897dc69d2a00f76e636d6b552b65b2759561cbc",
+    "retrievedAt": "2026-10-18T16:49:52.415Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-veg-noodles.html",
+    "url": "https://chopstixnoodles.co.uk/menu/veg-noodles/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/veg-noodles/",
+    "status": 200,
+    "bytes": 80815,
+    "sha256": "05493f7117c14786bdfe310280d6d8a88e7169531208d0b04a70b62b02b44f5d",
+    "retrievedAt": "2026-10-18T16:56:33.754Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-egg-fried-rice.html",
+    "url": "https://chopstixnoodles.co.uk/menu/egg-fried-rice/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/egg-fried-rice/",
+    "status": 200,
+    "bytes": 80677,
+    "sha256": "9930804846c6f78d9c7444e1423976eb3d6cf1cd7782d14617787af4e830e72b",
+    "retrievedAt": "2026-10-18T16:56:33.948Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-skinny-rice.html",
+    "url": "https://chopstixnoodles.co.uk/menu/skinny-rice/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/skinny-rice/",
+    "status": 200,
+    "bytes": 79723,
+    "sha256": "ce7e999adc04896ef2366378fb03edfc28f9844bb79e8d2625fc8fad85a8d238",
+    "retrievedAt": "2026-10-18T16:56:34.435Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-the-spice-bag.html",
+    "url": "https://chopstixnoodles.co.uk/menu/the-spice-bag/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/the-spice-bag/",
+    "status": 200,
+    "bytes": 84004,
+    "sha256": "0aaa02f76576908457bb22fd82d24814d06fed0a2ea823dc8eef43379f241391",
+    "retrievedAt": "2026-10-18T16:56:34.564Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-sweet-and-sour-chicken.html",
+    "url": "https://chopstixnoodles.co.uk/menu/sweet-and-sour-chicken/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/sweet-and-sour-chicken/",
+    "status": 200,
+    "bytes": 84818,
+    "sha256": "bc46b04dca99eb26b1a5a989ae747fc9eb2860265cd54d92c5ba9ef25151f6d1",
+    "retrievedAt": "2026-10-18T16:56:37.746Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-orange-chicken.html",
+    "url": "https://chopstixnoodles.co.uk/menu/orange-chicken/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/orange-chicken/",
+    "status": 200,
+    "bytes": 83600,
+    "sha256": "c1ce0c1e31f3f817672abcc497ed2abb46c673d8f2178f2fcd07d8dec4f5f9fe",
+    "retrievedAt": "2026-10-18T16:56:37.827Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-salt-and-pepper-chips.html",
+    "url": "https://chopstixnoodles.co.uk/menu/salt-and-pepper-chips/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/salt-and-pepper-chips/",
+    "status": 200,
+    "bytes": 83258,
+    "sha256": "cfb8994c286bfd005e4d4e9f53c5a635e051781c03ecaeaaaba46bf5752e463b",
+    "retrievedAt": "2026-10-18T16:56:37.886Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-k-pop-bbq-chicken.html",
+    "url": "https://chopstixnoodles.co.uk/menu/k-pop-bbq-chicken/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/k-pop-bbq-chicken/",
+    "status": 200,
+    "bytes": 83177,
+    "sha256": "04843e60cc2fa1dd60f9f3eda34ddb7b641c4dedee312d3fe47da79f741fd98c",
+    "retrievedAt": "2026-10-18T16:56:37.869Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-no-chickn-sweet-sour.html",
+    "url": "https://chopstixnoodles.co.uk/menu/no-chickn-sweet-sour/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/no-chickn-sweet-sour/",
+    "status": 200,
+    "bytes": 85351,
+    "sha256": "16ad6987392f601ecb2bd232e306dfa3937c2a63f90e6cbda2d7f8b95f24e309",
+    "retrievedAt": "2026-10-18T16:56:39.853Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-hot-honey-hustler-chicken.html",
+    "url": "https://chopstixnoodles.co.uk/menu/hot-honey-hustler-chicken/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/hot-honey-hustler-chicken/",
+    "status": 200,
+    "bytes": 84571,
+    "sha256": "95c36ffdda052954785fb33d5c5e073dcfc6070272ad3c75ac9129cd3f598e0a",
+    "retrievedAt": "2026-10-18T16:56:39.950Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-caramel-drizzle-chicken.html",
+    "url": "https://chopstixnoodles.co.uk/menu/caramel-drizzle-chicken/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/caramel-drizzle-chicken/",
+    "status": 200,
+    "bytes": 82768,
+    "sha256": "8c7b5a6824f03a0dfc4bdc4bd1b016d1987e5ca2c740c82ae8fe122c75e065b3",
+    "retrievedAt": "2026-10-18T16:56:39.871Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-katsu-chicken.html",
+    "url": "https://chopstixnoodles.co.uk/menu/katsu-chicken/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/katsu-chicken/",
+    "status": 200,
+    "bytes": 84936,
+    "sha256": "91821e6aa410264cee9ea67d95fb211fd19938463972268a1c80030f3132c8b6",
+    "retrievedAt": "2026-10-18T16:56:39.946Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-lip-smackin-salt-and-pepper.html",
+    "url": "https://chopstixnoodles.co.uk/menu/lip-smackin-salt-and-pepper/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/lip-smackin-salt-and-pepper/",
+    "status": 200,
+    "bytes": 82800,
+    "sha256": "263dee12932589bfb2188d0aeca794944edde4a6216467706fef83ce5e104ff2",
+    "retrievedAt": "2026-10-18T16:56:45.223Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-teriyaki-beef.html",
+    "url": "https://chopstixnoodles.co.uk/menu/teriyaki-beef/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/teriyaki-beef/",
+    "status": 200,
+    "bytes": 83078,
+    "sha256": "088b05052049775baf6bf1ce6accd3d86cfeab5a640238f84c1be85be1078561",
+    "retrievedAt": "2026-10-18T16:56:45.247Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-soy-mazing-chicken.html",
+    "url": "https://chopstixnoodles.co.uk/menu/soy-mazing-chicken/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/soy-mazing-chicken/",
+    "status": 200,
+    "bytes": 81828,
+    "sha256": "07cc8a95b1ea6acad10f8aea1d372cb667e95fc956f120b0aee3754c63a7b2fa",
+    "retrievedAt": "2026-10-18T16:56:45.534Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-pumpkin-katsu-curry.html",
+    "url": "https://chopstixnoodles.co.uk/menu/pumpkin-katsu-curry/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/pumpkin-katsu-curry/",
+    "status": 200,
+    "bytes": 80564,
+    "sha256": "90c0c34dba37cdf7c246bcfbab41eeb00e9bb1d8305ae2f0be90302277db59c4",
+    "retrievedAt": "2026-10-18T16:56:45.493Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-the-og-curry.html",
+    "url": "https://chopstixnoodles.co.uk/menu/the-og-curry/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/the-og-curry/",
+    "status": 200,
+    "bytes": 84264,
+    "sha256": "d735da7d96889caa7e194f7c4385cfe6aa1ef04d9d53a921332a467ba294ae42",
+    "retrievedAt": "2026-10-18T16:56:49.049Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-spring-roll-mini-stix-meal.html",
+    "url": "https://chopstixnoodles.co.uk/menu/spring-roll-mini-stix-meal/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/spring-roll-mini-stix-meal/",
+    "status": 200,
+    "bytes": 88767,
+    "sha256": "81f1c5f23fdfca4cd77c38796fadee5c38b78b6914863483b1cdcef287872e37",
+    "retrievedAt": "2026-10-18T16:56:48.965Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-chicken-balls-mini-stix-meal.html",
+    "url": "https://chopstixnoodles.co.uk/menu/chicken-balls-mini-stix-meal/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/chicken-balls-mini-stix-meal/",
+    "status": 200,
+    "bytes": 89157,
+    "sha256": "5dc487a9f701926e18f466c044c95fba20a0496a09c5ef69f307524378a99831",
+    "retrievedAt": "2026-10-18T16:56:49.089Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-dip-pot-sweet-chilli-sauce.html",
+    "url": "https://chopstixnoodles.co.uk/menu/dip-pot-sweet-chilli-sauce/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/dip-pot-sweet-chilli-sauce/",
+    "status": 200,
+    "bytes": 75810,
+    "sha256": "bd72f99c50ad81b280851f9e29e8feb21b79affdc16b82fcee404466beca66e3",
+    "retrievedAt": "2026-10-18T16:56:49.198Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-dip-pot-sweet-caramel-sauce.html",
+    "url": "https://chopstixnoodles.co.uk/menu/dip-pot-sweet-caramel-sauce/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/dip-pot-sweet-caramel-sauce/",
+    "status": 200,
+    "bytes": 76389,
+    "sha256": "d764d3993c20e8771643e5d6c528c801d049c02c6003246e47263240ca7a7a4c",
+    "retrievedAt": "2026-10-18T16:56:51.463Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-dip-pot-chinese-bbq.html",
+    "url": "https://chopstixnoodles.co.uk/menu/dip-pot-chinese-bbq/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/dip-pot-chinese-bbq/",
+    "status": 200,
+    "bytes": 76809,
+    "sha256": "a2ce88570711b2b303f5bf9403dd5b32db666dda51577ca51ca6bfcb95574325",
+    "retrievedAt": "2026-10-18T16:56:51.375Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-katsu-curry-sauce-portion.html",
+    "url": "https://chopstixnoodles.co.uk/menu/katsu-curry-sauce-portion/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/katsu-curry-sauce-portion/",
+    "status": 200,
+    "bytes": 79113,
+    "sha256": "1cbb5902d2aa4abb61ebe7159fd34c48699dacbb56bdb173908dc844b23aeefb",
+    "retrievedAt": "2026-10-18T16:56:51.452Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-firecracker-sauce.html",
+    "url": "https://chopstixnoodles.co.uk/menu/firecracker-sauce/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/firecracker-sauce/",
+    "status": 200,
+    "bytes": 76189,
+    "sha256": "2bb78692cc273e854827de9fba653f91766582bbda60e144b74e717573e3dde9",
+    "retrievedAt": "2026-10-18T16:56:51.473Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-panko-chicken-breast-pieces.html",
+    "url": "https://chopstixnoodles.co.uk/menu/panko-chicken-breast-pieces/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/panko-chicken-breast-pieces/",
+    "status": 200,
+    "bytes": 81748,
+    "sha256": "116a5de084414e548825d27ec7b62d69a97e43bdf88c1d52e243a802951974fd",
+    "retrievedAt": "2026-10-18T16:56:54.050Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-vegetable-spring-rolls.html",
+    "url": "https://chopstixnoodles.co.uk/menu/vegetable-spring-rolls/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/vegetable-spring-rolls/",
+    "status": 200,
+    "bytes": 80514,
+    "sha256": "98f2927368c84c359a8ca2c7a5d67281b9858d8702e4b86e6c26437d1f3e4f88",
+    "retrievedAt": "2026-10-18T16:56:54.099Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-mini-crispy-chicken-balls.html",
+    "url": "https://chopstixnoodles.co.uk/menu/mini-crispy-chicken-balls/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/mini-crispy-chicken-balls/",
+    "status": 200,
+    "bytes": 80683,
+    "sha256": "98e791b65c95bfa94f546ec18cd342352551694ddef21b7122aef3c9c1dfe95e",
+    "retrievedAt": "2026-10-18T16:56:53.980Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-crispy-veggie-gyozas.html",
+    "url": "https://chopstixnoodles.co.uk/menu/crispy-veggie-gyozas/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/crispy-veggie-gyozas/",
+    "status": 200,
+    "bytes": 81190,
+    "sha256": "e3c7bf5a7278d051371f101ea15dfabc883b2e74840ef767cbc86e2a57c2b548",
+    "retrievedAt": "2026-10-18T16:56:54.052Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-prawn-cracker-bag.html",
+    "url": "https://chopstixnoodles.co.uk/menu/prawn-cracker-bag/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/prawn-cracker-bag/",
+    "status": 200,
+    "bytes": 76713,
+    "sha256": "b4b8bc94bd3a5f90bd496e15bcb1013f8fd994002d58e41d008b6793997dd2f4",
+    "retrievedAt": "2026-10-18T16:56:56.162Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-sugared-baonut.html",
+    "url": "https://chopstixnoodles.co.uk/menu/sugared-baonut/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/sugared-baonut/",
+    "status": 200,
+    "bytes": 78704,
+    "sha256": "0cbcfec7ee4f45cd40c7cf4f60a58f637c4c1a956f452510094d9b5a50445c1b",
+    "retrievedAt": "2026-10-18T16:56:56.046Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-fortune-cookies.html",
+    "url": "https://chopstixnoodles.co.uk/menu/fortune-cookies/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/fortune-cookies/",
+    "status": 200,
+    "bytes": 77700,
+    "sha256": "419f491398e4934b96e5a58f88970351dac4e873c8406a22f58afa10831fe4b3",
+    "retrievedAt": "2026-10-18T16:56:56.255Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-value-meal-deal.html",
+    "url": "https://chopstixnoodles.co.uk/menu/value-meal-deal/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/value-meal-deal/",
+    "status": 200,
+    "bytes": 74266,
+    "sha256": "44c524838615a43627a804370d7f8e771c29a846fbd2b3348fcab9f761b7603a",
+    "retrievedAt": "2026-10-18T16:56:56.183Z",
+    "retrievalIsVerification": false
+  },
+  {
+    "file": "chopstix-extra-value-meal-deal.html",
+    "url": "https://chopstixnoodles.co.uk/menu/extra-value-meal-deal/",
+    "finalUrl": "https://chopstixnoodles.co.uk/menu/extra-value-meal-deal/",
+    "status": 200,
+    "bytes": 74365,
+    "sha256": "250556f2a9b4b53bacbcc57dc5e3e8401026603358cca7927a5bdb4bbf07498d",
+    "retrievedAt": "2026-10-18T16:56:57.683Z",
+    "retrievalIsVerification": false
+  }
+]

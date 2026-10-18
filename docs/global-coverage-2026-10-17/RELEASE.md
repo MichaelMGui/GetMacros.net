@@ -1,6 +1,6 @@
 # GetMacros source-backed catalogue release — October 17, 2026
 
-Deployment: pending final supplement push and production verification. Local results below do not establish that production is updated.
+Deployment: LIVE and verified. Revision `059dc787961348c9d1d93c09446ee5f7eb5fa732`. Both hosted Site quality runs and GitHub Pages deployment passed. Ninety-seven actual production pages/assets/country shards match the release source; all 405 live HTML routes passed HTTP/title/canonical checks.
 
 ## Delivered data
 
@@ -54,7 +54,7 @@ The full rebuilt static site currently has 405 HTML routes, 402 sitemap/indexabl
 
 ## Actual verification
 
-The complete local build, source tests and browser evidence are in `followup-build.log`, `ci-command-results.json`, `browser-results.json`, and `restaurants/newmarkets/browser-results.json`. Fresh hosted CI and production verification will be recorded separately. Browser checks cover new grocery search, serving review, Breakfast persistence after reload, separate Canadian/U.S. Burger King Lunch logs, country table labels, country selection and representative pages at 320, 390, 768, 1280 and 1440 CSS pixels. Both theme treatments and keyboard country-menu behaviour were exercised in the new-market browser suite. No full WCAG compliance or field-performance claim is made.
+The complete local build, source tests and browser evidence are in `followup-build.log`, `ci-command-results.json`, the exact publishing-checkout logs in `publisher-ci/results.json`, `browser-results.json`, and `restaurants/newmarkets/browser-results.json`. Both fresh hosted CI runs and final production source-hash verification passed. All 405 live HTML routes have passed HTTP, title and canonical checks; 402 bodies match local source exactly. Contact, corrections and terms are modified by Cloudflare email protection. Browser checks cover new grocery search, serving review, Breakfast persistence after reload, separate Canadian/U.S. Burger King Lunch logs, country table labels, country selection and representative pages at 320, 390, 768, 1280 and 1440 CSS pixels. Both theme treatments and keyboard country-menu behaviour were exercised in the new-market browser suite. No full WCAG compliance or field-performance claim is made.
 
 Screenshots: `screenshots/` and `restaurants/newmarkets/screenshots/`. The route inventory distinguishes script checks from actual browser renders and selected visual screenshot review; individual pages without visual review are not labelled visually inspected.
 
@@ -65,10 +65,13 @@ Screenshots: `screenshots/` and `restaurants/newmarkets/screenshots/`. The route
 - Mexico: current McDonald’s numeric panels were inaccessible; the inspected Burger King feed includes test content, unconfirmed local membership and contradictory serving/macronutrient values. All 78 complete CMS objects remain withheld. See `restaurants/mexico-supplement/source-quality.md` and its seven tests. The 100 previously accepted Subway Mexico records were preserved.
 - The four newly supported restaurant markets have no published native branded grocery partition yet; their local menus and common reference foods work.
 - Open Food Facts records with ambiguous gram/millilitre bases or contradictory values remain excluded; imported data is not labelled independently verified.
+- USDA source-quality notes retain 1,341 profiles with source sugar/carbohydrate warnings, 1,859 marked discontinued by the source and 10,007 missing/unsupported barcode warnings. These are source profiles, not 692,173 independently checked current products; flags remain available in portion-review source details. See `grocery-quality-notes.json`.
 - French product names are preserved, but reviewed French interface/content routes are not claimed.
 - No backend/AI service, accounts or cloud synchronization was configured or invented. Diary data remains local and private; unfinished AI/install promotion remains removed.
 - Production deployment, Google crawling/indexing, traffic and ad approval are distinct states. No rankings, visits, income or indexing outcome is guaranteed.
 
 ## Live evidence
 
-See `published-pages.csv` for exact curated URLs and `production-verification.json` for final HTTP/content checks when deployment succeeds.
+See `published-pages.csv` for exact verified live curated URLs, `market-chain-coverage.csv` for all 53 actual country/restaurant selections, `production-verification.json` for 97 matching release resources and `production-all-routes.json` for all 405 live HTML checks. Production browser reports record 11 main-product journeys/check groups plus 75 new-market checks, with no runtime/HTTP failures.
+
+The initial hosted failures were fixed rather than suppressed: three source-proof fixtures were added to the publication scope, and an optional offline HTML parser import was moved into ingestion-only functions. The affected fifteen tests also pass with Python site packages disabled (`python -S`). No nutrition values were changed to obtain passing tests.

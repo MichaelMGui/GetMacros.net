@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-18T17:58:53.301Z",
+  "environment": "Microsoft Edge, generated bundled assets, simulated Capacitor native bridge",
+  "checks": [
+    "Actual generated diary bundle initializes native-only migration controls",
+    "Real shared diary store writes validated snapshot to the local native archive",
+    "Private entries and original nutrient snapshots survive same-origin bundle reload",
+    "Validated native archive restores diary after web-storage loss",
+    "App-only static grocery fetch uses HTTPS source origin and serves prior shard offline",
+    "Private snapshots are passed to local backup bridge, never placed in source URLs",
+    "Native public share maps the bundled origin back to a real public URL",
+    "Files export receives the exact validated diary backup after deliberate action",
+    "Invalid native file import is rejected before any diary mutation",
+    "Native file actions remain inside Backup & restore instead of competing with deletion",
+    "Packed GB finder records retain a valid guide link and open the bundled country guide",
+    "No browser runtime errors in the simulated-bridge integration"
+  ],
+  "errors": [],
+  "nativeRuntime": "Swift file pickers, iOS WKWebView, physical-device persistence, update install and simulator NOT verified"
+}

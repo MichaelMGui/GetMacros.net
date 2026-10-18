@@ -114,7 +114,27 @@
   "verification": {
     "sourceIntegrity": "USDA and OFF full-source audits passed; imported packages are not independently label-verified",
     "browser": "See browser-results.json and restaurants/newmarkets/browser-results.json for actual checks and screenshot paths",
-    "live": "Pending live verification; local build is not proof of deployment"
+    "live": {
+      "revision": "059dc787961348c9d1d93c09446ee5f7eb5fa732",
+      "checkedAt": "2026-10-17T22:51:40.730Z",
+      "sourceMatches": 97,
+      "htmlRoutesChecked": 405,
+      "hostedQualityRuns": "both passed",
+      "pagesDeployment": "passed",
+      "indexing": "not measured"
+    },
+    "productBrowser": {
+      "base": "https://getmacros.net",
+      "checks": 11,
+      "runtimeErrors": 0,
+      "screenshots": 11
+    },
+    "newMarketBrowser": {
+      "base": "https://getmacros.net",
+      "checks": 75,
+      "runtimeErrors": 0,
+      "screenshots": 52
+    }
   },
   "remainingGaps": [
     "No claim of every grocery item, retailer inventory or every fast-food menu.",

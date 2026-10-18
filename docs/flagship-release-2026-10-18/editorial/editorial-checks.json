@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-18",
+  "articles": 4,
+  "distinctRoutes": 4,
+  "sourceRecords": 18,
+  "checks": [
+    "Exact country/chain/name uniqueness",
+    "Official reviewed source status",
+    "Decimal component sums for all Canadian order fields",
+    "No missing values converted to zero",
+    "All original UK salt values retained",
+    "UK plate arithmetic and prose differences",
+    "No automatic publication dates"
+  ],
+  "wordCounts": {
+    "leon-uk-breakfast-muffin-egg-pot-nutrition.html": 599,
+    "nandos-uk-quarter-chicken-rice-chips-corn.html": 622,
+    "wendys-uk-breakfast-muffin-wrap-calories-protein.html": 662,
+    "chick-fil-a-canada-grilled-sandwich-fries-sizes.html": 686
+  }
+}

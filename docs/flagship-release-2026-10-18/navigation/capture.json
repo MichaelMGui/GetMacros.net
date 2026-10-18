@@ -1,0 +1,23 @@
+{
+  "base": "http://127.0.0.1:54637",
+  "stage": "navigation",
+  "errors": [],
+  "screenshots": [
+    "article-desktop.png",
+    "canada-home-desktop.png",
+    "comparison-desktop.png",
+    "diary-mobile.png",
+    "diary-picker-mobile.png",
+    "finder-desktop.png",
+    "home-desktop.png",
+    "home-mobile.png",
+    "macro-calculator-desktop.png",
+    "macro-calculator-mobile-dark.png",
+    "macro-calculator-mobile.png",
+    "navigation-mobile.png",
+    "play-desktop.png",
+    "quiz-first-desktop.png",
+    "quiz-restaurants-desktop.png",
+    "restaurant-desktop.png"
+  ]
+}

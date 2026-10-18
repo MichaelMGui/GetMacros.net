@@ -1,0 +1,20 @@
+{
+  "researchDate": "2026-10-18",
+  "method": "Current web search and first-party page inspection; source-data inspection. Qualitative opportunities, not measured keyword demand.",
+  "searchLocation": "Search engine location not exposed. Queries explicitly named UK or Canada where relevant.",
+  "firstPartySearchAnalytics": "No Search Console or Google Analytics connector/property/export available in the current tool inventory. No clicks, CTR, indexing or visitor increase verified.",
+  "primaryGuidance": [
+    {"url":"https://developers.google.com/search/docs/fundamentals/seo-starter-guide","applied":"Descriptive titles, task-led headings, crawlable destinations and source-rich menu pages."},
+    {"url":"https://developers.google.com/search/docs/fundamentals/creating-helpful-content","applied":"Four distinct worked comparisons, exact country/serving assumptions and visible limitations; existing URLs retained."},
+    {"url":"https://developers.google.com/search/docs/essentials/spam-policies","applied":"No indexable page per filter, barcode or theoretical recipe; no scaled keyword landing pages."},
+    {"url":"https://developers.google.com/search/docs/appearance/google-images","applied":"Ordinary img elements, reserved dimensions, lazy loading; original category art labeled Illustration rather than exact-order photography."},
+    {"url":"https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl","applied":"Sitemap lists canonical public resources; no claim of submission, crawling or indexing without authorized evidence."}
+  ],
+  "queries": [
+    {"query":"healthy fast food meal finder high protein breakfast UK nutrition calculator","observedPages":["https://alreadycounted.com/","https://www.healthiereats.co.uk/search","https://mealdealfinder.co.uk/","https://themenuhub.co.uk/uk-meal-finder/"],"observation":"Search results included filter-led restaurant tools, meal-deal selectors and journal products. These pages were inspected as primary evidence of their own interface, not as nutrition sources.","inference":"GetMacros can add useful exact-serving and complete-order context around its guided choice rather than another broad best-food list.","implemented":"Quiz-first entry, breakfast path, source-based local menus and explicit per-meal calculator handoff."},
+    {"query":"Chick-fil-A Canada breakfast nutrition menu","observedPages":["https://www.chick-fil-a.ca/menu","https://www.chick-fil-a.ca/nutrition-allergens","https://www.chick-fil-a.ca/customer-support/our-restaurants/hours-of-operation/are-chick-fil-a-restaurants-in-canada-open-for-breakfast"],"observation":"Official Canadian FAQ says Canadian restaurants do not serve breakfast; the local nutrition table has named Canadian lunch/dinner portions.","implemented":"No U.S. breakfast copied into Canada. Canadian guide and complete-order article use local servings. A conflicting pouch mass stays unknown."},
+    {"query":"McDonald's UK nutrition compare breakfast calories protein","observation":"Candidate intent investigated; no unsupported McDonald's UK data imported when the complete local nutrition source could not be reliably acquired. Existing country data remains separate.","implemented":"Breakfast discovery uses only published source records; UK expansion concentrated on accessible official menus with documented gaps."}
+  ],
+  "metrics": {"searchVolume":null,"difficulty":null,"rankings":null,"trafficForecast":null},
+  "publicationVsSearch": "Imported/searchable restaurant portions, canonical HTML publication, sitemap membership and observed search indexing are different statuses. Only the first three are tested locally; live publication is verified after deployment."
+}

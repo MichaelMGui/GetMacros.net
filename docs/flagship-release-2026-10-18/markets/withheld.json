@@ -1,0 +1,12 @@
+[
+  {
+    "market": "CA",
+    "chain": "Chick-fil-A",
+    "name": "Grilled sandwich, Multifruit & small unsweet tea",
+    "reason": "Exact fruit-pouch mass conflicts between official product description (90 g) and nutrition table (100 g); composed order withheld pending reconciliation.",
+    "sources": [
+      "https://www.chick-fil-a.ca/nutrition-allergens",
+      "https://www.chick-fil-a.ca/menu/sides/buddy-fruits-multifruit"
+    ]
+  }
+]

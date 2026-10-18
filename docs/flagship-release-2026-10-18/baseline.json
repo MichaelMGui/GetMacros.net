@@ -1,0 +1,290 @@
+{
+  "routes": 405,
+  "markets": {
+    "US": {
+      "name": "United States",
+      "continent": "North America",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "currency": "USD",
+      "home": "/",
+      "finder": "/restaurant-meal-finder.html",
+      "restaurants": "/restaurant-meal-guides.html",
+      "collection": "/healthy-fast-food.html",
+      "chains": [
+        "Arby\u2019s",
+        "Burger King",
+        "CAVA",
+        "Chick-fil-A",
+        "Chipotle",
+        "Culver\u2019s",
+        "Del Taco",
+        "Dunkin\u2019",
+        "El Pollo Loco",
+        "In-N-Out",
+        "Jersey Mike\u2019s",
+        "KFC",
+        "McDonald\u2019s",
+        "Noodles & Company",
+        "Panda Express",
+        "Panera",
+        "Popeyes",
+        "QDOBA",
+        "Raising Cane\u2019s",
+        "SONIC",
+        "Starbucks",
+        "Subway",
+        "Sweetgreen",
+        "Taco Bell",
+        "Taco John\u2019s",
+        "Wendy\u2019s"
+      ]
+    },
+    "CA": {
+      "name": "Canada",
+      "continent": "North America",
+      "flag": "\ud83c\udde8\ud83c\udde6",
+      "currency": "CAD",
+      "home": "/ca/en/",
+      "finder": "/ca/en/find-a-meal/",
+      "restaurants": "/ca/en/restaurants/",
+      "collection": "/ca/en/collections/protein-meals/",
+      "chains": [
+        "A&W Canada",
+        "Booster Juice",
+        "Burger King",
+        "Domino\u2019s",
+        "Harvey\u2019s",
+        "KFC",
+        "Mary Brown\u2019s",
+        "New York Fries",
+        "Pizza Pizza",
+        "Subway",
+        "Tim Hortons",
+        "Triple O\u2019s"
+      ]
+    },
+    "MX": {
+      "name": "Mexico",
+      "continent": "North America",
+      "flag": "\ud83c\uddf2\ud83c\uddfd",
+      "currency": "MXN",
+      "home": "/mx/en/",
+      "finder": "/mx/en/find-a-meal/",
+      "restaurants": "/mx/en/restaurants/",
+      "collection": "/mx/en/collections/protein-meals/",
+      "chains": [
+        "Subway"
+      ]
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "continent": "Europe",
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "currency": "GBP",
+      "home": "/gb/en/",
+      "finder": "/gb/en/find-a-meal/",
+      "restaurants": "/gb/en/restaurants/",
+      "collection": "/gb/en/collections/protein-meals/",
+      "chains": [
+        "Greggs",
+        "KFC",
+        "Subway"
+      ]
+    },
+    "IE": {
+      "name": "Ireland",
+      "continent": "Europe",
+      "flag": "\ud83c\uddee\ud83c\uddea",
+      "currency": "EUR",
+      "home": "/ie/en/",
+      "finder": "/ie/en/find-a-meal/",
+      "restaurants": "/ie/en/restaurants/",
+      "collection": "/ie/en/collections/protein-meals/",
+      "chains": [
+        "KFC",
+        "Subway"
+      ]
+    },
+    "AU": {
+      "name": "Australia",
+      "continent": "Oceania",
+      "flag": "\ud83c\udde6\ud83c\uddfa",
+      "currency": "AUD",
+      "home": "/au/en/",
+      "finder": "/au/en/find-a-meal/",
+      "restaurants": "/au/en/restaurants/",
+      "collection": "/au/en/collections/protein-meals/",
+      "chains": [
+        "Guzman y Gomez"
+      ]
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "continent": "Oceania",
+      "flag": "\ud83c\uddf3\ud83c\uddff",
+      "currency": "NZD",
+      "home": "/nz/en/",
+      "finder": "/nz/en/find-a-meal/",
+      "restaurants": "/nz/en/restaurants/",
+      "collection": "/nz/en/collections/protein-meals/",
+      "chains": [
+        "Subway"
+      ]
+    },
+    "JP": {
+      "name": "Japan",
+      "continent": "Asia",
+      "flag": "\ud83c\uddef\ud83c\uddf5",
+      "currency": "JPY",
+      "home": "/jp/en/",
+      "finder": "/jp/en/find-a-meal/",
+      "restaurants": "/jp/en/restaurants/",
+      "collection": "/jp/en/collections/protein-meals/",
+      "chains": [
+        "MOS Burger",
+        "McDonald\u2019s Japan"
+      ]
+    },
+    "FR": {
+      "name": "France",
+      "continent": "Europe",
+      "currency": "EUR",
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "home": "/fr/en/",
+      "finder": "/fr/en/find-a-meal/",
+      "restaurants": "/fr/en/restaurants/",
+      "collection": "/fr/en/collections/protein-meals/",
+      "chains": [
+        "Quick"
+      ],
+      "sourceLanguage": "fr",
+      "officialCountryWebsite": "https://www.quick.fr/",
+      "officialOperatorScope": "Quick France official menu. French source product names are preserved; English site navigation is a separate language choice.",
+      "localOperatingEntity": null,
+      "coverageLabel": "Reviewed named source selection",
+      "reviewedAt": "2026-10-17",
+      "recordCount": 190,
+      "finderRecordCount": 172,
+      "sourceEdition": "2026-10-06",
+      "translationsReviewed": false,
+      "fullIngredientFormulasInferred": false
+    },
+    "IN": {
+      "name": "India",
+      "continent": "Asia",
+      "currency": "INR",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "home": "/in/en/",
+      "finder": "/in/en/find-a-meal/",
+      "restaurants": "/in/en/restaurants/",
+      "collection": "/in/en/collections/protein-meals/",
+      "chains": [
+        "McDonald\u2019s North & East India"
+      ],
+      "sourceLanguage": "en",
+      "officialCountryWebsite": "https://mcdindia.com/",
+      "officialOperatorScope": "North & East India only: Connaught Plaza Restaurants Private Limited. No West/South India franchise equivalence. This regional scope must remain visible on cards, finder rows, directories and country home.",
+      "localOperatingEntity": "Connaught Plaza Restaurants Private Limited",
+      "coverageLabel": "Reviewed named source selection",
+      "reviewedAt": "2026-10-17",
+      "recordCount": 82,
+      "finderRecordCount": 71,
+      "sourceEdition": null,
+      "translationsReviewed": false,
+      "fullIngredientFormulasInferred": false,
+      "operatorEvidence": {
+        "file": "docs/global-coverage-2026-10-17/restaurants/newmarkets/mcd-in-ne-index.html",
+        "sha256": "7f4666b084591f38226d8ad37c1a599072149825b4235594b575eb6fa7495203",
+        "url": "https://mcdindia.com/nutritional-information/",
+        "sourceText": "Connaught Plaza Restaurants Private Limited (licensee of McDonald's in North & East India)"
+      }
+    },
+    "SG": {
+      "name": "Singapore",
+      "continent": "Asia",
+      "currency": "SGD",
+      "flag": "\ud83c\uddf8\ud83c\uddec",
+      "home": "/sg/en/",
+      "finder": "/sg/en/find-a-meal/",
+      "restaurants": "/sg/en/restaurants/",
+      "collection": "/sg/en/collections/protein-meals/",
+      "chains": [
+        "Burger King"
+      ],
+      "sourceLanguage": "en",
+      "officialCountryWebsite": "https://burgerking.com.sg/",
+      "officialOperatorScope": "Burger King Singapore local menu. All nine linked category pages were captured; selected conflicting source rows withheld. Beverage 100ml reference entries remain reference amounts.",
+      "localOperatingEntity": null,
+      "coverageLabel": "Reviewed named source selection",
+      "reviewedAt": "2026-10-17",
+      "recordCount": 57,
+      "finderRecordCount": 41,
+      "sourceEdition": null,
+      "translationsReviewed": false,
+      "fullIngredientFormulasInferred": false
+    },
+    "ZA": {
+      "name": "South Africa",
+      "continent": "Africa",
+      "currency": "ZAR",
+      "flag": "\ud83c\uddff\ud83c\udde6",
+      "home": "/za/en/",
+      "finder": "/za/en/find-a-meal/",
+      "restaurants": "/za/en/restaurants/",
+      "collection": "/za/en/collections/protein-meals/",
+      "chains": [
+        "Debonairs Pizza"
+      ],
+      "sourceLanguage": "en",
+      "officialCountryWebsite": "https://debonairspizza.co.za/",
+      "officialOperatorScope": "Debonairs Pizza South Africa official standard/halaal source guide. Source variants and named sizes preserved; identical nutritional variants merged. Local legal franchisees are not inferred.",
+      "localOperatingEntity": null,
+      "coverageLabel": "Reviewed named source selection",
+      "reviewedAt": "2026-10-17",
+      "recordCount": 160,
+      "finderRecordCount": 87,
+      "sourceEdition": null,
+      "translationsReviewed": false,
+      "fullIngredientFormulasInferred": false
+    }
+  },
+  "restaurantRecords": 3582,
+  "recordsByMarket": {
+    "US": 894,
+    "CA": 647,
+    "MX": 100,
+    "GB": 456,
+    "IE": 194,
+    "AU": 249,
+    "NZ": 160,
+    "JP": 393,
+    "FR": 190,
+    "IN": 82,
+    "SG": 57,
+    "ZA": 160
+  },
+  "checkpointFiles": [
+    "tools/build_master_interface.py",
+    "tools/build_visible_workspace.py",
+    "tools/build_master_diary.py",
+    "tools/build_clarity_release.py",
+    "tools/build_global_coverage_release.py",
+    "tools/build_edition_css.py",
+    "tools/run_food_build.py",
+    "tools/build_site.sh",
+    "tools/site_scope.py",
+    "tools/food-design.css",
+    "tools/home-workspace.css",
+    "tools/release-product.css",
+    "tools/playful-system.css",
+    "css/food-app.css",
+    "js/meal-finder.js",
+    "js/meal-guide.js",
+    "js/meal-view.js",
+    "js/calculators.js",
+    "js/markets.js",
+    "js/unified-v7.js",
+    "js/food-app.js",
+    "js/food-experience.js"
+  ]
+}

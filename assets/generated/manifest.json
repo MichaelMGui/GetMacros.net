@@ -1,8 +1,8 @@
 {
   "js/order-registry.json": {
-    "url": "/assets/generated/js-order-registry-6b708dfd2f7c.json",
-    "sourceSha256": "6b708dfd2f7c06d32cbff2678fa5e6c251a5481101e4f458766992a282fe1b63",
-    "assetSha256": "6b708dfd2f7c06d32cbff2678fa5e6c251a5481101e4f458766992a282fe1b63"
+    "url": "/assets/generated/js-order-registry-82e85d374e0d.json",
+    "sourceSha256": "82e85d374e0d777413c21f6bdb586849130fd9212137a09050d656208f0cbd46",
+    "assetSha256": "82e85d374e0d777413c21f6bdb586849130fd9212137a09050d656208f0cbd46"
   },
   "js/img-fallback.js": {
     "url": "/assets/generated/js-img-fallback-d4e0a0201ceb.js",
@@ -10,9 +10,9 @@
     "assetSha256": "d4e0a0201ceb165e2018524bc56818533f57c6be63d5aa47e5adb4913d486016"
   },
   "css/publication.css": {
-    "url": "/assets/generated/css-publication-b4528c2876de.css",
-    "sourceSha256": "1c38b52e3e53ba84a586080d298dc51d9b16cd6bf45deec80d829ee2da26674c",
-    "assetSha256": "b4528c2876de481fe1a86f688a6aed1a81c0b671f3f9ba46b1dcfe89627b3419"
+    "url": "/assets/generated/css-publication-58aab79414e4.css",
+    "sourceSha256": "77b5ec2b75e59c06f9247622ae74638f81bad70bab678c1faa24384be5329b76",
+    "assetSha256": "58aab79414e4ab10186157c94cbae4763f7802feed7bd70a60d402fcd890b959"
   },
   "css/markets.css": {
     "url": "/assets/generated/css-markets-560067fd2622.css",
@@ -20,19 +20,24 @@
     "assetSha256": "560067fd262213ff44dcec47124a9f19646d5e1d041ebf6609429e3ede255f30"
   },
   "js/market-definitions.js": {
-    "url": "/assets/generated/js-market-definitions-794d1ec95514.js",
-    "sourceSha256": "794d1ec95514acc87a38922091ac3b4729705b390ec6febb7413d14b804a5cdb",
-    "assetSha256": "794d1ec95514acc87a38922091ac3b4729705b390ec6febb7413d14b804a5cdb"
+    "url": "/assets/generated/js-market-definitions-da56c9659a02.js",
+    "sourceSha256": "da56c9659a022de229fa0aca03749bf8b1e371d4a914b97f5ebdf9774a464b07",
+    "assetSha256": "da56c9659a022de229fa0aca03749bf8b1e371d4a914b97f5ebdf9774a464b07"
   },
   "js/markets.js": {
-    "url": "/assets/generated/js-markets-a842f0004fb2.js",
-    "sourceSha256": "a842f0004fb21ebe7fd9801cc213866161c55ff196e35baa718d04fd00248bc1",
-    "assetSha256": "a842f0004fb21ebe7fd9801cc213866161c55ff196e35baa718d04fd00248bc1"
+    "url": "/assets/generated/js-markets-8eab0d919da7.js",
+    "sourceSha256": "8eab0d919da79486d3d164e9c481ed90340743fdbebc8c506f8bfbcd24b3ccc4",
+    "assetSha256": "8eab0d919da79486d3d164e9c481ed90340743fdbebc8c506f8bfbcd24b3ccc4"
   },
   "js/unified-v7.js": {
-    "url": "/assets/generated/js-unified-v7-9dd42c9d6c7f.js",
-    "sourceSha256": "9dd42c9d6c7fe6d0c2eefcd6f50aa060c07a33aebf500089f81f042b6d5334e4",
-    "assetSha256": "9dd42c9d6c7fe6d0c2eefcd6f50aa060c07a33aebf500089f81f042b6d5334e4"
+    "url": "/assets/generated/js-unified-v7-c1372c081d82.js",
+    "sourceSha256": "c1372c081d823262465b55104cc807d5bc078a510bf98b774f51bebeadf2e9fe",
+    "assetSha256": "c1372c081d823262465b55104cc807d5bc078a510bf98b774f51bebeadf2e9fe"
+  },
+  "js/liquid-motion.js": {
+    "url": "/assets/generated/js-liquid-motion-b2f3b73586fc.js",
+    "sourceSha256": "b2f3b73586fc2229502283eb67e08f36e368c55a74c3b981d75f0a9666e25476",
+    "assetSha256": "b2f3b73586fc2229502283eb67e08f36e368c55a74c3b981d75f0a9666e25476"
   },
   "js/product-events.js": {
     "url": "/assets/generated/js-product-events-13af0a0b2006.js",
@@ -45,9 +50,9 @@
     "assetSha256": "3668765bfd3b197a3315df17ef4b3746da0d9962308281e71c29c8bf9c2e91ad"
   },
   "js/food-experience.js": {
-    "url": "/assets/generated/js-food-experience-728ada3cf8f8.js",
-    "sourceSha256": "728ada3cf8f8e8f3f507996b564cb79b710c5d4a41fc0a5851ac0431205f2a07",
-    "assetSha256": "728ada3cf8f8e8f3f507996b564cb79b710c5d4a41fc0a5851ac0431205f2a07"
+    "url": "/assets/generated/js-food-experience-88d78620c355.js",
+    "sourceSha256": "88d78620c35559d99fdc6d95317a49737a42c45df2887c99b2e61c1e527ad373",
+    "assetSha256": "88d78620c35559d99fdc6d95317a49737a42c45df2887c99b2e61c1e527ad373"
   },
   "js/ad-placements.js": {
     "url": "/assets/generated/js-ad-placements-988d90e3d1b1.js",
@@ -95,9 +100,9 @@
     "assetSha256": "2e0b98373e63c70b863e045b4ee516ad5131460a5b08b6270e8578c89f2345be"
   },
   "js/order-tools.js": {
-    "url": "/assets/generated/js-order-tools-df9ca2539686.js",
-    "sourceSha256": "df9ca2539686f2557dcf5d00f7b5f5cc476fd1000118f4dc2ebb03143162351a",
-    "assetSha256": "df9ca2539686f2557dcf5d00f7b5f5cc476fd1000118f4dc2ebb03143162351a"
+    "url": "/assets/generated/js-order-tools-7ddbee381503.js",
+    "sourceSha256": "7ddbee3815031d42f0af35d7bd4c354592842a282f26f21d0bf87674163d6657",
+    "assetSha256": "7ddbee3815031d42f0af35d7bd4c354592842a282f26f21d0bf87674163d6657"
   },
   "js/meal-ideas.js": {
     "url": "/assets/generated/js-meal-ideas-be63f0430d51.js",
@@ -105,9 +110,9 @@
     "assetSha256": "be63f0430d51b4cf098b6cf93c9ec0485ff2eb7bb3464cd705d3e59a3557a587"
   },
   "css/food-app.css": {
-    "url": "/assets/generated/css-food-app-ce63858ced39.css",
-    "sourceSha256": "ce63858ced397dc19de8e4dd2e3c7dafdd4adc52fe08d9d46b0dcc9d262efd01",
-    "assetSha256": "ce63858ced397dc19de8e4dd2e3c7dafdd4adc52fe08d9d46b0dcc9d262efd01"
+    "url": "/assets/generated/css-food-app-ac1d9b9c9f17.css",
+    "sourceSha256": "ac1d9b9c9f17a590fa579fcd67c7f9d0ec33534f8780c6dd87da7843a920b003",
+    "assetSha256": "ac1d9b9c9f17a590fa579fcd67c7f9d0ec33534f8780c6dd87da7843a920b003"
   },
   "js/macro-math.js": {
     "url": "/assets/generated/js-macro-math-5181c76aa375.js",
@@ -115,9 +120,9 @@
     "assetSha256": "5181c76aa37517a29753bfe29f61e05ccbcc1f7599d787fe6e646348d25ee31e"
   },
   "js/calculators.js": {
-    "url": "/assets/generated/js-calculators-232ee52c89fd.js",
-    "sourceSha256": "232ee52c89fd436ec8e2a3a0a1eb3d7da36b146e3b5cc4057da24a2e4b27c5ea",
-    "assetSha256": "232ee52c89fd436ec8e2a3a0a1eb3d7da36b146e3b5cc4057da24a2e4b27c5ea"
+    "url": "/assets/generated/js-calculators-b2a0346d7d1c.js",
+    "sourceSha256": "b2a0346d7d1c469788d4b7117f18d5c5c23f0d54d1603a4e45fc02203d8aeee0",
+    "assetSha256": "b2a0346d7d1c469788d4b7117f18d5c5c23f0d54d1603a4e45fc02203d8aeee0"
   },
   "js/focused-calculators.js": {
     "url": "/assets/generated/js-focused-calculators-7151b5636eb8.js",
@@ -145,9 +150,9 @@
     "assetSha256": "4482a3f8b8f1520a826c42ca9f4839b4c26a06d67d6dc528fac311a9e980339e"
   },
   "js/food-app.js": {
-    "url": "/assets/generated/js-food-app-51e31cdaf7e2.js",
-    "sourceSha256": "51e31cdaf7e21e870c57c5c400651c03a699cfb7c07b34f8a4a5d58420f1f531",
-    "assetSha256": "51e31cdaf7e21e870c57c5c400651c03a699cfb7c07b34f8a4a5d58420f1f531"
+    "url": "/assets/generated/js-food-app-329b179818b6.js",
+    "sourceSha256": "329b179818b698dd2bdc4b75f773071f668a6df98e1f14adf346aa166317d05c",
+    "assetSha256": "329b179818b698dd2bdc4b75f773071f668a6df98e1f14adf346aa166317d05c"
   },
   "js/food-comparison-state.js": {
     "url": "/assets/generated/js-food-comparison-state-f5797ed02400.js",
@@ -195,9 +200,9 @@
     "assetSha256": "b0942c6681d163b7b60e4fd434b18eca486d371df442c5e4af037500b8089552"
   },
   "css/home-workspace.css": {
-    "url": "/assets/generated/css-home-workspace-353d0a734884.css",
-    "sourceSha256": "353d0a7348840fc37acc06f1f5c3e4d768cd6b2243d1f51eb8ba53a39b72e898",
-    "assetSha256": "353d0a7348840fc37acc06f1f5c3e4d768cd6b2243d1f51eb8ba53a39b72e898"
+    "url": "/assets/generated/css-home-workspace-44e79ebb9aa8.css",
+    "sourceSha256": "44e79ebb9aa88958fef59e48cc747c2900f0f24a1f6458faf143fc8e126e947f",
+    "assetSha256": "44e79ebb9aa88958fef59e48cc747c2900f0f24a1f6458faf143fc8e126e947f"
   },
   "js/food-compare.js": {
     "url": "/assets/generated/js-food-compare-d98f8d7225b9.js",
@@ -249,20 +254,25 @@
     "sourceSha256": "db7b9efb8a1abd6c7be50d10b92293578e6d155208c82502828015f81c8ac880",
     "assetSha256": "db7b9efb8a1abd6c7be50d10b92293578e6d155208c82502828015f81c8ac880"
   },
+  "js/meal-images.js": {
+    "url": "/assets/generated/js-meal-images-9b266af61d6a.js",
+    "sourceSha256": "9b266af61d6a14670b95bb6c50b2884147d7f889bb2cd3581108b940287de735",
+    "assetSha256": "9b266af61d6a14670b95bb6c50b2884147d7f889bb2cd3581108b940287de735"
+  },
   "js/meal-engine.js": {
     "url": "/assets/generated/js-meal-engine-4f603e7aa05e.js",
     "sourceSha256": "4f603e7aa05e417243d4bc1c559680b518a579ff3347f681376fd8df7d40399b",
     "assetSha256": "4f603e7aa05e417243d4bc1c559680b518a579ff3347f681376fd8df7d40399b"
   },
   "js/meal-view.js": {
-    "url": "/assets/generated/js-meal-view-acbd3fd44f08.js",
-    "sourceSha256": "acbd3fd44f08c582e3650ac995181b217890184033229274ab7bb791ef186cf2",
-    "assetSha256": "acbd3fd44f08c582e3650ac995181b217890184033229274ab7bb791ef186cf2"
+    "url": "/assets/generated/js-meal-view-3b4c5a51074d.js",
+    "sourceSha256": "3b4c5a51074dae5e40c63308abcc0ead4deb93fc5519553167676ea54a336e56",
+    "assetSha256": "3b4c5a51074dae5e40c63308abcc0ead4deb93fc5519553167676ea54a336e56"
   },
   "js/meal-guide.js": {
-    "url": "/assets/generated/js-meal-guide-bfcaa2ec658a.js",
-    "sourceSha256": "bfcaa2ec658a09642cc1c457759f8b2616246a7beb70c58dc688572e416efbaa",
-    "assetSha256": "bfcaa2ec658a09642cc1c457759f8b2616246a7beb70c58dc688572e416efbaa"
+    "url": "/assets/generated/js-meal-guide-c25bee5eec30.js",
+    "sourceSha256": "c25bee5eec3015d05af79572429a293689c8c23868f863cc36e478b094b60825",
+    "assetSha256": "c25bee5eec3015d05af79572429a293689c8c23868f863cc36e478b094b60825"
   },
   "js/order-share.js": {
     "url": "/assets/generated/js-order-share-35ebbccbe4eb.js",
@@ -270,14 +280,14 @@
     "assetSha256": "35ebbccbe4eb641496245a986b65ff383e8c82661f04b854e5e30c9b5d1acea5"
   },
   "js/us-meals.js": {
-    "url": "/assets/generated/js-us-meals-ec6f397b57ac.js",
-    "sourceSha256": "ec6f397b57ac8641f4986e958928dab43961d8a08505c538b05e75ce0996b625",
-    "assetSha256": "ec6f397b57ac8641f4986e958928dab43961d8a08505c538b05e75ce0996b625"
+    "url": "/assets/generated/js-us-meals-0c220732779b.js",
+    "sourceSha256": "0c220732779b530aaf46cab695ad8ee13ba4f0b52c1cf61813738d9c0e54cd0a",
+    "assetSha256": "0c220732779b530aaf46cab695ad8ee13ba4f0b52c1cf61813738d9c0e54cd0a"
   },
   "js/meal-finder.js": {
-    "url": "/assets/generated/js-meal-finder-f4b4008f930e.js",
-    "sourceSha256": "f4b4008f930e7a11363adad24253e4b045ad91863b5facc5d68b007f68f5336e",
-    "assetSha256": "f4b4008f930e7a11363adad24253e4b045ad91863b5facc5d68b007f68f5336e"
+    "url": "/assets/generated/js-meal-finder-497ed4efe56a.js",
+    "sourceSha256": "497ed4efe56a256675563a3c38fb01b5bb95dc9b227254905740138b80a40c8c",
+    "assetSha256": "497ed4efe56a256675563a3c38fb01b5bb95dc9b227254905740138b80a40c8c"
   },
   "js/search-meals.js": {
     "url": "/assets/generated/js-search-meals-fce9922e610f.js",
@@ -290,58 +300,58 @@
     "assetSha256": "5a8da7445d535cd2f4ebe4c9501bfb2afc9fb79a6908a139e19c56ceb639f54a"
   },
   "js/au-meals.js": {
-    "url": "/assets/generated/js-au-meals-2ad2b2812957.js",
-    "sourceSha256": "2ad2b28129579b494ca56f9feefc8637b9bbedacbd8d493430830f2648a3b141",
-    "assetSha256": "2ad2b28129579b494ca56f9feefc8637b9bbedacbd8d493430830f2648a3b141"
+    "url": "/assets/generated/js-au-meals-46d20caac9a5.js",
+    "sourceSha256": "46d20caac9a54c48de54c40e42a00fb274fa50c4aacebbb2e3177ebe6fa4e3b8",
+    "assetSha256": "46d20caac9a54c48de54c40e42a00fb274fa50c4aacebbb2e3177ebe6fa4e3b8"
   },
   "js/canada-meals.js": {
-    "url": "/assets/generated/js-canada-meals-f7406649c1b9.js",
-    "sourceSha256": "f7406649c1b9115bfe0ca6fea4fa2eaf5021f55016a9dbcb06560f7da3ddec50",
-    "assetSha256": "f7406649c1b9115bfe0ca6fea4fa2eaf5021f55016a9dbcb06560f7da3ddec50"
+    "url": "/assets/generated/js-canada-meals-1b969be04afb.js",
+    "sourceSha256": "1b969be04afb655750f0acee73bb34808ae77d97595c1df53ab4a1841e80605a",
+    "assetSha256": "1b969be04afb655750f0acee73bb34808ae77d97595c1df53ab4a1841e80605a"
   },
   "js/fr-meals.js": {
-    "url": "/assets/generated/js-fr-meals-0d7cc3d3ba45.js",
-    "sourceSha256": "0d7cc3d3ba45b47ebf73f1f69babb291564b6c0d6d4c793742ffd9e988e9fd9d",
-    "assetSha256": "0d7cc3d3ba45b47ebf73f1f69babb291564b6c0d6d4c793742ffd9e988e9fd9d"
+    "url": "/assets/generated/js-fr-meals-36b91cfd05fa.js",
+    "sourceSha256": "36b91cfd05fa19d810aef2df03eabe1a95320adae69e2d4269961a4f0076597a",
+    "assetSha256": "36b91cfd05fa19d810aef2df03eabe1a95320adae69e2d4269961a4f0076597a"
   },
   "js/gb-meals.js": {
-    "url": "/assets/generated/js-gb-meals-0068f8cca497.js",
-    "sourceSha256": "0068f8cca497f5b88642c5d770037994a86b78432129822139f7140acd2f97e1",
-    "assetSha256": "0068f8cca497f5b88642c5d770037994a86b78432129822139f7140acd2f97e1"
+    "url": "/assets/generated/js-gb-meals-20a489484223.js",
+    "sourceSha256": "20a489484223a3ebcfe146273470a01c7dd3f9bf43611f367716debd2d6de493",
+    "assetSha256": "20a489484223a3ebcfe146273470a01c7dd3f9bf43611f367716debd2d6de493"
   },
   "js/ie-meals.js": {
-    "url": "/assets/generated/js-ie-meals-e0246ed76686.js",
-    "sourceSha256": "e0246ed76686faacac6fd40f62fdf548a13bb46e39b1a57dc51f0ca9f2a524dc",
-    "assetSha256": "e0246ed76686faacac6fd40f62fdf548a13bb46e39b1a57dc51f0ca9f2a524dc"
+    "url": "/assets/generated/js-ie-meals-173f4d136ec7.js",
+    "sourceSha256": "173f4d136ec71019a08d6bfe2e3c681a90f772597847845cb9ae20264fc16491",
+    "assetSha256": "173f4d136ec71019a08d6bfe2e3c681a90f772597847845cb9ae20264fc16491"
   },
   "js/in-meals.js": {
-    "url": "/assets/generated/js-in-meals-3f178a50dd1d.js",
-    "sourceSha256": "3f178a50dd1d9817aa8c869b7ca7ce21590a37faef9b8b07c381bcd823ce2637",
-    "assetSha256": "3f178a50dd1d9817aa8c869b7ca7ce21590a37faef9b8b07c381bcd823ce2637"
+    "url": "/assets/generated/js-in-meals-fa06ae0146c5.js",
+    "sourceSha256": "fa06ae0146c500a4932edb0956a7d83c102d7de16a673c932e25e41be4f29be8",
+    "assetSha256": "fa06ae0146c500a4932edb0956a7d83c102d7de16a673c932e25e41be4f29be8"
   },
   "js/jp-meals.js": {
-    "url": "/assets/generated/js-jp-meals-5a45c0ee22b8.js",
-    "sourceSha256": "5a45c0ee22b8d178bf72286389e2fb5b5519cb2c2a4cab85fd4504b3dbe77d94",
-    "assetSha256": "5a45c0ee22b8d178bf72286389e2fb5b5519cb2c2a4cab85fd4504b3dbe77d94"
+    "url": "/assets/generated/js-jp-meals-f18d0c4711db.js",
+    "sourceSha256": "f18d0c4711db78e6604fd21ebdb06802725fbb46a7b531b4e1bcb9135375edf6",
+    "assetSha256": "f18d0c4711db78e6604fd21ebdb06802725fbb46a7b531b4e1bcb9135375edf6"
   },
   "js/mx-meals.js": {
-    "url": "/assets/generated/js-mx-meals-1298cf8e07c4.js",
-    "sourceSha256": "1298cf8e07c4f586ef97867e88b46ab01de8d65756a85d41874a3ada2705b0d5",
-    "assetSha256": "1298cf8e07c4f586ef97867e88b46ab01de8d65756a85d41874a3ada2705b0d5"
+    "url": "/assets/generated/js-mx-meals-18f51cc843c4.js",
+    "sourceSha256": "18f51cc843c437b976307474c72cd547dc8723a0543c03909d3e3c7585c2f77c",
+    "assetSha256": "18f51cc843c437b976307474c72cd547dc8723a0543c03909d3e3c7585c2f77c"
   },
   "js/nz-meals.js": {
-    "url": "/assets/generated/js-nz-meals-b2f858edcb80.js",
-    "sourceSha256": "b2f858edcb8049473bfce6fe7b441fd527ff9c563ab3ae3e4db91153d68d2360",
-    "assetSha256": "b2f858edcb8049473bfce6fe7b441fd527ff9c563ab3ae3e4db91153d68d2360"
+    "url": "/assets/generated/js-nz-meals-2dae5594faf8.js",
+    "sourceSha256": "2dae5594faf819f9c6652962c39268688a19f576462258918dfec92e099c33a7",
+    "assetSha256": "2dae5594faf819f9c6652962c39268688a19f576462258918dfec92e099c33a7"
   },
   "js/sg-meals.js": {
-    "url": "/assets/generated/js-sg-meals-7c64f2acc987.js",
-    "sourceSha256": "7c64f2acc98754f418219d3e365336f19d16f9564cb590e1f706e9475b1f3f32",
-    "assetSha256": "7c64f2acc98754f418219d3e365336f19d16f9564cb590e1f706e9475b1f3f32"
+    "url": "/assets/generated/js-sg-meals-1b4eab4cc48e.js",
+    "sourceSha256": "1b4eab4cc48e90529cd686c0e8b7467efc59d1e89842cd1249807c39c89f6942",
+    "assetSha256": "1b4eab4cc48e90529cd686c0e8b7467efc59d1e89842cd1249807c39c89f6942"
   },
   "js/za-meals.js": {
-    "url": "/assets/generated/js-za-meals-92921d3f6618.js",
-    "sourceSha256": "92921d3f6618ddb516478cd7f4aafc7975a27a435328ce6925a9dbba39f815d9",
-    "assetSha256": "92921d3f6618ddb516478cd7f4aafc7975a27a435328ce6925a9dbba39f815d9"
+    "url": "/assets/generated/js-za-meals-357b8a2049d3.js",
+    "sourceSha256": "357b8a2049d340b2307b55935893311780937be6becd18c5f30ce300fcfc0833",
+    "assetSha256": "357b8a2049d340b2307b55935893311780937be6becd18c5f30ce300fcfc0833"
   }
 }

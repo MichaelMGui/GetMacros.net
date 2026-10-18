@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18",
+  "relationships": [
+    {
+      "id": "AU|domino-s",
+      "country": "AU",
+      "restaurantBrand": "Domino’s",
+      "restaurantId": "domino-s",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.dominos.com.au/menu/nutritional-information",
+      "localMenuSource": "https://www.dominos.com.au/menu/nutritional-information",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.dominos.com.au/menu/nutritional-information",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.dominos.com.au/menu/nutritional-information"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/au/en/restaurants/domino-s/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "AU|hungry-jack-s",
+      "country": "AU",
+      "restaurantBrand": "Hungry Jack’s",
+      "restaurantId": "hungry-jack-s",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Chicken-NutritionalGuideReport_Nutritional-Values-Report-16062026_2.pdf",
+      "localMenuSource": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Chicken-NutritionalGuideReport_Nutritional-Values-Report-16062026_2.pdf",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Chicken-NutritionalGuideReport_Nutritional-Values-Report-16062026_2.pdf",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Chicken-NutritionalGuideReport_Nutritional-Values-Report-16062026_2.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-23-January-2026-Plant-Based-Veggie-Nutritionals_1.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Breakfast-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Bundle-Meals-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Extra-Condiments-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Frozen-Bursties-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Jack-s-Cafe-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Sides-Snacks-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-What-s-New-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-26-September-2026-Final-Whopper-Beef-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-28-April-2026-Final-Cold-Drinks-Nutritionals.pdf",
+        "https://www.hungryjacks.com.au/Upload/HJ/Media/Media/Nutritional-Guide-6-January-2026-Final-Kid-s-Meals-Nutritionals.pdf"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/au/en/restaurants/hungry-jack-s/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "CA|chick-fil-a",
+      "country": "CA",
+      "restaurantBrand": "Chick-fil-A",
+      "restaurantId": "chick-fil-a",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.chick-fil-a.ca/nutrition-allergens",
+      "localMenuSource": "https://www.chick-fil-a.ca/nutrition-allergens",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.chick-fil-a.ca/nutrition-allergens",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.chick-fil-a.ca/nutrition-allergens"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/ca/en/restaurants/chick-fil-a/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "CA|chipotle",
+      "country": "CA",
+      "restaurantBrand": "Chipotle",
+      "restaurantId": "chipotle",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "localMenuSource": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.chipotle.ca/content/dam/chipotle/menu/nutrition/CA-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/ca/en/restaurants/chipotle/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "FR|burger-king",
+      "country": "FR",
+      "restaurantBrand": "Burger King",
+      "restaurantId": "burger-king",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.burgerking.fr/carte",
+      "localMenuSource": "https://www.burgerking.fr/carte",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.burgerking.fr/carte",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.burgerking.fr/carte"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/fr/en/restaurants/burger-king/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "IE|zizzi",
+      "country": "IE",
+      "restaurantBrand": "Zizzi",
+      "restaurantId": "zizzi",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+      "localMenuSource": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://cdn.sanity.io/files/ysupxjc9/production/b0dfaa87024a45cbd51b09372d4c53a4e26fd898.pdf/ZIZZI-ROI.BEL-NUTRITION-GUIDE_SEP2026_V2.pdf"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/ie/en/restaurants/zizzi/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "IN|domino-s",
+      "country": "IN",
+      "restaurantBrand": "Domino’s",
+      "restaurantId": "domino-s",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.dominos.co.in/menu/nutritional-information",
+      "localMenuSource": "https://www.dominos.co.in/menu/nutritional-information",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.dominos.co.in/menu/nutritional-information",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.dominos.co.in/menu/nutritional-information"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/in/en/restaurants/domino-s/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "JP|kfc",
+      "country": "JP",
+      "restaurantBrand": "KFC",
+      "restaurantId": "kfc",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+      "localMenuSource": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://assets.ctfassets.net/jax7ylg56usf/5ONLu65UM152ShDkG8PJKV/aa7f91889e57f158c2cd5c35cffd38b3/bf0ccdda-8855-4ac4-a35c-3a3652255a2c.pdf"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/jp/en/restaurants/kfc/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "NZ|burger-king",
+      "country": "NZ",
+      "restaurantBrand": "Burger King",
+      "restaurantId": "burger-king",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+      "localMenuSource": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://bknzpublic.z8.web.core.windows.net/nutritionalguide/nutritionalguide.pdf"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/nz/en/restaurants/burger-king/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "NZ|domino-s",
+      "country": "NZ",
+      "restaurantBrand": "Domino’s",
+      "restaurantId": "domino-s",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.dominos.co.nz/menu/nutritional-information",
+      "localMenuSource": "https://www.dominos.co.nz/menu/nutritional-information",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.dominos.co.nz/menu/nutritional-information",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.dominos.co.nz/menu/nutritional-information"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/nz/en/restaurants/domino-s/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "SG|chick-fil-a",
+      "country": "SG",
+      "restaurantBrand": "Chick-fil-A",
+      "restaurantId": "chick-fil-a",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+      "localMenuSource": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.chick-fil-a.com.sg/wp-content/uploads/sites/2/2025/11/Singapore_Allergen_Sign_v7_1811_FINAL.pdf"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/sg/en/restaurants/chick-fil-a/",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    },
+    {
+      "id": "US|chick-fil-a",
+      "country": "US",
+      "restaurantBrand": "Chick-fil-A",
+      "restaurantId": "chick-fil-a",
+      "localOperatingEntity": null,
+      "officialCountryWebsite": "https://www.chick-fil-a.com/nutrition-allergens",
+      "localMenuSource": "https://www.chick-fil-a.com/nutrition-allergens",
+      "presence": {
+        "status": "confirmed",
+        "evidenceUrl": "https://www.chick-fil-a.com/nutrition-allergens",
+        "evidenceType": "official explicitly market-scoped published menu or nutrition table",
+        "observation": "Country-specific named portions reviewed against captured primary source. Does not establish every branch or whole live menu.",
+        "checkedAt": "2026-10-18"
+      },
+      "nutritionSources": [
+        "https://www.chick-fil-a.com/nutrition-allergens"
+      ],
+      "lastCheckedDate": "2026-10-18",
+      "coverageStatus": "tracked-macro-selection",
+      "nutritionAvailable": true,
+      "finderSupported": true,
+      "sourceRetrievalIsVerification": false,
+      "nutritionSourceStatus": "reviewed-selection",
+      "guideUrl": "/chick-fil-a-healthy-meals-macros.html",
+      "limitations": "Only identified source snapshots and exact named portions; no complete live-menu, every-branch availability, ingredient or allergen-safety claim. Source dates and retrieval dates remain separate."
+    }
+  ]
+}

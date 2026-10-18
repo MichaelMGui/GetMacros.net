@@ -1,0 +1,1 @@
+{"data":{"FeatureNutrition":{"_id":"feature-nutrition-singleton","nutritionTables":[],"roundingRules":{"enabled":true,"decimalPlaces":2,"roundingType":"standard","__typename":"RoundingRules"},"__typename":"FeatureNutrition"}},"extensions":{"sanitySyncTags":["s1:myu93Q"]}}

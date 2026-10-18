@@ -1,0 +1,19 @@
+{
+  "name": "getmacros-ios",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Bundled GetMacros iOS application; no remote application shell or private-data service.",
+  "scripts": {
+    "prepare:web": "node ../../tools/flagship_release/native_prepare.cjs",
+    "check": "node ../../tools/flagship_release/native_test.cjs",
+    "sync:ios": "pnpm run prepare:web && cap sync ios",
+    "open:ios": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "8.5.3",
+    "@capacitor/ios": "8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "newSourcePortionRecords": 1967,
+  "newCalculatedOrders": 4,
+  "refreshedSourcePortions": 135,
+  "newByMarket": {
+    "CA": 236,
+    "US": 186,
+    "AU": 471,
+    "NZ": 301,
+    "IN": 185,
+    "SG": 62,
+    "FR": 108,
+    "JP": 69,
+    "IE": 353
+  },
+  "newByChain": {
+    "CA|Chick-fil-A": 151,
+    "US|Chick-fil-A": 186,
+    "CA|Chipotle": 85,
+    "AU|Domino’s": 214,
+    "NZ|Domino’s": 241,
+    "IN|Domino’s": 185,
+    "AU|Hungry Jack’s": 257,
+    "NZ|Burger King": 60,
+    "SG|Chick-fil-A": 62,
+    "FR|Burger King": 108,
+    "JP|KFC": 69,
+    "IE|Zizzi": 353
+  },
+  "newSourceProductFamiliesWithExplicitSourceIdentity": 759,
+  "unknownProductFamilyIdentityPortions": 544
+}

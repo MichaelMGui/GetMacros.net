@@ -4,9 +4,10 @@ from collections import Counter
 from html import unescape
 from html.parser import HTMLParser
 from urllib.parse import urljoin
-import json, re, subprocess, unittest, xml.etree.ElementTree as ET
+import json, re, subprocess, unittest, xml.etree.ElementTree as ET, sys
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/'tools'))
 HERE = Path(__file__).resolve().parent
 FIELDS = ["cal", "p", "c", "fat"]
 GLOBAL = "tools/global_coverage_2026_10_17/"
@@ -38,6 +39,11 @@ def published_batches(markets):
             batch = read(GLOBAL + name)
             rows = [row for row in batch['records'] + batch.get('updates', []) if row['market'] in markets]
             batches.append((name, rows))
+    for name in ['markets_release_records.json','uk_records.json','markets_mexico_calories.json']:
+        path=ROOT/'tools/flagship_release'/name
+        if path.exists():
+            batch=json.loads(path.read_text(encoding='utf-8'))
+            batches.append((name,[row for row in batch['records']+batch.get('updates',[]) if row['market'] in markets]))
     return batches
 
 
@@ -116,7 +122,7 @@ class CompletedRestaurantIntegration(unittest.TestCase):
             r"window.GM_MARKETS=(.*);",
             (ROOT / "js/market-definitions.js").read_text(encoding="utf-8"))[1])
         cls.batches = published_batches(cls.markets)
-        cls.reviewed = [row for _, rows in cls.batches for row in rows]
+        cls.reviewed = list({row['id']:row for _, rows in cls.batches for row in rows}.values())
         cls.actual = actual_finder_counts()
         baseline_us = cls.actual['baselineUS']
         catalogue = read('js/order-catalogue.json')['records']
@@ -133,6 +139,13 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         cls.upserts = {}
         for path in sorted((ROOT / GLOBAL).glob('*presence*.json')):
             cls.upserts.update({row['id']:row for row in read(str(path.relative_to(ROOT)))['relationships'] if row['country'] in cls.markets})
+        current=read('tools/flagship_release/markets_release_records.json')
+        mexico=read('tools/flagship_release/markets_mexico_calories.json')
+        from flagship_release.uk_integration import presence_upserts
+        cls.upserts.update({row['id']:row for row in current['presenceUpserts']+mexico['presenceUpserts']+presence_upserts()})
+        for row in cls.presence:
+            for alias in row.get('previousPresenceIds',[]):
+                if row['id'] in cls.upserts:cls.upserts[alias]=cls.upserts[row['id']]
 
     def test_all_reviewed_records_integrated_once(self):
         actual = {identity(row):row for row in self.registry}
@@ -155,8 +168,12 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         script = (ROOT / "js/canada-meals.js").read_text(encoding="utf-8")
         start = re.search(r"window.GM_MEALS\s*=\s*", script)
         self.assertIsNotNone(start, "Canadian finder has no serialized local meal array")
-        finder, _ = json.JSONDecoder().raw_decode(script[start.end():])
-        self.assertEqual(finder, [r for r in expected if finder_supported(r)])
+        # The shipped payload packs repeated keys and strings. Evaluate the
+        # same JavaScript as the browser before comparing every factual field.
+        replay = "const fs=require('fs'),vm=require('vm'),c={window:{}};vm.runInNewContext(fs.readFileSync(0,'utf8'),c);process.stdout.write(JSON.stringify(c.window.GM_MEALS));"
+        finder = json.loads(subprocess.run(['node','-e',replay],input=script,capture_output=True,encoding='utf-8',check=True,cwd=ROOT).stdout)
+        from build_global_coverage_release import finder_record
+        self.assertEqual(finder, [finder_record(r) for r in expected if finder_supported(r)])
         self.assertTrue(all(r["market"] == "CA" for r in finder))
         self.assertFalse(any(r.get("category") in ["component", "sauce"] for r in finder))
         self.assertFalse(any(r["chain"] == "Pizza Nova" for r in finder))
@@ -168,6 +185,7 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         clarity=read('tools/clarity_release/restaurant_additions.json')['presenceRelationships']
         expected_ids = {r["id"] for r in baseline + self.changes["relationships"] + clarity} | set(self.upserts)
         expected_ids.update(row['restaurantMarketId'] for row in self.reviewed)
+        expected_ids-=set(alias for r in self.presence for alias in r.get('previousPresenceIds',[]))
         self.assertEqual({r["id"] for r in self.presence}, expected_ids)
         for p in self.presence:
             rows = [r for r in self.registry
@@ -184,7 +202,7 @@ class CompletedRestaurantIntegration(unittest.TestCase):
             self.assertEqual(p["calculatedOrders"], sum(bool(r.get("calculatedFrom")) for r in rows))
 
     def test_new_operating_presence_never_fakes_nutrition(self):
-        by_id = {r["id"]: r for r in self.presence}
+        by_id = {key:r for r in self.presence for key in [r['id']]+r.get('previousPresenceIds',[])}
         for original in self.changes["relationships"]:
             input_row = self.upserts.get(original['id'], original)
             published = by_id[input_row["id"]]
@@ -229,9 +247,13 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         actual = self.actual['finders']['US']['count']
         usa = [r for r in self.registry if r['market'] == 'US']
         self.assertEqual(sum(finder_supported(r) for r in usa), actual)
-        additional = [r for r in usa if str(r.get('id', '')).startswith('cfa-us-')]
+        original_ids={r['id'] for r in read('js/order-catalogue.json')['records'] if r['isNew']}
+        additional = [r for r in usa if r.get('id') in original_ids]
         self.assertEqual(len(additional),sum(r['isNew'] for r in read('js/order-catalogue.json')['records']))
-        self.assertTrue(all(r['finderSupported'] is False for r in additional))
+        refreshed={r['id']:r for r in read('tools/flagship_release/markets_release_records.json')['updates']}
+        for row in additional:
+            self.assertEqual(row['finderSupported'],refreshed[row['id']]['finderSupported'] if row['id'] in refreshed else False)
+            if row['finderSupported']:self.assertEqual(row['verificationStatus'],'official-table-reviewed')
         self.assertTrue(all(r.get('source') for r in additional))
 
     def test_world_index_uses_every_tracked_chain(self):
@@ -358,8 +380,9 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         self.assertEqual(counts['US']['chains']['Chick-fil-A'],sum(finder_supported(r) for r in self.registry if r['market']=='US' and r['chain']=='Chick-fil-A'))
         us_cfa = next(p for p in self.presence
                       if p["country"] == "US" and p["restaurantBrand"] == "Chick-fil-A")
-        self.assertEqual(us_cfa['trackedRecords'],len(baseline_cfa)+sum(r['isNew'] for r in read('js/order-catalogue.json')['records']))
-        self.assertEqual(us_cfa['finderRecords'],len(baseline_cfa))
+        current=[r for r in read('tools/flagship_release/markets_release_records.json')['records'] if r['market']=='US' and r['chain']=='Chick-fil-A']
+        self.assertEqual(us_cfa['trackedRecords'],len(baseline_cfa)+sum(r['isNew'] for r in read('js/order-catalogue.json')['records'])+len(current))
+        self.assertEqual(us_cfa['finderRecords'],sum(finder_supported(r) for r in self.expected.values() if r.get('market','US')=='US' and r.get('chain')=='Chick-fil-A'))
 
 
 if __name__ == "__main__":

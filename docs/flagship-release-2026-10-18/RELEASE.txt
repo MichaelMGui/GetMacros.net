@@ -1,0 +1,26 @@
+GETMACROS — FLAGSHIP RELEASE, 18 OCTOBER 2026
+
+Implementation
+Shared quiz-first homepage and native destination panels across all 12 existing markets. Find my meal, Macro calculator, Log food and Play have direct navigation; mobile tasks reserve safe-area space. Searchable full-name country selection, deliberate appearance choices, accessible native quiz inputs and one filter engine replace the older disclosure-heavy controls.
+
+Calculator results use a deliberately chosen per-meal calorie limit. Daily estimates and body inputs stay out of links. Food logging keeps breakfast/lunch/dinner/snacks, portions, source snapshots, recent/favorite reuse, export/import and private local storage. Search refinement is secondary; unsupported installation/AI promotion remains removed. Complete-order selection separates restaurant, main/side/drink/extras and retains unknown component totals.
+
+Data and content
+10,327 restaurant records across 12 existing markets. Added 6,741 named source portions plus 4 calculated Canadian orders; refreshed 135 existing U.S. portions. Sizes/builds are not claimed as independent complete meals. UK:4,736 new portions across 17 chains,3,662 named source identities/recipes. Mexico:38 Starbucks named sizes with calories only; missing macros remain unknown. Existing 692,173 branded source profiles retained;0 new branded imports in this release.
+
+Four source-backed worked comparison articles, updated local guides/directories, What’s New, shared local homepages and truthful crawlable links/canonicals/sitemap. No Search Console/analytics access, keyword-volume, indexing or traffic result is claimed. seo-research.json records the current sources actually inspected.
+
+Images and motion
+15 original transparent SVG category illustrations with visible Illustration labels.0 exact meal photographs,0 authorized photographic cutouts. Every restaurant portion still has an exact-photo gap. Shared interactions include press/selection feedback, navigation/panel continuity, quiz progress, results/calculator/diary/comparison/game feedback and short character responses. OS reduced motion and persisted calm preferences are retained; reading text remains still. Browser traces are representative interaction evidence, not a recording of every page.
+
+Native foundation
+native/app/ios/App/App.xcodeproj is an actual generated/synchronized Capacitor project, with a Swift local archive/import/export/share bridge and privacy manifest. Browser bridge tests do not execute Swift. macOS/Xcode compilation, simulator/device retention, signing, permission review and App Store submission remain unverified/unperformed. See ios/readiness.md.
+
+Evidence
+routes.csv, country-restaurant-coverage.csv, menu-category-completeness.csv, motion-coverage.csv, feature-discoverability.csv, query-to-page-map.csv, published-links.csv and release-summary.json reconcile implementation against evidence. Actual screenshots: after/. Interaction trace: after/navigation-quiz-diary-trace.zip. Test commands/results: tests.json and build-results.json. Source samples/warnings: data-audit/audit.json. Local before/after observations: performance.json (lab only, not field/Core Web Vitals).
+
+Unfinished scope
+16 named UK chains have exact source/access/adapter gaps in uk/country-restaurant-matrix.csv. Some accessible sources still need a reviewed adapter; these are implementation gaps, not claims that nutrition does not exist. The existing South African market has no accepted new batch because source units remain unresolved. Many tracked menus are selections rather than complete live menus. No new branded grocery batch was imported. Exact-photo rights/acquisition remains outstanding. Xcode/device/App Store work requires the appropriate Apple environment and owner credentials. No whole-site WCAG or full-menu completion claim is made.
+
+Deployment
+Awaiting guarded publisher checks and production verification. Final live status and exact revision will be recorded in production-verification.json and the completion message.

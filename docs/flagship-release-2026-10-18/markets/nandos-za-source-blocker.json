@@ -1,0 +1,11 @@
+{
+  "market": "ZA",
+  "chain": "Nando’s",
+  "sourceUrl": "https://api.nandos.co.za/api/v2/pack/menu/default",
+  "menuUrl": "https://www.nandos.co.za/eat/order/menu",
+  "menuId": "4c99b700-c93b-46bf-8ea4-7fdb1af92fb3",
+  "menuProductDefinitions": 483,
+  "nutrientBearingDefinitions": 65,
+  "status": "withheld pending explicit energy/sodium unit clarification",
+  "reason": "Public menu metadata declares Energy CALORIES and Sodium GRAMS. Example PERinaise Dip 60g declares energy972, fat20g, sodium713; it would be unsafe to assume these mean kJ and mg merely because those units look plausible. Glycaemic carbohydrate also needs a distinct basis. No nutrient values imported or converted by guess."
+}

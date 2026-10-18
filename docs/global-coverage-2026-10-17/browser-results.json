@@ -1,6 +1,6 @@
 {
   "pass": true,
-  "base": "http://127.0.0.1:4194",
+  "base": "https://getmacros.net",
   "checks": [
     "New grocery source record searched, portion reviewed, logged to Breakfast and retained after reload",
     "/ca/en/find-a-meal/?chain=KFC real local results",

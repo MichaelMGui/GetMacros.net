@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18",
+  "market": "GB",
+  "counts": {
+    "Nando’s": 270,
+    "LEON": 148,
+    "Wagamama": 193,
+    "Wendy’s": 180,
+    "Five Guys": 91,
+    "Pepe’s": 131,
+    "Starbucks": 1280,
+    "Chick-fil-A": 74,
+    "Zizzi": 428,
+    "ASK Italian": 367,
+    "PizzaExpress": 398,
+    "Tortilla": 284,
+    "Tim Hortons": 289,
+    "Wasabi": 74,
+    "Caffè Nero": 422,
+    "Chipotle": 24,
+    "Chopstix": 83
+  },
+  "records": 4736,
+  "categories": {
+    "entree": 1205,
+    "side": 336,
+    "component": 752,
+    "dessert": 333,
+    "drink": 2110
+  },
+  "withheld": 524,
+  "baseline": 456,
+  "products": 3662,
+  "composedOrders": 0,
+  "scope": "Reviewed UK source snapshots and named portions; not an audited full live-menu/stock guarantee",
+  "withdrawnAfterIndependentAudit": 11
+}

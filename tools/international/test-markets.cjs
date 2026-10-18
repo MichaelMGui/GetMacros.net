@@ -5,8 +5,8 @@ const ca=JSON.parse(fs.readFileSync('js/canada-meals.json')).records,registry=JS
 const additionalCanadian=JSON.parse(fs.readFileSync('tools/master_release/restaurant_records.json')).records;
 const newCanadian=JSON.parse(fs.readFileSync('tools/master_completion/restaurant_records.json')).records,clarityCanadian=JSON.parse(fs.readFileSync('tools/clarity_release/restaurant_additions.json')).records;
 const definitions={window:{}};vm.runInNewContext(fs.readFileSync('js/market-definitions.js','utf8'),definitions);const markets=definitions.window.GM_MARKETS;
-const batchFiles=['tools/global_coverage_2026_10_17/restaurant-records.json','tools/global_coverage_2026_10_17/restaurant-newmarkets-records.json','tools/global_coverage_2026_10_17/restaurant-supplement-records.json'].filter(p=>fs.existsSync(p));
-const reviewed=batchFiles.flatMap(p=>{const b=read(p);return [...b.records,...(b.updates||[])].filter(r=>markets[r.market]);});
+const batchFiles=['tools/global_coverage_2026_10_17/restaurant-records.json','tools/global_coverage_2026_10_17/restaurant-newmarkets-records.json','tools/global_coverage_2026_10_17/restaurant-supplement-records.json','tools/flagship_release/markets_release_records.json','tools/flagship_release/uk_records.json','tools/flagship_release/markets_mexico_calories.json'].filter(p=>fs.existsSync(p));
+const reviewed=[...new Map(batchFiles.flatMap(p=>{const b=read(p);return [...b.records,...(b.updates||[])].filter(r=>markets[r.market]);}).map(r=>[r.id,r])).values()];
 const key=r=>r.id||[r.market||'US',r.chain,r.name].join('|');
 const expectedCA=new Map([...read('tools/international/records.json').records,...additionalCanadian,...newCanadian,...clarityCanadian,...reviewed.filter(r=>r.market==='CA')].map(r=>[key(r),r]));
 assert.deepEqual(new Set(ca.map(key)),new Set(expectedCA.keys()));assert.equal(ca.length,expectedCA.size);assert.equal(new Set(ca.map(E.key)).size,ca.length);

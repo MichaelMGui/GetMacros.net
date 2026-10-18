@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-18T17:58:47.834Z",
+  "htmlRoutes": 439,
+  "bundleFiles": 976,
+  "bundleBytes": 141810588,
+  "assetFilesExcludingBuildManifest": 975,
+  "assetBytesExcludingBuildManifest": 141809865,
+  "webAssetManifestSha256": "b8c4dd92d77c969913b8c387ffb331e816179d89b0f742377bfbc456dc414401",
+  "contentManifestSha256": "ac910cb91488190c2648c257257a8f8a6a090c4c93740eb460b6af7d4f5ebb88",
+  "officialCapacitorSync": "passed",
+  "copiedAssetsMismatches": [],
+  "brandedFoodCatalogBundled": false,
+  "restaurantLogosBundled": false,
+  "webAdFilesBundled": false,
+  "restaurantImageManifestCounts": {
+    "mealRecords": 10327,
+    "exactMealPhotographs": 0,
+    "authorizedPhotoCutouts": 0,
+    "originalTransparentIllustrations": 15,
+    "illustrativeFallbackAssignments": 10327,
+    "unresolvedExactPhotoGaps": 10327
+  },
+  "scaffoldChecks": 14,
+  "simulatedBridgeBrowserChecks": 12,
+  "nativeCompilation": "not run: Windows has no Xcode or iOS simulator",
+  "noPrivateDataService": true,
+  "simulatedBridgeCheckedAt": "2026-10-18T17:58:53.301Z"
+}

@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-18",
+  "commands": [
+    {
+      "command": "python tools/flagship_release/uk_extract.py --check --only html",
+      "exitCode": 0,
+      "matchedArtifacts": ["leon-products.json", "wagamama-menu.json"]
+    },
+    {
+      "command": "python tools/flagship_release/uk_extract.py --check --only coordinates",
+      "exitCode": 0,
+      "matchedArtifacts": ["starbucks-food-coordinates.json"]
+    },
+    {
+      "command": "python tools/flagship_release/uk_extract.py --check --only pdf",
+      "exitCode": 0,
+      "matchedArtifacts": ["wendys-extracted.json", "fiveguys-extracted.json", "starbucks-food-extracted.json", "starbucks-drinks-extracted.json", "zizzi-extracted.json", "askitalian-extracted.json", "pizzaexpress-extracted.json", "tortilla-extracted.json", "timhortons-extracted.json", "wasabi-extracted.json", "chipotle-extracted.json"]
+    }
+  ],
+  "scope": "Offline reconstruction matched saved intermediate extraction values. This is separate from factual verification, licensed reuse, visual review, whole-menu completeness and public-route testing."
+}
