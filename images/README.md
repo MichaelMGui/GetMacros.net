@@ -1,3 +1,13 @@
+# Current artwork inventory — October 19, 2026
+
+The public interface uses original GetMacros food-character SVGs and explicitly labelled meal-category illustrations. See [this release’s provenance](../docs/ultimate-release-2026-10-19/image-provenance.json) and [the category manifest](meal-cutouts/provenance.json). The new sandwich and yogurt illustrations are original SVG artwork, not restaurant photographs. No exact meal photographs or photographic cutouts were added in this release. Reference screenshots and manufacturer label evidence do not grant image reuse rights.
+
+Self-hosted Bricolage and Inter remain the active typefaces; their OFL files are retained under fonts. Historical third-party logos on disk are not cleared merely by being present and remain outside the active artwork system.
+
+The notes below describe historical passes and may name superseded presentation. They are retained as history, not a second current inventory.
+
+---
+
 # Image inventory
 
 ## Current active presentation — Market replacement

@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-19T14:48:25.737118+00:00",
+  "CICheckGroups": 51,
+  "failedCIChecks": [],
+  "broadRoutesRendered": 468,
+  "broadResponsiveFamilies": 28,
+  "themes": 4,
+  "widths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "finishedScreenshots": 209,
+  "extraJourneyGroups": 11,
+  "repeatIntegration": "Passed repeat-build-stable.log. Subsequent source-date, layout-reservation and sitemap fixes passed scoped regressions; production CI will rebuild the final commit.",
+  "nativeScaffoldChecks": 14,
+  "simulatedNativeBridgeJourneys": 12,
+  "nativeCompilation": "Not run; Windows has no Xcode or iOS simulator",
+  "imageEvidenceImages": "Two manufacturer webp captures remain local review evidence and are excluded from publication; no photographic reuse rights claimed."
+}

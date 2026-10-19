@@ -1,0 +1,20 @@
+{
+  "command": "tools/run_food_build.py",
+  "finalExit": 0,
+  "evidence": "full-build-verified.log",
+  "earlierFailures": [
+    {
+      "log": "full-build.log",
+      "reason": "Optional legacy appearance control lookup raised StopIteration; fixed."
+    },
+    {
+      "log": "full-build-rerun.log",
+      "reason": "Optional old canopy SVG lookup raised StopIteration; fixed."
+    },
+    {
+      "log": "full-build-final.log",
+      "reason": "New route allowlist, SVG document-title parsing, stale About count and house spelling checks; corrected without removing validation."
+    }
+  ],
+  "nativeXcodeCompilation": "Not available on Windows; no signing or submission."
+}

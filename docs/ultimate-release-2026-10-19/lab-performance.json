@@ -1,0 +1,253 @@
+{
+  "environment": "Local Windows Edge, synthetic cold cache, 390×844, 100ms latency, 1.6Mbps down, 750Kbps up, 4×CPU slowdown. Single runs, not field data, INP or a Lighthouse score.",
+  "results": [
+    {
+      "route": "/",
+      "lcpMs": 1464,
+      "cls": 0.010556585512224425,
+      "domContentLoadedMs": 1801,
+      "loadMs": 1845.8999999761581,
+      "resources": 22,
+      "transferBytes": 286984,
+      "loadedGlobalRegistry": false
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "lcpMs": 2752,
+      "cls": 0.00012933611277651168,
+      "domContentLoadedMs": 5514.5,
+      "loadMs": 5524,
+      "resources": 31,
+      "transferBytes": 923760,
+      "loadedGlobalRegistry": false
+    },
+    {
+      "route": "/calculators.html",
+      "lcpMs": 1412,
+      "cls": 0,
+      "domContentLoadedMs": 2094.800000011921,
+      "loadMs": 2102,
+      "resources": 20,
+      "transferBytes": 293955,
+      "loadedGlobalRegistry": false
+    },
+    {
+      "route": "/food-diary.html",
+      "lcpMs": 1484,
+      "cls": 0,
+      "domContentLoadedMs": 2427.600000023842,
+      "loadMs": 2435.900000035763,
+      "resources": 27,
+      "transferBytes": 384113,
+      "loadedGlobalRegistry": false
+    },
+    {
+      "route": "/fage-plain-greek-yogurt-0-2-5-percent.html",
+      "lcpMs": 1548,
+      "cls": 0,
+      "domContentLoadedMs": 1833.9000000357628,
+      "loadMs": 1837.5,
+      "resources": 17,
+      "transferBytes": 280372,
+      "loadedGlobalRegistry": false
+    }
+  ],
+  "contrast": [
+    {
+      "theme": "light",
+      "foreground": "ink",
+      "background": "bg",
+      "ratio": 11.67,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "foreground": "muted",
+      "background": "bg",
+      "ratio": 6.16,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "foreground": "green",
+      "background": "on-green",
+      "ratio": 6.99,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "foreground": "carb",
+      "background": "cream",
+      "ratio": 5.24,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "foreground": "protein",
+      "background": "cream",
+      "ratio": 5.01,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "foreground": "fat",
+      "background": "cream",
+      "ratio": 4.67,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "foreground": "control-border",
+      "background": "surface",
+      "ratio": 3.52,
+      "minimum": 3
+    },
+    {
+      "theme": "citrus",
+      "foreground": "ink",
+      "background": "bg",
+      "ratio": 10.39,
+      "minimum": 4.5
+    },
+    {
+      "theme": "citrus",
+      "foreground": "muted",
+      "background": "bg",
+      "ratio": 5.82,
+      "minimum": 4.5
+    },
+    {
+      "theme": "citrus",
+      "foreground": "green",
+      "background": "on-green",
+      "ratio": 6.69,
+      "minimum": 4.5
+    },
+    {
+      "theme": "citrus",
+      "foreground": "carb",
+      "background": "cream",
+      "ratio": 4.86,
+      "minimum": 4.5
+    },
+    {
+      "theme": "citrus",
+      "foreground": "protein",
+      "background": "cream",
+      "ratio": 5.25,
+      "minimum": 4.5
+    },
+    {
+      "theme": "citrus",
+      "foreground": "fat",
+      "background": "cream",
+      "ratio": 4.53,
+      "minimum": 4.5
+    },
+    {
+      "theme": "citrus",
+      "foreground": "control-border",
+      "background": "surface",
+      "ratio": 3.74,
+      "minimum": 3
+    },
+    {
+      "theme": "berry",
+      "foreground": "ink",
+      "background": "bg",
+      "ratio": 11.45,
+      "minimum": 4.5
+    },
+    {
+      "theme": "berry",
+      "foreground": "muted",
+      "background": "bg",
+      "ratio": 6.17,
+      "minimum": 4.5
+    },
+    {
+      "theme": "berry",
+      "foreground": "green",
+      "background": "on-green",
+      "ratio": 7.03,
+      "minimum": 4.5
+    },
+    {
+      "theme": "berry",
+      "foreground": "carb",
+      "background": "cream",
+      "ratio": 4.77,
+      "minimum": 4.5
+    },
+    {
+      "theme": "berry",
+      "foreground": "protein",
+      "background": "cream",
+      "ratio": 5.03,
+      "minimum": 4.5
+    },
+    {
+      "theme": "berry",
+      "foreground": "fat",
+      "background": "cream",
+      "ratio": 5.4,
+      "minimum": 4.5
+    },
+    {
+      "theme": "berry",
+      "foreground": "control-border",
+      "background": "surface",
+      "ratio": 3.76,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "foreground": "ink",
+      "background": "bg",
+      "ratio": 13.96,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "foreground": "muted",
+      "background": "bg",
+      "ratio": 9.13,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "foreground": "green",
+      "background": "on-green",
+      "ratio": 9.23,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "foreground": "carb",
+      "background": "cream",
+      "ratio": 7.87,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "foreground": "protein",
+      "background": "cream",
+      "ratio": 6.78,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "foreground": "fat",
+      "background": "cream",
+      "ratio": 6.56,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "foreground": "control-border",
+      "background": "surface",
+      "ratio": 4.29,
+      "minimum": 3
+    }
+  ]
+}

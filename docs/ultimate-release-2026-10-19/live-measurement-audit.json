@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-19T13:23:55.224Z",
+  "scope": "Public production HTTP HTML only. No login, analytics account or visitor data. No script execution or browser network trace.",
+  "checks": [
+    {
+      "route": "/",
+      "status": 200,
+      "finalURL": "https://getmacros.net/",
+      "ga4OrGTM": false,
+      "productionAdLoader": false,
+      "cloudflareWebAnalyticsBeacon": false,
+      "cloudflareSecurityAppendix": true,
+      "externalScriptURLs": [],
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "route": "/food-diary.html",
+      "status": 200,
+      "finalURL": "https://getmacros.net/food-diary.html",
+      "ga4OrGTM": false,
+      "productionAdLoader": false,
+      "cloudflareWebAnalyticsBeacon": false,
+      "cloudflareSecurityAppendix": true,
+      "externalScriptURLs": [],
+      "robotsMeta": "noindex,follow"
+    },
+    {
+      "route": "/calculators.html",
+      "status": 200,
+      "finalURL": "https://getmacros.net/calculators.html",
+      "ga4OrGTM": false,
+      "productionAdLoader": false,
+      "cloudflareWebAnalyticsBeacon": false,
+      "cloudflareSecurityAppendix": true,
+      "externalScriptURLs": [],
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "route": "/articles.html",
+      "status": 200,
+      "finalURL": "https://getmacros.net/articles.html",
+      "ga4OrGTM": false,
+      "productionAdLoader": false,
+      "cloudflareWebAnalyticsBeacon": false,
+      "cloudflareSecurityAppendix": true,
+      "externalScriptURLs": [],
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "route": "/privacy.html",
+      "status": 200,
+      "finalURL": "https://getmacros.net/privacy.html",
+      "ga4OrGTM": false,
+      "productionAdLoader": false,
+      "cloudflareWebAnalyticsBeacon": false,
+      "cloudflareSecurityAppendix": true,
+      "externalScriptURLs": [],
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "route": "/ca/en/",
+      "status": 200,
+      "finalURL": "https://getmacros.net/ca/en/",
+      "ga4OrGTM": false,
+      "productionAdLoader": false,
+      "cloudflareWebAnalyticsBeacon": false,
+      "cloudflareSecurityAppendix": true,
+      "externalScriptURLs": [],
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    }
+  ],
+  "interpretation": "An absent HTML beacon does not prove Cloudflare dashboard analytics are disabled. Edge analytics and browser analytics are separate. Actual provider account and browser-network evidence remain necessary."
+}

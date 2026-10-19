@@ -161,6 +161,10 @@ def release_routes():
     routes.add('compare-foods.html')
     routes.add('whats-new.html')
     routes.update({'leon-uk-breakfast-muffin-egg-pot-nutrition.html','nandos-uk-quarter-chicken-rice-chips-corn.html','wendys-uk-breakfast-muffin-wrap-calories-protein.html','chick-fil-a-canada-grilled-sandwich-fries-sizes.html'})
+    # Explicit authored content modules, never an unrestricted HTML-directory scan.
+    from ultimate_release.editorial_restaurants import articles as restaurant_articles
+    from ultimate_release.editorial_foodtools import articles as food_articles
+    routes.update(r['slug'].removesuffix('.html')+'.html' for r in restaurant_articles()+food_articles())
     for relative in ['docs/global-coverage-2026-10-17/restaurants/guide-briefs.json','docs/global-coverage-2026-10-17/restaurants/supplement/guide-briefs.json']:
         global_briefs=root/relative
         if global_briefs.exists():

@@ -26,8 +26,11 @@
     if (!buttons.length && !choices.length) return;
     var stored = "";
     try { stored = localStorage.getItem("gm-theme") || ""; } catch (error) {}
+    var names = {light:'Garden Day',citrus:'Citrus Morning',berry:'Berry Bloom',dark:'Forest Night'};
+    var colors = {light:'#ffffff',citrus:'#fffbef',berry:'#fffafc',dark:'#152b24'};
     var initial = document.documentElement.getAttribute("data-theme") || stored || "light";
     function apply(mode, remember) {
+      if (!names[mode]) mode = 'light';
       document.documentElement.setAttribute("data-theme", mode);
       if (remember) {
         try { localStorage.setItem("gm-theme", mode); } catch (error) {}
@@ -44,14 +47,16 @@
       choices.forEach(function (button) {
         button.setAttribute('aria-pressed', String(button.getAttribute('data-theme-choice') === mode));
       });
-      document.querySelectorAll('[data-appearance-current]').forEach(function(label){label.textContent=dark?'Dark':'Light';label.closest('summary,button')?.setAttribute('aria-label','Appearance: '+mode+' mode');});
+      document.querySelectorAll('[data-appearance-current]').forEach(function(label){label.textContent=names[mode];label.closest('summary,button')?.setAttribute('aria-label','Appearance: '+names[mode]);});
+      document.querySelectorAll('[data-system-theme]').forEach(function(button){button.setAttribute('aria-pressed',String(!remember && !stored));});
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--bg").trim());
+      if (meta) meta.setAttribute("content", colors[mode]);
+      document.dispatchEvent(new CustomEvent('getmacros:theme-changed',{detail:{theme:mode}}));
     }
-    apply(initial === "dark" ? "dark" : "light", false);
+    apply(initial, false);
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(event){
       var preference;try{preference=localStorage.getItem('gm-theme');}catch(error){}
-      if(preference!=='light'&&preference!=='dark')apply(event.matches?'dark':'light',false);
+      if(!names[preference])apply(event.matches?'dark':'light',false);
     });
     buttons.forEach(function (button) {
       button.addEventListener("click", function () {
@@ -59,6 +64,7 @@
       });
     });
     choices.forEach(function(button){button.addEventListener('click',function(){apply(button.getAttribute('data-theme-choice'),true);});});
+    document.querySelectorAll('[data-system-theme]').forEach(function(button){button.addEventListener('click',function(){stored='';try{localStorage.removeItem('gm-theme');}catch(error){}apply(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light',false);});});
   }
 
   function navigation() {

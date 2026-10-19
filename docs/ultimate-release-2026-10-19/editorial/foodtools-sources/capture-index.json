@@ -1,0 +1,140 @@
+[
+  {
+    "name": "starkist_white",
+    "url": "https://starkist.com/product/albacore-white-tuna-in-water-pouch/",
+    "finalUrl": "https://starkist.com/product/albacore-white-tuna-in-water-pouch/",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 151193,
+    "sha256": "ec26968a18f2ceb894ff2467586200bb97c62d87b2eea578691a200497bca4c1"
+  },
+  {
+    "name": "starkist_light",
+    "url": "https://starkist.com/product/light-tuna-in-water-pouch/",
+    "finalUrl": "https://starkist.com/product/light-tuna-in-water-pouch/",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 158387,
+    "sha256": "78e7e4be7e95e00f6be9d73b9ae018996d2e23f195bd17bfce6c27c172d4fdbe"
+  },
+  {
+    "name": "fage0",
+    "url": "https://usa.fage/products/yogurt/fage-total-0",
+    "finalUrl": "https://usa.fage/products/yogurt/fage-total-0",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 139184,
+    "sha256": "93baf91b06794dc8a9788e902c3edd8400a3f166bd819400bf9f9366120c65c0"
+  },
+  {
+    "name": "fage5",
+    "url": "https://usa.fage/products/yogurt/fage-total-5",
+    "finalUrl": "https://usa.fage/products/yogurt/fage-total-5",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 135044,
+    "sha256": "5269afcaee7b4aeefa4542fd5aa6cfa1c33d037ece88bf53a08e8e8dc37ce429"
+  },
+  {
+    "name": "fage2",
+    "url": "https://usa.fage/products/yogurt/fage-total-2",
+    "finalUrl": "https://usa.fage/products/yogurt/fage-total-2",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 134421,
+    "sha256": "c6a4c4107316f1a453528ea730ba6215a5cbf57839d054d9d48495954a9c7af3"
+  },
+  {
+    "name": "pbfit",
+    "url": "https://www.pbfit.com/products/pbfit-classic",
+    "finalUrl": "https://www.pbfit.com/products/pbfit-classic",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 104011,
+    "sha256": "319ca6496eec9e3370853d202a556b76d6d77a7369ec0989686234af1cda27fb"
+  },
+  {
+    "name": "cheerios_original",
+    "url": "https://www.cheerios.com/products/original-cheerios",
+    "finalUrl": "https://www.cheerios.com/products/original-cheerios",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 104899,
+    "sha256": "69a8f2bb3084c03f75e11a8d8114904fcd8c1018c18c83e42d4d696b1f09a0d0"
+  },
+  {
+    "name": "cheerios_honey",
+    "url": "https://www.cheerios.com/products/honey-nut-cheerios",
+    "finalUrl": "https://www.cheerios.com/products/honey-nut-cheerios",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 108248,
+    "sha256": "a45ad1203200260fb1c8976f45d7d4cb723a714163a96836cc9cd49a4a19ff75"
+  },
+  {
+    "name": "barilla_protein_au",
+    "url": "https://www.barilla.com/en-au/products/pasta/protein-plus/spaghetti-protein-plus",
+    "finalUrl": "https://www.barilla.com/en-au/products/pasta/protein-plus/spaghetti-protein-plus",
+    "status": 403,
+    "checkedOn": "2026-10-19",
+    "bytes": 4545,
+    "sha256": "fc2b6bd93fba94f1106701f10c48020110700e1561b5dc8c0ecd5ff99303fe2e"
+  },
+  {
+    "name": "lindt85",
+    "url": "https://www.lindtusa.com/85-percent-cocoa-dark-chocolate-excellence-bar-392851",
+    "status": "failed",
+    "error": "fetch failed"
+  },
+  {
+    "name": "corepower_ca",
+    "url": "https://www.coca-cola.com/ca/en/brands/fairlife/products/core-power",
+    "finalUrl": "https://www.coca-cola.com/ca/en/brands/fairlife/products/core-power",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 171963,
+    "sha256": "b93c6996a676e9fa683d0431e20c9fa93a2255bedcfcd6bbeff6a19986d82f27"
+  },
+  {
+    "name": "jif",
+    "url": "https://www.jif.com/products/creamy/creamy-peanut-butter",
+    "finalUrl": "https://www.jif.com/products/creamy/creamy-peanut-butter",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 83653,
+    "sha256": "c10583d8d9edcf8f77c1731aa69c939531e967d5ca17e3d2f9ea413554baaf41"
+  },
+  {
+    "name": "premier",
+    "url": "https://www.premierprotein.com/products/chocolate-protein-shake",
+    "finalUrl": "https://www.premierprotein.com/products/chocolate-protein-shake",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 234235,
+    "sha256": "9598039171448cb34ca41fde4157f357d0a81aa4cc0220712f6ee8019c4dafa6"
+  },
+  {
+    "name": "silk_almond",
+    "url": "https://silk.com/plant-based-products/almondmilk/unsweet-almondmilk/",
+    "finalUrl": "https://www.silk.com/plant-based-products/almondmilk/unsweet-almondmilk/",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 69077,
+    "sha256": "4fd4f7bef325d3cd160d71434709c9189366707704bbe6ef1b31520cc7529d9f"
+  },
+  {
+    "name": "silk_soy",
+    "url": "https://silk.com/plant-based-products/soymilk/unsweet-soymilk/",
+    "finalUrl": "https://www.silk.com/plant-based-products/soymilk/unsweet-soymilk",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 63382,
+    "sha256": "da9a151966991964ea234d2379a4fbbeb27204493f07a2876ea6bc5407dddac5"
+  },
+  {
+    "name": "lindt90",
+    "url": "https://www.lindtusa.com/90-percent-cocoa-dark-chocolate-excellence-bar-392977",
+    "status": "failed",
+    "error": "fetch failed"
+  }
+]

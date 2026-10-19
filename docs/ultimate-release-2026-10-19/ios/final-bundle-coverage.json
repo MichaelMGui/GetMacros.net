@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-19T14:44:46.862Z",
+  "htmlRoutes": 468,
+  "bundleFiles": 1009,
+  "bundleBytes": 143495316,
+  "assetFilesExcludingBuildManifest": 1008,
+  "assetBytesExcludingBuildManifest": 143494592,
+  "webAssetManifestSha256": "c7c523f73c706bd8f27086559e50d8427d39106cd92d574b9704a7277b4caa36",
+  "contentManifestSha256": "928c8d00a403b015758fa7ffa82326ef0453326df505be563d7b91836744bc05",
+  "officialCapacitorSync": "passed",
+  "copiedAssetsMismatches": [],
+  "brandedFoodCatalogBundled": false,
+  "restaurantLogosBundled": false,
+  "webAdFilesBundled": false,
+  "scaffoldChecks": 14,
+  "simulatedBridgeBrowserChecks": 12,
+  "nativeCompilation": "not run: Windows has no Xcode or iOS simulator",
+  "noPrivateDataService": true,
+  "simulatedBridgeCheckedAt": "2026-10-19T14:44:50.554Z",
+  "priorRestaurantImageAssignmentCounts": {
+    "mealRecords": 10327,
+    "exactMealPhotographs": 0,
+    "authorizedPhotoCutouts": 0,
+    "originalTransparentIllustrations": 15,
+    "illustrativeFallbackAssignments": 10327,
+    "unresolvedExactPhotoGaps": 10327
+  },
+  "currentBundledOriginalCategoryAssets": 17,
+  "imageEvidence": "Seventeen original category SVGs checked against current authored hashes. Zero exact meal photographs. Prior restaurant assignment matrix is retained separately."
+}

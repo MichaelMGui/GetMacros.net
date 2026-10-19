@@ -1,0 +1,176 @@
+{
+  "diary": [
+    {
+      "value": 0.12724146239832657,
+      "at": 2461,
+      "sources": [
+        {
+          "node": "DIV",
+          "cls": "diary-main",
+          "previous": {
+            "x": 17,
+            "y": 612.15625,
+            "width": 355,
+            "height": 37.609375,
+            "top": 612.15625,
+            "right": 372,
+            "bottom": 649.765625,
+            "left": 17
+          },
+          "current": {
+            "x": 17,
+            "y": 546.15625,
+            "width": 355,
+            "height": 297.84375,
+            "top": 546.15625,
+            "right": 372,
+            "bottom": 844,
+            "left": 17
+          }
+        },
+        {
+          "node": "FOOTER",
+          "cls": "market-footer",
+          "previous": {
+            "x": 0,
+            "y": 714.765625,
+            "width": 390,
+            "height": 129.234375,
+            "top": 714.765625,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "current": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "node": "NAV",
+          "cls": "diary-quick-tools",
+          "previous": {
+            "x": 36,
+            "y": 523.15625,
+            "width": 318,
+            "height": 50,
+            "top": 523.15625,
+            "right": 354,
+            "bottom": 573.15625,
+            "left": 36
+          },
+          "current": {
+            "x": 36,
+            "y": 457.15625,
+            "width": 318,
+            "height": 50,
+            "top": 457.15625,
+            "right": 354,
+            "bottom": 507.15625,
+            "left": 36
+          }
+        },
+        {
+          "node": "P",
+          "cls": "diary-storage-note",
+          "previous": {
+            "x": 36,
+            "y": 496.015625,
+            "width": 318,
+            "height": 17.140625,
+            "top": 496.015625,
+            "right": 354,
+            "bottom": 513.15625,
+            "left": 36
+          },
+          "current": {
+            "x": 36,
+            "y": 430.015625,
+            "width": 318,
+            "height": 17.140625,
+            "top": 430.015625,
+            "right": 354,
+            "bottom": 447.15625,
+            "left": 36
+          }
+        }
+      ]
+    }
+  ],
+  "zoom": {
+    "nav": [
+      {
+        "name": "GetMacros home",
+        "r": {
+          "x": 16,
+          "y": 10.796875,
+          "width": 206.109375,
+          "height": 38.40625,
+          "top": 10.796875,
+          "right": 222.109375,
+          "bottom": 49.203125,
+          "left": 16
+        }
+      },
+      {
+        "name": "Appearance: Garden Day",
+        "r": {
+          "x": 239,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "top": 8,
+          "right": 283,
+          "bottom": 52,
+          "left": 239
+        }
+      },
+      {
+        "name": "Search the site",
+        "r": {
+          "x": 286,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "top": 8,
+          "right": 330,
+          "bottom": 52,
+          "left": 286
+        }
+      },
+      {
+        "name": "site-menu-button",
+        "r": {
+          "x": 330,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "top": 8,
+          "right": 374,
+          "bottom": 52,
+          "left": 330
+        }
+      },
+      {
+        "name": "Everyday tasks",
+        "r": {
+          "x": 0,
+          "y": 734.0625,
+          "width": 390,
+          "height": 109.9375,
+          "top": 734.0625,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        }
+      }
+    ],
+    "bodyPadding": "64px"
+  }
+}

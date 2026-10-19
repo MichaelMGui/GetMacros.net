@@ -10,14 +10,14 @@
     "assetSha256": "d4e0a0201ceb165e2018524bc56818533f57c6be63d5aa47e5adb4913d486016"
   },
   "css/publication.css": {
-    "url": "/assets/generated/css-publication-58aab79414e4.css",
-    "sourceSha256": "77b5ec2b75e59c06f9247622ae74638f81bad70bab678c1faa24384be5329b76",
-    "assetSha256": "58aab79414e4ab10186157c94cbae4763f7802feed7bd70a60d402fcd890b959"
+    "url": "/assets/generated/css-publication-93c10dbc147f.css",
+    "sourceSha256": "699ed5cce107e2956bd3590eba8a33691c6da988f4df671ca11e6d714f03193b",
+    "assetSha256": "93c10dbc147faf78c5c5ad2730aa2da2a2e176f7ae7911a39840ede88db9866d"
   },
   "css/markets.css": {
-    "url": "/assets/generated/css-markets-560067fd2622.css",
-    "sourceSha256": "560067fd262213ff44dcec47124a9f19646d5e1d041ebf6609429e3ede255f30",
-    "assetSha256": "560067fd262213ff44dcec47124a9f19646d5e1d041ebf6609429e3ede255f30"
+    "url": "/assets/generated/css-markets-8d5b7028b0dd.css",
+    "sourceSha256": "8d5b7028b0ddc261b27ff9e599fe28fc4af16574f08169fc21db58644898d918",
+    "assetSha256": "8d5b7028b0ddc261b27ff9e599fe28fc4af16574f08169fc21db58644898d918"
   },
   "js/market-definitions.js": {
     "url": "/assets/generated/js-market-definitions-da56c9659a02.js",
@@ -30,14 +30,14 @@
     "assetSha256": "8eab0d919da79486d3d164e9c481ed90340743fdbebc8c506f8bfbcd24b3ccc4"
   },
   "js/unified-v7.js": {
-    "url": "/assets/generated/js-unified-v7-c1372c081d82.js",
-    "sourceSha256": "c1372c081d823262465b55104cc807d5bc078a510bf98b774f51bebeadf2e9fe",
-    "assetSha256": "c1372c081d823262465b55104cc807d5bc078a510bf98b774f51bebeadf2e9fe"
+    "url": "/assets/generated/js-unified-v7-5af30f41bb30.js",
+    "sourceSha256": "5af30f41bb300b5479deda96a58f942210f922ad96d33d2adf06447bf99c5380",
+    "assetSha256": "5af30f41bb300b5479deda96a58f942210f922ad96d33d2adf06447bf99c5380"
   },
   "js/liquid-motion.js": {
-    "url": "/assets/generated/js-liquid-motion-b2f3b73586fc.js",
-    "sourceSha256": "b2f3b73586fc2229502283eb67e08f36e368c55a74c3b981d75f0a9666e25476",
-    "assetSha256": "b2f3b73586fc2229502283eb67e08f36e368c55a74c3b981d75f0a9666e25476"
+    "url": "/assets/generated/js-liquid-motion-4c790075baf9.js",
+    "sourceSha256": "4c790075baf9f05d321d6c351dd8a767af86813a6b61472fe50e1c1ac33780ed",
+    "assetSha256": "4c790075baf9f05d321d6c351dd8a767af86813a6b61472fe50e1c1ac33780ed"
   },
   "js/product-events.js": {
     "url": "/assets/generated/js-product-events-13af0a0b2006.js",
@@ -70,9 +70,9 @@
     "assetSha256": "3b098e60a7e12c34f220648189bb1be5543727aaad74e639fa080676d32b6a09"
   },
   "css/release-library.css": {
-    "url": "/assets/generated/css-release-library-5868756458bd.css",
-    "sourceSha256": "5868756458bda85b4e0139ff23497bf50bf6435167cb715cd64d95427779af4c",
-    "assetSha256": "5868756458bda85b4e0139ff23497bf50bf6435167cb715cd64d95427779af4c"
+    "url": "/assets/generated/css-release-library-c616f9d76bbe.css",
+    "sourceSha256": "c616f9d76bbe0a0d9dae81b3106dea025d222b033e28f56aa77479529a81b21e",
+    "assetSha256": "c616f9d76bbe0a0d9dae81b3106dea025d222b033e28f56aa77479529a81b21e"
   },
   "css/growth-tools.css": {
     "url": "/assets/generated/css-growth-tools-22012a2d7dca.css",
@@ -84,10 +84,20 @@
     "sourceSha256": "a3dcc8ad1135b4e28c1a55046df29367cc9ee730d8e225c5de17796557eae4ff",
     "assetSha256": "a3dcc8ad1135b4e28c1a55046df29367cc9ee730d8e225c5de17796557eae4ff"
   },
+  "js/editorial-browser.js": {
+    "url": "/assets/generated/js-editorial-browser-b007f019d49c.js",
+    "sourceSha256": "b007f019d49ca7d022edd828efce7124a683c1e9fc3ff50a0997f57c8cba3aa3",
+    "assetSha256": "b007f019d49ca7d022edd828efce7124a683c1e9fc3ff50a0997f57c8cba3aa3"
+  },
   "js/library-browser.js": {
     "url": "/assets/generated/js-library-browser-0e13b8bc040c.js",
     "sourceSha256": "0e13b8bc040c70f0aabebd8ae7a8b8851737c1cc5a30b78b207a63281620b92c",
     "assetSha256": "0e13b8bc040c70f0aabebd8ae7a8b8851737c1cc5a30b78b207a63281620b92c"
+  },
+  "css/food-app.css": {
+    "url": "/assets/generated/css-food-app-f8fb4aff40d5.css",
+    "sourceSha256": "f8fb4aff40d5361b64db38572cf0031427919a4c1d5d96f190c5d66310a26cf3",
+    "assetSha256": "f8fb4aff40d5361b64db38572cf0031427919a4c1d5d96f190c5d66310a26cf3"
   },
   "js/order-tools-core.js": {
     "url": "/assets/generated/js-order-tools-core-96011440bad0.js",
@@ -108,11 +118,6 @@
     "url": "/assets/generated/js-meal-ideas-be63f0430d51.js",
     "sourceSha256": "be63f0430d51b4cf098b6cf93c9ec0485ff2eb7bb3464cd705d3e59a3557a587",
     "assetSha256": "be63f0430d51b4cf098b6cf93c9ec0485ff2eb7bb3464cd705d3e59a3557a587"
-  },
-  "css/food-app.css": {
-    "url": "/assets/generated/css-food-app-ac1d9b9c9f17.css",
-    "sourceSha256": "ac1d9b9c9f17a590fa579fcd67c7f9d0ec33534f8780c6dd87da7843a920b003",
-    "assetSha256": "ac1d9b9c9f17a590fa579fcd67c7f9d0ec33534f8780c6dd87da7843a920b003"
   },
   "js/macro-math.js": {
     "url": "/assets/generated/js-macro-math-5181c76aa375.js",
@@ -160,9 +165,9 @@
     "assetSha256": "f5797ed02400e0c7f1c38c5c2b3f941348992564f00c4d61b8db7d281352843a"
   },
   "js/food-portion-compare.js": {
-    "url": "/assets/generated/js-food-portion-compare-9a759c92d6b5.js",
-    "sourceSha256": "9a759c92d6b52f90f828b7f7cd2bdcdcfb59bd14b3cd6498548e8aaa087cd45e",
-    "assetSha256": "9a759c92d6b52f90f828b7f7cd2bdcdcfb59bd14b3cd6498548e8aaa087cd45e"
+    "url": "/assets/generated/js-food-portion-compare-e96b182d0f11.js",
+    "sourceSha256": "e96b182d0f11a579cc7c3ef4041d4c6ca7c8f8a6c9074f207ffcaf87a843cc02",
+    "assetSha256": "e96b182d0f11a579cc7c3ef4041d4c6ca7c8f8a6c9074f207ffcaf87a843cc02"
   },
   "js/diary-edit.js": {
     "url": "/assets/generated/js-diary-edit-9acc5932ceb5.js",
@@ -200,9 +205,9 @@
     "assetSha256": "b0942c6681d163b7b60e4fd434b18eca486d371df442c5e4af037500b8089552"
   },
   "css/home-workspace.css": {
-    "url": "/assets/generated/css-home-workspace-44e79ebb9aa8.css",
-    "sourceSha256": "44e79ebb9aa88958fef59e48cc747c2900f0f24a1f6458faf143fc8e126e947f",
-    "assetSha256": "44e79ebb9aa88958fef59e48cc747c2900f0f24a1f6458faf143fc8e126e947f"
+    "url": "/assets/generated/css-home-workspace-ebe21cac5c91.css",
+    "sourceSha256": "ebe21cac5c910a7a839c113dfcacfec8a4d9af000d35f442f93b64dd584d3f38",
+    "assetSha256": "ebe21cac5c910a7a839c113dfcacfec8a4d9af000d35f442f93b64dd584d3f38"
   },
   "js/food-compare.js": {
     "url": "/assets/generated/js-food-compare-d98f8d7225b9.js",
@@ -210,9 +215,9 @@
     "assetSha256": "d98f8d7225b949ec7689d88be4736695f812212458364c7400da9797b105da63"
   },
   "css/play-release.css": {
-    "url": "/assets/generated/css-play-release-6d05cb5fef2c.css",
-    "sourceSha256": "6d05cb5fef2c89dbb7cf855ea9f1675e737b3b9b63cbd55bf2d325cc2ecd3da7",
-    "assetSha256": "6d05cb5fef2c89dbb7cf855ea9f1675e737b3b9b63cbd55bf2d325cc2ecd3da7"
+    "url": "/assets/generated/css-play-release-8b4981eeeaec.css",
+    "sourceSha256": "8b4981eeeaec1bc95413e5641fccff91ed69ef732c5d7c2bf82573301303a0e1",
+    "assetSha256": "8b4981eeeaec1bc95413e5641fccff91ed69ef732c5d7c2bf82573301303a0e1"
   },
   "js/play-rules.js": {
     "url": "/assets/generated/js-play-rules-0644b9e4c701.js",
@@ -255,9 +260,9 @@
     "assetSha256": "db7b9efb8a1abd6c7be50d10b92293578e6d155208c82502828015f81c8ac880"
   },
   "js/meal-images.js": {
-    "url": "/assets/generated/js-meal-images-9b266af61d6a.js",
-    "sourceSha256": "9b266af61d6a14670b95bb6c50b2884147d7f889bb2cd3581108b940287de735",
-    "assetSha256": "9b266af61d6a14670b95bb6c50b2884147d7f889bb2cd3581108b940287de735"
+    "url": "/assets/generated/js-meal-images-01f37dab6db9.js",
+    "sourceSha256": "01f37dab6db9571e71e1077cc6eb4ffa2b4835d968851c0cf851a72c7d255826",
+    "assetSha256": "01f37dab6db9571e71e1077cc6eb4ffa2b4835d968851c0cf851a72c7d255826"
   },
   "js/meal-engine.js": {
     "url": "/assets/generated/js-meal-engine-4f603e7aa05e.js",
@@ -270,9 +275,9 @@
     "assetSha256": "3b4c5a51074dae5e40c63308abcc0ead4deb93fc5519553167676ea54a336e56"
   },
   "js/meal-guide.js": {
-    "url": "/assets/generated/js-meal-guide-c25bee5eec30.js",
-    "sourceSha256": "c25bee5eec3015d05af79572429a293689c8c23868f863cc36e478b094b60825",
-    "assetSha256": "c25bee5eec3015d05af79572429a293689c8c23868f863cc36e478b094b60825"
+    "url": "/assets/generated/js-meal-guide-476902b33787.js",
+    "sourceSha256": "476902b33787837cb133457c484111d954e66ce6b8e96ffbbf8ab23fc16a80ea",
+    "assetSha256": "476902b33787837cb133457c484111d954e66ce6b8e96ffbbf8ab23fc16a80ea"
   },
   "js/order-share.js": {
     "url": "/assets/generated/js-order-share-35ebbccbe4eb.js",

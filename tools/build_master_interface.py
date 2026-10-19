@@ -20,7 +20,9 @@ def write(path,text):path.parent.mkdir(parents=True,exist_ok=True);path.write_te
 def character(name):return '<span data-food-character="'+name+'" aria-hidden="true"><svg viewBox="0 0 160 160" aria-hidden="true"><use href="/images/food-characters.svg#food-'+name+'"/></svg></span>'
 def absolute(text):return re.sub(r'\b(href|src|action)="((?!https?:|//|/|#|mailto:|tel:|data:)[^"]+)"',lambda m:m[1]+'="/'+m[2]+'"',text)
 def element_replace(text,cls,replacement):
- n=Document(text).find(cls=cls)
+ # Newer route templates can already have a native dialog shell. This optional
+ # legacy-control migration must not require a superseded disclosure to exist.
+ n=next((n for n in Document(text).nodes if cls in n['attrs'].get('class','').split()),None)
  return text[:n['start']]+replacement+text[n['end']:] if n else text
 def market_file(info):return ROOT/('index.html' if info['home']=='/' else info['home'].strip('/')+'/index.html')
 def countries():return json.loads(re.search(r'window.GM_MARKETS=(.*);',(ROOT/'js/market-definitions.js').read_text(encoding='utf-8'))[1])

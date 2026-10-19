@@ -1,0 +1,2825 @@
+{
+  "records": [
+    {
+      "route": "/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "home-us-390.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "ca-en-390.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/mx/en/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "mx-en-390.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "gb-en-390.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "jp-en-390.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "restaurant-meal-finder-390.png",
+      "h1": "Healthy fast-food meals",
+      "overflow": false,
+      "scripts": [
+        "js/meal-data.js",
+        "js/meal-provenance.js",
+        "js/meal-images.js",
+        "js/meal-engine.js",
+        "js/meal-view.js",
+        "js/meal-guide.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-share.js",
+        "js/us-meals.js",
+        "js/meal-finder.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/ca/en/find-a-meal/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "ca-en-find-a-meal-390.png",
+      "h1": "Find a meal in Canada.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/meal-engine.js",
+        "js/meal-images.js",
+        "js/meal-view.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-share.js",
+        "js/meal-guide.js",
+        "js/canada-meals.js",
+        "js/meal-finder.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "restaurant-meal-guides-390.png",
+      "h1": "Your usual spot.A clearer choice.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/gb/en/restaurants/nandos/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "gb-en-restaurants-nandos-390.png",
+      "h1": "Nando’s in United Kingdom.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/chick-fil-a/",
+      "width": 390,
+      "http": 200,
+      "screenshot": "ca-en-restaurants-chick-fil-a-390.png",
+      "h1": "Chick-fil-A in Canada.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "calculators-390.png",
+      "h1": "Macro calculator.",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/macro-math.js",
+        "js/calculators.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "protein-value-calculator-390.png",
+      "h1": "Protein cost per gram calculator",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/order-tools-core.js",
+        "js/protein-value.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "recipe-macro-scaler-390.png",
+      "h1": "Calories per recipe portion",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/recipe-scaler.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/food-diary.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "food-diary-390.png",
+      "h1": "Today’s food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/diary-actions.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/food-library.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "food-library-390.png",
+      "h1": "Find your food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/food-comparison-state.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/compare-foods.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "compare-foods-390.png",
+      "h1": "Put two foods side by side.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/food-comparison-state.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "compare-complete-restaurant-orders-390.png",
+      "h1": "Make sure the two numbers describe comparable orders",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-tools.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/growth-tools.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/articles.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "articles-390.png",
+      "h1": "A little foodfor thought.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/library-browser.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/play.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "play-390.png",
+      "h1": "Play with your food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-directory.js",
+        "js/liquid-motion.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/play-market-memory.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "play-market-memory-390.png",
+      "h1": "Market Memory",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-rules.js",
+        "js/play-release.js",
+        "js/liquid-motion.js",
+        "js/clarity-media.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/play-garden-pipes.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "play-garden-pipes-390.png",
+      "h1": "Garden Pipes",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-rules.js",
+        "js/play-release.js",
+        "js/liquid-motion.js",
+        "js/clarity-media.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/search.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "search-390.png",
+      "h1": "Search GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/meal-data.js",
+        "js/meal-provenance.js",
+        "js/search-meals.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/site-search.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "about-390.png",
+      "h1": "About GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/sources.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "sources-390.png",
+      "h1": "Nutrition sources and calculation methods",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/editorial-policy.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "editorial-policy-390.png",
+      "h1": "Editorial policy",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/privacy.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "privacy-390.png",
+      "h1": "Privacy policy",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "contact-390.png",
+      "h1": "Contact GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/contact.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/leon-uk-breakfast-muffin-egg-pot-nutrition.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "leon-uk-breakfast-muffin-egg-pot-nutrition-390.png",
+      "h1": "LEON UK breakfast: muffins, egg pot and sando compared",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/nandos-uk-quarter-chicken-rice-chips-corn.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "nandos-uk-quarter-chicken-rice-chips-corn-390.png",
+      "h1": "Nando’s UK: 1/4 Chicken with rice, chips or corn",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "greggs-sausage-roll-vs-vegan-roll-nutrition-390.png",
+      "h1": "Greggs: Sausage Roll vs Vegan Roll nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/panda-express-base-nutrition-comparison.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "panda-express-base-nutrition-comparison-390.png",
+      "h1": "Compare Panda Express bases using the right serving",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "grams-vs-milliliters-nutrition-labels-390.png",
+      "h1": "Grams and milliliters are different measurements",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "how-to-calculate-recipe-nutrition-390.png",
+      "h1": "How to calculate nutrition for a homemade recipe",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/drained-weight-nutrition-label.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "drained-weight-nutrition-label-390.png",
+      "h1": "Check the label before using drained weight",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/nutrition-data-mean-not-every-portion.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "nutrition-data-mean-not-every-portion-390.png",
+      "h1": "A food database average is not every individual portion",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/noodles-and-company-nutrition-guide.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "noodles-and-company-nutrition-guide-390.png",
+      "h1": "Noodles & Company nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/arbys-nutrition-guide.html",
+      "width": 390,
+      "http": 200,
+      "screenshot": "arbys-nutrition-guide-390.png",
+      "h1": "Arby’s nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/growth-tools.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "home-us-768.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "ca-en-768.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/mx/en/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "mx-en-768.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "gb-en-768.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "jp-en-768.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "restaurant-meal-finder-768.png",
+      "h1": "Healthy fast-food meals",
+      "overflow": false,
+      "scripts": [
+        "js/meal-data.js",
+        "js/meal-provenance.js",
+        "js/meal-images.js",
+        "js/meal-engine.js",
+        "js/meal-view.js",
+        "js/meal-guide.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-share.js",
+        "js/us-meals.js",
+        "js/meal-finder.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/ca/en/find-a-meal/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "ca-en-find-a-meal-768.png",
+      "h1": "Find a meal in Canada.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/meal-engine.js",
+        "js/meal-images.js",
+        "js/meal-view.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-share.js",
+        "js/meal-guide.js",
+        "js/canada-meals.js",
+        "js/meal-finder.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "restaurant-meal-guides-768.png",
+      "h1": "Your usual spot.A clearer choice.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/gb/en/restaurants/nandos/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "gb-en-restaurants-nandos-768.png",
+      "h1": "Nando’s in United Kingdom.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/chick-fil-a/",
+      "width": 768,
+      "http": 200,
+      "screenshot": "ca-en-restaurants-chick-fil-a-768.png",
+      "h1": "Chick-fil-A in Canada.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "calculators-768.png",
+      "h1": "Macro calculator.",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/macro-math.js",
+        "js/calculators.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "protein-value-calculator-768.png",
+      "h1": "Protein cost per gram calculator",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/order-tools-core.js",
+        "js/protein-value.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "recipe-macro-scaler-768.png",
+      "h1": "Calories per recipe portion",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/recipe-scaler.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/food-diary.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "food-diary-768.png",
+      "h1": "Today’s food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/diary-actions.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/food-library.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "food-library-768.png",
+      "h1": "Find your food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/food-comparison-state.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/compare-foods.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "compare-foods-768.png",
+      "h1": "Put two foods side by side.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/food-comparison-state.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "compare-complete-restaurant-orders-768.png",
+      "h1": "Make sure the two numbers describe comparable orders",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-tools.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/growth-tools.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/articles.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "articles-768.png",
+      "h1": "A little foodfor thought.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/library-browser.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/play.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "play-768.png",
+      "h1": "Play with your food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-directory.js",
+        "js/liquid-motion.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/play-market-memory.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "play-market-memory-768.png",
+      "h1": "Market Memory",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-rules.js",
+        "js/play-release.js",
+        "js/liquid-motion.js",
+        "js/clarity-media.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/play-garden-pipes.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "play-garden-pipes-768.png",
+      "h1": "Garden Pipes",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-rules.js",
+        "js/play-release.js",
+        "js/liquid-motion.js",
+        "js/clarity-media.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/search.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "search-768.png",
+      "h1": "Search GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/meal-data.js",
+        "js/meal-provenance.js",
+        "js/search-meals.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/site-search.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "about-768.png",
+      "h1": "About GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/sources.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "sources-768.png",
+      "h1": "Nutrition sources and calculation methods",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/editorial-policy.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "editorial-policy-768.png",
+      "h1": "Editorial policy",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/privacy.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "privacy-768.png",
+      "h1": "Privacy policy",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "contact-768.png",
+      "h1": "Contact GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/contact.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/leon-uk-breakfast-muffin-egg-pot-nutrition.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "leon-uk-breakfast-muffin-egg-pot-nutrition-768.png",
+      "h1": "LEON UK breakfast: muffins, egg pot and sando compared",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/nandos-uk-quarter-chicken-rice-chips-corn.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "nandos-uk-quarter-chicken-rice-chips-corn-768.png",
+      "h1": "Nando’s UK: 1/4 Chicken with rice, chips or corn",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "greggs-sausage-roll-vs-vegan-roll-nutrition-768.png",
+      "h1": "Greggs: Sausage Roll vs Vegan Roll nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/panda-express-base-nutrition-comparison.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "panda-express-base-nutrition-comparison-768.png",
+      "h1": "Compare Panda Express bases using the right serving",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "grams-vs-milliliters-nutrition-labels-768.png",
+      "h1": "Grams and milliliters are different measurements",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "how-to-calculate-recipe-nutrition-768.png",
+      "h1": "How to calculate nutrition for a homemade recipe",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/drained-weight-nutrition-label.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "drained-weight-nutrition-label-768.png",
+      "h1": "Check the label before using drained weight",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/nutrition-data-mean-not-every-portion.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "nutrition-data-mean-not-every-portion-768.png",
+      "h1": "A food database average is not every individual portion",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/noodles-and-company-nutrition-guide.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "noodles-and-company-nutrition-guide-768.png",
+      "h1": "Noodles & Company nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/arbys-nutrition-guide.html",
+      "width": 768,
+      "http": 200,
+      "screenshot": "arbys-nutrition-guide-768.png",
+      "h1": "Arby’s nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/growth-tools.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "home-us-1440.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/ca/en/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "ca-en-1440.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/mx/en/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "mx-en-1440.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/gb/en/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "gb-en-1440.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/jp/en/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "jp-en-1440.png",
+      "h1": "Find a meal.That fits you.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css",
+        "css/home-workspace.css"
+      ]
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "restaurant-meal-finder-1440.png",
+      "h1": "Healthy fast-food meals",
+      "overflow": false,
+      "scripts": [
+        "js/meal-data.js",
+        "js/meal-provenance.js",
+        "js/meal-images.js",
+        "js/meal-engine.js",
+        "js/meal-view.js",
+        "js/meal-guide.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-share.js",
+        "js/us-meals.js",
+        "js/meal-finder.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/ca/en/find-a-meal/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "ca-en-find-a-meal-1440.png",
+      "h1": "Find a meal in Canada.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/meal-engine.js",
+        "js/meal-images.js",
+        "js/meal-view.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-share.js",
+        "js/meal-guide.js",
+        "js/canada-meals.js",
+        "js/meal-finder.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/restaurant-meal-guides.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "restaurant-meal-guides-1440.png",
+      "h1": "Your usual spot.A clearer choice.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/gb/en/restaurants/nandos/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "gb-en-restaurants-nandos-1440.png",
+      "h1": "Nando’s in United Kingdom.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/ca/en/restaurants/chick-fil-a/",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "ca-en-restaurants-chick-fil-a-1440.png",
+      "h1": "Chick-fil-A in Canada.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/calculators.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "calculators-1440.png",
+      "h1": "Macro calculator.",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/macro-math.js",
+        "js/calculators.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/protein-value-calculator.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "protein-value-calculator-1440.png",
+      "h1": "Protein cost per gram calculator",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/order-tools-core.js",
+        "js/protein-value.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/recipe-macro-scaler.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "recipe-macro-scaler-1440.png",
+      "h1": "Calories per recipe portion",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/recipe-scaler.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/food-diary.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "food-diary-1440.png",
+      "h1": "Today’s food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/diary-actions.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/food-library.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "food-library-1440.png",
+      "h1": "Find your food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/food-comparison-state.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/compare-foods.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "compare-foods-1440.png",
+      "h1": "Put two foods side by side.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-core.js",
+        "js/branded-foods.js",
+        "js/food-library.js",
+        "js/food-diary-store.js",
+        "js/food-app.js",
+        "js/food-comparison-state.js",
+        "js/food-portion-compare.js",
+        "js/diary-edit.js",
+        "js/app-runtime.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "compare-complete-restaurant-orders-1440.png",
+      "h1": "Make sure the two numbers describe comparable orders",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js",
+        "js/order-tools-core.js",
+        "js/order-notebook.js",
+        "js/order-tools.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/growth-tools.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/articles.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "articles-1440.png",
+      "h1": "A little foodfor thought.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/library-browser.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/play.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "play-1440.png",
+      "h1": "Play with your food.",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-directory.js",
+        "js/liquid-motion.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/play-market-memory.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "play-market-memory-1440.png",
+      "h1": "Market Memory",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-rules.js",
+        "js/play-release.js",
+        "js/liquid-motion.js",
+        "js/clarity-media.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/play-garden-pipes.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "play-garden-pipes-1440.png",
+      "h1": "Garden Pipes",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/food-shelf.js",
+        "js/play-rules.js",
+        "js/play-release.js",
+        "js/liquid-motion.js",
+        "js/clarity-media.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/play-release.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/search.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "search-1440.png",
+      "h1": "Search GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/meal-data.js",
+        "js/meal-provenance.js",
+        "js/search-meals.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/site-search.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "about-1440.png",
+      "h1": "About GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/sources.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "sources-1440.png",
+      "h1": "Nutrition sources and calculation methods",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/editorial-policy.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "editorial-policy-1440.png",
+      "h1": "Editorial policy",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/privacy.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "privacy-1440.png",
+      "h1": "Privacy policy",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "contact-1440.png",
+      "h1": "Contact GetMacros",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/contact.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/leon-uk-breakfast-muffin-egg-pot-nutrition.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "leon-uk-breakfast-muffin-egg-pot-nutrition-1440.png",
+      "h1": "LEON UK breakfast: muffins, egg pot and sando compared",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/nandos-uk-quarter-chicken-rice-chips-corn.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "nandos-uk-quarter-chicken-rice-chips-corn-1440.png",
+      "h1": "Nando’s UK: 1/4 Chicken with rice, chips or corn",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/markets.css",
+        "css/food-app.css"
+      ]
+    },
+    {
+      "route": "/greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "greggs-sausage-roll-vs-vegan-roll-nutrition-1440.png",
+      "h1": "Greggs: Sausage Roll vs Vegan Roll nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/panda-express-base-nutrition-comparison.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "panda-express-base-nutrition-comparison-1440.png",
+      "h1": "Compare Panda Express bases using the right serving",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/grams-vs-milliliters-nutrition-labels.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "grams-vs-milliliters-nutrition-labels-1440.png",
+      "h1": "Grams and milliliters are different measurements",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/how-to-calculate-recipe-nutrition.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "how-to-calculate-recipe-nutrition-1440.png",
+      "h1": "How to calculate nutrition for a homemade recipe",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/drained-weight-nutrition-label.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "drained-weight-nutrition-label-1440.png",
+      "h1": "Check the label before using drained weight",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/nutrition-data-mean-not-every-portion.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "nutrition-data-mean-not-every-portion-1440.png",
+      "h1": "A food database average is not every individual portion",
+      "overflow": false,
+      "scripts": [
+        "js/img-fallback.js",
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js",
+        "js/food-shelf.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/food-shelf.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/noodles-and-company-nutrition-guide.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "noodles-and-company-nutrition-guide-1440.png",
+      "h1": "Noodles & Company nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/growth-tools.css",
+        "css/markets.css"
+      ]
+    },
+    {
+      "route": "/arbys-nutrition-guide.html",
+      "width": 1440,
+      "http": 200,
+      "screenshot": "arbys-nutrition-guide-1440.png",
+      "h1": "Arby’s nutrition",
+      "overflow": false,
+      "scripts": [
+        "js/market-definitions.js",
+        "js/markets.js",
+        "js/unified-v7.js",
+        "js/liquid-motion.js",
+        "js/product-events.js",
+        "js/food-characters.js",
+        "js/food-experience.js",
+        "js/ad-placements.js"
+      ],
+      "styles": [
+        "css/publication.css",
+        "css/release-library.css",
+        "css/growth-tools.css",
+        "css/markets.css",
+        "css/clarity-media.css"
+      ]
+    },
+    {
+      "route": "/",
+      "source": "production",
+      "http": 200
+    },
+    {
+      "route": "/food-diary.html",
+      "source": "production",
+      "http": 200
+    },
+    {
+      "route": "/articles.html",
+      "source": "production",
+      "http": 200
+    }
+  ],
+  "errors": []
+}

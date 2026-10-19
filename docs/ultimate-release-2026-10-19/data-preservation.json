@@ -1,0 +1,30 @@
+[
+  {
+    "path": "js/order-registry.json",
+    "unchanged": true
+  },
+  {
+    "path": "data/restaurant-presence.json",
+    "unchanged": true
+  },
+  {
+    "path": "js/market-definitions.js",
+    "unchanged": true
+  },
+  {
+    "path": "data/branded-foods/cnf/manifest.json",
+    "unchanged": true
+  },
+  {
+    "path": "data/branded-foods/off/manifest.json",
+    "unchanged": true
+  },
+  {
+    "path": "data/branded-foods/retailer-ca/manifest.json",
+    "unchanged": true
+  },
+  {
+    "path": "data/branded-foods/usda/manifest.json",
+    "unchanged": true
+  }
+]

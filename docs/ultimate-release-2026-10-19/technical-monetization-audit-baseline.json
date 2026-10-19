@@ -1,0 +1,91 @@
+{
+  "auditedAt": "2026-10-19T13:28:51.371723+00:00",
+  "scope": "local public HTML and authored runtime scripts, not an account or live-network audit",
+  "counts": {
+    "publicHTML": 439,
+    "sitemapURLs": 436,
+    "indexablePages": 436,
+    "pagesWithGA4Loader": 0,
+    "pagesWithProductionAdLoader": 0,
+    "pagesWithAdSlots": 33
+  },
+  "issues": {
+    "duplicateIndexableTitles": {},
+    "duplicateIndexableDescriptions": {},
+    "invalidJSONLD": [],
+    "missingCanonical": [
+      "/404.html"
+    ],
+    "multipleCanonical": [],
+    "nonSelfCanonical": [],
+    "missingTitleOrDescription": [],
+    "nonSingleH1": [],
+    "missingImageAlt": [],
+    "hreflang": [],
+    "sitemapUnknownLocalRoutes": [],
+    "sitemapDuplicates": [],
+    "noindexInSitemap": [],
+    "indexableNotInSitemap": []
+  },
+  "externalRuntimeScriptURLs": {},
+  "policies": {
+    "about.html": {
+      "present": true,
+      "main_words": 121,
+      "linked_from_home": true
+    },
+    "contact.html": {
+      "present": true,
+      "main_words": 106,
+      "linked_from_home": true
+    },
+    "privacy.html": {
+      "present": true,
+      "main_words": 907,
+      "linked_from_home": true
+    },
+    "terms.html": {
+      "present": true,
+      "main_words": 328,
+      "linked_from_home": true
+    },
+    "editorial-policy.html": {
+      "present": true,
+      "main_words": 346,
+      "linked_from_home": true
+    },
+    "corrections.html": {
+      "present": true,
+      "main_words": 410,
+      "linked_from_home": true
+    },
+    "sources.html": {
+      "present": true,
+      "main_words": 891,
+      "linked_from_home": true
+    },
+    "accessibility.html": {
+      "present": true,
+      "main_words": 249,
+      "linked_from_home": true
+    }
+  },
+  "privacyBoundary": {
+    "eventsModule": "js/product-events.js",
+    "providerFree": true,
+    "observedEventPayload": "Whitelisted event name and version only; no inputs, searches or food identifiers",
+    "advertisingModule": "js/ad-placements.js",
+    "default": "disabled, consent unknown, no adapter"
+  },
+  "accountEvidence": {
+    "GA4": "not connected or inspected",
+    "SearchConsole": "not connected or inspected",
+    "Journey": "not connected or inspected",
+    "AdSenseStanding": "not connected or inspected"
+  },
+  "limitations": [
+    "Presence or absence of GA4 in these source files cannot prove what a CDN, tag manager or account does in production.",
+    "No visitor, session, pageview, click, indexing or revenue metrics were available.",
+    "No visual quality or performance outcome is inferred from HTML parsing."
+  ]
+}

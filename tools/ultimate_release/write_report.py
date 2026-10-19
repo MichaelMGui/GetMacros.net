@@ -1,0 +1,159 @@
+"""Produce a concise, evidence-linked handoff with actual deployment state."""
+from pathlib import Path
+import json
+R=Path(__file__).resolve().parents[2];O=R/'docs/ultimate-release-2026-10-19'
+s=json.loads((O/'release-summary.json').read_text(encoding='utf-8'))
+deployment=s['deployment'];live=isinstance(deployment,dict) and deployment.get('status')=='Verified production HTTP and immutable assets'
+revision=deployment.get('revision','Pending') if isinstance(deployment,dict) else 'Pending'
+state='Published and HTTP/source-hash verified. Google indexing is unverified.' if live else 'Implemented and locally verified. Production publication/HTTP verification pending.'
+text=f'''GETMACROS — VISUAL, EDITORIAL AND JOURNEY RELEASE
+19 October 2026
+
+STATUS
+{state}
+Revision: {revision}
+Use published-links.csv for all 29 article URLs and actual publication status.
+
+WHAT CHANGED
+The 12 market homepages retain one shared architecture with real local data.
+The meal quiz leads the hero and navigation; the macro calculator and food log
+are direct destinations. The hero uses original botanical/plate artwork and the
+existing food cast. Four curated meal cards have quieter coordinated accents.
+Restaurant shortcuts remain genuine links into the selected market.
+
+Garden Day, Citrus Morning, Berry Bloom and Forest Night share semantic tokens,
+type, forms and geometry. Explicit preferences persist; device appearance and
+Calm motion remain available. Focus states remain visible for keyboard users.
+
+Calculator inputs use an aligned workspace and visible stages. Results appear
+after calculation. The per-meal handoff uses a deliberately chosen calorie limit;
+personal measurements are not encoded in the meal URL. Existing formulas remain.
+
+The diary prioritizes its date, daily overview, four meal groups and Add food.
+Recent portions, favorites and recipes remain available; preferences/backups are
+secondary. Search and its button align, source details are secondary, and the
+broccoli is larger. Initial meal space prevents the measured loading jump.
+Historical nutrient snapshots, local storage, editing, removal, undo, repeat,
+recipe creation, export/import and deletion remain supported.
+
+The food library has working reference-food shortcuts. Empty comparison hides
+unused controls. Reviewed foods retain country, portion and source; technical
+source identifiers now sit inside Source notes & attribution. Equal-weight
+comparison does not invent a gram conversion or turn unknown nutrients to zero.
+
+The reading index uses one leading story, two supporting stories, topic buttons,
+name search and open lists. All 208 previously linked editorial resources remain.
+New articles have readable measures, contents navigation, source notes and
+contextual tool links. Existing games retain their rules with distinct family
+surfaces; no games were added to inflate the release.
+
+FILES AND ROUTES
+All 468 public HTML routes inherit the shared themes, navigation and motion.
+release-inventory.csv maps individual routes to families, screenshots and limits.
+changed-files.txt, when present, is the exact staged publication file list.
+Principal sources: tools/build_ultimate_release.py, tools/theme-palettes.css,
+tools/home-workspace.css, tools/food-design.css, tools/release-product.css,
+tools/product-navigation.css, tools/liquid-motion.css, tools/release-library.css,
+tools/play-release.css, css/food-app.css, css/markets.css, js/unified-v7.js,
+js/meal-guide.js, js/liquid-motion.js, js/meal-images.js,
+js/food-portion-compare.js, js/editorial-browser.js, and tools/ultimate_release/.
+The build, repeat-build check, route allowlist, document-title parser, asset
+validation and CI workflow were updated. Unrelated root work was preserved;
+publication uses the established guarded publisher checkout, never root Git.
+
+EDITORIAL AND DATA
+29 genuinely new guides: 15 restaurant comparisons and 14 grocery/logging guides.
+They include actual portion tables, worked calculations, 15 original restaurant
+charts and an original backup workflow diagram. The restaurant group uses 86
+existing official-source servings. Source/portion/market/arithmetic/overlap/copy
+review was AI-assisted. No human expert, dietitian or clinical review is claimed.
+integrated-editorial-review.json and editorial/ contain individual evidence.
+
+New restaurant records: 0. New branded records imported: 0.
+The existing 10,327 restaurant records and provider manifests were compared with
+the publication base and retained. Existing markets: US, CA, MX, GB, IE, AU, NZ,
+JP, FR, IN, SG, ZA. This release is not a claim of audited complete live menus
+or every grocery product. Existing source-separated grocery coverage, licenses,
+unknown fields and country formulations remain intact.
+
+IMAGERY AND MOTION
+Two new transparent original category SVGs: grilled sandwich and yogurt.
+Original inline botanical art, character face/floret refinements, charts and
+the backup diagram add variety. Seventeen category illustrations now have
+provenance. New exact meal photographs: 0. Authorized photographic cutouts: 0.
+The 10,327 exact-photo gaps remain explicit. Supplied references and manufacturer
+evidence pictures were not republished as restaurant/product photographs.
+
+Buttons, navigation indicators, native dialogs, quiz choices/steps, calculator
+stages/results, diary entry settling, illustrations and game feedback use shared
+motion. Reading areas remain still. Reduced motion and Calm motion are honored.
+motion-coverage.csv records shared integration and honest sampled-test limits.
+Actual interaction evidence: after/product-interactions.zip and
+after/final-interactions.zip. Still screenshots alone are not motion evidence.
+
+SEO AND TRUST
+29 unique source-backed article titles/descriptions, direct answers, accurate
+Article/Breadcrumb structured data, crawlable links, topic discovery and search
+previews were added. Existing URLs remain. Sitemaps contain 465 eligible canonical
+pages, with private diary states excluded. Only substantively changed pages have
+the new release modification date. Genuine regional hreflang remains reciprocal.
+No duplicate indexable titles/descriptions, invalid JSON-LD, missing image alt
+attributes or hreflang gaps were found by the final parser. The noindex 404 has
+no canonical by design. The 12 shared homepage H1s intentionally match.
+
+Current Google primary guidance and 13 documented public query observations
+inform keyword-intent-map.csv and seo-research.json. No keyword volume, rank,
+traffic forecast, Search Console submission or Google indexing is claimed.
+About's stale count was removed; Sources' old snapshot is clearly historical.
+Privacy now describes the browser-observed Cloudflare Web Analytics beacon and
+distinguishes it from GA4 sessions. Private diary/calculator data are not sent by
+the application to advertising or analytics.
+
+JOURNEY READINESS
+See ../monetization/journey-readiness.md. Current official requirements include
+1,000 qualifying Tier-1-market sessions in 30 days and connected GA4; Grow is
+optional. GA4 is absent and owner account/audience data are unavailable, so
+eligibility, traffic integrity, engagement and account standing are unverified.
+The disabled advertising adapter and consent gates passed four contracts.
+No Journey production script, seller ID, application or identity step was added.
+Policy presence and engineering checks do not certify legal sufficiency or
+predict Journey acceptance. Original-photo acquisition remains unfinished.
+
+VERIFICATION
+Full supported build passed; repeated late integration passed. 51 local CI
+command/check groups passed. Final source-date, route, link, metadata, HTML,
+asset and JavaScript checks passed, with later scoped regressions for fixes.
+468 routes were rendered in Edge with zero runtime or overflow failures.
+28 representative families were checked at 320, 390, 768, 1024 and 1440 pixels
+in all four palettes. The final extra suite passed 11 journey groups.
+209 distinct finished screenshot views: after/. Baseline captures: before/.
+All 29 new articles have actual mobile and desktop captures. Evidence includes
+text enlargement, native-dialog focus return, keyboard tables, hard quiz limits,
+country drafts, source-aware food searches, comparison retention, logging and
+reload, calculator validation and a completed/restarted/paused game.
+
+Synthetic local mobile measurements used cold cache, 100 ms latency, 1.6 Mbps
+down, 750 Kbps up and 4x CPU slowdown. LCP was approximately 1.4–2.8 seconds
+across five measured pages. Diary CLS fell from 0.12724 to 0 in the same stated
+test; homepage CLS was 0.01056 and calculator/article CLS were 0. These are
+single lab runs, not real-user CWV, INP or a Lighthouse score. Finder LCP around
+2.75 seconds remains above the usual 2.5-second good threshold in this lab.
+28 semantic color contrast pairs passed. No full WCAG certification is claimed.
+
+The existing Capacitor iOS scaffold was refreshed with the current web bundle.
+Official sync, 14 integrity checks and 12 simulated-native-bridge journeys passed.
+Native snapshots, explicit Safari export/import migration and source-only offline
+cache were checked. No Swift compilation, actual WKWebView/simulator/device
+update testing, signing, developer membership or App Store submission occurred;
+Windows has no Xcode. No new native release or native-account feature is claimed.
+
+REMAINING OWNER/EXTERNAL WORK
+GA4 property/configuration, qualifying-session and acquisition reports, authorized
+Search Console data, Journey application/approval/onboarding and actual provider
+consent/legal review. Rights-cleared exact photography. Continued official-menu
+and grocery-source refreshes. Native compilation and physical-device testing.
+AI photo/voice logging still has no configured backend and is not advertised as
+working. No ranking, traffic, approval or income promise is made.
+'''
+(O/'RELEASE.txt').write_text(text,encoding='utf-8')
+print(state)

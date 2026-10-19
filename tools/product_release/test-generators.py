@@ -5,7 +5,7 @@ import hashlib, json, re, subprocess, sys
 ROOT = Path(__file__).resolve().parents[2]
 
 def integrate():
-    for script in ['restore_asset_sources.py','build_global_product.py','build_master_release.py','build_master_completion.py','build_master_diary.py','build_master_interface.py','build_clarity_release.py','build_global_coverage_release.py','build_flagship_release.py','refresh_release_search.py','stamp_assets.py']:
+    for script in ['restore_asset_sources.py','build_global_product.py','build_master_release.py','build_master_completion.py','build_master_diary.py','build_master_interface.py','build_clarity_release.py','build_global_coverage_release.py','build_flagship_release.py','build_ultimate_release.py','refresh_release_search.py','stamp_assets.py']:
         subprocess.run([sys.executable, str(ROOT/'tools'/script)], cwd=ROOT, check=True)
     manifest = json.loads((ROOT/'site.webmanifest').read_text(encoding='utf-8'))
     assert manifest['scope'] == '/' and manifest['id'] == '/'
@@ -24,5 +24,6 @@ def integrate():
     return {p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 before, after = integrate(), integrate()
-assert before == after, 'Repeat integration changed public product output'
+different=[p for p in before.keys()|after.keys() if before.get(p)!=after.get(p)]
+assert not different, 'Repeat integration changed public product output: '+', '.join(sorted(different))
 print('PASS: repeat integration, unique local currencies, app shortcuts and deterministic public product output.')

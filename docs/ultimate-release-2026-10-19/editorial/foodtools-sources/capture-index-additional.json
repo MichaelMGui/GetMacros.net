@@ -1,0 +1,83 @@
+[
+  {
+    "name": "mdn_storage",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria",
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 164716,
+    "sha256": "3158a9a2c980be66be8ea91493380a332f1394ecc8004bf327efa096eafd2825"
+  },
+  {
+    "name": "premier_ca",
+    "url": "https://premierprotein.ca/products/chocolate-protein-shake",
+    "finalUrl": "https://premierprotein.ca/products/chocolate-protein-shake",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 136627,
+    "sha256": "d550472991eb75b6fd78d9a779ec13d6594c425f05ad2c6a5ee5fe174404a4be"
+  },
+  {
+    "name": "hersheys_kisses",
+    "url": "https://www.hersheyland.com/products/hersheys-kisses-special-dark-mildly-sweet-chocolate-candy-32-1-oz-pack.html",
+    "finalUrl": "https://www.hersheyland.com/products/hersheys-kisses-special-dark-mildly-sweet-chocolate-candy-32-1-oz-pack.html",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 122096,
+    "sha256": "086d9aca274f54e4db8c2b79cd62d1627fa4426b7ca5ba4dc87a7ecd80fd0126"
+  },
+  {
+    "name": "hersheys_bar",
+    "url": "https://www.hersheyland.com/products/hersheys-special-dark-mildly-sweet-chocolate-candy-bars-8-7-oz-6-pack.html",
+    "finalUrl": "https://www.hersheyland.com/products/hersheys-special-dark-mildly-sweet-chocolate-candy-bars-8-7-oz-6-pack.html",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 115949,
+    "sha256": "e4f2ad8e6832fcfbbf62e80b50e2ec61b0ec28b60080988d7e5536d40aa05f9f"
+  },
+  {
+    "name": "gs1_content",
+    "url": "https://www.gs1.org/1/gtinrules/en/rule/266/declared-net-content",
+    "finalUrl": "https://www.gs1.org/1/gtinrules/en/rule/266/declared-net-content",
+    "status": 403,
+    "checkedOn": "2026-10-19",
+    "bytes": 1484,
+    "sha256": "ae249fa4e8f8ff4512ad454436a35f8cb89afede70b0ac7f1a1d30eeeb5c873b"
+  },
+  {
+    "name": "gs1_origin",
+    "url": "https://support.gs1.org/support/solutions/articles/43000734188",
+    "finalUrl": "https://support.gs1.org/support/solutions/articles/43000734188",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 164592,
+    "sha256": "ed3cbf986d64e015905d1741f36985295ceea2ff8d6e0be6e1225ba9f8ae0abe"
+  },
+  {
+    "name": "fdc_documentation",
+    "url": "https://fdc.nal.usda.gov/data-documentation/",
+    "finalUrl": "https://fdc.nal.usda.gov/data-documentation/",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 117771,
+    "sha256": "6450e7e6a442033c1ef44bf2899f36fb73bd4416b788083960b50baad4cf7d4f"
+  },
+  {
+    "name": "fda_fish",
+    "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+    "finalUrl": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 77466,
+    "sha256": "1d4e3a0771ff07599ce81c6b87a3d1303ea241bbeb2eb1864d0eecbcbe65ed90"
+  },
+  {
+    "name": "fda_label",
+    "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+    "finalUrl": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+    "status": 200,
+    "checkedOn": "2026-10-19",
+    "bytes": 57580,
+    "sha256": "f61ed71c63d211d6d510423ab59c181d3f4abb14bbd777c4f81b7c2dc31190b5"
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "observedOn": "2026-10-19",
+  "method": "Literal queries submitted to the available public web search tool; selected returned results inspected. This is not a Google account report or a reproducible rank measurement.",
+  "metrics": {"monthlyVolume": null, "difficulty": null, "position": null, "clicks": null, "impressions": null},
+  "observations": [
+    {
+      "query": "Tim Hortons Canada breakfast sandwich calories protein",
+      "market": "CA",
+      "returnedURLs": ["https://timsmenu.ca/menu/breakfast/breakfast-sandwiches", "https://rippedrestaurants.com/ca/chains/tim-hortons/bacon-breakfast-sandwich"],
+      "finding": "Third-party tables and older PDFs appear among results. Their serving definitions and apparent inconsistencies make direct current Canadian source checking necessary, not optional.",
+      "action": "Answer with exact muffin/biscuit/wrap identities, official snapshot portions and an explicit local source trail. Never import those competing tables as nutrition evidence."
+    },
+    {
+      "query": "Greggs breakfast baguette calories protein",
+      "market": "GB",
+      "returnedURLs": ["https://www.greggs.com/menu/product/bacon-and-omelette-breakfast-baguette-1000726/", "https://www.nutracheck.co.uk/CaloriesIn/Product/57/Greggs%2BAll%2BDay%2BBreakfast%2BBaguette"],
+      "finding": "The official product has named per-portion and per-100g columns; an aggregator result covers a differently named baguette.",
+      "action": "Keep exact baguette names and portion bases rather than substituting one generic breakfast-baguette number."
+    },
+    {
+      "query": "Harvey's Canada burger fries onion rings nutrition",
+      "market": "CA",
+      "returnedURLs": ["https://www.harveys.ca/en/nutrition.html", "https://getmacros.net/ca/en/restaurants/harvey-s/"],
+      "finding": "Official individual side portions and an existing GetMacros Canada guide appeared. Observing a returned GetMacros URL is not a site-wide indexing or clicks report.",
+      "action": "Link the existing guide and add useful calculated-order comparisons, keeping the main/side/drink boundary clear."
+    },
+    {
+      "query": "KFC UK burger twister wrap calories protein",
+      "market": "GB",
+      "returnedURLs": ["https://www.kfc.co.uk/nutrition-allergens", "https://brand-uk.assets.kfc.co.uk/2021-01/nutrition-05012021.pdf"],
+      "finding": "The current official portal and an old official PDF coexist in results.",
+      "action": "Record the source edition used, do not treat an indexed old PDF as proof of current local availability, and compare whole named portions."
+    },
+    {
+      "query": "Caffe Nero latte milk size nutrition UK",
+      "market": "GB",
+      "returnedURLs": ["https://www.caffenero.com/uk/menu/coffee", "https://www.nutracheck.co.uk/calories/calories_in_coffee_shop/caffe_nero_calories_latte_skimmed_milk.html"],
+      "finding": "The official menu exposes milk choice, regular/grande and per-product versus per-100g values; an aggregator isolates one build.",
+      "action": "Use the exact milk/size label and show the change between actual listed recipes without assuming every substitution has equal volume."
+    },
+    {
+      "query": "Five Guys UK little hamburger cheeseburger nutrition",
+      "market": "GB",
+      "returnedURLs": ["https://order.fiveguys.co.uk/menu", "https://www.fiveguys.com/-/media/public-site/files/menus/full-menu.ashx", "https://calorieorder.com/five-guys-uk-nutrition-calculator/"],
+      "finding": "UK ordering information, a U.S. menu PDF and multiple third-party UK figures appear together.",
+      "action": "State the UK market, named burger portion, current source scope and topping boundary. Do not mix same-name cross-market records."
+    },
+    {
+      "query": "Starbucks UK pumpkin spice latte hot iced nutrition",
+      "market": "GB",
+      "returnedURLs": ["https://www.starbucks.co.uk/nutrition-allergens", "https://www.starbucks.com/menu/product/418/iced/nutrition"],
+      "finding": "A U.S. drink nutrition result appears alongside UK sources despite the UK query.",
+      "action": "Put the UK build, size, milk and hot/iced distinction directly in the answer and table. Preserve seasonal and source-edition limitations."
+    },
+    {
+      "query": "Chopstix box base toppings calories UK",
+      "market": "GB",
+      "returnedURLs": ["https://chopstixnoodles.co.uk/menu/spice-bag-topping/", "https://chopstixnoodles.co.uk/wp-content/uploads/2026/01/Nutritional-Values-V8-JANUARY-2026.pdf", "https://menuverse.uk/chopstix-menu/"],
+      "finding": "The official topping page explains adding base and toppings; a competing menu article presents box summaries.",
+      "action": "Make the base-plus-toppings calculation explicit and distinguish a calculated selection from a restaurant-published complete-box total."
+    },
+    {
+      "query": "\"FAGE Total\" \"0%\" \"5%\" \"nutrition\"",
+      "market": "US (requires explicit local filtering)",
+      "returnedURLs": ["https://home.fage/nutrition", "https://be.fage/nutrition", "https://macronutrients.com/foods/fage-greek-yogurt-macros/"],
+      "finding": "Global and Belgian official pages are returned alongside a generic comparison.",
+      "action": "Use the exact U.S. manufacturer panels and equal gram portions; do not treat every FAGE tub or market as the same product."
+    },
+    {
+      "query": "Silk unsweet soy almond milk protein nutrition",
+      "domainFilter": ["silk.com"],
+      "market": "US",
+      "returnedURLs": ["https://silk.com/plant-based-products/soymilk/unsweet-soymilk/", "https://www.silk.com/plant-based-products/almondmilk/"],
+      "finding": "The official soy page's promotional calorie sentence differs from its full Nutrition Facts panel.",
+      "action": "Disclose the conflict, use identified full panels for calculations and tell readers to check their actual package; do not mark marketing copy as a verified label."
+    },
+    {
+      "query": "Cheerios original Honey Nut nutrition serving size",
+      "market": "US",
+      "returnedURLs": ["https://www.cheerios.com/honey-nut-cheerios-cereal", "https://www.cheerios.com/products/honey-nut-cheerios"],
+      "finding": "Official product descriptions and package/serving language differ across pages.",
+      "action": "Compare identified label portions and an explicitly normalized weight, accounting for milk separately."
+    },
+    {
+      "query": "\"food diary\" \"backup\" \"export\" \"barcode\" nutrition",
+      "market": "global workflow",
+      "returnedURLs": ["https://waist-line.com/", "https://calsheet.kirillin.tech/en/", "https://calority.app/"],
+      "finding": "Existing tools emphasize local data, export/import and barcode lookup. Those features are useful product patterns, not content to copy or proof of their users' search demand.",
+      "action": "Write GetMacros-specific backup and barcode guides against tested controls and actual privacy/data behavior."
+    },
+    {
+      "query": "protein cost per gram Canadian US dollars calculator",
+      "market": "CA / US",
+      "returnedURLs": ["https://tools.tnaado.ca/food/cost-per-gram-of-protein-calculator/", "https://calchive.org/tools/nutrition/protein-cost-calculator/"],
+      "finding": "Existing calculators turn package price and protein into unit value.",
+      "action": "Keep user-entered local prices and currency explicit; do not invent retailer prices, current inventory or exchange rates."
+    }
+  ],
+  "publicationRule": "Use these observations to refine real page utility. They do not justify mass-producing pages or claiming measured keyword demand."
+}

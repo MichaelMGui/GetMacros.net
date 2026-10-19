@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "getmacros-original-burger",
+      "path": "/images/meal-cutouts/burger.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "62c7518bc40ec5b8ca410bc823ca65f638abd6abbb19b08a84fe107879398d81"
+    },
+    {
+      "id": "getmacros-original-bowl",
+      "path": "/images/meal-cutouts/bowl.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "0c056ad252a3c407d083ddbec6d55aa7b28ce734191e136e5a9b18ff24de212b"
+    },
+    {
+      "id": "getmacros-original-sandwich",
+      "path": "/images/meal-cutouts/sandwich.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "79be0f4f4af7fe34390d81cdb980080c1f4211427e8b2177b192b616b18d9a4a"
+    },
+    {
+      "id": "getmacros-original-wrap",
+      "path": "/images/meal-cutouts/wrap.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "bc2e2390d731369617c0e2fe433c6bdc7f134b23f6ea600be37f1d7236032a2a"
+    },
+    {
+      "id": "getmacros-original-pizza",
+      "path": "/images/meal-cutouts/pizza.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "b772fd98ab3f29c6b6a06719c4e7c1f49d2d7269cc82de6e6065d0cfdc98afc8"
+    },
+    {
+      "id": "getmacros-original-salad",
+      "path": "/images/meal-cutouts/salad.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "541d4f0b55afaee88eda17af36531218fe48febda178a6412ee658a7805eff22"
+    },
+    {
+      "id": "getmacros-original-chicken",
+      "path": "/images/meal-cutouts/chicken.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "d2e8f9e8ef41b846133f0608ad220153238e87e3e0cbbb2b3899aad2776b976c"
+    },
+    {
+      "id": "getmacros-original-breakfast",
+      "path": "/images/meal-cutouts/breakfast.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "34d593ccb3cd33fa65389f917c64fbdd4342fd16b758350bb72578033124027e"
+    },
+    {
+      "id": "getmacros-original-fries",
+      "path": "/images/meal-cutouts/fries.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "9905d3e5f96edf580dc7e35aa19d025c96c93df2936fed517f2e02ee1304d26d"
+    },
+    {
+      "id": "getmacros-original-coffee",
+      "path": "/images/meal-cutouts/coffee.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "97fba5fc2e1fe795ef3c91b9cc6e7e4943535bac571999cd47fd9362430709c2"
+    },
+    {
+      "id": "getmacros-original-drink",
+      "path": "/images/meal-cutouts/drink.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "e8cc6c8503061ea78c46163e97f4dee86525a03f77a5fd76e47356549e55d6b4"
+    },
+    {
+      "id": "getmacros-original-dessert",
+      "path": "/images/meal-cutouts/dessert.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "cc5f959253df5c20e909349526d27a59ac18e44f43cc2e4320aa333b86733734"
+    },
+    {
+      "id": "getmacros-original-sauce",
+      "path": "/images/meal-cutouts/sauce.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "3d6bbd047ddd2242f05e214f607bb9ce972aa421b80f74e2e97343a8b7b221bc"
+    },
+    {
+      "id": "getmacros-original-sushi",
+      "path": "/images/meal-cutouts/sushi.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "bf053a870cd83888b7e7aa25bbf4208ba79f83415999ec4486b3dcfdc07e3c6a"
+    },
+    {
+      "id": "getmacros-original-side",
+      "path": "/images/meal-cutouts/side.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Created in tools/flagship_release/image_assets.cjs for GetMacros",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-18",
+      "sha256": "1bf7e3e5fb90fb0ce529b34e5428c0e9bd9b020c5d2091c0054900d63c41cb2b"
+    },
+    {
+      "id": "getmacros-original-grilled-sandwich",
+      "path": "/images/meal-cutouts/grilled-sandwich.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Original SVG source authored in this release: images/meal-cutouts/grilled-sandwich.svg",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-19",
+      "sha256": "f488968b6426c296093cc5890879089d9727fbd867f7eeb147bf5f7fc2a9989d"
+    },
+    {
+      "id": "getmacros-original-yogurt",
+      "path": "/images/meal-cutouts/yogurt.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Original SVG source authored in this release: images/meal-cutouts/yogurt.svg",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-19",
+      "sha256": "840dc27ce0fef634c2576aa90e944291af81b4ac6096d75b36e46e20e8549ab9"
+    }
+  ]
+}

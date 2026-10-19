@@ -1,0 +1,131 @@
+{
+  "checkedDate": "2026-10-19",
+  "scope": "Current primary guidance, local public-source audit, passive production HTML and documented public query observations. No private account or paid keyword data.",
+  "accountData": {
+    "searchConsole": "unavailable; no connector or export inspected",
+    "GA4": "unavailable; no connector or export inspected",
+    "Journey": "unavailable; no connector or export inspected",
+    "reportedVisitorIncrease": "not verified; not converted to sessions, search clicks or qualifying premium traffic",
+    "searchVolumes": null,
+    "rankings": null,
+    "keywordDifficulty": null,
+    "CTR": null,
+    "predictedTraffic": null
+  },
+  "primaryGuidance": [
+    {
+      "id": "google-starter",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "observation": "Useful static content, crawlable contextual links and clear page-specific titles/descriptions matter. Word count and meta keywords are not useful targets.",
+      "releaseDecision": "Preserve static article and restaurant HTML, stable URLs, topic links and distinctive metadata; do not manufacture keyword variants."
+    },
+    {
+      "id": "google-helpful",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "documentUpdated": "2026-10-05",
+      "observation": "Content should provide satisfying original work and trustworthy creation information; citations alone do not establish original value. Fabricated creator profiles are deceptive.",
+      "releaseDecision": "Require distinct intent, source-backed original comparisons or worked examples, honest bylines and review scope for each new article."
+    },
+    {
+      "id": "google-spam",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "observation": "Generating many low-value pages primarily to manipulate ranking is scaled content abuse regardless of the production method.",
+      "releaseDecision": "Separate searchable catalogue records from curated public articles; do not create indexed country-chain-nutrient permutations or count shell pages as articles."
+    },
+    {
+      "id": "google-titles",
+      "url": "https://developers.google.com/search/docs/appearance/title-link",
+      "observation": "Use concise descriptive page titles, a clear main heading and restrained branding; avoid keyword repetition and boilerplate.",
+      "releaseDecision": "Preserve existing unique title coverage, check all new titles against overlap and keep the market and real comparison explicit."
+    },
+    {
+      "id": "google-images",
+      "url": "https://developers.google.com/search/docs/appearance/google-images",
+      "observation": "Image elements with source URLs, responsive alternatives and relevant context support discovery. CSS-only images do not provide the same discoverability.",
+      "releaseDecision": "Use ordinary img/picture elements for meaningful food visuals, honest alt text and licensed artwork; avoid exact-product claims for category illustrations."
+    },
+    {
+      "id": "google-localized",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "observation": "Alternate pages need reciprocal fully qualified hreflang links and self-reference; annotations describe genuine localized counterparts.",
+      "releaseDecision": "Keep true market equivalents reciprocal and self-canonical; do not label an unrelated guide as an alternate or untranslated content as French."
+    },
+    {
+      "id": "google-js",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "observation": "Rendering can be deferred, and not every crawler runs JavaScript. Substantial initial HTML, stable canonical tags and real anchor links remain useful.",
+      "releaseDecision": "Retain prerendered guides and curated content while improving interactive finder and diary components."
+    },
+    {
+      "id": "google-facets",
+      "url": "https://developers.google.com/crawling/docs/faceted-navigation",
+      "observation": "Unbounded filter combinations can waste crawling. Canonical hints alone do not guarantee crawl prevention; fragments generally do not create crawlable variants.",
+      "releaseDecision": "Keep finite canonical listings, avoid sitemap entries for search/filter states and do not expose private food diary states as indexable pages."
+    }
+  ],
+  "monetizationSources": [
+    {
+      "url": "https://www.mediavine.com/application-requirements/",
+      "observation": "Journey specifies at least 1,000 Tier 1-market sessions in 30 days plus content and traffic standards. This is not the core Mediavine revenue requirement."
+    },
+    {
+      "url": "https://journeymv.zendesk.com/hc/en-us/articles/24633185741723-Journey-Minimum-Requirements",
+      "observation": "Connected GA4, engagement, original brand-safe maintained content and qualifying premium sessions are evaluated together; image permissions are examined."
+    },
+    {
+      "url": "https://journeymv.zendesk.com/hc/en-us/articles/23362046255003-Why-was-my-site-rejected",
+      "observation": "Traffic composition, poor site basics, template-heavy or excessive AI content and image concerns can affect a review. No local page count proves acceptance."
+    },
+    {
+      "url": "https://journeymv.zendesk.com/hc/en-us/articles/54637967339163-Journey-by-Mediavine-What-s-New",
+      "observation": "Grow is optional; the unified application connects Google Analytics."
+    },
+    {
+      "url": "https://www.mediavine.com/blog/two-years-of-journey-by-mediavine/",
+      "observation": "Current program changes replace older advice requiring Grow installation before applying."
+    },
+    {
+      "url": "https://journeymv.zendesk.com/hc/en-us/articles/23745987278363-Journey-From-Application-to-Launch",
+      "observation": "After approval the owner completes terms, site details, supplied script and ads.txt, identity verification and launch; none of those account actions happened in this audit."
+    },
+    {
+      "url": "https://journeymv.zendesk.com/hc/en-us/articles/24188199109403-How-To-Install-The-Journey-Script-on-Non-WordPress-Sites",
+      "observation": "Custom platforms can manually insert the site's actual supplied script in the shared head. No fabricated configuration is necessary."
+    },
+    {
+      "url": "https://journeymv.zendesk.com/hc/en-us/articles/34201725664923-Connecting-GA4-to-your-Grow-Publisher-Portal",
+      "observation": "An owner must connect the Google account and GA4 property matching the actual site. Timezone affects reporting comparisons."
+    },
+    {
+      "url": "https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/",
+      "observation": "Cloudflare Web Analytics uses a browser performance beacon; edge/security logs are separate evidence from that beacon or GA4 sessions."
+    },
+    {
+      "url": "https://developers.cloudflare.com/web-analytics/faq/",
+      "observation": "Cloudflare states Web Analytics currently does not log query strings. This does not eliminate ordinary requested-URL hosting logs or justify putting private inputs in links."
+    },
+    {
+      "url": "https://developers.google.com/analytics/devguides/collection/ga4/web",
+      "observation": "A real GA4 account, property, web data stream and site tag are needed before claiming data collection."
+    },
+    {
+      "url": "https://developers.google.com/analytics/devguides/collection/ga4/troubleshoot",
+      "observation": "Verify real collection requests and the account's diagnostics after authorized installation; a tag-shaped placeholder is not a measured setup."
+    }
+  ],
+  "evidence": {
+    "localBaseline": "technical-monetization-audit-baseline.json",
+    "localPages": "technical-page-audit-baseline.csv",
+    "productionHTTP": "live-measurement-audit.json",
+    "intentMap": "keyword-intent-map.csv",
+    "findings": "seo-policy-findings.md",
+    "journeyReadiness": "../monetization/journey-readiness.md",
+    "runtimeTests": "tools/ultimate_release/journey_runtime_test.cjs; 4 passing tests"
+  },
+  "limitations": [
+    "Public query results are observations, not Google Search Console metrics, measured demand or ranking positions.",
+    "Proposed routes in the intent map are not counted as published here; the integrated editorial manifest controls final publication status.",
+    "Passive public HTML does not establish all browser requests, account configuration or CDN dashboard activity.",
+    "No application, sitemap submission, identity verification, advertising activation or account change was performed by this research task."
+  ]
+}

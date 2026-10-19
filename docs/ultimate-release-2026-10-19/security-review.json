@@ -1,0 +1,15 @@
+{
+  "blockedPush": "1823c9424230b9ef7627be59761aaedf73754237",
+  "findings": [
+    {
+      "path": "docs/ultimate-release-2026-10-19/editorial/foodtools-sources/gs1_origin.html",
+      "aws_id_candidates": 2
+    }
+  ],
+  "excludedCapture": {
+    "path": "docs/ultimate-release-2026-10-19/editorial/foodtools-sources/gs1_origin.html",
+    "sha256": "ed3cbf986d64e015905d1741f36985295ceea2ff8d6e0be6e1225ba9f8ae0abe",
+    "reason": "External documentation capture contains credential-like strings. Unrelated to the nutrition calculations; excluded from publication. Credentials were not used or tested."
+  },
+  "pushProtection": "Kept enabled; no unblock action"
+}

@@ -1,0 +1,1520 @@
+{
+  "research_date": "2026-10-19",
+  "new_article_count": 14,
+  "publication_status": "Source-checked authored content; publication and browser verification belong to the release integrator.",
+  "validation": {
+    "date": "2026-10-19",
+    "result": "passed",
+    "checks_passed": 170,
+    "checks": [
+      "fage-plain-greek-yogurt-0-2-5-percent.html: substantive authored body",
+      "fage-plain-greek-yogurt-0-2-5-percent.html: direct answer and evidence",
+      "fage-plain-greek-yogurt-0-2-5-percent.html: truthful publication status",
+      "fage-plain-greek-yogurt-0-2-5-percent.html: original visual",
+      "fage-plain-greek-yogurt-0-2-5-percent.html: link food-library.html",
+      "fage-plain-greek-yogurt-0-2-5-percent.html: link food-diary.html",
+      "fage-plain-greek-yogurt-0-2-5-percent.html: link breakfast-yogurt-topping-layer.html",
+      "daisy-cottage-cheese-2-4-percent-portions.html: substantive authored body",
+      "daisy-cottage-cheese-2-4-percent-portions.html: direct answer and evidence",
+      "daisy-cottage-cheese-2-4-percent-portions.html: truthful publication status",
+      "daisy-cottage-cheese-2-4-percent-portions.html: original visual",
+      "daisy-cottage-cheese-2-4-percent-portions.html: link food-library.html",
+      "daisy-cottage-cheese-2-4-percent-portions.html: link food-diary.html",
+      "daisy-cottage-cheese-2-4-percent-portions.html: link compare-foods.html",
+      "peanut-butter-powder-vs-creamy-spread.html: substantive authored body",
+      "peanut-butter-powder-vs-creamy-spread.html: direct answer and evidence",
+      "peanut-butter-powder-vs-creamy-spread.html: truthful publication status",
+      "peanut-butter-powder-vs-creamy-spread.html: original visual",
+      "peanut-butter-powder-vs-creamy-spread.html: link food-library.html",
+      "peanut-butter-powder-vs-creamy-spread.html: link food-library.html",
+      "peanut-butter-powder-vs-creamy-spread.html: link recipe-macro-scaler.html",
+      "peanut-butter-powder-vs-creamy-spread.html: link food-diary.html",
+      "silk-unsweet-soy-vs-almondmilk.html: substantive authored body",
+      "silk-unsweet-soy-vs-almondmilk.html: direct answer and evidence",
+      "silk-unsweet-soy-vs-almondmilk.html: truthful publication status",
+      "silk-unsweet-soy-vs-almondmilk.html: original visual",
+      "silk-unsweet-soy-vs-almondmilk.html: link food-library.html",
+      "silk-unsweet-soy-vs-almondmilk.html: link food-library.html",
+      "silk-unsweet-soy-vs-almondmilk.html: link compare-foods.html",
+      "silk-unsweet-soy-vs-almondmilk.html: link food-diary.html",
+      "original-vs-honey-nut-cheerios-labels.html: substantive authored body",
+      "original-vs-honey-nut-cheerios-labels.html: direct answer and evidence",
+      "original-vs-honey-nut-cheerios-labels.html: truthful publication status",
+      "original-vs-honey-nut-cheerios-labels.html: original visual",
+      "original-vs-honey-nut-cheerios-labels.html: link food-library.html",
+      "original-vs-honey-nut-cheerios-labels.html: link food-library.html",
+      "original-vs-honey-nut-cheerios-labels.html: link silk-unsweet-soy-vs-almondmilk.html",
+      "original-vs-honey-nut-cheerios-labels.html: link food-diary.html",
+      "barilla-australia-protein-plus-vs-spaghetti.html: substantive authored body",
+      "barilla-australia-protein-plus-vs-spaghetti.html: direct answer and evidence",
+      "barilla-australia-protein-plus-vs-spaghetti.html: truthful publication status",
+      "barilla-australia-protein-plus-vs-spaghetti.html: original visual",
+      "barilla-australia-protein-plus-vs-spaghetti.html: link food-library.html",
+      "barilla-australia-protein-plus-vs-spaghetti.html: link recipe-macro-scaler.html",
+      "barilla-australia-protein-plus-vs-spaghetti.html: link raw-vs-cooked-food-weight.html",
+      "barilla-australia-protein-plus-vs-spaghetti.html: link food-diary.html",
+      "house-foods-firm-vs-super-firm-tofu.html: substantive authored body",
+      "house-foods-firm-vs-super-firm-tofu.html: direct answer and evidence",
+      "house-foods-firm-vs-super-firm-tofu.html: truthful publication status",
+      "house-foods-firm-vs-super-firm-tofu.html: original visual",
+      "house-foods-firm-vs-super-firm-tofu.html: link food-library.html",
+      "house-foods-firm-vs-super-firm-tofu.html: link food-diary.html",
+      "house-foods-firm-vs-super-firm-tofu.html: link recipe-sauce-made-vs-sauce-used.html",
+      "bushs-black-beans-vs-chickpeas.html: substantive authored body",
+      "bushs-black-beans-vs-chickpeas.html: direct answer and evidence",
+      "bushs-black-beans-vs-chickpeas.html: truthful publication status",
+      "bushs-black-beans-vs-chickpeas.html: original visual",
+      "bushs-black-beans-vs-chickpeas.html: link food-library.html",
+      "bushs-black-beans-vs-chickpeas.html: link food-library.html",
+      "bushs-black-beans-vs-chickpeas.html: link drained-weight-nutrition-label.html",
+      "bushs-black-beans-vs-chickpeas.html: link food-diary.html",
+      "starkist-light-vs-albacore-tuna-pouches.html: substantive authored body",
+      "starkist-light-vs-albacore-tuna-pouches.html: direct answer and evidence",
+      "starkist-light-vs-albacore-tuna-pouches.html: truthful publication status",
+      "starkist-light-vs-albacore-tuna-pouches.html: original visual",
+      "starkist-light-vs-albacore-tuna-pouches.html: link food-library.html",
+      "starkist-light-vs-albacore-tuna-pouches.html: link food-library.html",
+      "starkist-light-vs-albacore-tuna-pouches.html: link protein-value-calculator.html",
+      "starkist-light-vs-albacore-tuna-pouches.html: link food-diary.html",
+      "hersheys-special-dark-bar-vs-kisses.html: substantive authored body",
+      "hersheys-special-dark-bar-vs-kisses.html: direct answer and evidence",
+      "hersheys-special-dark-bar-vs-kisses.html: truthful publication status",
+      "hersheys-special-dark-bar-vs-kisses.html: original visual",
+      "hersheys-special-dark-bar-vs-kisses.html: link food-library.html",
+      "hersheys-special-dark-bar-vs-kisses.html: link nutrition-label-comparison-tool.html",
+      "hersheys-special-dark-bar-vs-kisses.html: link food-diary.html",
+      "chocolate-protein-shakes-country-portions.html: substantive authored body",
+      "chocolate-protein-shakes-country-portions.html: direct answer and evidence",
+      "chocolate-protein-shakes-country-portions.html: truthful publication status",
+      "chocolate-protein-shakes-country-portions.html: original visual",
+      "chocolate-protein-shakes-country-portions.html: link food-library.html",
+      "chocolate-protein-shakes-country-portions.html: link nutrition-label-comparison-tool.html",
+      "chocolate-protein-shakes-country-portions.html: link protein-value-calculator.html",
+      "chocolate-protein-shakes-country-portions.html: link food-diary.html",
+      "quaker-old-fashioned-vs-quick-oats.html: substantive authored body",
+      "quaker-old-fashioned-vs-quick-oats.html: direct answer and evidence",
+      "quaker-old-fashioned-vs-quick-oats.html: truthful publication status",
+      "quaker-old-fashioned-vs-quick-oats.html: original visual",
+      "quaker-old-fashioned-vs-quick-oats.html: link food-library.html",
+      "quaker-old-fashioned-vs-quick-oats.html: link food-diary.html",
+      "quaker-old-fashioned-vs-quick-oats.html: link recipe-macro-scaler.html",
+      "quaker-old-fashioned-vs-quick-oats.html: link fage-plain-greek-yogurt-0-2-5-percent.html",
+      "back-up-and-move-food-diary.html: substantive authored body",
+      "back-up-and-move-food-diary.html: direct answer and evidence",
+      "back-up-and-move-food-diary.html: truthful publication status",
+      "back-up-and-move-food-diary.html: original visual",
+      "back-up-and-move-food-diary.html: link food-diary.html",
+      "back-up-and-move-food-diary.html: link privacy.html",
+      "back-up-and-move-food-diary.html: link food-shelf.html",
+      "back-up-and-move-food-diary.html: link contact.html",
+      "barcode-food-search-label-check.html: substantive authored body",
+      "barcode-food-search-label-check.html: direct answer and evidence",
+      "barcode-food-search-label-check.html: truthful publication status",
+      "barcode-food-search-label-check.html: original visual",
+      "barcode-food-search-label-check.html: link food-library.html",
+      "barcode-food-search-label-check.html: link food-diary.html",
+      "barcode-food-search-label-check.html: link choose-fooddata-central-entry.html",
+      "barcode-food-search-label-check.html: link corrections.html",
+      "FAGE 0% 200 g kcal",
+      "FAGE 0% 200 g protein",
+      "FAGE 2% 200 g protein",
+      "FAGE 5% 200 g kcal",
+      "Jif 16 g kcal",
+      "Jif 16 g protein",
+      "Silk soy 120 mL kcal",
+      "Silk soy 120 mL protein",
+      "Barilla AU Protein+ 80 g kcal",
+      "Barilla AU Classic 80 g protein",
+      "Barilla AU protein difference",
+      "House Foods Firm 170 g protein",
+      "House Foods Super Firm 170 g protein",
+      "Bush black beans 195 g sodium",
+      "Bush chickpeas 195 g sodium",
+      "StarKist two small light pouches protein",
+      "Hershey bar 32 g kcal",
+      "Hershey bar 32 g sugar",
+      "Premier CA 200 mL kcal",
+      "Premier CA 200 mL protein",
+      "Core Power CA 200 mL kcal",
+      "Quaker 60 g kcal",
+      "Quaker 60 g fibre",
+      "Quaker 30 g protein",
+      "Captured manufacturer panel fage0: 3/4 Cup (170g)",
+      "Captured manufacturer panel fage0: Calories 90 Total Fat 0g",
+      "Captured manufacturer panel fage0: Protein 18g",
+      "Captured manufacturer panel fage2: 3/4 Cup (170g)",
+      "Captured manufacturer panel fage2: Calories 120 Total Fat 3.5g",
+      "Captured manufacturer panel fage2: Protein 17g",
+      "Captured manufacturer panel fage5: 3/4 Cup (170g)",
+      "Captured manufacturer panel fage5: Calories 160 Total Fat 9g",
+      "Captured manufacturer panel fage5: Protein 15g",
+      "Captured manufacturer panel jif: 2 Tbsp (33g)",
+      "Captured manufacturer panel jif: Calories 190",
+      "Captured manufacturer panel jif: Protein 7g",
+      "Captured manufacturer panel silk_soy: 1 Cup (240ml)",
+      "Captured manufacturer panel silk_soy: Calories 90",
+      "Captured manufacturer panel silk_soy: Protein: 8g",
+      "Captured manufacturer panel silk_almond: 1 Cup (240ml)",
+      "Captured manufacturer panel silk_almond: Calories 30",
+      "Captured manufacturer panel silk_almond: Protein: 1g",
+      "Captured manufacturer panel quaker_old_label_nutrition: 1/2 Cup Dry (40g)",
+      "Captured manufacturer panel quaker_old_label_nutrition: Calories 150",
+      "Captured manufacturer panel quaker_old_label_nutrition: Protein 5 g",
+      "Captured manufacturer panel quaker_quick_label_nutrition: 1/2 Cup Dry (40g)",
+      "Captured manufacturer panel quaker_quick_label_nutrition: Calories 150",
+      "Captured manufacturer panel quaker_quick_label_nutrition: Protein 5 g",
+      "Captured manufacturer panel hersheys_bar: 1 bar (41g)",
+      "Captured manufacturer panel hersheys_bar: Calories 190",
+      "Captured manufacturer panel hersheys_bar: Protein 2g",
+      "Captured manufacturer panel hersheys_kisses: 7 pieces (32g)",
+      "Captured manufacturer panel hersheys_kisses: Calories 150",
+      "Captured manufacturer panel hersheys_kisses: Protein 2g",
+      "Captured manufacturer panel premier_ca: Per 1 shake (325 ml)",
+      "Captured manufacturer panel premier_ca: Calories 160",
+      "Captured manufacturer panel premier_ca: Protein 30 g",
+      "Captured manufacturer panel premier_ca: Sodium 220 mg",
+      "Captured Bush panel: beans_black",
+      "Captured Bush panel: beans_garbanzo",
+      "Captured House Foods firm 85 g / 70 kcal / 7 g protein",
+      "Captured House Foods super firm 85 g / 70 kcal / 9 g protein"
+    ],
+    "arithmetic_cases": 24,
+    "new_authored_articles": 14,
+    "new_database_imports": 0,
+    "new_exact_meal_photographs": 0,
+    "word_counts": {
+      "fage-plain-greek-yogurt-0-2-5-percent.html": 471,
+      "daisy-cottage-cheese-2-4-percent-portions.html": 478,
+      "peanut-butter-powder-vs-creamy-spread.html": 462,
+      "silk-unsweet-soy-vs-almondmilk.html": 439,
+      "original-vs-honey-nut-cheerios-labels.html": 438,
+      "barilla-australia-protein-plus-vs-spaghetti.html": 480,
+      "house-foods-firm-vs-super-firm-tofu.html": 500,
+      "bushs-black-beans-vs-chickpeas.html": 485,
+      "starkist-light-vs-albacore-tuna-pouches.html": 475,
+      "hersheys-special-dark-bar-vs-kisses.html": 490,
+      "chocolate-protein-shakes-country-portions.html": 547,
+      "quaker-old-fashioned-vs-quick-oats.html": 516,
+      "back-up-and-move-food-diary.html": 589,
+      "barcode-food-search-label-check.html": 624
+    },
+    "source_evidence": [
+      {
+        "file": "barilla_protein_au.html",
+        "bytes": 4545,
+        "sha256": "fc2b6bd93fba94f1106701f10c48020110700e1561b5dc8c0ecd5ff99303fe2e",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "beans_black.html",
+        "bytes": 196981,
+        "sha256": "e6805e32b2ce6f801e3d0c40e3c5a49450d0d6d50a2348de910d37c926b9f715",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "beans_garbanzo.html",
+        "bytes": 197410,
+        "sha256": "cdc0e85c13a142e2bfbe0feee2a11fb3c68e42623dcbdbbb2f406c2b9ce71071",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "cheerios_honey.html",
+        "bytes": 108248,
+        "sha256": "a45ad1203200260fb1c8976f45d7d4cb723a714163a96836cc9cd49a4a19ff75",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "cheerios_original.html",
+        "bytes": 104899,
+        "sha256": "69a8f2bb3084c03f75e11a8d8114904fcd8c1018c18c83e42d4d696b1f09a0d0",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "corepower_ca.html",
+        "bytes": 171963,
+        "sha256": "b93c6996a676e9fa683d0431e20c9fa93a2255bedcfcd6bbeff6a19986d82f27",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "daisy.html",
+        "bytes": 648763,
+        "sha256": "564a3577e5252bd75b503ef2c7bfd27d33aedf6584fcdf20592cdc5da18bbe53",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "daisy2.webp",
+        "bytes": 148368,
+        "sha256": "01e31f805818056e99ca4244bad1cb5157e68093066b61eb8078142ca199dce8",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "daisy4.webp",
+        "bytes": 145106,
+        "sha256": "a930b5123c01ac3cc0ad57baf90de394d985fe49fa974a6dcabdff254699cea2",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "fage0.html",
+        "bytes": 139184,
+        "sha256": "93baf91b06794dc8a9788e902c3edd8400a3f166bd819400bf9f9366120c65c0",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "fage2.html",
+        "bytes": 134421,
+        "sha256": "c6a4c4107316f1a453528ea730ba6215a5cbf57839d054d9d48495954a9c7af3",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "fage5.html",
+        "bytes": 135044,
+        "sha256": "5269afcaee7b4aeefa4542fd5aa6cfa1c33d037ece88bf53a08e8e8dc37ce429",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "fda_fish.html",
+        "bytes": 77466,
+        "sha256": "1d4e3a0771ff07599ce81c6b87a3d1303ea241bbeb2eb1864d0eecbcbe65ed90",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "fda_label.html",
+        "bytes": 57580,
+        "sha256": "f61ed71c63d211d6d510423ab59c181d3f4abb14bbd777c4f81b7c2dc31190b5",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "fdc_documentation.html",
+        "bytes": 117771,
+        "sha256": "6450e7e6a442033c1ef44bf2899f36fb73bd4416b788083960b50baad4cf7d4f",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "gs1_content.html",
+        "bytes": 1484,
+        "sha256": "ae249fa4e8f8ff4512ad454436a35f8cb89afede70b0ac7f1a1d30eeeb5c873b",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "hersheys_bar.html",
+        "bytes": 115949,
+        "sha256": "e4f2ad8e6832fcfbbf62e80b50e2ec61b0ec28b60080988d7e5536d40aa05f9f",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "hersheys_kisses.html",
+        "bytes": 122096,
+        "sha256": "086d9aca274f54e4db8c2b79cd62d1627fa4426b7ca5ba4dc87a7ecd80fd0126",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "jif.html",
+        "bytes": 83653,
+        "sha256": "c10583d8d9edcf8f77c1731aa69c939531e967d5ca17e3d2f9ea413554baaf41",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "mdn_storage.html",
+        "bytes": 164716,
+        "sha256": "3158a9a2c980be66be8ea91493380a332f1394ecc8004bf327efa096eafd2825",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "pbfit.html",
+        "bytes": 104011,
+        "sha256": "319ca6496eec9e3370853d202a556b76d6d77a7369ec0989686234af1cda27fb",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "premier.html",
+        "bytes": 234235,
+        "sha256": "9598039171448cb34ca41fde4157f357d0a81aa4cc0220712f6ee8019c4dafa6",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "premier_ca.html",
+        "bytes": 136627,
+        "sha256": "d550472991eb75b6fd78d9a779ec13d6594c425f05ad2c6a5ee5fe174404a4be",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "quaker_old.html",
+        "bytes": 104075,
+        "sha256": "794f1e6f9529898569be0651c1bf6b31adda8270128ce1414f7781f736a4cf75",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "quaker_old_label.html",
+        "bytes": 93290,
+        "sha256": "4099a8acc20d291cc371649913eca6268749585f7d32a68b42aa7658f4e21dd1",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "quaker_old_label_nutrition.html",
+        "bytes": 18381,
+        "sha256": "14bbebf3c472a17fce02e7740a5d42553600dd64b0dfac1d022946e2dcad2fd3",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "quaker_quick.html",
+        "bytes": 103830,
+        "sha256": "bc8a56f796eb33bd91639b25e22c04219c13e14f937fecbcddabcf8769115eef",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "quaker_quick_label.html",
+        "bytes": 93296,
+        "sha256": "b024d8c3c0662682cd3196bd785e03fb42162437e2805b98d2059a1e1b68d5a4",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "quaker_quick_label_nutrition.html",
+        "bytes": 18381,
+        "sha256": "292b46f344b892a1e9e21fcc3f47a32cddd7c275042c568bc3b91d0d0989d029",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "silk_almond.html",
+        "bytes": 69077,
+        "sha256": "4fd4f7bef325d3cd160d71434709c9189366707704bbe6ef1b31520cc7529d9f",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "silk_soy.html",
+        "bytes": 63382,
+        "sha256": "da9a151966991964ea234d2379a4fbbeb27204493f07a2876ea6bc5407dddac5",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "starkist_light.html",
+        "bytes": 158387,
+        "sha256": "78e7e4be7e95e00f6be9d73b9ae018996d2e23f195bd17bfce6c27c172d4fdbe",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "starkist_white.html",
+        "bytes": 151193,
+        "sha256": "ec26968a18f2ceb894ff2467586200bb97c62d87b2eea578691a200497bca4c1",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "tofu_firm.html",
+        "bytes": 1157863,
+        "sha256": "bd9c5b42fb38c671889cd85f051b8cb6e24d677528285cbe2ad0263709da0d59",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      },
+      {
+        "file": "tofu_super.html",
+        "bytes": 1158368,
+        "sha256": "7bae760db4dd75c3a2036d25b616f24318aa50c4df81db880357337a4c03758f",
+        "public_artwork_reuse_permitted": false,
+        "purpose": "Source-review evidence only; source inspection is not a reusable image license."
+      }
+    ],
+    "source_access_notes": [
+      "The GS1 origin documentation capture is excluded from versioned evidence because it contains credential-like third-party strings; no nutrition-panel assertion depends on it. The public source link is retained.",
+      "Barilla AU and GS1 declared-net-content sources were inspected using the web tool; separate raw fetches returned 403 and are retained as failed-fetch evidence, not source-panel evidence.",
+      "Lindt 85/90 candidate was replaced: serving definition and full current access were insufficient. No Lindt comparison is counted.",
+      "Daisy package images were visually inspected and retained as evidence only. Public articles use original tables.",
+      "Silk soy marketing/panel calorie conflict is disclosed. Cheerios missing online gram-serving detail is disclosed; no gram weight borrowed.",
+      "Hershey fibre values present in cached search content but absent from the current direct page were excluded."
+    ],
+    "unverified": [
+      "Integrated rendered layouts, final UI labels, browser journeys, deployment and live publication are the parent release integration responsibilities."
+    ]
+  },
+  "articles": [
+    {
+      "slug": "fage-plain-greek-yogurt-0-2-5-percent.html",
+      "title": "FAGE 0%, 2% or 5% Greek yogurt: compare the same portion",
+      "description": "Compare exact U.S. FAGE Total plain-yogurt labels at 170 g, then scale a 200 g bowl without mixing pot sizes or toppings.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "How do FAGE Total 0%, 2% and 5% differ in the same bowl?",
+      "answer": "At 170 g, the U.S. plain labels list 90, 120 and 160 kcal respectively, with 18, 17 and 15 g protein.",
+      "body_html": "<p class=\"article-lead\">For the same 170 g portion, FAGE Total 0% lists 90 kcal and 18 g protein; Total 2% lists 120 kcal and 17 g; Total 5% lists 160 kcal and 15 g. The milk-fat percentage changes the comparison, but it is not a percentage of calories or protein.</p>\n<h2>Compare the same bowl, not different pot sizes</h2><p>This table uses the U.S. plain-yogurt tub labels. Each column describes 170 g of yogurt, without fruit, honey, granola or another topping. A single-serve 150 g pot has its own panel; its smaller numbers do not establish a different recipe.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"FAGE Total plain Greek yogurt · U.S. labels · 170 g each\"><table><caption>FAGE Total plain Greek yogurt · U.S. labels · 170 g each</caption><thead><tr><th scope=\"col\">Yogurt</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Saturated fat (g)</th></tr></thead><tbody><tr><th scope=\"row\">Total 0%</th><td>90</td><td>18</td><td>5</td><td>0</td><td>0</td></tr><tr><th scope=\"row\">Total 2%</th><td>120</td><td>17</td><td>5</td><td>3.5</td><td>2.5</td></tr><tr><th scope=\"row\">Total 5%</th><td>160</td><td>15</td><td>5</td><td>9</td><td>6</td></tr></tbody></table></div>\n<h2>What changes when you switch?</h2><p>Moving from 5% to 0% in this fixed portion changes the label total by 70 kcal, 9 g fat and 3 g protein. Moving from 2% to 0% changes it by 30 kcal, 3.5 g fat and 1 g protein. These are comparisons between the named products, not a prediction that removing a teaspoon of cream will reproduce either yogurt.</p><p>All three panels list 5 g total sugars and 0 g added sugars. Plain does not mean sugar-free: the sugar already present in the yogurt is included in total sugars. The panels also each list 200 mg calcium. A higher milk-fat percentage does not make every nutrient higher.</p>\n<h2>If you scoop 200 g</h2><p>Divide 200 by the label’s 170 g, then multiply each label value by that ratio. The calculated results are about 106 kcal and 21.2 g protein for 0%; 141 kcal and 20 g protein for 2%; and 188 kcal and 17.6 g protein for 5%. These are estimates scaled from rounded label values, not newly measured nutrition facts.</p><p>For logging, select the correct milk-fat version first, then enter the amount. Do not search only “Greek yogurt” and assume that a result with the right brand has the right formulation. Check plain versus split-cup, the percentage, market and source serving. Your own label takes precedence if its figures differ.</p>\n<h2>Build breakfast from what you actually add</h2><p>A bowl’s final total depends on the yogurt and its additions. Weigh the yogurt separately from the topping or add each ingredient while noting the scale change. Log nuts, cereal or syrup as their own foods rather than using the plain-yogurt figure for the finished bowl.</p><p>The 0% product offers the most listed protein in the fixed portion here. That is useful if protein is your immediate comparison; it does not settle taste, texture, price, fullness or what fits the rest of your meals. No current shelf price, retailer stock or health advantage is established by this table.</p>",
+      "sources": [
+        {
+          "title": "FAGE USA · Total 0%",
+          "url": "https://usa.fage/products/yogurt/fage-total-0",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FAGE USA · Total 2%",
+          "url": "https://usa.fage/products/yogurt/fage-total-2",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FAGE USA · Total 5%",
+          "url": "https://usa.fage/products/yogurt/fage-total-5",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FDA · serving size is not a recommended portion",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find the matching yogurt label",
+          "href": "/food-library.html?q=FAGE+Total+plain&type=branded&market=US"
+        },
+        {
+          "label": "Log your bowl",
+          "href": "/food-diary.html"
+        },
+        {
+          "label": "Separate yogurt and toppings",
+          "href": "/breakfast-yogurt-topping-layer.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. labels only; formulations and package panels can change. Scaled values retain label rounding."
+      },
+      "search_observations": [
+        {
+          "query": "FAGE 0 2 5 percent Greek yogurt protein calories 170g",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Public results include the manufacturer’s separate fat-level panels and retailer pot sizes; there is a real portion-identity distinction, with no measured demand claim.",
+          "source_url": "https://usa.fage/products/yogurt/fage-total-0",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "The existing yogurt-topping article explains an ingredient boundary, and the high-protein-food list is broad. Neither compares these three exact products.",
+        "distinct_value": "How do FAGE Total 0%, 2% and 5% differ in the same bowl?"
+      }
+    },
+    {
+      "slug": "daisy-cottage-cheese-2-4-percent-portions.html",
+      "title": "Daisy 2% vs 4% cottage cheese: tubs and single portions",
+      "description": "Compare Daisy cottage-cheese fat levels at 113 g and 150 g, including protein, calories, sodium and the package-size distinction.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Does Daisy 2% or 4% cottage cheese change protein, or just the portion?",
+      "answer": "Both U.S. tubs list 13 g protein per 113 g; the fat levels and 150 g single-container servings need separate comparisons.",
+      "body_html": "<p class=\"article-lead\">Daisy’s U.S. 2% and 4% cottage-cheese tubs both list 13 g protein per 113 g. The 2% tub lists 90 kcal and 2.5 g fat; the 4% tub lists 110 kcal and 5 g fat. A 150 g single-serve container is a larger portion, with a separate panel.</p>\n<h2>Two fat levels, two package formats</h2><p>The manufacturer supplies back-of-pack images for both products. The tub serving is half a cup, 113 g. The individual container is 150 g. Read across one row before comparing: the front percentage alone does not tell you which serving was used.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Daisy plain cottage cheese · U.S. manufacturer packaging\"><table><caption>Daisy plain cottage cheese · U.S. manufacturer packaging</caption><thead><tr><th scope=\"col\">Product and portion</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Sodium (mg)</th></tr></thead><tbody><tr><th scope=\"row\">2% tub · 113 g</th><td>90</td><td>13</td><td>5</td><td>2.5</td><td>330</td></tr><tr><th scope=\"row\">4% tub · 113 g</th><td>110</td><td>13</td><td>5</td><td>5</td><td>370</td></tr><tr><th scope=\"row\">2% single container · 150 g</th><td>120</td><td>17</td><td>6</td><td>3</td><td>440</td></tr><tr><th scope=\"row\">4% single container · 150 g</th><td>150</td><td>17</td><td>7</td><td>6</td><td>500</td></tr></tbody></table></div>\n<h2>Lower fat does not mean more protein here</h2><p>At the fixed 113 g tub serving, switching from 4% to 2% changes the listed total by 20 kcal and 2.5 g fat. Protein stays at 13 g. The lower-fat tub also lists 40 mg less sodium. Those are separate label comparisons; the percentage on the lid is the milk-fat level, not the fraction of your daily fat allowance.</p><p>There is another choice in the same portion: saturated fat is 1.5 g in the 2% tub and 3 g in the 4% tub. Neither this difference nor the calorie total makes either food a complete description of a meal. Toast, crackers, fruit and other additions still have their own portions.</p>\n<h2>Why does the small container show more?</h2><p>A 150 g container holds about 33% more food than the 113 g label serving. Its higher protein total is therefore not evidence that it is a special high-protein version. Compare the two 150 g containers with each other, or normalize both foods to the amount you intend to eat.</p><p>Use the actual container’s label when available. Multiplying the tub’s rounded values by 150 ÷ 113 produces a useful estimate, but it need not reproduce every rounded value on a separately declared 150 g package. Do not “correct” a manufacturer’s package panel solely because the arithmetic differs slightly.</p>\n<h2>Log a snack without guessing its size</h2><ol><li>Choose plain Daisy cottage cheese with the correct fat percentage and market.</li><li>For a tub, weigh the amount you spoon out or use its supported half-cup serving. For an individual pot, choose that package’s full-container portion.</li><li>Add fruit, preserves, seeds or crackers separately. The plain-cottage-cheese panel does not include them.</li></ol><p>The source images also show that both products contain milk. Ingredient and allergen decisions require the current package; a protein comparison is not an allergy check. This guide compares nutrition and serving formats, not flavor, retail availability or personal digestive tolerance.</p>",
+      "sources": [
+        {
+          "title": "Daisy · cottage-cheese products and label links",
+          "url": "https://www.daisybrand.com/cottage-cheese/",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "Daisy · 2% back-of-pack image",
+          "url": "https://www.daisybrand.com/wp-content/smush-webp/2026/01/cc-product-group-2p-v3-back.jpg.webp",
+          "checked_on": "2026-10-19",
+          "notes": "Official packaging image downloaded and visually read; retained as private source evidence, not reused publicly."
+        },
+        {
+          "title": "Daisy · 4% back-of-pack image",
+          "url": "https://www.daisybrand.com/wp-content/smush-webp/2026/01/cc-product-group-4p-v3-back.jpg.webp",
+          "checked_on": "2026-10-19",
+          "notes": "Official packaging image downloaded and visually read; retained as private source evidence, not reused publicly."
+        },
+        {
+          "title": "Daisy · what 2% and 4% mean",
+          "url": "https://www.daisybrand.com/faqs/",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FDA · serving size is not a recommended portion",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Search the exact cottage cheese",
+          "href": "/food-library.html?q=Daisy+cottage+cheese&type=branded&market=US"
+        },
+        {
+          "label": "Log the portion",
+          "href": "/food-diary.html"
+        },
+        {
+          "label": "Compare food portions",
+          "href": "/compare-foods.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. plain products only; no fruit-compote product is included. Packaging can change."
+      },
+      "search_observations": [
+        {
+          "query": "Daisy cottage cheese 2 percent 4 percent protein serving size",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official results lead to multiple package formats; full manufacturer packaging was inspected rather than borrowing a retailer’s portion.",
+          "source_url": "https://www.daisybrand.com/cottage-cheese/",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "No existing cottage-cheese comparison was found. The existing serving-size article is general and does not compare these package panels.",
+        "distinct_value": "Does Daisy 2% or 4% cottage cheese change protein, or just the portion?"
+      }
+    },
+    {
+      "slug": "peanut-butter-powder-vs-creamy-spread.html",
+      "title": "Peanut butter powder vs creamy spread: compare the grams",
+      "description": "PBfit Classic and Jif Creamy have different tablespoon weights. Compare exact U.S. labels, an equal-weight calculation and prepared portions.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "How do peanut butter powder and creamy spread compare once the serving weights are clear?",
+      "answer": "PBfit Classic uses 16 g powder per serving; Jif Creamy uses 33 g spread. Equal spoon counts are not equal weights.",
+      "body_html": "<p class=\"article-lead\">PBfit Classic powder lists 60 kcal and 8 g protein for 16 g. Jif Creamy lists 190 kcal and 7 g protein for 33 g. Those are different amounts of two different foods, so “two tablespoons” is not an equal-weight comparison.</p>\n<h2>Start with the dry powder and the ready-to-eat spread</h2><p>PBfit’s panel applies to the powder before water is added. Jif’s panel applies to the spread in the jar. Both use a two-tablespoon serving, but the stated gram weights are 16 g and 33 g.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"U.S. labelled servings · powder is measured before adding water\"><table><caption>U.S. labelled servings · powder is measured before adding water</caption><thead><tr><th scope=\"col\">Food and source portion</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Total sugars (g)</th></tr></thead><tbody><tr><th scope=\"row\">PBfit Classic · 16 g powder</th><td>60</td><td>8</td><td>6</td><td>2</td><td>3</td></tr><tr><th scope=\"row\">Jif Creamy · 33 g spread</th><td>190</td><td>7</td><td>8</td><td>16</td><td>3</td></tr></tbody></table></div>\n<h2>Compare an equal weight as a second question</h2><p>For 16 g of Jif, calculate 16 ÷ 33 times its label values: about 92 kcal, 3.4 g protein, 3.9 g carbohydrate and 7.8 g fat. At the same dry weight, the powder still has a different profile; the original headline comparison is not explained only by its smaller serving.</p><p>This does not establish that 16 g of powder is a direct replacement for 16 g of spread in a recipe. Water changes the prepared weight and consistency. PBfit instructs mixing two tablespoons of powder with one and a half tablespoons of water. That does not publish a universal finished gram weight or tell us how much ends up on your toast.</p>\n<h2>Log what you put in the bowl</h2><p>If you stir 16 g powder into yogurt, record the powder and the yogurt separately. Do not log a ready-to-eat peanut-butter entry for the same weight of powder. If you prepare a larger batch with water, record its powder amount once, weigh the finished batch if you want gram portions, then allocate the portion used.</p><p>Adding milk, oil, honey or another ingredient changes the recipe. Those nutrients are not covered by the powder’s water-mixing instructions. Do not subtract the water’s weight from an already correct dry-powder entry or add the whole batch again after logging its ingredients.</p>\n<h2>Read sugar and ingredients separately from protein</h2><p>Each named source serving lists 3 g total sugars and 2 g added sugars. The equal headline sugar totals do not mean equal sugar density, because the servings weigh different amounts. PBfit lists roasted peanuts, coconut sugar and salt; Jif’s creamy spread has a different ingredient list. Neither a short list nor a high protein number is an allergy guarantee.</p><p>Both products contain peanut ingredients. Choose based on the actual recipe, portion and preferences that matter to you. The table does not establish a taste ranking, a current price advantage or a recommendation to replace all dietary fat with powder.</p>",
+      "sources": [
+        {
+          "title": "PBfit · Classic nutrition panel",
+          "url": "https://www.pbfit.com/products/pbfit-classic",
+          "checked_on": "2026-10-19",
+          "notes": "Complete nutrition-panel data embedded in the manufacturer’s page were read, including the 16 g dry serving and water instructions."
+        },
+        {
+          "title": "Jif · Creamy Peanut Butter",
+          "url": "https://www.jif.com/products/creamy/creamy-peanut-butter",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FDA · understanding the Nutrition Facts label",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find PBfit Classic",
+          "href": "/food-library.html?q=PBfit+Classic&type=branded&market=US"
+        },
+        {
+          "label": "Find Jif Creamy",
+          "href": "/food-library.html?q=Jif+creamy+peanut+butter&type=branded&market=US"
+        },
+        {
+          "label": "Build a weighed recipe",
+          "href": "/recipe-macro-scaler.html"
+        },
+        {
+          "label": "Log the ingredients",
+          "href": "/food-diary.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. named formulations only; no assumed final hydrated yield, taste review or price claim."
+      },
+      "search_observations": [
+        {
+          "query": "peanut butter powder vs peanut butter calories protein tablespoons",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official product results compare powder and spread using different gram servings; the article adds an explicit equal-weight calculation rather than repeating the promotional ratio.",
+          "source_url": "https://www.pbfit.com/products/pbfit-classic",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "Existing powder-scoop and added-water articles cover generic measurement. Neither compares these exact peanut products or their equal-spoon/equal-weight decisions.",
+        "distinct_value": "How do peanut butter powder and creamy spread compare once the serving weights are clear?"
+      }
+    },
+    {
+      "slug": "silk-unsweet-soy-vs-almondmilk.html",
+      "title": "Silk unsweet soy vs almondmilk: protein is only one difference",
+      "description": "Compare exact U.S. unsweet Silk panels for protein, calories, calcium, vitamin D and B12, including an identified source inconsistency.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Does an unsweet almond drink replace the protein and fortified nutrients in soy milk?",
+      "answer": "The displayed U.S. panels list 8 g versus 1 g protein per 240 mL, with matching calcium but different vitamin D and B12 amounts.",
+      "body_html": "<p class=\"article-lead\">Silk’s U.S. Unsweet Soymilk panel lists 8 g protein per 240 mL cup; Unsweet Almondmilk lists 1 g. Both panels list 470 mg calcium, but similar calcium numbers do not mean the drinks have the same macros or fortification.</p>\n<h2>One cup, two different nutrition profiles</h2><p>These are the U.S. unsweetened products, not original sweetened, vanilla, shelf-stable or Canadian variants. The soy page’s introductory copy says 80 calories while its nutrition table says 90. This comparison uses the displayed nutrition table and flags that conflict; check your carton before logging.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Silk U.S. displayed nutrition panels · 1 cup (240 mL)\"><table><caption>Silk U.S. displayed nutrition panels · 1 cup (240 mL)</caption><thead><tr><th scope=\"col\">Unsweet drink</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Sodium (mg)</th></tr></thead><tbody><tr><th scope=\"row\">Soymilk</th><td>90</td><td>8</td><td>4</td><td>4.5</td><td>70</td></tr><tr><th scope=\"row\">Almondmilk</th><td>30</td><td>1</td><td>1</td><td>3</td><td>140</td></tr></tbody></table></div>\n<h2>Protein and fortification answer different questions</h2><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Additional amounts in the same 240 mL portions\"><table><caption>Additional amounts in the same 240 mL portions</caption><thead><tr><th scope=\"col\">Drink</th><th scope=\"col\">Calcium (mg)</th><th scope=\"col\">Vitamin D (µg)</th><th scope=\"col\">Vitamin B12 (µg)</th><th scope=\"col\">Fibre (g)</th><th scope=\"col\">Total sugars (g)</th></tr></thead><tbody><tr><th scope=\"row\">Soymilk</th><td>470</td><td>3</td><td>2.4</td><td>2</td><td>1</td></tr><tr><th scope=\"row\">Almondmilk</th><td>470</td><td>4</td><td>1.1</td><td>0</td><td>0</td></tr></tbody></table></div>\n<p>The calcium amount happens to match in these panels. Vitamin D and B12 do not. Read those fields if they matter to the comparison rather than treating all fortified plant drinks as nutritionally interchangeable.</p><p>Both ingredient lists include a vitamin-and-mineral blend. The soy drink is made from soybeans and water, while the almond drink uses almonds and water. The original ingredient and allergen statements still need to be checked: “plant-based” does not mean suitable for every allergy.</p>\n<h2>What changes in a smaller pour?</h2><p>A measured 120 mL pour is half the table’s serving. Scaling the panels gives 45 kcal and 4 g protein for soy, versus 15 kcal and 0.5 g protein for almond. Calcium would be 235 mg for either. These are label-based calculations; a casual splash in coffee is not automatically 120 mL.</p><p>Keep the drink separate from cereal, oats or coffee syrup in the diary. A cereal entry marked “as packaged” normally needs its milk logged separately. A recipe already calculated with this drink should not receive a second milk entry unless extra milk was actually added.</p>\n<h2>Choose the product that answers your question</h2><p>For more listed protein in a 240 mL pour, soy is the clear comparison here. For fewer listed calories in that same volume, almond is lower. That is a two-field trade-off, not an overall health score or a claim that one drink is always the right replacement for dairy milk.</p><p>Milk beverages, barista blends and enriched high-protein products can have different recipes. Keep this table tied to these two exact U.S. panels. It does not establish equivalence with a Canadian carton, a café’s plant drink or a homemade unfortified version.</p>",
+      "sources": [
+        {
+          "title": "Silk · U.S. Unsweet Soymilk",
+          "url": "https://silk.com/plant-based-products/soymilk/unsweet-soymilk/",
+          "checked_on": "2026-10-19",
+          "notes": "Nutrition table says 90 kcal; introductory copy says 80. The table is explicitly used, with the discrepancy disclosed."
+        },
+        {
+          "title": "Silk · U.S. Unsweet Almondmilk",
+          "url": "https://silk.com/plant-based-products/almondmilk/unsweet-almondmilk/",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FDA · understanding the Nutrition Facts label",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Search the exact soy drink",
+          "href": "/food-library.html?q=Silk+unsweet+soy&type=branded&market=US"
+        },
+        {
+          "label": "Search the exact almond drink",
+          "href": "/food-library.html?q=Silk+unsweet+almond&type=branded&market=US"
+        },
+        {
+          "label": "Compare foods",
+          "href": "/compare-foods.html"
+        },
+        {
+          "label": "Log your pour",
+          "href": "/food-diary.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "Displayed U.S. panels only. Soy source has an unresolved marketing/panel calorie conflict; check actual packaging."
+      },
+      "search_observations": [
+        {
+          "query": "Silk unsweet soy vs almond milk protein calcium nutrition",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Public official results expose both macro and fortification panels; no search-volume or market-share estimate is available.",
+          "source_url": "https://silk.com/plant-based-products/soymilk/unsweet-soymilk/",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "No existing plant-drink comparison found. The grams-versus-millilitres guide explains units but does not compare these formulations.",
+        "distinct_value": "Does an unsweet almond drink replace the protein and fortified nutrients in soy milk?"
+      }
+    },
+    {
+      "slug": "original-vs-honey-nut-cheerios-labels.html",
+      "title": "Original vs Honey Nut Cheerios: compare the whole label",
+      "description": "The U.S. labels share 140 calories but differ in portion, protein, sugars and iron. Compare the cereal before adding milk.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "What differs between Original and Honey Nut Cheerios when the panels show the same calories?",
+      "answer": "Their displayed portions differ, as do protein, sugars, fibre and iron; the cereal must be compared before milk is added.",
+      "body_html": "<p class=\"article-lead\">The displayed U.S. panels for Original and Honey Nut Cheerios both list 140 kcal, but they use different cup servings. Original lists 1½ cups, 5 g protein and 2 g total sugars. Honey Nut lists 3 g protein and 12 g total sugars; its product description identifies a one-cup serving.</p>\n<h2>Equal calories do not describe the same bowl</h2><p>The comparison below preserves the manufacturer’s portions. It does not silently call both amounts “one serving of cereal” and hide the cup difference. The Honey Nut nutrition table itself does not render a useful serving-size value, so the one-cup basis is taken from the same product page’s description. Confirm the metric weight on your box before an equal-gram comparison.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"U.S. manufacturer pages · dry cereal, without milk\"><table><caption>U.S. manufacturer pages · dry cereal, without milk</caption><thead><tr><th scope=\"col\">Cereal and displayed portion</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Total sugars (g)</th><th scope=\"col\">Fibre (g)</th></tr></thead><tbody><tr><th scope=\"row\">Original · 1½ cups</th><td>140</td><td>5</td><td>29</td><td>2.5</td><td>2</td><td>4</td></tr><tr><th scope=\"row\">Honey Nut · 1 cup in product description</th><td>140</td><td>3</td><td>30</td><td>2</td><td>12</td><td>3</td></tr></tbody></table></div>\n<h2>The vitamin panel is worth reading</h2><p>Original’s panel lists 12.6 mg iron; Honey Nut’s lists 3.6 mg. Both show 4 µg vitamin D and 130 mg calcium in their respective servings. A similar calorie number therefore does not establish identical fortification.</p><p>Added sugars are 1 g for Original and 12 g for Honey Nut in these panels. Added sugars are already included in total sugars: do not add the two rows together. Those numbers describe these specific servings, not every cereal with oats or honey in its name.</p>\n<h2>Three practical ways to compare</h2><ol><li><strong>The bowl you actually pour.</strong> Use the cereal’s own label and measure the portion. This answers what you logged.</li><li><strong>A fixed gram amount.</strong> Read each box’s gram serving and scale to the same weight. Do not use a missing online gram value as zero or borrow one from another package.</li><li><strong>A fixed calorie amount.</strong> The two listed portions already provide the same 140 kcal, so the protein, sugar and fibre amounts above can be compared on that energy basis.</li></ol>\n<h2>Count the rest of breakfast</h2><p>Milk, yogurt, nuts and fruit change the bowl’s totals. Log them separately when using an “as packaged” cereal entry. A larger pour of a lower-sugar cereal can contain more total carbohydrate than a smaller pour of another cereal; the product name cannot replace portion arithmetic.</p><p>The manufacturer’s other help pages contain different serving and sugar descriptions, so this guide does not merge all site text into one supposedly exact formulation. Use the named product panels and your physical package. It makes no claim about children’s individual needs, medical suitability or how filling either bowl will feel.</p>",
+      "sources": [
+        {
+          "title": "Cheerios · U.S. Original product panel",
+          "url": "https://www.cheerios.com/products/original-cheerios",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "Cheerios · U.S. Honey Nut product panel",
+          "url": "https://www.cheerios.com/products/honey-nut-cheerios",
+          "checked_on": "2026-10-19",
+          "notes": "Nutrition serving-size field is malformed; the same page description specifies one cup. No gram weight inferred or borrowed."
+        },
+        {
+          "title": "FDA · understanding the Nutrition Facts label",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Search Original Cheerios",
+          "href": "/food-library.html?q=Cheerios+original&type=branded&market=US"
+        },
+        {
+          "label": "Search Honey Nut Cheerios",
+          "href": "/food-library.html?q=Honey+Nut+Cheerios&type=branded&market=US"
+        },
+        {
+          "label": "Compare your breakfast drink",
+          "href": "/silk-unsweet-soy-vs-almondmilk.html"
+        },
+        {
+          "label": "Log cereal and milk",
+          "href": "/food-diary.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. displayed panels only; online serving presentation is incomplete for Honey Nut, so no equal-weight numbers are invented."
+      },
+      "search_observations": [
+        {
+          "query": "Original vs Honey Nut Cheerios nutrition sugar iron serving size",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official product pages expose different cup bases and fortification; other site descriptions conflict, so actual package confirmation is part of the answer.",
+          "source_url": "https://www.cheerios.com/products/original-cheerios",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "Existing equal-calorie comparisons are restaurant-based. No cereal or fortification comparison exists.",
+        "distinct_value": "What differs between Original and Honey Nut Cheerios when the panels show the same calories?"
+      }
+    },
+    {
+      "slug": "barilla-australia-protein-plus-vs-spaghetti.html",
+      "title": "Barilla Australia Protein+ vs classic spaghetti: dry portions compared",
+      "description": "Compare Australian Barilla spaghetti at equal dry weights, then calculate an 80 g portion and a measured cooked-batch allocation.",
+      "category": "Grocery comparisons",
+      "country": "AU",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "How much extra protein does Australian Barilla Protein+ add in the same dry pasta portion?",
+      "answer": "An 80 g dry portion calculated from the Australian panels provides 16 g protein for Protein+ and about 10.2 g for Classic, with similar energy.",
+      "body_html": "<p class=\"article-lead\">On Barilla’s Australian pages, Protein+ Spaghetti lists 20 g protein per 100 g dry pasta; Classic Spaghetti lists 12.8 g. Their energy figures are close: 359 and 364 kcal respectively. Extra protein does not make the pasta calorie-free or include a sauce.</p>\n<h2>Keep the Australian formulations together</h2><p>These are the Australian product pages. The U.S. Protein+ recipe and its serving claims are not substituted into this comparison. The Australian Protein+ ingredients include durum wheat semolina and pea protein; the classic lists durum wheat semolina and water.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Barilla Australia · manufacturer values per 100 g dry pasta\"><table><caption>Barilla Australia · manufacturer values per 100 g dry pasta</caption><thead><tr><th scope=\"col\">Spaghetti</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Fibre (g)</th><th scope=\"col\">Sodium (mg)</th></tr></thead><tbody><tr><th scope=\"row\">Protein+</th><td>359</td><td>20</td><td>63</td><td>1.7</td><td>3.1</td><td>20</td></tr><tr><th scope=\"row\">Classic</th><td>364</td><td>12.8</td><td>70.9</td><td>2</td><td>3</td><td>5</td></tr></tbody></table></div>\n<h2>What does that mean for an 80 g dry portion?</h2><p>Multiply the per-100 g figures by 0.8. The calculated Protein+ portion has about 287 kcal and 16 g protein. Classic has about 291 kcal and 10.2 g protein. For this chosen amount, the difference is roughly 5.8 g protein alongside just 4 kcal.</p><p>The carbohydrate difference is larger than the calorie difference: about 50.4 g versus 56.7 g in the calculated 80 g portions. Meanwhile fibre is close, at about 2.5 g versus 2.4 g. A protein-focused product name does not guarantee a dramatic increase in every other nutrient.</p>\n<h2>Cooked weight needs your batch measurement</h2><p>The comparison is for dry pasta. Do not weigh 80 g cooked pasta and enter it as 80 g dry: water changes the final weight. Nor should you apply a universal “pasta triples in weight” rule to every cooking time and shape.</p><p>For meal prep, weigh the dry amount used, cook and drain it, then weigh the finished pasta. If 240 g dry yields 600 g cooked in your actual batch, a 200 g cooked portion is one third of that batch and represents 80 g of the original dry pasta. The 600 g yield is an example to measure, not a claimed Barilla cooking yield.</p>\n<h2>A pasta dinner still needs its other ingredients</h2><p>Add the supported portions of sauce, oil, cheese, meat, legumes or vegetables separately. If you make one combined recipe, include each ingredient once and allocate the finished batch. Do not log a complete recipe and add the same pasta again.</p><p>The sodium column describes the packaged pasta; it does not calculate how much salted cooking water is retained. The pages do not establish your drained pasta’s salt uptake. Avoid inventing a fixed sodium addition from a spoonful of salt in a pot.</p><p>Use the protein difference as one useful shopping comparison, then check price, texture and the full meal. This is not a personal taste test or a medical ranking. Both products contain wheat, and the Australian Protein+ page notes possible soy. Check current package ingredients and allergen information rather than treating a plant-protein claim as an allergy clearance.</p>",
+      "sources": [
+        {
+          "title": "Barilla Australia · Protein+ Spaghetti",
+          "url": "https://www.barilla.com/en-au/products/pasta/protein-plus/spaghetti-protein-plus",
+          "checked_on": "2026-10-19",
+          "notes": "Full official per-100 g table inspected through web retrieval. A separate direct raw fetch was blocked; no U.S. recipe substituted."
+        },
+        {
+          "title": "Barilla Australia · Classic Spaghetti",
+          "url": "https://www.barilla.com/en-au/products/pasta/classic-blue-box/spaghetti",
+          "checked_on": "2026-10-19",
+          "notes": "Full official Australian table inspected; per-100 g column used to avoid mixing serving bases."
+        },
+        {
+          "title": "FDA · serving size is not a recommended portion",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find the Australian product",
+          "href": "/food-library.html?q=Barilla+spaghetti&type=branded&market=AU"
+        },
+        {
+          "label": "Scale your recipe",
+          "href": "/recipe-macro-scaler.html"
+        },
+        {
+          "label": "Raw and cooked food weights",
+          "href": "/raw-vs-cooked-food-weight.html"
+        },
+        {
+          "label": "Log your portion",
+          "href": "/food-diary.html?market=AU"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "Australian named products only. Cooked yield must be measured; example yield is hypothetical. No salt-uptake estimate."
+      },
+      "search_observations": [
+        {
+          "query": "Barilla Australia protein plus spaghetti nutrition protein per 100g",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official Australian results show a distinct local Protein+ recipe and both per-serving and per-100 g information. No traffic demand is quantified.",
+          "source_url": "https://www.barilla.com/en-au/products/pasta/protein-plus/spaghetti-protein-plus",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "Existing raw/cooked and added-water guides explain measurement. Neither compares the actual Australian spaghetti formulations.",
+        "distinct_value": "How much extra protein does Australian Barilla Protein+ add in the same dry pasta portion?"
+      }
+    },
+    {
+      "slug": "house-foods-firm-vs-super-firm-tofu.html",
+      "title": "Firm vs super-firm tofu: compare House Foods’ exact labels",
+      "description": "Compare current U.S. House Foods organic tofu at 85 g and 170 g, with clear pack, pressing, oil and marinade boundaries.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Does super-firm tofu have more protein than firm tofu in the same portion?",
+      "answer": "These exact House Foods panels list 9 g versus 7 g protein per 85 g, while both list 70 kcal.",
+      "body_html": "<p class=\"article-lead\">House Foods’ current U.S. Organic Firm and Organic Super Firm panels both list 70 kcal per 85 g. Firm lists 7 g protein; Super Firm lists 9 g. Firmness is useful for choosing texture, but the exact product label still matters for logging.</p>\n<h2>Two labels with the same serving weight</h2><p>The official Firm page is for the 14 oz pack; the Super Firm page is for the 10 oz pack. Each nutrition panel uses 3 oz, or 85 g. This lets us compare a fixed amount without assuming that two different blocks are the same size.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"House Foods U.S. organic tofu · one 85 g source serving\"><table><caption>House Foods U.S. organic tofu · one 85 g source serving</caption><thead><tr><th scope=\"col\">Tofu</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Fibre (g)</th><th scope=\"col\">Sodium (mg)</th></tr></thead><tbody><tr><th scope=\"row\">Firm</th><td>70</td><td>7</td><td>2</td><td>4</td><td>1</td><td>10</td></tr><tr><th scope=\"row\">Super Firm</th><td>70</td><td>9</td><td>3</td><td>3.5</td><td>2</td><td>10</td></tr></tbody></table></div>\n<h2>The texture word is not a universal formula</h2><p>Within these named products, Super Firm provides 2 g more listed protein and 1 g more fibre in 85 g. Fat is 0.5 g lower. That is a comparison of their published recipes; it is not a rule that every brand’s super-firm tofu must have those values.</p><p>Do not replace this Super Firm entry with a different retailer listing for an 8 oz pack or a foodservice block simply because the name is similar. Pack formats, source dates and formulations need to match. A general tofu result can be useful as a reference, but it should not masquerade as the exact package in your kitchen.</p>\n<h2>If dinner uses 170 g</h2><p>Doubling the source serving gives a calculated 140 kcal and 14 g protein for Firm, or 140 kcal and 18 g protein for Super Firm. Carbohydrate becomes 4 g or 6 g, respectively. These figures come from scaling rounded labels, so they are practical estimates rather than laboratory measurements of your cooked plate.</p><p>A full pack is a separate question. Read the net weight and weigh the amount used; do not count “one block” as one 85 g serving. The manufacturer describes approximate servings per package, and rounding an approximate count before multiplying can add avoidable error.</p>\n<h2>Pressing, frying and marinade change what to log</h2><p>Pressing removes liquid. The pages do not quantify how much of each nutrient remains after your pressing method, so do not subtract protein or calories in proportion to the liquid lost. For a recipe, start with the matching source tofu and the amount used before preparation.</p><p>Oil, sauce, coating and marinade are additional ingredients. Record the amounts actually used where possible; the plain-tofu panel does not cover frying oil or a peanut sauce. If some marinade is discarded, distinguish the amount made from the amount eaten rather than inventing a universal absorption percentage.</p><p>House Foods suggests different culinary uses for these textures, including crumbling firm tofu and grilling super firm. Choose the texture your dish needs while keeping the nutrition comparison exact. Both are soy foods; firmness and an organic label do not remove the need to check current ingredients and allergen statements.</p>",
+      "sources": [
+        {
+          "title": "House Foods · Organic Firm Tofu",
+          "url": "https://www.house-foods.com/products/organic-tofu/organic-tofu-firm",
+          "checked_on": "2026-10-19",
+          "notes": "Complete manufacturer nutrition-table payload downloaded and read: 14 oz pack, 85 g serving."
+        },
+        {
+          "title": "House Foods · Organic Super Firm Tofu",
+          "url": "https://www.house-foods.com/products/organic-tofu/organic-tofu-super-firm",
+          "checked_on": "2026-10-19",
+          "notes": "Complete manufacturer nutrition-table payload downloaded and read: 10 oz pack, 85 g serving. Different 8 oz retailer record not substituted."
+        },
+        {
+          "title": "FDA · understanding the Nutrition Facts label",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find the exact tofu",
+          "href": "/food-library.html?q=House+Foods+organic+tofu&type=branded&market=US"
+        },
+        {
+          "label": "Log a recipe",
+          "href": "/food-diary.html"
+        },
+        {
+          "label": "Handle sauce made versus used",
+          "href": "/recipe-sauce-made-vs-sauce-used.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. organic products only; no inferred pressing retention or marinade absorption."
+      },
+      "search_observations": [
+        {
+          "query": "House Foods firm super firm tofu protein nutrition 85 g",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official pages specify current pack variants; public retailer results include a different Super Firm pack with a conflicting panel, which this guide excludes.",
+          "source_url": "https://www.house-foods.com/products/organic-tofu/organic-tofu-firm",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "No existing tofu comparison found. Reference-food lists do not address these two exact package identities.",
+        "distinct_value": "Does super-firm tofu have more protein than firm tofu in the same portion?"
+      }
+    },
+    {
+      "slug": "bushs-black-beans-vs-chickpeas.html",
+      "title": "Bush’s black beans vs chickpeas: protein, fibre and the can",
+      "description": "Compare exact U.S. canned-bean labels at 130 g and a 195 g recipe amount, without inventing drained or rinsed nutrition.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "How do Bush’s regular black beans and chickpeas compare in the same labelled portion?",
+      "answer": "At 130 g, black beans list 8 g protein and 6 g fibre; chickpeas list 6 g protein and 4 g fibre, with similar sodium.",
+      "body_html": "<p class=\"article-lead\">Bush’s U.S. Black Beans list 8 g protein and 6 g fibre per 130 g; Chickpeas list 6 g protein and 4 g fibre in the same stated weight. These are the regular canned products, with their own sodium values—not unsalted cooked-bean reference entries.</p>\n<h2>Compare the cans on one basis</h2><p>Both official panels use half a cup, 130 g. The pages do not identify these values as a drained-and-rinsed serving. Keep them tied to the declared package basis rather than relabelling them as rinsed beans.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Bush’s U.S. regular canned products · ½ cup (130 g)\"><table><caption>Bush’s U.S. regular canned products · ½ cup (130 g)</caption><thead><tr><th scope=\"col\">Beans</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Fibre (g)</th><th scope=\"col\">Sodium (mg)</th></tr></thead><tbody><tr><th scope=\"row\">Black Beans</th><td>130</td><td>8</td><td>23</td><td>0.5</td><td>6</td><td>450</td></tr><tr><th scope=\"row\">Chickpeas (Garbanzo Beans)</th><td>120</td><td>6</td><td>19</td><td>2</td><td>4</td><td>460</td></tr></tbody></table></div>\n<h2>Which differences are useful for a bowl?</h2><p>For this amount, black beans list 2 g more protein and 2 g more fibre, alongside 10 more kcal and 4 g more carbohydrate. Chickpeas list 1.5 g more fat. These are modest, specific differences, not a reason to call one bean universally better.</p><p>The sodium amounts are close: 450 mg versus 460 mg. A bean’s name or color is not a reliable low-sodium filter. If sodium is your priority, compare a verified no-salt-added or reduced-sodium product with its own panel. Do not change the values of this regular can because a lower-sodium version exists.</p>\n<h2>Adding a measured amount to a recipe</h2><p>If a recipe uses 195 g on the same basis as the source, that is 1.5 servings. The calculated black-bean contribution is 195 kcal, 12 g protein, 9 g fibre and 675 mg sodium. The chickpea contribution is 180 kcal, 9 g protein, 6 g fibre and 690 mg sodium. Rice, dressing, cheese and other additions remain separate.</p><p>That calculation is not valid if you weigh 195 g of thoroughly drained beans but use an undrained source basis without checking it. Removing liquid changes what is on the scale, and rinsing can change sodium. These product pages do not establish your exact drained yield or retained sodium, so no fixed percentage is subtracted here.</p>\n<h2>The whole can is not one label serving</h2><p>Check the actual package’s net weight, serving count and instructions. The displayed pages refer to different package serving counts. Multiplying each “one serving” row once would undercount a recipe that uses the whole can; multiplying by the wrong can’s count would produce a different error.</p><p>For a practical diary, match the brand and product first, then review the portion basis. If you cannot establish an exact drained product value, a clearly identified drained reference-food entry may be more honest than an apparently exact brand entry on the wrong basis.</p><p>Choose the bean that works in your meal and keep the serving information with it. This comparison does not measure taste, personal digestion, current price or local inventory. It also does not infer a complete day’s fibre intake from one bowl.</p>",
+      "sources": [
+        {
+          "title": "Bush’s · Black Beans",
+          "url": "https://www.bushbeans.com/en_US/product/black-beans",
+          "checked_on": "2026-10-19",
+          "notes": "Complete official product nutrition fields downloaded, including 130 g serving, 450 mg sodium and less-than-1 g total sugars."
+        },
+        {
+          "title": "Bush’s · Chickpeas / Garbanzo Beans",
+          "url": "https://www.bushbeans.com/en_US/product/garbanzo-beans-chick-peas",
+          "checked_on": "2026-10-19",
+          "notes": "Complete official product nutrition fields downloaded, including 130 g serving and 460 mg sodium."
+        },
+        {
+          "title": "FDA · serving size is not a recommended portion",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Search Bush’s black beans",
+          "href": "/food-library.html?q=Bush+black+beans&type=branded&market=US"
+        },
+        {
+          "label": "Search Bush’s chickpeas",
+          "href": "/food-library.html?q=Bush+chickpeas&type=branded&market=US"
+        },
+        {
+          "label": "Read drained-weight assumptions",
+          "href": "/drained-weight-nutrition-label.html"
+        },
+        {
+          "label": "Log your bowl",
+          "href": "/food-diary.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "Regular U.S. canned products; no asserted drained/rinsed value or sodium-reduction factor."
+      },
+      "search_observations": [
+        {
+          "query": "Bush black beans vs chickpeas protein fiber sodium canned",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official product pages provide a common 130 g portion; search results also surface older foodservice and low-sodium products that must remain separate.",
+          "source_url": "https://www.bushbeans.com/en_US/product/black-beans",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "Existing drained-weight and two-fibre-source guides explain general arithmetic. Neither compares these exact canned products and sodium boundaries.",
+        "distinct_value": "How do Bush’s regular black beans and chickpeas compare in the same labelled portion?"
+      }
+    },
+    {
+      "slug": "starkist-light-vs-albacore-tuna-pouches.html",
+      "title": "StarKist light vs albacore tuna: compare the 74 g pouches",
+      "description": "Both small U.S. water-packed pouches list 17 g protein. Compare calories, fat, sodium and the limits of a macro-only fish choice.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Does a small albacore tuna pouch contain more protein than light tuna?",
+      "answer": "These two 74 g StarKist pouches both list 17 g protein; calories, fat and sodium differ.",
+      "body_html": "<p class=\"article-lead\">StarKist’s U.S. 74 g Light Tuna in Water and Albacore White Tuna in Water pouches both list 17 g protein. Light lists 70 kcal and 300 mg sodium; albacore lists 80 kcal and 240 mg sodium. More expensive or differently colored tuna is not automatically more protein in the same pouch.</p>\n<h2>Match the small water-packed pouch</h2><p>Both rows are one 2.6 oz, 74 g pouch, without mayonnaise, crackers or a wrap. They are not oil-packed tuna, a flavored Tuna Creations recipe, a can’s drained serving or one portion from a larger pouch.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"StarKist U.S. water-packed tuna · one 74 g pouch\"><table><caption>StarKist U.S. water-packed tuna · one 74 g pouch</caption><thead><tr><th scope=\"col\">Tuna</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Sodium (mg)</th></tr></thead><tbody><tr><th scope=\"row\">Light Tuna in Water</th><td>70</td><td>17</td><td>0</td><td>0.5</td><td>300</td></tr><tr><th scope=\"row\">Albacore White Tuna in Water</th><td>80</td><td>17</td><td>0</td><td>1.5</td><td>240</td></tr></tbody></table></div>\n<h2>Protein is tied; fat and sodium differ</h2><p>The albacore pouch has 10 more listed kcal and 1 g more fat. The light pouch has 60 mg more sodium. Which matters more depends on your comparison, and neither result turns the product into a universal nutritional winner.</p><p>The manufacturer also publishes different panels for larger pouches. Do not apply the 17 g small-pouch protein figure to every 85 g serving in the range. Search the exact size, review the panel and keep the market attached to the entry.</p>\n<h2>Build a sandwich from its actual parts</h2><p>One pouch supplies the tuna contribution shown above. Add your bread, mayonnaise, vegetables and any other ingredients separately. A “tuna sandwich” reference entry may include a different amount of tuna and dressing; its name alone is not a match for your homemade sandwich.</p><p>If you use two of these small pouches, the calculated tuna subtotal is 34 g protein. Calories become 140 for light or 160 for albacore, and sodium becomes 600 mg or 480 mg. Those are ingredient totals only. They are not a recommended serving or a complete meal.</p>\n<h2>Fish choice involves more than macros</h2><p>The FDA and EPA distinguish light tuna from albacore in their fish advice. In the advice for people who might become or are pregnant or breastfeeding, and for children, canned light tuna is a “Best Choice” while albacore is a “Good Choice.” Follow the current official chart for the appropriate frequency and portion; do not use a protein table to bypass that guidance.</p><p>This article does not calculate mercury in these specific pouches or set an individual fish allowance. The manufacturer’s macronutrient labels cannot establish those figures. The same caution applies to inferring exact omega-3 content from the word “tuna”; use a product-specific published amount if available.</p><p>For logging, confirm fish type, packing liquid, pouch size and current ingredients. A water-packed pouch is convenient to portion, but a correct record is still essential. This comparison does not include current prices, so it cannot rank cost per gram of protein without your own price input.</p>",
+      "sources": [
+        {
+          "title": "StarKist · Light Tuna in Water pouch",
+          "url": "https://starkist.com/product/light-tuna-in-water-pouch/",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "StarKist · Albacore White Tuna in Water pouch",
+          "url": "https://starkist.com/product/albacore-white-tuna-in-water-pouch/",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FDA/EPA · advice about eating fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "checked_on": "2026-10-19",
+          "notes": "Current official fish-category advice inspected. No individualized consumption recommendation or product mercury estimate supplied."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find light tuna",
+          "href": "/food-library.html?q=StarKist+light+tuna+water&type=branded&market=US"
+        },
+        {
+          "label": "Find albacore tuna",
+          "href": "/food-library.html?q=StarKist+albacore+tuna+water&type=branded&market=US"
+        },
+        {
+          "label": "Enter your actual prices",
+          "href": "/protein-value-calculator.html"
+        },
+        {
+          "label": "Log a sandwich",
+          "href": "/food-diary.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. 74 g water-packed pouches only. Mercury is not measured for these products, and no personal dietary advice is provided."
+      },
+      "search_observations": [
+        {
+          "query": "StarKist light tuna vs albacore pouch protein sodium nutrition",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official product results provide size-specific panels. The comparison adds equal-pouch identity and links the separate official fish guidance, with no demand estimate.",
+          "source_url": "https://starkist.com/product/light-tuna-in-water-pouch/",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "No existing packaged-fish comparison found. General protein-value pages do not compare these products or their fish-type distinction.",
+        "distinct_value": "Does a small albacore tuna pouch contain more protein than light tuna?"
+      }
+    },
+    {
+      "slug": "hersheys-special-dark-bar-vs-kisses.html",
+      "title": "Hershey’s Special Dark bar vs Kisses: compare equal grams",
+      "description": "Compare exact U.S. dark-chocolate servings and equal-weight calculations, with clear piece counts, sugar rows and ingredient limits.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Are Special Dark Kisses lower in calories than the Special Dark bar, or is the serving smaller?",
+      "answer": "The listed servings differ by 9 g; at a calculated equal 32 g, energy is about 148 kcal for the bar versus 150 kcal for Kisses.",
+      "body_html": "<p class=\"article-lead\">Hershey’s Special Dark bar and Special Dark Kisses have similar calculated energy per gram, but their labelled servings differ: one 41 g bar lists 190 kcal; seven Kisses, 32 g, list 150 kcal. A lower calorie number on the serving panel can mostly reflect less chocolate.</p>\n<h2>Read the portion before comparing the treat</h2><p>These are the U.S. Special Dark bar in the six-pack and Special Dark Kisses in the 32.1 oz pack. They are not milk chocolate, sugar-free products or Lindt cocoa-percentage bars. The bar’s listed recipe and the Kisses recipe remain separate identities.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Hershey’s U.S. Special Dark · manufacturer-labelled portions\"><table><caption>Hershey’s U.S. Special Dark · manufacturer-labelled portions</caption><thead><tr><th scope=\"col\">Product and portion</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Total sugars (g)</th></tr></thead><tbody><tr><th scope=\"row\">Bar · 1 bar (41 g)</th><td>190</td><td>2</td><td>26</td><td>12</td><td>22</td></tr><tr><th scope=\"row\">Kisses · 7 pieces (32 g)</th><td>150</td><td>2</td><td>20</td><td>10</td><td>17</td></tr></tbody></table></div>\n<h2>What happens at the same 32 g weight?</h2><p>Scale the bar by 32 ÷ 41. That produces about 148 kcal, 20.3 g carbohydrate, 9.4 g fat and 17.2 g total sugars. The Kisses panel lists 150 kcal, 20 g carbohydrate, 10 g fat and 17 g sugars for 32 g. On this basis the energy and sugars are close, rather than the 40 kcal serving-panel gap suggesting a large difference.</p><p>These are calculations from rounded labels. A two-calorie calculated gap is not evidence that weighing one version lets you achieve a precise metabolic advantage. Use enough precision to understand the portion, then avoid turning tiny rounding differences into a health ranking.</p>\n<h2>A piece is not a universal unit of chocolate</h2><p>The Kisses source names seven pieces as 32 g. The bar names one bar as 41 g. Do not assume one square of a bar weighs the same as one Kiss, or transfer a piece count from another package. If you eat part of a bar, a gram weight or a clearly measured fraction is easier to reproduce.</p><p>For example, half the named bar is a calculated 95 kcal and 11 g total sugars. The actual amount you broke off may not be exactly half by weight. If the piece count is uncertain, record the portion as an estimate rather than claiming it was weighed.</p>\n<h2>Dark is not an ingredient or allergy guarantee</h2><p>Both official ingredient statements include milk and soy. The Kisses page also identifies shared equipment with hazelnuts and almonds. Read the actual package for allergy decisions; a dark-chocolate label does not establish that a product contains no dairy or has no cross-contact risk.</p><p>The bar lists 21 g added sugars and 22 g total sugars in 41 g; Kisses list 17 g for both in 32 g. Added sugar is part of total sugar, not another amount to add. Neither panel supports a claim that this chocolate treats disease, supplies an ideal snack or is “guilt-free.”</p><p>Log the named product and amount you enjoyed. This comparison is about portion clarity, not judging a food or compensating for it with another activity.</p>",
+      "sources": [
+        {
+          "title": "Hershey’s · Special Dark six-pack bar panel",
+          "url": "https://www.hersheyland.com/products/hersheys-special-dark-mildly-sweet-chocolate-candy-bars-8-7-oz-6-pack.html",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "Hershey’s · Special Dark Kisses 32.1 oz panel",
+          "url": "https://www.hersheyland.com/products/hersheys-kisses-special-dark-mildly-sweet-chocolate-candy-32-1-oz-pack.html",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        },
+        {
+          "title": "FDA · serving size is not a recommended portion",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find the exact Special Dark product",
+          "href": "/food-library.html?q=Hershey+Special+Dark&type=branded&market=US"
+        },
+        {
+          "label": "Compare your weighed portion",
+          "href": "/nutrition-label-comparison-tool.html"
+        },
+        {
+          "label": "Log chocolate",
+          "href": "/food-diary.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. named pack panels only; no cocoa-percentage, health benefit, flavor review or allergy-safety claim."
+      },
+      "search_observations": [
+        {
+          "query": "Hershey Special Dark bar vs Kisses calories serving grams",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official results include several distinct bar and pack identities. Exact portions support a useful comparison; no measured volume is claimed.",
+          "source_url": "https://www.hersheyland.com/products/hersheys-special-dark-mildly-sweet-chocolate-candy-bars-8-7-oz-6-pack.html",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "No existing chocolate comparison found. The broad whole-package guide does not compare these products or an equal-weight normalization.",
+        "distinct_value": "Are Special Dark Kisses lower in calories than the Special Dark bar, or is the serving smaller?"
+      }
+    },
+    {
+      "slug": "chocolate-protein-shakes-country-portions.html",
+      "title": "Chocolate protein shakes: compare the bottle and the country",
+      "description": "Compare Canadian Premier Protein and Core Power chocolate bottles, equal-volume calculations and an actual U.S.–Canada label difference.",
+      "category": "Grocery comparisons",
+      "country": "global",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Which chocolate protein shake has more protein, and does the country change the label?",
+      "answer": "The named Canadian bottles list 30 g and 26 g protein, with different volumes; a U.S. Premier label also shows why headline agreement is not full equivalence.",
+      "body_html": "<p class=\"article-lead\">For the Canadian products below, Premier Protein Chocolate lists 30 g protein in 325 mL; Core Power Chocolate lists 26 g in 414 mL. Compare the actual bottle and country. A familiar name on a U.S. site is not proof that every Canadian label field is identical.</p>\n<h2>Start with two Canadian bottles</h2><p>These are the Canadian manufacturer pages: Premier’s 325 mL chocolate shake and fairlife Core Power’s 414 mL chocolate shake. The table includes one entire source bottle of each, without coffee, milk or other additions.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Canadian manufacturer panels · one bottle of each named drink\"><table><caption>Canadian manufacturer panels · one bottle of each named drink</caption><thead><tr><th scope=\"col\">Chocolate drink</th><th scope=\"col\">Volume (mL)</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Total sugars (g)</th><th scope=\"col\">Sodium (mg)</th></tr></thead><tbody><tr><th scope=\"row\">Premier Protein</th><td>325</td><td>160</td><td>30</td><td>4</td><td>3</td><td>1</td><td>220</td></tr><tr><th scope=\"row\">Core Power</th><td>414</td><td>170</td><td>26</td><td>8</td><td>4.5</td><td>5</td><td>260</td></tr></tbody></table></div>\n<h2>One bottle and equal volume answer different questions</h2><p>The per-bottle comparison is useful if you plan to drink the whole container. Premier lists 4 g more protein in a bottle that is 89 mL smaller. Its listed energy is 10 kcal lower. That does not mean the drinks are the same recipe or that a larger bottle is a worse choice.</p><p>For a measured 200 mL pour, the calculated Premier amount is about 98 kcal and 18.5 g protein. Core Power is about 82 kcal and 12.6 g protein. The energy ranking changes on a fixed-volume basis because the original bottles were different sizes. Say which comparison you mean before choosing a “lower-calorie” drink.</p>\n<h2>Other label fields can matter</h2><p>Both Canadian bottles list 650 mg calcium, despite their different volumes. Premier lists 350 mg potassium and Core Power 850 mg. These are product-specific amounts, not a general rule about all protein shakes. Vitamins and minerals should be read on the actual bottle, including any cautions and the complete label.</p><p>Premier’s Canadian page uses a Supplemented Food Facts panel. It is not interchangeable with an ordinary U.S. Nutrition Facts panel. This article compares declared amounts and does not assess suitability for a child, a pregnancy, a medical condition or a particular treatment plan.</p>\n<h2>What happens when you open the U.S. page?</h2><p>The U.S. Premier Chocolate 11.5 fl oz panel also lists 160 kcal, 30 g protein, 4 g carbohydrate and 3 g fat. However, it lists 230 mg sodium, versus 220 mg on the Canadian 325 mL panel. Saturated-fat and other fields differ too. Matching headline calories and protein are not enough to call the full formulations equivalent.</p><p>Do not copy the Canadian Core Power values to an American 26 g product, a 42 g Elite bottle or a different flavor. Each needs its own source and portion. This comparison does not claim that every retailer stocks both products or that their prices are the same.</p>\n<h2>Log the drink, then compare value if useful</h2><p>Choose the country where the bottle was sold, find its exact flavor and size, and compare its panel with the package. For a partial bottle, measure the amount; half a 414 mL bottle is 207 mL, not half of 325 mL. Add any coffee syrup or other ingredients separately.</p><p>If you want a price comparison, enter your own receipt price in a single currency and use the protein for the amount bought. No current price is supplied here, so no value winner is claimed.</p>",
+      "sources": [
+        {
+          "title": "Premier Protein Canada · Chocolate 325 mL",
+          "url": "https://premierprotein.ca/products/chocolate-protein-shake",
+          "checked_on": "2026-10-19",
+          "notes": "Canadian Supplemented Food Facts panel inspected in full; do not substitute the U.S. label."
+        },
+        {
+          "title": "Coca-Cola / fairlife Canada · Core Power Chocolate",
+          "url": "https://www.coca-cola.com/ca/en/brands/fairlife/products/core-power",
+          "checked_on": "2026-10-19",
+          "notes": "Canadian 414 mL chocolate panel inspected; the 26 g product, not Elite."
+        },
+        {
+          "title": "Premier Protein U.S. · Chocolate 11.5 fl oz",
+          "url": "https://www.premierprotein.com/products/chocolate-protein-shake",
+          "checked_on": "2026-10-19",
+          "notes": "U.S. panel inspected separately; 230 mg sodium compared with Canadian 220 mg."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find a Canadian chocolate shake",
+          "href": "/food-library.html?q=chocolate+protein+shake&type=branded&market=CA"
+        },
+        {
+          "label": "Compare food labels",
+          "href": "/nutrition-label-comparison-tool.html"
+        },
+        {
+          "label": "Use your own prices",
+          "href": "/protein-value-calculator.html"
+        },
+        {
+          "label": "Log your bottle",
+          "href": "/food-diary.html?market=CA"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "Named Canadian formulations plus one explicitly separate U.S. comparison. No supplementation advice, current retailer stock or price claim."
+      },
+      "search_observations": [
+        {
+          "query": "Premier Protein Canada Core Power chocolate shake nutrition 325 414",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official Canadian product results provide distinct bottles and a Supplemented Food Facts panel; the U.S. product page demonstrates an actual country-field difference.",
+          "source_url": "https://premierprotein.ca/products/chocolate-protein-shake",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "Existing protein-cost currency guide concerns money; the cross-country restaurant guides concern menus. Neither compares these grocery drinks and volume bases.",
+        "distinct_value": "Which chocolate protein shake has more protein, and does the country change the label?"
+      }
+    },
+    {
+      "slug": "quaker-old-fashioned-vs-quick-oats.html",
+      "title": "Quaker Old Fashioned vs Quick oats: what actually changes?",
+      "description": "The U.S. plain-oat panels match at 40 g dry. Compare cooking directions and calculate real breakfast portions without counting water as oats.",
+      "category": "Grocery comparisons",
+      "country": "US",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Do Quaker plain Quick oats and Old Fashioned oats have different macros?",
+      "answer": "The linked U.S. SmartLabel panels match at 40 g dry: 150 kcal, 5 g protein, 27 g carbs, 3 g fat and 4 g fibre.",
+      "body_html": "<p class=\"article-lead\">Quaker’s U.S. Old Fashioned and Quick 1-Minute plain oats show the same key nutrition values for 40 g dry oats: 150 kcal, 5 g protein, 27 g carbohydrate, 3 g fat and 4 g fibre. Choose the texture and cooking method, then log the dry portion and additions.</p>\n<h2>Two plain products, matching source servings</h2><p>The comparison uses the SmartLabel panels linked directly from Quaker’s product pages: UPC 030000010204 for Old Fashioned and 030000011805 for Quick. Both use half a cup dry, 40 g. It does not include flavored instant-oatmeal sachets, protein-enriched oats or Canadian packages.</p><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"Quaker U.S. plain oats · ½ cup dry (40 g)\"><table><caption>Quaker U.S. plain oats · ½ cup dry (40 g)</caption><thead><tr><th scope=\"col\">Product</th><th scope=\"col\">kcal</th><th scope=\"col\">Protein (g)</th><th scope=\"col\">Carbs (g)</th><th scope=\"col\">Fat (g)</th><th scope=\"col\">Fibre (g)</th><th scope=\"col\">Added sugars (g)</th></tr></thead><tbody><tr><th scope=\"row\">Old Fashioned</th><td>150</td><td>5</td><td>27</td><td>3</td><td>4</td><td>0</td></tr><tr><th scope=\"row\">Quick 1-Minute</th><td>150</td><td>5</td><td>27</td><td>3</td><td>4</td><td>0</td></tr></tbody></table></div>\n<h2>Cooking time is a practical difference</h2><p>Quaker’s stovetop directions use about five minutes for Old Fashioned and about one minute for Quick. Both start with the named half-cup dry portion and water or milk. Use the product’s actual instructions for the bowl or batch you are making.</p><p>The matching label totals do not establish identical texture, digestion or blood-glucose effects for every person. This is not a clinical comparison. The useful conclusion is narrower: the displayed nutrition panels do not support calling these plain Quick oats a lower-protein or higher-sugar product than these plain Old Fashioned oats.</p>\n<h2>Scale the oats before adding the toppings</h2><p>If you use 60 g dry oats, multiply the panel by 1.5. The calculated oat contribution is 225 kcal, 7.5 g protein, 40.5 g carbohydrate, 4.5 g fat and 6 g fibre. Milk, yogurt, nuts, fruit or syrup still need their own entries.</p><p>If you use 30 g, multiply by 0.75: about 113 kcal and 3.8 g protein. The calculation is based on rounded package values, so it is an estimate for your measured portion. A large cooked bowl made with more water is not necessarily more dry oats.</p>\n<h2>Overnight oats are a recipe, not a new oat label</h2><p>Record the weighed dry oats and the actual liquid, yogurt and toppings used. If you divide a batch into equal portions, add the ingredients first and divide that total. If portions are unequal, weigh the finished mixture only when it is sufficiently uniform to allocate by weight.</p><p>Do not use a generic “oatmeal with milk” result for oats made with water and then also add milk. Equally, a dry-oat entry does not include milk merely because the package’s cooking directions mention it as an option. Preparation instructions and nutrition-panel boundaries are separate.</p>\n<h2>Check flavored and fortified versions individually</h2><p>A quick-cooking product is not automatically the same as a sweetened instant sachet. Conversely, a packet labeled plain may have its own weight or formulation. Match the exact product rather than transferring this table to everything on the oatmeal shelf.</p><p>When logging a usual breakfast, save the reviewed oat portion and repeat it with the correct additions. If you change the brand, size or recipe, check the new label rather than assuming that a familiar half-cup measure always means 40 g.</p>",
+      "sources": [
+        {
+          "title": "Quaker · Old Fashioned Oats",
+          "url": "https://www.quakeroats.com/products/hot-cereals/old-fashioned-oats",
+          "checked_on": "2026-10-19",
+          "notes": "Product page and its manufacturer-linked SmartLabel nutrition fragment downloaded and read."
+        },
+        {
+          "title": "Quaker SmartLabel · Old Fashioned UPC 030000010204",
+          "url": "https://smartlabel.pepsico.info/030000010204-0005-en-US/index.html",
+          "checked_on": "2026-10-19",
+          "notes": "Manufacturer-linked full panel, 40 g dry serving. Internal nutrition fragment retained as evidence."
+        },
+        {
+          "title": "Quaker · Quick 1-Minute Oats",
+          "url": "https://www.quakeroats.com/products/hot-cereals/quick-oats",
+          "checked_on": "2026-10-19",
+          "notes": "Product page cooking instructions and linked full SmartLabel panel checked."
+        },
+        {
+          "title": "Quaker SmartLabel · Quick UPC 030000011805",
+          "url": "https://smartlabel.pepsico.info/030000011805-0004-en-US/index.html",
+          "checked_on": "2026-10-19",
+          "notes": "Manufacturer-linked full panel, 40 g dry serving. Internal nutrition fragment retained as evidence."
+        }
+      ],
+      "related": [
+        {
+          "label": "Find your Quaker oats",
+          "href": "/food-library.html?q=Quaker+oats&type=branded&market=US"
+        },
+        {
+          "label": "Log an overnight-oats recipe",
+          "href": "/food-diary.html"
+        },
+        {
+          "label": "Scale a recipe",
+          "href": "/recipe-macro-scaler.html"
+        },
+        {
+          "label": "Compare yogurt choices",
+          "href": "/fage-plain-greek-yogurt-0-2-5-percent.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "U.S. named plain products only. No blood-glucose, satiety, taste or gluten-safety claim."
+      },
+      "search_observations": [
+        {
+          "query": "Quaker old fashioned vs quick oats nutrition calories 40 g",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Official product and SmartLabel results distinguish plain products from protein and flavored versions; the article checks both complete label fragments.",
+          "source_url": "https://www.quakeroats.com/products/hot-cereals/old-fashioned-oats",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "No existing oat-product comparison found. Existing raw/cooked and recipe-water guides cover general measurement, not these products and the complete breakfast workflow.",
+        "distinct_value": "Do Quaker plain Quick oats and Old Fashioned oats have different macros?"
+      }
+    },
+    {
+      "slug": "back-up-and-move-food-diary.html",
+      "title": "How to back up and move your GetMacros food diary",
+      "description": "Export, import and verify a private diary backup, including entries, recipes, favorites, snapshot history and the limits of local storage.",
+      "category": "Logging & portions",
+      "country": "global",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "How do I move my private GetMacros diary without losing portions or historical nutrition?",
+      "answer": "Export the original browser’s diary JSON, import it in the destination, and verify saved dates and portions before deleting anything.",
+      "body_html": "<p class=\"article-lead\">GetMacros’ food diary is stored in the browser where you use it. To move it, export a JSON backup, keep that file privately, then import it in the destination browser. Do not erase the original diary until you have checked the restored dates, foods and portions.</p><figure class=\"article-visual\"><svg viewBox=\"0 0 600 210\" role=\"img\" aria-labelledby=\"diary-move-title diary-move-desc\" xmlns=\"http://www.w3.org/2000/svg\"><title id=\"diary-move-title\">Move a diary with a backup file</title><desc id=\"diary-move-desc\">Export from the original browser, keep the JSON file privately, then import and check it in the destination browser.</desc><rect width=\"600\" height=\"210\" rx=\"24\" fill=\"#f3f6e9\"/><g fill=\"#1e513b\" font-family=\"sans-serif\" text-anchor=\"middle\"><circle cx=\"100\" cy=\"74\" r=\"32\" fill=\"#d8ebaa\"/><circle cx=\"300\" cy=\"74\" r=\"32\" fill=\"#f4d9bf\"/><circle cx=\"500\" cy=\"74\" r=\"32\" fill=\"#d8ebaa\"/><text x=\"100\" y=\"84\" font-size=\"30\">1</text><text x=\"300\" y=\"84\" font-size=\"30\">2</text><text x=\"500\" y=\"84\" font-size=\"30\">3</text><text x=\"100\" y=\"142\" font-size=\"23\">Export</text><text x=\"300\" y=\"142\" font-size=\"23\">Keep the file</text><text x=\"500\" y=\"142\" font-size=\"23\">Import &amp; check</text></g><path d=\"M148 74h104m-12-9 12 9-12 9m108-9h104m-12-9 12 9-12 9\" fill=\"none\" stroke=\"#477456\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><figcaption>The backup file is the bridge. A country change, browser change or app installation does not create synchronization.</figcaption></figure>\n<h2>What the backup contains</h2><p>The current diary export includes logged entries, recipes and favorite portions. Each logged food keeps its saved nutrient snapshot, portion, source identity and meal group. Private notes are included, so treat the file as personal information rather than a public share card.</p><p>The diary export is not a backup of every GetMacros setting. Country and appearance preferences are separate. Saved restaurant orders use a separate notebook; they are not automatically included in the diary file. If you rely on that notebook, preserve its own export as well.</p>\n<h2>Move the diary in a deliberate sequence</h2><ol><li><strong>Open the original diary.</strong> Confirm a recent date and an older date before exporting, so you know what should be present.</li><li><strong>Open Preferences &amp; backups.</strong> Use Export backup. Save the resulting JSON file somewhere you control. A downloaded file left only on an old phone is not yet a second safe copy.</li><li><strong>Open GetMacros in the destination browser.</strong> Use the diary’s import control to select that exact JSON file.</li><li><strong>Check the result.</strong> Inspect those same dates, meal groups, portions, notes and recipes. Keep the original backup until the check is complete.</li></ol>\n<h2>Import merges matching entry identities</h2><p>Import does not wipe the destination diary first. Entries with different saved identities remain, while an imported entry with the same identity replaces that entry’s existing version. Importing the same unedited backup twice therefore does not create a second copy of every matching entry.</p><p>This is not conflict-aware cloud synchronization. If two devices independently edit the same original entry, importing one version can replace the other. Export the destination diary first if it contains changes you need to preserve. Favorite portions from the imported file replace the destination favorite list; they are not combined into an unlimited list.</p>\n<h2>When the file will not import</h2><p>The web interface accepts the GetMacros JSON format, with a file limit below 20 MB. It validates dates, portions and saved nutrient arithmetic before writing the import. A malformed file, unsupported format or inconsistent calculation should be rejected rather than partly trusted.</p><p>Keep the original file if import fails. Check that you selected a diary backup rather than a saved-order export, spreadsheet or renamed photograph. Do not paste the private file into a public comment or send it to an advertising service for troubleshooting.</p>\n<h2>Local storage is useful, but not permanent insurance</h2><p>Clearing site data, changing browsers, private browsing and browser storage eviction can affect locally stored information. MDN documents that browsers manage storage and may remove data under some conditions. Export before a browser reset, device replacement or major storage cleanup; do not depend on the catalog cache as a diary backup.</p><p>A future native app has its own storage area. Safari’s diary will not appear there merely because both say GetMacros. Use the explicit import/export path when available, and verify the result. This guide does not claim that an App Store app, account or cross-device sync is currently released.</p>",
+      "sources": [
+        {
+          "title": "MDN · browser storage quotas and eviction",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria",
+          "checked_on": "2026-10-19",
+          "notes": "Current browser storage documentation inspected. GetMacros-specific export/import behavior separately checked against js/food-diary-store.js, js/food-core.js and js/food-app.js."
+        },
+        {
+          "title": "GetMacros · privacy policy",
+          "url": "https://getmacros.net/privacy.html",
+          "checked_on": "2026-10-19",
+          "notes": "Local implementation checked; linked public policy must remain consistent with the final integrated release."
+        }
+      ],
+      "related": [
+        {
+          "label": "Open your food diary",
+          "href": "/food-diary.html"
+        },
+        {
+          "label": "Privacy and storage",
+          "href": "/privacy.html"
+        },
+        {
+          "label": "Review saved restaurant orders",
+          "href": "/food-shelf.html"
+        },
+        {
+          "label": "Report an import problem",
+          "href": "/contact.html"
+        }
+      ],
+      "visual": {
+        "kind": "original-svg",
+        "description": "Original three-stage SVG backup workflow, with accessible title, description and written equivalent steps.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "Instructions checked against current source code; final interface labels and journeys need integrated browser verification. No cloud sync or encryption claim."
+      },
+      "search_observations": [
+        {
+          "query": "food diary export import local browser backup nutrition logger",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Public results from other local-first diaries emphasize export before clearing browser data; this guide documents GetMacros’ actual merge and snapshot behavior rather than copying their product claims.",
+          "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "Existing saved-meal source-version guide concerns restaurant bookmarks. No complete diary migration/backup guide exists.",
+        "distinct_value": "How do I move my private GetMacros diary without losing portions or historical nutrition?"
+      }
+    },
+    {
+      "slug": "barcode-food-search-label-check.html",
+      "title": "Barcode food search: check the product before you log",
+      "description": "Use manual barcode lookup, distinguish country and package versions, check serving bases and handle incomplete grocery records honestly.",
+      "category": "Logging & portions",
+      "country": "global",
+      "published": null,
+      "modified": null,
+      "prepared_at": "2026-10-19",
+      "question": "Why can a food barcode result differ from my package, and how should I check it?",
+      "answer": "Use the barcode to find candidates, then verify identity, country, portion and the label before logging your actual amount.",
+      "body_html": "<p class=\"article-lead\">A barcode helps identify a packaged product; it does not measure what you ate or guarantee that a database has the newest label. In GetMacros, type the number into food search, then check the returned brand, product, market, serving and nutrient panel before logging.</p>\n<h2>Find the exact product first</h2><ol><li>Open food search in the diary or food library. Enter the barcode number as printed, including leading zeros. Manual entry works without a camera.</li><li>Check the food’s brand, flavor and package. A chocolate shake is not interchangeable with the vanilla version, and a multipack is not necessarily one bottle.</li><li>Confirm the country and source. A product sold in two countries can have different formulations or labels.</li><li>Review the source portion, calories, protein, carbohydrate and fat against your package. Then choose the amount you actually ate.</li></ol>\n<h2>A matching number is only part of the check</h2><div class=\"table-wrap\" role=\"region\" tabindex=\"0\" aria-label=\"A practical check before logging a barcode result\"><table><caption>A practical check before logging a barcode result</caption><thead><tr><th scope=\"col\">Check</th><th scope=\"col\">What to compare</th><th scope=\"col\">When it is not enough</th></tr></thead><tbody><tr><th scope=\"row\">Identity</th><td>Brand, full name, flavor and package</td><td>A similar name with a different flavor</td></tr><tr><th scope=\"row\">Market</th><td>Country attached to the source record</td><td>The barcode prefix by itself</td></tr><tr><th scope=\"row\">Portion</th><td>Grams, mL, pieces or named serving</td><td>A number with no matching unit</td></tr><tr><th scope=\"row\">Panel</th><td>Calories and supported nutrient amounts</td><td>Imported status without package agreement</td></tr></tbody></table></div>\n<p>GS1 explains that the first digits of an EAN barcode do not tell you where the product was manufactured. They identify the organization associated with allocating the prefix. Do not select a Canadian food record merely because a barcode-prefix list appears to point at Canada.</p><p>GS1 also requires a new GTIN for a change in declared net content. Package identity therefore matters: do not deliberately collapse every size into one product just because the brand and flavor match. Database grouping should help you inspect source versions, not overwrite their different nutrition.</p>\n<h2>Why can a result disagree with the package?</h2><p>A source can be older, incomplete or tied to a different market or package. FoodData Central includes different data types; branded records derive from product-label information, while reference-food records have a different purpose. Being present in a large database is not a statement that GetMacros has independently laboratory-tested that food.</p><p>First check whether the apparent discrepancy is only the serving basis. A panel per 100 g and a result per 30 g should differ until normalized. If the identity and units match but the figures still disagree, do not silently log a convenient number as exact. Look for a better matching source or report the mismatch with the product name, barcode, country and serving definition.</p>\n<h2>Set your portion after choosing the record</h2><p>A product lookup does not know whether you ate one serving, half a package or a spoonful. Use a supported unit and enter your quantity. If a source supplies no gram weight for a named serving, the app cannot honestly turn that serving into a weighed amount without more information.</p><p>Missing nutrients are not zeros. A record with known calories and protein but unknown carbohydrate and fat can only support a partial macro total. Do not fill the blanks from another flavor, another country or a generic product average and present the result as a verified label.</p>\n<h2>When the barcode is missing</h2><p>The current library is a set of available, source-labelled records, not every item in every grocery store. An empty result can mean the product is absent, the source is unavailable or the market has limited coverage. Try the exact brand and name; inspect any alternative as carefully as the barcode result.</p><p>Once a correct portion is logged, Recent or Favorites can make the next entry faster. Check again when you buy a changed product. A saved portion is useful history, not a promise that a manufacturer’s future package will never change.</p>",
+      "sources": [
+        {
+          "title": "GS1 · barcode prefix is not country of origin",
+          "url": "https://support.gs1.org/support/solutions/articles/43000734188",
+          "checked_on": "2026-10-19",
+          "notes": "Current official explanation inspected; no origin inference made from a prefix."
+        },
+        {
+          "title": "GS1 · declared net content and GTIN changes",
+          "url": "https://www.gs1.org/1/gtinrules/en/rule/266/declared-net-content",
+          "checked_on": "2026-10-19",
+          "notes": "Current official rule inspected; no guarantee that every provider follows it perfectly."
+        },
+        {
+          "title": "USDA FoodData Central · data documentation",
+          "url": "https://fdc.nal.usda.gov/data-documentation/",
+          "checked_on": "2026-10-19",
+          "notes": "Current official data-type documentation inspected; imported branded status distinguished from independent verification."
+        },
+        {
+          "title": "FDA · understanding the Nutrition Facts label",
+          "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+          "checked_on": "2026-10-19",
+          "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Search a barcode",
+          "href": "/food-library.html"
+        },
+        {
+          "label": "Log a reviewed food",
+          "href": "/food-diary.html"
+        },
+        {
+          "label": "Choose a FoodData Central entry",
+          "href": "/choose-fooddata-central-entry.html"
+        },
+        {
+          "label": "Report a label mismatch",
+          "href": "/corrections.html"
+        }
+      ],
+      "visual": {
+        "kind": "comparison-table",
+        "description": "Original, portion-labelled comparison table; no manufacturer photography reused.",
+        "rights": "Original GetMacros layout and illustration; nutrient facts attributed to the listed sources."
+      },
+      "review": {
+        "status": "authored-and-source-checked; awaiting integrated browser review",
+        "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+        "limitations": "No claim that every barcode exists or that manual lookup is camera scanning. Final UI journey requires integrated browser verification."
+      },
+      "search_observations": [
+        {
+          "query": "barcode food database wrong nutrition same product UPC serving",
+          "query_role": "Editorial intent phrase, not a measured keyword or a claim that this exact wording was a separately logged query. Current public research and primary-source observations are described below; the release SEO workstream records literal query evidence.",
+          "observation": "Public results include repeated label-mismatch questions; the article answers them using current GS1 rules, USDA data types and the actual manual GetMacros workflow. No search volume or ranking is inferred.",
+          "source_url": "https://support.gs1.org/support/solutions/articles/43000734188",
+          "checked_on": "2026-10-19",
+          "measured_volume": null
+        }
+      ],
+      "overlap_review": {
+        "existing": "Existing FDC-entry guide distinguishes source types but does not provide a barcode identity, market, package and review workflow. Existing country-menu guide concerns restaurants.",
+        "distinct_value": "Why can a food barcode result differ from my package, and how should I check it?"
+      }
+    }
+  ]
+}

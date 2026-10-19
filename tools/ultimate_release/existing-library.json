@@ -1,0 +1,1250 @@
+[
+  {
+    "href": "how-to-read-a-nutrition-label.html",
+    "title": "How to read a nutrition label",
+    "description": "Start with the serving size, then check the nutrients in the amount you will eat. This guide follows the U.S. Nutrition Facts label.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "compare-complete-restaurant-orders.html",
+    "title": "Make sure the two numbers describe comparable orders",
+    "description": "An order checklist and worked comparison show why an entrée-only figure and a meal with sides can give a misleading ranking.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "sugar-lines-do-not-add.html",
+    "title": "Do I add total sugars and added sugars together?",
+    "description": "Read the indented sugar lines correctly, then compare two portions without counting sugar twice.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "/harveys-original-angus-veggie-burger-comparison.html",
+    "title": "Harvey’s: Original vs Angus vs Veggie Burger",
+    "description": "Compare the Canadian listed burger builds, calories, protein, fiber and sodium, then account for cheese and a separate fries portion.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "/greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+    "title": "Greggs: Sausage Roll vs Vegan Roll nutrition",
+    "description": "Compare the UK source-listed rolls, protein, calories and salt. Count packs correctly and see why rounded per-item values can differ from package totals.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "/subway-mexico-chicken-sandwich-comparison.html",
+    "title": "Subway Mexico: oven-roasted, breaded or teriyaki chicken?",
+    "description": "Compare exact Mexico six-inch chicken sandwich recipes, calories and protein. Count the included Sweet Onion sauce and approximate footlong correctly.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "calorie-range-menu-reading.html",
+    "title": "What does a calorie range on a restaurant menu mean?",
+    "description": "A range does not tell you the total for your exact order. Check the included choices.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "restaurant-menu-serving-weight.html",
+    "title": "When restaurant serving weights help—and when they do not",
+    "description": "Use a gram weight to understand the source portion, not to promise an exact tray weight.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "nutrition-data-mean-not-every-portion.html",
+    "title": "A food database average is not every individual portion",
+    "description": "Understand what an average can support without inventing precision.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "nutrition-blank-vs-not-detected.html",
+    "title": "Blank, zero and “not detected” are different nutrition entries",
+    "description": "A missing field is a boundary, not an invitation to create a number.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "fiber-per-portion-vs-density.html",
+    "title": "More fiber per 100 g can still mean less fiber on your plate",
+    "description": "Compare concentration and actual portion as separate questions.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "fiber-daily-value-portion-example.html",
+    "title": "What does 7 g fiber mean on a U.S. label?",
+    "description": "Translate a gram amount into the label reference while keeping the portion visible.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "two-fiber-sources-one-bowl.html",
+    "title": "Two fiber sources in one bowl: add the portions, not the percentages",
+    "description": "Keep both ingredients and their labeled amounts in the calculation.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "plant-name-not-fiber-number.html",
+    "title": "A plant ingredient’s name cannot tell you its fiber grams",
+    "description": "Check the actual food, preparation and portion before assigning a number.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "vegetarian-label-not-allergen-safety.html",
+    "title": "Vegetarian is not an allergen-safety guarantee",
+    "description": "Dietary descriptions and allergen information answer different questions.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "restaurant-compare-tradeoff-not-single-score.html",
+    "title": "Two meals can trade places when your priority changes",
+    "description": "Calories and protein do not produce one universal winner.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "restaurant-dominated-choice-still-context.html",
+    "title": "When one order beats another on two numbers",
+    "description": "A numerical advantage is useful—but it still has a defined scope.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "meal-filters-intersection-not-extra-options.html",
+    "title": "Why adding a filter can reduce your meal matches",
+    "description": "Every explicit condition must be satisfied by the same order.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "restaurant-search-result-count-scope.html",
+    "title": "What does the meal-finder result count mean?",
+    "description": "See how your limits, missing values and displayed results affect the shortlist.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "same-restaurant-name-different-market-data.html",
+    "title": "Restaurant nutrition: choose the country where you order",
+    "description": "Match the country, recipe and serving before comparing calories or protein.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "del-taco-bean-burrito-vs-veggie-burrito.html",
+    "title": "Del Taco bean-and-cheese or Eight Layer Veggie Burrito?",
+    "description": "A vegetable-focused name does not predict the fiber number.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "qdoba-vegan-bowl-fiber-tradeoff.html",
+    "title": "QDOBA Fajita Vegan Bowl: fiber, protein and the full portion",
+    "description": "A named vegan bowl provides useful numbers without becoming a diet score.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "cross-chain-bean-burritos-serving-proof.html",
+    "title": "Two bean burritos: Del Taco and El Pollo Loco",
+    "description": "The shared word “bean” does not create equivalent portions.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "fiber-count-menu-not-plant-score.html",
+    "title": "Where fiber appears in a varied menu sample",
+    "description": "Beans, bowls, noodles and sandwiches all need their actual rows.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "menu-average-chain-weighting.html",
+    "title": "Can an average tell you which restaurant to choose?",
+    "description": "Compare the actual order first. Unequal menu coverage can distort a restaurant-wide average.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "breakfast-dataset-not-opening-hours.html",
+    "title": "Does a breakfast result mean breakfast is available now?",
+    "description": "Use a breakfast nutrition result to choose an order, then check local hours, availability, sides and drink portions before buying.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "exact-fiber-coverage-denominator.html",
+    "title": "How to compare fiber when a menu value is missing",
+    "description": "A missing or less-than fiber value is not zero. See how to compare known portions, apply a minimum and keep uncertain totals honest.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "published-vs-calculated-restaurant-rows.html",
+    "title": "What is included in a calculated restaurant meal?",
+    "description": "Count the named sides, sauce and drink, and check whether the total was published or added from components.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "burger-variants-not-nine-base-burgers.html",
+    "title": "In-N-Out burger variations: compare the exact build",
+    "description": "Standard, sauce and Protein Style entries describe different servings.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "saved-meal-source-version-check.html",
+    "title": "A saved meal is a bookmark, not a frozen restaurant promise",
+    "description": "Recheck the build when a menu or official source changes.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "noodles-mac-protein-not-simple-add-on.html",
+    "title": "Noodles & Company mac dishes: compare named builds",
+    "description": "A chicken or pork mac is not plain mac plus an assumed meat value.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "el-pollo-loco-bowls-protein-bigger-build.html",
+    "title": "El Pollo Loco bowls: Original, Grande or Double Chicken?",
+    "description": "More protein arrives with a different complete bowl.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "meal-calculation-two-serving-units.html",
+    "title": "Two servings of food do not mean two servings of every topping",
+    "description": "Different components need their own quantity multipliers.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "two-meal-total-not-day-recommendation.html",
+    "title": "Two restaurant meals are a subtotal, not a daily diet",
+    "description": "A sum can be accurate while still leaving the rest of the day unknown.",
+    "topic": "learn-eating-out"
+  },
+  {
+    "href": "breakfast-two-items-not-one-entry.html",
+    "title": "A breakfast order with two items needs two nutrition entries",
+    "description": "Count the actual food and drink instead of borrowing a single-item menu total.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "breakfast-yogurt-topping-layer.html",
+    "title": "Calculate yogurt with a topping without treating it as one label",
+    "description": "Separate the pot, topping and portion you actually use.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "breakfast-sandwich-half-not-half-protein.html",
+    "title": "Half a sandwich may not be half of every nutrient",
+    "description": "Dividing a mixed food requires a composition assumption, not just a knife.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "breakfast-food-vs-combo-menu.html",
+    "title": "Breakfast item or breakfast combo: compare the same thing",
+    "description": "Separate the food-only entry from its optional side and drink.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "arbys-breakfast-bread-format.html",
+    "title": "Arby’s bacon breakfast: biscuit, croissant, wrap or sourdough?",
+    "description": "The bread format changes the complete breakfast, not just its shape.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "cross-chain-breakfast-ham-formats.html",
+    "title": "Ham breakfasts at Arby’s and SONIC: choose the format",
+    "description": "A wrap, croissant and burrito are different breakfasts.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "breakfast-bacon-format-sodium-cross-chain.html",
+    "title": "A bacon breakfast comparison needs its bread format",
+    "description": "Arby’s and SONIC have similar-calorie choices with different sodium.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "sonic-ultimate-breakfast-not-extra-protein-rule.html",
+    "title": "SONIC’s Ultimate breakfast burrito: what changes?",
+    "description": "A bigger name adds more than just protein.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "taco-johns-breakfast-taco-vs-burrito.html",
+    "title": "Taco John’s breakfast taco or Meat & Potato Burrito?",
+    "description": "The same bacon theme does not make these equivalent portions.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "fast-food-breakfast-protein-comparison.html",
+    "title": "Compare protein in four tracked fast-food breakfasts",
+    "description": "Compare Chick-fil-A and Starbucks breakfast food by protein, calories, carbohydrate and sodium. Drinks and breakfast extras are excluded.",
+    "topic": "learn-breakfast"
+  },
+  {
+    "href": "/tim-hortons-canada-protein-latte-vs-latte.html",
+    "title": "Tim Hortons Canada: Protein Latte vs regular Latte",
+    "description": "Compare the named Canadian latte sizes, calories and protein. See a complete breakfast example and the limits of custom milk and sugar claims.",
+    "topic": "learn-coffee-drinks"
+  },
+  {
+    "href": "are-diet-drinks-bad-for-you.html",
+    "title": "Are diet drinks bad for you?",
+    "description": "Are diet drinks bad for you? Separate sweetener safety, weight-control evidence and practical drink choices without treating every can as good or bad.",
+    "topic": "learn-coffee-drinks"
+  },
+  {
+    "href": "breakfast-drinks-and-add-ons.html",
+    "title": "Compare the breakfast you will actually order",
+    "description": "Build a complete breakfast comparison instead of judging a sandwich alone. A worked order example includes a drink and side with clear source checks.",
+    "topic": "learn-coffee-drinks"
+  },
+  {
+    "href": "tim-hortons-canada-protein-latte-vs-latte.html",
+    "title": "Tim Hortons Canada: Protein Latte vs regular Latte",
+    "description": "Compare the named Canadian latte sizes, calories and protein. See a complete breakfast example and the limits of custom milk and sugar claims.",
+    "topic": "learn-coffee-drinks"
+  },
+  {
+    "href": "/new-york-fries-canada-fries-vs-poutine.html",
+    "title": "New York Fries Canada: fries vs Classic Poutine",
+    "description": "Compare snack and regular fries with the matching Classic Poutine. Keep named sizes, standard toppings and extra-topping rules separate.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "/mary-browns-big-mary-fries-vs-taters.html",
+    "title": "Mary Brown’s: Big Mary with small fries or Taters?",
+    "description": "Compare two complete Canadian Big Mary orders with exact small sides. See the calories, protein, fiber and sodium differences before drinks or sauces.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "/guzman-y-gomez-australia-chicken-bowl-vs-burrito.html",
+    "title": "Guzman y Gomez Australia: chicken bowl vs burrito",
+    "description": "Compare the standard Australian mild grilled chicken bowl, burrito and Caesar recipe by listed serving, with clear portion and customization limits.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "/subway-turkey-breast-canada-vs-mexico.html",
+    "title": "Subway Turkey Breast: Canada and Mexico recipes compared",
+    "description": "Compare Canadian Classics and Fresh Fit Turkey Breast with Mexico’s standard six-inch sub. Country, recipe, serving and source edition remain explicit.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "/canada-pepperoni-pizza-three-slice-comparison.html",
+    "title": "Canada pizza comparison: three small pepperoni slices",
+    "description": "Compare defined Domino’s and Pizza Pizza Canadian small-pizza portions, distinguish calculated from published values, and keep Pizza Nova’s missing macros visible.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "arbys-roast-beef-cheddar-french-dip.html",
+    "title": "Arby’s roast beef, Beef ’n Cheddar or French Dip?",
+    "description": "Three sandwiches show why equal protein does not mean equal sodium.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "del-taco-two-street-tacos-vs-burrito.html",
+    "title": "Two Del Taco street tacos or one chicken burrito?",
+    "description": "Count the tacos before comparing them with a whole burrito.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "sonic-small-burgers-not-same-order.html",
+    "title": "SONIC’s smaller burgers: read beyond “Jr”",
+    "description": "Three small burger names still describe different nutrition profiles.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "sonic-hot-dog-sodium-toppings.html",
+    "title": "SONIC hot dogs: similar calories, different sodium",
+    "description": "The Chicago, New York and Regular Hot Dog builds are not interchangeable.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "culvers-chicken-grilled-crispy-spicy.html",
+    "title": "Culver’s grilled, crispy or spicy chicken sandwich?",
+    "description": "Protein, calories and sodium all change with the published build.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "culvers-dinner-name-side-footnote.html",
+    "title": "What does a Culver’s dinner nutrition row include?",
+    "description": "The word “dinner” does not mean every side is in the number.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "taco-johns-bowl-base-tradeoff.html",
+    "title": "Taco John’s rice bowl or Loaded Potato Olés bowl?",
+    "description": "The base changes the whole chicken bowl, not only its carbohydrate line.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "qdoba-burrito-bowl-published-pair.html",
+    "title": "QDOBA Chicken Queso: bowl or burrito?",
+    "description": "Compare the actual published pair before assuming what the tortilla adds.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "el-pollo-loco-salad-dressing-boundary.html",
+    "title": "El Pollo Loco salads: check whether dressing is included",
+    "description": "A starred salad total is an incomplete dressed-salad total.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "el-pollo-loco-tortilla-complete-chicken-meal.html",
+    "title": "El Pollo Loco chicken meal: corn or flour tortillas?",
+    "description": "An explicit two-piece meal pair includes beans and rice.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "noodles-regular-noodle-orders-not-addons.html",
+    "title": "Noodles & Company: which noodle rows already include chicken?",
+    "description": "A named chicken dish and a base pasta need different accounting.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "noodles-two-chicken-salads.html",
+    "title": "Noodles & Company chicken salads: Caesar or Mediterranean?",
+    "description": "Lower calories and lower sodium do not point to the same salad.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "in-n-out-three-published-hamburger-versions.html",
+    "title": "In-N-Out Hamburger: standard, sauce swap or Protein Style?",
+    "description": "The restaurant publishes three exact builds worth keeping separate.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "in-n-out-double-vs-two-hamburgers.html",
+    "title": "In-N-Out Double-Double or two Hamburgers?",
+    "description": "More pieces do not necessarily mean a similar protein total.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "raising-canes-build-order-not-combo-name.html",
+    "title": "Raising Cane’s: build an order without inventing a combo total",
+    "description": "Listed individual portions can be added transparently; a combo name is not enough.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "arbys-sliders-count-whole-tray.html",
+    "title": "Arby’s sliders: one row is one slider",
+    "description": "A slider comparison needs the number on your tray.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "cross-chain-melt-sandwich-orders.html",
+    "title": "Reuben or sourdough melt: compare the whole sandwich",
+    "description": "Three different melt-style orders show why the name is not a serving standard.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "three-count-tacos-not-three-equal-meals.html",
+    "title": "Three tacos across Del Taco and QDOBA: define the count",
+    "description": "A three-taco named order and three single tacos need different arithmetic.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "protein-chicken-sandwich-size-cross-chain.html",
+    "title": "Three chicken sandwiches with different portion boundaries",
+    "description": "Cane’s, Culver’s and SONIC sandwich rows are complete builds.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "salad-burger-calories-no-category-rule.html",
+    "title": "Can a burger have fewer calories than a salad?",
+    "description": "The exact restaurant recipe matters more than the category name.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "cross-chain-chicken-soup-no-sodium-assumption.html",
+    "title": "Chicken soup at El Pollo Loco and Noodles & Company",
+    "description": "A soup label does not guarantee a lower-sodium lunch.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "burrito-wrap-cross-chain-no-size-standard.html",
+    "title": "A wrap is not a burrito serving standard",
+    "description": "Small wraps and large named burritos should not share one assumed portion.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "best-fast-food-restaurants-for-your-goals.html",
+    "title": "Healthy fast food: which restaurant fits your goal?",
+    "description": "Compare real orders for protein, calories, fiber and portion size. The best choice depends on what you want from your next meal.",
+    "topic": "learn-meal-comparisons"
+  },
+  {
+    "href": "protein-label-blank-daily-value.html",
+    "title": "Why can a protein label have grams but no % Daily Value?",
+    "description": "A blank percentage is different from zero protein. Use the grams and the portion.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "grams-per-serving-vs-protein-percentage.html",
+    "title": "Protein grams are different from the percentage of a food’s weight",
+    "description": "A protein percentage needs an explicit denominator.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-target-gap-not-automatic-extra.html",
+    "title": "A protein gap is arithmetic, not an instruction to add another order",
+    "description": "Compare the difference with portions you actually want to eat.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-serving-count-day-not-prescription.html",
+    "title": "Add protein from different portions without inventing a meal plan",
+    "description": "Keep the quantities and serving assumptions in a simple ledger.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-per-package-not-scoop-count.html",
+    "title": "How much protein is in a pack when serving weights differ?",
+    "description": "Use weight and the label basis to compare the whole pack.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-cost-currency-comparison.html",
+    "title": "Protein prices only compare when the currencies match",
+    "description": "A lower-looking price can be more expensive after a unit or currency mismatch.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "two-for-one-protein-promotion.html",
+    "title": "Does a two-for-one offer change the protein value?",
+    "description": "Calculate the usable total and the actual checkout price.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-value-after-fixed-delivery-fee.html",
+    "title": "Delivery fees can reverse a protein-cost comparison",
+    "description": "Include the costs that actually belong to the purchase.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-cost-pack-size-minimum-spend.html",
+    "title": "Cheaper protein per gram can require a larger cash outlay",
+    "description": "Separate checkout affordability from unit value.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "restaurant-protein-value-no-price-data.html",
+    "title": "Can you rank restaurant protein value without prices?",
+    "description": "Nutrition alone cannot establish cost per gram.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-sort-vs-portion-mass.html",
+    "title": "More food weight does not guarantee more protein",
+    "description": "Source portions let you separate quantity of food from protein grams.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "restaurant-protein-cost-receipt-prices.html",
+    "title": "Use your receipt to compare restaurant protein value",
+    "description": "Official protein can be paired with your actual paid price, with extras kept separate.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "two-person-restaurant-budget-constraints.html",
+    "title": "Choose two orders within one budget",
+    "description": "A lower price per protein gram may still exceed the money available.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "equal-tax-protein-value-ranking.html",
+    "title": "Does the same percentage tax change protein-value rankings?",
+    "description": "A shared percentage multiplies every ratio equally; fixed charges behave differently.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "restaurant-value-your-nutrient-not-protein.html",
+    "title": "Value per fiber gram asks a different question",
+    "description": "The nutrient in the denominator changes what a price comparison means.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "protein-value-price-range-overlap.html",
+    "title": "When uncertain prices prevent a confident protein-value ranking",
+    "description": "A range is more honest than choosing a convenient unverified price.",
+    "topic": "learn-protein-value"
+  },
+  {
+    "href": "/kirkland-canada-macadamia-vs-mixed-nuts.html",
+    "title": "Kirkland Canada: macadamias vs mixed nuts by portion",
+    "description": "Compare the Canadian retailer labels at equal 28 g and 50 g portions. Keep package identity, source uncertainty and serving sizes clear.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "/international-menu-data-coverage-explained.html",
+    "title": "Restaurant nutrition by country: what the coverage counts mean",
+    "description": "See an original eight-market coverage snapshot with explicit record, finder, macro and fiber denominators. Understand why catalogue counts cannot rank countries.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "percent-daily-value-not-vertical-total.html",
+    "title": "Why % Daily Value does not add up to 100%",
+    "description": "Each nutrient has its own reference amount. Adding the column creates a number with no useful meaning.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "per-ounce-vs-per-100g-food.html",
+    "title": "How to compare food listed per ounce and per 100 g",
+    "description": "Convert the portion basis first, keeping fluid ounces separate.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "half-serving-percent-daily-value.html",
+    "title": "Does half a serving mean half the % Daily Value?",
+    "description": "Scale the underlying amount, then allow for the label’s rounding.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "added-sugar-percentage-from-grams.html",
+    "title": "Calculate added-sugars % Daily Value from grams",
+    "description": "Use the U.S. label reference without turning it into a personal sugar prescription.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "net-carbs-total-carbohydrate.html",
+    "title": "Can I put “net carbs” into a total-carbohydrate filter?",
+    "description": "Use the same definition on both sides of a comparison.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "choose-fooddata-central-entry.html",
+    "title": "Which FoodData Central entry should I choose?",
+    "description": "Match food identity and preparation before choosing a nutrient number.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "tare-bowl-before-weighing-food.html",
+    "title": "How to tare a bowl before weighing food",
+    "description": "Measure the food rather than the bowl, and keep the unit visible.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "weigh-food-by-container-difference.html",
+    "title": "Weigh a spoonful by the change in container weight",
+    "description": "An alternative when putting the ingredient directly on the scale is awkward.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-fixed-seasoning-scale.html",
+    "title": "Scaling a recipe when one ingredient stays fixed",
+    "description": "A double batch is not exactly double if the ingredient list changes.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-one-ingredient-substitution.html",
+    "title": "Recalculate a recipe after changing one ingredient",
+    "description": "Subtract the old component and add the new one.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-sauce-on-side-two-totals.html",
+    "title": "Recipe with sauce on the side: keep two totals",
+    "description": "A separate sauce is useful only if its portion stays visible.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-evaporation-weight-density.html",
+    "title": "When water evaporates, recipe calories per gram can change",
+    "description": "Batch totals and batch density are different quantities.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-left-in-pan-residual.html",
+    "title": "Food left in the pan: what can you subtract from the recipe?",
+    "description": "A leftover weight needs a composition assumption before it becomes a nutrient subtraction.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-uniform-vs-component-serving.html",
+    "title": "A stew and a plated meal need different portion calculations",
+    "description": "Uniform batch division cannot replace separate component amounts.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-discrete-pieces-count-or-weight.html",
+    "title": "Counted pieces or gram portions: choose one clear recipe basis",
+    "description": "A piece count works only when the pieces are sufficiently comparable.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-quarter-batch-not-quarter-ingredient.html",
+    "title": "A quarter of the batch is not a quarter of one ingredient",
+    "description": "Keep the portion fraction attached to the correct total.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-added-water-not-new-nutrients.html",
+    "title": "Adding water changes recipe weight, not the counted ingredient totals",
+    "description": "Recalculate portion density after measuring the new yield.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-freezing-portion-count.html",
+    "title": "Freezing a batch does not decide its serving count",
+    "description": "Use measured containers and a consistent recipe basis.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "calculator-positive-inputs-zero-nutrition.html",
+    "title": "A zero nutrient value is different from a zero serving weight",
+    "description": "Some zeros are valid data; others make a calculation undefined.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "calculator-round-at-end.html",
+    "title": "Why a calculator should round at the end",
+    "description": "Small intermediate changes can add up across several portions.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "calculator-activity-choice-sensitivity.html",
+    "title": "Activity choices can change an estimate more than decimal places",
+    "description": "Use the activity description honestly instead of chasing a precise-looking result.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "calculator-pound-kilogram-entry.html",
+    "title": "Pounds and kilograms: change the unit, not just the number",
+    "description": "A wrong unit selection can overwhelm the rest of a calculator’s inputs.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "calculator-input-basis-checklist.html",
+    "title": "Before calculating: five checks on the nutrition input",
+    "description": "A correct formula cannot repair a mismatched source.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "calorie-tool-output-reverse-check.html",
+    "title": "Reverse-check a portion calculator before trusting its output",
+    "description": "A simple inverse calculation can reveal a wrong multiplier.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "taco-johns-small-fiber-bound.html",
+    "title": "Taco John’s “less than 1 g” fiber is not zero",
+    "description": "A source bound changes what you can total and filter honestly.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-combined-batches-not-average-serving.html",
+    "title": "Combine two batches without averaging the wrong servings",
+    "description": "Add whole-batch totals before dividing by the final serving count.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-repeated-ingredient-two-label-bases.html",
+    "title": "The same ingredient listed twice can use two label bases",
+    "description": "Convert each quantity before combining it.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-sauce-made-vs-sauce-used.html",
+    "title": "Made 300 g of sauce but used only 80 g?",
+    "description": "The main dish needs the amount transferred, not the whole sauce batch.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-target-batch-portions-integer.html",
+    "title": "A batch can yield six portions plus a smaller remainder",
+    "description": "Do not round the serving count and lose the leftover food.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "recipe-recalculate-new-product-label.html",
+    "title": "Changing brands means updating the ingredient record",
+    "description": "An equal spoonful can carry a different label value.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "calculator-height-feet-inches-not-decimal.html",
+    "title": "5 feet 10 inches is not 5.10 feet",
+    "description": "Convert compound height correctly before using an estimate.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "chipotle-rice-beans-nutrition.html",
+    "title": "Compare Chipotle rice and bean portions",
+    "description": "Compare Chipotle’s published 4 oz rice and bean portions, including fiber, protein and sodium. See two explicit rice-and-bean sums.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "fast-food-under-1000mg-sodium.html",
+    "title": "Tracked fast-food portions below 1,000 mg sodium",
+    "description": "Selected U.S. portions below 1,000 mg sodium, including sides and main items. Exact servings and excluded extras remain visible.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "grilled-and-blackened-chicken-comparison.html",
+    "title": "Compare grilled and blackened chicken portions",
+    "description": "Compare exact nugget, tender and teriyaki-chicken portions by protein, calories, fat and sodium without treating them as complete lunches.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "how-to-calculate-recipe-nutrition.html",
+    "title": "How to calculate nutrition for a homemade recipe",
+    "description": "Calculate calories and macros for a homemade recipe using ingredient totals, cooked yield, and portion weight without confusing raw and cooked entries.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "kirkland-canada-macadamia-vs-mixed-nuts.html",
+    "title": "Kirkland Canada: macadamias vs mixed nuts by portion",
+    "description": "Compare the Canadian retailer labels at equal 28 g and 50 g portions. Keep package identity, source uncertainty and serving sizes clear.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "serving-size-vs-portion-size.html",
+    "title": "Serving size vs. portion size: what is the difference?",
+    "description": "Learn the difference between a label serving and the portion you eat, and how to calculate calories and nutrients for your actual portion.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "subway-turkey-breast-canada-vs-mexico.html",
+    "title": "Subway Turkey Breast: Canada and Mexico recipes compared",
+    "description": "Compare Canadian Classics and Fresh Fit Turkey Breast with Mexico’s standard six-inch sub. Country, recipe, serving and source edition remain explicit.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "unequal-recipe-portions.html",
+    "title": "Different portions need different shares of the recipe",
+    "description": "Divide an evenly mixed recipe by finished weight when meal-prep containers differ in size. Includes totals, assumptions and a check for separated ingredients.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "nutrient-grams-not-food-weight.html",
+    "title": "Why do nutrient grams not add up to the food’s weight?",
+    "description": "A 200 g portion is not 200 g of protein, carbs and fat. Learn what that leaves out.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "sodium-milligrams-to-grams.html",
+    "title": "Sodium in mg and g: stop the thousand-fold mistake",
+    "description": "Convert the unit before comparing a label with a nutrient target.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "portion-ratio-vs-percent-change.html",
+    "title": "A portion multiplier is different from a percentage increase",
+    "description": "Two servings are twice the amount, but that is a 100% increase—not 200%.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "percentage-points-vs-percent-food-labels.html",
+    "title": "Percentage points and percent: read a label comparison correctly",
+    "description": "A move from 10% DV to 15% DV is five points, not a 5% increase.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "equal-calories-different-macros-menu.html",
+    "title": "Same calories, different macros: three real menu ties",
+    "description": "A tied calorie total can still leave very different protein and fat choices.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "fat-and-carb-two-energy-profiles.html",
+    "title": "Similar energy, different fat and carbohydrate profiles",
+    "description": "Two 950–960 kcal orders show why calories cannot fill missing macro lines.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "menu-pdf-filename-not-edition-date.html",
+    "title": "How current is a restaurant nutrition PDF?",
+    "description": "Check the printed edition, country, serving and current restaurant link before relying on an old nutrition PDF or a newer-looking filename.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "nutrition-totals-not-ingredient-recipe.html",
+    "title": "Can nutrition totals reveal a restaurant recipe?",
+    "description": "Six nutrient numbers cannot tell you every ingredient quantity.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "milligram-microgram-mineral-label.html",
+    "title": "Milligrams and micrograms: a thousand-fold label difference",
+    "description": "Check the unit before moving a nutrient into your notes.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "calorie-units-kcal-kilojoules.html",
+    "title": "Calories, kcal and kilojoules: compare energy units first",
+    "description": "An energy number needs its unit before it can be compared.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "as-packaged-vs-prepared-nutrition.html",
+    "title": "Use the column that matches your preparation",
+    "description": "Avoid counting milk or oil twice. Check what an as-prepared column includes and adjust a worked example when your preparation differs.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "body-recomposition-explained.html",
+    "title": "Body recomposition: how to track progress",
+    "description": "Track body recomposition with consistent measurements, training notes and realistic expectations. Learn what changes in weight, waist and strength can tell you.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "calculate-macros-mixed-bowl.html",
+    "title": "Build the meal total one ingredient at a time",
+    "description": "Scale each ingredient to the amount in your bowl, then add calories and protein. A four-part example includes a sauce and prevents mixed-unit errors.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "calories-in-multi-serving-packages.html",
+    "title": "Count the package you actually eat",
+    "description": "Read per-serving and per-package columns correctly, account for inner packets, and calculate a partial package with clear examples.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "calories-on-rest-days.html",
+    "title": "Should you eat the same calories on rest days?",
+    "description": "You can keep calories the same on rest days or cycle them around training. Compare both approaches while keeping recovery and your weekly goal in view.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "calories-vs-macros-what-matters-more.html",
+    "title": "Calories vs. macros: what matters more?",
+    "description": "Calories vs. macros: learn which matters for weight change, muscle, fullness and performance—and how to set priorities without tracking everything.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "can-you-build-muscle-in-a-calorie-deficit.html",
+    "title": "Can you build muscle in a calorie deficit?",
+    "description": "Muscle gain in a calorie deficit is possible for some people, but energy deficiency makes it harder. See who is most likely to progress and what matters.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "canada-pepperoni-pizza-three-slice-comparison.html",
+    "title": "Canada pizza comparison: three small pepperoni slices",
+    "description": "Compare defined Domino’s and Pizza Pizza Canadian small-pizza portions, distinguish calculated from published values, and keep Pizza Nova’s missing macros visible.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "carbs.html",
+    "title": "What do carbs do in your body?",
+    "description": "Carbohydrates provide energy. Foods such as oats, rice, potatoes, fruit and beans can also bring fiber, vitamins and minerals to your meals.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "chick-fil-a-vs-popeyes-chicken.html",
+    "title": "Grilled nuggets or blackened tenders?",
+    "description": "Compare three exact chicken portions by protein, calories, fat and sodium, then see a defined side-added calculation without invented swaps.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "chipotle-toppings-nutrition.html",
+    "title": "What do Chipotle toppings add to the order?",
+    "description": "Compare cheese, sour cream, guacamole, salsas, vinaigrette and vegetables using their own published serving sizes, with worked addition totals.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "chipotle-vs-cava-chicken-bowls.html",
+    "title": "Compare a Chipotle chicken bowl with CAVA’s named bowls",
+    "description": "A defined Chipotle chicken bowl and two published CAVA bowls compared by calories, protein, carbs, fiber and sodium.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "cutting-bulking-maintenance-explained.html",
+    "title": "Cutting, bulking or maintenance: what do they mean?",
+    "description": "Cutting means eating for weight loss. Bulking means eating to support weight gain and muscle building. Maintenance means keeping weight broadly steady.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "does-creatine-cause-hair-loss.html",
+    "title": "Does creatine cause hair loss?",
+    "description": "Does creatine cause hair loss? See what the 2009 DHT study found, what the 2025 hair-follicle trial added and what remains uncertain.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "drained-weight-nutrition-label.html",
+    "title": "Check the label before using drained weight",
+    "description": "Check whether a canned food label describes drained solids or the contents with liquid. A worked example shows the difference without inventing a conversion.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "edible-portion-vs-purchased-weight.html",
+    "title": "The weight you buy may not be the weight you eat",
+    "description": "Separate the amount bought from the food you eat. A simple yield example shows how edible weight changes food quantity and cost comparisons.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "fast-food-fiber-and-protein.html",
+    "title": "Fast-food orders that combine fiber and protein",
+    "description": "Selected fast-food orders with at least 20 g protein and 7 g fiber. Compare calories, sodium and the exact included portions.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "fast-food-meals-500-to-700-calories.html",
+    "title": "Compare fast-food orders in the 500–700-calorie range",
+    "description": "Compare tracked bowls, salads, a wrap and a sandwich within a 500–700-calorie range, with protein, fiber and serving details.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "fast-food-nutrition-data-report.html",
+    "title": "The GetMacros restaurant-data snapshot",
+    "description": "An original, reproducible snapshot of GetMacros’ tracked U.S. order dataset, source-inspection coverage, nutrient provenance and exact scope.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "fast-food-protein-and-sodium.html",
+    "title": "More protein does not always mean less sodium",
+    "description": "A source-audited comparison of fast-food orders with at least 25 g protein, sorted by sodium and retaining exact servings.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "fats.html",
+    "title": "What does fat do in your body?",
+    "description": "Fat provides energy, essential fatty acids and help absorbing vitamins A, D, E and K. Both the type and amount matter.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "grams-vs-milliliters-nutrition-labels.html",
+    "title": "Grams and milliliters are different measurements",
+    "description": "A practical way to compare labels in grams and milliliters without assuming every liquid weighs the same. Includes a worked dressing example.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+    "title": "Greggs: Sausage Roll vs Vegan Roll nutrition",
+    "description": "Compare the UK source-listed rolls, protein, calories and salt. Count packs correctly and see why rounded per-item values can differ from package totals.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "guzman-y-gomez-australia-chicken-bowl-vs-burrito.html",
+    "title": "Guzman y Gomez Australia: chicken bowl vs burrito",
+    "description": "Compare the standard Australian mild grilled chicken bowl, burrito and Caesar recipe by listed serving, with clear portion and customization limits.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "harveys-original-angus-veggie-burger-comparison.html",
+    "title": "Harvey’s: Original vs Angus vs Veggie Burger",
+    "description": "Compare the Canadian listed burger builds, calories, protein, fiber and sodium, then account for cheese and a separate fries portion.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "high-protein-fast-food-under-500-calories.html",
+    "title": "Fast-food orders under 500 calories with at least 25 g protein",
+    "description": "Selected orders with at least 25 g protein and fewer than 500 calories, with servings, sodium, fiber and excluded extras kept visible.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-many-calories-should-i-eat-a-day.html",
+    "title": "How many calories should I eat a day?",
+    "description": "There is no single calorie target for everyone. Your body size, age, activity and goal help estimate a starting point.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-much-fiber-per-day.html",
+    "title": "How much fiber do you need per day?",
+    "description": "Fiber helps with digestion and can support heart health. Beans, whole grains, fruit, vegetables, nuts and seeds are practical ways to get more.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-much-protein-can-your-body-absorb.html",
+    "title": "How much protein can your body absorb at once?",
+    "description": "Your body does not waste protein after 30 grams. Learn the difference between protein absorption, muscle protein synthesis and practical meal distribution.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-much-protein-per-day.html",
+    "title": "How much protein do you need per day?",
+    "description": "Your protein needs depend on your body size, training and health. Use these ranges as a starting point, then choose foods that make the target practical.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-much-sodium-per-day.html",
+    "title": "How much sodium should you have per day?",
+    "description": "Packaged foods and restaurant meals can contain a lot of sodium. Check the whole portion, then compare options that fit the meal you want.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-to-build-a-balanced-meal-with-macros.html",
+    "title": "How to build a balanced meal with macros",
+    "description": "Build a balanced meal with protein, carbohydrate, produce and satisfying fat—then adjust portions for cutting, maintenance or bulking.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-to-calculate-macros-by-hand.html",
+    "title": "How to calculate your macros by hand",
+    "description": "Estimate daily calories first, then convert protein, fat and carbs into grams. This worked example explains the arithmetic behind a macro plan.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-to-calculate-maintenance-calories.html",
+    "title": "How to calculate maintenance calories",
+    "description": "Calculate maintenance calories with a clear starting estimate, then use your weight trend to find the intake that actually maintains your weight.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-to-eat-out-without-wrecking-your-goal.html",
+    "title": "How to eat out while working toward your goals",
+    "description": "You can enjoy a restaurant meal while working on weight loss, muscle gain or everyday nutrition. Start with the whole order and a goal that matters to you.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "how-to-hit-protein-goal-on-budget.html",
+    "title": "How to hit your protein goal on a budget",
+    "description": "Reach your protein goal on a budget by comparing cost per gram, choosing flexible staples and planning meals that use the whole package.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "international-menu-data-coverage-explained.html",
+    "title": "Restaurant nutrition by country: what the coverage counts mean",
+    "description": "Compare coverage across 12 markets, with exact tracked-record, finder, macro and fiber counts. Catalogue coverage does not rank countries or national diets.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "macros-for-muscle-gain.html",
+    "title": "How to set your macros for muscle gain",
+    "description": "Muscle gain depends on training, enough food and recovery. A useful macro plan supports those things without turning every meal into a calculation.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "macros-for-weight-loss.html",
+    "title": "How to set your macros for weight loss",
+    "description": "Start with a manageable calorie target, include enough protein, and choose a balance of carbs and fat you can keep eating comfortably.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "mary-browns-big-mary-fries-vs-taters.html",
+    "title": "Mary Brown’s: Big Mary with small fries or Taters?",
+    "description": "Compare two complete Canadian Big Mary orders with exact small sides. See the calories, protein, fiber and sodium differences before drinks or sauces.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "missing-restaurant-nutrition.html",
+    "title": "A missing nutrition value is not zero",
+    "description": "Understand unknown nutrient values, incomplete meal totals and filter behavior. Learn why missing fat or sodium must not be recorded as zero.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "new-york-fries-canada-fries-vs-poutine.html",
+    "title": "New York Fries Canada: fries vs Classic Poutine",
+    "description": "Compare snack and regular fries with the matching Classic Poutine. Keep named sizes, standard toppings and extra-topping rules separate.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "nutrition-label-rounding.html",
+    "title": "Label math is an estimate, even when the division is exact",
+    "description": "Understand rounded calories and nutrient values, avoid false precision when scaling, and distinguish a labeled zero from missing restaurant data.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "panda-express-base-nutrition-comparison.html",
+    "title": "Compare Panda Express bases using the right serving",
+    "description": "Compare full Panda Express bases by calories, carbs, fiber and sodium, with the 10 oz Super Greens base separated from the 3.5 oz entree entry.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "panda-express-chicken-entree-comparison.html",
+    "title": "Compare three Panda Express chicken entrees",
+    "description": "Compare source-defined Panda Express chicken portions and see what changes when the same full rice base is added to each.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "protein-cost-food-waste.html",
+    "title": "A bulk pack saves money only if you use enough of it",
+    "description": "Calculate protein cost for the amount you actually use. A break-even example shows how unfinished food changes a bulk package comparison.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "protein-density-fast-food.html",
+    "title": "How much protein do you get per 100 calories?",
+    "description": "Compare protein density and total protein in selected fast-food orders. See why chicken portions and complete bowls answer different questions.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "protein-powder-scoop-weight.html",
+    "title": "Use the powder’s serving weight, not just the scoop count",
+    "description": "A scoop is a product-specific serving measure. Use the label’s gram weight to calculate partial servings and include the liquid in your shake separately.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "protein.html",
+    "title": "What does protein do in your body?",
+    "description": "Protein helps build and repair tissues, including muscle. Your body also uses it to make enzymes, hormones and antibodies.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "raw-vs-cooked-food-weight.html",
+    "title": "Match the food weight to its raw or cooked entry",
+    "description": "Match food weights to raw or cooked nutrition entries. See why a fixed conversion fails and how to divide a cooked batch using your own yield.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "restaurant-bowl-nutrition-comparison.html",
+    "title": "A bowl is a format, not a nutrition target",
+    "description": "Compare selected Chipotle, CAVA and Sweetgreen bowls with exact build descriptions, protein, fiber, sodium and source-date boundaries.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "subway-mexico-chicken-sandwich-comparison.html",
+    "title": "Subway Mexico: oven-roasted, breaded or teriyaki chicken?",
+    "description": "Compare exact Mexico six-inch chicken sandwich recipes, calories and protein. Count the included Sweet Onion sauce and approximate footlong correctly.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "sweetgreen-vs-panera-chicken-salads.html",
+    "title": "Compare two whole chicken salads",
+    "description": "Compare whole Guacamole Greens and Caesar with Chicken salads by calories, protein, fat, fiber and sodium, including their standard dressing.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "use-calorie-target-meal-finder.html",
+    "title": "Use your daily estimate to find a meal",
+    "description": "Turn a daily calculator estimate into optional meal-search limits without treating one-third of your day as a prescription or sharing personal inputs.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "vegetarian-fast-food-protein-comparison.html",
+    "title": "Compare protein in tracked meat-free orders",
+    "description": "Compare protein, calories and fiber in tracked meat-free bowls, salads and breakfast foods, with ingredient and source limitations.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "what-are-macros.html",
+    "title": "What are macros?",
+    "description": "Macros are protein, carbohydrates and fat. They provide energy and help your body work. Here is what the numbers mean when you plan a meal.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "what-is-a-calorie-deficit.html",
+    "title": "What is a calorie deficit?",
+    "description": "A calorie deficit means taking in less energy than you use over time. Learn how to estimate one, why weight loss slows and what to monitor.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "what-to-eat-after-a-workout.html",
+    "title": "What to eat after a workout",
+    "description": "Build a practical post-workout meal with protein, carbs and fluids. Learn when recovery timing matters and when your next normal meal is enough.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "what-to-eat-before-a-workout.html",
+    "title": "What to eat before a workout",
+    "description": "What to eat before a workout, from a full meal to a quick snack. Choose carbs, protein and portion size based on timing and stomach comfort.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "when-to-recalculate-calories-and-macros.html",
+    "title": "When should you recalculate calories and macros?",
+    "description": "Recalculate calories and macros after meaningful changes—not every scale fluctuation. Use weight trends, activity and performance to decide when.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "why-did-i-gain-weight-overnight.html",
+    "title": "Why did I gain weight overnight?",
+    "description": "An overnight scale increase is usually not a sudden change in body fat. Learn how food mass, fluid, sodium, carbs and digestion move daily weight.",
+    "topic": "learn-nutrition-basics"
+  },
+  {
+    "href": "/leon-uk-breakfast-muffin-egg-pot-nutrition.html",
+    "title": "LEON UK breakfast: muffins, egg pot and sando compared",
+    "description": "Compare LEON UK breakfast portions, calories, protein and salt: two egg muffins, the salmon egg pot and halloumi sando.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "/nandos-uk-quarter-chicken-rice-chips-corn.html",
+    "title": "Nando’s UK: 1/4 Chicken with rice, chips or corn",
+    "description": "Compare calculated Nando’s chicken-and-side totals using exact regular UK portions, including the Northern Ireland rice distinction.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "/wendys-uk-breakfast-muffin-wrap-calories-protein.html",
+    "title": "Wendy’s UK breakfast: muffins versus the egg-and-cheese wrap",
+    "description": "Compare Wendy’s UK breakfast calories, protein, portions, fiber and salt, with clear sauce and combo assumptions.",
+    "topic": "learn-portions-labels"
+  },
+  {
+    "href": "/chick-fil-a-canada-grilled-sandwich-fries-sizes.html",
+    "title": "Chick-fil-A Canada: small, medium or large fries with a grilled sandwich",
+    "description": "Compare three exact Canadian orders: grilled sandwich, small unsweet tea and 96 g, 125 g or 179 g waffle fries.",
+    "topic": "learn-portions-labels"
+  }
+]

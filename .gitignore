@@ -12,3 +12,6 @@ docs/global-product-release-2026-10-11/baseline-source.zip
 # source; the seeded page is a ~2 MB build artifact regenerated from them.
 design/*.html
 !design/*.dc.html
+
+# Exclude a third-party documentation capture rejected by push protection.
+/docs/ultimate-release-2026-10-19/editorial/foodtools-sources/gs1_origin.html

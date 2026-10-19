@@ -28,6 +28,7 @@ class PageParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.title_parts: list[str] = []
         self.in_title = False
+        self.in_head = False
         self.h1_count = 0
         self.in_h1 = False
         self.h1_parts: list[str] = []
@@ -50,8 +51,10 @@ class PageParser(HTMLParser):
     def handle_starttag(self, tag: str, attrs) -> None:
         a = self.attrs(attrs)
         tag = tag.lower()
-        if tag == "title":
-            self.in_title = True
+        if tag == "head":
+            self.in_head = True
+        elif tag == "title":
+            self.in_title = self.in_head
         elif tag == "h1":
             self.h1_count += 1
             self.in_h1 = True
@@ -79,7 +82,9 @@ class PageParser(HTMLParser):
             self.result_cards.append("")
 
     def handle_endtag(self, tag: str) -> None:
-        if tag.lower() == "title":
+        if tag.lower() == "head":
+            self.in_head = False
+        elif tag.lower() == "title":
             self.in_title = False
         elif tag.lower() == "h1":
             self.in_h1 = False
@@ -388,12 +393,14 @@ def main() -> int:
         # The point is that the page states the current count, not that it uses
         # one exact sentence. The number is derived from the explicit release
         # inventory, not changed to match whatever data happens to be present.
-        "about.html": rf"{expected_meals}(?:</strong><small>|\s+)(?:tracked )?(?:menu options|recorded orders)",
         "healthy-fast-food.html": rf"{expected_meals} (?:tracked |U\.S\. )?(?:menu options|recorded orders)",
     }
     for path, claim in count_claims.items():
         if not re.search(claim, pages.get(path, ("", PageParser()))[0]):
             errors.append(f"{path}: current restaurant-option count claim missing")
+    about_text=pages.get('about.html',('',PageParser()))[0]
+    if '463 recorded orders from 25 U.S. restaurant chains.' in about_text or 'href="/sources.html"' not in about_text:
+        errors.append('about.html: preserve source access and remove the obsolete whole-site count')
     finder_text = pages.get("restaurant-meal-finder.html", ("", PageParser()))[0]
     references=re.findall(r'data-reference-order="([^"]+)"',finder_text)
     from html import unescape

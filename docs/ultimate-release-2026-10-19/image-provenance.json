@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-19",
+  "newAssets": [
+    {
+      "id": "getmacros-original-grilled-sandwich",
+      "path": "/images/meal-cutouts/grilled-sandwich.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Original SVG source authored in this release: images/meal-cutouts/grilled-sandwich.svg",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-19",
+      "sha256": "f488968b6426c296093cc5890879089d9727fbd867f7eeb147bf5f7fc2a9989d"
+    },
+    {
+      "id": "getmacros-original-yogurt",
+      "path": "/images/meal-cutouts/yogurt.svg",
+      "kind": "original-category-illustration",
+      "exactMealPhotograph": false,
+      "width": 400,
+      "height": 300,
+      "background": "transparent",
+      "source": "Original SVG source authored in this release: images/meal-cutouts/yogurt.svg",
+      "creator": "GetMacros project artwork",
+      "rights": "Original project SVG source; no third-party imagery or brand trade dress.",
+      "permittedTransformations": [
+        "resize",
+        "crop",
+        "recolor",
+        "compose"
+      ],
+      "attributionRequired": false,
+      "reviewedAt": "2026-10-19",
+      "sha256": "840dc27ce0fef634c2576aa90e944291af81b4ac6096d75b36e46e20e8549ab9"
+    }
+  ],
+  "characterChanges": "Layered blush details for egg, strawberry and broccoli; original broccoli florets. Existing original cast retained.",
+  "inlineArt": [
+    "Original botanical hero SVG",
+    "Fifteen restaurant comparison SVG charts",
+    "Original food-diary backup diagram"
+  ],
+  "exactMealPhotosAdded": 0,
+  "photographicCutoutsAdded": 0,
+  "exactPhotoGaps": 10327,
+  "referenceScreenshots": "Composition references only; no restaurant/manufacturer photographs copied into the public interface."
+}

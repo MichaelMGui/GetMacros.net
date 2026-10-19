@@ -12,7 +12,7 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  assert all(s in {'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css','css/clarity-media.css','css/home-workspace.css'} for s in styles),(path.name,styles)
  if 'css/home-workspace.css' in styles:assert 'data-home-template=' in text,path.name
  if 'css/food-app.css' in styles:assert 'food-app' in text or 'product-diary:start' in text,path.name
- if 'css/release-library.css' in styles:assert path.name in {'articles.html','blog.html','restaurant-meal-guides.html'} or 'class="restaurant-reference"' in text,path.name
+ if 'css/release-library.css' in styles:assert path.name in {'articles.html','blog.html','restaurant-meal-guides.html'} or 'class="restaurant-reference"' in text or 'class="editorial-story"' in text,path.name
  if 'css/food-shelf.css' in styles:assert path.name=='food-shelf.html' or 'data-shelf-save' in text or 'play-page' in text,path.name
  scripts=[n['attrs'].get('src','') for n in doc.nodes if n['tag']=='script']
  assert not any('adsbygoogle' in s or re.search(r'js/(main|tide-motion|lang)\.js',s) for s in scripts),path.name
@@ -21,8 +21,8 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  assert len(ids)==len(set(ids)),path.name
  assert len([n for n in doc.nodes if n['tag']=='h1'])==1,path.name
  assert text.count('data-theme-toggle')==0,path.name
- assert text.count('data-theme-choice="light"')==1 and text.count('data-theme-choice="dark"')==1,path.name
- assert len([n for n in doc.nodes if 'appearance-picker' in n['attrs'].get('class','').split()])==1,path.name
+ assert all(text.count('data-theme-choice="'+theme+'"')==1 for theme in ['light','citrus','berry','dark']),path.name
+ assert len([n for n in doc.nodes if 'theme-dialog' in n['attrs'].get('class','').split()])==1,path.name
  main=next(n for n in doc.nodes if n['tag']=='main')
  content=text[main['inner']:main['close']]
  plain=re.sub('<[^>]+>',' ',content)
@@ -34,10 +34,10 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  if 'js/meal-data.js' in text and path.name!='index.html':
   assert text.index('js/meal-data.js')<text.index('js/meal-provenance.js'),path.name
 css=(ROOT/'css/publication.css').read_text(encoding='utf-8')
-# 80 KB includes the accessible native-dialog navigation, source panels and
-# shared liquid interaction system. Also bound the compressed transfer cost.
+# Four palettes, accessible dialogs and per-family interaction states share this budget.
+# Route-specific reading, diary and game styles remain separate; bound gzip as well.
 # Lab timing and compressed sizes are recorded separately; this is a size guard, not a speed claim.
-assert len(css.encode())<80000
+assert len(css.encode())<90000
 assert len(gzip.compress(css.encode()))<18000
 assert 'prefers-reduced-motion:reduce' in css and 'html[data-theme=dark]' in css
 assert 'google.com, pub-2316153877942502, DIRECT, f08c47fec0942fa0' in (ROOT/'ads.txt').read_text()

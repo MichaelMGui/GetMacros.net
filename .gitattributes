@@ -10,3 +10,6 @@
 docs/global-coverage-2026-10-17/restaurants/** -text
 docs/flagship-release-2026-10-18/uk/sources/** -text
 docs/flagship-release-2026-10-18/markets/sources/** -text
+
+docs/ultimate-release-2026-10-19/editorial/sources/** -text
+docs/ultimate-release-2026-10-19/editorial/foodtools-sources/** -text

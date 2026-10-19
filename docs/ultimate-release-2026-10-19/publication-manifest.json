@@ -1,0 +1,806 @@
+[
+  {
+    "route": "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+    "title": "Tim Hortons Canada breakfast: muffin, biscuit or Farmer’s Wrap?",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Tim Hortons Canada nutrition guide · July 2026",
+        "url": "https://cdn.sanity.io/files/czqk28jt/prod_th_ca/147e592c99c865b50aca61832fa8ce3975cb0da5.pdf",
+        "checked_on": "2026-10-19",
+        "notes": "Canadian July 2026 edition, exact named breakfast recipes and drinks; no inferred customizations."
+      },
+      {
+        "title": "Tim Hortons official Canadian nutrition and allergen guidance",
+        "url": "https://help.timhortons.ca/hc/en-ca/articles/35734906287643-Where-can-I-view-the-nutrition-and-allergen-information-for-Tim-Hortons-menu-items",
+        "checked_on": "2026-10-19",
+        "notes": "Confirms official item and allergen information is provided through the Canadian website/app."
+      }
+    ]
+  },
+  {
+    "route": "/harveys-canada-burger-fries-onion-rings-order.html",
+    "title": "Harvey’s Canada: an Original Burger with fries or onion rings",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Harvey’s Canada official nutrition and allergen table",
+        "url": "https://www.harveys.ca/en/nutrition.html",
+        "checked_on": "2026-10-19",
+        "notes": "Official Canadian Original Burger, fries and onion-ring values and named serving weights. Optional garnishes, sauces and drinks are not automatically included."
+      }
+    ]
+  },
+  {
+    "route": "/greggs-breakfast-baguette-calories-protein.html",
+    "title": "Greggs breakfast baguettes: calories, protein and your coffee",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Greggs official nutrition guide",
+        "url": "https://a.storyblok.com/f/94904/x/7dd8489dab/nutritional-information.pdf",
+        "checked_on": "2026-10-19",
+        "notes": "September 2026 official portion table, including the source’s g/ml size-column label."
+      },
+      {
+        "title": "Greggs Bacon and Sausage Breakfast Baguette",
+        "url": "https://www.greggs.com/menu/product/bacon-and-sausage-breakfast-baguette-1000723",
+        "checked_on": "2026-10-19",
+        "notes": "Official product page independently confirms 208.5 g, 550 kcal, 29 g protein, 63 g carbs, 20 g fat, 3.1 g salt."
+      }
+    ]
+  },
+  {
+    "route": "/kfc-uk-burger-twister-wrap-nutrition.html",
+    "title": "KFC UK: Fillet Burger, Zinger or a Twister wrap?",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "KFC UK official nutrition and allergen table",
+        "url": "https://brand-uk.assets.kfc.co.uk/nutrition-allergens.pdf",
+        "checked_on": "2026-10-19",
+        "notes": "Official UK table with individual named recipes; sides and drinks are separate. No U.S. values or meal-bundle totals substituted."
+      },
+      {
+        "title": "KFC UK Twister Wrap Meal",
+        "url": "https://www.kfc.co.uk/our-menu/twisters/kfc-twister-wrap-meal",
+        "checked_on": "2026-10-19",
+        "notes": "Confirms the meal presentation is distinct from a standalone named wrap."
+      }
+    ]
+  },
+  {
+    "route": "/subway-uk-six-inch-chicken-sandwich-nutrition.html",
+    "title": "Subway UK six-inch chicken subs: compare the actual builds",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Subway UK official nutrition page",
+        "url": "https://www.subway.com/en-gb/menunutrition/nutrition",
+        "checked_on": "2026-10-19",
+        "notes": "Still links the September 2026 UK/ROI guide during current official-page review."
+      },
+      {
+        "title": "Subway UK/ROI September 2026 nutrition guide",
+        "url": "https://media.subway.com/dam/urn:aaid:aem:c9e92cc1-b7a5-493f-adcd-7acb0641eeba/original/as/UKIBuildsandIngredientsNutritionalInformationSeptember2.pdf",
+        "checked_on": "2026-10-11",
+        "notes": "September 2026 UK/ROI edition. Bread, named protein and stated vegetables included; other customizations require their own supported amounts."
+      }
+    ]
+  },
+  {
+    "route": "/wagamama-uk-ramen-calories-protein-salt.html",
+    "title": "Wagamama ramen: compare calories, protein and salt together",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Wagamama official UK menu",
+        "url": "https://www.wagamama.com/menu",
+        "checked_on": "2026-10-19",
+        "notes": "Current live menu and selected standard/gluten-free recipe nutrition inspected; snapshot values retained. Separate NorthernIreland menu is not treated as an equivalent recipe."
+      }
+    ]
+  },
+  {
+    "route": "/wasabi-sushi-set-dressing-nutrition.html",
+    "title": "Wasabi sushi boxes: Harmony, Mixed maki and Rainbow compared",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Wasabi UK nutrition guide · Version 34, released 17 September 2026",
+        "url": "https://www.wasabi.uk.com/wp-content/uploads/2026/09/WAS_Nutritional_Guide_210926v3.pdf",
+        "checked_on": "2026-10-19",
+        "notes": "Per-portion calories reported by Wasabi; protein, carbs, fat and salt calculated from per 100 g × named portion weight. Version 34 released 17 September 2026."
+      }
+    ]
+  },
+  {
+    "route": "/pizzaexpress-classic-romana-margherita-nutrition.html",
+    "title": "PizzaExpress Margherita: Classic, Romana or Large Classic?",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "PizzaExpress official UK nutrition table",
+        "url": "https://content-cdn.pizzaexpress.com/files/lj3txstz/production/b72a05d52e0a11e8b6c37620bbf93cc170595598.pdf",
+        "checked_on": "2026-10-19",
+        "notes": "Official UK whole-pizza portions; no universal slice size or cross-country equivalent assumed."
+      },
+      {
+        "title": "PizzaExpress official restaurant menu",
+        "url": "https://mobile-pay.pizzaexpress.com/our-restaurant-menu/mains",
+        "checked_on": "2026-10-19",
+        "notes": "Confirms the current Classic Margherita menu entry; local configuration and availability can vary."
+      }
+    ]
+  },
+  {
+    "route": "/tortilla-uk-burrito-bowl-rice-portions.html",
+    "title": "Tortilla UK: a bowl is more than a burrito without the wrap",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Tortilla UK nutrition and allergen guide · updated 17 September 2026",
+        "url": "https://a.storyblok.com/f/158888/x/192342b9c3/tortilla-nutrition-guide.pdf?cv=1790069173319",
+        "checked_on": "2026-10-19",
+        "notes": "Guide updated 17 September 2026, page 4 medium ingredient allocations. Totals are GetMacros calculations, not restaurant-published finished orders."
+      },
+      {
+        "title": "Tortilla official UK menu",
+        "url": "https://www.tortilla.co.uk/menu",
+        "checked_on": "2026-10-19",
+        "notes": "Confirms format and configurable ingredient context, without claiming a complete default build."
+      }
+    ]
+  },
+  {
+    "route": "/caffe-nero-latte-milk-size-nutrition.html",
+    "title": "Caffè Nero Latte: compare milk choices and sizes",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Caffè Nero UK official coffee menu",
+        "url": "https://www.caffenero.com/uk/menu/coffee",
+        "checked_on": "2026-10-19",
+        "notes": "Official UK hot Latte recipes with named milk/drink and size. Total sugars are not an added-sugar breakdown."
+      }
+    ]
+  },
+  {
+    "route": "/five-guys-uk-little-hamburger-cheeseburger.html",
+    "title": "Five Guys UK: Little or regular burger—and which fries?",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Five Guys UK nutrition guide ·13 October 2026",
+        "url": "https://www.fiveguys.co.uk/wp-content/uploads/sites/30/2026/10/FGUK_FOH_allergen_ingredient_nutrition_MM_shake_DIGITAL_20261013.pdf",
+        "checked_on": "2026-10-19",
+        "notes": "13 October 2026 UK guide. Whole burger totals used instead of recomposing independently rounded ingredient entries."
+      },
+      {
+        "title": "Five Guys UK official ordering menu",
+        "url": "https://order.fiveguys.co.uk/menu",
+        "checked_on": "2026-10-19",
+        "notes": "Confirms one versus two patties and listed burger calorie figures. Prices observed are not used as nationwide prices."
+      }
+    ]
+  },
+  {
+    "route": "/chopstix-uk-box-base-toppings-calories.html",
+    "title": "Chopstix UK calories: build the base and toppings together",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Chopstix Vegetable Chow Mein official nutrition table",
+        "url": "https://chopstixnoodles.co.uk/menu/veg-noodles/",
+        "checked_on": "2026-10-19",
+        "notes": "Current Regular base values and explicit instruction to add topping nutrition rechecked."
+      },
+      {
+        "title": "Chopstix Caramel Drizzle Chicken official table",
+        "url": "https://chopstixnoodles.co.uk/menu/caramel-drizzle-chicken/",
+        "checked_on": "2026-10-19",
+        "notes": "R/L/XL column distinguished from Small and Topper; current values rechecked."
+      },
+      {
+        "title": "Chopstix Sweet & Sour Chicken official table",
+        "url": "https://chopstixnoodles.co.uk/menu/sweet-and-sour-chicken/",
+        "checked_on": "2026-10-19",
+        "notes": "Named matching allocation, not a standalone full box."
+      },
+      {
+        "title": "Chopstix Egg Fried Rice official table",
+        "url": "https://chopstixnoodles.co.uk/menu/egg-fried-rice/",
+        "checked_on": "2026-10-19",
+        "notes": "Regular base only."
+      },
+      {
+        "title": "Chopstix Cauli Rice official table",
+        "url": "https://chopstixnoodles.co.uk/menu/skinny-rice/",
+        "checked_on": "2026-10-19",
+        "notes": "Regular base only."
+      }
+    ]
+  },
+  {
+    "route": "/starbucks-uk-pumpkin-spice-latte-hot-iced.html",
+    "title": "Starbucks UK Pumpkin Spice Latte: hot or iced, Tall or Grande?",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Starbucks UK Autumn 2026 beverage nutrition and ingredients guide",
+        "url": "https://www.starbucks.co.uk/sites/starbucks-uk-pwa/files/2026-09/AUT_26_UK_AllergenBook_CORE_BEVERAGE_v04.pdf",
+        "checked_on": "2026-10-19",
+        "notes": "UK Autumn 2026 guide dated 18 September. Exact hot/iced skimmed-milk recipes, sizes and included topping descriptions retained."
+      },
+      {
+        "title": "Starbucks UK official nutrition and allergen guidance",
+        "url": "https://www.starbucks.co.uk/nutrition-allergens",
+        "checked_on": "2026-10-19",
+        "notes": "Local recipe and allergy information, not U.S. substitution values."
+      }
+    ]
+  },
+  {
+    "route": "/leon-uk-chicken-wrap-rice-box-nutrition.html",
+    "title": "LEON UK chicken lunch: wrap or Big Box?",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "LEON Chicken Aioli Wrap official product page",
+        "url": "https://leon.co/menu/chicken-aioli-wrap/",
+        "checked_on": "2026-10-19",
+        "notes": "Current portion weight, calories, protein and ingredient context independently re-read."
+      },
+      {
+        "title": "LEON Aioli Chicken Big Box official product page",
+        "url": "https://leon.co/menu/aioli-chicken-big-box/",
+        "checked_on": "2026-10-19",
+        "notes": "Current adult rice-based recipe, 481 g, 770 kcal, 29 g protein independently re-read."
+      },
+      {
+        "title": "LEON Spicy Chicken Zhoug Wrap",
+        "url": "https://leon.co/menu/spicy-chicken-zhoug-wrap/",
+        "checked_on": "2026-10-19",
+        "notes": "Named adult wrap values independently checked."
+      },
+      {
+        "title": "LEON Satay Chicken Big Box",
+        "url": "https://leon.co/menu/satay-chicken-big-box/",
+        "checked_on": "2026-10-19",
+        "notes": "Named adult rice-based recipe values and peanut/fish ingredient distinction checked."
+      }
+    ]
+  },
+  {
+    "route": "/burger-king-us-breakfast-hash-browns-order.html",
+    "title": "Burger King U.S. breakfast: count the hash-brown size",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "source-and-arithmetic-reviewed; awaiting integrated browser and publication checks",
+      "scope": "AI editorial review against named official source portions, source identity checks and decimal arithmetic tests. No medical or dietitian review claimed.",
+      "limitations": "Snapshot of named recipes and portions; not every live menu option or branch. Published rounded values can differ from a hand-prepared serving."
+    },
+    "sources": [
+      {
+        "title": "Burger King U.S. official nutrition explorer",
+        "url": "https://www.bk.com/nutrition-explorer",
+        "checked_on": "2026-10-19",
+        "notes": "Current official page independently confirms named calorie figures. Full macro rows retain the reviewed 17 October 2026 prod_bk_us source snapshot; no old PDF values mixed in."
+      }
+    ]
+  },
+  {
+    "route": "/fage-plain-greek-yogurt-0-2-5-percent.html",
+    "title": "FAGE 0%, 2% or 5% Greek yogurt: compare the same portion",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. labels only; formulations and package panels can change. Scaled values retain label rounding."
+    },
+    "sources": [
+      {
+        "title": "FAGE USA · Total 0%",
+        "url": "https://usa.fage/products/yogurt/fage-total-0",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FAGE USA · Total 2%",
+        "url": "https://usa.fage/products/yogurt/fage-total-2",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FAGE USA · Total 5%",
+        "url": "https://usa.fage/products/yogurt/fage-total-5",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FDA · serving size is not a recommended portion",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/daisy-cottage-cheese-2-4-percent-portions.html",
+    "title": "Daisy 2% vs 4% cottage cheese: tubs and single portions",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. plain products only; no fruit-compote product is included. Packaging can change."
+    },
+    "sources": [
+      {
+        "title": "Daisy · cottage-cheese products and label links",
+        "url": "https://www.daisybrand.com/cottage-cheese/",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "Daisy · 2% back-of-pack image",
+        "url": "https://www.daisybrand.com/wp-content/smush-webp/2026/01/cc-product-group-2p-v3-back.jpg.webp",
+        "checked_on": "2026-10-19",
+        "notes": "Official packaging image downloaded and visually read; retained as private source evidence, not reused publicly."
+      },
+      {
+        "title": "Daisy · 4% back-of-pack image",
+        "url": "https://www.daisybrand.com/wp-content/smush-webp/2026/01/cc-product-group-4p-v3-back.jpg.webp",
+        "checked_on": "2026-10-19",
+        "notes": "Official packaging image downloaded and visually read; retained as private source evidence, not reused publicly."
+      },
+      {
+        "title": "Daisy · what 2% and 4% mean",
+        "url": "https://www.daisybrand.com/faqs/",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FDA · serving size is not a recommended portion",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/peanut-butter-powder-vs-creamy-spread.html",
+    "title": "Peanut butter powder vs creamy spread: compare the grams",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. named formulations only; no assumed final hydrated yield, taste review or price claim."
+    },
+    "sources": [
+      {
+        "title": "PBfit · Classic nutrition panel",
+        "url": "https://www.pbfit.com/products/pbfit-classic",
+        "checked_on": "2026-10-19",
+        "notes": "Complete nutrition-panel data embedded in the manufacturer’s page were read, including the 16 g dry serving and water instructions."
+      },
+      {
+        "title": "Jif · Creamy Peanut Butter",
+        "url": "https://www.jif.com/products/creamy/creamy-peanut-butter",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FDA · understanding the Nutrition Facts label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/silk-unsweet-soy-vs-almondmilk.html",
+    "title": "Silk unsweet soy vs almondmilk: protein is only one difference",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "Displayed U.S. panels only. Soy source has an unresolved marketing/panel calorie conflict; check actual packaging."
+    },
+    "sources": [
+      {
+        "title": "Silk · U.S. Unsweet Soymilk",
+        "url": "https://silk.com/plant-based-products/soymilk/unsweet-soymilk/",
+        "checked_on": "2026-10-19",
+        "notes": "Nutrition table says 90 kcal; introductory copy says 80. The table is explicitly used, with the discrepancy disclosed."
+      },
+      {
+        "title": "Silk · U.S. Unsweet Almondmilk",
+        "url": "https://silk.com/plant-based-products/almondmilk/unsweet-almondmilk/",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FDA · understanding the Nutrition Facts label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/original-vs-honey-nut-cheerios-labels.html",
+    "title": "Original vs Honey Nut Cheerios: compare the whole label",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. displayed panels only; online serving presentation is incomplete for Honey Nut, so no equal-weight numbers are invented."
+    },
+    "sources": [
+      {
+        "title": "Cheerios · U.S. Original product panel",
+        "url": "https://www.cheerios.com/products/original-cheerios",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "Cheerios · U.S. Honey Nut product panel",
+        "url": "https://www.cheerios.com/products/honey-nut-cheerios",
+        "checked_on": "2026-10-19",
+        "notes": "Nutrition serving-size field is malformed; the same page description specifies one cup. No gram weight inferred or borrowed."
+      },
+      {
+        "title": "FDA · understanding the Nutrition Facts label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/barilla-australia-protein-plus-vs-spaghetti.html",
+    "title": "Barilla Australia Protein+ vs classic spaghetti: dry portions compared",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "Australian named products only. Cooked yield must be measured; example yield is hypothetical. No salt-uptake estimate."
+    },
+    "sources": [
+      {
+        "title": "Barilla Australia · Protein+ Spaghetti",
+        "url": "https://www.barilla.com/en-au/products/pasta/protein-plus/spaghetti-protein-plus",
+        "checked_on": "2026-10-19",
+        "notes": "Full official per-100 g table inspected through web retrieval. A separate direct raw fetch was blocked; no U.S. recipe substituted."
+      },
+      {
+        "title": "Barilla Australia · Classic Spaghetti",
+        "url": "https://www.barilla.com/en-au/products/pasta/classic-blue-box/spaghetti",
+        "checked_on": "2026-10-19",
+        "notes": "Full official Australian table inspected; per-100 g column used to avoid mixing serving bases."
+      },
+      {
+        "title": "FDA · serving size is not a recommended portion",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/house-foods-firm-vs-super-firm-tofu.html",
+    "title": "Firm vs super-firm tofu: compare House Foods’ exact labels",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. organic products only; no inferred pressing retention or marinade absorption."
+    },
+    "sources": [
+      {
+        "title": "House Foods · Organic Firm Tofu",
+        "url": "https://www.house-foods.com/products/organic-tofu/organic-tofu-firm",
+        "checked_on": "2026-10-19",
+        "notes": "Complete manufacturer nutrition-table payload downloaded and read: 14 oz pack, 85 g serving."
+      },
+      {
+        "title": "House Foods · Organic Super Firm Tofu",
+        "url": "https://www.house-foods.com/products/organic-tofu/organic-tofu-super-firm",
+        "checked_on": "2026-10-19",
+        "notes": "Complete manufacturer nutrition-table payload downloaded and read: 10 oz pack, 85 g serving. Different 8 oz retailer record not substituted."
+      },
+      {
+        "title": "FDA · understanding the Nutrition Facts label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/bushs-black-beans-vs-chickpeas.html",
+    "title": "Bush’s black beans vs chickpeas: protein, fibre and the can",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "Regular U.S. canned products; no asserted drained/rinsed value or sodium-reduction factor."
+    },
+    "sources": [
+      {
+        "title": "Bush’s · Black Beans",
+        "url": "https://www.bushbeans.com/en_US/product/black-beans",
+        "checked_on": "2026-10-19",
+        "notes": "Complete official product nutrition fields downloaded, including 130 g serving, 450 mg sodium and less-than-1 g total sugars."
+      },
+      {
+        "title": "Bush’s · Chickpeas / Garbanzo Beans",
+        "url": "https://www.bushbeans.com/en_US/product/garbanzo-beans-chick-peas",
+        "checked_on": "2026-10-19",
+        "notes": "Complete official product nutrition fields downloaded, including 130 g serving and 460 mg sodium."
+      },
+      {
+        "title": "FDA · serving size is not a recommended portion",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/starkist-light-vs-albacore-tuna-pouches.html",
+    "title": "StarKist light vs albacore tuna: compare the 74 g pouches",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. 74 g water-packed pouches only. Mercury is not measured for these products, and no personal dietary advice is provided."
+    },
+    "sources": [
+      {
+        "title": "StarKist · Light Tuna in Water pouch",
+        "url": "https://starkist.com/product/light-tuna-in-water-pouch/",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "StarKist · Albacore White Tuna in Water pouch",
+        "url": "https://starkist.com/product/albacore-white-tuna-in-water-pouch/",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FDA/EPA · advice about eating fish",
+        "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+        "checked_on": "2026-10-19",
+        "notes": "Current official fish-category advice inspected. No individualized consumption recommendation or product mercury estimate supplied."
+      }
+    ]
+  },
+  {
+    "route": "/hersheys-special-dark-bar-vs-kisses.html",
+    "title": "Hershey’s Special Dark bar vs Kisses: compare equal grams",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. named pack panels only; no cocoa-percentage, health benefit, flavor review or allergy-safety claim."
+    },
+    "sources": [
+      {
+        "title": "Hershey’s · Special Dark six-pack bar panel",
+        "url": "https://www.hersheyland.com/products/hersheys-special-dark-mildly-sweet-chocolate-candy-bars-8-7-oz-6-pack.html",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "Hershey’s · Special Dark Kisses 32.1 oz panel",
+        "url": "https://www.hersheyland.com/products/hersheys-kisses-special-dark-mildly-sweet-chocolate-candy-32-1-oz-pack.html",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      },
+      {
+        "title": "FDA · serving size is not a recommended portion",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  },
+  {
+    "route": "/chocolate-protein-shakes-country-portions.html",
+    "title": "Chocolate protein shakes: compare the bottle and the country",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "Named Canadian formulations plus one explicitly separate U.S. comparison. No supplementation advice, current retailer stock or price claim."
+    },
+    "sources": [
+      {
+        "title": "Premier Protein Canada · Chocolate 325 mL",
+        "url": "https://premierprotein.ca/products/chocolate-protein-shake",
+        "checked_on": "2026-10-19",
+        "notes": "Canadian Supplemented Food Facts panel inspected in full; do not substitute the U.S. label."
+      },
+      {
+        "title": "Coca-Cola / fairlife Canada · Core Power Chocolate",
+        "url": "https://www.coca-cola.com/ca/en/brands/fairlife/products/core-power",
+        "checked_on": "2026-10-19",
+        "notes": "Canadian 414 mL chocolate panel inspected; the 26 g product, not Elite."
+      },
+      {
+        "title": "Premier Protein U.S. · Chocolate 11.5 fl oz",
+        "url": "https://www.premierprotein.com/products/chocolate-protein-shake",
+        "checked_on": "2026-10-19",
+        "notes": "U.S. panel inspected separately; 230 mg sodium compared with Canadian 220 mg."
+      }
+    ]
+  },
+  {
+    "route": "/quaker-old-fashioned-vs-quick-oats.html",
+    "title": "Quaker Old Fashioned vs Quick oats: what actually changes?",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "U.S. named plain products only. No blood-glucose, satiety, taste or gluten-safety claim."
+    },
+    "sources": [
+      {
+        "title": "Quaker · Old Fashioned Oats",
+        "url": "https://www.quakeroats.com/products/hot-cereals/old-fashioned-oats",
+        "checked_on": "2026-10-19",
+        "notes": "Product page and its manufacturer-linked SmartLabel nutrition fragment downloaded and read."
+      },
+      {
+        "title": "Quaker SmartLabel · Old Fashioned UPC 030000010204",
+        "url": "https://smartlabel.pepsico.info/030000010204-0005-en-US/index.html",
+        "checked_on": "2026-10-19",
+        "notes": "Manufacturer-linked full panel, 40 g dry serving. Internal nutrition fragment retained as evidence."
+      },
+      {
+        "title": "Quaker · Quick 1-Minute Oats",
+        "url": "https://www.quakeroats.com/products/hot-cereals/quick-oats",
+        "checked_on": "2026-10-19",
+        "notes": "Product page cooking instructions and linked full SmartLabel panel checked."
+      },
+      {
+        "title": "Quaker SmartLabel · Quick UPC 030000011805",
+        "url": "https://smartlabel.pepsico.info/030000011805-0004-en-US/index.html",
+        "checked_on": "2026-10-19",
+        "notes": "Manufacturer-linked full panel, 40 g dry serving. Internal nutrition fragment retained as evidence."
+      }
+    ]
+  },
+  {
+    "route": "/back-up-and-move-food-diary.html",
+    "title": "How to back up and move your GetMacros food diary",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "Instructions checked against current source code; final interface labels and journeys need integrated browser verification. No cloud sync or encryption claim."
+    },
+    "sources": [
+      {
+        "title": "MDN · browser storage quotas and eviction",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria",
+        "checked_on": "2026-10-19",
+        "notes": "Current browser storage documentation inspected. GetMacros-specific export/import behavior separately checked against js/food-diary-store.js, js/food-core.js and js/food-app.js."
+      },
+      {
+        "title": "GetMacros · privacy policy",
+        "url": "https://getmacros.net/privacy.html",
+        "checked_on": "2026-10-19",
+        "notes": "Local implementation checked; linked public policy must remain consistent with the final integrated release."
+      }
+    ]
+  },
+  {
+    "route": "/barcode-food-search-label-check.html",
+    "title": "Barcode food search: check the product before you log",
+    "status": "integrated locally; production verification pending",
+    "sourceReview": {
+      "status": "authored-and-source-checked; awaiting integrated browser review",
+      "scope": "Source identity, portions, arithmetic, market scope, wording and existing-intent overlap checked. No dietitian or clinical review claimed.",
+      "limitations": "No claim that every barcode exists or that manual lookup is camera scanning. Final UI journey requires integrated browser verification."
+    },
+    "sources": [
+      {
+        "title": "GS1 · barcode prefix is not country of origin",
+        "url": "https://support.gs1.org/support/solutions/articles/43000734188",
+        "checked_on": "2026-10-19",
+        "notes": "Current official explanation inspected; no origin inference made from a prefix."
+      },
+      {
+        "title": "GS1 · declared net content and GTIN changes",
+        "url": "https://www.gs1.org/1/gtinrules/en/rule/266/declared-net-content",
+        "checked_on": "2026-10-19",
+        "notes": "Current official rule inspected; no guarantee that every provider follows it perfectly."
+      },
+      {
+        "title": "USDA FoodData Central · data documentation",
+        "url": "https://fdc.nal.usda.gov/data-documentation/",
+        "checked_on": "2026-10-19",
+        "notes": "Current official data-type documentation inspected; imported branded status distinguished from independent verification."
+      },
+      {
+        "title": "FDA · understanding the Nutrition Facts label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "checked_on": "2026-10-19",
+        "notes": "Official product panel read on the research date. Check your own package for the current formulation."
+      }
+    ]
+  }
+]

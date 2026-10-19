@@ -1,0 +1,149 @@
+{
+  "checkedAt": "2026-10-19",
+  "selectedRecords": [
+    {
+      "id": "GB|wagamama|11c23b24bf4ea8d6",
+      "sourcePage": "ff5794ba-b44f-45ad-848c-78bd51b29bcd|standard",
+      "name": "grilled chicken ramen",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "na": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|wagamama|6c7535a611d0050d",
+      "sourcePage": "853dfc7e-ac5f-4da7-8f67-5e2f08cb5445|standard",
+      "name": "chilli chicken ramen",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "na": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|wagamama|e1e3ec36965dbbc3",
+      "sourcePage": "bc268c77-fc01-4a41-9194-385e9e5a2c5a|standard",
+      "name": "tantanmen beef brisket ramen",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "na": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|wagamama|947362acfba0b204",
+      "sourcePage": "bfb13b2b-c4ab-403c-8734-3c0c7a3bae9e|standard",
+      "name": "kare burosu ramen",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "na": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|wagamama|50c61c0253868209",
+      "sourcePage": "a329292c-4405-4013-8565-2d2ed04dc29c|standard",
+      "name": "grilled chicken ramen · Gluten-free menu",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "na": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|leon|d61e7f8d5a54bfcd",
+      "sourcePage": "miKrtYFeZT9Ktu410i1sjdT",
+      "name": "Chicken Aioli Wrap",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "grams": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|leon|fff3b4962611f92c",
+      "sourcePage": "1b1e353f-f50a-481f-bea5-2e2a6ce25ec1",
+      "name": "Aioli Chicken Big Box",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "grams": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|leon|32bbe9226dd16461",
+      "sourcePage": "22468801-f524-4eb2-9139-bd4813f774bd",
+      "name": "Spicy Chicken Zhoug Wrap",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "grams": true
+      },
+      "result": "matches current official embedded source"
+    },
+    {
+      "id": "GB|leon|6ad7df694e0609a5",
+      "sourcePage": "54b46df6-933d-45d2-b0a5-5fec74350bee",
+      "name": "Satay Chicken Big Box",
+      "checks": {
+        "cal": true,
+        "p": true,
+        "c": true,
+        "fat": true,
+        "f": true,
+        "sugar": true,
+        "salt": true,
+        "grams": true
+      },
+      "result": "matches current official embedded source"
+    }
+  ]
+}

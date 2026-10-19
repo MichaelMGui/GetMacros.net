@@ -24,7 +24,9 @@ def build():
             text=text[:form['start']]+text[form['end']:]
             hero=Document(text).find(cls='food-hero')
             text=text[:hero['end']-10]+old+text[hero['end']-10:]
-        scene=Document(text).find(cls='market-scene')
+        # The final presentation can already contain an original botanical SVG.
+        # Only replace the older canopy illustration when that marker exists.
+        scene=next((n for n in Document(text).nodes if 'market-scene' in n['attrs'].get('class','').split()),None)
         if scene:
             art='''<svg class="market-scene" viewBox="0 0 500 390" aria-hidden="true"><path class="scene-canopy" d="M78 315V158C78 54 169 31 250 31s172 23 172 127v157Z"/><circle class="scene-sun" cx="356" cy="105" r="37"/><path class="scene-stem" d="M52 310q-8-69 22-115m373 116q7-72-24-113"/><path class="scene-leaf" d="M61 261c-32-4-39-28-22-37 21 1 27 19 22 37Zm0-22c0-29 18-43 33-34 3 20-12 33-33 34Zm375 21c29-7 34-29 18-37-18 4-25 20-18 37Zm-2-22c-1-27-19-40-32-30-1 18 12 30 32 30Z"/><ellipse class="scene-plate" cx="250" cy="330" rx="200" ry="30"/><ellipse class="scene-plate-line" cx="250" cy="330" rx="167" ry="19"/></svg>'''
             text=text[:scene['start']]+art+text[scene['end']:]
