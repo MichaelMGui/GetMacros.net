@@ -1,0 +1,854 @@
+{
+  "checkedAt": "2026-10-20T23:13:20.931Z",
+  "revision": "34d86d33d2fb59de8a826c4b2dea3bbf159f32e8",
+  "refs": {
+    "main": "34d86d33d2fb59de8a826c4b2dea3bbf159f32e8",
+    "claude/getmacros-nutrition-site-1gfhsm": "34d86d33d2fb59de8a826c4b2dea3bbf159f32e8"
+  },
+  "pages": [
+    {
+      "route": "/mx/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/mx/en/",
+      "expectedCanonical": "https://getmacros.net/mx/en/",
+      "byteHash": "687289915b358b0c03c56c33ac41c2b622aac11d0436f4142592e0d3d0bebfed",
+      "expectedByteHash": "856ef34d45d4d062728288b90e2169e5ad050919f8017828ba6dc23ce29d8b6c",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "canonical": "https://getmacros.net/",
+      "expectedCanonical": "https://getmacros.net/",
+      "byteHash": "415ec7ea8947989ef69836809e9d68ec0b66194f8754e867778e396695631ff4",
+      "expectedByteHash": "3b3190f2345d82bf1144f89f1fb2b8f8125ee7709ae0d8363396554c2b1eba82",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/ca/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ca/en/",
+      "expectedCanonical": "https://getmacros.net/ca/en/",
+      "byteHash": "3628aa4049274e4218e20fbcef53911efcb7e32fc1de03f853508c45a370fbeb",
+      "expectedByteHash": "14d5d353edfa1b4fb7af93a528153a9a616cd064ce3cebee80f24e122dd943d2",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/au/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/au/en/",
+      "expectedCanonical": "https://getmacros.net/au/en/",
+      "byteHash": "a8b1f628a54cc383ad840a71bb5e231c420e85c9f8ca3766c164ca834b8ec39b",
+      "expectedByteHash": "3428803d6d642aec4a906af8976cbcec0da03544bdea42a1b104aa5e508b4ec3",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/ie/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/ie/en/",
+      "expectedCanonical": "https://getmacros.net/ie/en/",
+      "byteHash": "32bbd15dd90a1611a553b9efbe8823226fce8b7fc900c54f3615d23f54e2e56d",
+      "expectedByteHash": "7317527e17b2ad6cf8022d5fa884af132718019a84f14658241853a0d2bd1468",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/gb/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/gb/en/",
+      "expectedCanonical": "https://getmacros.net/gb/en/",
+      "byteHash": "394e3866e4315a3dc26ebcca2aae2db1d415bb1d93d30b95e31b054f233b6db6",
+      "expectedByteHash": "3675c3261cb8173817c7c4e5fe696170fe2fe0c5b994a08ffb0c69c40cc4a57d",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/jp/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/jp/en/",
+      "expectedCanonical": "https://getmacros.net/jp/en/",
+      "byteHash": "d2759594764a3ccafa2868b1be19c9c6e5754e16ed3eaf895d11ed7a5e10073f",
+      "expectedByteHash": "4764834b3c68ce0dbc6dfd1f985bd3026eb47823d16993499172d23f22656731",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/in/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/in/en/",
+      "expectedCanonical": "https://getmacros.net/in/en/",
+      "byteHash": "5a7b2a329b0875636807d4304db7e91d42e8c976a42748bbca40afce288f5ad9",
+      "expectedByteHash": "89517cf8c4252c078d69563bed6122d7515dec381a01cd5e287698c8802e7451",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/nz/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/nz/en/",
+      "expectedCanonical": "https://getmacros.net/nz/en/",
+      "byteHash": "e8d5594ab6a2abbe1f5b4b73ce9f73b242e7a79d19eed39df8acdcd071419e6f",
+      "expectedByteHash": "36dd5d7350ecc57e3c36b7712434fa0f3f2b8be1b9d9f2fdafafb83d68548a06",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/fr/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/fr/en/",
+      "expectedCanonical": "https://getmacros.net/fr/en/",
+      "byteHash": "de56a3e19937ee60deaf3a0439cd4f0153fd404f7a38336a696e04cb755ae431",
+      "expectedByteHash": "7590441f353a2ec6453fecd449ed622dba0da362699072eeba1efdbb562f7939",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/za/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/za/en/",
+      "expectedCanonical": "https://getmacros.net/za/en/",
+      "byteHash": "1c2f5896cb62b04b4f4c895eb864980c0578fd16deed05eb407920ca3d8abb54",
+      "expectedByteHash": "f309f3d4496240b6279b80560e3029a242a5ebb72aebac46ade15f20508f55b0",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/sg/en/",
+      "status": 200,
+      "canonical": "https://getmacros.net/sg/en/",
+      "expectedCanonical": "https://getmacros.net/sg/en/",
+      "byteHash": "3724cf5ba4f9ef549d902a42131d40769e08132c5792f156944eb64aeba7dc11",
+      "expectedByteHash": "b095b5601bf68c4b1e0307090cc34dcf5d92d0ea26304c65784c7dce28b0e724",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/calculators.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/calculators.html",
+      "expectedCanonical": "https://getmacros.net/calculators.html",
+      "byteHash": "53184ea439406993ec465709b7fa262d8e8f3315084dffd10ea114111f7bc645",
+      "expectedByteHash": "bd3153ec0f7e81c1c48c0f9b3b4029c03d1efb0a4bf7cb6e56fd918dc5649521",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/compare-complete-restaurant-orders.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/compare-complete-restaurant-orders.html",
+      "expectedCanonical": "https://getmacros.net/compare-complete-restaurant-orders.html",
+      "byteHash": "e98241b4282ec62e2c0792e8dc3c03beb5b31bd33bde12d9e1461d7f91171817",
+      "expectedByteHash": "84b297fa48dc3694d9cc4b0ee42a9edac6d50861b03f83c4127facdb431d2653",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/restaurant-meal-finder.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/restaurant-meal-finder.html",
+      "expectedCanonical": "https://getmacros.net/restaurant-meal-finder.html",
+      "byteHash": "99a7febf99d3e778b024a0567b805c369707e0c5eaa2b7ec59a452148413d0bd",
+      "expectedByteHash": "712708de06311b18884bfb4f57551312bb435c3307794a2a51c8c92bfd138e14",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/play.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/play.html",
+      "expectedCanonical": "https://getmacros.net/play.html",
+      "byteHash": "5eedfbee398db97a2160cf4bfd96f1f5df18f6cb5ad5a22f94603368e922b54d",
+      "expectedByteHash": "0a80b805eb016657a5d02288643f16430c7bd3edc52efeb024f762f4d3050b09",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/greggs-breakfast-baguette-calories-protein.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/greggs-breakfast-baguette-calories-protein.html",
+      "expectedCanonical": "https://getmacros.net/greggs-breakfast-baguette-calories-protein.html",
+      "byteHash": "fb65ac5b9d9e50a4ea8276c1edc9656f7a880b323fb788a90279ca95a3302c07",
+      "expectedByteHash": "35f54d1e2b00abca7c1fd79ff7c773f3cc222953c63693df5d4b1da24da2f07e",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/food-diary.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/food-diary.html",
+      "expectedCanonical": "https://getmacros.net/food-diary.html",
+      "byteHash": "0f867ea327e17334d12004ec4e74d12b692a7e591890a1145a8ea131dac54011",
+      "expectedByteHash": "7af6d8d457f97afed93c05f6cebe01c32b88169a1cbf32446078165d9573d03d",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/harveys-canada-burger-fries-onion-rings-order.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/harveys-canada-burger-fries-onion-rings-order.html",
+      "expectedCanonical": "https://getmacros.net/harveys-canada-burger-fries-onion-rings-order.html",
+      "byteHash": "84bab3a0046b16c7204cf2cf622ba0ecd14ab3ba428f7b8343e7136703876714",
+      "expectedByteHash": "2b25f956df305e99d5bee79a1791d088355cd2aaacfbb2231f10e5c5dc69fa5d",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/subway-uk-six-inch-chicken-sandwich-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/subway-uk-six-inch-chicken-sandwich-nutrition.html",
+      "expectedCanonical": "https://getmacros.net/subway-uk-six-inch-chicken-sandwich-nutrition.html",
+      "byteHash": "997af570c99d94a21a0d37e3e3cc0256c9706ac237719b44982faf232e0d2b33",
+      "expectedByteHash": "9a4e76ca57d9cd544441119229206f8ef69cfbf9f6c76ec69d5be5e6ae615e5f",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/kfc-uk-burger-twister-wrap-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/kfc-uk-burger-twister-wrap-nutrition.html",
+      "expectedCanonical": "https://getmacros.net/kfc-uk-burger-twister-wrap-nutrition.html",
+      "byteHash": "def272ffddfa004a20df6e5e7b77120b7d8ecac684ad9ad9a7f67be31e21892e",
+      "expectedByteHash": "052006b6693826fac548d779af560ff8444244aced3880c8529c94ea91d4060e",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/wagamama-uk-ramen-calories-protein-salt.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/wagamama-uk-ramen-calories-protein-salt.html",
+      "expectedCanonical": "https://getmacros.net/wagamama-uk-ramen-calories-protein-salt.html",
+      "byteHash": "ab503778b2bd42251dc6376e9fa66b0b1682cd903df2aa3d44abd01932d9dfa1",
+      "expectedByteHash": "652c650da710a7937a3eba0742d7547b07c17c63262307fea28fa6f6c0615001",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+      "expectedCanonical": "https://getmacros.net/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+      "byteHash": "5cb8037ed240454579694efda458e607513461e6c532d68e0900cf7b027d1d52",
+      "expectedByteHash": "39a28b24da85c34b38f4c83bac16485f05696d6e10b9f079ffefed0a58a9952c",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/caffe-nero-latte-milk-size-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/caffe-nero-latte-milk-size-nutrition.html",
+      "expectedCanonical": "https://getmacros.net/caffe-nero-latte-milk-size-nutrition.html",
+      "byteHash": "1139105c95e45af2dfb986eb28d04435898d47ab35bf1464999fd0ef55f623ac",
+      "expectedByteHash": "7a498ab202af117b7414724fbd0cf9a44c6e8edcdec041c57a8cc3ccfcc34120",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/tortilla-uk-burrito-bowl-rice-portions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/tortilla-uk-burrito-bowl-rice-portions.html",
+      "expectedCanonical": "https://getmacros.net/tortilla-uk-burrito-bowl-rice-portions.html",
+      "byteHash": "49a51c20233e773e502760d8b8634af00fb33792182c9a55b2392b7f9558379a",
+      "expectedByteHash": "b7514c3aa47539a8764544efc6873040bb8697f0ce99fb8dde843d8d27b73644",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/wasabi-sushi-set-dressing-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/wasabi-sushi-set-dressing-nutrition.html",
+      "expectedCanonical": "https://getmacros.net/wasabi-sushi-set-dressing-nutrition.html",
+      "byteHash": "0554c0cbb29b6d5824d4972a7a54cf059ee08ab3994a83136f2131994ce65d75",
+      "expectedByteHash": "92de56e3dd04dd344f0ce8fdb8ecdc92ffe9322c0644da46824dbdeb4a8da208",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/chopstix-uk-box-base-toppings-calories.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chopstix-uk-box-base-toppings-calories.html",
+      "expectedCanonical": "https://getmacros.net/chopstix-uk-box-base-toppings-calories.html",
+      "byteHash": "d179cc0edc233772fe8f50f21ce360175b3edca0dc5f43cdb0b2d2ed747102d5",
+      "expectedByteHash": "53ee7c77dfe8593cea843b7e394eea57a7b4fe956794ce7147440b9aa0b814a7",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/starbucks-uk-pumpkin-spice-latte-hot-iced.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/starbucks-uk-pumpkin-spice-latte-hot-iced.html",
+      "expectedCanonical": "https://getmacros.net/starbucks-uk-pumpkin-spice-latte-hot-iced.html",
+      "byteHash": "3ceb2c7ef91a21b8e1b8c570e2ecb51d83a686a9f33d79f20d97dac7f80c0a3d",
+      "expectedByteHash": "599fbca9d0edf88212d76a8f3513196829197d98ab2c4ad7981b4059bc8c92b2",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/leon-uk-chicken-wrap-rice-box-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/leon-uk-chicken-wrap-rice-box-nutrition.html",
+      "expectedCanonical": "https://getmacros.net/leon-uk-chicken-wrap-rice-box-nutrition.html",
+      "byteHash": "11ae994b9c42378679e26b8866125ed13a531ed6dcd2787f61ff58f51764e66f",
+      "expectedByteHash": "1c9e66250bade7b4912078badb22815d5b5229ed3964cc9ea1c86c1910c39fb5",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/five-guys-uk-little-hamburger-cheeseburger.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/five-guys-uk-little-hamburger-cheeseburger.html",
+      "expectedCanonical": "https://getmacros.net/five-guys-uk-little-hamburger-cheeseburger.html",
+      "byteHash": "a5665c41a3bfee13d5e498917f5905e1aa68c1f787f3332d5de48b6b626f2427",
+      "expectedByteHash": "de7da12ddcc8104e7e5cfce75268c6e6f64f7593196afb161111cf8ad9724949",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/fage-plain-greek-yogurt-0-2-5-percent.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/fage-plain-greek-yogurt-0-2-5-percent.html",
+      "expectedCanonical": "https://getmacros.net/fage-plain-greek-yogurt-0-2-5-percent.html",
+      "byteHash": "d49ff843ee3576105e68fae822d2498087eca1ad4d7257acd5ad0a0f1c953aad",
+      "expectedByteHash": "71c081fcdab5f287c2e41c84d73c57b54b1bd482e3f0ea2143117ab47c4f0ecb",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/pizzaexpress-classic-romana-margherita-nutrition.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/pizzaexpress-classic-romana-margherita-nutrition.html",
+      "expectedCanonical": "https://getmacros.net/pizzaexpress-classic-romana-margherita-nutrition.html",
+      "byteHash": "ec0b9ecc8189035453e011dc53779151cb06fc5b39da5ff943a9a88068ad7b03",
+      "expectedByteHash": "062bf63375c1f59157e9f914cea8271ddcf3125bcebae399f71fdf630c3d5d71",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/burger-king-us-breakfast-hash-browns-order.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/burger-king-us-breakfast-hash-browns-order.html",
+      "expectedCanonical": "https://getmacros.net/burger-king-us-breakfast-hash-browns-order.html",
+      "byteHash": "faf7d0159150f6c6885d56edf2a654a5659c892cef31143020c5176e4348eba4",
+      "expectedByteHash": "b64a19a35ab7ed1854d7d948358c3932fba8256741125421bd78574054c9e1ed",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/silk-unsweet-soy-vs-almondmilk.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/silk-unsweet-soy-vs-almondmilk.html",
+      "expectedCanonical": "https://getmacros.net/silk-unsweet-soy-vs-almondmilk.html",
+      "byteHash": "986be92ec65e474ada249021704d61fcfe3d6c6f6b0dfc645d8ef56a332a3a94",
+      "expectedByteHash": "55670b86a08d99bbc7230a4e4c19227f1b1a24bdca963b7023fa01bce2b5367d",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/peanut-butter-powder-vs-creamy-spread.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/peanut-butter-powder-vs-creamy-spread.html",
+      "expectedCanonical": "https://getmacros.net/peanut-butter-powder-vs-creamy-spread.html",
+      "byteHash": "7b7e37de2c361e043e610d01b84bf436ba8452477a9121845407f5c70dc23647",
+      "expectedByteHash": "37e9815015ab2abdf63e1437cd10a8906f3e17923ece198ecfafe54b55f21bb5",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/original-vs-honey-nut-cheerios-labels.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/original-vs-honey-nut-cheerios-labels.html",
+      "expectedCanonical": "https://getmacros.net/original-vs-honey-nut-cheerios-labels.html",
+      "byteHash": "cb0b1aa7c532cbe2477a4b84325f3e693b15b1ae7d6afc508661f86bb0159fd4",
+      "expectedByteHash": "c40aae7be87372d92149dbfe9c8acbbc9269099ca8de9ef04dcc99b48a780317",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/barilla-australia-protein-plus-vs-spaghetti.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/barilla-australia-protein-plus-vs-spaghetti.html",
+      "expectedCanonical": "https://getmacros.net/barilla-australia-protein-plus-vs-spaghetti.html",
+      "byteHash": "d19cefe48828579bb8dedd0eee4ff421433bf9f5301259be3716caa149b3d686",
+      "expectedByteHash": "1f728a00d281a232829430cda4962eb6ebfa930e6c9075066487d889f65fbb38",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/daisy-cottage-cheese-2-4-percent-portions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/daisy-cottage-cheese-2-4-percent-portions.html",
+      "expectedCanonical": "https://getmacros.net/daisy-cottage-cheese-2-4-percent-portions.html",
+      "byteHash": "95c9d2510a5d6de1be4ab49ba485c5eb05be0520f7704a9fb7e427c33bee7334",
+      "expectedByteHash": "ca8b4a25e77086b0ad06b85def2e041775f48e726bbcd2e60f5e8aefd8c8fa78",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/bushs-black-beans-vs-chickpeas.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/bushs-black-beans-vs-chickpeas.html",
+      "expectedCanonical": "https://getmacros.net/bushs-black-beans-vs-chickpeas.html",
+      "byteHash": "01bace0d575130716b0f0ee5af8f990eaa28a01e2540acd32ace3d1f92f02299",
+      "expectedByteHash": "afb52f2b42aef582e14d4823ef2eebdb6fe9134fafcb36988f3207e5acb8bfa2",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/starkist-light-vs-albacore-tuna-pouches.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/starkist-light-vs-albacore-tuna-pouches.html",
+      "expectedCanonical": "https://getmacros.net/starkist-light-vs-albacore-tuna-pouches.html",
+      "byteHash": "ce8949aca526030fbd3864d14bfa30a002c39f475d2c9110623e366872ff73d1",
+      "expectedByteHash": "18e690e3700b9a3fa2b10fbeafae222d69338e5c4b4937a6f8ee2d5cfb24d16b",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/chocolate-protein-shakes-country-portions.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/chocolate-protein-shakes-country-portions.html",
+      "expectedCanonical": "https://getmacros.net/chocolate-protein-shakes-country-portions.html",
+      "byteHash": "fc2e82797e0226a3458e684b729434ab4e2dcf2c8734e8c14e4ce05d748aa065",
+      "expectedByteHash": "55af4b025ec50c8f05598873f557ae3611eec8c0bf0a07f74cae872762428c43",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/house-foods-firm-vs-super-firm-tofu.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/house-foods-firm-vs-super-firm-tofu.html",
+      "expectedCanonical": "https://getmacros.net/house-foods-firm-vs-super-firm-tofu.html",
+      "byteHash": "77250014c0f4ea6c2729e6ae9892632b2f567aeec2f9c78bcea22df5182f51c1",
+      "expectedByteHash": "8aeb1da82fea0dbed626dfcd35580ad048379145000f68351a5e9fffe9646c77",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/hersheys-special-dark-bar-vs-kisses.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/hersheys-special-dark-bar-vs-kisses.html",
+      "expectedCanonical": "https://getmacros.net/hersheys-special-dark-bar-vs-kisses.html",
+      "byteHash": "a95b14aac5d869d396c870c4dcdb45f77464d6ce55c64fdeb025d2fc0ca59ffa",
+      "expectedByteHash": "12154d29caee1c4a53921483b2fb7e176a732751f752b57c3d0183f2296879dd",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/quaker-old-fashioned-vs-quick-oats.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/quaker-old-fashioned-vs-quick-oats.html",
+      "expectedCanonical": "https://getmacros.net/quaker-old-fashioned-vs-quick-oats.html",
+      "byteHash": "10003e275653e74741e3339c90363ee6b7299d4afe66658505d80cc5fd7fdeaf",
+      "expectedByteHash": "a696618c1441fc500a3fc01d06d847f86fe94ad00a140723531ddb1f38e1ffe4",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/back-up-and-move-food-diary.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/back-up-and-move-food-diary.html",
+      "expectedCanonical": "https://getmacros.net/back-up-and-move-food-diary.html",
+      "byteHash": "98ac2f003ae5b5508bb9e47596fec4223038cd29ed3d10b28e083adfec29d526",
+      "expectedByteHash": "9efc17bda1060f3f9ced30aeb139bb5f9a4326331733bfdf8e8f0c2dba17f71e",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    },
+    {
+      "route": "/barcode-food-search-label-check.html",
+      "status": 200,
+      "canonical": "https://getmacros.net/barcode-food-search-label-check.html",
+      "expectedCanonical": "https://getmacros.net/barcode-food-search-label-check.html",
+      "byteHash": "222dbd5df14c06bc29b28a301bcf595cc32a31a6746e2cedeeef4fcd16c1e20b",
+      "expectedByteHash": "bd2bb9bccc78dcfc449b238f204ff0a77485c82ce9c537321feaca664e88fee9",
+      "sharedNavigation": true,
+      "comparisonBasis": "CRLF normalized for Git portability; complete reviewed HTML must match. A sole appended Cloudflare security script is reported separately,not removed from the website.",
+      "sourceMatched": true,
+      "edgeSecurityAppendix": {
+        "matched": true,
+        "cloudflareSecurityAppendix": true,
+        "edgeAddedBytes": 938
+      }
+    }
+  ],
+  "assets": [
+    {
+      "key": "css/publication.css",
+      "url": "/assets/generated/css-publication-16307b85bfb6.css",
+      "status": 200,
+      "sha256": "16307b85bfb6220369a574a976b762d52b5efeb66783feab912e53df13bd9f6d",
+      "expectedSha256": "16307b85bfb6220369a574a976b762d52b5efeb66783feab912e53df13bd9f6d",
+      "bytes": 86289
+    },
+    {
+      "key": "css/home-workspace.css",
+      "url": "/assets/generated/css-home-workspace-b0bee078e8fa.css",
+      "status": 200,
+      "sha256": "b0bee078e8fac27d691a6afa6a3c2e4de2bb1a0d3ff3da287153143528befc4c",
+      "expectedSha256": "b0bee078e8fac27d691a6afa6a3c2e4de2bb1a0d3ff3da287153143528befc4c",
+      "bytes": 14176
+    },
+    {
+      "key": "css/food-app.css",
+      "url": "/assets/generated/css-food-app-18094026ec10.css",
+      "status": 200,
+      "sha256": "18094026ec1061b21c22809dcc00634107f5b3af172682ea93ff98d87cfc5cb7",
+      "expectedSha256": "18094026ec1061b21c22809dcc00634107f5b3af172682ea93ff98d87cfc5cb7",
+      "bytes": 34630
+    },
+    {
+      "key": "css/release-library.css",
+      "url": "/assets/generated/css-release-library-8caee762f2d0.css",
+      "status": 200,
+      "sha256": "8caee762f2d0b2a35641d61e207126043df649b2eff2aa41a43c2d2918d1fdf2",
+      "expectedSha256": "8caee762f2d0b2a35641d61e207126043df649b2eff2aa41a43c2d2918d1fdf2",
+      "bytes": 19334
+    },
+    {
+      "key": "js/unified-v7.js",
+      "url": "/assets/generated/js-unified-v7-10e31fe541cb.js",
+      "status": 200,
+      "sha256": "10e31fe541cbd226557c517444d51254d1d358fd1601761c11735dd81b4663e4",
+      "expectedSha256": "10e31fe541cbd226557c517444d51254d1d358fd1601761c11735dd81b4663e4",
+      "bytes": 14739
+    },
+    {
+      "key": "js/editorial-browser.js",
+      "url": "/assets/generated/js-editorial-browser-b007f019d49c.js",
+      "status": 200,
+      "sha256": "b007f019d49ca7d022edd828efce7124a683c1e9fc3ff50a0997f57c8cba3aa3",
+      "expectedSha256": "b007f019d49ca7d022edd828efce7124a683c1e9fc3ff50a0997f57c8cba3aa3",
+      "bytes": 1764
+    },
+    {
+      "key": "js/liquid-motion.js",
+      "url": "/assets/generated/js-liquid-motion-4c790075baf9.js",
+      "status": 200,
+      "sha256": "4c790075baf9f05d321d6c351dd8a767af86813a6b61472fe50e1c1ac33780ed",
+      "expectedSha256": "4c790075baf9f05d321d6c351dd8a767af86813a6b61472fe50e1c1ac33780ed",
+      "bytes": 10489
+    },
+    {
+      "key": "js/meal-guide.js",
+      "url": "/assets/generated/js-meal-guide-ca8200d4c052.js",
+      "status": 200,
+      "sha256": "ca8200d4c052ac4f036b655fc5c0a46687ae714c3bc09372accd6f0d7834dfd1",
+      "expectedSha256": "ca8200d4c052ac4f036b655fc5c0a46687ae714c3bc09372accd6f0d7834dfd1",
+      "bytes": 10741
+    },
+    {
+      "key": "js/meal-finder.js",
+      "url": "/assets/generated/js-meal-finder-497ed4efe56a.js",
+      "status": 200,
+      "sha256": "497ed4efe56a256675563a3c38fb01b5bb95dc9b227254905740138b80a40c8c",
+      "expectedSha256": "497ed4efe56a256675563a3c38fb01b5bb95dc9b227254905740138b80a40c8c",
+      "bytes": 15752
+    },
+    {
+      "key": "js/food-app.js",
+      "url": "/assets/generated/js-food-app-1bca61a48ed0.js",
+      "status": 200,
+      "sha256": "1bca61a48ed0a244a4bf77e343f2b35be27e06317bee782591f0474c2395c65e",
+      "expectedSha256": "1bca61a48ed0a244a4bf77e343f2b35be27e06317bee782591f0474c2395c65e",
+      "bytes": 34392
+    },
+    {
+      "key": "js/calculators.js",
+      "url": "/assets/generated/js-calculators-b2a0346d7d1c.js",
+      "status": 200,
+      "sha256": "b2a0346d7d1c469788d4b7117f18d5c5c23f0d54d1603a4e45fc02203d8aeee0",
+      "expectedSha256": "b2a0346d7d1c469788d4b7117f18d5c5c23f0d54d1603a4e45fc02203d8aeee0",
+      "bytes": 17976
+    },
+    {
+      "key": "js/gb-meals.js",
+      "url": "/assets/generated/js-gb-meals-20a489484223.js",
+      "status": 200,
+      "sha256": "20a489484223a3ebcfe146273470a01c7dd3f9bf43611f367716debd2d6de493",
+      "expectedSha256": "20a489484223a3ebcfe146273470a01c7dd3f9bf43611f367716debd2d6de493",
+      "bytes": 1315574
+    }
+  ],
+  "sitemap": {
+    "http": 200,
+    "urls": 465,
+    "publishedManifestLinksPresent": true,
+    "submitted": false
+  },
+  "indexing": "Not inspected/submitted; no authorized Search Console property",
+  "analytics": "No first-party analytics access",
+  "errors": [],
+  "notFoundStatus": 404
+}

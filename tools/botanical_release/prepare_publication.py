@@ -4,7 +4,7 @@ import importlib.util,json,shutil,re,argparse
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/botanical-release-2026-10-20'
 spec=importlib.util.spec_from_file_location('guard',ROOT/'tools/global_coverage_2026_10_17/prepare_publication.py')
 p=importlib.util.module_from_spec(spec);spec.loader.exec_module(p)
-BASE='abd9ebd199039eaa03f3896c8750b6115249e52e'
+BASE='34d86d33d2fb59de8a826c4b2dea3bbf159f32e8'
 SOURCES={'tools/build_ultimate_release.py','tools/home-workspace.css','tools/food-design.css','tools/release-product.css','tools/release-library.css','tools/product-navigation.css','css/publication.css','css/home-workspace.css','css/release-library.css','css/food-app.css','js/meal-guide.js','js/unified-v7.js','js/food-app.js','sw.js','sitemap.xml','images/README.md'}
 
 def selected():
@@ -21,6 +21,9 @@ def selected():
         for name in names:
             f=OUT/folder/(name+'.png')
             if f.exists():paths.add(f.relative_to(ROOT).as_posix())
+    for theme in ['light','citrus','berry','dark']:
+        f=OUT/'after'/('review-visible-action-'+theme+'-390.png')
+        if f.exists():paths.add(f.relative_to(ROOT).as_posix())
     return paths
 
 def main():

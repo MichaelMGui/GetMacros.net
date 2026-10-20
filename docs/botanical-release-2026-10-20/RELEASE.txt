@@ -2,7 +2,8 @@ GETMACROS — BOTANICAL DESIGN AND FOOD DIARY RELEASE
 20 October 2026
 
 STATUS
-Implementation and local verification complete. Production publication pending.
+Initial release published and verified as 34d86d33d2fb59de8a826c4b2dea3bbf159f32e8.
+Final mobile review-action refinement is being verified for a follow-up publication.
 Base revision: abd9ebd199039eaa03f3896c8750b6115249e52e
 
 IMPLEMENTATION
@@ -73,4 +74,24 @@ No accounts, cloud synchronization, AI meal estimation or new backend added.
 Native project, advertising configuration and Cloudflare DNS are untouched.
 
 LIVE VERIFICATION
-Pending actual deployment; final receipts will be saved separately.
+Production branch push, GitHub Pages deployment, 46 complete page/source comparisons,
+12 immutable assets and five fresh-browser journeys passed on revision 34d86d3.
+Seven ordinary live URLs match the reviewed output. A fresh isolated service worker
+reported the reviewed version, removed the obsolete dummy cache and retained one
+dummy diary entry while offline. Receipts and production screenshots: production/.
+The review footer follow-up will have a separate deployment revision and receipt.
+
+MOBILE LAB OBSERVATIONS
+Single cold-cache runs in Windows Edge at 390px, 100ms latency, 1.6Mbps download
+and 4x CPU slowdown: homepage LCP 3.112s, finder 2.780s, calculator 1.468s,
+diary 1.528s, sample article 1.596s. CLS was 0 to 0.00444 across those runs.
+All 28 sampled semantic contrast pairs passed. These are lab observations,
+not real-user Core Web Vitals, INP, a Lighthouse score or WCAG certification.
+Homepage/finder first-paint performance remains an optimization opportunity.
+
+FINAL MOBILE REFINEMENT
+A production screenshot showed that a long food name could push the commit
+action below the fold. The review action now stays at the bottom of the sheet
+and an empty validation row no longer reserves space. Source facts and
+validation messages remain available. See review-action-results.json for
+responsive, enlarged-text and actual portion-logging regression evidence.

@@ -1,0 +1,5 @@
+Compose botanical homepages and simplify food logging
+
+Use the shared market homepage with credited food inspiration and original botanical artwork. Reorganize daily logging, compact restaurant selections, refine calculator alignment and simplify editorial previews. Preserve nutrition records, formulas and private snapshots.
+
+Verified the supported build, 52 check groups, a 468-route browser sweep and targeted four-theme responsive/accessibility rechecks.

@@ -1,0 +1,566 @@
+{
+  "checkedAt": "2026-10-20T23:20:10.200Z",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.54833984375,
+        "bottom": 814.10498046875,
+        "dialogTop": 27.089996337890625,
+        "dialogBottom": 826.9100646972656,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.77392578125,
+        "bottom": 746.5789794921875,
+        "dialogTop": 23.899322509765625,
+        "dialogBottom": 827.2236633300781,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.6016845703125,
+        "bottom": 814.361328125,
+        "dialogTop": 23.913055419921875,
+        "dialogBottom": 827.2222595214844,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.7694091796875,
+        "bottom": 746.578369140625,
+        "dialogTop": 23.85479736328125,
+        "dialogBottom": 827.2279663085938,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "textScale": 1,
+      "initialAction": {
+        "top": 708.974609375,
+        "bottom": 756.168212890625,
+        "dialogTop": 94.54541015625,
+        "dialogBottom": 812.5593872070312,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.3331298828125,
+        "bottom": 869.8723754882812,
+        "dialogTop": 25.87005615234375,
+        "dialogBottom": 882.7051391601562,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "textScale": 1,
+      "initialAction": {
+        "top": 711.1856079101562,
+        "bottom": 758.3789672851562,
+        "dialogTop": 92.35491943359375,
+        "dialogBottom": 814.769775390625,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.3353271484375,
+        "bottom": 869.8814697265625,
+        "dialogTop": 25.789886474609375,
+        "dialogBottom": 882.7156677246094,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "textScale": 1,
+      "initialAction": {
+        "top": 714.6292724609375,
+        "bottom": 761.824951171875,
+        "dialogTop": 88.85809326171875,
+        "dialogBottom": 818.2185668945312,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.3768920898438,
+        "bottom": 870.0618286132812,
+        "dialogTop": 24.21148681640625,
+        "dialogBottom": 882.9227294921875,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 320,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.603515625,
+        "bottom": 814.3704833984375,
+        "dialogTop": 23.799713134765625,
+        "dialogBottom": 827.2334289550781,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 320,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.7857666015625,
+        "bottom": 746.580322265625,
+        "dialogTop": 24.015350341796875,
+        "dialogBottom": 827.2121276855469,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 390,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.6029663085938,
+        "bottom": 814.3678588867188,
+        "dialogTop": 23.83258056640625,
+        "dialogBottom": 827.2301635742188,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 390,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.7780151367188,
+        "bottom": 746.5794067382812,
+        "dialogTop": 23.93878173828125,
+        "dialogBottom": 827.2197265625,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 768,
+      "textScale": 1,
+      "initialAction": {
+        "top": 708.9862670898438,
+        "bottom": 756.1724243164062,
+        "dialogTop": 94.6536865234375,
+        "dialogBottom": 812.5548095703125,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 768,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.3331298828125,
+        "bottom": 869.872314453125,
+        "dialogTop": 25.870941162109375,
+        "dialogBottom": 882.7050476074219,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 1024,
+      "textScale": 1,
+      "initialAction": {
+        "top": 711.1728515625,
+        "bottom": 758.37451171875,
+        "dialogTop": 92.23226928710938,
+        "dialogBottom": 814.7753601074219,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 1024,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.3327026367188,
+        "bottom": 869.870361328125,
+        "dialogTop": 25.88775634765625,
+        "dialogBottom": 882.7028198242188,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 1440,
+      "textScale": 1,
+      "initialAction": {
+        "top": 714.7659301757812,
+        "bottom": 761.86767578125,
+        "dialogTop": 90.2391357421875,
+        "dialogBottom": 818.149169921875,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "citrus",
+      "width": 1440,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.3785400390625,
+        "bottom": 870.06884765625,
+        "dialogTop": 24.149810791015625,
+        "dialogBottom": 882.9308166503906,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 320,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.602783203125,
+        "bottom": 814.3667602539062,
+        "dialogTop": 23.84625244140625,
+        "dialogBottom": 827.2288208007812,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 320,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.9188232421875,
+        "bottom": 746.595947265625,
+        "dialogTop": 25.320159912109375,
+        "dialogBottom": 827.0839538574219,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 390,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.5995483398438,
+        "bottom": 814.3513793945312,
+        "dialogTop": 24.03680419921875,
+        "dialogBottom": 827.2100830078125,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 390,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.768798828125,
+        "bottom": 746.5783081054688,
+        "dialogTop": 23.84844970703125,
+        "dialogBottom": 827.2285766601562,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 768,
+      "textScale": 1,
+      "initialAction": {
+        "top": 708.8350830078125,
+        "bottom": 756.1171875,
+        "dialogTop": 93.25363159179688,
+        "dialogBottom": 812.6142272949219,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 768,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.333984375,
+        "bottom": 869.8758544921875,
+        "dialogTop": 25.839569091796875,
+        "dialogBottom": 882.7090759277344,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 1024,
+      "textScale": 1,
+      "initialAction": {
+        "top": 711.18701171875,
+        "bottom": 758.3794555664062,
+        "dialogTop": 92.3682861328125,
+        "dialogBottom": 814.7691650390625,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 1024,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.4201049804688,
+        "bottom": 870.24853515625,
+        "dialogTop": 22.5777587890625,
+        "dialogBottom": 883.1370849609375,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 1440,
+      "textScale": 1,
+      "initialAction": {
+        "top": 714.6279296875,
+        "bottom": 761.824462890625,
+        "dialogTop": 88.84469604492188,
+        "dialogBottom": 818.2192077636719,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "berry",
+      "width": 1440,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.335205078125,
+        "bottom": 869.881103515625,
+        "dialogTop": 25.793182373046875,
+        "dialogBottom": 882.7151794433594,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.624755859375,
+        "bottom": 814.47265625,
+        "dialogTop": 22.533721923828125,
+        "dialogBottom": 827.3578186035156,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.9334716796875,
+        "bottom": 746.59765625,
+        "dialogTop": 25.464752197265625,
+        "dialogBottom": 827.0697326660156,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "textScale": 1,
+      "initialAction": {
+        "top": 767.574951171875,
+        "bottom": 814.23291015625,
+        "dialogTop": 25.504547119140625,
+        "dialogBottom": 827.0658264160156,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "textScale": 2,
+      "initialAction": {
+        "top": 680.765625,
+        "bottom": 746.5780029296875,
+        "dialogTop": 23.816741943359375,
+        "dialogBottom": 827.2316589355469,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "textScale": 1,
+      "initialAction": {
+        "top": 708.9715576171875,
+        "bottom": 756.1671142578125,
+        "dialogTop": 94.51766967773438,
+        "dialogBottom": 812.5605163574219,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.37890625,
+        "bottom": 870.0703125,
+        "dialogTop": 24.136810302734375,
+        "dialogBottom": 882.9324645996094,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "textScale": 1,
+      "initialAction": {
+        "top": 711.1898193359375,
+        "bottom": 758.38037109375,
+        "dialogTop": 92.39559936523438,
+        "dialogBottom": 814.7679138183594,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.374267578125,
+        "bottom": 870.050537109375,
+        "dialogTop": 24.309967041015625,
+        "dialogBottom": 882.9098205566406,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "textScale": 1,
+      "initialAction": {
+        "top": 714.4978637695312,
+        "bottom": 761.7838134765625,
+        "dialogTop": 87.52923583984375,
+        "dialogBottom": 818.2853393554688,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "textScale": 2,
+      "initialAction": {
+        "top": 803.3338623046875,
+        "bottom": 869.8753662109375,
+        "dialogTop": 25.844207763671875,
+        "dialogBottom": 882.7084655761719,
+        "hit": true,
+        "scroll": 0
+      },
+      "loggedPortion": 37
+    }
+  ],
+  "errors": []
+}

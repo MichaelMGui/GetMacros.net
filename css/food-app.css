@@ -91,6 +91,8 @@
 .food-review-serving{font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:20px}
 .food-review-amount{display:grid;grid-template-columns:minmax(85px,.5fr) minmax(0,1fr);gap:16px;margin-bottom:16px}
 .food-review-error{font-size:.87rem;min-height:24px;margin-block:8px}
+.food-review-error:empty{display:none}
+#food-review .food-actions{position:sticky;bottom:0;z-index:1;margin-top:16px;padding-block:12px max(12px,env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--surface)}
 .food-review [data-review-values]{padding:24px 0;border-block:1px solid var(--line);margin-bottom:22px}
 .food-review [data-review-values] .food-values>div{border-top:3px solid var(--gold);padding-top:10px}
 .food-review [data-review-values] .food-values>div:nth-child(2){border-color:var(--protein)}

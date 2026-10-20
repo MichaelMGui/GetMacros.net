@@ -40,9 +40,18 @@
       "Citrus Morning",
       "Berry Bloom",
       "Forest Night"
-    ]
+    ],
+    "mobileReviewActionCombinations": 40
   },
   "deployment": {
-    "status": "Prepared; production verification pending"
-  }
+    "status": "Initial release live and verified; final mobile review refinement pending",
+    "initialRevision": "34d86d33d2fb59de8a826c4b2dea3bbf159f32e8",
+    "productionPageComparisons": 46,
+    "immutableAssetsMatched": 12,
+    "ordinaryURLComparisons": 7,
+    "liveJourneyGroupsPassed": 5,
+    "offlineDiaryPassed": true,
+    "finalRefinement": "Build and 40 review interactions passed; publication pending"
+  },
+  "labReport": "lab-performance.json"
 }
