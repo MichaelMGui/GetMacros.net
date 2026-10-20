@@ -1,0 +1,25 @@
+{
+  "screens": [
+    "home-390.png",
+    "home-full-390.png",
+    "restaurant-quiz-390.png",
+    "food-diary-390.png",
+    "add-food-390.png",
+    "food-review-390.png",
+    "diary-logged-390.png",
+    "diary-logged-full-390.png",
+    "calculators-390.png",
+    "articles-390.png",
+    "home-1440.png",
+    "home-full-1440.png",
+    "restaurant-quiz-1440.png",
+    "food-diary-1440.png",
+    "add-food-1440.png",
+    "food-review-1440.png",
+    "diary-logged-1440.png",
+    "diary-logged-full-1440.png",
+    "calculators-1440.png",
+    "articles-1440.png"
+  ],
+  "errors": []
+}

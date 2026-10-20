@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-20T22:17:56.867Z",
+  "revision": "abd9ebd199039eaa03f3896c8750b6115249e52e",
+  "routes": [
+    "/",
+    "/ca/en/",
+    "/restaurant-meal-finder.html",
+    "/calculators.html",
+    "/food-diary.html",
+    "/restaurant-meal-guides.html",
+    "/articles.html",
+    "/fage-plain-greek-yogurt-0-2-5-percent.html",
+    "/compare-foods.html"
+  ],
+  "shots": [
+    "home-390.png",
+    "ca-en-390.png",
+    "restaurant-meal-finder-390.png",
+    "calculators-390.png",
+    "food-diary-390.png",
+    "restaurant-meal-guides-390.png",
+    "articles-390.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-390.png",
+    "compare-foods-390.png",
+    "restaurant-quiz-390.png",
+    "add-food-390.png",
+    "home-1440.png",
+    "ca-en-1440.png",
+    "restaurant-meal-finder-1440.png",
+    "calculators-1440.png",
+    "food-diary-1440.png",
+    "restaurant-meal-guides-1440.png",
+    "articles-1440.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-1440.png",
+    "compare-foods-1440.png",
+    "restaurant-quiz-1440.png",
+    "add-food-1440.png"
+  ],
+  "errors": [],
+  "assetManifestSha256": "9296e282062f715b4e837c408f0a844488b388afe0a849ecafc9fa3f1e030c9c"
+}

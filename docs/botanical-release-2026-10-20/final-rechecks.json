@@ -1,0 +1,455 @@
+{
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "calculatorGeometry": {
+        "ageY": 703.71875,
+        "radioY": 587.71875,
+        "radioWidth": 284,
+        "fieldWidth": 284,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "calculatorGeometry": {
+        "ageY": 616.078125,
+        "radioY": 500.078125,
+        "radioWidth": 354,
+        "fieldWidth": 354,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "calculatorGeometry": {
+        "ageY": 526.140625,
+        "radioY": 526.140625,
+        "radioWidth": 347,
+        "fieldWidth": 347,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "calculatorGeometry": {
+        "ageY": 545.953125,
+        "radioY": 545.953125,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "calculatorGeometry": {
+        "ageY": 529.25,
+        "radioY": 529.25,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "citrus",
+      "width": 320,
+      "calculatorGeometry": {
+        "ageY": 703.71875,
+        "radioY": 587.71875,
+        "radioWidth": 284,
+        "fieldWidth": 284,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "citrus",
+      "width": 390,
+      "calculatorGeometry": {
+        "ageY": 616.078125,
+        "radioY": 500.078125,
+        "radioWidth": 354,
+        "fieldWidth": 354,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "citrus",
+      "width": 768,
+      "calculatorGeometry": {
+        "ageY": 526.140625,
+        "radioY": 526.140625,
+        "radioWidth": 347,
+        "fieldWidth": 347,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "citrus",
+      "width": 1024,
+      "calculatorGeometry": {
+        "ageY": 545.953125,
+        "radioY": 545.953125,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "citrus",
+      "width": 1440,
+      "calculatorGeometry": {
+        "ageY": 529.25,
+        "radioY": 529.25,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "berry",
+      "width": 320,
+      "calculatorGeometry": {
+        "ageY": 703.71875,
+        "radioY": 587.71875,
+        "radioWidth": 284,
+        "fieldWidth": 284,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "berry",
+      "width": 390,
+      "calculatorGeometry": {
+        "ageY": 616.078125,
+        "radioY": 500.078125,
+        "radioWidth": 354,
+        "fieldWidth": 354,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "berry",
+      "width": 768,
+      "calculatorGeometry": {
+        "ageY": 526.140625,
+        "radioY": 526.140625,
+        "radioWidth": 347,
+        "fieldWidth": 347,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "berry",
+      "width": 1024,
+      "calculatorGeometry": {
+        "ageY": 545.953125,
+        "radioY": 545.953125,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "berry",
+      "width": 1440,
+      "calculatorGeometry": {
+        "ageY": 529.25,
+        "radioY": 529.25,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "calculatorGeometry": {
+        "ageY": 703.71875,
+        "radioY": 587.71875,
+        "radioWidth": 284,
+        "fieldWidth": 284,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "calculatorGeometry": {
+        "ageY": 616.078125,
+        "radioY": 500.078125,
+        "radioWidth": 354,
+        "fieldWidth": 354,
+        "labels": [
+          {
+            "height": 50,
+            "width": 87.046875
+          },
+          {
+            "height": 50,
+            "width": 101.5625
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "calculatorGeometry": {
+        "ageY": 526.140625,
+        "radioY": 526.140625,
+        "radioWidth": 347,
+        "fieldWidth": 347,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "calculatorGeometry": {
+        "ageY": 545.953125,
+        "radioY": 545.953125,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "calculatorGeometry": {
+        "ageY": 529.25,
+        "radioY": 529.25,
+        "radioWidth": 367,
+        "fieldWidth": 367,
+        "labels": [
+          {
+            "height": 50,
+            "width": 99.25
+          },
+          {
+            "height": 50,
+            "width": 114.828125
+          }
+        ]
+      },
+      "sourceUnknownNoticeRetained": true
+    }
+  ],
+  "screens": [
+    "diary-final-text-zoom-light-320.png",
+    "calculators-light-390.png",
+    "food-diary-light-390.png",
+    "diary-current-summary-light-390.png",
+    "calculators-light-1440.png",
+    "food-diary-light-1440.png",
+    "diary-current-summary-light-1440.png",
+    "diary-final-text-zoom-citrus-320.png",
+    "calculators-citrus-390.png",
+    "food-diary-citrus-390.png",
+    "diary-current-summary-citrus-390.png",
+    "calculators-citrus-1440.png",
+    "food-diary-citrus-1440.png",
+    "diary-current-summary-citrus-1440.png",
+    "diary-final-text-zoom-berry-320.png",
+    "calculators-berry-390.png",
+    "food-diary-berry-390.png",
+    "diary-current-summary-berry-390.png",
+    "calculators-berry-1440.png",
+    "food-diary-berry-1440.png",
+    "diary-current-summary-berry-1440.png",
+    "diary-final-text-zoom-dark-320.png",
+    "calculators-dark-390.png",
+    "food-diary-dark-390.png",
+    "diary-current-summary-dark-390.png",
+    "calculators-dark-1440.png",
+    "food-diary-dark-1440.png",
+    "diary-current-summary-dark-1440.png"
+  ],
+  "errors": []
+}

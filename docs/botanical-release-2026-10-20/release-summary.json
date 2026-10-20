@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-20",
+  "localVerifiedAt": "2026-10-20T23:07:25.438412+00:00",
+  "baseRevision": "abd9ebd199039eaa03f3896c8750b6115249e52e",
+  "countries": [
+    "US",
+    "CA",
+    "MX",
+    "GB",
+    "IE",
+    "AU",
+    "NZ",
+    "JP",
+    "FR",
+    "IN",
+    "SG",
+    "ZA"
+  ],
+  "newArticles": 0,
+  "existingOctober19ArticlesPreserved": 29,
+  "newNutritionRecords": 0,
+  "newExactMealPhotographs": 0,
+  "reusedLicensedPhotographs": 1,
+  "newPhotographyAcquired": 0,
+  "checks": {
+    "CIgroups": 52,
+    "interactionGroups": 12,
+    "openStateGroups": 14,
+    "finalTargetedRechecks": 20,
+    "publicRoutesRendered": 468,
+    "responsiveWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "themes": [
+      "Garden Day",
+      "Citrus Morning",
+      "Berry Bloom",
+      "Forest Night"
+    ]
+  },
+  "deployment": {
+    "status": "Prepared; production verification pending"
+  }
+}

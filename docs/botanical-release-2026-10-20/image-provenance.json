@@ -1,0 +1,19 @@
+{
+  "photo": {
+    "path": "/images/editorial-salad.webp",
+    "photographer": "Anna Pelzer",
+    "source": "https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0",
+    "license": "https://unsplash.com/license",
+    "licenseChecked": "2026-10-20",
+    "use": "Food inspiration; visible credit. Not an exact restaurant order.",
+    "newDownload": false,
+    "transform": "CSS crop only; original file unchanged."
+  },
+  "botanicalArt": {
+    "source": "tools/botanical_release/layout.py: leaf()",
+    "rights": "Original SVG path artwork authored for this project"
+  },
+  "restaurantMarks": "Decorative typographic initials with full names; not official logos.",
+  "imageFailure": "Switches to an original salad illustration, with changed caption and alt text.",
+  "newExactMealPhotos": 0
+}

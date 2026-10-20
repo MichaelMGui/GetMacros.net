@@ -1,0 +1,9 @@
+area,implemented,coverage,rendered_evidence,status
+Shared international homepage,"Botanical composition, original characters and credited food inspiration",12 market homepages,after/home-light-1440.png,Implemented and checked locally; live verification pending
+Diary,Compact summary above four open meal groups; quieter secondary tools,/food-diary.html,after/diary-current-summary-light-390.png,Implemented and checked locally; live verification pending
+Food selection,"Aligned search and action, compact full meal name, contextual refinement",/food-diary.html; /food-library.html,after/diary-search-light-390.png,Implemented and checked locally; live verification pending
+Quiz,"Compact accessible choices, selection counts, tolerant names and empty state",All market finders,after/restaurant-options-dark-390.png,Implemented and checked locally; live verification pending
+Calculator,"Horizontal progress, aligned fields and units, one mobile column",/calculators.html,after/calculators-light-1440.png,Implemented and checked locally; live verification pending
+Editorial,"Featured story and supporting group, quiet illustrations and readable sources",/articles.html; retained reading routes,after/articles-light-1440.png,Implemented and checked locally; live verification pending
+Restaurant directory,"Shorter previews, real order counts and decorative initials",/restaurant-meal-guides.html,after/restaurant-meal-guides-light-390.png,Implemented and checked locally; live verification pending
+Themes and access,"Four palettes, keyboard selections, focus return, reduced motion and text enlargement",All shared routes,after/diary-final-text-zoom-light-320.png,Implemented and checked locally; live verification pending

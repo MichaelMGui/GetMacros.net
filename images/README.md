@@ -1,3 +1,7 @@
+## Current botanical presentation — October 20, 2026
+
+The active homepage reuses `editorial-salad.webp` as clearly captioned food inspiration, with a visible Anna Pelzer / Unsplash credit. The source page and Unsplash License were rechecked October 20, 2026. It is not an exact restaurant portion or a food-log measurement. No restaurant logos or exact meal photographs were acquired in this release. The new botanical line SVG is original code-native artwork. Current typography uses local Bricolage display and Inter interface fonts; older notes below describe historical releases.
+
 # Current artwork inventory — October 19, 2026
 
 The public interface uses original GetMacros food-character SVGs and explicitly labelled meal-category illustrations. See [this release’s provenance](../docs/ultimate-release-2026-10-19/image-provenance.json) and [the category manifest](meal-cutouts/provenance.json). The new sandwich and yogurt illustrations are original SVG artwork, not restaurant photographs. No exact meal photographs or photographic cutouts were added in this release. Reference screenshots and manufacturer label evidence do not grant image reuse rights.

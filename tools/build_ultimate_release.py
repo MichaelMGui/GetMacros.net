@@ -38,23 +38,10 @@ def appearance(text):
     body=head+'<div class="theme-segment" role="group" aria-label="Color theme">'+choices+'</div><button type="button" class="system-theme-button" data-system-theme aria-pressed="false">'+icon('sun')+' Follow device appearance</button><label class="motion-preference"><input type="checkbox" data-calm-motion><span>Calm motion<small>Less movement, same personality.</small></span></label>'
     return text[:node['inner']]+body+text[node['close']:]
 
-def botanical():
-    return '''<svg class="hero-botanical" viewBox="0 0 600 470" fill="none" aria-hidden="true"><path d="M112 354C52 232 95 74 240 62c88-9 91 44 167 27 107-25 159 58 137 150-17 75-113 142-210 143-94 2-177 47-222-28Z" fill="var(--soft)"/><path d="M81 190C17 154 38 93 90 102c36 7 38 46 3 82" fill="var(--peach)"/><path d="M476 72c62 12 75 63 37 77-37 13-59-25-37-77Z" fill="var(--fresh)"/><path d="M470 114c24 26 32 59 26 90M488 158c34-33 76-23 72 5-4 24-31 31-62 17M488 156c-34-3-62-30-45-48 14-17 39 4 45 48" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/><circle cx="154" cy="296" r="82" fill="var(--gold)"/><ellipse cx="306" cy="341" rx="174" ry="82" fill="var(--surface)"/><ellipse cx="306" cy="341" rx="150" ry="65" stroke="var(--line)" stroke-width="2"/><path d="M118 396c-35-3-50-21-39-34 13-16 37 7 39 34Zm0 0c-8-38 12-61 28-49 17 13-9 41-28 49Z" fill="var(--fresh)"/><path d="m108 420 21-52" stroke="var(--green)" stroke-width="2"/><circle cx="456" cy="315" r="29" fill="var(--bloom)"/><path d="m446 313 12-9m-9 20 12-9" stroke="var(--berry)" stroke-width="2" stroke-linecap="round"/></svg>'''
-
 def homepage(text,code):
-    info=markets()[code];hero=find(text,'food-hero')
-    content='<section class="food-hero flagship-hero container"><div class="hero-copy"><h1>Find a meal<br><span>that fits.</span></h1><p>Restaurant meals. Clear macros.<br>A little help choosing.</p><div class="hero-actions"><a class="btn btn-primary home-quiz-action" data-quiz-entry href="'+e(info['finder'])+'?quiz=1">Find my meal '+icon('meal')+'</a><a class="btn btn-secondary" href="'+e(info['finder'])+'">Browse meals</a></div><a class="hero-macro-link" href="/calculators.html?market='+code+'#macro-calculator">'+icon('calculator')+'<span>Start with my macros</span></a><p class="home-market-note">'+e(info['name'])+' menus · <a href="/world-restaurant-menus.html" data-open-country>Change country</a></p></div><div class="food-ensemble" aria-hidden="true">'+botanical()+''.join('<span class="ensemble-'+name+'" data-food-character="'+name+'"><svg viewBox="0 0 160 160"><use href="/images/food-characters.svg#food-'+name+'"/></svg></span>' for name in ['egg','strawberry','broccoli'])+'</div></section>'
-    text=replace(text,hero,content)
-    node=find(text,'home-macro-feature')
-    macro='<section class="home-macro-feature container"><div class="home-macro-copy"><h2>A good place<br>to start your day.</h2><p>Your calorie and macro estimate, made simple.</p><a class="btn btn-primary" href="/calculators.html?market='+code+'#macro-calculator">Calculate my macros '+icon('calculator')+'</a></div><div class="home-macro-art" aria-hidden="true"><div class="macro-orbit"><span class="orbit-protein">Protein</span><span class="orbit-carbs">Carbs</span><span class="orbit-fat">Fat</span>'+character('broccoli')+'</div></div></section>'
-    text=replace(text,node,macro)
-    text=text.replace('A few good orders.','A few good places to start.').replace('class="market-home home-composed flagship-home"','class="market-home home-composed flagship-home ultimate-home"')
-    for card in sorted([n for n in Document(text).nodes if 'data-home-record' in n['attrs']],key=lambda n:n['start'],reverse=True):
-        fragment=text[card['start']:card['end']];identity=card['attrs']['data-home-record']
-        if 'Grilled Chicken Sandwich' in identity:fragment=re.sub(r'(/images/meal-cutouts/)[^/" ]+\.svg',r'\1grilled-sandwich.svg',fragment)
-        elif 'Salad' in identity:fragment=re.sub(r'(/images/meal-cutouts/)[^/" ]+\.svg',r'\1salad.svg',fragment)
-        text=replace(text,card,fragment)
-    return text
+    from botanical_release.layout import homepage as compose
+    return compose(text,code,markets,find,replace,character,icon)
+
 
 def articles():
     result=[]
@@ -104,7 +91,7 @@ def editorial_index(rows):
     latest=[{'href':'/'+r['slug'].removesuffix('.html')+'.html','title':r['title'],'description':r['description'],'topic':topic_for(r),'new':True} for r in rows]
     allrows=list({r['href']:r for r in latest+old}.values())
     features=latest[:1]+latest[15:16]+latest[3:4] if len(latest)>15 else old[:3]
-    feature=''.join('<a class="editorial-feature-story" href="'+e(r['href'])+'"><span class="editorial-feature-art" aria-hidden="true"><img src="/images/meal-cutouts/'+art+'.svg" width="400" height="300" alt="" loading="lazy"></span><span class="editorial-category">'+TOPICS.get(r['topic'],'Food & numbers')+'</span><h2>'+e(r['title'])+'</h2><p>'+e(r['description'])+'</p><span class="editorial-read-label">Read the story '+icon('log')+'</span></a>' for r,art in zip(features,['breakfast','yogurt','chicken']))
+    feature=''.join('<a class="editorial-feature-story" href="'+e(r['href'])+'"><span class="editorial-feature-art" aria-hidden="true"><img src="/images/meal-cutouts/'+art+'.svg" width="400" height="300" alt="" loading="lazy"><small class="editorial-art-note">Illustration</small></span><span class="editorial-category">'+TOPICS.get(r['topic'],'Food & numbers')+'</span><h2>'+e(r['title'])+'</h2><p>'+e(r['description'])+'</p><span class="editorial-read-label">Read the story '+icon('log')+'</span></a>' for r,art in zip(features,['breakfast','yogurt','chicken']))
     filters='<div class="reader-controls"><label class="reader-search">'+icon('search')+'<span class="sr-only">Search guides</span><input type="search" data-reader-search placeholder="Find a guide" maxlength="150"></label><div class="reader-topics" role="group" aria-label="Reading topics"><button type="button" data-reader-topic="all" aria-pressed="true">All stories</button>'+''.join('<button type="button" data-reader-topic="'+key+'" aria-pressed="false">'+label+'</button>' for key,label in TOPICS.items())+'</div></div>'
     groups=''
     for key,label in TOPICS.items():
@@ -143,8 +130,9 @@ def index_articles(rows):
 
 def whats_new():
     from build_global_product import page
-    body='''<article class="food-app food-reading"><header class="food-app-head"><h1>A fresh perspective.</h1><p>New colors, clearer choices, and a little more food for thought.</p></header><p class="submission-byline">October 19, 2026</p><section><h2>Make it yours</h2><p>Garden Day, Citrus Morning, Berry Bloom or Forest Night. Choose a palette, follow your device, or turn on Calm motion.</p><button type="button" class="btn btn-secondary" data-open-appearance>Choose my colors</button></section><section><h2>Find the order that fits</h2><p>Choose a meal time and restaurants, then set the limits that matter. Your unfinished quiz stays with its country.</p><a class="btn btn-primary" data-quiz-entry data-market-route="finder" href="/restaurant-meal-finder.html?quiz=1">Find my meal</a></section><section><h2>From a label to your plate</h2><p>Compare exact yogurt pots, breakfast builds, coffee recipes and restaurant sides. See the portion behind each number.</p><ul><li><a href="/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html">Tim Hortons Canada: muffin, biscuit or Farmer’s Wrap?</a></li><li><a href="/fage-plain-greek-yogurt-0-2-5-percent.html">FAGE 0%, 2% or 5%: compare the same portion</a></li><li><a href="/pizzaexpress-classic-romana-margherita-nutrition.html">PizzaExpress: Classic or Romana?</a></li></ul><a href="/articles.html">Browse the new reading collection</a></section><section><h2>Keep your usuals close</h2><p>Open recent foods, review your portion and add it to breakfast, lunch, dinner or snacks. Your diary and backup stay under your control.</p><a href="/food-diary.html">Log food</a> · <a href="/back-up-and-move-food-diary.html">Back up your diary</a></section><section><h2>Start with your day. Choose one meal.</h2><p>The macro calculator has a clearer step-by-step workspace. Choose a per-meal calorie limit before opening the finder.</p><a href="/calculators.html">Calculate my macros</a></section></article>'''
-    page('/whats-new.html','What’s new at GetMacros: themes, food logging & guides','Choose four GetMacros themes, try the refined meal quiz and calculator, log a usual portion and read new source-backed food comparisons.',body,'guide')
+    body='''<article class="food-app food-reading"><header class="food-app-head"><h1>A little more room to enjoy food.</h1><p>A botanical homepage, a calmer diary, and clearer restaurant choices.</p></header><p class="submission-byline">October 20, 2026</p><section><h2>A fresh first impression</h2><p>The meal quiz stays first, with original food characters, botanical line artwork and credited food inspiration. Every supported country shares the composition.</p><a class="text-action" href="/">Find my meal</a></section><section><h2>Your food, simply recorded</h2><p>Daily totals sit above breakfast, lunch, dinner and snacks. Search, review a portion and log it. Repeat meals, recipes and backups have their own quieter place.</p><a class="text-action" href="/food-diary.html">Open my diary</a></section><section><h2>Choose a familiar restaurant</h2><p>Compact selections show the full name and a clear check. Restaurant search now handles punctuation and accents, and tells you when a name has no matches.</p><a class="text-action" href="/restaurant-meal-finder.html?quiz=1">Help me choose</a></section><section><h2>A clearer starting point</h2><p>The macro calculator has one aligned workspace, followed by your result and a meal preference you choose.</p><a class="text-action" href="/calculators.html">Calculate my macros</a></section><section><h2>Recently published</h2><p>The 29 restaurant, grocery and food-logging guides published October 19 are still available with their portions, sources and original dates.</p><a class="text-action" href="/articles.html">Read the guides</a></section></article>'''
+    page('/whats-new.html','What’s new at GetMacros: botanical design & simpler logging','See the botanical GetMacros homepage, simpler food diary, compact restaurant selections and refined macro calculator.',body,'guide')
+
 
 def apply():
     OUT.mkdir(parents=True,exist_ok=True)
@@ -165,6 +153,8 @@ def apply():
         text=re.sub(r'<script>try\{var p=localStorage.getItem\(\x27gm-theme\x27\);.*?</script>','<script>'+BOOT+'</script>',text,count=1,flags=re.S)
         text=appearance(text)
         if p.name=='food-diary.html':
+            from botanical_release.layout import diary as compose_diary
+            text=compose_diary(text,find,replace)
             # The async diary painter reveals real saved totals. Do not flash
             # an empty nutrient-details row before that initial storage read.
             text=text.replace('class="diary-summary" aria-label="Logged nutrition"','class="diary-summary" hidden aria-label="Logged nutrition"')
@@ -179,6 +169,9 @@ def apply():
             if work and 'class="calculator-journey"' not in text:
                 rail='<aside class="calculator-journey" aria-label="Calculator steps"><h2>Your daily<br>starting point.</h2><ol>'+''.join('<li data-calculator-stage="'+str(i)+'"><span>'+str(i+1)+'</span>'+label+'</li>' for i,label in enumerate(['About you','Your activity','Your goal']))+'</ol>'+character('broccoli')+'</aside>'
                 text=text[:work['inner']]+rail+text[work['inner']:]
+        if p.name=='restaurant-meal-guides.html':
+            from botanical_release.layout import directory as compose_directory
+            text=compose_directory(text,find,replace)
         if p.name=='food-library.html':
             text=re.sub(r'<!-- library-starts:start -->.*?<!-- library-starts:end -->','',text,flags=re.S)
             search=find(text,'food-search-region')
@@ -200,9 +193,11 @@ def apply():
             # House spelling on global/U.S. presentation. Keep exact URL identifiers.
             text=us_spelling(text)
         if text!=old:put(p,text);changes.append(p.relative_to(ROOT).as_posix())
+    from botanical_release.layout import update_sitemap
+    update_sitemap(ROOT,markets)
     from build_edition_css import build
     build()
     (OUT/'presentation.json').write_text(json.dumps({'date':DATE,'routes':changes,'newArticles':len(rows),'themes':['Garden Day','Citrus Morning','Berry Bloom','Forest Night'],'scope':'Implementation; publication and rendered verification tracked separately.'},indent=2)+'\n',encoding='utf-8')
-    print('Ultimate presentation:',len(changes),'routes;',len(rows),'new authored articles integrated.')
+    print('Shared presentation:',len(changes),'routes;',len(rows),'existing source-checked editorial pages maintained.')
 
 if __name__=='__main__':apply()

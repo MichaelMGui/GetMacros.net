@@ -64,7 +64,7 @@ async function paintDiary(){
   }n.append(section);
  }
  const totals=F.sum(entries.map(e=>e.snapshot.nutrients)),dl=el('dl',undefined,'food-values');
- for(const k of ['cal','p','c','fat']){const t=aggregate(totals[k]),g=el('div');g.append(el('dt',labels[k]),el('dd',t.number+(!['—','Unknown'].includes(t.number)?' '+F.units[k]:'')),el('small',t.detail));dl.append(g);}root.querySelector('[data-diary-totals]').replaceChildren(dl);
+ for(const k of ['cal','p','c','fat']){const t=aggregate(totals[k]),g=el('div');g.append(el('dt',labels[k]),el('dd',t.number+(!['—','Unknown'].includes(t.number)?' '+F.units[k]:'')));if(totals[k].missing)g.append(el('small',t.detail));dl.append(g);}root.querySelector('[data-diary-totals]').replaceChildren(dl);
  const micro=root.querySelector('[data-diary-micros]');micro.replaceChildren();for(const k of ['f','na','sugar','calcium','iron','potassium','vitaminC','vitaminD','vitaminB12']){const t=aggregate(totals[k]);micro.append(el('dt',labels[k]),el('dd',t.number+(!['—','Unknown'].includes(t.number)?' '+F.units[k]:'')+(totals[k].missing?' · '+t.detail:'')));}
  const stage=await S.loggedDayCount(3);root.querySelector('[data-companion]').dataset.stage=stage;root.querySelector('[data-companion-copy]').textContent=stage?'Your notebook is growing.':'A little company.';root.dispatchEvent(new Event('diary-updated'));if(picker.open)await tab(activeTab);
 }

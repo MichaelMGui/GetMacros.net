@@ -1,0 +1,76 @@
+GETMACROS — BOTANICAL DESIGN AND FOOD DIARY RELEASE
+20 October 2026
+
+STATUS
+Implementation and local verification complete. Production publication pending.
+Base revision: abd9ebd199039eaa03f3896c8750b6115249e52e
+
+IMPLEMENTATION
+The same 12 market homepages use a central quiz entry, credited food inspiration,
+original botanical SVG linework and existing food characters. Four actual local
+meal examples, calculator, local restaurant shortcuts, diary, Learn and Play
+remain directly discoverable. No phone frame or reference branding was copied.
+
+The diary now places a compact daily summary above breakfast, lunch, dinner and
+snacks. Recipes, repeats and backups have a quieter secondary area. The food
+sheet uses one aligned search/action, a compact full meal name and contextual
+refinement. Repeated complete-total labels were removed; unavailable/partial
+notices remain visible. Data, formulas, IndexedDB schema and historical source
+snapshots are unchanged. No default goals or progress claims were invented.
+
+Quiz choices use real inputs with full clickable labels, clear checks and
+selected states. Search handles punctuation/accents, counts selections and has
+an honest empty state. Existing market isolation, Back retention and hard limits
+remain. Restaurant initials are decorative type marks, not official logos.
+The U.S. directory keeps real names/counts/links with shorter previews.
+
+The calculator has aligned fields and units, horizontal progress, one mobile
+column where needed, a real result and a chosen per-meal handoff. Formula code
+is unchanged. The article index pairs a featured story with a quiet supporting
+group. Existing article bodies, sources, dates and URLs remain. No new articles,
+menu records or grocery imports are counted in this visual release.
+
+SOURCE FILES
+Existing sources were replaced/refined: tools/home-workspace.css,
+css/food-app.css, tools/food-design.css, tools/release-product.css,
+tools/release-library.css, tools/product-navigation.css, js/food-app.js,
+js/meal-guide.js, js/unified-v7.js and tools/build_ultimate_release.py.
+Shared composition helpers: tools/botanical_release/layout.py.
+Generated page/asset changes are derived from these sources; there is no new
+public override stylesheet or indexable component gallery.
+
+IMAGERY
+Existing Anna Pelzer / Unsplash photo reused with visible credit and a
+Food inspiration label. Source and license checked October 20. No exact branded
+meal photography or photo cutouts added. Image failure changes both the image
+and its caption/alt text to an original illustration. See image-provenance.json.
+
+SEO AND PRESERVATION
+Established URLs, canonicals, country data and crawlable links preserved.
+The 29 October 19 articles retain their original publication/source dates.
+Sitemap modification dates reflect the changed homepages, index, calculator
+and What's New; private diary states remain outside the sitemap. No rankings,
+search traffic, Google indexing or monetization eligibility claim is made.
+
+VERIFICATION
+Supported full build passed. Two product-integration passes were deterministic.
+52 supported CI check groups passed, with a fixed directory-name regression
+retained in historical QA evidence. Seven final static regressions passed.
+468 public routes rendered. Sixteen families checked at 320, 390, 768, 1024 and
+1440 pixels across all four themes. Twelve core browser groups, fourteen
+open-state/edge groups and twenty final targeted rechecks passed.
+Actual animation evidence: after/interactions.zip. Screenshots: before/, after/.
+Visual review caught and corrected clipped captions, old calculator rail rules,
+text-enlargement clipping, date-arrow fill and repeated diary copy.
+Final rechecks verify visible date arrows, real input alignment, full date/
+action controls, and missing nutrients. Isolated QA diary data only was used.
+
+LIMITATIONS
+Windows Edge browser checks; no physical iOS/Safari or Android-device testing.
+Contrast/lab checks and keyboard journeys are not a full WCAG certification.
+Official restaurant logos and exact menu photographs were not acquired.
+No accounts, cloud synchronization, AI meal estimation or new backend added.
+Native project, advertising configuration and Cloudflare DNS are untouched.
+
+LIVE VERIFICATION
+Pending actual deployment; final receipts will be saved separately.

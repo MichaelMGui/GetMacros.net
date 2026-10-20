@@ -253,3 +253,12 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
   else start();
 }());
+
+/* A failed inspiration photograph falls back to clearly labeled original artwork. */
+(function(){
+  function foodPhotos(){document.querySelectorAll('[data-food-photo]').forEach(img=>{
+    const recover=()=>{if(img.dataset.foodPhotoState==='illustration')return;img.dataset.foodPhotoState='illustration';img.alt='Original illustration of a vegetable bowl. Food inspiration.';img.src='/images/meal-cutouts/salad.svg';const figure=img.closest('figure');figure.querySelector('[data-food-photo-credit]').hidden=true;figure.querySelector('[data-food-photo-fallback]').hidden=false;};
+    img.addEventListener('error',recover,{once:true});if(img.complete&&!img.naturalWidth)recover();
+  });}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',foodPhotos,{once:true});else foodPhotos();
+}());

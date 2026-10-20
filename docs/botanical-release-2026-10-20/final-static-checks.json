@@ -1,0 +1,51 @@
+[
+  {
+    "command": [
+      "tools/master_completion/test_integration.py"
+    ],
+    "exit": 0,
+    "output": "test_actual_finder_membership_matches_presence_per_chain (__main__.CompletedRestaurantIntegration.test_actual_finder_membership_matches_presence_per_chain) ... ok\ntest_all_reviewed_records_integrated_once (__main__.CompletedRestaurantIntegration.test_all_reviewed_records_integrated_once) ... ok\ntest_country_dataset_and_finder_do_not_leak (__main__.CompletedRestaurantIntegration.test_country_dataset_and_finder_do_not_leak) ... ok\ntest_country_market_chain_definition_comes_from_actual_finder (__main__.CompletedRestaurantIntegration.test_country_market_chain_definition_comes_from_actual_finder) ... ok\ntest_directories_link_local_operations_honestly (__main__.CompletedRestaurantIntegration.test_directories_link_local_operations_honestly) ... ok\ntest_guide_source_portions_and_seo_are_real (__main__.CompletedRestaurantIntegration.test_guide_source_portions_and_seo_are_real) ... ok\ntest_new_operating_presence_never_fakes_nutrition (__main__.CompletedRestaurantIntegration.test_new_operating_presence_never_fakes_nutrition) ... ok\ntest_new_york_fries_coverage_counts_and_source (__main__.CompletedRestaurantIntegration.test_new_york_fries_coverage_counts_and_source) ... ok\ntest_presence_counts_reflect_real_country_rows (__main__.CompletedRestaurantIntegration.test_presence_counts_reflect_real_country_rows) ... ok\ntest_restaurant_adapter_unit_conversion_and_country_search (__main__.CompletedRestaurantIntegration.test_restaurant_adapter_unit_conversion_and_country_search) ... ok\ntest_us_finder_count_matches_the_actual_primary_dataset (__main__.CompletedRestaurantIntegration.test_us_finder_count_matches_the_actual_primary_dataset) ... ok\ntest_world_index_uses_every_tracked_chain (__main__.CompletedRestaurantIntegration.test_world_index_uses_every_tracked_chain) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 105.298s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/validate_site.py"
+    ],
+    "exit": 0,
+    "output": "PASS: 468 HTML files; 465 indexable pages; 465 sitemap URLs; 464 searchable resources.\nWARNING: duplicate H1 wording: au/en/index.html, ca/en/index.html, fr/en/index.html, gb/en/index.html, ie/en/index.html, in/en/index.html, index.html, jp/en/index.html, mx/en/index.html, nz/en/index.html, sg/en/index.html, za/en/index.html\n"
+  },
+  {
+    "command": [
+      "tools/test_publication.py"
+    ],
+    "exit": 0,
+    "output": "Publication: 468 pages; shared stylesheet (86,295 bytes) plus purposeful route styles, preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.\n"
+  },
+  {
+    "command": [
+      "tools/test_asset_stamps.py"
+    ],
+    "exit": 0,
+    "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.429s\n\nOK\n"
+  },
+  {
+    "command": [
+      "tools/test_visible_workspace.py"
+    ],
+    "exit": 0,
+    "output": "PASS: all shared quiz-first compositions; single diary hooks, private workspace and one refinement dialog.\n"
+  },
+  {
+    "command": [
+      "tools/test_master_homepages.py"
+    ],
+    "exit": 0,
+    "output": "PASS: all shared home structures, exact market/record/portion values, flagship quiz links, country dialogs, appearance choices and canonicals.\n"
+  },
+  {
+    "command": [
+      "tools/ultimate_release/test_release.py"
+    ],
+    "exit": 0,
+    "output": "test_document_title_does_not_include_accessible_chart_titles (__main__.Release.test_document_title_does_not_include_accessible_chart_titles) ... ok\ntest_every_route_has_four_accessible_choices (__main__.Release.test_every_route_has_four_accessible_choices) ... ok\ntest_image_identity_and_honest_labels (__main__.Release.test_image_identity_and_honest_labels) ... ok\ntest_new_articles_crawlable_from_topics_search_sitemap (__main__.Release.test_new_articles_crawlable_from_topics_search_sitemap) ... ok\ntest_private_storage_and_no_obsolete_presentation (__main__.Release.test_private_storage_and_no_obsolete_presentation) ... ok\ntest_same_home_architecture_real_market_data (__main__.Release.test_same_home_architecture_real_market_data) ... ok\ntest_source_check_dates_come_from_source_evidence (__main__.Release.test_source_check_dates_come_from_source_evidence) ... ok\ntest_twenty_nine_new_distinct_resources (__main__.Release.test_twenty_nine_new_distinct_resources) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 4.939s\n\nOK\n"
+  }
+]

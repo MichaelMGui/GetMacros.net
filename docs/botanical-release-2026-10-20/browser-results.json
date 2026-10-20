@@ -1,0 +1,5905 @@
+{
+  "date": "2026-10-20T22:51:08.135Z",
+  "checks": [
+    "Restaurant punctuation aliases, honest empty state, multi-select count and Back retention",
+    "UK accented restaurant lookup uses UK menu choices",
+    "Canadian quiz retains exact market and hard calorie limit",
+    "Aligned food search, favorite, portion review, breakfast log and retained snapshot",
+    "Entry edit scales stored values; remove and undo restore the entry",
+    "Invalid import preserves entries; exported backup imports without changing historical nutrient snapshots",
+    "Unavailable calories/protein remain Unknown rather than zero",
+    "Aligned calculator stages, invalid adult input, actual result and private per-meal handoff",
+    "Country navigation and Back; native dialog focus return; calm motion",
+    "16 page families at five widths in all four themes",
+    "Reduced motion and 200% text enlargement",
+    "Every public route rendered: 468"
+  ],
+  "layouts": [
+    {
+      "label": "quiz-selected-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": [
+        {
+          "name": "guided-dialog",
+          "width": 368,
+          "content": 368
+        }
+      ]
+    },
+    {
+      "label": "canadian-results-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "diary-empty-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "diary-search-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": [
+        {
+          "name": "food-picker",
+          "width": 372,
+          "content": 372
+        }
+      ]
+    },
+    {
+      "label": "diary-review-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": [
+        {
+          "name": "food-picker",
+          "width": 372,
+          "content": 372
+        },
+        {
+          "name": "food-review",
+          "width": 356,
+          "content": 356
+        }
+      ]
+    },
+    {
+      "label": "diary-logged-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "diary-missing-values-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "calculator-result-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "navigation-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": [
+        {
+          "name": "site-menu",
+          "width": 372,
+          "content": 372
+        }
+      ]
+    },
+    {
+      "label": "/ light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html light 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "home-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "articles-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html light 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-light-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html light 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html light 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "home-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "articles-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html light 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-light-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html citrus 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "home-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "articles-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html citrus 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-citrus-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html citrus 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html citrus 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "home-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "articles-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html citrus 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-citrus-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html berry 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "home-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "articles-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html berry 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-berry-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html berry 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html berry 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "home-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "articles-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html berry 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-berry-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html dark 320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/ dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "home-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "articles-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html dark 390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-dark-390",
+      "width": 390,
+      "page": 390,
+      "dialogs": []
+    },
+    {
+      "label": "/ dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html dark 768",
+      "width": 768,
+      "page": 768,
+      "dialogs": []
+    },
+    {
+      "label": "/ dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html dark 1024",
+      "width": 1024,
+      "page": 1024,
+      "dialogs": []
+    },
+    {
+      "label": "/ dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "home-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/ dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/ dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "mx-en-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/ dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "gb-en-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-finder-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "calculators-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-diary-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "food-library-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "compare-foods-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "restaurant-meal-guides-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/ dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "ca-en-restaurants-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "articles-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "fage-plain-greek-yogurt-0-2-5-percent-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "play-market-memory-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html dark 1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "privacy-dark-1440",
+      "width": 1440,
+      "page": 1440,
+      "dialogs": []
+    },
+    {
+      "label": "200% homepage text",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "home-text-zoom-320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "200% diary text",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "diary-text-zoom-320",
+      "width": 320,
+      "page": 320,
+      "dialogs": []
+    },
+    {
+      "label": "/404.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/about.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/accessibility.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/added-sugar-percentage-from-grams.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/arbys-breakfast-bread-format.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/arbys-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/arbys-roast-beef-cheddar-french-dip.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/arbys-sliders-count-whole-tray.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/are-diet-drinks-bad-for-you.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/articles.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/as-packaged-vs-prepared-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/back-up-and-move-food-diary.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/barcode-food-search-label-check.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/barilla-australia-protein-plus-vs-spaghetti.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/best-fast-food-restaurants-for-your-goals.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/blog.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/body-recomposition-explained.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/breakfast-bacon-format-sodium-cross-chain.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/breakfast-dataset-not-opening-hours.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/breakfast-drinks-and-add-ons.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/breakfast-food-vs-combo-menu.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/breakfast-sandwich-half-not-half-protein.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/breakfast-two-items-not-one-entry.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/breakfast-yogurt-topping-layer.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/budget-meal-builder.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/burger-king-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/burger-king-us-breakfast-hash-browns-order.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/burger-king-us-whopper-cheese-standard-serving.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/burger-variants-not-nine-base-burgers.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/burrito-wrap-cross-chain-no-size-standard.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/bushs-black-beans-vs-chickpeas.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/caffe-nero-latte-milk-size-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculate-macros-mixed-bowl.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculator-activity-choice-sensitivity.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculator-height-feet-inches-not-decimal.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculator-input-basis-checklist.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculator-positive-inputs-zero-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculator-pound-kilogram-entry.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculator-round-at-end.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calculators.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calorie-range-menu-reading.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calorie-tool-output-reverse-check.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calorie-units-kcal-kilojoules.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calories-in-multi-serving-packages.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calories-on-rest-days.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/calories-vs-macros-what-matters-more.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/can-you-build-muscle-in-a-calorie-deficit.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/canada-pepperoni-pizza-three-slice-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/carbohydrate-label-portion-tool.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/carbs.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/cava-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chick-fil-a-canada-grilled-sandwich-fries-sizes.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chick-fil-a-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chick-fil-a-vs-popeyes-chicken.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chipotle-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chipotle-rice-beans-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chipotle-toppings-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chipotle-vs-cava-chicken-bowls.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chocolate-protein-shakes-country-portions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/choose-fooddata-central-entry.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/chopstix-uk-box-base-toppings-calories.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-complete-restaurant-orders.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-foods.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/compare-menu-ingredients-worldwide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/contact.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/corrections.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/cross-chain-bean-burritos-serving-proof.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/cross-chain-breakfast-ham-formats.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/cross-chain-chicken-soup-no-sodium-assumption.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/cross-chain-melt-sandwich-orders.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/culvers-chicken-grilled-crispy-spicy.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/culvers-dinner-name-side-footnote.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/culvers-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/cutting-bulking-maintenance-explained.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/daisy-cottage-cheese-2-4-percent-portions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/del-taco-bean-burrito-vs-veggie-burrito.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/del-taco-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/del-taco-two-street-tacos-vs-burrito.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/diet-patterns-evidence.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/does-creatine-cause-hair-loss.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/drained-weight-nutrition-label.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/dunkin-healthy-breakfast-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/edible-portion-vs-purchased-weight.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/editorial-policy.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/el-pollo-loco-bowls-protein-bigger-build.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/el-pollo-loco-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/el-pollo-loco-salad-dressing-boundary.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/el-pollo-loco-tortilla-complete-chicken-meal.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/equal-calories-different-macros-menu.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/equal-tax-protein-value-ranking.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/exact-fiber-coverage-denominator.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fage-plain-greek-yogurt-0-2-5-percent.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fast-food-breakfast-protein-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fast-food-fiber-and-protein.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fast-food-meals-500-to-700-calories.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fast-food-nutrition-data-report.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fast-food-protein-and-sodium.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fast-food-under-1000mg-sodium.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fat-and-carb-two-energy-profiles.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fats.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fiber-count-menu-not-plant-score.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fiber-daily-value-portion-example.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fiber-per-portion-vs-density.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/five-guys-uk-little-hamburger-cheeseburger.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/food-diary.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library-sources.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/food-library.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/food-shelf.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/grams-per-serving-vs-protein-percentage.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/grams-vs-milliliters-nutrition-labels.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/greggs-breakfast-baguette-calories-protein.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/grilled-and-blackened-chicken-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/grocery-food-coverage.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/guzman-y-gomez-australia-chicken-bowl-vs-burrito.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/half-serving-percent-daily-value.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/harveys-canada-burger-fries-onion-rings-order.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/harveys-original-angus-veggie-burger-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/healthy-fast-food.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/hersheys-special-dark-bar-vs-kisses.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/high-protein-fast-food-under-500-calories.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/high-protein-foods-list.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/house-foods-firm-vs-super-firm-tofu.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-many-calories-should-i-eat-a-day.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-much-fiber-per-day.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-much-protein-can-your-body-absorb.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-much-protein-per-day.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-much-sodium-per-day.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-build-a-balanced-meal-with-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-calculate-macros-by-hand.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-calculate-maintenance-calories.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-calculate-recipe-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-eat-out-without-wrecking-your-goal.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-hit-protein-goal-on-budget.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-log-food-portions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/how-to-read-a-nutrition-label.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in-n-out-double-vs-two-hamburgers.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in-n-out-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in-n-out-three-published-hamburger-versions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/international-menu-data-coverage-explained.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jersey-mikes-healthy-subs-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/kfc-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/kfc-uk-burger-twister-wrap-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/kirkland-canada-macadamia-vs-mixed-nuts.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/leon-uk-breakfast-muffin-egg-pot-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/leon-uk-chicken-wrap-rice-box-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/macros-for-muscle-gain.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/macros-for-weight-loss.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mary-browns-big-mary-fries-vs-taters.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mcdonalds-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/meal-calculation-two-serving-units.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/meal-filters-intersection-not-extra-options.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/menu-average-chain-weighting.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/menu-pdf-filename-not-edition-date.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/milligram-microgram-mineral-label.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/missing-restaurant-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nandos-uk-quarter-chicken-rice-chips-corn.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/net-carbs-total-carbohydrate.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/new-york-fries-canada-fries-vs-poutine.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/noodles-and-company-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/noodles-mac-protein-not-simple-add-on.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/noodles-regular-noodle-orders-not-addons.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/noodles-two-chicken-salads.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nutrient-grams-not-food-weight.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nutrition-blank-vs-not-detected.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nutrition-data-mean-not-every-portion.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nutrition-label-comparison-tool.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nutrition-label-rounding.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nutrition-totals-not-ingredient-recipe.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/offline.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/original-vs-honey-nut-cheerios-labels.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/panda-express-base-nutrition-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/panda-express-chicken-entree-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/panda-express-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/panda-express-mushroom-and-orange-chicken-portions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/panera-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/peanut-butter-powder-vs-creamy-spread.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/per-ounce-vs-per-100g-food.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/percent-daily-value-not-vertical-total.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/percentage-points-vs-percent-food-labels.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/pizzaexpress-classic-romana-margherita-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/plant-name-not-fiber-number.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-bean-balance.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-berry-bounce.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-build-a-plate.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-claim-check.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-description-detective.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-fiber-trail.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-food-crossword.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-food-factory.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-fruit-catch.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-garden-glide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-garden-pipes.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-harvest-conveyor.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-ingredient-anagrams.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-ingredient-order.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-kitchen-connections.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-kitchen-rhythm.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-label-matchmaker.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-lunchbox-logic.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-macro-grid.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-budget.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-market-memory.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-mascot-maker.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-menu-mystery.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-menu-word-hunt.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-missing-number-kitchen.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-nutrition-term-match.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-odd-ingredient-out.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-orange-orbit.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-orchard-nonogram.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-order-recall.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-pantry-pack.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-pantry-peek.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-picnic-delivery.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-picnic-planner.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-plate-art.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-portion-balance.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-portion-fractions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-protein-target-puzzle.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-range-finder.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-recipe-dominoes.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-recipe-path.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-recipe-remix.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-restaurant-order-builder.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-restaurant-route.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-rounding-room.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-sandwich-architect.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-sequence-chef.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-serving-size-detective.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-silhouette-supper.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-smoothie-studio.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-snack-slide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-sodium-sort.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-source-sleuth.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-spot-the-swap.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-tabletop-tangram.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play-trade-off-table.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/play.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/popeyes-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/portion-ratio-vs-percent-change.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/privacy.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-chicken-sandwich-size-cross-chain.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-cost-currency-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-cost-food-waste.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-cost-pack-size-minimum-spend.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-density-fast-food.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-label-blank-daily-value.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-per-package-not-scoop-count.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-powder-scoop-weight.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-serving-count-day-not-prescription.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-sort-vs-portion-mass.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-target-gap-not-automatic-extra.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-value-after-fixed-delivery-fee.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-value-calculator.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein-value-price-range-overlap.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/protein.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/published-vs-calculated-restaurant-rows.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/qdoba-burrito-bowl-published-pair.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/qdoba-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/qdoba-vegan-bowl-fiber-tradeoff.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/quaker-old-fashioned-vs-quick-oats.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/raising-canes-build-order-not-combo-name.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/raising-canes-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/raw-vs-cooked-food-weight.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/read-and-watch.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-added-water-not-new-nutrients.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-combined-batches-not-average-serving.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-discrete-pieces-count-or-weight.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-evaporation-weight-density.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-fixed-seasoning-scale.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-freezing-portion-count.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-left-in-pan-residual.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-macro-scaler.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-one-ingredient-substitution.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-quarter-batch-not-quarter-ingredient.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-recalculate-new-product-label.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-repeated-ingredient-two-label-bases.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-sauce-made-vs-sauce-used.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-sauce-on-side-two-totals.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-target-batch-portions-integer.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/recipe-uniform-vs-component-serving.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-bowl-nutrition-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-compare-tradeoff-not-single-score.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-dominated-choice-still-context.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-finder.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-meal-guides.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-menu-serving-weight.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-protein-cost-receipt-prices.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-protein-value-no-price-data.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-search-result-count-scope.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/restaurant-value-your-nutrient-not-protein.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/salad-burger-calories-no-category-rule.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/same-restaurant-name-different-market-data.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/saved-meal-source-version-check.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/search.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/serving-size-vs-portion-size.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/silk-unsweet-soy-vs-almondmilk.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sodium-label-comparison-tool.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sodium-milligrams-to-grams.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sonic-hot-dog-sodium-toppings.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sonic-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sonic-small-burgers-not-same-order.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sonic-ultimate-breakfast-not-extra-protein-rule.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sources.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/starbucks-healthy-food-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/starbucks-uk-pumpkin-spice-latte-hot-iced.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/starkist-light-vs-albacore-tuna-pouches.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/subway-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/subway-mexico-chicken-sandwich-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/subway-turkey-breast-canada-vs-mexico.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/subway-uk-six-inch-chicken-sandwich-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sugar-lines-do-not-add.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sweat-rate-calculator.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sweetgreen-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sweetgreen-vs-panera-chicken-salads.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/taco-bell-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/taco-johns-bowl-base-tradeoff.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/taco-johns-breakfast-taco-vs-burrito.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/taco-johns-nutrition-guide.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/taco-johns-small-fiber-bound.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/tare-bowl-before-weighing-food.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/terms.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/three-count-tacos-not-three-equal-meals.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/tim-hortons-canada-protein-latte-vs-latte.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/tortilla-uk-burrito-bowl-rice-portions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/two-fiber-sources-one-bowl.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/two-for-one-protein-promotion.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/two-meal-total-not-day-recommendation.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/two-person-restaurant-budget-constraints.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/unequal-recipe-portions.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/use-calorie-target-meal-finder.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/vegetarian-fast-food-protein-comparison.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/vegetarian-label-not-allergen-safety.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/wagamama-uk-ramen-calories-protein-salt.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/wasabi-sushi-set-dressing-nutrition.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/weigh-food-by-container-difference.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/weight-goal-timeline-calculator.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/wendys-healthy-meals-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/wendys-uk-breakfast-muffin-wrap-calories-protein.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/what-are-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/what-is-a-calorie-deficit.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/what-to-eat-after-a-workout.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/what-to-eat-before-a-workout.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/whats-new.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/when-to-recalculate-calories-and-macros.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/why-did-i-gain-weight-overnight.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/world-restaurant-menus.html",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/guides/gyg-australia-mini-bowl-and-mini-burrito/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/restaurants/domino-s/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/restaurants/guzman-y-gomez/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/restaurants/hungry-jack-s/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/au/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/collections/breakfast/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/guides/burger-king-canada-us-whopper-local-ingredients/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/guides/burger-king-canada-whopper-cheese-standard-serving/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/guides/kfc-canada-original-recipe-pieces-and-two-piece-log/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/menu-sources/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/a-w-canada/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/booster-juice/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/burger-king/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/chick-fil-a/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/chipotle/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/domino-s/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/harvey-s/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/kfc/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/mary-brown-s/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/new-york-fries/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/pizza-nova/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/pizza-pizza/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/subway/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/tim-hortons/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/restaurants/triple-os/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/tools/complete-order/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ca/en/tools/drink-comparison/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fr/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fr/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fr/en/guides/quick-france-coca-cola-volumes-and-mega-giant/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fr/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fr/en/restaurants/burger-king/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fr/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/fr/en/restaurants/quick/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/guides/kfc-uk-fillet-burger-and-ranch-rice-bowl/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/ask-italian/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/caffe-nero/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/chick-fil-a/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/chipotle/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/chopstix/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/five-guys/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/greggs/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/kfc/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/leon/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/nandos/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/pepes/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/pizzaexpress/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/starbucks/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/subway/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/tim-hortons/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/tortilla/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/wagamama/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/wasabi/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/wendys/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/gb/en/restaurants/zizzi/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/guides/kfc-ireland-fillet-roll-and-fillet-burger/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/restaurants/kfc/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/restaurants/subway/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/ie/en/restaurants/zizzi/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in/en/guides/mcdonalds-north-east-india-veg-and-egg-mcmuffin/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in/en/restaurants/domino-s/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/in/en/restaurants/mcdonald-s-north-east-india/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/guides/mos-japan-mos-burger-and-teriyaki-chicken/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/restaurants/kfc/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/restaurants/mcdonald-s-japan/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/jp/en/restaurants/mos-burger/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/guides/subway-mexico-gran-pastor-and-gringo-pastor/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/restaurants/starbucks/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/mx/en/restaurants/subway/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/guides/subway-nz-regular-and-large-teriyaki-salad/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/guides/subway-nz-roast-beef-sub-and-wrap-recipes/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/restaurants/burger-king/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/restaurants/domino-s/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/nz/en/restaurants/subway/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sg/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sg/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sg/en/guides/burger-king-singapore-whopper-and-cheese/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sg/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sg/en/restaurants/burger-king/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sg/en/restaurants/chick-fil-a/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/sg/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/za/en/collections/protein-meals/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/za/en/find-a-meal/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/za/en/guides/debonairs-south-africa-bbq-chicken-source-sizes/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/za/en/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/za/en/restaurants/debonairs-pizza/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    },
+    {
+      "label": "/za/en/restaurants/",
+      "width": 1280,
+      "page": 1280,
+      "dialogs": []
+    }
+  ],
+  "screens": [
+    "quiz-selected-light-390.png",
+    "canadian-results-light-390.png",
+    "diary-empty-light-390.png",
+    "diary-search-light-390.png",
+    "diary-review-light-390.png",
+    "diary-logged-light-390.png",
+    "diary-missing-values-light-390.png",
+    "calculator-result-light-390.png",
+    "navigation-light-390.png",
+    "home-light-390.png",
+    "ca-en-light-390.png",
+    "mx-en-light-390.png",
+    "gb-en-light-390.png",
+    "restaurant-meal-finder-light-390.png",
+    "calculators-light-390.png",
+    "food-diary-light-390.png",
+    "food-library-light-390.png",
+    "compare-foods-light-390.png",
+    "restaurant-meal-guides-light-390.png",
+    "ca-en-restaurants-light-390.png",
+    "articles-light-390.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-light-390.png",
+    "play-light-390.png",
+    "play-market-memory-light-390.png",
+    "privacy-light-390.png",
+    "home-light-1440.png",
+    "ca-en-light-1440.png",
+    "mx-en-light-1440.png",
+    "gb-en-light-1440.png",
+    "restaurant-meal-finder-light-1440.png",
+    "calculators-light-1440.png",
+    "food-diary-light-1440.png",
+    "food-library-light-1440.png",
+    "compare-foods-light-1440.png",
+    "restaurant-meal-guides-light-1440.png",
+    "ca-en-restaurants-light-1440.png",
+    "articles-light-1440.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-light-1440.png",
+    "play-light-1440.png",
+    "play-market-memory-light-1440.png",
+    "privacy-light-1440.png",
+    "home-citrus-390.png",
+    "ca-en-citrus-390.png",
+    "mx-en-citrus-390.png",
+    "gb-en-citrus-390.png",
+    "restaurant-meal-finder-citrus-390.png",
+    "calculators-citrus-390.png",
+    "food-diary-citrus-390.png",
+    "food-library-citrus-390.png",
+    "compare-foods-citrus-390.png",
+    "restaurant-meal-guides-citrus-390.png",
+    "ca-en-restaurants-citrus-390.png",
+    "articles-citrus-390.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-citrus-390.png",
+    "play-citrus-390.png",
+    "play-market-memory-citrus-390.png",
+    "privacy-citrus-390.png",
+    "home-citrus-1440.png",
+    "ca-en-citrus-1440.png",
+    "mx-en-citrus-1440.png",
+    "gb-en-citrus-1440.png",
+    "restaurant-meal-finder-citrus-1440.png",
+    "calculators-citrus-1440.png",
+    "food-diary-citrus-1440.png",
+    "food-library-citrus-1440.png",
+    "compare-foods-citrus-1440.png",
+    "restaurant-meal-guides-citrus-1440.png",
+    "ca-en-restaurants-citrus-1440.png",
+    "articles-citrus-1440.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-citrus-1440.png",
+    "play-citrus-1440.png",
+    "play-market-memory-citrus-1440.png",
+    "privacy-citrus-1440.png",
+    "home-berry-390.png",
+    "ca-en-berry-390.png",
+    "mx-en-berry-390.png",
+    "gb-en-berry-390.png",
+    "restaurant-meal-finder-berry-390.png",
+    "calculators-berry-390.png",
+    "food-diary-berry-390.png",
+    "food-library-berry-390.png",
+    "compare-foods-berry-390.png",
+    "restaurant-meal-guides-berry-390.png",
+    "ca-en-restaurants-berry-390.png",
+    "articles-berry-390.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-berry-390.png",
+    "play-berry-390.png",
+    "play-market-memory-berry-390.png",
+    "privacy-berry-390.png",
+    "home-berry-1440.png",
+    "ca-en-berry-1440.png",
+    "mx-en-berry-1440.png",
+    "gb-en-berry-1440.png",
+    "restaurant-meal-finder-berry-1440.png",
+    "calculators-berry-1440.png",
+    "food-diary-berry-1440.png",
+    "food-library-berry-1440.png",
+    "compare-foods-berry-1440.png",
+    "restaurant-meal-guides-berry-1440.png",
+    "ca-en-restaurants-berry-1440.png",
+    "articles-berry-1440.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-berry-1440.png",
+    "play-berry-1440.png",
+    "play-market-memory-berry-1440.png",
+    "privacy-berry-1440.png",
+    "home-dark-390.png",
+    "ca-en-dark-390.png",
+    "mx-en-dark-390.png",
+    "gb-en-dark-390.png",
+    "restaurant-meal-finder-dark-390.png",
+    "calculators-dark-390.png",
+    "food-diary-dark-390.png",
+    "food-library-dark-390.png",
+    "compare-foods-dark-390.png",
+    "restaurant-meal-guides-dark-390.png",
+    "ca-en-restaurants-dark-390.png",
+    "articles-dark-390.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-dark-390.png",
+    "play-dark-390.png",
+    "play-market-memory-dark-390.png",
+    "privacy-dark-390.png",
+    "home-dark-1440.png",
+    "ca-en-dark-1440.png",
+    "mx-en-dark-1440.png",
+    "gb-en-dark-1440.png",
+    "restaurant-meal-finder-dark-1440.png",
+    "calculators-dark-1440.png",
+    "food-diary-dark-1440.png",
+    "food-library-dark-1440.png",
+    "compare-foods-dark-1440.png",
+    "restaurant-meal-guides-dark-1440.png",
+    "ca-en-restaurants-dark-1440.png",
+    "articles-dark-1440.png",
+    "fage-plain-greek-yogurt-0-2-5-percent-dark-1440.png",
+    "play-dark-1440.png",
+    "play-market-memory-dark-1440.png",
+    "privacy-dark-1440.png",
+    "home-text-zoom-320.png",
+    "diary-text-zoom-320.png"
+  ],
+  "motion": [
+    {
+      "label": "Restaurant selection",
+      "animations": [
+        {
+          "duration": 160,
+          "frames": [
+            {
+              "background": "rgb(187, 206, 195)"
+            },
+            {
+              "background": "rgb(39, 100, 72)"
+            }
+          ]
+        },
+        {
+          "duration": 160,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 160,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 160,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 160,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 130.19885964744972,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 154.62773961001878,
+          "frames": [
+            {
+              "background": "rgb(248, 250, 249)"
+            },
+            {
+              "background": "rgb(39, 100, 72)"
+            }
+          ]
+        },
+        {
+          "duration": 130.19885964744972,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 130.19885964744972,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 130.19885964744972,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 130.19885964744972,
+          "frames": [
+            {},
+            {}
+          ]
+        },
+        {
+          "duration": 150.7426353261588,
+          "frames": [
+            {
+              "transform": "rotate(40.8127deg) scale(0.162541)"
+            },
+            {
+              "transform": "rotate(45deg)"
+            }
+          ]
+        },
+        {
+          "duration": 330,
+          "frames": [
+            {
+              "transform": "scale(1)"
+            },
+            {
+              "transform": "scale(1.025, 0.98)"
+            },
+            {
+              "transform": "scale(1)"
+            }
+          ]
+        },
+        {
+          "duration": 180,
+          "frames": [
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Logged entry settles",
+      "animations": [
+        {
+          "duration": 270,
+          "frames": [
+            {
+              "transform": "translateY(-6px)"
+            },
+            {
+              "transform": "none"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "privacy": "Isolated QA contexts only. Diary export and missing-value fixtures are dummy local test data."
+}
