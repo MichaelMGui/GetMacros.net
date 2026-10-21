@@ -75,6 +75,7 @@ jobs:
           python3 tools/flagship_release/data_audit.py
           python3 tools/flagship_release/test_finder_payload.py
           python3 tools/ultimate_release/test_release.py
+          python3 tools/search_recovery/test.py
           python3 tools/ultimate_release/test_editorial_restaurants.py
           python3 tools/ultimate_release/test_editorial_foodtools.py
           node --test tools/ultimate_release/journey_runtime_test.cjs

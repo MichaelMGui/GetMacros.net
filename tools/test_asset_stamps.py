@@ -18,6 +18,11 @@ class AssetVersions(unittest.TestCase):
             alternates={f'en-{code}':'https://getmacros.net'+item[kind] for code,item in markets.items()}
             alternates['x-default']='https://getmacros.net'+markets['US'][kind]
             for item in markets.values():expected[item[kind]]=alternates
+        # The regional protein collections now share a reviewed individual-main
+        # scope. The broader U.S. healthy-fast-food guide is not an equivalent.
+        regional={code:item for code,item in markets.items() if code!='US'}
+        collection_alternates={f'en-{code}':'https://getmacros.net'+item['collection'] for code,item in regional.items()}
+        for item in regional.values():expected[item['collection']]=collection_alternates
         for page in list(root.glob('*.html'))+list(root.glob('*/en/**/index.html')):
             html=page.read_text(encoding='utf-8')
             relative=page.relative_to(root).as_posix()

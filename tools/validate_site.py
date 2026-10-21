@@ -389,11 +389,13 @@ def main() -> int:
         if meal.get("na") is None:
             errors.append(f"restaurant data: Chipotle sodium is missing for {meal['name']}")
 
+    # The guide now describes the integrated finder catalog, rather than only
+    # the older 463-order source batch validated above. Keep checking its claim
+    # against the actual explicit market registry; do not freeze obsolete copy.
+    current_registry = json.loads((ROOT/'js/order-registry.json').read_text(encoding='utf-8'))['records']
+    finder_count = sum(r['market']=='US' and r.get('finderSupported',True) and r.get('category') not in ('component','sauce') for r in current_registry)
     count_claims = {
-        # The point is that the page states the current count, not that it uses
-        # one exact sentence. The number is derived from the explicit release
-        # inventory, not changed to match whatever data happens to be present.
-        "healthy-fast-food.html": rf"{expected_meals} (?:tracked |U\.S\. )?(?:menu options|recorded orders)",
+        'healthy-fast-food.html': rf'{finder_count:,} supported menu portions',
     }
     for path, claim in count_claims.items():
         if not re.search(claim, pages.get(path, ("", PageParser()))[0]):

@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-21",
+  "routes": [
+    "/",
+    "/au/en/",
+    "/au/en/collections/protein-meals/",
+    "/au/en/find-a-meal/",
+    "/ca/en/",
+    "/ca/en/collections/protein-meals/",
+    "/ca/en/find-a-meal/",
+    "/fr/en/",
+    "/fr/en/collections/protein-meals/",
+    "/fr/en/find-a-meal/",
+    "/gb/en/",
+    "/gb/en/collections/protein-meals/",
+    "/gb/en/find-a-meal/",
+    "/healthy-fast-food.html",
+    "/ie/en/",
+    "/ie/en/collections/protein-meals/",
+    "/ie/en/find-a-meal/",
+    "/in/en/",
+    "/in/en/collections/protein-meals/",
+    "/in/en/find-a-meal/",
+    "/jp/en/",
+    "/jp/en/collections/protein-meals/",
+    "/jp/en/find-a-meal/",
+    "/mx/en/",
+    "/mx/en/collections/protein-meals/",
+    "/mx/en/find-a-meal/",
+    "/nz/en/",
+    "/nz/en/collections/protein-meals/",
+    "/nz/en/find-a-meal/",
+    "/restaurant-meal-finder.html",
+    "/sg/en/",
+    "/sg/en/collections/protein-meals/",
+    "/sg/en/find-a-meal/",
+    "/za/en/",
+    "/za/en/collections/protein-meals/",
+    "/za/en/find-a-meal/"
+  ],
+  "markets": [
+    {
+      "market": "US",
+      "finderPortions": 917,
+      "chains": 26,
+      "curatedIndividualPortions": null
+    },
+    {
+      "market": "CA",
+      "finderPortions": 652,
+      "chains": 14,
+      "curatedIndividualPortions": 12
+    },
+    {
+      "market": "MX",
+      "finderPortions": 96,
+      "chains": 2,
+      "curatedIndividualPortions": 2
+    },
+    {
+      "market": "GB",
+      "finderPortions": 4416,
+      "chains": 19,
+      "curatedIndividualPortions": 12
+    },
+    {
+      "market": "IE",
+      "finderPortions": 446,
+      "chains": 3,
+      "curatedIndividualPortions": 6
+    },
+    {
+      "market": "AU",
+      "finderPortions": 627,
+      "chains": 3,
+      "curatedIndividualPortions": 4
+    },
+    {
+      "market": "NZ",
+      "finderPortions": 383,
+      "chains": 3,
+      "curatedIndividualPortions": 4
+    },
+    {
+      "market": "JP",
+      "finderPortions": 438,
+      "chains": 3,
+      "curatedIndividualPortions": 6
+    },
+    {
+      "market": "FR",
+      "finderPortions": 276,
+      "chains": 2,
+      "curatedIndividualPortions": 4
+    },
+    {
+      "market": "IN",
+      "finderPortions": 256,
+      "chains": 2,
+      "curatedIndividualPortions": 3
+    },
+    {
+      "market": "SG",
+      "finderPortions": 89,
+      "chains": 2,
+      "curatedIndividualPortions": 4
+    },
+    {
+      "market": "ZA",
+      "finderPortions": 87,
+      "chains": 1,
+      "curatedIndividualPortions": 2
+    }
+  ],
+  "nutritionRecordsChanged": 0,
+  "indexing": "Requests and Google decisions tracked separately; a build is not indexing."
+}

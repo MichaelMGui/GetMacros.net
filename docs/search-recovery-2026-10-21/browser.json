@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-10-21T16:18:19.557Z",
+  "layouts": [
+    {
+      "phase": "before",
+      "width": 390,
+      "route": "/healthy-fast-food.html",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "route": "/gb/en/collections/protein-meals/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "route": "/ca/en/find-a-meal/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "route": "/healthy-fast-food.html",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "route": "/gb/en/collections/protein-meals/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "route": "/ca/en/find-a-meal/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "route": "/healthy-fast-food.html",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "route": "/gb/en/collections/protein-meals/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "route": "/ca/en/find-a-meal/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "route": "/healthy-fast-food.html",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "route": "/gb/en/collections/protein-meals/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "route": "/ca/en/find-a-meal/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

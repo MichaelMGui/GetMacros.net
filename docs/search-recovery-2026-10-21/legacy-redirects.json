@@ -1,0 +1,28 @@
+{
+  "reviewedOn": "2026-10-21",
+  "scope": "Exact HTTPS apex URLs; no catch-all or unrelated article redirects",
+  "preflight": "Each old source returned 404; every destination returned 200 before deployment",
+  "redirects": [
+    {
+      "source": "/quiz.html",
+      "target": "/play.html",
+      "reason": "Retired educational quiz directory to the current educational games directory"
+    },
+    {
+      "source": "/build-a-plate-game.html",
+      "target": "/play-build-a-plate.html",
+      "reason": "Retired plate-building game to the current plate-building game"
+    },
+    {
+      "source": "/nutrition-label-detective-game.html",
+      "target": "/play-serving-size-detective.html",
+      "reason": "Retired nutrition-label learning game to the current serving-label detective game"
+    },
+    {
+      "source": "/takeout-macro-challenge.html",
+      "target": "/play-restaurant-order-builder.html",
+      "reason": "Retired takeout-order challenge to the current restaurant-order nutrition game"
+    }
+  ],
+  "deploymentStatus": "All four exact HTTPS apex URLs verified live: 301 to the intended destination on 2026-10-21"
+}
