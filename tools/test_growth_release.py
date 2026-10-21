@@ -24,7 +24,10 @@ for row in payload['improvements']:
  assert parse_qs(urlparse(row['comparatorHref']).query)['compare']==row['comparedKeys']
  assert all(key in meals for key in row['comparedKeys'])
  assert 'complete-order-builder.html' not in row['sectionHTML']
- assert dates['https://getmacros.net/'+row['route']]=='2026-10-09',row['route']
+ # This retained guide received substantial new catalog/context content in
+ # the October 21 release; unchanged growth articles retain October 9.
+ expected_date='2026-10-21' if row['route']=='healthy-fast-food.html' else '2026-10-09'
+ assert dates['https://getmacros.net/'+row['route']]==expected_date,row['route']
  if row.get('removeLegacyComparisonSelector'):assert 'chain-picks-section' not in text,row['route']
  if row.get('directoryCorrection'):
   assert len(row['directoryCorrection']['entries'])==25 and 'Browse all 25 restaurants' in text
