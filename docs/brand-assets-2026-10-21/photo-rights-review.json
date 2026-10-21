@@ -1,0 +1,13 @@
+{
+  "checkedDate":"2026-10-21",
+  "downloadedExactItemPhotos":0,
+  "officialSitesAndYouTube":"Public access is not a general commercial reuse license. No YouTube stills downloaded, watermarks removed, restrictions bypassed or external image hotlinks added.",
+  "sources":[
+    {"url":"https://www.mcdonalds.com/us/en-us/terms-and-conditions.html","disposition":"Ordinary site license limits use to personal non-commercial purposes. Does not authorize copying the menu photo collection into GetMacros."},
+    {"url":"https://corporate.mcdonalds.com/corpmcd/en-us/CorpNewsroom/Media/media-assets/terms-and-conditions.html","disposition":"Media-center assets have a specific editorial-use scope. This is not blanket permission for every product photo in a commercial interactive catalog."},
+    {"url":"https://www.chick-fil-a.com/press-room/media-resources","disposition":"Official downloadable assets exist. A download button alone does not establish the requested catalog-wide reuse rights."},
+    {"url":"https://www.chick-fil-a.com/legal/terms-conditions/chick-fil-a-inc-terms-conditions-of-use","disposition":"No catalog-wide commercial reuse grant established in this review. Exact official item-page links are used instead of copying photos."}
+  ],
+  "exactBlocker":"Written brand permission or a suitable asset-specific license and a reviewed item/variant/market mapping are needed for the remaining exact photographs. The user has not supplied an existing licensed photo collection.",
+  "deliveredAlternative":"When a catalog record has its own official sourceItemUrl, the meal detail panel offers direct navigation to that exact page. Missing item links stay missing. This is not counted as an embedded photo."
+}

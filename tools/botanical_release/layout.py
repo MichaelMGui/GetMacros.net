@@ -11,8 +11,19 @@ def leaf():
 
 def homepage(text,code,markets,find,replace,character,icon):
     info=markets()[code];e=lambda s:escape(str(s),quote=True)
-    hero='<section class="food-hero flagship-hero botanical-hero container"><div class="hero-copy"><h1>Find a meal<br><span>that fits.</span></h1><p>Restaurant meals. Clear macros.<br>A little help choosing.</p><div class="hero-actions"><a class="btn btn-primary home-quiz-action" data-quiz-entry href="'+e(info['finder'])+'?quiz=1">Find my meal '+icon('meal')+'</a><a class="btn btn-secondary" href="'+e(info['finder'])+'">Browse meals</a></div><a class="hero-macro-link" href="/calculators.html?market='+code+'#macro-calculator">'+icon('calculator')+'<span>Start with my macros</span></a><p class="home-market-note">'+e(info['name'])+' menus · <a href="/world-restaurant-menus.html" data-open-country>Change country</a></p></div><div class="food-ensemble" aria-hidden="true">'+leaf()+'<span class="ensemble-egg">'+character('egg')+'</span><span class="ensemble-strawberry">'+character('strawberry')+'</span></div><figure class="hero-food-photo"><div class="hero-photo-crop"><img src="/images/editorial-salad.webp" width="1100" height="733" fetchpriority="high" decoding="async" data-food-photo alt="Chickpeas, avocado and colorful vegetables in a bowl. Food inspiration."></div><figcaption><span data-food-photo-credit>Food inspiration · <a href="https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0">Anna Pelzer / Unsplash</a></span><span data-food-photo-fallback hidden>Food illustration</span></figcaption></figure></section>'
+    hero='<section class="food-hero flagship-hero botanical-hero container"><div class="hero-copy"><h1>Find a meal<br><span>that fits.</span></h1><p>Restaurant meals. Clear macros.<br>A little help choosing.</p><div class="hero-actions"><a class="btn btn-primary home-quiz-action" data-quiz-entry href="'+e(info['finder'])+'?quiz=1">Find my meal '+icon('meal')+'</a><a class="btn btn-secondary" href="'+e(info['finder'])+'">Browse meals</a></div><a class="hero-macro-link" href="/calculators.html?market='+code+'#macro-calculator">'+icon('calculator')+'<span>Start with my macros</span></a><p class="home-market-note">'+e(info['name'])+' menus · <a href="/world-restaurant-menus.html" data-open-country>Change country</a></p></div><div class="food-ensemble" aria-hidden="true">'+leaf()+'<span class="ensemble-egg">'+character('egg')+'</span><span class="ensemble-strawberry">'+character('strawberry')+'</span></div></section>'
+    # The opening composition uses original characters, not unrelated food photography.
+    import re
+    hero=hero.replace('Find a meal<br><span>that fits.</span>','Find food that<br><span>fits your macros.</span>').replace('Restaurant meals. Clear macros.<br>A little help choosing.','Compare restaurant calories, protein, carbs and fat. Choose a meal, then save or log it.')
     text=replace(text,find(text,'food-hero'),hero)
+    title=('Fast Food Nutrition & Restaurant Macros' if code=='US' else info['name']+' Restaurant Calories & Macros')+' | GetMacros'
+    description='Compare '+info['name']+' restaurant meals by calories, protein, carbs and fat. Find a high-protein order, compare portions, and save or log your food.'
+    text=re.sub(r'<title>.*?</title>','<title>'+e(title)+'</title>',text,count=1)
+    for node in sorted(Document(text).nodes,key=lambda n:n['start'],reverse=True):
+        if node['tag']!='meta':continue
+        key=node['attrs'].get('name') or node['attrs'].get('property')
+        value=title if key in ['og:title','twitter:title'] else description if key in ['description','og:description','twitter:description'] else None
+        if value is not None:text=replace(text,node,re.sub(r'content="[^"]*"','content="'+e(value)+'"',text[node['start']:node['end']]))
     macro='<section class="home-macro-feature container"><div class="home-macro-copy"><h2>Your day.<br>Your starting point.</h2><p>A simple estimate for calories, protein, carbs and fat.</p><a class="btn btn-primary" href="/calculators.html?market='+code+'#macro-calculator">Calculate my macros '+icon('calculator')+'</a></div><div class="home-macro-art" aria-hidden="true"><div class="macro-orbit"><span class="orbit-protein">Protein</span><span class="orbit-carbs">Carbs</span><span class="orbit-fat">Fat</span>'+character('broccoli')+'</div></div></section>'
     text=replace(text,find(text,'home-macro-feature'),macro)
     text=text.replace('A few good orders.','A few good places to start.').replace('class="market-home home-composed flagship-home"','class="market-home home-composed flagship-home ultimate-home"')
@@ -62,7 +73,7 @@ def update_sitemap(root,markets):
         if node.find(namespace+'loc').text in changed:
             date=node.find(namespace+'lastmod')
             if date is None:date=ET.SubElement(node,namespace+'lastmod')
-            date.text='2026-10-20'
+            date.text='2026-10-21' if node.find(namespace+'loc').text in {'https://getmacros.net'+info['home'] for info in markets().values()} else '2026-10-20'
     ET.register_namespace('',namespace[1:-1]);tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 
 

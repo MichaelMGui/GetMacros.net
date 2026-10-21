@@ -147,6 +147,8 @@ def apply():
     render_articles(rows)
     editorial_index(rows)
     index_articles(rows)
+    from brand_assets.build import main as build_brands
+    build_brands()
     changes=[]
     for p in pages():
         text=p.read_text(encoding='utf-8');old=text
@@ -196,6 +198,8 @@ def apply():
         if not re.search(r'data-market-scope="(CA|GB|IE|AU|NZ)"',text) and not re.match(r'^[a-z]{2}/en/',p.relative_to(ROOT).as_posix()):
             # House spelling on global/U.S. presentation. Keep exact URL identifiers.
             text=us_spelling(text)
+        from brand_assets.layout import apply as brand_presentation
+        text=brand_presentation(text)
         if text!=old:put(p,text);changes.append(p.relative_to(ROOT).as_posix())
     from botanical_release.layout import update_sitemap
     update_sitemap(ROOT,markets)

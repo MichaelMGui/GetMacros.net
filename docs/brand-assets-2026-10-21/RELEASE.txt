@@ -1,0 +1,15 @@
+GetMacros restaurant identities, homepage and search copy — 2026-10-21
+
+Implemented: 11 reviewed public-domain text/geometry logo files, original colors/proportions, local hosting and source credits. Shared placement on existing country shortcuts/directories, meal cards and quiz choices. No restaurant-presence or nutrition values changed.
+
+Homepage: unrelated salad photo removed across 12 existing country pages; original characters retained; new H1, descriptive search/social titles and local descriptions. Existing canonical and regional destinations retained.
+
+Meal details: 652 finder entries retain their existing exact official item-page URL. The full catalog contains 783 records with such URLs. Links are not embedded photographs. Exact photographs added: 0. Commercial reuse permission remains unresolved; public website/YouTube availability is not treated as permission. All other brands keep text fallbacks.
+
+Validation: supported tools/run_food_build.py completed successfully; final log build-verified.log. Twelve focused check groups pass. Sixteen rendered theme/width cases (320, 390, 768, 1440) pass; quiz selection, image loading, safe official link, modal dismissal and country preservation checked. No browser runtime exceptions.
+
+Two older browser harnesses (test-edition-finder.cjs and its test-botanical-finder.cjs alias) fail at an ambiguous filter trigger selector. Read-only replay of previously deployed 8da2c6f confirms the same three matching controls and failure condition. Tests are retained and failures are recorded in tests.json.
+
+SEO: current Google title, helpful-content and image guidance reviewed; public search language observed. Existing signed-in Cloudflare dashboards inspected read-only, including bot/test traffic. No private telemetry, IP addresses or account screenshots published. Search Console query/CTR data unavailable; no ranking, volume or human visitor growth claims.
+
+Deployment: prepared for authorized atomic push. Production result recorded separately after verification. Physical iOS/Safari not tested in this change.

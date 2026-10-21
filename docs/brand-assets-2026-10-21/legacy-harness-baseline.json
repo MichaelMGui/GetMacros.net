@@ -1,0 +1,6 @@
+{
+  "baseline": "8da2c6f8b434fcfc4dabbf0887d9c749fd429346",
+  "actualRenderedFilterTriggers": 3,
+  "selectorUsedByBothOldScripts": "[data-open-filters]",
+  "finding": "The same strict-selector ambiguity is present in the previously deployed revision. No test was removed or error suppressed. Current quiz, menu selection and official-link journeys are checked separately in brand_assets/verify.cjs."
+}

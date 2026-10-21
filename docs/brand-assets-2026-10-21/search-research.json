@@ -1,0 +1,25 @@
+{
+  "reviewedDate": "2026-10-21",
+  "method": "Current primary Google documentation plus public search-result observations. The existing signed-in Cloudflare request and visitor dashboards were inspected read-only. No account identifiers, client IPs, raw telemetry or account screenshots are included in this public artifact.",
+  "trafficFinding": "The Cloudflare dashboards include named crawlers and GetMacros verification traffic. Their request counts and IP-based unique visitor labels do not establish human organic search demand. No Search Console query, impression, click or CTR report was available in this review. No keyword volumes or traffic forecasts are claimed.",
+  "searchObservations": [
+    {"query":"high protein fast food macro meal finder","observedLanguage":["high-protein fast food","calories and protein","compare menus"],"interpretation":"Clear discovery intent; useful language for existing food filters and menu guides, not a measured volume ranking."},
+    {"query":"restaurant macro calculator meal finder","observedLanguage":["restaurant macro calculator","calories, protein, carbs and fat","customize your order"],"interpretation":"Separate restaurant order totals from GetMacros' daily macro calculator."},
+    {"query":"fast food calories Canada calculator","observedLanguage":["Canada","restaurant nutrition","menu item"],"interpretation":"Keep genuine regional pages and actual local records; do not substitute U.S. figures."}
+  ],
+  "implementation": {
+    "usTitle":"Fast Food Nutrition & Restaurant Macros | GetMacros",
+    "regionalTitle":"[Full country name] Restaurant Calories & Macros | GetMacros",
+    "h1":"Find food that fits your macros.",
+    "heroCopy":"Compare restaurant calories, protein, carbs and fat. Choose a meal, then save or log it.",
+    "metadata":"Matching descriptive page title, social title and useful local description on all 12 existing country homepages. Canonical URLs, reciprocal regional annotations and local food data preserved.",
+    "removed":"Unrelated hero salad photography and vague introductory wording. No hidden keyword block, health-superlative claim or new thin search pages."
+  },
+  "sources": [
+    "https://developers.google.com/search/docs/appearance/title-link",
+    "https://developers.google.com/search/docs/appearance/google-images",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  ],
+  "measurementNextStep":"Use authorized Search Console queries and page/device/country CTR over comparable periods to assess the new titles after recrawling. Do not interpret release verification requests, crawler hits or a title change as proven organic visitor growth."
+}

@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-21T15:11:10.187Z",
+  "base": "http://127.0.0.1:63103",
+  "layouts": [
+    {
+      "theme": "light",
+      "width": 320,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "citrus",
+      "width": 320,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "citrus",
+      "width": 390,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "citrus",
+      "width": 768,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "citrus",
+      "width": 1440,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "berry",
+      "width": 320,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "berry",
+      "width": 390,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "berry",
+      "width": 768,
+      "home": true,
+      "quiz": true
+    },
+    {
+      "theme": "berry",
+      "width": 1440,
+      "home": true,
+      "quiz": true
+    }
+  ],
+  "errors": [],
+  "assertions": [
+    "Safe official-item URLs; no cross-market photo fallback; punctuation aliases; unknown brands stay unknown",
+    "Actual U.S. item opens its official Chick-fil-A product page in a separate tab",
+    "All 11 logo files render; no page runtime exceptions"
+  ]
+}

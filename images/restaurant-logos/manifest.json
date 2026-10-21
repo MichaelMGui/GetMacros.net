@@ -1,0 +1,120 @@
+{
+  "checked": "2026-10-21",
+  "notice": "Trademarks identify independent restaurants. GetMacros is not affiliated with or endorsed by these brands.",
+  "logos": {
+    "mcdonalds": {
+      "name": "McDonald's",
+      "src": "/images/restaurant-logos/mcdonalds.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:McDonald%27s_Golden_Arches.svg",
+      "aliases": [
+        "McDonald’s",
+        "McDonald’s Japan",
+        "McDonald’s North & East India"
+      ],
+      "width": 273,
+      "height": 239
+    },
+    "subway": {
+      "name": "Subway",
+      "src": "/images/restaurant-logos/subway.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Subway_2016_logo.svg",
+      "aliases": [
+        "Subway"
+      ],
+      "width": 512,
+      "height": 102
+    },
+    "dominos": {
+      "name": "Domino’s",
+      "src": "/images/restaurant-logos/dominos.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Domino%27s_pizza_logo.svg",
+      "aliases": [
+        "Domino’s",
+        "Domino's"
+      ],
+      "width": 512,
+      "height": 515
+    },
+    "tim-hortons": {
+      "name": "Tim Hortons",
+      "src": "/images/restaurant-logos/tim-hortons.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tim_Hortons_Logo.svg",
+      "aliases": [
+        "Tim Hortons"
+      ],
+      "width": 629,
+      "height": 120
+    },
+    "burger-king": {
+      "name": "Burger King",
+      "src": "/images/restaurant-logos/burger-king.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Burger_King_2020.svg",
+      "aliases": [
+        "Burger King"
+      ],
+      "width": 569,
+      "height": 620
+    },
+    "five-guys": {
+      "name": "Five Guys",
+      "src": "/images/restaurant-logos/five-guys.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Five_Guys_logo.svg",
+      "aliases": [
+        "Five Guys"
+      ],
+      "width": 417,
+      "height": 108
+    },
+    "shake-shack": {
+      "name": "Shake Shack",
+      "src": "/images/restaurant-logos/shake-shack.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Shake_Shack_logo.svg",
+      "aliases": [
+        "Shake Shack"
+      ],
+      "width": 566,
+      "height": 124
+    },
+    "pizza-hut": {
+      "name": "Pizza Hut",
+      "src": "/images/restaurant-logos/pizza-hut.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pizza_Hut_logo.svg",
+      "aliases": [
+        "Pizza Hut"
+      ],
+      "width": 1000,
+      "height": 941
+    },
+    "kfc": {
+      "name": "KFC",
+      "src": "/images/restaurant-logos/kfc.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:KFC_logo.svg",
+      "aliases": [
+        "KFC"
+      ],
+      "width": 221,
+      "height": 70
+    },
+    "dunkin": {
+      "name": "Dunkin’",
+      "src": "/images/restaurant-logos/dunkin.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunkin%27_logo.svg",
+      "aliases": [
+        "Dunkin’",
+        "Dunkin'"
+      ],
+      "width": 641,
+      "height": 116
+    },
+    "chick-fil-a": {
+      "name": "Chick-fil-A",
+      "src": "/images/restaurant-logos/chick-fil-a.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chick-fil-A_Logo.svg",
+      "aliases": [
+        "Chick-fil-A"
+      ],
+      "width": 582,
+      "height": 263
+    }
+  }
+}

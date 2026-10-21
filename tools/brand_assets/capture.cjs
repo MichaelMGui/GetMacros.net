@@ -1,0 +1,5 @@
+const fs=require('fs'),path=require('path');
+const {chromium}=require('C:/Users/slowf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+process.env.PORT='0';const server=require('../product_release/dev-server.cjs');
+const mode=process.argv[2]||'before',out=path.resolve('docs/brand-assets-2026-10-21',mode);fs.mkdirSync(out,{recursive:true});
+(async()=>{if(!server.listening)await new Promise(r=>server.once('listening',r));const b=await chromium.launch({channel:'msedge',args:['--no-proxy-server']});try{for(const width of [390,1440]){const c=await b.newContext({viewport:{width,height:width===390?844:1000},serviceWorkers:'block'});const p=await c.newPage();for(const [name,route] of [['home','/'],['canada','/ca/en/']]){await p.goto('http://127.0.0.1:'+server.address().port+route);await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:path.join(out,name+'-'+width+'.png'),animations:'disabled'});}await c.close();}}finally{await b.close();server.close();}})().catch(e=>{console.error(e);server.close();process.exitCode=1});

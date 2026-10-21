@@ -1,0 +1,86 @@
+[
+  {
+    "test": "tools/brand_assets/test.cjs",
+    "exit": 0,
+    "seconds": 1.55,
+    "output": "Finder entries retaining exact item URLs: 652\n\u2714 Logo files have explicit public-domain evidence and unmodified source hashes (2.6045ms)\n\u2714 Brand aliases preserve punctuation and do not create new restaurant coverage (0.2862ms)\n\u2714 Official item links preserve country and reject active, credentialed or absent URLs (0.7029ms)\n\u2714 Detail links are escaped, retain macros and never impersonate embedded photos (10.7546ms)\n\u2714 Every market payload retains each available official item URL unchanged (1366.6719ms)\n\u2139 tests 5\n\u2139 suites 0\n\u2139 pass 5\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 1494.9114\n"
+  },
+  {
+    "test": "tools/diary_reference/test_goals.cjs",
+    "exit": 0,
+    "seconds": 0.16,
+    "output": "\u2714 goals are optional and strictly numeric with a stable canonical shape (1.1168ms)\n\u2714 progress only exists for explicit goals and complete totals (0.3032ms)\n\u2714 excess remains visible instead of being erased by a full ring (0.7947ms)\n\u2714 missing and empty are different; overflow never becomes a false progress value (0.1656ms)\n\u2714 legacy backups remain valid and goals are validated before import (0.2592ms)\n\u2139 tests 5\n\u2139 suites 0\n\u2139 pass 5\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 102.7717\n"
+  },
+  {
+    "test": "tools/product_release/test-food.cjs",
+    "exit": 0,
+    "seconds": 1.32,
+    "output": "PASS Food search tolerates a common typo without changing preparation or market\nPASS Ingredient lookup puts olive oil before dishes merely containing it\nPASS Imported profiles have stable IDs, known units and a source basis\nPASS Chicken weight and olive-oil portions use actual source values\nPASS Unknown nutrients remain unknown through quantities, daily sums and recipe yields\nPASS Raw and cooked entries remain different records and historical snapshots are immutable\nPASS Date logic is local-calendar based and rejects invalid dates\nPASS Every published market is isolated by both finder and food search\nPASS Salt conversion, named portions and ingredient source limits are preserved\nPASS AI record validation rejects unknown records and invalid quantities\nPASS Diary backups reject corrupted snapshots and recipe totals before any import\n11 food-integrity and computation checks passed.\n"
+  },
+  {
+    "test": "tools/test_macro_math.js",
+    "exit": 0,
+    "seconds": 0.07,
+    "output": "PASS: conversions, BMR, TDEE, goal adjustments and macro energy balance.\n"
+  },
+  {
+    "test": "tools/flagship_release/test_finder_payload.py",
+    "exit": 0,
+    "seconds": 2.12,
+    "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 1.961s\n\nOK\n"
+  },
+  {
+    "test": "tools/test-meal-view.cjs",
+    "exit": 0,
+    "seconds": 0.08,
+    "output": "PASS shared meal presentation: unknown values, genuine zero, units, servings, sources, escaping and factual match reasons.\n"
+  },
+  {
+    "test": "tools/test-edition-finder.cjs",
+    "exit": 1,
+    "seconds": 1.38,
+    "output": "locator.click: Error: strict mode violation: locator('[data-open-filters]') resolved to 3 elements:\n    1) <button type=\"button\" data-open-filters=\"\" class=\"filter-section-button\">\u2026</button> aka locator('button').filter({ hasText: 'Choose restaurants' })\n    2) <button type=\"button\" data-open-filters=\"\" class=\"filter-section-button\">\u2026</button> aka getByText('More filters')\n    3) <button type=\"button\" data-open-filters=\"\" class=\"filter-launch\">\u2026</button> aka getByRole('button', { name: 'Filters (3)' })\n\nCall log:\n\u001b[2m  - waiting for locator('[data-open-filters]')\u001b[22m\n\n    at C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\tools\\test-edition-finder.cjs:14:56 {\n  log: [ \"  - waiting for locator('[data-open-filters]')\" ]\n}\n"
+  },
+  {
+    "test": "tools/test-botanical-finder.cjs",
+    "exit": 1,
+    "seconds": 1.42,
+    "output": "locator.click: Error: strict mode violation: locator('[data-open-filters]') resolved to 3 elements:\n    1) <button type=\"button\" data-open-filters=\"\" class=\"filter-section-button\">\u2026</button> aka locator('button').filter({ hasText: 'Choose restaurants' })\n    2) <button type=\"button\" data-open-filters=\"\" class=\"filter-section-button\">\u2026</button> aka getByText('More filters')\n    3) <button type=\"button\" data-open-filters=\"\" class=\"filter-launch\">\u2026</button> aka getByRole('button', { name: 'Filters (3)' })\n\nCall log:\n\u001b[2m  - waiting for locator('[data-open-filters]')\u001b[22m\n\n    at C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\tools\\test-edition-finder.cjs:14:56 {\n  log: [ \"  - waiting for locator('[data-open-filters]')\" ]\n}\n"
+  },
+  {
+    "test": "tools/test_asset_stamps.py",
+    "exit": 0,
+    "seconds": 0.57,
+    "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.380s\n\nOK\n"
+  },
+  {
+    "test": "tools/test_master_homepages.py",
+    "exit": 0,
+    "seconds": 0.63,
+    "output": "PASS: all shared home structures, exact market/record/portion values, flagship quiz links, country dialogs, appearance choices and canonicals.\n"
+  },
+  {
+    "test": "tools/master_release/test-branded-search.cjs",
+    "exit": 0,
+    "seconds": 1.39,
+    "output": "{\n  \"pass\": true,\n  \"realSourceTests\": 26,\n  \"preciseSearchBytes\": 2149903,\n  \"preciseSearchRequests\": 50,\n  \"sourceCounts\": [\n    {\n      \"source\": \"off\",\n      \"count\": 245359\n    },\n    {\n      \"source\": \"usda\",\n      \"count\": 446810\n    },\n    {\n      \"source\": \"retailer-ca\",\n      \"count\": 4\n    },\n    {\n      \"source\": \"cnf\",\n      \"count\": 5993\n    }\n  ]\n}\n"
+  },
+  {
+    "test": "tools/master_release/test-diary-meals.cjs",
+    "exit": 0,
+    "seconds": 0.34,
+    "output": "PASS: 9905 source-backed browse choices; 12 groups; source identity, portions, nulls, bounded loading and offline catalogue.\n"
+  },
+  {
+    "test": "tools/test_publication.py",
+    "exit": 0,
+    "seconds": 6.52,
+    "output": "Publication: 468 pages; shared stylesheet (88,211 bytes) plus purposeful route styles, preserved verification, no automatic ad loader, unique IDs, theme controls and provenance ordering passed.\n"
+  },
+  {
+    "test": "tools/validate_site.py",
+    "exit": 0,
+    "seconds": 9.19,
+    "output": "PASS: 468 HTML files; 465 indexable pages; 465 sitemap URLs; 464 searchable resources.\nWARNING: duplicate H1 wording: au/en/index.html, ca/en/index.html, fr/en/index.html, gb/en/index.html, ie/en/index.html, in/en/index.html, index.html, jp/en/index.html, mx/en/index.html, nz/en/index.html, sg/en/index.html, za/en/index.html\n"
+  }
+]

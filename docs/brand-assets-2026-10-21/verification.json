@@ -1,0 +1,138 @@
+{
+  "build": {
+    "command": "python tools/run_food_build.py",
+    "exit": 0,
+    "evidence": "build-verified.log"
+  },
+  "focusedChecks": {
+    "passed": 12,
+    "failedLegacyHarnesses": [
+      "tools/test-edition-finder.cjs",
+      "tools/test-botanical-finder.cjs"
+    ]
+  },
+  "renderedChecks": {
+    "date": "2026-10-21T15:11:10.187Z",
+    "base": "http://127.0.0.1:63103",
+    "layouts": [
+      {
+        "theme": "light",
+        "width": 320,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "light",
+        "width": 390,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "light",
+        "width": 768,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "light",
+        "width": 1440,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "dark",
+        "width": 320,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "dark",
+        "width": 390,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "dark",
+        "width": 768,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "citrus",
+        "width": 320,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "citrus",
+        "width": 390,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "citrus",
+        "width": 768,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "citrus",
+        "width": 1440,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "berry",
+        "width": 320,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "berry",
+        "width": 390,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "berry",
+        "width": 768,
+        "home": true,
+        "quiz": true
+      },
+      {
+        "theme": "berry",
+        "width": 1440,
+        "home": true,
+        "quiz": true
+      }
+    ],
+    "errors": [],
+    "assertions": [
+      "Safe official-item URLs; no cross-market photo fallback; punctuation aliases; unknown brands stay unknown",
+      "Actual U.S. item opens its official Chick-fil-A product page in a separate tab",
+      "All 11 logo files render; no page runtime exceptions"
+    ]
+  },
+  "logosAdded": 11,
+  "scope": 63,
+  "exactMealPhotosAdded": 0,
+  "officialItemLinksInFinder": 652,
+  "catalogRecordsWithOfficialItemLinks": 783,
+  "nutritionRecordsAdded": 0,
+  "newArticles": 0,
+  "sharedCssBytes": 88211,
+  "sharedCssGzipBytes": 17990,
+  "deployment": "Prepared; pending production push and ordinary-URL verification.",
+  "limitations": [
+    "Only 11 logo assets approved in this review; other brands retain text fallbacks.",
+    "Restaurant and YouTube image-reuse permission remains unresolved. Official links are not embedded photos.",
+    "Search Console query/CTR data unavailable. Cloudflare request metrics include crawlers and testing; no human-growth claim.",
+    "Physical iOS/Safari not tested in this change."
+  ]
+}

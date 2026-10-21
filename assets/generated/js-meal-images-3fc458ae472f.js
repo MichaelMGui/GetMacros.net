@@ -17,4 +17,8 @@
  if(/\b(?:breakfast|egg|omelet|omelette|pancake|waffle|toast)\b/.test(text))return 'breakfast';
  if(/\b(?:chicken|wing|nugget|tender|strip|fillet|grill)\b/.test(text))return 'chicken';
  return 'side';
-};function forMeal(record){const kind=category(record);return {src:'/images/meal-cutouts/'+kind+'.svg',width:400,height:300,kind:'illustration',exactPhotograph:false,label:'Illustration',alt:'',category:kind};}root.GetMacrosMealImages={forMeal,category};})(window);
+};function forMeal(record){const kind=category(record);return {src:'/images/meal-cutouts/'+kind+'.svg',width:400,height:300,kind:'illustration',exactPhotograph:false,label:'Illustration',alt:'',category:kind};}
+// This is a verified item-page link, not a license to download that page's photo.
+// Missing item links do not fall back to an unrelated U.S. or generic product page.
+function officialItem(record){try{const u=new URL(record.sourceItemUrl);return u.protocol==='https:'&&!u.username&&!u.password?u.href:null;}catch{return null;}}
+root.GetMacrosMealImages={forMeal,category,officialItem};})(window);

@@ -22,7 +22,7 @@ def dump(path,value): write(path,json.dumps(value,ensure_ascii=False,separators=
 def e(value): return escape(str(value),quote=True)
 def html_path(route): return 'index.html' if route=='/' else route.strip('/')+'/index.html' if route.endswith('/') else route.lstrip('/')
 def eligible(row): return row.get('category') not in ('component','sauce') and row.get('finderSupported',True)
-FINDER_FIELDS=('id','chain','restaurantId','restaurantMarketId','name','serving','servingGrams','servingMillilitres','market','country','region','language','category','meal','size','diet','cal','p','c','fat','f','na','sugar','sat','why','source','sourceDate','checked','retrievedAt','notes','sourceVersion','nutrientBounds','operatingRegion','localOperatingEntity','availabilityScope','finderSupported','verificationStatus','url','components')
+FINDER_FIELDS=('id','chain','restaurantId','restaurantMarketId','name','serving','servingGrams','servingMillilitres','market','country','region','language','category','meal','size','diet','cal','p','c','fat','f','na','sugar','sat','why','source','sourceItemUrl','sourceDate','checked','retrievedAt','notes','sourceVersion','nutrientBounds','operatingRegion','localOperatingEntity','availabilityScope','finderSupported','verificationStatus','url','components')
 def finder_record(row):
     """Keep all decision/snapshot fields; full evidence loads in food lookup."""
     return {k:row[k] for k in FINDER_FIELDS if k in row}
