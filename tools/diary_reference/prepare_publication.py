@@ -4,7 +4,7 @@ import importlib.util,json,shutil,re,argparse
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/diary-reference-2026-10-20'
 spec=importlib.util.spec_from_file_location('guard',ROOT/'tools/global_coverage_2026_10_17/prepare_publication.py')
 p=importlib.util.module_from_spec(spec);spec.loader.exec_module(p)
-BASE='6af0f517b6ab592464ea8560771acafb45e5ec97'
+BASE='a7967ae09212b289a95c70c187200b37cc6e7a9c'
 SOURCES={'.github/workflows/site-quality.yml','tools/build_ultimate_release.py','tools/product-navigation.css','css/publication.css','css/food-app.css','js/food-app.js','js/food-core.js','js/food-diary-store.js','js/diary-dashboard.js','sw.js'}
 def main():
     a=argparse.ArgumentParser();a.add_argument('--stage',action='store_true');args=a.parse_args()

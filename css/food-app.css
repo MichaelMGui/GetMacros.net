@@ -271,7 +271,7 @@ body:has(.reference-diary){background:color-mix(in srgb,var(--soft) 48%,var(--bg
 .diary-date{grid-column:1/-1;grid-row:2;display:flex!important;align-items:center;justify-content:center;min-width:0;max-width:100%;font-size:0!important;margin:0}
 .diary-date>span{display:none}.diary-date input{width:min(11rem,100%);min-height:32px;margin:0;padding:3px 8px;border:0;border-radius:8px;background:transparent;font-size:.82rem;text-align:center}
 .diary-columns{display:grid;grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr);gap:18px 32px;align-items:start}
-.diary-overview{grid-column:1;grid-row:1/3;min-width:0;position:sticky;top:100px;padding:24px;background:var(--surface);border:0;border-radius:24px}
+.diary-overview{grid-column:1;grid-row:1/3;min-width:0;min-height:33rem;position:sticky;top:100px;padding:24px;background:var(--surface);border:0;border-radius:24px}
 .diary-overview-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 16px;margin-bottom:8px}
 .diary-overview-header h2{font:500 1.15rem/1.3 var(--display);margin:0}.diary-overview-header [data-edit-goals]{min-height:36px;padding:6px 0;font-size:.8rem;border:0;background:none;color:var(--green)}
 .diary-empty-message:empty{display:none}.diary-summary{padding:0;margin:0;border:0}
@@ -296,7 +296,7 @@ body:has(.reference-diary){background:color-mix(in srgb,var(--soft) 48%,var(--bg
 .diary-macro-rail[data-state=partial]{background:repeating-linear-gradient(90deg,var(--line) 0 4px,transparent 4px 8px)}
 .diary-overview .diary-more-nutrients{margin:18px 0 0;border-top:1px solid var(--line);padding-top:8px}.diary-more-nutrients>.secondary-information-action{font-size:.79rem;min-height:36px}
 .diary-add-row{grid-column:2;grid-row:1;display:flex;justify-content:center}.diary-add-row>.btn{min-height:48px;gap:9px;justify-content:center;width:100%;max-width:340px;border-radius:28px}.diary-add-row>.btn>span{font-size:1.3rem;font-weight:400}
-.diary-main{grid-column:2;grid-row:2;min-width:0}.diary-log{margin:0;padding:0}.diary-log-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}.diary-log-heading h2{font:500 1.2rem/1.3 var(--display);margin:0}
+.diary-main [data-diary-entries]:empty{min-height:23rem}.diary-loading{display:grid;place-items:center;min-height:23.5rem;color:var(--muted);font-size:.86rem;margin:0}.diary-main{grid-column:2;grid-row:2;min-width:0}.diary-log{margin:0;padding:0}.diary-log-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}.diary-log-heading h2{font:500 1.2rem/1.3 var(--display);margin:0}
 .diary-occasion{padding:20px;background:var(--surface);border:0;border-radius:20px;margin-bottom:14px}
 .diary-meal-header{display:flex;align-items:center;justify-content:space-between;gap:12px}.diary-meal-heading{display:grid;grid-template-columns:38px minmax(0,1fr);gap:3px 12px;align-items:center;min-width:0}
 .diary-meal-heading svg{width:38px;height:38px;padding:9px;border-radius:50%;grid-row:1/3;fill:currentColor;background:var(--cream);color:var(--green)}.diary-occasion[data-diary-occasion=Lunch] .diary-meal-heading svg{background:var(--peach)}.diary-occasion[data-diary-occasion=Dinner] .diary-meal-heading svg{background:var(--bloom)}.diary-occasion[data-diary-occasion=Snack] .diary-meal-heading svg{background:var(--soft)}

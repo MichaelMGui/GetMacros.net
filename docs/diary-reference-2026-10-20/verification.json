@@ -10,5 +10,11 @@
   "browserErrors": [],
   "migrationOfflineGroups": 2,
   "unchangedNutritionAndFormulaFiles": 5,
-  "production": "Pending deployment"
+  "production": "Pending deployment",
+  "initialPush": "a7967ae09212b289a95c70c187200b37cc6e7a9c",
+  "labPerformance": {
+    "lcpMs": 1608,
+    "cls": 0.00020523988625506027,
+    "fieldData": false
+  }
 }

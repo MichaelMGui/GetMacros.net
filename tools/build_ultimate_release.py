@@ -159,7 +159,7 @@ def apply():
             text=compose_reference_diary(text,find,replace)
             # The async diary painter reveals real saved totals. Do not flash
             # an empty nutrient-details row before that initial storage read.
-            text=text.replace('class="diary-summary" aria-label="Logged nutrition"','class="diary-summary" hidden aria-label="Logged nutrition"')
+            if 'data-reference-diary' not in text:text=text.replace('class="diary-summary" aria-label="Logged nutrition"','class="diary-summary" hidden aria-label="Logged nutrition"')
         if 'data-home-template="shared-market-v1"' in text:text=homepage(text,market_of(p,text))
         if p.name=='calculators.html':
             head=find(text,'tools-masthead')

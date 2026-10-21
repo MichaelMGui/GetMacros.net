@@ -10,6 +10,7 @@ def apply(text,find,replace):
     if not buddy or not summary:raise ValueError('Diary summary or character missing')
     companion=old[buddy['start']:buddy['end']]
     totals=old[summary['start']:summary['end']].replace(' hidden aria-label="Logged nutrition"',' aria-label="Logged nutrition"')
+    totals=totals.replace('<div data-diary-totals></div>','<div data-diary-totals aria-busy="true"><p class="diary-loading" data-diary-loading role="status">Loading your diary…</p></div>')
     new='<section class="diary-overview" aria-label="Daily overview"><header class="diary-overview-header"><h2>Your day</h2><button class="text-action" type="button" data-edit-goals>Set daily goals</button></header><p class="diary-empty-message" data-diary-empty-day hidden></p>'+totals+'</section>'
     text=replace(text,overview,new)
     header=find(text,'diary-header');part=text[header['start']:header['end']]

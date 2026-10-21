@@ -1,0 +1,64 @@
+{
+  "environment": "Single local Windows Edge cold-cache run, 390x844, 4x CPU slowdown, 100ms latency, 1.6Mbps down. Lab only, not field CWV or INP.",
+  "lcp": 1608,
+  "cls": 0.00020523988625506027,
+  "shifts": [
+    {
+      "value": 0.000022795732847765878,
+      "sources": [
+        {
+          "previous": {
+            "x": 141.875,
+            "y": 289.90625,
+            "width": 89.125,
+            "height": 21.6875,
+            "top": 289.90625,
+            "right": 231,
+            "bottom": 311.59375,
+            "left": 141.875
+          },
+          "current": {
+            "x": 145.109375,
+            "y": 289.90625,
+            "width": 82.828125,
+            "height": 21.6875,
+            "top": 289.90625,
+            "right": 227.9375,
+            "bottom": 311.59375,
+            "left": 145.109375
+          }
+        }
+      ]
+    },
+    {
+      "value": 0.00018244415340729439,
+      "sources": [
+        {
+          "element": "secondary-information diary-more-nutrients",
+          "previous": {
+            "x": 40,
+            "y": 794.75,
+            "width": 310,
+            "height": 45,
+            "top": 794.75,
+            "right": 350,
+            "bottom": 839.75,
+            "left": 40
+          },
+          "current": {
+            "x": 40,
+            "y": 798.15625,
+            "width": 310,
+            "height": 45,
+            "top": 798.15625,
+            "right": 350,
+            "bottom": 843.15625,
+            "left": 40
+          }
+        }
+      ]
+    }
+  ],
+  "resources": 28,
+  "bytes": 399246
+}

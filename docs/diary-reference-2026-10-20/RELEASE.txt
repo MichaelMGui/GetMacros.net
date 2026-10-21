@@ -1,7 +1,8 @@
 GETMACROS — REFERENCE-LED DIARY
 20 October 2026
 
-Implementation and local checks complete; production publication pending.
+Initial implementation pushed as a7967ae09212b289a95c70c187200b37cc6e7a9c.
+Final loading-stability correction verified locally; publication pending.
 Base: 6af0f517b6ab592464ea8560771acafb45e5ec97.
 
 The diary now has a date strip, circular calorie summary, slim macro bars,
@@ -56,3 +57,12 @@ No full accessibility certification or real-user performance claim.
 The existing duplicate-H1 warning on shared country homepages remains.
 All goals and entries in screenshots are isolated test state, not defaults.
 Final production receipts will be generated after publication.
+
+LOADING STABILITY
+The throttled lab caught a 0.423 loading shift. Reserving the measured summary
+and meal space, with an honest loading/storage-failure message, removed the
+jump. Final single-run observation: LCP 1.608s, CLS 0.000205, 399246 transferred
+bytes at 390px, 100ms latency, 1.6Mbps and 4x CPU slowdown. This is lab evidence,
+not real-user CWV, INP or a Lighthouse score. See performance.json and the
+retained performance-before-loading-fix.json. All ten browser groups and
+78 layout assertions passed again after this correction.
