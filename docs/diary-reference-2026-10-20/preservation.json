@@ -1,0 +1,22 @@
+{
+  "js/order-registry.json": {
+    "previous": "9b89499791212e1886abe433608dcce33e627973c9f1e23323b5a41e16067e00",
+    "current": "9b89499791212e1886abe433608dcce33e627973c9f1e23323b5a41e16067e00"
+  },
+  "js/market-definitions.js": {
+    "previous": "0d60c1aec7c8ef9e9ae5cdbf3d6be9ea76468d0c57beb3a22bb7800e28adff40",
+    "current": "0d60c1aec7c8ef9e9ae5cdbf3d6be9ea76468d0c57beb3a22bb7800e28adff40"
+  },
+  "js/calculators.js": {
+    "previous": "5f0172b805d6a4772a633671bfc54db6b61eea86cd9e7d7b5245209f618069b6",
+    "current": "5f0172b805d6a4772a633671bfc54db6b61eea86cd9e7d7b5245209f618069b6"
+  },
+  "data/food-library/manifest.json": {
+    "previous": "7afbe21d35d04c1f7f00bcf657bf130e088ab71726decbaa29aa6946cbe23a07",
+    "current": "7afbe21d35d04c1f7f00bcf657bf130e088ab71726decbaa29aa6946cbe23a07"
+  },
+  "data/food-library/diary-foods-93eb178dd592.json": {
+    "previous": "93eb178dd592a7e24a4447ceb4efc333cb61602f94b1a13882c7f06688470a96",
+    "current": "93eb178dd592a7e24a4447ceb4efc333cb61602f94b1a13882c7f06688470a96"
+  }
+}

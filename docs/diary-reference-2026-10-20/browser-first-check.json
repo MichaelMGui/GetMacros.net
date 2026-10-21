@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-21T00:08:32.004Z",
+  "checks": [
+    "Honest empty state; no default targets or fake progress",
+    "Centered Add food works by keyboard and returns focus",
+    "Only explicit valid goals activate progress; empty intake is exactly zero",
+    "Real source portion, favorite, correct remaining calories, macro progress and reload retention",
+    "Edit, remove/undo and historical source version preserved; excess remains explicit",
+    "New goals export/import atomically; invalid goals preserve all data; old backups remain compatible"
+  ],
+  "layouts": [
+    {
+      "label": "empty-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 158.40625,
+        "y": 450.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 231.578125,
+        "bottom": 519.40625,
+        "left": 158.40625
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "goal-intake-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": -1084.921875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": -1084.921875,
+        "right": 240.953125,
+        "bottom": -1015.59375,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": -1140.25,
+        "width": 180,
+        "height": 180,
+        "top": -1140.25,
+        "right": 285,
+        "bottom": -960.25,
+        "left": 105
+      }
+    },
+    {
+      "label": "above-goal-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 145.578125,
+        "y": 450.078125,
+        "width": 98.84375,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 244.421875,
+        "bottom": 519.40625,
+        "left": 145.578125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "partial-intake-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 146.234375,
+        "y": -887.78125,
+        "width": 97.53125,
+        "height": 55.046875,
+        "top": -887.78125,
+        "right": 243.765625,
+        "bottom": -832.734375,
+        "left": 146.234375
+      },
+      "circle": {
+        "x": 105,
+        "y": -950.25,
+        "width": 180,
+        "height": 180,
+        "top": -950.25,
+        "right": 285,
+        "bottom": -770.25,
+        "left": 105
+      }
+    }
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(!(await p.locator('.diary-energy-stats').innerText()).includes('0 kcal'))\n\n    at C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\tools\\diary_reference\\browser.cjs:15:1398"
+  ],
+  "screens": [
+    "empty-mobile.png",
+    "goal-intake-mobile.png",
+    "above-goal-mobile.png",
+    "partial-intake-mobile.png"
+  ],
+  "privacy": "Fresh isolated browser, real source portions and explicit QA goals only. No actual user diary or analytics access."
+}

@@ -1,0 +1,14 @@
+{
+  "baseRevision": "6af0f517b6ab592464ea8560771acafb45e5ec97",
+  "buildExit": 0,
+  "newGoalModelTestsPassed": 5,
+  "existingFoodChecksPassed": 11,
+  "assetTestsPassed": 3,
+  "releaseTestsPassed": 8,
+  "browserJourneyGroups": 10,
+  "browserLayoutAssertions": 78,
+  "browserErrors": [],
+  "migrationOfflineGroups": 2,
+  "unchangedNutritionAndFormulaFiles": 5,
+  "production": "Pending deployment"
+}

@@ -1,0 +1,58 @@
+GETMACROS — REFERENCE-LED DIARY
+20 October 2026
+
+Implementation and local checks complete; production publication pending.
+Base: 6af0f517b6ab592464ea8560771acafb45e5ec97.
+
+The diary now has a date strip, circular calorie summary, slim macro bars,
+soft breakfast/lunch/dinner/snack sections and a centered mobile Add food.
+The original broccoli, food search, review, favorites, recipes and backups stay.
+Every market uses this same private diary.
+
+Daily goals are optional and have no default values. A progress ring appears
+only for an explicit calorie goal with complete recorded calorie values.
+Without a goal it shows logged intake. Above-goal amounts remain visible.
+Partial or unknown nutrients cannot produce an exact remaining value or
+percentage. Numbers change directly; reduced/calm motion disables bar changes.
+
+Goals stay in the existing IndexedDB settings store. Database/schema version
+remains 1. New backups optionally include goals; old backups still import and
+do not clear an existing goal. Invalid goal imports fail before any writes.
+Source snapshots and favorite portions survive an actual previous-version
+upgrade in an isolated origin. New diary records and goals also work offline.
+No cloud account, tracking SDK, native app or nutrition record was added.
+The goal form uses method=dialog as a non-network native fallback. The privacy
+notice now explicitly covers daily goals and goal-containing backups.
+
+Changed sources: css/food-app.css, tools/product-navigation.css,
+js/food-core.js (additive goal validation only), js/food-diary-store.js
+(optional goal backup handling), js/food-app.js, js/diary-dashboard.js,
+tools/diary_reference/layout.py and tools/build_ultimate_release.py.
+The existing CI workflow now runs the five new goal-model regressions.
+Existing styles were replaced; no extra public override stylesheet was added.
+
+VERIFICATION
+Supported full build passed. Five goal-model tests, eleven food-integrity
+checks, calculator math, source/provenance contracts, three asset/versioning
+tests, eight release-preservation tests and route validation passed.
+Real browser: ten journey groups, 78 layout assertions, four themes at
+320/390/768/1024/1440px, goal dialog, 200% text, keyboard, reduced motion,
+imports/exports, edit/remove/undo, partial data and above-goal display.
+Pinned previous-release upgrade and offline-goal checks passed.
+Two initial QA issues are retained in evidence: an incorrectly scoped test
+assertion was corrected; the reduced-motion rule was made completely static.
+Visual review also corrected a truncated enlarged date and crowded nutrient
+labels. The final date and text reflow screenshots were inspected.
+
+EVIDENCE
+before/: actual previous live mobile/desktop diary.
+after/: real empty, recorded, goal, partial, above-goal and theme screenshots.
+after/diary-interactions.zip: actual browser interaction trace.
+browser-results.json; migration-offline.json; preservation.json; build.log.
+
+LIMITATIONS
+Windows Edge checks; physical iOS/Safari and Android devices remain untested.
+No full accessibility certification or real-user performance claim.
+The existing duplicate-H1 warning on shared country homepages remains.
+All goals and entries in screenshots are isolated test state, not defaults.
+Final production receipts will be generated after publication.

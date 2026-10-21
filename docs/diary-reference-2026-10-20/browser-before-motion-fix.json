@@ -1,0 +1,2161 @@
+{
+  "checkedAt": "2026-10-21T00:09:05.779Z",
+  "checks": [
+    "Honest empty state; no default targets or fake progress",
+    "Centered Add food works by keyboard and returns focus",
+    "Only explicit valid goals activate progress; empty intake is exactly zero",
+    "Real source portion, favorite, correct remaining calories, macro progress and reload retention",
+    "Edit, remove/undo and historical source version preserved; excess remains explicit",
+    "New goals export/import atomically; invalid goals preserve all data; old backups remain compatible",
+    "Partial and unknown calories never create false remaining values or percentages",
+    "Date navigation and goal removal leave recorded foods unchanged",
+    "Empty, recorded and goal-dialog states in all four themes at five widths"
+  ],
+  "layouts": [
+    {
+      "label": "empty-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 158.40625,
+        "y": 450.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 231.578125,
+        "bottom": 519.40625,
+        "left": 158.40625
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "goal-intake-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": -1084.921875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": -1084.921875,
+        "right": 240.953125,
+        "bottom": -1015.59375,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": -1140.25,
+        "width": 180,
+        "height": 180,
+        "top": -1140.25,
+        "right": 285,
+        "bottom": -960.25,
+        "left": 105
+      }
+    },
+    {
+      "label": "above-goal-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 145.578125,
+        "y": 450.078125,
+        "width": 98.84375,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 244.421875,
+        "bottom": 519.40625,
+        "left": 145.578125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "partial-intake-mobile",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 146.234375,
+        "y": -887.78125,
+        "width": 97.53125,
+        "height": 55.046875,
+        "top": -887.78125,
+        "right": 243.765625,
+        "bottom": -832.734375,
+        "left": 146.234375
+      },
+      "circle": {
+        "x": 105,
+        "y": -950.25,
+        "width": 180,
+        "height": 180,
+        "top": -950.25,
+        "right": 285,
+        "bottom": -770.25,
+        "left": 105
+      }
+    },
+    {
+      "label": "light 320 empty",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 123.40625,
+        "y": 430.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 196.578125,
+        "bottom": 499.40625,
+        "left": 123.40625
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "light 320 recorded",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "light 320 goals",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "light 390 empty",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 158.40625,
+        "y": 450.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 231.578125,
+        "bottom": 519.40625,
+        "left": 158.40625
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "light 390 recorded",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "diary-light-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "light 390 goals",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 372,
+          "content": 372
+        }
+      ],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "goals-dialog-light-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 372,
+          "content": 372
+        }
+      ],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "light 768 empty",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 127.40625,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 200.578125,
+        "bottom": 557.046875,
+        "left": 127.40625
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "light 768 recorded",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "light 768 goals",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "light 1024 empty",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 181.234375,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 254.40625,
+        "bottom": 557.046875,
+        "left": 181.234375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "light 1024 recorded",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "light 1024 goals",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "light 1440 empty",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 359.953125,
+        "y": 467.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 433.125,
+        "bottom": 537.046875,
+        "left": 359.953125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "light 1440 recorded",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "diary-light-1440",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "light 1440 goals",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "citrus 320 empty",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 123.40625,
+        "y": 430.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 196.578125,
+        "bottom": 499.40625,
+        "left": 123.40625
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "citrus 320 recorded",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "citrus 320 goals",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 302,
+          "content": 302
+        }
+      ],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "citrus 390 empty",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 158.40625,
+        "y": 450.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 231.578125,
+        "bottom": 519.40625,
+        "left": 158.40625
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "citrus 390 recorded",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "diary-citrus-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "citrus 390 goals",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 372,
+          "content": 372
+        }
+      ],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "goals-dialog-citrus-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 372,
+          "content": 372
+        }
+      ],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "citrus 768 empty",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 127.40625,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 200.578125,
+        "bottom": 557.046875,
+        "left": 127.40625
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "citrus 768 recorded",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "citrus 768 goals",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "citrus 1024 empty",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 181.234375,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 254.40625,
+        "bottom": 557.046875,
+        "left": 181.234375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "citrus 1024 recorded",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "citrus 1024 goals",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "citrus 1440 empty",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 359.953125,
+        "y": 467.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 433.125,
+        "bottom": 537.046875,
+        "left": 359.953125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "citrus 1440 recorded",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "diary-citrus-1440",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "citrus 1440 goals",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "berry 320 empty",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 123.40625,
+        "y": 430.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 196.578125,
+        "bottom": 499.40625,
+        "left": 123.40625
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "berry 320 recorded",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "berry 320 goals",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 302,
+          "content": 302
+        }
+      ],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "berry 390 empty",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 158.40625,
+        "y": 450.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 231.578125,
+        "bottom": 519.40625,
+        "left": 158.40625
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "berry 390 recorded",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "diary-berry-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "berry 390 goals",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "goals-dialog-berry-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 372,
+          "content": 372
+        }
+      ],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "berry 768 empty",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 127.40625,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 200.578125,
+        "bottom": 557.046875,
+        "left": 127.40625
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "berry 768 recorded",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "berry 768 goals",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "berry 1024 empty",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 181.234375,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 254.40625,
+        "bottom": 557.046875,
+        "left": 181.234375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "berry 1024 recorded",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "berry 1024 goals",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "berry 1440 empty",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 359.953125,
+        "y": 467.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 433.125,
+        "bottom": 537.046875,
+        "left": 359.953125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "berry 1440 recorded",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "diary-berry-1440",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "berry 1440 goals",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "dark 320 empty",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 123.40625,
+        "y": 430.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 196.578125,
+        "bottom": 499.40625,
+        "left": 123.40625
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "dark 320 recorded",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "dark 320 goals",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 302,
+          "content": 302
+        }
+      ],
+      "ring": {
+        "x": 114.03125,
+        "y": 430.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 430.078125,
+        "right": 205.953125,
+        "bottom": 499.40625,
+        "left": 114.03125
+      },
+      "circle": {
+        "x": 70,
+        "y": 374.75,
+        "width": 180,
+        "height": 180,
+        "top": 374.75,
+        "right": 250,
+        "bottom": 554.75,
+        "left": 70
+      }
+    },
+    {
+      "label": "dark 390 empty",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 158.40625,
+        "y": 450.078125,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 231.578125,
+        "bottom": 519.40625,
+        "left": 158.40625
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "dark 390 recorded",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "diary-dark-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "dark 390 goals",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 372,
+          "content": 372
+        }
+      ],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "goals-dialog-dark-390",
+      "viewport": 390,
+      "body": 390,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 372,
+          "content": 372
+        }
+      ],
+      "ring": {
+        "x": 149.03125,
+        "y": 450.078125,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 450.078125,
+        "right": 240.953125,
+        "bottom": 519.40625,
+        "left": 149.03125
+      },
+      "circle": {
+        "x": 105,
+        "y": 394.75,
+        "width": 180,
+        "height": 180,
+        "top": 394.75,
+        "right": 285,
+        "bottom": 574.75,
+        "left": 105
+      }
+    },
+    {
+      "label": "dark 768 empty",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 127.40625,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 200.578125,
+        "bottom": 557.046875,
+        "left": 127.40625
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "dark 768 recorded",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "dark 768 goals",
+      "viewport": 768,
+      "body": 768,
+      "dialogs": [],
+      "ring": {
+        "x": 118.03125,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 209.953125,
+        "bottom": 557.046875,
+        "left": 118.03125
+      },
+      "circle": {
+        "x": 64,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 264,
+        "bottom": 622.390625,
+        "left": 64
+      }
+    },
+    {
+      "label": "dark 1024 empty",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 181.234375,
+        "y": 487.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 254.40625,
+        "bottom": 557.046875,
+        "left": 181.234375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "dark 1024 recorded",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "dark 1024 goals",
+      "viewport": 1024,
+      "body": 1024,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 171.859375,
+        "y": 487.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 487.71875,
+        "right": 263.78125,
+        "bottom": 557.046875,
+        "left": 171.859375
+      },
+      "circle": {
+        "x": 117.828125,
+        "y": 422.390625,
+        "width": 200,
+        "height": 200,
+        "top": 422.390625,
+        "right": 317.828125,
+        "bottom": 622.390625,
+        "left": 117.828125
+      }
+    },
+    {
+      "label": "dark 1440 empty",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 359.953125,
+        "y": 467.71875,
+        "width": 73.171875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 433.125,
+        "bottom": 537.046875,
+        "left": 359.953125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "dark 1440 recorded",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "diary-dark-1440",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "dark 1440 goals",
+      "viewport": 1440,
+      "body": 1440,
+      "dialogs": [
+        {
+          "id": "diary-goals",
+          "width": 718,
+          "content": 718
+        }
+      ],
+      "ring": {
+        "x": 350.578125,
+        "y": 467.71875,
+        "width": 91.921875,
+        "height": 69.328125,
+        "top": 467.71875,
+        "right": 442.5,
+        "bottom": 537.046875,
+        "left": 350.578125
+      },
+      "circle": {
+        "x": 296.546875,
+        "y": 402.390625,
+        "width": 200,
+        "height": 200,
+        "top": 402.390625,
+        "right": 496.546875,
+        "bottom": 602.390625,
+        "left": 296.546875
+      }
+    },
+    {
+      "label": "text-zoom-light-320",
+      "viewport": 320,
+      "body": 320,
+      "dialogs": [],
+      "ring": {
+        "x": 68.078125,
+        "y": 684.984375,
+        "width": 183.84375,
+        "height": 116.53125,
+        "top": 684.984375,
+        "right": 251.921875,
+        "bottom": 801.515625,
+        "left": 68.078125
+      },
+      "circle": {
+        "x": 36,
+        "y": 619.25,
+        "width": 248,
+        "height": 248,
+        "top": 619.25,
+        "right": 284,
+        "bottom": 867.25,
+        "left": 36
+      }
+    }
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'1e-05s' !== '0s'\n\n    at C:\\Users\\slowf\\Documents\\ChatGPT\\getmacros.net\\tools\\diary_reference\\browser.cjs:18:637"
+  ],
+  "screens": [
+    "empty-mobile.png",
+    "goal-intake-mobile.png",
+    "above-goal-mobile.png",
+    "partial-intake-mobile.png",
+    "diary-light-390.png",
+    "goals-dialog-light-390.png",
+    "diary-light-1440.png",
+    "diary-citrus-390.png",
+    "goals-dialog-citrus-390.png",
+    "diary-citrus-1440.png",
+    "diary-berry-390.png",
+    "goals-dialog-berry-390.png",
+    "diary-berry-1440.png",
+    "diary-dark-390.png",
+    "goals-dialog-dark-390.png",
+    "diary-dark-1440.png",
+    "text-zoom-light-320.png"
+  ],
+  "privacy": "Fresh isolated browser, real source portions and explicit QA goals only. No actual user diary or analytics access."
+}

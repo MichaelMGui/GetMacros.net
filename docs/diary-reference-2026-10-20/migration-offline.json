@@ -1,0 +1,7 @@
+{
+  "checks": [
+    "Previous 6af0f51 app logged a real portion and favorite; same IndexedDB survived the new app with exact historical snapshots",
+    "New shell, real portion, saved goal and calculated remaining calories work offline; no private fields in public cache URLs"
+  ],
+  "errors": []
+}

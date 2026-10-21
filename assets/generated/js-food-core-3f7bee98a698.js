@@ -33,13 +33,20 @@
   if(s.recipeParts){if(!Array.isArray(s.recipeParts)||!s.recipeParts.length||s.recipeParts.length>100)bad();amount(s.recipeYield);s.recipeParts.forEach(p=>validateSnapshot(p,depth+1));}
   return s;
  }
+ function validateGoals(goals){
+  if(goals===null)return null;
+  if(!goals||typeof goals!=='object'||Array.isArray(goals)||Object.keys(goals).some(k=>!['cal','p','c','fat'].includes(k)))throw Error('Choose valid daily goals.');
+  const result={};for(const k of ['cal','p','c','fat']){const n=goals[k];if(n===undefined||n===null){result[k]=null;continue;}if(typeof n!=='number'||!Number.isFinite(n)||n<0.1||n>(k==='cal'?50000:10000))throw Error('Goals must be at least 0.1, within the field limit, or left blank.');result[k]=n;}
+  return Object.values(result).some(n=>n!==null)?result:null;
+ }
  function validateExport(data){
   if(data?.schemaVersion!==1||!Array.isArray(data.entries)||!Array.isArray(data.recipes)||data.entries.length>20000||data.recipes.length>2000)throw Error('Choose a GetMacros diary export, up to 20,000 entries.');
   if(data.favorites!==undefined){if(!Array.isArray(data.favorites)||data.favorites.length>100)throw Error('Invalid favorite portions in export.');data.favorites.forEach(s=>validateSnapshot(s));}
+  if(data.goals!==undefined)validateGoals(data.goals);
   for(const r of data.entries){date(r.date);if(typeof r.id!=='string'||!r.id||r.id.length>200||!['Breakfast','Lunch','Dinner','Snack'].includes(r.occasion)||typeof r.note!=='string'||r.note.length>1000||typeof r.savedAt!=='string'||!Number.isFinite(Date.parse(r.savedAt)))throw Error('An imported entry is invalid. Nothing was imported.');validateSnapshot(r.snapshot);}
   for(const r of data.recipes){if(typeof r.id!=='string'||!r.id.startsWith('recipe:')||typeof r.name!=='string'||!Array.isArray(r.parts)||r.parts.length>100||!r.parts.length||!r.nutrients)throw Error('Invalid recipe in export.');amount(r.yieldServings);r.parts.forEach(p=>validateSnapshot(p));const total=sum(r.parts.map(p=>p.nutrients));for(const k of fields){const expected=total[k].value===null?null:total[k].value/r.yieldServings;if(expected===null?r.nutrients[k]!==null:!known(r.nutrients[k])||Math.abs(expected-r.nutrients[k])>Math.max(1,expected)*1e-8)throw Error('Recipe values do not match its ingredient snapshots.');}}
   return data;
  }
  function formatPortion(s){const number=new Intl.NumberFormat('en',{maximumFractionDigits:8}).format(s.quantity);if(s.measure==='g')return number+' g';const label=s.portionLabel||s.serving||'source serving';return s.quantity===1?label:number+' × '+label;}
- return Object.freeze({fields,units,known,amount,factor,scale,sum,snapshot,fromSnapshot,recipe,date,today,restaurant,text,search,validateDraft,validateSnapshot,validateExport,formatPortion});
+ return Object.freeze({fields,units,known,amount,factor,scale,sum,snapshot,fromSnapshot,recipe,date,today,restaurant,text,search,validateDraft,validateSnapshot,validateExport,validateGoals,formatPortion});
 });

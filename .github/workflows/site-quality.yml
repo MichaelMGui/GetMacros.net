@@ -37,6 +37,7 @@ jobs:
           exec > >(tee -a "$RUNNER_TEMP/getmacros-validation.log") 2>&1
           node tools/test_macro_math.js
           node tools/product_release/test-food.cjs
+          node --test tools/diary_reference/test_goals.cjs
           node tools/product_release/test-ingredient-comparison.cjs
           python3 tools/product_release/test-generators.py
           node --test server/test/service.test.cjs

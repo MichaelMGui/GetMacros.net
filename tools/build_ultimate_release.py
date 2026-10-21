@@ -155,6 +155,8 @@ def apply():
         if p.name=='food-diary.html':
             from botanical_release.layout import diary as compose_diary
             text=compose_diary(text,find,replace)
+            from diary_reference.layout import apply as compose_reference_diary
+            text=compose_reference_diary(text,find,replace)
             # The async diary painter reveals real saved totals. Do not flash
             # an empty nutrient-details row before that initial storage read.
             text=text.replace('class="diary-summary" aria-label="Logged nutrition"','class="diary-summary" hidden aria-label="Logged nutrition"')
@@ -182,6 +184,8 @@ def apply():
         if p.name=='about.html':text=text.replace('463 recorded orders from 25 U.S. restaurant chains.','Country-specific restaurant portions, with sources you can inspect.')
         if p.name=='sources.html':text=text.replace('The complete dataset now contains 463 orders across 25 chains.','That October 4 U.S. snapshot contained 463 entries across 25 chains. <a href="/fast-food-nutrition-data-report.html">Current menu coverage</a> is reported separately.')
         if p.name=='privacy.html':
+            from diary_reference.layout import privacy as diary_goals_privacy
+            text=diary_goals_privacy(text)
             for n in reversed([n for n in Document(text).nodes if n['tag']=='p']):
                 fragment=text[n['inner']:n['close']]
                 if fragment.startswith('Cloudflare adds a web analytics script'):

@@ -10,9 +10,9 @@
     "assetSha256": "d4e0a0201ceb165e2018524bc56818533f57c6be63d5aa47e5adb4913d486016"
   },
   "css/publication.css": {
-    "url": "/assets/generated/css-publication-16307b85bfb6.css",
-    "sourceSha256": "662def3853545a59f4e1c86ea61262e48d2006004d5a5884fbc8dd963536c0ba",
-    "assetSha256": "16307b85bfb6220369a574a976b762d52b5efeb66783feab912e53df13bd9f6d"
+    "url": "/assets/generated/css-publication-51465a8d0a39.css",
+    "sourceSha256": "acb198086f18ac9adb0ed1b87ccce01e0224968e6b316d788b49cd2d1445a6db",
+    "assetSha256": "51465a8d0a39896896cc15153ea7962b87e6b70c51afd0e2b9e15d4290d1f891"
   },
   "css/markets.css": {
     "url": "/assets/generated/css-markets-8d5b7028b0dd.css",
@@ -95,9 +95,9 @@
     "assetSha256": "0e13b8bc040c70f0aabebd8ae7a8b8851737c1cc5a30b78b207a63281620b92c"
   },
   "css/food-app.css": {
-    "url": "/assets/generated/css-food-app-b99f1dde5954.css",
-    "sourceSha256": "b99f1dde5954900c196ab70a1f09b441685f4627fa40372c38aa7c5559617702",
-    "assetSha256": "b99f1dde5954900c196ab70a1f09b441685f4627fa40372c38aa7c5559617702"
+    "url": "/assets/generated/css-food-app-c61aa27d41d8.css",
+    "sourceSha256": "c61aa27d41d8e3c4a40fc36d347ec29c4a533675018db376d525589df48e6742",
+    "assetSha256": "c61aa27d41d8e3c4a40fc36d347ec29c4a533675018db376d525589df48e6742"
   },
   "js/order-tools-core.js": {
     "url": "/assets/generated/js-order-tools-core-96011440bad0.js",
@@ -135,9 +135,9 @@
     "assetSha256": "7151b5636eb8df3859cbecfd018101b2788b3b340c1d4be03959c2eb42cdfa89"
   },
   "js/food-core.js": {
-    "url": "/assets/generated/js-food-core-eb86a1b5957e.js",
-    "sourceSha256": "eb86a1b5957e1ba03d8066eb5f58f21335f2e25aa4ebf7f119e3d90817fcfec5",
-    "assetSha256": "eb86a1b5957e1ba03d8066eb5f58f21335f2e25aa4ebf7f119e3d90817fcfec5"
+    "url": "/assets/generated/js-food-core-3f7bee98a698.js",
+    "sourceSha256": "3f7bee98a6987339f937a94bafd75789c252cead26026e00d44e1afc5010acce",
+    "assetSha256": "3f7bee98a6987339f937a94bafd75789c252cead26026e00d44e1afc5010acce"
   },
   "js/branded-foods.js": {
     "url": "/assets/generated/js-branded-foods-80a47931b081.js",
@@ -150,14 +150,14 @@
     "assetSha256": "41a943f25ee2c4908f356ddfd579a3f056bb029db02e305a2eb93f7a554161e6"
   },
   "js/food-diary-store.js": {
-    "url": "/assets/generated/js-food-diary-store-4482a3f8b8f1.js",
-    "sourceSha256": "4482a3f8b8f1520a826c42ca9f4839b4c26a06d67d6dc528fac311a9e980339e",
-    "assetSha256": "4482a3f8b8f1520a826c42ca9f4839b4c26a06d67d6dc528fac311a9e980339e"
+    "url": "/assets/generated/js-food-diary-store-64ee01aab09c.js",
+    "sourceSha256": "64ee01aab09c696ce9a661178dd82559b524b287437c0343786f474e2a4f5899",
+    "assetSha256": "64ee01aab09c696ce9a661178dd82559b524b287437c0343786f474e2a4f5899"
   },
   "js/food-app.js": {
-    "url": "/assets/generated/js-food-app-1bca61a48ed0.js",
-    "sourceSha256": "1bca61a48ed0a244a4bf77e343f2b35be27e06317bee782591f0474c2395c65e",
-    "assetSha256": "1bca61a48ed0a244a4bf77e343f2b35be27e06317bee782591f0474c2395c65e"
+    "url": "/assets/generated/js-food-app-64b4bb8ac49d.js",
+    "sourceSha256": "64b4bb8ac49d813a61c4ca444facb650c18d771a8bf3f60261351ef55a0efeae",
+    "assetSha256": "64b4bb8ac49d813a61c4ca444facb650c18d771a8bf3f60261351ef55a0efeae"
   },
   "js/food-comparison-state.js": {
     "url": "/assets/generated/js-food-comparison-state-f5797ed02400.js",
@@ -193,6 +193,11 @@
     "url": "/assets/generated/js-contact-ab64751e08f4.js",
     "sourceSha256": "ab64751e08f4bf6bc8c10f7eff9a1ec3b587d5db46ba662812db4be347b9257b",
     "assetSha256": "ab64751e08f4bf6bc8c10f7eff9a1ec3b587d5db46ba662812db4be347b9257b"
+  },
+  "js/diary-dashboard.js": {
+    "url": "/assets/generated/js-diary-dashboard-fe1f459f578b.js",
+    "sourceSha256": "fe1f459f578b105a0dcbdefdf270aed11dc6ba325ff269f321d215e66a9ecf81",
+    "assetSha256": "fe1f459f578b105a0dcbdefdf270aed11dc6ba325ff269f321d215e66a9ecf81"
   },
   "js/diary-actions.js": {
     "url": "/assets/generated/js-diary-actions-f638163da663.js",
