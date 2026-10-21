@@ -9,6 +9,15 @@ from search_recovery.build import ROOT, individual_examples, markets, eligible, 
 
 
 class RecoveryTests(unittest.TestCase):
+    def test_all_build_entry_points_include_search_recovery(self):
+        for relative in ('tools/run_food_build.py','tools/build_site.sh','tools/product_release/test-generators.py'):
+            source=(ROOT/relative).read_text(encoding='utf-8')
+            self.assertEqual(source.count('search_recovery/build'),1,relative)
+            # The shell and repeat-integration list express explicit ordering.
+            if relative!='tools/run_food_build.py':
+                self.assertLess(source.index('build_ultimate_release.py'),source.index('search_recovery/build.py'),relative)
+                self.assertLess(source.index('search_recovery/build.py'),source.index('refresh_release_search.py'),relative)
+
     def test_editorial_selection_excludes_bulk_and_unknowns(self):
         base={'market':'GB','chain':'Example','category':'entree','name':'Chicken wrap','cal':400,'p':30,'c':40,'fat':15,'serving':'one wrap'}
         candidates=[base,dict(base,name='Pizza Box 6 Pack'),dict(base,name='Sharing platter'),dict(base,name='Unknown protein',p=None),dict(base,name='Tiny side',category='side'),dict(base,name='Large item',cal=1200),dict(base,name='Oversized portion',servingGrams=1200)]
