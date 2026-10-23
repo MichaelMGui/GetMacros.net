@@ -183,6 +183,8 @@ def apply():
     out=ROOT/'docs/search-recovery-2026-10-21';out.mkdir(parents=True,exist_ok=True)
     (out/'implementation.json').write_text(json.dumps({'date':DATE,'routes':sorted(changed),'markets':report,'nutritionRecordsChanged':0,'indexing':'Requests and Google decisions tracked separately; a build is not indexing.'},indent=2)+'\n',encoding='utf-8')
     print('Search landing-page repairs:',len(changed),'existing routes; no nutrient changes.')
+    from search_recovery.discovery import apply as improve_discovery
+    improve_discovery()
 
 
 if __name__=='__main__':apply()

@@ -1,0 +1,512 @@
+{
+  "date": "2026-10-23",
+  "routes": [
+    "/",
+    "/au/en/",
+    "/au/en/restaurants/",
+    "/burger-king-healthy-meals-macros.html",
+    "/ca/en/",
+    "/ca/en/restaurants/",
+    "/ca/en/restaurants/harvey-s/",
+    "/ca/en/restaurants/tim-hortons/",
+    "/fr/en/",
+    "/fr/en/restaurants/",
+    "/gb/en/",
+    "/gb/en/restaurants/",
+    "/gb/en/restaurants/caffe-nero/",
+    "/gb/en/restaurants/chopstix/",
+    "/gb/en/restaurants/five-guys/",
+    "/gb/en/restaurants/greggs/",
+    "/gb/en/restaurants/kfc/",
+    "/gb/en/restaurants/leon/",
+    "/gb/en/restaurants/pizzaexpress/",
+    "/gb/en/restaurants/starbucks/",
+    "/gb/en/restaurants/subway/",
+    "/gb/en/restaurants/tortilla/",
+    "/gb/en/restaurants/wagamama/",
+    "/gb/en/restaurants/wasabi/",
+    "/grocery-food-coverage.html",
+    "/how-to-log-food-portions.html",
+    "/ie/en/",
+    "/ie/en/restaurants/",
+    "/in/en/",
+    "/in/en/restaurants/",
+    "/jp/en/",
+    "/jp/en/restaurants/",
+    "/mx/en/",
+    "/mx/en/restaurants/",
+    "/nutrition-label-comparison-tool.html",
+    "/nz/en/",
+    "/nz/en/restaurants/",
+    "/restaurant-meal-guides.html",
+    "/sg/en/",
+    "/sg/en/restaurants/",
+    "/za/en/",
+    "/za/en/restaurants/"
+  ],
+  "links": [
+    {
+      "from": "/ca/en/restaurants/tim-hortons/",
+      "to": "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html"
+    },
+    {
+      "from": "/ca/en/restaurants/tim-hortons/",
+      "to": "/tim-hortons-canada-protein-latte-vs-latte.html"
+    },
+    {
+      "from": "/ca/en/restaurants/harvey-s/",
+      "to": "/harveys-canada-burger-fries-onion-rings-order.html"
+    },
+    {
+      "from": "/gb/en/restaurants/greggs/",
+      "to": "/greggs-breakfast-baguette-calories-protein.html"
+    },
+    {
+      "from": "/gb/en/restaurants/kfc/",
+      "to": "/kfc-uk-burger-twister-wrap-nutrition.html"
+    },
+    {
+      "from": "/gb/en/restaurants/subway/",
+      "to": "/subway-uk-six-inch-chicken-sandwich-nutrition.html"
+    },
+    {
+      "from": "/gb/en/restaurants/wagamama/",
+      "to": "/wagamama-uk-ramen-calories-protein-salt.html"
+    },
+    {
+      "from": "/gb/en/restaurants/wasabi/",
+      "to": "/wasabi-sushi-set-dressing-nutrition.html"
+    },
+    {
+      "from": "/gb/en/restaurants/pizzaexpress/",
+      "to": "/pizzaexpress-classic-romana-margherita-nutrition.html"
+    },
+    {
+      "from": "/gb/en/restaurants/tortilla/",
+      "to": "/tortilla-uk-burrito-bowl-rice-portions.html"
+    },
+    {
+      "from": "/gb/en/restaurants/caffe-nero/",
+      "to": "/caffe-nero-latte-milk-size-nutrition.html"
+    },
+    {
+      "from": "/gb/en/restaurants/five-guys/",
+      "to": "/five-guys-uk-little-hamburger-cheeseburger.html"
+    },
+    {
+      "from": "/gb/en/restaurants/chopstix/",
+      "to": "/chopstix-uk-box-base-toppings-calories.html"
+    },
+    {
+      "from": "/gb/en/restaurants/starbucks/",
+      "to": "/starbucks-uk-pumpkin-spice-latte-hot-iced.html"
+    },
+    {
+      "from": "/gb/en/restaurants/leon/",
+      "to": "/leon-uk-chicken-wrap-rice-box-nutrition.html"
+    },
+    {
+      "from": "/burger-king-healthy-meals-macros.html",
+      "to": "/burger-king-us-breakfast-hash-browns-order.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/fage-plain-greek-yogurt-0-2-5-percent.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/daisy-cottage-cheese-2-4-percent-portions.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/peanut-butter-powder-vs-creamy-spread.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/silk-unsweet-soy-vs-almondmilk.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/original-vs-honey-nut-cheerios-labels.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/barilla-australia-protein-plus-vs-spaghetti.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/house-foods-firm-vs-super-firm-tofu.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/bushs-black-beans-vs-chickpeas.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/starkist-light-vs-albacore-tuna-pouches.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/hersheys-special-dark-bar-vs-kisses.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/chocolate-protein-shakes-country-portions.html"
+    },
+    {
+      "from": "/grocery-food-coverage.html",
+      "to": "/quaker-old-fashioned-vs-quick-oats.html"
+    },
+    {
+      "from": "/how-to-log-food-portions.html",
+      "to": "/back-up-and-move-food-diary.html"
+    },
+    {
+      "from": "/how-to-log-food-portions.html",
+      "to": "/barcode-food-search-label-check.html"
+    },
+    {
+      "from": "/",
+      "to": "/chick-fil-a-healthy-meals-macros.html",
+      "market": "US"
+    },
+    {
+      "from": "/",
+      "to": "/chipotle-healthy-meals-macros.html",
+      "market": "US"
+    },
+    {
+      "from": "/",
+      "to": "/mcdonalds-healthy-meals-macros.html",
+      "market": "US"
+    },
+    {
+      "from": "/",
+      "to": "/burger-king-healthy-meals-macros.html",
+      "market": "US"
+    },
+    {
+      "from": "/",
+      "to": "/burger-king-us-breakfast-hash-browns-order.html",
+      "market": "US"
+    },
+    {
+      "from": "/",
+      "to": "/original-vs-honey-nut-cheerios-labels.html",
+      "market": "US"
+    },
+    {
+      "from": "/",
+      "to": "/quaker-old-fashioned-vs-quick-oats.html",
+      "market": "US"
+    },
+    {
+      "from": "/",
+      "to": "/how-to-read-a-nutrition-label.html",
+      "market": "US"
+    },
+    {
+      "from": "/restaurant-meal-guides.html",
+      "to": "/burger-king-us-breakfast-hash-browns-order.html",
+      "market": "US"
+    },
+    {
+      "from": "/restaurant-meal-guides.html",
+      "to": "/original-vs-honey-nut-cheerios-labels.html",
+      "market": "US"
+    },
+    {
+      "from": "/restaurant-meal-guides.html",
+      "to": "/quaker-old-fashioned-vs-quick-oats.html",
+      "market": "US"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/ca/en/restaurants/tim-hortons/",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/ca/en/restaurants/harvey-s/",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/ca/en/restaurants/a-w-canada/",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/ca/en/restaurants/chick-fil-a/",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/harveys-canada-burger-fries-onion-rings-order.html",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/tim-hortons-canada-protein-latte-vs-latte.html",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/",
+      "to": "/chocolate-protein-shakes-country-portions.html",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/restaurants/",
+      "to": "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/restaurants/",
+      "to": "/harveys-canada-burger-fries-onion-rings-order.html",
+      "market": "CA"
+    },
+    {
+      "from": "/ca/en/restaurants/",
+      "to": "/tim-hortons-canada-protein-latte-vs-latte.html",
+      "market": "CA"
+    },
+    {
+      "from": "/mx/en/",
+      "to": "/mx/en/restaurants/starbucks/",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/",
+      "to": "/mx/en/restaurants/subway/",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/",
+      "to": "/subway-mexico-chicken-sandwich-comparison.html",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/",
+      "to": "/subway-turkey-breast-canada-vs-mexico.html",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/",
+      "to": "/how-to-read-a-nutrition-label.html",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/",
+      "to": "/compare-menu-ingredients-worldwide.html",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/restaurants/",
+      "to": "/subway-mexico-chicken-sandwich-comparison.html",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/restaurants/",
+      "to": "/subway-turkey-breast-canada-vs-mexico.html",
+      "market": "MX"
+    },
+    {
+      "from": "/mx/en/restaurants/",
+      "to": "/how-to-read-a-nutrition-label.html",
+      "market": "MX"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/gb/en/restaurants/greggs/",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/gb/en/restaurants/kfc/",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/gb/en/restaurants/subway/",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/gb/en/restaurants/nandos/",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/greggs-breakfast-baguette-calories-protein.html",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/kfc-uk-burger-twister-wrap-nutrition.html",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/subway-uk-six-inch-chicken-sandwich-nutrition.html",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/",
+      "to": "/caffe-nero-latte-milk-size-nutrition.html",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/restaurants/",
+      "to": "/greggs-breakfast-baguette-calories-protein.html",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/restaurants/",
+      "to": "/kfc-uk-burger-twister-wrap-nutrition.html",
+      "market": "GB"
+    },
+    {
+      "from": "/gb/en/restaurants/",
+      "to": "/subway-uk-six-inch-chicken-sandwich-nutrition.html",
+      "market": "GB"
+    },
+    {
+      "from": "/ie/en/",
+      "to": "/ie/en/restaurants/kfc/",
+      "market": "IE"
+    },
+    {
+      "from": "/ie/en/",
+      "to": "/ie/en/restaurants/subway/",
+      "market": "IE"
+    },
+    {
+      "from": "/ie/en/",
+      "to": "/ie/en/restaurants/zizzi/",
+      "market": "IE"
+    },
+    {
+      "from": "/au/en/",
+      "to": "/au/en/restaurants/domino-s/",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/",
+      "to": "/au/en/restaurants/guzman-y-gomez/",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/",
+      "to": "/au/en/restaurants/hungry-jack-s/",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/",
+      "to": "/barilla-australia-protein-plus-vs-spaghetti.html",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/",
+      "to": "/how-to-read-a-nutrition-label.html",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/",
+      "to": "/raw-vs-cooked-food-weight.html",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/",
+      "to": "/compare-menu-ingredients-worldwide.html",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/restaurants/",
+      "to": "/barilla-australia-protein-plus-vs-spaghetti.html",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/restaurants/",
+      "to": "/how-to-read-a-nutrition-label.html",
+      "market": "AU"
+    },
+    {
+      "from": "/au/en/restaurants/",
+      "to": "/raw-vs-cooked-food-weight.html",
+      "market": "AU"
+    },
+    {
+      "from": "/nz/en/",
+      "to": "/nz/en/restaurants/burger-king/",
+      "market": "NZ"
+    },
+    {
+      "from": "/nz/en/",
+      "to": "/nz/en/restaurants/domino-s/",
+      "market": "NZ"
+    },
+    {
+      "from": "/nz/en/",
+      "to": "/nz/en/restaurants/subway/",
+      "market": "NZ"
+    },
+    {
+      "from": "/jp/en/",
+      "to": "/jp/en/restaurants/kfc/",
+      "market": "JP"
+    },
+    {
+      "from": "/jp/en/",
+      "to": "/jp/en/restaurants/mos-burger/",
+      "market": "JP"
+    },
+    {
+      "from": "/jp/en/",
+      "to": "/jp/en/restaurants/mcdonald-s-japan/",
+      "market": "JP"
+    },
+    {
+      "from": "/fr/en/",
+      "to": "/fr/en/restaurants/burger-king/",
+      "market": "FR"
+    },
+    {
+      "from": "/fr/en/",
+      "to": "/fr/en/restaurants/quick/",
+      "market": "FR"
+    },
+    {
+      "from": "/in/en/",
+      "to": "/in/en/restaurants/domino-s/",
+      "market": "IN"
+    },
+    {
+      "from": "/in/en/",
+      "to": "/in/en/restaurants/mcdonald-s-north-east-india/",
+      "market": "IN"
+    },
+    {
+      "from": "/sg/en/",
+      "to": "/sg/en/restaurants/burger-king/",
+      "market": "SG"
+    },
+    {
+      "from": "/sg/en/",
+      "to": "/sg/en/restaurants/chick-fil-a/",
+      "market": "SG"
+    },
+    {
+      "from": "/za/en/",
+      "to": "/za/en/restaurants/debonairs-pizza/",
+      "market": "ZA"
+    }
+  ],
+  "newPublicPages": 0,
+  "nutritionRecordsChanged": 0,
+  "indexingGuaranteed": false
+}

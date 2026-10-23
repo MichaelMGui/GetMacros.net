@@ -1,0 +1,44 @@
+[
+  {
+    "command": "tools/search_recovery/test_discovery.py",
+    "exitCode": 0
+  },
+  {
+    "command": "tools/search_recovery/test.py",
+    "exitCode": 0
+  },
+  {
+    "command": "tools/validate_site.py",
+    "exitCode": 0
+  },
+  {
+    "command": "tools/test_publication.py",
+    "exitCode": 0
+  },
+  {
+    "command": "tools/test_asset_stamps.py",
+    "exitCode": 0,
+    "initialExitCode": 1,
+    "retry": "Passed all 3 tests outside the filesystem sandbox; initial failure was temp-directory PermissionError. Original failure retained in checks.log."
+  },
+  {
+    "command": "tools/test_search_visibility.py",
+    "exitCode": 0
+  },
+  {
+    "command": "tools/analytics_measurement/test_build.py",
+    "exitCode": 0
+  },
+  {
+    "command": "node --test tools/analytics_measurement/runtime.test.cjs",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/test_macro_math.js",
+    "exitCode": 0
+  },
+  {
+    "command": "Final discovery idempotence after mobile illustration-label correction",
+    "exitCode": 0
+  }
+]
