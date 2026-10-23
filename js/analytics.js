@@ -1,4 +1,4 @@
-/* Optional public-content measurement. Never reads food logs or form values. */
+/* Public-content measurement, release 2026-10-23.2. Never reads food logs or form values. */
 (() => {
   'use strict';
   if (window.__getMacrosAnalyticsLoaded) return;
