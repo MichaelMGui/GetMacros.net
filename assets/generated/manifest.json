@@ -29,6 +29,11 @@
     "sourceSha256": "8eab0d919da79486d3d164e9c481ed90340743fdbebc8c506f8bfbcd24b3ccc4",
     "assetSha256": "8eab0d919da79486d3d164e9c481ed90340743fdbebc8c506f8bfbcd24b3ccc4"
   },
+  "css/analytics-consent.css": {
+    "url": "/assets/generated/css-analytics-consent-2ec0e7342028.css",
+    "sourceSha256": "2ec0e7342028a15c6502df91451526831d15e0a9b90916e09c700951e0925ea8",
+    "assetSha256": "2ec0e7342028a15c6502df91451526831d15e0a9b90916e09c700951e0925ea8"
+  },
   "js/unified-v7.js": {
     "url": "/assets/generated/js-unified-v7-eef33f35dcd8.js",
     "sourceSha256": "eef33f35dcd8181d7b56434d096c4caf9f52c712078f70fb78c4145a27d97d30",
@@ -58,6 +63,11 @@
     "url": "/assets/generated/js-ad-placements-988d90e3d1b1.js",
     "sourceSha256": "988d90e3d1b1b45c600909fe26d329967ff9d4b3325e980cbb04a36fef186a79",
     "assetSha256": "988d90e3d1b1b45c600909fe26d329967ff9d4b3325e980cbb04a36fef186a79"
+  },
+  "js/analytics.js": {
+    "url": "/assets/generated/js-analytics-e51ae7a6b6a7.js",
+    "sourceSha256": "e51ae7a6b6a7d978605601636ca5a5268a9b309f80cd53715f0a34916f1dde89",
+    "assetSha256": "e51ae7a6b6a7d978605601636ca5a5268a9b309f80cd53715f0a34916f1dde89"
   },
   "css/food-shelf.css": {
     "url": "/assets/generated/css-food-shelf-94a22eca4f88.css",

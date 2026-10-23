@@ -9,7 +9,7 @@ for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  text=path.read_text(encoding='utf-8');doc=Document(text)
  styles=[n['attrs'].get('data-source-path',n['attrs']['href'].split('?')[0].lstrip('/')) for n in doc.nodes if n['tag']=='link' and n['attrs'].get('rel')=='stylesheet']
  assert styles and styles[0]=='css/publication.css' and len(styles)==len(set(styles)),(path.name,styles)
- assert all(s in {'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css','css/clarity-media.css','css/home-workspace.css'} for s in styles),(path.name,styles)
+ assert all(s in {'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css','css/clarity-media.css','css/home-workspace.css','css/analytics-consent.css'} for s in styles),(path.name,styles)
  if 'css/home-workspace.css' in styles:assert 'data-home-template=' in text,path.name
  if 'css/food-app.css' in styles:assert 'food-app' in text or 'product-diary:start' in text,path.name
  if 'css/release-library.css' in styles:assert path.name in {'articles.html','blog.html','restaurant-meal-guides.html'} or 'class="restaurant-reference"' in text or 'class="editorial-story"' in text,path.name
@@ -39,6 +39,9 @@ css=(ROOT/'css/publication.css').read_text(encoding='utf-8')
 # Lab timing and compressed sizes are recorded separately; this is a size guard, not a speed claim.
 assert len(css.encode())<90000
 assert len(gzip.compress(css.encode()))<18000
+# Consent controls are deliberately isolated from the shared presentation budget.
+consent_css=(ROOT/'css/analytics-consent.css').read_bytes()
+assert len(consent_css)<5000 and len(gzip.compress(consent_css))<1500
 assert 'prefers-reduced-motion:reduce' in css and 'html[data-theme=dark]' in css
 assert 'google.com, pub-2316153877942502, DIRECT, f08c47fec0942fa0' in (ROOT/'ads.txt').read_text()
 with (ROOT/'docs/publication-page-audit.csv').open('w',encoding='utf-8',newline='') as f:

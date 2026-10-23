@@ -14,6 +14,7 @@ files.insert(files.index('refresh_release_search'),'build_global_coverage_releas
 files.insert(files.index('refresh_release_search'),'build_flagship_release')
 files.insert(files.index('refresh_release_search'),'build_ultimate_release')
 files.insert(files.index('refresh_release_search'),'search_recovery/build')
+files.insert(files.index('refresh_release_search'),'analytics_measurement/build')
 for f in files:
  subprocess.run([P,'-X','utf8','tools/'+f+'.py']+(['--apply-reviewed'] if f=='release_copy_audit' else ['--apply'] if f in {'build_restaurant_expansion','build_restaurant_data_report'} else []),check=True)
 subprocess.run(['node','tools/international/test-markets.cjs'],check=True)

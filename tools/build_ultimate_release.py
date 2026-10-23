@@ -188,11 +188,8 @@ def apply():
         if p.name=='privacy.html':
             from diary_reference.layout import privacy as diary_goals_privacy
             text=diary_goals_privacy(text)
-            for n in reversed([n for n in Document(text).nodes if n['tag']=='p']):
-                fragment=text[n['inner']:n['close']]
-                if fragment.startswith('Cloudflare adds a web analytics script'):
-                    text=replace(text,n,'<p>The current GetMacros release does not load Google Analytics 4 or an advertising provider. Cloudflare’s Web Analytics beacon is present on the live site and measures visits and page performance. These reports and hosting requests are separate from GA4 sessions. GetMacros does not send diary entries, notes or calculator inputs to the beacon. See <a href="https://developers.cloudflare.com/web-analytics/about/">Cloudflare Web Analytics</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>. Any future analytics integration requires its actual configuration and this notice to be reviewed.</p>')
-            text=text.replace('The current GetMacros release does not load Google Analytics 4 or an advertising provider. Cloudflare hosting and security services may process the technical information described above. Hosting traffic reports are not the same as GA4 sessions. Any future analytics integration requires its actual configuration and this notice to be reviewed.','The current GetMacros release does not load Google Analytics 4 or an advertising provider. Cloudflare’s Web Analytics beacon is present on the live site and measures visits and page performance. These reports and hosting requests are separate from GA4 sessions. GetMacros does not send diary entries, notes or calculator inputs to the beacon. See <a href="https://developers.cloudflare.com/web-analytics/about/">Cloudflare Web Analytics</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>. Any future analytics integration requires its actual configuration and this notice to be reviewed.')
+            from analytics_measurement.build import privacy as analytics_privacy
+            text=analytics_privacy(text)
             text=text.replace('appearance, light/dark and calm-motion preferences','appearance, color-theme and calm-motion preferences')
         if 'class="editorial-story"' in text and 'css/release-library.css' not in text:text=text.replace('</head>','<link rel="stylesheet" href="/css/release-library.css"></head>')
         if not re.search(r'data-market-scope="(CA|GB|IE|AU|NZ)"',text) and not re.match(r'^[a-z]{2}/en/',p.relative_to(ROOT).as_posix()):

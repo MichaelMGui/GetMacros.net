@@ -1,0 +1,31 @@
+{
+  "synthetic": true,
+  "checks": [
+    "No Google request before consent.",
+    "Decline persists; preferences support keyboard dismissal and focus return; notice fits four widths and four themes.",
+    "Saved consent does not initialize GA4 on diary or query/fragment URLs.",
+    "Google tag returned 200; collector accepted exactly one debug/internal page_view with 204. Revocation clears GA cookies."
+  ],
+  "screenshots": [
+    "consent-mobile.png",
+    "private-diary-mobile.png",
+    "preferences-desktop.png"
+  ],
+  "googleTagDownloads": [
+    {
+      "status": 200,
+      "url": "https://www.googletagmanager.com/gtag/js"
+    }
+  ],
+  "collectorResponses": [
+    {
+      "status": 204,
+      "event": "page_view",
+      "measurementID": "G-MWXSWP6ZGY",
+      "debug": true,
+      "trafficType": "internal",
+      "page": "https://getmacros.net/articles.html"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1874 @@
+[
+  {
+    "file": "404.html",
+    "scope": "private"
+  },
+  {
+    "file": "about.html",
+    "scope": "public"
+  },
+  {
+    "file": "accessibility.html",
+    "scope": "public"
+  },
+  {
+    "file": "added-sugar-percentage-from-grams.html",
+    "scope": "public"
+  },
+  {
+    "file": "arbys-breakfast-bread-format.html",
+    "scope": "public"
+  },
+  {
+    "file": "arbys-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "arbys-roast-beef-cheddar-french-dip.html",
+    "scope": "public"
+  },
+  {
+    "file": "arbys-sliders-count-whole-tray.html",
+    "scope": "public"
+  },
+  {
+    "file": "are-diet-drinks-bad-for-you.html",
+    "scope": "public"
+  },
+  {
+    "file": "articles.html",
+    "scope": "public"
+  },
+  {
+    "file": "as-packaged-vs-prepared-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "back-up-and-move-food-diary.html",
+    "scope": "public"
+  },
+  {
+    "file": "barcode-food-search-label-check.html",
+    "scope": "public"
+  },
+  {
+    "file": "barilla-australia-protein-plus-vs-spaghetti.html",
+    "scope": "public"
+  },
+  {
+    "file": "best-fast-food-restaurants-for-your-goals.html",
+    "scope": "public"
+  },
+  {
+    "file": "blog.html",
+    "scope": "public"
+  },
+  {
+    "file": "body-recomposition-explained.html",
+    "scope": "public"
+  },
+  {
+    "file": "breakfast-bacon-format-sodium-cross-chain.html",
+    "scope": "public"
+  },
+  {
+    "file": "breakfast-dataset-not-opening-hours.html",
+    "scope": "public"
+  },
+  {
+    "file": "breakfast-drinks-and-add-ons.html",
+    "scope": "public"
+  },
+  {
+    "file": "breakfast-food-vs-combo-menu.html",
+    "scope": "public"
+  },
+  {
+    "file": "breakfast-sandwich-half-not-half-protein.html",
+    "scope": "public"
+  },
+  {
+    "file": "breakfast-two-items-not-one-entry.html",
+    "scope": "public"
+  },
+  {
+    "file": "breakfast-yogurt-topping-layer.html",
+    "scope": "public"
+  },
+  {
+    "file": "budget-meal-builder.html",
+    "scope": "private"
+  },
+  {
+    "file": "burger-king-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "burger-king-us-breakfast-hash-browns-order.html",
+    "scope": "public"
+  },
+  {
+    "file": "burger-king-us-whopper-cheese-standard-serving.html",
+    "scope": "public"
+  },
+  {
+    "file": "burger-variants-not-nine-base-burgers.html",
+    "scope": "public"
+  },
+  {
+    "file": "burrito-wrap-cross-chain-no-size-standard.html",
+    "scope": "public"
+  },
+  {
+    "file": "bushs-black-beans-vs-chickpeas.html",
+    "scope": "public"
+  },
+  {
+    "file": "caffe-nero-latte-milk-size-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculate-macros-mixed-bowl.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculator-activity-choice-sensitivity.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculator-height-feet-inches-not-decimal.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculator-input-basis-checklist.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculator-positive-inputs-zero-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculator-pound-kilogram-entry.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculator-round-at-end.html",
+    "scope": "public"
+  },
+  {
+    "file": "calculators.html",
+    "scope": "private"
+  },
+  {
+    "file": "calorie-range-menu-reading.html",
+    "scope": "public"
+  },
+  {
+    "file": "calorie-tool-output-reverse-check.html",
+    "scope": "public"
+  },
+  {
+    "file": "calorie-units-kcal-kilojoules.html",
+    "scope": "public"
+  },
+  {
+    "file": "calories-in-multi-serving-packages.html",
+    "scope": "public"
+  },
+  {
+    "file": "calories-on-rest-days.html",
+    "scope": "public"
+  },
+  {
+    "file": "calories-vs-macros-what-matters-more.html",
+    "scope": "public"
+  },
+  {
+    "file": "can-you-build-muscle-in-a-calorie-deficit.html",
+    "scope": "public"
+  },
+  {
+    "file": "canada-pepperoni-pizza-three-slice-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "carbohydrate-label-portion-tool.html",
+    "scope": "private"
+  },
+  {
+    "file": "carbs.html",
+    "scope": "public"
+  },
+  {
+    "file": "cava-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "chick-fil-a-canada-grilled-sandwich-fries-sizes.html",
+    "scope": "public"
+  },
+  {
+    "file": "chick-fil-a-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "chick-fil-a-vs-popeyes-chicken.html",
+    "scope": "public"
+  },
+  {
+    "file": "chipotle-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "chipotle-rice-beans-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "chipotle-toppings-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "chipotle-vs-cava-chicken-bowls.html",
+    "scope": "public"
+  },
+  {
+    "file": "chocolate-protein-shakes-country-portions.html",
+    "scope": "public"
+  },
+  {
+    "file": "choose-fooddata-central-entry.html",
+    "scope": "public"
+  },
+  {
+    "file": "chopstix-uk-box-base-toppings-calories.html",
+    "scope": "public"
+  },
+  {
+    "file": "compare-complete-restaurant-orders.html",
+    "scope": "public"
+  },
+  {
+    "file": "compare-foods.html",
+    "scope": "private"
+  },
+  {
+    "file": "compare-menu-ingredients-worldwide.html",
+    "scope": "private"
+  },
+  {
+    "file": "contact.html",
+    "scope": "private"
+  },
+  {
+    "file": "corrections.html",
+    "scope": "public"
+  },
+  {
+    "file": "cross-chain-bean-burritos-serving-proof.html",
+    "scope": "public"
+  },
+  {
+    "file": "cross-chain-breakfast-ham-formats.html",
+    "scope": "public"
+  },
+  {
+    "file": "cross-chain-chicken-soup-no-sodium-assumption.html",
+    "scope": "public"
+  },
+  {
+    "file": "cross-chain-melt-sandwich-orders.html",
+    "scope": "public"
+  },
+  {
+    "file": "culvers-chicken-grilled-crispy-spicy.html",
+    "scope": "public"
+  },
+  {
+    "file": "culvers-dinner-name-side-footnote.html",
+    "scope": "public"
+  },
+  {
+    "file": "culvers-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "cutting-bulking-maintenance-explained.html",
+    "scope": "public"
+  },
+  {
+    "file": "daisy-cottage-cheese-2-4-percent-portions.html",
+    "scope": "public"
+  },
+  {
+    "file": "del-taco-bean-burrito-vs-veggie-burrito.html",
+    "scope": "public"
+  },
+  {
+    "file": "del-taco-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "del-taco-two-street-tacos-vs-burrito.html",
+    "scope": "public"
+  },
+  {
+    "file": "diet-patterns-evidence.html",
+    "scope": "public"
+  },
+  {
+    "file": "does-creatine-cause-hair-loss.html",
+    "scope": "public"
+  },
+  {
+    "file": "drained-weight-nutrition-label.html",
+    "scope": "public"
+  },
+  {
+    "file": "dunkin-healthy-breakfast-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "edible-portion-vs-purchased-weight.html",
+    "scope": "public"
+  },
+  {
+    "file": "editorial-policy.html",
+    "scope": "public"
+  },
+  {
+    "file": "el-pollo-loco-bowls-protein-bigger-build.html",
+    "scope": "public"
+  },
+  {
+    "file": "el-pollo-loco-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "el-pollo-loco-salad-dressing-boundary.html",
+    "scope": "public"
+  },
+  {
+    "file": "el-pollo-loco-tortilla-complete-chicken-meal.html",
+    "scope": "public"
+  },
+  {
+    "file": "equal-calories-different-macros-menu.html",
+    "scope": "public"
+  },
+  {
+    "file": "equal-tax-protein-value-ranking.html",
+    "scope": "public"
+  },
+  {
+    "file": "exact-fiber-coverage-denominator.html",
+    "scope": "public"
+  },
+  {
+    "file": "fage-plain-greek-yogurt-0-2-5-percent.html",
+    "scope": "public"
+  },
+  {
+    "file": "fast-food-breakfast-protein-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "fast-food-fiber-and-protein.html",
+    "scope": "public"
+  },
+  {
+    "file": "fast-food-meals-500-to-700-calories.html",
+    "scope": "public"
+  },
+  {
+    "file": "fast-food-nutrition-data-report.html",
+    "scope": "public"
+  },
+  {
+    "file": "fast-food-protein-and-sodium.html",
+    "scope": "public"
+  },
+  {
+    "file": "fast-food-under-1000mg-sodium.html",
+    "scope": "public"
+  },
+  {
+    "file": "fat-and-carb-two-energy-profiles.html",
+    "scope": "public"
+  },
+  {
+    "file": "fats.html",
+    "scope": "public"
+  },
+  {
+    "file": "fiber-count-menu-not-plant-score.html",
+    "scope": "public"
+  },
+  {
+    "file": "fiber-daily-value-portion-example.html",
+    "scope": "public"
+  },
+  {
+    "file": "fiber-per-portion-vs-density.html",
+    "scope": "public"
+  },
+  {
+    "file": "five-guys-uk-little-hamburger-cheeseburger.html",
+    "scope": "public"
+  },
+  {
+    "file": "food-diary.html",
+    "scope": "private"
+  },
+  {
+    "file": "food-library-sources.html",
+    "scope": "public"
+  },
+  {
+    "file": "food-library.html",
+    "scope": "private"
+  },
+  {
+    "file": "food-shelf.html",
+    "scope": "private"
+  },
+  {
+    "file": "grams-per-serving-vs-protein-percentage.html",
+    "scope": "public"
+  },
+  {
+    "file": "grams-vs-milliliters-nutrition-labels.html",
+    "scope": "public"
+  },
+  {
+    "file": "greggs-breakfast-baguette-calories-protein.html",
+    "scope": "public"
+  },
+  {
+    "file": "greggs-sausage-roll-vs-vegan-roll-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "grilled-and-blackened-chicken-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "grocery-food-coverage.html",
+    "scope": "public"
+  },
+  {
+    "file": "guzman-y-gomez-australia-chicken-bowl-vs-burrito.html",
+    "scope": "public"
+  },
+  {
+    "file": "half-serving-percent-daily-value.html",
+    "scope": "public"
+  },
+  {
+    "file": "harveys-canada-burger-fries-onion-rings-order.html",
+    "scope": "public"
+  },
+  {
+    "file": "harveys-original-angus-veggie-burger-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "healthy-fast-food.html",
+    "scope": "public"
+  },
+  {
+    "file": "hersheys-special-dark-bar-vs-kisses.html",
+    "scope": "public"
+  },
+  {
+    "file": "high-protein-fast-food-under-500-calories.html",
+    "scope": "public"
+  },
+  {
+    "file": "high-protein-foods-list.html",
+    "scope": "public"
+  },
+  {
+    "file": "house-foods-firm-vs-super-firm-tofu.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-many-calories-should-i-eat-a-day.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-much-fiber-per-day.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-much-protein-can-your-body-absorb.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-much-protein-per-day.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-much-sodium-per-day.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-build-a-balanced-meal-with-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-calculate-macros-by-hand.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-calculate-maintenance-calories.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-calculate-recipe-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-eat-out-without-wrecking-your-goal.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-hit-protein-goal-on-budget.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-log-food-portions.html",
+    "scope": "public"
+  },
+  {
+    "file": "how-to-read-a-nutrition-label.html",
+    "scope": "public"
+  },
+  {
+    "file": "in-n-out-double-vs-two-hamburgers.html",
+    "scope": "public"
+  },
+  {
+    "file": "in-n-out-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "in-n-out-three-published-hamburger-versions.html",
+    "scope": "public"
+  },
+  {
+    "file": "index.html",
+    "scope": "public"
+  },
+  {
+    "file": "international-menu-data-coverage-explained.html",
+    "scope": "public"
+  },
+  {
+    "file": "jersey-mikes-healthy-subs-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "kfc-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "kfc-uk-burger-twister-wrap-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "kirkland-canada-macadamia-vs-mixed-nuts.html",
+    "scope": "public"
+  },
+  {
+    "file": "leon-uk-breakfast-muffin-egg-pot-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "leon-uk-chicken-wrap-rice-box-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "macros-for-muscle-gain.html",
+    "scope": "public"
+  },
+  {
+    "file": "macros-for-weight-loss.html",
+    "scope": "public"
+  },
+  {
+    "file": "mary-browns-big-mary-fries-vs-taters.html",
+    "scope": "public"
+  },
+  {
+    "file": "mcdonalds-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "meal-calculation-two-serving-units.html",
+    "scope": "public"
+  },
+  {
+    "file": "meal-filters-intersection-not-extra-options.html",
+    "scope": "public"
+  },
+  {
+    "file": "menu-average-chain-weighting.html",
+    "scope": "public"
+  },
+  {
+    "file": "menu-pdf-filename-not-edition-date.html",
+    "scope": "public"
+  },
+  {
+    "file": "milligram-microgram-mineral-label.html",
+    "scope": "public"
+  },
+  {
+    "file": "missing-restaurant-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "nandos-uk-quarter-chicken-rice-chips-corn.html",
+    "scope": "public"
+  },
+  {
+    "file": "net-carbs-total-carbohydrate.html",
+    "scope": "public"
+  },
+  {
+    "file": "new-york-fries-canada-fries-vs-poutine.html",
+    "scope": "public"
+  },
+  {
+    "file": "noodles-and-company-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "noodles-mac-protein-not-simple-add-on.html",
+    "scope": "public"
+  },
+  {
+    "file": "noodles-regular-noodle-orders-not-addons.html",
+    "scope": "public"
+  },
+  {
+    "file": "noodles-two-chicken-salads.html",
+    "scope": "public"
+  },
+  {
+    "file": "nutrient-grams-not-food-weight.html",
+    "scope": "public"
+  },
+  {
+    "file": "nutrition-blank-vs-not-detected.html",
+    "scope": "public"
+  },
+  {
+    "file": "nutrition-data-mean-not-every-portion.html",
+    "scope": "public"
+  },
+  {
+    "file": "nutrition-label-comparison-tool.html",
+    "scope": "private"
+  },
+  {
+    "file": "nutrition-label-rounding.html",
+    "scope": "public"
+  },
+  {
+    "file": "nutrition-totals-not-ingredient-recipe.html",
+    "scope": "public"
+  },
+  {
+    "file": "offline.html",
+    "scope": "private"
+  },
+  {
+    "file": "original-vs-honey-nut-cheerios-labels.html",
+    "scope": "public"
+  },
+  {
+    "file": "panda-express-base-nutrition-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "panda-express-chicken-entree-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "panda-express-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "panda-express-mushroom-and-orange-chicken-portions.html",
+    "scope": "public"
+  },
+  {
+    "file": "panera-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "peanut-butter-powder-vs-creamy-spread.html",
+    "scope": "public"
+  },
+  {
+    "file": "per-ounce-vs-per-100g-food.html",
+    "scope": "public"
+  },
+  {
+    "file": "percent-daily-value-not-vertical-total.html",
+    "scope": "public"
+  },
+  {
+    "file": "percentage-points-vs-percent-food-labels.html",
+    "scope": "public"
+  },
+  {
+    "file": "pizzaexpress-classic-romana-margherita-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "plant-name-not-fiber-number.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-bean-balance.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-berry-bounce.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-build-a-plate.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-claim-check.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-description-detective.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-fiber-trail.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-food-crossword.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-food-factory.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-fruit-catch.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-garden-glide.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-garden-pipes.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-harvest-conveyor.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-ingredient-anagrams.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-ingredient-order.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-kitchen-connections.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-kitchen-rhythm.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-label-matchmaker.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-lunchbox-logic.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-macro-grid.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-market-budget.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-market-memory.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-mascot-maker.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-menu-mystery.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-menu-word-hunt.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-missing-number-kitchen.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-nutrition-term-match.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-odd-ingredient-out.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-orange-orbit.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-orchard-nonogram.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-order-recall.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-pantry-pack.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-pantry-peek.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-picnic-delivery.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-picnic-planner.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-plate-art.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-portion-balance.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-portion-fractions.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-protein-target-puzzle.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-range-finder.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-recipe-dominoes.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-recipe-path.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-recipe-remix.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-restaurant-order-builder.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-restaurant-route.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-rounding-room.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-sandwich-architect.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-sequence-chef.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-serving-size-detective.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-silhouette-supper.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-smoothie-studio.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-snack-slide.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-sodium-sort.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-source-sleuth.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-spot-the-swap.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-tabletop-tangram.html",
+    "scope": "public"
+  },
+  {
+    "file": "play-trade-off-table.html",
+    "scope": "public"
+  },
+  {
+    "file": "play.html",
+    "scope": "public"
+  },
+  {
+    "file": "popeyes-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "portion-ratio-vs-percent-change.html",
+    "scope": "public"
+  },
+  {
+    "file": "privacy.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-chicken-sandwich-size-cross-chain.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-cost-currency-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-cost-food-waste.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-cost-pack-size-minimum-spend.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-density-fast-food.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-label-blank-daily-value.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-per-package-not-scoop-count.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-powder-scoop-weight.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-serving-count-day-not-prescription.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-sort-vs-portion-mass.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-target-gap-not-automatic-extra.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-value-after-fixed-delivery-fee.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein-value-calculator.html",
+    "scope": "private"
+  },
+  {
+    "file": "protein-value-price-range-overlap.html",
+    "scope": "public"
+  },
+  {
+    "file": "protein.html",
+    "scope": "public"
+  },
+  {
+    "file": "published-vs-calculated-restaurant-rows.html",
+    "scope": "public"
+  },
+  {
+    "file": "qdoba-burrito-bowl-published-pair.html",
+    "scope": "public"
+  },
+  {
+    "file": "qdoba-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "qdoba-vegan-bowl-fiber-tradeoff.html",
+    "scope": "public"
+  },
+  {
+    "file": "quaker-old-fashioned-vs-quick-oats.html",
+    "scope": "public"
+  },
+  {
+    "file": "raising-canes-build-order-not-combo-name.html",
+    "scope": "public"
+  },
+  {
+    "file": "raising-canes-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "raw-vs-cooked-food-weight.html",
+    "scope": "public"
+  },
+  {
+    "file": "read-and-watch.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-added-water-not-new-nutrients.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-combined-batches-not-average-serving.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-discrete-pieces-count-or-weight.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-evaporation-weight-density.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-fixed-seasoning-scale.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-freezing-portion-count.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-left-in-pan-residual.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-macro-scaler.html",
+    "scope": "private"
+  },
+  {
+    "file": "recipe-one-ingredient-substitution.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-quarter-batch-not-quarter-ingredient.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-recalculate-new-product-label.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-repeated-ingredient-two-label-bases.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-sauce-made-vs-sauce-used.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-sauce-on-side-two-totals.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-target-batch-portions-integer.html",
+    "scope": "public"
+  },
+  {
+    "file": "recipe-uniform-vs-component-serving.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-bowl-nutrition-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-compare-tradeoff-not-single-score.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-dominated-choice-still-context.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-meal-finder.html",
+    "scope": "private"
+  },
+  {
+    "file": "restaurant-meal-guides.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-menu-serving-weight.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-protein-cost-receipt-prices.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-protein-value-no-price-data.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-search-result-count-scope.html",
+    "scope": "public"
+  },
+  {
+    "file": "restaurant-value-your-nutrient-not-protein.html",
+    "scope": "public"
+  },
+  {
+    "file": "salad-burger-calories-no-category-rule.html",
+    "scope": "public"
+  },
+  {
+    "file": "same-restaurant-name-different-market-data.html",
+    "scope": "public"
+  },
+  {
+    "file": "saved-meal-source-version-check.html",
+    "scope": "public"
+  },
+  {
+    "file": "search.html",
+    "scope": "private"
+  },
+  {
+    "file": "serving-size-vs-portion-size.html",
+    "scope": "public"
+  },
+  {
+    "file": "silk-unsweet-soy-vs-almondmilk.html",
+    "scope": "public"
+  },
+  {
+    "file": "sodium-label-comparison-tool.html",
+    "scope": "private"
+  },
+  {
+    "file": "sodium-milligrams-to-grams.html",
+    "scope": "public"
+  },
+  {
+    "file": "sonic-hot-dog-sodium-toppings.html",
+    "scope": "public"
+  },
+  {
+    "file": "sonic-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "sonic-small-burgers-not-same-order.html",
+    "scope": "public"
+  },
+  {
+    "file": "sonic-ultimate-breakfast-not-extra-protein-rule.html",
+    "scope": "public"
+  },
+  {
+    "file": "sources.html",
+    "scope": "public"
+  },
+  {
+    "file": "starbucks-healthy-food-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "starbucks-uk-pumpkin-spice-latte-hot-iced.html",
+    "scope": "public"
+  },
+  {
+    "file": "starkist-light-vs-albacore-tuna-pouches.html",
+    "scope": "public"
+  },
+  {
+    "file": "subway-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "subway-mexico-chicken-sandwich-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "subway-turkey-breast-canada-vs-mexico.html",
+    "scope": "public"
+  },
+  {
+    "file": "subway-uk-six-inch-chicken-sandwich-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "sugar-lines-do-not-add.html",
+    "scope": "public"
+  },
+  {
+    "file": "sweat-rate-calculator.html",
+    "scope": "private"
+  },
+  {
+    "file": "sweetgreen-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "sweetgreen-vs-panera-chicken-salads.html",
+    "scope": "public"
+  },
+  {
+    "file": "taco-bell-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "taco-johns-bowl-base-tradeoff.html",
+    "scope": "public"
+  },
+  {
+    "file": "taco-johns-breakfast-taco-vs-burrito.html",
+    "scope": "public"
+  },
+  {
+    "file": "taco-johns-nutrition-guide.html",
+    "scope": "public"
+  },
+  {
+    "file": "taco-johns-small-fiber-bound.html",
+    "scope": "public"
+  },
+  {
+    "file": "tare-bowl-before-weighing-food.html",
+    "scope": "public"
+  },
+  {
+    "file": "terms.html",
+    "scope": "public"
+  },
+  {
+    "file": "three-count-tacos-not-three-equal-meals.html",
+    "scope": "public"
+  },
+  {
+    "file": "tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+    "scope": "public"
+  },
+  {
+    "file": "tim-hortons-canada-protein-latte-vs-latte.html",
+    "scope": "public"
+  },
+  {
+    "file": "tortilla-uk-burrito-bowl-rice-portions.html",
+    "scope": "public"
+  },
+  {
+    "file": "two-fiber-sources-one-bowl.html",
+    "scope": "public"
+  },
+  {
+    "file": "two-for-one-protein-promotion.html",
+    "scope": "public"
+  },
+  {
+    "file": "two-meal-total-not-day-recommendation.html",
+    "scope": "public"
+  },
+  {
+    "file": "two-person-restaurant-budget-constraints.html",
+    "scope": "public"
+  },
+  {
+    "file": "unequal-recipe-portions.html",
+    "scope": "public"
+  },
+  {
+    "file": "use-calorie-target-meal-finder.html",
+    "scope": "public"
+  },
+  {
+    "file": "vegetarian-fast-food-protein-comparison.html",
+    "scope": "public"
+  },
+  {
+    "file": "vegetarian-label-not-allergen-safety.html",
+    "scope": "public"
+  },
+  {
+    "file": "wagamama-uk-ramen-calories-protein-salt.html",
+    "scope": "public"
+  },
+  {
+    "file": "wasabi-sushi-set-dressing-nutrition.html",
+    "scope": "public"
+  },
+  {
+    "file": "weigh-food-by-container-difference.html",
+    "scope": "public"
+  },
+  {
+    "file": "weight-goal-timeline-calculator.html",
+    "scope": "private"
+  },
+  {
+    "file": "wendys-healthy-meals-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "wendys-uk-breakfast-muffin-wrap-calories-protein.html",
+    "scope": "public"
+  },
+  {
+    "file": "what-are-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "what-is-a-calorie-deficit.html",
+    "scope": "public"
+  },
+  {
+    "file": "what-to-eat-after-a-workout.html",
+    "scope": "public"
+  },
+  {
+    "file": "what-to-eat-before-a-workout.html",
+    "scope": "public"
+  },
+  {
+    "file": "whats-new.html",
+    "scope": "public"
+  },
+  {
+    "file": "when-to-recalculate-calories-and-macros.html",
+    "scope": "public"
+  },
+  {
+    "file": "why-did-i-gain-weight-overnight.html",
+    "scope": "public"
+  },
+  {
+    "file": "world-restaurant-menus.html",
+    "scope": "public"
+  },
+  {
+    "file": "au/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "au/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "au/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "au/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "au/en/guides/gyg-australia-mini-bowl-and-mini-burrito/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "au/en/restaurants/domino-s/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "au/en/restaurants/guzman-y-gomez/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "au/en/restaurants/hungry-jack-s/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "ca/en/menu-sources/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/collections/breakfast/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/guides/burger-king-canada-us-whopper-local-ingredients/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/guides/burger-king-canada-whopper-cheese-standard-serving/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/guides/kfc-canada-original-recipe-pieces-and-two-piece-log/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/a-w-canada/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/booster-juice/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/burger-king/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/chick-fil-a/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/chipotle/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/domino-s/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/harvey-s/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/kfc/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/mary-brown-s/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/new-york-fries/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/pizza-nova/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/pizza-pizza/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/subway/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/tim-hortons/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/restaurants/triple-os/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ca/en/tools/complete-order/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "ca/en/tools/drink-comparison/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "fr/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "fr/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "fr/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "fr/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "fr/en/guides/quick-france-coca-cola-volumes-and-mega-giant/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "fr/en/restaurants/burger-king/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "fr/en/restaurants/quick/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "gb/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/guides/kfc-uk-fillet-burger-and-ranch-rice-bowl/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/ask-italian/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/caffe-nero/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/chick-fil-a/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/chipotle/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/chopstix/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/five-guys/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/greggs/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/kfc/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/leon/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/nandos/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/pepes/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/pizzaexpress/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/starbucks/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/subway/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/tim-hortons/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/tortilla/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/wagamama/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/wasabi/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/wendys/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "gb/en/restaurants/zizzi/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ie/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ie/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "ie/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ie/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ie/en/guides/kfc-ireland-fillet-roll-and-fillet-burger/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ie/en/restaurants/kfc/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ie/en/restaurants/subway/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "ie/en/restaurants/zizzi/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "in/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "in/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "in/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "in/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "in/en/guides/mcdonalds-north-east-india-veg-and-egg-mcmuffin/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "in/en/restaurants/domino-s/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "in/en/restaurants/mcdonald-s-north-east-india/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "jp/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "jp/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "jp/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "jp/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "jp/en/guides/mos-japan-mos-burger-and-teriyaki-chicken/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "jp/en/restaurants/kfc/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "jp/en/restaurants/mcdonald-s-japan/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "jp/en/restaurants/mos-burger/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "mx/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "mx/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "mx/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "mx/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "mx/en/guides/subway-mexico-gran-pastor-and-gringo-pastor/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "mx/en/restaurants/starbucks/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "mx/en/restaurants/subway/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "nz/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/guides/subway-nz-regular-and-large-teriyaki-salad/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/guides/subway-nz-roast-beef-sub-and-wrap-recipes/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/restaurants/burger-king/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/restaurants/domino-s/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "nz/en/restaurants/subway/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "sg/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "sg/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "sg/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "sg/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "sg/en/guides/burger-king-singapore-whopper-and-cheese/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "sg/en/restaurants/burger-king/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "sg/en/restaurants/chick-fil-a/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "za/en/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "za/en/find-a-meal/index.html",
+    "scope": "private"
+  },
+  {
+    "file": "za/en/restaurants/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "za/en/collections/protein-meals/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "za/en/guides/debonairs-south-africa-bbq-chicken-source-sizes/index.html",
+    "scope": "public"
+  },
+  {
+    "file": "za/en/restaurants/debonairs-pizza/index.html",
+    "scope": "public"
+  }
+]

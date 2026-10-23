@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'tools'))
 
 def integrate():
-    for script in ['restore_asset_sources.py','build_global_product.py','build_master_release.py','build_master_completion.py','build_master_diary.py','build_master_interface.py','build_clarity_release.py','build_global_coverage_release.py','build_flagship_release.py','build_ultimate_release.py','search_recovery/build.py','refresh_release_search.py','stamp_assets.py']:
+    for script in ['restore_asset_sources.py','build_global_product.py','build_master_release.py','build_master_completion.py','build_master_diary.py','build_master_interface.py','build_clarity_release.py','build_global_coverage_release.py','build_flagship_release.py','build_ultimate_release.py','search_recovery/build.py','analytics_measurement/build.py','refresh_release_search.py','stamp_assets.py']:
         subprocess.run([sys.executable, str(ROOT/'tools'/script)], cwd=ROOT, check=True)
     manifest = json.loads((ROOT/'site.webmanifest').read_text(encoding='utf-8'))
     assert manifest['scope'] == '/' and manifest['id'] == '/'
