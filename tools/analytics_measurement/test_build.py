@@ -14,6 +14,7 @@ class AnalyticsBuild(unittest.TestCase):
             self.assertEqual(text.count('data-source-path="js/analytics.js"')+text.count('src="/js/analytics.js"'),1,name)
             self.assertEqual(text.count('id="analytics-preferences"'),1,name)
             self.assertEqual(text.count('data-analytics-footer'),1,name)
+            self.assertEqual(text.count('data-analytics-diagnostic-label'),1,name)
             self.assertIn('data-analytics-page="'+scope(text,name)+'"',text,name)
             self.assertNotIn('src="https://www.googletagmanager.com',text,name)
         for name in ['food-diary.html','food-library.html','food-shelf.html','search.html','calculators.html','protein-value-calculator.html','compare-foods.html','budget-meal-builder.html','contact.html','offline.html','ca/en/find-meals/index.html']:
@@ -36,5 +37,12 @@ class AnalyticsBuild(unittest.TestCase):
         for name in ['tools/build_site.sh','tools/run_food_build.py','tools/product_release/test-generators.py']:
             text=(ROOT/name).read_text(encoding='utf-8')
             self.assertEqual(text.count('analytics_measurement/build'),1,name)
+
+    def test_url_parameters_are_stripped_not_blanket_excluded(self):
+        source=(ROOT/'js/analytics.js').read_text(encoding='utf-8')
+        self.assertNotIn('const cleanURL',source)
+        self.assertIn("'https://getmacros.net' + url.pathname",source)
+        self.assertNotIn('searchParams',source)
+        self.assertIn("gm_traffic_class: settings.diagnostic ? 'diagnostic' : 'standard'",source)
 
 if __name__=='__main__':unittest.main(verbosity=2)

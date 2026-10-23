@@ -11,15 +11,26 @@ account, advertising SDK or Measurement Protocol secret was created.
   prominence; preferences remain available in every footer.
 - Consent is stored in `gm-analytics-consent-v1`. A browser exclusion option lets
   the owner exclude their own visits. No IP-based filter was invented or activated.
-- Only clean production public-content routes are eligible. The route manifest
-  distinguishes them from the 32 private/tool routes. Queries, fragments, previews,
-  automated browsers and Global Privacy Control browsers are unmeasured.
+- Production public-content routes are eligible even with market/campaign
+  parameters or anchors. Page addresses sent to Google are always the clean
+  canonical pathname; parameter/fragment values are never forwarded. The route
+  manifest distinguishes these pages from 32 private/tool routes. Previews,
+  automated browsers and Global Privacy Control browsers remain unmeasured.
 - Diary, saved foods, finders, calculators, food search, comparisons, order tools
   and contact forms do not load Google Analytics, even with saved consent.
-- The only event explicitly sent by GetMacros is `page_view`. Its location is the
-  published canonical pathname, title is static social metadata, and referrer is
-  reduced to the referring origin. No product-event bus, form inputs, local food
-  storage, notes, user identifiers or body measurements are read or forwarded.
+- GetMacros sends `page_view`, trusted `navigation_click` and `outbound_click`.
+  Page location is the published canonical pathname, title comes from static
+  social metadata, and referrer is reduced to the referring origin. Clicks contain
+  only fixed destination categories and header/footer/content placement. No link
+  text, clicked URL, selected food, product-event bus, form input, local food
+  storage, notes, user identifier or body measurement is forwarded.
+- Preferences offer a deliberate Diagnostic mode. It uses separate `gm_qa`
+  prefixed cookies, `traffic_type=internal`, `debug_mode=true`,
+  `gm_traffic_class=diagnostic` and a `[Diagnostic]` report-title prefix. Standard
+  visits use `gm_traffic_class=standard`. Diagnostic events still exist in the
+  property and must be excluded when calculating audience totals; All Users must
+  never be relabeled as independently verified humans. Browser exclusion remains
+  available for owners who do not need to send diagnostic events at all.
 - `send_page_view:false` prevents a duplicate config pageview. Google Signals and
   ad personalization are disabled; all advertising consent remains denied.
   Analytics cookies are configured for 90 days. This is not a retention setting
@@ -35,17 +46,19 @@ humans or all site sessions. A cookie/session is not proof that someone is human
 Cloudflare visit/request counts and Search Console clicks remain different metrics.
 Historical unmeasured sessions cannot be recovered by installing the tag.
 
-## Account work not verified
+## Account configuration and verification
 
-The authenticated browser connection was unavailable on October 23. Realtime /
-DebugView receipt, Enhanced Measurement stream settings, retention, account data
-filters and Journey's OAuth connection have not been changed or confirmed.
-In particular, `send_page_view:false` alone does not disable history-based
-Enhanced Measurement pageviews in the Google stream settings. The site has no
-SPA route tracking or explicit automatic form/search event forwarding; sensitive
-tools and URL states are excluded. Review the stream settings in GA4 Admin before
-expanding measurement. No claim is made that account-side automatic events were
-disabled by repository code.
+After authenticated browser access returned, Enhanced Measurement extras were
+turned off in GA4 and the saved state was verified. This prevents automatic
+search/form/history/outbound events from bypassing the site's payload whitelist;
+the implementation continues to send deliberate pageviews and safe clicks.
+Event-scoped Traffic class and Click destination dimensions were created and
+verified. The existing Internal Traffic exclusion filter remains in Testing
+mode; no permanent account-side data exclusion was activated. Retention and
+Journey's OAuth connection were not changed. Actual audience reports and browser
+verification screenshots belong in the private evidence directory, not this
+public source repository. A collector HTTP response alone is not proof of
+Realtime receipt or of non-test visitors.
 
 No traffic eligibility, Journey approval or ad revenue is established here.
 No production ad script or publisher identifier was added.
@@ -61,7 +74,11 @@ No production ad script or publisher identifier was added.
 
 Runtime privacy tests: `node --test tools/analytics_measurement/runtime.test.cjs`.
 Generated route checks: `python tools/analytics_measurement/test_build.py`.
-Both run in hosted Site quality CI. Browser verification uses a fresh unauthenticated
-test context; no Google account cookies or profiles are accessed. Test traffic is
-synthetic and is not evidence of an audience. Deployment and network results are
-recorded separately after they are observed.
+Both run in hosted Site quality CI. The browser script defaults to offline
+collection; `--live-collector` is an explicit, labeled diagnostic smoke test.
+It no longer rewrites the analytics source or invents tracking parameters outside
+the application's actual Diagnostic mode. Production and GA4 account verification
+use ordinary browser interactions, and all resulting diagnostic visits are
+reported separately from audience traffic. Never request a new immutable asset
+before Pages reports successful deployment; then probe an uncached query first
+to avoid caching a premature 404 at Cloudflare.

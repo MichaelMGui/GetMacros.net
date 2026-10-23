@@ -17,7 +17,11 @@ async function main(){
  assert.ok(deployment&&deployment.status==='completed'&&deployment.conclusion==='success','Wait for Pages deployment before requesting new asset URLs.');
  const manifest=JSON.parse(fs.readFileSync(path.join(root,'assets/generated/manifest.json')));
  for(const source of ['js/analytics.js','css/analytics-consent.css']){
-  const asset=manifest[source],response=await get('https://getmacros.net'+asset.url);assert.equal(response.status,200,asset.url);
+  const asset=manifest[source];
+  // Probe a fresh query key first in case the origin is still propagating.
+  const probe=await get('https://getmacros.net'+asset.url+'?publication='+revision+'&checked='+Date.now());
+  assert.equal(probe.status,200,'Origin is not ready; do not negatively cache '+asset.url);
+  const response=await get('https://getmacros.net'+asset.url);assert.equal(response.status,200,asset.url);
   const text=normalize(await response.text()),expected=normalize(fs.readFileSync(path.join(root,source)));
   assert.equal(text,expected,source+' live differs');
   report.assets.push({source,url:asset.url,status:response.status,sha256:crypto.createHash('sha256').update(text).digest('hex')});
@@ -28,6 +32,7 @@ async function main(){
   assert.ok(text.includes(manifest['js/analytics.js'].url),route+' stale script');
   assert.equal((text.match(/id="analytics-preferences"/g)||[]).length,1,route+' dialog');
   assert.ok(text.includes('data-analytics-footer'),route+' footer');
+  assert.equal((text.match(/data-analytics-diagnostic-label/g)||[]).length,1,route+' diagnostics');
   assert.ok(!text.includes('src="https://www.googletagmanager.com'),route+' must not eagerly load Google');
   if(route==='/privacy.html'){assert.ok(text.includes('after you choose Allow analytics'));assert.ok(!text.includes('does not load Google Analytics 4'));}
   if(route==='/food-diary.html')assert.ok(text.includes('content="noindex,follow"'));

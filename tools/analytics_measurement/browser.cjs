@@ -4,8 +4,9 @@ const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'../..'),out=path.join(root,'docs/analytics-2026-10-23');
 const ID='G-MWXSWP6ZGY',key='gm-analytics-consent-v1';
 const analyticsAsset=JSON.parse(fs.readFileSync(path.join(root,'assets/generated/manifest.json'),'utf8'))['js/analytics.js'].url;
+const liveCollector=process.argv.includes('--live-collector');
 const mime={'.html':'text/html','.css':'text/css','.js':'text/javascript','.json':'application/json','.svg':'image/svg+xml','.woff2':'font/woff2','.png':'image/png','.webp':'image/webp'};
-const results={synthetic:true,checks:[],screenshots:[],googleTagDownloads:[],collectorResponses:[],errors:[]};
+const results={synthetic:true,liveCollectorRequested:liveCollector,checks:[],screenshots:[],googleTagDownloads:[],collectorResponses:[],errors:[]};
 let activeBrowser;
 async function main(){
  const browser=await chromium.launch({channel:'msedge',headless:true,args:['--no-proxy-server']});
@@ -21,16 +22,13 @@ async function main(){
    const file=path.resolve(root,'.'+name);
    if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile())return route.fulfill({status:404,body:'Not found'});
    let body=fs.readFileSync(file);
-   if(allowGoogle && (u.pathname==='/js/analytics.js'||u.pathname===analyticsAsset)){
-    // One explicitly labeled debug/internal smoke event, never an audience claim.
-    body=Buffer.from(body.toString().replace('send_page_view: false,','send_page_view: false, debug_mode: true, traffic_type: "internal",').replace("{ send_to: id }","{ send_to: id, debug_mode: true, traffic_type: 'internal' }"));
-   }
    return route.fulfill({status:200,contentType:mime[path.extname(file)]||'application/octet-stream',body});
   }
   if(allowGoogle && u.hostname==='www.googletagmanager.com'){
+   if(!liveCollector)return route.fulfill({contentType:'text/javascript',body:'/* Offline consent/UI test: no Google collection. */'});
    const response=await route.fetch();results.googleTagDownloads.push({status:response.status(),url:u.origin+u.pathname});return route.fulfill({response});
   }
-  if(allowGoogle && /^(www|region1)\.google-analytics\.com$/.test(u.hostname)&&u.pathname==='/g/collect'){
+  if(liveCollector && allowGoogle && /^(www|region1)\.google-analytics\.com$/.test(u.hostname)&&u.pathname==='/g/collect'){
    const request=route.request(),query=new URLSearchParams(u.search),post=request.postData()||'';
    assert.equal(query.get('tid'),ID);
    assert.ok(![u.href,post].join(' ').includes('PRIVATE_CANARY'));
@@ -72,7 +70,9 @@ async function main(){
  await page.keyboard.press('Escape');assert.equal(await page.locator('#analytics-preferences').isVisible(),false);assert.equal(await page.locator('[data-analytics-footer]').evaluate(e=>e===document.activeElement),true);
  results.checks.push('Decline persists; preferences support keyboard dismissal and focus return; notice fits four widths and four themes.');
  // Mocked loader: consent exercises actual DOM without sending traffic.
- await page.locator('[data-analytics-footer]').click();await page.locator('#analytics-preferences [data-analytics-choice=granted]').click();
+ await page.locator('[data-analytics-footer]').click();
+ await page.locator('[data-analytics-diagnostic]').check();
+ await page.locator('#analytics-preferences [data-analytics-choice=granted]').click();
  await page.waitForTimeout(200);
  const commands=await page.evaluate(()=>window.dataLayer.map(a=>Array.from(a)));
  assert.equal(commands.filter(c=>c[0]==='event'&&c[1]==='page_view').length,1);
@@ -80,24 +80,28 @@ async function main(){
  assert.equal(await page.evaluate(()=>!!window.dataLayer),false);
  await page.screenshot({path:path.join(out,'private-diary-mobile.png')});results.screenshots.push('private-diary-mobile.png');
  await page.goto('https://getmacros.net/?q=PRIVATE_CANARY#PRIVATE_CANARY',{waitUntil:'networkidle'});
- assert.equal(await page.evaluate(()=>!!window.dataLayer),false);
- results.checks.push('Saved consent does not initialize GA4 on diary or query/fragment URLs.');
- // Fresh context has no diary data. One real Google tag/collector smoke test.
+ const queryCommands=await page.evaluate(()=>window.dataLayer.map(a=>Array.from(a)));
+ assert.ok(queryCommands.length);assert.ok(!JSON.stringify(queryCommands).includes('PRIVATE_CANARY'));
+ results.checks.push('Private diary remains unmeasured; query/fragment visits are retained with clean canonical metadata.');
+ // No live collection unless explicitly requested; source code is never rewritten.
  allowGoogle=true;
  await page.goto('https://getmacros.net/articles.html',{waitUntil:'networkidle'});
- await page.waitForFunction(()=>document.cookie.includes('_ga'));
- await page.waitForTimeout(1800);
- assert.ok(results.googleTagDownloads.some(r=>r.status===200));
- assert.ok(results.collectorResponses.some(r=>r.status===204));
- assert.equal(results.collectorResponses.filter(r=>r.event==='page_view').length,1);
+ if(liveCollector){
+  await page.waitForFunction(()=>document.cookie.includes('gm_qa_ga'));
+  await page.waitForTimeout(1800);
+  assert.ok(results.googleTagDownloads.some(r=>r.status===200));
+  assert.ok(results.collectorResponses.some(r=>r.status===204));
+  assert.equal(results.collectorResponses.filter(r=>r.event==='page_view').length,1);
+  assert.ok(results.collectorResponses.every(r=>r.trafficType==='internal'));
+ }
  await page.setViewportSize({width:1440,height:900});
  await page.locator('[data-analytics-footer]').click();
  await page.locator('#analytics-preferences').evaluate(e=>Promise.all(e.getAnimations().map(a=>a.finished)));
  await page.screenshot({path:path.join(out,'preferences-desktop.png')});results.screenshots.push('preferences-desktop.png');
  await page.locator('#analytics-preferences [data-analytics-choice=denied]').click();
  await page.waitForLoadState('networkidle');
- assert.equal(await page.evaluate(()=>document.cookie.split(';').some(c=>/^\s*_ga(?:_|=)/.test(c))),false);
- results.checks.push('Google tag returned 200; collector accepted exactly one debug/internal page_view with 204. Revocation clears GA cookies.');
+ assert.equal(await page.evaluate(()=>document.cookie.split(';').some(c=>/^\s*(?:_ga|gm_qa_ga)(?:_|=)/.test(c))),false);
+ results.checks.push(liveCollector?'One explicitly labeled diagnostic collector smoke test passed; revocation clears QA cookies.':'Offline browser privacy checks passed; no live Google collector traffic was allowed.');
  assert.deepEqual(results.errors,[]);
  await context.close();await browser.close();
 }

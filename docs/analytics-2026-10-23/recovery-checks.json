@@ -1,0 +1,30 @@
+[
+  {
+    "command": "node --test tools/analytics_measurement/runtime.test.cjs",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/analytics_measurement/test_build.py",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/validate_site.py",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/test_publication.py",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/test_asset_stamps.py",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/test_search_visibility.py",
+    "exitCode": 0
+  },
+  {
+    "command": "node --test tools/ultimate_release/journey_runtime_test.cjs",
+    "exitCode": 0
+  }
+]
