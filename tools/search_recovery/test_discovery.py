@@ -8,11 +8,20 @@ import unittest
 import xml.etree.ElementTree as ET
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from search_recovery.discovery import ROOT, RELATED, HOME_STORIES, story, markets, html_path
+from search_recovery.discovery import ROOT, RELATED, HOME_STORIES, story, markets, html_path, append_before_main_end, section
 from normalize_calculator_layouts import Document
 
 
 class DiscoveryTests(unittest.TestCase):
+    def test_owned_sections_replace_even_without_surrounding_comments(self):
+        key='directory-order-guides'
+        body=section(key,'Compare orders',[('/healthy-fast-food.html','Compare food')])
+        without_comments=re.sub(r'<!--.*?-->','',body,flags=re.S)
+        page='<html><body><main><span id="'+key+'"></span>'+without_comments+without_comments+'</main></body></html>'
+        repaired=append_before_main_end(page,key,body)
+        self.assertEqual(repaired.count('id="'+key+'"'),1)
+        self.assertEqual(append_before_main_end(repaired,key,body),repaired)
+
     def test_every_release_article_has_a_relevant_contextual_parent(self):
         published={r['route'] for r in json.loads((ROOT/'docs/ultimate-release-2026-10-19/publication-manifest.json').read_text(encoding='utf-8'))}
         connected={story(slug)[0] for slugs in RELATED.values() for slug in slugs}

@@ -1,0 +1,14 @@
+{
+  "scope": "source-only follow-up; public HTML, assets, data and sitemap unchanged",
+  "initialCiFailure": "Duplicate directory-order-guides ID after full rebuild preserved an old heading as an empty anchor span.",
+  "reproduced": true,
+  "fix": "Remove only owned empty anchor placeholders before restoring the same heading anchor.",
+  "checks": [
+    "Full-build failure reproduced in isolated exact-source archive",
+    "Fixed publication checks across 468 pages passed",
+    "6 discovery regression tests passed",
+    "Route/canonical/sitemap validation passed",
+    "Internal link and anchor validation passed"
+  ],
+  "broaderHostedCi": "Pending new commit"
+}

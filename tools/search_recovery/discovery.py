@@ -91,6 +91,16 @@ def section(key, heading, links, intro=''):
 
 def append_before_main_end(text, key, body):
     text = strip(text, key)
+    # Earlier presentation passes may retain a section while discarding or
+    # relocating its surrounding comments. Identify our own section by semantic
+    # ownership as well, so a full publication rebuild cannot duplicate its ID.
+    owned = [n for n in Document(text).nodes if
+        (n['tag']=='section' and n['attrs'].get('aria-labelledby')==key) or
+        # The earlier directory rebuild preserves removed headings as empty
+        # anchor spans. Our new heading restores this exact anchor itself.
+        (n['tag']=='span' and n['attrs'].get('id')==key and not text[n['inner']:n['close']].strip())]
+    for n in sorted(owned,key=lambda n:n['start'],reverse=True):
+        text = replace(text,n,'')
     main = next(n for n in Document(text).nodes if n['tag']=='main')
     return text[:main['close']]+body+text[main['close']:]
 
