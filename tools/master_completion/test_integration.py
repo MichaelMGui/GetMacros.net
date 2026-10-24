@@ -87,6 +87,13 @@ class Markup(HTMLParser):
         return {link['attrs'].get('href') for link in Markup.nodes(node, 'a')}
 
 
+def legacy_directory_cards(main, brand):
+    """A directory entry names the brand in its heading, unlike a related story."""
+    return [link for link in Markup.nodes(main, 'a') if any(
+        ' '.join(Markup.text(heading).split()) == brand
+        for heading in Markup.nodes(link, 'h2'))]
+
+
 def actual_finder_counts():
     """Execute the trusted data assets used by the real finder, not the registry."""
     script = r"""
@@ -286,6 +293,14 @@ class CompletedRestaurantIntegration(unittest.TestCase):
         self.assertRegex(ca,r'\b27 tracked servings\b')
         self.assertRegex(ca,r'(?:Local nutrition records are not yet available here|Usable nutrition records are not published here yet)')
 
+    def test_legacy_directory_entries_exclude_related_editorial_links(self):
+        entry='<a href="/burger-king-healthy-meals-macros.html"><h2>Burger King</h2><small>2 recorded orders</small></a>'
+        story='<a href="/burger-king-us-breakfast-hash-browns-order.html">Burger King U.S. breakfast: count the hash-brown size</a>'
+        for copies in (0, 1, 2):
+            with self.subTest(copies=copies):
+                document=Markup('<main>'+entry*copies+story+'</main>')
+                self.assertEqual(len(legacy_directory_cards(document.root,'Burger King')),copies)
+
     def _assert_directory(self,country,info):
         html = route_source(info["restaurants"])
         document=Markup(html);main=Markup.nodes(document.root,'main')[0]
@@ -296,7 +311,10 @@ class CompletedRestaurantIntegration(unittest.TestCase):
             cards=[card for card in articles if any(row['restaurantBrand'] in Markup.text(heading) for heading in Markup.nodes(card,'h2'))]
             legacy_card = False
             if not cards and not articles:
-                cards=[link for link in Markup.nodes(main,'a') if re.match(r'^\s*'+re.escape(row['restaurantBrand'])+r'(?:\s|→|$)',Markup.text(link))]
+                # Editorial links can also begin with a restaurant name. A
+                # legacy directory entry has a brand heading, not merely a
+                # matching prefix somewhere among the page's other links.
+                cards=legacy_directory_cards(main,row['restaurantBrand'])
                 legacy_card = True
             self.assertEqual(len(cards),1,(country,row['restaurantBrand']))
             card=cards[0];text=' '.join(Markup.text(card).split());links={urljoin(info['restaurants'],href) for href in Markup.links(card) if href}
