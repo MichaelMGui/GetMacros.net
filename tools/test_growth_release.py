@@ -6,6 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
 from build_meal_finder import parse_meals
 from meal_provenance import read
+from search_recovery.article_tools import CONTEXT_LINKS,DATE as ARTICLE_UTILITY_DATE
 payload=json.loads((ROOT/'tools/growth_release/editorial-improvements.json').read_text(encoding='utf-8'))
 provenance=read(ROOT/'js/meal-provenance.js')
 meals={m['chain']+'||'+m['name']:{**m,**provenance.get(m['chain']+'||'+m['name'],{})} for m in parse_meals((ROOT/'js/meal-data.js').read_text(encoding='utf-8'))}
@@ -24,9 +25,9 @@ for row in payload['improvements']:
  assert parse_qs(urlparse(row['comparatorHref']).query)['compare']==row['comparedKeys']
  assert all(key in meals for key in row['comparedKeys'])
  assert 'complete-order-builder.html' not in row['sectionHTML']
- # This retained guide received substantial new catalog/context content in
- # the October 21 release; unchanged growth articles retain October 9.
- expected_date='2026-10-21' if row['route']=='healthy-fast-food.html' else '2026-10-09'
+ # Sitemap dates track actual page edits, independently of nutrient review
+ # dates. Three guides received contextual tool links on October 24.
+ expected_date=ARTICLE_UTILITY_DATE if row['route'] in CONTEXT_LINKS else '2026-10-21' if row['route']=='healthy-fast-food.html' else '2026-10-09'
  assert dates['https://getmacros.net/'+row['route']]==expected_date,row['route']
  if row.get('removeLegacyComparisonSelector'):assert 'chain-picks-section' not in text,row['route']
  if row.get('directoryCorrection'):
