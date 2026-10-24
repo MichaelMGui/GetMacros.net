@@ -38,7 +38,8 @@ Research and limits:
   types, not keyword-volume, ranking-position or traffic estimates.
 - Barilla's [Australian Protein+](https://www.barilla.com/en-au/products/pasta/protein-plus/spaghetti-protein-plus)
   and [classic spaghetti](https://www.barilla.com/en-au/products/pasta/classic-blue-box/spaghetti)
-  panels were re-read October 24 and agree with the retained table.
+  panels were re-read October 24 and agree with the retained table. This recheck
+  is noted separately; the original October 19 source-review date remains.
 - FAGE's official pages returned retrieval errors during this check. Its retained
   October 19 source review is preserved and is not relabeled as checked today.
   Greggs and Tim Hortons likewise retain their original source-check dates.
@@ -51,3 +52,9 @@ failures and their fixes remain in `checks.log`: U.S. spelling in the global
 editorial teaser, the new scoped CSS permission in the publication assertion,
 and a Windows sandbox temporary-fixture permission error (retried successfully
 with normal temporary-directory access).
+
+The retained release test also caught the Barilla source-date replacement.
+The fix preserves the original review date and adds a separate, narrowly scoped
+panel-recheck note. All eight retained release tests then passed without changing
+their source-date assertion. Browser inspection additionally caught inherited
+label margins; the aligned field and action now both measure 52 pixels high.

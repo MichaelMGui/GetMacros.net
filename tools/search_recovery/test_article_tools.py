@@ -18,6 +18,9 @@ class ArticleTools(unittest.TestCase):
             schema=[json.loads(text[n['inner']:n['close']]) for n in Document(text).nodes if n['tag']=='script' and n['attrs'].get('type')=='application/ld+json']
             article=next(s for s in schema if s.get('@type')=='Article')
             self.assertEqual(article['datePublished'],'2026-10-19');self.assertEqual(article['dateModified'],DATE)
+            self.assertIn('Sources checked 2026-10-19.',text)
+            if slug.startswith('barilla-'):
+                self.assertIn('two Australian product panels were rechecked October 24, 2026',text)
             self.assertNotIn('content="noindex',text)
     def test_models_use_retained_local_sources(self):
         greggs=breakfast_model('greggs-');tim=breakfast_model('tim-hortons-')

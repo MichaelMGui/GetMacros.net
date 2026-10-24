@@ -158,7 +158,9 @@ def apply():
         text = re.sub(r'<h1\b[^>]*>.*?</h1>', '<h1>'+e(h1)+'</h1>', text, count=1, flags=re.S)
         text = metadata(text, title, description)
         if slug.startswith('barilla-'):
-            text = text.replace('Sources checked 2026-10-19.', 'Sources checked 2026-10-24.')
+            text = text.replace('Sources checked 2026-10-24.', 'Sources checked 2026-10-19.')
+            text = re.sub(r'<!-- barilla-source-recheck:start -->.*?<!-- barilla-source-recheck:end -->', '', text, flags=re.S)
+            text = text.replace('Sources checked 2026-10-19.', 'Sources checked 2026-10-19.<!-- barilla-source-recheck:start --> Barilla’s two Australian product panels were rechecked October 24, 2026; their listed values were unchanged.<!-- barilla-source-recheck:end -->')
         # The original publication and source-check dates remain truthful.
         text = re.sub(r'<!-- article-tool-update:start -->.*?<!-- article-tool-update:end -->', '', text, flags=re.S)
         byline = next(n for n in Document(text).nodes if 'editorial-byline' in n['attrs'].get('class', '').split())
