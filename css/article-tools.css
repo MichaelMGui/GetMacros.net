@@ -3,9 +3,10 @@
 .article-tool h2{margin-top:0;font-size:clamp(1.3rem,3vw,1.7rem)}
 .article-tool form{display:flex;align-items:end;flex-wrap:wrap;gap:.8rem 1rem;margin-block:1rem}
 .article-tool form[hidden]{display:none}
-.article-tool label{display:flex;flex-direction:column;gap:.35rem;flex:1 1 11rem;font-size:.95rem;font-weight:600;min-width:0}
+.article-tool label{display:flex;flex-direction:column;gap:.35rem;flex:1 1 11rem;font-size:.95rem;font-weight:600;min-width:0;margin:0}
 .article-tool input,.article-tool select,.article-tool button{min-height:46px;box-sizing:border-box;font:inherit}
-.article-tool input,.article-tool select{width:100%;min-width:0;border:1px solid var(--border,#cad9ce);border-radius:.65rem;padding:.65rem .8rem;color:inherit;background:var(--surface,#fff)}
+.article-tool input,.article-tool select{width:100%;min-width:0;border:1px solid var(--border,#cad9ce);border-radius:.65rem;padding:.65rem .8rem;color:inherit;background:var(--surface,#fff);margin:0}
+.article-tool input:not([type=checkbox]),.article-tool select,.article-tool button{height:3.25rem}
 .article-tool input:focus-visible,.article-tool select:focus-visible,.article-tool button:focus-visible{outline:2px solid var(--green,#33704b);outline-offset:3px}
 .article-tool input:focus:not(:focus-visible),.article-tool select:focus:not(:focus-visible){outline:none}
 .article-tool input[type=number]{max-width:14rem}

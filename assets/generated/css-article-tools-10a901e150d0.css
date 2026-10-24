@@ -1,0 +1,32 @@
+/* Editorial utilities inherit the current theme; they do not restyle the site. */
+.article-tool{margin-block:1.7rem 2.1rem;padding-block:1.25rem;border-block:1px solid var(--border,#cad9ce)}
+.article-tool h2{margin-top:0;font-size:clamp(1.3rem,3vw,1.7rem)}
+.article-tool form{display:flex;align-items:end;flex-wrap:wrap;gap:.8rem 1rem;margin-block:1rem}
+.article-tool form[hidden]{display:none}
+.article-tool label{display:flex;flex-direction:column;gap:.35rem;flex:1 1 11rem;font-size:.95rem;font-weight:600;min-width:0;margin:0}
+.article-tool input,.article-tool select,.article-tool button{min-height:46px;box-sizing:border-box;font:inherit}
+.article-tool input,.article-tool select{width:100%;min-width:0;border:1px solid var(--border,#cad9ce);border-radius:.65rem;padding:.65rem .8rem;color:inherit;background:var(--surface,#fff);margin:0}
+.article-tool input:not([type=checkbox]),.article-tool select,.article-tool button{height:3.25rem}
+.article-tool input:focus-visible,.article-tool select:focus-visible,.article-tool button:focus-visible{outline:2px solid var(--green,#33704b);outline-offset:3px}
+.article-tool input:focus:not(:focus-visible),.article-tool select:focus:not(:focus-visible){outline:none}
+.article-tool input[type=number]{max-width:14rem}
+.article-tool form:has(input[name=grams]) label{flex:0 1 14rem}
+.article-tool label:has(input[type=checkbox]){flex:1 1 100%;flex-direction:row;align-items:center;font-weight:400}
+.article-tool input[type=checkbox]{width:1.2rem;min-height:1.2rem;accent-color:var(--green,#33704b)}
+.article-tool .table-wrap{margin-block:1rem;max-width:100%;overflow-x:auto}
+.article-tool table{font-variant-numeric:tabular-nums}
+.article-tool caption{text-align:left;font-weight:600;padding-bottom:.65rem}
+.article-tool th,.article-tool td{text-align:right;white-space:nowrap}
+.article-tool th:first-child{text-align:left;white-space:normal;min-width:7rem}
+.article-tool-error{color:var(--ink,#213e32);font-weight:600}
+.article-tool [aria-invalid=true]{border-style:dashed;border-color:currentColor}
+.article-tool [data-tool-selection]{font-size:.95rem;line-height:1.6}
+.article-tool-totals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin:1.2rem 0}
+.article-tool-totals dt{font-size:.9rem;opacity:.85}
+.article-tool-totals dd{font-variant-numeric:tabular-nums;font-size:1.35rem;font-weight:600;margin:.3rem 0 0;white-space:nowrap}
+@media(max-width:500px){.article-tool-totals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.article-tool .article-tool-note{font-size:.9rem;line-height:1.6;opacity:.85}
+.article-tool button{transition:transform 140ms ease}
+.article-tool button:active{transform:scale(.98)}
+@media(prefers-reduced-motion:reduce){.article-tool button{transition:none;transform:none}}
+html[data-motion=calm] .article-tool button{transition:none;transform:none}
