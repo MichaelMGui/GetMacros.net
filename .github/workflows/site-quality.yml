@@ -77,6 +77,8 @@ jobs:
           python3 tools/ultimate_release/test_release.py
           python3 tools/search_recovery/test.py
           python3 tools/search_recovery/test_discovery.py
+          python3 tools/search_recovery/test_article_tools.py
+          node --test tools/search_recovery/test_article_tools.cjs
           python3 tools/analytics_measurement/test_build.py
           node --test tools/analytics_measurement/runtime.test.cjs
           python3 tools/ultimate_release/test_editorial_restaurants.py

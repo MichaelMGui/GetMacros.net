@@ -1,0 +1,90 @@
+[
+  {
+    "command": [
+      "tools/search_recovery/test_article_tools.py"
+    ],
+    "exitCode": 0,
+    "seconds": 4.0
+  },
+  {
+    "command": [
+      "tools/search_recovery/test_discovery.py"
+    ],
+    "exitCode": 0,
+    "seconds": 1.3
+  },
+  {
+    "command": [
+      "tools/search_recovery/test.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.8
+  },
+  {
+    "command": [
+      "tools/ultimate_release/test_editorial_foodtools.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.2
+  },
+  {
+    "command": [
+      "tools/ultimate_release/test_editorial_restaurants.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.6
+  },
+  {
+    "command": [
+      "tools/validate_site.py"
+    ],
+    "exitCode": 0,
+    "seconds": 5.9
+  },
+  {
+    "command": [
+      "tools/test_publication.py"
+    ],
+    "exitCode": 0,
+    "seconds": 3.8
+  },
+  {
+    "command": [
+      "tools/test_search_visibility.py"
+    ],
+    "exitCode": 0,
+    "seconds": 2.3
+  },
+  {
+    "command": [
+      "tools/test_asset_stamps.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.7
+  },
+  {
+    "command": [
+      "tools/analytics_measurement/test_build.py"
+    ],
+    "exitCode": 0,
+    "seconds": 3.7
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "tools/search_recovery/test_article_tools.cjs"
+    ],
+    "exitCode": 0,
+    "seconds": 0.2
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "tools/analytics_measurement/runtime.test.cjs"
+    ],
+    "exitCode": 0,
+    "seconds": 0.2
+  }
+]

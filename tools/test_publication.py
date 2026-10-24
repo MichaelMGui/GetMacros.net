@@ -3,13 +3,17 @@ from pathlib import Path
 from html.parser import HTMLParser
 import json,re,csv,gzip
 from normalize_calculator_layouts import Document
+from search_recovery.article_tools import SLUGS as ARTICLE_TOOL_SLUGS
 ROOT=Path(__file__).resolve().parents[1]
 rows=[]
 for path in [*ROOT.glob('*.html'),*ROOT.glob('*/en/**/index.html')]:
  text=path.read_text(encoding='utf-8');doc=Document(text)
  styles=[n['attrs'].get('data-source-path',n['attrs']['href'].split('?')[0].lstrip('/')) for n in doc.nodes if n['tag']=='link' and n['attrs'].get('rel')=='stylesheet']
  assert styles and styles[0]=='css/publication.css' and len(styles)==len(set(styles)),(path.name,styles)
- assert all(s in {'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css','css/clarity-media.css','css/home-workspace.css','css/analytics-consent.css'} for s in styles),(path.name,styles)
+ allowed_styles={'css/publication.css','css/markets.css','css/food-shelf.css','css/play-release.css','css/release-library.css','css/growth-tools.css','css/food-app.css','css/clarity-media.css','css/home-workspace.css','css/analytics-consent.css'}
+ if path.stem in ARTICLE_TOOL_SLUGS:allowed_styles.add('css/article-tools.css')
+ assert all(s in allowed_styles for s in styles),(path.name,styles)
+ if 'css/article-tools.css' in styles:assert 'id="article-tool"' in text,path.name
  if 'css/home-workspace.css' in styles:assert 'data-home-template=' in text,path.name
  if 'css/food-app.css' in styles:assert 'food-app' in text or 'product-diary:start' in text,path.name
  if 'css/release-library.css' in styles:assert path.name in {'articles.html','blog.html','restaurant-meal-guides.html'} or 'class="restaurant-reference"' in text or 'class="editorial-story"' in text,path.name

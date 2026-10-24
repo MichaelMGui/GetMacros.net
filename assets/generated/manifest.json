@@ -109,6 +109,16 @@
     "sourceSha256": "13aab2828c9e4771017761ceff9dbe992ab0df8cda8962c714bea1c12fc633f2",
     "assetSha256": "13aab2828c9e4771017761ceff9dbe992ab0df8cda8962c714bea1c12fc633f2"
   },
+  "css/article-tools.css": {
+    "url": "/assets/generated/css-article-tools-e4770f674dae.css",
+    "sourceSha256": "e4770f674dae8abfdcc2a0a70192308ccedf3716b57bc36d972b89afe321848d",
+    "assetSha256": "e4770f674dae8abfdcc2a0a70192308ccedf3716b57bc36d972b89afe321848d"
+  },
+  "js/article-tools.js": {
+    "url": "/assets/generated/js-article-tools-dffb0e8dfa6a.js",
+    "sourceSha256": "dffb0e8dfa6a4953a9ca76f96e125fd0b0736d9238fbfdd55c7b8b13d9d51a0b",
+    "assetSha256": "dffb0e8dfa6a4953a9ca76f96e125fd0b0736d9238fbfdd55c7b8b13d9d51a0b"
+  },
   "js/order-tools-core.js": {
     "url": "/assets/generated/js-order-tools-core-96011440bad0.js",
     "sourceSha256": "96011440bad04ca2fddb72d2cec0c819cc28df22aa0c66baa93d899e48b2edbd",

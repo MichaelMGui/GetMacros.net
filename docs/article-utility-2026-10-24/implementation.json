@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-24",
+  "articleRoutes": [
+    "/greggs-breakfast-baguette-calories-protein.html",
+    "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+    "/fage-plain-greek-yogurt-0-2-5-percent.html",
+    "/barilla-australia-protein-plus-vs-spaghetti.html",
+    "/barcode-food-search-label-check.html"
+  ],
+  "routes": [
+    "/greggs-breakfast-baguette-calories-protein.html",
+    "/tim-hortons-canada-breakfast-muffin-biscuit-wrap.html",
+    "/fage-plain-greek-yogurt-0-2-5-percent.html",
+    "/barilla-australia-protein-plus-vs-spaghetti.html",
+    "/barcode-food-search-label-check.html",
+    "/fast-food-breakfast-protein-comparison.html",
+    "/high-protein-foods-list.html",
+    "/serving-size-vs-portion-size.html",
+    "/articles.html"
+  ],
+  "newCatalogRecords": 0,
+  "newPublicPages": 0,
+  "interactiveCalculators": 4,
+  "manualBarcodeForms": 1,
+  "contextLinks": {
+    "fast-food-breakfast-protein-comparison.html": [
+      [
+        "greggs-breakfast-baguette-calories-protein",
+        "UK: calculate a Greggs baguette and coffee"
+      ],
+      [
+        "tim-hortons-canada-breakfast-muffin-biscuit-wrap",
+        "Canada: calculate a Tim Hortons breakfast"
+      ]
+    ],
+    "high-protein-foods-list.html": [
+      [
+        "fage-plain-greek-yogurt-0-2-5-percent",
+        "Compare FAGE yogurt protein in your portion · U.S. labels"
+      ]
+    ],
+    "serving-size-vs-portion-size.html": [
+      [
+        "fage-plain-greek-yogurt-0-2-5-percent",
+        "Scale a bowl of FAGE yogurt · U.S. labels"
+      ],
+      [
+        "barilla-australia-protein-plus-vs-spaghetti",
+        "Scale dry Barilla pasta · Australian labels"
+      ],
+      [
+        "barcode-food-search-label-check",
+        "Look up a barcode and check the label serving"
+      ]
+    ]
+  }
+}
