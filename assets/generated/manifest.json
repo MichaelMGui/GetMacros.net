@@ -388,5 +388,10 @@
     "url": "/assets/generated/js-za-meals-357b8a2049d3.js",
     "sourceSha256": "357b8a2049d340b2307b55935893311780937be6becd18c5f30ce300fcfc0833",
     "assetSha256": "357b8a2049d340b2307b55935893311780937be6becd18c5f30ce300fcfc0833"
+  },
+  "js/nutrient-explorer.js": {
+    "url": "/assets/generated/js-nutrient-explorer-615b5e1e9827.js",
+    "assetSha256": "615b5e1e9827b2805917266d929356e6404df5abe45b5d38324fb2d4fcb55094",
+    "sourceSha256": "615b5e1e9827b2805917266d929356e6404df5abe45b5d38324fb2d4fcb55094"
   }
 }

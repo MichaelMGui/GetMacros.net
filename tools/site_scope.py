@@ -175,6 +175,9 @@ def release_routes():
     clarity=root/'docs/clarity-release-2026-10-14/editorial-manifest.json'
     if clarity.exists():
         routes.update(r['route'].lstrip('/') for r in json.loads(clarity.read_text(encoding='utf-8'))['routes'])
+    from wellness_release.build import CLAIM_LIBRARY, EXPLORER, public_articles
+    routes.update((CLAIM_LIBRARY, EXPLORER))
+    routes.update(row[2] for row in public_articles())
     return routes
 
 KEEP_ROOT_HTML = KEEP_ROOT_HTML | release_routes()
