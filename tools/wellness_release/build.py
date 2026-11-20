@@ -174,6 +174,12 @@ def shell(slug, title, summary, main, schema=None, *, private=False):
     doc = Document(template)
     node = next(n for n in doc.nodes if n['tag'] == 'main')
     page = template[:node['start']] + main + template[node['end']:]
+    # The source guide has a save-to-shelf control inside its main content.
+    # That control is not part of the wellness article or tool template.
+    unused_assets = [n for n in Document(page).nodes
+                     if n['attrs'].get('data-source-path') in ('css/food-shelf.css', 'js/food-shelf.js')]
+    for asset in reversed(unused_assets):
+        page = page[:asset['start']] + page[asset['end']:]
     url = HOST + '/' + slug
     full_title = title + ' | GetMacros'
     page = re.sub(r'<title>.*?</title>', lambda _: '<title>' + escape(full_title) + '</title>', page, count=1, flags=re.S)
