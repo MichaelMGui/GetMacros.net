@@ -41,6 +41,23 @@
     filters.addEventListener('submit', event => event.preventDefault());
     filters.hidden = false;
   }
+  const guideList = root.document?.querySelector('[data-pillar-guides]');
+  if (guideList) {
+    const filters = guideList.querySelector('form');
+    const status = guideList.querySelector('[role="status"]');
+    const guides = [...guideList.querySelectorAll('[data-guide-topic]')];
+    filters.addEventListener('input', () => {
+      let shown = 0;
+      for (const guide of guides) {
+        guide.hidden = !matchesClaim(guide.textContent, guide.dataset.guideTopic,
+          filters.elements.query.value, filters.elements.topic.value);
+        if (!guide.hidden) shown++;
+      }
+      status.textContent = shown ? shown + (shown === 1 ? ' guide shown.' : ' guides shown.') : 'No guides match.';
+    });
+    filters.addEventListener('submit', event => event.preventDefault());
+    filters.hidden = false;
+  }
   const panel = root.document?.querySelector('[data-nutrient-explorer]');
   if (!panel) return;
 

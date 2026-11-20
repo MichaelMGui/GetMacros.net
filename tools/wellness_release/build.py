@@ -27,6 +27,27 @@ PILLARS = [
     'Supplements, Peptides & Evidence-Based Wellness',
     'Practical Nutrition, Restaurants & Original Data Studies',
 ]
+SECTIONS = [
+    ('wellness-nutrients.html', 'Vitamins & minerals',
+     'Which foods provide a nutrient, and how much is in the portion you eat? Compare reference foods and learn to read the units on food labels.',
+     'broccoli', 'P01-01', EXPLORER, 'Explore nutrients in 18 reference foods'),
+    ('wellness-foods-and-diets.html', 'Foods & diets',
+     'Compare two foods as they are eaten. Read the source behind a viral diet claim, or find out which details to match on two packages.',
+     'steak', 'P02-35', EXPLORER + '#compare-protein-and-fiber', 'Compare protein and fiber in two foods'),
+    ('wellness-sleep-and-recovery.html', 'Sleep, stress & recovery',
+     'See what research actually measured, from the timing of a caffeine dose to changes in soreness after exercise.',
+     'egg', 'P03-01', CLAIM_LIBRARY, 'Check recovery claims'),
+    ('wellness-appearance-and-culture.html', 'Appearance & online culture',
+     'Unpack an unfamiliar term, check a before-and-after photo or find the evidence behind a skincare claim.',
+     'strawberry', 'P04-02', CLAIM_LIBRARY, 'Check appearance claims'),
+    ('wellness-supplement-evidence.html', 'Supplements & evidence',
+     'Read a Supplement Facts panel, compare ingredient amounts and find out what a study actually tested.',
+     'blueberry', 'P05-01', CLAIM_LIBRARY, 'Check supplement claims'),
+    ('wellness-restaurant-and-diary.html', 'Restaurants & food logging',
+     'Compare named restaurant portions and use the right values in your diary. Original GetMacros audits show where menu data is incomplete.',
+     'chicken', 'P06-04', 'restaurant-meal-finder.html', 'Browse restaurant meals'),
+]
+SECTION_PAGES = tuple(section[0] for section in SECTIONS)
 FDC = 'https://fdc.nal.usda.gov/food-details/{}/nutrients'
 ODS = 'https://ods.od.nih.gov/factsheets/{}-HealthProfessional/'
 # Evidence about treatment stays out of the public release queue pending specialist review.
@@ -60,6 +81,9 @@ ARTICLES = [
     ('P01-14', 'vitamin-k-greens', 'vitamin-k-spinach-kale-broccoli-servings.html', 'Spinach, kale or broccoli: how much vitamin K is in a serving?',
      'Compare raw leaves and cooked greens. A side-dish example shows why a cup measure cannot establish what cooking does.',
      [ODS.format('VitaminK')], 'Reference food composition. The table does not establish nutrient retention after cooking.'),
+    ('P01-15', 'selenium-food-portions', 'selenium-foods-tuna-sardines-eggs.html', 'Which foods provide selenium in a portion you actually eat?',
+     'Compare yellowfin tuna, sardines, eggs and oatmeal. A smaller fish portion changes the comparison.',
+     [ODS.format('Selenium')], 'U.S. reference food composition and serving calculations.'),
     ('P01-18', 'iodized-salt-pinch', 'iodine-in-iodized-salt-per-pinch.html', 'How much iodine is in a pinch of iodized salt?',
      'Compare iodized table salt and noniodized sea salt by a measured portion, and see why a pinch adds uncertainty.',
      [ODS.format('Iodine')], 'U.S. food composition and kitchen measurement. Amounts are examples, not sodium or iodine intake targets.'),
@@ -97,11 +121,28 @@ ARTICLES = [
     ('P02-20', 'tuna-drained-packing', 'tuna-oil-vs-water-drained-weight.html', 'Tuna in oil vs. water: what still differs after draining?',
      'Compare two USDA records for drained, no-added-salt light tuna at 100 g and the same 3-ounce serving.',
      [FDC.format(174227), FDC.format(171986)], 'U.S. SR Legacy reference comparison. It does not isolate the effect of the packing medium in one experiment.'),
+    ('P02-34', 'carnivore-survey-evidence', 'carnivore-diet-survey-what-it-measured.html', 'What did the survey of 2,029 carnivore dieters actually measure?',
+     'Separate respondents’ reports, the six-month eligibility rule, and questions the survey design could not answer.',
+     ['https://pmc.ncbi.nlm.nih.gov/articles/PMC8684475/'], 'Interpretation of a self-selected survey, with no dietary prescription.'),
+    ('P02-35', 'saladino-frameworks', 'paul-saladino-animal-based-vs-carnivore.html', 'What does Paul Saladino mean by “animal-based” versus “carnivore”?',
+     'Read the foods and exclusions in the creator’s separate frameworks, then check which evidence applies to each.',
+     ['https://www.paulsaladinomd.com/guides', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8684475/',
+      'https://www.fda.gov/food/buy-store-serve-safe-food/raw-milk-questions-answers'],
+     'Primary creator materials show what is promoted. Nutrition and safety facts use independent primary sources.'),
+    ('P02-37', 'santa-cruz-hydration-claim', 'santa-cruz-electrolytes-sodium-vs-hydration-evidence.html', 'Santa Cruz electrolytes: what the sodium figure tells you',
+     'Compare separately listed powder formats and see what kind of research would test a hydration claim.',
+     ['https://santacruzpaleo.com/products/mango-electrolyte-tub', 'https://pubmed.ncbi.nlm.nih.gov/26702122/'],
+     'Observed U.S. manufacturer statements and primary trial methods. No product recommendation or mixing guidance.'),
     ('P02-38', 'blue-zones-pattern', 'blue-zones-diet-food-guide-vs-research.html', 'What is the Blue Zones diet? Separate the menu from the research',
      'Learn what the program suggests, what an Adventist cohort studied and how to compare the beans in an actual meal.',
      ['https://www.bluezones.com/wp-content/uploads/2019/12/BZL_Food-Guidelines-Printable_02.pdf',
       'https://pubmed.ncbi.nlm.nih.gov/23836264/', FDC.format(173735)],
      'The program guide establishes its own claims. The primary study supplies observational evidence.'),
+    ('P02-39', 'blue-diet-meaning', 'blue-diet-blue-zones-vs-aquatic-food.html', 'What does “Blue Diet” mean? Two very different uses of blue',
+     'Tell the Blue Zones eating program apart from aquatic blue foods in food-system research.',
+     ['https://www.bluezones.com/wp-content/uploads/2019/12/BZL_Food-Guidelines-Printable_02.pdf',
+      'https://www.nature.com/articles/s41586-021-03917-1'],
+     'Terminology and research literacy. The examples illustrate definitions, not a recommended eating plan.'),
     ('P02-50', 'powdered-milk-portions', 'dry-milk-vs-reconstituted-serving.html', 'Is a serving of powdered milk the same as a cup after mixing?',
      'Convert a dry-milk label to the part of the prepared drink you actually pour, using the amount of powder and final batch size.',
      ['https://fns-prod.azureedge.us/sites/default/files/resource-files/MilkNonfatDry2020.pdf',
@@ -119,6 +160,10 @@ ARTICLES = [
      'Compare the time window each sample type represents and see why a one-time reading differs from repeated measurements.',
      ['https://pubmed.ncbi.nlm.nih.gov/21515299/', 'https://pubmed.ncbi.nlm.nih.gov/24513702/'],
      'Research methods. Individual testing and diagnosis are outside the article’s scope.'),
+    ('P03-12', 'watch-sleep-stages', 'sleep-tracker-deep-sleep-score-accuracy.html', 'Can your sleep tracker tell how much deep sleep you got?',
+     'Compare estimates of sleep versus wake with stage-by-stage agreement in two device studies.',
+     ['https://pubmed.ncbi.nlm.nih.gov/33378539/','https://pubmed.ncbi.nlm.nih.gov/40303381/'],
+     'Consumer-device research literacy, without recommendations for diagnosis or a current device ranking.'),
     ('P03-13', 'sleep-regularity-measure', 'sleep-regularity-versus-duration-study.html', 'What does sleep regularity measure that sleep duration misses?',
      'Two hypothetical schedules with the same sleep duration show what a sleep regularity study is comparing.',
      ['https://www.nature.com/articles/s41598-017-03171-4', 'https://pubmed.ncbi.nlm.nih.gov/37738616/'],
@@ -155,6 +200,10 @@ ARTICLES = [
      ['https://www.collinsdictionary.com/dictionary/english-thesaurus/mogging',
       'https://www.collinsdictionary.com/us/woty', 'https://doi.org/10.1177/17416590251387245'],
      'Lexicography and media literacy. Examples are invented.'),
+    ('P04-05', 'hypergamy-measure', 'hypergamy-meaning-research-vs-online.html', 'What does hypergamy mean in research and online?',
+     'See what educational hypergamy measures, how its direction is defined, and what online posts often leave out.',
+     ['https://doi.org/10.1215/00703370-10126742','https://doi.org/10.1553/populationyearbook2017s215'],
+     'Social-science and media literacy. Fictional examples illustrate definitions, not advice or ratings of people.'),
     ('P04-07', 'gua-sha', 'gua-sha-jawline-what-study-measured.html', 'Can gua sha change your jawline? What researchers measured',
      'A small gua sha trial measured distances along the face. See what those measurements tell us about a permanent jawline claim.',
      ['https://pmc.ncbi.nlm.nih.gov/articles/PMC12121324/'],
@@ -170,6 +219,13 @@ ARTICLES = [
      'Compare who was photographed, who rated the pictures, and why an observer’s impression does not measure skin health.',
      ['https://pubmed.ncbi.nlm.nih.gov/21156746/', 'https://pubmed.ncbi.nlm.nih.gov/28572989/'],
      'Interpretation of observer ratings from two experimental photography studies.'),
+    ('P04-24', 'hair-breakage-shedding', 'hair-breakage-vs-shedding-study-measures.html', 'Hair breakage and shedding: what did a study count?',
+     'Distinguish a broken hair fiber from shedding. Compare two research methods before relying on a nutrition claim.',
+     ['https://pubmed.ncbi.nlm.nih.gov/26207659/','https://pubmed.ncbi.nlm.nih.gov/18559765/'],
+     'Research literacy. Does not diagnose the cause of a person’s hair loss.'),
+    ('P04-25', 'hair-density-thickness', 'hair-density-vs-shaft-thickness-study.html', 'Hair density vs. thickness: what did the study measure?',
+     'Understand counts per square centimeter and widths in micrometers with one reference study and a fictional example.',
+     ['https://pubmed.ncbi.nlm.nih.gov/36407644/'], 'Interpretation of research measures and illustrative figures. No personal thresholds.'),
     ('P04-34', 'clinical-grade-labels', 'what-clinical-grade-means-skincare-label.html', 'What does “clinical grade” mean on a skincare label?',
      'Check the actual product claim, study and outcome behind a prominent skincare label phrase.',
      ['https://www.fda.gov/cosmetics/cosmetics-labeling/cosmetics-labeling-claims',
@@ -200,6 +256,9 @@ ARTICLES = [
      'Convert both vitamin D units and two serving sizes without mistaking equivalent amounts for separate entries.',
      [ODS.format('VitaminD'), 'https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling'],
      'U.S. label arithmetic. The example values are fictional and are not suggested doses.'),
+    ('P05-17', 'fish-oil-epa-dha-label', 'fish-oil-1000-mg-vs-epa-dha.html', 'Why 1,000 mg of fish oil does not mean 1,000 mg of EPA and DHA',
+     'Follow the oil, EPA and DHA lines in a real archived Supplement Facts panel and avoid adding the components twice.',
+     ['https://api.ods.od.nih.gov/dsld/s3/pdf/326004.pdf'], 'Archived U.S. manufacturer label. The archive establishes the declaration for this edition.'),
     ('P05-22', 'creatine-hair', 'creatine-hair-loss-what-trials-measured.html', 'Does creatine cause hair loss? Two trials tested different things',
      'Compare an older DHT study with a 12-week randomized trial that measured hair directly.',
      ['https://pubmed.ncbi.nlm.nih.gov/19741313/', 'https://pubmed.ncbi.nlm.nih.gov/40265319/'],
@@ -234,6 +293,24 @@ ARTICLES = [
      'Compare the same 8-count U.S. nuggets with small waffle fries or a small fruit cup, using the official portions.',
      ['https://www.chick-fil-a.com/nutrition-allergens'],
      'Two calculated U.S. orders using individually published portions. Sauces and drinks are excluded.'),
+    ('P06-10', 'mcdonalds-japan-us-double', 'mcdonalds-double-cheeseburger-japan-vs-us.html', 'McDonald’s Double Cheeseburger calories in Japan vs. the U.S.',
+     'Check two local Double Cheeseburger listings and the separate higher-calorie Japanese nighttime entry.',
+     ['https://www.mcdonalds.com/us/en-us/product/double-cheeseburger.html', 'https://www.mcdonalds.co.jp/products/1360/',
+      'https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/'],
+     'Country-specific standard burgers and a distinct Japan nighttime item. All calories refer to the listed burger alone.'),
+    ('P06-13', 'mcnuggets-happy-meal-scope', 'mcdonalds-happy-meal-vs-four-nuggets-calories.html', 'Why McDonald’s lists two calorie numbers for a four-piece nugget order',
+     'Compare the U.S. four-piece nuggets by themselves with the restaurant’s published Happy Meal configuration.',
+     ['https://www.mcdonalds.com/us/en-us/product/chicken-mcnuggets-4-piece.html',
+      'https://www.mcdonalds.com/us/en-us/meal/4-piece-chicken-mcnuggets-happy-meal.html'],
+     'Published U.S. items and exact configuration. Changing the drink or sides can change the total.'),
+    ('P06-21', 'diary-saved-source-values', 'what-happens-to-food-diary-when-data-changes.html', 'Does a nutrition update change an old food diary entry?',
+     'Understand what GetMacros stores at the time of logging, and why the same food can show a different total later.',
+     ['https://getmacros.net/back-up-and-move-food-diary.html','https://getmacros.net/food-diary.html'],
+     'GetMacros diary behavior, checked against the saved-entry calculation and source information.'),
+    ('P06-32', 'uk-menu-salt-sodium', 'greggs-salt-to-sodium-serving-conversion.html', 'How to convert Greggs’ salt figures to sodium',
+     'Convert the September 2026 UK sausage roll and four-pack salt entries without mixing portions or treating salt as sodium.',
+     ['https://a.storyblok.com/f/94904/x/7dd8489dab/nutritional-information.pdf', 'https://www.nidirect.gov.uk/articles/salt'],
+     'Documented UK source portions and calculated sodium equivalents from rounded salt values.'),
     ('P06-33', 'week-label-rounding', 'weekly-food-log-nutrition-label-rounding.html', 'How much can food label rounding move a week of diary entries?',
      'Follow two hypothetical added-sugar numbers from the unrounded amount to the printed serving and the weekly total.',
      ['https://www.fda.gov/media/134505/download', 'https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label'],
@@ -437,6 +514,8 @@ def article_page(row):
     if key == 'breakfast-fiber':
         links.extend([{'url':'/restaurant-meal-finder.html?meal=breakfast', 'label':'Browse U.S. breakfast records'},
                       {'url':'/exact-fiber-coverage-denominator.html', 'label':'Read a missing fiber value correctly'}])
+    section_page, section_label, *_ = SECTIONS[int(id_[1:3]) - 1]
+    links.append({'url':'/' + section_page, 'label':section_label})
     sources = 'Source material checked November 20, 2026. ' + scope
     main = resource_main(dict(slug=slug, title=title, h1=title, description=summary,
                               category=pillar, sourceURLs=urls, sourceScope=sources, body=body, related=links))
@@ -556,6 +635,72 @@ def claim_library_page(script_url):
     return page.replace('</body>', f'<script src="{script_url}" data-source-path="js/nutrient-explorer.js" defer></script></body>', 1)
 
 
+def guide_topic(row):
+    id_, key, *_ = row
+    pillar = int(id_[1:3])
+    if pillar == 1:
+        if key in ('folate', 'niacin-equivalents'):
+            return 'Reading nutrient values'
+        return 'Vitamins in food' if key.startswith(('vitamin-', 'b12-')) else 'Minerals and choline'
+    if pillar == 2:
+        if key in ('carnivore-survey-evidence', 'saladino-frameworks', 'blue-zones-pattern', 'blue-diet-meaning', 'santa-cruz-hydration-claim'):
+            return 'Diet and product claims'
+        return 'Food comparisons'
+    if pillar == 3:
+        if 'cortisol-' in key:
+            return 'Stress measurements'
+        return 'Exercise recovery' if key in ('infrared-sauna', 'cold-water-lifting') else 'Sleep and timing'
+    if pillar == 4:
+        if key in ('looksmaxxing-context', 'mogging-meaning', 'hypergamy-measure'):
+            return 'Online terms'
+        return 'Marketing claims' if key in ('sponsored-beauty-posts', 'clinical-grade-labels') else 'Appearance research'
+    if pillar == 5:
+        if key in ('peptide-labels', 'bpc-regulatory-context'):
+            return 'Peptides and policy'
+        return 'Ingredient studies' if key in ('creatine-hair', 'magnesium-form-study') else 'Reading supplement labels'
+    if key in ('breakfast-fiber', 'uk-weight-coverage', 'canada-sodium-coverage'):
+        return 'GetMacros data studies'
+    return 'Diary calculations' if 'rounding' in key or key == 'uk-menu-salt-sodium' else 'Restaurant comparisons'
+
+
+def section_page(index, items, script_url):
+    slug, label, intro, character, feature, tool_link, tool_label = SECTIONS[index]
+    featured = next((row for row in items if row[0] == feature), items[0])
+    topics = sorted({guide_topic(row) for row in items})
+    choices = ''.join(f'<option>{escape(topic)}</option>' for topic in topics)
+    guides = ''.join(f'<li data-guide-topic="{escape(guide_topic(row), quote=True)}">'
+                     f'<a href="/{row[2]}">{escape(row[3])}</a><p>{escape(row[4])}</p></li>' for row in items)
+    section_links = ''.join(f'<li><a href="/{route}">{escape(name)}</a></li>'
+                            for route,name,*_ in SECTIONS if route != slug)
+    related = '<p><a href="/high-protein-foods-list.html">See the high-protein foods list</a></p>' if index == 1 else ''
+    main = f'''<main id="main-content" class="container"><article class="article-container release-article">
+<nav aria-label="Breadcrumb"><a href="/articles.html#wellness-publication">Guides</a></nav>
+<div class="wellness-pillar-intro"><div><h1>{escape(PILLARS[index])}</h1><p>{escape(intro)}</p></div>
+<svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><use href="/images/food-characters.svg#food-{character}"></use></svg></div>
+<section class="wellness-pillar-feature"><h2>Start here</h2><a href="/{featured[2]}">{escape(featured[3])}</a>
+<p>{escape(featured[4])}</p><a href="/{tool_link}">{escape(tool_label)}</a>{related}</section>
+<section data-pillar-guides><h2>Browse {escape(label.lower())}</h2>
+<form hidden class="wellness-pillar-filters"><div><label for="pillar-query">Search this collection</label><input type="search" id="pillar-query" name="query"></div>
+<div><label for="pillar-topic">Topic</label><select id="pillar-topic" name="topic"><option value="">All topics</option>{choices}</select></div></form>
+<p role="status"></p><ul class="wellness-pillar-guides">{guides}</ul></section>
+<nav aria-label="Other guide collections"><h2>More collections</h2><ul>{section_links}</ul></nav>
+</article></main>'''
+    page = shell(slug, PILLARS[index], intro, main, {'@type':'CollectionPage','name':PILLARS[index],'description':intro})
+    page = page.replace('</head>', '''<style>
+.wellness-pillar-intro{display:grid;grid-template-columns:minmax(0,1fr) clamp(4rem,15vw,8rem);gap:1rem;align-items:center}
+.wellness-pillar-intro svg{width:100%;height:auto}
+.wellness-pillar-feature{margin-block:1.5rem;padding:1.25rem;border-inline-start:.25rem solid var(--green);background:var(--surface);border-radius:.6rem}
+.wellness-pillar-filters:not([hidden]){display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:1rem}
+.wellness-pillar-filters label{display:block;margin-block-end:.35rem;font-weight:600}
+.wellness-pillar-filters :is(input,select){width:100%;min-inline-size:0;min-block-size:44px}
+.wellness-pillar-guides{list-style:none;padding:0}
+.wellness-pillar-guides li{padding:1rem 0;border-block-end:1px solid var(--line)}
+.wellness-pillar-guides li p{margin:.35rem 0 0}
+@media(max-width:480px){.wellness-pillar-filters:not([hidden]){grid-template-columns:1fr}.wellness-pillar-intro{grid-template-columns:1fr}.wellness-pillar-intro svg{display:none}}
+</style></head>''', 1)
+    return page.replace('</body>', f'<script src="{script_url}" data-source-path="js/nutrient-explorer.js" defer></script></body>', 1)
+
+
 def apply():
     for row in ARTICLES:
         parent = DOCS if row[1] == 'acne' else ROOT
@@ -580,15 +725,11 @@ def apply():
     cards = []
     for index, pillar in enumerate(PILLARS, 1):
         items = [r for r in public if r[0].startswith(f'P{index:02d}')]
-        links = ''.join(f'<li><a href="/{r[2]}">{escape(r[3])}</a></li>' for r in items)
-        if index == 1:
-            links += f'<li><a href="/{EXPLORER}">Explore nutrients in 18 reference foods</a></li>'
-        if index == 2:
-            links += '<li><a href="/high-protein-foods-list.html">High-protein foods</a></li>'
-        if index == 6:
-            links += '<li><a href="#learn-meal-comparisons">Restaurant meal comparisons</a></li><li><a href="#learn-portions-labels">Food labels and portion guides</a></li>'
-        if links:
-            cards.append(f'<section><h3>{escape(pillar)}</h3><ul>{links}</ul></section>')
+        route, label, intro, _, feature, *_ = SECTIONS[index - 1]
+        (ROOT / route).write_text(section_page(index - 1, items, url), encoding='utf8', newline='\n')
+        featured = next((row for row in items if row[0] == feature), items[0])
+        cards.append(f'<section><h3><a href="/{route}">{escape(label)}</a></h3><p>{escape(intro)}</p>'
+                     f'<a href="/{featured[2]}">{escape(featured[3])}</a></section>')
     articles = ROOT / 'articles.html'
     text = articles.read_text(encoding='utf8')
     text = replace_section(text, 'wellness-publication', '')
@@ -599,7 +740,8 @@ def apply():
                '#wellness-publication h3{font-size:1.1rem;margin-block:0 .65rem}'
                '#wellness-publication li{margin-block:.45rem}</style>'
                '<h2>Explore food and wellness</h2><p><a href="/' + CLAIM_LIBRARY +
-               '">Check the evidence behind a wellness claim</a></p><div class="wellness-topics">' + ''.join(cards) + '</div></section>')
+               '">Check the evidence behind a wellness claim</a> · <a href="/' + EXPLORER +
+               '">Explore nutrients in 18 reference foods</a></p><div class="wellness-topics">' + ''.join(cards) + '</div></section>')
     # Put new topics after the existing masthead and before the guide controls.
     tree = Document(text)
     library = next((n for n in tree.nodes if 'reader-library' in n['attrs'].get('class', '').split()), None)
@@ -611,6 +753,7 @@ def apply():
     hits = []
     resources = [(EXPLORER, 'Nutrient Density Explorer', 'Compare vitamins, minerals, protein or fiber.'),
                  (CLAIM_LIBRARY, 'Wellness Claim Evidence Library', 'Check claims against primary evidence.')]
+    resources.extend((route, PILLARS[index], intro) for index,(route, _, intro,*_) in enumerate(SECTIONS))
     for slug, title, summary in [(r[2], r[3], r[4]) for r in public] + resources:
         hits.append(f'<a class="search-hit" href="/{slug}" data-search="{escape(title + " " + summary, quote=True)}"><span class="search-hit-name">{escape(title)}</span><span class="search-hit-copy">{escape(summary)}</span></a>')
     search.write_text(replace_section(search.read_text(encoding='utf8'), 'wellness-search',
