@@ -47,6 +47,9 @@ ARTICLES = [
     ('P01-05', 'iron-beans-beef', 'iron-in-lentils-beans-and-beef.html', 'Do lentils have more iron than beef? Compare the actual servings',
      'Use NIH reference servings to compare iron in lentils, chickpeas, trimmed beef and liver, with a worked bowl example.',
      [ODS.format('Iron')], 'Reference food composition and general explanation of bioavailability.'),
+    ('P01-06', 'zinc-without-meat', 'zinc-foods-without-meat.html', 'Which foods supply zinc if you rarely eat meat?',
+     'Compare zinc in pumpkin seeds, lentils, cheddar and Greek yogurt. See when a smaller topping changes the comparison.',
+     [ODS.format('Zinc')], 'Reference food composition. The amounts describe zinc in food rather than the amount absorbed.'),
     ('P01-07', 'folate', 'folate-folic-acid-dfe-label.html', 'Folate vs. folic acid: what does mcg DFE mean on a label?',
      'Read folate and folic acid on the same label without double counting. Includes a worked U.S. label example.',
      [ODS.format('Folate'), 'https://www.fda.gov/food/nutrition-facts-label/folate-and-folic-acid-nutrition-and-supplement-facts-labels'],
@@ -54,6 +57,15 @@ ARTICLES = [
     ('P01-08', 'b12-without-dairy', 'vitamin-b12-foods-without-dairy.html', 'Which foods have vitamin B12 without dairy?',
      'Compare selected seafood and fortified foods for vitamin B12, then put two label amounts on the same volume basis.',
      [ODS.format('VitaminB12')], 'Reference food composition and a hypothetical label comparison.'),
+    ('P01-14', 'vitamin-k-greens', 'vitamin-k-spinach-kale-broccoli-servings.html', 'Spinach, kale or broccoli: how much vitamin K is in a serving?',
+     'Compare raw leaves and cooked greens. A side-dish example shows why a cup measure cannot establish what cooking does.',
+     [ODS.format('VitaminK')], 'Reference food composition. The table does not establish nutrient retention after cooking.'),
+    ('P01-24', 'niacin-equivalents', 'what-are-niacin-equivalents-food-tables.html', 'What are niacin equivalents? How to read B3 in a food table',
+     'Read preformed niacin and niacin equivalents on the same basis with a worked example from the NIH reference table.',
+     [ODS.format('Niacin')], 'Reference-accounting example. The conversion is a convention and does not predict individual metabolism.'),
+    ('P01-27', 'vitamin-d-mushrooms', 'vitamin-d-uv-mushrooms-label.html', 'Do UV-exposed mushrooms contain more vitamin D?',
+     'Read the mushroom variety, treatment and serving on the package before using a vitamin D figure.',
+     [ODS.format('VitaminD')], 'Reference food composition and a hypothetical U.S. label example.'),
     ('P01-37', 'vitamin-c-pepper-orange', 'vitamin-c-red-pepper-vs-orange.html', 'Does red pepper have more vitamin C than an orange?',
      'A half cup and a quarter cup can give opposite answers. Compare pepper, orange and strawberries using NIH values.',
      [ODS.format('VitaminC')], 'Reference food composition and food preparation limits.'),
@@ -65,6 +77,20 @@ ARTICLES = [
     ('P02-02', 'grass-fed-beef', 'grass-fed-vs-grain-fed-ribeye-omega-3.html', 'Grass-fed vs. grain-fed ribeye: how much more omega-3?',
      'A North American study found a difference in ribeye fat. Compare the authors’ standardized serving model and the actual limits.',
      ['https://pmc.ncbi.nlm.nih.gov/articles/PMC13012854/'], 'Analytical comparison of commercial samples.'),
+    ('P02-03', 'pasture-egg-cartons', 'pasture-raised-eggs-omega-3-carton.html', 'Does pasture-raised tell you how much omega-3 an egg has?',
+     'A pasture study and an egg carton report different kinds of information. Compare quantities per egg and check which fatty acid the carton names.',
+     ['https://www.nal.usda.gov/exhibits/ipd/frostonchickens/items/show/267', 'https://www.ams.usda.gov/publications/qa-shell-eggs'],
+     'U.S. carton literacy and a primary study of a specific feeding and housing comparison.'),
+    ('P02-38', 'blue-zones-pattern', 'blue-zones-diet-food-guide-vs-research.html', 'What is the Blue Zones diet? Separate the menu from the research',
+     'Learn what the program suggests, what an Adventist cohort studied and how to compare the beans in an actual meal.',
+     ['https://www.bluezones.com/wp-content/uploads/2019/12/BZL_Food-Guidelines-Printable_02.pdf',
+      'https://pubmed.ncbi.nlm.nih.gov/23836264/', FDC.format(173735)],
+     'The program guide establishes its own claims. The primary study supplies observational evidence.'),
+    ('P02-50', 'powdered-milk-portions', 'dry-milk-vs-reconstituted-serving.html', 'Is a serving of powdered milk the same as a cup after mixing?',
+     'Convert a dry-milk label to the part of the prepared drink you actually pour, using the amount of powder and final batch size.',
+     ['https://fns-prod.azureedge.us/sites/default/files/resource-files/MilkNonfatDry2020.pdf',
+      'https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label'],
+     'U.S. dry milk serving interpretation. The batch figures are illustrative and amounts vary by label.'),
     ('P03-01', 'caffeine', 'caffeine-before-bed-dose-and-timing.html', 'How late is too late for caffeine? What two trials tested',
      'Compare the dose, timing and limits of two placebo-controlled sleep studies before drawing a cutoff.',
      ['https://pubmed.ncbi.nlm.nih.gov/24235903/', 'https://pubmed.ncbi.nlm.nih.gov/39377163/'],
@@ -73,19 +99,50 @@ ARTICLES = [
      'See how cortisol-awakening research distinguishes time since waking from clock time, with a worked timeline.',
      ['https://pubmed.ncbi.nlm.nih.gov/26563991/', 'https://pubmed.ncbi.nlm.nih.gov/36252387/'],
      'Research methods. Individual test interpretation and diagnosis are outside this guide.'),
+    ('P03-16', 'decaf-caffeine', 'does-decaf-coffee-have-caffeine.html', 'Does decaf coffee have caffeine? Check the cup size',
+     'Compare the FDA’s typical decaf range with measured coffee-shop samples and put different drink sizes on the same basis.',
+     ['https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much', 'https://academic.oup.com/jat/article-abstract/30/8/611/714415'],
+     'Beverage composition and label literacy. The historical study does not give current retailer-specific amounts.'),
     ('P03-22', 'infrared-sauna', 'infrared-sauna-recovery-soreness-study.html', 'Does infrared sauna help recovery? What a soreness study measured',
      'See how a crossover study distinguished soreness, jump performance and perceived recovery after resistance exercise.',
      ['https://pubmed.ncbi.nlm.nih.gov/37398966/',
       'https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/heat-and-cold-illness-in-travelers.html'],
       'Evidence interpretation. No heat exposure protocol or individualized advice.'),
+    ('P03-30', 'cold-water-lifting', 'cold-water-after-lifting-muscle-study.html', 'Do ice baths after lifting change training gains? What two studies found',
+     'Compare how two resistance training studies measured muscle size and strength after repeated cold-water immersion.',
+     ['https://pubmed.ncbi.nlm.nih.gov/26174323/', 'https://pubmed.ncbi.nlm.nih.gov/31513450/'],
+     'Research interpretation. No instructions for cold-water exposure or treatment.'),
     ('P04-01', 'acne', 'diet-and-acne-what-the-trial-tested.html', 'Can diet affect acne? What the trial changed besides sugar',
      'Read what a 12-week acne trial tested and compare its conclusions with the dermatology guideline.',
      ['https://pubmed.ncbi.nlm.nih.gov/17616769/', 'https://www.aad.org/news/updated-guidelines-acne-management'],
      'Specialist review pending.'),
+    ('P04-02', 'looksmaxxing-context', 'what-is-looksmaxxing-online.html', 'What does looksmaxxing mean online, and why does the context matter?',
+     'Understand the term and use a simple question to separate grooming, appearance comparisons and unsupported claims.',
+     ['https://www.collinsdictionary.com/dictionary/english/looksmaxxing',
+      'https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/making-sense-of-media/understanding-childrens-use-and-perceptions-of-asmr-and-self-improvement-content/report---understanding-childrens-use-and-perceptions-of-asmr-and-self-improvement-content.pdf?v=412010',
+      'https://www.aad.org/member/clinical-quality/clinical-care/emerging-diseases/viral-trends/looksmaxxing'],
+     'Media literacy. The examples are invented and intentionally omit unsafe practices.'),
+    ('P04-04', 'mogging-meaning', 'what-does-mogging-mean-wellness-claims.html', 'What does “mogging” mean? Read the joke and the claim',
+     'See how the 2026 slang word is used in jokes, appearance comparisons and online product claims.',
+     ['https://www.collinsdictionary.com/dictionary/english-thesaurus/mogging',
+      'https://www.collinsdictionary.com/us/woty', 'https://doi.org/10.1177/17416590251387245'],
+     'Lexicography and media literacy. Examples are invented.'),
     ('P04-07', 'gua-sha', 'gua-sha-jawline-what-study-measured.html', 'Can gua sha change your jawline? What researchers measured',
      'A small gua sha trial measured distances along the face. See what those measurements tell us about a permanent jawline claim.',
      ['https://pmc.ncbi.nlm.nih.gov/articles/PMC12121324/'],
      'Media literacy. No cosmetic technique, treatment recommendation or before-and-after claim.'),
+    ('P04-09', 'appearance-photo-evidence', 'before-after-face-photos-camera-distance.html', 'Why two face photos can tell different stories about the same face',
+     'Read before-and-after claims with a camera distance, lighting, pose and study-design checklist.',
+     ['https://pubmed.ncbi.nlm.nih.gov/29494735/', 'https://pubmed.ncbi.nlm.nih.gov/37543968/'],
+     'Research literacy. The hypothetical image comparison illustrates confounding and perspective.'),
+    ('P04-19', 'sleep-face-ratings', 'sleep-loss-face-photo-ratings.html', 'Does sleep change how you look in photos? What two studies rated',
+     'Compare who was photographed, who rated the pictures, and why an observer’s impression does not measure skin health.',
+     ['https://pubmed.ncbi.nlm.nih.gov/21156746/', 'https://pubmed.ncbi.nlm.nih.gov/28572989/'],
+     'Interpretation of observer ratings from two experimental photography studies.'),
+    ('P04-35', 'sponsored-beauty-posts', 'sponsored-beauty-posts-disclosure-evidence.html', 'What does “gifted” or “paid partnership” tell you about a beauty claim?',
+     'Read the disclosure, the claim and the source separately. Three worked examples show what each label establishes.',
+     ['https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers', 'https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking'],
+     'U.S. endorsement guidance and fictional posts, with no individual legal or product assessment.'),
     ('P05-01', 'supplement-label', 'read-supplement-facts-per-serving.html', 'Supplement Facts: is that amount per capsule or per serving?',
      'Compare fictional Supplement Facts labels and learn what a U.S. ingredient amount or proprietary blend represents.',
      ['https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements'],
@@ -100,11 +157,32 @@ ARTICLES = [
      'Compare an older DHT study with a 12-week randomized trial that measured hair directly.',
      ['https://pubmed.ncbi.nlm.nih.gov/19741313/', 'https://pubmed.ncbi.nlm.nih.gov/40265319/'],
      'Study interpretation. No dosing, supplement recommendation or clinical assessment.'),
+    ('P05-26', 'magnesium-form-study', 'magnesium-citrate-oxide-absorption-study.html', 'Magnesium citrate vs. oxide: what does “better absorbed” mean?',
+     'Compare elemental amounts on the label, then see what an absorption study measured and what outcomes it did not test.',
+     [ODS.format('Magnesium'), 'https://pubmed.ncbi.nlm.nih.gov/2407766/'],
+     'U.S. label literacy and interpretation of a small head-to-head absorption study. No supplement selection or dosing advice.'),
+    ('P05-45', 'melatonin-label-test', 'melatonin-gummies-label-vs-lab-test.html', 'How accurate were melatonin gummy labels in a U.S. lab study?',
+     'Read the 25-product test correctly, including what 347% of the label means and why it does not generalize to today’s shelf.',
+     ['https://jamanetwork.com/journals/jama/fullarticle/2804077'],
+     'Historical product-label audit. No dose guidance or advice about use.'),
     ('P06-01', 'breakfast-fiber', 'fast-food-breakfast-fiber-data.html', 'How much fiber do U.S. fast-food breakfasts actually list?',
      'An audit of the fiber figures in U.S. breakfast rows, with totals by chain and examples of how portion size affects comparisons.',
      ['https://getmacros.net/fast-food-nutrition-data-report.html',
       'https://www.chick-fil-a.com/nutrition-allergens', 'https://www.bk.com/nutrition-explorer'],
      'GetMacros registry snapshot. Includes counted portions, sides and named variants with a breakfast tag.'),
+    ('P06-02', 'nugget-protein-ranking', 'chick-fil-a-protein-per-calorie-vs-serving.html', 'What changes when you rank Chick-fil-A nuggets by protein per calorie?',
+     'The order with the largest protein total changes when you compare protein per 100 calories. Here is the math for four U.S. portions.',
+     ['https://www.chick-fil-a.com/nutrition-allergens'], 'Curated U.S. portions with source values and calculated ratios.'),
+    ('P06-03', 'uk-weight-coverage', 'how-many-uk-menu-items-have-serving-weights.html', 'Which UK restaurant nutrition listings can you compare by weight?',
+     'An audit of UK menu rows with confirmed gram weights and calories, including why a mixed g/ml field needs a closer look.',
+     ['https://getmacros.net/fast-food-nutrition-data-report.html',
+      'https://www.greggs.com/nutrition', 'https://a.storyblok.com/f/94904/x/7dd8489dab/nutritional-information.pdf'],
+     'Snapshot of the GetMacros UK registry. Absence of a comparison field here does not establish absence from the underlying menu.'),
+    ('P06-04', 'canada-sodium-coverage', 'missing-sodium-canadian-restaurant-menus.html', 'What happens to a Canadian menu comparison when sodium is missing?',
+     'Count named Canadian listings with known, zero and missing sodium, and see how a missing value changes a sortable comparison.',
+     ['https://getmacros.net/fast-food-nutrition-data-report.html', 'https://pizzanova.com/nutrition',
+      'https://www.chick-fil-a.ca/nutrition-allergens'],
+     'Snapshot of the Canadian GetMacros registry. The Pizza Nova source is the retained calories-only capture; its live page could not be rechecked.'),
 ]
 # The source IDs refer to the already retained USDA reference shards.
 FOODS = {
@@ -125,6 +203,11 @@ SOURCE_TITLES = {
     ODS.format('Choline'): 'NIH Office of Dietary Supplements: Choline, Table 2',
     ODS.format('Potassium'): 'NIH Office of Dietary Supplements: Potassium, Table 2',
     ODS.format('Folate'): 'NIH Office of Dietary Supplements: Folate, folic acid and dietary folate equivalents',
+    ODS.format('Zinc'): 'NIH Office of Dietary Supplements: Zinc sources, Table 2 and absorption',
+    ODS.format('VitaminK'): 'NIH Office of Dietary Supplements: Vitamin K in foods, Table 2 and medication interactions',
+    ODS.format('VitaminD'): 'NIH Office of Dietary Supplements: Vitamin D in foods and fortified products, Table 3',
+    'https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much': 'FDA: Caffeine in common beverages and decaffeinated coffee',
+    'https://academic.oup.com/jat/article-abstract/30/8/611/714415': 'McCusker et al. (2006): Caffeine content of decaffeinated coffee',
     'https://pmc.ncbi.nlm.nih.gov/articles/PMC12121324/': 'Ahn et al. (2025): Facial roller versus gua sha randomized trial',
     'https://pubmed.ncbi.nlm.nih.gov/24235903/': 'Drake et al. (2013): Caffeine at bedtime or 3 or 6 hours earlier',
     'https://pubmed.ncbi.nlm.nih.gov/39377163/': 'Gardiner et al. (2025): Caffeine dose and timing crossover trial',
@@ -259,6 +342,10 @@ def article_page(row):
     if key == 'breakfast-fiber':
         body, restaurant_sources = breakfast_fiber(body)
         urls = list(dict.fromkeys([*urls, *restaurant_sources]))
+    if key == 'uk-weight-coverage':
+        body = uk_weight_coverage(body)
+    if key == 'canada-sodium-coverage':
+        body = canada_sodium_coverage(body)
     body = body.replace('<table>', '<div class="table-wrap"><table>').replace('</table>', '</table></div>')
     links = [{'url':'/' + EXPLORER, 'label':'Compare vitamins and minerals'}] if id_.startswith('P01') else []
     if key in ('raw-milk','supplement-label'):
@@ -271,6 +358,10 @@ def article_page(row):
         links.append({'url':'/read-supplement-facts-per-serving.html', 'label':'Read a Supplement Facts panel'})
     if key == 'gua-sha':
         links.append({'url':'/editorial-policy.html', 'label':'How GetMacros evaluates evidence'})
+    if key in ('mogging-meaning','appearance-photo-evidence'):
+        links.append({'url':'/gua-sha-jawline-what-study-measured.html', 'label':'See what a facial contour study measured'})
+    if key == 'blue-zones-pattern':
+        links.append({'url':'/' + EXPLORER, 'label':'Compare fiber in reference foods'})
     if key == 'breakfast-fiber':
         links.extend([{'url':'/restaurant-meal-finder.html?meal=breakfast', 'label':'Browse U.S. breakfast records'},
                       {'url':'/exact-fiber-coverage-denominator.html', 'label':'Read a missing fiber value correctly'}])
@@ -295,9 +386,13 @@ def article_page(row):
     return shell(slug, title, summary, main, schema, private=private)
 
 
+def registry_market(market):
+    return [row for row in json.loads((ROOT / 'js/order-registry.json').read_bytes())['records']
+            if row['market'] == market]
+
+
 def breakfast_fiber(body):
-    registry = json.loads((ROOT / 'js/order-registry.json').read_bytes())['records']
-    rows = [row for row in registry if row['market'] == 'US' and row.get('meal') == 'breakfast']
+    rows = [row for row in registry_market('US') if row.get('meal') == 'breakfast']
     known = [row for row in rows if isinstance(row.get('f'), (int, float))]
     count = sum(row['f'] >= 3 for row in known)
     assert (len(rows), len(known), count) == (131, 131, 47), 'Review the breakfast snapshot before changing article counts.'
@@ -313,6 +408,42 @@ def breakfast_fiber(body):
     for name, amount in examples.items():
         assert any(row['name'] == name and row['f'] == amount for row in known)
     return body.replace('<!--CHAIN_ROWS-->', ''.join(counts)), sorted({row['source'] for row in rows})
+
+
+def coverage_row(name, *counts):
+    return f'<tr><th scope="row">{escape(name)}</th>' + ''.join(f'<td>{count:,}</td>' for count in counts) + '</tr>'
+
+
+def uk_weight_coverage(body):
+    rows = registry_market('GB')
+    counts = []
+    eligible = 0
+    for chain in sorted({row['chain'] for row in rows}):
+        local = [row for row in rows if row['chain'] == chain]
+        mass = [row for row in local if isinstance(row.get('servingGrams'), (int, float)) and row['servingGrams'] > 0]
+        calories = sum(isinstance(row.get('cal'), (int, float)) for row in mass)
+        counts.append(coverage_row(chain, len(local), len(mass), calories))
+        eligible += calories
+    assert rows and 0 < eligible < len(rows)
+    return (body.replace('<!--CHAIN_ROWS-->', ''.join(counts))
+            .replace('<!--ELIGIBLE-->', f'{eligible:,}').replace('<!--TOTAL-->', f'{len(rows):,}')
+            .replace('<!--SHARE-->', f'{eligible / len(rows):.1%}'))
+
+
+def canada_sodium_coverage(body):
+    rows = registry_market('CA')
+    counts = []
+    missing = 0
+    for chain in sorted({row['chain'] for row in rows}):
+        local = [row for row in rows if row['chain'] == chain]
+        known = [row for row in local if isinstance(row.get('na'), (int, float))]
+        zero = sum(row['na'] == 0 for row in known)
+        blank = len(local) - len(known)
+        counts.append(coverage_row(chain, len(local), len(known), zero, blank))
+        missing += blank
+    assert rows and 0 < missing < len(rows)
+    return (body.replace('<!--CHAIN_ROWS-->', ''.join(counts))
+            .replace('<!--MISSING-->', f'{missing:,}').replace('<!--TOTAL-->', f'{len(rows):,}'))
 
 
 def claim_library_page(script_url):
