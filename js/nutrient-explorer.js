@@ -69,7 +69,7 @@
   const panel = root.document?.querySelector('[data-nutrient-explorer]');
   if (!panel) return;
 
-  const {rows, nutrients} = JSON.parse(panel.querySelector('[type="application/json"]').textContent);
+  const {rows, nutrients, source} = JSON.parse(panel.querySelector('[type="application/json"]').textContent);
   const form = panel.querySelector('form');
   const status = panel.querySelector('[role="status"]');
   const body = panel.querySelector('tbody');
@@ -94,7 +94,8 @@
         const links = choice.sources.map((url, i) => {
           const link = document.createElement('a');
           link.href = url;
-          link.textContent = 'Source' + (choice.sources.length > 1 ? ' ' + (i + 1) : '');
+          link.textContent = url === source ? 'USDA data (' + choice.referenceIds.join(', ') + ')' :
+            'Source' + (choice.sources.length > 1 ? ' ' + (i + 1) : '');
           link.setAttribute('aria-label', choice.label + ' · ' + link.textContent);
           return link;
         });
@@ -145,8 +146,8 @@
       tr.append(cell);
     }
     const link = document.createElement('a');
-    link.href = 'https://fdc.nal.usda.gov/food-details/' + record.id + '/nutrients';
-    link.textContent = 'USDA record ' + record.id;
+    link.href = source;
+    link.textContent = 'USDA data (' + record.id + ')';
     if (compact) {
       const portion = document.createElement('small');
       portion.textContent = measure;

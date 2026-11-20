@@ -52,13 +52,13 @@ SECTIONS = [
      'chicken', 'P06-04', STUDIO, 'Compare a dish or order'),
 ]
 SECTION_PAGES = tuple(section[0] for section in SECTIONS)
-FDC = 'https://fdc.nal.usda.gov/food-details/{}/nutrients'
+FDC_DATA = 'https://fdc.nal.usda.gov/download-datasets/'
 ODS = 'https://ods.od.nih.gov/factsheets/{}-HealthProfessional/'
 # Evidence about treatment stays out of the public release queue pending specialist review.
 ARTICLES = [
     ('P01-01', 'magnesium', 'magnesium-foods-by-portion.html', 'Which foods have the most magnesium in a real serving?',
      'Compare pumpkin seeds, black beans and spinach by weight and on the plate, with a worked bean-bowl example.',
-     [ODS.format('Magnesium'), *[FDC.format(i) for i in (170557, 173735, 168463)]], 'Reference food composition.'),
+     [ODS.format('Magnesium'), FDC_DATA], 'USDA SR Legacy records 170557, 173735 and 168463, with NIH label guidance.'),
     ('P01-02', 'choline', 'choline-foods-eggs-soybeans-quinoa.html', 'How much choline is in an egg, soybeans or quinoa?',
      'Compare three NIH reference servings and see how much choline they contribute to a mixed bowl.',
      [ODS.format('Choline')], 'Reference food composition and U.S. label interpretation.'),
@@ -141,7 +141,7 @@ ARTICLES = [
      'Amino acid accounting and interpretation of a protein-form comparison. No serving or supplementation advice.'),
     ('P02-20', 'tuna-drained-packing', 'tuna-oil-vs-water-drained-weight.html', 'Tuna in oil vs. water: what still differs after draining?',
      'Compare two USDA records for drained, no-added-salt light tuna at 100 g and the same 3-ounce serving.',
-     [FDC.format(174227), FDC.format(171986)], 'U.S. SR Legacy reference comparison. It does not isolate the effect of the packing medium in one experiment.'),
+     [FDC_DATA], 'U.S. SR Legacy records 174227 and 171986. These are independent references, so the comparison does not isolate the packing medium.'),
     ('P02-34', 'carnivore-survey-evidence', 'carnivore-diet-survey-what-it-measured.html', 'What did the survey of 2,029 carnivore dieters actually measure?',
      'Separate respondents’ reports, the six-month eligibility rule, and questions the survey design could not answer.',
      ['https://pmc.ncbi.nlm.nih.gov/articles/PMC8684475/'], 'Interpretation of a self-selected survey, with no dietary prescription.'),
@@ -157,7 +157,7 @@ ARTICLES = [
     ('P02-38', 'blue-zones-pattern', 'blue-zones-diet-food-guide-vs-research.html', 'What is the Blue Zones diet? Separate the menu from the research',
      'Learn what the program suggests, what an Adventist cohort studied and how to compare the beans in an actual meal.',
      ['https://www.bluezones.com/wp-content/uploads/2019/12/BZL_Food-Guidelines-Printable_02.pdf',
-      'https://pubmed.ncbi.nlm.nih.gov/23836264/', FDC.format(173735)],
+      'https://pubmed.ncbi.nlm.nih.gov/23836264/', FDC_DATA],
      'The program guide establishes its own claims. The primary study supplies observational evidence.'),
     ('P02-39', 'blue-diet-meaning', 'blue-diet-blue-zones-vs-aquatic-food.html', 'What does “Blue Diet” mean? Two very different uses of blue',
      'Tell the Blue Zones eating program apart from aquatic blue foods in food-system research.',
@@ -443,6 +443,174 @@ ARTICLES = [
       'https://www.fda.gov/media/133699/download',
       'https://www.fda.gov/media/134505/download'],
      'U.S. label guidance and a fictional 75 g package. Values illustrate rounding and partial portions.'),
+    ('P01-09', 'whole-fruit-vitamin-c', 'vitamin-c-in-one-kiwi-orange-or-papaya.html', 'How much vitamin C is in one kiwi, orange or papaya?',
+     'Compare four USDA fruit portions and see why the most concentrated fruit need not supply the most per piece.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/'],
+     'U.S. USDA SR Legacy reference values and edible portion weights. Individual fruit size and variety vary.'),
+    ('P02-14', 'edamame-mature-soybeans', 'edamame-vs-mature-soybeans-protein-by-portion.html', 'Edamame vs. mature soybeans: how much protein per cup?',
+     'Compare two cooked, shelled USDA portions, then separate the effect of concentration from the grams in the cup.',
+     [FDC_DATA],
+     'USDA SR Legacy records 168411 and 174271, covering prepared edamame and boiled mature beans.'),
+    ('P03-08', 'exercise-cortisol-time', 'why-exercise-timing-changes-cortisol-readings.html', 'Why does exercise timing matter for a cortisol reading?',
+     'See how sampling, exercise intensity, and changes in plasma volume affect comparisons across three experiments.',
+     ['https://pubmed.ncbi.nlm.nih.gov/18787373/',
+      'https://pubmed.ncbi.nlm.nih.gov/18642761/',
+      'https://pubmed.ncbi.nlm.nih.gov/11991783/'],
+     'Method interpretation for healthy adult studies. Clinical questions about test timing require a care team.'),
+    ('P04-15', 'water-skin-baseline', 'drinking-water-skin-hydration-baseline-intake.html', 'Does drinking more water improve skin hydration if you already drink enough?',
+     'Read what a four-week study found after separating higher and lower habitual fluid intake.',
+     ['https://pubmed.ncbi.nlm.nih.gov/38816975/',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC4529263/'],
+     'Study interpretation for healthy adults. The trial’s intake groups are research categories and do not diagnose dehydration.'),
+    ('P05-13', 'vitamin-d2-d3-trial-matched', 'vitamin-d2-vs-d3-matched-trial.html', 'Vitamin D2 vs. D3: what did a matched-dose trial measure?',
+     'Compare D2 and D3 in the same fortified food, and distinguish the dose on a label from the outcome in blood.',
+     ['https://pubmed.ncbi.nlm.nih.gov/28679555/',
+      'https://pubmed.ncbi.nlm.nih.gov/22623396/',
+      'https://ods.od.nih.gov/factsheets/Vitamind-HealthProfessional/'],
+     'Research literacy from UK fortification studies and NIH definitions. No recommendation about individual supplements.'),
+    ('P06-22', 'calories-only-diary-backup', 'what-a-calories-only-diary-backup-keeps.html', 'Can you restore a food diary entry that has calories but no macros?',
+     'Learn which calories-only snapshots GetMacros can restore and why a calorie total cannot reconstruct missing macros.',
+     ['https://github.com/MichaelMGui/GetMacros.net/blob/6200a51eb94ce479117b9754a6865f2266a4af4f/js/food-core.js',
+      'https://getmacros.net/back-up-and-move-food-diary.html'],
+     'GetMacros schema 1 importer and source snapshots. Example values are fictional.'),
+    ('P01-10', 'broccoli-frozen-versus-fresh', 'frozen-vs-fresh-cooked-broccoli-vitamin-c.html', 'Does cooked frozen broccoli have less vitamin C than fresh?',
+     'Compare two cooked USDA servings, then read what a broccoli retention study can and cannot explain.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://pubmed.ncbi.nlm.nih.gov/17995854/',
+      'https://pubmed.ncbi.nlm.nih.gov/30153746/'],
+     'Screening of USDA SR Legacy records and a separate broccoli processing study. These reference figures are not a paired experiment.'),
+    ('P01-31', 'leafy-greens-cooked-folate', 'folate-in-cooked-spinach-turnip-greens-and-collards.html', 'How much folate is in cooked spinach, turnip greens and collards?',
+     'Match boiled greens by weight and by a half-cup, then calculate the folate in a mixed side.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/'],
+     'USDA SR Legacy. Boiled, drained and unsalted entries. Values refer to naturally occurring folate.'),
+    ('P01-36', 'apple-peel-fiber', 'apple-fiber-with-peel-vs-peeled.html', 'How much apple fiber is left after peeling?',
+     'Compare two raw USDA reference apples and separate the effect of a lower edible weight from a lower fiber concentration.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label'],
+     'U.S. reference comparison. The two records are independent entries and do not trace a specific apple through peeling.'),
+    ('P01-40', 'peaches-syrup-drained', 'fresh-peaches-vs-canned-in-heavy-syrup.html', 'Fresh peaches vs. canned peaches: how much does the syrup change?',
+     'Compare fresh peach slices, heavy-syrup peaches and drained pieces at the same weight.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label'],
+     'Specific U.S. USDA SR Legacy records. Added sugars are a separate label value and cannot be computed from these total sugars.'),
+    ('P01-44', 'pumpkin-sunflower-kernels', 'pumpkin-seeds-vs-sunflower-seeds-magnesium-folate-selenium.html', 'Pumpkin or sunflower seeds? The answer changes with the nutrient',
+     'Compare unsalted edible kernels by the ounce for magnesium, selenium and folate.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/',
+      'https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/'],
+     'U.S. USDA SR Legacy nutrient reference estimates. The comparison holds kernel weight constant.'),
+    ('P02-13', 'tempeh-tofu-matched', 'tofu-vs-tempeh-protein-at-equal-weight.html', 'Tofu vs. tempeh: how much of each gives 20 g of protein?',
+     'Compare equal weights first, then work backwards from the same protein amount to a portion.',
+     ['https://fdc.nal.usda.gov/download-datasets/'],
+     'USDA SR Legacy reference entries for raw firm calcium-set tofu and cooked tempeh. The preparation states differ.'),
+    ('P02-16', 'white-beans-chickpeas-soup', 'white-beans-vs-chickpeas-protein-in-soup.html', 'Do white beans and chickpeas add the same protein to a soup?',
+     'Calculate the protein added per bowl using either a measured cup or the same weighed amount of beans.',
+     ['https://fdc.nal.usda.gov/download-datasets/'],
+     'U.S. USDA SR Legacy prepared bean references. The soup example estimates only the bean contribution.'),
+    ('P05-38', 'informed-sport-lot', 'informed-sport-check-a-supplement-batch.html', 'How do you check whether an Informed Sport supplement batch was tested?',
+     'Match the lot, flavor and formulation, and see what a banned-substance screen establishes.',
+     ['https://sport.wetestyoutrust.com/about/certification-process',
+      'https://sport.wetestyoutrust.com/education/athletes',
+      'https://www.sportintegrity.gov.au/what-we-do/anti-doping/substances/supplements-sport'],
+     'Scope of the named certification program and public anti-doping guidance. Testing lowers risk but does not guarantee safety.'),
+    ('P05-39', 'fda-supplement-adverse-report', 'report-a-supplement-reaction-to-fda.html', 'How does reporting a suspected supplement reaction to the FDA work?',
+     'Find the reporting route and see why the reports cannot tell you how common a reaction is.',
+     ['https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements',
+      'https://www.fda.gov/food/compliance-enforcement-food/human-foods-complaint-system-hfcs',
+      'https://open.fda.gov/apis/food/event/understanding-the-api-results/'],
+     'U.S. regulatory reporting information, using an invented example and the FDA’s explanation of its public data limitations.'),
+    ('P05-41', 'canada-npn-label', 'canada-npn-vs-us-supplement-facts.html', 'What does a Canadian NPN actually tell you about a supplement?',
+     'Look up an actual natural health product number and compare it with the information on a U.S. supplement label.',
+     ['https://health-products.canada.ca/lnhpd-bdpsnh/?lang=eng',
+      'https://health-products.canada.ca/lnhpd-bdpsnh/info?lang=eng&licence=80005581',
+      'https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements'],
+     'Canadian and U.S. regulatory labeling literacy. Uses one actual licensed record without making a product recommendation.'),
+    ('P05-42', 'australia-artg-supplement', 'australia-supplement-artg-aust-number.html', 'How do you check a supplement’s AUST number in Australia?',
+     'Find a named example in the ARTG and distinguish the three prefixes on medicine labels.',
+     ['https://www.tga.gov.au/resources/artg',
+      'https://www.tga.gov.au/products/medicines/labelling-and-advertising/medicines-and-biologicals-labelling-and-packaging/aust-numbers-medicine-labels',
+      'https://www.tga.gov.au/resources/artg/318912',
+      'https://www.tga.gov.au/resources/artg/136142'],
+     'Australian regulatory literacy. Some products are regulated as foods rather than as medicines.'),
+    ('P03-07', 'caffeine-cortisol-trial', 'caffeine-and-cortisol-what-the-trial-measured.html', 'Does caffeine raise cortisol after you get used to it?',
+     'Read a crossover study that separated prior caffeine exposure, morning response and later samples.',
+     ['https://pmc.ncbi.nlm.nih.gov/articles/PMC2257922/',
+      'https://pubmed.ncbi.nlm.nih.gov/16204431/'],
+     'Controlled capsule study in healthy adults. Results describe a biochemical outcome, not a prescribed intake.'),
+    ('P03-09', 'sleep-loss-evening-cortisol', 'one-night-sleep-loss-next-evening-cortisol.html', 'When did cortisol change after one night of lost sleep?',
+     'Compare a normal night, a curtailed night and no sleep in the actual window the experiment measured.',
+     ['https://pubmed.ncbi.nlm.nih.gov/9415946/'],
+     'One controlled lab protocol in young men. Estimates are comparisons between two measurement days.'),
+    ('P03-15', 'ten-thirty-minute-nap', 'ten-vs-thirty-minute-nap-study.html', '10-minute vs. 30-minute naps: why the timing of the test matters',
+     'Compare the first hour after two naps and see what a study lasting across nights measured differently.',
+     ['https://pubmed.ncbi.nlm.nih.gov/11322712/',
+      'https://pubmed.ncbi.nlm.nih.gov/28934525/'],
+     'Short-term performance research in small adult samples. Results do not establish individual sleep needs.'),
+    ('P03-17', 'coffee-energy-caffeine-container', 'coffee-vs-energy-drink-caffeine-per-container.html', 'Does an energy drink have more caffeine than coffee? Check the container',
+     'Compare U.S. drink ranges and the published amounts in three actual sizes of one energy drink.',
+     ['https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much',
+      'https://www.redbull.com/us-en/energydrink/questions/how-much-caffeine-is-in-a-can-of-red-bull-sugarfree'],
+     'U.S. FDA ranges and Red Bull manufacturer figures for the named Sugarfree sizes. No personal caffeine recommendation.'),
+    ('P03-43', 'presleep-protein-outcomes', 'protein-before-sleep-what-recovery-studies-measure.html', 'Protein before sleep: what does ‘recovery’ mean in these trials?',
+     'Take a closer look at three trials that measured different rates during a single night after exercise.',
+     ['https://pubmed.ncbi.nlm.nih.gov/22330017/',
+      'https://pubmed.ncbi.nlm.nih.gov/28536184/',
+      'https://pubmed.ncbi.nlm.nih.gov/36857005/'],
+     'Interpretation of acute adult exercise experiments. The measured synthesis rates do not establish long-term effects or individual intake needs.'),
+    ('P04-33', 'blinded-skin-grading', 'what-blinded-skin-assessment-means.html', 'What does a blinded skin assessment actually hide?',
+     'Read how one Australian study separated treatment allocation from the graders who assessed skin texture.',
+     ['https://pubmed.ncbi.nlm.nih.gov/23732711/'],
+     'Evidence literacy using a published Australian factorial experiment. No treatment advice.'),
+    ('P04-47', 'nofilter-tag-evidence', 'does-nofilter-prove-a-beauty-result.html', 'Does #NoFilter prove a beauty result is real?',
+     'See what a UK advertising ruling evaluated and why an unfiltered image can still leave the cause untested.',
+     ['https://www.asa.org.uk/advice-online/cosmetics-the-use-of-production-techniques.html',
+      'https://www.asa.org.uk/rulings/charlotte-dawson-g22-1160111-charlotte-dawson.html'],
+     'Media literacy using a named advertising ruling. The label is not a conclusion about any unreviewed post.'),
+    ('P06-23', 'rice-volume-weight-log', 'cooked-rice-cup-vs-gram-food-diary.html', 'How many grams are in a cup of cooked rice for your food diary?',
+     'Use the USDA’s reference cup and compare it with weighed scoops on the same cooked basis.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label'],
+     'U.S. USDA SR Legacy reference for cooked long-grain white rice. The two home scoop weights are illustrative.'),
+    ('P06-27', 'weigh-food-from-package', 'weigh-what-you-ate-from-the-package.html', 'How to weigh food you ate straight from the package',
+     'Calculate what you removed by weighing the same package twice, then match the printed serving size.',
+     ['https://www.fda.gov/files/food/published/Food-Labeling-Guide-(PDF).pdf',
+      'https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label'],
+     'Kitchen measurement using a fictional package and U.S. label serving principles.'),
+    ('P06-29', 'package-as-prepared-dinner', 'as-packaged-vs-as-prepared-food-label.html', 'As packaged or as prepared? Which number belongs in your diary?',
+     'Use a real boxed dinner example to identify ingredients already counted and ingredients added at home.',
+     ['https://www.fda.gov/files/food/published/Food-Labeling-Guide-(PDF).pdf',
+      'https://www.kraftheinz.com/kraft-mac-and-cheese/products/00021000658831-original-mac-cheese-macaroni-and-',
+      'https://www.kraftheinz.com/kraft-mac-and-cheese/recipes/525138-kraft-macaroni-cheese-dinner'],
+     'U.S. label terms, using a named manufacturer recipe and a separate illustrative nutrition calculation.'),
+    ('P06-36', 'restaurant-meal-photo-evidence', 'restaurant-nutrition-from-photo-what-is-missing.html', 'Can you work out restaurant calories from a photo and ingredients list?',
+     'See which exact portion, sauce and preparation facts a photo leaves out, using a published menu example.',
+     ['https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/menu-labeling-requirements',
+      'https://www.chick-fil-a.com/nutrition-allergens'],
+     'U.S. published portions and FDA menu-labeling scope. The hypothetical photo has no inferred nutrition.'),
+    ('P06-48', 'sauce-packet-grams', 'chick-fil-a-sauce-packets-calories-per-gram.html', 'Chick-fil-A sauces by packet and gram: which comparison answers your question?',
+     'Read three different U.S. serving weights and compare what happens when you use one 12 g portion.',
+     ['https://www.chick-fil-a.com/nutrition-allergens'],
+     'Chick-fil-A U.S. published sauce portions. Equal-weight values are calculated estimates from rounded figures.'),
+    ('P03-11', 'stress-cortisol-disagreement', 'why-stress-rating-and-cortisol-can-disagree.html', 'Why can a stress rating and cortisol reading disagree?',
+     'Compare a participant’s reported experience with timed cortisol samples before and after a lab task.',
+     ['https://pubmed.ncbi.nlm.nih.gov/23246327/'],
+     'Research literacy from a timed lab experiment. The measures are not substitutes for a clinical assessment.'),
+    ('P04-08', 'facial-roller-blood-flow', 'facial-roller-blood-flow-what-studies-measure.html', 'What does a facial roller study measure besides appearance?',
+     'Compare the short-lived blood flow finding with a separate test of response to warmth after weeks of use.',
+     ['https://pubmed.ncbi.nlm.nih.gov/30477852/'],
+     'Two measured outcomes from one small Japanese study. No claim about permanent structure or treatment effect.'),
+    ('P04-29', 'milk-acne-questionnaires', 'milk-and-acne-questionnaire-study-meaning.html', 'What can milk-and-acne questionnaires actually tell you?',
+     'Read two large cohort comparisons with the same skim-milk result and check what they measured separately.',
+     ['https://pubmed.ncbi.nlm.nih.gov/18194824/',
+      'https://pubmed.ncbi.nlm.nih.gov/17083856/'],
+     'Interpretation of two observational adolescent cohorts. No personal diet, treatment or diagnosis guidance.'),
+    ('P04-30', 'whey-acne-trial-designs', 'whey-and-acne-why-two-studies-differ.html', 'Whey and acne: why a survey and a trial can give different answers',
+     'Compare how two 2024 studies chose participants and what each design could learn.',
+     ['https://pubmed.ncbi.nlm.nih.gov/38291989/',
+      'https://pubmed.ncbi.nlm.nih.gov/38633058/'],
+     'Study interpretation only. The compared products, participant groups and outcomes do not establish individual recommendations.'),
 ]
 # The source IDs refer to the already retained USDA reference shards.
 FOODS = {
@@ -459,6 +627,7 @@ FOODS = {
 NUTRIENTS = ('magnesium', 'potassium', 'calcium', 'iron', 'zinc', 'selenium', 'vitaminC',
              'vitaminB12', 'vitaminA', 'vitaminD', 'vitaminE', 'vitaminK', 'folate', 'p', 'f')
 SOURCE_TITLES = {
+    FDC_DATA: 'USDA FoodData Central: SR Legacy reference dataset downloads',
     ODS.format('Magnesium'): 'NIH Office of Dietary Supplements: Magnesium, selected foods and U.S. label rules',
     ODS.format('Choline'): 'NIH Office of Dietary Supplements: Choline, Table 2',
     ODS.format('Potassium'): 'NIH Office of Dietary Supplements: Potassium, Table 2',
@@ -508,7 +677,7 @@ def projection():
                            next((p for p in portions if p['grams'] > 0), None))
             rows.append(dict(id=source_id, label=label, name=record['name'], group=group, portion=portion,
                              values={key: record['nutrients'].get(key) for key in (*NUTRIENTS, 'cal', 'na')}))
-    return dict(rows=rows, nutrients={key: fields[key] for key in NUTRIENTS})
+    return dict(rows=rows, nutrients={key: fields[key] for key in NUTRIENTS}, source=FDC_DATA)
 
 
 def shell(slug, title, summary, main, schema=None, *, private=False):
@@ -560,19 +729,21 @@ def studio_pairs(data):
     nutrients = [key for key, *_ in STUDIO_FIELDS]
 
     def order(label, portion, *parts):
+        reference_ids = [part['referenceId'] for part in parts if 'referenceId' in part]
         return dict(label=label, portion=portion,
                     values={key: sum(part[key] for part in parts)
                             if all(part.get(key) is not None for part in parts) else None
                             for key in nutrients},
                     grams=sum(part['servingGrams'] for part in parts)
                           if all(part.get('servingGrams') for part in parts) else None,
-                    sources=list(dict.fromkeys(part['source'] for part in parts)))
+                    sources=list(dict.fromkeys(part['source'] for part in parts)),
+                    referenceIds=reference_ids)
 
     def portion(food_id, grams):
         row = foods[food_id]
         return dict({key: row['values'][key] * grams / 100 if key in row['values'] and row['values'][key] is not None else None
                      for key in nutrients},
-                    servingGrams=grams, source=f'https://fdc.nal.usda.gov/food-details/{food_id}/nutrients')
+                    servingGrams=grams, source=FDC_DATA, referenceId=food_id)
 
     nuggets = us['cfa-us-10318-d9cc8c5b']
     fruit = us['cfa-us-10209-577b0041']
@@ -581,17 +752,17 @@ def studio_pairs(data):
     yogurt = portion(170886, 100)
     pizza = ca['CA|pizza-nova|136e7ef92aa95020']
     return [
-        dict(name='Chick-fil-A U.S. · Fruit cup or waffle fries',
+        dict(name='Chick-fil-A · Fruit vs. fries',
              guide='/chick-fil-a-fruit-cup-vs-waffle-fries-order.html',
-             note='Calculated from individually published components. Both orders have 8 nuggets. Sauces and drinks are separate.',
+             note='Calculated from published U.S. portions. Both orders have 8 nuggets. Sauces and drinks are separate.',
              sides=[order('Nuggets and fruit', '8 nuggets and a small fruit cup', nuggets, fruit),
                     order('Nuggets and fries', '8 nuggets and small waffle fries', nuggets, fries)]),
-        dict(name='At home · Oats with or without yogurt',
+        dict(name='At home · Oats and yogurt',
              guide='/food-diary.html',
              note='Recipe example using USDA reference values. The second bowl adds plain low-fat yogurt to the same amount of cooked oats.',
              sides=[order('Cooked oats', '150 g oats cooked in water', oats),
                     order('Oats with yogurt', '150 g cooked oats and 100 g yogurt', oats, yogurt)]),
-        dict(name='Pizza Nova Canada · One slice or two',
+        dict(name='Pizza Nova · One or two slices',
              guide='/ca/en/restaurants/pizza-nova/',
              note='This Canadian in-store Doppio Pepperoni slice listing has calories only. The two-slice result doubles the listed portion.',
              sides=[order('One slice', '1 in-store slice', pizza),
@@ -628,7 +799,7 @@ def explorer_page(data, script_url):
     rows = sorted(data['rows'], key=lambda row: row['values']['magnesium'] if row['values']['magnesium'] is not None else -1, reverse=True)
     initial = ''.join('<tr><th scope="row">' + escape(row['label']) + '</th><td>100 g</td><td>' +
                       (str(row['values']['magnesium']) + ' mg' if row['values']['magnesium'] is not None else 'Unknown') +
-                      f'</td><td><a href="{FDC.format(row["id"])}">USDA record {row["id"]}</a></td></tr>' for row in rows)
+                      f'</td><td><a href="{FDC_DATA}">USDA data ({row["id"]})</a></td></tr>' for row in rows)
     summary = f'Compare {len(rows)} USDA reference foods by vitamins, minerals, protein or fiber per 100 g, per portion or per 100 calories.'
     nutrient_options = options((key, value['label']) for key, value in data['nutrients'].items())
     category_options = options((name, name) for name in FOODS)
@@ -666,6 +837,7 @@ def explorer_page(data, script_url):
 <h2>How the amounts are calculated</h2>
 <p>A listed portion uses a measure with a weight in the source. For 100 calories, the tool divides by the source energy per 100 g and multiplies by 100. A missing amount or unavailable conversion stays unknown. The results show total nutrient content, which can differ from the amount absorbed.</p>
 <p>These are selected U.S. reference foods. Use the exact preparation and source when comparing your own meal. For choline examples, see the separate <a href="/choline-foods-eggs-soybeans-quinoa.html">egg, soybeans and quinoa comparison</a>.</p>
+<p>The USDA source column gives the record ID and links to the SR Legacy download.</p>
 <p><a href="/food-library.html">Search a larger set of reference and packaged foods</a> or <a href="/compare-foods.html">review exact portions side by side</a>.</p></article></main>'''
     page = shell(EXPLORER, 'Nutrient Density Explorer', summary, main)
     page = page.replace('data-family="article"', 'data-family="tool"', 1)
