@@ -54,7 +54,11 @@ SECTIONS = [
 SECTION_PAGES = tuple(section[0] for section in SECTIONS)
 FDC_DATA = 'https://fdc.nal.usda.gov/download-datasets/'
 ODS = 'https://ods.od.nih.gov/factsheets/{}-HealthProfessional/'
-# Evidence about treatment stays out of the public release queue pending specialist review.
+REVIEW_DRAFT = ('P04-01', 'acne', 'diet-and-acne-what-the-trial-tested.html',
+                'Can diet affect acne? What the trial changed besides sugar',
+                'Read what a 12-week acne trial tested and compare its conclusions with the dermatology guideline.',
+                ['https://pubmed.ncbi.nlm.nih.gov/17616769/', 'https://www.aad.org/news/updated-guidelines-acne-management'],
+                'Specialist review pending.')
 ARTICLES = [
     ('P01-01', 'magnesium', 'magnesium-foods-by-portion.html', 'Which foods have the most magnesium in a real serving?',
      'Compare pumpkin seeds, black beans and spinach by weight and on the plate, with a worked bean-bowl example.',
@@ -221,10 +225,12 @@ ARTICLES = [
     ('P03-49', 'magnesium-sleep-placebo', 'why-placebo-matters-magnesium-sleep-trial.html', 'A magnesium sleep study improved in both groups. What does that mean?',
      'Compare the reported change in each study group with the difference between them, using an actual placebo-controlled trial.',
      ['https://pubmed.ncbi.nlm.nih.gov/40918053/'], 'Research interpretation of a questionnaire outcome. No treatment or dosage guidance.'),
-    ('P04-01', 'acne', 'diet-and-acne-what-the-trial-tested.html', 'Can diet affect acne? What the trial changed besides sugar',
-     'Read what a 12-week acne trial tested and compare its conclusions with the dermatology guideline.',
-     ['https://pubmed.ncbi.nlm.nih.gov/17616769/', 'https://www.aad.org/news/updated-guidelines-acne-management'],
-     'Specialist review pending.'),
+    ('P04-01', 'acne-counts-vs-grades', 'acne-study-lesion-count-vs-severity-grade.html',
+     'Why do acne studies count spots and also grade overall severity?',
+     'Compare three ways of describing a skin outcome and see what a percentage can hide.',
+     ['https://www.fda.gov/regulatory-information/search-fda-guidance-documents/acne-vulgaris-establishing-effectiveness-drugs-intended-treatment',
+      'https://www.fda.gov/media/71152/download'],
+     'U.S. FDA guidance and fictional figures for reading study endpoints. No personal treatment recommendation.'),
     ('P04-02', 'looksmaxxing-context', 'what-is-looksmaxxing-online.html', 'What does looksmaxxing mean online, and why does the context matter?',
      'Understand the term and use a simple question to separate grooming, appearance comparisons and unsupported claims.',
      ['https://www.collinsdictionary.com/dictionary/english/looksmaxxing',
@@ -764,6 +770,149 @@ ARTICLES = [
      ["https://getmacros.net/food-diary.html",
       "https://getmacros.net/privacy.html"],
      "GetMacros diary JSON behavior. Example records are fictional, and exports remain private."),
+    ("P01-12", "retinol-activity-equivalents", "why-vitamin-a-and-beta-carotene-use-different-units.html", "Why are vitamin A and beta-carotene listed in different units?",
+     "Convert food beta-carotene to retinol activity equivalents and avoid counting an ingredient twice.",
+     ["https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"],
+     "U.S. reference conversion for vitamin A. The worked values are examples of unit conversion, not supplement doses."),
+    ("P01-17", "iodine-without-seafood", "iodine-foods-without-seafood.html", "Which common foods contain iodine if you skip seafood?",
+     "Compare eggs, cheese and iodized salt using measured portions, and check the exact ingredient that matters in bread.",
+     ["https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/"],
+     "U.S. iodine reference examples. Brand, region, dairy production and formulation can change the amounts."),
+    ("P01-21", "manganese-grain-bowl", "manganese-brown-rice-white-rice-oats.html", "How much manganese changes when you swap white rice for brown rice?",
+     "Use matched cooked portions to compare the same chickpea bowl and see where oats fit.",
+     ["https://ods.od.nih.gov/factsheets/Manganese-HealthProfessional/"],
+     "NIH reference table uses cooked medium-grain brown rice and long-grain white rice. The example swaps both the grain type and the stated reference preparation."),
+    ("P01-25", "vitamin-b6-plate", "vitamin-b6-foods-chickpeas-chicken-banana.html", "Which everyday servings give you vitamin B6?",
+     "Compare canned chickpeas, roast chicken and a banana, then calculate two smaller mixed servings.",
+     ["https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/"],
+     "NIH reference foods and portions. The worked meal subtotal uses rounded published values."),
+    ("P03-10", "night-shift-relative-sleep", "why-night-shift-sleep-studies-use-biological-time.html", "Why can night-shift sleepers get the same hours but different amounts of REM sleep?",
+     "Read the study’s shared sleep window and see what scientists measured to distinguish clock time from biological timing.",
+     ["https://pubmed.ncbi.nlm.nih.gov/37914630/",
+      "https://pubmed.ncbi.nlm.nih.gov/39078935/"],
+     "Laboratory studies with specified night shifts. Results depend on the schedule, testing measures and people studied."),
+    ("P03-18", "dinner-hours-before-sleep", "late-dinner-before-bed-what-sleep-studies-measure.html", "Does dinner an hour before bed change sleep in the same way every time?",
+     "Compare two trials with similar dinner gaps and different testing schedules.",
+     ["https://pubmed.ncbi.nlm.nih.gov/32525525/",
+      "https://pubmed.ncbi.nlm.nih.gov/41975458/"],
+     "Two randomized crossover studies in small healthy adult samples. This comparison describes studied meals and measurements."),
+    ("P03-28", "soreness-ice-bath-trials", "ice-baths-and-soreness-24-48-hour-trials.html", "Why did two ice-bath trials disagree about soreness the next day?",
+     "Compare the exercise, control condition and soreness tasks in two randomized studies.",
+     ["https://pubmed.ncbi.nlm.nih.gov/17654228/",
+      "https://pubmed.ncbi.nlm.nih.gov/17261562/"],
+     "Two controlled studies in specific research samples. Experimental exposures are reported for comparison and are not home instructions."),
+    ("P04-21", "vitamin-c-skin-observational", "vitamin-c-in-food-vs-wrinkle-claim-evidence.html", "What can a high-vitamin-C food tell you about a wrinkle claim?",
+     "Separate a nutrient measurement from a survey association and from an intervention.",
+     ["https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+      "https://pubmed.ncbi.nlm.nih.gov/17921406/"],
+     "Food reference values and an observational U.S. study. The article explains evidence types without endorsing a treatment."),
+    ("P04-22", "carotenoids-vs-tanning-reflectance", "carotenoid-skin-color-vs-uv-tanning.html", "Can a study tell carotenoid-related color from a tan?",
+     "Read the reflected-light measurements behind a randomized smoothie study, and see what an ordinary photo cannot resolve.",
+     ["https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133445",
+      "https://pubmed.ncbi.nlm.nih.gov/22412966/"],
+     "Optical research on specific study groups and foods. Color values are measurements, with no beauty standard or nutrition diagnosis inferred."),
+    ("P01-28", "canned-fish-bones-calcium", "calcium-canned-sardines-pink-salmon-bones.html", "How much does leaving the bones in change canned-fish calcium?",
+     "Compare three equal drained portions of fish, with the bone and skin instructions kept visible.",
+     ["https://fdc.nal.usda.gov/download-datasets/"],
+     "Three U.S. SR Legacy food entries. The two pink-salmon preparations differ in both bones and skin."),
+    ("P01-30", "apricot-drying-portion", "dried-vs-fresh-apricot-vitamin-c-fiber.html", "Why do dried apricots have more fiber but less vitamin C per 100 g?",
+     "Compare fresh and dried reference apricots by weight and by the portions you actually see.",
+     ["https://fdc.nal.usda.gov/download-datasets/"],
+     "U.S. SR Legacy fresh and dried sulfured apricots. The records are separate reference foods, so they do not measure the exact change in a batch."),
+    ("P01-39", "orange-grapefruit-matched-grams", "orange-vs-grapefruit-vitamin-c-same-weight.html", "Does an orange have more vitamin C than grapefruit at the same weight?",
+     "Separate vitamin C concentration from the size of an orange, half grapefruit or measured cup.",
+     ["https://fdc.nal.usda.gov/download-datasets/",
+      "https://www.fda.gov/consumers/consumer-updates/grapefruit-juice-and-some-drugs-dont-mix"],
+     "U.S. SR Legacy raw orange and pink or red grapefruit references. The FDA separately describes medication interactions for grapefruit."),
+    ("P02-06", "chicken-thigh-edible-yield", "bone-in-chicken-thigh-cooked-edible-protein.html", "How much edible meat is in a bone-in chicken thigh?",
+     "Translate USDA’s purchase yield into a kitchen example, then calculate protein for cooked meat without bone or skin.",
+     ["https://foodbuyingguide.fns.usda.gov/files/Reports/USDA_FBG_Section1_MeatsAndMeatAlternatesYieldTable.pdf",
+      "https://fdc.nal.usda.gov/download-datasets/"],
+     "USDA Food Buying Guide yield for small skin-on bone-in thighs without backs, and a separate SR Legacy roasted thigh reference."),
+    ("P02-17", "powdered-peanut-vs-spread", "powdered-peanut-butter-vs-spread-protein.html", "How does powdered peanut butter compare with a regular spread for protein?",
+     "A tablespoon label can hide a large weight difference. Compare the listed amounts and then match grams of protein.",
+     ["https://pb2.com/products/pb2-original-powdered-peanut-butter-peanut-butter-powder",
+      "https://www.jif.com/products/simply/simply-creamy-sweetened"],
+     "Named U.S. product labels for the dry powder and the spread. The comparison excludes added liquid or other ingredients."),
+    ("P06-28", "banana-edible-weight", "banana-edible-weight-without-peel-food-log.html", "Should you weigh a banana with or without its peel for a food log?",
+     "Use actual edible weight when available and learn what a USDA purchase yield can estimate.",
+     ["https://foodbuyingguide.fns.usda.gov/files/Reports/USDA_FBG_Section3_FruitsYieldTable.pdf",
+      "https://fdc.nal.usda.gov/download-datasets/"],
+     "U.S. institutional buying yield and USDA SR Legacy raw banana composition. Actual peel and fruit weights vary."),
+    ("P06-05", "menu-data-vs-local-order", "chain-nutrition-page-vs-local-menu-availability.html", "Does a chain’s nutrition page mean a nearby store serves that item?",
+     "Use one real ordering example to separate a documented recipe from a location’s current menu.",
+     ["https://www.tacobell.com/food/deals-and-combos/cravings-box",
+      "https://www.tacobell.com/food/new/cravings-box?store=032077",
+      "https://www.tacobell.com/locations"],
+     "U.S. Taco Bell ordering pages, which can change with store, date and session. This guide does not claim a specific location currently serves the item."),
+    ("P06-06", "taco-bell-box-drink", "taco-bell-cravings-box-calories-include-drink.html", "Does a Taco Bell Cravings Box already include the drink?",
+     "Follow the meal’s scope and choose which number to log for a store-specific box.",
+     ["https://www.tacobell.com/food/new/cravings-box?store=032077",
+      "https://www.tacobell.com/food/online-exclusives/build-your-own-cravings-box?store=025493",
+      "https://www.tacobell.com/nutrition/calculator"],
+     "Examples are from U.S. store-context pages. Box contents, posted ranges and availability may vary."),
+    ("P06-09", "subway-uk-ireland-chicken-salad", "subway-chicken-breast-salad-uk-vs-ireland.html", "Subway Chicken Breast Salad: the UK and Irish pages give different numbers",
+     "Compare the portions by order and per 100 g without guessing which ingredients changed.",
+     ["https://www.subway.com/en-ie/menunutrition/menu/category/salads/product/chicken-breast",
+      "https://www.subway.com/en-gb/menunutrition/menu/category/salads/product/chicken-breast"],
+     "Two official market-specific Subway salad pages. The figures are for the stated listings, not every customized salad."),
+    ("P06-14", "pizza-pizza-same-slice-different-pie", "pizza-pizza-small-medium-same-slice-calories.html", "How can two Pizza Pizza sizes both have 210 calories per pepperoni slice?",
+     "Multiply by the chain’s actual slice count and compare two slices, half a pizza and the whole pie.",
+     ["https://www.pizzapizza.ca/about-us/nutrition/small-pizza/",
+      "https://www.pizzapizza.ca/about-us/nutrition/medium-pizza/"],
+     "Canadian Pizza Pizza pepperoni rows updated March 12, 2026. Whole-pizza and half-pizza estimates multiply rounded slice values."),
+    ("P06-46", "taco-johns-limited-menu-count", "taco-johns-limited-time-menu-coverage-count.html", "How many Taco John’s nutrition listings are marked limited time?",
+     "See which entries a GetMacros snapshot found and how to count them without claiming permanent availability.",
+     ["https://tacojohns.com/wp-content/uploads/2026/09/TAC-26-P5_NUTRITION-GUIDE_ED_V3.pdf",
+      "https://tacojohns.com/nutrition-information/"],
+     "Historical U.S. GetMacros Taco John’s nutrition snapshot for the cited source. This is a count of imported entries, not an inventory of current sales."),
+    ("P06-47", "greggs-pizza-rounding", "greggs-pizza-box-serving-rounding.html", "Why don’t two Greggs pizza slices add up to every number on the box label?",
+     "Compare published single- and double-portion figures and test whether rounding could explain a mismatch.",
+     ["https://a.storyblok.com/f/94904/x/7dd8489dab/nutritional-information.pdf"],
+     "Greggs UK nutrition PDF. Rounding bounds are illustrative tests, not a statement of the company’s actual calculation process."),
+    ("P03-20", "oura-readiness-vs-strength", "does-oura-readiness-score-measure-muscle-recovery.html", "What does an Oura Readiness Score tell you about muscle recovery?",
+     "Read the device’s actual inputs and compare them with a study that tested muscle strength directly.",
+     ["https://support.ouraring.com/hc/en-us/articles/360057791533-Readiness-Contributors",
+      "https://pubmed.ncbi.nlm.nih.gov/17654228/"],
+     "The Oura score description applies to its documented product. The study measures a different outcome."),
+    ("P03-41", "tart-cherry-outcomes", "tart-cherry-juice-soreness-vs-strength-studies.html", "Did tart cherry juice studies find less soreness or faster strength recovery?",
+     "Compare two running-trial questions, then see why a newer pooled estimate treats their outcomes separately.",
+     ["https://pubmed.ncbi.nlm.nih.gov/19883392/",
+      "https://pubmed.ncbi.nlm.nih.gov/20459662/",
+      "https://pubmed.ncbi.nlm.nih.gov/41945263/"],
+     "Exercise recovery research with different interventions and population samples. No product use or treatment instructions."),
+    ("P03-50", "melatonin-phase-outcome", "melatonin-circadian-shift-vs-sleep-onset-study.html", "Why can a melatonin study shift the body clock without proving faster sleep onset?",
+     "Compare two types of timing outcome and see how a study uses the rise of melatonin under dim light.",
+     ["https://pubmed.ncbi.nlm.nih.gov/18006583/",
+      "https://pubmed.ncbi.nlm.nih.gov/23001190/",
+      "https://pubmed.ncbi.nlm.nih.gov/38888087/"],
+     "Chronobiology and sleep research interpretation. No personal schedule or amount is recommended."),
+    ("P04-31", "acne-age-definition", "why-acne-study-age-bands-and-denominators-matter.html", "Why do acne prevalence numbers change when the study changes the age bracket?",
+     "Compare age cutoffs and who entered the denominator in two research designs.",
+     ["https://pubmed.ncbi.nlm.nih.gov/39422854/",
+      "https://pubmed.ncbi.nlm.nih.gov/10495379/",
+      "https://www.fda.gov/media/71152/download"],
+     "Population and methods comparison only. The studies described came from different periods and answer different questions."),
+    ("P05-16", "zinc-copper-duration", "why-high-zinc-studies-check-copper-over-time.html", "Why do studies of repeated high zinc intake check copper too?",
+     "Read the duration and outcome behind the NIH’s zinc and copper summary.",
+     ["https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+      "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/"],
+     "Summary of public NIH reference material. No advice on treating a deficiency or combining supplements."),
+    ("P05-33", "prebiotic-fiber-label", "prebiotic-fiber-vs-dietary-fiber-on-label.html", "Does “prebiotic fiber” mean all the fiber on the label is prebiotic?",
+     "Read the dietary fiber total and the named ingredient separately, using FDA guidance and a scientific consensus definition.",
+     ["https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/questions-and-answers-dietary-fiber",
+      "https://pubmed.ncbi.nlm.nih.gov/28611480/"],
+     "U.S. fiber declaration context and an international scientific consensus. The package example is fictional."),
+    ("P05-49", "d3-gummy-softgel-matched", "vitamin-d3-one-gummy-vs-one-softgel.html", "Can one gummy have the same vitamin D3 as a softgel with half the number on the front?",
+     "Normalize two named labels by serving count and record the equivalent unit just once.",
+     ["https://www.naturemade.com/products/nature-made-vitamin-d3-gummies",
+      "https://www.naturemade.com/products/vitamin-d3-25-mcg-1000-iu-softgels?variant=17609447571527"],
+     "U.S. manufacturer pages for exact Nature Made products. The calculation compares stated amounts and does not recommend use."),
+    ("P06-49", "selenium-ranking-coverage", "selenium-ranking-what-missing-sardines-changes.html", "What happens to a selenium ranking if one food is missing?",
+     "Reproduce a ranking change in a small GetMacros reference set and see why the denominator matters.",
+     ["https://fdc.nal.usda.gov/download-datasets/",
+      "https://getmacros.net/nutrient-density-explorer.html"],
+     "Fixed GetMacros explorer set of 18 selected U.S. reference foods. The missing row is an explicitly simulated scenario."),
 ]
 # The source IDs refer to the already retained USDA reference shards.
 FOODS = {
@@ -816,7 +965,7 @@ SOURCE_TITLES = {
 
 
 def public_articles():
-    return [row for row in ARTICLES if row[1] != 'acne']
+    return ARTICLES
 
 
 def replace_section(text, section_id, replacement):
@@ -1224,18 +1373,27 @@ def guide_topic(row):
     id_, key, *_ = row
     pillar = int(id_[1:3])
     if pillar == 1:
-        if key in ('folate', 'niacin-equivalents'):
+        if key in ('folate', 'niacin-equivalents', 'retinol-activity-equivalents'):
             return 'Reading nutrient values'
-        return 'Vitamins in food' if key.startswith(('vitamin-', 'b12-')) else 'Minerals and choline'
+        if key.startswith(('vitamin-', 'b12-')) or key in ('boiled-broccoli-vitamin-c', 'apricot-drying-portion',
+                                                           'orange-grapefruit-matched-grams', 'lentils-chickpeas-folate-iron'):
+            return 'Vitamins in food'
+        return 'Minerals and choline'
     if pillar == 2:
         if key in ('carnivore-survey-evidence', 'saladino-frameworks', 'blue-zones-pattern', 'blue-diet-meaning',
                    'santa-cruz-hydration-claim', 'predimed-trial-reanalysis', 'mediterranean-snack-vs-pattern'):
             return 'Diet and product claims'
         return 'Food comparisons'
     if pillar == 3:
-        if 'cortisol-' in key:
+        if 'cortisol-' in key or key.endswith('-cortisol'):
             return 'Stress measurements'
-        return 'Exercise recovery' if key in ('infrared-sauna', 'cold-water-lifting') else 'Sleep and timing'
+        if key in ('sports-drink-sodium-bottle', 'exercise-weight-change', 'urine-colour-sport-research'):
+            return 'Hydration measurements'
+        if key in ('infrared-sauna', 'cold-water-lifting', 'sauna-steam-humidity', 'water-vs-air-heat',
+                   'contrast-water-comparator', 'soreness-ice-bath-trials', 'postexercise-soreness',
+                   'oura-readiness-vs-strength', 'tart-cherry-outcomes'):
+            return 'Exercise recovery'
+        return 'Sleep and timing'
     if pillar == 4:
         if key in ('looksmaxxing-context', 'mogging-meaning', 'hypergamy-measure', 'softmaxxing-hardmaxxing'):
             return 'Online terms'
@@ -1244,9 +1402,16 @@ def guide_topic(row):
         if key in ('peptide-labels', 'bpc-regulatory-context'):
             return 'Peptides and policy'
         return 'Ingredient studies' if key in ('creatine-hair', 'magnesium-form-study') else 'Reading supplement labels'
-    if key in ('breakfast-fiber', 'uk-weight-coverage', 'canada-sodium-coverage', 'uk-restaurant-alias-ranking'):
+    if key in ('breakfast-fiber', 'uk-weight-coverage', 'canada-sodium-coverage', 'uk-restaurant-alias-ranking',
+               'taco-johns-limited-menu-count', 'selenium-ranking-coverage'):
         return 'GetMacros data studies'
-    return 'Diary calculations' if 'rounding' in key or key == 'uk-menu-salt-sodium' else 'Restaurant comparisons'
+    if key in ('uk-menu-salt-sodium', 'banana-edible-weight', 'diary-export-unknown', 'diary-saved-source-values',
+               'calories-only-diary-backup', 'rice-volume-weight-log', 'weigh-food-from-package',
+               'package-as-prepared-dinner', 'dual-column-package', 'beans-drained-recipe', 'week-label-rounding'):
+        return 'Diary calculations'
+    if key == 'fiber-serving-rank-reversal':
+        return 'Food comparisons'
+    return 'Restaurant comparisons'
 
 
 def section_page(index, items, script_url):
@@ -1288,11 +1453,10 @@ def section_page(index, items, script_url):
 
 
 def apply():
-    for row in ARTICLES:
-        parent = DOCS if row[1] == 'acne' else ROOT
-        if parent == DOCS and not (SOURCE / (row[1] + '.html')).exists():
-            continue
-        (parent / row[2]).write_text(article_page(row), encoding='utf8', newline='\n')
+    for row in public_articles():
+        (ROOT / row[2]).write_text(article_page(row), encoding='utf8', newline='\n')
+    if (SOURCE / (REVIEW_DRAFT[1] + '.html')).is_file():
+        (DOCS / REVIEW_DRAFT[2]).write_text(article_page(REVIEW_DRAFT), encoding='utf8', newline='\n')
     assets = ROOT / 'assets/generated'
     registry = assets / 'manifest.json'
     entries = json.loads(registry.read_bytes())
