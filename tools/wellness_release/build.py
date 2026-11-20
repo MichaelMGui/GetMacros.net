@@ -611,6 +611,159 @@ ARTICLES = [
      ['https://pubmed.ncbi.nlm.nih.gov/38291989/',
       'https://pubmed.ncbi.nlm.nih.gov/38633058/'],
      'Study interpretation only. The compared products, participant groups and outcomes do not establish individual recommendations.'),
+    ('P03-21', 'postexercise-soreness', 'what-soreness-means-for-muscle-recovery.html', 'Does soreness tell you your muscles have recovered?',
+     'Compare reported soreness with strength and lab measures after an unfamiliar exercise bout.',
+     ['https://pubmed.ncbi.nlm.nih.gov/27116346/',
+      'https://pubmed.ncbi.nlm.nih.gov/27219125/'],
+     'Interpretation of exercise recovery measurements. The group results do not diagnose injury or determine an individual’s readiness.'),
+    ('P03-32', 'contrast-water-comparator', 'contrast-water-recovery-how-to-read-the-control.html', 'Is it the hot water, the cold or the contrast? What recovery studies can isolate',
+     'Compare cold-only, contrast and control conditions before attributing a recovery effect to alternating temperatures.',
+     ['https://pubmed.ncbi.nlm.nih.gov/21132438/',
+      'https://pubmed.ncbi.nlm.nih.gov/29299318/',
+      'https://pubmed.ncbi.nlm.nih.gov/42713556/'],
+     'Study-method comparison in trained adults. The article does not provide a home immersion protocol.'),
+    ('P03-38', 'urine-colour-sport-research', 'urine-color-hydration-what-it-measures.html', 'What can urine color actually tell you about hydration?',
+     'Read how scientists compared color with urinary concentration and why one sample cannot summarize your fluid balance.',
+     ['https://pubmed.ncbi.nlm.nih.gov/36034925/'],
+     'Research literacy about samples and instruments. No clinical threshold, diagnosis or intake target.'),
+    ('P04-18', 'sun-measurement-skin', 'how-skin-studies-measure-sun-exposure.html', 'How do skin studies separate a nutrition result from sun exposure?',
+     'Compare questionnaire, diary and badge methods and see why equal time outside can mean different exposure.',
+     ['https://pubmed.ncbi.nlm.nih.gov/29421857/',
+      'https://pubmed.ncbi.nlm.nih.gov/27419038/',
+      'https://pubmed.ncbi.nlm.nih.gov/23732711/'],
+     'Methods used in sun-exposure validation studies and a randomized skin-outcome study. No sun exposure recommendation.'),
+    ('P05-06', 'compounding-fda-distinction', 'compounded-medicine-vs-fda-approved.html', 'Does ‘compounded’ mean a medicine is FDA-approved?',
+     'Distinguish FDA approval of a finished medicine from pharmacy compounding and facility registration.',
+     ['https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers',
+      'https://www.fda.gov/drugs/human-drug-compounding/questions-and-answers-outsourcing-facility-registration',
+      'https://www.fda.gov/drugs/human-drug-compounding/compounding-laws-and-policies'],
+     'U.S. FDA regulatory definitions. No advice about choosing a medication or obtaining a compounded product.'),
+    ('P05-31', 'probiotic-strain-label', 'what-a-probiotic-strain-code-means.html', 'How to read a probiotic strain code on the label',
+     'Match a strain code across a study and a bottle even when the genus name has changed.',
+     ['https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/',
+      'https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling'],
+     'NIH strain nomenclature and U.S. label literacy. Published examples are about identity rather than disease-specific effectiveness.'),
+    ('P01-22', 'thiamin-enriched-flour', 'thiamin-enriched-vs-unenriched-flour.html', 'How much thiamin does flour enrichment add to a recipe?',
+     'Compare two all-purpose flour records at the same weight and calculate the ingredient contribution per roll.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/',
+      'https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-137/subpart-B/section-137.165'],
+     'U.S. SR Legacy flour references and U.S. enriched flour rules. The per-roll math is for the unbaked ingredient.'),
+    ('P01-35', 'two-boiled-eggs-nutrients', 'two-boiled-eggs-nutrients-beyond-protein.html', 'What do two hard-boiled eggs provide besides protein?',
+     'See the B12, selenium, vitamin D and other values for two large eggs and compare a side’s contribution.',
+     ['https://fdc.nal.usda.gov/download-datasets/'],
+     'U.S. USDA SR Legacy egg and spinach references. Use edible cooked weights without the shell.'),
+    ('P01-43', 'lentils-chickpeas-folate-iron', 'lentils-vs-chickpeas-iron-folate-per-serving.html', 'Lentils vs. chickpeas for iron and folate in a half-cup',
+     'Compare the same cooked weight and the same volume, then calculate a mix of both.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/'],
+     'USDA SR Legacy cooked, unsalted legume entries. Total iron in the table is not a measure of absorption.'),
+    ('P02-04', 'ground-beef-cooked-lean', '80-20-vs-90-10-ground-beef-cooked.html', '80/20 vs. 90/10 ground beef after cooking: how different is an 85 g patty?',
+     'Compare two broiled patties at the same cooked weight and see why the raw label does not scale directly.',
+     ['https://fdc.nal.usda.gov/download-datasets/',
+      'https://www.ars.usda.gov/ARSUserFiles/80400535/Data/retn/retn06.pdf'],
+     'USDA SR Legacy values for two broiled beef patty records. No additions included.'),
+    ('P02-05', 'turkey-beef-saturated-fat', 'ground-turkey-vs-ground-beef-saturated-fat.html', 'Can ground turkey have more saturated fat than ground beef?',
+     'Compare three broiled USDA patties with different starting fat percentages.',
+     ['https://fdc.nal.usda.gov/download-datasets/'],
+     'USDA SR Legacy broiled plain patties. The results depend on the exact blend and preparation.'),
+    ('P02-15', 'lentils-replace-ground-beef', 'replace-ground-beef-with-lentils-protein-and-fiber.html', 'What changes if you swap half the ground beef for cooked lentils?',
+     'Keep the cooked weight unchanged and see how calories, protein and fiber shift together.',
+     ['https://fdc.nal.usda.gov/download-datasets/'],
+     'USDA SR Legacy boiled lentils and cooked ground beef. Sauce, oil and other ingredients are excluded.'),
+    ('P02-24', 'egg-whites-vs-whole', 'egg-whites-vs-whole-eggs-real-portions.html', 'How do four egg whites compare with two whole eggs?',
+     'Compare real ingredient amounts, then see why equal weight answers a different question.',
+     ['https://fdc.nal.usda.gov/download-datasets/'],
+     'USDA SR Legacy raw egg ingredients measured before cooking. This is a recipe comparison.'),
+    ('P02-44', 'chicken-tofu-chickpea-bowl', 'tofu-chickpea-bowl-vs-chicken-bowl-protein.html', 'Can a tofu and chickpea bowl match a chicken bowl for protein?',
+     'Use two worked recipes with the same cooked rice and see which portions get both bowls to about 29 g protein.',
+     ['https://fdc.nal.usda.gov/download-datasets/'],
+     'Calculated portions based on USDA SR Legacy entries. No dressing, oil or seasoning added.'),
+    ("P01-29", "boiled-broccoli-vitamin-c", "broccoli-vitamin-c-boiled-retention.html", "How much vitamin C stays in broccoli after boiling?",
+     "Compare the same broccoli before and after cooking and see why concentration alone can give a different answer.",
+     ["https://pmc.ncbi.nlm.nih.gov/articles/PMC6049644/"],
+     "A laboratory comparison of specified cooking conditions. Results vary with time, water, preparation and the starting broccoli."),
+    ("P01-33", "tofu-calcium-label", "calcium-in-tofu-firm-vs-regular.html", "Can two types of calcium-set tofu list very different amounts of calcium?",
+     "Compare two calcium-sulfate reference entries at the same weight, then see where to look on a package.",
+     ["https://fdc.nal.usda.gov/download-datasets/",
+      "https://www.ams.usda.gov/sites/default/files/media/Calcium%20Sulfate%202%20TR.pdf"],
+     "The quantities are historical USDA SR Legacy reference values for two preparations, not estimates for any package on sale."),
+    ("P02-47", "oatmilk-enzymes-sugar", "why-oat-milk-has-added-sugar-without-sugar-ingredient.html",
+     "Why does some oat milk have added sugar with no sugar in the ingredients?",
+     "Read the FDA’s explanation and compare two U.S. Oatly cartons at the same volume.",
+     ["https://www.fda.gov/media/117402/download",
+      "https://www.oatly.com/en-us/products/chilled-oatmilk/chilled-oatmilk-full-fat-64-oz",
+      "https://www.oatly.com/en-us/products/chilled-oatmilk/chilled-oatmilk-unsweetened-64-oz"],
+     "FDA guidance and official labels for two named U.S. products. Cartons in other markets can differ."),
+    ("P04-38", "skin-hydration-probes", "skin-hydration-meters-compare-readings.html", "Why can two skin hydration meters disagree on the same patch?",
+     "Compare what capacitance and conductance measure and what belongs next to a published change in hydration.",
+     ["https://pubmed.ncbi.nlm.nih.gov/14731246/",
+      "https://pubmed.ncbi.nlm.nih.gov/35980652/"],
+     "Instrument-comparison research in defined test groups. This is a reading guide to evidence, not a skin assessment."),
+    ("P05-14", "b12-form-vs-dose", "vitamin-b12-form-vs-dose-absorption.html", "Does a different form of vitamin B12 guarantee higher absorption?",
+     "Separate the chemical form on a label from the dose and the fraction that was absorbed.",
+     ["https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"],
+     "NIH Office of Dietary Supplements reference estimates for oral supplements. The worked arithmetic has no dosing recommendation."),
+    ("P05-32", "probiotic-cfu-expiry", "probiotic-cfu-at-manufacture-vs-expiration.html", "When does a probiotic’s advertised CFU count apply?",
+     "Compare two example labels and find out how serving units, expiration and storage affect the meaning of the number.",
+     ["https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/"],
+     "U.S. Supplement Facts context. Package examples are fictional and illustrate label reading."),
+    ("P06-44", "fiber-serving-rank-reversal", "which-food-has-more-fiber-serving-vs-calorie.html", "Why does spinach rank above beans for fiber per calorie, but below them per serving?",
+     "Compare boiled spinach, black beans, lentils and a tomato using the actual weight needed for each serving basis.",
+     ["https://fdc.nal.usda.gov/download-datasets/"],
+     "USDA SR Legacy for the four specified preparations. No salt, sauce or toppings added in the examples."),
+    ("P06-12", "uk-restaurant-alias-ranking", "uk-protein-ranking-location-duplicate-records.html", "How duplicate location listings change a UK protein ranking",
+     "See what happened to a ten-item protein list when exact airport duplicates were grouped and unique dishes were kept.",
+     ["https://www.nandos.co.uk/food/menu/",
+      "https://www.nandos.co.uk/allergens/allergy-information-gatwick",
+      "https://www.wendys.com/sites/default/files/2026-04/United-Kingdom-National-Nutrition-Information---3.25.2026-(002).pdf",
+      "https://pepes.co.uk/nutrition-allergens-uk/"],
+     "Historical GetMacros UK source snapshot. Current official pages are supplied for recipe and menu context, and values can change."),
+    ("P03-23", "sauna-steam-humidity", "steam-room-dry-sauna-humidity-study.html", "Why can a cooler steam room feel harder than a hot dry sauna?",
+     "Read a crossover comparison of humidity, body mass and heat strain alongside a controlled humidity experiment.",
+     ["https://pubmed.ncbi.nlm.nih.gov/24899780/",
+      "https://pubmed.ncbi.nlm.nih.gov/24597154/"],
+     "Laboratory studies in small groups of healthy men. No personal heat exposure plan or safety threshold is inferred."),
+    ("P03-25", "water-vs-air-heat", "hot-bath-study-vs-steam-room-evidence.html", "Why doesn’t a hot bath study tell you what happens in a steam room?",
+     "Compare an actual water-immersion trial with the separate design a steam-room claim would need.",
+     ["https://pubmed.ncbi.nlm.nih.gov/40332494/",
+      "https://pubmed.ncbi.nlm.nih.gov/24899780/"],
+     "Protocols in healthy adult samples. Acute measurements describe the trial conditions and are not instructions for home heat exposure."),
+    ("P03-33", "sports-drink-sodium-bottle", "sports-drink-sodium-per-bottle-serving.html", "How much sodium is in the whole sports drink bottle?",
+     "Convert a 12-ounce comparison to what you actually drink without mistaking a scaled amount for the package label.",
+     ["https://www.gatorade.com/sports-drinks/gatorade-thirst-quencher/lemon-lime",
+      "https://performancepartner.gatorade.com/content/resources/pdfs/foods-fluids-for-explosive-power-sports-2026.pdf"],
+     "U.S. manufacturer figures for named beverages. Derived volumes are labeled as estimates and do not prescribe intake."),
+    ("P03-36", "exercise-weight-change", "before-after-exercise-weight-sweat-loss.html", "Does the change on a scale show how much you sweated?",
+     "Work through an example in which net weight and estimated sweat loss give different numbers.",
+     ["https://pmc.ncbi.nlm.nih.gov/articles/PMC5634236/",
+      "https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1633159"],
+     "A numerical example of a sports science method. No personal fluid target or body composition estimate is inferred."),
+    ("P03-46", "sleep-diary-observations", "sleep-diary-without-a-sleep-score.html", "How to keep a sleep diary without turning it into a score",
+     "Use a few observations and a worked night to pair subjective sleep quality with estimated timing.",
+     ["https://pmc.ncbi.nlm.nih.gov/articles/PMC3250369/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8314633/"],
+     "The Consensus Sleep Diary and a comparison study inform the example. It is not a sleep diagnosis."),
+    ("P05-15", "elemental-zinc-label", "elemental-zinc-on-supplement-facts.html", "What does “zinc 15 mg as zinc gluconate” mean on a label?",
+     "Read the elemental zinc line, source ingredient and serving size separately.",
+     ["https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"],
+     "U.S. Supplement Facts context. The numbers on the illustrated label are fictional."),
+    ("P05-18", "epa-dha-softgels-normalized", "compare-epa-dha-per-softgel.html", "Which fish oil has more EPA and DHA once you compare one capsule?",
+     "Normalize two named softgel products to the same capsule count and see how the result changes.",
+     ["https://www.naturemade.com/products/fish-oil-1200-mg-softgels-burp-less-one-per-day",
+      "https://www.nordic.com/products/ultimate-omega/",
+      "https://www.nordic.com/cofa-results/?LotNumber=252648"],
+     "Manufacturer declarations and one stated specification for a Nordic Naturals lot. This is a serving-math comparison, not product dosing advice."),
+    ("P05-36", "daily-value-upper-limit", "daily-value-vs-upper-intake-limit.html", "Does a supplement’s % Daily Value tell you its upper limit?",
+     "Read two different reference numbers and calculate what a big percentage on the label actually compares.",
+     ["https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+      "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/"],
+     "U.S. general label Daily Value and adult U.S. upper limit example. Suggested or personal intakes are outside scope."),
+    ("P06-45", "diary-export-unknown", "what-null-means-on-a-food-diary-export.html", "What does a null nutrient mean in a GetMacros diary export?",
+     "Learn what a blank value says about the source and how to read an exported sum without counting unknown amounts as zero.",
+     ["https://getmacros.net/food-diary.html",
+      "https://getmacros.net/privacy.html"],
+     "GetMacros diary JSON behavior. Example records are fictional, and exports remain private."),
 ]
 # The source IDs refer to the already retained USDA reference shards.
 FOODS = {
@@ -623,6 +776,20 @@ FOODS = {
     'Nuts & seeds': {170158:'Dry roasted almonds, no salt', 170557:'Roasted pumpkin seed kernels, no salt'},
     'Dairy, eggs, meat & fish': {170886:'Plain low-fat yogurt', 173424:'Hard-boiled egg',
       171477:'Roasted chicken breast, meat only', 175139:'Atlantic sardines, oil-packed, drained with bones'},
+}
+# These labels identify measured portions in the retained source records.
+LISTED_PORTIONS = {
+    171688: '1 medium (3" dia)',
+    173944: '1 medium (7" to 7-7/8" long)',
+    169097: '1 fruit (2-5/8" dia)',
+    170457: '1 medium whole (2-3/5" dia)',
+    169967: '0.5 cup, chopped',
+    173904: '0.33 cup',
+    173905: '1 cup',
+    170158: '1 oz (22 whole kernels)',
+    170886: '1 container (6 oz)',
+    173424: '1 large',
+    175139: '1 can (3.75 oz)',
 }
 NUTRIENTS = ('magnesium', 'potassium', 'calcium', 'iron', 'zinc', 'selenium', 'vitaminC',
              'vitaminB12', 'vitaminA', 'vitaminD', 'vitaminE', 'vitaminK', 'folate', 'p', 'f')
@@ -673,8 +840,13 @@ def projection():
             record = next(row for row in data if row['id'] == id_)
             assert record['basis'] == {'amount': 100, 'unit': 'g'} and record['market'] == 'US-reference'
             portions = record.get('portions', [])
-            portion = next((p for p in portions if p['label'] == '1 oz' and p['grams'] > 0),
-                           next((p for p in portions if p['grams'] > 0), None))
+            usable = [p for p in portions if p['grams'] > 0]
+            preferred = LISTED_PORTIONS.get(source_id, '1 oz')
+            portion = next((p for p in usable if p['label'] == preferred), None)
+            if source_id in LISTED_PORTIONS:
+                assert portion, f'Check the listed portion for USDA record {source_id}.'
+            if not portion:
+                portion = next(iter(usable), None)
             rows.append(dict(id=source_id, label=label, name=record['name'], group=group, portion=portion,
                              values={key: record['nutrients'].get(key) for key in (*NUTRIENTS, 'cal', 'na')}))
     return dict(rows=rows, nutrients={key: fields[key] for key in NUTRIENTS}, source=FDC_DATA)
@@ -869,6 +1041,8 @@ def article_page(row):
         body = uk_weight_coverage(body)
     if key == 'canada-sodium-coverage':
         body = canada_sodium_coverage(body)
+    if key == 'uk-restaurant-alias-ranking':
+        verify_uk_alias_ranking()
     body = body.replace('<table>', '<div class="table-wrap"><table>').replace('</table>', '</table></div>')
     links = [{'url':'/' + EXPLORER, 'label':'Compare vitamins and minerals'}] if id_.startswith('P01') else []
     if key in ('raw-milk','supplement-label'):
@@ -923,6 +1097,26 @@ def article_page(row):
 def registry_market(market):
     return [row for row in json.loads((ROOT / 'js/order-registry.json').read_bytes())['records']
             if row['market'] == market]
+
+
+def verify_uk_alias_ranking():
+    rows = sorted(
+        (row for row in registry_market('GB')
+         if row.get('category') == 'entree' and isinstance(row.get('cal'), (int, float))
+         and 0 < row['cal'] <= 650 and isinstance(row.get('p'), (int, float)) and row['p'] >= 20),
+        key=lambda row: (-row['p'], row['cal'], row['name']))
+    grouped = {}
+    for row in rows:
+        name = row['name'].removesuffix(' · Exclusive to Gatwick')
+        fields = ('cal', 'p', 'c', 'fat', 'f', 'na', 'serving', 'source')
+        grouped.setdefault((row['chain'], name, *(row.get(field) for field in fields)), row)
+    distinct = list(grouped.values())
+    assert (len(rows), len(distinct), len({row['chain'] for row in rows})) == (350, 333, 17)
+    for chain, raw_count, distinct_count in (('Nando’s', 8, 7), ('Pepe’s', 1, 1), ('Wendy’s', 1, 2)):
+        assert (sum(row['chain'] == chain for row in rows[:10]),
+                sum(row['chain'] == chain for row in distinct[:10])) == (raw_count, distinct_count)
+    assert all((row['cal'], row['p']) == (579, 78.7) for row in rows[:2])
+    assert distinct[9]['name'].startswith('Chicken Benedict') and (distinct[9]['cal'], distinct[9]['p']) == (619, 50)
 
 
 def breakfast_fiber(body):
@@ -1050,7 +1244,7 @@ def guide_topic(row):
         if key in ('peptide-labels', 'bpc-regulatory-context'):
             return 'Peptides and policy'
         return 'Ingredient studies' if key in ('creatine-hair', 'magnesium-form-study') else 'Reading supplement labels'
-    if key in ('breakfast-fiber', 'uk-weight-coverage', 'canada-sodium-coverage'):
+    if key in ('breakfast-fiber', 'uk-weight-coverage', 'canada-sodium-coverage', 'uk-restaurant-alias-ranking'):
         return 'GetMacros data studies'
     return 'Diary calculations' if 'rounding' in key or key == 'uk-menu-salt-sodium' else 'Restaurant comparisons'
 
