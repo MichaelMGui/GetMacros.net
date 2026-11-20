@@ -60,6 +60,9 @@ ARTICLES = [
     ('P01-14', 'vitamin-k-greens', 'vitamin-k-spinach-kale-broccoli-servings.html', 'Spinach, kale or broccoli: how much vitamin K is in a serving?',
      'Compare raw leaves and cooked greens. A side-dish example shows why a cup measure cannot establish what cooking does.',
      [ODS.format('VitaminK')], 'Reference food composition. The table does not establish nutrient retention after cooking.'),
+    ('P01-18', 'iodized-salt-pinch', 'iodine-in-iodized-salt-per-pinch.html', 'How much iodine is in a pinch of iodized salt?',
+     'Compare iodized table salt and noniodized sea salt by a measured portion, and see why a pinch adds uncertainty.',
+     [ODS.format('Iodine')], 'U.S. food composition and kitchen measurement. Amounts are examples, not sodium or iodine intake targets.'),
     ('P01-24', 'niacin-equivalents', 'what-are-niacin-equivalents-food-tables.html', 'What are niacin equivalents? How to read B3 in a food table',
      'Read preformed niacin and niacin equivalents on the same basis with a worked example from the NIH reference table.',
      [ODS.format('Niacin')], 'Reference-accounting example. The conversion is a convention and does not predict individual metabolism.'),
@@ -81,6 +84,19 @@ ARTICLES = [
      'A pasture study and an egg carton report different kinds of information. Compare quantities per egg and check which fatty acid the carton names.',
      ['https://www.nal.usda.gov/exhibits/ipd/frostonchickens/items/show/267', 'https://www.ams.usda.gov/publications/qa-shell-eggs'],
      'U.S. carton literacy and a primary study of a specific feeding and housing comparison.'),
+    ('P02-09', 'whole-vs-skim-protein', 'whole-milk-vs-skim-protein-per-cup.html', 'Does whole milk have more protein than skim milk?',
+     'Compare matching whole and skim cartons by the cup, then see why equal calories give a different result.',
+     ['https://www.organicvalley.coop/products/whole-milk','https://www.organicvalley.coop/products/skim-fat-free-milk'],
+     'U.S. product comparison using the manufacturer’s half-gallon labels.'),
+    ('P02-10', 'lactose-free-milk-cartons', 'lactose-free-vs-regular-2-percent-milk.html', 'What changes on the label when 2% milk is lactose-free?',
+     'Compare two U.S. half-gallons from the same brand and a separate high-protein lactose-free milk.',
+     ['https://www.organicvalley.coop/products/2-percent-reduced-fat-milk',
+      'https://www.organicvalley.coop/products/2-percent-reduced-fat-milk-lactose-free',
+      'https://www.lactaid.com/products/lactaid-protein-2-percent-milk'],
+     'Comparison of named U.S. labels. Formulation can vary between brands, sizes and dates.'),
+    ('P02-20', 'tuna-drained-packing', 'tuna-oil-vs-water-drained-weight.html', 'Tuna in oil vs. water: what still differs after draining?',
+     'Compare two USDA records for drained, no-added-salt light tuna at 100 g and the same 3-ounce serving.',
+     [FDC.format(174227), FDC.format(171986)], 'U.S. SR Legacy reference comparison. It does not isolate the effect of the packing medium in one experiment.'),
     ('P02-38', 'blue-zones-pattern', 'blue-zones-diet-food-guide-vs-research.html', 'What is the Blue Zones diet? Separate the menu from the research',
      'Learn what the program suggests, what an Adventist cohort studied and how to compare the beans in an actual meal.',
      ['https://www.bluezones.com/wp-content/uploads/2019/12/BZL_Food-Guidelines-Printable_02.pdf',
@@ -99,6 +115,14 @@ ARTICLES = [
      'See how cortisol-awakening research distinguishes time since waking from clock time, with a worked timeline.',
      ['https://pubmed.ncbi.nlm.nih.gov/26563991/', 'https://pubmed.ncbi.nlm.nih.gov/36252387/'],
      'Research methods. Individual test interpretation and diagnosis are outside this guide.'),
+    ('P03-06', 'cortisol-sample-types', 'cortisol-hair-saliva-blood-study-differences.html', 'Why cortisol studies use hair, saliva or blood',
+     'Compare the time window each sample type represents and see why a one-time reading differs from repeated measurements.',
+     ['https://pubmed.ncbi.nlm.nih.gov/21515299/', 'https://pubmed.ncbi.nlm.nih.gov/24513702/'],
+     'Research methods. Individual testing and diagnosis are outside the article’s scope.'),
+    ('P03-13', 'sleep-regularity-measure', 'sleep-regularity-versus-duration-study.html', 'What does sleep regularity measure that sleep duration misses?',
+     'Two hypothetical schedules with the same sleep duration show what a sleep regularity study is comparing.',
+     ['https://www.nature.com/articles/s41598-017-03171-4', 'https://pubmed.ncbi.nlm.nih.gov/37738616/'],
+     'Research methods and observational study interpretation. The schedules are illustrations, not personalised sleep guidance.'),
     ('P03-16', 'decaf-caffeine', 'does-decaf-coffee-have-caffeine.html', 'Does decaf coffee have caffeine? Check the cup size',
      'Compare the FDA’s typical decaf range with measured coffee-shop samples and put different drink sizes on the same basis.',
      ['https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much', 'https://academic.oup.com/jat/article-abstract/30/8/611/714415'],
@@ -112,6 +136,10 @@ ARTICLES = [
      'Compare how two resistance training studies measured muscle size and strength after repeated cold-water immersion.',
      ['https://pubmed.ncbi.nlm.nih.gov/26174323/', 'https://pubmed.ncbi.nlm.nih.gov/31513450/'],
      'Research interpretation. No instructions for cold-water exposure or treatment.'),
+    ('P03-48', 'phone-night-shift-trial', 'does-night-shift-phone-mode-improve-sleep.html', 'Does Night Shift help you sleep? What the phone trial compared',
+     'Compare a warmer display, normal display and a no-phone condition, then distinguish sleep measures from melatonin.',
+     ['https://pubmed.ncbi.nlm.nih.gov/33867308/', 'https://pubmed.ncbi.nlm.nih.gov/31191118/'],
+     'Research interpretation. Results apply to the devices, participants and conditions tested.'),
     ('P04-01', 'acne', 'diet-and-acne-what-the-trial-tested.html', 'Can diet affect acne? What the trial changed besides sugar',
      'Read what a 12-week acne trial tested and compare its conclusions with the dermatology guideline.',
      ['https://pubmed.ncbi.nlm.nih.gov/17616769/', 'https://www.aad.org/news/updated-guidelines-acne-management'],
@@ -135,10 +163,18 @@ ARTICLES = [
      'Read before-and-after claims with a camera distance, lighting, pose and study-design checklist.',
      ['https://pubmed.ncbi.nlm.nih.gov/29494735/', 'https://pubmed.ncbi.nlm.nih.gov/37543968/'],
      'Research literacy. The hypothetical image comparison illustrates confounding and perspective.'),
+    ('P04-14', 'skin-hydration-meaning', 'what-skin-hydration-studies-measure.html', 'What does a skin hydration study actually measure?',
+     'Separate skin capacitance, elasticity and photo ratings, then check how soon a reading was taken after application.',
+     ['https://pubmed.ncbi.nlm.nih.gov/11428963/'], 'Instrument and outcome literacy. No treatment or product ranking.'),
     ('P04-19', 'sleep-face-ratings', 'sleep-loss-face-photo-ratings.html', 'Does sleep change how you look in photos? What two studies rated',
      'Compare who was photographed, who rated the pictures, and why an observer’s impression does not measure skin health.',
      ['https://pubmed.ncbi.nlm.nih.gov/21156746/', 'https://pubmed.ncbi.nlm.nih.gov/28572989/'],
      'Interpretation of observer ratings from two experimental photography studies.'),
+    ('P04-34', 'clinical-grade-labels', 'what-clinical-grade-means-skincare-label.html', 'What does “clinical grade” mean on a skincare label?',
+     'Check the actual product claim, study and outcome behind a prominent skincare label phrase.',
+     ['https://www.fda.gov/cosmetics/cosmetics-labeling/cosmetics-labeling-claims',
+      'https://www.fda.gov/cosmetics/resources-consumers-cosmetics/cosmetics-safety-qa-personal-care-products'],
+     'U.S. label and advertising literacy. The examples are fictional.'),
     ('P04-35', 'sponsored-beauty-posts', 'sponsored-beauty-posts-disclosure-evidence.html', 'What does “gifted” or “paid partnership” tell you about a beauty claim?',
      'Read the disclosure, the claim and the source separately. Three worked examples show what each label establishes.',
      ['https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers', 'https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking'],
@@ -153,6 +189,17 @@ ARTICLES = [
       'https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap',
       'https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers'],
      'U.S. regulatory and label literacy. No eligibility or advice for a particular product.'),
+    ('P05-04', 'bpc-regulatory-context', 'bpc-157-human-evidence-and-us-policy.html', 'Is BPC-157 approved? What changed in the 2026 U.S. compounding policy',
+     'Read the FDA staff review, committee vote and HHS interim policy separately. Each answers a different question about evidence or approval.',
+     ['https://www.fda.gov/media/193343/download',
+      'https://www.hhs.gov/sites/default/files/hhs-503a-peptide-enforcement-discretion-policy.pdf',
+      'https://www.hhs.gov/sites/default/files/hhs-peptide-enforcement-discretion-appendix-b.pdf',
+      'https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers'],
+     'Dated U.S. agency-document explainer. No treatment, dosing, or product access advice.'),
+    ('P05-12', 'vitamin-d-label-units', 'vitamin-d-mcg-to-iu-on-label.html', 'Vitamin D on labels: how to convert micrograms and IU',
+     'Convert both vitamin D units and two serving sizes without mistaking equivalent amounts for separate entries.',
+     [ODS.format('VitaminD'), 'https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling'],
+     'U.S. label arithmetic. The example values are fictional and are not suggested doses.'),
     ('P05-22', 'creatine-hair', 'creatine-hair-loss-what-trials-measured.html', 'Does creatine cause hair loss? Two trials tested different things',
      'Compare an older DHT study with a 12-week randomized trial that measured hair directly.',
      ['https://pubmed.ncbi.nlm.nih.gov/19741313/', 'https://pubmed.ncbi.nlm.nih.gov/40265319/'],
@@ -183,6 +230,14 @@ ARTICLES = [
      ['https://getmacros.net/fast-food-nutrition-data-report.html', 'https://pizzanova.com/nutrition',
       'https://www.chick-fil-a.ca/nutrition-allergens'],
      'Snapshot of the Canadian GetMacros registry. The Pizza Nova source is the retained calories-only capture; its live page could not be rechecked.'),
+    ('P06-07', 'fruit-fries-order', 'chick-fil-a-fruit-cup-vs-waffle-fries-order.html', 'What changes when you swap waffle fries for fruit at Chick-fil-A?',
+     'Compare the same 8-count U.S. nuggets with small waffle fries or a small fruit cup, using the official portions.',
+     ['https://www.chick-fil-a.com/nutrition-allergens'],
+     'Two calculated U.S. orders using individually published portions. Sauces and drinks are excluded.'),
+    ('P06-33', 'week-label-rounding', 'weekly-food-log-nutrition-label-rounding.html', 'How much can food label rounding move a week of diary entries?',
+     'Follow two hypothetical added-sugar numbers from the unrounded amount to the printed serving and the weekly total.',
+     ['https://www.fda.gov/media/134505/download', 'https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label'],
+     'U.S. label rounding example. The products and unrounded values are invented to illustrate the rule.'),
 ]
 # The source IDs refer to the already retained USDA reference shards.
 FOODS = {
@@ -290,8 +345,9 @@ def shell(slug, title, summary, main, schema=None, *, private=False):
 
 
 def explorer_page(data, script_url):
-    def options(values):
-        return ''.join(f'<option value="{escape(key, quote=True)}">{escape(label)}</option>' for key,label in values)
+    def options(values, selected=None):
+        return ''.join(f'<option value="{escape(key, quote=True)}"{" selected" if key == selected else ""}>{escape(label)}</option>'
+                       for key, label in values)
     rows = sorted(data['rows'], key=lambda row: row['values']['magnesium'] if row['values']['magnesium'] is not None else -1, reverse=True)
     initial = ''.join('<tr><th scope="row">' + escape(row['label']) + '</th><td>100 g</td><td>' +
                       (str(row['values']['magnesium']) + ' mg' if row['values']['magnesium'] is not None else 'Unknown') +
@@ -299,10 +355,12 @@ def explorer_page(data, script_url):
     summary = f'Compare {len(rows)} USDA reference foods by vitamins, minerals, protein or fiber per 100 g, per portion or per 100 calories.'
     nutrient_options = options((key, value['label']) for key, value in data['nutrients'].items())
     category_options = options((name, name) for name in FOODS)
+    food_options = sorted(((str(row['id']),row['label']) for row in data['rows']), key=lambda row: row[1].casefold())
     payload = json.dumps(data, ensure_ascii=True, separators=(',', ':')).replace('<', '\\u003c')
     main = f'''<main id="main-content" class="container"><article class="article-container release-article">
 <nav aria-label="Breadcrumb"><a href="/articles.html">Guides</a></nav>
 <h1>Nutrient Density Explorer</h1><p>{escape(summary)}</p>
+<p><a href="#compare-protein-and-fiber" data-macro-pair-link hidden>Compare protein and fiber side by side</a></p>
 <section data-nutrient-explorer aria-label="Food nutrient comparison">
 <form class="form-grid" hidden>
 <div><label for="explorer-nutrient">Nutrient</label> <select id="explorer-nutrient" name="nutrient">{nutrient_options}</select></div>
@@ -316,6 +374,16 @@ def explorer_page(data, script_url):
 <caption>Selected USDA SR Legacy reference foods</caption>
 <thead><tr><th scope="col">Food</th><th scope="col">Amount of food</th><th scope="col" data-amount-label>Magnesium per 100 g</th><th scope="col">Source</th></tr></thead>
 <tbody>{initial}</tbody></table></div>
+<section id="compare-protein-and-fiber" data-macro-pair hidden aria-labelledby="macro-pair-title">
+<h2 id="macro-pair-title">Compare protein and fiber in two foods</h2>
+<form class="form-grid">
+<div><label for="macro-pair-first">First food</label><select id="macro-pair-first" name="first">{options(food_options, '173735')}</select></div>
+<div><label for="macro-pair-second">Second food</label><select id="macro-pair-second" name="second">{options(food_options, '173905')}</select></div>
+<div><label for="macro-pair-basis">Protein and fiber basis</label><select id="macro-pair-basis" name="basis"><option value="100g">100 g</option><option value="portion">Listed portion</option><option value="100kcal">100 kcal</option></select></div>
+</form>
+<div class="table-wrap" role="region" aria-label="Protein and fiber comparison" tabindex="0"><table>
+<caption>Protein and fiber in the selected foods</caption><thead><tr><th scope="col">Food and amount</th><th scope="col">Protein</th><th scope="col">Fiber</th></tr></thead>
+<tbody aria-live="polite"></tbody></table></div></section>
 <script type="application/json">{payload}</script></section>
 <h2>How the amounts are calculated</h2>
 <p>A listed portion uses a measure with a weight in the source. For 100 calories, the tool divides by the source energy per 100 g and multiplies by 100. A missing amount or unavailable conversion stays unknown. The results show total nutrient content, which can differ from the amount absorbed.</p>
@@ -330,6 +398,10 @@ def explorer_page(data, script_url):
 [data-nutrient-explorer] form>div>label{display:block;margin-bottom:.25rem}
 [data-nutrient-explorer] form :is(select,input[type="search"]){width:100%;min-inline-size:0;min-block-size:44px}
 [data-nutrient-explorer] form>label{grid-column:1/-1}
+[data-macro-pair] table{min-width:0;width:100%}
+[data-macro-pair] th small,[data-macro-pair] th a{display:block;font-weight:400}
+[data-macro-pair] td{white-space:nowrap;font-variant-numeric:tabular-nums}
+@media(max-width:480px){[data-macro-pair] form:not([hidden]){grid-template-columns:1fr}}
 @media(max-width:350px){[data-nutrient-explorer] form:not([hidden]){grid-template-columns:1fr}}
 </style></head>''', 1)
     return page.replace('</body>', f'<script src="{script_url}" data-source-path="js/nutrient-explorer.js" defer></script></body>', 1)
@@ -361,7 +433,7 @@ def article_page(row):
     if key in ('mogging-meaning','appearance-photo-evidence'):
         links.append({'url':'/gua-sha-jawline-what-study-measured.html', 'label':'See what a facial contour study measured'})
     if key == 'blue-zones-pattern':
-        links.append({'url':'/' + EXPLORER, 'label':'Compare fiber in reference foods'})
+        links.append({'url':'/' + EXPLORER + '#compare-protein-and-fiber', 'label':'Compare fiber in two reference foods'})
     if key == 'breakfast-fiber':
         links.extend([{'url':'/restaurant-meal-finder.html?meal=breakfast', 'label':'Browse U.S. breakfast records'},
                       {'url':'/exact-fiber-coverage-denominator.html', 'label':'Read a missing fiber value correctly'}])
