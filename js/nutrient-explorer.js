@@ -24,7 +24,15 @@
     return (!filter || topic === filter) && tokens.every(token => copy.toLowerCase().includes(token));
   }
 
-  if (typeof module === 'object') module.exports = {amount, select, matchesClaim};
+  function studioAmount(choice, field, basis) {
+    const value = choice.values[field];
+    if (!Number.isFinite(value)) return null;
+    if (basis === 'portion') return value;
+    const divisor = basis === '100g' ? choice.grams : choice.values.cal;
+    return divisor > 0 ? value * 100 / divisor : null;
+  }
+
+  if (typeof module === 'object') module.exports = {amount, select, matchesClaim, studioAmount};
   const claims = root.document?.querySelector('[data-claim-library]');
   if (claims) {
     const filters = claims.querySelector('form');
@@ -67,6 +75,56 @@
   const body = panel.querySelector('tbody');
   const heading = panel.querySelector('[data-amount-label]');
   const format = new Intl.NumberFormat('en', {maximumSignificantDigits: 4});
+
+  const studio = root.document.querySelector('[data-food-studio]');
+  if (studio) {
+    const {pairs, fields} = JSON.parse(studio.querySelector('[type="application/json"]').textContent);
+    const controls = studio.querySelector('form');
+    const columns = studio.querySelectorAll('[data-studio-food]');
+    const results = studio.querySelector('tbody');
+    const note = studio.querySelector('[data-studio-note]');
+    const guide = studio.querySelector('[data-studio-guide]');
+    function renderStudio() {
+      const {example, basis} = controls.elements;
+      const pair = pairs[Number(example.value)];
+      pair.sides.forEach((choice, index) => {
+        const title = document.createTextNode(choice.label);
+        const portion = document.createElement('small');
+        portion.textContent = choice.portion;
+        const links = choice.sources.map((url, i) => {
+          const link = document.createElement('a');
+          link.href = url;
+          link.textContent = 'Source' + (choice.sources.length > 1 ? ' ' + (i + 1) : '');
+          link.setAttribute('aria-label', choice.label + ' · ' + link.textContent);
+          return link;
+        });
+        columns[index].replaceChildren(title, portion, ...links);
+      });
+      results.replaceChildren(...fields.map(([key, label, unit]) => {
+        const row = document.createElement('tr');
+        const name = document.createElement('th');
+        name.scope = 'row';
+        name.textContent = label;
+        row.append(name);
+        for (const choice of pair.sides) {
+          const cell = document.createElement('td');
+          const value = studioAmount(choice, key, basis.value);
+          cell.textContent = value === null ? 'Unknown' : format.format(value) + ' ' + unit;
+          row.append(cell);
+        }
+        return row;
+      }));
+      const basisLabel = basis.selectedOptions[0].textContent.toLowerCase();
+      note.textContent = pair.note + ' Showing amounts per ' + basisLabel + '.';
+      guide.href = pair.guide;
+    }
+    controls.addEventListener('input', renderStudio);
+    controls.addEventListener('submit', event => event.preventDefault());
+    renderStudio();
+    controls.hidden = false;
+    results.closest('.table-wrap').hidden = false;
+    guide.hidden = false;
+  }
 
   function amountLabel(record, basis) {
     if (basis === '100g') return '100 g';
