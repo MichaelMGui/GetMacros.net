@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 
 from build_release_resources import resource_main
 from normalize_calculator_layouts import Document
+from wellness_release.followup import RECORDS as FOLLOWUP, SOURCE_DATE as FOLLOWUP_DATE, render_body
 
 TODAY = '2026-11-20'
 HOST = 'https://getmacros.net'
@@ -1548,7 +1549,7 @@ SOURCE_TITLES = {
 
 
 def public_articles():
-    return ARTICLES
+    return [*ARTICLES, *(record['article'] for record in FOLLOWUP.values())]
 
 
 def replace_section(text, section_id, replacement):
@@ -1765,7 +1766,8 @@ def explorer_page(data, script_url):
 def article_page(row):
     id_, key, slug, title, summary, urls, scope = row
     pillar = PILLARS[int(id_[1:3]) - 1]
-    body = (SOURCE / (key + '.html')).read_text(encoding='utf-8-sig').strip()
+    followup = FOLLOWUP.get(key)
+    body = render_body(followup) if followup else (SOURCE / (key + '.html')).read_text(encoding='utf-8-sig').strip()
     if key == 'breakfast-fiber':
         body, restaurant_sources = breakfast_fiber(body)
         urls = list(dict.fromkeys([*urls, *restaurant_sources]))
@@ -1798,7 +1800,8 @@ def article_page(row):
                       {'url':'/exact-fiber-coverage-denominator.html', 'label':'Read a missing fiber value correctly'}])
     section_page, section_label, *_ = SECTIONS[int(id_[1:3]) - 1]
     links.append({'url':'/' + section_page, 'label':section_label})
-    sources = 'Source material checked November 20, 2026. ' + scope
+    source_date = FOLLOWUP_DATE if followup else 'November 20, 2026'
+    sources = f'Source material checked {source_date}. ' + scope
     main = resource_main(dict(slug=slug, title=title, h1=title, description=summary,
                               category=pillar, sourceURLs=urls, sourceScope=sources, body=body, related=links))
     for url in urls:
@@ -1806,7 +1809,8 @@ def article_page(row):
         if label:
             main = re.sub(r'(<a href="' + re.escape(escape(url, quote=True)) + r'">)[^<]+',
                           lambda match: match[1] + escape(label.strip()), main)
-    main = main.replace('By GetMacros · Published October 3, 2026', 'By GetMacros · Sources checked November 20, 2026')
+    byline = f'By GetMacros · Sources checked {source_date}'
+    main = main.replace('By GetMacros · Published October 3, 2026', byline)
     # The opening paragraph answers the question. Keep the summary in metadata.
     main = main.replace(f'<p>{escape(summary)}</p>', '', 1)
     if id_.startswith(('P03','P04','P05')):
@@ -1820,8 +1824,8 @@ def article_page(row):
         published = date.fromisoformat(PUBLICATION_DATES[id_])
         display_date = f'{published:%B} {published.day}, {published.year}'
         schema['datePublished'] = published.isoformat()
-        main = main.replace('By GetMacros · Sources checked November 20, 2026</p>',
-                            'By GetMacros · Sources checked November 20, 2026</p>'
+        main = main.replace(f'{byline}</p>',
+                            f'{byline}</p>'
                             f'<p>Published <time datetime="{published}">{display_date}</time></p>', 1)
     return shell(slug, title, summary, main, schema, private=private)
 
@@ -1953,6 +1957,9 @@ def claim_library_page(script_url):
 
 
 def guide_topic(row):
+    followup = FOLLOWUP.get(row[1])
+    if followup:
+        return followup['topic']
     id_, key, *_ = row
     pillar = int(id_[1:3])
     if pillar == 1:
